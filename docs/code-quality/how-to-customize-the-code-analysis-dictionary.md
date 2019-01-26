@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 667e3b4e-beff-48be-b3d1-376e1716a895
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea38b05f48969b80f9f8888f8bbd3c6a1a4e5657
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 19ad0da444f99e0fbf618d97729c64a1e5ed5666
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904940"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971817"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Procédure : Personnaliser le dictionnaire d’analyse du code
 Analyse du code utilise un dictionnaire intégré pour vérifier les identificateurs dans votre code pour les erreurs dans l’orthographe, grammaire cas et autres conventions d’affectation de noms de règles du .NET Framework. Vous pouvez créer un fichier Xml de dictionnaire personnalisé pour ajouter, supprimer ou modifier des termes, abréviations et acronymes au dictionnaire intégré.
@@ -64,13 +64,13 @@ Analyse du code utilise un dictionnaire intégré pour vérifier les identificat
 
 - [Dictionnaire/mots/non reconnue/Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)
 
-- [Dictionnaire/mots/déconseillé/terme [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)
+- [Dictionary/Words/Deprecated/Term[@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)
 
-- [Dictionnaire/mots/Compound/Term [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)
+- [Dictionary/Words/Compound/Term[@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)
 
-- [Dictionnaire/mots/DiscreteExceptions/Term](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)
+- [Dictionary/Words/DiscreteExceptions/Term](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)
 
-- [Dictionnaire/acronymes/CasingExceptions/acronyme](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
+- [Dictionary/Acronyms/CasingExceptions/Acronym](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
 
 ###  <a name="BKMK_DictionaryWordsRecognizedWord"></a> Dictionnaire/mots/reconnu/Word
  Pour inclure un terme dans la liste de termes que l’analyse du code identifie comme correctement orthographié, ajoutez ce terme comme texte interne d’un élément de dictionnaire/mots/Recognized/Word. Termes du contrat dans les éléments du dictionnaire/mots/Recognized/Word ne respectent pas la casse.

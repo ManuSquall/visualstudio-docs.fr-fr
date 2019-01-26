@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 1942245d-7a1d-4a11-b5e7-a3fe29f11c0b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 005b321921003e11f9204616727e0b06b85e5c3f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b8d5059ddca1d428f1a1f66cb45e32cdc6f37de3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915647"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929534"
 ---
 # <a name="how-to-implement-undo-management"></a>Procédure : Gestion d’annulation implémenter
 L’interface principale utilisée pour la gestion de l’annulation est <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>, qui est implémentée par l’environnement. Pour prendre en charge la gestion d’annulation, implémenter des unités d’annulation distinct (autrement dit, <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>, qui peut contenir plusieurs étapes individuelles.  

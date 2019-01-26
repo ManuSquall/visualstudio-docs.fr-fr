@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ad9beac3-4f8d-4093-ad0e-6fb00444a709
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4394d101ffb158392d8c8e3ed1c9365b6c68ef7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d8204f7c6716acaad0183d63b487a8191c5a1dd1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930906"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964247"
 ---
 # <a name="support-for-user-settings"></a>Prise en charge des paramètres utilisateur
 Un VSPackage peut définir une ou plusieurs catégories de paramètres qui sont des groupes de variables d’état qui persistent lorsqu’un utilisateur choisit le **importer/exporter les paramètres** commande sur le **outils** menu. Pour activer cette persistance, vous utilisez les paramètres API dans le [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
@@ -38,9 +38,9 @@ Un VSPackage peut définir une ou plusieurs catégories de paramètres qui sont 
 
  La structure de l’entrée de Registre est illustrée ci-dessous :  
 
- HKLM\Software\Microsoft\VisualStudio\\*\<Version >* \UserSettings\  
+ HKLM\Software\Microsoft\VisualStudio\\*\<Version>* \UserSettings\  
 
- `<CSPName`> = s '#12345'  
+ `<CSPName`>= s '#12345'  
 
  Package = '{XXXXXX XXXX XXXX XXXX XXXXXXXXX}'  
 
@@ -48,7 +48,7 @@ Un VSPackage peut définir une ou plusieurs catégories de paramètres qui sont 
 
  ResourcePackage = '{ZZZZZZ ZZZZ ZZZZ ZZZZ ZZZZZZZZZ}'  
 
- AlternateParent = nom de catégorie  
+ AlternateParent = CategoryName  
 
 
 | Name | Type | Données | Description |

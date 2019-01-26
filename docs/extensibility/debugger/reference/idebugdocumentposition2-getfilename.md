@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d713635e-088f-465b-b26d-00ac971c9e86
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 407ddfe794d1b23e65baf1530182b9c3ec568b98
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5a4dc57357def20cffe89bf2300d0dffee88900a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967409"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947931"
 ---
 # <a name="idebugdocumentposition2getfilename"></a>IDebugDocumentPosition2::GetFileName
 Obtient le nom de fichier du fichier source qui contient la position du document.  

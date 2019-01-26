@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3566903824f82cb266fa87f1dec0e8bcf04f9ba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 028490e6c23051496202fad2d85b0d11cc434218
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825912"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964286"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ. Fichier de contrôle de code source
 Lorsque vous placez une solution Visual Studio ou un projet sous contrôle de code source à l’aide de l’IDE, l’IDE reçoit deux informations essentielles. Les informations proviennent du plug-in sous la forme de chaînes de contrôle de code source. Ces chaînes, « AuxPath » et « ProjName », sont opaques à l’IDE, mais elles sont utilisées par le plug-in pour rechercher la solution ou le projet dans le contrôle de version. L’IDE obtient généralement ces chaînes de la première fois en appelant le [SccGetProjPath](../extensibility/sccgetprojpath-function.md), et il les enregistre ensuite dans le fichier solution ou un projet pour les appels suivants à la [SccOpenProject](../extensibility/sccopenproject-function.md). Lorsqu’il est incorporé dans les fichiers solution et projet, les chaînes « AuxPath » et « ProjName » ne sont pas automatiquement mis à jour un utilisateur, les branchements, branches ou copie des fichiers solution et projet qui se trouvent dans le contrôle de version. Pour vous assurer que les fichiers solution et projet pointent vers leur emplacement correct dans le contrôle de version, les utilisateurs doivent mettre à jour manuellement les chaînes. Étant donné que les chaînes sont destinés à être opaque, il peut pas toujours clair comment ils doivent être mis à jour.  

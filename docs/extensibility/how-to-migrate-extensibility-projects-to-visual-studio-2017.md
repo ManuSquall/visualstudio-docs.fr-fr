@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 8ca07b00-a3ff-40ab-b647-c0a93b55e86a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22fdb969112278fafb636e0162db4ebc93b9a657
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3726ee6995e770d89e5916a922c0546439c3ba14
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820408"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953508"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Procédure : Migrer des projets d’extensibilité vers Visual Studio 2017
 
@@ -104,7 +104,7 @@ Au lieu de modifier directement le XML du manifeste, vous pouvez utiliser la nou
 
 Si vous souhaitez déboguer votre extension dans une instance expérimentale de Visual Studio, assurez-vous que les paramètres du projet pour **déboguer** > **action de démarrage** a le **Démarrer externe programme :** valeur définie sur le *devenv.exe* fichier de votre installation de Visual Studio 2017.
 
-Cela peut ressembler : *C:\Program fichiers (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe*
+Cela peut ressembler : *C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe*
 
 ![Démarrer le programme externe](media/start-external-program.png)
 
@@ -118,8 +118,8 @@ Cela peut ressembler : *C:\Program fichiers (x86) \Microsoft Visual Studio\2017
   * Renommer *.vsix* à *.zip* permettent d’afficher le contenu.
 * Vérifier l’existence de trois fichiers :
   * *extension.vsixmanifest*
-  * *manifest.JSON*
-  * *Catalog.JSON*
+  * *manifest.json*
+  * *catalog.json*
 
 ## <a name="check-when-all-required-prerequisites-are-installed"></a>Vérification de tous les composants requis sont installés.
 
@@ -175,7 +175,7 @@ La liste des composants de triés par produit Visual Studio se trouve [ID de com
 
 Si vous ne savez pas quel composant contient un fichier binaire spécifique, téléchargez le [composant -> feuille de calcul de mappage de types binaires](https://aka.ms/vs2017componentid-binaries).
 
-### <a name="vs2017-componentbinarymappingxlsx"></a>Visual Studio 2017-ComponentBinaryMapping.xlsx
+### <a name="vs2017-componentbinarymappingxlsx"></a>vs2017-ComponentBinaryMapping.xlsx
 
 Il existe quatre colonnes dans la feuille Excel : **Nom du composant**, **ComponentId**, **Version**, et **binaire / noms de fichiers**.  Vous pouvez utiliser les filtres pour rechercher et trouver les fichiers binaires et des composants spécifiques.
 

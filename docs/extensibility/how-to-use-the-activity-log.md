@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: bb3d3322-0e5e-4dd5-b93a-24d5fbcd2ffd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9305cf1de6cadc2230b90723ac0f995b425ba3a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b23dd6ffa0e856ef5d5fb14227953cb22dce65e8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990332"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929350"
 ---
 # <a name="how-to-use-the-activity-log"></a>Procédure : Utiliser le journal d’activité
 Les VSPackages peuvent écrire des messages dans le journal d’activité. Cette fonctionnalité est particulièrement utile pour déboguer les VSPackages dans les environnements de vente au détail.  
@@ -60,7 +60,7 @@ Les VSPackages peuvent écrire des messages dans le journal d’activité. Cette
  Vous devez obtenir le journal d’activité juste avant l’écriture dans celle-ci. Ne pas mettre en cache ou enregistrer le journal d’activité pour une utilisation ultérieure.  
   
 ## <a name="see-also"></a>Voir aussi
- [/ Log (devenv.exe)](../ide/reference/log-devenv-exe.md)   
+ [/Log (devenv.exe)](../ide/reference/log-devenv-exe.md)   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>   
  <xref:Microsoft.VisualStudio.Shell.Interop.__ACTIVITYLOG_ENTRYTYPE>   
  [Dépannage de VSPackages](../extensibility/troubleshooting-vspackages.md)   

@@ -1,5 +1,5 @@
 ---
-title: 'CA1815 : Remplacez equals et l’opérateur est égal à dans les types valeur'
+title: "CA1815 : Remplacez Equals et l'opérateur égal à dans les types valeur"
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: 0a8ab3a3-ee8e-46f7-985d-dcf00c89363b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8fc26bca5ecce3b5459890e96e429ef10f3b75
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8747ac1ba5945011fa9f20b7e37521250cfd415c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904047"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971581"
 ---
-# <a name="ca1815-override-equals-and-operator-equals-on-value-types"></a>CA1815 : Remplacez equals et l’opérateur est égal à dans les types valeur
+# <a name="ca1815-override-equals-and-operator-equals-on-value-types"></a>CA1815 : Remplacez Equals et l'opérateur égal à dans les types valeur
 
 |||
 |-|-|

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: dfff634b-b155-498b-a356-6eb252ac4fad
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 477d18f3cb5f187b61d78d779339e2c43c402a43
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 79eb0bdfdcb9f0b64258128b801e65f257e0ed3e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854735"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949946"
 ---
 # <a name="sccpopulatedirlist-function"></a>Fonction SccPopulateDirList
 Cette fonction détermine les répertoires et (éventuellement) les fichiers sont stockés dans le contrôle de code source, une liste de répertoires à examiner.  
@@ -51,7 +51,7 @@ SCCRTN SccPopulateDirList(
  pvCallerData  
  [in] Valeur qui doit être transmises sans modification à la fonction de rappel.  
   
- Options  
+ fOptions  
  [in] Une combinaison de valeurs qui contrôlent la façon dont les répertoires sont traités (consultez la section « Indicateurs PopulateDirList » de [indicateurs de bits utilisés par les commandes spécifiques](../extensibility/bitflags-used-by-specific-commands.md) pour les valeurs possibles).  
   
 ## <a name="return-value"></a>Valeur de retour  

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: eedda0a3-5e05-44fe-841d-a2f4866ac72d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28be8f34602a3a175c40d630463686f0ca99c919
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 864141055487b598a8f91641f40fe4c027c53b6c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958850"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918431"
 ---
 # <a name="terminating-a-program"></a>Arrêt d’un programme
 La section suivante décrit l’arrêt d’un programme unique avec un seul thread.  

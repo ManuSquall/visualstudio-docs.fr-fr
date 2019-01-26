@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13e95988ee67431686472b2bdb0e548c03201b7d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 75ee4d25c86e5773b661682bfb89ef9a8fc1abeb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921651"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993752"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Procédure pas à pas : Créer un à l’aide du Kit de développement logiciel C# ou Visual Basic
 Dans cette procédure pas à pas, vous allez apprendre à créer un kit de développement de bibliothèque mathématique simple à l’aide de Visual c#, puis d’empaqueter le Kit de développement logiciel en tant qu’une Extension Visual Studio (VSIX). Vous allez effectuer les procédures suivantes :  

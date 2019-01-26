@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c85d867d042ea51023fc20259814a27b108e150
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d68ef2eb1dfd153cb4d5048901cc824c87585a35
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875165"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54968646"
 ---
 # <a name="address-dpi-issues"></a>Problèmes de résolution d’adresse
 Un nombre croissant de périphériques fournies dans les écrans « haute résolution ». Ces écrans ont généralement plus de 200 pixels par pouce (PPP). Travailler avec une application sur ces ordinateurs nécessitera contenu mis à l’échelle pour répondre aux besoins de l’affichage du contenu à une distance de l’affichage normal pour l’appareil. À compter de 2014, la cible principale pour les écrans à haute densité est mobile computing appareils (tablettes, ordinateurs portables coque et téléphones).  
@@ -94,9 +94,9 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
   
 - LogicalToDeviceUnitsX/LogicalToDeviceUnitsY (fonctions permettent la mise à l’échelle sur X / axe des Y)  
   
-- int espace = DpiHelper.LogicalToDeviceUnitsX (10) ;  
+- int space = DpiHelper.LogicalToDeviceUnitsX (10);  
   
-- int hauteur = VsUI::DpiHelper::LogicalToDeviceUnitsY(5) ;  
+- int height = VsUI::DpiHelper::LogicalToDeviceUnitsY(5);  
   
   Il existe des surcharges de LogicalToDeviceUnits pour permettre la mise à l’échelle des objets tels que Rect, Point et Size.  
   

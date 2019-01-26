@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 3c2741ff-0d3a-42e6-acd5-d42310bd03c4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3840fc6ee7a5ef0075463462062f78c1a3d2a0c4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c8c86728488d74e5eebc277e87e87c96098915f4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876138"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54957934"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>Analyse du code pour les avertissements liés au code managé
 L’outil Analyse du code managé fournit des avertissements qui indiquent des violations de règle dans les bibliothèques de code managé. Les avertissements sont organisés en domaines de règles, tels que la conception, la localisation, les performances et la sécurité. Chaque avertissement indique une violation d’une règle d’analyse du code managé. Cette section fournit des explications et des exemples détaillés de chaque avertissement d’analyse du code managé.

@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: e9165d5ff6a38dd0dbf214321132f2da0a60b15d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: add2458989cc52d38ddefd80ce9f3310f0688f2b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883157"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958574"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Génération de code à partir d'un langage spécifique à un domaine
 Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] offre un moyen puissant pour générer le code, les documents, les fichiers de configuration et les autres artefacts à partir des données représentées dans les modèles. À l’aide de [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], vous pouvez créer un ensemble de classes qui représentent vos données, vous pouvez écrire vos modèles de texte dans les classes dont les noms et propriétés reflètent ces données.

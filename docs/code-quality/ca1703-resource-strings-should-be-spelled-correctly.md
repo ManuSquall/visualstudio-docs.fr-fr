@@ -1,5 +1,5 @@
 ---
-title: 'CA1703 : Chaînes de ressources doivent être correcte'
+title: "CA1703 : L'orthographe des chaînes de ressources doit être correcte"
 ms.date: 03/28/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: 693f4970-f512-40cb-ae3b-a0f3a5c6d6f1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0458fa33413023fe9ae2b693a9bf75ffacda706c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4eea177ce2b47db0319fd9a13639e97bfbe37c0b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890587"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971609"
 ---
-# <a name="ca1703-resource-strings-should-be-spelled-correctly"></a>CA1703 : Chaînes de ressources doivent être correcte
+# <a name="ca1703-resource-strings-should-be-spelled-correctly"></a>CA1703 : L'orthographe des chaînes de ressources doit être correcte
 
 |||
 |-|-|

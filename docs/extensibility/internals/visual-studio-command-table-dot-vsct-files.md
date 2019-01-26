@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 1313adb4-add4-4e74-90e2-f4be522f5259
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05c154a7ba87101f4a747b58d1a9ae4de16b7062
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cc265778fcc159a860bda9aa2d7ddafc5342dbd9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988869"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927305"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>Fichiers Visual Studio Command Table (.Vsct)
 Un fichier de configuration de table de commande est un fichier texte qui décrit l’ensemble des commandes qui contient un VSPackage. Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] commande les compilateur (VSTC) de table compile les fichiers de configuration XML (fichiers .vsct) en fichiers de sortie (.cto) de table de commande binaire. Les fichiers .cto résultants sont les mêmes que celles qui sont créées en utilisant le compilateur de table (CTC) de commande pour compiler des fichiers de configuration .ctc. Toutefois, les fichiers .vsct basé sur XML a certains avantages, notamment un éditeur XML et le XML IntelliSense.  

@@ -1,5 +1,5 @@
 ---
-title: 'CA2114 : Sécurité de la méthode doit être un sur-ensemble du type'
+title: 'CA2114 : La sécurité de la méthode doit être un sur-ensemble du type'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: 663f7aa4-8be5-4bd5-be92-4e9444f07077
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec58e8060447a02309a0a902bcf63eea8805ca8c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 63f9f6162e767d4d94bc6635cfa4bebc3c07bf12
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881790"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951454"
 ---
-# <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114 : Sécurité de la méthode doit être un sur-ensemble du type
+# <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114 : La sécurité de la méthode doit être un sur-ensemble du type
 
 |||
 |-|-|

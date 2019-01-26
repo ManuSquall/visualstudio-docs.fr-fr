@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 5ef63399-d2db-4dc1-97ce-be1bd4ef4e39
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4f7b9b24e9e8ec5a0539a14fe57b92e8c59b68f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 84a27e392552a7194fc4aced6f2ba4a985968c87
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836986"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034153"
 ---
 # <a name="command-flag-eelement"></a>Indicateur de commande Eelement
 Modifie son élément parent.  
@@ -47,7 +47,7 @@ Modifie son élément parent.
 |DontCache|L’environnement de développement ne met pas en cache le `QueryStatus` les résultats de méthode pour cette commande.<br /><br /> Pour un menu, cela indique un contrôleur de menu ne pas mettre en cache le texte de ses éléments de menu. Utilisez cet indicateur lorsque le menu contient des éléments dynamiques ou qui ont un texte dynamique.<br /><br /> Valide pour : `Button`, `Menu`|  
 |DynamicItemStart|Indique le début d’une liste dynamique. Cela permet à l’environnement générer la liste en appelant successivement le `QueryStatus` méthode sur les éléments de la liste jusqu'à ce que l’indicateur OLECMDERR_E_UNSUPPORTED est retourné. Cela fonctionne bien pour les éléments tels que des derniers fichiers utilisés (MRU) listes et des listes de fenêtres.<br /><br /> Valide pour : `Button`|  
 |DynamicVisibility|La visibilité de la commande peut être modifiée via le `QueryStatus` (méthode) ou via un GUID de contexte qui est inclus dans le `VisibilityConstraints` section.<br /><br /> S’applique aux commandes qui s’affichent dans les menus et barres d’outils de la fenêtre outil, mais pas sur les barres d’outils de niveau supérieur qui apparaissent dans la fenêtre principale. Éléments de barre d’outils de niveau supérieur peuvent être désactivés, mais ne pas masquées, lorsque l’indicateur OLECMDF_INVISIBLE est retourné à partir de la `QueryStatus` (méthode). Les commandes de barre d’outils qui apparaissent dans les barres d’outils de la fenêtre outil peuvent être masquées.<br /><br /> Dans un menu, cet indicateur indique également qu’il doit être automatiquement masqué lorsque tous ses membres sont masqués. Cet indicateur est généralement affecté à sous-menus, car les menus de niveau supérieur ont déjà ce comportement.<br /><br /> Cet indicateur doit être combiné avec la `DefaultInvisible` indicateur.<br /><br /> Valide pour : `Button`, `Combo`, `Menu`|  
-|Touches filtres|Consultez la rubrique de filtrage des clés sous [élément de liste déroulante](../extensibility/combo-element.md).<br /><br /> Valide pour : `Combo`|  
+|FilterKeys|Consultez la rubrique de filtrage des clés sous [élément de liste déroulante](../extensibility/combo-element.md).<br /><br /> Valide pour : `Combo`|  
 |FixMenuController|Si cette commande est positionnée sur un contrôleur de menu, la commande est toujours la valeur par défaut ; Autrement dit, la commande est sélectionnée chaque fois que le bouton de contrôleur de menu lui-même est sélectionné. Si le contrôleur de menu a la `TextIsAnchorCommand` l’indicateur est défini, le contrôleur de menu prend également son texte à partir de la commande qui a le `FixMenuController` indicateur.<br /><br /> Une seule commande sur un contrôleur de menu doit avoir le `FixMenuController` indicateur. Si plusieurs commandes est marqué par conséquent, la dernière commande dans le menu devient la commande par défaut.<br /><br /> Valide pour : `Button`|  
 |IconAndText|Afficher une icône et du texte sur le menu et barre d’outils.<br /><br /> Valide pour : `Button`, `Combo`, `Menu`|  
 |NoAutoComplete|Fonctionnalité de saisie semi-automatique est désactivée.<br /><br /> Valide pour : `Combo`|  

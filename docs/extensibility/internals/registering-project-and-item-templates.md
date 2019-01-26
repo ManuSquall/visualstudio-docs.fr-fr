@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bf60283dd56268ff7b47b5f0e81ebb23ee28197
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7ca4723d24c45a11422eae4b7d8b288671e0b921
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930620"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041085"
 ---
 # <a name="registering-project-and-item-templates"></a>Inscription de modèles de projet et d’élément
 Types de projets doivent inscrire les répertoires où se trouvent leurs modèles de projet et d’élément de projet. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utilise les informations d’inscription associées à vos types de projet pour déterminer les éléments à afficher dans le **ajouter un nouveau projet** et **ajouter un nouvel élément** boîtes de dialogue.  
@@ -107,7 +107,7 @@ Types de projets doivent inscrire les répertoires où se trouvent leurs modèle
 
  \ProjectItems (contient les éléments de projet)  
 
- \CLASSE  
+ \Class  
 
  \Form  
 

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33bc38ca3e0c9b3bde07be48c74c31e4fc5148df
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4558fc7088803477de9dd3b89bee2c933c3cda34
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922208"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948880"
 ---
 # <a name="attach-after-a-launch"></a>Attachement après un lancement
 Une fois un programme démarre, la session de débogage est prête à attacher le moteur de débogage (dé) dudit programme.  
@@ -49,7 +49,7 @@ Une fois un programme démarre, la session de débogage est prête à attacher l
  [Tâches de débogage](../../extensibility/debugger/debugging-tasks.md)   
  [IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md)   
  [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)   
- [Attacher](../../extensibility/debugger/reference/idebugprogram2-attach.md)   
+ [Attach](../../extensibility/debugger/reference/idebugprogram2-attach.md)   
  [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)   
  [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md)   

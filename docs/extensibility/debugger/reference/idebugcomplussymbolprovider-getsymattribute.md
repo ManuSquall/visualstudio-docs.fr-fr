@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 6cbaac92-a60b-4165-a7f5-c34407770f3c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26b9ccab159e95d1248de7efa620a6fccecc7164
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 62ec9676795fe9637bb5f361a383c17a2b0e9a15
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921391"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54962834"
 ---
 # <a name="idebugcomplussymbolprovidergetsymattribute"></a>IDebugComPlusSymbolProvider::GetSymAttribute
 Récupère les symboles de débogage avec l’attribut parent donné pour le module spécifié.  

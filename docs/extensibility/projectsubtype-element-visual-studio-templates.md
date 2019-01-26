@@ -11,22 +11,22 @@ helpviewer_keywords:
 ms.assetid: f6895cd4-3e95-4f0e-aa9e-8c7750f46ed4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 500a8cb23c48ff28ae7f6cfe825006909b04dace
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 069c5f96cd2e8e5e4280800a6b39c7cf87936aaf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902543"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955438"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType, élément (modèles Visual Studio)
 Classe le modèle dans une sous-catégorie de la valeur spécifiée dans le `ProjectType` élément.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<ProjectSubType >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<ProjectSubType>  
   
 ## <a name="syntax"></a>Syntaxe  
   

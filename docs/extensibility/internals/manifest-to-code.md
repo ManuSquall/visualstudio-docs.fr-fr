@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 597fc90ff7b98018aab0fa11fb44fb1bc152272e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1c1a44327205f9bdbdab00ac3554f501c52e1c36
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895439"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967545"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 Le manifeste de l’outil du Code est une application console qui prend un fichier .imagemanifest pour le Service d’images Visual Studio et génère un wrapper ou plusieurs fichiers pour faire référence aux valeurs du manifeste de l’image en C++, C#, VB ou .vsct fichiers pour Visual Studio extensions. Cet outil génère des fichiers de wrapper qui peuvent être utilisées pour les images de demande à partir de Visual Studio Image Service directement, ou pour transmettre les valeurs de manifeste via des API si le code ne gère pas un de sa propre interface utilisateur et le rendu.  
@@ -28,7 +28,7 @@ Le manifeste de l’outil du Code est une application console qui prend un fichi
 ||||  
 |-|-|-|  
 |**Nom du commutateur**|**Notes**|**Obligatoire ou facultatif**|  
-|/ manifeste|Le chemin d’accès au manifeste de l’image à utiliser pour créer ou mettre à jour le wrapper de code.|Obligatoire|  
+|/manifest|Le chemin d’accès au manifeste de l’image à utiliser pour créer ou mettre à jour le wrapper de code.|Obligatoire|  
 |/Language|Le langage dans lequel générer le wrapper de code.<br /><br /> Valeurs valides : CPP, C++, CS, CSharp, C#, VB ou VSCT les valeurs respectent la casse.<br /><br /> Pour le langage VSCT options option, /monikerClass, /classAccess et/Namespace sont ignorées.|Obligatoire|  
 |/imageIdClass|Le nom de l’imageIdClass et le fichier associé, créé par l’outil. Pour l’option de langage C++, seuls les fichiers .h sont générés.<br /><br /> Par défaut : \<Chemin du manifeste > \MyImageIds. \<Lang Ext >|Facultatif|  
 |/monikerClass|Le nom de la monikerClass et le fichier associé, créé par l’outil. Pour l’option de langage C++, seuls les fichiers .h sont générés. Ceci est ignoré pour le langage VSCT.<br /><br /> Par défaut : \<Chemin du manifeste > \MyMonikers. \<Lang Ext >|Facultatif|  
@@ -40,11 +40,11 @@ Le manifeste de l’outil du Code est une application console qui prend un fichi
   
  **Exemples**  
   
--   / Language : CSharp de ManifestToCode /manifest:D:\MyManifest.imagemanifest  
+-   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp  
   
 -   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:C++ /namespace : mon :: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:VSCT /imageIdClass:MyImageIds  
+-   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds  
   
 ## <a name="notes"></a>Notes  
   

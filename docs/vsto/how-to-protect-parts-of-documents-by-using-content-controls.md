@@ -13,17 +13,17 @@ helpviewer_keywords:
 - document protection [Office development in Visual Studio]
 - Word [Office development in Visual Studio], restricted permissions
 - GroupContentControl
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8498eac9c34c9876c22eb9f04723b62e40f70ca4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9f12eb0e43b1868d93a155354756b10b9661e560
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989255"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875522"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Procédure : Protéger des parties de documents à l’aide de contrôles de contenu
   Quand vous protégez une partie d'un document, vous empêchez les utilisateurs de modifier ou de supprimer le contenu dans cette partie du document. Il existe plusieurs manières de protéger des parties d'un document Microsoft Office Word à l'aide de contrôles de contenu :  
@@ -66,7 +66,7 @@ ms.locfileid: "53989255"
      [!code-csharp[Trin_WordAddInDynamicControls#14](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#14)]  
   
 ## <a name="protect-a-part-of-a-document-that-is-not-in-a-content-control"></a>Protéger une partie d’un document qui n’est pas dans un contrôle de contenu  
- Vous pouvez empêcher les utilisateurs de modifier une zone d'un document en la plaçant dans <xref:Microsoft.Office.Tools.Word.GroupContentControl>. Cela s'avère utile dans les scénarios suivant :  
+ Vous pouvez empêcher les utilisateurs de modifier une zone d'un document en la plaçant dans <xref:Microsoft.Office.Tools.Word.GroupContentControl>. Cela s'avère utile dans les scénarios suivant :  
   
 -   Vous souhaitez protéger une zone qui ne contient pas de contrôles de contenu.  
   

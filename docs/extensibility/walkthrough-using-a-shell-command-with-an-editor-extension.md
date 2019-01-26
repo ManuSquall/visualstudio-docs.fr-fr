@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b62ffce08ecf5b6397bdda0b1f9fb6c1b83d7b63
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 1bb57106bfbb1575cfdb13b1fa2d27054dbc7d81
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154335"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944317"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>Procédure pas à pas : Utiliser une invite de commandes avec une extension de l’éditeur
 À partir d’un VSPackage, vous pouvez ajouter des fonctionnalités telles que les commandes de menu à l’éditeur. Cette procédure pas à pas montre comment ajouter un ornement à un affichage de texte dans l’éditeur en appelant une commande de menu.  
@@ -687,7 +687,7 @@ ms.locfileid: "54154335"
   
 3.  Sur le **outils** menu, cliquez sur **appeler un ornement ajouter**. Une info-bulle doit afficher sur le côté droit de la fenêtre texte et doit contenir du texte qui ressemble au texte suivant.  
   
-     Votre_nom_utilisateur  
+     YourUserName  
   
      Fourscore...  
   

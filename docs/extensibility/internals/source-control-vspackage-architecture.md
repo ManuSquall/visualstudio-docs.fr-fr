@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 453125fc-23dc-49b1-8476-94581f05e6c7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2d20b2f36bded3affde266422308bf3cd60db8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1a9fb208c011b4594cde7a00a586f5d7c98ae7a6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837912"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937949"
 ---
 # <a name="source-control-vspackage-architecture"></a>Architecture de VSPackage de contrôle de code source
 Un package de contrôle de code source est un VSPackage qui utilise des services qui la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fournit de l’IDE. En retour, un package de contrôle de code source fournit ses fonctionnalités comme un service de contrôle de code source. En outre, un package de contrôle de code source est une alternative plus polyvalente que le plug-in pour l’intégration du contrôle de code source dans un contrôle de code source [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  

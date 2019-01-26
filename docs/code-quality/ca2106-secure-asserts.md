@@ -1,5 +1,5 @@
 ---
-title: 'CA2106 : Assertions sécurisées'
+title: 'CA2106 : Assertions sécurisées'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: 91feb36e-6e2c-436c-8272-5aee31f77e98
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 164d2bbe335f4b69892cf069bade5cf0df1e0787
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b0877ee06083a051ed38cdfdb8cf248407f663e1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864671"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953839"
 ---
-# <a name="ca2106-secure-asserts"></a>CA2106 : Assertions sécurisées
+# <a name="ca2106-secure-asserts"></a>CA2106 : Assertions sécurisées
 
 |||
 |-|-|

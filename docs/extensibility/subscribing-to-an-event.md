@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: e94a4fea-94df-488e-8560-9538413422bc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5dbb3c9db722ff335fd8dddadfffed57457d23ef
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6b0c49df0c7412e86c9cabaf8e260e83727689dc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916924"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969481"
 ---
 # <a name="subscribing-to-an-event"></a>Abonnement à un événement
 Cette procédure pas à pas explique comment créer une fenêtre outil qui répond aux événements dans une table de documents en cours d’exécution (RDT). Une fenêtre outil héberge un contrôle utilisateur qui implémente <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>. Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> méthode connecte à l’interface pour les événements.  

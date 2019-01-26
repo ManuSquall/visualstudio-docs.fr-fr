@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 691cabb67df53faf23c23e2fa3f05f0ca68038a7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bd5fdae152cf3810d9b9bc95596081473eecc965
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915547"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942529"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Commandes qui doivent être exécutées après l’installation
 Si vous déployez votre extension via un *.msi* fichier, vous devez exécuter **devenv /setup** dans le cadre de votre installation afin que Visual Studio de découvrir vos extensions.  
@@ -49,7 +49,7 @@ Si vous déployez votre extension via un *.msi* fichier, vous devez exécuter **
 > [!NOTE]
 > Colonne de Type de la table RegLocator est 2, il n’est pas nécessaire de spécifier des informations de version supplémentaires dans la table de la Signature.  
   
-## <a name="run-devenvexe"></a>Exécutez devenv.exe  
+## <a name="run-devenvexe"></a>Run devenv.exe  
  Après avoir AppSearch action standard s’exécute dans le programme d’installation, chaque propriété de la table AppSearch a une valeur qui pointe vers le *devenv.exe* fichier pour la version correspondante de Visual Studio. Si les valeurs de Registre spécifiée ne sont pas présents, car cette version de Visual Studio n’est pas installée, la propriété spécifiée est définie avec la valeur null.  
   
  Programme d’installation de Windows prend en charge un exécutable vers lequel pointe une propriété via l’action personnalisée tapez 50. L’action personnalisée doit inclure les options d’exécution dans le script, `msidbCustomActionTypeInScript` (1024) et `msidbCustomActionTypeCommit` (512), pour vous assurer que le VSPackage a été correctement installé avant leur intégration dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Pour plus d’informations, consultez [CustomAction table](https://docs.microsoft.com/windows/desktop/msi/customaction-table) et [options d’exécution dans le script des actions personnalisées](https://docs.microsoft.com/windows/desktop/msi/custom-action-in-script-execution-options).  
@@ -60,10 +60,10 @@ Si vous déployez votre extension via un *.msi* fichier, vous devez exécuter **
   
 |Action|Type|Source|une cible|  
 |------------|----------|------------|------------|  
-|CA_RunDevenv2002|1586|DEVENV_EXE_2002|/Setup|  
-|CA_RunDevenv2003|1586|DEVENV_EXE_2003|/Setup|  
-|CA_RunDevenv2005|1586|DEVENV_EXE_2005|/Setup|  
-|CA_RunDevenv2008|1586|DEVENV_EXE_2008|/Setup|  
+|CA_RunDevenv2002|1586|DEVENV_EXE_2002|/setup|  
+|CA_RunDevenv2003|1586|DEVENV_EXE_2003|/setup|  
+|CA_RunDevenv2005|1586|DEVENV_EXE_2005|/setup|  
+|CA_RunDevenv2008|1586|DEVENV_EXE_2008|/setup|  
   
  Actions personnalisées doivent être créées dans la table InstallExecuteSequence à planifier leur exécution pendant l’installation. Utilisez la propriété correspondante dans chaque ligne de la colonne de la Condition pour éviter que l’action personnalisée en cours d’exécution si cette version de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] n’est pas installé sur le système.  
   

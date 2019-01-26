@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 5b3b5b08-5e9b-41be-ac72-c63957faed22
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b50ff6c737b75fcdbd9a6fc265928301eeb4467
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fd60d4c042e7fa27386ef549ce6b9d8e808a3176
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842669"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54962873"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Zone de test 1 : Ajouter / Ouvrir à partir du contrôle de code Source
 Ce contrôle de source de plug-in de test couvre zone Placement solutions ou projets sous contrôle de code source et en les récupérant à partir du contrôle de code source.  

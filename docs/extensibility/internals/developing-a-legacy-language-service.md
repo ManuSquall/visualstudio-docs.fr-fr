@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 6151ba88-c1c3-41de-a1cc-668f494d48d1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6bcf4c6993a37ec58d288d2c31f7c4cc3ecab9b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 20a2d36ef9ddfd27bfa41619bccc36bd53c1ed6d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845785"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941665"
 ---
 # <a name="develop-a-legacy-language-service"></a>Développer un service de langage hérité
 Cette section fournit des liens vers des rubriques qui vous aident à créer un service de langage hérité.  

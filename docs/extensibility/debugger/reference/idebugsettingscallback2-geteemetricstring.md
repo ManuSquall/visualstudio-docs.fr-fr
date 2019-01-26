@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 85e3c093-6a91-4101-ab32-d8ac6eed4918
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5ab0d970bb7ecc499731a452d414c8868aae530
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e67081164185d4fa4c9b9b0f271b805efd6442ce
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848219"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54957908"
 ---
 # <a name="idebugsettingscallback2geteemetricstring"></a>IDebugSettingsCallback2::GetEEMetricString
 Récupère la chaîne de valeur d’une métrique d’évaluateur d’expression étant donné son nom.  

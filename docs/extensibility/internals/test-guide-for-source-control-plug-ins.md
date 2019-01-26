@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03ddcde26ffeb50db045295a39fa444059cf59bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c7a1313a5d74f973e439d6177234eb11a202b344
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827898"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949682"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Guide de test pour les plug-ins de contrôle de code source
 Cette section fournit des conseils pour tester votre contrôle de source de plug-in avec [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Une vue d’ensemble complète des zones de tests les plus courantes, ainsi que certains domaines plus complexes qui peuvent s’avérer problématiques est fourni. Cette vue d’ensemble n’est pas censée être une liste exhaustive des cas de test.  
@@ -95,7 +95,7 @@ Cette section fournit des conseils pour tester votre contrôle de source de plug
   
     -   Cas 5c : reliaison  
   
--   [Zone de test 6 : Supprimer](../../extensibility/internals/test-area-6-delete.md)  
+-   [Zone de test 6 : Delete](../../extensibility/internals/test-area-6-delete.md)  
   
 -   [Zone de test 7 : Partager](../../extensibility/internals/test-area-7-share.md)  
   

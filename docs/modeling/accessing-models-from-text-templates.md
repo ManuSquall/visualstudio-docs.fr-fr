@@ -6,16 +6,16 @@ helpviewer_keywords:
 - text templates, accessing models
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 364e39744f403e83847d983e02843bf538bf5c57
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 513ab6f1a953a2992b744aa3680cd453f677f5bb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856861"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966801"
 ---
 # <a name="accessing-models-from-text-templates"></a>Accès aux modèles depuis des modèles de texte
 À l’aide de modèles de texte, vous pouvez créer des fichiers de rapport, les fichiers de code source et autres fichiers de texte basés sur les modèles de langage spécifique à un domaine. Pour plus d’informations de base sur les modèles de texte, consultez [génération de Code et modèles de texte T4](../modeling/code-generation-and-t4-text-templates.md). Les modèles de texte fonctionnent en mode expérimental lorsque vous déboguez votre DSL et fonctionnent également sur un ordinateur sur lequel vous avez déployé la solution DSL.

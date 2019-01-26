@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7b2be4b9-e3fe-4412-874f-ae72ebc84c4b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ef32dd2bbc44f784a2faaf6edcafcba96a8f113
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 052dff899c1f6c6141e605c41e8269a584800ed7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910488"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966814"
 ---
 # <a name="extend-menus-and-commands"></a>Étendre des menus et commandes
 Les commandes sont la façon que vous ajoutez des actions et les processus dans Visual Studio. Dans la plupart des cas, les commandes sont affichées dans les menus ou barres d’outils. Le modèle de projet VSPackage montre comment implémenter une commande très basique. Pour une implémentation légèrement plus longue mais toujours basique, consultez [créer une extension avec une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md).  

@@ -10,22 +10,22 @@ helpviewer_keywords:
 ms.assetid: a12d10d8-af49-482a-af77-e084fd07a47d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1db73787a8d593b0d48b438d08d083c623c18bd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 129212c690a9cf35b5c8a26893c366a79e58e39c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854982"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934086"
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>EnableLocationBrowseButton, élément (modèles Visual Studio)
 Spécifie si le **Parcourir** bouton n’est disponible dans le **nouveau projet** boîte de dialogue, afin que les utilisateurs peuvent facilement modifier le répertoire par défaut dans lequel un nouveau projet est enregistré.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<EnableLocationBrowseButton >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<EnableLocationBrowseButton>  
   
 ## <a name="syntax"></a>Syntaxe  
   
