@@ -18,17 +18,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, Web Parts
 - Web Parts [SharePoint development in Visual Studio], designing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1efe8524521be590e920818f919a7a52d8fba7e5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eff779f70cb5b17d03befddce971a4bbb15ca142
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879132"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865881"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Créer des composants WebPart pour SharePoint
   À l’aide de composants WebPart, vous pouvez modifier le contenu, l’apparence et comportement des pages d’un site SharePoint à l’aide d’un navigateur. Composants WebPart sont des contrôles côté serveur qui s’exécutent à l’intérieur d’une page WebPart : ils sont les blocs de construction des pages qui s’affichent sur un site SharePoint. Consultez [bloc de construction : Composants WebPart](http://go.microsoft.com/fwlink/?LinkID=182097).  
@@ -45,14 +45,14 @@ ms.locfileid: "53879132"
   
 |Fichier|Description|  
 |----------|-----------------|  
-|*Elements.Xml*|Contient des informations que le fichier de définition de fonctionnalité dans votre projet utilise pour déployer le composant WebPart.|  
+|*Elements.xml*|Contient des informations que le fichier de définition de fonctionnalité dans votre projet utilise pour déployer le composant WebPart.|  
 |fichier .webpart|Fournit les informations nécessaires pour afficher votre composant WebPart dans une galerie de composants WebPart SharePoint.|  
 |Fichier de code|Contient des méthodes qui ajoutent des contrôles au composant WebPart et qui génèrent du contenu personnalisé dans le composant WebPart.|  
   
  Pour plus d'informations, voir [Procédure : Créer un composant WebPart SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md).  
   
 ### <a name="visual-web-part-item"></a>Élément Visual WebPart
- Un composant visual web part est un composant WebPart que vous créez à l’aide du concepteur Visual Web Developer dans Visual Studio. Un composant visual WebPart fonctionne comme tout autre composant WebPart. Pour ajouter des contrôles, tels que des boutons et des zones de texte, à un composant WebPart, vous ajoutez le code dans un fichier XML. Toutefois, ajouter des contrôles à un composant visual web part en faisant glisser ou en les copiant sur le composant WebPart à partir de Visual Studio **boîte à outils**. Le concepteur génère ensuite le code requis dans le fichier XML. Consultez [Guide pratique pour Créer un composant WebPart SharePoint à l’aide d’un concepteur](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).  
+ Un composant visual web part est un composant WebPart que vous créez à l’aide du concepteur Visual Web Developer dans Visual Studio. Un composant visual WebPart fonctionne comme tout autre composant WebPart. Pour ajouter des contrôles, tels que des boutons et des zones de texte, à un composant WebPart, vous ajoutez le code dans un fichier XML. Toutefois, ajouter des contrôles à un composant visual web part en faisant glisser ou en les copiant sur le composant WebPart à partir de Visual Studio **boîte à outils**. Le concepteur génère ensuite le code requis dans le fichier XML. Voir [Guide pratique pour Créer un composant WebPart SharePoint à l’aide d’un concepteur](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).  
   
 ## <a name="sharepoint-controls"></a>Contrôles SharePoint
  Visual Studio fournit certains contrôles pour créer des pages SharePoint, tels que des pages d’application. Ces contrôles apparaissent dans le **boîte à outils** sous **contrôles SharePoint**. Les fonctionnalités de ces contrôles dérive le [Microsoft.SharePoint.WebControls](http://go.microsoft.com/fwlink/?LinkId=235315) espace de noms qui contient des contrôles serveur ASP.NET qui sont utilisés sur les pages de site et de liste SharePoint.  

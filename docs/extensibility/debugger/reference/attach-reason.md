@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 159fb70b-a344-4ba6-9115-b7eaa16e228f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f40958cabdf1da8aa44cd7e226ed7219429af2b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6d5a7cb8cfbc4efc2ffd90a58c0c0650b677ed8d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931224"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966281"
 ---
 # <a name="attachreason"></a>ATTACH_REASON
 Spécifie la raison pour le moteur de débogage (dé) à attacher à un nœud de programme.  
@@ -63,5 +63,5 @@ public enum enum_ATTACH_REASON { 
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Attacher](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
+ [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
  [Attacher](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)
