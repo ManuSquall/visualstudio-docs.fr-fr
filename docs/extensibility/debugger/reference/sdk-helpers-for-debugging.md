@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6655b96ed51cd7cce5e94ce96cedf97517f1872a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6455e4999f5115aee50fa1605103c4dadcc165dc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942409"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951730"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Programmes d’assistance SDK pour le débogage
 Ces fonctions et les déclarations sont des fonctions d’assistance globales pour l’implémentation des moteurs de débogage, les évaluateurs d’expression et les fournisseurs de symbole dans C++.  
@@ -50,7 +50,7 @@ HRESULT GetMetric(
 |Paramètre|Description|  
 |---------------|-----------------|  
 |pszMachine|[in] Nom d’un ordinateur à distance dont register écraseront (`NULL` signifie l’ordinateur local).|  
-|strType Argument|[in] Un des types de métriques.|  
+|pszType|[in] Un des types de métriques.|  
 |guidSection|[in] GUID de moteur spécifique, d’évaluateur, exception, etc. Spécifie une sous-section sous un type de mesure pour un élément spécifique.|  
 |pszMetric|[in] La mesure doit être obtenu. Cela correspond à un nom de valeur spécifique.|  
 |pdwValue|[in] L’emplacement de stockage de la valeur de la métrique. Il existe plusieurs types de GetMetric qui peut retourner une valeur DWORD (comme dans cet exemple), un BSTR, un GUID ou un tableau de GUID.|  
@@ -72,7 +72,7 @@ HRESULT SetMetric(
   
 |Paramètre|Description|  
 |---------------|-----------------|  
-|strType Argument|[in] Un des types de métriques.|  
+|pszType|[in] Un des types de métriques.|  
 |guidSection|[in] GUID de moteur spécifique, d’évaluateur, exception, etc. Spécifie une sous-section sous un type de mesure pour un élément spécifique.|  
 |pszMetric|[in] La mesure doit être obtenu. Cela correspond à un nom de valeur spécifique.|  
 |dwValue|[in] L’emplacement de stockage de la valeur dans la mesure. Il existe plusieurs types de SetMetric capable de stocker une valeur DWORD (dans cet exemple), un BSTR, un GUID ou un tableau de GUID.|  
@@ -93,7 +93,7 @@ HRESULT RemoveMetric(
   
 |Paramètre|Description|  
 |---------------|-----------------|  
-|strType Argument|[in] Un des types de métriques.|  
+|pszType|[in] Un des types de métriques.|  
 |guidSection|[in] GUID de moteur spécifique, d’évaluateur, exception, etc. Spécifie une sous-section sous un type de mesure pour un élément spécifique.|  
 |pszMetric|[in] La métrique à supprimer. Cela correspond à un nom de valeur spécifique.|  
 |pszAltRoot|[in] Une racine de Registre de remplacement à utiliser. La valeur `NULL` à utiliser la valeur par défaut.|  
@@ -114,7 +114,7 @@ HRESULT EnumMetricSections(
 |Paramètre|Description|  
 |---------------|-----------------|  
 |pszMachine|[in] Nom d’un ordinateur à distance dont register écraseront (`NULL` signifie l’ordinateur local).|  
-|strType Argument|[in] Un des types de métriques.|  
+|pszType|[in] Un des types de métriques.|  
 |rgguidSections|[in, out] Tableau préalloué de GUID doit être renseigné.|  
 |pdwSize|[in] Le nombre maximal de GUID qui peuvent être stockées dans le `rgguidSections` tableau.|  
 |pszAltRoot|[in] Une racine de Registre de remplacement à utiliser. La valeur `NULL` à utiliser la valeur par défaut.|  
@@ -230,7 +230,7 @@ HRESULT EnumMetricSections(
 |metricShowNonUserCode|Affectez la valeur différente de zéro pour afficher le code de non-utilisateur.|  
 |metricJustMyCodeStepping|Affectez la valeur différente de zéro pour indiquer que pas à pas détaillé peut se produire uniquement dans le code utilisateur.|  
 |metricCLSID|CLSID d’un objet d’un type de métrique spécifique.|  
-|MetricName|Nom convivial pour un objet d’un type de métrique spécifique.|  
+|metricName|Nom convivial pour un objet d’un type de métrique spécifique.|  
 |metricLanguage|Nom de la langue.|  
   
 ## <a name="registry-locations"></a>Emplacements du Registre  
@@ -239,7 +239,7 @@ HRESULT EnumMetricSections(
 > [!NOTE]
 >  La plupart du temps, les mesures seront écrites à la clé HKEY_LOCAL_MACHINE. Cependant, parfois HKEY_CURRENT_USER sera la clé de destination. Dbgmetric.lib gère les deux clés. Lors de l’obtention d’une mesure, il recherche HKEY_CURRENT_USER en premier, puis HKEY_LOCAL_MACHINE. Lorsqu’il configure une mesure, un paramètre spécifie la clé de niveau supérieur à utiliser.  
   
- *[clé de Registre]*\  
+ *[registry key]*\  
   
  `Software`\  
   
@@ -247,11 +247,11 @@ HRESULT EnumMetricSections(
   
  `VisualStudio`\  
   
- *[racine version]*\  
+ *[version root]*\  
   
- *[métrique racine]*\  
+ *[metric root]*\  
   
- *[type de métrique]*\  
+ *[metric type]*\  
   
  *[métrique] = [valeur métrique]*  
   
@@ -261,11 +261,11 @@ HRESULT EnumMetricSections(
   
 |Espace réservé|Description|  
 |-----------------|-----------------|  
-|*[clé de Registre]*|`HKEY_CURRENT_USER` ou `HKEY_LOCAL_MACHINE`.|  
-|*[racine version]*|La version de Visual Studio (par exemple, `7.0`, `7.1`, ou `8.0`). Toutefois, cette racine peut également être modifiée à l’aide de la **/rootsuffix** basculer vers **devenv.exe**. VSIP, ce modificateur est généralement pour **Exp**, de sorte que la racine de la version serait, par exemple, 8.0Exp.|  
-|*[métrique racine]*|Il s’agit soit `AD7Metrics` ou `AD7Metrics(Debug)`, selon que la version debug de dbgmetric.lib est utilisée. **Remarque :**  Si dbgmetric.lib est utilisé, cette convention d’affectation de noms doit être respectée si vous avez des différences entre debug et release versions doivent être reflétées dans le Registre.|  
-|*[type de métrique]*|Le type de mesure à écrire : `Engine`, `ExpressionEvaluator`, `SymbolProvider`, etc. Ceux-ci sont définis comme dans dbgmetric.h comme `metricTypeXXXX`, où `XXXX` est le nom de type spécifique.|  
-|*[métrique]*|Le nom d’une entrée à assigner une valeur pour définir la métrique. L’organisation des mesures varie selon le type de mesure.|  
+|*[registry key]*|`HKEY_CURRENT_USER` ou `HKEY_LOCAL_MACHINE`.|  
+|*[version root]*|La version de Visual Studio (par exemple, `7.0`, `7.1`, ou `8.0`). Toutefois, cette racine peut également être modifiée à l’aide de la **/rootsuffix** basculer vers **devenv.exe**. VSIP, ce modificateur est généralement pour **Exp**, de sorte que la racine de la version serait, par exemple, 8.0Exp.|  
+|*[metric root]*|Il s’agit soit `AD7Metrics` ou `AD7Metrics(Debug)`, selon que la version debug de dbgmetric.lib est utilisée. **Remarque :**  Si dbgmetric.lib est utilisé, cette convention d’affectation de noms doit être respectée si vous avez des différences entre debug et release versions doivent être reflétées dans le Registre.|  
+|*[metric type]*|Le type de mesure à écrire : `Engine`, `ExpressionEvaluator`, `SymbolProvider`, etc. Ceux-ci sont définis comme dans dbgmetric.h comme `metricTypeXXXX`, où `XXXX` est le nom de type spécifique.|  
+|*[metric]*|Le nom d’une entrée à assigner une valeur pour définir la métrique. L’organisation des mesures varie selon le type de mesure.|  
 |*[valeur métrique]*|La valeur assignée à la métrique. Le type de que la valeur doit être (string), nombre, etc. dépend de la mesure.|  
   
 > [!NOTE]
@@ -276,9 +276,9 @@ HRESULT EnumMetricSections(
   
  `Engine`\  
   
- *[guid de moteur]*\  
+ *[engine guid]*\  
   
- `CLSID` = *[guid de classe]*  
+ `CLSID` = *[class guid]*  
   
  *[métrique] = [valeur métrique]*  
   
@@ -294,9 +294,9 @@ HRESULT EnumMetricSections(
   
 |Espace réservé|Description|  
 |-----------------|-----------------|  
-|*[guid de moteur]*|Le GUID du moteur de débogage.|  
-|*[guid de classe]*|Le GUID de la classe qui implémente ce moteur de débogage.|  
-|*[guid de fournisseur de port]*|GUID du fournisseur de port, le cas échéant. De nombreux moteurs de débogage utilisent le fournisseur de port par défaut et par conséquent, ne spécifient pas leur propre fournisseur. Dans ce cas, la sous-clé `PortSupplier` apparaîtra.|  
+|*[engine guid]*|Le GUID du moteur de débogage.|  
+|*[class guid]*|Le GUID de la classe qui implémente ce moteur de débogage.|  
+|*[port supplier guid]*|GUID du fournisseur de port, le cas échéant. De nombreux moteurs de débogage utilisent le fournisseur de port par défaut et par conséquent, ne spécifient pas leur propre fournisseur. Dans ce cas, la sous-clé `PortSupplier` apparaîtra.|  
   
 ### <a name="port-suppliers"></a>Fournisseurs de ports  
  Voici l’organisation des métriques de fournisseur de port dans le Registre. `PortSupplier` est le nom de type de métrique pour un fournisseur de port et correspond à *[type de métrique]*.  
@@ -305,7 +305,7 @@ HRESULT EnumMetricSections(
   
  *[guid de fournisseur de port]*\  
   
- `CLSID` = *[guid de classe]*  
+ `CLSID` = *[class guid]*  
   
  *[métrique] = [valeur métrique]*  
   
@@ -313,19 +313,19 @@ HRESULT EnumMetricSections(
   
 |Espace réservé|Description|  
 |-----------------|-----------------|  
-|*[guid de fournisseur de port]*|Le GUID du fournisseur de port|  
-|*[guid de classe]*|Le GUID de la classe qui implémente ce fournisseur de port|  
+|*[port supplier guid]*|Le GUID du fournisseur de port|  
+|*[class guid]*|Le GUID de la classe qui implémente ce fournisseur de port|  
   
 ### <a name="symbol-providers"></a>Fournisseurs de symbole  
  Voici l’organisation des métriques de fournisseur de symboles dans le Registre. `SymbolProvider` est le nom de type de mesure pour le fournisseur de symboles et correspond à *[type de métrique]*.  
   
  `SymbolProvider`\  
   
- *[guid de fournisseur de symboles]*\  
+ *[symbol provider guid]*\  
   
  `file`\  
   
- `CLSID` = *[guid de classe]*  
+ `CLSID` = *[class guid]*  
   
  *[métrique] = [valeur métrique]*  
   
@@ -333,7 +333,7 @@ HRESULT EnumMetricSections(
   
  `metadata`\  
   
- `CLSID` = *[guid de classe]*  
+ `CLSID` = *[class guid]*  
   
  *[métrique] = [valeur métrique]*  
   
@@ -341,8 +341,8 @@ HRESULT EnumMetricSections(
   
 |Espace réservé|Description|  
 |-----------------|-----------------|  
-|*[guid de fournisseur de symboles]*|Le GUID du fournisseur de symboles|  
-|*[guid de classe]*|Le GUID de la classe qui implémente ce fournisseur de symboles|  
+|*[symbol provider guid]*|Le GUID du fournisseur de symboles|  
+|*[class guid]*|Le GUID de la classe qui implémente ce fournisseur de symboles|  
   
 ### <a name="expression-evaluators"></a>Évaluateurs d’expression  
  Voici l’organisation des métriques d’évaluateur d’expression dans le Registre. `ExpressionEvaluator` est le nom de type de mesure pour l’évaluateur d’expression et correspond à *[type de métrique]*.  
@@ -352,11 +352,11 @@ HRESULT EnumMetricSections(
   
  `ExpressionEvaluator`\  
   
- *[langage guid]*\  
+ *[language guid]*\  
   
- *[guid de fournisseur]*\  
+ *[vendor guid]*\  
   
- `CLSID` = *[guid de classe]*  
+ `CLSID` = *[class guid]*  
   
  *[métrique] = [valeur métrique]*  
   
@@ -364,23 +364,23 @@ HRESULT EnumMetricSections(
   
  `Engine`\  
   
- `0` = *[guid du moteur de débogage]*  
+ `0` = *[debug engine guid]*  
   
- `1` = *[guid du moteur de débogage]*  
+ `1` = *[debug engine guid]*  
   
 |Espace réservé|Description|  
 |-----------------|-----------------|  
-|*[langage guid]*|Le GUID d’une langue|  
-|*[guid de fournisseur]*|Le GUID d’un fournisseur|  
-|*[guid de classe]*|Le GUID de la classe qui implémente cette évaluateur d’expression|  
-|*[guid du moteur de débogage]*|Le GUID d’un moteur de débogage fonctionnant avec cette évaluateur d’expression|  
+|*[language guid]*|Le GUID d’une langue|  
+|*[vendor guid]*|Le GUID d’un fournisseur|  
+|*[class guid]*|Le GUID de la classe qui implémente cette évaluateur d’expression|  
+|*[debug engine guid]*|Le GUID d’un moteur de débogage fonctionnant avec cette évaluateur d’expression|  
   
 ### <a name="expression-evaluator-extensions"></a>Extensions d’évaluateur d’expression  
  Voici l’organisation des mesures expression évaluateur extension dans le Registre. `EEExtensions` est le nom de type de mesure pour l’expression à extensions d’évaluateur et correspond à *[type de métrique]*.  
   
  `EEExtensions`\  
   
- *[guid de l’extension]*\  
+ *[extension guid]*\  
   
  *[métrique] = [valeur métrique]*  
   
@@ -388,14 +388,14 @@ HRESULT EnumMetricSections(
   
 |Espace réservé|Description|  
 |-----------------|-----------------|  
-|*[guid de l’extension]*|Le GUID d’une extension d’évaluateur d’expression|  
+|*[extension guid]*|Le GUID d’une extension d’évaluateur d’expression|  
   
 ### <a name="exceptions"></a>Exceptions  
  Voici l’organisation des mesures d’exceptions dans le Registre. `Exception` est le nom de type de métrique pour les exceptions et correspond à *[type de métrique]*.  
   
  `Exception`\  
   
- *[guid du moteur de débogage]*\  
+ *[debug engine guid]*\  
   
  *[types d’exception]*\  
   
@@ -413,7 +413,7 @@ HRESULT EnumMetricSections(
   
 |Espace réservé|Description|  
 |-----------------|-----------------|  
-|*[guid du moteur de débogage]*|GUID du moteur de débogage qui prend en charge des exceptions.|  
+|*[debug engine guid]*|GUID du moteur de débogage qui prend en charge des exceptions.|  
 |*[types d’exception]*|Un titre général pour la sous-clé qui identifie la classe d’exceptions qui peuvent être gérés. Les noms par défaut sont **Exceptions C++**, **Exceptions Win32**, **Exceptions Common Language Runtime**, et **Native Run-Time Checks**. Ces noms sont également utilisés pour identifier une classe d’exception à l’utilisateur particulière.|  
 |*[exception]*|Un nom pour une exception : par exemple, **_com_error** ou **contrôle d’interruption**. Ces noms sont également utilisés pour identifier une exception spécifique à l’utilisateur.|  
   
@@ -422,7 +422,7 @@ HRESULT EnumMetricSections(
   
  En-tête : includes\dbgmetric.h  
   
- Bibliothèque : libs\ad2de.lib, libs\dbgmetric.lib  
+ Library: libs\ad2de.lib, libs\dbgmetric.lib  
   
 ## <a name="see-also"></a>Voir aussi  
  [Informations de référence sur les API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98b5069a6b3709b467386a5424fded0809367a44
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a5b56426b54da6d869aa5fdef2564d83fc501828
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872225"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54962678"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Champs et interfaces de la fenêtre Propriétés
 Le modèle de sélection à déterminer quelles informations sont affichées dans le **propriétés** fenêtre est basée sur la fenêtre qui a le focus dans l’IDE. Chaque fenêtre et chaque objet dans la fenêtre sélectionnée, peuvent avoir son objet de contexte de sélection vers le contexte de la sélection globale. L’environnement des mises à jour le contexte de sélection global avec des valeurs à partir d’un frame de fenêtre lorsque cette fenêtre a le focus. Lorsque le focus est modifié, tout comme le fait le contexte de sélection.  
@@ -89,7 +89,7 @@ En bas de la fenêtre **Propriétés** , une zone de description affiche des inf
   
    Pour récupérer les informations de description à afficher pour le nom de la propriété mise en surbrillance, le **propriétés** fenêtre appels <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDocumentation2%2A> pour la propriété est sélectionnée, en spécifiant le texte souhaité `lcid` d’attribut pour le chaîne de sortie. En interne, <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2> recherche le fichier .dll spécifié dans l’attribut `helpstringdll` et appelle `DLLGetDocumentation` sur ce fichier .dll avec le contexte spécifié et l’attribut `lcid`.  
   
-   La signature et l’implémentation de `DLLGetDocumentation` sont les suivantes :  
+   La signature et l’implémentation de `DLLGetDocumentation` sont les suivantes :  
   
 ```cpp  
 STDAPI DLLGetDocumentation  

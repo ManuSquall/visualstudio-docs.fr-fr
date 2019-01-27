@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eacbe69488d605d9cde2fb219a8adbca1419361b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 68647dbcbeaedd8ce3a6a493b685142434eec2c2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904294"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923092"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>Concevoir des fichiers XML command table (.vsct)
 Une table de commande XML (*.vsct*) fichier décrit la disposition et l’apparence des éléments de commande pour un VSPackage. Éléments de commande incluent des boutons, des zones de liste déroulante, des menus, des barres d’outils et des groupes d’éléments de la commande. Cet article décrit les fichiers de table de commande XML, comment elles affectent les menus et éléments de commande et comment les créer.
