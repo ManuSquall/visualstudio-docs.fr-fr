@@ -1,18 +1,18 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: f65c4c6ea5ed255f40467839e5fa41c879d422f2
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 7da3e8111a16a8003331de0c388805c459cefa07
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204318"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014067"
 documentType: LandingData
-title: Visual Studio | C#
+title: Tutoriels Visual Studio | C#
 metadata:
   title: Développement C# avec Visual Studio | Microsoft Docs
   description: Tutoriels et articles conceptuels sur le développement d’applications C# avec Visual Studio.
   ms.custom: seodec18
   author: ghogen
-  manager: douge
+  manager: jillfra
   ms.prod: visual-studio-dev15
   ms.technology: vs-acquisition
   ms.topic: landing-page
@@ -20,6 +20,8 @@ metadata:
   ms.author: ghogen
   dev_langs:
   - CSharp
+abstract:
+  description: Cette page contient des liens vers des tutoriels pour débutants expliquant comment créer des applications C# avec Visual Studio. Pour obtenir la documentation complète de Visual Studio, consultez <a href="/visualstudio/ide/">Visual Studio</a>. Pour obtenir la documentation du langage C#, consultez le <a href="/dotnet/csharp">Guide C#</a>.
 sections:
 - title: Bien démarrer
   items:

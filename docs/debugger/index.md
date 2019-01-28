@@ -6,13 +6,13 @@ ms.custom: seodec18
 ms.topic: landing-page
 ms.author: mikejo
 author: mikejo5000
-manager: douge
-ms.openlocfilehash: 79a3aa8fd2d86b7c64d719dc745138b970b92d3c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 93117ddabe3184d5e1900b68f058a7a5f3dba711
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886635"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030507"
 ---
 # <a name="debugging-in-visual-studio"></a>Débogage dans Visual Studio
 
@@ -48,7 +48,7 @@ Le débogueur Visual Studio vous permet d’observer le comportement de votre pr
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Écrivez du code C# avec moins de bogues !</h3>
+                        <h3>Techniques et outils de débogage</h3>
                     </div>
                 </div>
             </div>
