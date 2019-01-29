@@ -23,44 +23,44 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3b2ed9001d1096dca82a30dab29a67b9e962354
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: d9759b988e592b122866701b398eec55aedd8e95
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946160"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54228017"
 ---
-# <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window"></a>Afficher les threads dans le débogueur Visual Studio à l’aide de la fenêtre Threads
+# <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Afficher les threads dans le débogueur Visual Studio à l’aide de la fenêtre Threads (C#, Visual Basic, C++)
 Dans le **Threads** fenêtre, vous pouvez examiner et utiliser les threads de l’application que vous déboguez. Pour obtenir des instructions sur la façon d’utiliser le **Threads** fenêtre, consultez [procédure pas à pas : Déboguer à l’aide de la fenêtre Threads](../debugger/how-to-use-the-threads-window.md).
 
 ## <a name="use-the-threads-window"></a>Utiliser la fenêtre Threads 
  Le **Threads** fenêtre contient un tableau où chaque ligne décrit un thread distinct dans votre application. Par défaut, ce tableau répertorie tous les threads de votre application, mais vous pouvez filtrer la liste de façon à afficher uniquement les threads qui vous intéressent. Chaque colonne décrit un type différent d’informations. Vous pouvez également masquer certaines colonnes. Si vous affichez toutes les colonnes, les colonnes suivantes s’affichent, de gauche à droite :  
   
-- **Marquer** Dans cet article sans étiquette, vous pouvez marquer un thread auquel vous souhaitez une attention particulière. Pour plus d’informations sur la façon de signaler un thread, consultez [Comment : ajouter et supprimer les indicateurs des threads](../debugger/how-to-flag-and-unflag-threads.md)  
+- **Marquer** Dans cet article sans étiquette, vous pouvez marquer un thread auquel vous souhaitez une attention particulière. Pour plus d’informations sur la façon de signaler un thread, consultez [Comment : indicateur et supprimer des threads](../debugger/how-to-flag-and-unflag-threads.md).  
   
-- Thread en cours Dans cet article sans étiquette, une flèche jaune indique que le thread actuel. Un contour de flèche indique le contexte actuel du débogueur pour un thread non actuel.
+- **Thread actuel**: dans cet article sans étiquette, une flèche jaune indique que le thread actuel. Un contour de flèche indique le contexte actuel du débogueur pour un thread non actuel.
   
 - **ID** Affiche le numéro d’identification pour chaque thread.  
   
-- ID managé Affiche les numéros d’identification managés des threads managés.  
+- **ID géré**: affiche les numéros d’identification managés des threads managés.  
   
-- Category Affiche la catégorie de threads comme threads d’interface utilisateur, gestionnaires d’appel de procédure distante ou threads de travail. Une catégorie spéciale identifie le thread principal de l'application.  
+- **Catégorie**: affiche la catégorie de threads comme threads d’interface utilisateur, gestionnaires d’appel de procédure distante ou threads de travail. Une catégorie spéciale identifie le thread principal de l'application.  
   
 - **name**). Identifie chaque thread par son nom, le cas échéant, ou en tant que \<sans nom >.  
   
 - **location** : Indique où le thread est en cours d’exécution. Vous pouvez développer cet emplacement de façon à afficher l’ensemble de la pile des appels du thread.  
   
-- Priorité Une colonne avancée (masquée par défaut) affiche la priorité ou précédence que le système a assignée à chaque thread.  
+- **Priorité**: une colonne avancée (masquée par défaut) affiche la priorité ou précédence que le système a assignée à chaque thread.  
   
-- Masque d'affinité Une colonne avancée (masquée par défaut), qui affiche le masque d’affinité de processeur pour chaque thread. Dans un système multiprocesseurs, le masque d'affinité détermine les processeurs sur lesquels un thread peut s'exécuter.  
+- **Masque d’affinité**: une colonne avancée (masquée par défaut) indique le masque d’affinité de processeur pour chaque thread. Dans un système multiprocesseurs, le masque d'affinité détermine les processeurs sur lesquels un thread peut s'exécuter.  
   
-- Compteur suspendu Une colonne avancée (masquée par défaut) affiche le compteur suspendu. Ce compteur détermine si un thread peut s'exécuter. Pour plus d’informations sur les calculs suspendus, consultez [figer et libérer les threads](#freeze-and-thaw-threads).  
+- **Compteur suspendu**: une colonne avancée (masquée par défaut) qui affiche le compteur suspendu. Ce compteur détermine si un thread peut s'exécuter. Pour plus d’informations sur les calculs suspendus, consultez [figer et libérer les threads](#freeze-and-thaw-threads).  
   
-- Nom du processus Une colonne avancée (masquée par défaut) affiche le processus auquel chaque thread appartient. Les données de cette colonne peuvent être utiles lorsque vous déboguez plusieurs processus.  
+- **Nom du processus**: une colonne avancée (masquée par défaut) affiche le processus auquel chaque thread appartient. Les données de cette colonne peuvent être utiles lorsque vous déboguez plusieurs processus.  
 
-- process id Une colonne avancée (masquée par défaut) qui affiche l’ID de processus auquel chaque thread appartient. 
+- **ID de processus**: ID d’une colonne avancée (masquée par défaut) affiche le processus auquel chaque thread appartient. 
 
-- Qualificateur de transport Une colonne avancée (masquée par défaut) qui identifie de façon unique identifie l’ordinateur auquel le débogueur est connecté. 
+- **Qualificateur de transport**: une colonne avancée (masquée par défaut) qui identifie de façon unique l’ordinateur auquel le débogueur est connecté. 
   
 ### <a name="to-display-the-threads-window-in-break-mode-or-run-mode"></a>Pour afficher la fenêtre Threads en mode arrêt ou en mode exécution  
   

@@ -1,8 +1,6 @@
 ---
 title: Créer des visualiseurs de données personnalisées | Microsoft Docs
-ms.custom: ''
 ms.date: 11/07/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.visualizer.troubleshoot
@@ -21,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c5f505bfa8032b0f7d59f348835e1e4969b2648
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
-ms.translationtype: MT
+ms.openlocfilehash: 9bb693e509eb12b01d3c70f8f341b39de06e5797
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607820"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54204386"
 ---
-# <a name="create-custom-data-visualizers"></a>Créer des visualiseurs de données personnalisées 
+# <a name="create-custom-data-visualizers"></a>Créer des visualiseurs de données personnalisées
  Un *visualiseur* fait partie de la [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] interface utilisateur du débogueur qui affiche une variable ou un objet d’une manière adaptée à son type de données. Par exemple, un visualiseur HTML interprète une chaîne HTML et affiche le résultat, telle qu’affichée dans une fenêtre de navigateur. Un visualiseur bitmap interprète une structure bitmap et affiche le graphique représenté. Certains visualiseurs vous permettent de modifier, ainsi que d’afficher les données.
 
  Le débogueur [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] comprend six visualiseurs standard. Le texte HTML, XML et JSON visualiseurs fonctionnent sur les objets de chaîne. Le visualiseur de l’arborescence WPF affiche les propriétés d’une arborescence visuelle d’objet WPF. Le visualiseur dataset fonctionne pour les objets DataSet, DataView et DataTable. 
@@ -48,7 +46,7 @@ L'architecture d'un visualiseur du débogueur comporte deux parties :
   
 - Le *côté débogueur* s’exécute dans le débogueur Visual Studio et crée et affiche l’interface utilisateur du visualiseur.  
   
-- Le *côté programme débogué* s’exécute dans le processus de débogage de Visual Studio (le *programme débogué*). L’objet de données à visualiser (par exemple, il s’agit d’un objet String) existe dans le processus du programme débogué. Le côté programme débogué envoie l’objet vers le côté débogueur, qui l’affiche dans l’interface utilisateur que vous créez.  
+- Le *côté élément débogué* s’exécute dans le processus que Visual Studio débogue (l’*élément débogué*). L’objet de données à visualiser (par exemple, il s’agit d’un objet String) existe dans le processus du programme débogué. Le côté programme débogué envoie l’objet vers le côté débogueur, qui l’affiche dans l’interface utilisateur que vous créez.  
 
 Le côté débogueur reçoit l’objet de données à partir d’un *fournisseur d’objets* qui implémente le <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> interface. Le côté programme débogué envoie l’objet via le *source de l’objet*, qui est dérivée de <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>. 
 
@@ -84,7 +82,7 @@ Vous spécifiez le code côté programme débogué à l’aide de la <xref:Syste
   
 ## <a name="see-also"></a>Voir aussi
   
- [Procédure pas à pas : écrire un visualiseur en C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
+ [Procédure pas à pas : écrire un visualiseur en C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
 
  [Procédure pas à pas : écrire un visualiseur en Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)  
   
