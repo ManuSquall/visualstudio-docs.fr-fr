@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 50732733-ff49-41ba-8c44-4f6a3875ec1c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7016b7674814c56aa7255419f993ca617872cb97
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5723552a7716e7bfc846e209baa3a6f4001cf49b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956506"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013911"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Touches de modification de la planche graphique dans Blend
 Certains raccourcis clavier ne sont pas associés à des éléments de menu et il est donc impossible d'utiliser l'interface utilisateur [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] pour les découvrir. Le tableau suivant répertorie les raccourcis qui modifient une action, par exemple le redimensionnement d’un objet.

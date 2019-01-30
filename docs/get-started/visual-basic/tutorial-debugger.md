@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 62734c0d-a75a-4576-8f73-0e97c19280e1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4437b108aebd63950bce0ea07b9b1e493cf759af
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: e6033ce2329974cc3c2b1f140d02d112e4f87ba9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441881"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985836"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Tutoriel : Apprendre à déboguer du code Visual Basic avec Visual Studio
 
@@ -206,7 +206,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
     ![Définir un point d’arrêt](../visual-basic/media/get-started-set-breakpoint-vb.png)
 
-    Les points d'arrêt constituent une fonctionnalité élémentaire et essentielle de toute procédure de débogage fiable. Quand vous définissez un point d'arrêt, Visual Studio interrompt l'exécution du code à l'emplacement du point d'arrêt pour vous permettre d'examiner les valeurs des variables, le comportement de la mémoire ou encore la bonne exécution ou non d'une branche de code. 
+    Les points d'arrêt constituent une fonctionnalité élémentaire et essentielle de toute procédure de débogage fiable. Quand vous définissez un point d'arrêt, Visual Studio interrompt l'exécution du code à l'emplacement du point d'arrêt pour vous permettre d'examiner les valeurs des variables, le comportement de la mémoire ou encore la bonne exécution ou non d'une branche de code.
 
 2. Appuyez sur **F5** ou sur le bouton **Démarrer le débogage** ![Démarrer le débogage](../../debugger/media/dbg-tour-start-debugging.png "Démarrer le débogage") : l’application démarre et le débogueur s’exécute jusqu’à la ligne de code sur laquelle vous avez défini le point d’arrêt.
 

@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: a1e37500-4ad1-4670-9737-3d9a20536386
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 435011200065f1f27ff54c14c57d71eb651fd8e8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 045f84542334b16d7e3d57fb48099e61f144cadd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952071"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992332"
 ---
 # <a name="shutdown"></a>Éteindre
 L’option **Shutdown** attend que les processus en cours de profilage se terminent ou se détachent, puis désactive le profileur et ferme le fichier de données de profilage. L’option **Shutdown** doit être la dernière commande d’une exécution de profilage.  
