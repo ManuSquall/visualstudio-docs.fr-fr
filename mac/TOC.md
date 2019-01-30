@@ -50,7 +50,12 @@
 ## [Configuration d’un dépôt Git](set-up-git-repository.md)
 ## [Utilisation de Git](working-with-git.md)
 ## [Configuration d’un dépôt Subversion](set-up-subversion-repository.md)
-## [Utilisation d’une sous-version](working-with-subversion.md)
+## [Utilisation de Subversion](working-with-subversion.md)
+
+# [Déploiement d’applications web](web-app-deployment.md)
+## [Publier sur Azure App Service](publish-app-svc.md)
+## [Publier dans un dossier](publish-folder.md)
+
 
 # [Charges de travail](workloads.md)
 ## [ASP.NET Core](asp-net-core.md)
