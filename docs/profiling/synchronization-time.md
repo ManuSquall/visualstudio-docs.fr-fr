@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: affa04cc-8bba-4848-9301-b19846d3c2cb
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d4c6542c2e72428c06825a1d44ba7d0b04b7648
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f6d97f1b46041578279d5d170f8ce0fd33b81cf3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53903823"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030832"
 ---
 # <a name="synchronization-time"></a>Période de synchronisation
 Ces segments de la chronologie sont associés à des périodes de blocage classées dans la catégorie Synchronisation. Quand un thread est marqué comme bloqué sur la synchronisation, cela implique une de ces situations :  

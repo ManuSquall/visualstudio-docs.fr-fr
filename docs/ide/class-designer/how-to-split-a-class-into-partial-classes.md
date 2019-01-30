@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour fractionner une classe en classes partielles (Concepteur de classes)
+title: 'Procédure : fractionner une classe en classes partielles (Concepteur de classes)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 6f6b0b30-3996-4569-9200-20482b3adf90
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 69a0a90315ec906874c94445e904e7dc1274a23e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5b169979da4a6eba777855d3b0af5c0a31059f73
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826242"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970082"
 ---
-# <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Guide pratique pour fractionner une classe en classes partielles dans le Concepteur de classes
+# <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Procédure : fractionner une classe en classes partielles dans le Concepteur de classes
 
 Vous pouvez utiliser le mot clé `partial` (`Partial` en Visual Basic) pour diviser la déclaration d’une classe ou d’une structure en plusieurs déclarations. Vous pouvez utiliser autant de déclarations partielles que vous le souhaitez.
 

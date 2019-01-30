@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 816f5633-65d7-41e5-aee1-033628d4e2df
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb4c4e3d9181fecd3c9aa2d91201deadb09de7c4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3daf206adeedc26645c50a2fe092de3d4bfde980
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892976"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952208"
 ---
 # <a name="modules-view---sampling-data"></a>Modules, vue - données d’échantillonnage
 La vue Modules des données d’échantillonnage affiche les données de performances regroupées selon les modules contenus dans les données de profilage. Chaque module est la racine d’une arborescence hiérarchique. Les fonctions échantillonnées du module sont répertoriées sous le nœud du module.  

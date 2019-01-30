@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: a8161fd7534554da0ad45b3aa2b985a68dd9e49d
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 52decfae74eb978aeb43aad37fabb9e03ed23978
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "53067059"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768830"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Informations de référence sur la migration et la mise à niveau de projets pour Visual Studio 2017
 
@@ -95,7 +95,7 @@ Pour conserver une compatibilité maximale avec les projets créés dans des ver
 
 Dans ce contexte, la question se pose naturellement de savoir si vous devez essayer de mettre à jour manuellement ou de faire migrer un projet vers une valeur de `ToolsVersion` plus récente. Ce type de changement est inutile. Il va générer probablement beaucoup d’erreurs et d’avertissements que vous devrez traiter pour que le projet puisse être regénéré. De plus, si Visual Studio cesse un jour de prendre en charge un `ToolsVersion` spécifique, l’ouverture du projet va déclencher le processus de migration de ce dernier, car la valeur de `ToolsVersion` devra être changée. Dans ce cas, le sous-système de ce type de projet sait exactement ce qui doit être changé. Il peut donc effectuer les changements nécessaires automatiquement, comme indiqué plus haut dans cet article.
 
-# <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes
 
 Pour plus d’informations, consultez les articles suivants :
 

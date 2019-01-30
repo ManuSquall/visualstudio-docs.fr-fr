@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: eb139327-4783-4f2a-874c-efad377a7be4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b8d6085f21035408b33b229220e4aea10b2b6c5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 48957b7078f8348f4ac1489267b603992e04a56a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842081"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965759"
 ---
 # <a name="events-vsperfcmd"></a>Events (VSPerfCmd)
 L’option **Events** de *VSPerfCmd.exe* contrôle la journalisation ETW (suivi d’événements pour Windows). Les données ETW sont enregistrées dans un fichier .etl, qui est distinct du fichier de données du profileur. Les données peuvent être affichées dans un rapport avec la commande [VSPerfReport](../profiling/vsperfreport.md) /summary:etw.  

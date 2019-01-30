@@ -2,22 +2,22 @@
 title: 'Tutoriel : Python dans Visual Studio, étape 1, créer un projet'
 titleSuffix: ''
 description: Vue d’ensemble et étape 1 d’une procédure pas à pas principale qui présente les fonctionnalités de Python dans Visual Studio, notamment les prérequis et la création d’un projet Python.
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2741d98eff02fd17be67213ab1069bdd43476475
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bc6f831d30f578cb03bbb760da410aefff312e99
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916044"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231868"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Tutoriel : Utiliser Python dans Visual Studio
 
@@ -61,7 +61,7 @@ Dans ce didacticiel, vous commencez avec un projet simple contenant un seul fich
 
     (1) Votre projet est mis en gras, avec le nom que vous lui avez donné dans la boîte de dialogue **Nouveau projet**. Sur le disque, ce projet est représenté par un fichier *.pyproj* au sein du dossier de projet.
 
-    (2) Au niveau le plus élevé, vous voyez une *solution*, qui a par défaut le même nom que votre projet. Une solution, représentée par un fichier *.sln* sur le disque, est un conteneur pour un ou plusieurs projets connexes. Par exemple, si vous écrivez une extension C++ pour votre application Python, ce projet C++ peut se trouver dans la même solution. La solution peut également contenir un projet pour un service web, ainsi que des projets pour les programmes de test dédiés. 
+    (2) Au niveau le plus élevé, vous voyez une *solution*, qui a par défaut le même nom que votre projet. Une solution, représentée par un fichier *.sln* sur le disque, est un conteneur pour un ou plusieurs projets connexes. Par exemple, si vous écrivez une extension C++ pour votre application Python, ce projet C++ peut se trouver dans la même solution. La solution peut également contenir un projet pour un service web, ainsi que des projets pour les programmes de test dédiés.
 
     (3) Dans le projet, vous voyez les fichiers sources. Dans le cas présent, il s’agit d’un unique fichier *.py*. La sélection d’un fichier fait apparaître ses propriétés dans la fenêtre **Propriétés**. Le fait de double-cliquer sur un fichier l’ouvre d’une façon appropriée pour ce fichier.
 

@@ -1,22 +1,22 @@
 ---
 title: Modèles d’application web pour Python
 description: Visual Studio fournit des modèles pour les applications web Python qui utilisent des infrastructures Bottle, Flask et Django. La prise en charge inclut les configurations de débogage et la publication sur Azure App Service.
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 29730f6dfa2d220759a5e563305e4e0cbb9675c2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 214db7bcc2dca01917228598f2103a5bd90bbc37
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850620"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231712"
 ---
 # <a name="python-web-application-project-templates"></a>Modèles de projet d’application web Python
 
