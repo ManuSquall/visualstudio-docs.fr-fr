@@ -380,7 +380,45 @@ items:
 - name: Extensibilité de projet Visual Studio C++
   href: visual-cpp-project-extensibility.md
 - name: Lignes directrices pour l’expérience utilisateur dans Visual Studio
-  href: ux-guidelines/toc.yml
+  href: ux-guidelines/visual-studio-user-experience-guidelines.md
+  items:
+  - name: Éléments principaux de l’expérience utilisateur
+    href: ux-guidelines/ux-essentials-for-visual-studio.md
+  - name: Polices et mise en forme
+    href: ux-guidelines/fonts-and-formatting-for-visual-studio.md
+  - name: Couleurs et styles
+    href: ux-guidelines/colors-and-styling-for-visual-studio.md
+    items:
+    - name: Couleurs partagées
+      href: ux-guidelines/shared-colors-for-visual-studio.md
+    - name: Informations de référence sur les valeurs de couleur
+      href: ux-guidelines/color-value-reference-for-visual-studio.md
+  - name: Images et icônes
+    href: ux-guidelines/images-and-icons-for-visual-studio.md
+    items:
+    - name: Dictionnaire de langage Visual
+      href: ux-guidelines/visual-language-dictionary-for-visual-studio.md
+  - name: Menus et commandes
+    href: ux-guidelines/menus-and-commands-for-visual-studio.md
+  - name: Modèles d’interaction
+    href: ux-guidelines/interaction-patterns-for-visual-studio.md
+    items:
+    - name: Modèles d’application
+      href: ux-guidelines/application-patterns-for-visual-studio.md
+    - name: Modèles de contrôle communs
+      href: ux-guidelines/common-control-patterns-for-visual-studio.md
+    - name: Modèles composites
+      href: ux-guidelines/composite-patterns-for-visual-studio.md
+  - name: Texte et aide d’interface utilisateur
+    href: ux-guidelines/ui-text-and-help-for-visual-studio.md
+  - name: Disposition de la boîte de dialogue
+    href: ux-guidelines/layout-for-visual-studio.md
+  - name: Notifications et progression
+    href: ux-guidelines/notifications-and-progress-for-visual-studio.md
+  - name: Animations
+    href: ux-guidelines/animations-for-visual-studio.md
+  - name: Outils d’évaluation
+    href: ux-guidelines/evaluation-tools-for-visual-studio.md
 - name: Résolution des problèmes DPI
   href: addressing-dpi-issues2.md
 - name: Catalogue et service d’images
@@ -743,9 +781,9 @@ items:
     href: roslyn-analyzers-and-code-aware-library-for-immutablearrays.md
   - name: Référence de version de package Roslyn
     href: roslyn-version-support.md
-ms.openlocfilehash: f16722f3f0b684b3923f2dfa5b30c06e79d0a90b
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 14efc710953d669b51b275226885eb9d0f5bbe50
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562358"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231998"
