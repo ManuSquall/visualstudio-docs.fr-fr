@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 5cd5a695-0a14-484a-8952-ed47e13d8e92
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d76548ad85a02df6e2217b28535d268d7823be70
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3bd0ee2d1149e2f2fa231b407c8ce2717beb3953
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895504"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967493"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn et ThreadOff
 Les sous-commandes **ThreadOff** et **ThreadOn** de *VSPerfCmd.exe* sont disponibles seulement dans les sessions de profilage en ligne de commande qui utilisent la méthode d’instrumentation. **ThreadOff** et **ThreadOn** suspendent et reprennent le profilage du thread spécifié. **ThreadOff** arrête le profilage du thread et **ThreadOn** démarre le profilage du thread.  

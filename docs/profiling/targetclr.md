@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: f9732480-287f-40f1-a4ff-b112e143b940
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed0891715f6c9a0f4f89249a6ca5ac6415bad038
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bf48109107e6e2ef0c4f2d5d4c8f72a8f8fc0443
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967120"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973653"
 ---
 # <a name="targetclr"></a>TargetCLR
 L’option **TargetCLR** spécifie la version du common language runtime (CLR) à profiler quand plusieurs versions du CLR sont chargées dans une application.  

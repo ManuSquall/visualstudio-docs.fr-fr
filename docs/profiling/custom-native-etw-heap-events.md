@@ -5,23 +5,23 @@ ms.topic: conceptual
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1414c2102d2b19728c8dfb74470fefae499bc622
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aecc48392a036cb6ef17cc3b3ea58eb82a6e59aa
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877135"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55089264"
 ---
 # <a name="custom-native-etw-heap-events"></a>Événements de tas ETW natifs personnalisés
 
 Visual Studio contient de nombreux [outils de profilage et de diagnostic](../profiling/profiling-feature-tour.md), y compris un profileur de mémoire native.  Ce profileur raccorde les [événements ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) à partir du fournisseur de tas et fournit une analyse indiquant comment la mémoire est allouée et utilisée.  Par défaut, cet outil peut uniquement analyser les allocations effectuées à partir du tas Windows standard, et aucune allocation en dehors de ce tas natif n’est affichée.
 
-Il existe de nombreux cas dans lesquels vous souhaiterez utiliser votre propre tas personnalisé et éviter la surcharge d’allocation liée au tas standard.  Par exemple, vous pouvez utiliser [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx) pour allouer une grande quantité de mémoire au démarrage de l’application ou du jeu, puis gérer vos propres blocs dans cette liste.  Dans ce scénario, le profileur de mémoire voit uniquement cette allocation initiale, et pas la gestion personnalisée effectuée à l’intérieur du bloc de mémoire.  Toutefois, à l’aide du fournisseur ETW de tas natif personnalisé, vous pouvez laisser l’outil connaître toutes les allocations que vous effectuez en dehors du tas standard.
+Il existe de nombreux cas dans lesquels vous souhaiterez utiliser votre propre tas personnalisé et éviter la surcharge d’allocation liée au tas standard.  Par exemple, vous pouvez utiliser [VirtualAlloc](/windows/desktop/api/memoryapi/nf-memoryapi-virtualalloc) pour allouer une grande quantité de mémoire au démarrage de l’application ou du jeu, puis gérer vos propres blocs dans cette liste.  Dans ce scénario, le profileur de mémoire voit uniquement cette allocation initiale, et pas la gestion personnalisée effectuée à l’intérieur du bloc de mémoire.  Toutefois, à l’aide du fournisseur ETW de tas natif personnalisé, vous pouvez laisser l’outil connaître toutes les allocations que vous effectuez en dehors du tas standard.
 
 Par exemple, dans un projet comme le suivant où `MemoryPool` est un tas personnalisé, vous voyez une seule allocation sur le tas Windows :
 

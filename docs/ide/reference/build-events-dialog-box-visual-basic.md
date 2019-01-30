@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 3a81a7c7-39f9-47a8-ba5a-b351227f380e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5899c8fc2b9e064ac326106a289d8309421e21f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6f740fd6c63edcb4b7a7f0679995f77c35c71fc8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937021"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948555"
 ---
 # <a name="build-events-dialog-box-visual-basic"></a>Événements de build, boîte de dialogue (Visual Basic)
 
@@ -49,7 +49,7 @@ Spécifie les conditions pour l’événement post-build à exécuter, comme ind
 |Option|Résultat|
 |------------|------------|
 |**Toujours**|L’événement post-build est exécuté, que la build ait abouti ou échoué.|
-|**En cas de build réussie **|L’événement post-build est exécuté si la build réussit. L’événement est exécuté même pour un projet à jour, à condition que la build soit un succès. Il s'agit du paramètre par défaut.|
+|**En cas de build réussie** |L’événement post-build est exécuté si la build réussit. L’événement est exécuté même pour un projet à jour, à condition que la build soit un succès. Il s'agit du paramètre par défaut.|
 |**Lorsque la build met à jour la sortie du projet**|L’événement post-build n’est exécuté que quand le fichier de sortie du compilateur (.exe ou .dll) est différent du fichier de sortie précédent. Un événement post-build n’est pas exécuté si un projet est à jour.|
 
 ## <a name="see-also"></a>Voir aussi

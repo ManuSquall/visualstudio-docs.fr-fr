@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 3fff9ae5-213c-46ea-a660-1d70acb6c922
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1745fefc5b1d2065f209e9396794cac5a5cc782d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7e3869927c3ee25766e1c7a404517b982fa07bfe
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943913"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000859"
 ---
 # <a name="build-events-page-project-designer-c"></a>Événements de build, page du Concepteur de projets (C#)
 Utilisez la page **Événements de build** du **Concepteur de projets** pour spécifier des instructions de configuration de build. Vous pouvez également spécifier les conditions dans lesquelles les événements post-build sont exécutés. Pour plus d'informations, voir [Procédure : Spécifier des événements de build (C#)](../../ide/how-to-specify-build-events-csharp.md) et [Guide pratique pour spécifier des événements de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).
@@ -48,7 +48,7 @@ Utilisez la page **Événements de build** du **Concepteur de projets** pour sp�
 |Option|Résultat|
 |------------|------------|
 |**Toujours**|L’événement post-build est exécuté, que la build ait abouti ou échoué.|
-|**En cas de build réussie **|L’événement post-build est exécuté si la build réussit. Ainsi, l’événement est exécuté même pour un projet à jour, à condition que la build soit un succès.|
+|**En cas de build réussie** |L’événement post-build est exécuté si la build réussit. Ainsi, l’événement est exécuté même pour un projet à jour, à condition que la build soit un succès.|
 |**Lorsque la build met à jour la sortie du projet**|L’événement post-build n’est exécuté que quand le fichier de sortie du compilateur (.exe ou .dll) est différent du fichier de sortie précédent. Ainsi, un événement post-build n’est pas exécuté si un projet est à jour.|
 
 ## <a name="see-also"></a>Voir aussi

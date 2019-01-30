@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 3a10022a-5c37-48b1-a833-dd35902176b6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40a0edf549686d8b984d937b5970f429fe29f931
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8db20a51872af37ce9f7ee655a365efb98d2f687
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840696"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938618"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>Visualiser des événements EventSource en tant que marqueurs
 Le visualiseur concurrentiel peut afficher des événements EventSource comme marqueurs, dont vous pouvez contrôler le mode d’affichage. Pour afficher les marqueurs EventSource, inscrivez le GUID du fournisseur ETW à l’aide de la boîte de dialogue [Paramètres avancés](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md). Le visualiseur concurrentiel a des conventions par défaut pour représenter les événements EventSource comme [marqueurs d’indicateurs](../profiling/flag-markers.md), [marqueurs d’intervalles](../profiling/span-markers.md) et [marqueurs de messages](../profiling/message-markers.md). Vous pouvez personnaliser l’affichage des événements EventSource en ajoutant des champs personnalisés aux événements. Pour plus d’informations sur les marqueurs, consultez [Marqueurs du visualiseur concurrentiel](../profiling/concurrency-visualizer-markers.md). Pour plus d’informations sur les événements EventSource, consultez <xref:System.Diagnostics.Tracing>.  

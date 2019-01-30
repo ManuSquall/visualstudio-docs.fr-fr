@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 0a3b3a1f-e22b-4ac8-b46e-71694e9b2cf1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c54518701c2c57bd4a651c050e69e42307f8fdd8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aef5dd31e5dca55be1b8c2399ce665b7b1b33ee9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952246"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55019612"
 ---
 # <a name="summary-view---instrumentation-data"></a>Vue Résumé - Données d’instrumentation
 La vue Résumé affiche des informations sur les fonctions dont le coût est le plus élevé quant aux performances dans une exécution du profilage. Pour plus d’informations, notamment une description des liens de notification et des listes de rapports, consultez [Vue Résumé](../profiling/summary-view.md).  

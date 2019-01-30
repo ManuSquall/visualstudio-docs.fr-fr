@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: f811c019-a67b-4d54-82e6-e29549496f6e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 84367bdf99ae7c29f5ecac4d345cd21c8cc17689
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 992cf68dc8a8010edeb59ffb055f6a67ea48d4f8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935283"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040552"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler (tâche)
 La tâche `AspNetCompiler` inclut dans un wrapper *aspnet_compiler.exe*, un utilitaire permettant de précompiler des applications [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
