@@ -1,14 +1,9 @@
 ---
 title: Vue Allocations de mémoire .NET | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.allocation
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: 01eb876e-c413-4516-977b-4f896929e8a6
 caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 73a2be1314b01a0a7de73f71794bc94b18f0e851
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 563826c63d851e412b7c74a99f5b8a9ad1c1556e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760355"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798805"
 ---
 # <a name="net-memory-allocations-view"></a>Mode Allocations de mémoire .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,6 +59,3 @@ La vue Allocations liste les types qui ont été créés au cours de l’exécut
 |**% d’octets inclusifs**|-   Pour une fonction, pourcentage de toute la mémoire allouée lors de l’exécution du profilage qui était constitué d’allocations inclusives du type parent par la fonction.<br />-   Pour un type, pourcentage de toute la mémoire allouée lors de l’exécution du profilage qui a été alloué pour des instances du type.|  
 |**Octets exclusifs**|-   Pour une fonction, nombre d’octets de mémoire alloués par la fonction pour des objets du type parent. Ce nombre n’inclut pas la mémoire allouée par ses fonctions enfants.<br />-   Pour un type, nombre total d’octets qui ont été alloués lors de l’exécution du profilage pour les instances du type.|  
 |**% d’octets exclusifs**|-   Pour une fonction, pourcentage de toute la mémoire allouée lors de l’exécution du profilage qui était constitué d’allocations exclusives du type parent par la fonction.<br />-   Pour un type, pourcentage de toute la mémoire allouée lors de l’exécution du profilage qui a été alloué pour des instances du type.|
-
-
-

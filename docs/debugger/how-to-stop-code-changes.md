@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 9e72a50c-bb0a-4eaa-9ac1-d00930b68d38
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24aa925ef22c7322e7c3a2531bcb8ee492981096
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bc79b09f51e182e69bcf652627275a10fdfe61e2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843253"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013262"
 ---
 # <a name="how-to-stop-code-changes"></a>Procédure : Arrêter des modifications de code
 Pendant que Modifier & Continuer est en train d'appliquer les modifications du code, vous pouvez arrêter l'opération.  

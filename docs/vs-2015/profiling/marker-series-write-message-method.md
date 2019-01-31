@@ -1,14 +1,9 @@
 ---
 title: marker_series::write_message, méthode | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::marker_series::write_message
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 546121bc-67e0-4a5a-a456-12bd78fd6de2
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b98cf78223ec171bb8c0c0c32ca333ad9bb54945
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f759ea679af818d85dd365f5615ce4fc664df89a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768063"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798005"
 ---
 # <a name="markerserieswritemessage-method"></a>marker_series::write_message, méthode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,13 +60,10 @@ void write_message(
  `_Category`  
  Niveau Category.Importance.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  **En-tête** : cvmarkersobj.h  
   
- **Espace de noms** : Concurrency::diagnostic  
+ **Espace de noms :** Concurrency::diagnostic  
   
 ## <a name="see-also"></a>Voir aussi  
  [marker_series, classe](../profiling/marker-series-class.md)
-
-
-

@@ -1,13 +1,9 @@
 ---
 title: Projets et solutions
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.savedeferredsaveprojectonclose
 - vs.untrustedtemplateopeningdocuments
@@ -53,13 +49,13 @@ ms.assetid: aeaf56cb-c2dd-47f6-b012-23b84b7a7254
 caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a4e50e386be097338207a2ef66904347f9170d3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 32b2f33af3c34cf6245e511cbd54d6ce7cc3a2bd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905239"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795250"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Solutions et projets dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +75,7 @@ Quand vous créez une application pour mobile, une application, un site web, une
  Vous pouvez aussi créer des modèles de projets et d'éléments personnalisés. Pour plus d’informations, consultez [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md).
 
 ## <a name="creating-new-projects"></a>Création de nouveaux projets
- Le moyen le plus simple pour créer un nouveau projet consiste à démarrer avec un modèle de projet prédéfini, qui se compose d'un ensemble de base de fichiers de code prégénérés, de fichiers de configuration, de ressources et de paramètres qui vous aideront à démarrer la création d'un type particulier d'application ou de site web dans un langage de programmation particulier. Ces modèles sont ce que vous voyez dans la boîte de dialogue **Nouveau projet** quand vous choisissez **Fichier &#124; Nouveau &#124; Projet** ou **Fichier &#124; Nouveau &#124; Site web** dans le menu principal, puis que vous naviguez. Pour plus d’informations, consultez [Création de projets et de solutions](../ide/creating-solutions-and-projects.md) et [NIB Création de projets à partir de modèles](http://msdn.microsoft.com/en-us/7c36d86a-6b79-4480-8228-0f925f1204b2).
+ Le moyen le plus simple pour créer un nouveau projet consiste à démarrer avec un modèle de projet prédéfini, qui se compose d'un ensemble de base de fichiers de code prégénérés, de fichiers de configuration, de ressources et de paramètres qui vous aideront à démarrer la création d'un type particulier d'application ou de site web dans un langage de programmation particulier. Ces modèles sont ce que vous voyez dans la boîte de dialogue **Nouveau projet** quand vous choisissez **Fichier &#124; Nouveau &#124; Projet** ou **Fichier &#124; Nouveau &#124; Site web** dans le menu principal, puis que vous naviguez. Pour plus d’informations, consultez [Création de projets et de solutions](../ide/creating-solutions-and-projects.md) et [NIB Création de projets à partir de modèles](http://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2).
 
 ## <a name="managing-projects-in-solution-explorer"></a>Gestion de projets dans l'Explorateur de solutions
  Après avoir créé un nouveau projet, vous utilisez **l'Explorateur de solutions** pour afficher et gérer des projets et des solutions, ainsi que leurs éléments associés. L'illustration suivante montre l'Explorateur de serveurs avec une solution C# qui contient deux projets.

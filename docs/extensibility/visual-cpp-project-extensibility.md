@@ -1,6 +1,6 @@
 ---
 title: Extensibilité de projet Visual C++
-ms.date: 09/12/2018
+ms.date: 01/25/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 499e3776e81fcde3e89eb3436e3938f2feafb137
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e38ff6cf2912ccc18c27f517a35c7a543325a8eb
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013702"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55232050"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ Project system d’extensibilité et ensemble d’outils integration
 
@@ -274,6 +274,8 @@ Le Microsoft.Cpp.Common.Tasks.dll implémente ces tâches :
 
 - `SetEnv`
 
+- `GetOutOfDateItems`
+
 Si vous avez un outil qui effectue la même action comme un outil existant et qui a des commutateurs de ligne de commande similaires (comme clang-cl et CL), vous pouvez utiliser la même tâche pour chacun d’eux.
 
 Si vous avez besoin créer une nouvelle tâche pour un outil de génération, vous pouvez choisir parmi les options suivantes :
@@ -294,11 +296,14 @@ Si vous avez besoin créer une nouvelle tâche pour un outil de génération, vo
 
 La génération incrémentielle de MSBuild par défaut cible utilisation `Inputs` et `Outputs` attributs. Si vous les spécifiez, MSBuild appelle la cible uniquement si une des entrées a un horodatage plus récent que toutes les sorties. Étant donné que les fichiers sources souvent incluant ou importer d’autres fichiers et générer outils produisent des résultats différents selon les options de l’outil, il est difficile de spécifier toutes les entrées possibles et les sorties de cibles de MSBuild.
 
-Pour gérer ce problème, la build C++ utilise une technique différente pour prendre en charge les générations incrémentielles. La plupart des cibles ne spécifier les entrées et sorties et par conséquent, s’exécutent toujours pendant la génération. Les tâches appelés par les cibles écrivent des informations sur toutes les entrées et sorties dans *tlog* fichiers ayant une extension .tlog. Fichiers TLog sont utilisés par les versions ultérieures pour vérifier ce qui a changé et doit être reconstruit, et ce qui est à jour.
+Pour gérer ce problème, la build C++ utilise une technique différente pour prendre en charge les générations incrémentielles. La plupart des cibles ne spécifier les entrées et sorties et par conséquent, s’exécutent toujours pendant la génération. Les tâches appelés par les cibles écrivent des informations sur toutes les entrées et sorties dans *tlog* fichiers ayant une extension .tlog. Fichiers TLog sont utilisés par les versions ultérieures pour vérifier ce qui a changé et doit être reconstruit, et ce qui est à jour. Fichiers TLog sont également la seule source pour la vérification de build à jour par défaut dans l’IDE.
 
 Pour déterminer toutes les entrées et sorties, les tâches de l’outil native utilisent tracker.exe et [FileTracker](/dotnet/api/microsoft.build.utilities.filetracker) classe fournie par MSBuild.
 
 Microsoft.Build.CPPTasks.Common.dll définit le `TrackedVCToolTask` classe de base abstraite publique. La plupart des tâches de l’outil natif est dérivée de cette classe.
+
+À compter de la mise à jour de Visual Studio 2017 15.8, vous pouvez utiliser le `GetOutOfDateItems` implémenté dans Microsoft.Cpp.Common.Tasks.dll pour produire des fichiers TLog pour des cibles personnalisées avec connus des entrées et sorties de tâche.
+Vous pouvez également les créer à l’aide de la `WriteLinesToFile` tâche. Consultez le `_WriteMasmTlogs` cibler dans `$(VCTargetsPath)` \\ *BuildCustomizations*\\*masm.targets* comme exemple.
 
 ## <a name="tlog-files"></a>fichiers TLog
 
@@ -314,7 +319,6 @@ Le [FlatTrackingData](/dotnet/api/microsoft.build.utilities.flattrackingdata) cl
 
 Fichiers TLog de ligne de commande contiennent des informations sur les lignes de commande utilisées dans la build. Ils sont utilisés uniquement pour les builds incrémentielles, les vérifications de pas à jour, donc le format interne est déterminé par la tâche MSBuild qui génère les.
 
-Si les fichiers .tlog sont créés par une tâche, il est préférable d’utiliser ces classes d’assistance pour les créer. Toutefois, étant donné que la vérification à jour par défaut s’appuie uniquement sur les fichiers TLog, il est parfois plus pratique de les afficher dans une cible sans une tâche. Vous pouvez les écrire en utilisant le `WriteLinesToFile` tâche. Consultez le `_WriteMasmTlogs` cibler dans `$(VCTargetsPath)` \\ *BuildCustomizations*\\*masm.targets* comme exemple.
 
 ### <a name="read-tlog-format"></a>Format de .tlog lire
 

@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 6ccb1269-d55f-49c4-920d-baedf7de2888
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad9c458891a13a28d9b13ec9674a4a9e829b95a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ba089ace95308ddcf6067920da8484064e797ecd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955277"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015106"
 ---
 # <a name="graphics-log-document"></a>Document de journal Graphics
 Le document journal de graphisme est l’enregistrement des événements graphiques qui se sont produits pendant l’exécution de votre application sous une session Graphics Diagnostics. Une fois les événements enregistrés, vous pouvez examiner le journal dans Visual Studio Graphics Analyzer pour diagnostiquer les problèmes de rendu et de performances.  
@@ -42,7 +42,7 @@ Le document journal de graphisme est l’enregistrement des événements graphiq
 ## <a name="playback-machine"></a>Ordinateur de lecture  
  Dans l’angle supérieur droit de la **Liste de frames** figure également l’**ordinateur de lecture**. L’ordinateur de lecture est l’ordinateur ou l’appareil utilisé pour lire les événements graphiques d’un fichier journal de graphisme à l’occasion d’une session Graphics Diagnostics ultérieure. En lisant les événements capturés sur un autre appareil que votre ordinateur de développement, vous pouvez reproduire avec une plus grande précision l'environnement d'exécution dans lequel le problème s'est produit. Par exemple, vous pouvez utiliser un ordinateur équipé de matériel ou de pilotes graphiques différents de ceux utilisés sur votre ordinateur de développement, ou d'autres types d'appareils, tels qu'une tablette Windows RT ou un appareil Windows Phone ARM.  
 
- Pour plus d’informations sur la spécification d’un ordinateur de lecture, consultez [Comment : modifier l’ordinateur de lecture de Graphics Diagnostics](how-to-change-the-graphics-diagnostics-playback-machine.md)  
+ Pour plus d’informations sur la spécification d’un ordinateur de lecture, consultez [Comment : modifier l’ordinateur de lecture Graphics Diagnostics](how-to-change-the-graphics-diagnostics-playback-machine.md).  
 
 ## <a name="graphics-log-summary-information"></a>Information résumées du journal de graphisme  
  Quand le document actif est un fichier journal de graphisme, la fenêtre **Propriétés** affiche des informations sur l’environnement qui a hébergé la session de capture Graphics Diagnostics. Plusieurs catégories d'informations sont affichées.  

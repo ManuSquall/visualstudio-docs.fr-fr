@@ -1,14 +1,9 @@
 ---
 title: Analyse du code, page du Concepteur de projets | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs29106
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 71743d26-4da5-4f7d-a403-7ab96cf2ef2e
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9e2af505b7cf5700a521903a873c117c7daf4681
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5e5ae21fcbe215a7abaec247201f2af44caa740f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245165"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764824"
 ---
 # <a name="code-analysis-project-designer"></a>Analyse du code, page du Concepteur de projets
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -72,7 +67,4 @@ Contient l’outil d’analyse de code que vous pouvez choisir d’exécuter sur
 ## <a name="see-also"></a>Voir aussi  
  [Analyse du code pour les avertissements liés au code managé](../../code-quality/code-analysis-for-managed-code-warnings.md)   
  [Vue d’ensemble de l’analyse du code managé](../../code-quality/code-analysis-for-managed-code-overview.md)   
- [Procédure pas à pas : analyse du code managé pour les erreurs de code](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
-
-
-
+ [Procédure pas à pas : Analyse du code géré pour la recherche des défaillances du code](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
