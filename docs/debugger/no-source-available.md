@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: ed0732bc-4b8c-490f-adb1-af06869a2a6b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8673db7f0e31a32e7e4fdf92e447f373b5a29dfa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 671593cf19eab22d1b7e233481ee4004ca8ed8ee
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945273"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54925097"
 ---
 # <a name="no-source-available"></a>Aucune source disponible
 Votre projet ne contient pas de code source pour le code que vous essayez d'afficher. La cause habituelle est le double-clic sur un module qui n’a pas de code source dans la **Fenêtre Pile des appels** ou la **Fenêtre Threads**. Vous pouvez poursuivre le débogage, mais vous ne pouvez pas utiliser la fenêtre source pour définir les points d'arrêt et accomplir d'autres actions à cet emplacement. Si vous avez besoin de définir un point d’arrêt, utilisez plutôt la **Fenêtre Code Machine**.  

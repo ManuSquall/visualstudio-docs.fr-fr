@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: ee9da1e2-7b34-4cba-81e2-215d25d32e4d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1122b662bd9f23bb88f368c02432584c3bbfffe2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8a1a3c1eff1775114bbeb17645ab782451ac2ae2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53819515"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923216"
 ---
 # <a name="cvwriteflag-function"></a>CvWriteFlag, fonction
 Écrit un indicateur dans le fichier de trace du visualiseur concurrentiel.  

@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d20e17d8d953e083d878530aa971c714db72241f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bd0095ec2788cf0ce0a906ceea4300d7c23b2325
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835722"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941244"
 ---
 # <a name="step-2-run-your-program"></a>Étape 2 : Exécuter votre programme
 Lorsque vous avez créé une solution, vous avez en fait généré un programme qui fonctionne. Pour le moment, le programme offre peu de fonctionnalités : il affiche simplement une fenêtre vide avec la barre de titre **Form1**. Mais il fonctionne réellement, comme vous allez le découvrir.

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: e72e6506-4a11-4edf-ae8d-cfb5a3b9d8a0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb0f0b23e58ea6bafdb6eaaaa6af43cd1c7d7fc9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f65cf4b03341965a32c7e5cc5c8c3e9b9b913a6b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880349"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54963409"
 ---
 # <a name="msbuild-inline-tasks"></a>Tâches inline MSBuild
 Les tâches MSBuild sont généralement créées en compilant une classe qui implémente l’interface <xref:Microsoft.Build.Framework.ITask>. Pour plus d’informations, consultez l’article [Tâches MSBuild](../msbuild/msbuild-tasks.md).  

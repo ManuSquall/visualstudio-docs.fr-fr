@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: b7ce8696-ebb8-4354-a767-f76b8ada4ac1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e67d5ed5fbab83edb9b2aeea99e22a71c52424e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9e6969d8bf49390e0dd79a1a201e272bc0aae84e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923979"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015288"
 ---
 # <a name="com-server-and-container-debugging"></a>Débogage de serveurs et de conteneurs COM
 Les applications COM effectuent des tâches en dehors du contrôle direct du programmeur. La communication entre les DLL, la fréquence d'utilisation des objets et les opérations du Presse-papiers sont quelques exemples pour lesquels un comportement inattendu peut se produire. Lorsque cela se produit, la première chose à faire est de trouver la source du problème.  

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 949c18fb-bb25-42ed-9130-c4a47869f24d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1df2ad55bd154e92072d1bb0dac6ebffe24fbcb3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a7a3213d614caa19fb6df77a72efd05e36484c77
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53884644"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982674"
 ---
 # <a name="spy-toolbar"></a>Barre d'outils Spy++
 La barre d’outils apparaît sous la barre de menus dans Spy ++. Pour afficher ou masquer la barre d’outils, sur le **vue** menu, cliquez sur **barre d’outils**.  

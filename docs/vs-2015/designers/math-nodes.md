@@ -1,25 +1,20 @@
 ---
 title: Nœuds mathématiques | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: adc225cc-1cf5-4f7c-9b00-e7ac8450b6b9
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bab77bbed9f14ccc81429c37ad367d7d51709871
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c2971a13e82e4b31f985be6db2a8a32167a3f74b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305771"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796217"
 ---
 # <a name="math-nodes"></a>Nœuds mathématiques
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ Dans le concepteur de nuanceur, les nœuds mathématiques effectuent des opérat
   
 ## <a name="math-node-reference"></a>Informations de référence des nœuds mathématiques  
   
-|Nœud|Détails|Properties|  
+|Nœud|Détails|Propriétés|  
 |----------|-------------|----------------|  
 |**Abs**|Calcule la valeur absolue de l’entrée spécifiée par composant.<br /><br /> Pour chaque composant d’entrée `X`, les valeurs négatives sont rendues positives afin que chaque composant du résultat ait une valeur positive.<br /><br /> **Entrée :**<br /><br /> `X` : `float`, `float2`, `float3` ou `float4`<br /> Valeurs pour lesquelles déterminer la valeur absolue.<br /><br /> `Output:`<br /><br /> `Output` : identique à l’entrée `X`<br /> Valeur absolue par composant.|Aucun.|  
 |**Ajouter**|Calcule la somme des entrées spécifiées par composant.<br /><br /> Pour chaque composant du résultat, les composants correspondants des entrées `X` et `Y` sont additionnés.<br /><br /> **Entrée :**<br /><br /> `X` : `float`, `float2`, `float3` ou `float4`<br /> Une des valeurs à additionner.<br /><br /> `Y` : identique à l’entrée `X`<br /> Une des valeurs à additionner.<br /><br /> **Sortie :**<br /><br /> `Output` : identique à l’entrée `X`<br /> Somme par composant.|Aucun.|  
@@ -58,6 +53,3 @@ Dans le concepteur de nuanceur, les nœuds mathématiques effectuent des opérat
 |**Rac**|Calcule la racine carrée de l’entrée spécifiée par composant.<br /><br /> Pour chaque composant du résultat, la racine carrée du composant correspondant est calculée.<br /><br /> **Entrée :**<br /><br /> `X` : `float`, `float2`, `float3` ou `float4`<br /> Valeurs pour lesquelles calculer la racine carrée.<br /><br /> **Sortie :**<br /><br /> `Output` : identique à l’entrée `X`<br /> Racine carrée par composant.|Aucun.|  
 |**Soustraire**|Calcule la différence des entrées spécifiées.<br /><br /> Pour chaque composant du résultat, le composant correspondant de l’entrée `Y` est soustrait du composant correspondant de l’entrée `X`. Vous pouvez l’utiliser pour calculer le vecteur qui s’étend de la première entrée à la seconde.<br /><br /> **Entrée :**<br /><br /> `X` : `float`, `float2`, `float3` ou `float4`<br /> Valeurs à partir desquelles il convient d’effectuer une soustraction.<br /><br /> `Y` : identique à l’entrée `X`<br /> Valeurs à soustraire de l’entrée `X`.<br /><br /> **Sortie :**<br /><br /> `Output` : identique à l’entrée `X`<br /> Différence par composant.|Aucun.|  
 |**Transformer le vecteur 3D**|Transforme le vecteur 3D spécifié dans un autre espace.<br /><br /> Vous pouvez l’utiliser pour placer des points ou des vecteurs dans un espace commun afin de pouvoir les utiliser pour effectuer des calculs explicites.<br /><br /> **Entrée :**<br /><br /> `Vector`: `float3`<br /> Vecteur à transformer.<br /><br /> **Sortie :**<br /><br /> `Output`: `float3`<br /> Vecteur transformé.|**Depuis le système**<br /> Espace natif du vecteur.<br /><br /> **Vers le système**<br /> Espace dans lequel transformer le vecteur.|
-
-
-

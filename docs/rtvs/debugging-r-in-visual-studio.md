@@ -6,21 +6,21 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 93e2887b15ff3f53634d68774ab31d3b4bfb7aaa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: da72f68d72a435ebf7fe90a7a7d5b6141e409f07
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925496"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918366"
 ---
 # <a name="debug-r-in-visual-studio"></a>Déboguer R dans Visual Studio
 
 Les outils R pour Visual Studio (RTVS) s’intègrent au système complet de débogage de Visual Studio (consultez [Débogage dans Visual Studio](/visualstudio/debugger/debugger-feature-tour)). Cette prise en charge comprend la définition de points d’arrêt, l’attachement à des processus en cours d’exécution, l’inspection et la surveillance de variables ainsi que l’inspection de la pile des appels. Cet article explore les aspects du débogage propres à R et à RTVS.
 
-La procédure de lancement du débogueur pour le fichier R de démarrage dans un projet R est la même que celle utilisée pour d’autres types de projets. Vous pouvez donc utiliser la commande **Déboguer** > **Démarrer le débogage**, la touche **F5** ou l’option **Fichier de démarrage source** dans la barre d’outils de débogage : 
+La procédure de lancement du débogueur pour le fichier R de démarrage dans un projet R est la même que celle utilisée pour d’autres types de projets. Vous pouvez donc utiliser la commande **Déboguer** > **Démarrer le débogage**, la touche **F5** ou l’option **Fichier de démarrage source** dans la barre d’outils de débogage :
 
 ![Bouton de démarrage du débogueur pour R](media/debugger-start-button.png)
 

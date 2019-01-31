@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: a18a1b1b-9b39-43c7-b1f3-708fd20376f6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db4b0bf6e29be1607fcf05557c8089074efa9f78
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1bdb13bace56a257327d21981aab55e44d42ecd7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902904"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932894"
 ---
 # <a name="callercallee-view----contention-data"></a>Vue Appelant/Appelé - Données de conflit
 La vue Appelant/Appelé affiche des données de conflit pour la fonction sélectionnée, ainsi que pour ses fonctions parentes et enfants. La vue Appelant/Appelé comprend trois grilles.  

@@ -1,14 +1,9 @@
 ---
 title: -Deploy (devenv.exe) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Devenv, /deploy switch
 - deploy Devenv switch
@@ -18,13 +13,13 @@ ms.assetid: e47c8723-df08-4645-aa2d-0c956e7ccca2
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f3883cac01795f4dc5a1e3b0a3d9b58adc176c06
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 16ac851c59f084a4d9e98998754e7b9d20afaf81
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172183"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804527"
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,10 +41,10 @@ devenv SolutionName /deploy SolnConfigName [/project ProjName] [/projectconfig P
  Obligatoire. Chemin complet et nom du fichier solution.  
   
  /project `ProjName`  
- Facultatif. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer un chemin relatif du dossier `SolutionName` vers le fichier projet, le nom d’affichage du projet ou encore le chemin complet et le nom du fichier projet.  
+ Optionnel. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer un chemin relatif du dossier `SolutionName` vers le fichier projet, le nom d’affichage du projet ou encore le chemin complet et le nom du fichier projet.  
   
  /projectconfig `ProjConfigName`  
- Facultatif. Nom d’une configuration de génération de projet à utiliser lors de la génération du `/project` nommé.  
+ Optionnel. Nom d’une configuration de génération de projet à utiliser lors de la génération du `/project` nommé.  
   
 ## <a name="remarks"></a>Notes  
  Le projet spécifié doit être un projet de déploiement. Si ce n’est pas le cas, quand le projet généré est passé en vue de son déploiement, une erreur se produit et le déploiement échoue.  
@@ -72,6 +67,3 @@ devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\M
  [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)   
  [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)   
  [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)
-
-
-

@@ -1,27 +1,22 @@
 ---
 title: Outils de profilage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.diagnosticshub.overview
 ms.assetid: 0fb6cd5d-e16a-4526-84a5-19e63c625bc5
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 380e98a8cd52fe77486dae245eee910a65a41057
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 93ef837da86056acc720abff9ad33cbf457a108f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782100"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780842"
 ---
 # <a name="profiling-tools"></a>outils de profilage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +79,7 @@ Les outils de profilage et de diagnostic vous aident à diagnostiquer l’utilis
  [IntelliTrace](../debugger/intellitrace.md) vous permet d’inscrire des événements spécifiques, d’examiner les données dans la fenêtre **Variables locales** pendant les événements de débogueur et les appels de fonctions, ainsi que les erreurs de débogage difficiles à reproduire.  IntelliTrace est avant tout un outil de débogage, mais il procure aussi des informations qui peuvent être exploitées pour effectuer des recherches sur les performances. Vous pouvez utiliser cet outil dans Visual Studio Enterprise uniquement, avec les applications de bureau, les applications universelles Windows et les applications C# ASP.NET. Vous pouvez trouver IntelliTrace dans la fenêtre **Outils de diagnostic** pendant le débogage (**Déboguer / Windows / Afficher les outils de diagnostic**).  
   
 ## <a name="profiling-in-production"></a>Profilage en production  
- La méthode recommandée en matière de profilage en production consiste à profiler à partir de la [ligne de commande en utilisant vsperf.exe](../profiling/using-the-profiling-tools-from-the-command-line.md) pour collecter un profil d’UC. Pour bénéficier d’une prise en charge du profilage à distance dans Azure App Service, vous pouvez profiler via l’ [Explorateur de serveurs ou le portail Kudu](https://azure.microsoft.com/en-us/blog/remote-profiling-support-in-azure-app-service/).  
+ La méthode recommandée en matière de profilage en production consiste à profiler à partir de la [ligne de commande en utilisant vsperf.exe](../profiling/using-the-profiling-tools-from-the-command-line.md) pour collecter un profil d’UC. Pour bénéficier d’une prise en charge du profilage à distance dans Azure App Service, vous pouvez profiler via l’ [Explorateur de serveurs ou le portail Kudu](https://azure.microsoft.com/blog/remote-profiling-support-in-azure-app-service/).  
   
 ## <a name="which-tool-should-i-use"></a>Quel outil utiliser ?  
  Voici un tableau qui recense les différents outils proposés par Visual Studio, ainsi que les différents types de projet avec lesquels vous pouvez les utiliser :  
@@ -103,6 +98,3 @@ Les outils de profilage et de diagnostic vous aident à diagnostiquer l’utilis
   
 ## <a name="see-also"></a>Voir aussi  
  [IDE Visual Studio](../ide/visual-studio-ide.md)
-
-
-

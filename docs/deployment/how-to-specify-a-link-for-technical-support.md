@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 500aebee-545e-4831-a78b-b8671a008015
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a322dde6ae616f2909a0a33721d28d1309c66fae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2f90c020f5bfed1c6b4bd3c63aed67b8ffede7b6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933938"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016515"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>Procédure : Spécifier un lien pour le support technique
 Lorsque vous publiez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application, le **URL du support technique** propriété identifie une page Web ou un partage de fichiers où les utilisateurs peuvent accéder à obtenir des informations sur l’application. Cette propriété est facultative. s’il est fourni, l’URL s’affichera dans l’entrée de l’application **Ajout / Suppression de programmes** boîte de dialogue.  

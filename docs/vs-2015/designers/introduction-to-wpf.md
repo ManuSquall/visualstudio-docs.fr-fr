@@ -1,25 +1,20 @@
 ---
 title: Présentation de WPF | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: b8d7cf43-d1f2-4f3d-adb0-4f3a6428edc0
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b29e4e241589134c8dfa5b94e997d6603b075ee3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8ed8e7366b438d152abbd6faef91e3f3a0707a61
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826347"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756007"
 ---
 # <a name="introduction-to-wpf"></a>Présentation de WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,16 +86,16 @@ Windows Presentation Foundation (WPF) vous permet de créer des applications cli
 ```  
   
 ```csharp  
-using System.Windows; // Window, RoutedEventArgs, MessageBox   
+using System.Windows; // Window, RoutedEventArgs, MessageBox   
   
 namespace SDKSample  
 {  
-    public partial class AWindow : Window  
+    public partial class AWindow : Window  
     {  
         public AWindow()  
         {  
-            // InitializeComponent call is required to merge the UI   
-            // that is defined in markup with this class, including    
+            // InitializeComponent call is required to merge the UI   
+            // that is defined in markup with this class, including    
             // setting properties and registering event handlers  
             InitializeComponent();  
         }  
@@ -117,28 +112,28 @@ namespace SDKSample
 ```vb  
 Namespace SDKSample  
   
-    Partial Public Class AWindow  
+    Partial Public Class AWindow  
         Inherits System.Windows.Window  
   
-        Public Sub New()  
+        Public Sub New()  
   
-            ' InitializeComponent call is required to merge the UI   
-            ' that is defined in markup with this class, including    
+            ' InitializeComponent call is required to merge the UI   
+            ' that is defined in markup with this class, including    
             ' setting properties and registering event handlers  
             InitializeComponent()  
   
-        End Sub   
+        End Sub   
   
-        Private Sub button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)  
+        Private Sub button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)  
   
             ' Show message box when button is clicked  
             MessageBox.Show("Hello, Windows Presentation Foundation!")  
   
-        End Sub   
+        End Sub   
   
-    End Class   
+    End Class   
   
-End Namespace  
+End Namespace  
   
 ```  
   
@@ -196,7 +191,7 @@ End Namespace
   
 - <xref:System.Windows.Controls.Canvas>: les contrôles enfants fournissent leur propre disposition.  
   
-- <xref:System.Windows.Controls.DockPanel>:  les contrôles enfants sont alignés aux bords du panneau.  
+- <xref:System.Windows.Controls.DockPanel>: les contrôles enfants sont alignés aux bords du panneau.  
   
 - <xref:System.Windows.Controls.Grid>: les contrôles enfants sont positionnés en lignes et en colonnes.  
   
@@ -204,9 +199,9 @@ End Namespace
   
 - <xref:System.Windows.Controls.VirtualizingStackPanel>: les contrôles enfants sont virtualisés et réorganisés sur une seule ligne, verticale ou horizontale.  
   
-- <xref:System.Windows.Controls.WrapPanel>: les contrôles enfants sont positionnés de gauche à droite et renvoyés à la ligne suivante lorsqu’il y a plus de contrôles sur la ligne actuelle que l’espace ne l’autorise.  
+- <xref:System.Windows.Controls.WrapPanel>: les contrôles enfants sont positionnés de gauche à droite et renvoyés à la ligne suivante quand il y a plus de contrôles sur la ligne actuelle que l’espace ne l’autorise.  
   
-  L’exemple suivant utilise un <xref:System.Windows.Controls.DockPanel> pour disposer plusieurs contrôles <xref:System.Windows.Controls.TextBox> .  
+  L’exemple suivant utilise un <xref:System.Windows.Controls.DockPanel> pour disposer plusieurs contrôles <xref:System.Windows.Controls.TextBox>.  
   
   [!code-xml[IntroToWPFSnippets#LayoutMARKUP](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/LayoutWindow.xaml#layoutmarkup)]  
   
@@ -230,7 +225,7 @@ End Namespace
   
    ![Diagramme de liaison de données de base](../designers/media/databindingmostbasic.png "DataBindingMostBasic")  
   
-   L’exemple suivant montre comment lier une <xref:System.Windows.Controls.TextBox> à une instance d’un objet `Person` personnalisé. Le code suivant montre l’implémentation `Person`.  
+   L’exemple suivant montre comment lier une <xref:System.Windows.Controls.TextBox> à une instance d’un objet `Person` personnalisé. Le code suivant montre l’implémentation `Person` .  
   
    [!code-csharp[SimpleDataBindingSnippets#PersonClassCODE](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/Person.cs#personclasscode)]
    [!code-vb[SimpleDataBindingSnippets#PersonClassCODE](../snippets/visualbasic/VS_Snippets_Wpf/SimpleDataBindingSnippets/VisualBasic/Person.vb#personclasscode)]  
@@ -443,7 +438,7 @@ End Namespace
 [!code-xml[IntroToWPFSnippets#ResourceWindowMARKUP2](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/ResourcesWindow.xaml#resourcewindowmarkup2)]  
 [!code-xml[IntroToWPFSnippets#ResourceWindowMARKUP3](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/ResourcesWindow.xaml#resourcewindowmarkup3)]  
   
- Cet exemple implémente une ressource de couleur d’arrière-plan à l’aide de l’élément de propriété `Window.Resources`. Cette ressource est disponible pour tous les enfants de la <xref:System.Windows.Window>. Il existe différentes portées de ressource, dont les suivantes, répertoriées dans l’ordre dans lequel elles sont résolues :   
+ Cet exemple implémente une ressource de couleur d’arrière-plan à l’aide de l’élément de propriété `Window.Resources` . Cette ressource est disponible pour tous les enfants de la <xref:System.Windows.Window>. Il existe différentes portées de ressource, dont les suivantes, répertoriées dans l’ordre dans lequel elles sont résolues :  
   
 1. Un contrôle individuel (à l’aide de la propriété <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> héritée).  
   
@@ -526,6 +521,3 @@ End Namespace
  [Bien démarrer avec WPF](../designers/getting-started-with-wpf.md)   
  [Créer des applications pour ordinateur modernes avec Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)   
  [Windows Presentation Foundation](https://msdn.microsoft.com/library/ms754130\(v=vs.100\).aspx)
-
-
-

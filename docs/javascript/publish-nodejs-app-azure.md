@@ -6,17 +6,17 @@ ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: fcd7c64e15f890c2411327bff5bdc820509fe712
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f52e1cb8538204dbf0e29ccdadcc4cb2894255ff
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846254"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021869"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Publier une application Node.js sur Azure (App Service Linux)
 

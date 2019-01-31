@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: b877802d-c736-4047-821a-bd7733fff6de
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db30d1754d12dd167a89b569e67e4d375486443f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a7ac619a77dbe8f12b3436f2b1b087478c19473b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989933"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001028"
 ---
 # <a name="overviews-performance-tools"></a>Présentations (outils d’analyse des performances)
 Cette section fournit des vues d’ensemble conceptuelles et terminologiques des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], que vous pouvez utiliser pour mesurer les caractéristiques de performances d’une application en cours de développement.  

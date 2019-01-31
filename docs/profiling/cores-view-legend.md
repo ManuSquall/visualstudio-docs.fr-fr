@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e160384c-fcfe-49b3-86b7-229adb736c51
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61d05ffc3bb2a43b29e2e5c91a7b28f5b8d1224a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 26b85b5cf6f9a74f6014325ead12f757b8c2807e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949522"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035382"
 ---
 # <a name="cores-view-legend"></a>Légende de la vue Cœurs
 La légende de la vue Cœurs identifie chaque thread par couleur et par nom. Elle comprend des colonnes qui contiennent des valeurs pour les changements de contexte inter-cœurs, le total de changements de contexte et le pourcentage de changements de contexte inter-cœurs. Les lignes de la légende sont triées selon le nombre de changements de contexte inter-cœurs, dans l’ordre décroissant.  

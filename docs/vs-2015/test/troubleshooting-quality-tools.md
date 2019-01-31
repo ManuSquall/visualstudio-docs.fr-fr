@@ -1,27 +1,22 @@
 ---
 title: Dépannage des outils de qualité | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: troubleshooting
 helpviewer_keywords:
 - Visual Studio ALM, developing the application
 ms.assetid: 535b9e67-ce9e-4a3e-8d28-9365f257036e
 caps.latest.revision: 19
 author: erickson-doug
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 88b0ebabfa093a8ef0cdffc8e9c137032dee1ab6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1a4e356c3427f5bd49e8f496f0464d7fd23b12bc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49278523"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779183"
 ---
 # <a name="troubleshooting-quality-tools"></a>Résolution des problèmes liés aux outils de qualité
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,6 +27,3 @@ Si vous rencontrez des problèmes quand vous exécutez les outils de qualité Vi
  [Dépannage de l’analyse du code](../code-quality/troubleshooting-code-analysis-issues.md)  
   
  [Dépannage de la métrique du code](../code-quality/troubleshooting-code-metrics-issues.md)
-
-
-

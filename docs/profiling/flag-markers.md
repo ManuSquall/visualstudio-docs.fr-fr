@@ -7,15 +7,15 @@ f1_keywords:
 ms.assetid: f3ec919e-63e5-484b-adbf-8f0e79342e75
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a879114f21cfa23eab66cca507c3a2b960872c7b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 19ecac740035cc6de49a5651b20f2408eddd27ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923436"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986824"
 ---
 # <a name="flag-markers"></a>Marqueurs indicateurs
 Un marqueur indicateur représente un événement qui s’est produit à un instant donné dans une application. Un indicateur peut représenter de nombreux types d’événements d’application. Par exemple, un indicateur peut apparaître lorsqu’un élément de travail a été planifié ou lorsqu’une exception a été levée. Les runtimes, tels que la bibliothèque parallèle de tâches, peuvent également générer des indicateurs.  

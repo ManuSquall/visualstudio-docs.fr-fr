@@ -1,14 +1,9 @@
 ---
 title: Shell, commande | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - tools.shell
 helpviewer_keywords:
@@ -23,13 +18,13 @@ ms.assetid: 737fda23-b852-45c4-a9fe-41cbce6ba70f
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5f760e449921a45f7ad22a3d81376bca432fe24a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 62b4a3e83b368a015cee30284acee0dbab39ca36
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242214"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779306"
 ---
 # <a name="shell-command"></a>Shell, commande
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,17 +43,17 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
  Obligatoire. Chemin et nom du fichier à exécuter ou du document à ouvrir. Un chemin complet est requis si le fichier spécifié ne se trouve pas dans l’un des répertoires figurant dans la variable d’environnement PATH.  
   
  `args`  
- Facultatif. Arguments à passer au programme appelé.  
+ Optionnel. Arguments à passer au programme appelé.  
   
 ## <a name="switches"></a>Commutateurs  
  /commandwindow [ou] /command [ou] /c [ou] /cmd  
- Facultatif. Spécifie que la sortie pour l’exécutable doit s’afficher dans la fenêtre **Commande**.  
+ Optionnel. Spécifie que la sortie pour l’exécutable doit s’afficher dans la fenêtre **Commande**.  
   
  /dir:`folder` [ou] /d: `folder`  
- Facultatif. Spécifie le répertoire de travail à définir quand le programme est exécuté.  
+ Optionnel. Spécifie le répertoire de travail à définir quand le programme est exécuté.  
   
  /outputwindow [ou] /output [ou] /out [ou] /o  
- Facultatif. Spécifie que la sortie pour l’exécutable doit s’afficher dans la fenêtre **Sortie**.  
+ Optionnel. Spécifie que la sortie pour l’exécutable doit s’afficher dans la fenêtre **Sortie**.  
   
 ## <a name="remarks"></a>Notes  
  Les commutateurs /dir /o /c doivent être spécifiés immédiatement après `Tools.Shell`. Toute syntaxe spécifiée après le nom de l’exécutable est transmise en tant qu’argument de la ligne de commande.  
@@ -94,6 +89,3 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
  [Fenêtre Sortie](../../ide/reference/output-window.md)   
  [Zone Rechercher/Commande](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

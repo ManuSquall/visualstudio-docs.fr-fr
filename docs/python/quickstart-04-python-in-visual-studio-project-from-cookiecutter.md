@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8e4712a5dd73c899e82a8fc6e07331be5b6e6c46
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9dd949f921c3d504823e9204e0974617c8a2b3e7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863691"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953183"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Démarrage rapide : Créer un projet à partir d’un modèle Cookiecutter
 
@@ -26,7 +26,7 @@ Une fois que vous avez [installé la prise en charge de Python dans Visual Studi
 
 1. Lancez Visual Studio.
 
-1. Sélectionnez **Fichier** > **Nouveau** > **À partir de Cookiecutter**. Cette commande ouvre une fenêtre dans Visual Studio, où vous pouvez parcourir les modèles. 
+1. Sélectionnez **Fichier** > **Nouveau** > **À partir de Cookiecutter**. Cette commande ouvre une fenêtre dans Visual Studio, où vous pouvez parcourir les modèles.
 
     ![Nouveau projet à partir d’un modèle Cookiecutter](media/projects-from-cookiecutter1.png)
 
@@ -38,7 +38,7 @@ Une fois que vous avez [installé la prise en charge de Python dans Visual Studi
 
 1. À la fin du processus, vous voyez s’afficher le message **Fichiers créés.** Sélectionnez la commande **Ouvrir dans l’Explorateur de solutions** pour ouvrir le projet.
 
-1. Appuyez sur **Ctrl**+**F5**, ou sélectionnez **Déboguer** > **Exécuter sans débogage**, pour exécuter le programme. 
+1. Appuyez sur **Ctrl**+**F5**, ou sélectionnez **Déboguer** > **Exécuter sans débogage**, pour exécuter le programme.
 
     ![Sortie du projet de modèle python-sklearn-classifier-cookiecutter](media/projects-from-cookiecutter4.png)
 

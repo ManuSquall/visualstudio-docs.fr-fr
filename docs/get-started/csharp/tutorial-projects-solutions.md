@@ -7,21 +7,21 @@ ms.custom: get-started
 ms.topic: tutorial
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba7bb7452fd86da4ab449c61c41dc27c865070c3
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 3ebc53148e40be1285c554526743c4950465c3a5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738989"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983402"
 ---
 # <a name="learn-about-projects-and-solutions-using-c"></a>Découvrir les projets et les solutions utilisant C#
 
-Dans cet article d’introduction, nous allons explorer le processus de création d’une *solution* et d’un *projet* dans Visual Studio. Une solution est un conteneur qui sert à organiser un ou plusieurs projets de code associés, par exemple un projet de bibliothèque de classes et un projet test correspondant. Nous allons examiner les propriétés d’un projet et certains des fichiers associés. Nous allons également créer une référence d’un projet vers un autre.
+Dans cet article d’introduction, nous allons explorer le processus de création d’une *solution* et d’un *projet* dans Visual Studio. Une solution est un conteneur servant à organiser un ou plusieurs projets de code associés, par exemple un projet de bibliothèque de classes et un projet de test correspondant. Nous allons examiner les propriétés d’un projet et certains des fichiers associés. Nous allons également créer une référence d’un projet vers un autre.
 
 > [!TIP]
 > Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) pour l’installer gratuitement.
@@ -33,7 +33,7 @@ Nous allons créer une solution et un projet de toutes pièces pour vous aider �
 
 ## <a name="solutions-and-projects"></a>Solutions et projets
 
-Malgré son nom, une solution n’est pas une « réponse ». Une solution est simplement un conteneur dans lequel Visual Studio organise un ou plusieurs projets associés. Quand vous ouvrez une solution dans Visual Studio, tous les projets que la solution contient sont chargés automatiquement.
+Malgré son nom, une solution n’est pas une « réponse ». Il s’agit simplement d’un conteneur dans lequel Visual Studio organise un ou plusieurs projets associés. Quand vous ouvrez une solution dans Visual Studio, tous les projets que contient la solution sont chargés automatiquement.
 
 ### <a name="create-a-solution"></a>Créer une solution
 

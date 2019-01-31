@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 590742c3-a286-4160-aa75-7a441bb2207b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8b510a07ff60420cc81aed073e7f42445e924d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0abf694bcfb0adf13e3da4fb92bcdc9c180a68fe
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825514"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023143"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Procédure : Spécifier une URL du support technique pour chaque prérequis lors d’un déploiement ClickOnce
 Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement peut tester plusieurs conditions préalables qui doivent être disponibles sur l’ordinateur client pour le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application de s’exécuter. Ces dépendances incluent la version minimale requise de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], la version du système d’exploitation et tous les assemblys qui doivent être préinstallés dans le global assembly cache (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], toutefois, ne peut pas installer un de ces conditions préalables lui-même ; Si une condition préalable n’est trouvée, il simplement arrête l’installation et affiche une boîte de dialogue expliquant pourquoi l’installation a échoué.  
@@ -76,7 +76,7 @@ Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiemen
    </compatibleFrameworks>  
    ```  
   
-7. Une fois que vous avez modifié manuellement le manifeste d’application, vous devez signer à nouveau le manifeste d’application à l’aide de votre certificat numérique, puis mettre à jour et signer à nouveau le manifeste de déploiement. Utilisez le *Mage.exe* ou *MageUI.exe* pour accomplir cette tâche, comme la régénération de ces fichiers à l’aide des outils de kit de développement logiciel [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] efface vos modifications manuelles. Pour plus d’informations sur l’utilisation de Mage.exe pour resigner des manifestes, consultez [Comment : re-signer des manifestes d’application et de déploiement](../deployment/how-to-re-sign-application-and-deployment-manifests.md)  
+7. Une fois que vous avez modifié manuellement le manifeste d’application, vous devez signer à nouveau le manifeste d’application à l’aide de votre certificat numérique, puis mettre à jour et signer à nouveau le manifeste de déploiement. Utilisez le *Mage.exe* ou *MageUI.exe* pour accomplir cette tâche, comme la régénération de ces fichiers à l’aide des outils de kit de développement logiciel [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] efface vos modifications manuelles. Pour plus d’informations sur l’utilisation de Mage.exe pour resigner des manifestes, consultez [Comment : resigner des manifestes d’application et de déploiement](../deployment/how-to-re-sign-application-and-deployment-manifests.md)  
   
 ## <a name="net-framework-security"></a>sécurité du .NET Framework  
  L’URL du support technique ne figure pas dans la boîte de dialogue si l’application est marquée pour s’exécuter en mode de confiance partielle.  

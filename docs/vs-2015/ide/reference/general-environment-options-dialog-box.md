@@ -1,14 +1,9 @@
 ---
 title: Général, Environnement, boîte de dialogue Options | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.Message.0x800a002e
 - VS.ToolsOptionsPages.Environment.General
@@ -31,13 +26,13 @@ ms.assetid: 90fc2e6f-572f-4384-96d8-5678299ce58e
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 967036aa0aedef2f789a1352e213079270f70339
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 836c5be9df565d6171949845e36febc22024b20a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206880"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752288"
 ---
 # <a name="general-environment-options-dialog-box"></a>Général, Environnement, boîte de dialogue Options
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ ms.locfileid: "49206880"
 Utilisez cette page pour modifier les thèmes de couleurs, les paramètres de la barre d'état et les associations d'extensions de fichier, entre autres options, pour l'environnement de développement intégré (IDE). Vous pouvez accéder à la boîte de dialogue **Options** en ouvrant le menu **Outils**, en choisissant **Options**, en ouvrant le dossier **Environnement**, puis en choisissant la page **Général**. Si cette page n’apparaît pas dans la liste, cochez la case **Afficher tous les paramètres** dans la boîte de dialogue **Options**.  
   
 > [!NOTE]
->  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour changer vos paramètres, ouvrez le menu **Outils**, puis choisissez **Importation et exportation de paramètres**. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour changer vos paramètres, ouvrez le menu **Outils**, puis choisissez **Importation et exportation de paramètres**. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="visual-experience"></a>Expérience visuelle  
  **Thème de couleur**  
@@ -90,6 +85,3 @@ Utilisez cette page pour modifier les thèmes de couleurs, les paramètres de la
 ## <a name="see-also"></a>Voir aussi  
  [Environnement, boîte de dialogue Options](../../ide/reference/environment-options-dialog-box.md)   
  [Personnalisation des dispositions de fenêtres](../../ide/customizing-window-layouts-in-visual-studio.md)
-
-
-

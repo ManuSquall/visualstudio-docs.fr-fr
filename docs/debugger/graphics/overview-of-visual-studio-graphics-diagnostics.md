@@ -5,15 +5,15 @@ ms.date: 02/09/2017
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25b15e45d464c78aa24fa6fed7292b3eb7140835
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 78047b45ba3e48da42a8f975aae5be88f63ba9a4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831376"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995100"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Vue d’ensemble de Visual Studio Graphics Diagnostics
 Visual Studio *Graphics Diagnostics* est un ensemble d’outils pour l’enregistrement, puis l’analyse des problèmes de rendu et de performances des applications Direct3D. Graphics Diagnostics peut être utilisé sur les applications qui sont exécutent localement sur votre PC Windows ou sur un PC ou un périphérique distant.  

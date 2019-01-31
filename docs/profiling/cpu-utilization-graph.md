@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5332fd38-622d-47a3-874f-8c2fd7a30f95
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 570ddb4472baec04e656db0b36af5a2550720774
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: efc893aaaeb3755946ca3e0f21b352d6a5ef8bb4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830282"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975060"
 ---
 # <a name="cpu-utilization-graph"></a>Graphique d’utilisation du processeur
 Le graphique d’utilisation du processeur affiche le niveau d’utilisation d’une application dans le temps. L’axe des abscisses représente la durée du suivi et l’axe des ordonnées représente le nombre de cœurs logiques sur le système. Le graphique n’affiche pas les cœurs qui sont actifs à un moment donné. Par exemple, si deux cœurs s’exécutent chacun à 50 % de leur capacité pendant une période donnée, cette vue ne montre qu’un seul cœur logique en cours d’utilisation.  

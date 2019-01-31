@@ -13,18 +13,18 @@ helpviewer_keywords:
 ms.assetid: 08bb8059-b7e2-4565-89ba-d9034d4f0e16
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: daea7d3c5309ef3486d5605d60dcaa692dd17b66
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5f21bc2eacdc6886410e03ea80fad451c32abfc3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961814"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949400"
 ---
 # <a name="taskextension-base-class"></a>Classe de base TaskExtension
-De nombreuses tâches héritent de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, laquelle hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Cette chaîne d’héritage ajoute plusieurs paramètres aux tâches qui en dérivent. Ces paramètres sont répertoriés dans ce document.  
+De nombreuses tâches héritent de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, laquelle hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Cette chaîne d'héritage ajoute plusieurs paramètres aux tâches qui en dérivent. Ces paramètres sont répertoriés dans ce document.  
   
 ## <a name="parameters"></a>Paramètres  
  Le tableau ci-dessous décrit les paramètres des classes de base.  

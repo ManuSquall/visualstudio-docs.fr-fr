@@ -1,14 +1,9 @@
 ---
 title: -Project (devenv.exe) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - /project Devenv switch
 - projects [Visual Studio], rebuilding
@@ -21,13 +16,13 @@ ms.assetid: 8b07859c-3439-436d-9b9a-a8ee744eee30
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a3e8ce83a345d27dfe6aef199af29569e75e8e98
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d048edd60d41c3f08a8bd0b731beddb3619a1887
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243945"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776067"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,10 +57,10 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName
  Obligatoire. Chemin complet et nom du fichier solution.  
   
  /project `ProjName`  
- Facultatif. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer un chemin relatif du dossier `SolutionName` vers le fichier projet, le nom d’affichage du projet ou encore le chemin complet et le nom du fichier projet.  
+ Optionnel. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer un chemin relatif du dossier `SolutionName` vers le fichier projet, le nom d’affichage du projet ou encore le chemin complet et le nom du fichier projet.  
   
  /projectconfig `ProjConfigName`  
- Facultatif. Nom d’une configuration de build de projet à appliquer au `/project` nommé.  
+ Optionnel. Nom d’une configuration de build de projet à appliquer au `/project` nommé.  
   
 ## <a name="remarks"></a>Notes  
   
@@ -90,6 +85,3 @@ devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\M
  [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)   
  [/Deploy (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)   
  [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)
-
-
-

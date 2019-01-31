@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 651ba971-b755-4f03-a549-4816beb3cc0d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cea2e191c5a85b8aac592e4e438eaa3b93bcd4f7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7e8de1edc266489a6260176e0b9e8aec8df62ba2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912767"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956699"
 ---
 # <a name="cl-task"></a>CL (tâche)
 Encapsule l’outil du compilateur Visual C++, *cl.exe*. Le compilateur produit des fichiers exécutables (*.exe*), des fichiers de bibliothèque de liens dynamiques (*.dll*) ou des fichiers de module de code (*.netmodule*). Pour plus d’informations, consultez [Options du compilateur](/cpp/build/reference/compiler-options).  

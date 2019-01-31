@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: be5cbe12-6cb6-49c9-aa59-a1624e1eef3d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ed1ad3c648a3cf0d8f33d9f15a8cc14c1ebf625
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4f080af10bbac990359f176792f5fab02e5bd285
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874869"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973510"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>Accéder aux données locales et distantes dans les applications ClickOnce
 La plupart des applications consomment ou produisent des données. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] vous propose diverses options pour lire et écrire les données, à la fois localement et à distance.  
@@ -56,7 +56,7 @@ La plupart des applications consomment ou produisent des données. [!INCLUDE[ndp
  [!code-csharp[ClickOnce.OpenDataFile#1](../deployment/codesnippet/CSharp/accessing-local-and-remote-data-in-clickonce-applications_1.cs)]
  [!code-vb[ClickOnce.OpenDataFile#1](../deployment/codesnippet/VisualBasic/accessing-local-and-remote-data-in-clickonce-applications_1.vb)]  
   
- Pour plus d’informations sur le marquage des fichiers dans votre déploiement en tant que fichiers de données, consultez [Comment : inclure un fichier de données dans une application ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)  
+ Pour plus d’informations sur le marquage des fichiers dans votre déploiement en tant que fichiers de données, consultez [Comment : Inclure un fichier de données dans une application ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
  Vous pouvez également obtenir le chemin d'accès au répertoire de données en utilisant les variables appropriées sur la classe <xref:System.Windows.Forms.Application> , telles que <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>.  
   

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3beed819-cece-4864-8184-bd410000973a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: c8723a97f5751b790c946055693064c3b7d12237
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b87a8415bf2df2b8848b4fb619964d981e31ffcf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881099"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035248"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Déboguer des applications ASP.NET ou ASP.NET Core dans Visual Studio
 
@@ -116,7 +116,7 @@ Les projets ASP.NET ont *web.config* par défaut, les fichiers qui contiennent l
 
 1. Dans Visual Studio, ouvrez le projet ASP.NET *web.config* fichier.  
   
-2. *Web.config* est un fichier XML, par conséquent, contient des sections imbriquées marquées par des balises. Recherchez le `configuration/system.web/compilation` section. (Si le `compilation` élément n’existe pas, créez-le.)
+2. *Web.config* est un fichier XML, par conséquent, contient des sections imbriquées marquées par des balises. Recherchez la section `configuration/system.web/compilation`. (Si le `compilation` élément n’existe pas, créez-le.)
   
 3. Assurez-vous que le `debug` d’attribut dans le `compilation` élément est défini sur `true`. (Si le `compilation` élément ne contient pas un `debug` d’attribut, ajoutez-le et affectez-lui la valeur `true`.) 
   

@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: b3191df6ead3454bb138efae2aaf7183cc556d12
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 326627f16bb431b582666cccafb6a511cf815718
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968363"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918600"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>Modifier le code R dans Visual Studio
 
@@ -40,7 +40,7 @@ Pour changer ce comportement, consultez le paramètre **Avancé** > **Vérificat
 
 ## <a name="edit-and-organize-code"></a>Modifier et organiser le code
 
-Quand vous tapez du code, RTVS propose une saisie semi-automatique, comme décrit dans la page [IntelliSense](r-intellisense.md). Il applique également une mise en forme automatique comme la saisie semi-automatique des parenthèses et des accolades : 
+Quand vous tapez du code, RTVS propose une saisie semi-automatique, comme décrit dans la page [IntelliSense](r-intellisense.md). Il applique également une mise en forme automatique comme la saisie semi-automatique des parenthèses et des accolades :
 
 ![Animation de la mise en forme inline](media/editing-inline-formatting.gif)
 
@@ -129,6 +129,6 @@ Les options de l’onglet **R** > **Avancé** sont propres à RTVS :
 | | Liste de saisie semi-automatique après le premier caractère | Activé | Affiche la liste de saisie semi-automatique quand vous tapez les premiers caractères. Si elle est désactivée, vous affichez la liste de saisie semi-automatique avec **Modifier** > **IntelliSense** > **Liste des membres** (**Ctrl**+**J**). |
 | | Liste de saisie semi-automatique quand la touche **Tab** est enfoncée | Off | Appelle la liste de saisie semi-automatique en tapant un ou plusieurs caractères et en appuyant sur **Tab**. |
 | | Correspondance partielle de noms d’argument de types | Off | Quand vous tapez des noms d’argument dans un appel de fonction, l’aide de la signature affiche une description de l’argument qui correspond le mieux. |
-| Fenêtre interactive | Vérification syntaxique dans la console R | Off | Applique la vérification syntaxique dans la fenêtre interactive. La vérification syntaxique peut ne pas fonctionner correctement avec les instructions multilignes. | 
+| Fenêtre interactive | Vérification syntaxique dans la console R | Off | Applique la vérification syntaxique dans la fenêtre interactive. La vérification syntaxique peut ne pas fonctionner correctement avec les instructions multilignes. |
 | mode Plan | Plan du code | Activé | Crée automatiquement des régions réductibles pour des zones comme les instructions multilignes. |
 | Vérification syntaxique | Afficher les erreurs de syntaxe | Activé | Active la vérification syntaxique automatique du code. |

@@ -1,22 +1,22 @@
 ---
 title: Gérer des projets d’application Python
 description: Les projets dans Visual Studio gèrent les dépendances entre les fichiers et la complexité des relations dans une application.
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b30929c5e5c7be49b5817f520a4f6402ceff67b4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: baf44172cb5ac7f2b38d4c408ca76791f013c4ac
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825290"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231933"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projets Python dans Visual Studio
 
@@ -113,7 +113,7 @@ Les fichiers liés sont ignorés si l’une des conditions suivantes se présent
 
 Pour ajouter un élément existant en tant que lien, cliquez avec le bouton droit sur le dossier du projet dans lequel vous souhaitez ajouter le fichier, puis sélectionnez **Ajouter** > **Élément existant**. Dans la boîte de dialogue qui s’affiche, sélectionnez un fichier et choisissez **Ajouter en tant que lien** dans la liste déroulante du bouton **Ajouter**. Si aucun fichier n’est en conflit, cette commande crée un lien dans le dossier sélectionné. Toutefois, le lien n’est pas ajouté s’il existe déjà un fichier portant le même nom ou si un lien vers ce fichier existe déjà dans le projet.
 
-Si vous tentez de créer un lien vers un fichier qui existe déjà dans les dossiers du projet, il est ajouté en tant que fichier normal et non en tant que lien. Pour convertir un fichier en lien, sélectionnez **Fichier** > **Enregistrer sous** pour enregistrer le fichier à un emplacement en dehors de l’arborescence du projet ; Visual Studio le convertit automatiquement en lien. De même, un lien peut être reconverti en fichier à l’aide de **Fichier** > **Enregistrer sous** pour enregistrer le fichier quelque part dans l’arborescence du projet. 
+Si vous tentez de créer un lien vers un fichier qui existe déjà dans les dossiers du projet, il est ajouté en tant que fichier normal et non en tant que lien. Pour convertir un fichier en lien, sélectionnez **Fichier** > **Enregistrer sous** pour enregistrer le fichier à un emplacement en dehors de l’arborescence du projet ; Visual Studio le convertit automatiquement en lien. De même, un lien peut être reconverti en fichier à l’aide de **Fichier** > **Enregistrer sous** pour enregistrer le fichier quelque part dans l’arborescence du projet.
 
 Si vous déplacez un fichier lié dans **l’Explorateur de solutions**, le lien est déplacé, mais le fichier en lui-même n’est pas affecté. De même, la suppression d’un lien supprime le lien sans affecter le fichier.
 

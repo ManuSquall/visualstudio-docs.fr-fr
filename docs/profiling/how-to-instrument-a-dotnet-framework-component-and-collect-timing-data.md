@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: b7dcc27b-45c6-4302-9552-6fa5b1e94b56
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8aa9e998be5f4a888428f19db7951f9ab7e2e972
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7c3dcc3895e8d5e8b75881808d445692a5134dbf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841844"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987490"
 ---
 # <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Procédure : Instrumenter un composant .NET Framework autonome et collecter les données de temporisation avec le profileur à partir de la ligne de commande
 Cette rubrique explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour instrumenter un composant .NET Framework, par exemple un fichier .*exe* ou .*dll*, et collecter des données de temporisation détaillées.  

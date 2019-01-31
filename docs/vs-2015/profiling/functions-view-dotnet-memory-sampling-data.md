@@ -1,27 +1,22 @@
 ---
 title: Vue Fonctions - Données d’échantillonnage de mémoire .NET | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Functions view
 ms.assetid: 5d9c6302-2ffd-430e-9535-13ce795f9f7c
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bfdfbab17538648b816c094409f9396cc5f638b8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8e77c6c2b3bf079e8aae88c9779c3b487ff97fe7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788314"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769111"
 ---
 # <a name="functions-view---net-memory-sampling-data"></a>Vue Fonctions - Données d’échantillonnage de la mémoire .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,6 +46,3 @@ La vue Fonctions des données de profilage de l’allocation mémoire .NET qui o
  [Vue Fonctions - Instrumentation](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
  [Mode Fonction](../profiling/functions-view-sampling-data.md)   
  [Mode Fonctions](../profiling/functions-view-instrumentation-data.md)
-
-
-

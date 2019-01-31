@@ -1,27 +1,22 @@
 ---
 title: Définition de signets dans le code | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.BookmarkWindow
 ms.assetid: a752ed5f-5cf9-4bf2-865a-2131ca600ed5
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bbb6775411af7bc93cd8168af460974fb5c18d3d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 35713751061e5a590a5a7bc9cc5fa03bccd56966
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219750"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769302"
 ---
 # <a name="setting-bookmarks-in-code"></a>Définition de signets dans le code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,6 +36,3 @@ Vous pouvez utiliser des signets pour marquer les lignes de votre code afin de p
  Vous pouvez organiser les signets dans des dossiers virtuels en cliquant sur **Nouveau dossier** dans la fenêtre de signet et en faisant glisser les signets sélectionnés dans le nouveau dossier.  
   
  Vous pouvez désactiver des signets (sans les supprimer) en cliquant sur le bouton **Désactiver tous les signets** dans la fenêtre de signet. Vous pouvez les réactiver en cliquant sur le même bouton (qui est maintenant libellé **Activer tous les signets**).
-
-
-

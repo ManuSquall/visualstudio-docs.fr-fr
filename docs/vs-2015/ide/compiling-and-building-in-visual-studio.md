@@ -1,13 +1,9 @@
 ---
 title: Compilation et génération
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - builds [Visual Studio], about building in Visual Studio
 - custom build steps, types of builds
@@ -15,13 +11,13 @@ ms.assetid: c7958821-285f-4e28-9e7a-b5d8b40336a1
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3d94289baf5cd7b3e4724f205dbfcb5e0ff227eb
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: 04d67f90006d4e11b2cbe16f6dacd3ba02cde7a6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53931055"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779447"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Compilation et génération dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +36,7 @@ Vous pouvez utiliser Visual Studio pour générer des applications et créer des
 |Utilisation de Team Foundation Build|-   Vous pouvez automatiser votre processus de génération. Par exemple, vous pouvez générer un ou plusieurs projets la nuit ou chaque fois le code est archivé. Vous pouvez également générer des projets sur les serveurs de build partagés plutôt que sur votre ordinateur de développement.<br />-   Vous pouvez spécifier rapidement le code que vous souhaitez générer, les tests à exécuter et d’autres options courantes.<br />-   Vous pouvez modifier le flux de travail de build et, si nécessaire, créer des activités de build pour effectuer des tâches profondément personnalisées.|[Générer l’application](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)|
 
 ## <a name="building-from-the-ide"></a>Génération à partir de l'IDE
- Lorsque vous créez un projet, les configurations de build par défaut sont définies pour ce projet, et une configuration de build de solution par défaut lui est assignée pour fournir un contexte aux builds. Les configurations de solution définissent comment les projets de la solution sont générés et déployés. Les configurations de projet sont un jeu de propriétés de projet qui sont uniques pour un type de plateforme et de build (par exemple, Release Win32). Vous pouvez modifier ces configurations par défaut, et créer vos propres configurations. Pour plus d’informations, consultez [Introduction au Concepteur de projet](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7) et [NIB Comment : Modifier les propriétés du projet et les paramètres de Configuration](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67).
+ Lorsque vous créez un projet, les configurations de build par défaut sont définies pour ce projet, et une configuration de build de solution par défaut lui est assignée pour fournir un contexte aux builds. Les configurations de solution définissent comment les projets de la solution sont générés et déployés. Les configurations de projet sont un jeu de propriétés de projet qui sont uniques pour un type de plateforme et de build (par exemple, Release Win32). Vous pouvez modifier ces configurations par défaut, et créer vos propres configurations. Pour plus d’informations, consultez [Introduction au Concepteur de projet](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7) et [NIB Comment : Modifier les propriétés du projet et les paramètres de Configuration](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67).
 
  Dans l’IDE, vous pouvez effectuer les tâches additionnelles suivantes :
 
@@ -57,4 +53,4 @@ Vous pouvez utiliser Visual Studio pour générer des applications et créer des
 -   Améliorer les performances de génération en utilisant des builds parallèles. Pour plus d’informations, consultez [Génération parallèle de plusieurs projets](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) ou le billet de blog [Réglage du parallélisme de génération C++](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx).
 
 ## <a name="see-also"></a>Voir aussi
- [Procédure pas à pas : Création d’une Application](../ide/walkthrough-building-an-application.md) [présentation des Configurations de Build](../ide/understanding-build-configurations.md) [présentation des plateformes de générations](../ide/understanding-build-platforms.md) [génération (compilation) de projets de Site Web](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Comment : créer et supprimer les dépendances d’un projet.
+ [Procédure pas à pas : Création d’une Application](../ide/walkthrough-building-an-application.md) [présentation des Configurations de Build](../ide/understanding-build-configurations.md) [présentation des plateformes de générations](../ide/understanding-build-platforms.md) [génération (compilation) de projets de Site Web](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Comment : Créer et supprimer les dépendances d’un projet](../ide/how-to-create-and-remove-project-dependencies.md)

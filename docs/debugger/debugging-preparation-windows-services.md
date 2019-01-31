@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: ac0a99f7-ec3d-4a20-b17f-698a817fdcc2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9769b3d1238f1ec62e315b18798851b938d003e5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 39928a89dae0f58201ec5f86fa0584095809fe48
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854254"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018395"
 ---
 # <a name="debugging-preparation-windows-services"></a>Débogage de la préparation : services Windows
 Un service Windows est un programme qui s'exécute en arrière-plan sous Microsoft Windows. Il s'agit par exemple du service Telnet ou du service d'horloge Windows, qui met à jour l'horloge visible de l'ordinateur. Un service Windows ne peut pas être exécuté à partir de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ; il doit s'exécuter dans le contexte du Gestionnaire de contrôle des services. Pour plus d’informations, consultez [Création de services Windows](/dotnet/framework/windows-services/how-to-create-windows-services), [Débogage des applications de service Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications) et [Applications de service Windows](/dotnet/framework/windows-services/index).  

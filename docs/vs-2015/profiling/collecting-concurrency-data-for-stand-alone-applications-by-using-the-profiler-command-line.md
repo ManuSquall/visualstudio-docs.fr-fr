@@ -1,14 +1,9 @@
 ---
 title: Collecte de données concurrentielles pour les applications autonomes en utilisant la ligne de commande du profileur | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - concurrency profiling method
 - profiling tools,concurrency method
@@ -16,13 +11,13 @@ ms.assetid: 0a2c6d8a-50b3-48aa-b617-9137b049d21e
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e49d723db8cb444fb9e21640a2e5e9b1eecea268
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: 7fac1c840d93c03b659e7934a82eb53895b60ede
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53950554"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755213"
 ---
 # <a name="collecting-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Collecte de données concurrentielles pour les applications autonomes en utilisant la ligne de commande du profileur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,6 +58,3 @@ La méthode d’accès concurrentiel des outils de profilage [!INCLUDE[vsprvs](.
   
 ## <a name="reference"></a>Référence  
  [Informations de référence sur les outils de profilage de ligne de commande](../profiling/command-line-profiling-tools-reference.md)
-
-
-

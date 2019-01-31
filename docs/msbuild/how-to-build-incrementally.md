@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8d82d7d8-a2f1-4df6-9d2f-80b9e0cb3ac3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1fc2b076bffd843c4882e40f1c3c18dbf161e8b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5866ae345aaa8b28cdc0ff448500104ba946f504
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883212"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010140"
 ---
 # <a name="how-to-build-incrementally"></a>Procédure : Générer de façon incrémentielle
 Quand vous générez un projet volumineux, il est important de ne pas regénérer les composants précédemment générés qui sont encore à jour. Si toutes les cibles sont générées à chaque fois, la génération de builds prend beaucoup de temps. Pour activer les builds incrémentielles (builds dans lesquelles seules les cibles obsolètes ou n’ayant pas été déjà générées sont regénérées), [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) peut comparer les horodateurs des fichiers d’entrée avec ceux des fichiers de sortie et déterminer s’il faut ignorer, générer ou regénérer partiellement une cible. Toutefois, il doit exister un mappage un-à-un entre les entrées et les sorties. Vous pouvez utiliser des transformations pour permettre aux cibles d’identifier ce mappage direct. Pour plus d’informations sur les transformations, consultez [Transformations](../msbuild/msbuild-transforms.md).  

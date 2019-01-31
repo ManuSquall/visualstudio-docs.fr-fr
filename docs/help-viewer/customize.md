@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9c0bc950-7323-4f0f-8de2-0b0af9a42b85
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5a8d66cc126d26482aac13a8380b12bee11cdf8
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: 13cdf7f1d2cf815154b17312645d3c55027a58a1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "54406087"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940698"
 ---
 # <a name="customize-the-help-viewer"></a>Personnaliser Help Viewer
 Vous pouvez personnaliser la disposition des fenêtres Help Viewer, ainsi que d’autres options telles que la taille de la police, le nombre maximal de résultats et l’affichage ou non du contenu en anglais.

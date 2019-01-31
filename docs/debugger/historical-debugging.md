@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 7cc5ddf2-2f7c-4f83-b7ca-58e92e9bfdd2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc16c6e6186d53bd08bd0634e07a4d1172859280
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: d00ab3ca18997fe61fc4b36e1f9f9a098b0aa727
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227250"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952117"
 ---
 # <a name="historical-debugging-c-visual-basic-c"></a>Débogage d’historique (C#, Visual Basic, C++)
 

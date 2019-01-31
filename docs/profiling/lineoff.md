@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 76082063-20ef-47ae-ad64-81b43b654865
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fc5ad3e2256b32e32e02814d41168663e3539ff
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dcff858e8cf79d0665d717a576b9c2389e69131a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926120"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979320"
 ---
 # <a name="lineoff"></a>LineOff
 Par défaut, le profileur collecte le numéro de ligne du code source et le décalage de numéro de ligne quand vous utilisez la méthode de profilage par échantillonnage. L’option **LineOff** de VSPerfCmd désactive la collecte des numéros de ligne quand VSPerfCmd est utilisé pour démarrer l’application. Les données de profilage sont collectées au niveau de la fonction quand **LineOff** est spécifié.  

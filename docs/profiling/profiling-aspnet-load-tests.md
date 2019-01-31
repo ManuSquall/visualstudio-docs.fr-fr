@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: c3f5c363-be79-40b5-bfa7-db8d21378d8d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: a477d1f06e086514d164fc20fdfa582f1a28ee40
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dc0ddec645f4451ad7270add1b0bb7641970438b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872984"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953339"
 ---
 # <a name="profile-aspnet-load-tests"></a>Profiler des tests de charge ASP.NET
 Vous pouvez collecter les données de profilage à partir de tests web [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] automatisés que vous exécutez sur les projets de sites web ASP.NET. Vous pouvez collecter des données d’échantillonnage et d’interaction de couche. Pour plus d’informations, consultez les rubriques suivantes :  

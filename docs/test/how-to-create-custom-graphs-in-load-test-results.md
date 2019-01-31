@@ -8,14 +8,14 @@ helpviewer_keywords:
 ms.assetid: 17fcafce-76f9-4411-9389-6e5376eab236
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: cc7673ad7f7542595a883e81a8064964dd054729
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8fd80a4d7cbfeb7cf79ae3dddad9aa1da367fd87
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53957999"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992774"
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>Procédure : créer des graphes personnalisés dans les résultats des tests de charge
 

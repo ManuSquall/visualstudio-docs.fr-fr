@@ -1,27 +1,22 @@
 ---
 title: Vue Appelant/Appelé - Données de conflit | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Caller/Callee view
 ms.assetid: a18a1b1b-9b39-43c7-b1f3-708fd20376f6
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0e226cb5a44923e73d64a9374eb1d170e18d2428
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2f60e8eedeeb7106a7a95a33a4a5cc794194861c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797609"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796997"
 ---
 # <a name="caller--callee-view----contention-data"></a>Vue Appelant/Appelé - Données de conflit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,12 +51,9 @@ La vue Appelant/Appelé affiche des données de conflit pour la fonction sélect
 |**Fichier source**|Fichier source contenant la définition pour cette fonction.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour personnaliser les colonnes de la vue Rapport](../profiling/how-to-customize-report-view-columns.md)   
+ [Guide pratique pour personnaliser les colonnes de vue des rapports](../profiling/how-to-customize-report-view-columns.md)   
  [Vue Appelant/Appelé](../profiling/caller-callee-view.md)   
  [Vue Appelant/Appelé - Données d’échantillonnage](../profiling/caller-callee-view-sampling-data.md)   
  [Vue Appelant/Appelé - Données d’instrumentation de la mémoire .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
  [Vue Appelant/Appelé - Données d’échantillonnage de mémoire .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
  [Vue Appelant/appelé - Données d’instrumentation](../profiling/caller-callee-view-instrumentation-data.md)
-
-
-

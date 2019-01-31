@@ -9,21 +9,21 @@ dev_langs:
 ms.assetid: aaea6b8d-55eb-4427-8185-c050f855c257
 author: corob-msft
 ms.author: corob
-manager: douge
+manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 5dffe82511e75889ea588cb23b1f19490f991ab0
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: c46644b18188475bd6389a795625209f74a7d9b5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251905"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021986"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>Installer le développement mobile multiplateforme avec C++
 
 Vous pouvez utiliser C++ dans Visual Studio pour créer des applications de bureau Windows, des applications de la plateforme Windows universelle (UWP), des applications Linux et, désormais, des applications pour Android et iOS. La charge de travail **Développement mobile en C++** est un ensemble installable de composants dans Visual Studio qui inclut des modèles Visual Studio multiplateformes iOS, Android et UWP. Elle installe les outils multiplateformes ainsi que les Kits de développement logiciel nécessaires à une prise en main rapide, sans que vous n’ayez à effectuer les recherches, le téléchargement ni la configuration. Vous pouvez utiliser ces outils dans Visual Studio pour créer, modifier, déboguer et tester facilement vos projets multiplateformes. Cette rubrique décrit comment installer les outils et les logiciels tiers requis pour développer des applications multiplateformes dans C++ à l’aide de Visual Studio. Pour obtenir une vue d’ensemble, consultez [Développement multiplateforme en Visual C++ pour appareils mobiles](https://go.microsoft.com/fwlink/p/?LinkId=536383)
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 
 - Pour connaître la configuration requise pour l’installation, consultez [Configuration système requise pour la famille de produits Visual Studio](/visualstudio/productinfo/vs2017-system-requirements-vs).
 

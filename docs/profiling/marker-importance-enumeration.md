@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d5524ea0-0227-4d8e-9122-332291042df5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 330ba15fa62272bd2c2f7ea7b40d6b527ab237c3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3d4049a3792fcc529352baef3e4649c6157aa7f0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841688"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992150"
 ---
 # <a name="markerimportance-enumeration"></a>marker_importance, énumération
 Représente le niveau d’importance d’un marqueur du visualiseur concurrentiel.  

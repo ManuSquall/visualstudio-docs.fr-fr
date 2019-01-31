@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: daf41a06-8a55-48f6-95f5-49a8416bd308
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ded332b68ee4ae4d628bc272b563e973da6154e5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d45fa813a7bb75ea0cdd11a412ae35e5444883dc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913331"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924961"
 ---
 # <a name="page-file-tab-process-properties-dialog-box"></a>Onglet Fichier d'échange de la boîte de dialogue Propriétés du processus
 Utilisez le **fichier d’échange** onglet pour examiner le fichier de pagination d’un processus. Pour afficher le [boîte de dialogue Propriétés de processus](../debugger/process-properties-dialog-box.md), déplacez le focus à un [vue processus](../debugger/processes-view.md) fenêtre. Sélectionnez n’importe quel nœud de processus dans l’arborescence, puis choisissez **propriétés** à partir de la **vue** menu.  

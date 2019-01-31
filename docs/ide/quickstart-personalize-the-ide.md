@@ -5,15 +5,15 @@ ms.prod: visual-studio-dev15
 ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0f81c04c06d8e016ef62a41d2e3083a1daafb3a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e4fc268c085b7c1fe83889a0f8860ee665cc7a4e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919717"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55011744"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Démarrage rapide : Personnaliser l’éditeur et l’IDE de Visual Studio
 

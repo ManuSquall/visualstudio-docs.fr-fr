@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d092feee3327af0f7ee7c439eb4c9fc1e74e9138
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 601527ee9fadb3ac9bda196df71ac75501635e9e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835644"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992384"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Utiliser la fenêtre interactive Python
 
@@ -31,11 +31,11 @@ Visual Studio propose plusieurs modes REPL Python au choix :
 | Standard | REPL par défaut, communique directement avec Python | Modification standard (multiligne, etc.). | Oui, via `$attach` | Non |
 | Débogage | REPL par défaut, communique avec le processus Python débogué | Modification standard | Débogage uniquement | Non |
 | IPython | REPL qui communique avec le serveur principal IPython | Commandes IPython, avantages de Pylab | Non | Oui, inline dans REPL |
-| IPython sans Pylab | REPL qui communique avec le serveur principal IPython | IPython standard | Non | Oui, fenêtre distincte | 
+| IPython sans Pylab | REPL qui communique avec le serveur principal IPython | IPython standard | Non | Oui, fenêtre distincte |
 
 Cet article décrit les modes REPL **Standard** et **Débogage**. Pour plus d’informations sur les modes IPython, consultez [Utiliser IPython REPL](interactive-repl-ipython.md).
 
-Pour obtenir une procédure pas à pas détaillée avec des exemples, notamment les interactions avec l’éditeur, telles que **Ctrl**+**Entrée**, consultez [Tutoriel - Étape 3 : Utiliser la fenêtre REPL interactive](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md). 
+Pour obtenir une procédure pas à pas détaillée avec des exemples, notamment les interactions avec l’éditeur, telles que **Ctrl**+**Entrée**, consultez [Tutoriel - Étape 3 : Utiliser la fenêtre REPL interactive](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md).
 
 |   |   |
 |---|---|

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: d50dfadb-ce79-4d5e-9c09-1cfddd57876d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a2e9857e752d01f03e7d9219c5e030dae921cc9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 71fc920451848558ddc6b04b5940787926e245c0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833751"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930080"
 ---
 # <a name="toggle-breakpoint-command"></a>Basculer le point d'arrêt, commande
 Active ou désactive le point d’arrêt, en fonction de son état actuel, à l’emplacement actuel dans le fichier.

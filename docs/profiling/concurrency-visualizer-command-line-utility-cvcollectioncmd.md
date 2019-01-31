@@ -7,15 +7,15 @@ f1_keywords:
 ms.assetid: 476601be-1608-4014-af15-5aba6ccbed1c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5c2dfa42df5ce7dd5d9bf421df4ad4b001fdb57
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3627398d4a0b7d069b626ee8dc2b9e95ab81d10c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986841"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013065"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Utilitaire en ligne de commande du visualiseur concurrentiel (CVCollectionCmd)
 Vous pouvez utiliser l’utilitaire en ligne de commande du visualiseur concurrentiel (*CVCollectionCmd.exe*) pour collecter des traces à partir de la ligne de commande et les afficher dans le visualiseur concurrentiel pour Visual Studio. Vous pouvez utiliser ces outils sur des ordinateurs sur lesquels Visual Studio n'est pas installé.  

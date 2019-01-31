@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 25492d3f6d152369bdabaad5eafc05f5e8822132
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c37492bfe514536ff94cf8c51a616e2df69b891e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879356"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010205"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>Guide pratique pour sélectionner l’environnement Python d’un projet
 
@@ -46,7 +46,7 @@ Le menu contextuel sur le nœud **Environnements Python** propose également des
 
 ## <a name="use-virtual-environments"></a>Utiliser des environnements virtuels
 
-Un environnement virtuel est une combinaison unique entre un interpréteur Python donné et un ensemble précis de bibliothèques, qui diffère des autres environnements globaux et conda. Un environnement virtuel est spécifique à un projet et conservé dans un dossier de projet. Ce dossier contient les bibliothèques installées de l’environnement, ainsi qu’un fichier *pyvenv.cfg* qui spécifie le chemin de l’*interpréteur de base* de l’environnement, ailleurs sur le système de fichiers. (Autrement dit, un environnement virtuel ne contient pas de copie de l’interpréteur, mais uniquement un lien vers celui-ci.) 
+Un environnement virtuel est une combinaison unique entre un interpréteur Python donné et un ensemble précis de bibliothèques, qui diffère des autres environnements globaux et conda. Un environnement virtuel est spécifique à un projet et conservé dans un dossier de projet. Ce dossier contient les bibliothèques installées de l’environnement, ainsi qu’un fichier *pyvenv.cfg* qui spécifie le chemin de l’*interpréteur de base* de l’environnement, ailleurs sur le système de fichiers. (Autrement dit, un environnement virtuel ne contient pas de copie de l’interpréteur, mais uniquement un lien vers celui-ci.)
 
 Un des avantages de l’utilisation d’un environnement virtuel est qu’au fur et à mesure du développement du projet, l’environnement virtuel reflète toujours les dépendances exactes du projet. (En revanche, un environnement global partagé contient un certain nombre de bibliothèques, que vous les utilisiez ou non dans votre projet.) Vous pouvez donc facilement créer un fichier *requirements.txt* à partir de l’environnement virtuel, lequel est ensuite utilisé pour réinstaller ces dépendances sur un autre ordinateur de développement ou de production. Pour plus d’informations, consultez [Gérer les packages requis avec requirements.txt](managing-required-packages-with-requirements-txt.md).
 

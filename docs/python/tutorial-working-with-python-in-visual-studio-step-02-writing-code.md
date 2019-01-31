@@ -2,22 +2,22 @@
 title: Tutoriel Python dans Visual Studio - étape 2, écrire et exécuter du code
 titleSuffix: ''
 description: Étape 2 d’une procédure pas à pas portant sur les fonctionnalités de Python dans Visual Studio qui explique comment modifier du code et exécuter un projet.
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 201284ad236b2182ba6c4e69971ff15d0b43a009
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6aec7825387c2eda58c76bf885bcd29b0b7bdd1b
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935139"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231777"
 ---
 # <a name="step-2-write-and-run-code"></a>Étape 2 : Écrire et exécuter du code
 
@@ -46,7 +46,7 @@ Bien que l’**Explorateur de solutions** soit l’emplacement où vous gérez l
     ![Coloration syntaxique et mise en évidence des erreurs par IntelliSense](media/vs-getting-started-python-06-IntelliSense3b.png)
 
     > [!Tip]
-    > L’environnement de développement de quelqu’un étant une affaire très personnelle, Visual Studio vous donne un contrôle complet sur son apparence et son comportement. Sélectionnez la commande de menu **Outils** > **Options**, et explorez les paramètres sous les onglets **Environnement** et **Éditeur de texte**. Par défaut, vous voyez seulement un nombre limité d’options. Pour afficher toutes les options pour chaque langage de programmation, sélectionnez **Afficher tous les paramètres** en bas de la boîte de dialogue. 
+    > L’environnement de développement de quelqu’un étant une affaire très personnelle, Visual Studio vous donne un contrôle complet sur son apparence et son comportement. Sélectionnez la commande de menu **Outils** > **Options**, et explorez les paramètres sous les onglets **Environnement** et **Éditeur de texte**. Par défaut, vous voyez seulement un nombre limité d’options. Pour afficher toutes les options pour chaque langage de programmation, sélectionnez **Afficher tous les paramètres** en bas de la boîte de dialogue.
 
 1. Exécutez le code que vous avez écrit à ce stade en appuyant sur **Ctrl**+**F5**, ou en sélectionnant l’élément de menu **Déboguer** > **Exécuter sans débogage**. Visual Studio vous avertit si votre code contient encore des erreurs.
 

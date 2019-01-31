@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 154786ce-c803-4bfb-8198-f7962a900363
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cff7bea44950c7c956f80567637e007f957c05f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f728551f97c0b402cb4a9f8294a5401759cb338c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940412"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55019357"
 ---
 # <a name="windows-view"></a>Vue Fenêtres
 Lorsque vous ouvrez Spy ++, Windows affiche une arborescence de toutes les fenêtres et les contrôles dans le système. Le nom de handle et de la classe de fenêtre sont affichés. La fenêtre du bureau actuelle est en haut de l’arborescence. Toutes les autres fenêtres sont des enfants du bureau et sont répertoriés en fonction de la hiérarchie de fenêtre standard. Fenêtres sœurs s’affichent dans les listes extensible mis en retrait sous leurs parents.  

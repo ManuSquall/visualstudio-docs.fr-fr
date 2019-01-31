@@ -1,14 +1,9 @@
 ---
 title: Composants requis, boîte de dialogue | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - Microsoft.VisualStudio.Publish.BaseProvider.Dialog.Bootstrapper
 dev_langs:
@@ -21,13 +16,13 @@ ms.assetid: 53ac863c-77a0-409b-91e5-7a4bd8b8474e
 caps.latest.revision: 79
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6aff33e7129123e2f910116a5d9352944e1c064a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 59605af2d0ebb7ed094602e9f300dc8dbc3b7ead
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183948"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799830"
 ---
 # <a name="prerequisites-dialog-box"></a>Composants requis, boîte de dialogue
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,16 +48,16 @@ Cette boîte de dialogue spécifie quels composants requis sont installés, comm
   
 |Élément|Description|  
 |-------------|-----------------|  
-|**.NET Framework 3.5 SP1**|Ce package installe les éléments suivants :<br /><br /> - .NET Framework versions 2.0, 3.0 et 3.5.<br />- Prise en charge de toutes les versions de .NET Framework sur les systèmes d’exploitation 32 bits (x86) et 64 bits (x64).<br />- Modules linguistiques pour chaque version de .NET Framework installée avec le package.<br />- Service Packs pour .NET Framework 2.0 et 3.0.<br /><br /> .NET Framework 3.0 est inclus avec Windows Vista et .NET Framework 3.5 avec [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. .NET Framework 3.5 est requis pour tous les projets Visual Basic et Visual C# qui sont compilés pour les systèmes d’exploitation 32 bits et dont la version cible de .NET Framework est **.NET Framework 3.5**, ainsi que pour les projets Visual Basic et Visual C# compilés pour les systèmes d’exploitation 64 bits. (IA64 non pris en charge.) Notez que les projets Visual Basic et Visual C# sont compilés par défaut pour toutes les architectures UC. Pour plus d’informations, consultez [Vue d’ensemble du multiciblage Visual Studio](../../ide/visual-studio-multi-targeting-overview.md), [Redistributing the .NET Framework](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287) (Redistribution du .NET Framework) et [Composants requis pour le déploiement d’applications 64 bits](../../deployment/deploying-prerequisites-for-64-bit-applications.md).<br /><br /> Cet élément est sélectionné par défaut.|  
+|**.NET Framework 3.5 SP1**|Ce package installe les éléments suivants :<br /><br /> - .NET Framework versions 2.0, 3.0 et 3.5.<br />- Prise en charge de toutes les versions de .NET Framework sur les systèmes d’exploitation 32 bits (x86) et 64 bits (x64).<br />- Modules linguistiques pour chaque version de .NET Framework installée avec le package.<br />- Service Packs pour .NET Framework 2.0 et 3.0.<br /><br /> .NET Framework 3.0 est inclus avec Windows Vista et .NET Framework 3.5 avec [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. .NET Framework 3.5 est requis pour tous les projets Visual Basic et Visual C# qui sont compilés pour les systèmes d’exploitation 32 bits et dont la version cible de .NET Framework est **.NET Framework 3.5**, ainsi que pour les projets Visual Basic et Visual C# compilés pour les systèmes d’exploitation 64 bits. (IA64 non pris en charge.) Notez que les projets Visual Basic et Visual C# sont compilés par défaut pour toutes les architectures UC. Pour plus d’informations, consultez [Vue d’ensemble du multiciblage Visual Studio](../../ide/visual-studio-multi-targeting-overview.md), [Redistributing the .NET Framework](http://msdn.microsoft.com/a18d0456-fd89-493e-97f4-756505bfe287) (Redistribution du .NET Framework) et [Composants requis pour le déploiement d’applications 64 bits](../../deployment/deploying-prerequisites-for-64-bit-applications.md).<br /><br /> Cet élément est sélectionné par défaut.|  
 |**.NET Framework 3.5 SP1 Client Profile**|.NET Framework Client Profile est un sous-ensemble de .NET Framework 3.5 SP1 complet qui cible des applications clientes. Il fournit un sous-ensemble simplifié de fonctionnalités Windows Presentation Foundation (WPF), Windows Forms, Windows Communication Foundation (WCF) et ClickOnce. Cela permet des scénarios de déploiement rapides pour les applications WPF, Windows Forms, WCF et console qui ciblent .NET Framework Client Profile. Pour plus d’informations, consultez [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).|  
-|**Microsoft .NET Framework 4 (x86 et x64)**|Ce package installe .NET Framework 4 pour les plateformes x64 et x86.<br /><br /> Pour plus d’informations, consultez [Vue d’ensemble du multiciblage Visual Studio](../../ide/visual-studio-multi-targeting-overview.md), [Redistributing the .NET Framework](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287) (Redistribution du .NET Framework) et [Composants requis pour le déploiement d’applications 64 bits](../../deployment/deploying-prerequisites-for-64-bit-applications.md).<br /><br /> Cet élément est sélectionné par défaut.|  
+|**Microsoft .NET Framework 4 (x86 et x64)**|Ce package installe .NET Framework 4 pour les plateformes x64 et x86.<br /><br /> Pour plus d’informations, consultez [Vue d’ensemble du multiciblage Visual Studio](../../ide/visual-studio-multi-targeting-overview.md), [Redistributing the .NET Framework](http://msdn.microsoft.com/a18d0456-fd89-493e-97f4-756505bfe287) (Redistribution du .NET Framework) et [Composants requis pour le déploiement d’applications 64 bits](../../deployment/deploying-prerequisites-for-64-bit-applications.md).<br /><br /> Cet élément est sélectionné par défaut.|  
 |**Microsoft .NET Framework 4 Client Profile (x86 et x64)**|.NET Framework 4 Client Profile est un sous-ensemble de .NET Framework 4 complet qui cible des applications clientes. Il fournit un sous-ensemble simplifié de fonctionnalités Windows Presentation Foundation (WPF), Windows Forms, Windows Communication Foundation (WCF) et ClickOnce. Cela permet des scénarios de déploiement rapides pour les applications WPF, Windows Forms et console qui ciblent .NET Framework 4 Client Profile. Pour plus d’informations, consultez [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).|  
 |**Assemblys PIA (Primary Interop Assembly) Microsoft Office 2007**|Ce package installe les assemblys PIA pour les produits Microsoft Office 2007. Ils permettent au code managé d'interagir avec le modèle d'objet COM d'une application Microsoft Office. Pour plus d’informations, consultez [Assemblys PIA (Primary Interop Assembly) Office](http://msdn.microsoft.com/library/aa29d12c-185f-4558-a7cd-3d85f924203d).|  
 |**Microsoft Visual Basic PowerPacks version 10.0**|Les Power Packs sont des compléments, des contrôles, des composants et des outils destinés à vous aider à développer des applications Visual Basic. Cette version contient le composant <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm>, qui vous permet d'imprimer le contenu d'un Windows Form, et la Bibliothèque de compatibilité des imprimantes, qui permet au code Printer Visual Basic 6.0 de s'exécuter sans modification.|  
 |**Microsoft Visual F# Runtime for .NET 2.0**|Ce package installe les bibliothèques Runtime Visual F# pour les systèmes d'exploitation x64 et x86, permettant ainsi la prise en charge de la programmation fonctionnelle, mais aussi de la programmation orientée objet et impérative (procédurale) traditionnelle. Ce package doit être installé si l'application ou ses composants sont créés dans Visual F# et .NET Framework 2.0, .NET Framework 3.0 ou .NET Framework 3.5.<br /><br /> Pour plus d’informations, consultez [Informations de référence du langage F#](http://msdn.microsoft.com/library/16b706f8-b5f2-4ff7-b2c1-64df33cd6adf).|  
 |**Microsoft Visual F# Runtime for .NET 4.0**|Ce package installe les bibliothèques Runtime Visual F# pour les systèmes d'exploitation x64 et x86, permettant ainsi la prise en charge de la programmation fonctionnelle, mais aussi de la programmation orientée objet et impérative (procédurale) traditionnelle. Ce package doit être installé si l'application ou ses composants sont créés dans Visual F# et .NET Framework 4.<br /><br /> Pour plus d’informations, consultez [Informations de référence du langage F#](http://msdn.microsoft.com/library/16b706f8-b5f2-4ff7-b2c1-64df33cd6adf).|  
 |**Visionneuse de rapports Microsoft Visual Studio 2010**|Ce package installe les contrôles de la visionneuse de rapports que vous pouvez utiliser pour ajouter des rapports de données élaborés à Windows Forms et aux applications ASP.NET.|  
-|**Microsoft Visual Studio 2010 for Office Runtime (x86 et x64)**|Les outils de développement Microsoft Office dans Visual Studio offrent des outils intégrés et simples d'utilisation permettant de créer des solutions métier personnalisées avec Microsoft Office. Vous pouvez créer des solutions clientes gérées et intelligentes qui utilisent les applications Office comme une interface utilisateur. Les outils aident les développeurs à créer des solutions sécurisées faciles à déployer et à gérer.<br /><br /> Pour plus d’informations, consultez [Comment : publier une solution Office à l’aide de ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).|  
+|**Microsoft Visual Studio 2010 for Office Runtime (x86 et x64)**|Les outils de développement Microsoft Office dans Visual Studio offrent des outils intégrés et simples d'utilisation permettant de créer des solutions métier personnalisées avec Microsoft Office. Vous pouvez créer des solutions clientes gérées et intelligentes qui utilisent les applications Office comme une interface utilisateur. Les outils aident les développeurs à créer des solutions sécurisées faciles à déployer et à gérer.<br /><br /> Pour plus d'informations, voir [Procédure : Publier une Solution Office à l’aide de ClickOnce](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).|  
 |**SQL Server 2005 Express Edition SP2 (x86)**|Ce package installe Microsoft SQL Server 2005 Express Edition SP2, une application de base de données basée sur [!INCLUDE[sqprsqext](../../includes/sqprsqext-md.md)]. SQL Server Express remplace Microsoft SQL Server Desktop Engine (MSDE). SQL Server Express est gratuit et peut être redistribué (soumis au contrat). Il fonctionne comme une base de données cliente et comme une base de données serveur de base. Il est identique à SQL Server 2005, à l'exception des éléments suivants :<br /><br /> - Aucune prise en charge des fonctionnalités d’entreprise.<br />- Limité à une UC.<br />- Limite de mémoire de 1 gigaoctet (Go) pour le pool de mémoires tampons.<br />- Taille maximale de 4 Go pour les bases de données.|  
 |**SQL Server 2008 Express**|Ce package installe Microsoft SQL Server 2008 Express, une version gratuite de Microsoft SQL Server 2008, une base de données idéale pour les petites applications de bureau, applications serveur ou applications Web. Il peut être utilisé gratuitement pour le développement et la production. Une [inscription](http://go.microsoft.com/fwlink/?LinkId=130380) gratuite est requise pour distribuer SQL Server 2008 Express avec l’application.<br /><br /> Le comportement du programme d'amorçage est le suivant :<br /><br /> - Si l’ordinateur dispose déjà de SQL Server 2008 Express ou version ultérieure, il le conserve.<br />- Si l’ordinateur ne dispose d’aucune version de SQL Server 2008 Express ou version ultérieure, le package installe la dernière version de SQL Server 2008 Express SP1.<br /><br /> Pour en savoir plus sur SQL Server 2008 Express, visitez [ http://go.microsoft.com/fwlink/?LinkId=183586 ](http://go.microsoft.com/fwlink/?LinkId=183586).|  
 |**Bibliothèques Runtime Visual C++ 2010 (IA64)**|Ce package installe les bibliothèques Runtime Visual C++ pour l'architecture Intel Itanium, qui fournit des routines de programmation pour le système d'exploitation Microsoft Windows. Ces routines automatisent de nombreuses tâches de programmation courantes qui ne sont pas fournies par les langages C et C++.<br /><br /> Pour plus d’informations, consultez [Référence sur les bibliothèques Runtime C](http://msdn.microsoft.com/library/a503e11c-8dca-4846-84fb-025a826c32b8).|  
@@ -74,9 +69,6 @@ Cette boîte de dialogue spécifie quels composants requis sont installés, comm
 ## <a name="see-also"></a>Voir aussi  
  [Page Publier, Concepteur de projets](../../ide/reference/publish-page-project-designer.md)   
  [Prérequis pour le déploiement d’applications](../../deployment/application-deployment-prerequisites.md)   
- [Redistribution du .NET Framework](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287)   
+ [Redistribution du .NET Framework](http://msdn.microsoft.com/a18d0456-fd89-493e-97f4-756505bfe287)   
  [Déploiement des prérequis pour les applications 64 bits](../../deployment/deploying-prerequisites-for-64-bit-applications.md)   
  [Vue d’ensemble du multiciblage Visual Studio](../../ide/visual-studio-multi-targeting-overview.md)
-
-
-

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 69ab08ab-3e76-41dd-a01b-49aa1d2e0cac
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 739e39bd09e8387904570d3690e7c9ff1447fae3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fde2f9418a06b85f19027de37c242f06ad6a0868
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864441"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920869"
 ---
 # <a name="property-element-msbuild"></a>Élément Property (MSBuild)
 Contient une valeur et un nom de propriété définis par l’utilisateur. Chaque propriété utilisée dans un projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] doit être spécifiée en tant qu’enfant d’un élément `PropertyGroup`.  

@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: 20597ff8-0c98-43ec-8fb1-05376804ba48
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0ef06a84fb903b79a40087ac7e7ac98c6964d285
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8bf72a367070cb036b63c965173c9bbd514f2d75
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879995"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993830"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Définir le contrôle à créer lors d’une opération de glisser-déplacer à partir de la fenêtre Sources de données
 

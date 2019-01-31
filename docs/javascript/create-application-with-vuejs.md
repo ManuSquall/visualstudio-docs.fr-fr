@@ -7,17 +7,17 @@ ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 37d44112630797ecbc8621a885412ef4014610fd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4b912f523be0380858d639dbf43a4c53bc358c6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857721"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947021"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Créer une application Vue.js à l’aide de Node.js Tools pour Visual Studio
 
@@ -176,6 +176,7 @@ Un problème inconnu avec vue-cli 3.0 empêche l’automatisation du processus d
 * L’exécution de la commande `npm run build` comme un événement pré-build sur les propriétés du projet ne fonctionne pas lors de l’utilisation de vue-cli 3.0.
 
 ## <a name="see-also"></a>Voir aussi
-https://vuejs.org/v2/guide - Guide de mise en route Vue.  
-https://github.com/vuejs/vue-cli - Projet avec l’interface de ligne de commande Vue.  
-https://webpack.js.org/configuration/ - Documentation sur la configuration de webpack.
+
+- https://vuejs.org/v2/guide - Guide de mise en route Vue.
+- https://github.com/vuejs/vue-cli - Projet avec l’interface de ligne de commande Vue.
+- https://webpack.js.org/configuration/ - Documentation sur la configuration de webpack.

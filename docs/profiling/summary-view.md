@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 98a1eb71-bbf5-4ce7-8559-cdc29f082c4b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ce66ecc8114d349e0fea241b9f704b1f61de198
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a07584130b89eb90da24ebf1ee4783a312033d07
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842211"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940464"
 ---
 # <a name="summary-view"></a>Mode Résumé
 La vue Résumé affiche des informations sur les fonctions ou les objets dont le coût est le plus pénalisant quant aux performances lors d’une exécution du profilage. Cette vue fournit un graphique chronologique et plusieurs listes de fonctions ou d’objets dont le coût est le plus pénalisant quant aux métriques de performances de la méthode de profilage. Les données de cette vue dépendent de la méthode de profilage qui a été utilisée (échantillonnage, instrumentation ou concurrence) et de l’allocation de mémoire .NET si elle a été collectée ou non.  

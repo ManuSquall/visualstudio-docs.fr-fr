@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f4cea2e1-08dc-47ac-aba2-3b8c338e607f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 6ac201b124f460a3918034095cd3f86e49141a7b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 01c523abf6b6302831fee53e2546ba606089467c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900598"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027376"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Démarrage rapide : Déboguer du code ASP.NET avec le débogueur Visual Studio
 

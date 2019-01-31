@@ -16,15 +16,15 @@ helpviewer_keywords:
 - ASP.NET, installation error messages
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 41ec708b25bc74eb1f566981ee4bbcdc23827087
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 09c10019f4a3efd369398964eb1cf957968b4d10
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53902107"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976496"
 ---
 # <a name="error-aspnet-not-installed"></a>Erreur : ASP.NET n’est pas installé
 Cette erreur se produit quand [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] n'est pas installé correctement sur l'ordinateur que vous tentez de déboguer. Cela peut signifier qu'[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] n'a jamais été installé ou qu'[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] a été installé avant les services IIS (Internet Information Services).  

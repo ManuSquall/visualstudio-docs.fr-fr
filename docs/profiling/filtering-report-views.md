@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 820cf192-7fd6-4bee-9a51-aa69154aca85
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4922020a6020630ce54767e788b14a1ed7c0462
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f64789bafa8fe5077678715a7439cbd1c1bf03b3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986373"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927201"
 ---
 # <a name="filter-report-views"></a>Filtrer les vues des rapports
 Vous pouvez appliquer des filtres aux fichiers de données de profilage pour limiter les données qui sont affichées dans les vues des rapports de performances et exportées dans les fichiers de rapport. Vous pouvez limiter un rapport aux données entre des valeurs d’horodatage, et limiter les données à des processus et des threads spécifiques. Vous pouvez enregistrer les filtres dans un fichier, puis créer un filtre sur un autre fichier de données de profilage en important le filtre enregistré.  

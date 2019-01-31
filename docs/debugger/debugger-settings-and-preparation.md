@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: f15a1400-b204-418d-8878-ab7755470fd7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f1f4b9604afc511dcbb1362461a2e8c11c7098e
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 036f6918aaeb7fc7dfc0289028e01ea64cbd6736
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269772"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942855"
 ---
 # <a name="debugger-settings-and-preparation"></a>Paramètres et préparation du débogueur
 Cette section décrit les paramètres de propriété du débogueur et la préparation nécessaire pour déboguer votre programme à l’aide du débogueur [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Si vous créez un programme dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] à l’aide des modèles de projet, ces paramètres sont définis correctement sans votre intervention dans la configuration Debug.  

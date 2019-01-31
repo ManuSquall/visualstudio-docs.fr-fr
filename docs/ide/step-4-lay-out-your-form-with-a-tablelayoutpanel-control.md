@@ -6,20 +6,20 @@ ms.topic: conceptual
 ms.assetid: 61acde79-e115-4bad-bb06-1fbe37717a3e
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f60d39cb14bfb471e677a8c231091e97d3016a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eda2189af9fd564c6240909e44db91f297b46b5a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821338"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985966"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Étape 4 : Composer votre formulaire avec un contrôle TableLayoutPanel
 Dans cette étape, vous allez ajouter un contrôle <xref:System.Windows.Forms.TableLayoutPanel> à votre formulaire. Le contrôle TableLayoutPanel permet d'aligner correctement les contrôles du formulaire que vous ajouterez ultérieurement.
 
- ![lien vers la vidéo](../data-tools/media/playvideo.gif)Pour obtenir une version vidéo de cette rubrique, consultez [Tutoriel 1 : Créer une visionneuse d’images en Visual Basic – vidéo 2](http://go.microsoft.com/fwlink/?LinkId=205211) ou [Tutoriel 1 : Créer une visionneuse d’images en C# - Vidéo 2](http://go.microsoft.com/fwlink/?LinkId=205200). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.
+ ![lien vers la vidéo](../data-tools/media/playvideo.gif)Pour obtenir une version vidéo de cette rubrique, consultez [Turoriel 1 : Créer une visionneuse d’images en Visual Basic – Vidéo 2](http://go.microsoft.com/fwlink/?LinkId=205211) ou [Tutoriel 1 : Créer une visionneuse d’images en C# - Vidéo 2](http://go.microsoft.com/fwlink/?LinkId=205200). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.
 
 ## <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Pour composer votre formulaire avec un contrôle TableLayoutPanel
 

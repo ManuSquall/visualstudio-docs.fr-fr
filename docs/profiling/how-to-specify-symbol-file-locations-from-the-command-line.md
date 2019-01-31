@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 8aa067bb-e8bf-4081-aff0-cfbcf65934a0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0791019ce71a7d0fe6276ef9345284662ca31e00
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8ee2b0c335167abfb0ca940023b88c5e713be7e4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917145"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947905"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Procédure : Spécifier les emplacements du fichier de symboles à partir de la ligne de commande
 Pour pouvoir afficher des informations de symboles telles que les noms de fonctions et les numéros de ligne, l’outil en ligne de commande VSPerfReport nécessite l’accès aux fichiers de symboles (.*pdb*) des composants profilés, ainsi qu’aux fichiers système Windows. Les fichiers de symboles sont créés lors de la compilation d’un composant. Pour plus d’informations, consultez [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport recherche automatiquement les fichiers de symboles dans les emplacements suivants :  

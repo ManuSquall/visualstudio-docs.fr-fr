@@ -1,14 +1,9 @@
 ---
-title: Guide pratique pour restaurer les extraits de code de refactorisation C# | Microsoft Docs
-ms.custom: ''
+title: 'Procédure : Restaurer C# extraits de code de refactorisation | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - unsafe expansion
 - expansions, unsafe
@@ -16,15 +11,15 @@ ms.assetid: 12114273-7f2f-43d0-abcb-2d4711a3a68d
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8cb5906009d4c3f5d9d94a8e9898a1f02b3aedc0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c9ebd6b96a24b10601257d5eefc58014ef7058c9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227877"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782594"
 ---
-# <a name="how-to-restore-c-refactoring-snippets"></a>Comment : restaurer les extraits de code de refactorisation C#
+# <a name="how-to-restore-c-refactoring-snippets"></a>Procédure : Restaurer C# extraits de code de refactorisation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les opérations de refactorisation C# reposent sur des extraits de code disponibles dans le répertoire suivant :  
@@ -65,6 +60,3 @@ Les opérations de refactorisation C# reposent sur des extraits de code disponib
  [Extraits de code Visual C#](../ide/visual-csharp-code-snippets.md)   
  [Refactorisation (C#)](../csharp-ide/refactoring-csharp.md)   
  [Extraits de code](../ide/code-snippets.md)
-
-
-

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 47512bc9-a8e9-4628-883a-d9888edab786
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d0b201d22b93b7c023627887f0fc033da360fe9
-ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
+ms.openlocfilehash: 68a4136a67bea3dc06378265df9f01878c1a14dc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54417861"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923975"
 ---
 # <a name="vsinstr-warnings"></a>Avertissements VSInstr
 Le tableau suivant liste les avertissements émis par l’outil *VSInstr.exe*. Vous pouvez utiliser l’option NOWARN avec les numéros d’avertissement pour empêcher l’affichage de l’avertissement.  

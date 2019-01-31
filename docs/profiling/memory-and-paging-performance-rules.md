@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: f37972b2-efe4-4a1c-a5d1-a246ccd76817
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 572e645ea83d2523b7af0d867de07e758577882b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a71d39f7aaa0dd36d8774af097d2ffddb73561c6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988739"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936474"
 ---
 # <a name="memory-and-paging-performance-rules"></a>Règles de performance de mémoire et de pagination
 Les règles de performance de la catégorie mémoire et pagination identifient l’activité de pagination lors d’une exécution du profilage, qui peut affecter les performances et la réactivité de l’application.  

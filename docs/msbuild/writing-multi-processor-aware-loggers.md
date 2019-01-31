@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ff987d1b-1798-4803-9ef6-cc8fcc263516
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e97290d1762194a14bcdcef2af74de20a9f2083a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aefd76da0fef3b0ab19dae3b4b2064f83eaa0531
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887553"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005265"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>Écrire des journaux multiprocesseurs
 La capacité de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] à tirer parti de plusieurs processeurs peut accélérer le temps de génération d’un projet. Toutefois, elle rend plus complexe la journalisation des événements de build. Dans un environnement à un seul processeur, les événements, messages, avertissements et erreurs arrivent au journal (logger) de manière prévisible et séquentielle. Toutefois, dans un environnement multiprocesseur, les événements provenant de différentes sources peuvent arriver en même temps ou dans le désordre. Pour résoudre ce problème, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fournit un journal multiprocesseur, ainsi qu’un nouveau modèle de journalisation, qui vous permet de créer des « journaux de transfert » personnalisés.  

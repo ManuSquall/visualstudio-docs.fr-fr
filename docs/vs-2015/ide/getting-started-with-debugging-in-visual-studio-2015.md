@@ -9,13 +9,13 @@ ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7e4366061cc6eba29f630cb51757ddc2ace58970
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 7fecc637a62e96381362d79f66eb5a3cd4d8fa1d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066239"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764846"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Prise en main du débogage dans Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Visual Studio 2015 intègre un ensemble puissant d'outils de génération et de
  Vous avez compris comment fonctionne l'éditeur et vous venez de créer du code. Vous devez à présent déboguer ce code. Dans Visual Studio 2015, comme dans la plupart des environnements de développement intégrés (IDE), le débogage comprend deux phases : la génération du code pour intercepter et résoudre les erreurs liées au projet et au compilateur, puis l'exécution du code dans l'environnement pour intercepter et résoudre les erreurs dynamiques et d'exécution.
 
 ### <a name="configuring-a-build"></a>Configuration d'une build
- Il existe deux types de base de configuration de build : **Déboguer** et **version**. La première configuration produit un fichier exécutable plus volumineux et moins rapide. S'il ne doit jamais être publié, il rend l'expérience de débogage à l'exécution plus riche et interactive. La seconde configuration génère un fichier exécutable plus rapide et optimisé qu'il est possible de publier (tout du moins du point de vue du compilateur).
+ Il existe deux types de base de configurations de build : **Debug** et **Release**. La première configuration produit un fichier exécutable plus volumineux et moins rapide. S'il ne doit jamais être publié, il rend l'expérience de débogage à l'exécution plus riche et interactive. La seconde configuration génère un fichier exécutable plus rapide et optimisé qu'il est possible de publier (tout du moins du point de vue du compilateur).
 
  La configuration de build par défaut est **Debug**.
 

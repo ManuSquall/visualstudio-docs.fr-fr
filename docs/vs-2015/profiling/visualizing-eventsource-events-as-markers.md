@@ -1,25 +1,20 @@
 ---
 title: Visualisation des événements EventSource comme marqueurs | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 3a10022a-5c37-48b1-a833-dd35902176b6
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c39f137299c1f229de8c3c6dc8d7329cba6033cb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b638bb1e300fd03d358c338c10dec4844f4e4adc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742555"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801490"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>Visualisation des événements EventSource comme marqueurs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +26,9 @@ Le visualiseur concurrentiel peut afficher des événements EventSource comme ma
   
 ### <a name="marker-type"></a>Type de marqueur  
   
-1.  Les événements ayant l’[Opcode](http://msdn.microsoft.com/en-us/d97953df-669b-4c55-b1a8-925022b339b7) win:Start ou win:Stop sont traités en tant que début ou fin d’un intervalle, respectivement.  Les intervalles imbriqués ou se chevauchant ne peuvent pas être affichés. Les paires d’événements qui commencent sur un thread et se terminent sur un autre ne peuvent pas être affichées.  
+1.  Les événements ayant l’[Opcode](http://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win:Start ou win:Stop sont traités en tant que début ou fin d’un intervalle, respectivement.  Les intervalles imbriqués ou se chevauchant ne peuvent pas être affichés. Les paires d’événements qui commencent sur un thread et se terminent sur un autre ne peuvent pas être affichées.  
   
-2.  Un événement dont l’Opcode n’est ni win:Start ni win:Stop est traité en tant qu’indicateur de marqueur, sauf si son champ [Level](http://msdn.microsoft.com/en-us/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) a pour valeur minimale win:Verbose.  
+2.  Un événement dont l’Opcode n’est ni win:Start ni win:Stop est traité en tant qu’indicateur de marqueur, sauf si son champ [Level](http://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) a pour valeur minimale win:Verbose.  
   
 3.  Dans tous les autres cas, l’événement est traité en tant que message.  
   
@@ -103,6 +98,3 @@ Le visualiseur concurrentiel peut afficher des événements EventSource comme ma
   
 ## <a name="see-also"></a>Voir aussi  
  [Marqueurs du visualiseur concurrentiel](../profiling/concurrency-visualizer-markers.md)
-
-
-

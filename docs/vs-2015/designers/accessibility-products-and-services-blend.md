@@ -1,25 +1,20 @@
 ---
 title: Services et produits d’accessibilité (Blend) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: ba8557f6-231a-4d8b-80dd-80397e87a17f
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 394940ae59ceb87cf2bc71d71584fe0bf39eb0b0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: eca75f325557ee118cf4ab54287978dc63420ff7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197819"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793479"
 ---
 # <a name="accessibility-products-and-services-blend"></a>Services et produits d’accessibilité (Blend)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,11 +56,11 @@ Microsoft s’engage à faciliter l’utilisation de ses produits et services. L
   
  Princeton, NJ 08540  
   
- Téléphone depuis les États-Unis : (800) 221-4792  
+ Téléphone depuis les États-Unis : (800) 221-4792  
   
- Téléphone hors des États-Unis et du Canada : (609) 452-0606  
+ Téléphone hors des États-Unis et du Canada : (609) 452-0606  
   
- Télécopie : (609) 987-8116  
+ Télécopie : (609) 987-8116  
   
  [Site Learning Ally](http://go.microsoft.com/fwlink/?LinkId=111110)  
   
@@ -82,6 +77,3 @@ Microsoft s’engage à faciliter l’utilisation de ses produits et services. L
   
 ## <a name="for-more-information"></a>Pour plus d'informations  
  Pour plus d’informations sur la façon dont les technologies d’accessibilité pour ordinateurs contribuent à améliorer la vie des personnes handicapées, consultez le [site Microsoft consacré à l’accessibilité](http://go.microsoft.com/fwlink/?LinkID=75069).
-
-
-

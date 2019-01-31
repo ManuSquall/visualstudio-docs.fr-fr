@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: abab6d34-c3c2-45c1-a8b6-43c7d3131e7a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2f0ba5d49e0c8a02755bfc9d23d486dcf7f2943
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: b19bba65ebfb8ecec778f33211cfb127acc612bc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154348"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55008684"
 ---
 # <a name="clickonce-security-and-deployment"></a>Sécurité et déploiement ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] est une technologie de déploiement qui vous permet de créer des applications Windows mise à jour automatique qui peuvent être installées et exécutées avec une intervention minime de l’utilisateur. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Fournit la prise en charge complète pour la publication et la mise à jour des applications déployées avec la technologie ClickOnce si vous avez développé vos projets avec Visual Basic et Visual C#. Pour plus d’informations sur le déploiement d’applications Visual C++, consultez [déploiement ClickOnce pour les Applications Visual C++](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).  

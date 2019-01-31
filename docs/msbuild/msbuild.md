@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: e39f13f7-1e1d-4435-95ca-0c222bca071c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3ea25520428783aaedc12e1666475feb104b583
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f0d270afeb4c0c0404ae83bbaa51938d7c741965
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928800"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069861"
 ---
 # <a name="msbuild"></a>MSBuild
 Le [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] est une plateforme de génération d'applications. Ce moteur, également appelé MSBuild, fournit un schéma XML pour un fichier projet qui contrôle la manière dont la plateforme de génération traite et génère les logiciels. Visual Studio utilise MSBuild, mais il ne dépend pas de Visual Studio. En appelant *msbuild.exe* sur votre fichier projet ou solution, vous pouvez gérer et générer des produits dans des environnements où Visual Studio n’est pas installé.

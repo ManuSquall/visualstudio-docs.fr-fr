@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: f9e9f895-57bb-41e8-8bd1-cdaa738ec220
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ed7e91579cd9e07aeda8dd355fb8880f1a4fad9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 48e445e561849367609d7e9c7b4962d309f3fe0e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987062"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031615"
 ---
 # <a name="vsperfaspnetcmd"></a>VSPerfASPNetCmd
 L’outil en ligne de commande **VSPerfASPNetCmd.exe** vous permet de profiler des sites web ASP.NET sans devoir définir des variables d’environnement ou redémarrer votre ordinateur. Utilisez **VSPerfASPNetCmd.exe** à la place de [VSPerfCmd](../profiling/vsperfcmd.md) quand vous profilez des sites web ASP.NET et que vous n’avez pas besoin des fonctionnalités supplémentaires fournies par **VSPerfCmd**. Pour plus d’informations sur **VSPerfASPNetCmd**, consultez [Profilage de site web rapide avec VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md). **VSPerfASPNetCmd** est l’outil en ligne de commande à privilégier quand vous utilisez le profileur autonome pour profiler un site web ASP.NET.  

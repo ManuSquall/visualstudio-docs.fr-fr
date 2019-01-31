@@ -1,14 +1,9 @@
 ---
 title: Vue Informations relatives à la fonction | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.functiondetails
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 8806954f-cf28-48d5-81b2-d722ceaf7d27
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e6f2246cfe9eb2ae9ae6641ca316db440f153f92
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 107730fbb2dd78ddc9de8eaddc006bf01562af16
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799585"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784468"
 ---
 # <a name="function-details-view"></a>Vue Informations relatives à la fonction
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -119,6 +114,3 @@ La fenêtre **Vue Informations relatives à la fonction** affiche les informatio
 |-|-|  
 |**Conflits inclusifs (Conflits)**|-   Pour une **Fonction appelante**, nombre d’événements de conflits de ressources qui se sont produits dans les instances de la fonction sélectionnée appelées par la fonction. Ce nombre inclut les événements de conflits dans les fonctions appelées par la fonction sélectionnée.<br />-   Pour le **Corps de la fonction**, nombre total d’événements de conflits qui se sont produits quand la fonction exécutait son propre code. Cela exclut les conflits se produisant dans les fonctions appelées par la fonction sélectionnée.<br />-   Pour une fonction appelée, nombre d’événements de conflits qui se sont produits dans les instances de la fonction appelées par la fonction sélectionnée. Ce nombre inclut les événements de conflits qui se sont produits dans les fonctions appelées par la fonction.|  
 |**Temps bloqué inclusif (Temps bloqué)**|-   Pour une fonction appelante, temps consacré aux événements de conflits de ressources pour les instances de la fonction sélectionnée appelées par la fonction. Ce temps inclut le temps bloqué dans les fonctions appelées par la fonction sélectionnée.<br />-   Pour le **Corps de la fonction**, temps total consacré aux événements de conflits qui se sont produits quand la fonction exécutait son propre code. Cela exclut les conflits se produisant dans les fonctions appelées par la fonction sélectionnée.<br />-   Pour une fonction appelée, temps consacré aux événements de conflits de ressources pour les instances de la fonction appelées par la fonction sélectionnée. Ce temps inclut le temps bloqué dans les fonctions appelées par la fonction.|
-
-
-

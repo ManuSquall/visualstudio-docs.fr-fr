@@ -1,14 +1,9 @@
 ---
 title: Propriétés communes des projets MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +18,13 @@ ms.assetid: 9857505d-ae15-42f1-936d-6cd7fb9dd276
 caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 30371d20e240e5679664a687c5ca098519cac9c0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3f5c7c2f587f4c2fb44ab56223dafa2f988c6103
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300051"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758468"
 ---
 # <a name="common-msbuild-project-properties"></a>Propriétés communes des projets MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +67,7 @@ Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui s
 |DisableFastUpToDateCheck|Valeur booléenne qui s'applique uniquement à [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Le gestionnaire de génération [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utilise un processus appelé FastUpToDateCheck pour déterminer si un projet doit être régénéré pour être à jour. Il est plus rapide d'utiliser ce processus que [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Le fait d’affecter à la propriété DisableFastUpToDateCheck la valeur `true` vous permet d’ignorer le gestionnaire de build [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et de le forcer à utiliser [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pour déterminer si le projet est à jour.|  
 |DocumentationFile|Nom du fichier généré en tant que fichier de documentation XML. Ce nom inclut uniquement le nom du fichier et ne comporte aucune information de chemin d'accès.|  
 |ErrorReport|Indique comment la tâche du compilateur doit signaler les erreurs internes du compilateur. Les valeurs valides sont "prompt", "send" et "none". Cette propriété est équivalente au commutateur `/errorreport` du compilateur.|  
-|ExcludeDeploymentUrl|La [tâche GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md) ajoute une balise deploymentProvider au manifeste de déploiement si le fichier projet contient l’un des éléments suivants :<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> En utilisant ExcludeDeploymentUrl, toutefois, vous pouvez empêcher l’étiquette deploymentProvider d’être ajoutée au manifeste de déploiement même si l’une des URL ci-dessus est spécifiée. Pour cela, ajoutez la propriété suivante à votre fichier projet :<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` **Remarque :** ExcludeDeploymentUrl n’est pas exposé dans l’IDE de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ; pour le définir, vous devez modifier manuellement le fichier projet. La définition de cette propriété n'affecte pas la publication dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Autrement dit, la balise deploymentProvider est encore ajoutée à l'URL spécifiée par PublishUrl.|  
+|ExcludeDeploymentUrl|La [tâche GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md) ajoute une balise deploymentProvider au manifeste de déploiement si le fichier projet contient l’un des éléments suivants :<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> En utilisant ExcludeDeploymentUrl, toutefois, vous pouvez empêcher l’étiquette deploymentProvider d’être ajoutée au manifeste de déploiement même si l’une des URL ci-dessus est spécifiée. Pour cela, ajoutez la propriété suivante à votre fichier projet :<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` **Remarque :**  ExcludeDeploymentUrl n'est pas exposé dans l'IDE de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et peut être défini uniquement en modifiant manuellement le fichier projet. La définition de cette propriété n'affecte pas la publication dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Autrement dit, la balise deploymentProvider est encore ajoutée à l'URL spécifiée par PublishUrl.|  
 |FileAlignment|Spécifie, en octets, où les sections du fichier de sortie doivent être alignées. Les valeurs valides sont 512, 1024, 2048, 4096, 8192. Cette propriété est équivalente au commutateur `/filealignment` du compilateur.|  
 |FrameworkPathOverride|Spécifie l'emplacement de mscorlib.dll et de microsoft.visualbasic.dll. Ce paramètre est équivalent au commutateur `/sdkpath` du compilateur vbc.exe.|  
 |GenerateDocumentation|Paramètre booléen qui indique si la documentation est générée par la procédure. Si sa valeur est `true`, les informations de documentation sont générées et placées dans un fichier .xml avec le nom de la bibliothèque ou du fichier exécutable créé par la tâche de génération.|  
@@ -136,6 +131,3 @@ Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui s
   
 ## <a name="see-also"></a>Voir aussi  
  [Éléments communs des projets MSBuild](../msbuild/common-msbuild-project-items.md)
-
-
-

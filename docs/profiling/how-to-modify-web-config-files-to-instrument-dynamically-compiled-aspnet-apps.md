@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: a92e5692-2183-4ae3-9431-b067c6a7aab4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 3bec4b99998e2e3c581dd15e0311e23e93779c17
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5018216157334636ee7a6e8e057efae13b0396b4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988538"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010127"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Procédure : Modifier des fichiers Web.Config pour instrumenter et profiler des applications web ASP.NET compilées dynamiquement
 Vous pouvez utiliser la méthode d’instrumentation des outils de profilage de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour collecter des données de minutage détaillées, des données d’allocation de mémoire .NET et des données de durée de vie des objets .NET à partir d’applications web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilées dynamiquement.  

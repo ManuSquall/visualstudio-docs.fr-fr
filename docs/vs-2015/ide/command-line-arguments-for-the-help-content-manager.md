@@ -1,25 +1,20 @@
 ---
 title: Arguments de ligne de commande pour Help Content Manager | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-help-viewer
+ms.topic: conceptual
 ms.assetid: 3aa9890a-1147-42ba-adea-17935d184038
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5ac0d333f8103f6904bce517397a73cc010b1d36
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ae1643b4a01c9bcab3878ec82b1808444cdc7712
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873407"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778628"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Arguments de ligne de commande pour Help Content Manager
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ Vous pouvez spécifier la façon de déployer et de gérer le contenu d’aide l
 HlpCtntmgr.exe /operation Value /catalogname CatalogName /locale Locale /sourceuri InstallationPoint  
 ```  
   
- Par exemple :  
+ Par exemple :  
   
 ```  
 hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale en-us /sourceuri d:\productDocumentation\HelpContentSetup.msha  
@@ -62,7 +57,7 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale en-us /sou
 |/skuId|Non|Spécifie la référence SKU du produit depuis la source d’installation, puis filtre les livres que le commutateur /SourceURI identifie.|  
 |/membership|Non|-   **Minimum** : installe un ensemble minimum de contenu d’aide sur la référence que vous spécifiez à l’aide du commutateur /skuId. Le mappage entre le SKU et l’ensemble de contenu est exposé dans l’API de service.<br />-   **Recommended** : installe un ensemble de livres recommandés pour la référence que vous spécifiez à l’aide de l’argument /skuId. La source d’installation est l’API de service ou le .MSHA.<br />-   **Full** : installe le jeu complet de livres pour la référence que vous spécifiez à l’aide de l’argument /skuId. La source d’installation est l’API de service ou le .MSHA.|  
 |/locationpath|Non|Spécifie le dossier par défaut du contenu d’aide locale. Vous devez utiliser ce commutateur uniquement pour installer ou déplacer le contenu. Si vous spécifiez ce commutateur, vous devez également spécifier le commutateur /silent.|  
-|/silent|Non|Installe ou supprime le contenu d’aide sans questionner l’utilisateur ou afficher d’élément d’interface utilisateur tel que l’icône dans la zone de notification d’état. La sortie est stockée dans un fichier dans le répertoire %Temp%. **Important :** Pour installer le contenu en mode silencieux, vous devez utiliser les fichiers signés numériquement .cab, pas les fichiers .mshc.|  
+|/silent|Non|Installe ou supprime le contenu d’aide sans questionner l’utilisateur ou afficher d’élément d’interface utilisateur tel que l’icône dans la zone de notification d’état. La sortie est stockée dans un fichier dans le répertoire %Temp%. **Important :**  Pour installer le contenu en mode silencieux, vous devez utiliser les fichiers signés numériquement .cab, pas les fichiers .mshc.|  
 |/launchingApp|Non|Définit l’application et le contexte de catalogue lorsque la visionneuse d’aide est lancée sans application parente. Les arguments pour ce commutateur sont *CompanyName*, *ProductName* et *VersionNumber* (par exemple, `/launchingApp Microsoft,VisualStudio,11.0`).<br /><br /> Cet argument est requis pour installer le contenu avec le paramètre /silent.”|  
 |/wait *secondes*|Non|Suspend les opérations d’installation, de désinstallation et d’actualisation. Si une opération est en cours pour le catalogue, le processus attend jusqu’au nombre donné de secondes pour continuer. Utilisez 0 pour une attente indéfinie.|  
 |/?|Non|Répertorie les commutateurs, ainsi que leur description, de l’outil en ligne de commande pour le gestionnaire de contenu d’aide.|  
@@ -96,6 +91,3 @@ UpdateAlreadyRunning = 1300 – (Signals that the update didn't run because anot
 ## <a name="see-also"></a>Voir aussi  
  [Guide de l’administrateur Help Viewer](../ide/help-viewer-administrator-guide.md)   
  [Substitutions Help Content Manager](../ide/help-content-manager-overrides.md)
-
-
-

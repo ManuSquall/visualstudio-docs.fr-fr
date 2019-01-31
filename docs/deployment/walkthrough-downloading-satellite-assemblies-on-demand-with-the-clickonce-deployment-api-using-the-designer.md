@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 82b85a47-b223-4221-a17c-38a52c3fb6e2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db13440155ca27c9a71e523cea4f0ef69b9eaacf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 25659368933dc2c841eb35f0f53014b42e455f7a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925808"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031053"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Procédure pas à pas : Télécharger des assemblys satellites à la demande avec l’API à l’aide du concepteur du déploiement ClickOnce
 Les applications Windows Forms peuvent être configurées pour plusieurs cultures à l’aide d’assemblys satellites. Un *assembly satellite* contient des ressources d’application pour une culture autre que la culture par défaut de l’application.  

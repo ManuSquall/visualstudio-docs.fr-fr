@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 350f6fc2-86b3-45f2-a31e-ece0e6bd4dca
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e82a92e0470d754093c419357f7eb4247c1aa65
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 06e969c3fca525835c39811db5ca09261586bde2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965247"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955516"
 ---
 # <a name="target-element-msbuild"></a>Élément Target (MSBuild)
 Contient un ensemble de tâches que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] doit exécuter séquentiellement.  

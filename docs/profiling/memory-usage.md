@@ -6,15 +6,15 @@ ms.date: 04/25/2017
 ms.topic: tutorial
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62bf07ba0f5f63daa369e88795824f53f9109ce6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 43c58825aab4d882ac6ca80b71b2c5a0aa542f76
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942292"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54994564"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Mesurer l’utilisation de la mémoire dans Visual Studio
 Recherchez les fuites de mémoire et les utilisations inefficaces de la mémoire durant le débogage avec l’outil de diagnostic **Utilisation de la mémoire** intégré au débogueur. L’outil Utilisation de la mémoire vous permet de prendre un ou plusieurs *instantanés* du tas de mémoire managée et native afin de mieux comprendre l’impact de l’utilisation de la mémoire des types d’objets. Vous pouvez collecter des instantanés d’applications .NET, natives ou en mode mixte (.NET et native).  

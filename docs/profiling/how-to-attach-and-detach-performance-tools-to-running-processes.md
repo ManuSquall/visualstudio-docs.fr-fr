@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 56a99c39-e7f6-4f48-ae56-04ab8e022bf7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 193a7bfeeae82147a64643871da70a72400e5054
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f0d735127be1b8a412395be8d19321deb8d589be
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859683"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992488"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Procédure : Attacher les outils d’analyse des performances à des processus en cours d’exécution ou les en détacher
 Le profileur peut être utilisé pour attacher ou détacher des outils du processus en cours afin de faciliter l’échantillonnage et la collecte des données de performances. Vous pouvez utiliser cette méthode pour profiler un processus lorsque vous voulez éviter de collecter des données sur le temps de chargement de l’application ou pour surveiller les performances d’un processus après qu’il a atteint un certain état.  

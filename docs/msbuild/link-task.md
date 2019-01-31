@@ -27,15 +27,15 @@ helpviewer_keywords:
 ms.assetid: 0a61f168-3113-4fa7-83a3-d9142e2a33f8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d21e6cc4c3701716c72ad3e62dc75e2df383da0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 789a830b281d7905d8b067c1d69665cc6de3c610
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857038"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001785"
 ---
 # <a name="link-task"></a>Lier la tâche
 Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil de l’éditeur de liens lie des bibliothèques et des fichiers objets COFF (Common Object File Format) pour créer un fichier exécutable (*.exe*) ou une bibliothèque de liens dynamiques (DLL). Pour plus d’informations, consultez [Options de l’éditeur de liens](/cpp/build/reference/linker-options).  

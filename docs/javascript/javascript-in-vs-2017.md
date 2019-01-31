@@ -16,13 +16,13 @@ ms.assetid: 74dca14c-5071-416f-a92b-d09f95e3dfb8
 caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
-manager: douge
-ms.openlocfilehash: 1045c515870d2574bfb86d12396c5572b01ddda4
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+manager: jillfra
+ms.openlocfilehash: ee22803c7a479c6d22821a9a6b267cd72938792e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398389"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013000"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript dans Visual Studio 2017
 
@@ -206,7 +206,8 @@ Vous pouvez utiliser le fichier `tsconfig.json` suivant pour vérifier, d’une 
   }
 }
 ```
-# <a name="troubleshooting-the-javascript-language-service-has-been-disabled-for-the-following-projects"></a>Résolution des problèmes : le service de langage JavaScript a été désactivé pour le ou les projets suivants
+
+## <a name="troubleshooting-the-javascript-language-service-has-been-disabled-for-the-following-projects"></a>Résolution des problèmes : le service de langage JavaScript a été désactivé pour le ou les projets suivants
 Quand vous ouvrez un projet JavaScript qui a une très grande quantité de contenu, vous pouvez obtenir le message suivant : « Le service de langage JavaScript a été désactivé pour le ou les projets suivants ». La raison la plus courante de la présence d’une très grande quantité de code source JavaScript est l’inclusion de bibliothèques avec du code source dépassant la limite de 20 Mo pour un projet.
 
 Un moyen simple pour optimiser votre projet consiste à ajouter un fichier `tsconfig.json` à la racine du projet pour indiquer au service de langage les fichiers qui peuvent être ignorés sans problème. Utilisez l’exemple ci-dessous pour exclure les répertoires les plus courants où sont stockées les bibliothèques :
@@ -231,7 +232,7 @@ Un moyen simple pour optimiser votre projet consiste à ajouter un fichier `tsco
 }
 ```
 
-Ajoutez d’autres répertoires selon vos besoins. D’autres exemples incluent les répertoires « vendor » ou « wwwroot/lib ». 
+Ajoutez d’autres répertoires selon vos besoins. D’autres exemples incluent les répertoires « vendor » ou « wwwroot/lib ».
 
 > [!NOTE]
 > La propriété du compilateur `disableSizeLimit` peut également être utilisée pour désactiver la vérification de la limite de 20 Mo. Prenez des précautions particulières lors de l’utilisation de cette propriété, car la désactivation de la limite peut bloquer le service de langage.
