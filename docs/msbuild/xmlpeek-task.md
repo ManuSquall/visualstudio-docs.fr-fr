@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 19196031-a3bc-41b5-9c4a-f2572630e179
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 214320724d7bcda2c126d577deabda20a61c6104
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6a23743bd2f7cc674e44ee3063553ed023b2d806
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865911"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042463"
 ---
 # <a name="xmlpeek-task"></a>XmlPeek (tâche)
 Retourne des valeurs telles que spécifiées par la requête XPath depuis un fichier XML.  

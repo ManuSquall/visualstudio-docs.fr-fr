@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: de3997e9-1595-4263-a886-95530b56a319
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb9f6056b83c7701e4d0e5e6eed72bbba1da778d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dd95e6fc946d9e979a808177123a75338b7587d4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895790"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981335"
 ---
 # <a name="otherwise-element-msbuild"></a>Élément Otherwise (MSBuild)
 Spécifie le bloc de code à exécuter si et seulement si les conditions de tous les éléments `When` correspondent à la valeur `false`.  
