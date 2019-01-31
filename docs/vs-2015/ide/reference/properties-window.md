@@ -1,14 +1,9 @@
 ---
 title: Fenêtre Propriétés | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - properties [Visual Studio], Properties Window
 - handler functions, Properties window
@@ -25,13 +20,13 @@ ms.assetid: e6e0fa4f-75c4-4a52-af15-281cd61876ca
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a3faa4b9e0bf7d0ad59a33ed93f895a83e6ff8dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bd437be1dd61e05259bc13501d7b9b9aaa06e285
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282371"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753530"
 ---
 # <a name="properties-window"></a>Propriétés (fenêtre)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,7 +49,7 @@ Utilisez cette fenêtre pour afficher et modifier les événements et propriét�
  Pages de propriétés  
  Affiche la boîte de dialogue **Pages de propriétés** ou le **Concepteur de projets** pour l’élément sélectionné. La boîte de dialogue Pages de propriétés affiche un sous-ensemble, un ensemble équivalent ou un sur-ensemble des propriétés disponibles dans la fenêtre **Propriétés**. Utilisez ce bouton pour afficher et modifier des propriétés relatives à la configuration active de votre projet.  
   
- Properties  
+ Propriétés  
  Affiche les propriétés définies pour un objet. De nombreux objets possèdent également des événements qui peuvent être affichés à l’aide de la fenêtre **Propriétés**.  
   
  Trier par source de propriété  
@@ -93,6 +88,3 @@ Utilisez cette fenêtre pour afficher et modifier les événements et propriét�
 ## <a name="see-also"></a>Voir aussi  
  [Informations de référence sur les propriétés de projet](../../ide/reference/project-properties-reference.md)   
  [Personnalisation des dispositions de fenêtres](../../ide/customizing-window-layouts-in-visual-studio.md)
-
-
-

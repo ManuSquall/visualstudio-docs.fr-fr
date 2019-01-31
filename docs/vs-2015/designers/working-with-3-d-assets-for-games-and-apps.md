@@ -1,27 +1,22 @@
 ---
 title: Utilisation de ressources 3D pour les jeux et les applications | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics
 ms.assetid: 910d673b-c884-4eeb-9928-0e89f3d38cb6
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bdf19958ec7b3cfe72ee00ea84e0e23724a51458
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 90bf88beafee6f263695b3614cf6385419b33efe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265230"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797593"
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>Utilisation de ressources 3D pour les jeux et les applications
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,6 +57,3 @@ Ce document décrit les outils [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que 
 |[Utilisation des modèles 3D](../designers/working-with-3-d-models.md)|Décrit comment utiliser [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour traiter des modèles 3D.|  
 |[Utilisation des nuanceurs](../designers/working-with-shaders.md)|Décrit comment utiliser le concepteur Shader [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour créer et modifier des effets de nuanceur personnalisés.|  
 |[Utilisation de ressources 3D dans vos jeux et applications](../designers/using-3-d-assets-in-your-game-or-app.md)|Décrit comment utiliser les ressources que vous avez créées à l’aide de l’éditeur d’images, l’éditeur de modèle ou le concepteur Shader dans votre jeu ou application.|
-
-
-
