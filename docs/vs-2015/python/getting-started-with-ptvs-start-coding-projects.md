@@ -1,27 +1,22 @@
 ---
-title: 'Bien démarrer avec PTVS : commencer à développer (projets) | Microsoft Docs'
-ms.custom: ''
+title: 'Bien démarrer avec PTVS : Commencez à coder (projets) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-python
+ms.topic: conceptual
 ms.assetid: 14b85e70-b9a8-415c-a307-8c8c316a0495
 caps.latest.revision: 7
 author: kraigb
 ms.author: kraigb
-manager: ghogen
-ms.openlocfilehash: a8e0bd339d8e7b6d145cc9a916dafc2be9fc975e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 28622f290d82f86bf3d18cc4f40cfcfc8e953dad
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845782"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781067"
 ---
-# <a name="getting-started-with-ptvs-start-coding-projects"></a>Prise en main de PTVS : commencer à coder (projets)
+# <a name="getting-started-with-ptvs-start-coding-projects"></a>Bien démarrer avec PTVS : Commencez à coder (projets)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les outils Python pour Visual Studio (PTVS) vous permettent de gérer votre code. 
@@ -46,4 +41,3 @@ Les outils Python pour Visual Studio (PTVS) vous permettent de gérer votre code
  
 ## <a name="see-also"></a>Voir aussi 
  [Documentation Wiki](https://github.com/Microsoft/PTVS/wiki/Projects) [prise en main et vidéos de présentation approfondie](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)
-

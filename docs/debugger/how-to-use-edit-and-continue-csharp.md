@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 40e136d8-a08c-43bd-b313-fb821c55eb3c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b694f2d3603c9b768a9a4ddbf7b2c66cf5c61b21
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ca4d8efda78974be00973ef3f6c5adcc77c2465d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861966"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965274"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>Procédure : Utiliser Modifier & Continuer (C#)
 Avec Modifier & Continuer, vous pouvez apporter et appliquer des modifications à votre code en mode arrêt pendant le débogage, sans avoir à arrêter et redémarrer la session de débogage.  

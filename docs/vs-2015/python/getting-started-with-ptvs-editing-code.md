@@ -1,27 +1,22 @@
 ---
-title: 'Bien démarrer avec PTVS : modification du Code | Microsoft Docs'
-ms.custom: ''
+title: 'Bien démarrer avec PTVS : Modification du Code | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-python
+ms.topic: conceptual
 ms.assetid: b412c87c-2f09-4e25-9cc8-ab54f4c44412
 caps.latest.revision: 5
 author: kraigb
 ms.author: kraigb
-manager: ghogen
-ms.openlocfilehash: ef0a84523a2d828e696fb50f641f392ab7bbd39f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2e883970b4b265b1864d53ef6e1f347160e5aeb9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265783"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758398"
 ---
-# <a name="getting-started-with-ptvs-editing-code"></a>Prise en main des outils Python pour Visual Studio : édition du code
+# <a name="getting-started-with-ptvs-editing-code"></a>Bien démarrer avec PTVS : Modification du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les outils Python pour Visual Studio offrent une expérience productive de l’éditeur Visual Studio pour Python.  
@@ -74,4 +69,3 @@ def main ():
 ## <a name="see-also"></a>Voir aussi  
  [Documentation du wiki](https://github.com/Microsoft/PTVS/wiki/Editor-Features)   
  [Vidéos sur le démarrage et l’exploration de PTVS](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)
-

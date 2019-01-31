@@ -1,14 +1,9 @@
 ---
 title: Rechercher/Commande, zone | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.findcommandbox
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: c81736dd-7a26-4e11-95c8-c2a2e56d7a41
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0e818df222e9b7343facc989c1b61be30c098b64
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b8bddc27eb4a59b65796c7837ae4561e5d56a5d5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172566"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801223"
 ---
 # <a name="findcommand-box"></a>zone Rechercher/Commande
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ zone Rechercher/Commande
  Par défaut, quand vous spécifiez du texte dans la zone **Rechercher/Commande**, puis que vous choisissez la touche Entrée, Visual Studio recherche dans la fenêtre de document ou Outil actuelle en utilisant les options spécifiées dans la boîte de dialogue **Rechercher dans les fichiers**. Pour plus d’informations, consultez [Finding and Replacing Text](../ide/finding-and-replacing-text.md).  
   
 ## <a name="entering-commands"></a>Entrée de commandes  
- Si vous voulez utiliser la zone **Rechercher/Commande** pour émettre une commande ou un alias [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] unique plutôt que de rechercher du texte, entrez la commande [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] précédée du signe > (supérieur à). Exemple :  
+ Si vous voulez utiliser la zone **Rechercher/Commande** pour émettre une commande ou un alias [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] unique plutôt que de rechercher du texte, entrez la commande [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] précédée du signe > (supérieur à). Par exemple :  
   
 ```  
 >File.NewFile c:\temp\MyFile /t:"General\Text File"  
@@ -61,6 +56,3 @@ zone Rechercher/Commande
 ## <a name="see-also"></a>Voir aussi  
  [Fenêtre Commande](../ide/reference/command-window.md)   
  [Recherche et remplacement de texte](../ide/finding-and-replacing-text.md)
-
-
-

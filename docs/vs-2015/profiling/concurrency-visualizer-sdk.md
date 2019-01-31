@@ -1,34 +1,29 @@
 ---
 title: Kit SDK du visualiseur concurrentiel | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.sdk.about
 ms.assetid: 4b22cdf9-59b1-4c88-a6d8-1644a4a11e08
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d98a5383a330242110bef860b9dc19a2fb6bef87
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 40c9c3d2da03b70b75f5c2edd8c256e1e35ea0b4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754830"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769318"
 ---
 # <a name="concurrency-visualizer-sdk"></a>Kit SDK du visualiseur concurrentiel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez instrumenter votre code source à l’aide du kit SDK du visualiseur concurrentiel pour afficher des informations supplémentaires dans le visualiseur concurrentiel. Vous pouvez associer les données supplémentaires à des phases et à des événements de votre code. Ces visualisations supplémentaires sont appelées *marqueurs*.  Pour obtenir une introduction pas à pas, consultez [Introducing the Concurrency Visualizer SDK](http://go.microsoft.com/fwlink/?LinkId=235405).  
   
-## <a name="properties"></a>Properties  
+## <a name="properties"></a>Propriétés  
  Les indicateurs, les intervalles et les messages ont deux propriétés : la catégorie et l’importance. Dans la boîte de dialogue [Paramètres avancés](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md), vous pouvez utiliser ces propriétés pour filtrer l’affichage des marqueurs. Ces propriétés ont également un impact sur la représentation visuelle des marqueurs. Par exemple, la taille des indicateurs est utilisée pour représenter l’importance. La couleur, quant à elle, est utilisée pour indiquer la catégorie.  
   
 ## <a name="basic-usage"></a>Utilisation de base  
@@ -135,6 +130,3 @@ Vous pouvez instrumenter votre code source à l’aide du kit SDK du visualiseur
 |[Informations de référence sur la bibliothèque C](../profiling/c-library-reference.md)|Décrit l’API du visualiseur concurrentiel pour le langage C.|  
 |<xref:Microsoft.ConcurrencyVisualizer.Instrumentation>|Décrit l’API du visualiseur concurrentiel pour le code managé.|  
 |[Visualiseur concurrentiel](../profiling/concurrency-visualizer.md)|Informations de référence sur les vues et les rapports des fichiers de données de profilage qui sont générés à l’aide de la méthode d’accès concurrentiel et qui comprennent des données d’exécution des threads.|
-
-
-

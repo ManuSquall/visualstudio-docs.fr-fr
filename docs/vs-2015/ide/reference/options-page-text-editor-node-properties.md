@@ -1,14 +1,9 @@
 ---
 title: Page Options, Éditeur de texte, propriétés de nœud | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Tools Options settings, Text Editor node properties
 - automation [Visual Studio], controlling Tools Options
@@ -16,13 +11,13 @@ ms.assetid: 19438302-0677-4f4d-9720-5667e6a22ab2
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 88ba9765e292d4f07a7e1392a64270ddf27e8f60
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e117eac0a0a5211dcc97ddf14bf6727f62260ff8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241902"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767990"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Page Options, Éditeur de texte, propriétés de nœud
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -63,7 +58,7 @@ Ce document décrit certaines pages (ou collections de propriétés) associées 
 |WordWrap|Get/Set (booléen)|Détermine si l'affichage insère un retour de ligne pour les lignes longues à la limite des mots. Une valeur `true` provoque l'affectation à l'élément de propriété `VirtualSpace` (dans cette liste) d'une valeur `false`.|  
 |WordWrapGlyphs|Get/Set (booléen)|Affiche un glyphe à la fin d'une ligne ; cela indique qu'elle se poursuit à la ligne suivante.|  
 |EnableLeftClickForURLs|Get/Set (booléen)|Détermine si l'éditeur souligne les URL et permet d'accéder à l'URL en cliquant une fois sur le bouton gauche dans le navigateur Web inscrit du système.|  
-|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|Détermine le style de mise en retrait : Par défaut, Smart ou aucun.|  
+|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|Détermine le style de mise en retrait : par défaut, intelligent ou aucun.|  
 |TabSize|Get/Set (Long)|Représente le nombre d'espaces auquel équivaut une tabulation. Échec s'il ne s'agit pas d'un entier compris entre 1 et 60.|  
 |InsertTabs|Get/Set (booléen)|En cas de valeur `True`, des caractères de tabulation sont utilisés pour le retrait.|  
 |IndentSize|Get/Set (Long)|Représente le nombre d'espaces qui équivaut à un niveau de retrait. Échec s'il ne s'agit pas d'une valeur entière comprise entre 1 et 60.|  
@@ -76,6 +71,3 @@ Ce document décrit certaines pages (ou collections de propriétés) associées 
  [Détermination des noms d’éléments de propriété dans les pages Options](http://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [Page Options, Propriétés du nœud Environnement](../../ide/reference/options-page-environment-node-properties.md)   
  [Page Options, Propriétés du nœud Polices et couleurs](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
-
-
-

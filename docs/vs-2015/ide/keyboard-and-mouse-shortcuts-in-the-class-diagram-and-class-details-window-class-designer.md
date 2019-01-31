@@ -1,14 +1,9 @@
 ---
 title: Raccourcis clavier et souris dans le diagramme de classes et dans la fenêtre Détails de classe (Concepteur de classes) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdetails.window
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: c12d8dac-9902-4fde-b721-2a8116da53b7
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f607046609208804f349eb06e927ab8e72e28992
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b3ae815bb0f9a11b19c711a3a860f8734701cc39
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247908"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775825"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Raccourcis clavier et souris dans le diagramme de classes et dans la fenêtre Détails de classe(Concepteur de classes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,6 +111,3 @@ Vous pouvez utiliser le clavier en plus de la souris pour naviguer dans le Conce
   
 ## <a name="see-also"></a>Voir aussi  
  [Création et configuration de membres de type (Concepteur de classes)](../ide/creating-and-configuring-type-members-class-designer.md)
-
-
-

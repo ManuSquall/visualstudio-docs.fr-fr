@@ -1,14 +1,9 @@
 ---
-title: 'Procédure pas à pas : création d’un environnement de build sur plusieurs ordinateurs | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure pas à pas : Environnement de génération de création d’un Multiple-Computer | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, building on multiple computers
 - build environment, MSBuild
@@ -16,15 +11,15 @@ ms.assetid: ae5391b1-3eec-42f5-beb3-f28630615a9e
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1422a126f88e72d0eca662aaa5348a6af500b8bb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4dff468ff42173e61c2f7006802c96a11120bd30
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820692"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769072"
 ---
-# <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Procédure pas à pas : création d'un environnement de build sur plusieurs ordinateurs
+# <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Procédure pas à pas : Création d’un environnement de Build sur plusieurs ordinateurs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez créer un environnement de build dans votre organisation en installant Visual Studio sur un ordinateur hôte, puis en copiant plusieurs fichiers et paramètres sur un autre ordinateur afin qu’il puisse participer aux builds. Vous n’avez pas à installer Visual Studio sur un autre ordinateur.  
@@ -431,6 +426,3 @@ Vous pouvez créer un environnement de build dans votre organisation en installa
 ## <a name="see-also"></a>Voir aussi  
  [Préparation d’un ordinateur de test pour lancer un exécutable de débogage](http://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)   
  [Informations de référence sur la ligne de commande](../msbuild/msbuild-command-line-reference.md)
-
-
-

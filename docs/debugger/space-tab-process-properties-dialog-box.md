@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: c4de1866-7447-48f7-aa88-28ad92c0b930
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9cc3489cd07576521356a40c9d4abd42507aee9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 31370b74405309a3cc67f425da4ce4710031fd70
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853253"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973902"
 ---
 # <a name="space-tab-process-properties-dialog-box"></a>Onglet Espace de la boîte de dialogue Propriétés du processus
 Utilisez le **espace** onglet pour examiner l’espace d’adressage d’un processus. Pour afficher le [boîte de dialogue Propriétés de processus](../debugger/process-properties-dialog-box.md), déplacez le focus à un [vue processus](../debugger/processes-view.md) fenêtre. Sélectionnez n’importe quel nœud de processus dans l’arborescence, puis choisissez **propriétés** à partir de la **vue** menu.  

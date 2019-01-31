@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 04b104d0-0bd3-4ccb-b164-1de92d234487
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44ee28c0e495b0b3868356d6e5a10890937f70a0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ee9d478aa328337d3a2b08c74fcbbf7166580962
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828353"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018343"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Sécurité d’accès du code pour les applications ClickOnce
 Les applications ClickOnce sont basées sur le .NET Framework et sont soumises à des contraintes de sécurité d’accès du code. Pour cette raison, il est important de comprendre les implications de la sécurité d’accès du code et d’écrire vos applications ClickOnce en conséquence.  
@@ -56,7 +56,7 @@ Les applications ClickOnce sont basées sur le .NET Framework et sont soumises �
   
  Pour définir des autorisations, commencez par choisir une zone de sécurité dans la liste **Zone** de la page **Sécurité** . Si vous comptez déployer votre application à partir de plusieurs zones, choisissez la zone avec le moins d'autorisations. Pour plus d'informations, voir [Procédure : Définir une zone de sécurité pour une application ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md).  
   
- Les propriétés qui peuvent être définies varient selon le jeu d'autorisations, mais tous les jeux d'autorisations ne possèdent pas des propriétés configurables. Pour plus d'informations sur la liste complète des autorisations que votre application peut demander, consultez <xref:System.Security.Permissions>. Pour plus d’informations sur la façon de définir des autorisations pour une zone personnalisée, consultez [Comment : définir des autorisations personnalisées pour une application ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)  
+ Les propriétés qui peuvent être définies varient selon le jeu d'autorisations, mais tous les jeux d'autorisations ne possèdent pas des propriétés configurables. Pour plus d'informations sur la liste complète des autorisations que votre application peut demander, consultez <xref:System.Security.Permissions>. Pour plus d’informations sur la façon de définir des autorisations pour une zone personnalisée, consultez [Comment : Définir des autorisations personnalisées pour une application ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
   
 ## <a name="debug-an-application-that-has-restricted-permissions"></a>Déboguer une application qui a des autorisations restreintes  
  En tant que développeur, vous utilisez très probablement votre ordinateur de développement avec les autorisations Confiance totale. Par conséquent, vous ne voyez pas apparaître les mêmes exceptions de sécurité lors du débogage de l'application que celles pouvant être rencontrées par les utilisateurs qui exécutent l'application avec des autorisations restreintes.  

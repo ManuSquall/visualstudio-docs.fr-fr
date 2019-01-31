@@ -1,26 +1,21 @@
 ---
 title: Exécuter des tests unitaires avec l’Explorateur de tests | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 f1_keywords:
 - vs.unittesting.testexplorer.overview
 ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f4c5a8a4d090a7603f83f6fb3c3d9deb0c67d5f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8c8894239e1e1dd3979b9bb7c61e5aa1f294fe2b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846835"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805106"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Exécuter des tests unitaires avec l'Explorateur de tests
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,8 +111,8 @@ Utilisez l'Explorateur de tests pour exécuter des tests unitaires à partir de 
   
   ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
-###  <a name="BKMK_View_the_source_code_of_a_test_method"></a> Afficher le code source d’une méthode de test  
- Pour afficher le code source d'une méthode de test dans l'éditeur Visual Studio, sélectionnez le test, puis choisissez **Ouvrir un test** dans le menu contextuel (clavier : F12).  
+###  <a name="BKMK_View_the_source_code_of_a_test_method"></a> Afficher le code source d'une méthode de test  
+ Pour afficher le code source d’une méthode de test dans l’éditeur Visual Studio, sélectionnez le test, puis choisissez **Ouvrir le test** dans le menu contextuel (clavier : F12).  
   
  ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
@@ -135,8 +130,8 @@ Utilisez l'Explorateur de tests pour exécuter des tests unitaires à partir de 
   
 |Regrouper|Description|  
 |-----------|-----------------|  
-|**Durée**|Regroupe les tests selon la durée d'exécution : **Rapide**, **Moyenne**et **Lente**.|  
-|**Résultat**|Regroupe les tests selon les résultats de l'exécution : **Échecs de tests**, **Tests ignorés**, **Tests réussis**.|  
+|**Durée**|Regroupe les tests selon leur durée d’exécution : **Rapide**, **Moyen** et **Lent**.|  
+|**Résultat**|Regroupe les tests selon les résultats de l’exécution : **Tests ayant échoué**, **Tests ignorés** et **Tests réussis**.|  
 |**Caractéristiques**|Regroupe les tests selon les paires catégorie/valeur que vous définissez. La syntaxe permettant de spécifier les catégories et les valeurs des caractéristiques est définie par l'infrastructure de tests unitaires.|  
 |**Projet**|Regroupe les tests selon le nom des projets.|  
   
@@ -147,7 +142,7 @@ Utilisez l'Explorateur de tests pour exécuter des tests unitaires à partir de 
   
  **Caractéristiques dans le framework de tests unitaires Microsoft pour le code managé**  
   
- Dans l'infrastructure de tests unitaires Microsoft pour les applications managées, vous définissez une paire nom/valeur de caractéristique dans un attribut  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> . L'infrastructure de tests contient également les caractéristiques prédéfinies suivantes :   
+ Dans l'infrastructure de tests unitaires Microsoft pour les applications managées, vous définissez une paire nom/valeur de caractéristique dans un attribut  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> . Le framework de tests contient également les caractéristiques prédéfinies suivantes :  
   
 |Caractéristique|Description|  
 |-----------|-----------------|  
@@ -216,7 +211,7 @@ TEST_METHOD(Method1)
 |**Chemin d'accès au fichier**|Recherche le nom de fichier qualifié complet des fichiers sources de test pour les correspondances.|  
 |**Nom qualifié complet**|Recherche le nom de fichier qualifié complet des espaces de noms, des classes et des méthodes de test pour les correspondances.|  
 |**Sortie**|Recherche les messages d'erreur définis par l'utilisateur qui sont écrits dans la sortie standard (stdout) ou une erreur standard (stderr). La syntaxe permettant de spécifier les messages de sortie est définie par l'infrastructure de tests unitaires.|  
-|**Résultat**|Recherche les noms de catégorie de l'Explorateur de tests pour les correspondances : **Échecs de tests**, **Tests ignorés**, **Tests réussis**.|  
+|**Résultat**|Recherche des correspondances avec les noms de catégories de l’Explorateur de tests : **Tests ayant échoué**, **Tests ignorés** et **Tests réussis**.|  
   
  Pour exclure un sous-ensemble des résultats d'un filtre, utilisez la syntaxe suivante :  
   
@@ -295,11 +290,8 @@ FullName:"MyClass" - FullName:"PerfTest"
 ##  <a name="BKMK_External_resources"></a> Ressources externes  
   
 ###  <a name="BKMK_Guidance"></a> Conseils  
- [Test de la livraison continue avec Visual Studio 2012 - Chapitre 2 : Tests unitaires : tester l’intérieur](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Test de livraison continue avec Visual Studio 2012 – chapitre 2 : Test unitaire Tester l’intérieur](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>Voir aussi  
  [Tests unitaires sur votre code](../test/unit-test-your-code.md)   
  [Exécuter un test unitaire comme processus 64 bits](../test/run-a-unit-test-as-a-64-bit-process.md)
-
-
-

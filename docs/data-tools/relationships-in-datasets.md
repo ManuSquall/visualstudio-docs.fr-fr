@@ -12,16 +12,16 @@ helpviewer_keywords:
 ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 38ed283a70716f0f282bdcdf60c18f0f38fc8bb2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8f349887512cdfb9a98d64b0880eda45ecd5c186
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822156"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970225"
 ---
 # <a name="create-relationships-between-datasets"></a>Créer des relations entre les datasets
 Jeux de données qui contiennent des données connexes tables utilisent <xref:System.Data.DataRelation> objets pour représenter une relation parent/enfant entre les tables et pour retourner des enregistrements connexes à partir de l’autre. Ajout de tables associées aux jeux de données à l’aide de la **Assistant de Configuration de Source de données**, ou le **Concepteur de Dataset**, crée et configure le <xref:System.Data.DataRelation> objet pour vous.

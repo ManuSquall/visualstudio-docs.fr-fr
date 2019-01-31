@@ -1,14 +1,9 @@
 ---
-title: Guide pratique pour nettoyer une génération | Microsoft Docs
-ms.custom: ''
+title: 'Procédure : Nettoyer une build | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - Exec task [MSBuild]
 - MSBuild, cleaning a build
@@ -18,15 +13,15 @@ ms.assetid: 999ba473-b0c4-45c7-930a-63ea7a510509
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6c7b9811785808204fdd776617eec9cdeeaad317
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: aa90a0d10b06559b3f4f46fd8dc0c5da4cef981e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229669"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780745"
 ---
-# <a name="how-to-clean-a-build"></a>Comment : nettoyer une génération
+# <a name="how-to-clean-a-build"></a>Procédure : Nettoyer une build
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -41,7 +36,7 @@ Quand vous nettoyez une build, tous les fichiers intermédiaires et de sortie so
   
      `<builtdir>BuiltApp</builtdir>`  
   
-2.  Utilisez la tâche [MakeDir](../msbuild/makedir-task.md) pour créer le répertoire s’il n’existe pas. Exemple :  
+2.  Utilisez la tâche [MakeDir](../msbuild/makedir-task.md) pour créer le répertoire s’il n’existe pas. Par exemple :  
   
      `<MakeDir Directories = "$(builtdir)"`  
   
@@ -52,14 +47,14 @@ Quand vous nettoyez une build, tous les fichiers intermédiaires et de sortie so
   
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Pour supprimer un répertoire et tous les fichiers contenus dans le répertoire  
   
--   Utilisez la tâche `RemoveDir` pour supprimer le répertoire. Exemple :  
+-   Utilisez la tâche `RemoveDir` pour supprimer le répertoire. Par exemple :  
   
      `<RemoveDir Directories="$(builtdir)" />`  
   
 ## <a name="example"></a>Exemple  
  L’exemple de projet de code suivant contient une nouvelle cible `Clean`, qui utilise la tâche `RemoveDir` pour supprimer un répertoire, ainsi que tous les fichiers et répertoires qu’il contient. De plus, dans cet exemple, la cible `Compile` crée un répertoire distinct pour les éléments de sortie qui sont supprimés quand la build est nettoyée.  
   
- `Compile` est défini comme cible par défaut et est donc utilisée automatiquement, sauf si vous spécifiez une ou plusieurs cibles différentes. Vous utilisez le commutateur de ligne de commande **/target** pour spécifier une autre cible. Exemple :  
+ `Compile` est défini comme cible par défaut et est donc utilisée automatiquement, sauf si vous spécifiez une ou plusieurs cibles différentes. Vous utilisez le commutateur de ligne de commande **/target** pour spécifier une autre cible. Par exemple :  
   
  `msbuild <file name>.proj /target:Clean`  
   
@@ -113,6 +108,3 @@ Quand vous nettoyez une build, tous les fichiers intermédiaires et de sortie so
  [RemoveDir, tâche](../msbuild/removedir-task.md)   
  [Tâche Csc](../msbuild/csc-task.md)   
  [Cibles](../msbuild/msbuild-targets.md)
-
-
-

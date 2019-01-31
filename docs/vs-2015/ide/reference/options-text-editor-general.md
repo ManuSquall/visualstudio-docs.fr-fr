@@ -1,14 +1,9 @@
 ---
 title: Options, Éditeur de texte, Général │ Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.TOOLSOPTIONSPAGES.TEXT_EDITOR.SQL_SERVER_TOOLS.GENERAL
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.General
@@ -52,13 +47,13 @@ ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 47fb93aebeecf50ae20616fc47033be60724cd45
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5ac63b183493b378fc0e1df454bc94a56722224f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257827"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794455"
 ---
 # <a name="options-text-editor-general"></a>Options, Éditeur de texte, Général
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -67,7 +62,7 @@ ms.locfileid: "49257827"
 Cette boîte de dialogue vous permet de modifier les paramètres globaux de l’éditeur de code et de texte de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Pour afficher cette boîte de dialogue, cliquez sur **Options** dans le menu **Outils**, développez le dossier **Éditeur de texte**, puis cliquez sur **Général**.  
   
 > [!NOTE]
->  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="settings"></a>Paramètres  
  Éditer le texte par glisser-déplacer  
@@ -109,6 +104,3 @@ Cette boîte de dialogue vous permet de modifier les paramètres globaux de l’
  [Identification et personnalisation des raccourcis clavier](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)   
  [Personnalisation de l’éditeur](../../ide/customizing-the-editor.md)   
  [Utilisation de la fonctionnalité IntelliSense](../../ide/using-intellisense.md)
-
-
-

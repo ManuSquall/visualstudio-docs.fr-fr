@@ -1,14 +1,9 @@
 ---
 title: Commande Rechercher dans les fichiers | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - edit.findinfiles
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 2fc78bfe-b339-4599-97f9-4cafd8a194d9
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5a278bb50af4488e9e627e884b20332717d6d0f8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9cc8218bafd4a6a0a6ce5622b9aff0e28dda8673
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256722"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753313"
 ---
 # <a name="find-in-files-command"></a>Rechercher dans les fichiers, commande
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,44 +41,44 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
   
 ## <a name="switches"></a>Commutateurs  
  /case ou /c  
- Facultatif. Il y a correspondance uniquement si les caractères majuscules et minuscules correspondent exactement à ceux spécifiés dans l’argument `findwhat`.  
+ Optionnel. Il y a correspondance uniquement si les caractères majuscules et minuscules correspondent exactement à ceux spécifiés dans l’argument `findwhat`.  
   
  /ext: `extensions`  
- Facultatif. Spécifie les extensions des fichiers dans lesquels effectuer la recherche. Si aucune extension n’est spécifiée, l’extension précédemment spécifiée est utilisée (le cas échéant).  
+ Optionnel. Spécifie les extensions des fichiers dans lesquels effectuer la recherche. Si aucune extension n’est spécifiée, l’extension précédemment spécifiée est utilisée (le cas échéant).  
   
  /lookin: `searchpath`  
- Facultatif. Répertoire dans lequel effectuer une recherche. Si le chemin contient des espaces, placez le chemin complet entre guillemets.  
+ Optionnel. Répertoire dans lequel effectuer une recherche. Si le chemin contient des espaces, placez le chemin complet entre guillemets.  
   
  /names ou /n  
- Facultatif. Affiche la liste des fichiers qui contiennent des correspondances.  
+ Optionnel. Affiche la liste des fichiers qui contiennent des correspondances.  
   
  /options ou /t  
- Facultatif. Affiche la liste des paramètres de recherche actuels et n’effectue pas de recherche.  
+ Optionnel. Affiche la liste des paramètres de recherche actuels et n’effectue pas de recherche.  
   
  /regex ou /r  
- Facultatif. Utilise des caractères spéciaux prédéfinis dans l’argument `findwhat` comme notations représentant des modèles de texte, plutôt que des caractères littéraux. Pour obtenir la liste complète des caractères d’expressions régulières, consultez [Expressions régulières](../../ide/using-regular-expressions-in-visual-studio.md).  
+ Optionnel. Utilise des caractères spéciaux prédéfinis dans l’argument `findwhat` comme notations représentant des modèles de texte, plutôt que des caractères littéraux. Pour obtenir la liste complète des caractères d’expressions régulières, consultez [Expressions régulières](../../ide/using-regular-expressions-in-visual-studio.md).  
   
  /reset ou /e  
- Facultatif. Rétablit les paramètres par défaut des options de recherche et n’effectue pas de recherche.  
+ Optionnel. Rétablit les paramètres par défaut des options de recherche et n’effectue pas de recherche.  
   
  /stop  
- Facultatif. Arrête l’opération de recherche en cours, le cas échant. La recherche ignore tous les autres arguments si `/stop` est spécifié. Par exemple, pour arrêter la recherche en cours, entrez ce qui suit :  
+ Optionnel. Arrête l’opération de recherche en cours, le cas échant. La recherche ignore tous les autres arguments si `/stop` est spécifié. Par exemple, pour arrêter la recherche en cours, entrez ce qui suit :  
   
 ```  
 >Edit.FindinFiles /stop  
 ```  
   
  /sub ou /s  
- Facultatif. Recherche dans les sous-dossiers du répertoire qui est spécifié dans l’argument /lookin:`searchpath`.  
+ Optionnel. Recherche dans les sous-dossiers du répertoire qui est spécifié dans l’argument /lookin:`searchpath`.  
   
  /text2 ou /2  
- Facultatif. Affiche les résultats de la recherche dans la fenêtre Résultats de la recherche 2.  
+ Optionnel. Affiche les résultats de la recherche dans la fenêtre Résultats de la recherche 2.  
   
  /wild ou /l  
- Facultatif. Utilise des caractères spéciaux prédéfinis dans l’argument `findwhat` comme notations représentant un caractère ou une séquence de caractères.  
+ Optionnel. Utilise des caractères spéciaux prédéfinis dans l’argument `findwhat` comme notations représentant un caractère ou une séquence de caractères.  
   
  /word ou /w  
- Facultatif. Recherche uniquement les mots entiers.  
+ Optionnel. Recherche uniquement les mots entiers.  
   
 ## <a name="example"></a>Exemple  
  Cet exemple recherche le texte « btnCancel » dans tous les fichiers .cls situés dans le dossier « My Visual Studio Projects » et affiche les informations de correspondance dans la fenêtre Résultats de la recherche 2.  
@@ -98,6 +93,3 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
  [Zone Rechercher/Commande](../../ide/find-command-box.md)   
  [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
-
-
-
