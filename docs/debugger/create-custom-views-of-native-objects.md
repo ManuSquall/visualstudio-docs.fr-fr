@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 2d9a177a-e14b-404f-a6af-49498eff0bd7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d91a62971db47b78b974cc2dede77d0a47b5c851
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ca1cf68af84556a76c29417c9bd56894a70f12ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821190"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997323"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-debugger"></a>Créer des vues personnalisées d’objets natifs dans le débogueur
 
@@ -26,10 +26,6 @@ Visual Studio *Natvis* framework personnalise l’apparence des types natifs dan
 
 Natvis remplace le *autoexp.dat* fichier dans les versions antérieures de Visual Studio avec la syntaxe XML, de meilleurs diagnostics, le contrôle de version et prend en charge de plusieurs fichiers.  
 
-Natvis ne fonctionne pas pour :
-
-- Projets de bureau de Windows de C++ avec **Type de débogueur** définie sur **mixte** sous **propriétés de Configuration** > **débogage**. 
-- [Le débogage en mode mixte](how-to-debug-in-mixed-mode.md) des applications de bureau Windows en mode de compatibilité managé (**outils** > **Options** > **débogage**  >  **Général** > **utiliser le Mode de compatibilité managé**).
 
 ## <a name="BKMK_Why_create_visualizations_"></a>Visualisations Natvis
 

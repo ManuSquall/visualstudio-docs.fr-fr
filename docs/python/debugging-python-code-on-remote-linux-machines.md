@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: eaeb13a087723b10098c9cfe6f75f3be2aad351e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b6681e3e1a1e04468d00c3b2087d5914cf0e71b6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964888"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015340"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Déboguer à distance du code Python sur Linux
 
@@ -66,7 +66,7 @@ Pour plus d’informations sur la création d’une règle de pare-feu pour une 
         print('Nope. The number I was thinking of was {0}'.format(number))
     ```
 
-1. Installez le package `ptvsd` dans votre environnement à l’aide de `pip3 install ptvsd`. 
+1. Installez le package `ptvsd` dans votre environnement à l’aide de `pip3 install ptvsd`.
    >[!NOTE]
    >Il est conseillé d’enregistrer la version du ptvsd qui est installé au cas où vous en auriez besoin pour la résolution des problèmes ; la [liste des ptvsd](https://pypi.python.org/pypi/ptvsd) indique également les versions disponibles.
 
