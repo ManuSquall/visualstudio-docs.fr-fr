@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 6e9cc5ca-24cc-49cf-aa22-c89733828f8c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 407b7c1c28d4232988bb36f8c1333197cd2dc08f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 00785b7f53fd800d924e8ed78d6b6a9b48ea730a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827177"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070945"
 ---
 # <a name="windows-tab-message-options-dialog-box"></a>Onglet Fenêtres de la boîte de dialogue Options des messages
 Utilisez le **Windows** onglet pour définir la portée des messages listés dans [vue Messages](../debugger/messages-view.md). Pour afficher le [la boîte de dialogue Options des messages](../debugger/message-options-dialog-box.md), choisissez **Messages du journal** à partir de la **Spy** menu.  

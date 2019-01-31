@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 5510635f-cf69-4907-b72d-ae27af1f19af
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9218c36f550c61484054d180ecb4dccb1ca53f3d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1ff144a30646ec29c022ba8e55c950e086179337
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947502"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941951"
 ---
 # <a name="debug-hook-function-writing"></a>Écriture de fonctions de raccordement de débogage
 Cette section décrit plusieurs fonctions de raccordement de débogage personnalisées que vous pouvez écrire pour vous permettre d'insérer votre code dans quelques points prédéfinis du traitement normal du débogueur.  

@@ -13,16 +13,16 @@ helpviewer_keywords:
 ms.assetid: 7ebe03da-ce8c-4cbc-bac0-a2fde4ae4d07
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2a9cde551796d43cf94c20a9e54768ea9df3ddb5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3c291f9437cab79ca1030bdde3d5d3df86547a87
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924798"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952312"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Enregistrer des données dans une base de données (plusieurs tables)
 
@@ -153,7 +153,7 @@ Vous pouvez mettre à jour la base de données en appelant les méthodes `Update
 
 2. Apportez quelques modifications aux données d'un ou plusieurs enregistrements dans chaque table.
 
-3. Sélectionnez le **enregistrer** bouton.
+3. Sélectionnez le bouton **Enregistrer**.
 
 4. Vérifiez les valeurs figurant dans la base de données pour confirmer que les modifications ont bien été enregistrées.
 

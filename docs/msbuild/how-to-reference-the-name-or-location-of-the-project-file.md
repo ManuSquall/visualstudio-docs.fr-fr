@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: c8fcc594-5d37-4e2e-b070-4d9c012043b5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ce03be9eb9d1fa4926eb1100f9a2aad5612a61d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b39176faffba1f90b9f955662322b37fdfbe2b75
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906031"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027397"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Procédure : Référencer le nom ou l’emplacement du fichier projet
 Vous pouvez utiliser le nom ou l’emplacement du projet dans le fichier projet sans avoir à créer votre propre propriété. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fournit des propriétés réservées qui référencent le nom du fichier projet et d’autres propriétés associées au projet. Pour plus d’informations sur les propriétés réservées, consultez [MSBuild, propriétés réservées et connues](../msbuild/msbuild-reserved-and-well-known-properties.md).  

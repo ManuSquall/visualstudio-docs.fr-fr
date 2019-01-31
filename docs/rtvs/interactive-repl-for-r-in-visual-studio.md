@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 7df300a57120bec2fc93ec7433a7ea9fdd3a2fc8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: af83b0998afa92fc59203fefa4b9d6d21635e642
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947073"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54921181"
 ---
 # <a name="work-with-the-r-interactive-window"></a>Utiliser la fenêtre interactive R
 
@@ -51,24 +51,24 @@ Voici la fenêtre interactive avec sa barre d’outils :
 
 Les commandes de la barre d’outils sont listées ci-après. La plupart d’entre elles ont des équivalents clavier et sont disponibles dans les menus **R Tools** > **Session** et **Outils R** > **Répertoire de travail** (ou comme indiqué) :
 
-| Bouton | Commande | Combinaison de touches | Description | 
+| Bouton | Commande | Combinaison de touches | Description |
 | --- | --- | --- | --- |
 | ![Bouton Réinitialiser](media/repl-toolbar-01-reset.png) | Réinitialiser | **Ctrl**+**Maj**+**F10** | Réinitialise la session de la fenêtre interactive. Toutes les variables et l’historique sont effacés. |
 | ![Bouton Effacer](media/repl-toolbar-02-clear.png) | Effacer | **Ctrl**+**L** | Efface la sortie affichée dans la fenêtre interactive ; n’affecte pas les variables ou l’historique de la session. |
 | ![Boutons Historique](media/repl-toolbar-03-history.png) | Commande précédente de l’historique<br/>Commande suivante de l’historique | **Haut**, **Bas**<br/>**Alt**+**Haut**, **Alt**+**Bas** | Fait défiler l’historique, avec certains comportements pour les blocs de code multiligne. Consultez [Historique](#history). |
 | ![Bouton Charger l’espace de travail](media/repl-toolbar-04-load-workspace.png) | Charger l’espace de travail | N/A | Charge un espace de travail précédemment enregistré (consultez [Espaces de travail et sessions](#workspaces-and-sessions)). |
 | ![Bouton Enregistrer l’espace de travail sous](media/repl-toolbar-05-save-workspace-as.png)| Enregistrer l’espace de travail sous | N/A | Enregistre l’état actuel de la session en tant qu’espace de travail (consultez [Espaces de travail et sessions](#workspaces-and-sessions)). |
-| ![Bouton Script R source](media/repl-toolbar-06-source-r-script.png) | Script R source | **Ctrl**+**Maj**+**S** | Appelle `source` avec le script R actuellement actif dans l’éditeur Visual Studio, qui exécute le code.  Ce bouton n’apparaît que si un fichier R est ouvert dans l’éditeur Visual Studio. | 
+| ![Bouton Script R source](media/repl-toolbar-06-source-r-script.png) | Script R source | **Ctrl**+**Maj**+**S** | Appelle `source` avec le script R actuellement actif dans l’éditeur Visual Studio, qui exécute le code.  Ce bouton n’apparaît que si un fichier R est ouvert dans l’éditeur Visual Studio. |
 | ![Bouton Script R source avec Echo](media/repl-toolbar-07-source-r-script-with-echo.png) | Script R source avec Echo | **Ctrl**+**Maj**+**Entrée** | Identique à Approvisionner le script R, mais affiche le contenu du script dans la fenêtre interactive. |
 | ![Bouton Interrompre R](media/repl-toolbar-08-interrupt-r.png)| Interrompre R | **Échap** | Arrête tout code en cours d’exécution dans la fenêtre interactive, comme la boucle `while` dans la capture d’écran affichée au début de cette section. |
-| ![Bouton Attacher le débogueur](media/repl-toolbar-09b-attach-debugger.png)| Attacher le débogueur | N/A | Également disponible par le biais de la commande **Déboguer** > **Joindre à la fenêtre interactive R**. | 
+| ![Bouton Attacher le débogueur](media/repl-toolbar-09b-attach-debugger.png)| Attacher le débogueur | N/A | Également disponible par le biais de la commande **Déboguer** > **Joindre à la fenêtre interactive R**. |
 | ![Bouton Définir le répertoire de travail à l’emplacement du fichier source](media/repl-toolbar-10-set-working-directory-source.png)| Définir le répertoire de travail à l’emplacement du fichier source | **Ctrl**+**Maj**+**E** | Définit le répertoire de travail à l’emplacement du dernier fichier approvisionné chargé dans la fenêtre interactive (à l’aide de `source`). Consultez [Répertoire de travail](#working-directory). |
 | ![Bouton Définir le répertoire de travail à l’emplacement du projet](media/repl-toolbar-11-set-working-directory-to-project.png) | Définir le répertoire de travail à l’emplacement du projet | **Ctrl**+**Maj**+**P** | Définit le répertoire de travail à la racine du projet actuellement chargé dans Visual Studio. Consultez [Répertoire de travail](#working-directory). |
 | (Champ de texte) | Sélectionner le répertoire de travail | N/A | Champ d’entrée directe pour le répertoire de travail. Consultez [Répertoire de travail](#working-directory). |
 
 ## <a name="workspaces-and-sessions"></a>Espaces de travail et sessions
 
-L’exécution de code dans la fenêtre interactive génère un contexte dans votre session active. Le contexte est composé de variables globales, de définitions de fonctions, de charges de bibliothèque, etc. Le terme *espace de travail* désigne ce contexte. Vous pouvez enregistrer et charger des espaces de travail à tout moment. 
+L’exécution de code dans la fenêtre interactive génère un contexte dans votre session active. Le contexte est composé de variables globales, de définitions de fonctions, de charges de bibliothèque, etc. Le terme *espace de travail* désigne ce contexte. Vous pouvez enregistrer et charger des espaces de travail à tout moment.
 
 Quand vous appuyez sur le bouton **Enregistrer l’espace de travail sous** ou sélectionnez la commande **Outils R** > **Session** > **Enregistrer l’espace de travail sous**, vous êtes invité à entrer un emplacement et un nom de fichier (extension par défaut : *.RData*).
 

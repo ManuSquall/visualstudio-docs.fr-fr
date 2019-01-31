@@ -5,13 +5,13 @@ ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
-ms.manager: douge
-ms.openlocfilehash: c4feda1f01e08807041efb9ae9b3d0bbe84d24b0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.manager: jillfra
+ms.openlocfilehash: 063c002b77761a14bf6a0bae8452b7ff28bd1b99
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840750"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918733"
 ---
 # <a name="team-explorer-reference"></a>Informations de référence sur Team Explorer
 
@@ -80,8 +80,12 @@ La page **Éléments de travail** vous permet de voir les requêtes d’[éléme
 - [Envoyer par courrier électronique la liste des résultats de la requête dans Outlook](/azure/devops/boards/queries/share-plans)
 - [Créer des rapports à partir de la requête dans Excel](/azure/devops/report/excel/create-status-and-trend-excel-reports) (TFS uniquement)
 
+::: moniker range=">= vs-2019"
+
 > [!NOTE]
 > Il existe une nouvelle [expérience d’éléments de travail](/azure/devops/boards/work-items/set-work-item-experience-vs) dans Visual Studio 2019 Preview 1. Pour obtenir des informations sur l’affichage des éléments de travail dans Visual Studio 2019 Preview 1, consultez [Afficher et ajouter des éléments de travail](/azure/devops/boards/work-items/view-add-work-items).
+
+::: moniker-end
 
 ## <a name="builds-page"></a>Page Builds
 

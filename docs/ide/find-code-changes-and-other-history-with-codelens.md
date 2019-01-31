@@ -7,15 +7,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.CodeLens
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 623a0a0515059a903f59d9c9b330876584c40f64
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 726ce5ba0ceca4f1369b0590c14da89851a9be37
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860597"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004526"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Rechercher les modifications de code et d'autres historiques avec CodeLens
 
@@ -166,7 +166,7 @@ L’icône dans la colonne **Branche** vous indique comment la branche est liée
 |--------------| - |
 |![CodeLens : icône Changer à partir de la branche actuelle](../ide/media/codelensbranchcurrenticon.png)|La branche actuelle|
 |![CodeLens : icône Changer à partir de la branche parente](../ide/media/codelensbranchparenticon.png)|La branche parente|
-|![CodeLens : icône Changer à partir de la branche enfant](../ide/media/codelensbranchchildicon.png)|Une branche enfant|
+|![CodeLens : icône Changer à partir de la branche enfant](../ide/media/codelensbranchchildicon.png)|Un branche enfant|
 |![CodeLens : icône Changer à partir d’une branche homologue](../ide/media/codelensbranchpeericon.png)|Une branche homologue|
 |![CodeLens : icône Changer à partir d’une branche plus éloignée](../ide/media/codelensbranchfurtherawayicon.png)|Une branche plus éloignée qu'un parent, enfant ou homologue|
 |![CodeLens : icône Fusionner à partir du parent](../ide/media/codelensbranchmergefromparenticon.png)|Une fusion de la branche parente à une branche enfant|

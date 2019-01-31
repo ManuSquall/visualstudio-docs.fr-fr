@@ -12,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: 62734c0d-a75a-4576-8f73-0e97c19280e1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1590bbbe53a164ff9e59b887f7161b45a7d62361
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 3e3936af89d7f59a47f01a68d17a672e67a5752e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441932"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988959"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutoriel : Apprendre à déboguer le code C# avec Visual Studio
 
-Cet article présente les fonctionnalités du débogueur Visual Studio dans une procédure pas à pas. Si vous voulez une vue plus générale des fonctionnalités du débogueur, consultez [Présentation du débogueur](../../debugger/debugger-feature-tour.md). Quand vous *déboguez votre application*, cela signifie généralement que vous exécutez votre application en y ayant attaché le débogueur. Quand vous faites cela, le débogueur fournit de nombreuses façons de voir ce que fait votre code pendant qu’il s’exécute. Vous pouvez parcourir votre code pas à pas et examiner les valeurs stockées dans les variables, vous pouvez définir des espions sur des variables pour voir quand les valeurs changent, vous pouvez examiner le chemin d’exécution de votre code, voir si une branche de code s’exécute, etc. Si c’est la première fois que vous essayez de déboguer du code, vous pouvez lire [Débogage pour grands débutants](../../debugger/debugging-absolute-beginners.md) avant de poursuivre cet article.
+Cet article présente les fonctionnalités du débogueur Visual Studio dans une procédure pas à pas. Pour un tour d’horizon plus général des fonctionnalités du débogueur, voir [Présentation du débogueur](../../debugger/debugger-feature-tour.md). Quand vous *déboguez votre application*, cela signifie généralement que vous exécutez votre application en y ayant attaché le débogueur. Quand vous faites cela, le débogueur fournit de nombreuses façons de voir ce que fait votre code pendant qu’il s’exécute. Vous pouvez parcourir votre code pas à pas et examiner les valeurs stockées dans les variables, vous pouvez définir des espions sur des variables pour voir quand les valeurs changent, vous pouvez examiner le chemin d’exécution de votre code, voir si une branche de code s’exécute, etc. Si c’est la première fois que vous essayez de déboguer du code, vous pouvez lire [Débogage pour grands débutants](../../debugger/debugging-absolute-beginners.md) avant de poursuivre cet article.
 
 | | |
 |---------|---------|
@@ -93,7 +93,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
         public int Y { get; private set; }
         public int Height { get; set; }
         public int Width { get; set; }
-   
+
         // Virtual method
         public virtual void Draw()
         {
@@ -192,7 +192,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
     Un cercle rouge apparaît là où vous avez défini le point d’arrêt.
 
-    Les points d'arrêt constituent une fonctionnalité élémentaire et essentielle de toute procédure de débogage fiable. Quand vous définissez un point d'arrêt, Visual Studio interrompt l'exécution du code à l'emplacement du point d'arrêt pour vous permettre d'examiner les valeurs des variables, le comportement de la mémoire ou encore la bonne exécution ou non d'une branche de code. 
+    Les points d'arrêt constituent une fonctionnalité élémentaire et essentielle de toute procédure de débogage fiable. Quand vous définissez un point d'arrêt, Visual Studio interrompt l'exécution du code à l'emplacement du point d'arrêt pour vous permettre d'examiner les valeurs des variables, le comportement de la mémoire ou encore la bonne exécution ou non d'une branche de code.
 
 2. Appuyez sur **F5** ou cliquez sur le bouton **Démarrer le débogage** ![Démarrer le débogage](../../debugger/media/dbg-tour-start-debugging.png "Démarrer le débogage"), l’application démarre et le débogueur s’exécute jusqu’à la ligne de code où vous avez défini le point d’arrêt.
 
@@ -218,11 +218,11 @@ Nous utilisons ici principalement des raccourcis clavier, car c’est un bon moy
 
      ![Utiliser la touche F10 pour effectuer un pas à pas principal dans le code](../csharp/media/get-started-step-over.png "F10 Pas à pas principal")
 
-     Notez que cette fois, le débogueur n’effectue pas de pas à pas détaillé dans la méthode `Draw` de la classe de base (`Shape`). **F10** fait avancer le débogueur sans effectuer de pas à pas détaillé dans les fonctions ou les méthodes du code de votre application (le code s’exécute néanmoins). En appuyant sur **F10** sur l’appel de la méthode `base.Draw` (au lieu de **F11**), nous avons ignoré le code d’implémentation pour `base.Draw` (qui ne nous intéresse peut-être pas pour l’instant).
+     Notez que cette fois, le débogueur n’effectue pas de pas à pas détaillé dans la méthode `Draw` de la classe de base (`Shape`). **F10** fait avancer le débogueur sans effectuer de pas à pas détaillé dans les fonctions ou les méthodes du code de votre application (le code s’exécute néanmoins). En appuyant sur **F10** sur l’appel de méthode `base.Draw` (au lieu de **F11**), nous avons ignoré le code d’implémentation de `base.Draw` (qui potentiellement ne nous intéresse pas pour l’instant).
 
 ## <a name="navigate-code-using-run-to-click"></a>Parcourir le code avec Exécuter jusqu’au clic
 
-1. Dans l’éditeur de code, faites défiler vers le bas et placez le curseur sur la méthode `Console.WriteLine` dans la classe `Triangle` jusqu’à ce que le bouton vert **Exécuter jusqu’au clic** ![Exécuter jusqu’au clic](../../debugger/media/dbg-tour-run-to-click.png "RunToClick") apparaisse à gauche. L’info-bulle pour le bouton affiche « Exécuter l’exécution jusqu’ici ».
+1. Dans l’éditeur de code, faites défiler vers le bas et placez le curseur sur la méthode `Console.WriteLine` dans la classe `Triangle` jusqu’à ce que le bouton vert **Exécuter jusqu’au clic** ![Exécuter jusqu’au clic](../../debugger/media/dbg-tour-run-to-click.png "RunToClick") apparaisse à gauche. L’info-bulle du bouton indique « Lancer l’exécution jusqu’ici ».
 
      ![Utiliser la fonctionnalité Exécuter jusqu’au clic](../csharp/media/get-started-run-to-click.png "Exécuter jusqu’au clic")
 

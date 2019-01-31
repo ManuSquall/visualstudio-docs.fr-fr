@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: ff707aca-6bc5-4a2d-834b-bb6511a7b8f6
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: b0edb1f6ae895a267fc529bf0c83b3ea7fea2a2d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3cbe06debb0ae041ddeb06292427923b8f02210e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852610"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982011"
 ---
 # <a name="insert-images-videos-and-audio-clips-in-xaml-designer"></a>Insérer des images, des vidéos et des clips audio dans le concepteur XAML
 Images, vidéos et clips audio contribuent à agrémenter visuellement votre application.

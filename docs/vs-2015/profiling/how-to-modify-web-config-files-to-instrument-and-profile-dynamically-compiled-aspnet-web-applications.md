@@ -1,25 +1,20 @@
 ---
 title: 'Procédure : Modifier des fichiers Web.Config pour instrumenter et profiler des applications web ASP.NET compilées dynamiquement | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: a92e5692-2183-4ae3-9431-b067c6a7aab4
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 471f2d2a0413cbf5932c980f195a49504bd975aa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 53c55987c22104a8951976890812d90f6bb838d4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860726"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774991"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Procédure : Modifier des fichiers web.config pour instrumenter et profiler des applications web ASP.NET compilées dynamiquement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -229,6 +224,3 @@ Vous pouvez utiliser la méthode d’instrumentation des outils de profilage de 
 ## <a name="see-also"></a>Voir aussi  
  [Guide pratique pour instrumenter une application ASP.NET compilée dynamiquement et collecter des données chronologiques détaillées](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)   
  [Guide pratique pour instrumenter une application ASP.NET compilée dynamiquement et collecter des données de mémoire](/visualstudio/profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data?view=vs-2015)
-
-
-

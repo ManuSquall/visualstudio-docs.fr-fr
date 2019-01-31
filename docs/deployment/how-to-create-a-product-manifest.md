@@ -15,20 +15,20 @@ helpviewer_keywords:
 ms.assetid: 2d316aaa-8bc0-4ce5-90ab-23b3eac0b5dd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 879dffc554a05d6c90680cd95e5bb934550d2bbd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 39c24f35ec68fdfda173cf24d8018102a42ea81b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824598"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976548"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Procédure : Créer un manifeste de produit
 Pour déployer les composants requis pour votre application, vous pouvez créer un package de programme d’amorçage. Un package de programme d’amorçage contient un fichier de manifeste de produit unique, mais un manifeste de package pour chacun des paramètres régionaux. Le manifeste du package contient des aspects spécifiques à la localisation de votre package. Cela inclut des chaînes, des contrats de licence utilisateur final et les modules linguistiques.  
   
- Pour plus d’informations sur les manifestes de produit, consultez [Comment : créer un manifeste de package](../deployment/how-to-create-a-package-manifest.md)  
+ Pour plus d’informations sur les manifestes de produit, consultez [Comment : Créer un manifeste de package](../deployment/how-to-create-a-package-manifest.md).  
   
 ## <a name="create-the-product-manifest"></a>Créer le manifeste de produit  
   

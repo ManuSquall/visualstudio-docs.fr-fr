@@ -1,14 +1,9 @@
 ---
 title: Paramètres de modèle | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, parameters
 - template parameters [Visual Studio]
@@ -18,13 +13,13 @@ ms.assetid: 1b567143-08c6-4d7a-b484-49f0671754fe
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ef4e1a6e3c56df744ce5375a1cb3a1dbd53a6fad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1433d9ba1f207a0f86902d7afd56db6476b1fd56
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238899"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787090"
 ---
 # <a name="template-parameters"></a>Paramètres de modèle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "49238899"
 L’utilisation de paramètres dans vos modèles vous permet de remplacer les valeurs des parties principales du modèle, telles que les noms de classes et les espaces de noms, quand le modèle est instancié. Ces paramètres sont remplacés par l’Assistant Modèle qui s’exécute en arrière-plan quand un utilisateur clique sur **OK** dans les boîtes de dialogue **Nouveau projet** ou **Ajouter un nouvel élément**.  
   
 ## <a name="declaring-and-enabling-template-parameters"></a>Déclaration et activation des paramètres de modèle  
- Les paramètres de modèle sont déclarés au format $*paramètre*$. Exemple :  
+ Les paramètres de modèle sont déclarés au format $*paramètre*$. Par exemple :  
   
 -   $safeprojectname$  
   
@@ -79,7 +74,7 @@ L’utilisation de paramètres dans vos modèles vous permet de remplacer les va
 ## <a name="custom-template-parameters"></a>Paramètres de modèle personnalisés  
  Vous pouvez spécifier vos propres paramètres et valeurs de modèle, en plus des paramètres de modèle réservés par défaut utilisés lors du remplacement de paramètres. Pour plus d’informations, consultez [CustomParameters, élément (modèles Visual Studio)](../extensibility/customparameters-element-visual-studio-templates.md).  
   
-## <a name="example-replacing-files-names"></a>Exemple : Remplacement de noms de fichiers  
+## <a name="example-replacing-files-names"></a>Exemple : En remplaçant les noms de fichiers  
  Vous pouvez spécifier des noms de fichiers de variables pour les éléments de projet à l’aide d’un paramètre ayant l’attribut `TargetFileName`. Par exemple, vous pouvez spécifier que le fichier .exe utilise comme nom le nom du projet, spécifié par `$projectname$`.  
   
 ```  
@@ -93,7 +88,7 @@ L’utilisation de paramètres dans vos modèles vous permet de remplacer les va
 </TemplateContent>  
 ```  
   
-## <a name="example-using-the-project-name-for-the-namespace-name"></a>Exemple : Utilisation du nom du projet comme nom de l’espace de noms  
+## <a name="example-using-the-project-name-for-the-namespace-name"></a>Exemple : En utilisant le nom de projet pour le nom de Namespace  
  Pour utiliser le nom du projet pour l’espace de noms dans un fichier de classe Visual C#, Class1.cs, utilisez la syntaxe suivante :  
   
 ```  
@@ -130,6 +125,3 @@ namespace $safeprojectname$
   
 ## <a name="see-also"></a>Voir aussi  
  [Personnalisation des modèles](../ide/customizing-project-and-item-templates.md)
-
-
-

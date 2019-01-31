@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 0ba5ed7a-9aaa-41f4-95d2-e3c2d567bc79
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efcb151fd7ecba4db5d7b911c22c8fea9b86d16b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3043605e401942fe6aedb51d5a36d58dc03f6d1b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905148"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959473"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Étape 3 : Affecter une icône aléatoire à chaque étiquette
 Si les icônes se trouvent dans les mêmes cellules à chaque partie, le jeu ne sera pas intéressant. Pour éviter cela, affectez les icônes de façon aléatoire aux contrôles d’étiquettes de votre formulaire en utilisant une méthode `AssignIconsToSquares()`.

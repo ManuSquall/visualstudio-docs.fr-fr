@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 7047bf18-5779-4f6e-872c-66e2fc47c969
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ea80d579b6ddf72955f83a7197b3d21fe01a34
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a42774d2f91afe0e3b469a97a17763950b4bdc2e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886580"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54968123"
 ---
 # <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>Spécifier le chemin des outils en ligne de commande des outils de profilage
 Le chemin d’accès aux outils de profilage en ligne de commande de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] n’est pas ajouté à la variable d’environnement PATH. Sur les ordinateurs 32 bits, les outils se trouvent dans un même répertoire. Il existe des versions 32 bits et 64 bits des outils de profilage sur les ordinateurs 64 bits.  

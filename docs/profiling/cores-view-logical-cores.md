@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8a471929-9a26-43e4-adef-d3b40f00f9e3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2409f7be9913f74d71e0d4d2c63dac947ac0b6a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9fdfeec885473c7850a8f8a67d35d3c7a79d9791
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876469"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035383"
 ---
 # <a name="cores-view-logical-cores"></a>Cœurs logiques de la vue Cœurs
 Chaque nom de canal représente un des cœurs logiques qui existent sur le système profilé. Le nommage va de 0 au nombre total de cœurs logiques. Par exemple, un système à quatre cœurs va du cœur logique 0 au cœur logique 3.  

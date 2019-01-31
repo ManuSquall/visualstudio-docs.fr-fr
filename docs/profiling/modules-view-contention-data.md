@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 1a9aa122-2d8f-4a09-b503-92975aa6b648
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edd882b00c5bdaf62ae280cb0e4986662b05ad83
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 57e37b85dbcf1cbbb6801cd73b30b65ee7f16d9b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926397"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932049"
 ---
 # <a name="modules-view---contention-data"></a>Modules, vue - données de conflit
 La vue Modules des données de conflit affiche les données de concurrence regroupées selon les modules qui ont été échantillonnés dans les données de profilage. Chaque module est la racine d’une arborescence hiérarchique. Les fonctions du module dans lequel les événements de concurrence se sont produits sont répertoriés sous le nœud du module.  

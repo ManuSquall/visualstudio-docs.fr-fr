@@ -6,16 +6,16 @@ ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Static helper classes
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 09799a4625791efa137dc9b97b7c3ad9a041feae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 56493da196a0d53ead738b2eff6d10a2f9328c37
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53897798"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929323"
 ---
 # <a name="static-helper-classes"></a>Classes d’assistance statiques
 
@@ -131,7 +131,7 @@ public static class MathEx {
 public partial class MathExTests {
      [PexMethod]
      public int SquareTest(int a) {
-        int result = MathEx.Square(a); 
+        int result = MathEx.Square(a);
         // storing result
         return result;
      }
@@ -149,7 +149,8 @@ Normalement, IntelliTest tente de couvrir tous les chemins d’exécution du cod
 
 **Exemple**
 
-Cet exemple montre l’implémentation de la méthode **PexAssume.Arrays.ElementsAreNotNull**. Dans la méthode, vous ignorez les contraintes sur la valeur de la longueur du tableau, afin d’éviter qu’IntelliTest tente de générer différentes tailles de tableau. Les contraintes sont ignorées seulement ici. Si le code testé se comporte différemment pour des longueurs de tableau différentes, IntelliTest ne peut pas générer des tableaux de tailles différentes à partir des contraintes du code testé.
+Cet exemple montre l’implémentation de la méthode **PexAssume.Arrays.ElementsAreNotNull**.
+Dans la méthode, vous ignorez les contraintes sur la valeur de la longueur du tableau, afin d’éviter qu’IntelliTest tente de générer différentes tailles de tableau. Les contraintes sont ignorées seulement ici. Si le code testé se comporte différemment pour des longueurs de tableau différentes, IntelliTest ne peut pas générer des tableaux de tailles différentes à partir des contraintes du code testé.
 
 ```csharp
 public static void AreElementsNotNull<T>(T[] value)

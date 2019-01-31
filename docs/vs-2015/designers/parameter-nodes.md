@@ -1,25 +1,20 @@
 ---
 title: Nœuds de paramètre | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: da54db0b-3a3d-48dc-858c-7ac43aa04b13
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bb15b19ebdef04facdb66d4b97042bb47e4cb5fa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 110f380f7450d611de5786fb865bdee8e64195f6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276288"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764169"
 ---
 # <a name="parameter-nodes"></a>Nœuds de paramètre
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +23,7 @@ Dans le concepteur de nuanceur, les nœuds de paramètre représentent les entr�
   
 ## <a name="parameter-node-reference"></a>Informations de référence des nœuds de paramètre  
   
-|Nœud|Détails|Properties|  
+|Nœud|Détails|Propriétés|  
 |----------|-------------|----------------|  
 |**Position universelle de la caméra**|Position de l'appareil photo dans l'espace universel.<br /><br /> **Sortie :**<br /><br /> `Output`: `float4`<br /> Position de la caméra.|Aucun.|  
 |**Direction de la lumière**|Vecteur qui définit la direction dans laquelle la lumière est diffusée depuis une source de lumière dans l’espace universel.<br /><br /> Vous pouvez l’utiliser pour calculer les contributions spéculaires et d’éclairage dans l’espace universel.<br /><br /> **Sortie :**<br /><br /> `Output`: `float3`<br /> Vecteur du pixel actuel à une source de lumière.|Aucun.|  
@@ -39,6 +34,3 @@ Dans le concepteur de nuanceur, les nœuds de paramètre représentent les entr�
 |**Puissance spéculaire du matériau**|Valeur scalaire qui décrit l'intensité des surbrillances spéculaires.<br /><br /> L’intensité et la portée des surbrillances spéculaires sont proportionnelles à la puissance spéculaire.<br /><br /> **Sortie :**<br /><br /> `Output`: `float`<br /> Terme exponentiel qui décrit l’intensité des surbrillances spéculaires sur le pixel actuel.|**Accès**<br /> **Public** pour que la propriété puisse être définie dans l’éditeur de modèle. **Privé** dans le cas contraire.<br /><br /> **Valeur**<br /> Exposant qui définit l’intensité des surbrillances spéculaires sur le pixel actuel.|  
 |**Heure normalisée**|Durée en secondes, normalisée dans la plage [0, 1] de sorte que lorsque la durée atteint 1, elle est réinitialisée sur 0.<br /><br /> Vous pouvez l’utiliser en tant que paramètre dans les calculs du nuanceur, par exemple pour animer les coordonnées de la texture, les valeurs de couleur ou d’autres attributs.<br /><br /> **Sortie :**<br /><br /> `Output`: `float`<br /> Heure normalisée, en secondes.|Aucun.|  
 |**Heure**|La durée en secondes.<br /><br /> Vous pouvez l’utiliser en tant que paramètre dans les calculs du nuanceur, par exemple pour animer les coordonnées de la texture, les valeurs de couleur ou d’autres attributs.<br /><br /> **Sortie :**<br /><br /> `Output`: `float`<br /> Durée en secondes.|Aucun.|
-
-
-

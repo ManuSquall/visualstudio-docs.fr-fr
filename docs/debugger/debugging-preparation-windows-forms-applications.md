@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 7092ee7f-8378-4def-aef8-1695bd97cf14
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e6c8dfd53ec6877e00c395bd068efe58f3776ae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0033bb762a42090bd1849d6acc609cf248b28179
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827755"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931971"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>Débogage de la préparation : Applications Windows Forms
 Le modèle de projet Windows Forms crée une application Windows Forms. Le débogage de ce type d'application dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] est assez simple. Pour plus d’informations, consultez [création d’un projet d’Application Windows](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).  

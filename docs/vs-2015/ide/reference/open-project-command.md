@@ -1,14 +1,9 @@
 ---
 title: Ouvrir un projet, commande | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - file.openproject
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: baa85f86-041b-49f4-9ced-0c397dc180e1
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b25ee0e6ba4dfa5c29d5a009087afb55509d0c08
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 916ea8435571efc01f38e408d4fc2d4563c16f1c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263913"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753483"
 ---
 # <a name="open-project-command"></a>Ouvrir un projet, commande
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,6 +57,3 @@ File.OpenProject filename
  [Fenêtre Commande](../../ide/reference/command-window.md)   
  [Zone Rechercher/Commande](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

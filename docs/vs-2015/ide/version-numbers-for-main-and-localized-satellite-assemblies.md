@@ -1,14 +1,9 @@
 ---
 title: Numéros de version de l’assembly principal et des assemblys satellites localisés | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - satellite assemblies, version numbers
 - SatelliteContractVersionAttribute
@@ -19,13 +14,13 @@ ms.assetid: 5489aea1-57b4-4561-9bb4-24d490269602
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a5c6d5e16a77a8c04964beb38e21ebf82ede7f0b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: eb699c7b5ab2aec928bf83ada5dd8824f93f3006
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223039"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790137"
 ---
 # <a name="version-numbers-for-main-and-localized-satellite-assemblies"></a>Numéros de version de l'assembly principal et des assemblys satellites localisés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,4 +49,3 @@ La classe <xref:System.Resources.SatelliteContractVersionAttribute> fournit la p
  [Sécurité et assemblys satellites localisés](../ide/security-and-localized-satellite-assemblies.md)   
  [Localisation d’applications](../ide/localizing-applications.md)   
  [Globalisation et localisation d’applications](../ide/globalizing-and-localizing-applications.md)
-

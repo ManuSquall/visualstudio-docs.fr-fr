@@ -8,15 +8,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: db27509faf1c3d83eab1cd6c8fcd6b5b70fab48e
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: 69f0d2f89901632ab4f500879fc89e3b6ca1e0ba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398297"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959721"
 ---
 # <a name="options-text-editor-c-advanced"></a>Options, Éditeur de texte, C#, Avancé
 
@@ -47,7 +47,7 @@ Utilisez la page d’options **Avancé** pour modifier les paramètres de mise e
    using Newtonsoft.Json;
    using System;
    ```
-   
+
    Après le tri :
 
    ```csharp
@@ -58,7 +58,7 @@ Utilisez la page d’options **Avancé** pour modifier les paramètres de mise e
    using FluentValidation;
    using Newtonsoft.Json;
    ```
-   
+
 - Séparer les groupes de directives using
 
    La commande **Supprimer et trier les instructions using** du menu contextuel sépare les directives `using` en insérant une ligne vide entre les groupes de directives qui ont le même espace de noms racine.
@@ -73,28 +73,28 @@ Utilisez la page d’options **Avancé** pour modifier les paramètres de mise e
    using Newtonsoft.Json;
    using System;
    ```
-   
+
    Après le tri :
-   
+
    ```csharp
    using AutoMapper;
-   
+
    using FluentValidation;
-   
+
    using Newtonsoft.Json;
-   
+
    using System;
    using System.Collections.Generic;
    using System.Linq;
    ```
-   
-- Suggérer des usings pour les types dans les assemblys de référence 
-- Suggérer des usings pour les types dans les packages NuGet 
+
+- Suggérer des usings pour les types dans les assemblys de référence
+- Suggérer des usings pour les types dans les packages NuGet
 
    Quand ces options sont sélectionnées, une [Action rapide](../quick-actions.md) est disponible pour installer un package NuGet et ajouter une directive `using` pour les types non référencés.
 
    ![Action rapide pour installer un package NuGet dans Visual Studio](media/nuget-lightbulb.png)
-  
+
 ## <a name="highlighting"></a>Highlighting
 
 - Surligner les références jusqu’au symbole sous le curseur

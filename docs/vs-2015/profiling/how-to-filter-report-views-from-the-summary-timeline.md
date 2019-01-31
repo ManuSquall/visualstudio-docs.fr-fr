@@ -1,27 +1,22 @@
 ---
-title: Guide pratique pour filtrer les vues de rapport à partir de la chronologie Résumé | Microsoft Docs
-ms.custom: ''
+title: 'Procédure : Filtrer les vues de rapport à partir de la chronologie Résumé | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 056b10a0-952b-4790-89e0-02aebe902e87
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 993e1626a3454a199c7427fdbab562c2301f7d72
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 50958671d327013254b0a19e3dda160b1b3035e0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817228"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778855"
 ---
-# <a name="how-to-filter-report-views-from-the-summary-timeline"></a>Guide pratique pour filtrer les vues de rapport à partir de la chronologie Résumé
+# <a name="how-to-filter-report-views-from-the-summary-timeline"></a>Procédure : Filtrer les vues des rapports à partir de la chronologie Résumé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez filtrer les données qui apparaissent dans les rapports de performances en spécifiant un intervalle de temps dans le graphique chronologique de la vue Résumé. Quand vous filtrez des rapports, le fichier des données de profilage est réanalysé de façon à inclure uniquement l’intervalle de temps que vous avez spécifié.  
@@ -33,6 +28,3 @@ Vous pouvez filtrer les données qui apparaissent dans les rapports de performan
      La région que vous avez spécifiée apparaît ombrée.  
   
 2.  Cliquez sur **Filtrer par sélection**.
-
-
-

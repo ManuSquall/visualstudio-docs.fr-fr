@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: a781d2cf-55fe-4373-9cf1-b732864244e0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6fdec31314dcce0d5c83adee69de4e4fb2754c0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 27682e09de494fedaaf446b7cd533bde0715f459
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948340"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939203"
 ---
 # <a name="exe"></a>Exe
 Exe est le seul symbole sans soit un lexicale ou de la classe parent, car il représente la portée globale du fichier .exe ou .dll. Il est uniquement un symbole avec la `SymTagExe` balise par fichier. Le [IDiaSession::get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md) méthode retourne le symbole.  

@@ -1,14 +1,9 @@
 ---
 title: Vues de données de la méthode d’instrumentation | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools,instrumentation method views
 - instrumentation profiling method
@@ -16,13 +11,13 @@ ms.assetid: 481f7579-f784-49ef-bb6c-2944e9d6ab42
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 23ca631f79137e48781cdb017727aa071067f8f4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ac4e3bf3c5dfa20729fe2270121b7649041d9e59
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790537"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801790"
 ---
 # <a name="instrumentation-method-data-views"></a>Vues de données de la méthode d'instrumentation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,6 +59,3 @@ Cette section contient des informations de référence pour les vues et rapports
   
 ## <a name="see-also"></a>Voir aussi  
  [Présentation des valeurs de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md)
-
-
-

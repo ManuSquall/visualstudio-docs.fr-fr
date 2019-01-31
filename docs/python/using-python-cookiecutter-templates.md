@@ -1,22 +1,22 @@
 ---
 title: Utiliser des modèles Cookiecutter avec Python
 description: Visual Studio prend en charge l’extension Cookiecutter graphique pour la découverte de modèles pour le code Python et la création de projets à partir de ces modèles.
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1f5123323794d7a333440cb8aa94c51e44c8fc87
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b09e46f65d7aeafbf781af2a5e77ae9e4cc17ea0
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958233"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231790"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Utiliser l’extension Cookiecutter
 
@@ -60,7 +60,7 @@ Une fois le modèle installé localement, Cookiecutter affiche une page d’opti
 
 ![Page d’options de Cookiecutter](media/cookiecutter-template-options.png)
 
-Chaque modèle Cookiecutter définit son propre ensemble d’options et spécifie une valeur par défaut pour chacune d’elles (affichée en tant que texte suggéré dans chaque champ d’entrée). Une valeur par défaut peut être un extrait de code, souvent lorsqu’il s’agit d’une valeur dynamique qui utilise d’autres options. 
+Chaque modèle Cookiecutter définit son propre ensemble d’options et spécifie une valeur par défaut pour chacune d’elles (affichée en tant que texte suggéré dans chaque champ d’entrée). Une valeur par défaut peut être un extrait de code, souvent lorsqu’il s’agit d’une valeur dynamique qui utilise d’autres options.
 
 Il est possible de personnaliser les valeurs par défaut pour des options spécifiques avec un fichier de configuration utilisateur. Lorsque l’extension Cookiecutter détecte un fichier de configuration utilisateur, elle remplace les valeurs par défaut du modèle avec des valeurs par défaut de la configuration de l’utilisateur. Ce comportement est abordé dans la section [User Config](https://cookiecutter.readthedocs.io/en/latest/advanced/user_config.html) (Configuration utilisateur) de la documentation Cookiecutter.
 

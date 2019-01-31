@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: ba1a785b-693d-446b-bcae-b88cadee73d1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 158befc5b401feb700a2effff7378b1edac6a2c9
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 0c39e3652e2f519a95420d58d855924ccc94174c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53878388"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980334"
 ---
 # <a name="create-bootstrapper-packages"></a>Créer des packages de programme d’amorçage
 Le programme d’installation est un programme d’installation générique qui peut être configuré pour détecter et installer les composants redistribuables, comme les fichiers Windows Installer (*.msi*) et les programmes exécutables. Le programme d'installation est également appelé programme d'amorçage. Il est programmé via un ensemble de manifestes XML qui spécifient les métadonnées permettant de gérer l'installation du composant.  Chaque composant redistribuable, ou une condition préalable, qui s’affiche dans le **conditions préalables** boîte de dialogue de ClickOnce est un package de programme d’amorçage. Un package de programme d'amorçage est un groupe de répertoires et de fichiers qui contiennent des fichiers manifeste qui décrivent la façon dont le composant requis doit être installé. 

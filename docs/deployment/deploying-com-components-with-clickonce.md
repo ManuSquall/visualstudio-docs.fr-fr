@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 1a4c7f4c-7a41-45f2-9af4-8b1666469b89
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 216d3802ddac4e2a4cee2b8ab20d4d3abd381424
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d3be7039995c27990a1c5c55bf173ef06e5fee0c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888450"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984702"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>Déployer des composants COM avec ClickOnce
 Déploiement de composants COM hérités a toujours été une tâche difficile. Composants doivent être inscrits dans le monde entier et peuvent donc entraîner des effets secondaires indésirables entre les applications qui se chevauche. Cette situation n’est généralement pas un problème dans les applications .NET Framework, car les composants sont complètement isolés dans une application ou offrent une compatibilité côte à côte. Visual Studio vous permet de déployer des composants COM isolés sur le Windows XP ou un système d’exploitation ultérieur.  

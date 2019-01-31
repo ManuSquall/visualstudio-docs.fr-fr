@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 9095b4f1-88da-4194-914b-ee1456826830
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64f36cadc6ee33563f516703f3bc48e81558b8ec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1b9b9f5a708abacecaf90a7de1d2a3e9ee231579
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959914"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016250"
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives, tâche
 La tâche <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> fusionne les attributs de localisation et les commentaires d’un ou plusieurs fichiers binaires [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] en un seul fichier pour l’assembly entier.  

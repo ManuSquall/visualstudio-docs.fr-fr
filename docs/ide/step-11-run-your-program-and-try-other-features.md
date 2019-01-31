@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0a00b328c85758c2be824377d04a0b3cfe122f3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 85377ed374447ca4508b93c89bd01434d43c5dad
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968243"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042892"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>Étape 11 : Exécuter votre programme et tester d’autres fonctionnalités
 Votre programme est terminé et prêt à fonctionner. Vous pouvez l'exécuter et définir la couleur d'arrière-plan du contrôle <xref:System.Windows.Forms.PictureBox>. Pour découvrir d'autres fonctionnalités, essayez d'améliorer le programme en modifiant la couleur du formulaire, en personnalisant les boutons et la case à cocher, et en modifiant les propriétés du formulaire.

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3e84e513-dc64-40bb-b385-03281f28b519
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b83ed1ae187647f4e1025d18b4973cb1e25b399
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e8586bff16bdcf8a67d8d1e27abb37b13efa5ce4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844939"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041969"
 ---
 # <a name="performance-report-views"></a>Vues du rapport des performances
 Cette section fournit des informations de référence pour les rapports et les vues des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Les vues des fichiers de données de profilage s’affichent dans l’environnement de développement intégré (IDE) de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Les rapports sont générés par l’outil en ligne de commande [VSPerfReport](../profiling/vsperfreport.md).  

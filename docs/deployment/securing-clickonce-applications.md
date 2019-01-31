@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: a05b5f2f-d1f2-471a-8096-8b11f7554265
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16ca92b1e34e1cec4426da368fb9a5c557db65b8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 35814b1227f9a03fe40c9d41e7809dac54a0f1fa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944270"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932816"
 ---
 # <a name="secure-clickonce-applications"></a>Sécuriser des applications ClickOnce
 Les applications[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sont soumises aux contraintes de sécurité d'accès du code dans .NET Framework afin d'aider à limiter l'accès du code aux opérations et aux ressources protégées. Pour cette raison, il est important de comprendre les implications de la sécurité d'accès du code afin d'écrire vos applications [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] en conséquence. Vos applications peuvent utiliser des zones de confiance totale ou de confiance partielle, telles que les zones intranet et Internet, pour limiter l'accès.  
@@ -66,7 +66,7 @@ Les applications[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)
   
  `http://servername.adatum.com/WindowsApp1.application?username=joeuser`  
   
- Les arguments de chaîne de requête sont désactivés par défaut. Pour les activer, l'attribut `trustUrlParameters` doit être défini dans le manifeste de déploiement de l'application. Cette valeur peut être définie à partir de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] et de MageUI.exe. Pour obtenir des instructions détaillées sur l’activation du passage de chaînes de requête, consultez [Comment : récupérer les informations de chaîne de requête dans une application ClickOnce en ligne](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)  
+ Les arguments de chaîne de requête sont désactivés par défaut. Pour les activer, l'attribut `trustUrlParameters` doit être défini dans le manifeste de déploiement de l'application. Cette valeur peut être définie à partir de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] et de MageUI.exe. Pour obtenir des instructions détaillées sur l’activation du passage de chaînes de requête, consultez [Comment : Récupérer les informations de chaîne de requête dans une application ClickOnce en ligne](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).  
   
  Vous ne devez jamais passer d'arguments récupérés via une chaîne de requête directement à une base de données ou à la ligne de commande sans les vérifier et vous assurer qu'ils sont sécurisés. Les arguments non sécurisés sont ceux qui incluent des caractères d'échappement de la base de données ou de la ligne de commande pouvant permettre à un utilisateur malveillant de manipuler votre application et de lui faire exécuter des commandes arbitraires.  
   

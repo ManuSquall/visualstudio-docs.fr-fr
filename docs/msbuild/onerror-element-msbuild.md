@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 765767d3-ecb7-4cd9-ba1e-d9468964dddc
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43e76a9ffece66a6330b634bb982ec14b10b803c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e5a7ecc4c91dcb39d090c00b7b2ed37bd6bb906c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924551"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55011895"
 ---
 # <a name="onerror-element-msbuild"></a>Élément OnError (MSBuild)
 Provoque l’exécution d’une ou de plusieurs cibles si l’attribut `ContinueOnError` est défini sur `false` pour une tâche en échec.  

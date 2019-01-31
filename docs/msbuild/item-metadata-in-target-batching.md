@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f3cc4186-6a4c-4161-bbe5-1ec638b4925b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f46f71303dead8c44881098a89fa7518d05e7d4b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a77c5b1c932785e1363934554789102d8e4bea1a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856395"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955334"
 ---
 # <a name="item-metadata-in-target-batching"></a>Métadonnées d’élément dans le traitement par lots des cibles
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] a la capacité d’effectuer une analyse des dépendances sur les entrées et les sorties d’une cible de génération. S’il est déterminé que les entrées ou les sorties de la cible sont à jour, la cible est ignorée et la génération a lieu. Les éléments `Target` utilisent les attributs `Inputs` et `Outputs` pour spécifier les éléments à inspecter pendant l’analyse des dépendances.  

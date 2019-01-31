@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 3ee22eb9-978f-4efd-a5e0-f071745496ce
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46e9b0584e48dee4a074e1826c795c62f9c612e3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a6c0226ab3535587466629561738efa6d12d4499
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944085"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018951"
 ---
 # <a name="how-to-change-fonts"></a>Procédure : Modifier les polices
 Vous pouvez modifier la police, le style de police et la taille de police des fenêtres Spy ++.  

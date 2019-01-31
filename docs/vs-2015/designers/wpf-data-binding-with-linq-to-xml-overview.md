@@ -1,25 +1,20 @@
 ---
 title: Vue d’ensemble de la liaison de données WPF avec LINQ to XML | Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 3bf80845-891b-41de-a71b-4080b5bd3ea6
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 457a097d46f9af409580d3784bb577090db0c535
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a614a90fe6388d9189d2b63e02f9bf63f83f0b7b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852412"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774176"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Vue d’ensemble de la liaison de données WPF avec LINQ to XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ Cette rubrique présente les fonctionnalités de liaison de données dynamiques 
 |---------------|-----------------|  
 |Cible de liaison|Élément d'interface utilisateur à associer à la source de données. Les éléments visuels dans WPF sont dérivés de la classe <xref:System.Windows.UIElement>.|  
 |Propriété cible|*Propriété de dépendance* de la cible de liaison qui reflète la valeur de la source de liaison de données. Les propriétés de dépendance sont directement prises en charge par la classe <xref:System.Windows.DependencyObject>, de laquelle <xref:System.Windows.UIElement> dérive.|  
-|Source de liaison|Objet source pour une ou plusieurs valeurs qui sont fournies à l'élément d'interface utilisateur pour la présentation. WPF prend automatiquement en charge les types suivants comme sources de liaison : objets CLR, objets de données ADO.NET, données XML (à partir de requêtes XPath ou LINQ to XML) ou un autre objet <xref:System.Windows.DependencyObject>.|  
+|Source de liaison|Objet source pour une ou plusieurs valeurs qui sont fournies à l'élément d'interface utilisateur pour la présentation. WPF prend automatiquement en charge les types suivants comme sources de liaison : objets CLR, objets de données ADO.NET, données XML (à partir de requêtes XPath ou LINQ to XML) ou un autre <xref:System.Windows.DependencyObject>.|  
 |Chemin d'accès à la source|Propriété de la source de liaison qui est résolue à la valeur ou à l'ensemble de valeurs qui doit être lié(e).|  
   
  Une propriété de dépendance est un concept spécifique à WPF qui représente une propriété calculée de manière dynamique d'un élément d'interface utilisateur. Par exemple, les propriétés de dépendance ont souvent des valeurs par défaut ou des valeurs fournies par un élément parent. Ces propriétés spéciales sont secondées par des instances de la classe <xref:System.Windows.DependencyProperty> (et non par des champs, comme avec les propriétés standard). Pour plus d’informations, consultez [Vue d’ensemble des propriétés de dépendance](http://msdn.microsoft.com/library/d119d00c-3afb-48d6-87a0-c4da4f83dee5).  
@@ -61,7 +56,7 @@ Cette rubrique présente les fonctionnalités de liaison de données dynamiques 
   Pour plus d’informations sur la liaison de données dans WPF, consultez [Liaison de données (WPF)](http://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e).  
   
 ## <a name="dynamic-properties-in-linq-to-xml-classes"></a>Propriétés dynamiques dans les classes LINQ to XML   
- La plupart des classes LINQ to XML ne constituent pas de réelles sources de données dynamiques WPF ; certaines des informations les plus utiles sont accessibles uniquement par le biais de méthodes (et non de propriétés) et les propriétés dans ces classes n'implémentent pas les notifications de changement. Pour prendre en charge la liaison de données WPF, LINQ to XML expose un ensemble de *propriétés dynamiques*.  
+ La plupart des classes LINQ to XML ne sont pas éligibles comme sources de données dynamiques WPF correctes. Certaines des informations plus utiles sont accessibles uniquement par le biais de méthodes (et non des propriétés) et les propriétés dans ces classes n’implémentent pas de notifications de modification. Pour prendre en charge la liaison de données WPF, LINQ to XML expose un ensemble de *propriétés dynamiques*.  
   
  Ces propriétés dynamiques sont des propriétés d'exécution spéciales qui dupliquent la fonctionnalité de méthodes et de propriétés existantes dans les classes <xref:System.Xml.Linq.XAttribute> et <xref:System.Xml.Linq.XElement>. Elles ont été ajoutées à ces classes uniquement afin de leur permettre d'assumer la fonction de sources de données dynamiques pour WPF. Pour répondre à ce besoin, toutes ces propriétés dynamiques implémentent les notifications de changement. Une référence détaillée pour ces propriétés dynamiques est fournie dans la section suivante, [Propriétés dynamiques LINQ to XML](../designers/linq-to-xml-dynamic-properties.md).  
   
@@ -99,6 +94,3 @@ Cette rubrique présente les fonctionnalités de liaison de données dynamiques 
  [Intégration du format XAML au format WPF](http://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)   
  [Liaison de données (WPF)](http://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e)   
  [Utilisation de la balise de workflow](http://go.microsoft.com/fwlink/?LinkId=98685)
-
-
-

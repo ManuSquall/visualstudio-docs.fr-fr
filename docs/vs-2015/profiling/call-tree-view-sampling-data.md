@@ -1,14 +1,9 @@
 ---
 title: Vue Arborescence des appels - Données d’échantillonnage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method,Call Tree view
 - Call Tree view
@@ -16,13 +11,13 @@ ms.assetid: 5c4e8ec3-d0d3-485a-93bd-9060df4eb739
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dc324b621bfc3e472d6eb86227a6081e3384d2af
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e5b15badb7b5e98c73ccadab41f67c64d60cb05e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798909"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779224"
 ---
 # <a name="call-tree-view---sampling-data"></a>Vue Arborescence des appels - Données d’échantillonnage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,11 +56,8 @@ La vue Arborescence des appels affiche les chemins d’exécution de la fonction
 |**% des échantillons inclusifs**|Pourcentage de tous les échantillons de l’exécution du profilage qui étaient des échantillons inclusifs de cette fonction lorsque celle-ci a été appelée par la fonction parent dans l’arborescence des appels.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour personnaliser les colonnes de la vue Rapport](../profiling/how-to-customize-report-view-columns.md)   
- [Vue Arborescence des appels - Données d’échantillonnage du profileur](../profiling/call-tree-view-sampling-data.md)   
+ [Guide pratique pour personnaliser les colonnes de vue des rapports](../profiling/how-to-customize-report-view-columns.md)   
+ [Mode Arborescence des appels - données d’échantillonnage du profileur](../profiling/call-tree-view-sampling-data.md)   
  [Vue Arborescence des appels - Échantillonnage](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
  [Vue Arborescence des appels - Instrumentation](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [Mode Arborescence des appels](../profiling/call-tree-view-instrumentation-data.md)
-
-
-

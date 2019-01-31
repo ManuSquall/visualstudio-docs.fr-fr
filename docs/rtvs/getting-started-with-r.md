@@ -6,19 +6,19 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: c156993bf2fe425368a2cfebcaca8ac18ea790f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83a4f4ea1add79ce0317ff5823066a0070a407c1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944624"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024095"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Bien démarrer avec Outils R pour Visual Studio
 
-Après avoir installé Outils R pour Visual Studio (RTVS) (voir [Installation](installing-r-tools-for-visual-studio.md)), vous pouvez rapidement vous faire une idée de ce que ces outils ont à offrir. 
+Après avoir installé Outils R pour Visual Studio (RTVS) (voir [Installation](installing-r-tools-for-visual-studio.md)), vous pouvez rapidement vous faire une idée de ce que ces outils ont à offrir.
 
 ## <a name="create-an-r-project"></a>Créer un projet R
 
@@ -93,7 +93,7 @@ Par exemple, les étapes suivantes créent un petit extrait de code pour explore
 
 > [!Tip]
 > Nous vous recommandons d’apporter des modifications et d’appuyer sur **Ctrl**+**Entrée** pour exécuter rapidement le code. Vous pouvez aussi sélectionner tout votre code avec **Ctrl**+**A**, puis appuyer sur **Ctrl**+**Entrée**. Sur des opérations identiques, vous obtiendrez de meilleurs résultats qu’avec la souris.
-> 
+>
 > Par ailleurs, vous pouvez faire glisser et déplacer la fenêtre de tracés à l’extérieur du cadre de Visual Studio et placer tout autre élément désiré sur votre écran. Vous pouvez ensuite redimensionner la fenêtre de tracés à la taille souhaitée, puis l’enregistrer dans un fichier image ou PDF.
 
 1. Ajoutez quelques lignes de code pour inclure un second tracé :

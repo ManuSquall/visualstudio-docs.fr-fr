@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: a0c3be92-c263-4678-9fb9-bafead3bd5f5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e0926c80954c83dd1c0c1a72e7c693e8ea266713
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 062f39644ee69ac03169ab2e59b49ab446654c6f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945023"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042489"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Informations de référence sur l’API du profileur Visual Studio (native)
 Les API du profileur Visual Studio vous permettent de contrôler par programmation la quantité de données collectées et d’insérer des marques d’horodatage et de profil durant le profilage. Pour utiliser des API natives, vous devez inclure le fichier d’en-tête *VSPerf.h* et ajouter *VSPerf.lib* dans votre projet.  

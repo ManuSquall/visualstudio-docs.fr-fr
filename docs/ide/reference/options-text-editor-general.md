@@ -27,15 +27,15 @@ helpviewer_keywords:
 ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce5553f54b5864c27fc4dfa14376e8eb7735c613
-ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
+ms.openlocfilehash: 69c74548340e8b8f642fa1e373bdd424c3c81a69
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54417796"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989742"
 ---
 # <a name="options-text-editor-general"></a>Options, Éditeur de texte, Général
 
@@ -67,7 +67,7 @@ Quand cette option est sélectionnée, les conventions de codage spécifiées du
 
 Quand cette option est sélectionnée, vous pouvez appuyer sur **Ctrl** et pointer sur un élément tout en cliquant sur la souris. Cela vous permet d’atteindre la définition de l’élément sélectionné. Vous pouvez également choisir **Alt** ou **Ctrl** + **Alt** dans la liste déroulante **Utiliser la touche de modification**.
 
-Cochez la case **Ouvrir la définition dans l’aperçu** pour afficher la définition de l’élément dans une fenêtre sans être obligé de quitter votre emplacement actuel dans l’éditeur de code. 
+Cochez la case **Ouvrir la définition dans l’aperçu** pour afficher la définition de l’élément dans une fenêtre sans être obligé de quitter votre emplacement actuel dans l’éditeur de code.
 
 ## <a name="display"></a>Afficher
 

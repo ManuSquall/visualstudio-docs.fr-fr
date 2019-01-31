@@ -2,22 +2,22 @@
 title: Tutoriel Python dans Visual Studio - étape 3, REPL interactif
 titleSuffix: ''
 description: Étape 3 d’une procédure pas à pas portant sur les fonctionnalités de Python dans Visual Studio qui présente la fenêtre REPL interactive de Python.
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9cc9bc13f26707132703851dea5cc3c7de351601
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cf51a53301ad65debe2bb69d33ce8a159aa9612f
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986828"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231881"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Étape 3 : Utiliser la fenêtre REPL interactif
 
@@ -74,7 +74,7 @@ La fenêtre **Interactive** de Visual Studio pour Python offre une expérience u
     ![Modification d’une instruction précédente dans la fenêtre interactive](media/vs-getting-started-python-16-interactive6.png)
 
 1. Répétez le processus pour faire des essais avec différentes valeurs de pas jusqu’à trouver la valeur que vous préférez. Vous pouvez également faire en sorte que la courbe se répète en augmentant la plage, par exemple `range(0, 1800, 12)`.
- 
+
 1. Une fois que vous êtes satisfait du code que vous avez écrit dans la fenêtre **Interactive**, sélectionnez-le, cliquez avec le bouton droit de la souris, sélectionnez **Copier le code** (**Ctrl**+**Maj**+**C**), puis collez-le dans l’éditeur. Notez que cette fonctionnalité spéciale de Visual Studio ne produit aucune sortie, ni les invites `>>>` et `...`. Par exemple, l’image ci-dessous montre l’utilisation de la commande **Copier le code** sur une sélection qui inclut des invites et une sortie :
 
     ![La commande de copie de code de la fenêtre interactive sur une sélection avec des invites et une sortie](media/vs-getting-started-python-17-interactive7.png)

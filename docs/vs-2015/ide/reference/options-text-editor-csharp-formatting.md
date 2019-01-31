@@ -1,14 +1,9 @@
 ---
 title: Options, Éditeur de texte, C#, Mise en forme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting.Spacing
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting.NewLines
@@ -30,13 +25,13 @@ ms.assetid: 5a7bb668-1d0c-4ffe-9508-24592813162e
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9acd9d882fb2cf0decff4c9f4ab657cf831e74ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2406a802b0992b0fffe8a41d99ed600a9e1fc2b3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281253"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800764"
 ---
 # <a name="options-text-editor-c-formatting"></a>Options, Éditeur de texte, C#, Mise en forme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ ms.locfileid: "49281253"
 Utilisez la boîte de dialogue de page de propriétés **Mise en forme** pour définir des options de mise en forme du code dans l’éditeur de code. Pour accéder à cette boîte de dialogue, cliquez sur **Options** dans le menu **Outils**, développez **Éditeur de texte**, développez **C#**, puis cliquez sur **Mise en forme**.  
   
 > [!NOTE]
->  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="general-settings"></a>Paramètres généraux  
  Les paramètres généraux affectent la façon dont l’éditeur de code applique les options de mise en forme au code.  
@@ -66,6 +61,3 @@ Utilisez la boîte de dialogue de page de propriétés **Mise en forme** pour d�
   
 ## <a name="see-also"></a>Voir aussi  
  [Général, Environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)
-
-
-

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: f116066a-4f65-4f2c-94ef-12cbd8cfb598
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f24005473780591a89afcf97eae234976ff81a85
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e5187c3f914a9c276cdc546691b24f123721a7af
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960001"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54990080"
 ---
 # <a name="replace-in-files-command"></a>Remplacer dans les fichiers, commande
 Remplace le texte dans les fichiers à l’aide d’un sous-ensemble des options proposées sous l’onglet **Remplacer dans les fichiers** de la fenêtre **Rechercher et remplacer**.

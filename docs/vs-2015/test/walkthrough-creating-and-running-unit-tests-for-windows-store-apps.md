@@ -1,14 +1,9 @@
 ---
-title: 'Procédure pas à pas : création et exécution de tests unitaires pour les applications du Windows Store | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure pas à pas : Création et exécution de Tests unitaires pour les applications du Windows Store | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, creating
 - unit tests
@@ -17,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 30a8b7a465c85e60b00f2208bd6e51cc55c4bbe7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: dcd09c2a19bd96a02075901f6b58da71a1a9bee9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852529"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754872"
 ---
-# <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Procédure pas à pas : création et exécution de tests unitaires pour les applications Windows Store
+# <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Procédure pas à pas : Création et exécution de Tests unitaires pour les applications du Windows Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio inclut la prise en charge des tests unitaires des applications [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] gérées et comprend des modèles de bibliothèque de tests unitaires pour Visual C#, Visual Basic et Visual C++.  
@@ -119,7 +114,7 @@ Visual Studio inclut la prise en charge des tests unitaires des applications [!I
     >  Vous devez générer la solution pour mettre à jour la liste des tests unitaires dans l'Explorateur de tests.  
   
     > [!WARNING]
-    >  Problème connu concernant Visual Studio : vous devez ouvrir l'Explorateur de tests avant de générer le projet de test.  
+    >  Visual Studio problème connu : Vous devez ouvrir l’Explorateur de tests avant de générer le projet de test.  
   
 3.  Dans l'Explorateur de tests, sélectionnez le test unitaire que vous avez créé.  
   
@@ -144,7 +139,7 @@ Visual Studio inclut la prise en charge des tests unitaires des applications [!I
 ## <a name="external-resources"></a>Ressources externes  
   
 ### <a name="videos"></a>Vidéos  
- [Channel 9 : Unit testing your Windows Store apps built using XAML (Tests unitaires de vos applications du Windows Store en XAML)](http://go.microsoft.com/fwlink/?LinkId=226285)  
+ [Channel 9 Vos applications Windows Store en XAML de tests unitaires](http://go.microsoft.com/fwlink/?LinkId=226285)  
   
 ### <a name="forums"></a>Forums  
  [Visual Studio Unit Testing (Tests unitaires Visual Studio)](http://go.microsoft.com/fwlink/?LinkId=224477)  
@@ -155,6 +150,3 @@ Visual Studio inclut la prise en charge des tests unitaires des applications [!I
 ## <a name="see-also"></a>Voir aussi  
  [Test des applications du Windows Store avec Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
  [Générer et tester une application du Windows Store à l’aide de Team Foundation Build](http://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)
-
-
-

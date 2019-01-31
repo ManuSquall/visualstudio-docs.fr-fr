@@ -2,19 +2,19 @@
 title: Attribuer des licences à des abonnements Visual Studio | Microsoft Docs
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.date: 07/16/2018
 ms.topic: conceptual
 description: Découvrez comment les administrateurs peuvent attribuer des licences aux abonnés
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 6f0bbded7682bd8f7162ae415c6c83711df04a04
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4dfec16161f6cd6b875b38738a9340e12d62f975
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931231"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970121"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Attribuer des licences dans le portail d’administration des abonnements Visual Studio
 
@@ -46,7 +46,7 @@ Voici comment attribuer une licence d’abonnement Visual Studio à un nouvel ut
 
     Pour ajouter vos propres notes de référence à l’abonnement, utilisez la section **Ajouter une référence**.
    > [!div class="mx-imgBorder"]
-   > ![Ajouter vos propres notes de référence à chaque abonnement](media/add-subscriber-reference-notes.png) 
+   > ![Ajouter vos propres notes de référence à chaque abonnement](media/add-subscriber-reference-notes.png)
 
     Après avoir sélectionné les options et entré les données de l’abonné, choisissez **Ajouter** en bas du menu volant **Ajouter l’abonné**.
    > [!div class="mx-imgBorder"]
@@ -54,7 +54,7 @@ Voici comment attribuer une licence d’abonnement Visual Studio à un nouvel ut
 
 4. Une fois que vous avez ajouté l’abonné, un e-mail d’attribution, contenant des instructions supplémentaires, est automatiquement envoyé au nouvel abonné. Vous pouvez renvoyer l’e-mail d’attribution à tout moment en sélectionnant l’abonné et en cliquant sur le bouton **Renvoyer** dans le menu supérieur.
    > [!div class="mx-imgBorder"]
-   > ![Renvoyer un e-mail d’activation à n’importe quel utilisateur ou à plusieurs utilisateurs chaque fois que vous le souhaitez](media/resend-subscriber-activation-emails.png) 
+   > ![Renvoyer un e-mail d’activation à n’importe quel utilisateur ou à plusieurs utilisateurs chaque fois que vous le souhaitez](media/resend-subscriber-activation-emails.png)
 
 ## <a name="bulk-assignments"></a>Attributions en bloc
 
@@ -65,7 +65,7 @@ Voici comment attribuer une licence d’abonnement Visual Studio à un nouvel ut
 2. L’attribution en bloc utilise un modèle Microsoft Excel pour charger les abonnés. Dans la boîte de dialogue permettant de charger plusieurs abonnés, cliquez sur **Télécharger** pour télécharger le modèle.
    > [!div class="mx-imgBorder"]
    > ![Télécharger le modèle Excel pour charger plusieurs abonnés](media/download-template-upload-subscribers.png)
-   > 
+   >
    > [!NOTE]
    > Téléchargez toujours la dernière version du modèle. L’utilisation d’une version antérieure peut faire échouer le chargement en bloc.
 

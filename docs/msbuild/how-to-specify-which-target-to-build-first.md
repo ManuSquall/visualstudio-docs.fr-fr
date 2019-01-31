@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a580ba5b-2919-42d2-ae38-1af991e0205a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1ba67ee5a4ea6831d21163b467f5d638a6f16c5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dc6e8ec70c941035caa0e4b3569f82013a829f15
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967029"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970576"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Procédure : Spécifier la cible à générer en premier
 Un fichier projet peut contenir un ou plusieurs éléments `Target` qui définissent le mode de génération du projet. Le moteur [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) génère le premier projet trouvé, et toutes les dépendances, à moins que le fichier projet ne contienne un attribut `DefaultTargets`, un attribut `InitialTargets` ou qu’une cible ne soit spécifiée en ligne de commande à l’aide du commutateur **-target**.  

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 6da57b83-7b42-4d7c-9aea-8e0a830faf6b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58df3c16de6fd7a4eba95fabb0d67e900ba8152d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 32bd10c1260309856eba14a3a42d2acaac939f6e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917421"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029217"
 ---
 # <a name="summary-view---resource-contention-view"></a>Vue Résumé - Vue Conflit de ressources
 La vue Résumé affiche des informations sur les événements de votre application dans lesquels un thread ou un processus a été interrompu dans l’attente de pouvoir à une ressource.  

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - code snippets, security
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d95b1b95d1859d29f82f7de45aa6ddb9cde7554f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3b4b1aacfc4b75f4ed0fbcbb180987b72e2f01a1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908916"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927565"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Bonnes pratiques pour l’utilisation des extraits de code
 

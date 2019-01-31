@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 6991ea91-5253-451b-923d-22273a3d38b1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 880966e78bd2e27159b1ede81c07aa15aa994e75
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 373fa21a0ec588768017bcbcd8b0fdc4587bf091
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921255"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976522"
 ---
 # <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>Procédure : Déboguer une application ClickOnce avec des autorisations restreintes
 En tant que développeur, vous exécutez probablement votre ordinateur de développement avec des autorisations de confiance totale. Vous ne voyez donc pas les mêmes exceptions de sécurité lors du débogage d’une application ClickOnce que celles que l’utilisateur final peut voir quand il l’exécute avec des autorisations restreintes.  

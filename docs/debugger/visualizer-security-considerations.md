@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: cdd86bd5-b729-409b-a7c6-374efa091eb1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64a9215173b11ea83f988ab548a6301a1532f490
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8b7ef894d249c22cf7b97e23568cd607580affb2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53819559"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922010"
 ---
 # <a name="visualizer-security-considerations"></a>Considérations sur la sécurité du visualiseur
 L'écriture d'un visualiseur implique d'éventuelles menaces pour la sécurité. Aucune attaque connue n'a été répertoriée concernant ces menaces potentielles, mais les développeurs doivent en être informés et prendre les précautions de sécurité appropriées, tel qu'indiqué ici, pour se protéger contre de futures attaques.  

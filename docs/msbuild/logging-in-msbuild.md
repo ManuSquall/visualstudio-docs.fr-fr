@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 9aea2e76-8f60-4234-913d-598e7bbad808
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 259fbda65a745c265315f347e5a04a1cff39ad1c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3a654632bdd551843221e6d4777812983ad73a24
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842459"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989612"
 ---
 # <a name="logging-in-msbuild"></a>Journalisation dans MSBuild
 La journalisation vous permet de surveiller la progression d’une génération. Elle capture dans un fichier journal les événements, messages, avertissements et erreurs liés à la génération.  

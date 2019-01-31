@@ -1,5 +1,6 @@
 ---
 title: Visual Studio Tools pour IA
+titleSuffix: ''
 description: Vue d’ensemble de Visual Studio Tools pour IA
 keywords: ia, visual studio
 author: lisawong19
@@ -11,12 +12,12 @@ ms.devlang: multiple
 ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: bb68e1b7b109b762f11410194076ab2b2eb30bb5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 51ee7cb2ea1e90a749fe8f2409125b42b02970c3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908551"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800928"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools pour IA
 
@@ -46,5 +47,5 @@ Cette extension facilite la formation des modèles sur votre ordinateur local. V
 ## <a name="supported-operating-systems"></a>Supported Operating Systems
 Pour l’instant, cette extension prend en charge les systèmes d’exploitation Windows 64 bits
 
-# <a name="support"></a>Assistance
+## <a name="support"></a>Assistance
 La prise en charge de cette extension est assurée sur le [suivi des problèmes GitHub](http://github.com/Microsoft/vs-tools-for-ai/issues). Vous pouvez envoyer un rapport de bogue ou une suggestion de fonctionnalité, ou encore participer aux discussions.

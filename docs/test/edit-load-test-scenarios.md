@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: fec04f2e-bf38-4d44-b2ec-fa50f58fd0d9
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 18acb181125bcc8bd2f68a93661658f8ba01c79c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8de0016aa452bc27703bf96d03a891ea3c60ed78
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934016"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930548"
 ---
 # <a name="edit-load-test-scenarios"></a>Modifier les scénarios de test de charge
 
@@ -48,7 +48,7 @@ Un scénario comporte plusieurs autres propriétés que vous pouvez modifier à 
 
 |Tâches|Rubriques associées|
 |-|-----------------------|
-|**Ajouter des pauses d’interaction humaine artificielle dans votre scénario :** les temps de réflexion permettent de simuler un comportement humain selon lequel les utilisateurs attendent entre des interactions avec un site web. Ils ont lieu entre les demandes dans un test de performances web et entre les itérations de test dans un scénario de test de charge. L'utilisation de temps de réflexion dans un test de charge peut être utile pour la création de simulations de charge plus précises.|-   [Modifier les temps de réflexion pour simuler les retards d’interaction humaine avec un site web](../test/edit-think-times-in-load-test-scenarios.md)|
+|**Ajouter des pauses d’interaction humaine artificielle dans votre scénario :** Les temps de réflexion permettent de simuler un comportement humain selon lequel les utilisateurs attendent entre des interactions avec un site web. Ils ont lieu entre les demandes dans un test de performances web et entre les itérations de test dans un scénario de test de charge. L'utilisation de temps de réflexion dans un test de charge peut être utile pour la création de simulations de charge plus précises.|-   [Modifier les temps de réflexion pour simuler les retards d’interaction humaine avec un site web](../test/edit-think-times-in-load-test-scenarios.md)|
 |**Spécifiez le nombre d’utilisateurs virtuels pour votre scénario :** vous pouvez configurer les propriétés du modèle de charge pour spécifier le mode d’ajustement de la charge utilisateur simulée pendant un test de charge. Vous obtenez trois modèles de charge intégrés : constant, dans l’étape et en fonction des objectifs. Vous choisissez le modèle de charge et ajustez les propriétés aux niveaux appropriés à vos objectifs de test de charge.|-   [Modifier des modèles de charge pour modéliser les activités des utilisateurs virtuels](../test/edit-load-patterns-to-model-virtual-user-activities.md)|
 |**Configurer la probabilité qu’un utilisateur virtuel exécute un test dans le scénario :** vous pouvez utiliser le la combinaison de tests, qui spécifie la probabilité qu’un utilisateur virtuel exécute un test donné dans un scénario de test de charge. Cela vous permet de simuler la charge de façon plus réaliste. Au lieu d'avoir un seul flux de travail dans vos applications, vous pouvez en avoir plusieurs, ce qui représente une meilleure approximation de la façon dont les utilisateurs finaux interagissent avec vos applications.|-   [Modifier des modèles de combinaison de tests](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)|
 |**Ajouter ou supprimer un test unitaire ou un test de performances web dans un scénario de test de charge :** vous pouvez ajouter ou supprimer un test unitaire ou un test de performances web dans un scénario. Un test de charge contient un ou plusieurs scénarios, chacun contenant un ou plusieurs tests unitaires ou de performances web.|-   [Modifier la combinaison de tests](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)|

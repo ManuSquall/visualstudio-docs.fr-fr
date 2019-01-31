@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 5a74878f-b896-4cca-b968-98d00fe78fb0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fe8a7e30c61105cc78d0e23ac35683e72e82ffc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2050b3014030cc7fe8687e46a6260e6147440a4d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844667"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953105"
 ---
 # <a name="product-and-package-schema-reference"></a>Informations de référence sur le schéma de produit et de package
 Un *fichier produit* est un manifeste XML qui décrit toutes les dépendances externes requis par un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application. Exemples de dépendances externes le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] et Microsoft Data Access Components (MDAC). Un fichier de package est similaire à un fichier de produit, mais est utilisé pour installer les composants dépendent de la culture d’une dépendance, tels que les assemblys localisés, les contrats de licence et documentation.  
