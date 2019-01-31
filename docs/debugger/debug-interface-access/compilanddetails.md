@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ddc7d794-c622-4c63-b2a6-72f8b2d0022a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1325d32c3656a45cab41bd174596113a18c5f58c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 56ed4b317dc9259458ddb9f984c5d086595d7846
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936904"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033919"
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 Informations de compiland sont réparties entre les symboles avec un `SymTagCompiland` balise (détail faible) et un `SymTagCompilandDetails` balise (beaucoup de détails). `SymTagCompilandDetails` nécessite le chargement de symboles supplémentaires. Toutefois, il fournit une mine d’informations sur le module qui n’est pas disponible avec un `SymTagCompiland` symbole.  

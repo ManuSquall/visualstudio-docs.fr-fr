@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 6d73e21e-c04e-48ea-91cc-e517a5f2cd3f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ee2494ffaf8dce2c62564a866c73bb3663e1813
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c66829402c5002f21ec983a3946273f062a85cdf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841117"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017433"
 ---
 # <a name="create-basic-profiling-reports-from-the-command-line"></a>Créer des rapports de profilage de base à partir de la ligne de commande
 Cette rubrique décrit les commandes VSPerfReport de base qui génèrent des rapports de valeurs séparées par des virgules (.*csv*) à partir d’un fichier de données de profilage .*vsp* ou .*vsps*. Pour une description de toutes les options de rapport, consultez [VSPerfReport](../profiling/vsperfreport.md).  

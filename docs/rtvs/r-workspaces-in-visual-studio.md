@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: a72784b0ab265c090f2efd9c5949698118b559ef
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 897b5b82b00235404c599f77b8909b007fc80bb8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857012"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987685"
 ---
 # <a name="control-where-r-code-runs-with-workspaces"></a>Décider où s’exécute le code R avec des espaces de travail
 
@@ -34,7 +34,7 @@ La commande **Outils R** > **Session** > **Réinitialiser** et le bouton de ré
 
 ## <a name="local-workspaces"></a>Espaces de travail locaux
 
-La liste des espaces de travail locaux affiche tous les interpréteurs R que vous avez installés sur votre ordinateur. 
+La liste des espaces de travail locaux affiche tous les interpréteurs R que vous avez installés sur votre ordinateur.
 
 Au démarrage, Visual Studio essaie de détecter automatiquement toutes les versions de R que vous avez installées en examinant la clé de Registre **HKEY_LOCAL_MACHINE\Software\R-Core\\**. Comme cette vérification est effectuée uniquement au démarrage, vous devez redémarrer Visual Studio si vous installez un nouvel interpréteur R.
 
@@ -129,7 +129,7 @@ Les [propriétés de projet](r-projects-in-visual-studio.md#project-properties) 
 
 ![Onglet d’exécution Propriétés du projet avec les paramètres de transfert de fichiers](media/workspaces-remote-file-transfer-filter-settings.png)
 
-Ici, la propriété **Transférer des fichiers à l’exécution** détermine si RTVS doit copier automatiquement les fichiers projet. La valeur de **Fichiers à transférer** filtre ensuite exactement les fichiers à transférer. La valeur par défaut consiste à copier uniquement les fichiers *. R*, *. RMD*, *.sql*, *.md* et *.cpp*. Ce comportement permet d’éviter la copie par inadvertance de fichiers de données volumineux sur le serveur à chaque exécution. 
+Ici, la propriété **Transférer des fichiers à l’exécution** détermine si RTVS doit copier automatiquement les fichiers projet. La valeur de **Fichiers à transférer** filtre ensuite exactement les fichiers à transférer. La valeur par défaut consiste à copier uniquement les fichiers *. R*, *. RMD*, *.sql*, *.md* et *.cpp*. Ce comportement permet d’éviter la copie par inadvertance de fichiers de données volumineux sur le serveur à chaque exécution.
 
 ## <a name="copy-files-from-a-remote-workspace"></a>Copier des fichiers à partir d’un espace de travail distant
 

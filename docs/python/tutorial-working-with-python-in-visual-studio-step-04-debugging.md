@@ -2,22 +2,22 @@
 title: 'Tutoriel : Python dans Visual Studio, étape 4, débogage'
 titleSuffix: ''
 description: Étape 4 d’une procédure pas à pas portant sur les fonctionnalités de Python dans Visual Studio qui explique comment exécuter le code Python dans le débogueur.
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7299765435cae99afedb176f0b8613d7b504b09f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e48619c34774425986888a9210c2c533e4b5d0db
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931539"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231894"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>Étape 4 : Exécuter du code dans le débogueur
 

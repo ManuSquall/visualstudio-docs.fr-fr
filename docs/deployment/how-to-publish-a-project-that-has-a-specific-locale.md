@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 7c4cd83a-f985-4c85-9022-fadb5dbd2b39
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c103ca9cec3c7c09a383f6c785b52f3f5c6f6bd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e106b02c0a454a9e1112bf878000f5f331fe8c7c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928972"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009867"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Procédure : Publier un projet qui a des paramètres régionaux spécifiques
 Une application peut contenir des composants ayant des paramètres régionaux différents. Dans ce scénario, vous devez créer une solution avec plusieurs projets, puis publier des projets distincts pour chacun des paramètres régionaux. Cette procédure montre comment utiliser une macro pour publier le premier projet dans une solution avec les paramètres régionaux « en ». Si vous souhaitez essayer cette procédure avec d'autres paramètres régionaux, veillez à définir `localeString` dans la macro pour que sa valeur corresponde aux paramètres régionaux que vous utilisez (par exemple, « fr » ou « fr-FR »).  

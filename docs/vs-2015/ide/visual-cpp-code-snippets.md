@@ -1,25 +1,20 @@
 ---
 title: Extraits de code Visual C++ | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 74e26fd4-e5ca-4611-a816-0a521b4947a0
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ed64d9dde53b31cfe5f52ce708e4ee96d91fe8ff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: cd24ef7e852d84d3213e024e53e325c0ba1d59fb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861358"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54762077"
 ---
 # <a name="visual-c-code-snippets"></a>Extraits de code Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ Dans Visual Studio, vous pouvez utiliser des extraits de code pour ajouter du co
   
 - Dans le menu **Edition / IntelliSense**, sélectionnez **Insérer un extrait**  
   
-- Utilisez les touches d’accès rapide : **Ctrl + K + X**  
+- Utilisez les touches de raccourci : **CTRL + K + X**  
   
   Vous devez voir une liste de choix commençant par **#if**. Quand vous sélectionnez **#if**, vous devez voir le code suivant ajouté au fichier :  
   
@@ -54,7 +49,7 @@ Dans Visual Studio, vous pouvez utiliser des extraits de code pour ajouter du co
   
 2. Dans le menu **Edition / IntelliSense**, sélectionnez **Entourer de**  
   
-3. Utilisez les touches d’accès rapide : **Ctrl + K + S**  
+3. Utilisez les touches de raccourci : **CTRL + K + S**  
   
    Sélectionnez **#if**. Vous devez voir quelque chose de similaire à :  
   
@@ -179,6 +174,3 @@ class SomeClass {
 {  
   
 ```
-
-
-

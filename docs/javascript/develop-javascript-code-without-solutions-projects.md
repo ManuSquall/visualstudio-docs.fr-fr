@@ -8,17 +8,17 @@ ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e8c42bd40528dfe8567219bdc2bc4a8d216e7c6b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 37061173a7bc0b3d9c3b9b7e011428ec3a297b72
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899754"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55043711"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Développer du code JavaScript et TypeScript dans Visual Studio sans solutions ni projets
 
@@ -32,9 +32,9 @@ Pour commencer, sélectionnez **Ouvrir un dossier** dans la page de démarrage q
 
 ## <a name="npm-integration"></a>Intégration npm
 
-Si le dossier que vous ouvrez contient un fichier *package.json*, vous pouvez cliquer avec le bouton droit sur *package.json* pour afficher un menu contextuel spécifique à npm. 
+Si le dossier que vous ouvrez contient un fichier *package.json*, vous pouvez cliquer avec le bouton droit sur *package.json* pour afficher un menu contextuel spécifique à npm.
 
-![Menu npm dans l’Explorateur de solutions](../javascript/media/solution-explorer-npm-ctx.png) 
+![Menu npm dans l’Explorateur de solutions](../javascript/media/solution-explorer-npm-ctx.png)
 
 Dans le menu contextuel, vous pouvez gérer les packages installés par npm de la même façon que vous [gérez les packages npm](npm-package-management.md) lors de l’utilisation d’un fichier projet.
 
@@ -43,7 +43,8 @@ En outre, le menu vous permet également d’exécuter des scripts définis dans
 ## <a name="build-and-debug"></a>Génération et débogage
 
 ### <a name="packagejson"></a>package.json
-Si le fichier *package.json* dans le dossier spécifie un élément `main`, la commande **Déboguer** sera disponible dans le menu contextuel pour *package.json*. En cliquant dessus, vous démarrez *node.exe* avec le script spécifié comme argument.
+Si le fichier *package.json* dans le dossier spécifie un élément `main`, la commande **Déboguer** sera disponible dans le menu contextuel pour *package.json*.
+En cliquant dessus, vous démarrez *node.exe* avec le script spécifié comme argument.
 
 ### <a name="javascript-files"></a>Fichiers JavaScript
 Vous pouvez déboguer des fichiers JavaScript en cliquant avec le bouton droit sur un fichier et en sélectionnant **Déboguer** dans le menu contextuel. Cette opération démarre *node.exe* avec ce fichier JavaScript comme argument.

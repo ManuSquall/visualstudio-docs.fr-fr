@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: eb6dfe79-f54c-4331-8e36-073688e70973
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee9c3ee6bca6ffa338dc4cf609947b98b88c0498
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 273f726daa7b3f467e4c055cfb52e9584a048c2c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930134"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54954629"
 ---
 # <a name="publish-clickonce-applications"></a>Publier des applications ClickOnce
 Lorsque vous publiez une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pour la première fois, les propriétés de publication peuvent être définies à l'aide de l'Assistant Publication. Seules quelques-unes des propriétés sont disponibles dans l'Assistant ; toutes les autres sont définies à leurs valeurs par défaut.  

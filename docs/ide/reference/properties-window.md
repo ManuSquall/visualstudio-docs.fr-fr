@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: e6e0fa4f-75c4-4a52-af15-281cd61876ca
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 701b2699c0c7097eca29cd853d68c8a0e2d910a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1302b2e035bc884bd6b3e914b848eada79e45236
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875574"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014989"
 ---
 # <a name="properties-window"></a>Propriétés (fenêtre)
 Utilisez cette fenêtre pour afficher et modifier les événements et propriétés au moment du design des objets sélectionnés qui sont situés dans les éditeurs et les concepteurs. Vous pouvez également utiliser la fenêtre **Propriétés** pour afficher et modifier les propriétés des fichiers, des projets et des solutions. Vous trouverez la fenêtre **Propriétés** dans le menu **Affichage**. Vous pouvez également l’ouvrir en appuyant sur F4 ou en tapant **Propriétés** dans la fenêtre **Lancement rapide**.
