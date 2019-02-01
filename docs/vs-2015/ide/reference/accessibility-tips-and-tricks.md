@@ -1,27 +1,22 @@
 ---
 title: Conseils et astuces d’accessibilité │ Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - accessibility [Visual Studio]
 ms.assetid: 6b491d88-f79e-4686-8841-857624bdcfda
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f4fe4f45f6c858ede7bebc7cbbf3a5e734130000
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 77254bea0c4b587df8f4aef8297f17b6b4304339
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241018"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800786"
 ---
 # <a name="accessibility-tips-and-tricks"></a>Conseils et astuces d'accessibilité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,10 +25,10 @@ ms.locfileid: "49241018"
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] inclut des fonctionnalités d’accessibilité intégrées pour utiliser le clavier facilement ainsi que des lecteurs d’écran ou d’autres appareils de technologie d’assistance. Cette rubrique propose des suggestions permettant d’optimiser [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] pour l’accessibilité, ainsi que certaines combinaisons de touches de raccourci utiles.  
   
 > [!NOTE]
->  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="save-your-ide-settings"></a>Enregistrer vos paramètres IDE  
- Vous pouvez personnaliser votre expérience IDE en enregistrant la disposition de vos fenêtres, le schéma de configuration du clavier et d’autres préférences. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+ Vous pouvez personnaliser votre expérience IDE en enregistrant la disposition de vos fenêtres, le schéma de configuration du clavier et d’autres préférences. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="common-windows-shortcut-key-combinations"></a>Combinaisons de touches de raccourci Windows courantes  
  Vous pouvez utiliser un grand nombre de combinaisons de touches de raccourci Windows standard pour exécuter des tâches dans [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Voici quelques-unes de ces combinaisons de touches de raccourci :  
@@ -55,10 +50,7 @@ ms.locfileid: "49241018"
 |Fenêtre Boîte à outils|Ajouter un contrôle à partir de la boîte à outils à un formulaire ou un concepteur|**Entrée**|  
 |Clavier, Environnement, boîte de dialogue Options|Supprimer une combinaison de touches entrée dans l’option **Appuyer sur les touches de raccourci**|**Retour arrière**|  
 |Toutes les fenêtres d’outil|Sélectionner le premier bouton de la barre d’outils de la fenêtre|**Maj** + **Alt**|  
-|Barres d’outils IDE|Sélectionner le premier bouton de la barre d’outils Standard|**Alt**, **Ctrl** + **TAB** **Remarque :** Rappuyez sur **Ctrl** + **TAB** pour sélectionner le premier bouton de la barre d’outils IDE suivante.|  
+|Barres d’outils IDE|Sélectionner le premier bouton de la barre d’outils Standard|**ALT**, **CTRL** + **onglet** **Remarque :**  Appuyez sur **CTRL** + **onglet** à nouveau pour sélectionner le premier bouton de la barre d’outils IDE suivante.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctionnalités d’accessibilité de Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
-
-
-

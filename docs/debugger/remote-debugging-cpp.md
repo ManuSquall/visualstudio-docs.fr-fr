@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 8b8eca0d-122f-4eda-848a-cf0945f207d0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bdbcefe1e0878ef6bf2520edb90ce904e414f211
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 88deb9957766b4e4e0802a1eded352a6ccb04f98
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269759"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231569"
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Un projet Visual C++ dans Visual Studio de débogage à distance
 Pour déboguer une application de Visual Studio sur un autre ordinateur, installer et exécuter les outils à distance sur l’ordinateur où vous allez déployer votre application, configurez votre projet pour vous connecter à l’ordinateur distant à partir de Visual Studio, puis déployer et exécuter votre application.
@@ -96,9 +96,11 @@ Le débogueur distant est pris en charge sur Windows 7 et versions ultérieures 
 11. Sur l’ordinateur Visual Studio, l’exécution doit être arrêtée au point d’arrêt.  
   
     > [!TIP]
-    >  Le déploiement des fichiers peut également faire l’objet d’une autre étape. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le nœud **mymfc**, puis choisissez **Déployer**.  
+    > Le déploiement des fichiers peut également faire l’objet d’une autre étape. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le nœud **mymfc**, puis choisissez **Déployer**.
   
-    Si vous avez des fichiers autres que des fichiers de code qui doivent être utilisés par l’application, vous devez les inclure dans le projet Visual Studio. Créez un dossier de projet pour les fichiers supplémentaires (dans l’**Explorateur de solutions**, cliquez sur **Ajouter > Nouveau dossier**). Ensuite, ajoutez les fichiers au dossier (dans l’**Explorateur de solutions**, cliquez sur **Ajouter > Élément existant**, puis sélectionnez les fichiers). Dans la page **Propriétés** de chaque fichier, définissez **Copier dans le répertoire de sortie** sur **Toujours copier**.
+    Si vous avez des fichiers de code non requis par l’application, vous pouvez les spécifier dans **fichiers supplémentaires à déployer** sur le **débogueur Windows distant** page.
+
+    Ou bien, vous pouvez inclure les fichiers dans votre projet et définir le **contenu** propriété **Oui** dans le **propriétés** page pour chaque fichier. Ces fichiers sont copiés vers le **répertoire de déploiement** spécifié sur le **débogueur Windows distant** page. Vous pouvez également modifier le **Type d’élément** à **copier le fichier** et spécifier des propriétés supplémentaires si vous avez besoin des fichiers à copier dans un sous-dossier de la **répertoire de déploiement**.
   
 ## <a name="set-up-debugging-with-remote-symbols"></a>Configurer le débogage avec des symboles distants 
 

@@ -1,27 +1,22 @@
 ---
 title: Exemples de développement mobile multiplateforme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-mobile
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: bc384c12-fccc-45d7-9fb9-b90d536aa663
 caps.latest.revision: 5
 author: corob-msft
 ms.author: corob
-manager: ghogen
-ms.openlocfilehash: 204aafd41427f46c86146b9867880137cf1b096b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 64f5022d0d4aca15583606caa5215d06357edcf1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795269"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783760"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>Exemples de développement mobile multiplateforme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ Plusieurs des modèles installés par Développement multiplateforme en Visual C
   
 - [Exemple d’application Android Bitmap Plasma](https://code.msdn.microsoft.com/Bitmap-Plasma-Android-77ae296a)  
   
-   Cet exemple fait partie de l’application Bitmap Plasma du Kit de développement natif (NDK) Android. L’exemple illustre une application Android OpenGL ES 2.0 JNI (Java Native Interface) de bout en bout. Il illustre la manipulation directe des mémoires tampons de pixels de bitmaps Android pour générer un effet plasma.  
+   Cet exemple fait partie de l’application Bitmap Plasma du Kit de développement natif (NDK) Android. L’exemple illustre une application Android OpenGL ES 2.0 JNI (Java Native Interface) de bout en bout. Il illustre la manipulation directe des mémoires tampons de pixels de bitmaps Android pour générer un effet plasma.  
   
 - [Exemple de bibliothèque Android TwoLibs](https://code.msdn.microsoft.com/TwoLibs-Android-Library-6396e5c4)  
   
@@ -60,4 +55,3 @@ Plusieurs des modèles installés par Développement multiplateforme en Visual C
   Pour ouvrir un des exemples dans Visual Studio, téléchargez le fichier zip et ouvrez la page **Propriétés** du fichier téléchargé dans l’explorateur. Choisissez le bouton **Débloquer** , puis **OK**. Extrayez le contenu du fichier zip vers un emplacement pratique, puis ouvrez le dossier C++ dans l’exemple extrait et ouvrez le fichier solution.  
   
   Pour générer l’exemple, appuyez sur F7 ou, dans la barre de menus, choisissez **Générer**, **Générer la solution**.
-

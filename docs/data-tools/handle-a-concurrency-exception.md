@@ -15,16 +15,16 @@ helpviewer_keywords:
 ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: b626aa489323d26ef439ade216d1fa97a52a8d13
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: df7d5295cdf9460c8f331b9bf2f49138f9a806ab
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825644"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013650"
 ---
 # <a name="handle-a-concurrency-exception"></a>Gérer une exception d’accès concurrentiel
 
@@ -207,7 +207,7 @@ Vous pouvez maintenant tester le formulaire pour vous assurer qu’il se comport
 
 8. Dans le premier enregistrement sur le formulaire (**ALFKI**), modifiez **ContactName** à **Maria Anders1**.
 
-9. Sélectionnez le **enregistrer** bouton.
+9. Sélectionnez le bouton **Enregistrer**.
 
      L’erreur d’accès concurrentiel est levée, et la boîte de message s’affiche.
 

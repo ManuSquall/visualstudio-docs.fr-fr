@@ -1,14 +1,9 @@
 ---
 title: Propriétés réservées et connues de MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: 99333e61-83c9-4804-84e3-eda297c2478d
 caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6f121701ff5d463c852f386f012fe22a7a46d43e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0ab47b0058b80b49b5892a92ea6eeda1afe5296c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225405"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804174"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>MSBuild, propriétés réservées et connues
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ ms.locfileid: "49225405"
 ## <a name="reserved-and-well-known-properties"></a>Propriétés réservées et connues  
  Le tableau ci-dessous décrit les propriétés prédéfinies de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
-|Propriété|Description|Réservée ou connue|  
+|Property|Description|Réservée ou connue|  
 |--------------|-----------------|-----------------------------|  
 |`MSBuildBinPath`|Chemin d’accès absolu du dossier contenant les binaires [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] actuellement utilisés (par exemple, C:\Windows\Microsoft.Net\Framework\\*versionNumber*). Cette propriété est utile si vous devez faire référence à des fichiers dans le répertoire [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].<br /><br /> N'incluez pas la barre oblique inverse finale dans cette propriété.|Réservée|  
 |`MSBuildExtensionsPath`|Introduite pour la première fois dans .NET Framework 4 : il n'existe aucune différence entre les valeurs par défaut de `MSBuildExtensionsPath` et de `MSBuildExtensionsPath32`. Vous pouvez affecter à la variable d'environnement `MSBUILDLEGACYEXTENSIONSPATH` une valeur non null pour activer le comportement de la valeur par défaut de `MSBuildExtensionsPath` dans les versions antérieures.<br /><br /> Dans .NET Framework 3.5 et les versions antérieures, la valeur par défaut de `MSBuildExtensionsPath` pointe vers le chemin d'accès du sous-dossier MSBuild sous le dossier \Program Files\ ou \Program Files (x86), en fonction du nombre de bits du processus actuel. Par exemple, pour un processus 32 bits sur un ordinateur 64 bits, la propriété pointe vers le dossier \Program Files (x86). Pour un processus 64 bits sur un ordinateur 64 bits, la propriété pointe vers le dossier \Program Files.<br /><br /> N'incluez pas la barre oblique inverse finale dans cette propriété.<br /><br /> Cet emplacement est utile pour placer les fichiers cibles personnalisés. Par exemple, vos fichiers cibles peuvent être installés dans \Program Files\MSBuild\MyFiles\Northwind.targets, puis importés dans les fichiers projet à l'aide du code XML suivant :<br /><br /> `<Import Project="$(MSBuildExtensionsPath)\MyFiles\Northwind.targets"/>`|Connue|  
@@ -60,13 +55,10 @@ ms.locfileid: "49225405"
 |`MSBuildThisFileDirectory`|Partie de répertoire de `MSBuildThisFileFullPath`.<br /><br /> Incluez la barre oblique inverse finale dans le chemin.|Réservée|  
 |`MSBuildThisFileDirectoryNoRoot`|Partie de répertoire de `MSBuildThisFileFullPath`, à l'exclusion du lecteur racine.<br /><br /> Incluez la barre oblique inverse finale dans le chemin.|Réservée|  
 |`MSBuildThisFileExtension`|Partie de l'extension du nom de fichier de `MSBuildThisFileFullPath`.|Réservée|  
-|`MSBuildThisFileFullPath`|Chemin d’accès absolu du fichier projet ou de cibles qui contient la cible en cours d’exécution.<br /><br /> Conseil : vous pouvez spécifier un chemin d’accès relatif dans un fichier de cibles, qui se rapporte au fichier de cibles et non au fichier projet d’origine.|Réservée|  
+|`MSBuildThisFileFullPath`|Chemin d’accès absolu du fichier projet ou de cibles qui contient la cible en cours d’exécution.<br /><br /> Conseil : Vous pouvez spécifier un chemin d’accès relatif dans un fichier de cibles, qui se rapporte au fichier de cibles et non pas au fichier projet d’origine.|Réservée|  
 |`MSBuildThisFileName`|Partie du nom de fichier de `MSBuildThisFileFullPath`, sans l'extension de nom de fichier.|Réservée|  
 |`MSBuildToolsPath`|Chemin d'installation de la version de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] qui est associée à la valeur de `MSBuildToolsVersion`.<br /><br /> N'incluez pas la barre oblique inverse finale dans le chemin.<br /><br /> Cette propriété ne peut pas être remplacée.|Réservée|  
-|`MSBuildToolsVersion`|Version de l'ensemble d'outils [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] qui est utilisée pour générer le projet.<br /><br /> Remarque : un ensemble d’outils [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] se compose de tâches, de cibles et d’outils, qui sont utilisés pour générer une application. Les outils incluent des compilateurs tels que csc.exe et vbc.exe. Pour plus d’informations, consultez les articles [Toolset (ToolsVersion) Ensemble d’outils MSBuild [ToolsVersion])](../msbuild/msbuild-toolset-toolsversion.md) et [Configurations standard et personnalisée de l’ensemble d’outils](../msbuild/standard-and-custom-toolset-configurations.md).|Réservée|  
+|`MSBuildToolsVersion`|Version de l'ensemble d'outils [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] qui est utilisée pour générer le projet.<br /><br /> Remarque : Un ensemble d’outils [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] se compose de tâches, de cibles et d’outils, utilisés pour générer une application. Les outils incluent des compilateurs tels que csc.exe et vbc.exe. Pour plus d’informations, consultez les articles [Toolset (ToolsVersion) Ensemble d’outils MSBuild [ToolsVersion])](../msbuild/msbuild-toolset-toolsversion.md) et [Configurations standard et personnalisée de l’ensemble d’outils](../msbuild/standard-and-custom-toolset-configurations.md).|Réservée|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Référence MSBuild](../msbuild/msbuild-reference.md) [Propriétés MSBuild](msbuild-properties1.md)
-
-
-

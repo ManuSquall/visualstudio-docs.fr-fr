@@ -1,24 +1,20 @@
 ---
 title: 'Procédure : Mise à niveau à partir d’une version d’évaluation | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 717f11fe-be6c-4d6e-9006-e7e5220c02bb
 caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: 415f60116e3120f9690d20d20dfd37c560d5ad9f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 6740755567c24ceb9b70d0e63e159e5d74b7955b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867785"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785956"
 ---
 # <a name="how-to-upgrade-from-a-trial-edition-of-visual-studio"></a>Procédure : Mise à niveau à partir d’une version d’évaluation de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,4 +44,4 @@ Vous pouvez évaluer la version préliminaire de Visual Studio pendant 14 jours
     >  Un accès Internet est requis pour enregistrer et déverrouiller toute édition de Visual Studio. Une fois que Visual Studio a été enregistré, toutefois, la connexion Internet est facultative.
 
 ## <a name="see-also"></a>Voir aussi
- [Installer Visual Studio](../install/install-visual-studio-2015.md) [connexion à Visual Studio](../ide/signing-in-to-visual-studio.md) [Comment : Recherchez la clé de produit Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) [localiser ou modifier la clé de produit pour Team Foundation Server](http://msdn.microsoft.com/library/64f29927-b520-4c9f-b633-bcb527e562cd) [personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+ [Installer Visual Studio](../install/install-visual-studio-2015.md) [connexion à Visual Studio](../ide/signing-in-to-visual-studio.md) [Comment : Recherchez la clé de produit Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) [localiser ou modifier la clé de produit pour Team Foundation Server](http://msdn.microsoft.com/library/64f29927-b520-4c9f-b633-bcb527e562cd) [personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

@@ -1,25 +1,20 @@
 ---
 title: Touches de modification de la planche graphique dans Blend | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 50732733-ff49-41ba-8c44-4f6a3875ec1c
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a730ec3c50880087d9200d5c7003e7b3cb631bca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 10a605de597159130aa14bf7dd623b387e27bc97
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49278185"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771329"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Touches de modification de la planche graphique dans Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,6 +46,3 @@ Certains raccourcis clavier ne sont pas associés à des éléments de menu et i
  [Raccourcis clavier](../designers/keyboard-shortcuts-in-blend.md)   
  [Touches de modification de l’outil Plume](../designers/pen-tool-modifier-keys-in-blend.md)   
  [Touches de modification de l’outil Sélection directe](../designers/direct-selection-tool-modifier-keys-in-blend.md)
-
-
-
