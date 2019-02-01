@@ -1,14 +1,9 @@
 ---
 title: Bonnes pratiques pour l’utilisation des extraits de code | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, best practices
 - code snippets, security
@@ -16,13 +11,13 @@ ms.assetid: a293ec17-4dd7-4a99-8eeb-99f44a822a8b
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1dad7bd7ccddf3645abb11dc55afcdf2e7cce7ad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 750d96442f59c29a8e565e6b57eda292656ad1f7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919908"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770320"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Meilleures pratiques pour l'utilisation des extraits de code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "49919908"
 Le code d’un extrait de code montre uniquement le moyen le plus simple de faire quelque chose. Dans la plupart des cas, le code doit être modifié pour s’adapter à l’application,  
   
 ## <a name="handling-exceptions"></a>Gestion des exceptions  
- Habituellement, l'extrait de code "Try...Catch" empêche les interceptions et réinitialise toutes les exceptions. ce qui peut ne pas être le bon choix pour votre projet. Pour chaque exception, il existe plusieurs façons de répondre. Pour obtenir des exemples, consultez [Comment : gérer une exception à l’aide de try/catch (Guide de programmation C#)](http://msdn.microsoft.com/library/ca8e3773-980e-4767-8633-7408540e9818) et [Try...Catch...Finally, instruction](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b).  
+ Habituellement, l'extrait de code "Try...Catch" empêche les interceptions et réinitialise toutes les exceptions. ce qui peut ne pas être le bon choix pour votre projet. Pour chaque exception, il existe plusieurs façons de répondre. Pour obtenir des exemples, consultez [Guide pratique pour Gérer une Exception à l’aide de try/catch (C# Guide de programmation)](http://msdn.microsoft.com/library/ca8e3773-980e-4767-8633-7408540e9818) et [essayez... Catch... Instruction finally](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b).  
   
 ## <a name="file-locations"></a>Emplacements des fichiers  
  Lorsque vous adaptez des emplacements de fichiers à votre application, vous devez réfléchir à ce qui suit :  
@@ -75,6 +70,3 @@ Le code d’un extrait de code montre uniquement le moyen le plus simple de fair
  [Extraits de code IntelliSense Visual Basic](http://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   
  [Sécurisation des applications](../ide/securing-applications.md)   
  [Extraits de code](../ide/code-snippets.md)
-
-
-

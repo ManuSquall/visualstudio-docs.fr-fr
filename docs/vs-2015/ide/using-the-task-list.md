@@ -1,14 +1,9 @@
 ---
 title: Utilisation de la liste des tâches | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - TaskListWindow
 - VS.TaskList
@@ -20,13 +15,13 @@ ms.assetid: f46a75a8-47b3-4cb6-bb59-b72e3356a664
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d5662aebeb0e7b8da36c52c0c9fd727c860a4221
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f912b17e235e92496fa8ffc573429b7708d9198d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172027"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801168"
 ---
 # <a name="using-the-task-list"></a>Utilisation de la liste des tâches
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ Avec la **liste des tâches** , effectuez le suivi des commentaires de code qui 
   
 #### <a name="to-open-the-task-list"></a>Pour ouvrir la fenêtre Liste des tâches  
   
--   Dans le menu **Affichage**, choisissez **Liste des tâches** (clavier : Ctrl+\\,T).  
+-   Sur le **vue** menu, choisissez **liste des tâches** (clavier : Ctrl+\\,T).  
   
      ![Fenêtre Liste des tâches](../ide/media/vs2015-task-list.png "vs2015_task_list")  
   
@@ -91,7 +86,7 @@ Avec la **liste des tâches** , effectuez le suivi des commentaires de code qui 
  Étant donné que `TODO` est un jeton prédéfini, ce commentaire s’affiche comme une tâche `TODO` dans la liste.  
   
 ###  <a name="customTokens"></a> Jetons personnalisés  
- Par défaut, Visual Studio inclut les jetons suivants : HACK, TODO, UNDONE, NOTE. Ces jetons ne respectent pas la casse.  
+ Par défaut, Visual Studio inclut les jetons suivants : HACK, TODO, ANNULÉE, REMARQUE. Ces jetons ne respectent pas la casse.  
   
  Vous pouvez également créer vos propres jetons personnalisés.  
   
@@ -127,12 +122,9 @@ Avec la **liste des tâches** , effectuez le suivi des commentaires de code qui 
   
 #### <a name="to-create-a-shortcut"></a>Pour créer un raccourci  
   
--   Insérez le pointeur dans le code à l'emplacement où vous souhaitez placer un raccourci. Choisissez **Edition &#124; Signets &#124; Ajouter un raccourci vers la liste des tâches** ou appuyez sur (clavier : Ctrl+K, Ctrl+H).  
+-   Insérez le pointeur dans le code à l'emplacement où vous souhaitez placer un raccourci. Choisissez **modifier &#124; signets &#124; ajouter le raccourci vers la liste des tâches** ou appuyez sur (clavier : Ctrl+K, Ctrl+H  
   
      Pour parcourir les raccourcis figurant dans le code, choisissez un raccourci dans la liste, puis **Tâche suivante** ou **Tâche précédente** dans le menu contextuel.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Liste des tâches, Environnement, boîte de dialogue Options](../ide/reference/task-list-environment-options-dialog-box.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: span::span, constructeur | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::span::span
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 8b5578aa-5e5c-4ac7-87c7-ce87c4246e2c
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c7809e3df78ce5ae0ca451e177420204e09111c2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bd371fac572c347ae2b5299f085f5e063306fc1b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51816357"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783041"
 ---
 # <a name="spanspan-constructor"></a>span::span, constructeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,13 +67,10 @@ span(
  `_Category`  
  Catégorie.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  **En-tête** : cvmarkersobj.h  
   
- **Espace de noms** : Concurrency::diagnostic
+ **Espace de noms :** Concurrency::diagnostic
  
  ## <a name="see-also"></a>Voir aussi
  [span, classe](../profiling/span-class.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Profilage sur des clusters HPC (High Performance Computing) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.hpc.wizard.exeoptions
 - vs.performance.hpc.wizard.summary
@@ -25,13 +20,13 @@ ms.assetid: 1525bbdb-27da-4088-8487-a486cee5e7b3
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f6b0838a7fb3db86290647fadec9ca3572cbdf90
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e952f9611b7bdb4d96e8a50b502ae15e1e6ce528
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809153"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802312"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Profilage sur des clusters HPC (High Performance Computing)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,8 +55,8 @@ Vous pouvez profiler sur des nœuds de calcul de clusters Microsoft Windows HPC 
 |||  
 |-|-|  
 |*%HeadNode%*|Nom du nœud principal du cluster.|  
-|*%FxPath%*|Chemin du programme d’installation de [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]. Sur le support d’installation de [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)], le chemin est le suivant : WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
-|*%ProfilerPath%*|Chemin de la version autonome du programme d’installation des outils de profilage. Sur le média d’installation de [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)], le chemin est le suivant : Standalone Profiler\x64\vs_profiler.exe|  
+|*%FxPath%*|Chemin du programme d’installation de [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]. Sur le [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] support d’installation est le chemin d’accès : WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
+|*%ProfilerPath%*|Chemin de la version autonome du programme d’installation des outils de profilage. Sur le [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] support d’installation est le chemin d’accès : Standalone Profiler\x64\vs_profiler.exe|  
   
 ## <a name="profiling-on-an-hpc-compute-node"></a>Profilage sur un nœud de calcul HPC  
  Pour configurer une session de profilage, spécifiez le cluster HPC et les informations cibles à l’aide de l’Assistant Performance HPC. Vous pouvez définir des options supplémentaires dans les pages de propriétés de session de performance. Les outils de profilage déploient automatiquement les fichiers binaires cibles nécessaires. Ils démarrent également le profileur et l’application HPC.  
@@ -131,7 +126,7 @@ Vous pouvez profiler sur des nœuds de calcul de clusters Microsoft Windows HPC 
   
 ### <a name="hpc-launch-properties"></a>Propriétés de lancement HPC  
   
-|Propriété|Description|  
+|Property|Description|  
 |--------------|-----------------|  
 |**Nœud principal**|Spécifie l’ordinateur qui joue le rôle du nœud principal HPC dans l’exécution du profilage.|  
 |**Nombre de processus**|Spécifie le nombre d’instances de l’application à exécuter dans l’application profilée.|  
@@ -142,7 +137,7 @@ Vous pouvez profiler sur des nœuds de calcul de clusters Microsoft Windows HPC 
   
 ### <a name="advanced-properties"></a>Propriétés avancées  
   
-|Propriété|Description|  
+|Property|Description|  
 |--------------|-----------------|  
 |**Nom du projet**|Nom du projet ou de la solution [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] actuels.|  
 |**Nettoyer après l’arrêt du profileur**|Quand la valeur est true, supprime les fichiers binaires déployés dans le répertoire d’exécution. Les fichiers et répertoires créés par le programme utilisateur ne sont pas supprimés au cours de cette étape. Si le répertoire d’exécution et le répertoire de déploiement ont été créés par l’IDE, ce dernier tente de les supprimer. Cependant, il n’effectue aucune suppression si ces répertoires contiennent des fichiers qu’il n’a pas déployés.|  
@@ -155,6 +150,3 @@ Vous pouvez profiler sur des nœuds de calcul de clusters Microsoft Windows HPC 
 |**Arguments de script de préprofilage**|Spécifie les arguments à passer au script de préprofilage.|  
 |**Script de post-profilage**|Spécifie le chemin et le nom de fichier d’un script à exécuter sur l’ordinateur de développement local à la fin de la session de profilage.|  
 |**Arguments de script de post-profilage**|Spécifie les arguments à passer au script de post-profilage.|
-
-
-

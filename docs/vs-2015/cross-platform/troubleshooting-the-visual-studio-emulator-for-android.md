@@ -1,23 +1,19 @@
 ---
 title: Dépannage de l’émulateur pour Android | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: troubleshooting
 ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 01c73e4701d98422323b92918bd96d0d09bf2dfb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5500af58ab93b41cc73b48f5ebe2d63ed16ca495
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841341"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754936"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Résolution des problèmes liés à l’émulateur Visual Studio pour Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -259,7 +255,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 
   Pour résoudre ce problème, désactivez USB3 dans les paramètres du BIOS de la carte mère et redémarrez l'ordinateur. Vérifiez ensuite si Gigabyte a publié une mise à jour pour le BIOS de votre carte mère.
 
-  Pour plus d’informations, consultez l’article suivant de la Base de connaissances : [Échec de démarrage après l’installation du rôle Hyper-V sur les systèmes Gigabyte](https://support.microsoft.com/en-us/kb/2693144).
+  Pour plus d’informations, consultez l’article suivant de la Base de connaissances : [Échec de démarrage après l’installation du rôle Hyper-V sur les systèmes Gigabyte](https://support.microsoft.com/kb/2693144).
 
 ##  <a name="ADB"></a> Visual Studio se bloque en essayant de déployer l’application sur l’émulateur, ou l’émulateur n’apparaît pas comme cible de débogage dans d’autres IDE
  Si l’émulateur est en cours d’exécution mais ne semble pas être connecté à ADB (Android Debug Bridge) ou s’il ne figure pas parmi les outils Android qui utilisent ADB (par exemple, Android Studio ou Eclipse), vous devrez peut-être ajuster l’emplacement où l’émulateur recherche ADB. L'émulateur utilise une clé de Registre pour identifier l'emplacement de base de votre Kit de développement logiciel Android et il recherche le fichier \platform-tools\adb.exe sous ce répertoire. Pour modifier le chemin d'accès du Kit de développement logiciel Android utilisée par l'émulateur

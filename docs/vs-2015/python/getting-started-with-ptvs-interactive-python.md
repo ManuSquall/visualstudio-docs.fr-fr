@@ -1,27 +1,22 @@
 ---
-title: 'Bien démarrer avec PTVS : Interactive Python | Microsoft Docs'
-ms.custom: ''
+title: 'Bien démarrer avec PTVS : Python interactive | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-python
+ms.topic: conceptual
 ms.assetid: fa594314-bdd0-4da5-874a-57b03414b675
 caps.latest.revision: 5
 author: kraigb
 ms.author: kraigb
-manager: ghogen
-ms.openlocfilehash: 7d9438d7d80480349dd53384c2538742a22b4d36
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4fba8bf658a50a7a7e28abace1eb622ab14f5f26
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183909"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780984"
 ---
-# <a name="getting-started-with-ptvs-interactive-python"></a>Prise en main de PTVS : Interactive Python
+# <a name="getting-started-with-ptvs-interactive-python"></a>Bien démarrer avec PTVS : Python interactive
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les invites interactives ou REPL (read-eval-print loop) constituent un outil essentiel des langages de programmation productifs.  Elles vous permettent d'exécuter des extraits de code pour découvrir et apprendre des API, tester l'utilisation d'API et développer interactivement du code opérationnel à inclure dans des projets ou des programmes.  
@@ -41,4 +36,3 @@ Les invites interactives ou REPL (read-eval-print loop) constituent un outil ess
 ## <a name="see-also"></a>Voir aussi  
  [Documentation du wiki](https://github.com/Microsoft/PTVS/wiki/Interactive-REPL)   
  [Vidéos sur le démarrage et l’exploration de PTVS](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)
-

@@ -1,23 +1,19 @@
 ---
 title: Développement mobile multiplateforme
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-mobile
+ms.topic: conceptual
 ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: c259a8c84a59f99f647f908ded8b272ed4e943a0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e2052dda4062ea120c529a03c3c0c7e43a4c8421
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858829"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54789292"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Développement mobile multiplateforme dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -121,7 +117,7 @@ Vous pouvez créer des applications pour des appareils Android, iOS et Windows �
 |**En savoir plus**|
 |--------------------|
 |[Installer Visual Studio](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[Prise en main de Visual Studio Tools pour Apache Cordova](http://taco.visualstudio.com/en-us/docs/get-started-vs-tools-apache-cordova/) (taco.visualstudio.com)|
+|[Prise en main de Visual Studio Tools pour Apache Cordova](http://taco.visualstudio.com/docs/get-started-vs-tools-apache-cordova/) (taco.visualstudio.com)|
 |[En savoir plus sur l’émulateur Visual Studio pour Android](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
 ##  <a name="CPP"></a> Générer une application pour Android et Windows (C++)
@@ -167,7 +163,7 @@ Vous pouvez créer des applications pour des appareils Android, iOS et Windows �
 
 |**En savoir plus**|
 |--------------------|
-|[En savoir plus sur la création de jeux Unity avec Visual Studio](https://www.visualstudio.com/en-us/features/unitytools-vs.aspx)|
+|[En savoir plus sur la création de jeux Unity avec Visual Studio](https://www.visualstudio.com/features/unitytools-vs.aspx)|
 |[En savoir plus sur Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) (MSDN Library)|
 |[Commencer à utiliser Visual Studio Tools for Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) (MSDN Library)|
 |[En savoir plus sur les dernières améliorations apportées à Visual Studio Tools for Unity 2.0 Preview](http://blogs.msdn.com/b/visualstudio/archive/2014/12/03/visual-studio-tools-for-unity-2-0-preview.aspx) (blog de Visual Studio)|
