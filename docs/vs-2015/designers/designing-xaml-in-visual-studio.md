@@ -1,24 +1,20 @@
 ---
 title: Conception XAML
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 288e2415-9fcf-408e-bc35-9848315e14fd
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a1c58ca9d567db88fb8267d56e071c11ba8aef27
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: ae621a36a8e5226c60ff5b879d359b0e8556aeaa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870227"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754184"
 ---
 # <a name="designing-xaml-in-visual-studio"></a>Conception XAML dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +41,7 @@ Visual Studio et Blend pour Visual Studio fournissent tous deux des outils visue
 
      ![Expérience de rechargement de fichiers](../designers/media/blendfilereload.png "BlendFileReload")
 
--   **Dispositions et paramètres synchronisés :** Les dispositions personnalisées vous permettent d’enregistrer et d’appliquer des personnalisations de disposition de fenêtre d’outil. Visual Studio synchronise ces personnalisations et ces préférences à la fois pour Visual Studio et pour Blend pour Visual Studio sur différents ordinateurs lorsque vous vous connectez avec le même compte Microsoft. Consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+-   **Dispositions et paramètres synchronisés :** Les dispositions personnalisées vous permettent d’enregistrer et d’appliquer des personnalisations de disposition de fenêtre d’outil. Visual Studio synchronise ces personnalisations et ces préférences à la fois pour Visual Studio et pour Blend pour Visual Studio sur différents ordinateurs lorsque vous vous connectez avec le même compte Microsoft. Consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 -   **Un Explorateur de solutions commun :** L’Explorateur de solutions vous donne une vue organisée de vos projets et de leurs fichiers, ainsi qu’un accès aux commandes qui s’y rapportent. Avec l'Explorateur de solutions, il est plus facile de travailler avec des grands projets d'entreprise. Consultez [Projets et solutions](../ide/solutions-and-projects-in-visual-studio.md).
 

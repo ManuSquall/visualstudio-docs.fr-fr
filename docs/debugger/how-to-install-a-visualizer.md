@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 3310ef43-515c-4d97-b0f9-51047247d3da
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e62637581fbb65eb8efd20e048cc364895cfbcdc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6e2ff65e5d410295e9ce7fa0512588b68ca25e55
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914569"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965534"
 ---
 # <a name="how-to-install-a-visualizer"></a>Procédure : Installer un visualiseur
 Après avoir créé un visualiseur, vous devez l'installer de sorte qu'il soit disponible dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. L'installation d'un visualiseur est un processus simple.  

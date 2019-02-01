@@ -1,14 +1,9 @@
 ---
 title: -Upgrade (devenv.exe) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - /upgrade Devenv switch
 - Devenv, /upgrade switch
@@ -17,13 +12,13 @@ ms.assetid: 3468045c-5cc9-4157-9a9d-622452145d27
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 79a00da92ac2da6eb37fa1eef90fa112598d23f3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 465c90736f5470f48d47336bc916ca3cb2c09b6a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264949"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779344"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ devenv SolutionFile | ProjectFile /upgrade
   
  Les solutions ou projets sous contrôle de code source doivent être extraits avant de pouvoir être mis à niveau.  
   
- L’utilisation du commutateur `/upgrade` ne démarre pas [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Les résultats de la mise à niveau peuvent être vus dans le rapport de mise à niveau pour le langage de développement de la solution ou du projet. Aucune information d’erreur ni d’utilisation n’est retournée. Pour plus d’informations sur la mise à niveau des projets dans [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], consultez [Comment : résoudre les problèmes ayant échoué Visual Studio projet mises à niveau](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md).  
+ L’utilisation du commutateur `/upgrade` ne démarre pas [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Les résultats de la mise à niveau peuvent être vus dans le rapport de mise à niveau pour le langage de développement de la solution ou du projet. Aucune information d’erreur ni d’utilisation n’est retournée. Pour plus d’informations sur la mise à niveau des projets dans [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], consultez [Comment : Résoudre les problèmes de mises à niveau du projet Visual Studio échoue](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md).  
   
 ## <a name="example"></a>Exemple  
  Cet exemple met à niveau un fichier solution nommé « MyProject.sln » dans votre dossier par défaut des solutions [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
@@ -59,8 +54,5 @@ devenv "MyProject.sln" /upgrade
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : résoudre les problèmes de mises à niveau du projet Visual Studio échoue](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)   
+ [Guide pratique pour Résoudre les problèmes de mises à niveau du projet Visual Studio échoue](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)   
  [Commutateurs de la ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: CodeIndex, commande | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - command-line tools [Team Foundation Server]
 - TFSConfig
@@ -17,13 +12,13 @@ ms.assetid: b79568d4-6a64-4ca9-a1ee-3e57f92a9c5c
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9586348a1862820540613a5f191132c49fa6a74d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 624a2a735032342d4eb47e2393ecae3ea3247891
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282358"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797292"
 ---
 # <a name="codeindex-command"></a>CodeIndex, commande
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +49,7 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 |**Option**|**Description**|  
 |----------------|---------------------|  
 |**/indexingStatus**|Affichez l'état et la configuration du service d'indexation de code.|  
-|**/setIndexing:**[ on &#124; off &#124; keepupOnly ]|-   **on** : démarrer l’indexation de tous les ensembles de modifications.<br />-   **off** : arrêter l’indexation de tous les ensembles de modifications.<br />-   **off** : arrêter l’indexation des ensembles de modifications créés précédemment et commencer l’indexation de nouveaux ensembles de modifications uniquement.|  
+|**/setIndexing:**[ on &#124; off &#124; keepupOnly ]|-   **on** : démarrer l’indexation de tous les ensembles de modifications.<br />-   **off** : arrêter l’indexation de tous les ensembles de modifications.<br />-   **keepupOnly** : arrêter l’indexation des ensembles de modifications créés précédemment, et commencer l’indexation de nouveaux ensembles de modifications uniquement.|  
 |**/ignoreList:**[ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> Vous pouvez utiliser le caractère générique (*) au début, à la fin ou aux deux extrémités du chemin d’accès au serveur.|Spécifie une liste de fichiers de code et leurs chemins d’accès à ne pas indexer.<br /><br /> -   **add** : ajouter le fichier à ne pas indexer à la liste des fichiers ignorés.<br />-   **remove** : supprimer le fichier à indexer de la liste des fichiers ignorés.<br />-   **removeAll** : effacer la liste des fichiers ignorés et démarrer l’indexation de tous les fichiers.<br />-   **view** : afficher tous les fichiers qui ne sont pas indexés.|  
 |**/listLargeFiles [/fileCount:** `FileCount` **/minSize:** `MinSize`]|Indique le nombre spécifié de fichiers qui dépassent la taille spécifiée en Ko. Vous pouvez ensuite utiliser l’option **/ignoreList** pour exclure ces fichiers de l’indexation.|  
 |**/reindexAll**|Effacez les données indexées précédemment et redémarrez l'indexation.|  
@@ -130,8 +125,5 @@ TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Gestion de la configuration du serveur avec TFSConfig](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62)   
- [Outils de ligne de commande pour TFS](http://msdn.microsoft.com/en-us/be8c997a-b97b-4e59-97f5-04db0a601a6c)
-
-
-
+ [Gestion de la configuration du serveur avec TFSConfig](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62)   
+ [Outils de ligne de commande pour TFS](http://msdn.microsoft.com/be8c997a-b97b-4e59-97f5-04db0a601a6c)

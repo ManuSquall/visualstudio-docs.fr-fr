@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 86f31948-2ca8-47c0-8e8b-c2b817bbf79f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6addfb72ae1e67b846433c9762163138523df68
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6254ce933ccfc54f28e8e0e893932a5fbda27a0a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872409"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981244"
 ---
 # <a name="debug-clickonce-applications-that-use-systemdeploymentapplication"></a>Déboguer des applications ClickOnce qui utilisent System.Deployment.Application
 Dans [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement vous permet de configurer la façon dont une application est mise à jour. Toutefois, si vous souhaitez utiliser et personnaliser avancés [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] des fonctionnalités de déploiement, vous devrez accéder au modèle objet de déploiement fourni par <xref:System.Deployment.Application>. Vous pouvez utiliser le <xref:System.Deployment.Application> API pour des tâches avancées telles que :  

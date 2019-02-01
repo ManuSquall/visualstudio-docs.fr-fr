@@ -1,14 +1,9 @@
 ---
 title: Utilisation de plusieurs processeurs pour générer des projets | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - multiple processors
 - MSBuild, multiple processor systems
@@ -16,13 +11,13 @@ ms.assetid: 49fa36c9-8e14-44f5-8a2b-34146cf6807b
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 67b873b8ab1668ea2fea3b3bf0487339a86c9ffe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3ab8f3896c0a57657966c022f85c7827fedf3d65
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199912"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792841"
 ---
 # <a name="using-multiple-processors-to-build-projects"></a>Utilisation de plusieurs processeurs pour générer des projets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,6 +45,3 @@ MSBuild permet d’exploiter des systèmes dotés de plusieurs processeurs ou de
 ## <a name="see-also"></a>Voir aussi  
  [Génération parallèle de plusieurs projets](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)   
  [Tâches](../msbuild/msbuild-tasks.md)
-
-
-

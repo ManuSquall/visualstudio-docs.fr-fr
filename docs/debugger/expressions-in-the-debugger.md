@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 70f9b531-44c7-4d77-980d-5eddbf2bff41
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b6d4461768490d67d4d1226ae7c7877dc3c9010
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9dbf98cf8fd6ae7990440e820febd860138b9162
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837236"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009854"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Expressions dans le débogueur Visual Studio
 Le débogueur Visual Studio inclut des évaluateurs d’expression qui fonctionnent lorsque vous entrez une expression dans la boîte de dialogue **Espion express** , la fenêtre **Espion** ou la fenêtre **Exécution** . Les évaluateurs d’expression travaillent également dans la fenêtre **Points d’arrêt** et à beaucoup d’autres emplacements du débogueur.

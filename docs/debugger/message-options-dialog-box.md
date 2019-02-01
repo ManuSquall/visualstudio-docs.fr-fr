@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 88ad85af-3f56-4df1-98b6-fab34c1e5874
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3f71e33bbb52506760d5b83f50e459473df8077
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6e8017eb180c76a18c889d764ba73c684419a77a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861745"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54996426"
 ---
 # <a name="message-options-dialog-box"></a>Options des messages, boîte de dialogue
 Utilisez cette boîte de dialogue pour sélectionner les messages sont répertoriés dans [vue Messages](../debugger/messages-view.md). Pour afficher cette boîte de dialogue, choisissez **Messages du journal** à partir de la **Spy** menu.  

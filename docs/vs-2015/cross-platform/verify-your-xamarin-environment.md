@@ -1,21 +1,17 @@
 ---
 title: Vérifier votre environnement Xamarin | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: fd39882e-06d1-4b39-80d2-4d07b6e4f8f5
 caps.latest.revision: 15
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: fa7495673b1c063c210a86734811a34af8855740
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 220931b3c00087b778b4c886046795b3f83acaa0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794346"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766995"
 ---
 # <a name="verify-your-xamarin-environment"></a>Vérifier votre environnement Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,4 +113,3 @@ ms.locfileid: "51794346"
 2.  Dans l’Assistant Installation pour Xamarin qui s’affiche, cliquez sur **Suivant** , puis sur **Modifier**.  
   
 3.  Dans la liste des fonctionnalités facultatives à installer, développez **Xamarin for Visual Studio 2015**, choisissez **will be installed on local drive**, puis cliquez sur **Suivant** pour procéder à l’ajout de la fonctionnalité.
-

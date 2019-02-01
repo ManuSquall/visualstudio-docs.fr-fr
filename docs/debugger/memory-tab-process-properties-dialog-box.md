@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: a70785f2-5997-40ec-a90f-80a52449768b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 780f741e20ed6a7a328904d7ddcadfb0025ac869
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ccafbcf829b78fa4e1c12b3a46c46dfa59e3e863
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886512"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54996400"
 ---
 # <a name="memory-tab-process-properties-dialog-box"></a>Onglet Mémoire de la boîte de dialogue Propriétés du processus
 Utilisez le **mémoire** tab pour montrer comment un processus utilise la mémoire. Pour afficher le [boîte de dialogue Propriétés de processus](../debugger/process-properties-dialog-box.md), déplacez le focus à un [vue processus](../debugger/processes-view.md) fenêtre. Sélectionnez n’importe quel nœud de processus dans l’arborescence, puis choisissez **propriétés** à partir de la **vue** menu.  
