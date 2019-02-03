@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 56e3490c-eed5-4841-b1bf-eefe778b6ac9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c16c2cb00bf91d3fc0d991be71ba9b387d5a09cb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f2d71192b38ea14ade737ecb4b34e3cc25f8b91d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828301"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984715"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;fichier&gt; , élément (application ClickOnce)
 Identifie tous les fichiers de l’autre téléchargé et utilisé par l’application.  
@@ -94,7 +94,7 @@ Identifie tous les fichiers de l’autre téléchargé et utilisé par l’appli
 |`optional`|Optionnel. Spécifie si ce fichier doit télécharger lorsque l’application est d’abord exécutée, ou si le fichier doit résider uniquement sur le serveur jusqu'à ce que l’application le demande à la demande. Si `false` ou non définie, le fichier est téléchargé lors de l’application est tout d’abord exécuter ou installée. Si `true`, un `group` doit être spécifié pour le manifeste d’application soit valide. `optional` ne peut pas être true si `writeableType` est spécifié avec la valeur `applicationData`.|  
 |`writeableType`|Optionnel. Spécifie que ce fichier est un fichier de données. Actuellement, la seule valeur valide est `applicationData`.|  
 
-## <a name="typelib"></a>bibliothèque de types  
+## <a name="typelib"></a>typelib  
  Le `typelib` élément est un enfant facultatif de l’élément de fichier. L’élément décrit la bibliothèque de types qui appartient au composant COM. L’élément a les attributs suivants.  
 
 |Attribut|Description|  
@@ -160,10 +160,10 @@ Identifie tous les fichiers de l’autre téléchargé et utilisé par l’appli
 
  Si un manifeste contient un fichier qui n’est pas haché, ce manifeste ne peut pas être numériquement signé, car les utilisateurs ne peuvent pas vérifier le contenu d’un fichier non hachée.  
 
-## <a name="dsigtransforms"></a>dsig : TRANSFORMS  
+## <a name="dsigtransforms"></a>dsig:Transforms  
  Le `dsig:Transforms` élément est un enfant requis de le `hash` élément. L’élément `dsig:Transforms` ne comporte pas d’attributs.  
 
-## <a name="dsigtransform"></a>dsig : Transform  
+## <a name="dsigtransform"></a>dsig:Transform  
  Le `dsig:Transform` élément est un enfant requis de le `dsig:Transforms` élément. L’élément `dsig:Transform` a les attributs suivants.  
 
 
@@ -179,7 +179,7 @@ Identifie tous les fichiers de l’autre téléchargé et utilisé par l’appli
 |-------------| - |
 | `Algorithm` | L’algorithme utilisé pour calculer le condensat pour ce fichier. La seule valeur utilisée par [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] est `http://www.w3.org/2000/09/xmldsig#sha1`. |
 
-## <a name="dsigdigestvalue"></a>dsig : DigestValue  
+## <a name="dsigdigestvalue"></a>dsig:DigestValue  
  Le `dsig:DigestValue` élément est un enfant requis de le `hash` élément. L’élément `dsig:DigestValue` ne comporte pas d’attributs. Sa valeur de texte est le hachage calculé pour le fichier spécifié.  
 
 ## <a name="remarks"></a>Notes  

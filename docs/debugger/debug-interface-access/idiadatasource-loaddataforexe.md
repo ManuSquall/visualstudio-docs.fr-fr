@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d94a1068-f53f-44b5-b6fb-00dec361a7f2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13b852e917e55803fd37687ced86f819e0b591e1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 215b228c14a7928f7f60e5e668c246815509f95f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961027"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939190"
 ---
 # <a name="idiadatasourceloaddataforexe"></a>IDiaDataSource::loadDataForExe
 S’ouvre et prépare les données de débogage associées au fichier.exe/.dll.  

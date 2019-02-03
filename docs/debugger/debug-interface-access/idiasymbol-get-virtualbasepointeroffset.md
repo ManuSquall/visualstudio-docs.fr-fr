@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a4f2649c-6702-491c-90a1-d6d669258c51
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1d55b63827c13c4b92ea2495de7849a321876a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8bf64bc580bfa9a9a869b6f833d74f577a74fea9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902602"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924502"
 ---
 # <a name="idiasymbolgetvirtualbasepointeroffset"></a>IDiaSymbol::get_virtualBasePointerOffset
 Récupère le décalage du pointeur de base virtuel.  

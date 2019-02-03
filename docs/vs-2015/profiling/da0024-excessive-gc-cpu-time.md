@@ -1,14 +1,9 @@
 ---
 title: 'DA0024 : Temps CPU GC excessif | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0024
 - vs.performance.24
@@ -17,21 +12,21 @@ ms.assetid: 228872da-77d0-4da5-b455-ac57fb1867c9
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 910f66a31f959fe15cc7165eda4e531e7965e670
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: eae77a7685bbc9e8dc1613603baec9a5c93ad285
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754258"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771067"
 ---
-# <a name="da0024-excessive-gc-cpu-time"></a>DA0024 : Temps CPU GC excessif
+# <a name="da0024-excessive-gc-cpu-time"></a>DA0024 : Temps processeur GC excessif
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Id de règle | DA0024 |  
 | Catégorie de |. Utilisation de NET Framework |  
 | Méthode de profilage | Tous les |  
-| Message | % temps dans GC est très élevé. Il existe une quantité excessive de surcharge de garbage collection. |  
+| Message | % temps dans GC est très élevé. % de temps dans GC très élevé. Volume de surcharge de garbage collection trop élevé.  
 | Type de règle | Avertissement |  
   
  Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 10 échantillons pour déclencher cette règle.  
@@ -47,12 +42,9 @@ Id de règle | DA0024 |
  Cette règle se déclenche lorsque le temps consacré au garbage collection est extrêmement important, par rapport au temps total de traitement de l’application.  
   
 > [!NOTE]
->  Lorsque le temps consacré au garbage collection est important, mais pas excessif par rapport au temps total de traitement de l’application, l’avertissement [DA0023 : Temps CPU GC élevé](../profiling/da0023-high-gc-cpu-time.md) est déclenché à la place de cette règle.  
+>  Quand le temps consacré au garbage collection est significatif mais pas excessif par rapport au temps total de traitement de l’application, l’avertissement [DA0023 : Temps CPU GC élevé](../profiling/da0023-high-gc-cpu-time.md) est déclenché à la place de cette règle.  
   
 ## <a name="how-to-investigate-a-warning"></a>Comment rechercher la cause d’un avertissement  
  Double-cliquez sur le message dans la fenêtre Liste d’erreurs pour accéder à la [vue Marques](../profiling/marks-view.md) des données de profilage. Accédez à la colonne **Mémoire CLR .NET\\% temps dans le GC**. Déterminez s’il existe des phases spécifiques de l’exécution du programme durant lesquelles la surcharge du garbage collection de mémoire managée est plus importante. Comparez les valeurs de la colonne % temps dans le GC au taux du garbage collection des colonnes **Nombre de collections de la génération 0**, **Nombre de collections de la génération 1** et **Nombre de collections de la génération 2**.  
   
  La colonne % temps dans le GC contient le pourcentage de temps qu’une application a consacré au garbage collection, proportionnellement au temps total de traitement. Toutefois, il se peut que cette valeur soit très élevée, sans qu’un garbage collection excessif ne soit en cause. Pour plus d’informations sur la façon dont est calculée la valeur de la colonne % temps dans le GC, consultez [Difference Between Perf Data Reported by Different Tools – 4](http://go.microsoft.com/fwlink/?LinkId=177863) du blog **Weblog de Maoni** sur le site MSDN. Si des erreurs de page se produisent ou si l’application est devancée par d’autres tâches prioritaires sur l’ordinateur pendant le garbage collection, les valeurs du compteur % temps dans le GC refléteront ces retards supplémentaires.
-
-
-

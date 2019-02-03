@@ -1,14 +1,9 @@
 ---
 title: 'DA0018 : Application 32 bits s’exécutant aux limites de la mémoire managée du processus | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.18
 - vs.performance.DA0018
@@ -17,21 +12,21 @@ ms.assetid: 98eb2d96-f92f-42f9-915c-e5ac2330ffbf
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: aeca49e13a2d7181d74f48522786185f4be9ed58
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6418a39d7e53a3edaa48b3cd003d35d95cba386e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722253"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773285"
 ---
-# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018 : application 32 bits s'exécutant aux limites de la mémoire managée du processus
+# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018 : Application 32 bits s’exécutant aux limites de la mémoire managée du processus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Id de règle | DA0018 |  
+Rule Id|DA0018|  
 | Catégorie | Utilisation des outils de profilage |  
 | Méthode de profilage | Échantillonnage |  
-| Message | Géré les allocations de mémoire proche de la limite par défaut pour un processus 32 bits. Votre application peut être liée à la mémoire. |  
+| Message | Géré les allocations de mémoire proche de la limite par défaut pour un processus 32 bits. Votre application peut être liée à la mémoire.  
 | Type de règle | Avertissement |  
   
  Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 10 échantillons pour déclencher cette règle.  
@@ -74,6 +69,3 @@ Id de règle | DA0018 |
   Pour alléger les contraintes architecturales de mémoire virtuelle associées à la taille de la partie privée d’un espace d’adressage de processus, exécutez ce processus 32 bits sur un ordinateur 64 bits.  Un processus 32 bits exécuté sur un ordinateur 64 bits peut acquérir jusqu’à 4 Go de mémoire virtuelle privée.  
   
   Un processus 64 bits exécuté sur un ordinateur 64 bits peut acquérir jusqu’à 8 To de mémoire virtuelle. Recompilez l’application pour qu’elle s’exécute comme une application 64 bits native. Cette règle possède un caractère informatif et ne nécessite pas forcément d’action corrective.
-
-
-

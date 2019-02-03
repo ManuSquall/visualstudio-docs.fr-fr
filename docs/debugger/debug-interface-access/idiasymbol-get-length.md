@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cc62f028-d195-4fbf-93bc-10b08bef52d2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37e32585e44c7100d673b35e99ad0db081caa9fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b536aae5431163ae8ac6d7bd2a52d23ced662447
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824234"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941500"
 ---
 # <a name="idiasymbolgetlength"></a>IDiaSymbol::get_length
 Récupère le nombre de bits ou octets de mémoire utilisée par l’objet représenté par ce symbole.  

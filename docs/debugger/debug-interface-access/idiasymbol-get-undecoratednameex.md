@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 579aed0b-c57d-41a1-a94a-3bf665fd4a9d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 715ab90837441974c05176c69c53366199e3543c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1db5d9b876beecc68345075a624e0368d8115999
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932179"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928827"
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 Nom de (liaison) de décoré de tout ou partie de l’extrait d’un nom non décoré pour C++.  
@@ -59,9 +59,9 @@ HRESULT get_undecoratedNameEx( 
 |UNDNAME_NO_ALLOCATION_MODEL|0x0008|Désactive l’expansion du modèle de déclaration.|  
 |UNDNAME_NO_ALLOCATION_LANGUAGE|0x0010|Désactive l’expansion du spécificateur de langage de déclaration.|  
 |UNDNAME_RESERVED1|0x0020|RÉSERVÉ.|  
-|UNDNAME_RESERVED2|0 x 0040|RÉSERVÉ.|  
+|UNDNAME_RESERVED2|0x0040|RÉSERVÉ.|  
 |UNDNAME_NO_THISTYPE|0x0060|Désactive tous les modificateurs sur la `this` type.|  
-|UNDNAME_NO_ACCESS_SPECIFIERS|0 x 0080|Désactive l’expansion de spécificateurs d’accès pour les membres.|  
+|UNDNAME_NO_ACCESS_SPECIFIERS|0x0080|Désactive l’expansion de spécificateurs d’accès pour les membres.|  
 |UNDNAME_NO_THROW_SIGNATURES|0x0100|Désactive l’expansion de « throw signatures » pour les fonctions et les pointeurs vers des fonctions.|  
 |UNDNAME_NO_MEMBER_TYPE|0x0200|Désactive l’expansion de `static` ou `virtual` membres.|  
 |UNDNAME_NO_RETURN_UDT_MODEL|0x0400|Désactive l’expansion du modèle Microsoft pour retourne UDT.|  
@@ -71,7 +71,7 @@ HRESULT get_undecoratedNameEx( 
 |UNDNAME_HAVE_PARAMETERS|0x4000|Les paramètres de modèle réels sont disponibles.|  
 |UNDNAME_NO_ECSU|0x8000|Supprime l’enum/classe/struct/union.|  
 |UNDNAME_NO_IDENT_CHAR_CHECK|0x10000|Supprime la vérification des caractères d’identificateur valide.|  
-|UNDNAME_NO_PTR64|0 x 20000|N’inclut pas de ptr64 dans la sortie.|  
+|UNDNAME_NO_PTR64|0x20000|N’inclut pas de ptr64 dans la sortie.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9201409e-b4b1-4e2e-a9f8-d17678ac538b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e5552f242e2c53791fd4afc7831a2c5b3cadcdf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f356dec92e1553eba0b8704f6d456b4d1fb4326f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989920"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54916340"
 ---
 # <a name="idiaframedatagetprogram"></a>IDiaFrameData::get_program
 Récupère la chaîne de programme qui est utilisée pour calculer le Registre défini avant l’appel à la fonction active.  
