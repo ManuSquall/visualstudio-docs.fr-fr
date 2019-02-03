@@ -1,14 +1,9 @@
 ---
-title: Guide pratique pour choisir une méthode de collecte | Microsoft Docs
-ms.custom: ''
+title: 'Procédure : Choisir une méthode de collecte | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, choosing collection method
 - profiling tools, choosing collection method
@@ -17,15 +12,15 @@ ms.assetid: c87cfd3a-0fc7-49ae-9c05-d8480891cc63
 caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6ca8018b572671f349c058e314b26f7897e421b9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 187a45a925b8124309da44e114ac63e2212bf7c9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727630"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792874"
 ---
-# <a name="how-to-choose-collection-methods"></a>Guide pratique pour choisir une méthode de collecte
+# <a name="how-to-choose-collection-methods"></a>Procédure : choisir des méthodes de collecte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les outils de profilage de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prennent en charge trois méthodes de collecte des données de performances : l’échantillonnage, l’instrumentation et l’accès concurrentiel. Vous pouvez également utiliser les méthodes d’instrumentation et d’échantillonnage pour collecter des données de durée de vie et d’allocation de la mémoire .NET.  
@@ -105,6 +100,3 @@ Les outils de profilage de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prennent
  [Configuration de sessions de performance](../profiling/configuring-performance-sessions.md)   
  [Présentation des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)   
  [Propriétés d’une session de performance](../profiling/performance-session-properties.md)
-
-
-

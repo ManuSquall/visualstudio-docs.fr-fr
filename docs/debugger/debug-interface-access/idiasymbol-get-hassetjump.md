@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 22656206-dccf-40ed-b179-fc016d1b262a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5318dde424344d85818c223473d272da5aa10fdc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a9ce12ce3497e47e302233d739a11b4d0e527c40
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923411"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034166"
 ---
 # <a name="idiasymbolgethassetjump"></a>IDiaSymbol::get_hasSetJump
 Récupère un indicateur qui spécifie si la fonction contient une utilisation de la [setjmp](/cpp/c-runtime-library/reference/setjmp) commande (couplé avec le [longjmp](/cpp/c-runtime-library/reference/longjmp) commande, elles forment la méthode C-style de gestion des exceptions).  

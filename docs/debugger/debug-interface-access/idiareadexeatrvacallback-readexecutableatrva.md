@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3c1e965f-8f05-41a8-86d8-01830b2377c9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8536d4ef7c6767920eb4d1bc9f3d0dcb44349714
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f4a075369a9064425bd0cffe096dbe96ca30b402
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907240"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999104"
 ---
 # <a name="idiareadexeatrvacallbackreadexecutableatrva"></a>IDiaReadExeAtRVACallback::ReadExecutableAtRVA
 Lit le nombre spécifié d’octets à partir du spécifié adresse virtuelle relative (RVA) à partir du fichier exécutable.  

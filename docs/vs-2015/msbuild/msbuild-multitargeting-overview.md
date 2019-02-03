@@ -1,25 +1,20 @@
 ---
 title: Vue d’ensemble du multiciblage MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 ms.assetid: eecbcd65-9fbc-4307-a321-46d3c3b79b12
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: da5d8d5aae19bee458a6d0750cb0d8cd4efa8c4d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 543fde0c09d97d0001210c401fdc4cf81f48a698
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243818"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800378"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Vue d'ensemble du multi-ciblage MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +23,7 @@ ms.locfileid: "49243818"
 MSBuild vous permet de compiler une application pour l’exécuter sur une version du .NET Framework donnée et sur une plateforme système donnée. Par exemple, vous pouvez compiler une application qui s’exécute sur le .NET Framework version 2.0 sur une plateforme 32 bits, et compiler la même application pour qu’elle s’exécute sur le .NET Framework version 4.5 sur une plateforme 64 bits.  
   
 > [!IMPORTANT]
->  Malgré le nom « MULTICIBLAGE », un projet peut cibler uniquement un seul framework et qu’une seule plateforme à la fois.  
+>  Malgré le nom « multiciblage », un projet peut cibler uniquement un seul framework et une seule plateforme à la fois.  
   
  Voici quelques-unes des fonctionnalités de ciblage de MSBuild :  
   
@@ -56,6 +51,3 @@ MSBuild vous permet de compiler une application pour l’exécuter sur une versi
   
 ## <a name="troubleshooting"></a>Résolution des problèmes  
  Des erreurs peuvent se produire si vous tentez de référencer un assembly qui ne fait pas partie du contexte cible. Pour plus d’informations sur ces erreurs et la procédure à suivre pour y remédier, consultez [Dépannage des erreurs de ciblage du .NET Framework](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md).
-
-
-

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: de070ef4-6c9d-43ca-911c-5245cbcb8dbe
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f99c7fec3afa2f086f835d0d6295bafdcbdfdf29
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eddf32b495ab5f2eda2e190a0461e01452f70ed6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910567"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009789"
 ---
 # <a name="idiaframedatagetrelativevirtualaddress"></a>IDiaFrameData::get_relativeVirtualAddress
 Récupère l’adresse virtuelle relative (RVA) du code pour le frame.  

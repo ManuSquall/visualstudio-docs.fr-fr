@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d04ddd9a-812d-46e4-bd39-28bdf3edfb70
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ab330bf8062a3c51773368512c66403da9e79a0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b8f996ffdae69c1a31b4c8a09f7c93b47945e077
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919636"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042154"
 ---
 # <a name="idiasymbolgetlibraryname"></a>IDiaSymbol::get_libraryName
 Récupère le nom de fichier du fichier de bibliothèque ou un objet à partir duquel l’objet a été chargé.  

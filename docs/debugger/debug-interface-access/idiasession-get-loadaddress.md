@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5162ae1a-38e3-4571-8995-4ed9be1dec3e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd52a6cba05c4757eaefcc1518d4e659c4c89643
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 239f8f1f3d7dc503a7a3781e41e575d9e677803d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951259"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54917509"
 ---
 # <a name="idiasessiongetloadaddress"></a>IDiaSession::get_loadAddress
 Récupère l’adresse de chargement du fichier exécutable qui correspond aux symboles dans ce magasin de symboles.  

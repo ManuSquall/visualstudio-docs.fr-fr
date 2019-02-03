@@ -1,14 +1,9 @@
 ---
-title: Guide pratique pour créer des modèles de projet | Microsoft Docs
-ms.custom: ''
+title: 'Procédure : Créer des modèles de projet | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.ExportTemplateWizard
 helpviewer_keywords:
@@ -21,15 +16,15 @@ ms.assetid: a1a6999d-a34c-48a8-b1cf-027eb5c76398
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: fb68a9902fc3adf9f2643b52e069cf182d9ca75a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9a7a48039699c5bb35e07a21e5c5c3be8ae8585f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225508"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785911"
 ---
-# <a name="how-to-create-project-templates"></a>Guide pratique pour créer des modèles de projet
+# <a name="how-to-create-project-templates"></a>Procédure : créer des modèles de projet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette procédure vous permet de créer un modèle à l’aide de l’Assistant **Exportation de modèle**, qui met en package votre modèle dans un fichier .zip. Vous pouvez également créer des modèles au format de fichier VSIX pour améliorer le déploiement en utilisant l’extension de l’Assistant Exportation de modèle, ou avec les modèles inclus dans le [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)], ou vous pouvez créer manuellement des modèles.  
@@ -43,7 +38,7 @@ Cette procédure vous permet de créer un modèle à l’aide de l’Assistant *
   
 2.  Modifiez le projet jusqu’à ce qu’il soit prêt à être exporté en tant que modèle.  
   
-3.  Selon les besoins, modifiez les fichiers de code pour indiquer où le remplacement des paramètres doit avoir lieu. Pour plus d’informations sur le remplacement des paramètres, consultez [Guide pratique pour substituer des paramètres dans un modèle](../ide/how-to-substitute-parameters-in-a-template.md).  
+3.  Selon les besoins, modifiez les fichiers de code pour indiquer où le remplacement des paramètres doit avoir lieu. Pour plus d’informations sur le remplacement de paramètres, consultez [Comment : substituer des paramètres dans un modèle](../ide/how-to-substitute-parameters-in-a-template.md)  
   
 4.  Dans le menu **Fichier**, cliquez sur **Exporter le modèle**. L’Assistant **Exportation de modèle** s’ouvre.  
   
@@ -64,6 +59,3 @@ Cette procédure vous permet de créer un modèle à l’aide de l’Assistant *
 ## <a name="see-also"></a>Voir aussi  
  [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)   
  [Guide pratique pour créer des modèles d’élément](../ide/how-to-create-item-templates.md)
-
-
-

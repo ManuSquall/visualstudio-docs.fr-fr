@@ -1,14 +1,9 @@
 ---
 title: Affichage de la structure du code | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.documentoutline.window
 - vs.objectbrowser
@@ -32,13 +27,13 @@ ms.assetid: e6064f58-5ad9-4f05-8c3f-12e994b6583f
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d110056488b7555bc7bbccc5cbad3205d9de7405
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c6a020ffcd3fa458bb0e1c5bdffd3716ed23f225
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901643"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801210"
 ---
 # <a name="viewing-the-structure-of-code"></a>Affichage de la structure du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +50,7 @@ Vous pouvez examiner les objets et les membres dans des projets Visual Studio, a
   
  [Fenêtre Définition de code (C#, C++)](#BKMK_CodeDefinition)  
   
- Vous pouvez également utiliser **l’Explorateur de solutions** pour parcourir les types et membres dans vos projets, rechercher des symboles, afficher la hiérarchie d’appels d’une méthode, rechercher les références des symboles et bien plus encore sans avoir à basculer entre les différentes fenêtres d’outil répertoriés précédemment.  
+ Vous pouvez également utiliser l’**Explorateur de solutions** pour parcourir les types et les membres dans vos projets, rechercher des symboles, afficher la hiérarchie d’appels d’une méthode, rechercher les références des symboles, etc., sans avoir à basculer entre les différentes fenêtres d’outils répertoriées précédemment.  
   
  Si vous disposez de Visual Studio Enterprise, vous pouvez utiliser les plans de code pour visualiser la structure de votre code et ses dépendances sur l’ensemble de la solution, et explorer les parties du code qui vous intéressent. Pour plus d’informations, consultez [Mapper les dépendances dans vos solutions](../modeling/map-dependencies-across-your-solutions.md).  
   
@@ -229,6 +224,3 @@ Fenêtre Hiérarchie d'appels
   
 ## <a name="see-also"></a>Voir aussi  
  [Affichage de classes et Explorateur d’objets, icônes](../ide/class-view-and-object-browser-icons.md)
-
-
-
