@@ -8,12 +8,12 @@ ms.prod: visual-studio-dev15
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
-ms.openlocfilehash: a225ce8d08f41fb66e7ab3de4efb337927de31fe
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: b2463395707a62091292256d601290121295d76c
+ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55483729"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55571016"
 ---
 # <a name="deployment-in-visual-studio"></a>Déploiement dans Visual Studio
 
@@ -254,7 +254,7 @@ Visual Studio fournit plusieurs outils différents qui vous permettent de déplo
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Déployer une application de bureau avec ClickOnce</h3>
+                        <h3>Déployer une application de bureau avec ClickOnce (C#)</h3>
                     </div>
                 </div>
             </div>
@@ -262,7 +262,7 @@ Visual Studio fournit plusieurs outils différents qui vous permettent de déplo
         </a>
     </li>
     <li>
-        <a href="/cpp/ide/deployment-in-visual-cpp">
+        <a href="/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -272,7 +272,25 @@ Visual Studio fournit plusieurs outils différents qui vous permettent de déplo
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>En savoir plus sur le déploiement dans Visual C++</h3>
+                        <h3>Déployer une application C/C++</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/cpp/ide/clickonce-deployment-for-visual-cpp-applications">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="Learn about deployment in Visual C++">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Déployer une application C++/CLR</h3>
                     </div>
                 </div>
             </div>
