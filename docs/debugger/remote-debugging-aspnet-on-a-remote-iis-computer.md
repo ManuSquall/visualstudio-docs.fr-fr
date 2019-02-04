@@ -188,7 +188,7 @@ Pour plus d’informations sur l’exécution du débogueur distant en tant que 
 
     Le point d’arrêt doit être atteint dans Visual Studio.
 
-## <a name="bkmk_openports">Résolution des problèmes</a> Ouvrez les ports requis sur Windows Server
+## <a name="bkmk_openports"></a>Résolution des problèmes Ouvrez les ports requis sur Windows Server
 
 Dans la plupart des configurations, les ports requis sont ouverts par l’installation d’ASP.NET et le débogueur distant. Toutefois, vous devrez peut-être vérifier que les ports sont ouverts.
 

@@ -225,7 +225,7 @@ Dans ce didacticiel, nous utilisons Visual Studio 2017.
 
     Le point d’arrêt doit être atteint dans Visual Studio.
 
-### <a name="bkmk_openports">Résolution des problèmes</a> Ouvrez les ports requis sur Windows Server
+### <a name="bkmk_openports"></a> Résolution des problèmes Ouvrez les ports requis sur Windows Server
 
 Dans la plupart des configurations, les ports requis sont ouverts par l’installation d’ASP.NET et le débogueur distant. Toutefois, si vous dépannez les problèmes de déploiement et l’application est hébergée derrière un pare-feu, vous devez vérifier que les ports appropriés sont ouverts.
 
