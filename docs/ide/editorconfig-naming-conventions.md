@@ -7,16 +7,16 @@ helpviewer_keywords:
 - EditorConfig naming conventions
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - multiple
-ms.openlocfilehash: 60bffcf458e96a5e224493ac9a33b8fa9fb72541
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 50fe9249baae6d881c2d67ebc0a65a0c6335cbd3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898659"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935356"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Conventions de nommage .NET pour EditorConfig
 
@@ -85,7 +85,7 @@ Pour décrire les modificateurs des symboles auxquels vous voulez appliquer la r
 
 `dotnet_naming_symbols.<symbolTitle>.required_modifiers = <values>`
 
-La liste suivante répertorie les valeurs autorisées, et vous pouvez spécifier plusieurs valeurs en les séparant par une virgule.
+La liste suivante répertorie les valeurs autorisées, et vous pouvez spécifier plusieurs valeurs en les séparant par une virgule. Une règle de nommage fait uniquement correspondre les signatures contenant tous les modificateurs spécifiés dans `required_modifiers`. Si vous omettez cette propriété, la valeur par défaut d’une liste vide est utilisée. En d’autres termes, aucun modificateur spécifique n’est nécessaire pour une correspondance. Cela signifie que les modificateurs d’un symbole n’ont aucun effet sur l’application ou non de cette règle.
 
 - `abstract` ou `must_inherit`
 - `async`
@@ -159,7 +159,7 @@ erreur | Quand ce style n’est pas suivi, afficher une erreur du compilateur da
 > [!NOTE]
 > Vous n’avez pas à générer votre projet pour afficher les violations de règle de nommage. Elles apparaissent au fur et à mesure que le code est modifié, dans la **Liste d’erreurs** ou comme suggestion.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a>Exemples
 
 Le fichier *.editorconfig* suivant contient une convention de nommage qui spécifie que les propriétés publiques, les méthodes, les champs, les événements et les délégués doivent être mis en majuscules. Notez que cette convention de nommage spécifie plusieurs types de symboles auxquels appliquer la règle, en utilisant une virgule pour séparer les valeurs.
 

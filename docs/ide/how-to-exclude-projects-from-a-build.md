@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour exclure des projets d’une build
+title: 'Procédure : Exclure des projets d’une build'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -7,17 +7,17 @@ ms.topic: conceptual
 ms.assetid: 17a837ca-5db9-46cd-b5a7-b14ad1d2c47d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e203fd9f1515e212591afe11c246cdeb78201b8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 74d938ead94444edd74bd9afdbc6021211b6ba0b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949982"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001941"
 ---
-# <a name="how-to-exclude-projects-from-a-build"></a>Guide pratique pour exclure des projets d’une build
+# <a name="how-to-exclude-projects-from-a-build"></a>Procédure : Exclure des projets d’une build
 
 Vous pouvez générer une solution sans générer tous les projets qu'elle contient. Par exemple, vous pouvez exclure un projet qui interrompt la génération. Vous pouvez ensuite générer le projet, une fois les problèmes identifiés et résolus.
 
