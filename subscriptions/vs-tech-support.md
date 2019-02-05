@@ -9,12 +9,12 @@ description: Découvrez comment activer l’avantage Support technique inclus da
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: be2fcf753c73055d647e9a924dfec306d49ce202
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: de53a94bd8ab0513e27f7c62461165d9ff8e865c
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380250"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55089222"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Activer l’avantage Support technique dans les abonnements Visual Studio
 
@@ -27,7 +27,7 @@ Résolvez les problèmes couverts par la garantie de réparation et d’assistan
 > ![Vignette de l’avantage Support technique](_img/vs-tech-support/vs-tech-support-tile.png)
 
 
-1. Pour commencer à utiliser votre avantage Support technique, cliquez sur **Activer par chat** sur la vignette Support technique. 
+1. Pour commencer à utiliser votre avantage Support technique, accédez à https://my.visualstudio.com/Benefits, faites défiler la page jusqu’à la section Support et, dans la vignette Support technique, cliquez sur **Activer par chat**. 
 2. Cette action lance une session de conversation avec un représentant du support qui peut créer et vous fournir votre ID de contrat et votre ID d’accès. 
 3. Pour cela, le représentant a besoin des informations suivantes :
    - L’adresse e-mail avec laquelle vous vous connectez à votre abonnement.

@@ -1,5 +1,5 @@
 ---
-title: Création d'un test codé de l'interface utilisateur piloté par les données
+title: Tutoriel de test codé de l’interface utilisateur piloté par les données
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -7,15 +7,15 @@ helpviewer_keywords:
 - coded UI tests, data-driven
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 120ca4ac409641af7b3a2b303830288cbcb0d20a
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 28ebaad835888577a8616aab771ba30e4e29c61b
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270243"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231985"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Créer un test codé de l'interface utilisateur piloté par les données
 
@@ -59,7 +59,8 @@ Cet exemple crée un test codé de l'interface utilisateur qui s'exécute sur l'
    [TestMethod]
    public void CodedUITestMethod1()
    {
-       // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
+       // To generate code for this test, select "Generate Code for Coded UI Test"
+       // from the shortcut menu and select one of the menu items.
        this.UIMap.AddNumbers();
    }
    ```
@@ -87,7 +88,6 @@ Cet exemple crée un test codé de l'interface utilisateur qui s'exécute sur l'
    ```csharp
    public void CodedUITestMethod1()
    {
-       // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
        this.UIMap.AddNumbers();
        this.UIMap.ValidateSum();
    }
@@ -131,7 +131,6 @@ Cet exemple crée un test codé de l'interface utilisateur qui s'exécute sur l'
     [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]
     public void CodedUITestMethod1()
     {
-        // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
         this.UIMap.AddNumbers();
         this.UIMap.ValidateSum();
     }
@@ -150,7 +149,7 @@ Cet exemple crée un test codé de l'interface utilisateur qui s'exécute sur l'
 
 ### <a name="step-4---use-the-data-in-the-coded-ui-test"></a>Étape 4 : utiliser les données dans le test codé de l’interface utilisateur
 
-1.  Ajoutez `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` au début du fichier *CodedUITest.cs* :
+1. Ajoutez `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` au début du fichier *CodedUITest.cs* :
 
     ```csharp
     using System;
@@ -166,16 +165,16 @@ Cet exemple crée un test codé de l'interface utilisateur qui s'exécute sur l'
     using Microsoft.VisualStudio.TestTools.UITesting.WinControls;
     ```
 
-2.  Ajoutez `TestContext.DataRow[]` dans la méthode `CodedUITestMethod1()` qui va appliquer les valeurs de la source de données. Les valeurs de la source de données se substituent aux constantes affectées aux contrôles UIMap en utilisant les contrôles `SearchProperties` :
+2. Ajoutez `TestContext.DataRow[]` dans la méthode `CodedUITestMethod1()` qui va appliquer les valeurs de la source de données. Les valeurs de la source de données se substituent aux constantes affectées aux contrôles UIMap en utilisant les contrôles `SearchProperties` :
 
-    ```csharp
-    public void CodedUITestMethod1()
-    {
-        // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
-        this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();this.UIMap.UICalculatorWindow.UIItemWindow21.UIItem2Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num2"].ToString();
-        this.UIMap.AddNumbers();
-        this.UIMap.ValidateSumExpectedValues.UIItem2TextDisplayText = TestContext.DataRow["Sum"].ToString();
-        this.UIMap.ValidateSum();
+   ```csharp
+   public void CodedUITestMethod1()
+   {
+       this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();
+       this.UIMap.UICalculatorWindow.UIItemWindow2.UIItem2Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num2"].ToString();
+       this.UIMap.AddNumbers();
+       this.UIMap.ValidateSumExpectedValues.UIItem3TextDisplayText = TestContext.DataRow["Sum"].ToString();
+       this.UIMap.ValidateSum();
     }
     ```
 
@@ -197,15 +196,15 @@ Cet exemple crée un test codé de l'interface utilisateur qui s'exécute sur l'
 
 ### <a name="step-5---run-the-data-driven-test"></a>Étape 5 : exécuter le test piloté par les données
 
-1.  Vérifiez que le test est maintenant piloté par les données en l'exécutant de nouveau.
+Vérifiez que le test est maintenant piloté par les données en l'exécutant de nouveau.
 
-     Vous devez voir le test s'exécuter via trois itérations à l'aide des valeurs incluses dans le fichier .*csv*. La validation doit également fonctionner et le test doit s’afficher comme réussi dans l’Explorateur de tests.
+Vous devez voir le test s'exécuter via trois itérations à l'aide des valeurs incluses dans le fichier .*csv*. La validation doit également fonctionner et le test doit s’afficher comme réussi dans l’Explorateur de tests.
 
 ## <a name="q--a"></a>Questions et réponses
 
-###  <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> Quels sont les attributs de la source de données pour d’autres types de source de données, comme SQL Express ou XML ?
+### <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> Quels sont les attributs de la source de données pour d’autres types de source de données, comme SQL Express ou XML ?
 
-Vous pouvez utiliser les exemples de chaînes de source de données indiqués dans le tableau ci-dessous en les copiant dans votre code et en effectuant les personnalisations nécessaires.
+**R :** Vous pouvez utiliser les exemples de chaînes de source de données indiqués dans le tableau ci-dessous en les copiant dans votre code et en effectuant les personnalisations nécessaires.
 
 **Types de source de données et attributs**
 

@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d5c56dc477b3c788f8d5ebfee4809067c77e08e8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 371ac2a3473c8e040167c91c0b126715cd2ae674
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829302"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231816"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organiser les objets en conteneurs de disposition dans le concepteur XAML
 
@@ -30,19 +30,7 @@ Si les panneaux de disposition permettent de disposer les objets dans une page, 
 
 Commencez votre page en choisissant l'un de ces panneaux de disposition. Votre page peut en contenir plusieurs. Par exemple, vous pouvez commencer par un panneau de disposition **Grid** et ajouter à une zone de ce dernier un **StackPanel** pour disposer les contrôles à la verticale dans cet élément **Grid**.
 
-Les panneaux de disposition suivants sont les plus couramment utilisés, mais il en existe d'autres. Vous les trouverez tous dans le panneau **Composants**.
-
-- [Grid](#Grid)
-
-- [UniformGrid](#UniformGrid)
-
-- [Canvas](#Canvas)
-
-- [StackPanel](#stackpanel)
-
-- [WrapPanel](#wrappanel)
-
-- [DockPanel](#dockpanel)
+Les panneaux de disposition suivants sont les plus couramment utilisés, mais il en existe d'autres. Vous les trouverez toutes dans la **Boîte à outils** de Visual Studio ou dans le panneau **Composants** de Blend pour Visual Studio.
 
 ### <a name="grid"></a>Grille
 
@@ -92,15 +80,7 @@ Permet de disposer les objets de telle sorte qu’il restent, ou s’*ancrent*, 
 
 Vous pouvez aussi ajouter vos objets à des contrôles de disposition. Ils n’offrent pas autant de fonctionnalités qu’un panneau de disposition, mais ils peuvent s’avérer utiles pour certains scénarios.
 
-Les contrôles de disposition suivants sont les plus couramment utilisés, mais il en existe d’autres. Vous les trouverez tous dans le panneau **Composants**.
-
-- [Border](#Border)
-
-- [Fenêtre contextuelle](#Popup)
-
-- [ScrollViewer](#scrollviewer)
-
-- [Viewbox](#viewbox)
+Les contrôles de disposition suivants sont les plus couramment utilisés, mais il en existe d’autres. Vous les trouverez toutes dans la **Boîte à outils** de Visual Studio ou dans le panneau **Composants** de Blend pour Visual Studio.
 
 ### <a name="border"></a>Bordure
 

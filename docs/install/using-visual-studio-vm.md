@@ -13,15 +13,15 @@ helpviewer_keywords:
 - visual studio
 author: PhilLee-MSFT
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f139c93eeb64a56f0bd422137417e5ad6e36cb11
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 415e108da2187b2e3b5057da6b9a3850bd3eb3ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836622"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926746"
 ---
 # <a id="top"> </a> Images Visual Studio sur Azure
 
@@ -35,10 +35,10 @@ Sur la Place de marché Microsoft Azure, vous trouverez des images des versions 
 
 | Version commerciale                                              | Éditions                     |     Version du produit      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|    Visual Studio 2019 : Préversion (Preview 1)                   |           Entreprise         | Version 16.0.0 Preview 1 |
+|    Visual Studio 2019 : Préversion (préversion 2)                   |           Entreprise         | Version 16.0.0 Préversion 2 |
 | Visual Studio 2017 : Dernière version (version 15.9)                    |    Enterprise, Community     |      Version 15.9.4      |
-|         Visual Studio 2017 : RTW                              |    Enterprise, Community     |      Version 15.0.20     |
-|   Visual Studio 2015 : Dernière version (Mise à jour 3)                      |    Enterprise, Community     |  Version 14.0.25431.01   |
+|         Visual Studio 2017 : RTW                              |    Enterprise, Community     |      Version 15.0.20     |
+|   Visual Studio 2015 : Dernière version (Mise à jour 3)                      |    Enterprise, Community     |  Version 14.0.25431.01   |
 |         Visual Studio 2015 : RTW                              |             Aucun.             | (Expirée pour la maintenance)  |
 
 > [!NOTE]

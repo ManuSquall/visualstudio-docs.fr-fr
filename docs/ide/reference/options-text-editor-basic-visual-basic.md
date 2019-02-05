@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 5a8cafca-f7b4-4a2d-92ce-6894a7673d00
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8014ad72978a4b3ee37547a6660f739973ae4e46
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: ccf0e8d76aeaf1f6982d7b776abfd32609e1b3e1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398245"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998259"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Option, Éditeur de texte, Basic (Visual Basic), Avancé
 La page de propriétés **Spécifique à VB**, accessible par le biais du menu **Outils**, dans la boîte de dialogue **Options**, puis dans le dossier **Éditeur de texte** et son dossier **De base**, contient les propriétés suivantes :
@@ -40,18 +40,18 @@ La page de propriétés **Spécifique à VB**, accessible par le biais du menu *
 - Placer les directives « System » en premier lors du tri des usings
 
    Quand elle est sélectionnée, la commande **Supprimer et trier les instructions using** du menu contextuel trie les directives `using` et place les espaces de noms « System » en haut de la liste.
-   
+
 - Séparer les groupes de directives using
 
    La commande **Supprimer et trier les instructions using** du menu contextuel sépare les directives `using` en insérant une ligne vide entre les groupes de directives qui ont le même espace de noms racine.
-   
-- Suggérer des usings pour les types dans les assemblys de référence 
-- Suggérer des usings pour les types dans les packages NuGet 
+
+- Suggérer des usings pour les types dans les assemblys de référence
+- Suggérer des usings pour les types dans les packages NuGet
 
    Quand ces options sont sélectionnées, une [Action rapide](../quick-actions.md) est disponible pour installer un package NuGet et ajouter une directive `using` pour les types non référencés.
 
    ![Action rapide pour installer un package NuGet dans Visual Studio](media/nuget-lightbulb.png)
-  
+
 
 ## <a name="highlighting"></a>Highlighting
 
@@ -77,7 +77,7 @@ L’éditeur de texte indique la portée visuelle des procédures. Une ligne est
 
 ## <a name="block-structure-guides"></a>Repères de structure de bloc
 
-Cochez ces cases pour afficher des lignes verticales en pointillés entre accolades (**{}**) dans votre code. Cela vous permet de voir facilement les blocs de code pour vos constructions au niveau des déclarations et au niveau du code.
+Quand cette option est sélectionnée, des lignes verticales alignées avec les blocs de code structurés sont affichées dans l’éditeur, ce qui vous permet d’identifier facilement les différents blocs de code. Par exemple, vous voyez une ligne entre `Sub` et `EndSub` dans une instruction `Sub`.
 
 ## <a name="editor-help"></a>Aide de l'éditeur
 

@@ -6,24 +6,27 @@ ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Dynamic symbolic execution
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d08094f122ace8908da7800cba84815b201154db
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b210248a9ac27945ee6eb1e2f1d5219c6dd62117
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834670"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936617"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Génération d’entrées à l’aide de l’exécution symbolique dynamique
 
-IntelliTest génère des entrées pour les [tests unitaires paramétrables](test-generation.md#parameterized-unit-testing) en analysant les conditions de branche dans le programme. Les entrées de test sont choisies en fonction de leur capacité à déclencher de nouveaux comportements de création de branches du programme. L’analyse est un processus incrémentiel. Elle redéfinit un prédicat **q: I -> {true, false}** sur les paramètres d’entrée de test formels **I**. **q** représente l’ensemble des comportements déjà observés par IntelliTest. Au départ, **q : = false**, car rien n’a encore été observé.
+IntelliTest génère des entrées pour les [tests unitaires paramétrables](test-generation.md#parameterized-unit-testing) en analysant les conditions de branche dans le programme.
+Les entrées de test sont choisies en fonction de leur capacité à déclencher de nouveaux comportements de création de branches du programme.
+L’analyse est un processus incrémentiel. Elle redéfinit un prédicat **q: I -> {true, false}** sur les paramètres d’entrée de test formels **I**. **q** représente l’ensemble des comportements déjà observés par IntelliTest.
+Au départ, **q : = false**, car rien n’a encore été observé.
 
 Les étapes de la boucle sont :
 
-1. IntelliTest détermine les entrées **i** telles que **q(i)=false** à l’aide un [solveur de contrainte](#constraint-solver). 
+1. IntelliTest détermine les entrées **i** telles que **q(i)=false** à l’aide un [solveur de contrainte](#constraint-solver).
    Par construction, l’entrée **i** prend un chemin d’exécution jamais vu avant. Cela signifie qu’au départ **i** peut être n’importe quelle entrée, car aucun chemin d’exécution n’a encore été découvert.
 
 1. IntelliTest exécute le test avec l’entrée choisie **i** et surveille l’exécution du test et le programme testé.
@@ -55,7 +58,8 @@ IntelliTest utilise le solveur de contrainte [Z3](https://github.com/Z3Prover/z3
 <a name="dynamic-code-coverage"></a>
 ## <a name="dynamic-code-coverage"></a>Couverture dynamique de code
 
-Effet collatéral de la surveillance de l’exécution, IntelliTest collecte les données de couverture dynamique de code. La couverture est dite *dynamique* car IntelliTest connaît uniquement le code qui a été exécuté. Par conséquent, il ne peut pas donner de valeurs absolues pour la couverture comme d’autres outils de couverture peuvent généralement en donner. 
+Effet collatéral de la surveillance de l’exécution, IntelliTest collecte les données de couverture dynamique de code.
+La couverture est dite *dynamique* car IntelliTest connaît uniquement le code qui a été exécuté. Par conséquent, il ne peut pas donner de valeurs absolues pour la couverture comme d’autres outils de couverture peuvent généralement en donner.
 
 Par exemple, quand IntelliTest signale la couverture dynamique de 5/10 blocs de base, cela signifie que cinq blocs sur dix ont été couverts, où le nombre total de blocs de toutes les méthodes qui ont été atteintes jusqu'à présent par l’analyse (par opposition à toutes les méthodes qui existent dans l’assembly testé) est de 10.
 Plus tard au cours de l’analyse, quand d’autres méthodes accessibles sont découvertes, le numérateur (5 dans cet exemple) et le dénominateur (10) peuvent tous les deux augmenter.
@@ -80,8 +84,7 @@ IntelliTest surveille les instructions exécutées quand il exécute un test et 
 Cela signifie qu’IntelliTest doit créer des objets de certains types et définir leurs valeurs de champ. Si la classe est [visible](#visibility) et a un constructeur [visible](#visibility) par défaut, IntelliTest peut créer une instance de la classe.
 Si tous les champs de la classe sont [visibles](#visibility), IntelliTest peut définir les champs automatiquement.
 
-Si le type n’est pas visible ou si les champs ne sont pas [visibles](#visibility), IntelliTest a besoin d’aide pour créer des objets et les mettre dans des états intéressants qui permettent d’obtenir une couverture maximale du code. IntelliTest pourrait utiliser la réflexion pour créer et initialiser des instances de manière arbitraire, mais ce n’est généralement pas  
-souhaitable, car l’objet pourrait se retrouver dans un état qui jamais ne se produirait pendant l’exécution normale du programme. Au lieu de cela, IntelliTest s’appuie sur des indications de l’utilisateur.
+Si le type n’est pas visible ou si les champs ne sont pas [visibles](#visibility), IntelliTest a besoin d’aide pour créer des objets et les mettre dans des états intéressants qui permettent d’obtenir une couverture maximale du code. IntelliTest peut utiliser la réflexion pour créer et initialiser des instances de manière arbitraire. Toutefois, ce n’est généralement pas souhaitable, car cela peut placer l’objet dans un état qui ne peut jamais se produire durant l’exécution normale du programme. Au lieu de cela, IntelliTest s’appuie sur des indications de l’utilisateur.
 
 <a name="visibility"></a>
 ## <a name="visibility"></a>Visibilité
@@ -108,7 +111,7 @@ Les règles sont les suivantes :
 
 Comment tester une méthode qui a un paramètre d’un type d’interface ? Ou d’une classe non-sealed ? IntelliTest ne sait pas quelles implémentations seront utilisées ultérieurement quand cette méthode est appelée. Peut-être même qu’il n’y aura aucune véritable implémentation disponible au moment du test.
 
-La réponse classique consiste à utiliser des *objets fictifs* avec un comportement explicite. 
+La réponse classique consiste à utiliser des *objets fictifs* avec un comportement explicite.
 
 Un objet fictif implémente une interface (ou étend une classe non-sealed). Il ne représente pas une véritable implémentation, mais juste un raccourci qui permet l’exécution des tests à l’aide de l’objet fictif. Son comportement est défini manuellement dans chaque cas de test où il est utilisé. De nombreux outils permettent de définir facilement des objets fictifs et leur comportement attendu, mais ce comportement doit toujours être défini manuellement.
 
@@ -129,7 +132,8 @@ Le raisonnement d’IntelliTest concernant les valeurs **struct** est similaire 
 <a name="arrays-and-strings"></a>
 ## <a name="arrays-and-strings"></a>Tableaux et chaînes
 
-IntelliTest surveille les instructions exécutées quand il exécute un test et le programme testé. Il est particulièrement attentif quand le programme dépend de la longueur d’une chaîne ou d’un tableau (et des limites et longueurs inférieures d’un tableau multidimensionnel). Il observe aussi comment le programme utilise les différents éléments d’une chaîne ou d’un tableau. Il utilise ensuite un [solveur de contrainte](#constraint-solver) pour déterminer les longueurs et les valeurs d’élément pouvant entraîner des comportements intéressants du test et du programme testé.
+IntelliTest surveille les instructions exécutées quand il exécute un test et le programme testé. Il est particulièrement attentif quand le programme dépend de la longueur d’une chaîne ou d’un tableau (et des limites et longueurs inférieures d’un tableau multidimensionnel).
+Il observe aussi comment le programme utilise les différents éléments d’une chaîne ou d’un tableau. Il utilise ensuite un [solveur de contrainte](#constraint-solver) pour déterminer les longueurs et les valeurs d’élément pouvant entraîner des comportements intéressants du test et du programme testé.
 
 IntelliTest tente de réduire la taille des tableaux et des chaînes nécessaires pour déclencher des comportements de programme intéressants.
 

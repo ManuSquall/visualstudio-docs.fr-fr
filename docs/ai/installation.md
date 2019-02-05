@@ -11,12 +11,12 @@ ms.devlang: multiple
 ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: ab5101d6b6ddca4a86e635fff70b52429888001a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 744b0861a1cd0f27974765822946f3c6986bdba6
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821099"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231946"
 ---
 # <a name="installation"></a>Installation
 
@@ -199,21 +199,32 @@ pip3.5 install Theano==0.9.0
 Pour installer PyTorch, exécutez la commande suivante dans un terminal :
 
 - **Fenêtres**
-    - Il n’existe encore aucun package wheel officiel. Vous pouvez télécharger un [package Anaconda PyTorch](https://anaconda.org/pytorch/repo?type=all) tiers.
-    - Décompressez-le dans votre répertoire de base, par exemple « C:\Users\test\pytorch ».
-    - Ajoutez « C:\Users\test\pytorch\Lib\site-packages » à la variable d’environnement %PYTHONPATH%.
+
+   Il n’existe encore aucun package wheel officiel. Vous pouvez télécharger un package tiers à partir d’[Anaconda](https://anaconda.org/pytorch/repo?type=all) ou [University of California](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pytorch).
+
+   - Décompressez-le dans votre répertoire de base, par exemple, *C:\Users\test\pytorch*.
+   - Ajoutez *C:\Users\test\pytorch\Lib\site-packages* à la variable d’environnement %PYTHONPATH%.
+
+      ```bash
+      pip3 install http://download.pytorch.org/whl/cu80/torch-0.4.0-cp36-cp36m-win_amd64.whl
+      pip3 install torchvision
+      ```
 
 - **macOS**
+
     ```bash
     pip3.5 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl
     ```
+
     > [!NOTE]
     > Les binaires macOS ne prenant pas en charge CUDA, installez-le à partir de la source si CUDA est nécessaire
 
 - **Linux**
+
     ```bash
     pip3.5 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp35-cp35m-manylinux1_x86_64.whl
     ```
+
     > [!NOTE]
     > Ce package unique prend en charge les GPU et UC.
 
