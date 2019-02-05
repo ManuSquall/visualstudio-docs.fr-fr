@@ -33,12 +33,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b0a9f28da48582ac562f08e3327fb3d80375c3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4ee8e68cea1a4f6b708b304b6ca889d29eff0bad
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835290"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690309"
 ---
 # <a name="annotating-locking-behavior"></a>Annotation du comportement de verrouillage
 Pour éviter les bogues d’accès concurrentiel dans votre programme multithread, suivez toujours une discipline de verrouillage appropriée et utilisez les annotations SAL.
@@ -105,6 +105,19 @@ Pour éviter les bogues d’accès concurrentiel dans votre programme multithrea
 |`_Interlocked_`|Annote une variable et équivaut à `_Guarded_by_(_Global_interlock_)`.|
 |`_Interlocked_operand_`|Le paramètre de fonction annoté est l’opérande de cible d’une des diverses fonctions Interlocked.  Les opérandes doivent avoir des propriétés supplémentaires spécifiques.|
 |`_Write_guarded_by_(expr)`|Annote une variable et indique qu’à chaque modification de la variable, le nombre de verrous de l’objet verrou nommé par `expr` est d’au moins un.|
+
+
+## <a name="smart-lock-and-raii-annotations"></a>Smart Lock et Annotations de RAII
+ En général, verrous intelligents encapsulent les verrous natifs et gérer leur durée de vie. Le tableau suivant répertorie les annotations qui peuvent être utilisées avec les verrous intelligents et RAII modèles prenant en charge de codage `move` sémantique.
+
+|Annotation|Description|
+|----------------|-----------------|
+|`_Analysis_assume_smart_lock_acquired_`|Indique à l’Analyseur de supposer qu’un verrou intelligent a été acquis. Cette annotation attend un type de verrou de référence comme son paramètre.|
+|`_Analysis_assume_smart_lock_released_`|Indique à l’Analyseur de supposer qu’un verrou intelligent a été débloqué. Cette annotation attend un type de verrou de référence comme son paramètre.|
+|`_Moves_lock_(target, source)`|Décrit `move constructor` opération qui transfère l’état du verrouillage à partir de la `source` de l’objet à le `target`. Le `target` est considéré comme un objet nouvellement construit, donc tout état qu’elle avait avant est perdu et remplacé par le `source` état. Le `source` est également rétablir un état propre avec aucune cible de nombres ou des alias de verrou, mais les alias qui pointe vers elle restent inchangés.|
+|`_Replaces_lock_(target, source)`|Décrit `move assignment operator` sémantique où cible soient déverrouillées avant de transférer l’état de la source. Cela peut être considéré comme une combinaison de `_Moves_lock_(target, source)` précédé par un `_Releases_lock_(target)`.|
+|`_Swaps_locks_(left, right)`|Décrit la norme `swap` comportement part du principe que les objets `left` et `right` exchange leur état. L’état échangé inclut la cible du nombre et les alias de verrou, le cas échéant. Les alias qui pointent vers le `left` et `right` objets restent inchangées.|
+|`_Detaches_lock_(detached, lock)`|Décrit un scénario dans lequel un type de wrapper de verrou permet de dissociation avec sa ressource de relation contenant-contenu. Cela est similaire à la manière dont `std::unique_ptr` fonctionne avec son pointeur interne : il permet aux programmeurs d’extraire le pointeur et de laisser de son conteneur de pointeur intelligent dans un état propre. Une logique similaire est pris en charge par `std::unique_lock` et peut être implémentée dans les wrappers de verrouillage personnalisé. Le verrou détaché conserve son état (verrou count et alias cible, le cas échéant), tandis que le wrapper est réinitialisé pour contenir zéro nombre de verrous et qu’aucune cible de l’alias, tout en conservant ses propres alias. Il n’existe aucune opération sur le nombre de verrous (libérer et acquérir). Cette annotation se comporte exactement comme `_Moves_lock_` , à ceci près que l’argument détachée doit être `return` plutôt que `this`.|
 
 ## <a name="see-also"></a>Voir aussi
 
