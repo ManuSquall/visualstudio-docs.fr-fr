@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: c8d1cec438c0d942290997a6d51c4c0f2252bf8e
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 615f9d5bcba036301c2aa100e4618ab339412882
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296214"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796968"
 ---
 # <a name="set-up-a-git-repository"></a>Configurer un dépôt Git
 
@@ -68,7 +68,10 @@ Si vous avez un projet qui _n’est pas_ déjà dans la gestion de versions, eff
 
 6. Cliquez sur **OK** puis sur **Publier** dans la boîte de dialogue d’alerte.
 
-7. Si vous n’avez pas déjà entré vos informations d’identification Git dans les préférences de Visual Studio pour Mac, entrez-les maintenant. Vous devez d’abord créer un jeton d’accès, qui est utilisé à la place d’un mot de passe. Si vous n’avez pas créé de jeton d’accès, suivez les étapes décrites dans la documentation Git [Jeton d’accès](https://help.github.com/articles/creating-an-access-token-for-command-line-use/).
+7. Dans la fenêtre **Informations d’identification Git**, entrez votre nom d’utilisateur et votre mot de passe GitHub. 
+
+> [!NOTE]
+> Si l’authentification à 2 facteurs (2FA) est activée pour votre compte, vous devez créer un jeton d’accès, lequel est utilisé à la place d’un mot de passe. Si vous n’avez pas créé de jeton d’accès, suivez les étapes décrites dans la documentation Git [Jeton d’accès](https://help.github.com/articles/creating-an-access-token-for-command-line-use/).
 
 8. Entrez le nom d’utilisateur et le jeton d’accès personnel, puis cliquez sur **OK** :
 

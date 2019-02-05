@@ -13,15 +13,15 @@ f1_keywords:
 ms.assetid: 480f3cb4-d873-434e-a8bf-82cff7401cf2
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb4ab50f5b5b699d2cbb8fa800705f4ed218c588
-ms.sourcegitcommit: a8c841648d862c83a0f0d654df1b367c159adc5e
+ms.openlocfilehash: a83b3c1be5beeeb2ea40fb9d27089a4b559f758a
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54403965"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55089140"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Utiliser les paramètres de ligne de commande pour installer Visual Studio 2017
 
@@ -37,7 +37,7 @@ Les options de ligne de commande sont utilisées conjointement avec le programme
 - [Visual Studio Professional 2017](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
 - [Visual Studio Community 2017](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
 
-## <a name="list-of-command-line-parameters"></a>Liste des paramètres de ligne de commande
+## <a name="command-line-parameters"></a>Paramètres de ligne de commande
 
  Les paramètres de ligne de commande Visual Studio ne respectent pas la casse.
 
@@ -46,7 +46,7 @@ Les options de ligne de commande sont utilisées conjointement avec le programme
 (Remplacez `vs_enterprise.exe` comme il convient pour l’édition du produit que vous installez.)
 
 >[!TIP]
-> Pour plus d’exemples sur l’utilisation de la ligne de commande afin d’installer Visual Studio 2017, consultez la page [Exemples de paramètres de ligne de commande](command-line-parameter-examples.md).)
+> Pour obtenir des exemples supplémentaires sur l’utilisation de la ligne de commande afin d’installer Visual Studio 2017, consultez la page [Exemples de paramètres de ligne de commande](command-line-parameter-examples.md).
 
 | **Commande** | **Description** |
 | ----------------------- | --------------- |
@@ -56,6 +56,8 @@ Les options de ligne de commande sont utilisées conjointement avec le programme
 | `repair` | Répare un produit installé. |
 | `uninstall` | Désinstalle un produit installé. |
 | `export` | **Nouveautés de la version 15.9** : Exporte la sélection de l’installation dans un fichier de configuration d’installation. **Remarque** : Peut uniquement être utilisé avec vs_installer.exe. |
+
+## <a name="install-options"></a>Options d’installation
 
 | **Option d’installation** | **Description** |
 | ----------------------- | --------------- |
@@ -79,6 +81,8 @@ Les options de ligne de commande sont utilisées conjointement avec le programme
 
 > [!IMPORTANT]
 > Lorsque vous spécifiez plusieurs charges de travail et plusieurs composants, vous devez répéter le commutateur de ligne de commande `--add` ou `--remove` pour chaque élément.
+
+## <a name="layout-options"></a>Options de disposition
 
 | **Options de disposition** | **Description** |
 | ----------------------- | --------------- |

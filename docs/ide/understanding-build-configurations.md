@@ -24,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: 934c727d-3a22-429c-bd13-3552cecf2e24
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3e361b407d013f27f3cf76d1ff0da98aa36c3c8
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 84a2b89bb6479c88de61ec0a0071858522a34e82
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349047"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927904"
 ---
 # <a name="understand-build-configurations"></a>Présentation des configurations de build
 
@@ -42,9 +42,9 @@ Vous pouvez enregistrer différentes configurations de propriétés de solution 
 > Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Créer des configurations dans Visual Studio pour Mac](/visualstudio/mac/configurations).
 
 > [!NOTE]
-> Si les paramètres de configuration de solution ne figurent pas dans la barre d’outils et si vous ne pouvez pas accéder au **Gestionnaire de configurations**, les paramètres de développement de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] peuvent être appliqués. Pour plus d’informations, consultez [Guide pratique pour gérer les configurations de build en appliquant les paramètres du développeur Visual Basic](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
+> Si les paramètres de configuration de solution ne figurent pas dans la barre d’outils et si vous ne pouvez pas accéder au **Gestionnaire de configurations**, les paramètres de développement de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] peuvent être appliqués. Pour plus d'informations, voir [Procédure : gérer des configurations en appliquant les paramètres du développeur Visual Basic](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
 
-Par défaut, les configurations Debug et Release sont incluses dans les projets créés à l'aide des modèles [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Une configuration Debug prend en charge le débogage d’une application, et une configuration Release génère une version de l’application qui peut être déployée. Pour plus d’informations, consultez [Guide pratique pour définir des configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md). Vous pouvez également créer des configurations de solution et des configurations de projet personnalisées. Pour plus d’informations, consultez [Guide pratique pour créer et modifier des configurations](../ide/how-to-create-and-edit-configurations.md).
+Par défaut, les configurations Debug et Release sont incluses dans les projets créés à l'aide des modèles [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Une configuration Debug prend en charge le débogage d’une application, et une configuration Release génère une version de l’application qui peut être déployée. Pour plus d'informations, voir [Procédure : Définir des configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md). Vous pouvez également créer des configurations de solution et des configurations de projet personnalisées. Pour plus d'informations, voir [Procédure : créer et modifier des configurations](../ide/how-to-create-and-edit-configurations.md).
 
 ## <a name="solution-configurations"></a>Configurations de solution
 
@@ -90,7 +90,7 @@ La configuration de solution active fournit également le contexte à l'IDE. Par
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Procédure pas à pas : générer une application](../ide/walkthrough-building-an-application.md)
+- [Procédure pas à pas : Générer une application](../ide/walkthrough-building-an-application.md)
 - [Compiler et générer](../ide/compiling-and-building-in-visual-studio.md)
 - [Solutions et projets](../ide/solutions-and-projects-in-visual-studio.md)
 - [Informations de référence sur les builds C/C++](/cpp/build/reference/c-cpp-building-reference)
