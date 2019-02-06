@@ -14,18 +14,18 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: c3f9c4dca4877d608aaeb8cda1791217a02207de
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 63ef768b0279d1859972bd3a5b49242fe549cea7
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000677"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424432"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Tutoriel : Créer votre première application de plateforme Windows universelle dans Visual Studio avec XAML et C&#35;
 
 Dans cette présentation de 5-10 minutes de l’environnement de développement intégré (IDE) Visual Studio, vous allez créer une application « Hello World » qui s’exécute sur n’importe quel appareil Windows 10. Pour ce faire, vous allez utiliser un modèle de projet de plateforme Windows universelle (UWP), le langage XAML (Extensible Application Markup Language) et le langage de programmation C#.
 
-Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) pour l’installer gratuitement.
+Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) pour l’installer gratuitement.
 
 ## <a name="create-a-project"></a>Créer un projet
 

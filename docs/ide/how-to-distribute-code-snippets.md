@@ -13,18 +13,18 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 890bec08c29491bbd867c9c8380172cced71d2fe
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b00cf69a949dcd5ad73120c9ce1fccb2b7af9040
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54985706"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690367"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Procédure : Distribuer des extraits de code
 
 Vous pouvez donner des extraits de code à vos amis pour qu’ils les installent sur leurs ordinateurs à l’aide du **Gestionnaire des extraits de code**. Toutefois, si vous avez plusieurs extraits de code à distribuer ou que vous souhaitez les distribuer plus largement, vous pouvez inclure votre fichier d’extraits de code dans une extension Visual Studio. Les utilisateurs de Visual Studio peuvent ensuite installer l’extension.
 
-Vous devez installer le kit SDK Visual Studio pour pouvoir créer des extensions Visual Studio. Recherchez la version du kit SDK Visual Studio qui correspond à votre installation de Visual Studio dans la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
+Vous devez installer le kit SDK Visual Studio pour pouvoir créer des extensions Visual Studio. Recherchez la version du kit SDK Visual Studio qui correspond à votre installation de Visual Studio dans la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017).
 
 ## <a name="set-up-the-extension"></a>Configurer l’extension
 

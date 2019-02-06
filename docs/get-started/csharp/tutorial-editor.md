@@ -13,19 +13,19 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: a14b33d1b9469b817253812ae711eb5c65c74b70
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dc0e143b4ff84422a344caae1e50e88f47af5eeb
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54926083"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424562"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Apprendre à utiliser l’éditeur de code
 
 Dans cette présentation de 10 minutes de l’éditeur de code de Visual Studio, vous allez ajouter du code dans un fichier pour découvrir de quelles façons Visual Studio facilite l’écriture, la navigation et la compréhension du code.
 
 > [!TIP]
-> Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) pour l’installer gratuitement.
+> Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) pour l’installer gratuitement.
 
 Cet article suppose de connaître C#. Si ce n’est pas votre cas, nous vous suggérons de commencer par un tutoriel comme [Bien démarrer avec C# et ASP.NET Core dans Visual Studio](tutorial-aspnet-core.md).
 

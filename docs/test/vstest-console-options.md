@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4bd901ad2a57570a11f7a4a9995c30b44d476d3c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
+ms.lasthandoff: 02/01/2019
 ms.locfileid: "54924014"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Options de ligne de commande VSTest.Console.exe
@@ -43,7 +43,7 @@ Le tableau suivant répertorie toutes les options de *VSTest.Console.exe*, ainsi
 |**/TestAdapterPath:[*chemin*]**|Force le processus *vstest.console.exe* à utiliser des adaptateurs de test personnalisés à partir d’un chemin spécifié (le cas échéant) dans la série de tests.<br />Exemple : `/TestAdapterPath:[pathToCustomAdapters]`|
 |**/Platform:[*type de plateforme*]**|Architecture de plateforme cible à utiliser pour l'exécution des tests.<br />Les valeurs valides sont x86, x64 et ARM.|
 |**/Framework: [*version de .Net Framework*]**|Version .Net Framework cible à utiliser pour l'exécution des tests.<br />Les valeurs valides sont Framework35, Framework40, Framework45 et FrameworkUap10.<br />Si la version cible de .Net Framework est spécifiée comme étant **Framework35**, les tests s’exécutent en « mode de compatibilité » CLR 4.0.<br />Exemple : `/Framework:framework40`|
-|**/TestCaseFilter:[*expression*]**|Exécutez les tests qui correspondent à l'expression donnée.<br /><Expression\> est au format <propriété\>=<valeur\>[\|<Expression\>].<br />Exemple : `/TestCaseFilter:"Priority=1"`<br />Exemple : « /TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName" »<br />L’option de ligne de commande **/TestCaseFilter** ne peut pas être utilisée avec l’option de ligne de commande **/Tests**. <br />Pour plus d’informations sur la création et l’utilisation d’expressions, consultez [Filtre TestCase](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
+|**/TestCaseFilter:[*expression*]**|Exécutez les tests qui correspondent à l'expression donnée.<br /><Expression\> est au format <propriété\>=<valeur\>[\|<Expression\>].<br />Exemple : `/TestCaseFilter:"Priority=1"`<br />Exemple : `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />L’option de ligne de commande **/TestCaseFilter** ne peut pas être utilisée avec l’option de ligne de commande **/Tests**. <br />Pour plus d’informations sur la création et l’utilisation d’expressions, consultez [Filtre TestCase](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
 |**/?**|Affiche les informations d’utilisation.|
 |**/Logger:[*uri/nom_convivial*]**|Spécifiez un journal pour les résultats de tests.<br />Exemple : pour stocker les résultats dans les fichiers de résultats des tests de Visual Studio (TRX), utilisez **/Logger:trx**.<br />Exemple : pour publier les résultats des tests dans Team Foundation Server, utilisez TfsPublisher :<br />**/logger:TfsPublisher;**<br />**Collection=<URL du projet\>;**<br />**BuildName=<nom de la build\>;**<br />**TeamProject=<nom du projet\>;**<br />**[;Platform=<par défaut « N’importe quelle UC »>]**<br />**[;Flavor=<par défaut « Debug »>]**<br />**[;RunTitle=<titre\>]**|
 |**/ListTests:[*nom de fichier*]**|Répertorie les tests détectés dans le conteneur de tests donné.|

@@ -10,12 +10,12 @@ ms.author: shoag
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: cf58ea2ada658f7a1548ed81c875b19d33f81a91
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5fc9378b08db39d26ad491aa8cb213e89e6fa493
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981692"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483794"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Développer des applications pour la plateforme Windows universelle (UWP)
 Avec la plateforme Windows universelle et notre noyau Windows, vous pouvez exécuter la même application sur n’importe quel appareil Windows 10, des téléphones jusqu’aux postes de travail. Créez ces applications Windows universelles avec Visual Studio et les outils de développement d’applications Windows universelles.
@@ -39,7 +39,7 @@ La plateforme Windows universelle est simplement un ensemble de contrats et de v
 
 -   [Windows 10](http://windows.microsoft.com/windows/downloads). Visual Studio 2017 prend en charge le développement UWP uniquement sur Windows 10. Pour plus d’informations, consultez [Ciblage de la plateforme ](/visualstudio/productinfo/vs2017-compatibility-vs) et [Configuration requise](/visualstudio/productinfo/vs2017-system-requirements-vs) pour Visual Studio.
 
--   [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). Vous avez également besoin de la charge de travail de développement de la plateforme Windows universelle facultative.
+-   [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017). Vous avez également besoin de la charge de travail de développement de la plateforme Windows universelle facultative.
 
      ![Charge de travail UWP](media/uwp_workload.png)
 

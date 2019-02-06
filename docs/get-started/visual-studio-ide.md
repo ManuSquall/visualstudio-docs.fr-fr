@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fad0568804c4cd455a195c476cd2cd447ef5827f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f58fd5969a06cadf0ebbbb61f58a9ecbe12ef0d2
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954772"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483781"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Bienvenue dans l’IDE Visual Studio
 
@@ -98,7 +98,7 @@ Voici quelques-unes des fonctionnalités populaires de Visual Studio qui vous ai
 
 ## <a name="install-the-visual-studio-ide"></a>Installer l’IDE de Visual Studio
 
-Cet article de vue d’ensemble vous montre comment créer un projet simple et essayer certaines opérations réalisables avec Visual Studio, telles que la modification du thème de couleur, l’utilisation d’[IntelliSense](../ide/using-intellisense.md) comme aide au codage et le débogage d’une application pour afficher la valeur d’une variable pendant l’exécution du programme. Pour commencer, [téléchargez Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) et installez-le sur votre système.
+Cet article de vue d’ensemble vous montre comment créer un projet simple et essayer certaines opérations réalisables avec Visual Studio, telles que la modification du thème de couleur, l’utilisation d’[IntelliSense](../ide/using-intellisense.md) comme aide au codage et le débogage d’une application pour afficher la valeur d’une variable pendant l’exécution du programme. Pour commencer, [téléchargez Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) et installez-le sur votre système.
 
 Le programme d’installation modulaire vous permet de choisir et d’installer des *charges de travail*, qui sont des groupes de fonctionnalités requises pour la plateforme ou le langage de programmation de votre choix. Pour suivre les étapes de [création d’un programme](#create-a-program), veillez à sélectionner la charge de travail **Développement multiplateforme .NET Core** pendant l’installation.
 

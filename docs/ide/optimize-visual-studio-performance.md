@@ -13,12 +13,12 @@ f1_keywords:
 ms.prod: visual-studio-dev15
 ms.workload:
 - multiple
-ms.openlocfilehash: c56bd7bbfdd162a354432814decb2450eff6f360
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e8ed42160d6bdbcc6b68a1652ff725c7e1d75e3a
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070459"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690310"
 ---
 # <a name="optimize-visual-studio-performance"></a>Optimiser les performances de Visual Studio
 
@@ -26,7 +26,7 @@ Cet article contient des suggestions à essayer si vous trouvez que Visual Studi
 
 ## <a name="upgrade-to-visual-studio-2017-version-156-or-later"></a>Mettre à niveau vers Visual Studio 2017 version 15.6 ou ultérieure
 
-Si vous utilisez Visual Studio 2015, téléchargez gratuitement [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) pour bénéficier de ses performances améliorées. Les solutions se chargent deux ou trois fois plus rapidement dans Visual Studio 2017, les performances d’autres opérations ayant également été améliorées. Visual Studio 2017 est compatible côte à côte avec Visual Studio 2015 : vous ne perdrez donc rien en l’essayant.
+Si vous utilisez Visual Studio 2015, téléchargez gratuitement [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) pour bénéficier de ses performances améliorées. Les solutions se chargent deux ou trois fois plus rapidement dans Visual Studio 2017, les performances d’autres opérations ayant également été améliorées. Visual Studio 2017 est compatible côte à côte avec Visual Studio 2015 : vous ne perdrez donc rien en l’essayant.
 
 Si vous utilisez Visual Studio 2017, veillez à exécuter la version 15.6 ou ultérieure. Les données montrent que les solutions se chargent à deux ou trois fois plus rapidement dans la version 15.6. Téléchargez-la [ici](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
 
