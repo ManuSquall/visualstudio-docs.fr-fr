@@ -14,16 +14,16 @@ ms.prod: visual-studio-dev15
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: eb7059f5a0ecaf07858e6a24b62296383494725c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9f59f1038226d34b15310ac09b6b34706c36c342
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979554"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742471"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>Procédure pas à pas : Créer un hôte de modèle de texte personnalisé
 
-Un *modèle de texte*<em>hôte</em> fournit un environnement qui permet la *moteur de transformation de modèle de texte* à exécuter. L'hôte est chargé de gérer l'interaction du moteur avec le système de fichiers. Le moteur ou *processeur de directive* qui a besoin d’un fichier ou un assembly peut demander une ressource à partir de l’hôte. L'hôte peut ensuite effectuer des recherches dans les répertoires et le Global Assembly Cache pour trouver la ressource demandée. Pour plus d’informations, consultez [le processus de Transformation de modèle de texte](../modeling/the-text-template-transformation-process.md).
+Un *hôte de modèle de texte* fournit un environnement qui permet la *moteur de transformation de modèle de texte* à exécuter. L'hôte est chargé de gérer l'interaction du moteur avec le système de fichiers. Le moteur ou *processeur de directive* qui a besoin d’un fichier ou un assembly peut demander une ressource à partir de l’hôte. L'hôte peut ensuite effectuer des recherches dans les répertoires et le Global Assembly Cache pour trouver la ressource demandée. Pour plus d’informations, consultez [le processus de Transformation de modèle de texte](../modeling/the-text-template-transformation-process.md).
 
 Vous pouvez écrire un hôte personnalisé si vous souhaitez utiliser le *transformation du modèle de texte* fonctionnalité à partir en dehors de Visual Studio ou si vous souhaitez intégrer ces fonctionnalités dans des outils personnalisés. Pour créer un hôte personnalisé, vous devez créer une classe qui hérite de <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Pour obtenir la documentation de méthodes individuelles, consultez <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.
 
