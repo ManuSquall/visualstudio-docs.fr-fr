@@ -11,16 +11,16 @@ helpviewer_keywords:
 - ADO.NET, data access
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9a13efa2335cd0721b71dd61e270e5331d78dede
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7bd87013245bd1c9a28ea093433687009f9c35e8
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936384"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484145"
 ---
 # <a name="access-data-in-visual-studio"></a>Accéder aux données dans Visual Studio
 
@@ -28,7 +28,7 @@ Dans Visual Studio, vous pouvez créer des applications qui se connectent à des
 
 Pour les applications avec JavaScript, Python, PHP, Ruby ou C++, vous connectez aux données comme vous le faites rien d’autre, en obtenant des bibliothèques et d’écriture de code. Pour les applications .NET, Visual Studio fournit des outils que vous pouvez utiliser pour Explorer les sources de données, créer des modèles d’objet pour stocker et manipuler des données en mémoire et lier des données à l’interface utilisateur. Microsoft Azure fournit des kits SDK pour .NET, Java, Node.js, PHP, Python, Ruby et les applications mobiles et les outils dans Visual Studio pour la connexion au stockage Azure.
 
-Les listes suivantes présentent quelques-uns des nombreux systèmes base de données et de stockage qui peuvent être utilisés à partir de Visual Studio. Le [Microsoft Azure](https://azure.microsoft.com/) offres sont des services de données qui incluent tous les d’approvisionnement et d’administration de la banque de données sous-jacente. Le **développement Azure** charge de travail dans [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) vous permet de travailler avec des banques de données Azure directement à partir de Visual Studio.
+Les listes suivantes présentent quelques-uns des nombreux systèmes base de données et de stockage qui peuvent être utilisés à partir de Visual Studio. Le [Microsoft Azure](https://azure.microsoft.com/) offres sont des services de données qui incluent tous les d’approvisionnement et d’administration de la banque de données sous-jacente. Le **développement Azure** charge de travail dans [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) vous permet de travailler avec des banques de données Azure directement à partir de Visual Studio.
 
 ![Charge de travail Développement Azure](media/azure-development-workload.png)
 
@@ -61,7 +61,7 @@ La plupart des autres SQL et NoSQL de base de données produits répertoriés ic
 - CouchDB
 - MongoDB
 - Données
-- OrientDB |
+- OrientDB|
 - RavenDB
 - VelocityDB
 - Et plus encore...
