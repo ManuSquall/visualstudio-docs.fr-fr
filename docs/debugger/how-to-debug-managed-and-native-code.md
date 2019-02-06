@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: e817302031ba2ec37102e5b3eb41a5b35460c546
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c9bdc4afb0d5f2b9f9f4ae0385b63372644929f8
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55029867"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690240"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Tutoriel : Déboguer du code C# et C++ dans la même session de débogage
 
@@ -44,7 +44,7 @@ Vous devez disposer de Visual Studio avec les charges de travail suivantes :
 - **Développement Desktop avec C++**
 - **Développement .NET Desktop** ou **Développement multiplateforme .NET Core**, selon le type d’application que vous voulez créer.
 
-Si vous n’avez pas Visual Studio, accédez à la page  [Téléchargements de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  pour l’installer gratuitement.
+Si vous n’avez pas Visual Studio, accédez à la page  [Téléchargements de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)  pour l’installer gratuitement.
 
 Si vous disposez d’une version installée de Visual Studio, mais que vous n’avez pas les charges de travail nécessaires, sélectionnez **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**. Dans Visual Studio Installer, sélectionnez les charges de travail nécessaires, puis sélectionnez **Modifier**.
 

@@ -13,19 +13,19 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7f689438d882c6e8eff83b6d3bbf955a2bb0b31d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b2183b12f1614adf7939c17b3e260cebb1c3238b
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963552"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424484"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Apprendre à utiliser l’éditeur de code
 
 Dans cette présentation de 10 minutes de l’éditeur de code de Visual Studio, vous allez ajouter du code dans un fichier pour découvrir de quelles façons Visual Studio facilite l’écriture, la navigation et la compréhension du code.
 
 > [!TIP]
-> Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) pour l’installer gratuitement.
+> Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) pour l’installer gratuitement.
 
 Cet article part du principe que vous connaissez déjà Visual Basic. Si ce n’est pas le cas, nous vous suggérons de consulter un tutoriel comme [Bien démarrer avec Visual Basic dans Visual Studio](../../get-started/visual-basic/tutorial-console.md) pour commencer.
 

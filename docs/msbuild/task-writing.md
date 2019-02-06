@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b825cd17c11677b95f9400b56cf42c526292e5c5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e9701497def997b96eff50b0713bc3e16a97f63d
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55026019"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483859"
 ---
 # <a name="task-writing"></a>Écriture de tâches
 Les tâches fournissent le code exécuté pendant le processus de génération. Les tâches sont contenues dans les cibles. Une bibliothèque de tâches types est incluse dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. De plus, vous pouvez créer vos propres tâches. Pour plus d’informations sur la bibliothèque de tâches incluse dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], consultez [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md).  
@@ -74,14 +74,9 @@ namespace MyTasks
         public override bool Execute()  
         {  
             return true;  
-         }  
-  
-        private string myProperty;  
-        public string MyProperty  
-        {  
-            get { return myProperty; }  
-            set { myProperty = value; }  
         }  
+  
+        public string MyProperty { get; set; }
     }  
 }  
 ```  
@@ -122,12 +117,7 @@ public override bool Execute()
 ```csharp
 public class SimpleTask : ITask  
 {  
-    private IBuildEngine buildEngine;  
-    public IBuildEngine BuildEngine  
-    {  
-        get{ return buildEngine; }  
-        set{ buildEngine = value; }  
-    }  
+    public IBuildEngine BuildEngine { get; set; }
   
     public override bool Execute()  
     {  
@@ -145,14 +135,8 @@ public class SimpleTask : ITask
  Vous pouvez marquer certaines propriétés de tâche comme étant « obligatoires ». De cette façon, si les fichiers projet qui exécutent la tâche ne définissent pas les valeurs de ces propriétés, la génération échoue. Dans votre tâche, appliquez l’attribut `[Required]` à la propriété .NET de la manière suivante :  
   
 ```csharp
-private string requiredProperty;  
-  
 [Required]  
-public string RequiredProperty  
-{  
-    get { return requiredProperty; }  
-    set { requiredProperty = value; }  
-}  
+public string RequiredProperty { get; set; }
 ```  
   
  L’attribut `[Required]` est défini par <xref:Microsoft.Build.Framework.RequiredAttribute> dans l’espace de noms <xref:Microsoft.Build.Framework>.  
@@ -200,35 +184,12 @@ namespace SimpleTask2
         //implement a BuildEngine property of type  
         //Microsoft.Build.Framework.IBuildEngine. This is done for  
         //you if you derive from the Task class.  
-        private IBuildEngine buildEngine;  
-        public IBuildEngine BuildEngine  
-        {  
-            get  
-            {  
-                return buildEngine;  
-            }  
-            set  
-            {  
-                buildEngine = value;  
-            }  
-         }  
+        public IBuildEngine BuildEngine { get; set; }
   
         // When implementing the ITask interface, it is necessary to  
-        // implement a HostObject property of type Object.  
+        // implement a HostObject property of type object.  
         // This is done for you if you derive from the Task class.  
-        private Object hostObject;  
-        public Object HostObject  
-        {  
-            get  
-            {  
-                return hostObject;  
-            }  
-  
-            set  
-            {  
-                hostObject = value;  
-            }  
-        }  
+        public object HostObject { get; set; }
   
         public bool Execute()  
         {  

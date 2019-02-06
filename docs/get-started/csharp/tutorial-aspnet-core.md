@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 49177cf534c99d955474abbd9586effd33bf1cb9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7ff1b15c42b01894044a01b99f506dc343333c0e
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54943940"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424471"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Tutoriel : Prise en main de C# et d’ASP.NET Core dans Visual Studio
 
@@ -31,7 +31,7 @@ Dans ce tutoriel pour le développement C# avec ASP.NET Core à l’aide de Vis
 
 ### <a name="install-visual-studio"></a>Installer Visual Studio
 
-Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) pour l’installer gratuitement.
+Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) pour l’installer gratuitement.
 
 ### <a name="update-visual-studio"></a>Mettre à jour Visual Studio 2017
 
