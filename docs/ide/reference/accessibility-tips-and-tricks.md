@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6451b45f8bb98232ea0c3a1b3cb96d37cf303ccc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 90a9ba0da2ee8c77b66d147c9af5fa560f50f3a0
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55010387"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484132"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Conseils et astuces d’accessibilité pour Visual Studio
 
@@ -41,7 +41,7 @@ Pour certaines personnes, quelques couleurs sont plus difficiles à voir. Si vou
 
 ## <a name="use-annotations-to-reveal-useful-information-about-your-code"></a>Utiliser des annotations pour révéler des informations utiles sur votre code
 
-L’éditeur Visual Studio inclut de nombreux « ornements » de texte qui vous permettent de connaître les caractéristiques et fonctionnalités de points particuliers sur une ligne de code, par exemple des ampoules, des « tildes » d’erreur et d’avertissement, des signets, et ainsi de suite. Vous pouvez utiliser la commande Afficher les annotations de ligne définie pour vous aider à détecter et à parcourir ces ornements.
+L’éditeur Visual Studio inclut de nombreux « ornements » de texte, qui vous donnent des informations sur des caractéristiques et des fonctionnalités à des endroits spécifiques d’une ligne de code, par exemple des icônes de tournevis et d’ampoule, des « lignes ondulées » d’erreur et d’avertissement, des signets, etc. Vous pouvez utiliser l’ensemble de commandes « Afficher les annotations de ligne » pour découvrir et parcourir ces ornements.
 
   ![Utiliser le jeu de commandes Afficher les annotations de ligne](media/show-line-annotations-command-set.png)
 

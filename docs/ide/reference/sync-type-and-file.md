@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4625d8c4b6bce3235fe07682cb6a0e977258adf6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a9a3a72a9b02d51407bf8a1c06c900596ded4ab4
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948178"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742428"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>Synchroniser un type avec un nom de fichier ou un nom de fichier avec un type (refactorisation)
 
@@ -31,6 +31,9 @@ Cette refactorisation s’applique à :
 **Quand :** Vous avez renommé un fichier ou un type et n’avez pas encore mis à jour le fichier ou type correspondant.
 
 **Pourquoi :** Si vous placez un type dans un fichier avec un autre nom, ou vice versa, il est difficile de trouver ce que vous cherchez. En renommant le type ou le nom de fichier, le code devient plus lisible, ce qui facilite la navigation.
+
+> [!NOTE]
+> Cette refactorisation n’est pas encore disponible pour les projets .NET Standard et .NET Core.
 
 ## <a name="how-to"></a>Procédure
 
@@ -62,8 +65,6 @@ Cette refactorisation s’applique à :
    - Visual Basic : Dans l’exemple ci-dessous, le fichier **Employee.vb** a été renommé **Person.vb** afin de correspondre au nom du type.
 
        ![Résultat de l’action Inclure (Visual Basic)](media/synctype-result-vb.png)
-
-> REMARQUE : Cette refactorisation n’est pas encore disponible pour les projets .NET Standard et .NET Core.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cefeabffc42722b1fa574a19068eb45c5e850e86
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0b1470620ce6640b3a287a5d86fc6922597258b3
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54985914"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424212"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Procédure : Créer des modèles à projets multiples
 
@@ -69,17 +69,20 @@ Le fichier *vstemplate* racine d’un modèle à plusieurs projets présente les
     </TemplateContent>
     ```
 
-## <a name="to-create-a-multi-project-template-from-an-existing-solution"></a>Pour créer un modèle à plusieurs projets à partir d’une solution existante
+## <a name="create-a-multi-project-template-from-an-existing-solution"></a>Créer un modèle multiprojet à partir d’une solution existante
 
 1. Créez une solution et ajoutez deux projets ou plus.
 
 1. Personnalisez les projets jusqu’à ce qu’ils soient prêts à être exportés dans un modèle.
 
+   > [!TIP]
+   > Si vous utilisez des [paramètres de modèle](template-parameters.md) et que vous voulez référencer des variables du modèle parent, préfixez le nom du paramètre avec `ext_`. Par exemple, `$ext_safeprojectname$`.
+
 1. Dans le menu **Projet**, choisissez **Exporter le modèle**.
 
    L’Assistant **Exportation de modèle** s’ouvre.
 
-1. Dans la page **Choisir un type de modèle**, sélectionnez **Modèle de projet**. Sélectionnez le projet à exporter dans un modèle, puis choisissez **Suivant**.
+1. Dans la page **Choisir un type de modèle**, sélectionnez **Modèle de projet**. Sélectionnez un des projets que vous voulez exporter vers un modèle, puis choisissez **Suivant**. (Vous répétez ces étapes pour chaque projet de la solution.)
 
 1. Dans la page **Sélectionner les options du modèle**, entrez un nom et éventuellement une description, une icône et une image d’aperçu pour votre modèle. Choisissez **Terminer**.
 

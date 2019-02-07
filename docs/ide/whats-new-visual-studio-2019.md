@@ -2,7 +2,7 @@
 title: Nouveautés de Visual Studio 2019
 titleSuffix: ''
 description: Découvrez les nouvelles fonctionnalités de Visual Studio 2019.
-ms.date: 01/24/2019
+ms.date: 01/29/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: '>= vs-2017'
-ms.openlocfilehash: 9f1d2ba67739dd5349a1a361744543089900a371
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 88fe1f9a4f1f3d1d21af2d7d00dee677cab11fc5
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55090099"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483703"
 ---
 # <a name="whats-new-in-visual-studio-2019-preview"></a>Nouveautés de Visual Studio 2019 Preview
 
@@ -40,7 +40,7 @@ Voici un récapitulatif de ce que Visual Studio propose :
 * **[Innovation continue](#continuous-innovation)**. Code intelligent bénéficiant d’un support cloud adapté.
 
 > [!NOTE]
-> Pour obtenir la liste complète des nouvelles fonctions et fonctionnalités de Visual Studio 2019 Preview, consultez les [notes de publication](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017).
+> Pour obtenir la liste complète des nouvelles fonctions et fonctionnalités de Visual Studio 2019 Preview, consultez les [notes de publication](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017). Pour un tour d’horizon des nouveautés de notre deuxième préversion, consultez le billet de blog [Visual Studio 2019 Preview 2 is now available](https://blogs.msdn.microsoft.com/visualstudio/2019/01/24/visual-studio-2019-preview-2-is-now-available/).
 
 ## <a name="personal-and-team-productivity"></a>Productivité des individus et des équipes
 
@@ -82,6 +82,8 @@ Vous pouvez également mettre en forme une valeur pour changer son apparence dan
 
    ![Nouvelle fenêtre Espion et fonctionnalité de mise en forme des valeurs dans Visual Studio 2019](media/search-watch-window.png)
 
+Pour plus d’informations, consultez le billet de blog [Enhanced in Visual Studio 2019: Search for Objects and Properties in the Watch, Autos, and Locals Windows](https://blogs.msdn.microsoft.com/visualstudio/2019/01/28/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/).
+
 ### <a name="visual-studio-live-share"></a>Visual Studio Live Share
 
 [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) est un service de développement qui vous permet de partager une base de code et son contexte avec un collègue, et de bénéficier d’une collaboration bidirectionnelle instantanée directement à partir de Visual Studio. Avec Live Share, un collègue peut lire, accéder, modifier et déboguer un projet que vous avez partagé avec lui, de manière sécurisée et fluide.
@@ -110,7 +112,7 @@ La préversion de Visual Studio 2019 prend en charge la génération d’applic
 
 Si vous utilisez des moniteurs configurés avec des facteurs d’échelle d’affichage différents ou que vous vous connectez à distance à un ordinateur avec des facteurs d’échelle d’affichage différents de ceux de votre appareil principal, il est possible que Visual Studio semble flou ou qu’il ne soit pas affiché à la bonne échelle.
 
-Dans Visual Studio 2019 Preview 1, nous prenons les premières mesures pour faire de Visual Studio une application PMA (Per-Monitor Aware). Nous posons les bases qui permettront à Visual Studio de s’afficher correctement, quel que soit les facteurs d’échelle d’affichage que vous utilisez.
+Avec la publication de Visual Studio 2019 Preview, nous commençons à faire de Visual Studio une application PMA (Per-Monitor Aware). Nous posons les bases qui permettront à Visual Studio de s’afficher correctement, quel que soit les facteurs d’échelle d’affichage que vous utilisez.
 
    ![Rendu PMA (Per-Monitor Aware) dans Visual Studio 2019](media/per-monitor-aware-dpi-scaling.png)
 
