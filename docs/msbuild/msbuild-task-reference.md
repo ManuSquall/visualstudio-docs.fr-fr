@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18ba71906b38fd889f1db42fcb69c689718107c6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aae170d2fb9b824d0c547dec7549ef2fdd8401ee
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951285"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483976"
 ---
 # <a name="msbuild-task-reference"></a>Informations de référence sur les tâches MSBuild
 Les tâches fournissent le code exécuté pendant le processus de génération. Les tâches de la liste suivante sont incluses dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Quand [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] est installé, des tâches supplémentaires sont disponibles pour générer des projets [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Pour plus d’informations, voir [Tâches Visual C++](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).  
@@ -130,7 +130,10 @@ Les tâches fournissent le code exécuté pendant le processus de génération. 
  [Tâche GetAssemblyIdentity](../msbuild/getassemblyidentity-task.md)  
  Récupère les identités d’assembly des fichiers spécifiés et génère les informations d’identité.  
 
- [Tâche GetFrameworkPath](../msbuild/getframeworkpath-task.md)  
+ [GetFileHash, tâche](../msbuild/getfilehash-task.md)  
+ Calcule les sommes de contrôle du contenu d’un fichier ou d’un ensemble de fichiers.
+
+[Tâche GetFrameworkPath](../msbuild/getframeworkpath-task.md)  
  Récupère le chemin aux assemblys [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
 
  [Tâche GetFrameworkSdkPath](../msbuild/getframeworksdkpath-task.md)  
@@ -210,6 +213,9 @@ Les tâches fournissent le code exécuté pendant le processus de génération. 
 
  [Vbc, tâche](../msbuild/vbc-task.md)  
  Appelle le compilateur Visual Basic pour produire des exécutables, des bibliothèques de liens dynamiques ou des modules de code.  
+
+ [VerifyFileHash, tâche](../msbuild/verifyfilehash-task.md)  
+ Vérifie qu’un fichier correspond au hachage de fichier attendu.
 
  [Tâche Warning](../msbuild/warning-task.md)  
  Enregistre un avertissement durant une génération en fonction d’une instruction conditionnelle évaluée.  

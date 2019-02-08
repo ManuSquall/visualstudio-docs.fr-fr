@@ -10,20 +10,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0ac3acc8b5addf02e510943b6b61ce1c5f0c5b1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 52a0b5d046580e5d4dbf499e504cd0ea123ff5b2
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999754"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424380"
 ---
 # <a name="get-started-with-unit-testing"></a>Bien démarrer avec les tests unitaires
 
-Utilisez Visual Studio pour définir et exécuter vos tests unitaires afin de maintenir l’intégrité du code, garantir la couverture du code et rechercher les erreurs ainsi que les pannes avant vos clients.
+Utilisez Visual Studio pour définir et exécuter des tests unitaires afin de maintenir l’intégrité du code, garantir la couverture du code, et rechercher les erreurs et les défauts avant que vos clients les trouvent. Exécutez vos tests unitaires fréquemment pour vérifier que votre code fonctionne correctement.
 
 ## <a name="create-unit-tests"></a>Créer des tests unitaires
 
-Créez des tests unitaires et exécutez-les souvent pour vérifier que votre code fonctionne correctement.
+Cette section décrit dans les grandes lignes comment créer un projet de test unitaire.
+
+> [!TIP]
+> Le projet à tester, « HelloWorld », est un exemple de projet et son code n’est pas destiné à être montré. Si vous voulez créer un projet « HelloWorld » à tester, consultez [Créer votre première application console C#](../ide/quickstart-csharp-console.md). Pour un article contenant une procédure pas à pas complète, consultez [Créer et exécuter des tests unitaires pour du code managé](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 1. Créez un projet de test unitaire.
 
@@ -150,6 +153,7 @@ Voici les étapes à suivre pour activer les frameworks de tests tiers :
 
 ## <a name="see-also"></a>Voir aussi
 
+* [Procédure pas à pas : créer et exécuter des tests unitaires pour du code managé](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 * [Créer des tests unitaires, commande](create-unit-tests-menu.md)
 * [Générer des tests avec IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Exécuter des tests avec l’Explorateur de tests](run-unit-tests-with-test-explorer.md)

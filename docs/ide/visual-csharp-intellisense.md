@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f352ac46b87fee66a491c178f5f11369eca7b7d7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d45501f4f8038daf0a891493286ab5f5835195b8
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979060"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484184"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -99,7 +99,7 @@ Pour lancer l’opération **Ajouter using**, positionnez le curseur sur une ré
 
 ![Ajouter using, image développée de l’action rapide](../ide/media/addusing-quickaction.png)
 
-Cliquez sur l’icône Ampoule, puis choisissez **using System.Xml;** pour ajouter automatiquement la directive using.
+Cliquez sur l’icône d’ampoule d’erreur, puis choisissez **using System.Xml;** pour ajouter automatiquement la directive using.
 
 ### <a name="remove-and-sort-usings"></a>Supprimer et trier les directives using
 
@@ -123,7 +123,7 @@ La fonctionnalité **Générer à partir de l’utilisation** permet d’utilise
 
 Une ligne ondulée rouge s’affiche sous chaque identificateur non défini. Quand vous placez le pointeur de la souris sur l'identificateur, un message d'erreur s'affiche dans une info-bulle. Pour afficher les options appropriées, vous pouvez utiliser l'une des procédures suivantes :
 
-- Cliquez sur l'identificateur non défini. Une ampoule **Actions rapides** apparaît sous l’identificateur. Cliquez sur l’ampoule.
+- Cliquez sur l'identificateur non défini. Une ampoule d’erreur **Actions rapides** apparaît sous l’identificateur. Cliquez sur l’ampoule d’erreur.
 
 - Cliquez sur l’identificateur non défini, puis appuyez sur **Ctrl**+**.** (**Ctrl** + point).
 

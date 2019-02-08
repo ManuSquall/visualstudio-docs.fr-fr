@@ -12,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ee615f688b80ae02bf7986c18e0b05a5c94bc4ce
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e2e3a734f78a11a4657899eda58ee3a4fe3ff2c6
+ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020565"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55571185"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Étape 2 : Créer une application Django avec des vues et des modèles de pages
 
@@ -35,7 +35,7 @@ Dans cette étape, vous apprenez comment :
 
 ## <a name="step-2-1-create-an-app-with-a-default-structure"></a>Étape 2-1 : Créer une application avec une structure par défaut
 
-Une application Django est un package Python distinct qui contient un ensemble de fichiers associés dans un but spécifique. Un projet Django peut contenir plusieurs applications, par conséquent, un hôte Web peut servir plusieurs points d’entrée distincts à partir d’un nom de domaine unique. Par exemple, un projet Django pour un domaine comme contoso.com peut contenir une application pour www.contoso.com, une deuxième application pour support.contoso.com et une troisième application pour docs.contoso.com. Dans ce cas, le projet Django gère le routage d’URL et les paramètres au niveau du site (dans ses fichiers *urls.py* et *settings.py*), tandis que chaque application possède son propre style et comportement distinct via son routage interne, ses affichages, modèles, fichiers statiques et son interface d’administration.
+Une application Django est un package Python distinct qui contient un ensemble de fichiers associés dans un but spécifique. Un projet Django peut contenir plusieurs applications, par conséquent, un hôte Web peut servir plusieurs points d’entrée distincts à partir d’un nom de domaine unique. Par exemple, un projet Django pour un domaine comme contoso.com peut contenir une application pour `www.contoso.com`, une deuxième application pour support.contoso.com et une troisième application pour docs.contoso.com. Dans ce cas, le projet Django gère le routage d’URL et les paramètres au niveau du site (dans ses fichiers *urls.py* et *settings.py*), tandis que chaque application possède son propre style et comportement distinct via son routage interne, ses affichages, modèles, fichiers statiques et son interface d’administration.
 
 Une application Django commence généralement par un ensemble standard de fichiers. Visual Studio fournit des modèles d’élément pour initialiser une application Django dans un projet Django, ainsi qu’une commande de menu intégrée qui remplit la même fonction :
 
