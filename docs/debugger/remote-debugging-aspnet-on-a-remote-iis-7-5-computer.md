@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.assetid: 9cb339b5-3caf-4755-aad1-4a5da54b2a23
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 621e7c44592eb94adbc02644af62920b8b95aa24
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: b6bb89772cf013b27d7f7cfd512d79144ffe235d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53829194"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023952"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Déboguer à distance ASP.NET sur un ordinateur distant IIS
 Pour déboguer une application ASP.NET qui a été déployée sur IIS, installer et exécuter les outils à distance sur l’ordinateur où vous avez déployé votre application, puis attacher à votre application en cours d’exécution à partir de Visual Studio.
@@ -48,7 +48,7 @@ Cet article contient des instructions sur la configuration d’une configuration
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>Créer l’ASP.NET 4.5.2 application sur l’ordinateur Visual Studio
   
-1. Créez une application ASP.NET MVC. (**Fichier > Nouveau > projet**, puis sélectionnez <strong>Visual C# > Web > Application Web ASP.NET. Dans le ** ASP.NET 4.5.2</strong> section de modèles, sélectionnez **MVC**. Assurez-vous que l’option **activer la prise en charge Docker** n’est pas sélectionnée et que **authentification** a la valeur **aucune authentification**. Nommez le projet **MyASPApp**.)
+1. Créez une application ASP.NET MVC. (**Fichier > Nouveau > projet**, puis sélectionnez <strong>Visual C# > Web > Application Web ASP.NET. Dans la section des modèles ASP.NET 4.5.2</strong> , sélectionnez **MVC**. Assurez-vous que l’option **activer la prise en charge Docker** n’est pas sélectionnée et que **authentification** a la valeur **aucune authentification**. Nommez le projet **MyASPApp**.)
 
 2. Ouvrez le fichier HomeController.cs et définissez un point d’arrêt dans la méthode `About()` .
 
@@ -206,7 +206,7 @@ Pour plus d’informations sur l’exécution du débogueur distant en tant que 
 
     Le point d’arrêt doit être atteint dans Visual Studio.
 
-## <a name="bkmk_openports">Résolution des problèmes</a> Ouvrez les ports requis sur Windows Server
+## <a name="bkmk_openports"></a> Résolution des problèmes Ouvrez les ports requis sur Windows Server
 
 Dans la plupart des configurations, les ports requis sont ouverts par l’installation d’ASP.NET et le débogueur distant. Toutefois, vous devrez peut-être vérifier que les ports sont ouverts.
 
