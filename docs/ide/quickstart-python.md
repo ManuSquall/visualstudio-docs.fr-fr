@@ -11,18 +11,18 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a5b4cad6d3f033b03f28851fca3c88e9efcc271d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5fa182d504fba8a939d44684f1611debec448593
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945097"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690487"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Démarrage rapide : créer votre première application web Python à l’aide de Visual Studio
 
 Dans cette présentation de 5-10 minutes de Visual Studio en tant qu’environnement de développement intégré (IDE) Python, vous allez créer une application web Python simple à partir de l’infrastructure Flask. Les étapes distinctes que vous suivrez pour créer le projet vous renseigneront sur les fonctionnalités de base de Visual Studio.
 
-Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) pour le faire gratuitement. Dans le programme d’installation, veillez à sélectionner la charge de travail **Développement Python**.
+Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) pour le faire gratuitement. Dans le programme d’installation, veillez à sélectionner la charge de travail **Développement Python**.
 
 ## <a name="create-the-project"></a>Créer le projet
 

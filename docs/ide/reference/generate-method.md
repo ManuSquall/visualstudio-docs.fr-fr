@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2c2de6f8608857d102454d03a98aacd175a22cef
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 86ade7bac365c5566c79d3cb1364670b23f0d3d9
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55024940"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483833"
 ---
 # <a name="generate-a-method-in-visual-studio"></a>Générer une méthode dans Visual Studio
 
@@ -47,8 +47,8 @@ Cette génération de code s’applique à :
       - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
-      - Placez le curseur sur la ligne ondulée rouge, puis cliquez sur l’icône ![Ampoule](media/bulb-cs.png) qui apparaît.
-      - Cliquez sur le bouton ![Ampoule](media/bulb-cs.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne ondulée rouge.
+      - Placez le curseur sur la ligne ondulée rouge, puis cliquez sur l’icône ![ampoule d’erreur](media/error-bulb.png) qui apparaît.
+      - Cliquez sur le bouton ![ampoule d’erreur](media/error-bulb.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne ondulée rouge.
 
       ![Générer un aperçu de méthode](media/method-preview-cs.png)
 

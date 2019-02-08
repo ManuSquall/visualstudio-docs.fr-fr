@@ -1,6 +1,6 @@
 ---
 title: Publier sur Azure App Service
-ms.date: 06/22/2018
+ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
@@ -10,16 +10,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 3bad335fe9781cbd039f17a1a78c51bfa63775d7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 114c6aca7ec7ed05858868b22f7547b0a071420f
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970641"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483755"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Publier une application web sur Azure App Service avec Visual Studio
 
-Vous pouvez utiliser l’outil **Publier** pour publier des applications ASP.NET, ASP.NET Core, Node.js et .NET Core sur Azure App Service ou Azure App Service Linux (à l’aide de conteneurs). Pour les applications Python, suivez les étapes [Python - Publier sur Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
+Pour les applications ASP.NET, ASP.NET Core, Node.js et .NET Core, publiez sur Azure App Service ou Azure App Service Linux (avec des conteneurs) en utilisant une des méthodes suivantes.
+
+* Pour le déploiement continu (ou automatisé) d’applications, utilisez Azure DevOps avec [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops).
+
+* Pour un déploiement ponctuel (ou manuel) d’applications, utilisez l’outil **Publier** de Visual Studio pour publier des applications ASP.NET, ASP.NET Core, Node.js et .NET Core sur Azure App Service pour Linux (avec des conteneurs). Pour les applications Python, suivez les étapes [Python - Publier sur Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
+
+Cet article décrit comment utiliser l’outil **Publier** pour un déploiement ponctuel.
 
 [!INCLUDE [quickstart-prereqs-azure](includes/quickstart-prereqs-azure.md)]
 

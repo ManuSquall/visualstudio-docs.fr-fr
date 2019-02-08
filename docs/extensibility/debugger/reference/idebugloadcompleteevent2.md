@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 276c2a6bc2d03bb03337404b4ae38bd0a9451fca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0071203200cea00671743fe167ba566ece75d1b2
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55029154"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742390"
 ---
 # <a name="idebugloadcompleteevent2"></a>IDebugLoadCompleteEvent2
 Cette interface est envoyée par le moteur de débogage (dé) pour le Gestionnaire de session de débogage (SDM) lorsque le programme est chargé, mais avant l’exécution de n’importe quel code.  
@@ -33,10 +33,7 @@ IDebugLoadCompleteEvent2 : IUnknown
   
 ## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
  Le DE crée et envoie cet objet d’événement pour signaler que le programme a été chargé avec succès. L’événement est envoyé à l’aide de la [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fonction de rappel qui est fournie par le SDM lorsqu’il est attaché au programme en cours de débogage.  
-  
-## <a name="remarks"></a>Notes  
- Cet événement est un événement d’arrêt et qu’il doit avoir le `EVENT_STOPPING` l’indicateur est défini sur les attributs d’événement.  
-  
+   
 ## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   

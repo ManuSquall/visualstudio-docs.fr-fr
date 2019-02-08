@@ -12,19 +12,19 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 573a4fcfa9d9889f4fc6eaaeaf01ce0b1a478651
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d46c26881c07e066ba57afba8e648f5b81325b49
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021177"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483817"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Apprendre à utiliser l’éditeur de code
 
 Dans cette présentation de 10 minutes de l’éditeur de code de Visual Studio, vous allez ajouter du code dans un fichier pour découvrir de quelles façons Visual Studio facilite l’écriture, la navigation et la compréhension du code.
 
 > [!TIP]
-> Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) pour l’installer gratuitement.
+> Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) pour l’installer gratuitement.
 
 Cet article part du principe que vous connaissez déjà un langage de programmation. Si ce n’est pas le cas, nous vous suggérons de commencer par consulter l’un des guides de démarrage rapide de programmation, par exemple, créer une application web en [Python](../ide/quickstart-python.md) ou en [C#](../get-started/csharp/tutorial-aspnet-core.md), ou créer une application de console en [Visual Basic](../ide/quickstart-visual-basic-console.md) ou en [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
 

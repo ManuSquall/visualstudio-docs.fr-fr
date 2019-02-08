@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f984a9f7207a8eec77468a3360e2caec5d9400d4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c75b635cbdce7662c9e3a30237edb3e004ab7d0c
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036093"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742441"
 ---
 # <a name="receive-activity-designer"></a>Concepteur d'activités Receive
 
@@ -52,7 +52,7 @@ Le tableau suivant présente les propriétés de <xref:System.ServiceModel.Activ
 | <xref:System.ServiceModel.Activities.Receive.KnownTypes%2A> | False | Spécifie une collection de types connus pour l'opération de service implémentée par cette activité <xref:System.ServiceModel.Activities.Receive>. Cette propriété doit être utilisée conjointement à la propriété <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> affectée de la valeur <xref:System.Runtime.Serialization.DataContractSerializer>. Elle est ignorée si <xref:System.Xml.Serialization.XmlSerializer> est utilisé.<br /><br /> Sélectionnez le bouton de sélection en regard de la **KnownTypes** champ dans la grille des propriétés pour afficher la **éditeur de collections de Type** boîte de dialogue avec laquelle vous pouvez ajouter des types pertinents. Pour plus d’informations sur l’utilisation de cette zone, consultez la [boîte de dialogue Éditeur de Type Collection](../workflow-designer/type-collection-editor-dialog-box.md) rubrique. |
 | <xref:System.ServiceModel.Activities.Receive.ProtectionLevel%2A> | False | Spécifie l'objet <xref:System.Net.Security.ProtectionLevel> du message.<br /><br /> 1. <xref:System.Net.Security.ProtectionLevel> signifie que l’authentification uniquement.<br />2. <xref:System.Net.Security.ProtectionLevel> signifie la signature des données pour garantir l’intégrité des données transmises.<br />3. <xref:System.Net.Security.ProtectionLevel> signifie chiffrer et signer des données pour garantir la confidentialité et l’intégrité des données transmises. |
 | <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> | False | Spécifie le type de sérialiseur à utiliser pour l'opération de service implémentée par l'activité <xref:System.ServiceModel.Activities.Receive>. La valeur par défaut est <xref:System.Runtime.Serialization.DataContractSerializer>, qui sérialise et désérialise une instance d'un type dans un flux ou document XML utilisant un contrat de données fourni. <xref:System.Xml.Serialization.XmlSerializer> peut également être utilisé s'il est nécessaire de mieux contrôler les données XML. |
-| <xref:System.ServiceModel.Activities.Receive.Action%2A> | False | Spécifie l'en-tête Action header du message. Si elle n’est pas définie explicitement, sa valeur par défaut : https://tempuri.org/{service espace de noms de contrat} / {nom de contrat de service} / {nom de l’opération}. |
+| <xref:System.ServiceModel.Activities.Receive.Action%2A> | False | Spécifie l'en-tête Action header du message. Si elle n’est pas définie explicitement, sa valeur par défaut : `https://tempuri.org/{service contract namespace}/{service contract name}/{operation name}`. |
 
 ## <a name="see-also"></a>Voir aussi
 

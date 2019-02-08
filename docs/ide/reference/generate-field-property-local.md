@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b62aca1b2d3fedb076b7554d5a83e4aba703f53a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d3b22f32669023666451f1981cf9c6fdf6f251e6
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983961"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483599"
 ---
 # <a name="generate-a-field-property-or-local-variable-in-visual-studio"></a>Générer un champ, une propriété ou une variable locale dans Visual Studio
 
@@ -47,8 +47,8 @@ Cette génération de code s’applique à :
       - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
-      - Placez le curseur sur la ligne ondulée rouge, puis cliquez sur l’icône ![Ampoule](media/bulb-cs.png) qui apparaît.
-      - Cliquez sur le bouton ![Ampoule](media/bulb-cs.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne ondulée rouge.
+      - Placez le curseur sur la ligne ondulée rouge, puis cliquez sur l’icône ![ampoule d’erreur](media/error-bulb.png) qui apparaît.
+      - Cliquez sur le bouton ![ampoule d’erreur](media/error-bulb.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne ondulée rouge.
 
       ![Aperçu de l’action Générer le champ/la propriété/la valeur locale](media/field-preview-cs.png)
 

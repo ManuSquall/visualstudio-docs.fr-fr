@@ -1,22 +1,22 @@
 ---
 title: Présentation de l’IDE Visual Studio
 titleSuffix: ''
-ms.date: 07/12/2018
+ms.date: 02/05/2019
 ms.prod: visual-studio-dev15
 ms.topic: quickstart
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ffdc770f8f96d81daed8dd7c9b29f6efb109bd1
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: 79bf66a1fe46a32bb9c172106af7676d89a5469a
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690474"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742822"
 ---
-# <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Démarrage rapide : Premier aperçu de l’IDE Visual Studio
+# <a name="first-look-at-the-visual-studio-ide"></a>Premier aperçu de l’IDE Visual Studio
 
 Dans cette présentation de 5-10 minutes de l’environnement de développement intégré (IDE) de Visual Studio, vous allez effectuer une visite guidée de quelques fenêtres, menus et autres fonctionnalités de l’interface utilisateur.
 
@@ -36,15 +36,15 @@ Si vous fermez la **Page de démarrage** et souhaitez la revoir, vous pouvez la 
 
 Pour continuer à explorer les fonctionnalités de Visual Studio, nous allons créer un projet.
 
-1. Dans la **Page de démarrage**, dans la zone de recherche sous **Nouveau projet**, tapez **console** pour filtrer la liste des types de projets à ceux dont le nom contient le mot « console ».
+1. Dans la **Page de démarrage**, dans la zone de recherche sous **Nouveau projet**, tapez **javascript** pour filtrer la liste des types de projets et afficher seulement ceux dont le nom ou le type de langage contient le mot « javascript ».
 
    ![Rechercher des modèles de projet dans la page de démarrage de Visual Studio](media/start-page-search-templates.png)
 
-   Visual Studio fournit différents types de modèles de projet qui vous aident à bien démarrer le codage. Choisissez un modèle de projet C# **Application console (.NET Framework)**. (Ou, si vous êtes un développeur en Visual Basic, C++, Javascript ou autre langage, n’hésitez pas à créer un projet dans l’un de ces langages. L’interface utilisateur que nous allons explorer est identique pour tous les langages de programmation.)
+   Visual Studio fournit différents types de modèles de projet qui vous aident à bien démarrer le codage. Choisissez un modèle de projet **Application web Node.js vide**. (Si vous êtes développeur TypeScript, n’hésitez pas à créer un projet dans ce langage. L’interface utilisateur que nous allons explorer est identique pour tous les langages de programmation.)
 
 1. Dans la boîte de dialogue **Nouveau projet** qui apparaît, acceptez le nom de projet par défaut et sélectionnez **OK**.
 
-   Le projet est créé et un fichier nommé *Program.cs* s’ouvre dans la fenêtre **Éditeur**. **L’Éditeur** affiche le contenu des fichiers. C’est là que vous effectuez la majeure partie de votre travail de codage dans Visual Studio.
+   Le projet est créé et un fichier nommé *server.cs* s’ouvre dans la fenêtre **Éditeur**. **L’Éditeur** affiche le contenu des fichiers. C’est là que vous effectuez la majeure partie de votre travail de codage dans Visual Studio.
 
    ![Éditeur dans Visual Studio](media/editor.png)
 
@@ -88,7 +88,7 @@ La zone **Lancement rapide** permet d’effectuer rapidement et facilement presq
 
 1. Sous **Commentaires relatifs à la sortie de génération du projet MSBuild**, choisissez **Normal**, puis cliquez sur **OK**.
 
-1. Regénérez le projet en cliquant avec le bouton droit sur le projet **ConsoleApp1** dans l’**Explorateur de solutions** et en choisissant **Regénérer** dans le menu contextuel.
+1. Regénérez le projet en cliquant avec le bouton droit sur le projet **NodejsWebApp1** dans l’**Explorateur de solutions** et en choisissant **Regénérer** dans le menu contextuel.
 
    Cette fois, la fenêtre **Sortie** affiche une journalisation de commentaires plus importante à partir du processus de génération, notamment quels fichiers ont été copiés et où.
 
@@ -98,14 +98,14 @@ La zone **Lancement rapide** permet d’effectuer rapidement et facilement presq
 
 Si vous rencontrez des problèmes pendant l’utilisation de Visual Studio, ou si vous avez des suggestions d’amélioration du produit, vous pouvez utiliser le menu **Envoyer des commentaires** en haut de la fenêtre de Visual Studio, à côté de la zone **Lancement rapide**.
 
-![Menu Envoyer des commentaires dans Visual Studio](media/quickstart-IDE-send-feedback.png)
+![Menu Envoyer des commentaires dans Visual Studio](../ide/media/quickstart-ide-send-feedback.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 Nous avons exploré quelques fonctionnalités de Visual Studio pour nous familiariser avec l’interface utilisateur. Pour en apprendre davantage :
 
 > [!div class="nextstepaction"]
-> [Découvrez l’éditeur de code](../get-started/tutorial-editor.md)
+> [Découvrez l’éditeur de code](write-and-edit-code.md)
 
 > [!div class="nextstepaction"]
 > [Découvrir les projets et les solutions](../get-started/tutorial-projects-solutions.md)

@@ -11,12 +11,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 065a4c21be596b409ed82718e0b38c38367612cc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f33c1edec4b4093e9157a59618befa2e1175be49
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039053"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483989"
 ---
 # <a name="code-style-preferences"></a>Préférences de style de code
 
@@ -31,7 +31,7 @@ Chaque élément de la liste affiche un aperçu de la préférence sélectionné
 
 ## <a name="preference-and-severity"></a>Préférence et gravité
 
-Pour chaque élément, vous pouvez définir les valeurs **Préférence** et **Gravité** en utilisant les listes déroulantes sur chaque ligne. L’option Gravité peut avoir la valeur **Aucune**, **Suggestion**, **Avertissement** ou **Erreur**. Si vous souhaitez activer les [actions rapides](../ide/quick-actions.md) pour un style de code, assurez-vous que la valeur de l’option **Gravité** n’est pas **Aucune**. L’icône en forme d’ampoule **Actions rapides** ![Petite icône en forme d’ampoule](media/vs2015_lightbulbsmall.png) s’affiche quand un style qui n’est pas un style par défaut est utilisé. Vous pouvez choisir une option dans la liste **Actions rapides** pour réécrire automatiquement le code avec le style par défaut.
+Pour chaque élément, vous pouvez définir les valeurs **Préférence** et **Gravité** en utilisant les listes déroulantes sur chaque ligne. L’option Gravité peut avoir la valeur **Aucune**, **Suggestion**, **Avertissement** ou **Erreur**. Si vous souhaitez activer les [actions rapides](../ide/quick-actions.md) pour un style de code, assurez-vous que la valeur de l’option **Gravité** n’est pas **Aucune**. L’icône d’ampoule **Actions rapides** ![ampoule](media/vs2015_lightbulbsmall.png), d’ampoule d’erreur ![ampoule d’erreur](media/error-bulb.png)ou de tournevis ![tournevis](media/screwdriver.png) apparaît quand un style qui n’est pas un style par défaut est utilisé. Vous pouvez choisir une option dans la liste **Actions rapides** pour réécrire automatiquement le code avec le style par défaut.
 
 ## <a name="editorconfig-files"></a>Fichiers EditorConfig
 

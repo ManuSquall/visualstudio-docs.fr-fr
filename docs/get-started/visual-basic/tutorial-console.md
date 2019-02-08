@@ -14,18 +14,18 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: e4fcd76cb535fdf7f043189720f291393e4ed9d3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7e2d5cf15b6afd1b6eed6d800a1b7ba67c1f87b8
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919068"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424497"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Tutoriel : Bien démarrer avec Visual Basic dans Visual Studio
 
 Dans ce tutoriel pour Visual Basic (VB), vous allez utiliser Visual Studio afin de créer et d’exécuter différentes applications console tout en explorant certaines fonctionnalités de l’[IDE (environnement de développement intégré) Visual Studio](visual-studio-ide.md).
 
-Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) pour l’installer gratuitement.
+Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) pour l’installer gratuitement.
 
 ## <a name="create-a-project"></a>Créer un projet
 

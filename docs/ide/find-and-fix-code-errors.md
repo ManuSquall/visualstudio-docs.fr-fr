@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bab4485953203c9f3b19947b89f76329b6bc277b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 99b84e02c4ca63d80d6ef80637fcce042c869bcf
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55017095"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483768"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Faire fonctionner le code dans Visual Studio
 
@@ -89,9 +89,9 @@ Les avertissements nouveaux ou mis à jour apparaissent sous l’onglet **Liste 
 
 ![Liste d’erreurs de Visual Studio avec des avertissements](../ide/media/cpp-code-analysis-warning.png)
 
-## <a name="use-light-bulbs-to-fix-or-refactor-code"></a>Utiliser des ampoules pour corriger ou refactoriser du code
+## <a name="use-quick-actions-to-fix-or-refactor-code"></a>Utiliser les actions rapides pour corriger ou refactoriser du code
 
-Les [actions rapides](../ide/quick-actions.md), disponibles à partir de l’icône d’ampoule ou de tournevis, permettent de refactoriser le code inline. Elles vous permettent de résoudre facilement et rapidement des avertissements courants dans du code C#, C++ et Visual Basic. Pour y accéder, cliquez avec le bouton droit sur le trait de soulignement ondulé d’un avertissement et sélectionnez **Actions rapides et refactorisations**. Ou bien, quand votre curseur est sur la ligne marquée d’une ligne ondulée en couleur, appuyez sur **Ctrl**+**.** Ou bien sélectionnez l’icône d’ampoule ou de tournevis dans la marge. Vous voyez alors une liste des corrections ou des refactorisations possibles que vous pouvez appliquer à cette ligne de code.
+Les [actions rapides](../ide/quick-actions.md), disponibles à partir de l’icône d’ampoule ou de tournevis, permettent de refactoriser le code inline. Elles vous permettent de résoudre facilement et rapidement des avertissements courants dans du code C#, C++ et Visual Basic. Pour y accéder, cliquez avec le bouton droit sur le trait de soulignement ondulé d’un avertissement et sélectionnez **Actions rapides et refactorisations**. Ou bien, quand votre curseur est sur la ligne marquée d’une ligne ondulée en couleur, appuyez sur **Ctrl**+**.** ou sélectionnez l’icône d’ampoule, d’ampoule d’erreur ou de tournevis dans la marge. Vous voyez alors une liste des corrections ou des refactorisations possibles que vous pouvez appliquer à cette ligne de code.
 
 ![Aperçu d’une ampoule dans Visual Studio](../ide/media/quick-actions-options.png)
 

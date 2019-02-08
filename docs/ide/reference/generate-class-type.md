@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 718d8cb497435050b82943da3f0ca466e33b945a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 167c4380f67a51d3e03f2e4241c0c384781ddb43
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954837"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483937"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Générer une classe ou un type dans Visual Studio
 
@@ -52,8 +52,8 @@ Cette génération de code s’applique à :
       - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
-      - Placez le curseur sur la ligne ondulée rouge, puis cliquez sur l’icône ![Ampoule](media/bulb-cs.png) qui apparaît.
-      - Cliquez sur le bouton ![Ampoule](media/bulb-cs.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne ondulée rouge.
+      - Placez le curseur sur la ligne ondulée rouge, puis cliquez sur l’icône ![ampoule d’erreur](media/error-bulb.png) qui apparaît.
+      - Cliquez sur le bouton ![ampoule d’erreur](media/error-bulb.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne ondulée rouge.
 
       ![Aperçu de l’action Générer la classe](media/class-preview-cs.png)
 

@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 5c21fbbee529cc67f31df98f4a441fdefa3bae6f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f0936078039c4c1071f0214b61702a7f57f794ec
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020111"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690190"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Déboguer des applications ASP.NET Azure en direct à l’aide du débogueur de capture instantanée
 
@@ -37,7 +37,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
 * Débogueur de capture instantanée est uniquement disponible pour Visual Studio 2017 Enterprise version 15.5 ou version ultérieure avec le **charge de travail de développement Azure**. (Sous la **composants individuels** onglet, vous retrouver sous **débogage et test** > **débogueur de capture instantanée**.)
 
-    S’il n’est pas déjà installé, installez [Visual Studio 2017 Enterprise version 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ou version ultérieure. Si vous mettez à jour à partir d’une précédente installation de Visual Studio 2017, exécutez le programme d’installation Visual Studio et vérifiez le composant de débogueur de capture instantanée le **charge de travail de développement ASP.NET et web**.
+    S’il n’est pas déjà installé, installez [Visual Studio 2017 Enterprise version 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ou version ultérieure. Si vous mettez à jour à partir d’une précédente installation de Visual Studio 2017, exécutez le programme d’installation Visual Studio et vérifiez le composant de débogueur de capture instantanée le **charge de travail de développement ASP.NET et web**.
 
 * Plan Azure App Service de base ou supérieur.
 

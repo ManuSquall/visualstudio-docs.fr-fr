@@ -11,12 +11,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: e2fe0c653706212e33b2a60b2d51a8b6cfea5a29
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4181d7d84d1257f40a2e574944a722795f660469
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941390"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484093"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Guide de productivité C# pour Visual Studio 2017
 
@@ -81,7 +81,7 @@ Vous pouvez utiliser un fichier *.editorconfig* pour codifier les conventions de
 
 ## <a name="i-need-more-refactorings-and-code-fixes"></a>J’ai besoin de refactorisations et de corrections de code supplémentaires
 
-Visual Studio 2017 est fourni avec un grand nombre de refactorisations, d’actions de génération de code et de corrections de code. Les tildes rouges représentent les erreurs, les tildes verts représentent les avertissements et trois points gris représentent les suggestions de code. Vous pouvez accéder aux corrections de code en cliquant sur l’icône d’ampoule/tournevis, ou en appuyant sur **Ctrl**+**.** ou sur **Alt**+**Entrée**. Chaque correction est accompagnée d’une fenêtre de prévisualisation qui affiche une comparaison dynamique du code pour illustrer la correction.
+Visual Studio 2017 est fourni avec un grand nombre de refactorisations, d’actions de génération de code et de corrections de code. Les tildes rouges représentent les erreurs, les tildes verts représentent les avertissements et trois points gris représentent les suggestions de code. Vous pouvez accéder aux correctifs de code en cliquant sur l’icône d’ampoule ou de tournevis, ou en appuyant sur **Ctrl**+**.** ou sur **Alt**+**Entrée**. Chaque correction est accompagnée d’une fenêtre de prévisualisation qui affiche une comparaison dynamique du code pour illustrer la correction.
 
 - Les correctifs rapides et refactorisations répandus sont les suivants :
   - *Renommer*
@@ -155,7 +155,7 @@ Voici une liste de fonctionnalités de l’éditeur liées à la productivité p
 | Fonctionnalité | Détails | Comment activer |
 |-|-|-|
 | Rechercher un fichier dans l’Explorateur de solutions | Met en évidence le fichier actif dans **Explorateur de solutions** | **Outils** > **Options** > **Projets et solutions** > **Suivre un élément actif dans l’Explorateur de solutions** |
-| Ajouter des instructions using pour les types dans les assemblys de référence et les packages NuGet | Affiche une ampoule avec un correctif de code pour installer un package NuGet pour un type non référencé | **Outils** > **Options** > **Éditeur de texte** > **C#** > **Avancé** > **Suggérer des usings pour les types dans les assemblys de référence** et **Suggérer des usings pour les types dans les packages NuGet** |
+| Ajouter des instructions using pour les types dans les assemblys de référence et les packages NuGet | Affiche une ampoule d’erreur avec un correctif de code pour installer un package NuGet pour un type non référencé | **Outils** > **Options** > **Éditeur de texte** > **C#** > **Avancé** > **Suggérer des usings pour les types dans les assemblys de référence** et **Suggérer des usings pour les types dans les packages NuGet** |
 | Activer l’analyse complète de la solution | Visualisez toutes les erreurs de votre solution dans la **Liste d’erreurs** | **Outils** > **Options** > **Éditeur de texte** > **C#** > **Avancé**   > **Activer l’analyse complète de la solution** |
 | Activer la navigation vers les sources décompilées | Permet d’activer la fonctionnalité Atteindre la définition sur les types/membres de sources externes et d’utiliser le décompilateur ILSpy pour afficher les corps de méthodes | **Outils** > **Options** > **Éditeur de texte** > **C#** > **Avancé** > **Activer la navigation vers les sources décompilées** |
 | Mode de saisie semi-automatique/suggestion | Change le comportement de saisie semi-automatique dans IntelliSense - Les développeurs qui connaissent IntelliJ ont tendance à changer le paramètre par défaut | **Menu** > **Modifier** > **IntelliSense** > **Activer/Désactiver le mode de saisie semi-automatique** |

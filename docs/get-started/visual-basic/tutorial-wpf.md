@@ -14,16 +14,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3e1789a14d1b3d398372a6490c901b8e9b347691
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 848fe369083b4dd01ee0ee1b541ab7228ee338f8
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013299"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483924"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Tutoriel : Créer une application simple avec Visual Basic
 
 Avec cette procédure pas à pas, vous allez vous familiariser avec la plupart des outils, boîtes de dialogue et concepteurs que vous pouvez utiliser quand vous développez des applications avec Visual Studio. Vous allez créer une application « Hello, World », concevoir l’interface utilisateur, ajouter du code et déboguer des erreurs, tout en découvrant l’utilisation de l’environnement de développement intégré ([IDE](visual-studio-ide.md)).
+
+Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) pour l’installer gratuitement.
 
 ## <a name="configure-the-ide"></a>Configurer l'IDE
 

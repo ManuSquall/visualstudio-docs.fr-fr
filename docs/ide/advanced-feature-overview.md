@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea5b321169253202c397d09b9d6daac439213b55
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 3fa12b878a21523e53a3ff78ad838e41eb95888f
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089209"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690435"
 ---
 # <a name="features-of-visual-studio-2017"></a>Fonctionnalités de Visual Studio 2017
 
@@ -24,7 +24,7 @@ L’article [Vue d’ensemble de l’IDE Visual Studio](../get-started/visual-st
 
 Le programme d’installation modulaire de Visual Studio vous permet de choisir et d’installer des *charges de travail*. Les charges de travail sont des groupes de fonctionnalités nécessaires au langage de programmation ou à la plateforme que vous préférez. Cette stratégie permet de réduire l’espace dédié à l’installation de Visual Studio, ce qui implique également une installation et des mises à jour plus rapides.
 
-Si vous n’avez pas encore installé Visual Studio 2017, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) pour l’installer gratuitement.
+Si vous n’avez pas encore installé Visual Studio 2017, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) pour l’installer gratuitement.
 
 Pour en savoir plus sur la configuration de Visual Studio sur votre système, consultez [Installer Visual Studio 2017](../install/install-visual-studio.md).
 

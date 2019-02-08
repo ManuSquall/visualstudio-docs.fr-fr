@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91f25f9ab44bee749283603b78744c9e01e4e469
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b18e1837fdc673500fae96555dab7fb0195ec42e
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992631"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424238"
 ---
 # <a name="immediate-window"></a>Exécution (fenêtre)
 
@@ -102,7 +102,7 @@ Vous devez entrer le signe supérieur à (>) lors de l’émission de commandes 
 
 Quand vous cliquez sur n’importe quelle ligne précédente dans la fenêtre **Exécution**, vous passez automatiquement en mode Marque. Cela vous permet de sélectionner, de modifier et de copier le texte de commandes précédentes comme vous le feriez dans n’importe quel éditeur de texte, et de les coller dans la ligne active.
 
-## <a name="the-equals-sign"></a>Signe égal (=)
+## <a name="the-equals-sign-"></a>Signe égal (=)
 
 La fenêtre utilisée pour entrer la commande `EvaluateStatement` détermine si un signe égal (=) est interprété comme un opérateur de comparaison ou comme un opérateur d’assignation.
 

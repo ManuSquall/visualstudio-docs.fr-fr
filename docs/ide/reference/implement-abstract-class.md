@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c3e4267e806d0dea1b8d00ca2836982fbfdb9d58
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2c9927f810dabd028cba311a576e2bbc33a398f5
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55030637"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483950"
 ---
 # <a name="implement-an-abstract-class-in-visual-studio"></a>Implémenter une classe abstraite dans Visual Studio
 
@@ -47,8 +47,8 @@ Cette génération de code s’applique à :
       - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
-      - Placez le curseur sur la ligne ondulée rouge, puis cliquez sur l’icône ![Ampoule](media/bulb-cs.png) qui apparaît.
-      - Cliquez sur le bouton ![Ampoule](media/bulb-cs.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne ondulée rouge.
+      - Placez le curseur sur la ligne ondulée rouge, puis cliquez sur l’icône ![ampoule d’erreur](media/error-bulb.png) qui apparaît.
+      - Cliquez sur le bouton ![ampoule d’erreur](media/error-bulb.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne ondulée rouge.
 
    ![Implémenter un aperçu de classe](media/abstract-preview-cs.png)
 
