@@ -4,16 +4,15 @@ title: Déployer vos applications | Microsoft Docs
 description: Découvrez comment utiliser Visual Studio 2017 pour déployer des applications, des services et des composants.
 ms.custom: seodec18
 ms.topic: landing-page
-ms.prod: visual-studio-dev15
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
-ms.openlocfilehash: b2463395707a62091292256d601290121295d76c
-ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
+ms.openlocfilehash: 4f6d81af23ba5763b89b19b29cb493e6cb59c8ff
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55571016"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947119"
 ---
 # <a name="deployment-in-visual-studio"></a>Déploiement dans Visual Studio
 
