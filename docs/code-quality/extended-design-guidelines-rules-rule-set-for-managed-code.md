@@ -1,7 +1,6 @@
 ---
 title: Ensemble de règles de règles de conception étendue pour le code managé
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: a338caf2-b75d-4f23-a0f9-3024fa0bceac
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9aeddeed26542b32ed1517939b9f93e3ec7bdbb8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e54a031e69957579974e67af124b0e88a0d95abb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55017030"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918167"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Ensemble de règles de règles de conception étendue pour le code managé
 L’ensemble de règles intitulé règles de conception étendue Microsoft s’appuie sur les règles de conception de base pour optimiser les problèmes de facilité d’utilisation et la facilité de gestion qui sont signalés. Accentuation supplémentaire est placée sur les règles de dénomination. Vous devez envisager d’y compris cet ensemble de règles si votre projet inclut le code de bibliothèque ou si vous souhaitez appliquer les normes la plus élevées pour l’écriture de code qui est facile à gérer.

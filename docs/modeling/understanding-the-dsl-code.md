@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 2a1a32f60f1cee19310af76e1f4b82a4dfe2f828
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 29424efe9b6d170033853e1959073406626b7be0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55033282"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928281"
 ---
 # <a name="understanding-the-dsl-code"></a>Fonctionnement du code DSL
 Une solution de langage spécifique à un domaine (DSL) génère une API que vous pouvez utiliser pour lire et mettre à jour les instances du DSL dans Visual Studio. Cette API est définie dans le code généré à partir de la définition DSL. Cette rubrique décrit l'API générée.
@@ -59,7 +58,7 @@ Une solution de langage spécifique à un domaine (DSL) génère une API que vou
 
  *YourDsl* `Schema.xsd`
 
- Schéma pour les fichiers qui contient les instances de votre DSL. Ce fichier est copié à la compilation (**bin**) directory. Lorsque vous installez votre DSL, vous pouvez copier ce fichier sur **\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas** afin que les fichiers de modèle peuvent être validés. Pour plus d’informations, consultez [déploiement de Solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).
+ Schéma pour les fichiers qui contient les instances de votre DSL. Ce fichier est copié à la compilation (**bin**) directory. Lorsque vous installez votre DSL, vous pouvez copier ce fichier sur **\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas** afin que les fichiers de modèle peuvent être validés. Pour plus d’informations, consultez [Déploiement de solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).
 
  Si vous personnalisez la sérialisation en définissant des options dans l'Explorateur DSL, le schéma changera en conséquence. Toutefois, si vous écrivez votre propre code de sérialisation, ce fichier peut ne plus représenter le schéma réel. Pour plus d’informations, consultez [stockage de fichiers de personnalisation et la sérialisation XML](../modeling/customizing-file-storage-and-xml-serialization.md).
 
@@ -138,7 +137,7 @@ Une solution de langage spécifique à un domaine (DSL) génère une API que vou
 
  Ce fichier contient des chaînes telles que les descriptions des classes de domaine et des propriétés, des noms de propriétés, des étiquettes de boîte à outils, des messages d'erreur standard et d'autres chaînes qui peuvent être affichées à l'utilisateur. Il contient également des icônes d'outils et des images pour les formes d'images.
 
- Ce fichier est lié à l'assembly généré et fournit les valeurs par défaut de ces ressources. Vous pouvez localiser votre DSL en créant un assembly satellite qui contient une version localisée des ressources. Cette version sera utilisée lors de l'installation de la solution DSL dans une culture correspondant aux ressources localisées. Pour plus d’informations, consultez [déploiement de Solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).
+ Ce fichier est lié à l'assembly généré et fournit les valeurs par défaut de ces ressources. Vous pouvez localiser votre DSL en créant un assembly satellite qui contient une version localisée des ressources. Cette version sera utilisée lors de l'installation de la solution DSL dans une culture correspondant aux ressources localisées. Pour plus d’informations, consultez [Déploiement de solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).
 
  `DomainRelationships.cs`
 
@@ -341,7 +340,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 > [!WARNING]
 >  Si vous modifiez le fichier .tt pour inclure des ressources telles que des icônes et des images, assurez-vous que la ressource est incluse dans la build VSIX. Dans l’Explorateur de solutions, sélectionnez le fichier et assurez-vous que le **inclure dans VSIX** propriété est `True`.
 
- Ce fichier contrôle comment la solution DSL est empaquetée dans un fichier VSIX (Visual Studio Integration Extension). Pour plus d’informations, consultez [déploiement de Solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).
+ Ce fichier contrôle comment la solution DSL est empaquetée dans un fichier VSIX (Visual Studio Integration Extension). Pour plus d’informations, consultez [Déploiement de solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).
 
 ## <a name="see-also"></a>Voir aussi
 

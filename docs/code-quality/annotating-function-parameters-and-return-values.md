@@ -1,7 +1,6 @@
 ---
 title: Annotation de paramètres de fonction et valeurs de retour
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - _Outptr_opt_result_bytebuffer_to_
@@ -126,12 +125,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: e958674858eaa2de01cf837de12f70ed17b4f210
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 14ea474200875b5667962895deadd6479b44c391
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921015"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923928"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Annotation de paramètres de fonction et valeurs de retour
 Cet article décrit les utilisations courantes des annotations pour les paramètres de fonction simple, scalaires et des pointeurs vers des classes et structures et la plupart des types de mémoires tampons.  Cet article montre également les modes d’utilisation courants pour les annotations. Pour des annotations supplémentaires qui sont liées aux fonctions, consultez [annoter le comportement (fonction)](../code-quality/annotating-function-behavior.md)

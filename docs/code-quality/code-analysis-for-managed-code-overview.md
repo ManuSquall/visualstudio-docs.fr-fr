@@ -1,7 +1,6 @@
 ---
 title: Analyse statique du code pour le code managé
 ms.date: 03/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.projectpropertypages.codeanalysis
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 04ae73deb4bc4dfba550df2c663d8f77a4b1efcf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0da99377a6e0f5405029c0ac194484de3a3a1c90
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55030078"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909139"
 ---
 # <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Vue d’ensemble de l’analyse statique du code pour le code managé dans Visual Studio
 
@@ -35,13 +34,13 @@ L'outil d'analyse représente les contrôles effectués lors d'une analyse comme
 
 Vous pouvez exécuter l’analyse du code sur votre projet manuellement ou automatiquement.
 
-Pour exécuter l’analyse du code chaque fois que vous générez un projet, sélectionnez **activer l’analyse du Code sur la Build** sur la Page de propriétés du projet. Pour plus d'informations, voir [Procédure : Activer et désactiver l’analyse du Code automatique](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
+Pour exécuter l’analyse du code chaque fois que vous générez un projet, sélectionnez **activer l’analyse du Code sur la Build** sur la Page de propriétés du projet. Pour plus d'informations, voir [Procédure : Activer et désactiver l’analyse du code automatique](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
 Pour exécuter manuellement l’analyse du code sur un projet, dans la barre de menus, choisissez **analyser** > **exécuter l’analyse du Code** > **exécuter l’analyse du Code sur \<projet >**.
 
 ## <a name="rule-sets"></a>Ensembles de règles
 
-Règles d’analyse du code pour le code managé sont regroupés en [ensembles de règles](../code-quality/using-rule-sets-to-group-code-analysis-rules.md). Vous pouvez utiliser un des ensembles de règles standard Microsoft, ou vous pouvez [créer un ensemble de règles personnalisé](../code-quality/how-to-create-a-custom-rule-set.md) pour répondre à un besoin spécifique.
+Les règles d’analyse du code pour le code managé sont regroupées dans des [ensembles de règles](../code-quality/using-rule-sets-to-group-code-analysis-rules.md). Vous pouvez utiliser un des ensembles de règles standard Microsoft, ou vous pouvez [créer un ensemble de règles personnalisé](../code-quality/how-to-create-a-custom-rule-set.md) pour répondre à un besoin spécifique.
 
 ## <a name="suppress-warnings"></a>Supprimer les avertissements
 
@@ -80,4 +79,4 @@ Vous pouvez utiliser les fonctionnalités intégrées du système de génératio
 
 - [Vue d’ensemble des analyseurs de Roslyn](../code-quality/roslyn-analyzers-overview.md)
 - [Utilisation d’ensembles de règles pour regrouper des règles d’analyse du code](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
-- [Guide pratique pour Activer et désactiver l’analyse du Code automatique](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
+- [Guide pratique pour Activer et désactiver l’analyse du code automatique](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

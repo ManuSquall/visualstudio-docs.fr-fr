@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 55faad5ee76819320384d977100bf02e482b79ca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 93a121a103d18d886fafa2368d8669276a8010e8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940126"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938281"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Bien démarrer avec les langages spécifiques à un domaine
 
@@ -394,7 +393,7 @@ Renommez les classes de domaine existants et les relations. Par exemple, à part
 
  Vous pouvez utiliser la même procédure pour installer la solution DSL sur votre ordinateur afin que vous n’avez pas à utiliser l’instance expérimentale de Visual Studio.
 
- Pour plus d’informations, consultez [déploiement de Solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).
+ Pour plus d’informations, consultez [Déploiement de solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).
 
 ##  <a name="Reset"></a> Suppression des anciennes DSL expérimental
  Si vous avez créé plusieurs DSL expérimentale que vous ne souhaitez plus, vous pouvez les supprimer à partir de votre ordinateur en réinitialisant l’instance expérimentale de Visual Studio.

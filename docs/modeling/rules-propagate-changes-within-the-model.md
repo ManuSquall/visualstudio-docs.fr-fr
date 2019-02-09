@@ -10,13 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: aded621c89f6d351c6abb9bbe1744de51673e6b9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: be803d02ab2040537b06a81327355abf80f56aab
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070797"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919870"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Propagation de modifications dans le modèle par des règles
 Vous pouvez créer une règle de magasin pour propager une modification d’un élément à un autre dans la visualisation et modélisation de kit de développement logiciel (SDK) VISUALIZATION. En cas de modification à un élément dans le Store, les règles sont planifiées pour être exécutée, généralement lors de la transaction externe est validée. Il existe différents types de règles pour différents types d’événements, comme l’ajout d’un élément ou sa suppression. Vous pouvez attacher des règles à des types d’éléments, des formes ou des diagrammes. Nombreuses fonctionnalités intégrées sont définies par les règles : par exemple, règles garantissent qu’un diagramme est mis à jour quand le modèle change. Vous pouvez personnaliser votre langage spécifique à un domaine en ajoutant vos propres règles.

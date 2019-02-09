@@ -1,7 +1,6 @@
 ---
 title: 'CA1506 : Éviter les couplages de classe excessifs'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - AvoidExcessiveClassCoupling
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a359df7f9538c1b1bc3fe03f1f711a41adca009e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0312289379e8aea79ee4e8291d9f4ee984949aaa
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54931243"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934287"
 ---
 # <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506 : Éviter les couplages de classe excessifs
 
