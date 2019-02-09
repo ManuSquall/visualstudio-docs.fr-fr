@@ -1,19 +1,18 @@
 ---
 title: Utilisation des ensembles de règles pour spécifier les règles C++ à exécuter
 ms.date: 04/28/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a556b0bb051ea25b438f91696b5e55b0c984115c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f8d4a5b28686b2af356d1247bf9690708739fea8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873533"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907842"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Utilisez des ensembles de règles pour spécifier les règles C++ à exécuter
 

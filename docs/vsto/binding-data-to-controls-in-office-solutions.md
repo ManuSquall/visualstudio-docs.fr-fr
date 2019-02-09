@@ -1,7 +1,6 @@
 ---
 title: Lier des données aux contrôles dans les solutions Office
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ce13d0154e2cbd04a593500e14a3c1dd43a870dd
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 6c04ca05c85d36289154c9c62cbac7338ee217fc
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863810"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908059"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Lier des données aux contrôles dans les solutions Office
   Vous pouvez lier des contrôles Windows Forms et des *contrôles hôtes* dans un document Microsoft Office Word ou une feuille de calcul Microsoft Office Excel à une source de données pour que les contrôles affichent automatiquement les données. Vous pouvez lier des données à des contrôles dans des projets de niveau application et au niveau du document.  

@@ -1,7 +1,6 @@
 ---
 title: Spécification du moment où une annotation est applicable et dans quel cas
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - _Group_
@@ -14,12 +13,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ebdc8592d26c124f98ff9d390e173b6675f09d9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1b94bd5dc40102bce073e42302e92b737b4e8b0d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863301"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942022"
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>Spécification du moment où une annotation est applicable et dans quel cas
 Lorsqu’une annotation est conditionnelle, elle peut nécessiter des autres annotations pour spécifier que, à l’analyseur.  Par exemple, si une fonction comporte une variable qui peut être synchrone ou asynchrone, la fonction se comporte comme suit : Dans le cas synchrone il finit par réussit toujours, mais dans le cas asynchrone, il signale une erreur si elle ne peut pas réussir immédiatement. Lorsque la fonction est appelée de manière synchrone, en vérifiant la valeur de résultat ne fournit aucune valeur pour l’Analyseur de code, car il n'aurait pas retourné.  Toutefois, lorsque la fonction est appelée de façon asynchrone et le résultat de la fonction n’est pas activé, une erreur grave peut se produire. Cet exemple illustre une situation dans laquelle vous pouvez utiliser le `_When_` annotation, décrite plus loin dans cet article, pour activer la vérification.

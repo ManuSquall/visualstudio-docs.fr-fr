@@ -1,7 +1,6 @@
 ---
 title: 'Procédure : Obtenir une vue d’ensemble d’un jeu de schémas à l’aide de la vue du graphique dans le schéma XML Concepteur'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: c0df4b0d-52ef-4a6c-9676-1d8311aad7c7
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a161e2b354559eed220914842eaba73f20654b1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 603761f2886ffc64170774a2d6c460d39596454b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54917092"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922028"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Procédure : Obtenir une vue d’ensemble d’un schéma défini à l’aide de la vue du graphique
 

@@ -1,7 +1,6 @@
 ---
 title: Ensemble de règles des règles minimales natives
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 2d898bc4-fba5-472e-8f09-b0c6b511c5a3
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59efe56d12914db00f26c17ff5d4b8c7a0c3934f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b358821705c87767fcb05f45f06b83e8b1e60049
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918288"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55915775"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Ensemble de règles des règles minimales natives
 Les règles minimales natives de Microsoft vous concentrer sur les problèmes les plus critiques présents dans votre code natif, notamment les failles de sécurité potentielles et les blocages d’application. Vous devez inclure cet ensemble de règles dans tout ensemble de règles personnalisé que vous créez pour vos projets natifs.

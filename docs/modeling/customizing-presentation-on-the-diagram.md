@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: cada6491e0c4af20197848302ff0cf7006acd3ba
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 99cd0704c74da1e3f31363c5847260e39d844a41
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55068913"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55944440"
 ---
 # <a name="customizing-presentation-on-the-diagram"></a>Personnalisation de la présentation d'un diagramme
 Le diagramme est la zone de présentation principale d'un concepteur de langage spécifique à un domaine (DSL). Généralement, les utilisateurs recourent au diagramme pour construire leurs modèles. Vous pouvez personnaliser le diagramme comme décrit dans les rubriques suivantes.

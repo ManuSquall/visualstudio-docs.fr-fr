@@ -11,13 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: cc2527739c40802f3e21ea4fabebfc20fb09cdcc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b44b32f98406e4692de97562bbf97e2656b3a7de
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54962129"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937375"
 ---
 # <a name="properties-of-compartment-shapes"></a>Propriétés des formes de compartiment
 Formes de compartiments sont une des formes que vous pouvez utiliser pour afficher une classe de domaine dans un langage spécifique à un domaine. Vous pouvez développer et réduire les compartiments.
@@ -28,7 +27,7 @@ Formes de compartiments sont une des formes que vous pouvez utiliser pour affich
 
 |Propriété|Description|Par défaut|
 |-|-|-|
-|Par défaut développez état réduit|Si `Expanded`, les compartiments sont affichés sur la création. Si `Collapsed`, ils ne sont pas.|Développé|
+|Par défaut développez état réduit|Si `Expanded`, les compartiments sont affichés sur la création. Si `Collapsed`, ils ne sont pas.|Étendu|
 |Couleur de remplissage|La couleur de remplissage de cette forme.|Blanc|
 |Mode de remplissage dégradé|Le mode de remplissage dégradé de cette forme.|Horizontal|
 |géométrie|La géométrie de cette forme (Rectangle ou Rectangle arrondi).|Rectangle|
@@ -58,4 +57,4 @@ Formes de compartiments sont une des formes que vous pouvez utiliser pour affich
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Glossaire des outils Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossaire des Outils Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

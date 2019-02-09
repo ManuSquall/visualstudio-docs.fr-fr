@@ -1,7 +1,6 @@
 ---
 title: 'CA2108 : Vérifiez la sécurité déclarative dans les types valeur'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - ReviewDeclarativeSecurityOnValueTypes
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb7795b2e1cdcdf8d32578396bb879f4573a45e8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 37f4cac83c83b47fda5cf9cde85a3e14d857d2bc
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55003283"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922732"
 ---
 # <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108 : Vérifiez la sécurité déclarative dans les types valeur
 

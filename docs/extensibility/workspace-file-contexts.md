@@ -2,18 +2,17 @@
 title: Contextes de fichier d’espace de travail dans Visual Studio | Microsoft Docs
 ms.date: 02/21/2018
 ms.topic: conceptual
-ms.assetid: 7aaa0e65-f492-49ea-a845-35bd14910ca7
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93690eab989cee62d756a774675bf1d46da017fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 36f986db6f2c7b483b46060e1f514acc8dd9e758
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826862"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939188"
 ---
 # <a name="workspace-file-contexts"></a>Contextes de fichier d’espace de travail
 
@@ -27,7 +26,7 @@ Les scénarios les plus courants pour les contextes de fichier sont liées à la
 
 ## <a name="file-context-lifecycle"></a>Cycle de vie du contexte de fichier
 
-Cycles de vie pour un `FileContext` sont non déterministes. À tout moment, un composant peut demander de manière asynchrone pour un jeu de types de contexte. Les fournisseurs qui prennent en charge un sous-ensemble des types de contexte de requête doivent être interrogées. Le `IWorkspace` instance joue le rôle d’intermédiaire entre les consommateurs et les fournisseurs via le <xref:Microsoft.VisualStudio.Workspace.IWorkspace.GetFileContextsAsync%2A> (méthode). Les consommateurs peuvent demander un contexte et effectuer une action à court terme basée sur le contexte, alors que d’autres peuvent demander un contexte et conserver une référence à long terme. 
+Cycles de vie pour un `FileContext` sont non déterministes. À tout moment, un composant peut demander de manière asynchrone pour un jeu de types de contexte. Les fournisseurs qui prennent en charge un sous-ensemble des types de contexte de requête doivent être interrogées. Le `IWorkspace` instance joue le rôle d’intermédiaire entre les consommateurs et les fournisseurs via le <xref:Microsoft.VisualStudio.Workspace.IWorkspace.GetFileContextsAsync%2A> (méthode). Les consommateurs peuvent demander un contexte et effectuer une action à court terme basée sur le contexte, alors que d’autres peuvent demander un contexte et conserver une référence à long terme.
 
 Modifications peuvent se produire dans des fichiers qui provoquent un contexte de fichier devenir obsolète. Le fournisseur peut déclencher un événement sur le `FileContext` pour avertir les consommateurs des mises à jour. Par exemple, si un contexte de build est fourni pour un fichier, mais une modification sur disque invalide ce contexte, le producteur d’origine peut appeler l’événement. Les consommateurs qui référence encore `FileContext` pouvez puis actualiser pour un nouveau `FileContext`.
 
