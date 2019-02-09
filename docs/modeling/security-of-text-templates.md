@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 94b2520ffafe3e99420bf77577b59341b6d216aa
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d9906f3b8af624e1761b73c3338bad98b263aa9e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957206"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957180"
 ---
 # <a name="security-of-text-templates"></a>Sécurité des modèles de texte
 Modèles de texte ont des problèmes de sécurité suivants :
