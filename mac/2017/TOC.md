@@ -51,7 +51,11 @@
 ## [Configuration d’un dépôt Git](/visualstudio/mac/set-up-git-repository)
 ## [Utilisation de Git](/visualstudio/mac/working-with-git)
 ## [Configuration d’un dépôt Subversion](/visualstudio/mac/set-up-subversion-repository)
-## [Utilisation d’une sous-version](/visualstudio/mac/working-with-subversion)
+## [Utilisation de Subversion](/visualstudio/mac/working-with-subversion)
+
+# [Déploiement d’applications web](/visualstudio/mac/web-app-deployment.md)
+## [Publier sur Azure App Service](/visualstudio/mac/publish-app-svc.md)
+## [Publier dans un dossier](/visualstudio/mac/publish-folder.md)
 
 # [Charges de travail](/visualstudio/mac/workloads)
 ## [ASP.NET Core](/visualstudio/mac/asp-net-core)
