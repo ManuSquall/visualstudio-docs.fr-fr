@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: fa5a7b1de4eb656147033e8d06655e3e726fc898
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: eeb3a96889d96911f43e7c8c271cea12951f9cfc
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932257"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916152"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Procédure : Intercepter un événement de clic sur une forme ou un décorateur
 Les procédures suivantes montrent comment intercepter un événement click sur une forme ou un décorateur d’icône. Vous pouvez intercepter les clics, double-clique sur, fait glisser, et d’autres gestes et faire en sorte que l’élément répondre.

@@ -11,13 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8964c36a2960829e257f46bdec2b238decada8ce
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b1006fdb766c4c375c93a97f17cccd4e95568677
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55041930"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937254"
 ---
 # <a name="properties-of-geometry-shapes"></a>Propriétés des formes de géométrie
 Vous pouvez utiliser des formes géométriques pour spécifier comment les instances des classes de domaine sont affichées dans un langage spécifique à un domaine. Pour plus d’informations, consultez [comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md). Pour plus d’informations sur l’utilisation de ces propriétés, consultez [personnalisation et extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -54,4 +53,4 @@ Vous pouvez utiliser des formes géométriques pour spécifier comment les insta
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Glossaire des outils Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossaire des Outils Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

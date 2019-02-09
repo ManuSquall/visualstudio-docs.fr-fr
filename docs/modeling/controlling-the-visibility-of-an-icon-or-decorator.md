@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 731ca1a7091af81abb5b9ed2521cc41f575747cb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fbe658dd3cad8c89dca04fe1dc9fb61d6c5813e3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54933748"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913208"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Contrôle de la visibilité d'une icône ou d'un élément décoratif
 Un *decorator* est une icône ou une ligne de texte qui apparaît sur la forme d’un langage spécifique à un domaine (DSL). Vous pouvez afficher l’élément décoratif et disparaissent selon l’état des propriétés dans le modèle. Par exemple, sur une forme représentant une personne, vous pouvez avoir des icônes différentes qui s’affichent en fonction du sexe de la personne, nombre d’enfants et ainsi de suite.

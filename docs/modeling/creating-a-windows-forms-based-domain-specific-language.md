@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: b6e192d9bf22f2cd299164c1782db208d250e773
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ada8a5b08d1a5ca7caed142c1bba9de103a3f954
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55028693"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951512"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Création d'un langage spécifique à un domaine basé sur Windows Forms
 Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de langage spécifique à un domaine (DSL), au lieu d’utiliser un diagramme DSL. Cette rubrique vous guide tout au long de la liaison d’un formulaire Windows à un DSL à l’aide de la Visual Studio Visualization and Modeling SDK.

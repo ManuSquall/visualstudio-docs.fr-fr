@@ -1,7 +1,6 @@
 ---
 title: Fonctions intrinsèques
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - _String_length_
@@ -16,12 +15,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 7781a1ac48945b2c272d5234ac7f4dcbd923b309
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 41ac8e38f501152d329e788572c500f68a8d2214
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944520"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907956"
 ---
 # <a name="intrinsic-functions"></a>Fonctions intrinsèques
 Une expression dans SAL peut être une expression C/C++ condition qu’il soit une expression qui n’a pas d’effets secondaires, par exemple, ++,--et les appels de fonction tous avoir des effets secondaires dans ce contexte.  Toutefois, SAL fournit certains objets de type fonction et certains symboles réservés qui peuvent être utilisées dans les expressions de SAL. Ils sont désignés comme *fonctions intrinsèques*.

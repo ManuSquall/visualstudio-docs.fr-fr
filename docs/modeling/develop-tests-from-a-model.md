@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 25ee3bbe5ba4e3891fcf6454f42f2a5d5ed561fe
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 82f464e6c58c8403ffee34957f9bd49b39471114
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042450"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940280"
 ---
 # <a name="develop-tests-from-a-model"></a>Développer des tests à partir d'un modèle
 Vous pouvez utiliser les spécifications et les modèles architecturaux pour mieux organiser les tests de votre système et de ses composants. Cette pratique vous permet de vous assurer que vous testez les impératifs importants des utilisateurs et des autres parties prenantes, et vous aide à mettre rapidement à jour les tests quand les impératifs changent. Si vous utilisez [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], vous pouvez également tenir à jour des liens entre les modèles et les tests.

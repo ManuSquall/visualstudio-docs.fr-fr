@@ -2,7 +2,6 @@
 title: '&lt;application&gt; élément (développement Office dans Visual Studio)'
 titleSuffix: ''
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 81b43779b52299f70877231b99d0f8bb730c39df
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 80652f6752b87cf0413b0b3166b0cf3292231c25
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54872298"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952812"
 ---
 # <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;application&gt; élément (développement Office dans Visual Studio)
   L’élément `application` de l’espace de noms `vstav3` encapsule la description de solutions Office. Les éléments enfants sont différents pour les personnalisations au niveau du document et les compléments VSTO.

@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 4f07b75806d331fa0fb21444dee72214706edbcb
-ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
+ms.openlocfilehash: 410ab74e672d29673674131b30e2412581b9b399
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55571159"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954203"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Instructions relatives à l'écriture de modèles de texte T4
 Ces instructions générales peuvent être utiles si vous générez du code de programme ou d’autres ressources de l’application dans Visual Studio. Ils ne sont pas fixes règles.

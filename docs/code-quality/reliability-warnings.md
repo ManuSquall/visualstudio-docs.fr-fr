@@ -1,7 +1,6 @@
 ---
 title: avertissements liés à la fiabilité
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.reliabilityrules
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c992a0a748638a8c70806c5359d6b7e8416af38
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 74c1a5202b05b3ffe6f9b6c5b24804fb259287c4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920733"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942724"
 ---
 # <a name="reliability-warnings"></a>avertissements liés à la fiabilité
 Avertissements de fiabilité prennent en charge la fiabilité de bibliothèque et d’application, tels que l’utilisation de mémoire et le thread correcte.

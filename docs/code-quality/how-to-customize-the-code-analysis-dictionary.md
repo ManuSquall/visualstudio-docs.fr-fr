@@ -1,7 +1,6 @@
 ---
 title: 'Procédure : Personnaliser le dictionnaire d’analyse du code'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis dictionary
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19ad0da444f99e0fbf618d97729c64a1e5ed5666
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 71ba70f536074365b3b0ead56b845216918f1a6f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54971817"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919844"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Procédure : Personnaliser le dictionnaire d’analyse du code
 Analyse du code utilise un dictionnaire intégré pour vérifier les identificateurs dans votre code pour les erreurs dans l’orthographe, grammaire cas et autres conventions d’affectation de noms de règles du .NET Framework. Vous pouvez créer un fichier Xml de dictionnaire personnalisé pour ajouter, supprimer ou modifier des termes, abréviations et acronymes au dictionnaire intégré.

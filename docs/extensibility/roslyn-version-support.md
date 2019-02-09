@@ -1,7 +1,6 @@
 ---
 title: Mappages de version de package Roslyn pris en charge
 ms.date: 11/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - roslyn package versions
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4040c825f5decf7da58ab92959c62f4bf7ce0a2c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cd83aabecd8d5631b4a34d2c2e77e2d0ca01a037
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919406"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912987"
 ---
 # <a name="net-compiler-platform-package-version-reference"></a>Référence de version de package .NET du compilateur plateforme
 

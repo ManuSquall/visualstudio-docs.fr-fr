@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: cdad251b4440219285ba1341663b7531634ed806
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e63a5ab794261a395fb091016f177ffca9d35692
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54942233"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911583"
 ---
 # <a name="properties-of-a-dsl-definition"></a>Propriétés d'une définition DSL
 Définissent les propriétés DslDefinition *langage spécifique à un domaine* propriétés telles que la numérotation des versions de la définition. Les propriétés DslDefinition s’affichent dans le **propriétés** fenêtre lorsque vous cliquez sur une zone ouverte du diagramme dans le *Concepteur de langage spécifique à un domaine*.
@@ -41,8 +40,8 @@ Définissent les propriétés DslDefinition *langage spécifique à un domaine* 
 |Build|Numéro de build incrémentielle de cette définition de langage spécifique à un domaine.|0|
 |Version majeure|Le numéro de build majeur incrémentielle pour cette définition de langage spécifique à un domaine.|1|
 |Version mineure|Le numéro de build mineure incrémentielle pour cette définition de langage spécifique à un domaine.|0|
-|Révision|La révision incrémentiel numéro de build pour cette définition de langage spécifique à un domaine.|0|
+|Revision|La révision incrémentiel numéro de build pour cette définition de langage spécifique à un domaine.|0|
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Glossaire des outils Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossaire des Outils Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

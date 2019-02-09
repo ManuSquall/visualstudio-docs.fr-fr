@@ -2,7 +2,6 @@
 title: Concepteur de flux de travail - ajouter des paramètres et ajouter des boîtes de dialogue d’Arguments
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - AddParameters.UI
 ms.assetid: a21fb4fe-134b-40b0-8497-86b842940ca1
@@ -11,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9c9fae97c3a7dbd59eceea6fd5876005cfaee128
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f9ad4828eb3103ebbd014420e71c23f5411d9729
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54995048"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953670"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Boîtes de dialogue Ajouter des paramètres et Ajouter des arguments
 
@@ -32,7 +31,7 @@ Le tableau suivant décrit les éléments d’interface utilisateur utilisateur 
 
 |||
 |-|-|
-|**Name**|Nom de l’argument.|
+|**Name**|Nom de l'argument.|
 |**Direction**|Spécifie si l’argument représente le flux de données dans le délégué, hors du délégué, ou les deux.|
 |**Type**|Nom du type du nouvel argument.|
 |**Valeur**|Valeur à utiliser pour cette instance de l’argument de délégué.|

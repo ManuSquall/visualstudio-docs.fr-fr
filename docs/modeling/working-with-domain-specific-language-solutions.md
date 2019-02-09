@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: fc122767dbc2b7a901f75b26bcb8635cda64a0ae
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f070b02c9b91420fab9058e3d33aa682334f9cd4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54960215"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951538"
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>Utilisation de solutions de langage spécifique à un domaine
 Un langage spécifique à un domaine (DSL) est créé à l’aide d’une solution Visual Studio. Cette section est de savoir comment configurer et personnaliser la solution.

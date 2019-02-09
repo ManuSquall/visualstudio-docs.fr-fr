@@ -1,7 +1,6 @@
 ---
 title: Prise en charge supplémentaire pour les erreurs dans les solutions Office
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - VST.MSBuild.errAppInfoTaskInsertCtlFailed
@@ -57,12 +56,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad487485ed07a345826f96d1f19200bf3f98d12e
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: d9e68a3e97e352a3cb85c0c68fe6666c381c4d5c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54872116"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949783"
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Prise en charge supplémentaire pour les erreurs dans les solutions Office
   Vous pouvez utiliser les ressources suivantes pour vous aider à trouver des réponses aux problèmes que vous rencontrez lorsque vous créez des solutions Office dans Visual Studio.  

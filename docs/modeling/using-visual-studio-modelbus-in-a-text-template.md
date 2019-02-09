@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 3db39365705a019672154c24e54dce01a09390e8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1d048dc82d76cb8eb3e7cf00edb84126ba4cf15f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55030926"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951252"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Utilisation de Visual Studio ModelBus dans un modèle de texte
 Si vous écrivez des modèles de texte qui lisent un modèle qui contient les références ModelBus de Visual Studio, vous souhaiterez résoudre les références pour accéder aux modèles cible. Dans ce cas, vous devez adapter les modèles de texte et les langages spécifiques à un domaine référencés (DSL) :

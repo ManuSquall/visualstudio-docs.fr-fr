@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 50190afd6dfbda054ab7c1636bb0f0f89984117a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 915bbc86422af4d60605934c3e7359087eba102e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55004498"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938109"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Procédure pas à pas : Débogage d’un modèle de texte accédant à un modèle
 Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de langage spécifique à un domaine, vous obtiendrez des erreurs lorsque le moteur transforme le modèle de code source ou lors de la compilation du code généré. La procédure suivante montre quelques opérations que vous pouvez faire pour déboguer un modèle de texte.
@@ -32,7 +31,7 @@ Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de lang
 
 - Nom de la société : Fabrikam
 
-  Pour plus d’informations sur la création d’une solution de langage spécifique à un domaine, consultez [Comment : Créer une Solution de langage spécifique à un domaine](../modeling/how-to-create-a-domain-specific-language-solution.md).
+  Pour plus d’informations sur la création d’une solution de langage spécifique à un domaine, consultez [Comment : Créer une solution de langage spécifique à un domaine](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 ## <a name="creating-a-text-template"></a>Création d’un modèle de texte
  Ajouter un modèle de texte à votre solution.
