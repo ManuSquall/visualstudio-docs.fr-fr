@@ -5,23 +5,23 @@ ms.topic: conceptual
 ms.assetid: e594af12-e777-434a-bc08-7dd2dac84cdc
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 99f353da4b6269ebf9fac425a12dfce5b5917df6
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 2a68101b6090a20526088309a441956a68e875e9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53923755"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014664"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Procédure : Configurer l’héritage à l’aide du Concepteur O/R
 Le **concepteur objet/relationnel** (**Concepteur O/R**) prend en charge le concept d’héritage à table unique tel qu’il est souvent implémenté dans les systèmes relationnels. L'héritage à table unique fait appel à une seule table de base de données qui contient des champs pour les informations parent et enfant. Avec les données relationnelles, une colonne de discriminateur contient la valeur qui détermine à quelle classe tout enregistrement appartient.
 
 Par exemple, considérez un `Persons` table qui contient tous les employées par une société. Certaines personnes sont des employés et d'autres des responsables. Le `Persons` table contient une colonne nommée `EmployeeType` qui a la valeur 1 pour les responsables et une valeur de 2 pour les employés ; c’est la colonne de discriminateur. Dans ce scénario, vous pouvez créer une sous-classe d'employés et remplir la classe avec uniquement des enregistrements ayant une valeur `EmployeeType` de 2. Vous pouvez également supprimer les colonnes qui ne s'appliquent à aucune de ces classes.
 
-La création d'un modèle objet qui utilise l'héritage (et correspond aux données relationnelles) peut prêter à confusion. La procédure suivante esquisse les étapes requises pour configurer l’héritage avec le **Concepteur O/R**. Suivre les étapes génériques sans faire référence à une table existante et les colonnes peut-être être difficile, donc une procédure pas à pas qui utilise des données est fourni. Pour obtenir des instructions détaillées pour configurer l’héritage à l’aide de la **Concepteur O/R**, consultez [procédure pas à pas : création d’une requête LINQ to SQL classes à l’aide d’héritage à table unique (Concepteur O/R)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md).
+La création d'un modèle objet qui utilise l'héritage (et correspond aux données relationnelles) peut prêter à confusion. La procédure suivante esquisse les étapes requises pour configurer l’héritage avec le **Concepteur O/R**. Suivre les étapes génériques sans faire référence à une table existante et les colonnes peut-être être difficile, donc une procédure pas à pas qui utilise des données est fourni. Pour obtenir des instructions détaillées pour configurer l’héritage à l’aide de la **Concepteur O/R**, consultez [procédure pas à pas : Création de classes LINQ to SQL à l’aide d’un héritage de table individuelle (Concepteur O-R)
 
 ## <a name="to-create-inherited-data-classes"></a>Pour créer des classes de données héritées
 

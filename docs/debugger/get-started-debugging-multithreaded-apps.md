@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 62df746b-b0f6-4df4-83cf-b1d9d2e72833
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95a198213daa90a1370cba056a8c522495e06c94
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
-ms.translationtype: MTE95
+ms.openlocfilehash: 08ce571a5e41807c655e9bc9b42eb7e993a75e35
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54227978"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231972"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Commencer le débogage d’applications multithread (C#, Visual Basic, C++)
 Visual Studio fournit plusieurs outils et les éléments d’interface utilisateur pour vous aider à déboguer les applications multithread. Ce didacticiel montre comment utiliser des marqueurs de thread, le **piles parallèles** fenêtre, le **espion parallèle** fenêtre, points d’arrêt conditionnels et les points d’arrêt de filtre. Pour vous familiariser avec les fonctionnalités de Visual Studio pour déboguer des applications multithreads, ils auront terminé ce didacticiel.
@@ -106,39 +106,37 @@ Vous devez tout d’abord un projet d’application multithread. Voici un exempl
     ```
 
     ```C++
-    #include "stdafx.h"
+    #include "pch.h"
     #include <thread>
     #include <iostream>
     #include <vector>
-
-    using namespace;
 
     int count = 0;
 
     void doSomeWork() {
 
-        cout << "The doSomeWork function is running on another thread." << endl;
+        std::cout << "The doSomeWork function is running on another thread." << std::endl;
         int data = count++;
         // Pause for a moment to provide a delay to make
         // threads more apparent.
-        this_thread::sleep_for(chrono::seconds(3));
-        cout << "The function called by the worker thread has ended." << endl;
+        std::this_thread::sleep_for(std::chrono::seconds(3));
+        std::cout << "The function called by the worker thread has ended." << std::endl;
     }
 
     int main() {
-        vector<thread> threads;
+        std::vector<std::thread> threads;
 
         for (int i = 0; i < 10; ++i) {
 
-            threads.push_back(thread(doSomeWork));
-            cout << "The Main() thread calls this after starting the new thread" << endl;
-        }
+            threads.push_back(std::thread(doSomeWork));
+            std::cout << "The Main() thread calls this after starting the new thread" << std::endl;
+    }
 
-        for (auto& thread : threads) {
-            thread.join();
-        }
+    for (auto& thread : threads) {
+        thread.join();
+    }
 
-        return 0;
+    return 0;
     }
     ```
 
@@ -194,6 +192,8 @@ Vous devez tout d’abord un projet d’application multithread. Voici un exempl
     ```
   
 7.  Dans le menu **Fichier**, cliquez sur **Enregistrer tout**.  
+
+8. (Visual Basic uniquement) Dans l’Explorateur de solutions (volet droit), cliquez sur le nœud du projet, choisissez **propriétés**. Sous le **Application** , modifiez le **objet de démarrage** à **Simple**.
   
 ## <a name="debug-the-multithreaded-app"></a>Déboguer l’application multithread  
   
@@ -205,8 +205,8 @@ Vous devez tout d’abord un projet d’application multithread. Voici un exempl
     ```  
   
     ```C++  
-    this_thread::sleep_for(chrono::seconds(3));
-    cout << "The function called by the worker thread has ended." << endl; 
+    std::this_thread::sleep_for(std::chrono::seconds(3));
+    std::cout << "The function called by the worker thread has ended." << std::endl; 
     ```  
 
     ```VB
@@ -214,7 +214,7 @@ Vous devez tout d’abord un projet d’application multithread. Voici un exempl
     Console.WriteLine()
     ```
 
-1. Cliquez dans la marge gauche de la `Thread.Sleep` ou `this_thread::sleep_for` instruction pour insérer un nouveau point d’arrêt.  
+1. Cliquez dans la marge gauche de la `Thread.Sleep` ou `std::this_thread::sleep_for` instruction pour insérer un nouveau point d’arrêt.  
   
     Dans la marge, un cercle rouge indique qu’un point d’arrêt est défini à cet emplacement. 
   
@@ -244,7 +244,7 @@ Dans le **piles parallèles** fenêtre, vous pouvez basculer entre une vue Threa
 
 1. Ouvrez le **piles parallèles** fenêtre en choisissant **déboguer** > **Windows** > **piles parallèles**. Vous devez voir quelque chose de similaire à ce qui suit. Les informations exactes diffèrent selon l’emplacement actuel de chaque thread, votre matériel et votre langage de programmation.
 
-    ![Parallel Stacks Window](../debugger/media/dbg-multithreaded-parallel-stacks.png "ParallelStacksWindow")
+    ![Fenêtre Piles parallèles](../debugger/media/dbg-multithreaded-parallel-stacks.png "ParallelStacksWindow")
 
     Dans cet exemple, de gauche à droite nous voir ces informations pour le code managé :
     
@@ -271,7 +271,7 @@ Dans le **piles parallèles** fenêtre, vous pouvez basculer entre une vue Threa
 
     Les valeurs pour le `count` variable pour chaque thread s’affichent dans la fenêtre. Si vous ne voyez pas encore autant d’informations, essayez en appuyant sur **F11** plusieurs fois pour passer de l’exécution des threads dans le débogueur.
 
-    ![Parallel Watch Window](../debugger/media/dbg-multithreaded-parallel-watch.png "ParallelWatchWindow")
+    ![Fenêtre Espion parallèle](../debugger/media/dbg-multithreaded-parallel-watch.png "ParallelWatchWindow")
 
 4. Avec le bouton droit sur une des lignes dans la fenêtre pour afficher les options disponibles.
 
