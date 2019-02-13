@@ -2,7 +2,6 @@
 title: Déboguer du code Python
 description: Visual Studio fournit de riches fonctionnalités de débogage du code Python, y compris la définition de points d’arrêt, l’exécution pas à pas, l’inspection des valeurs, la gestion des exceptions et le débogage dans la fenêtre interactive.
 ms.date: 01/07/2019
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cdaaf7964ee7da9a5ae7a1b1bfa0f77631c22622
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fc6c448a80f9517a3bde0333736f4cb83efb09c6
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036067"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155875"
 ---
 # <a name="debug-your-python-code"></a>Déboguer votre code Python
 
@@ -27,10 +26,6 @@ Consultez également les articles ci-après concernant le débogage propre à un
 - [Débogage à distance Linux](debugging-python-code-on-remote-linux-machines.md)
 - [Débogage Python/C++ en mode mixte](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - [Symboles de débogage en mode mixte](debugging-symbols-for-mixed-mode-c-cpp-python.md)
-
-|   |   |
-|---|---|
-| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | [Regardez une vidéo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Debugging-Python-Ep5dp5LWE_3805918567) pour obtenir une démonstration du débogage de Python (3 min32s).|
 
 <a name="debugging-without-a-project"></a>
 

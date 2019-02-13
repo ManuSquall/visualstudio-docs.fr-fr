@@ -3,7 +3,6 @@ title: Définir les valeurs par défaut des déploiements d’entreprise
 description: Découvrez les stratégies de domaine et autres opérations de configuration disponibles pour les déploiements en entreprise de Visual Studio.
 ms.date: 05/05/2017
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - gpo
@@ -17,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77fbea5daced46e8437bf4a277798b9911a13669
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f523aaa61e1908d0e947de4cf555ec95ad2d4306
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042619"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910816"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio-2017"></a>Définir les valeurs par défaut des déploiements d’entreprise de Visual Studio 2017
 

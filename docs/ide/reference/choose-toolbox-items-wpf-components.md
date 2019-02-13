@@ -1,7 +1,6 @@
 ---
 title: Choisir des éléments de boîte à outils, Composants WPF
 ms.date: 06/21/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.chooseitems.wpfcomponents
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98000fda073cf480ad7204912ffa1461c4bdc5ae
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f09afb11708afb310a3dcd52490f5b2bcda9d79b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55008762"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928086"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Choisir des éléments de boîte à outils, composants WPF
 

@@ -1,8 +1,7 @@
 ---
 title: Fenêtre interactive Python (REPL)
 description: Utilisez la fenêtre interactive (REPL) pour développer rapidement du code Python dans Visual Studio.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
+ms.date: 02/11/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 601527ee9fadb3ac9bda196df71ac75501635e9e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aa223bc4e63d5672feb6d518bc8df534f3162da0
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992384"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155654"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Utiliser la fenêtre interactive Python
 
@@ -36,10 +35,6 @@ Visual Studio propose plusieurs modes REPL Python au choix :
 Cet article décrit les modes REPL **Standard** et **Débogage**. Pour plus d’informations sur les modes IPython, consultez [Utiliser IPython REPL](interactive-repl-ipython.md).
 
 Pour obtenir une procédure pas à pas détaillée avec des exemples, notamment les interactions avec l’éditeur, telles que **Ctrl**+**Entrée**, consultez [Tutoriel - Étape 3 : Utiliser la fenêtre REPL interactive](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md).
-
-|   |   |
-|---|---|
-| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | [Regarder une vidéo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567) sur la fenêtre **Interactive** (2 min 22 s).|
 
 ## <a name="open-an-interactive-window"></a>Ouvrir une fenêtre interactive
 

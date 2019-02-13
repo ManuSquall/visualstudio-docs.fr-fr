@@ -1,7 +1,6 @@
 ---
 title: Remplacements dans Help Content Manager
 ms.date: 11/01/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 95fe6396-276b-4ee5-b03d-faacec42765f
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b73feb967e340f66eb243013add0b650916c956
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e5614f182b08c41a7ec2172fe080560a4f78b439
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961424"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918542"
 ---
 # <a name="help-content-manager-overrides"></a>Remplacements dans Help Content Manager
 
@@ -34,9 +33,9 @@ Vous pouvez changer le comportement par défaut de Help Viewer et des fonctionna
 
 |Valeur de la clé de Registre|Type|Données|Description|
 |------------------|----|----|-----------|
-|NewContentAndUpdateService|chaîne|\<URL HTTP du point de terminaison de service\>|Définir un point de terminaison de service unique|
+|NewContentAndUpdateService|string|\<URL HTTP du point de terminaison de service\>|Définir un point de terminaison de service unique|
 |UseOnlineHelp|dword|`0` pour spécifier l’aide locale, `1` pour spécifier l’aide en ligne|Définir l’aide en ligne ou l’aide locale comme option par défaut|
-|OnlineBaseUrl|chaîne|\<URL HTTP du point de terminaison de service\>|Définir un point de terminaison unique F1|
+|OnlineBaseUrl|string|\<URL HTTP du point de terminaison de service\>|Définir un point de terminaison unique F1|
 |OnlineHelpPreferenceDisabled|dword|`0` pour activer ou `1` pour désactiver l’option de préférence d’aide en ligne|Désactiver l’option de préférence d’aide en ligne|
 |DisableManageContent|dword|`0` pour activer ou `1` pour désactiver l’onglet **Gérer le contenu** dans Help Viewer|Désactiver l’onglet **Gérer le contenu**|
 |DisableFirstRunHelpSelection|dword|`0` pour activer ou `1` pour désactiver les fonctionnalités d’aide configurées au premier démarrage de Visual Studio.|Désactiver l’installation du contenu au premier démarrage de Visual Studio|

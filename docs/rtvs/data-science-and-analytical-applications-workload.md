@@ -2,7 +2,6 @@
 title: Charge de travail Applications de science et analyse des données
 description: La charge de travail Visual Studio regroupe Python, R et F#, et les distributions de leur runtime respectif, y compris Anaconda.
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
@@ -10,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c7ef2fb2e9d438fb4129d6835cd88663d3025e64
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 51ff15de33f94fe106fb92fcafb6ec2b27294315
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55004693"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956738"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Installer la prise en charge de la science des données dans Visual Studio
 

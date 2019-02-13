@@ -2,19 +2,18 @@
 title: Explorateur de variables pour R
 description: L’Explorateur de variables dans Visual Studio affiche toutes les variables dans une portée donnée dans la session R active.
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: d5058931e5568b7a84016e599faced9ae614e80d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 799b7f2789898e0d02d9588f9a3ad7d1e8098a00
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000252"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919038"
 ---
 # <a name="variable-explorer"></a>Explorateur de variables
 

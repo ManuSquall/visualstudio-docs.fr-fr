@@ -8,13 +8,12 @@ ms.assetid: 8bda19b3-91c1-4daf-b6c7-09108bddadff
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 90b27c8a949602e1730135b9bbbf13d8d10b2d14
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 384e742a4d9e61133f2f3b2cdcf713057704317a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932504"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917491"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Procédure : analyser l’activité des utilisateurs virtuels durant un test de charge à l’aide du graphique d’activités des utilisateurs virtuels
 

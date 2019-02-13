@@ -1,19 +1,18 @@
 ---
 title: 'Procédure : Écrire des tests unitaires pour des DLL C++'
 ms.date: 11/04/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: mblome
 manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 8806e21159e270385bfbd88106569f9a1722c08a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 65bbaf015e2d4b0dc8dd66c33656e62c4b9b0102
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951142"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55915968"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Procédure : Écrire des tests unitaires pour des DLL C++
 
