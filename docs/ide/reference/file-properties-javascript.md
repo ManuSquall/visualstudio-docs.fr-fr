@@ -1,7 +1,6 @@
 ---
 title: Propriétés des fichiers, JavaScript
 ms.date: 06/21/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - javascript.project.property.expandedsdknode.fileversion
@@ -26,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fc9832ba7774f58d5f1826e633dfd9bf24ce205
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 684e638d1a2e69d48381964272294999d43c5242
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54946540"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956764"
 ---
 # <a name="file-properties-javascript"></a>Propriétés des fichiers, JavaScript
 Vous pouvez utiliser les propriétés de fichier pour indiquer les actions que le système de projet doit effectuer sur les fichiers. Par exemple, vous pouvez définir des propriétés de fichier pour indiquer si un fichier doit être ajouté au package en tant que fichier de ressources.

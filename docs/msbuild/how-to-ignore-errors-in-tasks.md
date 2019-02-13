@@ -9,57 +9,57 @@ ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a6d56c1b4e22250f56592e45d56c433c7ad78065
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2d8c11fef90a4910c178e7494a5a16f6ea9bfbf0
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55024797"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853285"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Procédure : Ignorer des erreurs dans des tâches
-Vous souhaiterez parfois qu’une génération soit à tolérance de panne dans certaines tâches. En cas d’échec de ces tâches non critiques, vous souhaiterez continuer la génération, car elle peut toujours produire la sortie requise. Par exemple, si un projet utilise une tâche `SendMail` pour envoyer un message électronique après la génération de chaque composant, vous pouvez juger acceptable de poursuivre la génération jusqu’à son achèvement, même si les serveurs de messagerie ne sont pas disponibles et que les messages d’état ne peuvent pas être envoyés. Si des fichiers intermédiaires sont habituellement supprimés pendant la génération, vous pouvez également estimer que la génération peut se poursuivre jusqu’à son achèvement, même si ces fichiers ne peuvent pas être supprimés.  
-  
-## <a name="use-the-continueonerror-attribute"></a>Utiliser l’attribut ContinueOnError  
- L’attribut `ContinueOnError` de l’élément `Task` contrôle si une génération s’arrête ou se poursuit en cas d’échec d’une tâche. Cet attribut détermine également si les erreurs sont considérées comme des erreurs ou des avertissements si la génération se poursuit.  
-  
- L’attribut `ContinueOnError` peut contenir l’une des valeurs suivantes :  
-  
-- **WarnAndContinue** ou **true**. En cas d’échec d’une tâche, l’exécution des tâches suivantes de l’élément [Target](../msbuild/target-element-msbuild.md) et de la génération se poursuit, et toutes les erreurs de la tâche sont considérées comme des avertissements.  
-  
-- **ErrorAndContinue**. En cas d’échec d’une tâche, l’exécution des tâches suivantes de l’élément `Target` et de la génération se poursuit, et toutes les erreurs de la tâche sont considérées comme des erreurs.  
-  
+Vous souhaiterez parfois qu’une génération soit à tolérance de panne dans certaines tâches. En cas d’échec de ces tâches non critiques, vous souhaiterez continuer la génération, car elle peut toujours produire la sortie requise. Par exemple, si un projet utilise une tâche `SendMail` pour envoyer un message électronique après la génération de chaque composant, vous pouvez juger acceptable de poursuivre la génération jusqu’à son achèvement, même si les serveurs de messagerie ne sont pas disponibles et que les messages d’état ne peuvent pas être envoyés. Si des fichiers intermédiaires sont habituellement supprimés pendant la génération, vous pouvez également estimer que la génération peut se poursuivre jusqu’à son achèvement, même si ces fichiers ne peuvent pas être supprimés.
+
+## <a name="use-the-continueonerror-attribute"></a>Utiliser l’attribut ContinueOnError
+L’attribut `ContinueOnError` de l’élément `Task` contrôle si une génération s’arrête ou se poursuit en cas d’échec d’une tâche. Cet attribut détermine également si les erreurs sont considérées comme des erreurs ou des avertissements si la génération se poursuit.
+
+L’attribut `ContinueOnError` peut contenir l’une des valeurs suivantes :
+
+- **WarnAndContinue** ou **true**. En cas d’échec d’une tâche, l’exécution des tâches suivantes de l’élément [Target](../msbuild/target-element-msbuild.md) et de la génération se poursuit, et toutes les erreurs de la tâche sont considérées comme des avertissements.
+
+- **ErrorAndContinue**. En cas d’échec d’une tâche, l’exécution des tâches suivantes de l’élément `Target` et de la génération se poursuit, et toutes les erreurs de la tâche sont considérées comme des erreurs.
+
 - **ErrorAndStop** ou **false** (par défaut). En cas d’échec d’une tâche, les tâches restantes de l’élément `Target` et de la génération ne sont pas exécutées, et tout l’élément `Target` ainsi que la génération sont considérés comme étant en échec.  
   
   Les versions de .NET Framework antérieures à 4.5 prenaient en charge uniquement les valeurs `true` et `false`.  
   
-  La valeur par défaut de `ContinueOnError` est `ErrorAndStop`. Si vous définissez l’attribut sur `ErrorAndStop`, vous rendez le comportement explicite pour tout lecteur du fichier projet.  
+  La valeur par défaut de `ContinueOnError` est `ErrorAndStop`. Si vous définissez l’attribut sur `ErrorAndStop`, vous rendez le comportement explicite pour tout lecteur du fichier projet.
+
+#### <a name="to-ignore-an-error-in-a-task"></a>Pour ignorer une erreur dans une tâche
+
+- Utilisez l’attribut `ContinueOnError` de la tâche. Par exemple :  
   
-#### <a name="to-ignore-an-error-in-a-task"></a>Pour ignorer une erreur dans une tâche  
-  
--   Utilisez l’attribut `ContinueOnError` de la tâche. Par exemple :  
-  
-     `<Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>`  
-  
-## <a name="example"></a>Exemple  
- L’exemple de code suivant montre que la cible `Build` continue de s’exécuter, et la génération est considérée comme un succès, même en cas d’échec de la tâche `Delete`.  
-  
-```xml  
-<Project DefaultTargets="FakeBuild"  
-    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <ItemGroup>  
-        <Files Include="*.obj"/>  
-    </ItemGroup>  
-    <Target Name="Clean">  
-        <Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>  
-    </Target>  
-  
-    <Target Name="FakeBuild" DependsOnTargets="Clean">  
-        <Message Text="Building after cleaning..."/>  
-    </Target>  
-</Project>  
-```  
-  
+    `<Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>`
+
+## <a name="example"></a>Exemple
+L’exemple de code suivant montre que la cible `Build` continue de s’exécuter, et la génération est considérée comme un succès, même en cas d’échec de la tâche `Delete`.
+
+```xml
+<Project DefaultTargets="FakeBuild"
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <Files Include="*.obj"/>
+    </ItemGroup>
+    <Target Name="Clean">
+        <Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>
+    </Target>
+
+    <Target Name="FakeBuild" DependsOnTargets="Clean">
+        <Message Text="Building after cleaning..."/>
+    </Target>
+</Project>
+```
+
 ## <a name="see-also"></a>Voir aussi
 [MSBuild](../msbuild/msbuild.md)  
-[Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)   
+[Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)  
 [Tâches](../msbuild/msbuild-tasks.md)

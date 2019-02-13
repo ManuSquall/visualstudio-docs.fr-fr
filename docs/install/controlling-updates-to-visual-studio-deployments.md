@@ -3,7 +3,6 @@ title: Contrôler les mises à jour applicables aux déploiements
 description: Découvrez comment changer l’emplacement où Visual Studio recherche une mise à jour dans le cas d’une installation à partir d’un réseau.
 ms.date: 08/14/2017
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
@@ -14,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a02b3176a5cdb63ac3dad1e0781a143e5a518784
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 74ec72ab5cd703998d8f7d88de3ad96d0aa5bb65
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54955347"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55915632"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>Contrôler les mises à jour applicables aux déploiements de Visual Studio à partir du réseau
 

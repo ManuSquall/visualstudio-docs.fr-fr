@@ -1,19 +1,18 @@
 ---
 title: Utilisation d'émulateurs pour isoler des tests unitaires pour des applications Sharepoint 2010
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fee8b38102275bb6aae85ab8e715b3a5e0606725
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1b139d1c1c4e91ac3a7bdd8e0b264bd4dd63a413
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973263"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952659"
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>Utilisation d'émulateurs pour isoler des tests unitaires pour des applications Sharepoint 2010
 
