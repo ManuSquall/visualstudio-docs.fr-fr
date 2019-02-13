@@ -1,7 +1,6 @@
 ---
 title: 'Procédure : Afficher des types existants (Concepteur de classes)'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.CannotShowBaseType
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb594bd1096dbf2908ed2daa21706f60d329264e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: caeab08d6032bd8c88d35a62da56e3dc8015da9a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55038355"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923903"
 ---
 # <a name="how-to-view-existing-types-in-class-designer"></a>Procédure : Afficher des types existants dans le Concepteur de classes
 

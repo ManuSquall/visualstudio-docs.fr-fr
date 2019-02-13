@@ -1,7 +1,6 @@
 ---
 title: 'Procédure : Créer un nuanceur de texture avec nuances de gris'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 79181d81-44af-445e-9a18-03483dd70260
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58f6ca03a7bad27ad3c2cb4f7dae662e14292e95
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 33bb4ce8f7ed55b87ee602cb0384afdf6745a649
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55015509"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919181"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>Procédure : Créer un nuanceur de texture avec nuances de gris
 

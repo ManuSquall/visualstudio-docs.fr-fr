@@ -3,7 +3,6 @@ title: 'Tutoriel : Découvrir Flask dans Visual Studio, étape 2, vues et mod�
 titleSuffix: ''
 description: Une procédure pas à pas montrant les concepts de base de Flask dans le contexte de projets Visual Studio, en particulier les étapes de création d’une application, et l’utilisation de vues et de modèles.
 ms.date: 01/07/2019
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7fb59cab7046c0a45337f4adfc1b3061f0c5d1b9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b3a333482590e284c5cbbc1ec44093a835c76db0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55030741"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912795"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Étape 2 : Créer une application Flask avec des vues et des modèles de pages
 
