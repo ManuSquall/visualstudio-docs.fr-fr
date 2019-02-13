@@ -12,31 +12,27 @@ dev_langs:
 helpviewer_keywords:
 - multithreaded debugging, tutorial
 - tutorials, multithreaded debugging
-ms.assetid: 62df746b-b0f6-4df4-83cf-b1d9d2e72833
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08ce571a5e41807c655e9bc9b42eb7e993a75e35
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
-ms.translationtype: HT
+ms.openlocfilehash: 8e30eafdc9a01b126f2a08bb8e4395298f446069
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231972"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155784"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Commencer le débogage d’applications multithread (C#, Visual Basic, C++)
-Visual Studio fournit plusieurs outils et les éléments d’interface utilisateur pour vous aider à déboguer les applications multithread. Ce didacticiel montre comment utiliser des marqueurs de thread, le **piles parallèles** fenêtre, le **espion parallèle** fenêtre, points d’arrêt conditionnels et les points d’arrêt de filtre. Pour vous familiariser avec les fonctionnalités de Visual Studio pour déboguer des applications multithreads, ils auront terminé ce didacticiel.
 
-| | |
-|---------|---------|
-| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | [Regardez une vidéo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171) sur le débogage multithread qui montre des étapes similaires. |
+Visual Studio fournit plusieurs outils et les éléments d’interface utilisateur pour vous aider à déboguer les applications multithread. Ce didacticiel montre comment utiliser des marqueurs de thread, le **piles parallèles** fenêtre, le **espion parallèle** fenêtre, points d’arrêt conditionnels et les points d’arrêt de filtre. Pour vous familiariser avec les fonctionnalités de Visual Studio pour déboguer des applications multithreads, ils auront terminé ce didacticiel.
 
 Ces deux rubriques fournissent des informations supplémentaires sur l’utilisation d’autres outils de débogage multithreads :
 
-- Pour utiliser le **emplacement de débogage** barre d’outils et les **Threads** fenêtre, consultez [procédure pas à pas : Déboguer une application multithread](../debugger/how-to-use-the-threads-window.md).
+- Pour utiliser le **emplacement de débogage** barre d’outils et les **Threads** fenêtre, consultez [procédure pas à pas : déboguer une application multithread](../debugger/how-to-use-the-threads-window.md).
 
-- Pour obtenir un exemple qui utilise <xref:System.Threading.Tasks.Task> (code managé) et le runtime d’accès concurrentiel (C++), consultez [procédure pas à pas : Déboguer une application parallèle Pour les conseils de débogage générales qui s’appliquent aux types d’applications multithreads plus, lisez cette rubrique et celle-ci.
+- Pour obtenir un exemple qui utilise <xref:System.Threading.Tasks.Task> (code managé) et le runtime d’accès concurrentiel (C++), consultez [procédure pas à pas : Déboguer une application parallèle](../debugger/walkthrough-debugging-a-parallel-application.md). Pour les conseils de débogage générales qui s’appliquent aux types d’applications multithreads plus, lisez cette rubrique et celle-ci.
   
 Vous devez tout d’abord un projet d’application multithread. Voici un exemple.  
   
@@ -46,7 +42,7 @@ Vous devez tout d’abord un projet d’application multithread. Voici un exempl
   
      La boîte de dialogue **Nouveau projet** s’affiche.  
   
-2.  Sélectionnez une langue **Visual C#** , **Visual C++**, ou **Visual Basic**.  
+2.  Sélectionnez une langue : **Visual C#** , **Visual C++**, ou **Visual Basic**.  
   
 3.  Sous **Windows Desktop**, choisissez **application Console**.  
   
@@ -257,7 +253,7 @@ Dans le **piles parallèles** fenêtre, vous pouvez basculer entre une vue Threa
     Vous pouvez effectuer différentes actions à partir de ces menus contextuels, mais pour ce didacticiel, nous allons présenter plusieurs de ces détails dans le **espion parallèle** fenêtre (sections suivantes).
 
     > [!NOTE]
-    > Pour afficher une liste des informations sur chaque thread, utilisez la **Threads** fenêtre à la place. Consultez [Procédure pas à pas : Déboguer une Application multithread](../debugger/how-to-use-the-threads-window.md).
+    > Pour afficher une liste des informations sur chaque thread, utilisez la **Threads** fenêtre à la place. Consultez [procédure pas à pas : déboguer une Application multithread](../debugger/how-to-use-the-threads-window.md).
 
 ### <a name="set-a-watch-on-a-variable"></a>Définir un espion sur une variable
 
@@ -342,8 +338,9 @@ Vous pouvez définir des points d’arrêt sur les différentes conditions, tell
     > [!NOTE]
     > Lorsque vous arrivez le débogueur, tous les threads seront exécutera. Toutefois, le débogueur ne s’arrête dans du code sur d’autres threads, sauf si un des autres threads atteint un point d’arrêt. 
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>Voir aussi
+
 [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)  
 [Guide pratique pour basculer vers un autre thread pendant un débogage](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
-[Guide pratique pour Utiliser la fenêtre Pile parallèles](../debugger/using-the-parallel-stacks-window.md)  
+[Comment : utiliser la fenêtre Pile parallèles](../debugger/using-the-parallel-stacks-window.md)  
 [Guide pratique pour utiliser la fenêtre Espion parallèle](../debugger/how-to-use-the-parallel-watch-window.md)  
