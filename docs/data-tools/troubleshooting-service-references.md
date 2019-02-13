@@ -14,15 +14,14 @@ ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 573019483f1c7c616f8bdf61286c46f76458354f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a99cdc4e8c9a4b7551574c93ad6ccdb8c44479df
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031286"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927043"
 ---
 # <a name="troubleshoot-service-references"></a>Dépanner les références de service
 
@@ -48,7 +47,7 @@ Pour corriger cette erreur :
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Erreur d’accès à un service sur un bureau à distance
 
-Lorsqu’un utilisateur accède à un service WCF hébergé sur le Web via une connexion Bureau à distance et l’utilisateur ne dispose pas des autorisations d’administration, l’authentification NTLM est utilisée. Si l’utilisateur ne dispose pas des autorisations d’administration, l’utilisateur peut recevoir le message d’erreur suivant : « La requête HTTP n’est pas autorisée avec le schéma d’authentification client 'Anonyme'. L’en-tête d’authentification reçu du serveur était 'NTLM'. »
+Lorsqu’un utilisateur accède à un service WCF hébergé sur le Web via une connexion Bureau à distance et l’utilisateur ne dispose pas des autorisations d’administration, l’authentification NTLM est utilisée. Si l’utilisateur ne dispose pas des autorisations d’administration, l’utilisateur peut recevoir le message d’erreur suivant : « la requête HTTP n’est pas autorisée avec le schéma d’authentification client 'Anonyme'. L’en-tête d’authentification reçu du serveur était 'NTLM'. »
 
 Pour corriger cette erreur :
 
@@ -83,7 +82,7 @@ Pour corriger cette erreur, vous devrez manuellement régénérer le projet de s
 
 4.  Charger le projet de service WCF.
 
-5.  Dans le **Configuration Manager** boîte de dialogue, définissez la **configuration de solution Active** à **déboguer**. Pour plus d'informations, voir [Procédure : créer et modifier des configurations](../ide/how-to-create-and-edit-configurations.md).
+5.  Dans le **Configuration Manager** boîte de dialogue, définissez la **configuration de solution Active** à **déboguer**. Pour plus d’informations, consultez [Guide pratique pour créer et modifier des configurations](../ide/how-to-create-and-edit-configurations.md).
 
 6.  Dans **l’Explorateur de solutions**, sélectionnez le projet de service WCF.
 

@@ -9,15 +9,14 @@ ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 833f4fba621c41a51adca1368c784df313419f97
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 36fc5dd306782779f553d4144c272c91c7e0f0af
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945513"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929399"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Créer une application de données simple à l’aide d’ADO.NET
 
@@ -60,7 +59,7 @@ Créer la base de données en suivant ces étapes :
 
 7. Collez le script T-SQL dans l’éditeur de requête, puis choisissez le **Execute** bouton.
 
-     Après une courte période, la requête est terminée en cours d’exécution et les objets de base de données sont créés. La base de données contient deux tables : Client et les commandes. Ces tables contiennent pas de données initialement, mais vous pouvez ajouter des données lorsque vous exécutez l’application que vous allez créer. La base de données contient également quatre procédures stockées simples.
+     Après une courte période, la requête est terminée en cours d’exécution et les objets de base de données sont créés. La base de données contient deux tables : Customer et Orders. Ces tables contiennent pas de données initialement, mais vous pouvez ajouter des données lorsque vous exécutez l’application que vous allez créer. La base de données contient également quatre procédures stockées simples.
 
 ## <a name="create-the-forms-and-add-controls"></a>Créer les formulaires et ajouter les contrôles
 

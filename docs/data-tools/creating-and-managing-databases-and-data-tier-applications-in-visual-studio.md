@@ -8,15 +8,14 @@ ms.assetid: 40b51f5a-d52c-44ac-8f84-037a0917af33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: bde98c7acb8c4f5c2b8b2cee4fd1c442438da540
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2a86d9511e470c9a810ff58e80e4cae1f9a0cb11
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940971"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924641"
 ---
 # <a name="database-projects-and-data-tier-applications"></a>Projets de base de données et applications de couche données
 
@@ -28,9 +27,9 @@ Pour obtenir la liste des fonctionnalités de base de données qui sont pris en 
 
 | Tâches de haut niveau | Contenu de support |
 | - | - |
-| **Démarrer le développement d’une application de couche données :** Le concept d’une application de couche données (DAC) a été introduit avec SQL Server 2008. Une DAC contient la définition d’une base de données SQL Server et les objets d’instance prise en charge qui sont utilisés par un client-serveur ou une application de couche 3. Une DAC inclut des objets de base de données, tels que des tables et des vues, ainsi que les entités d’instance telles que les connexions. Vous pouvez utiliser Visual Studio pour créer un projet DAC, créer un fichier de package DAC et envoyez le fichier de package DAC à un administrateur de base de données pour le déploiement sur une instance du moteur de base de données SQL Server. | - [Applications de la couche Données](/sql/relational-databases/data-tier-applications/data-tier-applications)<br />- [SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms) |
-| **Développement itératif de base de données en cours :** Les développeurs peuvent extraire des éléments du projet et les mettre à jour dans un environnement de développement isolé. À l’aide de ce type d’environnement, vous pouvez tester vos modifications sans affecter les autres membres de l’équipe. Une fois que les modifications sont terminées, vous vérifiez les fichiers au contrôle de version, où autres membres de l’équipe peuvent obtenir vos modifications et créer et les déployer sur un serveur de test. | - [Développement de base de données hors connexion orienté projet (SQL Server Data Tools)](/sql/ssdt/project-oriented-offline-database-development)<br />- [Débogueur Transact-SQL (SQL Server Management Studio)](/sql/ssms/scripting/transact-sql-debugger) |
-| **Prototypage, la vérification des résultats des tests et la modification des scripts de base de données et des objets :** Vous pouvez utiliser l’éditeur Transact-SQL pour exécuter l’une de ces tâches courantes. | - [Éditeurs de requête et de texte (SQL Server Management Studio)](/sql/ssms/scripting/query-and-text-editors-sql-server-management-studio) |
+| **Démarrer le développement d’une application de couche données :** le concept d’une application de couche données (DAC) a été introduit avec SQL Server 2008. Une DAC contient la définition d’une base de données SQL Server et les objets d’instance prise en charge qui sont utilisés par un client-serveur ou une application de couche 3. Une DAC inclut des objets de base de données, tels que des tables et des vues, ainsi que les entités d’instance telles que les connexions. Vous pouvez utiliser Visual Studio pour créer un projet DAC, créer un fichier de package DAC et envoyez le fichier de package DAC à un administrateur de base de données pour le déploiement sur une instance du moteur de base de données SQL Server. | - [Applications de la couche Données](/sql/relational-databases/data-tier-applications/data-tier-applications)<br />- [SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms) |
+| **Son développement itératif :** les développeurs peuvent extraire des éléments du projet et les mettre à jour dans un environnement de développement isolé. À l’aide de ce type d’environnement, vous pouvez tester vos modifications sans affecter les autres membres de l’équipe. Une fois que les modifications sont terminées, vous vérifiez les fichiers au contrôle de version, où autres membres de l’équipe peuvent obtenir vos modifications et créer et les déployer sur un serveur de test. | - [Développement de base de données hors connexion orienté projet (SQL Server Data Tools)](/sql/ssdt/project-oriented-offline-database-development)<br />- [Débogueur Transact-SQL (SQL Server Management Studio)](/sql/ssms/scripting/transact-sql-debugger) |
+| **Prototypage, vérification des résultats des tests et modification des scripts de base de données et objets :** vous pouvez utiliser l’éditeur Transact-SQL pour exécuter l’une de ces tâches courantes. | - [Éditeurs de requête et de texte (SQL Server Management Studio)](/sql/ssms/scripting/query-and-text-editors-sql-server-management-studio) |
 
 ## <a name="see-also"></a>Voir aussi
 

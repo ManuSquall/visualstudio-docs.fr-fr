@@ -13,15 +13,14 @@ ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8f349887512cdfb9a98d64b0880eda45ecd5c186
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 611accb591b63f31ffe6a14535d470f2807f0e99
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970225"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951733"
 ---
 # <a name="create-relationships-between-datasets"></a>Créer des relations entre les datasets
 Jeux de données qui contiennent des données connexes tables utilisent <xref:System.Data.DataRelation> objets pour représenter une relation parent/enfant entre les tables et pour retourner des enregistrements connexes à partir de l’autre. Ajout de tables associées aux jeux de données à l’aide de la **Assistant de Configuration de Source de données**, ou le **Concepteur de Dataset**, crée et configure le <xref:System.Data.DataRelation> objet pour vous.
@@ -59,7 +58,7 @@ Les règles que vous pouvez apporter sont spécifiés dans le <xref:System.Data.
 |Règle de la contrainte de clé étrangère|Action|
 | - |------------|
 |<xref:System.Data.Rule.Cascade>|La modification (mise à jour ou suppression) apportée à l’enregistrement parent est également apportée dans les enregistrements associés dans la table enfant.|
-|<xref:System.Data.Rule.SetNull>|Enregistrements enfants ne sont pas supprimés, mais la clé étrangère dans les enregistrements enfants est définie <xref:System.DBNull>. Avec ce paramètre, les enregistrements enfants peuvent être laissées en tant que « orphelins », autrement dit, ils n’ont aucune relation avec des enregistrements parents. **Remarque :** À l’aide de cette règle peut entraîner des données non valides dans la table enfant.|
+|<xref:System.Data.Rule.SetNull>|Enregistrements enfants ne sont pas supprimés, mais la clé étrangère dans les enregistrements enfants est définie <xref:System.DBNull>. Avec ce paramètre, les enregistrements enfants peuvent être laissées en tant que « orphelins », autrement dit, ils n’ont aucune relation avec des enregistrements parents. **Remarque :** à l’aide de cette règle peut entraîner des données non valides dans la table enfant.|
 |<xref:System.Data.Rule.SetDefault>|La clé étrangère dans les enregistrements enfants connexes est définie à sa valeur par défaut (comme établi par la colonne <xref:System.Data.DataColumn.DefaultValue%2A> propriété).|
 |<xref:System.Data.Rule.None>|Aucune modification est apportée aux enregistrements enfants connexes. Avec ce paramètre, les enregistrements enfants peuvent contenir des références à des enregistrements de parent non valide.|
 
@@ -77,7 +76,7 @@ Relations entre les tables de données apparaissent sous forme de lignes dans le
 
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>Pour créer une relation entre deux tables de données
 
-1.  Ouvrez votre dataset dans le **Concepteur de DataSet**. Pour plus d’informations, consultez [Procédure pas à pas : Création d’un jeu de données dans le Concepteur de Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Ouvrez votre dataset dans le **Concepteur de DataSet**. Pour plus d’informations, consultez [procédure pas à pas : création d’un jeu de données dans le Concepteur de Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Faites glisser un **Relation** de l’objet à partir de la **DataSet** boîte à outils vers la table de données enfant dans la relation.
 
@@ -101,7 +100,7 @@ Relations entre les tables de données apparaissent sous forme de lignes dans le
 
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>Pour afficher un nom de relation dans le Concepteur de Dataset
 
-1.  Ouvrez votre dataset dans le **Concepteur de DataSet**. Pour plus d’informations, consultez [Procédure pas à pas : Création d’un jeu de données dans le Concepteur de Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Ouvrez votre dataset dans le **Concepteur de DataSet**. Pour plus d’informations, consultez [procédure pas à pas : création d’un jeu de données dans le Concepteur de Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  À partir de la **données** menu, sélectionnez le **afficher les étiquettes de Relation** commande pour afficher le nom de la relation. Désactivez cette commande pour masquer le nom de la relation.
 

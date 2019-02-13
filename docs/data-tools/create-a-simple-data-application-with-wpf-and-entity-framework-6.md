@@ -7,15 +7,14 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: d5c6a5a1e7dab8f52dc098fb14a1f872d14eedcd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0febbf31dcf9f0ae1e7a4e47dae2e9cf3d291dbf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959225"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909165"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Créer une application de données simple avec WPF et Entity Framework 6
 
@@ -354,7 +353,7 @@ Ensuite, remplacez l’intégralité de la grille externe avec ce balisage :
 
 Dans les applications Windows Forms, vous obtenez un objet de BindingNavigator avec des boutons pour parcourir les lignes dans une base de données et effectuer des opérations CRUD de base. WPF ne fournit pas un BindingNavigator, mais il est assez facile de créer un. Vous le faire avec les boutons à l’intérieur d’un StackPanel horizontal et associez les boutons avec les commandes qui sont liés aux méthodes dans le code-behind.
 
-Il existe des parties sur quatre à la logique de commande : (1) les commandes (2) les liaisons, (3) les boutons et (4) les gestionnaires de commandes dans le code-behind.
+La logique de commande sur quatre parties : (1) les commandes, (2) les liaisons, (3) les boutons et (4) les gestionnaires de commandes dans le code-behind.
 
 ### <a name="add-commands-bindings-and-buttons-in-xaml"></a>Ajouter des boutons, les liaisons et les commandes dans XAML
 
