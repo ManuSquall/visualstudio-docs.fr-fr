@@ -3,10 +3,7 @@ title: Nouveautés de Visual Studio 2015 │ Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.StartPage.WhatsNew
 helpviewer_keywords:
@@ -16,13 +13,13 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 16c9a490970d6c41a5661f0755f09731ce2fba7e
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+manager: jillfra
+ms.openlocfilehash: 6b3554373d4447aa3bd503668328424b25c43348
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740271"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790731"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Nouveautés de Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -71,7 +68,7 @@ Pour en savoir plus sur les nombreuses améliorations et nouvelles fonctionnalit
 
  ![Plateforme Windows universelle](./cross-platform/media/uwp-coreextensions.png "UWP_CoreExtensions")
 
- Exécutez votre application sur un téléphone Windows 10, un poste de travail Windows 10 ou une console Xbox. C’est le même package d’application ! Avec l’introduction d’un noyau unifié unique dans Windows 10, le même package d’application peut s’exécuter sur toutes les plateformes. Plusieurs plateformes ont des kits de développement logiciel (SDK) Extension que vous pouvez ajouter à votre application pour tirer parti des comportements spécifiques à une plateforme. Par exemple, un SDK d’extension pour mobile gère le comportement du bouton Précédent sur un Windows Phone. Si vous référencez un SDK d’extension dans votre projet, il vous suffit ensuite d’ajouter des vérifications à l’exécution pour vérifier si ce SDK est disponible sur cette plateforme. C’est comme cela que vous pouvez utiliser le même package d’application pour toutes les plateformes !
+ Exécutez votre application sur un téléphone Windows 10, un poste de travail Windows 10 ou une console Xbox. C’est le même package d’application ! Avec l’introduction d’un noyau unifié unique dans Windows 10, le même package d’application peut s’exécuter sur toutes les plateformes. Plusieurs plateformes ont des kits de développement logiciel (SDK) Extension que vous pouvez ajouter à votre application pour tirer parti des comportements spécifiques à une plateforme. Par exemple, un SDK d’extension pour mobile gère le comportement du bouton Précédent sur un Windows Phone. Si vous référencez un SDK d’extension dans votre projet, il vous suffit ensuite d’ajouter des vérifications à l’exécution pour vérifier si ce SDK est disponible sur cette plateforme. C’est comme cela que vous pouvez utiliser le même package d’application pour toutes les plateformes !
 
  Utilisez le langage C#, Visual Basic, C++ ou JavaScript pour créer des [applications Windows universelles](http://msdn.microsoft.com/library/dn975273.aspx).
 
@@ -82,7 +79,7 @@ Pour en savoir plus sur les nombreuses améliorations et nouvelles fonctionnalit
  Visual Studio 2015 continue à prendre en charge le développement d'applications de bureau classiques et d'applications du Windows Store. Visual Studio évolue parallèlement à Windows.  Dans Visual Studio 2015, les bibliothèques et langages du .NET et C++ bénéficient d'avancées très importantes qui s'appliquent à toutes les versions de Windows.
 
 #### <a name="the-net-framework"></a>.NET Framework
- Microsoft [!INCLUDE[net_v46](./includes/net-v46-md.md)] offre environ 150 nouvelles API et 50 API mises à jour pour prendre en charge davantage de scénarios. Par exemple, d'autres collections implémentent désormais <xref:System.Collections.Generic.IReadOnlyCollection%601>, ce qui les rend plus faciles à utiliser. Par ailleurs, la technologie ASP.NET 5 mentionnée précédemment offre une plateforme .NET adaptée à la création d'applications cloud modernes.
+ Microsoft [!INCLUDE[net_v46](./includes/net-v46-md.md)] offre environ 150 nouvelles API et 50 API mises à jour pour prendre en charge davantage de scénarios. Par exemple, d'autres collections implémentent désormais <xref:System.Collections.Generic.IReadOnlyCollection%601>, ce qui les rend plus faciles à utiliser. Par ailleurs, la technologie ASP.NET 5 mentionnée précédemment offre une plateforme .NET adaptée à la création d'applications cloud modernes.
 
  Les applications du Windows Store écrites en C# qui ciblent le .NET Framework peuvent à présent tirer parti de .NET Native, qui compile les applications en code natif plutôt qu'en IL. [!INCLUDE[net_v46](./includes/net-v46-md.md)] ajoute également RyuJIT, un compilateur juste-à-temps (JIT) 64 bits.
 
@@ -160,7 +157,7 @@ Pour en savoir plus sur les nombreuses améliorations et nouvelles fonctionnalit
 ## <a name="enjoy-these-additional-ide-improvements"></a>Profiter des améliorations supplémentaires de l'IDE
 
 ### <a name="synchronized-settings-roaming-settings"></a>Paramètres synchronisés (paramètres d'itinérance)
- Visual Studio 2013 a introduit les paramètres synchronisés pour certains des paramètres les plus souvent configurés, par exemple l'éditeur de texte, les combinaisons de touches, les thèmes, les polices et couleurs, le démarrage et les alias d'environnement.  Visual Studio 2015 améliore cette expérience en synchronisant davantage de paramètres, et en les synchronisant pour l'ensemble des applications de la famille Visual Studio (par exemple, les versions Professional, Enterprise, Express et Blend). Quand vous vous connectez à Visual Studio 2015 pour la première fois avec le compte utilisé dans Visual Studio 2013, vos paramètres synchronisés sont appliqués à partir de Visual Studio 2013. Vous pouvez accéder à vos paramètres en tapant « sync » dans la barre d’outils **Lancement rapide**, ou en naviguant vers **Outils > Options > Environnement > Paramètres synchronisés**.
+ Visual Studio 2013 a introduit les paramètres synchronisés pour certains des paramètres les plus souvent configurés, par exemple l'éditeur de texte, les combinaisons de touches, les thèmes, les polices et couleurs, le démarrage et les alias d'environnement.  Visual Studio 2015 améliore cette expérience en synchronisant davantage de paramètres, et en les synchronisant pour l'ensemble des applications de la famille Visual Studio (par exemple, les versions Professional, Enterprise, Express et Blend). Quand vous vous connectez à Visual Studio 2015 pour la première fois avec le compte utilisé dans Visual Studio 2013, vos paramètres synchronisés sont appliqués à partir de Visual Studio 2013. Vous pouvez accéder à vos paramètres en tapant « sync » dans la barre d’outils **Lancement rapide**, ou en naviguant vers **Outils > Options > Environnement > Paramètres synchronisés**.
 
 ### <a name="automatic-extension-updates"></a>mises à jour d'extensions automatiques
  Les extensions Visual Studio installées sont automatiquement mises à jour lorsqu'une nouvelle version est disponible dans la galerie Visual Studio. Consultez [Recherche et utilisation des extensions Visual Studio](./ide/finding-and-using-visual-studio-extensions.md) pour plus d'informations sur la personnalisation des mises à jour d'extensions automatiques.
@@ -183,18 +180,18 @@ Pour en savoir plus sur les nombreuses améliorations et nouvelles fonctionnalit
 ### <a name="notification-hub"></a>Hub de notification
  L'interface utilisateur du hub de notification a été simplifiée pour faciliter des analyses rapides. Des types de notifications ont été ajoutés, qui concernent notamment des problèmes de performances, des problèmes de rendu et des défaillances. Vous pouvez aussi désormais indiquer à Visual Studio d'arrêter d'afficher une notification. Pour plus d’informations, consultez [Notifications de Visual Studio](./ide/visual-studio-notifications.md).
 
-### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens Trouver qu’est-il arrivé à votre code (éditions Enterprise et Professional uniquement)
+### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens : découvrez ce qui est arrivé à votre code (éditions Enterprise et Professional uniquement)
  Ne perdez pas le fil : recherchez des informations relatives à votre code sans quitter l’éditeur. Vous pouvez examiner les modifications et autres éléments de l’historique pour les éléments de travail, bogues, révisions du code, etc. pour le code stocké dans Visual Studio Online (VSO) ou dans Team Foundation Server (TFS).
 
  Dans Visual Studio Enterprise et Visual Studio Professional, vous pouvez désormais effectuer les opérations suivantes :
 
 - Obtenir l'historique d'un fichier de code entier dans l'éditeur Visual Studio.
 
-   ![CodeLens Obtenir des détails du fichier de code](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
+   ![CodeLens : obtenir des détails sur le fichier de code](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
 
 - Consulter un graphique indiquant les personnes qui ont modifié votre code. Cette fonctionnalité vous permet de découvrir des modèles dans les modifications effectuées par votre équipe, et d’en évaluer l’impact.
 
-   ![CodeLens Consultez l’historique des modifications du code sous forme de graphique](./ide/media/codelens.png "CodeLens")
+   ![CodeLens : voir l’historique des modifications du code sous forme de graphique](./ide/media/codelens.png "CodeLens")
 
 - Afficher rapidement la date de dernière modification de votre code.
 
