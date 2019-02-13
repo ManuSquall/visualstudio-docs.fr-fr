@@ -13,15 +13,14 @@ ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1a84a9a1a8f0a7d30aafc1daa7a0a669674b021e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
+ms.openlocfilehash: eb6b9a9a213932662a548314bcc39c75e9d35bc3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918016"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909685"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Lier des contrôles WPF à un service de données WCF
 
@@ -230,7 +229,7 @@ Créer des contrôles qui affichent les enregistrements client en faisant glisse
 
 Utilisez l’objet proxy de service pour charger les données de ventes à partir du service. Puis assignez les données retournées à la source de données pour la <xref:System.Windows.Data.CollectionViewSource> dans la fenêtre WPF.
 
-1. Dans le concepteur, pour créer le `Window_Loaded` Gestionnaire d’événements, double-cliquez sur le texte qui lit : MainWindow()
+1. Dans le concepteur, pour créer le `Window_Loaded` Gestionnaire d’événements, double-cliquez sur le texte qui lit : **MainWindow**.
 
 2. Remplacez le gestionnaire d'événements par le code suivant. Remplacez l’adresse *localhost* dans ce code par l’adresse de l’hôte local de votre ordinateur de développement.
 
@@ -306,7 +305,7 @@ Une fois cette procédure pas à pas terminée, vous pouvez effectuer les tâche
 
 - Découvrez comment utiliser la fenêtre **Sources de données** dans Visual Studio pour lier des contrôles WPF à d’autres types de sources de données. Pour plus d’informations, consultez [WPF de lier des contrôles à un jeu de données](../data-tools/bind-wpf-controls-to-a-dataset.md).
 
-- Découvrez comment utiliser la fenêtre **Sources de données** dans Visual Studio pour afficher des données associées (c’est-à-dire des données dans une relation parent-enfant) dans des contrôles WPF. Pour plus d’informations, consultez [Procédure pas à pas : Affichage de données associées dans une application WPF](../data-tools/display-related-data-in-wpf-applications.md).
+- Découvrez comment utiliser la fenêtre **Sources de données** dans Visual Studio pour afficher des données associées (c’est-à-dire des données dans une relation parent-enfant) dans des contrôles WPF. Pour plus d’informations, consultez [procédure pas à pas : affichage de données liées dans une application WPF](../data-tools/display-related-data-in-wpf-applications.md).
 
 ## <a name="see-also"></a>Voir aussi
 
