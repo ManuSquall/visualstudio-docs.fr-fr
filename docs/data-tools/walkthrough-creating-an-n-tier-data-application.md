@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Création d’une application de données multiniveaux'
+title: "Procédure pas à pas : création d'une application de données multicouche"
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,17 +12,16 @@ ms.assetid: d15e4d31-2839-48d9-9e0e-2e73404d82a2
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: c3ee28514af9db5b0a03ce8b9805ef773c649a42
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4edd2ce00439a791f55787e9d55e9e51b3c7b27b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993163"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933013"
 ---
-# <a name="walkthrough-create-an-n-tier-data-application"></a>Procédure pas à pas : Créer une application de données multiniveaux
+# <a name="walkthrough-create-an-n-tier-data-application"></a>Procédure pas à pas : Création d’une application de données multicouches
 Les applications de données *multiniveaux* sont des applications qui accèdent aux données et sont divisées en plusieurs couches logiques, ou *niveaux*. La séparation des composants de l'application en couches distinctes favorise la possibilité de tenir à jour et de monter en charge l'application. Cela est possible grâce à une application plus facile des nouvelles technologies sur chaque couche sans avoir à reconcevoir toute la solution. L'architecture multicouche inclut une couche Présentation, une couche intermédiaire et une couche Données. La couche intermédiaire inclut généralement une couche d'accès aux données, une couche logique métier et des composants partagés tels que l'authentification et la validation. La couche Données inclut une base de données relationnelle. Les applications multicouches stockent généralement les informations sensibles dans la couche d'accès aux données de la couche intermédiaire, pour la tenir hors de portée des utilisateurs finaux qui accèdent à la couche Présentation. Pour plus d’informations, consultez [vue d’ensemble des applications de données multicouches](../data-tools/n-tier-data-applications-overview.md).
 
 Pour séparer plusieurs couches d'une application multicouche, il est possible de créer des projets distincts pour chaque couche que vous voulez inclure dans votre application. Les datasets typés contiennent une propriété `DataSet Project` qui détermine les projets dans lesquels le code du dataset et des `TableAdapter`s générés doit intervenir.
@@ -105,7 +104,7 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
  L'étape qui suit consiste à créer le dataset typé. Datasets typés sont créés avec la classe dataset (y compris `DataTables` classes) et le `TableAdapter` classes dans un projet unique. (Toutes les classes sont générées dans un seul fichier.) Lorsque vous séparez le jeu de données et les TableAdapters dans des projets différents, il est la classe de jeu de données est déplacée vers l’autre projet, en laissant le `TableAdapter` classes dans le projet d’origine. Par conséquent, créer le jeu de données dans le projet qui doit contenir les TableAdapters (le projet DataAccessTier). Vous créez le jeu de données à l’aide de la **Assistant de Configuration de Source de données**.
 
 > [!NOTE]
-> Vous devez avoir accès à l'exemple de base de données Northwind pour créer la connexion. Pour plus d’informations sur la façon de configurer la base de données Northwind, consultez [Comment : Installer les bases de données exemple](../data-tools/installing-database-systems-tools-and-samples.md).
+> Vous devez avoir accès à l'exemple de base de données Northwind pour créer la connexion. Pour plus d’informations sur la façon de configurer la base de données Northwind, consultez [Comment : installer les bases de données exemple](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ### <a name="to-create-the-dataset"></a>Pour créer le groupe de données
 
@@ -155,7 +154,7 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
 
 5. Dans le menu **Générer**, sélectionnez **Générer la solution**.
 
-   Le dataset et les TableAdapters sont divisés entre les deux projets de bibliothèque de classes. Le projet qui contenait initialement l’ensemble du dataset (`DataAccessTier`) contient à présent que les TableAdapters. Le projet désigné dans la **DataSet Project** propriété (`DataEntityTier`) contient le dataset typé : *NorthwindDataSet.Dataset.Designer.vb* (ou *NorthwindDataSet.Dataset.Designer.cs*).
+   Le dataset et les TableAdapters sont divisés entre les deux projets de bibliothèque de classes. Le projet qui contenait initialement l’ensemble du dataset (`DataAccessTier`) contient à présent que les TableAdapters. Le projet désigné dans la **DataSet Project** propriété (`DataEntityTier`) contient le dataset typé : *NorthwindDataSet.Dataset.Designer.vb* (ou  *NorthwindDataSet.Dataset.Designer.cs*).
 
 > [!NOTE]
 > Quand vous séparez les datasets et les TableAdapters (en définissant la propriété **Projet DataSet**), les classes DataSet partielles existantes dans le projet ne sont pas déplacées automatiquement. Les classes DataSet partielles existantes doivent être manuellement déplacées dans le projet DataSet.

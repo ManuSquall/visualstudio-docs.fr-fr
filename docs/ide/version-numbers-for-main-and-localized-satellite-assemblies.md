@@ -1,7 +1,6 @@
 ---
 title: Numéros de version de l’assembly principal et des assemblys satellites localisés
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - satellite assemblies, version numbers
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6776df2bd0edf6fc639604e6b00502dbf83f657
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4ca6724a78ca6b01a5d893b06e01674a35abc7f1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54925547"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940670"
 ---
 # <a name="version-numbers-for-main-and-localized-satellite-assemblies"></a>Numéros de version de l’assembly principal et des assemblys satellites localisés
 La classe <xref:System.Resources.SatelliteContractVersionAttribute> fournit la prise en charge de la gestion de version pour un assembly principal qui utilise des ressources localisées par le biais du Gestionnaire des ressources. L’application d’un <xref:System.Resources.SatelliteContractVersionAttribute> à l’assembly principal d’une application permet de mettre à jour et de redéployer cet assembly, sans mettre à jour ses assemblys satellites. Par exemple, vous pouvez utiliser la classe <xref:System.Resources.SatelliteContractVersionAttribute> avec un Service Pack qui n’introduit pas de nouvelles ressources sans régénérer et redéployer vos assemblys satellites. Pour que vos ressources localisées soient disponibles, la version de contrat satellite de votre assembly principal doit correspondre à la classe <xref:System.Reflection.AssemblyVersionAttribute> de vos assemblys satellites. Spécifiez un numéro de version exact dans la classe <xref:System.Resources.SatelliteContractVersionAttribute>. Les caractères génériques comme « * » ne sont pas autorisés. Pour plus d’informations, consultez [Récupérer des ressources](/dotnet/framework/resources/retrieving-resources-in-desktop-apps).

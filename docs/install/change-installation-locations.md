@@ -3,7 +3,6 @@ title: Sélectionner les emplacements d'installation
 description: Découvrez comment réduire l’empreinte de l’installation de Visual Studio sur votre lecteur système en plaçant le cache de téléchargement, les composants partagés, les kits SDK et les outils sur d’autres lecteurs.
 ms.date: 11/07/2018
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - change installation locations for Visual Studio
@@ -15,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 522b27093c97101df66aca2e5b4d969bcdaa3bc5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c8e69c42cc0d726eba7e2c3c7f9a2decc9dd89e0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55003234"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947820"
 ---
 # <a name="select-the-installation-locations-in-visual-studio-2017"></a>Sélectionner les emplacements d’installation dans Visual Studio 2017
 

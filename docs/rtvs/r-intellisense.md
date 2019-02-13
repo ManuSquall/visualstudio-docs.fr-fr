@@ -2,19 +2,18 @@
 title: IntelliSense pour le code R
 description: Visual Studio IntelliSense affiche des informations sur les fonctions, les membres d’objet, les extraits de code et les saisies semi-automatiques au fur et à mesure que vous tapez du code R.
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 3ce62d81a3a6fce4e59d43f088d06f0af7385708
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 854f7d410e327ca92d0c5156d89bc21765e13cc7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55024082"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942807"
 ---
 # <a name="intellisense"></a>IntelliSense
 
