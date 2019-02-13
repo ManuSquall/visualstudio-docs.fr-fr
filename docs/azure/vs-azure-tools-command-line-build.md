@@ -4,18 +4,17 @@ description: Génération en ligne de commande pour Azure
 author: ghogen
 manager: jillfra
 assetId: 94b35d0d-0d35-48b6-b48b-3641377867fd
-ms.prod: visual-studio-dev15
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/05/2017
 ms.author: ghogen
-ms.openlocfilehash: 713e9ac777a29ed4cb5de07c51f733a2b375e0e7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bc65d64f4dad2ac38c1f0c64ce6c7297d3c37d3a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55139776"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945259"
 ---
 # <a name="building-azure-projects-from-the-command-line"></a>Génération de projets Azure à partir de la ligne de commande
 À l’aide de Microsoft Build Engine (MSBuild), vous pouvez générer des produits dans des environnements de laboratoire-génération où Visual Studio n’est pas installé. MSBuild utilise pour les fichiers projet un format XML extensible et entièrement pris en charge par Microsoft. En utilisant le format de fichier MSBuild, vous pouvez décrire quels éléments doivent être générés pour une ou plusieurs plateformes et configurations.

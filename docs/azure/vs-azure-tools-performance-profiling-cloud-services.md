@@ -8,13 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 7e58548bddfbb9426b459fe3260129a14b6eba87
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 12fcc2813b36968270e0eeba968a5572f904fc1f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55139824"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55946939"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Test des performances d’un service cloud
 ## <a name="overview"></a>Vue d'ensemble
