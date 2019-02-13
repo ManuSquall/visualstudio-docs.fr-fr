@@ -18,19 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 781f5515be77cfa6ae734b97a2cdba52f6702f56
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dc603d11a087fb413896b9ae897ee730e18aae1b
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54946982"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853376"
 ---
 # <a name="error-task"></a>Erreur (tâche)
-Arrête une génération et enregistre une erreur en fonction d’une instruction conditionnelle évaluée.  
+Arrête une génération et enregistre une erreur en fonction d’une instruction conditionnelle évaluée.
 
-## <a name="parameters"></a>Paramètres  
- Le tableau ci-dessous décrit les paramètres de la tâche `Error` .  
-
+## <a name="parameters"></a>Paramètres
+Le tableau ci-dessous décrit les paramètres de la tâche `Error` .
 
 | Paramètre | Description |
 |---------------| - |
@@ -39,30 +38,30 @@ Arrête une génération et enregistre une erreur en fonction d’une instructio
 | `HelpKeyword` | Paramètre `String` facultatif.<br /><br /> Mot clé d’aide à associer à l’erreur. |
 | `Text` | Paramètre `String` facultatif.<br /><br /> Texte d’erreur enregistré par [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] si le paramètre `Condition` a la valeur `true`. |
 
-## <a name="remarks"></a>Notes  
- La tâche `Error` permet aux projets [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] d’émettre un texte d’erreur dans les enregistreurs d’événements et d’arrêter l’exécution de la génération.  
+## <a name="remarks"></a>Notes
+La tâche `Error` permet aux projets [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] d’émettre un texte d’erreur dans les enregistreurs d’événements et d’arrêter l’exécution de la génération.
 
- Si le paramètre `Condition` a la valeur `true`, la génération est arrêtée, et une erreur est enregistrée. Si un paramètre `Condition` n’existe pas, l’erreur est enregistrée, et l’exécution de la génération s’arrête. Pour plus d’informations sur la journalisation, consultez [Obtention de journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md).  
+Si le paramètre `Condition` a la valeur `true`, la génération est arrêtée, et une erreur est enregistrée. Si un paramètre `Condition` n’existe pas, l’erreur est enregistrée, et l’exécution de la génération s’arrête. Pour plus d’informations sur la journalisation, consultez [Obtention de journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md).
 
- En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).  
+En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 
-## <a name="example"></a>Exemple  
- L’exemple de code suivant vérifie que toutes les propriétés requises sont définies. Si elles ne le sont pas, le projet déclenche un événement d’erreur et enregistre la valeur du paramètre `Text` de la tâche `Error`.  
+## <a name="example"></a>Exemple
+L’exemple de code suivant vérifie que toutes les propriétés requises sont définies. Si elles ne le sont pas, le projet déclenche un événement d’erreur et enregistre la valeur du paramètre `Text` de la tâche `Error`.
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <Target Name="ValidateCommandLine">  
-        <Error  
-            Text=" The 0 property must be set on the command line."  
-            Condition="'$(0)' == ''" />  
-        <Error  
-            Text="The FREEBUILD property must be set on the command line."  
-            Condition="'$(FREEBUILD)' == ''" />  
-    </Target>  
-    ...  
-</Project>  
-```  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Target Name="ValidateCommandLine">
+        <Error
+            Text=" The 0 property must be set on the command line."
+            Condition="'$(0)' == ''" />
+        <Error
+            Text="The FREEBUILD property must be set on the command line."
+            Condition="'$(FREEBUILD)' == ''" />
+    </Target>
+    ...
+</Project>
+```
 
-## <a name="see-also"></a>Voir aussi  
- [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)   
- [Obtenir des journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md)
+## <a name="see-also"></a>Voir aussi
+[Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)  
+[Obtenir des journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md)
