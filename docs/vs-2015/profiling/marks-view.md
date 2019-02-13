@@ -1,14 +1,9 @@
 ---
 title: Marques, vue | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.marks
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: b2773344-8081-4116-85a1-58f770448f6a
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 10d893a4f643404161d0bcbe6b2c8f623719d0c7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fb5fb56a011355abb991d6e8da122461045af2b1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762709"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764922"
 ---
 # <a name="marks-view"></a>Marques, vue
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ La vue Marques affiche l’échantillonnage et les événements ETW qui ont ét�
  Identificateur unique de la marque de profilage.  
   
  **Nom de la marque**  
- Nom de l'événement.  
+ Nom de l’événement.  
   
  **Horodatage**  
  Durée entre l’heure du début du profilage et l’heure à laquelle l’événement est enregistré.  
@@ -53,10 +48,7 @@ La vue Marques affiche l’échantillonnage et les événements ETW qui ont ét�
   
 ## <a name="see-also"></a>Voir aussi  
  [Vue d’ensemble du rapport Performances](../profiling/performance-report-overview.md)   
- [< PAVE_OVER > Comment : configurer des marques de profilage](http://msdn.microsoft.com/library/65a23880-e5e8-4d5a-82b3-6498b9ef8975)   
- [< PAVE_OVER > Comment : insérer des marques dans un fichier de données de Profiler](http://msdn.microsoft.com/library/856bfc81-a60f-42e5-a9bc-71b986c1e09d)   
+ [< PAVE_OVER > Comment : Configurer des marques de profilage](http://msdn.microsoft.com/library/65a23880-e5e8-4d5a-82b3-6498b9ef8975)   
+ [< PAVE_OVER > Comment : Insérer des marques dans un fichier de données de Profiler](http://msdn.microsoft.com/library/856bfc81-a60f-42e5-a9bc-71b986c1e09d)   
  [Guide pratique pour collecter les données des compteurs Windows](../profiling/how-to-collect-windows-counter-data.md)   
- [&#91;NIB&#93; Fenêtre de contrôle de la collecte de données](http://msdn.microsoft.com/en-us/98d740d8-459f-4605-bf04-fb17aafaaa8f)
-
-
-
+ [&#91;NIB&#93; Fenêtre de contrôle de la collecte de données](http://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)

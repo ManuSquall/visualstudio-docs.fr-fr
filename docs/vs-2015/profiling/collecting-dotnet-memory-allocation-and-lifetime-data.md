@@ -1,14 +1,9 @@
 ---
 title: Collecte des données liées à la durée de vie des objets et à l’allocation de mémoire .NET | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - .NET memory profiling method
 - Profiling Tools,.NET memory method
@@ -16,13 +11,13 @@ ms.assetid: 62a6dd5f-db66-4456-9d57-f8913dbfe4d5
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0b31f4cfce52c60e4b8f65758fc56e16e29bef6b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 232707cd8fa51b8b69c67e1e66cb0790f4938031
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761574"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794213"
 ---
 # <a name="collecting-net-memory-allocation-and-lifetime-data"></a>Collecte des données liées à la durée de vie des objets et à l’allocation de mémoire .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,6 +86,3 @@ Les outils de profilage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prennent en
  [Configuration de sessions de performance](../profiling/configuring-performance-sessions.md)   
  [Guide pratique pour choisir une méthode de collecte](../profiling/how-to-choose-collection-methods.md)   
  [Propriétés d’une session de performance](../profiling/performance-session-properties.md)
-
-
-

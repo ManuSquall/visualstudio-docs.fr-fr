@@ -1,14 +1,9 @@
 ---
-title: Guide pratique pour ajouter ou supprimer des références à l’aide du gestionnaire de références | Microsoft Docs
-ms.custom: ''
+title: 'Procédure : Ajouter ou supprimer des références à l’aide du Gestionnaire de références | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.ReferenceManager
 helpviewer_keywords:
@@ -27,13 +22,13 @@ ms.assetid: 1aabb520-99b0-46c6-9368-21b4d84793eb
 caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 82e09b1d27c8ac7905fd0e6511381b97fcae2cd7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4a73beba7ee41c52c60a4aaa3864a7ef112784dd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917548"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756984"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Guide pratique pour ajouter ou supprimer des références à l’aide du gestionnaire de références
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -159,16 +154,16 @@ Vous pouvez utiliser la boîte de dialogue **Gestionnaire de références** pour
   
  Vous pouvez générer un fichier WinMD dans Visual Studio de deux façons :  
   
-- **Projets managés d’application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]**  : les projets d’application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] peuvent générer les binaires de WinMD en définissant Propriétés de projet &#124; Type de sortie = fichier WinMD. Le nom de fichier WinMD doit être l'espace de noms du sur-ensemble de tous les espaces de noms qui existent dans celui-ci. Par exemple, si un projet comprend des espaces de noms A.B et A.B.C, les étiquettes possibles pour le WinMD généré sont A.winmd et A.B.winmd. Si un utilisateur affiche une valeur Propriétés de projet &#124; Nom d’assembly ou Propriétés de projet &#124; Espace de noms qui est disjointe de l’ensemble d’espaces de noms du projet ou s’il n’y a aucun espace de noms de sur-ensemble dans un projet, un avertissement de construction est généré : « A.winmd » n’est pas un nom de fichier de .winmd valide de cet assembly. Tous les types compris dans un fichier de métadonnées Windows doivent se trouver dans un sous-espace de noms du nom du fichier. Les types qui n'existent pas dans un sous espace de noms du nom de fichier ne peuvent pas être localisés lors de l'exécution. Dans cet assembly, le plus petit espace de noms courant est « CSWSClassLibrary1 ». Un projet Visual Basic ou Visual C# de bureau peut uniquement utiliser des WinMDs générés à l'aide des kits SDK [!INCLUDE[win8](../includes/win8-md.md)], appelés WinMDs internes, et ne peut pas générer de WinMD.  
+- **Projets managés d’application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]**  : les projets d’application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] peuvent générer les binaires de WinMD en définissant Propriétés de projet &#124; Type de sortie = fichier WinMD. Le nom de fichier WinMD doit être l'espace de noms du sur-ensemble de tous les espaces de noms qui existent dans celui-ci. Par exemple, si un projet comprend des espaces de noms A.B et A.B.C, les étiquettes possibles pour le WinMD généré sont A.winmd et A.B.winmd. Si un utilisateur entre les propriétés d’un projet &#124; nom de l’Assembly ou propriétés du projet &#124; valeur Namespace qui est disjointe de l’ensemble des espaces de noms dans le projet ou il n’existe aucun espace de noms de sur-ensemble dans un projet, un avertissement de build est généré : « A.winmd » n’est pas un nom de fichier .winmd valide pour cet assembly. Tous les types compris dans un fichier de métadonnées Windows doivent se trouver dans un sous-espace de noms du nom du fichier. Les types qui n'existent pas dans un sous espace de noms du nom de fichier ne peuvent pas être localisés lors de l'exécution. Dans cet assembly, le plus petit espace de noms courant est « CSWSClassLibrary1 ». Un projet Visual Basic ou Visual C# de bureau peut uniquement utiliser des WinMDs générés à l'aide des kits SDK [!INCLUDE[win8](../includes/win8-md.md)], appelés WinMDs internes, et ne peut pas générer de WinMD.  
   
-- **Projets d’application au format natif [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]**  : un fichier WinMD natif comprend uniquement des métadonnées. Son implémentation existe dans un fichier DLL distinct. Il est possible de produire des binaires natifs en choisissant le modèle de projet Composant Windows Runtime dans la boîte de dialogue **Nouveau projet** ou en partant d’un projet vide et en modifiant les propriétés du projet pour générer un fichier WinMD. Si le projet se compose d'espaces de noms disjoints, une erreur de build indique à l'utilisateur de combiner les espaces de noms ou d'exécuter l'outil MSMerge.  
+- **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] projets d’application native**: un fichier WinMD natif comprend uniquement des métadonnées. Son implémentation existe dans un fichier DLL distinct. Il est possible de produire des binaires natifs en choisissant le modèle de projet Composant Windows Runtime dans la boîte de dialogue **Nouveau projet** ou en partant d’un projet vide et en modifiant les propriétés du projet pour générer un fichier WinMD. Si le projet se compose d'espaces de noms disjoints, une erreur de build indique à l'utilisateur de combiner les espaces de noms ou d'exécuter l'outil MSMerge.  
   
   L'onglet Windows comprend deux sous-groupes.  
   
 ### <a name="core-subgroup"></a>Sous-groupe Principal  
  Le sous-groupe Principal répertorie tous les WinMDs (pour les éléments Windows Runtime) dans le kit SDK de la version Windows ciblée.  
   
- Les projets d'application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] contiennent des références à tous les WinMDs du kit SDK [!INCLUDE[win8](../includes/win8-md.md)] par défaut sur la création de projet. Dans les projets managés, un nœud en lecture seule dans le dossier Références de l’**Explorateur de solutions** indique la référence au SDK [!INCLUDE[win8](../includes/win8-md.md)] complet. Par conséquent, le sous-groupe Principal du Gestionnaire de références n'énumère pas les assemblys du kit SDK [!INCLUDE[win8](../includes/win8-md.md)] et n'affiche pas à la place le message : « Le Kit de développement logiciel Windows est déjà référencé. Utilisez l'Explorateur d'objets pour explorer les références dans le Kit de développement logiciel Windows. »  
+ Les projets d'application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] contiennent des références à tous les WinMDs du kit SDK [!INCLUDE[win8](../includes/win8-md.md)] par défaut sur la création de projet. Dans les projets managés, un nœud en lecture seule dans le dossier Références de l’**Explorateur de solutions** indique la référence au SDK [!INCLUDE[win8](../includes/win8-md.md)] complet. En conséquence, le sous-groupe principal du Gestionnaire de références n’énumère pas les assemblys à partir de la [!INCLUDE[win8](../includes/win8-md.md)] SDK et affiche à la place un message : « Le Kit de développement logiciel Windows est déjà référencé. Utilisez l'Explorateur d'objets pour explorer les références dans le Kit de développement logiciel Windows. »  
   
  Dans les projets du Bureau, le sous-groupe Principal ne s'affiche pas par défaut. Vous pouvez ajouter le Windows Runtime en ouvrant le menu contextuel du nœud du projet, en choisissant **Décharger le projet**, en ajoutant l’extrait de code suivant, et en rouvrant le projet (sur le nœud du projet, choisissez **Recharger le projet**). Quand vous appelez la boîte de dialogue**Gestionnaire de références**, le sous-groupe Principal s’affiche.  
   
@@ -221,8 +216,5 @@ Vous pouvez utiliser la boîte de dialogue **Gestionnaire de références** pour
  La barre de recherche de la boîte de dialogue **Gestionnaire de références** fonctionne sur l’onglet situé dans le focus. Par exemple, si un utilisateur tape « système » dans la barre de recherche alors que l’onglet **Solution** est affiché, la recherche ne retourne aucun résultat à moins que la solution consiste en un nom de projet contenant « système ».  
   
 ## <a name="see-also"></a>Voir aussi  
- [NIB Guide pratique pour ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter une référence](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
+ [(NIB) Guide pratique pour Ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter référence](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
  [Gestion des références dans un projet](../ide/managing-references-in-a-project.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Afficher les registres, commande | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - debug.listregisters
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: 19a9d789-f6c9-46b3-b1f6-4934fc33e055
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9e52b7de812be9168c30093b16041db42ea4676b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6fadd5429b351eb2393aa0823dec133749b32c83
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195414"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763037"
 ---
 # <a name="list-registers-command"></a>Afficher les registres, commande
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
   
 ## <a name="switches"></a>Commutateurs  
  /Display [{`register`&#124;`registerGroup`}...]  
- Affiche les valeurs du `register` ou `registerGroup` spécifié. Si aucun `register` ni `registerGroup` n’est spécifié, la liste par défaut de registres est affichée. Si aucun commutateur n’est spécifié, le comportement est le même. Exemple :  
+ Affiche les valeurs du `register` ou `registerGroup` spécifié. Si aucun `register` ni `registerGroup` n’est spécifié, la liste par défaut de registres est affichée. Si aucun commutateur n’est spécifié, le comportement est le même. Par exemple :  
   
  `Debug.ListRegisters /Display eax`  
   
@@ -60,7 +55,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
  /Unwatch [{`register`&#124;`registerGroup`}...]  
  Supprime une ou plusieurs valeurs de `register` ou `registerGroup` de la liste.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  L’alias `r` peut être utilisé à la place de `Debug.ListRegisters`.  
   
 ## <a name="example"></a>Exemple  
@@ -74,6 +69,3 @@ r /Display Flags
  [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Concepts de base du débogage : fenêtre Registres](../../debugger/debugging-basics-registers-window.md)   
  [Guide pratique pour utiliser la fenêtre Registres](../../debugger/how-to-use-the-registers-window.md)
-
-
-

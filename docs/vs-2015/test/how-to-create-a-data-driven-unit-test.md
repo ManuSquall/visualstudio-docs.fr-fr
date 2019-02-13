@@ -22,7 +22,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54779160"
 ---
-# <a name="how-to-create-a-data-driven-unit-test"></a>Procédure : Créer un test unitaire piloté par des données
+# <a name="how-to-create-a-data-driven-unit-test"></a>Comment : créer un test unitaire piloté par des données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 À l’aide du framework de test unitaire Microsoft pour le code managé, vous pouvez configurer une méthode de test unitaire permettant de récupérer les valeurs utilisées dans la méthode de test à partir d’une source de données. La méthode est exécutée successivement pour chaque ligne de la source de données, ce qui permet de tester facilement diverses entrées à l’aide d’une seule méthode.  
@@ -146,7 +146,7 @@ public void AddIntegers_FromDataSourceTest()
   
  Un constructeur avec un seul paramètre utilise les informations de connexion stockées dans le fichier app.config de la solution. *dataSourceSettingsName* est le nom de l’élément XML contenu dans le fichier config, qui spécifie les informations de connexion.  
   
- L’utilisation d’un fichier app.config vous permet de changer l’emplacement de la source de données sans changer le test unitaire lui-même. Pour plus d’informations sur la création et l’utilisation d’un fichier [app.config, consultez Procédure pas à pas : utilisation d’un fichier config pour définir une source de données](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)  
+ L’utilisation d’un fichier app.config vous permet de changer l’emplacement de la source de données sans changer le test unitaire lui-même. Pour plus d’informations sur la création et l’utilisation d’un fichier app.config, consultez [Procédure pas à pas : utilisation d’un fichier de configuration pour définir une source de données](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)  
   
 ```  
 [DataSource(connectionString, tableName)]  

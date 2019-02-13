@@ -1,14 +1,9 @@
 ---
 title: Page Compiler, Concepteur de projets (Visual Basic) │ Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesCompile
 helpviewer_keywords:
@@ -23,13 +18,13 @@ ms.assetid: b2a80230-906e-4e85-b3e0-fcd9c40426e1
 caps.latest.revision: 65
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4b369b1aa8d9e6857b29a5c37d13169b2e21ea74
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 928d3c4fe3e90c731f56eba4e7275772fdcd76c2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924550"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778910"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Page Compiler, Concepteur de projets (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,21 +40,21 @@ La page **Compiler** du Concepteur de projets vous permet de spécifier les inst
  Les paramètres suivants vous permettent de sélectionner la configuration et la plateforme à afficher ou à modifier.  
   
 > [!NOTE]
->  Grâce aux configurations de build simplifiées, le système de projet détermine s’il faut générer une version Debug ou Release. Par conséquent, les listes **Configuration** et **Plateforme** ne sont pas affichées. Pour plus d’informations, consultez [Configurations de projet Debug et Release](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+>  Grâce aux configurations de build simplifiées, le système de projet détermine s’il faut générer une version Debug ou Release. Par conséquent, les listes **Configuration** et **Plateforme** ne sont pas affichées. Pour plus d’informations, consultez [Configurations de projet Debug et Release](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Configuration**  
- Spécifie les paramètres de configuration à afficher ou à modifier. Les paramètres sont **Debug** (valeur par défaut), **Release** ou **Toutes les configurations**. Pour plus d’informations, consultez [Configurations de projet Debug et Release](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e) et [Guide pratique pour créer et modifier des configurations](../../ide/how-to-create-and-edit-configurations.md).  
+ Spécifie les paramètres de configuration à afficher ou à modifier. Les paramètres sont **Debug** (valeur par défaut), **Release** ou **Toutes les configurations**. Pour plus d’informations, consultez [Configurations Debug et Release projet](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) et [Comment : créer et modifier des configurations](../../ide/how-to-create-and-edit-configurations.md).  
   
  **Plateforme**  
- Spécifie les paramètres de plateforme à afficher ou à modifier. Vous pouvez spécifier **Any CPU** (valeur par défaut), **x64** ou **x86**. Pour plus d’informations, consultez [Configurations de projet Debug et Release](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Spécifie les paramètres de plateforme à afficher ou à modifier. Vous pouvez spécifier **Any CPU** (valeur par défaut), **x64** ou **x86**. Pour plus d’informations, consultez [Configurations de projet Debug et Release](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
 ## <a name="compiler-configuration-options"></a>Options de configuration du compilateur  
  Les paramètres suivants vous permettent de définir les options de configuration du compilateur.  
   
  **Chemin de sortie de la génération**  
- Spécifie l'emplacement des fichiers de sortie pour cette configuration de projet. Tapez le chemin de la sortie de la génération dans cette zone ou cliquez sur le bouton **Parcourir** pour sélectionner un chemin. Notez que ce chemin est relatif ; si vous entrez un chemin absolu, il sera enregistré comme relatif. Le chemin par défaut est bin\Debug\ ou bin\Release\\. Pour plus d’informations, consultez [Configurations de projet Debug et Release](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Spécifie l'emplacement des fichiers de sortie pour cette configuration de projet. Tapez le chemin de la sortie de la génération dans cette zone ou cliquez sur le bouton **Parcourir** pour sélectionner un chemin. Notez que ce chemin est relatif ; si vous entrez un chemin absolu, il sera enregistré comme relatif. Le chemin par défaut est bin\Debug\ ou bin\Release\\. Pour plus d’informations, consultez [Configurations de projet Debug et Release](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
- Grâce aux configurations de build simplifiées, le système de projet détermine s’il faut générer une version Debug ou Release. Si vous cliquez sur la commande **Générer** dans le menu **Déboguer** (F5), la génération est placée dans l’emplacement de débogage, indépendamment du **Chemin de sortie** spécifié. Toutefois, avec la commande **Générer** du menu **Générer**, elle est placée dans l’emplacement spécifié. Pour plus d’informations, consultez [Configurations de projet Debug et Release](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Grâce aux configurations de build simplifiées, le système de projet détermine s’il faut générer une version Debug ou Release. Si vous cliquez sur la commande **Générer** dans le menu **Déboguer** (F5), la génération est placée dans l’emplacement de débogage, indépendamment du **Chemin de sortie** spécifié. Toutefois, avec la commande **Générer** du menu **Générer**, elle est placée dans l’emplacement spécifié. Pour plus d’informations, consultez [Configurations de projet Debug et Release](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Option Explicit**  
  Indique s’il faut autoriser la déclaration implicite de variables. Sélectionnez **On** pour exiger la déclaration explicite de variables. Ainsi, le compilateur doit signaler des erreurs si les variables ne sont pas déclarées avant leur utilisation. Sélectionnez **Off** pour autoriser la déclaration implicite de variables.  
@@ -175,11 +170,8 @@ La page **Compiler** du Concepteur de projets vous permet de spécifier les inst
   Cliquez sur ce bouton pour accéder à la boîte de dialogue **Paramètres avancés du compilateur**. Utilisez la boîte de dialogue **Paramètres avancés du compilateur** pour spécifier les propriétés de configuration de build avancées d’un projet. Cette boîte de dialogue s’applique uniquement aux projets Visual Basic. Pour plus d’informations, consultez [Paramètres avancés du compilateur, boîte de dialogue (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Configurations de projets Debug et Release](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)   
- [Gestion des propriétés de compilation](http://msdn.microsoft.com/en-us/94308881-f10f-4caf-a729-f1028e596a2c)   
+ [Configurations de projets Debug et Release](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)   
+ [Gestion des propriétés de compilation](http://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
  [Guide pratique pour spécifier des événements de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
  [Compilateur de ligne de commande de Visual Basic](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)   
  [Guide pratique pour créer et modifier des configurations](../../ide/how-to-create-and-edit-configurations.md)
-
-
-

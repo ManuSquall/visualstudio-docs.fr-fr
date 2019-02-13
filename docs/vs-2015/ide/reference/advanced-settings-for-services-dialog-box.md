@@ -1,14 +1,9 @@
 ---
 title: Paramètres avancés pour les services, boîte de dialogue | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAdvancedServices
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 6dde4a2d-85e1-4275-aa55-24b84111be91
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 217d1f6f546df94a66c5b7554a7a1710747cf83c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4a7affd12dceeb8802740b7d0cd502ede051f5ad
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291874"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779134"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>Paramètres avancés pour les services, boîte de dialogue
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,11 +33,11 @@ Les services d’application cliente fournissent un accès simplifié aux servic
 ## <a name="task-list"></a>Liste des tâches  
  [Comment : configurer les services d’application cliente](http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)  
   
- [Comment : travailler hors connexion avec les services d’application cliente](http://msdn.microsoft.com/en-us/f792cb16-8520-4a0f-9dc9-07bfbc454e38)  
+ [Guide pratique pour Travailler hors connexion avec les Services d’Application cliente](http://msdn.microsoft.com/f792cb16-8520-4a0f-9dc9-07bfbc454e38)  
   
 ## <a name="uielement-list"></a>Liste des éléments d’interface  
  **Enregistrer le hachage de mot de passe localement pour activer la connexion hors connexion**  
- Indique si le mot de passe de l’utilisateur sera mis en cache localement sous une forme chiffrée pour permettre à l’utilisateur de se connecter quand l’application est en mode hors connexion. Pour plus d’informations, consultez [Comment : travailler hors connexion avec les services d’application cliente](http://msdn.microsoft.com/en-us/f792cb16-8520-4a0f-9dc9-07bfbc454e38). Cette option est activée par défaut.  
+ Indique si le mot de passe de l’utilisateur sera mis en cache localement sous une forme chiffrée pour permettre à l’utilisateur de se connecter quand l’application est en mode hors connexion. Pour plus d'informations, voir [Procédure : Travailler hors connexion avec les Services d’Application cliente](http://msdn.microsoft.com/f792cb16-8520-4a0f-9dc9-07bfbc454e38). Cette option est activée par défaut.  
   
  **Imposer aux utilisateurs de se reconnecter chaque fois que le cookie du serveur expire**  
  Indique si des utilisateurs précédemment authentifiés font l’objet d’une nouvelle authentification automatique quand votre application accède aux service de rôles ou de profil et que le cookie d’authentification du serveur a expiré. Sélectionnez cette option pour refuser l’accès aux services d’application et exiger une nouvelle authentification après l’expiration du cookie. Elle est utile pour les applications déployées dans des emplacements publics afin de garantir que les utilisateurs qui quittent l’application en cours d’exécution ne restent pas authentifiés indéfiniment. Cette option est désactivée par défaut.  
@@ -59,7 +54,4 @@ Les services d’application cliente fournissent un accès simplifié aux servic
  [Services d’application cliente](http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e)   
  [Services, page du Concepteur de projet](../../ide/reference/services-page-project-designer.md)   
  [Comment : configurer les services d’application cliente](http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)   
- [Comment : travailler hors connexion avec les services d’application cliente](http://msdn.microsoft.com/en-us/f792cb16-8520-4a0f-9dc9-07bfbc454e38)
-
-
-
+ [Guide pratique pour Travailler hors connexion avec les Services d’Application cliente](http://msdn.microsoft.com/f792cb16-8520-4a0f-9dc9-07bfbc454e38)

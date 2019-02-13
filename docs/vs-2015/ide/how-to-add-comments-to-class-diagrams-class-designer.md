@@ -1,14 +1,9 @@
 ---
-title: Guide pratique pour ajouter des commentaires aux diagrammes de classes (Concepteur de classes) | Microsoft Docs
-ms.custom: ''
+title: 'Procédure : Ajouter des commentaires aux diagrammes de classes (Concepteur de classes) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.comment
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: d54005d5-a29d-4c4e-b153-feb6e84dd44f
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7fbf85c9a64c08aab69672b9e0a005745df44540
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 476d117b04b648c2893885700d94a157399cea15
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283008"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802420"
 ---
 # <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>Comment : ajouter des commentaires aux diagrammes de classes (Concepteur de classes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,6 +41,3 @@ Vous pouvez utiliser des zones de commentaire pour annoter les diagrammes de cla
  [Utilisation des diagrammes de classes (Concepteur de classes)](../ide/working-with-class-diagrams-class-designer.md)   
  [Utilisation des diagrammes de classes (Concepteur de classes)](../ide/working-with-class-diagrams-class-designer.md)   
  [Guide pratique pour personnaliser des diagrammes de classes (Concepteur de classes)](../ide/how-to-customize-class-diagrams-class-designer.md)
-
-
-

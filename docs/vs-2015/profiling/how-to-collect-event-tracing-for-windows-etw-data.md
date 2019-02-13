@@ -1,14 +1,9 @@
 ---
 title: Guide pratique pour collecter les données de suivi d’événements pour Windows (ETW) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.events
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: aa2261fe-d5f5-49fc-a171-d18842e1dc7d
 caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b840f320495437bbabb35290b81a87bc2db545d5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 74754feccc37e32164fe03b156cf059695e7fe66
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762504"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793059"
 ---
 # <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>Guide pratique pour collecter les données de suivi d’événements pour Windows (ETW)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,6 +44,3 @@ Le suivi d’événements pour Windows (ETW) est une fonctionnalité de traçage
   
 ## <a name="see-also"></a>Voir aussi  
  [Configuration de sessions de performances](../profiling/configuring-performance-sessions.md)
-
-
-

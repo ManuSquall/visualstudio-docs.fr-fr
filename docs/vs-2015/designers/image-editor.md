@@ -1,14 +1,9 @@
 ---
 title: Éditeur d’images | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.imageeditor
 - vs.graphics.imageeditor
@@ -16,13 +11,13 @@ ms.assetid: fc71d502-c548-4863-8afc-12a1d3ec90d4
 caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 748d58ec8446841242fdf7b5b990eebe90df5ba1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0bda440c463082d62568bcdfd0525eebe2a17c61
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185768"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768301"
 ---
 # <a name="image-editor"></a>Éditeur d’images
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -146,7 +141,7 @@ Ce document décrit comment utiliser l’éditeur d’images de [!INCLUDE[vsprvs
 ### <a name="working-with-transparency"></a>Utilisation de la transparence  
  Certains formats d’image, par exemple, DirectDraw Surface (.dds), prennent en charge la transparence. Vous pouvez utiliser la transparence de plusieurs façons, selon l’outil que vous utilisez. Pour spécifier le niveau de transparence pour une sélection de couleur, dans la fenêtre **Propriétés**, configurez le composant **A** (alpha) de la sélection de couleur. Voici comment les différents types d’outils contrôlent comment la transparence est appliquée :  
   
-|Tool|Description|  
+|Outil|Description|  
 |----------|-----------------|  
 |**Crayon**, **Pinceau**, **Aérographe**, **Ligne**, **Rectangle**, **Rectangle à coins arrondis**, **Ellipse**, **Texte**|Pour fusionner la sélection de couleur active avec l’image, dans la fenêtre **Propriétés**, développez le groupe de propriétés **Canaux**, cochez la case **Dessiner** sur le canal **Alpha** puis dessinez normalement.<br /><br /> Pour dessiner en utilisant la sélection de couleur active et laisser telle quelle la valeur alpha de l’image, décochez la case **Dessiner** du canal **Alpha** puis dessinez normalement.|  
 |**Remplissage**|Pour fusionner la sélection de couleur active avec l’image, choisissez simplement la zone à remplir.<br /><br /> Pour utiliser la sélection de couleur active, y compris la valeur du canal alpha, pour remplacer l’image, maintenez la touche Maj enfoncée puis choisissez la zone à remplir.|  
@@ -156,7 +151,7 @@ Ce document décrit comment utiliser l’éditeur d’images de [!INCLUDE[vsprvs
   
  Le tableau suivant décrit les propriétés d’une image.  
   
-|Propriété|Description|  
+|Property|Description|  
 |--------------|-----------------|  
 |Largeur|Largeur de l’image.|  
 |Hauteur |Hauteur de l’image.|  
@@ -219,7 +214,7 @@ Ce document décrit comment utiliser l’éditeur d’images de [!INCLUDE[vsprvs
   
  Le tableau suivant décrit les propriétés des outils.  
   
-|Outil|Properties|  
+|Outil|Propriétés|  
 |----------|----------------|  
 |Tous les outils et toutes les sélections|**Faire pivoter de**<br /> Définit la quantité de la rotation, en degrés, pour la sélection ou l’effet de l’outil dans le sens des aiguilles d’une montre.|  
 |**Crayon**, **Pinceau**, **Aérographe**, **Gomme**|**Épaisseur**<br /> Définit la taille de la zone affectée par l’outil.|  
@@ -279,6 +274,3 @@ Ce document décrit comment utiliser l’éditeur d’images de [!INCLUDE[vsprvs
 |[Utilisation de ressources 3D pour les jeux et les applications](../designers/working-with-3-d-assets-for-games-and-apps.md)|Fournit une vue d’ensemble des outils que vous pouvez utiliser dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour travailler avec des ressources graphiques, comme des textures et des images, des modèles 3D et des effets du nuanceur.|  
 |[Éditeur de modèle](../designers/model-editor.md)|Décrit l’utilisation de l’éditeur de modèle [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] avec les modèles 3D.|  
 |[Concepteur Shader](../designers/shader-designer.md)|Explique comment utiliser le concepteur Shader de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour travailler avec des nuanceurs.|
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: 'DA0039 : Taux très élevé de conflits de verrou | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.39
 - vs.performance.DA0039
@@ -17,18 +12,18 @@ ms.assetid: 5a9fc57d-9097-413b-af0c-8726b1a57048
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e226ad010845d6aa2419c9fe497334e93c5323f4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f5b994e14dc63d9fabe0c02b70f5df584c03067e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805539"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752407"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039 : taux très élevé de conflits de verrouillage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Pour obtenir la dernière documentation sur Visual Studio 2017, consultez [DA0039 : très élevé taux de conflits de verrou](https://docs.microsoft.com/visualstudio/profiling/da0039-very-high-rate-of-lock-contentions) sur docs.microsoft.com.  
+Pour obtenir la dernière documentation sur Visual Studio 2017, consultez [DA0039 : Très haute taux de conflits de verrou](https://docs.microsoft.com/visualstudio/profiling/da0039-very-high-rate-of-lock-contentions) sur docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -61,4 +56,3 @@ Pour obtenir la dernière documentation sur Visual Studio 2017, consultez [DA003
  Double-cliquez sur le message pour accéder à la vue [Marques](../profiling/marks-view.md) des données de profilage.  Recherchez la colonne **Verrous et threads CLR .NET\Taux de conflits/s**. Déterminez s’il existe des phases spécifiques de l’exécution du programme durant lesquelles les conflits de verrou sont plus nombreux.  
   
  Cette règle se déclenche uniquement lorsque vous n’utilisez pas la méthode de profilage d’accès concurrentiel. Le profilage d’accès concurrentiel est la meilleure méthode pour diagnostiquer les problèmes de performances liés aux conflits de verrou dans votre application. Collectez des données de profilage d’accès concurrentiel pour mieux comprendre le comportement de verrouillage de votre application. Vous pourrez notamment connaître les verrous qui présentent le plus de conflits, le temps de retard de l’exécution de thread causé par l’attente de verrous en conflit, ainsi que la section de code impliquée. Les profils d’accès concurrentiel collectent des données sur tous les conflits de verrou, y compris le comportement de verrouillage des installations Windows natives, des classes .NET Framework et de toute autre bibliothèque tierce à laquelle fait référence votre application. Pour plus d’informations sur le profilage d’accès concurrentiel à partir de l’IDE de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], consultez [Collecte de données de concurrence de threads et de processus](../profiling/collecting-thread-and-process-concurrency-data.md). Pour plus d’informations sur le profilage d’accès concurrentiel à partir de la ligne de commande, consultez la section **Utilisation de la méthode de concurrence pour collecter les données de conflit de ressources et d’activité du thread** de la rubrique [Utilisation de méthodes de profilage à partir de la ligne de commande](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md).
-

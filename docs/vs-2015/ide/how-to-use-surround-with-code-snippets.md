@@ -19,7 +19,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54799056"
 ---
-# <a name="how-to-use-surround-with-code-snippets"></a>Procédure : utiliser des extraits de code Entourer de
+# <a name="how-to-use-surround-with-code-snippets"></a>Comment : utiliser des extraits de code Entourer de
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les procédures suivantes expliquent comment utiliser des extraits de code Entourer de. Les extraits de code Entourer de sont disponibles de trois manières : via un raccourci clavier, via le menu Edition et via le menu contextuel.  

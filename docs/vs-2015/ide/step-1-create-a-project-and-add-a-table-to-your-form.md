@@ -1,25 +1,20 @@
 ---
-title: 'Étape 1 : créer un projet et ajouter une table au formulaire | Microsoft Docs'
-ms.custom: ''
+title: 'Étape 1 : Créez un projet et ajouter une Table à votre formulaire | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c49a3e9ac7c4a37c1c030d631667d90b274143cf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f716c279bce14a2a262578de090ed59290890f57
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934689"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776029"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Étape 1 : créer un projet et ajouter une table au formulaire
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,6 +94,3 @@ La première étape pour créer un jeu de combinaisons consiste à créer le pro
 -   Pour passer à l’étape suivante du didacticiel, consultez [Étape 2 : ajouter un objet aléatoire et une liste d’icônes](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).  
   
 -   Pour revenir à la rubrique de présentation, consultez [Didacticiel 3 : Créer un jeu de combinaisons](../ide/tutorial-3-create-a-matching-game.md).
-
-
-

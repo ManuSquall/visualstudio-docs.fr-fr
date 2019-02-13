@@ -1,14 +1,9 @@
 ---
 title: Intégration de Visual Studio (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, reference resolution
 - MSBuild, well-known target names
@@ -23,13 +18,13 @@ ms.assetid: 06cd6d7f-8dc1-4e49-8a72-cc9e331d7bca
 caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e2b9591ebff8708d0cd63825854c31cf297d32ce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 83f9bf8b0e427fd3e0357a5cf9e69d797dfc4782
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294851"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763308"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Intégration de Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,18 +45,18 @@ Visual Studio héberge[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] p
  Lorsque vous cliquez sur la commande **Générer** dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], la cible par défaut est exécutée dans le projet. Dans de nombreux cas, cette cible est également nommée `Build`. La sélection de la commande **Régénérer** ou **Nettoyer** entraîne une tentative d'exécution d'une cible du même nom dans le projet. Un clic sur **Publier** se traduit par l'exécution d'une cible nommée `PublishOnly` dans le projet.  
   
 ## <a name="configurations-and-platforms"></a>Configurations et plateformes  
- Les configurations sont représentées dans les projets [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] par des propriétés regroupées dans un élément `PropertyGroup` qui contient un attribut `Condition`. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] examine ces conditions pour créer une liste de configurations de projet et de plateformes à afficher. Pour réussir à extraire cette liste, les conditions doivent avoir un format similaire à ce qui suit :  
+ Les configurations sont représentées dans les projets [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] par des propriétés regroupées dans un élément `PropertyGroup` qui contient un attribut `Condition`. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] examine ces conditions pour créer une liste de configurations de projet et de plateformes à afficher. Pour réussir à extraire cette liste, les conditions doivent avoir un format similaire à ce qui suit :  
   
 ```  
 Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' "  
-Condition=" '$(Configuration)' == 'Release' "   
+Condition=" '$(Configuration)' == 'Release' "   
 Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' "  
 ```  
   
  À cette fin, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] examine les conditions définies sur les éléments `PropertyGroup`, `ItemGroup`, `Import`, de propriétés et item.  
   
 ## <a name="additional-build-actions"></a>Actions de génération supplémentaires  
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vous permet de modifier le nom du type d’élément d’un fichier dans un projet avec la propriété **Action de génération** de la fenêtre [Propriétés du fichier](http://msdn.microsoft.com/en-us/013c4aed-08d6-4dce-a124-ca807ca08959). Les noms des types d'éléments`Compile`, `EmbeddedResource`, `Content`et `None` sont toujours répertoriés dans ce menu ainsi que tous les autres noms de types d'éléments figurant déjà dans votre projet. Pour garantir la disponibilité permanente de tous les noms de types d'éléments personnalisés dans ce menu, vous pouvez ajouter les noms à un type d'élément nommé `AvailableItemName`. Par exemple, en ajoutant ce qui suit à votre fichier projet, le type personnalisé `JScript` est ajouté à ce menu pour tous les projets qui l'importent :  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vous permet de modifier le nom du type d’élément d’un fichier dans un projet avec la propriété **Action de génération** de la fenêtre [Propriétés du fichier](http://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959). Les noms des types d'éléments`Compile`, `EmbeddedResource`, `Content`et `None` sont toujours répertoriés dans ce menu ainsi que tous les autres noms de types d'éléments figurant déjà dans votre projet. Pour garantir la disponibilité permanente de tous les noms de types d'éléments personnalisés dans ce menu, vous pouvez ajouter les noms à un type d'élément nommé `AvailableItemName`. Par exemple, en ajoutant ce qui suit à votre fichier projet, le type personnalisé `JScript` est ajouté à ce menu pour tous les projets qui l'importent :  
   
 ```  
 <ItemGroup>  
@@ -166,7 +161,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
   
 -   Références d'assembly :  
   
-     Le système de projet appelle une cible avec le nom connu `ResolveAssemblyReferences`. Cette cible doit produire des éléments avec le nom de type d'élément `ReferencePath`. Chacun de ces éléments doit avoir une spécification d'élément (la valeur de l'attribut `Include` d'un élément) qui contient le chemin d'accès complet à la référence. Les éléments doivent avoir toutes les métadonnées des éléments d'entrée passés en plus des nouvelles métadonnées suivantes :  
+     Le système de projet appelle une cible avec le nom connu `ResolveAssemblyReferences`. Cette cible doit produire des éléments avec le nom de type d'élément `ReferencePath`. Chacun de ces éléments doit avoir une spécification d'élément (la valeur de l'attribut `Include` d'un élément) qui contient le chemin d'accès complet à la référence. Les éléments doivent avoir toutes les métadonnées des éléments d'entrée passés en plus des nouvelles métadonnées suivantes :  
   
     -   `CopyLocal`, indiquant si l'assembly doit être copié dans le dossier de sortie ; la valeur peut être true ou false.  
   
@@ -197,6 +192,3 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  [Target, élément (MSBuild)](../msbuild/target-element-msbuild.md)   
  [Tâche Csc](../msbuild/csc-task.md)   
  [Vbc, tâche](../msbuild/vbc-task.md)
-
-
-

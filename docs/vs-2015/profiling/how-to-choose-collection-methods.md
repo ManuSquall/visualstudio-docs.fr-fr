@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Choisir une méthode de collecte | Microsoft Docs'
+title: Guide pratique pour choisir une méthode de collecte | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,7 +20,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54792874"
 ---
-# <a name="how-to-choose-collection-methods"></a>Procédure : choisir des méthodes de collecte
+# <a name="how-to-choose-collection-methods"></a>Guide pratique pour choisir une méthode de collecte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les outils de profilage de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prennent en charge trois méthodes de collecte des données de performances : l’échantillonnage, l’instrumentation et l’accès concurrentiel. Vous pouvez également utiliser les méthodes d’instrumentation et d’échantillonnage pour collecter des données de durée de vie et d’allocation de la mémoire .NET.  
