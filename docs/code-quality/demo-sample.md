@@ -1,7 +1,6 @@
 ---
 title: Exemple de projet C++ pour l’analyse du code
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: sample
 helpviewer_keywords:
 - demo sample [Visual Studio ALM]
@@ -12,12 +11,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ad5a7d3b2c13b603fd3a9f523563c844dda8b67d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ad28cae5e548a35e0166e1d8ed451450264241f7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852503"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943504"
 ---
 # <a name="sample-c-project-for-code-analysis"></a>Exemple de projet C++ pour l’analyse du code
 
@@ -53,7 +52,7 @@ Les procédures fournissent également le code pour les fichiers d’en-tête et
 
 2. Développez **Propriétés de configuration**, puis cliquez sur **Général**.
 
-3. Dans la liste **Général**, sélectionnez le texte dans la colonne en regard d’**Extension cible**, puis tapez **.lib**.
+3. Dans la liste **Général**, sélectionnez le texte dans la colonne en regard d’**Extension cible** et tapez **.lib**.
 
 4. Dans **Paramètres par défaut du projet** , cliquez sur la colonne en regard de **Type de configuration**, puis cliquez sur **Bibliothèque statique (.lib)**.
 

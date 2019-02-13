@@ -3,7 +3,6 @@ title: Introduction à l’édition pour les développeurs C#
 description: Cette présentation de 10 minutes de l’éditeur de code de Visual Studio montre en quoi Visual Studio facilite l’écriture, la navigation et la compréhension du code C#.
 ms.custom: seodec18, get-started
 ms.date: 11/20/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: tutorial
 author: gewarren
@@ -13,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: dc0e143b4ff84422a344caae1e50e88f47af5eeb
-ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
+ms.openlocfilehash: ebcf76f07eadaee6402facb4fa62a3ac309ebbac
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55424562"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933156"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Apprendre à utiliser l’éditeur de code
 
