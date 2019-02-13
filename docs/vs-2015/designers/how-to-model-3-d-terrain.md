@@ -68,7 +68,7 @@ Ce document montre comment utiliser l’éditeur de modèle pour créer un modè
   
    ![Scène 3D illustrant un modèle de terrain](../designers/media/digit-terrain-model.png "Digit-Terrain-Model")  
   
-   Vous pouvez utiliser ce modèle de terrain pour montrer l’effet du nuanceur de dégradé décrit dans [Guide pratique pour créer un nuanceur de géométrie dégradé](../designers/how-to-create-a-geometry-based-gradient-shader.md).  
+   Vous pouvez utiliser ce modèle de terrain pour montrer l’effet du nuanceur de dégradé décrit dans l’article [Comment : créer un nuanceur de géométrie dégradé](../designers/how-to-create-a-geometry-based-gradient-shader.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Éditeur de modèle](../designers/model-editor.md)

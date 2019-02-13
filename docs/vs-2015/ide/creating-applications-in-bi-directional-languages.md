@@ -1,14 +1,9 @@
 ---
 title: Création d’applications en langues bidirectionnelles | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Hebrew character display, creating applications
 - bi-directional language support, about bi-directional language support
@@ -17,13 +12,13 @@ ms.assetid: b56f9795-ed8d-4452-9d49-8ca0b0145d86
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 32acd2a58c2482de6fdd7ed10c99a023d41a8cb4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 340dc798cdff3276df78b6cbf13065f7e769cb23
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248493"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763451"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Création d'applications en langues bidirectionnelles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +79,7 @@ Vous pouvez utiliser Visual Studio pour créer des applications qui affichent co
 -   Code et texte littéral. Dans l’éditeur de code (qui est également l’éditeur de texte), vous pouvez utiliser l’arabe ou l’hébreu pour nommer des classes, des fonctions, des variables, des propriétés, des littéraux de chaîne, des attributs; etc. Toutefois, l’éditeur ne prend pas en charge l’ordre de lecture de droite à gauche et le texte commence toujours à la marge de gauche.  
   
     > [!TIP]
-    >  Il est recommandé de placer des littéraux de chaîne dans les fichiers de ressources au lieu de les coder en dur dans vos programmes. Pour plus d’informations, consultez [Procédure pas à pas : localisation de Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5).  
+    >  Il est recommandé de placer des littéraux de chaîne dans les fichiers de ressources au lieu de les coder en dur dans vos programmes. Pour plus d’informations, consultez [Procédure pas à pas : Localisation de Windows Forms](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5).  
   
     > [!NOTE]
     >  Vous devez être cohérent dans la façon dont vous faites référence aux objets nommés dans ces langues. Par exemple, si vous utilisez des signes kachidé pour nommer une variable en arabe, vous devrez toujours utiliser des signes kachidé dans vos références à cette variable, sinon une erreur se produira.  
@@ -96,4 +91,3 @@ Vous pouvez utiliser Visual Studio pour créer des applications qui affichent co
  [Prise en charge bidirectionnelle pour les applications web ASP.NET](http://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03)   
  [Globalisation d’applications](../ide/globalizing-applications.md)   
  [Localisation d’applications](../ide/localizing-applications.md)
-

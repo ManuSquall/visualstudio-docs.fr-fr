@@ -16,7 +16,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54788204"
 ---
-# <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Procédure : Suivre votre code en personnalisant la barre de défilement
+# <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Comment : suivre votre code en personnalisant la barre de défilement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quand vous travaillez sur de longs fichiers de code, il peut être difficile de tout garder en tête. Vous pouvez personnaliser la barre de défilement de la fenêtre de code pour avoir une vue générale de ce qui se produit dans votre code.  

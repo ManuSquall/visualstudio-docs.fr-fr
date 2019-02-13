@@ -1,14 +1,9 @@
 ---
 title: Gestion des outils externes | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools
 helpviewer_keywords:
@@ -61,13 +56,13 @@ ms.assetid: f382fd40-a98f-4934-8c9a-5aeae881acde
 caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bf8e00635ff76e9e4ccfc4cbedbafabe8b0718dd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 34508502d28df379e05623116b9659848a84b6bc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244482"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763321"
 ---
 # <a name="managing-external-tools"></a>Gestion des outils externes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,14 +78,14 @@ Vous pouvez appeler des outils externes à partir de Visual Studio. Certains out
   
 3.  ATL/MFC Trace Tool : montre des messages de trace de débogage dans les sources ATL et MFC.  
   
-4.  PreEmptive Dotfuscator and Analytics : protège les programmes .NET contre l'ingénierie à rebours.  
+4.  PreEmptive Dotfuscator et Analytique : Protège les programmes .NET contre l’ingénierie à rebours.  
   
-5.  SPY++ : affiche les processus, threads, fenêtres, et messages de fenêtre graphiquement.  
+5.  SPY++ Affiche les processus, threads, windows et messages de fenêtre graphiquement.  
   
-6.  Éditeur de configuration de service WCF : vous permet de créer et de modifier les paramètres de configuration des services WCF.  
+6.  Éditeur de configuration de service &WCF Vous permet de créer et modifier les paramètres de configuration pour les services WCF.  
   
 > [!WARNING]
->  Il est possible qu'une liste différente d'outils externes s'affiche, en fonction de l'édition de Visual Studio que vous avez installée et du profil de paramètres que vous avez appliqué. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Il est possible qu'une liste différente d'outils externes s'affiche, en fonction de l'édition de Visual Studio que vous avez installée et du profil de paramètres que vous avez appliqué. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="adding-new-tools"></a>Ajout de nouveaux outils  
  Vous pouvez ajouter un outil externe au menu **Outils**. Ouvrez la boîte de dialogue **Outils externes**, cliquez sur **Ajouter**, puis entrez les informations. Par exemple, l'entrée suivante peut provoquer l'ouverture de l'Explorateur Windows dans le répertoire du fichier qui est actuellement ouvert dans Visual Studio :  
@@ -128,11 +123,3 @@ Vous pouvez appeler des outils externes à partir de Visual Studio. Certains out
   
 ## <a name="see-also"></a>Voir aussi  
  [Outils de génération C/C++](http://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)
-
-
-
-
-
-
-
-

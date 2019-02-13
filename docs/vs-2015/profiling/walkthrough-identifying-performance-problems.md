@@ -21,7 +21,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54754816"
 ---
-# <a name="walkthrough-identifying-performance-problems"></a>Procédure pas à pas : identification des problèmes de performances
+# <a name="walkthrough-identifying-performance-problems"></a>Procédure pas à pas : Identification des problèmes de performances
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette procédure pas à pas montre comment profiler une application pour identifier les problèmes de performances.  

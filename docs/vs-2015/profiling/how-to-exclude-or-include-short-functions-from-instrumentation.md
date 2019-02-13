@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Exclure ou inclure les fonctions courtes de l’instrumentation | Microsoft Docs'
+title: Guide pratique pour exclure ou inclure les fonctions courtes de l’instrumentation | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,7 +20,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54801659"
 ---
-# <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>Procédure : exclure ou inclure les fonctions courtes de l’instrumentation
+# <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>Guide pratique pour exclure ou inclure les fonctions courtes de l’instrumentation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Par défaut, les outils de profilage excluent les *petites fonctions* de l’instrumentation. Les petites fonctions sont des fonctions courtes qui n’effectuent pas d’appels de fonction. L’exclusion de ces petites fonctions permet de réduire la surcharge d’instrumentation, et donc d’accélérer la vitesse d’instrumentation. L’exclusion des petites fonctions a également pour effet de réduire la taille du fichier de données de profilage de performances (.vsp) et de raccourcir le temps nécessaire à l’analyse. Si les petites fonctions sont exclues, le temps qui leur est consacré sera soustrait du temps exclusif et inclusif de leurs fonctions parents. Les petites fonctions peuvent être exclues ou incluses dans l’instrumentation, comme le décrit la procédure suivante.  

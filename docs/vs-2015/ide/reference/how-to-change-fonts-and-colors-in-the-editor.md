@@ -1,14 +1,9 @@
 ---
-title: Guide pratique pour modifier les polices et les couleurs utilisées dans l’éditeur | Microsoft Docs
-ms.custom: ''
+title: 'Procédure : Modifier les polices et couleurs utilisées dans l’éditeur | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - editors, fonts
 - text, color
@@ -19,13 +14,13 @@ ms.assetid: 3f7629d1-1cdf-4046-9a31-0632517f234d
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7fb415c68884b2486d0bd45559530f1a36c90bfc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9d3b9957d9eb08c8e6398866fa4b4dd51dbcea70
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229311"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799106"
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Guide pratique pour modifier les polices et les couleurs utilisées dans l’éditeur
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ Vous pouvez modifier le type de police par défaut, ajuster la taille de police 
 -   Les options **Premier plan de l’élément**, **Arrière-plan de l’élément** et **Gras** peuvent être définies pour chaque type d’élément de texte. Par exemple, si vous modifiez des couleurs et que vous sélectionnez **Gras** pour les éléments **Commentaire** et **Signets**, les autres types d’éléments de texte ne sont pas affectés.  
   
 > [!NOTE]
->  Les boîtes de dialogue et les commandes de menu qui s’affichent peuvent être différentes de celles décrites dans l’**aide**, en fonction de vos paramètres actifs ou de l’édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Les boîtes de dialogue et les commandes de menu qui s’affichent peuvent être différentes de celles décrites dans l’**aide**, en fonction de vos paramètres actifs ou de l’édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-change-the-default-font-face-size-and-colors"></a>Pour modifier le type, la taille et les couleurs de police par défaut  
   
@@ -64,6 +59,3 @@ Vous pouvez modifier le type de police par défaut, ajuster la taille de police 
  [Boîte de dialogue Options de l’éditeur de texte](../../ide/reference/text-editor-options-dialog-box.md)   
  [Écriture de code](../../ide/writing-code-in-the-code-and-text-editor.md)   
  [Guide pratique pour modifier les polices et les couleurs dans Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
-
-
-

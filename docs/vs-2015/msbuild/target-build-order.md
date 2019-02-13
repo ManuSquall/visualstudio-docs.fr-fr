@@ -1,27 +1,22 @@
 ---
 title: Ordre de génération des cibles | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, build order
 ms.assetid: f4a26339-9f9a-497a-9aa6-0797183d450d
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a0bd5eb8dc4c99d05d8c31aa05914327a0ab7f02
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fc12ba16a52546b26a7941734caa8c6fca8419b1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925875"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764859"
 ---
 # <a name="target-build-order"></a>Ordre de génération des cibles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -129,6 +124,3 @@ Les cibles doivent être classées si l’entrée d’une cible dépend de la so
   
 ## <a name="see-also"></a>Voir aussi  
  [Targets (Cibles MSBuild)](../msbuild/msbuild-targets.md)
-
-
-

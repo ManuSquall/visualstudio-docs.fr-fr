@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Afficher les avertissements liés aux performances | Microsoft Docs'
+title: Guide pratique pour afficher les avertissements liés aux performances | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,7 +16,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54784610"
 ---
-# <a name="how-to-view-performance-warnings"></a>Procédure : afficher les avertissements liés aux performances
+# <a name="how-to-view-performance-warnings"></a>Comment : afficher les avertissements liés aux performances
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les avertissements de performance des Outils de profilage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] signalent les problèmes qui surviennent dans une application profilée et qui peuvent ralentir l’exécution du programme. Les avertissements peuvent également vous informer que vous pouvez changer de méthode de collecte pour collecter des données plus utiles. Les avertissements de performance sont générés automatiquement dans une session de profilage et s’affichent dans la fenêtre **Liste d’erreurs** quand vous ouvrez un fichier de données de profilage dans l’IDE [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  

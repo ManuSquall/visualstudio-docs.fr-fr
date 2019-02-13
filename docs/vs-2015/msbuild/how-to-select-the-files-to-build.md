@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Sélectionner des fichiers dans une build | Microsoft Docs'
+title: Guide pratique pour sélectionner des fichiers dans une build | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -20,7 +20,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54798902"
 ---
-# <a name="how-to-select-the-files-to-build"></a>Procédure : Sélectionner des fichiers dans une build
+# <a name="how-to-select-the-files-to-build"></a>Guide pratique pour sélectionner des fichiers dans une build
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -174,5 +174,5 @@ Quand vous générez un projet contenant plusieurs fichiers, vous pouvez lister 
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour exclure des fichiers de la build](../msbuild/how-to-exclude-files-from-the-build.md)   
- [Éléments](../msbuild/msbuild-items.md)
+ [Comment : exclure des fichiers de la génération](../msbuild/how-to-exclude-files-from-the-build.md)   
+ [Éléments MSBuild](../msbuild/msbuild-items.md)
