@@ -18,55 +18,54 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 684f55b4b660c48c4186755737b3bc64c6e62788
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ea5dc0d2516ab7cf3c4e26b5e8f39328eabe47cb
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042671"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853441"
 ---
 # <a name="createproperty-task"></a>CreateProperty (tâche)
-Remplit les propriétés avec les valeurs passées. Ceci permet la copie des valeurs d’une propriété ou d’une chaîne vers une autre.  
+Remplit les propriétés avec les valeurs passées. Ceci permet la copie des valeurs d’une propriété ou d’une chaîne vers une autre.
 
-## <a name="attributes"></a>Attributs  
- Le tableau ci-dessous décrit les paramètres de la tâche `CreateProperty` .  
-
+## <a name="attributes"></a>Attributs
+Le tableau ci-dessous décrit les paramètres de la tâche `CreateProperty` .
 
 | Paramètre | Description |
 |------------------| - |
 | `Value` | Paramètre de sortie `String` facultatif.<br /><br /> Spécifie la valeur à copier dans la nouvelle propriété. |
 | `ValueSetByTask` | Paramètre de sortie `String` facultatif.<br /><br /> Contient la même valeur que le paramètre `Value`. Utilisez ce paramètre seulement quand vous voulez éviter que la propriété de sortie soit définie par [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] quand il ignore la cible englobante en raison du fait que les sorties sont à jour. |
 
-## <a name="remarks"></a>Notes  
- En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).  
+## <a name="remarks"></a>Notes
+En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 
-## <a name="example"></a>Exemple  
- L’exemple suivant utilise la tâche `CreateProperty` pour créer la propriété `NewFile` en utilisant la combinaison des valeurs des propriétés `SourceFilename` et `SourceFileExtension`.  
+## <a name="example"></a>Exemple
+L’exemple suivant utilise la tâche `CreateProperty` pour créer la propriété `NewFile` en utilisant la combinaison des valeurs des propriétés `SourceFilename` et `SourceFileExtension`.
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-    <PropertyGroup>  
-        <SourceFilename>Module1</SourceFilename>  
-        <SourceFileExtension>vb</SourceFileExtension>  
-    </PropertyGroup>  
+    <PropertyGroup>
+        <SourceFilename>Module1</SourceFilename>
+        <SourceFileExtension>vb</SourceFileExtension>
+    </PropertyGroup>
 
-    <Target Name="CreateProperties">  
+    <Target Name="CreateProperties">
 
-        <CreateProperty  
-            Value="$(SourceFilename).$(SourceFileExtension)">  
-            <Output  
-                TaskParameter="Value"  
-                PropertyName="NewFile" />  
-        </CreateProperty>  
+        <CreateProperty
+            Value="$(SourceFilename).$(SourceFileExtension)">
+            <Output
+                TaskParameter="Value"
+                PropertyName="NewFile" />
+        </CreateProperty>
 
-    </Target>  
+    </Target>
 
-</Project>  
-```  
+</Project>
+```
 
- Après l’exécution du projet, la valeur de la propriété `NewFile` est *Module1.vb*.  
+Après l’exécution du projet, la valeur de la propriété `NewFile` est *Module1.vb*.
 
-## <a name="see-also"></a>Voir aussi  
- [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)   
- [Tâches](../msbuild/msbuild-tasks.md)
+## <a name="see-also"></a>Voir aussi
+[Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)  
+[Tâches](../msbuild/msbuild-tasks.md)

@@ -4,7 +4,6 @@ titleSuffix: ''
 description: En savoir plus sur l’utilisation de Visual Studio sur une machine virtuelle Azure
 ms.date: 09/12/2018
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - azure services
@@ -16,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 415e108da2187b2e3b5057da6b9a3850bd3eb3ca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a1dbda84c1e8eee48c4a442e922c1852496155ac
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54926746"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952903"
 ---
 # <a id="top"> </a> Images Visual Studio sur Azure
 
@@ -37,8 +36,8 @@ Sur la Place de marché Microsoft Azure, vous trouverez des images des versions 
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
 |    Visual Studio 2019 : Préversion (préversion 2)                   |           Entreprise         | Version 16.0.0 Préversion 2 |
 | Visual Studio 2017 : Dernière version (version 15.9)                    |    Enterprise, Community     |      Version 15.9.4      |
-|         Visual Studio 2017 : RTW                              |    Enterprise, Community     |      Version 15.0.20     |
-|   Visual Studio 2015 : Dernière version (Mise à jour 3)                      |    Enterprise, Community     |  Version 14.0.25431.01   |
+|         Visual Studio 2017 : RTW                              |    Enterprise, Community     |      Version 15.0.20     |
+|   Visual Studio 2015 : Dernière version (Mise à jour 3)                      |    Enterprise, Community     |  Version 14.0.25431.01   |
 |         Visual Studio 2015 : RTW                              |             Aucun.             | (Expirée pour la maintenance)  |
 
 > [!NOTE]

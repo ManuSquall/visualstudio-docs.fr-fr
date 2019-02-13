@@ -2,7 +2,6 @@
 title: Vue d’ensemble de Visual Studio pour les développeurs Python
 titleSuffix: ''
 ms.date: 12/14/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 97b48daf123ea39cd00070fa95c4b488da9d9163
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 666f0df2e0b210b41155a5c1cd082e969d029e4e
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54952949"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155849"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Bienvenue dans l’IDE Visual Studio | Python
 
@@ -136,4 +135,3 @@ Explorez plus en profondeur Python dans Visual Studio en suivant l’un des guid
 - Découvrir d’[autres fonctionnalités de Visual Studio](../ide/advanced-feature-overview.md)
 - Visiter [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
 - Lire le [blog Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)
-- Accéder aux cours Visual Studio gratuits sur [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033)

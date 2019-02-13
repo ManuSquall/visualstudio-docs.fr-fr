@@ -3,7 +3,6 @@ title: Tutoriel Python dans Visual Studio - étape 2, écrire et exécuter du 
 titleSuffix: ''
 description: Étape 2 d’une procédure pas à pas portant sur les fonctionnalités de Python dans Visual Studio qui explique comment modifier du code et exécuter un projet.
 ms.date: 01/28/2019
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6aec7825387c2eda58c76bf885bcd29b0b7bdd1b
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: 427aa1e0821d38488b626656a06e8952c381053e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231777"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918102"
 ---
 # <a name="step-2-write-and-run-code"></a>Étape 2 : Écrire et exécuter du code
 

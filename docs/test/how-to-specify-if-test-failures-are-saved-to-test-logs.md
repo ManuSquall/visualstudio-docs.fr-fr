@@ -9,13 +9,12 @@ ms.assetid: 08a7fe98-a7f7-4b8d-94a3-ec82b65a2aaf
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: f35d4488add1f66ef8ee57d3a2b1125c4284ef9b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: de19f24040d285392c2ed2a69776c8ecf39c9f36
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932556"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910790"
 ---
 # <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>Procédure : spécifier si les échecs de test doivent être enregistrés dans les journaux des tests à l’aide de l’éditeur de test de charge
 

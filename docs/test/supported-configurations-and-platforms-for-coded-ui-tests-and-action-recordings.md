@@ -1,7 +1,6 @@
 ---
 title: Configurations et plateformes pour les tests codés de l’interface utilisateur
 ms.date: 2015-10-04
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - coded UI tests
@@ -10,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e8ac4d3eaf1111b0d8461edf7899f443dc4f8fb0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 65e16a52816630242c31584731572e828fa4a346
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54990353"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922327"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Plateformes et configurations prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions
 

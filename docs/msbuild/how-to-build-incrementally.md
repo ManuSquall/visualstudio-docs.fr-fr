@@ -12,99 +12,99 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5866ae345aaa8b28cdc0ff448500104ba946f504
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e1f4845fe01e5b197126b6da73c1439ff08be482
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55010140"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853899"
 ---
 # <a name="how-to-build-incrementally"></a>Procédure : Générer de façon incrémentielle
-Quand vous générez un projet volumineux, il est important de ne pas regénérer les composants précédemment générés qui sont encore à jour. Si toutes les cibles sont générées à chaque fois, la génération de builds prend beaucoup de temps. Pour activer les builds incrémentielles (builds dans lesquelles seules les cibles obsolètes ou n’ayant pas été déjà générées sont regénérées), [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) peut comparer les horodateurs des fichiers d’entrée avec ceux des fichiers de sortie et déterminer s’il faut ignorer, générer ou regénérer partiellement une cible. Toutefois, il doit exister un mappage un-à-un entre les entrées et les sorties. Vous pouvez utiliser des transformations pour permettre aux cibles d’identifier ce mappage direct. Pour plus d’informations sur les transformations, consultez [Transformations](../msbuild/msbuild-transforms.md).  
-  
-## <a name="specify-inputs-and-outputs"></a>Spécifier des entrées et des sorties  
- Une cible peut être générée de façon incrémentielle si les entrées et les sorties sont spécifiées dans le fichier projet.  
-  
-#### <a name="to-specify-inputs-and-outputs-for-a-target"></a>Pour spécifier les entrées et les sorties d’une cible  
-  
-- Utilisez les attributs `Inputs` et `Outputs` de l’élément `Target`. Par exemple :  
-  
-  ```xml  
-  <Target Name="Build"  
-      Inputs="@(CSFile)"  
-      Outputs="hello.exe">  
-  ```  
-  
-  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] peut comparer les horodateurs des fichiers d’entrée avec ceux des fichiers de sortie et déterminer s’il faut ignorer, générer ou regénérer partiellement une cible. Dans l’exemple suivant, si un fichier de la liste d’éléments `@(CSFile)` est plus récent que le fichier *hello.exe*, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] exécute la cible ; sinon, il l’ignore :  
-  
-```xml  
-<Target Name="Build"   
-    Inputs="@(CSFile)"   
-    Outputs="hello.exe">  
-  
-    <Csc  
-        Sources="@(CSFile)"   
-        OutputAssembly="hello.exe"/>  
-</Target>  
-```  
-  
- Quand les entrées et les sorties sont spécifiées dans une cible, chaque sortie est mappée avec une seule entrée ou il n’existe pas de mappage direct entre les sorties et les entrées. Dans la [tâche Csc](../msbuild/csc-task.md) précédente, par exemple, la sortie *hello.exe* ne peut pas être mappée à une entrée unique. Elle dépend de toutes les entrées.  
-  
-> [!NOTE]
->  Une cible dans laquelle il n’existe pas de mappage direct entre les entrées et les sorties est toujours générée plus fréquemment qu’une cible dans laquelle chaque sortie ne peut être mappée qu’avec une seule entrée, car [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ne peut pas déterminer les sorties qui doivent être regénérées si certaines des entrées ont changé.  
-  
- Les tâches dans lesquelles vous pouvez identifier un mappage direct entre les sorties et les entrées, comme la [tâche LC](../msbuild/lc-task.md), sont mieux adaptées aux builds incrémentielles, à l’inverse des tâches telles que [Csc](../msbuild/csc-task.md) et [Vbc](../msbuild/vbc-task.md), qui produisent un seul assembly de sortie à partir de plusieurs entrées.  
-  
-## <a name="example"></a>Exemple  
- L’exemple suivant utilise un projet qui génère des fichiers d’aide pour un système d’aide éventuel. Le projet fonctionne en convertissant les fichiers sources *.txt* en fichiers *.content* intermédiaires, qui sont ensuite combinés avec les fichiers de métadonnées XML pour produire le fichier *.help* final utilisé par le système d’aide. Le projet utilise les tâches hypothétiques suivantes :  
-  
--   `GenerateContentFiles`: convertit des fichiers *.txt* en fichiers *.content*.  
-  
--   `BuildHelp`: combine des fichiers *.content* et des fichiers de métadonnées XML pour générer le fichier *.help* final.  
-  
+Quand vous générez un projet volumineux, il est important de ne pas regénérer les composants précédemment générés qui sont encore à jour. Si toutes les cibles sont générées à chaque fois, la génération de builds prend beaucoup de temps. Pour activer les builds incrémentielles (builds dans lesquelles seules les cibles obsolètes ou n’ayant pas été déjà générées sont regénérées), [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) peut comparer les horodateurs des fichiers d’entrée avec ceux des fichiers de sortie et déterminer s’il faut ignorer, générer ou regénérer partiellement une cible. Toutefois, il doit exister un mappage un-à-un entre les entrées et les sorties. Vous pouvez utiliser des transformations pour permettre aux cibles d’identifier ce mappage direct. Pour plus d’informations sur les transformations, consultez [Transformations](../msbuild/msbuild-transforms.md).
 
- Le projet utilise les transformations pour créer un mappage un-à-un entre les entrées et les sorties de la tâche `GenerateContentFiles`. Pour plus d’informations, consultez l’article [Transforms (Transformations MSBuild)](../msbuild/msbuild-transforms.md). De même, l’élément `Output` est défini de façon à utiliser automatiquement les sorties de la tâche `GenerateContentFiles` comme entrées de la tâche `BuildHelp`.  
-  
- Ce fichier projet contient à la fois les cibles `Convert` et `Build`. Les tâches `GenerateContentFiles` et `BuildHelp` sont placées respectivement dans les cibles `Convert` et `Build` pour que chaque cible puisse être générée de façon incrémentielle. En utilisant l’élément `Output`, les sorties de la tâche `GenerateContentFiles` sont placées dans la liste d’éléments `ContentFile`, où elles peuvent être utilisées comme entrées pour la tâche `BuildHelp`. En utilisant l’élément `Output` de cette façon, vous pouvez utiliser automatiquement les sorties d’une tâche comme entrées d’une autre tâche. Vous n’avez donc pas à répertorier manuellement les éléments ou les listes d’éléments dans chaque tâche.  
-  
+## <a name="specify-inputs-and-outputs"></a>Spécifier des entrées et des sorties
+Une cible peut être générée de façon incrémentielle si les entrées et les sorties sont spécifiées dans le fichier projet.
+
+#### <a name="to-specify-inputs-and-outputs-for-a-target"></a>Pour spécifier les entrées et les sorties d’une cible
+
+- Utilisez les attributs `Inputs` et `Outputs` de l’élément `Target`. Par exemple :
+
+  ```xml
+  <Target Name="Build"
+      Inputs="@(CSFile)"
+      Outputs="hello.exe">
+  ```
+
+  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] peut comparer les horodateurs des fichiers d’entrée avec ceux des fichiers de sortie et déterminer s’il faut ignorer, générer ou regénérer partiellement une cible. Dans l’exemple suivant, si un fichier de la liste d’éléments `@(CSFile)` est plus récent que le fichier *hello.exe*, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] exécute la cible ; sinon, il l’ignore :
+
+```xml
+<Target Name="Build" 
+    Inputs="@(CSFile)" 
+    Outputs="hello.exe">
+
+    <Csc
+        Sources="@(CSFile)" 
+        OutputAssembly="hello.exe"/>
+</Target>
+```
+
+Quand les entrées et les sorties sont spécifiées dans une cible, chaque sortie est mappée avec une seule entrée ou il n’existe pas de mappage direct entre les sorties et les entrées. Dans la [tâche Csc](../msbuild/csc-task.md) précédente, par exemple, la sortie *hello.exe* ne peut pas être mappée à une entrée unique. Elle dépend de toutes les entrées.
+
 > [!NOTE]
->  Bien que la cible `GenerateContentFiles` puisse être générée de façon incrémentielle, toutes les sorties de cette cible sont toujours exigées comme entrées de la cible `BuildHelp`. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fournit automatiquement toutes les sorties d’une cible comme entrées d’une autre cible quand vous utilisez l’élément `Output`.  
-  
-```xml  
-<Project DefaultTargets="Build"  
-    xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >  
-  
-    <ItemGroup>  
-        <TXTFile Include="*.txt"/>  
-        <XMLFiles Include="\metadata\*.xml"/>  
-    </ItemGroup>  
-  
-    <Target Name = "Convert"  
-        Inputs="@(TXTFile)"  
-        Outputs="@(TXTFile->'%(Filename).content')">  
-  
-        <GenerateContentFiles  
-            Sources = "@(TXTFile)">  
-            <Output TaskParameter = "OutputContentFiles"  
-                ItemName = "ContentFiles"/>  
-        </GenerateContentFiles>  
-    </Target>  
-  
-    <Target Name = "Build" DependsOnTargets = "Convert"  
-        Inputs="@(ContentFiles);@(XMLFiles)"  
-        Outputs="$(MSBuildProjectName).help">  
-  
-        <BuildHelp  
-            ContentFiles = "@(ContentFiles)"  
-            MetadataFiles = "@(XMLFiles)"  
-            OutputFileName = "$(MSBuildProjectName).help"/>  
-    </Target>  
-</Project>  
-```  
-  
-## <a name="see-also"></a>Voir aussi  
- [Targets (Cibles MSBuild)](../msbuild/msbuild-targets.md)   
- [Target, élément (MSBuild)](../msbuild/target-element-msbuild.md)   
- [Transformations](../msbuild/msbuild-transforms.md)   
- [Csc, tâche](../msbuild/csc-task.md)   
- [Vbc, tâche](../msbuild/vbc-task.md)
+> Une cible dans laquelle il n’existe pas de mappage direct entre les entrées et les sorties est toujours générée plus fréquemment qu’une cible dans laquelle chaque sortie ne peut être mappée qu’avec une seule entrée, car [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ne peut pas déterminer les sorties qui doivent être regénérées si certaines des entrées ont changé.
+
+Les tâches dans lesquelles vous pouvez identifier un mappage direct entre les sorties et les entrées, comme la [tâche LC](../msbuild/lc-task.md), sont mieux adaptées aux builds incrémentielles, à l’inverse des tâches telles que [Csc](../msbuild/csc-task.md) et [Vbc](../msbuild/vbc-task.md), qui produisent un seul assembly de sortie à partir de plusieurs entrées.
+
+## <a name="example"></a>Exemple
+L’exemple suivant utilise un projet qui génère des fichiers d’aide pour un système d’aide éventuel. Le projet fonctionne en convertissant les fichiers sources *.txt* en fichiers *.content* intermédiaires, qui sont ensuite combinés avec les fichiers de métadonnées XML pour produire le fichier *.help* final utilisé par le système d’aide. Le projet utilise les tâches hypothétiques suivantes :
+
+- `GenerateContentFiles`: convertit des fichiers *.txt* en fichiers *.content*.
+
+- `BuildHelp`: combine des fichiers *.content* et des fichiers de métadonnées XML pour générer le fichier *.help* final.
+
+
+Le projet utilise les transformations pour créer un mappage un-à-un entre les entrées et les sorties de la tâche `GenerateContentFiles`. Pour plus d’informations, consultez l’article [Transforms (Transformations MSBuild)](../msbuild/msbuild-transforms.md). De même, l’élément `Output` est défini de façon à utiliser automatiquement les sorties de la tâche `GenerateContentFiles` comme entrées de la tâche `BuildHelp`.
+
+Ce fichier projet contient à la fois les cibles `Convert` et `Build`. Les tâches `GenerateContentFiles` et `BuildHelp` sont placées respectivement dans les cibles `Convert` et `Build` pour que chaque cible puisse être générée de façon incrémentielle. En utilisant l’élément `Output`, les sorties de la tâche `GenerateContentFiles` sont placées dans la liste d’éléments `ContentFile`, où elles peuvent être utilisées comme entrées pour la tâche `BuildHelp`. En utilisant l’élément `Output` de cette façon, vous pouvez utiliser automatiquement les sorties d’une tâche comme entrées d’une autre tâche. Vous n’avez donc pas à répertorier manuellement les éléments ou les listes d’éléments dans chaque tâche.
+
+> [!NOTE]
+> Bien que la cible `GenerateContentFiles` puisse être générée de façon incrémentielle, toutes les sorties de cette cible sont toujours exigées comme entrées de la cible `BuildHelp`. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fournit automatiquement toutes les sorties d’une cible comme entrées d’une autre cible quand vous utilisez l’élément `Output`.
+
+```xml
+<Project DefaultTargets="Build"
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >
+
+    <ItemGroup>
+        <TXTFile Include="*.txt"/>
+        <XMLFiles Include="\metadata\*.xml"/>
+    </ItemGroup>
+
+    <Target Name = "Convert"
+        Inputs="@(TXTFile)"
+        Outputs="@(TXTFile->'%(Filename).content')">
+
+        <GenerateContentFiles
+            Sources = "@(TXTFile)">
+            <Output TaskParameter = "OutputContentFiles"
+                ItemName = "ContentFiles"/>
+        </GenerateContentFiles>
+    </Target>
+
+    <Target Name = "Build" DependsOnTargets = "Convert"
+        Inputs="@(ContentFiles);@(XMLFiles)"
+        Outputs="$(MSBuildProjectName).help">
+
+        <BuildHelp
+            ContentFiles = "@(ContentFiles)"
+            MetadataFiles = "@(XMLFiles)"
+            OutputFileName = "$(MSBuildProjectName).help"/>
+    </Target>
+</Project>
+```
+
+## <a name="see-also"></a>Voir aussi
+[Cibles](../msbuild/msbuild-targets.md)  
+[Target, élément (MSBuild)](../msbuild/target-element-msbuild.md)  
+[Transformations](../msbuild/msbuild-transforms.md)  
+[Tâche Csc](../msbuild/csc-task.md)  
+[Vbc, tâche](../msbuild/vbc-task.md)

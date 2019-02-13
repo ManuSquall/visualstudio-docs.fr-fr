@@ -1,7 +1,6 @@
 ---
 title: Test unitaire
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, unit tests
@@ -12,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b490302fe898830afe6ee2c3b8d73ee2454593ba
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 900492cf7a4e617a044ca60b3b72d9891bdaa15b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070394"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917647"
 ---
 # <a name="unit-test-your-code"></a>Tests unitaires de votre code
 
