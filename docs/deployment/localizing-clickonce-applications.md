@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: c92b193b-054d-4923-834b-d4226a4c7a1a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 784d4b6df24a5f4327a87c638b9624a0e4cec46c
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 3c7ef2073afe7321bfee6d100e7df644bc9b3eed
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53893595"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005213"
 ---
 # <a name="localize-clickonce-applications"></a>Localiser des applications ClickOnce
 La localisation consiste à adapter votre application à une culture spécifique. Ce processus implique la traduction du texte de l'IU (interface utilisateur) dans une langue propre à la région, en utilisant la mise en forme appropriée de date et de devise, en ajustant la taille des contrôles sur un formulaire et en mettant en miroir les contrôles de droite à gauche, si nécessaire.  
