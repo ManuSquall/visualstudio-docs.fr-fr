@@ -1,14 +1,9 @@
 ---
-title: Guide pratique pour exporter des diagrammes de classes comme images (Concepteur de classes) | Microsoft Docs
-ms.custom: ''
+title: 'Procédure : Exporter des diagrammes de classes comme Images (Concepteur de classes) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.exportdialog
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: c57055c5-1340-449f-b9d3-ca6f87e2f69a
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bd4e306f2dc8dcb31766f78c644769087eba9819
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4bfc46e4860933d57b3439f8293b0d88fc0519ec
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240524"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799757"
 ---
 # <a name="how-to-export-class-diagrams-as-images-class-designer"></a>Comment : exporter des diagrammes de classes comme images (Concepteur de classes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,6 +40,3 @@ Pour exporter un diagramme de classes que vous avez créé à partir du code d'u
 ## <a name="see-also"></a>Voir aussi  
  [Guide pratique pour imprimer des diagrammes de classes (Concepteur de classes)](../ide/how-to-print-class-diagrams-class-designer.md)   
  [Utilisation des diagrammes de classes (Concepteur de classes)](../ide/working-with-class-diagrams-class-designer.md)
-
-
-

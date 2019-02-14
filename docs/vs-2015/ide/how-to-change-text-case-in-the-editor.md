@@ -19,7 +19,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54799741"
 ---
-# <a name="how-to-change-text-case-in-the-editor"></a>Procédure : changer la casse du texte dans l’éditeur
+# <a name="how-to-change-text-case-in-the-editor"></a>Guide pratique pour modifier la casse du texte dans l'Éditeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez utiliser des commandes de menu ou des raccourcis clavier pour mettre le texte sélectionné tout en majuscules ou tout en minuscules.  

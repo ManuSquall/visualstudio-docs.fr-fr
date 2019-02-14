@@ -1,25 +1,20 @@
 ---
-title: 'Didacticiel 3 : créer un jeu de combinaisons | Microsoft Docs'
-ms.custom: ''
+title: 'Tutoriel 3 : Créer une mise en correspondance jeu | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 525815c8-2845-45e8-be96-100d1f144725
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e5bd7243e49c447dc8c362b0c98bf2cc7d77d76d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 44c9b6578085ee49796078976b30d78f1656e58f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939491"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792708"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Didacticiel 3 : créer un jeu de combinaisons
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,6 +56,3 @@ Dans ce didacticiel, vous générez un jeu de combinaisons dans lequel le joueur
 |[Étape 7 : garder les paires visibles](../ide/step-7-keep-pairs-visible.md)|Laissez des paires d'icônes visibles, si une paire identique est sélectionnée.|  
 |[Étape 8 : ajouter une méthode pour vérifier si le joueur a gagné](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)|Ajoutez une méthode `CheckForWinner()` pour vérifier si le joueur a gagné.|  
 |[Étape 9 : tester d’autres fonctionnalités](../ide/step-9-try-other-features.md)|Essayez d’autres fonctionnalités (par exemple, la modification des icônes et des couleurs, l’ajout d’une grille et l’ajout de sons). Essayez d'agrandir le plateau et d'ajuster la minuterie.|
-
-
-

@@ -1,27 +1,22 @@
 ---
-title: 'Procédure pas à pas : création d’une application de bureau WPF connectée à un service mobile Azure | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure pas à pas : Créer une Application de bureau WPF connectée à un Service Mobile Azure | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 8d42620f-553b-4b04-a38b-f6b306d73a50
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9ab2c5bbea358c226407ba83e2a367195ecfef06
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1a1b6b456ead22ce68cd336f7278fa0f81d32d81
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270607"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803729"
 ---
-# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Procédure pas à pas : création d’une application de bureau WPF connectée à un service mobile Azure
+# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Procédure pas à pas : Créer une Application de bureau WPF connectée à un Service Mobile Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidement une application de bureau moderne qui utilise un service mobile Azure pour stocker et fournir des données.  
@@ -576,6 +571,3 @@ Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidemen
 ## <a name="see-also"></a>Voir aussi  
  [Procédure pas à pas : ma première application de bureau WPF](../designers/walkthrough-my-first-wpf-desktop-application2.md)   
  [Créer des applications de bureau modernes à l’aide de Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
-
-
-

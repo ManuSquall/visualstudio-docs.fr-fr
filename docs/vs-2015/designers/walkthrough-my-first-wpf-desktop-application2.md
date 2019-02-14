@@ -16,7 +16,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54795943"
 ---
-# <a name="walkthrough-my-first-wpf-desktop-application"></a>Procédure pas à pas : Ma première application de bureau WPF
+# <a name="walkthrough-my-first-wpf-desktop-application"></a>Procédure pas à pas : ma première application de bureau WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 un name = « introduction » ></a> cette procédure pas à pas fournit une introduction au développement de Windows Presentation Foundation (WPF). Vous allez créer une application de base qui inclut les éléments qui sont communes à la plupart des applications de bureau WPF : Balisage XAML, code-behind, définitions d’application, contrôles, disposition, liaison de données et des styles.  
@@ -642,17 +642,17 @@ un name = « introduction » ></a> cette procédure pas à pas fournit une int
   
      Ce code XAML ajoute les styles suivants :  
   
-    -   `headerTextStyle`: : pour mettre en forme le titre de la page `Label`.  
+    -   `headerTextStyle`: pour mettre en forme le titre de la page `Label`.  
   
-    -   `labelStyle`: : pour mettre en forme les contrôles `Label` .  
+    -   `labelStyle`: pour mettre en forme les contrôles `Label` .  
   
-    -   `columnHeaderStyle`: : pour mettre en forme `DataGridColumnHeader`.  
+    -   `columnHeaderStyle`: pour mettre en forme `DataGridColumnHeader`.  
   
-    -   `listHeaderStyle`: : pour mettre en forme les contrôles `Border` de l’en-tête de liste.  
+    -   `listHeaderStyle`: pour mettre en forme les contrôles `Border` de l’en-tête de liste.  
   
-    -   `listHeaderTextStyle`: : pour mettre en forme l’élément **Label**de l’en-tête de liste.  
+    -   `listHeaderTextStyle`: pour mettre en forme l’élément **Label**de l’en-tête de liste.  
   
-    -   `buttonStyle`: : pour mettre en forme l’élément `Button` dans la page **ExpenseItHome.xaml** .  
+    -   `buttonStyle`: pour mettre en forme l’élément `Button` dans la page **ExpenseItHome.xaml** .  
   
 3.  Ouvrez **ExpenseItHome.xaml** et remplacez tout ce qui se trouve entre les éléments `<Grid>` et `</Grid>` par le code XAML suivant.  
   
