@@ -38,7 +38,7 @@ Spécifie l’emplacement et le type de fichier side-car qui fournit des informa
  `format`  
  Optionnel. Le type de fichier side-car utilisé pour la localisation. Utiliser `messagebundle` pour spécifier l’utilisation de regroupements de message défini par les métadonnées Ajax ouvert. `messagebundle` est le format recommandé. Toutefois, ce format n’est pas pris en charge dans Microsoft Ajax ou dans les fichiers .winmd. Utilisez `vsdoc` pour spécifier le format de localisation .NET Framework standard qui est utilisé par Microsoft Ajax et Windows Runtime. Cet attribut est facultatif. `vsdoc` est le format par défaut.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Le `<loc>` élément doit apparaître en haut du fichier dans la même section que le `<reference>` élément. L’utilisation des règles pour le `<loc>` élément sont les mêmes que les `<reference>` élément. Pour plus d’informations, consultez la section « Références Directives » dans [JavaScript IntelliSense](../ide/javascript-intellisense.md).  
   
  Visual Studio traite un seul `<loc>` élément pour chaque fichier .js. Si plusieurs `<loc>` éléments sont présents, qu’un seul `<loc>` élément est utilisé. Comportement pour déterminer les `<loc>` élément à utiliser n’est pas défini.  

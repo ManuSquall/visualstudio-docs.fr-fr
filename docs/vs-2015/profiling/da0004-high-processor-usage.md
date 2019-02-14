@@ -21,7 +21,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54762522"
 ---
-# <a name="da0004-high-processor-usage"></a>DA0004 : Utilisation intensive du processeur
+# <a name="da0004-high-processor-usage"></a>DA0004 : Utilisation intensive du processeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Id de règle | DA0004 |  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 97e3ad51-8ef3-4446-ab33-3cb34a21b7a0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3d5c87a19e6f3cf9e04a4b376626b00b745e9a7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5ba63b79a71ea4424bc9a46499b29f97d061a227
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898123"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987646"
 ---
 # <a name="idiasymbolgetvirtual"></a>IDiaSymbol::get_virtual
 Récupère un indicateur qui spécifie si la fonction est virtuelle.  

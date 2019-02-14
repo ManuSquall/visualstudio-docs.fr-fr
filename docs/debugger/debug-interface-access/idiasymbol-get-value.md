@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 21564107cba68288e4a0b577f4bf794f1503796d
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "55039668"
@@ -40,7 +40,7 @@ HRESULT get_value ( 
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  La variante fournie doit être initialisée avant d’être passé à cette méthode. Pour plus d’informations, consultez l’exemple.  
   
 ## <a name="example"></a>Exemple  

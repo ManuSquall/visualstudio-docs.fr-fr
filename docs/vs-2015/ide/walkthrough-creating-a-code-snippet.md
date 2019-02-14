@@ -1,14 +1,9 @@
 ---
-title: 'Procédure pas à pas : création d’un extrait de code | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure pas à pas : Création d’un extrait de Code | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, creating
 - code snippets, shortcut
@@ -20,18 +15,18 @@ ms.assetid: 0dcaae11-39cf-4463-9c90-2494321251c2
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 038635db92d08837cc6519670053c9619ebe3c9b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f9b09a8990de97357da2703f1d08dabec50ea75e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267746"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790111"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>Procédure pas à pas : création d'un extrait de code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez créer un extrait de code en quelques étapes seulement. Il vous suffit de créer un fichier XML, de le remplir avec les éléments appropriés et d’y ajouter votre code. Vous pouvez aussi ajouter des références et des paramètres de remplacement dans votre code. Vous pouvez ajouter l’extrait de code à votre installation de Visual Studio à l’aide du bouton Importer sur le Gestionnaire des extraits de Code (**Gestionnaire des extraits de Code/outils**).  
+Vous pouvez créer un extrait de code en quelques étapes seulement. Il vous suffit de créer un fichier XML, de le remplir avec les éléments appropriés et d’y ajouter votre code. Vous pouvez aussi ajouter des références et des paramètres de remplacement dans votre code. Vous pouvez ensuite ajouter l’extrait de code à votre installation Visual Studio à l’aide du bouton Importer dans le Gestionnaire des extraits de code (**Outils**, Gestionnaire des extraits de code...).  
   
 > [!TIP]
 >  Pour plus d’informations sur la façon d’écrire plus facilement les extraits de code, recherche le site Web CodePlex pour les outils de la Communauté telles que [Snippet Editor](http://go.microsoft.com/fwlink/?LinkId=251033).  
@@ -78,7 +73,7 @@ Vous pouvez créer un extrait de code en quelques étapes seulement. Il vous suf
   
 ### <a name="to-add-a-code-snippet-to-visual-studio"></a>Pour ajouter un extrait de code dans Visual Studio  
   
-1.  Vous pouvez ajouter vos propres extraits de code à votre installation Visual Studio par le biais du Gestionnaire des extraits de code. Ouvrez le Gestionnaire des extraits de Code (**Gestionnaire des extraits de Code/outils**).  
+1.  Vous pouvez ajouter vos propres extraits de code à votre installation Visual Studio par le biais du Gestionnaire des extraits de code. Ouvrez le Gestionnaire des extraits de code (**Outils**, Gestionnaire des extraits de code...).  
   
 2.  Cliquez sur le bouton **Importer**.  
   
@@ -268,6 +263,3 @@ Vous pouvez créer un extrait de code en quelques étapes seulement. Il vous suf
   
 ## <a name="see-also"></a>Voir aussi  
  [Référence de schéma des extraits de code](../ide/code-snippets-schema-reference.md)
-
-
-

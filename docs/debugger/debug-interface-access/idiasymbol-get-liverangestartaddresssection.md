@@ -40,13 +40,13 @@ HRESULT get_liveRangeStartAddressSection ( 
 > [!NOTE]
 >  Un code d’erreur renvoyé signifie que le symbole n’a pas d’informations sur la plage dynamique.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  L’adresse formée par la section et le décalage est le début de la plage dans laquelle le symbole est valide.  
   
  Pour obtenir la partie décalage de l’adresse, utilisez [IDiaSymbol::get_liveRangeStartAddressOffset](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddressoffset.md).  
   
 ## <a name="requirements"></a>Spécifications  
- En-tête : Dia2.h  
+ En-tête : Dia2.h  
   
  Bibliothèque : diaguids.lib  
   

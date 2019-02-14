@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 7257301616c40735f31df3cd777e16e8cf0bd71c
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "55026357"
@@ -70,7 +70,7 @@ IDiaSession : IUnknown
 |[IDiaSession::findAcceleratorInlineesByName](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbyname.md)|Retourne une énumération de symboles pour les frames en ligne correspondant au nom de fonction inline spécifiés.|  
 |[IDiaSession::findAcceleratorInlineesByLinenum](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbylinenum.md)|Retourne une énumération de symboles pour les frames en ligne qui correspondent à l’emplacement source spécifié.|  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Il est important d’appeler le [IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) méthode après avoir créé le `IDiaSession` objet — et la valeur passée à la `put_loadAddress` méthode doit être différente de zéro, pour toutes les propriétés des symboles d’adresse virtuelle (VA) accessible. L’adresse de chargement provient le programme chargé de l’exécutable en cours de débogage. Par exemple, vous pouvez appeler la fonction Win32 `GetModuleInformation` pour récupérer l’adresse de chargement pour le fichier exécutable, étant donné un handle au fichier exécutable.  
   
 ## <a name="example"></a>Exemple  
@@ -110,7 +110,7 @@ void InitializeDIA(const char *szFilename)
 ```  
   
 ## <a name="requirements"></a>Spécifications  
- En-tête : Dia2.h  
+ En-tête : Dia2.h  
   
  Bibliothèque : diaguids.lib  
   

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 46ac5eee-73a3-44a1-8635-6c58ba193cb6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af6faaea54ec7c1acc97e88e9cf56d87ca33527f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fc08aed6f059a505bab6a1acb26c9e3a35bd5a65
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926911"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031040"
 ---
 # <a name="idiastackwalkhelpergetregistervalue"></a>IDiaStackWalkHelper::get_registerValue
 Récupère la valeur d’un Registre.  
@@ -41,7 +41,7 @@ HRESULT get_registerValue ( 
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  En dépit de la taille de la `pRetVal` paramètre, une implémentation doit stocker uniquement ce que le Registre normalement conserve. Par exemple, un Registre de 8 bits conserve uniquement les 8-bits les plus bas de la valeur donnée. Cette valeur de 8 bits est développée à 64 bits lorsque retourné par cette méthode.  
   
 ## <a name="see-also"></a>Voir aussi  

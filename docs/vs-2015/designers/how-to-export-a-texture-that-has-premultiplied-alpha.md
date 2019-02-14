@@ -16,7 +16,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54757319"
 ---
-# <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Procédure : Exporter une texture qui contient des valeurs alpha prémultipliées
+# <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Guide pratique pour exporter une texture qui a des valeurs alpha prémultipliées
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le pipeline de contenus d’image peut générer des textures alpha prémultipliées à partir d’une image source. Ces textures peuvent être plus faciles à utiliser et plus robustes que celles ne contenant pas de valeurs alpha prémultipliées.  

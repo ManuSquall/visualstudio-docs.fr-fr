@@ -126,7 +126,7 @@ Identifie la version de l’application à installer et l’emplacement du manif
 ## <a name="dsigdigestvalue"></a>dsig:DigestValue  
  Le `dsig:DigestValue` élément est un enfant requis de le `hash` élément. L’élément `dsig:DigestValue` ne comporte pas d’attributs. Sa valeur de texte est le hachage calculé pour le fichier spécifié.  
 
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Manifestes de déploiement possèdent généralement un seul `assemblyIdentity` élément qui identifie le nom et la version du manifeste d’application.  
 
 ## <a name="example"></a>Exemple  

@@ -1,14 +1,9 @@
 ---
-title: 'Comment : rechercher des rubriques dans la Table des matières | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Rechercher des rubriques dans la Table des matières | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - hv_contents
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: 8b98464d-2b05-4710-ad68-5647e78c6b7b
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7805113a1d35b352c048711f7ce4aa634ad4cb5e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: dd53eef6cb5dc7b7144375f5d0f6b47e11913ed3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292745"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778340"
 ---
 # <a name="how-to-find-topics-in-the-table-of-contents"></a>Comment : rechercher des rubriques dans la table des matières
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,13 +50,10 @@ Sous l’onglet **Sommaire**, vous pouvez utiliser la table des matières pour r
   
 1.  Affichez une rubrique.  
   
-2.  Cliquez sur le **afficher une rubrique dans le sommaire** bouton sur la barre d’outils ou appuyez sur Ctrl + S.  
+2.  Cliquez sur le bouton **Afficher une rubrique dans le sommaire** dans la barre d’outils ou appuyez sur Ctrl + S.  
   
      L’onglet **Sommaire** s’ouvre et affiche l’emplacement de la rubrique dans la table des matières.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Rechercher des informations](../ide/locate-information.md)   
  [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)
-
-
-

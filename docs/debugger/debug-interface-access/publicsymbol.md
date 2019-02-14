@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f8d33007-302d-4549-9dad-47fb33ea60b7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8466a828c0791f931d4b94f646e258c08a2b1bde
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 32b5264db1a103c23f4f24aa4fa3a411e6bac614
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918938"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024615"
 ---
 # <a name="publicsymbol"></a>PublicSymbol
 Lorsque le fichier .exe est créé, chaque symbole public (un minimum, chaque global (fonction) et les données de symbole at) reçoit un `SymTagPublicSymbol` balise.  
@@ -27,7 +27,7 @@ Lorsque le fichier .exe est créé, chaque symbole public (un minimum, chaque gl
 ## <a name="properties"></a>Propriétés  
  Le tableau suivant présente les propriétés qui sont valides pour ce type de symbole.  
   
-|Property|Type de données|Description|  
+|Propriété|Type de données|Description|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Partie du décalage de l’emplacement ; Pour plus d’informations, consultez le [LocationType (énumération)](../../debugger/debug-interface-access/locationtype.md).|  
 |[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)|`DWORD`|Partie de section d’emplacement ; Pour plus d’informations, consultez le [LocationType (énumération)](../../debugger/debug-interface-access/locationtype.md).|  

@@ -38,7 +38,7 @@ Spécifie la description d'une fonction ou d'une méthode.
  `description`  
  Optionnel. Description de la fonction ou méthode.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Les éléments utilisés pour annoter des fonctions, qui incluent [ \<Résumé >](../ide/summary-javascript.md), [ \<param >](../ide/param-javascript.md), et [ \<retourne >](../ide/returns-javascript.md), doit être placé dans le corps de fonction avant les instructions.  
   
 ## <a name="example"></a>Exemple  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 528a50cf-e13d-46ec-a98c-323d5d047de9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35ea533cc9388d16de0c9c8bc632d60ef2c9c228
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 948fb65e3d98ddf1e821c67cc72c065c946a6e34
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942461"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55036145"
 ---
 # <a name="symtagenum"></a>SymTagEnum
 Spécifie le type de symbole.  
@@ -178,7 +178,7 @@ enum SymTagEnum { 
  `SymTagHLSLType`  
  Indique que le symbole est un type High Level Shader Language.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Tous les symboles dans un fichier de débogage ont une balise d’identification qui spécifie le type du symbole.  
   
  Les valeurs dans cette énumération sont retournées par un appel à la [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) (méthode).  

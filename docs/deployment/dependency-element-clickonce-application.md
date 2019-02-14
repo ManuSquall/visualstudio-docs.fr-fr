@@ -23,15 +23,15 @@ helpviewer_keywords:
 ms.assetid: 09d6a1e0-60f8-4fbd-843b-8e49ee3115a3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c95d2caea47db9429f62eaf0527aa36ddcec2ca3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 195e574a3ae98bc43e41d2040e2070cf36b89067
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898620"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920654"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;dépendance&gt; , élément (application ClickOnce)
 Identifie une dépendance de plateforme ou l’assembly qui est requise pour l’application.  
@@ -127,7 +127,7 @@ Identifie une dépendance de plateforme ou l’assembly qui est requise pour l�
 |-----------------------| - |
 | `dependencyType` | Obligatoire. Spécifie le type de dépendance. Les valeurs valides sont `preprequisite` et `install`. Un `install` assembly est installé dans le cadre de la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application. Un `prerequisite` assembly doit être présent dans le global assembly cache (GAC) avant le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application peut installer. |
 | `allowDelayedBinding` | Obligatoire. Spécifie si l’assembly peut être chargé par programmation lors de l’exécution. |
-| `group` | Optionnel. Si le `dependencyType` attribut a la valeur `install`, désigne un groupe nommé d’assemblys qui s’installent uniquement à la demande. Pour plus d’informations, consultez [Procédure pas à pas : Téléchargement d’assemblys à la demande avec l’API de déploiement ClickOnce à l’aide du concepteur](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Si la valeur `framework` et `dependencyType` attribut a la valeur `prerequisite`, désigne l’assembly dans le cadre du .NET Framework. Le global assembly cache (GAC) n’est pas activé pour cet assembly lors de l’installation sur [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] et versions ultérieures. |
+| `group` | Optionnel. Si le `dependencyType` attribut a la valeur `install`, désigne un groupe nommé d’assemblys qui s’installent uniquement à la demande. Pour plus d’informations, consultez [Procédure pas à pas : téléchargement d’assemblys à la demande avec l’API du déploiement ClickOnce à l’aide du concepteur](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Si la valeur `framework` et `dependencyType` attribut a la valeur `prerequisite`, désigne l’assembly dans le cadre du .NET Framework. Le global assembly cache (GAC) n’est pas activé pour cet assembly lors de l’installation sur [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] et versions ultérieures. |
 | `codeBase` | Obligatoire quand le `dependencyType` attribut a la valeur `install`. Le chemin d’accès de l’assembly dépendant. Peut être un chemin d’accès absolu ou un chemin d’accès relatif de code du manifeste base. Ce chemin d’accès doit être un URI valid afin que le manifeste d’assembly soit valide. |
 | `size` | Obligatoire quand le `dependencyType` attribut a la valeur `install`. La taille de l’assembly dépendant, en octets. |
 
@@ -147,10 +147,10 @@ Identifie une dépendance de plateforme ou l’assembly qui est requise pour l�
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] utilise un hachage algorithmique de tous les fichiers dans une application en tant qu’une vérification de sécurité, pour vous assurer qu’aucun des fichiers ont été modifiés après le déploiement. Si le `hash` élément n’est pas inclus, cette vérification ne sera pas effectuée. Par conséquent, en omettant le `hash` élément n’est pas recommandé.  
 
-### <a name="dsigtransforms"></a>dsig : TRANSFORMS  
+### <a name="dsigtransforms"></a>dsig:Transforms  
  Le `dsig:Transforms` élément est un enfant requis de le `hash` élément. L’élément `dsig:Transforms` ne comporte pas d’attributs.  
 
-### <a name="dsigtransform"></a>dsig : Transform  
+### <a name="dsigtransform"></a>dsig:Transform  
  Le `dsig:Transform` élément est un enfant requis de le `dsig:Transforms` élément. L’élément `dsig:Transform` a les attributs suivants.  
 
 
@@ -166,10 +166,10 @@ Identifie une dépendance de plateforme ou l’assembly qui est requise pour l�
 |-------------| - |
 | `Algorithm` | L’algorithme utilisé pour calculer le condensat pour ce fichier. La seule valeur utilisée par [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] est `http://www.w3.org/2000/09/xmldsig#sha1`. |
 
-### <a name="dsigdigestvalue"></a>dsig : DigestValue  
+### <a name="dsigdigestvalue"></a>dsig:DigestValue  
  Le `dsig:DigestValue` élément est un enfant requis de le `hash` élément. L’élément `dsig:DigestValue` ne comporte pas d’attributs. Sa valeur de texte est le hachage calculé pour le fichier spécifié.  
 
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Tous les assemblys utilisés par votre application doivent correspondre à un `dependency` élément. Assemblys dépendants n’incluent pas les assemblys qui doivent être préinstallés dans le global assembly cache en tant qu’assemblys de plateforme.  
 
 ## <a name="example"></a>Exemple  

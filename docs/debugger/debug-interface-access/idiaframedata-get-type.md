@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: efca38b5-c479-4d0a-a164-f903f25c5509
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ee35b5884696d2d9faade5ceb2ec16945d3991c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 80c73f99fdb210c611287f07c5ba4131b3a2d2d9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837561"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026067"
 ---
 # <a name="idiaframedatagettype"></a>IDiaFrameData::get_type
 Récupère le type de frame de spécifiques au compilateur.  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4002f887-aea6-4475-b302-67c57079fe0a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0a95588be4f0a1f37f45a731786ea410a0300f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1c97d56b5ff47652ae04d2cb2e37105b08a00612
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967016"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995997"
 ---
 # <a name="idiasymbolgetudtkind"></a>IDiaSymbol::get_udtKind
 Récupère la variété d’un type défini par l’utilisateur (UDT).  

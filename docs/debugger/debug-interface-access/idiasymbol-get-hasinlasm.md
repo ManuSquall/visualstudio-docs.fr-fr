@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7001c7cc-1459-4929-851b-a08066a803c6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e924b7a2c1d2fe3d0d28585924f68648a4a07ce4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fbb07470f63c337ccefd5352b3fb7b2a6ff75e83
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859774"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55036210"
 ---
 # <a name="idiasymbolgethasinlasm"></a>IDiaSymbol::get_hasInlAsm
 Récupère un indicateur qui spécifie si la fonction contient un assembly inline.  
