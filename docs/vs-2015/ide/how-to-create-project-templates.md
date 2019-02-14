@@ -24,7 +24,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54785911"
 ---
-# <a name="how-to-create-project-templates"></a>Procédure : créer des modèles de projet
+# <a name="how-to-create-project-templates"></a>Guide pratique pour créer des modèles de projet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette procédure vous permet de créer un modèle à l’aide de l’Assistant **Exportation de modèle**, qui met en package votre modèle dans un fichier .zip. Vous pouvez également créer des modèles au format de fichier VSIX pour améliorer le déploiement en utilisant l’extension de l’Assistant Exportation de modèle, ou avec les modèles inclus dans le [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)], ou vous pouvez créer manuellement des modèles.  

@@ -1,14 +1,9 @@
 ---
 title: 'Comment : générer les mêmes fichiers sources avec des options différentes | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - source files, building with different options
 - MSBuild, properties
@@ -18,13 +13,13 @@ ms.assetid: d14f1212-ddd9-434f-b138-f840011b0fb2
 caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c46d0577d19a3b3ad0fcd150f33d400e76d550d3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 738f6e9f3a31407f30d30c963265b78d8000ca82
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831001"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800419"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Comment : générer les mêmes fichiers sources avec des options différentes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +56,7 @@ Lorsque vous générez des projets, vous compilez fréquemment les mêmes compos
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>Pour définir une propriété de projet dans la ligne de commande  
   
--   Utilisez le commutateur **/property** avec la propriété et la valeur de la propriété. Exemple :  
+-   Utilisez le commutateur **/property** avec la propriété et la valeur de la propriété. Par exemple :  
   
     ```  
     msbuild file.proj /property:Flavor=Debug  
@@ -75,7 +70,7 @@ Lorsque vous générez des projets, vous compilez fréquemment les mêmes compos
   
 #### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>Pour spécifier plusieurs propriétés de projet dans la ligne de commande  
   
-- Utilisez le commutateur **/property** ou **/p** plusieurs fois avec la propriété et les valeurs de propriétés, ou utilisez un commutateur **/property** ou **/p** et séparez plusieurs propriétés avec des points-virgules (;). Exemple :  
+- Utilisez le commutateur **/property** ou **/p** plusieurs fois avec la propriété et les valeurs de propriétés, ou utilisez un commutateur **/property** ou **/p** et séparez plusieurs propriétés avec des points-virgules (;). Par exemple :  
   
   ```  
   msbuild file.proj /p:Flavor=Debug;Platform=x86  
@@ -196,5 +191,3 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
  [Concepts MSBuild](../msbuild/msbuild-concepts.md)   
  [Référence MSBuild](../msbuild/msbuild-reference.md)   
  [Project, élément (MSBuild)](../msbuild/project-element-msbuild.md)
-
-

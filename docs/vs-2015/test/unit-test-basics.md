@@ -1,26 +1,21 @@
 ---
 title: Notions de base des tests unitaires | Documents Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
 ms.assetid: a80ba9cd-4575-483c-b957-af7ed8dc7e20
 caps.latest.revision: 29
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 62a451b1004a6e93980d7fb594781e661b06246d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9d86834b82dbc130c9e2e4b3cf712b4d23a27e5e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863619"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801181"
 ---
 # <a name="unit-test-basics"></a>Notions de base des tests unitaires
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +49,7 @@ Vérifiez que votre code fonctionne comme prévu en créant et en exécutant des
   
 -   [Démarrage rapide : développement piloté par les tests avec l’Explorateur de tests](../test/quick-start-test-driven-development-with-test-explorer.md)  
   
--   [Tests unitaires de code natif avec l’Explorateur de tests](http://msdn.microsoft.com/en-us/8a09d6d8-3613-49d8-9ffe-11375ac4736c)  
+-   [Tests unitaires de code natif avec l’Explorateur de tests](http://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)  
   
 ##  <a name="BKMK_The_MyBank_Solution_example"></a> Exemple de solution MyBank  
  Dans cette rubrique, nous utilisons comme exemple le développement d’une application fictive, appelée `MyBank` . Vous n’avez pas besoin du code réel pour suivre les explications fournies dans cette rubrique. Les méthodes de test sont écrites en C# et présentées à l’aide du framework de tests unitaires Microsoft pour le code managé. Cependant, les concepts peuvent être facilement transférés vers d’autres langages et frameworks.  
@@ -77,7 +72,7 @@ Vérifiez que votre code fonctionne comme prévu en créant et en exécutant des
   
 - `CheckingAccount.cs` contient la classe `CheckingAccount` qui implémente l’interface `IAccounts` d’un compte courant.  
   
-  Nous savons par expérience qu’un retrait sur un compte courant doit s’assurer que le montant retiré est inférieur au solde du compte. Aussi, nous remplaçons la méthode `IAccount.Withdaw` de `CheckingAccount` par une méthode qui vérifie cette condition. La méthode peut ressembler à ceci :  
+  Nous savons par expérience qu’un retrait sur un compte courant doit s’assurer que le montant retiré est inférieur au solde du compte. Aussi, nous remplaçons la méthode `IAccount.Withdaw` de `CheckingAccount` par une méthode qui vérifie cette condition. La méthode peut ressembler à ceci :  
   
 ```csharp  
   
@@ -349,6 +344,3 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
    ![Sélectionnez un autre framework de tests unitaires installée](../test/media/createunittestsdialogextensions.png "CreateUnitTestsDialogExtensions")  
   
    Vos stubs de test unitaire seront créés à l’aide du framework sélectionné.
-
-
-

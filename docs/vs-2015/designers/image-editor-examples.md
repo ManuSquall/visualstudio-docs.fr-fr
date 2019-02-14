@@ -1,25 +1,20 @@
 ---
 title: Exemples de l’éditeur d’images | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 9f887976-25ae-4099-b987-87ea97f98c58
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1f6a00dfb0ce15280bb028fb38eb116754c43db1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 921ed880d7a1827a8e52914fa21738f628cf17fd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206750"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781315"
 ---
 # <a name="image-editor-examples"></a>Exemples de l'éditeur d'images
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,6 +32,3 @@ Les articles de cette section de la documentation contiennent des exemples qui i
 |[Comment : exporter une texture qui contient des mipmaps](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Explique comment utiliser le pipeline de contenu d'image pour exporter une texture qui contient des mipmaps précalculés.|  
 |[Comment : exporter une texture qui possède des valeurs alpha prémultipliées](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Explique comment utiliser le pipeline de contenu d'image pour exporter une texture qui contient des valeurs alpha prémultipliées.|  
 |[Comment : exporter une texture pour l’utiliser avec des applications JavaScript ou Direct2D](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Explique comment utiliser le pipeline de contenu d’image pour exporter une texture utilisable dans une application Direct2D ou JavaScript.|
-
-
-

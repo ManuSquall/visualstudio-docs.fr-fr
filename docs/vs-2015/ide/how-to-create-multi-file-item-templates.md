@@ -1,14 +1,9 @@
 ---
-title: Guide pratique pour créer des modèles d’élément multifichier | Microsoft Docs
-ms.custom: ''
+title: 'Procédure : Créer des modèles d’élément multifichier | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
 - multi-file item templates
@@ -17,13 +12,13 @@ ms.assetid: fe3c4257-e383-4c80-b8af-c5c521959c33
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 00d7fbaa97172c98db61f93706f7e596bb22ddee
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4616cb2f0e908b3228061288da05ce01543afdc4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862175"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785898"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Comment : créer des modèles d'élément multifichier
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ Il arrive que les modèles d’élément spécifient un seul élément, mais cet
   
 1.  Créez le modèle d’élément de la même manière qu’un modèle d’élément à fichier unique. Pour plus d’informations, consultez [Guide pratique pour créer des modèles d’élément](../ide/how-to-create-item-templates.md).  
   
-2.  Ajoutez des attributs `TargetFileName` à chaque élément `ProjectItem`. Affectez aux attributs `TargetFileName` la valeur $fileinputname$.*FileExtension*, où *FileExtension* est l’extension du nom du fichier qui est inclut dans le modèle. Exemple :  
+2.  Ajoutez des attributs `TargetFileName` à chaque élément `ProjectItem`. Affectez aux attributs `TargetFileName` la valeur $fileinputname$.*FileExtension*, où *FileExtension* est l’extension du nom du fichier qui est inclut dans le modèle. Par exemple :  
   
     ```  
     <ProjectItem TargetFileName="$fileinputname$.vb">  
@@ -93,6 +88,3 @@ Il arrive que les modèles d’élément spécifient un seul élément, mais cet
  [Guide pratique pour créer des modèles d’élément](../ide/how-to-create-item-templates.md)   
  [Paramètres de modèle](../ide/template-parameters.md)   
  [Guide pratique pour substituer des paramètres dans un modèle](../ide/how-to-substitute-parameters-in-a-template.md)
-
-
-

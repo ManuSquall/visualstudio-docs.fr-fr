@@ -1,25 +1,20 @@
 ---
 title: Guide pratique pour instrumenter un service natif et collecter des données chronologiques détaillées en utilisant la ligne de commande du profileur | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: dfe58b39-63f8-4a87-ab3a-2b5b14faa8d0
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: aa230e858db8eea19e1f5b2ff7ad683e45a76fcb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f0e1007ce9119d12282b4ee7f6b85f22257af659
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757780"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781401"
 ---
 # <a name="how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Comment : instrumenter un service natif et collecter des données de temporisation détaillées en utilisant la ligne de commande du profileur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,6 +98,3 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
 ## <a name="see-also"></a>Voir aussi  
  [Profilage de services](../profiling/command-line-profiling-of-services.md)   
  [Vues de données de la méthode d’instrumentation](../profiling/instrumentation-method-data-views.md)
-
-
-

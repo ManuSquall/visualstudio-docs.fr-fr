@@ -1,14 +1,9 @@
 ---
 title: Visual C# IntelliSense | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense [J#]
 - Visual C#, IntelliSense
@@ -17,13 +12,13 @@ ms.assetid: 79ca304d-dc1e-4dc9-a2a6-7808df2e588e
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0d094a0272e5c90afa1a83a42543dd464f219a17
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f0d67cc907155f3f5c6bc4b0f132f9045f7d698a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862201"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800873"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ Visual C# IntelliSense est disponible quand vous écrivez du code dans l’édi
   La liste de saisie semi-automatique en C# est également assez intelligente pour éliminer les jetons inappropriés et présélectionner un jeton selon le contexte. Pour plus d’informations, consultez [Listes de saisie semi-automatique filtrées en C#](../misc/filtered-completion-lists-in-csharp.md) et [Éléments présélectionnés d’une liste de saisie semi-automatique en C#](../misc/pre-selected-completion-list-items-in-csharp.md).  
   
 ###  <a name="CodeSnippets"></a> Extraits de code dans les listes de saisie semi-automatique  
- Dans Visual C#, la liste de saisie semi-automatique comprend des extraits de code pour vous aider à insérer facilement des entités prédéfinies de code dans votre programme. Les extraits de code apparaissent dans la liste de saisie semi-automatique en tant qu’[éléments Shortcut (extraits de code Intellisense)](http://msdn.microsoft.com/en-us/052cc97a-5c70-42f8-b398-4c3adf670cfa) de l’extrait de code.  Pour plus d’informations sur les extraits de code fournis par défaut en Visual C#, consultez [Extraits de code Visual C#](../ide/visual-csharp-code-snippets.md).  
+ Dans Visual C#, la liste de saisie semi-automatique comprend des extraits de code pour vous aider à insérer facilement des entités prédéfinies de code dans votre programme. Les extraits de code apparaissent dans la liste de saisie semi-automatique en tant qu’[éléments Shortcut (extraits de code Intellisense)](http://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa) de l’extrait de code.  Pour plus d’informations sur les extraits de code fournis par défaut en Visual C#, consultez [Extraits de code Visual C#](../ide/visual-csharp-code-snippets.md).  
   
 ###  <a name="Keywords"></a> Mots clés de langage dans les listes de saisie semi-automatique  
  Dans Visual C#, la liste de saisie semi-automatique inclut également des mots clés de langage. Pour plus d’informations sur les mots clés du langage C#, consultez [Mots clés C#](http://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad).  
@@ -164,6 +159,3 @@ Visual C# IntelliSense est disponible quand vous écrivez du code dans l’édi
   
 ## <a name="see-also"></a>Voir aussi  
  [IDE Visual Studio](../ide/visual-studio-ide.md)
-
-
-
