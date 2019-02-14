@@ -1,24 +1,19 @@
 ---
 title: Tester des applications Windows UWP et des applications du Windows Store 8.1 avec des tests codés de l’interface utilisateur | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: c8d9c15e-ce3c-401a-86ec-c5c124a239d8
 caps.latest.revision: 26
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 70973305764319ecb8ebf902945c92eb4723af7a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e8d7f1bf475dca7ed0e06e4b3ebb045b0513d5b7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934299"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799295"
 ---
 # <a name="test-windows-uwp-and-81-store-apps-with-coded-ui-tests"></a>Tester des applications Windows UWP et des applications du Windows Store 8.1 avec des tests codés de l’interface utilisateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -227,7 +222,7 @@ Utilisez cette procédure pas à pas afin de créer des tests de l’interface u
        XamlWindow myAppWindow = XamlWindow.Launch("7254db3e-20a7-424e-8e05-7c4dabf4f28d_cyrqexqw8cc7c!App");  
        ```  
   
-    2. Ajoutez un mouvement pour appuyer sur le contrôle bouton :  
+    2. Ajoutez un mouvement pour appuyer sur le contrôle bouton :  
   
        ```csharp  
        Gesture.Tap(this.UIMap.UIApp1Window. UIButtonButton);  
@@ -237,7 +232,7 @@ Utilisez cette procédure pas à pas afin de créer des tests de l’interface u
        Gesture.Tap(Me.UIMap.UIApp2Window. UIButtonButton)  
        ```  
   
-    3. Vérifiez que l’appel à la méthode assert généré automatiquement se produit après le lancement de l’application et le mouvement d’appui sur le bouton :  
+    3. Vérifiez que l’appel à la méthode assert généré automatiquement se produit après le lancement de l’application et le mouvement d’appui sur le bouton :  
   
        ```csharp  
        this.UIMap.AssertMethod1();  
@@ -329,6 +324,3 @@ Utilisez cette procédure pas à pas afin de créer des tests de l’interface u
 ## <a name="see-also"></a>Voir aussi  
  [Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md)   
  [Définir une propriété Automation unique pour les contrôles Windows Store à des fins de test](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)
-
-
-

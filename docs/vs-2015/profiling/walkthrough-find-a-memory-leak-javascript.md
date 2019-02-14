@@ -23,7 +23,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54780932"
 ---
-# <a name="walkthrough-find-a-memory-leak-javascript"></a>Procédure pas à pas : Recherche d’une fuite de mémoire (JavaScript).
+# <a name="walkthrough-find-a-memory-leak-javascript"></a>Procédure pas à pas : rechercher une fuite de mémoire (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.png « windows_and_phone_content »)  

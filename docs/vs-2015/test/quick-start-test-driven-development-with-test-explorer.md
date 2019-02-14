@@ -1,24 +1,19 @@
 ---
-title: 'Démarrage rapide : développement piloté avec l’Explorateur de tests | Microsoft Docs'
-ms.custom: ''
+title: 'Démarrage rapide : Développement avec l’Explorateur de tests piloté par test | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a67f4f79688cb4cdbe482c90cd93b784349d748a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9429bf3f77ec015c245eb29e6354aaf810bb895a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831690"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797963"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Démarrage rapide : développement piloté avec l’Explorateur de tests
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -293,6 +288,3 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
      Tous les tests réussissent encore.  
   
      ![Explorateur de tests unitaires indiquant 3 tests réussis.](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
-
-
-

@@ -16,7 +16,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/24/2019
 ms.locfileid: "54833663"
 ---
-# <a name="step-5-add-label-references"></a>Étape 5 : Ajouter des références aux contrôles Label
+# <a name="step-5-add-label-references"></a>Étape 5 : ajouter des références de contrôles Label
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le programme doit effectuer le suivi des contrôles d'étiquette que le joueur a choisis. Pour le moment, le programme indique l'ensemble des étiquettes choisies par le joueur. Mais nous allons changer cela. Une fois que le joueur a choisi le premier contrôle d'étiquette, le programme doit afficher son icône. Une fois que le joueur a choisi le deuxième contrôle d'étiquette, le programme doit afficher brièvement les deux icônes, puis les masquer à nouveau. Votre programme vérifiera à présent quel contrôle d'étiquette le joueur a choisi en premier et en deuxième à l'aide de *variables de référence*.  
@@ -48,6 +48,6 @@ Jeu de combinaisons affichant une icône
   
 ### <a name="to-continue-or-review"></a>Pour continuer ou examiner  
   
--   Pour passer à l’étape suivante du tutoriel, consultez [Étape 6 : Ajouter un minuteur](../ide/step-6-add-a-timer.md).  
+-   Pour passer à l’étape suivante du didacticiel, consultez [Étape 6 : ajouter une minuterie](../ide/step-6-add-a-timer.md).  
   
--   Pour revenir à l’étape précédente du tutoriel, consultez [Étape 4 : Ajouter un gestionnaire d’événements Click à chaque étiquette](../ide/step-4-add-a-click-event-handler-to-each-label.md).
+-   Pour revenir à l'étape précédente du didacticiel, consultez [Étape 4 : ajouter un gestionnaire d'événements Click à chaque contrôle Label](../ide/step-4-add-a-click-event-handler-to-each-label.md).

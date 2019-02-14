@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Définir la session active | Microsoft Docs'
+title: Guide pratique pour définir la session active | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,7 +24,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54760390"
 ---
-# <a name="how-to-set-the-current-session"></a>Procédure : définir la session active
+# <a name="how-to-set-the-current-session"></a>Guide pratique pour définir la session active
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez ouvrir plusieurs sessions de performance dans l’**Explorateur de performances**, puis sélectionner l’une des sessions de performance visibles à définir comme session active.  

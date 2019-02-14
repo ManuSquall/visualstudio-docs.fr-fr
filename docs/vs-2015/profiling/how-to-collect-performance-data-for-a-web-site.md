@@ -1,14 +1,9 @@
 ---
 title: 'Procédure : collecte des données de performances pour un site web | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vsperf.url.url
 - vsperf.chooseurl
@@ -23,13 +18,13 @@ ms.assetid: a62d27fd-a966-4065-bebe-6874195a71fb
 caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 646d5a59dee68123e478da074901c9d6f98c2763
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 808344d1151f40f94ca3506df5c81deaa8186056
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783907"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766150"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Procédure : collecte des données de performances pour un site web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +66,7 @@ Vous pouvez utiliser l’ **Assistant Performance** pour collecter des données 
   
 8.  Une session de performance est créée pour l’application [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] et le site web est démarré dans le navigateur. Utilisez les fonctionnalités que vous voulez profiler, puis fermez le navigateur.  
   
-     Le profileur génère le fichier de données et affiche la vue Résumé des données dans la fenêtre principale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+     Le profileur génère le fichier de données et affiche la vue Résumé des données dans la fenêtre principale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
 ### <a name="to-profile-a-web-site-without-opening-a-project-in-visual-studio"></a>Pour profiler un site web sans ouvrir un projet dans Visual Studio  
   
@@ -112,6 +107,3 @@ Vous pouvez utiliser l’ **Assistant Performance** pour collecter des données 
  [Configuration de sessions de performance](../profiling/configuring-performance-sessions.md)   
  [Présentation des valeurs de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md)   
  [Présentation des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)
-
-
-

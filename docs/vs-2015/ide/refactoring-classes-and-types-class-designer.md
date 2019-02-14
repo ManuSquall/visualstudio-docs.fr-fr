@@ -1,14 +1,9 @@
 ---
 title: Refactorisation des classes et des types (Concepteur de classes) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.ClassDesigner.OverrideMembersDialog
 helpviewer_keywords:
@@ -24,13 +19,13 @@ ms.assetid: dcf07bb4-fa3b-4224-9dec-566fd924a8ce
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 215030b511ecbddbda23073df464035887f8ef95
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e6a150d32fa4eb5bc162f9ce8522ddfed634253b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207959"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782124"
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>Refactorisation des classes et des types (Concepteur de classes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ ms.locfileid: "49207959"
 Quand vous refactorisez du code, vous le rendez plus facile à comprendre et à gérer. Vous le rendez également plus efficace en changeant sa structure interne et la conception de ses objets, sans altérer son comportement externe. Utilisez le Concepteur de classes et la fenêtre Détails de classe pour réduire votre charge de travail et limiter le risque d'introduire des bugs quand vous refactorisez du code Visual C# .NET, Visual Basic .NET ou C++ dans votre projet Visual Studio.  
   
 > [!NOTE]
->  Les fichiers d'un projet peuvent être en lecture seule, car le projet est sous contrôle de code source et n'est pas extrait (projet référencé), ou ses fichiers sont marqués en lecture seule sur le disque. Quand vous travaillez dans un projet ayant l'un de ces états, vous avez plusieurs façons différentes d'enregistrer votre travail. Cela s'applique au code que vous refactorisez et au code que vous changez d'une autre façon, par exemple en le modifiant directement. Pour plus d’informations, consultez [Affichage d’informations en lecture seule (Concepteur de classes)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).  
+>  Les fichiers d'un projet peuvent être en lecture seule, car le projet est sous contrôle de code source et n'est pas extrait (projet référencé), ou ses fichiers sont marqués en lecture seule sur le disque. Quand vous travaillez dans un projet ayant l'un de ces états, vous avez plusieurs façons différentes d'enregistrer votre travail. Cela s'applique au code que vous refactorisez et au code que vous changez d'une autre façon, par exemple en le modifiant directement. Pour plus d’informations, consultez [Affichage d’informations en lecture seule (Concepteur de classes)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).  
   
 ## <a name="common-tasks"></a>Tâches courantes  
   
@@ -99,6 +94,3 @@ Quand vous refactorisez du code, vous le rendez plus facile à comprendre et à 
 |-----------|-----------------|  
 |[Affichage des types et relations (Concepteur de classes)](../ide/viewing-types-and-relationships-class-designer.md)||  
 |[Conception des classes et des types (Concepteur de classes)](../ide/designing-classes-and-types-class-designer.md)||
-
-
-
