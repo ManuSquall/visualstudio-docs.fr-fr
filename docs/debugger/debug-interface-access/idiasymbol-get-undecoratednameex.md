@@ -44,13 +44,13 @@ HRESULT get_undecoratedNameEx( 
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Le `undecorateOptions` peut être une combinaison des indicateurs suivants.  
   
 > [!NOTE]
 >  Les noms de l’indicateur ne sont pas définis dans le SDK DIA, donc vous devez ajouter les déclarations à votre code ou d’utiliser les valeurs brutes.  
   
-|Indicateur|Value|Description|  
+|Indicateur|Valeur|Description|  
 |----------|-----------|-----------------|  
 |UNDNAME_COMPLETE|0x0000|Permet d’undecoration complète.|  
 |UNDNAME_NO_LEADING_UNDERSCORES|0x0001|Supprime des traits de soulignement de début à partir de l’étendue des mots clés de Microsoft.|  

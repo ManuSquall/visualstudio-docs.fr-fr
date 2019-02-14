@@ -19,7 +19,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54780289"
 ---
-# <a name="how-to-substitute-parameters-in-a-template"></a>Procédure : substituer des paramètres dans un modèle
+# <a name="how-to-substitute-parameters-in-a-template"></a>Comment : substituer des paramètres dans un modèle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez remplacer les paramètres d'un modèle, tels que les noms de classes et les espaces de noms, lors de la création d'un fichier basé sur ce modèle. Pour obtenir une liste exhaustive des paramètres de modèle, consultez [Paramètres de modèle](../ide/template-parameters.md).  

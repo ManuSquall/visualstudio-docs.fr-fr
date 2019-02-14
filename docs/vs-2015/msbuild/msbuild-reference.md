@@ -1,14 +1,9 @@
 ---
 title: Informations de référence sur MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: 093395e1-70da-4f74-b34d-046c5e2b32e8
 caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b99a082355742ad81ee2ac2e7280a17cfd233a2d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9f1bded7e322387363bddb6b3aa2e6d7913d2da8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292297"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773171"
 ---
 # <a name="msbuild-reference"></a>Référence MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +73,7 @@ ms.locfileid: "49292297"
  Répertorie les caractères qui peuvent devoir être insérés dans une « séquence d’échappement » pour être interprétés correctement. Une séquence d’échappement est une série de caractères qui signifie que ce qui suit est une autre interprétation.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
- [Vue d’ensemble de MSBuild](http://msdn.microsoft.com/en-us/e39f13f7-1e1d-4435-95ca-0c222bca071c) présente [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] et fournit des liens vers des rubriques qui expliquent comment l’utiliser pour générer des projets.  
+ [Vue d’ensemble de MSBuild](http://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c) Présente [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] et fournit des liens vers des rubriques qui expliquent comment l’utiliser pour générer des projets.  
   
  <xref:Microsoft.Build.Conversion>  
  Contient des informations de référence sur l’espace de noms Conversion.  
@@ -100,6 +95,3 @@ ms.locfileid: "49292297"
   
  <xref:Microsoft.Build.Utilities>  
  Contient des informations de référence sur l’espace de noms Utilities.
-
-
-

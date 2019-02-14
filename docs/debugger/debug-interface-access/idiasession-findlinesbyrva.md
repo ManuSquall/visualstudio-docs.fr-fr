@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 06f53b0b-b5b4-42cf-9252-dcee0dbe2d71
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4c2758f6d1b134cd2cc645b99304aba4e8fe1b6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 9310c60e73f3d51ab93e5fe0b40a5d871681175e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918795"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986616"
 ---
 # <a name="idiasessionfindlinesbyrva"></a>IDiaSession::findLinesByRVA
 Récupère les lignes dans un compiland spécifiée qui contiennent une adresse virtuelle relative (RVA) spécifiée.  

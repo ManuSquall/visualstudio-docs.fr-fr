@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: f12459dd-c64d-4cc9-9ee3-a56e19e9e573
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a220125b22fd60b6547418a976f00e2ddd6b49aa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a7ae70fae7299bb12f5fcf401f4a9ba386fe7204
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942107"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987542"
 ---
 # <a name="udt"></a>UDT
 Chaque classe, structure et union est identifiée par un `SymTagUDT` symbole. Chaque membre de fonction et les données, ou type imbriqué chaque classe de base, apparaît comme un enfant de la classe du type défini par l’utilisateur (UDT).  
@@ -29,7 +29,7 @@ Chaque classe, structure et union est identifiée par un `SymTagUDT` symbole. Ch
 ## <a name="properties"></a>Propriétés  
  Le tableau suivant montre des propriétés supplémentaires valides pour ce type de symbole.  
   
-|Property|Type de données|Description|  
+|Propriété|Type de données|Description|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|Symbole de la classe du parent, le cas échéant.|  
 |[IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)|`DWORD`|ID du symbole classe parent.|  

@@ -21,7 +21,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54770771"
 ---
-# <a name="da0012-significant-amount-of-reflection"></a>DA0012 : Quantité importante de réflexion
+# <a name="da0012-significant-amount-of-reflection"></a>DA0012 : Quantité importante de réflexion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Rule Id|DA0012|  

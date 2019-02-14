@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b157b245-1ea0-4b80-8962-d8b278dbc742
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de23c511f238578de2492992556b557c051841db
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 488ae20ae4e38905b722f833a52676eea6ce0e81
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956986"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035768"
 ---
 # <a name="idiasessionputloadaddress"></a>IDiaSession::put_loadAddress
 Définit l’adresse de chargement du fichier exécutable qui correspond aux symboles dans ce magasin de symboles.  
@@ -34,7 +34,7 @@ HRESULT put_loadAddress ( 
  `NewVal`  
  [in] Charge l’adresse du fichier exécutable.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Propriétés d’adresse virtuelle (VA) de symbole sont calculées à l’aide de la valeur de cette méthode. Adresses virtuelles ne sont pas calculés, sauf si cette propriété est définie zéro.  
   
 > [!NOTE]

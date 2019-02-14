@@ -1,14 +1,9 @@
 ---
 title: Guide pratique pour configurer la réduction du bruit dans les vues Rapports | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.noisereduction.dialog
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: b07e0375-bb73-47e3-8d1d-b9b492fb16c9
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e85e765ed80b37c7c688f9c0f25e3b7e8782a42f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a532a4ddf877e49a6cf355d182d41ed723b2f5d0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51767700"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800327"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>Comment : configurer la réduction du bruit dans les vues des rapports
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,6 +84,3 @@ Vous pouvez configurer la réduction du bruit dans les rapports de performances 
  [Guide pratique pour exclure ou inclure les fonctions courtes de l’instrumentation](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)   
  [Arborescence des appels, vue](../profiling/call-tree-view.md)   
  [Allocations, vue](../profiling/dotnet-memory-allocations-view.md)
-
-
-

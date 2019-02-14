@@ -1,25 +1,20 @@
 ---
 title: Dépannage des outils d’analyse des performances | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: troubleshooting
 ms.assetid: 0b61cdf7-75b7-4abd-aff2-7bd997717626
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 93e9f75ad953ff9c6cd08e8eb78bcfbf01542223
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3f6a069e98b751ac9314a22562063ea763955d79
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787924"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784549"
 ---
 # <a name="troubleshooting-performance-tools-issues"></a>Dépannage des outils d’analyse des performances
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,6 +49,3 @@ Vous pouvez rencontrer les problèmes suivants quand vous utilisez les outils de
   
 > [!NOTE]
 >  Le moteur d’analyse nécessite que le fichier .pdb soit de la même version que le fichier de l’application compilée. Un fichier .pdb d’une build antérieure ou ultérieure du fichier de l’application ne fonctionne pas.
-
-
-

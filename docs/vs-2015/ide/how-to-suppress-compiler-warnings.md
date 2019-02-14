@@ -1,25 +1,20 @@
 ---
-title: Guide pratique pour supprimer les avertissements du compilateur | Microsoft Docs
-ms.custom: ''
+title: 'Procédure : Supprimer les avertissements du compilateur | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 31827b17-f933-413d-b28a-b19f903b64ca
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7cb1bbc637b51ecf75c0b491a5918ceaa147aa8f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 90a5624997a3f2a6719ccd174abee39798f1c488
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932310"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782085"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Guide pratique pour supprimer les avertissements du compilateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,6 +110,3 @@ Vous pouvez « nettoyer » un journal de génération en spécifiant un ou plu
  [Procédure pas à pas : génération d’une application](../ide/walkthrough-building-an-application.md)   
  [Guide pratique pour afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md)   
  [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Propriétés de fichier, JavaScript | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - javascript.project.property.expandedsdknode.fileversion
 - javascript.project.property.expandedsdknode.uri
@@ -30,13 +25,13 @@ ms.assetid: 085913b8-a97b-45f7-85fa-bbb0902f3ee9
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8db05d62bd1a8b1e1bf5fee6642810c654265c97
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e2586de5731aee916dfc877013269f8d08eb756d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909729"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780367"
 ---
 # <a name="file-properties-javascript"></a>Propriétés des fichiers, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ Vous pouvez utiliser les propriétés de fichier pour indiquer les actions que l
   
 - **Contenu** - Le fichier est inclus dans le manifeste du package. Par exemple, ce paramètre est la valeur par défaut pour un fichier .htm, .js, .css, image, audio ou vidéo.  
   
-- **Manifeste** : le fichier n’est pas inclus dans le manifeste du package. Au lieu de cela, le fichier est utilisé pour l’entrée lors de la génération du manifeste du package. Il s’agit de la valeur par défaut pour le fichier package.appxmanifest.  
+- **Manifeste** - Le fichier n’est pas inclus dans le manifeste du package. Au lieu de cela, le fichier est utilisé pour l’entrée lors de la génération du manifeste du package. Il s’agit de la valeur par défaut pour le fichier package.appxmanifest.  
   
 - **Ressource** - Le fichier n’est pas inclus dans le manifeste du package. Au lieu de cela, le contenu du fichier est indexé dans l’index de ressource de package qui est placé dans le manifeste du package. Il est généralement utilisé pour les fichiers de ressources.  
   
@@ -96,13 +91,10 @@ Vous pouvez utiliser les propriétés de fichier pour indiquer les actions que l
  Affiche le chemin du fichier du kit SDK référencé.  
   
 ### <a name="uri"></a>URI  
- Affiche l’URI doit être inclus dans les fichiers du projet HTML ou JavaScript pour inclure le fichier comme fichier source.  
+ Affiche l’URI qui doit être inclus dans les fichiers HTML ou JavaScript du projet pour inclure le fichier comme fichier source.  
   
 ### <a name="version"></a>Version  
  Affiche la version de la référence.  
   
 ## <a name="see-also"></a>Voir aussi  
- [NIB : Propriétés du projet (Visual Studio)](http://msdn.microsoft.com/en-us/eb4c97ed-f667-4850-98d0-6e2a4d21bbca)
-
-
-
+ [NIB : Propriétés du projet (Visual Studio)](http://msdn.microsoft.com/eb4c97ed-f667-4850-98d0-6e2a4d21bbca)

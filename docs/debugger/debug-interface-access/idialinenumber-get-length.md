@@ -37,7 +37,7 @@ HRESULT get_length ( 
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Le bloc est la longueur du code source sur la ligne telle que représentée par le [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) objet.  
   
 ## <a name="see-also"></a>Voir aussi  

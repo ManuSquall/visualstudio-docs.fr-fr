@@ -4,15 +4,15 @@ ms.date: 06/08/2018
 ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
-manager: douge
+manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 8cb250cd319f28b444a8f3bfecef421ecbaac9b4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c6a0ba1f44d9e6d9cc0dbcce03af2705e370cbb6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848361"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965457"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Bien démarrer avec Visual Studio Tools de Kubernetes
 
@@ -20,7 +20,7 @@ Les outils Kubernetes de Visual Studio vous aider à rationaliser le développem
 
 Ce didacticiel couvre l’utilisation de Visual Studio pour ajouter la prise en charge de Kubernetes à un projet et publier sur AKS. Si vous êtes principalement intéressé par l’utilisation [Azure Dev espaces](http://aka.ms/get-azds) pour déboguer et tester votre projet en cours d’exécution dans ACS, vous pouvez passer à la [didacticiel d’Azure Dev espaces](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio) à la place.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Conditions préalables
 
 Pour tirer parti de cette nouvelle fonctionnalité, vous devez :
 

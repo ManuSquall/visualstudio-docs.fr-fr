@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 0aa356a1-5c5c-4ee4-8b48-bae0a2610013
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1c55ddf07f033971d23c0dd568281a005966400
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c680e1faf7a2a70f7763b55e5fa521d94bb819e0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951743"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941365"
 ---
 # <a name="idiasymbolgetismultipleinheritance"></a>IDiaSymbol::get_isMultipleInheritance
 Spécifie si le `this` pointeur pointe vers un membre de données avec l’héritage multiple.  

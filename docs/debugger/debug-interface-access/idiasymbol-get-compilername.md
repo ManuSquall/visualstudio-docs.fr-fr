@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 66eaaf72-68d4-40ee-b132-97bea9fe395c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fc86d2fb5e1453f3585555dedf1dd26b9d40b31
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5cd72f9ce9b38d6c349d0c3592dac16eab0344f8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847137"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031131"
 ---
 # <a name="idiasymbolgetcompilername"></a>IDiaSymbol::get_compilerName
 Retourne le nom du compilateur utilisé pour générer le [Compiland](../../debugger/debug-interface-access/compiland.md).  
@@ -40,7 +40,7 @@ HRESULT get_compilerName (
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
   
 ## <a name="requirements"></a>Spécifications  
   

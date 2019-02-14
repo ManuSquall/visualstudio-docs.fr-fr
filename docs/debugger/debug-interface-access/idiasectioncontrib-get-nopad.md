@@ -37,7 +37,7 @@ HRESULT get_nopad(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Il s’agit d’une propriété que se produite généralement uniquement sur les fichiers plus anciens.  
   
 ## <a name="see-also"></a>Voir aussi  

@@ -1,27 +1,22 @@
 ---
-title: 'Procédure pas à pas : liaison aux données dans le concepteur XAML | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure pas à pas : Liaison de données dans le concepteur XAML | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner.DataBinding
 ms.assetid: 1a99aeae-c3ef-407d-ba79-b8055489a43d
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 597145da912c8d80508b67f4ff47c901f5ccac1d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 74b628c1c3295cee94435c975f89420fcb097538
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298764"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802810"
 ---
 # <a name="walkthrough-binding-to-data-in-xaml-designer"></a>Procédure pas à pas : liaison aux données dans le concepteur XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,7 +100,4 @@ Dans le concepteur XAML, vous pouvez définir des propriétés de liaison de don
   
 ## <a name="see-also"></a>Voir aussi  
  [Création d’une interface utilisateur à l’aide du concepteur XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)   
- [NIB : Ajouter la boîte de dialogue de convertisseur de valeurs](http://msdn.microsoft.com/en-us/c5f3d110-a541-4b55-8bca-928f77778af8)
-
-
-
+ [NIB : Ajouter la boîte de dialogue de convertisseur de valeurs](http://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)

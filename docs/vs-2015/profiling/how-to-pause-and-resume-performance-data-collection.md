@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Suspendre et reprendre la collecte de données de performances | Microsoft Docs'
+title: Guide pratique pour suspendre et reprendre la collecte de données de performances | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,7 +18,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54790881"
 ---
-# <a name="how-to-pause-and-resume-performance-data-collection"></a>Procédure : suspendre et reprendre la collecte de données de performances
+# <a name="how-to-pause-and-resume-performance-data-collection"></a>Guide pratique pour suspendre et reprendre la collecte de données de performances
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 À partir de la fenêtre de la page de session de profilage, vous pouvez contrôler de manière interactive la collecte des données de profilage.  
@@ -42,4 +42,4 @@ ms.locfileid: "54790881"
   
 ## <a name="see-also"></a>Voir aussi  
  [Contrôle de la collecte de données](../profiling/controlling-data-collection.md)   
- [Guide pratique pour démarrer et terminer la collecte des données de performances](../profiling/how-to-start-and-end-performance-data-collection.md)
+ [Guide pratique pour Démarrer et terminer la collecte des données de performances](../profiling/how-to-start-and-end-performance-data-collection.md)

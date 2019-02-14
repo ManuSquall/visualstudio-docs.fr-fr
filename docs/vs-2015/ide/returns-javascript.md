@@ -75,7 +75,7 @@ Spécifie les informations de documentation pour le résultat d’un appel de fo
   `description`  
   Optionnel. Description de la valeur de retour.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Le `<returns>` élément doit être placé dans le corps de fonction avant les instructions.  
   
 ## <a name="example"></a>Exemple  

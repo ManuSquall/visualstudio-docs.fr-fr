@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 124f86e2-6f66-4541-87c3-799f435b731e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 013f3283b4a362e05a9fd7d9bf80c70963991b50
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e11eccf44699c7c3b482d8f8a50fd338f003974e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990527"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986683"
 ---
 # <a name="idiasymbolgetarrayindextypeid"></a>IDiaSymbol::get_arrayIndexTypeId
 Récupère l’identificateur de type des index de tableau du symbole.  
@@ -40,7 +40,7 @@ HRESULT get_arrayIndexTypeId ( 
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  L’identificateur est une valeur unique créée par le SDK DIA pour marquer tous les symboles comme étant unique.  
   
 ## <a name="requirements"></a>Spécifications  

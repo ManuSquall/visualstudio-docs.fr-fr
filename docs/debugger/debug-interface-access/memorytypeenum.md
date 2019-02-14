@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8778c047-edeb-4495-8f9f-3f8bbb297099
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a83a37a3aa454885d714be667ca7678ae543ff09
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 42cfe138aa6be00628d319f01e7cccfbb4cc4f8a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875914"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040162"
 ---
 # <a name="memorytypeenum"></a>MemoryTypeEnum
 Spécifie le type de mémoire à accéder.  
@@ -46,7 +46,7 @@ enum MemoryTypeEnum {
  `MemTypeAny`  
  Accède à n’importe quel type de mémoire.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Les valeurs dans cette énumération sont transmises à la [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md) méthode pour limiter l’accès à différents types de mémoire.  
   
 ## <a name="requirements"></a>Spécifications  

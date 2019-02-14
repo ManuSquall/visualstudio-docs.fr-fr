@@ -46,7 +46,7 @@ enum UdtKind { 
  UdtInterface  
  UDT est une interface.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Les valeurs dans cette énumération sont retournées par la [IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md) (méthode).  
   
 ## <a name="requirements"></a>Spécifications  

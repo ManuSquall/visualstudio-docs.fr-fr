@@ -1,14 +1,9 @@
 ---
 title: '&lt;signature&gt; (JavaScript) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - <signature> JavaScript XML tag
 - signature JavaScript XML tag
@@ -16,13 +11,13 @@ ms.assetid: 319138e7-cfbe-4b37-9643-2ddb7f9c63d4
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0b3278087545a4d49d5f4f2f0d3f6942c4ec6d9a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 02a4c36f3969ca0f9ef61e817afb82eb8247f041
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293005"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780315"
 ---
 # <a name="ltsignaturegt-javascript"></a>&lt;signature&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,18 +34,18 @@ Regroupe un ensemble d’éléments connexes pour une fonction ou une méthode p
   
 #### <a name="parameters"></a>Paramètres  
  `externalid`  
- Facultatif. Si le `format` d’attribut pour le [ \<loc >](../ide/loc-javascript.md) élément est `vsdoc`, cet attribut spécifie l’ID utilisé pour localiser le code XML qui est associé à la signature de membre. Contrairement à la `locid` attribut, cet attribut spécifie que tous les éléments dans le membre qui possède cet ID doivent être chargés. Les informations de description associé contenues dans le code XML sont également fusionnées avec les éléments spécifiés dans la signature. Cela vous permet de spécifier des éléments supplémentaires, tels que `<capability>`, dans le fichier side-car sans les spécifier dans le fichier source. `externalid` est un attribut facultatif.  
+ Optionnel. Si le `format` d’attribut pour le [ \<loc >](../ide/loc-javascript.md) élément est `vsdoc`, cet attribut spécifie l’ID utilisé pour localiser le code XML qui est associé à la signature de membre. Contrairement à la `locid` attribut, cet attribut spécifie que tous les éléments dans le membre qui possède cet ID doivent être chargés. Les informations de description associé contenues dans le code XML sont également fusionnées avec les éléments spécifiés dans la signature. Cela vous permet de spécifier des éléments supplémentaires, tels que `<capability>`, dans le fichier side-car sans les spécifier dans le fichier source. `externalid` est un attribut facultatif.  
   
  `externalFile`  
- Facultatif. Spécifie le nom du fichier dans lequel rechercher le `externalid`. Cet attribut est ignoré si aucun `externalid` est présent. Il s’agit d’un attribut facultatif. La valeur par défaut est le nom du fichier actif mais avec une extension de fichier de .xml au lieu de .js. Par défaut, les règles de recherche de ressources managé pour la localisation sont utilisés pour rechercher le fichier.  
+ Optionnel. Spécifie le nom du fichier dans lequel rechercher le `externalid`. Cet attribut est ignoré si aucun `externalid` est présent. Il s’agit d’un attribut facultatif. La valeur par défaut est le nom du fichier actif mais avec une extension de fichier de .xml au lieu de .js. Par défaut, les règles de recherche de ressources managé pour la localisation sont utilisés pour rechercher le fichier.  
   
  `helpKeyword`  
- Facultatif. Le mot clé d’aide F1.  
+ Optionnel. Le mot clé d’aide F1.  
   
  `locid`  
- Facultatif. L’identificateur pour les informations de localisation sur le champ. L’identificateur est un membre ID ou il correspond à la `name` valeur dans un regroupement de message défini par OpenAjax métadonnées d’attribut. Le type d’identificateur varie selon le format spécifié dans le [ \<loc >](../ide/loc-javascript.md) balise.  
+ Optionnel. L’identificateur pour les informations de localisation sur le champ. L’identificateur est un membre ID ou il correspond à la `name` valeur dans un regroupement de message défini par OpenAjax métadonnées d’attribut. Le type d’identificateur varie selon le format spécifié dans le [ \<loc >](../ide/loc-javascript.md) balise.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Utilisez une `<signature>` élément pour chaque surchargé description de la fonction dans le fichier .js, ou utilisez un `<signature>` élément pour chaque ID de membre externe spécifié.  
   
  Le `<signature>` élément doit être placé dans le corps de fonction avant les instructions. Lorsque vous utilisez [ \<Résumé >](../ide/summary-javascript.md), [ \<param >](../ide/param-javascript.md), ou [ \<retourne >](../ide/returns-javascript.md) éléments avec le `<signature>` élément, Placez les autres éléments à l’intérieur de la `<signature>` bloc.  
@@ -100,6 +95,3 @@ function add(a, b) {
   
 ## <a name="see-also"></a>Voir aussi  
  [Commentaires sur la documentation XML](../ide/xml-documentation-comments-javascript.md)
-
-
-

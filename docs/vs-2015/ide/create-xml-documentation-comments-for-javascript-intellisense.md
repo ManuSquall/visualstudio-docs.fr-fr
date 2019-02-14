@@ -1,14 +1,9 @@
 ---
 title: Créer des commentaires de Documentation XML pour JavaScript IntelliSense | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - code comments, JavaScript IntelliSense
 - XML documentation comments, JavaScript IntelliSense
@@ -18,15 +13,15 @@ ms.assetid: a27f5b50-9807-436f-a0cf-6f3137ecbaf0
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d15144a2cee70e5f6bdc496bf2c09eb8fb95c85d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 613a1ac89242daeee9b6647f63946eae23c9af1e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220556"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802056"
 ---
-# <a name="create-xml-documentation-comments-for-javascript-intellisense"></a>Créer des commentaires de Documentation XML pour JavaScript IntelliSense
+# <a name="create-xml-documentation-comments-for-javascript-intellisense"></a>Créer des commentaires de documentation XML pour IntelliSense JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 *Commentaires de documentation XML* sont des commentaires JavaScript que vous ajoutez à un script pour fournir des informations sur les éléments de code tels que les fonctions, les champs et les variables. Dans Visual Studio, ces descriptions textuelles sont affichées avec IntelliSense lorsque vous référencez la fonction de script.  
@@ -164,7 +159,4 @@ ms.locfileid: "49220556"
 ## <a name="see-also"></a>Voir aussi  
  [JavaScript IntelliSense](../ide/javascript-intellisense.md)   
  [Commentaires sur la documentation XML](../ide/xml-documentation-comments-javascript.md)   
- [NIB : Procédure pas à pas : JavaScript IntelliSense dans ASP.NET](http://msdn.microsoft.com/en-us/4f6e0cc2-7f48-4dbf-abb0-7fb743a2d05b)
-
-
-
+ [NIB : Procédure pas à pas : JavaScript IntelliSense dans ASP.NET](http://msdn.microsoft.com/4f6e0cc2-7f48-4dbf-abb0-7fb743a2d05b)
