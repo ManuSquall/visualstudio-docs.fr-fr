@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 54295d3e-bbb6-4c10-ab9d-adcfc22b1f71
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bdf5fbc0ac282dbf6ccda9a5fc5931a9eb9ffdc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3711e87c8914d0dbf482f358e849154bc1a4e380
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874902"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003214"
 ---
 # <a name="idiasymbolfindinlineframesbyva"></a>IDiaSymbol::findInlineFramesByVA
 Récupère une énumération qui permet au client d’effectuer une itération dans tous les cadres inline sur une adresse virtuelle spécifiée (VA).  

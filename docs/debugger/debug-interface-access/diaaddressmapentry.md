@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5d0ae226-981d-4541-a801-fc4993fe663b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cadfe96bc0bf0ac0395d93c2ef0b156b9965ed2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1e968cd89c66e0f8c13dbb0468e66e06ca53e273
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964083"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999130"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 Décrit une entrée dans un mappage d’adresses.  
@@ -38,7 +38,7 @@ struct DiaAddressMapEntry { 
  `rvaTo`  
  L’adresse virtuelle relative `rva` est mappé dans l’image B.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Un mappage d’adresses fournit une traduction à partir de la disposition d’une image (A) à un autre (B). Un tableau de `DiaAddressMapEntry` structures triés par `rva` définit un mappage d’adresses.  
   
  Pour convertir une adresse, `addrA`, dans l’image A une adresse, `addrB`, dans l’image B, procédez comme suit :  

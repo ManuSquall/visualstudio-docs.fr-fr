@@ -27,7 +27,7 @@ Un type managé (n’importe quel symbole définie par les métadonnées ou du f
 ## <a name="properties"></a>Propriétés  
  Le tableau suivant montre des propriétés supplémentaires valides pour ce type de symbole.  
   
-|Propriété|Type de données|Description|  
+|Property|Type de données|Description|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Nom du symbole managé.|  
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID d’index de symbole.|  

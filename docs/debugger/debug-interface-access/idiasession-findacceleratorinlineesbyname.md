@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: e203e5c2-6563-43fa-be56-3063955043ab
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a13400cab447f4122a88bfbcec1265ae8e7e2fd5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7c7814043b28e80e7c87543b94ef95e958434ddf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828093"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031246"
 ---
 # <a name="idiasessionfindacceleratorinlineesbyname"></a>IDiaSession::findAcceleratorInlineesByName
 Retourne une énumération de symboles pour les frames en ligne correspondant au nom de fonction inline spécifiés.  
@@ -43,7 +43,7 @@ HRESULT findAcceleratorInlineeLinesByName ( 
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Cette fonction recherche les éléments inline uniquement dans les fonctions de stub d’accélérateur. Il ignore les enregistrements de procédure C++ natifs.  
   
 ## <a name="see-also"></a>Voir aussi  

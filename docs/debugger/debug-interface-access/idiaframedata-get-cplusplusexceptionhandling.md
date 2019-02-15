@@ -37,7 +37,7 @@ HRESULT get_cplusplusExceptionHandling ( 
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Pour déterminer si des structured exception gestion est activé (ce qui est très différent de la gestion des exceptions C++), appelez le [IDiaFrameData::get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md) (méthode).  
   
 ## <a name="see-also"></a>Voir aussi  

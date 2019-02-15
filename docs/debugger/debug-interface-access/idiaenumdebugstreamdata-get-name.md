@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e6cf2bed-ee2b-4122-886d-c20d93df7ff2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7706182a43eae60e16466f56a56b06bf97fce6e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 99c5743829dcb25580bb35317413d4fbe427dead
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847796"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031303"
 ---
 # <a name="idiaenumdebugstreamdatagetname"></a>IDiaEnumDebugStreamData::get_name
 Récupère le nom d’un flux de données de débogage.  

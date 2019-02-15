@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_hasDebugInfo | Microsoft Docs
+title: IDiaSymbol::get_isHotpatchable | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -44,7 +44,7 @@ HRESULT get_hasDebugInfo(
   
 |Spécification|Description|  
 |-----------------|-----------------|  
-|En-tête :|Dia2.h|  
+|En-tête :|dia2.h|  
 |Version :|DIA SDK 8.0|  
   
 ## <a name="see-also"></a>Voir aussi  

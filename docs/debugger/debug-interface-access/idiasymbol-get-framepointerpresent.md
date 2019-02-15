@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d036090a-1651-454d-9130-b798f58ba053
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40464f1c9628fca9a7cd3a0d911c32efef9666a3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 24797dc18a247c050225b3bcd8c8215b3b266464
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959142"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54960430"
 ---
 # <a name="idiasymbolgetframepointerpresent"></a>IDiaSymbol::get_framePointerPresent
 Récupère un indicateur qui spécifie si le pointeur de frame est présent. Quand utiliser le [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md) est défini sur `SymTagFunction`.  
@@ -40,10 +40,10 @@ HRESULT get_framePointerPresent( 
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
   
 ## <a name="requirements"></a>Spécifications  
- En-tête : Dia2.h  
+ En-tête : Dia2.h  
   
  Bibliothèque : diaguids.lib  
   

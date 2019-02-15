@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: a073cc45-0c7b-417e-b5fc-a3b08beccdbc
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad2a0656b03fb057b631319e922a83605fa62a6e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 49d72f58f57e6779f5f12cc4ed3eba42e6716f63
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859462"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54972678"
 ---
 # <a name="idiasessionfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSession::findSymbolsByRVAForAcceleratorPointerTag
 Étant donné une valeur de balise correspondante, cette méthode retourne une énumération de symboles qui sont contenus dans une fonction de stub d’accélérateur parent spécifié à une adresse virtuelle relative spécifiée.  
@@ -47,7 +47,7 @@ HRESULT findSymbolsByRVAForAcceleratorPointerTag ( 
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Appelez cette méthode uniquement sur un `IDiaSymbol` interface qui correspond à une fonction de stub accélérateur.  
   
 ## <a name="see-also"></a>Voir aussi  

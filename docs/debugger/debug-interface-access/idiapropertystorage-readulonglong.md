@@ -41,7 +41,7 @@ HRESULT ReadULONGLONG ( 
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_INVALIDARG` si la propriété n’est pas de type `ULONGLONG`.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Un `ULONGLONG` est défini par Windows comme un entier non signé 64 bits.  
   
 ## <a name="see-also"></a>Voir aussi  

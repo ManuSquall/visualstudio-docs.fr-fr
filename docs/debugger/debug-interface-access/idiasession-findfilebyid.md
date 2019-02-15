@@ -41,7 +41,7 @@ HRESULT findFileById ( 
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  L’identificateur de fichier source est une valeur unique utilisée en interne pour le SDK DIA pour rendre tous les fichiers source unique. Cette méthode est généralement utilisée en interne pour le SDK DIA.  
   
 ## <a name="see-also"></a>Voir aussi  

@@ -1,5 +1,5 @@
 ---
-title: IDiaReadExeAtOffsetCallback::ReadExecutableAt | Microsoft Docs
+title: IDiaReadExeAtOffsetCallback::ReadExecutableAt (méthode)
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -40,13 +40,13 @@ HRESULT ReadExecutableAt ( 
  cbData  
  [in] Nombre d’octets à lire.  
   
- pcbData  
+ cbData  
  [out] Retourne le nombre d’octets lus.  
   
  data[]  
  [in, out] Un tableau est rempli avec les octets lus à partir du fichier.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Cette méthode est appelée par le code de prise en charge DIA pour charger des octets de données à partir d’un fichier exécutable à l’aide d’un décalage de fichier absolu. Cette méthode est appelée à l’appui de la [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) (méthode).  
   
 ## <a name="see-also"></a>Voir aussi  

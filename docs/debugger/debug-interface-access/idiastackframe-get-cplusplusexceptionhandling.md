@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f2631820-c986-40ca-b61e-230d7a9c426c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98047835046342731d5c04f0370b5b1be37ac8c6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a342fc0c6b63cd518a41210f46dc8c893f36b2eb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889500"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938287"
 ---
 # <a name="idiastackframegetcplusplusexceptionhandling"></a>IDiaStackFrame::get_cplusplusExceptionHandling
 Récupère un indicateur qui indique si la gestion des exceptions C++ sont appliquée.  
@@ -37,7 +37,7 @@ HRESULT get_cplusplusExceptionHandling ( 
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si la propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Gestion des exceptions C++ n’est pas le même que structurée ou la gestion des exceptions de système.  
   
  Pour déterminer si structurée des exceptions est en vigueur, appelez le [IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md) (méthode).  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 02fa56c1-87b6-405a-adee-3bb6bc62de2d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbf8a7b7e7d71172f93fee3d6548c69254301a98
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a528201d7f3ba817da9e903abf4bc7570351711a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895192"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919445"
 ---
 # <a name="idialinenumbergetcolumnnumberend"></a>IDiaLineNumber::get_columnNumberEnd
 Récupère le numéro de colonne source basé sur un où l’expression ou l’instruction se termine.  
@@ -37,7 +37,7 @@ HRESULT get_columnNumberEnd ( 
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  La valeur de la colonne retournée par cette méthode est un décalage dans la ligne à la position après le dernier caractère de l’instruction sur la ligne d’octets.  
   
 ## <a name="see-also"></a>Voir aussi  

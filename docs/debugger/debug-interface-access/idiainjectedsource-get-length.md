@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 38b88b8b-c2e0-4b2d-8b8b-9ff373733e78
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dac6a920e45c3b8d008d83185feb2a138f9273d8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 492c223543b4c7661a9709b88d6d162dd591a756
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832698"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973614"
 ---
 # <a name="idiainjectedsourcegetlength"></a>IDiaInjectedSource::get_length
 Récupère le nombre d’octets de code.  
@@ -37,7 +37,7 @@ HRESULT get_length ( 
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  La valeur retournée par cette méthode est la longueur du code source et est la même valeur que celles retournées par la [IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md) (méthode).  
   
 ## <a name="see-also"></a>Voir aussi  

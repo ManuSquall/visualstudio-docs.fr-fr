@@ -44,7 +44,7 @@ HRESULT get_hasNestedTypes ( 
   
 |Spécification|Description|  
 |-----------------|-----------------|  
-|En-tête :|Dia2.h|  
+|En-tête :|dia2.h|  
 |Version :|DIA SDK v7.0|  
   
 ## <a name="see-also"></a>Voir aussi  

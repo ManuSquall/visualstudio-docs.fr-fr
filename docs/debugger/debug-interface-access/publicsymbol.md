@@ -27,7 +27,7 @@ Lorsque le fichier .exe est créé, chaque symbole public (un minimum, chaque gl
 ## <a name="properties"></a>Propriétés  
  Le tableau suivant présente les propriétés qui sont valides pour ce type de symbole.  
   
-|Propriété|Type de données|Description|  
+|Property|Type de données|Description|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Partie du décalage de l’emplacement ; Pour plus d’informations, consultez le [LocationType (énumération)](../../debugger/debug-interface-access/locationtype.md).|  
 |[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)|`DWORD`|Partie de section d’emplacement ; Pour plus d’informations, consultez le [LocationType (énumération)](../../debugger/debug-interface-access/locationtype.md).|  

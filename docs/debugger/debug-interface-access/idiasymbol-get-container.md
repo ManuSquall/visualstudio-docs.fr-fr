@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 24e832eb-80b3-484c-a41b-11477ec9de99
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9b528806091bb0b84e8bd2d10b4594b4bf4d018
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 08019de39c6e579bb0cfa08732f97a748141fb5b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935877"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039798"
 ---
 # <a name="idiasymbolgetcontainer"></a>IDiaSymbol::get_container
 Cette fonction récupère un pointeur vers un symbole représentant le conteneur/parent de ce symbole.  
@@ -44,7 +44,7 @@ HRESULT get_container(
   
 |Spécification|Description|  
 |-----------------|-----------------|  
-|En-tête :|Dia2.h|  
+|En-tête :|dia2.h|  
 |Version :|DIA SDK 8.0|  
   
 ## <a name="see-also"></a>Voir aussi  

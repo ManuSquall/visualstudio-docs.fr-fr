@@ -41,7 +41,7 @@ HRESULT ReadBSTR ( 
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_INVALIDARG` si la propriété n’est pas de type `BSTR`.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Un `BSTR` est défini par Windows sous forme de chaîne se terminant par zéro des caractères larges.  
   
 ## <a name="see-also"></a>Voir aussi  

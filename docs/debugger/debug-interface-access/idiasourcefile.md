@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6e9be757-797f-4960-ba62-c14092620bbd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ca628689376bce696f49b3d1e01110108f58c0a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: a4bbbf35ab49eeee730a4c96f8cd66ff50142376
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851207"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043100"
 ---
 # <a name="idiasourcefile"></a>IDiaSourceFile
 Représente un fichier source.  
@@ -39,7 +39,7 @@ IDiaSourceFile : IUnknown
 |[IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)|Récupère un énumérateur de la compilands avec des numéros de ligne référençant ce fichier.|  
 |[IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)|Récupère les octets de la somme de contrôle.|  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
   
 ## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
  Obtenez cette interface en appelant le [IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md) ou [IDiaEnumSourceFiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md) méthodes. Consultez l’exemple pour plus d’informations.  
@@ -73,7 +73,7 @@ void ShowSourceFiles(IDiaTable *pTable)
 ```  
   
 ## <a name="requirements"></a>Spécifications  
- En-tête : Dia2.h  
+ En-tête : Dia2.h  
   
  Bibliothèque : diaguids.lib  
   

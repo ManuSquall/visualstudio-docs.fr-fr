@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_notReached | Microsoft Docs
+title: IDiaSymbol::get_isNaked | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e44ba922-6cda-40c2-9b62-44e5a8628e63
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cdc228f239ae8ed051c90cf8e9ee57a098e49a86
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4b3ef7418a232c5c6fa06062fbe6214f55e40b8e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859891"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55008528"
 ---
 # <a name="idiasymbolgetnotreached"></a>IDiaSymbol::get_notReached
 Récupère un indicateur qui spécifie si la fonction ou l’étiquette n’est jamais atteint.  
@@ -44,7 +44,7 @@ HRESULT get_notReached(
   
 |Spécification|Description|  
 |-----------------|-----------------|  
-|En-tête :|Dia2.h|  
+|En-tête :|dia2.h|  
 |Version :|DIA SDK 8.0|  
   
 ## <a name="see-also"></a>Voir aussi  

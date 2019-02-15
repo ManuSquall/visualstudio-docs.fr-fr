@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d3197a38-5973-4e56-873e-4f1b84c3f674
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b896cf54f06e84316f67a32c10f66dda21c2cd9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: e50952247d441b9fbc3132074b9b17c201d34dad
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910725"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931388"
 ---
 # <a name="idiapropertystorage"></a>IDiaPropertyStorage
 Vous permet de lire les propriétés persistantes d’un jeu de propriétés DIA.  
@@ -42,7 +42,7 @@ IDiaPropertyStorage : IUnknown
 |[IDiaPropertyStorage::ReadPropertyNames](../../debugger/debug-interface-access/idiapropertystorage-readpropertynames.md)|Obtient correspondant de noms de chaîne pour donné des identificateurs de propriété.|  
 |[IDiaPropertyStorage::ReadULONGLONG](../../debugger/debug-interface-access/idiapropertystorage-readulonglong.md)|Lit `ULONGLONG` valeurs dans un jeu de propriétés.|  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Chaque propriété dans un jeu de propriétés est identifiée par un identificateur (ID), de la propriété quatre octets `ULONG` valeur unique à cet ensemble. Les propriétés exposées par le biais du `IDiaPropertyStorage` interface correspondent à celles disponibles dans l’interface parente. Par exemple, les propriétés de la [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) interface peut être accédée par nom via la `IDiaPropertyStorage` interface (Notez toutefois que même si la propriété peut être accessible, cela ne signifie pas la propriété est valide pour un particulier `IDiaSymbol` objet).  
   
 ## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
@@ -120,7 +120,7 @@ void PrintPropertyStorage(IDiaPropertyStorage* pPropertyStorage)
 ```  
   
 ## <a name="requirements"></a>Spécifications  
- En-tête : Dia2.h  
+ En-tête : Dia2.h  
   
  Bibliothèque : diaguids.lib  
   

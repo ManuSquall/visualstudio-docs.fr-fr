@@ -31,7 +31,7 @@ HRESULT RestrictOriginalPathAccess ();
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Un code de retour autre que `S_OK` empêche la recherche d’un fichier .pdb dans le répertoire de débogage d’origine. Le répertoire de débogage d’origine est le chemin d’accès au fichier de symboles compilé dans le fichier exécutable lorsque le débogage est activé. Ce chemin d’accès n’est pas nécessairement le même que le chemin d’accès où se trouve l’exécutable.  
   
 ## <a name="see-also"></a>Voir aussi  

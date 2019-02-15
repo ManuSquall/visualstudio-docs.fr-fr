@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_hasEHa | Microsoft Docs
+title: IDiaSymbol::get_volatileType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cb61dfd9-fe69-461c-8185-288440454864
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42a075b4447259bfacaf9e31c97f9e51b0b0a730
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ca6cc1306fec11033b1430adbb6bd13093d48061
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847332"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926813"
 ---
 # <a name="idiasymbolgethaseha"></a>IDiaSymbol::get_hasEHa
 Récupère un indicateur qui spécifie si la fonction contient des exceptions asynchrones (structurées).  
@@ -40,14 +40,14 @@ HRESULT get_hasEHa(
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Il est possible de combiner asynchrone ou structurée des exceptions avec gestion des exceptions de style C++, mais elle nécessite un commutateur de compilateur spécifique, /EHa, pour l’activer.  
   
 ## <a name="requirements"></a>Spécifications  
   
 |Spécification|Description|  
 |-----------------|-----------------|  
-|En-tête :|Dia2.h|  
+|En-tête :|dia2.h|  
 |Version :|DIA SDK 8.0|  
   
 ## <a name="see-also"></a>Voir aussi  

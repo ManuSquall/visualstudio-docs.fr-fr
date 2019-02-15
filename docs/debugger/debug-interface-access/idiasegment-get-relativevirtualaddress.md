@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b6a573a1-3671-4c1c-a5c2-2ab8f07fd510
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c223e22b0b4d147da64a450c0a46ac12e370304c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d98e70b866b8177ad021c39764ed954b5773aa3a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920746"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952104"
 ---
 # <a name="idiasegmentgetrelativevirtualaddress"></a>IDiaSegment::get_relativeVirtualAddress
 Récupère l’adresse virtuelle relative (RVA) du début de la section.  

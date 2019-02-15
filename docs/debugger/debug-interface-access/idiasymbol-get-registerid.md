@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f881e793-eb9e-48dc-a847-dd61d77174fc
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0938bc4cc8692f9cb092938429c925fe68433bf0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7a7007a0d80e1e973bb2c5918cfc5a3194922f8f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911219"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033464"
 ---
 # <a name="idiasymbolgetregisterid"></a>IDiaSymbol::get_registerId
 Récupère l’indicateur de Registre de l’emplacement lorsque le [LocationType (énumération)](../../debugger/debug-interface-access/locationtype.md) est défini sur `LocIsEnregistered`.  
@@ -40,7 +40,7 @@ HRESULT get_registerId ( 
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Si le symbole est relatif à un Registre, autrement dit, si le symbole [LocationType (énumération)](../../debugger/debug-interface-access/locationtype.md) a la valeur `LocIsRegRel`, utiliser le `get_registerId` méthode suivie par un appel à la [IDiaSymbol::get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md) méthode pour obtenir le décalage à partir du Registre où se trouve le symbole.  
   
 ## <a name="see-also"></a>Voir aussi  

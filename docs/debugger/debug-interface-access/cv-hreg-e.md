@@ -442,7 +442,7 @@ enum CV_HREG_e { 
  CV_M32R_*  
  Registres utilisés par le processeur Mitsubishi M32R.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Chaque type de processeur utilise son propre jeu de registres.  
   
  Les valeurs dans cette énumération sont passées aux méthodes suivantes :  

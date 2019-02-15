@@ -31,7 +31,7 @@ HRESULT RestrictReferencePathAccess();
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Un code de retour autre que `S_OK` pour empêcher la recherche d’un fichier .pdb dans le chemin d’accès où se trouve le fichier .exe.  
   
 ## <a name="see-also"></a>Voir aussi  

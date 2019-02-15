@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fafc38fe-74dc-4726-9a51-eebf3a673d7f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a29c1a9fa21b973bca5db03bae07f608f82014f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 42ab689c5c94fcf0200775d9fdd59ac2a0f7202c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888021"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54916975"
 ---
 # <a name="idiastackwalkhelperpdataforva"></a>IDiaStackWalkHelper::pdataForVA
 Retourne le bloc de données PDATA associé à l’adresse virtuelle.  
@@ -49,7 +49,7 @@ HRESULT pdataForVA( 
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’existe aucun PDATA pour l’adresse spécifiée. Sinon, retourne un code d'erreur.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  PDATA (la section nommée « .pdata ») d’un module contient des informations sur la gestion des exceptions de fonctions.  
   
  L’appelant sait que la quantité de données doit être retournée afin de l’appelant n’a pas besoin de poser pour la quantité de données est disponible. Par conséquent, il est acceptable pour une implémentation de cette méthode retourne une erreur si le `pbData` paramètre est `NULL`.  

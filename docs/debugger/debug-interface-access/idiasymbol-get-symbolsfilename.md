@@ -40,7 +40,7 @@ HRESULT get_symbolsFileName ( 
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Cette propriété est valide uniquement pour les symboles avec un [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md) valeur `SymTagExe` qui ont une portée globale.  
   
 ## <a name="see-also"></a>Voir aussi  

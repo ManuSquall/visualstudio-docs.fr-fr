@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_addressOffset | Microsoft Docs
+title: IDiaSymbol::get_isNaked | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c15639b0-7f37-46c7-891b-40273b7f6319
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78f801faae0a32bd928f6adb8062acf18bdf1332
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 529731e358c676c3bcdc56d9e2d78b4637754154
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875191"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004992"
 ---
 # <a name="idiasymbolgetaddressoffset"></a>IDiaSymbol::get_addressOffset
 Récupère la partie décalage d’un emplacement de l’adresse. Quand utiliser le [LocationType (énumération)](../../debugger/debug-interface-access/locationtype.md) est défini sur `LocIsStatic`.  
@@ -40,7 +40,7 @@ HRESULT get_addressOffset ( 
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Pour les membres statiques sont situés dans une DLL externe, le décalage retourné par cette méthode peut être 0 car cette méthode repose sur l’obtention de l’adresse virtuelle du membre. Adresses virtuelles sont valides uniquement si le [IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) méthode dans le [IDiaSession](../../debugger/debug-interface-access/idiasession.md) interface a été appelée avec un paramètre différent de zéro en spécifiant l’adresse de chargement de la DLL.  
   
  Pour obtenir la partie de la section d’une adresse, appelez le [IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md) (méthode).  
@@ -49,7 +49,7 @@ HRESULT get_addressOffset ( 
   
 |Spécification|Description|  
 |-----------------|-----------------|  
-|En-tête :|Dia2.h|  
+|En-tête :|dia2.h|  
 |Version :|DIA SDK v7.0|  
   
 ## <a name="see-also"></a>Voir aussi  

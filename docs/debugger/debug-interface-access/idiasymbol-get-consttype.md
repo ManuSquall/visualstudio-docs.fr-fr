@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_constType | Microsoft Docs
+title: IDiaSymbol::get_symbolsFileName | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -44,7 +44,7 @@ HRESULT get_constType ( 
   
 |Spécification|Description|  
 |-----------------|-----------------|  
-|En-tête :|Dia2.h|  
+|En-tête :|dia2.h|  
 |Version :|DIA SDK v7.0|  
   
 ## <a name="see-also"></a>Voir aussi  

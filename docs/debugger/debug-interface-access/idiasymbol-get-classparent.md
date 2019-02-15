@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 99db875a-caae-4d60-ae70-64bc8a9f6fba
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38f91ff64337fd9a1d18fa9ae63743437fa1287b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3b224b0311da78b709f7782f4f66e02869c595d8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864814"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992839"
 ---
 # <a name="idiasymbolgetclassparent"></a>IDiaSymbol::get_classParent
 Récupère une référence au parent de la classe du symbole.  
@@ -44,10 +44,10 @@ HRESULT get_classParent ( 
   
 |Spécification|Description|  
 |-----------------|-----------------|  
-|En-tête :|Dia2.h|  
+|En-tête :|dia2.h|  
 |Version :|DIA SDK v7.0|  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Les types de symboles qui peuvent être les parents de la classe sont documentées dans [hiérarchie de classe de Types de symboles](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md).  
   
 ## <a name="see-also"></a>Voir aussi  

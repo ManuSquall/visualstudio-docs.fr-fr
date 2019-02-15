@@ -1,5 +1,5 @@
 ---
-title: IDiaFrameData::get_lengthBlock | Microsoft Docs
+title: IDiaFrameData::get_lengthBlock (méthode)
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -37,7 +37,7 @@ HRESULT get_lengthBlock ( 
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  La valeur retournée par cette méthode est généralement utilisée dans l’interprétation d’une chaîne de programme (voir la [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) méthode pour la définition d’une chaîne de programme).  
   
 ## <a name="see-also"></a>Voir aussi  

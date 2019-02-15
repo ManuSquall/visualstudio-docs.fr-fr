@@ -37,7 +37,7 @@ HRESULT get_loadAddress ( 
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  L’adresse de chargement retourné est toujours de zéro, sauf si spécifiquement défini à l’aide du [IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) (méthode).  
   
 ## <a name="see-also"></a>Voir aussi  
