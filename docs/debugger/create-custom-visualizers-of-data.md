@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: c24c006f-f2ac-429f-89db-677fc0c6e1ea
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bb693e509eb12b01d3c70f8f341b39de06e5797
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
-ms.translationtype: HT
+ms.openlocfilehash: 8649e862a20e6f6c854a2bbe67b756103c5e68dc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54204386"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009043"
 ---
 # <a name="create-custom-data-visualizers"></a>Créer des visualiseurs de données personnalisées
  Un *visualiseur* fait partie de la [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] interface utilisateur du débogueur qui affiche une variable ou un objet d’une manière adaptée à son type de données. Par exemple, un visualiseur HTML interprète une chaîne HTML et affiche le résultat, telle qu’affichée dans une fenêtre de navigateur. Un visualiseur bitmap interprète une structure bitmap et affiche le graphique représenté. Certains visualiseurs vous permettent de modifier, ainsi que d’afficher les données.
@@ -82,7 +82,7 @@ Vous spécifiez le code côté programme débogué à l’aide de la <xref:Syste
   
 ## <a name="see-also"></a>Voir aussi
   
- [Procédure pas à pas : écrire un visualiseur en C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
+ [Procédure pas à pas : écrire un visualiseur en C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
 
  [Procédure pas à pas : écrire un visualiseur en Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)  
   

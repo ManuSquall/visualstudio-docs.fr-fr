@@ -1,24 +1,19 @@
 ---
 title: Définir une propriété Automation unique pour les contrôles Windows Store à des fins de test| Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 9bdd74ff-2534-4fc7-a5c3-a77bf7843037
 caps.latest.revision: 12
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 25890adaf22d1855426813c35e69766bba02a1c8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4ed707c1dfa2d756bdf3fa879051795c6ac05eed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833926"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54789077"
 ---
 # <a name="set-a-unique-automation-property-for-windows-store-controls-for-testing"></a>Définir une propriété Automation unique pour les contrôles Windows Store à des fins de test
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +58,7 @@ Si vous souhaitez exécuter des tests codés de l’interface utilisateur pour v
  Affectez à AutomationProperties.AutomationId la valeur **ButtonX** de façon explicite dans le code XAML du contrôle.  
   
 ```xaml  
-<Button AutomationProperties.AutomationId=“ButtonX” Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />  
+<Button AutomationProperties.AutomationId=“ButtonX” Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />  
   
 ```  
   
@@ -82,7 +77,7 @@ Si vous souhaitez exécuter des tests codés de l’interface utilisateur pour v
   
  ![Options XAML diverses](../test/media/cuit-windowsstoreapp-b.png "CUIT_WindowsStoreApp_B")  
   
- **Blend pour Visual Studio :** utilisez l’une des méthodes suivantes pour réaliser cela depuis Blend pour Visual Studio.  
+ **Blend pour Visual Studio :** utilisez une des méthodes suivantes pour réaliser cela depuis Blend pour Visual Studio.  
   
 > [!NOTE]
 >  Vous pouvez utiliser cette méthode uniquement pour les contrôles créés de manière statique à l’aide du code XAML.  
@@ -133,7 +128,7 @@ Si vous souhaitez exécuter des tests codés de l’interface utilisateur pour v
                         </Setter.Value>  
                     </Setter>  
                 </Style>  
-            </ListBox.ItemContainerStyle>           
+            </ListBox.ItemContainerStyle>           
         </ListBox>  
   
 ```  
@@ -206,7 +201,3 @@ private void CreateCheckBox(string txt, StackPanel panel)
     }  
   
 ```  
-
-
-
-

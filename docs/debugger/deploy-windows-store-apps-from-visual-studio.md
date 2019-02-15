@@ -10,15 +10,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 38e3f53a22b7f8dfa84d327fb2c10ef5efacddd4
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 13dc1f44e329f35ad9871fe5969a65d4ad46e770
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53821313"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55043763"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Déployer des applications UWP à partir de Visual Studio
 
@@ -28,7 +28,7 @@ La fonctionnalité de déploiement de Visual Studio génère et inscrit les appl
 
 - Lorsque la cible est un périphérique distant, Visual Studio copie les fichiers requis sur l'ordinateur distant et enregistre l'appareil sur ce périphérique.
 
-Le déploiement est automatique lorsque vous déboguez une application depuis Visual Studio à l'aide de l'option Démarrer le débogage** (clavier : F5) ou le **démarrer sans débogage** option (clavier : CTRL + F5 Vous pouvez aussi déployer votre application manuellement. Le déploiement manuel est utile dans les scénarios suivants :
+Le déploiement est automatique lorsque vous déboguez votre application à partir de Visual Studio à l’aide de la **démarrer le débogage** option (clavier : F5) ou le **démarrer sans débogage** option (clavier : CTRL + F5). Vous pouvez aussi déployer votre application manuellement. Le déploiement manuel est utile dans les scénarios suivants :
 
 - Test ad hoc sur un ordinateur local ou distant.
 

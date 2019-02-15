@@ -1,32 +1,27 @@
 ---
-title: 'Étape 3 : Définir les propriétés de votre formulaire | Microsoft Docs'
-ms.custom: ''
+title: 'Étape 3 : Définir les propriétés de votre formulaire | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 634ef037-1525-48c8-ac7f-abf04be69376
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 64e197e3f6f34cc46d91c330b4d5f80b3c6ce578
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d4a93dfca4681f93d0d2a5c45b189fd34c8dccca
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848629"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782247"
 ---
 # <a name="step-3-set-your-form-properties"></a>Étape 3 : définir les propriétés de votre formulaire
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ensuite, vous utilisez la fenêtre **Propriétés** pour changer l’apparence de votre formulaire.  
   
- ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo")Pour obtenir une version vidéo de cette rubrique, consultez [Didacticiel 1 : Créer une visionneuse d’images en Visual Basic – Vidéo 1](http://go.microsoft.com/fwlink/?LinkId=205209) ou [Didacticiel 1 : Créer une visionneuse d’images en C# – Vidéo 1](http://go.microsoft.com/fwlink/?LinkId=205199). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.  
+ ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo")pour obtenir une version vidéo de cette rubrique, consultez [didacticiel 1 : créer une visionneuse d’images en Visual Basic – vidéo 1](http://go.microsoft.com/fwlink/?LinkId=205209) ou [didacticiel 1 : créer une visionneuse d’images dans C# -Vidéo 1](http://go.microsoft.com/fwlink/?LinkId=205199). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.  
   
 ### <a name="to-set-your-form-properties"></a>Pour définir les propriétés de votre formulaire  
   
@@ -80,6 +75,3 @@ Ensuite, vous utilisez la fenêtre **Propriétés** pour changer l’apparence d
 -   Pour accéder à l’étape suivante du didacticiel, consultez [Étape 4 : Composer votre formulaire avec un contrôle TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).  
   
 -   Pour revenir à l’étape précédente du didacticiel, consultez [Étape 2 : Exécuter votre programme](../ide/step-2-run-your-program.md).
-
-
-

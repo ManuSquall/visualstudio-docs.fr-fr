@@ -10,19 +10,19 @@ dev_langs:
 ms.assetid: 51893967-98c8-4141-ba40-03646f221760
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ffb41dc978598264cfff165602c9c9a8e4cce71
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 131fb1cf2db9a22bb6bc6aa4ca313481c3b399aa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947554"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991578"
 ---
 # <a name="debug-html-and-css-sample-code"></a>Déboguer des exemples de code HTML et CSS
   
- Le code dans cette rubrique est l’exemple de fichier pour [Guide de démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md) Les erreurs présentes par conception dans le guide de démarrage rapide sont résolues dans cette version du code.  
+ Le code dans cette rubrique est l’exemple de fichier pour [Guide de démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md). Les erreurs présentes par conception dans le guide de démarrage rapide sont résolues dans cette version du code.  
   
 ## <a name="sample-code"></a>Exemple de code  
  Le code HTML suivant est utilisé dans l’étiquette \<body> du guide de démarrage rapide.  
