@@ -5,18 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
 - Just-In-Time debugging
-ms.assetid: ee4d79a5-a1d2-4418-a93f-dd57a53e1836
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbdf32377db26cdb3696187248bd9b8becb8de24
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a593548936b84f852015a09dd8f63f7fceb7472b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831548"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921430"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Déboguer à l’aide du débogueur juste à temps dans Visual Studio
 
@@ -40,7 +39,7 @@ Vous pouvez configurer le débogage à partir de Visual Studio juste-à-temps **
 
    ![Activer ou désactiver le débogage JIT](../debugger/media/dbg-jit-enable-or-disable.png "activer ou désactiver le débogage JIT")
 
-1. Dans le **activer JIT pour ces types de code** , sélectionnez les types de code que vous souhaitez pour déboguer du débogage juste-à-temps : **Managed**, **natif**, et/ou **Script**.
+1. Dans le **activer JIT pour ces types de code** , sélectionnez les types de code que vous souhaitez pour déboguer du débogage juste-à-temps : **managé**, **natif**, et/ou  **Script**.
    
 1. Sélectionnez **OK**.
 
@@ -56,7 +55,7 @@ Le débogage juste-à-temps peut toujours être activé même si Visual Studio n
 
 2.  Dans le **Éditeur du Registre** fenêtre, recherchez et supprimez les entrées de Registre suivantes :
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\. NETFramework\DbgManagedDebugger**
+    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\DbgManagedDebugger**
 
     -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
@@ -64,7 +63,7 @@ Le débogage juste-à-temps peut toujours être activé même si Visual Studio n
 
 3.  Si votre ordinateur exécute un système d’exploitation de 64 bits, également supprimer les entrées de Registre suivantes :
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\. NETFramework\DbgManagedDebugger**
+    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger**
 
     -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
@@ -105,7 +104,7 @@ Pour activer le débogage au lieu de la gestion des erreurs Windows Form standar
 
 Pour cet exemple, vous allez effectuer un C# application console dans Visual Studio lève une [NullReferenceException](/dotnet/api/system.nullreferenceexception).
 
-1. Dans Visual Studio, créez un C# application console (**fichier** > **New** > **projet** > **Visual C#**   >  **Application console**) nommé *ThrowsNullException*. Pour plus d’informations sur la création de projets dans Visual Studio, consultez [procédure pas à pas : Créer une application simple](/visualstudio/get-started/csharp/tutorial-wpf)
+1. Dans Visual Studio, créez un C# application console (**fichier** > **New** > **projet** > **Visual C#**   >  **Application console**) nommé *ThrowsNullException*. Pour plus d’informations sur la création de projets dans Visual Studio, consultez [procédure pas à pas : créer une application simple](/visualstudio/get-started/csharp/tutorial-wpf).
    
 1. Lorsque le projet s’ouvre dans Visual Studio, ouvrez le *Program.cs* fichier. Remplacez la méthode Main() par le code suivant, qui imprime une ligne dans la console et puis lève une exception NullReferenceException :
    
@@ -159,7 +158,7 @@ Si juste-à-temps de débogage ne démarre pas lorsqu’une application tombe en
 
   - **Rapport d’erreurs HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Windows**
     
-  - (Pour les ordinateurs 64 bits) : **Rapport d’erreurs HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows**
+  - (Pour les ordinateurs 64 bits) : **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows rapport d’erreurs**
   
   Pour plus d’informations, consultez [. Paramètres de rapport d’erreurs Windows](https://docs.microsoft.com/windows/desktop/wer/wer-settings).
   
@@ -193,7 +192,8 @@ Vous pouvez voir les messages d’erreur suivant juste-à-temps au cours de déb
     Pour résoudre ce problème, utilisez Visual Studio Installer pour réinstaller ou réparer votre installation de Visual Studio.
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Sécurité du débogueur](../debugger/debugger-security.md)
 - [Présentation du débogueur](../debugger/debugger-feature-tour.md)
 - [Options, débogage, juste-à-temps boîte de dialogue](../debugger/just-in-time-debugging-options-dialog-box.md)
-- [Avertissement de sécurité : l’attachement à un processus appartenant à un utilisateur non approuvé peut être dangereux. Si les informations suivantes semblent suspectes ou si vous avez des doutes, ne faites pas d’attachement à ce processus](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+- [Avertissement de sécurité : L’attachement à un processus appartenant à un utilisateur non approuvé peut être dangereux. Si les informations suivantes semblent suspectes ou si vous avez des doutes, ne faites pas d’attachement à ce processus](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)

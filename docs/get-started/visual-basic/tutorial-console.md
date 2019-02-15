@@ -3,7 +3,6 @@ title: 'Tutoriel : Bien démarrer avec Visual Basic'
 description: Découvrez comment créer des applications console Visual Basic dans Visual Studio, étape par étape.
 ms.custom: seodec18, get-started
 ms.date: 08/10/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: vb
@@ -14,12 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e2d5cf15b6afd1b6eed6d800a1b7ba67c1f87b8
-ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
+ms.openlocfilehash: 146a0cdb5e553f262bea0b5b7dd5f592592cf6ad
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55424497"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155693"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Tutoriel : Bien démarrer avec Visual Basic dans Visual Studio
 
@@ -142,10 +141,10 @@ Une application console prend une entrée et affiche la sortie dans une fenêtre
 Félicitations ! Vous avez terminé ce didacticiel. Pour en apprendre davantage, consultez le tutoriel suivant.
 
 > [!div class="nextstepaction"]
-> [Tutoriel vidéo : Concepts de base de Visual Basic pour les débutants](https://mva.microsoft.com/en-us/training-courses/visual-basic-fundamentals-for-absolute-beginners-16507)
+> [Générer une bibliothèque avec Visual Basic et le SDK .NET Core dans Visual Studio](/dotnet/core/tutorials/vb-library-with-visual-studio)
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Nouveautés de Visual Basic](/dotnet/visual-basic/getting-started/whats-new)
-* [IntelliSense pour les fichiers de code Visual Basic](../../ide/visual-basic-specific-intellisense.md)
+* [Procédures pas à pas relatives au langage Visual Basic](/dotnet/visual-basic/walkthroughs)
 * [Références du langage Visual Basic](/dotnet/visual-basic/language-reference/index)
+* [IntelliSense pour les fichiers de code Visual Basic](../../ide/visual-basic-specific-intellisense.md)

@@ -5,12 +5,13 @@ author: conceptdev
 ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
-ms.openlocfilehash: 9576048cb6a62f7a4e8c93456154997af359a711
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.custom: video
+ms.openlocfilehash: 290c1971e22a0a0f8ffcd7b92441c81a4ec0037b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296474"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910985"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Bien démarrer avec ASP.NET Core
 
@@ -64,10 +65,10 @@ public static void Main(string[] args)
 ```
 Une application ASP.NET Core crée un serveur web dans sa méthode main en configurant et en lançant un hôte via une instance de [ `WebHostBuilder` ](/aspnet/core/fundamentals/hosting). Ce générateur fournit des méthodes pour permettre la configuration de l’hôte. Dans le modèle d’application, les configurations suivantes sont utilisées :
 
-* `UseKestrel` : spécifie que le serveur Kestrel est utilisé par l’application
-* `UseContentRoot(Directory.GetCurrentDirectory())` : utilise le dossier racine du projet web comme racine du contenu de l’application quand l’application est démarrée à partir de ce dossier
-* `.UseIISIntegration()` : spécifie que l’application doit fonctionner avec IIS. Pour utiliser IIS avec ASP.NET Core, `UseKestrel` et `UseIISIntegration` doivent tous deux être spécifiés.
-* `.UseStartup<Startup>()` : spécifie la classe de démarrage.
+* `UseKestrel`: Spécifie que le serveur Kestrel est utilisé par l’application
+* `UseContentRoot(Directory.GetCurrentDirectory())`: Utilise le dossier racine du projet web comme racine du contenu de l’application quand l’application est démarrée à partir de ce dossier
+* `.UseIISIntegration()`: Spécifie que l’application doit fonctionner avec IIS. Pour utiliser IIS avec ASP.NET Core, `UseKestrel` et `UseIISIntegration` doivent tous deux être spécifiés.
+* `.UseStartup<Startup>()`: Spécifie la classe de démarrage.
 
   Les méthodes Build et Run génèrent l’hôte IWebHost qui hébergera l’application et la démarrera en écoutant les requêtes HTTP entrantes.
 
@@ -130,9 +131,9 @@ Ouvrez le navigateur de votre choix et entrez `http://localhost:5000/`, en rempl
 
 Les applications ASP.NET Core utilisent le modèle de conception MVC (Modèle-Vue-Contrôleur) pour fournir une séparation logique entre les responsabilités de chaque partie de l’application. Le modèle MVC est constitué des éléments suivants :
 
-- **Modèle** : classe qui représente les données de l’application.
-- **Vue** : affiche l’interface utilisateur de l’application (qui est souvent constituée des données du modèle).
-- **Contrôleur** : classe qui gère les demandes du navigateur et qui répond aux entrées et aux interactions de l’utilisateur.
+- **Modèle** : Classe qui représente les données de l’application.
+- **Vue** : Affiche l’interface utilisateur de l’application (qui est souvent constituée des données du modèle).
+- **Contrôleur** : Classe qui gère les demandes du navigateur et qui répond aux entrées et aux interactions de l’utilisateur.
 
 Pour plus d’informations sur l’utilisation du modèle MVC, consultez le guide [Vue d’ensemble du modèle MVC d’ASP.NET Core](/aspnet/core/mvc/overview).
 
@@ -236,3 +237,7 @@ Pour plus d’informations sur les étapes à suivre à partir d’ici, consulte
 - Documentation [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1#build-web-ui-and-web-apis-using-aspnet-core-mvc).
 - [Création de services backend pour les applications mobiles natives](/aspnet/core/mobile/native-mobile-backend), qui montre comment créer un service REST en utilisant ASP.NET Core pour une application Xamarin.Forms.
 - [Ateliers pratiques ASP.NET Core](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started).
+
+## <a name="related-video"></a>Vidéo associée
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Build-Your-First-App/player]

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : ajouter, mettre à jour ou supprimer une référence de service de données WCF'
+title: 'Comment : ajouter, mettre à jour ou supprimer une référence de service de données WCF'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,17 +12,16 @@ ms.assetid: 892ebf37-3af4-472e-8744-92837677d611
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3d00c711a1d26f8fb38acc66d15454bae035bcdf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 201f04852dea58d51cae10e98429f7b5f2bc6951
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947255"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945454"
 ---
-# <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Procédure : ajouter, mettre à jour ou supprimer une référence de service de données WCF
+# <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Guide pratique pour ajouter, mettre à jour ou supprimer une référence de service de données WCF
 Un *référence de service* permet à un projet à l’accès à un ou plusieurs [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Utilisez le **ajouter une référence de Service** boîte de dialogue pour rechercher des [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] dans la solution actuelle, localement, sur un réseau local ou sur Internet.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]

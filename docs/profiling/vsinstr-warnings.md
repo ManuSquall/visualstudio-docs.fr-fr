@@ -14,19 +14,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68a4136a67bea3dc06378265df9f01878c1a14dc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 079cf7681f8583b500068c0ca6aea60ce0fad66b
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923975"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55767904"
 ---
 # <a name="vsinstr-warnings"></a>Avertissements VSInstr
 Le tableau suivant liste les avertissements émis par l’outil *VSInstr.exe*. Vous pouvez utiliser l’option NOWARN avec les numéros d’avertissement pour empêcher l’affichage de l’avertissement.  
   
 |Numéro d’avertissement|Description|  
 |--------------------|-----------------|  
-|**VSP1026**|La couverture n’est pas prise en charge sur les bibliothèques qui ne référencent pas MSCorLib. C’est souvent le cas pour les bibliothèques portables.|  
+|**VSP1026**|La couverture n’est pas prise en charge sur les bibliothèques qui ne référencent pas MSCorLib. C’est souvent le cas pour les bibliothèques portables.<br /><br />L’option de ligne de commande [/EnableCodeCoverage](/visualstudio/test/vstest-console-options) est requise pour .NET Core.|  
 |**VSP2000**|Erreur interne. Impossible d’obtenir le nom de fichier du module de cet exécutable.|  
 |**VSP2001**|\<nom_assembly> est un assembly à nom fort. Vous devrez le resigner avant de l’exécuter.<br /><br /> Cet avertissement se produit quand un assembly signé est instrumenté. Vous pouvez utiliser l’outil *sn.exe* pour resigner le fichier binaire ou pour désactiver temporairement l’exigence de nom fort. Pour plus d’informations, consultez [Sn.exe (outil Strong Name Tool)](/dotnet/framework/tools/sn-exe-strong-name-tool).|  
 |**VSP2002**|Impossible de trouver la fonction \<nom_fonction> dans le fichier \<nom_fichier><br /><br /> Cet avertissement se produit si une fonction est introuvable dans le fichier spécifié.|  

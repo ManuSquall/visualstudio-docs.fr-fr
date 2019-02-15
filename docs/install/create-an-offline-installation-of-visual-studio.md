@@ -1,9 +1,8 @@
 ---
 title: Créer une installation hors connexion
 description: Découvrez comment installer Visual Studio hors connexion quand vous avez une connexion Internet non fiable ou une bande passante faible.
-ms.date: 01/15/2019
+ms.date: 02/06/2019
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - offline installation [Visual Studio]
@@ -15,16 +14,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbf0f68f090219aea8f3ddde31e697463f8e9ee3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 71c618efc383227167b3d4ccb034e32758229294
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035521"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954021"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>Créer une installation hors connexion de Visual Studio 2017
 
-Nous avons conçu Visual Studio 2017 pour qu’il fonctionne correctement dans un large éventail de configurations réseau et informatiques. Bien que nous vous recommandions d’essayer le [programme d’installation web de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)&mdash;qui est un petit fichier vous permettant d’être à jour des derniers correctifs et fonctionnalités&mdash;nous sommes conscients du fait que cela n’est peut-être pas possible pour vous.
+Nous avons conçu Visual Studio 2017 pour qu’il fonctionne correctement dans un large éventail de configurations réseau et informatiques. Bien que nous vous recommandions d’essayer le [programme d’installation web de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)&mdash;qui est un petit fichier vous permettant d’être à jour des derniers correctifs et fonctionnalités&mdash;nous sommes conscients du fait que cela n’est peut-être pas possible pour vous.
 
 Par exemple, vous avez peut-être une connexion Internet non fiable ou une bande passante faible. Dans ce cas, vous avez le choix entre plusieurs options : Vous pouvez utiliser la nouvelle fonctionnalité « Tout télécharger, puis installer » pour télécharger les fichiers avant de les installer, ou vous pouvez utiliser la ligne de commande pour créer un cache local des fichiers.
 
@@ -33,10 +32,14 @@ Par exemple, vous avez peut-être une connexion Internet non fiable ou une bande
 
 ## <a name="use-the-download-all-then-install-feature"></a>Utiliser la fonctionnalité « Tout télécharger, puis installer »
 
-[**Nouveautés de la version 15.8**](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017#install
-) : Après avoir téléchargé le programme d’installation web, sélectionnez la nouvelle option **Tout télécharger, puis installer** à partir de Visual Studio Installer. Poursuivez ensuite l’installation.
+[**Nouveautés de la version 15.8**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install) : Après avoir téléchargé le programme d’installation web, sélectionnez la nouvelle option **Tout télécharger, puis installer** à partir de Visual Studio Installer. Poursuivez ensuite l’installation.
 
    ![Option « Tout télécharger, puis installer »](media/download-all-then-install.png)
+
+Nous avons conçu la fonctionnalité « Tout télécharger, puis installer » pour vous permettre de télécharger Visual Studio en une seule installation pour le même ordinateur que celui utilisé pour le téléchargement. De cette façon, vous pouvez en toute sécurité vous déconnecter du web avant d’installer Visual Studio.
+
+> [!IMPORTANT]
+> N’utilisez pas la fonctionnalité « Tout télécharger, puis installer » pour créer un cache hors connexion que vous souhaitez transférer vers un autre ordinateur. Cela n’est pas conçu pour fonctionner de cette façon. <br><br>Si vous souhaitez créer un cache hors connexion pour installer Visual Studio sur un autre ordinateur, consultez la section [Utiliser la ligne de commande pour créer un cache local](#use-the-command-line-to-create-a-local-cache) de cette page pour plus d’informations sur la création d’un cache local, ou la page [Créer une installation réseau de Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md) pour plus d’informations sur la création d’un cache réseau.
 
 ## <a name="use-the-command-line-to-create-a-local-cache"></a>Utiliser la ligne de commande pour créer un cache local
 

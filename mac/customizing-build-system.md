@@ -5,18 +5,18 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 7fbd275e3e946461559db41668a749cd6631ba09
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: f2b3abf20e75dcf783f03f696ec679a1ce575c56
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296305"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853636"
 ---
 # <a name="customizing-the-build-system"></a>Personnalisation du système de génération
 
 MSBuild est un moteur de génération, développé par Microsoft, qui permet de générer principalement des applications .NET. Le framework Mono a également sa propre implémentation du moteur de génération de Microsoft, appelée **xbuild**. Toutefois, xbuild a été supprimé pour privilégier l’utilisation de MSBuild sur tous les systèmes d’exploitation.
 
-**MSbuild** est principalement utilisé comme système de génération des projets dans Visual Studio pour Mac.
+**MSBuild** est principalement utilisé comme système de génération des projets dans Visual Studio pour Mac.
 
 MSBuild fonctionne en prenant un ensemble d’entrées, comme des fichiers sources, et les transforme en sorties, comme des fichiers exécutables. Il réalise ces sorties en appelant des outils, comme le compilateur.
 

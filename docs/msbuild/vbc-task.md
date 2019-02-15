@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a535b49722c7022a105156c625139d0b8e94a35d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2714001cef1f9e1e39c6b5cbce50df1d2728f3e1
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969666"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55768424"
 ---
 # <a name="vbc-task"></a>Vbc (tâche)
 Encapsule *vbc.exe*, qui produit des fichiers exécutables (*.exe*), des bibliothèques de liens dynamiques (*.dll*) ou des modules de code (*.netmodule*). Pour plus d’informations sur *vbc.exe*, consultez [Compilateur de ligne de commande de Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index).  
@@ -51,7 +51,7 @@ Encapsule *vbc.exe*, qui produit des fichiers exécutables (*.exe*), des bibliot
 | `Imports` | Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Importe des espaces de noms à partir des collections d’éléments spécifiées. Ce paramètre correspond au commutateur [-imports](/dotnet/visual-basic/reference/command-line-compiler/imports) du compilateur *vbc.exe*. |
 | `KeyContainer` | Paramètre `String` facultatif.<br /><br /> Spécifie le nom du conteneur de la clé de chiffrement. Ce paramètre correspond au commutateur [-keycontainer](/dotnet/visual-basic/reference/command-line-compiler/keycontainer) du compilateur *vbc.exe*. |
 | `KeyFile` | Paramètre `String` facultatif.<br /><br /> Spécifie le nom du fichier contenant la clé de chiffrement. Pour plus d’informations, consultez [-keyfile](/dotnet/visual-basic/reference/command-line-compiler/keyfile). |
-| `LangVersion` | Paramètre <xref:System.String?displayProperty=fullName> facultatif.<br /><br /> Spécifie la version du langage, « 9 » ou « 10 ». |
+| `LangVersion` | Paramètre <xref:System.String?displayProperty=fullName> facultatif.<br /><br /> Spécifie la [version du langage](/dotnet/visual-basic/language-reference/configure-language-version), comme « 15.5 ». |
 | `LinkResources` | Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Crée un lien à une ressource .NET Framework dans le fichier de sortie ; le fichier de ressources n’est pas placé dans le fichier de sortie. Ce paramètre correspond au commutateur [-linkresource](/dotnet/visual-basic/reference/command-line-compiler/linkresource) du compilateur *vbc.exe*. |
 | `MainEntryPoint` | Paramètre `String` facultatif.<br /><br /> Spécifie la classe ou le module qui contient la procédure `Sub Main`. Ce paramètre correspond au commutateur [-main](/dotnet/visual-basic/reference/command-line-compiler/main) du compilateur *vbc.exe*. |
 | `ModuleAssemblyName` | Paramètre `String` facultatif.<br /><br /> Spécifie l’assembly dont ce module fait partie. |
