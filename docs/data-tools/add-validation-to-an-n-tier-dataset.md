@@ -13,20 +13,19 @@ ms.assetid: 34ce4db6-09bb-4b46-b435-b2514aac52d3
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 25c80b145db83053edcbdb8f03f4eb703e201974
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: be8d02837f0abd7bfed0407ce31fe9cbeecd76a4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957505"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940319"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Ajouter la validation à un dataset multiniveau
 Ajout d’une validation à un dataset qui est divisé en une solution multicouche est fondamentalement identique à l’ajout d’une validation à un jeu de données à fichier unique (un jeu de données dans un seul projet). Pour exécuter la validation sur les données est proposé pendant la <xref:System.Data.DataTable.ColumnChanging> et/ou <xref:System.Data.DataTable.RowChanging> événements d’une table de données.
 
- Le jeu de données fournit les fonctionnalités pour créer des classes partielles à laquelle vous pouvez ajouter le code utilisateur aux événements de modification de colonne et de ligne des tables de données dans le jeu de données. Pour plus d’informations sur l’ajout de code à un jeu de données dans une solution multicouche, consultez [ajouter du code à des jeux de données dans les applications multicouches](../data-tools/add-code-to-datasets-in-n-tier-applications.md), et [ajouter du code aux TableAdapters dans des applications multicouches](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Pour plus d’informations sur les classes partielles, consultez [Comment : Fractionner une classe en classes partielles (Concepteur de classes)](../ide/class-designer/how-to-split-a-class-into-partial-classes.md) ou [classes et méthodes partielles](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
+ Le jeu de données fournit les fonctionnalités pour créer des classes partielles à laquelle vous pouvez ajouter le code utilisateur aux événements de modification de colonne et de ligne des tables de données dans le jeu de données. Pour plus d’informations sur l’ajout de code à un jeu de données dans une solution multicouche, consultez [ajouter du code à des jeux de données dans les applications multicouches](../data-tools/add-code-to-datasets-in-n-tier-applications.md), et [ajouter du code aux TableAdapters dans des applications multicouches](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Pour plus d’informations sur les classes partielles, consultez [Comment : fractionner une classe en classes partielles (Concepteur de classes)](../ide/class-designer/how-to-split-a-class-into-partial-classes.md) ou [classes et méthodes partielles](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
 
 > [!NOTE]
 >  Quand vous séparez les jeux de données à partir de TableAdapters (en définissant le **DataSet Project** propriété), les classes dataset partielles existantes dans le projet ne sont pas déplacées automatiquement. Les classes dataset partielles existantes doivent être déplacés manuellement dans le projet dataset.
@@ -54,7 +53,7 @@ End Sub
 
 #### <a name="to-add-validation-during-changes-to-individual-column-values"></a>Pour ajouter la validation pendant les modifications apportées aux valeurs de colonne individuels
 
-1.  Ouvrez le jeu de données en double-cliquant sur le *.xsd* fichier **l’Explorateur de solutions**. Pour plus d’informations, consultez [Procédure pas à pas : Création d’un jeu de données dans le Concepteur de Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Ouvrez le jeu de données en double-cliquant sur le *.xsd* fichier **l’Explorateur de solutions**. Pour plus d’informations, consultez [procédure pas à pas : création d’un jeu de données dans le Concepteur de Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Double-cliquez sur la colonne que vous souhaitez valider. Cette action crée le <xref:System.Data.DataTable.ColumnChanging> Gestionnaire d’événements.
 
@@ -110,7 +109,7 @@ End Sub
 
 #### <a name="to-add-validation-during-changes-to-whole-rows"></a>Pour ajouter la validation pendant la modification des lignes entières
 
-1.  Ouvrez le jeu de données en double-cliquant sur le *.xsd* fichier **l’Explorateur de solutions**. Pour plus d’informations, consultez [Procédure pas à pas : Création d’un jeu de données dans le Concepteur de Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Ouvrez le jeu de données en double-cliquant sur le *.xsd* fichier **l’Explorateur de solutions**. Pour plus d’informations, consultez [procédure pas à pas : création d’un jeu de données dans le Concepteur de Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Double-cliquez sur la barre de titre de la table de données sur le concepteur.
 
@@ -168,5 +167,5 @@ End Sub
 ## <a name="see-also"></a>Voir aussi
 
 - [Vue d’ensemble des applications de données multiniveaux](../data-tools/n-tier-data-applications-overview.md)
-- [Procédure pas à pas : Création d’une application de données multiniveaux](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [Procédure pas à pas : Création d’une application de données multiniveau](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Valider les données dans des datasets](../data-tools/validate-data-in-datasets.md)

@@ -9,14 +9,15 @@ author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac-dev15
+ms.custom: video
 ms.workload:
 - azure
-ms.openlocfilehash: 41eda3bf79b60e7d0a07b41fdd50bbf588240c3d
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: ebf7f9bcc924326f1abad81dacb38cdc7256d17c
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089436"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853925"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Publier une application web sur Azure App Service à l’aide de Visual Studio pour Mac
 
@@ -24,7 +25,7 @@ Vous pouvez utiliser l’outil Publier pour publier des applications ASP.NET Cor
 
 ## <a name="prerequisites"></a>Prérequis
 
- - [Visual Studio 2017 pour Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs4mac2017) installé et ASP.NET Core activé.
+ - [Visual Studio 2017 pour Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2017) installé et ASP.NET Core activé.
  - Un abonnement Azure. Si vous n’avez pas encore d’abonnement, [inscrivez-vous gratuitement](https://azure.microsoft.com/free/dotnet/) et bénéficiez de 200 $ de crédit pendant 30 jours et de 12 mois de services gratuits.
  - Un projet ASP.NET Core. Si vous n’avez pas encore de projet, vous pouvez en [créer un](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2017).
 
@@ -67,3 +68,7 @@ Vous pouvez utiliser l’outil Publier pour publier des applications ASP.NET Cor
       ![Message de création de service App Service](media/publish-create-app-service-message.png)
 
     Une fois que vous avez cliqué sur **OK**, le message est ignoré, et vous pouvez continuer à travailler sur votre projet. Vous pouvez consulter l’état du processus de publication dans la barre d’état située en haut de l’IDE. Une fois votre application web publiée avec succès, le site s’ouvre dans votre navigateur par défaut.
+
+## <a name="related-video"></a>Vidéo associée
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Publish-to-Azure/player]

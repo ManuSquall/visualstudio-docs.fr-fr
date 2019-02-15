@@ -9,86 +9,86 @@ helpviewer_keywords:
 ms.assetid: d66712dd-6c24-4192-919a-cce262066f0e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88bb10e46d9007878282338aff0379c57eca2aba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3c0024acf89af28e3496443c0e0dd74377618564
+ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911700"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "55987351"
 ---
 # <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
-S’ouvre et vérifie que le fichier de base de données (.pdb) de programme correspond à des informations de signature fournies et prépare le fichier .pdb en tant qu’une source de données de débogage.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT loadAndValidateDataFromPdb (   
-   LPCOLESTR pdbPath,  
-   GUID*     pcsig70,  
-   DWORD     sig,  
-   DWORD     age  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pdbPath`  
- [in] Le chemin d’accès au fichier .pdb.  
-  
- `pcsig70`  
- [in] Le GUID de signature à vérifier la signature du fichier .pdb. Fichiers .pdb uniquement [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] et versions ultérieures ont des signatures GUID.  
-  
- `sig`  
- [in] La signature de 32 bits à vérifier par rapport à la signature de fichier .pdb.  
-  
- `age`  
- [in] Valeur d’âge à vérifier. La durée de vie ne correspond pas nécessairement à n’importe quelle valeur de temps connu, il est utilisé pour déterminer si un fichier .pdb est désynchronisé avec un fichier .exe correspondant.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Le tableau suivant montre les valeurs de retournés possibles pour cette méthode.  
-  
-|Value|Description|  
-|-----------|-----------------|  
-|E_PDB_NOT_FOUND|Impossible d’ouvrir le fichier ou le fichier a un format non valide.|  
-|E_PDB_FORMAT|Essaie d’accéder à un fichier avec un format obsolète.|  
-|E_PDB_INVALID_SIG|Signature ne correspond pas.|  
-|E_PDB_INVALID_AGE|Âge ne correspond pas.|  
-|E_INVALIDARG|Paramètre non valide.|  
-|E_UNEXPECTED|La source de données a déjà été préparée.|  
-  
-## <a name="remarks"></a>Notes  
- Un fichier .pdb contient des valeurs de signature et âge. Ces valeurs sont répliquées dans le fichier .exe ou .dll correspondant au fichier .pdb. Avant de préparer la source de données, cette méthode vérifie que le fichier .pdb nommé signature et l’âge correspondent aux valeurs fournies.  
-  
- Pour charger un fichier .pdb sans validation, utilisez la [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) (méthode).  
-  
- Pour obtenir l’accès pour le processus de chargement de données (via un mécanisme de rappel), utilisez le [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) (méthode).  
-  
- Pour charger un fichier .pdb directement à partir de la mémoire, utilisez le [IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md) (méthode).  
-  
-## <a name="example"></a>Exemple  
-  
-```C++  
-IDiaDataSource* pSource;  // Previously created data source.  
-DEFINE_GUID(expectedGUIDSignature,0x1234,0x5678,0x01,0x02,0x03,0x04,0x05,0x06,0x07,0x08);  
-DWORD expectedFileSignature = 0x12345678;  
-DWORD expectedAge           = 128;  
-  
-HRESULT hr;  
-hr = pSource->loadAndValidateDataFromPdb( L"yprog.pdb",  
-                                          &expectedGUIDSignature,  
-                                          expectedFileSignature,  
-                                          expectedAge);  
-if (FAILED(hr))  
-{  
-    // Report an error  
-}  
-  
-```  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)   
- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
- [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)   
- [IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)
+S’ouvre et vérifie que le fichier de base de données (.pdb) de programme correspond à des informations de signature fournies et prépare le fichier .pdb en tant qu’une source de données de débogage.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT loadAndValidateDataFromPdb ( 
+   LPCOLESTR pdbPath,
+   GUID*     pcsig70,
+   DWORD     sig,
+   DWORD     age
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+`pdbPath`  
+[in] Le chemin d’accès au fichier .pdb.
+
+`pcsig70`  
+[in] Le GUID de signature à vérifier la signature du fichier .pdb. Fichiers .pdb uniquement [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] et versions ultérieures ont des signatures GUID.
+
+`sig`  
+[in] La signature de 32 bits à vérifier par rapport à la signature de fichier .pdb.
+
+`age`  
+[in] Valeur d’âge à vérifier. La durée de vie ne correspond pas nécessairement à n’importe quelle valeur de temps connu, il est utilisé pour déterminer si un fichier .pdb est désynchronisé avec un fichier .exe correspondant.
+
+## <a name="return-value"></a>Valeur de retour
+En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Le tableau suivant montre les valeurs de retournés possibles pour cette méthode.
+
+|Value|Description|
+|-----------|-----------------|
+|E_PDB_NOT_FOUND|Impossible d’ouvrir le fichier ou le fichier a un format non valide.|
+|E_PDB_FORMAT|Essaie d’accéder à un fichier avec un format obsolète.|
+|E_PDB_INVALID_SIG|Signature ne correspond pas.|
+|E_PDB_INVALID_AGE|Âge ne correspond pas.|
+|E_INVALIDARG|Paramètre non valide.|
+|E_UNEXPECTED|La source de données a déjà été préparée.|
+
+## <a name="remarks"></a>Notes
+Un fichier .pdb contient des valeurs de signature et âge. Ces valeurs sont répliquées dans le fichier .exe ou .dll correspondant au fichier .pdb. Avant de préparer la source de données, cette méthode vérifie que le fichier .pdb nommé signature et l’âge correspondent aux valeurs fournies.
+
+Pour charger un fichier .pdb sans validation, utilisez la [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) (méthode).
+
+Pour obtenir l’accès pour le processus de chargement de données (via un mécanisme de rappel), utilisez le [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) (méthode).
+
+Pour charger un fichier .pdb directement à partir de la mémoire, utilisez le [IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md) (méthode).
+
+## <a name="example"></a>Exemple
+
+```C++
+IDiaDataSource* pSource;  // Previously created data source.
+DEFINE_GUID(expectedGUIDSignature,0x1234,0x5678,0x01,0x02,0x03,0x04,0x05,0x06,0x07,0x08);
+DWORD expectedFileSignature = 0x12345678;
+DWORD expectedAge           = 128;
+
+HRESULT hr;
+hr = pSource->loadAndValidateDataFromPdb( L"yprog.pdb",
+                                          &expectedGUIDSignature,
+                                          expectedFileSignature,
+                                          expectedAge);
+if (FAILED(hr))
+{
+    // Report an error
+}
+
+```
+
+## <a name="see-also"></a>Voir aussi
+[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)  
+[IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)  
+[IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)  
+[IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)

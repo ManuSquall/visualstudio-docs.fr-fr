@@ -1,9 +1,8 @@
 ---
 title: Créer une installation réseau
 description: Découvrez comment créer un point d’installation réseau pour le déploiement de Visual Studio en entreprise.
-ms.date: 01/15/2019
+ms.date: 02/12/2019
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
@@ -14,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ddc786cddc2a3676c1be246f04b726072beb37b8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 69073866096d5b4a20501aadfd93f7befd4a0b12
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981257"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155433"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Créer une installation réseau de Visual Studio 2017
 
@@ -124,8 +123,10 @@ Les administrateurs peuvent déployer Visual Studio sur les stations de travail 
 > [!TIP]
 > Quand elle est exécutée dans le cadre d’un fichier de commandes, l’option `--wait` garantit que le processus `vs_enterprise.exe` attend que l’installation soit terminée avant de retourner un code de sortie. C’est utile si un administrateur d’entreprise souhaite effectuer d’autres opérations sur une installation terminée (par exemple, pour [appliquer une clé de produit sur une installation réussie](automatically-apply-product-keys-when-deploying-visual-studio.md)), alors qu’il doit attendre que l’installation se termine pour gérer le code de retour de cette installation.  Si vous n’utilisez pas `--wait`, le processus `vs_enterprise.exe` s’arrête avant que l’installation soit terminée et retourne un code de sortie incorrect qui ne représente pas l’état de l’opération d’installation.
 
+Lorsque vous installez à partir d’une disposition, le contenu qui est installé est acquis à partir de la disposition. Toutefois, si vous sélectionnez un composant qui ne se trouve pas dans la disposition, celui-ci est téléchargé à partir d’Internet.  Si vous voulez empêcher le programme d’installation de Visual Studio de télécharger le contenu manquant dans la disposition, utilisez l’option `--noWeb`.  Si `--noWeb` est utilisé et qu’un contenu à installer est absent de la disposition, l’installation échoue. 
 
-Lorsque vous installez à partir d’une disposition, le contenu qui est installé est acquis à partir de la disposition. Toutefois, si vous sélectionnez un composant qui ne se trouve pas dans la disposition, celui-ci est téléchargé à partir d’Internet.  Si vous voulez empêcher le programme d’installation de Visual Studio de télécharger le contenu manquant dans la disposition, utilisez l’option `--noWeb`.  Si `--noWeb` est utilisé et qu’un contenu à installer est absent de la disposition, l’installation échoue.
+> [!IMPORTANT]
+> L’option `--noWeb` n’empêche pas le programme d’installation de Visual Studio de vérifier la présence de mises à jour. Pour plus d’informations, consultez la page [Contrôler les mises à jour applicables aux déploiements de Visual Studio à partir du réseau](controlling-updates-to-visual-studio-deployments.md).
 
 ### <a name="error-codes"></a>Codes d’erreur
 

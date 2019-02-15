@@ -2,7 +2,6 @@
 title: Gérer des projets d’application Python
 description: Les projets dans Visual Studio gèrent les dépendances entre les fichiers et la complexité des relations dans une application.
 ms.date: 01/28/2019
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: baf44172cb5ac7f2b38d4c408ca76791f013c4ac
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: fc8e6b87569d6c383d0629bae8c582537a3bc948
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231933"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155862"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projets Python dans Visual Studio
 
@@ -37,8 +36,7 @@ Visual Studio fournit divers modèles de projet Python pour configurer rapidemen
 
 |   |   |
 |---|---|
-| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | [Regardez une vidéo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567) pour obtenir une présentation des projets Python (2 min17 s). |
-| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | Visionnez également la vidéo [Deep Dive: Use source control with Python projects](https://youtu.be/Aq8eqApnugM) (Expérience approfondie : Utiliser le contrôle de code source avec les projets Python), youtube.com, 8 min 55 s. |
+| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | [Immersion : Use source control with Python projects](https://youtu.be/Aq8eqApnugM) (Expérience approfondie : Utiliser le contrôle de code source avec les projets Python), youtube.com, 8 min 55 s. |
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>Ajouter des fichiers, attribuer un fichier de démarrage et définir des environnements
 

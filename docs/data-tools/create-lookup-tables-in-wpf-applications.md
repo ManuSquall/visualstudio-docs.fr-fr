@@ -14,15 +14,14 @@ ms.assetid: 56a1fbff-c7e8-4187-a1c1-ffd17024bc1b
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: ed448c44b46098a6ccaa7ac1194acd76bd64c089
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5fd3e7867b74c9dab923e91fd76424e88b309743
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54988907"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931609"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Créer des tables de recherche dans des applications WPF
 
@@ -36,7 +35,7 @@ Par exemple, considérez une table de `Orders` dans une base de données de vent
 
     -   Jeu de données ou Entity Data Model.
 
-    -   Service de données WCF, service WCF ou service web. Pour plus d'informations, voir [Procédure : se connecter à des données dans un service](../data-tools/how-to-connect-to-data-in-a-service.md).
+    -   Service de données WCF, service WCF ou service web. Pour plus d’informations, consultez [Comment : se connecter aux données dans un Service](../data-tools/how-to-connect-to-data-in-a-service.md).
 
     -   Objets. Pour plus d’informations, consultez [lier des objets dans Visual Studio](bind-objects-in-visual-studio.md).
 
@@ -93,4 +92,4 @@ Par exemple, considérez une table de `Orders` dans une base de données de vent
 
 - [Lier des contrôles WPF à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Afficher des données associées dans des applications WPF](../data-tools/display-related-data-in-wpf-applications.md)
-- [Procédure pas à pas : Affichage de données associées dans une application WPF](../data-tools/display-related-data-in-wpf-applications.md)
+- [Procédure pas à pas : affichage de données connexes dans une application WPF](../data-tools/display-related-data-in-wpf-applications.md)

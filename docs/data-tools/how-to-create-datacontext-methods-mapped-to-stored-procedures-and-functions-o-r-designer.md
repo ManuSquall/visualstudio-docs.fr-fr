@@ -1,34 +1,33 @@
 ---
-title: 'Procédure : créer des méthodes DataContext mappées à des procédures stockées et à des fonctions (Concepteur O-R)'
+title: Guide pratique pour créer des méthodes DataContext mappées à des procédures stockées et à des fonctions (Concepteur O/R)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e7ca32f1-50b3-48af-ad92-ceafd749296a
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: ce1d2a4f5e8b068da20d7fd7e46471cdad6d9e59
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e13de2f53622923aef1d4870de30be1afdf891ac
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54952351"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942906"
 ---
-# <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Procédure : créer des méthodes DataContext mappées à des procédures stockées et à des fonctions (Concepteur O/R)
+# <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Guide pratique pour créer des méthodes DataContext mappées à des procédures stockées et à des fonctions (Concepteur O/R)
 
 Vous pouvez ajouter des procédures stockées et des fonctions pour le **Concepteur O/R** comme <xref:System.Data.Linq.DataContext> méthodes. En appelant la méthode pour passer les paramètres requis, la procédure stockée ou fonction est exécutée sur la base de données et retourne les données dans le type de retour de la méthode <xref:System.Data.Linq.DataContext>. Pour plus d’informations sur <xref:System.Data.Linq.DataContext> méthodes, consultez [DataContext, méthodes (Concepteur O/R)](../data-tools/datacontext-methods-o-r-designer.md).
 
 > [!NOTE]
-> Vous pouvez également utiliser des procédures stockées pour remplacer la valeur par défaut [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] comportement d’exécution qui effectue des insertions, mises à jour et des suppressions lorsque les modifications sont enregistrées à partir des classes d’entité dans une base de données. Pour plus d'informations, voir [Procédure : affecter des procédures stockées pour effectuer des mises à jour, des insertions et des suppressions (Concepteur O/R)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
+> Vous pouvez également utiliser des procédures stockées pour remplacer la valeur par défaut [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] comportement d’exécution qui effectue des insertions, mises à jour et des suppressions lorsque les modifications sont enregistrées à partir des classes d’entité dans une base de données. Pour plus d’informations, consultez [Comment : assigner des procédures stockées pour effectuer des mises à jour, insertions et suppressions (Concepteur O/R)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
 
 ## <a name="create-datacontext-methods"></a>Créer des méthodes DataContext
 
 Vous pouvez créer <xref:System.Data.Linq.DataContext> méthodes en faisant glisser des procédures stockées ou fonctions de <strong>Explorateur de serveurs ou ** l’Explorateur de base de données</strong> sur le **Concepteur O/R**.
 
 > [!NOTE]
-> Le type de retour de généré <xref:System.Data.Linq.DataContext> méthode diffère selon l’endroit où vous placez la procédure stockée ou fonction sur le **Concepteur O/R**. Le déplacement direct des éléments vers une classe d’entité existante crée une méthode <xref:System.Data.Linq.DataContext> avec le type de retour de la classe d’entité. Suppression d’éléments dans une zone vide de la **Concepteur O/R** crée un <xref:System.Data.Linq.DataContext> méthode qui retourne un type généré automatiquement. Vous pouvez modifier le type de retour d’une méthode <xref:System.Data.Linq.DataContext> après l’avoir ajoutée au volet **Méthodes**. Pour inspecter ou modifier le type de retour d’une méthode <xref:System.Data.Linq.DataContext>, sélectionnez-la et inspectez la propriété **Type de retour** dans la fenêtre **Propriétés**. Pour plus d'informations, voir [Procédure : modifier le type de retour d’une méthode DataContext (Concepteur O/R)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).
+> Le type de retour de généré <xref:System.Data.Linq.DataContext> méthode diffère selon l’endroit où vous placez la procédure stockée ou fonction sur le **Concepteur O/R**. Le déplacement direct des éléments vers une classe d’entité existante crée une méthode <xref:System.Data.Linq.DataContext> avec le type de retour de la classe d’entité. Suppression d’éléments dans une zone vide de la **Concepteur O/R** crée un <xref:System.Data.Linq.DataContext> méthode qui retourne un type généré automatiquement. Vous pouvez modifier le type de retour d’une méthode <xref:System.Data.Linq.DataContext> après l’avoir ajoutée au volet **Méthodes**. Pour inspecter ou modifier le type de retour d’une méthode <xref:System.Data.Linq.DataContext>, sélectionnez-la et inspectez la propriété **Type de retour** dans la fenêtre **Propriétés**. Pour plus d’informations, consultez [Comment : modifier le type de retour d’une méthode DataContext (Concepteur O/R)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Ajouter une validation à des classes d’entité'
+title: Guide pratique pour ajouter une validation à des classes d’entité
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,17 +9,16 @@ ms.assetid: 61107da9-7fa3-4dba-b101-ae46536f52c4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: cc6aa80bf82a52e6dc67fab78349e4f58eadd627
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5f4f2f5e44ea95137f53019f52de94a5389fa6d8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941050"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913494"
 ---
-# <a name="how-to-add-validation-to-entity-classes"></a>Procédure : Ajouter une validation à des classes d’entité
+# <a name="how-to-add-validation-to-entity-classes"></a>Guide pratique pour ajouter une validation à des classes d’entité
 La *validation* de classes d’entité est le processus qui consiste à valider que les valeurs entrées dans des objets de données sont conformes aux contraintes du schéma d’un objet et également aux règles établies pour l’application. Il est conseillé de valider les données avant d'envoyer des mises à jour à la base de données sous-jacente pour réduire les erreurs. Une telle validation permet aussi de réduire le nombre potentiel d'allers-retours entre une application et la base de données.
 
  Le [des outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fournit des méthodes partielles qui permettent aux utilisateurs d’étendre le code généré par le concepteur qui s’exécute pendant les insertions, mises à jour et supprime des entités complètes et également pendant et après la colonne individuelle modifications.

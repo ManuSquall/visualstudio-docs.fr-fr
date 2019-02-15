@@ -2,9 +2,8 @@
 title: Utiliser les paramètres de ligne de commande pour installer Visual Studio
 titleSuffix: ''
 description: Découvrez comment utiliser les paramètres de ligne de commande pour contrôler ou personnaliser votre installation de Visual Studio.
-ms.date: 11/14/2018
+ms.date: 02/12/2019
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - command-line parameters
@@ -16,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a83b3c1be5beeeb2ea40fb9d27089a4b559f758a
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: d6f04d6cdf94a351025e62f4bafb1eb92b1fcf91
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089140"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155498"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Utiliser les paramètres de ligne de commande pour installer Visual Studio 2017
 
@@ -108,7 +107,7 @@ Les options de ligne de commande sont utilisées conjointement avec le programme
 | `--cache` | **Nouveautés de la version 15.2, facultatif** : Le cas échéant, les packages sont conservés après leur installation pour les réparations ultérieures. Cela remplace le paramètre de stratégie globale à utiliser pour les installations, réparations ou modifications ultérieures. La stratégie par défaut consiste à mettre les packages en cache. Option ignorée pour la commande de désinstallation. Pour plus d’informations, consultez [Désactiver ou déplacer le cache du package](disable-or-move-the-package-cache.md). |
 | `--nocache` | **Nouveautés de la version 15.2, facultatif** : Le cas échéant, les packages sont supprimés après avoir été installés ou réparés. Ils seront à nouveau téléchargés uniquement si nécessaire et à nouveau supprimés après utilisation. Cela remplace le paramètre de stratégie globale à utiliser pour les installations, réparations ou modifications ultérieures. La stratégie par défaut consiste à mettre les packages en cache. Option ignorée pour la commande de désinstallation. Pour plus d’informations, consultez [Désactiver ou déplacer le cache du package](disable-or-move-the-package-cache.md). |
 | `--noUpdateInstaller` | **Nouveautés de la version 15.2, facultatif** : Le cas échéant, empêche la mise à jour du programme d’installation quand le mode silencieux est spécifié. Le programme d’installation ne parvient pas à exécuter la commande et retourne un code de sortie différent de zéro si noUpdateInstaller est spécifié avec le mode silencieux quand une mise à jour du programme d’installation est obligatoire. |
-| `--noWeb` | **Nouveautés de la version 15.3, facultatif** : Le programme d’installation télécharge désormais le contenu qu’il installe à partir d’Internet.  Tout le contenu en cours d’installation doit être disponible dans une disposition hors connexion.  Si la disposition n’a pas de contenu, le programme d’installation échoue.  Pour plus d’informations, consultez [Déploiement à partir d’une installation réseau](create-a-network-installation-of-visual-studio.md). |
+| `--noWeb` | **Nouveautés de la version 15.3, facultatif** : S’il est présent, le programme d’installation de Visual Studio utilise les fichiers dans votre répertoire de disposition pour installer Visual Studio. Si un utilisateur tente d’installer des composants qui ne sont pas dans la disposition, le programme d’installation échoue.  Pour plus d’informations, consultez [Déploiement à partir d’une installation réseau](create-a-network-installation-of-visual-studio.md). <br/><br/> **Important** : Cela n’empêche pas le programme d’installation de Visual Studio de vérifier la présence de mises à jour. Pour plus d’informations, consultez [Contrôler les mises à jour applicables aux déploiements de Visual Studio à partir du réseau](controlling-updates-to-visual-studio-deployments.md).|
 | `--path <name>=<path>` | **Nouveautés de la version 15.7, facultatif** : Permet de spécifier des chemins d’installation personnalisés pour l’installation. Les noms de chemin pris en charge sont shared, cache et install. |
 | `--path cache=<path>` | **Nouveautés de la version 15.7, facultatif** : Utilise l’emplacement que vous spécifiez pour télécharger les fichiers d’installation. Cet emplacement peut être défini uniquement pendant la première installation de Visual Studio. Exemple : `--path cache="C:\VS\cache"` |
 | `--path shared=<path>` | **Nouveautés de la version 15.7, facultatif** : Contient des fichiers partagés pour les installations de Visual Studio côte à côte. Certains outils et kits SDK effectuent l’installation à un emplacement sur ce lecteur, tandis que d’autres peuvent l’effectuer sur un autre lecteur en passant outre ce paramétrage. Exemple : `--path shared="C:\VS\shared"` <br><br>Important : Ceci ne peut être défini qu’une seule fois, lors de la première installation de Visual Studio. |

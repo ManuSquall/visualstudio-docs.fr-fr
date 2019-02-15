@@ -6,17 +6,16 @@ ms.assetid: 56133e65-81f3-44c3-bc28-ffdd0671a0d2
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: ab66f41a6510eb8cf2376cb7bb4d6fa21e7b1159
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 21043571f60c13ed7be38f0af8f4208fc54b75a0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001328"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907787"
 ---
-# <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Procédure : Créer une association entre les classes LINQ to SQL (Concepteur O/R)
+# <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Comment : créer une association entre les classes LINQ to SQL (Concepteur O/R)
 Les associations entre classes d'entité dans [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] sont analogues aux relations entre les tables dans une base de données. Vous pouvez créer des associations entre des classes d’entité en utilisant la boîte de dialogue **Éditeur d’associations**.
 
 Vous devez sélectionner une classe parente et une classe enfant quand vous utilisez la boîte de dialogue **Éditeur d’associations** pour créer une association. La classe parente est la classe d'entité qui contient la clé primaire ; la classe enfant est la classe d'entité qui contient la clé étrangère. Par exemple, si les classes d’entité ont été créées pour mapper à la `Northwind Customers` et `Orders` tables, les `Customer` classe serait la classe parente et le `Order` classe serait la classe enfant.
@@ -53,4 +52,4 @@ Après avoir créé une association, quand vous sélectionnez l’association da
 - [Procédure pas à pas : Création de LINQ aux classes SQL](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [DataContext, méthodes (Concepteur O/R)](../data-tools/datacontext-methods-o-r-designer.md)
-- [Guide pratique pour Représenter les clés primaires](/dotnet/framework/data/adonet/sql/linq/how-to-represent-primary-keys)
+- [Guide pratique pour représenter les clés primaires](/dotnet/framework/data/adonet/sql/linq/how-to-represent-primary-keys)

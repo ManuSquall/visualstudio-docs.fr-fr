@@ -10,16 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 396afaf7b2cd5821db05ee4a6291d976fc852878
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 60e67e7150f00abb44f4af6b812f0ede43be8037
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847958"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939838"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personnaliser la façon dont Visual Studio crée des légendes pour les contrôles liés aux données
 
@@ -42,7 +41,7 @@ Le tableau suivant répertorie les paramètres internes par défaut pour ces val
 
 |Élément de Registre|Valeur par défaut|Explication|
 |-------------------|-------------------|-----------------|
-|**SmartCaptionExpression**|**(\\\p{Ll}) (\\\p{Lu})&#124;_ +**|Correspond à un caractère minuscule suivi d’un caractère majuscule ou un trait de soulignement.|
+|**SmartCaptionExpression**|**(\\\p{Ll})(\\\p{Lu})&#124;_+**|Correspond à un caractère minuscule suivi d’un caractère majuscule ou un trait de soulignement.|
 |**SmartCaptionReplacement**|**$1 $2**|Le **$1** représente les caractères appariés dans la première parenthèse de l’expression et le **$2** représente les caractères appariés dans la deuxième parenthèse. Le remplacement est la première correspondance, un espace, puis la deuxième correspondance.|
 |**SmartCaptionSuffix**|**:**|Représente un caractère ajouté à la chaîne retournée. Par exemple, si la légende est `Company Name`, rend le suffixe `Company Name:`|
 

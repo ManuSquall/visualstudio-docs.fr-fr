@@ -1,23 +1,22 @@
 ---
-title: 'Procédure : étendre le code généré par le Concepteur O-R'
+title: Guide pratique pour étendre le code généré par le Concepteur O/R
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d6d1122e-2f55-4607-8d8b-48c3c22600fb
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 275d281c8e127f5ef7278881244252615efd2827
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6ff7dfc9a83028b866f7601b9b41c685262356ac
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966164"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909600"
 ---
-# <a name="how-to-extend-code-generated-by-the-or-designer"></a>Procédure : étendre le code généré par le Concepteur O/R
-Code généré par le **Concepteur O/R** est régénéré lorsque des modifications sont apportées pour les classes d’entité et d’autres objets sur l’aire du concepteur. En raison de cette régénération de code par le concepteur, tout code ajouté au code généré est en général remplacé lors de cette opération. Le **Concepteur O/R** permet de générer des fichiers de classe partielle dans laquelle vous pouvez ajouter le code qui n’est pas remplacé. Un exemple d’ajout de votre propre code pour le code généré par le **Concepteur O/R** est d’ajouter une validation des données à LINQ aux classes SQL (entité). Pour plus d'informations, voir [Procédure : ajouter une validation à des classes d’entité](../data-tools/how-to-add-validation-to-entity-classes.md).
+# <a name="how-to-extend-code-generated-by-the-or-designer"></a>Guide pratique pour étendre le code généré par le Concepteur O/R
+Code généré par le **Concepteur O/R** est régénéré lorsque des modifications sont apportées pour les classes d’entité et d’autres objets sur l’aire du concepteur. En raison de cette régénération de code par le concepteur, tout code ajouté au code généré est en général remplacé lors de cette opération. Le **Concepteur O/R** permet de générer des fichiers de classe partielle dans laquelle vous pouvez ajouter le code qui n’est pas remplacé. Un exemple d’ajout de votre propre code pour le code généré par le **Concepteur O/R** est d’ajouter une validation des données à LINQ aux classes SQL (entité). Pour plus d’informations, consultez [Comment : ajouter la validation aux classes d’entité](../data-tools/how-to-add-validation-to-entity-classes.md).
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -48,5 +47,5 @@ Code généré par le **Concepteur O/R** est régénéré lorsque des modificati
 ## <a name="see-also"></a>Voir aussi
 
 - [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Procédure pas à pas : Création de LINQ to SQL classes (Concepteur O-R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [Procédure pas à pas : Création de classes LINQ to SQL (Concepteur O/R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

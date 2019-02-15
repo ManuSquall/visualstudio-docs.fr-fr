@@ -6,17 +6,16 @@ ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 96db9d95eeeb21ad890e12e2a05d5313cb426796
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aefe5037120636c02b8d3fa73e4ec1fc4bc02a48
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949413"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920442"
 ---
-# <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Procédure : affecter des procédures stockées pour effectuer des mises à jour, des insertions et des suppressions (Concepteur O/R)
+# <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Guide pratique pour affecter des procédures stockées pour effectuer des mises à jour, des insertions et des suppressions (Concepteur O/R)
 
 Les procédures stockées peuvent être ajoutées au **Concepteur O/R** et exécutées comme méthodes <xref:System.Data.Linq.DataContext> typiques. Ils peuvent également être utilisés pour remplacer la valeur par défaut LINQ au comportement d’exécution SQL qui effectue des insertions, mises à jour et des suppressions lorsque les modifications sont enregistrées à partir des classes d’entité dans une base de données (par exemple, lorsque vous appelez le <xref:System.Data.Linq.DataContext.SubmitChanges%2A> méthode).
 
@@ -24,7 +23,7 @@ Les procédures stockées peuvent être ajoutées au **Concepteur O/R** et exéc
 > Si votre procédure stockée retourne des valeurs qui doivent être renvoyées au client (par exemple, les valeurs sont calculées dans la procédure stockée), créez des paramètres de sortie dans vos procédures stockées. Si vous ne pouvez pas utiliser de paramètres de sortie, écrivez une implémentation de méthode partielle au lieu de vous fier aux substitutions générées par le Concepteur O/R. Les membres mappés aux valeurs générées par base de données doivent avoir les valeurs appropriées lorsque les opérations INSERT ou UPDATE se sont correctement achevées. Pour plus d’informations, consultez [responsabilités du développeur de substitution par défaut comportement](/dotnet/framework/data/adonet/sql/linq/responsibilities-of-the-developer-in-overriding-default-behavior).
 
 > [!NOTE]
-> LINQ to SQL gère la base de données générée automatiquement les valeurs pour identity (incrémentation automatique), rowguidcol (GUID généré par la base de données) et les colonnes timestamp. Les valeurs générées par une base de données dans les autres types de colonne entraînent une valeur null de manière inopinée. Pour retourner les valeurs générées à la base de données, vous devez définir manuellement <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> à **true** et <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> à une des opérations suivantes : [AutoSync.Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [AutoSync.OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>), ou [AutoSync.OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
+> LINQ to SQL gère la base de données générée automatiquement les valeurs pour identity (incrémentation automatique), rowguidcol (GUID généré par la base de données) et les colonnes timestamp. Les valeurs générées par une base de données dans les autres types de colonne entraînent une valeur null de manière inopinée. Pour retourner les valeurs générées à la base de données, vous devez définir manuellement <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> à **true** et <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> à une des opérations suivantes : [AutoSync.Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [AutoSync.OnInsert ](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>), ou [AutoSync.OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
 
 ## <a name="configure-the-update-behavior-of-an-entity-class"></a>Configurer le comportement de mise à jour d’une classe d’entité
 

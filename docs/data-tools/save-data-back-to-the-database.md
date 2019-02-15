@@ -17,16 +17,15 @@ helpviewer_keywords:
 ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ef3d2b5fd9f5172a79daef185d7153905976ba88
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 31b41a9c18a9e055c9d144c7115d3673ee2e4443
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989126"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928658"
 ---
 # <a name="save-data-back-to-the-database"></a>Enregistrer les données dans la base de données
 
@@ -74,21 +73,21 @@ Lors de la fusion des jeux de données, vous pouvez passer un argument booléen 
 |DataRowVersion|DataSet cible|Jeu de données source|
 | - | - | - |
 |D'origine|James Wilson|James C. Wilson|
-|Actuel|Jim Wilson|James C. Wilson|
+|Actuelle|Jim Wilson|James C. Wilson|
 
 Appel de la <xref:System.Data.DataSet.Merge%2A> méthode sur le tableau précédent avec `preserveChanges=false targetDataset.Merge(sourceDataset)` entraîne les données suivantes :
 
 |DataRowVersion|DataSet cible|Jeu de données source|
 | - | - | - |
 |D'origine|James C. Wilson|James C. Wilson|
-|Actuel|James C. Wilson|James C. Wilson|
+|Actuelle|James C. Wilson|James C. Wilson|
 
 Appel de la <xref:System.Data.DataSet.Merge%2A> méthode avec `preserveChanges = true targetDataset.Merge(sourceDataset, true)` entraîne les données suivantes :
 
 |DataRowVersion|DataSet cible|Jeu de données source|
 | - | - | - |
 |D'origine|James C. Wilson|James C. Wilson|
-|Actuel|Jim Wilson|James C. Wilson|
+|Actuelle|Jim Wilson|James C. Wilson|
 
 > [!CAUTION]
 > Dans le `preserveChanges = true` scénario, si le <xref:System.Data.DataSet.RejectChanges%2A> méthode est appelée sur un enregistrement dans le jeu de données cible, puis il revient aux données d’origine à partir de la *source* jeu de données. Cela signifie que si vous essayez de mettre à jour de la source de données d’origine avec le jeu de données cible, il ne peut pas être en mesure de trouver la ligne d’origine pour mettre à jour. Vous pouvez empêcher une violation d’accès concurrentiel en remplissant un autre jeu de données avec les enregistrements mis à jour à partir de la source de données, puis exécutez une fusion pour éviter une violation d’accès concurrentiel. (Une violation d’accès concurrentiel se produit lorsqu’un autre utilisateur modifie un enregistrement dans la source de données une fois que le jeu de données a été renseigné.)
@@ -280,4 +279,4 @@ Dans une instruction de mise à jour, vous devez spécifier les nouvelles valeur
 - [Guide pratique pour mettre à jour les données à l’aide d’un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)
 - [Lier des contrôles à des données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Valider des données](validate-data-in-datasets.md)
-- [Guide pratique pour Ajouter, modifier et supprimer des entités (WCF data services)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)
+- [Guide pratique pour ajouter, modifier et supprimer des entités (services de données WCF)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)

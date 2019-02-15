@@ -1,22 +1,21 @@
 ---
-title: 'Procédure : modifier le type de retour d’une méthode DataContext (Concepteur O-R)'
+title: Guide pratique pour changer le type de retour d’une méthode DataContext (Concepteur O/R)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c5b66bff-6dbb-43c0-bffa-317133ca5b9e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 297f4df8c34f7289cb39dfaf2b5d1d9c8c88314e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e72c04d5d8ce4419938ca30c719e82c403ae0157
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55004706"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940592"
 ---
-# <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Procédure : modifier le type de retour d’une méthode DataContext (Concepteur O/R)
+# <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Guide pratique pour changer le type de retour d’une méthode DataContext (Concepteur O/R)
 Le type de retour d’un <xref:System.Data.Linq.DataContext> (méthode) (créée en fonction d’une procédure stockée ou une fonction) diffère selon l’endroit où vous placez la procédure stockée ou fonction dans le **Concepteur O/R**. Si vous déposez directement un élément sur une classe d’entité existante, une méthode <xref:System.Data.Linq.DataContext> ayant le type de retour de la classe d’entité est créée (si le schéma des données a été retourné par la procédure stockée ou si la fonction correspond à la forme de la classe d’entité). Si vous déposez un élément dans une zone vide de la **Concepteur O/R**, un <xref:System.Data.Linq.DataContext> méthode qui retourne un type généré automatiquement est créée. Vous pouvez modifier le type de retour d'une méthode <xref:System.Data.Linq.DataContext> après l'avoir ajoutée au volet de méthodes. Pour inspecter ou modifier le type de retour d’une méthode <xref:System.Data.Linq.DataContext>, sélectionnez-la et cliquez sur la propriété **Type de retour** dans la fenêtre **Propriétés**.
 
 > [!NOTE]
