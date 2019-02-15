@@ -40,10 +40,10 @@ HRESULT get_liveRangeStartRelativeVirtualAddress ( 
 > [!NOTE]
 >  Un code d’erreur renvoyé signifie que le symbole n’a pas d’informations sur la plage dynamique.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
   
 ## <a name="requirements"></a>Spécifications  
- En-tête : Dia2.h  
+ En-tête : Dia2.h  
   
  Bibliothèque : diaguids.lib  
   

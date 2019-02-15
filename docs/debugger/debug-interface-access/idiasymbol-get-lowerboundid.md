@@ -40,7 +40,7 @@ HRESULT get_lowerBoundId ( 
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  L’identificateur est une valeur unique créée par le SDK DIA pour marquer tous les symboles comme étant unique.  
   
 ## <a name="see-also"></a>Voir aussi  

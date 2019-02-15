@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_sealed | Microsoft Docs
+title: IDiaSymbol::get_hasSecurityChecks | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cd1fef1f-47de-47c7-885f-f6f0a9a07d8c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffb4e6e82b3c34b8186bbee2a42fba8a1f6a8b68
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f2acc4aa3d488a98990e6e822e0c55f3f5fff416
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920243"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026617"
 ---
 # <a name="idiasymbolgetsealed"></a>IDiaSymbol::get_sealed
 Récupère un indicateur qui spécifie si la classe ou la méthode est sealed.  
@@ -40,11 +40,11 @@ HRESULT get_sealed( 
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Une classe sealed ne peut pas être utilisée comme une classe de base. Une méthode sealed ne peut pas être substitué.  
   
 ## <a name="requirements"></a>Spécifications  
- En-tête : Dia2.h  
+ En-tête : Dia2.h  
   
  Bibliothèque : diaguids.lib  
   

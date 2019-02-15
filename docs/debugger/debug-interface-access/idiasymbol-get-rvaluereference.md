@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_RValueReference | Microsoft Docs
+title: IDiaSymbol::get_symbolsFileName | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -40,10 +40,10 @@ HRESULT get_RValueReference (
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
   
 ## <a name="requirements"></a>Spécifications  
- En-tête : Dia2.h  
+ En-tête : Dia2.h  
   
  Bibliothèque : diaguids.lib  
   

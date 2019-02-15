@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: eafcc757-b488-487d-a063-ad3703ff42e8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c58f9d982f2ea0af45ad9c9a7a6f690ad43a394a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 91c8efba79868e3e6fa887bf5babff42adb15c45
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949204"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992761"
 ---
 # <a name="idiasessiongetsymbolsbyaddr"></a>IDiaSession::getSymbolsByAddr
 Récupère un énumérateur qui recherche les symboles dans l’ordre de leurs adresses.  

@@ -29,7 +29,7 @@ Chaque classe, structure et union est identifiée par un `SymTagUDT` symbole. Ch
 ## <a name="properties"></a>Propriétés  
  Le tableau suivant montre des propriétés supplémentaires valides pour ce type de symbole.  
   
-|Propriété|Type de données|Description|  
+|Property|Type de données|Description|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|Symbole de la classe du parent, le cas échéant.|  
 |[IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)|`DWORD`|ID du symbole classe parent.|  

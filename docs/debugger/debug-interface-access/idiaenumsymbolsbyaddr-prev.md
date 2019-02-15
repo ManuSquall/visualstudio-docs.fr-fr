@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: da3b3dca-68cb-4cb0-b25c-e28a1ffe49d3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dab83ecae6fad795be7d469d2a2b5c9a722c245b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 81700f73b7a1730a4f74f5340d5928b3662db3b1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989657"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933489"
 ---
 # <a name="idiaenumsymbolsbyaddrprev"></a>IDiaEnumSymbolsByAddr::Prev
 Récupère les symboles précédentes dans l’ordre par adresse.  
@@ -45,7 +45,7 @@ HRESULT Prev ( 
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il en existe aucun symbole précédent. Sinon, retourne un code d'erreur.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Cette méthode met à jour la position de l’énumérateur par le nombre d’éléments extraits.  
   
 ## <a name="see-also"></a>Voir aussi  

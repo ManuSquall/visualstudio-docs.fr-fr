@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4e8e0613-ad02-4de9-9f46-e4753c5b0251
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f173192d350e79b9fd97340c8cecff1b597217bf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 34866bf7d43908d2fc7227f35f7df18f8942f981
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838500"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033179"
 ---
 # <a name="cvcfllang"></a>CV_CFL_LANG
 Spécifie le langage de code source de l’application ou d’un module lié.  
@@ -86,7 +86,7 @@ typedef enum CV_CFL_LANG { 
  CV_CFL_ILASM  
  Langue de l’application est un assembly de langage intermédiaire (autrement dit, les assembly de Common Language Runtime (CLR)).  
   
- CV_CFL_JAVA  
+ CV_CFL_VB  
  Langue de l’application est Java.  
   
  CV_CFL_JSCRIPT  
@@ -95,10 +95,10 @@ typedef enum CV_CFL_LANG { 
  CV_CFL_MSIL  
  Langue de l’application est un inconnu langage MSIL (Microsoft Intermediate), éventuellement un résultat de l’utilisation de la [/LTCG (Link-time Code Generation)](/cpp/build/reference/ltcg-link-time-code-generation) basculer.  
   
- CV_CFL_HLSL  
+ CV_CFL_MSIL  
  Langue de l’application est High Level Shader Language.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Les valeurs dans cette énumération sont retournées par un appel à la [IDiaSymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md) (méthode).  
   
 ## <a name="requirements"></a>Spécifications  

@@ -48,7 +48,7 @@ typedef enum THUNK_ORDINAL { 
  THUNK_ORDINAL_VCALL  
  Conversion de code d’appel virtuel.  
   
- THUNK_ORDINAL_PCODE  
+ THUNK_ORDINAL_VCALL  
  Thunk de P-code.  
   
  THUNK_ORDINAL_LOAD  
@@ -60,7 +60,7 @@ typedef enum THUNK_ORDINAL { 
  THUNK_ORDINAL_TRAMP_BRANCHISLAND  
  Conversion de code trampoline de point de branche.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Les valeurs dans cette énumération sont retournées à partir d’un appel à la [IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) (méthode).  
   
 ## <a name="requirements"></a>Spécifications  

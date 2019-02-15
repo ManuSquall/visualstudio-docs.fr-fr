@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 908976ae-95c4-4020-89c9-de137f727f98
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c489debf8b114aa8bf2dedaac8dae1eef183e004
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2dae09b91574c835a4d3a30a81239e001271b063
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859501"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933170"
 ---
 # <a name="idiasymbolgetaccess"></a>IDiaSymbol::get_access
 Récupère le modificateur d’accès d’un membre de classe.  
@@ -44,7 +44,7 @@ HRESULT get_access ( 
   
 |Spécification|Description|  
 |-----------------|-----------------|  
-|En-tête :|Dia2.h|  
+|En-tête :|dia2.h|  
 |Version :|DIA SDK v7.0|  
   
 ## <a name="see-also"></a>Voir aussi  

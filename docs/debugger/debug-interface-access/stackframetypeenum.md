@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 157ee347b52a3820811693732fce183b6f54a303
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "54917496"
@@ -54,7 +54,7 @@ enum StackFrameTypeEnum {
  `FrameTypeUnknown`  
  Frame qui n’a pas les informations de débogage.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Les valeurs dans cette énumération sont retournées par un appel à la [IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) (méthode).  
   
 ## <a name="requirements"></a>Spécifications  

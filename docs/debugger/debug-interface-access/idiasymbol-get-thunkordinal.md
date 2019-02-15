@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_thunkOrdinal | Microsoft Docs
+title: IDiaSymbol::get_thunkOrdinal (méthode)
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -40,7 +40,7 @@ HRESULT get_thunkOrdinal ( 
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Cette propriété est valide uniquement si le symbole comme un [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md) valeur `SymTagThunk`.  
   
  Une conversion de « code » est un morceau de code qui effectue la conversion entre un espace d’adressage de mémoire de 32 bits (également appelé espace d’adresse plat) et un espace d’adressage de 16 bits (appelé un espace d’adressage segmentés).  

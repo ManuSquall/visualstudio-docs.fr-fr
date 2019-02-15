@@ -50,14 +50,14 @@ HRESULT get_undecoratedNameEx( 
 > [!NOTE]
 >  Les noms de l’indicateur ne sont pas définis dans le SDK DIA, donc vous devez ajouter les déclarations à votre code ou d’utiliser les valeurs brutes.  
   
-|Indicateur|Valeur|Description|  
+|Indicateur|Value|Description|  
 |----------|-----------|-----------------|  
 |UNDNAME_COMPLETE|0x0000|Permet d’undecoration complète.|  
 |UNDNAME_NO_LEADING_UNDERSCORES|0x0001|Supprime des traits de soulignement de début à partir de l’étendue des mots clés de Microsoft.|  
 |UNDNAME_NO_MS_KEYWORDS|0x0002|Désactive l’expansion de l’étendue des mots clés de Microsoft.|  
 |UNDNAME_NO_FUNCTION_RETURNS|0x0004|Désactive l’expansion du type de retour pour une déclaration principale.|  
 |UNDNAME_NO_ALLOCATION_MODEL|0x0008|Désactive l’expansion du modèle de déclaration.|  
-|UNDNAME_NO_ALLOCATION_LANGUAGE|0x0010|Désactive l’expansion du spécificateur de langage de déclaration.|  
+|UNDNAME_NO_ALLOCATION_MODEL|0x0010|Désactive l’expansion du spécificateur de langage de déclaration.|  
 |UNDNAME_RESERVED1|0x0020|RÉSERVÉ.|  
 |UNDNAME_RESERVED2|0x0040|RÉSERVÉ.|  
 |UNDNAME_NO_THISTYPE|0x0060|Désactive tous les modificateurs sur la `this` type.|  
@@ -67,7 +67,7 @@ HRESULT get_undecoratedNameEx( 
 |UNDNAME_NO_RETURN_UDT_MODEL|0x0400|Désactive l’expansion du modèle Microsoft pour retourne UDT.|  
 |UNDNAME_32_BIT_DECODE|0x0800|Undecorates noms décorés 32 bits.|  
 |UNDNAME_NAME_ONLY|0x1000|Obtient uniquement le nom de déclaration principal ; retourne simplement [étendue ::] nom.  Développe un modèle params.|  
-|UNDNAME_TYPE_ONLY|0x2000|L’entrée est simplement un type de codage ; compose un déclarateur abstrait.|  
+|UNDNAME_NAME_ONLY|0x2000|L’entrée est simplement un type de codage ; compose un déclarateur abstrait.|  
 |UNDNAME_HAVE_PARAMETERS|0x4000|Les paramètres de modèle réels sont disponibles.|  
 |UNDNAME_NO_ECSU|0x8000|Supprime l’enum/classe/struct/union.|  
 |UNDNAME_NO_IDENT_CHAR_CHECK|0x10000|Supprime la vérification des caractères d’identificateur valide.|  

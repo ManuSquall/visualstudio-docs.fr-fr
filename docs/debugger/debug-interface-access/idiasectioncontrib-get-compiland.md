@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c0496f6f-f8f2-435f-8674-6c32db6c5934
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8053945e0d759184c3eec0d26043eb8cdde6cfd0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dca6ea011392daf5492d68ac61483d5ac39a71a4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906954"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039837"
 ---
 # <a name="idiasectioncontribgetcompiland"></a>IDiaSectionContrib::get_compiland
 Récupère une référence au symbole de compiland qui ont contribué à cette section.  

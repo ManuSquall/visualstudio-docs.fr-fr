@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: ba13c62f5e72e7192572def7b48046be3e1a20c6
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "54964456"
@@ -41,7 +41,7 @@ HRESULT symbolById ( 
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  L’identificateur spécifié est une valeur unique utilisée en interne par le SDK DIA pour rendre tous les symboles unique.  
   
  Cette méthode peut être utilisée, par exemple, pour récupérer le symbole représentant le type d’un autre symbole (voir l’exemple).  

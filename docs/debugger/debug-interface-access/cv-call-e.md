@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f230560b-4243-432d-8f19-46df112043b9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a243bd873e323cb3a58668c36dc1327b7927141
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9963a36e8e9054103ea1517cb476670b0c6656f7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923992"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012636"
 ---
 # <a name="cvcalle"></a>CV_call_e
 Spécifie la convention d’appel pour une fonction.  
@@ -57,7 +57,7 @@ typedef enum CV_call_e { 
  CV_CALL_CLRCALL  
  Spécifie une convention d’appel de fonction utilisée par le Common Language Runtime (CLR) (également appelé un code managé convention d’appel).  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Les valeurs dans cette énumération sont retournées par un appel à la [IDiaSymbol::get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md) (méthode).  
   
 ## <a name="requirements"></a>Spécifications  

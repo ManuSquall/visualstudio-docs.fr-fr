@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5fe7573a-e48b-428d-9c17-7421b7209246
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43a1f761ad2d21d696e56e95191af92bb1567e7f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b6785031d6d57d94d35828175b7d07b4fd7491ee
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910751"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973497"
 ---
 # <a name="idiasymbolfindchildren"></a>IDiaSymbol::findChildren
 Récupère les enfants du symbole.  
@@ -49,7 +49,7 @@ HRESULT findChildren ( 
 ## <a name="return-value"></a>Valeur de retour  
  Retourne `S_OK` si au moins un enfant du symbole a été trouvé, ou retourne `S_FALSE` si aucun enfant n’a été trouvé ; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Cette méthode est identique à l’appel le [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md) méthode avec ce symbole comme premier paramètre.  
   
 ## <a name="see-also"></a>Voir aussi  

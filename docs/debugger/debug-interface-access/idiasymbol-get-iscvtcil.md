@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isCVTCIL | Microsoft Docs
+title: IDiaSymbol::get_isCVTCIL (méthode)
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -40,14 +40,14 @@ HRESULT get_isCVTCIL(
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Cette propriété est disponible à partir de la `SymTagCompilandDetails` type de symbole (consultez [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md).  
   
 ## <a name="requirements"></a>Spécifications  
   
 |Spécification|Description|  
 |-----------------|-----------------|  
-|En-tête :|Dia2.h|  
+|En-tête :|dia2.h|  
 |Version :|DIA SDK 8.0|  
   
 ## <a name="see-also"></a>Voir aussi  

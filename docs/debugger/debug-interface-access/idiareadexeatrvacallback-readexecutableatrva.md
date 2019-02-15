@@ -46,7 +46,7 @@ HRESULT ReadExecutableAtRVA ( 
  `data[]`  
  [in, out] Un tableau est rempli avec les octets lus à partir du fichier.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Cette méthode est appelée par le code de prise en charge DIA pour charger des octets de données à partir d’un fichier exécutable à l’aide d’une adresse virtuelle relative. Cette méthode est appelée à l’appui de la [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) (méthode).  
   
 ## <a name="see-also"></a>Voir aussi  

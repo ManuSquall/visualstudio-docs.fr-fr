@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: eb0bd73e-d92d-468e-a0b1-fbc279919f54
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7138bae8ddf987082ede9b216b19396ad8bb02ea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d283bb8e58352f6b83f3897677b09d5de1a75140
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883520"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926578"
 ---
 # <a name="idiastackframegetlocalsbase"></a>IDiaStackFrame::get_localsBase
 Récupère l’adresse de base des variables locales pour le frame.  

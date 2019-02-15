@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 22b8ee29-79ef-427f-bd05-00d255ab836b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c6b16d142f5bdc83b9a16e3299c15a0c845cf2c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e517eac8e3649328c56b77e86288fbb9a52ba436
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949321"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977432"
 ---
 # <a name="idialinenumbergetstatement"></a>IDiaLineNumber::get_statement
 Récupère un indicateur qui spécifie que les informations de ligne décrivent le début d’une instruction, plutôt que d’une expression, dans la source du programme.  
@@ -37,7 +37,7 @@ HRESULT get_statement ( 
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Instructions peuvent s’étendre sur plusieurs lignes. Cette méthode indique si le numéro de ligne associé marque le début d’une telle instruction multiligne.  
   
 ## <a name="see-also"></a>Voir aussi  

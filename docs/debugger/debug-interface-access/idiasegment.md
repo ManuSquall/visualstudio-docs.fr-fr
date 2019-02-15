@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 384ae0e1-077e-4d4f-98de-ac43c32c882f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f4cc24d64d3d1b1f8ab3e4182c21d451763b15e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 96eab5c753b0c84784b04eb4a7546557bdc77eca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847189"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986889"
 ---
 # <a name="idiasegment"></a>IDiaSegment
 Mappe les données à partir du numéro de la section à des segments de l’espace d’adressage.  
@@ -43,7 +43,7 @@ IDiaSegment : IUnknown
 |[IDiaSegment::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasegment-get-relativevirtualaddress.md)|Récupère l’adresse virtuelle relative (RVA) du début de la section.|  
 |[IDiaSegment::get_virtualAddress](../../debugger/debug-interface-access/idiasegment-get-virtualaddress.md)|Récupère l’adresse virtuelle (VA) du début de la section.|  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Étant donné que le SDK DIA effectue déjà traductions à partir du décalage de la section pour les adresses virtuelles relatives, la plupart des applications n’apporte pas utiliser les informations dans le mappage de segments.  
   
 ## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
@@ -94,7 +94,7 @@ void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
 ```  
   
 ## <a name="requirements"></a>Spécifications  
- En-tête : Dia2.h  
+ En-tête : Dia2.h  
   
  Bibliothèque : diaguids.lib  
   

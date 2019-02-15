@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 577c8011-9269-4373-8577-b4822a983724
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fade6cb19d03587ba277d65295838718d0e331be
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b00202fbd412c8ee7f9c5a35a47d59b0f207fd76
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989501"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927136"
 ---
 # <a name="idiasymbolgetispointerbasedonsymbolvalue"></a>IDiaSymbol::get_isPointerBasedOnSymbolValue
 Spécifie si le `this` pointeur est basé sur une valeur de symbole.  

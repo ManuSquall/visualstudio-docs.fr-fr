@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7ab0b525-a5a7-4692-acad-e8c00fa9ab9a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00171e470bd5dfd2a64bf7faabb0e338eceed7b1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 97b1f58f31484084bff502d9ad6a019089ecfec8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874656"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992517"
 ---
 # <a name="idiastackwalkframereadmemory"></a>IDiaStackWalkFrame::readMemory
 Lit la mémoire à partir de l’image.  
