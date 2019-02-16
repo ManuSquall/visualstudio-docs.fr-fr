@@ -13,79 +13,79 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af52b8f1047e806a3a64902584ad44ed534a3b83
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8dee855b76f214f5fe1c230464a1ab4420f46240
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54944694"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317928"
 ---
 # <a name="idebugboundbreakpoint2getbreakpointresolution"></a>IDebugBoundBreakpoint2::GetBreakpointResolution
-Obtient la résolution de point d’arrêt qui décrit ce point d’arrêt.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT GetBreakpointResolution(   
-   IDebugBreakpointResolution2** ppBPResolution  
-);  
-```  
-  
-```csharp  
-int GetBreakpointResolution(   
-   out IDebugBreakpointResolution2 ppBPResolution  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `ppBPResolution`  
- [out] Retourne le [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) interface qui représente une des opérations suivantes :  
-  
--   L’objet de résolution de point d’arrêt qui décrit l’emplacement dans le code où un point d’arrêt de code a été liée.  
-  
--   L’emplacement de données où un point d’arrêt est lié.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_BP_DELETED` si l’état de l’objet de point d’arrêt lié est défini sur `BPS_DELETED` (dans le cadre de la [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) énumération).  
-  
-## <a name="remarks"></a>Notes  
- Appelez le [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) méthode pour déterminer si la résolution de point d’arrêt est pour le code ou de données.  
-  
-## <a name="example"></a>Exemple  
- L’exemple suivant montre comment implémenter cette méthode pour une simple `CBoundBreakpoint` objet qui expose le [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) interface.  
-  
-```  
-HRESULT CBoundBreakpoint::GetBreakpointResolution(  
-    IDebugBreakpointResolution2** ppBPResolution)  
-{    
-   HRESULT hr;    
-  
-   if (ppBPResolution)    
-   {    
-      // Verify that the bound breakpoint has not been deleted. If   
-      // deleted, then return hr = E_BP_DELETED.    
-      if (m_state != BPS_DELETED)    
-      {    
-         // Query for the IDebugBreakpointResolution2 interface.    
-         hr = m_pBPRes->QueryInterface(IID_IDebugBreakpointResolution2,  
-                                       (void **)ppBPResolution);  
-         assert(hr == S_OK);    
-      }    
-      else    
-      {    
-         hr = E_BP_DELETED;    
-      }    
-   }    
-   else    
-   {    
-      hr = E_INVALIDARG;    
-   }    
-  
-   return hr;    
-}    
-```  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
- [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)   
- [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)
+Obtient la résolution de point d’arrêt qui décrit ce point d’arrêt.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT GetBreakpointResolution( 
+    IDebugBreakpointResolution2** ppBPResolution
+);
+```
+
+```csharp
+int GetBreakpointResolution( 
+    out IDebugBreakpointResolution2 ppBPResolution
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+`ppBPResolution`  
+[out] Retourne le [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) interface qui représente une des opérations suivantes :
+
+- L’objet de résolution de point d’arrêt qui décrit l’emplacement dans le code où un point d’arrêt de code a été liée.
+
+- L’emplacement de données où un point d’arrêt est lié.
+
+## <a name="return-value"></a>Valeur de retour
+En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_BP_DELETED` si l’état de l’objet de point d’arrêt lié est défini sur `BPS_DELETED` (dans le cadre de la [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) énumération).
+
+## <a name="remarks"></a>Notes
+Appelez le [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) méthode pour déterminer si la résolution de point d’arrêt est pour le code ou de données.
+
+## <a name="example"></a>Exemple
+L’exemple suivant montre comment implémenter cette méthode pour une simple `CBoundBreakpoint` objet qui expose le [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) interface.
+
+```
+HRESULT CBoundBreakpoint::GetBreakpointResolution(
+    IDebugBreakpointResolution2** ppBPResolution)
+{
+    HRESULT hr;
+
+    if (ppBPResolution)
+    {
+        // Verify that the bound breakpoint has not been deleted. If
+        // deleted, then return hr = E_BP_DELETED.
+        if (m_state != BPS_DELETED)
+        {
+            // Query for the IDebugBreakpointResolution2 interface.
+            hr = m_pBPRes->QueryInterface(IID_IDebugBreakpointResolution2,
+                                          (void **)ppBPResolution);
+            assert(hr == S_OK);
+        }
+        else
+        {
+            hr = E_BP_DELETED;
+        }
+    }
+    else
+    {
+        hr = E_INVALIDARG;
+    }
+
+    return hr;
+}
+```
+
+## <a name="see-also"></a>Voir aussi
+[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)  
+[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)  
+[GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)
