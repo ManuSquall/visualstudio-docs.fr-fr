@@ -6,12 +6,12 @@ author: PooyaZv
 ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: c4852e3c760f2974620f0a6c641a540b92d19bc3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 01b565e6b3d39e39b84054522f3a94e6c4149de4
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957440"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317118"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Procédure : Diagnostiquer les délais de l’interface utilisateur causés par les extensions
 
@@ -102,7 +102,7 @@ Ensuite, ouvrez le fichier de trace. Pour cela, soit à l’aide de la même ins
 Sélectionnez le fichier de trace dans le volet gauche, puis ouvrez-le en choisissant **ouvrir** dans le menu contextuel.
 
 > [!NOTE]
-> Par défaut PerfView génère une archive Zip. Lorsque vous ouvrez *trace.zip*, il décompresse l’archive automatiquement et que vous la trace est ouvert. Vous pouvez ignorer cette étape en décochant la **Zip** boîte pendant la collecte de trace. Toutefois, si vous envisagez de transférer et utiliser les traces sur différentes machines, nous recommandons vivement d’en décochant la **Zip** boîte. Sans cette option, les fichiers PDB requis pour les assemblys Ngen seront accompagnent pas la trace et par conséquent, les symboles à partir des assemblys de Ngen ne seront pas résolus sur l’ordinateur de destination. (Consultez [ce billet de blog](https://blogs.msdn.microsoft.com/devops/2012/12/10/creating-ngen-pdbs-for-profiling-reports/) pour plus d’informations sur les fichiers PDB pour les assemblys de Ngen.) 
+> Par défaut PerfView génère une archive Zip. Lorsque vous ouvrez *trace.zip*, il décompresse l’archive automatiquement et que vous la trace est ouvert. Vous pouvez ignorer cette étape en décochant la **Zip** boîte pendant la collecte de trace. Toutefois, si vous envisagez de transférer et utiliser les traces sur différentes machines, nous recommandons vivement d’en décochant la **Zip** boîte. Sans cette option, les fichiers PDB requis pour les assemblys Ngen seront accompagnent pas la trace et par conséquent, les symboles à partir des assemblys de Ngen ne seront pas résolus sur l’ordinateur de destination. (Consultez [ce billet de blog](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) pour plus d’informations sur les fichiers PDB pour les assemblys de Ngen.) 
 
 Il peut prendre plusieurs minutes pour PerfView traiter et ouvrir la trace. Une fois que la trace est ouverte, une liste de « vues » différentes s’affichent sous ce dernier.
 

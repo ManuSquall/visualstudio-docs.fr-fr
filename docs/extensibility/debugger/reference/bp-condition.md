@@ -12,71 +12,71 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfa34a3ab8920b719ecc52a9abdf987e14782078
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b7cc7231e218af855d3cc24eebe694b21ba1b40a
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54998129"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315467"
 ---
 # <a name="bpcondition"></a>BP_CONDITION
-Décrit les conditions sous lesquelles un point d’arrêt se déclenche.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-typedef struct _BP_CONDITION {   
-   IDebugThread2* pThread;  
-   BP_COND_STYLE  styleCondition;  
-   BSTR           bstrContext;  
-   BSTR           bstrCondition;  
-   UINT           nRadix;  
-} BP_CONDITION;  
-```  
-  
-```csharp  
-public struct BP_CONDITION {   
-   public IDebugThread2 pThread;  
-   public uint          styleCondition;  
-   public string        bstrContext;  
-   public string        bstrCondition;  
-   public uint          nRadix;  
-};  
-```  
-  
-## <a name="members"></a>Membres  
- `pThread`  
- Le [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objet qui représente le thread actif pour l’application qui contient le point d’arrêt.  
-  
- `styleCondition`  
- Une valeur comprise entre le [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) énumération décrivant le style de cette condition de point d’arrêt.  
-  
- `bstrContext`  
- L’emplacement du point d’arrêt.  
-  
- `bstrCondition`  
- La condition de déclenchement du point d’arrêt.  
-  
- `nRadix`  
- Base à utiliser lors de l’évaluation de toutes les informations numériques.  
-  
-## <a name="remarks"></a>Notes  
- Cette structure est un membre de la [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) et [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) structures.  
-  
- Cette structure est également passée en tant que paramètre à la [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) et [SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md) méthodes.  
-  
-## <a name="requirements"></a>Spécifications  
- En-tête : msdbg.h  
-  
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
-  
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Voir aussi  
- [Structures et Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)   
- [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)   
- [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md)   
- [SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md)   
- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
- [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md)
+Décrit les conditions sous lesquelles un point d’arrêt se déclenche.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+typedef struct _BP_CONDITION {
+    IDebugThread2* pThread;
+    BP_COND_STYLE  styleCondition;
+    BSTR           bstrContext;
+    BSTR           bstrCondition;
+    UINT           nRadix;
+} BP_CONDITION;
+```
+
+```csharp
+public struct BP_CONDITION {
+    public IDebugThread2 pThread;
+    public uint          styleCondition;
+    public string        bstrContext;
+    public string        bstrCondition;
+    public uint          nRadix;
+};
+```
+
+## <a name="members"></a>Membres
+`pThread`  
+Le [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objet qui représente le thread actif pour l’application qui contient le point d’arrêt.
+
+`styleCondition`  
+Une valeur comprise entre le [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) énumération décrivant le style de cette condition de point d’arrêt.
+
+`bstrContext`  
+L’emplacement du point d’arrêt.
+
+`bstrCondition`  
+La condition de déclenchement du point d’arrêt.
+
+`nRadix`  
+Base à utiliser lors de l’évaluation de toutes les informations numériques.
+
+## <a name="remarks"></a>Notes
+Cette structure est un membre de la [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) et [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) structures.
+
+Cette structure est également passée en tant que paramètre à la [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) et [SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md) méthodes.
+
+## <a name="requirements"></a>Spécifications
+En-tête : msdbg.h
+
+Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+
+Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Voir aussi
+[Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)  
+[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)  
+[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)  
+[SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md)  
+[SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md)  
+[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)  
+[BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md)

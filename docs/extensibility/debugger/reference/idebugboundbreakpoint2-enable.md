@@ -13,87 +13,87 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6e9dd47fd86b51982094f3a746473423e3a37d8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a1b677ac9ef9a1f718f1928d07e546a5b7d172fe
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920772"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318715"
 ---
 # <a name="idebugboundbreakpoint2enable"></a>IDebugBoundBreakpoint2::Enable
-Active ou désactive le point d’arrêt.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT Enable(   
-   BOOL fEnable  
-);  
-```  
-  
-```csharp  
-int Enable(   
-   int fEnable  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `fEnable`  
- [in] Valeur différente de zéro (`TRUE`) pour activer ou à zéro (`FALSE`) pour désactiver le point d’arrêt.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_BP_DELETED` si l’état de l’objet de point d’arrêt lié est défini sur `BPS_DELETED` (dans le cadre de la [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) énumération).  
-  
-## <a name="example"></a>Exemple  
- L’exemple suivant montre comment implémenter cette méthode pour une simple `CBoundBreakpoint` objet qui expose le [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) interface.  
-  
-```  
-HRESULT CBoundBreakpoint::Enable(BOOL fEnable)    
-{    
-   HRESULT hr;    
-  
-   // Verify that the bound breakpoint has not been deleted. If deleted,   
-   // then return hr = E_BP_DELETED.    
-   if (m_state != BPS_DELETED)    
-   {    
-      // Check the state of the bound breakpoint. If the breakpoint is  
-      // supposed to be, but has not already been, enabled, then have the  
-      // interpreter set the breakpoint.    
-      if (fEnable && m_state != BPS_ENABLED)    
-      {    
-         hr = m_pInterp->SetBreakpoint(m_sbstrDoc, this);    
-         if (hr == S_OK)    
-         {    
-            // Change the state of the breakpoint to BPS_ENABLED.    
-            m_state = BPS_ENABLED;    
-         }    
-      }    
-      // Check the state of the bound breakpoint. If the breakpoint is   
-      // supposed to be, but has not already been, disabled, then have the   
-      // interpreter remove the breakpoint.    
-      else if (!fEnable && m_state != BPS_DISABLED)    
-      {    
-         hr = m_pInterp->RemoveBreakpoint(m_sbstrDoc, this);    
-         if (hr == S_OK)    
-         {    
-            // Change the state of the breakpoint to BPS_DISABLED.    
-            m_state = BPS_DISABLED;    
-         }    
-      }    
-      else    
-      {    
-         hr = S_FALSE;    
-      }    
-   }    
-   else    
-   {    
-      hr = E_BP_DELETED;    
-   }    
-  
-   return hr;    
-}    
-```  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
- [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)
+Active ou désactive le point d’arrêt.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT Enable(
+    BOOL fEnable
+);
+```
+
+```csharp
+int Enable( 
+    int fEnable
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+`fEnable`  
+[in] Valeur différente de zéro (`TRUE`) pour activer ou à zéro (`FALSE`) pour désactiver le point d’arrêt.
+
+## <a name="return-value"></a>Valeur de retour
+En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_BP_DELETED` si l’état de l’objet de point d’arrêt lié est défini sur `BPS_DELETED` (dans le cadre de la [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) énumération).
+
+## <a name="example"></a>Exemple
+L’exemple suivant montre comment implémenter cette méthode pour une simple `CBoundBreakpoint` objet qui expose le [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) interface.
+
+```
+HRESULT CBoundBreakpoint::Enable(BOOL fEnable)
+{
+    HRESULT hr;
+
+    // Verify that the bound breakpoint has not been deleted. If deleted,
+    // then return hr = E_BP_DELETED.
+    if (m_state != BPS_DELETED)
+    {
+        // Check the state of the bound breakpoint. If the breakpoint is
+        // supposed to be, but has not already been, enabled, then have the
+        // interpreter set the breakpoint.
+        if (fEnable && m_state != BPS_ENABLED)
+        {
+            hr = m_pInterp->SetBreakpoint(m_sbstrDoc, this);
+            if (hr == S_OK)
+            {
+                // Change the state of the breakpoint to BPS_ENABLED.
+                m_state = BPS_ENABLED;
+            }
+        }
+        // Check the state of the bound breakpoint. If the breakpoint is
+        // supposed to be, but has not already been, disabled, then have the
+        // interpreter remove the breakpoint.
+        else if (!fEnable && m_state != BPS_DISABLED)
+        {
+            hr = m_pInterp->RemoveBreakpoint(m_sbstrDoc, this);
+            if (hr == S_OK)
+            {
+                // Change the state of the breakpoint to BPS_DISABLED.
+                m_state = BPS_DISABLED;
+            }
+        }
+        else
+        {
+            hr = S_FALSE;
+        }
+    }
+    else
+    {
+        hr = E_BP_DELETED;
+    }
+
+    return hr;
+}
+```
+
+## <a name="see-also"></a>Voir aussi
+[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)  
+[BP_STATE](../../../extensibility/debugger/reference/bp-state.md)
