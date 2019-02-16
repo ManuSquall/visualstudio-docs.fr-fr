@@ -12,60 +12,60 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d8dfc8e032eecc854a0572c8a7bd14b0c551df7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ab701ef9886dddc0c2e32aa79092f22ad91d4630
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55028625"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316065"
 ---
 # <a name="bpunboundreason"></a>BP_UNBOUND_REASON
-Donne la raison pour laquelle qu'un point d’arrêt a été dissocié.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-enum enum_BP_UNBOUND_REASON {   
-   BPUR_UNKNOWN           = 0x0000,  
-   BPUR_CODE_UNLOADED     = 0x0002,  
-   BPUR_BREAKPOINT_REBIND = 0x0003,  
-   BPUR_BREAKPOINT_ERROR  = 0x0004  
-};  
-typedef DWORD BP_UNBOUND_REASON;  
-```  
-  
-```csharp  
-public enum enum_BP_UNBOUND_REASON {   
-   BPUR_UNKNOWN           = 0x0000,  
-   BPUR_CODE_UNLOADED     = 0x0002,  
-   BPUR_BREAKPOINT_REBIND = 0x0003,  
-   BPUR_BREAKPOINT_ERROR  = 0x0004  
-};  
-```  
-  
-## <a name="members"></a>Membres  
- BPUR_UNKNOWN  
- La raison est inconnue.  
-  
- BPUR_CODE_UNLOADED  
- Le code qui contient le point d’arrêt a été déchargé.  
-  
- BPUR_BREAKPOINT_REBIND  
- Le point d’arrêt a été reliée à un autre emplacement. Cela peut se produire après modification et continuer les opérations lorsque le point d’arrêt se déplace, ou lorsque le point d’arrêt est lié à un fichier avec un chemin d’accès qui n’est plus valide.  
-  
- BPUR_ BREAKPOINT_ERROR  
- Le point d’arrêt est déterminé comme étant erreur après que qu’il est lié. Cela se produit pour les points d’arrêt managés dont les conditions ne sont plus valides.  
-  
-## <a name="remarks"></a>Notes  
- Retourné par la [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) (méthode).  
-  
-## <a name="requirements"></a>Spécifications  
- En-tête : msdbg.h  
-  
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
-  
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Voir aussi  
- [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)
+Donne la raison pour laquelle qu'un point d’arrêt a été dissocié.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+enum enum_BP_UNBOUND_REASON {
+    BPUR_UNKNOWN           = 0x0000,
+    BPUR_CODE_UNLOADED     = 0x0002,
+    BPUR_BREAKPOINT_REBIND = 0x0003,
+    BPUR_BREAKPOINT_ERROR  = 0x0004
+};
+typedef DWORD BP_UNBOUND_REASON;
+```
+
+```csharp
+public enum enum_BP_UNBOUND_REASON {
+    BPUR_UNKNOWN           = 0x0000,
+    BPUR_CODE_UNLOADED     = 0x0002,
+    BPUR_BREAKPOINT_REBIND = 0x0003,
+    BPUR_BREAKPOINT_ERROR  = 0x0004
+};
+```
+
+## <a name="members"></a>Membres
+BPUR_UNKNOWN  
+La raison est inconnue.
+
+BPUR_CODE_UNLOADED  
+Le code qui contient le point d’arrêt a été déchargé.
+
+BPUR_BREAKPOINT_REBIND  
+Le point d’arrêt a été reliée à un autre emplacement. Cela peut se produire après modification et continuer les opérations lorsque le point d’arrêt se déplace, ou lorsque le point d’arrêt est lié à un fichier avec un chemin d’accès qui n’est plus valide.
+
+BPUR_ BREAKPOINT_ERROR  
+Le point d’arrêt est déterminé comme étant erreur après que qu’il est lié. Cela se produit pour les points d’arrêt managés dont les conditions ne sont plus valides.
+
+## <a name="remarks"></a>Notes
+Retourné par la [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) (méthode).
+
+## <a name="requirements"></a>Spécifications
+En-tête : msdbg.h
+
+Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+
+Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Voir aussi
+[Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
+[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)
