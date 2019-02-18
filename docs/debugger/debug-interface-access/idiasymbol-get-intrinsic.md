@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_hasManagedCode | Microsoft Docs
+title: IDiaSymbol::get_intrinsic | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:

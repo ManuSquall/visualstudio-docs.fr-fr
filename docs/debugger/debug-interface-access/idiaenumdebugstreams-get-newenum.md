@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumDebugStreams::Skip | Microsoft Docs
+title: IDiaEnumDebugStreams::get__NewEnum | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:

@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 34866bf7d43908d2fc7227f35f7df18f8942f981
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "55033179"
@@ -86,7 +86,7 @@ typedef enum CV_CFL_LANG { 
  CV_CFL_ILASM  
  Langue de l’application est un assembly de langage intermédiaire (autrement dit, les assembly de Common Language Runtime (CLR)).  
   
- CV_CFL_VB  
+ CV_CFL_JAVA  
  Langue de l’application est Java.  
   
  CV_CFL_JSCRIPT  
@@ -95,7 +95,7 @@ typedef enum CV_CFL_LANG { 
  CV_CFL_MSIL  
  Langue de l’application est un inconnu langage MSIL (Microsoft Intermediate), éventuellement un résultat de l’utilisation de la [/LTCG (Link-time Code Generation)](/cpp/build/reference/ltcg-link-time-code-generation) basculer.  
   
- CV_CFL_MSIL  
+ CV_CFL_HLSL  
  Langue de l’application est High Level Shader Language.  
   
 ## <a name="remarks"></a>Remarques  

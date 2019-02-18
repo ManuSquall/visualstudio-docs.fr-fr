@@ -1,5 +1,5 @@
 ---
-title: Init | Microsoft Docs
+title: EndCapture | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 06084c3b-e065-49b6-968e-d578762fb871

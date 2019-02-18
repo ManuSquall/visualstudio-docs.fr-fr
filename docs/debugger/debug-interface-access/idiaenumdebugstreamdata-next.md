@@ -41,7 +41,7 @@ HRESULT Next ( 
  cbData  
  [in] Taille de la mémoire tampon de données, en octets.  
   
- cbData  
+ pcbData  
  [out] Retourne le nombre d’octets retournés. Si `data` est NULL, puis `pcbData` contient le nombre total d’octets de données disponibles pour tous les enregistrements demandés.  
   
  data[]  
