@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_registerType | Microsoft Docs
+title: IDiaSymbol::get_isDataAligned | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:

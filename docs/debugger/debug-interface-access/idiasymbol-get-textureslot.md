@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_token | Microsoft Docs
+title: IDiaSymbol::get_textureSlot | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
