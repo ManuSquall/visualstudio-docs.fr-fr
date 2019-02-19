@@ -16,10 +16,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 027612d7ce4ee2ec933897b05f33f03e8a6df992
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54788812"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
@@ -47,7 +47,7 @@ devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig 
  /projectconfig `ProjConfigName`  
  Optionnel. Nom d’une configuration de build de projet à utiliser lors de la regénération du `/project` nommé.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
   
 -   Ce commutateur exécute la même fonction que la commande de menu **Regénérer la solution** dans l’environnement de développement intégré (IDE).  
   

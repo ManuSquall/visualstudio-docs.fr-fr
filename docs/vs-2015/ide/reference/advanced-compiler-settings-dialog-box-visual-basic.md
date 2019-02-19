@@ -14,10 +14,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1c1932f3b9a065115c7977207b0678fbcd44c2e4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758885"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Paramètres avancés du compilateur, boîte de dialogue (Visual Basic)
@@ -65,7 +65,7 @@ Utilisez la boîte de dialogue **Paramètres avancés du compilateur** du **Conc
  Par défaut, cette case est cochée, spécifiant qu’une constante TRACE est définie.  
   
  **Constantes personnalisées**  
- Entrez les constantes personnalisées pour votre application dans cette zone de texte. Les entrées doivent être délimitées par des virgules, au format suivant : **Nom1="Valeur1",Nom2="Valeur2",Nom3="Valeur3"**.  
+ Entrez les constantes personnalisées pour votre application dans cette zone de texte. Les entrées doivent être délimitées par une virgule selon le format suivant : **Nom1="Valeur1",Nom2="Valeur2",Nom3="Valeur3"**.  
   
 ## <a name="other-settings"></a>Autres paramètres  
  **Générer des assemblys de sérialisation**  

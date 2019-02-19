@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Créer une Application Simple avec Visual C# ou Visual Basic | Microsoft Docs'
+title: 'Procédure pas à pas : création d’un composant simple avec Visual C# ou Visual Basic | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6c45b62e2fb1d6e104621a7fdc285ca208364a22
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54802614"
 ---
-# <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Procédure pas à pas : Créer une Application Simple avec Visual C# ou Visual Basic
+# <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Procédure pas à pas : création d'un composant simple avec Visual C# ou Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En suivant cette procédure pas-à-pas, vous vous familiariserez avec la plupart des outils, boîtes de dialogue et concepteurs que vous pouvez utiliser lorsque vous développez des applications avec Visual Studio. Vous allez créer une application « Hello, World » simple, concevoir l'interface utilisateur, ajouter du code et déboguer des erreurs, tout en découvrant l'utilisation de l'environnement de développement intégré (IDE).  
@@ -41,13 +41,13 @@ En suivant cette procédure pas-à-pas, vous vous familiariserez avec la plupart
   
  Après avoir ouvert Visual Studio, vous pouvez identifier les fenêtres Outil, les menus et barres d'outils et l'espace de la fenêtre principale. Les fenêtres Outil sont ancrées sur les côtés gauche et droit de la fenêtre d'application. **Lancement rapide**, la barre de menus et la barre d'outils standard sont situés en haut. La **page de démarrage**est située au centre de la fenêtre d'application. Lorsque vous chargez une solution ou un projet, les éditeurs et les concepteurs apparaissent dans l'espace où se trouve la **Page de démarrage** . Lorsque vous développez une application, vous passez la majeure partie de votre temps dans cette zone centrale.  
   
- Figure 2 : Environnement IDE de Visual Studio  
+ Figure 2 : IDE de Visual Studio  
   
  ![IDE avec les paramètres généraux appliqués](../ide/media/exploreide-idewithgeneralsettings.png "ExploreIDE-IDEwithgeneralsettings")  
   
  Vous pouvez personnaliser davantage Visual Studio. Vous pouvez par exemple modifier le type de police et la taille utilisée pour le texte dans l’éditeur ou le thème de couleur appliqué à l’IDE à l’aide de la boîte de dialogue **Options**. Selon la combinaison de paramètres appliquée, certains éléments de cette boîte de dialogue peuvent ne pas apparaître automatiquement. Vous pouvez vous assurer que toutes les options possibles s'affichent en choisissant la case à cocher **Afficher tous les paramètres** .  
   
- Figure 3 : Options (boîte de dialogue)  
+ Figure 3 : Boîte de dialogue Options  
   
  ![Boîte de dialogue Options, avec l’option Afficher tous les paramètres](../ide/media/exploreide-optionsdialogbox.png "ExploreIDE-Optionsdialogbox")  
   
@@ -94,7 +94,7 @@ En suivant cette procédure pas-à-pas, vous vous familiariserez avec la plupart
   
    Visual Studio crée la solution et le projet HelloWPFApp, et l' **l'Explorateur de solutions** affiche les différents fichiers. Le Concepteur WPF affiche un mode Design et une vue XAML de MainWindow.xaml en mode Fractionné. Vous pouvez faire glisser le séparateur pour afficher une partie plus ou moins grande de chacune des vues.  Vous pouvez choisir d'afficher uniquement le mode visuel ou uniquement le mode XAML. (Pour plus d'informations, consultez [Concepteur WPF pour les développeurs Windows Forms](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca)). Les éléments suivants apparaissent dans l' **Explorateur de solutions**:  
   
-   Figure 5 : Éléments de projet  
+   Figure 5 : Éléments du projet  
   
    ![Explorateur de solutions avec les fichiers HelloWPFApp chargés](../ide/media/exploreide-hellowpfappfiles.png "ExploreIDE-HelloWPFAppFiles")  
   
@@ -132,7 +132,7 @@ En suivant cette procédure pas-à-pas, vous vous familiariserez avec la plupart
   
    Votre fenêtre doit ressembler à l'illustration suivante :  
   
-   figure Fenêtre Greetings avec le contrôle TextBlock  
+   Figure 7 : Fenêtre Greetings avec le contrôle TextBlock  
   
    ![Contrôle TextBlock sur le formulaire Greetings](../ide/media/exploreide-greetingswithtextblockonly.png "ExploreIDE-GreetingswithTextblockonly")  
   
@@ -162,7 +162,7 @@ En suivant cette procédure pas-à-pas, vous vous familiariserez avec la plupart
   
     Votre fenêtre doit se présenter comme suit :  
   
-    Figure 8. Cases d’option dans la fenêtre Greetings.  
+    Figure 8 : RadioButtons dans la fenêtre Greetings.  
   
     ![Formulaire Greetings avec un bloc de texte et deux cases d’option](../ide/media/exploreide-greetingswithradiobuttons.png "ExploreIDE-Greetingswithradiobuttons")  
   
@@ -190,7 +190,7 @@ En suivant cette procédure pas-à-pas, vous vous familiariserez avec la plupart
   
    Votre fenêtre doit ressembler à l'illustration suivante.  
   
-   figure L’interface utilisateur finale de Greetings  
+   Figure 9 : Interface utilisateur finale de Greetings  
   
    ![Formulaire Greetings avec des étiquettes de contrôle](../ide/media/exploreide-greetingswithconrollabels.png "ExploreIDE-Greetingswithconrollabels")  
   
@@ -259,7 +259,7 @@ En suivant cette procédure pas-à-pas, vous vous familiariserez avec la plupart
   
     ![Commande Démarrer le débogage du menu Débogage](../ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")  
   
-    Une boîte de dialogue s’affiche, indiquant qu’une exception IOException s’est produite : Impossible de trouver la ressource « mainwindow.xaml ».  
+    Une boîte de dialogue s'affiche, indiquant qu'une exception IOException s'est produite : Impossible de localiser la ressource « mainwindow.xaml ».  
   
 2. Choisissez le bouton **OK** , puis arrêtez le débogueur.  
   

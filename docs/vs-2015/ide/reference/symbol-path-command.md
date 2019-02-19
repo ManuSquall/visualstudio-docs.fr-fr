@@ -16,10 +16,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: da136a76a06182bd32ebf2ca868e77f202087e45
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54767278"
 ---
 # <a name="symbol-path-command"></a>Chemin d’accès aux symboles, commande
@@ -38,7 +38,7 @@ Debug.SymbolPath pathname1;pathname2;... pathnameN
  `pathname`  
  Optionnel. Liste de chemins délimités par des points-virgules dans laquelle le débogueur doit rechercher des symboles.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Si aucun `pathname` n’est spécifié, la commande répertorie les chemins des symboles actuels.  
   
 ## <a name="example"></a>Exemple  

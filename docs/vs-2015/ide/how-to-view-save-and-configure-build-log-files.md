@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Afficher, enregistrer et configurer les fichiers journaux de génération | Microsoft Docs'
+title: Guide pratique pour afficher, enregistrer et configurer des fichiers journaux de génération | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6826a2f2618ee77944102245781a8df3b2a4596b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54760055"
 ---
-# <a name="how-to-view-save-and-configure-build-log-files"></a>Procédure : Afficher, enregistrer et configurer des fichiers journaux de build
+# <a name="how-to-view-save-and-configure-build-log-files"></a>Comment : afficher, enregistrer et configurer des fichiers journaux de génération
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Après avoir généré un projet dans l’IDE de Visual Studio, vous pouvez consulter les informations sur cette génération dans la fenêtre **Sortie**. Grâce à ces informations, vous pouvez déboguer un échec de génération, par exemple. Pour les projets C++, vous pouvez également afficher les mêmes informations dans un fichier .txt qui est créé et enregistré automatiquement. Pour les projets de code managé, vous pouvez copier et coller les informations de la fenêtre **Sortie** dans un fichier .txt que vous enregistrez vous-même. Vous pouvez également utiliser l’IDE pour spécifier les types d’informations à afficher pour chaque génération.  

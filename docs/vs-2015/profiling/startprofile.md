@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 994cde18cfe304add796bffa74d2a327e1c63f45
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54774725"
 ---
 # <a name="startprofile"></a>StartProfile
@@ -57,7 +57,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
 |PROFILE_ERROR_NOT_YET_IMPLEMENTED|L’appel de fonction du profilage, le niveau de profilage ou la combinaison d’appel et de niveau n’est pas encore implémenté.|  
 |PROFILE_OK|L’appel a réussi.|  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  StartProfile et StopProfile contrôlent l’état Start/Stop pour le niveau de profilage. La valeur par défaut de Start/Stop est 1. La valeur initiale peut être changée dans le Registre. Chaque appel à StartProfile définit Start/Stop sur 1 ; chaque appel à StopProfile le définit sur 0.  
   
  Quand Start/Stop est supérieur à 0, l’état de Start/Stop pour le niveau est ON. Quand il est inférieur ou égal à 0, l’état de Start/Stop est OFF.  
@@ -68,7 +68,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
  Microsoft.VisualStudio.Profiler.dll  
   
 ## <a name="function-information"></a>Informations sur la fonction  
- En-tête : déclaré dans VSPerf.h  
+ En-tête : déclaré dans VSPerf.h  
   
  Bibliothèque d’importation : VSPerf.lib  
   

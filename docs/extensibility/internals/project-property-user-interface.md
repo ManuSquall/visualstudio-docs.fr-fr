@@ -12,20 +12,22 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ec1a46b619eecc08e08c74535430f9a0d7bfc3c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4f341a0825c4fcacc41fc01b29c6d65882fa500d
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957052"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335296"
 ---
 # <a name="project-property-user-interface"></a>Interface utilisateur des propriétés du projet
+
 Un sous-type de projet permettre utiliser les éléments dans le projet **Pages de propriétés** boîte de dialogue comme ils sont fournis par le projet de base, masquer ou rendre les contrôles en lecture seule et des pages entières tel que fourni ou ajouter des pages spécifiques au sous-type de projet à la **Pages de propriétés** boîte de dialogue.
 
 ## <a name="extending-the-project-property-dialog-box"></a>Extension de la boîte de dialogue des propriétés de projet
- Un sous-type de projet implémente les objets de parcourir de configuration de projet et des extendeurs automation. Ces extensions implémentent le <xref:EnvDTE.IFilterProperties> interface pour rendre des propriétés particulières masqué ou en lecture seule. Le **Pages de propriétés** boîte de dialogue du projet de base, implémenté par le projet de base, respecte le filtrage effectué par les extendeurs Automation.
 
- Le processus d’extension un **propriété du projet** boîte de dialogue est décrites ci-dessous :
+Un sous-type de projet implémente les objets de parcourir de configuration de projet et des extendeurs automation. Ces extensions implémentent le <xref:EnvDTE.IFilterProperties> interface pour rendre des propriétés particulières masqué ou en lecture seule. Le **Pages de propriétés** boîte de dialogue du projet de base, implémenté par le projet de base, respecte le filtrage effectué par les extendeurs Automation.
+
+Le processus d’extension un **propriété du projet** boîte de dialogue est décrites ci-dessous :
 
 -   Le projet de base extrait les extendeurs à partir du sous-type de projet en implémentant le <xref:EnvDTE80.IInternalExtenderProvider> interface. Parcourir, automation de projet, les objets de parcourir de configuration de projet du projet de base toutes les implémentent cette interface.
 
@@ -39,11 +41,11 @@ Un sous-type de projet permettre utiliser les éléments dans le projet **Pages 
 
 -   Un sous-type de projet peut déterminer le CATID approprié pour les divers objets extensibles du projet de base lors de l’exécution en récupérant les éléments suivants <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> valeurs :
 
-    -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>
+    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_ExtObjectCATID>
 
-    -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>
+    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_BrowseObjectCATID>
 
-    -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>
+    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_CfgBrowseObjectCATID>
 
 Pour déterminer le CATID de la portée du projet, le sous-type de projet récupère les propriétés ci-dessus pour [VSITEMID. Racine](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>) à partir de la `VSITEMID typedef`. Un sous-type de projet peut également contrôler les **Pages de propriétés** pages des boîtes de dialogue sont affichées pour le projet, configuration dépendante et indépendantes de la configuration. Certains sous-types de projet peut-être supprimer les pages intégrées et ajouter des pages spécifiques de sous-type de projet. Pour permettre cela, le projet de client managé appelle le <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> méthode pour les propriétés suivantes :
 

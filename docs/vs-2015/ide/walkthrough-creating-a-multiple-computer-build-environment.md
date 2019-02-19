@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Environnement de génération de création d’un Multiple-Computer | Microsoft Docs'
+title: 'Procédure pas à pas : création d’un environnement de build sur plusieurs ordinateurs | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,13 +13,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 4dff468ff42173e61c2f7006802c96a11120bd30
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54769072"
 ---
-# <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Procédure pas à pas : Création d’un environnement de Build sur plusieurs ordinateurs
+# <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Procédure pas à pas : création d'un environnement de build sur plusieurs ordinateurs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez créer un environnement de build dans votre organisation en installant Visual Studio sur un ordinateur hôte, puis en copiant plusieurs fichiers et paramètres sur un autre ordinateur afin qu’il puisse participer aux builds. Vous n’avez pas à installer Visual Studio sur un autre ordinateur.  

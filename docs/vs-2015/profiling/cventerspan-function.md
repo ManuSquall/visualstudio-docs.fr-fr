@@ -26,10 +26,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 40031567b5339803ccfa7f4a5b3db4f006c6c134
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54755165"
 ---
 # <a name="cventerspan-function"></a>CvEnterSpan, fonction
@@ -129,9 +129,9 @@ HRESULT CvEnterSpanExVA(
 ## <a name="requirements"></a>Spécifications  
  **En-tête** : cvmarkers.h  
   
- **Unicode :** CvEnterSpanW, CvEnterSpanVW, CvEnterSpanExW, CvEnterSpanExVW  
+ **Unicode** : CvEnterSpanW, CvEnterSpanVW, CvEnterSpanExW, CvEnterSpanExVW  
   
- **ANSI :** CvEnterSpanA, CvEnterSpanVA, CvEnterSpanExA, CvEnterSpanExVW  
+ **ANSI** : CvEnterSpanA, CvEnterSpanVA, CvEnterSpanExA, CvEnterSpanExVW  
   
 ## <a name="see-also"></a>Voir aussi  
  [Informations de référence sur la bibliothèque C++](../profiling/cpp-library-reference.md)

@@ -27,10 +27,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 64da24c21ef40bd850e7fb91ed530df67bfe66b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54763282"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense JavaScript
@@ -157,7 +157,7 @@ IntelliSense vous aide à écrire du code plus vite et avec moins d'erreurs en f
 </asp:ScriptManager>
 ```
 
- IntelliSense prend également en charge des fichiers de script qui sont incorporés comme ressources dans un assembly des applications Web ASP.NET AJAX. Pour plus d’informations sur les ressources de script incorporées, consultez [procédure pas à pas : Incorporer un fichier JavaScript en tant que ressource dans un Assembly](http://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).
+ IntelliSense prend également en charge des fichiers de script qui sont incorporés comme ressources dans un assembly des applications Web ASP.NET AJAX. Pour plus d’informations sur les ressources de script incorporées, consultez [procédure pas à pas : incorporation d’un fichier JavaScript en tant que ressource dans un Assembly](http://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).
 
 ####  <a name="ReferenceDirectives"></a>Directives de référence
  Une directive `reference` permet à [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] d'établir une relation entre le script vous modifiez actuellement et d'autres scripts. La directive `reference` vous permet d'inclure un fichier de script dans le contexte de script du fichier de script actuel. Cela permet à IntelliSense de référencer des fonctions définies extérieurement, des types et des champs lors de l'écriture de code.

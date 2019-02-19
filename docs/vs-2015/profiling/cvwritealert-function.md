@@ -20,10 +20,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0f5c428b471c576c1ca15b73a1c8b2ccfa2cc7b6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54770983"
 ---
 # <a name="cvwritealert-function"></a>CvWriteAlert, fonction
@@ -73,9 +73,9 @@ HRESULT CvWriteAlertVA(
 ## <a name="requirements"></a>Spécifications  
  **En-tête** : cvmarkers.h  
   
- **Unicode :** CvWriteAlertW, CvWriteAlertVW  
+ **Unicode** : CvWriteAlertW, CvWriteAlertVW  
   
- **ANSI :** CvWriteAlertA, CvWriteAlertVA  
+ **ANSI** : CvWriteAlertA, CvWriteAlertVA  
   
 ## <a name="see-also"></a>Voir aussi  
  [Informations de référence sur la bibliothèque C++](../profiling/cpp-library-reference.md)

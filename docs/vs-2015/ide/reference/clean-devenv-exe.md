@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b6aed7fd5ac6282d66d44ae04c4a989b72a7c37b
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54834453"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
@@ -43,7 +43,7 @@ devenv FileName /Clean [ /project projectnameorfile [/projectconfig name ] ]
  /projectconfig `ProjConfigName`  
  Optionnel. Nom d’une configuration de build de projet à utiliser lors du nettoyage du `/project` nommé.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Ce commutateur exécute la même fonction que la commande de menu **Nettoyer la solution** dans l’environnement de développement intégré (IDE).  
   
  Placez entre guillemets doubles les chaînes contenant des espaces.  

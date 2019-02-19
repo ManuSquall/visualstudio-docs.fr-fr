@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Créer et supprimer des dépendances du projet | Microsoft Docs'
+title: Guide pratique pour créer et supprimer les dépendances d’un projet | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -19,13 +19,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e4ce804664f78bd4ec329f7e4e66008053291c77
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54799770"
 ---
-# <a name="how-to-create-and-remove-project-dependencies"></a>Procédure : Créer et supprimer les dépendances d’un projet
+# <a name="how-to-create-and-remove-project-dependencies"></a>Comment : créer et supprimer les dépendances d'un projet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quand vous générez une solution qui contient plusieurs projets, vous pouvez être amené à générer d’abord certains projets pour générer le code utilisé par les autres projets. Quand un projet utilise un code exécutable généré par un autre projet, le projet qui génère le code une dépendance du projet qui utilise le code. Vous pouvez définir ces relations de dépendance dans la boîte de dialogue **Dépendances du projet**.  
@@ -66,4 +66,4 @@ Quand vous générez une solution qui contient plusieurs projets, vous pouvez ê
  [Génération et nettoyage de solutions et de projets dans Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
  [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)   
  [Présentation des configurations de build](../ide/understanding-build-configurations.md)   
- [(NIB) Guide pratique pour Modifier les propriétés du projet et les paramètres de Configuration](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [NIB Procédure : modification des propriétés de projet et des paramètres de configuration](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

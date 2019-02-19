@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 337dcd310efbdf0f0657b5eb44b1ed0fc8253b39
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54782505"
 ---
 # <a name="exec-task"></a>Exec, tâche
@@ -48,7 +48,7 @@ Exécute la commande ou le programme spécifié en utilisant les arguments spéc
 |`StdOutEncoding`|Paramètre de sortie `String` facultatif.<br /><br /> Spécifie l’encodage du flux de sortie standard de tâche capturé. La valeur par défaut est l’encodage de sortie de la console actuelle.|  
 |`WorkingDirectory`|Paramètre `String` facultatif.<br /><br /> Spécifie le répertoire dans lequel la commande sera exécutée.|  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Cette tâche est utile quand une tâche [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] spécifique pour le travail que vous voulez effectuer n’est pas disponible. Toutefois, la tâche `Exec`, contrairement à une tâche plus spécifique, ne peut pas recueillir la sortie de l’outil ou de la commande qu’elle exécute.  
   
  La tâche `Exec` appelle cmd.exe au lieu d’appeler directement un processus.  

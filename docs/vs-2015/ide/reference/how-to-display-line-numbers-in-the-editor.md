@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Afficher les numéros de ligne dans l’éditeur | Microsoft Docs'
+title: Guide pratique pour afficher les numéros de ligne dans l’Éditeur │ Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -15,13 +15,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f4b38f39fbb7b1f72622be58ee049554cb04f02f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54800741"
 ---
-# <a name="how-to-display-line-numbers-in-the-editor"></a>Procédure : Afficher les numéros de ligne dans l’Éditeur
+# <a name="how-to-display-line-numbers-in-the-editor"></a>Guide pratique pour afficher les numéros de ligne dans l’Éditeur
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   

@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6b40b37c8c0ee97b5d7e0cc33773af140bd1010b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54790267"
 ---
 # <a name="suspendprofile"></a>SuspendProfile
@@ -57,7 +57,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
 |PROFILE_ERROR_NOT_YET_IMPLEMENTED|L’appel de fonction du profilage, le niveau de profilage ou la combinaison d’appel et de niveau n’est pas encore implémenté.|  
 |PROFILE_OK|L’appel a réussi.|  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  La valeur initiale du compteur de pauses/reprises est 0. Chaque appel à SuspendProfile ajoute 1 au nombre de Suspend/Resume ; chaque appel à ResumeProfile soustrait 1.  
   
  Quand le nombre de Suspend/Resume est supérieur à 0, l’état Suspend/Resume pour le niveau est ON. Quand le nombre est inférieur ou égal à 0, l’état Suspend/Resume est ON.  
@@ -68,7 +68,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
  Microsoft.VisualStudio.Profiler.dll  
   
 ## <a name="function-information"></a>Informations sur la fonction  
- En-tête : déclaré dans VSPerf.h  
+ En-tête : déclaré dans VSPerf.h  
   
  Bibliothèque d’importation : VSPerf.lib  
   

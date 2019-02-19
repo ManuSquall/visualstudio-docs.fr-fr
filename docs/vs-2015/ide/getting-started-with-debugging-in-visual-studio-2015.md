@@ -11,10 +11,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 7fecc637a62e96381362d79f66eb5a3cd4d8fa1d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54764846"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Prise en main du débogage dans Visual Studio 2015
@@ -44,7 +44,7 @@ Visual Studio 2015 intègre un ensemble puissant d'outils de génération et de
 
  Pour commencer, utilisez simplement **Debug** comme configuration de build et **x86** comme plateforme. Une fois le codage et le débogage terminés, passez à la configuration **Release** et ciblez une plateforme spécifique. (Les anciennes versions de Visual Studio proposent une plateforme par défaut **AnyCPU** pour les projets de code .Net.)
 
- Remarque : Quand vous générez votre projet, les valeurs de configuration et de plateforme servent également à déterminer le chemin d’accès au répertoire du projet à créer pour stocker le fichier exécutable. En général, il s’agit de **\<chemin_projet>\\<nom_projet>\\<configuration\>\\<plateforme\>**. Par exemple, un projet avec une configuration `Debug` et une plateforme `x86` se trouve sous `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86`. Cela peut être utile si vous utilisez vos propres outils ou scripts pour gérer ces fichiers exécutables générés.
+ Remarque : quand vous générez votre projet, les valeurs de configuration et de plateforme servent également à déterminer le chemin d’accès au répertoire du projet à créer pour stocker le fichier exécutable. En général, il s’agit de **\<chemin_projet>\\<nom_projet>\\<configuration\>\\<plateforme\>**. Par exemple, un projet avec une configuration `Debug` et une plateforme `x86` se trouve sous `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86`. Cela peut être utile si vous utilisez vos propres outils ou scripts pour gérer ces fichiers exécutables générés.
 
 ### <a name="building-your-code"></a>Génération de code
  Une fois votre build configurée, il est temps de passer à la génération de votre projet. Le moyen le plus simple consiste à appuyer sur F7, mais vous pouvez aussi démarrer la build en sélectionnant **Générer->Générer la solution** dans le menu principal.

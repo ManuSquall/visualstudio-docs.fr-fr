@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4fb26e310673003ab25c4d08d4991ec33aa50932
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54792205"
 ---
 # <a name="javascript-memory"></a>Mémoire JavaScript
@@ -47,7 +47,7 @@ L'analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous a
   
    Les objets qui ne sont pas créés directement dans votre code d'application sont automatiquement exclus. Vous pouvez également filtrer les données par nom d'objet.  
   
-  Pour vous guider dans le processus d’identification d’une fuite de mémoire dans une application, consultez [Procédure pas à pas : Recherche d’une fuite de mémoire (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
+  Pour obtenir un didacticiel qui vous guide dans le processus d’identification d’une fuite de mémoire dans une application active, consultez [Procédure pas à pas : rechercher une fuite de mémoire (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
   Dans cette rubrique :  
   
@@ -126,7 +126,7 @@ L'analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous a
 -   [Visualiser une comparaison d'instantanés](#SnapshotDiff). Affiche les valeurs comparées pour différents instantanés. Ces vues affichent les différences de taille d'objets et de nombre d'objets.  
   
 ##  <a name="Isolate"></a> Isolate a memory leak  
- La procédure suivante présente un flux de travail qui peut vous aider à utiliser l'analyseur de mémoire JavaScript plus efficacement. Ces étapes peuvent s'avérer utiles si vous pensez que votre application rencontre une fuite de mémoire. Pour vous guider dans le processus d’identification d’une fuite de mémoire dans une application, consultez [Procédure pas à pas : Recherche d’une fuite de mémoire (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
+ La procédure suivante présente un flux de travail qui peut vous aider à utiliser l'analyseur de mémoire JavaScript plus efficacement. Ces étapes peuvent s'avérer utiles si vous pensez que votre application rencontre une fuite de mémoire. Pour obtenir un didacticiel qui vous guide dans le processus d’identification d’une fuite de mémoire dans une application active, consultez [Procédure pas à pas : rechercher une fuite de mémoire (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
 1. Ouvrez votre application dans Visual Studio.  
   
@@ -168,7 +168,7 @@ L'analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous a
   
     - Taille différentielle de tas (lien de gauche sous la taille du tas). Le texte du lien indique la différence entre la taille du tas de l'instantané actuel et la taille du tas de l'instantané précédent.  
   
-    - Nombre différentiel d'objets (lien de droite sous le nombre d'objets). Le texte du lien indique deux valeurs (par exemple + 1858 / -1765) : la première valeur est le nombre de nouveaux objets ajoutés depuis l’instantané précédent. La deuxième valeur est le nombre d’objets supprimés depuis l’instantané précédent.  
+    - Nombre différentiel d'objets (lien de droite sous le nombre d'objets). Le texte du lien indique deux valeurs (par exemple +1858 / -1765) : la première valeur est le nombre de nouveaux objets ajoutés depuis l'instantané précédent. La deuxième valeur est le nombre d'objets supprimés depuis l'instantané précédent.  
   
       Ces liens ouvrent une vue comparée des détails d'instantané pour les types du tas, par ordre de taille retenue ou de nombre d'objets, selon le lien que vous avez ouvert.  
   
@@ -224,7 +224,7 @@ L'analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous a
   
 -   Nombre d'objets. Ce nombre indique uniquement les objets créés dans votre application et exclut les objets intégrés créés par le runtime JavaScript. Le nombre d'objets est lié à la vue Types des détails d'un instantané.  
   
--   Nombre différentiel d'objets. Il indique deux valeurs : la première valeur est le nombre de nouveaux objets ajoutés depuis l’instantané précédent. La deuxième valeur est le nombre d’objets supprimés depuis l’instantané précédent. Par exemple, l'illustration montre que 1 859 objets ont été ajoutés et 1 733 objets ont été supprimés depuis l'instantané n°1. Cette information est suivie d'une flèche rouge vers le haut si le nombre total d'objets a augmenté ou d'une flèche verte vers le bas s'il a diminué. Si le nombre d'objets n'a pas changé, le texte **Aucune modification** s'affiche à la place d'un nombre. Pour le premier instantané, le texte **Ligne de base**s'affiche. Le nombre différentiel d'objets est lié à la vue Types de la comparaison d'instantanés.  
+-   Nombre différentiel d'objets. Il indique deux valeurs : la première valeur est le nombre de nouveaux objets ajoutés depuis l'instantané précédent. La deuxième valeur est le nombre d'objets supprimés depuis l'instantané précédent. Par exemple, l'illustration montre que 1 859 objets ont été ajoutés et 1 733 objets ont été supprimés depuis l'instantané n°1. Cette information est suivie d'une flèche rouge vers le haut si le nombre total d'objets a augmenté ou d'une flèche verte vers le bas s'il a diminué. Si le nombre d'objets n'a pas changé, le texte **Aucune modification** s'affiche à la place d'un nombre. Pour le premier instantané, le texte **Ligne de base**s'affiche. Le nombre différentiel d'objets est lié à la vue Types de la comparaison d'instantanés.  
   
 -   Capture d'écran lors de la prise de l'instantané.  
   
@@ -401,4 +401,4 @@ if (performance && performance.mark) {
     -   Créez un objet de test et effectuez son suivi dans les vues de l'analyseur de mémoire JavaScript, telles que la vue Types. Par exemple, vous pouvez attacher un objet très volumineux à un autre objet pour voir si un objet ou un élément particulier a fait l'objet d'un garbage collection.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : recherche d’une fuite de mémoire (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)
+ [Procédure pas à pas : rechercher une fuite de mémoire (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)

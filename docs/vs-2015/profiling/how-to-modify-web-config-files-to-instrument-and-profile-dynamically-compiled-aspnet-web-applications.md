@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Modifier des fichiers Web.Config pour instrumenter et profiler des applications web ASP.NET compilées dynamiquement | Microsoft Docs'
+title: Guide pratique pour modifier des fichiers Web.Config pour instrumenter et profiler des applications web ASP.NET compilées dynamiquement | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 53c55987c22104a8951976890812d90f6bb838d4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54774991"
 ---
-# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Procédure : Modifier des fichiers web.config pour instrumenter et profiler des applications web ASP.NET compilées dynamiquement
+# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Guide pratique pour modifier des fichiers Web.Config pour instrumenter et profiler des applications web ASP.NET compilées dynamiquement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez utiliser la méthode d’instrumentation des outils de profilage de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour collecter des données de minutage détaillées, des données d’allocation de mémoire .NET et des données de durée de vie des objets .NET à partir d’applications web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] compilées dynamiquement.  
@@ -222,5 +222,5 @@ Vous pouvez utiliser la méthode d’instrumentation des outils de profilage de 
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour instrumenter une application ASP.NET compilée dynamiquement et collecter des données chronologiques détaillées](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)   
+ [Guide pratique pour instrumenter une application ASP.NET compilée dynamiquement et collecter des données de minutage détaillées](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)   
  [Guide pratique pour instrumenter une application ASP.NET compilée dynamiquement et collecter des données de mémoire](/visualstudio/profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data?view=vs-2015)

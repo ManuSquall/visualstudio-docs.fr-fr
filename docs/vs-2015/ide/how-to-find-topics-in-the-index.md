@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Rechercher des rubriques dans l’Index | Microsoft Docs'
+title: Guide pratique pour rechercher des rubriques dans l’index | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -17,13 +17,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 8c2ad1e97302a822bacc2fbbc983002626adb78a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758167"
 ---
-# <a name="how-to-find-topics-in-the-index"></a>Procédure : Rechercher des rubriques dans l’index
+# <a name="how-to-find-topics-in-the-index"></a>Guide pratique pour rechercher des rubriques dans l’index
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L’index contient une liste de mots clés qui sont associés à des rubriques dans le contenu installé. Chaque rubrique peut être associée à plusieurs mots clés et chaque mot clé peut être associé à plusieurs rubriques. Utilisez cet index comme celui d’un livre.  

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Définir les Options d’accessibilité IDE | Microsoft Docs'
+title: Guide pratique pour définir les options d’accessibilité IDE | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -12,13 +12,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b1f70f2f33b8ad0af4f0fa13489cb75be529c322
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54803221"
 ---
-# <a name="how-to-set-ide-accessibility-options"></a>Procédure : Définir les options d’accessibilité de l’IDE
+# <a name="how-to-set-ide-accessibility-options"></a>Guide pratique pour définir les options d'accessibilité IDE
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
@@ -32,7 +32,7 @@ ms.locfileid: "54803221"
 ## <a name="editors-dialogs-and-tool-windows"></a>Éditeurs, boîtes de dialogue et fenêtres d’outils  
  Par défaut, les boîtes de dialogue et les fenêtres d’outils de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] utilisent les mêmes taille de police et couleurs que le système d’exploitation. Les paramètres de couleur pour le cadre de l’IDE, les boîtes de dialogue, les barres d’outils et les fenêtres d’outils sont basés sur un modèle de couleurs : clair ou sombre. Vous pouvez changer le modèle de couleurs actuel dans la [boîte de dialogue Général, Environnement, Options](../../ide/reference/general-environment-options-dialog-box.md).  
   
- Vous pouvez également afficher des fenêtres indépendantes dans le mode Code de l’éditeur. Ces fenêtres peuvent vous demander de fournir des membres disponibles sur l’objet en cours et les paramètres pour exécuter une fonction ou une instruction. Ces fenêtres peuvent être utiles si vous avez des difficultés à taper. Toutefois, elles interfèrent avec le focus dans l’éditeur de code, ce qui peut être problématique pour certains utilisateurs. Vous pouvez désactiver ces fenêtres en ouvrant la boîte de dialogue Options et en décochant **Répertorier automatiquement les membres** et **Informations sur les paramètres** dans la page **Éditeur de texte**, **Toutes les langues**, **Général** de la boîte de dialogue **Options**. Pour plus d'informations, voir [Procédure : Définir les Options générales de l’éditeur](http://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
+ Vous pouvez également afficher des fenêtres indépendantes dans le mode Code de l’éditeur. Ces fenêtres peuvent vous demander de fournir des membres disponibles sur l’objet en cours et les paramètres pour exécuter une fonction ou une instruction. Ces fenêtres peuvent être utiles si vous avez des difficultés à taper. Toutefois, elles interfèrent avec le focus dans l’éditeur de code, ce qui peut être problématique pour certains utilisateurs. Vous pouvez désactiver ces fenêtres en ouvrant la boîte de dialogue Options et en décochant **Répertorier automatiquement les membres** et **Informations sur les paramètres** dans la page **Éditeur de texte**, **Toutes les langues**, **Général** de la boîte de dialogue **Options**. Pour plus d’informations, consultez [Guide pratique pour définir les options générales de l’éditeur](http://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
   
  Vous pouvez réorganiser les fenêtres dans l’environnement de développement intégré (IDE) pour les adapter au mieux à votre manière de travailler. Vous pouvez ancrer, rendre flottante, masquer ou masquer automatiquement chaque fenêtre Outil.  
   
@@ -84,7 +84,7 @@ ms.locfileid: "54803221"
   
 4.  Dans **Afficher les éléments**, sélectionnez un élément dont vous avez besoin de modifier l’affichage, tel que **Texte brut**, **Marge des indicateurs**, **Espaces blancs visibles**, **Nom d’attribut HTML** ou **Attribut XML**.  
   
-5.  Sélectionnez les paramètres d’affichage parmi les options suivantes : **Premier plan de l’élément**, **Arrière plan de l’élément** et **Gras**.  
+5.  Sélectionnez les paramètres d’affichage parmi les options suivantes : **Premier plan de l’élément**, **Arrière-plan de l’élément** et **Gras**.  
   
 6.  Cliquez sur **OK**.  
   

@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 50f91c4bdb17612d56534290a7b83b7df1d771c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54790018"
 ---
 # <a name="go-to-command"></a>Atteindre, commande
@@ -37,7 +37,7 @@ Edit.GoTo [linenumber]
  `linenumber`  
  Optionnel. Nombre entier représentant le numéro de la ligne à atteindre.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  La numérotation des lignes débute à 1. Si la valeur de `linenumber` est inférieure à 1, la première ligne est affichée. Si la valeur de `linenumber` est supérieure au numéro de la dernière ligne, la dernière ligne est affichée.  
   
  Si aucune valeur n’est spécifiée pour `linenumber`, la boîte de dialogue **Atteindre la ligne** s’affiche.  

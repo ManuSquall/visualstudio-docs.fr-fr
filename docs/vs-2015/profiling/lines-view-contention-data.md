@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8cb6b8191b39bfc79615bf0bbcd4fb469395f8d8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54779048"
 ---
 # <a name="lines-view---contention-data"></a>Lignes, vue - Données de conflit
@@ -66,7 +66,7 @@ La vue Lignes des données de conflit répertorie les données de performance po
 |**Fin ligne source**|Numéro de ligne dans le fichier source au niveau duquel l’instruction se termine.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour personnaliser les colonnes de vue des rapports](../profiling/how-to-customize-report-view-columns.md)   
+ [Guide pratique pour personnaliser les colonnes de la vue Rapport](../profiling/how-to-customize-report-view-columns.md)   
  [Lignes, vue](../profiling/lines-view.md)   
  [Lignes, vue - Échantillonnage](../profiling/lines-view-dotnet-memory-sampling-data.md)   
  [Lignes, vue](../profiling/lines-view-sampling-data.md)

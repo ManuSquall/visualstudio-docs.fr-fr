@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 22dd181a991c4c2c006335df955ba27dd4d27ce6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54756409"
 ---
 # <a name="saving-and-exporting-performance-tools-data"></a>Enregistrement et exportation de données des outils d’analyse des performances
@@ -23,7 +23,7 @@ ms.locfileid: "54756409"
 
 Cette rubrique décrit comment enregistrer et exporter des fichiers de données de performances.  
   
-##  <a name="BKMK_Save_Profiler_Data_Files_As_Analyzed_Report_Files"></a> Guide pratique pour enregistrer des fichiers de données de performances en tant que fichiers de rapports analysés  
+##  <a name="BKMK_Save_Profiler_Data_Files_As_Analyzed_Report_Files"></a> Comment : enregistrer des fichiers de données de performances en tant que fichiers de rapports analysés  
  Vous pouvez enregistrer des vues filtrées ou non filtrées de fichiers de données de profilage (.vsp) en tant que fichiers de rapports analysés (.vsps). Un fichier de rapport analysé peut être visualisé dans la fenêtre d’affichage des rapports et est considérablement plus petit que le fichier .vsp d’origine. Toutefois, vous ne pouvez pas appliquer de filtre aux données d’un fichier .vsps. Vous pouvez créer un fichier de rapport analysé à partir de l’Explorateur de performances sans ouvrir le fichier dans l’environnement de développement intégré (IDE), ou vous pouvez ouvrir et filtrer le fichier .vsp puis enregistrer les résultats.  
   
 #### <a name="to-save-an-analyzed-performance-report-from-the-performance-explorer"></a>Pour enregistrer un rapport de performances analysé à partir de l’Explorateur de performances  
@@ -46,7 +46,7 @@ Cette rubrique décrit comment enregistrer et exporter des fichiers de données 
   
 5.  Cliquez sur **Enregistrer**.  
   
-## <a name="how-to-export-profiling-tools-reports-to-an-xml-or-csv-file"></a>Procédure : Exporter des rapports d’outils de profilage vers un fichier .xml ou .csv  
+## <a name="how-to-export-profiling-tools-reports-to-an-xml-or-csv-file"></a>Comment : exporter des rapports d’outils de profilage pour un fichier .xml ou .csv  
  Vous pouvez exporter une ou plusieurs vues de rapports à partir d’un fichier .vsp ou d’un fichier de données de profilage .vsps sous forme de fichier délimité par des virgules ou de fichier XML. Vous pouvez filtrer les données de la fenêtre d’affichage des rapports avant d’exporter, ou exporter des vues de rapport du fichier de données entier à partir de la fenêtre **Explorateur de performances** .  
   
 > [!NOTE]

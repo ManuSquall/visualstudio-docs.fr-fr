@@ -18,10 +18,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d048edd60d41c3f08a8bd0b731beddb3619a1887
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54776067"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
@@ -62,7 +62,7 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName
  /projectconfig `ProjConfigName`  
  Optionnel. Nom d’une configuration de build de projet à appliquer au `/project` nommé.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
   
 -   Doit être utilisé dans le cadre d’une commande `devenv /build`, /`clean`, `/rebuild` ou `/deploy`.  
   

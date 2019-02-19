@@ -14,10 +14,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1edbcddd27f2c3637e0e56dd9b4841e17ace16af
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54767561"
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe (devenv.exe)
@@ -38,7 +38,7 @@ Devenv /debugexe ExecutableFile
   
  Si le fichier .exe est introuvable ou n’existe pas, aucun avertissement ni erreur ne s’affiche et [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] démarre normalement.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Toute chaîne qui suit le paramètre `ExecutableFile` est passée à ce fichier comme argument.  
   
 ## <a name="example"></a>Exemple  

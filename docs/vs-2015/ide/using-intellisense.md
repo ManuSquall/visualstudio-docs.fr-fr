@@ -26,16 +26,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: bb859fe5e66dbfcc1f43dfff3c0744c84066054b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758826"
 ---
 # <a name="using-intellisense"></a>Using IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-IntelliSense est le terme général qui désigne un certain nombre de fonctionnalités : Liste des membres, Informations sur les paramètres, Info express et Compléter le mot. Ces fonctionnalités vous aident à en savoir plus sur le code que vous utilisez, à assurer le suivi des paramètres que vous tapez et à ajouter des appels aux propriétés et aux méthodes en quelques séquences de touches.  
+IntelliSense est le terme général employé pour plusieurs fonctionnalités : Liste des membres, Informations sur les paramètres, Info express et Compléter le mot. Ces fonctionnalités vous aident à en savoir plus sur le code que vous utilisez, à assurer le suivi des paramètres que vous tapez et à ajouter des appels aux propriétés et aux méthodes en quelques séquences de touches.  
   
  De nombreux aspects d'IntelliSense sont spécifiques au langage. Pour plus d'informations sur IntelliSense pour différents langages, consultez les rubriques répertoriées sous Voir aussi.  
   

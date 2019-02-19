@@ -17,10 +17,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 120ff132ac33a156cdf734ee0e17f4cfade9380c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54768891"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
@@ -42,7 +42,7 @@ devenv {/run|/r} {SolutionName|ProjectName}
  `ProjectName`  
  Obligatoire. Chemin complet et nom d’un fichier projet.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Compile et exécute la solution ou le projet spécifié en fonction des paramètres spécifiés pour la configuration de la solution active. Ce commutateur lance l’environnement de développement intégré (IDE) et le maintient actif à la fin de l’exécution du projet ou de la solution.  
   
 -   Placez entre guillemets doubles les chaînes contenant des espaces.  
