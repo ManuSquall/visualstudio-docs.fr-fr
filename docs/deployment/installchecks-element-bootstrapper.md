@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: ad329c87-b0ad-4304-84de-ae9496514c42
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccd9fa5ea1f7963d4864e276bd05011be817de2c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3556c36e00ac092c1ebb3af4e6d09921fcd11233
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865979"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023575"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; élément (programme d’amorçage)
 Le `InstallChecks` élément prend en charge le démarrage d’une variété de tests sur l’ordinateur local pour vous assurer que toutes les conditions préalables requises pour une application ont été installés.  
@@ -92,7 +92,7 @@ Le `InstallChecks` élément prend en charge le démarrage d’une variété de 
 |`PackageFile`|Obligatoire. Le programme externe à exécuter. Le programme doit faire partie du package de distribution le programme d’installation.|  
 |`Arguments`|Optionnel. Fournit des arguments de ligne de commande à l’exécutable nommé par `PackageFile`.|  
 
-## <a name="filecheck"></a>FichierConsigner  
+## <a name="filecheck"></a>FileCheck  
  Cet élément est un élément enfant facultatif de `InstallChecks`. Pour chaque instance de `FileCheck`, le programme d’amorçage déterminera si le fichier nommé existe et retourner le numéro de version du fichier. Si le fichier n’a pas un numéro de version, le programme d’amorçage définit la propriété nommée par `Property` à 0. Si le fichier n’existe pas, `Property` n’est pas définie pour n’importe quelle valeur.  
 
  `FileCheck` ne contient aucun élément et a les attributs suivants.  
@@ -141,7 +141,7 @@ Le `InstallChecks` élément prend en charge le démarrage d’une variété de 
 |`FileName`|Optionnel. Le nom d’un fichier. Si spécifié, la valeur obtenue à partir de la clé de Registre est censée pour être un chemin de répertoire, et ce nom est ajouté à ce dernier. Si non spécifié, la valeur retournée à partir du Registre est censée pour être le chemin complet vers un fichier.|  
 |`SearchDepth`|Optionnel. La profondeur à partir duquel rechercher des sous-dossiers pour le fichier nommé. La recherche respecte la profondeur en premier. La valeur par défaut est 0, ce qui limite la recherche sur le dossier de niveau supérieur spécifié par la valeur de la clé de Registre.|  
 
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Si les éléments sous `InstallChecks` définissent les tests à exécuter, ils ne les exécutent pas. Pour exécuter les tests, vous devez créer `Command` éléments situés sous le `Commands` élément.  
 
 ## <a name="example"></a>Exemple  

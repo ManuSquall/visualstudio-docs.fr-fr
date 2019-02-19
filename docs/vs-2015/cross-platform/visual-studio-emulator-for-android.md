@@ -1,24 +1,19 @@
 ---
 title: Émulateur Visual Studio pour Android | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: tgt-pltfrm-cross-plat
+ms.topic: conceptual
 ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 22126bb5a364148c7079d59d750483a7ebc47418
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: ec7e6d3ee6d27c444d0904e750293a3d82c3ab4a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799596"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54789852"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Émulateur Visual Studio pour Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,7 +93,7 @@ L'Émulateur Visual Studio pour Android est une application de bureau qui émule
 ##  <a name="FeaturesTest"></a> Fonctionnalités que vous pouvez tester dans l’émulateur  
  Pour plus d’informations sur les fonctionnalités que vous pouvez tester dans l’émulateur, consultez cette [documentation](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx).  
   
-##  <a name="FeaturesNonTest"></a> Fonctionnalités que vous ne pouvez pas tester dans l’émulateur  
+##  <a name="FeaturesNonTest"></a>Fonctionnalités que vous ne pouvez pas tester dans l’émulateur  
  La liste suivante décrit les fonctionnalités de la plateforme Android que vous **ne pouvez pas** tester dans l’émulateur. Vous devez tester ces fonctionnalités sur un appareil physique.  
   
 -   Boussole  
@@ -119,4 +114,3 @@ L'Émulateur Visual Studio pour Android est une application de bureau qui émule
 ## <a name="see-also"></a>Voir aussi  
  [Configuration requise pour l’émulateur Visual Studio pour Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)   
  [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
-

@@ -27,7 +27,7 @@ ms.locfileid: "54773158"
 # <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013 : Utilisation intensive de String.Split/String.Substring
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0013|  
+ID de règle | DA0013 |  
 | Catégorie de |. Conseils d’utilisation de NET Framework |  
 | Méthodes de profilage | Échantillonnage |  
 | Message | Envisagez de réduire l’utilisation des fonctions String.Split et String.Substring. |  

@@ -23,10 +23,10 @@ ms.locfileid: "54779080"
 # <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503 : jeu de travail moyen, en octets, pour le processus en cours de profilage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0503|  
+ID de règle | DA0503 |  
 | Catégorie | Surveillance des ressources |  
 | Méthode de profilage | Tous les |  
-| Message | À titre d’information uniquement. Le compteur Jeu de travail de processus mesure l’utilisation de la mémoire physique par le processus en cours de profilage. La valeur signalée correspond à la moyenne pour tous les intervalles de mesure.  
+| Message | À titre d’information uniquement. Le compteur Jeu de travail de processus mesure l’utilisation de la mémoire physique par le processus en cours de profilage. La valeur signalée correspond à la moyenne pour tous les intervalles de mesure.|  
 | Type de règle | Informations |  
   
  Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 10 échantillons pour déclencher cette règle.  

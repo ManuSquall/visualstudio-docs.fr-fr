@@ -14,13 +14,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 73d515c03b7966e3434a2fc2507d3ad5f8d13c1b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54782850"
 ---
-# <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Vue d’ensemble de l’interface utilisateur des Outils Domain-Specific Language
+# <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Vue d'ensemble de l'interface utilisateur des outils de langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Lorsque vous ouvrez pour la première fois une solution des Outils Domain-Specific Language (Outils DSL) dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], l’interface utilisateur ressemble à l’image suivante.  
@@ -33,7 +33,7 @@ Lorsque vous ouvrez pour la première fois une solution des Outils Domain-Specif
 |-----------------|--------------------|  
 |Diagramme|Le diagramme affiche le modèle de domaine.<br /><br /> Le diagramme comporte deux parties. Une partie définit les types des éléments de vos modèles. L’autre partie définit comment vos modèles apparaissent à l’écran.|  
 |Boîte à outils|Faites glisser les outils de la boîte à outils vers le diagramme pour ajouter des classes de domaine et des types de forme. Pour ajouter des connecteurs, des relations et des mappages de formes, cliquez sur l’outil, sur le nœud source du diagramme, puis sur le nœud cible.|  
-|Explorateur DSL|L’**Explorateur DSL** s’affiche lorsqu’une définition DSL est la fenêtre active. Il montre le langage DSL sous forme d’arborescence. L’Explorateur DSL vous permet de modifier les fonctionnalités du modèle qui ne sont pas affichées sur le diagramme. Par exemple, vous pouvez ajouter des éléments de boîte à outils et basculer sur le processus de validation à l’aide de l’**Explorateur DSL**.|  
+|explorateur DSL|L’**Explorateur DSL** s’affiche lorsqu’une définition DSL est la fenêtre active. Il montre le langage DSL sous forme d’arborescence. L’Explorateur DSL vous permet de modifier les fonctionnalités du modèle qui ne sont pas affichées sur le diagramme. Par exemple, vous pouvez ajouter des éléments de boîte à outils et basculer sur le processus de validation à l’aide de l’**Explorateur DSL**.|  
 |Fenêtre Détails DSL|La fenêtre **Détails DSL** montre les propriétés des éléments du modèle de domaine qui vous permettent de contrôler la façon dont les éléments sont affichés, copiés et supprimés.<br /><br /> Par défaut, la fenêtre **Détails DSL** s’affiche à côté des fenêtres **Liste d’erreurs** et **Sortie**.|  
   
 ## <a name="the-domain-model-diagram"></a>Diagramme du modèle de domaine  

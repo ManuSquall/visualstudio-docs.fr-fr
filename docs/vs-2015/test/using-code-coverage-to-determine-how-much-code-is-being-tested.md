@@ -256,7 +256,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
   
     Si vous avez plusieurs définitions de source de test, répétez cette étape pour chaque définition.  
   
-   - <em>Mais aucun champ n’est nommé *Type de fichier des paramètres d’exécution</em>.*  
+   - <em>Mais aucun champ n’est nommé **Type de fichier des paramètres d’exécution</em>*.*  
   
       Sous **Tests automatisés**, sélectionnez **Assembly de test**, puis choisissez le bouton de sélection **[...]** situé à la fin de la ligne. Dans la boîte de dialogue **Ajouter/Modifier une série de tests**, sous **Test Runner**, choisissez **Visual Studio Test Runner**.  
   

@@ -1,14 +1,9 @@
 ---
 title: Microsoft Help Viewer | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-help-viewer
+ms.topic: conceptual
 f1_keywords:
 - hv_general
 helpviewer_keywords:
@@ -24,13 +19,13 @@ ms.assetid: 74e41666-2ce8-4ac0-a0e5-3723d1e322c2
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c8c8803394c4f6d31db187384304f8fbb1db4468
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 141bf63a3cf64cfb1e3576f76512351b496a2778
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820094"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755036"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ ms.locfileid: "49820094"
 Vous pouvez installer et afficher le contenu de divers produits et technologies sur votre ordinateur local à l’aide de Microsoft Help Viewer.  
   
 > [!WARNING]
->  Quand vous installez Visual Studio, vous obtenez la visionneuse d'aide. Pour commencer à lire les rubriques d’aide dans la visionneuse d’aide plutôt que sur le site de téléchargement MSDN, accédez à la **aide** menu dans Visual Studio, sélectionnez **définir les préférences pour aider à**, puis sélectionnez **lancer dans l’aide Visionneuse**. Les rubriques d’aide hors connexion pour une version donnée de Visual Studio sont disponibles uniquement après la version release finale de cette version.  
+>  Quand vous installez Visual Studio, vous obtenez la visionneuse d'aide. Pour commencer à lire les rubriques d'aide dans la visionneuse d’aide plutôt que sur le site de téléchargement MSDN, accédez au menu **Aide** de Visual Studio, sélectionnez **Définir les préférences pour l’aide**, puis **Lancer dans la visionneuse d’aide**. Les rubriques d’aide hors connexion pour une version donnée de Visual Studio sont disponibles uniquement après la version release finale de cette version.  
   
  Vous pouvez effectuer les opérations suivantes :  
   
@@ -84,6 +79,3 @@ Vous pouvez installer et afficher le contenu de divers produits et technologies 
  [Installer et gérer un contenu local](../ide/install-and-manage-local-content.md)   
  [Rechercher des informations](../ide/locate-information.md)   
  [Résolution des problèmes liés à la Visionneuse d’aide](../ide/troubleshooting-the-help-viewer.md)
-
-
-

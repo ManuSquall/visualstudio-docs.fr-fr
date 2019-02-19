@@ -19,7 +19,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54799140"
 ---
-# <a name="ltvaluegt-javascript"></a>&lt;value&gt; (JavaScript)
+# <a name="ltvaluegt-javascript"></a>&lt;valeur&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Spécifie les informations de documentation pour `get` et `set` fonctions pour les propriétés ECMAScript 3.  

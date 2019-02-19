@@ -12,13 +12,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ed5232ed8f0033e5953f14b8e4a9aa08abcb316c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54805647"
 ---
-# <a name="overview-of-domain-specific-language-tools"></a>Vue d’ensemble des Outils Domain-Specific Language
+# <a name="overview-of-domain-specific-language-tools"></a>Vue d'ensemble des outils de langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les Outils Domain-Specific Language (DSL), qui sont hébergés dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous permettent de concevoir un langage spécifique à un domaine et de générer tout ce que les utilisateurs doivent avoir pour créer des modèles basés sur le langage.  
@@ -68,7 +68,7 @@ Les Outils Domain-Specific Language (DSL), qui sont hébergés dans [!INCLUDE[vs
 ## <a name="validation-in-dsl-tools"></a>Validation dans les Outils DSL  
  DSL offre un niveau de validation pour vous assurer que le modèle de domaine répond aux exigences de base pour générer du code. En règle générale, lorsque vous créez votre propre langage spécifique à un domaine, vous devez ajouter votre propre validation pour exprimer vos règles de logique métier. Pour plus d’informations sur la validation personnalisée, consultez [Validation dans un langage spécifique à un domaine](../modeling/validation-in-a-domain-specific-language.md).  
   
- Nous vous recommandons de valider souvent votre langage spécifique à un domaine quand vous le créez. Si votre langage spécifique à un domaine comporte des erreurs de validation, vous ne pouvez pas générer le code source. Le processus de génération de code source à partir des modèles est effectué en cliquant sur **Transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions. Chaque fois que vous modifiez la définition de langage, veillez également à **Transformer tous les modèles**. Pour plus d’informations, consultez [Procédure : Créer une solution de langage spécifique à un domaine](../modeling/how-to-create-a-domain-specific-language-solution.md).  
+ Nous vous recommandons de valider souvent votre langage spécifique à un domaine quand vous le créez. Si votre langage spécifique à un domaine comporte des erreurs de validation, vous ne pouvez pas générer le code source. Le processus de génération de code source à partir des modèles est effectué en cliquant sur **Transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions. Chaque fois que vous modifiez la définition de langage, veillez également à **Transformer tous les modèles**. Pour plus d'informations, voir [Procédure : Créer une solution de langage spécifique à un domaine](../modeling/how-to-create-a-domain-specific-language-solution.md).  
   
 ## <a name="customization-of-dsl-tools"></a>Personnalisation des Outils DSL  
  Vous pouvez fournir du code supplémentaire pour affiner le comportement du modèle et définir des contraintes sur votre langage. Si nécessaire, vous pouvez apporter des changements significatifs en modifiant les modèles de texte.  

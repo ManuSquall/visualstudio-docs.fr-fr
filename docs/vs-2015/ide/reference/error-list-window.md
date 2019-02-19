@@ -27,7 +27,7 @@ ms.locfileid: "54785769"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
-REMARQUE :
+REMARQUE]
 >  La liste d'erreurs affiche des informations sur un message d'erreur spécifique. Vous pouvez copier le numéro d'erreur ou le texte de la chaîne d'erreur dans la fenêtre Sortie. Pour afficher la fenêtre Sortie, appuyez sur Ctrl+Alt+O. Consultez [Sortie, fenêtre](../../ide/reference/output-window.md).  
   
  La fenêtre **Liste d’erreurs** permet d’accélérer le développement des applications. Par exemple, il est possible de réaliser les tâches suivantes :  

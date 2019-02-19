@@ -27,7 +27,7 @@ ms.locfileid: "54770832"
 Id de règle | DA0007 |  
 | Catégorie de |. Utilisation de NET Framework |  
 | Méthodes de profilage | Tous les |  
-| Message | Un nombre élevé d’exceptions est levé. Réduisez l’utilisation d’exceptions dans la logique du programme.  
+| Message | Un nombre élevé d’exceptions est levé. Réduisez l’utilisation d’exceptions dans la logique du programme.|  
 | Type de message | Avertissement |  
   
  Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 25 échantillons pour déclencher cette règle.  

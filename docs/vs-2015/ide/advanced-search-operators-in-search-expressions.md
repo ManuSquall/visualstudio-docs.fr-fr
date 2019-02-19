@@ -31,7 +31,7 @@ ms.locfileid: "54775572"
 > [!WARNING]
 >  Vous devez entrer les opérateurs de recherche avancée avec un signe deux-points final et sans espace avant ce signe pour que le moteur de recherche les identifie.  
   
-|Pour rechercher|Utiliser|Exemple|Résultat|  
+|Pour rechercher|Utilisez|Exemple|Résultat|  
 |-------------------|---------|-------------|------------|  
 |Un terme dans le titre de la rubrique|title:|title:binaryreader|Rubriques qui contiennent « binaryreader » dans leur titre.|  
 |Un terme dans un exemple de code|code:|code:readdouble|Rubriques qui contiennent « readdouble » dans un exemple de code.|  
@@ -40,7 +40,7 @@ ms.locfileid: "54775572"
   
  Vous pouvez utiliser l’opérateur code: pour rechercher du contenu sur l’un des différents langages de programmation, mais il ne retourne des résultats que pour le contenu marqué avec un langage de programmation spécifique. Le tableau suivant liste les langages de programmation pris en charge par cet opérateur :  
   
-|Langage de programmation|Utiliser|  
+|Langage de programmation|Utilisez|  
 |--------------------------|---------|  
 |Visual Basic|code:vb<br /><br /> ou<br /><br /> code:visualbasic|  
 |C#|code:c#<br /><br /> ou<br /><br /> code:csharp|  

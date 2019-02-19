@@ -100,7 +100,7 @@ Vous pouvez déployer une application qui cible plusieurs versions du .NET Frame
   
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>Pour mettre à jour et signer à nouveau l’application et déploiement de manifestes  
   
--   Mettre à jour et signer à nouveau les manifestes d’application et de déploiement. Pour plus d'informations, consultez [How to: Re-sign Application and Deployment Manifests](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+-   Mettre à jour et signer à nouveau les manifestes d’application et de déploiement. Pour plus d’informations, consultez [Guide pratique pour resigner des manifestes de déploiement et d’application](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Publier des applications ClickOnce](../deployment/publishing-clickonce-applications.md)   

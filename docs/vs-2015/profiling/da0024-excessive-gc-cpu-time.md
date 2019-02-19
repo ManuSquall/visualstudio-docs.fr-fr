@@ -26,7 +26,7 @@ ms.locfileid: "54771067"
 Id de règle | DA0024 |  
 | Catégorie de |. Utilisation de NET Framework |  
 | Méthode de profilage | Tous les |  
-| Message | % temps dans GC est très élevé. % de temps dans GC très élevé. Volume de surcharge de garbage collection trop élevé.  
+| Message | % temps dans GC est très élevé. Volume de surcharge de garbage collection trop élevé.|  
 | Type de règle | Avertissement |  
   
  Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 10 échantillons pour déclencher cette règle.  

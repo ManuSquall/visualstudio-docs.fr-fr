@@ -1,5 +1,5 @@
 ---
-title: VSG_NODEFAULT_INSTANCE | Microsoft Docs
+title: VSG_DEFAULT_RUN_FILENAME | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 19c95b0d-9a4d-441f-9ed7-3acb39e67521
@@ -24,7 +24,7 @@ Définit par sa présence si une instance par défaut de la [vsgdbg, classe](vsg
 #define VSG_NODEFAULT_INSTANCE  
 ```  
   
-## <a name="value"></a>Valeur  
+## <a name="value"></a>Value  
  Un préprocesseur qui symbole par sa présence ou absence détermine si une instance par défaut de la `VsgDbg` classe est fournie. Si ce symbole est défini, puis aucune instance par défaut de la `VsgDbg` classe est fournie ; sinon, une instance par défaut est fournie et initialisée avant l’exécution de votre programme.  
   
  L’interface de capture par programmation est fournie via un pointeur qui a une portée globale, `g_pVsgDbg`.  

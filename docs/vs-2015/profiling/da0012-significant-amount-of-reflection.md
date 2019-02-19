@@ -24,10 +24,10 @@ ms.locfileid: "54770771"
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012 : Quantité importante de réflexion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0012|  
+ID de règle | DA0012 |  
 | Catégorie de |. Utilisation de NET Framework |  
 | Méthodes de profilage | Échantillonnage |  
-| Message | Vous pouvez utilisez trop de réflexion. C’est une opération coûteuse.  
+| Message | Vous pouvez utilisez trop de réflexion. C’est une opération coûteuse.|  
 | Type de règle | Avertissement |  
   
 ## <a name="cause"></a>Cause  

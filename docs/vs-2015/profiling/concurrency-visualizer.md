@@ -26,7 +26,7 @@ ms.locfileid: "54779115"
 # <a name="concurrency-visualizer"></a>Visualiseur concurrentiel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-REMARQUE :
+REMARQUE]
 >  Le visualiseur concurrentiel est une extension facultative de Visual Studio. Vous pouvez télécharger le visualiseur concurrentiel et les Outils de collecte du visualiseur concurrentiel à partir des liens suivants :  
 > 
 > - Télécharger l’extension              [Visualiseur concurrentiel](https://visualstudiogallery.msdn.microsoft.com/a6c24ce9-beec-4545-9261-293061436ee9) .  

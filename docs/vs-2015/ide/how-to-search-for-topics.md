@@ -1,25 +1,20 @@
 ---
-title: Guide pratique pour rechercher des rubriques | Microsoft Docs
-ms.custom: ''
+title: 'Procédure : Rechercher des rubriques | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ef0cbdff47423fe1ed580f3f51ba1e6039ee3e01
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b784dc20f072a7cb8ab6ed80242c09e57ce1127a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248286"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799078"
 ---
 # <a name="how-to-search-for-topics"></a>Comment : rechercher des rubriques
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,19 +34,16 @@ Vous pouvez utiliser la fonctionnalité de recherche en texte intégral pour tro
     > [!NOTE]
     >  Dans la boîte de dialogue **Options de la visionneuse**, vous pouvez définir des préférences supplémentaires, par exemple, pour spécifier le nombre maximal de résultats de la recherche à afficher et si le contenu en anglais doit être affiché quand votre langue principale n’est pas l’anglais.  
   
-3.  Appuyez sur ENTRÉE.  
+3.  Choisissez la touche Entrée.  
   
      Une recherche retourne 200 occurrences au maximum, par défaut, et les affiche dans la zone de résultats de la recherche.  
   
-     Informations de version supplémentaires pour chaque résultat peuvent apparaître en fonction du contenu.  
+     Des informations de version supplémentaires pour chaque résultat peuvent s’afficher en fonction du contenu.  
   
 4.  Pour afficher une rubrique, choisissez son titre dans la liste des résultats.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Conseils de recherche en texte intégral](../ide/full-text-search-tips.md)   
  [Opérateurs logiques dans les expressions de recherche](../ide/logical-operators-in-search-expressions.md)   
- [Opérateurs de recherche dans les Expressions de recherche avancée](../ide/advanced-search-operators-in-search-expressions.md)   
- [Guide pratique pour personnaliser les résultats de recherche](../ide/how-to-customize-search-results.md)
-
-
-
+ [Opérateurs de recherche avancée dans les expressions de recherche](../ide/advanced-search-operators-in-search-expressions.md)   
+ [Guide pratique pour Personnaliser les résultats de recherche](../ide/how-to-customize-search-results.md)

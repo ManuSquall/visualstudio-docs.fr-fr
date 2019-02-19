@@ -23,10 +23,10 @@ ms.locfileid: "54793046"
 # <a name="da0505-average-private-bytes-allocated-for-the-process-being-profiled"></a>DA0505 : nombre moyen d'octets privés alloués pour le processus en cours de profilage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0505|  
+ID de règle | DA0505 |  
 | Catégorie | Gestion des ressources |  
 | Méthode de profilage | Tous les |  
-| Message | À titre d’information uniquement. Le compteur Octets privés de processus mesure la mémoire virtuelle allouée par le processus que vous profilez. La valeur signalée correspond à la moyenne pour tous les intervalles de mesure.  
+| Message | À titre d’information uniquement. Le compteur Octets privés de processus mesure la mémoire virtuelle allouée par le processus que vous profilez. La valeur signalée correspond à la moyenne pour tous les intervalles de mesure.|  
 | Type de règle | Informations |  
   
  Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 10 échantillons pour déclencher cette règle.  

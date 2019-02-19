@@ -24,10 +24,10 @@ ms.locfileid: "54784436"
 # <a name="da0014-extremely-high-rates-of-paging-active-memory-to-disk"></a>DA0014 : Taux élevés de pagination de la mémoire active sur le disque
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0014|  
+ID de règle | DA0014 |  
 | Catégorie | Mémoire et pagination |  
 | Méthode de profilage | Tous les |  
-| Message | Un taux très élevé de pagination de la mémoire active sur le disque est en cours. Votre application peut être liée à la mémoire.  
+| Message | Un taux très élevé de pagination de la mémoire active sur le disque est en cours. Votre application peut être liée à la mémoire.|  
 | Type de règle | Avertissement |  
   
  Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 25 échantillons pour déclencher cette règle.  

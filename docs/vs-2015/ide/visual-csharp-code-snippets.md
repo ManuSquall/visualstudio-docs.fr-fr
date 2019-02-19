@@ -1,14 +1,9 @@
 ---
 title: Extraits de code Visual C# | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - snippets [C#], default snippets
 - snippets [C#], Code Snippet Inserter
@@ -19,13 +14,13 @@ ms.assetid: dbea3dd6-e650-4190-b874-c9f097d7de6e
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9c06243b4f41919c1c51002f0ed805a3fbd67112
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 47658a8aec8b2dedd2dcdeb337bdca805e1b0bca
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297412"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787103"
 ---
 # <a name="visual-c-code-snippets"></a>Extraits de code Visual C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ Les extraits de code sont des extraits prêts à l’emploi que vous pouvez rapi
 |class|Crée une déclaration de classe.|Dans un espace de noms (notamment l’espace de noms global), une classe ou un struct.|  
 |ctor|Crée un constructeur pour la classe conteneur.|Dans une classe.|  
 |cw|Crée un appel à <xref:System.Console.WriteLine%2A>.|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|  
-|do|Crée un [faire](http://msdn.microsoft.com/library/50725f79-9ba6-4898-aa78-6e331568a1bb) `while` boucle.|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|  
+|do|Crée une boucle [do](http://msdn.microsoft.com/library/50725f79-9ba6-4898-aa78-6e331568a1bb)`while`.|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|  
 |else|Crée un bloc [else](http://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2).|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|  
 |enum|Crée une déclaration [enum](http://msdn.microsoft.com/library/bbeb9a0f-e9b3-41ab-b0a6-c41b1a08974c).|Dans un espace de noms (notamment l’espace de noms global), une classe ou un struct.|  
 |equals|Crée une déclaration de méthode qui substitue la méthode <xref:System.Object.Equals%2A> définie dans la classe <xref:System.Object>.|Dans une classe ou un struct.|  
@@ -83,10 +78,7 @@ Les extraits de code sont des extraits prêts à l’emploi que vous pouvez rapi
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions des extraits de code](../ide/code-snippet-functions.md)   
  [Extraits de code](../ide/code-snippets.md)   
- [Guide pratique pour créer un nouvel extrait de code avec remplacements](http://msdn.microsoft.com/en-us/8d56d43c-097a-475b-aa85-cae1554b6338)   
+ [Guide pratique pour Créer un nouvel extrait de code avec remplacements](http://msdn.microsoft.com/8d56d43c-097a-475b-aa85-cae1554b6338)   
  [Paramètres de modèle](../ide/template-parameters.md)   
- [Comment : utiliser des extraits de Code entourer de](../ide/how-to-use-surround-with-code-snippets.md)   
- [Guide pratique pour restaurer les extraits de code de refactorisation C#](../ide/how-to-restore-csharp-refactoring-snippets.md)
-
-
-
+ [Guide pratique pour utiliser des extraits de code Entourer de](../ide/how-to-use-surround-with-code-snippets.md)   
+ [Guide pratique pour Restaurer C# extraits de code de refactorisation](../ide/how-to-restore-csharp-refactoring-snippets.md)

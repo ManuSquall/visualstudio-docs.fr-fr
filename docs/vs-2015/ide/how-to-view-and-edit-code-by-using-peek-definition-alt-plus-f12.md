@@ -16,7 +16,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54777301"
 ---
-# <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Procédure : afficher et modifier le code avec l’Aperçu de définition (Alt + F12)
+# <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Guide pratique pour afficher et modifier le code avec l’Aperçu de définition (ALT + F12)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Utilisez la commande **Aperçu de définition** pour afficher et modifier du code sans sortir du code que vous écrivez. Les options **Aperçu de définition** et **Atteindre la définition** affichent les mêmes informations, mais **Aperçu de définition** affiche le code dans une fenêtre contextuelle, alors que l’option **Atteindre la définition** affiche le code dans une fenêtre de code distincte. L’option **Atteindre la définition** provoque le basculement de votre contexte (c’est-à-dire, la fenêtre de code active, la ligne active et la position du curseur) vers la fenêtre du code de définition. Avec l’option **Aperçu de définition**, vous pouvez afficher et modifier la définition et vous déplacer dans le fichier de définition tout en conservant votre position dans le fichier de code d’origine.  
@@ -30,7 +30,7 @@ Utilisez la commande **Aperçu de définition** pour afficher et modifier du cod
   
 #### <a name="to-open-a-peek-definition-window"></a>Pour ouvrir une fenêtre Aperçu de définition  
   
-1.  Vous pouvez trouver l’option **Aperçu de définition** en ouvrant le menu contextuel d’une méthode que vous voulez explorer. (Clavier : Alt+F12)  
+1.  Vous pouvez trouver l’option **Aperçu de définition** en ouvrant le menu contextuel d’une méthode que vous voulez explorer. (clavier : Alt+F12)  
   
      Cette illustration représente la fenêtre **Aperçu de définition** pour une méthode nommée `Print()` :  
   

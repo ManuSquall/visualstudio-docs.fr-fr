@@ -96,7 +96,7 @@ Cette rubrique montre comment utiliser le kit SDK du visualiseur concurrentiel p
     using Microsoft.ConcurrencyVisualizer.Instrumentation;  
     ```  
   
-3.  Ajoutez du code pour créer trois étendues dans la série de marqueurs par défaut et écrire un indicateur, un message et une alerte (un pour chaque étendue). Créez un objet <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> en appelant la méthode statique <!-- TODO: review code entity reference <xref:assetId:///EnterSpan?qualifyHint=False&amp;autoUpgrade=True>  -->EnterSpan. Pour écrire dans la série par défaut, utilisez les méthodes d’écriture statiques de la classe <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>.  
+3.  Ajoutez du code pour créer trois étendues dans la série de marqueurs par défaut et écrire un indicateur, un message et une alerte (un pour chaque étendue). Créez un objet <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> en appelant la méthode statique [EnterSpan](<!-- TODO: review code entity reference <xref:assetId:///EnterSpan?qualifyHint=False&amp;autoUpgrade=True>  -->). Pour écrire dans la série par défaut, utilisez les méthodes d’écriture statiques de la classe <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>.  
   
     ```vb  
   

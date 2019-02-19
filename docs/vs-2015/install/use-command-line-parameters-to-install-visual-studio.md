@@ -44,7 +44,7 @@ Quand vous installez Visual Studio 2015 à partir d’une invite de commandes, 
 |**/CustomInstallPath** *InstallationDirectory*|Installe tous les packages reciblables dans le répertoire que vous spécifiez.|
 |**/ForceRestart**|Redémarre toujours l'ordinateur après l'installation.|
 |**/full**|Installe toutes les fonctionnalités du produit.|
-|**/InstallSelectableItems \<item name 1>[;\<item name 2>]**|Liste d’éléments de l’arborescence de sélection à cocher sur l’écran de sélection de l’Assistant Installation.|
+|**/InstallSelectableItems \<nom de l’élément 1>[;\<nom de l’élément 2>]**|Liste d’éléments de l’arborescence de sélection à cocher sur l’écran de sélection de l’Assistant Installation.|
 |**/l**<br /><br /> **/ Journal** *nom de fichier*|Spécifie l'emplacement du fichier journal.|
 |**/ Layout** *directory*|Copie les fichiers sur le média d'installation dans le répertoire que vous spécifiez.|
 |**/NoCacheOnlyMode**|Empêche le préremplissage du cache du package.|

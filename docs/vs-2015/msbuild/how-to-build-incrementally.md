@@ -1,14 +1,9 @@
 ---
 title: Guide pratique pour générer des builds incrémentielles | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, incremental builds
 - incremental builds
@@ -17,13 +12,13 @@ ms.assetid: 8d82d7d8-a2f1-4df6-9d2f-80b9e0cb3ac3
 caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 88ad4f984af2be6884005c5ec3c7dec4d7b5c6aa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b1bcb8752d8defacadc641f55594e354e081d5cb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844612"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803908"
 ---
 # <a name="how-to-build-incrementally"></a>Guide pratique pour générer des builds incrémentielles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ Quand vous générez un projet volumineux, il est important de ne pas regénére
   
 #### <a name="to-specify-inputs-and-outputs-for-a-target"></a>Pour spécifier les entrées et les sorties d’une cible  
   
-- Utilisez les attributs `Inputs` et `Outputs` de l’élément `Target`. Exemple :  
+- Utilisez les attributs `Inputs` et `Outputs` de l’élément `Target`. Par exemple :  
   
   ```  
   <Target Name="Build"  
@@ -57,7 +52,7 @@ Quand vous générez un projet volumineux, il est important de ne pas regénére
 </Target>  
 ```  
   
- Quand les entrées et les sorties sont spécifiées dans une cible, chaque sortie est mappée avec une seule entrée ou il n’existe pas de mappage direct entre les sorties et les entrées. Dans le précédent [Csc, tâche](../msbuild/csc-task.md), par exemple, la sortie, hello.exe, ne peut pas être mappé avec une entrée unique : il varie sur chacun d'entre eux.  
+ Quand les entrées et les sorties sont spécifiées dans une cible, chaque sortie est mappée avec une seule entrée ou il n’existe pas de mappage direct entre les sorties et les entrées. Dans la [tâche Csc](../msbuild/csc-task.md) précédente, par exemple, la sortie hello.exe ne peut pas être mappée à une entrée unique. Elle dépend de toutes les entrées.  
   
 > [!NOTE]
 >  Une cible dans laquelle il n’existe pas de mappage direct entre les entrées et les sorties est toujours générée plus fréquemment qu’une cible dans laquelle chaque sortie ne peut être mappée qu’avec une seule entrée, car [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ne peut pas déterminer les sorties qui doivent être regénérées si certaines des entrées ont changé.  
@@ -116,6 +111,3 @@ Quand vous générez un projet volumineux, il est important de ne pas regénére
  [Transformations](../msbuild/msbuild-transforms.md)   
  [Tâche Csc](../msbuild/csc-task.md)   
  [Vbc, tâche](../msbuild/vbc-task.md)
-
-
-

@@ -12,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: bb6291e1-596d-4af0-9f22-5fd713d6b84b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f84b18cd3d4bfbae949ba4dd3199bace6604148f
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: ec262838de1a154e35a13f0a1b14e7b075f934de
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204484"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941981"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Inspecter des variables dans les fenêtres automatique et variables locales
 
-Le **automatique** et **variables locales** windows affichent les valeurs des variables pendant le débogage. Les fenêtres sont disponibles uniquement pendant une session de débogage. Le **automatique** fenêtre affiche les variables utilisées autour du point d’arrêt actuel. Le **variables locales** fenêtre affiche les variables définies dans la portée locale, qui est généralement la méthode ou la fonction active. Si c’est la première fois que vous essayez de déboguer du code, nous vous conseillons de consulter [Débogage pour grands débutants](../debugger/debugging-absolute-beginners.md) et [Correction des bogues par amélioration du code C#](../debugger/write-better-code-with-visual-studio.md) avant de poursuivre la lecture de cet article.
+Le **automatique** et **variables locales** windows affichent les valeurs des variables pendant le débogage. Les fenêtres sont disponibles uniquement pendant une session de débogage. Le **automatique** fenêtre affiche les variables utilisées autour du point d’arrêt actuel. Le **variables locales** fenêtre affiche les variables définies dans la portée locale, qui est généralement la méthode ou la fonction active. S’il s’agit de la première fois que vous avez essayé de déboguer du code, il pouvez que vous souhaitez lire [débogage pour les débutants](../debugger/debugging-absolute-beginners.md) et [techniques et des outils de débogage](../debugger/write-better-code-with-visual-studio.md) avant de poursuivre cet article.
 
  Le **automatique** fenêtre n’est disponible pour C#, code Visual Basic, C++ et Python, mais pas pour JavaScript ou F#.
   
@@ -150,5 +150,5 @@ Pour afficher les valeurs de retour de la `sumVars()` et `subtractVars()` des ap
   
 ## <a name="see-also"></a>Voir aussi  
  [Qu’est-ce que le débogage ?](../debugger/what-is-debugging.md)  
- [Corriger les bogues en écrivant un meilleur code C#](../debugger/write-better-code-with-visual-studio.md)  
+ [Techniques et outils de débogage](../debugger/write-better-code-with-visual-studio.md)  
  [Premier aperçu de débogage](../debugger/debugger-feature-tour.md) [fenêtres du débogueur](../debugger/debugger-windows.md)

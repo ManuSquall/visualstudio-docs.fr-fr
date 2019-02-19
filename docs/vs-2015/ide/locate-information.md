@@ -21,7 +21,7 @@ ms.locfileid: "54758607"
 
 Help Viewer fournit différents moyens de rechercher des informations dans l’aide. Selon le type d’informations que vous recherchez, certaines stratégies peuvent être plus efficaces que d’autres.  
   
-|Pour obtenir des informations sur|Essayez|  
+|Pour des informations sur|Essayez|  
 |----------------------------|---------|  
 |Un élément de l’interface utilisateur|Touche F1|  
 |Les autres rubriques associées à la rubrique actuelle dans la table des matières|Le bouton **Afficher une rubrique dans le sommaire** dans la barre d’outils|  

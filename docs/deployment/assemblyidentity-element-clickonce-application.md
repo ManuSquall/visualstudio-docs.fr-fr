@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: f48e9531-efac-4d11-8166-f63a5ece1ac5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d83c750cdf08d79fc4402f08cf8a9e3a5ea218f3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e70852f0e720f5c7c67fbce82608929ac13728f8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911466"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992137"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;assemblyIdentity&gt; , élément (application ClickOnce)
 Identifie l’application déployée dans un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement.  
@@ -69,4 +69,4 @@ Identifie l’application déployée dans un [!INCLUDE[ndptecclick](../deploymen
   
 ## <a name="see-also"></a>Voir aussi  
  [Manifeste d’application ClickOnce](../deployment/clickonce-application-manifest.md)   
- [\<assemblyIdentity > élément](../deployment/assemblyidentity-element-clickonce-deployment.md)
+ [\<assemblyIdentity>, élément](../deployment/assemblyidentity-element-clickonce-deployment.md)

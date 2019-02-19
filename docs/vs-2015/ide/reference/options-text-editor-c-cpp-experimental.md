@@ -1,5 +1,5 @@
 ---
-title: Options, Éditeur de texte, C/C++, Expérimental │ Microsoft Docs
+title: Options, Éditeur de texte, C-C++, Expérimental │ Microsoft Docs
 ms.date: 11/15/2016
 ms.topic: reference
 f1_keywords:

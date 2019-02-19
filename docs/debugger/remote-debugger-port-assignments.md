@@ -6,28 +6,28 @@ ms.topic: reference
 ms.assetid: 238bb4ec-bb00-4c2b-986e-18ac278f3959
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: feb5b247bb3e7bb8814946f5648408323a33084c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b0e3c148e52de053cce27912305281c115767697
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959746"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956179"
 ---
 # <a name="remote-debugger-port-assignments"></a>Affectations de port du débogueur distant
 Le débogueur distant de Visual Studio peut s’exécuter comme une application ou un service en arrière-plan. Quand il est exécuté comme une application, il utilise un port qui est affecté par défaut comme suit :  
 
-- Visual Studio 2019 : 4024
+- Visual Studio 2019 : 4024
 
-- Visual Studio 2017 : 4022
+- Visual Studio 2017 : 4022
 
-- Visual Studio 2015 : 4020  
+- Visual Studio 2015 : 4020  
   
-- Visual Studio 2013 :   
+- Visual Studio 2013 : 4018  
   
-- Visual Studio 2012 : 4016  
+- Visual Studio 2012 : 4016  
   
   En d’autres termes, le numéro de port attribué au débogueur distant est incrémenté de 2 pour chaque version. Vous pouvez définir un numéro de port différent si vous le souhaitez. Nous expliquerons comment définir des numéros de port dans une section ultérieure.  
   

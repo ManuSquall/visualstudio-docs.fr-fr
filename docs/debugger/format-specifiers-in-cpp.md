@@ -60,9 +60,9 @@ int main() {
 ##  <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> Spécificateurs de format  
  Les tableaux suivants décrivent les spécificateurs de format que vous pouvez utiliser dans Visual Studio. Les spécificateurs en gras sont uniquement compatible avec le nouveau débogueur et ne pas pour le débogage d’interopérabilité avec C++ / c++ / CLI.  
   
-|Spécificateur|Mettre en forme|Valeur d’espion d’origine|Valeur affichée|  
+|Spécificateur|Format|Valeur d’espion d’origine|Valeur affichée|  
 |---------------|------------|--------------------------|---------------------|  
-|j|entier décimal|0x00000066|102|  
+|d|entier décimal|0x00000066|102|  
 |o|entier octal non signé|0x00000066|000000000146|  
 |x<br /><br /> **h**|entier hexadécimal|102|0xcccccccc|  
 |X<br /><br /> **H**|entier hexadécimal|102|0xcccccccc|  
@@ -77,7 +77,7 @@ int main() {
 |env|Bloc d’environnement (chaîne finissant par une double valeur null)|\<location> L"=::=::\\\\"|L "= :: = ::\\\\\\0 = C : = C :\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
 |**s32**|Chaîne UTF-32 (avec les guillemets)|\<emplacement > U « hello world »|u"hello world"|  
 |**s32b**|chaîne UTF-32 (sans guillemets)|\<emplacement > U « hello world »|hello world|  
-|**en**|enum|Saturday(6)|Samedi|  
+|**en**|enum|Saturday(6)|Saturday|  
 |**hv**|Type de pointeur : indique que la valeur de pointeur inspectée est le résultat de l’allocation de tas d’un tableau, par exemple, `new int[3]`.|\<emplacement>{\<premier membre>}|\<emplacement > {\<premier membre >, \<deuxième membre >,...}|  
 |**na**|Supprime l’adresse mémoire d’un pointeur vers un objet.|\<emplacement>, {membre=valeur...}|{membre=valeur…}|  
 |**nd**|Affiche uniquement les informations de classe de base, en ignorant les classes dérivées|`(Shape*) square` inclut les informations de classe de base et de classe dérivée|Affiche uniquement les informations de classe de base|  
@@ -92,7 +92,7 @@ int main() {
 ###  <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> Spécificateurs de taille pour les pointeurs en tant que tableaux  
  Si vous avez un pointeur vers un objet que vous voulez afficher sous forme de tableau, vous pouvez utiliser un entier ou une expression pour spécifier le nombre d’éléments du tableau. 
   
-|Spécificateur|Mettre en forme|Valeur d’espion d’origine|Valeur affichée|  
+|Spécificateur|Format|Valeur d’espion d’origine|Valeur affichée|  
 |---------------|------------|---------------------------|---------------------|  
 |n|Entier décimal ou **hexadécimal**|pBuffer,[32]<br /><br /> pBuffer,**[0x20]**|Affiche `pBuffer` sous forme d’un tableau de 32 éléments.|  
 |**[exp]**|Expression C++ valide qui correspond à un entier.|pBuffer,[bufferSize]|Affiche pBuffer sous forme d’un tableau d’éléments `bufferSize` .|  
@@ -101,7 +101,7 @@ int main() {
 ##  <a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> Spécificateurs de format pour le débogage d’interopérabilité avec C++/CLI  
  Les spécificateurs en **gras** sont pris en charge uniquement pour le débogage de code natif et C++/CLI.  
   
-|Spécificateur|Mettre en forme|Valeur d’espion d’origine|Valeur affichée|  
+|Spécificateur|Format|Valeur d’espion d’origine|Valeur affichée|  
 |---------------|------------|--------------------------|---------------------|  
 |**d**<br /><br />**i**|entier décimal signé|0xF000F065|-268373915|  
 |**u**|entier décimal non signé|0x0065|101|  
@@ -124,7 +124,7 @@ int main() {
 ###  <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Spécificateurs pour les emplacements de mémoire de débogage d’interopérabilité avec C++ / de format c++ / CLI  
  Le tableau suivant décrit les symboles de mise en forme pour les emplacements de mémoire. Vous pouvez utiliser un spécificateur d’emplacement de mémoire avec n’importe quelle valeur ou expression correspondant à un emplacement.  
   
-|Symbole|Mettre en forme|Valeur d’espion d’origine|Valeur affichée|  
+|Symbole|Format|Valeur d’espion d’origine|Valeur affichée|  
 |------------|------------|--------------------------|---------------------|  
 |**ma**|64 caractères ASCII|0x0012ffac|0x0012ffac .4...0...".0W&.......1W&.0.:W..1...."..1.JO&.1.2.."..1...0y....1|  
 |**m**|16 octets en hexadécimal suivis de 16 caractères ASCII|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&amp;.|  
@@ -137,6 +137,6 @@ int main() {
 ###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> Spécificateur de taille pour les pointeurs en tant que tableaux dans le débogage d’interopérabilité avec C++/CLI  
  Si vous avez un pointeur vers un objet que vous voulez afficher sous forme de tableau, vous pouvez utiliser un entier pour spécifier le nombre d’éléments du tableau.
   
-|Spécificateur|Mettre en forme|Expression|Valeur affichée|  
+|Spécificateur|Format|Expression|Valeur affichée|  
 |---------------|------------|----------------|---------------------|  
 |n|entier décimal|pBuffer[32]|Affiche `pBuffer` sous forme de tableau de 32 éléments.|

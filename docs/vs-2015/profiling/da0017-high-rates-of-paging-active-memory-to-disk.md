@@ -26,7 +26,7 @@ ms.locfileid: "54803486"
 Id de règle | DA0017 |  
 | Catégorie | Mémoire et pagination |  
 | Méthode de profilage | Tous les |  
-| Message | Un taux élevé de pagination de la mémoire active sur le disque est en cours. Votre application peut être liée à la mémoire.  
+| Message | Un taux élevé de pagination de la mémoire active sur le disque est en cours. Votre application peut être liée à la mémoire.|  
 | Type de règle | Informations |  
   
  Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 10 échantillons pour déclencher cette règle.  

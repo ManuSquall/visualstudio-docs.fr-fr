@@ -24,7 +24,7 @@ ms.locfileid: "54794101"
 # <a name="da0005-frequent-gc2-collections"></a>DA0005 : Collections GC2 fréquentes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-RuleId|DA0005|  
+ID de règle | DA0005 |  
 | Catégorie de |. Utilisation de NET Framework |  
 | Méthode de profilage |. Mémoire .NET |  
 | Message | De nombreux objets sont collectés dans un garbage collection de génération 2. |  
