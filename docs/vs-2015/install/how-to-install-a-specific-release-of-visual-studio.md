@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Installer une version spécifique | Microsoft Docs'
+title: 'Comment : installer une version spécifique | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-install
@@ -12,13 +12,13 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b5f74512d0c035a82845d77f4b3df12633036f03
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54756358"
 ---
-# <a name="how-to-install-a-specific-release-of-visual-studio"></a>Procédure : Installer une version spécifique de Visual Studio
+# <a name="how-to-install-a-specific-release-of-visual-studio"></a>Procédure : installation d’une mise en production spécifique de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nous mettons souvent à jour le programme d’installation de Visual Studio pour vous fournir la version la plus récente et optimisée de nos fonctionnalités facultatives.  Si vous préférez installer une version antérieure de Visual Studio 2015 (par exemple, une version antérieure à Visual Studio 2015 Update 1 qui inclut la prise en charge d’iOS), vous devez forcer le programme d’installation de Visual Studio à utiliser une version antérieure des fichiers manifeste de ses fonctionnalités. Cet article décrit la marche à suivre.

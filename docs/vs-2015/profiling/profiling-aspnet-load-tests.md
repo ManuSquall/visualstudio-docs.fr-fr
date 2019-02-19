@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1c422b1bb2e41e3b1a848d3957530f43177d9c29
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54791803"
 ---
 # <a name="profiling-aspnet-load-tests"></a>Profilage des tests de charge ASP.NET
@@ -21,7 +21,7 @@ ms.locfileid: "54791803"
 
 Vous pouvez collecter les données de profilage à partir de tests web [!INCLUDE[TCMext](../includes/tcmext-md.md)] automatisés que vous exécutez sur les projets de sites web ASP.NET. Vous pouvez collecter des données d’échantillonnage et d’interaction de couche. Pour plus d’informations, consultez les rubriques suivantes :
 
- [Guide pratique pour créer une session de performance sur une application web à partir de l’éditeur de test de performances Web](/previous-versions/ff356203(v=vs.100))
+ [Guide pratique pour exécuter une session de performance sur une application web depuis l’éditeur de test de performances web](/previous-versions/ff356203(v=vs.100))
 
  [Guide pratique pour configurer le profileur ASP.NET pour les tests de charge à l’aide de paramètres de test dans Visual Studio](/visualstudio/test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings?view=vs-2015)
 
