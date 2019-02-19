@@ -31,13 +31,13 @@ Un manifeste de déploiement est un fichier XML qui décrit un déploiement [!IN
 | Élément | Description | Attributs |
 | - | - | - |
 | [\<assembly > élément](../deployment/assembly-element-clickonce-deployment.md) | Obligatoire. Élément de niveau supérieur. | `manifestVersion` |
-| [\<assemblyIdentity> element](../deployment/assemblyidentity-element-clickonce-deployment.md) | Obligatoire. Identifie le manifeste d'application pour cette application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture` |
+| [\<assemblyIdentity>, élément](../deployment/assemblyidentity-element-clickonce-deployment.md) | Obligatoire. Identifie le manifeste d'application pour cette application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture` |
 | [\<Description > élément](../deployment/description-element-clickonce-deployment.md) | Obligatoire. Identifie les informations de l’application utilisées pour créer la présence d’un shell et l’élément **Ajout/Suppression de programmes** dans le Panneau de configuration. | `publisher`<br /><br /> `product`<br /><br /> `supportUrl` |
 | [\<déploiement > élément](../deployment/deployment-element-clickonce-deployment.md) | Optionnel. Identifie les attributs utilisés pour le déploiement de mises à jour et l'exposition au système. | `install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters` |
 | [\<compatibleFrameworks > élément](../deployment/compatibleframeworks-element-clickonce-deployment.md) | Obligatoire. Identifie les versions du .NET Framework pour lesquelles cette application peut s'installer et s'exécuter. | `SupportUrl` |
 | [\<dépendance > élément](../deployment/dependency-element-clickonce-deployment.md) | Obligatoire. Identifie la version de l'application à installer pour le déploiement et l'emplacement du manifeste d'application. | `preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size` |
 | [\<publisherIdentity > élément](../deployment/publisheridentity-element-clickonce-deployment.md) | Requis pour les manifestes signés. Contient des informations sur l'éditeur qui a signé ce manifeste de déploiement. | `Name`<br /><br /> `issuerKeyHash` |
-| [\<Signature > élément](../deployment/signature-element-clickonce-deployment.md) | Optionnel. Contient les informations nécessaires pour signer numériquement ce manifeste de déploiement. | Aucune |
+| [\<Signature > élément](../deployment/signature-element-clickonce-deployment.md) | Optionnel. Contient les informations nécessaires pour signer numériquement ce manifeste de déploiement. | Aucun. |
 | [\<customErrorReporting > élément](../deployment/customerrorreporting-element-clickonce-deployment.md) | Optionnel. Spécifie un URI à afficher en cas d'erreur. | URI |
 
 ## <a name="remarks"></a>Remarques  

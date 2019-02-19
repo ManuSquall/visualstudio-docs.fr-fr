@@ -93,7 +93,7 @@ Avec cette procédure pas à pas, vous allez vous familiariser avec plusieurs op
   
 4. Dans la liste **Plateforme de la solution active**, choisissez **Nouveau**.  
   
-5. 5.Dans la boîte de dialogue **Nouvelle plateforme de solution**, sélectionnez **x64** et ne copiez pas les paramètres de la plateforme x86.  
+5. Dans la boîte de dialogue **Nouvelle plateforme de solution**, sélectionnez **x64** et ne copiez pas les paramètres de la plateforme x86.  
   
     ![Boîte de dialogue Nouvelle plateforme de solution](../ide/media/buildwalk-newsolutionplatform.png "BuildWalk_NewSolutionPlatform")  
   

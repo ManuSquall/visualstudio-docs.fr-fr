@@ -20,13 +20,13 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54801477"
 ---
-# <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030 : Collecter les mesures d’interaction de couche pour les projets de base de données
+# <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030 : collecter les mesures d'interaction de couche pour les projets de base de données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Id de règle | DA0030 |  
 | Catégorie | Utilisation des outils de profilage |  
 | Méthode de profilage | Échantillonnage |  
-| Message | Collecte des mesures d’interaction pour les applications multicouches vous aident à comprendre les modèles d’utilisation de base de données et les données de clé accède à des retards. Profilez de nouveau l’application en activant l’option Profilage d’interaction de couche.  
+| Message | Collecte des mesures d’interaction pour les applications multicouches vous aident à comprendre les modèles d’utilisation de base de données et les données de clé accède à des retards. Reprofilez l’application en activant l’option Profilage d’interaction de couche.|  
 | Type de règle | Informations |  
   
 ## <a name="cause"></a>Cause  

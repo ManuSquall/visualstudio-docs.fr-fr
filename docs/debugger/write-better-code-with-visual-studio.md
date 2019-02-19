@@ -40,7 +40,7 @@ Pour illustrer ces tâches, nous montrons quelques-uns des types plus courants d
 
 Le code suivant a des bogues que vous pouvez corriger à l’aide de l’IDE Visual Studio. L’application ici est une application simple qui simule l’obtention de données JSON à partir d’une opération, la désérialisation des données à un objet et la mise à jour d’une liste simple avec les nouvelles données.
 
-Pour créer l'application
+Pour créer l’application :
 
 1. Ouvrez Visual Studio et choisissez **fichier > Nouveau projet**. Sous **Visual C#** , choisissez **Windows Desktop** ou **.NET Core**, puis, dans le volet central, choisissez un **application Console**.
 

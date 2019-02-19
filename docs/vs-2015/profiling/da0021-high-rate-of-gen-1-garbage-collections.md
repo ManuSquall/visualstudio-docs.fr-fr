@@ -26,7 +26,7 @@ ms.locfileid: "54834349"
 Id de règle | DA0021 |  
 | Catégorie de |. Utilisation de NET Framework |  
 | Méthodes de profilage | Tous les |  
-| Message | Il existe un taux relativement élevé de garbage collection Gen 1. Si, par conception, la plupart des structures de données de votre programme sont allouées et persistent pour longtemps, cela ne pose pas de problème. Cependant, si ce comportement est involontaire, votre application peut épingler des objets. Si vous n’êtes pas sûr, vous pouvez regrouper les données d’allocation de mémoire .NET et les informations de durée de vie des objets afin de comprendre le modèle d’allocation de mémoire utilisé par votre application.  
+| Message | Il existe un taux relativement élevé de garbage collection Gen 1. Si, par conception, la plupart des structures de données de votre programme sont allouées et persistent pour longtemps, cela ne pose pas de problème. Cependant, si ce comportement est involontaire, votre application peut épingler des objets. Si vous n’êtes pas sûr, vous pouvez regrouper les données d’allocation de mémoire .NET et les informations de durée de vie des objets afin de comprendre le modèle d’allocation de mémoire utilisé par votre application.|  
 | Type de règle | Informations |  
   
  Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 10 échantillons pour déclencher cette règle.  

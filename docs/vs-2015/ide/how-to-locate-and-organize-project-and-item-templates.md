@@ -51,7 +51,7 @@ Les fichiers modèles doivent être placés à un emplacement que Visual Studio 
   
   Par exemple, le répertoire suivant contient les modèles de projet [!INCLUDE[csprcs](../includes/csprcs-md.md)] personnalisés :   
   
-  C:\Documents and Settings\nom_utilisateur\Mes documents\Visual Studio \\Version\>\Templates\ProjectTemplates\Visual C#\  
+  C:\Documents and Settings\NomUtilisateur\Mes documents\\<version de Visual Studio\>\Templates\ProjectTemplates\Visual C#\  
   
   Les modèles personnalisés n'incluent pas de sous-répertoire pour les modèles localisés. Vous pouvez changer le répertoire par défaut des modèles personnalisés dans la boîte de dialogue **Options**, sous **Environnement\Projets et solutions**.  
   
@@ -117,7 +117,7 @@ Les fichiers modèles doivent être placés à un emplacement que Visual Studio 
   
 1. Créez un dossier dans le dossier du langage du répertoire des modèles de projet personnalisés. Par exemple, pour créer une catégorie HelloWorld pour les modèles [!INCLUDE[csprcs](../includes/csprcs-md.md)], vous pourriez créer le répertoire suivant :   
   
-    \Mes documents\Visual Studio \\Version\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
+    \Mes documents\\<version de Visual Studio\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
   
 2. Placez tous les modèles de cette catégorie dans le nouveau dossier.  
   
@@ -131,7 +131,7 @@ Les fichiers modèles doivent être placés à un emplacement que Visual Studio 
   
 1.  Créez un dossier dans le dossier du langage du répertoire des modèles d'élément personnalisés. Par exemple, pour créer une catégorie HelloWorld pour les modèles [!INCLUDE[csprcs](../includes/csprcs-md.md)], vous pourriez créer le répertoire suivant :   
   
-     \Mes documents\Visual Studio \\Version\>\Templates\ItemTemplates\CSharp\HelloWorld\  
+     \Mes documents\\<version de Visual Studio\>\Templates\ItemTemplates\CSharp\HelloWorld\  
   
 2.  Placez tous les modèles de cette catégorie dans le nouveau dossier.  
   

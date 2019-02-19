@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: fc6e047e-ad94-44e8-8ff5-b6d1f4ca7735
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0baff8d685a1ac5f4899edc2f1dbf6ddf9c2e5b9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3525d12bfbb745c54bb452a16d12cd65394023ad
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941071"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995685"
 ---
 # <a name="application-deployment-prerequisites"></a>Prérequis pour le déploiement d’applications
 
@@ -45,10 +45,10 @@ Pour que votre application pour installer et exécuter avec succès, d’abord i
 
 - La version minimale de tous les assemblys qui doivent être préinstallés dans le global assembly cache (GAC), tel que spécifié par les déclarations de dépendance d’assembly dans le manifeste d’assembly.  
 
-  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] peut détecter les composants requis manquants, et vous pouvez installer les conditions préalables à l’aide d’un programme d’amorçage. Pour plus d'informations, voir [Procédure : Installer des prérequis avec une application ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] peut détecter les composants requis manquants, et vous pouvez installer les conditions préalables à l’aide d’un programme d’amorçage. Pour plus d’informations, consultez [Comment : installer les composants requis avec une application ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
 
 > [!NOTE]
->  Pour changer les valeurs dans les manifestes générés par des outils comme [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] et *MageUI.exe*, vous devez changer le manifeste de l’application dans un éditeur de texte, puis signer à nouveau les manifestes de l’application et de déploiement. Pour plus d'informations, voir [Procédure : Resigner des manifestes d’application et de déploiement](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+>  Pour changer les valeurs dans les manifestes générés par des outils comme [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] et *MageUI.exe*, vous devez changer le manifeste de l’application dans un éditeur de texte, puis signer à nouveau les manifestes de l’application et de déploiement. Pour plus d’informations, consultez [Guide pratique pour resigner des manifestes de déploiement et d’application](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
 
  Si vous utilisez Visual Studio et ClickOnce pour déployer votre application, les packages de programme d'amorçage sélectionnés par défaut dépendent de la version du .NET Framework de la solution. Cependant, si vous changez la version du .NET Framework cible, vous devez mettre à jour manuellement les options de la boîte de dialogue **Composants requis**.  
 
@@ -75,10 +75,10 @@ Pour que votre application pour installer et exécuter avec succès, d’abord i
 | Argument de ligne de commande | Description |
 | - | - |
 | **-?, -h, -help** | Affiche une boîte de dialogue d'aide. |
-| **-url, - componentsurl** | Affiche l'URL stockée et l'URL des composants pour cette installation. |
-| **-url =** `location` | Définit l’URL où *Setup.exe* doit rechercher l’application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. |
-| **-componentsurl =** `location` | Définit l’URL où *Setup.exe* doit rechercher les dépendances, par exemple le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. |
-| **-homesite =** `true`**&#124;** `false` | Lorsque `true`, télécharge les dépendances à partir de l’emplacement par défaut sur le site du fournisseur. Ce paramètre remplace le **- componentsurl** paramètre. Lorsque `false`, télécharge les dépendances à partir de l’URL spécifiée par **- componentsurl**. |
+| **-url, -componentsurl** | Affiche l'URL stockée et l'URL des composants pour cette installation. |
+| **-url=** `location` | Définit l’URL où *Setup.exe* doit rechercher l’application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. |
+| **-componentsurl=** `location` | Définit l’URL où *Setup.exe* doit rechercher les dépendances, par exemple le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. |
+| **-homesite=** `true` **&#124;** `false` | Lorsque `true`, télécharge les dépendances à partir de l’emplacement par défaut sur le site du fournisseur. Ce paramètre remplace le **- componentsurl** paramètre. Lorsque `false`, télécharge les dépendances à partir de l’URL spécifiée par **- componentsurl**. |
 
 ## <a name="operating-system-support"></a>Système d'exploitation pris en charge  
  Le programme d’amorçage de Visual Studio n’est pas pris en charge sur Server Core de Windows Server 2008 ou Windows Server 2008 R2 Server Core, car elles fournissent un environnement serveur à faible maintenance avec des fonctionnalités limitées. Par exemple, l’option d’installation Server Core prend uniquement en charge le profil .NET Framework 3.5 Server Core, qui ne peut pas exécuter les fonctionnalités de Visual Studio qui dépendent du .NET Framework.  

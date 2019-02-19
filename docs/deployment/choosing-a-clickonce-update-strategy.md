@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: d8b6e7bb-4ea0-47f3-91cd-48580bdceccc
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e09bdaff6d3b5a584091f05eae7d21b0aba256b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b157044bc6e626c4c35bcd6979648256e8eef9d8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946657"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55032992"
 ---
 # <a name="choose-a-clickonce-update-strategy"></a>Choisir une stratégie de mise à jour ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] peut fournir des mises à jour d'application automatiques. Une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] lit périodiquement son fichier manifeste de déploiement pour vérifier si des mises à jour de l’application sont disponibles. Si disponible, la nouvelle version de l'application est téléchargée et exécutée. Pour des raisons d'efficacité, seuls les fichiers modifiés sont téléchargés.  
@@ -117,9 +117,9 @@ ms.locfileid: "53946657"
  Si vous utilisez le déploiement d'applications approuvées, vous ne recevrez aucune invite concernant les niveaux de confiance. Pour plus d’informations, consultez [Vue d’ensemble du déploiement d’applications approuvées](../deployment/trusted-application-deployment-overview.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- \<XRef:System.Deployment.application >   
+ \<xref:System.Deployment.Application>   
  [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Choisir une stratégie de déploiement ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [Sécuriser des applications ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Mises à jour des applications par ClickOnce](../deployment/how-clickonce-performs-application-updates.md)   
- [Guide pratique pour gérer les mises à jour d’une application ClickOnce](../deployment/how-to-manage-updates-for-a-clickonce-application.md)
+ [Guide pratique pour gérer les mises à jour pour une application ClickOnce](../deployment/how-to-manage-updates-for-a-clickonce-application.md)

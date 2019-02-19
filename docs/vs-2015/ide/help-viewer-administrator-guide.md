@@ -1,25 +1,20 @@
 ---
 title: Guide de l’administrateur Help Viewer │ Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-help-viewer
+ms.topic: conceptual
 ms.assetid: 4340c69f-b96b-4932-bb82-38b16a5ab149
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f470c55b08cc559e481ed75e962fda4f0e625a5c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e0f63555cbda069c3db0a3a1d5819292fc3cda14
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49871288"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799703"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guide de l'administrateur Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ La visionneuse d’aide vous permet de gérer les installations locales d’aide
 ## <a name="deploying-local-help-content-from-the-internet"></a>Déploiement de contenu d’aide locale à partir d’Internet  
  Vous pouvez utiliser le service de module de ressources MSDN pour déployer le contenu d’aide locale d’Internet aux ordinateurs clients. Utilisez la syntaxe suivante :  
   
- \\<*chemin d’accès au*> \v2.2\HlpCtntmgr.exe /operation \< *nom*> /catalogname \< *nom de catalogue*> /locale \<  *paramètres régionaux*>  
+ \\<*chemin vers*>\v2.2\HlpCtntmgr.exe /operation \<*nom*> /catalogname \<*nomcatalogue*> /locale \<*paramètres régionaux*>  
   
  Pour plus d’informations sur la syntaxe de ligne de commande HlpCtntMgr.exe, consultez [Arguments de ligne de commande pour Help Content Manager](../ide/command-line-arguments-for-the-help-content-manager.md).  
   
@@ -71,12 +66,12 @@ La visionneuse d’aide vous permet de gérer les installations locales d’aide
   
      C:\Program Files (x86)\Microsoft Help Viewer\v2.2\hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale en-us  
   
-3.  Appuyez sur ENTRÉE.  
+3.  Appuyez sur Entrée.  
   
 ## <a name="deploying-pre-installed-local-help-content-on-client-computers"></a>Déploiement du contenu d’aide locale préinstallé sur les ordinateurs clients  
  Vous pouvez installer un ensemble de contenu à partir d’une source en ligne sur un ordinateur, puis copier cet ensemble de contenu installé sur d’autres ordinateurs.  
   
- Configuration requise :  
+ Configuration requise :  
   
 - L’ordinateur sur lequel vous installez l’ensemble du contenu doit avoir accès à Internet.  
   
@@ -104,9 +99,9 @@ La visionneuse d’aide vous permet de gérer les installations locales d’aide
   
 3. Choisissez **Supprimer** à côté de chaque sous-élément.  
   
-4. Choisissez **Démarrer** à désinstaller  
+4. Sélectionnez **Démarrer** pour désinstaller.  
   
-5. Accédez à *n*: \ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12 et vérifiez que le dossier contienne uniquement le fichier catalogType.xml.  
+5. Accédez à *n*:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12 et vérifiez que le dossier contient uniquement le fichier catalogType.xml.  
   
    Une fois que vous avez supprimé tout le contenu local installé précédemment à l’aide de Visual Studio, vous êtes prêt à télécharger l’ensemble de contenu de base.  
   
@@ -114,7 +109,7 @@ La visionneuse d’aide vous permet de gérer les installations locales d’aide
   
 1. Dans Help Viewer, choisissez l’onglet **Gérer le contenu**.  
   
-2. Sous **Documentation disponible**, accédez aux ensembles de documentation que vous souhaitez télécharger, puis choisissez **ajouter**.  
+2. Sous **Documentation disponible**, accédez aux ensembles de documents à télécharger, puis sélectionnez **Ajouter**.  
   
 3. Choisissez **Démarrer**.  
   
@@ -132,9 +127,9 @@ La visionneuse d’aide vous permet de gérer les installations locales d’aide
   
 4.  Tapez la commande suivante :  
   
-     Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \< *NomDossier*> \ /y /e /k /o  
+     Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \<*nomdossier*>\ /y /e /k /o  
   
-     Par exemple :`Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 c:\VS12Help\ /y /e /k /o`  
+     Exemple : `Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 c:\VS12Help\ /y /e /k /o`.  
   
 ### <a name="deploying-the-content"></a>Déploiement du contenu  
   
@@ -142,11 +137,11 @@ La visionneuse d’aide vous permet de gérer les installations locales d’aide
   
 1.  Créez un partage réseau et copiez le contenu d’aide à cet emplacement.  
   
-     Par exemple, copier le contenu de c:\VS12Help vers \\\myserver\VS12Help.  
+     Par exemple, copiez le contenu du dossier c:\VS12Help dans \\\monserveur\VS12Help.  
   
 2.  Créez un fichier .bat pour contenir le script de déploiement du contenu d’aide. Comme le client est susceptible de ne pas pouvoir lire les fichiers en cours de suppression dans le cadre de l’émission, vous devez désactiver le client avant d’émettre des mises à jour.  
   
-     Par exemple :  
+     Par exemple :  
   
     ```  
     REM - copy pre-ripped content to ProgramData  
@@ -209,6 +204,3 @@ La visionneuse d’aide vous permet de gérer les installations locales d’aide
 ## <a name="see-also"></a>Voir aussi  
  [Arguments de ligne de commande pour Help Content Manager](../ide/command-line-arguments-for-the-help-content-manager.md)   
  [Substitutions Help Content Manager](../ide/help-content-manager-overrides.md)
-
-
-

@@ -27,7 +27,7 @@ ms.locfileid: "54792921"
 Id de règle | DA0002 |  
 | Catégorie | Utilisation des outils de profilage |  
 | Méthodes de profilage | Profilage à l’aide des outils de ligne de commande VSPerfCmd et VSPerfASPNETCmd |  
-| Message | Il semble que le fichier a été collecté sans une configuration adéquate des variables d’environnement avec VSPerfCLREnv.cmd. Les symboles pour des fichiers binaires managés peuvent ne pas être résolus.  
+| Message | Il semble que le fichier a été collecté sans une configuration adéquate des variables d’environnement avec VSPerfCLREnv.cmd. Les symboles des fichiers binaires managés peuvent ne pas être résolus.|  
 | Type de règle | Informations |  
   
 ## <a name="cause"></a>Cause  

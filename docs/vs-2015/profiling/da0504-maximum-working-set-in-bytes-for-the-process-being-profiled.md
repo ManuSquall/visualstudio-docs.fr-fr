@@ -1,5 +1,5 @@
 ---
-title: 'DA0504 : jeu de travail maximal en octets pour le processus en cours de profilage | Microsoft Docs'
+title: 'DA0504 : Jeu de travail maximal en octets pour le processus en cours de profilage | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,13 +20,13 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54787189"
 ---
-# <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504 : jeu de travail maximal en octets pour le processus en cours de profilage
+# <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504 : jeu de travail maximal, en octets, pour le processus en cours de profilage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0504|  
+ID de règle | DA0504 |  
 | Catégorie | Gestion des ressources |  
 | Méthode de profilage | Tous les |  
-| Message | À titre d’information uniquement. Le compteur Jeu de travail de processus mesure l’utilisation de la mémoire physique par le processus en cours de profilage. La valeur signalée correspond à la valeur maximale observée dans l’ensemble des intervalles de mesure.  
+| Message | À titre d’information uniquement. Le compteur Jeu de travail de processus mesure l’utilisation de la mémoire physique par le processus en cours de profilage. La valeur signalée correspond à la valeur maximale observée dans l’ensemble des intervalles de mesure.|  
 | Type de règle | Informations |  
   
  Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 10 échantillons pour déclencher cette règle.  

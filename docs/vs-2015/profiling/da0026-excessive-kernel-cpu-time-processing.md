@@ -26,7 +26,7 @@ ms.locfileid: "54768969"
 Id de règle | TODO |  
 | Catégorie | Utilisation des outils de profilage |  
 | Méthode de profilage | Échantillonnage |  
-| Message | Un volume relativement élevé de temps CPU en mode de noyau a été mesuré. Analysez la source en activant l’échantillonnage de SysCall.  
+| Message | Un volume relativement élevé de temps CPU en mode de noyau a été mesuré. Analysez la source en activant l’échantillonnage de SysCall.|  
 | Type de règle | Informations |  
   
  Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 10 échantillons pour déclencher cette règle.  

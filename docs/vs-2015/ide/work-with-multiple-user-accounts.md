@@ -1,25 +1,20 @@
 ---
 title: Utiliser plusieurs comptes d’utilisateur | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: b73c865c-74e0-420e-89cc-43524f4aafd0
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 93f029a067e5a45930c2ac827862c1807e32aff8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5d269cdb4fe84820174ded9c477fc3c9f917b0b5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176265"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802640"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Utiliser plusieurs comptes d’utilisateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,20 +46,20 @@ Si vous avez plusieurs comptes Microsoft et/ou comptes professionnels ou scolair
   
 1.  Créez un projet Application universelle en C#.  
   
-2.  Cliquez avec le bouton droit sur le nœud de projet dans l’Explorateur de solutions et choisissez **Ajouter > Service connecté**. Dans l'Assistant lié à la fonctionnalité Ajouter un service connecté qui apparaît, vous pouvez voir la liste des services dans le compte Azure associé à votre ID de connexion Visual Studio. Notez que vous n'êtes pas obligé de vous connecter séparément à Azure. Vous devez néanmoins vous connecter aux autres comptes la première fois que vous tentez d'accéder à leurs ressources à partir d'un ordinateur donné.  
+2.  Cliquez avec le bouton droit sur le nœud du projet dans l’Explorateur de solutions, puis choisissez **Ajouter > Service connecté**. Dans l'Assistant lié à la fonctionnalité Ajouter un service connecté qui apparaît, vous pouvez voir la liste des services dans le compte Azure associé à votre ID de connexion Visual Studio. Notez que vous n'êtes pas obligé de vous connecter séparément à Azure. Vous devez néanmoins vous connecter aux autres comptes la première fois que vous tentez d'accéder à leurs ressources à partir d'un ordinateur donné.  
   
     > [!WARNING]
-    >  Si c’est la première fois que vous créez une application de Store dans Visual Studio 2015 sur un ordinateur spécifique, vous êtes invité à activer votre appareil pour le mode de développement en accédant à **paramètres &#124; . Mises à jour et sécurité &#124; pour les développeurs** sur votre ordinateur. Pour plus d’informations, consultez [Activer votre appareil pour le développement](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx).  
+    >  Si c’est la première fois que vous créez une application du Store dans Visual Studio 2015 sur un ordinateur spécifique, vous devez activer votre appareil pour le mode de développement en accédant à Paramètres | . **Mises à jour et sécurité &#124; pour les développeurs** sur votre ordinateur. Pour plus d’informations, consultez [Activer votre appareil pour le développement](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx).  
   
 ###  <a name="access_azure"></a> Accès à Azure Active Directory dans un projet web  
- Azure AD permet de prendre en charge l'authentification unique des utilisateurs finaux dans les applications web MVC ASP.NET ou l'authentification AD dans les services API web. L'authentification de domaine est différente de l'authentification de comptes d'utilisateurs individuels ; les utilisateurs qui ont accès à votre domaine Active Directory peuvent utiliser leur compte Azure AD existant pour se connecter à vos applications web. Les applications Office 365 peuvent également utiliser l'authentification de domaine. Pour voir comment cela fonctionne, créez une application web (**fichier > Nouveau projet > c# > Cloud > Application Web ASP.NET**). Dans la boîte de dialogue Nouveau projet ASP.NET, choisissez **Modifier l'authentification**. L'Assistant Authentification s'affiche et vous permet de choisir le type d'authentification à utiliser dans votre application.  
+ Azure AD permet de prendre en charge l'authentification unique des utilisateurs finaux dans les applications web MVC ASP.NET ou l'authentification AD dans les services API web. L'authentification de domaine est différente de l'authentification de comptes d'utilisateurs individuels ; les utilisateurs qui ont accès à votre domaine Active Directory peuvent utiliser leur compte Azure AD existant pour se connecter à vos applications web. Les applications Office 365 peuvent également utiliser l'authentification de domaine. Pour voir à quoi cela ressemble concrètement, créez une application web (**Fichier > Nouveau projet > C# > Cloud > Application web ASP.NET**). Dans la boîte de dialogue Nouveau projet ASP.NET, choisissez **Modifier l'authentification**. L'Assistant Authentification s'affiche et vous permet de choisir le type d'authentification à utiliser dans votre application.  
   
  ![Boîte de dialogue Modifier l’authentification pour ASP.NET](../ide/media/vs2015-change-authentication.png "VS2015_change_authentication")  
   
  Pour plus d’informations sur les différents types d’authentification dans ASP.NET, consultez [Creating ASP.NET Web Projects in Visual Studio 2013](http://www.asp.net/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) (les informations relatives à l’authentification sont toujours applicables à Visual Studio 2015).  
   
 ### <a name="access-your-visual-studio-team-services-account"></a>Accéder à votre compte Visual Studio Team Services  
- Dans le menu principal, choisissez **Team > se connecter à Team Foundation Server** pour faire apparaître le **Team Explorer** fenêtre. Cliquez sur **Sélectionner les projets d’équipe**puis, dans la zone de liste sous **Sélectionner un serveur Team Foundation Server**, vous devriez voir l’URL de votre compte Visual Studio Team Services. Lorsque vous sélectionnez l'URL, vous êtes connecté sans avoir à entrer une nouvelle fois vos informations d'identification.  
+ Dans le menu principal, choisissez **Équipe > Se connecter à Team Foundation Server** pour afficher la fenêtre **Team Explorer**. Cliquez sur **Sélectionner les projets d’équipe**puis, dans la zone de liste sous **Sélectionner un serveur Team Foundation Server**, vous devriez voir l’URL de votre compte Visual Studio Team Services. Lorsque vous sélectionnez l'URL, vous êtes connecté sans avoir à entrer une nouvelle fois vos informations d'identification.  
   
 ## <a name="add-a-second-user-account-to-visual-studio"></a>Ajouter un deuxième compte d'utilisateur à Visual Studio  
  Cliquez sur la flèche bas à côté de votre nom d'utilisateur dans le coin supérieur droit de Visual Studio. Cliquez ensuite sur l'élément de menu **Paramètres du compte** . La boîte de dialogue **Gestionnaire de comptes** apparaît et affiche le compte avec lequel vous vous êtes connecté. Cliquez sur le lien **Ajouter un compte** dans l'angle inférieur gauche de la boîte de dialogue pour ajouter un nouveau compte Microsoft ou un nouveau compte professionnel ou scolaire.  
@@ -76,7 +71,4 @@ Si vous avez plusieurs comptes Microsoft et/ou comptes professionnels ou scolair
  ![Gestionnaire de comptes](../ide/media/vs2015-accountmanager.gif "VS2015_AccountManager")  
   
 ## <a name="revisit-the-add-connected-services-wizard-and-server-explorer"></a>Revisiter l'Assistant lié à la fonctionnalité Ajouter un service connecté et l'Explorateur de serveurs  
- À présent, accédez de nouveau à l' **Explorateur de serveurs** , cliquez avec le bouton droit sur le nœud Azure, puis choisissez **Gérer et filtrer les abonnements**. Choisissez le nouveau compte en cliquant sur la flèche déroulante vers le bas située à côté du compte actif, puis choisissez les abonnements que vous voulez afficher dans l'Explorateur de serveurs. Tous les services associés à l'abonnement spécifié s'affichent alors. Même si vous n'êtes pas connecté à l'IDE de Visual Studio avec le deuxième compte, vous êtes connecté aux services et aux ressources de ce compte. Vaut également pour **projet > Ajouter un Service connecté** et **Team > se connecter à Team Foundation Server**.
-
-
-
+ À présent, accédez de nouveau à l' **Explorateur de serveurs** , cliquez avec le bouton droit sur le nœud Azure, puis choisissez **Gérer et filtrer les abonnements**. Choisissez le nouveau compte en cliquant sur la flèche déroulante vers le bas située à côté du compte actif, puis choisissez les abonnements que vous voulez afficher dans l'Explorateur de serveurs. Tous les services associés à l'abonnement spécifié s'affichent alors. Même si vous n'êtes pas connecté à l'IDE de Visual Studio avec le deuxième compte, vous êtes connecté aux services et aux ressources de ce compte. Il en va de même pour **Projet > Ajouter un service connecté** et **Team > Se connecter à Team Foundation Server**.

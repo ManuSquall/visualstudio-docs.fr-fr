@@ -1,14 +1,9 @@
 ---
 title: 'DA0003 : Nombreux échantillons de noyau | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DA0003
 - vs.performance.DA0003
@@ -18,13 +13,13 @@ ms.assetid: c1f46f77-eb95-42e5-b340-d86bc9de41b4
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 922cc6998db9813c188eb9028b8e855a8b860270
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: aa60d16eec09255f39e18b86b468a2fef2269aff
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741693"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782632"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003 : Nombreux échantillons de noyau
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51741693"
 Id de règle | DA0003 |  
 | Catégorie | Utilisation des outils de profilage |  
 | Méthodes de profilage | Échantillonnage |  
-| Message | Vous avez une proportion élevée d’échantillons en Mode noyau. Ceci peut indiquer un volume élevé d’activité d’E/S ou un taux élevé de changements de contexte. Envisagez de profiler votre application avec le Mode Instrumentation. |  
+| Message | Vous avez une proportion élevée d’échantillons en Mode noyau. Ceci peut indiquer un volume élevé d’activité d’E/S ou un taux élevé de changements de contexte. Envisagez de reprofiler votre application avec le mode Instrumentation.|  
 | Type de règle | Informations |  
   
 ## <a name="cause"></a>Cause  
@@ -49,6 +44,3 @@ Id de règle | DA0003 |
 -   Profilez avec la méthode d’instrumentation.  
   
 -   Augmentez le taux d’échantillonnage pour essayer de collecter plus d’échantillons en mode utilisateur.
-
-
-

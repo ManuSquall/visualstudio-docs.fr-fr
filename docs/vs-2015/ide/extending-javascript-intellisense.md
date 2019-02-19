@@ -1,14 +1,9 @@
 ---
 title: Extension de JavaScript IntelliSense | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - JavaScript, intellisense object
 - extending JavaScript IntelliSense
@@ -19,13 +14,13 @@ ms.assetid: 004e1ab6-bd7a-4327-9e01-89b9be96ba2f
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 239416a1638940207a8dcb78b395ed1915e8a93a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 81aab6e0eea808c8dcb9b37d5772144a863329aa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867069"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797445"
 ---
 # <a name="extending-javascript-intellisense"></a>Extension de JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,12 +90,12 @@ intellisense.addEventListener('statementcompletion', function (event) {
 > [!NOTE]
 >  Dans JavaScript, Info Express fait référence à la zone contextuelle qui apparaît à droite d’une liste de saisie semi-automatique. Vous ne pouvez pas appeler manuellement la Info Express.  
   
-##  <a name="intellisenseObject"></a> IntelliSense, objet  
+##  <a name="intellisenseObject"></a> Objet intellisense  
  Le tableau suivant présente les fonctions qui sont disponibles pour le `intellisense` objet. Le `intellisense` objet n’est disponible uniquement au moment du design.  
   
 |Fonction|Description|  
 |--------------|-----------------|  
-|`addEventListener(type, handler);`|Ajoute un gestionnaire d’événements pour un événement d’IntelliSense.<br /><br /> `type` est une valeur de chaîne. Les valeurs valides sont `statementcompletion`, `signaturehelp`, et `statementcompletionhint`.<br /><br /> `handler` est une fonction de gestionnaire d’événements qui reçoit un objet d’événement d’un des types suivants :<br /><br /> -   `CompletionEvent`, utilisé pour le `statementcompletion` événement.<br />-   `SignatureHelpEvent`, utilisé pour le `signaturehelp` événement.<br />-   `CompletionHintEvent`, utilisé pour le `statementcompletionhint` événement.<br /><br /> Pour obtenir des exemples qui utilisent cette fonction, consultez [exemples de Code](#CodeExamples).|  
+|`addEventListener(type, handler);`|Ajoute un gestionnaire d’événements pour un événement d’IntelliSense.<br /><br /> `type` est une valeur de chaîne. Les valeurs valides sont `statementcompletion`, `signaturehelp` et `statementcompletionhint`.<br /><br /> `handler` est une fonction de gestionnaire d’événements qui reçoit un objet d’événement d’un des types suivants :<br /><br /> -   `CompletionEvent`, utilisé pour le `statementcompletion` événement.<br />-   `SignatureHelpEvent`, utilisé pour le `signaturehelp` événement.<br />-   `CompletionHintEvent`, utilisé pour le `statementcompletionhint` événement.<br /><br /> Pour obtenir des exemples qui utilisent cette fonction, consultez [exemples de Code](#CodeExamples).|  
 |`annotate(obj, doc);`|Spécifie la documentation pour un objet en copiant les commentaires de documentation à partir d’un objet à un autre objet.<br /><br /> `obj` Spécifie l’objet vers lequel copier la documentation.<br /><br /> `doc` Spécifie l’objet à partir duquel copier la documentation.<br /><br /> Pour obtenir un exemple qui montre comment utiliser cette fonction, consultez [Ajout des Annotations IntelliSense](#Annotations).|  
 |`getFunctionComments(func);`|Retourne les commentaires pour une fonction spécifiée.<br /><br /> `func` Spécifie la fonction pour laquelle les commentaires sont retournés.<br /><br /> Vous pouvez définir le `func` paramètre à l’aide de `completionItem.value`.<br /><br /> Retourné `functionComments` objet inclut les membres suivants : `above`, `inside`, et `paramComment`. Pour plus d’informations, consultez le [functionComments propriété](#FunctionComments) propriété.<br /><br /> `getFunctionComments` peut être appelée uniquement à partir d’un des gestionnaires d’événements qui sont inscrits par `addEventListener`.<br /><br /> Pour obtenir un exemple qui montre comment utiliser cette fonction, consultez \\ \\ *chemin d’installation de Visual Studio*\JavaScript\References\showPlainComments.js.|  
 |`logMessage(msg);`|Envoie des messages de diagnostic dans la fenêtre Sortie.<br /><br /> `msg` est une chaîne qui contient le message.<br /><br /> Pour obtenir un exemple qui montre comment utiliser cette fonction, consultez [envoi de Messages dans la fenêtre sortie](#Logging).|  
@@ -214,7 +209,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
  Valeur de retour : objet  
   
-###  <a name="Target"></a> Propriété cible  
+###  Propriété target <a name="Target"></a>  
  Retourne un objet qui représente l’élément à gauche du caractère déclencheur, qui est un point (.). Pour les fonctions, `target` retourne la fonction pour laquelle les informations sur les paramètres sont demandées. Cette propriété est disponible pour le `statementcompletion` et `signaturehelp` objets événement.  
   
  Valeur de retour : objet  
@@ -491,7 +486,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
     ```  
   
-4.  Dans appCode.js, tapez le code suivant. En cours de frappe, vous verrez que l’icône de l’espace de noms est passée à «{}», comme est utilisé dans c#.  
+4.  Dans appCode.js, tapez le code suivant. En cours de frappe, vous verrez que l’icône de l’espace de noms est passée à «{}», comme est utilisée dans C#.  
   
      ![Exemple illustrant l’utilisation de la propriété glyphe](../ide/media/js-intellisense-glyph-namespace.png "js_intellisense_glyph_namespace")  
   
@@ -553,6 +548,3 @@ intellisense.addEventListener('statementcompletion', function (event) {
 ## <a name="see-also"></a>Voir aussi  
  [JavaScript IntelliSense](../ide/javascript-intellisense.md)   
  [Saisie semi-automatique des instructions pour les identificateurs](../ide/statement-completion-for-identifiers.md)
-
-
-

@@ -23,10 +23,10 @@ ms.locfileid: "54794158"
 # <a name="da0023-high-gc-cpu-time"></a>DA0023 : Temps processeur GC élevé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0023|  
+ID de règle | DA0023 |  
 | Catégorie de |. Utilisation de NET Framework |  
 | Méthode de profilage | Tous les |  
-| Message | % temps dans GC est relativement élevé. Cela indique un volume de surcharge de garbage collection trop élevé qui peut avoir un impact sur le taux de réponse de votre application. Vous pouvez regrouper les données d’allocation de mémoire .NET et les informations de durée de vie des objets afin de mieux comprendre le modèle d’allocation de mémoire utilisé par votre application.  
+| Message | % temps dans GC est relativement élevé. Cela indique un volume de surcharge de garbage collection trop élevé qui peut avoir un impact sur le taux de réponse de votre application. Vous pouvez regrouper les données d’allocation de mémoire .NET et les informations de durée de vie des objets afin de mieux comprendre le modèle d’allocation de mémoire utilisé par votre application.|  
 | Type de règle | D’information |  
   
  Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 10 échantillons pour déclencher cette règle.  

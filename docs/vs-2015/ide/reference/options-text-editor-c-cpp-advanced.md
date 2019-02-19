@@ -1,5 +1,5 @@
 ---
-title: Options, Éditeur de texte, C/C++, Avancé │ Microsoft Docs
+title: Options, Éditeur de texte, C-C++, Avancé │ Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general

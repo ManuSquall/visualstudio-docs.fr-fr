@@ -27,7 +27,7 @@ ms.locfileid: "54762522"
 Id de règle | DA0004 |  
 | Catégorie | Utilisation des outils de profilage |  
 | Méthodes de profilage | Échantillonnage de l’instrumentation |  
-| Message | Utilisation de votre processeur est constamment supérieure à 75 %. Utilisez le mode d’échantillonnage pour les applications utilisant le processeur de façon intensive.  
+| Message | Utilisation de votre processeur est constamment supérieure à 75 %. Utilisez le mode d’échantillonnage pour les applications utilisant le processeur de manière intensive.|  
 | Type de règle | Informations |  
   
  Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 10 échantillons pour déclencher cette règle.  

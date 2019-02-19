@@ -182,7 +182,7 @@ Identifie tous les fichiers de l’autre téléchargé et utilisé par l’appli
 ## <a name="dsigdigestvalue"></a>dsig:DigestValue  
  Le `dsig:DigestValue` élément est un enfant requis de le `hash` élément. L’élément `dsig:DigestValue` ne comporte pas d’attributs. Sa valeur de texte est le hachage calculé pour le fichier spécifié.  
 
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Cet élément identifie tous les fichiers d’autres qui composent l’application et, en particulier, les valeurs de hachage de fichier de vérification. Cet élément peut également inclure des données d’isolation de composant COM (Object Model) associées au fichier. Si un fichier est modifié, le fichier manifeste d’application également doit être mis à jour pour refléter la modification.  
 
 ## <a name="example"></a>Exemple  

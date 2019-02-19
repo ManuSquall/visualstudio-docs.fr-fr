@@ -31,7 +31,7 @@ Cette procédure pas à pas montre comment créer une boule de billard 3D réali
   
 -   Création d’un sens de l’espace en reflétant l’environnement  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous aurez besoin des composants et compétences suivants :  
   
 -   Un outil d’assemblage de textures dans un mappage de cube, tel que l’outil de texture DirectX fourni avec le SDK DirectX de juin 2010.  
@@ -188,7 +188,7 @@ Cette procédure pas à pas montre comment créer une boule de billard 3D réali
   
    ![Disposition de la carte cubique d’environnement](../designers/media/gfx-shader-demo-billiard-art-env-texture-top.png "gfx_shader_demo_billiard_art_env_texture_top")  
   
-   L’image en haut est la face de cube Y positif (+Y) ; au milieu, de gauche à droite, il s’agit des faces de cube -X, +Z, +X et -Z ; en bas il s’agit de la face de cube -Y.  
+   L’image en haut est la face de cube Y positif (+Y) ; au milieu, de gauche à droite, il s’agit des faces de cube –X, +Z, +X et –Z ; en bas il s’agit de la face de cube –Y.  
   
    Vous pouvez maintenant modifier le nuanceur pour fusionner l’exemple de carte cubique dans le reste du nuanceur.  
   

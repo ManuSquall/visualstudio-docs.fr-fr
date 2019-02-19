@@ -26,7 +26,7 @@ ms.locfileid: "54779240"
 # <a name="replace-in-files"></a>Remplacer dans les fichiers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Remplacer dans les fichiers vous permet de rechercher une chaîne ou une expression dans le code d’un ensemble défini de fichiers, et de modifier l’ensemble ou une partie des correspondances trouvées. Les correspondances trouvées et les actions entreprises sont répertoriées dans la fenêtre **Résultats de la recherche** sélectionnée dans **Options de résultat**.  
+Remplacer dans les fichiers** vous permet de rechercher une chaîne ou une expression dans le code d’un ensemble défini de fichiers, et de changer l’ensemble ou une partie des correspondances trouvées. Les correspondances trouvées et les actions entreprises sont répertoriées dans la fenêtre **Résultats de la recherche** sélectionnée dans **Options de résultat**.  
   
 > [!NOTE]
 >  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  

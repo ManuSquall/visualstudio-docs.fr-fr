@@ -41,7 +41,7 @@ HRESULT WINAPI SetThreadCount(int threadCount);
  Nombre de threads à utiliser.  
   
 ## <a name="return-value"></a>Valeur de retour  
- <!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->HRESULT<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  --> avec le bit SUCCEEDED défini si le nombre de threads a été mis à jour.  
+ [HRESULT](<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) avec le bit [SUCCEEDED](<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) défini si le nombre de threads a été mis à jour.  
   
 ## <a name="requirements"></a>Spécifications  
  **En-tête :** FileTracker.h

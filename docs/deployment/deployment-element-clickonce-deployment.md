@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 4fafa9c2-97a0-4cea-b8fd-9746dca33af4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3165337a7386d90d674b42e7fd7e6f29822b284
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 55035a214d98abd262f85c29c55bd633c0b35505
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906928"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023718"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;déploiement&gt; , élément (déploiement ClickOnce)
 Identifie les attributs utilisés pour le déploiement de mises à jour et l'exposition au système.  
@@ -67,7 +67,7 @@ Identifie les attributs utilisés pour le déploiement de mises à jour et l'exp
 | `minimumRequiredVersion` | Optionnel. Spécifie la version minimale de cette application peut s’exécuter sur le client. Si le numéro de version de l’application est inférieur au nombre de version fourni dans le manifeste de déploiement, l’application ne s’exécutera pas. Numéros de version doivent être spécifiés dans le format `N.N.N.N`, où `N` est un entier non signé. Si le `install` attribut est `false`, `minimumRequiredVersion` ne doit pas être définie. |
 | `mapFileExtensions` | Optionnel. La valeur par défaut est `false`. Si `true`, tous les fichiers dans le déploiement doivent avoir une extension .deploy. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] supprimera cette extension de ces fichiers dès qu’il les télécharge à partir du serveur Web. Si vous publiez votre application à l’aide de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], il ajoute automatiquement cette extension à tous les fichiers. Ce paramètre autorise tous les fichiers dans un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement être téléchargé à partir d’un serveur Web qui bloque la transmission des fichiers se terminant par « unsafe » extensions telles que .exe. |
 | `disallowUrlActivation` | Optionnel. La valeur par défaut est `false`. Si `true`, empêche une application installée en cours de démarrage en cliquant sur l’URL ou en entrant l’URL dans Internet Explorer. Si le `install` attribut n’est pas présent, cet attribut est ignoré. |
-| `trustURLParameters` | Optionnel. La valeur par défaut est `false`. Si `true`, permet à l’URL de contenir des paramètres de chaîne de requête qui sont passés dans l’application, bien comme arguments de ligne de commande sont passés à une application de ligne de commande. Pour plus d'informations, voir [Procédure : Récupérer les informations de chaîne de requête dans une application ClickOnce en ligne](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).<br /><br /> Si le `disallowUrlActivation` attribut est `true`, `trustUrlParameters` doit être exclu du manifeste, ou définie explicitement sur `false`. |
+| `trustURLParameters` | Optionnel. La valeur par défaut est `false`. Si `true`, permet à l’URL de contenir des paramètres de chaîne de requête qui sont passés dans l’application, bien comme arguments de ligne de commande sont passés à une application de ligne de commande. Pour plus d’informations, consultez [Comment : récupérer des informations de chaîne de requête dans une Application ClickOnce en ligne](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).<br /><br /> Si le `disallowUrlActivation` attribut est `true`, `trustUrlParameters` doit être exclu du manifeste, ou définie explicitement sur `false`. |
 
  Le `deployment` élément contient également les éléments enfants suivants.  
 
@@ -102,7 +102,7 @@ Identifie les attributs utilisés pour le déploiement de mises à jour et l'exp
 |------------| - |
 | `codebase` | Obligatoire. Identifie l’emplacement, comme un identificateur URI (Uniform Resource), du manifeste de déploiement qui est utilisé pour mettre à jour le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application. Cet élément permet également de transférer les emplacements de mise à jour pour les installations basées sur CD. Doit être un URI valide. |
 
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Vous pouvez configurer votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application pour rechercher les mises à jour au démarrage, vérifier les mises à jour après le démarrage ou ne jamais rechercher des mises à jour. Pour rechercher les mises à jour au démarrage, vérifiez que le `beforeApplicationStartup` élément existe sous le `update` élément. Pour rechercher les mises à jour après le démarrage, vérifiez que le `expiration` élément existe sous le `update` élément, et que les intervalles de mise à jour sont fournies.  
 
  Pour désactiver la vérification des mises à jour, supprimer le `subscription` élément. Lorsque vous spécifiez dans le manifeste de déploiement pour ne jamais vérifier les mises à jour, vous pouvez vérifier manuellement les mises à jour à l’aide de la <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdate%2A> (méthode).  

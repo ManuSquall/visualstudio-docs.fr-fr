@@ -14,15 +14,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], expression evaluation
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9a7e936b565a961bb7b32d5599c79049857328e
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 49afa8e56a45e3ebda5572afd1604cee7076578a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204467"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002515"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Regardez des variables avec les fenêtres Espion et Espion express 
 
@@ -30,7 +30,7 @@ Pendant le débogage, vous pouvez utiliser **espion** windows et **Espion expres
 
 **Espion** windows peuvent afficher plusieurs variables à la fois pendant le débogage. Le **Espion express** boîte de dialogue affiche une seule variable à la fois et doit être fermé pour que le débogage puisse se poursuivre.
 
-Si c’est la première fois que vous essayez de déboguer du code, nous vous conseillons de consulter [Débogage pour grands débutants](../debugger/debugging-absolute-beginners.md) et [Correction des bogues par amélioration du code C#](../debugger/write-better-code-with-visual-studio.md) avant de poursuivre la lecture de cet article.
+S’il s’agit de la première fois que vous avez essayé de déboguer du code, il pouvez que vous souhaitez lire [débogage pour les débutants](../debugger/debugging-absolute-beginners.md) et [techniques et des outils de débogage](../debugger/write-better-code-with-visual-studio.md) avant de poursuivre cet article.
 
 ## <a name="observe-variables-with-a-watch-window"></a>Observer variables dans une fenêtre Espion
 
@@ -280,5 +280,5 @@ Pour observer le `a` variable,
 
 ## <a name="see-also"></a>Voir aussi
  [Qu’est-ce que le débogage ?](../debugger/what-is-debugging.md)  
- [Corriger les bogues en écrivant un meilleur code C#](../debugger/write-better-code-with-visual-studio.md)  
+ [Techniques et outils de débogage](../debugger/write-better-code-with-visual-studio.md)  
  [Premier aperçu de débogage](../debugger/debugger-feature-tour.md) [fenêtres du débogueur](../debugger/debugger-windows.md)

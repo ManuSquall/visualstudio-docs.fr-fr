@@ -39,7 +39,7 @@ Si le chargement d’un modèle dans l’environnement de développement échoue
 5.  Vérifiez que le code XML du fichier .vstemplate adhère au schéma de modèle [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Pour plus d’informations sur le schéma .vstemplate, consultez [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md).  
   
     > [!NOTE]
-    >  Pour obtenir une prise en charge d’IntelliSense quand vous créez le fichier `xmlns`vstemplate`VSTemplate`, ajoutez un attribut http://schemas.microsoft.com/developer/vstemplate/2005 à l’élément , puis affectez-lui la valeur .  
+    >  Pour obtenir une prise en charge d’IntelliSense quand vous créez le fichier .vstemplate, ajoutez un attribut `xmlns` à l’élément `VSTemplate`, puis affectez-lui la valeur http://schemas.microsoft.com/developer/vstemplate/2005.  
   
 6.  Enregistrez et fermez le fichier .vstemplate.   
   

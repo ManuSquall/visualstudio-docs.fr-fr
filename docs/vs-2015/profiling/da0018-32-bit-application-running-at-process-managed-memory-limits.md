@@ -23,10 +23,10 @@ ms.locfileid: "54773285"
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018 : application 32 bits s'exécutant aux limites de la mémoire managée du processus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0018|  
+ID de règle | DA0018 |  
 | Catégorie | Utilisation des outils de profilage |  
 | Méthode de profilage | Échantillonnage |  
-| Message | Géré les allocations de mémoire proche de la limite par défaut pour un processus 32 bits. Votre application peut être liée à la mémoire.  
+| Message | Géré les allocations de mémoire proche de la limite par défaut pour un processus 32 bits. Votre application peut être liée à la mémoire.|  
 | Type de règle | Avertissement |  
   
  Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 10 échantillons pour déclencher cette règle.  

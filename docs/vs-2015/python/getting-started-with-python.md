@@ -27,11 +27,11 @@ Python est un langage de programmation populaire qui est utilisé par nombreuses
 
 Comme un langage de programmation Python est :
   
-- Fiable
+- Fiable.
 - Généralement utile pour les scripts de programmes rapides, scripts d’application, applications de bureau, serveurs web, services web et calcul scientifique.
-- Facile à maîtriser, il bénéficie d'une conception qui favorise le codage (de nombreuses universités l'utilisent pour les cours d'initiation à la programmation)
+- Facile à maîtriser, il bénéficie d’une conception qui favorise le codage (de nombreuses universités l’utilisent pour les cours d’initiation à la programmation).
 - Flexible, prenant en charge les styles de programmation impératives, fonctionnelles et orientée objet.
-- Gratuit et open source
+- Gratuit et open source.
 - S’exécute correctement sur tous les principaux systèmes d’exploitation.  
 - Prise en charge par de nombreuses bibliothèques bien conçues, utiles et gratuits.  
 - Prise en charge par un grand nombre de documentation, des exemples et une solide Communauté de développeurs.  

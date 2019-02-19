@@ -1,5 +1,5 @@
 ---
-title: Les pseudo-variables | Microsoft Docs
+title: Pseudo-variables | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: fae84f68-2138-4144-9bd4-c9e271b6182a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e7056c3535e05febfa8de2ddd57385fc73ec182
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f7f5eadd7072a3b250fa117909f4d5b2e9c2868f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988059"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54925433"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudo-variables dans le débogueur Visual Studio
 Les pseudo-variables sont des termes utilisés pour afficher certaines informations dans une fenêtre de variable ou dans la boîte de dialogue **Espion express**. Vous pouvez entrer une pseudo-variable de la même façon qu'une variable normale. Toutefois, les pseudo-variables ne sont pas des variables et ne correspondent pas à des noms de variable de votre programme.  

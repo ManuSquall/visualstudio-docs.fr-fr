@@ -28,7 +28,7 @@ ms.locfileid: "54785047"
 # <a name="class-view-and-object-browser-icons"></a>Affichage de classes et Explorateur d'objets, icônes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-L’**affichage de classes** et l’Explorateur d’objets affichent des icônes qui représentent des entités de code, par exemple, des espaces de noms, des classes, des fonctions et des variables. Le tableau suivant illustre et décrit ces icônes.  
+L’Affichage de classes** et l’**Explorateur d’objets** affichent des icônes qui représentent des entités de code, par exemple, des espaces de noms, des classes, des fonctions et des variables. Le tableau suivant illustre et décrit ces icônes.  
   
 |Icône|Description|Icône|Description|  
 |----------|-----------------|----------|-----------------|  

@@ -3,10 +3,7 @@ title: Installer Visual Studio 2015 │ Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-install
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -21,13 +18,13 @@ ms.assetid: da049020-cfda-40d7-8ff4-7492772b620f
 caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: 55dad8adf4b3ce6e79214471c93052318f7228f3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: ecb6e2ef6927638aa06bbb04a09f64f8ca4c4a46
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828054"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799175"
 ---
 # <a name="install-visual-studio-2015"></a>Installer Visual Studio 2015
 
@@ -43,10 +40,10 @@ Avant d’entrer dans les détails, voici une liste de nos liens les plus demand
 |------------------|----------------|
 |![Téléchargez Visual Studio](../install/media/downloads.png "téléchargements") |**Téléchargements** Pour installer Visual Studio 2015, vous pouvez télécharger un fichier exécutable de produit à partir de la [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) page (abonnement requis), ou utiliser le support d’installation à partir du produit boxed. [En savoir plus sur le téléchargement en cours ou les versions antérieures de Visual Studio](https://www.visualstudio.com/vs/older-downloads/).|
 |![En savoir plus sur les fonctionnalités](../install/media/features.png "fonctionnalités") |**Fonctionnalités** Pour en savoir plus sur les fonctionnalités de Visual Studio 2015, consultez les notes de publication pour [RTM](https://www.visualstudio.com/news/vs2015-vs), [mise à jour 1](https://www.visualstudio.com/news/vs2015-update1-vs), [mise à jour 2](https://www.visualstudio.com/news/vs2015-update2-vs), et [Update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).|
-|![Découvrir les nouveautés dans chaque référence (SKU)](../install/media/sku.png "références (SKU)") |**Références** : Pour découvrir les nouveautés disponibles dans chaque édition de Visual Studio 2015, consultez notre page [Comparer les offres Visual Studio](http://go.microsoft.com/fwlink/?LinkID=242142).|
-|![Configuration système requise](../install/media/system-requirements.png "configuration système requise") |**Configuration système requise** : Pour examiner la configuration système requise pour chaque édition de Visual Studio 2015, consultez la page [Compatibilité de Visual Studio 2015](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs).|
+|![Découvrir les nouveautés dans chaque référence (SKU)](../install/media/sku.png "références (SKU)") |**Références SKU** : Pour découvrir les nouveautés disponibles dans chaque édition de Visual Studio 2015, consultez notre page [Comparer les offres Visual Studio](http://go.microsoft.com/fwlink/?LinkID=242142).|
+|![Configuration système requise](../install/media/system-requirements.png "configuration système requise") |**Configuration système requise**: pour afficher la configuration système requise pour chaque édition de Visual Studio 2015, consultez le [compatibilité de Visual Studio 2015](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs) page.|
 |![Recherchez votre clé de produit](../install/media/product-keys.png "clés de produit") |**Clés de produit** Pour trouver votre clé de produit, consultez le [Comment : Recherchez la clé de produit Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) rubrique.|
-|![Découvrez les licences](../install/media/licensing.png "Gestionnaire de licences") |**Gestion des licences** : Pour connaître les options de gestion des licences pour les clients particuliers ou d’entreprise, consultez le livre blanc [Gestion des licences MSDN et Visual Studio](https://www.microsoft.com/download/details.aspx?id=13350).|
+|![Découvrez les licences](../install/media/licensing.png "Gestionnaire de licences") |**Gestion des licences**: pour connaître les options de licence pour les individus ou les clients d’entreprise, consultez le [licences Visual Studio et MSDN](https://www.microsoft.com/download/details.aspx?id=13350) livre blanc.|
 
 ##  <a name="custom"></a> Installation par défaut ou installation personnalisée
  Au moment d’installer Visual Studio 2015, vous pouvez inclure les composants que vous prévoyez d’utiliser au quotidien et exclure les autres. Cela signifie qu’une installation par défaut sera souvent plus petite et plus rapide à installer qu’une installation personnalisée. Cela signifie aussi que bon nombre de composants qui étaient installés par défaut dans les versions précédentes sont maintenant considérés comme des composants personnalisés que vous devez sélectionner explicitement dans cette version.
@@ -83,7 +80,7 @@ Avant d’entrer dans les détails, voici une liste de nos liens les plus demand
 |Déboguer les programmes|SeDebugPrivilege|
 |Gérer le journal d'audit et de sécurité|SeSecurityPrivilege|
 
- Pour plus d’informations sur cette exigence de compte d’administrateur local, consultez l’article suivant de la Base de connaissances : [Échec de l’installation de SQL Server si le compte d’installation ne possède pas certains droits d’utilisateur](https://support.microsoft.com/en-us/kb/2000257).
+ Pour plus d’informations sur cette exigence de compte d’administrateur local, consultez l’article suivant de la Base de connaissances : [Échec de l’installation de SQL Server si le compte d’installation ne possède pas certains droits d’utilisateur](https://support.microsoft.com/kb/2000257).
 
 ###  <a name="BKMK_Media"></a> À l’aide du support d’installation
  Pour installer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], dans le répertoire racine du support d'installation de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , exécutez le fichier d'installation de l'édition souhaitée :

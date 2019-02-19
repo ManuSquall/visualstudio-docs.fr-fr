@@ -1,14 +1,9 @@
 ---
 title: Environnement, boîte de dialogue Options | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.OptionsDialog.Environment
 - VS.ToolsOptionsPages.Environment
@@ -16,13 +11,13 @@ ms.assetid: 3f463cf0-734b-4fdc-b4ff-b47f9bb99069
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f235e79b7173ec37e5ecfdf2dd3f0d1d2ae1ea40
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8acdea7f4c524e6a8697b502efe610fb95a27680
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257671"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753305"
 ---
 # <a name="environment-options-dialog-box"></a>Environnement, boîte de dialogue Options
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,12 +26,12 @@ ms.locfileid: "49257671"
 Vous pouvez utiliser les pages du dossier **Environnement** de la boîte de dialogue **Options** pour définir comment certains éléments de l’environnement de développement intégré (IDE) s’affichent et se comportent. Vous pouvez accéder aux pages Environnement en choisissant **Outils** et **Options** dans la barre de menus, puis en sélectionnant **Environnement**.  
   
 > [!NOTE]
->  Les boîtes de dialogue et les commandes de menu qui apparaissent sur votre ordinateur peuvent différer de celles décrites dans l'aide, selon les paramètres actifs et l'édition de Visual Studio utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Les boîtes de dialogue et les commandes de menu qui apparaissent sur votre ordinateur peuvent différer de celles décrites dans l'aide, selon les paramètres actifs et l'édition de Visual Studio utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 |Pour plus d'informations sur|Voir|  
 |----------------------------------|---------|  
 |Personnaliser la personnalisation de la présentation et du comportement des fenêtres, des menus et d'autres éléments de l'environnement de développement intégré (IDE).|[Général, Environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)|  
-|Spécifiez la sécurité pour les compléments.|[Sécurité, environnement, boîte de dialogue Options du complément](http://msdn.microsoft.com/library/f95aa7af-70a5-4323-abe5-91bd6d264f4e)|  
+|Spécifiez la sécurité pour les compléments.|[Sécurité des compléments, Environnement, boîte de dialogue Options](http://msdn.microsoft.com/library/f95aa7af-70a5-4323-abe5-91bd6d264f4e)|  
 |Modifier les paramètres par défaut d'enregistrement et de restauration automatiques des fichiers.|[Récupération automatique, Environnement, boîte de dialogue Options](../../ide/reference/autorecover-environment-options-dialog-box.md)|  
 |Définir les paramètres de gestion et d'affichage de documents, y compris du comportement des Fichiers divers.|[Documents, Environnement, boîte de dialogue Options](../../ide/reference/documents-environment-options-dialog-box.md)|  
 |Personnalisez le déroulement des mises à jour et la gestion des extensions.|[Extensions et mises à jour, Environnement, boîte de dialogue Options](../../ide/reference/extensions-and-updates-environment-options-dialog-box.md)|  
@@ -54,6 +49,3 @@ Vous pouvez utiliser les pages du dossier **Environnement** de la boîte de dial
   
 ## <a name="see-also"></a>Voir aussi  
  [Options, boîte de dialogue](../../ide/reference/options-dialog-box-visual-studio.md)
-
-
-

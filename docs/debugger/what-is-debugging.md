@@ -8,15 +8,15 @@ helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6933f3b5dd826eda586c92466bcd9a8cbe6dc527
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: c01317f3b8fa92cf1bc17c3745f708e0d3f26e5b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204279"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919328"
 ---
 # <a name="what-is-debugging"></a>Qu’est-ce que le débogage ?
 
@@ -54,4 +54,4 @@ Dans cet article, vous avez découvert quelques concepts généraux liés au dé
 > [Débogage pour les grands débutants](../debugger/debugging-absolute-beginners.md)
 
 > [!div class="nextstepaction"]
-> [Corriger les bogues en écrivant un meilleur code C#](../debugger/write-better-code-with-visual-studio.md)
+> [Techniques et outils de débogage](../debugger/write-better-code-with-visual-studio.md)

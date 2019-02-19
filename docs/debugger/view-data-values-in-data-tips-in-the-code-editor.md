@@ -15,19 +15,19 @@ helpviewer_keywords:
 ms.assetid: ffa7bd18-439b-4685-a9b3-c7884b5de41f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59f7b21530ff51697daca40b5c9f412682f7df89
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: caca7622d2634a6da08d0d09aaef5b0a8634180e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204399"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986551"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Afficher les valeurs de données dans DataTips dans l’éditeur de code
 
-Les DataTips sont un moyen pratique de visualiser des informations sur les variables de votre programme au cours du débogage. Les DataTips ne fonctionnent qu'en mode arrêt, et uniquement avec les variables comprises dans la portée d'exécution actuelle. Si c’est la première fois que vous essayez de déboguer du code, nous vous conseillons de consulter [Débogage pour grands débutants](../debugger/debugging-absolute-beginners.md) et [Correction des bogues par amélioration du code C#](../debugger/write-better-code-with-visual-studio.md) avant de poursuivre la lecture de cet article.
+Les DataTips sont un moyen pratique de visualiser des informations sur les variables de votre programme au cours du débogage. Les DataTips ne fonctionnent qu'en mode arrêt, et uniquement avec les variables comprises dans la portée d'exécution actuelle. S’il s’agit de la première fois que vous avez essayé de déboguer du code, il pouvez que vous souhaitez lire [débogage pour les débutants](../debugger/debugging-absolute-beginners.md) et [techniques et des outils de débogage](../debugger/write-better-code-with-visual-studio.md) avant de poursuivre cet article.
   
 ## <a name="work-with-datatips"></a>Utiliser des DataTips
 
@@ -124,7 +124,7 @@ Vous pouvez exporter des DataTips vers un fichier XML, que vous pouvez partager 
 
 ## <a name="see-also"></a>Voir aussi  
  [Qu’est-ce que le débogage ?](../debugger/what-is-debugging.md)  
- [Corriger les bogues en écrivant un meilleur code C#](../debugger/write-better-code-with-visual-studio.md)  
+ [Techniques et outils de débogage](../debugger/write-better-code-with-visual-studio.md)  
  [Premier aperçu de débogage](../debugger/debugger-feature-tour.md) [affichage de données dans le débogueur](../debugger/viewing-data-in-the-debugger.md)   
  [Espion et Espion express, fenêtres](../debugger/watch-and-quickwatch-windows.md)   
  [Créer des visualiseurs personnalisés](../debugger/create-custom-visualizers-of-data.md)   

@@ -1,14 +1,9 @@
 ---
-title: Guide pratique pour créer des types à l’aide du Concepteur de classes | Microsoft Docs
-ms.custom: ''
+title: 'Procédure : Créer des Types à l’aide du Concepteur de classes | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.Clr.ClrAttributesDialog
 helpviewer_keywords:
@@ -22,13 +17,13 @@ ms.assetid: 94458c31-28bc-40e2-9737-85868788a0e5
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8288e17ecfb4c9169b2b9b8fb7cd5a3c3788f4d9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c5e859e999d7aec8a58464f145ed7c3e9afbc788
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175031"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772152"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Guide pratique pour créer des types à l'aide du Concepteur de classes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +70,7 @@ Pour concevoir de nouveaux types pour les projets Visual C# .NET et Visual Basic
     |Classes, classes abstraites, structures ou structs|Méthodes, propriétés, champs, événements, constructeurs (méthode), destructeurs (méthode) et constantes qui définissent le type|  
     |Enums|Valeurs de champ qui composent l'énumération|  
     |Interfaces|Méthodes, propriétés et événements qui composent l'interface|  
-    |Délégué|Paramètres qui définissent le délégué|  
+    |délégué|Paramètres qui définissent le délégué|  
     |Module|Méthodes, propriétés, champs, événements, constructeurs (méthode) et constantes qui définissent le module|  
   
      Consultez [Création de membres](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).  
@@ -84,7 +79,7 @@ Pour concevoir de nouveaux types pour les projets Visual C# .NET et Visual Basic
   
 1.  Cliquez sur la forme du type sur un diagramme de classes.  
   
-2.  Dans la fenêtre Propriétés, à côté du **attributs personnalisés** propriété pour le type, cliquez sur le bouton de sélection (...).  
+2.  Dans la fenêtre Propriétés, cliquez sur le bouton de sélection (...) situé à côté de la propriété **Attributs personnalisés**.  
   
 3.  Ajoutez un ou plusieurs attributs personnalisés, un par ligne. Ne les placez pas entre crochets.  
   
@@ -106,6 +101,3 @@ Pour concevoir de nouveaux types pour les projets Visual C# .NET et Visual Basic
  [Création et configuration de membres de type (Concepteur de classes)](../ide/creating-and-configuring-type-members-class-designer.md)   
  [Utilisation des diagrammes de classes (Concepteur de classes)](../ide/working-with-class-diagrams-class-designer.md)   
  [Conception des classes et des types (Concepteur de classes)](../ide/designing-classes-and-types-class-designer.md)
-
-
-

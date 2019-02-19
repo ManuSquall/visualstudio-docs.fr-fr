@@ -20,7 +20,7 @@ Les outils Kubernetes de Visual Studio vous aider à rationaliser le développem
 
 Ce didacticiel couvre l’utilisation de Visual Studio pour ajouter la prise en charge de Kubernetes à un projet et publier sur AKS. Si vous êtes principalement intéressé par l’utilisation [Azure Dev espaces](http://aka.ms/get-azds) pour déboguer et tester votre projet en cours d’exécution dans ACS, vous pouvez passer à la [didacticiel d’Azure Dev espaces](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio) à la place.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
 Pour tirer parti de cette nouvelle fonctionnalité, vous devez :
 

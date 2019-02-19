@@ -1,24 +1,19 @@
 ---
 title: Personnalisation de l’analyse de la couverture du code | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d8a0b09bf2e67813548865b6ed56fee0b0170cc5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 70e74c1c4d5b8cc93f4afaeebc74f5fc0579a692
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890164"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768031"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Personnalisation de l'analyse de couverture du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +72,7 @@ Par défaut, l’outil de couverture de Visual Studio Code 2012 analyse tous le
 >  La résolution de symboles peut prendre du temps, surtout lorsque vous utilisez un emplacement de fichier distant avec de nombreux assemblys. Par conséquent, envisagez de copier les fichiers distants .pdb au même emplacement local que les fichiers binaires (.dll et .exe).  
   
 ### <a name="excluding-and-including"></a>Exclusion et inclusion  
- Vous pouvez exclure les assemblys spécifiés de l'analyse de couverture du code. Par exemple :  
+ Vous pouvez exclure les assemblys spécifiés de l'analyse de couverture du code. Par exemple :  
   
 ```minterastlib  
 <ModulePaths>  
@@ -120,7 +115,7 @@ Par défaut, l’outil de couverture de Visual Studio Code 2012 analyse tous le
   
    Les correspondances ne respectent pas la casse.  
   
-   Par exemple :  
+   Par exemple :  
   
 ```xml  
 <ModulePaths>  
@@ -207,7 +202,7 @@ Par défaut, l’outil de couverture de Visual Studio Code 2012 analyse tous le
   
 3. Dans la page **Processus**, développez **Tests automatisés**, **Source de test**, **Paramètres d’exécution**. Sélectionnez votre fichier **.runsettings**.  
   
-   - <em>Mais **Assembly de Test</em>* s’affiche au lieu de **Source de Test**. Lorsque j’essaie de définir le champ Paramètres d’exécution**, je ne peux sélectionner que des fichiers .testsettings.*  
+   - <em>Mais **Assembly de test</em>* apparaît à la place de **Source de test**. Lorsque j’essaie de définir le champ **Paramètres d’exécution**, je ne peux sélectionner que des fichiers .testsettings.*  
   
       Sous **Tests automatisés**, sélectionnez **Assembly de test**, puis choisissez **[…]** à la fin de la ligne. Dans la boîte de dialogue **Ajouter/Modifier une série de tests**, définissez **Test Runner** sur **Visual Studio Test Runner**.  
   
@@ -333,6 +328,3 @@ Included items must then not match any entries in the exclude list to remain inc
 ## <a name="see-also"></a>Voir aussi  
  [Utilisation de la couverture du code pour déterminer la quantité de code testé](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)   
  [Tests unitaires sur votre code](../test/unit-test-your-code.md)
-
-
-
