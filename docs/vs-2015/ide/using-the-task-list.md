@@ -17,10 +17,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f912b17e235e92496fa8ffc573429b7708d9198d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54801168"
 ---
 # <a name="using-the-task-list"></a>Utilisation de la liste des tâches
@@ -47,7 +47,7 @@ Avec la **liste des tâches** , effectuez le suivi des commentaires de code qui 
   
 #### <a name="to-open-the-task-list"></a>Pour ouvrir la fenêtre Liste des tâches  
   
--   Sur le **vue** menu, choisissez **liste des tâches** (clavier : Ctrl+\\,T).  
+-   Dans le menu **Affichage**, choisissez **Liste des tâches** (clavier : Ctrl+\\,T).  
   
      ![Fenêtre Liste des tâches](../ide/media/vs2015-task-list.png "vs2015_task_list")  
   
@@ -86,7 +86,7 @@ Avec la **liste des tâches** , effectuez le suivi des commentaires de code qui 
  Étant donné que `TODO` est un jeton prédéfini, ce commentaire s’affiche comme une tâche `TODO` dans la liste.  
   
 ###  <a name="customTokens"></a> Jetons personnalisés  
- Par défaut, Visual Studio inclut les jetons suivants : HACK, TODO, ANNULÉE, REMARQUE. Ces jetons ne respectent pas la casse.  
+ Par défaut, Visual Studio inclut les jetons suivants : HACK, TODO, UNDONE, NOTE. Ces jetons ne respectent pas la casse.  
   
  Vous pouvez également créer vos propres jetons personnalisés.  
   
@@ -122,7 +122,7 @@ Avec la **liste des tâches** , effectuez le suivi des commentaires de code qui 
   
 #### <a name="to-create-a-shortcut"></a>Pour créer un raccourci  
   
--   Insérez le pointeur dans le code à l'emplacement où vous souhaitez placer un raccourci. Choisissez **modifier &#124; signets &#124; ajouter le raccourci vers la liste des tâches** ou appuyez sur (clavier : Ctrl+K, Ctrl+H  
+-   Insérez le pointeur dans le code à l'emplacement où vous souhaitez placer un raccourci. Choisissez **Edition &#124; Signets &#124; Ajouter un raccourci vers la liste des tâches** ou appuyez sur (clavier : Ctrl+K, Ctrl+H).  
   
      Pour parcourir les raccourcis figurant dans le code, choisissez un raccourci dans la liste, puis **Tâche suivante** ou **Tâche précédente** dans le menu contextuel.  
   

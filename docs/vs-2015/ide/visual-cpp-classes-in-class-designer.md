@@ -14,10 +14,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 04392545b5b5c352a35b9a3d523f0c6ff5d98b01
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54787074"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Classes Visual C++ dans le Concepteur de classes
@@ -36,7 +36,7 @@ class A {};
 class B : A {};  
 ```  
   
- Vous pouvez également faire glisser uniquement la classe B sur le diagramme de classes, cliquer avec le bouton droit sur la forme de classe pour B, puis cliquer sur **Afficher les classes de base**. Cela affiche sa classe de base : Un fichier .  
+ Vous pouvez également faire glisser uniquement la classe B sur le diagramme de classes, cliquer avec le bouton droit sur la forme de classe pour B, puis cliquer sur **Afficher les classes de base**. Cela affiche sa classe de base : A.  
   
 ## <a name="multiple-inheritance"></a>Héritage multiple  
  Le Concepteur de classes prend en charge la visualisation de relations d’héritage de classes multiples. L’*héritage multiple* est utilisé quand une classe dérivée a des attributs de plusieurs classes de base. Voici un exemple d’héritage multiple :  

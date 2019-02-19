@@ -27,10 +27,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 2406a802b0992b0fffe8a41d99ed600a9e1fc2b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54800764"
 ---
 # <a name="options-text-editor-c-formatting"></a>Options, Éditeur de texte, C#, Mise en forme
@@ -56,7 +56,7 @@ Utilisez la boîte de dialogue de page de propriétés **Mise en forme** pour d�
 ## <a name="preview-window"></a>Fenêtre Aperçu  
  Les volets d’options **Mise en retrait**, **Nouvelles lignes**, **Espacement** et **Retour à la ligne** offrent tous une fenêtre d’aperçu. La fenêtre d’aperçu montre l’effet de chaque option. Pour utiliser la fenêtre d’aperçu, sélectionnez une option de mise en forme. La fenêtre d’aperçu montre un exemple de l’option sélectionnée. Quand vous changez le paramètre, par exemple quand vous cochez ou décochez une case à cocher, la fenêtre d’aperçu se met à jour en affichant l’effet du nouveau paramètre.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Les options de mise en retrait dans les pages **Tabulations** de chaque langage déterminent uniquement l’endroit où l’éditeur de code place le curseur quand vous appuyez sur Entrée en fin de ligne. Les options de mise en retrait sous **Mise en forme** s’appliquent quand le code est mis en forme automatiquement, par exemple, quand vous collez du code dans le fichier alors que l’option **Ajuster la mise en retrait lors du collage** est sélectionnée, et quand le bloc qui est mis en forme est tapé manuellement.  
   
 ## <a name="see-also"></a>Voir aussi  

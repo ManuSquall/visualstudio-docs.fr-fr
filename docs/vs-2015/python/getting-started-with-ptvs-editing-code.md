@@ -1,5 +1,5 @@
 ---
-title: 'Bien démarrer avec PTVS : Modification du Code | Microsoft Docs'
+title: 'Bien démarrer avec PTVS : modification du Code | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-python
@@ -10,13 +10,13 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 2e883970b4b265b1864d53ef6e1f347160e5aeb9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758398"
 ---
-# <a name="getting-started-with-ptvs-editing-code"></a>Bien démarrer avec PTVS : Modification du code
+# <a name="getting-started-with-ptvs-editing-code"></a>Prise en main des outils Python pour Visual Studio : édition du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les outils Python pour Visual Studio offrent une expérience productive de l’éditeur Visual Studio pour Python.  
