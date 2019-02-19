@@ -12,17 +12,17 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 121474dcc7abcfb01ff992558f3ce0a245444e9f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54775886"
 ---
 # <a name="toolbox-components-tab"></a>Boîte à outils, onglet Composants
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
-Affiche les composants que vous pouvez ajouter aux concepteurs [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] et [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. En plus des composants [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] inclus avec [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], tels que les composants <xref:System.Messaging.MessageQueue> et <xref:System.Diagnostics.EventLog>, vous pouvez ajouter vos propres composants ou des composants tiers à cet onglet. Pour plus d'informations, voir [Procédure : Manipuler des onglets de boîte à outils](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
+Affiche les composants que vous pouvez ajouter aux concepteurs [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] et [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. En plus des composants [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] inclus avec [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], tels que les composants <xref:System.Messaging.MessageQueue> et <xref:System.Diagnostics.EventLog>, vous pouvez ajouter vos propres composants ou des composants tiers à cet onglet. Pour plus d’informations, consultez [Comment : manipuler des onglets de boîte à outils](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
   
  Pour afficher cet onglet, dans le menu **Affichage**, sélectionnez **Boîte à outils**. Dans la **boîte à outils**, sélectionnez l’onglet **Composants**.  
   
@@ -42,7 +42,7 @@ Affiche les composants que vous pouvez ajouter aux concepteurs [!INCLUDE[vbprvb]
  Crée une instance du composant <xref:System.Diagnostics.EventLog> que vous pouvez utiliser pour interagir avec des journaux des événements système et personnalisés, ce qui inclut l’écriture d’événements dans un journal et la lecture de données de journal. Pour plus d’informations, consultez [Introduction au composant EventLog](http://msdn.microsoft.com/a2ba4f28-4b1a-435e-99ef-51b28e21f805).  
   
  **FileSystemWatcher**  
- Crée une instance du composant <xref:System.IO.FileSystemWatcher> que vous pouvez utiliser pour surveiller les modifications apportées à tout répertoire ou fichier auquel vous avez accès. Pour plus d'informations, voir [Procédure : Configurer des Instances du composant FileSystemWatcher](http://msdn.microsoft.com/2e628234-4951-4135-8a86-28b924070d50).  
+ Crée une instance du composant <xref:System.IO.FileSystemWatcher> que vous pouvez utiliser pour surveiller les modifications apportées à tout répertoire ou fichier auquel vous avez accès. Pour plus d’informations, consultez [Comment : configurer des instances du composant FileSystemWatcher](http://msdn.microsoft.com/2e628234-4951-4135-8a86-28b924070d50).  
   
  **HelpProvider**  
  Crée une instance du composant `System.Windows.Forms.HelpProvider` qui fournit une aide contextuelle ou en ligne pour les contrôles.  

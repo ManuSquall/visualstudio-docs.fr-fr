@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Appliquer automatiquement les clés de produit lors du déploiement de Visual Studio 2015 | Microsoft Docs'
+title: 'Comment : appliquer automatiquement les clés de produit lors du déploiement de Visual Studio 2015 | Microsoft Docs'
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -11,13 +11,13 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: bbbc5cf6a6a65f7dbb38de60a5a99ec89fc70687
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54834846"
 ---
-# <a name="how-to-automatically-apply-product-keys-when-deploying-visual-studio"></a>Procédure : Appliquer automatiquement des clés de produit lors du déploiement de Visual Studio
+# <a name="how-to-automatically-apply-product-keys-when-deploying-visual-studio"></a>Comment : appliquer automatiquement les clés de produit lors du déploiement de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pour la documentation la plus récente pour Visual Studio 2017, consultez [appliquer automatiquement les clés de produit lors du déploiement de Visual Studio](/visualstudio/install/automatically-apply-product-keys-when-deploying-visual-studio).
@@ -54,7 +54,7 @@ Vous pouvez appliquer votre clé de produit par programmation dans le cadre du s
 |Visual Studio Professional 2013|06177|
 |Visual Studio Test Professional 2013|06194|
 
- Pour plus d’informations sur l’obtention d’une clé de produit, consultez [Comment : Recherchez la clé de produit Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md).
+ Pour plus d’informations sur l’obtention d’une clé de produit, consultez [How to: Locate the Visual Studio Product Key](../install/how-to-locate-the-visual-studio-product-key.md).
 
  Si la clé de produit est correctement appliquée, StorePID.exe retourne 0. Si elle rencontre des erreurs, elle renvoie un nombre compris entre 1 et 6.
 

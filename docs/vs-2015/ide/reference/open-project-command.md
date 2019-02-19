@@ -16,10 +16,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 916ea8435571efc01f38e408d4fc2d4563c16f1c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54753483"
 ---
 # <a name="open-project-command"></a>Ouvrir un projet, commande
@@ -40,7 +40,7 @@ File.OpenProject filename
   
  La syntaxe de l’argument `filename` nécessite que les chemins contenant des espaces utilisent des guillemets.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  La saisie semi-automatique tente de deviner le chemin et le nom de fichier à mesure que vous tapez.  
   
  Cette commande n’est pas disponible lors du débogage.  

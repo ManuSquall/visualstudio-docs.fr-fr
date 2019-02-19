@@ -25,10 +25,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f66dae4d9e69ce1fc5d4351d72606e1fdad10725
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54755311"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Navigateur web, Environnement, boîte de dialogue Options | Microsoft Docs
@@ -54,7 +54,7 @@ Définit les options à la fois pour le navigateur web interne et pour Internet 
   
 - **Éditeur de code source** Sélectionnez cette option pour consulter le code source lors de l’[écriture de code](../../ide/writing-code-in-the-code-and-text-editor.md).  
   
-- **Éditeur HTML** Sélectionnez cette option pour consulter le code source dans le [Concepteur HTML](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477). Utilisez cette sélection pour modifier la page web dans l’une des deux vues : en mode Création ou dans la vue Source standard basée sur du texte.  
+- **Éditeur HTML** Sélectionnez cette option pour consulter le code source dans le [Concepteur HTML](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477). Utilisez cette sélection pour modifier la page web dans l’un des deux modes suivants : le mode Design ou le mode Code source basé sur du texte standard.  
   
 - **Éditeur externe** Sélectionnez cette option pour afficher le code source dans un autre éditeur. Spécifiez le chemin de l’éditeur de votre choix, par exemple Notepad.exe.  
   

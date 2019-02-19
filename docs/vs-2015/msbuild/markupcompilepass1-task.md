@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bf6f6b9dbd227dbdf28781fc9ac206ca1d8a91b8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54790482"
 ---
 # <a name="markupcompilepass1-task"></a>MarkupCompilePass1, tâche
@@ -39,7 +39,7 @@ La tâche <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> convertit des 
 |`AllGeneratedFiles`|Paramètre de sortie **ITaskItem[]** facultatif.<br /><br /> Contient une liste complète des fichiers qui sont générés par la tâche <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>.|  
 |`AlwaysCompileMarkupFilesInSeparateDomain`|Paramètre **Boolean** facultatif.<br /><br /> Indique si la tâche doit être exécutée dans un <xref:System.AppDomain> séparé. Si ce paramètre retourne **false**, la tâche s’exécute dans le même <xref:System.AppDomain> que [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)], et plus rapidement. Si le paramètre retourne **true**, la tâche s’exécute dans un deuxième <xref:System.AppDomain> isolé de [!INCLUDE[TLA2#tla_msbuild](../includes/tla2sharptla-msbuild-md.md)], et plus lentement.|  
 |`ApplicationMarkup`|Paramètre **ITaskItem[]** facultatif.<br /><br /> Spécifie le nom du fichier [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] de définition d’application.|  
-|`AssembliesGeneratedDuringBuild`|Paramètre **String[]** facultatif.<br /><br /> Spécifie des références à des assemblys qui changent pendant le processus de génération. Par exemple, une solution [!INCLUDE[TLA#tla_visualstu2005](../includes/tlasharptla-visualstu2005-md.md)] peut contenir un projet qui référence la sortie compilée d’un autre projet. Dans ce cas, la sortie compilée du deuxième projet peut être ajoutée au paramètre **AssembliesGeneratedDuringBuild**.<br /><br /> Remarque : Le paramètre **AssembliesGeneratedDuringBuild** doit contenir des références au jeu complet des assemblys générés par une solution de build.|  
+|`AssembliesGeneratedDuringBuild`|Paramètre **String[]** facultatif.<br /><br /> Spécifie des références à des assemblys qui changent pendant le processus de génération. Par exemple, une solution [!INCLUDE[TLA#tla_visualstu2005](../includes/tlasharptla-visualstu2005-md.md)] peut contenir un projet qui référence la sortie compilée d’un autre projet. Dans ce cas, la sortie compilée du deuxième projet peut être ajoutée au paramètre **AssembliesGeneratedDuringBuild**.<br /><br /> Remarque : Le paramètre **AssembliesGeneratedDuringBuild** doit contenir des références au jeu complet des assemblys générés par une solution de génération.|  
 |`AssemblyName`|Paramètre **String** obligatoire.<br /><br /> Spécifie le nom court de l’assembly généré pour un projet. Par exemple, si un projet génère un exécutable [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] dont le nom est **WinExeAssembly.exe**, le paramètre **AssemblyName** a la valeur **WinExeAssembly**.|  
 |`AssemblyPublicKeyToken`|Paramètre **String** facultatif.<br /><br /> Spécifie le jeton de clé publique de l’assembly.|  
 |`AssemblyVersion`|Paramètre **String** facultatif.<br /><br /> Spécifie le numéro de version de l’assembly.|  
@@ -65,7 +65,7 @@ La tâche <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> convertit des 
 |`UICulture`|Paramètre **String** facultatif.<br /><br /> Spécifie l’assembly satellite pour la culture d’interface utilisateur dans lequel les fichiers au format binaire [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] sont incorporés. Si **UICulture** n’est pas défini, les fichiers au format binaire [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] sont incorporés dans l’assembly principal.|  
 |`XAMLDebuggingInformation`|Paramètre **Boolean** facultatif.<br /><br /> Quand la valeur est **true**, des informations de diagnostic sont générées et incluses dans le [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] compilé pour faciliter le débogage.|  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  La tâche <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> compile généralement [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] au format binaire et génère des fichiers de code. Si un fichier [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] contient des références à des types définis dans le même projet, sa compilation au format binaire est différée par **MarkupCompilePass1** à une deuxième passe de compilation du balisage (**MarkupCompilePass2**). La compilation de ces fichiers doit être différée car ils doivent attendre que les types référencés définis localement soient compilés. Toutefois, si un fichier [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] a un attribut `x:Class`, <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> génère le fichier de code spécifique au langage de celui-ci.  
   
  Un fichier [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] est localisable s’il contient des éléments qui utilisent l’attribut `x:Uid` :  

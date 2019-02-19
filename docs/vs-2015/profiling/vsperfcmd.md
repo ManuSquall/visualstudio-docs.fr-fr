@@ -16,10 +16,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: da82cbd8426b1a9af08e27577cdb76ca4a64d2e2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54776096"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
@@ -86,8 +86,8 @@ VSPerfCmd [/U] [/options]
 |------------|-----------------|  
 |**Admin:Security** \<**ALLOW&#124;DENY**> *Right*[ *Right*] \<*Utilisateur*&#124;*Groupe*>|Autorise ou refuse à l’utilisateur ou au groupe spécifié l’accès aux services de profilage.<br /><br /> `Right` peut être :<br /><br /> CrossSession : donne à l’utilisateur l’accès au service pour faire du profilage intersession.<br /><br /> SampleProfiling : donne à l’utilisateur l’accès au pilote pour activer le profilage par échantillonnage. Également utilisé pour accéder aux informations de transition du noyau lors du profilage de trace.<br /><br /> FullAccess : donne à l’utilisateur l’accès CrossSession et SampleProfiling.|  
 |**Admin:Security, List**|Répertorie les états des services de profilage et les autorisations des utilisateurs.|  
-|**Admin:** \<*Service*&#124;*Pilote*>\<**START**&#124;**STOP**&#124;**INSTALL**&#124;**UNINSTALL**>|Démarre, arrête, installe ou désinstalle le composant du service de profilage (service) ou le pilote de périphérique en mode noyau (driver).|  
-|**Admin:** \<*Service*&#124;*Pilote*>**AutoStart**\<**ON**&#124;**OFF**>|Active ou désactive automatiquement le démarrage du service de profilage (service) ou du pilote de périphérique en mode noyau (driver) après un redémarrage.|  
+|**Admin:** \<*Service*&#124;*Driver*>\<**START**&#124;**STOP**&#124;**INSTALL**&#124;**UNINSTALL**>|Démarre, arrête, installe ou désinstalle le composant du service de profilage (service) ou le pilote de périphérique en mode noyau (driver).|  
+|**Admin:** \<*Service*&#124;*Driver*>**AutoStart**\<**ON**&#124;**OFF**>|Active ou désactive automatiquement le démarrage du service de profilage (service) ou du pilote de périphérique en mode noyau (driver) après un redémarrage.|  
   
 ## <a name="vsperfcmd-driver"></a>VSPerfCmd /Driver  
  L’option **VSPerfCmd /Driver** est désormais obsolète. Utilisez les options de **VsPerfCmdAdmin** pour cette fonctionnalité.  

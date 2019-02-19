@@ -14,10 +14,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1400e61487a7ad052d5a516019e76149e8e3d31e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54755052"
 ---
 # <a name="resetaddin-devenvexe"></a>/ResetAddin (devenv.exe)
@@ -36,7 +36,7 @@ Devenv /ResetAddin AddIn
  `AddIn`  
  Optionnel. Nom de commande du complément.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Par défaut, le nom de commande du complément est égal à *\<nom_solution_complément>*.Connect<em>.\<nom_solution_complément></em> et s’affiche dans Connect.cs en tant que paramètre `commandName` de la méthode `Exec`. Vous pouvez également vérifier le nom de la commande en tapant les premières lettres du nom du complément dans la fenêtre Commandes de Visual Studio, puis en utilisant Intellisense pour compléter la saisie.  
   
 ## <a name="example"></a>Exemple  

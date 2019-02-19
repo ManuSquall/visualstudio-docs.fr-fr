@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 76e1d9c4a7cbfdfc2a7011668eb58a5ea9741d3d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54780677"
 ---
 # <a name="visual-studio-ide"></a>Environnement IDE de Visual Studio
@@ -111,7 +111,7 @@ Si vous souhaitez savoir sur les nouvelles fonctionnalités dans Visual Studio 2
 
  ![GreetingsConsoleApp.cpp dans l’éditeur de code](../ide/media/c-ide-editorlinenumberswordwrapon.png "IDE_EditorLineNumbersWordWrapOn C ++")
 
- L'éditeur de texte est très interactif (si vous voulez qu'il le soit) et offre de nombreuses fonctionnalités de productivité qui vous aident à écrire du code plus vite et mieux. Les fonctionnalités varient selon le langage, et vous n’êtes pas obligé d’utiliser une d'entre elles (Type « Éditeur » dans Lancement rapide) pour activer ou désactiver les fonctionnalités : Certaines des fonctionnalités de productivité courantes sont :
+ L'éditeur de texte est très interactif (si vous voulez qu'il le soit) et offre de nombreuses fonctionnalités de productivité qui vous aident à écrire du code plus vite et mieux. Les fonctionnalités varient selon le langage, et leur utilisation n'est pas obligatoire (tapez « Éditeur » dans la zone Lancement rapide) pour activer ou désactiver les fonctionnalités. Voici quelques-unes des fonctionnalités de productivité courantes :
 
 1. La[Refactoring](../ide/refactoring-in-visual-studio.md) inclut des opérations comme le renommage intelligent des variables, le déplacement de lignes de code sélectionnées dans une fonction distincte, le déplacement de code à d’autres endroits, la réorganisation des paramètres des fonctions, etc.
 

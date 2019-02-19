@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b8d70651d319f174f2ed7c1ee81021d89201bbcf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758646"
 ---
 # <a name="al-assembly-linker-task"></a>AL (Assembly Linker), tâche
@@ -72,7 +72,7 @@ La tâche AL encapsule AL.exe, un outil distribué avec le [!INCLUDE[winsdklong]
 |`Win32Icon`|Paramètre `String` facultatif.<br /><br /> Insère un fichier .ico dans l'assembly. Le fichier .ico donne au fichier de sortie l'aspect souhaité dans l'Explorateur de fichiers. Ce paramètre correspond à l’option `/win32icon` dans [Al.exe (Assembly Linker)](http://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).|  
 |`Win32Resource`|Paramètre `String` facultatif.<br /><br /> Insère une ressource Win32 (fichier .res) dans le fichier de sortie. Pour plus d’informations, consultez la documentation relative à l’option `/win32res` dans [Al.exe (Assembly Linker)](http://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).|  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.ToolTask>. Pour obtenir la liste de ces paramètres supplémentaires et de leurs descriptions, consultez l’article [ToolTaskExtension Base Class (Classe de base ToolTaskExtension)](../msbuild/tooltaskextension-base-class.md).  
   
 ## <a name="example"></a>Exemple  

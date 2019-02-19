@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e43541ddb75b067faa23437d315ce5f239256b1a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54796776"
 ---
 # <a name="process-view---contention-data"></a>Processus, vue - Données de conflit
@@ -42,5 +42,5 @@ La vue Processus affiche les données de conflit pour les processus et les threa
 |**ID unique**|Identificateur généré par le profileur unique pour le processus ou le thread.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour personnaliser les colonnes de vue des rapports](../profiling/how-to-customize-report-view-columns.md)   
+ [Guide pratique pour personnaliser les colonnes de la vue Rapport](../profiling/how-to-customize-report-view-columns.md)   
  [Processus, vue](../profiling/process-view.md)

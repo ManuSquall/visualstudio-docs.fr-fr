@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 15dcdbec1407dc646e26f7419e2dd80cec869725
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54752260"
 ---
 # <a name="nameprofile"></a>NameProfile
@@ -76,7 +76,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 |NAME_ERROR_TEXTTRUNCATED|Le texte du nom dépassait 32 caractères, y compris le caractère null, et a donc été tronqué.|  
 |NAME_OK|Le nom a été inscrit.|  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Vous ne pouvez affecter qu’un seul nom à chaque processus ou thread. Une fois qu’un élément de profilage est nommé, les appels suivants à NameProfile pour cet élément sont ignorés.  
   
  Si un même nom est affecté à différents threads ou processus, le rapport comprend les données provenant de tous les éléments de ce niveau portant ce nom.  

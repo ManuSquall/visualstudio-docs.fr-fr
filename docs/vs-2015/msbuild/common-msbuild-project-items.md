@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dfc0c8eca387c2405881334670a51ee5d08685e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54796875"
 ---
 # <a name="common-msbuild-project-items"></a>Éléments communs des projets MSBuild
@@ -90,7 +90,7 @@ Dans [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un élément est 
 |AutoGen|Valeur booléenne facultative. Indique si le fichier a été généré pour le projet par l’environnement de développement intégré (IDE) [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |Lien|Chaîne facultative. Chemin d'accès codifiable à afficher quand le fichier se trouve physiquement en dehors de l'influence du fichier projet.|  
 |Visible|Valeur booléenne facultative. Indique si le fichier doit être affiché dans **l’Explorateur de solutions** de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|CopyToOutputDirectory|Chaîne facultative. Détermine si le fichier doit être copié dans le répertoire de sortie. Les valeurs possibles sont :<br /><br /> 1.  Never<br />2.  Toujours<br />3.  PreserveNewest|  
+|CopyToOutputDirectory|Chaîne facultative. Détermine si le fichier doit être copié dans le répertoire de sortie. Les valeurs possibles sont :<br /><br /> 1.  Never<br />2.  Always<br />3.  PreserveNewest|  
   
 ### <a name="embeddedresource"></a>EmbeddedResource  
  Représente les ressources à incorporer dans l'assembly généré.  
@@ -103,7 +103,7 @@ Dans [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un élément est 
 |CustomToolNamespace|Chaîne requise. Espace de noms dans lequel le générateur de fichier s'exécutant sur cet élément doit créer du code.|  
 |Lien|Chaîne facultative. Le chemin d'accès codifiable s'affiche si le fichier se trouve physiquement en dehors de l'influence du projet.|  
 |Visible|Valeur booléenne facultative. Indique si le fichier doit être affiché dans **l’Explorateur de solutions** de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|CopyToOutputDirectory|Chaîne facultative. Détermine si le fichier doit être copié dans le répertoire de sortie. Les valeurs possibles sont :<br /><br /> 1.  Never<br />2.  Toujours<br />3.  PreserveNewest|  
+|CopyToOutputDirectory|Chaîne facultative. Détermine si le fichier doit être copié dans le répertoire de sortie. Les valeurs possibles sont :<br /><br /> 1.  Never<br />2.  Always<br />3.  PreserveNewest|  
 |LogicalName|Chaîne requise. Nom logique de la ressource incorporée.|  
   
 ### <a name="content"></a>Contenu  
@@ -119,7 +119,7 @@ Dans [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un élément est 
 |PublishState|Chaîne requise. État de publication du contenu, à savoir :<br /><br /> -   Default<br />-   Included<br />-   Excluded<br />-   DataFile<br />-   Prerequisite|  
 |IsAssembly|Valeur booléenne facultative. Indique si le fichier est un assembly.|  
 |Visible|Valeur booléenne facultative. Indique si le fichier doit être affiché dans **l’Explorateur de solutions** de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|CopyToOutputDirectory|Chaîne facultative. Détermine si le fichier doit être copié dans le répertoire de sortie. Les valeurs possibles sont :<br /><br /> 1.  Never<br />2.  Toujours<br />3.  PreserveNewest|  
+|CopyToOutputDirectory|Chaîne facultative. Détermine si le fichier doit être copié dans le répertoire de sortie. Les valeurs possibles sont :<br /><br /> 1.  Never<br />2.  Always<br />3.  PreserveNewest|  
   
 ### <a name="none"></a>Aucun.  
  Représente les fichiers qui ne doivent avoir aucun rôle dans le processus de génération.  
@@ -132,7 +132,7 @@ Dans [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un élément est 
 |CustomToolNamespace|Chaîne requise. Espace de noms dans lequel le générateur de fichier s'exécutant sur cet élément doit créer du code.|  
 |Lien|Chaîne facultative. Chemin d’accès codifiable à afficher si le fichier se trouve physiquement en dehors de l’influence du projet.|  
 |Visible|Valeur booléenne facultative. Indique si le fichier doit être affiché dans **l’Explorateur de solutions** de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|CopyToOutputDirectory|Chaîne facultative. Détermine si le fichier doit être copié dans le répertoire de sortie. Les valeurs possibles sont :<br /><br /> 1.  Never<br />2.  Toujours<br />3.  PreserveNewest|  
+|CopyToOutputDirectory|Chaîne facultative. Détermine si le fichier doit être copié dans le répertoire de sortie. Les valeurs possibles sont :<br /><br /> 1.  Never<br />2.  Always<br />3.  PreserveNewest|  
   
 ### <a name="baseapplicationmanifest"></a>BaseApplicationManifest  
  Représente le manifeste d'application de base de la build et contient les informations de sécurité de déploiement de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  

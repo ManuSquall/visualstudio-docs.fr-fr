@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 254602005966a9d9f95ff6b76f8ad42360e4a57d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54770787"
 ---
 # <a name="message-task"></a>Message, tâche
@@ -40,7 +40,7 @@ Enregistre un message pendant une génération.
 |`Importance`|Paramètre `String` facultatif.<br /><br /> Spécifie l’importance du message. Ce paramètre peut avoir la valeur `high`, `normal` ou `low`. La valeur par défaut est `normal`.|  
 |`Text`|Paramètre `String` facultatif.<br /><br /> Texte d’erreur à consigner.|  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  La tâche `Message` permet aux projets [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] d’envoyer des messages à des enregistreurs d’événements à différentes étapes du processus de génération.  
   
  Si le paramètre `Condition` a la valeur `true`, la valeur du paramètre `Text` est consignée dans le journal et la génération se poursuit. Si un paramètre `Condition` n’existe pas, le texte du message est consigné dans le journal. Pour plus d’informations sur la journalisation, consultez l’article [Obtention de journaux de génération avec MSBuild](../msbuild/obtaining-build-logs-with-msbuild.md).  

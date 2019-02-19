@@ -20,10 +20,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 90f0c73abb33a2da9c2735bcbc16b5559437bc65
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54765010"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Utilisation du code Visual C++ (Concepteur de classes)
@@ -48,7 +48,7 @@ Le Concepteur de classes affiche une aire de conception visuelle appelée *diagr
 -   TypeDef  
   
 > [!NOTE]
->  Cela est différent du diagramme de classes UML, que vous pouvez créer dans un projet de modélisation. Pour plus d'informations, consultez [Diagrammes de classes UML : Référence](../modeling/uml-class-diagrams-reference.md).  
+>  Cela est différent du diagramme de classes UML, que vous pouvez créer dans un projet de modélisation. Pour plus d’informations, consultez [Diagrammes de classes UML : indications](../modeling/uml-class-diagrams-reference.md).  
   
 ## <a name="troubleshooting-type-resolution-and-display-issues"></a>Résolution des problèmes de résolution de type et d’affichage  
   
@@ -63,7 +63,7 @@ Le Concepteur de classes affiche une aire de conception visuelle appelée *diagr
 ### <a name="type-resolution-issues"></a>Problèmes de résolution de type  
  Le Concepteur de classes peut ne pas être en mesure de résoudre des types pour les raisons suivantes :  
   
-- Le type se trouve dans un projet ou un assembly non référencé à partir du projet qui contient le diagramme de classes. Pour corriger cette erreur, ajoutez une référence au projet ou à l'assembly qui contient le type. Pour plus d’informations, consultez [NIB Comment : Ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter référence](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- Le type se trouve dans un projet ou un assembly non référencé à partir du projet qui contient le diagramme de classes. Pour corriger cette erreur, ajoutez une référence au projet ou à l'assembly qui contient le type. Pour plus d’informations, consultez [Comment : ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter une référence](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 - Le type ne se trouve pas dans la portée correcte ; le Concepteur de classes ne peut donc pas le localiser. Vérifiez qu'il ne manque pas une instruction `using`, `imports` ou `#include` au code. Assurez-vous également que vous n'avez pas déplacé le type (ou un type connexe) hors de l'espace de noms dans lequel il a été initialement localisé.  
   
@@ -77,7 +77,7 @@ Le Concepteur de classes affiche une aire de conception visuelle appelée *diagr
   
 - Assurez-vous que le Concepteur de classes prend en charge le type que vous avez entré. Consultez [Limitations pour les éléments de code C++](#limitations).  
   
-- Essayez de résoudre le type. Le type se trouve peut-être dans un projet ou un assembly non référencé à partir du projet qui contient le diagramme de classes. Pour corriger cette erreur, ajoutez une référence au projet ou à l'assembly qui contient le type. Pour plus d’informations, consultez [NIB Comment : Ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter référence](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- Essayez de résoudre le type. Le type se trouve peut-être dans un projet ou un assembly non référencé à partir du projet qui contient le diagramme de classes. Pour corriger cette erreur, ajoutez une référence au projet ou à l'assembly qui contient le type. Pour plus d’informations, consultez [NIB Comment : ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter une référence](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 - Assurez-vous que le type se trouve dans la portée correcte afin que le Concepteur de classes puisse le localiser. Vérifiez qu'il ne manque pas une instruction `using`, `imports` ou `#include` au code. Assurez-vous également que vous n'avez pas déplacé le type (ou un type connexe) hors de l'espace de noms dans lequel il a été initialement localisé.  
   

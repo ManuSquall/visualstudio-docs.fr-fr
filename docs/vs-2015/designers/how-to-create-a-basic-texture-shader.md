@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Créer un nuanceur de Texture de base | Microsoft Docs'
+title: 'Comment : créer un nuanceur de texture de base | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 66a25c56e50db0caecf4aa7a314be529e2caba12
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54793432"
 ---
-# <a name="how-to-create-a-basic-texture-shader"></a>Procédure : Créer un nuanceur de texture de base
+# <a name="how-to-create-a-basic-texture-shader"></a>Procédure : créer un nuanceur de texture de base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ce document indique comment utiliser le concepteur de nuanceur et DGSL (Directed Graph Shader Language) pour créer un nuanceur de texture unique. Ce nuanceur définit la couleur finale directement sur les valeurs RVB et alpha échantillonnées à partir de la texture.  
@@ -66,7 +66,7 @@ Ce document indique comment utiliser le concepteur de nuanceur et DGSL (Directed
  Certaines formes peuvent fournir de meilleurs aperçus pour certains nuanceurs. Pour plus d’informations sur l’aperçu des nuanceurs dans le concepteur de nuanceur, consultez l’article [Concepteur de nuanceur](../designers/shader-designer.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour Appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
+ [Comment : appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [Éditeur d’images](../designers/image-editor.md)   
  [Concepteur de nuanceur](../designers/shader-designer.md)   
  [Nœuds du concepteur Shader](../designers/shader-designer-nodes.md)

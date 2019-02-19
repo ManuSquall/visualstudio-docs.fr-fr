@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 066535309c7001c3f7a951f68321f7530a06ed05
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54805319"
 ---
 # <a name="build-page-project-designer-c"></a>Générer, page du Concepteur de projets (C#)
@@ -41,7 +41,7 @@ Utilisez la page **Générer** du **Concepteur de projet** pour spécifier les p
  Spécifie les paramètres de configuration à afficher ou à modifier. Les paramètres peuvent être **Active (Debug)** (valeur par défaut), **Debug**, **Release** ou **Toutes les configurations**.  
   
  **Plateforme**  
- Spécifie les paramètres de plateforme à afficher ou à modifier. Le paramètre par défaut est **Active (Any CPU)**. Vous pouvez modifier la plateforme active à l’aide du **Gestionnaire de configurations**. Pour plus d'informations, voir [Procédure : Créer et modifier des configurations](../../ide/how-to-create-and-edit-configurations.md).  
+ Spécifie les paramètres de plateforme à afficher ou à modifier. Le paramètre par défaut est **Active (Any CPU)**. Vous pouvez modifier la plateforme active à l’aide du **Gestionnaire de configurations**. Pour plus d’informations, consultez [Guide pratique pour créer et modifier des configurations](../../ide/how-to-create-and-edit-configurations.md).  
   
 ## <a name="general"></a>Général  
  Les options suivantes vous permettent de configurer plusieurs paramètres du compilateur C#.  

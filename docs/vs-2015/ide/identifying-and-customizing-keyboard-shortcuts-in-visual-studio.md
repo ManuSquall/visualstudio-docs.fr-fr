@@ -20,10 +20,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 9a2d6420abc9b9d70ce23c1dc8dc1aab5941119f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54798985"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Identification et personnalisation des raccourcis clavier dans Visual Studio
@@ -91,7 +91,7 @@ Vous pouvez identifier les raccourcis clavier pour les commandes Visual Studio, 
      Par exemple, choisissez **Global** si vous voulez que le raccourci fonctionne dans tous les contextes. Vous pouvez utiliser n'importe quel raccourci qui n'est pas mappé (comme Global) dans un autre éditeur. Sinon, l'éditeur substitue le raccourci.
 
     > [!NOTE]
-    >  Vous ne pouvez pas affecter les touches suivantes dans le cadre d’un raccourci clavier dans **Global** : Impression écran/syst, arrêt défil, Pause/ATTN, onglet, VERR. MAJ, Insert, accueil, fin, Pg préc, Pg suiv, la touche du logo Windows, la clé d’Application, une des touches de direction, entrée ; Verr. NUM, supprimer ou effacer sur le pavé numérique ; ou Ctrl + Alt + Suppr.
+    >  Vous ne pouvez pas affecter les touches suivantes dans le cadre d’un raccourci clavier dans **Global** : Impr. écran/SYSTÈME, Arrêt défil., Pause/Attn, Tab, Verr. maj, Inser, Début, Fin, Pge préc., Pge suiv., touche du logo Windows, la touche Application, touches de direction ou touche Entrée ; Verr. num., Suppr ou Effacer sur le pavé numérique ; la combinaison Ctrl+Alt+Suppr.
 
 6.  Dans la zone **Appuyer sur les touches de raccourci**, entrez le raccourci à utiliser.
 

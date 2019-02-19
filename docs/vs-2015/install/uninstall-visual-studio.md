@@ -16,10 +16,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b84cff997e24882903abae048dbdd5c3c16f7e17
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54834827"
 ---
 # <a name="uninstall-visual-studio"></a>Désinstaller Visual Studio
@@ -43,7 +43,7 @@ Cette page vous guide tout au long de la désinstallation de Visual Studio 2015,
 1.  Recherchez le fichier .exe de Visual Studio (par exemple, recherchez « vs_enterprise.exe »).
 
     > [!NOTE]
-    >  Le fichier doit être dans un sous-dossier de « %ProgramData%\Package Cache », par exemple : C:\ProgramData\Package Cache\\{37e19555-e88d-4aed-9d42-82d0784d2b79}\vs_enterprise.exe
+    >  Le fichier doit être dans un sous-dossier de « %ProgramData%\Package Cache », par exemple : C:\ProgramData\Package Cache\\{37e19555-e88d-4aed-9d42-82d0784d2b79} \vs_enterprise.exe
 
 2.  Exécutez le fichier .exe à l’aide de la désinstaller /force des paramètres de ligne de commande.
 
@@ -73,7 +73,7 @@ Cette page vous guide tout au long de la désinstallation de Visual Studio 2015,
 
 2. Installez ou réinstallez la version antérieure de Visual Studio que vous souhaitez utiliser.
 
-   Même si vous installez une version antérieure de Visual Studio, le programme d’installation peut toujours essayer à utiliser une version plus récente ou release si celle-ci est disponible. Pour plus d’informations, consultez le [Comment : Installer une version spécifique de Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md) rubrique.
+   Même si vous installez une version antérieure de Visual Studio, le programme d’installation peut toujours essayer à utiliser une version plus récente ou release si celle-ci est disponible. Pour plus d’informations, consultez le [Comment : installer une version spécifique de Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md) rubrique.
 
 ## <a name="see-also"></a>Voir aussi
  [Installer Visual Studio](https://msdn.microsoft.com/library/e2h7fzkw.aspx)

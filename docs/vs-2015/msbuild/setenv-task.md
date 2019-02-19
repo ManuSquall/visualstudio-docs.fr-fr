@@ -21,10 +21,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4c5066709002c815e2cdad549d424af549eb0bca
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54784420"
 ---
 # <a name="setenv-task"></a>SetEnv, tâche
@@ -44,7 +44,7 @@ Définit ou supprime la valeur d’une variable d’environnement spécifiée.
 |**Target**|Paramètre **String** facultatif.<br /><br /> Spécifie l’emplacement de stockage d’une variable d’environnement. Spécifiez « `User` » ou « `Machine` ».<br /><br /> Pour plus d’informations, consultez « Énumération EnvironmentVariableTarget » sur le site web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
 |**Valeur**|Paramètre **String** facultatif.<br /><br /> Valeur affectée à la variable d’environnement spécifiée par le paramètre **Name**. Si le paramètre **Value** est vide alors que la variable existe, celle-ci est supprimée. Si la variable n’existe pas, aucune erreur ne se produit, même si l’opération ne peut pas être exécutée.<br /><br /> Pour plus d’informations, consultez « Méthode Environment::SetEnvironmentVariable » sur le site web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
   
 ## <a name="see-also"></a>Voir aussi  
  [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)

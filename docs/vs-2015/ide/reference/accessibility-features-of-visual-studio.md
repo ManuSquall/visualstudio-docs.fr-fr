@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 519eefc9260816fcbbbbd3dd8672bbaeebb3429f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54778511"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Fonctionnalités d’accessibilité de Visual Studio
@@ -40,7 +40,7 @@ En plus des fonctionnalités et utilitaires d’accessibilité Windows, les fonc
 
  Pour plus d’informations, consultez les rubriques suivantes :
 
--   [Guide pratique pour définir les options d’accessibilité de l’IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
+-   [Guide pratique pour définir les options d’accessibilité IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
 -   [Guide pratique pour utiliser uniquement le clavier](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
@@ -48,7 +48,7 @@ En plus des fonctionnalités et utilitaires d’accessibilité Windows, les fonc
 
 -   [Conseils et astuces d’accessibilité](../../ide/reference/accessibility-tips-and-tricks.md)
 
--   [Guide pratique pour changer les polices et les couleurs](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+-   [Guide pratique pour modifier les polices et les couleurs dans Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 ## <a name="see-also"></a>Voir aussi
  [Services et produits d’accessibilité de Microsoft](../../ide/reference/accessibility-products-and-services-from-microsoft.md)

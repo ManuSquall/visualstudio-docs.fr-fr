@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bee3e781e9cb504148ae46f6a9e0b37b6ae778fb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bce39d8ae736d9f7dcda8b18198053f90933b811
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979645"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335495"
 ---
 # <a name="access-the-text-view-by-using-the-legacy-api"></a>Accéder à l’affichage de texte à l’aide de l’API héritée
 Une vue de texte est une présentation du texte qui est stocké dans une mémoire tampon de texte. Vous pouvez accéder à l’affichage de texte à l’aide de l’API héritée comme indiqué dans la section suivante.
@@ -23,7 +23,7 @@ Une vue de texte est une présentation du texte qui est stocké dans une mémoir
 ## <a name="text-view-object"></a>Objet de vue de texte
  Chaque vue est associé à sa propre mémoire tampon de texte, et la vue est une fenêtre sur les données dans la mémoire tampon. Le diagramme suivant illustre les interfaces de clé de l’objet de vue de texte, qui est représentée par <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>.
 
- ![Objet vue de texte Visual Studio](../extensibility/media/vstextview.gif "vstextview") objet de vue de texte
+ ![Objet de vue de texte Visual Studio](../extensibility/media/vstextview.gif)
 
  La vue est une façon de présenter le texte dans la mémoire tampon. Il inclut des fonctionnalités telles que le retour automatique à et le mode plan, afin que ce que vous voyez dans la vue n’est pas une représentation exacte du texte dans la mémoire tampon.
 

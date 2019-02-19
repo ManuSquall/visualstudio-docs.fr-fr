@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 93fd259e00d7a8f849b97cb97c3f950cd95f57ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54761540"
 ---
 # <a name="when-element-msbuild"></a>When, élément (MSBuild)
@@ -74,7 +74,7 @@ Spécifie un bloc de code que l’élément `Choose` peut sélectionner.
 |-------------|-----------------|  
 |[Choose, élément (MSBuild)](../msbuild/choose-element-msbuild.md)|Évalue les éléments enfants pour sélectionner une section de code à exécuter.|  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Si l’attribut `Condition` s’évalue à true, les éléments `ItemGroup` et `PropertyGroup` enfants de l’élément `When` sont exécutés et tous les éléments `When` suivants sont ignorés.  
   
  Les éléments `Choose`, `When` et `Otherwise` sont utilisés ensemble pour permettre la sélection d’une section de code spécifique à exécuter parmi plusieurs options possibles. Pour plus d’informations, consultez [Constructions conditionnelles](../msbuild/msbuild-conditional-constructs.md).  

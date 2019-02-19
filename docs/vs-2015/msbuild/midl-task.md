@@ -28,10 +28,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9d0398217bb48786067f8392c5e372b0888d060f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54782473"
 ---
 # <a name="midl-task"></a>Tâche MIDL
@@ -419,7 +419,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
      Pour plus d’informations, consultez l’option **/W** dans la page « MIDL Command-Line Reference (Informations de référence sur les lignes de commande MIDL) » sur le site web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). Reportez-vous également au paramètre **WarnAsError** de ce tableau.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
   
 ## <a name="see-also"></a>Voir aussi  
  [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)

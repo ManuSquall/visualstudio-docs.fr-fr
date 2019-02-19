@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 385d12550692f5f27521afe4dea12e5bdb0aa9d8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54782386"
 ---
 # <a name="call-tree-view---instrumentation-data"></a>Vue Arborescence des appels - Données d’instrumentation
@@ -86,7 +86,7 @@ Les valeurs d’une fonction dans l’arborescence des appels indiquent une dur�
 |**Temps exclusif d’application min.**|Temps exclusif d’application minimal d’un appel à cette fonction dans ce contexte.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour personnaliser les colonnes de vue des rapports](../profiling/how-to-customize-report-view-columns.md)   
- [Arborescence des appels, vue](../profiling/call-tree-view-sampling-data.md)   
+ [Guide pratique pour personnaliser les colonnes de la vue de rapport](../profiling/how-to-customize-report-view-columns.md)   
+ [Vue Arborescence des appels](../profiling/call-tree-view-sampling-data.md)   
  [Vue Arborescence des appels - Instrumentation](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [Vue Arborescence des appels - Échantillonnage](../profiling/call-tree-view-dotnet-memory-sampling-data.md)

@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 264fcea4b04b1777a455199789ed1bb9c3757f7c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758240"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Bien démarrer avec C++ dans Visual Studio
@@ -36,7 +36,7 @@ En suivant cette procédure pas à pas, vous allez vous familiariser avec la plu
 ##  <a name="BKMK_Configure"></a> Se connecter à Visual Studio
  Lorsque vous démarrez Visual Studio pour la première fois, vous avez la possibilité de vous connecter à l’aide d’un compte Microsoft tel que Live ou Outlook. La connexion permet que vos paramètres soient synchronisés sur tous vos appareils. Pour plus d’informations, consultez [Signing in to Visual Studio](../ide/signing-in-to-visual-studio.md)
 
- Figure 1 : Environnement IDE de Visual Studio
+ Figure 1 : IDE de Visual Studio
 
  ![IDE avec paramètres Visual C&#43;&#43; appliqués](../ide/media/c-ide-defaultenvironmentlayout.png "IDE_DefaultEnvironmentLayout C ++")
 
@@ -59,9 +59,9 @@ En suivant cette procédure pas à pas, vous allez vous familiariser avec la plu
 
     ![Assistant d’application console Win32](../ide/media/c-ide-win32consoleappwizard.png "C++IDE_Win32ConsoleAppWizard")
 
-   La solution et le projet GreetingsConsoleApp, avec les fichiers de base d’une application console Win32, sont créés et chargés automatiquement dans l’ **Explorateur de solutions**. Le fichier GreetingsConsoleApp.cpp s’ouvre dans l’éditeur de code. Les éléments suivants apparaissent dans l' **Explorateur de solutions**:
+   La solution et le projet GreetingsConsoleApp, avec les fichiers de base d’une application console Win32, sont créés et chargés automatiquement dans l’ **Explorateur de solutions**. Le fichier GreetingsConsoleApp.cpp s’ouvre dans l’éditeur de code. Les éléments suivants apparaissent dans l’ **Explorateur de solutions**:
 
-   Figure 4 : Éléments de projet
+   Figure 4 : Éléments du projet
 
    ![Fichiers pour la solution dans l’Explorateur de solutions](../ide/media/c-ide-solutioncontents.png "C++IDE_SolutionContents")
 

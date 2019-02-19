@@ -24,10 +24,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 3da4501d472949a89ad9120a07da99aaff3ebd1b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54763648"
 ---
 # <a name="managing-references-in-a-project"></a>Gestion des références dans un projet
@@ -35,7 +35,7 @@ ms.locfileid: "54763648"
 
 Avant d’écrire du code pour un composant externe ou un service connecté, vous devez d’abord inclure une référence à celui-ci dans votre projet. Une référence est essentiellement une entrée dans un fichier projet qui contient les informations dont Visual Studio a besoin pour localiser le composant ou le service.  
   
- Pour ajouter une référence, cliquez avec le bouton droit sur le nœud Références dans l’Explorateur de solutions et choisissez **Ajouter une référence**. Pour plus d'informations, voir [Procédure : Ajouter ou supprimer des références à l’aide du gestionnaire de références](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).  
+ Pour ajouter une référence, cliquez avec le bouton droit sur le nœud Références dans l’Explorateur de solutions et choisissez **Ajouter une référence**. Pour plus d’informations, consultez [Guide pratique pour ajouter ou supprimer des références à l’aide du gestionnaire de références](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).  
   
  ![Ajouter une référence dans Visual C&#43;&#43;](../ide/media/vs2015-cpp-add-reference.png "vs2015_cpp_add_reference")  
   
@@ -108,7 +108,7 @@ Avant d’écrire du code pour un composant externe ou un service connecté, vou
 ## <a name="project-to-project-references"></a>Références entre projets  
  Les références entre projets sont des références à des projets qui contiennent des assemblys. Vous les créez en utilisant l’onglet **Projet** . Visual Studio peut trouver un assembly si vous indiquez un chemin d’accès au projet.  
   
- Quand vous avez un projet qui produit un assembly, vous devez référencer le projet et non pas utiliser une référence de fichier (voir ci-dessous). Une référence entre projets présente l’avantage de créer une dépendance entre les projets dans le système de build. Le projet dépendant est généré s’il a été modifié depuis la dernière build du projet qui référence. Une référence de fichier ne crée pas de dépendance de build, il est donc possible de générer le projet de référence sans générer le projet dépendant, et la référence peut devenir obsolète. Autrement dit, le projet peut référencer une version précédemment générée du projet. Cela peut entraîner la présence de plusieurs versions d’une même DLL nécessaire dans le répertoire bin, ce qui n’est pas admis. Quand ce conflit intervient, vous obtenez un message de ce type : [Avertissement : impossible de copier la dépendance 'fichier' du projet 'projet' dans le répertoire d’exécution, car elle remplacerait la référence 'fichier'](/visualstudio/vs-2015/misc/warning-the-dependency-file-in-project-project-cannot-be-copied). Pour plus d’informations, consultez [dépannage de références rompues](../ide/troubleshooting-broken-references.md) et [Comment : créer et supprimer les dépendances d’un projet](../ide/how-to-create-and-remove-project-dependencies.md).  
+ Quand vous avez un projet qui produit un assembly, vous devez référencer le projet et non pas utiliser une référence de fichier (voir ci-dessous). Une référence entre projets présente l’avantage de créer une dépendance entre les projets dans le système de build. Le projet dépendant est généré s’il a été modifié depuis la dernière build du projet qui référence. Une référence de fichier ne crée pas de dépendance de build, il est donc possible de générer le projet de référence sans générer le projet dépendant, et la référence peut devenir obsolète. Autrement dit, le projet peut référencer une version précédemment générée du projet. Cela peut entraîner la présence de plusieurs versions d’une même DLL nécessaire dans le répertoire bin, ce qui n’est pas admis. Quand ce conflit intervient, vous obtenez un message de ce type : [Avertissement : impossible de copier la dépendance 'fichier' du projet 'projet' dans le répertoire d’exécution, car elle remplacerait la référence 'fichier'](/visualstudio/vs-2015/misc/warning-the-dependency-file-in-project-project-cannot-be-copied). Pour plus d’informations, consultez [Dépannage de références rompues](../ide/troubleshooting-broken-references.md) et [Guide pratique pour créer et supprimer les dépendances d’un projet](../ide/how-to-create-and-remove-project-dependencies.md).  
   
 > [!NOTE]
 >  Une référence de fichier est créée à la place d’une référence entre projets si la version cible du .NET Framework d’un projet est la version 4.5, et si la version cible du .NET Framework de l’autre projet est la version 2, 3, 3.5 ou 4.0.  
@@ -119,4 +119,4 @@ Avant d’écrire du code pour un composant externe ou un service connecté, vou
 ## <a name="see-also"></a>Voir aussi  
  [Troubleshooting Broken References](../ide/troubleshooting-broken-references.md)   
  [Programmation à l’aide d’assemblys](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)   
- [Guide pratique pour Ajouter ou supprimer des références à l’aide du gestionnaire de références](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
+ [How to: Add or Remove References By Using the Reference Manager](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

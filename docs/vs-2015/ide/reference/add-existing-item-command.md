@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 7686c4db4984188a4f8c4a52343f1386e9edd909
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54797835"
 ---
 # <a name="add-existing-item-command"></a>Ajouter un élément existant, commande
@@ -47,7 +47,7 @@ File.AddExistingItem filename [/e:editorname]
 /e:"Source Code (text) Editor"  
 ```  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  La fonctionnalité de saisie semi-automatique tente de trouver le chemin et le nom de fichier correspondant aux caractères que vous tapez.  
   
 ## <a name="example"></a>Exemple  

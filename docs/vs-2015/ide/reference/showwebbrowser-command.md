@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c1fca2c1c1dde167c8028d6ad4d543e108a488b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54798211"
 ---
 # <a name="showwebbrowser-command"></a>Afficher le navigateur Web, commande
@@ -44,7 +44,7 @@ View.ShowWebBrowser URL [/new][/ext]
  /ext  
  Optionnel. Spécifie que la page s’affiche dans le navigateur web par défaut en dehors de l’IDE.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  L’alias de la commande **ShowWebBrowser** est **navigate** ou **nav**.  
   
 ## <a name="example"></a>Exemple  

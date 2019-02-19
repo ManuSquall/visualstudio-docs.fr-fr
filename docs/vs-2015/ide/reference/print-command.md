@@ -16,10 +16,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c72f6668e6babab6bd62cfb0e9a6ca8632df2a84
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54763568"
 ---
 # <a name="print-command"></a>Imprimer, commande
@@ -38,7 +38,7 @@ Debug.Print text
  `text`  
  Obligatoire. Expression à évaluer ou texte à afficher.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Vous pouvez utiliser le point d’interrogation (?) comme alias pour cette commande. Ainsi, la commande  
   
 ```  

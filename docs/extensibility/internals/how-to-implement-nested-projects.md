@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13993fca03afce3e14b5a016eba7924226c24b8d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: deb28fcce5f27b7a392b570c140bb959b30b596c
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037835"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335244"
 ---
 # <a name="how-to-implement-nested-projects"></a>Procédure : Implémenter des projets imbriqués
 
@@ -65,7 +65,7 @@ Lorsque vous créez un type de projet imbriqué, il existe plusieurs étapes sup
      Étant donné que les projets parents et enfants sont instanciés par programmation, vous pouvez définir des propriétés pour les projets imbriqués à ce stade.
 
     > [!NOTE]
-    > Non seulement vous recevez les informations de contexte à partir du projet imbriqué, mais vous pouvez également demander si le projet parent a n’importe quel contexte de cet élément en vérifiant <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. De cette façon, vous pouvez ajouter des attributs d’aide très dynamique et options de menu spécifiques à des projets imbriqués individuels.
+    > Non seulement vous recevez les informations de contexte à partir du projet imbriqué, mais vous pouvez également demander si le projet parent a n’importe quel contexte de cet élément en vérifiant [__VSHPROPID. VSHPROPID_UserContext](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_UserContext>). De cette façon, vous pouvez ajouter des attributs d’aide très dynamique et options de menu spécifiques à des projets imbriqués individuels.
 
 10. La hiérarchie est générée pour l’affichage dans **l’Explorateur de solutions** avec un appel à la <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> (méthode).
 

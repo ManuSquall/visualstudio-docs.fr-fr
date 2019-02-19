@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Collecter les données des compteurs Windows | Microsoft Docs'
+title: Guide pratique pour collecter les données des compteurs Windows | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2c3e4a9cffd81561af39cef5eb88f4a7745b2dad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54753414"
 ---
-# <a name="how-to-collect-windows-counter-data"></a>Procédure : Collecter les données des compteurs Windows
+# <a name="how-to-collect-windows-counter-data"></a>Guide pratique pour collecter les données des compteurs Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les compteurs Windows sont des compteurs de performances système dont les données peuvent être collectées à intervalles réguliers pendant le profilage. Dans la vue Marques du rapport Outils de profilage, une ligne est étiquetée **AutoMark** pour chaque intervalle de collecte. Cette ligne contient des colonnes qui décrivent les valeurs de compteur de performances avec cet intervalle. Pour limiter l’analyse à une période située entre deux marques, sélectionnez les marques, cliquez avec le bouton droit, puis sélectionnez **Filtrer par** ->  **Marques** dans le menu contextuel.  

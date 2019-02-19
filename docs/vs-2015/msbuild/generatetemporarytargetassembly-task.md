@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f3f537e6f9f1712e3d103a0d425265153bf2152e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54774681"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>GenerateTemporaryTargetAssembly, tâche
@@ -46,7 +46,7 @@ La tâche <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> g
 |`ReferencePath`|Paramètre **ITaskItem[]** facultatif.<br /><br /> Spécifie une liste d’assemblys, par chemin et nom de fichier, qui sont référencés par les types qui sont compilés dans l’assembly cible temporaire.|  
 |`ReferencePathTypeName`|Paramètre **String** obligatoire.<br /><br /> Spécifie le paramètre utilisé par le paramètre de cible de compilation (**CompileTargetName**) qui spécifie la liste des références d’assembly (**ReferencePath**). La valeur appropriée est **ReferencePath**.|  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  La première passe de compilation du balisage, exécutée par [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md), compile les fichiers [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] au format binaire. Ainsi, le compilateur a besoin d’une liste des assemblys référencés qui contiennent les types utilisés par les fichiers [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)]. Toutefois, si un fichier [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] utilise un type qui est défini dans le même projet, un assembly correspondant à ce projet est créé uniquement quand le projet est généré. Ainsi, une référence d’assembly ne peut pas être fournie pendant la première passe de compilation du balisage.  
   
  Au lieu de cela, **MarkupCompilePass1** diffère la conversion des fichiers [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] qui contiennent des références à des types dans le même projet à une deuxième passe de compilation du balisage, qui est exécutée par [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md). Avant l’exécution de **MarkupCompilePass2**, un assembly temporaire est généré. Cet assembly contient les types qui sont utilisés par les fichiers [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] dont la passe de compilation du balisage a été différée. Une référence à l’assembly généré est fournie à **MarkupCompilePass2** quand elle s’exécute, pour permettre la conversion au format binaire des fichiers [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] dont la compilation a été différée.  

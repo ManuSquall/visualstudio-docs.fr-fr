@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 26c956255aba9a4ca67249a6e540a7899e0da28a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54794184"
 ---
 # <a name="attach"></a>Attach
@@ -51,7 +51,7 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
  **GlobalOn GlobalOff**  
  Reprend (**GlobalOn**) ou interrompt (**GlobalOff**) le profilage, mais ne met pas fin à la session de profilage.  
   
- **ProcessOn :** `PID` **ProcessOff :** `PID`  
+ **ProcessOn:** `PID` **ProcessOff:** `PID`  
  Reprend (**ProcessOn**) ou interrompt (**ProcessOff**) le profilage pour le processus spécifié.  
   
 ## <a name="interval-options"></a>Options pour l’intervalle  

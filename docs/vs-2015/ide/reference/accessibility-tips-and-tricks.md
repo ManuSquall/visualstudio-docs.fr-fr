@@ -12,10 +12,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 77254bea0c4b587df8f4aef8297f17b6b4304339
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54800786"
 ---
 # <a name="accessibility-tips-and-tricks"></a>Conseils et astuces d'accessibilité
@@ -50,7 +50,7 @@ ms.locfileid: "54800786"
 |Fenêtre Boîte à outils|Ajouter un contrôle à partir de la boîte à outils à un formulaire ou un concepteur|**Entrée**|  
 |Clavier, Environnement, boîte de dialogue Options|Supprimer une combinaison de touches entrée dans l’option **Appuyer sur les touches de raccourci**|**Retour arrière**|  
 |Toutes les fenêtres d’outil|Sélectionner le premier bouton de la barre d’outils de la fenêtre|**Maj** + **Alt**|  
-|Barres d’outils IDE|Sélectionner le premier bouton de la barre d’outils Standard|**ALT**, **CTRL** + **onglet** **Remarque :**  Appuyez sur **CTRL** + **onglet** à nouveau pour sélectionner le premier bouton de la barre d’outils IDE suivante.|  
+|Barres d’outils IDE|Sélectionner le premier bouton de la barre d’outils Standard|**Alt**, **Ctrl** + **TAB** **Remarque :** Rappuyez sur **Ctrl** + **TAB** pour sélectionner le premier bouton de la barre d’outils IDE suivante.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctionnalités d’accessibilité de Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)

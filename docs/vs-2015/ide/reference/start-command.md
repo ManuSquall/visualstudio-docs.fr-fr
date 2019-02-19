@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f08baa8c27debf6493ca090a2a5e80f02b3da982
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54774453"
 ---
 # <a name="start-command"></a>Démarrer, commande
@@ -37,7 +37,7 @@ Debug.Start [address]
  `address`  
  Optionnel. Adresse à laquelle le programme suspend son exécution, semblable à un point d’arrêt dans le code source. Cet argument est valide uniquement en mode débogage.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Quand elle est exécutée, la commande **Start** effectue une opération RunToCursor vers l’adresse spécifiée.  
   
 ## <a name="example"></a>Exemple  

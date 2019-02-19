@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 096de590d49f5d09614bb9149ae6e5218f2ab7ec
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54785685"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Conseils de productivité pour Visual Studio
@@ -79,13 +79,13 @@ En suivant ces conseils, vous pouvez écrire, parcourir et déboguer votre code 
 
      Les zones bleues proposent des solutions pour corriger les erreurs dans votre code.
 
-     Figure 1 : Erreur des balises actives
+     Figure 1 : Étiquettes actives d’erreur
 
      ![Suggestions d’étiquette active d’erreur](../ide/media/productivity-bluesmarttags.png "Productivity_BlueSmartTags")
 
      Les zones rouges proposent des solutions pour réorganiser votre code.
 
-     Figure 2 : Balises actives de refactorisation
+     Figure 2 : Étiquettes actives de refactorisation
 
      ![Suggestions d’étiquette active de refactorisation](../ide/media/productivity-redsmarttags.png "Productivity_RedSmartTags")
 
@@ -151,11 +151,11 @@ En suivant ces conseils, vous pouvez écrire, parcourir et déboguer votre code 
 
      Pour épingler un fichier, sélectionnez l’onglet du fichier, puis sélectionnez le bouton **Basculer l’état de l’épinglage**.
 
--   **Déplacer des documents et des fenêtres vers d’autres moniteurs**. Si vous utilisez plusieurs écrans lorsque vous développez des applications, vous pouvez travailler plus facilement sur des parties de votre application en déplaçant les fichiers ouverts dans l'éditeur vers un autre moniteur. Vous pouvez également déplacer les fenêtres d'outils, comme les fenêtres du débogueur, vers un autre moniteur et ancrer ensemble des fenêtres de documents et d'outils pour créer des ensembles flottants. Pour plus d'informations, voir [Procédure : Organiser et ancrer des fenêtres](../misc/how-to-arrange-and-dock-windows.md).
+-   **Déplacer des documents et des fenêtres vers d’autres moniteurs**. Si vous utilisez plusieurs écrans lorsque vous développez des applications, vous pouvez travailler plus facilement sur des parties de votre application en déplaçant les fichiers ouverts dans l'éditeur vers un autre moniteur. Vous pouvez également déplacer les fenêtres d'outils, comme les fenêtres du débogueur, vers un autre moniteur et ancrer ensemble des fenêtres de documents et d'outils pour créer des ensembles flottants. Pour plus d’informations, consultez [Guide pratique pour réorganiser et ancrer des fenêtres](../misc/how-to-arrange-and-dock-windows.md).
 
      Vous pouvez également gérer des fichiers plus facilement en créant une autre instance de l’**Explorateur de solutions** et en la déplaçant vers un autre moniteur. Pour créer une autre instance de l’**Explorateur de solutions**, ouvrez un menu contextuel dans l’**Explorateur de solutions**, puis choisissez **Nouvelle vue Explorateur de solutions**.
 
--   **Personnaliser les polices qui apparaissent dans Visual Studio**. Vous pouvez modifier le type, la taille et la couleur de police utilisés pour le texte dans l'IDE. Par exemple, vous pouvez personnaliser la couleur des éléments de code spécifiques dans l'éditeur et le type de police dans les fenêtres Outil ou dans tout l'IDE. Pour plus d'informations, voir [Procédure : Modifier les polices et les couleurs](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) et [Guide pratique pour changer les polices et les couleurs dans l’éditeur](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+-   **Personnaliser les polices qui apparaissent dans Visual Studio**. Vous pouvez modifier le type, la taille et la couleur de police utilisés pour le texte dans l'IDE. Par exemple, vous pouvez personnaliser la couleur des éléments de code spécifiques dans l'éditeur et le type de police dans les fenêtres Outil ou dans tout l'IDE. Pour plus d’informations, consultez [Guide pratique pour modifier les polices et les couleurs](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) et [Guide pratique pour modifier les polices et les couleurs utilisées dans l’Éditeur](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ## <a name="see-also"></a>Voir aussi
- [Raccourcis clavier par défaut pour les commandes fréquemment utilisées](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md) [Comment : Personnaliser des Menus et barres d’outils](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md) [procédure pas à pas : Créer une Application Simple](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md) [des astuces d’accessibilité](../ide/reference/accessibility-tips-and-tricks.md)
+ [Raccourcis clavier par défaut pour les commandes fréquemment utilisées](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md) [Comment : personnaliser des Menus et barres d’outils](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md) [procédure pas à pas : créer une Application Simple](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md) [astuces d’accessibilité et Astuces](../ide/reference/accessibility-tips-and-tricks.md)

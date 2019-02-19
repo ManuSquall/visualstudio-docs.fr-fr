@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ae1dc5c7eb8b1f10771afacfe1398e17b2bf8ed8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54753514"
 ---
 # <a name="options-page-environment-node-properties"></a>Page Options, Environnement, propriétés de nœud
@@ -136,7 +136,7 @@ Ce document décrit les pages (ou collections de propriétés) associées à la 
   
 |Nom de l'élément de propriété|Value|Description|  
 |------------------------|-----------|-----------------|  
-|OnStartUp|Get/Set (Enum)|Action à exécuter au démarrage, à partir de <xref:EnvDTE.vsStartUp>, avec des valeurs de 0 à 5 :<br /><br /> -   0 : ouvrir la page d’accueil<br />-   1 : charger la dernière solution chargée<br />-   2 : afficher la boîte de dialogue **Ouvrir un projet**<br />-   3 : afficher la boîte de dialogue **Nouveau projet**<br />-   4 : afficher l’environnement vide<br />-   5 : afficher la page de démarrage|  
+|OnStartUp|Get/Set (Enum)|Action à exécuter au démarrage, à partir de <xref:EnvDTE.vsStartUp>, avec des valeurs de 0 à 5 :<br /><br /> - 0 : Ouvrir la page d’accueil<br />- 1 : Charger la dernière solution chargée<br />- 2 : Afficher la boîte de dialogue **Ouvrir un projet**<br />- 3 : Afficher la boîte de dialogue **Nouveau projet**<br />- 4 : Afficher l’environnement vide<br />- 5 : Afficher la page de démarrage|  
 |StartPageRSSUrl|Get/Set (chaîne)|URL du flux RSS utilisé au démarrage.|  
 |StartPageRefreshDownloadedContent|Get/Set (booléen)|Actualise la page de démarrage après chaque passage de l'intervalle spécifié dans StartPageRefreshInterval.|  
 |StartPageRefreshInterval|Get/Set (Short)|Intervalle en minutes pour actualiser la page de démarrage.|  

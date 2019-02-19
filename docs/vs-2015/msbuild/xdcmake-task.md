@@ -21,10 +21,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 58257921634e1afb89dfc0c012728523bc98a2ef
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54792887"
 ---
 # <a name="xdcmake-task"></a>XDCMake, tâche
@@ -35,7 +35,7 @@ Encapsule l’outil Documentation XML (xdcmake.exe), qui fusionne des fichiers d
   
  Un fichier .xdc est créé lorsque vous fournissez des commentaires sur la documentation dans votre code source de Visual C++ et compilez en utilisant l’option de compilateur [/doc](http://msdn.microsoft.com/library/b54f7e2c-f28f-4f46-9ed6-0db09be2cc63). Pour plus d’informations, consultez [Référence XDCMake](http://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac), [Outil Générateur de documents XML, page de propriétés](http://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0) et l’option de l’aide en ligne de commande (**/ ?**) pour xdcmake.exe.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Par défaut, l’outil xdcmake.exe prend en charge quelques options de ligne de commande. Des options supplémentaires sont prises en charge lorsque vous spécifiez l’option de ligne de commande **/old**.  
   
 ## <a name="parameters"></a>Paramètres  

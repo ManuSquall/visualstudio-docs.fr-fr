@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8122988e5db3ca69c4b845c54ff4de2223c4556d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54767465"
 ---
 # <a name="sgen-task"></a>SGen, tâche
@@ -53,7 +53,7 @@ Crée un assembly de sérialisation XML pour les types dans l’assembly spécif
 |`Types`|Paramètre `String[]` facultatif.<br /><br /> Obtient ou définit une liste de types spécifiques pour lesquels générer le code de sérialisation. SGen générera le code de sérialisation uniquement pour ces types.|  
 |`UseProxyTypes`|Paramètre `Boolean` requis.<br /><br /> Si `true`, la tâche SGen génère du code de sérialisation uniquement pour les types de proxy de service web XML.|  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.ToolTask>. Pour obtenir la liste de ces paramètres supplémentaires et de leurs descriptions, consultez l’article [ToolTaskExtension Base Class (Classe de base ToolTaskExtension)](../msbuild/tooltaskextension-base-class.md).  
   
 ## <a name="see-also"></a>Voir aussi  

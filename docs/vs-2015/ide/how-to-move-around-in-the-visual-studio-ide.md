@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Déplacer dans l’IDE | Microsoft Docs'
+title: 'Comment : déplacer dans l’IDE | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -19,13 +19,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 94629a2e64d154313711b3e8968b28959d3341e8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54805417"
 ---
-# <a name="how-to-move-around-in-the-visual-studio-ide"></a>Procédure : Se déplacer dans l’IDE de Visual Studio
+# <a name="how-to-move-around-in-the-visual-studio-ide"></a>Comment : se déplacer dans l'IDE de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L’environnement de développement intégré (IDE) a été conçu pour vous permettre de vous déplacer de fenêtre en fenêtre et de fichier en fichier de différentes façons, selon vos préférences ou exigences de projet. Vous pouvez choisir de parcourir tous les fichiers ouverts de l'éditeur ou de parcourir toutes les fenêtres Outil actives dans l'IDE. Vous pouvez aussi basculer directement vers tout fichier ouvert dans l'éditeur, indépendamment de son dernier ordre d'accès. Ces fonctionnalités peuvent contribuer à accroître votre productivité lorsque vous travaillez dans l’IDE.

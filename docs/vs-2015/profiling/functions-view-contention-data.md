@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1aaab824f40c0cd6ba0a240a6f3035d7ebcccd00
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54762982"
 ---
 # <a name="functions-view---contention-data"></a>Vue Fonctions - Données de conflit
@@ -45,7 +45,7 @@ La vue de rapport Fonctions des données de conflit répertorie les fonctions da
 |**Fichier source**|Fichier source contenant la définition pour cette fonction.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour personnaliser les colonnes de vue des rapports](../profiling/how-to-customize-report-view-columns.md)   
+ [Guide pratique pour personnaliser les colonnes de la vue Rapport](../profiling/how-to-customize-report-view-columns.md)   
  [Mode Fonction](../profiling/functions-view.md)   
  [Vue Fonctions - Instrumentation](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
  [Vue Fonctions - Échantillonnage](../profiling/functions-view-dotnet-memory-sampling-data.md)   
