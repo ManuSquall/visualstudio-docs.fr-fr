@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b1a04dce73dbf2551b51f2395b3512e62daf3766
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54788188"
 ---
 # <a name="watch-command"></a>Espion, commande
@@ -37,7 +37,7 @@ Debug.Watch[index]
  `index`  
  Obligatoire. Numéro d’instance de la fenêtre Espion.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  La valeur d’`index` doit être un entier. Les valeurs valides sont 1, 2, 3 ou 4.  
   
 ## <a name="example"></a>Exemple  
@@ -48,8 +48,8 @@ Debug.Watch[index]
   
 ## <a name="see-also"></a>Voir aussi  
  [Fenêtres Variables locales et Automatique](../../debugger/autos-and-locals-windows.md)   
- [Guide pratique pour Modifier une valeur dans une fenêtre de Variable](http://msdn.microsoft.com/library/36f464ab-c900-4c0b-9ab3-557b3d9cdab5)   
- [Guide pratique pour Utilisez la boîte de dialogue Espion express](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
+ [Guide pratique pour modifier une valeur dans une fenêtre de variable](http://msdn.microsoft.com/library/36f464ab-c900-4c0b-9ab3-557b3d9cdab5)   
+ [Guide pratique pour utiliser la boîte de dialogue Espion express](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
  [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Fenêtre Commande](../../ide/reference/command-window.md)   
  [Zone Rechercher/Commande](../../ide/find-command-box.md)   
