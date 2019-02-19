@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 16ac851c59f084a4d9e98998754e7b9d20afaf81
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54804527"
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
@@ -46,7 +46,7 @@ devenv SolutionName /deploy SolnConfigName [/project ProjName] [/projectconfig P
  /projectconfig `ProjConfigName`  
  Optionnel. Nom d’une configuration de génération de projet à utiliser lors de la génération du `/project` nommé.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Le projet spécifié doit être un projet de déploiement. Si ce n’est pas le cas, quand le projet généré est passé en vue de son déploiement, une erreur se produit et le déploiement échoue.  
   
  Placez entre guillemets doubles les chaînes contenant des espaces.  

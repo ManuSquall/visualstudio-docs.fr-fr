@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 251b805367922d032eb90a70a9ba8ae9d8bd01f2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54784098"
 ---
 # <a name="performance-explorer"></a>Explorateur de performances
@@ -38,14 +38,14 @@ Grâce aux outils de profilage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], les
 |----------|---------------------|  
 |**Nouvelles techniques pour Windows 8**|[Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)|  
 |**Comprendre les concepts de profilage :** découvrez les concepts et les termes que vous allez utiliser lors de la collecte, de l’affichage et de l’analyse des performances de code à l’aide des outils de profilage.|[Vues d’ensemble](../profiling/overviews-performance-tools.md)|  
-|**Se lancer et le faire :** découvrez les procédures de base que vous allez utiliser lors de la collecte, de l’affichage et de l’analyse des performances de code à l’aide des outils de profilage. Essayez par vous-même en suivant une procédure pas à pas.|[Prise en main](../profiling/getting-started-with-performance-tools.md)|  
-|**Configurer une session de profilage :** découvrez des méthodes avancées permettant de spécifier les projets ou les fichiers binaires à profiler, de sélectionner une méthode de profilage, de choisir les données de performance à collecter, et de définir d’autres options de la session de profilage.|[Configuration de sessions de performances](../profiling/configuring-performance-sessions.md)|  
-|**Contrôler les données collectées par le profileur :** découvrez comment utiliser les propriétés d’une session de performance et les procédures interactives permettant de démarrer et d’arrêter le profilage, ainsi qu’à limiter les données de performance collectées aux informations souhaitées.|[Contrôle de la collecte de données](../profiling/controlling-data-collection.md)|  
-|**Identifier les problèmes de performances :** découvrez comment afficher et analyser les données de performances collectées dans la fenêtre d’affichage Rapport des outils de profilage.|[Analyse des données des outils d’analyse des performances](../profiling/analyzing-performance-tools-data.md)|  
-|**Analyser les modifications de performance :** découvrez comment comparer deux fichiers de données du profileur pour analyser l’évolution des performances.|[Comparaison des fichiers de données de performances](../profiling/comparing-performance-data-files.md)|  
-|**Enregistrer et partager vos résultats :** découvrez comment enregistrer les données de profilage pour l’archivage ou le partage.|[Enregistrement et exportation des données des outils d’analyse des performances](../profiling/saving-and-exporting-performance-tools-data.md)|  
-|**Automatiser le profilage :** découvrez comment utiliser les outils de profilage à partir de l’invite de commandes.|[Profilage à partir de la ligne de commande](../profiling/using-the-profiling-tools-from-the-command-line.md)|  
-|**Contrôler le profilage par programmation :** découvrez comment utiliser les API managées et natives des outils de profilage pour contrôler la collecte de données directement à partir du code source.|[API des outils de profilage](../profiling/profiling-tools-apis.md)|  
+|**Se lancer et le faire :** apprenez les procédures de base que vous allez utiliser lors de la collecte, de l’affichage et de l’analyse des performances de code à l’aide des outils de profilage. Essayez par vous-même en suivant une procédure pas à pas.|[Prise en main](../profiling/getting-started-with-performance-tools.md)|  
+|**Configurer une session de profilage :** découvrez des méthodes avancées permettant de spécifier les projets ou les fichiers binaires à profiler, de sélectionner une méthode de profilage, de choisir les données de performance à collecter, ainsi que de définir d’autres options de la session de profilage.|[Configuration de sessions de performances](../profiling/configuring-performance-sessions.md)|  
+|**Contrôler les données collectées par le profileur :** apprenez à utiliser les propriétés d’une session de performance et les procédures interactives permettant de démarrer et d’arrêter le profilage, ainsi qu’à limiter les données de performance collectées aux informations souhaitées.|[Contrôle de la collecte de données](../profiling/controlling-data-collection.md)|  
+|**Identifier les problèmes de performances :** apprenez à afficher et à analyser les données de performances collectées dans la fenêtre d’affichage Rapport des outils de profilage.|[Analyse des données des outils d’analyse des performances](../profiling/analyzing-performance-tools-data.md)|  
+|**Analyser les modifications de performance :** apprenez à comparer deux fichiers de données du profileur pour analyser l’évolution des performances.|[Comparaison des fichiers de données de performances](../profiling/comparing-performance-data-files.md)|  
+|**Enregistrer et partager vos résultats :** apprenez à enregistrer les données de profilage pour l’archivage ou le partage.|[Enregistrement et exportation des données des outils d’analyse des performances](../profiling/saving-and-exporting-performance-tools-data.md)|  
+|**Automatiser le profilage :** apprenez à utiliser les outils de profilage à partir de l’invite de commandes.|[Profilage à partir de la ligne de commande](../profiling/using-the-profiling-tools-from-the-command-line.md)|  
+|**Contrôler le profilage par programmation :** apprenez à utiliser les API managées et natives des outils de profilage pour contrôler la collecte de données directement à partir du code source.|[API des outils de profilage](../profiling/profiling-tools-apis.md)|  
 |**Résoudre les problèmes de profilage**|[Résolution des problèmes liés aux outils d’analyse des performances](../profiling/troubleshooting-performance-tools-issues.md)|  
   
 ## <a name="see-also"></a>Voir aussi  

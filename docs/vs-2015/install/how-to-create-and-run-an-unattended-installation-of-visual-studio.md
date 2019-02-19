@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Créer et exécuter une Installation sans assistance | Microsoft Docs'
+title: 'Comment : créer et exécuter une Installation sans assistance | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-install
@@ -13,13 +13,13 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b7fdf45fedece028a0bf5d62ccd60951754b9064
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54803560"
 ---
-# <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Procédure : Créer et exécuter une Installation sans assistance de Visual Studio
+# <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Comment : créer et exécuter une installation sans assistance de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez exécuter l’application d’installation pour [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] comme installation sans assistance via un intranet plutôt qu’à partir de supports tels que les DVD. Cette rubrique décrit comment préparer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour ce type d’installation à partir d’un partage réseau.
@@ -114,7 +114,7 @@ Vous pouvez exécuter l’application d’installation pour [!INCLUDE[vsprvs](..
 
 2. Ouvrez le menu **Démarrer** , puis choisissez **Exécuter**.
 
-3. Tapez le texte suivant : \\\\*Nom_serveur*\IDEinstall\vs_*produit*.exe /AdminFile PathToAdmindeployment.xml fichier
+3. Entrez le texte suivant : \\ \\ *nom_serveur*\IDEinstall\vs_*produit*.exe /AdminFile PathToAdmindeployment.xml fichier
 
     AdditionalParametersAsNeeded
 
@@ -173,7 +173,7 @@ Vous pouvez exécuter l’application d’installation pour [!INCLUDE[vsprvs](..
 
 2.  Entrez la clé du produit.
 
-     Pour plus d’informations, consultez la page [Guide pratique pour Recherchez la clé de produit Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) et [Comment : Appliquer automatiquement les clés de produit lors du déploiement de Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md) rubriques.)
+     (Pour plus d’informations, consultez le [Comment : trouver la clé de produit Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) et [Comment : appliquer automatiquement les clés de produit lors du déploiement de Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md) rubriques.)
 
 ## <a name="see-also"></a>Voir aussi
  [Installer Visual Studio](../install/install-visual-studio-2015.md)

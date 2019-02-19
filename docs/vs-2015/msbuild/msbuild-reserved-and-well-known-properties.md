@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0ab47b0058b80b49b5892a92ea6eeda1afe5296c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54804174"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>MSBuild, propriétés réservées et connues
@@ -55,10 +55,10 @@ ms.locfileid: "54804174"
 |`MSBuildThisFileDirectory`|Partie de répertoire de `MSBuildThisFileFullPath`.<br /><br /> Incluez la barre oblique inverse finale dans le chemin.|Réservée|  
 |`MSBuildThisFileDirectoryNoRoot`|Partie de répertoire de `MSBuildThisFileFullPath`, à l'exclusion du lecteur racine.<br /><br /> Incluez la barre oblique inverse finale dans le chemin.|Réservée|  
 |`MSBuildThisFileExtension`|Partie de l'extension du nom de fichier de `MSBuildThisFileFullPath`.|Réservée|  
-|`MSBuildThisFileFullPath`|Chemin d’accès absolu du fichier projet ou de cibles qui contient la cible en cours d’exécution.<br /><br /> Conseil : Vous pouvez spécifier un chemin d’accès relatif dans un fichier de cibles, qui se rapporte au fichier de cibles et non pas au fichier projet d’origine.|Réservée|  
+|`MSBuildThisFileFullPath`|Chemin d’accès absolu du fichier projet ou de cibles qui contient la cible en cours d’exécution.<br /><br /> Conseil : vous pouvez spécifier un chemin d’accès relatif dans un fichier de cibles, qui se rapporte au fichier de cibles et non au fichier projet d’origine.|Réservée|  
 |`MSBuildThisFileName`|Partie du nom de fichier de `MSBuildThisFileFullPath`, sans l'extension de nom de fichier.|Réservée|  
 |`MSBuildToolsPath`|Chemin d'installation de la version de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] qui est associée à la valeur de `MSBuildToolsVersion`.<br /><br /> N'incluez pas la barre oblique inverse finale dans le chemin.<br /><br /> Cette propriété ne peut pas être remplacée.|Réservée|  
-|`MSBuildToolsVersion`|Version de l'ensemble d'outils [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] qui est utilisée pour générer le projet.<br /><br /> Remarque : Un ensemble d’outils [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] se compose de tâches, de cibles et d’outils, utilisés pour générer une application. Les outils incluent des compilateurs tels que csc.exe et vbc.exe. Pour plus d’informations, consultez les articles [Toolset (ToolsVersion) Ensemble d’outils MSBuild [ToolsVersion])](../msbuild/msbuild-toolset-toolsversion.md) et [Configurations standard et personnalisée de l’ensemble d’outils](../msbuild/standard-and-custom-toolset-configurations.md).|Réservée|  
+|`MSBuildToolsVersion`|Version de l'ensemble d'outils [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] qui est utilisée pour générer le projet.<br /><br /> Remarque : un ensemble d’outils [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] se compose de tâches, de cibles et d’outils, qui sont utilisés pour générer une application. Les outils incluent des compilateurs tels que csc.exe et vbc.exe. Pour plus d’informations, consultez les articles [Toolset (ToolsVersion) Ensemble d’outils MSBuild [ToolsVersion])](../msbuild/msbuild-toolset-toolsversion.md) et [Configurations standard et personnalisée de l’ensemble d’outils](../msbuild/standard-and-custom-toolset-configurations.md).|Réservée|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Référence MSBuild](../msbuild/msbuild-reference.md) [Propriétés MSBuild](msbuild-properties1.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Désactiver le processus d’hébergement | Microsoft Docs'
+title: Guide pratique pour désactiver le processus d’hébergement | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,13 +13,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 0266e14b3a03e6d8225e7ec9283fe727a9502e53
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54785879"
 ---
-# <a name="how-to-disable-the-hosting-process"></a>Procédure : Désactiver le processus d’hébergement
+# <a name="how-to-disable-the-hosting-process"></a>Comment : désactiver le processus d'hébergement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les appels à certaines API peuvent être affectés quand le processus hôte est activé. Dans ces situations, il est nécessaire de désactiver le processus d’hébergement pour retourner les résultats corrects.  

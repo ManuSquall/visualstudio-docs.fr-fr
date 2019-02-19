@@ -1,5 +1,5 @@
 ---
-title: 'Bien démarrer avec PTVS : Python interactive | Microsoft Docs'
+title: 'Bien démarrer avec PTVS : Interactive Python | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-python
@@ -10,13 +10,13 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 4fba8bf658a50a7a7e28abace1eb622ab14f5f26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54780984"
 ---
-# <a name="getting-started-with-ptvs-interactive-python"></a>Bien démarrer avec PTVS : Python interactive
+# <a name="getting-started-with-ptvs-interactive-python"></a>Prise en main de PTVS : Interactive Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les invites interactives ou REPL (read-eval-print loop) constituent un outil essentiel des langages de programmation productifs.  Elles vous permettent d'exécuter des extraits de code pour découvrir et apprendre des API, tester l'utilisation d'API et développer interactivement du code opérationnel à inclure dans des projets ou des programmes.  
