@@ -1,14 +1,9 @@
 ---
 title: Modification des tests codés de l’interface utilisateur à l’aide de l’éditeur de test codé de l’interface utilisateur | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 f1_keywords:
 - vs.codedUItest.testeditor
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1bf24c24a60a37fd8fc5859d216c34eaa2e9b4f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e25ce519510f9b003784806bf6055b19c11ba285
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951255"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793761"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Modification des tests codés de l'interface utilisateur à l'aide de l'éditeur de test codé de l'interface utilisateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +75,7 @@ Modifier les propriétés d'une action d'interface utilisateur
   
  Pour modifier les propriétés d'une action d'interface utilisateur, dans le volet **Action d'interface utilisateur** , développez la méthode de test qui contient une action d'interface utilisateur dont vous voulez modifier les propriétés, sélectionnez l'action d'interface utilisateur et modifiez les propriétés à l'aide de la fenêtre Propriétés.  
   
- Par exemple, si un serveur est indisponible et si une action d’IU associée à votre navigateur web indique **Atteindre la page web « <http://Contoso1/default.aspx’> »**, vous pouvez remplacer l’URL par `‘http://Contoso2/default.aspx’`.  
+ Par exemple, si un serveur n’est pas disponible et qu’une action d’IU associée à votre navigateur web indique **Atteindre la page web « <http://Contoso1/default.aspx’>**, vous pouvez remplacer l’URL par `‘http://Contoso2/default.aspx’`.  
   
  ![Propriétés d’un contrôle](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 Modifier les propriétés d'un contrôle  
@@ -125,7 +120,7 @@ Modifier les propriétés d'un contrôle
  *Que dois-je savoir de plus ?*  
  **Problèmes importants**  
   
-- ![Icône Avertissement](../test/media/caution.gif "avertissement") **Avertissement :** si vous fractionnez une méthode, vous devez modifier tout le code qui appelle la méthode existante de sorte à appeler également la nouvelle méthode que vous êtes sur le point de créer si vous voulez toujours inclure ces actions d’interface. Quand vous fractionnez une méthode, une boîte de dialogue Microsoft Visual Studio s'affiche. Elle vous avertit que vous devez modifier tout code qui appelle la méthode existante de sorte à appeler également la nouvelle méthode que vous êtes sur le point de créer. Cliquez sur **Oui**.  
+- ![Icône d’avertissement](../test/media/caution.gif "attention") **Avertissement :** Quand vous fractionnez une méthode, vous devez modifier le code qui appelle la méthode existante pour qu’il appelle également la nouvelle méthode que vous êtes sur le point de créer, si vous tenez à inclure ces actions d’IU. Quand vous fractionnez une méthode, une boîte de dialogue Microsoft Visual Studio s'affiche. Elle vous avertit que vous devez modifier tout code qui appelle la méthode existante de sorte à appeler également la nouvelle méthode que vous êtes sur le point de créer. Cliquez sur **Oui**.  
   
   **Conseils**  
   
@@ -149,7 +144,7 @@ Modifier les propriétés d'un contrôle
  *Que dois-je savoir de plus ?*  
  **Problèmes importants**  
   
-- ![Icône Avertissement](../test/media/caution.gif "avertissement") **Avertissement :** une fois que vous avez déplacé la méthode, vous ne pouvez plus la modifier à l’aide de l’éditeur de test codé de l’interface utilisateur. Vous devez ajouter le code personnalisé et le gérer à l'aide de l'éditeur de code. Quand vous déplacez une méthode, une boîte de dialogue Microsoft Visual Studio s'affiche. Elle vous informe que la méthode sera déplacée du fichier UIMap.uitest vers le fichier UIMap.cs ou UIMap.vb et que vous ne pourrez plus la modifier à l'aide de l'éditeur de test codé de l'interface utilisateur. Cliquez sur **Oui**.  
+- ![Icône d’avertissement](../test/media/caution.gif "attention") **Avertissement :** Une fois que vous avez déplacé une méthode, vous ne pouvez plus la modifier à l’aide de l’éditeur de test codé de l’interface utilisateur. Vous devez ajouter le code personnalisé et le gérer à l'aide de l'éditeur de code. Quand vous déplacez une méthode, une boîte de dialogue Microsoft Visual Studio s'affiche. Elle vous informe que la méthode sera déplacée du fichier UIMap.uitest vers le fichier UIMap.cs ou UIMap.vb et que vous ne pourrez plus la modifier à l'aide de l'éditeur de test codé de l'interface utilisateur. Cliquez sur **Oui**.  
   
   **Conseils**  
   
@@ -167,7 +162,7 @@ Modifier les propriétés d'un contrôle
  *Que dois-je savoir de plus ?*  
  **Problèmes importants**  
   
-- ![Icône Avertissement](../test/media/caution.gif "avertissement") **Avertissement :** avant de localiser un contrôle d’interface utilisateur, vérifiez que l’application associée au test est en cours d’exécution.  
+- ![Icône d’avertissement](../test/media/caution.gif "attention") **Avertissement :** Avant de localiser un contrôle d’IU, vérifiez que l’application associée au test est en cours d’exécution.  
   
   **Conseils**  
   
@@ -185,7 +180,7 @@ Modifier les propriétés d'un contrôle
  *Que dois-je savoir de plus ?*  
  **Problèmes importants**  
   
--   ![Icône Avertissement](../test/media/caution.gif "avertissement") **Avertissement :** avant de localiser des contrôles d’interface utilisateur, vérifiez que l’application associée au test est en cours d’exécution.  
+-   ![Icône d’avertissement](../test/media/caution.gif "attention") **Avertissement :** Avant de localiser les contrôles d’IU, vérifiez que l’application associée au test est en cours d’exécution.  
   
 ##  <a name="CodedUITestEditor_InsertDelay"></a> Insertion d’un délai avant une action d’interface utilisateur  
  Parfois, vous pouvez avoir besoin que le test attende que certains événements se produisent, notamment qu'une fenêtre s'affiche, que la barre de progression disparaisse, etc. À l'aide de l'éditeur de test codé de l'interface utilisateur, vous pouvez définir cette attente en insérant un délai avant une action d'interface utilisateur. Vous pouvez indiquer le nombre de secondes du délai.  
@@ -210,7 +205,7 @@ Modifier les propriétés d'un contrôle
 ## <a name="external-resources"></a>Ressources externes  
   
 ### <a name="guidance"></a>Conseils  
- [Test de la livraison continue avec Visual Studio 2012 - Chapitre 2 : Tests unitaires : tester l’intérieur](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Test de livraison continue avec Visual Studio 2012 – chapitre 2 : Test unitaire Tester l’intérieur](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ### <a name="faq"></a>FAQ  
  [FAQ concernant les tests codés de l’interface utilisateur - 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
@@ -226,6 +221,3 @@ Modifier les propriétés d'un contrôle
  [Création d’un test codé de l’interface utilisateur piloté par les données](../test/creating-a-data-driven-coded-ui-test.md)   
  [Génération d’un test codé de l’interface utilisateur à partir d’un enregistrement des actions existant](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)   
  [Procédures pas à pas : création, édition et gestion d’un test codé de l’interface utilisateur](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-
-
-

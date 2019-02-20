@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: a3463eab-a352-4d17-8551-adbaad526db0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1836fac34088b8cc0a144da47d011de9948d8fbb
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
-ms.translationtype: MTE95
+ms.openlocfilehash: 172a7d27de88e7d5d6361fdc29e4cc49a0ff3d94
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54228030"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55008710"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>Diagnostiquer des problèmes après déploiement à l’aide d’IntelliTrace (C#, Visual Basic)
 
@@ -90,7 +90,7 @@ Visual Studio 2017 n’inclut pas le *BuildInfo.config* fichier qui a été déc
 
 6.  Exécutez une nouvelle build.
 
-    Passez à l’étape 2. Publier votre application](#DeployRelease)
+    Accédez à [étape 2 : publier votre application](#DeployRelease)
 
 ####  <a name="TFS2012_2010"></a> Team Foundation Server 2012 ou 2010
  Procédez comme suit pour créer automatiquement le manifeste de build (fichier BuildInfo.config) pour votre projet et le placer dans le dossier de sortie de votre projet. Le fichier s’affiche avec le nom «*Nom_projet*.BuildInfo.config » dans le dossier de sortie, mais est renommé en « BuildInfo.config » dans le dossier de déploiement une fois l’application publiée.
@@ -115,7 +115,7 @@ Visual Studio 2017 n’inclut pas le *BuildInfo.config* fichier qui a été déc
 
 4.  Exécutez une nouvelle build.
 
-    Passez à l’étape 2. Publier votre application](#DeployRelease)
+    Accédez à [étape 2 : publier votre application](#DeployRelease)
 
 ###  <a name="ManualBuild"></a> Créer le manifeste de build pour une génération manuelle à l’aide de Visual Studio
  Procédez comme suit pour créer automatiquement le manifeste de build (fichier BuildInfo.config) pour votre projet et le placer dans le dossier de sortie de votre projet. Le fichier s’affiche avec le nom «*Nom_projet*.BuildInfo.config » dans le dossier de sortie, mais est renommé en « BuildInfo.config » dans le dossier de déploiement une fois l’application publiée.
@@ -142,7 +142,7 @@ Visual Studio 2017 n’inclut pas le *BuildInfo.config* fichier qui a été déc
 
 4.  Exécutez une nouvelle build.
 
-    Passez à l’étape 2. Publier votre application](#DeployRelease)
+    Accédez à [étape 2 : publier votre application](#DeployRelease)
 
 ###  <a name="MSBuild"></a> Créer le manifeste de build pour une génération manuelle à l’aide de MSBuild.exe
  Ajoutez les arguments de build suivants quand vous exécutez une build :
@@ -168,7 +168,7 @@ Visual Studio 2017 n’inclut pas le *BuildInfo.config* fichier qui a été déc
 
 1.  Ouvrez le journal IntelliTrace (fichier .iTrace) dans Visual Studio Enterprise. Si Visual Studio Enterprise est installé sur le même ordinateur, il vous suffit de double-cliquer sur le fichier.
 
-2.  Choisissez **Ouvrir une solution** pour que Visual Studio ouvre automatiquement la solution ou le projet correspondant, si le projet n’a pas été généré dans le cadre d’une solution. [Q : Le journal IntelliTrace ne comporte pas les informations relatives à mon application déployée. Comment est-ce possible ? Que dois-je faire ?](#InvalidConfigFile)
+2.  Choisissez **Ouvrir une solution** pour que Visual Studio ouvre automatiquement la solution ou le projet correspondant, si le projet n’a pas été généré dans le cadre d’une solution. [Q : Le journal IntelliTrace ne comporte pas les informations relatives à mon application déployée. Comment est-ce possible ? Que dois-je faire ?](#InvalidConfigFile)
 
      Visual Studio réserve automatiquement toutes les modifications en attente quand il ouvre la solution ou le projet correspondant. Pour obtenir plus de détails sur ce jeu de réservations, consultez la fenêtre **Sortie** ou **Team Explorer**.
 
@@ -186,9 +186,9 @@ Visual Studio 2017 n’inclut pas le *BuildInfo.config* fichier qui a été déc
 
      Pour créer un espace de travail avec des mappages spécifiques ou un nom qui n’est pas celui de votre ordinateur, choisissez **Gérer**.
 
-     [Q : Pourquoi Visual Studio indique-t-il que l’espace de travail que j’ai sélectionné est inéligible ?](#IneligibleWorkspace)
+     [Q : Pourquoi Visual Studio indique que l’espace de travail que j’ai sélectionné est inéligible ?](#IneligibleWorkspace)
 
-     [Q : Pourquoi ne puis-je pas continuer jusqu’à ce que je choisisse une collection d’équipe ou une autre collection ?](#ChooseTeamProject)
+     [Q : Pourquoi je ne peux pas continuer jusqu’à ce que je choisisse une collection d’équipe ou une autre collection ?](#ChooseTeamProject)
 
 ### <a name="diagnose-a-performance-problem"></a>Diagnostiquer un problème de performance
 
@@ -248,12 +248,12 @@ Visual Studio 2017 n’inclut pas le *BuildInfo.config* fichier qui a été déc
 
 ###  <a name="FAQ"></a> Q et R
 
-####  <a name="WhyInclude"></a> Q : Pourquoi ajouter des informations sur mon projet, le contrôle de code source, la build et les symboles à ma version ?
+####  <a name="WhyInclude"></a>Q : Pourquoi ajouter des informations sur mon projet, le contrôle de code source, la build et les symboles à ma version ?
  Visual Studio utilise ces informations pour trouver la solution et la source correspondant à la version que vous tentez de déboguer. Après avoir ouvert le journal IntelliTrace et sélectionné un événement pour démarrer le débogage, Visual Studio utilise des symboles pour trouver et vous indiquer le code où l’événement s’est produit. Vous pouvez alors examiner les valeurs enregistrées et avancer ou reculer dans l’exécution de votre code.
 
  Si vous utilisez TFS et que ces informations ne figurent pas dans le manifeste de build (fichier BuildInfo.config), Visual Studio recherche la source et les symboles correspondants sur votre TFS actuellement connecté. Si Visual Studio ne peut pas trouver le TFS correct ou la source correspondante, vous êtes invité à choisir un autre TFS.
 
-####  <a name="InvalidConfigFile"></a> Q : Le journal IntelliTrace ne comporte pas les informations relatives à mon application déployée. Comment est-ce possible ? Que dois-je faire ?
+####  <a name="InvalidConfigFile"></a>Q : Le journal IntelliTrace ne comporte pas les informations relatives à mon application déployée. Comment est-ce possible ? Que dois-je faire ?
  Cela peut se produire quand vous déployez à partir de votre ordinateur de développement ou que vous n’êtes pas connecté à TFS pendant le déploiement.
 
 1.  Accédez au dossier de déploiement de votre projet.
@@ -298,7 +298,7 @@ Visual Studio 2017 n’inclut pas le *BuildInfo.config* fichier qui a été déc
 
     - **GitSourceControl**: L’emplacement de la **GitSourceControl** schéma
 
-    - RepositoryUrl L’URI pour votre Team Foundation Server, une collection de projets et un référentiel Git
+    - **RepositoryUrl**: URI de votre serveur Team Foundation Server, de la collection de projets et du référentiel Git
 
     - **ProjectPath**: Le chemin d’accès au fichier de projet de votre application (.csproj ou .vbproj)
 
@@ -357,13 +357,13 @@ Visual Studio 2017 n’inclut pas le *BuildInfo.config* fichier qui a été déc
     </Build>
     ```
 
-####  <a name="IneligibleWorkspace"></a> Q : Pourquoi Visual Studio indique-t-il que l’espace de travail que j’ai sélectionné est inéligible ?
- **R :** L’espace de travail sélectionné n’a aucun mappage entre le dossier de contrôle de code source et un dossier local. Pour créer un mappage de cet espace de travail, choisissez **Gérer**. Sinon, choisissez un espace de travail déjà mappé ou créez-en un.
+####  <a name="IneligibleWorkspace"></a>Q : Pourquoi Visual Studio indique que l’espace de travail que j’ai sélectionné est inéligible ?
+ **R :** L’espace de travail sélectionné ne possède aucun mappage entre le dossier de contrôle de code source et un dossier local. Pour créer un mappage de cet espace de travail, choisissez **Gérer**. Sinon, choisissez un espace de travail déjà mappé ou créez-en un.
 
  ![Ouvrir à partir du contrôle de code source avec aucun espace de travail mappé](../debugger/media/ffr_openprojectfromsourcecontrol_notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")
 
-####  <a name="ChooseTeamProject"></a> Q : Pourquoi ne puis-je pas continuer jusqu’à ce que je choisisse une collection d’équipe ou une autre collection ?
- **R :** Cela peut se produire pour l’une des raisons suivantes :
+####  <a name="ChooseTeamProject"></a>Q : Pourquoi je ne peux pas continuer jusqu’à ce que je choisisse une collection d’équipe ou une autre collection ?
+ **R :** Cela peut se produire pour l’une des raisons suivantes :
 
 -   Visual Studio n’est pas connecté à TFS.
 
@@ -380,9 +380,9 @@ Visual Studio 2017 n’inclut pas le *BuildInfo.config* fichier qui a été déc
      ![Ouvrir à partir du contrôle de code source &#45; migré](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
 
 ####  <a name="WhatWorkspace"></a> Q : Qu’est un espace de travail ?
- **R :** Votre [espace de travail stocke une copie de la source](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) pour que vous puissiez le développer et le tester séparément avant d’archiver votre travail. Si vous ne disposez pas déjà d’un espace de travail spécialement mappé à la solution ou au projet trouvé, Visual Studio vous invite à choisir un espace de travail disponible ou à en créer un avec le nom de votre ordinateur comme nom d’espace de travail par défaut.
+ **R :** Votre [espace de travail stocke une copie de la source](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) pour que vous puissiez le développer et le tester séparément avant d’archiver votre travail. Si vous ne disposez pas déjà d’un espace de travail spécialement mappé à la solution ou au projet trouvé, Visual Studio vous invite à choisir un espace de travail disponible ou à en créer un avec le nom de votre ordinateur comme nom d’espace de travail par défaut.
 
-####  <a name="UntrustedSymbols"></a> Q : Pourquoi est-ce-que je reçois ce message sur les symboles non fiables ?
+####  <a name="UntrustedSymbols"></a>Q : Pourquoi je reçois ce message sur les symboles non fiables ?
  ![Déboguer avec le chemin d’accès des symboles non fiables ? ](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")
 
- **R :** Ce message apparaît quand le chemin d’accès aux symboles dans le fichier manifeste de la build (\<*Nom_projet*>BuildInfo.config) n’est pas inclus dans la liste des chemins d’accès aux symboles approuvés. Vous pouvez ajouter le chemin d’accès à la liste des chemins de symboles dans les options du débogueur.
+ **R :** Ce message apparaît quand le chemin des symboles dans le fichier manifeste de la build (\<*Nom_projet*>.BuildInfo.config) n’est pas inclus dans la liste des chemins des symboles approuvés. Vous pouvez ajouter le chemin d’accès à la liste des chemins de symboles dans les options du débogueur.
