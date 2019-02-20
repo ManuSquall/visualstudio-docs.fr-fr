@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e96341ada2485654f5553b7b862c84dd03b8b4a4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a6f7b61bc3dd6f11bf16808df15d9c2dad1222f6
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979489"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316910"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Exécuter des outils de profilage avec ou sans le débogueur
 
@@ -63,7 +63,7 @@ Utilisez la zone de recherche pour trouver une chaîne spécifique dans la liste
 
 ![Recherche d’événements de diagnostic](../profiling/media/diagnosticseventsearch.png "Recherche d’événements de diagnostic")  
 
-Pour plus d’informations, consultez [Searching and filtering the Events tab of the Diagnostic Tools window](https://blogs.msdn.microsoft.com/devops/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).  
+Pour plus d’informations, consultez [Searching and filtering the Events tab of the Diagnostic Tools window](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).  
 
 ## <a name="collect-profiling-data-without-debugging"></a>Collecter les données de profilage sans débogage  
 
@@ -118,14 +118,14 @@ Voici quelques billets de blog et articles MSDN de l’équipe de développement
   
  [MSDN Magazine : Utilisation d’IntelliTrace pour un diagnostic plus rapide des problèmes](https://msdn.microsoft.com/magazine/dn973014.aspx)
   
- [Billet de blog : Diagnosing Event Handler Leaks with the Memory Usage Tool in VisGuide pratique pourual Studio 2015](https://blogs.msdn.microsoft.com/devops/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015/) (Diagnostic des problèmes de fuite de mémoire avec l’outil Utilisation de la mémoire de Visual Studio 2015)
+ [Billet de blog : Diagnosing Event Handler Leaks with the Memory Usage Tool in VisGuide pratique pourual Studio 2015](https://devblogs.microsoft.com/devops/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015/) (Diagnostic des problèmes de fuite de mémoire avec l’outil Utilisation de la mémoire de Visual Studio 2015)
   
  [Vidéo : Historical Debugging with IntelliTrace in Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)
   
  [Vidéo : Debugging Performance Issues Using Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731)
   
- [PerfTips : Performance Information at-a-glance while Debugging with Visual Studio](https://blogs.msdn.microsoft.com/devops/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/) (Informations de performances en un coup d’œil lors du débogage avec Visual Studio)
+ [PerfTips : Performance Information at-a-glance while Debugging with Visual Studio](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/) (Informations de performances en un coup d’œil lors du débogage avec Visual Studio)
   
- [Diagnostic Tools debugger window in Visual Studio 2015](https://blogs.msdn.microsoft.com/devops/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015/)
+ [Diagnostic Tools debugger window in Visual Studio 2015](https://devblogs.microsoft.com/devops/diagnostic-tools-debugger-window-in-visual-studio-2015/)
   
- [IntelliTrace dans Visual Studio Enterprise 2015](https://blogs.msdn.microsoft.com/devops/2015/01/16/intellitrace-in-visual-studio-ultimate-2015/)
+ [IntelliTrace dans Visual Studio Enterprise 2015](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-ultimate-2015/)

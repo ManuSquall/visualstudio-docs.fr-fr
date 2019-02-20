@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 577cb338e7cbf20b23d2d75ad2dfded017b0aacb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d4a8a8ae7f3a256665697615c3c239a88f2b0d87
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955139"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315103"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Créer des stubs de méthodes de tests unitaires avec la commande Créer des tests unitaires
 
@@ -60,11 +60,11 @@ Les extensions de framework de test sont disponibles dans Visual Studio Marketpl
 
 ## <a name="when-should-i-use-this-feature"></a>Quand dois-je utiliser cette fonctionnalité ?
 
-Utilisez cette fonctionnalité chaque fois que vous devez créer des tests unitaires, mais en particulier quand vous testez le code existant qui a peu ou pas de couverture de test, et aucune documentation. En d’autres termes, utilisez-la quand la spécification de code est limitée ou inexistante. Elle implémente efficacement une approche semblable aux [tests unitaires intelligents](https://blogs.msdn.microsoft.com/devops/2014/11/19/introducing-smart-unit-tests/) qui caractérisent le comportement observé du code.
+Utilisez cette fonctionnalité chaque fois que vous devez créer des tests unitaires, mais en particulier quand vous testez le code existant qui a peu ou pas de couverture de test, et aucune documentation. En d’autres termes, utilisez-la quand la spécification de code est limitée ou inexistante. Elle implémente efficacement une approche semblable aux [tests unitaires intelligents](https://devblogs.microsoft.com/devops/introducing-smart-unit-tests/) qui caractérisent le comportement observé du code.
 
 Toutefois, cette fonctionnalité est également applicable à la situation où le développeur commence par écrire du code et l’utilise pour amorcer la discipline des tests unitaires. Dans le flux de codage, le développeur peut vouloir rapidement créer un stub de méthode de test unitaire (avec une classe de test et un projet de test appropriés) pour un élément de code spécifique.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Creating unit test method stubs with "Create Unit Tests"](https://blogs.msdn.microsoft.com/devops/2015/03/06/creating-unit-test-method-stubs-with-create-unit-tests/) (Créer des stubs de méthodes de tests unitaires avec la commande « Créer des tests unitaires »)
-- [Billets de blog sur les tests unitaires](https://blogs.msdn.microsoft.com/devops/?s=unit+testing)
+- [Creating unit test method stubs with "Create Unit Tests"](https://devblogs.microsoft.com/devops/creating-unit-test-method-stubs-with-create-unit-tests/) (Créer des stubs de méthodes de tests unitaires avec la commande « Créer des tests unitaires »)
+- [Billets de blog sur les tests unitaires](https://devblogs.microsoft.com/devops/?s=unit+testing)

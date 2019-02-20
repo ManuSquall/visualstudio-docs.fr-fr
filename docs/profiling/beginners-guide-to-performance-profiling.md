@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e8b1f602dc791b0475b0e33aa49215aaa62860d
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 7bc7d75329e83345107cac18fa49267dc62f964d
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155303"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316702"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Mesurer les performances d’application en analysant l’utilisation de l’UC
 Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les problèmes de performances dans votre application. Cette procédure montre comment utiliser l’onglet **Utilisation de l’UC** des outils de diagnostics pour obtenir les données de performances de votre application. Les outils de diagnostics sont pris en charge pour le développement .NET dans Visual Studio (y compris ASP.NET) et pour le développement natif/C++.
@@ -64,7 +64,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
      ![Onglet Résumé des outils de diagnostics](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
 
-     Pour plus d’informations sur les événements, consultez [Searching and filtering the Events tab of the Diagnostic Tools window](https://blogs.msdn.microsoft.com/devops/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).
+     Pour plus d’informations sur les événements, consultez [Searching and filtering the Events tab of the Diagnostic Tools window](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).
 
 6.  Exécutez le scénario qui doit provoquer le premier point d’arrêt.
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5eb89368869835edc8e6138c5b21d5a8b3970758
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 22a7d9d72f38b6ac166eb5c92998fbe6c4d8c096
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957219"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318730"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Émulateur Visual Studio pour Android
 
@@ -84,7 +84,7 @@ L'Émulateur Visual Studio pour Android est une application de bureau qui émule
  Une fois que vous avez installé l’ensemble de profils que vous souhaitez cibler, vous pouvez démarrer ces nouveaux profils directement à partir du gestionnaire en appuyant sur le bouton vert **Lecture**. Les profils apparaissent également dans le menu déroulant de la cible de débogage dans n’importe quel type de projet mobile multiplateforme Visual Studio.
 
 ##  <a name="FeaturesTest"></a> Fonctionnalités que vous pouvez tester dans l’émulateur
- Pour plus d’informations sur les fonctionnalités que vous pouvez tester dans l’émulateur, consultez ce [billet de blog](https://blogs.msdn.microsoft.com/devops/2014/11/12/introducing-visual-studios-emulator-for-android/).
+ Pour plus d’informations sur les fonctionnalités que vous pouvez tester dans l’émulateur, consultez ce [billet de blog](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/).
 
 ##  <a name="FeaturesNonTest"></a> Fonctionnalités que vous ne pouvez pas tester dans l’émulateur
  La liste suivante décrit les fonctionnalités de la plateforme Android que vous **ne pouvez pas** tester dans l’émulateur. Vous devez tester ces fonctionnalités sur un appareil physique.

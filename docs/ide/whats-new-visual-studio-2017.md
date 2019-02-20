@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 942007063ffa5ce6f24963067b7707495faa84b9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 767b757187e65454fb89c83613646c59d172c7e5
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935093"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318808"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Nouveautés de Visual Studio 2017
 
@@ -72,7 +72,7 @@ Pour en savoir plus sur la nouvelle expérience d’installation, notamment pour
 
 **Nouveauté de la version 15.3** : Nous avons apporté plus de 1 700 correctifs ciblés visant à améliorer la compatibilité entre Visual Studio et les principales technologies d’assistance utilisées. Il existe des douzaines de scénarios plus compatibles avec les lecteurs d’écran, les thèmes de contraste élevé et autres technologies d’assistance que jamais auparavant. Le débogueur, l’éditeur et l’interpréteur de commandes ont tous également obtenus des améliorations significatives.
 
-Pour plus d’informations sur l’accessibilité, consultez le billet de blog [Améliorations de l’accessibilité dans Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/).
+Pour plus d’informations sur l’accessibilité, consultez le billet de blog [Améliorations de l’accessibilité dans Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/).
 
 ## <a name="performance-and-productivity"></a>Performances et productivité
 
@@ -80,7 +80,7 @@ Pour plus d’informations sur l’accessibilité, consultez le billet de blog [
 
 Nous avons introduit dans Visual Studio un nouveau service d’identité qui permet de partager des comptes d’utilisateur dans Team Explorer, Azure Tools, la publication dans le Microsoft Store, et bien plus encore.
 
-Vous pouvez rester connecté plus longtemps également. Visual Studio ne vous demande pas de vous reconnecter toutes les 12 heures. Pour plus d’informations, consultez le billet de blog [Fewer Visual Studio sign-in prompts](https://blogs.msdn.microsoft.com/visualstudio/2016/08/15/fewer-visual-studio-sign-in-prompts/).
+Vous pouvez rester connecté plus longtemps également. Visual Studio ne vous demande pas de vous reconnecter toutes les 12 heures. Pour plus d’informations, consultez le billet de blog [Fewer Visual Studio sign-in prompts](https://devblogs.microsoft.com/visualstudio/fewer-visual-studio-sign-in-prompts/).
 
 ### <a name="start-visual-studio-faster"></a>Démarrer Visual Studio plus rapidement
 
@@ -131,7 +131,7 @@ Les tests automatisés sont un aspect essentiel de tout pipeline DevOps. Cela vo
 
 Pour obtenir plus d’informations sur les tests automatisés, consultez le billet de blog [Pipeline CI/CD pour les tests automatisés dans DevOps](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/).
 
-Pour plus d’informations sur les nouveautés de l’extension DevLabs [Outils de livraison continue pour Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio), consultez le billet de blog [Commit with confidence: Commit time code quality](https://blogs.msdn.microsoft.com/visualstudio/2017/08/21/committing-with-confidence-commit-time-code-quality-information-updated/).
+Pour plus d’informations sur les nouveautés de l’extension DevLabs [Outils de livraison continue pour Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio), consultez le billet de blog [Commit with confidence: Commit time code quality](https://devblogs.microsoft.com/visualstudio/committing-with-confidence-commit-time-code-quality-information-updated/).
 
 ### <a name="visual-studio-ide-enhancements"></a>Améliorations de l’environnement de développement intégré (IDE) de Visual Studio
 
@@ -188,7 +188,7 @@ Nous avons actualisé l’expérience de navigation pour permettre le déplaceme
 
   ![Visualiseur de structure Visual Studio 2017](media/vsIDE-StructureVisualizer.png)
 
-Pour plus d’informations sur les nouvelles fonctionnalités de productivité, consultez le billet de blog [Productivity in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/productivity-in-visual-studio-2017-rc/) posté par Mark Wilson-Thomas.
+Pour plus d’informations sur les nouvelles fonctionnalités de productivité, consultez le billet de blog [Productivity in Visual Studio 2017](https://devblogs.microsoft.com/visualstudio/productivity-in-visual-studio-2017-rc/) posté par Mark Wilson-Thomas.
 
 ### <a name="visual-c"></a>Visual C++
 
@@ -212,7 +212,7 @@ La nouvelle assistance d’exception vous permet de visualiser les informations 
 
 ![Boîte de dialogue de la nouvelle assistance d’exception dans Visual Studio](media/vs2017ide-ExceptionHelper.png)
 
-Pour plus d’informations, consultez le billet de blog [Use the new Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/devops/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/).
+Pour plus d’informations, consultez le billet de blog [Use the new Exception Helper in Visual Studio](https://devblogs.microsoft.com/devops/using-the-new-exception-helper-in-visual-studio-15-preview/).
 
 #### <a name="snapshots-and-intellitrace-step-back"></a>Captures instantanées et retour en arrière IntelliTrace
 
@@ -328,7 +328,7 @@ Inclus avec toutes les éditions de Visual Studio 2017 :
 
 * [Redgate SQL Search](http://www.red-gate.com/products/sql-development/sql-search/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlsearch&utm_term=docs-newinvs) augmente votre productivité en vous aidant à trouver rapidement des objets et des fragments SQL parmi plusieurs bases de données.
 
-Pour en savoir plus, consultez le billet de blog [Redgate Data Tools in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2017/03/07/redgate-data-tools-in-visual-studio-2017/).
+Pour en savoir plus, consultez le billet de blog [Redgate Data Tools in Visual Studio 2017](https://devblogs.microsoft.com/visualstudio/redgate-data-tools-in-visual-studio-2017/).
 
 ### <a name="net-core"></a>.NET Core
 

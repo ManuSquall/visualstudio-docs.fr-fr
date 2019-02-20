@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: a251698b7c7a2ff1247bb03902deaa7b27f18a49
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 022ca2d1365d947d9eaa89e5bedddcf1b0f2a2e6
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935119"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318314"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>FAQ concernant l’Explorateur de tests Visual Studio
 
@@ -107,7 +107,7 @@ Tous les projets de test doivent inclure leur référence d’adaptateur de test
 
 Le **projet de test{} ne référence aucun adaptateur .NET NuGet. La découverte ou l’exécution de tests risquent de ne pas fonctionner pour ce projet. Il est recommandé de référencer les adaptateurs de test NuGet dans chaque projet de test .NET de la solution.**
 
-Au lieu d’utiliser des extensions d’adaptateur de test, les projets doivent utiliser les packages NuGet de l’adaptateur de test. Cette exigence améliore considérablement les performances et entraîne moins de problèmes avec l’intégration continue. En savoir plus sur la dépréciation de l’Extension de l’adaptateur de Test .NET dans les [notes de version](/visualstudio/releasenotes/vs2017-preview-relnotes#testadapterextension).
+Au lieu d’utiliser des extensions d’adaptateur de test, les projets doivent utiliser les packages NuGet de l’adaptateur de test. Cette exigence améliore considérablement les performances et entraîne moins de problèmes avec l’intégration continue. En savoir plus sur la dépréciation de l’Extension de l’adaptateur de Test .NET dans les [notes de version](/visualstudio/releasenotes/vs2017-relnotes-v15.8#testadapterextension).
 
 > [!NOTE]
 > Si vous utilisez l’adaptateur de test NUnit 2 et que vous ne pouvez pas migrer vers l’adaptateur de test NUnit 3, vous pouvez désactiver ce nouveau comportement de la découverte dans Visual Studio version 15.8 dans **Outils** > **Options**  >  **Test**.

@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: b7799abea1ab8dcb0c792d5ba49c66274d255685
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: aaa5443c8fdbe2dd8a39f082ee92e9522c6de7bc
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155992"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317222"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Bienvenue dans l’IDE Visual Studio | C#
 
@@ -122,18 +122,6 @@ Nous allons configurer Visual Studio pour utiliser les paramètres d’environne
 Pour en savoir plus sur les autres façons possibles de personnaliser l’IDE, consultez [Personnaliser Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="create-a-program"></a>Créer un programme
-
-Tout d’abord, nous allons configurer Visual Studio pour utiliser les paramètres d’environnement adaptés aux développeurs C#.
-
-1. Dans la barre de menus, choisissez **Outils** > **Importation et exportation de paramètres**.
-
-2. Dans l’Assistant **Importation et exportation de paramètres**, sélectionnez **Réinitialiser tous les paramètres** dans la première page, puis **Suivant**.
-
-3. Dans la page **Enregistrer les paramètres actuels**, sélectionnez une option pour enregistrer ou non vos paramètres actuels, puis choisissez **Suivant**. (Si vous n’avez personnalisé aucun paramètre, sélectionnez **Non, réinitialiser simplement les paramètres en remplaçant mes paramètres actuels**.)
-
-4. Dans la page **Choisir une collection de paramètres par défaut**, choisissez **Visual C#**, puis **Terminer**.
-
-5. Dans la page **Réinitialisation terminée**, choisissez **Fermer**.
 
 Nous allons aller plus loin en créant un programme simple.
 
@@ -303,4 +291,4 @@ Explorez davantage Visual Studio en suivant l’un de ces articles d’introduct
 
 - Découvrir d’[autres fonctionnalités de Visual Studio](../../ide/advanced-feature-overview.md)
 - Visiter [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
-- Lire le [blog Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)
+- Lire le [blog Visual Studio](https://devblogs.microsoft.com/visualstudio/)

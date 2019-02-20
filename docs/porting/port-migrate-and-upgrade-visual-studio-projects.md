@@ -7,8 +7,9 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload: multiple
+monikerRange: vs-2017
 f1_keywords:
 - Win8ExpressDesktopBlock
 - w8trefactor
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 52decfae74eb978aeb43aad37fabb9e03ed23978
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 85e1341d80c0f81474f748a47db19de1fde50b1b
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768830"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335534"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Informations de référence sur la migration et la mise à niveau de projets pour Visual Studio 2017
 
@@ -34,7 +35,7 @@ La prise en charge de certains types de projet change également avec le temps. 
 
 Cet article fournit des détails uniquement sur les types de projets pouvant être migrés par Visual Studio 2017. L’article exclut les types de projets qui ne sont plus pris en charge dans Visual Studio 2017 et qui ne peuvent donc pas être migrés. Il exclut également les types de projets pris en charge qui ne présentent aucun problème de migration ; cette liste se trouve sous [Ciblage et compatibilité de la plateforme](/visualstudio/productinfo/vs2017-compatibility-vs).
 
-> [!Important]
+> [!IMPORTANT]
 > Certains types de projet nécessitent l’installation des charges de travail appropriées via Visual Studio Installer. Si la charge de travail n’est pas installée, Visual Studio signale un type de projet inconnu ou non compatible. Dans ce cas, vérifiez vos options d’installation et réessayez. Là encore, consultez l’article [Ciblage et compatibilité de la plateforme](/visualstudio/productinfo/vs2017-compatibility-vs) pour plus d’informations sur la prise en charge de projets dans Visual Studio 2017.
 
 ## <a name="project-types"></a>Types de projet
