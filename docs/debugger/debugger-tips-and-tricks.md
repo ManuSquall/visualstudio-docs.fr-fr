@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f2f709322c847057e31b89260a7cfae99e46f7b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8d484a343969bd6abb73a128d740e6ec57c9432e
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016530"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318418"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Découvrez des conseils de productivité et des astuces pour le débogueur dans Visual Studio
 
@@ -77,9 +77,9 @@ Il est facile d’afficher des variables à l’aide des fenêtres du débogueur
 3. Recherchez la variable dans le **variables locales** fenêtre (**Déboguer > Windows > variables locales**), avec le bouton droit de la variable, puis sélectionnez **Make Object ID**.
 
     ![Créer un ID d’objet](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
-  
+
 4.  Le symbole **$** et un nombre s’affichent alors dans la fenêtre **Variables locales** . Cette variable est l’ID d’objet.
-  
+
 5.  Avec le bouton droit de la variable d’ID objet et choisissez **ajouter un espion**.
 
 Pour plus d’informations, consultez [créer un ID d’objet](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds).
@@ -123,11 +123,11 @@ Si vous avez besoin de déboguer les types de problèmes qui sont communes aux a
 #### <a name="to-show-threads-in-your-source-code"></a>Pour afficher les threads dans votre code source
 
 1.  Pendant le débogage, cliquez sur le **afficher les Threads dans la Source** bouton ![afficher les Threads dans la Source](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") dans le **déboguer** barre d’outils.
-  
+
 2.  Examinez la reliure située sur le côté gauche de la fenêtre. Sur cette ligne, vous voyez un *marqueur de thread* icône ![marqueur de Thread](../debugger/media/dbg-thread-marker.png "ThreadMarker") qui ressemble à deux threads de maillage. Le marqueur de thread indique qu'un thread est interrompu à cet emplacement.
 
     Notez qu’un marqueur de thread peut être partiellement masqué par un point d’arrêt.
-  
+
 3.  Placez le pointeur sur le marqueur de thread. Un DataTip apparaît. Le DataTip vous indique le nom et le numéro d'ID de thread de chaque thread interrompu.
 
     Vous pouvez également afficher l’emplacement de threads dans le [fenêtre Piles parallèles](../debugger/get-started-debugging-multithreaded-apps.md).
@@ -162,8 +162,8 @@ Pour savoir comment le débogueur classe code en tant que code utilisateur, cons
 
 Pour des conseils supplémentaires et des astuces et des informations plus détaillées, consultez ces billets de blog :
 
-- [7 piratages connus inférieure pour le débogage dans Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/06/26/7-lesser-known-hacks-for-debugging-in-visual-studio/)
-- [7 merveilles cachées dans Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/10/05/7-hidden-gems-in-visual-studio-2017/)
+- [7 piratages connus inférieure pour le débogage dans Visual Studio](https://devblogs.microsoft.com/visualstudio/7-lesser-known-hacks-for-debugging-in-visual-studio/)
+- [7 merveilles cachées dans Visual Studio](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
 
 ## <a name="see-also"></a>Voir aussi
 [Raccourcis clavier](../ide/tips-and-tricks-for-visual-studio.md)

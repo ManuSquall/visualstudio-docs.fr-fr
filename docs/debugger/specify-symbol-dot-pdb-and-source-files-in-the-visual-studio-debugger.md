@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7784e6bde19a556d31394f3443dbf4494042481
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4eb542c06ce14aaa57106fb5413f285595592ca0
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55005304"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317430"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Spécifier les symboles (.pdb) et les fichiers sources dans le débogueur Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -76,11 +76,11 @@ Le débogueur recherche également les fichiers de symboles dans les emplacement
       
      Vous pouvez utiliser des serveurs de symboles sont les suivantes :  
       
-     **Serveurs de symboles publics de Microsoft**: Pour déboguer un incident qui se produit lors d’un appel à une DLL système ou à une bibliothèque tierce, vous devez souvent système *.pdb* fichiers. Système *.pdb* fichiers contiennent les symboles pour les DLL de Windows, *.exe* fichiers et pilotes de périphérique. Vous pouvez obtenir les symboles pour les systèmes d’exploitation Windows, MDAC, IIS, ISA et le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] à partir de serveurs de symboles publics de Microsoft. 
+     **Serveurs de symboles publics Microsoft**: pour déboguer un incident qui se produit lors d’un appel à une DLL système ou à une bibliothèque tierce, vous devez souvent système *.pdb* fichiers. Système *.pdb* fichiers contiennent les symboles pour les DLL de Windows, *.exe* fichiers et pilotes de périphérique. Vous pouvez obtenir les symboles pour les systèmes d’exploitation Windows, MDAC, IIS, ISA et le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] à partir de serveurs de symboles publics de Microsoft. 
       
-     **Serveurs de symboles sur un réseau interne ou sur votre ordinateur local** : Votre équipe ou société peut créer les serveurs de symboles de vos propres produits et comme cache des symboles à partir des sources externes. Vous pouvez avoir un serveur de symboles sur votre propre ordinateur. 
+     **Sur un réseau interne ou sur votre ordinateur local de serveurs de symboles**: votre équipe ou votre entreprise peut créer des serveurs de symboles de vos propres produits et en tant que cache de symboles provenant de sources externes. Vous pouvez avoir un serveur de symboles sur votre propre ordinateur. 
       
-     **Serveurs de symboles tiers** : Les fournisseurs tiers des applications et des bibliothèques Windows peuvent donner accès au serveur de symboles sur Internet. 
+     **Serveurs de symboles tiers**: les fournisseurs tiers de bibliothèques et des applications de Windows permettent d’accéder au serveur de symboles sur internet. 
     
      > [!WARNING]
      > Si vous utilisez un serveur de symboles autres que les serveurs de symboles publics Microsoft, assurez-vous que le serveur de symboles et son chemin d’accès sont dignes de confiance. Étant donné que les fichiers de symboles peuvent contenir du code exécutable arbitraire, vous pouvez être exposées aux menaces de sécurité.  
@@ -155,7 +155,7 @@ Vous pouvez sélectionner les options de symbole supplémentaires dans **outils*
   Vous pouvez limiter les commandes qui *srcsrv.dll* peuvent exécuter à partir de l’application *.pdb* fichier en répertoriant les commandes autorisées dans un fichier nommé *srcsrv.ini*. Place le *srcsrv.ini* fichier dans le même dossier que *srcsrv.dll* et *devenv.exe*.  
   
   >[!IMPORTANT]
-  >Des commandes arbitraires peuvent être incorporées dans une application *.pdb* de fichiers, veillez à placer uniquement les commandes que vous souhaitez exécuter dans un *srcsrv.ini* fichier. Toute tentative d’exécution d’une commande ne se trouvant pas dans le fichier *srcsvr.ini* provoque l’apparition d’une boîte de dialogue de confirmation. Pour plus d’informations, consultez [avertissement de sécurité : le débogueur doit exécuter une commande non approuvée](../debugger/security-warning-debugger-must-execute-untrusted-command.md). 
+  >Des commandes arbitraires peuvent être incorporées dans une application *.pdb* de fichiers, veillez à placer uniquement les commandes que vous souhaitez exécuter dans un *srcsrv.ini* fichier. Toute tentative d’exécution d’une commande ne se trouvant pas dans le fichier *srcsvr.ini* provoque l’apparition d’une boîte de dialogue de confirmation. Pour plus d'informations, consultez [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md). 
   >
   >Aucune validation n’est effectuée sur les paramètres de commande, soyez donc prudent avec les commandes de confiance. Par exemple, si vous avez mis *cmd.exe* dans votre *srcsrv.ini*, un utilisateur malveillant peut spécifier des paramètres sur *cmd.exe* qui rendrait dangereux.  
   
@@ -262,6 +262,6 @@ Vous pouvez spécifier les emplacements que le débogueur recherche les fichiers
 
 
 ## <a name="see-also"></a>Voir aussi  
-[Comprendre les fichiers de symboles et les paramètres des symboles de Visual Studio](https://blogs.msdn.microsoft.com/devops/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/)
+[Comprendre les fichiers de symboles et les paramètres des symboles de Visual Studio](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/)
 
-[Modifications du chargement des symboles distants .NET dans Visual Studio 2012 et 2013](https://blogs.msdn.microsoft.com/devops/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/)
+[Modifications du chargement des symboles distants .NET dans Visual Studio 2012 et 2013](https://devblogs.microsoft.com/devops/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/)

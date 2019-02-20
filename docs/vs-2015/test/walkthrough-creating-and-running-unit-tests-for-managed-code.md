@@ -1,14 +1,9 @@
 ---
-title: 'Procédure pas à pas : création et exécution de tests unitaires pour le code managé | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure pas à pas : Création et exécution de Tests unitaires pour Code managé | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, walkthrough
 - unit tests, creating
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 50d8190f386a4923fd05cbfaec137791bd9f2b5a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9c74a4f4089fa2af5c7413f8c95076c6254ffa21
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874499"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784658"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Procédure pas à pas : création et exécution de tests unitaires pour le code managé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,7 +108,7 @@ public void Debit(double amount)
 ```  
   
 ##  <a name="BKMK_Create_a_unit_test_project"></a> Créer un projet de test unitaire  
- **Condition préalable**: suivez les étapes de la procédure [Prepare the walkthrough](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough).  
+ **Prérequis**: suivez les étapes de la procédure, [préparer la procédure pas à pas](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough).  
   
 #### <a name="to-create-a-unit-test-project"></a>Pour créer un projet de test unitaire  
   
@@ -298,7 +293,7 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
   
 ```  
   
- Nous utilisons l’attribut <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> pour déclarer que la bonne exception a été levée. L’attribut entraîne l’échec du test à moins qu’une exception `ArgumentOutOfRangeException` ne soit levée. L’exécution du test avec à la fois les valeurs `debitAmount` positives et négatives puis en modifiant temporairement la méthode testée pour lever une exception <xref:System.ApplicationException> générique quand le montant est inférieur à zéro indique que le test se comporte correctement. Pour tester le cas où le montant retiré est supérieur au solde, il suffit d’effectuer les opérations suivantes :  
+ Nous utilisons l’attribut <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> pour déclarer que la bonne exception a été levée. L’attribut entraîne l’échec du test à moins qu’une exception `ArgumentOutOfRangeException` ne soit levée. L’exécution du test avec à la fois les valeurs `debitAmount` positives et négatives puis en modifiant temporairement la méthode testée pour lever une exception <xref:System.ApplicationException> générique quand le montant est inférieur à zéro indique que le test se comporte correctement. Pour tester le cas où le montant retiré est supérieur au solde, il suffit d’effectuer les opérations suivantes :  
   
 1. Créez une méthode de test nommée `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange`.  
   
@@ -423,6 +418,3 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 ```  
   
  Dans cette section finale, le travail que nous avons fait en améliorant notre code de test a conduit à des méthodes de test plus fiables et plus instructives. Plus important encore, l’analyse supplémentaire a également abouti à une amélioration du code dans notre projet testé.
-
-
-
