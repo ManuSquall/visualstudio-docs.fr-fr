@@ -12,70 +12,70 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c32a163c3f2ee81ee31e29b236b8e4b7a333e2b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1b04af33de39f2703cea71bb907348cf18bab31b
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55038615"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56413330"
 ---
 # <a name="idebugbreakpointerrorevent2geterrorbreakpoint"></a>IDebugBreakpointErrorEvent2::GetErrorBreakpoint
-Obtient un [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) objet qui décrit la raison pourquoi un point d’arrêt n’était pas lié.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT GetErrorBreakpoint(   
-   IDebugErrorBreakpoint2** ppErrorBP  
-);  
-```  
-  
-```csharp  
-int GetErrorBreakpoint(   
-   out IDebugErrorBreakpoint2 ppErrorBP  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `ppErrorBP`  
- [out] Retourne un [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) objet qui décrit l’avertissement ou l’erreur.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="remarks"></a>Notes  
- Après le `IDebugErrorBreakpoint2` interface est obtenue, appelez le [GetBreakpointResolution](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) méthode pour obtenir un [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) objet. Le [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) méthode peut être utilisée pour déterminer un emplacement non valide, une expression non valide ou les raisons pourquoi le point d’arrêt en attente n’est pas lié, tel que le code ne pas encore chargé et ainsi de suite.  
-  
-## <a name="example"></a>Exemple  
- L’exemple suivant montre comment implémenter cette méthode pour un **CBreakpointSetDebugEventBase** objet qui expose le [IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) interface.  
-  
-```cpp  
-STDMETHODIMP CBreakpointErrorDebugEventBase::GetErrorBreakpoint(  
-    IDebugErrorBreakpoint2 **ppbp)  
-{  
-    HRESULT hRes = E_FAIL;  
-  
-    if ( ppbp )  
-    {  
-        if ( m_pError )  
-        {  
-            *ppbp = m_pError;  
-  
-            m_pError->AddRef();  
-  
-            hRes = S_OK;  
-        }  
-        else  
-            hRes = E_FAIL;  
-    }  
-    else  
-        hRes = E_INVALIDARG;  
-  
-    return ( hRes );  
-}  
-```  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)   
- [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)   
- [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)
+Obtient un [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) objet qui décrit la raison pourquoi un point d’arrêt n’était pas lié.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT GetErrorBreakpoint( 
+    IDebugErrorBreakpoint2** ppErrorBP
+);
+```
+
+```csharp
+int GetErrorBreakpoint( 
+    out IDebugErrorBreakpoint2 ppErrorBP
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+`ppErrorBP`  
+[out] Retourne un [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) objet qui décrit l’avertissement ou l’erreur.
+
+## <a name="return-value"></a>Valeur de retour
+En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="remarks"></a>Notes
+Après le `IDebugErrorBreakpoint2` interface est obtenue, appelez le [GetBreakpointResolution](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) méthode pour obtenir un [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) objet. Le [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) méthode peut être utilisée pour déterminer un emplacement non valide, une expression non valide ou les raisons pourquoi le point d’arrêt en attente n’est pas lié, tel que le code ne pas encore chargé et ainsi de suite.
+
+## <a name="example"></a>Exemple
+L’exemple suivant montre comment implémenter cette méthode pour un **CBreakpointSetDebugEventBase** objet qui expose le [IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) interface.
+
+```cpp
+STDMETHODIMP CBreakpointErrorDebugEventBase::GetErrorBreakpoint(
+    IDebugErrorBreakpoint2 **ppbp)
+{
+    HRESULT hRes = E_FAIL;
+
+    if ( ppbp )
+    {
+        if ( m_pError )
+        {
+            *ppbp = m_pError;
+
+            m_pError->AddRef();
+
+            hRes = S_OK;
+        }
+        else
+            hRes = E_FAIL;
+    }
+    else
+        hRes = E_INVALIDARG;
+
+    return ( hRes );
+}
+```
+
+## <a name="see-also"></a>Voir aussi
+[IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)  
+[IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)  
+[IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)

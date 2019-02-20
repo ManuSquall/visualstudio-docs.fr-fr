@@ -11,117 +11,117 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd83f3c881e16cd35e90dbfc05dd3f096387e21d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: da313d42ac8e50e7f1a3788b3d40242d1ddffb0c
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54934823"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56412901"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
-Récupère l’identificateur de somme de contrôle et l’algorithme de document étant donné le nombre maximal d’octets à utiliser.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT GetChecksumAndAlgorithmId(   
-   GUID  *pRetVal,  
-   ULONG cMaxBytes,  
-   BYTE  *pChecksum,  
-   ULONG *pcNumBytes  
-);  
-```  
-  
-```csharp  
-public int GetChecksumAndAlgorithmId(   
-   out Guid pRetVal,  
-   uint     cMaxBytes,  
-   out byte pChecksum,  
-   out uint pcNumBytes  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pRetVal`  
- [out] Identificateur unique de l’algorithme de somme de contrôle.  
-  
- `cMaxBytes`  
- [in] Nombre maximal d’octets à utiliser pour la somme de contrôle.  
-  
- `pChecksum`  
- [out] Valeur de la somme de contrôle.  
-  
- `pcNumBytes`  
- [out] Nombre réel d’octets utilisés pour la somme de contrôle.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="example"></a>Exemple  
- L’exemple suivant utilise cette méthode pour obtenir la somme de contrôle et l’algorithme pour un document.  
-  
-```cpp  
-HRESULT CDebugCodeContext::GetDocumentChecksumAndAlgorithmId(GUID *pguidAlgorithm, BYTE **ppChecksum, ULONG *pcNumBytes)  
-{  
-    HRESULT hRes = E_FAIL;  
-  
-    *ppChecksum = NULL;  
-    *pcNumBytes = 0;  
-  
-    CComPtr<IDebugDocumentContext2> pDocContext;  
-  
-    hRes = this->GetDocumentContext(&pDocContext);  
-  
-    if ( HREVAL(S_OK, hRes) )  
-    {  
-        CComQIPtr<IDebugDocumentChecksum2> pDocChecksum(pDocContext);  
-  
-        if ( pDocChecksum != NULL )  
-        {  
-            // Figure out the size of the checksum buffer required  
-            ULONG cNumBytes = 0;  
-  
-            hRes = pDocChecksum->GetChecksumAndAlgorithmId(pguidAlgorithm, 0, NULL, &cNumBytes);  
-  
-            if ( S_OK == hRes )  
-            {  
-                // check to see if we got back valid values  
-                if ( cNumBytes && GUID_NULL != (*pguidAlgorithm) )  
-                {  
-                    // Alloc space for the checksum data  
-                    BYTE *pChecksum = (BYTE*) CoTaskMemAlloc(cNumBytes);  
-  
-                    if ( pChecksum )  
-                    {  
-                        // Get the buffer containing the checksum info  
-                        hRes = pDocChecksum->GetChecksumAndAlgorithmId(pguidAlgorithm, cNumBytes, pChecksum, &cNumBytes);  
-  
-                        if ( HREVAL(S_OK, hRes) )  
-                        {  
-                            *ppChecksum = pChecksum;  
-                            *pcNumBytes = cNumBytes;  
-                        }  
-                        else  
-                        {  
-                            CoTaskMemFree(pChecksum);  
-                        }  
-                    }  
-                    else  
-                        hRes = E_OUTOFMEMORY;  
-                }  
-                else  
-                    hRes = S_FALSE; // lang doesn't support checksums  
-            }  
-            else  
-                hRes = S_FALSE; // failed to work out checksum info  
-        }  
-        else  
-            hRes = S_FALSE; // SH doesn't support checksums  
-    }  
-  
-    return ( hRes );  
-}  
-```  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDebugDocumentChecksum2](../../../extensibility/debugger/reference/idebugdocumentchecksum2.md)
+Récupère l’identificateur de somme de contrôle et l’algorithme de document étant donné le nombre maximal d’octets à utiliser.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT GetChecksumAndAlgorithmId(
+    GUID  *pRetVal,
+    ULONG cMaxBytes,
+    BYTE  *pChecksum,
+    ULONG *pcNumBytes
+);
+```
+
+```csharp
+public int GetChecksumAndAlgorithmId(
+    out Guid pRetVal,
+    uint     cMaxBytes,
+    out byte pChecksum,
+    out uint pcNumBytes
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+`pRetVal`  
+[out] Identificateur unique de l’algorithme de somme de contrôle.
+
+`cMaxBytes`  
+[in] Nombre maximal d’octets à utiliser pour la somme de contrôle.
+
+`pChecksum`  
+[out] Valeur de la somme de contrôle.
+
+`pcNumBytes`  
+[out] Nombre réel d’octets utilisés pour la somme de contrôle.
+
+## <a name="return-value"></a>Valeur de retour
+En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="example"></a>Exemple
+L’exemple suivant utilise cette méthode pour obtenir la somme de contrôle et l’algorithme pour un document.
+
+```cpp
+HRESULT CDebugCodeContext::GetDocumentChecksumAndAlgorithmId(GUID *pguidAlgorithm, BYTE **ppChecksum, ULONG *pcNumBytes)
+{
+    HRESULT hRes = E_FAIL;
+
+    *ppChecksum = NULL;
+    *pcNumBytes = 0;
+
+    CComPtr<IDebugDocumentContext2> pDocContext;
+
+    hRes = this->GetDocumentContext(&pDocContext);
+
+    if ( HREVAL(S_OK, hRes) )
+    {
+        CComQIPtr<IDebugDocumentChecksum2> pDocChecksum(pDocContext);
+
+        if ( pDocChecksum != NULL )
+        {
+            // Figure out the size of the checksum buffer required
+            ULONG cNumBytes = 0;
+
+            hRes = pDocChecksum->GetChecksumAndAlgorithmId(pguidAlgorithm, 0, NULL, &cNumBytes);
+
+            if ( S_OK == hRes )
+            {
+                // check to see if we got back valid values
+                if ( cNumBytes && GUID_NULL != (*pguidAlgorithm) )
+                {
+                    // Alloc space for the checksum data
+                    BYTE *pChecksum = (BYTE*) CoTaskMemAlloc(cNumBytes);
+
+                    if ( pChecksum )
+                    {
+                        // Get the buffer containing the checksum info
+                        hRes = pDocChecksum->GetChecksumAndAlgorithmId(pguidAlgorithm, cNumBytes, pChecksum, &cNumBytes);
+
+                        if ( HREVAL(S_OK, hRes) )
+                        {
+                            *ppChecksum = pChecksum;
+                            *pcNumBytes = cNumBytes;
+                        }
+                        else
+                        {
+                            CoTaskMemFree(pChecksum);
+                        }
+                    }
+                    else
+                        hRes = E_OUTOFMEMORY;
+                }
+                else
+                    hRes = S_FALSE; // lang doesn't support checksums
+            }
+            else
+                hRes = S_FALSE; // failed to work out checksum info
+        }
+        else
+            hRes = S_FALSE; // SH doesn't support checksums
+    }
+
+    return ( hRes );
+}
+```
+
+## <a name="see-also"></a>Voir aussi
+[IDebugDocumentChecksum2](../../../extensibility/debugger/reference/idebugdocumentchecksum2.md)
