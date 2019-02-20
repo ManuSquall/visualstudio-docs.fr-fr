@@ -10,59 +10,59 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7a340a48a6b997dd6fd812a850c4df33d667586
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6f892e9ee339f25f512c4036fb9e794c922b7404
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948711"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56413174"
 ---
 # <a name="idebugcodecontext3getprocess"></a>IDebugCodeContext3::GetProcess
-Récupère une référence à l’interface du processus de débogage.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT GetProcess(   
-   IDebugProcess2 **ppProcess  
-);  
-```  
-  
-```csharp  
-public int GetProcess(   
-   out IDebugProcess2 ppProcess  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `ppProcess`  
- [out] Référence à l’interface de processus de débogage.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="example"></a>Exemple  
- L’exemple suivant montre comment implémenter cette méthode pour un **CDebugCodeContext** objet qui expose le [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) interface.  
-  
-```cpp  
-HRESULT CDebugCodeContext::GetProcess(IDebugProcess2** ppProcess)  
-{  
-    HRESULT hr = S_OK;  
-    CComPtr<CDebugEngine> pEngine;  
-    CComPtr<IDebugPort2> pPort2;  
-  
-    IfFalseGo( ppProcess, E_INVALIDARG );  
-    *ppProcess = NULL;  
-  
-    IfFalseGo( m_pProgram, E_FAIL );  
-    IfFailGo( ((CDebugProgram *)m_pProgram)->GetEngine(&pEngine) );  
-    IfFailGo( pEngine->GetSDMProcess(ppProcess) );  
-  
-Error:  
-  
-    return hr;  
-}  
-```  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDebugCodeContext3](../../../extensibility/debugger/reference/idebugcodecontext3.md)
+Récupère une référence à l’interface du processus de débogage.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT GetProcess(
+    IDebugProcess2 **ppProcess
+);
+```
+
+```csharp
+public int GetProcess(
+    out IDebugProcess2 ppProcess
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+`ppProcess`  
+[out] Référence à l’interface de processus de débogage.
+
+## <a name="return-value"></a>Valeur de retour
+En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="example"></a>Exemple
+L’exemple suivant montre comment implémenter cette méthode pour un **CDebugCodeContext** objet qui expose le [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) interface.
+
+```cpp
+HRESULT CDebugCodeContext::GetProcess(IDebugProcess2** ppProcess)
+{
+    HRESULT hr = S_OK;
+    CComPtr<CDebugEngine> pEngine;
+    CComPtr<IDebugPort2> pPort2;
+
+    IfFalseGo( ppProcess, E_INVALIDARG );
+    *ppProcess = NULL;
+
+    IfFalseGo( m_pProgram, E_FAIL );
+    IfFailGo( ((CDebugProgram *)m_pProgram)->GetEngine(&pEngine) );
+    IfFailGo( pEngine->GetSDMProcess(ppProcess) );
+
+Error:
+
+    return hr;
+}
+```
+
+## <a name="see-also"></a>Voir aussi
+[IDebugCodeContext3](../../../extensibility/debugger/reference/idebugcodecontext3.md)

@@ -11,84 +11,84 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1867b2524508a5c786cfe42bea68dc0ff5ea76d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: eb887a7d8e164616a987e475e4617e9ea88f90bf
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941338"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56413421"
 ---
 # <a name="idebugcustomattributequerygetcustomattributebyname"></a>IDebugCustomAttributeQuery::GetCustomAttributeByName
-Récupère un attribut personnalisé est fonction de son nom.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT GetCustomAttributeByName(  
-   LPCOLESTR pszCustomAttributeName,  
-   BYTE*     ppBlob,  
-   DWORD*    pdwLen  
-);  
-```  
-  
-```csharp  
-int GetCustomAttributeByName(  
-   string    pszCustomAttributeName,  
-   ref int[] ppBlob,  
-   out uint  pdwLen  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pszCustomAttributeName`  
- [in] Nom de l’attribut personnalisé.  
-  
- `ppBlob`  
- [in, out] Tableau d’octets qui contient les données d’attribut personnalisé.  
-  
- `pdwLen`  
- [out] Longueur en octets de la `ppBlob` paramètre.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`. Si l’attribut personnalisé n’existe pas, retourne `S_FALSE`. Sinon, retourne un code d'erreur.  
-  
-## <a name="example"></a>Exemple  
- L’exemple suivant montre comment implémenter cette méthode pour un **CDebugClassFieldSymbol** objet qui expose le [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md) interface.  
-  
-```cpp  
-HRESULT CDebugClassFieldSymbol::GetCustomAttributeByName(  
-    LPCOLESTR pszCustomAttributeName,  
-    BYTE *pBlob,  
-    DWORD *pdwLen  
-)  
-{  
-    HRESULT hr = S_FALSE;  
-    CComPtr<IMetaDataImport> pMetadata;  
-    mdToken token = mdTokenNil;  
-    CComPtr<IDebugField> pField;  
-    CComPtr<IDebugCustomAttributeQuery> pCA;  
-  
-    ASSERT(IsValidWideStringPtr(pszCustomAttributeName));  
-    ASSERT(IsValidWritePtr(pdwLen, ULONG*));  
-  
-    METHOD_ENTRY( CDebugClassFieldSymbol::GetCustomAttributeByName );  
-  
-    IfFalseGo( pszCustomAttributeName && pdwLen, E_INVALIDARG );  
-  
-    IfFailGo( m_spSH->GetMetadata( m_spAddress->GetModule(), &pMetadata ) );  
-  
-    IfFailGo( CDebugCustomAttribute::GetTokenFromAddress( m_spAddress, &token) );  
-    IfFailGo( CDebugCustomAttribute::GetCustomAttributeByName( pMetadata,  
-              token,  
-              pszCustomAttributeName,  
-              pBlob,  
-              pdwLen ) );  
-Error:  
-  
-    METHOD_EXIT( CDebugClassFieldSymbol::GetCustomAttributeByName, hr );  
-    return hr;  
-}  
-```  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)
+Récupère un attribut personnalisé est fonction de son nom.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT GetCustomAttributeByName(
+    LPCOLESTR pszCustomAttributeName,
+    BYTE*     ppBlob,
+    DWORD*    pdwLen
+);
+```
+
+```csharp
+int GetCustomAttributeByName(
+    string    pszCustomAttributeName,
+    ref int[] ppBlob,
+    out uint  pdwLen
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+`pszCustomAttributeName`  
+[in] Nom de l’attribut personnalisé.
+
+`ppBlob`  
+[in, out] Tableau d’octets qui contient les données d’attribut personnalisé.
+
+`pdwLen`  
+[out] Longueur en octets de la `ppBlob` paramètre.
+
+## <a name="return-value"></a>Valeur de retour
+En cas de réussite, retourne `S_OK`. Si l’attribut personnalisé n’existe pas, retourne `S_FALSE`. Sinon, retourne un code d'erreur.
+
+## <a name="example"></a>Exemple
+L’exemple suivant montre comment implémenter cette méthode pour un **CDebugClassFieldSymbol** objet qui expose le [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md) interface.
+
+```cpp
+HRESULT CDebugClassFieldSymbol::GetCustomAttributeByName(
+    LPCOLESTR pszCustomAttributeName,
+    BYTE *pBlob,
+    DWORD *pdwLen
+)
+{
+    HRESULT hr = S_FALSE;
+    CComPtr<IMetaDataImport> pMetadata;
+    mdToken token = mdTokenNil;
+    CComPtr<IDebugField> pField;
+    CComPtr<IDebugCustomAttributeQuery> pCA;
+
+    ASSERT(IsValidWideStringPtr(pszCustomAttributeName));
+    ASSERT(IsValidWritePtr(pdwLen, ULONG*));
+
+    METHOD_ENTRY( CDebugClassFieldSymbol::GetCustomAttributeByName );
+
+    IfFalseGo( pszCustomAttributeName && pdwLen, E_INVALIDARG );
+
+    IfFailGo( m_spSH->GetMetadata( m_spAddress->GetModule(), &pMetadata ) );
+
+    IfFailGo( CDebugCustomAttribute::GetTokenFromAddress( m_spAddress, &token) );
+    IfFailGo( CDebugCustomAttribute::GetCustomAttributeByName( pMetadata,
+              token,
+              pszCustomAttributeName,
+              pBlob,
+              pdwLen ) );
+Error:
+
+    METHOD_EXIT( CDebugClassFieldSymbol::GetCustomAttributeByName, hr );
+    return hr;
+}
+```
+
+## <a name="see-also"></a>Voir aussi
+[IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)
