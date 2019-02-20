@@ -12,61 +12,61 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a51367ae2a65ac50c87aee5c9f8be2910fb1c948
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
+ms.openlocfilehash: 5df6e50185bf04dd1f4dbb9f1016a1d6b73b1185
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55038576"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318275"
 ---
 # <a name="idiaenumdebugstreamsitem"></a>IDiaEnumDebugStreams::Item
-Récupère un flux de débogage au moyen d’un index ou le nom.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT Item (   
-   VARIANT                   index,  
-   IDiaEnumDebugStreamData** stream  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- index  
- [in] Index ou nom du flux de débogage à récupérer. Si un Variant de type integer est utilisé, il doit être comprise entre 0 et `count`-1, où `count` est renvoyé par le [IDiaEnumDebugStreams::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md) (méthode).  
-  
- flux de données  
- [out] Retourne un [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) objet représentant le flux de débogage spécifié.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="example"></a>Exemple  
-  
-```C++  
-IDiaEnumDebugStreamData *GetStreamData(IDiaEnumDebugStreams *pStreamList,  
-                                       LONG whichStream)  
-{  
-    IDiaEnumDebugStreamData *pStreamData = NULL;  
-    if (pStreamList != NULL)  
-    {  
-        LONG numStreams = 0;  
-        if (pStreamList->get_count(&numStreams) == S_OK &&  
-            whichStream >= 0 && whichStream < numStreams)  
-        {  
-            VARIANT vIndex;  
-            vIndex.vt   = VT_I4;  
-            vIndex.lVal = whichStream;  
-            if (pStreamList->Item(vIndex,&pStreamData) != S_OK)  
-            {  
-                 std::cerr << "Error retrieving stream " << whichStream << std::endl;  
-            }  
-        }  
-    }  
-    return(pStreamData);  
-}  
-```  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)   
- [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)
+Récupère un flux de débogage au moyen d’un index ou le nom.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT Item (
+    VARIANT                   index,
+    IDiaEnumDebugStreamData** stream
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+index  
+[in] Index ou nom du flux de débogage à récupérer. Si un Variant de type integer est utilisé, il doit être comprise entre 0 et `count`-1, où `count` est renvoyé par le [IDiaEnumDebugStreams::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md) (méthode).
+
+flux de données  
+[out] Retourne un [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) objet représentant le flux de débogage spécifié.
+
+## <a name="return-value"></a>Valeur de retour
+En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="example"></a>Exemple
+
+```C++
+IDiaEnumDebugStreamData *GetStreamData(IDiaEnumDebugStreams *pStreamList,
+                                       LONG whichStream)
+{
+    IDiaEnumDebugStreamData *pStreamData = NULL;
+    if (pStreamList != NULL)
+    {
+        LONG numStreams = 0;
+        if (pStreamList->get_count(&numStreams) == S_OK &&
+            whichStream >= 0 && whichStream < numStreams)
+        {
+            VARIANT vIndex;
+            vIndex.vt   = VT_I4;
+            vIndex.lVal = whichStream;
+            if (pStreamList->Item(vIndex,&pStreamData) != S_OK)
+            {
+                std::cerr << "Error retrieving stream " << whichStream << std::endl;
+            }
+        }
+    }
+    return(pStreamData);
+}
+```
+
+## <a name="see-also"></a>Voir aussi
+[IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)  
+[IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

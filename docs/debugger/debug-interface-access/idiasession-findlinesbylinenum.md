@@ -12,93 +12,93 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1e59970a35da4671ae5002d5e125e48fc72a3fe
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
+ms.openlocfilehash: 68f8323b5f3d2a4ca0acff8cf5f7f770d4446cba
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54944915"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227824"
 ---
 # <a name="idiasessionfindlinesbylinenum"></a>IDiaSession::findLinesByLinenum
-Détermine les numéros de ligne de compiland que le numéro de ligne spécifié dans un fichier source se trouve dans ou à proximité.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT findLinesByLinenum (   
-   IDiaSymbol*           compiland,  
-   IDiaSourceFile*       file,  
-   DWORD                 linenum,  
-   DWORD                 column,  
-   IDiaEnumLineNumbers** ppResult  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `compiland`  
- [in] Un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objet qui représente le compiland dans laquelle rechercher les numéros de ligne. Ce paramètre ne peut pas être `NULL`.  
-  
- `file`  
- [in] Un [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) objet qui représente le fichier source à rechercher dans. Ce paramètre ne peut pas être `NULL`.  
-  
- `linenum`  
- [in] Spécifie un numéro de ligne de base 1.  
-  
+Détermine les numéros de ligne de compiland que le numéro de ligne spécifié dans un fichier source se trouve dans ou à proximité.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT findLinesByLinenum ( 
+    IDiaSymbol*           compiland,
+    IDiaSourceFile*       file,
+    DWORD                 linenum,
+    DWORD                 column,
+    IDiaEnumLineNumbers** ppResult
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+`compiland`  
+[in] Un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objet qui représente le compiland dans laquelle rechercher les numéros de ligne. Ce paramètre ne peut pas être `NULL`.
+
+`file`  
+[in] Un [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) objet qui représente le fichier source à rechercher dans. Ce paramètre ne peut pas être `NULL`.
+
+`linenum`  
+[in] Spécifie un numéro de ligne de base 1.
+
 > [!NOTE]
->  Vous ne pouvez pas utiliser de zéro pour spécifier toutes les lignes (utiliser le [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md) méthode pour rechercher toutes les lignes).  
-  
- `column`  
- [in] Spécifie le numéro de colonne. Utilisez zéro pour spécifier toutes les colonnes. Une colonne est un offset d’octet dans une ligne.  
-  
- `ppResult`  
- [out] Retourne un [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objta qui contient une liste des numéros de ligne récupérée.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="example"></a>Exemple  
- L’exemple suivant montre comment ouvrir un fichier source, énumérer les compilands fournis par ce fichier et recherchez les numéros de ligne dans le fichier source où chaque compiland commence.  
-  
-```C++  
-void ShowLinesInCompilands(IDiaSession *pSession, LPCOLESTR filename)  
-{  
-    IDiaEnumSourceFiles* pEnum;  
-    IDiaSourceFile*      pFile;  
-    DWORD                celt;  
-  
-    pSession->findFile ( NULL, filename, nsFNameExt, &pEnum );  
-    while ( pEnum->Next ( 1, &pFile, &celt ) == S_OK ) // for each file  
-    {  
-        IDiaEnumSymbols* pEnumCompilands;  
-        IDiaSymbol* pCompiland;  
-  
-        pFile->get_compilands ( &pEnumCompilands );  
-        // for each compiland  
-        while ( pEnumCompilands->Next ( 1, &pCompiland, &celt ) == S_OK )  
-        {  
-            IDiaEnumLineNumbers* pEnum;  
-            // Find first compiland closest to line 1 of the file.  
-            if (pSession->findLinesByLinenum( pCompiland, pFile, 1, 0, &pEnum ) == S_OK)  
-            {  
-                IDiaLineNumber *pLineNumber;  
-                DWORD lineCount;  
-                while ( pEnum->Next(1,&pLineNumber,&lineCount) == S_OK)  
-                {  
-                     DWORD lineNum;  
-                     if (pLineNumber->get_line(&lineNum) == S_OK)  
-                     {  
-                          printf("compiland starts in source at line number = %lu\n",lineNum);  
-                     }  
-                }  
-            }  
-        }  
-    }  
-}  
-```  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)   
- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+> Vous ne pouvez pas utiliser de zéro pour spécifier toutes les lignes (utiliser le [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md) méthode pour rechercher toutes les lignes).
+
+`column`  
+[in] Spécifie le numéro de colonne. Utilisez zéro pour spécifier toutes les colonnes. Une colonne est un offset d’octet dans une ligne.
+
+`ppResult`  
+[out] Retourne un [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objta qui contient une liste des numéros de ligne récupérée.
+
+## <a name="return-value"></a>Valeur de retour
+En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="example"></a>Exemple
+L’exemple suivant montre comment ouvrir un fichier source, énumérer les compilands fournis par ce fichier et recherchez les numéros de ligne dans le fichier source où chaque compiland commence.
+
+```C++
+void ShowLinesInCompilands(IDiaSession *pSession, LPCOLESTR filename)
+{
+    IDiaEnumSourceFiles* pEnum;
+    IDiaSourceFile*      pFile;
+    DWORD                celt;
+
+    pSession->findFile ( NULL, filename, nsFNameExt, &pEnum );
+    while ( pEnum->Next ( 1, &pFile, &celt ) == S_OK ) // for each file
+    {
+        IDiaEnumSymbols* pEnumCompilands;
+        IDiaSymbol* pCompiland;
+
+        pFile->get_compilands ( &pEnumCompilands );
+        // for each compiland
+        while ( pEnumCompilands->Next ( 1, &pCompiland, &celt ) == S_OK )
+        {
+            IDiaEnumLineNumbers* pEnum;
+            // Find first compiland closest to line 1 of the file.
+            if (pSession->findLinesByLinenum( pCompiland, pFile, 1, 0, &pEnum ) == S_OK)
+            {
+                IDiaLineNumber *pLineNumber;
+                DWORD lineCount;
+                while ( pEnum->Next(1,&pLineNumber,&lineCount) == S_OK)
+                {
+                    DWORD lineNum;
+                    if (pLineNumber->get_line(&lineNum) == S_OK)
+                    {
+                        printf("compiland starts in source at line number = %lu\n",lineNum);
+                    }
+                }
+            }
+        }
+    }
+}
+```
+
+## <a name="see-also"></a>Voir aussi
+[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)  
+[IDiaSession](../../debugger/debug-interface-access/idiasession.md)  
+[IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)  
+[IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)  
+[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

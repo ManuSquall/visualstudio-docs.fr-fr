@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1bde9807-8219-4a2a-a440-ac5ee5178159
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 882d357b606ec5bb0419c88dc9c996ccd4a749a6
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
-ms.translationtype: MTE95
+ms.openlocfilehash: 96a7fe0e46420a2469271219aa44ee76c9a49774
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54227718"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986798"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Utilisation du collecteur autonome IntelliTrace (C#, Visual Basic)
 
@@ -78,7 +78,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
 ##  <a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a> Installer le collecteur
 
-1. Sur le serveur de votre application, créez le répertoire du collecteur, par exemple  **C:\IntelliTraceCollector**
+1. Sur le serveur de votre application, créez le répertoire du collecteur, par exemple : **C:\IntelliTraceCollector**
 
 2. Installez le collecteur à partir du Centre de téléchargement Microsoft ou du dossier d’installation de Visual Studio 2013 Update 3. [Collecteur IntelliTrace pour Visual Studio 2013 Update 4](https://www.microsoft.com/en-us/download/details.aspx?id=44909):
 
@@ -86,7 +86,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
      1. À côté de **IntelliTraceCollector.exe**, choisissez **Télécharger**.
 
-     2. Enregistrez IntelliTraceCollector.exe dans le répertoire du collecteur, par exemple  **C:\IntelliTraceCollector**
+     2. Enregistrez IntelliTraceCollector.exe dans le répertoire du collecteur, par exemple **C:\IntelliTraceCollector**
 
      3. Exécutez IntelliTraceCollector.exe. Cette opération extrait le fichier IntelliTraceCollection.cab.
 
@@ -98,13 +98,13 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
           **..\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
 
-     2.  Placez IntelliTraceCollection.cab dans le répertoire du collecteur, par exemple  **C:\IntelliTraceCollector**
+     2.  Placez IntelliTraceCollection.cab dans le répertoire du collecteur, par exemple **C:\IntelliTraceCollector**
 
 3. Développez IntelliTraceCollection.cab :
 
    1.  Sur le serveur de votre application, ouvrez une fenêtre d’invite de commandes en tant qu’administrateur.
 
-   2.  Accédez au répertoire du collecteur, par exemple  **C:\IntelliTraceCollector**
+   2.  Accédez au répertoire du collecteur, par exemple **C:\IntelliTraceCollector**
 
    3.  Exécutez la commande **expand** suivante, avec le point (**.**) à la fin, pour développer IntelliTraceCollection.cab :
 
@@ -167,7 +167,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
 ##  <a name="BKMK_Create_and_Configure_a_Log_File_Directory"></a> Définir les autorisations du répertoire de fichiers .iTrace
 
-1. Sur le serveur de votre application, créez le répertoire de fichiers .iTrace, par exemple  **C:\IntelliTraceLogFiles**
+1. Sur le serveur de votre application, créez le répertoire de fichiers .iTrace, par exemple : **C:\IntelliTraceLogFiles**
 
    > [!NOTE]
    > - Pour éviter de ralentir votre application, choisissez un emplacement sur un disque local rapide et qui n’est pas très actif.
@@ -225,8 +225,8 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
     |||
     |-|-|
     |*ApplicationPool*|Nom du pool d’applications dans lequel votre application s’exécute.|
-    |*PathToCollectionPlan*|Chemin d’accès à un plan de collecte, un fichier .xml qui configure les paramètres du collecteur.<br /><br /> Vous pouvez spécifier un plan qui est fourni avec le collecteur. Les plans suivants fonctionnent avec les applications web et SharePoint :<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     Collecte uniquement les événements IntelliTrace et les événements SharePoint, y compris les exceptions, les appels de base de données et les demandes de serveur web.<br />-   collection_plan.ASP.NET.trace.xml<br />     Collecte les appels de fonction et toutes les données du plan collection_plan.ASP.NET.default.xml. Ce plan est approprié pour une analyse détaillée, mais il risque de ralentir votre application davantage que le plan collection_plan.ASP.NET.default.xml.<br /><br /> Pour éviter de ralentir votre application, personnalisez ces plans ou créez votre propre plan. Pour des raisons de sécurité, placez tous les plans personnalisés dans le même emplacement sécurisé que les fichiers du collecteur. Consultez [Créer et personnaliser des plans de collecte IntelliTrace](http://go.microsoft.com/fwlink/?LinkId=227871) et [Comment puis-je obtenir le maximum de données sans ralentir mon application ?](#Minimizing) **Remarque :**  Par défaut, la taille maximale du fichier .iTrace est de 100 Mo. Quand le fichier .iTrace atteint cette limite, le collecteur supprime les entrées les plus anciennes du fichier pour faire de la place aux nouvelles entrées. Pour changer cette limite, modifiez l’attribut `MaximumLogFileSize` du plan de collecte. <br /><br /> *Où puis-je trouver des versions localisées de ces plans de collecte ?*<br /><br /> Les plans de collecte localisés sont situés dans les sous-dossiers du collecteur.|
-    |*FullPathToITraceFileDirectory*|Chemin d’accès complet au répertoire de fichiers .iTrace. **Note de sécurité :**  Spécifiez le chemin d’accès complet et non pas un chemin d’accès relatif.|
+    |*PathToCollectionPlan*|Chemin d’accès à un plan de collecte, un fichier .xml qui configure les paramètres du collecteur.<br /><br /> Vous pouvez spécifier un plan qui est fourni avec le collecteur. Les plans suivants fonctionnent avec les applications web et SharePoint :<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     Collecte uniquement les événements IntelliTrace et les événements SharePoint, y compris les exceptions, les appels de base de données et les demandes de serveur web.<br />-   collection_plan.ASP.NET.trace.xml<br />     Collecte les appels de fonction et toutes les données du plan collection_plan.ASP.NET.default.xml. Ce plan est approprié pour une analyse détaillée, mais il risque de ralentir votre application davantage que le plan collection_plan.ASP.NET.default.xml.<br /><br /> Pour éviter de ralentir votre application, personnalisez ces plans ou créez votre propre plan. Pour des raisons de sécurité, placez tous les plans personnalisés dans le même emplacement sécurisé que les fichiers du collecteur. Consultez [Créer et personnaliser des plans de collecte IntelliTrace](http://go.microsoft.com/fwlink/?LinkId=227871) et [Comment puis-je obtenir le maximum de données sans ralentir mon application ?](#Minimizing) **Remarque :** par défaut, la taille maximale du fichier .iTrace est de 100 Mo. Quand le fichier .iTrace atteint cette limite, le collecteur supprime les entrées les plus anciennes du fichier pour faire de la place aux nouvelles entrées. Pour changer cette limite, modifiez l’attribut `MaximumLogFileSize` du plan de collecte. <br /><br /> *Où puis-je trouver des versions localisées de ces plans de collecte ?*<br /><br /> Les plans de collecte localisés sont situés dans les sous-dossiers du collecteur.|
+    |*FullPathToITraceFileDirectory*|Chemin d’accès complet au répertoire de fichiers .iTrace. **Note de sécurité :** fournir le chemin d’accès complet, pas un chemin d’accès relatif.|
 
      Le collecteur se connecte au pool d’applications et commence la collecte de données.
 
@@ -264,8 +264,8 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
     |||
     |-|-|
     |*FullPathToIntelliTraceCollectorExecutable*|Chemin d’accès complet à l’exécutable du collecteur (IntelliTraceSC.exe).|
-    |*PathToCollectionPlan*|Chemin d’accès à un plan de collecte, un fichier .xml qui configure les paramètres du collecteur.<br /><br /> Vous pouvez spécifier un plan qui est fourni avec le collecteur. Les plans suivants fonctionnent avec les applications managées :<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     Collecte uniquement les événements IntelliTrace, y compris les exceptions, les appels de base de données et les demandes de serveur web.<br />-   collection_plan.ASP.NET.trace.xml<br />     Collecte les appels de fonction et toutes les données du plan collection_plan.ASP.NET.default.xml. Ce plan est approprié pour une analyse détaillée, mais il risque de ralentir votre application davantage que le plan collection_plan.ASP.NET.default.xml.<br /><br /> Pour éviter de ralentir votre application, personnalisez ces plans ou créez votre propre plan. Pour des raisons de sécurité, placez tous les plans personnalisés dans le même emplacement sécurisé que les fichiers du collecteur. Consultez [Créer et personnaliser des plans de collecte IntelliTrace](http://go.microsoft.com/fwlink/?LinkId=227871) et [Comment puis-je obtenir le maximum de données sans ralentir mon application ?](#Minimizing) **Remarque :**  Par défaut, la taille maximale du fichier .iTrace est de 100 Mo. Quand le fichier .iTrace atteint cette limite, le collecteur supprime les entrées les plus anciennes du fichier pour faire de la place aux nouvelles entrées. Pour changer cette limite, modifiez l’attribut `MaximumLogFileSize` du plan de collecte. <br /><br /> *Où puis-je trouver des versions localisées de ces plans de collecte ?*<br /><br /> Les plans de collecte localisés sont situés dans les sous-dossiers du collecteur.|
-    |*FullPathToITraceFileDirectoryAndFileName*|Chemin d’accès complet au répertoire du fichier .iTrace et nom du fichier .iTrace avec l’extension **.itrace** . **Note de sécurité :**  Spécifiez le chemin d’accès complet et non pas un chemin d’accès relatif.|
+    |*PathToCollectionPlan*|Chemin d’accès à un plan de collecte, un fichier .xml qui configure les paramètres du collecteur.<br /><br /> Vous pouvez spécifier un plan qui est fourni avec le collecteur. Les plans suivants fonctionnent avec les applications managées :<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     Collecte uniquement les événements IntelliTrace, y compris les exceptions, les appels de base de données et les demandes de serveur web.<br />-   collection_plan.ASP.NET.trace.xml<br />     Collecte les appels de fonction et toutes les données du plan collection_plan.ASP.NET.default.xml. Ce plan est approprié pour une analyse détaillée, mais il risque de ralentir votre application davantage que le plan collection_plan.ASP.NET.default.xml.<br /><br /> Pour éviter de ralentir votre application, personnalisez ces plans ou créez votre propre plan. Pour des raisons de sécurité, placez tous les plans personnalisés dans le même emplacement sécurisé que les fichiers du collecteur. Consultez [Créer et personnaliser des plans de collecte IntelliTrace](http://go.microsoft.com/fwlink/?LinkId=227871) et [Comment puis-je obtenir le maximum de données sans ralentir mon application ?](#Minimizing) **Remarque :** par défaut, la taille maximale du fichier .iTrace est de 100 Mo. Quand le fichier .iTrace atteint cette limite, le collecteur supprime les entrées les plus anciennes du fichier pour faire de la place aux nouvelles entrées. Pour changer cette limite, modifiez l’attribut `MaximumLogFileSize` du plan de collecte. <br /><br /> *Où puis-je trouver des versions localisées de ces plans de collecte ?*<br /><br /> Les plans de collecte localisés sont situés dans les sous-dossiers du collecteur.|
+    |*FullPathToITraceFileDirectoryAndFileName*|Chemin d’accès complet au répertoire du fichier .iTrace et nom du fichier .iTrace avec l’extension **.itrace** . **Note de sécurité :** fournir le chemin d’accès complet, pas un chemin d’accès relatif.|
     |*PathToAppExecutableFileAndFileName*|Chemin d’accès et nom de fichier de votre application managée.|
 
 2.  Arrêtez la collecte de données en quittant l’application.
@@ -379,7 +379,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
 -   À partir d’une session dans Visual Studio Enterprise de débogage d’IntelliTrace, consultez [fonctionnalités IntelliTrace](../debugger/intellitrace-features.md).
 
--   À partir d’une session de test dans Microsoft Test Manager, consultez [Comment : collecter des données IntelliTrace permettant de déboguer des problèmes difficiles
+-   À partir d’une session de test dans Microsoft Test Manager, consultez [Comment : collecter des données IntelliTrace pour aider au débogage des problèmes difficiles](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).
 
 ## <a name="where-can-i-get-more-information"></a>Où peut-on obtenir plus d’informations ?
  [Utilisation des données IntelliTrace enregistrées](../debugger/using-saved-intellitrace-data.md)

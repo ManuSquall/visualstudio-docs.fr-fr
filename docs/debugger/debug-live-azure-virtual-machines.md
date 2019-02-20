@@ -1,25 +1,26 @@
 ---
-title: Déboguer des applications de production ASP.NET Azure
+title: Débogage en direct ASP.NET les machines virtuelles et jeux de mise à l’échelle de machine virtuelle Azure
 description: Découvrez comment définir des points d’ancrage et afficher les captures instantanées avec le débogueur de capture instantanée.
 ms.custom: ''
-ms.date: 03/16/2018
+ms.date: 02/06/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
-author: mikejo5000
-ms.author: mikejo
-manager: jillfra
+author: poppastring
+ms.author: madownie
+manager: andster
+monikerRange: vs-2019
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b2db748d747f1e3c12a2d9e91a4b310e31b0299c
+ms.openlocfilehash: 7a0363c26171382b0cab13e529b08378681f3f65
 ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335595"
+ms.locfileid: "56335992"
 ---
-# <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Déboguer des applications ASP.NET Azure en direct à l’aide du débogueur de capture instantanée
+# <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Déboguer des applications ASP.NET en production sur des machines virtuelles et jeux de mise à l’échelle de machine virtuelle Azure à l’aide du débogueur de capture instantanée
 
 Le débogueur de capture instantanée prend un instantané de vos applications de production lors de l’exécution de code qui vous intéresse. Pour indiquer au débogueur de prendre une capture instantanée, vous définissez des points d’ancrage et des points de journalisation dans votre code. Dans le débogueur, vous pouvez voir précisément à quel endroit le code ne s’est pas exécuté correctement, sans que cela impacte le trafic de votre application en production. Snapshot Debugger peut vous aider à résoudre beaucoup plus vite les problèmes rencontrés dans les environnements de production.
 
@@ -34,13 +35,11 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
 ## <a name="prerequisites"></a>Prérequis
 
-* Débogueur de capture instantanée est uniquement disponible pour Visual Studio 2017 Enterprise version 15.5 ou version ultérieure avec le **charge de travail de développement Azure**. (Sous la **composants individuels** onglet, vous retrouver sous **débogage et test** > **débogueur de capture instantanée**.)
+* Débogueur de capture instantanée pour les Machines virtuelles Azure (VM) et Azure Virtual Machine Scale Sets (VMSS) est uniquement disponible en version préliminaire de Visual Studio 2019 Enterprise ou une version ultérieure avec le **charge de travail de développement Azure**. (Sous la **composants individuels** onglet, vous retrouver sous **débogage et test** > **débogueur de capture instantanée**.)
 
-    S’il n’est pas déjà installé, installez [Visual Studio 2017 Enterprise version 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ou version ultérieure. Si vous mettez à jour à partir d’une précédente installation de Visual Studio 2017, exécutez le programme d’installation Visual Studio et vérifiez le composant de débogueur de capture instantanée le **charge de travail de développement ASP.NET et web**.
+    S’il n’est pas déjà installé, installez [Visual Studio 2019 Enterprise preview](https://visualstudio.microsoft.com/vs/preview/).
 
-* Plan Azure App Service de base ou supérieur.
-
-* La fonctionnalité de capture instantanée est disponible pour les applications web suivantes qui s’exécutent dans Azure App Service :
+* Collecte de captures instantanées est disponible pour les applications web Azure VM/VMSS suivantes :
   * Applications ASP.NET exécutées sur .NET Framework version 4.6.1 ou ultérieure.
   * Applications ASP.NET Core exécutées sur .NET Core version 2.0 ou ultérieure sur Windows.
 
@@ -49,44 +48,37 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 1. Ouvrez le projet que vous souhaitez le débogage d’instantané.
 
     > [!IMPORTANT]
-    > Débogage d’instantané, vous devez ouvrir le *même version de code source* qui est publié dans votre Azure App Service.
-::: moniker range="< vs-2019"
+    > Débogage d’instantané, vous devez ouvrir le *même version de code source* qui est publié dans votre service Azure VM/VMSS.
 
-2. Dans l’Explorateur de Cloud (**Affichage > Cloud Explorer**), cliquez sur votre projet est déployé dans Azure App Service et sélectionnez **attacher un débogueur de capture instantanée**.
+1. Attacher le débogueur de capture instantanée. Vous pouvez utiliser une des différentes méthodes :
 
-   ![Lancer le débogueur de capture instantanée](../debugger/media/snapshot-launch.png)
-
-    La première fois que vous sélectionnez **attacher un débogueur de capture instantanée**, vous êtes invité à installer l’extension de site du débogueur de capture instantanée sur votre Azure App Service. Cette installation nécessite un redémarrage de votre Azure App Service.
-
-::: moniker-end
-::: moniker range=">= vs-2019"
-2. Attacher le débogueur de capture instantanée. Vous pouvez utiliser une des différentes méthodes :
-
-    * Choisissez **Déboguer > attacher le débogueur de capture instantanée...** . Sélectionnez votre projet est déployé dans Azure App Service et un compte de stockage Azure, puis cliquez sur **attacher**.
+    * Choisissez **Déboguer > attacher le débogueur de capture instantanée...** . Sélectionnez votre application web est déployée sur Azure VM/VMSS et un compte de stockage Azure, puis cliquez sur **attacher**.
   
       ![Lancer le débogueur de capture instantanée à partir du menu Débogage](../debugger/media/snapshot-debug-menu-attach.png)
 
-    * Cliquez avec le bouton droit sur votre projet, puis sélectionnez **publier**, puis, dans la page Publier, cliquez sur **attacher un débogueur de capture instantanée**. Sélectionnez votre projet est déployé dans Azure App Service et un compte de stockage Azure, puis cliquez sur **attacher**.
+    * Cliquez avec le bouton droit sur votre projet, puis sélectionnez **publier**, puis, dans la page Publier, cliquez sur **attacher un débogueur de capture instantanée**. Sélectionnez votre application web est déployée sur Azure VM/VMSS et un compte de stockage Azure, puis cliquez sur **attacher**.
     ![Lancer le débogueur de capture instantanée à partir de la page de publication](../debugger/media/snapshot-publish-attach.png)
 
-    * Dans le débogage cibler le menu de liste déroulante, sélectionnez **débogueur de capture instantanée**, positionnement **F5** et si nécessaire sélectionner votre projet est déployé dans Azure App Service et un stockage Azure du compte, puis cliquez sur  **Attacher**.
+    * Dans le débogage cibler le menu de liste déroulante, sélectionnez **débogueur de capture instantanée**, positionnement **F5** et si nécessaire sélectionner votre application web est déployée sur Azure VM/VMSS et un stockage Azure du compte, puis cliquez sur  **Attacher**.
     ![Lancer le débogueur de capture instantanée à partir du menu de liste déroulante de F5](../debugger/media/snapshot-F5-dropdown-attach.png)
 
-    * À l’aide de l’Explorateur de Cloud (**Affichage > Cloud Explorer**), avec le bouton droit de votre projet est déployé dans Azure App Service et sélectionnez un compte de stockage Azure, puis cliquez sur **attacher un débogueur de capture instantanée**.
+    * À l’aide de l’Explorateur de Cloud (**Affichage > Cloud Explorer**), avec le bouton droit de votre application web est déployée sur Azure VM/VMSS et sélectionnez un compte de stockage Azure, puis cliquez sur **attacher un débogueur de capture instantanée**.
   
       ![Lancer le débogueur de capture instantanée à partir de l’Explorateur de Cloud](../debugger/media/snapshot-launch.png)
 
-    La première fois que vous sélectionnez **attacher un débogueur de capture instantanée**, vous êtes invité à installer l’extension de site du débogueur de capture instantanée sur votre Azure App Service. Cette installation nécessite un redémarrage de votre Azure App Service.
-::: moniker-end
+    > [!IMPORTANT]
+    > La première fois que vous sélectionnez **attacher un débogueur de capture instantanée** pour votre machine virtuelle, IIS est redémarré automatiquement.
+    > La première fois que vous sélectionnez **attacher un débogueur de capture instantanée** pour votre VMSS, nécessitent la mise à niveau manuelle de chaque instance de la VMSS.
 
-   Visual Studio est maintenant en mode de débogage d’instantané.
+    Les métadonnées pour le **Modules** ne doit pas être initialement activée, accédez à l’application web et le **démarrer la collecte** bouton devient actif. Visual Studio est maintenant en mode de débogage d’instantané.
 
-  > [!NOTE]
-  > L’extension de site Application Insights prend également en charge le débogage d’instantané. Si vous rencontrez un message d’erreur « extension obsolète de site », consultez [résolution des problèmes de conseils et les problèmes connus pour le débogage d’instantané](../debugger/debug-live-azure-apps-troubleshooting.md) détails de la mise à niveau.
+    > [!NOTE]
+    > L’extension de site Application Insights prend également en charge le débogage d’instantané. Si vous rencontrez un message d’erreur « extension obsolète de site », consultez [résolution des problèmes de conseils et les problèmes connus pour le débogage d’instantané](../debugger/debug-live-azure-apps-troubleshooting.md) détails de la mise à niveau.
+    > Pour VMSS l’utilisateur est nécessaire pour mettre à niveau manuellement les instances dans leurs VMSS après avoir attaché le débogueur d’instantané pour la première fois.
 
    ![Mode de débogage d’instantané](../debugger/media/snapshot-message.png)
 
-   Le **Modules** fenêtre vous montre que tous les modules ont chargés pour Azure App Service (choisissez **Déboguer > Windows > Modules** pour ouvrir cette fenêtre).
+   Le **Modules** fenêtre vous montre que tous les modules ont chargés pour Azure VM/VMSS (choisissez **Déboguer > Windows > Modules** pour ouvrir cette fenêtre).
 
    ![Vérification de la fenêtre Modules](../debugger/media/snapshot-modules.png)
 
@@ -96,7 +88,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
    ![Définir un point d’ancrage](../debugger/media/snapshot-set-snappoint.png)
 
-2. Cliquez sur **démarrer la collecte** pour activer le point d’ancrage.
+1. Cliquez sur **démarrer la collecte** pour activer le point d’ancrage.
 
    ![Activer le point d’ancrage](../debugger/media/snapshot-start-collection.png)
 
@@ -163,7 +155,7 @@ Outre l’extraction d’un instantané lorsqu’un point d’ancrage est attein
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Dans ce didacticiel, vous avez appris comment utiliser le débogueur de capture instantanée pour les Services d’application. Voulez-vous en savoir plus sur cette fonctionnalité.
+Dans ce didacticiel, vous avez appris comment utiliser le débogueur de capture instantanée pour les Machines virtuelles Azure et Azure Virtual Machine Scale Sets. Voulez-vous en savoir plus sur cette fonctionnalité.
 
 > [!div class="nextstepaction"]
 > [FAQ pour le débogage d’instantané](../debugger/debug-live-azure-apps-faq.md)

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 817e6f31d9282caf77c9f403c7e5555075726d2d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bbdbeb10d9d5d7afb7adf17b7a27a0b8d59c9e72
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54943797"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335478"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Problèmes connus et dépannage pour le débogage d’instantané dans Visual Studio
 
@@ -32,7 +32,7 @@ Procédez comme suit :
 
 1. Assurez-vous que vous disposez de la même version de code source qui a été utilisé pour générer et déployer votre app.isua1. Assurez-vous que vous chargez les symboles appropriés pour votre déploiement. Pour ce faire, vous devez afficher le **Modules** fenêtre lors du débogage d’instantané et vérifiez que la colonne du fichier de symboles affiche un fichier .pdb chargé pour le module que vous déboguez. Le débogueur d’instantané tente de télécharger et utiliser des symboles pour votre déploiement automatiquement.
 
-## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problème : Symboles ne se chargent pas lorsque j’ouvre une capture instantanée
+## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problème : Les symboles ne se chargent pas lorsque j’ouvre une capture instantanée
 
 Si vous voyez après la fenêtre, les symboles n’a pas chargé.
 
@@ -48,14 +48,26 @@ Procédez comme suit :
 
 - Également, si votre organisation utilise un serveur de symboles ou supprime les symboles dans un autre chemin d’accès, vous pouvez utiliser les paramètres des symboles pour charger les symboles appropriés pour votre déploiement.
 
-## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Problème : Je ne vois pas l’option « Attacher le débogueur instantané » dans l’Explorateur de Cloud
+## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Problème : je ne vois pas l’option « Attacher le débogueur instantané » dans l’Explorateur de Cloud
 
 Procédez comme suit :
 
 - Assurez-vous que le composant de débogueur de capture instantanée est installé. Ouvrez Visual Studio Installer et vérifiez la **débogueur de capture instantanée** composant dans la charge de travail Azure.
+::: moniker range="< vs-2019"
 - Assurez-vous que votre application est prise en charge. Actuellement, seuls ASP.NET (4.6.1+) et les applications ASP.NET Core (2.0 +) déployées dans Azure App Services sont pris en charge.
+::: moniker-end
+::: moniker range=">= vs-2019"
+- Vérifiez que votre application est prise en charge :
+  - Azure App Services - applications ASP.NET exécutées sur .NET Framework 4.6.1 ou version ultérieure.
+  - Azure App Services - applications ASP.NET Core s’exécutant sur .NET Core 2.0 ou version ultérieure sur Windows.
+  - Azure applications ASP.NET de Machines virtuelles (et VMSS) - en cours d’exécution sur .NET Framework 4.6.1 ou version ultérieure.
+  - Azure des Machines virtuelles (VMSS) - ASP.NET Core applications et en cours d’exécution sur .NET Core 2.0 ou version ultérieure sur Windows.
+  - Services Kubernetes Azure - applications ASP.NET Core s’exécutant sur .NET Core 2.2 ou version ultérieure sur Debian 9.
+  - Services Kubernetes Azure - applications ASP.NET Core s’exécutant sur .NET Core 2.2 ou version ultérieure sur 3.8 Alpine.
+  - Services Kubernetes Azure - applications ASP.NET Core s’exécutant sur .NET Core 2.2 ou version ultérieure sur Ubuntu 18.04.
+::: moniker-end
 
-## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problème : Je vois seulement limité des instantanés dans les outils de Diagnostic
+## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problème : je vois seulement limité des instantanés dans les outils de Diagnostic
 
 ![Point d’ancrage limitées](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "limitées de point d’ancrage")
 
@@ -66,7 +78,7 @@ Procédez comme suit :
 ## <a name="known-issues"></a>Problèmes connus
 
 - Débogage d’instantané avec plusieurs clients de Visual Studio sur le même plan App Service n’est pas pris en charge actuellement.
-- Optimisations de langage intermédiaire Roslyn ne sont pas pris en charge dans les projets ASP.NET Core. Pour certains projets ASP.NET Core, vous ne serez peut-être pas en mesure de voir certaines variables ou utiliser des variables dans les instructions conditionnelles. 
+- Optimisations de langage intermédiaire Roslyn ne sont pas pris en charge dans les projets ASP.NET Core. Pour certains projets ASP.NET Core, vous ne serez peut-être pas en mesure de voir certaines variables ou utiliser des variables dans les instructions conditionnelles.
 - Variables spéciales, telles que *$FUNCTION* ou *$CALLER*, ne peut pas être évaluée dans des instructions conditionnelles ou des points de journalisation pour les projets ASP.NET Core.
 - Débogage d’instantané ne fonctionne pas sur les Services d’application qui ont [mise en cache locale](/azure/app-service/app-service-local-cache) sous tension.
 - Débogage des applications API d’instantané n’est pas pris en charge.
@@ -86,4 +98,6 @@ Débogage d’instantané et Application Insights varient selon un ICorProfiler,
 
 [Débogage dans Visual Studio](../debugger/index.md)  
 [Déboguer des applications ASP.NET en production à l’aide du débogueur de capture instantanée](../debugger/debug-live-azure-applications.md)  
+[Débogage en direct ASP.NET Azure virtuel Machines\Virtual Machines identiques à l’aide du débogueur de capture instantanée](../debugger/debug-live-azure-virtual-machines.md)  
+[Déboguer ASP.NET Azure Kubernetes en direct à l’aide du débogueur de capture instantanée](../debugger/debug-live-azure-kubernetes.md)  
 [FAQ pour le débogage d’instantané](../debugger/debug-live-azure-apps-faq.md)  
