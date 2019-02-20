@@ -11,17 +11,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fddaedca2e1e1728916a2e12ea9d9538081be96
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8660d60706e903895e1be8471620666d812c7862
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954047"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318550"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Conseils et astuces d’accessibilité pour Visual Studio
 
 > [!TIP]
-> Pour en savoir plus sur les dernières nouveautés en matière d’accessibilité, consultez le billet de blog [Améliorations apportées à l’accessibilité dans Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/).
+> Pour en savoir plus sur les dernières nouveautés en matière d’accessibilité, consultez le billet de blog [Améliorations apportées à l’accessibilité dans Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/).
 
 Visual Studio inclut des fonctionnalités d’accessibilité intégrées qui sont compatibles avec les lecteurs d’écran et d’autres appareils de technologie d’assistance. Cette rubrique répertorie des combinaisons de touches de raccourci courantes que vous pouvez utiliser pour effectuer des tâches avec le clavier uniquement, et inclut des informations sur l’utilisation de thèmes à contraste élevé pour améliorer la visibilité. Elle vous montre également comment utiliser des annotations pour révéler des informations utiles sur votre code et comment définir des signaux audio pour les événements de build et de point d’arrêt.
 

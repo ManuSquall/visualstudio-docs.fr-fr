@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f8cdcc9e05a3b238adcd559911208cbb6532b1d5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0a5cf418b04f43be9d10b39b9ffc518255092a8a
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918245"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318431"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Utiliser différents navigateurs web avec des tests codés de l’interface utilisateur
 
@@ -24,13 +24,13 @@ Installez d’abord les [composants Selenium pour les tests codés de l’interf
 
 ## <a name="whats-supported-across-all-web-browsers"></a>Quelles sont les opérations prises en charge par tous les navigateurs web ?
 
--   [Ajouter du code personnalisé pour contrôler les fonctionnalités](https://blogs.msdn.microsoft.com/devops/2012/12/09/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/) comme les propriétés, la recherche et les objets waiter de lecture.
+-   [Ajouter du code personnalisé pour contrôler les fonctionnalités](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/) comme les propriétés, la recherche et les objets waiter de lecture.
 
 -   Boîtes de dialogue et menus contextuels
 
--   [Exécuter le code JavaScript de base sans type de retour](https://blogs.msdn.microsoft.com/devops/2013/01/18/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
+-   [Exécuter le code JavaScript de base sans type de retour](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
 
--   Résilience de recherche (avec concordance active) et [améliorations des performances](https://blogs.msdn.microsoft.com/devops/2012/01/31/guidelines-on-improving-performance-of-coded-ui-test-playback/)
+-   Résilience de recherche (avec concordance active) et [améliorations des performances](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
 
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>Pourquoi dois-je utiliser les tests codés de l'interface utilisateur sur différents types de navigateur web ?
 

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d800336a921d76e3b30580127547081dc8f02967
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fdfc350305400a42565aa55fa5e29cc40286ed0c
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930244"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318769"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Conseils et astuces sur les performances dans Visual Studio
 
@@ -130,4 +130,4 @@ Pour obtenir une description détaillée du récupérateur de mémoire CLR, cons
 ## <a name="see-also"></a>Voir aussi
 
 - [Optimiser les performances de Visual Studio](../ide/optimize-visual-studio-performance.md)
-- [Charger des solutions plus rapidement (blog Visual Studio)](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)
+- [Charger des solutions plus rapidement (blog Visual Studio)](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

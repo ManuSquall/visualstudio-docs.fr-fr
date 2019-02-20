@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c040d0375a8ecb2872e148331166ecae45040cf
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: ab8c76a867f67f94cb0ce3589cc8aa411fd70663
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154048"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316962"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Développement mobile multiplateforme dans Visual Studio
 
@@ -158,7 +158,7 @@ Avec Visual Studio Tools pour Xamarin, vous pouvez cibler Android, iOS et Window
 |[En savoir plus sur la création de jeux Unity avec Visual Studio](https://visualstudio.microsoft.com/vs/features/game-development/#tab-4b0d0be8de5f65564ad)|
 |[En savoir plus sur les Outils Visual Studio pour Unity](../cross-platform/visual-studio-tools-for-unity.md) |
 |[Commencer à utiliser les Outils Visual Studio pour Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) |
-|[En savoir plus sur les dernières améliorations apportées à Visual Studio Tools for Unity 2.0 Preview](https://blogs.msdn.microsoft.com/visualstudio/2014/12/03/visual-studio-tools-for-unity-2-0-preview/) (blog de Visual Studio)|
+|[En savoir plus sur les dernières améliorations apportées à Visual Studio Tools for Unity 2.0 Preview](https://devblogs.microsoft.com/visualstudio/visual-studio-tools-for-unity-2-0-preview/) (blog de Visual Studio)|
 |[Regarder une vidéo de présentation de Visual Studio Tools for Unity 2.0 Preview](http://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (vidéo)|
 |[En savoir plus sur Unity](http://unity3d.com/) (site web Unity)|
 

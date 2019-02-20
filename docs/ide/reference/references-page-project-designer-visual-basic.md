@@ -9,19 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - References page in Project Designer
 - Project Designer, References page
-- Unused References dialog box
 ms.assetid: 5a47c595-e084-401c-86e1-74e0bf74fd86
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0afd144248ed01210c888ee516a19bf93a156b86
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a7c1bcb041101cf90957d02991ab1619d47051b5
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970749"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335128"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Page Références, Concepteur de projets (Visual Basic)
 
@@ -32,12 +31,6 @@ Pour accéder à la page **Références**, choisissez un nœud de projet (pas le
 ## <a name="uielement-list"></a>Liste des éléments d’interface
 
 Les options suivantes vous permettent de sélectionner ou supprimer des références et des espaces de noms importés dans votre projet.
-
-**Références inutilisées**
-
-Cliquez sur ce bouton pour accéder à la boîte de dialogue **Références inutilisées**.
-
-La boîte de dialogue **Références inutilisées** vous permet de supprimer des références qui sont dans votre projet mais qui, en fait, ne sont pas utilisées par le code. Elle contient une grille qui répertorie le **Nom de la référence**, le **Chemin** et d’autres informations sur les références d’espace de noms inutilisées dans votre projet. Dans la grille, sélectionnez les références d’espace de noms que vous souhaitez supprimer de votre projet et cliquez sur **Supprimer**.
 
 **Chemins des références**
 

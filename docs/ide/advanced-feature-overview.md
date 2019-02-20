@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd3b213c9baf82317c390ee29512de946a220fb6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: da502b2f527f811f20bbce299107cac20517048a
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909634"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317833"
 ---
 # <a name="features-of-visual-studio-2017"></a>Fonctionnalités de Visual Studio 2017
 
@@ -99,7 +99,7 @@ Quand votre application est prête à être déployée auprès d’utilisateurs 
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>Gérer votre code source et collaborer avec d’autres utilisateurs
 
-Vous pouvez gérer votre code source dans des dépôts Git hébergés par tous types de fournisseurs, notamment GitHub. Vous pouvez aussi utiliser [Azure DevOps Services](/azure/devops/index) pour gérer le code, ainsi que les bogues et les éléments de travail de tout votre projet. Pour en savoir plus sur la gestion des dépôts Git dans Visual Studio avec Team Explorer, consultez la page [Bien démarrer avec Git et Azure Repos](/azure/devops/repos/git/gitquickstart?tabs=visual-studio). Visual Studio dispose également d’autres fonctionnalités de contrôle de code source intégrées. Pour plus d’informations sur ces fonctionnalités, consultez le billet de blog [New Git Features in Visual Studio 2017](https://blogs.msdn.microsoft.com/devops/2017/03/06/new-git-features-in-visual-studio-2017/).
+Vous pouvez gérer votre code source dans des dépôts Git hébergés par tous types de fournisseurs, notamment GitHub. Vous pouvez aussi utiliser [Azure DevOps Services](/azure/devops/index) pour gérer le code, ainsi que les bogues et les éléments de travail de tout votre projet. Pour en savoir plus sur la gestion des dépôts Git dans Visual Studio avec Team Explorer, consultez la page [Bien démarrer avec Git et Azure Repos](/azure/devops/repos/git/gitquickstart?tabs=visual-studio). Visual Studio dispose également d’autres fonctionnalités de contrôle de code source intégrées. Pour plus d’informations sur ces fonctionnalités, consultez le billet de blog [New Git Features in Visual Studio 2017](https://devblogs.microsoft.com/devops/new-git-features-in-visual-studio-2017/).
 
 Azure DevOps Services est un ensemble de services cloud qui permettent la planification, l’hébergement, l’automatisation et le déploiement des logiciels ainsi que la collaboration entre équipes. Azure DevOps Services prend en charge les dépôts Git (gestion de versions distribuée) et Team Foundation Version Control (gestion de versions centralisée). Il prend en charge les pipelines de build et de mise en production en continu (CI/CD) du code stocké dans les systèmes de gestion de versions. Azure DevOps Services prend également en charge les méthodologies de développement Scrum, CMMI et Agile.
 

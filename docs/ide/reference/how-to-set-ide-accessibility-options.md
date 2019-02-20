@@ -11,17 +11,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aad7b5896ce8f090ef627fe9d08b0eae506a42cc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5763178ecf30cc0c946c8810770ba2948383a715
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928437"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317183"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Procédure : Définir les options d’accessibilité de l’IDE
 
 > [!TIP]
-> Pour en savoir plus sur les dernières nouveautés en matière d’accessibilité, consultez le billet de blog [Améliorations apportées à l’accessibilité dans Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/).
+> Pour en savoir plus sur les dernières nouveautés en matière d’accessibilité, consultez le billet de blog [Améliorations apportées à l’accessibilité dans Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/).
 
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] contient des fonctionnalités qui facilitent la lecture pour les personnes à acuité visuelle réduite et l’écriture pour celles dont la dextérité manuelle est réduite. Ces fonctionnalités incluent notamment la modification de la taille et de la couleur du texte dans les éditeurs, la modification de la taille du texte et des boutons des barres d’outils et la saisie semi-automatique pour les méthodes et les paramètres.
 

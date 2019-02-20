@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5614f182b08c41a7ec2172fe080560a4f78b439
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4b881ee7a782d7c5f90a447c1719bb88afd1d332
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918542"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56314596"
 ---
 # <a name="help-content-manager-overrides"></a>Remplacements dans Help Content Manager
 
-Vous pouvez changer le comportement par défaut de Help Viewer et des fonctionnalités d’aide dans l’IDE Visual Studio. Certaines options peuvent être spécifiées en créant un fichier [.pkgdef](https://blogs.msdn.microsoft.com/visualstudio/2009/12/18/whats-a-pkgdef-and-why/) pour définir différentes valeurs de clé de Registre. D’autres sont définies directement dans le Registre.
+Vous pouvez changer le comportement par défaut de Help Viewer et des fonctionnalités d’aide dans l’IDE Visual Studio. Certaines options peuvent être spécifiées en créant un fichier [.pkgdef](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/) pour définir différentes valeurs de clé de Registre. D’autres sont définies directement dans le Registre.
 
 ## <a name="how-to-control-help-viewer-behavior-by-using-a-pkgdef-file"></a>Comment contrôler le comportement de Help Viewer à l’aide d’un fichier .pkgdef
 
