@@ -11,68 +11,68 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 996bb82851e3429e0caa39fe1a30f5c8970dc4a5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4e5db35150814665f5e75b5b42a2a27447c40a75
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54974381"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450046"
 ---
 # <a name="idebugexpressionevaluator2preloadmodules"></a>IDebugExpressionEvaluator2::PreloadModules
-Précharge les modules désignés par le fournisseur du symbole spécifié.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT PreloadModules (  
-   IDebugSymbolProvider* pSym  
-);  
-```  
-  
-```csharp  
-int PreloadModules (  
-   IDebugSymbolProvider pSym  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pSym`  
- [in] Fournisseur de symboles pour lequel les modules sont préchargés.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="remarks"></a>Notes  
- Cette méthode facultative est utilisée lorsque vous effectuez un attachement de processus d’hébergement. Il permet du EE 'préchauffage » dans le cadre de l’attachement.  
-  
-## <a name="example"></a>Exemple  
- L’exemple suivant montre comment implémenter cette méthode pour un **ExpressionEvaluatorPackage** objet qui expose le [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) interface.  
-  
-```cpp  
-STDMETHODIMP ExpressionEvaluatorPackage::PreloadModules  
-(  
-    IDebugSymbolProvider *pSym  
-)  
-{  
-    HRESULT hr = NOERROR;  
-    RuntimeMemberDescriptor  * prtMemberDesc;  
-    RuntimeClassDescriptor *prtClassDesc;  
-    CComPtr<IDebugClassField> pClassField;  
-    IfFalseGo(pSym,E_INVALIDARG);  
-  
-    prtMemberDesc = &(g_rgRTLangMembers[StandardModuleAttributeCtor]);  
-    prtClassDesc = &(g_rgRTLangClasses[prtMemberDesc->rtParent]);  
-    pSym->GetClassTypeByName(prtClassDesc->wszClassName, nmCaseSensitive, &pClassField);  
-  
-    pClassField = NULL;  
-    prtMemberDesc = &(g_rgRTLangMembers[LoadAssembly]);  
-    prtClassDesc = &(g_rgRTLangClasses[prtMemberDesc->rtParent]);  
-    pSym->GetClassTypeByName(prtClassDesc->wszClassName, nmCaseSensitive, &pClassField);  
-  
-Error:  
-    return hr;  
-}  
-```  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)
+Précharge les modules désignés par le fournisseur du symbole spécifié.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT PreloadModules (
+    IDebugSymbolProvider* pSym
+);
+```
+
+```csharp
+int PreloadModules (
+    IDebugSymbolProvider pSym
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+`pSym`  
+[in] Fournisseur de symboles pour lequel les modules sont préchargés.
+
+## <a name="return-value"></a>Valeur de retour
+En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="remarks"></a>Notes
+Cette méthode facultative est utilisée lorsque vous effectuez un attachement de processus d’hébergement. Il permet du EE 'préchauffage » dans le cadre de l’attachement.
+
+## <a name="example"></a>Exemple
+L’exemple suivant montre comment implémenter cette méthode pour un **ExpressionEvaluatorPackage** objet qui expose le [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) interface.
+
+```cpp
+STDMETHODIMP ExpressionEvaluatorPackage::PreloadModules
+(
+    IDebugSymbolProvider *pSym
+)
+{
+    HRESULT hr = NOERROR;
+    RuntimeMemberDescriptor  * prtMemberDesc;
+    RuntimeClassDescriptor *prtClassDesc;
+    CComPtr<IDebugClassField> pClassField;
+    IfFalseGo(pSym,E_INVALIDARG);
+
+    prtMemberDesc = &(g_rgRTLangMembers[StandardModuleAttributeCtor]);
+    prtClassDesc = &(g_rgRTLangClasses[prtMemberDesc->rtParent]);
+    pSym->GetClassTypeByName(prtClassDesc->wszClassName, nmCaseSensitive, &pClassField);
+
+    pClassField = NULL;
+    prtMemberDesc = &(g_rgRTLangMembers[LoadAssembly]);
+    prtClassDesc = &(g_rgRTLangClasses[prtMemberDesc->rtParent]);
+    pSym->GetClassTypeByName(prtClassDesc->wszClassName, nmCaseSensitive, &pClassField);
+
+Error:
+    return hr;
+}
+```
+
+## <a name="see-also"></a>Voir aussi
+[IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)
