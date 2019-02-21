@@ -3,14 +3,14 @@ title: Configuration d’un dépôt Git
 description: Utilisation de Git et de Subversion dans Visual Studio pour Mac.
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 02/15/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: 615f9d5bcba036301c2aa100e4618ab339412882
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 17067e9b19a36f198a6653f0c354e6ce3004eaeb
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796968"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317346"
 ---
 # <a name="set-up-a-git-repository"></a>Configurer un dépôt Git
 
@@ -87,9 +87,45 @@ Si vous avez un projet qui _n’est pas_ déjà dans la gestion de versions, eff
 
 ## <a name="publishing-a-new-project"></a>Publication d’un nouveau projet
 
-La boîte de dialogue Nouveau projet peut être utilisé pour publier un nouveau projet en utilisant Git. Pour l’activer, cochez la case **Utiliser Git pour la gestion de version**, comme illustré dans la capture d’écran suivante. Ceci initialise votre dépôt et ajoute un fichier .gitignore facultatif :
+La boîte de dialogue Nouveau projet permet de créer un projet avec un dépôt git local. Pour l’activer, cochez la case **Utiliser git pour la gestion de version**, comme le montre la capture d’écran suivante. Ceci initialise votre dépôt et ajoute un fichier .gitignore facultatif :
 
-![Envoyer (push) des modifications sur un dépôt distant](media/version-control-git12.png)
+![Créer un projet avec la prise en charge de git](media/version-control-git-publish-new1.png)
+
+Suivez les étapes ci-dessous pour envoyer (push) votre nouveau dépôt local vers un nouveau dépôt GitHub :
+
+> [!NOTE]
+> Si vous n’avez pas déjà créé un dépôt GitHub, consultez la section [Création d’un dépôt distant sur GitHub](#creating-a-remote-repo-on-github).
+
+1. Créez votre première validation en accédant à **Gestion de version > Examiner la solution et valider** dans la barre de menus.
+
+2. Sous l’onglet État, choisissez **Valider** dans le coin supérieur gauche.
+
+3. Écrivez un message de validation, par exemple « Première validation », puis cliquez sur **Valider** :
+
+    ![Valider les modifications initiales apportées au dépôt git](media/version-control-git-publish-new2.png)
+
+4. Ensuite, dans la barre de menus, accédez à **Gestion de version > Gérer les branches et les dépôts distants**.
+
+5. Accédez à l’onglet **Sources distantes**, puis cliquez sur **Ajouter**.
+
+6. Dans la fenêtre **Source distante**, ajoutez les détails du dépôt GitHub que vous avez créé précédemment, puis cliquez sur **OK** :
+
+    ![Configurer des sources distantes pour le dépôt git](media/version-control-git-publish-new3.png)
+
+7. Fermez la fenêtre **Configuration du dépôt Git** puis, dans la barre de menus, accédez à **Gestion de version > Effectuer une opération Push sur les modifications**.
+
+8. Dans la fenêtre **Effectuer une opération Push vers le référentiel**, cliquez sur le bouton **Effectuer une opération Push sur les modifications** :
+
+    ![Envoyer (push) les modifications vers le dépôt distant](media/version-control-git-publish-new4.png)
+
+9. Quand vous y êtes invité, entrez vos nom d’utilisateur et mot de passe GitHub.
+
+> [!NOTE]
+> Si l’authentification à 2 facteurs (2FA) est activée pour votre compte, vous devez créer un jeton d’accès, lequel est utilisé à la place d’un mot de passe. Si vous n’avez pas créé de jeton d’accès, suivez les étapes décrites dans la documentation Git [Jeton d’accès](https://help.github.com/articles/creating-an-access-token-for-command-line-use/).
+
+Visual Studio pour Mac enverra désormais les modifications à votre dépôt distant GitHub (push) :
+
+![Confirmation de l’exécution de l’opération Push](media/version-control-git11.png)
 
 ## <a name="check-out-an-existing-repository"></a>Extraire un dépôt existant
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 777e8519077cebc162b1bad575a6ffcf976c4db4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 74fb79db00a3e7366e91d3fb53a83f9deeb9a8a0
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908879"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335270"
 ---
 # <a name="find-references-in-your-code"></a>Rechercher des références dans votre code
 
@@ -46,6 +46,11 @@ Vous pouvez utiliser les méthodes suivantes pour accéder à des références d
 Par défaut, les références sont regroupées par projet, puis par définition. Toutefois, vous pouvez changer cet ordre de regroupement en changeant le paramètre défini dans la zone de liste déroulante **Grouper par :** de la barre d’outils. Par exemple, vous pouvez changer l’ordre du paramètre par défaut **Projet, puis définition** en **Définition, puis projet**, ainsi que par d’autres paramètres.
 
 **Définition** et **Projet** sont les deux regroupements utilisés par défaut, mais vous pouvez en ajouter d’autres en choisissant la commande **Regroupement** dans le menu contextuel (clic droit) de l’élément sélectionné. Il peut être utile d’ajouter plusieurs regroupements si votre solution contient un grand nombre de fichiers et de chemins.
+
+## <a name="filter-by-reference-type-in-net"></a>Filtrer par type de référence dans .NET
+En C# ou Visual Basic, la fenêtre Rechercher des références comporte une colonne de type qui liste le type de référence qu’elle a trouvé. Cette colonne permet de filtrer par type de référence en cliquant sur l’icône de filtre qui s’affiche quand vous pointez sur l’en-tête de colonne. Les références peuvent être filtrées par lecture, écriture, référence et nom uniquement.
+
+![Colonne de type dans la fenêtre Rechercher des références ](../ide/media/vside_findallreferencesKind.png)
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d387bbc54d1eb1619ddffbf7e96308834d125826
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b9680087162cbfa89e12cb7d9b44d7079cba4ef2
+ms.sourcegitcommit: b623042906de4f12d68af365e36eb38b7b44aa90
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911089"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56270652"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Raccourcis clavier par défaut dans Visual Studio
 
@@ -798,11 +798,17 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 | Edit.ExpandCurrentRegion | **Ctrl+M, Ctrl+E** |
 | Edit.FormatDocument | **Ctrl+K, Ctrl+D** |
 | Edit.FormatSelection | **Ctrl+K, Ctrl+F** |
+| Edit.GotoAll | **Ctrl + T**<br /><br /> ou<br /><br /> **Ctrl+,** |
 | Edit.GotoBrace | **Ctrl+]** |
-| Edit.GotoBraceExtend | **Ctrl+Shift+]** |
+| Edit.GotoBraceExtend | **Ctrl+Maj+]** |
+| Edit.GotoRecent | **Ctrl+T,R** |
+| Edit.GotoNextIssueinFile | **Alt+Pg suiv** |
+| Edit.GotoPreviousIssueinFile **Alt+Pg préc** |
 | Edit.HideSelection | **Ctrl+M, Ctrl+H** |
 | Edit.IncreaseFilterLevel | **Alt+.** |
 | Edit.IncrementalSearch | **Ctrl+I** |
+| Edit.InsertCaretsatAllMatching | **Maj+Alt+;** | 
+| Edit.InsertNextMatchingCaret | **Maj+Alt+.** | 
 | Edit.InsertTab | **Tab** |
 | Edit.LineCut | **Ctrl+L** |
 | Edit.LineDelete | **Ctrl+Maj+L** |
@@ -845,7 +851,8 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 | Edit.SelectCurrentWord | **Ctrl+W** |
 | Edit.SelectionCancel | **Échap** |
 | Edit.SelectToLastGoBack | **Ctrl+=** |
-| Edit.ShowCodeLensMenu | **Alt+\`** |
+| Edit.ShowCodeLensMenu | **Ctrl+K, Ctrl+\`** |
+| Edit.ShowNavigateMenu | **Alt+\`** |
 | Edit.StopHidingCurrent | **Ctrl+M, Ctrl+U** |
 | Edit.StopOutlining | **Ctrl+M, Ctrl+P** |
 | Edit.SwapAnchor | **Ctrl+K, Ctrl+A** |
@@ -964,7 +971,7 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |Image.Magnify|**Ctrl+Maj+M**|
 |Image.NewImageType|**Insert**|
 |Image.NextColor|**Ctrl+]**<br /><br /> ou<br /><br /> **Ctrl+Droite**|
-|Image.NextRightColor|**Ctrl+Shift+]**<br /><br /> ou<br /><br /> **Ctrl+Maj+Droite**|
+|Image.NextRightColor|**Ctrl+Maj+]**<br /><br /> ou<br /><br /> **Ctrl+Maj+Droite**|
 |Image.OutlinedEllipseTool|**Maj+Alt+P**|
 |Image.OutlinedRectangleTool|**Maj+Alt+R**|
 |Image.OutlinedRoundedRectangleTool|**Maj+Alt+W**|
