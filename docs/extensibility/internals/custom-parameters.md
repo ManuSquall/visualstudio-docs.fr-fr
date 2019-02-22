@@ -11,38 +11,38 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88fb10e4d5b4386791b0a4aa9b2927e97e6006c5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9e86c2f48365f93c924b15ae8d696d53d3f4bb16
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957531"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596658"
 ---
 # <a name="custom-parameters"></a>Paramètres personnalisés
-Paramètres personnalisés contrôlent le fonctionnement d’un Assistant après le démarrage d’un Assistant. Un connexes *.vsz* fichier fournit un tableau de paramètres définis par l’utilisateur qui sont empaquetées par l’environnement de développement intégré (IDE) et passé à l’Assistant sous forme de tableau de chaînes au démarrage de l’Assistant. Ensuite, l’Assistant analyse le tableau de chaînes et utilise les informations pour contrôler le fonctionnement réel de l’Assistant. De cette manière, un Assistant peut personnaliser les fonctionnalités en fonction du contenu de la *.vsz* fichier.  
-  
- Paramètres de contexte, quant à eux, définissent l’état du projet que lorsque l’Assistant est démarré. Pour plus d’informations, consultez [paramètres de contexte](../../extensibility/internals/context-parameters.md).  
-  
- Voici un exemple d’un *.vsz* fichier qui a des paramètres personnalisés :  
-  
-```  
-VSWIZARD 8.0  
-Wizard=VsWizard.VsWizard_Engine  
-Param="WIZARD_NAME = Sample Wizard"  
-Param="WIZARD_UI = FALSE"  
-Param="RELATIVE_PATH = VSWizards\Classwiz\ATL"  
-Param="PREPROCESS_FUNCTION = CanAddATLSupport"  
-Param="PROJECT_TYPE = CSPROJ"  
-```  
-  
- L’auteur de la *.vsz* fichier ajoute les valeurs des paramètres. Lorsqu’un utilisateur sélectionne **nouveau projet** ou **ajouter un nouvel élément** sur le **fichier** menu ou en double-cliquant sur un projet dans **l’Explorateur de solutions**, l’IDE collecte ces valeurs dans un tableau de chaînes. L’IDE puis appelle le projet <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.AddItem%2A> méthode avec le <xref:Microsoft.VisualStudio.Shell.Interop.VSADDITEMOPERATION> indicateur ensemble et les appels de projet la <xref:EnvDTE.IVsExtensibility.RunWizardFile%2A> méthode qui est responsable de l’exécution de l’Assistant et en retournant le résultat.  
-  
- L’Assistant est responsable de l’analyse du tableau de chaînes et agir sur les chaînes en conséquence. De cette manière, en implémentant des paramètres personnalisés, vous pouvez créer un Assistant qui effectue un éventail de fonctions. En d’autres termes, un Assistant peut avoir trois différentes *.vsz* fichiers. Chaque fichier transmet différents jeux de paramètres personnalisés pour contrôler le comportement de l’Assistant dans diverses situations.  
-  
- Pour plus d’informations, consultez [fichier Assistant (.vsz)](../../extensibility/internals/wizard-dot-vsz-file.md).  
-  
-## <a name="see-also"></a>Voir aussi  
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>   
- [Paramètres de contexte](../../extensibility/internals/context-parameters.md)   
- [Assistants](../../extensibility/internals/wizards.md)   
- [Fichier de l’Assistant (.vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
+Paramètres personnalisés contrôlent le fonctionnement d’un Assistant après le démarrage d’un Assistant. Un connexes *.vsz* fichier fournit un tableau de paramètres définis par l’utilisateur qui sont empaquetées par l’environnement de développement intégré (IDE) et passé à l’Assistant sous forme de tableau de chaînes au démarrage de l’Assistant. Ensuite, l’Assistant analyse le tableau de chaînes et utilise les informations pour contrôler le fonctionnement réel de l’Assistant. De cette manière, un Assistant peut personnaliser les fonctionnalités en fonction du contenu de la *.vsz* fichier.
+
+ Paramètres de contexte, quant à eux, définissent l’état du projet que lorsque l’Assistant est démarré. Pour plus d’informations, consultez [paramètres de contexte](../../extensibility/internals/context-parameters.md).
+
+ Voici un exemple d’un *.vsz* fichier qui a des paramètres personnalisés :
+
+```
+VSWIZARD 8.0
+Wizard=VsWizard.VsWizard_Engine
+Param="WIZARD_NAME = Sample Wizard"
+Param="WIZARD_UI = FALSE"
+Param="RELATIVE_PATH = VSWizards\Classwiz\ATL"
+Param="PREPROCESS_FUNCTION = CanAddATLSupport"
+Param="PROJECT_TYPE = CSPROJ"
+```
+
+ L’auteur de la *.vsz* fichier ajoute les valeurs des paramètres. Lorsqu’un utilisateur sélectionne **nouveau projet** ou **ajouter un nouvel élément** sur le **fichier** menu ou en double-cliquant sur un projet dans **l’Explorateur de solutions**, l’IDE collecte ces valeurs dans un tableau de chaînes. L’IDE puis appelle le projet <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.AddItem%2A> méthode avec le <xref:Microsoft.VisualStudio.Shell.Interop.VSADDITEMOPERATION> indicateur ensemble et les appels de projet la <xref:EnvDTE.IVsExtensibility.RunWizardFile%2A> méthode qui est responsable de l’exécution de l’Assistant et en retournant le résultat.
+
+ L’Assistant est responsable de l’analyse du tableau de chaînes et agir sur les chaînes en conséquence. De cette manière, en implémentant des paramètres personnalisés, vous pouvez créer un Assistant qui effectue un éventail de fonctions. En d’autres termes, un Assistant peut avoir trois différentes *.vsz* fichiers. Chaque fichier transmet différents jeux de paramètres personnalisés pour contrôler le comportement de l’Assistant dans diverses situations.
+
+ Pour plus d’informations, consultez [fichier Assistant (.vsz)](../../extensibility/internals/wizard-dot-vsz-file.md).
+
+## <a name="see-also"></a>Voir aussi
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>
+- [Paramètres de contexte](../../extensibility/internals/context-parameters.md)
+- [Assistants](../../extensibility/internals/wizards.md)
+- [Fichier de l’Assistant (.vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

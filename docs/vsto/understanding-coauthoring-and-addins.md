@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 254a7ce0409ffbf254f0ec7d10ad3fa543775d61
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 96d83bbe34e0510ccf14204eb83fa1ed2da2d173
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54870033"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56631963"
 ---
 # <a name="understand-coauthoring-and-add-ins"></a>Comprendre la cocréation et Add-ins
 
@@ -26,4 +26,4 @@ Cocréation est une fonctionnalité de bureau d’Excel pour Windows qui vous pe
 Remarque : Cocréation pour Windows Desktop Excel a été introduite dans 2017 et n’est actuellement disponible pour les abonnés Office 365. Les utilisateurs qui ont acheté une licence perpétuelle pour Office 2016 ou une version antérieure n’ont pas actuellement accès à la fonction de cocréation. (Excel Online, Excel pour Android, Excel pour iOS et Excel Mobile dans le Windows Store prennent également en charge cocréation).
 
 ## <a name="see-also"></a>Voir aussi
-[Solutions Excel](./excel-solutions.md)
+- [Solutions Excel](./excel-solutions.md)

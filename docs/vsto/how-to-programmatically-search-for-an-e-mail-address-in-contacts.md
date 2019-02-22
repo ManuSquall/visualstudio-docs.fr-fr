@@ -14,28 +14,28 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 56de5f2763ebbe81a8992cc2b42bbb4e6c22e4ab
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: b6b29e46a61a46ae5e986dec7b14733e3807064b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54868142"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615492"
 ---
 # <a name="how-to-programmatically-search-for-an-email-address-in-contacts"></a>Procédure : Rechercher une adresse de messagerie dans les contacts par programmation
-  Cet exemple recherche dans un dossier de contacts les contacts dont l’adresse de messagerie contient le nom de domaine **example.com** .  
-  
- [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
-  
-## <a name="example"></a>Exemple  
- [!code-csharp[Trin_OL_SearchEmail#1](../vsto/codesnippet/CSharp/Trin_OL_SearchEmail/thisaddin.cs#1)]  
-  
-## <a name="compile-the-code"></a>Compiler le code  
- Cet exemple nécessite :  
-  
--   Des contacts dont l’adresse de messagerie contient le nom de domaine **example.com** (par exemple, `somebody@example.com`) et qui possèdent un prénom et un nom.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Utiliser des éléments de contact](../vsto/working-with-contact-items.md)   
- [Guide pratique pour Envoyer par programmation un e-mail](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
- [Guide pratique pour Accéder par programmation aux contacts Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)   
- [Guide pratique pour Ajouter par programmation une entrée aux contacts Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)  
+  Cet exemple recherche dans un dossier de contacts les contacts dont l’adresse de messagerie contient le nom de domaine **example.com** .
+
+ [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
+
+## <a name="example"></a>Exemple
+ [!code-csharp[Trin_OL_SearchEmail#1](../vsto/codesnippet/CSharp/Trin_OL_SearchEmail/thisaddin.cs#1)]
+
+## <a name="compile-the-code"></a>Compiler le code
+ Cet exemple nécessite :
+
+-   Des contacts dont l’adresse de messagerie contient le nom de domaine **example.com** (par exemple, `somebody@example.com`) et qui possèdent un prénom et un nom.
+
+## <a name="see-also"></a>Voir aussi
+- [Utiliser des éléments de contact](../vsto/working-with-contact-items.md)
+- [Guide pratique pour Envoyer par programmation un e-mail](../vsto/how-to-programmatically-send-e-mail-programmatically.md)
+- [Guide pratique pour Accéder par programmation aux contacts Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)
+- [Guide pratique pour Ajouter par programmation une entrée aux contacts Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)
