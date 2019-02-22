@@ -12,30 +12,30 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b4551a7e1228203977cf04dc205445f3fe7d250c
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 10b0f05e758f71830d5377c738ff9dee683022b8
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54870738"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641622"
 ---
 # <a name="how-to-programmatically-move-items-in-outlook"></a>Procédure : Déplacer des éléments dans Outlook par programmation
-  Cet exemple déplace les messages électroniques non lus à partir de la **boîte de réception** dans un dossier nommé **Test**. L’exemple déplace uniquement les messages qui contiennent le mot **Test** dans le `Subject` champ.  
-  
- [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
-  
-## <a name="example"></a>Exemple  
- [!code-csharp[Trin_OL_MoveItems#1](../vsto/codesnippet/CSharp/Trin_OL_MoveItems/thisaddin.cs#1)]  
-  
-## <a name="compile-the-code"></a>Compiler le code  
- Cet exemple nécessite :  
-  
--   Un dossier de courrier Outlook nommé **Test**.  
-  
--   Un message électronique entrant avec le mot **Test** dans le `Subject` champ.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Travailler avec des dossiers](../vsto/working-with-folders.md)   
- [Guide pratique pour Récupérer par programme un dossier par nom](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
- [Guide pratique pour Rechercher par programmation dans un dossier spécifique](../vsto/how-to-programmatically-search-within-a-specific-folder.md)   
- [Guide pratique pour Effectuer des actions par programme lorsqu’un message électronique est reçu.](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)  
+  Cet exemple déplace les messages électroniques non lus à partir de la **boîte de réception** dans un dossier nommé **Test**. L’exemple déplace uniquement les messages qui contiennent le mot **Test** dans le `Subject` champ.
+
+ [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
+
+## <a name="example"></a>Exemple
+ [!code-csharp[Trin_OL_MoveItems#1](../vsto/codesnippet/CSharp/Trin_OL_MoveItems/thisaddin.cs#1)]
+
+## <a name="compile-the-code"></a>Compiler le code
+ Cet exemple nécessite :
+
+-   Un dossier de courrier Outlook nommé **Test**.
+
+-   Un message électronique entrant avec le mot **Test** dans le `Subject` champ.
+
+## <a name="see-also"></a>Voir aussi
+- [Travailler avec des dossiers](../vsto/working-with-folders.md)
+- [Guide pratique pour Récupérer par programme un dossier par nom](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
+- [Guide pratique pour Rechercher par programmation dans un dossier spécifique](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
+- [Guide pratique pour Effectuer des actions par programme lorsqu’un message électronique est reçu.](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)

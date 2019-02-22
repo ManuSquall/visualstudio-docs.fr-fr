@@ -15,34 +15,34 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4b7537d531197a9f9487bddfe3628cc52077d332
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 93a9377579e9b299fd2a3b0a34e8e90a1f7f2bb6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54862289"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56633263"
 ---
 # <a name="how-to-programmatically-check-spelling-in-worksheets"></a>Procédure : Vérifier l’orthographe dans les feuilles de calcul par programmation
-  Vous pouvez vérifier par programmation l’orthographe des mots contenus dans une feuille de calcul. La boîte de dialogue **Orthographe** s’affiche automatiquement si des mots mal orthographiés figurent dans la feuille de calcul.  
-  
- [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
-  
-## <a name="to-check-spelling-in-a-worksheet-in-a-document-level-customization"></a>Pour vérifier l’orthographe d’une feuille de calcul dans une personnalisation au niveau du document  
-  
-1.  Appelez la méthode <xref:Microsoft.Office.Tools.Excel.Worksheet.CheckSpelling%2A> de la feuille de calcul.  
-  
+  Vous pouvez vérifier par programmation l’orthographe des mots contenus dans une feuille de calcul. La boîte de dialogue **Orthographe** s’affiche automatiquement si des mots mal orthographiés figurent dans la feuille de calcul.
+
+ [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
+
+## <a name="to-check-spelling-in-a-worksheet-in-a-document-level-customization"></a>Pour vérifier l’orthographe d’une feuille de calcul dans une personnalisation au niveau du document
+
+1.  Appelez la méthode <xref:Microsoft.Office.Tools.Excel.Worksheet.CheckSpelling%2A> de la feuille de calcul.
+
      [!code-csharp[Trin_VstcoreExcelAutomation#45](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#45)]
-     [!code-vb[Trin_VstcoreExcelAutomation#45](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#45)]  
-  
-## <a name="to-check-spelling-in-a-worksheet-in-a-vsto-add-in"></a>Pour vérifier l’orthographe dans une feuille de calcul dans un composant logiciel complément VSTO  
-  
-1.  Appelez la méthode <xref:Microsoft.Office.Interop.Excel._Worksheet.CheckSpelling%2A> de la feuille de calcul active.  
-  
+     [!code-vb[Trin_VstcoreExcelAutomation#45](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#45)]
+
+## <a name="to-check-spelling-in-a-worksheet-in-a-vsto-add-in"></a>Pour vérifier l’orthographe dans une feuille de calcul dans un composant logiciel complément VSTO
+
+1.  Appelez la méthode <xref:Microsoft.Office.Interop.Excel._Worksheet.CheckSpelling%2A> de la feuille de calcul active.
+
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#22](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#22)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#22](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#22)]  
-  
-## <a name="see-also"></a>Voir aussi  
- [Travailler avec des feuilles de calcul](../vsto/working-with-worksheets.md)   
- [Guide pratique pour Exécuter des calculs Excel par programmation](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)   
- [NamedRange (contrôle)](../vsto/namedrange-control.md)   
- [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)  
+     [!code-vb[Trin_VstcoreExcelAutomationAddIn#22](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#22)]
+
+## <a name="see-also"></a>Voir aussi
+- [Travailler avec des feuilles de calcul](../vsto/working-with-worksheets.md)
+- [Guide pratique pour Exécuter des calculs Excel par programmation](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)
+- [NamedRange (contrôle)](../vsto/namedrange-control.md)
+- [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)

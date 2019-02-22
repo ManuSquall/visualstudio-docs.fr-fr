@@ -19,71 +19,71 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24155f9ea8703d7089714a9b0adce9310612a4ea
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: e46e6259009ab583f32deae79711d6b4d0c70528
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54872714"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56617832"
 ---
 # <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>Procédure : Stocker et récupérer des valeurs de date dans des plages Excel par programmation
-  Vous pouvez stocker et récupérer des valeurs dans un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle ou un objet de plage Excel natif.  
-  
- [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
-  
- Si vous stockez une valeur de date qui se situe sur ou après le 1/1/1900 dans une plage à l’aide des outils de développement Office dans Visual Studio, il est stocké au format OLE Automation (OA). Vous devez utiliser le <xref:System.DateTime.FromOADate%2A> méthode pour récupérer la valeur de dates de OLE Automation (OA). Si la date est antérieure à 1/1/1900, il est stocké sous forme de chaîne.  
-  
-> [!NOTE]  
->  Les dates Excel diffèrent des dates OLE Automation pour les deux premiers mois de 1900. Il existe également différences si la **système de dates 1904** option est activée. Les exemples de code ci-dessous ne traitent pas ces différences.  
-  
-## <a name="use-a-namedrange-control"></a>Utiliser un contrôle NamedRange  
-  
--   Cet exemple concerne des personnalisations au niveau du document. Le code suivant doit être placé dans une classe sheet et non dans le `ThisWorkbook` classe.  
-  
-### <a name="to-store-a-date-value-in-a-named-range"></a>Pour stocker une valeur de date dans une plage nommée  
-  
-1.  Créer un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle à la cellule **A1**.  
-  
+  Vous pouvez stocker et récupérer des valeurs dans un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle ou un objet de plage Excel natif.
+
+ [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
+
+ Si vous stockez une valeur de date qui se situe sur ou après le 1/1/1900 dans une plage à l’aide des outils de développement Office dans Visual Studio, il est stocké au format OLE Automation (OA). Vous devez utiliser le <xref:System.DateTime.FromOADate%2A> méthode pour récupérer la valeur de dates de OLE Automation (OA). Si la date est antérieure à 1/1/1900, il est stocké sous forme de chaîne.
+
+> [!NOTE]
+>  Les dates Excel diffèrent des dates OLE Automation pour les deux premiers mois de 1900. Il existe également différences si la **système de dates 1904** option est activée. Les exemples de code ci-dessous ne traitent pas ces différences.
+
+## <a name="use-a-namedrange-control"></a>Utiliser un contrôle NamedRange
+
+-   Cet exemple concerne des personnalisations au niveau du document. Le code suivant doit être placé dans une classe sheet et non dans le `ThisWorkbook` classe.
+
+### <a name="to-store-a-date-value-in-a-named-range"></a>Pour stocker une valeur de date dans une plage nommée
+
+1.  Créer un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle à la cellule **A1**.
+
      [!code-csharp[Trin_VstcoreExcelAutomation#50](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#50)]
-     [!code-vb[Trin_VstcoreExcelAutomation#50](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#50)]  
-  
-2.  Définir la date actuelle comme valeur pour `NamedRange1`.  
-  
+     [!code-vb[Trin_VstcoreExcelAutomation#50](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#50)]
+
+2.  Définir la date actuelle comme valeur pour `NamedRange1`.
+
      [!code-csharp[Trin_VstcoreExcelAutomation#51](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#51)]
-     [!code-vb[Trin_VstcoreExcelAutomation#51](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#51)]  
-  
-### <a name="to-retrieve-a-date-value-from-a-named-range"></a>Pour récupérer une valeur de date à partir d’une plage nommée  
-  
-1.  Récupérez la valeur de date de `NamedRange1`.  
-  
+     [!code-vb[Trin_VstcoreExcelAutomation#51](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#51)]
+
+### <a name="to-retrieve-a-date-value-from-a-named-range"></a>Pour récupérer une valeur de date à partir d’une plage nommée
+
+1.  Récupérez la valeur de date de `NamedRange1`.
+
      [!code-csharp[Trin_VstcoreExcelAutomation#52](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#52)]
-     [!code-vb[Trin_VstcoreExcelAutomation#52](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#52)]  
-  
-## <a name="use-native-excel-ranges"></a>Utiliser des plages Excel natifs  
-  
-### <a name="to-store-a-date-value-in-a-native-excel-range-object"></a>Pour stocker une valeur de date dans un objet de plage Excel natif  
-  
-1.  Créer un <xref:Microsoft.Office.Interop.Excel.Range> qui représente la cellule **A1**.  
-  
+     [!code-vb[Trin_VstcoreExcelAutomation#52](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#52)]
+
+## <a name="use-native-excel-ranges"></a>Utiliser des plages Excel natifs
+
+### <a name="to-store-a-date-value-in-a-native-excel-range-object"></a>Pour stocker une valeur de date dans un objet de plage Excel natif
+
+1.  Créer un <xref:Microsoft.Office.Interop.Excel.Range> qui représente la cellule **A1**.
+
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#25](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#25)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#25](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#25)]  
-  
-2.  Définir la date actuelle comme valeur pour `rng`.  
-  
+     [!code-vb[Trin_VstcoreExcelAutomationAddIn#25](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#25)]
+
+2.  Définir la date actuelle comme valeur pour `rng`.
+
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#26](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#26)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#26](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#26)]  
-  
-### <a name="to-retrieve-a-date-value-from-a-native-excel-range-object"></a>Pour récupérer une valeur de date à partir d’un objet de plage Excel natif  
-  
-1.  Récupérez la valeur de date de `rng`.  
-  
+     [!code-vb[Trin_VstcoreExcelAutomationAddIn#26](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#26)]
+
+### <a name="to-retrieve-a-date-value-from-a-native-excel-range-object"></a>Pour récupérer une valeur de date à partir d’un objet de plage Excel natif
+
+1.  Récupérez la valeur de date de `rng`.
+
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#27](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#27)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#27](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#27)]  
-  
-## <a name="see-also"></a>Voir aussi  
- [Travailler avec des plages](../vsto/working-with-ranges.md)   
- [Vue d’ensemble du modèle d’objet Excel](../vsto/excel-object-model-overview.md)   
- [NamedRange (contrôle)](../vsto/namedrange-control.md)   
- [Guide pratique pour Faire référence par programmation aux plages de feuille de calcul dans le code](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
- [Guide pratique pour Ajouter des contrôles NamedRange aux feuilles de calcul](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
- [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)  
+     [!code-vb[Trin_VstcoreExcelAutomationAddIn#27](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#27)]
+
+## <a name="see-also"></a>Voir aussi
+- [Travailler avec des plages](../vsto/working-with-ranges.md)
+- [Vue d’ensemble du modèle d’objet Excel](../vsto/excel-object-model-overview.md)
+- [NamedRange (contrôle)](../vsto/namedrange-control.md)
+- [Guide pratique pour Faire référence par programmation aux plages de feuille de calcul dans le code](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
+- [Guide pratique pour Ajouter des contrôles NamedRange aux feuilles de calcul](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
+- [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)

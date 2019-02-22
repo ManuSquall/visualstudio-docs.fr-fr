@@ -12,29 +12,34 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d30c57139141bf0d739097032064190f4fcd3da
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 741d61f4f3a62638e56aabb1f62f97aac4519d0c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009958"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596579"
 ---
 # <a name="hierarchies-and-selection"></a>Hiérarchies et sélection
-Lorsque vous personnalisez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], vous devez comprendre comment [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gère les hiérarchies telles que les projets et comment il utilise le contexte de sélection pour déterminer ce qui est affiché à l’utilisateur. Cette section décrit les concepts de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hiérarchies et sélection.  
-  
-## <a name="in-this-section"></a>Dans cette section  
- [Hiérarchies dans Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)  
- Décrit le concept général de hiérarchies et les hiérarchies de projet.  
-  
- [Sélection et la devise dans l’IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)  
- Décrit comment la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE) conserve les informations sur les objets actuellement actif de l’utilisateur et permet d’effectuer le suivi de la devise VSPackages.  
-  
- [Objets de contexte de sélection](../../extensibility/internals/selection-context-objects.md)  
- Décrit le modèle pour comment vous pouvez déterminer le focus de contexte de sélection de l’utilisateur sur une fenêtre.  
-  
- [Vos commentaires à l’utilisateur](../../extensibility/internals/feedback-to-the-user.md)  
- Explique comment les fonctionnalités disponibles dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] est basé sur le contexte de sélection actuel et le contexte IDE global de l’utilisateur.  
-  
-## <a name="related-sections"></a>Rubriques connexes  
- [Architecture des types de projet](../../extensibility/internals/project-types-architecture.md)  
+Lorsque vous personnalisez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], vous devez comprendre comment [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gère les hiérarchies telles que les projets et comment il utilise le contexte de sélection pour déterminer ce qui est affiché à l’utilisateur. Cette section décrit les concepts de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hiérarchies et sélection.
+
+## <a name="in-this-section"></a>Dans cette section
+- [Hiérarchies dans Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)
+
+ Décrit le concept général de hiérarchies et les hiérarchies de projet.
+
+- [Sélection et la devise dans l’IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)
+
+ Décrit comment la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE) conserve les informations sur les objets actuellement actif de l’utilisateur et permet d’effectuer le suivi de la devise VSPackages.
+
+- [Objets de contexte de sélection](../../extensibility/internals/selection-context-objects.md)
+
+ Décrit le modèle pour comment vous pouvez déterminer le focus de contexte de sélection de l’utilisateur sur une fenêtre.
+
+- [Vos commentaires à l’utilisateur](../../extensibility/internals/feedback-to-the-user.md)
+
+ Explique comment les fonctionnalités disponibles dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] est basé sur le contexte de sélection actuel et le contexte IDE global de l’utilisateur.
+
+## <a name="related-sections"></a>Rubriques connexes
+- [Architecture des types de projet](../../extensibility/internals/project-types-architecture.md)
+
  Fournit des informations techniques détaillées sur les types de projets.

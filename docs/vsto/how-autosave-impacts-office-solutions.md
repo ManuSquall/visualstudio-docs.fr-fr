@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f2ca14146a6a0444859722bfded24faaa36dd9f
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: ceaf13e24d56060e3d962e108d43c4d87d69fb8c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875626"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56601380"
 ---
 # <a name="how-autosave-impacts-office-solutions"></a>Comment la fonctionnalité AutoSave sur les solutions Office
 
@@ -27,5 +27,4 @@ Enregistrement automatique est une fonctionnalité pour Excel, PowerPoint et Wor
 > Enregistrement automatique pour Windows Desktop Word, Excel et PowerPoint a été introduit dans 2017 et n’est actuellement disponible pour les abonnés Office 365. Si vous avez acheté une licence perpétuelle pour Office 2016 ou une version antérieure, vous n’avez actuellement accès à la fonction de cocréation. (Excel Online, Excel pour Android, Excel pour iOS et Excel Mobile dans le Windows Store prennent en charge cette fonctionnalité, cependant.)
 
 ## <a name="see-also"></a>Voir aussi
-
-[Développer des solutions Office](./developing-office-solutions.md)
+- [Développer des solutions Office](./developing-office-solutions.md)
