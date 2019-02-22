@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 802c20a21b624e868cddac4badfd8827ef765506
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 749ec5f7f7bd68911accb33e4e8631b42de8e630
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54866189"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630897"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>Procédure pas à pas : Créer une page d’application SharePoint
- 
+
 Une page d’application est une forme spécialisée d’une page ASP.NET. Pages d’application présentent du contenu qui est fusionné avec une page maître SharePoint. Pour plus d’informations, consultez [créer des pages d’application pour SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
 
 Cette procédure pas à pas vous montre comment créer une page d’application et effectuer un débogage à l’aide d’un site SharePoint local. Cette page affiche tous les éléments de chaque utilisateur a créés ou modifiés dans tous les sites de la batterie de serveurs.
@@ -153,5 +153,5 @@ Vous pouvez en savoir plus sur la conception de contenu de la page SharePoint à
 
 ## <a name="see-also"></a>Voir aussi
 
-[Guide pratique pour Créer une page d’application](../sharepoint/how-to-create-an-application-page.md)  
-[Type de Page de dispositions d’application](http://go.microsoft.com/fwlink/?LinkID=169274)
+[Guide pratique pour Créer une page d’application](../sharepoint/how-to-create-an-application-page.md)
+[dispositions Page Type d’Application](http://go.microsoft.com/fwlink/?LinkID=169274)

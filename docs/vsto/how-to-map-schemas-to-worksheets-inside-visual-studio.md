@@ -17,54 +17,54 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d01d68404314b366e968f0c2551352d8501ed9ae
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 0fad2851be48c0b3dfc3546794d5b9907f55918a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54866332"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637371"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Procédure : Mapper des schémas à des feuilles de calcul à l’intérieur de Visual Studio
-  Alors que la feuille de calcul est ouvert dans Visual Studio, vous pouvez mapper un schéma XML à une feuille de calcul. Vous utilisez les mêmes outils de Microsoft Office Excel que vous utilisez lorsque le classeur est ouvert en dehors de Visual Studio. Le projet Office crée les mêmes objets que vous mappiez le schéma à la feuille de calcul avant ou après avoir créé votre solution Excel.  
-  
- [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
-  
-> [!NOTE]  
->  Vous ne pouvez pas utiliser les schémas XML en plusieurs parties dans les solutions Excel.  
-  
-## <a name="to-map-an-xml-schema-to-an-excel-worksheet-in-visual-studio"></a>Pour mapper un schéma XML à une feuille de calcul Excel dans Visual Studio  
-  
-1.  Ouvrez le projet de modèle ou de classeur Excel à l’intérieur de Visual Studio.  
-  
-2.  Cliquez dans la feuille de calcul pour déplacer le focus vers le concepteur.  
-  
-3.  Dans le ruban, cliquez sur l'onglet **Développeur** .  
-  
-    > [!NOTE]  
-    >  Si l'onglet **Développeur** n'est pas visible, vous devez tout d'abord l'afficher. Pour plus d'informations, voir [Procédure : Afficher l’onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
-  
-4.  Dans le **XML** de groupe, cliquez sur **Source**.  
-  
-     Le **Source XML** fenêtre s’ouvre.  
-  
-5.  Dans le **Source XML** fenêtre, cliquez sur **mappes XML**.  
-  
-     Le **mappes XML** boîte de dialogue s’ouvre.  
-  
-6.  Dans le **mappes XML** boîte de dialogue, cliquez sur **ajouter**.  
-  
-7.  Accédez à votre fichier de schéma, sélectionnez-le, puis cliquez sur **Open**.  
-  
-8.  Cliquez sur **OK**.  
-  
-     Le schéma est représenté dans le **Source XML** fenêtre. Dans votre projet, typé <xref:System.Data.DataSet> est généré en fonction du schéma et un <xref:System.Windows.Forms.BindingSource> est créé.  
-  
-9. Faire glisser des éléments à partir de la **Source XML** fenêtre aux endroits de votre feuille de calcul où vous souhaitez que les contrôles correspondants à créer.  
-  
-     Si vous faites glisser un élément de schéma non répétitif, le projet Office génère une <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> contrôle qui est automatiquement lié à la <xref:System.Windows.Forms.BindingSource>.  
-  
-     Si vous faites glisser un élément de schéma répétitif, le projet Office génère un <xref:Microsoft.Office.Tools.Excel.ListObject> contrôle qui n’est pas lié automatiquement à une source de données. Pour plus d’informations, consultez [schémas et données dans XML au niveau du document personnalisations](../vsto/xml-schemas-and-data-in-document-level-customizations.md).  
-  
-## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour Mapper des schémas à des documents Word dans Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
- [Schémas XML et des données dans les personnalisations au niveau du document](../vsto/xml-schemas-and-data-in-document-level-customizations.md)  
+  Alors que la feuille de calcul est ouvert dans Visual Studio, vous pouvez mapper un schéma XML à une feuille de calcul. Vous utilisez les mêmes outils de Microsoft Office Excel que vous utilisez lorsque le classeur est ouvert en dehors de Visual Studio. Le projet Office crée les mêmes objets que vous mappiez le schéma à la feuille de calcul avant ou après avoir créé votre solution Excel.
+
+ [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
+
+> [!NOTE]
+>  Vous ne pouvez pas utiliser les schémas XML en plusieurs parties dans les solutions Excel.
+
+## <a name="to-map-an-xml-schema-to-an-excel-worksheet-in-visual-studio"></a>Pour mapper un schéma XML à une feuille de calcul Excel dans Visual Studio
+
+1.  Ouvrez le projet de modèle ou de classeur Excel à l’intérieur de Visual Studio.
+
+2.  Cliquez dans la feuille de calcul pour déplacer le focus vers le concepteur.
+
+3.  Dans le ruban, cliquez sur l'onglet **Développeur** .
+
+    > [!NOTE]
+    >  Si l'onglet **Développeur** n'est pas visible, vous devez tout d'abord l'afficher. Pour plus d'informations, voir [Procédure : Afficher l’onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+
+4.  Dans le **XML** de groupe, cliquez sur **Source**.
+
+     Le **Source XML** fenêtre s’ouvre.
+
+5.  Dans le **Source XML** fenêtre, cliquez sur **mappes XML**.
+
+     Le **mappes XML** boîte de dialogue s’ouvre.
+
+6.  Dans le **mappes XML** boîte de dialogue, cliquez sur **ajouter**.
+
+7.  Accédez à votre fichier de schéma, sélectionnez-le, puis cliquez sur **Open**.
+
+8.  Cliquez sur **OK**.
+
+     Le schéma est représenté dans le **Source XML** fenêtre. Dans votre projet, typé <xref:System.Data.DataSet> est généré en fonction du schéma et un <xref:System.Windows.Forms.BindingSource> est créé.
+
+9. Faire glisser des éléments à partir de la **Source XML** fenêtre aux endroits de votre feuille de calcul où vous souhaitez que les contrôles correspondants à créer.
+
+     Si vous faites glisser un élément de schéma non répétitif, le projet Office génère une <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> contrôle qui est automatiquement lié à la <xref:System.Windows.Forms.BindingSource>.
+
+     Si vous faites glisser un élément de schéma répétitif, le projet Office génère un <xref:Microsoft.Office.Tools.Excel.ListObject> contrôle qui n’est pas lié automatiquement à une source de données. Pour plus d’informations, consultez [schémas et données dans XML au niveau du document personnalisations](../vsto/xml-schemas-and-data-in-document-level-customizations.md).
+
+## <a name="see-also"></a>Voir aussi
+- [Guide pratique pour Mapper des schémas à des documents Word dans Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)
+- [Schémas XML et des données dans les personnalisations au niveau du document](../vsto/xml-schemas-and-data-in-document-level-customizations.md)
