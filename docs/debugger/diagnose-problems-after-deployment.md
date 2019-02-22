@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 172a7d27de88e7d5d6361fdc29e4cc49a0ff3d94
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
+ms.openlocfilehash: c6f7a6053c36805ccc219319c93b4064fe45472b
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55008710"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316884"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>Diagnostiquer des problèmes après déploiement à l’aide d’IntelliTrace (C#, Visual Basic)
 
@@ -31,7 +31,7 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
 
 -   Visual Studio Enterprise (mais pas Professional ni Community) pour vérifier les données de diagnostic et déboguer votre code avec IntelliTrace
 
-##  <a name="SetUpBuild"></a> Étape 1 : Inclure les informations de build à votre version
+##  <a name="SetUpBuild"></a> Étape 1 : Ajouter les informations de build à votre version
  Paramétrez votre processus de génération de façon à créer un manifeste de build (fichier *BuildInfo.config*) pour votre projet web et ajoutez ce manifeste à votre version. Ce manifeste contient des informations sur le projet, le contrôle de code source et le système de génération utilisés pour créer une build spécifique. Ces informations aident Visual Studio à trouver la source et les symboles correspondants après ouverture du journal IntelliTrace pour examiner les événements enregistrés.
 
 ###  <a name="AutomatedBuild"></a> Créer le manifeste de build pour une génération automatique à l’aide de Team Foundation Server
@@ -153,15 +153,15 @@ Visual Studio 2017 n’inclut pas le *BuildInfo.config* fichier qui a été déc
 
  **/p:BuildSymbolStorePath=**\<*chemin vers les symboles*>
 
-##  <a name="DeployRelease"></a> Étape 2 : Publier votre application
+##  <a name="DeployRelease"></a>Étape 2 : Déployer votre application
  Si vous utilisez le [package Web.Deploy](https://msdn.microsoft.com/library/dd394698.aspx) créé par votre processus de génération pour déployer votre application, le manifeste de build «*Nom_projet*.BuildInfo.config » est automatiquement renommé en « BuildInfo.config » et est placé dans le même dossier que le fichier Web.config de votre application sur votre serveur web.
 
  Si vous utilisez d’autres méthodes pour déployer votre application, assurez-vous que le manifeste de build «*Nom_projet*.BuildInfo.config » est renommé en « BuildInfo.config » et qu’il est placé dans le même dossier que le fichier Web.config de votre application sur le serveur web.
 
-## <a name="step-3-monitor-your-app"></a>Étape 3 : Surveiller votre application
+## <a name="step-3-monitor-your-app"></a>Étape 3 : Surveiller votre application
  Paramétrez la surveillance des performances de l’application sur votre serveur web de sorte à pouvoir surveiller si votre application rencontre des problèmes, enregistrer des événements de diagnostic et enregistrer ces événements dans un fichier journal IntelliTrace. Consultez [Surveiller votre version pour identifier les problèmes de déploiement](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
-##  <a name="InvestigateEvents">Étape 4 :</a> Identifier le problème
+##  <a name="InvestigateEvents"></a> Étape 4 : Identifier le problème
  Vous devez installer Visual Studio Enterprise sur votre ordinateur de développement ou un autre ordinateur pour examiner les événements enregistrés et déboguer votre code à l’aide d’IntelliTrace. Vous pouvez aussi utiliser des outils comme CodeLens, les cartes de débogueur et les cartes de code pour vous aider à diagnostiquer le problème.
 
 ### <a name="open-the-intellitrace-log-and-matching-solution"></a>Ouvrir le journal IntelliTrace et la solution correspondante
@@ -216,7 +216,7 @@ Visual Studio 2017 n’inclut pas le *BuildInfo.config* fichier qui a été déc
 
     - [En quoi consistent tous les autres événements et informations du journal IntelliTrace ?](../debugger/using-saved-intellitrace-data.md)
     - [Que puis-je faire d’autre à partir d’ici ?](#WhatElse)
-    - [Vous voulez plus d’informations sur les événements de performances ?](https://blogs.msdn.microsoft.com/devops/2013/09/20/performance-details-in-intellitrace/)
+    - [Vous voulez plus d’informations sur les événements de performances ?](https://devblogs.microsoft.com/devops/performance-details-in-intellitrace/)
 
 ### <a name="diagnose-an-exception"></a>Diagnostiquer une exception
 
@@ -276,11 +276,11 @@ Visual Studio 2017 n’inclut pas le *BuildInfo.config* fichier qui a été déc
 
   - **TFS**
 
-    - **ProjectCollectionUri**: L’URI de votre collection de Team Foundation Server et project
+    - **ProjectCollectionUri**: URI de votre serveur Team Foundation Server et de la collection de projets
 
-    - **ProjectItemSpec**: Le chemin d’accès au fichier de projet de votre application (.csproj ou .vbproj)
+    - **ProjectItemSpec**: chemin d’accès au fichier projet de votre application (.csproj ou .vbproj)
 
-    - **ProjectVersionSpec**: La version de votre projet
+    - **ProjectVersionSpec**: version de votre projet
 
       Par exemple :
 
@@ -296,13 +296,13 @@ Visual Studio 2017 n’inclut pas le *BuildInfo.config* fichier qui a été déc
 
   - **Git**
 
-    - **GitSourceControl**: L’emplacement de la **GitSourceControl** schéma
+    - **GitSourceControl**: emplacement du schéma **GitSourceControl**
 
     - **RepositoryUrl**: URI de votre serveur Team Foundation Server, de la collection de projets et du référentiel Git
 
-    - **ProjectPath**: Le chemin d’accès au fichier de projet de votre application (.csproj ou .vbproj)
+    - **ProjectPath**: chemin d’accès au fichier projet de votre application (.csproj ou .vbproj)
 
-    - **CommitId**: Id de votre validation
+    - **CommitId**: ID de votre validation
 
       Par exemple :
 
@@ -320,15 +320,15 @@ Visual Studio 2017 n’inclut pas le *BuildInfo.config* fichier qui a été déc
 
    Informations sur votre système de génération, `"TeamBuild"` ou `"MSBuild"`, et les propriétés requises suivantes :
 
-  - **BuildLabel** (pour TeamBuild) : Le nom de la build et un nombre. Cette étiquette est également utilisée comme nom de l’événement de déploiement. Pour plus d’informations sur les numéros de build, consultez [Utiliser des numéros de build pour attribuer des noms pertinents aux builds terminées](/azure/devops/pipelines/build/options?view=vsts).
+  - **BuildLabel** (pour TeamBuild) : nom et numéro de votre build. Cette étiquette est également utilisée comme nom de l’événement de déploiement. Pour plus d’informations sur les numéros de build, consultez [Utiliser des numéros de build pour attribuer des noms pertinents aux builds terminées](/azure/devops/pipelines/build/options?view=vsts).
 
-  - **SymbolPath** (recommandé) : La liste des URI vos emplacements de symboles (fichier PDB) séparés par des points-virgules. Les URI peuvent être des URL ou des chemins d’accès réseau (UNC). Il est alors plus facile pour Visual Studio de rechercher les symboles correspondants pour vous aider avec le débogage.
+  - **SymbolPath** (recommandé) : liste des URI des emplacements de vos symboles (fichier PDB), séparés par des points-virgules. Les URI peuvent être des URL ou des chemins d’accès réseau (UNC). Il est alors plus facile pour Visual Studio de rechercher les symboles correspondants pour vous aider avec le débogage.
 
-  - **BuildReportUrl** (pour TeamBuild) : L’emplacement du rapport de build dans TFS
+  - **BuildReportUrl** (pour TeamBuild) : emplacement du rapport de la build dans TFS
 
-  - **BuildId** (pour TeamBuild) : URI pour les détails de build dans TFS. Cet URI est également utilisé comme ID de l’événement de déploiement. Cet ID doit être unique si vous n’utilisez pas TeamBuild.
+  - **BuildId** (pour TeamBuild) : URI des détails de votre build dans TFS. Cet URI est également utilisé comme ID de l’événement de déploiement. Cet ID doit être unique si vous n’utilisez pas TeamBuild.
 
-  - **BuiltSolution**: Le chemin d’accès au fichier de solution Visual Studio utilise pour rechercher et ouvrir la solution correspondante. Contenu de la propriété MSBuild **SolutionPath** .
+  - **BuiltSolution**: chemin d’accès au fichier de la solution, utilisé par Visual Studio pour rechercher et ouvrir la solution correspondante. Contenu de la propriété MSBuild **SolutionPath** .
 
     Par exemple :
 
@@ -379,7 +379,7 @@ Visual Studio 2017 n’inclut pas le *BuildInfo.config* fichier qui a été déc
 
      ![Ouvrir à partir du contrôle de code source &#45; migré](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
 
-####  <a name="WhatWorkspace"></a> Q : Qu’est un espace de travail ?
+####  <a name="WhatWorkspace"></a> Q : Qu’est-ce qu’un espace de travail ?
  **R :** Votre [espace de travail stocke une copie de la source](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) pour que vous puissiez le développer et le tester séparément avant d’archiver votre travail. Si vous ne disposez pas déjà d’un espace de travail spécialement mappé à la solution ou au projet trouvé, Visual Studio vous invite à choisir un espace de travail disponible ou à en créer un avec le nom de votre ordinateur comme nom d’espace de travail par défaut.
 
 ####  <a name="UntrustedSymbols"></a>Q : Pourquoi je reçois ce message sur les symboles non fiables ?
