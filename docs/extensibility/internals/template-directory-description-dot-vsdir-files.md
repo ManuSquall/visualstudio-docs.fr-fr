@@ -12,29 +12,29 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64d17c8a375a5e579c6c2720afb118f1940c4a0d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a51deb24a2ba0088db8ed9a7acc1f8324f1fa92b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935031"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605690"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Fichiers de description de répertoire de modèles (.Vsdir)
-Un fichier de description de répertoire de modèle (.vsdir) est un fichier texte qui permet à l’environnement de développement intégré (IDE) pour afficher les dossiers, les fichiers .vsz de l’Assistant et les fichiers de modèle qui sont associés à votre projet dans les boîtes de dialogue. Le contenu inclut un enregistrement par fichier ou dossier. Tous les fichiers .vsdir dans un emplacement référencé sont fusionnés, bien que .vsdir qu’un seul fichier est généralement fourni pour décrire plusieurs dossiers, les Assistants ou les fichiers de modèle.  
+Un fichier de description de répertoire de modèle (.vsdir) est un fichier texte qui permet à l’environnement de développement intégré (IDE) pour afficher les dossiers, les fichiers .vsz de l’Assistant et les fichiers de modèle qui sont associés à votre projet dans les boîtes de dialogue. Le contenu inclut un enregistrement par fichier ou dossier. Tous les fichiers .vsdir dans un emplacement référencé sont fusionnés, bien que .vsdir qu’un seul fichier est généralement fourni pour décrire plusieurs dossiers, les Assistants ou les fichiers de modèle.
 
- Dossiers (les sous-répertoires), les fichiers qui sont référencés dans le fichier .vsdir et le fichier .vsdir lui-même se trouvent toutes dans le même répertoire. Lorsque l’IDE exécute un Assistant ou affiche un dossier ou un fichier dans le **nouveau projet** ou **ajouter un nouvel élément** boîtes de dialogue, l’IDE examine le répertoire qui contient les fichiers exécutées pour déterminer si un fichier .vsdir présent. Si un fichier .vsdir est trouvé, l’IDE lit pour déterminer s’il contient une entrée du fichier ou dossier exécuté ou affiché. Si une entrée est trouvée, l’IDE utilise les informations de l’exécution de l’Assistant ou d’affichage du contenu.  
+ Dossiers (les sous-répertoires), les fichiers qui sont référencés dans le fichier .vsdir et le fichier .vsdir lui-même se trouvent toutes dans le même répertoire. Lorsque l’IDE exécute un Assistant ou affiche un dossier ou un fichier dans le **nouveau projet** ou **ajouter un nouvel élément** boîtes de dialogue, l’IDE examine le répertoire qui contient les fichiers exécutées pour déterminer si un fichier .vsdir présent. Si un fichier .vsdir est trouvé, l’IDE lit pour déterminer s’il contient une entrée du fichier ou dossier exécuté ou affiché. Si une entrée est trouvée, l’IDE utilise les informations de l’exécution de l’Assistant ou d’affichage du contenu.
 
- L’exemple de code suivant est à partir du fichier SourceFiles.vsdir dans le \<EnvSDK > clé de Registre \BscPrj\BscPrj\BscPrjProjectItems\Source_Files :  
+ L’exemple de code suivant est à partir du fichier SourceFiles.vsdir dans le \<EnvSDK > clé de Registre \BscPrj\BscPrj\BscPrjProjectItems\Source_Files :
 
-```  
-HeaderFile.h|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#125|130|#126|0|0|0|#127  
-SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124  
-```  
+```
+HeaderFile.h|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#125|130|#126|0|0|0|#127
+SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
+```
 
- Dans ce cas, les deux enregistrements sont dans un seul fichier. Une nouvelle ligne (retour chariot) sépare chaque enregistrement. Chaque ligne représente un type de fichier différent. Une barre verticale (&#124;) sépare les champs dans chaque enregistrement. Un seul répertoire peut contenir plusieurs fichiers .vsdir dont le nom de fichier différent, ou vous pouvez avoir un seul fichier .vsdir pour chaque type de fichier.  
+ Dans ce cas, les deux enregistrements sont dans un seul fichier. Une nouvelle ligne (retour chariot) sépare chaque enregistrement. Chaque ligne représente un type de fichier différent. Une barre verticale (&#124;) sépare les champs dans chaque enregistrement. Un seul répertoire peut contenir plusieurs fichiers .vsdir dont le nom de fichier différent, ou vous pouvez avoir un seul fichier .vsdir pour chaque type de fichier.
 
-## <a name="fields"></a>Champs  
- Le tableau suivant répertorie les champs spécifiés pour chaque enregistrement.  
+## <a name="fields"></a>Champs
+ Le tableau suivant répertorie les champs spécifiés pour chaque enregistrement.
 
 
 | Champ | Description |
@@ -49,20 +49,20 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 | Indicateurs (<xref:Microsoft.VisualStudio.Shell.Interop.__VSDIRFLAGS>) | Utilisé pour activer ou désactiver la **nom** et **emplacement** champs sur le **ajouter un nouvel élément** boîte de dialogue. La valeur de la **indicateurs** champ est l’équivalent décimal de la combinaison de bits indicateurs requis.<br /><br /> Lorsqu’un utilisateur sélectionne un élément sur le **New** onglet, le projet détermine si le champ de nom et le champ d’emplacement figurent lorsque le **ajouter un nouvel élément** boîte de dialogue s’affiche tout d’abord. Un élément, via un fichier .vsdir, peut contrôler uniquement si les champs sont activés et désactivés lorsque l’élément est sélectionné. |
 | SuggestedBaseName | Représente le nom par défaut pour le fichier, un Assistant ou un modèle. Ce champ est une chaîne ou un identificateur de ressource sous la forme « #ResID ». L’IDE utilise cette valeur à fournir un nom par défaut pour l’élément. Cette valeur de base est ajoutée avec une valeur entière pour rendre le nom unique, tels que MyFile21.asp.<br /><br /> Dans la liste précédente, Description, DLLPath, IconResourceId, indicateurs et SuggestedBaseNumber s’appliquent uniquement aux fichiers de modèle et l’Assistant. Ces champs ne s’appliquent pas aux dossiers. Cela est illustré dans le code dans le fichier BscPrjProjectItems dans le \<EnvSDK > clé de Registre \BscPrj\BscPrj\BscPrjProjectItems. Ce fichier contient trois enregistrements (une pour chaque dossier) avec quatre champs pour chaque enregistrement : RelPathName, {clsidPackage}, LocalizedName et SortPriority.<br /><br /> `General&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#110&#124;100`<br /><br /> `Source_Files&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#111&#124;110`<br /><br /> `Env&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#112&#124;120` |
 
- Lorsque vous créez un fichier de l’Assistant, vous devez également envisager les problèmes suivants.  
+ Lorsque vous créez un fichier de l’Assistant, vous devez également envisager les problèmes suivants.
 
--   N’importe quel champ non requis pour lequel il n’existe pas de données significatives doit contenir un 0 (zéro) comme espace réservé.  
+-   N’importe quel champ non requis pour lequel il n’existe pas de données significatives doit contenir un 0 (zéro) comme espace réservé.
 
--   Si aucun nom localisé n’est fourni, le nom de chemin d’accès relatif est utilisé dans le fichier de l’Assistant.  
+-   Si aucun nom localisé n’est fourni, le nom de chemin d’accès relatif est utilisé dans le fichier de l’Assistant.
 
--   DLLPath substitue clsidPackage pour l’emplacement de l’icône.  
+-   DLLPath substitue clsidPackage pour l’emplacement de l’icône.
 
--   Si aucune icône n’est définie, l’environnement IDE remplace l’icône par défaut pour un fichier qui a cette extension.  
+-   Si aucune icône n’est définie, l’environnement IDE remplace l’icône par défaut pour un fichier qui a cette extension.
 
--   Si aucun nom de base suggérée est fourni, 'Project' est utilisé.  
+-   Si aucun nom de base suggérée est fourni, 'Project' est utilisé.
 
--   Si vous supprimez les fichiers .vsz, des dossiers ou fichiers de modèle, vous devez également supprimer leurs enregistrements associés à partir du fichier .vsdir.  
+-   Si vous supprimez les fichiers .vsz, des dossiers ou fichiers de modèle, vous devez également supprimer leurs enregistrements associés à partir du fichier .vsdir.
 
-## <a name="see-also"></a>Voir aussi  
- [Assistants](../../extensibility/internals/wizards.md)   
- [Fichier Assistant (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
+## <a name="see-also"></a>Voir aussi
+- [Assistants](../../extensibility/internals/wizards.md)
+- [Fichier Assistant (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

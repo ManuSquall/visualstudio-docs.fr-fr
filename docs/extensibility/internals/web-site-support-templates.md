@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36c22cbb5ca39e48e488851f26786955c9704fda
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 75e918c752484129f9b89f939bc6fbbce6df803c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961596"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618196"
 ---
 # <a name="web-site-support-templates"></a>Modèles de prise en charge de site web
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Modèles de projet et d’élément de site Web fournissent un site Web réutilisables et personnalisables des stubs qui accélèrent le processus de développement en supprimant la nécessité de créer de nouveaux projets de site Web et des éléments à partir de zéro. Pour plus d’informations sur [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] modèles, consultez [création de projet et modèles d’élément](../../ide/creating-project-and-item-templates.md).
@@ -185,4 +185,4 @@ ms.locfileid: "54961596"
      Le fichier de modèle qui détermine le contenu de la nouvelle page maître et son fichier dépendant, le cas échéant.
 
 ## <a name="see-also"></a>Voir aussi
- [Prise en charge de site Web](../../extensibility/internals/web-site-support.md)
+- [Prise en charge de site Web](../../extensibility/internals/web-site-support.md)

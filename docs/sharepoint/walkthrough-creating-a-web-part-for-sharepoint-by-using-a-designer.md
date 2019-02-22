@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fa5817bb7c20cf58457281667dda76ac43608647
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 4a22d814ce50dea1ee67ed3bf1f071839e60a797
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875334"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607019"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Procédure pas à pas : Créer un composant WebPart pour SharePoint à l’aide d’un concepteur
 
@@ -187,6 +187,6 @@ Dans le composant WebPart, spécifiez les calendriers que vous souhaitez inclure
 
 ## <a name="see-also"></a>Voir aussi
 
-[Créer des composants WebPart pour SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)  
-[Guide pratique pour Créer un composant WebPart SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
-[Procédure pas à pas : Créer un composant WebPart pour SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)
+[Créer des composants WebPart pour SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
+[Comment : Créer un composant WebPart SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)
+[procédure pas à pas : Créer un composant WebPart pour SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)
