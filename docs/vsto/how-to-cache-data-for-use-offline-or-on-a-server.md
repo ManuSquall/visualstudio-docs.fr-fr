@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 319cd31ccdc2c5c8cfa2b4540e5f32382008ca5a
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: bae12ea054c674e14da53fe60879c5466120d0a9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54873742"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636513"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Procédure : Mettre en cache les données pour une utilisation hors connexion ou sur un serveur
   Vous pouvez marquer un élément de données doit être mis en cache dans le document, afin qu’il soit disponible hors connexion. Cela rend également possible pour les données dans le document pour être manipulée par un autre code lorsque le document est stocké sur un serveur.
@@ -60,4 +60,8 @@ ms.locfileid: "54873742"
 4.  Dans le **propriétés** fenêtre, définissez la **modificateurs** propriété **Public** (par défaut, il est **interne**).
 
 ## <a name="see-also"></a>Voir aussi
- [Mettre en cache données](../vsto/caching-data.md) [Comment : Mettre en cache par programmation une source de données dans un document Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md) [Comment : Mettre en cache les données dans un document protégé par un mot de passe](../vsto/how-to-cache-data-in-a-password-protected-document.md) [accéder aux données dans des documents sur le serveur](../vsto/accessing-data-in-documents-on-the-server.md) [enregistrer les données](../data-tools/saving-data.md)
+- [Données du cache](../vsto/caching-data.md)
+- [Guide pratique pour Mettre en cache par programmation une source de données dans un document Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)
+- [Guide pratique pour Cache des données dans un document protégé par un mot de passe](../vsto/how-to-cache-data-in-a-password-protected-document.md)
+- [Accéder aux données dans des documents sur le serveur](../vsto/accessing-data-in-documents-on-the-server.md)
+- [Enregistrer des données](../data-tools/saving-data.md)
