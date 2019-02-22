@@ -14,33 +14,33 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7a26f6b2abdf0e24d4179986acc56335fb36d002
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 22b2073e63d2e6551a47469742142821391c86e3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54868782"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56619327"
 ---
 # <a name="how-to-add-a-project-output-reference"></a>Procédure : Ajouter une référence de sortie de projet
-  Pour déployer des assemblys de projet non-SharePoint (ou fichiers .xap dans des projets Silverlight) sur SharePoint, ajoutez-les comme une référence de sortie de projet.  
-  
- Ce processus crée une dépendance de build de solution entre les deux projets. Projets associés aux références de sortie de projet sont générés avant le projet SharePoint est généré et déployé.  
-  
+  Pour déployer des assemblys de projet non-SharePoint (ou fichiers .xap dans des projets Silverlight) sur SharePoint, ajoutez-les comme une référence de sortie de projet.
+
+ Ce processus crée une dépendance de build de solution entre les deux projets. Projets associés aux références de sortie de projet sont générés avant le projet SharePoint est généré et déployé.
+
 ### <a name="to-add-a-project-output-reference"></a>Pour ajouter une référence de sortie de projet
-  
-1.  Charger une solution qui contient au moins un projet SharePoint et un projet autre que SharePoint.  
-  
-2.  Dans **l’Explorateur de solutions**, choisissez un élément dans le nœud de projet SharePoint.  
-  
-3.  Dans le **propriétés** fenêtre, choisissez le **références de sortie de projet** propriété, puis choisissez le bouton de sélection (![ellipse de concepteur ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "ASP. Ellipse de NET Mobile concepteur")) bouton en regard de celle-ci.  
-  
-4.  Dans le **références de sortie de projet** boîte de dialogue, sélectionnez le **ajouter** bouton.  
-  
-5.  Dans le volet Propriétés, cliquez sur la flèche à côté du **Type de déploiement** propriété, puis choisissez une valeur appropriée pour l’élément non-SharePoint que vous référencez, tel que **ElementFile**.  
-  
-6.  Cliquez sur la flèche à côté **nom_projet**, choisissez le nom de l’élément de projet non-SharePoint, puis le **OK** bouton.  
-  
+
+1.  Charger une solution qui contient au moins un projet SharePoint et un projet autre que SharePoint.
+
+2.  Dans **l’Explorateur de solutions**, choisissez un élément dans le nœud de projet SharePoint.
+
+3.  Dans le **propriétés** fenêtre, choisissez le **références de sortie de projet** propriété, puis choisissez le bouton de sélection (![ellipse de concepteur ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "ASP. Ellipse de NET Mobile concepteur")) bouton en regard de celle-ci.
+
+4.  Dans le **références de sortie de projet** boîte de dialogue, sélectionnez le **ajouter** bouton.
+
+5.  Dans le volet Propriétés, cliquez sur la flèche à côté du **Type de déploiement** propriété, puis choisissez une valeur appropriée pour l’élément non-SharePoint que vous référencez, tel que **ElementFile**.
+
+6.  Cliquez sur la flèche à côté **nom_projet**, choisissez le nom de l’élément de projet non-SharePoint, puis le **OK** bouton.
+
 ## <a name="see-also"></a>Voir aussi
- [Fournir des informations d’empaquetage et de déploiement dans les éléments de projet](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
- [Guide pratique pour Marquer des contrôles comme des contrôles sécurisés](../sharepoint/how-to-mark-controls-as-safe-controls.md)   
- [Empaqueter et déployer des solutions SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
+- [Fournir des informations d’empaquetage et de déploiement dans les éléments de projet](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
+- [Guide pratique pour Marquer des contrôles comme des contrôles sécurisés](../sharepoint/how-to-mark-controls-as-safe-controls.md)
+- [Empaqueter et déployer des solutions SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
