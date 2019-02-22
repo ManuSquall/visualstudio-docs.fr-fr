@@ -12,47 +12,46 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 310391a0c2514a63efcdcdb6052dff7817299db0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e1ee4558bcbb3ac45ca2e8dcd6d3cf215100a874
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54916182"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56449929"
 ---
 # <a name="interceptexceptionaction"></a>INTERCEPT_EXCEPTION_ACTION
-Spécifie les actions à entreprendre lors de l’interception des exceptions.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-enum enum_INTERCEPT_EXCEPTION_ACTION  
-{  
-   IEA_INTERCEPT = 0x0001  
-}  
-typedef DWORD INTERCEPT_EXCEPTION_ACTION;  
-```  
-  
-```csharp  
-public enum enum_INTERCEPT_EXCEPTION_ACTION  
-{  
-   IEA_INTERCEPT = 0x0001  
-}  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- IEA_INTERCEPT  
- Permet d’intercepter l’exception actuelle. Ceci est la seule valeur prise en charge à l’heure actuelle et doit être spécifié.  
-  
-## <a name="remarks"></a>Notes  
- Ces valeurs sont passées dans le [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) (méthode).  
-  
-## <a name="requirements"></a>Spécifications  
- En-tête : msdbg.h  
-  
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
-  
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Voir aussi  
- [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)
+Spécifie les actions à entreprendre lors de l’interception des exceptions.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+enum enum_INTERCEPT_EXCEPTION_ACTION
+{
+    IEA_INTERCEPT = 0x0001
+}
+typedef DWORD INTERCEPT_EXCEPTION_ACTION;
+```
+
+```csharp
+public enum enum_INTERCEPT_EXCEPTION_ACTION
+{
+    IEA_INTERCEPT = 0x0001
+}
+```
+
+#### <a name="parameters"></a>Paramètres
+IEA_INTERCEPT permet d’intercepter l’exception actuelle. Ceci est la seule valeur prise en charge à l’heure actuelle et doit être spécifié.
+
+## <a name="remarks"></a>Notes
+Ces valeurs sont passées dans le [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) (méthode).
+
+## <a name="requirements"></a>Spécifications
+En-tête : msdbg.h
+
+Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+
+Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Voir aussi
+[Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
+[InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)

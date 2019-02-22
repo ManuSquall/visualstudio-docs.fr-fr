@@ -11,67 +11,67 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 571fe8085dc07ff32fa8a253c99cb9a0790120bb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fef36b663a95f2c6eaca31c9091898cbe70db435
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54974238"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450384"
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
-Permet l’évaluateur d’expression (EE) spécifier l’interface de rappel que le moteur du débogueur (dé) utilisera pour lire les paramètres de mesure.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT SetCallback (  
-   IDebugSettingsCallback2* pCallback  
-);  
-```  
-  
-```csharp  
-int SetCallback (  
-   IDebugSettingsCallback2 pCallback  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pCallback`  
- [in] Interface à utiliser pour le rappel de paramètres.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="remarks"></a>Notes  
- Cette méthode fournit une interface avec le Gestionnaire de débogage de session un évaluateur d’expression peut utiliser pour lire les paramètres de mesure. Il est utile dans le débogage distant pour lire les métriques sur le [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ordinateur.  
-  
-## <a name="example"></a>Exemple  
- Les exemples suivants montrent comment implémenter cette méthode pour un **CEE** objet qui expose le [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md) interface.  
-  
-```cpp  
-HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)  
-{  
-    // precondition  
-    INVARIANT( this );  
-  
-    // function body  
-    if (NULL != this->m_LanguageSpecificUseCases.pfSetCallback)  
-    {  
-        EEDomain::fSetCallback DomainVal =  
-        {  
-            in_pCallback  
-        };  
-  
-        BOOL bSuccess = (*this->m_LanguageSpecificUseCases.pfSetCallback)(DomainVal);  
-        ENSURE( bSuccess );  
-    }  
-  
-    // postcondition  
-    INVARIANT( this );  
-  
-    return S_OK;  
-}  
-```  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)
+Permet l’évaluateur d’expression (EE) spécifier l’interface de rappel que le moteur du débogueur (dé) utilisera pour lire les paramètres de mesure.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT SetCallback (
+    IDebugSettingsCallback2* pCallback
+);
+```
+
+```csharp
+int SetCallback (
+    IDebugSettingsCallback2 pCallback
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+`pCallback`  
+[in] Interface à utiliser pour le rappel de paramètres.
+
+## <a name="return-value"></a>Valeur de retour
+En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="remarks"></a>Notes
+Cette méthode fournit une interface avec le Gestionnaire de débogage de session un évaluateur d’expression peut utiliser pour lire les paramètres de mesure. Il est utile dans le débogage distant pour lire les métriques sur le [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ordinateur.
+
+## <a name="example"></a>Exemple
+Les exemples suivants montrent comment implémenter cette méthode pour un **CEE** objet qui expose le [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md) interface.
+
+```cpp
+HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)
+{
+    // precondition
+    INVARIANT( this );
+
+    // function body
+    if (NULL != this->m_LanguageSpecificUseCases.pfSetCallback)
+    {
+        EEDomain::fSetCallback DomainVal =
+        {
+            in_pCallback
+        };
+
+        BOOL bSuccess = (*this->m_LanguageSpecificUseCases.pfSetCallback)(DomainVal);
+        ENSURE( bSuccess );
+    }
+
+    // postcondition
+    INVARIANT( this );
+
+    return S_OK;
+}
+```
+
+## <a name="see-also"></a>Voir aussi
+[IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

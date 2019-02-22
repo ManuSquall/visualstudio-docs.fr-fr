@@ -12,56 +12,56 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 398e4f11702afc3184fb7d081f65a99cccad0bcf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 09863abc81d3f4f1a5e4e541c9e0019d30156b67
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924001"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56449631"
 ---
 # <a name="idebugengine2getengineid"></a>IDebugEngine2::GetEngineID
-Obtient le GUID du moteur de débogage (dé).  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT GetEngineID(   
-   GUID* pguidEngine  
-);  
-```  
-  
-```csharp  
-int GetEngineID(   
-   out Guid pguidEngine  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pguidEngine`  
- [out] Retourne le GUID de l’Allemagne.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="remarks"></a>Notes  
- Voici quelques exemples de GUID typique `guidScriptEng`, `guidNativeEng`, ou `guidSQLEng`. Nouveaux moteurs de débogage seront créer leur propre GUID pour l’identification.  
-  
-## <a name="example"></a>Exemple  
- L’exemple suivant montre comment implémenter cette méthode pour une simple `CEngine` objet qui implémente le [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) interface.  
-  
-```cpp  
-HRESULT CEngine::GetEngineId(GUID *pguidEngine){    
-   if (pguidEngine) {    
-      // Set pguidEngine to guidBatEng, as defined in the Batdbg.idl file.    
-      // Other languages would require their own guidDifferentEngine to be  
-      //defined in the Batdbg.idl file.    
-      *pguidEngine = guidBatEng;    
-      return NOERROR; // This is typically S_OK.    
-   } else {  
-      return E_INVALIDARG;    
-   }    
-}    
-```  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
+Obtient le GUID du moteur de débogage (dé).
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT GetEngineID(
+    GUID* pguidEngine
+);
+```
+
+```csharp
+int GetEngineID(
+    out Guid pguidEngine
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+`pguidEngine`  
+[out] Retourne le GUID de l’Allemagne.
+
+## <a name="return-value"></a>Valeur de retour
+En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="remarks"></a>Notes
+Voici quelques exemples de GUID typique `guidScriptEng`, `guidNativeEng`, ou `guidSQLEng`. Nouveaux moteurs de débogage seront créer leur propre GUID pour l’identification.
+
+## <a name="example"></a>Exemple
+L’exemple suivant montre comment implémenter cette méthode pour une simple `CEngine` objet qui implémente le [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) interface.
+
+```cpp
+HRESULT CEngine::GetEngineId(GUID *pguidEngine) {
+    if (pguidEngine) {
+        // Set pguidEngine to guidBatEng, as defined in the Batdbg.idl file.
+        // Other languages would require their own guidDifferentEngine to be
+        //defined in the Batdbg.idl file.
+        *pguidEngine = guidBatEng;
+        return NOERROR; // This is typically S_OK.
+    } else {
+        return E_INVALIDARG;
+    }
+}
+```
+
+## <a name="see-also"></a>Voir aussi
+[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
