@@ -1,7 +1,7 @@
 ---
 title: IDebugCoreServer2::GetPort | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugCoreServer2::GetPort
 helpviewer_keywords:
@@ -12,42 +12,44 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d1bc15f1de05a2474c924f7407353a7a0040d69
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 44e801318a2a997e7c1ab2f863b737c4d6693e14
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021323"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708002"
 ---
 # <a name="idebugcoreserver2getport"></a>IDebugCoreServer2::GetPort
-Récupère un port spécifique.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT GetPort(   
-   REFGUID       guidPort,  
-   IDebugPort2** ppPort  
-);  
-```  
-  
-```csharp  
-int GetPort(   
-   ref Guid        guidPort,  
-   out IDebugPort2 ppPort  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `guidPort`  
- [in] GUID du port à récupérer.  
-  
- `ppPort`  
- [out] Retourne un [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) objet qui représente le port souhaité.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_PORTSUPPLIER_NO_PORT` s’il n’existe aucun port avec l’identificateur donné.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)   
- [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)
+Récupère un port spécifique.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT GetPort( 
+   REFGUID       guidPort,
+   IDebugPort2** ppPort
+);
+```
+
+```csharp
+int GetPort( 
+   ref Guid        guidPort,
+   out IDebugPort2 ppPort
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `guidPort`
+
+ [in] GUID du port à récupérer.
+
+ `ppPort`
+
+ [out] Retourne un [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) objet qui représente le port souhaité.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_PORTSUPPLIER_NO_PORT` s’il n’existe aucun port avec l’identificateur donné.
+
+## <a name="see-also"></a>Voir aussi
+- [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)
+- [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

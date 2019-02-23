@@ -1,7 +1,7 @@
 ---
 title: IDebugPendingBreakpoint2::Enable | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugPendingBreakpoint2::Enable
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a06ed6e7d3c5f95e0de2ee88c63783924c2b015d
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 3d6498ffbad5fef4d387139b41cefc3d54468245
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450007"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720820"
 ---
 # <a name="idebugpendingbreakpoint2enable"></a>IDebugPendingBreakpoint2::Enable
 Active ou désactive l’état activé de point d’arrêt en attente.
@@ -38,8 +38,9 @@ int Enable(
 ```
 
 #### <a name="parameters"></a>Paramètres
-`fEnable`  
-[in] Définir à différente de zéro (`TRUE`) pour activer un point d’arrêt en attente, ou zéro (`FALSE`) à désactiver.
+`fEnable`
+
+ [in] Définir à différente de zéro (`TRUE`) pour activer un point d’arrêt en attente, ou zéro (`FALSE`) à désactiver.
 
 ## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_BP_DELETED` si le point d’arrêt a été supprimé.
@@ -83,4 +84,4 @@ HRESULT CPendingBreakpoint::Enable(BOOL fEnable)
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
+- [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

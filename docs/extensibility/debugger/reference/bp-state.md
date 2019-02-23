@@ -1,7 +1,7 @@
 ---
 title: BP_STATE | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_STATE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95e228a3aa0e96eedcf0413df7680e7a5664b707
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 4117b3cb92eef555d5ed9a6c3e829fb3302924ae
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315415"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709250"
 ---
 # <a name="bpstate"></a>BP_STATE
 Spécifie l’existence d’un point d’arrêt lié ainsi que si elle est activée.
@@ -44,17 +44,13 @@ public enum enum_BP_STATE {
 ```
 
 ## <a name="members"></a>Membres
-BPS_NONE  
-Spécifie qu’il n’existe aucun point d’arrêt.
+BPS_NONE indique qu’aucun point d’arrêt n’existe.
 
-BPS_DELETED  
-Spécifie que le point d’arrêt a été supprimé.
+BPS_DELETED Spécifie que le point d’arrêt a été supprimé.
 
-BPS_DISABLED  
-Spécifie que le point d’arrêt est désactivé.
+BPS_DISABLED Spécifie que le point d’arrêt est désactivé.
 
-BPS_ENABLED  
-Spécifie que le point d’arrêt est activé.
+BPS_ENABLED Spécifie que le point d’arrêt est activé.
 
 ## <a name="remarks"></a>Notes
 Retourné par la [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) (méthode).
@@ -67,5 +63,5 @@ Espace de noms : Microsoft.VisualStudio.Debugger.Interop
 Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
-[Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)
+- [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)

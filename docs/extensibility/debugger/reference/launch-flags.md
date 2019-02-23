@@ -1,7 +1,7 @@
 ---
 title: LAUNCH_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - LAUNCH_FLAGS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d793adfd8be2fb86f51e94cfd43e8dbcbd75036f
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 302c44b3d4947baa95554966246f15175841257d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449994"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680177"
 ---
 # <a name="launchflags"></a>LAUNCH_FLAGS
 Spécifie les indicateurs de lancement du débogage.
@@ -44,17 +44,13 @@ public enum enum_LAUNCH_FLAGS {
 ```
 
 ## <a name="members"></a>Membres
-LAUNCH_DEBUG  
-Lance le processus de débogage.
+LAUNCH_DEBUG lance le processus de débogage.
 
-LAUNCH_NODEBUG  
-Lance le processus sans le déboguer.
+LAUNCH_NODEBUG lance le processus sans le déboguer.
 
-LAUNCH_ENABLE_ENC  
-DÉCONSEILLÉ, N’UTILISEZ PAS.
+LAUNCH_ENABLE_ENC DÉCONSEILLÉE, N’UTILISEZ PAS.
 
-LAUNCH_MERGE_ENV  
-Lance le processus et fusionne l’environnement avec l’hôte de lancement.
+LAUNCH_MERGE_ENV lance le processus et fusionne l’environnement avec l’hôte de lancement.
 
 ## <a name="remarks"></a>Notes
 Ces valeurs sont passées en tant qu’argument à la [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) (méthode).
@@ -69,5 +65,5 @@ Espace de noms : Microsoft.VisualStudio.Debugger.Interop
 Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
-[Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)
+- [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)

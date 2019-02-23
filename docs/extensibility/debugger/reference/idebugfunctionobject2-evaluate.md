@@ -1,7 +1,7 @@
 ---
 title: IDebugFunctionObject2::Evaluate | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugFunctionObject2::Evaluate
 ms.assetid: bc54c652-904b-4297-a6db-faa329684881
@@ -10,56 +10,61 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bab355371d26b59ff078798aea205102821e1f0a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 441126724c78c2045e3e870fcdf7baa23f9149c3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043256"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708782"
 ---
 # <a name="idebugfunctionobject2evaluate"></a>IDebugFunctionObject2::Evaluate
-Appelle la fonction et retourne la valeur obtenue en tant qu’objet.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT Evaluate (  
-   IDebugObject** ppParams,  
-   DWORD          dwParams,  
-   DWORD          dwEvalFlags,  
-   DWORD          dwTimeout,  
-   IDebugObject** ppResult  
-);  
-```  
-  
-```csharp  
-int Evaluate (  
-   IDebugObject     ppParams,  
-   uint             dwParams,  
-   uint             dwEvalFlags,  
-   uint             dwTimeout,  
-   out IDebugObject ppResult  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `ppParams`  
- [in] Un tableau de [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objets qui représente les paramètres d’entrée. Chacun de ces paramètres a été créé en utilisant l’une des méthodes de créer dans cette interface.  
-  
- `dwParams`  
- [in] Le nombre de paramètres dans le `ppParams` tableau.  
-  
- `dwEvalFlags`  
- [in] Une combinaison d’indicateurs de la [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) énumération qui spécifient la façon dont l’évaluation doit être effectuée.  
-  
- `dwTimeout`  
- [in] Spécifie la durée maximale, en millisecondes, à attendre avant de retourner à partir de cette méthode. Utilisez **infinie** pour attendre indéfiniment.  
-  
- `ppResult`  
- [out] Retourne un **IDebugObject** qui représente la valeur de la fonction en tant qu’objet.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)
+Appelle la fonction et retourne la valeur obtenue en tant qu’objet.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT Evaluate (
+   IDebugObject** ppParams,
+   DWORD          dwParams,
+   DWORD          dwEvalFlags,
+   DWORD          dwTimeout,
+   IDebugObject** ppResult
+);
+```
+
+```csharp
+int Evaluate (
+   IDebugObject     ppParams,
+   uint             dwParams,
+   uint             dwEvalFlags,
+   uint             dwTimeout,
+   out IDebugObject ppResult
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `ppParams`
+
+ [in] Un tableau de [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objets qui représente les paramètres d’entrée. Chacun de ces paramètres a été créé en utilisant l’une des méthodes de créer dans cette interface.
+
+ `dwParams`
+
+ [in] Le nombre de paramètres dans le `ppParams` tableau.
+
+ `dwEvalFlags`
+
+ [in] Une combinaison d’indicateurs de la [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) énumération qui spécifient la façon dont l’évaluation doit être effectuée.
+
+ `dwTimeout`
+
+ [in] Spécifie la durée maximale, en millisecondes, à attendre avant de retourner à partir de cette méthode. Utilisez **infinie** pour attendre indéfiniment.
+
+ `ppResult`
+
+ [out] Retourne un **IDebugObject** qui représente la valeur de la fonction en tant qu’objet.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="see-also"></a>Voir aussi
+- [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

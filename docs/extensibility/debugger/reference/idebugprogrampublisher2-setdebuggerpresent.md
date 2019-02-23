@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramPublisher2::SetDebuggerPresent | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProgramPublisher2::SetDebuggerPresent
 helpviewer_keywords:
@@ -12,40 +12,41 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de18d9d30bcddd8692535bff2d8f7723d79dba4b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: faa7263c3f5fa86a77c94271dec1b429d2f00543
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921854"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713462"
 ---
 # <a name="idebugprogrampublisher2setdebuggerpresent"></a>IDebugProgramPublisher2::SetDebuggerPresent
-Indique le serveur de publication du programme qu’un débogueur est présent et en cours d’exécution.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT SetDebuggerPresent(  
-   BOOL fDebuggerPresent  
-);  
-```  
-  
-```csharp  
-int SetDebuggerPresent(  
-   int fDebuggerPresent  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `fDebuggerPresent`  
- [in] Valeur différente de zéro (`TRUE`) si un débogueur est présent, zéro (`FALSE`) si elle n’est pas.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="remarks"></a>Notes  
- La présence ou l’absence d’un débogueur est reflétée dans les données retournées à partir de la [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) méthode : la valeur retournée il est définie ou désactivée par un appel antérieur à la `SetDebuggerPresent` (méthode).  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   
- [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)
+Indique le serveur de publication du programme qu’un débogueur est présent et en cours d’exécution.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT SetDebuggerPresent(
+   BOOL fDebuggerPresent
+);
+```
+
+```csharp
+int SetDebuggerPresent(
+   int fDebuggerPresent
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `fDebuggerPresent`
+
+ [in] Valeur différente de zéro (`TRUE`) si un débogueur est présent, zéro (`FALSE`) si elle n’est pas.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="remarks"></a>Notes
+ La présence ou l’absence d’un débogueur est reflétée dans les données retournées à partir de la [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) méthode : la valeur retournée il est définie ou désactivée par un appel antérieur à la `SetDebuggerPresent` (méthode).
+
+## <a name="see-also"></a>Voir aussi
+- [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)
+- [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::LoadSymbols | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - LoadSymbols
 - IDebugComPlusSymbolProvider::LoadSymbols
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1469c2a0d8332371bb38be2616ae7dcf6a61fe37
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 4c19070dce95a1f88398fe57d03e9d578086e9ae
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413369"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678200"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbols"></a>IDebugComPlusSymbolProvider::LoadSymbols
 Charge les symboles de débogage spécifié dans la mémoire.
@@ -46,23 +46,29 @@ int LoadSymbols(
 ```
 
 #### <a name="parameters"></a>Paramètres
-`ulAppDomainID`  
-[in] Identificateur du domaine d’application.
+`ulAppDomainID`
 
-`guidModule`  
-[in] Identificateur unique de le mondule.
+ [in] Identificateur du domaine d’application.
 
-`baseAddress`  
-[in] Adresse mémoire de base.
+`guidModule`
 
-`pUnkMetadataImport`  
-[in] Objet qui contient les métadonnées de symbole.
+ [in] Identificateur unique de le mondule.
 
-`bstrModuleName`  
-[in] Nom du module.
+`baseAddress`
 
-`bstrSymSearchPath`  
-[in] Chemin d’accès pour rechercher le fichier de symboles.
+ [in] Adresse mémoire de base.
+
+`pUnkMetadataImport`
+
+ [in] Objet qui contient les métadonnées de symbole.
+
+`bstrModuleName`
+
+ [in] Nom du module.
+
+`bstrSymSearchPath`
+
+ [in] Chemin d’accès pour rechercher le fichier de symboles.
 
 ## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
@@ -84,4 +90,4 @@ HRESULT CDebugSymbolProvider::LoadSymbols(
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

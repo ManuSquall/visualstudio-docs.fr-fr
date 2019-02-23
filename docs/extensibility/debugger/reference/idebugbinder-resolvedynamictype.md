@@ -1,7 +1,7 @@
 ---
 title: IDebugBinder::ResolveDynamicType | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugBinder::ResolveDynamicType
 helpviewer_keywords:
@@ -12,43 +12,45 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77d2b89d861cc21321759ffc7628d59d258455c7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 116a08025f70c2cd1e4c87f775511bd20ac0e4ab
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042034"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683530"
 ---
 # <a name="idebugbinderresolvedynamictype"></a>IDebugBinder::ResolveDynamicType
-Cette méthode retourne le type exact d’une variable.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT ResolveDynamicType (  
-   IDebugDynamicField *pDynamic,  
-   IDebugField       **ppResolved  
-);  
-```  
-  
-```csharp  
-int ResolveDynamicType(  
-   IDebugDynamicField pDynamic,   
-   out IDebugField    ppResolved  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pDynamic`  
- [in] Un [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md) représentant un type d’une variable.  
-  
- `ppResolved`  
- [out] Retourne un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) en donnant des informations spécifiques sur le type de variable.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
- [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md)
+Cette méthode retourne le type exact d’une variable.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT ResolveDynamicType (
+   IDebugDynamicField *pDynamic,
+   IDebugField       **ppResolved
+);
+```
+
+```csharp
+int ResolveDynamicType(
+   IDebugDynamicField pDynamic,
+   out IDebugField    ppResolved
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pDynamic`
+
+ [in] Un [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md) représentant un type d’une variable.
+
+ `ppResolved`
+
+ [out] Retourne un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) en donnant des informations spécifiques sur le type de variable.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="see-also"></a>Voir aussi
+- [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
+- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
+- [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md)

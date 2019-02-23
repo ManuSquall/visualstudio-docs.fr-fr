@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 978e4d2717d1275c00305e2eadda289a9e257912
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: fac02f024813e3ca747f498025e113ba4e7a59bd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318743"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680471"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Nouveautés d’extensibilité de Visual Studio 2017
 
@@ -103,6 +103,6 @@ La plupart des assemblys principaux de Visual Studio ne sont plus installés dan
 ### <a name="reacting-to-this-breaking-change"></a>Réagir à cette modification avec rupture
 
 * Code externe doit être converti pour utiliser l’activation sans inscription pour les composants COM et.
-* Composants externes pour trouver l’emplacement de Visual Studio [en suivant les conseils donnés ici](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup).
+* Composants externes pour trouver l’emplacement de Visual Studio [en suivant les conseils donnés ici](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup).
 * Nous recommandons d’utilisent des composants externes les [Gestionnaire de paramètres externe](/dotnet/api/microsoft.visualstudio.settings.externalsettingsmanager) au lieu de lecture/écriture directement aux clés de Registre de Visual Studio.
 * Vérifiez si les composants à l’aide de votre extension a peut-être implémenté une autre technique pour l’inscription. Par exemple, les extensions de débogueur peuvent être en mesure de tirer parti de la nouvelle [msvsmon enregistrement JSON-fichier COM](migrate-debugger-COM-registration.md).
