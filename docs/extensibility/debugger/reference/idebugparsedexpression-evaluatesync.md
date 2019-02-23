@@ -1,7 +1,7 @@
 ---
 title: IDebugParsedExpression::EvaluateSync | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugParsedExpression::EvaluateSync
 helpviewer_keywords:
@@ -12,73 +12,80 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b64ba70f1d69a8beaac12405abb52a3d425527e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ea659b847149a6abb2c3a5ba7cc947a59c7ae41c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54971856"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709640"
 ---
 # <a name="idebugparsedexpressionevaluatesync"></a>IDebugParsedExpression::EvaluateSync
-Cette méthode évalue l’expression analysée et éventuellement convertit le résultat à un autre type de données.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT EvaluateSync(   
-   DWORD                 dwEvalFlags,  
-   DWORD                 dwTimeout,  
-   IDebugSymbolProvider* pSymbolProvider,  
-   IDebugAddress*        pAddress,  
-   IDebugBinder*         pBinder,  
-   BSTR                  bstrResultType,  
-   IDebugProperty2**     ppResult  
-);  
-```  
-  
-```csharp  
-int EvaluateSync(  
-   uint                 dwEvalFlags,   
-   uint                 dwTimeout,   
-   IDebugSymbolProvider pSymbolProvider,   
-   IDebugAddress        pAddress,   
-   IDebugBinder         pBinder,   
-   string               bstrResultType,   
-   out IDebugProperty2  ppResult  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `dwEvalFlags`  
- [in] Une combinaison de [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) constantes qui contrôlent la manière dont l’expression doit être évaluée.  
-  
- `dwTimeout`  
- [in] Spécifie la durée maximale, en millisecondes, à attendre avant de retourner à partir de cette méthode. Utilisez `INFINITE` pour attendre indéfiniment.  
-  
- `pSymbolProvider`  
- [in] Le fournisseur de symboles, exprimée sous la forme un [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) interface.  
-  
- `pAddress`  
- [in] L’emplacement d’exécution actuel dans une méthode, exprimée sous la forme un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.  
-  
- `pBinder`  
- [in] Le binder, exprimée sous la forme un [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) interface.  
-  
- `bstrResultType`  
- [in] Le type de résultat doit être casté en. Cet argument peut être une valeur null.  
-  
- `ppResult`  
- [out] Retourne le [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interface qui représente les résultats d’évaluation.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="remarks"></a>Notes  
- Le contexte d’évaluation d’expression est fourni par `pAddress`, ce qui rend possible de déterminer la méthode conteneur et utiliser la portée du langage des règles pour déterminer la valeur des symboles dans l’expression.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
- [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
- [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)   
- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
- [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)
+Cette méthode évalue l’expression analysée et éventuellement convertit le résultat à un autre type de données.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT EvaluateSync( 
+   DWORD                 dwEvalFlags,
+   DWORD                 dwTimeout,
+   IDebugSymbolProvider* pSymbolProvider,
+   IDebugAddress*        pAddress,
+   IDebugBinder*         pBinder,
+   BSTR                  bstrResultType,
+   IDebugProperty2**     ppResult
+);
+```
+
+```csharp
+int EvaluateSync(
+   uint                 dwEvalFlags,
+   uint                 dwTimeout,
+   IDebugSymbolProvider pSymbolProvider,
+   IDebugAddress        pAddress,
+   IDebugBinder         pBinder,
+   string               bstrResultType,
+   out IDebugProperty2  ppResult
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `dwEvalFlags`
+
+ [in] Une combinaison de [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) constantes qui contrôlent la manière dont l’expression doit être évaluée.
+
+ `dwTimeout`
+
+ [in] Spécifie la durée maximale, en millisecondes, à attendre avant de retourner à partir de cette méthode. Utilisez `INFINITE` pour attendre indéfiniment.
+
+ `pSymbolProvider`
+
+ [in] Le fournisseur de symboles, exprimée sous la forme un [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) interface.
+
+ `pAddress`
+
+ [in] L’emplacement d’exécution actuel dans une méthode, exprimée sous la forme un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.
+
+ `pBinder`
+
+ [in] Le binder, exprimée sous la forme un [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) interface.
+
+ `bstrResultType`
+
+ [in] Le type de résultat doit être casté en. Cet argument peut être une valeur null.
+
+ `ppResult`
+
+ [out] Retourne le [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interface qui représente les résultats d’évaluation.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="remarks"></a>Notes
+ Le contexte d’évaluation d’expression est fourni par `pAddress`, ce qui rend possible de déterminer la méthode conteneur et utiliser la portée du langage des règles pour déterminer la valeur des symboles dans l’expression.
+
+## <a name="see-also"></a>Voir aussi
+- [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
+- [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
+- [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
+- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
+- [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)

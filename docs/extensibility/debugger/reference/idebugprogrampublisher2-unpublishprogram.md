@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramPublisher2::UnpublishProgram | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProgramPublisher2::UnpublishProgram
 helpviewer_keywords:
@@ -12,40 +12,41 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e57611865b16b97927adcdbcd2944d675330cfcc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0f633b7cd41a9e19179ba5daf22fdd66e9749ad5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55068795"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698649"
 ---
 # <a name="idebugprogrampublisher2unpublishprogram"></a>IDebugProgramPublisher2::UnpublishProgram
-Rend indisponible à déboguer.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT UnpublishProgram(  
-   IUnknown* pDebuggeeInterface  
-);  
-```  
-  
-```csharp  
-int UnpublishProgram(  
-   object pDebuggeeInterface  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pDebuggeeInterface`  
- [in] Un `IUnknown` interface au programme. C’est la même valeur fournie à la [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) (méthode) et identifie de façon unique le programme en cours de suppression (autrement dit, il est utilisé en tant que cookie).  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="remarks"></a>Notes  
- Pour rendre un programme les moteurs de débogage et le Gestionnaire de session de débogage, utilisez le [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) (méthode).  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   
- [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)
+Rend indisponible à déboguer.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT UnpublishProgram(
+   IUnknown* pDebuggeeInterface
+);
+```
+
+```csharp
+int UnpublishProgram(
+   object pDebuggeeInterface
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pDebuggeeInterface`
+
+ [in] Un `IUnknown` interface au programme. C’est la même valeur fournie à la [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) (méthode) et identifie de façon unique le programme en cours de suppression (autrement dit, il est utilisé en tant que cookie).
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="remarks"></a>Notes
+ Pour rendre un programme les moteurs de débogage et le Gestionnaire de session de débogage, utilisez le [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) (méthode).
+
+## <a name="see-also"></a>Voir aussi
+- [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)
+- [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)

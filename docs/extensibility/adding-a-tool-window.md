@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5ffcc334a69a38da4869532d633960cfac7260d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 22b84716f320883c71f534ea762adf34d5c2a983
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317131"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709939"
 ---
 # <a name="add-a-tool-window"></a>Ajouter une fenêtre outil
 Dans cette procédure pas à pas, vous allez apprendre à créer une fenêtre outil et l’intégrer à Visual Studio comme suit :
@@ -277,4 +277,4 @@ Ajouter une barre d’outils et une commande de menu qui appelle le **ouvrir un 
     Vous devez entendre le son de carillon.
 
 ## <a name="see-also"></a>Voir aussi
-[Commandes, menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md)
+- [Commandes, menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md)

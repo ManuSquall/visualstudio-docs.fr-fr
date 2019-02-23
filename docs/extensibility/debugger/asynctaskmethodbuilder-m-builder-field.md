@@ -10,30 +10,30 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 594ffe24f731b6ca6669650afd72e5007cb37a3c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c069ce3781d246f4eb736f72462627d457a92a28
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55025824"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722809"
 ---
 # <a name="asynctaskmethodbuildermbuilder-field"></a>Champ AsyncTaskMethodBuilder.m_builder
-Représente l’objet de Générateur générique auquel cette instance non générique délègue.  
-  
- **Espace de noms :** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
-  
- **Assembly :** mscorlib (dans mscorlib.dll)  
-  
- Étant donné que vous ne pouvez pas accéder à ce membre interne du .NET Framework, la syntaxe suivante est fournie en commun Intermediate Language (CIL).  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```csharp 
-.field private valuetype System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<valuetype System.Threading.Tasks.VoidTaskResult> m_builder  
-```  
-  
-## <a name="remarks"></a>Notes  
-  
-## <a name="see-also"></a>Voir aussi  
- <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder>   
- [Mécanismes internes d’extension parallèle pour le .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+Représente l’objet de Générateur générique auquel cette instance non générique délègue.
+
+ **Espace de noms :** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
+
+ **Assembly :** mscorlib (dans mscorlib.dll)
+
+ Étant donné que vous ne pouvez pas accéder à ce membre interne du .NET Framework, la syntaxe suivante est fournie en commun Intermediate Language (CIL).
+
+## <a name="syntax"></a>Syntaxe
+
+```csharp
+.field private valuetype System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<valuetype System.Threading.Tasks.VoidTaskResult> m_builder
+```
+
+## <a name="remarks"></a>Notes
+
+## <a name="see-also"></a>Voir aussi
+- <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder>
+- [Mécanismes internes d’extension parallèle pour le .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
