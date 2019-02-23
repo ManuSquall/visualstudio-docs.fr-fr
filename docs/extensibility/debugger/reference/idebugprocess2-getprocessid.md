@@ -1,7 +1,7 @@
 ---
 title: IDebugProcess2::GetProcessId | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProcess2::GetProcessId
 helpviewer_keywords:
@@ -12,39 +12,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3f3e5632f7b59b355c4cd76f76479d21e232780
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b927d5a8da316faa76b5d102ad0cfb14e0cb61e7
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954642"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56706650"
 ---
 # <a name="idebugprocess2getprocessid"></a>IDebugProcess2::GetProcessId
-Obtient le GUID de ce processus.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT GetProcessId(  
-   GUID* pguidProcessId  
-);  
-```  
-  
-```csharp  
-int GetProcessId(  
-   out Guid pguidProcessId  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pguidProcessId`  
- [out] Retourne le GUID pour ce processus.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="remarks"></a>Notes  
- L’identificateur global Unique (GUID) identifie ce processus à partir de tous les autres processus en cours d’exécution dans le système.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
+Obtient le GUID de ce processus.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT GetProcessId(
+   GUID* pguidProcessId
+);
+```
+
+```csharp
+int GetProcessId(
+   out Guid pguidProcessId
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pguidProcessId`
+
+ [out] Retourne le GUID pour ce processus.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="remarks"></a>Notes
+ L’identificateur global Unique (GUID) identifie ce processus à partir de tous les autres processus en cours d’exécution dans le système.
+
+## <a name="see-also"></a>Voir aussi
+- [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
