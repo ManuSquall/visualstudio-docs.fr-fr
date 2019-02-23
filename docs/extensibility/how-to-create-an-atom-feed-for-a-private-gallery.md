@@ -11,32 +11,32 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6053c01908df9f1c2884e81c8610a989ac89294
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 094bff5c761a45e936f14f79587b4846d3838610
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55030676"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722406"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Procédure : Créer un flux Atom pour une galerie privée
-Vous pouvez créer un flux vers un emplacement intranet qui contient des extensions et ajouter le flux à Atom (RSS) **Extensions et mises à jour** dans une galerie privée. Pour plus d’informations, consultez [galeries privées](../extensibility/private-galleries.md).  
-  
-## <a name="create-an-atom-feed"></a>Créer un flux Atom  
- Pour créer un flux dans une galerie privée Atom, vous commencez par rassembler vos extensions (*.vsix* fichiers) dans un dossier. Vous pouvez les organiser dans des sous-dossiers si vous le souhaitez. Vous devez également les ressources suivantes :  
-  
-- Un *atom.xml* fichier qui rend les extensions disponibles dans une galerie privée. Pour plus d’informations sur la connexion le *atom.xml* fichier **Extensions et mises à jour**, consultez [galeries privées](../extensibility/private-galleries.md).  
-  
-- Un dossier qui contient tous les fichiers image qui ont été extraits à partir des extensions (par exemple, les captures d’écran). Le *atom.xml* fichier contient des liens relatifs à ces images afin qu’ils soient disponibles dans **Extensions et mises à jour**.  
-  
-  Par exemple, supposons que vous avez collecté les deux extensions suivantes dans un dossier :  
-  
-- *Template_Wizard_239.vsix*, qui est un modèle de projet VSIX vide.  
-  
-- *SelectionHighlight.vsix*, qui est un outil pour mettre en surbrillance toutes les instances d’un mot sélectionné.  
-  
-  Le contenu de la *atom.xml* fichier ressemblerait à l’exemple suivant :  
-  
-```xml  
+Vous pouvez créer un flux vers un emplacement intranet qui contient des extensions et ajouter le flux à Atom (RSS) **Extensions et mises à jour** dans une galerie privée. Pour plus d’informations, consultez [galeries privées](../extensibility/private-galleries.md).
+
+## <a name="create-an-atom-feed"></a>Créer un flux Atom
+ Pour créer un flux dans une galerie privée Atom, vous commencez par rassembler vos extensions (*.vsix* fichiers) dans un dossier. Vous pouvez les organiser dans des sous-dossiers si vous le souhaitez. Vous devez également les ressources suivantes :
+
+- Un *atom.xml* fichier qui rend les extensions disponibles dans une galerie privée. Pour plus d’informations sur la connexion le *atom.xml* fichier **Extensions et mises à jour**, consultez [galeries privées](../extensibility/private-galleries.md).
+
+- Un dossier qui contient tous les fichiers image qui ont été extraits à partir des extensions (par exemple, les captures d’écran). Le *atom.xml* fichier contient des liens relatifs à ces images afin qu’ils soient disponibles dans **Extensions et mises à jour**.
+
+  Par exemple, supposons que vous avez collecté les deux extensions suivantes dans un dossier :
+
+- *Template_Wizard_239.vsix*, qui est un modèle de projet VSIX vide.
+
+- *SelectionHighlight.vsix*, qui est un outil pour mettre en surbrillance toutes les instances d’un mot sélectionné.
+
+  Le contenu de la *atom.xml* fichier ressemblerait à l’exemple suivant :
+
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text" />
@@ -68,9 +68,9 @@ Vous pouvez créer un flux vers un emplacement intranet qui contient des extensi
     ...
   </entry>
 </feed>
-```  
-  
- Notez que les balises de deux liens font référence aux captures d’écran dans le dossier généré d’images.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Galeries privées](../extensibility/private-galleries.md)
+```
+
+ Notez que les balises de deux liens font référence aux captures d’écran dans le dossier généré d’images.
+
+## <a name="see-also"></a>Voir aussi
+- [Galeries privées](../extensibility/private-galleries.md)

@@ -18,28 +18,28 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89114689f933f3b09aac1d7ffcec109e81f631ad
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dd95fe31949b51c7167337ad21c51251e84a19a7
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970550"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705529"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>Commutateurs de ligne de commande devenv pour le développement VSPackage
 
-Visual Studio permet aux développeurs d’automatiser les tâches à partir de la ligne de commande lors de l’exécution `devenv.exe`, le fichier qui démarre l’IDE Visual Studio.  
+Visual Studio permet aux développeurs d’automatiser les tâches à partir de la ligne de commande lors de l’exécution `devenv.exe`, le fichier qui démarre l’IDE Visual Studio.
 
- Tâches :  
+ Tâches :
 
-- Déploiement d’applications dans des configurations prédéfinies d’en dehors de l’IDE.  
+- Déploiement d’applications dans des configurations prédéfinies d’en dehors de l’IDE.
 
-- Automatiquement la génération de projets à l’aide de la présélection paramètres de build ou des configurations de débogage.  
+- Automatiquement la génération de projets à l’aide de la présélection paramètres de build ou des configurations de débogage.
 
-- Chargement de l’IDE dans des configurations spécifiques, à partir d’en dehors de l’IDE. Vous pouvez également personnaliser l’IDE lors de son lancement.  
+- Chargement de l’IDE dans des configurations spécifiques, à partir d’en dehors de l’IDE. Vous pouvez également personnaliser l’IDE lors de son lancement.
 
 ## <a name="guidelines-for-switches"></a>Instructions pour les commutateurs
 
-Documentation de Visual Studio décrit le niveau de l’utilisateur `devenv` commutateurs de ligne de commande. Pour plus d’informations, consultez [commutateurs de ligne de commande Devenv](../ide/reference/devenv-command-line-switches.md). Le `devenv` prend également en charge les commutateurs de ligne de commande supplémentaires qui sont utiles au développement VSPackage, déploiement et débogage.  
+Documentation de Visual Studio décrit le niveau de l’utilisateur `devenv` commutateurs de ligne de commande. Pour plus d’informations, consultez [commutateurs de ligne de commande Devenv](../ide/reference/devenv-command-line-switches.md). Le `devenv` prend également en charge les commutateurs de ligne de commande supplémentaires qui sont utiles au développement VSPackage, déploiement et débogage.
 
 | Commutateur de ligne de commande | Description |
 |---------------------| - |

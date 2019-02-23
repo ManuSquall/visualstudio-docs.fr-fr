@@ -12,19 +12,22 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bf06084be7ea3d9f7dfa27a0d6dec49351ab5cd
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+monikerRange: vs-2017
+ms.openlocfilehash: 5a5e8d752122432e27d7b6845f6d144856746387
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317755"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703238"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Ajouter un contrôle utilisateur à la Page de démarrage
+
 Cette procédure pas à pas montre comment ajouter une référence DLL à une Page de démarrage personnalisée. L’exemple ajoute un contrôle utilisateur à la solution, génère le contrôle utilisateur et fait référence à l’assembly généré à partir de la Page de démarrage *.xaml* fichier. Un nouvel onglet héberge le contrôle utilisateur, qui fonctionne comme un navigateur Web de base.
 
 Vous pouvez utiliser le même processus pour ajouter n’importe quel assembly qui peut être appelée à partir d’un *.xaml* fichier.
 
 ## <a name="add-a-wpf-user-control-to-the-solution"></a>Ajouter un contrôle utilisateur WPF à la solution
+
 Tout d’abord, ajoutez un contrôle utilisateur de Windows Presentation Foundation (WPF) à la solution de Page de démarrage.
 
 1. Créer une Page de démarrage à l’aide que nous avons créé dans [créer une Page de démarrage personnalisée](../extensibility/creating-a-custom-start-page.md).
@@ -36,6 +39,7 @@ Tout d’abord, ajoutez un contrôle utilisateur de Windows Presentation Foundat
 4. Nommez le contrôle `WebUserControl` puis cliquez sur **OK**.
 
 ## <a name="implement-the-user-control"></a>Implémenter le contrôle utilisateur
+
 Pour implémenter un contrôle utilisateur WPF, générer l’interface utilisateur (IU) dans XAML, puis écrire les événements code-behind en c# ou un autre langage .NET.
 
 ### <a name="to-write-the-xaml-for-the-user-control"></a>Pour écrire le XAML pour le contrôle utilisateur
@@ -132,7 +136,8 @@ Pour implémenter un contrôle utilisateur WPF, générer l’interface utilisat
 4. Générez la solution.
 
 ## <a name="add-the-user-control-to-the-start-page"></a>Ajouter le contrôle utilisateur à la Page de démarrage
- Pour rendre ce contrôle soit disponible pour le projet de la Page de démarrage, dans le fichier de projet Page de démarrage, ajoutez une référence à la nouvelle bibliothèque de contrôle. Vous pouvez ensuite ajouter le contrôle au balisage XAML de Page Démarrer.
+
+Pour rendre ce contrôle soit disponible pour le projet de la Page de démarrage, dans le fichier de projet Page de démarrage, ajoutez une référence à la nouvelle bibliothèque de contrôle. Vous pouvez ensuite ajouter le contrôle au balisage XAML de Page Démarrer.
 
 1. Dans **l’Explorateur de solutions**, dans le projet de la Page de démarrage, cliquez sur **références** puis cliquez sur **ajouter une référence**.
 
@@ -185,5 +190,6 @@ Pour implémenter un contrôle utilisateur WPF, générer l’interface utilisat
     Votre page de démarrage personnalisée doit être affiché. Si vous souhaitez modifier tous les fichiers, fermez l’instance expérimentale, apportez les modifications, copiez et collez les fichiers modifiés et puis ouvrez à nouveau l’instance expérimentale pour afficher les modifications.
 
 ## <a name="see-also"></a>Voir aussi
-[Conteneur des contrôles WPF](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)  
-[Procédure pas à pas : Ajoutez le XAML personnalisé à la Page de démarrage](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
+
+- [Conteneur des contrôles WPF](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)
+- [Procédure pas à pas : Ajoutez le XAML personnalisé à la Page de démarrage](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

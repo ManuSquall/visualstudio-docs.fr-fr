@@ -1,7 +1,7 @@
 ---
 title: IDebugCustomAttributeQuery::GetCustomAttributeByName | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugCustomAttributeQuery::GetCustomAttributeByName
 - GetCustomAttributeByName
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb887a7d8e164616a987e475e4617e9ea88f90bf
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 60341aa39a61f7179d0b913ec78aca10fae5b84c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413421"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56725019"
 ---
 # <a name="idebugcustomattributequerygetcustomattributebyname"></a>IDebugCustomAttributeQuery::GetCustomAttributeByName
 Récupère un attribut personnalisé est fonction de son nom.
@@ -40,14 +40,17 @@ int GetCustomAttributeByName(
 ```
 
 #### <a name="parameters"></a>Paramètres
-`pszCustomAttributeName`  
-[in] Nom de l’attribut personnalisé.
+`pszCustomAttributeName`
 
-`ppBlob`  
+ [in] Nom de l’attribut personnalisé.
+
+`ppBlob`
+
 [in, out] Tableau d’octets qui contient les données d’attribut personnalisé.
 
-`pdwLen`  
-[out] Longueur en octets de la `ppBlob` paramètre.
+`pdwLen`
+
+ [out] Longueur en octets de la `ppBlob` paramètre.
 
 ## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK`. Si l’attribut personnalisé n’existe pas, retourne `S_FALSE`. Sinon, retourne un code d'erreur.
@@ -91,4 +94,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)
+- [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)

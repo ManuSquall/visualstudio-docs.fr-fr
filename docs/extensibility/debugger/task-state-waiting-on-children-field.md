@@ -10,30 +10,30 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 055b0f8a0babfe5b1492a781c5c80b2bfd8c42c8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fc3d8bc5d7a4b859ef8ff57c8661a05d7cf48901
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918639"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702705"
 ---
 # <a name="taskstatewaitingonchildren-field"></a>Champ TASK_STATE_WAITING_ON_CHILDREN
-La tâche a terminé l’exécution de son délégué et attend implicitement pour effectuer des tâches enfants attachées.  
-  
- **Espace de noms :** <xref:System.Threading.Tasks?displayProperty=fullName>  
-  
- **Assembly :** mscorlib (dans *mscorlib.dll*)  
-  
- Étant donné que vous ne pouvez pas accéder à ce membre interne du .NET Framework, la syntaxe suivante est fournie en commun Intermediate Language (CIL).  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```csharp  
-.field static assembly literal int32 TASK_STATE_WAITING_ON_CHILDREN = int32(0x01000000)  
-```  
-  
-## <a name="remarks"></a>Notes  
- Si le [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) champ contient cette valeur, le <xref:System.Threading.Tasks.Task.Status%2A> retourne de la propriété <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Classe Task](../../extensibility/debugger/task-class-internal-members.md)
+La tâche a terminé l’exécution de son délégué et attend implicitement pour effectuer des tâches enfants attachées.
+
+ **Espace de noms :** <xref:System.Threading.Tasks?displayProperty=fullName>
+
+ **Assembly :** mscorlib (dans *mscorlib.dll*)
+
+ Étant donné que vous ne pouvez pas accéder à ce membre interne du .NET Framework, la syntaxe suivante est fournie en commun Intermediate Language (CIL).
+
+## <a name="syntax"></a>Syntaxe
+
+```csharp
+.field static assembly literal int32 TASK_STATE_WAITING_ON_CHILDREN = int32(0x01000000)
+```
+
+## <a name="remarks"></a>Notes
+ Si le [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) champ contient cette valeur, le <xref:System.Threading.Tasks.Task.Status%2A> retourne de la propriété <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>.
+
+## <a name="see-also"></a>Voir aussi
+- [Classe Task](../../extensibility/debugger/task-class-internal-members.md)

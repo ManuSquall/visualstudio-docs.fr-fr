@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: 9807f37925620b3672c3fcb9319913194d09d6ab
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 40d5e730bef85fe047923cd85aaa7ee3fa8f5d49
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016237"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722276"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Référence de valeur de couleur pour Visual Studio
 
-Cette rubrique est une référence pour la création de nouveaux jetons de couleur. Lorsque vous créez une nouvelle interface utilisateur, vous pouvez utiliser des couleurs similaires à partir de l’interface utilisateur existante pour choisir les couleurs pour chaque thème principal et le nom de la couleur système pour cet élément pour les thèmes à contraste élevé. 
+Cette rubrique est une référence pour la création de nouveaux jetons de couleur. Lorsque vous créez une nouvelle interface utilisateur, vous pouvez utiliser des couleurs similaires à partir de l’interface utilisateur existante pour choisir les couleurs pour chaque thème principal et le nom de la couleur système pour cet élément pour les thèmes à contraste élevé.
 
 Pour plus d’informations de mise en œuvre sur la création de nouveaux jetons de couleur, consultez [outils de thèmes de couleurs](../../extensibility/internals/color-theming-tools.md).
 
@@ -26,11 +26,11 @@ Pour les jetons de couleur à utiliser avec l’interface utilisateur existante,
 
 Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
--   **Toujours copier les teintes de premier plan et arrière-plan ensemble.** Ne choisissez pas un premier plan à partir d’un élément d’interface utilisateur et un arrière-plan d’une autre parce que vous aimez les teintes.  
+-   **Toujours copier les teintes de premier plan et arrière-plan ensemble.** Ne choisissez pas un premier plan à partir d’un élément d’interface utilisateur et un arrière-plan d’une autre parce que vous aimez les teintes.
 
 -   **Il s’agit de codes hexadécimaux, pas les jetons de couleur.** Vous ne pouvez pas utiliser les noms de jeton de couleur réelle de ces éléments d’interface utilisateur, car vous ne pouvez pas contrôler la façon dont les jetons peuvent être modifiés à l’avenir. Au lieu de cela, créer des jetons au sein de votre propre catégorie et utilisez les valeurs de teinte indiquées dans les tables. Jetons de couleur pour l’interface utilisateur existante se trouve dans [partagé des couleurs pour Visual Studio](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md).
 
-- **Les échantillons de contraste élevés sont affichés pour la comparaison uniquement.** Utilisez le nom de la couleur système pour l’interface utilisateur de contraste élevé et n’utilisez pas un sélecteur de couleur ou de la pipette sur ces échantillons. Les échantillons de contraste élevés dans cette rubrique reflètent le thème de contraste élevé, #1 dans Windows. Les couleurs aura un aspect différents dans les autres thèmes à contraste élevé. 
+- **Les échantillons de contraste élevés sont affichés pour la comparaison uniquement.** Utilisez le nom de la couleur système pour l’interface utilisateur de contraste élevé et n’utilisez pas un sélecteur de couleur ou de la pipette sur ces échantillons. Les échantillons de contraste élevés dans cette rubrique reflètent le thème de contraste élevé, #1 dans Windows. Les couleurs aura un aspect différents dans les autres thèmes à contraste élevé.
 
 -   **Pour de meilleurs résultats, couleur de la paire définit avec interface utilisateur semblable à l’exemple.**
 
@@ -39,17 +39,17 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 ![Fenêtre Propriétés de lumière (à gauche), foncé (centre) et thèmes (à droite) bleu](../../extensibility/ux-guidelines/media/properties-window-light-dark-blue.png "fenêtre de propriétés dans les thèmes clair, sombre et bleu")<br />Fenêtre de propriétés dans les thèmes clair et bleu foncé
 
 > [!NOTE]
-> **Les échantillons de contraste élevés sont affichés pour la comparaison uniquement.** Utilisez le nom de la couleur système pour l’interface utilisateur de contraste élevé et n’utilisez pas un sélecteur de couleur ou de la pipette sur ces échantillons. Les échantillons de contraste élevés dans cette rubrique reflètent le thème de contraste élevé, #1 dans Windows. Les couleurs aura un aspect différents dans les autres thèmes à contraste élevé. 
+> **Les échantillons de contraste élevés sont affichés pour la comparaison uniquement.** Utilisez le nom de la couleur système pour l’interface utilisateur de contraste élevé et n’utilisez pas un sélecteur de couleur ou de la pipette sur ces échantillons. Les échantillons de contraste élevés dans cette rubrique reflètent le thème de contraste élevé, #1 dans Windows. Les couleurs aura un aspect différents dans les autres thèmes à contraste élevé.
 
 ### <a name="divider-lines"></a>Lignes de séparation
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Par défaut | ![Nuance de #FFEEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 échantillon")<br />`#FFEEEEF2` | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FF2D2D30` | ![Nuance de #FFEEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 échantillon")<br />`#FFEEEEF2` | ![Nuance de ControlDark](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark échantillon")<br />`ControlDark` |
 
 ### <a name="expander-glyph"></a>Glyphe de développeur
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground |![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![Nuance de ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText échantillon")<br />`ControlText` |
 | Présentation | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` | ![Nuance de fenêtre](../../extensibility/ux-guidelines/media/HCWindow.png "nuance de fenêtre")<br />`Window`|
@@ -60,7 +60,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 ### <a name="embedded-tab-control-body"></a>Onglet contrôle incorporé : corps
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![Nuance de ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText échantillon")<br />`ControlText` |
 | Présentation | ![Nuance de #FFE7E8EC](../../extensibility/ux-guidelines/media/E7E8EC.png "#FFE7E8EC échantillon")<br />`#FFE7E8EC` | ![Nuance de #FF1B1B1C](../../extensibility/ux-guidelines/media/1B1B1C.png "#FF1B1B1C échantillon")<br />`#FF1B1B1C` | ![Nuance de #FFE7E8EC](../../extensibility/ux-guidelines/media/E7E8EC.png "#FFE7E8EC échantillon")<br />`#FFE7E8EC` | ![Nuance de contrôle](../../extensibility/ux-guidelines/media/HCControl.png "nuance de contrôle")<br />`Control` |
@@ -68,7 +68,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 ### <a name="embedded-tab-control-active-tab"></a>Onglet contrôle incorporé : onglet actif
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` |![Nuance de ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText échantillon")<br />`ControlText` |
 | Présentation | ![Nuance de ## FFE7E8EC](../../extensibility/ux-guidelines/media/E7E8EC.png "#FFE7E8EC échantillon")<br />`#FFE7E8EC` | ![#FF1B1B1C swatch](../../extensibility/ux-guidelines/media/1B1B1C.png "##FF1B1B1C swatch")<br />`#FF1B1B1C` | ![Nuance de #FFE7E8EC](../../extensibility/ux-guidelines/media/E7E8EC.png "#FFE7E8EC échantillon")<br />`#FFE7E8EC` | ![Mettez en surbrillance la nuance](../../extensibility/ux-guidelines/media/HCHighlight.png "nuance de mise en surbrillance")<br />`Highlight` |
@@ -76,7 +76,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 ### <a name="embedded-tab-control-inactive-tab"></a>Onglet contrôle incorporé : onglet inactif
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![Nuance de ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText échantillon")<br />`ControlText` |
 | Présentation | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` | ![Nuance de contrôle](../../extensibility/ux-guidelines/media/HCControl.png "nuance de contrôle")<br />`Control` |
@@ -85,12 +85,12 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 | Premier plan : désactivé | ![Nuance de #FFA2A4A5](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 échantillon")<br />`#FFA2A4A5` | ![#FF656565 swatch](../../extensibility/ux-guidelines/media/656565.png "#FF656565 swatch")<br />`#FF656565` | ![Nuance de #FFA2A4A5](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 échantillon")<br />`#FFA2A4A5` | ![Nuance de GrayText](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText échantillon")<br />`GrayText` |
 | Arrière-plan : désactivé | ![##FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "##FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` | ![Nuance de contrôle](../../extensibility/ux-guidelines/media/HCControl.png "nuance de contrôle")<br />`Control` |
 | Bordure | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` | ![Nuance de WindowFrame](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame échantillon")<br />`WindowFrame` |
-| Bordure : pointage | ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5` | ![#FF3E3E40 swatch](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 swatch")<br />`#FF3E3E40` | ![Nuance #FFFEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "nuance #FFFEFEFE")<br />`#FFFEFEFE` | ![Nuance de WindowFrame](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame échantillon")<br />`WindowFrame` | 
+| Bordure : pointage | ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5` | ![#FF3E3E40 swatch](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 swatch")<br />`#FF3E3E40` | ![Nuance #FFFEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "nuance #FFFEFEFE")<br />`#FFFEFEFE` | ![Nuance de WindowFrame](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame échantillon")<br />`WindowFrame` |
 | Bordure : désactivé | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` | ![Nuance de WindowFrame](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame échantillon")<br />`WindowFrame` |
 
 ### <a name="section-header"></a>En-tête de section
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![##FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![Nuance de ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText échantillon")<br />`ControlText` |
 | Premier plan : pointage | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![Nuance de HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText échantillon")<br />`HighlightText` |
@@ -101,7 +101,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 ### <a name="category-group"></a>Groupe de catégories
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Premier plan du corps | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![Nuance de ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText échantillon")<br />`ControlText` |
 | Arrière-plan du corps | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` | ![Nuance de contrôle](../../extensibility/ux-guidelines/media/HCControl.png "nuance de contrôle")<br />`Control` |
@@ -110,7 +110,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 ### <a name="toggle-buttons"></a>Boutons bascule
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![Nuance de WindowText](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText échantillon")<br />`WindowText` |
 | Présentation | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` | ![Nuance de fenêtre](../../extensibility/ux-guidelines/media/HCWindow.png "nuance de fenêtre")<br />`Window` |
@@ -127,7 +127,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 ### <a name="input-fields"></a>Champs d’entrée
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![Nuance de ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText échantillon")<br />`ControlText` |
 | Présentation | ![Nuance #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "nuance #FFFFFFFF")<br />`#FFFFFFFF` | ![Nuance de #FF333337](../../extensibility/ux-guidelines/media/333337.png "#FF333337 échantillon")<br />`#FF333337` | ![Nuance #FFFCFCFC](../../extensibility/ux-guidelines/media/FCFCFC.png "nuance #FFFCFCFC")<br />`#FFFCFCFC` | ![Nuance de contrôle](../../extensibility/ux-guidelines/media/HCControl.png "nuance de contrôle")<br />`Control` |
@@ -138,7 +138,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 ### <a name="list-items"></a>Éléments de liste
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![Nuance de ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText échantillon")<br />`ControlText` |
 | Premier plan : pointage | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![Nuance de HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText échantillon")<br />`HighlightText` |
@@ -151,7 +151,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 ### <a name="command-buttons"></a>Boutons de commande
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![Nuance de ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText échantillon")<br />`ControlText` |
 | Arrière-plan : pointage | ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5` | ![#FF3E3E40 swatch](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 swatch")<br />`#FF3E3E40` | ![Nuance #FFFEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "nuance #FFFEFEFE")<br />`#FFFEFEFE` | ![Mettez en surbrillance la nuance](../../extensibility/ux-guidelines/media/HCHighlight.png "nuance de mise en surbrillance")<br />`Highlight` |
@@ -172,7 +172,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 ### <a name="content"></a>Contenu
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![Nuance de #ff000000](../../extensibility/ux-guidelines/media/000000.png "#ff000000 échantillon")<br />`#FF000000` | ![Nuance de WindowText](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText échantillon")<br />`WindowText` |
 | Présentation | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![Nuance #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "nuance #FFFFFFFF")<br />`#FFFFFFFF` | ![Nuance de contrôle](../../extensibility/ux-guidelines/media/HCControl.png "nuance de contrôle")<br />`Control` |
@@ -184,7 +184,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 ### <a name="header"></a>Header
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![Nuance de #ff000000](../../extensibility/ux-guidelines/media/000000.png "#ff000000 échantillon")<br />`#FF000000` | ![Nuance de WindowText](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText échantillon")<br />`WindowText` |
 | Présentation | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FFEEEEF2` | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FF2D2D30` | ![Nuance de #FFEEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 échantillon")<br />`#FFEEEEF2` | ![Nuance de ControlDark](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark échantillon")<br />`ControlDark` |
@@ -193,7 +193,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 ![L’interface utilisateur CodeLens](../../extensibility/ux-guidelines/media/codelens.png "l’interface utilisateur CodeLens")
 
-> [!NOTE] 
+> [!NOTE]
 > Couleurs de CodeLens UI sont les mêmes pour les thèmes clair, sombre et bleu.
 
 > [!NOTE]
@@ -201,7 +201,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 ### <a name="body"></a>Corps
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![Nuance de WindowText](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText échantillon")<br />`WindowText` |
 | Présentation | ![Nuance #FFFCFCFC](../../extensibility/ux-guidelines/media/FCFCFC.png "nuance #FFFCFCFC")<br />`#FFFCFCFC` | ![Nuance #FFFCFCFC](../../extensibility/ux-guidelines/media/FCFCFC.png "nuance #FFFCFCFC")<br />`#FFFCFCFC` | ![Nuance #FFFCFCFC](../../extensibility/ux-guidelines/media/FCFCFC.png "nuance #FFFCFCFC")<br />`#FFFCFCFC` | ![Nuance de fenêtre](../../extensibility/ux-guidelines/media/HCWindow.png "nuance de fenêtre")<br />`Window` |
@@ -212,7 +212,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 ### <a name="hyperlink-and-separator"></a>Lien hypertexte et le séparateur
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Premier plan du lien hypertexte | ![#FF0E70C0 swatch](../../extensibility/ux-guidelines/media/0E70C0.png "#FF0E70C0 swatch")<br />`#FF0E70C0` | ![#FF0E70C0 swatch](../../extensibility/ux-guidelines/media/0E70C0.png "#FF0E70C0 swatch")<br />`#FF0E70C0` | ![#FF0E70C0 swatch](../../extensibility/ux-guidelines/media/0E70C0.png "#FF0E70C0 swatch")<br />`#FF0E70C0` | ![Nuance de HotTrack](../../extensibility/ux-guidelines/media/HCHotTrack.png "HotTrack échantillon")<br />`HotTrack` |
 | Premier plan du séparateur | ![Nuance de #FF9C9C9C](../../extensibility/ux-guidelines/media/9C9C9C.png "#FF9C9C9C échantillon")<br />`#FF9C9C9C` | ![Nuance de #FF9C9C9C](../../extensibility/ux-guidelines/media/9C9C9C.png "#FF9C9C9C échantillon")<br />`#FF9C9C9C` | ![Nuance de #FF9C9C9C](../../extensibility/ux-guidelines/media/9C9C9C.png "#FF9C9C9C échantillon")<br />`#FF9C9C9C` | ![Nuance de HotTrack](../../extensibility/ux-guidelines/media/HCHotTrack.png "HotTrack échantillon")<br />`HotTrack` |
@@ -226,14 +226,14 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 ### <a name="body"></a>Corps
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![Nuance de #ff000000](../../extensibility/ux-guidelines/media/000000.png "#ff000000 échantillon")<br />`#FF000000` | ![Nuance de WindowText](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText échantillon")<br />`WindowText` |
 | Premier plan : sélectionné | ![Nuance #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "nuance #FFFFFFFF")<br />`#FFFFFFFF` | ![Nuance #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "nuance #FFFFFFFF")<br />`#FFFFFFFF` | ![Nuance #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "nuance #FFFFFFFF")<br />`#FFFFFFFF` | ![Nuance de HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText échantillon")<br />`HighlightText` |
 
 ### <a name="subsection-header"></a>En-tête de sous-section
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground | ![#FF717171 swatch](../../extensibility/ux-guidelines/media/717171.png "#FF717171 swatch")<br />`#FF717171` | ![#FF999999 swatch](../../extensibility/ux-guidelines/media/999999.png "#FF999999 swatch")<br />`#FF999999` | ![#FF717171 swatch](../../extensibility/ux-guidelines/media/717171.png "#FF717171 swatch")<br />`#FF717171` | ![Nuance de GrayText](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText échantillon")<br />`GrayText` |
 | Présentation | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![Nuance #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "nuance #FFFFFFFF")<br />`#FFFFFFFF` | ![Nuance de fenêtre](../../extensibility/ux-guidelines/media/HCWindow.png "nuance de fenêtre")<br />`Window` |
@@ -241,7 +241,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 ### <a name="grid-lines"></a>Quadrillage
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Éléments (premier plan) | ![#FFF0F0F0 swatch](../../extensibility/ux-guidelines/media/F0F0F0.png "#FFF0F0F0 swatch")<br />`#FFF0F0F0` | ![Nuance de #ff000000](../../extensibility/ux-guidelines/media/000000.png "#ff000000 échantillon")<br />`#FF000000` | ![#FFF0F0F0 swatch](../../extensibility/ux-guidelines/media/F0F0F0.png "#FFF0F0F0 swatch")<br />`#FFF0F0F0` | ![Nuance de barre de défilement](../../extensibility/ux-guidelines/media/HCScrollBar.png "nuance de barre de défilement")<br />`ScrollBar` |
 | En-tête (premier plan) | ![Nuance de #FFE0E3E6](../../extensibility/ux-guidelines/media/E0E3E6.png "#FFE0E3E6 échantillon")<br />`#FFE0E3E6` | ![Nuance de #FF333337](../../extensibility/ux-guidelines/media/333337.png "#FF333337 échantillon")<br />`#FF333337` | ![#FFBEC3CB swatch](../../extensibility/ux-guidelines/media/BEC3CB.png "#FFBEC3CB swatch")<br />`#FFBEC3CB` | ![Nuance de ControlDark](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark échantillon")<br />`ControlDark` |
@@ -255,21 +255,21 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 ### <a name="body"></a>Corps
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![Nuance de ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText échantillon")<br />`ControlText` |
 | Présentation | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` | ![Nuance de contrôle](../../extensibility/ux-guidelines/media/HCControl.png "nuance de contrôle")<br />`Control` |
 
 ### <a name="active-tab"></a>Onglet actif
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![ActiveCaptionText swatch](../../extensibility/ux-guidelines/media/HCActiveCaptionText.png "ActiveCaptionText swatch")<br />`ActiveCaptionText` |
 | Présentation | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` |![Nuance de ActiveCaption](../../extensibility/ux-guidelines/media/HCActiveCaption.png "ActiveCaption échantillon")<br />`ActiveCaption` |
 
 ### <a name="inactive-tab"></a>Onglet inactif
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![InactiveCaptionText swatch](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText swatch")<br />`InactiveCaptionText` |
 | Présentation | ![Nuance #FFFEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "nuance #FFFEFEFE")<br />`#FFFEFEFE` | ![Nuance de #FF333337](../../extensibility/ux-guidelines/media/333337.png "#FF333337 échantillon")<br />`#FF333337` | ![Nuance #FFFEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "nuance #FFFEFEFE")<br />`#FFFEFEFE` | ![Nuance de HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText échantillon")<br />`HighlightText` |
@@ -278,14 +278,14 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 ### <a name="watermark-text"></a>Texte de filigrane
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground | ![#FF717171 swatch](../../extensibility/ux-guidelines/media/717171.png "#FF717171 swatch")<br />`#FF999999` | ![#FF999999 swatch](../../extensibility/ux-guidelines/media/717171.png "999999 swatch")<br />`#FF999999` | ![#FF717171 swatch](../../extensibility/ux-guidelines/media/717171.png "#FF717171 swatch")<br />`#FF717171` | ![Nuance de GrayText](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText échantillon")<br />`GrayText` |
 | Présentation | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` | ![Nuance de contrôle](../../extensibility/ux-guidelines/media/HCControl.png "nuance de contrôle")<br />`Control` |
 
 ### <a name="description-pane"></a>Volet Description
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![Nuance de ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText échantillon")<br />`ControlText` |
 | Présentation | ![Nuance de #FFEEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 échantillon")<br />`#FFEEEEF2` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![Nuance #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "nuance #FFFFFFFF")<br />`#FFFFFFFF` | ![Nuance de contrôle](../../extensibility/ux-guidelines/media/HCControl.png "nuance de contrôle")<br />`Control` |
@@ -299,7 +299,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 ### <a name="tags"></a>Balises
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Premier plan (texte) | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![Nuance #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "nuance #FFFFFFFF")<br />`#FFFFFFFF` | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![ActiveCaptionText swatch](../../extensibility/ux-guidelines/media/HCActiveCaptionText.png "ActiveCaptionText swatch")<br />`ActiveCaptionText` |
 | Présentation | ![Nuance de #FFE1E6F1](../../extensibility/ux-guidelines/media/E1E6F1.png "#FFE1E6F1 échantillon")<br />`#FFE1E6F1` | ![#FF424242 swatch](../../extensibility/ux-guidelines/media/424242.png "#FF424242 swatch")<br />`#FF424242` | ![Nuance de #FFE9ECEE](../../extensibility/ux-guidelines/media/E9ECEE.png "#FFE9ECEE échantillon")<br />`#FFE9ECEE` | ![Nuance de ActiveCaption](../../extensibility/ux-guidelines/media/HCActiveCaption.png "ActiveCaption échantillon")<br />`ActiveCaption` |
@@ -312,7 +312,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 ### <a name="glyph-on-hover"></a>Glyphe au pointage
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Glyphe | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![Nuance #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "nuance #FFFFFFFF")<br />`#FFFFFFFF` | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![Nuance de HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText échantillon")<br />`HighlightText` |
 | Présentation | ![Nuance de #FFF7F7F9](../../extensibility/ux-guidelines/media/F7F7F9.png "#FFF7F7F9 échantillon")<br />`#FFF7F7F9` | ![#FF393939 swatch](../../extensibility/ux-guidelines/media/393939.png "#FF393939 swatch")<br />`#FF393939` | ![Nuance de #FFFFFCF4](../../extensibility/ux-guidelines/media/FFFCF4.png "#FFFFFCF4 échantillon")<br />`#FFFFFCF4` | ![Nuance de HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText échantillon")<br />`HighlightText` |
@@ -323,7 +323,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 ### <a name="selected-glyph"></a>Glyphe sélectionné
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Glyphe | ![Nuance #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "nuance #FFFFFFFF")<br />`#FFFFFFFF` | ![Nuance #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "nuance #FFFFFFFF")<br />`#FFFFFFFF` | ![Nuance #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "nuance #FFFFFFFF")<br />`#FFFFFFFF` | ![Nuance de HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText échantillon")<br />`HighlightText` |
 | Présentation | ![Nuance de #FF52B0EF](../../extensibility/ux-guidelines/media/52B0EF.png "#FF52B0EF échantillon")<br />`#FF52B0EF` | ![Nuance de #FF52B0EF](../../extensibility/ux-guidelines/media/52B0EF.png "#FF52B0EF échantillon")<br />`#FF52B0EF` | ![Nuance de #FF52B0EF](../../extensibility/ux-guidelines/media/52B0EF.png "#FF52B0EF échantillon")<br />`#FF52B0EF` | ![Nuance de HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText échantillon")<br />`HighlightText` |
@@ -339,7 +339,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 ### <a name="default"></a>Par défaut
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Apparence | ![Bouton par défaut dans le thème clair](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.png "bouton par défaut dans le thème clair") | ![Bouton par défaut dans le thème sombre](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.dark.png "bouton par défaut dans le thème sombre") | ![Bouton par défaut dans le thème bleu](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.blue.png "bouton par défaut dans le thème bleu") | ![Bouton par défaut dans le thème à contraste élevé](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.hc.png "bouton par défaut dans le thème à contraste élevé") |
 | Foreground | ![#1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E swatch")<br />`#1E1E1E` | ![#F1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 swatch")<br />`#F1F1F1` | ![#1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E swatch")<br />`#1E1E1E` | ![Nuance de ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText échantillon")<br />`ControlText` |
@@ -348,7 +348,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 ### <a name="disabled"></a>Désactivé
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Apparence | ![Bouton désactivé dans le thème clair](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.png "désactivé situé dans le thème clair") | ![Bouton désactivé dans le thème sombre](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.dark.png "désactivé situé dans le thème sombre") | ![Bouton désactivé dans le thème bleu](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.blue.png "désactivé situé dans le thème bleu") | ![Bouton désactivé dans le thème à contraste élevé](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.hc.png "désactivé situé dans le thème à contraste élevé") |
 | Foreground | ![Nuance de #A2A4A5](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 échantillon")<br />`#A2A4A5` | ![#656565 swatch](../../extensibility/ux-guidelines/media/656565.png "#656565 swatch")<br />`#656565` | ![Nuance de #A2A4A5](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 échantillon")<br />`#A2A4A5` | ![InactiveCaptionText swatch](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText swatch")<br />`InactiveCaptionText` |
@@ -357,7 +357,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 ### <a name="hover"></a>Pointage
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Apparence | ![Bouton d’état de pointage dans le thème clair](../../extensibility/ux-guidelines/media/03.03.Button.controls.hover.png "bouton d’état de pointage dans le thème clair") | ![Bouton d’état de pointage dans le thème sombre](../../extensibility/ux-guidelines/media/03.03.Button.controls.hover.dark.png "bouton d’état de pointage dans le thème sombre") | ![Bouton d’état de pointage dans le thème bleu](../../extensibility/ux-guidelines/media/03.03.Button.controls.hover.blue.png "bouton d’état de pointage dans le thème bleu") | ![Bouton d’état de pointage dans le thème à contraste élevé](../../extensibility/ux-guidelines/media/03.03.Button.controls.hpf.hc.png "bouton d’état de pointage dans le thème à contraste élevé") |
 | Foreground | ![#1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E swatch")<br />`#1E1E1E` | ![#F1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 swatch")<br />`#F1F1F1` | ![#1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E swatch")<br />`#1E1E1E` | ![ActiveCaptionText swatch](../../extensibility/ux-guidelines/media/HCActiveCaptionText.png "ActiveCaptionText swatch")<br />`ActiveCaptionText` |
@@ -366,7 +366,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 ### <a name="pressed"></a>Appuyé
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Apparence | ![Bouton enfoncé dans le thème clair](../../extensibility/ux-guidelines/media/03.03.Button.controls.pressed.png "bouton enfoncé dans le thème clair") | ![Bouton enfoncé dans le thème sombre](../../extensibility/ux-guidelines/media/03.03.Button.controls.pressed.dark.png "bouton enfoncé dans le thème sombre") | ![Bouton enfoncé dans le thème bleu](../../extensibility/ux-guidelines/media/03.03.Button.controls.pressed.blue.png "bouton enfoncé dans le thème bleu") | ![Bouton enfoncé dans le thème à contraste élevé](../../extensibility/ux-guidelines/media/03.03.Button.controls.hpf.hc.png "bouton enfoncé dans le thème à contraste élevé") |
 | Foreground | ![Nuance #FFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "nuance #FFFFFF")<br />`#FFFFFF` | ![#F1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 swatch")<br />`#F1F1F1` | ![Nuance #FFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "nuance #FFFFFF")<br />`#FFFFFF` | ![Nuance de HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText échantillon")<br />`HighlightText` |
@@ -375,7 +375,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 ### <a name="focused"></a>Avec focus
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Apparence | ![Bouton actif dans le thème clair](../../extensibility/ux-guidelines/media/03.03.Button.controls.focused.png "bouton actif dans le thème clair") | ![Bouton actif dans le thème sombre](../../extensibility/ux-guidelines/media/03.03.Button.controls.focused.dark.png "bouton actif dans le thème sombre") | ![Bouton actif dans le thème bleu](../../extensibility/ux-guidelines/media/03.03.Button.controls.focused.blue.png "bouton actif dans le thème bleu") | ![Bouton actif dans le thème à contraste élevé](../../extensibility/ux-guidelines/media/03.03.Button.controls.hpf.hc.png "bouton actif dans le thème à contraste élevé") |
 | Foreground | ![#1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E swatch")<br />`#1E1E1E` | ![#F1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 swatch")<br />`#F1F1F1` | ![#1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E swatch")<br />`#1E1E1E` | ![Nuance de HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText échantillon")<br />`HighlightText` |
@@ -389,7 +389,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 ### <a name="default"></a>Par défaut
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Apparence | ![Case à cocher par défaut dans le thème clair](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.png "case par défaut dans le thème clair") | ![Case à cocher par défaut dans le thème sombre](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.dark.png "case par défaut dans le thème sombre") | ![Case à cocher dans le thème bleu par défaut](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.blue.png "case à cocher dans le thème bleu par défaut") | ![Case à cocher par défaut dans le thème à contraste élevé](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.hc.png "case par défaut dans le thème à contraste élevé") |
 | Présentation | ![Nuance #FEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "nuance #FEFEFE")<br />`#FEFEFE` | ![#252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#252526 swatch")<br />`#252526` | ![Nuance #FEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "nuance #FEFEFE")<br />`#FEFEFE` | ![Nuance de contrôle](../../extensibility/ux-guidelines/media/HCControl.png "nuance de contrôle")<br />`Control` |
@@ -399,7 +399,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 ### <a name="disabled"></a>Désactivé
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Apparence | ![Case à cocher désactivée dans le thème clair](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.png "désactivé la case à cocher dans le thème clair") | ![Case à cocher désactivée dans le thème sombre](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.dark.png "désactivé la case à cocher dans le thème sombre") | ![Case à cocher désactivée dans le thème bleu](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.blue.png "désactivé la case à cocher dans le thème bleu") | ![Case à cocher désactivée dans le thème à contraste élevé](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.hc.png "désactivé la case à cocher dans le thème à contraste élevé") |
 | Présentation | ![#F6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#F6F6F6 swatch")<br />`#F6F6F6` | ![#2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 swatch")<br />`#2D2D30` | ![#F6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#F6F6F6 swatch")<br />`#F6F6F6` | ![Nuance de InactiveCaption](../../extensibility/ux-guidelines/media/HCInactiveCaption.png "InactiveCaption échantillon")<br />`InactiveCaption` |
@@ -409,7 +409,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 ### <a name="hover"></a>Pointage
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Apparence | ![Case à cocher État pointage dans le thème clair](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hover.png "case état de pointage dans le thème clair") | ![Case à cocher État pointage dans le thème sombre](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hover.dark.png "case état de pointage dans le thème sombre") | ![Case à cocher État pointage dans le thème bleu](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hover.blue.png "case état de pointage dans le thème bleu") | ![Case à cocher État pointage dans le thème à contraste élevé](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hpf.hc.png "case état de pointage dans le thème à contraste élevé") |
 | Présentation | ![Nuance de #F3F9FF](../../extensibility/ux-guidelines/media/F3F9FF.png "#F3F9FF échantillon")<br />`#F3F9FF` | ![#1F1F20 swatch](../../extensibility/ux-guidelines/media/1F1F20.png "#1F1F20 swatch")<br />`#1F1F20` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![Mettez en surbrillance la nuance](../../extensibility/ux-guidelines/media/HCHighlight.png "nuance de mise en surbrillance")<br />`Highlight` |
@@ -419,7 +419,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 ### <a name="pressed"></a>Appuyé
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Apparence | ![Case à cocher appuyée dans le thème clair](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.pressed.png "case à cocher appuyée dans le thème clair") | ![Case à cocher appuyée dans le thème sombre](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.pressed.dark.png "case à cocher appuyée dans le thème sombre") | ![Case à cocher appuyée dans le thème bleu](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.pressed.blue.png "case à cocher appuyée dans le thème bleu") | ![Case à cocher appuyée dans le thème à contraste élevé](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hpf.hc.png "case à cocher appuyée dans le thème à contraste élevé") |
 | Présentation | ![#007ACC swatch](../../extensibility/ux-guidelines/media/007ACC.png "#007ACC swatch")<br />`#007ACC` | ![#007ACC swatch](../../extensibility/ux-guidelines/media/007ACC.png "#007ACC swatch")<br />`#007ACC` | ![Nuance de #E5C365](../../extensibility/ux-guidelines/media/E5C365.png "#E5C365 échantillon")<br />`#E5C365` | ![Mettez en surbrillance la nuance](../../extensibility/ux-guidelines/media/HCHighlight.png "nuance de mise en surbrillance")<br />`Highlight` |
@@ -429,7 +429,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 ### <a name="focused"></a>Avec focus
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Apparence | ![Case à cocher actif dans le thème clair](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.focused.png "case à cocher actif dans le thème clair") | ![Case à cocher actif dans le thème sombre](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.focused.dark.png "case à cocher actif dans le thème sombre") | ![Case à cocher actif dans le thème bleu](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.focused.blue.png "case à cocher actif dans le thème bleu") | ![Case à cocher actif dans le thème à contraste élevé](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hpf.hc.png "case à cocher actif dans le thème à contraste élevé") |
 | Présentation | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![#1F1F20 swatch](../../extensibility/ux-guidelines/media/1F1F20.png "#1F1F20 swatch")<br />`#1F1F20` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![Mettez en surbrillance la nuance](../../extensibility/ux-guidelines/media/HCHighlight.png "nuance de mise en surbrillance")<br />`Highlight` |
@@ -446,7 +446,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 #### <a name="default"></a>Par défaut
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Apparence | ![Par défaut, boîte déroulante/dans le thème clair](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.png "zone déroulante/par défaut de ce thème clair") | ![Par défaut, boîte déroulante/dans le thème sombre](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.dark.png "par défaut, boîte déroulante/dans le thème sombre") | ![Par défaut, boîte déroulante/dans le thème bleu](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.blue.png "par défaut, boîte déroulante/dans le thème bleu") | ![Par défaut, boîte déroulante/dans le thème à contraste élevé](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.hc.png "par défaut, boîte déroulante/dans le thème à contraste élevé") |
 | Présentation | ![##007ACC swatch](../../extensibility/ux-guidelines/media/007ACC.png "##007ACC swatch")<br />`##007ACC` | ![nuance de #333337](../../extensibility/ux-guidelines/media/333337.png "#333337 échantillon")<br />`#333337` | ![Nuance #FCFCFC](../../extensibility/ux-guidelines/media/FCFCFC.png "nuance #FCFCFC")<br />`#FCFCFC` | ![Nuance de contrôle](../../extensibility/ux-guidelines/media/HCControl.png "nuance de contrôle")<br />`Control` |
@@ -457,19 +457,19 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 #### <a name="disabled"></a>Désactivé
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Apparence | ![Case à/déroulante désactivée dans le thème clair](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.png "désactivée de zone déroulante/dans le thème clair") | ![Case à/déroulante désactivée dans le thème sombre](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.dark.png "désactivée de zone déroulante/dans le thème sombre") | ![Case à/déroulante désactivée dans le thème bleu](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.blue.png "désactivée de zone déroulante/dans le thème bleu") | ![Case à/déroulante désactivée dans le thème à contraste élevé](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.hc.png "désactivée de zone déroulante/dans le thème à contraste élevé") |
 | Présentation | ![Nuance de #EEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "#EEEEF2 échantillon")<br />`#EEEEF2` | ![#2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 swatch")<br />`#2D2D30` | ![#DFE7F3 swatch](../../extensibility/ux-guidelines/media/DFE7F3.png "#DFE7F3 swatch")<br />`#DFE7F3` | ![Nuance de InactiveCaption](../../extensibility/ux-guidelines/media/HCInactiveCaption.png "InactiveCaption échantillon")<br />`InactiveCaption` |
 | Bordure | ![Nuance #CCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "nuance #CCCEDB")<br />`#CCCEDB` | ![#434346 swatch](../../extensibility/ux-guidelines/media/434346.png "#434346 swatch")<br />`#434346` | ![Nuance de #A4ADBA](../../extensibility/ux-guidelines/media/A4ADBA.png "#A4ADBA échantillon")<br />`#A4ADBA` | ![Nuance de InactiveBorder](../../extensibility/ux-guidelines/media/HCInactiveBorder.png "InactiveBorder échantillon")<br />`InactiveBorder` |
 | Texte | ![Nuance de #A2A4A5](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 échantillon")<br />`#A2A4A5` | ![# 656565swatch](../../extensibility/ux-guidelines/media/656565.png "#656565 échantillon")<br />`#656565` | ![Nuance de #A2A4A5](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 échantillon")<br />`#A2A4A5` | ![InactiveCaptionText swatch](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText swatch")<br />`InactiveCaptionText` |
-| Séparateur | ![Nuance de #EEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "#EEEEF2 échantillon")<br />`#EEEEF2` | ![#2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 swatch")<br />`#2D2D30` | ![#D5DCE8 swatch](../../extensibility/ux-guidelines/media/D5DCE8.png "#D5DCE8 swatch")<br />`#D5DCE8` | ![Nuance de InactiveBorder](../../extensibility/ux-guidelines/media/HCInactiveBorder.png "InactiveBorder échantillon")<br />`InactiveBorder` | 
+| Séparateur | ![Nuance de #EEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "#EEEEF2 échantillon")<br />`#EEEEF2` | ![#2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 swatch")<br />`#2D2D30` | ![#D5DCE8 swatch](../../extensibility/ux-guidelines/media/D5DCE8.png "#D5DCE8 swatch")<br />`#D5DCE8` | ![Nuance de InactiveBorder](../../extensibility/ux-guidelines/media/HCInactiveBorder.png "InactiveBorder échantillon")<br />`InactiveBorder` |
 | Glyphe | ![Nuance #CCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "nuance #CCCEDB")<br />`#CCCEDB` | ![#656565 swatch](../../extensibility/ux-guidelines/media/656565.png "#656565 swatch")<br />`#656565` | ![Nuance de #A2A4A5](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 échantillon")<br />`#A2A4A5` | ![InactiveCaptionText swatch](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText swatch")<br />`InactiveCaptionText` |
 | Arrière-plan de glyphe | ![Nuance de #EEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "#EEEEF2 échantillon")<br />`#EEEEF2` | ![#2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 swatch")<br />`#2D2D30` | ![#D5DCE8 swatch](../../extensibility/ux-guidelines/media/D5DCE8.png "#D5DCE8 swatch")<br />`#D5DCE8` | ![Nuance de InactiveCaption](../../extensibility/ux-guidelines/media/HCInactiveCaption.png "InactiveCaption échantillon")<br />`InactiveCaption` |
 
 #### <a name="hover"></a>Pointage
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Apparence | ![Zone de déroulante/État de pointage dans le thème clair](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.png "boîte de déroulante/État de pointage dans le thème clair") | ![Zone de déroulante/État de pointage dans le thème sombre](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.dark.png "boîte de déroulante/État de pointage dans le thème sombre") | ![Zone de déroulante/État de pointage dans le thème bleu](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.blue.png "boîte de déroulante/État de pointage dans le thème bleu") | ![Zone de déroulante/État de pointage dans le thème à contraste élevé](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.hc.png "boîte de déroulante/État de pointage dans le thème à contraste élevé") |
 | Présentation | ![#007ACC swatch](../../extensibility/ux-guidelines/media/007ACC.png "#007ACC swatch")<br />`#007ACC` | ![Nuance de #3F3F46](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 échantillon")<br />`#3F3F46` | ![Nuance #FCFCFC](../../extensibility/ux-guidelines/media/FCFCFC.png "nuance #FCFCFC")<br />`#FCFCFC` | ![Mettez en surbrillance la nuance](../../extensibility/ux-guidelines/media/HCHighlight.png "nuance de mise en surbrillance")<br />`Highlight` |
@@ -481,7 +481,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 #### <a name="pressed"></a>Appuyé
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Apparence | ![Appuyé déroulante/zone dans le thème clair](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.png "appuyé déroulante/zone dans le thème clair") | ![Appuyé déroulante/zone dans le thème sombre](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.dark.png "appuyé déroulante/zone dans le thème sombre") | ![Appuyé déroulante/zone dans le thème bleu](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.blue.png "appuyé déroulante/zone dans le thème bleu") | ![Appuyé déroulante/zone dans le thème à contraste élevé](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.hc.png "appuyé déroulante/zone dans le thème à contraste élevé") |
 | Présentation | ![Nuance #FFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "nuance #FFFFFF")<br />`#FFFFFF` | ![Nuance de #3F3F46](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 échantillon")<br />`#3F3F46` | ![Nuance #FCFCFC](../../extensibility/ux-guidelines/media/FCFCFC.png "nuance #FCFCFC")<br />`#FCFCFC` | ![Mettez en surbrillance la nuance](../../extensibility/ux-guidelines/media/HCHighlight.png "nuance de mise en surbrillance")<br />`Highlight` |
@@ -493,7 +493,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 #### <a name="focused"></a>Avec focus
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Apparence | ![Zone déroulante/de focus dans le thème clair](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.png "boîte déroulante/de focus dans le thème clair") | ![Zone déroulante/de focus dans le thème sombre](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.dark.png "boîte déroulante/de focus dans le thème sombre") | ![Zone déroulante/de focus dans le thème bleu](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.blue.png "boîte déroulante/de focus dans le thème bleu") | ![Zone déroulante/de focus dans le thème à contraste élevé](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.hc.png "boîte déroulante/de focus dans le thème à contraste élevé") |
 | Présentation | ![Nuance #FFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "nuance #FFFFFF")<br />`#FFFFFF` | ![Nuance de #3F3F46](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 échantillon")<br />`#3F3F46` | ![Nuance #FCFCFC](../../extensibility/ux-guidelines/media/FCFCFC.png "nuance #FCFCFC")<br />`#FCFCFC` | ![Mettez en surbrillance la nuance](../../extensibility/ux-guidelines/media/HCHighlight.png "nuance de mise en surbrillance")<br />`Highlight` |
@@ -511,7 +511,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 #### <a name="default"></a>Par défaut
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Présentation | ![#F6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#F6F6F6 swatch")<br />`#F6F6F6` | ![#1B1B1C swatch](../../extensibility/ux-guidelines/media/1B1B1C.png "#1B1B1C swatch")<br />`#1B1B1C` | ![Nuance #EFEFEF](../../extensibility/ux-guidelines/media/EFEFEF.png "nuance #EFEFEF")<br />`#EFEFEF` | ![Nuance de menu](../../extensibility/ux-guidelines/media/HCMenu.png "nuance de Menu")<br />`Menu` |
 | Bordure | ![Nuance #CCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "nuance #CCCEDB")<br />`#CCCEDB` | ![Nuance de #3F3F46](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 échantillon")<br />`#3F3F46` | ![Nuance de #98A7B7](../../extensibility/ux-guidelines/media/98A7B7.png "#98A7B7 échantillon")<br />`#98A7B7`| ![Nuance de MenuText](../../extensibility/ux-guidelines/media/HCMenuText.png "MenuText échantillon")<br />`MenuText` |
@@ -520,7 +520,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 #### <a name="hover"></a>Pointage
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Présentation | ![Nuance de #C9DEF5](../../extensibility/ux-guidelines/media/C9DEF5.png "#C9DEF5 échantillon")<br />`#C9DEF5` | ![Nuance de #3F3F46](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 échantillon")<br />`#3F3F46` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![Mettez en surbrillance la nuance](../../extensibility/ux-guidelines/media/HCHighlight.png "nuance de mise en surbrillance")<br />`Highlight` |
 | Bordure | ![Nuance #CCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "nuance #CCCEDB")<br />`#CCCEDB` |![Nuance de #3F3F46](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 échantillon")<br />`#3F3F46` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![Nuance de HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText échantillon")<br />`HighlightText` |
@@ -528,7 +528,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 #### <a name="pressed"></a>Appuyé
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Présentation |![Nuance de #C9DEF5](../../extensibility/ux-guidelines/media/C9DEF5.png "#C9DEF5 échantillon")<br />`#C9DEF5` |![Nuance de #3F3F46](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 échantillon")<br />`#3F3F46` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![Mettez en surbrillance la nuance](../../extensibility/ux-guidelines/media/HCHighlight.png "nuance de mise en surbrillance")<br />`Highlight` |
 | Bordure | ![Nuance #CCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "nuance #CCCEDB")<br />`#CCCEDB` |![Nuance de #3F3F46](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 échantillon")<br />`#3F3F46` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![Nuance de HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText échantillon")<br />`HighlightText` |
@@ -536,7 +536,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 #### <a name="focused"></a>Avec focus
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Présentation | ![#F6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#F6F6F6 swatch")<br />`#F6F6F6` |![Nuance de #3F3F46](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 échantillon")<br />`#3F3F46` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![Mettez en surbrillance la nuance](../../extensibility/ux-guidelines/media/HCHighlight.png "nuance de mise en surbrillance")<br />`Highlight` |
 | Bordure | ![Nuance de #C9DEF5](../../extensibility/ux-guidelines/media/C9DEF5.png "#C9DEF5 échantillon")<br />`#C9DEF5` |![Nuance de #3F3F46](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 échantillon")<br />`#3F3F46` |![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![Nuance de HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText échantillon")<br />`HighlightText` |
@@ -544,14 +544,14 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 ### <a name="text-input-selection"></a>Sélection d’entrée de texte
 
-| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé | 
+| | Thème de lumière | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
 | Apparence | ![Sélection dans le thème clair de saisie de texte de déroulante/zone](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.png "texte de la zone déroulante / d’entrée de sélection dans le thème clair") | ![Sélection dans le thème sombre de saisie de texte de déroulante/zone](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.dark.png "texte de la zone déroulante / d’entrée de sélection dans le thème sombre") | ![Sélection dans le thème bleu de saisie de texte de déroulante/zone](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.blue.png "texte de la zone déroulante / d’entrée de sélection dans le thème bleu") | ![Sélection dans le thème à contraste élevé de saisie de texte de déroulante/zone](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.hc.png "texte de la zone déroulante / d’entrée de sélection dans le thème à contraste élevé") |
 | Sélection d’entrée de texte | ![Nuance de #66007ACC](../../extensibility/ux-guidelines/media/66007ACC.png "#66007ACC échantillon")<br />`#66007ACC` | ![Nuance de #66007ACC](../../extensibility/ux-guidelines/media/66007ACC.png "#66007ACC échantillon")<br />`#66007ACC` | ![Nuance de #66007ACC](../../extensibility/ux-guidelines/media/66007ACC.png "#66007ACC échantillon")<br />`#66007ACC` | ![Nuance de HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText échantillon")<br />`HighlightText` |
 
 ## <a name="color-swatches-by-function"></a>Échantillons de couleur par fonction
 
-| Clair | Sombre | Bleu | Utilisé pour... | 
+| Clair | Sombre | Bleu | Utilisé pour... |
 | :---: | :---: | :---: | --- |
 | ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5`   | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FF2D2D30`   | ![Nuance de #FFFDF4BF](../../extensibility/ux-guidelines/media/FDF4BF.png "#FFFDF4BF échantillon")<br />`#FFFDF4BF` | Boutons d’action, les éléments de zone de liste déroulante, les boutons de barre de commandes, les boutons de liste déroulante et éléments de menu : arrière-plan |
 | ![Nuance #FFCCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "nuance #FFCCCEDB")<br />`#FFCCCEDB` | ![#FF3F3F46 swatch](../../extensibility/ux-guidelines/media/3F3F46.png "#FF3F3F46 swatch")<br />`#FF3F3F46` | ![Nuance de #FF465A7D](../../extensibility/ux-guidelines/media/465A7D.png "#FF465A7D échantillon")<br />`#FF465A7D` | Bordure d’onglet de masquage automatique |

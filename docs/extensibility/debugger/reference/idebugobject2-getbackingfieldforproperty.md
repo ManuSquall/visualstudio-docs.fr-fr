@@ -1,7 +1,7 @@
 ---
 title: IDebugObject2::GetBackingFieldForProperty | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugObject2::GetBackingFieldForProperty
 helpviewer_keywords:
@@ -12,39 +12,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c74b99c1ca4895cb5e930fa7f17ec21a5db61cff
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 080af74ee83c5a2816cc5e7a89f29c59d2b75c7c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954512"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696127"
 ---
 # <a name="idebugobject2getbackingfieldforproperty"></a>IDebugObject2::GetBackingFieldForProperty
-Obtient le champ ou la variable (le cas échéant) qui peut être sauvegarde de la propriété représentée par cet objet.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT GetBackingFieldForProperty(  
-   IDebugObject2** ppObject  
-);  
-```  
-  
-```csharp  
-int GetBackingFieldForProperty(  
-   out IDebugObject2 ppObject  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `ppObject`  
- [out] Un [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) objet décrivant le champ de stockage.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
-  
-## <a name="remarks"></a>Notes  
- Le [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) objet représente une propriété de classe de code managé, autrement dit, une méthode avec une commande get et/ou l’accesseur set. Ces propriétés requièrent généralement une variable pour contenir la valeur manipulée par la propriété. Cette variable est connue en tant que le champ de stockage. S’il n’existe aucun champ de stockage pour l’objet, veillez à retourner une valeur null : certains les appelants ne peuvent pas payer une attention particulière à la valeur de retour mais ressemblera à la place pour voir si une valeur null a été retournée dans `ppObject`.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)
+Obtient le champ ou la variable (le cas échéant) qui peut être sauvegarde de la propriété représentée par cet objet.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT GetBackingFieldForProperty(
+   IDebugObject2** ppObject
+);
+```
+
+```csharp
+int GetBackingFieldForProperty(
+   out IDebugObject2 ppObject
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `ppObject`
+
+ [out] Un [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) objet décrivant le champ de stockage.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
+
+## <a name="remarks"></a>Notes
+ Le [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) objet représente une propriété de classe de code managé, autrement dit, une méthode avec une commande get et/ou l’accesseur set. Ces propriétés requièrent généralement une variable pour contenir la valeur manipulée par la propriété. Cette variable est connue en tant que le champ de stockage. S’il n’existe aucun champ de stockage pour l’objet, veillez à retourner une valeur null : certains les appelants ne peuvent pas payer une attention particulière à la valeur de retour mais ressemblera à la place pour voir si une valeur null a été retournée dans `ppObject`.
+
+## <a name="see-also"></a>Voir aussi
+- [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

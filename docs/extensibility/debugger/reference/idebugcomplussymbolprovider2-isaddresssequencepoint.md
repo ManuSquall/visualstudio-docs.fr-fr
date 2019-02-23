@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider2::IsAddressSequencePoint | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::IsAddressSequencePoint
 - IsAddressSequencePoint
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41d33f95e6839e8def5915388972a66284f632a2
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: dc56d0bda7d8b1797c29db6c2e72a5efc3d586d2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412771"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717973"
 ---
 # <a name="idebugcomplussymbolprovider2isaddresssequencepoint"></a>IDebugComPlusSymbolProvider2::IsAddressSequencePoint
 Détermine si l’adresse de débogage spécifié est un point de séquence.
@@ -36,8 +36,9 @@ int IsAddressSequencePoint(
 ```
 
 #### <a name="parameters"></a>Paramètres
-`pAddress`  
-[in] Déboguer l’adresse qui est représenté par le [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.
+`pAddress`
+
+ [in] Déboguer l’adresse qui est représenté par le [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.
 
 ## <a name="return-value"></a>Valeur de retour
 Si l’adresse de débogage est un point de séquence, retourne `S_OK`; sinon, retourne `S_FALSE`.
@@ -84,4 +85,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
+- [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

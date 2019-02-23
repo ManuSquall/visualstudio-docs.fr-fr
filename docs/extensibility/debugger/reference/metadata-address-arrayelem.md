@@ -1,7 +1,7 @@
 ---
 title: METADATA_ADDRESS_ARRAYELEM | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - METADATA_ADDRESS_ARRAYELEM
 helpviewer_keywords:
@@ -12,14 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7cfd9204dfbcc2254da6a4539e6b18d90c156c4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: HT
+ms.openlocfilehash: 2b08d3d25912123d62de9a096b810f42d1418aa6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632795"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56707898"
 ---
 # <a name="metadataaddressarrayelem"></a>METADATA_ADDRESS_ARRAYELEM
+
 Cette structure représente un élément de tableau dans un tableau.
 
 ## <a name="syntax"></a>Syntaxe
@@ -39,12 +40,15 @@ public struct METADATA_ADDRESS_ARRAYELEM {
 ```
 
 ## <a name="terms"></a>Termes
-tokMethod  
+
+tokMethod
+
 L’ID du tableau de cet élément est une partie de.
 
 (C++) `_mdToken` est un `typedef` pour 32 bits `int`.
 
-dwIndex  
+dwIndex
+
 L’index de cet élément dans le tableau.
 
 ## <a name="remarks"></a>Notes
@@ -58,6 +62,7 @@ Espace de noms : Microsoft.VisualStudio.Debugger.Interop
 Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
-[Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)  
-[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)
+
+- [Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
+- [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

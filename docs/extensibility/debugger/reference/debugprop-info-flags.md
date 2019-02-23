@@ -1,7 +1,7 @@
 ---
 title: DEBUGPROP_INFO_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DEBUGPROP_INFO_FLAGS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3e26972326d7a80a5fb154bfdf7de93b47af9d0
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 131e014e3714df708c5ef1526ecb911531c5a5c3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413226"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689107"
 ---
 # <a name="debugpropinfoflags"></a>DEBUGPROP_INFO_FLAGS
 Spécifie les informations à récupérer sur un objet de propriété de débogage.
@@ -68,44 +68,31 @@ public enum enum_DEBUGPROP_INFO_FLAGS {
 ```
 
 ## <a name="members"></a>Membres
-DEBUGPROP_INFO_FULLNAME  
-Initialize/utiliser le `bstrFullName` champ.
+DEBUGPROP_INFO_FULLNAME Initialize/utiliser le `bstrFullName` champ.
 
-DEBUGPROP_INFO_NAME  
-Initialize/utiliser le `bstrName` champ.
+DEBUGPROP_INFO_NAME Initialize/utiliser le `bstrName` champ.
 
-DEBUGPROP_INFO_TYPE  
-Initialize/utiliser le `bstrType` champ.
+DEBUGPROP_INFO_TYPE Initialize/utiliser le `bstrType` champ.
 
-DEBUGPROP_INFO_VALUE  
-Initialize/utiliser le `bstrValue` champ.
+DEBUGPROP_INFO_VALUE Initialize/utiliser le `bstrValue` champ.
 
-DEBUGPROP_INFO_ATTRIB  
-Initialize/utiliser le `dwAttrib` champ.
+DEBUGPROP_INFO_ATTRIB Initialize/utiliser le `dwAttrib` champ.
 
-DEBUGPROP_INFO_PROP  
-Initialize/utiliser le `pProperty` champ qui contient un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interface.
+DEBUGPROP_INFO_PROP Initialize/utiliser le `pProperty` champ qui contient un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interface.
 
-DEBUGPROP_INFO_VALUE_AUTOEXPAND  
-Spécifie que le champ de valeur doit contenir la valeur auto-développé, s’il est disponible pour ce type d’objet.
+DEBUGPROP_INFO_VALUE_AUTOEXPAND Spécifie que le champ de valeur doit contenir la valeur auto-développé, s’il est disponible pour ce type d’objet.
 
-DEBUGPROP_INFO_VALUE_NOFUNCEVAL  
-Obsolète.
+DEBUGPROP_INFO_VALUE_NOFUNCEVAL déconseillée.
 
-DEBUGPROP_INFO_VALUE_RAW  
-Ne retournent pas des valeurs (Embellir) ou des membres (autrement dit, ne met pas les valeurs).
+Faire DEBUGPROP_INFO_VALUE_RAW pas retourner des valeurs (Embellir) ou des membres (autrement dit, ne met pas les valeurs).
 
-DEBUGPROP_INFO_VALUE_NO_TOSTRING  
-Ne retournent pas les valeurs synthétisées spéciales (par exemple, n’appelez pas `ToString()` sur un objet pour produire une valeur).
+DEBUGPROP_INFO_VALUE_NO_TOSTRING faire pas retourner les valeurs synthétisées spéciales (par exemple, n’appelez pas `ToString()` sur un objet pour produire une valeur).
 
-DEBUGPROP_INFO_NONE  
-Spécifie qu’aucun indicateur n’est défini.
+DEBUGPROP_INFO_NONE indique qu’aucun indicateur est défini.
 
-DEBUGPROP_INFO_STANDARD  
-Initialize/utiliser le `dwAttrib`, `bstrName`, `bstrType`, et `bstrValue` champs.
+DEBUGPROP_INFO_STANDARD Initialize/utiliser le `dwAttrib`, `bstrName`, `bstrType`, et `bstrValue` champs.
 
-DEBUGPROP_INFO_All  
-Indique un masque de tous les indicateurs.
+DEBUGPROP_INFO_All indique un masque de tous les indicateurs.
 
 ## <a name="remarks"></a>Notes
 Ces valeurs sont passées à la [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md), [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md), et [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) méthodes pour indiquer quels sont les champs à initialiser le [ DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) structure.
@@ -122,9 +109,9 @@ Espace de noms : Microsoft.VisualStudio.Debugger.Interop
 Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
-[Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)  
-[GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)  
-[EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)  
-[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)  
-[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)
+- [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
+- [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)
+- [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)
+- [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)
+- [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)

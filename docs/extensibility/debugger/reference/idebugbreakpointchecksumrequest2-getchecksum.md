@@ -1,7 +1,7 @@
 ---
 title: IDebugBreakpointChecksumRequest2::GetChecksum | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugBreakpointChecksumRequest2::GetChecksum
 ms.assetid: ec434882-e5c0-4d76-a58b-22c260d8626e
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba3d10fc129edfa5ac159bcf394cdbe734d65dba
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 8d3c85d949f9547897b924bea86fe0cf9d438768
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317638"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56685662"
 ---
 # <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
 Récupère la somme de contrôle de document pour une demande de point d’arrêt étant donnée l’identificateur unique de l’algorithme de checksum à utiliser.
@@ -37,11 +37,13 @@ public int GetChecksum(
 ```
 
 #### <a name="parameters"></a>Paramètres
-`guidAlgorithm`  
-[in] Identificateur unique de l’algorithme de somme de contrôle.
+`guidAlgorithm`
 
-`pChecksumData`  
-[out] Somme de contrôle de document pour la demande de point d’arrêt.
+ [in] Identificateur unique de l’algorithme de somme de contrôle.
+
+`pChecksumData`
+
+ [out] Somme de contrôle de document pour la demande de point d’arrêt.
 
 ## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
@@ -102,4 +104,4 @@ bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCo
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[IDebugBreakpointChecksumRequest2](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2.md)
+- [IDebugBreakpointChecksumRequest2](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2.md)

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 57b711d91e50d0aecb579f7d02afe2123e365425
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: dbac3ebe4c53ec08fd9191b861cfe1187574273c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316585"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56687885"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Créer un contrôle de boîte à outils Windows Forms
 Le modèle d’élément de contrôle de boîte à outils Windows Forms qui est inclus dans les outils d’extensibilité de Visual Studio (Visual Studio SDK) vous permet de créer un contrôle qui est automatiquement ajouté à la **boîte à outils** lorsque l’extension est installée. Cette rubrique montre comment utiliser le modèle pour créer un contrôle simple compteur que vous pouvez distribuer à d’autres utilisateurs.
@@ -209,7 +209,7 @@ Le `Counter` contrôle expose une méthode pour incrémenter le compteur, un év
 Lorsque vous générez un **boîte à outils** (contrôle), Visual Studio crée un fichier nommé *ProjectName.vsix* dans le dossier \bin\debug\ de votre projet. Vous pouvez déployer le contrôle en chargeant le *.vsix* fichier à un réseau ou à un site Web. Lorsqu’un utilisateur ouvre le *.vsix* , le contrôle est installé et ajouté à Visual Studio **boîte à outils** sur l’ordinateur de l’utilisateur. Ou bien, vous pouvez télécharger le *.vsix* fichier [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkID=123847) afin que les utilisateurs puissent le trouver en naviguant dans le **outils**  >   **Extension et mises à jour** boîte de dialogue.
 
 ## <a name="see-also"></a>Voir aussi
-[Étendre d’autres parties de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  
-[Créer un contrôle de boîte à outils WPF](../extensibility/creating-a-wpf-toolbox-control.md)  
-[Étendre d’autres parties de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  
-[Concepts de base développement de contrôles Windows Forms](/dotnet/framework/winforms/controls/windows-forms-control-development-basics)
+- [Étendre d’autres parties de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
+- [Créer un contrôle de boîte à outils WPF](../extensibility/creating-a-wpf-toolbox-control.md)
+- [Étendre d’autres parties de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
+- [Concepts de base développement de contrôles Windows Forms](/dotnet/framework/winforms/controls/windows-forms-control-development-basics)

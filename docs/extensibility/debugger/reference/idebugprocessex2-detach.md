@@ -1,7 +1,7 @@
 ---
 title: IDebugProcessEx2::Detach | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProcessEx2::Detach
 helpviewer_keywords:
@@ -12,39 +12,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0659dba3617e30f6d7da5ca4ebbce0c92f2e48ae
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e736c14b1a87188f45658a51cff0c123553332e9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957997"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56725032"
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
-Cette méthode informe le processus qu’une session est le débogage n’est plus le processus.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT Detach(   
-   IDebugSession2* pSession  
-);  
-```  
-  
-```csharp  
-int Detach(  
-   IDebugSession2 pSession  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pSession`  
- [in] Une valeur qui identifie de façon unique la session pour détacher ce processus à partir de l’utilisateur.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="remarks"></a>Notes  
- L’interface passée dans `pSession` est traité uniquement comme un cookie, une valeur qui identifie de façon unique le Gestionnaire de débogage de session qui a initialement attachée à ce processus ; aucune des méthodes sur l’interface fournie sont fonctionnels.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)
+Cette méthode informe le processus qu’une session est le débogage n’est plus le processus.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT Detach( 
+   IDebugSession2* pSession
+);
+```
+
+```csharp
+int Detach(
+   IDebugSession2 pSession
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pSession`
+
+ [in] Une valeur qui identifie de façon unique la session pour détacher ce processus à partir de l’utilisateur.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="remarks"></a>Notes
+ L’interface passée dans `pSession` est traité uniquement comme un cookie, une valeur qui identifie de façon unique le Gestionnaire de débogage de session qui a initialement attachée à ce processus ; aucune des méthodes sur l’interface fournie sont fonctionnels.
+
+## <a name="see-also"></a>Voir aussi
+- [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

@@ -1,7 +1,7 @@
 ---
 title: PENDING_BP_STATE_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - PENDING_BP_STATE_FLAGS
 helpviewer_keywords:
@@ -12,50 +12,48 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db6f2b84c0d10ed6be171ad1c3055ca8f02fa5db
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7614b0633f6490e8c3bb6837ed89fda67575c71e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54958158"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691499"
 ---
 # <a name="pendingbpstateflags"></a>PENDING_BP_STATE_FLAGS
-Spécifie les indicateurs d’état de point d’arrêt en attente.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-enum enum_PENDING_BP_STATE_FLAGS {   
-   PBPSF_NONE        = 0x0000,  
-   PBPSF_VIRTUALIZED = 0x0001  
-};  
-typedef DWORD PENDING_BP_STATE_FLAGS;  
-```  
-  
-```csharp  
-public enum enum_PENDING_BP_STATE_FLAGS {   
-   PBPSF_NONE        = 0x0000,  
-   PBPSF_VIRTUALIZED = 0x0001  
-};  
-```  
-  
-## <a name="members"></a>Membres  
- PBPSF_NONE  
- Espace réservé.  
-  
- PBPSF_VIRTUALIZED  
- Spécifie un virtualisé en attente de point d’arrêt, ce qui doit être lié à chaque chargement de nouveau code.  
-  
-## <a name="remarks"></a>Notes  
- Utilisé pour le `flags` membre de la [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) structure.  
-  
-## <a name="requirements"></a>Spécifications  
- En-tête : msdbg.h  
-  
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
-  
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Voir aussi  
- [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)
+Spécifie les indicateurs d’état de point d’arrêt en attente.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+enum enum_PENDING_BP_STATE_FLAGS { 
+   PBPSF_NONE        = 0x0000,
+   PBPSF_VIRTUALIZED = 0x0001
+};
+typedef DWORD PENDING_BP_STATE_FLAGS;
+```
+
+```csharp
+public enum enum_PENDING_BP_STATE_FLAGS { 
+   PBPSF_NONE        = 0x0000,
+   PBPSF_VIRTUALIZED = 0x0001
+};
+```
+
+## <a name="members"></a>Membres
+ Espace réservé PBPSF_NONE.
+
+ PBPSF_VIRTUALIZED spécifie un virtualisé en attente de point d’arrêt, ce qui doit être lié à chaque chargement de nouveau code.
+
+## <a name="remarks"></a>Notes
+ Utilisé pour le `flags` membre de la [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) structure.
+
+## <a name="requirements"></a>Spécifications
+ En-tête : msdbg.h
+
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Voir aussi
+- [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)

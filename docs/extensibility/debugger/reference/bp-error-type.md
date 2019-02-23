@@ -1,7 +1,7 @@
 ---
 title: BP_ERROR_TYPE | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_ERROR_TYPE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a986191cb52ac76e06ab44fc9cf8faef72f0154
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 2964c833abfa25b57678680f8b821f992cb31de8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317885"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689185"
 ---
 # <a name="bperrortype"></a>BP_ERROR_TYPE
 Spécifie le type d’erreur d’un point d’arrêt.
@@ -58,38 +58,27 @@ public enum enum_BP_ERROR_TYPE {
 ```
 
 ## <a name="members"></a>Membres
-BPET_NONE  
-Ne spécifie aucune erreur de point d’arrêt.
+BPET_NONE ne spécifie aucune erreur de point d’arrêt.
 
-BPET_TYPE_WARNING  
-Spécifie une erreur de point d’arrêt de style de l’avertissement.
+BPET_TYPE_WARNING spécifie une erreur de point d’arrêt de style de l’avertissement.
 
-BPET_TYPE_ERROR  
-Spécifie une erreur de point d’arrêt de style d’erreur.
+BPET_TYPE_ERROR spécifie une erreur de point d’arrêt de style d’erreur.
 
-BPET_SEV_HIGH  
-Spécifie une erreur de point d’arrêt de niveau de gravité élevé.
+BPET_SEV_HIGH spécifie une erreur de point d’arrêt de niveau de gravité élevé.
 
-BPET_SEV_GENERAL  
-Spécifie une erreur de point d’arrêt de gravité moyenne.
+BPET_SEV_GENERAL spécifie une erreur de point d’arrêt de gravité moyenne.
 
-BPET_SEV_LOW  
-Spécifie une erreur de point d’arrêt de faible gravité.
+BPET_SEV_LOW spécifie une erreur de point d’arrêt de faible gravité.
 
-BPET_TYPE_MASK  
-Spécifie une erreur de point d’arrêt de style de masque.
+BPET_TYPE_MASK spécifie une erreur de point d’arrêt de style de masque.
 
-BPET_SEV_MASK  
-Spécifie une erreur de point d’arrêt de la gravité de type masque.
+BPET_SEV_MASK spécifie une erreur de point d’arrêt de la gravité de type masque.
 
-BPET_GENERAL_WARNING  
-Spécifie une erreur de point d’arrêt général de type avertissement.
+BPET_GENERAL_WARNING spécifie une erreur de point d’arrêt général de type avertissement.
 
-BPET_GENERAL_ERROR  
-Spécifie une erreur de point d’arrêt de style d’erreur général.
+BPET_GENERAL_ERROR spécifie une erreur de point d’arrêt de style d’erreur général.
 
-BPET_ALL  
-Spécifie tous les types d’erreurs de point d’arrêt.
+BPET_ALL Spécifie tous les types d’erreurs de point d’arrêt.
 
 ## <a name="remarks"></a>Notes
 Ces valeurs peuvent être combinées avec un opérateur de bits `OR` et utilisé pour le `dwType` membre de la [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) structure. Passé en tant que paramètre à la [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) (méthode).
@@ -104,6 +93,6 @@ Espace de noms : Microsoft.VisualStudio.Debugger.Interop
 Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
-[Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)  
-[EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)
+- [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)
+- [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)

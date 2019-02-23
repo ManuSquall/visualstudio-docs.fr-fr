@@ -1,7 +1,7 @@
 ---
 title: IDebugExpressionEvaluator2::SetCallback | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator2::SetCallback
 - SetCallback
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fef36b663a95f2c6eaca31c9091898cbe70db435
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: d758d6c34563a2915e295514380cf07c847d86c4
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450384"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686793"
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
 Permet l’évaluateur d’expression (EE) spécifier l’interface de rappel que le moteur du débogueur (dé) utilisera pour lire les paramètres de mesure.
@@ -36,8 +36,9 @@ int SetCallback (
 ```
 
 #### <a name="parameters"></a>Paramètres
-`pCallback`  
-[in] Interface à utiliser pour le rappel de paramètres.
+`pCallback`
+
+ [in] Interface à utiliser pour le rappel de paramètres.
 
 ## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
@@ -74,4 +75,4 @@ HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)
+- [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)
