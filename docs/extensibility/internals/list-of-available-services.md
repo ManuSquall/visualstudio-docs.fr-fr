@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d84b8b6b186887fe9add71d5e70ac007e3157ab
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 87a2b604b27b58c40f1ba1ad8628fe2be06701e5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54934203"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695789"
 ---
 # <a name="list-of-available-services"></a>Liste des services disponibles
 
@@ -129,7 +129,7 @@ Utiliser les GUID de service répertoriés ici ou obtenu à partir d’une autre
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolutionObject> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution> | Oui | Oui | Utilisez le <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution> à la place de service. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolutionPersistence> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> | Oui | Oui | Permet à un VSPackage stocker et récupérer des informations à partir du fichier .sln de la solution actuelle. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsSQLCLRReferences> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSQLCLRReferences> | Aucune | Oui | Fournit la possibilité d’ajouter et mettre à jour les références dans les assemblys de code managé. |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsStartPageDownload> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStartPageDownload> | Aucune | Oui | Fournit l’accès au service de téléchargement de la Page démarrage pour démarrer et arrêter le service de téléchargement sur un thread d’arrière-plan. |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsStartPageDownload> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStartPageDownload> | Aucune | Oui | Fournit l’accès au service de téléchargement de Visual Studio 2017 Démarrer de la Page pour démarrer et arrêter le service de téléchargement sur un thread d’arrière-plan. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> | Oui | Oui | Fournit l’accès à la barre d’état de l’IDE. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsStrongNameKeys> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStrongNameKeys> | Aucune | Oui | Fournit l’accès aux méthodes permettant de créer des fichiers de clé et les noms de clé forts avec mots de passe sont utilisés lors de la signature des assemblys de code managé. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsStructuredFileIO> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStructuredFileIO> | Oui | Oui | Permet à un VSPackage prendre en charge l’enregistrement des données dans plusieurs formats. |

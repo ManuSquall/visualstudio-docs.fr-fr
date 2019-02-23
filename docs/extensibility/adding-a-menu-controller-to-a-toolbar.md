@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c355ba523bd16cce9d352d483af8c142f0ee439c
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 2938da8f5f24c5c60cfe8d09423be886de1d0c86
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318236"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705636"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>Ajouter un contrôleur de menu à une barre d’outils
 Cette procédure pas à pas s’appuie sur le [ajouter une barre d’outils à une fenêtre outil](../extensibility/adding-a-toolbar-to-a-tool-window.md) procédure pas à pas et montre comment ajouter un contrôleur de menu à la barre d’outils de la fenêtre outil. Les étapes présentées ici peuvent également être appliqués à la barre d’outils qui est créé dans le [ajouter une barre d’outils](../extensibility/adding-a-toolbar.md) procédure pas à pas.
@@ -223,5 +223,5 @@ Contrôleurs de menu peuvent apparaître dans les menus, mais ils sont souvent u
     Une boîte de dialogue s’affiche avec le message **que vous avez sélectionné le contrôleur de Menu Item 3**. Notez que le message correspond au texte sur le bouton de contrôleur de menu. Le bouton de contrôleur de menu affiche désormais **MC élément 3**.
 
 ## <a name="see-also"></a>Voir aussi
-[Ajout d’une barre d’outils à une fenêtre outil](../extensibility/adding-a-toolbar-to-a-tool-window.md)  
-[Ajout d’une barre d’outils](../extensibility/adding-a-toolbar.md)
+- [Ajout d’une barre d’outils à une fenêtre outil](../extensibility/adding-a-toolbar-to-a-tool-window.md)
+- [Ajout d’une barre d’outils](../extensibility/adding-a-toolbar.md)
