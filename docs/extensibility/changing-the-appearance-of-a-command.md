@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6446df8f1f3334cac9ebb6e0501a42b3da408455
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 7431fa1670f6a75b69c1a1033a51975307426771
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317079"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691343"
 ---
 # <a name="change-the-appearance-of-a-command"></a>Modifier l’apparence d’une commande
 Vous pouvez fournir des commentaires à votre utilisateur en modifiant l’apparence d’une commande. Par exemple, vous souhaiterez une commande à un aspect différent quand il n’est pas disponible. Vous pouvez activer ou désactiver les commandes, masquer ou afficher, ou vérifier ou décochez la case dans le menu.
@@ -85,7 +85,7 @@ Pour modifier l’apparence d’une commande, effectuez l’une des actions suiv
 8. Sur le **outils** menu vous devriez maintenant voir **nouveau texte**. Cliquez sur **nouveau texte**. La commande doit maintenant être apparaît en grisé.
 
 ## <a name="see-also"></a>Voir aussi
-[Commandes, menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md)  
-[Comment VSPackages ajoute des éléments d’interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
-[Extension des menus et commandes](../extensibility/extending-menus-and-commands.md)  
-[Table de commande Visual Studio (. Fichiers VSCT)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Commandes, menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md)
+- [Comment VSPackages ajoute des éléments d’interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Extension des menus et commandes](../extensibility/extending-menus-and-commands.md)
+- [Table de commande Visual Studio (. Fichiers VSCT)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

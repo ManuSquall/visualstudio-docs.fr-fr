@@ -1,7 +1,7 @@
 ---
 title: IDebugAlias::Dispose | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugAlias::Dispose
 helpviewer_keywords:
@@ -12,34 +12,34 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5dffc8e9bb5440fb1a05cd733c609af43104f72
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d35b5819aa0354581721f02a931aa7bdf679b70d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55028411"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56714957"
 ---
 # <a name="idebugaliasdispose"></a>IDebugAlias::Dispose
-Marque cet alias pour la suppression.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT Dispose();  
-```  
-  
-```csharp  
-int Dispose();  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- Aucun.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
-  
-## <a name="remarks"></a>Notes  
- Une fois que cette méthode est appelée, l’alias n’est plus disponible.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)
+Marque cet alias pour la suppression.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT Dispose();
+```
+
+```csharp
+int Dispose();
+```
+
+#### <a name="parameters"></a>Paramètres
+ Aucun.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
+
+## <a name="remarks"></a>Notes
+ Une fois que cette méthode est appelée, l’alias n’est plus disponible.
+
+## <a name="see-also"></a>Voir aussi
+- [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

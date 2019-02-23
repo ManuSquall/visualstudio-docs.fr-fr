@@ -1,7 +1,7 @@
 ---
 title: EVENTATTRIBUTES | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - EVENTATTRIBUTES
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b0f7de41857984464afb1576448fec56bd2841d
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 58417471e37dd335c2fa751492f2db357274417a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413265"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686897"
 ---
 # <a name="eventattributes"></a>EVENTATTRIBUTES
 Spécifie les attributs d’événement.
@@ -50,26 +50,19 @@ public enum enum_EVENTATTRIBUTES {
 ```
 
 ## <a name="members"></a>Membres
-EVENT_ASYNCHRONOUS  
-Indique que l’événement est asynchrone et aucune réponse à l’événement n’est nécessaire.
+EVENT_ASYNCHRONOUS indique que l’événement est asynchrone et aucune réponse à l’événement n’est nécessaire.
 
-EVENT_SYNCHRONOUS  
-Indique que l’événement est synchrone ; répondre au moyen de [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md).
+EVENT_SYNCHRONOUS indique que l’événement est synchrone ; répondre au moyen de [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md).
 
-EVENT_STOPPING  
-Indique qu’il s’agit d’un événement d’arrêt. Doit être combinée avec `EVENT_ASYNCHRONOUS` ou `EVENT_SYNCHRONOUS`.
+EVENT_STOPPING indique qu’il s’agit d’un événement d’arrêt. Doit être combinée avec `EVENT_ASYNCHRONOUS` ou `EVENT_SYNCHRONOUS`.
 
-EVENT_ASYNC_STOP  
-Indique un événement d’arrêt asynchrone. Il n’existe actuellement aucun événement de ce type. Cet indicateur est uniquement un espace réservé.
+EVENT_ASYNC_STOP indique un événement d’arrêt asynchrone. Il n’existe actuellement aucun événement de ce type. Cet indicateur est uniquement un espace réservé.
 
-EVENT_SYNC_STOP  
-Indique un événement d’arrêt synchrone (une combinaison de `EVENT_SYNCHRONOUS` et `EVENT_STOPPING`). Cette valeur est utilisée par un moteur de débogage (dé) lorsqu’il envoie un événement d’arrêt. La réponse est effectuée au moyen d’un appel à [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), [étape](../../../extensibility/debugger/reference/idebugprogram2-step.md), ou [continuer](../../../extensibility/debugger/reference/idebugprogram2-continue.md).
+EVENT_SYNC_STOP indique un événement d’arrêt synchrone (une combinaison de `EVENT_SYNCHRONOUS` et `EVENT_STOPPING`). Cette valeur est utilisée par un moteur de débogage (dé) lorsqu’il envoie un événement d’arrêt. La réponse est effectuée au moyen d’un appel à [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), [étape](../../../extensibility/debugger/reference/idebugprogram2-step.md), ou [continuer](../../../extensibility/debugger/reference/idebugprogram2-continue.md).
 
-EVENT_IMMEDIATE  
-Indique un événement qui est envoyé immédiatement et de manière synchrone à l’IDE. Cet indicateur est combiné avec d’autres indicateurs tels que `EVENT_ASYNCHRONOUS`, `EVENT_SYNCHRONOUS`, ou `EVENT_SYNC_STOP` pour indiquer le type d’événement et le fait que le mécanisme de réponse (le cas échéant) est connu.
+EVENT_IMMEDIATE indique un événement qui est envoyé immédiatement et de manière synchrone à l’IDE. Cet indicateur est combiné avec d’autres indicateurs tels que `EVENT_ASYNCHRONOUS`, `EVENT_SYNCHRONOUS`, ou `EVENT_SYNC_STOP` pour indiquer le type d’événement et le fait que le mécanisme de réponse (le cas échéant) est connu.
 
-EVENT_EXPRESSION_EVALUATION  
-L’événement est un résultat d’évaluation de l’expression.
+EVENT_EXPRESSION_EVALUATION l’événement est un résultat d’évaluation de l’expression.
 
 ## <a name="remarks"></a>Notes
 Ces valeurs sont passées dans le `dwAttrib` paramètre de la [événement](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) (méthode).
@@ -84,6 +77,6 @@ Espace de noms : Microsoft.VisualStudio.Debugger.Interop
 Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
-[Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)  
-[Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+- [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)
+- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

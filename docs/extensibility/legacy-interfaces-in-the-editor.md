@@ -10,17 +10,17 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21ebfb4babc32642c37d1a8ccf469a1a5c37046e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 044bf36845be70290291b79dee255c452f56f0a0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982544"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694411"
 ---
 # <a name="legacy-interfaces-in-the-editor"></a>Interfaces héritées dans l’éditeur
-Vous pouvez accéder à l’éditeur Visual Studio à partir des interfaces héritées. Le SDK Visual Studio inclut des adaptateurs appelés *shims*, qui activent ces interfaces interagir avec le nouvel éditeur. Néanmoins, nous recommandons que vous mettez à jour votre code hérité pour utiliser l’éditeur de nouvelles API. Votre code sera plus performant, et vous pouvez utiliser les nouvelles technologies telles que Windows Presentation Foundation (WPF) et de Managed Extensibility Framework (MEF).  
+Vous pouvez accéder à l’éditeur Visual Studio à partir des interfaces héritées. Le SDK Visual Studio inclut des adaptateurs appelés *shims*, qui activent ces interfaces interagir avec le nouvel éditeur. Néanmoins, nous recommandons que vous mettez à jour votre code hérité pour utiliser l’éditeur de nouvelles API. Votre code sera plus performant, et vous pouvez utiliser les nouvelles technologies telles que Windows Presentation Foundation (WPF) et de Managed Extensibility Framework (MEF).
 
-## <a name="related-topics"></a>Rubriques connexes  
+## <a name="related-topics"></a>Rubriques connexes
 
 | Titre | Description |
 | - | - |

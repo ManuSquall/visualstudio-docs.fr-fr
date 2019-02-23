@@ -11,12 +11,13 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e89ff96ef73070570b7295ab6256a501d5865b6e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+monikerRange: vs-2017
+ms.openlocfilehash: dcc184d6aedb3e15bfddd8396c54b351ef4d3288
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982765"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693007"
 ---
 # <a name="deploy-custom-start-pages"></a>Déployer les Pages de démarrage personnalisées
 
@@ -43,13 +44,13 @@ Vous pouvez obtenir le modèle de projet Page de démarrage à l’aide de **Ges
 
 - En créant manuellement un *.vsix* fichier. Pour créer un *.vsix* fichier manuellement :
 
-  1.  Créer le *extension.vsixmanifest* fichier et le *[Content_Types] .xml* fichier dans un nouveau dossier. Pour plus d’informations, consultez [Anatomie d’un package VSIX](../extensibility/anatomy-of-a-vsix-package.md).
+   1. Créer le *extension.vsixmanifest* fichier et le *[Content_Types] .xml* fichier dans un nouveau dossier. Pour plus d’informations, consultez [Anatomie d’un package VSIX](../extensibility/anatomy-of-a-vsix-package.md).
 
-  2.  Dans l’Explorateur Windows, le dossier qui contient les deux fichiers XML avec le bouton droit, cliquez sur **envoyer vers**, puis cliquez sur dossier compressé (zippé). Renommer résultant *.zip* fichier *Filename.vsix*, où nom_fichier représente le nom du fichier redistribuable qui installe votre package.
+   2. Dans l’Explorateur Windows, le dossier qui contient les deux fichiers XML avec le bouton droit, cliquez sur **envoyer vers**, puis cliquez sur dossier compressé (zippé). Renommer résultant *.zip* fichier *Filename.vsix*, où nom_fichier représente le nom du fichier redistribuable qui installe votre package.
 
-  Pour Visual Studio de reconnaître une Page de démarrage, le `Content Element` du manifeste VSIX doit contenir un `CustomExtension Element` qui a le `Type` attribut la valeur `"StartPage"`. Une extension de la Page de démarrage qui a été installée à l’aide de déploiement VSIX s’affiche dans le **personnaliser la Page de démarrage** liste sur le **démarrage** page d’options en tant que **[Extension installée]** *Nom de l’extension*.
+Pour Visual Studio de reconnaître une Page de démarrage, le `Content Element` du manifeste VSIX doit contenir un `CustomExtension Element` qui a le `Type` attribut la valeur `"StartPage"`. Une extension de la Page de démarrage qui a été installée à l’aide de déploiement VSIX s’affiche dans le **personnaliser la Page de démarrage** liste sur le **démarrage** page d’options en tant que **[Extension installée]** *Nom de l’extension*.
 
-  Si votre package de la Page de démarrage inclut des assemblys, vous devez ajouter l’inscription de chemin d’accès de liaison afin qu’ils soient disponibles au démarrage de Visual Studio. Pour ce faire, assurez-vous que votre package inclut un *.pkgdef* fichier qui comporte les informations suivantes.
+Si votre package de la Page de démarrage inclut des assemblys, vous devez ajouter l’inscription de chemin d’accès de liaison afin qu’ils soient disponibles au démarrage de Visual Studio. Pour ce faire, assurez-vous que votre package inclut un *.pkgdef* fichier qui comporte les informations suivantes.
 
 ```
 [$RootKey$\BindingPaths\{Insert a new GUID here}]
