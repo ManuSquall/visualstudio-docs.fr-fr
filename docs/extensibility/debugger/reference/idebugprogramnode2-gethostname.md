@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramNode2::GetHostName | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProgramNode2::GetHostName
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7c6642d088da304b0a2d2e48292e8dcbcec1e38
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 19bb7f56077abd276936fe8342e74ecda6f5770a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450033"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56707378"
 ---
 # <a name="idebugprogramnode2gethostname"></a>IDebugProgramNode2::GetHostName
 Obtient le nom du processus qui héberge le programme.
@@ -39,11 +39,13 @@ int GetHostName (
 ```
 
 #### <a name="parameters"></a>Paramètres
-`dwHostNameType`  
-[in] Une valeur comprise entre le [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) énumération qui spécifie le type de nom à retourner.
+`dwHostNameType`
 
-`pbstrHostName`  
-[out] Retourne le nom du processus d’hébergement.
+ [in] Une valeur comprise entre le [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) énumération qui spécifie le type de nom à retourner.
+
+`pbstrHostName`
+
+ [out] Retourne le nom du processus d’hébergement.
 
 ## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
@@ -94,6 +96,6 @@ HRESULT CProgram::GetHostName(DWORD dwHostNameType, BSTR* pbstrHostName) {
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)  
-[GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md)  
-[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
+- [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
+- [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md)
+- [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

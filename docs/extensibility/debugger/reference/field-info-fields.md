@@ -1,7 +1,7 @@
 ---
 title: FIELD_INFO_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - FIELD_INFO_FIELDS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cab1d06c868f0236d1d24c186af705e9adab717e
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 9614d3b99df71c9bfa8328478348385472f1a8fa
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317469"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710004"
 ---
 # <a name="fieldinfofields"></a>FIELD_INFO_FIELDS
 Spécifie les informations à récupérer sur un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objet.
@@ -48,17 +48,13 @@ public enum enum_FIELD_INFO_FIELDS {
 ```
 
 ## <a name="members"></a>Membres
-FIF_FULLNAME  
-Initialize/utiliser le `bstrFullName` champ dans le [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) structure.
+FIF_FULLNAME Initialize/utiliser le `bstrFullName` champ dans le [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) structure.
 
-FIF_NAME  
-Initialize/utiliser le `bstrName` champ dans le `FIELD_INFO` structure.
+FIF_NAME Initialize/utiliser le `bstrName` champ dans le `FIELD_INFO` structure.
 
-FIF_TYPE  
-Initialize/utiliser le `bstrType` champ dans le `FIELD_INFO` structure.
+FIF_TYPE Initialize/utiliser le `bstrType` champ dans le `FIELD_INFO` structure.
 
-FIF_MODIFIERS  
-Initialize/utiliser le `bstrModifiers` champ dans le `FIELD_INFO` structure.
+FIF_MODIFIERS Initialize/utiliser le `bstrModifiers` champ dans le `FIELD_INFO` structure.
 
 ## <a name="remarks"></a>Notes
 Ces valeurs sont également passés en tant qu’argument à la [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) méthode pour spécifier les champs de la [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) structure doivent être initialisées.
@@ -75,7 +71,7 @@ Espace de noms : Microsoft.VisualStudio.Debugger.Interop
 Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
-[Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)  
-[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)  
-[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)
+- [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)
+- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
+- [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)

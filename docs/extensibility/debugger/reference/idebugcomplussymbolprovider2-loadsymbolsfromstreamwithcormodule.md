@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 - LoadSymbolsFromStreamWithCorModule
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b9241a93afea5d19664a74a78321d4d2857467b
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 472a83212bdd71bd1747fa54e4bf3d2bda51434e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412797"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722835"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromstreamwithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 Charger des symboles de débogage à partir d’un flux de données étant donné la **ICorDebugModule** objet.
@@ -46,23 +46,29 @@ int LoadSymbolsFromStreamWithCorModule(
 ```
 
 #### <a name="parameters"></a>Paramètres
-`ulAppDomainID`  
-[in] Identificateur du domaine d’application.
+`ulAppDomainID`
 
-`guidModule`  
-[in] Identificateur unique du module.
+ [in] Identificateur du domaine d’application.
 
-`baseAddress`  
-[in] Adresse mémoire de base.
+`guidModule`
 
-`pUnkMetadataImport`  
-[in] Objet qui contient les métadonnées de symbole.
+ [in] Identificateur unique du module.
 
-`pUnkCorDebugModule`  
-[in] Objet qui implémente le [ICorDebugModule (Interface)](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
+`baseAddress`
 
-`pStream`  
-[in] Flux de données qui contient les symboles de débogage à charger.
+ [in] Adresse mémoire de base.
+
+`pUnkMetadataImport`
+
+ [in] Objet qui contient les métadonnées de symbole.
+
+`pUnkCorDebugModule`
+
+ [in] Objet qui implémente le [ICorDebugModule (Interface)](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
+
+`pStream`
+
+ [in] Flux de données qui contient les symboles de débogage à charger.
 
 ## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
@@ -141,4 +147,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
+- [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

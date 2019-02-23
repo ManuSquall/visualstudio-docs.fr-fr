@@ -10,26 +10,26 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b71176d7cc8f60393a42e3d300e84c2c2de5ef05
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e2fb608acdad60f5387750045a15f8eba36e2375
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945916"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683205"
 ---
 # <a name="choose-a-debug-engine-implementation-strategy"></a>Choisir une stratégie de mise en œuvre de moteur de débogage
-Utilisez l’architecture de l’exécution afin de déterminer votre stratégie de mise en œuvre de moteur (dé) débogage. Vous pouvez créer le débogage moteur in-process pour le programme que vous déboguez. Créer le débogage moteur in-process avec le Gestionnaire de débogage de session de Visual Studio (SDM). Ou bien, créez le débogage moteur out-of-process pour chacun d’eux. Les instructions suivantes vous aideront à choisir entre ces trois stratégies.  
-  
-## <a name="guidelines"></a>Recommandations  
- S’il est possible pour l’Allemagne soit out-of-process pour le SDM et le programme que vous déboguez, il n’existe généralement aucune raison de le faire. Appels au-delà des limites de processus sont relativement lents.  
-  
- Déboguer les moteurs sont déjà fournies pour l’environnement d’exécution natif Win32 et pour l’environnement du common language runtime. Si vous devez remplacer le DE pour un environnement, vous devez créer le DE in-process avec le SDM.  
-  
- Sinon, vous créez le DE in-process pour le SDM ou processus au programme que vous déboguez. Vous devez prendre en compte si l’évaluateur d’expression de la DE requiert un accès fréquent dans le magasin de symboles du programme. Ou, si le magasin de symboles peut être chargé en mémoire pour un accès rapide. En outre, tenez compte des approches suivantes :  
-  
--   S’il n’existe pas de nombre d’appels entre l’évaluateur d’expression et le magasin de symboles, ou si le magasin de symboles peut être lues dans l’espace de mémoire SDM, créez le DE in-process pour le SDM. Vous devez renvoyer le CLSID du moteur de débogage pour le SDM quand elle joint à votre programme. Le SDM utilise ce CLSID pour créer une instance in-process de l’Allemagne.  
-  
--   Si le dé doit appeler le programme pour accéder au magasin de symboles, créez le DE in-process avec le programme. Dans ce cas, le programme crée l’instance de l’Allemagne.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Extensibilité du débogueur Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
+Utilisez l’architecture de l’exécution afin de déterminer votre stratégie de mise en œuvre de moteur (dé) débogage. Vous pouvez créer le débogage moteur in-process pour le programme que vous déboguez. Créer le débogage moteur in-process avec le Gestionnaire de débogage de session de Visual Studio (SDM). Ou bien, créez le débogage moteur out-of-process pour chacun d’eux. Les instructions suivantes vous aideront à choisir entre ces trois stratégies.
+
+## <a name="guidelines"></a>Recommandations
+ S’il est possible pour l’Allemagne soit out-of-process pour le SDM et le programme que vous déboguez, il n’existe généralement aucune raison de le faire. Appels au-delà des limites de processus sont relativement lents.
+
+ Déboguer les moteurs sont déjà fournies pour l’environnement d’exécution natif Win32 et pour l’environnement du common language runtime. Si vous devez remplacer le DE pour un environnement, vous devez créer le DE in-process avec le SDM.
+
+ Sinon, vous créez le DE in-process pour le SDM ou processus au programme que vous déboguez. Vous devez prendre en compte si l’évaluateur d’expression de la DE requiert un accès fréquent dans le magasin de symboles du programme. Ou, si le magasin de symboles peut être chargé en mémoire pour un accès rapide. En outre, tenez compte des approches suivantes :
+
+-   S’il n’existe pas de nombre d’appels entre l’évaluateur d’expression et le magasin de symboles, ou si le magasin de symboles peut être lues dans l’espace de mémoire SDM, créez le DE in-process pour le SDM. Vous devez renvoyer le CLSID du moteur de débogage pour le SDM quand elle joint à votre programme. Le SDM utilise ce CLSID pour créer une instance in-process de l’Allemagne.
+
+-   Si le dé doit appeler le programme pour accéder au magasin de symboles, créez le DE in-process avec le programme. Dans ce cas, le programme crée l’instance de l’Allemagne.
+
+## <a name="see-also"></a>Voir aussi
+- [Extensibilité du débogueur Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

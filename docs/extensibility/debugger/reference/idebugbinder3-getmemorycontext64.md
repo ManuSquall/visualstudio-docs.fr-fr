@@ -1,7 +1,7 @@
 ---
 title: IDebugBinder3::GetMemoryContext64 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - GetMemoryContext64
 - IDebugBinder3::GetMemoryContext64
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5be0e07721e0f38db68bae2ff8a99aaf50b649b6
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 522d6cc0888f3ccbfd8c39a9ec313f7e06add25f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317846"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713865"
 ---
 # <a name="idebugbinder3getmemorycontext64"></a>IDebugBinder3::GetMemoryContext64
 Convertit une adresse mémoire de 64 bits ou un emplacement de l’objet à un contexte de la mémoire.
@@ -40,14 +40,17 @@ int GetMemoryContext64 (
 ```
 
 #### <a name="parameters"></a>Paramètres
-`pField`  
-[in] Un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) qui décrit l’objet à localiser. Si `NULL`, puis utilisez `dwConstant` à la place.
+`pField`
 
-`uConstant`  
-[in] Une adresse mémoire de 64 bits, tels que 0x50000000.
+ [in] Un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) qui décrit l’objet à localiser. Si `NULL`, puis utilisez `dwConstant` à la place.
 
-`ppMemCxt`  
-[out] Retourne le [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) interface qui représente l’adresse de l’objet ou l’adresse en mémoire.
+`uConstant`
+
+ [in] Une adresse mémoire de 64 bits, tels que 0x50000000.
+
+`ppMemCxt`
+
+ [out] Retourne le [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) interface qui représente l’adresse de l’objet ou l’adresse en mémoire.
 
 ## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
@@ -127,4 +130,4 @@ HRESULT CValueProperty::GetMemoryContext ( IDebugMemoryContext2** out_ppMemoryCo
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
+- [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
