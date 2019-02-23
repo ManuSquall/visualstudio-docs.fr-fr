@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetArrayTypeFromAddress | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - GetArrayTypeFromAddress
 - IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
@@ -11,20 +11,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0878f4224d024e353c2c7ab798450a65e9677178
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: d5d6e06a30d6c76cc36bf7a7d64f97016bc60803
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413343"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56712734"
 ---
 # <a name="idebugcomplussymbolprovidergetarraytypefromaddress"></a>IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
 Récupère les informations sur le tableau spécifié à partir de son adresse de débogage de type.
 
 ## <a name="syntax"></a>Syntaxe
 
-```
-[C++]
+```cpp
 HRESULT GetArrayTypeFromAddress(
     IDebugAddress* pAddress,
     BYTE*          pSig,
@@ -33,8 +32,7 @@ HRESULT GetArrayTypeFromAddress(
 );
 ```
 
-```
-[C#]
+```csharp
 int GetArrayTypeFromAddress(
     IDebugAddress   pAddress,
     int[]           pSig,
@@ -44,17 +42,21 @@ int GetArrayTypeFromAddress(
 ```
 
 #### <a name="parameters"></a>Paramètres
-`pAddress`  
-[in] L’adresse de débogage est représenté par un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.
+`pAddress`
 
-`pSig`  
-[in] Tableau à examiner.
+ [in] L’adresse de débogage est représenté par un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.
 
-`dwSigLength`  
-[in] Longueur en octets de la `pSig` tableau.
+`pSig`
 
-`ppField`  
-[out] Retourne le type de tableau, tel que représenté par un [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) interface.
+ [in] Tableau à examiner.
+
+`dwSigLength`
+
+ [in] Longueur en octets de la `pSig` tableau.
+
+`ppField`
+
+ [out] Retourne le type de tableau, tel que représenté par un [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) interface.
 
 ## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
@@ -96,4 +98,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

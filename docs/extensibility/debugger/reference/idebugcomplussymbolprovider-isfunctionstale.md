@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::IsFunctionStale | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::IsFunctionStale
 ms.assetid: dcffc090-4ed8-47b2-ba51-bce1a6b6428d
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97e6cd6d3f44c294788289f50ea55cef966e2250
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: d17b6a6fc84a7e0d2787e93bb12345d8243bfd41
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412758"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717843"
 ---
 # <a name="idebugcomplussymbolproviderisfunctionstale"></a>IDebugComPlusSymbolProvider::IsFunctionStale
 Détermine si la fonction à l’adresse de débogage spécifié est considérée comme obsolète.
@@ -35,8 +35,9 @@ int IsFunctionStale(
 ```
 
 #### <a name="parameters"></a>Paramètres
-`pAddress`  
-[in] L’adresse de débogage qui est représenté par un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface. Cette adresse doit être un METHOD_ADDRESS.
+`pAddress`
+
+ [in] L’adresse de débogage qui est représenté par un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface. Cette adresse doit être un METHOD_ADDRESS.
 
 ## <a name="return-value"></a>Valeur de retour
 Si la fonction est considérée comme obsolète, retourne `S_OK`. Si la fonction n’est pas obsolète, retourne `S_FALSE`.
@@ -89,4 +90,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

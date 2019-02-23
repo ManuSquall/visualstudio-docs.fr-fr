@@ -12,21 +12,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4aefa1c4b3767ae58cb526c6f5a663350efd3137
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 66e7e227daa0dd58bf24ae946cce667992e09f90
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54922871"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56685025"
 ---
 # <a name="stepping-in-break-mode"></a>Exécution pas à pas en mode arrêt
-La section suivante décrit le processus qui se produit lorsque le débogueur est en mode arrêt et qu’il doit parcourir le code :  
-  
-## <a name="stepping-process"></a>Procédure pas à pas  
-  
-1.  Appelez [IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md) avec [STEPKIND](../../extensibility/debugger/reference/stepkind.md) et [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) arguments d’exécuter une étape.  
-  
-2.  Lorsque l’étape est terminée, envoyer un [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) comme un événement d’arrêt.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Appel des événements de débogueur](../../extensibility/debugger/calling-debugger-events.md)
+La section suivante décrit le processus qui se produit lorsque le débogueur est en mode arrêt et qu’il doit parcourir le code :
+
+## <a name="stepping-process"></a>Procédure pas à pas
+
+1.  Appelez [IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md) avec [STEPKIND](../../extensibility/debugger/reference/stepkind.md) et [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) arguments d’exécuter une étape.
+
+2.  Lorsque l’étape est terminée, envoyer un [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) comme un événement d’arrêt.
+
+## <a name="see-also"></a>Voir aussi
+- [Appel des événements de débogueur](../../extensibility/debugger/calling-debugger-events.md)
