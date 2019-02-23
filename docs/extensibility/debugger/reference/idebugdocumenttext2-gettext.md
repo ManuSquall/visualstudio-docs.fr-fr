@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentText2::GetText | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugDocumentText2::GetText
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 729b56b4161d6cfd38db91334427840d0c7339d8
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 3eb4eae82dd11d58734ed114886c9ec121b60b69
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449652"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678356"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
 Récupère le texte à partir de la position spécifiée dans le document.
@@ -43,17 +43,21 @@ int GetText(
 ```
 
 #### <a name="parameters"></a>Paramètres
-`pos`  
-[in] Un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) structure qui indique l’emplacement du texte à récupérer.
+`pos`
 
-`cMaxChars`  
-[in] Le nombre maximal de caractères du texte à récupérer.
+ [in] Un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) structure qui indique l’emplacement du texte à récupérer.
 
-`pText`  
-[in, out] Pointeur vers une mémoire tampon qui doit être rempli avec le texte souhaité. Cette mémoire tampon doit être en mesure de contenir au moins `cMaxChars` nombre de caractères larges.
+`cMaxChars`
 
-`pcNumChars`  
-[out] Retourne le nombre de caractères réellement récupérées.
+ [in] Le nombre maximal de caractères du texte à récupérer.
+
+`pText`
+
+ [in, out] Pointeur vers une mémoire tampon qui doit être rempli avec le texte souhaité. Cette mémoire tampon doit être en mesure de contenir au moins `cMaxChars` nombre de caractères larges.
+
+`pcNumChars`
+
+ [out] Retourne le nombre de caractères réellement récupérées.
 
 ## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
@@ -98,5 +102,5 @@ namespace Mynamespace
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)  
-[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)
+- [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)
+- [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

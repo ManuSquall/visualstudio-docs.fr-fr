@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentPosition2::GetFileName | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugDocumentPosition2::GetFileName
 helpviewer_keywords:
@@ -12,39 +12,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a4dc57357def20cffe89bf2300d0dffee88900a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8dc5e6ef5317e24e53215dad8f32bc95ee400762
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947931"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56697102"
 ---
 # <a name="idebugdocumentposition2getfilename"></a>IDebugDocumentPosition2::GetFileName
-Obtient le nom de fichier du fichier source qui contient la position du document.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT GetFileName(   
-   BSTR* pbstrFileName  
-);  
-```  
-  
-```csharp  
-int GetFileName(   
-   out string pbstrFileName  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pbstrFileName`  
- [out] Retourne le nom de fichier du fichier source.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="remarks"></a>Notes  
- Un fichier source peut-être pas toujours un nom de fichier (le fichier source ne peut pas exister sur le disque, par exemple).  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)
+Obtient le nom de fichier du fichier source qui contient la position du document.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT GetFileName( 
+   BSTR* pbstrFileName
+);
+```
+
+```csharp
+int GetFileName( 
+   out string pbstrFileName
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pbstrFileName`
+
+ [out] Retourne le nom de fichier du fichier source.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="remarks"></a>Notes
+ Un fichier source peut-être pas toujours un nom de fichier (le fichier source ne peut pas exister sur le disque, par exemple).
+
+## <a name="see-also"></a>Voir aussi
+- [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)

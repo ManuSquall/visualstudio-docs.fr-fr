@@ -1,7 +1,7 @@
 ---
 title: BP_RESOLUTION_LOCATION | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_RESOLUTION_LOCATION
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6f2449f1727ed31da97a80f0387e07f74e0c2a1
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 6637899e70262dc238b604ec64907eab1387baf9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317508"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696309"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 Spécifie la structure de l’emplacement de la résolution de point d’arrêt.
@@ -46,34 +46,41 @@ public struct BP_RESOLUTION_LOCATION {
 ```
 
 ## <a name="members"></a>Membres
-`bpType`  
-Une valeur comprise entre le [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) énumération qui spécifie comment interpréter les `bpResLocation` union ou `unionmemberX` membres.
+`bpType` Une valeur comprise entre le [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) énumération qui spécifie comment interpréter les `bpResLocation` union ou `unionmemberX` membres.
 
-`bpResLocation.bpresCode`  
-(C++ uniquement) Contient le [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) structure si `bpType`  =  `BPT_CODE`.
+`bpResLocation.bpresCode`
 
-`bpResLocation.bpresData`  
-(C++ uniquement) Contient le [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) structure si `bpType`  =  `BPT_DATA`.
+ (C++ uniquement) Contient le [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) structure si `bpType`  =  `BPT_CODE`.
 
-`bpResLocation.unused`  
-(C++ uniquement) Un espace réservé.
+`bpResLocation.bpresData`
 
-`unionmember1`  
-[C# uniquement] Consultez la section Notes sur l’interprétation.
+ (C++ uniquement) Contient le [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) structure si `bpType`  =  `BPT_DATA`.
 
-`unionmember2`  
-[C# uniquement] Consultez la section Notes sur l’interprétation.
+`bpResLocation.unused`
 
-`unionmember3`  
-[C# uniquement] Consultez la section Notes sur l’interprétation.
+ (C++ uniquement) Un espace réservé.
 
-`unionmember4`  
-[C# uniquement] Consultez la section Notes sur l’interprétation.
+`unionmember1`
+
+ [C# uniquement] Consultez la section Notes sur l’interprétation.
+
+`unionmember2`
+
+ [C# uniquement] Consultez la section Notes sur l’interprétation.
+
+`unionmember3`
+
+ [C# uniquement] Consultez la section Notes sur l’interprétation.
+
+`unionmember4`
+
+ [C# uniquement] Consultez la section Notes sur l’interprétation.
 
 ## <a name="remarks"></a>Notes
 Cette structure est un membre de la [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) et [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) structures.
 
-[C# uniquement] Le `unionmemberX` membres sont interprétées selon le tableau suivant. Rechercher vers le bas de la colonne de gauche pour le `bpType` valeur ensuite à travers à déterminer ce que chaque `unionmemberX` membre représente et marshaler le `unionmemberX` en conséquence. Consultez l’exemple d’une façon d’interpréter cette structure en c#.
+
+ [C# uniquement] Le `unionmemberX` membres sont interprétées selon le tableau suivant. Rechercher vers le bas de la colonne de gauche pour le `bpType` valeur ensuite à travers à déterminer ce que chaque `unionmemberX` membre représente et marshaler le `unionmemberX` en conséquence. Consultez l’exemple d’une façon d’interpréter cette structure en c#.
 
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|
 |----------------------|--------------------|--------------------|--------------------|--------------------|
@@ -118,10 +125,10 @@ Espace de noms : Microsoft.VisualStudio.Debugger.Interop
 Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
-[Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)  
-[BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)  
-[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)  
-[BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md)  
-[BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)  
-[BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md)
+- [Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)
+- [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)
+- [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)
+- [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md)
+- [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)
+- [BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md)

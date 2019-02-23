@@ -1,7 +1,7 @@
 ---
 title: DISASSEMBLY_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DISASSEMBLY_FLAGS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2ac3a43f64e4284cd14741acde390c930ffbb69
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 0c4602fa1b8d30e9119bb39e925cf7768ae1cbcf
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413278"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56682425"
 ---
 # <a name="disassemblyflags"></a>DISASSEMBLY_FLAGS
 Spécifie les indicateurs pour le code machine.
@@ -48,23 +48,17 @@ public enum enum_DISASSEMBLY_FLAGS {
 ```
 
 ## <a name="members"></a>Membres
-DF_DOCUMENTCHANGE  
-Indique que cette instruction est dans un autre document que le précédent.
+DF_DOCUMENTCHANGE indique que cette instruction est dans un autre document que le précédent.
 
-DF_DISABLED  
-Indique que cette instruction ne sera pas exécutée.
+DF_DISABLED indique que cette instruction ne sera pas exécutée.
 
-DF_INSTRUCTION_ACTIVE  
-Indique que cette instruction est une des instructions à exécuter suivantes (il peut en avoir plusieurs).
+DF_INSTRUCTION_ACTIVE indique que cette instruction est une des instructions à exécuter suivantes (il peut en avoir plusieurs).
 
-DF_DATA  
-Indique que cette instruction est réellement données (pas de code).
+DF_DATA indique que cette instruction est réellement données (pas de code).
 
-DF_HASSOURCE  
-Indique que cette instruction a source. Des instructions, tel que le code de collection de profilage ou garbage, n’ont aucune source correspondante.
+DF_HASSOURCE indique que la source de cette instruction. Des instructions, tel que le code de collection de profilage ou garbage, n’ont aucune source correspondante.
 
-DF_DOCUMENT_CHECKSUM  
-Indique que `bstrDocumentUrl` champ contient des données de la somme de contrôle après l’URL du document. Consultez la section Notes pour la [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) structure pour le stockage des données de la somme de contrôle.
+DF_DOCUMENT_CHECKSUM indique que `bstrDocumentUrl` champ contient des données de la somme de contrôle après l’URL du document. Consultez la section Notes pour la [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) structure pour le stockage des données de la somme de contrôle.
 
 ## <a name="remarks"></a>Notes
 Utilisé en tant que le `dwFlags` membre de la [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) structure.
@@ -79,5 +73,5 @@ Espace de noms : Microsoft.VisualStudio.Debugger.Interop
 Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
-[Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)
+- [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)

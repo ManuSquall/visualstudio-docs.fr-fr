@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c68ddea3f92c33056ba1dc98332755dfd3bb1b9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f354b31e3979aacdb55aba566a646616ddc4108e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921041"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688340"
 ---
 # <a name="create-your-first-extension-hello-world"></a>Créer votre première extension : Hello World
 
@@ -50,7 +50,11 @@ Avant de commencer, assurez-vous que vous avez installé le **développement d�
 
 Vous devez maintenant voir la page mise en route et certains exemples de ressources.
 
+::: moniker range="vs-2017"
+
 Si vous devez laisser ce didacticiel et revenir à ce dernier, vous pouvez trouver votre nouveau projet HelloWorld sur le **Page de démarrage** dans le **récents** section.
+
+::: moniker-end
 
 ## <a name="add-a-custom-command"></a>Ajouter une commande personnalisée
 
