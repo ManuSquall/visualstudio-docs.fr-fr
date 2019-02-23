@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a9e9d2792da6867c4e6a1734983f8977849c5d4f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 6773ae33ef8c4dbccda50681553b8410648e7400
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316013"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711356"
 ---
 # <a name="get-local-values"></a>Obtenir les valeurs locales
 > [!IMPORTANT]
@@ -439,6 +439,6 @@ HRESULT FieldGetValue( in IDebugField* pfield, out VARIANT* pvarValue )
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[Exemple d’implémentation des variables locales](../../extensibility/debugger/sample-implementation-of-locals.md)  
-[Obtenir les propriétés locales](../../extensibility/debugger/getting-local-properties.md)  
-[Contexte d’évaluation](../../extensibility/debugger/evaluation-context.md)
+- [Exemple d’implémentation des variables locales](../../extensibility/debugger/sample-implementation-of-locals.md)
+- [Obtenir les propriétés locales](../../extensibility/debugger/getting-local-properties.md)
+- [Contexte d’évaluation](../../extensibility/debugger/evaluation-context.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty3::GetStringChars | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProperty3::GetStringChars
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ce59e1fcbc9b219f1436bd09d4d947cd6995c0f
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 900238434f5671cd9a5ba1bd358304638551dbc5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450423"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698142"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 Récupère la chaîne associée à cette propriété et le stocke dans une mémoire tampon fournie par l’utilisateur.
@@ -41,16 +41,20 @@ int GetStringChars(
 ```
 
 #### <a name="parameters"></a>Paramètres
-`buflen`  
-[in] Nombre maximal de caractères de que la mémoire tampon fournie par l’utilisateur peut contenir.
+`buflen`
 
-`rgString`  
-[out] Retourne la chaîne.
+ [in] Nombre maximal de caractères de que la mémoire tampon fournie par l’utilisateur peut contenir.
 
-(C++ uniquement), `rgString` est un pointeur vers une mémoire tampon qui reçoit les caractères Unicode de la chaîne. Cette mémoire tampon doit être au moins `buflen` caractères (non en octets) la taille.
+`rgString`
 
-`pceltFetched`  
-[out] Où le nombre de caractères réellement stocké dans la mémoire tampon est retourné. (Peut être `NULL` en C++.)
+ [out] Retourne la chaîne.
+
+
+ (C++ uniquement), `rgString` est un pointeur vers une mémoire tampon qui reçoit les caractères Unicode de la chaîne. Cette mémoire tampon doit être au moins `buflen` caractères (non en octets) la taille.
+
+`pceltFetched`
+
+ [out] Où le nombre de caractères réellement stocké dans la mémoire tampon est retourné. (Peut être `NULL` en C++.)
 
 ## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
@@ -85,6 +89,6 @@ CStringW RetrievePropertyString(IDebugProperty2 *pPropInfo)
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[GetStringCharLength](../../../extensibility/debugger/reference/idebugproperty3-getstringcharlength.md)  
-[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)  
-[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
+- [GetStringCharLength](../../../extensibility/debugger/reference/idebugproperty3-getstringcharlength.md)
+- [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
+- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

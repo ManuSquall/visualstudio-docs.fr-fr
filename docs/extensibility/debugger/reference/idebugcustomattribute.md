@@ -1,7 +1,7 @@
 ---
 title: IDebugCustomAttribute | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugCustomAttribute
 helpviewer_keywords:
@@ -12,50 +12,50 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b424ab73861a5875554d8c6a658c1f1b4bc72035
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 338f07f26bf4d0471fbf178a369a085d5ef76a08
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963201"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56679084"
 ---
 # <a name="idebugcustomattribute"></a>IDebugCustomAttribute
-Cette interface représente un attribut personnalisé, et il peut fournir le nom, le parent et le type de classe de l’attribut.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```  
-IDebugCustomAttribute : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs  
- Un fournisseur de symboles implémente cette interface pour prendre en charge les attributs personnalisés associés à un symbole. Elle est généralement implémentée sur son propre objet.  
-  
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
- Un appel à [suivant](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md) retourne cette interface. Un appel à la [EnumCustomAttributes](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md) méthode retourne le [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) interface.  
-  
-## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
- Le tableau suivant présente les méthodes de `IDebugCustomAttribute`.  
-  
-|Méthode|Description|  
-|------------|-----------------|  
-|[GetParentField](../../../extensibility/debugger/reference/idebugcustomattribute-getparentfield.md)|Obtient le champ auquel l’attribut actuel est attaché.|  
-|[GetAttributeTypeField](../../../extensibility/debugger/reference/idebugcustomattribute-getattributetypefield.md)|Obtient le type de classe d’attribut personnalisé.|  
-|[GetName](../../../extensibility/debugger/reference/idebugcustomattribute-getname.md)|Obtient le nom de l’attribut personnalisé.|  
-|[GetAttributeBytes](../../../extensibility/debugger/reference/idebugcustomattribute-getattributebytes.md)|Obtient les informations d’attribut comme un objet blob d’octets.|  
-  
-## <a name="remarks"></a>Notes  
- Un attribut personnalisé est une structure en c# qui fournit des métadonnées personnalisées associées à une classe particulière ou une méthode.  
-  
-## <a name="requirements"></a>Spécifications  
- En-tête : sh.h  
-  
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
-  
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Voir aussi  
- [Interfaces de fournisseur de symboles](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
- [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)   
- [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)
+Cette interface représente un attribut personnalisé, et il peut fournir le nom, le parent et le type de classe de l’attribut.
+
+## <a name="syntax"></a>Syntaxe
+
+```
+IDebugCustomAttribute : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs
+ Un fournisseur de symboles implémente cette interface pour prendre en charge les attributs personnalisés associés à un symbole. Elle est généralement implémentée sur son propre objet.
+
+## <a name="notes-for-callers"></a>Notes de publication pour les appelants
+ Un appel à [suivant](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md) retourne cette interface. Un appel à la [EnumCustomAttributes](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md) méthode retourne le [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) interface.
+
+## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
+ Le tableau suivant présente les méthodes de `IDebugCustomAttribute`.
+
+|Méthode|Description|
+|------------|-----------------|
+|[GetParentField](../../../extensibility/debugger/reference/idebugcustomattribute-getparentfield.md)|Obtient le champ auquel l’attribut actuel est attaché.|
+|[GetAttributeTypeField](../../../extensibility/debugger/reference/idebugcustomattribute-getattributetypefield.md)|Obtient le type de classe d’attribut personnalisé.|
+|[GetName](../../../extensibility/debugger/reference/idebugcustomattribute-getname.md)|Obtient le nom de l’attribut personnalisé.|
+|[GetAttributeBytes](../../../extensibility/debugger/reference/idebugcustomattribute-getattributebytes.md)|Obtient les informations d’attribut comme un objet blob d’octets.|
+
+## <a name="remarks"></a>Notes
+ Un attribut personnalisé est une structure en c# qui fournit des métadonnées personnalisées associées à une classe particulière ou une méthode.
+
+## <a name="requirements"></a>Spécifications
+ En-tête : sh.h
+
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Voir aussi
+- [Symbol Provider Interfaces](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
+- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
+- [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)
+- [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)
