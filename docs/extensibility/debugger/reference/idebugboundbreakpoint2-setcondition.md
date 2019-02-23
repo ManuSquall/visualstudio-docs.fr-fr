@@ -1,7 +1,7 @@
 ---
 title: IDebugBoundBreakpoint2::SetCondition | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugBoundBreakpoint2::SetCondition
 helpviewer_keywords:
@@ -13,41 +13,42 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dac748f78428b49e17fe350e74147b62ebd64ea6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1dcec65b22c728384fb199eecf461ec61317e348
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023900"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691681"
 ---
 # <a name="idebugboundbreakpoint2setcondition"></a>IDebugBoundBreakpoint2::SetCondition
-Définit ou modifie la condition associée à ce point d’arrêt lié.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT SetCondition(   
-   BP_CONDITION bpCondition  
-);  
-```  
-  
-```csharp  
-int SetCondition(   
-   enum_BP_CONDITION bpCondition  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `bpCondition`  
- [in] Une valeur comprise entre le [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) énumération qui décrit la condition.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_BP_DELETED` si l’état de l’objet de point d’arrêt lié est défini sur `BPS_DELETED` (dans le cadre de la [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) énumération).  
-  
-## <a name="remarks"></a>Notes  
- Toute condition qui a été précédemment associée à ce point d’arrêt est perdue.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
- [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)   
- [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)
+Définit ou modifie la condition associée à ce point d’arrêt lié.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT SetCondition( 
+   BP_CONDITION bpCondition
+);
+```
+
+```csharp
+int SetCondition( 
+   enum_BP_CONDITION bpCondition
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `bpCondition`
+
+ [in] Une valeur comprise entre le [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) énumération qui décrit la condition.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_BP_DELETED` si l’état de l’objet de point d’arrêt lié est défini sur `BPS_DELETED` (dans le cadre de la [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) énumération).
+
+## <a name="remarks"></a>Notes
+ Toute condition qui a été précédemment associée à ce point d’arrêt est perdue.
+
+## <a name="see-also"></a>Voir aussi
+- [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
+- [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)
+- [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

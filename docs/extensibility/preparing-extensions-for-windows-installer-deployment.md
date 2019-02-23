@@ -10,50 +10,50 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61319e723083e2f3daf91621ec46723fcb28f3ba
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2f37ed2819e1c5999c7d225e52f652ebef3bd7da
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54938092"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692110"
 ---
 # <a name="prepare-extensions-for-windows-installer-deployment"></a>Préparer des extensions pour le déploiement Windows Installer
-Vous ne pouvez pas utiliser un package Windows Installer (MSI) pour déployer un package VSIX. Toutefois, vous pouvez extraire le contenu d’un package VSIX pour le déploiement du MSI. Ce document montre comment préparer un projet dont la sortie par défaut est un package VSIX pour l’inclusion dans un projet d’installation.  
-  
-## <a name="prepare-an-extension-project-for-windows-installer-deployment"></a>Préparer un projet d’extension pour le déploiement Windows Installer  
- Effectuez ces étapes sur les nouveaux projets d’extension avant d’ajouter à un projet d’installation.  
-  
-### <a name="to-prepare-an-extension-project-for-windows-installer-deployment"></a>Pour préparer un projet d’extension pour le déploiement Windows Installer  
-  
-1.  Créer un VSPackage, composant MEF, éditeur ornement ou autre type de projet d’extensibilité qui inclut un manifeste VSIX.  
-  
-2.  Ouvrez le manifeste VSIX dans l’éditeur de code.  
-  
-3.  Définir le `InstalledByMsi` élément du manifeste VSIX pour `true`. Pour plus d’informations sur le manifeste VSIX, consultez [référence de schéma 2.0 d’extension VSIX](../extensibility/vsix-extension-schema-2-0-reference.md).  
-  
-     Cela empêche le programme d’installation VSIX installer le composant.  
-  
-4.  Cliquez sur le projet dans **l’Explorateur de solutions** et cliquez sur **propriétés**.  
-  
-5.  Sélectionnez le **VSIX** onglet.  
-  
-6.  Cochez la case intitulée **contenu VSIX de copie à l’emplacement suivant** et tapez le chemin d’accès où le projet d’installation collectera les fichiers.  
-  
-## <a name="extract-files-from-an-existing-vsix-package"></a>Extrayez les fichiers à partir d’un package VSIX existant  
- Suivez ces étapes pour ajouter le contenu d’un package VSIX existant à un projet d’installation lorsque vous n’avez pas les fichiers sources.  
-  
-### <a name="to-extract-files-from-an-existing-vsix-package"></a>Pour extraire les fichiers à partir d’un package VSIX existant  
-  
-1.  Renommer le *. VSIX* fichier contenant l’extension à partir de *filename.vsix* à *filename.zip*.  
-  
-2.  Copiez le contenu de la *.zip* fichier dans un répertoire.  
-  
-3.  Supprimer le *[Content_types] .xml* fichier à partir du répertoire.  
-  
-4.  Modifier le manifeste VSIX, comme indiqué dans la procédure précédente.  
-  
-5.  Ajouter les fichiers restants à votre projet d’installation.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Déploiement de programme d’installation de Visual Studio](https://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0)   
- [Procédure pas à pas : Créer une action personnalisée](/previous-versions/visualstudio/visual-studio-2010/d9k65z2d(v=vs.100))
+Vous ne pouvez pas utiliser un package Windows Installer (MSI) pour déployer un package VSIX. Toutefois, vous pouvez extraire le contenu d’un package VSIX pour le déploiement du MSI. Ce document montre comment préparer un projet dont la sortie par défaut est un package VSIX pour l’inclusion dans un projet d’installation.
+
+## <a name="prepare-an-extension-project-for-windows-installer-deployment"></a>Préparer un projet d’extension pour le déploiement Windows Installer
+ Effectuez ces étapes sur les nouveaux projets d’extension avant d’ajouter à un projet d’installation.
+
+### <a name="to-prepare-an-extension-project-for-windows-installer-deployment"></a>Pour préparer un projet d’extension pour le déploiement Windows Installer
+
+1.  Créer un VSPackage, composant MEF, éditeur ornement ou autre type de projet d’extensibilité qui inclut un manifeste VSIX.
+
+2.  Ouvrez le manifeste VSIX dans l’éditeur de code.
+
+3.  Définir le `InstalledByMsi` élément du manifeste VSIX pour `true`. Pour plus d’informations sur le manifeste VSIX, consultez [référence de schéma 2.0 d’extension VSIX](../extensibility/vsix-extension-schema-2-0-reference.md).
+
+     Cela empêche le programme d’installation VSIX installer le composant.
+
+4.  Cliquez sur le projet dans **l’Explorateur de solutions** et cliquez sur **propriétés**.
+
+5.  Sélectionnez le **VSIX** onglet.
+
+6.  Cochez la case intitulée **contenu VSIX de copie à l’emplacement suivant** et tapez le chemin d’accès où le projet d’installation collectera les fichiers.
+
+## <a name="extract-files-from-an-existing-vsix-package"></a>Extrayez les fichiers à partir d’un package VSIX existant
+ Suivez ces étapes pour ajouter le contenu d’un package VSIX existant à un projet d’installation lorsque vous n’avez pas les fichiers sources.
+
+### <a name="to-extract-files-from-an-existing-vsix-package"></a>Pour extraire les fichiers à partir d’un package VSIX existant
+
+1.  Renommer le *. VSIX* fichier contenant l’extension à partir de *filename.vsix* à *filename.zip*.
+
+2.  Copiez le contenu de la *.zip* fichier dans un répertoire.
+
+3.  Supprimer le *[Content_types] .xml* fichier à partir du répertoire.
+
+4.  Modifier le manifeste VSIX, comme indiqué dans la procédure précédente.
+
+5.  Ajouter les fichiers restants à votre projet d’installation.
+
+## <a name="see-also"></a>Voir aussi
+- [Déploiement de programme d’installation de Visual Studio](https://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0)
+- [Procédure pas à pas : Créer une action personnalisée](/previous-versions/visualstudio/visual-studio-2010/d9k65z2d(v=vs.100))

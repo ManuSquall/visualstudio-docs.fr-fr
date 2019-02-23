@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91db654370cb9a186484c0fd61688bcb25af4ba1
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 462f59d472c6de8872394b2eadd5f33aa27bccca
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316180"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710082"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Ajouter qu'une liste à un sous-menu utilisés récemment
 Cette procédure pas à pas s’appuie sur des démonstrations de [ajouter un sous-menu à un menu](../extensibility/adding-a-submenu-to-a-menu.md)et montre comment ajouter une liste dynamique à un sous-menu. La liste dynamique constitue la base pour la création d’une liste plus récemment utilisés (MRU).
@@ -202,4 +202,4 @@ Pour suivre cette procédure pas à pas, vous devez installer le Kit de dévelop
 4. Ouvrez le sous-menu à nouveau. Notez que **élément 3** est maintenant en haut de la liste et les autres éléments ont été déplacées vers le bas une position. Cliquez sur **élément 3** à nouveau et notez que la boîte de message affiche toujours **sélectionné élément 3**, ce qui indique que le texte a été déplacé correctement vers la nouvelle position avec l’étiquette de la commande.
 
 ## <a name="see-also"></a>Voir aussi
-[Ajout dynamique d’éléments de menu](../extensibility/dynamically-adding-menu-items.md)
+- [Ajout dynamique d’éléments de menu](../extensibility/dynamically-adding-menu-items.md)

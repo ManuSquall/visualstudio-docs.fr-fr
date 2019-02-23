@@ -11,63 +11,63 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95308f286506aa9e032e3923bbff23c90d464d48
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 73e48cfb0a30ca71592879c8276ef1be76cb973f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070667"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680294"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>Attributs conditionnels du schéma XML VSCT
-Vous pouvez appliquer des attributs conditionnels pour toutes les listes et les éléments. Opérateurs logiques et les expressions d’expansion symbole équivalente à true ou false. Si la valeur est true, la liste associée ou l’élément est inclus dans la sortie résultante.  
-  
- Vous pouvez tester les expansions de jeton par rapport à d’autres extensions de jeton ou des constantes. La fonction `Defined()` teste si un nom particulier a été défini, même si elle n’a aucune valeur.  
-  
- Lorsqu’un attribut Condition est appliqué à une liste, la condition est appliquée à chaque élément enfant dans la liste. Si un élément enfant lui-même contient un attribut de Condition, sa condition est combinée avec l’expression parent par une opération AND.  
-  
- Les valeurs 1, « 1 » et « trues » sont évaluées comme true et 0, '0' et 'false' sont évaluées comme false.  
-  
-## <a name="operators"></a>Opérateurs  
- Utilisez les opérateurs suivants pour évaluer des expressions conditionnelles.  
-  
-|Opérateur|Définition|  
-|--------------|----------------|  
-|(,)|Regroupement|  
-|!|Opérateur NOT logique|  
-|\<, >, \<=, >=, ==, !=|Opérateurs relationnels et opérateurs d'égalité|  
-|et|Booléen|  
-|ou|Booléen|  
-  
-## <a name="examples"></a>Exemples  
-  
-```xml  
-<Menu Condition="Defined(DEBUG)" ...  
-</Menu>  
-  
-<Menu Condition="%(SKU_MODE) = 'Demo'" ...  
-</Menu>  
-  
-<Menus Condition="Defined(DEBUG)">  
-    <Menu ...  
-    </Menu>  
-</Menus>  
-  
-<Menus Condition="Defined(DEMO_SKU)">  
-    <Menus Condition="!Defined(DEBUG)">  
-        <Menu ...  
-        </Menu>  
-    </Menus>  
-  
-    <Menu ...  
-    </Menu>  
-</Menus>  
-  
-<Menus Condition="(Defined(DEMO_SKU) or Defined(SAMPLE_SKU))   
-and !Defined(DEBUG)">  
-    <Menu ...  
-    </Menu>  
-</Menus>  
-```  
-  
-## <a name="see-also"></a>Voir aussi  
- [Table de commande Visual Studio (. Fichiers VSCT)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+Vous pouvez appliquer des attributs conditionnels pour toutes les listes et les éléments. Opérateurs logiques et les expressions d’expansion symbole équivalente à true ou false. Si la valeur est true, la liste associée ou l’élément est inclus dans la sortie résultante.
+
+ Vous pouvez tester les expansions de jeton par rapport à d’autres extensions de jeton ou des constantes. La fonction `Defined()` teste si un nom particulier a été défini, même si elle n’a aucune valeur.
+
+ Lorsqu’un attribut Condition est appliqué à une liste, la condition est appliquée à chaque élément enfant dans la liste. Si un élément enfant lui-même contient un attribut de Condition, sa condition est combinée avec l’expression parent par une opération AND.
+
+ Les valeurs 1, « 1 » et « trues » sont évaluées comme true et 0, '0' et 'false' sont évaluées comme false.
+
+## <a name="operators"></a>Opérateurs
+ Utilisez les opérateurs suivants pour évaluer des expressions conditionnelles.
+
+|Opérateur|Définition|
+|--------------|----------------|
+|(,)|Regroupement|
+|!|Opérateur NOT logique|
+|\<, >, \<=, >=, ==, !=|Opérateurs relationnels et opérateurs d'égalité|
+|et|Booléen|
+|ou|Booléen|
+
+## <a name="examples"></a>Exemples
+
+```xml
+<Menu Condition="Defined(DEBUG)" ...
+</Menu>
+
+<Menu Condition="%(SKU_MODE) = 'Demo'" ...
+</Menu>
+
+<Menus Condition="Defined(DEBUG)">
+    <Menu ...
+    </Menu>
+</Menus>
+
+<Menus Condition="Defined(DEMO_SKU)">
+    <Menus Condition="!Defined(DEBUG)">
+        <Menu ...
+        </Menu>
+    </Menus>
+
+    <Menu ...
+    </Menu>
+</Menus>
+
+<Menus Condition="(Defined(DEMO_SKU) or Defined(SAMPLE_SKU))
+and !Defined(DEBUG)">
+    <Menu ...
+    </Menu>
+</Menus>
+```
+
+## <a name="see-also"></a>Voir aussi
+- [Table de commande Visual Studio (. Fichiers VSCT)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

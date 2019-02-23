@@ -11,24 +11,24 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea7b54d8a27f061c1ef5d023f309ddab8295db90
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f2e5b50a3f2969f8f22ce938522526a6010c640a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54989599"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691382"
 ---
 # <a name="servers-visual-studio-sdk"></a>Serveurs (SDK Visual Studio)
-Dans l’architecture du débogueur, une *server*:  
-  
--   Est un conteneur de ports et les fournisseurs de port et communique les ports et les fournisseurs de port pour le Gestionnaire de session de débogage (SDM) et les moteurs de débogage.  
-  
--   Peut s’identifier par son nom et énumérer ses ports et les fournisseurs de port.  
-  
--   Est représenté par un [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) interface, qui est implémentée uniquement par Visual Studio (une seule instance d’un serveur pour chaque instance en cours d’exécution de Visual Studio).  
-  
-## <a name="see-also"></a>Voir aussi  
- [Ports](../../extensibility/debugger/ports.md)   
- [Fournisseurs de port](../../extensibility/debugger/port-suppliers.md)   
- [Concepts du débogueur](../../extensibility/debugger/debugger-concepts.md)   
- [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md)
+Dans l’architecture du débogueur, une *server*:
+
+-   Est un conteneur de ports et les fournisseurs de port et communique les ports et les fournisseurs de port pour le Gestionnaire de session de débogage (SDM) et les moteurs de débogage.
+
+-   Peut s’identifier par son nom et énumérer ses ports et les fournisseurs de port.
+
+-   Est représenté par un [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) interface, qui est implémentée uniquement par Visual Studio (une seule instance d’un serveur pour chaque instance en cours d’exécution de Visual Studio).
+
+## <a name="see-also"></a>Voir aussi
+- [Ports](../../extensibility/debugger/ports.md)
+- [Fournisseurs de port](../../extensibility/debugger/port-suppliers.md)
+- [Concepts du débogueur](../../extensibility/debugger/debugger-concepts.md)
+- [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md)

@@ -1,7 +1,7 @@
 ---
 title: GUID_ARRAY | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - GUID_ARRAY structure
 ms.assetid: 9e12500c-2c1c-49b1-a0ba-e08366c97eb8
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3aa33d8cef230d07c9b5f7cd3bd11a538fa651a
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: eed39ee4446e66e1e7b1700d97ad680eb62c2523
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315519"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56704967"
 ---
 # <a name="guidarray"></a>GUID_ARRAY
 Décrit un tableau d’identificateurs uniques pour les moteurs de débogage disponibles.
@@ -39,11 +39,9 @@ public struct GUID_ARRAY
 ```
 
 ## <a name="terms"></a>Termes
-dwCount  
-Nombre d’identificateurs uniques dans le tableau.
+dwCount nombre d’identificateurs uniques dans le tableau.
 
-Membres  
-Tableau qui contient des identificateurs uniques.
+Tableau de membres qui contient des identificateurs uniques.
 
 ## <a name="remarks"></a>Notes
 Cette structure est retournée par la [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md) (méthode).
@@ -56,5 +54,5 @@ Espace de noms : Microsoft.VisualStudio.Debugger.Interop
 Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
-[Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)
+- [Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)
