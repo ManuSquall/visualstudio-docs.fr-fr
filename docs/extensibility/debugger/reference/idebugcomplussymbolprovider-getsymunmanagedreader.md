@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetSymUnmanagedReader | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetSymUnmanagedReader
 - GetSymUnmanagedReader
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc45a9ba956d563e40292ec9a113217c46129f5d
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 3651b48217274f1b408c10831f78daa245ff1471
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412641"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701288"
 ---
 # <a name="idebugcomplussymbolprovidergetsymunmanagedreader"></a>IDebugComPlusSymbolProvider::GetSymUnmanagedReader
 Récupère le lecteur de symboles à utiliser par le code non managé.
@@ -40,14 +40,17 @@ int GetSymUnmanagedReader(
 ```
 
 #### <a name="parameters"></a>Paramètres
-`ulAppDomainID`  
-[in] Identificateur du domaine d’application.
+`ulAppDomainID`
 
-`guidModule`  
-[in] Identificateur unique du module.
+ [in] Identificateur du domaine d’application.
 
-`ppSymUnmanagedReader`  
-[out] Retourne l’objet qui représente le lecteur de symboles.
+`guidModule`
+
+ [in] Identificateur unique du module.
+
+`ppSymUnmanagedReader`
+
+ [out] Retourne l’objet qui représente le lecteur de symboles.
 
 ## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
@@ -79,4 +82,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
