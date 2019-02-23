@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a955331e4f6bfc0f50be3dfb60fba4cd211b987
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aebd1cbd46eeaf80d165140dc58c5e81a0e02b91
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54974147"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695370"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Procédure pas à pas : Publication d’une extension de Visual Studio via la ligne de commande
 
@@ -34,7 +34,7 @@ Publie une extension à la place de marché. L’extension peut être une extens
 |---------|---------|
 |charge utile (obligatoire) | Soit un chemin d’accès à la charge utile de publier ou d’un lien à utiliser comme la « URL informations ». |
 |publishManifest (required) | Chemin d’accès à la publication manifeste de fichier à utiliser. |
-|ignoreWarnings | Liste d’avertissements à ignorer lors de la publication d’une extension. Ces avertissements sont affichés sous forme de messages de la ligne de commande lors de la publication d’une extension. (par exemple, « VSIXValidatorWarning01, VSIXValidatorWarning02 »)  
+|ignoreWarnings | Liste d’avertissements à ignorer lors de la publication d’une extension. Ces avertissements sont affichés sous forme de messages de la ligne de commande lors de la publication d’une extension. (par exemple, « VSIXValidatorWarning01, VSIXValidatorWarning02 »)
 |personalAccessToken | Accès jeton (personnel) qui est utilisé pour authentifier le serveur de publication. Si n’est fourni, le jeton d’accès personnel est acquis auprès des utilisateurs connectés. |
 
 ```

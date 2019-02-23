@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugReferenceInfo2::Skip | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IEnumDebugReferenceInfo2::Skip
 helpviewer_keywords:
@@ -12,39 +12,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c87e544cb3cbc1bb1b8b68edd05a85ef885d3ea
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 45eb5737143c26467e7f0e8a9f1dcd48519001a3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54991890"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692370"
 ---
 # <a name="ienumdebugreferenceinfo2skip"></a>IEnumDebugReferenceInfo2::Skip
-Ignore le nombre spécifié d’éléments.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT Skip(  
-   ULONG celt  
-);  
-```  
-  
-```csharp  
-int Skip(  
-   uint celt  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `celt`  
- [in] Nombre d’éléments à ignorer.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si `celt` est supérieur au nombre d’éléments restants ; sinon, retourne un code d’erreur.  
-  
-## <a name="remarks"></a>Notes  
- Si `celt` spécifie une valeur supérieure au nombre d’éléments restants, l’énumération est définie à la fin et `S_FALSE` est retourné.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)
+Ignore le nombre spécifié d’éléments.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT Skip(
+   ULONG celt
+);
+```
+
+```csharp
+int Skip(
+   uint celt
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `celt`
+
+ [in] Nombre d’éléments à ignorer.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si `celt` est supérieur au nombre d’éléments restants ; sinon, retourne un code d’erreur.
+
+## <a name="remarks"></a>Notes
+ Si `celt` spécifie une valeur supérieure au nombre d’éléments restants, l’énumération est définie à la fin et `S_FALSE` est retourné.
+
+## <a name="see-also"></a>Voir aussi
+- [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)

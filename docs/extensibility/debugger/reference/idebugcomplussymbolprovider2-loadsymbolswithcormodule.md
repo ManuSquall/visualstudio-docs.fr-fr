@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
 - LoadSymbolsWithCorModule
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43975e96e4760bfd2299f6cda4ab62f44a0bd13b
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: ba458d72fe12ce402129f60059347cb28b102686
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413122"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56682178"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolswithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
 Compte tenus des symboles de débogage de charges le **ICorDebugModule** objet.
@@ -48,26 +48,33 @@ int LoadSymbolsWithCorModule(
 ```
 
 #### <a name="parameters"></a>Paramètres
-`ulAppDomainID`  
-[in] Identificateur du domaine d’application.
+`ulAppDomainID`
 
-`guidModule`  
-[in] Identificateur unique du module.
+ [in] Identificateur du domaine d’application.
 
-`baseAddress`  
-[in] Adresse mémoire de base.
+`guidModule`
 
-`pUnkMetadataImport`  
-[in] Objet qui contient les métadonnées de symboles de débogage.
+ [in] Identificateur unique du module.
 
-`pUnkCorDebugModule`  
-[in] Objet qui implémente le [ICorDebugModule (Interface)](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
+`baseAddress`
 
-`bstrModuleName`  
-[in] Nom du module.
+ [in] Adresse mémoire de base.
 
-`bstrSymSearchPath`  
-[in] Chemin d’accès pour rechercher le fichier de symboles.
+`pUnkMetadataImport`
+
+ [in] Objet qui contient les métadonnées de symboles de débogage.
+
+`pUnkCorDebugModule`
+
+ [in] Objet qui implémente le [ICorDebugModule (Interface)](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
+
+`bstrModuleName`
+
+ [in] Nom du module.
+
+`bstrSymSearchPath`
+
+ [in] Chemin d’accès pour rechercher le fichier de symboles.
 
 ## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
@@ -168,4 +175,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
+- [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

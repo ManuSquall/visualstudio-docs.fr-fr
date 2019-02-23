@@ -1,7 +1,7 @@
 ---
 title: IDebugStackFrame2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugStackFrame2
 helpviewer_keywords:
@@ -12,53 +12,53 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d534c5616bd32011fb4e84367911b9a8c1b29ab
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ce4112addee78c4df293bf49e1cb191e4bbcd18b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54986941"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703937"
 ---
 # <a name="idebugstackframe2"></a>IDebugStackFrame2
-Cette interface représente un frame de pile dans une pile des appels dans un thread particulier.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```  
-IDebugStackFrame2 : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs  
- Le moteur de débogage (dé) implémente cette interface pour représenter un frame de pile.  
-  
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
- Appelez [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) pour récupérer un [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interface. Appelez [suivant](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md) pour récupérer un [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) structure qui contient le `IDebugStackFrame2` interface.  
-  
-## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
- Le tableau suivant présente les méthodes de `IDebugStackFrame2`.  
-  
-|Méthode|Description|  
-|------------|-----------------|  
-|[GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)|Obtient le contexte de code pour ce frame de pile.|  
-|[GetDocumentContext](../../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)|Obtient le contexte de document pour ce frame de pile.|  
-|[GetName](../../../extensibility/debugger/reference/idebugstackframe2-getname.md)|Obtient le nom du frame de pile.|  
-|[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)|Obtient une description du frame de pile.|  
-|[GetPhysicalStackRange](../../../extensibility/debugger/reference/idebugstackframe2-getphysicalstackrange.md)|Obtient une représentation sous forme de dépendantes de l’ordinateur de la plage d’adresses physiques associés à un frame de pile.|  
-|[GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)|Obtient un contexte d’évaluation qui permet d’effectuer l’évaluation de l’expression dans le contexte actuel d’un frame de pile et le thread.|  
-|[GetLanguageInfo](../../../extensibility/debugger/reference/idebugstackframe2-getlanguageinfo.md)|Obtient la langue associée à un frame de pile.|  
-|[GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)|Obtient une description des propriétés associées à un frame de pile.|  
-|[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)|Crée un énumérateur pour la pile de propriétés du cadre.|  
-|[GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md)|Obtient le thread associé à un frame de pile.|  
-  
-## <a name="remarks"></a>Notes  
- Cette interface est obtenue uniquement lorsque le programme en cours de débogage a été arrêté à un point d’arrêt (soit provoqué par un point d’arrêt défini par l’utilisateur ou une exception). À partir de cette interface, un contexte de l’expression peut être obtenu pour évaluer des expressions, une liste de registres peut être retournée ou la pile des appels peut être obtenue et examinée.  
-  
-## <a name="requirements"></a>Spécifications  
- En-tête : msdbg.h  
-  
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
-  
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Voir aussi  
- [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)
+Cette interface représente un frame de pile dans une pile des appels dans un thread particulier.
+
+## <a name="syntax"></a>Syntaxe
+
+```
+IDebugStackFrame2 : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs
+ Le moteur de débogage (dé) implémente cette interface pour représenter un frame de pile.
+
+## <a name="notes-for-callers"></a>Notes de publication pour les appelants
+ Appelez [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) pour récupérer un [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interface. Appelez [suivant](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md) pour récupérer un [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) structure qui contient le `IDebugStackFrame2` interface.
+
+## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
+ Le tableau suivant présente les méthodes de `IDebugStackFrame2`.
+
+|Méthode|Description|
+|------------|-----------------|
+|[GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)|Obtient le contexte de code pour ce frame de pile.|
+|[GetDocumentContext](../../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)|Obtient le contexte de document pour ce frame de pile.|
+|[GetName](../../../extensibility/debugger/reference/idebugstackframe2-getname.md)|Obtient le nom du frame de pile.|
+|[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)|Obtient une description du frame de pile.|
+|[GetPhysicalStackRange](../../../extensibility/debugger/reference/idebugstackframe2-getphysicalstackrange.md)|Obtient une représentation sous forme de dépendantes de l’ordinateur de la plage d’adresses physiques associés à un frame de pile.|
+|[GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)|Obtient un contexte d’évaluation qui permet d’effectuer l’évaluation de l’expression dans le contexte actuel d’un frame de pile et le thread.|
+|[GetLanguageInfo](../../../extensibility/debugger/reference/idebugstackframe2-getlanguageinfo.md)|Obtient la langue associée à un frame de pile.|
+|[GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)|Obtient une description des propriétés associées à un frame de pile.|
+|[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)|Crée un énumérateur pour la pile de propriétés du cadre.|
+|[GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md)|Obtient le thread associé à un frame de pile.|
+
+## <a name="remarks"></a>Notes
+ Cette interface est obtenue uniquement lorsque le programme en cours de débogage a été arrêté à un point d’arrêt (soit provoqué par un point d’arrêt défini par l’utilisateur ou une exception). À partir de cette interface, un contexte de l’expression peut être obtenu pour évaluer des expressions, une liste de registres peut être retournée ou la pile des appels peut être obtenue et examinée.
+
+## <a name="requirements"></a>Spécifications
+ En-tête : msdbg.h
+
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Voir aussi
+- [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)

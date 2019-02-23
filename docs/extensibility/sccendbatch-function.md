@@ -12,36 +12,36 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fdc86d9b93d25a758e5321832b6bd4d98c171147
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e0662e4c4d1d71e2c9ae0e8f40ff21868d6b9a5d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982375"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683920"
 ---
 # <a name="sccendbatch-function"></a>Fonction SccEndBatch
-Cette fonction termine un lot d’opérations de contrôle de code source. Ces lots ne peuvent pas être imbriqués.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-SCCRTN SccEndBatch(void);  
-```  
-  
-## <a name="parameters"></a>Paramètres  
- Aucun.  
-  
-## <a name="return-value"></a>Valeur de retour  
- L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  
-  
-|Value|Description|  
-|-----------|-----------------|  
-|SCC_OK|Lot d’opérations conclu avec succès.|  
-|SCC_E_UNKNOWNERROR|Erreur non spécifique.|  
-  
-## <a name="remarks"></a>Notes  
- Lots de contrôle source sont utilisés pour exécuter les mêmes opérations de contrôle de source entre plusieurs projets ou de plusieurs contextes. Lots peuvent être utilisés pour éliminer les boîtes de dialogue redondante à partir de l’expérience utilisateur lors d’une opération par lot. Le [SccBeginBatch](../extensibility/sccbeginbatch-function.md) et `SccEndBatch` (fonction) sont utilisés en tant que paire pour indiquer le début et la fin d’une opération. Ils ne peuvent pas être imbriquées.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Fonctions d’API source contrôle plug-in](../extensibility/source-control-plug-in-api-functions.md)   
- [SccBeginBatch](../extensibility/sccbeginbatch-function.md)
+Cette fonction termine un lot d’opérations de contrôle de code source. Ces lots ne peuvent pas être imbriqués.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+SCCRTN SccEndBatch(void);
+```
+
+## <a name="parameters"></a>Paramètres
+ Aucun.
+
+## <a name="return-value"></a>Valeur de retour
+ L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :
+
+|Value|Description|
+|-----------|-----------------|
+|SCC_OK|Lot d’opérations conclu avec succès.|
+|SCC_E_UNKNOWNERROR|Erreur non spécifique.|
+
+## <a name="remarks"></a>Notes
+ Lots de contrôle source sont utilisés pour exécuter les mêmes opérations de contrôle de source entre plusieurs projets ou de plusieurs contextes. Lots peuvent être utilisés pour éliminer les boîtes de dialogue redondante à partir de l’expérience utilisateur lors d’une opération par lot. Le [SccBeginBatch](../extensibility/sccbeginbatch-function.md) et `SccEndBatch` (fonction) sont utilisés en tant que paire pour indiquer le début et la fin d’une opération. Ils ne peuvent pas être imbriquées.
+
+## <a name="see-also"></a>Voir aussi
+- [Fonctions d’API source contrôle plug-in](../extensibility/source-control-plug-in-api-functions.md)
+- [SccBeginBatch](../extensibility/sccbeginbatch-function.md)

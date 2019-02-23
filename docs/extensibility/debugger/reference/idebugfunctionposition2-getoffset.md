@@ -1,7 +1,7 @@
 ---
 title: IDebugFunctionPosition2::GetOffset | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugFunctionPosition2::GetOffset
 helpviewer_keywords:
@@ -12,37 +12,38 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c863260ccbdd734f0a651cb3eb8c5e48fbffb4e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 705bda0fa8d9795b93d4633dba62d67e9f458587
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954967"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680251"
 ---
 # <a name="idebugfunctionposition2getoffset"></a>IDebugFunctionPosition2::GetOffset
-Récupère la position de la fonction dans le document source.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT GetOffset(   
-   TEXT_POSITION* pPosition  
-);  
-```  
-  
-```csharp  
-int GetOffset(  
-   TEXT_POSITION[] pPosition  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pPosition`  
- [in, out] Un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) structure est remplie avec la position de la fonction dans un document.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)   
- [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)
+Récupère la position de la fonction dans le document source.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT GetOffset( 
+   TEXT_POSITION* pPosition
+);
+```
+
+```csharp
+int GetOffset(
+   TEXT_POSITION[] pPosition
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pPosition`
+
+ [in, out] Un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) structure est remplie avec la position de la fonction dans un document.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="see-also"></a>Voir aussi
+- [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)
+- [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

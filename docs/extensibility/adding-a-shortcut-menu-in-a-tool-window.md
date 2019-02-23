@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0bbaedce280924cbad81286992c9bdef586b4346
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: eede5f76a9689f79e769d23572a1d92f3ae3a867
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316325"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681476"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>Ajouter un menu contextuel dans une fenêtre outil
 Cette procédure pas à pas place un menu contextuel dans une fenêtre outil. Un menu contextuel est un menu qui s’affiche quand un utilisateur clique sur un bouton, une zone de texte ou un arrière-plan de la fenêtre. Commandes du menu contextuel comportent comme des commandes sur d’autres menus ou les barres d’outils. Pour prendre en charge un menu contextuel, spécifiez-le dans le *.vsct* de fichiers et les afficher en réponse à un clic droit de la souris.
@@ -277,5 +277,5 @@ Un menu contextuel comme celle illustrée dans cette procédure pas à pas perme
 4. Cliquez sur une couleur dans le menu contextuel. La couleur d’arrière-plan de fenêtre outil doit être remplacée par la couleur sélectionnée.
 
 ## <a name="see-also"></a>Voir aussi
-[Commandes, menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md)  
-[À l’aide et fourniture de services](../extensibility/using-and-providing-services.md)
+- [Commandes, menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md)
+- [À l’aide et fourniture de services](../extensibility/using-and-providing-services.md)

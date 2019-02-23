@@ -1,7 +1,7 @@
 ---
 title: IDebugField::Equal | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugField::Equal
 helpviewer_keywords:
@@ -12,36 +12,37 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fdfc2abd407c586c949ade4e8085e282fb465a8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ed978355aa752730cfb43390b3e4b6f80d327f83
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54984351"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693943"
 ---
 # <a name="idebugfieldequal"></a>IDebugField::Equal
-Cette méthode compare ce champ avec le champ spécifié pour l’égalité.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT Equal(   
-   IDebugField* pField  
-);  
-```  
-  
-```csharp  
-int Equal(  
-   IDebugField pField  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pField`  
- [in] Champ à comparer à celui-ci.  
-  
-## <a name="return-value"></a>Valeur de retour  
- Si les champs sont identiques, retourne `S_OK`. Si les champs sont différents, retourne `S_FALSE.` sinon, retourne un code d’erreur.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
+Cette méthode compare ce champ avec le champ spécifié pour l’égalité.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT Equal( 
+   IDebugField* pField
+);
+```
+
+```csharp
+int Equal(
+   IDebugField pField
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pField`
+
+ [in] Champ à comparer à celui-ci.
+
+## <a name="return-value"></a>Valeur de retour
+ Si les champs sont identiques, retourne `S_OK`. Si les champs sont différents, retourne `S_FALSE.` sinon, retourne un code d’erreur.
+
+## <a name="see-also"></a>Voir aussi
+- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

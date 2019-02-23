@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3967dc1b324c2dd73de4797588159d745ae24756
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 25b703eafccb412c33640a9e73e72afa09c0c277
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315714"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695984"
 ---
 # <a name="get-a-port"></a>Obtenir un port
 Un port représente une connexion à un ordinateur sur lequel les processus sont en cours d’exécution. Cet ordinateur peut être l’ordinateur local ou un ordinateur distant (ce qui peut éventuellement exécuter un système d’exploitation non basé sur Windows, consultez [Ports](../../extensibility/debugger/ports.md) pour plus d’informations).
@@ -97,7 +97,7 @@ HRESULT CDebugEngine::ResumeProcess(IDebugProcess2 *pDebugProcess)
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[Inscription du programme](../../extensibility/debugger/registering-the-program.md)  
-[Activation d’un programme à déboguer](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)  
-[Fournisseurs de port](../../extensibility/debugger/port-suppliers.md)  
-[Ports](../../extensibility/debugger/ports.md)
+- [Inscription du programme](../../extensibility/debugger/registering-the-program.md)
+- [Activation d’un programme à déboguer](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+- [Fournisseurs de port](../../extensibility/debugger/port-suppliers.md)
+- [Ports](../../extensibility/debugger/ports.md)

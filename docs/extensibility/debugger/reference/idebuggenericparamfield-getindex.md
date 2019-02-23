@@ -1,7 +1,7 @@
 ---
 title: IDebugGenericParamField::GetIndex | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericParamField::GetIndex
 ms.assetid: 8e0bdb26-1247-44d9-8d80-ec6e35187fb4
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77fe5e06562292eaef477b77d05f685c7c1f9d35
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 77c5a2ccb8ff81cade0a110f8226f54a04ef65ea
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450189"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702770"
 ---
 # <a name="idebuggenericparamfieldgetindex"></a>IDebugGenericParamField::GetIndex
 Récupère l’index de ce paramètre générique.
@@ -35,8 +35,9 @@ int GetIndex(
 ```
 
 #### <a name="parameters"></a>Paramètres
-`pIndex`  
-[out] Valeur d’index de ce paramètre générique.
+`pIndex`
+
+ [out] Valeur d’index de ce paramètre générique.
 
 ## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
@@ -66,4 +67,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)
+- [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

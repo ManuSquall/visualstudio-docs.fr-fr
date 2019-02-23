@@ -1,7 +1,7 @@
 ---
 title: IDebugObject::GetValue | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugObject::GetValue
 helpviewer_keywords:
@@ -12,44 +12,46 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e2c41cc81a27e46e74298d78ff9836ef74a8bff
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8d8b55fed250b94fc02c9810eca17ec0934bf81e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941903"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690732"
 ---
 # <a name="idebugobjectgetvalue"></a>IDebugObject::GetValue
-Obtient la valeur de l’objet sous la forme d’une série consécutive d’octets.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT GetValue(   
-   BYTE* pValue,  
-   UINT  nSize  
-);  
-```  
-  
-```csharp  
-int GetValue(  
-   ref byte[] pValue,   
-   uint nSize  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pValue`  
- [in, out] Tableau qui contient une série consécutive d’octets représentant la valeur de l’objet.  
-  
- `nSize`  
- [in] Le nombre maximal d’octets à extraire.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
-  
-## <a name="remarks"></a>Notes  
- Obtenir le nombre total d’octets de valeur peuvent être extraites en appelant le [GetSize](../../../extensibility/debugger/reference/idebugobject-getsize.md) (méthode).  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
+Obtient la valeur de l’objet sous la forme d’une série consécutive d’octets.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT GetValue( 
+   BYTE* pValue,
+   UINT  nSize
+);
+```
+
+```csharp
+int GetValue(
+   ref byte[] pValue,
+   uint nSize
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pValue`
+
+ [in, out] Tableau qui contient une série consécutive d’octets représentant la valeur de l’objet.
+
+ `nSize`
+
+ [in] Le nombre maximal d’octets à extraire.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
+
+## <a name="remarks"></a>Notes
+ Obtenir le nombre total d’octets de valeur peuvent être extraites en appelant le [GetSize](../../../extensibility/debugger/reference/idebugobject-getsize.md) (méthode).
+
+## <a name="see-also"></a>Voir aussi
+- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

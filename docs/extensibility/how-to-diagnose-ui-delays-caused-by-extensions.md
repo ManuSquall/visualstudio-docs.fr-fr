@@ -6,12 +6,12 @@ author: PooyaZv
 ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: 01b565e6b3d39e39b84054522f3a94e6c4149de4
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: ac3d44734c868bdf57f76aec0572e6b7d3ea9f03
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317118"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719481"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Procédure : Diagnostiquer les délais de l’interface utilisateur causés par les extensions
 
@@ -21,7 +21,7 @@ Lors de l’interface utilisateur cesse de répondre, Visual Studio examine la p
 
 La notification informe l’utilisateur que le délai de l’interface utilisateur (autrement dit, l’absence de réponse dans l’interface utilisateur) est peut-être le résultat du code à partir d’une extension. Il fournit également l’utilisateur avec des options pour désactiver l’extension ou les futures notifications pour cette extension.
 
-Ce document décrit comment vous pouvez diagnostiquer dans votre code d’extension cause des notifications de délai de l’interface utilisateur. 
+Ce document décrit comment vous pouvez diagnostiquer dans votre code d’extension cause des notifications de délai de l’interface utilisateur.
 
 > [!NOTE]
 > N’utilisez pas l’instance expérimentale de Visual Studio pour diagnostiquer les retards de l’interface utilisateur. Certaines parties de l’analyse de la pile des appels requis pour les notifications de délai de l’interface utilisateur sont désactivées lors de l’utilisation de l’instance expérimentale, ce qui signifie que les notifications de délai de l’interface utilisateur ne peuvent pas être affichées.
@@ -102,7 +102,7 @@ Ensuite, ouvrez le fichier de trace. Pour cela, soit à l’aide de la même ins
 Sélectionnez le fichier de trace dans le volet gauche, puis ouvrez-le en choisissant **ouvrir** dans le menu contextuel.
 
 > [!NOTE]
-> Par défaut PerfView génère une archive Zip. Lorsque vous ouvrez *trace.zip*, il décompresse l’archive automatiquement et que vous la trace est ouvert. Vous pouvez ignorer cette étape en décochant la **Zip** boîte pendant la collecte de trace. Toutefois, si vous envisagez de transférer et utiliser les traces sur différentes machines, nous recommandons vivement d’en décochant la **Zip** boîte. Sans cette option, les fichiers PDB requis pour les assemblys Ngen seront accompagnent pas la trace et par conséquent, les symboles à partir des assemblys de Ngen ne seront pas résolus sur l’ordinateur de destination. (Consultez [ce billet de blog](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) pour plus d’informations sur les fichiers PDB pour les assemblys de Ngen.) 
+> Par défaut PerfView génère une archive Zip. Lorsque vous ouvrez *trace.zip*, il décompresse l’archive automatiquement et que vous la trace est ouvert. Vous pouvez ignorer cette étape en décochant la **Zip** boîte pendant la collecte de trace. Toutefois, si vous envisagez de transférer et utiliser les traces sur différentes machines, nous recommandons vivement d’en décochant la **Zip** boîte. Sans cette option, les fichiers PDB requis pour les assemblys Ngen seront accompagnent pas la trace et par conséquent, les symboles à partir des assemblys de Ngen ne seront pas résolus sur l’ordinateur de destination. (Consultez [ce billet de blog](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) pour plus d’informations sur les fichiers PDB pour les assemblys de Ngen.)
 
 Il peut prendre plusieurs minutes pour PerfView traiter et ouvrir la trace. Une fois que la trace est ouverte, une liste de « vues » différentes s’affichent sous ce dernier.
 

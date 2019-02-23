@@ -1,7 +1,7 @@
 ---
 title: IDebugPortEx2::GetPortProcessId | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugPortEx2::GetPortProcessId
 helpviewer_keywords:
@@ -12,39 +12,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1a9cb6a85cd23f0859c8f9ce0aff8c9ef21bf80
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f55915297daa877b2a7e73ab0cccda1a2d70b991
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941754"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56723420"
 ---
 # <a name="idebugportex2getportprocessid"></a>IDebugPortEx2::GetPortProcessId
-Obtient l’ID de processus du port lui-même.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT GetPortProcessId (   
-   DWORD* pdwProcessId  
-);  
-```  
-  
-```csharp  
-int GetPortProcessId (   
-   out uint pdwProcessId  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pdwProcessId`  
- [out] Retourne l’ID de processus physique du port lui-même.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="remarks"></a>Notes  
- Dans le runtime de Win32, par exemple, cette méthode appelle généralement la fonction Win32 `GetCurrentProcessId` pour obtenir l’ID de processus physique.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)
+Obtient l’ID de processus du port lui-même.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT GetPortProcessId ( 
+   DWORD* pdwProcessId
+);
+```
+
+```csharp
+int GetPortProcessId ( 
+   out uint pdwProcessId
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pdwProcessId`
+
+ [out] Retourne l’ID de processus physique du port lui-même.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="remarks"></a>Notes
+ Dans le runtime de Win32, par exemple, cette méthode appelle généralement la fonction Win32 `GetCurrentProcessId` pour obtenir l’ID de processus physique.
+
+## <a name="see-also"></a>Voir aussi
+- [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)

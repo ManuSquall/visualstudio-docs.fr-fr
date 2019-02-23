@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a84b12973ebfb86d516d2c9b13108d6b118f7507
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 1dca1ce2504d557050adc1cb015eb7c6da056c70
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315636"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711291"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>Sources d’événements (SDK Visual Studio)
 Il existe deux sources d’événements : le moteur de débogage (dé) et la Session de débogage Manager (SDM). Événements envoyés à partir d’un D’ont un moteur non NULL, tandis que les événements envoyés par le SDM ont un moteur NULL.
@@ -73,4 +73,4 @@ HRESULT CEvent::SendAsynchronousEvent(IDebugEventCallback2 *pCallback, IDebugEng
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[Envoi d’événements](../../extensibility/debugger/sending-events.md)
+- [Envoi d’événements](../../extensibility/debugger/sending-events.md)

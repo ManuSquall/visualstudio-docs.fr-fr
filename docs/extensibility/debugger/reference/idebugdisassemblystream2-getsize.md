@@ -1,7 +1,7 @@
 ---
 title: IDebugDisassemblyStream2::GetSize | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugDisassemblyStream2::GetSize
 helpviewer_keywords:
@@ -12,41 +12,42 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed9db83ed17b27090efef3e1d892d28f0078ce6c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d415c87c67c20880615d83c1201b4588a683719c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54988842"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56706377"
 ---
 # <a name="idebugdisassemblystream2getsize"></a>IDebugDisassemblyStream2::GetSize
-Obtient la taille dans les instructions de ce flux de code machine.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT GetSize(   
-   UINT64* pnSize  
-);  
-```  
-  
-```csharp  
-int GetSize(   
-   out ulong pnSize  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pnSize`  
- [out] Retourne la taille, dans les instructions.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="remarks"></a>Notes  
- La valeur retournée par cette méthode peut être utilisée pour allouer un tableau de [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) structures qui est ensuite transmise à la [en lecture](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) (méthode).  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)   
- [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)   
- [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
+Obtient la taille dans les instructions de ce flux de code machine.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT GetSize( 
+   UINT64* pnSize
+);
+```
+
+```csharp
+int GetSize( 
+   out ulong pnSize
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pnSize`
+
+ [out] Retourne la taille, dans les instructions.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="remarks"></a>Notes
+ La valeur retournée par cette méthode peut être utilisée pour allouer un tableau de [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) structures qui est ensuite transmise à la [en lecture](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) (méthode).
+
+## <a name="see-also"></a>Voir aussi
+- [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)
+- [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)
+- [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)

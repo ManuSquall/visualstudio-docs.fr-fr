@@ -1,7 +1,7 @@
 ---
 title: MODULE_INFO_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - MODULE_INFO_FIELDS
 helpviewer_keywords:
@@ -12,110 +12,97 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d0b5e1423875bfa7834bd1340339ebab2a9e3b3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f4302a911e58a23bdcd58bb054c1fc90c389fed6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55040344"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708381"
 ---
 # <a name="moduleinfofields"></a>MODULE_INFO_FIELDS
-Spécifie les indicateurs pour les informations de module de débogage.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-enum enum_MODULE_INFO_FIELDS {   
-   MIF_NONE              = 0x0000,  
-   MIF_NAME              = 0x0001,  
-   MIF_URL               = 0x0002,  
-   MIF_VERSION           = 0x0004,  
-   MIF_DEBUGMESSAGE      = 0x0008,  
-   MIF_LOADADDRESS       = 0x0010,  
-   MIF_PREFFEREDADDRESS  = 0x0020,  
-   MIF_SIZE              = 0x0040,  
-   MIF_LOADORDER         = 0x0080,  
-   MIF_TIMESTAMP         = 0x0100,  
-   MIF_URLSYMBOLLOCATION = 0x0200,  
-   MIF_FLAGS             = 0x0400,  
-   MIF_ALLFIELDS         = 0x07ff  
-};  
-typedef DWORD MODULE_INFO_FIELDS;  
-```  
-  
-```csharp  
-public enum enum_MODULE_INFO_FIELDS {   
-   MIF_NONE              = 0x0000,  
-   MIF_NAME              = 0x0001,  
-   MIF_URL               = 0x0002,  
-   MIF_VERSION           = 0x0004,  
-   MIF_DEBUGMESSAGE      = 0x0008,  
-   MIF_LOADADDRESS       = 0x0010,  
-   MIF_PREFFEREDADDRESS  = 0x0020,  
-   MIF_SIZE              = 0x0040,  
-   MIF_LOADORDER         = 0x0080,  
-   MIF_TIMESTAMP         = 0x0100,  
-   MIF_URLSYMBOLLOCATION = 0x0200,  
-   MIF_FLAGS             = 0x0400,  
-   MIF_ALLFIELDS         = 0x07ff  
-};  
-```  
-  
-## <a name="members"></a>Membres  
- MIF_NONE  
- Initialize/utiliser aucun des champs dans la structure.  
-  
- MIF_NAME  
- Initialize/utiliser le `m_bstrName` champ dans le [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) structure.  
-  
- MIF_URL  
- Initialize/utiliser le `m_bstrUrl` champ dans le `MODULE_INFO` structure.  
-  
- MIF_VERSION  
- Initialize/utiliser le `m_bstrVersion` champ dans le `MODULE_INFO` structure.  
-  
- MIF_DEBUGMESSAGE  
- Initialize/utiliser le `m_bstrDebugMessage` champ dans le `MODULE_INFO` structure.  
-  
- MIF_LOADADDRESS  
- Initialize/utiliser le `m_addrLoadAddress` champ dans le `MODULE_INFO` structure.  
-  
- MIF_PREFFEREDADDRESS  
- Initialize/utiliser le `m_addrPreferredLoadAddress` champ dans le `MODULE_INFO` structure.  
-  
- MIF_SIZE  
- Initialize/utiliser le `m_dwSize` champ dans le `MODULE_INFO` structure.  
-  
- MIF_LOADORDER  
- Initialize/utiliser le `m_dwLoadOrder` champ dans le `MODULE_INFO` structure.  
-  
- MIF_TIMESTAMP  
- Initialize/utiliser le `m_TimeStamp` champ dans le `MODULE_INFO` structure.  
-  
- MIF_URLSYMBOLLOCATION  
- Initialize/utiliser le `m_bstrUrlSymbolLocation` champ dans le `MODULE_INFO` structure.  
-  
- MIF_FLAGS  
- Initialize/utiliser le `m_dwModuleFlags` champ dans le `MODULE_INFO` structure.  
-  
- MIF_ALLFIELDS  
- Initialize/utiliser tous les champs dans le `MODULE_INFO` structure.  
-  
-## <a name="remarks"></a>Notes  
- Ces valeurs sont passées en tant qu’argument à la [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) méthode pour indiquer les champs de la [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) structure doivent être initialisées.  
-  
- Ces valeurs sont également utilisées dans le `MODULE_INFO` structure pour indiquer quels champs sont utilisés et valide.  
-  
- Ces indicateurs peuvent être combinées avec un opérateur de bits `OR`.  
-  
-## <a name="requirements"></a>Spécifications  
- En-tête : msdbg.h  
-  
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
-  
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Voir aussi  
- [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)   
- [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)
+Spécifie les indicateurs pour les informations de module de débogage.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+enum enum_MODULE_INFO_FIELDS { 
+   MIF_NONE              = 0x0000,
+   MIF_NAME              = 0x0001,
+   MIF_URL               = 0x0002,
+   MIF_VERSION           = 0x0004,
+   MIF_DEBUGMESSAGE      = 0x0008,
+   MIF_LOADADDRESS       = 0x0010,
+   MIF_PREFFEREDADDRESS  = 0x0020,
+   MIF_SIZE              = 0x0040,
+   MIF_LOADORDER         = 0x0080,
+   MIF_TIMESTAMP         = 0x0100,
+   MIF_URLSYMBOLLOCATION = 0x0200,
+   MIF_FLAGS             = 0x0400,
+   MIF_ALLFIELDS         = 0x07ff
+};
+typedef DWORD MODULE_INFO_FIELDS;
+```
+
+```csharp
+public enum enum_MODULE_INFO_FIELDS { 
+   MIF_NONE              = 0x0000,
+   MIF_NAME              = 0x0001,
+   MIF_URL               = 0x0002,
+   MIF_VERSION           = 0x0004,
+   MIF_DEBUGMESSAGE      = 0x0008,
+   MIF_LOADADDRESS       = 0x0010,
+   MIF_PREFFEREDADDRESS  = 0x0020,
+   MIF_SIZE              = 0x0040,
+   MIF_LOADORDER         = 0x0080,
+   MIF_TIMESTAMP         = 0x0100,
+   MIF_URLSYMBOLLOCATION = 0x0200,
+   MIF_FLAGS             = 0x0400,
+   MIF_ALLFIELDS         = 0x07ff
+};
+```
+
+## <a name="members"></a>Membres
+ MIF_NONE Initialize/utiliser aucun des champs dans la structure.
+
+ MIF_NAME Initialize/utiliser le `m_bstrName` champ dans le [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) structure.
+
+ MIF_URL Initialize/utiliser le `m_bstrUrl` champ dans le `MODULE_INFO` structure.
+
+ MIF_VERSION Initialize/utiliser le `m_bstrVersion` champ dans le `MODULE_INFO` structure.
+
+ MIF_DEBUGMESSAGE Initialize/utiliser le `m_bstrDebugMessage` champ dans le `MODULE_INFO` structure.
+
+ MIF_LOADADDRESS Initialize/utiliser le `m_addrLoadAddress` champ dans le `MODULE_INFO` structure.
+
+ MIF_PREFFEREDADDRESS Initialize/utiliser le `m_addrPreferredLoadAddress` champ dans le `MODULE_INFO` structure.
+
+ MIF_SIZE Initialize/utiliser le `m_dwSize` champ dans le `MODULE_INFO` structure.
+
+ MIF_LOADORDER Initialize/utiliser le `m_dwLoadOrder` champ dans le `MODULE_INFO` structure.
+
+ MIF_TIMESTAMP Initialize/utiliser le `m_TimeStamp` champ dans le `MODULE_INFO` structure.
+
+ MIF_URLSYMBOLLOCATION Initialize/utiliser le `m_bstrUrlSymbolLocation` champ dans le `MODULE_INFO` structure.
+
+ MIF_FLAGS Initialize/utiliser le `m_dwModuleFlags` champ dans le `MODULE_INFO` structure.
+
+ MIF_ALLFIELDS Initialize/utiliser tous les champs dans le `MODULE_INFO` structure.
+
+## <a name="remarks"></a>Notes
+ Ces valeurs sont passées en tant qu’argument à la [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) méthode pour indiquer les champs de la [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) structure doivent être initialisées.
+
+ Ces valeurs sont également utilisées dans le `MODULE_INFO` structure pour indiquer quels champs sont utilisés et valide.
+
+ Ces indicateurs peuvent être combinées avec un opérateur de bits `OR`.
+
+## <a name="requirements"></a>Spécifications
+ En-tête : msdbg.h
+
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Voir aussi
+- [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)
+- [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)
