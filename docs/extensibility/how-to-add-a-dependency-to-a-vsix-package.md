@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba9f1f5f1d656dc2283d9cc943ca03f752cb5067
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 225f2bba47aea209e406abe4555b508a2ee93ade
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000106"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708574"
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>Procédure : Ajouter une dépendance à un package VSIX
 
@@ -49,6 +49,6 @@ Le VSIXInstaller détecte les versions antérieures de Visual Studio et informer
 
 ## <a name="see-also"></a>Voir aussi
 
- [Référence du schéma 1.0 extension VSIX](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
- [Anatomie d’un package VSIX](../extensibility/anatomy-of-a-vsix-package.md)   
- [Préparer des extensions pour le déploiement Windows Installer](../extensibility/preparing-extensions-for-windows-installer-deployment.md)
+- [Référence du schéma 1.0 extension VSIX](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
+- [Anatomie d’un package VSIX](../extensibility/anatomy-of-a-vsix-package.md)
+- [Préparer des extensions pour le déploiement Windows Installer](../extensibility/preparing-extensions-for-windows-installer-deployment.md)
