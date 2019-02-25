@@ -41,6 +41,7 @@
 # [Compilation et génération](compiling-and-building.md)
 ## [Génération et nettoyage des projets et des solutions](building-and-cleaning-projects-and-solutions.md)
 ## [Actions de génération](build-actions.md)
+## [Guide pratique pour définir plusieurs projets de démarrage](set-startup-projects.md)
 ## [Personnalisation du système de génération](customizing-build-system.md)
 ## [Configurations](configurations.md)
 ### [Créer et modifier des configurations](create-and-edit-configurations.md)
