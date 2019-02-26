@@ -25,7 +25,7 @@
 #### [CAST Highlight](vs-cast.md)
 #### [CloudPilot](vs-cloudpilot.md)
 #### [Visual Studio App Center](vs-visual-studio-app-center.md)
-#### [Parasoft ](vs-parasoft.md)
+#### [Parasoft](vs-parasoft.md)
 #### [WhiteSource Bolt](vs-whitesource.md)
 #### [Enterprise Mobility et Security](vs-ems.md)
 #### [Compte de développeur Windows](vs-windows-dev.md)

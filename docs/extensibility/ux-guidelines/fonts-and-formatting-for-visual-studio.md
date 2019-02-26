@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 311ccb546d1712fc21e6ca01a69b5aa50a21786b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 56c7dc7557c91d82c89e612da7b78e3a889ad01e
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721821"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796749"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Polices et mise en forme pour Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> La police d’environnement
@@ -101,9 +101,22 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visual
 ```
 
 #### <a name="375-environment-font--light"></a>Police d’environnement 375 % + clair
- **Apparaît sous la forme :** 34 pt Segoe UI Light **destiné à :** (rare) unique de marque l’interface utilisateur, comme dans la Page de démarrage de Visual Studio 2017
 
- **Code procédural :** Où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette définie précédemment :
+**Apparaît sous la forme :** pt 34 Segoe UI Light
+
+::: moniker range="vs-2017"
+
+**Utilisation pour :** (rare) unique de marque l’interface utilisateur, comme dans la Page de démarrage
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+**Utilisation pour :** interface unique (rare)
+
+::: moniker-end
+
+**Code procédural :** Où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette définie précédemment :
 
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -112,7 +125,7 @@ label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey);
 ```
 
- **XAML :** Définir le style du TextBlock ou Label, comme indiqué.
+**XAML :** Définir le style du TextBlock ou Label, comme indiqué.
 
 ```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock> 
@@ -315,11 +328,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="title-case"></a>Première lettre en majuscule
  Première lettre en majuscule est un style dans lequel les premières lettres de la plupart ou tous les mots dans une expression sont en majuscules. Dans Visual Studio, majuscule est utilisé pour le nombre d’éléments, y compris :
 
-- **Info-bulles.** Exemple : « Afficher un aperçu des éléments sélectionnés »
+- **Info-bulles.** Exemple : « Afficher un aperçu des éléments sélectionnés »
 
-- **En-têtes de colonne.** Exemple : « Réponse système »
+- **En-têtes de colonne.** Exemple : « Réponse système »
 
-- **Éléments de menu.** Exemple : « Enregistrer tout »
+- **Éléments de menu.** Exemple : « Enregistrer tout »
 
   Lorsque vous utilisez la première lettre en majuscule, voici les instructions pour mettre en majuscule de mots et de les laisser en minuscules :
 
@@ -346,9 +359,9 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="sentence-case"></a>Début de phrase
  Casse de la phrase est la méthode de mise en majuscules standard pour l’écriture dans lequel seul le premier mot de la phrase est en majuscules, ainsi que les noms propres et du pronom « I ». En règle générale, la casse de la phrase est plus facile pour une audience internationale pour la lecture, en particulier lorsque le contenu sera traduit par un ordinateur. Utilisez la casse de la phrase pour :
 
-1.  **Messages de barre d’état.** Ceux-ci sont simples, bref et fournissent uniquement les informations d’état. Exemple : « Chargement du fichier de projet »
+1.  **Messages de barre d’état.** Ceux-ci sont simples, bref et fournissent uniquement les informations d’état. Exemple : « Chargement du fichier de projet »
 
-2.  **Tous les autres éléments d’interface utilisateur**, y compris les étiquettes, les cases à cocher, cases d’option et les éléments de zone de liste. Exemple : « Sélectionner tous les éléments dans la liste »
+2.  **Tous les autres éléments d’interface utilisateur**, y compris les étiquettes, les cases à cocher, cases d’option et les éléments de zone de liste. Exemple : « Sélectionner tous les éléments dans la liste »
 
 ### <a name="text-formatting"></a>Mise en forme de texte
  Texte par défaut de mise en forme dans Visual Studio 2013 est contrôlé par [la police d’environnement](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont). Ce service permet de s’assurer une apparence de la police cohérente tout au long de l’IDE (environnement de développement intégré), et vous devez l’utiliser pour garantir une expérience cohérente pour vos utilisateurs.
@@ -375,7 +388,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 #### <a name="italics"></a>Italique
  Visual Studio n’utilise pas de texte en italique Italique ou en gras.
 
-#### <a name="color"></a>Color
+#### <a name="color"></a>Couleur
 
 -   Bleu est réservé pour les liens hypertexte (navigation et exécution des commandes) et ne doit jamais être utilisée pour l’orientation.
 
@@ -406,9 +419,21 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 #### <a name="310-environment-font--light"></a>Police d’environnement 310 % + clair
 
+::: moniker range="vs-2017"
+
 |||
 |-|-|
 |**Utilisation :**<br /><br /> -Titre plus grande dans les boîtes de dialogue de signature<br />-Titre de rapport principal<br /><br /> **Procédez comme :**<br /><br /> -Utilisez la casse de la phrase<br />-Toujours utiliser léger<br /><br /> **Ne pas :**<br /><br /> -Utilisation de l’interface utilisateur autre que de la signature de l’interface utilisateur comme Page de démarrage<br />-En gras, italique ou gras italique<br />-Utilisation de corps de texte<br />-Utiliser dans les fenêtres Outil|**Apparaît sous la forme :** 28 pt Segoe UI Light<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de police d’environnement 310 % &#43; titre clair](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+|||
+|-|-|
+|**Utilisation :**<br /><br /> -Titre plus grande dans les boîtes de dialogue de signature<br />-Titre de rapport principal<br /><br /> **Procédez comme :**<br /><br /> -Utilisez la casse de la phrase<br />-Toujours utiliser léger<br /><br /> **Ne pas :**<br /><br /> -Utilisation de l’interface utilisateur autre que l’interface utilisateur de signature<br />-En gras, italique ou gras italique<br />-Utilisation de corps de texte<br />-Utiliser dans les fenêtres Outil|**Apparaît sous la forme :** 28 pt Segoe UI Light<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de police d’environnement 310 % &#43; titre clair](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
+
+::: moniker-end
 
 #### <a name="200-environment-font--semilight"></a>Police d’environnement 200 % + Semilight
 

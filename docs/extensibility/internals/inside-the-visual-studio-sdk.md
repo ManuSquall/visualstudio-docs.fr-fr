@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c386fb7f9fb57abccf7d7bc3c9cec900a65d883a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 42ec103cf9ca867582d4762e06ca59eac48da588
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978267"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796671"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Dans le kit SDK Visual Studio
 Cette section fournit des informations détaillées sur les extensions de Visual Studio, y compris l’architecture de Visual Studio, composants, services, schémas, utilitaires et autres.
@@ -30,7 +30,7 @@ Cette section fournit des informations détaillées sur les extensions de Visual
 ## <a name="vspackages"></a>VSPackages
  Les VSPackages sont des modules logiciels qui constituent et étendent Visual Studio avec des éléments, des services, des projets, des éditeurs et des concepteurs d’interfaces utilisateur. Les VSPackages sont l’unité architecturale au centre de Visual Studio. Pour plus d'informations, consultez [VSPackages](../../extensibility/internals/vspackages.md).
 
-## <a name="visual-studio-shell"></a>Visual Studio Shell
+## <a name="visual-studio-shell"></a>Shell Visual Studio
  L’interpréteur de commandes de Visual Studio fournit des fonctionnalités de base et prend en charge les communications entre son composant VSPackages et des extensions MEF. Pour plus d’informations, consultez [Visual Studio Shell](../../extensibility/internals/visual-studio-shell.md).
 
 ## <a name="user-experience-guidelines"></a>Conseils sur l’expérience utilisateur
@@ -55,13 +55,13 @@ Cette section fournit des informations détaillées sur les extensions de Visual
 
  Fenêtres Outil offrent généralement différents contrôles avec lesquels l’utilisateur peut interagir. Par exemple, le **propriétés** fenêtre permet à l’utilisateur de définir les propriétés des objets qui jouent un rôle particulier. Le **propriétés** fenêtre est spécialisé en ce sens, mais également général car il peut être utilisé dans de nombreuses situations différentes. De même, le **sortie** est spécialisée dans la fenêtre, car elle fournit textuel de la sortie, mais général car de nombreux sous-systèmes dans Visual Studio peuvent l’utiliser pour fournir la sortie à l’utilisateur de Visual Studio.
 
- Envisagez l’image suivante de Visual Studio, qui contient plusieurs fenêtres d’outils.
+ Prenez en compte l’image suivante de Visual Studio, qui contient plusieurs fenêtres d’outils :
 
  ![Capture d’écran](../../extensibility/internals/media/t1gui.png "T1gui")
 
  Certaines fenêtres Outil sont ancrées ensemble sur un seul volet qui affiche la fenêtre outil de l’Explorateur de solutions et masque les autres fenêtres Outil, mais les rend disponibles en cliquant sur les onglets. L’illustration montre deux autres fenêtres Outil, le **liste d’erreurs** et **sortie** fenêtre, ancrée ensemble sur un seul volet.
 
- Si vous est également affiché, le volet de document principal, qui montre plusieurs fenêtres de l’éditeur. Bien que les fenêtres Outil ont généralement qu’une seule instance (par exemple, vous pouvez ouvrir qu’un seul **l’Explorateur de solutions**), éditeur windows peuvent avoir plusieurs instances, chacun d’eux est utilisé pour modifier un document distinct, mais qui sont ancrées dans le même volet. L’illustration montre un volet de document qui a deux fenêtres de l’éditeur, une fenêtre du Concepteur de formulaire et une fenêtre de navigateur qui affiche la Page de démarrage. Toutes les fenêtres dans le volet de document sont disponibles en cliquant sur les onglets, mais la fenêtre d’éditeur qui contient le fichier de EditorPane.cs est visible et actif.
+ Si vous est également affiché, le volet de document principal, qui montre plusieurs fenêtres de l’éditeur. Bien que les fenêtres Outil ont généralement qu’une seule instance (par exemple, vous pouvez ouvrir qu’un seul **l’Explorateur de solutions**), éditeur windows peuvent avoir plusieurs instances, chacun d’eux est utilisé pour modifier un document distinct, mais qui sont ancrées dans le même volet. L’illustration montre un volet de document qui a deux fenêtres de l’éditeur, une fenêtre du Concepteur de formulaire. Toutes les fenêtres dans le volet de document sont disponibles en cliquant sur les onglets, mais la fenêtre d’éditeur qui contient le fichier de EditorPane.cs est visible et actif.
 
  Lorsque vous étendez Visual Studio, vous pouvez créer outil windows qui permettent aux utilisateurs de Visual Studio interagissent avec votre extension. Vous pouvez également créer vos propres éditeurs qui permettent aux utilisateurs de Visual Studio à modifier des documents. Étant donné que vos fenêtres Outil et les éditeurs seront intégrés dans Visual Studio, il est inutile de les programmer pour ancrer ou s’affichent correctement sur un onglet. Lorsqu’ils sont inscrits correctement dans Visual Studio, ils auront automatiquement les fonctionnalités standard de fenêtres Outil et fenêtres de document dans Visual Studio. Pour plus d’informations, consultez [extension et personnalisation de Windows d’outil](../../extensibility/extending-and-customizing-tool-windows.md).
 
