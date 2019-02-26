@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 953347c79470b4a77fcd590a1107416f5fcce872
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0d132c9689348fa728fc639d2aa3c8ecd8ba9e25
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694281"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796788"
 ---
 # <a name="animations-for-visual-studio"></a>Animations pour Visual Studio
 ## <a name="animation-fundamentals"></a>Principes de base de l’animation
@@ -142,7 +142,7 @@ Illustrer des informations complexes et de variable :
 
 -   Défiler les images
 
-##### <a name="time"></a>réflexion
+##### <a name="time"></a>Heure
 
 -   Afficher les modifications dans le temps, d’intervalle de temps et de capture vidéo
 
@@ -305,7 +305,7 @@ En tant qu’une transition animée lorsqu’un élément d’interface utilisat
 
 -   Volet d’Explorateur de l’architecture développer / réduire
 
--   Élément de Page de démarrage développer / réduire
+-   Élément de Visual Studio 2017 Start Page développer / réduire
 
 #### <a name="x-y-position-change"></a>X-Y positionner la modification
 Avec ce modèle, un élément d’interface utilisateur change sa position X ou Y ou les deux.

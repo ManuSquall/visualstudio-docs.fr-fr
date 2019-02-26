@@ -10,12 +10,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b5f6741828f1f8ba5aeb433fb8702ca6b0a798e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6db375422e4a8d21d9b82cac82a07fed45e7d279
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949471"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796814"
 ---
 # <a name="c-core-guidelines-checker-reference"></a>Référence des vérificateurs C++ Core Guidelines
 
@@ -201,7 +201,7 @@ Consultez [GSL.view des recommandations C++ Core : Affichage](https://github.co
 
 [C26446 USE_GSL_AT](c26446.md) préfèrent utiliser `gsl::at()` au lieu d’un opérateur d’indice. Consultez [C++ Core Guidelines :  Bounds.4 : N’utilisez pas les fonctions de bibliothèque standard et les types qui ne sont pas vérifiées de limites](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
-[C26448 USE_GSL_FINALLY ](c26448.md) envisagez d’utiliser `gsl::finally` si l’action finale est destinée. Consultez [C++ Core Guidelines :  GSL.util : Utilitaires](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities).
+[C26448 USE_GSL_FINALLY](c26448.md) envisagez d’utiliser `gsl::finally` si l’action finale est destinée. Consultez [C++ Core Guidelines :  GSL.util : Utilitaires](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities).
 
 [C26449 NO_SPAN_FROM_TEMPORARY](c26449.md) 
  `gsl::span` ou `std::string_view` créé à partir d’une table temporaire ne sont pas valides lorsque temporaire est invalidée. Consultez [C++ Core Guidelines : GSL.view : Vues](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views).
