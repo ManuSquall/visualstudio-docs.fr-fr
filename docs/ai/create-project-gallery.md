@@ -8,15 +8,14 @@ manager: routlaw
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.devlang: multiple
-ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: e44624b5aa6fc5bbb518b5c15798daeca6361680
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a73b8699ecb5c1b405057d8c15b87ddc9ebb84f1
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797461"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841051"
 ---
 # <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Créer un projet IA à partir de la galerie Azure Machine Learning dans Visual Studio
 

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a76efd6ef799bbaa25c4e4d40ef2ab10a3569fb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0c953e4021f654d469a579a3aec5900e4ab93de7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000911"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634264"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Modèles courants pour des applications multithread au comportement médiocre
 

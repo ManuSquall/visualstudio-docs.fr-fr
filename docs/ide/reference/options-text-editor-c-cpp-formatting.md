@@ -16,12 +16,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae24e69ddceea88155d7185157a6ed25daab5430
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3884507bb594853ebdb0cbc16ab2ee07a372c566
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922119"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645483"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Options, Éditeur de texte, C/C++, Mise en forme
 
@@ -42,7 +42,7 @@ Cette page propose des options pour mettre en forme des instructions et des bloc
 
 ### <a name="configuring-clangformat-options"></a>Configuration des options de ClangFormat
 
-Dans Visual Studio 2017 version 15.7 et ultérieures, la prise en charge de ClangFormat est activée par défaut. Vous pouvez choisir parmi ces conventions de mise en forme courantes celles que vous souhaitez appliquer à tous vos projets : LLVM, Google, chrome, Mozilla ou WebKit. Vous pouvez également créer un fichier .clang-format ou _clang-format de définition de format personnalisé. Si un tel fichier est présent dans un dossier de projet, Visual Studio l’utilise pour mettre en forme tous les fichiers de code source dans ce dossier et ses sous-dossiers. 
+Dans Visual Studio 2017 version 15.7 et ultérieures, la prise en charge de ClangFormat est activée par défaut. Vous pouvez choisir parmi ces conventions de mise en forme courantes celles que vous souhaitez appliquer à tous vos projets : LLVM, Google, chrome, Mozilla ou WebKit. Vous pouvez également créer un fichier .clang-format ou _clang-format de définition de format personnalisé. Si un tel fichier est présent dans un dossier de projet, Visual Studio l’utilise pour mettre en forme tous les fichiers de code source dans ce dossier et ses sous-dossiers.
 
 Par défaut, Visual Studio exécute clangformat.exe en arrière-plan et applique la mise en forme à mesure que vous tapez au clavier. Vous pouvez également faire en sorte de l’exécuter uniquement pour les commandes de mise en forme appelées manuellement **Mettre en forme le document (Ctrl+K, Ctrl+D)** ou **Mettre en forme la sélection (Ctrl+K, Ctrl+F)**.
 

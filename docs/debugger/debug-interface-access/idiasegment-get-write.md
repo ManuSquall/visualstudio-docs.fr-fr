@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a2a5e1e56ed72bc744180a3600b24e12b2c8c5c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 81e4721ea4db124f9161c69b4fced0dacca714c5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54928496"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615679"
 ---
 # <a name="idiasegmentgetwrite"></a>IDiaSegment::get_write
-Récupère un indicateur qui indique si le segment peut être modifié.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_write (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pRetVal`  
- [out] Retourne `TRUE` si le segment peut être écrit ; sinon, retourne `FALSE`.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)
+Récupère un indicateur qui indique si le segment peut être modifié.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_write ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pRetVal`
+
+[out] Retourne `TRUE` si le segment peut être écrit ; sinon, retourne `FALSE`.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

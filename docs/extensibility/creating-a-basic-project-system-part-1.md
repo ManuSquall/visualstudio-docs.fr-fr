@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf49998d2aecdce37992cf51337a4d96201c9111
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9fd695c5a33ea8ea7bb9895d34995abd37db7019
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692695"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843959"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Créer un système de projet de base, partie 1
 Dans Visual Studio, les projets sont les conteneurs que les développeurs utilisent pour organiser les fichiers de code source et d’autres ressources. Les projets apparaissent en tant qu’enfants de solutions dans le **l’Explorateur de solutions**. Projets vous permettent d’organiser, générer, déboguer, déployer le code source et créer des références aux services Web, bases de données et d’autres ressources.
@@ -35,7 +35,7 @@ Dans Visual Studio, les projets sont les conteneurs que les développeurs utilis
  Cette procédure pas à pas vous montre comment créer un type de projet qui a l’extension de nom de fichier de projet *.myproj*. Cette procédure pas à pas utilise le système de projet Visual c# existant.
 
 > [!NOTE]
->  Pour plus d’exemples de projets d’extension, consultez [exemples d’extensibilité Visual Studio](http://aka.ms/vs2015sdksamples).
+>  Pour plus d’exemples de projets d’extension, consultez [exemples d’extensibilité Visual Studio](https://aka.ms/vs2015sdksamples).
 
  Cette procédure pas à pas explique comment accomplir ces tâches :
 

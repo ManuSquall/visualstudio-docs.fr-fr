@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb80bf72630d3e6e2b49390865c072b72c10277a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9874dec57c873164ec1875f31fd15c817781bb7a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039174"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610908"
 ---
 # <a name="idialinenumbergetcompilandid"></a>IDiaLineNumber::get_compilandId
-Récupère un identificateur unique pour le compiland qui ont contribué à cette ligne.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_compilandId (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pRetVal`  
- [out] Retourne `DWORD` qui contient l’identificateur unique pour le compiland qui ont contribué à cette ligne.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+Récupère un identificateur unique pour le compiland qui ont contribué à cette ligne.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_compilandId ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pRetVal`
+
+[out] Retourne `DWORD` qui contient l’identificateur unique pour le compiland qui ont contribué à cette ligne.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

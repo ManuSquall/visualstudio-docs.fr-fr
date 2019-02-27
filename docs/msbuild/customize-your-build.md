@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f09e5c32bd18213969481ab214fa7873f4f69c48
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fc4515ad8f61d749c9fb7552911bfb15dcc3471a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982154"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610331"
 ---
 # <a name="customize-your-build-c-visual-basic"></a>Personnaliser votre build (C#, Visual Basic)
 
@@ -160,6 +160,6 @@ Par exemple, vous pouvez définir une nouvelle cible pour écrire un message de 
 
 ## <a name="see-also"></a>Voir aussi
 
-[Concepts MSBuild](../msbuild/msbuild-concepts.md)
+- [Concepts MSBuild](../msbuild/msbuild-concepts.md)
 
-[Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
+- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)

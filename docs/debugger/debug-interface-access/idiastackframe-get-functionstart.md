@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c5af84f7d8458855af7cef397f9e631b071c21f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 56a1c700b2a98b51f846e5f1136ef45c67fd5f99
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54991370"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627392"
 ---
 # <a name="idiastackframegetfunctionstart"></a>IDiaStackFrame::get_functionStart
-Récupère un indicateur qui indique si le bloc contient le point d’entrée d’une fonction.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_functionStart (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pRetVal`  
- [out] Retourne `TRUE` si le frame de pile contient le point d’entrée d’une fonction ; sinon, retourne `FALSE`.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si la propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
+Récupère un indicateur qui indique si le bloc contient le point d’entrée d’une fonction.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_functionStart ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pRetVal`
+
+[out] Retourne `TRUE` si le frame de pile contient le point d’entrée d’une fonction ; sinon, retourne `FALSE`.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si la propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

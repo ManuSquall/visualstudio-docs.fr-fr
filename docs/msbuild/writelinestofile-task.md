@@ -18,57 +18,57 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 577a87d9faccbb110011eb1fe9bdc6ddb6b3d732
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8cfe294e94acce70f48b96265b3edc491b37e668
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919367"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56653869"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile (tâche)
-Écrit les chemins des éléments spécifiés dans le fichier texte spécifié.  
-  
-## <a name="task-parameters"></a>Paramètres de tâche  
- Le tableau ci-dessous décrit les paramètres de la tâche `WriteLinestoFile` .  
-  
-|Paramètre|Description|  
-|---------------|-----------------|  
-|`File`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> requis.<br /><br /> Spécifie le fichier où écrire les éléments.|  
-|`Lines`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Spécifie les éléments à écrire dans le fichier.|  
-|`Overwrite`|Paramètre `Boolean` facultatif.<br /><br /> Si `true`, remplace le contenu existant dans le fichier.|  
-|`Encoding`|Paramètre `String` facultatif.<br /><br /> Sélectionne l’encodage des caractères, par exemple « Unicode ».  Voir aussi <xref:System.Text.Encoding>.|  
-|`WriteOnlyWhenDifferent`|Paramètre `Boolean` facultatif.<br /><br /> Si `true`, le fichier cible spécifié, existe, il sera lu en premier pour effectuer la comparaison avec ce que la tâche aurait écrit. Si les deux sont identiques, le fichier n’est pas enregistré sur le disque et l’horodatage est conservé.|  
+Écrit les chemins des éléments spécifiés dans le fichier texte spécifié.
 
-## <a name="remarks"></a>Notes  
- Si `Overwrite` est `true`, crée un fichier, écrit le contenu dans ce fichier, puis le ferme. Si le fichier cible existe déjà, il est remplacé. Si `Overwrite` est `false`, ajoute le contenu au fichier, en créant le fichier cible s’il n’existe pas.  
-  
- En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).  
-  
-## <a name="example"></a>Exemple  
- L’exemple suivant utilise la tâche `WriteLinesToFile` pour écrire les chemins des éléments de la collection d’éléments `MyItems` dans le fichier spécifié par la collection d’éléments `MyTextFile`.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  
-    <ItemGroup>  
-        <MyTextFile Include="Items.txt"/>  
-        <MyItems Include="*.cs"/>  
-    </ItemGroup>  
-  
-    <Target Name="WriteToFile">  
-        <WriteLinesToFile  
-            File="@(MyTextFile)"  
-            Lines="@(MyItems)"  
-            Overwrite="true"  
-            Encoding="Unicode"/>  
-    </Target>  
-  
-</Project>  
+## <a name="task-parameters"></a>Paramètres de tâche
+ Le tableau ci-dessous décrit les paramètres de la tâche `WriteLinestoFile` .
+
+|Paramètre|Description|
+|---------------|-----------------|
+|`File`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> requis.<br /><br /> Spécifie le fichier où écrire les éléments.|
+|`Lines`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Spécifie les éléments à écrire dans le fichier.|
+|`Overwrite`|Paramètre `Boolean` facultatif.<br /><br /> Si `true`, remplace le contenu existant dans le fichier.|
+|`Encoding`|Paramètre `String` facultatif.<br /><br /> Sélectionne l’encodage des caractères, par exemple « Unicode ».  Voir aussi <xref:System.Text.Encoding>.|
+|`WriteOnlyWhenDifferent`|Paramètre `Boolean` facultatif.<br /><br /> Si `true`, le fichier cible spécifié, existe, il sera lu en premier pour effectuer la comparaison avec ce que la tâche aurait écrit. Si les deux sont identiques, le fichier n’est pas enregistré sur le disque et l’horodatage est conservé.|
+
+## <a name="remarks"></a>Remarques
+ Si `Overwrite` est `true`, crée un fichier, écrit le contenu dans ce fichier, puis le ferme. Si le fichier cible existe déjà, il est remplacé. Si `Overwrite` est `false`, ajoute le contenu au fichier, en créant le fichier cible s’il n’existe pas.
+
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
+
+## <a name="example"></a>Exemple
+ L’exemple suivant utilise la tâche `WriteLinesToFile` pour écrire les chemins des éléments de la collection d’éléments `MyItems` dans le fichier spécifié par la collection d’éléments `MyTextFile`.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <ItemGroup>
+        <MyTextFile Include="Items.txt"/>
+        <MyItems Include="*.cs"/>
+    </ItemGroup>
+
+    <Target Name="WriteToFile">
+        <WriteLinesToFile
+            File="@(MyTextFile)"
+            Lines="@(MyItems)"
+            Overwrite="true"
+            Encoding="Unicode"/>
+    </Target>
+
+</Project>
 ```
 
 Dans cet exemple, nous utilisons une propriété avec des sauts de ligne incorporés pour écrire un fichier texte comportant plusieurs lignes. Si une entrée dans `Lines` comporte des caractères de saut de ligne incorporés, les nouvelles lignes figurent dans le fichier de sortie. De cette façon, vous pouvez référencer des propriétés multilignes.
 
-```xml  
+```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -89,8 +89,8 @@ dotnet %~dp0$(AssemblyName).dll %*
         Lines="$(LauncherCmd)" />
   </Target>
 </Project>
-```  
-  
-## <a name="see-also"></a>Voir aussi  
- [Tâches](../msbuild/msbuild-tasks.md)   
- [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
+```
+
+## <a name="see-also"></a>Voir aussi
+- [Tâches](../msbuild/msbuild-tasks.md)
+- [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

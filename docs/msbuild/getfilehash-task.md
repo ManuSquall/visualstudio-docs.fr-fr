@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 71ebd50b42408dc7bd2642c257dece686245870f
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: ab5da58b125f86627d54547bd9f6f7cddc16c4de
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55485034"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622018"
 ---
 # <a name="getfilehash-task"></a>GetFileHash, tâche
 
@@ -65,6 +65,6 @@ L’exemple suivant utilise la tâche `GetFileHash` pour déterminer et afficher
 
 ## <a name="see-also"></a>Voir aussi
 
-[Tâches](../msbuild/msbuild-tasks.md)
+- [Tâches](../msbuild/msbuild-tasks.md)
 
-[Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
+- [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

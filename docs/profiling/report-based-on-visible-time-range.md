@@ -12,27 +12,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9372e4ae27142fa31beb2a4fb8730b64f025cbdf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fd4758f5484089e58f50462300f48f76f1538381
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55019565"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56614595"
 ---
 # <a name="report-based-on-visible-time-range"></a>Rapport basé sur une plage horaire visible
-La vue Profil affiche des rapports basés sur l’intervalle de temps et les canaux actuellement visibles. Pour plus de détails sur les différents sous-ensembles de données, cliquez sur les éléments dans la légende.  
-  
- Vous pouvez trouver plus d’informations sur les données dans les tableaux ci-après.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Aucune activité de thread à afficher](../profiling/no-thread-activity-to-show-threads-view.md)   
- [Profil d’exécution, rapport](../profiling/execution-profile-report.md)   
- [Durée de synchronisation](../profiling/synchronization-time.md)   
- [Temps d’E/S (vue Threads)](../profiling/i-o-time-threads-view.md)   
- [Durée de veille](../profiling/sleep-time.md)   
- [Période de gestion de la mémoire](../profiling/memory-management-time.md)   
- [Durée de préemption](../profiling/preemption-time.md)   
- [Temps de traitement UI](../profiling/ui-processing-time.md)   
- [Rapport sur les opérations de disque](../profiling/disk-operations-report-threads-view.md)   
- [Rapport Récapitulatif par thread](../profiling/per-thread-summary-report.md)   
- [vue Threads](../profiling/threads-view-parallel-performance.md)
+La vue Profil affiche des rapports basés sur l’intervalle de temps et les canaux actuellement visibles. Pour plus de détails sur les différents sous-ensembles de données, cliquez sur les éléments dans la légende.
+
+ Vous pouvez trouver plus d’informations sur les données dans les tableaux ci-après.
+
+## <a name="see-also"></a>Voir aussi
+- [Aucune activité de thread à afficher](../profiling/no-thread-activity-to-show-threads-view.md)
+- [Profil d’exécution, rapport](../profiling/execution-profile-report.md)
+- [Durée de synchronisation](../profiling/synchronization-time.md)
+- [Temps d’E/S (vue Threads)](../profiling/i-o-time-threads-view.md)
+- [Durée de veille](../profiling/sleep-time.md)
+- [Période de gestion de la mémoire](../profiling/memory-management-time.md)
+- [Durée de préemption](../profiling/preemption-time.md)
+- [Temps de traitement de l’interface utilisateur](../profiling/ui-processing-time.md)
+- [Rapport sur les opérations de disque](../profiling/disk-operations-report-threads-view.md)
+- [Résumé par thread, rapport](../profiling/per-thread-summary-report.md)
+- [vue Threads](../profiling/threads-view-parallel-performance.md)

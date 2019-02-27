@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d1056e65e769710a1092142104e87eaead37521
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: ca403045a22bb2f2aca6af537660d70c791064e3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227571"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720508"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Déboguer du code JavaScript à l’aide de la console dans Visual Studio
 
@@ -249,11 +249,11 @@ L’illustration suivante montre la liste Cible dans la fenêtre de la console J
 Vous pouvez aussi basculer le contexte d’exécution à l’aide de la commande `cd` , mais vous devez connaître le nom de l’autre contexte d’exécution et la référence que vous devez utiliser dans la portée. La liste **Cible** offre le meilleur accès aux autres contextes d’exécution.
 
 ## <a name="see-also"></a>Voir aussi
-[Déboguer des applications dans Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)  
-[Commandes de la console JavaScript](../debugger/javascript-console-commands.md)  
-[Actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md)  
-[Raccourcis clavier](../debugger/keyboard-shortcuts-html-and-javascript.md)  
-[Déboguer un exemple de code HTML, CSS et JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)  
-[Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)  
-[Déboguer un contrôle WebView](../debugger/debug-a-webview-control.md)  
-[Support technique et accessibilité](https://visualstudio.microsoft.com/vs/support/)
+- [Déboguer des applications dans Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [Commandes de la console JavaScript](../debugger/javascript-console-commands.md)
+- [Actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md)
+- [Raccourcis clavier](../debugger/keyboard-shortcuts-html-and-javascript.md)
+- [Déboguer un exemple de code HTML, CSS et JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)
+- [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Déboguer un contrôle WebView](../debugger/debug-a-webview-control.md)
+- [Support technique et accessibilité](https://visualstudio.microsoft.com/vs/support/)

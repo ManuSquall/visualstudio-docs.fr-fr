@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1357c598b2a30f390372ed9630b044c951172531
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: ef9759c5a422a0b67cdb9e8f7dde565b732958dd
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853714"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610253"
 ---
 # <a name="exec-task"></a>Exec (tâche)
 Exécute la commande ou le programme spécifié en utilisant les arguments spécifiés.
@@ -47,7 +47,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche `Exec`.
 |`StdOutEncoding`|Paramètre de sortie `String` facultatif.<br /><br /> Spécifie l’encodage du flux de sortie standard de tâche capturé. La valeur par défaut est l’encodage de sortie de la console actuelle.|
 |`WorkingDirectory`|Paramètre `String` facultatif.<br /><br /> Spécifie le répertoire dans lequel la commande sera exécutée.<br /><br />Par défaut : le répertoire de travail actif du projet.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Cette tâche est utile quand une tâche [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] spécifique pour le travail que vous voulez effectuer n’est pas disponible. Toutefois, la tâche `Exec`, contrairement à une tâche plus spécifique, ne peut pas effectuer de traitement ou d’opérations conditionnelles supplémentaires en fonction du résultat de l’outil ou de la commande exécutée.
 
 La tâche `Exec` appelle *cmd.exe* au lieu d’appeler directement un processus.
@@ -71,5 +71,5 @@ L’exemple suivant utilise la tâche `Exec` pour exécuter une commande.
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[Tâches](../msbuild/msbuild-tasks.md)  
-[Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
+- [Tâches](../msbuild/msbuild-tasks.md)
+- [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

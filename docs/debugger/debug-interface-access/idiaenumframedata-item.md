@@ -12,35 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67f34aaccac8394e57493fbf31a5ad42a815759c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a8d083cea518032c121a5cb9e9213abbbd7eaaf8
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036457"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640153"
 ---
 # <a name="idiaenumframedataitem"></a>IDiaEnumFrameData::Item
-Récupère un élément de données d’image au moyen d’un index.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT Item (   
-   DWORD           index,  
-   IDiaFrameData** section  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- index  
- [in] Index de la [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) objet à récupérer. L’index est comprise entre 0 et `count`-1, où `count` est retourné par la [IDiaEnumFrameData::get_Count](../../debugger/debug-interface-access/idiaenumframedata-get-count.md) (méthode).  
-  
- section  
- [out] Retourne un [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) objet représentant l’élément de données d’images souhaitée.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+Récupère un élément de données d’image au moyen d’un index.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT Item ( 
+   DWORD           index,
+   IDiaFrameData** section
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ index
+
+[in] Index de la [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) objet à récupérer. L’index est comprise entre 0 et `count`-1, où `count` est retourné par la [IDiaEnumFrameData::get_Count](../../debugger/debug-interface-access/idiaenumframedata-get-count.md) (méthode).
+
+ section
+
+[out] Retourne un [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) objet représentant l’élément de données d’images souhaitée.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

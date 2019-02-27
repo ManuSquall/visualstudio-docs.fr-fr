@@ -23,15 +23,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 57480eff4e2ad6e6c33008be6f1bbc2a2f332432
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 748305683ad8f874c985e2599028152d608ccc84
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55015093"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56597417"
 ---
 # <a name="create-custom-views-of-objects-c-visual-basic-c"></a>Créer des vues personnalisées d’objets (C#, Visual Basic, C++)
-Vous pouvez personnaliser la façon dont Visual Studio affiche les types de données dans les fenêtres de variables du débogueur.  
+Vous pouvez personnaliser la façon dont Visual Studio affiche les types de données dans les fenêtres de variables du débogueur.
 
 ## <a name="native-code"></a>Code natif
 
@@ -39,16 +39,17 @@ Pour le code C++, vous pouvez ajouter des expansions de type de données personn
 
 ## <a name="attributes"></a>Attributs
 
-Dans C#, Visual Basic et C++ (C++ / c++ / code CLI uniquement), vous pouvez ajouter des expansions aux données personnalisées à l’aide <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute>, et <xref:System.Diagnostics.DebuggerBrowsableAttribute>.  
-  
-Dans le code [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], Visual Basic ne prend pas en charge l'attribut DebuggerBrowsable. Cette limitation a été supprimée dans les versions récentes de .NET Framework.    
+Dans C#, Visual Basic et C++ (C++ / c++ / code CLI uniquement), vous pouvez ajouter des expansions aux données personnalisées à l’aide <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute>, et <xref:System.Diagnostics.DebuggerBrowsableAttribute>.
+
+Dans le code [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], Visual Basic ne prend pas en charge l'attribut DebuggerBrowsable. Cette limitation a été supprimée dans les versions récentes de .NET Framework.
 
 ## <a name="visualizers"></a>Visualiseurs
 
-Vous pouvez écrire un visualiseur pour afficher les types de données managées. Pour plus d'informations, voir [Procédure : Écrire un visualiseur](/visualstudio/debugger/create-custom-visualizers-of-data).
-  
-## <a name="see-also"></a>Voir aussi  
- [Utilisation de l’attribut DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)   
- [Utilisation de l’attribut DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)   
- [Espion et Espion express, fenêtres](../debugger/watch-and-quickwatch-windows.md)   
- [Amélioration du débogage avec les attributs d’affichage de débogueur](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)
+Vous pouvez écrire un visualiseur pour afficher les types de données managées. Pour plus d’informations, consultez [Comment : écrire un visualiseur](/visualstudio/debugger/create-custom-visualizers-of-data).
+
+## <a name="see-also"></a>Voir aussi
+
+- [Utilisation de l’attribut DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)
+- [Utilisation de l’attribut DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)
+- [Espion et Espion express, fenêtres](../debugger/watch-and-quickwatch-windows.md)
+- [Amélioration du débogage avec les attributs d’affichage de débogueur](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c63e9293cffca2c1b071dcd537c0f49f8faa438
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 9b47c3315236dc228d3c561c4a3e0f333f5c9600
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853977"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615912"
 ---
 # <a name="generateresource-task"></a>GenerateResource (tâche)
 Convertit les fichiers *.txt* et *.resx* (format de ressources XML) en fichiers *.resources* binaires du Common Language Runtime qui peuvent être incorporés dans un exécutable binaire runtime ou compilés en assemblys satellites. Cette tâche est généralement utilisée pour convertir des fichiers *.txt* ou *.resx* en fichiers *.resources*. La fonctionnalité de la tâche `GenerateResource` est similaire à [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).
@@ -60,7 +60,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche `GenerateResource` .
 |`TrackFileAccess`|Paramètre <xref:System.Boolean> facultatif.<br /><br /> Si la valeur est true, le répertoire du fichier d’entrée est utilisé pour résoudre les chemins de fichiers relatifs.|
 |`UseSourcePath`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, indique que le répertoire du fichier d’entrée doit être utilisé pour résoudre les chemins de fichiers relatifs.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Étant donné que les fichiers *.resx* peuvent contenir des liens vers d’autres fichiers de ressources, il ne suffit pas de simplement comparer les horodatages des fichiers *.resx* et *.resources* pour savoir si les sorties sont à jour. Au lieu de cela, la tâche `GenerateResource` suit les liens figurant dans les fichiers *.resx* et vérifie aussi les horodatages des fichiers liés. Cela signifie qu’en général vous ne devez pas utiliser d’attributs `Inputs` et `Outputs` sur la cible contenant la tâche `GenerateResource`, car elle risque dans ce cas d’être ignorée alors qu’elle doit être exécutée.
 
 En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
@@ -95,5 +95,5 @@ En supposant que l’assembly se nomme myAssembly, le code suivant génère une 
 Sans les métadonnées \<LogicalName>, la ressource se nommerait *myAssembly.myResource.resources*.  Cet exemple s’applique uniquement au processus de génération Visual Basic et Visual C#.
 
 ## <a name="see-also"></a>Voir aussi
-[Tâches](../msbuild/msbuild-tasks.md)  
-[Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
+- [Tâches](../msbuild/msbuild-tasks.md)
+- [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

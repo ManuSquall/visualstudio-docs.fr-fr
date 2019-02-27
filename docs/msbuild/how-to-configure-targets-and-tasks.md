@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4889c0d9c7342652063633e11c82e7e8eb6d2c6
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: f3f3b272808d0e24747cceb97e4d1339b5989339
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853701"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603229"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Procédure : Configurer les cibles et les tâches
 Des tâches MSBuild sélectionnées peuvent être définies pour s’exécuter dans l’environnement qu’elles ciblent, quel que soit l’environnement de l’ordinateur de développement. Par exemple, quand vous utilisez un ordinateur 64 bits pour générer une application ciblant une architecture 32 bits, les tâches sélectionnées sont exécutées dans un processus 32 bits.
@@ -108,4 +108,4 @@ Les paramètres `MSBuildRuntime` et `MSBuildArchitecture` représentent le moyen
 > Les paramètres de tâche sont évalués dans le contexte du nœud parent et non dans le contexte de l’hôte de tâche. Les variables d’environnement qui dépendent du runtime ou de l’architecture (par exemple, l’emplacement des *fichiers programme*) correspondent à la valeur associée au nœud parent. Toutefois, si la même variable d’environnement est lue directement par la tâche, elle est correctement évaluée dans le contexte de l’hôte de tâche.
 
 ## <a name="see-also"></a>Voir aussi
-[Configurer les cibles et les tâches](../msbuild/configuring-targets-and-tasks.md)
+- [Configurer les cibles et les tâches](../msbuild/configuring-targets-and-tasks.md)

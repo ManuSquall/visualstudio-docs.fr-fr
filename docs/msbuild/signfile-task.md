@@ -18,40 +18,40 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bec3dbc52c381b5e691ecf7a8072a85da70e43fb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 496017f386e731e553bfce237bd1d2eabea46f49
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961960"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608979"
 ---
 # <a name="signfile-task"></a>SignFile (tâche)
 
 Signe le fichier spécifié à l'aide du certificat spécifié.
-  
+
 ## <a name="parameters"></a>Paramètres
 
  Le tableau ci-dessous décrit les paramètres de la tâche `SignFile` .
-  
+
  Notez que les certificats SHA-256 ne sont autorisés que sur les ordinateurs où est installé le .NET 4.5 et version ultérieure.
-  
+
 > [!WARNING]
 > Depuis Visual Studio 2013 Update 3, cette tâche possède une nouvelle signature qui permet de spécifier la version cible de .NET Framework pour le fichier. Vous êtes encouragé à utiliser la nouvelle signature dans la mesure du possible, car le processus MSBuild n'utilise les hachages SHA-256 que lorsque la version cible du .NET Framework est .NET 4.5 ou version ultérieure. Si la version cible du .NET Framework est .NET 4.0 ou version antérieure, le hachage SHA-256 ne sera pas utilisé.
-  
+
 |Paramètre|Description|
 |---------------|-----------------|
 |`CertificateThumbprint`|Paramètre `String` requis.<br /><br /> Spécifie le certificat à utiliser pour la signature. Ce certificat doit se trouver dans le magasin personnel de l'utilisateur actuel.|
 |`SigningTarget`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> requis.<br /><br /> Spécifie les fichiers à signer avec le certificat.|
 |`TimestampUrl`|Paramètre `String` facultatif.<br /><br /> Spécifie l'URL d'un serveur d'horodatage.|
 |`TargetFrameworkVersion`|Version du .NET Framework utilisée pour la cible.|
-  
-## <a name="remarks"></a>Notes
+
+## <a name="remarks"></a>Remarques
 
  En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base de tâche](../msbuild/task-base-class.md).
-  
+
 ## <a name="example"></a>Exemple
 
- L’exemple suivant utilise la tâche `SignFile` pour signer les fichiers spécifiés dans la collection d’éléments `FilesToSign` avec le certificat spécifié par la propriété `Certificate`.
+ L'exemple suivant utilise la tâche `SignFile` pour signer les fichiers spécifiés dans la collection d'éléments `FilesToSign` avec le certificat spécifié par la propriété `Certificate`.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -72,7 +72,7 @@ Signe le fichier spécifié à l'aide du certificat spécifié.
 
 > [!NOTE]
 > L'empreinte de certificat correspond au hachage SHA-1 du certificat. Pour plus d’informations, voir [Obtenir le hachage SHA-1 d’un certificat d’autorité de certification racine de confiance](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc733076\(v\=ws.10\)). Si vous copiez et collez l’empreinte numérique à partir des détails du certificat, veillez à ne pas inclure le caractère invisible (3F) supplémentaire, ce qui risque d’empêcher `SignFile` de trouver le certificat.
-  
-## <a name="see-also"></a>Voir aussi  
- [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)   
- [Tâches](../msbuild/msbuild-tasks.md)
+
+## <a name="see-also"></a>Voir aussi
+- [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
+- [Tâches](../msbuild/msbuild-tasks.md)

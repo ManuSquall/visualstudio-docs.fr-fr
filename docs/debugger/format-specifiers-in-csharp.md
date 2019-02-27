@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: dc36b13d6b6bdc6df0b881f2b4b91c32995a08d5
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 4091aa8c312938a725a89e5ef131923671af3169
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227681"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698987"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Dans les spécificateurs de format C# dans le débogueur Visual Studio
 Vous pouvez modifier le format dans lequel une valeur est affichée dans le **espion** fenêtre à l’aide de spécificateurs de format. Vous pouvez également utiliser des spécificateurs de format dans le **immédiat** fenêtre, le **commande** fenêtre, dans [des points de trace](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)et dans les fenêtres sources. Si vous faites une pause d’une expression dans ces fenêtres, le résultat s’affiche dans un [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) dans l’affichage du format spécifié.
@@ -68,5 +68,5 @@ Le tableau suivant décrit les C# spécificateurs pour le débogueur Visual Stud
 |résultats|Utilisé avec une variable d’un type qui implémente IEnumerable ou IEnumerable\<T >, habituellement le résultat d’une expression de requête. Affiche uniquement les membres contenant les résultats de requête.|Affiche tous les membres|Affiche les membres qui répondent aux conditions de la requête|
 
 ## <a name="see-also"></a>Voir aussi
-[Fenêtres Espion et Espion express](../debugger/watch-and-quickwatch-windows.md)  
-[Fenêtres Variables locales et Automatique](../debugger/autos-and-locals-windows.md)
+- [Fenêtres Espion et Espion express](../debugger/watch-and-quickwatch-windows.md)
+- [Fenêtres Variables locales et Automatique](../debugger/autos-and-locals-windows.md)

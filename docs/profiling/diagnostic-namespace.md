@@ -12,41 +12,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68f365210c2ed365a7e9ce75ab3c6fbcd309e01a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 03671f314dca3c016f9524bcb246b74e0eb1f837
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54984052"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600671"
 ---
 # <a name="diagnostic-namespace"></a>diagnostic, espace de noms
-L’espace de noms `diagnostics` fournit des fonctionnalités permettant d’émettre des marqueurs du visualiseur concurrentiel.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-namespace diagnostic;  
-```  
-  
-## <a name="members"></a>Membres  
-  
-### <a name="classes"></a>Classes  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[marker_series, classe](../profiling/marker-series-class.md)|Représente un canal série d’événements générés par un fournisseur unique.|  
-|[span, classe](../profiling/span-class.md)|Définit une phase de l’application.|  
-  
-### <a name="enumerations"></a>Énumérations  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[marker_importance, énumération](../profiling/marker-importance-enumeration.md)|Représente le niveau d’importance d’un marqueur du visualiseur concurrentiel.|  
-  
-## <a name="requirements"></a>Spécifications  
- **En-tête :** *cvmarkersobj.h*  
-  
- **Espace de noms :** Concurrence  
-  
-## <a name="see-also"></a>Voir aussi  
- [Concurrency, espace de noms (visualiseur concurrentiel)](../profiling/concurrency-namespace-concurrency-visualizer.md)
+L’espace de noms `diagnostics` fournit des fonctionnalités permettant d’émettre des marqueurs du visualiseur concurrentiel.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+namespace diagnostic;
+```
+
+## <a name="members"></a>Membres
+
+### <a name="classes"></a>Classes
+
+|Name|Description|
+|----------|-----------------|
+|[marker_series, classe](../profiling/marker-series-class.md)|Représente un canal série d’événements générés par un fournisseur unique.|
+|[span, classe](../profiling/span-class.md)|Définit une phase de l’application.|
+
+### <a name="enumerations"></a>Énumérations
+
+|Name|Description|
+|----------|-----------------|
+|[marker_importance, énumération](../profiling/marker-importance-enumeration.md)|Représente le niveau d’importance d’un marqueur du visualiseur concurrentiel.|
+
+## <a name="requirements"></a>Spécifications
+ **En-tête :** *cvmarkersobj.h*
+
+ **Espace de noms :** Concurrence
+
+## <a name="see-also"></a>Voir aussi
+- [Concurrency, espace de noms (visualiseur concurrentiel)](../profiling/concurrency-namespace-concurrency-visualizer.md)

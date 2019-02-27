@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f974cde33103f86aa7330600e87c856119f537c
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: d996aa0c16c67cfdda23a1ecb63adcbb32d02b15
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853545"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596293"
 ---
 # <a name="copy-task"></a>Copy (tâche)
 Copie les fichiers à un nouvel emplacement du système de fichiers.
@@ -65,7 +65,7 @@ Des avertissements sont enregistrés, notamment ceux-ci :
 
 - `Copy.RemovingReadOnlyAttribute`
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Le paramètre `DestinationFolder` ou `DestinationFiles` doit être spécifié, mais pas les deux. Si les deux paramètres sont spécifiés, la tâche échoue, et une erreur est enregistrée.
 
 En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
@@ -111,5 +111,5 @@ L’exemple suivant illustre la procédure à suivre pour effectuer une copie r�
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[Tâches](../msbuild/msbuild-tasks.md)  
-[Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
+- [Tâches](../msbuild/msbuild-tasks.md)
+- [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

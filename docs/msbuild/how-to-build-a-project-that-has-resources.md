@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5e8f7f8bd6410f338fd7a40f4c9b1ee663211c8
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: c7b5357975ff893ca889de07bada83f4524a16c5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55852838"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610409"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Procédure : Générer un projet qui dispose de ressources
 Si vous générez les versions localisées d’un projet, tous les éléments de l’interface utilisateur doivent être séparés dans des fichiers de ressources correspondant aux différentes langues. Si le projet utilise uniquement des chaînes, les fichiers de ressources peuvent utiliser des fichiers texte. Vous pouvez également utiliser des fichiers *.resx* comme fichiers de ressources.
@@ -77,7 +77,7 @@ L’exemple de projet suivant contient deux tâches : la tâche `GenerateResour
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[MSBuild](../msbuild/msbuild.md)  
-[Tâche GenerateResource](../msbuild/generateresource-task.md)  
-[Tâche Csc](../msbuild/csc-task.md)  
-[Resgen.exe (Resource File Generator)](/dotnet/framework/tools/resgen-exe-resource-file-generator)
+- [MSBuild](../msbuild/msbuild.md)
+- [Tâche GenerateResource](../msbuild/generateresource-task.md)
+- [Tâche Csc](../msbuild/csc-task.md)
+- [Resgen.exe (Resource File Generator)](/dotnet/framework/tools/resgen-exe-resource-file-generator)

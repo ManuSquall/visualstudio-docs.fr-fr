@@ -1,14 +1,9 @@
 ---
 title: "'Catch' attendu | Microsoft Docs"
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1033
 dev_langs:
@@ -16,16 +11,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: f1cd947f-eba2-411e-8e84-8ca86f608643
-caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 244635605abafc5c0bd22c5203b105aa6e7dc669
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 4a25f72fccfd072243d6d0fdfd1d311c1a3bb6f4
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54344107"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841446"
 ---
 # <a name="expected-catch"></a>'catch' attendu
 Vous avez utilisé la gestion des exceptions **essayez** bloquer, mais n’avez pas écrit associé **catch** instruction. Le mécanisme de gestion des exceptions requiert que le code peut échouer, ainsi que le code qui ne doit pas s’exécuter si une exception se produit, être encapsulées à l’intérieur d’un **essayez** bloc. Exceptions sont levées à partir la **essayez** bloquer à l’aide de la **lever** instruction et interceptées en dehors de la **essayez** bloc avec un ou plusieurs **catch**instructions.  

@@ -12,41 +12,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c40ec5aa549239053848d6eb2a69bd07420df705
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cb68d65e3af5d59833eafea725129ecdf2305d30
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54944603"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56616961"
 ---
 # <a name="idiasymbolgetnoinline"></a>IDiaSymbol::get_noInline
-Récupère un indicateur qui spécifie si la fonction a été marquée comme n’étant ne pas inline (à l’aide de la [noinline](/cpp/cpp/noinline) attribut).  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_noInline(  
-   BOOL *pFlag  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pFlag`  
- [out] Retourne `TRUE` si la fonction a la `noinline` attribut ; sinon, retourne `FALSE`.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
-  
+Récupère un indicateur qui spécifie si la fonction a été marquée comme n’étant ne pas inline (à l’aide de la [noinline](/cpp/cpp/noinline) attribut).
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_noInline(
+   BOOL *pFlag
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pFlag`
+
+[out] Retourne `TRUE` si la fonction a la `noinline` attribut ; sinon, retourne `FALSE`.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+
 > [!NOTE]
->  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
-  
-## <a name="requirements"></a>Spécifications  
-  
-|Spécification|Description|  
-|-----------------|-----------------|  
-|En-tête :|dia2.h|  
-|Version :|DIA SDK 8.0|  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [noinline](/cpp/cpp/noinline)
+>  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+
+## <a name="requirements"></a>Spécifications
+
+|Spécification|Description|
+|-----------------|-----------------|
+|En-tête :|dia2.h|
+|Version :|DIA SDK 8.0|
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [noinline](/cpp/cpp/noinline)

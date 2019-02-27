@@ -17,16 +17,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bc7d75329e83345107cac18fa49267dc62f964d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: cf5fb798bde008da1be3bc562ca0974d2ed916e0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316702"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634303"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Mesurer les performances d’application en analysant l’utilisation de l’UC
 Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les problèmes de performances dans votre application. Cette procédure montre comment utiliser l’onglet **Utilisation de l’UC** des outils de diagnostics pour obtenir les données de performances de votre application. Les outils de diagnostics sont pris en charge pour le développement .NET dans Visual Studio (y compris ASP.NET) et pour le développement natif/C++.
-  
+
 Quand le débogueur est suspendu, l’outil **Utilisation de l’UC** collecte les informations relatives aux fonctions qui s’exécutent dans votre application. L’outil répertorie les fonctions qui ont effectué un travail et fournit un graphique chronologique que vous pouvez utiliser pour examiner des segments spécifiques d’une session d’échantillonnage.
 
 Le hub de diagnostic propose de nombreuses autres options pour exécuter et gérer votre session de diagnostic. Si l’outil **Utilisation de l’UC** ne vous fournit pas les données dont vous avez besoin, les [autres outils de profilage](../profiling/profiling-feature-tour.md) fournissent des types d’informations différents qui peuvent vous être utiles. Dans de nombreux cas, le goulot d’étranglement des performances de votre application peut ne pas provenir de votre processeur, mais de la mémoire, de l’interface utilisateur de rendu ou du temps de requête réseau. Le hub de diagnostic vous offre de nombreuses autres options pour enregistrer et analyser ce type de données.
@@ -40,16 +40,16 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 > [!div class="checklist"]
 > * Collecter les données d'utilisation de l'UC
 > * Analyser les données d’utilisation de l’UC
-  
-## <a name="step-1-collect-profiling-data"></a>Étape 1 : Collecter les données de profilage 
-  
+
+## <a name="step-1-collect-profiling-data"></a>Étape 1 : Collecter les données de profilage
+
 1.  Ouvrez le projet que vous voulez déboguer dans Visual Studio, puis définissez un point d’arrêt dans votre application à l’endroit où vous souhaitez examiner l’utilisation du processeur.
 
 2.  Définissez un deuxième point d’arrêt à la fin de la fonction ou de la région de code que vous souhaitez analyser.
 
     > [!TIP]
     > En définissant deux points d’arrêt, vous limitez la collecte de données aux sections de code que vous souhaitez analyser.
-  
+
 3.  La fenêtre **Outils de diagnostic** apparaît automatiquement, sauf si vous l’avez désactivée. Pour réafficher la fenêtre, cliquez sur **Déboguer** > **Fenêtres** > **Afficher les outils de diagnostic**.
 
 4.  Vous pouvez choisir d’afficher **Utilisation de la mémoire**, [Utilisation de l’UC](../profiling/Memory-Usage.md) ou les deux, avec le paramètre **Sélectionner les outils** de la barre d’outils. Si vous exécutez Visual Studio Enterprise, vous pouvez également activer ou désactiver IntelliTrace dans **Outils** > **Options** > **IntelliTrace**.
@@ -85,9 +85,9 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
      Le profileur commence la préparation des données de thread. Attendez qu’elle se termine.
 
      ![Outils de diagnostics - Préparation des threads](../profiling/media/DiagToolsPreparingThreads.png "DiagToolsPreparingThreads")
-  
+
      L’outil Utilisation de l’UC affiche le rapport sous l’onglet **Utilisation de l’UC**.
-  
+
      ![Outils de diagnostics - Onglet Utilisation de l’UC](../profiling/media/DiagToolsCPUUsageTab.png "DiagToolsCPUUsageTab")
 
      À ce stade, vous pouvez commencer à analyser les données.
@@ -105,7 +105,7 @@ Nous vous recommandons de commencer à analyser vos données en examinant la lis
 
 2. Dans la liste, double-cliquez sur l’une des fonctions d’application qui effectuent le plus de travail.
 
-    Lorsque vous double-cliquez sur une fonction, la vue **Appelant/appelé** s’ouvre dans le volet gauche. 
+    Lorsque vous double-cliquez sur une fonction, la vue **Appelant/appelé** s’ouvre dans le volet gauche.
 
     ![Outils de diagnostics - Vue Appelant/appelé](../profiling/media/DiagToolsCallerCallee.png "DiagToolsCallerCallee")
 
@@ -118,22 +118,22 @@ Nous vous recommandons de commencer à analyser vos données en examinant la lis
     > Des valeurs élevées dans le **corps de la fonction** peuvent indiquer un goulot d’étranglement de performances au sein de la fonction.
 
 3. Si vous souhaitez afficher une vue plus générale indiquant l’ordre dans lequel les fonctions sont appelées, sélectionnez **Arborescence des appels** dans la liste déroulante située en haut du volet.
- 
+
     Chaque zone numérotée dans l'illustration est en rapport avec une étape de la procédure.
-  
+
     ![Outils de diagnostics - Arborescence des appels](../profiling/media/DiagToolsCallTree.png "DiagToolsCallTree")
-  
+
 |||
 |-|-|
-|![Étape 1](../profiling/media/ProcGuid_1.png "ProcGuid_1")|Le nœud de premier niveau des arborescences d'appels de l'outil Utilisation de l'UC est un pseudo-nœud|  
-|![Étape 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|Dans la plupart des applications, quand l'option [Afficher le code externe](#view-external-code) est désactivée, le nœud de deuxième niveau est un nœud **[Code externe]** contenant le code système et framework qui démarre et arrête l'application, dessine l'interface utilisateur, contrôle la planification des threads et fournit d'autres services de niveau inférieur à l'application.|  
+|![Étape 1](../profiling/media/ProcGuid_1.png "ProcGuid_1")|Le nœud de premier niveau des arborescences d'appels de l'outil Utilisation de l'UC est un pseudo-nœud|
+|![Étape 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|Dans la plupart des applications, quand l'option [Afficher le code externe](#view-external-code) est désactivée, le nœud de deuxième niveau est un nœud **[Code externe]** contenant le code système et framework qui démarre et arrête l'application, dessine l'interface utilisateur, contrôle la planification des threads et fournit d'autres services de niveau inférieur à l'application.|
 |![Étape 3](../profiling/media/ProcGuid_3.png "ProcGuid_3")|Les enfants du nœud de deuxième niveau sont les méthodes en code utilisateur et des routines asynchrones appelées ou créées par le code système et framework de deuxième niveau.|
 |![Étape 4](../profiling/media/ProcGuid_4.png "ProcGuid_4")|Les nœuds enfants d'une méthode contiennent des données seulement pour les appels de la méthode parente. Lorsque l'option **Afficher le Code externe** est désactivée, les méthodes d'application peuvent également contenir un nœud **[Code externe]** .|
 
 Voici davantage d’informations sur les valeurs de colonne :
 
 - La section **Total UC (ms)** montre la quantité de travail effectué par la fonction et toute autre fonction qu’elle a appelée. Les valeurs d’UC total élevées indiquent les fonctions les plus coûteuses.
-  
+
 - La colonne **Processeur auto (ms)** indique la quantité de travail effectué par le code dans le corps de la fonction, à l’exception du travail effectué par les fonctions qu’elle a appelées. Des valeurs élevées dans la colonne **Processeur auto (ms)** peuvent indiquer un goulot d’étranglement des performances au sein de la fonction.
 
 - **Modules** Nom du module contenant la fonction, ou nombre de modules contenant les fonctions dans un nœud [Code externe].
@@ -141,13 +141,13 @@ Voici davantage d’informations sur les valeurs de colonne :
 ## <a name="view-external-code"></a>Afficher le code externe
 
 Le code externe correspond aux fonctions des composants système et de framework exécutés par le code que vous écrivez. Le code externe inclut les fonctions qui démarrent et arrêtent l'application, dessinent l'interface utilisateur, contrôlent les threads et fournissent d'autres services de bas niveau à l'application. Dans la plupart des cas, vous n’êtes pas intéressé par le code externe. L’outil Utilisation de l’UC regroupe donc les fonctions externes d’une méthode utilisateur au sein d’un même nœud **[Code externe]**.
-  
-Si vous voulez afficher les chemins d’appel du code externe, choisissez **Afficher le code externe** dans la liste **Filtrer la vue**, puis **Appliquer**.  
-  
-![Choisir Filtrer l’affichage, puis Afficher le code externe](../profiling/media/DiagToolsShowExternalCode.png "DiagToolsShowExternalCode")  
-  
+
+Si vous voulez afficher les chemins d’appel du code externe, choisissez **Afficher le code externe** dans la liste **Filtrer la vue**, puis **Appliquer**.
+
+![Choisir Filtrer l’affichage, puis Afficher le code externe](../profiling/media/DiagToolsShowExternalCode.png "DiagToolsShowExternalCode")
+
 N'oubliez pas que de nombreuses chaînes d'appel en code externe sont profondément imbriquées, la largeur de la colonne Nom de fonction ne peut pas dépasser la largeur d'affichage de presque tous les moniteurs d'ordinateur, sauf les plus larges. Si tel est le cas, les noms de fonction sont affichés sous forme de **[…]**.
-  
+
 Utilisez la zone de recherche pour trouver le nœud que vous cherchez, puis utilisez la barre de défilement horizontal pour afficher les données dans la vue.
 
 > [!TIP]
@@ -158,4 +158,4 @@ Utilisez la zone de recherche pour trouver le nœud que vous cherchez, puis util
 Dans ce didacticiel, vous avez appris comment collecter et analyser les données d’utilisation de l’UC. Si vous avez déjà [découvert les outils de profilage](../profiling/profiling-feature-tour.md), vous pouvez souhaiter avoir une vue d’ensemble rapide de la manière d’analyser l’utilisation de la mémoire dans vos applications.
 
 > [!div class="nextstepaction"]
-> [Profiler l’utilisation de la mémoire dans Visual Studio](../profiling/memory-usage.md) 
+> [Profiler l’utilisation de la mémoire dans Visual Studio](../profiling/memory-usage.md)

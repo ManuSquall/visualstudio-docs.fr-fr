@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12c7c2edc71843377c4213764dfb30727a14d4b5
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: 8b8618cc3484584430bbe3ae3fde59b6e5d5fc78
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987598"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56612359"
 ---
 # <a name="idiadatasource"></a>IDiaDataSource
 Lance l’accès à une source de symboles de débogage.
@@ -40,7 +40,7 @@ Le tableau suivant présente les méthodes de `IDiaDataSource`.
 |[IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)|Prépare les données de débogage stockées dans un fichier du programme (.pdb) de la base de données accédé via un flux de données en mémoire.|
 |[IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)|Ouvre une session pour l’interrogation des symboles.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Un appel à une des méthodes load de la `IDiaDataSource` interface ouvre la source de symboles. Un appel réussi au [IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) méthode retourne un [IDiaSession](../../debugger/debug-interface-access/idiasession.md) interface qui prend en charge l’interrogation de la source de données. Si la méthode load renvoie une erreur liée au fichier le [IDiaDataSource::get_lastError](../../debugger/debug-interface-access/idiadatasource-get-lasterror.md) méthode retourner la valeur contient le nom de fichier associé à l’erreur.
 
 ## <a name="notes-for-callers"></a>Notes de publication pour les appelants
@@ -70,4 +70,4 @@ Bibliothèque : diaguids.lib
 DLL : msdia80.dll
 
 ## <a name="see-also"></a>Voir aussi
-[Interfaces (SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [Interfaces (SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

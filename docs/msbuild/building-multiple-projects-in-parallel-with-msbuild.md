@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6fa54b0a0931c5bbefd7efb3a86d668f6cb7c64
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: dd56fc50dda1dcbc7eee01ebca8f1e789a839851
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853064"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600961"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>Générer plusieurs projets en parallèle avec MSBuild
 Vous pouvez utiliser MSBuild pour générer plus rapidement plusieurs projets en les exécutant en parallèle. Pour exécuter des builds en parallèle, vous utilisez les paramètres suivants sur un ordinateur multicœur ou multiprocesseur :
@@ -70,6 +70,6 @@ Voici un exemple tiré de *microsoft.common.targets* qui décrit comment défini
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[Utiliser plusieurs processeurs pour générer des projets](../msbuild/using-multiple-processors-to-build-projects.md)  
-[Écrire des enregistreurs d’événements prenant en charge plusieurs processeurs](../msbuild/writing-multi-processor-aware-loggers.md)  
-[Blog sur le paramétrage du parallélisme de génération C++](http://go.microsoft.com/fwlink/?LinkId=251457)
+- [Utiliser plusieurs processeurs pour générer des projets](../msbuild/using-multiple-processors-to-build-projects.md)
+- [Écrire des enregistreurs d’événements prenant en charge plusieurs processeurs](../msbuild/writing-multi-processor-aware-loggers.md)
+- [Blog sur le paramétrage du parallélisme de génération C++](http://go.microsoft.com/fwlink/?LinkId=251457)

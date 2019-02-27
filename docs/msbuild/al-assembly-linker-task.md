@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd28e67a629fd9922ed1ac30d497c1bb8bbe9a56
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 5e863b8a35d8ef0d5ced0a200d1033b3768df690
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854042"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624904"
 ---
 # <a name="al-assembly-linker-task"></a>AL (Assembly Linker), tâche
-La tâche AL encapsule *AL.exe*, un outil distribué avec le [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. L’outil Assembly Linker sert à créer un assembly avec un manifeste à partir d’un ou plusieurs fichiers qui sont soit des modules, soit des fichiers de ressources. Les compilateurs et les environnements de développement pouvant déjà fournir ces fonctionnalités, il n’est généralement pas nécessaire d’utiliser cette tâche directement. Assembly Linker est très utile aux développeurs ayant besoin de créer un assembly unique à partir de plusieurs fichiers de composant, tels que ceux qui peuvent être générés par le développement en plusieurs langages. Cette tâche ne combine pas les modules dans un fichier d’assembly unique. Les modules individuels doivent toujours être distribués et disponibles pour que l’assembly résultant se charge correctement. Pour plus d’informations sur *AL.exe*, consultez [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).  
+La tâche AL encapsule *AL.exe*, un outil distribué avec le [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. L’outil Assembly Linker sert à créer un assembly avec un manifeste à partir d’un ou plusieurs fichiers qui sont soit des modules, soit des fichiers de ressources. Les compilateurs et les environnements de développement pouvant déjà fournir ces fonctionnalités, il n’est généralement pas nécessaire d’utiliser cette tâche directement. Assembly Linker est très utile aux développeurs ayant besoin de créer un assembly unique à partir de plusieurs fichiers de composant, tels que ceux qui peuvent être générés par le développement en plusieurs langages. Cette tâche ne combine pas les modules dans un fichier d’assembly unique. Les modules individuels doivent toujours être distribués et disponibles pour que l’assembly résultant se charge correctement. Pour plus d’informations sur *AL.exe*, consultez [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).
 
-## <a name="parameters"></a>Paramètres  
- Le tableau ci-dessous décrit les paramètres de la tâche `AL` .  
+## <a name="parameters"></a>Paramètres
+ Le tableau ci-dessous décrit les paramètres de la tâche `AL` .
 
 
 | Paramètre | Description |
@@ -69,30 +69,29 @@ La tâche AL encapsule *AL.exe*, un outil distribué avec le [!INCLUDE[winsdklon
 | `Win32Icon` | Paramètre `String` facultatif.<br /><br /> Insère un fichier *.ico* dans l’assembly. Le fichier *.ico* donne au fichier de sortie l’aspect souhaité dans l’Explorateur de fichiers. Ce paramètre correspond à l’option `/win32icon` dans [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
 | `Win32Resource` | Paramètre `String` facultatif.<br /><br /> Insère une ressource Win32 (fichier *.res*) dans le fichier de sortie. Pour plus d’informations, consultez la documentation relative à l’option `/win32res` dans [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
 
-## <a name="remarks"></a>Notes  
- En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.ToolTask>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).  
+## <a name="remarks"></a>Remarques
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.ToolTask>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
 
-## <a name="example"></a>Exemple  
- L’exemple suivant crée un assembly avec les options spécifiées.  
+## <a name="example"></a>Exemple
+ L’exemple suivant crée un assembly avec les options spécifiées.
 
-```xml  
-<AL  
-    EmbedResources="@(EmbeddedResource)"  
-    Culture="%(EmbeddedResource.Culture)"  
-    TemplateFile="@(IntermediateAssembly)"  
-    KeyContainer="$(KeyContainerName)"  
-    KeyFile="$(KeyOriginatorFile)"  
-    DelaySign="$(DelaySign)"  
+```xml
+<AL
+    EmbedResources="@(EmbeddedResource)"
+    Culture="%(EmbeddedResource.Culture)"
+    TemplateFile="@(IntermediateAssembly)"
+    KeyContainer="$(KeyContainerName)"
+    KeyFile="$(KeyOriginatorFile)"
+    DelaySign="$(DelaySign)"
 
-    OutputAssembly=  
-       "%(EmbeddedResource.Culture)\$(TargetName).resources.dll">  
+    OutputAssembly=
+       "%(EmbeddedResource.Culture)\$(TargetName).resources.dll">
 
-    <Output TaskParameter="OutputAssembly"  
-        ItemName="SatelliteAssemblies"/>  
-</AL>  
-```  
+    <Output TaskParameter="OutputAssembly"
+        ItemName="SatelliteAssemblies"/>
+</AL>
+```
 
-## <a name="see-also"></a>Voir aussi  
-* [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)   
+## <a name="see-also"></a>Voir aussi
+* [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
 * [Tâches](../msbuild/msbuild-tasks.md)
-

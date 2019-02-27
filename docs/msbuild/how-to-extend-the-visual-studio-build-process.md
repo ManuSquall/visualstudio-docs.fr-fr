@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8353bc1cfd9b3b48357979345ba29532cd3102bc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d22e92bc025cc1372be2b765d803c2c658364b7e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908489"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603259"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Procédure : Étendre le processus de génération Visual Studio
 Le processus de génération [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] est défini par une série de fichiers *.targets* [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] importés dans votre fichier projet. Parmi ces fichiers importés, *Microsoft.Common.targets* peut être étendu de manière à exécuter des tâches personnalisées à différentes étapes du processus de génération. Cet article décrit deux méthodes que vous pouvez utiliser pour étendre le processus de génération [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] :
@@ -35,8 +35,8 @@ Le fichier *Microsoft.Common.targets* contient un ensemble de cibles vides préd
 
 1. Identifiez une cible prédéfinie dans *Microsoft.Common.targets* que vous souhaitez remplacer. Consultez le tableau ci-dessous pour obtenir la liste complète des cibles que vous pouvez substituer en toute sécurité.
 
-2. Définissez la ou les cibles à la fin de votre fichier projet, juste avant la balise `</Project>`. Par exemple :  
-  
+2. Définissez la ou les cibles à la fin de votre fichier projet, juste avant la balise `</Project>`. Par exemple :
+
     ```xml
     <Project>
         ...
@@ -48,7 +48,7 @@ Le fichier *Microsoft.Common.targets* contient un ensemble de cibles vides préd
         </Target>
     </Project>
     ```
-  
+
 3. Générez le fichier projet.
 
 Le tableau suivant montre toutes les cibles de *Microsoft.Common.targets* que vous pouvez substituer en toute sécurité.
@@ -124,6 +124,6 @@ Les projets qui importent vos fichiers projet peuvent substituer ces propriété
 |`CompileDependsOn`|Propriété à substituer si vous souhaitez insérer des processus personnalisés avant ou après l’étape de compilation.|
 
 ## <a name="see-also"></a>Voir aussi
-[Intégration Visual Studio](../msbuild/visual-studio-integration-msbuild.md)  
-[Concepts MSBuild](../msbuild/msbuild-concepts.md)  
-[Fichiers .targets](../msbuild/msbuild-dot-targets-files.md)
+- [Intégration Visual Studio](../msbuild/visual-studio-integration-msbuild.md)
+- [Concepts MSBuild](../msbuild/msbuild-concepts.md)
+- [Fichiers .targets](../msbuild/msbuild-dot-targets-files.md)

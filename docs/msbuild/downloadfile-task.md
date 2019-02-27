@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea9b6e655ea9c5eb6c598d7a4bdbb09ed3345903
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 2cde5e140bb9dd2019de684124f69096d2022fe0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853506"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610214"
 ---
 # <a name="downloadfile-task"></a>DownloadFile, tâche
 Télécharge les fichiers spécifiés à l’aide du protocole HTTP (Hyper-Text Transfer Protocol).
@@ -48,7 +48,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche `DownloadFile` .
 |`SkipUnchangedFiles`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, ignore le téléchargement des fichiers qui sont inchangés. La valeur par défaut est `true`. La tâche `DownloadFile` considère que les fichiers sont inchangés s’ils ont la même taille et la même heure de dernière modification selon le serveur distant. <br /><br />**Remarque :**  Les serveurs HTTP n’indiquent pas tous la date de dernière modification des fichiers, ce qui entraîne un nouveau téléchargement du fichier.|
 |`SourceUrl`|Paramètre `String` requis.<br /><br /> Spécifie l’URL à télécharger.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Exemple
@@ -73,5 +73,5 @@ L’exemple suivant télécharge un fichier et l’inclut dans les éléments `C
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[Tâches](../msbuild/msbuild-tasks.md)  
-[Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
+- [Tâches](../msbuild/msbuild-tasks.md)
+- [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

@@ -10,33 +10,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46a8f3c19559f5c2b267410d22fd30f32dca7a02
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a0d6332be7049d575b15c229b5892112fc972895
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947099"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719763"
 ---
 # <a name="window-menu-commands"></a>commandes du menu Fenêtre
-Le **fenêtre** menu fournit des commandes pour gérer les fenêtres Spy ++.  
-  
- **Cascade**  
- Réorganise toutes les fenêtres dans un modèle en cascade.  
-  
- **Mosaïque horizontale**  
- Réorganisez toutes les fenêtres en mosaïque horizontale.  
-  
- **Mosaïque verticale**  
- Réorganise toutes les fenêtres en mosaïque verticale.  
-  
- **Réorganiser les icônes**  
- Réorganise les icônes d’affichage si les fenêtres ont été réduites.  
-  
- **Fermer / Fermer tout**  
- Ferme une ou toutes les fenêtres dans Spy ++.  
-  
- **Actualiser**  
- Actualise la vue actuellement sélectionnée.  
-  
- **Fenêtre**  
- Autorise la sélection d’une fenêtre spécifique.
+Le **fenêtre** menu fournit des commandes pour gérer les fenêtres Spy ++.
+
+ **Cascade** Réorganise toutes les fenêtres dans un modèle en cascade.
+
+ **Mosaïque horizontale** réorganiser toutes les fenêtres en mosaïque horizontale.
+
+ **Mosaïque verticale** Réorganise toutes les fenêtres en mosaïque verticale.
+
+ **Réorganiser les icônes** réorganise les icônes d’affichage si les fenêtres ont été réduites.
+
+ **Fermer / Fermer tout** ferme une ou toutes les fenêtres dans Spy ++.
+
+ **Actualiser** actualise la vue actuellement sélectionnée.
+
+ **Fenêtre** autorise la sélection d’une fenêtre spécifique.

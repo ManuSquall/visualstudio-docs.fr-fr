@@ -14,28 +14,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e283128d17d088ed9d90597ccde24bcb22470b9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: becf63a9945c8e12f3c306da757e288a3fe8134c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035612"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645223"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>Procédure : Créer manuellement des sessions de performance
-Vous pouvez créer manuellement des sessions de performance. Pour cela, vous n’êtes pas obligé d’ouvrir un projet dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Pour plus d’informations, consultez [Configurer des sessions de performances](../profiling/configuring-performance-sessions.md).  
-  
-### <a name="to-manually-create-a-performance-session"></a>Pour créer manuellement une session de performance  
-  
-1.  Dans le menu **Déboguer**, pointez sur **Profileur**, puis sur **Explorateur de performances** et cliquez sur **Nouvelle session de performance**.  
-  
-     Une session de performance vide est ajoutée à l’**Explorateur de performances**.  
-  
-2.  Cliquez avec le bouton droit sur **Cibles**, puis cliquez sur **Ajouter un fichier binaire cible**.  
-  
-3.  Dans la boîte de dialogue **Ajouter un fichier binaire cible**, sélectionnez le nom du fichier, puis cliquez sur **Ouvrir**.  
-  
-     Un nouveau fichier binaire est ajouté.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Explorateur de performances](../profiling/performance-explorer.md)   
- [Prise en main](../profiling/getting-started-with-performance-tools.md)
+Vous pouvez créer manuellement des sessions de performance. Pour cela, vous n’êtes pas obligé d’ouvrir un projet dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Pour plus d’informations, consultez [Configurer des sessions de performances](../profiling/configuring-performance-sessions.md).
+
+### <a name="to-manually-create-a-performance-session"></a>Pour créer manuellement une session de performance
+
+1.  Dans le menu **Déboguer**, pointez sur **Profileur**, puis sur **Explorateur de performances** et cliquez sur **Nouvelle session de performance**.
+
+     Une session de performance vide est ajoutée à l’**Explorateur de performances**.
+
+2.  Cliquez avec le bouton droit sur **Cibles**, puis cliquez sur **Ajouter un fichier binaire cible**.
+
+3.  Dans la boîte de dialogue **Ajouter un fichier binaire cible**, sélectionnez le nom du fichier, puis cliquez sur **Ouvrir**.
+
+     Un nouveau fichier binaire est ajouté.
+
+## <a name="see-also"></a>Voir aussi
+- [Explorateur de performances](../profiling/performance-explorer.md)
+- [Prise en main](../profiling/getting-started-with-performance-tools.md)

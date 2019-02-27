@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1c5b485bf0fbd06b71aa7fb3239ca2796a4512a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 98826ec691efdca70a9d0ca98b089904b2ed0c48
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54944798"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629779"
 ---
 # <a name="idialinenumbergetvirtualaddress"></a>IDiaLineNumber::get_virtualAddress
-Récupère l’adresse virtuelle (VA) du bloc.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_virtualAddress (   
-   ULONGLONG* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pRetVal`  
- [out] Retourne l’adresse virtuelle du bloc.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+Récupère l’adresse virtuelle (VA) du bloc.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_virtualAddress ( 
+   ULONGLONG* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pRetVal`
+
+[out] Retourne l’adresse virtuelle du bloc.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

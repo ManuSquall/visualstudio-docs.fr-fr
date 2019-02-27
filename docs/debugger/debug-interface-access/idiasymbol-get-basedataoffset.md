@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64b77c08d98535666f109610b618eac00b24aaf7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 33967e2e3fd241bae772e1ec208f42f7c9ac7419
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069003"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632028"
 ---
 # <a name="idiasymbolgetbasedataoffset"></a>IDiaSymbol::get_baseDataOffset
-Récupère le décalage de la base de données.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_baseDataOffset(   
-   DWORD* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pRetVal`  
- [out] Un pointeur vers un `DWORD` qui contient l’offset de la base de données.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Récupère le décalage de la base de données.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_baseDataOffset(
+   DWORD* pRetVal);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pRetVal`
+
+[out] Un pointeur vers un `DWORD` qui contient l’offset de la base de données.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

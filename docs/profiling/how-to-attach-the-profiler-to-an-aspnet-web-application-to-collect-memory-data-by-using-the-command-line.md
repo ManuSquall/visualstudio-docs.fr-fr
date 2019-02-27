@@ -9,62 +9,62 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 46920d6733dd22cb2f36a42a62b7fb227ddd398c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e82e17a01e6cbfce82e270e25de16ee788a14878
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036847"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56614205"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Procédure : attacher le profileur à une application web ASP.NET pour collecter des données de mémoire en utilisant la ligne de commande
-Cet article explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour attacher le profileur à une application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] et collecter des données sur le nombre et la taille des allocations de mémoire du .NET Framework. Vous pouvez également collecter des données sur la durée de vie des objets en mémoire du .NET Framework.  
+Cet article explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour attacher le profileur à une application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] et collecter des données sur le nombre et la taille des allocations de mémoire du .NET Framework. Vous pouvez également collecter des données sur la durée de vie des objets en mémoire du .NET Framework.
 
 > [!NOTE]
 >  Pour obtenir le chemin des outils de profilage, consultez [Spécifier le chemin des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
 
- Pour collecter des données de performances auprès d’une application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], vous devez utiliser l’outil [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) pour initialiser les variables d’environnement appropriées sur l’ordinateur qui héberge l’application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Vous devez ensuite redémarrer l’ordinateur pour configurer le serveur web pour le profilage.  
+ Pour collecter des données de performances auprès d’une application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], vous devez utiliser l’outil [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) pour initialiser les variables d’environnement appropriées sur l’ordinateur qui héberge l’application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Vous devez ensuite redémarrer l’ordinateur pour configurer le serveur web pour le profilage.
 
- Vous utilisez ensuite l’outil [VSPerfCmd.exe](../profiling/vsperfcmd.md) pour attacher le profileur au processus de travail [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] qui héberge votre site web. Quand le profileur est attaché à l’application, vous pouvez suspendre et reprendre la collecte des données.  
+ Vous utilisez ensuite l’outil [VSPerfCmd.exe](../profiling/vsperfcmd.md) pour attacher le profileur au processus de travail [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] qui héberge votre site web. Quand le profileur est attaché à l’application, vous pouvez suspendre et reprendre la collecte des données.
 
- Pour terminer une session de profilage, le profileur ne doit plus être attaché à l’application et doit être arrêté explicitement. Dans la plupart des cas, nous vous recommandons de désactiver les variables d’environnement de profilage à la fin d’une session.  
+ Pour terminer une session de profilage, le profileur ne doit plus être attaché à l’application et doit être arrêté explicitement. Dans la plupart des cas, nous vous recommandons de désactiver les variables d’environnement de profilage à la fin d’une session.
 
-## <a name="attach-the-profiler"></a>Attacher le profileur  
+## <a name="attach-the-profiler"></a>Attacher le profileur
 
-#### <a name="to-attach-the-profiler-to-an-aspnet-web-application"></a>Pour attacher le profileur à une application web ASP.NET  
+#### <a name="to-attach-the-profiler-to-an-aspnet-web-application"></a>Pour attacher le profileur à une application web ASP.NET
 
-1. Ouvrez une fenêtre Invite de commandes.  
+1. Ouvrez une fenêtre Invite de commandes.
 
-2. Initialisez les variables d’environnement de profilage. Type :  
+2. Initialisez les variables d’environnement de profilage. Type :
 
-    **VSPerfClrEnv** {**/globalsamplegc** &#124; **/globalsamplegclife**} [**/samplelineoff**]  
+    **VSPerfClrEnv** {**/globalsamplegc** &#124; **/globalsamplegclife**} [**/samplelineoff**]
 
-   -   Les options **/globalsamplegc** et **/globalsamplegclife** spécifient le type de données de mémoire à collecter.  
+   -   Les options **/globalsamplegc** et **/globalsamplegclife** spécifient le type de données de mémoire à collecter.
 
-        Spécifiez seulement une des options suivantes.  
+        Spécifiez seulement une des options suivantes.
 
-       |Option|Description|  
-       |------------|-----------------|  
-       |**/globalsamplegc**|Active la collecte des données d’allocation de mémoire.|  
-       |**/globalsamplegclife**|Active à la fois la collecte des données d’allocation de mémoire et celle des données de durée de vie des objets.|  
+       |Option|Description|
+       |------------|-----------------|
+       |**/globalsamplegc**|Active la collecte des données d’allocation de mémoire.|
+       |**/globalsamplegclife**|Active à la fois la collecte des données d’allocation de mémoire et celle des données de durée de vie des objets.|
 
-   -   L’option **/samplelineoff** désactive l’affectation des données collectées à des lignes de code source spécifiques. Quand cette option est spécifiée, les données sont affectées seulement au niveau des fonctions.  
+   -   L’option **/samplelineoff** désactive l’affectation des données collectées à des lignes de code source spécifiques. Quand cette option est spécifiée, les données sont affectées seulement au niveau des fonctions.
 
-3. Redémarrez l’ordinateur pour définir la nouvelle configuration de l’environnement.  
+3. Redémarrez l’ordinateur pour définir la nouvelle configuration de l’environnement.
 
-4. Ouvrez une fenêtre Invite de commandes. Si nécessaire, définissez la variable d’environnement de chemin du profileur.  
+4. Ouvrez une fenêtre Invite de commandes. Si nécessaire, définissez la variable d’environnement de chemin du profileur.
 
-5. Démarrez le profileur. Type :  
+5. Démarrez le profileur. Type :
 
-    **VSPerfCmd**  [/start](../profiling/start.md) **:sample**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]  
+    **VSPerfCmd**  [/start](../profiling/start.md) **:sample**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]
 
-   - L’option **/start:sample** initialise le profileur.  
+   - L’option **/start:sample** initialise le profileur.
 
-   - L’option **/output:**`OutputFile` est nécessaire avec **/start**. `OutputFile` spécifie le nom et l’emplacement du fichier de données profilage (.vsp).  
+   - L’option **/output:**`OutputFile` est nécessaire avec **/start**. `OutputFile` spécifie le nom et l’emplacement du fichier de données profilage (.vsp).
 
-     Vous pouvez utiliser l’une des options suivantes avec l’option **/start:sample**.  
+     Vous pouvez utiliser l’une des options suivantes avec l’option **/start:sample**.
 
    > [!NOTE]
-   >  Les options **/user** et **/crosssession** sont généralement nécessaires pour les applications ASP.NET.  
+   >  Les options **/user** et **/crosssession** sont généralement nécessaires pour les applications ASP.NET.
 
    | Option | Description |
    | - | - |
@@ -76,56 +76,56 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un fichier séparé (.etl). |
 
 
-6. Démarrez l’application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] de manière habituelle.  
+6. Démarrez l’application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] de manière habituelle.
 
-7. Attachez le profileur au processus de travail [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Type :  
+7. Attachez le profileur au processus de travail [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Type :
 
-    **VSPerfCmd**  [/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
+    **VSPerfCmd**  [/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]
 
-   - L’ID de processus `(PID)` Spécifie l’ID de processus ou le nom du processus de travail [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Vous pouvez afficher les ID de processus de tous les processus en cours d’exécution dans le gestionnaire des tâches de Windows.  
+   - L’ID de processus `(PID)` Spécifie l’ID de processus ou le nom du processus de travail [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Vous pouvez afficher les ID de processus de tous les processus en cours d’exécution dans le gestionnaire des tâches de Windows.
 
-   - **/targetclr:** `Version` spécifie la version du common language runtime (CLR) à profiler quand plusieurs versions du runtime sont chargées dans une application.  
+   - **/targetclr:** `Version` spécifie la version du common language runtime (CLR) à profiler quand plusieurs versions du runtime sont chargées dans une application.
 
-## <a name="control-data-collection"></a>Contrôler la collecte des données  
- Pendant l’exécution de l’application, vous pouvez contrôler la collecte des données en démarrant et en arrêtant l’écriture des données dans le fichier de données du profileur avec les options de **VSPerfCmd.exe**. Le fait de pouvoir contrôler la collecte vous permet de collecter des données pour une phase spécifique de l’exécution du programme, telle que le démarrage ou l’arrêt de l’application.  
+## <a name="control-data-collection"></a>Contrôler la collecte des données
+ Pendant l’exécution de l’application, vous pouvez contrôler la collecte des données en démarrant et en arrêtant l’écriture des données dans le fichier de données du profileur avec les options de **VSPerfCmd.exe**. Le fait de pouvoir contrôler la collecte vous permet de collecter des données pour une phase spécifique de l’exécution du programme, telle que le démarrage ou l’arrêt de l’application.
 
-#### <a name="to-start-and-stop-data-collection"></a>Pour démarrer et arrêter la collecte de données  
+#### <a name="to-start-and-stop-data-collection"></a>Pour démarrer et arrêter la collecte de données
 
--   Les paires d’options **VSPerfCmd** suivantes permettent de démarrer et d’arrêter la collecte des données. Spécifiez chaque option sur une ligne de commande distincte. Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.  
+-   Les paires d’options **VSPerfCmd** suivantes permettent de démarrer et d’arrêter la collecte des données. Spécifiez chaque option sur une ligne de commande distincte. Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.
 
-    |Option|Description|  
-    |------------|-----------------|  
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Démarre (**/globalon**) ou arrête (**/globaloff**) la collecte des données pour tous les processus.|  
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Démarre (**/processon**) ou arrête (**/processoff**) la collecte des données pour le processus spécifié par le `PID`.|  
-    |**/attach:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;:`ProcName`}]|**/attach** commence à collecter des données pour le processus spécifié par l’ID ou le nom de processus. **/detach** arrête la collecte des données pour le processus spécifié ou pour tous les processus, si aucun processus n’est spécifié.|  
+    |Option|Description|
+    |------------|-----------------|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Démarre (**/globalon**) ou arrête (**/globaloff**) la collecte des données pour tous les processus.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Démarre (**/processon**) ou arrête (**/processoff**) la collecte des données pour le processus spécifié par le `PID`.|
+    |**/attach:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;:`ProcName`}]|**/attach** commence à collecter des données pour le processus spécifié par l’ID ou le nom de processus. **/detach** arrête la collecte des données pour le processus spécifié ou pour tous les processus, si aucun processus n’est spécifié.|
 
-## <a name="end-the-profiling-session"></a>Arrêter la session de profilage  
- Pour mettre fin à une session de profilage, le profileur doit être détaché de l’application web. Vous pouvez arrêter la collecte des données d’une application profilée avec la méthode d’échantillonnage en redémarrant le processus de travail [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ou en appelant l’option **VSPerfCmd /detach**. Vous appelez ensuite l’option **VSPerfCmd** [/shutdown](../profiling/shutdown.md) pour désactiver le profileur et fermer le fichier de données de profilage. La commande **VSPerfClrEnv /globaloff** efface les variables d’environnement de profilage. Toutefois, la configuration du système n’est pas réinitialisée tant que l’ordinateur n’a pas été redémarré.  
+## <a name="end-the-profiling-session"></a>Arrêter la session de profilage
+ Pour mettre fin à une session de profilage, le profileur doit être détaché de l’application web. Vous pouvez arrêter la collecte des données d’une application profilée avec la méthode d’échantillonnage en redémarrant le processus de travail [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ou en appelant l’option **VSPerfCmd /detach**. Vous appelez ensuite l’option **VSPerfCmd** [/shutdown](../profiling/shutdown.md) pour désactiver le profileur et fermer le fichier de données de profilage. La commande **VSPerfClrEnv /globaloff** efface les variables d’environnement de profilage. Toutefois, la configuration du système n’est pas réinitialisée tant que l’ordinateur n’a pas été redémarré.
 
-#### <a name="to-end-a-profiling-session"></a>Pour terminer une session de profilage  
+#### <a name="to-end-a-profiling-session"></a>Pour terminer une session de profilage
 
-1. Effectuez l’une des opérations suivantes pour détacher le profileur de l’application cible :  
+1. Effectuez l’une des opérations suivantes pour détacher le profileur de l’application cible :
 
-   - Tapez **VSPerfCmd** [/detach](../profiling/detach.md)  
+   - Tapez **VSPerfCmd** [/detach](../profiling/detach.md)
 
-      - ou -  
+      - ou -
 
-   - Fermez le processus de travail [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Type :  
+   - Fermez le processus de travail [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Type :
 
-     **IISReset /stop**  
+     **IISReset /stop**
 
-2. Fermez le profileur. Type :  
+2. Fermez le profileur. Type :
 
-    **VSPerfCmd /shutdown**  
+    **VSPerfCmd /shutdown**
 
-3. (Facultatif) Effacez les variables d’environnement de profilage. Type :  
+3. (Facultatif) Effacez les variables d’environnement de profilage. Type :
 
-    **VSPerfCmd /globaloff**  
+    **VSPerfCmd /globaloff**
 
-4. Redémarrez l'ordinateur. Si nécessaire, redémarrez Internet Information Services (IIS). Type :  
+4. Redémarrez l'ordinateur. Si nécessaire, redémarrez Internet Information Services (IIS). Type :
 
-    **IISReset /start**  
+    **IISReset /start**
 
-## <a name="see-also"></a>Voir aussi  
- [Profiler des applications web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Vues des données de la mémoire .NET](../profiling/dotnet-memory-data-views.md)
+## <a name="see-also"></a>Voir aussi
+- [Profiler des applications web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Vues des données de la mémoire .NET](../profiling/dotnet-memory-data-views.md)

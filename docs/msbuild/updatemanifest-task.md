@@ -16,29 +16,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79d4eb1d9ea90f2ee10a5b285e8fd841b5405203
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0dd2ddfdbe784a45badfd0138b41b1f5dbff8ec7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961295"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641063"
 ---
 # <a name="updatemanifest-task"></a>UpdateManifest (tâche)
-Met à jour les propriétés sélectionnées dans un manifeste et signe à nouveau.  
-  
-## <a name="parameters"></a>Paramètres  
- Le tableau ci-dessous décrit les paramètres de la tâche `UpdateManifest` .  
-  
-|Paramètre|Description|  
-|---------------|-----------------|  
-|`ApplicationManifest`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> requis.<br /><br /> Spécifie le manifeste d’application.|  
-|`ApplicationPath`|Paramètre `String` requis.<br /><br /> Spécifie le chemin du manifeste d’application.|  
-|`InputManifest`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> requis.<br /><br /> Spécifie le manifeste à mettre à jour.|  
-|`OutputManifest`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem> facultatif.<br /><br /> Spécifie le manifeste qui contient les propriétés mises à jour.|  
-  
-## <a name="remarks"></a>Notes  
- En plus des paramètres répertoriés dans le tableau, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base de tâche](../msbuild/task-base-class.md).  
-  
-## <a name="see-also"></a>Voir aussi  
- [Tâches](../msbuild/msbuild-tasks.md)   
- [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
+Met à jour les propriétés sélectionnées dans un manifeste et signe à nouveau.
+
+## <a name="parameters"></a>Paramètres
+ Le tableau ci-dessous décrit les paramètres de la tâche `UpdateManifest` .
+
+|Paramètre|Description|
+|---------------|-----------------|
+|`ApplicationManifest`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> requis.<br /><br /> Spécifie le manifeste d’application.|
+|`ApplicationPath`|Paramètre `String` requis.<br /><br /> Spécifie le chemin du manifeste d’application.|
+|`InputManifest`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> requis.<br /><br /> Spécifie le manifeste à mettre à jour.|
+|`OutputManifest`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem> facultatif.<br /><br /> Spécifie le manifeste qui contient les propriétés mises à jour.|
+
+## <a name="remarks"></a>Remarques
+ En plus des paramètres répertoriés dans le tableau, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base de tâche](../msbuild/task-base-class.md).
+
+## <a name="see-also"></a>Voir aussi
+- [Tâches](../msbuild/msbuild-tasks.md)
+- [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

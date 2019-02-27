@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc603d11a087fb413896b9ae897ee730e18aae1b
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: d3788fae176b344f99884efe7552f33762255ddc
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853376"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610305"
 ---
 # <a name="error-task"></a>Erreur (tâche)
 Arrête une génération et enregistre une erreur en fonction d’une instruction conditionnelle évaluée.
@@ -38,7 +38,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche `Error` .
 | `HelpKeyword` | Paramètre `String` facultatif.<br /><br /> Mot clé d’aide à associer à l’erreur. |
 | `Text` | Paramètre `String` facultatif.<br /><br /> Texte d’erreur enregistré par [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] si le paramètre `Condition` a la valeur `true`. |
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 La tâche `Error` permet aux projets [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] d’émettre un texte d’erreur dans les enregistreurs d’événements et d’arrêter l’exécution de la génération.
 
 Si le paramètre `Condition` a la valeur `true`, la génération est arrêtée, et une erreur est enregistrée. Si un paramètre `Condition` n’existe pas, l’erreur est enregistrée, et l’exécution de la génération s’arrête. Pour plus d’informations sur la journalisation, consultez [Obtention de journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md).
@@ -63,5 +63,5 @@ L’exemple de code suivant vérifie que toutes les propriétés requises sont d
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)  
-[Obtenir des journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md)
+- [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
+- [Obtenir des journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md)

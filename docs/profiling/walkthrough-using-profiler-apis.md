@@ -11,162 +11,163 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18a22e0ecf9bd3af9a26ac84441345cb6d523fc8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 260510c918bc38a2555ff04e711c4a5c728066dd
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55007085"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637787"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Procédure pas à pas : Utiliser les API du profileur
 
-La procédure pas à pas utilise une application C# pour montrer comment utiliser les API des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Vous utilisez les API du profileur pour limiter la quantité de données collectées pendant le profilage par instrumentation.  
-  
- Les étapes décrites dans cette procédure pas à pas s’appliquent généralement à une application C/C++. Vous devez configurer votre environnement de génération de façon appropriée pour chaque langage.  
-  
- En règle générale, vous commencez par analyser les performances d’une application avec un profilage par échantillonnage. Si le profilage par échantillonnage ne fournit pas d’informations permettant de localiser un goulot d’étranglement, le profilage par instrumentation peut fournir un niveau de détail plus élevé. Le profilage par instrumentation est très pratique pour examiner l’interaction des threads.  
-  
- Cependant, un niveau de détail plus élevé signifie que plus de données sont collectées. Vous constaterez peut-être que le profilage par instrumentation crée des fichiers de données volumineux. En outre, l’instrumentation est plus susceptible d’avoir un impact sur les performances de l’application. Pour plus d’informations, consultez [Présenter les valeurs de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md) et [Présenter les valeurs des données d’échantillonnage](../profiling/understanding-sampling-data-values.md)  
-  
- Le profileur Visual Studio vous permet de limiter la collecte des données. Cette procédure pas à pas illustre la façon de limiter la collecte de données en utilisant les API du profileur. Le profileur Visual Studio fournit une API pour contrôler la collecte de données depuis une application.  
-  
+La procédure pas à pas utilise une application C# pour montrer comment utiliser les API des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Vous utilisez les API du profileur pour limiter la quantité de données collectées pendant le profilage par instrumentation.
+
+ Les étapes décrites dans cette procédure pas à pas s’appliquent généralement à une application C/C++. Vous devez configurer votre environnement de génération de façon appropriée pour chaque langage.
+
+ En règle générale, vous commencez par analyser les performances d’une application avec un profilage par échantillonnage. Si le profilage par échantillonnage ne fournit pas d’informations permettant de localiser un goulot d’étranglement, le profilage par instrumentation peut fournir un niveau de détail plus élevé. Le profilage par instrumentation est très pratique pour examiner l’interaction des threads.
+
+ Cependant, un niveau de détail plus élevé signifie que plus de données sont collectées. Vous constaterez peut-être que le profilage par instrumentation crée des fichiers de données volumineux. En outre, l’instrumentation est plus susceptible d’avoir un impact sur les performances de l’application. Pour plus d’informations, consultez [Présenter les valeurs de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md) et [Présenter les valeurs des données d’échantillonnage](../profiling/understanding-sampling-data-values.md)
+
+ Le profileur Visual Studio vous permet de limiter la collecte des données. Cette procédure pas à pas illustre la façon de limiter la collecte de données en utilisant les API du profileur. Le profileur Visual Studio fournit une API pour contrôler la collecte de données depuis une application.
+
  Pour le code natif, les API du profileur Visual Studio se trouvent dans *VSPerf.dll*. Le fichier d’en-tête, *VSPerf.h*, et la bibliothèque d’importation, *VSPerf.lib*, se trouvent dans le répertoire *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK*.  Pour les applications 64 bits, le dossier est *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK*.
-  
- Pour le code managé, les API du profileur se trouvent dans *Microsoft.VisualStudio.Profiler.dll*. Cette DLL se trouve dans le répertoire *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*. Pour les applications 64 bits, le dossier est *Studio\Shared\Common\VSPerfCollectionTools\x64 Visual Microsoft*. Pour plus d'informations, consultez <xref:Microsoft.VisualStudio.Profiler>. 
- 
-  
-  
-## <a name="prerequisites"></a>Prérequis  
- Cette procédure pas à pas suppose que votre environnement de développement est configuré pour prendre en charge le débogage et l’échantillonnage. Les rubriques suivantes fournissent une vue d’ensemble de ces prérequis :  
-  
- [Guide pratique pour choisir des méthodes de collecte](../profiling/how-to-choose-collection-methods.md)  
-  
- [Guide pratique pour référencer les informations de symboles Windows](../profiling/how-to-reference-windows-symbol-information.md)  
-  
- Par défaut, quand le profileur est démarré, il collecte des données au niveau global. Le code suivant au début du programme désactive le profilage global.  
-  
-```csharp  
-DataCollection.StopProfile(  
-ProfileLevel.Global,  
-DataCollection.CurrentId);  
-```  
-  
- Vous pouvez désactiver la collecte de données sur la ligne de commande sans utiliser d’appel d’API. Les étapes suivantes supposent que votre environnement de génération de ligne de commande est configuré pour exécuter les outils de profilage et vos outils de développement. Ceci inclut les paramètres nécessaires pour VSInstr et VSPerfCmd. Consultez [Outils de profilage en ligne de commande](../profiling/using-the-profiling-tools-from-the-command-line.md).  
-  
-## <a name="limit-data-collection-using-profiler-apis"></a>Limiter la collecte de données avec les API du profileur  
-  
-#### <a name="to-create-the-code-to-profile"></a>Pour créer le code à profiler  
-  
-1.  Créez un projet C# dans Visual Studio ou utilisez une génération en ligne de commande, selon ce que vous préférez.  
-  
+
+ Pour le code managé, les API du profileur se trouvent dans *Microsoft.VisualStudio.Profiler.dll*. Cette DLL se trouve dans le répertoire *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*. Pour les applications 64 bits, le dossier est *Studio\Shared\Common\VSPerfCollectionTools\x64 Visual Microsoft*. Pour plus d'informations, consultez <xref:Microsoft.VisualStudio.Profiler>.
+
+
+
+## <a name="prerequisites"></a>Prérequis
+ Cette procédure pas à pas suppose que votre environnement de développement est configuré pour prendre en charge le débogage et l’échantillonnage. Les rubriques suivantes fournissent une vue d’ensemble de ces prérequis :
+
+- [Guide pratique pour choisir des méthodes de collecte](../profiling/how-to-choose-collection-methods.md)
+
+- [Guide pratique pour référencer les informations de symboles Windows](../profiling/how-to-reference-windows-symbol-information.md)
+
+ Par défaut, quand le profileur est démarré, il collecte des données au niveau global. Le code suivant au début du programme désactive le profilage global.
+
+```csharp
+DataCollection.StopProfile(
+ProfileLevel.Global,
+DataCollection.CurrentId);
+```
+
+ Vous pouvez désactiver la collecte de données sur la ligne de commande sans utiliser d’appel d’API. Les étapes suivantes supposent que votre environnement de génération de ligne de commande est configuré pour exécuter les outils de profilage et vos outils de développement. Ceci inclut les paramètres nécessaires pour VSInstr et VSPerfCmd. Consultez [Outils de profilage en ligne de commande](../profiling/using-the-profiling-tools-from-the-command-line.md).
+
+## <a name="limit-data-collection-using-profiler-apis"></a>Limiter la collecte de données avec les API du profileur
+
+#### <a name="to-create-the-code-to-profile"></a>Pour créer le code à profiler
+
+1.  Créez un projet C# dans Visual Studio ou utilisez une génération en ligne de commande, selon ce que vous préférez.
+
     > [!NOTE]
-    >  Votre build doit faire référence à la bibliothèque *Microsoft.VisualStudio.Profiler.dll*, située dans le répertoire *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*.  
-  
-2.  Copiez et collez le code suivant dans votre projet :  
-  
-    ```csharp  
-    using System;  
-    using System.Collections.Generic;  
-    using System.Text;  
-    using Microsoft.VisualStudio.Profiler;  
-  
-    namespace ConsoleApplication1  
-    {  
-        class Program  
-        {  
-            public class A  
-            {  
-                private int _x;  
-  
-                public A(int x)  
-                {  
-                    _x = x;  
-                }  
-  
-                public int DoNotProfileThis()  
-                {  
-                    return _x * _x;  
-                }  
-  
-                public int OnlyProfileThis()  
-                {  
-                    return _x + _x;  
-                }  
-  
-                public static void Main()  
-                {  
-                    DataCollection.StopProfile(  
-                    ProfileLevel.Global,  
-                    DataCollection.CurrentId); 
+    >  Votre build doit faire référence à la bibliothèque *Microsoft.VisualStudio.Profiler.dll*, située dans le répertoire *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*.
 
-                    A a = new A(2);  
-                    Console.WriteLine("2 square is {0}", a.DoNotProfileThis()); 
+2.  Copiez et collez le code suivant dans votre projet :
 
-                    DataCollection.StartProfile(  
-                    ProfileLevel.Global,  
+    ```csharp
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+    using Microsoft.VisualStudio.Profiler;
+
+    namespace ConsoleApplication1
+    {
+        class Program
+        {
+            public class A
+            {
+                private int _x;
+
+                public A(int x)
+                {
+                    _x = x;
+                }
+
+                public int DoNotProfileThis()
+                {
+                    return _x * _x;
+                }
+
+                public int OnlyProfileThis()
+                {
+                    return _x + _x;
+                }
+
+                public static void Main()
+                {
+                    DataCollection.StopProfile(
+                    ProfileLevel.Global,
                     DataCollection.CurrentId);
 
-                    int x;  
-                    x = a.OnlyProfileThis();  
+                    A a = new A(2);
+                    Console.WriteLine("2 square is {0}", a.DoNotProfileThis());
 
-                    DataCollection.StopProfile(  
-                    ProfileLevel.Global,   
-                    DataCollection.CurrentId);  
+                    DataCollection.StartProfile(
+                    ProfileLevel.Global,
+                    DataCollection.CurrentId);
 
-                    Console.WriteLine("2 doubled is {0}", x);  
-                }  
-            }  
-  
-        }  
-    }  
-    ```  
-  
-#### <a name="to-collect-and-view-data-in-the-visual-studio-ide"></a>Pour collecter et afficher des données dans l’IDE Visual Studio  
-  
-1. Ouvrez l’IDE [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Dans le menu **Analyser**, pointez sur **Profiler**, puis sélectionnez **Nouvelle session de performance**.  
-  
-2. Ajoutez votre fichier binaire compilé à la liste **Cibles** dans la fenêtre **Explorateur de performances**. Cliquez avec le bouton droit sur **Cibles**, puis sélectionnez **Ajouter un fichier binaire cible**. Recherchez le fichier binaire dans la boîte de dialogue **Ajouter un fichier binaire cible**, puis cliquez sur **Ouvrir**.  
-  
-3. Sélectionnez **Instrumentation** dans la liste **Méthode** sur la barre d’outils de **l’Explorateur de performances**.  
-  
-4. Cliquez sur **Démarrer avec le profilage**.  
-  
-    Le profileur instrumente et exécute le fichier binaire, et crée un fichier de rapport des performances. Le fichier du rapport de performances apparaît dans le nœud **Rapports** de **l’Explorateur de performances**.  
-  
-5. Ouvrez le fichier de rapport de performances résultant.  
-  
-   Par défaut, quand le profileur est démarré, il collecte des données au niveau global. Le code suivant au début du programme désactive le profilage global.  
-  
-```csharp  
-DataCollection.StopProfile(  
-ProfileLevel.Global,  
-DataCollection.CurrentId);  
-```  
-  
-#### <a name="to-collect-and-view-data-at-the-command-line"></a>Pour collecter et visualiser des données sur la ligne de commande  
-  
-1.  Compilez une version debug de l’exemple de code que vous avez créé dans la procédure « Création de code à profiler », plus haut dans cette procédure pas à pas.  
-  
-2.  Pour profiler une application managée, tapez la commande suivante pour définir les variables d’environnement appropriées :  
-  
-     **VsPerfCLREnv /traceon**  
-  
-3.  Tapez la commande suivante : **VSInstr \<nom_fichier>.exe**  
-  
-4.  Tapez la commande suivante : **VSPerfCmd /start:trace /output:\<nom_fichier>.vsp**  
-  
-5.  Tapez la commande suivante : **VSPerfCmd /globaloff**  
-  
-6.  Exécutez votre programme.  
-  
-7.  Tapez la commande suivante : **VSPerfCmd /shutdown**  
-  
-8.  Tapez la commande suivante : **VSPerfReport /calltrace:\<nom_fichier>.vsp**  
-  
-     Un fichier .*csv* est créé dans le répertoire actif avec les données de performances résultantes.  
-  
-## <a name="see-also"></a>Voir aussi  
- <xref:Microsoft.VisualStudio.Profiler>   
- [Informations de référence sur l’API du profileur Visual Studio (native)](../profiling/visual-studio-profiler-api-reference-native.md)   
- [Bien démarrer](../profiling/getting-started-with-performance-tools.md)   
- [Profiler à partir de la ligne de commande](../profiling/using-the-profiling-tools-from-the-command-line.md)
+                    int x;
+                    x = a.OnlyProfileThis();
+
+                    DataCollection.StopProfile(
+                    ProfileLevel.Global,
+                    DataCollection.CurrentId);
+
+                    Console.WriteLine("2 doubled is {0}", x);
+                }
+            }
+
+        }
+    }
+    ```
+
+#### <a name="to-collect-and-view-data-in-the-visual-studio-ide"></a>Pour collecter et afficher des données dans l’IDE Visual Studio
+
+1. Ouvrez l’IDE [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Dans le menu **Analyser**, pointez sur **Profiler**, puis sélectionnez **Nouvelle session de performance**.
+
+2. Ajoutez votre fichier binaire compilé à la liste **Cibles** dans la fenêtre **Explorateur de performances**. Cliquez avec le bouton droit sur **Cibles**, puis sélectionnez **Ajouter un fichier binaire cible**. Recherchez le fichier binaire dans la boîte de dialogue **Ajouter un fichier binaire cible**, puis cliquez sur **Ouvrir**.
+
+3. Sélectionnez **Instrumentation** dans la liste **Méthode** sur la barre d’outils de **l’Explorateur de performances**.
+
+4. Cliquez sur **Démarrer avec le profilage**.
+
+    Le profileur instrumente et exécute le fichier binaire, et crée un fichier de rapport des performances. Le fichier du rapport de performances apparaît dans le nœud **Rapports** de **l’Explorateur de performances**.
+
+5. Ouvrez le fichier de rapport de performances résultant.
+
+   Par défaut, quand le profileur est démarré, il collecte des données au niveau global. Le code suivant au début du programme désactive le profilage global.
+
+```csharp
+DataCollection.StopProfile(
+ProfileLevel.Global,
+DataCollection.CurrentId);
+```
+
+#### <a name="to-collect-and-view-data-at-the-command-line"></a>Pour collecter et visualiser des données sur la ligne de commande
+
+1.  Compilez une version debug de l’exemple de code que vous avez créé dans la procédure « Création de code à profiler », plus haut dans cette procédure pas à pas.
+
+2.  Pour profiler une application managée, tapez la commande suivante pour définir les variables d’environnement appropriées :
+
+     **VsPerfCLREnv /traceon**
+
+3.  Tapez la commande suivante : **VSInstr \<nom_fichier>.exe**
+
+4.  Tapez la commande suivante : **VSPerfCmd /start:trace /output:\<nom_fichier>.vsp**
+
+5.  Tapez la commande suivante : **VSPerfCmd /globaloff**
+
+6.  Exécutez votre programme.
+
+7.  Tapez la commande suivante : **VSPerfCmd /shutdown**
+
+8.  Tapez la commande suivante : **VSPerfReport /calltrace:\<nom_fichier>.vsp**
+
+     Un fichier .*csv* est créé dans le répertoire actif avec les données de performances résultantes.
+
+## <a name="see-also"></a>Voir aussi
+
+- <xref:Microsoft.VisualStudio.Profiler>
+- [Informations de référence sur l’API du profileur Visual Studio (native)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Prise en main](../profiling/getting-started-with-performance-tools.md)
+- [Profiler à partir de la ligne de commande](../profiling/using-the-profiling-tools-from-the-command-line.md)

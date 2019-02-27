@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 95e8989524c8e4df707fca364bc068b9151ba8bb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f28de400b417011b127b76c8813024f9721cc375
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605079"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843159"
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Procédure : Définir le descripteur de type d’un paramètre
   Un descripteur de type contient des propriétés qui décrivent le type de données d'un paramètre. Un descripteur de type peut définir un champ, une entité ou une collection d’entités. Pour plus d’informations, consultez [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).
@@ -33,7 +33,7 @@ ms.locfileid: "56605079"
 
 3.  Dans le **propriétés** fenêtre, définissez les propriétés du descripteur de type.
 
-     Les procédures suivantes décrivent comment définir un descripteur de type en tant que champ, entité ou collection d’entités.
+     Les procédures suivantes décrivent comment définir un descripteur de type en tant que champ, entité ou collection d'entités.
 
 ### <a name="to-define-a-field"></a>Pour définir un champ
 
@@ -77,7 +77,7 @@ ms.locfileid: "56605079"
 
 5.  Répétez l'étape 4 afin d'ajouter un descripteur de type enfant pour chaque champ de l'entité.
 
-### <a name="to-define-a-collection-of-entities"></a>Pour définir une collection d’entités
+### <a name="to-define-a-collection-of-entities"></a>Pour définir une collection d'entités
 
 1. Dans le **détails de méthode BDC** fenêtre, choisissez le descripteur de type du paramètre que vous souhaitez.
 
@@ -85,7 +85,7 @@ ms.locfileid: "56605079"
 
 3. Dans le **propriétés** fenêtre, définissez la **nom** propriété à un nom qui décrit l’entité (par exemple : **Contacts**).
 
-4. Définir le **IsCollection** propriété **True**. Cela indique que ce descripteur de type est une collection d’entités.
+4. Définir le **IsCollection** propriété **True**. Cela indique que ce descripteur de type est une collection d'entités.
 
 5. Définir le **TypeName** en une chaîne qui contient une référence à la <xref:System.Collections.Generic.IEnumerable%601> interface et le nom qualifié complet du type qui représente l’entité. Ce type peut être une classe dans votre projet, un type défini dans un assembly que vous référencez dans votre solution ou un type défini dans le modèle d'objet BDC.
 
@@ -95,7 +95,7 @@ ms.locfileid: "56605079"
 
       L’exemple suivant définit la valeur de la **TypeName** propriété à une collection de classes dans votre projet.
 
-      `System.Collections.Generic.IEnumerable`1 [MyBDCNamespace.` `BdcModel1.Contact, BdcModel1]`
+      `System.Collections.Generic.IEnumerable`1 [MyBDCNamespace.BdcModel1.Contact, BdcModel1]`
 
    - Pour un type situé dans un assembly de votre solution, le nom qualifié complet comprend le nom du type, le nom de l'assembly, le numéro de version, la culture et le jeton de clé publique.
 

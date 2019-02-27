@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2636e2a3a6fe3e99213198eb3296a765a664b4f4
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 7f5ec540fe2454c0e5b31c93002c099f7a54388a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227091"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56697765"
 ---
 # <a name="debug-html-and-css-sample-code"></a>Déboguer des exemples de code HTML et CSS
 
@@ -101,4 +101,4 @@ L'exemple de code suivant affiche le code JavaScript complet dans default.js. Le
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93edaaf22dd59014a29c374ea3c4613d98d00d36
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9167c56d976cd79e2e51cf9914213b766f647416
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946539"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623708"
 ---
 # <a name="item-metadata-in-task-batching"></a>Métadonnées d’élément dans le traitement par lots des tâches
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] a la capacité de diviser les listes d’éléments en différentes catégories, ou lots, en fonction des métadonnées des éléments, et d’exécuter une tâche une fois avec chaque lot. Il peut être difficile de comprendre exactement quels éléments sont passés avec quel lot. Cette rubrique couvre les scénarios courants suivants qui impliquent un traitement par lots.
@@ -218,9 +218,9 @@ Items in ExampColl: Item2;Item5
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[Métadonnées d’élément connues](../msbuild/msbuild-well-known-item-metadata.md)  
-[Item, élément (MSBuild)](../msbuild/item-element-msbuild.md)  
-[ItemMetadata, élément (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)  
-[Traitement par lots](../msbuild/msbuild-batching.md)  
-[Concepts MSBuild](../msbuild/msbuild-concepts.md)  
-[Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
+- [Métadonnées d’élément connues](../msbuild/msbuild-well-known-item-metadata.md)
+- [Item, élément (MSBuild)](../msbuild/item-element-msbuild.md)
+- [ItemMetadata, élément (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
+- [Traitement par lots](../msbuild/msbuild-batching.md)
+- [Concepts MSBuild](../msbuild/msbuild-concepts.md)
+- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)

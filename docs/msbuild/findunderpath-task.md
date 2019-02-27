@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bfe88fc7f31f90b6c6d4dd3935d7c40e4cc223c
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 9c22e2465b79faa68f8789cefeeb181c2e15b73b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853753"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602181"
 ---
 # <a name="findunderpath-task"></a>FindUnderPath (tâche)
 Détermine quels éléments de la collection d’éléments spécifiée ont des chemins qui se trouvent dans ou sous le dossier spécifié.
@@ -39,7 +39,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche `FindUnderPath` .
 |`Path`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> requis.<br /><br /> Spécifie le chemin du dossier à utiliser comme référence.|
 |`UpdateToAbsolutePaths`|Paramètre `Boolean` facultatif.<br /><br /> Si true, les chemins des éléments de sortie sont changés en chemins absolus.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Exemple
@@ -73,6 +73,6 @@ L’exemple suivant utilise la tâche `FindUnderPath` pour déterminer si les fi
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)  
-[Tâches](../msbuild/msbuild-tasks.md)  
-[Concepts MSBuild](../msbuild/msbuild-concepts.md)
+- [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
+- [Tâches](../msbuild/msbuild-tasks.md)
+- [Concepts MSBuild](../msbuild/msbuild-concepts.md)

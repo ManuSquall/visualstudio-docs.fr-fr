@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d29c23873bc22172e73c5bf8db0789177b8e9f75
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 50ebaad52473eaccb39d8253e9af5fbb9f4a3cbf
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919272"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596736"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Déboguer ou désactiver le code de projet dans le Concepteur XAML
 
@@ -88,7 +88,7 @@ Quand le code de projet est désactivé, Visual Studio affiche des espaces rése
 ## <a name="control-display-options"></a>Options d’affichage des contrôles
 
 > [!NOTE]
-> Les **Options d’affichage des contrôles** ne sont disponibles que pour les applications UWP (plateforme Windows universelle) qui ciblent Windows 10 Fall Creators Update (build 16299) ou une version ultérieure. La fonctionnalité **Options d’affichage des contrôles** est disponible dans Visual Studio 2017 15.9 et les versions ultérieures. 
+> Les **Options d’affichage des contrôles** ne sont disponibles que pour les applications UWP (plateforme Windows universelle) qui ciblent Windows 10 Fall Creators Update (build 16299) ou une version ultérieure. La fonctionnalité **Options d’affichage des contrôles** est disponible dans Visual Studio 2017 15.9 et les versions ultérieures.
 
 Dans le Concepteur XAML, vous pouvez modifier vos options d’affichage des contrôles pour afficher seulement les contrôles de plateforme du Kit SDK Windows. Cela peut améliorer la fiabilité du Concepteur XAML.
 

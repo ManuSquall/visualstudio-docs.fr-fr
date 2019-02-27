@@ -21,24 +21,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d2fe6b19312714815efc1e499bf89eacdaaff67
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 50547507bf37eb22346bcbf3f48585c9cb0b26b6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992579"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637033"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>Boîte de dialogue Choisir les points d’arrêt
-Le **choisissez les points d’arrêt** boîte de dialogue s’ouvre lorsque vous essayez de définir un point d’arrêt à partir de l’entrée ambiguë dans le **nouveau point d’arrêt** boîte de dialogue. Un exemple courant de l’entrée ambiguë est un nom de fonction surchargée.  
-  
- **Points d’arrêt**  
- Listes de points d’arrêt possibles qui peuvent être définies basé sur l’entrée ambiguë. Vous pouvez sélectionner un ou plusieurs des points d’arrêt à définir.  
-  
- **Tous**  
- Sélectionne tous les points d’arrêt répertoriés dans le **des points d’arrêt** boîte.  
-  
- **Aucun**  
- Efface tous les points d’arrêt répertoriés dans le **des points d’arrêt** boîte.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Utilisation des points d’arrêt](../debugger/using-breakpoints.md)
+Le **choisissez les points d’arrêt** boîte de dialogue s’ouvre lorsque vous essayez de définir un point d’arrêt à partir de l’entrée ambiguë dans le **nouveau point d’arrêt** boîte de dialogue. Un exemple courant de l’entrée ambiguë est un nom de fonction surchargée.
+
+ **Points d’arrêt** répertorie les points d’arrêt possibles qui peuvent être définies en fonction l’entrée ambiguë. Vous pouvez sélectionner un ou plusieurs des points d’arrêt à définir.
+
+ **Tous les** sélectionne tous les points d’arrêt répertoriés dans le **des points d’arrêt** boîte.
+
+ **Aucun** efface tous les points d’arrêt répertoriés dans le **des points d’arrêt** boîte.
+
+## <a name="see-also"></a>Voir aussi
+
+- [Utilisation des points d’arrêt](../debugger/using-breakpoints.md)

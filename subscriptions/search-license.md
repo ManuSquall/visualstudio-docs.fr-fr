@@ -6,15 +6,13 @@ manager: jillfra
 ms.date: 06/27/2018
 ms.topic: conceptual
 description: Découvrez comment les administrateurs peuvent rechercher des abonnés ou des groupes d’abonnés dans le portail d’administration.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 817ca49dc8cb1dae9f37e8f7d4267ac3a3699bb7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fe77781c67e773086f07ac39130c472f28acd71f
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54916962"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842310"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Rechercher et filtrer des abonnés dans les abonnements Visual Studio
 

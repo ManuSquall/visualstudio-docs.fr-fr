@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cee0c3c503be815feacd5d6077dd9e560b2c4074
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 22aa04bb41363eebc20257236515634f5e7e14ee
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928398"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603467"
 ---
 # <a name="msbuild-batching"></a>Traitement par lots MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] a la capacité de diviser les listes d’éléments en différentes catégories, ou lots, en fonction des métadonnées des éléments, et d’exécuter une cible ou une tâche une fois avec chaque lot.
@@ -100,7 +100,7 @@ n’est pas autorisé.
 Pour plus d’informations sur les fonctions de propriété, consultez [Fonctions de propriété](../msbuild/property-functions.md).
 
 ## <a name="see-also"></a>Voir aussi
-[ItemMetadata, élément (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)  
-[Concepts MSBuild](../msbuild/msbuild-concepts.md)  
-[Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)  
-[Concepts avancés](../msbuild/msbuild-advanced-concepts.md)
+- [ItemMetadata, élément (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
+- [Concepts MSBuild](../msbuild/msbuild-concepts.md)
+- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
+- [Concepts avancés](../msbuild/msbuild-advanced-concepts.md)

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e07ed209b0e2fee460bd43e2a588a8deb25eeb1
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 8cb678a05b9301982b4842d272c3032cafa46a87
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854068"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610123"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Procédure : Générer les mêmes fichiers sources avec des options différentes
 Lorsque vous générez des projets, vous compilez fréquemment les mêmes composants avec des options de génération différentes. Par exemple, vous pouvez créer une version Debug avec des informations de symbole ou une version Release sans informations de symbole, mais avec les optimisations activées. Vous pouvez également générer un projet pour qu’il s’exécute sur une plateforme spécifique, par exemple x86 ou [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]. Dans toutes ces situations, la plupart des options de génération restent identiques ; seules quelques options sont modifiées pour contrôler la configuration de build. Avec [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], vous utiliser des propriétés et des conditions pour créer les différentes configurations de build.
@@ -183,7 +183,7 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[MSBuild](../msbuild/msbuild.md)  
-[Concepts MSBuild](../msbuild/msbuild-concepts.md)  
-[Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)  
-[Project, élément (MSBuild)](../msbuild/project-element-msbuild.md)
+- [MSBuild](../msbuild/msbuild.md)
+- [Concepts MSBuild](../msbuild/msbuild-concepts.md)
+- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
+- [Project, élément (MSBuild)](../msbuild/project-element-msbuild.md)

@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2c6bdf7aa656bfd40fd790df749df1030b3f647
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e6246ec0a26b01144bfcc648079861b16fa6edb9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54955698"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627634"
 ---
 # <a name="idiaenumdebugstreamdatagetnewenum"></a>IDiaEnumDebugStreamData::get__NewEnum
-Récupère le <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> version de cet énumérateur.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get__NewEnum (   
-   IUnknown** pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- pRetVal  
- [out] Retourne le `IUnknown` interface qui représente le <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> version de cet énumérateur.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
+Récupère le <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> version de cet énumérateur.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get__NewEnum ( 
+   IUnknown** pRetVal
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ pRetVal
+
+[out] Retourne le `IUnknown` interface qui représente le <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> version de cet énumérateur.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

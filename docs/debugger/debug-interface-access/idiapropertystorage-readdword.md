@@ -12,37 +12,39 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a83d187540e57dc5d67313fb74fc686034eed2fd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5b4709a218f6586320e96f79ea8a9f423f537c7f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012580"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635928"
 ---
 # <a name="idiapropertystoragereaddword"></a>IDiaPropertyStorage::ReadDWORD
-Lit `DWORD` valeurs dans un jeu de propriétés.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT ReadDWORD (   
-   PROPID id,  
-   DWORD* pValue  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `id`  
- [in] Identificateur de la propriété à lire (`PROPID` est défini dans WTypes.h comme un `ULONG`).  
-  
- `pValue`  
- [out] Retourne la valeur de propriété.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_INVALIDARG` si la propriété n’est pas de type `DWORD`.  
-  
-## <a name="remarks"></a>Remarques  
- Un `DWORD` est défini par Windows comme un entier non signé 32 bits.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)
+Lit `DWORD` valeurs dans un jeu de propriétés.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT ReadDWORD ( 
+   PROPID id,
+   DWORD* pValue
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `id`
+
+[in] Identificateur de la propriété à lire (`PROPID` est défini dans WTypes.h comme un `ULONG`).
+
+ `pValue`
+
+[out] Retourne la valeur de propriété.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_INVALIDARG` si la propriété n’est pas de type `DWORD`.
+
+## <a name="remarks"></a>Remarques
+ Un `DWORD` est défini par Windows comme un entier non signé 32 bits.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

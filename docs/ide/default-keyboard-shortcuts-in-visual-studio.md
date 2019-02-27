@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9680087162cbfa89e12cb7d9b44d7079cba4ef2
-ms.sourcegitcommit: b623042906de4f12d68af365e36eb38b7b44aa90
+ms.openlocfilehash: 6bc8879dbc515f7f779308db0b745ce5bb5afc50
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56270652"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607406"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Raccourcis clavier par défaut dans Visual Studio
 
@@ -800,15 +800,15 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 | Edit.FormatSelection | **Ctrl+K, Ctrl+F** |
 | Edit.GotoAll | **Ctrl + T**<br /><br /> ou<br /><br /> **Ctrl+,** |
 | Edit.GotoBrace | **Ctrl+]** |
-| Edit.GotoBraceExtend | **Ctrl+Maj+]** |
+| Edit.GotoBraceExtend | **Ctrl+Shift+]** |
 | Edit.GotoRecent | **Ctrl+T,R** |
 | Edit.GotoNextIssueinFile | **Alt+Pg suiv** |
 | Edit.GotoPreviousIssueinFile **Alt+Pg préc** |
 | Edit.HideSelection | **Ctrl+M, Ctrl+H** |
 | Edit.IncreaseFilterLevel | **Alt+.** |
 | Edit.IncrementalSearch | **Ctrl+I** |
-| Edit.InsertCaretsatAllMatching | **Maj+Alt+;** | 
-| Edit.InsertNextMatchingCaret | **Maj+Alt+.** | 
+| Edit.InsertCaretsatAllMatching | **Maj+Alt+;** |
+| Edit.InsertNextMatchingCaret | **Maj+Alt+.** |
 | Edit.InsertTab | **Tab** |
 | Edit.LineCut | **Ctrl+L** |
 | Edit.LineDelete | **Ctrl+Maj+L** |
@@ -971,7 +971,7 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |Image.Magnify|**Ctrl+Maj+M**|
 |Image.NewImageType|**Insert**|
 |Image.NextColor|**Ctrl+]**<br /><br /> ou<br /><br /> **Ctrl+Droite**|
-|Image.NextRightColor|**Ctrl+Maj+]**<br /><br /> ou<br /><br /> **Ctrl+Maj+Droite**|
+|Image.NextRightColor|**Ctrl+Shift+]**<br /><br /> ou<br /><br /> **Ctrl+Maj+Droite**|
 |Image.OutlinedEllipseTool|**Maj+Alt+P**|
 |Image.OutlinedRectangleTool|**Maj+Alt+R**|
 |Image.OutlinedRoundedRectangleTool|**Maj+Alt+W**|
@@ -1045,7 +1045,7 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |Edit.SizeControlUp|**Ctrl+Maj+Haut**|
 |Edit.TabLeft|**Maj+Tab**|
 
-##  <a name="work-item-editor"></a>Éditeur d’élément de travail
+##  <a name="work-item-editor"></a>Éditeur d'élément de travail
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -1053,7 +1053,7 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |Edit.RefreshWorkItem|**F5**|
 |Team.NewLinkedWorkItem|**Maj+Alt+L**|
 
-##  <a name="work-item-query-view"></a>Affichage des requêtes d’élément de travail
+##  <a name="work-item-query-view"></a>Affichage des requêtes d'élément de travail
 
 |Commandes|Raccourcis clavier|
 |--------------| - |

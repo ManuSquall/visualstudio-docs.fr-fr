@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0893ded1cd2eb40cc6004f90e29e0765ff48ca6a
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 4995d948cc4ad452da1585404987e3feb15e233e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853795"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610289"
 ---
 # <a name="delete-task"></a>Delete (tâche)
 Supprime les fichiers spécifiés.
@@ -37,7 +37,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche `Delete` .
 |`Files`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` obligatoire.<br /><br /> Spécifie les fichiers à supprimer.|
 |`TreatErrorsAsWarnings`|Paramètre `Boolean` facultatif.<br /><br /> Si `true`, les erreurs sont consignées en tant qu’avertissements. La valeur par défaut est `false`.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Exemple
@@ -57,5 +57,5 @@ L’exemple suivant supprime le fichier *MyApp.pdb*.
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[Tâches](../msbuild/msbuild-tasks.md)  
-[Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
+- [Tâches](../msbuild/msbuild-tasks.md)
+- [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 444e26aa0f4ec4cb7270f6632b6d5f7e56a34853
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 327b9ca623c6d7f949c0d516798865de48fd94be
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600283"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840323"
 ---
 # <a name="handle-specialized-deployment"></a>Gérer le déploiement spécialisé
 Un déploiement est une opération facultative pour les projets. Un projet Web, par exemple, prend en charge qu’un déploiement pour permettre à un projet de mettre à jour d’un serveur Web. De même, un **Smart Device** projet prend en charge un déploiement pour copier une application générée à l’appareil cible. Les sous-types de projet peuvent fournir le comportement de déploiement spécialisé en implémentant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interface. Cette interface définit un ensemble complet des opérations de déploiement :
@@ -288,7 +288,7 @@ Un déploiement est une opération facultative pour les projets. Un projet Web, 
     ```
 
 > [!NOTE]
->  Tous les exemples de code fournis dans cette rubrique font partie d’un exemple plus complet dans [exemples d’extensibilité Visual Studio](http://aka.ms/vs2015sdksamples).
+>  Tous les exemples de code fournis dans cette rubrique font partie d’un exemple plus complet dans [exemples d’extensibilité Visual Studio](https://aka.ms/vs2015sdksamples).
 
 ## <a name="see-also"></a>Voir aussi
 - [Sous-types de projet](../../extensibility/internals/project-subtypes.md)
