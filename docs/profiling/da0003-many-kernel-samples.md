@@ -13,34 +13,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 895fd206a6ca816726606ebc57e2fc0a865ee2f8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 84c44c8417247d4d33f66e8c56ed1775f6c895ac
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923079"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607835"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003 : Nombreux échantillons de noyau
 
-|||  
-|-|-|  
-|ID de règle|DA0003|  
-|Category|Utilisation des outils de profilage|  
-|Méthodes de profilage|Échantillonnage|  
-|Message|Vous avez une proportion élevée d’échantillons en mode noyau. Ceci peut indiquer un volume élevé d’activité d’E/S ou un taux élevé de changements de contexte. Envisagez de reprofiler votre application avec le mode Instrumentation.|  
-|Type de règle|Information|  
+|||
+|-|-|
+|ID de règle|DA0003|
+|Category|Utilisation des outils de profilage|
+|Méthodes de profilage|Échantillonnage|
+|Message|Vous avez une proportion élevée d’échantillons en mode noyau. Ceci peut indiquer un volume élevé d’activité d’E/S ou un taux élevé de changements de contexte. Envisagez de reprofiler votre application avec le mode Instrumentation.|
+|Type de règle|Information|
 
-## <a name="cause"></a>Cause  
- Une proportion importante des échantillons de pile des appels qui ont été collectés pour l’application s’exécutaient en mode noyau. Envisagez de profiler votre application avec une autre méthode de profilage.  
+## <a name="cause"></a>Cause
+ Une proportion importante des échantillons de pile des appels qui ont été collectés pour l’application s’exécutaient en mode noyau. Envisagez de profiler votre application avec une autre méthode de profilage.
 
-## <a name="rule-description"></a>Description de la règle  
- Dans Windows, le code peut être exécuté en mode noyau ou en mode utilisateur. (Le mode noyau est également appelé mode privilégié.) Seul le code système de bas niveau, par exemple un pilote de périphérique, s’exécute en mode noyau. Une application en mode utilisateur peut passer en mode noyau pour effectuer des opérations d’E/S, pour attendre des primitives de synchronisation de thread ou de processus, ou pour effectuer des appels système.  
+## <a name="rule-description"></a>Description de la règle
+ Dans Windows, le code peut être exécuté en mode noyau ou en mode utilisateur. (Le mode noyau est également appelé mode privilégié.) Seul le code système de bas niveau, par exemple un pilote de périphérique, s’exécute en mode noyau. Une application en mode utilisateur peut passer en mode noyau pour effectuer des opérations d’E/S, pour attendre des primitives de synchronisation de thread ou de processus, ou pour effectuer des appels système.
 
- L’échantillonnage est plus efficace quand vous profilez des applications qui passent la majeure partie de leur temps à travailler en mode utilisateur. Le nombre d’échantillons qui ont été recueillis quand l’application s’exécutait en mode noyau peut indiquer des opérations d’E/S fréquentes ou que des changements de contexte se produisent. Aucune de ces opérations ne peut être examinée avec la méthode d’échantillonnage. Si trop grand nombre d’échantillons en mode noyau sont pris, les données d’échantillonnage peuvent ne pas contenir suffisamment d’échantillons en mode utilisateur pour être statistiquement significatives.  
+ L’échantillonnage est plus efficace quand vous profilez des applications qui passent la majeure partie de leur temps à travailler en mode utilisateur. Le nombre d’échantillons qui ont été recueillis quand l’application s’exécutait en mode noyau peut indiquer des opérations d’E/S fréquentes ou que des changements de contexte se produisent. Aucune de ces opérations ne peut être examinée avec la méthode d’échantillonnage. Si trop grand nombre d’échantillons en mode noyau sont pris, les données d’échantillonnage peuvent ne pas contenir suffisamment d’échantillons en mode utilisateur pour être statistiquement significatives.
 
-## <a name="how-to-fix-violations"></a>Comment corriger les violations  
- Envisagez de reprofiler votre application avec une des options suivantes :  
+## <a name="how-to-fix-violations"></a>Comment corriger les violations
+ Envisagez de reprofiler votre application avec une des options suivantes :
 
--   Profilez avec la méthode d’instrumentation.  
+-   Profilez avec la méthode d’instrumentation.
 
 -   Augmentez le taux d’échantillonnage pour essayer de collecter plus d’échantillons en mode utilisateur.

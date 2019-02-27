@@ -10,37 +10,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 295dd3c490495f481ca9568524ee83eb0b1b59be
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8443f17507b7e4225e6f04d914c115bf17f7d091
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966827"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627023"
 ---
 # <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>Pointeurs d’instruction, vue - données d’échantillonnage de la mémoire .NET
-La vue Pointeurs d’instruction pour les données de profilage de l’allocation de mémoire de .NET qui ont été collectées avec la méthode d’échantillonnage répertorie les instructions d’assembly qui ont alloué de la mémoire lors de l’exécution du profilage. Les colonnes de la vue indiquent également la taille et le nombre d’allocations.  
-  
- Seules les valeurs exclusives apparaissent.  
-  
-|Colonne|Description|  
-|------------|-----------------|  
-|**ID du processus**|ID du processus (PID) de l'exécution du profilage.|  
-|**Nom du processus**|Nom du processus.|  
-|**Nom du module**|Nom du module qui contient l’instruction.|  
-|**Chemin du module**|Chemin du module qui contient l’instruction.|  
-|**Fichier source**|Fichier source qui contient l’instruction.|  
-|**Nom de la fonction**|Nom de la fonction.|  
-|**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|  
-|**Adresse de la fonction**|Adresse de départ de la fonction.|  
-|**Début ligne source**|Numéro de la ligne de début dans le fichier source au niveau duquel l’allocation a eu lieu.|  
-|**Fin ligne source**|Numéro de la ligne de fin dans le fichier source au niveau duquel l’allocation a eu lieu.|  
-|**Début caractère source**|Décalage du caractère de début dans la ligne de fichier source au niveau de laquelle l’allocation a eu lieu.|  
-|**Fin du caractère source**|Décalage du caractère de fin dans la ligne de fichier source au niveau de laquelle l’allocation a eu lieu.|  
-|**Adresse d’instruction**|Adresse de l’instruction.|  
-|**Allocations exclusives**|Nombre total d’objets qui ont été créés par l’instruction.|  
-|**% d’allocations exclusives**|Pourcentage de tous les objets créés lors de l’exécution du profilage et qui ont été alloués par l’instruction.|  
-|**Octets exclusifs**|Nombre d’octets de mémoire alloués lors de l’exécution du profilage qui ont été alloués par l’instruction.|  
-|**% d’octets exclusifs**|Pourcentage de tous les octets de mémoire alloués lors de l’exécution du profilage qui ont été alloués par l’instruction.|  
-  
-## <a name="see-also"></a>Voir aussi  
- [Vue Pointeurs d’instruction (IP)](../profiling/instruction-pointers-ips-view-sampling-data.md)
+La vue Pointeurs d’instruction pour les données de profilage de l’allocation de mémoire de .NET qui ont été collectées avec la méthode d’échantillonnage répertorie les instructions d’assembly qui ont alloué de la mémoire lors de l’exécution du profilage. Les colonnes de la vue indiquent également la taille et le nombre d’allocations.
+
+ Seules les valeurs exclusives apparaissent.
+
+|Colonne|Description|
+|------------|-----------------|
+|**ID du processus**|ID du processus (PID) de l'exécution du profilage.|
+|**Nom du processus**|Nom du processus.|
+|**Nom du module**|Nom du module qui contient l’instruction.|
+|**Chemin du module**|Chemin du module qui contient l’instruction.|
+|**Fichier source**|Fichier source qui contient l’instruction.|
+|**Nom de la fonction**|Nom de la fonction.|
+|**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|
+|**Adresse de la fonction**|Adresse de départ de la fonction.|
+|**Début ligne source**|Numéro de la ligne de début dans le fichier source au niveau duquel l’allocation a eu lieu.|
+|**Fin ligne source**|Numéro de la ligne de fin dans le fichier source au niveau duquel l’allocation a eu lieu.|
+|**Début caractère source**|Décalage du caractère de début dans la ligne de fichier source au niveau de laquelle l’allocation a eu lieu.|
+|**Fin du caractère source**|Décalage du caractère de fin dans la ligne de fichier source au niveau de laquelle l’allocation a eu lieu.|
+|**Adresse d’instruction**|Adresse de l’instruction.|
+|**Allocations exclusives**|Nombre total d’objets qui ont été créés par l’instruction.|
+|**% d’allocations exclusives**|Pourcentage de tous les objets créés lors de l’exécution du profilage et qui ont été alloués par l’instruction.|
+|**Octets exclusifs**|Nombre d’octets de mémoire alloués lors de l’exécution du profilage qui ont été alloués par l’instruction.|
+|**% d’octets exclusifs**|Pourcentage de tous les octets de mémoire alloués lors de l’exécution du profilage qui ont été alloués par l’instruction.|
+
+## <a name="see-also"></a>Voir aussi
+- [Vue Pointeurs d’instruction (IP)](../profiling/instruction-pointers-ips-view-sampling-data.md)

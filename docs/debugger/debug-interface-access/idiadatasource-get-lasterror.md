@@ -12,37 +12,38 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dfb9968aac05c9bbe79de1d37b13eb03dd31714
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 34954cd32b350a7c5f9c176deffd9943f8e05100
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54972808"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641388"
 ---
 # <a name="idiadatasourcegetlasterror"></a>IDiaDataSource::get_lastError
-Récupère le nom de fichier pour la dernière erreur de chargement.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_lastError (  
-   BSTR* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- pRetVal  
- [out] Retourne une chaîne qui contient le nom de fichier .pdb associé à la dernière erreur de chargement.  
-  
-## <a name="return-value"></a>Valeur de retour  
- Retourne le dernier code d’erreur provoqué par une opération de chargement. Retourne `E_INVALIDARG` si le `pRetVal` paramètre est `NULL`.  
-  
-## <a name="example"></a>Exemple  
-  
-```C++  
-BSTR    fileName;  
-HRESULT errorCode = pSource->get_lastError( &fileName );  
-```  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
+Récupère le nom de fichier pour la dernière erreur de chargement.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_lastError (
+   BSTR* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ pRetVal
+
+[out] Retourne une chaîne qui contient le nom de fichier .pdb associé à la dernière erreur de chargement.
+
+## <a name="return-value"></a>Valeur de retour
+ Retourne le dernier code d’erreur provoqué par une opération de chargement. Retourne `E_INVALIDARG` si le `pRetVal` paramètre est `NULL`.
+
+## <a name="example"></a>Exemple
+
+```C++
+BSTR    fileName;
+HRESULT errorCode = pSource->get_lastError( &fileName );
+```
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)

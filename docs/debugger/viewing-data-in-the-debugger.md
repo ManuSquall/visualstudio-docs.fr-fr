@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b00eb9127247c98324b64a998ea8c13cb47e074d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0e7d64cc1ae937ee7e68d04c95b56cc02c7612d8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55030481"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710485"
 ---
 # <a name="create-custom-views-of-data-in-the-visual-studio-debugger-c-visual-basic-c"></a>Créer des vues personnalisées des données dans le débogueur Visual Studio (C#, Visual Basic, C++)
 
@@ -33,12 +33,13 @@ Le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] débogueur fournit 
 ## <a name="create-custom-views-of-data-in-variable-windows-and-datatips"></a>Créer des vues personnalisées des données dans les fenêtres de variables et les DataTips
 
  Un grand nombre de la [fenêtres du débogueur](../debugger/debugger-windows.md), telles que la **automatique** et **espion** windows, permettent d’inspecter des variables. Vous pouvez personnaliser les types de mode natifs, des objets gérés, et vos propres types sont affichés dans les fenêtres de variables du débogueur et dans [DataTips](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). Pour plus d’informations, consultez [créer des vues personnalisées d’objets natifs](../debugger/create-custom-views-of-native-objects.md) et [créer des vues personnalisées d’objets](../debugger/create-custom-views-of-dot-managed-objects.md).
-  
+
 ## <a name="create-custom-visualizers"></a>Créer des visualiseurs personnalisés
 
  Visualiseurs permettent d’afficher le contenu d’un objet ou une variable de manière explicite. Dans le débogueur Visual Studio, un visualiseur fait référence à des fenêtres différentes que vous pouvez ouvrir à l’aide de la loupe ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "icône de visualiseur") icône. Par exemple, le visualiseur HTML montre comment une chaîne au format HTML sera interprétée et affichée dans un navigateur. Vous pouvez accéder aux visualiseurs depuis les DataTips, la **espion** fenêtre, le **automatique** fenêtre et le **variables locales** fenêtre. Le **Espion express** boîte de dialogue fournit également un visualiseur. Pour plus d’informations, consultez [Créer des visualiseurs personnalisés](../debugger/create-custom-visualizers-of-data.md).
-  
+
 ## <a name="see-also"></a>Voir aussi
 
- [Tout d’abord examiner le débogueur](../debugger/debugger-feature-tour.md) [fenêtre de commande](../ide/reference/command-window.md)   
- [Sécurité du débogueur](../debugger/debugger-security.md)
+- [Présentation du débogueur](../debugger/debugger-feature-tour.md)
+- [Commande, fenêtre](../ide/reference/command-window.md)
+- [Sécurité du débogueur](../debugger/debugger-security.md)

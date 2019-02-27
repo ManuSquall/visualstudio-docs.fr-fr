@@ -15,20 +15,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af1241de2849ce0b32206c0815928c8beb140e23
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 35ef81aba75e42e7d3d713d5f6efb7129b55b2d2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963656"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632392"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Propriétés réservées et connues de MSBuild
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fournit un jeu de propriétés prédéfinies qui stockent les informations relatives au fichier projet et aux binaires [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Ces propriétés sont évaluées de la même manière que les autres propriétés [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Par exemple, pour utiliser la propriété `MSBuildProjectFile`, vous devez taper `$(MSBuildProjectFile)`.  
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fournit un jeu de propriétés prédéfinies qui stockent les informations relatives au fichier projet et aux binaires [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Ces propriétés sont évaluées de la même manière que les autres propriétés [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Par exemple, pour utiliser la propriété `MSBuildProjectFile`, vous devez taper `$(MSBuildProjectFile)`.
 
  MSBuild utilise les valeurs du tableau ci-dessous pour prédéfinir les propriétés réservées et connues. Les propriétés réservées ne peuvent pas être remplacées, mais les propriétés connues peuvent être remplacées à l'aide des propriétés d'environnement du même nom, des propriétés globales ou des propriétés déclarées dans le fichier projet.
 
-## <a name="reserved-and-well-known-properties"></a>Propriétés réservées et connues  
- Le tableau ci-dessous décrit les propriétés prédéfinies de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
+## <a name="reserved-and-well-known-properties"></a>Propriétés réservées et connues
+ Le tableau ci-dessous décrit les propriétés prédéfinies de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
 
 
 | Property | Réservée ou connue | Description |
@@ -75,7 +75,7 @@ En plus des éléments ci-dessus, les noms correspondant à des éléments de la
 * When
 * Otherwise
 
-## <a name="see-also"></a>Voir aussi  
-[Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
+## <a name="see-also"></a>Voir aussi
+- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
 
-[Propriétés MSBuild](../msbuild/msbuild-properties.md)
+- [Propriétés MSBuild](../msbuild/msbuild-properties.md)

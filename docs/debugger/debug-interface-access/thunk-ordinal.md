@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 482c5f7bd0565c3b6ece124c88bd5e225b4cc7dd
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 776ee35e57b62463d47fc6f7fa26133f507f16f9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318522"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613269"
 ---
 # <a name="thunkordinal"></a>THUNK_ORDINAL
 Désigne les types de conversion de code.
@@ -39,26 +39,19 @@ typedef enum THUNK_ORDINAL {
 ```
 
 ## <a name="elements"></a>Éléments
-THUNK_ORDINAL_NOTYPE  
-Conversion de code standard.
+Conversion de code THUNK_ORDINAL_NOTYPE Standard.
 
-THUNK_ORDINAL_ADJUSTOR  
-Un `this` thunk d’expert.
+THUNK_ORDINAL_ADJUSTOR A `this` thunk d’expert.
 
-THUNK_ORDINAL_VCALL  
-Conversion de code d’appel virtuel.
+Conversion de code d’appel THUNK_ORDINAL_VCALL virtuel.
 
-THUNK_ORDINAL_PCODE  
-Thunk de P-code.
+Thunk de P-code THUNK_ORDINAL_PCODE.
 
-THUNK_ORDINAL_LOAD  
-Thunk de chargement différé.
+Conversion de code charge THUNK_ORDINAL_LOAD délai.
 
-THUNK_ORDINAL_TRAMP_INCREMENTAL  
-Thunk trampoline incrémentielle (un thunk trampoline est utilisé pour retransmettre des appels à partir de l’espace mémoire d’un à un autre).
+Thunk de trampoline THUNK_ORDINAL_TRAMP_INCREMENTAL incrémentielle (un thunk trampoline est utilisé pour retransmettre des appels à partir de l’espace mémoire d’un à un autre).
 
-THUNK_ORDINAL_TRAMP_BRANCHISLAND  
-Conversion de code trampoline de point de branche.
+Thunk de trampoline THUNK_ORDINAL_TRAMP_BRANCHISLAND branche point.
 
 ## <a name="remarks"></a>Remarques
 Les valeurs dans cette énumération sont retournées à partir d’un appel à la [IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) (méthode).
@@ -67,5 +60,5 @@ Les valeurs dans cette énumération sont retournées à partir d’un appel à 
 En-tête : cvconst.h
 
 ## <a name="see-also"></a>Voir aussi
-[Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)
+- [Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)

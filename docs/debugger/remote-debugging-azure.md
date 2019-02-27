@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 28f97dd46c38b356d45c4c0ded08f1c2790ab229
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9d1a64da1e27f5d3504608441306e820b4547539
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981270"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710823"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Débogage distant ASP.NET Core sur IIS dans Azure dans Visual Studio 2017
 
@@ -47,7 +47,7 @@ La méthode recommandée pour déboguer à distance sur Azure dépend de votre s
 
 Débogage entre deux ordinateurs connectés via un proxy n’est pas pris en charge. Débogage sur une latence élevée ou faible bande passante, telles que la numérotation Internet, ou via Internet entre les pays n’est pas recommandé et peut échouer ou être trop faibles. Pour obtenir une liste complète des exigences, consultez [exigences](../debugger/remote-debugging.md#requirements_msvsmon).
 
-## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Créer l’application ASP.NET Core sur l’ordinateur Visual Studio 2017 
+## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Créer l’application ASP.NET Core sur l’ordinateur Visual Studio 2017
 
 1. Créez une nouvelle application ASP.NET Core. (Choisissez **fichier > Nouveau > projet**, puis sélectionnez **Visual C# > Web > Application Web ASP.NET Core**).
 
@@ -61,7 +61,7 @@ Débogage entre deux ordinateurs connectés via un proxy n’est pas pris en cha
 
 ## <a name="remote_debug_azure_app_service"></a> Débogage distant ASP.NET Core sur un Azure App Service
 
-À partir de Visual Studio, vous pouvez rapidement publier et déboguer votre application à une instance entièrement d’IIS. Toutefois, la configuration d’IIS est prédéfinie et vous ne pouvez pas la personnaliser. Pour obtenir des instructions, consultez [déployer une application web ASP.NET Core sur Azure à l’aide de Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Si vous avez besoin de la possibilité de personnaliser IIS, essayer de déboguer un [machine virtuelle Azure](#remote_debug_azure_vm).) 
+À partir de Visual Studio, vous pouvez rapidement publier et déboguer votre application à une instance entièrement d’IIS. Toutefois, la configuration d’IIS est prédéfinie et vous ne pouvez pas la personnaliser. Pour obtenir des instructions, consultez [déployer une application web ASP.NET Core sur Azure à l’aide de Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Si vous avez besoin de la possibilité de personnaliser IIS, essayer de déboguer un [machine virtuelle Azure](#remote_debug_azure_vm).)
 
 #### <a name="to-deploy-the-app-and-remote-debug-using-server-explorer"></a>Pour déployer l’application et le débogage à distance à l’aide de l’Explorateur de serveurs
 
@@ -184,7 +184,7 @@ Si vous n’utilisez pas Web Deploy, vous devez publier et déployer l’applica
 Dans ce didacticiel, nous utilisons Visual Studio 2017.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-  
+
 ### <a name="BKMK_setup"></a> Configurer le débogueur distant sur Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
@@ -198,7 +198,7 @@ Dans ce didacticiel, nous utilisons Visual Studio 2017.
 2. Dans Visual Studio, cliquez sur **Déboguer > Attacher au processus** (Ctrl + Alt + P).
 
     > [!TIP]
-    > Dans Visual Studio 2017, vous pouvez attacher nouveau vers le même processus que vous avez précédemment attaché à l’aide de **Déboguer > Attacher au processus...** Maj+Alt+P 
+    > Dans Visual Studio 2017, vous pouvez attacher nouveau vers le même processus que vous avez précédemment attaché à l’aide de **Déboguer > Attacher au processus...** Maj+Alt+P
 
 3. Définissez le champ Qualificateur sur **\<nom_ordinateur_distant>:4022**.
 4. Cliquez sur **Actualiser**.
@@ -211,7 +211,7 @@ Dans ce didacticiel, nous utilisons Visual Studio 2017.
 5. Cochez  **Afficher les processus de tous les utilisateurs**.
 
 6. Tapez la première lettre d’un nom de processus pour trouver rapidement *dotnet.exe* (pour ASP.NET Core).
-   
+
    Pour une application ASP.NET Core, le nom du processus précédent était *dnx.exe*.
 
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess_aspnetcore.png "RemoteDBG_AttachToProcess")
@@ -219,7 +219,7 @@ Dans ce didacticiel, nous utilisons Visual Studio 2017.
 7. Cliquez sur **Attacher**.
 
 8. Ouvrez le site web de l’ordinateur distant. Dans un navigateur, accédez à **http://\<nom_ordinateur_distant>**.
-    
+
     La page web ASP.NET doit s’afficher.
 9. Dans l’application ASP.NET en cours d’exécution, cliquez sur le lien vers le **sur** page.
 
@@ -229,7 +229,7 @@ Dans ce didacticiel, nous utilisons Visual Studio 2017.
 
 Dans la plupart des configurations, les ports requis sont ouverts par l’installation d’ASP.NET et le débogueur distant. Toutefois, si vous dépannez les problèmes de déploiement et l’application est hébergée derrière un pare-feu, vous devez vérifier que les ports appropriés sont ouverts.
 
-Sur une machine virtuelle Azure, vous devez ouvrir les ports via la [groupe de sécurité réseau](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic). 
+Sur une machine virtuelle Azure, vous devez ouvrir les ports via la [groupe de sécurité réseau](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic).
 
 Ports requis :
 

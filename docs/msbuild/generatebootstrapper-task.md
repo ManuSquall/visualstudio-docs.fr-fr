@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a8736e27337aa2b2512eb96b3325489c96b0e93
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 277463ad717331980988f87cb070815e644a71ab
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853779"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643949"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper (tâche)
 Fournit un moyen automatisé de détecter, télécharger et installer une application et ses composants requis. Elle constitue un seul programme d’installation qui intègre les programmes d’installation distincts de tous les composants d’une application.
@@ -31,42 +31,42 @@ Fournit un moyen automatisé de détecter, télécharger et installer une applic
 ## <a name="task-parameters"></a>Paramètres de tâche
 Le tableau ci-dessous décrit les paramètres de la tâche `GenerateBootstrapper`.
 
-- `ApplicationFile`  
-  
-   Paramètre `String` facultatif.  
-  
-   Spécifie le fichier utilisé par le programme d’amorçage pour commencer l’installation de l’application une fois tous les composants requis installés. Une erreur de build se produit si ni le paramètre `BootstrapperItems` ni le paramètre `ApplicationFile` ne sont spécifiés.  
-  
-- `ApplicationName`  
-  
-   Paramètre `String` facultatif.  
-  
-   Spécifie le nom de l’application installée par le programme d’amorçage. Ce nom est affiché dans l’interface utilisateur du programme d’amorçage pendant l’installation.  
-  
-- `ApplicationRequiresElevation`  
-  
-   Paramètre `Boolean` facultatif.  
-  
-   Si `true`, le composant s’exécute avec des autorisations élevées lorsqu’il est installé sur un ordinateur cible.  
-  
-- `ApplicationUrl`  
-  
-   Paramètre `String` facultatif.  
-  
-   Indique l’emplacement web qui héberge le programme d’installation de l’application.  
-  
-- `BootstrapperComponentFiles`  
-  
-   Paramètre de sortie `String[]` facultatif.  
-  
-   Spécifie l’emplacement généré des fichiers de package du programme d’amorçage.  
-  
-- `BootstrapperItems`  
-  
-   Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.  
-  
-   Indique les produits à générer dans le programme d’amorçage. Les éléments transmis à ce paramètre doivent avoir la syntaxe suivante :  
-  
+- `ApplicationFile`
+
+   Paramètre `String` facultatif.
+
+   Spécifie le fichier utilisé par le programme d’amorçage pour commencer l’installation de l’application une fois tous les composants requis installés. Une erreur de build se produit si ni le paramètre `BootstrapperItems` ni le paramètre `ApplicationFile` ne sont spécifiés.
+
+- `ApplicationName`
+
+   Paramètre `String` facultatif.
+
+   Spécifie le nom de l’application installée par le programme d’amorçage. Ce nom est affiché dans l’interface utilisateur du programme d’amorçage pendant l’installation.
+
+- `ApplicationRequiresElevation`
+
+   Paramètre `Boolean` facultatif.
+
+   Si `true`, le composant s’exécute avec des autorisations élevées lorsqu’il est installé sur un ordinateur cible.
+
+- `ApplicationUrl`
+
+   Paramètre `String` facultatif.
+
+   Indique l’emplacement web qui héberge le programme d’installation de l’application.
+
+- `BootstrapperComponentFiles`
+
+   Paramètre de sortie `String[]` facultatif.
+
+   Spécifie l’emplacement généré des fichiers de package du programme d’amorçage.
+
+- `BootstrapperItems`
+
+   Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.
+
+   Indique les produits à générer dans le programme d’amorçage. Les éléments transmis à ce paramètre doivent avoir la syntaxe suivante :
+
   ```xml
   <BootstrapperItem
       Include="ProductCode">
@@ -75,80 +75,80 @@ Le tableau ci-dessous décrit les paramètres de la tâche `GenerateBootstrapper
       </ProductName>
   </BootstrapperItem>
   ```
-  
-   L’attribut `Include` représente le nom d’un composant requis qui doit être installé. Les métadonnées de l’élément `ProductName` sont facultatives et sont utilisées par le moteur de génération comme nom convivial si le package est introuvable. Ces éléments ne sont pas des paramètres d’entrée [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] obligatoires à moins qu’aucun `ApplicationFile` ne soit spécifié. Vous devez inclure un élément pour chaque composant requis qui doit être installé pour votre application.  
-  
-   Une erreur de build se produit si ni le paramètre `BootstrapperItems` ni le paramètre `ApplicationFile` ne sont spécifiés.  
-  
-- `BootstrapperKeyFile`  
-  
-   Paramètre de sortie `String` facultatif.  
-  
-   Spécifie l’emplacement de génération de *setup.exe*.  
-  
-- `ComponentsLocation`  
-  
-   Paramètre `String` facultatif.  
-  
-   Indique un emplacement où le programme d’amorçage doit rechercher les composants requis à installer. Ce paramètre peut avoir les valeurs suivantes :  
-  
-  - `HomeSite`: indique que le prérequis est hébergé par le fournisseur du composant.  
-  
-  - `Relative`: indique que le prérequis est au même emplacement de l’application.  
-  
-  - `Absolute`: indique que tous les composants doivent se trouver à une URL centralisée. Cette valeur doit être utilisée conjointement avec le paramètre d’entrée `ComponentsUrl`.  
-  
-    Si `ComponentsLocation` n’est pas spécifié, `HomeSite` est utilisé par défaut.  
-  
-- `ComponentsUrl`  
-  
-   Paramètre `String` facultatif.  
-  
-   Spécifie l’URL qui contient les conditions préalables à l’installation.  
-  
-- `CopyComponents`  
-  
-   Paramètre `Boolean` facultatif.  
-  
-   Si `true`, le programme d’amorçage copie tous les fichiers de sortie dans le chemin d’accès spécifié dans le paramètre `OutputPath`. Les valeurs du paramètre `BootstrapperComponentFiles` doivent toutes être basées sur ce chemin d’accès. Si `false`, les fichiers ne sont pas copiés, et les valeurs `BootstrapperComponentFiles` sont basées sur la valeur du paramètre `Path`.  La valeur par défaut de ce paramètre est `true`.  
-  
-- `Culture`  
-  
-   Paramètre `String` facultatif.  
-  
-   Spécifie la culture à utiliser pour l’interface utilisateur du programme d’amorçage et la configuration requise pour l’installation. Si la culture spécifiée n’est pas disponible, la tâche utilise la valeur du paramètre `FallbackCulture`.  
-  
-- `FallbackCulture`  
-  
-   Paramètre `String` facultatif.  
-  
-   Spécifie la culture secondaire à utiliser pour l’interface utilisateur du programme d’amorçage et la configuration requise pour l’installation.  
-  
-- `OutputPath`  
-  
-   Paramètre `String` facultatif.  
-  
-   Indique l’emplacement où copier *setup.exe* et tous les fichiers du package.  
-  
-- `Path`  
-  
-   Paramètre `String` facultatif.  
-  
-   Indique l’emplacement de tous les packages requis disponibles.  
-  
-- `SupportUrl`  
-  
-   Paramètre `String` facultatif.  
-  
-   Spécifie l’URL à fournir en cas d’échec de l’installation du programme d’amorçage.  
-  
-- `Validate`  
-  
-   Paramètre `Boolean` facultatif.  
-  
+
+   L’attribut `Include` représente le nom d’un composant requis qui doit être installé. Les métadonnées de l’élément `ProductName` sont facultatives et sont utilisées par le moteur de génération comme nom convivial si le package est introuvable. Ces éléments ne sont pas des paramètres d’entrée [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] obligatoires à moins qu’aucun `ApplicationFile` ne soit spécifié. Vous devez inclure un élément pour chaque composant requis qui doit être installé pour votre application.
+
+   Une erreur de build se produit si ni le paramètre `BootstrapperItems` ni le paramètre `ApplicationFile` ne sont spécifiés.
+
+- `BootstrapperKeyFile`
+
+   Paramètre de sortie `String` facultatif.
+
+   Spécifie l’emplacement de génération de *setup.exe*.
+
+- `ComponentsLocation`
+
+   Paramètre `String` facultatif.
+
+   Indique un emplacement où le programme d’amorçage doit rechercher les composants requis à installer. Ce paramètre peut avoir les valeurs suivantes :
+
+  - `HomeSite`: indique que le prérequis est hébergé par le fournisseur du composant.
+
+  - `Relative`: indique que le prérequis est au même emplacement de l’application.
+
+  - `Absolute`: indique que tous les composants doivent se trouver à une URL centralisée. Cette valeur doit être utilisée conjointement avec le paramètre d’entrée `ComponentsUrl`.
+
+    Si `ComponentsLocation` n’est pas spécifié, `HomeSite` est utilisé par défaut.
+
+- `ComponentsUrl`
+
+   Paramètre `String` facultatif.
+
+   Spécifie l’URL qui contient les conditions préalables à l’installation.
+
+- `CopyComponents`
+
+   Paramètre `Boolean` facultatif.
+
+   Si `true`, le programme d’amorçage copie tous les fichiers de sortie dans le chemin d’accès spécifié dans le paramètre `OutputPath`. Les valeurs du paramètre `BootstrapperComponentFiles` doivent toutes être basées sur ce chemin d’accès. Si `false`, les fichiers ne sont pas copiés, et les valeurs `BootstrapperComponentFiles` sont basées sur la valeur du paramètre `Path`.  La valeur par défaut de ce paramètre est `true`.
+
+- `Culture`
+
+   Paramètre `String` facultatif.
+
+   Spécifie la culture à utiliser pour l’interface utilisateur du programme d’amorçage et la configuration requise pour l’installation. Si la culture spécifiée n’est pas disponible, la tâche utilise la valeur du paramètre `FallbackCulture`.
+
+- `FallbackCulture`
+
+   Paramètre `String` facultatif.
+
+   Spécifie la culture secondaire à utiliser pour l’interface utilisateur du programme d’amorçage et la configuration requise pour l’installation.
+
+- `OutputPath`
+
+   Paramètre `String` facultatif.
+
+   Indique l’emplacement où copier *setup.exe* et tous les fichiers du package.
+
+- `Path`
+
+   Paramètre `String` facultatif.
+
+   Indique l’emplacement de tous les packages requis disponibles.
+
+- `SupportUrl`
+
+   Paramètre `String` facultatif.
+
+   Spécifie l’URL à fournir en cas d’échec de l’installation du programme d’amorçage.
+
+- `Validate`
+
+   Paramètre `Boolean` facultatif.
+
    Si `true`, le programme d’amorçage exécute la validation XSD sur les éléments de programme d’amorçage d’entrée spécifiés. La valeur par défaut de ce paramètre est `false`.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Exemple
@@ -176,5 +176,5 @@ L’exemple suivant utilise la tâche `GenerateBootstrapper` pour installer une 
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[Tâches](../msbuild/msbuild-tasks.md)  
-[Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
+- [Tâches](../msbuild/msbuild-tasks.md)
+- [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

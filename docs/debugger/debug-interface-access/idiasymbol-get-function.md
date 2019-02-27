@@ -12,40 +12,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97329075f0e6a8403563964fafb040ee3ff73f4b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bde3de3d4098edb85a14dda8cd573327549a9deb
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55030403"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613399"
 ---
 # <a name="idiasymbolgetfunction"></a>IDiaSymbol::get_function
-Récupère un indicateur qui spécifie si les symboles publics fait référence à une fonction.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_function (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pRetVal`  
- [out] Retourne un `TRUE` si le symbole fait référence à une fonction ; sinon, retourne `FALSE`.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou code d’erreur.  
-  
+Récupère un indicateur qui spécifie si les symboles publics fait référence à une fonction.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_function ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pRetVal`
+
+[out] Retourne un `TRUE` si le symbole fait référence à une fonction ; sinon, retourne `FALSE`.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou code d’erreur.
+
 > [!NOTE]
->  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
-  
-## <a name="requirements"></a>Spécifications  
-  
-|Spécification|Description|  
-|-----------------|-----------------|  
-|En-tête :|dia2.h|  
-|Version :|DIA SDK v7.0|  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+
+## <a name="requirements"></a>Spécifications
+
+|Spécification|Description|
+|-----------------|-----------------|
+|En-tête :|dia2.h|
+|Version :|DIA SDK v7.0|
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

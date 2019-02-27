@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20178ee5b241f1748ac7d0467f10ff571db0df96
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: b836a0fef26f34e83f7238ebe4f6c64731b84257
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853402"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610357"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath (tâche)
 Récupère le chemin aux assemblys [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
@@ -40,7 +40,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche `GetFrameworkPath` .
 |`FrameworkVersion40Path`|Paramètre de sortie `String` facultatif.<br /><br /> Contient le chemin des assemblys du .NET Framework version 4.0, s’ils existent. Sinon, retourne `null`.|
 |`Path`|Paramètre de sortie `String` facultatif.<br /><br /> Contient le chemin des assemblys de la version la plus récente du .NET Framework, s’ils sont disponibles. Sinon, retourne `null`.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Si plusieurs versions du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sont installées, cette tâche retourne la version sur laquelle [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] est conçu pour s’exécuter.
 
 En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
@@ -61,5 +61,5 @@ L’exemple suivant utilise la tâche `GetFrameworkPath` pour stocker le chemin 
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[Tâches](../msbuild/msbuild-tasks.md)  
-[Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
+- [Tâches](../msbuild/msbuild-tasks.md)
+- [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

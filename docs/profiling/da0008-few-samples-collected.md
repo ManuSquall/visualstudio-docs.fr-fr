@@ -13,28 +13,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: baf973837a687bb102dd857adf97caf0e1b8e5ab
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6b33193f30edd19ef18ead5cf15f2e41d352f4d4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001772"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630377"
 ---
 # <a name="da0008-few-samples-collected"></a>DA0008 : Peu d’échantillons collectés
 
-|||  
-|-|-|  
-|ID de règle|DA0008|  
-|Category|Utilisation des outils de profilage|  
-|Méthode de profilage|Échantillonnage|  
-|Message|Un petit nombre d’échantillons a été collecté. Augmentez la durée d’exécution ou utilisez un taux d’échantillonnage plus rapide pour des résultats plus significatifs.|  
-|Type de règle|Information|  
+|||
+|-|-|
+|ID de règle|DA0008|
+|Category|Utilisation des outils de profilage|
+|Méthode de profilage|Échantillonnage|
+|Message|Un petit nombre d’échantillons a été collecté. Augmentez la durée d’exécution ou utilisez un taux d’échantillonnage plus rapide pour des résultats plus significatifs.|
+|Type de règle|Information|
 
-## <a name="cause"></a>Cause  
- Seuls quelques échantillons ont été collectés pendant l’exécution du profilage.  
+## <a name="cause"></a>Cause
+ Seuls quelques échantillons ont été collectés pendant l’exécution du profilage.
 
-## <a name="rule-description"></a>Description de la règle  
- Lorsque la méthode d’échantillonnage est utilisée, vous devez collecter un nombre d’échantillons significatif du point de vue statistique pour vous assurer que les données reflètent bien le comportement réel du programme. Pour éviter les erreurs d’échantillonnage, essayez de collecter au moins 1 000 échantillons de comportements pour l’exécution des instructions du programme. Si vous ne collectez pas suffisamment d’échantillons, vous risquez de mal interpréter les données de profilage.  
+## <a name="rule-description"></a>Description de la règle
+ Lorsque la méthode d’échantillonnage est utilisée, vous devez collecter un nombre d’échantillons significatif du point de vue statistique pour vous assurer que les données reflètent bien le comportement réel du programme. Pour éviter les erreurs d’échantillonnage, essayez de collecter au moins 1 000 échantillons de comportements pour l’exécution des instructions du programme. Si vous ne collectez pas suffisamment d’échantillons, vous risquez de mal interpréter les données de profilage.
 
-## <a name="how-to-fix-violations"></a>Comment corriger les violations  
+## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour obtenir des résultats plus significatifs d’un point de vue statistique, effectuez le profilage d’une exécution d’application plus longue ou utilisez un taux d’échantillonnage plus rapide. Pour plus d’informations sur le changement du taux d’échantillonnage dans l’IDE de Visual Studio, consultez [Guide pratique pour choisir des événements d’échantillonnage](../profiling/how-to-choose-sampling-events.md). Pour plus d’informations sur la modification du taux d’échantillonnage lorsque vous utilisez la ligne de commande des outils de profilage, consultez [Timer](../profiling/timer.md) dans les informations de référence sur [VSPerfCmd](../profiling/vsperfcmd.md).

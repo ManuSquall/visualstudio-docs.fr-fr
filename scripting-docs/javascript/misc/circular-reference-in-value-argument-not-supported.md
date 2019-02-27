@@ -1,14 +1,9 @@
 ---
 title: Référence circulaire dans l’argument de valeur non pris en charge | Microsoft Docs
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5034
 dev_langs:
@@ -20,12 +15,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d25489065ceece41108a75c9d3763a95e4adb924
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 1235c8b1bb7b815b5f26e0ffb744c31a3575ba81
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54349065"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841089"
 ---
 # <a name="circular-reference-in-value-argument-not-supported"></a>Référence circulaire dans l’argument de valeur non prise en charge
 Une tentative a été effectuée pour appeler `JSON.stringify` avec une valeur qui n’est pas valide. Le `value` argument, un tableau ou un objet, contient une référence circulaire.  

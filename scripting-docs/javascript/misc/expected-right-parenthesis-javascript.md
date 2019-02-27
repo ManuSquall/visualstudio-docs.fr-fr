@@ -1,14 +1,9 @@
 ---
 title: Attendu ')' (JavaScript) | Microsoft Docs
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1006
 dev_langs:
@@ -16,16 +11,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 2fb72012-0f83-40fa-b747-167940d90bdd
-caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9736e7195d8594e881aa778b0683959fe5d4c88
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 02ed1bcf86971b9b09ad58502c9c8ecdf4cf1378
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54346200"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844043"
 ---
 # <a name="expected--javascript"></a>')' attendu (JavaScript)
 Vous a tenté de placer une expression au sein d’un jeu de parenthèses, mais n’incluez pas la parenthèse fermante. Une expression doit être placée dans un jeu de parenthèses ouvrantes et fermantes. Notez l’utilisation de parenthèses dans l’exemple suivant.  

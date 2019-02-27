@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 691a9ddbba4291bb6b54d15c9b60e6339b2548b3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6eb87a279da834004e599a49b33d0c1b32355269
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963782"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626685"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke (tâche)
 
@@ -30,7 +30,7 @@ Définit les valeurs comme spécifié par une requête XPath dans un fichier XML
 ## <a name="parameters"></a>Paramètres
 
  Le tableau ci-dessous décrit les paramètres de la tâche `XmlPoke` .
-  
+
 |Paramètre|Description|
 |---------------|-----------------|
 |`Namespaces`|Paramètre `String` facultatif.<br /><br /> Spécifie les espaces de noms pour les préfixes de requête XPath. `Namespaces` est un extrait de code XML constitué d’éléments `Namespace` avec des attributs `Prefix` et `Uri`. L’attribut `Prefix` spécifie le préfixe à associer à l’espace de noms spécifié dans l’attribut `Uri`. N’utilisez pas un `Prefix` vide.|
@@ -38,7 +38,7 @@ Définit les valeurs comme spécifié par une requête XPath dans un fichier XML
 |`Value`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> requis.<br /><br /> Spécifie la valeur à insérer dans le chemin spécifié.|
 |`XmlInputPath`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> facultatif.<br /><br /> Spécifie l’entrée XML sous forme de chemin de fichier.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
  En plus des paramètres répertoriés dans le tableau, cette tâche comprend des paramètres qu’elle hérite de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 
@@ -81,5 +81,5 @@ Dans cet exemple, si vous souhaitez modifier `/Package/mp:PhoneIdentity/PhonePub
 
 ## <a name="see-also"></a>Voir aussi
 
- [Tâches](../msbuild/msbuild-tasks.md)   
- [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
+- [Tâches](../msbuild/msbuild-tasks.md)
+- [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

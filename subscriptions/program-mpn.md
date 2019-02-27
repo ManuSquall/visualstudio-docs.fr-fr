@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: MPN donne des détails sur les abonnements proposés, sur les règles qui s’appliquent et sur le nombre d’abonnements.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 72889ca5d206a8f04562b3a91e5d116339279417
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: b9445b3b990698b273145ab8791e03ee6690570b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739450"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843158"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Abonnements Visual Studio offerts aux partenaires du réseau MPN (Microsoft Partner Network)
 Les partenaires qui acquièrent une compétence ou qui achètent l’Action Pack MPN sont éligibles aux abonnements Visual Studio. Ces abonnements sont concédés sous licence par utilisateur et sont valides uniquement quand ils sont attribués à un utilisateur nommé spécifique qui travaille pour la société partenaire.

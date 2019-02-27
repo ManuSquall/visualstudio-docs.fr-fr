@@ -16,21 +16,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8699c468a3bf5f9c72131add984055f08f23c7c3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7346b6fd8fbd483021437638f9e134ead88a0b93
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959289"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56699143"
 ---
 # <a name="jit-optimization-and-debugging"></a>Optimisation JIT et débogage
-**Fonctionnement des optimisations dans .NET :** Si vous essayez de déboguer du code, il est plus facile lorsque que le code est **pas** optimisé. Il s’agit, car lors de l’optimisation de code, le compilateur et le runtime apporter des modifications au code UC émis afin qu’il s’exécute plus rapidement, mais a un mappage direct de moins de code source d’origine. Cela signifie que les débogueurs sont souvent impossible de vous indiquer la valeur des variables locales et pas à pas détaillé du code et des points d’arrêt peuvent ne pas fonctionneront comme prévu.
+**Fonctionnement des optimisations dans .NET :** si vous essayez de déboguer du code, il est plus facile lorsque que le code est **pas** optimisé. Il s’agit, car lors de l’optimisation de code, le compilateur et le runtime apporter des modifications au code UC émis afin qu’il s’exécute plus rapidement, mais a un mappage direct de moins de code source d’origine. Cela signifie que les débogueurs sont souvent impossible de vous indiquer la valeur des variables locales et pas à pas détaillé du code et des points d’arrêt peuvent ne pas fonctionneront comme prévu.
 
 Normalement, la configuration de build Release crée un code optimisé et n’est pas le cas de la configuration de build de débogage. Le `Optimize` propriété MSBuild détermine si le compilateur doit optimiser le code.
 
 Dans l’écosystème .NET, le code est activé à partir de la source pour des instructions de processeur dans un processus en deux étapes : tout d’abord, le C# compilateur convertit le texte que vous tapez dans une forme binaire intermédiaire appelée MSIL et il écrit dans les fichiers .dll. Plus tard, le Runtime .NET convertit cette MSIL pour des instructions de processeur. Les deux étapes peuvent optimiser dans une certaine mesure, mais la deuxième étape effectuée par le Runtime .NET effectue des optimisations plus significatives.
 
-**L’option « Supprimer l’optimisation JIT lors du chargement de module (managé uniquement) » :** Le débogueur expose une option qui contrôle ce qui se passe lors du chargement d’une DLL qui est compilée avec les optimisations activées à l’intérieur du processus cible. Si cette option est désactivée (l’état par défaut), puis lorsque le Runtime .NET compile le code MSIL en code de l’UC, il laisse les optimisations activées. Si l’option est cochée, le débogueur demande ensuite que les optimisations être désactivées.
+**L’option « Supprimer l’optimisation JIT lors du chargement de module (managé uniquement) » :** le débogueur expose une option qui contrôle ce qui se passe lors du chargement d’une DLL qui est compilée avec les optimisations activées à l’intérieur du processus cible. Si cette option est désactivée (l’état par défaut), puis lorsque le Runtime .NET compile le code MSIL en code de l’UC, il laisse les optimisations activées. Si l’option est cochée, le débogueur demande ensuite que les optimisations être désactivées.
 
 Pour rechercher le **supprimer l’optimisation JIT lors du chargement de module (managé uniquement)** option, sélectionnez **outils** > **Options**, puis sélectionnez le  **Général** page sous le **débogage** nœud.
 
@@ -41,13 +41,13 @@ Si vous vous intéressez uniquement à déboguer le code que vous créez localem
 * Code optimisé s’exécute plus rapidement. Si vous désactivez les optimisations pour un grand nombre de code, l’impact sur les performances peut totaliser.
 * Si vous avez uniquement mon Code est activée, le débogueur ne même pas essayer et charger les symboles pour les DLL qui sont optimisés. Rechercher des symboles peut prendre un certain temps.
 
-**Limitations de cette option :** Il existe deux situations où cette option sera **pas** fonctionne :
+**Limitations de cette option :** il existe deux situations où cette option sera **pas** fonctionne :
 
 1. Dans les situations où vous attachez le débogueur à un processus déjà en cours d’exécution, cette option n’aura aucun effet sur les modules qui ont été déjà chargés au moment où que le débogueur a été attaché.
 2. Cette option n’a aucun effet sur les DLL qui ont été précompilés (générées avec Ngen appelées) en code natif. Toutefois, vous pouvez désactiver l’utilisation de code précompilé en démarrant le processus avec l’environnement que variable 'COMPlus_ZapDisable » défini sur '1'.
 
-## <a name="see-also"></a>Voir aussi  
- [Débogage du code managé](../debugger/debugging-managed-code.md)   
- [Naviguer dans le code avec le débogueur](../debugger/navigating-through-code-with-the-debugger.md)   
- [Attacher à des processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
- [Processus d'exécution managée](/dotnet/standard/managed-execution-process)
+## <a name="see-also"></a>Voir aussi
+- [Débogage du code managé](../debugger/debugging-managed-code.md)
+- [Naviguer dans le code avec le débogueur](../debugger/navigating-through-code-with-the-debugger.md)
+- [S’attacher à des processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+- [Processus d'exécution managée](/dotnet/standard/managed-execution-process)

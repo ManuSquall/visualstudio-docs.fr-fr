@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27b96dff857d49f12ffaa10e22c9189eb3a1d5b2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: efbc02bb536ca8e39454fbbb476460c4cbd51363
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925447"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638729"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Journalisation dans un environnement multiprocesseur
 La capacité de MSBuild à utiliser plusieurs processeurs peut fortement diminuer le temps de génération d’un projet. Elle rend cependant plus complexe la journalisation. Dans un environnement à un seul processeur, le journal (logger) peut gérer les événements entrants, les messages, les avertissements et les erreurs de façon prévisible et séquentielle. Cependant, dans un environnement multiprocesseur, des événements provenant de différentes sources peuvent arriver simultanément ou dans le désordre. MSBuild fournit un nouveau journal prenant en charge plusieurs processeurs et permet la création « de journaux de transfert » personnalisés.
@@ -71,5 +71,5 @@ Culture=neutral
 Un astérisque (*) sépare les deux noms de journaux dans le commutateur `-dl`.
 
 ## <a name="see-also"></a>Voir aussi
-[Enregistreurs d’événements de génération](../msbuild/build-loggers.md)  
-[Créer des journaux de transfert](../msbuild/creating-forwarding-loggers.md)
+- [Enregistreurs d’événements de génération](../msbuild/build-loggers.md)
+- [Créer des journaux de transfert](../msbuild/creating-forwarding-loggers.md)

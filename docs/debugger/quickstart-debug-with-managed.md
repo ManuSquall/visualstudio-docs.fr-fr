@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 040b0f5f657b41a268f69d7f34d6c0072646a8e2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 617783019a8a8b5a1ac2623ed113b78308466501
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55034088"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696881"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Démarrage rapide : Déboguer avec C# ou Visual Basic à l’aide du débogueur Visual Studio
 
 Le débogueur Visual Studio fournit de nombreuses fonctionnalités puissantes pour vous aider à déboguer vos applications. Cette rubrique vous offre un moyen rapide de vous familiariser avec quelques-unes des fonctionnalités de base.
 
-## <a name="create-a-new-project"></a>Créer un projet 
+## <a name="create-a-new-project"></a>Créer un projet
 
 1. Dans Visual Studio, sélectionnez **Fichier > Nouveau projet**.
 
@@ -123,7 +123,7 @@ Le débogueur Visual Studio fournit de nombreuses fonctionnalités puissantes po
     > [!NOTE]
     > En Visual Basic, vérifiez que l’objet de démarrage est défini sur `Sub Main` (**Propriétés > Applications > Objet de démarrage**).
 
-## <a name="set-a-breakpoint"></a>Définir un point d’arrêt
+## <a name="set-a-breakpoint"></a>Définir un point d'arrêt
 
 Un *point d’arrêt* est un marqueur qui indique où Visual Studio doit interrompre l’exécution du code pour vous permettre d’examiner les valeurs des variables, le comportement de la mémoire, ou l’exécution ou non d’une branche de code. C’est la fonctionnalité la plus élémentaire du débogage.
 
@@ -158,7 +158,7 @@ L’application poursuit son exécution en appelant `doWork`, puis s’arrête �
 
     ![Afficher un datatip](../debugger/media/dbg-qs-data-tip-csharp.png "Afficher un datatip")
 
-    Le datatip vous montre la valeur actuelle de la variable `c1` et vous permet d’inspecter ses propriétés. Lors du débogage, si vous remarquez une valeur que vous n’attendiez pas, vous avez probablement un bogue dans les lignes de code précédentes ou d’appel. 
+    Le datatip vous montre la valeur actuelle de la variable `c1` et vous permet d’inspecter ses propriétés. Lors du débogage, si vous remarquez une valeur que vous n’attendiez pas, vous avez probablement un bogue dans les lignes de code précédentes ou d’appel.
 
 2. Développez le datatip pour examiner les valeurs des propriétés actuelles de l’objet `c1`.
 

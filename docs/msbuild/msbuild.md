@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0d270afeb4c0c0404ae83bbaa51938d7c741965
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ce0e95a72c6c2400f5ac245f3ac4741423194c68
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069861"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618235"
 ---
 # <a name="msbuild"></a>MSBuild
 Le [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] est une plateforme de génération d'applications. Ce moteur, également appelé MSBuild, fournit un schéma XML pour un fichier projet qui contrôle la manière dont la plateforme de génération traite et génère les logiciels. Visual Studio utilise MSBuild, mais il ne dépend pas de Visual Studio. En appelant *msbuild.exe* sur votre fichier projet ou solution, vous pouvez gérer et générer des produits dans des environnements où Visual Studio n’est pas installé.
@@ -183,6 +183,6 @@ Pour plus d’informations, consultez l’article [Multiciblage de MSBuild](../m
 | [Ressources supplémentaires](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild) | Répertorie les ressources de communauté et de prise en charge pour des informations supplémentaires sur MSBuild. |
 
 ## <a name="reference"></a>Référence
- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md) Liens vers des rubriques contenant les informations de référence.
+- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md) Liens vers des rubriques contenant les informations de référence.
 
- [Glossaire](msbuild-glossary.md) Définit les termes courants utilisés dans MSBuild.
+- [Glossaire](msbuild-glossary.md) Définit les termes courants utilisés dans MSBuild.

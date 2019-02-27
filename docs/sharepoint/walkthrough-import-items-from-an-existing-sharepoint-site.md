@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76b7fa5b722851357ed7f383b3f9c8e4ad4dc95e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 24ee1588555d51c20989d782375b32e5874df878
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605989"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841738"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Procédure pas à pas : Importer des éléments à partir d’un site SharePoint existant
   Cette procédure pas à pas montre comment importer des éléments à partir d’un site SharePoint existant dans un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projet SharePoint.
@@ -43,7 +43,7 @@ ms.locfileid: "56605989"
 ## <a name="customize-a-sharepoint-site"></a>Personnaliser un site SharePoint
  Pour cet exemple, vous créer et personnaliser un sous-site SharePoint en y ajoutant une nouvelle colonne de site et en créant un autre sous-site pour une utilisation ultérieure. Plus tard, vous exporter le premier sous-site vers un fichier .wsp et ensuite importer la colonne de site personnalisé dans le deuxième sous-site en utilisant le projet d’importation .wsp.
 
-#### <a name="to-create-and-customize-a-sharepoint-site"></a>Pour créer et personnaliser un site SharePoint
+### <a name="to-create-and-customize-a-sharepoint-site"></a>Pour créer et personnaliser un site SharePoint
 
 1. Ouvrir un site SharePoint à l’aide d’un navigateur Web, comme http://<em>nom système</em>/SitePages/Home.aspx.
 
@@ -77,7 +77,7 @@ ms.locfileid: "56605989"
 > [!IMPORTANT]
 >  Si vous recevez une erreur d’exécution la procédure suivante, vous devez effectuer la procédure sur un système qui a accès au site SharePoint.
 
-#### <a name="to-export-an-existing-sharepoint-site"></a>Pour exporter un site SharePoint existant
+### <a name="to-export-an-existing-sharepoint-site"></a>Pour exporter un site SharePoint existant
 
 1.  Dans le site SharePoint, choisissez **paramètres du Site** sur le **Actions du Site** onglet pour afficher la page Paramètres du Site.
 
@@ -100,7 +100,7 @@ ms.locfileid: "56605989"
 ## <a name="import-the-wsp-file"></a>Importez le fichier .wsp
  Maintenant que vous avez un *.wsp* fichier qui contient un élément que vous souhaitez réutiliser (la colonne de site personnalisée colonne Test), importez le *.wsp* fichier pour y accéder.
 
-#### <a name="to-import-a-wsp-file"></a>Pour importer un fichier .wsp
+### <a name="to-import-a-wsp-file"></a>Pour importer un fichier .wsp
 
 1. Dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], dans la barre de menus, cliquez sur **fichier** > **nouveau** > **projet** pour afficher la **nouveau projet**boîte de dialogue. Si votre interface IDE est définie pour utiliser les paramètres de développement Visual Basic, dans la barre de menus, choisissez **fichier** > **nouveau projet**.
 
@@ -128,7 +128,7 @@ ms.locfileid: "56605989"
 ## <a name="deploy-the-project"></a>Déployer le projet
  Enfin, déployez **WspImportProject1** sur SharePoint deuxième sous-site que vous avez créé précédemment pour afficher la colonne de site personnalisé.
 
-#### <a name="to-deploy-the-project"></a>Pour déployer le projet
+### <a name="to-deploy-the-project"></a>Pour déployer le projet
 
 1.  Dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], choisissez le **F5** clé pour déployer et exécuter le *.wsp* importer le projet.
 

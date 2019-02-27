@@ -10,36 +10,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4716443ae2225428980306beb1c3be0e23b4306e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1746b8419c342b5627e1c6374b2b29f08f7ee75c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55019318"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691889"
 ---
 # <a name="font-dialog-box-microsoft-spy-help"></a>Boîte de dialogue Police (aide de Microsoft Spy++)
-Utilisez cette boîte de dialogue pour configurer la police de caractères dans un [vues Spy ++](../debugger/spy-increment-views.md) fenêtre. Pour afficher cette boîte de dialogue, développez le **vue** menu et choisissez **police**.  
-  
- Les paramètres suivants sont disponibles :  
-  
- **Police**  
- La police de caractère de la fenêtre Vues Spy ++ qui a le focus.  
-  
- **Style de police**  
- Le style de police de la fenêtre Vues Spy ++ qui a le focus.  
-  
- **Taille**  
- La taille de police de la fenêtre Vues Spy ++ qui a le focus.  
-  
- **Enregistrer la police comme police par défaut**  
- Enregistre les paramètres de police actuelle en tant que vos préférences lors de l’ouverture des vues Spy ++.  
-  
-## <a name="related-sections"></a>Rubriques connexes  
- [Vues Spy++](../debugger/spy-increment-views.md)  
- Explique les arborescences Spy ++ de windows, les messages, les processus et les threads.  
-  
- [Utilisation de Spy++](../debugger/using-spy-increment.md)  
- Présente l’outil Spy ++ et explique comment il peut être utilisé.  
-  
- [Informations de référence sur Spy++](../debugger/spy-increment-reference.md)  
- Inclut des sections décrivant chaque Spy ++ menu et boîte de dialogue.
+Utilisez cette boîte de dialogue pour configurer la police de caractères dans un [vues Spy ++](../debugger/spy-increment-views.md) fenêtre. Pour afficher cette boîte de dialogue, développez le **vue** menu et choisissez **police**.
+
+ Les paramètres suivants sont disponibles :
+
+ **Police** la police de caractère de la fenêtre Vues Spy ++ qui a le focus.
+
+ **Style de police** le style de police de la fenêtre Vues Spy ++ qui a le focus.
+
+ **Taille** la taille de police de la fenêtre Vues Spy ++ qui a le focus.
+
+ **Enregistrer la police par défaut** enregistre les paramètres de police actuelle en tant que vos préférences lors de l’ouverture des vues Spy ++.
+
+## <a name="related-sections"></a>Rubriques connexes
+ [Vues Spy ++](../debugger/spy-increment-views.md) explique les arborescences Spy ++ de windows, les messages, les processus et les threads.
+
+ [À l’aide de Spy ++](../debugger/using-spy-increment.md) présente l’outil Spy ++ et explique comment il peut être utilisé.
+
+ [Référence Spy ++](../debugger/spy-increment-reference.md) comprend les sections décrivant chaque Spy ++ menu et boîte de dialogue.

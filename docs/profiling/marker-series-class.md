@@ -12,47 +12,47 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13329ce649ac1947b335ee73d1408e94a5ff52e7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 155d47f6764e754a1093cbcf884368c80d709a2a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55068891"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613906"
 ---
 # <a name="markerseries-class"></a>marker_series, classe
-Représente un canal série d’événements générés par un fournisseur unique.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-class marker_series;  
-```  
-  
-## <a name="members"></a>Membres  
-  
-### <a name="public-constructors"></a>Constructeurs publics  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[marker_series::marker_series, constructeur](../profiling/marker-series-marker-series-constructor.md)|Initialise une nouvelle instance de la classe `marker_series`.|  
-|[marker_series::~marker_series, destructeur](../profiling/marker-series-tilde-marker-series-destructor.md)|Détruit l’objet marker_series et libère toutes les ressources allouées.|  
-  
-### <a name="public-methods"></a>Méthodes publiques  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[marker_series::is_enabled, méthode](../profiling/marker-series-is-enabled-method.md)|Détermine si une session a activé le fournisseur.|  
-|[marker_series::write_alert, méthode](../profiling/marker-series-write-alert-method.md)|Écrit une alerte dans le fichier de trace du visualiseur concurrentiel.|  
-|[marker_series::write_flag, méthode](../profiling/marker-series-write-flag-method.md)|Écrit un indicateur dans le fichier de trace du visualiseur concurrentiel.|  
-|[marker_series::write_message, méthode](../profiling/marker-series-write-message-method.md)|Écrit un message dans le fichier de trace du visualiseur concurrentiel.|  
-  
-## <a name="inheritance-hierarchy"></a>Hiérarchie d’héritage  
- `marker_series`  
-  
-## <a name="requirements"></a>Spécifications  
- **En-tête :** *cvmarkersobj.h*  
-  
- **Espace de noms :** Concurrency::diagnostic  
-  
-## <a name="see-also"></a>Voir aussi  
- [diagnostic, espace de noms](../profiling/diagnostic-namespace.md)
+Représente un canal série d’événements générés par un fournisseur unique.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+class marker_series;
+```
+
+## <a name="members"></a>Membres
+
+### <a name="public-constructors"></a>Constructeurs publics
+
+|Name|Description|
+|----------|-----------------|
+|[marker_series::marker_series, constructeur](../profiling/marker-series-marker-series-constructor.md)|Initialise une nouvelle instance de la classe `marker_series`.|
+|[marker_series::~marker_series, destructeur](../profiling/marker-series-tilde-marker-series-destructor.md)|Détruit l’objet marker_series et libère toutes les ressources allouées.|
+
+### <a name="public-methods"></a>Méthodes publiques
+
+|Name|Description|
+|----------|-----------------|
+|[marker_series::is_enabled, méthode](../profiling/marker-series-is-enabled-method.md)|Détermine si une session a activé le fournisseur.|
+|[marker_series::write_alert, méthode](../profiling/marker-series-write-alert-method.md)|Écrit une alerte dans le fichier de trace du visualiseur concurrentiel.|
+|[marker_series::write_flag, méthode](../profiling/marker-series-write-flag-method.md)|Écrit un indicateur dans le fichier de trace du visualiseur concurrentiel.|
+|[marker_series::write_message, méthode](../profiling/marker-series-write-message-method.md)|Écrit un message dans le fichier de trace du visualiseur concurrentiel.|
+
+## <a name="inheritance-hierarchy"></a>Hiérarchie d’héritage
+ `marker_series`
+
+## <a name="requirements"></a>Spécifications
+ **En-tête :** *cvmarkersobj.h*
+
+ **Espace de noms :** Concurrency::diagnostic
+
+## <a name="see-also"></a>Voir aussi
+- [diagnostic, espace de noms](../profiling/diagnostic-namespace.md)

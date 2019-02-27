@@ -18,78 +18,78 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d9e732d55858b713d73cbf1ba4f325f40560503
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 027e1f4894660b0198ed8a6df862e66e41cde409
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54987373"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642922"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates (tâche)
-Supprime les éléments en double de la collection d’éléments spécifiée.  
-  
-## <a name="parameters"></a>Paramètres  
- Le tableau ci-dessous décrit les paramètres de la tâche `RemoveDuplicates` .  
-  
-|Paramètre|Description|  
-|---------------|-----------------|  
-|`Filtered`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Contient une collection d’éléments dont tous les doublons ont été supprimés. L’ordre des éléments d’entrée est préservé, en conservant la première instance de chaque élément en double.|  
-|`Inputs`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Collection d’éléments de laquelle supprimer les éléments en double.|  
-  
-## <a name="remarks"></a>Notes  
- Cette tâche ne prend pas en compte la casse et ne compare pas les métadonnées des éléments lors de la recherche des doublons.  
-  
- En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).  
-  
-## <a name="example"></a>Exemple  
- L’exemple suivant utilise la tâche `RemoveDuplicates` pour supprimer les éléments en double de la collection d’éléments `MyItems`. Lorsque la tâche est terminée, la collection d’éléments `FilteredItems` contient un élément.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  
-    <ItemGroup>  
-        <MyItems Include="MyFile.cs"/>  
-        <MyItems Include="MyFile.cs">  
-            <Culture>fr</Culture>  
-        </MyItems>  
-        <MyItems Include="myfile.cs"/>  
-    </ItemGroup>  
-  
-    <Target Name="RemoveDuplicateItems">  
-        <RemoveDuplicates  
-            Inputs="@(MyItems)">  
-            <Output  
-                TaskParameter="Filtered"  
-                ItemName="FilteredItems"/>  
-        </RemoveDuplicates>  
-    </Target>  
-</Project>  
-```  
+Supprime les éléments en double de la collection d’éléments spécifiée.
 
- L’exemple suivant montre que la tâche `RemoveDuplicates` conserve son ordre d’entrée. Lorsque la tâche est terminée, la collection d’éléments `FilteredItems` contient les éléments *MyFile2.cs*, *MyFile1.cs* et *MyFile3.cs* dans cet ordre.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  
-    <ItemGroup>  
-        <MyItems Include="MyFile2.cs"/>  
-        <MyItems Include="MyFile1.cs" />  
-        <MyItems Include="MyFile3.cs" />  
-        <MyItems Include="myfile1.cs"/>  
-    </ItemGroup>  
-  
-    <Target Name="RemoveDuplicateItems">  
-        <RemoveDuplicates  
-            Inputs="@(MyItems)">  
-            <Output  
-                TaskParameter="Filtered"  
-                ItemName="FilteredItems"/>  
-        </RemoveDuplicates>  
-    </Target>  
-</Project>  
-```  
+## <a name="parameters"></a>Paramètres
+ Le tableau ci-dessous décrit les paramètres de la tâche `RemoveDuplicates` .
 
-## <a name="see-also"></a>Voir aussi  
- [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)   
- [Concepts MSBuild](../msbuild/msbuild-concepts.md)   
- [Tâches](../msbuild/msbuild-tasks.md)
+|Paramètre|Description|
+|---------------|-----------------|
+|`Filtered`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Contient une collection d’éléments dont tous les doublons ont été supprimés. L’ordre des éléments d’entrée est préservé, en conservant la première instance de chaque élément en double.|
+|`Inputs`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Collection d’éléments de laquelle supprimer les éléments en double.|
+
+## <a name="remarks"></a>Remarques
+ Cette tâche ne prend pas en compte la casse et ne compare pas les métadonnées des éléments lors de la recherche des doublons.
+
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
+
+## <a name="example"></a>Exemple
+ L’exemple suivant utilise la tâche `RemoveDuplicates` pour supprimer les éléments en double de la collection d’éléments `MyItems`. Lorsque la tâche est terminée, la collection d’éléments `FilteredItems` contient un élément.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <ItemGroup>
+        <MyItems Include="MyFile.cs"/>
+        <MyItems Include="MyFile.cs">
+            <Culture>fr</Culture>
+        </MyItems>
+        <MyItems Include="myfile.cs"/>
+    </ItemGroup>
+
+    <Target Name="RemoveDuplicateItems">
+        <RemoveDuplicates
+            Inputs="@(MyItems)">
+            <Output
+                TaskParameter="Filtered"
+                ItemName="FilteredItems"/>
+        </RemoveDuplicates>
+    </Target>
+</Project>
+```
+
+ L’exemple suivant montre que la tâche `RemoveDuplicates` conserve son ordre d’entrée. Lorsque la tâche est terminée, la collection d’éléments `FilteredItems` contient les éléments *MyFile2.cs*, *MyFile1.cs* et *MyFile3.cs* dans cet ordre.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <ItemGroup>
+        <MyItems Include="MyFile2.cs"/>
+        <MyItems Include="MyFile1.cs" />
+        <MyItems Include="MyFile3.cs" />
+        <MyItems Include="myfile1.cs"/>
+    </ItemGroup>
+
+    <Target Name="RemoveDuplicateItems">
+        <RemoveDuplicates
+            Inputs="@(MyItems)">
+            <Output
+                TaskParameter="Filtered"
+                ItemName="FilteredItems"/>
+        </RemoveDuplicates>
+    </Target>
+</Project>
+```
+
+## <a name="see-also"></a>Voir aussi
+- [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
+- [Concepts MSBuild](../msbuild/msbuild-concepts.md)
+- [Tâches](../msbuild/msbuild-tasks.md)

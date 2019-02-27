@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34d59fbfe6213bbcec1311cf9ad6216b3d8c86c1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 81cf358d3dfb8fc45a4f696b0483e28673094d44
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629143"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840456"
 ---
 # <a name="automation-support-for-options-pages"></a>Automation prend en charge pour les pages Options
 VSPackages peut fournir une personnalisée **Options** boîtes de dialogue pour le **outils** menu (**Outils/Options** pages) dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] et vous pouvez les rendre disponibles pour l’automatisation modèle.
@@ -34,7 +34,7 @@ VSPackages peut fournir une personnalisée **Options** boîtes de dialogue pour 
 
 4. L’objet automation du VSPackage est ensuite utilisé pour fournir chacune <xref:EnvDTE.Property> retourné par <xref:EnvDTE._DTE.Properties%2A>.
 
-   Pour obtenir un exemple d’implémentation personnalisé **Outils/Options** page, consultez [exemples d’extensibilité Visual Studio](http://aka.ms/vs2015sdksamples).
+   Pour obtenir un exemple d’implémentation personnalisé **Outils/Options** page, consultez [exemples d’extensibilité Visual Studio](https://aka.ms/vs2015sdksamples).
 
 ## <a name="see-also"></a>Voir aussi
 - [Exposer des objets du projet](../../extensibility/internals/exposing-project-objects.md)

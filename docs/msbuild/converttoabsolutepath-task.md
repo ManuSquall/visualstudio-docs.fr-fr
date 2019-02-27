@@ -18,27 +18,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78f82d5d7936a9c5fd318804ea6ba9c5731da39c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 14695cbfddc2f469d48bf78ee002f0582ef7f4bc
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55068977"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56604052"
 ---
 # <a name="converttoabsolutepath-task"></a>ConvertToAbsolutePath (tâche)
-Convertit une référence ou un chemin relatif en chemin absolu.  
-  
-## <a name="task-parameters"></a>Paramètres de tâche  
- Le tableau ci-dessous décrit les paramètres de la tâche `ConvertToAbsolutePath` .  
-  
-|Paramètre|Description|  
-|---------------|-----------------|  
-|`Paths`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` obligatoire.<br /><br /> Liste de chemins relatifs à convertir en chemins absolus.|  
-|`AbsolutePaths`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Liste des chemins absolus des éléments qui ont été passés.|  
-  
-## <a name="remarks"></a>Notes  
- En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).  
-  
-## <a name="see-also"></a>Voir aussi  
- [Tâches](../msbuild/msbuild-tasks.md)   
- [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
+Convertit une référence ou un chemin relatif en chemin absolu.
+
+## <a name="task-parameters"></a>Paramètres de tâche
+ Le tableau ci-dessous décrit les paramètres de la tâche `ConvertToAbsolutePath` .
+
+|Paramètre|Description|
+|---------------|-----------------|
+|`Paths`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` obligatoire.<br /><br /> Liste de chemins relatifs à convertir en chemins absolus.|
+|`AbsolutePaths`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Liste des chemins absolus des éléments qui ont été passés.|
+
+## <a name="remarks"></a>Remarques
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
+
+## <a name="see-also"></a>Voir aussi
+- [Tâches](../msbuild/msbuild-tasks.md)
+- [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

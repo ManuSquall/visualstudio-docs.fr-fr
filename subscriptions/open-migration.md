@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: lank
 ms.date: 07/02/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Découvrez la migration d’Open et d’Open License vers le Portail d’administration des abonnements Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3f846be049ce8e3aaae8c1e49653869c37d0f72b
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: a2f3ed6db9b8e0ce0dce645bfbbb715b89fe1f04
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43995840"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843193"
 ---
 # <a name="open-and-open-license-migration-to-the-new-visual-studio-subscriptions-administration-portal"></a>Migration d’Open et d’Open License vers le Portail d’administration des abonnements Visual Studio
 
@@ -28,22 +26,22 @@ En juillet 2018, tous les clients Open License vont être migrés vers le nouve
 
 - Une fois connectés, ils ont accès aux abonnements de leur entreprise.
 
-Après la date de migration, les clients et les partenaires seront répartis en fonction de l’un des scénarios listés ci-dessous. 
+Après la date de migration, les clients et les partenaires seront répartis en fonction de l’un des scénarios listés ci-dessous.
 
 ## <a name="open-and-open-license-management-for-new-orders"></a>Gestion d’Open et d’Open License pour les nouvelles commandes
 
-Pour gérer les abonnements dans le [Portail d’administration des abonnements Visual Studio](https://manage.visualstudio.com), les partenaires et les clients doivent suivre quelques étapes. Le processus est le suivant : 
+Pour gérer les abonnements dans le [Portail d’administration des abonnements Visual Studio](https://manage.visualstudio.com), les partenaires et les clients doivent suivre quelques étapes. Le processus est le suivant :
 
 - Les partenaires passent une nouvelle commande pour le compte d’un client, en entrant l’adresse e-mail professionnelle de ce client.
 
 - Les clients reçoivent une notification les invitant à affecter des administrateurs et à accéder à leurs abonnements dans le [Portail d’administration des abonnements Visual Studio](https://manage.visualstudio.com).
 
-- Pour que les partenaires puissent gérer les abonnements au nom des clients, ils doivent s’inscrire sur le portail d’administration. Les différents modes d’accès sont listés ci-dessous (similaires au processus ajouter/ouvrir). 
+- Pour que les partenaires puissent gérer les abonnements au nom des clients, ils doivent s’inscrire sur le portail d’administration. Les différents modes d’accès sont listés ci-dessous (similaires au processus ajouter/ouvrir).
 
 
 ## <a name="existing-partners-adding-a-new-license"></a>Partenaires existants ajoutant une nouvelle licence
 
-Ceci s’applique aux partenaires qui ont déjà accès au [Portail d’administration des abonnements Visual Studio](https://manage.visualstudio.com), mais qui ont passé commande pour des programmes Open License avec des abonnements Visual Studio qu’ils vont devoir gérer. 
+Ceci s’applique aux partenaires qui ont déjà accès au [Portail d’administration des abonnements Visual Studio](https://manage.visualstudio.com), mais qui ont passé commande pour des programmes Open License avec des abonnements Visual Studio qu’ils vont devoir gérer.
 
 - Le partenaire accède directement à https://manage.visualstudio.com et se connecte.
 
@@ -57,9 +55,9 @@ Ceci s’applique aux partenaires qui ont déjà accès au [Portail d’administ
 
 ## <a name="new-partners-who-register-on-the-volume-licensing-service-center-vlsc"></a>Nouveaux partenaires qui s’inscrivent sur le Centre de gestion des licences en volume
 
-Ceci s’applique aux nouveaux partenaires qui passent de nouvelles commandes Open License, mais qui s’inscrivent sur le [Centre de gestion des licences en volume](https://www.microsoft.com/Licensing/servicecenter/default.aspx) via le flux ajouter/ouvrir avant d’essayer d’accéder au [Portail d’administration des abonnements Visual Studio](https://manage.visualstudio.com). 
+Ceci s’applique aux nouveaux partenaires qui passent de nouvelles commandes Open License, mais qui s’inscrivent sur le [Centre de gestion des licences en volume](https://www.microsoft.com/Licensing/servicecenter/default.aspx) via le flux ajouter/ouvrir avant d’essayer d’accéder au [Portail d’administration des abonnements Visual Studio](https://manage.visualstudio.com).
 
-- Le partenaire se connecte au Centre de gestion des licences en volume et accède au « Résumé de la relation ». 
+- Le partenaire se connecte au Centre de gestion des licences en volume et accède au « Résumé de la relation ».
 
 - Il sélectionne ensuite le programme Open License à gérer.
 
@@ -75,9 +73,9 @@ Ceci s’applique aux nouveaux partenaires qui passent de nouvelles commandes Op
 
 ## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal--directly"></a>Nouveaux partenaires visitant directement le Portail d’administration des abonnements Visual Studio
 
-Ce scénario s’applique aux nouveaux partenaires qui ont déjà passé de nouvelles commandes Open License, mais qui ne sont pas inscrits sur le [Centre de gestion des licences en volume](https://www.microsoft.com/Licensing/servicecenter/default.aspx), et qui accèdent directement au [Portail d’administration des abonnements Visual Studio](https://manage.visualstudio.com). 
+Ce scénario s’applique aux nouveaux partenaires qui ont déjà passé de nouvelles commandes Open License, mais qui ne sont pas inscrits sur le [Centre de gestion des licences en volume](https://www.microsoft.com/Licensing/servicecenter/default.aspx), et qui accèdent directement au [Portail d’administration des abonnements Visual Studio](https://manage.visualstudio.com).
 
-- Le partenaire accède directement à https://manage.visualstudio.com. 
+- Le partenaire accède directement à https://manage.visualstudio.com.
 
 - Il reçoit une erreur indiquant qu’il n’est pas un utilisateur reconnu.
 

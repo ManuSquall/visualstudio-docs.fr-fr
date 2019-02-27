@@ -10,33 +10,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebcfead4fa7e4192a45dab4d4d34f45d2e4717cc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 68200b9a0631affe96427c2355dd65d20cffc1b9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961856"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626945"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>Procédure : Suspendre et reprendre la collecte de données de performances
-À partir de la fenêtre de la page de session de profilage, vous pouvez contrôler de manière interactive la collecte des données de profilage.  
-  
- Le contrôle de la collecte de données permet de réduire la taille du fichier des données de profil et de limiter la collecte des données aux opérations qui vous intéressent. Vous pouvez suspendre et reprendre le profilage plusieurs fois au cours d’une même session de performance.  
-  
- ![Page de session de profilage](../profiling/media/prof_profilingsessionpage.png "PROF_ProfilingSessionPage")  
-  
+À partir de la fenêtre de la page de session de profilage, vous pouvez contrôler de manière interactive la collecte des données de profilage.
+
+ Le contrôle de la collecte de données permet de réduire la taille du fichier des données de profil et de limiter la collecte des données aux opérations qui vous intéressent. Vous pouvez suspendre et reprendre le profilage plusieurs fois au cours d’une même session de performance.
+
+ ![Page de session de profilage](../profiling/media/prof_profilingsessionpage.png "PROF_ProfilingSessionPage")
+
 > [!NOTE]
->  Vous pouvez également démarrer la session de performance avec le profilage suspendu, puis reprendre le profilage ultérieurement au cours de l’exécution du programme. Pour démarrer la session de performance avec le profilage suspendu, choisissez la commande **Démarrer l’analyse de performances avec le profilage suspendu**  dans le menu **Déboguer**.  
-  
-### <a name="to-pause--resume-or-stop-profiling"></a>Pour suspendre, reprendre ou arrêter le profilage  
-  
--   Dans la page de session de profilage :  
-  
-    -   Choisissez **Suspendre la collecte** pour suspendre la collecte de données.  
-  
-    -   Choisissez **Reprendre la collecte** pour redémarrer la collecte de données après qu’elle a été suspendue.  
-  
-    -   Choisissez **Arrêter le profilage** pour terminer la session de profilage et générer des rapports.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Contrôler la collecte des données](../profiling/controlling-data-collection.md)   
- [Guide pratique pour démarrer et terminer la collecte des données de performances](../profiling/how-to-start-and-end-performance-data-collection.md)
+>  Vous pouvez également démarrer la session de performance avec le profilage suspendu, puis reprendre le profilage ultérieurement au cours de l’exécution du programme. Pour démarrer la session de performance avec le profilage suspendu, choisissez la commande **Démarrer l’analyse de performances avec le profilage suspendu**  dans le menu **Déboguer**.
+
+### <a name="to-pause--resume-or-stop-profiling"></a>Pour suspendre, reprendre ou arrêter le profilage
+
+-   Dans la page de session de profilage :
+
+    -   Choisissez **Suspendre la collecte** pour suspendre la collecte de données.
+
+    -   Choisissez **Reprendre la collecte** pour redémarrer la collecte de données après qu’elle a été suspendue.
+
+    -   Choisissez **Arrêter le profilage** pour terminer la session de profilage et générer des rapports.
+
+## <a name="see-also"></a>Voir aussi
+- [Contrôler la collecte des données](../profiling/controlling-data-collection.md)
+- [Guide pratique pour démarrer et terminer la collecte des données de performances](../profiling/how-to-start-and-end-performance-data-collection.md)

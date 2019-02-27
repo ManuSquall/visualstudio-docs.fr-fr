@@ -27,34 +27,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cc3bafc89b30d3f98dd4615eae22ee76c9e0ea6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a0c2cee0e0b823e5fe17fbc5720137163dcb300b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018265"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56699052"
 ---
-# <a name="debugging-web-applications-errors-and-troubleshooting"></a>Débogage d’applications web : erreurs et dépannage
-Les erreurs suivantes peuvent se produire lors d'une tentative de débogage d'applications Web.  
-  
--   [Résolution des problèmes](../debugger/debugging-web-applications-troubleshooting.md)  
-  
--   [Erreur : le site utilise l’adresse IP](../debugger/error-site-uses-ip-address.md)  
-  
--   [Erreur : une vérification de la sécurité a échoué, car le service de l’administration IIS n’a pas répondu](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)  
-  
--   [Erreur : ASP.NET n’est pas installé](../debugger/error-aspnet-not-installed.md)  
-  
--   [Erreur : le débogage a échoué, car l’authentification Windows intégrée n’est pas activée](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)  
-  
--   [Erreur : le serveur web n’est pas configuré correctement](../debugger/error-the-web-server-is-not-configured-correctly.md)  
-  
--   [Erreur : le serveur web est verrouillé et bloque l’exécution du verbe DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)  
-  
--   [Erreur : expiration du délai d’attente lors du débogage de services web](../debugger/error-timeout-while-debugging-web-services.md)  
-  
--   [Erreur : impossible de démarrer le débogage sur le serveur web](../debugger/error-unable-to-start-debugging-on-the-web-server.md)  
-  
-## <a name="see-also"></a>Voir aussi  
- [Sécurité du débogueur](../debugger/debugger-security.md)   
- [Débogage d’applications et de scripts web](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)
+# <a name="debugging-web-applications-errors-and-troubleshooting"></a>Débogage d'applications Web : erreurs et dépannage
+Les erreurs suivantes peuvent se produire lors d'une tentative de débogage d'applications Web.
+
+-   [Résolution des problèmes](../debugger/debugging-web-applications-troubleshooting.md)
+
+-   [Erreur : le site utilise l’adresse IP](../debugger/error-site-uses-ip-address.md)
+
+-   [Erreur : une vérification de la sécurité a échoué, car le service de l’administration IIS n’a pas répondu](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)
+
+-   [Erreur : ASP.NET n’est pas installé](../debugger/error-aspnet-not-installed.md)
+
+-   [Erreur : le débogage a échoué, car l’authentification Windows intégrée n’est pas activée](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)
+
+-   [Erreur : le serveur web n’est pas configuré correctement](../debugger/error-the-web-server-is-not-configured-correctly.md)
+
+-   [Erreur : le serveur web est verrouillé et bloque l’exécution du verbe DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)
+
+-   [Erreur : Expiration du délai d’attente lors du débogage de services web](../debugger/error-timeout-while-debugging-web-services.md)
+
+-   [Erreur : Impossible de démarrer le débogage sur le serveur web](../debugger/error-unable-to-start-debugging-on-the-web-server.md)
+
+## <a name="see-also"></a>Voir aussi
+- [Sécurité du débogueur](../debugger/debugger-security.md)
+- [Débogage d’applications et de scripts web](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)

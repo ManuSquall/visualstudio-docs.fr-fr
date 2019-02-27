@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1f4845fe01e5b197126b6da73c1439ff08be482
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 59a637a530bfabe784aae2c1fab622e2c2380667
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853899"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621329"
 ---
 # <a name="how-to-build-incrementally"></a>Procédure : Générer de façon incrémentielle
 Quand vous générez un projet volumineux, il est important de ne pas regénérer les composants précédemment générés qui sont encore à jour. Si toutes les cibles sont générées à chaque fois, la génération de builds prend beaucoup de temps. Pour activer les builds incrémentielles (builds dans lesquelles seules les cibles obsolètes ou n’ayant pas été déjà générées sont regénérées), [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) peut comparer les horodateurs des fichiers d’entrée avec ceux des fichiers de sortie et déterminer s’il faut ignorer, générer ou regénérer partiellement une cible. Toutefois, il doit exister un mappage un-à-un entre les entrées et les sorties. Vous pouvez utiliser des transformations pour permettre aux cibles d’identifier ce mappage direct. Pour plus d’informations sur les transformations, consultez [Transformations](../msbuild/msbuild-transforms.md).
@@ -38,12 +38,12 @@ Une cible peut être générée de façon incrémentielle si les entrées et les
   [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] peut comparer les horodateurs des fichiers d’entrée avec ceux des fichiers de sortie et déterminer s’il faut ignorer, générer ou regénérer partiellement une cible. Dans l’exemple suivant, si un fichier de la liste d’éléments `@(CSFile)` est plus récent que le fichier *hello.exe*, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] exécute la cible ; sinon, il l’ignore :
 
 ```xml
-<Target Name="Build" 
-    Inputs="@(CSFile)" 
+<Target Name="Build"
+    Inputs="@(CSFile)"
     Outputs="hello.exe">
 
     <Csc
-        Sources="@(CSFile)" 
+        Sources="@(CSFile)"
         OutputAssembly="hello.exe"/>
 </Target>
 ```
@@ -103,8 +103,8 @@ Ce fichier projet contient à la fois les cibles `Convert` et `Build`. Les tâch
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[Cibles](../msbuild/msbuild-targets.md)  
-[Target, élément (MSBuild)](../msbuild/target-element-msbuild.md)  
-[Transformations](../msbuild/msbuild-transforms.md)  
-[Tâche Csc](../msbuild/csc-task.md)  
-[Vbc, tâche](../msbuild/vbc-task.md)
+- [Cibles](../msbuild/msbuild-targets.md)
+- [Target, élément (MSBuild)](../msbuild/target-element-msbuild.md)
+- [Transformations](../msbuild/msbuild-transforms.md)
+- [Tâche Csc](../msbuild/csc-task.md)
+- [Vbc, tâche](../msbuild/vbc-task.md)
