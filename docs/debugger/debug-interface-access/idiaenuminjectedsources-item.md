@@ -12,35 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d258e2c1ba71ab294435f2437c7b6dc3de75cfb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2fd803520a6b6bb58679dd30dbf913450ce6066a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54925786"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636273"
 ---
 # <a name="idiaenuminjectedsourcesitem"></a>IDiaEnumInjectedSources::Item
-Récupère une source injectée au moyen d’un index.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT Item (   
-   DWORD                index,  
-   IDiaInjectedSource** injectedSource  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- index  
- [in] Index de la [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) objet à récupérer. L’index est la plage 0 à `count`-1, où `count` est retourné par la [IDiaEnumInjectedSources::get_Count](../../debugger/debug-interface-access/idiaenuminjectedsources-get-count.md) (méthode).  
-  
- injectedSource  
- [out] Retourne un [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) objet représentant la source injectée.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)   
- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)
+Récupère une source injectée au moyen d’un index.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT Item ( 
+   DWORD                index,
+   IDiaInjectedSource** injectedSource
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ index
+
+[in] Index de la [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) objet à récupérer. L’index est la plage 0 à `count`-1, où `count` est retourné par la [IDiaEnumInjectedSources::get_Count](../../debugger/debug-interface-access/idiaenuminjectedsources-get-count.md) (méthode).
+
+ injectedSource
+
+[out] Retourne un [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) objet représentant la source injectée.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
+- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

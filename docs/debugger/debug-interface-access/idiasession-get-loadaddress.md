@@ -12,34 +12,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 239f8f1f3d7dc503a7a3781e41e575d9e677803d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4fed7653b5f1a270d2e297cdd2b59366b5b563c3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54917509"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56612132"
 ---
 # <a name="idiasessiongetloadaddress"></a>IDiaSession::get_loadAddress
-Récupère l’adresse de chargement du fichier exécutable qui correspond aux symboles dans ce magasin de symboles.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_loadAddress (   
-   ULONGLONG* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pRetVal`  
- [out] Retourne une adresse virtuelle (VA) dans lequel un fichier .exe ou .dll est chargé.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="remarks"></a>Remarques  
- L’adresse de chargement retourné est toujours de zéro, sauf si spécifiquement défini à l’aide du [IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) (méthode).  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)
+Récupère l’adresse de chargement du fichier exécutable qui correspond aux symboles dans ce magasin de symboles.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_loadAddress ( 
+   ULONGLONG* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pRetVal`
+
+[out] Retourne une adresse virtuelle (VA) dans lequel un fichier .exe ou .dll est chargé.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="remarks"></a>Remarques
+ L’adresse de chargement retourné est toujours de zéro, sauf si spécifiquement défini à l’aide du [IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) (méthode).
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)

@@ -12,43 +12,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2acc4aa3d488a98990e6e822e0c55f3f5fff416
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e581e510ca553dda98689c3e8c5b38dc567f2a06
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55026617"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56628030"
 ---
 # <a name="idiasymbolgetsealed"></a>IDiaSymbol::get_sealed
-Récupère un indicateur qui spécifie si la classe ou la méthode est sealed.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_sealed(   
-   BOOL* pRetVal)  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pRetVal`  
- [out] Retourne `TRUE` si la classe ou la méthode est sealed ; sinon, retourne `FALSE`.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
-  
+Récupère un indicateur qui spécifie si la classe ou la méthode est sealed.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_sealed( 
+   BOOL* pRetVal)
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pRetVal`
+
+[out] Retourne `TRUE` si la classe ou la méthode est sealed ; sinon, retourne `FALSE`.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+
 > [!NOTE]
->  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
-  
-## <a name="remarks"></a>Remarques  
- Une classe sealed ne peut pas être utilisée comme une classe de base. Une méthode sealed ne peut pas être substitué.  
-  
-## <a name="requirements"></a>Spécifications  
- En-tête : Dia2.h  
-  
- Bibliothèque : diaguids.lib  
-  
- DLL : msdia100.dll  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+
+## <a name="remarks"></a>Remarques
+ Une classe sealed ne peut pas être utilisée comme une classe de base. Une méthode sealed ne peut pas être substitué.
+
+## <a name="requirements"></a>Spécifications
+ En-tête : Dia2.h
+
+ Bibliothèque : diaguids.lib
+
+ DLL : msdia100.dll
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

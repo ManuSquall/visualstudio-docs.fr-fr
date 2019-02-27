@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b5fa908692167b49c6bb92c892fb143b882d231
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 90230bd95e1dbcd3e4c186257c6c36faad6ba1f7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318574"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605472"
 ---
 # <a name="cvaccesse"></a>CV_access_e
 Spécifie l’étendue de visibilité (niveau d’accès) des fonctions membres et des variables.
@@ -33,14 +33,11 @@ typedef enum CV_access_e {
 ```
 
 ## <a name="elements"></a>Éléments
-CV_private  
-Membre possède un accès privé.
+CV_private membre possède un accès privé.
 
-CV_protected  
-Membre possède un accès protégé.
+CV_protected membre possède un accès protégé.
 
-CV_public  
-Membre possède un accès public.
+CV_public membre possède un accès public.
 
 ## <a name="remarks"></a>Remarques
 Le `friend` spécificateur d’accès n’est pas inclus ici, car il est généralement utilisé par des fonctions non-membres qui ont accès à des éléments à la fois privés et protégés de la classe. Utilisez le [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) méthode pour rechercher des symboles avec `SymTagFriend` accès.
@@ -49,6 +46,6 @@ Le `friend` spécificateur d’accès n’est pas inclus ici, car il est génér
 En-tête : cvconst.h
 
 ## <a name="see-also"></a>Voir aussi
-[Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)  
-[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)
+- [Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)
+- [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)

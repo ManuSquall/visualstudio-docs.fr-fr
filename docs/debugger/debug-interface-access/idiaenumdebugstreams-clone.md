@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b1420fabc81227ef57884416e9459ed42587b95
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 11a7f8e051350b066c745c47530ab4ed818f8b1b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031472"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607239"
 ---
 # <a name="idiaenumdebugstreamsclone"></a>IDiaEnumDebugStreams::Clone
-Crée un énumérateur qui contient le même état d’énumération que l’énumérateur en cours.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT Clone (   
-   IDiaEnumDebugStreams** ppenum  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `ppenum`  
- [out] Retourne un [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md) objet qui contient un doublon de l’énumérateur. Les flux de données n’est pas dupliquées, uniquement l’énumérateur.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)
+Crée un énumérateur qui contient le même état d’énumération que l’énumérateur en cours.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT Clone ( 
+   IDiaEnumDebugStreams** ppenum
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `ppenum`
+
+[out] Retourne un [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md) objet qui contient un doublon de l’énumérateur. Les flux de données n’est pas dupliquées, uniquement l’énumérateur.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

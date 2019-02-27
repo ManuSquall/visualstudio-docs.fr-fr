@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 238eb138f7e7452e942047d776411d973a689c2a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: de8c333391530cd86c6fc66a8e6c36ce8cfecd5f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54931438"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623864"
 ---
 # <a name="idiaimagedatagetimagebase"></a>IDiaImageData::get_imageBase
-Récupère l’emplacement de mémoire où l’image doit être basée.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_imageBase (   
-   ULONGLONG* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pRetVal`  
- [out] Retourne la valeur de base d’image suggérée.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="remarks"></a>Remarques  
- En raison de conflits de base d’image, une image peut être redéfinie automatiquement vers un emplacement de mémoire inutilisée lorsqu’il est chargé. Cette méthode retourne l’indicateur de base (suggéré emplacement de mémoire) qui a été stocké dans le module au moment de la compilation.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)
+Récupère l’emplacement de mémoire où l’image doit être basée.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_imageBase ( 
+   ULONGLONG* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pRetVal`
+
+[out] Retourne la valeur de base d’image suggérée.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="remarks"></a>Remarques
+ En raison de conflits de base d’image, une image peut être redéfinie automatiquement vers un emplacement de mémoire inutilisée lorsqu’il est chargé. Cette méthode retourne l’indicateur de base (suggéré emplacement de mémoire) qui a été stocké dans le module au moment de la compilation.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)

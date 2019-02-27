@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc48e56cb9a053b1ce85cf4b719de82292d8524d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: eb6fca61dfaf4577f4818c84e1570739c6d63149
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54925407"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611449"
 ---
 # <a name="idiasymbolgetmemoryspacekind"></a>IDiaSymbol::get_memorySpaceKind
-Récupère le type d’espace de mémoire.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_memorySpaceKind(   
-   DWORD* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pRetVal`  
- [out] Un pointeur vers un `DWORD` qui contient le type d’espace de mémoire.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Récupère le type d’espace de mémoire.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_memorySpaceKind(
+   DWORD* pRetVal);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pRetVal`
+
+[out] Un pointeur vers un `DWORD` qui contient le type d’espace de mémoire.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

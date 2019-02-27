@@ -12,43 +12,43 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6a190cecdfbf9d7ae77543d8a955a52a3f16d15
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c86a0e995e3336bc217bcc9ad0e7ce28a6434478
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070628"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56597138"
 ---
 # <a name="idiareadexeatrvacallback"></a>IDiaReadExeAtRVACallback
-Permet à une application cliente fournir des octets d’un fichier exécutable comme spécifié par une adresse virtuelle relative.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```  
-IDiaReadExeAtRVACallback : IUnknown  
-```  
-  
-## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
- Le tableau suivant présente les méthodes de `IDiaReadExeAtRVACallback`.  
-  
-|Méthode|Description|  
-|------------|-----------------|  
-|[IDiaReadExeAtRVACallback::ReadExecutableAtRVA](../../debugger/debug-interface-access/idiareadexeatrvacallback-readexecutableatrva.md)|Lit le nombre spécifié d’octets à partir du spécifié adresse virtuelle relative (RVA) à partir du fichier exécutable.|  
-  
-## <a name="remarks"></a>Remarques  
- L’application cliente implémente cette interface afin de fournir les octets de l’exécutable à l’aide d’une adresse virtuelle relative dans le fichier de l’exécutable. Pour utiliser un décalage de fichier absolu, implémenter la [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md) interface.  
-  
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
- Cette méthode est implémentée par l’application cliente et passée à la [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) méthode comme une méthode alternative pour la lecture du fichier.  
-  
-## <a name="requirements"></a>Spécifications  
- En-tête : Dia2.h  
-  
- Bibliothèque : diaguids.lib  
-  
- DLL : msdia80.dll  
-  
-## <a name="see-also"></a>Voir aussi  
- [Interfaces (Kit SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
- [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)
+Permet à une application cliente fournir des octets d’un fichier exécutable comme spécifié par une adresse virtuelle relative.
+
+## <a name="syntax"></a>Syntaxe
+
+```
+IDiaReadExeAtRVACallback : IUnknown
+```
+
+## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
+ Le tableau suivant présente les méthodes de `IDiaReadExeAtRVACallback`.
+
+|Méthode|Description|
+|------------|-----------------|
+|[IDiaReadExeAtRVACallback::ReadExecutableAtRVA](../../debugger/debug-interface-access/idiareadexeatrvacallback-readexecutableatrva.md)|Lit le nombre spécifié d’octets à partir du spécifié adresse virtuelle relative (RVA) à partir du fichier exécutable.|
+
+## <a name="remarks"></a>Remarques
+ L’application cliente implémente cette interface afin de fournir les octets de l’exécutable à l’aide d’une adresse virtuelle relative dans le fichier de l’exécutable. Pour utiliser un décalage de fichier absolu, implémenter la [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md) interface.
+
+## <a name="notes-for-callers"></a>Notes de publication pour les appelants
+ Cette méthode est implémentée par l’application cliente et passée à la [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) méthode comme une méthode alternative pour la lecture du fichier.
+
+## <a name="requirements"></a>Spécifications
+ En-tête : Dia2.h
+
+ Bibliothèque : diaguids.lib
+
+ DLL : msdia80.dll
+
+## <a name="see-also"></a>Voir aussi
+- [Interfaces (SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
+- [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)

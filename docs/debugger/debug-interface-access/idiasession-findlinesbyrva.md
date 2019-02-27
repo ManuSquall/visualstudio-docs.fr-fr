@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e976fa3172b4f7d3967657b0ac8252d2db93dfb2
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 4316bfa423392a98946fc0bb86af2f2e9836aba2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227181"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626061"
 ---
 # <a name="idiasessionfindlinesbyrva"></a>IDiaSession::findLinesByRVA
 Récupère les lignes dans un compiland spécifiée qui contiennent une adresse virtuelle relative (RVA) spécifiée.
@@ -33,13 +33,16 @@ HRESULT findLinesByRVA ( 
 ```
 
 #### <a name="parameters"></a>Paramètres
-`rva`  
+`rva`
+
 [in] Spécifie l’adresse comme une RVA.
 
-`length`  
+`length`
+
 [in] Spécifie le nombre d’octets de la plage d’adresses pour couvrir cette requête.
 
-`ppResult`  
+`ppResult`
+
 [out] Retourne un [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objet qui contient une liste de tous les nombres qui couvrent la plage d’adresses spécifiée.
 
 ## <a name="return-value"></a>Valeur de retour
@@ -65,5 +68,5 @@ IDiaEnumLineNumbers* GetLineNumbersByRVA(IDiaSymbol *pFunc, IDiaSession *pSessio
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)  
-[IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

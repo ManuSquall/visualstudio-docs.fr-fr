@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7dfe85b4e4903aa00521c8188a48a026b949565
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f714e5637776d6a0606246d339d3f9d2ccd9f19a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54997531"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56628076"
 ---
 # <a name="idiasymbolgetregistertype"></a>IDiaSymbol::get_registertype
-Récupère le type de Registre.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_registerType(   
-   DWORD* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pRetVal`  
- [out] Un pointeur vers un `DWORD` qui contient le type de Registre.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Récupère le type de Registre.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_registerType(
+   DWORD* pRetVal);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pRetVal`
+
+[out] Un pointeur vers un `DWORD` qui contient le type de Registre.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

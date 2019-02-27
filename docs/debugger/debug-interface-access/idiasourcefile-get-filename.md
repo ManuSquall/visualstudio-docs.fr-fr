@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35c62979e64bda47505561d6f87baa7dce18bee0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e6f57454be3690f36cbf1addddb3d51bb01a39f2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55015717"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611904"
 ---
 # <a name="idiasourcefilegetfilename"></a>IDiaSourceFile::get_fileName
-Récupère le nom de fichier source.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_fileName (   
-   BSTR* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pRetVal`  
- [out] Retourne le nom de fichier source.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
+Récupère le nom de fichier source.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_fileName ( 
+   BSTR* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pRetVal`
+
+[out] Retourne le nom de fichier source.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

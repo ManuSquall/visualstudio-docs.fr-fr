@@ -26,101 +26,101 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 195e574a3ae98bc43e41d2040e2070cf36b89067
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4bbed7664232f1c508c71534f447b67dc837f55e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920654"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56612671"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;dépendance&gt; , élément (application ClickOnce)
-Identifie une dépendance de plateforme ou l’assembly qui est requise pour l’application.  
+Identifie une dépendance de plateforme ou l’assembly qui est requise pour l’application.
 
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntaxe
 
-```xml  
+```xml
 
-      <dependency>  
-   <dependentOS  
-      supportURL  
-      description  
-   >  
-      <osVersionInfo>  
-         <os  
-            majorVersion  
-            minorVersion  
-            buildNumber  
-            servicePackMajor  
-            servicePackMinor  
-            productType  
-            suiteType  
-         />   
-      </osVersionInfo>  
-   </dependentOS>  
-   <dependentAssembly  
-      dependencyType  
-      allowDelayedBinding  
-      group  
-      codeBase  
-      size  
-   >  
-      <assemblyIdentity  
-         name  
-         version  
-         processorArchitecture  
-         language  
-      >  
-         <hash>  
-            <dsig:Transforms>  
-               <dsig:Transform  
-                  Algorithm  
-            />  
-            </dsig:Transforms>  
-            <dsig:DigestMethod />  
-            <dsig:DigestValue>  
-            </dsig:DigestValue>  
-    </hash>  
+      <dependency>
+   <dependentOS
+      supportURL
+      description
+   >
+      <osVersionInfo>
+         <os
+            majorVersion
+            minorVersion
+            buildNumber
+            servicePackMajor
+            servicePackMinor
+            productType
+            suiteType
+         />
+      </osVersionInfo>
+   </dependentOS>
+   <dependentAssembly
+      dependencyType
+      allowDelayedBinding
+      group
+      codeBase
+      size
+   >
+      <assemblyIdentity
+         name
+         version
+         processorArchitecture
+         language
+      >
+         <hash>
+            <dsig:Transforms>
+               <dsig:Transform
+                  Algorithm
+            />
+            </dsig:Transforms>
+            <dsig:DigestMethod />
+            <dsig:DigestValue>
+            </dsig:DigestValue>
+    </hash>
 
-      </assemblyIdentity>  
-   </dependentAssembly>  
-</dependency>  
-```  
+      </assemblyIdentity>
+   </dependentAssembly>
+</dependency>
+```
 
-## <a name="elements-and-attributes"></a>Éléments et attributs  
- Le `dependency` élément est requis. Il peut y avoir plusieurs instances de `dependency` dans le manifeste d’application.  
+## <a name="elements-and-attributes"></a>Éléments et attributs
+ Le `dependency` élément est requis. Il peut y avoir plusieurs instances de `dependency` dans le manifeste d’application.
 
- Le `dependency` élément n’a pas d’attributs et contient les éléments enfants suivants.  
+ Le `dependency` élément n’a pas d’attributs et contient les éléments enfants suivants.
 
-### <a name="dependentos"></a>dependentOS  
- Optionnel. Contient le `osVersionInfo` élément. Le `dependentOS` et `dependentAssembly` éléments s’excluent mutuellement : un ou l’autre doit exister pour un `dependency` élément, mais pas les deux.  
+### <a name="dependentos"></a>dependentOS
+ Optionnel. Contient le `osVersionInfo` élément. Le `dependentOS` et `dependentAssembly` éléments s’excluent mutuellement : un ou l’autre doit exister pour un `dependency` élément, mais pas les deux.
 
- `dependentOS` prend en charge les attributs suivants.  
+ `dependentOS` prend en charge les attributs suivants.
 
-|Attribut|Description|  
-|---------------|-----------------|  
-|`supportUrl`|Optionnel. Spécifie une URL de prise en charge pour la plateforme dépendante. Cette URL est affichée à l’utilisateur si la plateforme nécessaire est trouvée.|  
-|`description`|Optionnel. Décrit, dans une forme lisible, le système d’exploitation décrit par le `dependentOS` élément.|  
+|Attribut|Description|
+|---------------|-----------------|
+|`supportUrl`|Optionnel. Spécifie une URL de prise en charge pour la plateforme dépendante. Cette URL est affichée à l’utilisateur si la plateforme nécessaire est trouvée.|
+|`description`|Optionnel. Décrit, dans une forme lisible, le système d’exploitation décrit par le `dependentOS` élément.|
 
-### <a name="osversioninfo"></a>osVersionInfo  
- Obligatoire. Cet élément est un enfant de l’élément `dependentOS` et contient l’élément `os` . Cet élément n’a pas d’attributs.  
+### <a name="osversioninfo"></a>osVersionInfo
+ Obligatoire. Cet élément est un enfant de l’élément `dependentOS` et contient l’élément `os` . Cet élément n’a pas d’attributs.
 
-### <a name="os"></a>os  
- Obligatoire. Cet élément est un enfant de l’élément `osVersionInfo` . Cet élément comprend les attributs suivants.  
+### <a name="os"></a>os
+ Obligatoire. Cet élément est un enfant de l’élément `osVersionInfo` . Cet élément comprend les attributs suivants.
 
-|Attribut|Description|  
-|---------------|-----------------|  
-|`majorVersion`|Obligatoire. Spécifie le numéro de version principale du système d’exploitation.|  
-|`minorVersion`|Obligatoire. Spécifie le numéro de version secondaire du système d’exploitation.|  
-|`buildNumber`|Obligatoire. Spécifie le numéro de build du système d’exploitation.|  
-|`servicePackMajor`|Obligatoire. Spécifie le numéro majeur de service pack du système d’exploitation.|  
-|`servicePackMinor`|Optionnel. Spécifie le numéro secondaire de service pack du système d’exploitation.|  
-|`productType`|Optionnel. Identifie la valeur de type de produit. Les valeurs valides sont `server`, `workstation` et `domainController`. Par exemple, pour Windows 2000 Professionnel, cette valeur d’attribut est `workstation`.|  
-|`suiteType`|Optionnel. Identifie une suite de produits disponible sur le système, ou le type de configuration du système. Les valeurs valides sont `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted` et `terminal`. Par exemple, pour Windows 2000 Professionnel, cette valeur d’attribut est `professional`.|  
+|Attribut|Description|
+|---------------|-----------------|
+|`majorVersion`|Obligatoire. Spécifie le numéro de version principale du système d’exploitation.|
+|`minorVersion`|Obligatoire. Spécifie le numéro de version secondaire du système d’exploitation.|
+|`buildNumber`|Obligatoire. Spécifie le numéro de build du système d’exploitation.|
+|`servicePackMajor`|Obligatoire. Spécifie le numéro majeur de service pack du système d’exploitation.|
+|`servicePackMinor`|Optionnel. Spécifie le numéro secondaire de service pack du système d’exploitation.|
+|`productType`|Optionnel. Identifie la valeur de type de produit. Les valeurs valides sont `server`, `workstation` et `domainController`. Par exemple, pour Windows 2000 Professionnel, cette valeur d’attribut est `workstation`.|
+|`suiteType`|Optionnel. Identifie une suite de produits disponible sur le système, ou le type de configuration du système. Les valeurs valides sont `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted` et `terminal`. Par exemple, pour Windows 2000 Professionnel, cette valeur d’attribut est `professional`.|
 
-### <a name="dependentassembly"></a>dependentAssembly  
- Optionnel. Contient le `assemblyIdentity` élément. Le `dependentOS` et `dependentAssembly` éléments s’excluent mutuellement : un ou l’autre doit exister pour un `dependency` élément, mais pas les deux.  
+### <a name="dependentassembly"></a>dependentAssembly
+ Optionnel. Contient le `assemblyIdentity` élément. Le `dependentOS` et `dependentAssembly` éléments s’excluent mutuellement : un ou l’autre doit exister pour un `dependency` élément, mais pas les deux.
 
- `dependentAssembly` a les attributs suivants.  
+ `dependentAssembly` a les attributs suivants.
 
 
 | Attribut | Description |
@@ -131,94 +131,94 @@ Identifie une dépendance de plateforme ou l’assembly qui est requise pour l�
 | `codeBase` | Obligatoire quand le `dependencyType` attribut a la valeur `install`. Le chemin d’accès de l’assembly dépendant. Peut être un chemin d’accès absolu ou un chemin d’accès relatif de code du manifeste base. Ce chemin d’accès doit être un URI valid afin que le manifeste d’assembly soit valide. |
 | `size` | Obligatoire quand le `dependencyType` attribut a la valeur `install`. La taille de l’assembly dépendant, en octets. |
 
-### <a name="assemblyidentity"></a>assemblyIdentity  
- Obligatoire. Cet élément est un enfant de l’élément `dependentAssembly` et comprend les attributs suivants.  
+### <a name="assemblyidentity"></a>assemblyIdentity
+ Obligatoire. Cet élément est un enfant de l’élément `dependentAssembly` et comprend les attributs suivants.
 
-|Attribut|Description|  
-|---------------|-----------------|  
-|`name`|Obligatoire. Identifie le nom de l’application.|  
-|`version`|Obligatoire. Spécifie le numéro de version de l’application dans le format suivant : `major.minor.build.revision`|  
-|`publicKeyToken`|Optionnel. Spécifie une chaîne hexadécimale de 16 caractères qui représente les 8 derniers octets de la `SHA-1` la valeur de la clé publique sous laquelle est signé l’application ou un assembly de hachage. La clé publique utilisée pour signer le catalogue doit être au moins 2 048 bits.|  
-|`processorArchitecture`|Optionnel. Spécifie le processeur. Les valeurs valides sont `x86` pour 32 bits Windows et `I64` pour Windows de 64 bits.|  
-|`language`|Optionnel. Identifie les codes de langue de deux parties, telles que EN-US, de l’assembly.|  
+|Attribut|Description|
+|---------------|-----------------|
+|`name`|Obligatoire. Identifie le nom de l’application.|
+|`version`|Obligatoire. Spécifie le numéro de version de l’application dans le format suivant : `major.minor.build.revision`|
+|`publicKeyToken`|Optionnel. Spécifie une chaîne hexadécimale de 16 caractères qui représente les 8 derniers octets de la `SHA-1` la valeur de la clé publique sous laquelle est signé l’application ou un assembly de hachage. La clé publique utilisée pour signer le catalogue doit être au moins 2 048 bits.|
+|`processorArchitecture`|Optionnel. Spécifie le processeur. Les valeurs valides sont `x86` pour 32 bits Windows et `I64` pour Windows de 64 bits.|
+|`language`|Optionnel. Identifie les codes de langue de deux parties, telles que EN-US, de l’assembly.|
 
-### <a name="hash"></a>hash  
- Le `hash` élément est un enfant facultatif de la `assemblyIdentity` élément. L’élément `hash` ne comporte pas d’attributs.  
+### <a name="hash"></a>hash
+ Le `hash` élément est un enfant facultatif de la `assemblyIdentity` élément. L’élément `hash` ne comporte pas d’attributs.
 
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] utilise un hachage algorithmique de tous les fichiers dans une application en tant qu’une vérification de sécurité, pour vous assurer qu’aucun des fichiers ont été modifiés après le déploiement. Si le `hash` élément n’est pas inclus, cette vérification ne sera pas effectuée. Par conséquent, en omettant le `hash` élément n’est pas recommandé.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] utilise un hachage algorithmique de tous les fichiers dans une application en tant qu’une vérification de sécurité, pour vous assurer qu’aucun des fichiers ont été modifiés après le déploiement. Si le `hash` élément n’est pas inclus, cette vérification ne sera pas effectuée. Par conséquent, en omettant le `hash` élément n’est pas recommandé.
 
-### <a name="dsigtransforms"></a>dsig:Transforms  
- Le `dsig:Transforms` élément est un enfant requis de le `hash` élément. L’élément `dsig:Transforms` ne comporte pas d’attributs.  
+### <a name="dsigtransforms"></a>dsig:Transforms
+ Le `dsig:Transforms` élément est un enfant requis de le `hash` élément. L’élément `dsig:Transforms` ne comporte pas d’attributs.
 
-### <a name="dsigtransform"></a>dsig:Transform  
- Le `dsig:Transform` élément est un enfant requis de le `dsig:Transforms` élément. L’élément `dsig:Transform` a les attributs suivants.  
+### <a name="dsigtransform"></a>dsig:Transform
+ Le `dsig:Transform` élément est un enfant requis de le `dsig:Transforms` élément. L’élément `dsig:Transform` a les attributs suivants.
 
 
 | Attribut | Description |
 |-------------| - |
 | `Algorithm` | L’algorithme utilisé pour calculer le condensat pour ce fichier. La seule valeur utilisée par [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] est `urn:schemas-microsoft-com:HashTransforms.Identity`. |
 
-### <a name="dsigdigestmethod"></a>dsig:DigestMethod  
- Le `dsig:DigestMethod` élément est un enfant requis de le `hash` élément. L’élément `dsig:DigestMethod` a les attributs suivants.  
+### <a name="dsigdigestmethod"></a>dsig:DigestMethod
+ Le `dsig:DigestMethod` élément est un enfant requis de le `hash` élément. L’élément `dsig:DigestMethod` a les attributs suivants.
 
 
 | Attribut | Description |
 |-------------| - |
 | `Algorithm` | L’algorithme utilisé pour calculer le condensat pour ce fichier. La seule valeur utilisée par [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] est `http://www.w3.org/2000/09/xmldsig#sha1`. |
 
-### <a name="dsigdigestvalue"></a>dsig:DigestValue  
- Le `dsig:DigestValue` élément est un enfant requis de le `hash` élément. L’élément `dsig:DigestValue` ne comporte pas d’attributs. Sa valeur de texte est le hachage calculé pour le fichier spécifié.  
+### <a name="dsigdigestvalue"></a>dsig:DigestValue
+ Le `dsig:DigestValue` élément est un enfant requis de le `hash` élément. L’élément `dsig:DigestValue` ne comporte pas d’attributs. Sa valeur de texte est le hachage calculé pour le fichier spécifié.
 
-## <a name="remarks"></a>Remarques  
- Tous les assemblys utilisés par votre application doivent correspondre à un `dependency` élément. Assemblys dépendants n’incluent pas les assemblys qui doivent être préinstallés dans le global assembly cache en tant qu’assemblys de plateforme.  
+## <a name="remarks"></a>Remarques
+ Tous les assemblys utilisés par votre application doivent correspondre à un `dependency` élément. Assemblys dépendants n’incluent pas les assemblys qui doivent être préinstallés dans le global assembly cache en tant qu’assemblys de plateforme.
 
-## <a name="example"></a>Exemple  
- L’exemple de code suivant illustre `dependency` éléments dans un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste d’application. Cet exemple de code fait partie d’un exemple plus complet fourni pour le [manifeste d’Application ClickOnce](../deployment/clickonce-application-manifest.md) rubrique.  
+## <a name="example"></a>Exemple
+ L’exemple de code suivant illustre `dependency` éléments dans un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste d’application. Cet exemple de code fait partie d’un exemple plus complet fourni pour le [manifeste d’Application ClickOnce](../deployment/clickonce-application-manifest.md) rubrique.
 
-```xml  
-<dependency>  
-  <dependentOS>  
-    <osVersionInfo>  
-      <os   
-        majorVersion="4"   
-        minorVersion="10"   
-        buildNumber="0"   
-        servicePackMajor="0" />  
-    </osVersionInfo>  
-  </dependentOS>  
-</dependency>  
-<dependency>  
-  <dependentAssembly  
-    dependencyType="preRequisite"  
-    allowDelayedBinding="true">  
-    <assemblyIdentity  
-      name="Microsoft.Windows.CommonLanguageRuntime"  
-      version="4.0.20506.0" />  
-  </dependentAssembly>  
-</dependency>  
+```xml
+<dependency>
+  <dependentOS>
+    <osVersionInfo>
+      <os
+        majorVersion="4"
+        minorVersion="10"
+        buildNumber="0"
+        servicePackMajor="0" />
+    </osVersionInfo>
+  </dependentOS>
+</dependency>
+<dependency>
+  <dependentAssembly
+    dependencyType="preRequisite"
+    allowDelayedBinding="true">
+    <assemblyIdentity
+      name="Microsoft.Windows.CommonLanguageRuntime"
+      version="4.0.20506.0" />
+  </dependentAssembly>
+</dependency>
 
-<dependency>  
-  <dependentAssembly  
-    dependencyType="install"  
-    allowDelayedBinding="true"  
-    codebase="MyApplication.exe"  
-    size="4096">  
-    <assemblyIdentity  
-      name="MyApplication"  
-      version="1.0.0.0"  
-      language="neutral"  
-      processorArchitecture="x86" />  
-    <hash>  
-      <dsig:Transforms>  
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />  
-      </dsig:Transforms>  
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />  
-      <dsig:DigestValue>DpTW7RzS9IeT/RBSLj54vfTEzNg=</dsig:DigestValue>  
-    </hash>  
-  </dependentAssembly>  
-</dependency>  
-```  
+<dependency>
+  <dependentAssembly
+    dependencyType="install"
+    allowDelayedBinding="true"
+    codebase="MyApplication.exe"
+    size="4096">
+    <assemblyIdentity
+      name="MyApplication"
+      version="1.0.0.0"
+      language="neutral"
+      processorArchitecture="x86" />
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>DpTW7RzS9IeT/RBSLj54vfTEzNg=</dsig:DigestValue>
+    </hash>
+  </dependentAssembly>
+</dependency>
+```
 
-## <a name="see-also"></a>Voir aussi  
- [Manifeste d’application ClickOnce](../deployment/clickonce-application-manifest.md)   
- [\<dépendance > élément](../deployment/dependency-element-clickonce-deployment.md)
+## <a name="see-also"></a>Voir aussi
+- [Manifeste d’application ClickOnce](../deployment/clickonce-application-manifest.md)
+- [\<dépendance > élément](../deployment/dependency-element-clickonce-deployment.md)

@@ -12,36 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e358efc95d3c0d281a24109ee5ab954d6ea88506
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c6ccafc8a0d30558f61bc869d8cfc8280c04723e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54989027"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56616311"
 ---
 # <a name="idiasymbolgetvolatiletype"></a>IDiaSymbol::get_volatileType
-Récupère un indicateur qui spécifie si le type de données défini par l’utilisateur (UDT) est volatil.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_volatileType (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pRetVal`  
- [out] Retourne `TRUE` si l’UDT est volatile ; sinon, retourne `FALSE`.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
-  
+Récupère un indicateur qui spécifie si le type de données défini par l’utilisateur (UDT) est volatil.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_volatileType ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pRetVal`
+
+[out] Retourne `TRUE` si l’UDT est volatile ; sinon, retourne `FALSE`.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+
 > [!NOTE]
->  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
-  
-## <a name="remarks"></a>Remarques  
- En C++, un UDT peut être marqué avec le `volatile` mot clé, indiquant que son contenu ne peut pas être supposé existe à partir d’un accès à l’autre.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+
+## <a name="remarks"></a>Remarques
+ En C++, un UDT peut être marqué avec le `volatile` mot clé, indiquant que son contenu ne peut pas être supposé existe à partir d’un accès à l’autre.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

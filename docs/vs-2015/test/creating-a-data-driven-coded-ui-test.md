@@ -10,12 +10,12 @@ ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 71c08c78d67f65ec69a982ce431a64ec1c620d27
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cb765bebba4aaa3fe0cece4b64d33d2e810bdfb7
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755368"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796710"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Création d'un test codé de l'interface utilisateur piloté par les données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Pour tester différentes conditions, vous pouvez exécuter vos tests à plusieur
   
 4.  Additionnez 1 et 2, interrompez l'enregistreur et générez la méthode de test. Plus tard, nous allons remplacer les valeurs de cette entrée utilisateur par les valeurs d'un fichier de données.  
   
-     ![Générer la méthode de test](../test/media/cuit-datadriven-cuitbuildergencode.png "CUIT_dataDriven_CUITBuilderGenCode")  
+     ![Générer une méthode de test](../test/media/cuit-datadriven-cuitbuildergencode.png "CUIT_dataDriven_CUITBuilderGenCode")  
   
      Fermez le générateur de test. La méthode est ajoutée au test :  
   
@@ -205,7 +205,7 @@ Pour tester différentes conditions, vous pouvez exécuter vos tests à plusieur
   
    **Aide**  
   
-   Pour plus d’informations, consultez [test de livraison continue avec Visual Studio 2012 – chapitre 2 : Test unitaire Tester l’intérieur](http://go.microsoft.com/fwlink/?LinkID=255188) et [test de livraison continue avec Visual Studio 2012 – chapitre 5 : Automatisation des Tests système](http://go.microsoft.com/fwlink/?LinkID=255196)  
+   Pour plus d’informations, consultez [Test de livraison continue avec Visual Studio 2012 - Chapitre 2 : Tests unitaires : tester l’intérieur](http://go.microsoft.com/fwlink/?LinkID=255188) et [Test de livraison continue avec Visual Studio 2012 - Chapitre 5 : Automatisation des tests système](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
 ## <a name="q--a"></a>Q et R  
   

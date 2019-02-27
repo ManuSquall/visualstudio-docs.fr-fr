@@ -13,12 +13,12 @@ monikerRange: vs-2019
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b3bbffc0ae04fa9a91739a14ce4b0b4d85215ea8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 437c9a6d75df3c063a53bda0549c22fd0cbc0876
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335974"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627946"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>Déboguer les Services Kubernetes Azure live ASP.NET à l’aide du débogueur de capture instantanée
 
@@ -57,7 +57,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 1. Attacher le débogueur de capture instantanée. Vous pouvez utiliser une des différentes méthodes :
 
     * Choisissez **Déboguer > attacher le débogueur de capture instantanée...** . Sélectionnez ressources AKS votre application web est déployée sur un compte de stockage Azure, puis cliquez sur **attacher**.
-  
+
       ![Lancer le débogueur de capture instantanée à partir du menu Débogage](../debugger/media/snapshot-debug-menu-attach.png)
 
     * Cliquez avec le bouton droit sur votre projet, puis sélectionnez **publier**, puis, dans la page Publier, cliquez sur **attacher un débogueur de capture instantanée**. Sélectionnez ressources AKS votre application web est déployée sur un compte de stockage Azure, puis cliquez sur **attacher**.
@@ -67,7 +67,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
     ![Lancer le débogueur de capture instantanée à partir du menu de liste déroulante de F5](../debugger/media/snapshot-F5-dropdown-attach.png)
 
     * À l’aide de l’Explorateur de Cloud (**Affichage > Cloud Explorer**), avec le bouton droit de la ressource AKS votre application web est déployée sur et un compte de stockage Azure, puis cliquez sur **attacher un débogueur de capture instantanée**.
-  
+
       ![Lancer le débogueur de capture instantanée à partir de l’Explorateur de Cloud](../debugger/media/snapshot-launch.png)
 
     > [!NOTE]

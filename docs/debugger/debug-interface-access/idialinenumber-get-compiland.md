@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd01a89c17235223176d5e36d8560f7e9152d327
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 25d990ab019c01daf1f977464211fb72838275a1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969757"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618664"
 ---
 # <a name="idialinenumbergetcompiland"></a>IDiaLineNumber::get_compiland
-Récupère une référence au symbole de compiland qui ont contribué les octets du texte de l’image.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_compiland (   
-   IDiaSymbol** pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- pRetVal  
- [out] Retourne un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objet pour compiland qui ont contribué les octets du texte de l’image.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+Récupère une référence au symbole de compiland qui ont contribué les octets du texte de l’image.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_compiland ( 
+   IDiaSymbol** pRetVal
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ pRetVal
+
+[out] Retourne un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objet pour compiland qui ont contribué les octets du texte de l’image.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

@@ -10,21 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec2b4c518223d308f27a853c28c97b99b5ff7188
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c58bc069b3d38c4086a5642d13bb907528923bb5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54917471"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680007"
 ---
 # <a name="help-menu-commands"></a>commandes du menu Aide
-Le **aide** menu fournit des commandes pour ouvrir les fichiers d’aide.  
-  
- **Index**  
- Ouvre l’écran de contenu pour l’aide de Spy ++.  
-  
- **Utilisation de l’aide**  
- Ouvre un fichier d’aide qui décrit comment utiliser l’aide.  
-  
- **À propos de Spy++**  
- Affiche les informations de version et le copyright de logiciels pour Spy ++.
+Le **aide** menu fournit des commandes pour ouvrir les fichiers d’aide.
+
+ **Index** ouvre l’écran de contenu pour l’aide de Spy ++.
+
+ **Utilisation de l’aide** ouvre un fichier d’aide qui décrit comment utiliser l’aide.
+
+ **À propos de Spy ++** affiche les informations de version et le copyright de logiciels pour Spy ++.

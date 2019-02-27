@@ -12,36 +12,38 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62a7955c0b8bd6971aa51ff86de16b8dae6b281b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 38d7b0cb8564743ab35cac20cdcb352cdbca48d3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042879"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632587"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyrva"></a>IDiaEnumSymbolsByAddr::symbolByRVA
-Positionne l’énumérateur en effectuant une recherche par adresse virtuelle relative (RVA).  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT symbolByRVA (   
-   DWORD**      relativeVirtualAddress,  
-   IDiaSymbol** ppsymbol  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- relativeVirtualAddress  
- [in] Adresse relative au démarrage de l’image.  
-  
- ppsymbol  
- [out] Retourne un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objet qui représente le symbole trouvé.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si le symbole est introuvable. Sinon, retourne un code d'erreur.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
- [IDiaEnumSymbolsByAddr::symbolByVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyva.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Positionne l’énumérateur en effectuant une recherche par adresse virtuelle relative (RVA).
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT symbolByRVA ( 
+   DWORD**      relativeVirtualAddress,
+   IDiaSymbol** ppsymbol
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ relativeVirtualAddress
+
+[in] Adresse relative au démarrage de l’image.
+
+ ppsymbol
+
+[out] Retourne un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objet qui représente le symbole trouvé.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si le symbole est introuvable. Sinon, retourne un code d'erreur.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)
+- [IDiaEnumSymbolsByAddr::symbolByVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyva.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

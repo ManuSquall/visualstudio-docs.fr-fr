@@ -12,40 +12,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7353292f88f2b1205ef219d11fedb4c0f8ac5ac5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 78b2f70748adb6d7e9a45320d7cbb1f3ca1ddf59
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54944213"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56609421"
 ---
 # <a name="idiasymbolgethasdebuginfo"></a>IDiaSymbol::get_hasDebugInfo
-Récupère un indicateur qui spécifie si le [Compiland](../../debugger/debug-interface-access/compiland.md) contient des informations de débogage.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_hasDebugInfo(  
-   BOOL *pFlag  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pFlag`  
- [out] Retourne `TRUE` si le module contient des informations de débogage ; sinon, retourne `FALSE`.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
-  
+Récupère un indicateur qui spécifie si le [Compiland](../../debugger/debug-interface-access/compiland.md) contient des informations de débogage.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_hasDebugInfo(
+   BOOL *pFlag
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pFlag`
+
+[out] Retourne `TRUE` si le module contient des informations de débogage ; sinon, retourne `FALSE`.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+
 > [!NOTE]
->  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
-  
-## <a name="requirements"></a>Spécifications  
-  
-|Spécification|Description|  
-|-----------------|-----------------|  
-|En-tête :|dia2.h|  
-|Version :|DIA SDK 8.0|  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+
+## <a name="requirements"></a>Spécifications
+
+|Spécification|Description|
+|-----------------|-----------------|
+|En-tête :|dia2.h|
+|Version :|DIA SDK 8.0|
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

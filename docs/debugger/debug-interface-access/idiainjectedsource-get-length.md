@@ -12,34 +12,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 492c223543b4c7661a9709b88d6d162dd591a756
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8333c7e57c3cd3f240f8a72dd865e458b23bc299
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973614"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56616025"
 ---
 # <a name="idiainjectedsourcegetlength"></a>IDiaInjectedSource::get_length
-Récupère le nombre d’octets de code.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_length (   
-   ULONGLONG* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pRetVal`  
- [out] Retourne le nombre d’octets de code.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
-  
-## <a name="remarks"></a>Remarques  
- La valeur retournée par cette méthode est la longueur du code source et est la même valeur que celles retournées par la [IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md) (méthode).  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)   
- [IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)
+Récupère le nombre d’octets de code.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_length ( 
+   ULONGLONG* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pRetVal`
+
+[out] Retourne le nombre d’octets de code.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.
+
+## <a name="remarks"></a>Remarques
+ La valeur retournée par cette méthode est la longueur du code source et est la même valeur que celles retournées par la [IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md) (méthode).
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)
+- [IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)

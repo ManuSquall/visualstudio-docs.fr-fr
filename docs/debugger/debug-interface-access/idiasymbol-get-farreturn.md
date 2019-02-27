@@ -12,40 +12,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21990c772d03c7ef1657b01c64c393c8d77c79af
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 27aa2b48e56d38c779c6687001d80ae60f3ad1e1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54977589"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56609148"
 ---
 # <a name="idiasymbolgetfarreturn"></a>IDiaSymbol::get_farReturn
-Récupère un indicateur qui spécifie si la fonction contient un retour far.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_farReturn(  
-   BOOL *pFlag  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pFlag`  
- [in] Retourne `TRUE` si la fonction utilise un retour far, sinon, retourne `FALSE`.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
-  
+Récupère un indicateur qui spécifie si la fonction contient un retour far.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_farReturn(
+   BOOL *pFlag
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pFlag`
+
+[in] Retourne `TRUE` si la fonction utilise un retour far, sinon, retourne `FALSE`.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+
 > [!NOTE]
->  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
-  
-## <a name="requirements"></a>Spécifications  
-  
-|Spécification|Description|  
-|-----------------|-----------------|  
-|En-tête :|dia2.h|  
-|Version :|DIA SDK 8.0|  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+
+## <a name="requirements"></a>Spécifications
+
+|Spécification|Description|
+|-----------------|-----------------|
+|En-tête :|dia2.h|
+|Version :|DIA SDK 8.0|
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

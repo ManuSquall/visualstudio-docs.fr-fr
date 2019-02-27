@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02307fda339bb7cf45d07aeb1053a2f8a4ca8528
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ca50a9fa82f8db33fd12b5a94ee1fc9df7396124
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009074"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610747"
 ---
 # <a name="idiasectioncontribgetdiscardable"></a>IDiaSectionContrib::get_discardable
-Récupère un indicateur qui indique si la section peut être ignorée.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_discardable (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pRetVal`  
- [out] Retourne `TRUE` si la section permettre être supprimée de la mémoire en fonction des besoins ; sinon, retourne `FALSE`.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+Récupère un indicateur qui indique si la section peut être ignorée.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_discardable ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pRetVal`
+
+[out] Retourne `TRUE` si la section permettre être supprimée de la mémoire en fonction des besoins ; sinon, retourne `FALSE`.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

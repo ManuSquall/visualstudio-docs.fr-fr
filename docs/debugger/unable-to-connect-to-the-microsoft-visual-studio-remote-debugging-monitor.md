@@ -15,16 +15,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e10252a2065e45a1b2dd14e00972415e24738601
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2b74b924d8d3e10192940686fac0ffce88e3f153
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54926928"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692864"
 ---
-# <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Impossible de se connecter à l’ordinateur Microsoft Visual Studio Remote Debugging Monitor
+# <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Impossible de se connecter à l'ordinateur Microsoft Visual Studio Remote Debugging Monitor
 Ce message peut survenir parce que remote debugging monitor n’est pas correctement configuré sur l’ordinateur distant ou l’ordinateur distant est inaccessible en raison de problèmes réseau ou la présence d’un pare-feu.
-  
+
 > [!IMPORTANT]
 >  Si vous pensez avoir reçu ce message en raison d’un bogue de produit, veuillez [signaler ce problème](../ide/how-to-report-a-problem-with-visual-studio-2017.md) à Visual Studio. Si vous avez besoin d’aide supplémentaire, consultez [Talk to Us](../ide/talk-to-us.md) pour savoir comment contacter Microsoft.
 
@@ -106,16 +106,16 @@ Vous pouvez voir cette erreur si vous tentez de déboguer sur un ordinateur dist
 
 ## <a name="security_package"></a> Une erreur spécifique de package de sécurité s’est produite
 
-Cela peut être un problème hérité spécifique à Windows XP et Windows 7. Consultez ce [informations](https://stackoverflow.com/questions/4786016/unable-to-connect-to-the-microsoft-remote-debugging-monitor-a-security-package). 
+Cela peut être un problème hérité spécifique à Windows XP et Windows 7. Consultez ce [informations](https://stackoverflow.com/questions/4786016/unable-to-connect-to-the-microsoft-remote-debugging-monitor-a-security-package).
 
 ## <a name="causes-and-recommendations"></a>Les causes et les recommandations
 
-### <a name="dns"></a> L’ordinateur distant n’est pas accessible 
+### <a name="dns"></a> L’ordinateur distant n’est pas accessible
 
 Si vous ne pouvez pas vous connecter en utilisant le nom de l’ordinateur distant, essayez d’utiliser l’adresse IP à la place. Vous pouvez utiliser `ipconfig` dans une ligne de commande sur l’ordinateur distant pour obtenir l’adresse IPv4. Si vous utilisez un fichier HOSTS, vérifiez qu’il est configuré correctement.
 
 Si cette tentative échoue, vérifiez que l’ordinateur distant est accessible sur le réseau ([ping](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee624059(v=ws.10)) l’ordinateur distant). Débogage à distance via Internet n’est pas pris en charge, sauf dans certains scénarios Microsoft Azure.
-  
+
 ### <a name="server_incorrect"></a> Le nom du serveur est incorrect ou d’un logiciel tiers interfère avec le débogueur distant
 
 Dans Visual Studio, examinez les propriétés du projet et vérifiez que le nom du serveur est correct. Consultez les rubriques pour [ C# et Visual Basic](../debugger/remote-debugging-csharp.md#remote_csharp) et [C++](../debugger/remote-debugging-cpp.md#remote_cplusplus). Pour ASP.NET, ouvrez **propriétés / Web / serveurs** ou **propriétés / Debug** selon votre type de projet.
@@ -125,11 +125,11 @@ Dans Visual Studio, examinez les propriétés du projet et vérifiez que le nom 
 
 Si le nom du serveur est correct, votre logiciel antivirus ou un pare-feu tiers bloque peut-être le débogueur distant. Lorsque vous déboguez localement, cela peut se produire si Visual Studio est une application 32 bits, de sorte qu’il utilise la version 64 bits du débogueur distant pour déboguer des applications 64 bits. Les processus 32 bits et 64 bits communiquent en utilisant le réseau local au sein de l’ordinateur local. Aucun trafic réseau ne quitte l’ordinateur, mais il peut arriver que des logiciels de sécurité tiers bloquent la communication.
 
-### <a name="user_accounts"></a> Le débogueur distant s’exécute sous un compte d’utilisateur différent 
+### <a name="user_accounts"></a> Le débogueur distant s’exécute sous un compte d’utilisateur différent
 
-Le débogueur distant, par défaut, accepte uniquement les connexions à partir de l’utilisateur qui a lancé le débogueur distant et les membres du groupe Administrateurs. Des utilisateurs supplémentaires doivent être explicitement des autorisations. 
- 
-Pour résoudre ce problème, vous pouvez procéder de différentes façons :  
+Le débogueur distant, par défaut, accepte uniquement les connexions à partir de l’utilisateur qui a lancé le débogueur distant et les membres du groupe Administrateurs. Des utilisateurs supplémentaires doivent être explicitement des autorisations.
+
+Pour résoudre ce problème, vous pouvez procéder de différentes façons :
 
 -   Ajoutez l’utilisateur de Visual Studio aux autorisations du débogueur distant (dans la fenêtre du débogueur distant, choisissez **Outils > autorisations**).
 
@@ -137,33 +137,33 @@ Pour résoudre ce problème, vous pouvez procéder de différentes façons :
 
     > [!NOTE]
     > Si vous exécutez le débogueur distant sur un serveur distant, avec le bouton droit de l’application débogueur distant et choisissez **exécuter en tant qu’administrateur** (ou, vous pouvez exécuter le débogueur distant en tant que service). Si vous n’exécutez pas sur un serveur distant, seulement le démarrer normalement.
-  
--   Vous pouvez démarrer le débogueur distant à partir de la ligne de commande à l’aide du paramètre **/allow \<nom_utilisateur>**  : `msvsmon /allow <username@computer>`. 
-  
+
+-   Vous pouvez démarrer le débogueur distant à partir de la ligne de commande à l’aide du paramètre **/allow \<nom_utilisateur>**  : `msvsmon /allow <username@computer>`.
+
 -   Vous pouvez également autoriser n’importe quel utilisateur d’effectuer un débogage à distance. Dans la fenêtre du débogueur distant, accédez à la boîte de dialogue **Outils > Options**. Quand vous sélectionnez   **Aucune authentification**, vous pouvez ensuite cocher **Permettre à tous les utilisateurs de déboguer**. Toutefois, vous devez essayer cette option uniquement si les autres options d’échouer, ou si vous êtes sur un réseau privé.
 
-### <a name="firewall"></a> Le pare-feu sur l’ordinateur distant n’autorise pas les connexions entrantes au débogueur distant  
+### <a name="firewall"></a> Le pare-feu sur l’ordinateur distant n’autorise pas les connexions entrantes au débogueur distant
  Le pare-feu sur l’ordinateur Visual Studio et celui sur l’ordinateur distant doivent être configurés pour autoriser la communication entre Visual Studio et le débogueur distant. Pour plus d’informations sur les ports utilisés par le débogueur distant, consultez [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md). Pour plus d’informations sur la configuration du Pare-feu Windows, consultez [Configure the Windows Firewall for Remote Debugging](../debugger/configure-the-windows-firewall-for-remote-debugging.md).
-  
-### <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>La version du débogueur distant ne correspond pas à la version de Visual Studio  
+
+### <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>La version du débogueur distant ne correspond pas à la version de Visual Studio
  La version de Visual Studio que vous exécutez localement doit correspondre à la version de Remote Debugging Monitor qui s’exécute sur l’ordinateur distant. Pour résoudre ce problème, téléchargez et installez la version correspondante de Remote Debugging Monitor. Pour obtenir la version correcte du débogueur distant, consultez [le débogage à distance](../debugger/remote-debugging.md).
-  
-### <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>Les ordinateurs locaux et distants utilisent des modes d’authentification différents  
+
+### <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>Les ordinateurs locaux et distants utilisent des modes d’authentification différents
  Les ordinateurs locaux et distants doivent utiliser le même mode d’authentification. Pour résoudre ce problème, assurez-vous que les deux ordinateurs utilisent le même mode d’authentification. Vous pouvez modifier le mode d’authentification. Dans la fenêtre du débogueur distant, accédez à la **Outils > Options** boîte de dialogue.
-  
- Pour plus d’informations sur les modes d’authentification, consultez [Vue d’ensemble de l’authentification Windows](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831472(v=ws.11)).   
-  
-### <a name="anti-virus-software-is-blocking-the-connections"></a>Un antivirus bloque les connexions  
- L’antivirus Windows autorise les connexions au débogueur distant, mais certains antivirus tiers peuvent les bloquer. Consultez la documentation de votre antivirus pour savoir comment autoriser ces connexions.  
-  
-### <a name="network-security-policy-is-blocking-communication-between-the-remote-machine-and-visual-studio"></a>La stratégie de sécurité réseau bloque la communication entre l’ordinateur distant et Visual Studio  
- Passez en revue la sécurité de votre réseau pour vous assurer qu’elle ne bloque pas les communications. Pour plus d’informations sur la stratégie de sécurité réseau de Windows, consultez [les paramètres de stratégie de sécurité](/windows/device-security/security-policy-settings/security-policy-settings).  
-  
-### <a name="the-network-is-too-busy-to-support-remote-debugging"></a>Le réseau est trop occupé pour prendre en charge le débogage distant  
- Dans ce cas, vous devrez peut-être procéder au débogage distant ultérieurement ou replanifier le travail sur le réseau à une heure différente.  
-  
-## <a name="more-help"></a>Aide supplémentaire  
+
+ Pour plus d’informations sur les modes d’authentification, consultez [Vue d’ensemble de l’authentification Windows](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831472(v=ws.11)).
+
+### <a name="anti-virus-software-is-blocking-the-connections"></a>Un antivirus bloque les connexions
+ L’antivirus Windows autorise les connexions au débogueur distant, mais certains antivirus tiers peuvent les bloquer. Consultez la documentation de votre antivirus pour savoir comment autoriser ces connexions.
+
+### <a name="network-security-policy-is-blocking-communication-between-the-remote-machine-and-visual-studio"></a>La stratégie de sécurité réseau bloque la communication entre l’ordinateur distant et Visual Studio
+ Passez en revue la sécurité de votre réseau pour vous assurer qu’elle ne bloque pas les communications. Pour plus d’informations sur la stratégie de sécurité réseau de Windows, consultez [les paramètres de stratégie de sécurité](/windows/device-security/security-policy-settings/security-policy-settings).
+
+### <a name="the-network-is-too-busy-to-support-remote-debugging"></a>Le réseau est trop occupé pour prendre en charge le débogage distant
+ Dans ce cas, vous devrez peut-être procéder au débogage distant ultérieurement ou replanifier le travail sur le réseau à une heure différente.
+
+## <a name="more-help"></a>Aide supplémentaire
  Pour obtenir l’aide du débogueur distant de plus, ouvrez la page d’aide du débogueur distant (**aide > utilisation** dans le débogueur distant).
-  
-## <a name="see-also"></a>Voir aussi  
- [Remote Debugging](../debugger/remote-debugging.md)
+
+## <a name="see-also"></a>Voir aussi
+- [Remote Debugging](../debugger/remote-debugging.md)

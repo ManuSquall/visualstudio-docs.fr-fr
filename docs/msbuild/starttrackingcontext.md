@@ -15,31 +15,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a2a7dd34e0080dbf84a1ab13cd7e8901f601b38
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c395df1e08f1b4e33e9cd34fec54bdd044f3b4c9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54955295"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690511"
 ---
 # <a name="starttrackingcontext"></a>StartTrackingContext
-Démarre un contexte de suivi.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
+Démarre un contexte de suivi.
+
+## <a name="syntax"></a>Syntaxe
+
 ```cpp
-HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskName);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- [in] `intermediateDirectory`  
- Répertoire où stocker le journal de suivi.  
-  
- [in] `taskName`  
- Identifie le contexte de suivi. Ce nom est utilisé pour créer le nom du fichier journal.  
-  
-## <a name="return-value"></a>Valeur de retour  
- **HRESULT** avec le bit **SUCCEEDED** défini si le contexte de suivi a été créé.  
-  
-## <a name="requirements"></a>Spécifications  
+HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskName);
+```
+
+#### <a name="parameters"></a>Paramètres
+[in] `intermediateDirectory`
+
+ Répertoire où stocker le journal de suivi.
+
+[in] `taskName`
+
+ Identifie le contexte de suivi. Ce nom est utilisé pour créer le nom du fichier journal.
+
+## <a name="return-value"></a>Valeur de retour
+ **HRESULT** avec le bit **SUCCEEDED** défini si le contexte de suivi a été créé.
+
+## <a name="requirements"></a>Spécifications
  **En-tête :** *FileTracker.h*

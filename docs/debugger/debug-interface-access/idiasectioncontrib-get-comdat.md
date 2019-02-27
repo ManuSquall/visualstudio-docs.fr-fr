@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7a15e0001342a31d13cb1b77f2c8e6d7fc4d31c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 49502c0d693c7a309da9756f73c34df361b7d7bb
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936266"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621745"
 ---
 # <a name="idiasectioncontribgetcomdat"></a>IDiaSectionContrib::get_comdat
-Récupère un indicateur qui indique si la section est un enregistrement COMDAT.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_comdat (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pRetVal`  
- [out] Retourne `TRUE` si la section est un enregistrement COMDAT ; sinon, retourne `FALSE`.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
-  
-## <a name="remarks"></a>Remarques  
- Un enregistrement COMDAT est un enregistrement de fichier Format COFF (Common Object) qui rend les fonctions empaquetées visibles par l’éditeur de liens.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+Récupère un indicateur qui indique si la section est un enregistrement COMDAT.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_comdat ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pRetVal`
+
+[out] Retourne `TRUE` si la section est un enregistrement COMDAT ; sinon, retourne `FALSE`.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.
+
+## <a name="remarks"></a>Remarques
+ Un enregistrement COMDAT est un enregistrement de fichier Format COFF (Common Object) qui rend les fonctions empaquetées visibles par l’éditeur de liens.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

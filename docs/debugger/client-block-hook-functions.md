@@ -21,32 +21,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b0e70e559dc75abd6b8de1b325b9ac300055792
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 900e8db238ee26e0a7015c2acc1741a1917c8cb3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039265"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56609018"
 ---
 # <a name="client-block-hook-functions"></a>Fonctions de raccordement de bloc client
-Si vous voulez valider ou reporter le contenu des données stockées dans des blocs `_CLIENT_BLOCK`, vous pouvez écrire une fonction spécialement dans ce but. Cette fonction doit avoir un prototype similaire au suivant, défini dans CRTDBG.H :  
+Si vous voulez valider ou reporter le contenu des données stockées dans des blocs `_CLIENT_BLOCK`, vous pouvez écrire une fonction spécialement dans ce but. Cette fonction doit avoir un prototype similaire au suivant, défini dans CRTDBG.H :
 
 ```cpp
-void YourClientDump(void *, size_t)  
-```  
+void YourClientDump(void *, size_t)
+```
 
- En d’autres termes, votre fonction de raccordement doit accepter un pointeur **void** vers le début du bloc d’allocation, avec une valeur de type **size_t** indiquant la taille de l’allocation, et retourner `void`. Pour le reste, son contenu dépend de vous.  
+ En d’autres termes, votre fonction de raccordement doit accepter un pointeur **void** vers le début du bloc d’allocation, avec une valeur de type **size_t** indiquant la taille de l’allocation, et retourner `void`. Pour le reste, son contenu dépend de vous.
 
- Une fois que vous avez installé votre fonction de raccordement avec [_CrtSetDumpClient](/cpp/c-runtime-library/reference/crtsetdumpclient), elle est appelée à chaque vidage d’un bloc `_CLIENT_BLOCK`. Vous pouvez alors utiliser [_CrtReportBlockType](/cpp/c-runtime-library/reference/crtreportblocktype) pour obtenir des informations sur le type ou le sous-type des blocs ayant fait l’objet d’un vidage.  
+ Une fois que vous avez installé votre fonction de raccordement avec [_CrtSetDumpClient](/cpp/c-runtime-library/reference/crtsetdumpclient), elle est appelée à chaque vidage d’un bloc `_CLIENT_BLOCK`. Vous pouvez alors utiliser [_CrtReportBlockType](/cpp/c-runtime-library/reference/crtreportblocktype) pour obtenir des informations sur le type ou le sous-type des blocs ayant fait l’objet d’un vidage.
 
- Le pointeur vers votre fonction passé à `_CrtSetDumpClient` est du type **_CRT_DUMP_CLIENT**, comme défini dans CRTDBG.H :  
+ Le pointeur vers votre fonction passé à `_CrtSetDumpClient` est du type **_CRT_DUMP_CLIENT**, comme défini dans CRTDBG.H :
 
 ```cpp
-typedef void (__cdecl *_CRT_DUMP_CLIENT)  
-   (void *, size_t);  
-```  
+typedef void (__cdecl *_CRT_DUMP_CLIENT)
+   (void *, size_t);
+```
 
-## <a name="see-also"></a>Voir aussi  
- [Écriture de fonctions de raccordement de débogage](../debugger/debug-hook-function-writing.md)   
- [crt_dbg2, exemple](https://msdn.microsoft.com/library/21e1346a-6a17-4f57-b275-c76813089167)   
- [_CrtReportBlockType](/cpp/c-runtime-library/reference/crtreportblocktype)
+## <a name="see-also"></a>Voir aussi
+
+- [Écriture de fonctions de raccordement de débogage](../debugger/debug-hook-function-writing.md)
+- [crt_dbg2, exemple](https://msdn.microsoft.com/library/21e1346a-6a17-4f57-b275-c76813089167)
+- [_CrtReportBlockType](/cpp/c-runtime-library/reference/crtreportblocktype)

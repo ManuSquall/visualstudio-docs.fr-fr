@@ -10,12 +10,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8504ebcbcea9906148f9c3a671f185375d269d83
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a688ff56f770f2446384ab34cf7da03d69827de4
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766392"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842292"
 ---
 # <a name="signing-in-to-visual-studio"></a>Connexion à Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Vous pouvez éventuellement personnaliser et optimiser votre expérience de dév
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Pourquoi dois-je me connecter à Visual Studio ?
  En vous connectant à Visual Studio, vous bénéficiez des avantages suivants :
 
--   **Bénéficier d’un large éventail d’avantages** à partir du programme Visual Studio Dev Essentials, notamment de logiciels gratuits, de formations, d’une assistance et plus encore. Voir [Visual Studio Dev Essentials](http://aka.ms/vsdevhelp) pour obtenir de plus amples informations.
+-   **Bénéficier d’un large éventail d’avantages** à partir du programme Visual Studio Dev Essentials, notamment de logiciels gratuits, de formations, d’une assistance et plus encore. Voir [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) pour obtenir de plus amples informations.
 
 -   **Synchroniser vos paramètres Visual Studio** - Les paramètres que vous personnalisez, comme les combinaisons de touches, la disposition des fenêtres et le thème de couleur, s'appliquent immédiatement lorsque vous vous connectez à Visual Studio sur un appareil. Consultez [Paramètres synchronisés dans Visual Studio](http://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
 

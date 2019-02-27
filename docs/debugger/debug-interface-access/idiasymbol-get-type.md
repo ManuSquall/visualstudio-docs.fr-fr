@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5550ed7551e58140301f6a434d252a534b78228
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 4fa57b1f289f9cc5e8c57c08b6d51bb1677c3db4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227194"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608251"
 ---
 # <a name="idiasymbolgettype"></a>IDiaSymbol::get_type
 Récupère le symbole qui représente le type de ce symbole.
@@ -31,7 +31,8 @@ HRESULT get_type (
 ```
 
 #### <a name="parameters"></a>Paramètres
-`pRetVal`  
+`pRetVal`
+
 [out] Retourne un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objet qui représente le type de ce symbole.
 
 ## <a name="return-value"></a>Valeur de retour
@@ -57,6 +58,6 @@ if (SUCCEEDED(pType->get_type( &pBaseType ))) {
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)  
-[IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)  
-[IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)
+- [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
