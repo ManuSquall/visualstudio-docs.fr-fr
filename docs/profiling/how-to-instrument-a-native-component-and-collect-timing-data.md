@@ -8,40 +8,40 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b4fc93e6481763c7970a5b7b962692b4d8d3b3ef
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7fbf76392244978f8266f14ac56fcc60b1d16198
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54997778"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637995"
 ---
 # <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Procédure : Instrumenter un composant autonome natif et collecter les données de temporisation avec le profileur à partir de la ligne de commande
-Cette rubrique explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour instrumenter un composant natif comme un fichier .*exe* ou .*dll* C++, et pour collecter des données chronologiques détaillées.  
+Cette rubrique explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour instrumenter un composant natif comme un fichier .*exe* ou .*dll* C++, et pour collecter des données chronologiques détaillées.
 
 > [!NOTE]
 >  Pour obtenir le chemin d’accès des outils de profilage, voir [Spécifier le chemin d’accès des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
 
-Pour collecter des données chronologiques détaillées à partir d’un composant avec la méthode d’instrumentation, vous utilisez l’outil [VSInstr.exe](../profiling/vsinstr.md) pour générer une version instrumentée du composant. Vous démarrez ensuite le profileur. Quand le composant instrumenté est exécuté, les données chronologiques sont collectées automatiquement dans un fichier de données. Vous pouvez suspendre et reprendre la collecte des données pendant la session de profilage.  
+Pour collecter des données chronologiques détaillées à partir d’un composant avec la méthode d’instrumentation, vous utilisez l’outil [VSInstr.exe](../profiling/vsinstr.md) pour générer une version instrumentée du composant. Vous démarrez ensuite le profileur. Quand le composant instrumenté est exécuté, les données chronologiques sont collectées automatiquement dans un fichier de données. Vous pouvez suspendre et reprendre la collecte des données pendant la session de profilage.
 
- Pour mettre fin à une session de profilage, fermez l’application cible, puis arrêtez explicitement le profileur.  
+ Pour mettre fin à une session de profilage, fermez l’application cible, puis arrêtez explicitement le profileur.
 
-## <a name="start-the-profiling-session"></a>Démarrer la session de profilage  
+## <a name="start-the-profiling-session"></a>Démarrer la session de profilage
 
-#### <a name="to-start-profiling-by-using-the-instrumentation-method"></a>Pour démarrer le profilage avec la méthode d’instrumentation  
+#### <a name="to-start-profiling-by-using-the-instrumentation-method"></a>Pour démarrer le profilage avec la méthode d’instrumentation
 
-1. Ouvrez une fenêtre Invite de commandes.  
+1. Ouvrez une fenêtre Invite de commandes.
 
-2. Utilisez l’outil **VSInstr** pour générer une version instrumentée de l’application cible.  
+2. Utilisez l’outil **VSInstr** pour générer une version instrumentée de l’application cible.
 
-3. Démarrez le profileur. Type :  
+3. Démarrez le profileur. Type :
 
-    **VSPerfCmd /start:trace /output:** `OutputFile` [`Options`]  
+    **VSPerfCmd /start:trace /output:** `OutputFile` [`Options`]
 
-   - L’option [/start](../profiling/start.md)**:trace** initialise le profileur.  
+   - L’option [/start](../profiling/start.md)**:trace** initialise le profileur.
 
-   - L’option [/output](../profiling/output.md)**:**`OutputFile` est nécessaire avec **/start**. `OutputFile` spécifie le nom et l’emplacement du fichier de données profilage (.vsp).  
+   - L’option [/output](../profiling/output.md)**:**`OutputFile` est nécessaire avec **/start**. `OutputFile` spécifie le nom et l’emplacement du fichier de données profilage (.vsp).
 
-     Vous pouvez utiliser une ou plusieurs des options suivantes avec l’option **/start:trace**.  
+     Vous pouvez utiliser une ou plusieurs des options suivantes avec l’option **/start:trace**.
 
    | Option | Description |
    | - | - |
@@ -54,32 +54,32 @@ Pour collecter des données chronologiques détaillées à partir d’un composa
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un fichier (.*etl*) distinct. |
 
 
-4. Démarrez l’application cible de manière habituelle.  
+4. Démarrez l’application cible de manière habituelle.
 
-## <a name="control-data-collection"></a>Contrôler la collecte des données  
- Pendant l’exécution de l’application cible, vous pouvez contrôler la collecte des données en démarrant et en arrêtant l’écriture des données dans le fichier à l’aide des options de *VSPerfCmd.exe*. Le fait de pouvoir contrôler la collecte vous permet de collecter des données pour une phase spécifique de l’exécution du programme, telle que le démarrage ou l’arrêt de l’application.  
+## <a name="control-data-collection"></a>Contrôler la collecte des données
+ Pendant l’exécution de l’application cible, vous pouvez contrôler la collecte des données en démarrant et en arrêtant l’écriture des données dans le fichier à l’aide des options de *VSPerfCmd.exe*. Le fait de pouvoir contrôler la collecte vous permet de collecter des données pour une phase spécifique de l’exécution du programme, telle que le démarrage ou l’arrêt de l’application.
 
-#### <a name="to-start-and-stop-data-collection"></a>Pour démarrer et arrêter la collecte de données  
+#### <a name="to-start-and-stop-data-collection"></a>Pour démarrer et arrêter la collecte de données
 
--   Les paires d’options suivantes permettent de démarrer et d’arrêter la collecte des données. Spécifiez chaque option sur une ligne de commande distincte. Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.  
+-   Les paires d’options suivantes permettent de démarrer et d’arrêter la collecte des données. Spécifiez chaque option sur une ligne de commande distincte. Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.
 
-    |Option|Description|  
-    |------------|-----------------|  
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Démarre (**/globalon**) ou arrête (**/globaloff**) la collecte des données pour tous les processus.|  
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Démarre (**/processon**) ou arrête (**/processoff**) la collecte des données pour le processus spécifié par l’ID de processus (`PID`).|  
-    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Démarre (**/threadon**) ou arrête (**/threadoff**) la collecte des données pour le thread spécifié par l’ID de thread (`TID`).|  
+    |Option|Description|
+    |------------|-----------------|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Démarre (**/globalon**) ou arrête (**/globaloff**) la collecte des données pour tous les processus.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Démarre (**/processon**) ou arrête (**/processoff**) la collecte des données pour le processus spécifié par l’ID de processus (`PID`).|
+    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Démarre (**/threadon**) ou arrête (**/threadoff**) la collecte des données pour le thread spécifié par l’ID de thread (`TID`).|
 
-## <a name="end-the-profiling-session"></a>Arrêter la session de profilage  
- Pour mettre fin à une session de profilage, fermez l’application qui exécute le composant instrumenté, puis appelez l’option [/shutdown](../profiling/shutdown.md) de **VSPerfCmd** pour désactiver le profileur et fermer le fichier de données de profilage.  
+## <a name="end-the-profiling-session"></a>Arrêter la session de profilage
+ Pour mettre fin à une session de profilage, fermez l’application qui exécute le composant instrumenté, puis appelez l’option [/shutdown](../profiling/shutdown.md) de **VSPerfCmd** pour désactiver le profileur et fermer le fichier de données de profilage.
 
-#### <a name="to-end-a-profiling-session"></a>Pour terminer une session de profilage  
+#### <a name="to-end-a-profiling-session"></a>Pour terminer une session de profilage
 
-1.  Fermez l’application cible.  
+1.  Fermez l’application cible.
 
-2.  Fermez le profileur. Type :  
+2.  Fermez le profileur. Type :
 
-     **VSPerfCmd /shutdown**  
+     **VSPerfCmd /shutdown**
 
-## <a name="see-also"></a>Voir aussi  
- [Profiler des applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Vues de données de la méthode d'instrumentation](../profiling/instrumentation-method-data-views.md)
+## <a name="see-also"></a>Voir aussi
+- [Profiler des applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md)
+- [Vues de données de la méthode d'instrumentation](../profiling/instrumentation-method-data-views.md)

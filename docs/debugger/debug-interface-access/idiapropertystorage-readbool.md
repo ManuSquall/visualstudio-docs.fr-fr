@@ -12,37 +12,39 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf0e91e2d617877596798512140195b54f4d3f8e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c5cc189283d6e9910b0b01d3d3e1ca28165bf500
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924546"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596345"
 ---
 # <a name="idiapropertystoragereadbool"></a>IDiaPropertyStorage::ReadBOOL
-Lit `BOOL` valeurs dans un jeu de propriétés.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT ReadBOOL (   
-   PROPID id,  
-   BOOL*  pValue  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `id`  
- [in] Identificateur de la propriété à lire (`PROPID` est défini dans WTypes.h comme un `ULONG`).  
-  
- `pValue`  
- [out] Retourne la valeur de propriété.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_INVALIDARG` si la propriété n’est pas de type `BOOL`.  
-  
-## <a name="remarks"></a>Remarques  
- Pour obtenir des résultats cohérents, interpréter les `BOOL` sorte que les valeurs différentes de zéro sont `TRUE` et zéro est `FALSE`.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)
+Lit `BOOL` valeurs dans un jeu de propriétés.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT ReadBOOL ( 
+   PROPID id,
+   BOOL*  pValue
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `id`
+
+[in] Identificateur de la propriété à lire (`PROPID` est défini dans WTypes.h comme un `ULONG`).
+
+ `pValue`
+
+[out] Retourne la valeur de propriété.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_INVALIDARG` si la propriété n’est pas de type `BOOL`.
+
+## <a name="remarks"></a>Remarques
+ Pour obtenir des résultats cohérents, interpréter les `BOOL` sorte que les valeurs différentes de zéro sont `TRUE` et zéro est `FALSE`.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

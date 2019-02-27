@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d61cfb8d61daaf570cb03865aa0568e670fb4919
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 86593ca3ac437b9a36fb671694898a7d80434eba
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854107"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626620"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest (tâche)
 Génère un manifeste d’application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ou un manifeste natif. Un manifeste natif décrit un composant en lui définissant une identité unique et en identifiant tous les assemblys et fichiers qui le composent. Un manifeste d’application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] étend un manifeste natif en indiquant le point d’entrée de l’application et en spécifiant le niveau de sécurité des applications.
@@ -64,7 +64,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche `GenerateApplicationM
 | `TrustInfoFile` | Paramètre <xref:Microsoft.Build.Framework.ITaskItem> facultatif.<br /><br /> Indique un document XML qui définit la sécurité de l’application. L’élément racine dans le document XML doit être un nœud trustInfo dans l’espace de noms asmv2. Si la tâche génère un manifeste natif, ce paramètre est ignoré. |
 | `UseApplicationTrust` | Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est true, les propriétés `Product`, `Publisher` et `SupportUrl` sont écrites dans le manifeste de l’application. |
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.GenerateManifestBase>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste des paramètres de la classe Task, consultez [Classe de base de tâche](../msbuild/task-base-class.md).
 
 Pour plus d’informations sur l’utilisation de la tâche `GenerateDeploymentManifest`, consultez [GenerateApplicationManifest, tâche](../msbuild/generateapplicationmanifest-task.md).
@@ -88,7 +88,7 @@ Ceci illustre le scénario de génération de manifeste le plus simple dans lequ
 
 > [!NOTE]
 > Dans l’exemple ci-dessous, tous les fichiers binaires d’application sont prédéfinis, ce qui permet de mettre l’accent sur la génération de manifeste. Cet exemple produit un déploiement [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] complètement actif.
-> 
+>
 > [!NOTE]
 > Pour plus d’informations sur la propriété `Thumbprint` utilisée dans la tâche `SignFile` de cet exemple, consultez [SignFile, tâche](../msbuild/signfile-task.md).
 
@@ -141,7 +141,7 @@ Cet exemple est semblable à l’exemple précédent, si ce n’est que le nom e
 
 > [!NOTE]
 > Dans l’exemple ci-dessous, tous les fichiers binaires d’application sont prédéfinis, ce qui permet de mettre l’accent sur la génération de manifeste. Cet exemple produit un déploiement [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] complètement actif.
-> 
+>
 > [!NOTE]
 > Pour plus d’informations sur la propriété `Thumbprint` utilisée dans la tâche `SignFile` de cet exemple, consultez [SignFile, tâche](../msbuild/signfile-task.md).
 
@@ -199,7 +199,7 @@ Cet exemple utilise les tâches `GenerateApplicationManifest` et `GenerateDeploy
 
 > [!NOTE]
 > Dans l’exemple ci-dessous, tous les fichiers binaires d’application sont prédéfinis, ce qui permet de mettre l’accent sur la génération de manifeste. Cet exemple produit un déploiement [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] complètement actif.
-> 
+>
 > [!NOTE]
 > Pour plus d’informations sur la propriété `Thumbprint` utilisée dans la tâche `SignFile` de cet exemple, consultez [SignFile, tâche](../msbuild/signfile-task.md).
 
@@ -350,7 +350,7 @@ Cet exemple crée *Test.exe.manifest*, qui permet de déployer l’application X
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[Tâches](../msbuild/msbuild-tasks.md)  
-[Tâche GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md)  
-[SignFile, tâche](../msbuild/signfile-task.md)  
-[Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
+- [Tâches](../msbuild/msbuild-tasks.md)
+- [Tâche GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md)
+- [SignFile, tâche](../msbuild/signfile-task.md)
+- [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

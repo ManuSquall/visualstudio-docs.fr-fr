@@ -18,20 +18,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e16cf15e4c2f201c76fba72f547b939ce883ad2d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 103503b5f35d335867b4f5a9b0b76d7c3e6ed20e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020878"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610604"
 ---
 # <a name="common-msbuild-project-properties"></a>Propriétés communes des projets MSBuild
-Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui sont définies dans les fichiers projet Visual Studio ou incluses dans les fichiers *.targets* fournis par MSBuild.  
-  
- Les fichiers projet dans Visual Studio (*.csproj*, *.vbproj*, *.vcxproj* et autres) contiennent le code XML MSBuild qui s’exécute quand vous générez un projet à l’aide de l’IDE. Les projets importent généralement un ou plusieurs fichiers *.targets* pour définir leur processus de génération. Pour plus d’informations, consultez [Fichiers .targets MSBuild](../msbuild/msbuild-dot-targets-files.md).  
-  
-## <a name="list-of-common-properties-and-parameters"></a>Liste des propriétés et paramètres courants  
-  
+Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui sont définies dans les fichiers projet Visual Studio ou incluses dans les fichiers *.targets* fournis par MSBuild.
+
+ Les fichiers projet dans Visual Studio (*.csproj*, *.vbproj*, *.vcxproj* et autres) contiennent le code XML MSBuild qui s’exécute quand vous générez un projet à l’aide de l’IDE. Les projets importent généralement un ou plusieurs fichiers *.targets* pour définir leur processus de génération. Pour plus d’informations, consultez [Fichiers .targets MSBuild](../msbuild/msbuild-dot-targets-files.md).
+
+## <a name="list-of-common-properties-and-parameters"></a>Liste des propriétés et paramètres courants
+
 | Nom de propriété ou de paramètre | Description |
 |------------------------------------| - |
 | AdditionalLibPaths | Spécifie des dossiers supplémentaires dans lesquels les compilateurs doivent rechercher des assemblys de référence. |
@@ -128,6 +128,6 @@ Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui s
 | WarningsNotAsErrors | Spécifie une liste d'avertissements à ne pas traiter comme des erreurs. Ce paramètre est équivalent au commutateur `/warnaserror` du compilateur. |
 | Win32Manifest | Nom du fichier manifeste qui doit être incorporé dans l'assembly final. Ce paramètre est équivalent au commutateur `/win32Manifest` du compilateur. |
 | Win32Resource | Nom de fichier de la ressource Win32 à incorporer dans l'assembly final. Ce paramètre est équivalent au commutateur `/win32resource` du compilateur. |
-  
-## <a name="see-also"></a>Voir aussi  
- [Éléments communs des projets MSBuild](../msbuild/common-msbuild-project-items.md)
+
+## <a name="see-also"></a>Voir aussi
+- [Éléments communs des projets MSBuild](../msbuild/common-msbuild-project-items.md)

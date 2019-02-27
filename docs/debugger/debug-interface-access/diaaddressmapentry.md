@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b472c52934353e6324d72077f8ea878467159cbd
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 311762f4eafc8dad63da5854870f2836ee68b3ee
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318639"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637085"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 Décrit une entrée dans un mappage d’adresses.
@@ -32,11 +32,9 @@ struct DiaAddressMapEntry {
 ```
 
 ## <a name="elements"></a>Éléments
-`rva`  
-Une adresse virtuelle relative (RVA) dans l’image A.
+`rva` Une adresse virtuelle relative (RVA) dans l’image A.
 
-`rvaTo`  
-L’adresse virtuelle relative `rva` est mappé dans l’image B.
+`rvaTo` L’adresse virtuelle relative `rva` est mappé dans l’image B.
 
 ## <a name="remarks"></a>Remarques
 Un mappage d’adresses fournit une traduction à partir de la disposition d’une image (A) à un autre (B). Un tableau de `DiaAddressMapEntry` structures triés par `rva` définit un mappage d’adresses.
@@ -55,5 +53,5 @@ Pour convertir une adresse, `addrA`, dans l’image A une adresse, `addrB`, dans
 En-tête : dia2.h
 
 ## <a name="see-also"></a>Voir aussi
-[Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)
+- [Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)

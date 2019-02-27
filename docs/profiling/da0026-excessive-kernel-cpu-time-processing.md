@@ -12,30 +12,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a22f797f8099da7b33afb0e0b6f05bd932f67c1c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 906d24513982917a455fb7fc59940446c89dae45
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54971962"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615479"
 ---
 # <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026 : Traitement temps CPU noyaux excessif
 
-|||  
-|-|-|  
-|ID de règle|TODO|  
-|Category|Utilisation des outils de profilage|  
-|Méthode de profilage|Échantillonnage|  
-|Message|Temps CPU en mode noyau relativement élevé. Analysez la source en activant l’échantillonnage de SysCall.|  
-|Type de règle|Information|  
+|||
+|-|-|
+|ID de règle|TODO|
+|Category|Utilisation des outils de profilage|
+|Méthode de profilage|Échantillonnage|
+|Message|Temps CPU en mode noyau relativement élevé. Analysez la source en activant l’échantillonnage de SysCall.|
+|Type de règle|Information|
 
- Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 10 échantillons pour déclencher cette règle.  
+ Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 10 échantillons pour déclencher cette règle.
 
-## <a name="cause"></a>Cause  
- Le temps processeur qui a été exécuté en mode noyau a dépassé le temps passé en mode utilisateur. Effectuez de nouveau un profilage et un échantillonnage du nombre d’appels système (syscalls) pour déterminer la cause des durées élevées d’exécution en mode noyau.  
+## <a name="cause"></a>Cause
+ Le temps processeur qui a été exécuté en mode noyau a dépassé le temps passé en mode utilisateur. Effectuez de nouveau un profilage et un échantillonnage du nombre d’appels système (syscalls) pour déterminer la cause des durées élevées d’exécution en mode noyau.
 
-## <a name="rule-description"></a>Description de la règle  
- La proportion relativement élevée de temps passé par l’application en mode noyau peut nécessiter un examen approfondi. Une application en mode utilisateur passe en mode noyau pour effectuer des opérations d’E/S, pour attendre des primitives de synchronisation de thread ou de processus, ou pour effectuer des appels système. Vous pouvez rechercher les types d’appels système qu’émet l’application, ainsi que les fonctions qui sont responsables de ces appels quand vous sélectionnez l’option permettant de rassembler des échantillons de piles d’appels basés sur les appels système.  
+## <a name="rule-description"></a>Description de la règle
+ La proportion relativement élevée de temps passé par l’application en mode noyau peut nécessiter un examen approfondi. Une application en mode utilisateur passe en mode noyau pour effectuer des opérations d’E/S, pour attendre des primitives de synchronisation de thread ou de processus, ou pour effectuer des appels système. Vous pouvez rechercher les types d’appels système qu’émet l’application, ainsi que les fonctions qui sont responsables de ces appels quand vous sélectionnez l’option permettant de rassembler des échantillons de piles d’appels basés sur les appels système.
 
-## <a name="how-to-fix-violations"></a>Comment corriger les violations  
+## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour rechercher les types d’appels système qu’émet votre application, exécutez de nouveau le profil et sélectionnez l’option permettant de rassembler des échantillons en fonction des appels système. Voir [Guide pratique pour choisir des événements d’échantillonnage](../profiling/how-to-choose-sampling-events.md) si vous exécutez les outils de profilage dans l’IDE. Si vous exécutez les outils de profilage à partir de la ligne de commande, consultez la section **Options d’intervalle d’échantillonnage** de l’article [VSPerfCmd](../profiling/vsperfcmd.md) dans la documentation de référence sur les outils en ligne de commande des outils de profilage.

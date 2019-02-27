@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 638e49a2e2146503186eb26f25e67ff68bb4a354
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9f0248936b41c9103a772cd4b2622f4fddfe5fff
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042060"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696738"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Premier aperçu du débogueur Visual Studio
 
@@ -27,7 +27,7 @@ Les fonctionnalités décrites ici sont applicables à C#, C++, Visual Basic, Ja
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Définir un point d’arrêt et démarrer le débogueur
 
-Pour déboguer, vous devez démarrer votre application avec le débogueur attaché au processus de l’application. **F5** (**Déboguer > Démarrer le débogage**) est l’approche la plus courante pour faire cela. Cependant, vous n’avez peut-être pas encore défini de points d’arrêt pour examiner le code de votre application : nous commençons donc par cela, puis nous démarrons le débogage. Les points d'arrêt constituent une fonctionnalité élémentaire et essentielle de toute procédure de débogage fiable. Quand vous définissez un point d'arrêt, Visual Studio interrompt l'exécution du code à l'emplacement du point d'arrêt pour vous permettre d'examiner les valeurs des variables, le comportement de la mémoire ou encore la bonne exécution ou non d'une branche de code. 
+Pour déboguer, vous devez démarrer votre application avec le débogueur attaché au processus de l’application. **F5** (**Déboguer > Démarrer le débogage**) est l’approche la plus courante pour faire cela. Cependant, vous n’avez peut-être pas encore défini de points d’arrêt pour examiner le code de votre application : nous commençons donc par cela, puis nous démarrons le débogage. Les points d'arrêt constituent une fonctionnalité élémentaire et essentielle de toute procédure de débogage fiable. Quand vous définissez un point d'arrêt, Visual Studio interrompt l'exécution du code à l'emplacement du point d'arrêt pour vous permettre d'examiner les valeurs des variables, le comportement de la mémoire ou encore la bonne exécution ou non d'une branche de code.
 
 Si vous avez un fichier ouvert dans l’éditeur de code, vous pouvez définir un point d’arrêt en cliquant dans la marge à gauche d’une ligne de code.
 
