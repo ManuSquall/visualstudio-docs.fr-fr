@@ -4,19 +4,19 @@ description: Décrit la configuration de l’intégration continue dans Azure De
 author: mlearned
 manager: jillfra
 ms.assetid: b81c172a-be87-4adc-861e-d20b94be9e38
-ms.service: azure-resource-manager
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 08/01/2016
 ms.author: mlearned
-ms.openlocfilehash: bbe4fc4f59527b73b46d95f70541202f87ffab4e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c91b52d10e3692be600bdee3a0e2dd60182f0668
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55139740"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841790"
 ---
 # <a name="continuous-integration-in-azure-devops-services-using-azure-resource-group-deployment-projects"></a>Intégration continue dans Azure DevOps Services à l’aide de projets de déploiement Groupe de ressources Azure
+
 Pour déployer un modèle Azure, vous devez effectuer les tâches selon différentes phases : Générer, Tester, Copier sur Azure (également appelée « préproduction ») et Déployer le modèle. Il existe deux façons de déployer des modèles dans Azure DevOps Services. Les deux méthodes fournissent les mêmes résultats. Par conséquent, choisissez celle qui convient le mieux à votre flux de travail.
 
 1. Ajoutez une opération unique au pipeline de build qui exécute le script PowerShell inclus dans le projet de déploiement du groupe de ressources Azure (Deploy-AzureResourceGroup.ps1). Le script copie les artefacts et déploie ensuite le modèle.

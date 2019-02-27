@@ -8,28 +8,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c69f5598d2db319fd881396720029dcd4ad17300
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 11a3850073068cf280901a6948565329e83f4629
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55024130"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638489"
 ---
 # <a name="how-to-create-a-profiler-comparison-report-from-a-command-prompt"></a>Procédure : Créer un rapport de comparaison du profileur à partir d’une invite de commandes
-Vous pouvez générer un rapport des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] qui compare les données de performances de deux fichiers de données de profilage (.*vsp* ou .*vsps*). Le rapport montre les différences, les régressions de performances et les améliorations qui se sont produites d’une session de profilage à l’autre. Les valeurs du rapport présentent le delta, ou la modification, à partir de la base de référence du premier fichier que vous spécifiez. Le delta est calculé en déterminant la différence entre l’ancienne valeur, qui est la valeur de la base de référence, et la valeur résultant de la nouvelle analyse. Les comparaisons des données du profileur peuvent être basées sur les fonctions du code, les modules de l’application, les lignes, les pointeurs d’instruction et les types.  
-  
- Pour lister les identificateurs des catégories et des champs de la comparaison, tapez la ligne de commande suivante :  
-  
- **VSPerfReport /querydifftables**  *NomFichierVsp1* *NomFichierVsp2*  
-  
- Utilisez la syntaxe suivante pour créer le rapport de comparaison :  
-  
- **VSPerfReport /diff**  `VspFileName1` *NomFichierVsp2* [**/**`Options`]  
-  
- Vous pouvez ajouter des options du tableau suivant à la ligne de commande **VSPerfReport /diff**.  
-  
-|Option|Description|  
-|------------|-----------------|  
-|**DiffThreshold:**[*Valeur*]|Ignore la différence si elle est inférieure à cette valeur de seuil de pourcentage. De même, les nouvelles données avec des valeurs inférieures à ce seuil n’apparaissent pas.|  
-|**DiffTable :** *TableName*|Utilise ce tableau pour comparer les fichiers. Par défaut, le tableau des fonctions est utilisé. Spécifiez l’identificateur qui est répertorié dans **VSPerfReport /querydifftables**.|  
+Vous pouvez générer un rapport des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] qui compare les données de performances de deux fichiers de données de profilage (.*vsp* ou .*vsps*). Le rapport montre les différences, les régressions de performances et les améliorations qui se sont produites d’une session de profilage à l’autre. Les valeurs du rapport présentent le delta, ou la modification, à partir de la base de référence du premier fichier que vous spécifiez. Le delta est calculé en déterminant la différence entre l’ancienne valeur, qui est la valeur de la base de référence, et la valeur résultant de la nouvelle analyse. Les comparaisons des données du profileur peuvent être basées sur les fonctions du code, les modules de l’application, les lignes, les pointeurs d’instruction et les types.
+
+ Pour lister les identificateurs des catégories et des champs de la comparaison, tapez la ligne de commande suivante :
+
+ **VSPerfReport /querydifftables**  *NomFichierVsp1* *NomFichierVsp2*
+
+ Utilisez la syntaxe suivante pour créer le rapport de comparaison :
+
+ **VSPerfReport /diff**  `VspFileName1` *NomFichierVsp2* [**/**`Options`]
+
+ Vous pouvez ajouter des options du tableau suivant à la ligne de commande **VSPerfReport /diff**.
+
+|Option|Description|
+|------------|-----------------|
+|**DiffThreshold:**[*Valeur*]|Ignore la différence si elle est inférieure à cette valeur de seuil de pourcentage. De même, les nouvelles données avec des valeurs inférieures à ce seuil n’apparaissent pas.|
+|**DiffTable :** *TableName*|Utilise ce tableau pour comparer les fichiers. Par défaut, le tableau des fonctions est utilisé. Spécifiez l’identificateur qui est répertorié dans **VSPerfReport /querydifftables**.|
 |**DiffColumn :** *ColumnName*|Utiliser cette colonne pour comparer les valeurs. Par défaut, la colonne de pourcentage d’échantillons exclusifs est utilisée. Spécifiez l’identificateur qui est répertorié dans **VSPerfReport /querydifftables**.|
