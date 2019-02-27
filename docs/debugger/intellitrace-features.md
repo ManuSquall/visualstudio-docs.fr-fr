@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ab4bf684fae4919869bb4c3ad170c5dee29eda9
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 762fc8a28b8c5b3f8729ecd728d12ed5cdbbafc6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317768"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720183"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>Fonctionnalités IntelliTrace (C#, Visual Basic, C++)
 
@@ -42,7 +42,7 @@ Pour vérifier qu’IntelliTrace est activé, ouvrez la page d’options **Outil
 
 ## <a name="ChooseEvents"></a> Choisissez les événements qu’IntelliTrace enregistre (C#, Visual Basic)
 
-Vous pouvez activer ou désactiver l’enregistrement d’événements IntelliTrace spécifiques.
+Vous pouvez activer ou désactiver l'enregistrement d'événements IntelliTrace spécifiques.
 
 Si vous êtes en cours de débogage, interrompez-le. Accédez à **Outils > Options > IntelliTrace > événements IntelliTrace**. Choisissez les événements IntelliTrace à enregistrer.
 
@@ -56,7 +56,7 @@ Les instantanés sont disponibles dans Visual Studio Enterprise 2017 version 15.
 
 Cette fonctionnalité n’est pas activée par défaut, mais IntelliTrace peut enregistrer les appels de méthode en plus des événements. Pour activer la collecte d’atteindre des appels de méthode **Outils > Options > IntelliTrace > Général**, puis sélectionnez **événements IntelliTrace et informations (managées uniquement) d’appels**.
 
-Informations sur les appels ne sont pas actuellement disponibles pour les applications .NET Core et ASP.NET Core. 
+Informations sur les appels ne sont pas actuellement disponibles pour les applications .NET Core et ASP.NET Core.
 
 Cette opération vous permet de consulter l'historique de la pile des appels et de vous déplacer vers l'arrière ou vers l'avant dans les appels de votre code. IntelliTrace enregistre des données comme les noms des méthodes, les points d'entrée et de sortie des méthodes, ainsi que certaines valeurs de paramètres et de retour.
 

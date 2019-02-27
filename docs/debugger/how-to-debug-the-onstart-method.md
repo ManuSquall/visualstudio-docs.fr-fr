@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cfd6153389bbfe9cbbd36f33f6a2e4384509297
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 2fc5e8a7e0bbc80fd7fa0aa2d242239a9be6a219
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227059"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56714970"
 ---
 # <a name="how-to-debug-the-onstart-method"></a>Comment : déboguer la méthode OnStart
 Vous pouvez déboguer un service Windows en le démarrant et en attachant le débogueur au processus de service. Pour plus d'informations, consultez [How to: Debug Windows Service Applications](/dotnet/framework/windows-services/how-to-debug-windows-service-applications). Toutefois, pour déboguer la méthode <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> d’un service Windows, vous devez lancer le débogueur à l’intérieur de la méthode.
@@ -53,5 +53,5 @@ Vous pouvez déboguer un service Windows en le démarrant et en attachant le dé
 5. Une nouvelle instance de Visual Studio démarre, mais son exécution s’arrête à la méthode `Debugger.Launch()` .
 
 ## <a name="see-also"></a>Voir aussi
-[Sécurité du débogueur](../debugger/debugger-security.md)  
-[Débogage du code managé](../debugger/debugging-managed-code.md)
+- [Sécurité du débogueur](../debugger/debugger-security.md)
+- [Débogage du code managé](../debugger/debugging-managed-code.md)

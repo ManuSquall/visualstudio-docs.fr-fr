@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf8e59bf79355b4e610091ac8662b8d2a01af322
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 21630bea3022769d18748190c2a2d24c0e519a3c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318678"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608490"
 ---
 # <a name="datakind"></a>DataKind
 Indique la portée d’une valeur de données particulière.
@@ -40,35 +40,25 @@ enum DataKind {
 ```
 
 ## <a name="elements"></a>Éléments
-DataIsUnknown  
-Symbole de données ne peut pas être déterminé.
+Symbole de données de DataIsUnknown ne peut pas être déterminé.
 
-DataIsLocal  
-Élément de données est une variable locale.
+Élément de données de DataIsLocal est une variable locale.
 
-DataIsStaticLocal  
-Élément de données est une variable locale statique.
+Élément de données de DataIsStaticLocal est une variable locale statique.
 
-DataIsParam  
-Élément de données est un paramètre formel.
+Élément de données de DataIsParam est un paramètre formel.
 
-DataIsObjectPtr  
-Élément de données est un pointeur d’objet (`this`).
+Élément de données de DataIsObjectPtr est un pointeur d’objet (`this`).
 
-DataIsFileStatic  
-Élément de données est une variable de portée de fichier.
+Élément de données de DataIsFileStatic est une variable de portée de fichier.
 
-DataIsGlobal  
-Élément de données est une variable globale.
+Élément de données de DataIsGlobal est une variable globale.
 
-DataIsMember  
-Élément de données est une variable de membre d’objet.
+Élément de données de DataIsMember est une variable de membre d’objet.
 
-DataIsStaticMember  
-Élément de données est une variable statique de classe.
+Élément de données de DataIsStaticMember est une variable statique de classe.
 
-DataIsConstant  
-Élément de données est une valeur constante.
+Élément de données de DataIsConstant est une valeur constante.
 
 ## <a name="remarks"></a>Remarques
 Les valeurs dans cette énumération sont retournées par la [IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) (méthode).
@@ -77,5 +67,5 @@ Les valeurs dans cette énumération sont retournées par la [IDiaSymbol::get_da
 En-tête : cvconst.h
 
 ## <a name="see-also"></a>Voir aussi
-[Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)
+- [Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)

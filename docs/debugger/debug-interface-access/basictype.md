@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bc24a62281e754af8d97e641e8fa6e6866f7570
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 03e82a8c17b33aa085b4ed64b9ba609bee183e1d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318017"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626113"
 ---
 # <a name="basictype"></a>BasicType
 Spécifie le type de base du symbole.
@@ -50,59 +50,41 @@ enum BasicType {
 ```
 
 ## <a name="elements"></a>Éléments
-btNoType  
-Aucun type de base est spécifié.
+btNoType Qu'aucun type de base est spécifié.
 
-btVoid  
-Type de base est un `void`.
+btVoid type de base est un `void`.
 
-btChar  
-Type de base est un `char` (type C/C++).
+btChar type de base est un `char` (type C/C++).
 
-btWChar  
-Type de base est un caractère (Unicode) de large (`WCHAR`).
+btWChar type de base est un caractère (Unicode) de large (`WCHAR`).
 
-btInt  
-Type de base est `signed int` (type C/C++).
+est de type de base de btInt `signed int` (type C/C++).
 
-btUInt  
-Type de base est `unsigned int` (type C/C++).
+est de type de base de btUInt `unsigned int` (type C/C++).
 
-btFloat  
-Type de base est un nombre à virgule flottante (`FLOAT`).
+btFloat type de base est un nombre à virgule flottante (`FLOAT`).
 
-btBCD  
-Type de base est un nombre décimal codée en binaire (`BCD`).
+btBCD type de base est un nombre décimal codée en binaire (`BCD`).
 
-btBool  
-Type de base est une valeur booléenne (`BOOL`).
+btBool type de base est une valeur booléenne (`BOOL`).
 
-btLong  
-Type de base est un `long int` (type C/C++).
+btLong type de base est un `long int` (type C/C++).
 
-btULong  
-Type de base est un `unsigned long int` (type C/C++).
+btULong type de base est un `unsigned long int` (type C/C++).
 
-btCurrency  
-Type de base est la devise.
+btCurrency type de base est la devise.
 
-btDate  
-Type de base est la date/heure (`DATE`).
+btDate type de base est la date/heure (`DATE`).
 
-btVariant  
-Type de base est une structure de type de variable (`VARIANT`).
+btVariant type de base est une structure de type de variable (`VARIANT`).
 
-btComplex  
-Type de base est un nombre complexe.
+btComplex type de base est un nombre complexe.
 
-btBit  
-Type de base est un peu plus tard.
+btBit type de base est un peu plus tard.
 
-btBSTR  
-Type de base est une chaîne binaire ou base (`BSTR`).
+btBSTR type de base est une chaîne binaire ou base (`BSTR`).
 
-btHresult  
-Type de base est un `HRESULT`.
+btHresult type de base est un `HRESULT`.
 
 ## <a name="remarks"></a>Remarques
 Les valeurs dans cette énumération sont retournées par la [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md) (méthode).
@@ -111,6 +93,6 @@ Les valeurs dans cette énumération sont retournées par la [IDiaSymbol::get_ba
 En-tête : cvconst.h
 
 ## <a name="see-also"></a>Voir aussi
-[Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)  
-[IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)
+- [Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)
+- [IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)

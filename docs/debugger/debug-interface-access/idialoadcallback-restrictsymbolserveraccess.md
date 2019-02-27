@@ -12,27 +12,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 016f64f4c25b448bbcada095fe5aa41d7c3427a2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0de567f0417714e1246e11ba074c9b0134e92ce8
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54931295"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618625"
 ---
 # <a name="idialoadcallbackrestrictsymbolserveraccess"></a>IDiaLoadCallback::RestrictSymbolServerAccess
-Détermine si l’accès est autorisé à un serveur de symboles pour résoudre les symboles.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT RestrictSymbolServerAccess();  
-```  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="remarks"></a>Remarques  
- Un code de retour autre que `S_OK` empêche d’utiliser un serveur de symboles pour résoudre les symboles.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)
+Détermine si l’accès est autorisé à un serveur de symboles pour résoudre les symboles.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT RestrictSymbolServerAccess();
+```
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="remarks"></a>Remarques
+ Un code de retour autre que `S_OK` empêche d’utiliser un serveur de symboles pour résoudre les symboles.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

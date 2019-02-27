@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a53dc7d890f76af562faf3f585914423b3d4fd94
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c6a0ff03784df581fc2f6c57b51b896096d97bba
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54925641"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627391"
 ---
 # <a name="idiaimagedatagetrelativevirtualaddress"></a>IDiaImageData::get_relativeVirtualAddress
-Récupère l’emplacement dans la mémoire virtuelle du module relatif à l’application.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_relativeVirtualAddress (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pRetVal`  
- [out] Retourne le décalage relatif de la mémoire virtuelle du module.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)
+Récupère l’emplacement dans la mémoire virtuelle du module relatif à l’application.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_relativeVirtualAddress ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pRetVal`
+
+[out] Retourne le décalage relatif de la mémoire virtuelle du module.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)

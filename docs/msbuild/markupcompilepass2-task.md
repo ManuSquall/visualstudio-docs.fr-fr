@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c426e65df270f6fcc3fa9a574f84cc0406d42294
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d929abc6581bf77dfd6ff5cf8b23d450a78a6f6c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016302"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627192"
 ---
 # <a name="markupcompilepass2-task"></a>MarkupCompilePass2 (tâche)
 
@@ -44,7 +44,7 @@ La tâche <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass2> effectue la pr
 | `RootNamespace` | Paramètre **String** facultatif.<br /><br /> Spécifie l’espace de noms racine pour les classes qui se trouvent dans le projet. **RootNamespace** est également utilisé comme espace de noms par défaut d’un fichier de code managé généré quand le fichier [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] correspondant n’inclut pas l’attribut `x:Class`. |
 | `XAMLDebuggingInformation` | Paramètre **Boolean** facultatif.<br /><br /> Quand la valeur est **true**, des informations de diagnostic sont générées et incluses dans le [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] compilé pour faciliter le débogage. |
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 Avant d’exécuter **MarkupCompilePass2**, vous devez générer un assembly temporaire qui contient les types utilisés par les fichiers [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] dont la passe de compilation du balisage a été différée. Pour générer l’assembly temporaire, exécutez la tâche **GenerateTemporaryTargetAssembly**.
 
@@ -56,11 +56,11 @@ L’exemple suivant montre comment utiliser la tâche <xref:Microsoft.Build.Task
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <UsingTask 
-    TaskName="Microsoft.Build.Tasks.Windows.MarkupCompilePass2" 
+  <UsingTask
+    TaskName="Microsoft.Build.Tasks.Windows.MarkupCompilePass2"
     AssemblyFile="C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\PresentationBuildTasks.dll" />
   <Target Name="MarkupCompilePass2Task">
-    <MarkupCompilePass2 
+    <MarkupCompilePass2
       AssemblyName="WPFMSBuildSample"
       Language="C#"
       OutputType="WinExe"
@@ -72,9 +72,9 @@ L’exemple suivant montre comment utiliser la tâche <xref:Microsoft.Build.Task
 
 ## <a name="see-also"></a>Voir aussi
 
-[Informations de référence sur MSBuild WPF](../msbuild/wpf-msbuild-reference.md)  
-[Informations de référence sur les tâches MSBuild WPF](../msbuild/wpf-msbuild-task-reference.md)  
-[Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)  
-[Informations de référence sur les tâches MSBuild](../msbuild/msbuild-task-reference.md)  
-[Générer une application WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  
-[Vue d’ensemble des applications du navigateur XAML WPF](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)
+- [Informations de référence sur MSBuild WPF](../msbuild/wpf-msbuild-reference.md)
+- [Informations de référence sur les tâches MSBuild WPF](../msbuild/wpf-msbuild-task-reference.md)
+- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
+- [Informations de référence sur les tâches MSBuild](../msbuild/msbuild-task-reference.md)
+- [Générer une application WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+- [Vue d’ensemble des applications du navigateur XAML WPF](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb649915179bc6e6b767970150df99caff306b4c
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 511beae100529f0db555eca0a8ddb995d7a335d1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317729"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636578"
 ---
 # <a name="udtkind"></a>UdtKind
 Décrit un certain nombre de type défini par l’utilisateur (UDT).
@@ -34,17 +34,13 @@ enum UdtKind {
 ```
 
 ## <a name="elements"></a>Éléments
-UdtStruct  
-UDT est une structure.
+Les UDT UdtStruct est une structure.
 
-UdtClass  
-UDT est une classe.
+Les UDT UdtClass est une classe.
 
-UdtUnion  
-UDT est une union.
+Les UDT UdtUnion est une union.
 
-UdtInterface  
-UDT est une interface.
+Les UDT UdtInterface est une interface.
 
 ## <a name="remarks"></a>Remarques
 Les valeurs dans cette énumération sont retournées par la [IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md) (méthode).
@@ -53,5 +49,5 @@ Les valeurs dans cette énumération sont retournées par la [IDiaSymbol::get_ud
 En-tête : cvconst.h
 
 ## <a name="see-also"></a>Voir aussi
-[Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)
+- [Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)

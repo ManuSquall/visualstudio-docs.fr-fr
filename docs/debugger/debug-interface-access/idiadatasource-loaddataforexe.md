@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b078e918f399019b2532e7fe3adea220fc09e012
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: 4f95e8a9321ff7ae518e72496289f8ad0c7b4682
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987546"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56609642"
 ---
 # <a name="idiadatasourceloaddataforexe"></a>IDiaDataSource::loadDataForExe
 S’ouvre et prépare les données de débogage associées au fichier.exe/.dll.
@@ -33,13 +33,16 @@ HRESULT loadDataForExe (
 ```
 
 #### <a name="parameters"></a>Paramètres
-executable  
+executable
+
 [in] Chemin d’accès au fichier .exe ou .dll.
 
-searchPath  
+searchPath
+
 [in] Autre chemin d’accès pour rechercher des données de débogage.
 
-pCallback  
+pCallback
+
 [in] Un `IUnknown` interface pour un objet qui prend en charge une interface de rappel de débogage, telles que la [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md), [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md), le [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md), et/ou la [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) interfaces.
 
 ## <a name="return-value"></a>Valeur de retour
@@ -54,7 +57,7 @@ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Le tab
 |E_INVALIDARG|Paramètre non valide.|
 |E_UNEXPECTED|Source de données a déjà été préparée.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 L’en-tête de débogage du fichier.exe/.dll désigne l’emplacement des données de débogage.
 
 Cette méthode lit l’en-tête de débogage, puis recherche et prépare les données de débogage. La progression de la recherche peut-être, le cas échéant, être signalée et contrôlée via des rappels. Par exemple, le [IDiaLoadCallback::NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md) est appelé lorsque le `IDiaDataSource::loadDataForExe` méthode recherche et traite un répertoire de débogage.
@@ -84,12 +87,12 @@ if (FAILED(hr))
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)  
-[IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md)  
-[IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)  
-[IDiaLoadCallback::NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md)  
-[IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)  
-[IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)  
-[IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)  
-[IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)  
-[IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)
+- [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
+- [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md)
+- [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)
+- [IDiaLoadCallback::NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md)
+- [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)
+- [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)
+- [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)
+- [IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)
+- [IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)

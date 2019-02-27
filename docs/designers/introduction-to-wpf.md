@@ -11,18 +11,18 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 893b073c2722fc91e342d37f0aeb2a490fccb53a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bc943fe059850b024a5067d36bcc14d258ca5565
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919987"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635070"
 ---
 # <a name="wpf-overview"></a>Vue d’ensemble de WPF
 
 Windows Presentation Foundation (WPF) vous permet de créer des applications clientes de bureau pour Windows avec des expériences utilisateur visuellement surprenantes.
 
-![Exemple d’interface utilisateur Contoso Healthcare](../designers/media/wpfintrofigure24.png)
+![Exemple d'interface utilisateur Contoso Healthcare](../designers/media/wpfintrofigure24.png)
 
 Le cœur de WPF est un moteur de rendu vectoriel et indépendant de toute résolution, créé pour tirer parti du matériel graphique moderne. WPF étend le cœur avec un ensemble complet de fonctionnalités de développement d’applications qui incluent XAML (Extensible Application Markup Language), des contrôles, la liaison de données, la disposition, les graphiques 2D et 3D, l’animation, des styles, des modèles, des documents, des médias, du texte et de la typographie. WPF étant inclus dans le .NET Framework, vous pouvez développer des applications qui incorporent d’autres éléments de la bibliothèque de classes .NET Framework.
 
@@ -66,7 +66,7 @@ Plus précisément, ce code XAML définit une fenêtre et un bouton à l’aide 
 
 L’illustration suivante montre l’interface utilisateur définie par XAML dans l’exemple précédent.
 
-![Fenêtre qui contient un bouton](../designers/media/wpfintrofigure10.png)
+![Fenêtre contenant un bouton](../designers/media/wpfintrofigure10.png)
 
 Comme XAML est basé sur XML, l’interface utilisateur que vous composez avec est assemblée dans une hiérarchie d’éléments imbriqués, connue sous le nom d’ [arborescence des éléments](/dotnet/framework/wpf/advanced/trees-in-wpf). L’arborescence des éléments offre un moyen logique et intuitif de créer et gérer des interfaces utilisateur.
 
@@ -218,7 +218,7 @@ Le <xref:System.Windows.Controls.DockPanel> autorise les contrôles <xref:System
 
 L’illustration suivante affiche le résultat du balisage XAML dans l’exemple précédent.
 
-![DockPanel, page](../designers/media/wpfintrofigure11.png)
+![Page DockPanel](../designers/media/wpfintrofigure11.png)
 
 ## <a name="data-binding"></a>Liaison de données
 
@@ -315,7 +315,7 @@ Pour plus d’informations, consultez [Vue d’ensemble des pinceaux WPF](/dotne
 
 WPF comprend également des fonctionnalités de rendu 3D qui s’intègrent aux graphiques 2D, permettant ainsi la création d’interfaces utilisateur plus intéressantes. Par exemple, la figure suivante montre des images 2D restituées sur des formes 3D.
 
-![Capture d’écran : exemple Visual3D](../designers/media/wpfintrofigure13.png)
+![Capture d'écran : exemple Visual3D](../designers/media/wpfintrofigure13.png)
 
 Pour plus d’informations, consultez [Vue d’ensemble des graphismes 3D](/dotnet/framework/wpf/graphics-multimedia/3-d-graphics-overview).
 
@@ -323,7 +323,7 @@ Pour plus d’informations, consultez [Vue d’ensemble des graphismes 3D](/dotn
 
 La prise en charge d’animations WPF vous permet d’agrandir, de faire bouger, de faire pivoter et de réaliser des fondus avec les contrôles pour créer des transitions de page intéressantes, et plus encore. Vous pouvez animer la plupart des classes WPF, même les classes personnalisées. L’illustration suivante montre une animation simple en action.
 
-![Images d’un cube animé](../designers/media/wpfintrofigure7.png)
+![Images d'un cube animé](../designers/media/wpfintrofigure7.png)
 
 Pour plus d’informations, consultez [Vue d’ensemble de l’animation](/dotnet/framework/wpf/graphics-multimedia/animation-overview).
 
@@ -367,7 +367,7 @@ Pour faciliter un rendu de texte de qualité optimale, WPF offre les fonctionnal
 
 Comme démonstration d’une intégration de texte avec des graphiques, l’illustration suivante montre l’application d’un ornement de texte.
 
-![Texte avec différents ornements de texte](../designers/media/wpfintrofigure23.png)
+![Texte avec différents ornements](../designers/media/wpfintrofigure23.png)
 
 Pour plus d’informations, consultez [Typographie dans WPF](/dotnet/framework/wpf/advanced/typography-in-wpf).
 
@@ -445,7 +445,7 @@ L’exemple suivant indique comment modifier l’apparence d’un <xref:System.W
 
 Dans cet exemple, l’interface utilisateur du bouton par défaut a été remplacée par une <xref:System.Windows.Shapes.Ellipse> aux bords bleu foncé remplie à l’aide d’un <xref:System.Windows.Media.RadialGradientBrush>. Le contrôle <xref:System.Windows.Controls.ContentPresenter> affiche le contenu du <xref:System.Windows.Controls.Button>, « Click Me! ». Quand l’utilisateur clique sur <xref:System.Windows.Controls.Button> , l’événement <xref:System.Windows.Controls.Primitives.ButtonBase.Click> est toujours déclenché dans le cadre du comportement par défaut du contrôle <xref:System.Windows.Controls.Button> . Le résultat est affiché dans la figure suivante :
 
-![Bouton en forme d’ellipse et seconde fenêtre](../designers/media/wpfintrofigure2.png)
+![Bouton en forme d'ellipse et seconde fenêtre](../designers/media/wpfintrofigure2.png)
 
 ### <a name="data-templates"></a>Modèles de données
 

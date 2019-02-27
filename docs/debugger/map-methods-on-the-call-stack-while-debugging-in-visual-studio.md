@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5285149bbefa8230940cfad19b5e0391a1e99bd
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: 118b8a6c8d857e626d39cf27d2767f75cd0550ee
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690500"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56704811"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>Créer une carte visuelle de la pile des appels pendant le débogage (C#, Visual Basic, C++, JavaScript)
 
@@ -54,10 +54,10 @@ Voici un rapide coup de œil à une carte de code :
 ##  <a name="MapStack"></a> Mapper la pile des appels
 
 1. Dans Visual Studio Enterprise C#, Visual Basic, C++ ou JavaScript du projet, démarrez le débogage en sélectionnant **déboguer** > **démarrer le débogage** ou en appuyant sur **F5**.
-   
+
 1. Une fois votre application passe en mode arrêt ou que vous parcourez une fonction, sélectionnez **déboguer** > **carte de Code**, ou appuyez sur **Ctrl**+**MAJ** +**`**.
 
-   La pile d’appels actuelle apparaît en orange sur une nouvelle carte de code :
+   La pile d'appels actuelle apparaît en orange sur une nouvelle carte de code :
 
    ![Voir pile des appels sur carte de code](../debugger/media/debuggermap_seeundocallstack.png "DebuggerMap_SeeUndoCallStack")
 
@@ -73,19 +73,19 @@ Pour obtenir plus d’informations sur un élément, pointez dessus et consultez
 ## <a name="map-external-code"></a>Code externe de la carte
 
 Par défaut, seul votre propre code apparaît sur la carte. Pour afficher le code externe sur la carte :
-  
+
 - Avec le bouton droit dans le **pile des appels** fenêtre et sélectionnez **afficher le Code externe**:
-  
+
   ![Afficher le code externe à l’aide de la fenêtre Pile des appels](../debugger/media/debuggermap_callstackmenu.png "DebuggerMap_CallStackMenu")
 - Ou, désélectionnez **activer uniquement mon Code** dans Visual Studio **outils** (ou **déboguer**) > **Options**  >   **Débogage**:
-  
+
   ![Afficher le code externe à l’aide de la boîte de dialogue Options](../debugger/media/debuggermap_debugoptions.png "DebuggerMap_DebugOptions")
 
 ## <a name="control-the-maps-layout"></a>Contrôler la disposition de la carte
 
-Modifier la disposition de la carte n’affecte pas le code en aucune façon. 
+Modifier la disposition de la carte n’affecte pas le code en aucune façon.
 
-Pour contrôler la disposition de la carte, sélectionnez le **disposition** menu sur la barre d’outils de la carte. 
+Pour contrôler la disposition de la carte, sélectionnez le **disposition** menu sur la barre d’outils de la carte.
 
 Dans le **disposition** menu, vous pouvez :
 
@@ -95,9 +95,9 @@ Dans le **disposition** menu, vous pouvez :
 
 ##  <a name="MakeNotes"></a> Rédiger des notes sur le code
 
-Vous pouvez ajouter des commentaires pour effectuer le suivi de ce qui se passe dans le code. 
+Vous pouvez ajouter des commentaires pour effectuer le suivi de ce qui se passe dans le code.
 
-Pour ajouter un commentaire, avec le bouton droit dans la carte de code et sélectionnez **modifier** > **nouveau commentaire**, puis tapez le commentaire. 
+Pour ajouter un commentaire, avec le bouton droit dans la carte de code et sélectionnez **modifier** > **nouveau commentaire**, puis tapez le commentaire.
 
 Pour ajouter une nouvelle ligne dans un commentaire, appuyez sur **MAJ**+**entrée**.
 
@@ -109,11 +109,11 @@ Lorsque vous exécutez votre application pour le point d’arrêt suivant ou l�
 
 ![Carte de code de mise à jour avec la pile d’appels suivante](../debugger/media/debuggermap_addclearcallstack.png "DebuggerMap_AddClearCallStack")
 
-Pour arrêter le mappage de l’ajout de nouvelles piles d’appels automatiquement, sélectionnez ![pile des appels de l’afficher sur la carte de code automatiquement](../debugger/media/debuggermap_automaticupdateicon.gif "pile des appels de l’afficher sur la carte de code automatiquement") sur la barre d’outils de carte de code. La carte continue à mettre en surbrillance les piles d’appels existantes. Pour ajouter manuellement la pile des appels actuelle à la carte, appuyez sur **Ctrl**+**MAJ**+**`**. 
+Pour arrêter le mappage de l’ajout de nouvelles piles d’appels automatiquement, sélectionnez ![pile des appels de l’afficher sur la carte de code automatiquement](../debugger/media/debuggermap_automaticupdateicon.gif "pile des appels de l’afficher sur la carte de code automatiquement") sur la barre d’outils de carte de code. La carte continue à mettre en surbrillance les piles d’appels existantes. Pour ajouter manuellement la pile des appels actuelle à la carte, appuyez sur **Ctrl**+**MAJ**+**`**.
 
 ##  <a name="AddRelatedCode"></a> Ajouter du code associé à la carte
 
-Maintenant que vous avez un mappage, en C# ou Visual Basic, vous pouvez ajouter des éléments tels que des champs, propriétés et d’autres méthodes, pour effectuer le suivi de ce qui se passe dans le code. 
+Maintenant que vous avez un mappage, en C# ou Visual Basic, vous pouvez ajouter des éléments tels que des champs, propriétés et d’autres méthodes, pour effectuer le suivi de ce qui se passe dans le code.
 
 Pour passer à la définition d’une méthode dans le code, double-cliquez sur la méthode dans le mappage, ou sélectionnez-le et appuyez sur **F12**, ou faites un clic droit et sélectionnez **atteindre la définition**.
 
@@ -151,7 +151,7 @@ Poursuivez l'élaboration de la carte pour afficher davantage de code.
 
 Vous pouvez exporter un mappage, envoyer à d’autres personnes avec Microsoft Outlook, enregistrez-le dans votre solution et archivez-le dans le contrôle de version.
 
-Pour partager ou enregistrer la carte, utilisez **partager** dans la barre d’outils de carte de code. 
+Pour partager ou enregistrer la carte, utilisez **partager** dans la barre d’outils de carte de code.
 
 ![Carte code pile d’appels partage avec d’autres utilisateurs](../debugger/media/debuggermap_sharewithothers.png "carte code pile d’appels partage avec d’autres utilisateurs")
 

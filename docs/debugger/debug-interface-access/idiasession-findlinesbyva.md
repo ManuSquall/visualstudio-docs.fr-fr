@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2503707b8fd5907cd028b7af3e67cd5acd76a00
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 29f3f714cdcbe529dac98948f6568934a6f508af
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227785"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646823"
 ---
 # <a name="idiasessionfindlinesbyva"></a>IDiaSession::findLinesByVA
 Récupère les informations de numéro de ligne pour les lignes contenues dans une plage d’adresses virtuel spécifié (VA).
@@ -33,13 +33,16 @@ HRESULT findLinesByVA (
 ```
 
 #### <a name="parameters"></a>Paramètres
-`va`  
+`va`
+
 [in] Spécifie l’adresse utiliser que
 
-`length`  
+`length`
+
 [in] Spécifie le nombre d’octets de la plage d’adresses pour couvrir cette requête.
 
-`ppResult`  
+`ppResult`
+
 [out] Retourne un [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objet qui contient une liste de tous les nombres qui couvrent la plage d’adresses spécifiée.
 
 ## <a name="example"></a>Exemple
@@ -62,5 +65,5 @@ IDiaEnumLineNumbers *GetLineNumbersByVA(IDiaSymbol *pFunc, IDiaSession *pSession
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)  
-[IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

@@ -21,22 +21,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7568975ff23694e9a62f7d6b3010d1598c5bc8f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 16091b8743a30404560a1bf841710f65ad1343a3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940165"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701353"
 ---
 # <a name="select-code-type-dialog-box"></a>Sélectionner le type de code, boîte de dialogue
-Pour ouvrir cette boîte de dialogue, ouvrez la boîte de dialogue **Attacher au processus**, puis cliquez sur le bouton **Sélectionner**.  
-  
- **Déterminer automatiquement le type de code à déboguer**  
- Le débogueur approprié sera sélectionné sur la base du type de code qui s'exécute.  
-  
- **Déboguer ces types de codes :**  
- Dans la liste fournie, sélectionnez le type de code que vous souhaitez déboguer.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Sécurité du débogueur](../debugger/debugger-security.md)   
- [S’attacher à des processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+Pour ouvrir cette boîte de dialogue, ouvrez la boîte de dialogue **Attacher au processus**, puis cliquez sur le bouton **Sélectionner**.
+
+ **Déterminer automatiquement le type de code à déboguer** le débogueur approprié sera sélectionné en fonction du type de code qui est en cours d’exécution.
+
+ **Déboguer ces types de codes :** dans la liste fournie, choisissez le type de code que vous souhaitez déboguer.
+
+## <a name="see-also"></a>Voir aussi
+- [Sécurité du débogueur](../debugger/debugger-security.md)
+- [S’attacher à des processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

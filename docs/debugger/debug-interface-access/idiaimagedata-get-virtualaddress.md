@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09e4ba99f22ef620f1f761bfa88dd0cd1ec00906
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c5df2098c4859205ef07648c214f43b74e53673d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919835"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638567"
 ---
 # <a name="idiaimagedatagetvirtualaddress"></a>IDiaImageData::get_virtualAddress
-Récupère l’emplacement dans la mémoire virtuelle de l’image.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_virtualAddress (   
-   ULONGLONG* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pRetVal`  
- [out] Retourne l’adresse virtuelle de l’image.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)
+Récupère l’emplacement dans la mémoire virtuelle de l’image.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_virtualAddress ( 
+   ULONGLONG* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pRetVal`
+
+[out] Retourne l’adresse virtuelle de l’image.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)

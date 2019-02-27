@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee06900559dd27b0cf499693987037db4a08da03
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 35612c8b4ab4e4ee64673d6058143788f56339fb
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55040006"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624124"
 ---
 # <a name="idiasymbolgetbasedataslot"></a>IDiaSymbol::get_baseDataSlot
-Récupère l’emplacement de base de données.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_baseDataSlot(   
-   DWORD* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pRetVal`  
- [out] Un pointeur vers un `DWORD` qui contient l’emplacement de base de données.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Récupère l’emplacement de base de données.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_baseDataSlot(
+   DWORD* pRetVal);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pRetVal`
+
+[out] Un pointeur vers un `DWORD` qui contient l’emplacement de base de données.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

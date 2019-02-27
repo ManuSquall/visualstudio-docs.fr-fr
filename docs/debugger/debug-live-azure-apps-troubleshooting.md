@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbdbeb10d9d5d7afb7adf17b7a27a0b8d59c9e72
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: bb6e7332386e7dc22465eaffedd01a969673dc3c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335478"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607913"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Problèmes connus et dépannage pour le débogage d’instantané dans Visual Studio
 
@@ -96,8 +96,8 @@ Débogage d’instantané et Application Insights varient selon un ICorProfiler,
 
 ## <a name="see-also"></a>Voir aussi
 
-[Débogage dans Visual Studio](../debugger/index.md)  
-[Déboguer des applications ASP.NET en production à l’aide du débogueur de capture instantanée](../debugger/debug-live-azure-applications.md)  
-[Débogage en direct ASP.NET Azure virtuel Machines\Virtual Machines identiques à l’aide du débogueur de capture instantanée](../debugger/debug-live-azure-virtual-machines.md)  
-[Déboguer ASP.NET Azure Kubernetes en direct à l’aide du débogueur de capture instantanée](../debugger/debug-live-azure-kubernetes.md)  
-[FAQ pour le débogage d’instantané](../debugger/debug-live-azure-apps-faq.md)  
+- [Débogage dans Visual Studio](../debugger/index.md)
+- [Déboguer des applications ASP.NET en production à l’aide du débogueur de capture instantanée](../debugger/debug-live-azure-applications.md)
+- [Débogage en direct ASP.NET Azure virtuel Machines\Virtual Machines identiques à l’aide du débogueur de capture instantanée](../debugger/debug-live-azure-virtual-machines.md)
+- [Déboguer ASP.NET Azure Kubernetes en direct à l’aide du débogueur de capture instantanée](../debugger/debug-live-azure-kubernetes.md)
+- [FAQ pour le débogage d’instantané](../debugger/debug-live-azure-apps-faq.md)

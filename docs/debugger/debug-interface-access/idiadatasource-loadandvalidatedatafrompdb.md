@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c0024acf89af28e3496443c0e0dd74377618564
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: 5426e27d7b100c42cd571935b1634d6dbd6e990f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987351"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626139"
 ---
 # <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
 S’ouvre et vérifie que le fichier de base de données (.pdb) de programme correspond à des informations de signature fournies et prépare le fichier .pdb en tant qu’une source de données de débogage.
@@ -34,16 +34,20 @@ HRESULT loadAndValidateDataFromPdb ( 
 ```
 
 #### <a name="parameters"></a>Paramètres
-`pdbPath`  
+`pdbPath`
+
 [in] Le chemin d’accès au fichier .pdb.
 
-`pcsig70`  
+`pcsig70`
+
 [in] Le GUID de signature à vérifier la signature du fichier .pdb. Fichiers .pdb uniquement [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] et versions ultérieures ont des signatures GUID.
 
-`sig`  
+`sig`
+
 [in] La signature de 32 bits à vérifier par rapport à la signature de fichier .pdb.
 
-`age`  
+`age`
+
 [in] Valeur d’âge à vérifier. La durée de vie ne correspond pas nécessairement à n’importe quelle valeur de temps connu, il est utilisé pour déterminer si un fichier .pdb est désynchronisé avec un fichier .exe correspondant.
 
 ## <a name="return-value"></a>Valeur de retour
@@ -58,7 +62,7 @@ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Le tab
 |E_INVALIDARG|Paramètre non valide.|
 |E_UNEXPECTED|La source de données a déjà été préparée.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Un fichier .pdb contient des valeurs de signature et âge. Ces valeurs sont répliquées dans le fichier .exe ou .dll correspondant au fichier .pdb. Avant de préparer la source de données, cette méthode vérifie que le fichier .pdb nommé signature et l’âge correspondent aux valeurs fournies.
 
 Pour charger un fichier .pdb sans validation, utilisez la [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) (méthode).
@@ -88,7 +92,7 @@ if (FAILED(hr))
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)  
-[IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)  
-[IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)  
-[IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)
+- [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
+- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
+- [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)
+- [IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)

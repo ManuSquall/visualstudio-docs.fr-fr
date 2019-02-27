@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9507e7791f1ecd61a2f7a6321bdf45fe256feb4
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 8dfb0330f08dab158c298bbc944d8dc6410f719f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227548"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602298"
 ---
 # <a name="idiasegment"></a>IDiaSegment
 Mappe les données à partir du numéro de la section à des segments de l’espace d’adressage.
@@ -101,6 +101,6 @@ Bibliothèque : diaguids.lib
 DLL : msdia80.dll
 
 ## <a name="see-also"></a>Voir aussi
-[Interfaces (SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaEnumSegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)  
-[IDiaEnumSegments::Next](../../debugger/debug-interface-access/idiaenumsegments-next.md)
+- [Interfaces (SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaEnumSegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)
+- [IDiaEnumSegments::Next](../../debugger/debug-interface-access/idiaenumsegments-next.md)

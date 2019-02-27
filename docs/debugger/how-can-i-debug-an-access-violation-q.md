@@ -19,29 +19,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9ceb160c93e79d43428685d7b0e82a8a0670cc01
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 2be6c13e2a3c83d31540399dd3387addb08e8686
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55767800"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710433"
 ---
 # <a name="how-can-i-debug-a-c-access-violation"></a>Comment puis-je déboguer une Violation d’accès de C++ ?
 
 ## <a name="problem-description"></a>Description du problème
 
-Mon programme provoque une violation d'accès. Comment puis-je corriger cette erreur ?  
-  
+Mon programme provoque une violation d'accès. Comment puis-je corriger cette erreur ?
+
 ## <a name="solution"></a>Solution
 
-Si vous obtenez une violation d’accès sur une ligne de code qui déréférence plusieurs pointeurs, il peut être difficile de trouver le pointeur à l’origine de la violation d’accès. À compter de Visual Studio 2015 Update 1, la boîte de dialogue d’exception nomme désormais de manière explicite le pointeur à l’origine de la violation d’accès.  
-  
-Par exemple, le code suivant doit générer une violation d’accès :  
+Si vous obtenez une violation d’accès sur une ligne de code qui déréférence plusieurs pointeurs, il peut être difficile de trouver le pointeur à l’origine de la violation d’accès. À compter de Visual Studio 2015 Update 1, la boîte de dialogue d’exception nomme désormais de manière explicite le pointeur à l’origine de la violation d’accès.
+
+Par exemple, le code suivant doit générer une violation d’accès :
 
 ```C++
-#include <iostream>  
-using namespace std;  
-  
+#include <iostream>
+using namespace std;
+
 class ClassC {
 public:
   void printHello() {
@@ -71,13 +71,13 @@ int main() {
   A->B->C->printHello();
 
 }
-```  
+```
 
-Si vous exécutez ce code dans Visual Studio 2015 Update 1, la boîte de dialogue d’exception suivante doit s’afficher :  
-  
-![AccessViolationCPlus](../debugger/media/accessviolationcplus.png "AccessViolationCPlus")  
-  
-Si vous n’arrivez pas à déterminer la raison pour laquelle le pointeur a provoqué une violation d’accès, tracez le code pour vérifier que le pointeur à l’origine du problème a été correctement assigné.  S’il est passé en tant que paramètre, vérifiez qu’il est passé correctement et qu’une [copie superficielle](http://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy) n’est pas accidentellement créée. Vérifiez ensuite que les valeurs ne sont pas modifiées de manière non intentionnelle à un endroit du programme. Pour cela, créez un point d’arrêt sur variable pour le pointeur en question pour vous assurer qu’il n’est pas en cours de modification autre part dans le programme. Pour plus d’informations sur les points d’arrêt sur variable, consultez la section consacrée à ce sujet dans [Using Breakpoints](../debugger/using-breakpoints.md).  
-  
-## <a name="see-also"></a>Voir aussi  
- [Forum Aux Questions sur le débogage du code natif](../debugger/debugging-native-code-faqs.md)
+Si vous exécutez ce code dans Visual Studio 2015 Update 1, la boîte de dialogue d’exception suivante doit s’afficher :
+
+![AccessViolationCPlus](../debugger/media/accessviolationcplus.png "AccessViolationCPlus")
+
+Si vous n’arrivez pas à déterminer la raison pour laquelle le pointeur a provoqué une violation d’accès, tracez le code pour vérifier que le pointeur à l’origine du problème a été correctement assigné.  S’il est passé en tant que paramètre, vérifiez qu’il est passé correctement et qu’une [copie superficielle](http://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy) n’est pas accidentellement créée. Vérifiez ensuite que les valeurs ne sont pas modifiées de manière non intentionnelle à un endroit du programme. Pour cela, créez un point d’arrêt sur variable pour le pointeur en question pour vous assurer qu’il n’est pas en cours de modification autre part dans le programme. Pour plus d’informations sur les points d’arrêt sur variable, consultez la section consacrée à ce sujet dans [Using Breakpoints](../debugger/using-breakpoints.md).
+
+## <a name="see-also"></a>Voir aussi
+- [Forum Aux Questions sur le débogage du code natif](../debugger/debugging-native-code-faqs.md)

@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25265d25a3f4d89682ff7e4b8d74ee02f3c073c1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 14ae065f16c2d047311308d63da7680a61fa22ad
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54950700"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622217"
 ---
 # <a name="idiasymbolgetisreturnvalue"></a>IDiaSymbol::get_isReturnValue
-Spécifie si la variable comporte une valeur de retour.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_isReturnValue(   
-   BOOL* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pRetVal`  
- [out] Un pointeur vers un `BOOL` qui spécifie si la variable comporte une valeur de retour.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Spécifie si la variable comporte une valeur de retour.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_isReturnValue(
+   BOOL* pRetVal);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pRetVal`
+
+[out] Un pointeur vers un `BOOL` qui spécifie si la variable comporte une valeur de retour.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

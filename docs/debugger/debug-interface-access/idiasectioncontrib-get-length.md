@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9b16fa64ec77b32ab6c2634c85535658e94cb1e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1cd7b349cd3b048d68adf21aa11f89c33e7a05f5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54955958"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646875"
 ---
 # <a name="idiasectioncontribgetlength"></a>IDiaSectionContrib::get_length
-Récupère le nombre d’octets dans une section.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_length (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pRetVal`  
- [out] Retourne le nombre d’octets dans une section.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+Récupère le nombre d’octets dans une section.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_length ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pRetVal`
+
+[out] Retourne le nombre d’octets dans une section.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

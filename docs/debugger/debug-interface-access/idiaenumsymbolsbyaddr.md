@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ec61145d51ba383099d9b08fe0a50db10f97022
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 96ed66156fae24e22c549fffb6eb982a45e7e3f5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155615"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623071"
 ---
 # <a name="idiaenumsymbolsbyaddr"></a>IDiaEnumSymbolsByAddr
 Énumère les différents symboles contenus dans la source de données par adresse.
@@ -40,7 +40,7 @@ Le tableau suivant présente les méthodes de `IDiaEnumSymbolsByAddr`.
 |[IDiaEnumSymbolsByAddr::Prev](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-prev.md)|Récupère les symboles précédentes dans l’ordre par adresse. Met à jour la position de l’énumérateur en nombre d’éléments extraits.|
 |[IDiaEnumSymbolsByAddr::Clone](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-clone.md)|Effectue une copie d’un objet.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Cette interface fournit des symboles, groupés par adresse. Pour travailler avec des symboles, groupés par type, par exemple `SymTagUDT` (type défini par l’utilisateur) ou `SymTagBaseClass`, utilisez le [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) interface.
 
 ## <a name="notes-for-callers"></a>Notes de publication pour les appelants
@@ -101,6 +101,6 @@ Bibliothèque : diaguids.lib
 DLL : msdia80.dll
 
 ## <a name="see-also"></a>Voir aussi
-[Interfaces (SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)  
-[IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
+- [Interfaces (SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

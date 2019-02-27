@@ -12,37 +12,39 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dea61b14cdee1ac260e4a21db0056abbdcad74f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f365578aba73ed94bdcd1d87801fc53030cfecdb
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54977380"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56616012"
 ---
 # <a name="idiapropertystoragereadulonglong"></a>IDiaPropertyStorage::ReadULONGLONG
-Lit `ULONGLONG` valeurs dans un jeu de propriétés.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT ReadULONGLONG (   
-   PROPID     id,  
-   ULONGLONG* pValue  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `id`  
- [in] Identificateur de la propriété à lire (`PROPID` est défini dans WTypes.h comme un `ULONG`).  
-  
- `pValue`  
- [out] Retourne la valeur de propriété.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_INVALIDARG` si la propriété n’est pas de type `ULONGLONG`.  
-  
-## <a name="remarks"></a>Remarques  
- Un `ULONGLONG` est défini par Windows comme un entier non signé 64 bits.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)
+Lit `ULONGLONG` valeurs dans un jeu de propriétés.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT ReadULONGLONG ( 
+   PROPID     id,
+   ULONGLONG* pValue
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `id`
+
+[in] Identificateur de la propriété à lire (`PROPID` est défini dans WTypes.h comme un `ULONG`).
+
+ `pValue`
+
+[out] Retourne la valeur de propriété.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_INVALIDARG` si la propriété n’est pas de type `ULONGLONG`.
+
+## <a name="remarks"></a>Remarques
+ Un `ULONGLONG` est défini par Windows comme un entier non signé 64 bits.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

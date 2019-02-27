@@ -12,35 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e49d7332fee2b6e5e3c919e595e891fe8511edca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4bef903304e3892284fc38d9e2b2367ebfe650f4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54939268"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642207"
 ---
 # <a name="idiasessionfindinjectedsource"></a>IDiaSession::findInjectedSource
-Récupère une liste des sources qui ont été placée dans le magasin de symboles par les fournisseurs d’attributs ou autres composants du processus de compilation.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT findInjectedSource (   
-   LPCOLESTR                 srcFile,  
-   IDiaEnumInjectedSources** ppResult  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- srcFile  
- [in] Nom du fichier source à rechercher.  
-  
- ppResult  
- [out] Retourne un [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) objet qui contient une liste de toutes les sources injectés.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)   
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+Récupère une liste des sources qui ont été placée dans le magasin de symboles par les fournisseurs d’attributs ou autres composants du processus de compilation.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT findInjectedSource ( 
+   LPCOLESTR                 srcFile,
+   IDiaEnumInjectedSources** ppResult
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ srcFile
+
+[in] Nom du fichier source à rechercher.
+
+ ppResult
+
+[out] Retourne un [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) objet qui contient une liste de toutes les sources injectés.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

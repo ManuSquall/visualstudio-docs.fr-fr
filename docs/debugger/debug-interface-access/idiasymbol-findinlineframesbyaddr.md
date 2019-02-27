@@ -10,41 +10,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 804f498a406919192cf355b748949158722581f9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a1a5af94d6a5d6100f8ffb6047f57ee59f780da5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964377"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600361"
 ---
 # <a name="idiasymbolfindinlineframesbyaddr"></a>IDiaSymbol::findInlineFramesByAddr
-Récupère une énumération qui permet au client d’effectuer une itération dans tous les cadres inline sur une adresse donnée.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT findInlineFramesByAddr (   
-   DWORD             isect,  
-   DWORD             offset,  
-   IDiaEnumSymbols** ppResult  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `isect`  
- [in] Spécifie le composant de la section de l’adresse.  
-  
- `offset`  
- [in] Spécifie le composant de décalage de l’adresse.  
-  
- `ppResult`  
- [out] Contient un `IDiaEnumSymbols` objet qui contient la liste d’images qui sont récupérés.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum, énumération](../../debugger/debug-interface-access/symtagenum.md)   
- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
+Récupère une énumération qui permet au client d’effectuer une itération dans tous les cadres inline sur une adresse donnée.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT findInlineFramesByAddr ( 
+   DWORD             isect,
+   DWORD             offset,
+   IDiaEnumSymbols** ppResult
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `isect`
+
+[in] Spécifie le composant de la section de l’adresse.
+
+ `offset`
+
+[in] Spécifie le composant de décalage de l’adresse.
+
+ `ppResult`
+
+[out] Contient un `IDiaEnumSymbols` objet qui contient la liste d’images qui sont récupérés.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [SymTagEnum, énumération](../../debugger/debug-interface-access/symtagenum.md)
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

@@ -13,31 +13,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3f30d9724346686a980fc139ff48474557145a5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ecdd4284e4c7c417af6ebd935418d56cf601bb74
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042971"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613240"
 ---
 # <a name="compiland"></a>Compiland
-Il y a un `SymTagCompiland` de symboles pour chaque module Compiland lié au fichier .exe. Compiland informations sont réparties entre les symboles avec un `SymTagCompiland` balise, qui peut être récupéré sans charger les symboles de compiland supplémentaires, ainsi que de symboles avec un `SymTagCompilandDetails` balise, ce qui peut nécessiter le chargement de symboles supplémentaires.  
-  
-## <a name="properties"></a>Propriétés  
- Le tableau suivant présente les propriétés qui sont valides pour ce type de symbole.  
-  
-|Property|Type de données|Description|  
-|--------------|---------------|-----------------|  
-|[IDiaSymbol::get_editAndContinueEnabled](../../debugger/debug-interface-access/idiasymbol-get-editandcontinueenabled.md)|`BOOL`|`TRUE` Si Modifier & Continuer a été activée à la compilation.|  
-|[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Symbole pour le fichier .exe.|  
-|[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|ID du symbole lexicale parente.|  
-|[IDiaSymbol::get_libraryName](../../debugger/debug-interface-access/idiasymbol-get-libraryname.md)|`BSTR`|Nom du fichier de bibliothèque ou un objet dans lequel l’objet a été chargé à partir de.|  
-|[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Nom du fichier d’objet de module (compiland).|  
-|[IDiaSymbol::get_sourceFileName](../../debugger/debug-interface-access/idiasymbol-get-sourcefilename.md)|`BSTR`|Nom du fichier source.|  
-|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID d’index de symbole.|  
-|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Retourne `SymTagCompiland` (parmi les [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md) valeurs).|  
-  
-## <a name="see-also"></a>Voir aussi  
- [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)   
- [CompilandEnv](../../debugger/debug-interface-access/compilandenv.md)   
- [Hiérarchie lexicale des types de symboles](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
+Il y a un `SymTagCompiland` de symboles pour chaque module Compiland lié au fichier .exe. Compiland informations sont réparties entre les symboles avec un `SymTagCompiland` balise, qui peut être récupéré sans charger les symboles de compiland supplémentaires, ainsi que de symboles avec un `SymTagCompilandDetails` balise, ce qui peut nécessiter le chargement de symboles supplémentaires.
+
+## <a name="properties"></a>Propriétés
+ Le tableau suivant présente les propriétés qui sont valides pour ce type de symbole.
+
+|Property|Type de données|Description|
+|--------------|---------------|-----------------|
+|[IDiaSymbol::get_editAndContinueEnabled](../../debugger/debug-interface-access/idiasymbol-get-editandcontinueenabled.md)|`BOOL`|`TRUE` Si Modifier & Continuer a été activée à la compilation.|
+|[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Symbole pour le fichier .exe.|
+|[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|ID du symbole lexicale parente.|
+|[IDiaSymbol::get_libraryName](../../debugger/debug-interface-access/idiasymbol-get-libraryname.md)|`BSTR`|Nom du fichier de bibliothèque ou un objet dans lequel l’objet a été chargé à partir de.|
+|[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Nom du fichier d’objet de module (compiland).|
+|[IDiaSymbol::get_sourceFileName](../../debugger/debug-interface-access/idiasymbol-get-sourcefilename.md)|`BSTR`|Nom du fichier source.|
+|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID d’index de symbole.|
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Retourne `SymTagCompiland` (parmi les [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md) valeurs).|
+
+## <a name="see-also"></a>Voir aussi
+- [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)
+- [CompilandEnv](../../debugger/debug-interface-access/compilandenv.md)
+- [Hiérarchie lexicale des types de symboles](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

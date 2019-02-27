@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01d3f343e54f2d45799b5020f7ea0d39d79f524c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 93e3c6b02477097bd9dfe3fa0cf4292c3a8723f7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54977354"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632548"
 ---
 # <a name="idiaframedatagetaddresssection"></a>IDiaFrameData::get_addressSection
-Récupère la partie de la section de l’adresse de code pour le frame.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_addressSection (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pRetVal`  
- [out] Retourne la partie de la section de l’adresse de code pour le frame.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+Récupère la partie de la section de l’adresse de code pour le frame.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_addressSection ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pRetVal`
+
+[out] Retourne la partie de la section de l’adresse de code pour le frame.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

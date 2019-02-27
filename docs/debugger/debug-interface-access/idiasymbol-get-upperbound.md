@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25ed8f3bcb1b4e8e2253dc1531bcdf8fd08be1e1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e489741692c7b308c34388fd1d6d5e5a13b50e21
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021687"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637488"
 ---
 # <a name="idiasymbolgetupperbound"></a>IDiaSymbol::get_upperBound
-Récupère un symbole qui représente la limite supérieure d’une dimension de tableau FORTRAN.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_upperBound (   
-   IDiaSymbol** pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pRetVal`  
- [out] Retourne un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objet qui représente la limite supérieure d’une dimension de tableau FORTRAN.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
-  
+Récupère un symbole qui représente la limite supérieure d’une dimension de tableau FORTRAN.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_upperBound ( 
+   IDiaSymbol** pRetVal
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pRetVal`
+
+[out] Retourne un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objet qui représente la limite supérieure d’une dimension de tableau FORTRAN.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+
 > [!NOTE]
->  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

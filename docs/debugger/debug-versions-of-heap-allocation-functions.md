@@ -23,29 +23,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf3865d8369b7b3b4a7407f8c54465f93bcc7bd7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d00ea299ae7cebea5d6ad1a09837dc75e10568aa
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920872"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56617338"
 ---
 # <a name="debug-versions-of-heap-allocation-functions"></a>Versions Debug des fonctions d'allocation du tas
-La bibliothèque Runtime C contient des versions Debug spéciales des fonctions d'allocation du tas. Ces fonctions utilisent les noms des versions Release, suivis de _dbg. Cette rubrique décrit les différences entre la version Release d’une fonction CRT et la version _dbg à partir d’exemples basés sur `malloc` et `_malloc_dbg`.  
-  
- Lorsque [_DEBUG](/cpp/c-runtime-library/debug) est défini, le CRT mappe tous les [malloc](/cpp/c-runtime-library/reference/malloc) appelle à [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg). Il est donc inutile de réécrire votre code en utilisant `_malloc_dbg` à la place de `malloc` pour bénéficier de ses avantages pendant le débogage.  
-  
- Vous pouvez cependant appeler `_malloc_dbg` de façon explicite. Un appel explicite à `_malloc_dbg` présente en outre les avantages suivants :  
-  
-- suivi des allocations de type `_CLIENT_BLOCK` ;  
-  
-- stockage du fichier source et du numéro de la ligne où la demande d'allocation a été effectuée.  
-  
-  Si vous ne souhaitez pas convertir votre `malloc` appelle à `_malloc_dbg`, vous pouvez obtenir les informations du fichier source en définissant [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc), ce qui provoque le mappage de préprocesseur directement tous les appels à `malloc` à `_malloc_dbg` au lieu d’utiliser un wrapper autour de `malloc`.  
-  
-  Pour effectuer le suivi des différents types d'allocations dans les blocs client, vous devez appeler `_malloc_dbg` directement et affecter au paramètre `blockType` la valeur `_CLIENT_BLOCK`.  
-  
-  Lorsque _DEBUG n’est pas défini, les appels à `malloc` ne sont pas perturbés, les appels à `_malloc_dbg` sont résolus en `malloc`, la définition de [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc) est ignorée et la source de fichier les informations se rapportant à la demande d’allocation n’est pas fournie. Dans la mesure où `malloc` ne possède aucun paramètre de type de bloc, les demandes de types `_CLIENT_BLOCK` sont traitées comme des allocations standard.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Techniques de débogage CRT](../debugger/crt-debugging-techniques.md)
+La bibliothèque Runtime C contient des versions Debug spéciales des fonctions d'allocation du tas. Ces fonctions utilisent les noms des versions Release, suivis de _dbg. Cette rubrique décrit les différences entre la version Release d’une fonction CRT et la version _dbg à partir d’exemples basés sur `malloc` et `_malloc_dbg`.
+
+ Lorsque [_DEBUG](/cpp/c-runtime-library/debug) est défini, le CRT mappe tous les [malloc](/cpp/c-runtime-library/reference/malloc) appelle à [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg). Il est donc inutile de réécrire votre code en utilisant `_malloc_dbg` à la place de `malloc` pour bénéficier de ses avantages pendant le débogage.
+
+ Vous pouvez cependant appeler `_malloc_dbg` de façon explicite. Un appel explicite à `_malloc_dbg` présente en outre les avantages suivants :
+
+- suivi des allocations de type `_CLIENT_BLOCK` ;
+
+- stockage du fichier source et du numéro de la ligne où la demande d'allocation a été effectuée.
+
+  Si vous ne souhaitez pas convertir votre `malloc` appelle à `_malloc_dbg`, vous pouvez obtenir les informations du fichier source en définissant [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc), ce qui provoque le mappage de préprocesseur directement tous les appels à `malloc` à `_malloc_dbg` au lieu d’utiliser un wrapper autour de `malloc`.
+
+  Pour effectuer le suivi des différents types d'allocations dans les blocs client, vous devez appeler `_malloc_dbg` directement et affecter au paramètre `blockType` la valeur `_CLIENT_BLOCK`.
+
+  Lorsque _DEBUG n’est pas défini, les appels à `malloc` ne sont pas perturbés, les appels à `_malloc_dbg` sont résolus en `malloc`, la définition de [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc) est ignorée et la source de fichier les informations se rapportant à la demande d’allocation n’est pas fournie. Dans la mesure où `malloc` ne possède aucun paramètre de type de bloc, les demandes de types `_CLIENT_BLOCK` sont traitées comme des allocations standard.
+
+## <a name="see-also"></a>Voir aussi
+
+- [Techniques de débogage CRT](../debugger/crt-debugging-techniques.md)

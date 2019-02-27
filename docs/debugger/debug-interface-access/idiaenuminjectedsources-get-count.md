@@ -12,31 +12,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9a2bf7a9cdcfc299277c0b6ed0663f23aab145e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8da7e672ba447d1453d451da0040aef44ecaa799
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55033486"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642077"
 ---
 # <a name="idiaenuminjectedsourcesgetcount"></a>IDiaEnumInjectedSources::get_Count
-Récupère le nombre de sources injectés.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_Count (   
-   LONG* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- pRetVal  
- [out] Retourne le nombre de sources injectés.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)   
- [IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)
+Récupère le nombre de sources injectés.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_Count ( 
+   LONG* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ pRetVal
+
+[out] Retourne le nombre de sources injectés.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
+- [IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)

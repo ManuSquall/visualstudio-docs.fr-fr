@@ -12,40 +12,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbb07470f63c337ccefd5352b3fb7b2a6ff75e83
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a62126b7e752c8d09a32891e8886be0df07b8d12
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036210"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56606330"
 ---
 # <a name="idiasymbolgethasinlasm"></a>IDiaSymbol::get_hasInlAsm
-Récupère un indicateur qui spécifie si la fonction contient un assembly inline.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_hasInlAsm(  
-   BOOL *pFlag  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pFlag`  
- [out] Retourne `TRUE` si la fonction a un assembly inline ; sinon, retourne `FALSE`.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
-  
+Récupère un indicateur qui spécifie si la fonction contient un assembly inline.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_hasInlAsm(
+   BOOL *pFlag
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pFlag`
+
+[out] Retourne `TRUE` si la fonction a un assembly inline ; sinon, retourne `FALSE`.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+
 > [!NOTE]
->  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
-  
-## <a name="requirements"></a>Spécifications  
-  
-|Spécification|Description|  
-|-----------------|-----------------|  
-|En-tête :|dia2.h|  
-|Version :|DIA SDK 8.0|  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+
+## <a name="requirements"></a>Spécifications
+
+|Spécification|Description|
+|-----------------|-----------------|
+|En-tête :|dia2.h|
+|Version :|DIA SDK 8.0|
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

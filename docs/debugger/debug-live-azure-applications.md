@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b2db748d747f1e3c12a2d9e91a4b310e31b0299c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 89c66d0ce71a77dcfcaa6364cba6d31cf5707c4a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335595"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613373"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Déboguer des applications ASP.NET Azure en direct à l’aide du débogueur de capture instantanée
 
@@ -63,7 +63,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 2. Attacher le débogueur de capture instantanée. Vous pouvez utiliser une des différentes méthodes :
 
     * Choisissez **Déboguer > attacher le débogueur de capture instantanée...** . Sélectionnez votre projet est déployé dans Azure App Service et un compte de stockage Azure, puis cliquez sur **attacher**.
-  
+
       ![Lancer le débogueur de capture instantanée à partir du menu Débogage](../debugger/media/snapshot-debug-menu-attach.png)
 
     * Cliquez avec le bouton droit sur votre projet, puis sélectionnez **publier**, puis, dans la page Publier, cliquez sur **attacher un débogueur de capture instantanée**. Sélectionnez votre projet est déployé dans Azure App Service et un compte de stockage Azure, puis cliquez sur **attacher**.
@@ -73,7 +73,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
     ![Lancer le débogueur de capture instantanée à partir du menu de liste déroulante de F5](../debugger/media/snapshot-F5-dropdown-attach.png)
 
     * À l’aide de l’Explorateur de Cloud (**Affichage > Cloud Explorer**), avec le bouton droit de votre projet est déployé dans Azure App Service et sélectionnez un compte de stockage Azure, puis cliquez sur **attacher un débogueur de capture instantanée**.
-  
+
       ![Lancer le débogueur de capture instantanée à partir de l’Explorateur de Cloud](../debugger/media/snapshot-launch.png)
 
     La première fois que vous sélectionnez **attacher un débogueur de capture instantanée**, vous êtes invité à installer l’extension de site du débogueur de capture instantanée sur votre Azure App Service. Cette installation nécessite un redémarrage de votre Azure App Service.

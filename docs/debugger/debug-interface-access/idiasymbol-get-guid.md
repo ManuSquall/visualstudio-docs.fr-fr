@@ -12,40 +12,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 255fc684504dc39705ec93cb57fc1aadc6422da3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7c2440fb6d35594825540fb249a8d2d3a9ba683d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54955815"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611085"
 ---
 # <a name="idiasymbolgetguid"></a>IDiaSymbol::get_guid
-Récupère l’identificateur global unique du symbole (GUID).  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_guid (   
-   GUID* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pRetVal`  
- [out] Retourne les GUID du symbole.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou code d’erreur.  
-  
+Récupère l’identificateur global unique du symbole (GUID).
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_guid ( 
+   GUID* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pRetVal`
+
+[out] Retourne les GUID du symbole.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou code d’erreur.
+
 > [!NOTE]
->  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
-  
-## <a name="requirements"></a>Spécifications  
-  
-|Spécification|Description|  
-|-----------------|-----------------|  
-|En-tête :|dia2.h|  
-|Version :|DIA SDK v7.0|  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+
+## <a name="requirements"></a>Spécifications
+
+|Spécification|Description|
+|-----------------|-----------------|
+|En-tête :|dia2.h|
+|Version :|DIA SDK v7.0|
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

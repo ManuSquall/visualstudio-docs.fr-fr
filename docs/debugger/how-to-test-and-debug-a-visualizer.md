@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd0c483f7fb4941430355ef287bce973e1a1659e
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: f0353234e5a266ca1a344ce7bc304f27d8c3af95
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227130"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700443"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>Comment : tester et déboguer un visualiseur
 Après avoir écrit un visualiseur, vous devez le déboguer et le tester.
@@ -54,6 +54,6 @@ Une façon plus facile de déboguer un visualiseur consiste à exécuter ce dern
     Pour obtenir un exemple plus complet, consultez [procédure pas à pas : écriture d’un visualiseur en C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).
 
 ## <a name="see-also"></a>Voir aussi
-[Procédure pas à pas : écriture d’un visualiseur en C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
-[Guide pratique pour installer un visualiseur](../debugger/how-to-install-a-visualizer.md)  
-[Créer des visualiseurs personnalisés](../debugger/create-custom-visualizers-of-data.md)
+- [Procédure pas à pas : écriture d’un visualiseur en C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
+- [Guide pratique pour installer un visualiseur](../debugger/how-to-install-a-visualizer.md)
+- [Créer des visualiseurs personnalisés](../debugger/create-custom-visualizers-of-data.md)

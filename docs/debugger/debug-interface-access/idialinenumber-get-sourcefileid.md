@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7efaa94c24c6f814de5058865664cf7b1b106ba3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: be0fffc1c52c6e15e4ac564cb3e53c60a3670c22
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55003316"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610682"
 ---
 # <a name="idialinenumbergetsourcefileid"></a>IDiaLineNumber::get_sourceFileId
-Récupère un identificateur de fichier source unique pour le fichier source qui a contribué à cette ligne.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_sourceFileId (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pRetVal`  
- [out] Retourne l’identificateur de fichier source unique pour le fichier source qui a contribué à cette ligne.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+Récupère un identificateur de fichier source unique pour le fichier source qui a contribué à cette ligne.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_sourceFileId ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pRetVal`
+
+[out] Retourne l’identificateur de fichier source unique pour le fichier source qui a contribué à cette ligne.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

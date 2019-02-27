@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfbaff7778b06eeb08c9e92174ccd531d9dd2dbf
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 6a9b480a497953eebeef1918657ed901de10845a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156005"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605274"
 ---
 # <a name="idiaenuminjectedsources"></a>IDiaEnumInjectedSources
 Énumérer les différentes sources injectés contenues dans la source de données.
@@ -41,7 +41,7 @@ Le tableau suivant présente les méthodes de `IDiaEnumInjectedSources`.
 |[IDiaEnumInjectedSources::Reset](../../debugger/debug-interface-access/idiaenuminjectedsources-reset.md)|Réinitialise une séquence d’énumération au début.|
 |[IDiaEnumInjectedSources::Clone](../../debugger/debug-interface-access/idiaenuminjectedsources-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur en cours.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 ## <a name="notes-for-callers"></a>Notes de publication pour les appelants
 Cette interface est obtenue en appelant le [IDiaSession::findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md) méthode portant le nom d’un fichier source spécifique ou en appelant le [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md) méthode avec le GUID de la `IDiaEnumInjectedSources` interface.
@@ -113,8 +113,8 @@ Bibliothèque : diaguids.lib
 DLL : msdia80.dll
 
 ## <a name="see-also"></a>Voir aussi
-[Interfaces (SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaSession::findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)  
-[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)  
-[IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)  
-[IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)
+- [Interfaces (SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaSession::findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)
+- [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)
+- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)
+- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

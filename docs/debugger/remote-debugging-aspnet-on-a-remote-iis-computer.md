@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 3499465c6b1027232cb42580b2e099a2f74b83ec
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 08b58dd22e47844e62c0d312efc17e332c53f2c1
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947476"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702172"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Débogage distant ASP.NET Core sur un ordinateur distant IIS dans Visual Studio 2017
 Pour déboguer une application ASP.NET qui a été déployée sur IIS, installer et exécuter les outils à distance sur l’ordinateur où vous avez déployé votre application, puis attacher à votre application en cours d’exécution à partir de Visual Studio.
@@ -40,7 +40,7 @@ Cet article contient des instructions sur la configuration d’une configuration
 
 * Si vous souhaitez une aide pour vous assurer que votre application est configurée, déployé et fonctionne correctement dans IIS afin que vous puissiez déboguer, suivez les étapes dans cette rubrique.
 
-## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Créer l’application ASP.NET Core sur l’ordinateur Visual Studio 2017 
+## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Créer l’application ASP.NET Core sur l’ordinateur Visual Studio 2017
 
 1. Créez une nouvelle application ASP.NET Core. (**Fichier > Nouveau > projet**, puis sélectionnez **Visual C# > Web > Application Web ASP.NET Core**).
 
@@ -147,7 +147,7 @@ Vous pouvez également publier et déployer l’application avec le système de 
 Dans ce didacticiel, nous utilisons Visual Studio 2017.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-  
+
 ## <a name="BKMK_setup"></a> Configurer le débogueur distant sur Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
@@ -163,7 +163,7 @@ Pour plus d’informations sur l’exécution du débogueur distant en tant que 
 2. Dans Visual Studio, cliquez sur **Déboguer > Attacher au processus** (Ctrl + Alt + P).
 
     > [!TIP]
-    > Dans Visual Studio 2017, vous pouvez rattacher vers le même processus que vous avez précédemment attaché à l’aide de **Déboguer > Attacher au processus...** (Maj + Alt + P). 
+    > Dans Visual Studio 2017, vous pouvez rattacher vers le même processus que vous avez précédemment attaché à l’aide de **Déboguer > Attacher au processus...** (Maj + Alt + P).
 
 3. Définissez le champ Qualificateur sur **\<nom_ordinateur_distant>:4022**.
 4. Cliquez sur **Actualiser**.
@@ -181,14 +181,14 @@ Pour plus d’informations sur l’exécution du débogueur distant en tant que 
 7. Cliquez sur **Attacher**.
 
 8. Ouvrez le site web de l’ordinateur distant. Dans un navigateur, accédez à **http://\<nom_ordinateur_distant>**.
-    
+
     La page web ASP.NET doit s’afficher.
 
 9. Dans l’application ASP.NET en cours d’exécution, cliquez sur le lien vers le **sur** page.
 
     Le point d’arrêt doit être atteint dans Visual Studio.
 
-## <a name="bkmk_openports"></a>Résolution des problèmes Ouvrez les ports requis sur Windows Server
+## <a name="bkmk_openports"></a> Résolution des problèmes Ouvrez les ports requis sur Windows Server
 
 Dans la plupart des configurations, les ports requis sont ouverts par l’installation d’ASP.NET et le débogueur distant. Toutefois, vous devrez peut-être vérifier que les ports sont ouverts.
 

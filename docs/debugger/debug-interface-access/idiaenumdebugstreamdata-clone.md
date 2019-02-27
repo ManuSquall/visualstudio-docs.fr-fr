@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a630f1097db2a2f90b4958466a0280bac8fac86d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8362fecf12613595b3e96218c704eae26f4e8bbc
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973292"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641908"
 ---
 # <a name="idiaenumdebugstreamdataclone"></a>IDiaEnumDebugStreamData::Clone
-Crée un énumérateur qui contient la même séquence énumérée que l’énumérateur en cours.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT Clone (   
-   IDiaEnumDebugStreamData** ppenum  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- ppenum  
- [out] Retourne un [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) objet qui contient la séquence en double d’enregistrements de flux de données de débogage.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
+Crée un énumérateur qui contient la même séquence énumérée que l’énumérateur en cours.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT Clone ( 
+   IDiaEnumDebugStreamData** ppenum
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ ppenum
+
+[out] Retourne un [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) objet qui contient la séquence en double d’enregistrements de flux de données de débogage.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

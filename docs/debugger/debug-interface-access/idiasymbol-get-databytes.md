@@ -12,48 +12,50 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d70ede5bdade583d0b25787f7c97c345cef9cbe1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 136ca8c307eb5f0c7a5da2fe7a93c9ac831a4807
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54925355"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611842"
 ---
 # <a name="idiasymbolgetdatabytes"></a>IDiaSymbol::get_dataBytes
-Récupère les octets de données d’un symbole OEM.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_dataBytes (   
-   DWORD  cbData,  
-   DWORD* pcbData,  
-   BYTE   data[]  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `cbData`  
- [in] Taille de la mémoire tampon devant contenir les données.  
-  
- `pcbData`  
- [out] Retourne le nombre d’octets écrits, ou, si le `data` paramètre est `NULL`, retourne le nombre d’octets disponibles.  
-  
- `data[]`  
- [out] Une mémoire tampon est remplie avec les octets de données.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
-  
+Récupère les octets de données d’un symbole OEM.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_dataBytes ( 
+   DWORD  cbData,
+   DWORD* pcbData,
+   BYTE   data[]
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `cbData`
+
+[in] Taille de la mémoire tampon devant contenir les données.
+
+ `pcbData`
+
+[out] Retourne le nombre d’octets écrits, ou, si le `data` paramètre est `NULL`, retourne le nombre d’octets disponibles.
+
+ `data[]`
+- [out] Une mémoire tampon est remplie avec les octets de données.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+
 > [!NOTE]
->  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
-  
-## <a name="requirements"></a>Spécifications  
-  
-|Spécification|Description|  
-|-----------------|-----------------|  
-|En-tête :|dia2.h|  
-|Version :|DIA SDK v7.0|  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+
+## <a name="requirements"></a>Spécifications
+
+|Spécification|Description|
+|-----------------|-----------------|
+|En-tête :|dia2.h|
+|Version :|DIA SDK v7.0|
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

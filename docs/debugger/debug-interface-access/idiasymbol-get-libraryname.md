@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8f996ffdae69c1a31b4c8a09f7c93b47945e077
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f832bc0472cc6b04d803dc1e5871eda62bbe451d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042154"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605638"
 ---
 # <a name="idiasymbolgetlibraryname"></a>IDiaSymbol::get_libraryName
-Récupère le nom de fichier du fichier de bibliothèque ou un objet à partir duquel l’objet a été chargé.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_libraryName (   
-   BSTR* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pRetVal`  
- [out] Retourne le nom de fichier du fichier de bibliothèque ou un objet à partir duquel l’objet a été chargé.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
-  
+Récupère le nom de fichier du fichier de bibliothèque ou un objet à partir duquel l’objet a été chargé.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_libraryName ( 
+   BSTR* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pRetVal`
+
+[out] Retourne le nom de fichier du fichier de bibliothèque ou un objet à partir duquel l’objet a été chargé.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+
 > [!NOTE]
->  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

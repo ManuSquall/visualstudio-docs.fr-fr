@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74232b3189d75b53ab9c7f8cc2da9160e75c3112
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f9ebda7cf7336f9c6a9fc19babf9ed4bbc87fe43
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54926013"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56597178"
 ---
 # <a name="idiastackframegetlengthprolog"></a>IDiaStackFrame::get_lengthProlog
-Récupère le nombre d’octets de code de prologue dans le bloc.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_lengthProlog (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pRetVal`  
- [out] Retourne le nombre d’octets de code de prologue.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si la propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
+Récupère le nombre d’octets de code de prologue dans le bloc.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_lengthProlog ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pRetVal`
+
+[out] Retourne le nombre d’octets de code de prologue.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si la propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

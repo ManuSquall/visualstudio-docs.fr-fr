@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25d0d21bc0959c2c96351da45e2da87f23f7eb4d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fd0ac7216248297e4ad38c435a36458db2b932af
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996010"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622408"
 ---
 # <a name="idiasymbolgetoverloadedoperator"></a>IDiaSymbol::get_overloadedOperator
-Récupère un indicateur qui spécifie si le type de données défini par l’utilisateur a des opérateurs surchargés.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_overloadedOperator (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pRetVal`  
- [out] Retourne `TRUE` si le type de données défini par l’utilisateur a surchargé opérateurs ; sinon, retourne `FALSE`.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
-  
+Récupère un indicateur qui spécifie si le type de données défini par l’utilisateur a des opérateurs surchargés.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_overloadedOperator ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pRetVal`
+
+[out] Retourne `TRUE` si le type de données défini par l’utilisateur a surchargé opérateurs ; sinon, retourne `FALSE`.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+
 > [!NOTE]
->  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

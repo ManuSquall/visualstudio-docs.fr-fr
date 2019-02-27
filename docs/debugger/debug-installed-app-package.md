@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 84d2296a467bb1fc2c3e1466b715578c94c7d0d8
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: b6a41ad863ee25e4294d5d0242b3113cd405fb00
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317932"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637345"
 ---
 # <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>Déboguer un package d’application UWP installé dans Visual Studio
 
@@ -33,7 +33,7 @@ Visual Studio peut déboguer des packages d’application Universal Windows Plat
 
 >[!NOTE]
 >Pour les applications UWP installées de débogage Visual Studio n’est pas pris en charge sur les téléphones.
-   
+
 Pour plus d’informations sur le débogage des applications UWP, consultez les billets de blog sur [débogage installé des packages d’application](https://devblogs.microsoft.com/devops/updates-for-debugging-installed-app-packages-in-visual-studio-2015-update-2/) et [création d’applications de Windows universelle (UWP)](https://devblogs.microsoft.com/visualstudio/universal-windows-apps-targeting-windows-10-anniversary-sdk/).
 
 ## <a name="debug-an-installed-uwp-app-on-a-local-machine"></a>Déboguer une application UWP installée sur un ordinateur local

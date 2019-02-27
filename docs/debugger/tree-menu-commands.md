@@ -10,24 +10,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2b026da51014ec8ffb5de444b4e42978604bf7c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bc840ac19e48f6a0a6a597ec667a4bc799070e59
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54931997"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56707105"
 ---
 # <a name="tree-menu-commands"></a>commandes du menu Arborescence
-Le **arborescence** menu fournit des commandes pour développer ou réduire des vues.  
-  
- **Développer un niveau**  
- Développe l’élément actuellement sélectionné dans une vue système en affichant un niveau en dessous d’elle.  
-  
- **Développez la branche**  
- Développe tous les niveaux en dessous de l’élément actuellement sélectionné.  
-  
- **Développer tout**  
- Se développe et affiche tous les niveaux dans une vue système.  
-  
- **Réduire**  
- Réduit tous les niveaux en dessous de l’élément actuellement sélectionné.
+Le **arborescence** menu fournit des commandes pour développer ou réduire des vues.
+
+ **Développer un niveau** développe l’élément actuellement sélectionné dans une vue système en affichant un niveau en dessous d’elle.
+
+ **Développez la branche** développe tous les niveaux en dessous de l’élément actuellement sélectionné.
+
+ **Développer tout** se développe et affiche tous les niveaux dans une vue système.
+
+ **Réduire** réduit tous les niveaux en dessous de l’élément actuellement sélectionné.

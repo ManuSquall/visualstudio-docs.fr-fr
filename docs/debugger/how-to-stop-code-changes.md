@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Arrêter des modifications de Code | Microsoft Docs'
+title: 'Comment : arrêter des modifications de Code | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,27 +17,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc79b09f51e182e69bcf652627275a10fdfe61e2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 661b18ef061a6bfdb2bcbe68f30463f39d08efe7
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013262"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700430"
 ---
-# <a name="how-to-stop-code-changes"></a>Procédure : Arrêter des modifications de code
-Pendant que Modifier & Continuer est en train d'appliquer les modifications du code, vous pouvez arrêter l'opération.  
-  
+# <a name="how-to-stop-code-changes"></a>Comment : arrêter des modifications de code
+Pendant que Modifier & Continuer est en train d'appliquer les modifications du code, vous pouvez arrêter l'opération.
+
 > [!CAUTION]
->  L'arrêt des modifications du code dans du code managé peut produire des résultats inattendus. L'application de modifications à du code managé est normalement un processus rapide ; il est donc rare de devoir arrêter ce type de modifications.  
-  
-### <a name="to-stop-applying-code-changes"></a>Pour arrêter d'appliquer les modifications du code  
-  
-- Dans le menu **Déboguer**, cliquez sur **Cesser d’appliquer les modifications du code**.  
-  
-  Cet élément de menu est visible uniquement lorsque les modifications du code sont appliquées.  
-  
-  Si vous choisissez cette option, aucune modification du code n'est validée.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Modifier & Continuer](../debugger/edit-and-continue.md)   
- [Modifier & Continuer, Débogage, Boîte de dialogue Options](https://msdn.microsoft.com/library/bcew296c.aspx)
+>  L'arrêt des modifications du code dans du code managé peut produire des résultats inattendus. L'application de modifications à du code managé est normalement un processus rapide ; il est donc rare de devoir arrêter ce type de modifications.
+
+### <a name="to-stop-applying-code-changes"></a>Pour arrêter d'appliquer les modifications du code
+
+- Dans le menu **Déboguer**, cliquez sur **Cesser d’appliquer les modifications du code**.
+
+  Cet élément de menu est visible uniquement lorsque les modifications du code sont appliquées.
+
+  Si vous choisissez cette option, aucune modification du code n'est validée.
+
+## <a name="see-also"></a>Voir aussi
+- [Modifier & Continuer](../debugger/edit-and-continue.md)
+- [Modifier & Continuer, Débogage, Boîte de dialogue Options](https://msdn.microsoft.com/library/bcew296c.aspx)

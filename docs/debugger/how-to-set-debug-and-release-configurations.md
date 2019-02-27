@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e4c1c12409d89d88e683cd0e5b39a8d5a5459df
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b0bf0da5f15bbb59c2898af0dc0bfec1105cbab0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969770"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56715425"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Définir des configurations Debug et Release dans Visual Studio
 
@@ -118,10 +118,10 @@ Pour plus d’informations sur les paramètres de projet pour les configurations
    Le compilateur crée les fichiers de symbole dans le même dossier que le fichier exécutable ou fichier de sortie principal.
 
 ## <a name="see-also"></a>Voir aussi
- 
-[Spécifier les fichiers de symboles (.pdb) et les fichiers sources dans le débogueur Visual Studio](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)<br/>
-[Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md)<br/>
-[Paramètres de projet pour une configuration Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)<br/>
-[Paramètres de projet pour une configuration Debug C#](../debugger/project-settings-for-csharp-debug-configurations.md)<br/>
-[Paramètres de projet pour une configuration de débogage Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)<br/>
-[Guide pratique pour créer et modifier des configurations](../ide/how-to-create-and-edit-configurations.md)
+
+- [Spécifier les fichiers de symboles (.pdb) et les fichiers sources dans le débogueur Visual Studio](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)<br/>
+- [Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md)<br/>
+- [Paramètres de projet pour une configuration Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)<br/>
+- [Paramètres de projet pour une configuration Debug C#](../debugger/project-settings-for-csharp-debug-configurations.md)<br/>
+- [Paramètres de projet pour une configuration de débogage Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)<br/>
+- [Guide pratique pour créer et modifier des configurations](../ide/how-to-create-and-edit-configurations.md)
