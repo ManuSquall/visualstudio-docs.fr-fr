@@ -12,38 +12,39 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cf2d987db97d199a6fa7bfc5da8d9c01254b455
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7391010e409cc25a3151bb2abb806289c81288a1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973367"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641878"
 ---
 # <a name="idiaaddressmapgetaddressmapenabled"></a>IDiaAddressMap::get_addressMapEnabled
-Indique si un mappage d’adresse a été établi pour une session particulière.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_addressMapEnabled (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- pRetVal  
- [out] Retourne `TRUE` si le mappage d’adresse est activé.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="remarks"></a>Remarques  
- Exécutables post-processeurs parfois mettre à jour que le fichier exécutable. DIA contient un mécanisme pour prendre en charge la traduction de symboles de la nouvelle disposition.  
-  
- Les applications clientes peuvent définir le mappage d’adresses pour une session particulière en obtenant le [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md) interface à partir de la [IDiaSession](../../debugger/debug-interface-access/idiasession.md) interface et en appelant le [IDiaAddressMap::set_ addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) méthode suivie par un appel à la [IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) (méthode). Le `get_addressMapEnabled` méthode renvoie les résultats de l’appel le `put_addressMapEnabled` (méthode).  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)   
- [IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)
+Indique si un mappage d’adresse a été établi pour une session particulière.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_addressMapEnabled ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ pRetVal
+
+[out] Retourne `TRUE` si le mappage d’adresse est activé.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="remarks"></a>Remarques
+ Exécutables post-processeurs parfois mettre à jour que le fichier exécutable. DIA contient un mécanisme pour prendre en charge la traduction de symboles de la nouvelle disposition.
+
+ Les applications clientes peuvent définir le mappage d’adresses pour une session particulière en obtenant le [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md) interface à partir de la [IDiaSession](../../debugger/debug-interface-access/idiasession.md) interface et en appelant le [IDiaAddressMap::set_ addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) méthode suivie par un appel à la [IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) (méthode). Le `get_addressMapEnabled` méthode renvoie les résultats de l’appel le `put_addressMapEnabled` (méthode).
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)
+- [IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)

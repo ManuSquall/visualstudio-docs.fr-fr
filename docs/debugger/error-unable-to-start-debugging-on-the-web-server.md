@@ -26,18 +26,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5bf131634dc673fdeefe61fa2238c35fcc2ed8a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e4c9d783fb68372e67f41eb84a1697ea3e1123b5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54938458"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688210"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Erreur : impossible de démarrer le débogage sur le serveur web
 
 Lorsque vous essayez de déboguer une application ASP.NET exécutée sur un serveur Web, vous pouvez obtenir ce message d’erreur : `Unable to start debugging on the Web server`.
 
-Souvent, cette erreur se produit, car une modification de configuration ou d’erreur s’est produite qui nécessite une mise à jour vos Pools d’applications, une réinitialisation d’IIS, ou les deux. Vous pouvez réinitialiser IIS en ouvrant une invite de commandes avec élévation de privilèges et en tapant `iisreset`. 
+Souvent, cette erreur se produit, car une modification de configuration ou d’erreur s’est produite qui nécessite une mise à jour vos Pools d’applications, une réinitialisation d’IIS, ou les deux. Vous pouvez réinitialiser IIS en ouvrant une invite de commandes avec élévation de privilèges et en tapant `iisreset`.
 
 ## <a name="specificerrors"></a>Qu’est le message d’erreur détaillé ?
 
@@ -61,7 +61,7 @@ Le `Unable to start debugging on the Web server` message est générique. En rè
 
 ## <a name="web_server_config"></a> Le serveur web n’est pas configuré correctement
 
-- Consultez [erreur : ](../debugger/error-the-web-server-is-not-configured-correctly.md) Le serveur web n’est pas configuré correctement
+- Consultez [erreur : le serveur web n’est pas configuré correctement](../debugger/error-the-web-server-is-not-configured-correctly.md).
 
 ## <a name="unabletoconnect"></a> Impossible de se connecter sur le serveur Web
 
@@ -106,12 +106,12 @@ En outre, si vous utilisez un fichier HOSTS, assurez-vous qu’il est configuré
 
 ##  <a name="vxtbshttpservererrorsthingstocheck"></a> Vérifiez votre configuration d’IIS
 
-Après avoir pris les mesures décrites ici pour résoudre le problème et avant d’essayer à nouveau de déboguer, vous devrez peut-être également réinitialiser IIS. Vous pouvez le faire en ouvrant une invite de commandes avec élévation de privilèges et en tapant `iisreset`. 
+Après avoir pris les mesures décrites ici pour résoudre le problème et avant d’essayer à nouveau de déboguer, vous devrez peut-être également réinitialiser IIS. Vous pouvez le faire en ouvrant une invite de commandes avec élévation de privilèges et en tapant `iisreset`.
 
-* Arrêter et redémarrer vos Pools d’applications IIS, puis réessayez. 
+* Arrêter et redémarrer vos Pools d’applications IIS, puis réessayez.
 
     Le Pool d’applications peut avoir arrêté suite à une erreur. Ou bien, une autre modification de configuration que vous avez apportées peut-être nécessiter que vous arrêtez et redémarrez votre Pool d’applications.
-    
+
     > [!NOTE]
     > Si le Pool d’applications conserve l’arrêt, vous devrez désinstaller le Module de réécriture d’URL à partir du panneau. Vous pouvez réinstaller à l’aide de Web Platform Installer (WebPI). Ce problème peut se produire après une mise à niveau du système significatives.
 
@@ -120,7 +120,7 @@ Après avoir pris les mesures décrites ici pour résoudre le problème et avant
     Le Pool d’applications peut être configuré pour une version d’ASP.NET qui ne correspond pas à votre projet Visual Studio. Mettre à jour la version d’ASP.NET dans le Pool d’applications et redémarrez-le. Pour plus d’informations, consultez [IIS 8.0 à l’aide de ASP.NET 3.5 et ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
     En outre, si les informations d’identification de mot de passe ont été modifiés, vous devrez peut-être les mettre à jour dans votre Pool d’applications ou le site Web.  Dans le Pool d’applications, mettre à jour les informations d’identification dans **paramètres avancés > modèle de processus > identité**. Pour le site Web, mettre à jour les informations d’identification dans **paramètres de base > se connecter en tant que...** . Redémarrez votre Pool d’applications.
-    
+
 * Vérifiez que votre dossier d’Application Web dispose des autorisations appropriées.
 
     Assurez-vous que vous donnez IIS_IUSRS, IUSR, ou associé à l’utilisateur spécifique le [Pool d’applications](/iis/manage/configuring-security/application-pool-identities) lecture et d’exécution des droits pour le dossier d’Application Web. Corrigez le problème et redémarrez votre Pool d’applications.
@@ -128,11 +128,11 @@ Après avoir pris les mesures décrites ici pour résoudre le problème et avant
 * Assurez-vous que la version correcte d’ASP.NET est installée sur IIS.
 
     Versions incompatibles de ASP.NET sur IIS et dans votre projet Visual Studio peuvent provoquer ce problème. Vous devrez peut-être définir la version du framework dans le fichier web.config. Pour installer ASP.NET sur IIS, utilisez le [Web Platform Installer (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). En outre, consultez [IIS 8.0 à l’aide de ASP.NET 3.5 et ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) ou, pour ASP.NET Core, [hôte sur Windows avec IIS](https://docs.asp.net/en/latest/publishing/iis.html).
-  
+
 * Résoudre les erreurs d’authentification si vous utilisez uniquement l’adresse IP
 
      Par défaut, les adresses IP sont supposées faire partie d'Internet et l'authentification NTLM ne s'effectue pas via Internet. Si votre site web est configuré dans IIS pour exiger l’authentification, cette authentification échoue. Pour corriger ce problème, vous pouvez spécifier le nom de l’ordinateur distant au lieu de l’adresse IP.
-     
+
 ## <a name="other-causes"></a>Autres causes
 
 Si la configuration d’IIS n’est pas provoque le problème, essayez les étapes suivantes :
@@ -140,7 +140,7 @@ Si la configuration d’IIS n’est pas provoque le problème, essayez les étap
 - Redémarrez Visual Studio avec des privilèges d’administrateur et réessayez.
 
     Certains scénarios de débogage ASP.NET telles que l’utilisation de Web Deploy nécessitent des privilèges élevés pour Visual Studio.
-    
+
 - Si vous exécutent plusieurs instances de Visual Studio, rouvrez votre projet dans une instance de Visual Studio (avec des privilèges d’administrateur), puis réessayez.
 
 - Si vous utilisez un fichier d’hôtes avec les adresses locales, essayez d’utiliser l’adresse de bouclage au lieu de l’adresse IP de l’ordinateur.
@@ -152,12 +152,12 @@ Si la configuration d’IIS n’est pas provoque le problème, essayez les étap
 * Afficher la page localhost dans le navigateur sur le serveur.
 
      Si IIS n’est pas installé correctement, vous devez obtenir des erreurs quand vous tapez `http://localhost` dans un navigateur.
-     
+
      Pour plus d’informations sur le déploiement vers IIS, consultez [IIS 8.0 à l’aide de ASP.NET 3.5 et ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) et, pour ASP.NET Core, [hôte sur Windows avec IIS](https://docs.asp.net/en/latest/publishing/iis.html).
 
 * Créer une application ASP.NET de base sur le serveur (ou utiliser un fichier web.config de base).
 
     Si vous ne pouvez pas obtenir votre application fonctionne avec le débogueur, essayez de créer une application ASP.NET de base localement sur le serveur et tentez de déboguer l’application de base. (Vous souhaiterez utiliser le modèle ASP.NET MVC par défaut.) Si vous pouvez déboguer une application de base, qui peut vous aider à identifier quelle est la différence entre les deux configurations. Rechercher les différences dans les paramètres dans le fichier web.config, telles que les règles de réécriture d’URL.
 
-## <a name="see-also"></a>Voir aussi  
- [Débogage d’applications web : erreurs et dépannage](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+## <a name="see-also"></a>Voir aussi
+- [Débogage d’applications web : erreurs et dépannage](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

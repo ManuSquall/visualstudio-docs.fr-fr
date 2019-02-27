@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd59211da9228f2940c675f889d0536fbea9045d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fc0c61b766b6f93fd1321b15861000d7c628f124
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55019190"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711603"
 ---
-# <a name="error-the-web-server-is-not-configured-correctly"></a>Erreur : Le serveur web n’est pas configuré correctement
+# <a name="error-the-web-server-is-not-configured-correctly"></a>Erreur : le serveur Web n'est pas configuré correctement
 
 Après avoir pris les mesures décrites ici pour résoudre le problème et avant d’essayer à nouveau de déboguer, vous devrez peut-être également réinitialiser IIS. Vous pouvez le faire en ouvrant une invite de commandes administrateur et en tapant `iisreset`.
 
@@ -44,9 +44,9 @@ Suivez ces étapes pour résoudre ce problème :
 4. (IIS) Assurez-vous que la version correcte d’ASP.NET est installée sur le serveur.
 
     Versions incompatibles de ASP.NET sur IIS et dans votre projet Visual Studio peuvent provoquer ce problème. Vous devrez peut-être définir la version du framework dans le fichier web.config. Pour installer ASP.NET sur IIS, utilisez le [Web Platform Installer (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). En outre, consultez [IIS 8.0 à l’aide de ASP.NET 3.5 et ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) ou, pour ASP.NET Core, [hôte sur Windows avec IIS](https://docs.asp.net/en/latest/publishing/iis.html).
-  
+
 4. Si le `maxConnection` limite dans IIS est trop faible et que vous avez trop de connexions, vous devrez peut-être [augmenter la limite de connexion](/iis/configuration/system.applicationhost/sites/sitedefaults/limits).
-  
-## <a name="see-also"></a>Voir aussi  
- [Débogage distant ASP.NET sur un ordinateur distant IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)   
- [Débogage d’applications web : erreurs et dépannage](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+
+## <a name="see-also"></a>Voir aussi
+- [Débogage distant ASP.NET sur un ordinateur distant IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)
+- [Débogage d’applications web : erreurs et dépannage](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

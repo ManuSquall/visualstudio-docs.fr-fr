@@ -20,26 +20,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d6bc004ac9d450e0f5ea358d16bb25ab6cabecf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 41b93ae19afd54b6e22458d1ba12029d5bb93cf3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018749"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56682789"
 ---
 # <a name="executable-for-debugging-session-dialog-box"></a>Exécutable pour la session de débogage (boîte de dialogue)
 
-Cette boîte de dialogue s'affiche lorsque vous essayez de déboguer une DLL pour laquelle aucun exécutable n'est spécifié. Visual Studio ne peut pas lancer une DLL directement. Au lieu de cela, Visual Studio lance l’exécutable spécifié. Vous pouvez déboguer la DLL lorsqu’elle est appelée par l’exécutable.  
-  
- **Nom de fichier de l’exécutable**  
- Entrez le chemin d’accès d’un exécutable qui appelle la DLL à déboguer.  
-  
- **URL d’accès au projet (ATL Server uniquement)**  
- Si vous déboguez une DLL ATL Server, entrez l'URL permettant d'accéder au projet.  
-  
- Une fois entrées, ces paramètres sont stockés dans le projet de Pages de propriétés, donc vous n’aurez pas à les entrer à nouveau lors des sessions de débogage suivantes. Si vous devez les modifier, ouvrez les Pages de propriétés et apportez les changements voulus. Pour plus d’informations sur la spécification d’un exécutable pour la session de débogage, consultez [Débogage de DLL](../debugger/how-to-debug-from-a-dll-project.md).  
-  
+Cette boîte de dialogue s'affiche lorsque vous essayez de déboguer une DLL pour laquelle aucun exécutable n'est spécifié. Visual Studio ne peut pas lancer une DLL directement. Au lieu de cela, Visual Studio lance l’exécutable spécifié. Vous pouvez déboguer la DLL lorsqu’elle est appelée par l’exécutable.
+
+ **Nom du fichier exécutable** Entrez le nom de chemin d’accès à un fichier exécutable qui appelle la DLL que vous déboguez.
+
+ **URL où le projet peut être accessible (ATL Server uniquement)** si vous déboguez une DLL ATL Server, entrez l’URL où se trouve le projet.
+
+ Une fois entrées, ces paramètres sont stockés dans le projet de Pages de propriétés, donc vous n’aurez pas à les entrer à nouveau lors des sessions de débogage suivantes. Si vous devez les modifier, ouvrez les Pages de propriétés et apportez les changements voulus. Pour plus d’informations sur la spécification d’un exécutable pour la session de débogage, consultez [Débogage de DLL](../debugger/how-to-debug-from-a-dll-project.md).
+
 ## <a name="see-also"></a>Voir aussi
 
- [Débogage dans Visual Studio](../debugger/index.md)  
- [Présentation du débogueur](../debugger/debugger-feature-tour.md)
+- [Débogage dans Visual Studio](../debugger/index.md)
+- [Présentation du débogueur](../debugger/debugger-feature-tour.md)

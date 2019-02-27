@@ -22,29 +22,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01ccb091163e3b70c90eaa9b1b6d3b7256a20d4e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e1111bc7f3fbb0f515bfeb5247f70925c1ab304d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954369"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681281"
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>Débogueur Microsoft Visual Studio (Exception levée) (boîte de dialogue)
-Une exception s'est produite dans votre programme. Cette boîte de dialogue indique le type d'exception levé. Votre code doit gérer cette exception. Pour ce faire, vous avez le choix entre les options suivantes :  
-  
- **Break**  
- Autorise l'arrêt de l'exécution dans le débogueur. Le gestionnaire d'exceptions n'est pas appelé avant l'arrêt. Si vous poursuivez l'exécution après l'arrêt, le gestionnaire d'exceptions est appelé.  
-  
- **Continue**  
- Autorise la poursuite de l'exécution en donnant au gestionnaire d'exceptions une chance de traiter cette exception. Cette option n'est pas disponible pour certains types d'exceptions. **Continue** autorise l’application à continuer. Dans une application native, l'exception est de nouveau levée. Dans une application managée, cela entraîne l'arrêt du programme ou la gestion de l'exception par une application hôte.  
-  
+Une exception s'est produite dans votre programme. Cette boîte de dialogue indique le type d'exception levé. Votre code doit gérer cette exception. Pour ce faire, vous avez le choix entre les options suivantes :
+
+ **Saut** permet d’arrêter le débogueur de l’exécution. Le gestionnaire d'exceptions n'est pas appelé avant l'arrêt. Si vous poursuivez l'exécution après l'arrêt, le gestionnaire d'exceptions est appelé.
+
+ **Continuer** permet l’exécution à se poursuivre, en donnant le Gestionnaire d’exceptions une chance de traiter l’exception. Cette option n'est pas disponible pour certains types d'exceptions. **Continue** autorise l’application à continuer. Dans une application native, l'exception est de nouveau levée. Dans une application managée, cela entraîne l'arrêt du programme ou la gestion de l'exception par une application hôte.
+
 > [!NOTE]
->  Vous ne pouvez pas continuer l'exécution à la suite de la levée d'une exception non traitée dans du code managé. Si vous sélectionnez **Continue** après une exception non gérée dans du code managé, le débogage s’arrête.  
-  
- **Ignore**  
- Autorise la poursuite de l'exécution sans appeler le gestionnaire d'exceptions. Comme le gestionnaire d'exceptions n'est pas appelé, il risque de s'ensuivre des conséquences indésirables, notamment de nouvelles exceptions et des erreurs. Cette option n'est pas disponible pour certains types d'exceptions.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Gestion des exceptions avec le débogueur](../debugger/managing-exceptions-with-the-debugger.md)   
- [Meilleures pratiques pour les exceptions](/dotnet/standard/exceptions/best-practices-for-exceptions)   
- [Gestion des exceptions](/cpp/windows/exception-handling-cpp-component-extensions)
+>  Vous ne pouvez pas continuer l'exécution à la suite de la levée d'une exception non traitée dans du code managé. Si vous sélectionnez **Continue** après une exception non gérée dans du code managé, le débogage s’arrête.
+
+ **Ignorer** permet l’exécution à continuer sans appeler le Gestionnaire d’exceptions. Comme le gestionnaire d'exceptions n'est pas appelé, il risque de s'ensuivre des conséquences indésirables, notamment de nouvelles exceptions et des erreurs. Cette option n'est pas disponible pour certains types d'exceptions.
+
+## <a name="see-also"></a>Voir aussi
+- [Gestion des exceptions avec le débogueur](../debugger/managing-exceptions-with-the-debugger.md)
+- [Meilleures pratiques pour les exceptions](/dotnet/standard/exceptions/best-practices-for-exceptions)
+- [Gestion des exceptions](/cpp/windows/exception-handling-cpp-component-extensions)

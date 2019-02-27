@@ -13,12 +13,12 @@ monikerRange: vs-2019
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 7a0363c26171382b0cab13e529b08378681f3f65
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b2baf119259c749e8da99a9326eb22aa1e034b4a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335992"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646471"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Déboguer des applications ASP.NET en production sur des machines virtuelles et jeux de mise à l’échelle de machine virtuelle Azure à l’aide du débogueur de capture instantanée
 
@@ -53,7 +53,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 1. Attacher le débogueur de capture instantanée. Vous pouvez utiliser une des différentes méthodes :
 
     * Choisissez **Déboguer > attacher le débogueur de capture instantanée...** . Sélectionnez votre application web est déployée sur Azure VM/VMSS et un compte de stockage Azure, puis cliquez sur **attacher**.
-  
+
       ![Lancer le débogueur de capture instantanée à partir du menu Débogage](../debugger/media/snapshot-debug-menu-attach.png)
 
     * Cliquez avec le bouton droit sur votre projet, puis sélectionnez **publier**, puis, dans la page Publier, cliquez sur **attacher un débogueur de capture instantanée**. Sélectionnez votre application web est déployée sur Azure VM/VMSS et un compte de stockage Azure, puis cliquez sur **attacher**.
@@ -63,7 +63,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
     ![Lancer le débogueur de capture instantanée à partir du menu de liste déroulante de F5](../debugger/media/snapshot-F5-dropdown-attach.png)
 
     * À l’aide de l’Explorateur de Cloud (**Affichage > Cloud Explorer**), avec le bouton droit de votre application web est déployée sur Azure VM/VMSS et sélectionnez un compte de stockage Azure, puis cliquez sur **attacher un débogueur de capture instantanée**.
-  
+
       ![Lancer le débogueur de capture instantanée à partir de l’Explorateur de Cloud](../debugger/media/snapshot-launch.png)
 
     > [!IMPORTANT]
