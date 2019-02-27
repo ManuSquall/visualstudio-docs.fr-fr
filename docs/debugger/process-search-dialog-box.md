@@ -10,42 +10,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73d4d32af6e3aa76dd586f665c66d3ef014518ca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 190ec35d014e6b443a9f80bf79433ac14b8fb8ad
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961622"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703589"
 ---
 # <a name="process-search-dialog-box"></a>Boîte de dialogue Recherche d'un processus
-Utilisez cette boîte de dialogue pour rechercher et sélectionner le nœud d’un processus spécifique dans [vue processus](../debugger/processes-view.md). Pour afficher cette boîte de dialogue, déplacez le focus à un **processus** fenêtre d’affichage. Puis choisissez **rechercher le processus** à partir de la **recherche** menu.  
-  
- Les paramètres suivants sont disponibles :  
-  
- **Process**  
- L’ID de processus à rechercher.  
-  
- **Module**  
- Chaîne de module à rechercher.  
-  
- **Sens de la recherche vers le haut ou vers le bas**  
- La direction de la recherche initiale.  
-  
-## <a name="related-sections"></a>Rubriques connexes  
- [Recherche d’un processus dans la vue processus](../debugger/how-to-search-for-a-process-in-processes-view.md)  
- Explique comment rechercher un processus spécifique dans la vue processus.  
-  
- [Vue Processus](../debugger/processes-view.md)  
- Affiche une arborescence des processus actifs.  
-  
- [Vues Spy++](../debugger/spy-increment-views.md)  
- Explique les arborescences Spy ++ de windows, les messages, les processus et les threads.  
-  
- [Utilisation de Spy++](../debugger/using-spy-increment.md)  
- Présente l’outil Spy ++ et explique comment il peut être utilisé.  
-  
- [Propriétés du processus, boîte de dialogue](../debugger/process-properties-dialog-box.md)  
- Permet d’afficher les propriétés d’un processus sélectionné dans la vue processus.  
-  
- [Informations de référence sur Spy++](../debugger/spy-increment-reference.md)  
- Inclut des sections décrivant chaque Spy ++ menu et boîte de dialogue.
+Utilisez cette boîte de dialogue pour rechercher et sélectionner le nœud d’un processus spécifique dans [vue processus](../debugger/processes-view.md). Pour afficher cette boîte de dialogue, déplacez le focus à un **processus** fenêtre d’affichage. Puis choisissez **rechercher le processus** à partir de la **recherche** menu.
+
+ Les paramètres suivants sont disponibles :
+
+ **Processus** l’ID de processus à rechercher.
+
+ **Module** la chaîne de module à rechercher.
+
+ **Sens de la recherche vers le haut ou vers le bas** le sens initial de la recherche.
+
+## <a name="related-sections"></a>Rubriques connexes
+ [Recherche d’un processus dans la vue processus](../debugger/how-to-search-for-a-process-in-processes-view.md) explique comment rechercher un processus spécifique dans la vue processus.
+
+ [Vue processus](../debugger/processes-view.md) affiche une arborescence des processus actifs.
+
+ [Vues Spy ++](../debugger/spy-increment-views.md) explique les arborescences Spy ++ de windows, les messages, les processus et les threads.
+
+ [À l’aide de Spy ++](../debugger/using-spy-increment.md) présente l’outil Spy ++ et explique comment il peut être utilisé.
+
+ [Boîte de dialogue Propriétés du processus](../debugger/process-properties-dialog-box.md) utilisé pour afficher les propriétés d’un processus sélectionné dans la vue processus.
+
+ [Référence Spy ++](../debugger/spy-increment-reference.md) comprend les sections décrivant chaque Spy ++ menu et boîte de dialogue.

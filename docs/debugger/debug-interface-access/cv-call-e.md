@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8c11e84a514739049a044a12ae482f7b2d9929
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: ec5fea99994b891250dad85cfc43320848df98f9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316178"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602752"
 ---
 # <a name="cvcalle"></a>CV_call_e
 Spécifie la convention d’appel pour une fonction.
@@ -39,23 +39,17 @@ typedef enum CV_call_e {
 ```
 
 ## <a name="elements"></a>Éléments
-CV_CALL_NEAR_C  
-Spécifie une convention d’appel de fonction à l’aide d’un push proche de droite à gauche. La fonction appelante efface la pile.
+CV_CALL_NEAR_C spécifie une convention d’appel de fonction à l’aide d’un push proche de droite à gauche. La fonction appelante efface la pile.
 
-CV_CALL_NEAR_FAST  
-Spécifie une convention d’appel de fonction à l’aide d’un push de gauche à droite quasi avec les registres. La fonction appelée utilise la somme des octets de paramètre pour effacer la pile.
+CV_CALL_NEAR_FAST spécifie une convention d’appel de fonction à l’aide de gauche à droite quasi push avec inscrit. La fonction appelée utilise la somme des octets de paramètre pour effacer la pile.
 
-CV_CALL_NEAR_STD  
-Spécifie une convention d’appel de fonction via un appel standard quasiment (push de droite à gauche).
+CV_CALL_NEAR_STD spécifie une convention d’appel de fonction via un appel standard quasiment (push de droite à gauche).
 
-CV_CALL_NEAR_SYS  
-Spécifie une convention d’appel de fonction à l’aide d’un appel système proche.
+CV_CALL_NEAR_SYS spécifie une convention d’appel de fonction à l’aide d’un système quasi appeler.
 
-CV_CALL_THISCALL  
-Spécifie une convention d’appel de fonction à l’aide `this` appeler (`this` pointeur passé dans le Registre).
+CV_CALL_THISCALL spécifie une à l’aide de la convention d’appel de fonction `this` appeler (`this` pointeur passé dans le Registre).
 
-CV_CALL_CLRCALL  
-Spécifie une convention d’appel de fonction utilisée par le Common Language Runtime (CLR) (également appelé un code managé convention d’appel).
+CV_CALL_CLRCALL spécifie une convention d’appel de fonction utilisée par le Common Language Runtime (CLR) (également appelé un code managé convention d’appel).
 
 ## <a name="remarks"></a>Remarques
 Les valeurs dans cette énumération sont retournées par un appel à la [IDiaSymbol::get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md) (méthode).
@@ -64,5 +58,5 @@ Les valeurs dans cette énumération sont retournées par un appel à la [IDiaSy
 En-tête : cvconst.h
 
 ## <a name="see-also"></a>Voir aussi
-[Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)
+- [Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)

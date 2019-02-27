@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 01c523abf6b6302831fee53e2546ba606089467c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0839fae55c9aeaeb5018ec1b1acba3c62984349a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027376"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683595"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Démarrage rapide : Déboguer du code ASP.NET avec le débogueur Visual Studio
 
 Le débogueur Visual Studio fournit de nombreuses fonctionnalités puissantes pour vous aider à déboguer vos applications. Cette rubrique vous offre un moyen rapide de vous familiariser avec quelques-unes des fonctionnalités de base.
 
-## <a name="create-a-new-project"></a>Créer un projet 
+## <a name="create-a-new-project"></a>Créer un projet
 
 1. Dans Visual Studio, sélectionnez **Fichier > Nouveau projet**.
 
@@ -71,13 +71,13 @@ Le débogueur Visual Studio fournit de nombreuses fonctionnalités puissantes po
     }
     ```
 
-## <a name="set-a-breakpoint"></a>Définir un point d’arrêt
+## <a name="set-a-breakpoint"></a>Définir un point d'arrêt
 
 Un *point d’arrêt* est un marqueur qui indique où Visual Studio doit interrompre l’exécution du code pour vous permettre d’examiner les valeurs des variables, le comportement de la mémoire, ou l’exécution ou non d’une branche de code. C’est la fonctionnalité la plus élémentaire du débogage.
 
 1. Pour définir le point d’arrêt, cliquez dans la marge à gauche de la fonction `doWork` (ou sélectionnez la ligne de code et appuyez sur **F9**).
 
-    ![Définir un point d’arrêt](../debugger/media/dbg-qs-set-breakpoint-aspnet.png)
+    ![Définir un point d'arrêt](../debugger/media/dbg-qs-set-breakpoint-aspnet.png)
 
     Le point d’arrêt est défini à gauche de l’accolade ouvrante (`{`).
 
@@ -110,7 +110,7 @@ L’application poursuit son exécution, puis se met en pause sur la ligne de co
 
     ![Afficher un datatip](../debugger/media/dbg-qs-data-tip-aspnet.png)
 
-    La bulle d’informations (datatip) vous montre la valeur actuelle de la variable `c2` et vous permet d’inspecter ses propriétés. Lors du débogage, si vous remarquez une valeur que vous n’attendiez pas, vous avez probablement un bogue dans les lignes de code précédentes ou d’appel. 
+    La bulle d’informations (datatip) vous montre la valeur actuelle de la variable `c2` et vous permet d’inspecter ses propriétés. Lors du débogage, si vous remarquez une valeur que vous n’attendiez pas, vous avez probablement un bogue dans les lignes de code précédentes ou d’appel.
 
 2. Développez le datatip pour examiner les valeurs des propriétés actuelles de l’objet `c2`.
 

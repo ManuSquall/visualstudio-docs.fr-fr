@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f7f81abd82857b3d9ed2161a6923a79b614bf5a
-ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
+ms.openlocfilehash: 1840f6f5650b3491cf7898c1d8d6a6fcae19f906
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55742399"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56682841"
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>Raccordements d'allocation et allocations de la mémoire runtime C
 Une restriction très importante sur les fonctions de raccordement d’allocation est qu’elles doivent ignorer explicitement `_CRT_BLOCK` blocs. Ces blocs sont les allocations de mémoire effectuées en interne par les fonctions de bibliothèque Runtime C si elles passent des appels aux fonctions de bibliothèque Runtime C qui allouent la mémoire interne. Vous pouvez ignorer `_CRT_BLOCK` fonction de raccordement de blocs en incluant le code suivant au début de la répartition :
@@ -40,4 +40,4 @@ Si votre raccordement d’allocation n’ignore pas `_CRT_BLOCK` bloque, puis un
 Si vous examinez les fichiers sources de la bibliothèque Runtime, vous verrez que la fonction de raccordement d’allocation par défaut, à savoir **CrtDefaultAllocHook** (qui renvoie simplement **TRUE**), se trouve dans un fichier distinct, à savoir DBGHOOK.C. Si vous voulez que votre raccordement d’allocation soit appelé même pour les allocations effectuées par le code de démarrage runtime exécuté avant la fonction **main** de votre application, vous pouvez remplacer cette fonction par défaut par une fonction à vous, plutôt que d’utiliser [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook).
 
 ## <a name="see-also"></a>Voir aussi
-[Écriture de fonctions de raccordement de débogage](../debugger/debug-hook-function-writing.md)
+- [Écriture de fonctions de raccordement de débogage](../debugger/debug-hook-function-writing.md)
