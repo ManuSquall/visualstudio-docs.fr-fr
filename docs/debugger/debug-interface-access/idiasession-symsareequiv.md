@@ -12,35 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91a3081cc32eb4286ed7b981dfa2a070dbf4a0ff
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0253104cf29e86825fadc8c8bd18133e0d3cf593
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036691"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613048"
 ---
 # <a name="idiasessionsymsareequiv"></a>IDiaSession::symsAreEquiv
-Vérifie si deux symboles sont équivalentes.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT symsAreEquiv (   
-   IDiaSymbol* symbolA,  
-   IDiaSymbol* symbolB  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `symbolA`  
- [in] La première [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objet utilisé dans la comparaison.  
-  
- `symbolB`  
- [in] La seconde `IDiaSymbol` objet utilisé dans la comparaison.  
-  
-## <a name="return-value"></a>Valeur de retour  
- Si les symboles sont équivalentes, retourne `S_OK`; sinon, retourne `S_FALSE`, les symboles ne sont pas équivalents. Sinon, retourne un code d’erreur.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Vérifie si deux symboles sont équivalentes.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT symsAreEquiv ( 
+   IDiaSymbol* symbolA,
+   IDiaSymbol* symbolB
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `symbolA`
+
+[in] La première [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objet utilisé dans la comparaison.
+
+ `symbolB`
+
+[in] La seconde `IDiaSymbol` objet utilisé dans la comparaison.
+
+## <a name="return-value"></a>Valeur de retour
+ Si les symboles sont équivalentes, retourne `S_OK`; sinon, retourne `S_FALSE`, les symboles ne sont pas équivalents. Sinon, retourne un code d’erreur.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

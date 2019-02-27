@@ -6,15 +6,13 @@ manager: jillfra
 ms.date: 07/16/2018
 ms.topic: conceptual
 description: Découvrez comment les administrateurs peuvent attribuer des licences aux abonnés
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4dfec16161f6cd6b875b38738a9340e12d62f975
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 97962571d8a7c433a5f72af90d9107f9e2b08a9b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970121"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843017"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Attribuer des licences dans le portail d’administration des abonnements Visual Studio
 

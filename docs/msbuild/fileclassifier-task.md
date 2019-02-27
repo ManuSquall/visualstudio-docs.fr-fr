@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9dccb229712d173e847a7205f03aad308fab224d
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 3d9dd845a69243cd8bedb095c63f75670f39afff
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853188"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640582"
 ---
 # <a name="fileclassifier-task"></a>FileClassifier, tâche
 La tâche <xref:Microsoft.Build.Tasks.Windows.FileClassifier> classifie un ensemble de ressources sources comme devant être incorporées dans un assembly. Si une ressource n’est pas localisable, elle est incorporée dans l’assembly principal de l’application ; autrement, elle est incorporée dans un assembly satellite.
@@ -40,7 +40,7 @@ La tâche <xref:Microsoft.Build.Tasks.Windows.FileClassifier> classifie un ensem
 |`SatelliteEmbeddedFiles`|Paramètre de sortie **ITaskItem[]** facultatif.<br /><br /> Spécifie les fichiers localisables incorporés dans l’assembly satellite pour la culture spécifiée par le paramètre **Culture**.|
 |`SourceFiles`|Paramètre **ITaskItem[]** obligatoire.<br /><br /> Spécifie la liste des fichiers à classifier.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Si le paramètre **Culture** n’est pas défini, toutes les ressources spécifiées à l’aide du paramètre **SourceFiles** sont non localisables ; sinon, elles sont localisables, sauf si elles sont associées à un attribut **Localizable** dont la valeur est **false**.
 
 ## <a name="example"></a>Exemple
@@ -64,8 +64,8 @@ L’exemple suivant classifie un fichier source unique en tant que ressource, pu
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[Informations de référence sur MSBuild WPF](../msbuild/wpf-msbuild-reference.md)  
-[Informations de référence sur les tâches](../msbuild/wpf-msbuild-task-reference.md)  
-[Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)  
-[Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)  
-[Générer une application WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+- [Informations de référence sur MSBuild WPF](../msbuild/wpf-msbuild-reference.md)
+- [Informations de référence sur les tâches](../msbuild/wpf-msbuild-task-reference.md)
+- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
+- [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
+- [Générer une application WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

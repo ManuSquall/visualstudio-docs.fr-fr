@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 917e9927e6eb8771ea911ee938d9226ecb2eadff
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: 8fb0b713df5658fa245fb49a537cde16accce41c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55484223"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713150"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Guide du débogage pour grands débutants
 
@@ -101,7 +101,7 @@ Nous allons maintenant créer une application qui comporte quelques bogues.
     ```csharp
     using System;
     using System.Collections.Generic;
-    
+
     namespace ConsoleApp_FirstApp
     {
         class Program
@@ -112,7 +112,7 @@ Nous allons maintenant créer une application qui comporte quelques bogues.
                 IterateThroughList();
                 Console.ReadKey();
             }
-    
+
             private static void IterateThroughList()
             {
                 var theGalaxies = new List<Galaxy>
@@ -124,33 +124,33 @@ Nous allons maintenant créer une application qui comporte quelques bogues.
                 new Galaxy() { Name="Andromeda", MegaLightYears=3, GalaxyType=new GType('S')},
                 new Galaxy() { Name="Maffei 1", MegaLightYears=11, GalaxyType=new GType('E')}
             };
-    
+
                 foreach (Galaxy theGalaxy in theGalaxies)
                 {
                     Console.WriteLine(theGalaxy.Name + "  " + theGalaxy.MegaLightYears + ",  " + theGalaxy.GalaxyType);
                 }
-    
-                // Expected Output:  
-                //  Tadpole  400,  Spiral 
-                //  Pinwheel  25,  Spiral 
+
+                // Expected Output:
+                //  Tadpole  400,  Spiral
+                //  Pinwheel  25,  Spiral
                 //  Cartwheel, 500,  Lenticular
                 //  Small Magellanic Cloud .2,  Irregular
                 //  Andromeda  3,  Spiral
                 //  Maffei 1,  11,  Elliptical
             }
         }
-    
+
         public class Galaxy
         {
             public string Name { get; set; }
-    
+
             public double MegaLightYears { get; set; }
             public object GalaxyType { get; set; }
-    
+
         }
-    
+
         public class GType
-        { 
+        {
             public GType(char type)
             {
                 switch(type)
@@ -188,8 +188,8 @@ Nous allons maintenant créer une application qui comporte quelques bogues.
     L’application démarre et aucune exception n’est signalée par le débogueur. Toutefois, la sortie visible dans la fenêtre de console n’est pas celle à laquelle vous vous attendez. Voici la sortie attendue :
 
     ```
-    Tadpole  400,  Spiral 
-    Pinwheel  25,  Spiral 
+    Tadpole  400,  Spiral
+    Pinwheel  25,  Spiral
     Cartwheel, 500,  Lenticular
     Small Magellanic Cloud .2,  Irregular
     Andromeda  3,  Spiral
@@ -199,8 +199,8 @@ Nous allons maintenant créer une application qui comporte quelques bogues.
     Et voici ce que nous obtenons à la place :
 
     ```
-    Tadpole  400,  ConsoleApp_FirstApp.GType 
-    Pinwheel  25,  ConsoleApp_FirstApp.GType 
+    Tadpole  400,  ConsoleApp_FirstApp.GType
+    Pinwheel  25,  ConsoleApp_FirstApp.GType
     Cartwheel, 500,  ConsoleApp_FirstApp.GType
     Small Magellanic Cloud .2,  ConsoleApp_FirstApp.GType
     Andromeda  3,  ConsoleApp_FirstApp.GType
@@ -217,7 +217,7 @@ Nous allons maintenant créer une application qui comporte quelques bogues.
     foreach (Galaxy theGalaxy in theGalaxies)
     {
         Console.WriteLine(theGalaxy.Name + "  " + theGalaxy.MegaLightYears + ",  " + theGalaxy.GalaxyType);
-    }    
+    }
     ```
 
     Quand vous définissez le point d’arrêt, un point rouge apparaît dans la marge de gauche.
@@ -247,13 +247,13 @@ Nous allons maintenant créer une application qui comporte quelques bogues.
 1. En examinant votre code associé à la définition du type de galaxie, vous constatez que la propriété `GalaxyType` de la classe `Galaxy` est spécifiée comme `object` au lieu de `GType`.
 
     ```csharp
-    public object GalaxyType { get; set; }     
+    public object GalaxyType { get; set; }
     ```
 
 1. Remplacez le code précédent par ceci :
 
     ```csharp
-    public GType GalaxyType { get; set; }     
+    public GType GalaxyType { get; set; }
     ```
 
 1. Cliquez sur le bouton **Redémarrer** ![Redémarrer l’application](../debugger/media/dbg-tour-restart.png "RestartApp") dans la barre d’outils Débogage (**Ctrl** + **Maj**  + **F5**) pour recompiler le code et redémarrer.
@@ -265,8 +265,8 @@ Nous allons maintenant créer une application qui comporte quelques bogues.
     L’application s’exécute et affiche la sortie. Cela semble correct désormais, mais vous remarquez une chose : vous vous attendiez à ce que la galaxie Small Magellanic Cloud apparaisse comme une galaxie de type Irregular dans la sortie de console, mais aucun type de galaxie n’est mentionné.
 
     ```
-    Tadpole  400,  Spiral 
-    Pinwheel  25,  Spiral 
+    Tadpole  400,  Spiral
+    Pinwheel  25,  Spiral
     Cartwheel, 500,  Lenticular
     Small Magellanic Cloud .2,
     Andromeda  3,  Spiral
@@ -283,7 +283,7 @@ Nous allons maintenant créer une application qui comporte quelques bogues.
 
 1. Cliquez sur le bouton **Redémarrer** ![Redémarrer l’application](../debugger/media/dbg-tour-restart.png "RestartApp") dans la barre d’outils Débogage (**Ctrl** + **Maj**  + **F5**) pour redémarrer.
 
-    Le débogueur s’arrête sur la ligne de code où vous avez défini le point d’arrêt.  
+    Le débogueur s’arrête sur la ligne de code où vous avez défini le point d’arrêt.
 
 1. Pointez sur la variable `type`. Vous voyez la valeur `S` (après le code de caractère). Ce qui vous intéresse, c’est une valeur `I`, puisque vous savez qu’il s’agit du type de galaxie Irregular.
 
@@ -323,7 +323,7 @@ Une fois identifiée la région de code à problème, utilisez le débogueur pou
 * Vérifiez si votre application exécute le code prévu. (Par exemple, dans l’exemple d’application, nous nous attendions à ce que le code pour l’instruction switch affecte la valeur Irregular comme type de galaxie, mais l’application a ignoré le code à cause de la faute de frappe.)
 
 > [!TIP]
-> Vous utilisez un débogueur pour vous aider à trouver des bogues. Un outil de débogage peut trouver des bogues *à votre place* uniquement s’il connaît l’intention de votre code. Un outil ne peut avoir connaissance de l’intention de votre code que si vous, le développeur, exprimez cette intention. Vous devez pour cela écrire des [tests unitaires](../test/improve-code-quality.md). 
+> Vous utilisez un débogueur pour vous aider à trouver des bogues. Un outil de débogage peut trouver des bogues *à votre place* uniquement s’il connaît l’intention de votre code. Un outil ne peut avoir connaissance de l’intention de votre code que si vous, le développeur, exprimez cette intention. Vous devez pour cela écrire des [tests unitaires](../test/improve-code-quality.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

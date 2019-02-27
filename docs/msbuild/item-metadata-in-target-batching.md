@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fe3e959f9e34dfbc757789a5461a920125eb10e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ff9aa4cdc2e3a406b21aeccf5538bcbfdd6b4249
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970320"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56606314"
 ---
 # <a name="item-metadata-in-target-batching"></a>Métadonnées d’élément dans le traitement par lots des cibles
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] a la capacité d’effectuer une analyse des dépendances sur les entrées et les sorties d’une cible de génération. S’il est déterminé que les entrées ou les sorties de la cible sont à jour, la cible est ignorée et la génération a lieu. Les éléments `Target` utilisent les attributs `Inputs` et `Outputs` pour spécifier les éléments à inspecter pendant l’analyse des dépendances.
@@ -66,7 +66,7 @@ L’exemple suivant contient une liste d’éléments nommée `Res` qui est divi
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[Guide pratique pour effectuer des builds incrémentielles](../msbuild/how-to-build-incrementally.md)  
-[Traitement par lots](../msbuild/msbuild-batching.md)  
-[Target, élément (MSBuild)](../msbuild/target-element-msbuild.md)  
-[Métadonnées d’élément dans le traitement par lots des tâches](../msbuild/item-metadata-in-task-batching.md)
+- [Guide pratique pour effectuer des builds incrémentielles](../msbuild/how-to-build-incrementally.md)
+- [Traitement par lots](../msbuild/msbuild-batching.md)
+- [Target, élément (MSBuild)](../msbuild/target-element-msbuild.md)
+- [Métadonnées d’élément dans le traitement par lots des tâches](../msbuild/item-metadata-in-task-batching.md)

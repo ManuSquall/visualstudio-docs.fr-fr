@@ -11,34 +11,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47c9157b09773a99d66ee4fa431482b64fc7528e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b63e71a3c904c6dad21f54269e336acd4291e7a3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936500"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610162"
 ---
 # <a name="create-forwarding-loggers"></a>Créer des journaux de transfert
-Les journaux de transfert améliorent l’efficacité de la journalisation en vous permettant de choisir les événements que vous voulez suivre quand vous générez des projets sur un système multiprocesseur. En activant les journaux de transfert, vous pouvez empêcher des événements indésirables de submerger le journal central, de ralentir la génération et d’encombrer votre journal.  
-  
- Pour créer un journal de transfert, vous pouvez implémenter l’interface <xref:Microsoft.Build.Framework.IForwardingLogger>, puis implémenter ses méthodes manuellement ou utiliser la classe <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> et ses méthodes préconfigurées. (L’utilisation de cette classe est suffisante pour la plupart des applications.)  
-  
-## <a name="register-events-and-respond-to-them"></a>Inscrire les événements et y répondre  
- Un journal de transfert rassemble des informations sur les événements de génération tels qu’ils sont signalés par le moteur de génération secondaire, qui est un processus de travail créé par le processus de génération principal lors d’une génération sur un système multiprocesseur. Le journal de transfert sélectionne ensuite les événements à transférer au journal central, en fonction des instructions qui vous lui avez données.  
-  
- Vous devez inscrire les journaux de transfert pour gérer les événements que vous voulez suivre. Pour s’inscrire à des événements, les journaux doivent remplacer la méthode <xref:Microsoft.Build.Utilities.Logger.Initialize%2A>. Cette méthode inclut maintenant un paramètre facultatif, `nodecount`, qui peut être défini sur le nombre de processeurs dans le système. (Par défaut, la valeur est 1.)  
-  
- <xref:Microsoft.Build.Framework.IEventSource.TargetStarted>, <xref:Microsoft.Build.Framework.IEventSource.ProjectStarted> et <xref:Microsoft.Build.Framework.IEventSource.ProjectFinished> sont des exemples d’événements que vous pouvez suivre.  
-  
- Dans un environnement multiprocesseur, les messages d’événement peuvent arriver dans le désordre. Vous devez donc évaluer les événements en utilisant le gestionnaire d’événements dans le journal de transfert et le programmer de façon à déterminer quels événements passer au redirecteur pour les transférer au journal central. Pour cela, vous pouvez utiliser la classe <xref:Microsoft.Build.Framework.BuildEventContext> qui est attachée à chaque message, pour identifier les événements que vous voulez transférer, puis passer les noms des événements à la classe <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> (ou à une de ses sous-classes). Quand vous utilisez cette méthode, aucun autre code spécifique n’est nécessaire pour transférer des événements.  
-  
-## <a name="specify-a-forwarding-logger"></a>Spécifier un journal de transfert  
- Une fois que le journal de transfert a été compilé en assembly, vous devez indiquer à [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] qu’il faut l’utiliser lors des générations. Pour cela, utilisez les commutateurs `-FileLogger`, `-FileLoggerParameters` et `-DistributedFileLogger` avec *MSBuild.exe*. Le commutateur `-FileLogger` indique à *MSBuild.exe* que le journal est directement attaché. Le commutateur `-DistributedFileLogger` signifie qu’il existe un fichier journal par nœud. Pour définir des paramètres sur le journal de transfert, utilisez le commutateur `-FileLoggerParameters`. Pour plus d’informations sur ces commutateurs et sur d’autres commutateurs de *MSBuild.exe*, consultez [Informations de référence sur la ligne de commande](../msbuild/msbuild-command-line-reference.md).  
-  
-## <a name="multi-processor-aware-loggers"></a>Enregistreurs d’événements prenant en charge plusieurs processeurs  
- Quand vous générez un projet sur un système multiprocesseur, les messages de génération provenant de chaque processeur ne sont pas automatiquement entrelacés dans une séquence unifiée. Vous devez donc établir une priorité de regroupement des messages avec la classe <xref:Microsoft.Build.Framework.BuildEventContext> qui est attachée à chaque message. Pour plus d’informations sur la génération multiprocesseur, consultez [Journalisation dans un environnement multiprocesseur](../msbuild/logging-in-a-multi-processor-environment.md).  
-  
-## <a name="see-also"></a>Voir aussi  
- [Obtenir des journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md)   
- [Enregistreurs d’événements de génération](../msbuild/build-loggers.md)   
- [Journalisation dans un environnement multiprocesseur](../msbuild/logging-in-a-multi-processor-environment.md)
+Les journaux de transfert améliorent l’efficacité de la journalisation en vous permettant de choisir les événements que vous voulez suivre quand vous générez des projets sur un système multiprocesseur. En activant les journaux de transfert, vous pouvez empêcher des événements indésirables de submerger le journal central, de ralentir la génération et d’encombrer votre journal.
+
+ Pour créer un journal de transfert, vous pouvez implémenter l’interface <xref:Microsoft.Build.Framework.IForwardingLogger>, puis implémenter ses méthodes manuellement ou utiliser la classe <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> et ses méthodes préconfigurées. (L’utilisation de cette classe est suffisante pour la plupart des applications.)
+
+## <a name="register-events-and-respond-to-them"></a>Inscrire les événements et y répondre
+ Un journal de transfert rassemble des informations sur les événements de génération tels qu’ils sont signalés par le moteur de génération secondaire, qui est un processus de travail créé par le processus de génération principal lors d’une génération sur un système multiprocesseur. Le journal de transfert sélectionne ensuite les événements à transférer au journal central, en fonction des instructions qui vous lui avez données.
+
+ Vous devez inscrire les journaux de transfert pour gérer les événements que vous voulez suivre. Pour s’inscrire à des événements, les journaux doivent remplacer la méthode <xref:Microsoft.Build.Utilities.Logger.Initialize%2A>. Cette méthode inclut maintenant un paramètre facultatif, `nodecount`, qui peut être défini sur le nombre de processeurs dans le système. (Par défaut, la valeur est 1.)
+
+ <xref:Microsoft.Build.Framework.IEventSource.TargetStarted>, <xref:Microsoft.Build.Framework.IEventSource.ProjectStarted> et <xref:Microsoft.Build.Framework.IEventSource.ProjectFinished> sont des exemples d’événements que vous pouvez suivre.
+
+ Dans un environnement multiprocesseur, les messages d’événement peuvent arriver dans le désordre. Vous devez donc évaluer les événements en utilisant le gestionnaire d’événements dans le journal de transfert et le programmer de façon à déterminer quels événements passer au redirecteur pour les transférer au journal central. Pour cela, vous pouvez utiliser la classe <xref:Microsoft.Build.Framework.BuildEventContext> qui est attachée à chaque message, pour identifier les événements que vous voulez transférer, puis passer les noms des événements à la classe <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> (ou à une de ses sous-classes). Quand vous utilisez cette méthode, aucun autre code spécifique n’est nécessaire pour transférer des événements.
+
+## <a name="specify-a-forwarding-logger"></a>Spécifier un journal de transfert
+ Une fois que le journal de transfert a été compilé en assembly, vous devez indiquer à [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] qu’il faut l’utiliser lors des générations. Pour cela, utilisez les commutateurs `-FileLogger`, `-FileLoggerParameters` et `-DistributedFileLogger` avec *MSBuild.exe*. Le commutateur `-FileLogger` indique à *MSBuild.exe* que le journal est directement attaché. Le commutateur `-DistributedFileLogger` signifie qu’il existe un fichier journal par nœud. Pour définir des paramètres sur le journal de transfert, utilisez le commutateur `-FileLoggerParameters`. Pour plus d’informations sur ces commutateurs et sur d’autres commutateurs de *MSBuild.exe*, consultez [Informations de référence sur la ligne de commande](../msbuild/msbuild-command-line-reference.md).
+
+## <a name="multi-processor-aware-loggers"></a>Enregistreurs d’événements prenant en charge plusieurs processeurs
+ Quand vous générez un projet sur un système multiprocesseur, les messages de génération provenant de chaque processeur ne sont pas automatiquement entrelacés dans une séquence unifiée. Vous devez donc établir une priorité de regroupement des messages avec la classe <xref:Microsoft.Build.Framework.BuildEventContext> qui est attachée à chaque message. Pour plus d’informations sur la génération multiprocesseur, consultez [Journalisation dans un environnement multiprocesseur](../msbuild/logging-in-a-multi-processor-environment.md).
+
+## <a name="see-also"></a>Voir aussi
+- [Obtenir des journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md)
+- [Enregistreurs d’événements de génération](../msbuild/build-loggers.md)
+- [Journalisation dans un environnement multiprocesseur](../msbuild/logging-in-a-multi-processor-environment.md)

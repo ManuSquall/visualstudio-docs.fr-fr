@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e8ef9aa27638c01b0b941284b6c5a0fff442c4c
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 9c5bb6bbd3d05c22b7615a027ac3fcf6aa686156
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853519"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602479"
 ---
 # <a name="build-loggers"></a>Enregistreurs d’événements de génération
 Les enregistreurs d’événements vous permettent de personnaliser la sortie de votre génération et d’afficher des messages, des erreurs ou des avertissements en réponse à des événements de génération spécifiques. Chaque enregistreur d’événements est implémenté en tant que classe .NET qui met en œuvre l’interface <xref:Microsoft.Build.Framework.ILogger>, définie dans l’assembly *Microsoft.Build.Framework.dll*.
@@ -25,8 +25,8 @@ Les enregistreurs d’événements vous permettent de personnaliser la sortie de
 Vous pouvez adopter deux approches lors de l’implémentation d’un enregistreur d’événements :
 
 - implémenter directement l’interface <xref:Microsoft.Build.Framework.ILogger> ;
-- dériver votre classe de la classe d’assistance, <xref:Microsoft.Build.Utilities.Logger>, définie dans l’assembly *Microsoft.Build.Utilities.dll*. <xref:Microsoft.Build.Utilities.Logger> implémente <xref:Microsoft.Build.Framework.ILogger> et fournit des implémentations par défaut de certains membres <xref:Microsoft.Build.Framework.ILogger>.  
-  
+- dériver votre classe de la classe d’assistance, <xref:Microsoft.Build.Utilities.Logger>, définie dans l’assembly *Microsoft.Build.Utilities.dll*. <xref:Microsoft.Build.Utilities.Logger> implémente <xref:Microsoft.Build.Framework.ILogger> et fournit des implémentations par défaut de certains membres <xref:Microsoft.Build.Framework.ILogger>.
+
   Cette rubrique explique comment écrire un enregistreur d’événements simple qui dérive de <xref:Microsoft.Build.Utilities.Logger> et affiche des messages sur la console en réponse à certains événements de build.
 
 ## <a name="register-for-events"></a>S’inscrire aux événements
@@ -76,5 +76,5 @@ L’exemple suivant montre comment implémenter un enregistreur d’événements
 [!code-csharp[msbuild_BasicLogger#1](../msbuild/codesnippet/CSharp/build-loggers_5.cs)]
 
 ## <a name="see-also"></a>Voir aussi
-[Obtenir des journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md)  
-[Concepts MSBuild](../msbuild/msbuild-concepts.md)
+- [Obtenir des journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md)
+- [Concepts MSBuild](../msbuild/msbuild-concepts.md)

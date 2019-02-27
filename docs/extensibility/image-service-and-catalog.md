@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9264d8b5129b52444cc551e3719167d04442480d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f7b58e9110cfe919d355e4952c0d76f7c47bcdc2
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679487"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844059"
 ---
 # <a name="image-service-and-catalog"></a>Catalogue et service d’images
 Ce livre de recettes contient des conseils et meilleures pratiques pour arrêter le Service d’images Visual Studio et le catalogue d’Image introduite dans Visual Studio 2015.
@@ -651,7 +651,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3.  Mettre à jour votre code pour utiliser le service d’images pour demander des monikers via le mappage mis à jour. (Cela peut signifier la mise à jour vers **CrispImages** pour code managé, ou demandant HBITMAP ou éléments HICON le service de l’image et en les passant autour du code natif.)
 
 ## <a name="testing-your-images"></a>Test de vos images
- Vous pouvez utiliser l’outil Visionneuse de bibliothèque d’images pour tester vos manifestes de l’image pour vous assurer que tout est correctement créé. Vous pouvez trouver l’outil dans le [SDK Visual Studio 2015](visual-studio-sdk.md). Vous pouvez trouver la documentation de cet outil et d’autres [ici](http://aka.ms/VSImageThemeTools).
+ Vous pouvez utiliser l’outil Visionneuse de bibliothèque d’images pour tester vos manifestes de l’image pour vous assurer que tout est correctement créé. Vous pouvez trouver l’outil dans le [SDK Visual Studio 2015](visual-studio-sdk.md). Vous pouvez trouver la documentation de cet outil et d’autres [ici](https://aka.ms/VSImageThemeTools).
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 

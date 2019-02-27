@@ -1,5 +1,5 @@
 ---
-title: Publier sur Azure App Service - Visual Studio pour Mac
+title: Publier sur Azure App Service
 ms.date: 01/17/2019
 ms.topic: quickstart
 helpviewer_keywords:
@@ -8,16 +8,16 @@ ms.assetid: 8524a4c5-97a9-41ac-a2a0-034efb9bfc57
 author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
-ms.prod: visual-studio-mac-dev15
+ms.prod: visual-studio-mac
 ms.custom: video
 ms.workload:
 - azure
-ms.openlocfilehash: ebf7f9bcc924326f1abad81dacb38cdc7256d17c
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 8cc0678dbb3e55d80f51e457f141c7f2dc5a12d9
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853925"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844267"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Publier une application web sur Azure App Service à l’aide de Visual Studio pour Mac
 
@@ -45,7 +45,7 @@ Vous pouvez utiliser l’outil Publier pour publier des applications ASP.NET Cor
 
     ![Boîte de dialogue Publier sur Azure App Service](media/publish-to-app-service-dialog.png)
 
- 5. Pour créer un service d’application, cliquez sur le bouton **Nouveau**. 
+ 5. Pour créer un service d’application, cliquez sur le bouton **Nouveau**.
 
     ![Boîte de dialogue de publication sur App Service](media/publish-to-app-service-dialog-new-selected.png)
 

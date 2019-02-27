@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 4ac8eef753f656e008187a23a9d9e40a0be19f16
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 90b9111d8d8ae78e5b937942df32fb84c97355fa
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853597"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602271"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler (tâche)
 La tâche `AspNetCompiler` inclut dans un wrapper *aspnet_compiler.exe*, un utilitaire permettant de précompiler des applications [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
@@ -48,7 +48,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche `AspNetCompiler` .
 |`Updateable`|Paramètre `Boolean` facultatif.<br /><br /> Si ce paramètre a la valeur `true`, l’application précompilée peut être mise à jour.  La valeur par défaut est `false`. Ce paramètre correspond au commutateur **-u** dans *aspnet_compiler.exe*.|
 |`VirtualPath`|Paramètre `String` facultatif.<br /><br /> Chemin virtuel de l’application à compiler. Si `PhysicalPath` est spécifié, le chemin physique est utilisé pour localiser l’application. Sinon, la métabase IIS est utilisée et l’application se trouve théoriquement dans le site par défaut. Ce paramètre correspond au commutateur **-v** dans *aspnet_compiler.exe*.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.ToolTask>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
 
 ## <a name="example"></a>Exemple
@@ -69,5 +69,5 @@ L’exemple de code suivant utilise la tâche `AspNetCompiler` pour précompiler
 ```
 
 ## <a name="see-also"></a>Voir aussi
-* [Tâches](../msbuild/msbuild-tasks.md)  
+* [Tâches](../msbuild/msbuild-tasks.md)
 * [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

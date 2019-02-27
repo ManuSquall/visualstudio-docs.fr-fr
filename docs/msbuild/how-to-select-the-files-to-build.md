@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54cd1e9855bbc09a0045cd50ac26c1aef38bac2c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9942c680f93614a84da3502de4b3a26a08576fb7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942806"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610539"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Procédure : Sélectionner des fichiers dans une build
 Quand vous générez un projet contenant plusieurs fichiers, vous pouvez lister chaque fichier un à un dans le fichier projet ou utiliser des caractères génériques pour inclure tous les fichiers d’un répertoire ou d’un ensemble imbriqué de répertoires.
@@ -29,25 +29,25 @@ Pour inclure des fichiers d’une build, vous devez les ajouter à une liste d�
 
 #### <a name="to-declare-items-individually"></a>Pour déclarer des éléments un à un
 
-- Utilisez les attributs `Include` de la façon suivante :  
-  
-    `<CSFile Include="form1.cs"/>`  
-  
-    ou  
-  
-    `<VBFile Include="form1.vb"/>`  
-  
+- Utilisez les attributs `Include` de la façon suivante :
+
+    `<CSFile Include="form1.cs"/>`
+
+    ou
+
+    `<VBFile Include="form1.vb"/>`
+
     > [!NOTE]
     > Si les éléments d’une collection d’éléments ne sont pas dans le même répertoire que le fichier projet, vous devez spécifier le chemin complet ou relatif de l’élément. Par exemple : `Include="..\..\form2.cs"`.
 
 #### <a name="to-declare-multiple-items"></a>Pour déclarer plusieurs éléments
 
--   Utilisez les attributs `Include` de la façon suivante :  
-  
-    `<CSFile Include="form1.cs;form2.cs"/>`  
-  
-    ou  
-  
+-   Utilisez les attributs `Include` de la façon suivante :
+
+    `<CSFile Include="form1.cs;form2.cs"/>`
+
+    ou
+
     `<VBFile Include="form1.vb;form2.vb"/>`
 
 ## <a name="specify-inputs-with-wildcards"></a>Spécifier les entrées avec des caractères génériques
@@ -63,24 +63,24 @@ Les exemples suivants s’appuient sur un projet qui contient des fichiers graph
 
 #### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>Pour inclure tous les fichiers *.jpg* dans le répertoire *Images* et ses sous-répertoires
 
-- Utilisez l’attribut `Include` suivant :  
-  
+- Utilisez l’attribut `Include` suivant :
+
     `Include="Images\**\*.jpg"`
 
 #### <a name="to-include-all-jpg-files-starting-with-img"></a>Pour inclure tous les fichiers *.jpg* commençant par *img*
 
-- Utilisez l’attribut `Include` suivant :  
-  
+- Utilisez l’attribut `Include` suivant :
+
     `Include="Images\**\img*.jpg"`
 
 #### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>Pour inclure tous les fichiers figurant dans des répertoires dont les noms se terminent par *jpgs*
 
-- Utilisez l’un des attributs `Include` suivants :  
-  
-    `Include="Images\**\*jpgs\*.*"`  
-  
-    ou  
-  
+- Utilisez l’un des attributs `Include` suivants :
+
+    `Include="Images\**\*jpgs\*.*"`
+
+    ou
+
     `Include="Images\**\*jpgs\*"`
 
 ## <a name="pass-items-to-a-task"></a>Passer des éléments à une tâche
@@ -88,17 +88,17 @@ Dans un fichier projet, vous pouvez utiliser la notation @() dans les tâches p
 
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>Pour utiliser tous les fichiers Visual C# ou Visual Basic comme entrées
 
-- Utilisez les attributs `Include` de la façon suivante :  
-  
-    `<CSC Sources="@(CSFile)">...</CSC>`  
-  
-    ou  
-  
+- Utilisez les attributs `Include` de la façon suivante :
+
+    `<CSC Sources="@(CSFile)">...</CSC>`
+
+    ou
+
     `<VBC Sources="@(VBFile)">...</VBC>`
 
 > [!NOTE]
 >  Vous devez utiliser des caractères génériques avec des éléments pour spécifier les entrées d’une build ; vous ne pouvez pas spécifier les entrées à l’aide de l’attribut `Sources` dans les tâches [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], telles que [Csc](../msbuild/csc-task.md) ou [Vbc](../msbuild/vbc-task.md). L’exemple suivant n’est pas valide dans un fichier projet :
-> 
+>
 > `<CSC Sources="*.cs">...</CSC>`
 
 ## <a name="example"></a>Exemple
@@ -170,5 +170,5 @@ L’exemple de code suivant utilise un caractère générique pour inclure tous 
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[Guide pratique pour exclure des fichiers de la build](../msbuild/how-to-exclude-files-from-the-build.md)  
-[Éléments](../msbuild/msbuild-items.md)
+- [Guide pratique pour exclure des fichiers de la build](../msbuild/how-to-exclude-files-from-the-build.md)
+- [Éléments](../msbuild/msbuild-items.md)

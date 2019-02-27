@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e0c1ed6e2fdd461b0fdf502c01089aeafd9a87cb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7810889d4af411477573c71aa694d797a90763f3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54925628"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720599"
 ---
 # <a name="graphics-api-and-memory-statistics"></a>API des graphiques et des statistiques de la mémoire
 <!-- VERSIONLESS --> Visual Studio 2017 et supérieur prennent en charge les outils graphiques statistiques d’API et les statistiques de la mémoire.  Ces deux outils vous permettent d’afficher des divers éléments d’informations sur l’utilisation de l’API de Direct3D, ainsi que la consommation de mémoire GPU de diverses ressources.
@@ -39,7 +39,7 @@ Le **Allocation GPU** colonne affiche la quantité de mémoire utilisée par l�
 
 Comme avec l’outil de statistiques d’API, vous pouvez avec le bouton droit dans la fenêtre pour copier toutes les données en tant que fichier CSV, ce qui peut être collé dans quelque chose comme Excel pour une analyse plus approfondie.
 
-## <a name="see-also"></a>Voir aussi  
-[Graphics Diagnostics (débogage DirectX Graphics)](visual-studio-graphics-diagnostics.md)   
-[Historique des ressources](graphics-event-list.md#resource-history)
+## <a name="see-also"></a>Voir aussi
+- [Graphics Diagnostics (débogage DirectX Graphics)](visual-studio-graphics-diagnostics.md)
+- [Historique des ressources](graphics-event-list.md#resource-history)
 <!-- /VERSIONLESS -->

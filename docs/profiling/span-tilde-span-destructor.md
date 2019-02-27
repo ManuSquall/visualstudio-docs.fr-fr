@@ -12,26 +12,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed97dc5da89f8de17ef002aabc82bb631ec51b4d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0b019081e2f81a803b745bda0991c655ef84d11c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023130"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56606353"
 ---
 # <a name="spanspan-destructor"></a>span::~span, destructeur
-Détruit l’objet `span` et libère ses ressources.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-~span();  
-```  
-  
-## <a name="requirements"></a>Spécifications  
- **En-tête :** *cvmarkersobj.h*  
-  
+Détruit l’objet `span` et libère ses ressources.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+~span();
+```
+
+## <a name="requirements"></a>Spécifications
+ **En-tête :** *cvmarkersobj.h*
+
  **Espace de noms :** Concurrency::diagnostic
- 
+
  ## <a name="see-also"></a>Voir aussi
- [span, classe](../profiling/span-class.md)
+- [span, classe](../profiling/span-class.md)

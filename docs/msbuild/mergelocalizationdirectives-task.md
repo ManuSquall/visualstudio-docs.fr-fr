@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cb537f045f3ed2409dfcf0def2826057fd55687
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5814ea188de7d3c5b7aba78ab1b239d1e9fe29e1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927739"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627218"
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives, tâche
 La tâche <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> fusionne les attributs de localisation et les commentaires d’un ou plusieurs fichiers binaires [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] en un seul fichier pour l’assembly entier.
@@ -35,7 +35,7 @@ La tâche <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> fusio
 | `GeneratedLocalizationFiles` | Paramètre **ITaskItem[]** obligatoire.<br /><br /> Spécifie la liste des fichiers de directives de localisation pour des fichiers spécifiques au format binaire [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]. |
 | `OutputFile` | Paramètre de sortie **String** obligatoire.<br /><br /> Spécifie le chemin de sortie de l’assembly de directives de localisation compilé. |
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Vous pouvez ajouter des commentaires et des attributs de localisation au contenu [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)]. Avec la prise en charge de la localisation [!INCLUDE[TLA#tla_wpf](../msbuild/includes/tlasharptla_wpf_md.md)], vous pouvez retirer des commentaires et des attributs de localisation, et les placer dans un fichier *.loc* distinct de l’assembly généré. Vous pouvez pour cela utiliser l’attribut **LocalizationPropertyStorage**. Pour plus d’informations sur les commentaires et attributs de localisation, et sur **LocalizationPropertyStorage**, consultez [Attributs et commentaires de localisation](/dotnet/framework/wpf/advanced/localization-attributes-and-comments).
 
 ## <a name="example"></a>Exemple
@@ -55,8 +55,8 @@ L’exemple suivant fusionne les commentaires de localisation de plusieurs fichi
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[Informations de référence sur MSBuild WPF](../msbuild/wpf-msbuild-reference.md)  
-[Informations de référence sur les tâches MSBuild WPF](../msbuild/wpf-msbuild-task-reference.md)  
-[Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)  
-[Informations de référence sur les tâches MSBuild](../msbuild/msbuild-task-reference.md)  
-[Générer une application WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  
+- [Informations de référence sur MSBuild WPF](../msbuild/wpf-msbuild-reference.md)
+- [Informations de référence sur les tâches MSBuild WPF](../msbuild/wpf-msbuild-task-reference.md)
+- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
+- [Informations de référence sur les tâches MSBuild](../msbuild/msbuild-task-reference.md)
+- [Générer une application WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

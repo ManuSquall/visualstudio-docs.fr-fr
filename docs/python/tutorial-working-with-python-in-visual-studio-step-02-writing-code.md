@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 427aa1e0821d38488b626656a06e8952c381053e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 13590ffaed624a8704d74d738dab35da28b5443b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918102"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843089"
 ---
 # <a name="step-2-write-and-run-code"></a>Étape 2 : Écrire et exécuter du code
 
@@ -53,7 +53,7 @@ Bien que l’**Explorateur de solutions** soit l’emplacement où vous gérez l
 
     ![Sortie pour la première exécution du programme](media/vs-getting-started-python-07-output.png)
 
-1. En plus des instructions et des fonctions, IntelliSense fournit aussi la saisie semi-automatique pour les instructions Python `import` et `from`. Ces saisies semi-automatiques vous permettent de découvrir facilement les modules qui sont disponibles dans votre environnement, ainsi que les membres de ces modules. Dans l’éditeur, supprimez la ligne `print` et commencez à taper `import `. Une liste des modules apparaît quand vous tapez l’espace :
+1. En plus des instructions et des fonctions, IntelliSense fournit aussi la saisie semi-automatique pour les instructions Python `import` et `from`. Ces saisies semi-automatiques vous permettent de découvrir facilement les modules qui sont disponibles dans votre environnement, ainsi que les membres de ces modules. Dans l’éditeur, supprimez la ligne `print` et commencez à taper `import`. Une liste des modules apparaît quand vous tapez l’espace :
 
     ![Affichage des modules disponibles pour une instruction import dans IntelliSense](media/vs-getting-started-python-08-import1.png)
 
