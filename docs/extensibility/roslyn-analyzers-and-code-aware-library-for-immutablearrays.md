@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d6b603a59ad27052ab8eb9bbb88942584aa5293
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 753201d8f09b93186cac279d20dee2c7f3e1534d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000898"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843310"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analyseurs de Roslyn et bibliothèque de code pour ImmutableArrays
 
@@ -25,7 +25,7 @@ Vous avez besoin de ce qui suit pour générer cet exemple :
 
 * Visual Studio 2015 (pas une édition Express) ou une version ultérieure. Vous pouvez utiliser la version gratuite [Visual Studio Community Edition](https://visualstudio.microsoft.com/vs/community/)
 * [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Vous pouvez également, lors de l’installation de Visual Studio, vérifier **outils d’extensibilité Visual Studio** sous **outils courants** pour installer le Kit de développement en même temps. Si vous avez déjà installé Visual Studio, vous pouvez également installer ce SDK en accédant au menu principal **fichier** > **New** > **projet**, en choisissant **c#** dans le volet de navigation gauche, puis en sélectionnant **extensibilité**. Lorsque vous choisissez le «**installer les outils d’extensibilité de Visual Studio**« modèle de projet de fil d’Ariane, vous êtes invité à télécharger et installer le Kit de développement.
-* [.NET compiler Platform (« Roslyn ») SDK](http://aka.ms/roslynsdktemplates). Vous pouvez également installer ce SDK en accédant au menu principal **fichier** > **New** > **projet**, en choisissant l’option **c#** dans le volet de navigation gauche, puis en sélectionnant **extensibilité**. Lorsque vous choisissez «**télécharger le SDK .NET Compiler Platform**« modèle de projet de fil d’Ariane, vous êtes invité à télécharger et installer le Kit de développement. Ce SDK inclut le [Roslyn Syntax Visualizer](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer). Ce vous permet d’utile déterminer quels types de modèle de code vous recherchez dans votre analyseur. Les appels d’infrastructure analyseur dans votre code pour les types de modèle de code spécifique, afin que votre code s’exécute lorsque cela est nécessaire uniquement et pouvez vous concentrer uniquement sur l’analyse de code approprié.
+* [.NET compiler Platform (« Roslyn ») SDK](https://aka.ms/roslynsdktemplates). Vous pouvez également installer ce SDK en accédant au menu principal **fichier** > **New** > **projet**, en choisissant l’option **c#** dans le volet de navigation gauche, puis en sélectionnant **extensibilité**. Lorsque vous choisissez «**télécharger le SDK .NET Compiler Platform**« modèle de projet de fil d’Ariane, vous êtes invité à télécharger et installer le Kit de développement. Ce SDK inclut le [Roslyn Syntax Visualizer](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer). Ce vous permet d’utile déterminer quels types de modèle de code vous recherchez dans votre analyseur. Les appels d’infrastructure analyseur dans votre code pour les types de modèle de code spécifique, afin que votre code s’exécute lorsque cela est nécessaire uniquement et pouvez vous concentrer uniquement sur l’analyse de code approprié.
 
 ## <a name="whats-the-problem"></a>Quel est le problème ?
 
