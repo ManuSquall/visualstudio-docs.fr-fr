@@ -10,32 +10,34 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fe1bc52f9367289d4b04e73cf2d1fffab4ee8de
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f62318da0fc60a0fa9200d8ec11bdc4bb567ad86
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707482"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954385"
 ---
 # <a name="manage-side-by-side-file-associations"></a>Gérer les associations de fichiers de côte à côte
+
 Si votre VSPackage fournit des associations de fichiers, vous devez décider comment gérer les installations côte à côte dans lequel une version particulière de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] doit être appelé pour ouvrir un fichier. Formats de fichier incompatibles composée le problème.
 
- Les utilisateurs attendent une nouvelle version d’un produit pour être compatible avec les versions antérieures, afin que les fichiers existants peuvent être chargées dans une nouvelle version sans perte de données. Dans l’idéal, votre VSPackage peut charger et enregistrer les formats de fichier des versions antérieures. Si tel n’est pas vrai, vous pouvez proposer mettre à niveau le format de fichier vers la nouvelle version de votre VSPackage. L’inconvénient de cette approche est que le fichier mis à niveau ne peut pas être ouvert dans une version antérieure.
+Les utilisateurs attendent une nouvelle version d’un produit pour être compatible avec les versions antérieures, afin que les fichiers existants peuvent être chargées dans une nouvelle version sans perte de données. Dans l’idéal, votre VSPackage peut charger et enregistrer les formats de fichier des versions antérieures. Si tel n’est pas vrai, vous pouvez proposer mettre à niveau le format de fichier vers la nouvelle version de votre VSPackage. L’inconvénient de cette approche est que le fichier mis à niveau ne peut pas être ouvert dans une version antérieure.
 
- Pour éviter ce problème, vous pouvez modifier des extensions lorsque les formats de fichier sont incompatibles. Par exemple, la version 1 de votre VSPackage peut utiliser l’extension, *.mypkg10*et la version 2 peut utiliser l’extension, *.mypkg20*. Cette différence identifie le VSPackage qui ouvre un fichier particulier. Si vous ajoutez des VSPackages plus récente à la liste des programmes qui sont associés à une ancienne extension, les utilisateurs peuvent cliquez sur le fichier et ouvrez-la dans un VSPackage plus récente. À ce stade, votre VSPackage peut offrir à mettre à niveau le fichier vers le nouveau format ou ouvrez le fichier et maintenir la compatibilité avec les versions antérieures du VSPackage.
+Pour éviter ce problème, vous pouvez modifier des extensions lorsque les formats de fichier sont incompatibles. Par exemple, la version 1 de votre VSPackage peut utiliser l’extension, *.mypkg10*et la version 2 peut utiliser l’extension, *.mypkg20*. Cette différence identifie le VSPackage qui ouvre un fichier particulier. Si vous ajoutez des VSPackages plus récente à la liste des programmes qui sont associés à une ancienne extension, les utilisateurs peuvent cliquez sur le fichier et ouvrez-la dans un VSPackage plus récente. À ce stade, votre VSPackage peut offrir à mettre à niveau le fichier vers le nouveau format ou ouvrez le fichier et maintenir la compatibilité avec les versions antérieures du VSPackage.
 
 > [!NOTE]
->  Vous pouvez combiner ces approches. Par exemple, vous pouvez offrir une compatibilité descendante en chargeant un fichier plus ancien et offre mettre à niveau le format de fichier lorsque l’utilisateur enregistre.
+> Vous pouvez combiner ces approches. Par exemple, vous pouvez offrir une compatibilité descendante en chargeant un fichier plus ancien et offre mettre à niveau le format de fichier lorsque l’utilisateur enregistre.
 
 ## <a name="face-the-problem"></a>Confronté au problème
- Si vous souhaitez que plusieurs VSPackages côte à côte pour utiliser la même extension, vous devez choisir la version de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] qui est associé à l’extension. Voici deux alternatives :
+
+Si vous souhaitez que plusieurs VSPackages côte à côte pour utiliser la même extension, vous devez choisir la version de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] qui est associé à l’extension. Voici deux alternatives :
 
 - Ouvrez le fichier dans la dernière version de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] installé sur l’ordinateur d’un utilisateur.
 
    Dans cette approche, votre programme d’installation est chargé de déterminer la dernière version de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] et y compris celui de l’entrée de Registre écrite pour l’association de fichiers. Dans un package de programme d’installation de Windows, vous pouvez inclure des actions personnalisées pour définir une propriété qui indique la dernière version de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
   > [!NOTE]
-  >  Dans ce contexte, « dernier » signifie « version la plus récente. » Ces entrées du programme d’installation ne détecte pas automatiquement une version ultérieure de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Entrées dans [requise de détection](../extensibility/internals/detecting-system-requirements.md) et dans [commandes que doit être exécuté après l’Installation](../extensibility/internals/commands-that-must-be-run-after-installation.md) sont similaires à ceux présentés ici et sont requises pour prendre en charge des versions supplémentaires de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+  > Dans ce contexte, « dernier » signifie « version la plus récente. » Ces entrées du programme d’installation ne détecte pas automatiquement une version ultérieure de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Entrées dans [requise de détection](../extensibility/internals/detecting-system-requirements.md) et dans [commandes que doit être exécuté après l’Installation](../extensibility/internals/commands-that-must-be-run-after-installation.md) sont similaires à ceux présentés ici et sont requises pour prendre en charge des versions supplémentaires de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
    Les lignes suivantes dans la table CustomAction définir la propriété DEVENV_EXE_LATEST soit une propriété définie par le AppSearch et RegLocator tables présentées dans [commandes qui doivent être exécutées après l’installation](../extensibility/internals/commands-that-must-be-run-after-installation.md). Lignes de la table InstallExecuteSequence planifier les actions personnalisées au début de la séquence d’exécution. Valeurs de la marque de colonne Condition la logique de travail :
 
@@ -47,7 +49,7 @@ Si votre VSPackage fournit des associations de fichiers, vous devez décider com
 
     Le résultat net est que DEVENV_EXE_LATEST contient le chemin d’accès de la dernière version de devenv.exe.
 
-  ### <a name="customaction-table-rows-that-determine-the-latest-version-of-visual-studio"></a>Lignes de la table CustomAction qui déterminent la dernière version de Visual Studio
+  **Lignes de la table CustomAction qui déterminent la dernière version de Visual Studio**
 
   |Action|Type|Source|une cible|
   |------------|----------|------------|------------|
@@ -55,7 +57,7 @@ Si votre VSPackage fournit des associations de fichiers, vous devez décider com
   |CA_SetDevenvLatest_2003|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2003]|
   |CA_SetDevenvLatest_2005|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2005]|
 
-  ### <a name="installexecutesequence-table-rows-that-determine-the-latest-version-of-visual-studio"></a>Lignes de la table InstallExecuteSequence qui déterminent la dernière version de Visual Studio
+  **Lignes de la table InstallExecuteSequence qui déterminent la dernière version de Visual Studio**
 
   |Action|Condition|Séquence|
   |------------|---------------|--------------|
@@ -72,16 +74,18 @@ Si votre VSPackage fournit des associations de fichiers, vous devez décider com
    Le service de lancement doit être dans un composant de programme d’installation de Windows qui est partagé avec toutes les versions de votre VSPackage. Ce processus permet de s’assurer que la version la plus récente est toujours installée et qu’il n’est pas supprimée tant que toutes les versions de votre VSPackage sont désinstallées. De cette façon, les associations de fichiers et d’autres entrées de Registre du composant Lanceur sont conservées même si une version du VSPackage est désinstallée.
 
 ## <a name="uninstall-and-file-associations"></a>Désinstaller et les associations de fichiers
- Désinstallation d’un VSPackage qui écrit des entrées de Registre pour les associations de fichiers supprime les associations de fichiers. Par conséquent, l’extension ne possède aucun programmes associés. Programme d’installation de Windows ne pas « recover » les entrées de Registre qui ont été ajoutées lors de l’installation de VSPackage. Voici quelques méthodes permettant de corriger les associations de fichiers d’un utilisateur :
 
--   Utiliser un composant Lanceur partagé comme décrit précédemment.
+Désinstallation d’un VSPackage qui écrit des entrées de Registre pour les associations de fichiers supprime les associations de fichiers. Par conséquent, l’extension ne possède aucun programmes associés. Programme d’installation de Windows ne pas « recover » les entrées de Registre qui ont été ajoutées lors de l’installation de VSPackage. Voici quelques méthodes permettant de corriger les associations de fichiers d’un utilisateur :
 
--   Demandez à l’utilisateur d’exécuter une réparation de la version du VSPackage que l’utilisateur veut être propriétaire de l’association de fichiers.
+- Utiliser un composant Lanceur partagé comme décrit précédemment.
+
+- Demandez à l’utilisateur d’exécuter une réparation de la version du VSPackage que l’utilisateur veut être propriétaire de l’association de fichiers.
 
 -   Fournir un programme exécutable qui réécrit les entrées de Registre appropriées.
 
 -   Fournir une configuration options page ou boîte de dialogue qui permet aux utilisateurs de choisir les associations de fichiers et de récupérer des associations perdues. Demandez aux utilisateurs de s’exécuter après la désinstallation.
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Inscrire des extensions de nom de fichier pour les déploiements côte à côte](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
 - [Inscrire des verbes pour les extensions de nom de fichier](../extensibility/registering-verbs-for-file-name-extensions.md)
