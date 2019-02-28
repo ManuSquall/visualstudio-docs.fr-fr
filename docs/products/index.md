@@ -2,15 +2,9 @@
 layout: HubPage
 hide_bc: true
 title: Documentation Visual Studio | Documents Microsoft
-description: Apprenez à utiliser Visual Studio 2017 pour développer des applications, des services et des outils dans le langage de votre choix pour vos plateformes et vos appareils.
+description: "Apprenez à utiliser Visual Studio\_2017 pour développer des applications, des services et des outils dans le langage de votre choix pour vos plateformes et vos appareils."
 ms.topic: landing-page
 searchScope: []
-ms.openlocfilehash: d4419aadd8be604918b6793685079053e03d4289
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821355"
 ---
 <div id="main" class="v2">
     <div class="container">
