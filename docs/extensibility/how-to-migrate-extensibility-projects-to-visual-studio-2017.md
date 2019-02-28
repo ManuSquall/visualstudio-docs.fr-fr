@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32d212b7deee3244847b3ae5f04c64d29621564f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: bc1964fdb3860702818454ee4e918cc93c0156c3
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681840"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954251"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Procédure : Migrer des projets d’extensibilité vers Visual Studio 2017
 
@@ -162,9 +162,9 @@ Lorsque vous recherchez vos dépendances, vous trouverez qu’une dépendance pe
 
 Pour donner davantage d’instructions, nous avons identifié quelques types d’extension courants et leurs connaissances préalables requises :
 
-Type d’extension | Nom complet | Id
+Type d’extension | Display Name | Id
 --- | --- | ---
-Éditeur | Éditeur de base de Visual Studio  | Microsoft.VisualStudio.Component.CoreEditor
+Éditeur | Éditeur de base de Visual Studio | Microsoft.VisualStudio.Component.CoreEditor
 Roslyn | C# et Visual Basic | Microsoft.VisualStudio.Component.Roslyn.LanguageServices
 WPF | Managed Desktop Workload Core | Microsoft.VisualStudio.Component.ManagedDesktop.Core
 Débogueur | Débogueur juste-à-temps | Microsoft.VisualStudio.Component.Debugger.JustInTime

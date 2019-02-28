@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a47a076336a9e8f97bae9fdde79a7d8b3b525963
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: d7590350fdcfb74f90cd4441e97503a60b298c66
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318795"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954278"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Ajouter une extension du protocole de serveur de langage
 
@@ -129,7 +129,7 @@ Le partenaire LSP n’inclut pas de spécification sur la façon de fournir la c
 
 4. Créer un *.pkgdef* fichier, puis ajoutez une ligne semblable à ceci :
 
-    ```xml
+    ```
     [$RootKey$\TextMate\Repositories]
     "MyLang"="$PackageFolder$\Grammars"
     ```
@@ -313,13 +313,13 @@ Suivez ces étapes ci-dessous pour ajouter la prise en charge des paramètres à
 
 4. Ajoutez un fichier .pkgdef au projet (ajouter le nouveau fichier texte et attribuez l’extension au fichier .pkgdef). Le fichier pkgdef doit contenir ces informations :
 
-    ```xml
+    ```
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\[settings-name]]
     @="$PackageFolder$\[settings-file-name].json"
     ```
 
     Aperçu :
-    ```xml
+    ```
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\MockLanguageExtension]
     @="$PackageFolder$\MockLanguageExtensionSettings.json"
     ```
@@ -345,8 +345,10 @@ Suivez ces étapes ci-dessous pour ajouter la prise en charge des paramètres à
         "foo.maxNumberOfProblems": 10
     }
     ```
-    ### <a name="enabling-diagnostics-tracing"></a>L’activation du suivi de diagnostic
-    Traçage de diagnostic peut être activé pour tous les messages entre le client et le serveur, qui peut être utile lors du débogage des problèmes de sortie. Pour activer le suivi de diagnostic, procédez comme suit :
+
+### <a name="enabling-diagnostics-tracing"></a>L’activation du suivi de diagnostic
+
+Traçage de diagnostic peut être activé pour tous les messages entre le client et le serveur, qui peut être utile lors du débogage des problèmes de sortie. Pour activer le suivi de diagnostic, procédez comme suit :
 
 4. Ouvrez ou créez le fichier de paramètres d’espace de travail *VSWorkspaceSettings.json* (voir « Utilisateur modification de paramètres pour un espace de travail »).
 5. Ajoutez la ligne suivante du fichier de paramètres json :

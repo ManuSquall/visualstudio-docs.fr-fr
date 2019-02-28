@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: 40d5e730bef85fe047923cd85aaa7ee3fa8f5d49
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cb345d756e748703f407b0601a4ac321452af6a6
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722276"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954427"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Référence de valeur de couleur pour Visual Studio
 
@@ -553,7 +553,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 | Clair | Sombre | Bleu | Utilisé pour... |
 | :---: | :---: | :---: | --- |
-| ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5`   | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FF2D2D30`   | ![Nuance de #FFFDF4BF](../../extensibility/ux-guidelines/media/FDF4BF.png "#FFFDF4BF échantillon")<br />`#FFFDF4BF` | Boutons d’action, les éléments de zone de liste déroulante, les boutons de barre de commandes, les boutons de liste déroulante et éléments de menu : arrière-plan |
+| ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5` | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FF2D2D30` | ![Nuance de #FFFDF4BF](../../extensibility/ux-guidelines/media/FDF4BF.png "#FFFDF4BF échantillon")<br />`#FFFDF4BF` | Boutons d’action, les éléments de zone de liste déroulante, les boutons de barre de commandes, les boutons de liste déroulante et éléments de menu : arrière-plan |
 | ![Nuance #FFCCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "nuance #FFCCCEDB")<br />`#FFCCCEDB` | ![#FF3F3F46 swatch](../../extensibility/ux-guidelines/media/3F3F46.png "#FF3F3F46 swatch")<br />`#FF3F3F46` | ![Nuance de #FF465A7D](../../extensibility/ux-guidelines/media/465A7D.png "#FF465A7D échantillon")<br />`#FF465A7D` | Bordure d’onglet de masquage automatique |
 | ![Nuance de #FFEEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 échantillon")<br />`#FFEEEEF2` | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FF2D2D30` | ![#FF293955 swatch](../../extensibility/ux-guidelines/media/293955.png "#FF293955 swatch")<br />`#FF293955` | Onglet par défaut et pointage des arrière-plans de masquage automatique |
 | ![Nuance de #FF444444](../../extensibility/ux-guidelines/media/444444.png "#FF444444 échantillon")<br />`#FF444444` | ![Nuance de #FFD0D0D0](../../extensibility/ux-guidelines/media/D0D0D0.png "#FFD0D0D0 échantillon")<br />`#FFD0D0D0` | ![Nuance #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "nuance #FFFFFFFF")<br />`#FFFFFFFF` | Texte de masquer l’onglet texte de barre de titre de fenêtre outil inactif et onglet fenêtre Outil texte |
@@ -570,7 +570,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 | ![Nuance de #FF007ACC](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC échantillon")<br />`#FF007ACC` | ![Nuance de #FF007ACC](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC échantillon")<br />`#FF007ACC` | ![Nuance de #FF1B293E](../../extensibility/ux-guidelines/media/1B293E.png "#FF1B293E échantillon")<br />`#FF1B293E` | Options de barre de commandes : placez le curseur glyphe |
 | ![Nuance #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "nuance #FFFFFFFF")<br />`#FFFFFFFF` | ![Nuance #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "nuance #FFFFFFFF")<br />`#FFFFFFFF` | ![Nuance de #FF1B293E](../../extensibility/ux-guidelines/media/1B293E.png "#FF1B293E échantillon")<br />`#FF1B293E` | Options de barre de commandes : la souris vers le bas de glyphe |
 | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![Nuance de #FF1B293E](../../extensibility/ux-guidelines/media/1B293E.png "#FF1B293E échantillon")<br />`#FF1B293E` | Texte de barre de commande et texte de l’élément menu liste déroulante zone déroulante |
-| ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF000000   swatch](../../extensibility/ux-guidelines/media/000000.png "#FF000000 swatch")<br />`#FF000000` | Barre de commandes : placez le curseur, la souris vers le bas et le texte sélectionné |
+| ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![Nuance de #ff000000](../../extensibility/ux-guidelines/media/000000.png "#ff000000 échantillon")<br />`#FF000000` | Barre de commandes : placez le curseur, la souris vers le bas et le texte sélectionné |
 | ![Nuance #FFCCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "nuance #FFCCCEDB")<br />`#FFCCCEDB` | ![#FF222222 swatch](../../extensibility/ux-guidelines/media/222222.png "#FF222222 swatch")<br />`#FF222222` | ![#FF8591A2 swatch](../../extensibility/ux-guidelines/media/8591A2.png "#FF8591A2 swatch")<br />`#FF8591A2` | Barre de commandes : séparateur de barre d’outils |
 | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![Nuance de #FF46464A](../../extensibility/ux-guidelines/media/46464A.png "#FF46464A échantillon")<br />`#FF46464A` | ![#FFD6DBE9 swatch](../../extensibility/ux-guidelines/media/D6DBE9.png "#FFD6DBE9 swatch")<br />`#FFD6DBE9` | Barre de commandes : mise en surbrillance du séparateur de la barre d’outils |
 | ![Nuance de #FFEEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 échantillon")<br />`#FFEEEEF2` | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FF2D2D30` | ![#FFD6DBE9 swatch](../../extensibility/ux-guidelines/media/D6DBE9.png "#FFD6DBE9 swatch")<br />`#FFD6DBE9` | Arrière-plan de conservation de commande |
