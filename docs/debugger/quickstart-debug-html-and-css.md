@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 02203ba84ee2d394ca9b714d74f607480ba68460
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: e1f430268549da74c1039899e828d37a21ac336c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227811"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721054"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Déboguer le code HTML et CSS dans les applications UWP dans Visual Studio
 
@@ -254,10 +254,10 @@ Il existe trois façons de sélectionner des éléments DOM lors du débogage d�
 > La mise en surbrillance d’éléments par pointage n’est que partiellement prise en charge dans l’émulateur Windows Phone.
 
 ## <a name="see-also"></a>Voir aussi
-[Déboguer des applications dans Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)  
-[Actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md)  
-[Déboguer un contrôle WebView](../debugger/debug-a-webview-control.md)  
-[Raccourcis clavier](../debugger/keyboard-shortcuts-html-and-javascript.md)  
-[Commandes de la console JavaScript](../debugger/javascript-console-commands.md)  
-[Déboguer un exemple de code HTML, CSS et JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)  
-[Support technique et accessibilité](https://msdn.microsoft.com/library/tzbxw1af(VS.120).aspx)
+- [Déboguer des applications dans Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [Actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md)
+- [Déboguer un contrôle WebView](../debugger/debug-a-webview-control.md)
+- [Raccourcis clavier](../debugger/keyboard-shortcuts-html-and-javascript.md)
+- [Commandes de la console JavaScript](../debugger/javascript-console-commands.md)
+- [Déboguer un exemple de code HTML, CSS et JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)
+- [Support technique et accessibilité](https://msdn.microsoft.com/library/tzbxw1af(VS.120).aspx)

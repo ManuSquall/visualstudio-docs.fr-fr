@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fa637a5f403a4651541d920c6390204ee579994
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: e7dbb82946d185e8e5ec81b171f5d9943751eee4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318613"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639685"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
 Spécifie les options de recherche pour les noms de fichiers et de symboles.
@@ -43,23 +43,17 @@ enum NameSearchOptions {
 ```
 
 ## <a name="elements"></a>Éléments
-`nsNone`  
-Aucune option n'est spécifiée.
+`nsNone` Aucune option n’est spécifiée.
 
-`nsfCaseSensitive`  
-S’applique une correspondance de nom respectant la casse.
+`nsfCaseSensitive` S’applique une correspondance de nom respectant la casse.
 
-`nsfCaseInsensitive`  
-S’applique une correspondance de nom de non-respect de la casse.
+`nsfCaseInsensitive` S’applique une correspondance de nom de non-respect de la casse.
 
-`nsfFNameExt`  
-Traite les noms en tant que chemins d’accès et s’applique à une correspondance de nom NomFicher.ext.
+`nsfFNameExt` Traite les noms en tant que chemins d’accès et s’applique à une correspondance de nom NomFicher.ext.
 
-`nsfRegularExpression`  
-S’applique une correspondance de nom respectant la casse à l’aide d’astérisques (*) et les points d’interrogation ( ?) comme caractères génériques.
+`nsfRegularExpression` S’applique une correspondance de nom respectant la casse à l’aide d’astérisques (*) et les points d’interrogation ( ?) comme caractères génériques.
 
-`nsfUndecoratedName`  
-S’applique uniquement aux symboles qui ont à la fois non décorés et les noms décorés.
+`nsfUndecoratedName` S’applique uniquement aux symboles qui ont à la fois non décorés et les noms décorés.
 
 ## <a name="remarks"></a>Remarques
 Les valeurs de cette énumération sont passées aux méthodes suivantes :
@@ -74,7 +68,7 @@ Les valeurs de cette énumération sont passées aux méthodes suivantes :
 En-tête : dia2.h
 
 ## <a name="see-also"></a>Voir aussi
-[Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
-[IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)  
-[IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
+- [Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)
+- [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)
+- [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)

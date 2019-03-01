@@ -1,5 +1,5 @@
 ---
-title: Déployer sur le dossier local
+title: Déployer dans un dossier local
 description: Déployer une application dans un dossier local
 services: ''
 author: mikejo5000
@@ -8,16 +8,16 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: bd477fec033eb75f626401586abfd10c798601ef
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
-ms.translationtype: MT
+ms.openlocfilehash: 67ffd17c772221c356e8c25d14437c2a737fda9e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38809446"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56723875"
 ---
 1. Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **publier** (pour les formulaires Web, **publier une application de Web**).
 
-    Si vous avez déjà configuré des profils de publication, le **publier** volet s’affiche. Cliquez sur **nouveau profil**.
+    Si vous avez déjà configuré des profils de publication, le volet **Publier** s’affiche. Cliquez sur **nouveau profil**.
 
 1. Dans le **publier** boîte de dialogue, sélectionnez **dossier**, cliquez sur **Parcourir**et créer un nouveau dossier, **C:\Publish**.
 
@@ -37,7 +37,7 @@ ms.locfileid: "38809446"
 1. Cliquez sur **Publier**.
 
     ![RemoteDBG_Publish_Debug_Config](../media/remotedbg_publish_debug_config.png "RemoteDBG_Publish_Debug_Config")
-    
+
     L’application publie un **déboguer** configuration du projet dans le dossier local. Progression s’affiche dans la fenêtre Sortie.
 
 1. Copiez le répertoire du projet ASP.NET à partir de l’ordinateur Visual Studio dans le répertoire local est configuré pour l’application ASP.NET (dans cet exemple, **C:\Publish**) sur l’ordinateur Windows Server. Dans ce didacticiel, nous supposons que vous copiez manuellement, mais vous pouvez utiliser d’autres outils tels que PowerShell, Xcopy ou Robocopy.
