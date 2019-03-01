@@ -50,7 +50,7 @@ Les types suivants ne sont pas examinés par cette règle :
 
 - Types de tableau émis par le compilateur
 
-- Les types qui ne peut pas être instanciée et qui ne définissent que des méthodes `static` (`Shared` en Visual Basic).
+- Les types qui ne peuvent pas être instanciés et qui ne définissent que des méthodes `static` (`Shared` en Visual Basic).
 Si vous appliquez <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> à l’assembly qui est en cours d’analyse, cette règle ne sera pas vérifiée sur les constructeurs portant la mention `internal` parce que vous ne pouvez pas savoir si un champ est utilisé par une autre assembly `friend`.
 
 Bien que vous ne puissiez pas contourner cette limitation dans Visual Studio Code Analysis, l’outil autonome externe FxCop vérifiera la règle sur les constructeurs internes si chaque assembly `friend` est présente dans l’analyse.
