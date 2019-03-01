@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d8aa9a1f369b228b7e1c68a12381bf52d692173
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8e43273823c3baca77bfa50206c9b2186118cca8
+ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909204"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007356"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Procédure : Générer des données de métrique du code
 
@@ -25,6 +25,8 @@ Vous pouvez générer des résultats de métriques de code pour un ou plusieurs 
 En outre, vous pouvez installer un [package NuGet](https://dotnet.myget.org/feed/roslyn-analyzers/package/nuget/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2-beta2-63202-01) qui inclut quatre métrique du code [analyseur](roslyn-analyzers-overview.md) règles : CA1501 CA1502, CA1505 et CA1506. Ces règles sont désactivées par défaut, mais vous pouvez les activer à partir de **l’Explorateur de solutions** ou dans un [ensemble de règles](using-rule-sets-to-group-code-analysis-rules.md) fichier.
 
 ## <a name="visual-studio-ide-code-metrics"></a>Métrique du code Visual Studio IDE
+
+Générer des mesures de code pour une ou plusieurs de vos projets ouverts dans l’IDE à l’aide de la **analyser** > **calculer la métrique du Code** menu.
 
 ### <a name="generate-code-metrics-results-for-an-entire-solution"></a>Générer des résultats de métriques de code pour une solution entière
 
@@ -45,6 +47,16 @@ Les résultats sont générés et la **résultats de la métrique Code** fenêtr
 1. Dans la barre de menus, choisissez **analyser** > **calculer la métrique du Code** > **pour sélectionné ou les projets**.
 
 Les résultats sont générés et la **résultats de la métrique Code** fenêtre s’affiche. Pour afficher les détails des résultats, développez l’arborescence dans le **hiérarchie**.
+
+::: moniker range="vs-2017"
+
+> [!NOTE]
+> Le **calculer la métrique du Code** commande ne fonctionne pas pour les projets .NET Core et .NET Standard. Pour calculer la métrique du code pour un projet .NET Core ou .NET Standard, vous pouvez :
+>
+> - calculer la métrique du code à partir de la [ligne de commande](#command-line-code-metrics) à la place
+> - mise à niveau vers Visual Studio 2019
+
+::: moniker-end
 
 ## <a name="command-line-code-metrics"></a>Métrique du code en ligne de commande
 
