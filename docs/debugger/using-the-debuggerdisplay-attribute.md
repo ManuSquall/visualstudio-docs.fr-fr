@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a5304da009aa35eefb91f064929a58444f139f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 4073ad5f112f0585f01de756f2cde4b352b7446a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317001"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680185"
 ---
 # <a name="using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>À l’aide de l’attribut DebuggerDisplay (C#, Visual Basic, F#, C et c++ / CLI)
 La <xref:System.Diagnostics.DebuggerDisplayAttribute> contrôle la façon dont un objet, une propriété ou un champ s’affiche dans les fenêtres de variables du débogueur. Cet attribut peut être appliqué aux éléments suivants : types, délégués, propriétés, champs et assemblys.
@@ -178,7 +178,8 @@ class MyHashtable
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[Utilisation de l’attribut DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)  
-[Créer des vues personnalisées d’objets gérés](../debugger/create-custom-views-of-dot-managed-objects.md)  
-[Spécificateurs de format en C#](../debugger/format-specifiers-in-csharp.md)  
-[Amélioration du débogage avec les attributs d’affichage de débogueur](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)
+
+- [Utilisation de l’attribut DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)
+- [Créer des vues personnalisées d’objets gérés](../debugger/create-custom-views-of-dot-managed-objects.md)
+- [Spécificateurs de format en C#](../debugger/format-specifiers-in-csharp.md)
+- [Amélioration du débogage avec les attributs d’affichage de débogueur](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

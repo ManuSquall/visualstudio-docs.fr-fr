@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: f24c8d79f0b300be4e65b9a14e7675ddf2dcf195
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 2c6595b2e76813607a6582434b5c31f4d07d5f4a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227405"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701951"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Commandes de JavaScript Console dans Visual Studio
 
@@ -103,13 +103,7 @@ console.log(user.first, user.last);
 
  Les modèles de substitution suivants sont pris en charge :
 
-- %s - chaîne %i - entier  
-  %d - entier  
-  %f - flottant  
-  %o - objet  
-  %b - binaire  
-  %x - hexadécimal  
-  %e - exposant  
+- %s - chaîne %i - entier %d - entier %f - flottant %o - objet %b - binaire %x - hexadécimal %e - exposant
 
   Voici quelques exemples d’utilisation de modèles de substitution dans `console.log`:
 
@@ -129,5 +123,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[Démarrage rapide : déboguer du code JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)  
-[Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Démarrage rapide : déboguer du code JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)
+- [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)

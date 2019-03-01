@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b353954f56cc71922d1ec5e7aef483c7bad2f47f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1a15a51d392ee6e351fbcf277ef26eb422fe7ecc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54991526"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694814"
 ---
 # <a name="graphics-frame-validation"></a>Validation du Frame Graphics
 <!-- VERSIONLESS --> Visual Studio 2017 et une prise en charge la **Validation du Frame** outil.  La fenêtre de Validation du Frame affiche les erreurs et avertissements associés à la liste des événements.  Pour afficher cette fenêtre, sélectionnez le **Afficher > Validation du Frame** menu.
@@ -33,6 +33,6 @@ Cliquez sur le **exécuter la Validation** bouton dans l’angle supérieur gauc
 | Message | Le message associé à l’événement. |
 | événement | L’événement associé à l’erreur ou l’avertissement. |
 
-## <a name="see-also"></a>Voir aussi  
-[Graphics Diagnostics (débogage DirectX Graphics)](visual-studio-graphics-diagnostics.md)   
+## <a name="see-also"></a>Voir aussi
+[Graphics Diagnostics (débogage DirectX Graphics)](visual-studio-graphics-diagnostics.md)
 <!-- /VERSIONLESS -->

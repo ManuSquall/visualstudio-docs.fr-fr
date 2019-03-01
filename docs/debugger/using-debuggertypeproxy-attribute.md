@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfe19bea0b62b7d137ac806208a9c505469cd214
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 011f5dc9525a8a5f88f3cc923eb56dde58313d85
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069588"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717492"
 ---
 # <a name="using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>À l’aide de l’attribut DebuggerTypeProxy (C#, Visual Basic, C++ / c++ / CLI)
 
@@ -39,7 +39,7 @@ Cet attribut peut s'appliquer aux éléments suivants :
 
 Une classe proxy de type doit avoir un constructeur pouvant prendre un argument du type que le proxy remplacera. Le débogueur crée une nouvelle instance de la classe proxy de type chaque fois qu'il doit afficher une variable du type cible. Cela peut avoir des conséquences sur les performances. Par conséquent, vous ne devez pas effectuer d'autres tâches dans le constructeur que celles qui sont absolument nécessaires.
 
-Pour éviter de trop handicaper les performances, l'évaluateur d'expression n'examine pas les attributs sur le proxy d'affichage du type à moins que le type ne soit développé par l'utilisateur en cliquant sur le symbole + dans la fenêtre de débogage, ou par l'utilisation de <xref:System.Diagnostics.DebuggerBrowsableAttribute>. Vous ne devez donc pas placer d'attributs sur le type d'affichage lui-même. Les attributs peuvent et doivent être utilisés dans le corps du type d'affichage.
+Pour éviter de trop handicaper les performances, l’évaluateur d’expression n’examine pas les attributs sur le proxy d’affichage du type à moins que le type ne soit développé par l’utilisateur en cliquant sur le symbole + dans la fenêtre de débogage, ou par l’utilisation de <xref:System.Diagnostics.DebuggerBrowsableAttribute>. Vous ne devez donc pas placer d'attributs sur le type d'affichage lui-même. Les attributs peuvent et doivent être utilisés dans le corps du type d'affichage.
 
 Il sera judicieux de faire du proxy de type une classe privée imbriquée dans la classe ciblée par l'attribut. Cela lui permettra d'accéder facilement aux membres internes.
 
