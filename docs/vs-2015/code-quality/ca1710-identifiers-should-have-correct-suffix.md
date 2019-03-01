@@ -55,7 +55,7 @@ ms.locfileid: "49940162"
 |<xref:System.Collections.ICollection?displayProperty=fullName>|Collection|
 |<xref:System.Collections.IDictionary?displayProperty=fullName>|Dictionary|
 |<xref:System.Collections.IEnumerable?displayProperty=fullName>|Collection|
-|<xref:System.Collections.Queue?displayProperty=fullName>|Collection ou Queue|
+|<xref:System.Collections.Queue?displayProperty=fullName>|Collection ou File d'attente|
 |<xref:System.Collections.Stack?displayProperty=fullName>|Collection ou Stack|
 |<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|Collection|
 |<xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|Dictionary|
