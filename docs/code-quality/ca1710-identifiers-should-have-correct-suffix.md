@@ -57,7 +57,7 @@ Le tableau suivant répertorie les types de base et les interfaces qui sont asso
 |<xref:System.Data.DataSet?displayProperty=fullName>|DataSet|
 |<xref:System.Data.DataTable?displayProperty=fullName>|Collection ou un DataTable|
 |<xref:System.IO.Stream?displayProperty=fullName>|Flux|
-|<xref:System.Security.IPermission?displayProperty=fullName>|Autorisation|
+|<xref:System.Security.IPermission?displayProperty=fullName>|Permission|
 |<xref:System.Security.Policy.IMembershipCondition?displayProperty=fullName>|Condition|
 |Un délégué de gestionnaire d’événements.|EventHandler|
 
