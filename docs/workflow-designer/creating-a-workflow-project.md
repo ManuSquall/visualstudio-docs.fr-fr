@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0450260d5d889c141607a281740bf06d255d5c17
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cf4013f1302ff4952fa34c689801978b9116e549
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923419"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222452"
 ---
 # <a name="workflow-project-templates"></a>Modèles de projet de flux de travail
 
@@ -34,7 +34,7 @@ Visual Studio fournit quatre modèles de projet de flux de travail différents 
 
 - Bibliothèque ActivityDesigner
 
-Pour accéder à ces modèles, installez d’abord le **Windows Workflow Foundation** composant de Visual Studio 2017. Pour obtenir des instructions détaillées, consultez [installer Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
+Pour accéder à ces modèles, installez d’abord le **Windows Workflow Foundation** composant de Visual Studio. Pour obtenir des instructions détaillées, consultez [installer Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
 1. Une fois que vous avez installé le **Windows Workflow Foundation** composant, ouvrez le **nouveau projet** boîte de dialogue en sélectionnant **fichier** > **New**  >  **Projet**.
 
