@@ -1,5 +1,5 @@
 ---
-title: Génération de code au moment du design à l’aide de modèles de texte T4
+title: Génération de code durant la conception à l'aide de modèles de texte T4
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6370bdcba922ec1c1b358a773e4f891ea41230e3
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: cb45d8e53b1ec24dceed7845bc344822c6a6830d
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318043"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223072"
 ---
-# <a name="design-time-code-generation-by-using-t4-text-templates"></a>Génération de code au moment du design à l’aide de modèles de texte T4
+# <a name="design-time-code-generation-by-using-t4-text-templates"></a>Génération de code durant la conception à l'aide de modèles de texte T4
 Modèles de texte T4 au moment du design vous permettent de générer du code de programme et d’autres fichiers dans votre projet Visual Studio. En règle générale, vous écrivez les modèles pour qu’ils varient le code qu’ils génèrent en fonction des données à partir d’un *modèle*. Un modèle est un fichier ou une base de données qui contient des informations clés sur les exigences de votre application.
 
  Par exemple, vous pourriez avoir un modèle qui définit un flux de travail sous la forme d'un tableau ou d'un diagramme. À partir du modèle, vous pouvez générer le logiciel qui exécute le flux de travail. Lorsque les besoins de vos utilisateurs changent, il est facile de discuter du nouveau flux de travail avec les utilisateurs. La regénération du code à partir du flux de travail est plus fiable que la mise à jour manuelle du code.
@@ -36,7 +36,7 @@ Modèles de texte T4 au moment du design vous permettent de générer du code de
 
 ## <a name="creating-a-design-time-t4-text-template"></a>Création d'un modèle de texte T4 au moment de la conception
 
-#### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>Pour créer un modèle T4 au moment du design dans Visual Studio
+#### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>Pour créer un modèle T4 au moment de la conception dans Visual Studio
 
 1. Créer un projet Visual Studio, ou ouvrez-en une existante.
 
@@ -294,7 +294,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
  Si vous avez installé le SDK de modélisation de Visual Studio, vous pouvez avoir tous les modèles soient transformés automatiquement chaque fois que vous effectuez une génération. Pour cela, modifiez votre fichier de projet (.csproj or .vbproj) dans un éditeur de texte et ajoutez les lignes suivantes vers la fin du fichier, après toute autre instruction `<import>` :
 
 > [!NOTE]
-> Dans Visual Studio 2017, le SDK de Transformation de modèle de texte et le SDK de modélisation de Visual Studio sont installés automatiquement lorsque vous installez des fonctionnalités spécifiques de Visual Studio. Pour plus d’informations, consultez [ce billet de blog](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> Le SDK de Transformation de modèle de texte et le SDK de modélisation de Visual Studio sont installés automatiquement lorsque vous installez des fonctionnalités spécifiques de Visual Studio. Pour plus d’informations, consultez [ce billet de blog](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
 ```xml
 <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />
@@ -315,9 +315,9 @@ Warning("A warning message");
 ```
 
 ## <a name="Converting"></a> Conversion d’un fichier existant à un modèle
- L’une des fonctionnalités utiles des modèles est que leur apparence se rapproche des fichiers qu’ils génèrent, avec en plus du code de programme inséré. Cela nous suggère une méthode utile pour créer un modèle. Tout d’abord créer un fichier ordinaire en tant que prototype, comme un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] de fichiers et puis introduisez graduellement du code de génération qui fait varier le fichier résultant.
+ L'un des avantages des modèles, c'est que leur apparence se rapproche des fichiers qu'ils génèrent, avec en plus du code de programme inséré. Cela nous suggère une méthode utile pour créer un modèle. Tout d’abord créer un fichier ordinaire en tant que prototype, comme un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] de fichiers et puis introduisez graduellement du code de génération qui fait varier le fichier résultant.
 
-#### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Pour convertir un fichier existant en modèle au moment du design
+#### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Pour convertir un fichier existant en modèle au moment de la conception
 
 1. À votre projet Visual Studio, ajoutez un fichier du type que vous souhaitez générer, tel qu’un `.cs`, `.vb`, ou `.resx` fichier.
 

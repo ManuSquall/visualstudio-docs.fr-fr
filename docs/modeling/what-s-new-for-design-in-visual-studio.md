@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 958526ccd6145813589167c639cb10550e9e8869
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 7f6e43b27695e582e75b27258875f2276a558ca1
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316000"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223375"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Nouveautés en matière de conception dans Visual Studio
 
@@ -65,7 +65,7 @@ Pour plus d’informations, consultez [ce billet de blog](https://devblogs.micro
 
 ## <a name="a-nameversionsupport-edition-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport" />Prise en charge de l’édition pour l’architecture et les outils de modélisation
 
-Visual Studio 2017 est disponible dans plusieurs éditions. N’est pas en charge l’architecture et les outils de modélisation. Le tableau ci-après décrit la disponibilité de chaque outil.
+Visual Studio est disponible dans plusieurs éditions. N’est pas en charge l’architecture et les outils de modélisation. Le tableau ci-après décrit la disponibilité de chaque outil.
 
 |**Fonctionnalité**|**Édition entreprise**|**Édition professionnelle**|**Édition Community**|
 |-|-|-|-|

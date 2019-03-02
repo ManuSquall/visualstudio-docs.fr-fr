@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8f4a09950de9480604d922b0d3dd5cefda17256
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cb6908db6b111f2ff67f2e1ca3761b11c302f5d4
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908777"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223817"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagrammes de dépendance : recommandations
 
@@ -26,11 +26,11 @@ Décrire l’architecture de votre application à un niveau élevé en créant *
 Pour voir quelles éditions de Visual Studio prennent en charge cette fonctionnalité, consultez [prise en charge de l’édition pour l’architecture et les outils de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!NOTE]
-> Diagrammes de dépendance ne sont pas pris en charge pour les projets .NET Core dans Visual Studio 2017.
+> Diagrammes de dépendance ne sont pas pris en charge pour les projets .NET Core dans Visual Studio.
 
 ## <a name="what-is-a-dependency-diagram"></a>Qu’est un diagramme de dépendances ?
 
-Comme un diagramme d’architecture traditionnel, un diagramme de dépendances identifie les principaux composants ou unités fonctionnelles de la conception et leurs interdépendances. Chaque nœud dans le diagramme, appelé un *couche*, représente un groupe logique d’espaces de noms, de projets ou d’autres artefacts. Vous pouvez dessiner les dépendances qui doivent exister dans votre conception. Contrairement à un diagramme d'architecture traditionnel, vous pouvez vérifier que les dépendances réelles dans le code source sont conformes aux dépendances prévues que vous avez spécifiées. En incluant la partie validation d’une build normale dans [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)], vous pouvez vous assurer que le code du programme continue à respecter l’architecture du système au travers des modifications futures. Consultez [des diagrammes de dépendance : Référence](../modeling/layer-diagrams-reference.md).
+Comme un diagramme d’architecture traditionnel, un diagramme de dépendances identifie les principaux composants ou unités fonctionnelles de la conception et leurs interdépendances. Chaque nœud dans le diagramme, appelé un *couche*, représente un groupe logique d’espaces de noms, de projets ou d’autres artefacts. Vous pouvez dessiner les dépendances qui doivent exister dans votre conception. Contrairement à un diagramme d'architecture traditionnel, vous pouvez vérifier que les dépendances réelles dans le code source sont conformes aux dépendances prévues que vous avez spécifiées. En incluant la partie validation d'une build normale dans [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)], vous pouvez vous assurer que le code du programme continue à respecter l'architecture du système au travers des modifications futures. Consultez [des diagrammes de dépendance : Référence](../modeling/layer-diagrams-reference.md).
 
 ## <a name="how-to-design-or-update-your-app-with-dependency-diagrams"></a>Comment concevoir ou mettre à jour de votre application avec des diagrammes de dépendance
 
@@ -53,7 +53,7 @@ Les étapes suivantes fournissent une vue d’ensemble de l’utilisation des di
 
 7.  [Valider le code par rapport au diagramme de dépendance](#Validate) pour mettre en évidence les conflits entre le code et l’architecture que vous avez besoin.
 
-8.  [Mettre à jour le code pour se conformer à la nouvelle architecture](#UpdateCode). Développez le code de manière itérative et refactorisez-le jusqu’à ce que la validation n’affiche aucun conflit.
+8.  [Mettre à jour le code pour se conformer à la nouvelle architecture](#UpdateCode). Développez le code de manière itérative et refactorisez-le jusqu'à ce que la validation n'affiche aucun conflit.
 
 9. [Inclure la validation de couche dans le processus de génération](#BuildValidation) pour vous assurer que le code continue à respecter votre conception.
 
@@ -87,7 +87,7 @@ Consultez :
 
 ## <a name="Generate"></a> Découvrir les dépendances existantes entre les couches
 
-Une dépendance existe chaque fois qu’un artefact associé à une couche comporte une référence à un artefact associé à une autre couche. Par exemple, une classe dans une couche déclare une variable qui a une classe dans une autre couche. Vous pouvez découvrir les dépendances existantes par rétroconception.
+Une dépendance existe chaque fois qu'un artefact associé à une couche comporte une référence à un artefact associé à une autre couche. Par exemple, une classe dans une couche déclare une variable qui a une classe dans une autre couche. Vous pouvez découvrir les dépendances existantes par rétroconception.
 
 > [!NOTE]
 > Les dépendances ne peuvent pas faire l'objet d'une ingénierie à rebours pour certains genres d'artefacts. Par exemple, aucune dépendance ne fera l'objet d'une ingénierie à rebours depuis ou vers une couche qui est liée à un fichier texte. Pour voir les artefacts ayant des dépendances que vous pouvez procéder à la rétroconception, cliquez sur une ou plusieurs couches, puis cliquez sur **afficher les liens**. Dans **Explorateur de couches**, examinez le **prend en charge la Validation** colonne. Dépendances ne sera pas à rebours pour les artefacts pour lesquels cette colonne affiche **False**.
@@ -135,7 +135,7 @@ Lorsque vous démarrez le développement d'un nouveau projet, ou d'une nouvelle 
 
 ## <a name="EditLayout"></a> Modifier la disposition pour la présentation et la discussion
 
-Pour vous aider à identifier des couches et des dépendances ou à en discuter avec les membres de l’équipe, modifiez l’aspect et la disposition du diagramme comme suit :
+Pour vous aider à identifier des couches et des dépendances ou à en discuter avec les membres de l'équipe, modifiez l'aspect et la disposition du diagramme comme suit :
 
 -   Modifiez les tailles, formes et positions des couches.
 

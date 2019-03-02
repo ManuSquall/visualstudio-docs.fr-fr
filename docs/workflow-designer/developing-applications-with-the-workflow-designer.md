@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb1b746e862385395089fe0ccf3bd2d4bfdb8d33
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 45c687be4efc5a83827836cd1ac89bbc38ad4cb1
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909243"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223284"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>Développer des applications avec le Concepteur de flux de travail
 
@@ -29,7 +29,7 @@ Le Concepteur de flux de travail est un concepteur visuel et le débogueur pour 
 
 ## <a name="install-windows-workflow-foundation"></a>Installer Windows Workflow Foundation
 
-Pour utiliser des modèles de projet de flux de travail dans Visual Studio 2017, installez d’abord le **Windows Workflow Foundation** composant.
+Pour utiliser des modèles de projet de flux de travail dans Visual Studio, installez d’abord le **Windows Workflow Foundation** composant.
 
 1. Ouvrez le programme d’installation de Visual Studio. Un moyen rapide pour l’ouvrir est en sélectionnant **outils** > **obtenir les outils et fonctionnalités** dans Visual Studio.
 
@@ -37,7 +37,7 @@ Pour utiliser des modèles de projet de flux de travail dans Visual Studio 2017,
 
 1. Faites défiler jusqu'à la **activités de développement** catégorie, puis sélectionnez le **Windows Workflow Foundation** composant.
 
-   ![Composant de Windows Workflow Foundation pour Visual Studio 2017](media/windows-workflow-foundation-component.png)
+   ![Composant de Windows Workflow Foundation pour Visual Studio](media/windows-workflow-foundation-component.png)
 
 1. Sélectionnez **Modifier**.
 
