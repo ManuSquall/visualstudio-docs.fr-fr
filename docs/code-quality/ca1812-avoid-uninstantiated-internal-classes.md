@@ -52,7 +52,7 @@ Les types suivants ne sont pas examinés par cette règle :
 
 - Les types qui ne peuvent pas être instanciés et qui ne définissent que des méthodes `static` (`Shared` en Visual Basic).
 
-Si vous appliquez <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> à l’assembly qui est en cours d’analyse, cette règle se produira pas sur les constructeurs portent la mention `internal` parce que vous ne pouvez pas savoir si un champ est utilisé par un autre `friend` assembly.
+Bien que vous ne puissiez pas contourner cette limitation dans Visual Studio Code Analysis, l’outil autonome externe FxCop vérifiera la règle sur les constructeurs internes si chaque assembly `friend` est présente dans l’analyse.
 
 Même si vous ne pouvez pas contourner cette limitation dans Visual Studio Code Analysis, l’outil FxCop autonome externe se produit sur les constructeurs internes si chaque `friend` assembly est présent dans l’analyse.
 
@@ -72,7 +72,7 @@ Il est possible de supprimer un avertissement de cette règle. Nous vous recomma
 
 - La classe est créée automatiquement par le runtime ou [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Par exemple, les classes qui implémentent <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> ou <xref:System.Web.IHttpHandler?displayProperty=fullName>.
 
-- La classe est passée comme un paramètre de type générique qui a une nouvelle contrainte. Par exemple, l’exemple suivant génère cette règle.
+- La classe est passée comme un paramètre de type générique qui a une contrainte `new`. Par exemple, l’exemple suivant génère cette règle.
 
     ```csharp
     internal class MyClass
