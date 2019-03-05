@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: dd467adc2ff45e38f193b1b87aea471682d40c0c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2abf307dd2205b556744c61c974e389179c465b9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920598"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708639"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Guide de productivité C# pour Visual Studio 2017
 
@@ -92,6 +92,8 @@ Visual Studio 2017 est fourni avec un grand nombre de refactorisations, d’act
   - *Ajouter un contrôle de valeur null*
   - *Ajouter un paramètre*
   - *Supprimer les instructions using inutiles*
+  - *Boucle foreach vers une requête LINQ ou une méthode LINQ*
+  - *Extraction des membres de la refactorisation avec des options de boîte de dialogue*
   - Découvrez-en d’autres dans notre [documentation](https://aka.ms/refactorings)
 - Écrivez votre propre correctif de code ou refactorisation avec des [analyseurs Roslyn](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix).
 - Plusieurs membres de la communauté ont écrit des extensions gratuites qui ajoutent des inspections de code supplémentaires :
@@ -108,7 +110,7 @@ Visual Studio 2017 contient de nombreuses fonctionnalités qui vous permettent d
 
 | Fonctionnalité | Raccourci | Détails/améliorations |
 |- | - | -|
-| Rechercher toutes les références | **Maj**+**F12**| Les résultats sont en couleur et peuvent être regroupés par projet, définition, etc. Vous pouvez également « verrouiller » les résultats. |
+| Rechercher toutes les références | **Maj**+**F12**| Les résultats sont en couleur et peuvent être regroupés par projet, définition et type de référence, par exemple lecture ou écriture. Vous pouvez également « verrouiller » les résultats. |
 | Accéder à l’implémentation | **Ctrl**+**F12** | Vous pouvez utiliser Atteindre la définition sur le mot clé `override` pour accéder au membre substitué |
 | Atteindre la définition | **F12** ou **Ctrl**+**Clic**| Vous pouvez maintenir la touche **Ctrl** enfoncée et cliquer pour accéder à la définition |
 | Aperçu de définition | **Alt**+**F12** | Vue inline d’une définition |

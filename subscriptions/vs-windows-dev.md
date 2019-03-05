@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Découvrez le compte de développeur Windows inclus dans votre abonnement Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 584048c088acb7ee3a390d941dbd6c59ce2ac3a0
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 25f948a0a855655da45b8c11fd955a06d14e5cf7
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380263"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843683"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Compte de développeur Windows dans les abonnements Visual Studio
 
@@ -69,7 +67,7 @@ Nous vous recommandons d’ouvrir une nouvelle fenêtre de navigateur « privé
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
-## <a name="support-resources"></a>Ressources de support technique
+## <a name="support-resources"></a>Ressources de support
 
 * Besoin d’aide pour l’utilisation de votre compte de développeur Windows ?  Consultez les ressources de [support](https://developer.microsoft.com/windows/support) du [Centre de développement Windows](https://developer.microsoft.com/windows).
 * [Développement Windows](/windows/)

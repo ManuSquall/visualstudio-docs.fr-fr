@@ -10,12 +10,12 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aecc48392a036cb6ef17cc3b3ea58eb82a6e59aa
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 1bb6f906cbfb715d67f6e10ddcecf094bc25821f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089264"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615544"
 ---
 # <a name="custom-native-etw-heap-events"></a>Événements de tas ETW natifs personnalisés
 
@@ -34,7 +34,7 @@ public:
 
 ...
 
-// MemoryPool is a custom managed heap, which allocates 8192 bytes 
+// MemoryPool is a custom managed heap, which allocates 8192 bytes
 // on the standard Windows Heap named "Windows NT"
 MemoryPool<Foo, 8192> mPool;
 
@@ -66,7 +66,7 @@ Cette bibliothèque peut facilement être utilisée en C et C++.
    ```cpp
    __declspec(allocator) void *MyMalloc(size_t size);
    ```
-   
+
    > [!NOTE]
    > Cet élément décoratif indique au compilateur que cette fonction est un appel à un allocateur.  Chaque appel à la fonction génère l’adresse du site d’appel, la taille de l’instruction d’appel et l’ID de type du nouvel objet dans un nouveau symbole `S_HEAPALLOCSITE`.  Quand une pile d’appels est allouée, Windows émet un événement ETW avec ces informations.  Le profileur de mémoire recherche, dans la pile d’appels, une adresse de retour correspondant à un symbole `S_HEAPALLOCSITE`, et les informations d’ID de type dans le symbole servent à afficher le type de runtime de l’allocation.
    >
@@ -79,7 +79,7 @@ Cette bibliothèque peut facilement être utilisée en C et C++.
    ```
 
    Dans le cas de C, utilisez la fonction `OpenHeapTracker` à la place.  Cette fonction retourne un handle qui permet d’appeler d’autres fonctions de suivi :
-  
+
    ```C
    VSHeapTrackerHandle hHeapTracker = OpenHeapTracker("MyHeap");
    ```
@@ -136,7 +136,7 @@ Cette bibliothèque peut facilement être utilisée en C et C++.
    ```
 
 ## <a name="track-memory-usage"></a>Suivre l’utilisation de la mémoire
-Une fois ces appels en place, vous pouvez effectuer le suivi de l’utilisation du tas personnalisé à l’aide de l’outil **Utilisation de la mémoire** standard disponible dans Visual Studio.  Pour plus d’informations sur l’utilisation de cet outil, consultez la documentation [Memory Usage](../profiling/memory-usage.md) (Utilisation de la mémoire). Vous devez activer le profilage du tas avec des instantanés pour que l’utilisation du tas personnalisé s’affiche. 
+Une fois ces appels en place, vous pouvez effectuer le suivi de l’utilisation du tas personnalisé à l’aide de l’outil **Utilisation de la mémoire** standard disponible dans Visual Studio.  Pour plus d’informations sur l’utilisation de cet outil, consultez la documentation [Memory Usage](../profiling/memory-usage.md) (Utilisation de la mémoire). Vous devez activer le profilage du tas avec des instantanés pour que l’utilisation du tas personnalisé s’affiche.
 
 ![Activer le profilage du tas](media/heap-enable-heap.png)
 
@@ -156,5 +156,5 @@ Comme avec le tas Windows standard, vous pouvez également utiliser cet outil po
 > Visual Studio contient également un outil **Utilisation de la mémoire** dans l’ensemble d’outils de **profilage des performances**, que vous pouvez activer à l’aide de l’option de menu **Déboguer** > **Profileur de performances** ou de la combinaison de touches **Alt**+**F2**.  Cette fonctionnalité n’inclut pas le suivi de tas et n’affiche pas votre tas personnalisé comme décrit ici.  Cette fonctionnalité est uniquement disponible dans la fenêtre **Outils de diagnostic**, que vous pouvez activer avec le menu **Déboguer** > **Fenêtres** > **Afficher les outils de diagnostic** ou la combinaison de touches **Ctrl**+**Alt**+**F2**.
 
 ## <a name="see-also"></a>Voir aussi
-[Découvrir les outils de profilage](../profiling/profiling-feature-tour.md)  
+[Découvrir les Outils de profilage](../profiling/profiling-feature-tour.md)
 [Utilisation de la mémoire](../profiling/memory-usage.md)

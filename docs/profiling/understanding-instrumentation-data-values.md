@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed8131f7fecfcb28ad15fa4987767be4fa9955d0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0f10a3f434def1c96c2f096c4b299b47dd8aad9f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55029724"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620770"
 ---
 # <a name="understand-instrumentation-data-values"></a>Comprendre le fonctionnement des valeurs de données d’instrumentation
 
@@ -97,5 +97,5 @@ Pourcentage du total des valeurs de temps inclusif d’application de la session
 
 ## <a name="see-also"></a>Voir aussi
 
-[Analyser les données des outils d’analyse des performances](../profiling/analyzing-performance-tools-data.md)  
+[Analyser les données des outils d’analyse des performances](../profiling/analyzing-performance-tools-data.md)
 [Guide pratique pour choisir des méthodes de collecte](../profiling/how-to-choose-collection-methods.md)

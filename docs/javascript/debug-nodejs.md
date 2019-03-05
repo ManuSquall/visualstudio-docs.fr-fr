@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: b6bc2aa2dff6a1d71428041e17bffe39c7d624e9
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 27e990c300702301fc7c701339254bbe6f385cd0
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55768404"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843791"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Déboguer une application JavaScript ou TypeScript dans Visual Studio
 
@@ -29,7 +29,7 @@ Vous pouvez déboguer un code JavaScript et TypeScript à l’aide de Visual Stu
 
 1. Une fois votre projet ouvert dans Visual Studio, ouvrez un fichier JavaScript côté serveur (par exemple *server.js*), puis cliquez dans la marge à gauche pour définir un point d’arrêt :
 
-    ![Définir un point d’arrêt](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
+    ![Définir un point d'arrêt](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
 
     Les points d'arrêt constituent une fonctionnalité élémentaire et essentielle de toute procédure de débogage fiable. Quand vous définissez un point d'arrêt, Visual Studio interrompt l'exécution du code à l'emplacement du point d'arrêt pour vous permettre d'examiner les valeurs des variables, le comportement de la mémoire ou encore la bonne exécution ou non d'une branche de code.
 
@@ -63,7 +63,7 @@ Pour attacher le débogueur depuis Visual Studio et atteindre des points d’arr
 
 3. Basculez vers Visual Studio et définissez un point d’arrêt dans votre code source. (Définissez le point d’arrêt dans une ligne de code autorisant les points d’arrêt, par exemple une instruction `return` ou une déclaration `var`).
 
-    ![Définir un point d’arrêt](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
+    ![Définir un point d'arrêt](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
     Si vous avez besoin rechercher un code spécifique dans un fichier volumineux généré, utilisez **Ctrl**+**F** (**Édition** > **Rechercher et remplacer**  >  **Recherche rapide**).
 
@@ -168,7 +168,7 @@ Le débogage des fichiers générés dynamiquement n’est pas automatique. Vous
    Pour Chrome, accédez à l’**Explorateur de solutions > Script Documents (Documents de script) > YourPageName (Nom de votre page)**.
 
     > [!NOTE]
-    > Lorsque vous utilisez Chrome, vous pouvez obtenir un message `no source is available between `<script>` tags.` This is OK, just continue debugging.
+    > Quand vous utilisez Chrome, vous pouvez éventuellement recevoir un message indiquant qu’**aucune source n’est disponible entre les balises \<script>**. Cela n’est pas un problème, continuez simplement le débogage.
 
    Pour Internet Explorer, accédez à **l’Explorateur de solutions > Script Documents (Documents de script) > Windows Internet Explorer > YourPageName (Nom de votre page)**.
 

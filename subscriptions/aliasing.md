@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 01/02/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: La connexion peut échouer si des alias ou des noms conviviaux sont utilisés.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3743cc11d5001d12ba4cd030ddc0cfc914db3131
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 2e552f2f7200235dafe0edf40e13dbc299f0d129
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817436"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841625"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>La connexion à Abonnements Visual Studio peut échouer lors de l’utilisation d’alias
 
@@ -150,7 +148,7 @@ Un abonnement Visual Studio vous a été attribué. Selon votre e-mail de bienve
 
 6. Vos avantages devraient à présent être affichés.
 
-Remarque : Lors de vos visites ultérieures de https://my.visualstudio.com, vous pouvez être invité à sélectionner le compte que vous souhaitez utiliser (par exemple « Compte professionnel ou scolaire » ou « Compte personnel »).  Une fois les étapes ci-dessus réalisées, vous devrez utiliser l’option « Compte personnel ».
+Remarque :  Au cours de votre prochaine visite sur https://my.visualstudio.com, vous serez peut-être invité à sélectionner le compte à utiliser (par exemple « Compte professionnel ou scolaire » ou « Compte personnel »).  Une fois les étapes ci-dessus réalisées, vous devrez utiliser l’option « Compte personnel ».
 
 Si vous rencontrez des problèmes, contactez l’équipe de support technique (https://visualstudio.microsoft.com/subscriptions/support/).
 

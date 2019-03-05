@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Découvrez l’avantage Office 365 inclus dans certains abonnements Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ded8c37cfcd737e9285b6a1e2a5f9eb51ede2680
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 6d6fdcbe7ae5bb5182f7c123120d632a4221f642
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380148"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841067"
 ---
 # <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Office 365 Pro Plus dans les abonnements Visual Studio
 
@@ -23,9 +21,9 @@ Donnez le meilleur de vous-même. Travaillez partout où vous le souhaitez avec 
 ## <a name="getting-started-with-office-365-pro-plus"></a>Bien démarrer avec Office 365 Pro Plus
 
 Suivez ces étapes pour télécharger et activer Office 365 Pro Plus :
-1. Connectez-vous à votre abonnement Visual Studio Enterprise.  
+1. Connectez-vous à votre abonnement Visual Studio Enterprise.
 2. Cliquez sur l’onglet **Téléchargements**.
-3. La liste de téléchargements recommandés s’affiche. Dans la liste Office, sélectionnez **Office 365**. 
+3. La liste de téléchargements recommandés s’affiche. Dans la liste Office, sélectionnez **Office 365**.
    > [!div class="mx-imgBorder"]
    > ![Téléchargements Office 365](_img/vs-office365/vs-office365-downloads.png)
 0. Pour installer Office 365, il vous faut une clé de produit.  Cliquez sur le lien **Obtenir une clé** sous la liste Office 365.
@@ -36,7 +34,7 @@ Suivez ces étapes pour télécharger et activer Office 365 Pro Plus :
    > ![Revendiquer une clé de produit Office 365](_img/vs-office365/vs-office365-claim-key.png)
 0. Enregistrez la clé que vous avez demandée. (Vous pourrez toujours revenir à cette liste pour l’afficher à nouveau.)
 0. Fermez la fenêtre volante.
-0. Cliquez sur le bouton **Télécharger**. 
+0. Cliquez sur le bouton **Télécharger**.
    > [!div class="mx-imgBorder"]
    > ![Démarrer le téléchargement d’Office 365](_img/vs-office365/vs-office365-download-button.png)
 0. Connectez-vous avec votre compte Microsoft. (Si vous avez déjà ouvert une session, cliquez sur **Suivant**.)
@@ -44,7 +42,7 @@ Suivez ces étapes pour télécharger et activer Office 365 Pro Plus :
    > [!div class="mx-imgBorder"]
    > ![Entrer la clé de produit Office 365](_img/vs-office365/vs-office365-enter-key.png)
 0. Cliquez à nouveau sur **Suivant**.
-0. Cliquez sur **Installer** pour installer les applications Office. 
+0. Cliquez sur **Installer** pour installer les applications Office.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
@@ -72,7 +70,7 @@ Si vous avez l’intention de développer des applications pour Office, vous pou
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
-## <a name="support-resources"></a>Ressources de support technique
+## <a name="support-resources"></a>Ressources de support
 -  Pour accéder au support technique d’un composant d’EMS, visitez https://support.microsoft.com/allproducts et sélectionnez le produit souhaité.
 -  Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 -  Vous avez des questions concernant l’environnement IDE Visual Studio, Azure DevOps ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).

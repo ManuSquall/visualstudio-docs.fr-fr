@@ -1,7 +1,7 @@
 ---
 title: Résoudre les erreurs réseau ou de proxy
 description: Trouvez des solutions aux erreurs réseau ou aux erreurs de proxy que vous pouvez rencontrer quand vous installez ou utilisez Visual Studio derrière un pare-feu ou un serveur proxy.
-ms.date: 02/12/2018
+ms.date: 02/23/2018
 ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1fe93791d60ea5cf398b71b44ec20a787455807
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f33351245d35ef025d98b3dcf1c2c325fa1ca802
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928333"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796482"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Résolution des erreurs liées au réseau lorsque vous installez ou utilisez Visual Studio
 
@@ -48,7 +48,7 @@ Cette erreur se produit généralement quand les utilisateurs sont connectés à
 
 - Sinon, vous pouvez supprimer l’adresse http:&#47;&#47;go.microsoft.com de la liste verte pour que la boîte de dialogue d’authentification de proxy s’affiche pour l’adresse http:&#47;&#47;go.microsoft.com et pour les points de terminaison de serveur lors du redémarrage de Visual Studio.
 
-    OU
+  - OU -
 
 - Si vous voulez utiliser vos informations d'identification par défaut avec votre proxy, vous pouvez procéder comme suit :
 
@@ -58,13 +58,16 @@ Cette erreur se produit généralement quand les utilisateurs sont connectés à
 
       ```xml
       <defaultProxy enabled="true" useDefaultCredentials="true">
-          <proxy bypassonlocal="True" proxyaddress=" HYPERLINK "http://<yourproxy:port#>" http://<yourproxy:port#>"/>
+          <proxy bypassonlocal="True" proxyaddress="http://<yourproxy:port#>"/>
       </defaultProxy>
       ```
 
       Vous devez insérer l'adresse proxy correcte de votre réseau dans `proxyaddress="<http://<yourproxy:port#>`.
 
-     OU
+     > [!NOTE]
+     > Pour plus d’informations, consultez les pages [&lt;defaultProxy&gt;, élément (paramètres réseau)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings) et [&lt;proxy&gt;, élément (paramètres réseau)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings).
+
+  - OU -
 
 - Vous pouvez également suivre les instructions fournies dans le billet de blog [Comment se connecter via un proxy Web authentifié](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/), qui vous expliquent comment ajouter du code pour utiliser le proxy.
 

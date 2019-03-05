@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bf4e4b1828253d002ab15f80584d7a8c2b2894a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 67153c0acebc3b190830daa2e14ef3578ce00652
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954645"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796619"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installer et utiliser Visual Studio et les services Azure derrière un pare-feu ou un serveur proxy
 
@@ -84,7 +84,7 @@ Pour vous assurer que vous avez accès à tout ce dont vous avez besoin lorsque 
 | Scénario ou service | Point de terminaison DNS | Protocole | Port | Description |
 | - | - | - | - | - |
 | URL<br>résolution | go.microsoft.com<br><br>aka.ms | | | Permet de raccourcir les URL, puis les résoudre en URL plus longues |
-| Page de démarrage | vsstartpage.blob.core.windows.net | | 443 | Permet d’afficher les actualités sur les développeurs affichées sur la page de démarrage dans Visual Studio |
+| Page de démarrage | vsstartpage.blob.core.windows.net | | 443 | Permet d’afficher la section Informations pour les développeurs située sur la page de démarrage (Visual Studio 2017 uniquement) |
 | Ciblé<br> Notification <br>Service | targetednotifications.azurewebsites.net <br><br>www.research.net | | 80<br><br>443 | Permet de filtrer une liste de notifications globale sur une liste qui s’applique uniquement à certains types de scénarios de machines/d’utilisation |
 | Extension <br>Vérification de mise à jour | marketplace.visualstudio.com<br><br>&#42;.windows.net <br>&#42;.microsoftonline.com <br>&#42;.live.com | | 443 | Permet de fournir des notifications lorsqu’une extension installée a une mise à jour disponible <br><br> Utilisé comme emplacement de connexion |
 | Projet IA <br>Intégration | az861674.vo.msecnd.net | | 443<br> | Permet de configurer de nouveaux projets pour envoyer des données d’utilisation à votre compte Application Insights enregistré |

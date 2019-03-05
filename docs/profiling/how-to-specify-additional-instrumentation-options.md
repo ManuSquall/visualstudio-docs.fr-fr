@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e93a249572c34d801426b9919a274aa133639a3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c95add435824663e798d226e0be11ddbe06b8aba
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963721"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618677"
 ---
 # <a name="how-to-specify-additional-instrumentation-options"></a>Procédure : Spécifier des options d’instrumentation supplémentaires
 
@@ -41,5 +41,5 @@ Vous pouvez instrumenter des binaires à l’aide de l’IDE de Visual Studio ou
 
 ## <a name="see-also"></a>Voir aussi
 
-[Configurer des sessions de performances](../profiling/configuring-performance-sessions.md)  
+[Configurer des sessions de performances](../profiling/configuring-performance-sessions.md)
 [Profiler à partir de la ligne de commande](../profiling/using-the-profiling-tools-from-the-command-line.md)

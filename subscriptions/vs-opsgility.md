@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Découvrez l’avantage Skill Me Up ‒ Par Opsgility inclus dans certains abonnements Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscriptions
-ms.openlocfilehash: c057eda862ffc0ef556d878a0afb3d1dd106918c
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 046dc71ff78a7458c0a524db3b643f520a41d61c
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380211"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843842"
 ---
 # <a name="the-skill-me-up---powered-by-opsgility-training-benefit-in-visual-studio-subscriptions"></a>Avantage de la formation Skill Me Up ‒ Par Opsgility dans les abonnements Visual Studio
 
@@ -32,7 +30,7 @@ Certains abonnements Visual Studio comportent jusqu'à six mois de formation sp�
    > [!div class="mx-imgBorder"]
    > ![Avantage Opsgility, Page de destination](_img/vs-opsgility/vs-vse-landing-page.png)
 
-4. C’est aussi simple que cela !  Vous êtes prêt à commencer une formation !  
+4. C’est aussi simple que cela !  Vous êtes prêt à commencer une formation !
 
 
 ## <a name="eligibility"></a>Éligibilité
@@ -54,7 +52,7 @@ Certains abonnements Visual Studio comportent jusqu'à six mois de formation sp�
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
-## <a name="support-resources"></a>Ressources de support technique
+## <a name="support-resources"></a>Ressources de support
 -  Besoin d’aide avec Opsgility ?  Envoyez un ticket de support via la page [Nous contacter](https://www.opsgility.com/SupportTicket).
 -  Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 -  Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).

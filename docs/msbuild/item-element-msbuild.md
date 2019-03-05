@@ -16,19 +16,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c872f10b9a0d092cc5dc4c3904fad6c6d5a4ea94
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 36824d78b2a4da68586b4ff3b39046bff936ff7f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944765"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643767"
 ---
 # <a name="item-element-msbuild"></a>Item, élément (MSBuild)
 Contient un élément défini par l'utilisateur et ses métadonnées. Chaque élément utilisé dans un projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] doit être spécifié en tant qu'enfant d'un élément `ItemGroup`.
 
-\<Project>  
-\<ItemGroup>  
-\<Item>  
+\<Project> \<ItemGroup> \<Item>
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -91,7 +89,7 @@ Par exemple, pour spécifier une liste de packages NuGet, vous utiliseriez norma
 |-------------|-----------------|
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Élément grouping pour d’autres éléments.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Les éléments `Item` définissent les entrées du système de génération et sont regroupés en collections d'éléments, selon leur nom de collection défini par l'utilisateur. Ces collections d’éléments peuvent être utilisées comme paramètres des [tâches](../msbuild/msbuild-tasks.md), lesquelles utilisent les éléments d’une collection pour exécuter les étapes du processus de génération. Pour plus d’informations, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).
 
 La notation @(\<monType>) permet de développer une collection d’éléments de type \<monType> en une liste de chaînes séparées par des points-virgules, et de la transmettre à un paramètre. Si le paramètre est de type `string`, la valeur du paramètre correspond à la liste des éléments séparés par des points-virgules. Si le paramètre est un tableau de chaînes (`string[]`), chaque élément est inséré dans le tableau selon l'emplacement des points-virgules. Si le paramètre de tâche est de type <xref:Microsoft.Build.Framework.ITaskItem>`[]`, la valeur correspond au contenu de la collection d'éléments et à toutes les métadonnées associées. Pour délimiter chaque élément à l’aide d’un caractère autre que le point-virgule, utilisez la syntaxe @(\<myType>, '\<séparateur>').
@@ -120,7 +118,7 @@ L’exemple de code suivant montre comment utiliser l’attribut `Update` pour m
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[Éléments](../msbuild/msbuild-items.md)  
-[Éléments communs des projets MSBuild](../msbuild/common-msbuild-project-items.md)  
-[Propriétés MSBuild](../msbuild/msbuild-properties.md)  
-[Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
+- [Éléments](../msbuild/msbuild-items.md)
+- [Éléments communs des projets MSBuild](../msbuild/common-msbuild-project-items.md)
+- [Propriétés MSBuild](../msbuild/msbuild-properties.md)
+- [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)

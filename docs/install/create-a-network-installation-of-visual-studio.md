@@ -13,16 +13,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69073866096d5b4a20501aadfd93f7befd4a0b12
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: e25bdc20393c0d3faff5faa72c89bd531972e5d4
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155433"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796398"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Créer une installation réseau de Visual Studio 2017
 
-En règle générale, un administrateur d’entreprise crée un point d’installation réseau pour le déploiement sur les stations de travail clientes. Nous avons conçu Visual Studio 2017 pour que vous puissiez mettre en cache dans un dossier unique les fichiers de l’installation initiale avec toutes les mises à jour de produit. (Ce processus est également appelé _création d’une disposition_.) De cette façon, les stations de travail clientes peuvent utiliser le même emplacement réseau pour gérer leur installation, même si elles n’ont pas encore effectué leur dernière mise à jour de maintenance.
+En règle générale, un administrateur d’entreprise crée un point d’installation réseau à déployer sur les stations de travail clientes. Nous avons conçu Visual Studio 2017 pour que vous puissiez mettre en cache dans un dossier unique les fichiers de l’installation initiale avec toutes les mises à jour de produit. (Ce processus est également appelé _création d’une disposition_.) 
+
+De cette façon, les stations de travail clientes peuvent utiliser le même emplacement réseau pour gérer leur installation, même si elles n’ont pas encore effectué leur dernière mise à jour de maintenance.
 
  > [!NOTE]
  > Si plusieurs éditions de Visual Studio sont utilisées dans votre entreprise (par exemple, Visual Studio Professional et Visual Studio Enterprise), vous devez créer un partage d’installation réseau distinct pour chaque édition.
@@ -35,9 +37,9 @@ L’exécutable de votre programme d’installation, ou pour être plus précis 
 
 |Édition | Téléchargement|
 |-------------|-----------------------|
-|Visual Studio Enterprise | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2017) |
-|Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2017) |
-|Communauté Visual Studio | [**vs_community.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2017) |
+|Visual Studio Enterprise | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2017) |
+|Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2017) |
+|Communauté Visual Studio | [**vs_community.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2017) |
 
 Les autres programmes d’amorçage pris en charge incluent [vs_buildtools.exe](https://aka.ms/vs/15/release/vs_buildtools.exe), [vs_feedbackclient.exe](https://aka.ms/vs/15/release/vs_feedbackclient.exe), [vs_teamexplorer.exe](https://aka.ms/vs/15/release/vs_teamexplorer.exe), [vs_testagent.exe](https://aka.ms/vs/15/release/vs_testagent.exe), [vs_testcontroller.exe](https://aka.ms/vs/15/release/vs_testcontroller.exe)et [vs_testprofessional.exe](https://aka.ms/vs/15/release/vs_testprofessional.exe).
 
@@ -71,59 +73,107 @@ Pour plus d’informations, consultez [Automatiser l’installation de Visual St
 ## <a name="copy-the-layout-to-a-network-share"></a>Copier la disposition sur un partage réseau
 
 Hébergez la disposition sur un partage réseau afin de pouvoir l’exécuter à partir d’autres ordinateurs.
-* Exemple :<br>
-```xcopy /e c:\vs2017offline \\server\products\VS2017```
 
-## <a name="customizing-the-network-layout"></a>Personnalisation de la disposition réseau
+Exemple :
+
+```cmd
+xcopy /e c:\vs2017offline \\server\products\VS2017
+```
+
+## <a name="customize-the-network-layout"></a>Personnaliser la disposition réseau
 
 Plusieurs options vous permettent de personnaliser votre disposition réseau. Vous pouvez créer une disposition partielle qui contient uniquement un ensemble spécifique de [paramètres régionaux de langue](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales), [charges de travail, composants et leurs dépendances recommandées ou facultatives](workload-and-component-ids.md). Cela est peut-être utile si vous savez que vous allez uniquement déployer un sous-ensemble de charges de travail sur les stations de travail clientes. Les paramètres de ligne de commande standard permettant de personnaliser la disposition incluent :
 
-* ```--add``` pour spécifier les [ID de charge de travail ou de composant](workload-and-component-ids.md).  Si `--add` est utilisé, seuls les composants et les charges de travail spécifiés avec `--add` sont téléchargés.  Si `--add` n’est pas utilisé, l’ensemble des charges de travail et des composants est téléchargé.
-* ```--includeRecommended``` pour inclure tous les composants recommandés pour les ID de charge de travail spécifiés
-* ```--includeOptional``` pour inclure tous les composants recommandés et facultatifs pour les ID de charge de travail spécifiés.
-* ```--lang``` pour spécifier les [paramètres régionaux de langue](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales).
+* `--add` pour spécifier les [ID de charge de travail ou de composant](workload-and-component-ids.md). <br>Si `--add` est utilisé, seuls les composants et les charges de travail spécifiés avec `--add` sont téléchargés.  Si `--add` n’est pas utilisé, l’ensemble des charges de travail et des composants est téléchargé.
+* `--includeRecommended` pour inclure tous les composants recommandés pour les ID de charge de travail spécifiés
+* `--includeOptional` pour inclure tous les composants recommandés et facultatifs pour les ID de charge de travail spécifiés.
+* `--lang` pour spécifier les [paramètres régionaux de langue](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales).
 
 Voici quelques exemples montrant comment créer une disposition partielle personnalisée.
 
-* Pour télécharger tous composants et les charges de travail dans une langue, exécutez : <br>```vs_enterprise.exe --layout C:\vs2017offline --lang en-US```
-* Pour télécharger tous composants et les charges de travail de plusieurs langues, exécutez : <br>```vs_enterprise.exe --layout C:\vs2017offline --lang en-US de-DE ja-JP```
-* Pour télécharger une charge de travail pour toutes les langues, exécutez : <br> ```vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --includeRecommended```
-* Pour télécharger deux charges de travail et un composant facultatif dans trois langues, exécutez : <br>```vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended --lang en-US de-DE ja-JP ```
-* Pour télécharger deux charges de travail et tous leurs composants recommandés, exécutez : <br>```vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended ```
-* Pour télécharger deux charges de travail et tous leurs composants recommandés et facultatifs, exécutez : <br>```vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional ```
+* Pour télécharger tous composants et les charges de travail dans une langue, exécutez :
+
+    ```cmd
+    vs_enterprise.exe --layout C:\vs2017offline --lang en-US
+    ```
+
+* Pour télécharger tous composants et les charges de travail de plusieurs langues, exécutez :
+
+    ```cmd
+    vs_enterprise.exe --layout C:\vs2017offline --lang en-US de-DE ja-JP
+    ```
+
+* Pour télécharger une charge de travail pour toutes les langues, exécutez :
+
+    ```cmd
+    vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --includeRecommended
+    ```
+
+* Pour télécharger deux charges de travail et un composant facultatif dans trois langues, exécutez :
+
+    ```cmd
+    vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended --lang en-US de-DE ja-JP
+    ```
+
+* Pour télécharger deux charges de travail et tous leurs composants recommandés :
+
+    ```cmd
+    vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended 
+    ```
+
+* Pour télécharger deux charges de travail et tous leurs composants recommandés et facultatifs, exécutez :
+
+    ```cmd
+    vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional 
+    ```
 
 ### <a name="new-in-153"></a>Nouveautés de la version 15.3
 
 Lorsque vous exécutez une commande de disposition, les options que vous spécifiez sont enregistrées (par exemple, les langues et les charges de travail). Les commandes de disposition suivantes englobent toutes les options précédentes.  Voici un exemple de disposition avec une charge de travail pour l’anglais uniquement :
 
-```vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --lang en-US```
+```cmd
+vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --lang en-US
+```
 
 Lorsque vous souhaitez mettre à jour cette disposition vers une version plus récente, vous n’avez pas à spécifier de paramètres de ligne de commande supplémentaires. Les paramètres précédents sont enregistrés et utilisés par toutes les commandes de disposition suivantes dans ce dossier de disposition.  La commande suivante met à jour la disposition partielle existante.
 
-```vs_enterprise.exe --layout c:\VS2017Layout```
+```cmd
+vs_enterprise.exe --layout c:\VS2017Layout
+```
 
 Lorsque vous voulez ajouter une charge de travail supplémentaire, suivez cet exemple qui montre comment faire. Dans ce cas, nous allons ajouter une langue localisée et la charge de travail Azure.  À présent, Managed Desktop et Azure sont inclus dans cette disposition.  Les ressources de langue pour l’anglais et l’allemand sont comprises pour toutes ces charges de travail. La disposition est mise à jour avec la dernière version disponible.
 
-```vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE```
+```cmd
+vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
+```
 
 Si vous souhaitez passer d’une disposition existante à une disposition complète, utilisez l’option --all, comme indiqué dans l’exemple suivant.
 
-```vs_enterprise.exe --layout c:\VS2017Layout --all```
+```cmd
+vs_enterprise.exe --layout c:\VS2017Layout --all
+```
 
-## <a name="deploying-from-a-network-installation"></a>Déploiement à partir d’une installation réseau
+## <a name="deploy-from-a-network-installation"></a>Effectuer un déploiement à partir d’une installation réseau
 
 Les administrateurs peuvent déployer Visual Studio sur les stations de travail clientes dans le cadre d’un script d’installation. Les utilisateurs qui disposent de droits d’administrateur peuvent aussi exécuter le programme d’installation directement à partir du partage pour installer Visual Studio sur leur ordinateur.
 
-* Les utilisateurs peuvent procéder à l’installation en exécutant : <br>```\\server\products\VS2017\vs_enterprise.exe```
-* Les administrateurs peuvent procéder à l’installation en mode sans assistance en exécutant : <br>```\\server\products\VS2017\vs_enterprise.exe --quiet --wait --norestart```
+* Les utilisateurs peuvent effectuer l’installation en exécutant la commande suivante : <br>
+    ```cmd
+    \\server\products\VS2017\vs_enterprise.exe
+    ```
+
+* Les administrateurs peuvent effectuer l’installation en mode sans assistance en exécutant la commande suivante :
+    ```cmd
+    \server\products\VS2017\vs_enterprise.exe --quiet --wait --norestart
+    ```
 
 > [!IMPORTANT]
 > Pour éviter toute erreur, vérifiez que votre chemin d’installation complet fait moins de 80 caractères.
 >
 > [!TIP]
-> Quand elle est exécutée dans le cadre d’un fichier de commandes, l’option `--wait` garantit que le processus `vs_enterprise.exe` attend que l’installation soit terminée avant de retourner un code de sortie. C’est utile si un administrateur d’entreprise souhaite effectuer d’autres opérations sur une installation terminée (par exemple, pour [appliquer une clé de produit sur une installation réussie](automatically-apply-product-keys-when-deploying-visual-studio.md)), alors qu’il doit attendre que l’installation se termine pour gérer le code de retour de cette installation.  Si vous n’utilisez pas `--wait`, le processus `vs_enterprise.exe` s’arrête avant que l’installation soit terminée et retourne un code de sortie incorrect qui ne représente pas l’état de l’opération d’installation.
+> Quand elle est exécutée dans le cadre d’un fichier de commandes, l’option `--wait` garantit que le processus `vs_enterprise.exe` attend que l’installation soit terminée avant de retourner un code de sortie.<br><br>C’est utile si un administrateur d’entreprise souhaite effectuer d’autres opérations sur une installation terminée (par exemple, pour [appliquer une clé de produit sur une installation réussie](automatically-apply-product-keys-when-deploying-visual-studio.md)), alors qu’il doit attendre que l’installation se termine pour gérer le code de retour de cette installation.<br><br>Si vous n’utilisez pas `--wait`, le processus `vs_enterprise.exe` s’arrête avant que l’installation soit terminée et retourne un code de sortie incorrect qui ne représente pas l’état de l’opération d’installation.
 
-Lorsque vous installez à partir d’une disposition, le contenu qui est installé est acquis à partir de la disposition. Toutefois, si vous sélectionnez un composant qui ne se trouve pas dans la disposition, celui-ci est téléchargé à partir d’Internet.  Si vous voulez empêcher le programme d’installation de Visual Studio de télécharger le contenu manquant dans la disposition, utilisez l’option `--noWeb`.  Si `--noWeb` est utilisé et qu’un contenu à installer est absent de la disposition, l’installation échoue. 
+Lorsque vous installez à partir d’une disposition, le contenu qui est installé est acquis à partir de la disposition. Toutefois, si vous sélectionnez un composant qui ne se trouve pas dans la disposition, celui-ci est téléchargé à partir d’Internet.  Si vous voulez empêcher le programme d’installation de Visual Studio de télécharger le contenu manquant dans la disposition, utilisez l’option `--noWeb`. Si `--noWeb` est utilisé et qu’un contenu à installer est absent de la disposition, l’installation échoue.
 
 > [!IMPORTANT]
 > L’option `--noWeb` n’empêche pas le programme d’installation de Visual Studio de vérifier la présence de mises à jour. Pour plus d’informations, consultez la page [Contrôler les mises à jour applicables aux déploiements de Visual Studio à partir du réseau](controlling-updates-to-visual-studio-deployments.md).
@@ -138,16 +188,16 @@ Si vous avez utilisé le paramètre `--wait`, en fonction du résultat de l’op
   | 3010 | Opération effectuée avec succès, mais l’installation nécessite un redémarrage avant de pouvoir être utilisée |
   | Autre | Une condition d’échec s’est produite - Pour plus d’informations, consultez les journaux |
 
-## <a name="updating-a-network-install-layout"></a>Mise à jour d’une disposition d’installation réseau
+## <a name="update-a-network-install-layout"></a>Mettre à jour une disposition d’installation réseau
 
 Quand les mises à jour de produit deviennent disponibles, vous avez la possibilité de [mettre à jour la disposition d’installation réseau](update-a-network-installation-of-visual-studio.md) pour intégrer les packages mis à jour.
 
 ## <a name="how-to-create-a-layout-for-a-previous-visual-studio-2017-release"></a>Comment créer une disposition pour une version antérieure de Visual Studio 2017
 
 > [!NOTE]
-> Les programmes d’amorçage de Visual Studio 2017 qui sont disponibles sur [visualstudio.microsoft.com](http://visualstudio.microsoft.com) téléchargent et installent la dernière version de Visual Studio 2017 disponible chaque fois qu’ils sont exécutés. Si vous téléchargez un programme d’amorçage de Visual Studio aujourd’hui et que vous l’exécutez pendant six mois à partir de maintenant, celui-ci installe la version de Visual Studio 2017 disponible à ce moment-là. Si vous créez une disposition, l’installation de Visual Studio à partir de cette disposition installe la version spécifique de Visual Studio qui existe dans la disposition. Même si une version plus récente peut exister en ligne, vous obtenez la version de Visual Studio qui se trouve dans la disposition.
+> Les programmes d’amorçage de Visual Studio 2017 disponibles sur [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) téléchargent et installent la dernière version de Visual Studio 2017, chaque fois qu’ils sont exécutés.<br><br>Ainsi, si vous téléchargez un *programme d’amorçage* de Visual Studio aujourd’hui, et si vous l’exécutez dans six mois, il installe la version de Visual Studio 2017 disponible au moment où vous exécutez le programme d’amorçage.<br><br>Toutefois, si vous créez une *disposition*, et si vous l’installez à partir de celle-ci, la disposition installe la version spécifique de Visual Studio qui existe dans la disposition. Même si une version plus récente peut exister en ligne, vous obtenez la version de Visual Studio qui se trouve dans la disposition.
 
-Si vous devez créer une disposition pour une version antérieure de Visual Studio 2017, vous pouvez accéder à https://my.visualstudio.com et télécharger les versions « corrigées » des programmes d’amorçage de Visual Studio 2017.
+Si vous devez créer une disposition pour une version antérieure de Visual Studio 2017, accédez à [https://my.visualstudio.com](https://my.visualstudio.com) pour télécharger les versions « corrigées » des programmes d’amorçage de Visual Studio 2017.
 
 ### <a name="how-to-get-support-for-your-offline-installer"></a>Comment obtenir de l’assistance pour votre programme d’installation hors connexion
 
@@ -155,11 +205,11 @@ Si vous rencontrez un problème avec votre installation hors connexion, nous vou
 
 Nous offrons également une option de support par [**Conversation en direct**](https://visualstudio.microsoft.com/vs/support/#talktous) (en anglais uniquement) pour les problèmes liés à l’installation.
 
-D’autres options de support sont également à votre disposition. Pour en obtenir la liste, consultez notre page [Nous contacter](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
+D’autres options de support sont également à votre disposition. Pour en obtenir la liste, consultez notre page [Nous contacter](../ide/talk-to-us.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Installer Visual Studio](install-visual-studio.md)
+* [Mettre à jour une installation réseau de Visual Studio 2017](update-a-network-installation-of-visual-studio.md)
 * [Guide de l’administrateur Visual Studio](visual-studio-administrator-guide.md)
 * [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [ID de charge de travail et de composant Visual Studio](workload-and-component-ids.md)

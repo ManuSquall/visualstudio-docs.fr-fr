@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8580163b0bc6c56480479794658019a22d0ea02c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f91646575fba2df1f48c08adc7a9233bb63f27df
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970316"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630481"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Procédure : collecter des données de performances pour un site web
 
@@ -101,7 +101,7 @@ Vous pouvez utiliser **l’Assistant Performance** pour collecter des données d
 
 ## <a name="see-also"></a>Voir aussi
 
-[Vues d’ensemble](../profiling/overviews-performance-tools.md)  
-[Configurer des sessions de performances](../profiling/configuring-performance-sessions.md)  
-[Comprendre les valeurs de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md)  
-[Fonctionnement des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)
+[Vues d’ensemble](../profiling/overviews-performance-tools.md)
+[Configurer des sessions de performances](../profiling/configuring-performance-sessions.md)
+[Comprendre le fonctionnement des valeurs de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md)
+[Comprendre le fonctionnement des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)

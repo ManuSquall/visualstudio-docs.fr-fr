@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 01/04/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Découvrez plus d’informations sur la gamme complète des avantages disponibles sur le portail des abonnements Visual Studio
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 6bd5e0ac308a8644f6428deb7468e00007f7c70b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 65066db3f5a3ebb21cf390b3c206a1a2cf4d5495
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859018"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843799"
 ---
 # <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>Utilisation du portail des abonnés- my.<span></span>visualstudio<span></span>.com
 
@@ -22,10 +20,10 @@ Le portail Abonnements Visual Studio, [https://my.visualstudio.com](https://my.v
 
 Pour utiliser le portail, vous devez vous connecter avec l'identité associée à votre abonnement.  Cela peut être votre compte Microsoft (MSA) ou une adresse e-mail qui vous a été fournie par une organisation, par exemple votre employeur ou votre école.  Découvrez-en plus sur la [connexion](signing-in.md).
 
-Le portail comporte six pages.  Chaque page vous permet d’accéder à différents produits ou services inclus avec votre abonnement.  Les six pages disponibles sont les suivantes : Avantages, Téléchargements, Clés de produit, Abonnements, Support et Marketplace. 
+Le portail comporte six pages.  Chaque page vous permet d’accéder à différents produits ou services inclus avec votre abonnement.  Les six pages disponibles sont les suivantes : Avantages, Téléchargements, Clés de produit, Abonnements, Support et Marketplace.
 
 ## <a name="benefitshttpsmyvisualstudiocombenefitswtmcidomsftdocs"></a>[Avantages](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
-Les outils et les services inclus avec votre abonnement sont affichés sous forme de « vignettes » sur la page Avantages.  Tous les abonnements n’incluent pas tous les avantages. Les vignettes sont regroupées en trois catégories : Outils, Développement professionnel et Support.  Si vous utilisez Visual Studio Dev Essentials, il existe également une catégorie appelée Recommandés, qui peut contenir des avantages sélectionnés dans les trois autres catégories.
+Les outils et les services inclus avec votre abonnement sont affichés sous forme de « vignettes » sur la page Avantages.  Tous les abonnements n’incluent pas tous les avantages. Les vignettes sont regroupées en trois catégories :  outils, développement professionnel et support.  Si vous utilisez Visual Studio Dev Essentials, il existe également une catégorie appelée Recommandés, qui peut contenir des avantages sélectionnés dans les trois autres catégories.
 
 ### <a name="tools"></a>Outils
 La catégorie Outils contient les principaux outils de développement, comme l’environnement IDE Visual Studio et Azure DevOps, ainsi que des outils fournis par nos partenaires.  Elle inclut également des services comme Azure et Visual Studio App Center.

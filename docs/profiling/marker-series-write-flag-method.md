@@ -12,55 +12,52 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f70f6b357e8baaf721c751c57b21924afaff90e6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f09cca9bd1e3babccb0debc369881a0efa00fa0b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069775"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625112"
 ---
 # <a name="markerserieswriteflag-method"></a>marker_series::write_flag, méthode
-Écrit un indicateur dans le fichier de trace du visualiseur concurrentiel.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-void write_flag(  
-   _In_ LPCTSTR _Format,  
-   ...  
-);  
-void write_flag(  
-   marker_importance _Importance,  
-   _In_ LPCTSTR _Format,  
-   ...  
-);  
-void write_flag(  
-   int _Category,  
-   _In_ LPCTSTR _Format,  
-   ...  
-);  
-void write_flag(  
-   marker_importance _Importance,  
-   int _Category,  
-   _In_ LPCTSTR _Format,  
-   ...  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `_Format`  
- Chaîne de mise en forme composite contenant du texte associé à zéro, un ou plusieurs éléments de mise en forme qui correspondent aux objets de la liste d’arguments.  
-  
- `_Importance`  
- Niveau d’importance.  
-  
- `_Category`  
- Catégorie.  
-  
-## <a name="requirements"></a>Spécifications  
- **En-tête :** *cvmarkersobj.h*  
-  
- **Espace de noms :** Concurrency::diagnostic  
-  
-## <a name="see-also"></a>Voir aussi  
- [marker_series, classe](../profiling/marker-series-class.md)
+Écrit un indicateur dans le fichier de trace du visualiseur concurrentiel.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+void write_flag(
+   _In_ LPCTSTR _Format,
+   ...
+);
+void write_flag(
+   marker_importance _Importance,
+   _In_ LPCTSTR _Format,
+   ...
+);
+void write_flag(
+   int _Category,
+   _In_ LPCTSTR _Format,
+   ...
+);
+void write_flag(
+   marker_importance _Importance,
+   int _Category,
+   _In_ LPCTSTR _Format,
+   ...
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `_Format` Chaîne de mise en forme composite contenant du texte associé à zéro, un ou plusieurs éléments de mise en forme qui correspondent aux objets de la liste d’arguments.
+
+ `_Importance` Niveau d’importance.
+
+ `_Category` Catégorie.
+
+## <a name="requirements"></a>Spécifications
+ **En-tête :** *cvmarkersobj.h*
+
+ **Espace de noms :** Concurrency::diagnostic
+
+## <a name="see-also"></a>Voir aussi
+- [marker_series, classe](../profiling/marker-series-class.md)

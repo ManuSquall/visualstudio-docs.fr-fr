@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9451dea474f5d3ae460af20561e80f0660e33026
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2b8552adfd4a7f94c58bcb32a60fbe8cd4c9323b
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956067"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796528"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Étape 1 : Créer un projet Application Windows Forms
 
@@ -37,20 +37,21 @@ Lorsque vous créez une visionneuse d’images, la première étape consiste à 
 
      Visual Studio crée une solution pour votre programme. Une solution joue le rôle de conteneur pour tous les projets et fichiers requis par votre programme. Ces termes seront expliqués plus en détail dans les prochaines étapes de ce didacticiel.
 
-4. L'illustration suivante montre ce que vous devez maintenant voir dans l'interface de Visual Studio.
-
-    > [!NOTE]
-    > Votre disposition de fenêtre peut ne pas se présenter exactement comme dans cette illustration. La disposition exacte de la fenêtre dépend de la version de Visual Studio, du langage de programmation que vous utilisez et d'autres facteurs. Toutefois, vous devez vérifier que les trois fenêtres apparaissent.
-
-     ![Fenêtre IDE](../ide/media/express_ideoverview_visio.png)<br/>*Fenêtre de l’**IDE***
-
-     L’interface contient trois fenêtres : une fenêtre principale, l’**Explorateur de solutions** et la fenêtre **Propriétés**.
+4. L’environnement de développement contient trois fenêtres : une fenêtre principale, l’**Explorateur de solutions** et la fenêtre **Propriétés**.
 
      Si l’une de ces fenêtres est manquante, restaurez la disposition de fenêtre par défaut en sélectionnant dans la barre de menus **Fenêtre** > **Rétablir la disposition de fenêtre**. Vous pouvez également afficher les fenêtres à l'aide des commandes de menu. Dans la barre de menus, choisissez **Affichage** > **Fenêtre Propriétés** ou **Explorateur de solutions**. Si d’autres fenêtres sont ouvertes, fermez-les en choisissant le bouton **Fermer** (x) dans l’angle supérieur droit.
 
-5. L'illustration montre les fenêtres suivantes (dans le sens des aiguilles d'une montre, à partir de l'angle supérieur gauche) :
+    ::: moniker range="vs-2017"
 
-    - **Fenêtre principale** Dans cette fenêtre, vous effectuez la majeure partie de votre travail, notamment l’utilisation des formulaires et la modification du code. Dans l'illustration, la fenêtre affiche un formulaire dans l'**éditeur de formulaires**. En haut de la fenêtre, les onglets **Page de démarrage** et **Form1.cs [Design]** s’affichent. (En Visual Basic, le nom d'un onglet se termine par *.vb* au lieu de *.cs*.)
+    - **Fenêtre principale** Dans cette fenêtre, vous effectuez la majeure partie de votre travail, notamment l’utilisation des formulaires et la modification du code. La fenêtre montre un formulaire dans l’**éditeur de formulaires**. En haut de la fenêtre, les onglets **Page de démarrage** et **Form1.cs [Design]** s’affichent. (En Visual Basic, le nom d'un onglet se termine par *.vb* au lieu de *.cs*.)
+
+    ::: moniker-end
+
+    ::: moniker range=">=vs-2019"
+
+    - **Fenêtre principale** Dans cette fenêtre, vous effectuez la majeure partie de votre travail, notamment l’utilisation des formulaires et la modification du code. La fenêtre montre un formulaire dans l’**éditeur de formulaires**.
+
+    ::: moniker-end
 
     - **Fenêtre Explorateur de solutions** Dans cette fenêtre, vous pouvez afficher tous les éléments de votre solution et y accéder. Si vous sélectionnez un fichier, le contenu de la fenêtre **Propriétés** est modifié. Si vous ouvrez un fichier de code (qui se termine par *.cs* en Visual C# et par *.vb* en Visual Basic), le fichier de code ou un concepteur pour le fichier de code s'affiche. Un concepteur est une surface visuelle à laquelle vous pouvez ajouter des contrôles tels que des boutons et des listes. Pour les formulaires Visual Studio, le concepteur est appelé **Concepteur Windows Forms**.
 

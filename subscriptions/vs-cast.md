@@ -6,21 +6,19 @@ manager: lank
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Découvrir l’avantage CAST Highlight disponible dans certains abonnements Visual Studio
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ac1d960ea16346de6d1ca12a2b0602eedf47f704
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 1858170bb57d4ea46b1aac1d08857dea9609d22d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54379809"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840895"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Avantage CAST Highlight dans les abonnements Visual Studio
 
-Les développeurs qui migrent leurs logiciels vers le cloud ont besoin d’insights critiques. CAST Highlight permet aux abonnés Visual Studio Enterprise d’analyser rapidement le code source de leur application pour identifier son degré de préparation au cloud avant de la migrer vers Azure et de superviser la progression de l’application pendant et après la migration.  
+Les développeurs qui migrent leurs logiciels vers le cloud ont besoin d’insights critiques. CAST Highlight permet aux abonnés Visual Studio Enterprise d’analyser rapidement le code source de leur application pour identifier son degré de préparation au cloud avant de la migrer vers Azure et de superviser la progression de l’application pendant et après la migration.
 
-Les abonnés Visual Studio Enterprise bénéficient d’un abonnement gratuit d’un mois à la version complète de CAST Highlight pour un maximum de cinq applications par abonné. 
+Les abonnés Visual Studio Enterprise bénéficient d’un abonnement gratuit d’un mois à la version complète de CAST Highlight pour un maximum de cinq applications par abonné.
 
 
 ## <a name="activation-steps"></a>Étapes d’activation
@@ -32,7 +30,7 @@ Les abonnés Visual Studio Enterprise bénéficient d’un abonnement gratuit d�
    > [!div class="mx-imgBorder"]
    > ![Vignette de l’avantage CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-tile.png)
 
-   
+
 0. Vous recevez un message vous informant que votre code a été récupéré.  Cliquez sur **Activer**. À ce moment-là, vous êtes redirigé vers la page de CAST Highlight où vous pouvez poursuivre le processus d’activation.  (Si vous choisissez de ne pas procéder à l’activation à ce stade, vous pouvez toujours revenir à la vignette de CAST Highlight dans le portail de l’abonnement.  Le lien « Obtenir un code » devient « Activer ». Cliquez sur ce lien pour reprendre le processus d’activation.)
 
 0. Vous êtes alors redirigé vers la page de CAST Highlight où vous pouvez explorer les fonctionnalités de votre abonnement.  Quand vous êtes prêt à créer votre compte, indiquez simplement vos informations de contact dans le formulaire web et cliquez sur **Envoyer**.
@@ -43,16 +41,16 @@ Les abonnés Visual Studio Enterprise bénéficient d’un abonnement gratuit d�
    > [!NOTE]
    > Les activations de l’avantage CAST Highlight sont limitées à dix par organisation.  Si les dix activations de votre organisation sont déjà utilisées, vous ne pouvez pas activer l’avantage CAST Highlight et vous recevez un e-mail accompagné d’informations.
 
- 0. Après l’envoi de vos informations, une page confirmant la réception de votre demande s’affiche.    
+ 0. Après l’envoi de vos informations, une page confirmant la réception de votre demande s’affiche.
 
     > [!div class="mx-imgBorder"]
     > ![Page de remerciement de CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-thankyou.png)
 
-0.  L’équipe de CAST va évaluer votre demande et vous contactera pour finaliser la création de votre compte.  
+0.  L’équipe de CAST va évaluer votre demande et vous contactera pour finaliser la création de votre compte.
 
 0.  Vous recevrez également l’e-mail suivant de CAST confirmant la réception de votre demande.
 
-   *Nous vous remercions de votre demande d’activation de CAST Highlight pendant 30 jours, une offre réservée exclusivement aux clients de Microsoft Visual Studio Enterprise.*  
+   *Nous vous remercions de votre demande d’activation de CAST Highlight pendant 30 jours, une offre réservée exclusivement aux clients de Microsoft Visual Studio Enterprise.*
 
    *Nous examinons actuellement votre demande d’accès à CAST Highlight. Nous vous contacterons dans un délai de 48 heures.*
 
@@ -60,7 +58,7 @@ Les abonnés Visual Studio Enterprise bénéficient d’un abonnement gratuit d�
    *Greg*
 
 
-Si votre demande est approuvée, vous recevrez un deuxième e-mail confirmant la création de votre compte et vous demandant de cliquer sur le lien d’activation pour terminer le processus d’activation. 
+Si votre demande est approuvée, vous recevrez un deuxième e-mail confirmant la création de votre compte et vous demandant de cliquer sur le lien d’activation pour terminer le processus d’activation.
 
    *Nous avons vérifié et validé votre demande d’accès à CAST Highlight. Bienvenue !*
 
@@ -76,7 +74,7 @@ Si votre demande est approuvée, vous recevrez un deuxième e-mail confirmant la
     -   [Guide de démarrage (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
     -   Tutoriel vidéo : [Configurer votre portefeuille](https://www.youtube.com/watch?v=MDm8ln4vuGE)
     -   Tutoriel vidéo : [Intégrer vos applications](https://www.youtube.com/watch?v=x-7Dsn3Rmw4)
-    
+
    *Cordialement,*
    *Greg*
 
@@ -108,7 +106,7 @@ Si votre demande est approuvée, vous recevrez un deuxième e-mail confirmant la
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
-## <a name="support-resources"></a>Ressources de support technique
+## <a name="support-resources"></a>Ressources de support
 -  Besoin d’aide concernant l’utilisation de CAST Highlight ?  Consultez les ressources suivantes :
     - [Soumettre une demande de support](https://casthighlight.com/support/)
     - [Guide de démarrage (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
@@ -120,4 +118,4 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 
 Si vous n’avez pas encore activé l’avantage Azure fourni avec votre abonnement, visitez [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs), puis cliquez sur la vignette Azure dans la catégorie Outils pour configurer votre abonnement Azure et échanger vos crédits Azure gratuits.
 
-Et n’oubliez pas de consulter la démonstration, le guide de l’utilisateur et les tutoriels vidéo mentionnés dans l’e-mail de Greg. 
+Et n’oubliez pas de consulter la démonstration, le guide de l’utilisateur et les tutoriels vidéo mentionnés dans l’e-mail de Greg.

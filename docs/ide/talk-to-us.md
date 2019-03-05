@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 222d96935418a46038f369c25472ed1a938215e7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 65bfd75dfaeb31ae9864824ff0ab14c874e86d36
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946073"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56609434"
 ---
 # <a name="visual-studio-product-feedback"></a>Commentaires sur les produits Visual Studio
 
@@ -38,12 +38,12 @@ Les préversions de Visual Studio possèdent un élément de menu **Évaluer ce 
 
 Pour plus d’informations sur le support de Visual Studio, consultez la page [Support du cycle de vie et de la maintenance](/visualstudio/productinfo/vs-servicing-vs).
 
-Pour les autres produits et services Microsoft, consultez [Support Microsoft](http://go.microsoft.com/fwlink/?LinkID=99019) pour accéder à l’aide en ligne.
+Pour les autres produits et services Microsoft, consultez [Support Microsoft](https://go.microsoft.com/fwlink/?LinkID=99019) pour accéder à l’aide en ligne.
 
 > [!NOTE]
-> Le support hors des États-Unis et du Canada peut varier. Pour obtenir la liste des contacts régionaux, consultez les [sites mondiaux Microsoft](http://www.microsoft.com/worldwide/).
+> Le support hors des États-Unis et du Canada peut varier. Pour obtenir la liste des contacts régionaux, consultez les [sites mondiaux Microsoft](https://www.microsoft.com/worldwide/).
 
-Des contrats sont possibles via différentes offres de Support Entreprise pour les grandes organisations qui ont besoin d’un support technique géré directement par Microsoft. Pour plus d’informations, consultez la page [Solutions de support Entreprise de Microsoft](http://go.microsoft.com/fwlink/?LinkId=258223).
+Des contrats sont possibles via différentes offres de Support Entreprise pour les grandes organisations qui ont besoin d’un support technique géré directement par Microsoft. Pour plus d’informations, consultez la page [Solutions de support Entreprise de Microsoft](https://go.microsoft.com/fwlink/?LinkId=258223).
 
 Si le produit est fourni installé avec un nouvel ordinateur ou appareil, le fabricant de matériel fournit le support technique et l’assistance pour ce logiciel. Contactez directement le fabricant pour le support technique.
 
@@ -51,7 +51,7 @@ Les services de support technique Microsoft sont soumis aux prix, modalités et 
 
 ## <a name="i-want-to-get-involved-in-the-developer-community"></a>Je souhaite participer à la communauté des développeurs
 
-Si vous souhaitez partager vos questions et vos réponses avec d’autres développeurs, utilisez le site de la [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com), les [forums MSDN](https://social.msdn.microsoft.com/Forums/home) ou [StackOverflow](http://stackoverflow.com/). Vous pouvez aussi afficher le code d’autres développeurs et partager vos propres exemples sur le site [Exemples de code de développeurs](https://code.msdn.microsoft.com/).
+Si vous souhaitez partager des questions et des réponses avec d’autres développeurs, utilisez le site de la [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com), les [forums MSDN](https://social.msdn.microsoft.com/Forums/home) ou [Stack Overflow](https://stackoverflow.com/). Vous pouvez aussi afficher le code d’autres développeurs et partager vos propres exemples sur le site [Exemples de code de développeurs](https://code.msdn.microsoft.com/).
 
 ## <a name="i-want-to-help-improve-the-visual-studio-documentation"></a>Je souhaite aider à améliorer la documentation de Visual Studio
 

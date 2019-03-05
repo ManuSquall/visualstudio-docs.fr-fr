@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 10/03/2017
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Découvrez comment tirer le meilleur parti de vos abonnements Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 84e3f62bfb0939bdb30f562629c84a092cd02f4b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2739578bb170d32b61246bb01236e621c8b7df8b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822161"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842661"
 ---
 # <a name="managing-subscriptions"></a>Gestion des abonnements
 
@@ -91,19 +89,19 @@ Dans la page Avantages, l’abonnement actif est affiché en surbrillance dans l
 
 **Abonnements standard**
 
-- Microsoft Store : si vous avez acheté votre abonnement sur [Microsoft Store](http://www.microsoft.com/store), vous pouvez aussi le renouveler à cet endroit.
-- Licence en volume : si votre entreprise achète les abonnements avec une licence en volume, votre administrateur doit contacter un revendeur pour faire renouveler votre abonnement.
+- Microsoft Store : si vous avez acheté votre abonnement sur [Microsoft Store](http://www.microsoft.com/store), vous pouvez aussi le renouveler à partir de cet emplacement.
+- Licence en volume :  si votre entreprise achète les abonnements avec une licence en volume, votre administrateur doit contacter un revendeur pour faire renouveler votre abonnement.
 
-**Abonnements cloud :** ces abonnements n’ont pas besoin d’être renouvelés. Ils restent actifs tant que leur paiement est à jour.
+**Abonnements cloud :**  les abonnements cloud n’ont pas besoin d’être renouvelés. Ils restent actifs tant que leur paiement est à jour.
 
-**Abonnements achetés via des programmes :** si vous obtenez votre abonnement via un programme, votre abonnement est lié à votre participation au programme. Vous pouvez obtenir plus d’informations auprès des contacts désignés pour les différents programmes.
+**Abonnements acquis via des programmes :**  si vous obtenez votre abonnement via un programme, votre abonnement est lié à votre participation à ce programme. Vous pouvez obtenir plus d’informations auprès des contacts désignés pour les différents programmes.
 
 - [Imagine](https://imagine.microsoft.com/about)
 - [BizSpark](https://bizspark.microsoft.com/About/Offers)
 - [Microsoft Partner Network](https://partner.microsoft.com/en-us)
 - [Microsoft Certified Trainer](https://www.microsoft.com/en-us/learning/mct-certification.aspx)
 
-**Visual Studio Dev Essentials :** Dev Essentials est un programme gratuit et les appartenances n’expirent pas.
+**Visual Studio Dev Essentials :**  Dev Essentials est un programme gratuit, et les appartenances n’expirent pas.
 
 ## <a name="transferring-subscriptions"></a>Réattribution d’abonnements
 

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0eb1f0e404bf6815bc26e3c1a14aeff79cde40e8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b6dc096eebde5c47bfa74214b24b91a05511894d
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945378"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56800556"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Tutoriel : Créer une application simple avec Visual Basic
 
@@ -32,9 +32,19 @@ Quand vous démarrez Visual Studio pour la première fois, vous êtes invité à
 
 ![Boîte de dialogue Choisir les paramètres](../media/exploreide-settings.png)
 
+::: moniker range="vs-2017"
+
 Après le démarrage de Visual Studio, vous voyez les fenêtres Outil, les menus, les barres d’outils et l’espace de la fenêtre principale. Les fenêtres Outil sont ancrées sur les côtés gauche et droit de la fenêtre d'application. **Lancement rapide**, la barre de menus et la barre d'outils standard sont situés en haut. La **page de démarrage**est située au centre de la fenêtre d'application. Lorsque vous chargez une solution ou un projet, les éditeurs et les concepteurs apparaissent dans l'espace où se trouve la **Page de démarrage** . Quand vous développez une application, vous passez la majeure partie de votre temps dans cette zone centrale.
 
-![IDE avec paramètres généraux appliqués](../media/exploreide-idewithgeneralsettings.png)
+![IDE Visual Studio 2017 avec paramètres généraux appliqués](../media/exploreide-idewithgeneralsettings.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Quand vous lancez Visual Studio, la fenêtre **Démarrer** s’ouvre en premier. Sélectionnez **Continuer sans code** pour ouvrir l’environnement de développement. Vous allez voir les fenêtres Outils, les menus et barres d’outils ainsi que l’espace de la fenêtre principale. Les fenêtres Outil sont ancrées sur les côtés gauche et droit de la fenêtre d'application. **Lancement rapide**, la barre de menus et la barre d'outils standard sont situés en haut. Quand vous chargez une solution ou un projet, les éditeurs et les concepteurs apparaissent dans l’espace central de la fenêtre d’application. Quand vous développez une application, vous passez la majeure partie de votre temps dans cette zone centrale.
+
+::: moniker-end
 
 ## <a name="create-the-project"></a>Créer le projet
 
@@ -261,7 +271,7 @@ Maintenant que vous avez vérifié que tout fonctionne, vous pouvez préparer un
 
 2. Remplacez la configuration de build **Debug** pour HelloWPFApp par **Release** à l’aide du contrôle de liste déroulante de la barre d’outils (« Debug » est actuellement affiché).
 
-     ![Barre d’outils Standard avec Mise en production sélectionnée](../media/exploreide-releaseversion.png)
+     ![Barre d'outils Standard avec Version finale sélectionnée](../media/exploreide-releaseversion.png)
 
 3. Générez la solution en choisissant **Générer** > **Générer la solution**.
 

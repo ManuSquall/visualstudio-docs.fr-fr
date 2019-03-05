@@ -13,20 +13,20 @@ ms.assetid: 211edbd7-9fe4-4251-ba85-8bec4363261b
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c1efe1266f0d6c8c644aa8115303926f81f74d30
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bd66bcb3615477abc2fc9a8122f2ec4675f37bbb
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948613"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796684"
 ---
 # <a name="configure-ports-for-test-controllers-and-test-agents"></a>Configurer les ports des contrôleurs de test et des agents de test
 
-Vous pouvez modifier les ports entrants par défaut utilisés par le contrôleur de test, l’agent de test et le client. Cela peut s’avérer nécessaire si vous essayez d’utiliser le contrôleur de test, l’agent de test ou le client avec un autre logiciel qui entre en conflit avec les paramètres de port. Une autre raison motivant le changement de ports est la restriction de pare-feu entre le contrôleur de test et le client. Dans ce cas, vous pouvez configurer manuellement le port pour l'activer pour un pare-feu afin que le contrôleur de test puisse envoyer des résultats au client.
+Vous pouvez modifier les ports entrants par défaut utilisés par le contrôleur de test, l'agent de test et le client. Cela peut s'avérer nécessaire si vous essayez d'utiliser le contrôleur de test, l'agent de test ou le client avec un autre logiciel qui entre en conflit avec les paramètres de port. Une autre raison motivant le changement de ports est la restriction de pare-feu entre le contrôleur de test et le client. Dans ce cas, vous pouvez configurer manuellement le port pour l'activer pour un pare-feu afin que le contrôleur de test puisse envoyer des résultats au client.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-L'illustration suivante montre les points de connexion entre le contrôleur de test, l'agent de test et le client. Elle décrit les ports utilisés pour les connexions entrantes et sortantes ainsi que les restrictions de sécurité sur ces ports.
+L’illustration suivante montre les points de connexion entre le contrôleur de test, l’agent de test et le client. Elle décrit les ports utilisés pour les connexions entrantes et sortantes ainsi que les restrictions de sécurité sur ces ports.
 
 ![Ports et sécurité du contrôleur de test et de l’agent de test](../test/media/test-controller-agent-firewall.png)
 
@@ -36,14 +36,14 @@ Le port par défaut utilisé par le contrôleur de test est 6901 et le port par
 
 - **Test Controller** Les connexions entrantes s’effectuent sur le port TCP 6901. Si cela s'avère nécessaire, vous pouvez configurer le port entrant. Pour plus d’informations, voir [Configurer les ports entrants](#configure-the-incoming-ports).
 
-    Le contrôleur de test doit être en mesure d’établir la connexion sortante vers les agents de test et le client.
+    Le contrôleur de test doit être en mesure d'établir la connexion sortante vers les agents de test et le client.
 
     > [!NOTE]
     > Le contrôleur de test a besoin d’une connexion **Partage de fichiers et d’imprimantes** entrante ouverte.
 
 - **Test Agent** Les connexions entrantes s’effectuent sur le port TCP 6910. Si cela s'avère nécessaire, vous pouvez configurer le port entrant. Pour plus d’informations, voir [Configurer les ports entrants](#configure-the-incoming-ports).
 
-   L’agent de test doit être en mesure d’établir une connexion sortante vers le contrôleur de test.
+   L'agent de test doit être en mesure d'établir une connexion sortante vers le contrôleur de test.
 
 - **Client** Par défaut, un port TCP aléatoire est utilisé pour les connexions entrantes. Si cela s'avère nécessaire, vous pouvez configurer le port entrant. Pour plus d’informations, voir [Configurer les ports entrants](#configure-the-incoming-ports).
 
@@ -63,7 +63,7 @@ Des ports TCP aléatoires sont utilisés pour toutes les connexions sortantes.
 
 ## <a name="configure-the-incoming-ports"></a>Configurer les ports entrants
 
-Suivez les instructions ci-après pour configurer les ports d’un contrôleur de test et des agents de test.
+Suivez les instructions ci-après pour configurer les ports d'un contrôleur de test et des agents de test.
 
 - **Service de contrôleur** Changez la valeur du port en modifiant le fichier *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTCcontroller.exe.config* :
 

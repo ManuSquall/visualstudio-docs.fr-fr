@@ -1,7 +1,7 @@
 ---
 title: Conseils et astuces d’accessibilité pour Visual Studio
 description: Découvrez les conseils et astuces qui peuvent faciliter l’utilisation de l’environnement de développement intégré (IDE) Visual Studio pour tout le monde, y compris les personnes présentant un handicap.
-ms.date: 09/15/2017
+ms.date: 02/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
@@ -11,17 +11,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8660d60706e903895e1be8471620666d812c7862
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 67166318335495f0f8454e1c987fdbfb14c0cac0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318550"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680930"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Conseils et astuces d’accessibilité pour Visual Studio
 
 > [!TIP]
-> Pour en savoir plus sur les dernières nouveautés en matière d’accessibilité, consultez le billet de blog [Améliorations apportées à l’accessibilité dans Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/).
+> Pour en savoir plus sur les mises à jour relatives à l’accessibilité, consultez le billet de blog [Améliorations apportées à l’accessibilité dans Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/).
 
 Visual Studio inclut des fonctionnalités d’accessibilité intégrées qui sont compatibles avec les lecteurs d’écran et d’autres appareils de technologie d’assistance. Cette rubrique répertorie des combinaisons de touches de raccourci courantes que vous pouvez utiliser pour effectuer des tâches avec le clavier uniquement, et inclut des informations sur l’utilisation de thèmes à contraste élevé pour améliorer la visibilité. Elle vous montre également comment utiliser des annotations pour révéler des informations utiles sur votre code et comment définir des signaux audio pour les événements de build et de point d’arrêt.
 
@@ -64,6 +64,7 @@ Parmi d’autres combinaisons de touches de raccourci utiles figurent les suivan
 |Boîte de dialogue|Cocher ou décocher une case dans une boîte de dialogue. <br> <br> **REMARQUE :** Raccourci Windows standard|**Barre d’espace**|
 |Menus contextuels|Ouvrir un menu contextuel (clic droit). <br> <br> **REMARQUE :** Raccourci Windows standard|**Maj** + **F10**|
 |Menus|Accéder rapidement à un élément de menu à l’aide de ses touches accélérateur. Choisissez la touche **Alt** suivie par les lettres soulignées dans un menu pour activer la commande. Par exemple, pour afficher la boîte de dialogue Ouvrir un projet dans Visual Studio, choisissez **Alt** + **F** + **O** + **P**.  <br><br> **REMARQUE :** Raccourci Windows standard|**Alt** + **[lettre]**|
+|Zone de recherche de lancement rapide| Utiliser la fonctionnalité de recherche dans Visual Studio|**Ctrl** + **Q**|
 |Fenêtre Boîte à outils|Se déplacer entre les onglets de la boîte à outils.|**Ctrl** + **Flèche haut**<br /><br /> et<br /><br /> **Ctrl** + **Flèche bas**|
 |Fenêtre Boîte à outils|Ajouter un contrôle à partir de la boîte à outils à un formulaire ou un concepteur.|**Entrée**|
 |Clavier, Environnement, boîte de dialogue Options|Supprimer une combinaison de touches entrée dans l’option **Appuyer sur les touches de raccourci**.|**Retour arrière**|

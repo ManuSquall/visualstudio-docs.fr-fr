@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Découvrez l’avantage Visual Studio App Center inclus dans les abonnements Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: fd90f301abae9f0d85509a46255317282f284b9e
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 30953834e36cb88e79a800e0356ac59189165aee
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380111"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843557"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center dans les abonnements Visual Studio
 
@@ -63,7 +61,7 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 ## <a name="frequently-asked-questions"></a>FAQ
 
 ### <a name="q--i-get-an-error-that-my-browser-is-unsupported--whats-wrong"></a>Q :  Je reçois une erreur indiquant que mon navigateur n’est pas pris en charge.  Quel est le problème ?
-A :  App Center nécessite des fonctionnalités récentes qui ne sont peut-être plus fournies par certains navigateurs plus anciens.  Si votre navigateur n’est pas pris en charge, procédez comme suit :
+R :  App Center nécessite des fonctionnalités récentes qui ne sont peut-être plus fournies par certains navigateurs plus anciens.  Si votre navigateur n’est pas pris en charge, procédez comme suit :
 1.  Ouvrez un autre navigateur, tel que Microsoft Edge ou une version récente de Google Chrome, Firefox ou Safari.
 2.  Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) pour Visual Studio, puis connectez-vous.
 3.  Cliquez sur le lien **Commencer** de la vignette Visual Studio App Center.

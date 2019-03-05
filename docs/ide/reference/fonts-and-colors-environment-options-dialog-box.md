@@ -25,16 +25,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20c7561bd3ec991308b2250869a6f0c6f66d117e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b3fd18198811f6235c4e5d0627303e4243ad595b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970827"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700261"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Polices et couleurs, Environnement, boîte de dialogue Options
 
-La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet d’établir un jeu de polices et un modèle de couleurs personnalisés pour divers éléments d’interface utilisateur dans l’environnement de développement intégré (IDE). Vous pouvez accéder à cette boîte de dialogue en cliquant sur **Outils / Options**, puis en sélectionnant **Environnement / Polices et couleurs**. Si cette page n’apparaît pas dans la liste, sélectionnez **Afficher tous les paramètres** dans la boîte de dialogue **Options**.
+La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet d’établir un jeu de polices et un modèle de couleurs personnalisés pour divers éléments d’interface utilisateur dans l’environnement de développement intégré (IDE). Vous pouvez accéder à cette boîte de dialogue en cliquant sur **Outils** > **Options**, puis en sélectionnant **Environnement** > **Polices et couleurs**. Si cette page n’apparaît pas dans la liste, sélectionnez **Afficher tous les paramètres** dans la boîte de dialogue **Options**.
 
 Les changements relatifs au modèle de couleurs ne sont pas appliqués durant la session où vous les apportez. Vous pouvez évaluer les changements de couleurs en ouvrant une autre instance de Visual Studio, et en reproduisant les conditions dans lesquelles vous souhaitez qu'ils soient appliqués.
 
@@ -63,7 +63,13 @@ Répertorie tous les éléments d'interface utilisateur pour lesquels vous pouve
 
 -   **Police d’environnement**
 
-     Change le style de police et la taille de tous les éléments d’interface utilisateur de l’IDE qui ne disposent pas déjà d’une option distincte dans **Afficher les paramètres de**. Par exemple, cette option s’applique à la **Page de démarrage** mais n’affecte pas la fenêtre **Sortie**.
+     Change le style de police et la taille de tous les éléments d’interface utilisateur de l’IDE qui ne disposent pas déjà d’une option distincte dans **Afficher les paramètres de**.
+
+     ::: moniker range="vs-2017"
+
+     Par exemple, cette option s’applique à la **Page de démarrage** mais n’affecte pas la fenêtre **Sortie**.
+
+     ::: moniker-end
 
 -   **[Toutes les fenêtres Outil de texte]**
 

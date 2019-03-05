@@ -9,14 +9,14 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f955642b0dd3a3784f1779ca65967f4b1e606bd7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 23ed63846eb11fd8eba95219aecaae3210e161fd
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911193"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56800529"
 ---
-# <a name="overview-report-a-problem"></a>Vue d'ensemble : Signaler un problème
+# <a name="overview-report-a-problem"></a>Vue d’ensemble : Signaler un problème
 
 L’outil Signaler un problème permet à la Communauté des développeurs Visual Studio de soumettre des problèmes. Chacun de vos signalements de problème devient un élément de travail dans notre système d’ingénierie, ce qui vous permet d’interagir directement avec nos équipes de produit pour nous aider à identifier et à résoudre les problèmes à fort impact. Les commentaires que vous soumettez avec des informations de diagnostics complètes sont essentiels pour améliorer la famille de produits Visual Studio. Nous vous sommes très reconnaissants de prendre le temps de signaler des problèmes.
 
@@ -52,7 +52,7 @@ L’état **Examen en cours** indique que les ingénieurs font leur maximum pour
 
 ![État Besoin de plus d’informations pour le signalement de problème auprès de la Communauté des développeurs](../ide/media/ProblemStates/NeedMoreInfo.jpg)
 
-L’état **Besoin de plus d’informations** indique que nous avons besoin d’informations de diagnostic supplémentaires de votre part pour poursuivre l’investigation.  [Découvrez comment répondre aux demandes Besoin de plus d’informations.](./how-to-report-a-problem-with-visual-studio-2017.md#when-further-information-is-needed-need-more-info)
+L’état **Besoin de plus d’informations** indique que nous avons besoin d’informations de diagnostic supplémentaires de votre part pour poursuivre l’investigation.  [Découvrez comment répondre aux demandes Besoin de plus d’informations.](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed-need-more-info)
 
 - - -
 
@@ -110,7 +110,7 @@ L’état **Fermé - Ne sera pas résolu** indique que nous ne suivons pas le pr
 
 Nous vous recommandons d’utiliser la recherche pour vérifier que le problème que vous êtes sur le point de soumettre n’a pas déjà été signalé. Si vous trouvez un élément existant correspondant à votre problème, suivez-le et votez pour le ticket de ce problème.
 
- Fournissez toutes les informations possibles pour aider nos équipes à reproduire ce à quoi vous êtes confronté.  Ces informations incluent les étapes de reproduction nécessaires, les fragments de code, les captures d’écran, les enregistrements de la reproduction, les fichiers journaux et autres artefacts.  Voici [comment signaler un problème avec Visual Studio](./how-to-report-a-problem-with-visual-studio-2017.md).
+ Fournissez toutes les informations possibles pour aider nos équipes à reproduire ce à quoi vous êtes confronté.  Ces informations incluent les étapes de reproduction nécessaires, les fragments de code, les captures d’écran, les enregistrements de la reproduction, les fichiers journaux et autres artefacts.  Voici [comment signaler un problème avec Visual Studio](./how-to-report-a-problem-with-visual-studio.md).
 
 ### <a name="how-is-my-feedback-prioritized"></a>Comment mes commentaires sont-ils hiérarchisés ?
 

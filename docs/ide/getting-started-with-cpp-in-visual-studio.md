@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 102b48131a705b39afb45fb59377d76114a426dd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1d8647c7a5c35a405c2c54f7580b7b5b12c0cf18
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920481"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796645"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Bien démarrer avec C++ dans Visual Studio
 
@@ -30,11 +30,23 @@ Pour ce guide de démarrage rapide, vous avez besoin de Visual Studio 2017 versi
 
 ## <a name="create-a-console-app"></a>Créer une application console
 
-Démarrez Visual Studio, s’il y a lieu.
+S’il n’est pas déjà en cours d’exécution, ouvrez Visual Studio.
+
+::: moniker range="vs-2017"
 
 ![IDE avec paramètres Visual C&#43;&#43; appliqués](../ide/media/get-started-cpp-ide-layout.png)
 
 Après avoir ouvert Visual Studio, vous pouvez voir les trois composants de base de l’IDE : les fenêtres Outil, les menus et les barres d’outils, ainsi que l’espace de la fenêtre principale. Les fenêtres Outil sont ancrées sur les côtés gauche et droit de la fenêtre de l’application. La zone **Lancement rapide**, la barre de menus et la barre d’outils standard sont situées en haut de la fenêtre. La **page de démarrage** se trouve au centre de la fenêtre. Lorsque vous ouvrez une solution ou un projet, les éditeurs et les concepteurs apparaissent dans cet espace. Durant le développement d’une application, la plupart des opérations se passent dans cette zone centrale.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Une fois que vous avez ouvert Visual Studio, la fenêtre **Démarrer** apparaît en premier. Sélectionnez **Continuer sans code** pour ouvrir l’environnement de développement.
+
+Vous allez voir les trois parties de base de l’IDE : les fenêtres Outils, les menus et barres d’outils ainsi que l’espace de la fenêtre principale. Les fenêtres Outil sont ancrées sur les côtés gauche et droit de la fenêtre de l’application. La zone **Lancement rapide**, la barre de menus et la barre d’outils standard sont situées en haut de la fenêtre. Quand vous chargez une solution ou un projet, les éditeurs et les concepteurs apparaissent dans l’espace central de la fenêtre d’application. Quand vous développez une application, vous passez la majeure partie de votre temps dans cette zone centrale.
+
+::: moniker-end
 
 Visual Studio organise le code des applications dans des *projets*, et vos projets dans des *solutions*. Un projet contient l’ensemble des options, des configurations et des règles utilisées pour créer une application. Il gère également le lien entre tous les fichiers d’un projet et les éventuels fichiers externes. Pour créer votre application, commencez par créer un projet et une solution.
 
@@ -70,7 +82,7 @@ Ensuite, vous devez ajouter le code nécessaire pour afficher le mot « Hello »
 
    Une ligne ondulée rouge s’affiche sous `cout`. Si vous placez le pointeur dessus, un message d’erreur s’affiche.
 
-   ![cout, texte d’erreur](../ide/media/get-started-cpp-intellisense-error.png)
+   ![Texte d'erreur pour cout](../ide/media/get-started-cpp-intellisense-error.png)
 
    Le message d’erreur s’affiche également dans la fenêtre **Liste d’erreurs** . Vous pouvez afficher cette fenêtre en choisissant **Affichage > Liste d’erreurs** dans la barre de menus.
 

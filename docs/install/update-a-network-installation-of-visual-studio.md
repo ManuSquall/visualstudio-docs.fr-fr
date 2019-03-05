@@ -1,7 +1,7 @@
 ---
 title: Mettre à jour une installation réseau
 description: Découvrez comment mettre à jour une installation réseau de Visual Studio à l’aide de la commande --layout
-ms.date: 08/14/2017
+ms.date: 2/22/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9159651ea1f7c8890cdf8832a8898743e91bb222
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a59bbac5140e4267a52847a2152862057ce24210
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937537"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796632"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio-2017"></a>Mettre à jour une installation réseau de Visual Studio 2017
 
@@ -26,13 +26,13 @@ Il est possible de mettre à jour une disposition d’installation réseau de Vi
 
 ## <a name="how-to-update-a-network-layout"></a>Comment mettre à jour une disposition réseau
 
-Si vous voulez actualiser le partage d’installation réseau afin qu’il englobe les dernières mises à jour, exécutez la commande --layout pour télécharger progressivement les packages mis à jour.
+Pour actualiser le partage d’installation réseau et inclure les dernières mises à jour, exécutez la commande `--layout` pour télécharger de manière incrémentielle les packages mis à jour.
 
-Si vous avez sélectionné une disposition partielle lors de la création de la disposition réseau, ces paramètres sont enregistrés.  Toutes les commandes de disposition futures utilisent les options précédentes ainsi que toutes les nouvelles options que vous indiquez.  (C’est une nouveauté de la version 15.3.)  Si vous utilisez une disposition de version antérieure, vous devez utiliser les mêmes paramètres de ligne de commande que ceux que vous avez utilisés lors de la création de la disposition d’installation réseau (autrement dit, les mêmes charges de travail et langues) pour mettre à jour son contenu.
+**Nouveautés de la version 15.3** : Si vous avez sélectionné une disposition partielle lors de la création de la disposition réseau, ces paramètres sont enregistrés.  Toutes les commandes de disposition futures utilisent les options précédentes ainsi que toutes les nouvelles options que vous indiquez. Si vous vous servez d’une disposition d’une version antérieure, vous devez utiliser les mêmes paramètres de ligne de commande que ceux que vous avez utilisés quand vous avez créé la disposition d’installation réseau (autrement dit, les mêmes charges de travail et langues) pour mettre à jour son contenu.
 
 Si vous hébergez une disposition sur un partage de fichiers, vous devez mettre à jour une copie privée de la disposition (par exemple, c:\vs2017offline) et, une fois que tout le contenu mis à jour est téléchargé, la copier sur votre partage de fichiers (par exemple, \\serveur\produits\VS2017). Si vous ne le faites pas, il est très probable que les utilisateurs exécutant le programme d’installation pendant que vous mettez à jour la disposition ne soient pas en mesure de récupérer tout le contenu de la disposition, puisque celui-ci n’est pas encore totalement à jour.
 
-Intéressons-nous de plus près à la création et à la mise à jour d’une disposition :
+Intéressons-nous de plus près à quelques exemples de création et de mise à jour d’une disposition :
 
 * Tout d’abord, voyons un exemple montrant comment créer une disposition avec une charge de travail pour l’anglais uniquement :
 
@@ -58,7 +58,11 @@ Intéressons-nous de plus près à la création et à la mise à jour d’une di
   vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
   ```
 
-* Et pour finir, voici comment ajouter une charge de travail et une langue localisée supplémentaires sans mettre à jour la version. (Cette commande ajoute la charge de travail ASP.NET & Web.)  Désormais, les charges de travail Managed Desktop, Azure et ASP.NET & Web sont incluses dans cette disposition.  Les ressources de langue pour l’anglais, l’allemand et le français sont également englobées pour toutes ces charges de travail.  Toutefois, la disposition n’a été pas mise à jour vers la toute dernière version disponible lors de l’exécution de cette commande.  Elle reste à la version existante.
+    > [!IMPORTANT]
+    > Une opération de mise à jour n’installe pas les derniers composants facultatifs ajoutés, même si vous les incluez dans une section d’« ajout » du [fichier réponse](automated-installation-with-response-file.md). Cela est dû au fait que l’opération d’ajout n’est pas utilisée durant une mise à jour.<br>
+    > **Solution de contournement** : Exécutez une opération de modification distincte, après une mise à niveau, pour installer les composants manquants.
+
+* Et pour finir, voici comment ajouter une charge de travail et une langue localisée supplémentaires sans mettre à jour la version. (Cette commande ajoute la charge de travail ASP.NET & Web.)  Désormais, les charges de travail Managed Desktop, Azure et ASP.NET & Web sont incluses dans cette disposition. Les ressources de langue pour l’anglais, l’allemand et le français sont également englobées pour toutes ces charges de travail.  Toutefois, la disposition n’a été pas mise à jour vers la toute dernière version disponible lors de l’exécution de cette commande. Elle reste à la version existante.
 
   ```cmd
   vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion

@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/13/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Questions fréquentes (FAQ) sur la migration de l’administration du Centre de gestion des licences en volume
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e4bc2902c819f4e677127d4c2c857ed1fb5dc015
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 2cf7e53e4739c22499bab6df74fcb55b5d0ad019
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297544"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844098"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Migration de l’administration des abonnements Visual Studio
 
@@ -60,7 +58,7 @@ Voici des instructions sur le processus.
 
     Après avoir entré le numéro PCN, ils sont dirigés vers la page où ils peuvent ajouter des super administrateurs et des administrateurs (auparavant appelés gestionnaires d’abonnements). Dans l’idéal, ceci doit être effectué avant la date de la migration de votre organisation, de façon à éviter toute interruption dans la gestion de vos abonnements.
 
-3.  **Accès au nouveau portail de gestion des abonnements :** une fois votre organisation migrée, des e-mails sont envoyés aux nouveaux super administrateurs et aux administrateurs, pour les inviter à accéder au nouveau portail et à commencer la gestion des abonnements.
+3.  **Accès au nouveau portail de gestion des abonnements :** Après la migration de votre organisation, des e-mails sont envoyés aux super administrateurs et aux administrateurs pour les inviter à accéder au nouveau portail et à commencer à gérer les abonnements.
 
 > [!NOTE]
 > Si les contacts principaux ou les contacts pour les notifications reçoivent plusieurs e-mails, cela signifie qu’ils ont plusieurs numéros PCN. Ils doivent alors effectuer le processus en utilisant le lien unique correspondant au numéro PCN référencé dans chaque e-mail.
@@ -77,10 +75,10 @@ Les contacts principaux et les contacts pour les notifications de votre organisa
 Vous pouvez continuer à gérer les abonnements via le Centre VLSC jusqu’à réception de l’e-mail des abonnements Visual Studio indiquant que votre organisation a été migrée et peut maintenant être gérée dans le nouveau portail.
 
 ### <a name="where-can-i-locate-my-organizations-public-customer-number-pcn-or-authorization-number"></a>Où trouver le numéro PCN ou le numéro d’autorisation de mon organisation ?
-Connectez-vous au [Centre VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) et accédez à : **Abonnements** > **Abonnements Visual Studio**. le numéro PCN se trouve sous les **Résultats pour le contrat/numéro de client public**. Vous trouverez des instructions pas à pas pour localiser votre PCN dans cet [article d’aide](find-pcn.md).
+Connectez-vous au [Centre VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx), puis accédez au chemin suivant : **Abonnements** > **Abonnements Visual Studio**. le numéro PCN se trouve sous les **Résultats pour le contrat/numéro de client public**. Vous trouverez des instructions pas à pas pour localiser votre PCN dans cet [article d’aide](find-pcn.md).
 
 ### <a name="how-do-i-find-out-who-my-primary-or-notices-contact-is"></a>Comment trouver qui est mon contact principal ou mon contact pour les notifications ?
-Connectez-vous au [Centre VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) et accédez à :**Licences > Liste des contrats**. Sélectionnez votre **Identifiant de contrat > Contacts**. Suivez les instructions pas à pas pour trouver votre contact principal ou votre contact pour les notifications dans cet [article d’aide](find-primary-contact.md).
+Connectez-vous au [Centre VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx), puis accédez au chemin suivant : **Licences > Liste des contrats**. Sélectionnez votre **Identifiant de contrat > Contacts**. Suivez les instructions pas à pas pour trouver votre contact principal ou votre contact pour les notifications dans cet [article d’aide](find-primary-contact.md).
 
 ### <a name="what-if-my-primary-or-notices-contact-is-gone-no-longer-with-the-company-or-not-available-to-complete-onboarding"></a>Que se passe-t-il si mon contact principal ou mon contact pour les notifications est parti, ne fait plus partie de l’entreprise ou n’est pas disponible pour l’intégration ?
 Vous devez [contacter le support technique](https://visualstudio.microsoft.com/subscriptions/support/#talktous) et fournir l’e-mail que vous avez utilisé dans le Centre VLSC pour la gestion des abonnements. Après vérification, le support technique peut vous aider pour le processus d’intégration.
@@ -98,7 +96,7 @@ Oui, si le contrat est toujours actif, votre organisation sera migrée.
 Oui, votre organisation sera quand même migrée vers le nouveau système. La possibilité de surutiliser (pour les types de contrats qui le permettent) existe dans le nouveau système.
 
 ### <a name="what-if-my-organization-has-more-than-one-subscription-assigned-to-a-single-useremail-address"></a>Que se passe-t-il si mon organisation a plusieurs abonnements attribués à un même utilisateur ou à une même adresse e-mail ?
-Votre organisation sera quand même migrée.  Cependant, vous ne pourrez pas attribuer des abonnements supplémentaires du même niveau (c’est-à-dire Entreprise, Professionnel, etc.) à cet utilisateur ou à cette adresse e-mail. Tous les abonnements du même niveau qui ont la même adresse e-mail seront toujours visibles après la migration, mais les administrateurs devront changer les adresses e-mail de façon à ce qu’elles soient uniques. Vous ne pourrez pas attribuer plusieurs abonnements du même niveau à un même utilisateur ou une même adresse e-mail dans le nouveau portail.
+Votre organisation sera quand même migrée.  Toutefois, vous ne pouvez pas affecter d’abonnements supplémentaires du même niveau (c’est-à-dire Enterprise, Professional, etc.) à cet utilisateur/cette adresse e-mail. Tous les abonnements du même niveau qui ont la même adresse e-mail seront toujours visibles après la migration, mais les administrateurs devront changer les adresses e-mail de façon à ce qu’elles soient uniques. Vous ne pourrez pas attribuer plusieurs abonnements du même niveau à un même utilisateur ou une même adresse e-mail dans le nouveau portail.
 
 ### <a name="where-can-i-find-the-most-up-to-date-information-about-the-migration"></a>Où puis-je trouver les informations les plus récentes sur la migration ?
 Pour obtenir les informations les plus récentes concernant cette migration, visitez notre [page web](https://aka.ms/vs-admin) sur l’administration des abonnements Visual Studio. Si vous avez besoin de support, consultez la [page de support](http://visualstudio.microsoft.com/subscriptions/support/#!collections/962-subscriptions) des abonnements Visual Studio, qui contient des informations d’aide autonome et des informations de contact de support. Au cours des prochains mois, nous continuerons à fournir des mises à jour sur la page web d’administration et par e-mail, pour que cette transition puisse se faire facilement.

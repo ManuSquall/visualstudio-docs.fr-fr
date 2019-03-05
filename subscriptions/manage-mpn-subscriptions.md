@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/11/2017
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Comment attribuer des abonnements Visual Studio à vos utilisateurs finaux, pour les partenaires du réseau MPN.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4a113d88b93b5fe7532a72956ca6129be1773ebe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9b9d7aa6095b6d5147482b139fdfe43378ad346c
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949108"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842474"
 ---
 # <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Gestion des abonnements Visual Studio offerts via le réseau MPN
 
@@ -33,7 +31,7 @@ Abonné Microsoft Action Pack et abonnements Visual Studio
 4. Sélectionnez premier, deuxième ou troisième **Contact technique** et **enregistrez**
 5. Sélectionnez **Configuration requise et ressources**
 6. Sélectionnez **Privilèges**
-7. Sélectionnez **Abonnements Visual Studio** (remarque : mise à jour de l’abonnement Visual Studio en attente)
+7. Sélectionnez **Abonnements Visual Studio** (Remarque : Mise à jour de l’abonnement Visual Studio en attente)
 8. Sélectionnez la **personne** souhaitée
 9. Cliquez sur **Envoyer**
 10. La personne reçoit un e-mail

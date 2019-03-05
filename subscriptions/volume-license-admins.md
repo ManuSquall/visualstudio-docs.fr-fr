@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/14/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Découvrez comment les administrateurs des abonnements peuvent accéder au portail d’administration et gérer les abonnements acquis via une licence en volume
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: de5992adc2ada56ad213ef29e879dadf7b7daad8
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 846eb6ecf69253086079cf06fe4c53a8860d996d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379538"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843134"
 ---
 # <a name="accessing-the-portal-and-managing-administrators---for-subscriptions-acquired-through-volume-licensing-vl"></a>Accès au portail et gestion des administrateurs - pour les abonnements acquis via une licence en volume
 
@@ -22,8 +20,8 @@ ms.locfileid: "39379538"
 
 À compter du 1er mars 2017, les clients qui travaillent toujours via le processus d’intégration et de migration du portail doivent gérer leurs abonnements dans le Centre VLSC.
 
-Pour plus d’informations sur la gestion des abonnements dans le Centre VLSC, consultez ces guides : [Présentation des abonnements Visual Studio pour VLSC](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Understanding-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf)
-[Gestion des abonnements Visual Studio pour le Centre VLSC](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Managing-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf)
+Pour plus d’informations sur la gestion des abonnements dans le VLSC (Centre de gestion des licences en volume), consultez ces guides : [Présentation des abonnements Visual Studio pour VLSC](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Understanding-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf)
+[Gestion des abonnements Visual Studio pour VLSC](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Managing-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf)
 
 **Portail d’administration des abonnements Visual Studio** : si votre organisation a été migrée, mais que vous n’avez pas encore été configuré dans le nouveau portail, votre contact principal ou votre contact pour les notifications du contrat de licence en volume de votre organisation doit effectuer quelques étapes pour intégrer votre organisation et vous configurer comme administrateur.
 
