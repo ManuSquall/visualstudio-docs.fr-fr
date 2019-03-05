@@ -7,12 +7,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: da61f3f46d9737bef6c14cf69a52be1951da28fb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 011781b434c4d005e473c5f97c60a9269dc5d034
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925434"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324232"
 ---
 # <a name="workspaces"></a>Espaces de travail
 
@@ -175,7 +175,19 @@ Un contexte d’interface utilisateur peut être utilisé pour charger automatiq
 
 ### <a name="the-sourceexplorerpackage-package-did-not-load-correctly"></a>Le package SourceExplorerPackage n’a pas été chargé correctement
 
-Extensibilité de l’espace de travail est largement basé sur MEF, et les erreurs de composition génère le package à ouvrir le dossier pour l’échec du chargement d’hébergement. Par exemple, si une extension exporte un type avec `ExportFileContextProviderAttribute`, mais le type implémente uniquement `IWorkspaceProviderFactory<IFileContextActionProvider>`, une erreur se produit lorsque vous tentez d’ouvrir un dossier dans Visual Studio. Vous trouverez les détails de l’erreur dans _%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Corrigez les erreurs pour les types implémentés par votre extension.
+Extensibilité de l’espace de travail est largement basé sur MEF, et les erreurs de composition génère le package à ouvrir le dossier pour l’échec du chargement d’hébergement. Par exemple, si une extension exporte un type avec `ExportFileContextProviderAttribute`, mais le type implémente uniquement `IWorkspaceProviderFactory<IFileContextActionProvider>`, une erreur se produit lorsque vous tentez d’ouvrir un dossier dans Visual Studio.
+
+::: moniker range="vs-2017"
+
+Vous trouverez les détails de l’erreur dans _%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Corrigez les erreurs pour les types implémentés par votre extension.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Vous trouverez les détails de l’erreur dans _%LOCALAPPDATA%\Microsoft\VisualStudio\16.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Corrigez les erreurs pour les types implémentés par votre extension.
+
+::: moniker-end
 
 ## <a name="next-steps"></a>Étapes suivantes
 
