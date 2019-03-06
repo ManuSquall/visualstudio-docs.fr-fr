@@ -50,7 +50,7 @@ Le tableau suivant répertorie les types de base et les interfaces qui sont asso
 |<xref:System.Collections.ICollection?displayProperty=fullName>|Collection|
 |<xref:System.Collections.IDictionary?displayProperty=fullName>|Dictionary|
 |<xref:System.Collections.IEnumerable?displayProperty=fullName>|Collection|
-|<xref:System.Collections.Queue?displayProperty=fullName>|File d’attente ou de collection|
+|<xref:System.Collections.Queue?displayProperty=fullName>|Collection ou File d'attente|
 |<xref:System.Collections.Stack?displayProperty=fullName>|Collection ou Stack|
 |<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|Collection|
 |<xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|Dictionary|
