@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 89c66d0ce71a77dcfcaa6364cba6d31cf5707c4a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f5f9b7e700ff21bac570cf8545207bb75fda820e
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613373"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428737"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Déboguer des applications ASP.NET Azure en direct à l’aide du débogueur de capture instantanée
 
@@ -50,7 +50,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
     > [!IMPORTANT]
     > Débogage d’instantané, vous devez ouvrir le *même version de code source* qui est publié dans votre Azure App Service.
-::: moniker range="< vs-2019"
+::: moniker range="vs-2019"
 
 2. Dans l’Explorateur de Cloud (**Affichage > Cloud Explorer**), cliquez sur votre projet est déployé dans Azure App Service et sélectionnez **attacher un débogueur de capture instantanée**.
 

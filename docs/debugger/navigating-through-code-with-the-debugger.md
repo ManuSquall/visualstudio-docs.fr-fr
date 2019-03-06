@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8c9a2f68427cfa7c5db69dca202a619c86444c2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 05458481a691f74f1746860e537d915dcad90efc
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706705"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428750"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Naviguer dans le code avec le débogueur Visual Studio
 
@@ -133,7 +133,7 @@ Pendant la suspension dans le débogueur, vous pouvez pointer sur une instructio
 ![Exécuter jusqu’au clic](../debugger/media/dbg-run-to-click.png "Exécuter jusqu’au clic")
 
 > [!NOTE]
-> **Exécuter jusqu’au clic** est une nouveauté de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> **Exécuter jusqu’au clic** est disponible à partir de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 ### <a name="manually-break-into-code"></a>S'arrêter manuellement dans le code
 

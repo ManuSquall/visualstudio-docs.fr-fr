@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b74b924d8d3e10192940686fac0ffce88e3f153
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 95a438c6776e468611a99691c0a4bfea2e4203a5
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692864"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953651"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Impossible de se connecter à l'ordinateur Microsoft Visual Studio Remote Debugging Monitor
 Ce message peut survenir parce que remote debugging monitor n’est pas correctement configuré sur l’ordinateur distant ou l’ordinateur distant est inaccessible en raison de problèmes réseau ou la présence d’un pare-feu.
 
 > [!IMPORTANT]
->  Si vous pensez avoir reçu ce message en raison d’un bogue de produit, veuillez [signaler ce problème](../ide/how-to-report-a-problem-with-visual-studio-2017.md) à Visual Studio. Si vous avez besoin d’aide supplémentaire, consultez [Talk to Us](../ide/talk-to-us.md) pour savoir comment contacter Microsoft.
+>  Si vous pensez avoir reçu ce message en raison d’un bogue de produit, veuillez [signaler ce problème](../ide/how-to-report-a-problem-with-visual-studio.md) à Visual Studio. Si vous avez besoin d’aide supplémentaire, consultez [Talk to Us](../ide/talk-to-us.md) pour savoir comment contacter Microsoft.
 
 ## <a name="specificerrors"></a>Qu’est le message d’erreur détaillé ?
 

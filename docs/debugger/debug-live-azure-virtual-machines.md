@@ -9,16 +9,16 @@ helpviewer_keywords:
 author: poppastring
 ms.author: madownie
 manager: andster
-monikerRange: vs-2019
+monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b2baf119259c749e8da99a9326eb22aa1e034b4a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 608745fc2c96836163e1406abda6869d52b1da1b
+ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646471"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007267"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Déboguer des applications ASP.NET en production sur des machines virtuelles et jeux de mise à l’échelle de machine virtuelle Azure à l’aide du débogueur de capture instantanée
 

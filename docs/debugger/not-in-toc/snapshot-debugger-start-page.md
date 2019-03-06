@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff8403390d2cd9126ce17f97dbc87b901ca544fd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cf2aba33089623dc98a90c23166291bb2d6e7123
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703706"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428646"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>Mise en route avec le débogueur de capture instantanée
 
@@ -69,6 +69,6 @@ Vous trouverez plus d’informations sur le débogueur de capture instantanée s
 
 ## <a name="dont-show-me-this-again"></a>Ne plus afficher ce message
 
-Pour ne jamais afficher la Page de démarrage de débogueur de capture instantanée à nouveau lorsque vous vous connectez le débogueur de capture instantanée, vous devez modifier le **afficher la page « Prise en main » sur le démarrage d’une session** option **outils**  >   **Options** > **débogueur de captures instantanées**.
+Pour ne jamais afficher la page de démarrage de débogueur de capture instantanée à nouveau lorsque vous vous connectez le débogueur de capture instantanée, vous devez modifier le **afficher la page « Prise en main » sur le démarrage d’une session** option **outils**  >   **Options** > **débogueur de captures instantanées**.
 
 ![Instantané la Page d’options de l’outil débogueur](../media/snapshot-startpage-tools-options.png)

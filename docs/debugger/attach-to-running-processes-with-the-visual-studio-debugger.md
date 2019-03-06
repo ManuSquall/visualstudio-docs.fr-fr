@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d114ec9b108dad33e36ba9c9bfd7726501b13c0a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4b8b0d507328022746682142c8d0720ba0de3fe0
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637501"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428763"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Attacher aux processus en cours d’exécution avec le débogueur Visual Studio
 Vous pouvez attacher le débogueur Visual Studio à un processus en cours d’exécution sur un ordinateur local ou distant. Une fois le processus est en cours d’exécution, sélectionnez **déboguer** > **attacher au processus** ou appuyez sur **Ctrl**+**Alt** + **P** dans Visual Studio et utiliser le **attacher au processus** boîte de dialogue pour attacher le débogueur au processus.
@@ -95,9 +95,20 @@ Pour des instructions détaillées pour le débogage des applications ASP.NET qu
 
    - Sélectionnez la flèche déroulante à côté **cible de la connexion**, puis sélectionnez le nom d’ordinateur dans la liste déroulante.
    - Tapez le nom d’ordinateur dans le **cible de la connexion** boîte.
+   
+     ::: moniker range="vs-2017"
 
      > [!NOTE]
      > Si vous ne pouvez pas vous connecter en utilisant le nom de l’ordinateur distant, essayez d’utiliser l’adresse IP et l’adresse du port (par exemple, `123.45.678.9:4022`). 4022 est le port par défaut pour le débogueur distant Visual Studio 2017 x64. Pour d’autres affectations de port débogueur distant, consultez [affectations de port de débogueur distant](remote-debugger-port-assignments.md).
+
+     ::: moniker-end
+     
+     ::: moniker range=">= vs-2019"
+
+     > [!NOTE]
+     > Si vous ne pouvez pas vous connecter en utilisant le nom de l’ordinateur distant, essayez d’utiliser l’adresse IP et l’adresse du port (par exemple, `123.45.678.9:4022`). 4024 est le port par défaut pour le débogueur distant Visual Studio 2019 x64. Pour d’autres affectations de port débogueur distant, consultez [affectations de port de débogueur distant](remote-debugger-port-assignments.md).
+
+     ::: moniker-end
 
    - Sélectionnez le **trouver** situé en regard du **cible de la connexion** boîte pour ouvrir la **connexions à distance** boîte de dialogue. Le **connexions à distance** boîte de dialogue répertorie tous les appareils qui se trouvent sur votre sous-réseau local ou directement attaché à votre ordinateur. Vous devrez peut-être [ouvrir le port UDP 3702](../debugger/remote-debugger-port-assignments.md) sur le serveur pour détecter des appareils à distance. Sélectionnez l’ordinateur ou un appareil de votre choix, puis cliquez sur **sélectionnez**.
 
@@ -142,7 +153,7 @@ Si aucune de ces solutions n’est possible, la troisième option consiste à at
 Vous pouvez rattacher rapidement aux processus qui vous ont été précédemment attaché en choisissant **déboguer** > **rattacher au processus** (**MAJ** + **Alt**+**P**). Lorsque vous choisissez cette commande, le débogueur va immédiatement tenter d’attacher au dernier processus que vous avez attaché à par la première tentative correspond à l’ID de processus précédente et si cette tentative échoue, en mettant en correspondance pour le précédent nom du processus. Si aucune correspondance n’est trouvée, ou si plusieurs processus portent le même nom, le **attacher au processus** boîte de dialogue s’ouvre, vous pouvez sélectionner le processus correct.
 
 > [!NOTE]
-> Le **rattacher au processus** commande est une nouveauté de Visual Studio 2017.
+> Le **rattacher au processus** commande est disponible à partir de Visual Studio 2017.
 
 ## <a name="BKMK_Scenarios"></a> Scénarios de débogage courants
 

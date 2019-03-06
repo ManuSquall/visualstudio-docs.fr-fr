@@ -17,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 35cc3e8336dc2f4b618be10626c014692fdfa650
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3afb55c41f48c6d5e5a153c12cd364d130129d79
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694996"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222355"
 ---
 # <a name="edit-and-continue-visual-c"></a>Modifier & Continuer (Visual C++)
 Vous pouvez utiliser Modifier et continuer dans les projets Visual C++. Consultez [modifications de Code prises en charge (C++)](../debugger/supported-code-changes-cpp.md) pour plus d’informations sur les limitations de modifier & Continuer.
 
-Pour plus d’informations sur les améliorations de Visual Studio 2015 Update 3, consultez [C++ Modifier & Continuer dans Visual Studio 2015 Update 3](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/).
+Pour plus d’informations sur les améliorations de Visual Studio 2015 Update 3, consultez [C++ Modifier & Continuer dans Visual Studio 2015 Update 3](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/).
 
  L’option de compilateur [/Zo (Améliorer le débogage optimisé)](/cpp/build/reference/zo-enhance-optimized-debugging) qui a été introduite dans Visual Studio 2013 Update 3 ajoute des informations aux fichiers de symboles (.pdb) pour les fichiers binaires compilés sans l’option [/Od (Désactiver (Débogage))](https://msdn.microsoft.com/library/aafb762y.aspx).
 
@@ -37,7 +37,7 @@ Pour plus d’informations sur les améliorations de Visual Studio 2015 Update 3
  Vous pouvez désactiver l’appel automatique de Modifier & Continuer si vous apportez des modifications au code que vous ne souhaitez pas appliquer tout de suite, pendant la session de débogage en cours. Vous pouvez également réactiver la fonctionnalité automatique Modifier & Continuer.
 
 > [!IMPORTANT]
-> Pour les paramètres de build requis et d’autres informations sur la compatibilité de la fonctionnalité, consultez [C++ Modifier & Continuer dans Visual Studio 2015 Update 3] (https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/.
+> Pour les paramètres de build requis et d’autres informations sur la compatibilité de la fonctionnalité, consultez [C++ Modifier & Continuer dans Visual Studio 2015 Update 3](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/).
 
 1. Si vous êtes dans une session de débogage, arrêtez le débogage (**MAJ + F5**).
 

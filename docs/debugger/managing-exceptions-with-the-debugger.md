@@ -33,12 +33,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5086a59936a3fe71f9888083772ee09ab3a42d48
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b83cb026bec6d33490517e5703a042b4a8e2434c
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700911"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428698"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Gérer les exceptions avec le débogueur dans Visual Studio
 
@@ -204,7 +204,7 @@ Vous pouvez ajouter l’exception à **paramètres d’Exception** à l’aide d
 Utilisez le **paramètres d’Exception** fenêtre pour définir des conditions sur les exceptions. Conditions actuellement pris en charge incluent les noms de module à inclure ou exclure de l’exception. En définissant des noms de module en tant que conditions, vous pouvez choisir Arrêter l’exécution de l’exception uniquement sur certains des modules de code. Vous pouvez également choisir d’éviter l’arrêt sur les modules particuliers.
 
 > [!NOTE]
-> Ajout de conditions à une exception est une nouveauté de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> Ajout de conditions à une exception est pris en charge dans [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Pour ajouter des exceptions conditionnelles :
 
