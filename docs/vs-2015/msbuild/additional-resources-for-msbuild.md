@@ -1,14 +1,9 @@
 ---
 title: Ressources supplémentaires pour MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: 3206dc09-daa4-43c4-8073-731a82e36a89
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 54e432917957a361f736785550cd07b23f5d14a9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 59ea116ae28eabb05efd9539c4680c10b439f10d
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248961"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54752499"
 ---
 # <a name="additional-resources-for-msbuild"></a>Ressources supplémentaires pour MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,5 +45,3 @@ Les sites web et forums suivants peuvent vous aider à trouver des réponses aux
  [MSBuild](msbuild.md)   
  [Concepts MSBuild](../msbuild/msbuild-concepts.md)   
  [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
-
-

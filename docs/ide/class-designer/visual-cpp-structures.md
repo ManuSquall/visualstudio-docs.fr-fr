@@ -1,23 +1,21 @@
 ---
 title: Structures de Visual C++ dans le Concepteur de classes
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Class Designer [Visual Studio], structures
 ms.assetid: bad18ab6-d956-47a6-a413-811cc26db5f5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 79b4adcfbcacc8cf342b5fc4183ae4fe27431b09
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e9b8e81ee25e081a324a8520317fa57a1314ccd0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864768"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954528"
 ---
 # <a name="visual-c-structures-in-class-designer"></a>Structures de Visual C++ dans le Concepteur de classes
 

@@ -1,8 +1,6 @@
 ---
 title: 'CA1047 : Ne pas déclarer les membres protégés dans les types sealed'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - DoNotDeclareProtectedMembersInSealedTypes
@@ -13,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 829033b5-a9d8-4f26-a719-45494c9dd035
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a19e17c200f36d3edb1cadbab4d573f6a1d3cc0a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: c138c05d755b05275755f96776764604997cbbcd
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550058"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921547"
 ---
 # <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047 : Ne pas déclarer les membres protégés dans les types sealed
 

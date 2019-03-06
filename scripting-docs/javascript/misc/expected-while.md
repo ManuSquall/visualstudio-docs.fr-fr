@@ -1,14 +1,9 @@
 ---
-title: Attendu &#39; lors de la &#39; | Documents Microsoft
-ms.custom: ''
+title: "'While' attendu | Microsoft Docs"
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1024
 dev_langs:
@@ -16,23 +11,22 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 867c10d0-7df6-4ba3-bbe6-7d5b3900cb22
-caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: de38e7e593d0547a695c2e037903d01387cdf0bb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0c05f2fffeabdfbeccd68259c3648aceac862d80
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633029"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840297"
 ---
-# <a name="expected-39while39"></a>Attendu &#39; lors de la &#39;
-Vous n’avez pas inclus le `while` de condition dans une `do...while` boucle. A **faire** instruction doit correspondre à une `while` à la fin du bloc de code de test.  
+# <a name="expected-while"></a>'while' attendu
+Vous n’avez pas inclus le `while` condition dans une `do...while` boucle. Un **faire** instruction doit avoir un correspondant `while` à la fin du bloc de code de test.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
--   Inclure la `while` instruction après l’accolade fermante de test.  
+-   Inclure le `while` tester instruction après l’accolade fermante.  
   
 ## <a name="see-also"></a>Voir aussi  
  [while, instruction](../../javascript/reference/while-statement-javascript.md)   

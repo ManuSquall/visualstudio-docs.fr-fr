@@ -4,26 +4,25 @@ titleSuffix: ''
 description: Utilisez les ID de composant et de charge de travail pour installer Visual Studio à l’aide de la ligne de commande ou pour spécifier comme dépendance dans un manifeste VSIX
 keywords: ''
 author: TerryGLee
+ms.prod: visual-studio-dev15
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.date: 11/13/2018
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
-ms.service: ''
-ms.technology: vs-acquisition
-ms.prod: visual-studio-dev15
 ms.assetid: be73e3af-d87b-4d14-bd08-2e4bda074fb3
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d0496b9559e5e3fbd8984de97d98ea2e075db1a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+monikerRange: vs-2017
+ms.openlocfilehash: f4f16344295b3c51833cb7ae71566d0936d183a4
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063164"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842930"
 ---
 # <a name="visual-studio-enterprise-2017-component-directory"></a>Répertoire de composants Visual Studio Enterprise 2017
 
@@ -754,7 +753,7 @@ Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 15.6.27406.0 | 
 
 **ID :** Microsoft.VisualStudio.Workload.Node
 
-**Description :** Générez des applications réseau scalables via Node.js, un runtime JavaScript basé sur des événements asynchrones. 
+**Description :** Générez des applications réseau scalables via Node.js, un runtime JavaScript basé sur des événements asynchrones.
 
 ### <a name="components-included-by-this-workload"></a>Composants inclus par cette charge de travail
 

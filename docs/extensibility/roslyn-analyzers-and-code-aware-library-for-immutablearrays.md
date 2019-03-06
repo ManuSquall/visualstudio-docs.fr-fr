@@ -1,22 +1,19 @@
 ---
 title: Analyseurs de Roslyn et bibliothèque de Code pour ImmutableArrays | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2af6141ae3b7a61805b2515f11f72f164389949
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: 28ddaafc8ab4ddbaef1d7e42faedc2229664c6e6
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821381"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323638"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analyseurs de Roslyn et bibliothèque de code pour ImmutableArrays
 
@@ -28,7 +25,7 @@ Vous avez besoin de ce qui suit pour générer cet exemple :
 
 * Visual Studio 2015 (pas une édition Express) ou une version ultérieure. Vous pouvez utiliser la version gratuite [Visual Studio Community Edition](https://visualstudio.microsoft.com/vs/community/)
 * [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Vous pouvez également, lors de l’installation de Visual Studio, vérifier **outils d’extensibilité Visual Studio** sous **outils courants** pour installer le Kit de développement en même temps. Si vous avez déjà installé Visual Studio, vous pouvez également installer ce SDK en accédant au menu principal **fichier** > **New** > **projet**, en choisissant **c#** dans le volet de navigation gauche, puis en sélectionnant **extensibilité**. Lorsque vous choisissez le «**installer les outils d’extensibilité de Visual Studio**« modèle de projet de fil d’Ariane, vous êtes invité à télécharger et installer le Kit de développement.
-* [.NET compiler Platform (« Roslyn ») SDK](http://aka.ms/roslynsdktemplates). Vous pouvez également installer ce SDK en accédant au menu principal **fichier** > **New** > **projet**, en choisissant l’option **c#** dans le volet de navigation gauche, puis en sélectionnant **extensibilité**. Lorsque vous choisissez «**télécharger le SDK .NET Compiler Platform**« modèle de projet de fil d’Ariane, vous êtes invité à télécharger et installer le Kit de développement. Ce SDK inclut le [Roslyn Syntax Visualizer](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer). Ce vous permet d’utile déterminer quels types de modèle de code vous recherchez dans votre analyseur. Les appels d’infrastructure analyseur dans votre code pour les types de modèle de code spécifique, afin que votre code s’exécute lorsque cela est nécessaire uniquement et pouvez vous concentrer uniquement sur l’analyse de code approprié.
+* [.NET compiler Platform (« Roslyn ») SDK](https://aka.ms/roslynsdktemplates). Vous pouvez également installer ce SDK en accédant au menu principal **fichier** > **New** > **projet**, en choisissant l’option **c#** dans le volet de navigation gauche, puis en sélectionnant **extensibilité**. Lorsque vous choisissez «**télécharger le SDK .NET Compiler Platform**« modèle de projet de fil d’Ariane, vous êtes invité à télécharger et installer le Kit de développement. Ce SDK inclut le [Roslyn Syntax Visualizer](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer). Ce vous permet d’utile déterminer quels types de modèle de code vous recherchez dans votre analyseur. Les appels d’infrastructure analyseur dans votre code pour les types de modèle de code spécifique, afin que votre code s’exécute lorsque cela est nécessaire uniquement et pouvez vous concentrer uniquement sur l’analyse de code approprié.
 
 ## <a name="whats-the-problem"></a>Quel est le problème ?
 
@@ -301,7 +298,7 @@ Ensuite, la méthode extrait la racine du document, et étant donné que cela pe
 
 Vous pouvez maintenant appuyer sur **F5** pour exécuter votre analyseur dans une deuxième instance de Visual Studio. Ouvrez le projet de console que vous avez utilisé avant. Doit maintenant apparaître l’ampoule s’affichent dans laquelle votre nouvelle expression de création d’objet pour `ImmutableArray<int>`. Si vous appuyez sur **Ctrl**+**.** (période), puis vous verrez votre code à résoudre, et vous verrez un aperçu de différence de code généré automatiquement dans l’ampoule l’interface utilisateur. Roslyn cela crée pour vous.
 
-**Conseil Pro :** si vous lancez la deuxième instance de Visual Studio et vous ne voyez pas l’ampoule avec votre correctif de code, vous devrez peut-être effacer le cache du composant de Visual Studio. Effacement du cache de force Visual Studio pour re-examiner les composants, afin de Visual Studio doit ensuite capter de votre composant plus récente. Tout d’abord, arrêtez la deuxième instance de Visual Studio. Ensuite, dans **Windows Explorer**, accédez à *%LOCALAPPDATA%\Microsoft\VisualStudio\15.0Roslyn\\*. (Le « 15.0 » change d’une version à l’autre avec Visual Studio). Supprimer le sous-répertoire *ComponentModelCache*.
+**Conseil Pro :** Si vous lancez la deuxième instance de Visual Studio, et vous ne voyez pas l’ampoule avec votre correctif de code, vous devrez peut-être effacer le cache du composant de Visual Studio. Effacement du cache de force Visual Studio pour re-examiner les composants, afin de Visual Studio doit ensuite capter de votre composant plus récente. Tout d’abord, arrêtez la deuxième instance de Visual Studio. Ensuite, dans **Windows Explorer**, accédez à *%LOCALAPPDATA%\Microsoft\VisualStudio\16.0Roslyn\\*. (Le « 16.0 » change d’une version à l’autre avec Visual Studio.) Supprimer le sous-répertoire *ComponentModelCache*.
 
 ## <a name="talk-video-and-finish-code-project"></a>Communiquer avec vidéo et terminer le projet de code
 

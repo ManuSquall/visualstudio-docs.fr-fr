@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::OnScriptError | Documents Microsoft
+title: IActiveScriptSite::OnScriptError | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4ae066fe7fa04a5c97dec618c65ccee3f90984a0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d2c9cb95615ad0b978cc7fd9943b687e5a7f3cac
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724629"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344562"
 ---
 # <a name="iactivescriptsiteonscripterror"></a>IActiveScriptSite::OnScriptError
-Informe l’hôte qu’une erreur d’exécution s’est produite pendant que le moteur était en cours d’exécution du script.  
+Informe l’hôte qu’une erreur d’exécution s’est produite pendant que le moteur a été exécute le script.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT OnScriptError(  
     IActiveScriptError *pase  // address of error interface  
 );  
@@ -38,7 +38,7 @@ HRESULT OnScriptError(
   
 #### <a name="parameters"></a>Paramètres  
  `pase`  
- [in] Adresse de l’objet d’erreur [IActiveScriptError](../../winscript/reference/iactivescripterror.md) interface. Un hôte peut utiliser cette interface pour obtenir des informations sur l’erreur d’exécution.  
+ [in] Adresse de l’objet erreur [IActiveScriptError](../../winscript/reference/iactivescripterror.md) interface. Un hôte peut utiliser cette interface pour obtenir des informations sur l’erreur d’exécution.  
   
 ## <a name="return-value"></a>Valeur de retour  
  Retourne `S_OK` si l’erreur a été gérée correctement ou OLE défini le code d’erreur dans le cas contraire.  

@@ -13,17 +13,15 @@ helpviewer_keywords:
 ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 471b62c35cbe7098d52e9cbeb08be29cd39c7d58
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: a99cdc4e8c9a4b7551574c93ad6ccdb8c44479df
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180423"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927043"
 ---
 # <a name="troubleshoot-service-references"></a>Dépanner les références de service
 
@@ -96,13 +94,13 @@ Quand il tente d’afficher une représentation XML des données dans un [!INCLU
 
 Pour corriger cette erreur, désactivez les flux RSS :
 
-1.  Dans Internet Explorer, sur le **outils** menu, cliquez sur **Options Internet**.
+1.  Dans Internet Explorer, accédez au menu **Outils** et cliquez sur **Options Internet**.
 
 2.  Sur le **contenu** sous l’onglet le **flux** , cliquez sur **paramètres**.
 
 3.  Dans le **paramètres de flux** boîte de dialogue, désactivez le **activer le mode lecture du flux** case à cocher, puis cliquez sur **OK**.
 
-4.  Cliquez sur **OK** pour fermer la **Options Internet** boîte de dialogue.
+4.  Cliquez sur **OK** pour fermer la boîte de dialogue **Options Internet**.
 
 ## <a name="see-also"></a>Voir aussi
 

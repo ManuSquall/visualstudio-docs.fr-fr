@@ -1,8 +1,6 @@
 ---
-title: 'CA1058 : Les types ne doivent pas étendre certains types de base'
+title: 'CA1058 : Les types ne doivent pas étendre certains types de base'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - TypesShouldNotExtendCertainBaseTypes
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 8446ee40-beb1-49fa-8733-4d8e813471c0
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c5232ef4f6f21b1f0f012954d121e6e0abdae9c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 831f8ad60b7cef0f172bbc4b3795d036779b2419
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950860"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55915528"
 ---
-# <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058 : Les types ne doivent pas étendre certains types de base
+# <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058 : Les types ne doivent pas étendre certains types de base
 
 |||
 |-|-|

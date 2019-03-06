@@ -1,8 +1,6 @@
 ---
-title: 'CA2207 : Initialisez les champs static des types valeur en ligne'
+title: 'CA2207 : Initialisez les champs statiques des types valeur en ligne'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - InitializeValueTypeStaticFieldsInline
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: d1ea9d8b-ecc2-46ca-86e2-c41dd0e76658
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96e6a8e90b1ebed09408f34e432f5c08dd4da40f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9b00403af731439ecef4667c632e53b52670afff
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912303"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926877"
 ---
-# <a name="ca2207-initialize-value-type-static-fields-inline"></a>CA2207 : Initialisez les champs static des types valeur en ligne
+# <a name="ca2207-initialize-value-type-static-fields-inline"></a>CA2207 : Initialisez les champs statiques des types valeur en ligne
 
 |||
 |-|-|
@@ -47,4 +45,4 @@ ms.locfileid: "49912303"
  Ne supprimez aucun avertissement de cette règle.
 
 ## <a name="related-rules"></a>Règles associées
- [CA1810 : Initialisez les champs statiques de type référence en ligne](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)
+ [CA1810 : Initialiser des champs statiques de type référence en ligne](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)

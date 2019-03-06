@@ -1,8 +1,6 @@
 ---
 title: 'CA1500 : Les noms de variables ne doivent pas être identiques aux noms de champs'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - VariableNamesShouldNotMatchFieldNames
@@ -13,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: fa0e5029-79e9-4a33-8576-787ac3c26c39
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 74f9cfadc4bc413c3b176d5f37f1017074547435
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 740edb9861d2e3e758a36dfc067cb85fe4fc2c7e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548258"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918596"
 ---
 # <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500 : Les noms de variables ne doivent pas être identiques aux noms de champs
 

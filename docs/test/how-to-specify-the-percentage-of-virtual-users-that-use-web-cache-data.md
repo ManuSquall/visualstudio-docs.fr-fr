@@ -7,15 +7,13 @@ helpviewer_keywords:
 ms.assetid: f66d5d43-4121-4487-b27f-d0a0baaf7601
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 2195b99658d05e9e73a86cf723fcb8e9d4f36bd4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 08f0bb9fb14c631f3bf1e5545a69663eb060e3e7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060237"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956140"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Procédure : spécifier le pourcentage d’utilisateurs virtuels qui utilisent les données du cache web
 

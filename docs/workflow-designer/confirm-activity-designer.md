@@ -2,22 +2,20 @@
 title: Concepteur d’activités de flux de travail concepteur - Confirm
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Confirm.UI
 ms.assetid: c753b67b-b0e7-462a-bb4e-ba8db04a078d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f6823b564b7ec3da1585810c27db2f97c1b16ae
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8418faf7fb4eb55a0b20a33aaaa2909e07ff7a78
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906531"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909599"
 ---
 # <a name="confirm-activity-designer"></a>Concepteur d'activités Confirm
 

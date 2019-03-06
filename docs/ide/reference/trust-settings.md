@@ -5,8 +5,6 @@ author: abuchholtzau
 ms.author: allisb
 ms.date: 09/05/2018
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.PathTrustOptions
 helpviewer_keywords:
@@ -15,12 +13,12 @@ helpviewer_keywords:
 - mark of the web
 - trusted files
 - trusted folders
-ms.openlocfilehash: 08c4b08c33cd954aa427f158158f29cfbe50df94
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 011673bca7be569b5b350dc264148d5a7890d39c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384719"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954945"
 ---
 # <a name="configure-trust-settings-for-files-and-folders"></a>Configurer les paramètres d’approbation pour les fichiers et les dossiers
 
@@ -37,11 +35,11 @@ Pour modifier les paramètres d’approbation, procédez comme suit :
 
 2. Choisissez le niveau des vérifications que vous voulez pour les fichiers et les dossiers. Vous pouvez avoir des vérifications différentes pour chacun d’eux. Les options sont les suivantes :
 
-   * **Aucune vérification** : Visual Studio n’effectue aucune vérification.
+   * **Aucune vérification** : Visual Studio n’effectue aucune vérification.
 
-   * **Vérifier la marque de l’attribut web**: si le fichier ou le dossier a la marque de l’attribut web, Visual Studio le bloque et demande l’autorisation de l’ouvrir.
+   * **Vérifier la marque de l’attribut web** : si le fichier ou le dossier a la marque de l’attribut web, Visual Studio le bloque et demande l’autorisation de l’ouvrir.
 
-   * **Vérifier que le chemin est approuvé** : si le chemin du fichier ou du dossier ne fait pas partie des **Chemins approuvés**, Visual Studio le bloque et demande l’autorisation de l’ouvrir.
+   * **Vérifier que le chemin est approuvé** : si le chemin du fichier ou du dossier ne fait pas partie des **Chemins approuvés**, Visual Studio le bloque et demande l’autorisation de l’ouvrir.
 
    ![Options de vérification d’approbation](media/trust-settings.png)
 

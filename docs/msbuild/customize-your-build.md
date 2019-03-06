@@ -1,8 +1,6 @@
 ---
 title: Personnaliser votre build | Microsoft Docs
-ms.custom: ''
 ms.date: 06/14/2017
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, transforms
@@ -10,17 +8,17 @@ helpviewer_keywords:
 ms.assetid: d0bceb3b-14fb-455c-805a-63acefa4b3ed
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31856366712da0a2287f73906c6e3a5f81f63a00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fc4515ad8f61d749c9fb7552911bfb15dcc3471a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857586"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610331"
 ---
-# <a name="customize-your-build"></a>Personnaliser votre build
+# <a name="customize-your-build-c-visual-basic"></a>Personnaliser votre build (C#, Visual Basic)
 
 Les projets MSBuild qui utilisent le processus de génération standard (importation de *Microsoft.Common.props* et *Microsoft.Common.targets*) ont plusieurs crochets d’extensibilité qui permettent de personnaliser le processus.
 
@@ -162,6 +160,6 @@ Par exemple, vous pouvez définir une nouvelle cible pour écrire un message de 
 
 ## <a name="see-also"></a>Voir aussi
 
-[Concepts MSBuild](../msbuild/msbuild-concepts.md)
+- [Concepts MSBuild](../msbuild/msbuild-concepts.md)
 
-[Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
+- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)

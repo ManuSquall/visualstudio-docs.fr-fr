@@ -1,8 +1,6 @@
 ---
 title: Réduire et développer des régions de code
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - outlining
@@ -14,15 +12,15 @@ helpviewer_keywords:
 - outlining code
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b39e9613e36b45f812738ab4eab6b945727b196b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d6451e835e44af23fbd41c9c1573e0bc5daed115
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064703"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952344"
 ---
 # <a name="outlining"></a>mode Plan
 

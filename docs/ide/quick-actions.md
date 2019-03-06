@@ -1,23 +1,21 @@
 ---
 title: Actions rapides, ampoules et tournevis
 ms.date: 03/28/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7089a9a654d1c346fefcca119f74a87d89f323b8
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 7ee5e9c9872074d43e418dcbc33d11347c53ef02
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349372"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952565"
 ---
 # <a name="quick-actions"></a>Actions rapides
 

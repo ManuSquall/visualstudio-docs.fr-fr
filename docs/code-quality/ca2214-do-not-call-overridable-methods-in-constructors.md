@@ -1,8 +1,6 @@
 ---
-title: "CA2214 : N'appelez pas de méthodes substituables dans les constructeurs"
+title: "CA2214 : N'appelez pas de méthodes substituables dans les constructeurs"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - DoNotCallOverridableMethodsInConstructors
@@ -13,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: 335b57ca-a6e8-41b4-a20e-57ee172c97c3
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ddc827e77b37de6490cb4bee081748f317865b57
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: ef2a5631247f882a70ae94877da02f576ff04a5d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549558"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55946026"
 ---
-# <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214 : N'appelez pas de méthodes substituables dans les constructeurs
+# <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214 : N'appelez pas de méthodes substituables dans les constructeurs
 
 |||
 |-|-|

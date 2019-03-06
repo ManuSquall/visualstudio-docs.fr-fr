@@ -1,27 +1,22 @@
 ---
 title: 'Procédure pas à pas : utilisation de MSBuild | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
 caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 56d8ea0c4b79764c1326c96b42748b8291349ac2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bbce3f0723a4f4729c844db92ffddb5c43430107
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841416"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792218"
 ---
 # <a name="walkthrough-using-msbuild"></a>Procédures pas à pas : utilisation de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +74,7 @@ MSBuild est la plateforme de génération pour Microsoft et Visual Studio. Cett
   
 - Une tâche est la plus petite unité de travail, en d’autres termes, « l’atome » d’une génération. Les tâches sont des composants exécutables indépendants qui peuvent compter des entrées et des sorties. Pour le moment, aucune tâche n’est référencée ni définie dans le fichier projet. Vous ajoutez des tâches au fichier projet dans les sections ci-dessous. Pour plus d’informations, consultez l’article [Tâches MSBuild](../msbuild/msbuild-tasks.md).  
   
-- Une cible est une séquence de tâches nommée. Pour l’instant, deux cibles indiquées à la fin du fichier projet sont comprises dans les commentaires HTML : BeforeBuild et AfterBuild.  
+- Une cible est une séquence de tâches nommée. Il existe deux cibles à la fin du fichier projet sont comprises dans les commentaires HTML : BeforeBuild et AfterBuild.  
   
   ```  
   <Target Name="BeforeBuild">  
@@ -587,5 +582,3 @@ $(PropertyName)
 ## <a name="see-also"></a>Voir aussi
 [MSBuild Overview (Vue d’ensemble de MSBuild)](msbuild.md)  
  [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
-
-

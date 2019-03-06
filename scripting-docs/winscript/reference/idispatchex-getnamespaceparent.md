@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetNameSpaceParent | Documents Microsoft
+title: IDispatchEx::GetNameSpaceParent | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 12168ddb5f65c62e81a8f724cacf8b3fd4a1b3a9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 142248d4cfedb2d63025fc873c5574c163fcafd4
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728159"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344588"
 ---
 # <a name="idispatchexgetnamespaceparent"></a>IDispatchEx::GetNameSpaceParent
 Récupère l’interface pour le parent de l’espace de noms d’un objet.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetNameSpaceParent(  
    IUnknown **ppunk  
 );  

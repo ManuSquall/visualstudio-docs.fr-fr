@@ -2,22 +2,20 @@
 title: Concepteur de flux de travail - boîte de dialogue Définition CorrelatesOn
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - CorrelatesOnDefinition.UI
 ms.assetid: 8b2b627a-f236-4479-aa09-525df65e3413
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cfd9d43a8152b629635103b399ef0d7566e4867
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cba12e3e991282dc69ea5747d62db8761d6f8d16
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933116"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942633"
 ---
 # <a name="correlateson-definition-dialog-box"></a>Boîte de dialogue Définition CorrelatesOn
 

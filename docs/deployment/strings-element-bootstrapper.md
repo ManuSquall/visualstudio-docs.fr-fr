@@ -1,8 +1,6 @@
 ---
 title: '&lt;Chaînes&gt; élément (programme d’amorçage) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.NoStringsForCulture
@@ -17,63 +15,63 @@ helpviewer_keywords:
 ms.assetid: d5ea3613-5fc9-4a11-bef3-46a01178bf60
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc1cab2fdb0a175fc9365b2a8b4b17dca46a30a2
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: c5766beb87626efd11ba50422d5f811d1ae1d91e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077670"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632340"
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;Chaînes&gt; élément (programme d’amorçage)
-Définit des chaînes localisées pour les noms de produits, les noms de package et les messages d’erreur d’installation.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```xml  
-<Strings>  
-    <String  
-        Name  
-    >  
-    </String>  
-</Strings>  
-```  
-  
-## <a name="elements-and-attributes"></a>Éléments et attributs  
- Le `Strings` élément est un enfant de le `Package` élément. Il a pas d’attributs.  
-  
-## <a name="string"></a>Chaîne  
- Le `String` élément est un enfant de le `Strings` élément. Un `Strings` élément peut avoir un ou plusieurs `String` éléments.  
-  
- `String` a l’attribut suivant.  
-  
-|Attribut|Description|  
-|---------------|-----------------|  
-|`Name`|Obligatoire. Le nom de la chaîne.|  
-  
-## <a name="example"></a>Exemple  
- L’exemple de code suivant spécifie toutes les chaînes en anglais pour le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] programme d’installation.  
-  
-```xml  
-<Strings>  
-    <String Name="DisplayName">.NET Framework 2.0</String>  
-    <String Name="Culture">en</String>  
-    <String Name="AdminRequired">Administrator permissions are required to install the .NET Framework 2.0. Contact your administrator.</String>  
-    <String Name="InvalidPlatformWin9x">Installation of the .NET Framework 2.0 is not supported on Windows 95. Contact your application vendor.</String>  
-    <String Name="InvalidPlatformWinNT">Installation of the .NET Framework 2.0 is not supported on Windows NT 4.0. Contact your application vendor.</String>  
-    <String Name="InvalidPlatformIE">Installation of the .NET Framework 2.0 requires Internet Explorer 5.01 or greater. Contact your application vendor.</String>  
-    <String Name="InvalidPlatformArchitecture">This version of the .NET Framework 2.0 is not supported on a 64-bit operating system. Contact your application vendor.</String>  
-    <String Name="WindowsInstallerImproperInstall">Due to an error with Windows Installer, the installation of the .NET Framework 2.0 cannot proceed.</String>  
-    <String Name="AnotherInstanceRunning">Another instance of setup is already running. The running instance must complete before this setup can proceed.</String>  
-    <String Name="BetaNDPFailure">A beta version of the .NET Framework was detected on the computer. Uninstall any previous beta versions of .NET Framework before continuing.</String>  
-    <String Name="GeneralFailure">A failure occurred attempting to install the .NET Framework 2.0.</String>  
-    <String Name="DotNetFXExe">http://go.microsoft.com/fwlink/?LinkId=37283</String>  
-    <String Name="InstMsiAExe">http://go.microsoft.com/fwlink/?LinkId=37285</String>  
-    <String Name="Msi30Exe">http://go.microsoft.com/fwlink/?LinkId=37287</String>  
-</Strings>  
-```  
-  
-## <a name="see-also"></a>Voir aussi  
- [\<Package > élément](../deployment/package-element-bootstrapper.md)
+Définit des chaînes localisées pour les noms de produits, les noms de package et les messages d’erreur d’installation.
+
+## <a name="syntax"></a>Syntaxe
+
+```xml
+<Strings>
+    <String
+        Name
+    >
+    </String>
+</Strings>
+```
+
+## <a name="elements-and-attributes"></a>Éléments et attributs
+ Le `Strings` élément est un enfant de le `Package` élément. Il a pas d’attributs.
+
+## <a name="string"></a>Chaîne
+ Le `String` élément est un enfant de le `Strings` élément. Un `Strings` élément peut avoir un ou plusieurs `String` éléments.
+
+ `String` a l’attribut suivant.
+
+|Attribut|Description|
+|---------------|-----------------|
+|`Name`|Obligatoire. Le nom de la chaîne.|
+
+## <a name="example"></a>Exemple
+ L’exemple de code suivant spécifie toutes les chaînes en anglais pour le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] programme d’installation.
+
+```xml
+<Strings>
+    <String Name="DisplayName">.NET Framework 2.0</String>
+    <String Name="Culture">en</String>
+    <String Name="AdminRequired">Administrator permissions are required to install the .NET Framework 2.0. Contact your administrator.</String>
+    <String Name="InvalidPlatformWin9x">Installation of the .NET Framework 2.0 is not supported on Windows 95. Contact your application vendor.</String>
+    <String Name="InvalidPlatformWinNT">Installation of the .NET Framework 2.0 is not supported on Windows NT 4.0. Contact your application vendor.</String>
+    <String Name="InvalidPlatformIE">Installation of the .NET Framework 2.0 requires Internet Explorer 5.01 or greater. Contact your application vendor.</String>
+    <String Name="InvalidPlatformArchitecture">This version of the .NET Framework 2.0 is not supported on a 64-bit operating system. Contact your application vendor.</String>
+    <String Name="WindowsInstallerImproperInstall">Due to an error with Windows Installer, the installation of the .NET Framework 2.0 cannot proceed.</String>
+    <String Name="AnotherInstanceRunning">Another instance of setup is already running. The running instance must complete before this setup can proceed.</String>
+    <String Name="BetaNDPFailure">A beta version of the .NET Framework was detected on the computer. Uninstall any previous beta versions of .NET Framework before continuing.</String>
+    <String Name="GeneralFailure">A failure occurred attempting to install the .NET Framework 2.0.</String>
+    <String Name="DotNetFXExe">http://go.microsoft.com/fwlink/?LinkId=37283</String>
+    <String Name="InstMsiAExe">http://go.microsoft.com/fwlink/?LinkId=37285</String>
+    <String Name="Msi30Exe">http://go.microsoft.com/fwlink/?LinkId=37287</String>
+</Strings>
+```
+
+## <a name="see-also"></a>Voir aussi
+- [\<Package > élément](../deployment/package-element-bootstrapper.md)

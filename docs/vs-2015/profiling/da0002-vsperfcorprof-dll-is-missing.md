@@ -1,14 +1,9 @@
 ---
 title: 'DA0002 : VSPerfCorProf.dll est manquant | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0002
 - vs.performance.2
@@ -18,13 +13,13 @@ ms.assetid: 76e614b3-ad7e-4b92-b7be-88dc1329be1d
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bb1359b525b286dbc88cbd3d8eecaef27060ab23
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5723506415a0ddbf816b896e23e93eaa706bf7e7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809465"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792921"
 ---
 # <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002 : VSPerfCorProf.dll manquant
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51809465"
 Id de règle | DA0002 |  
 | Catégorie | Utilisation des outils de profilage |  
 | Méthodes de profilage | Profilage à l’aide des outils de ligne de commande VSPerfCmd et VSPerfASPNETCmd |  
-| Message | Il semble que le fichier a été collecté sans une configuration adéquate des variables d’environnement avec VSPerfCLREnv.cmd. Symboles des fichiers binaires managés ne peuvent pas être résolus. |  
+| Message | Il semble que le fichier a été collecté sans une configuration adéquate des variables d’environnement avec VSPerfCLREnv.cmd. Les symboles des fichiers binaires managés peuvent ne pas être résolus.|  
 | Type de règle | Informations |  
   
 ## <a name="cause"></a>Cause  
@@ -43,6 +38,3 @@ Id de règle | DA0002 |
   
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations  
  Quand vous profilez des applications managées en utilisant les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], exécutez l’outil en ligne de commande [VSPerfCLREnv](../profiling/vsperfclrenv.md) avant de commencer la collecte de données.
-
-
-

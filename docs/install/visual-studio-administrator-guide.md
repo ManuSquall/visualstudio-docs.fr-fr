@@ -2,10 +2,8 @@
 title: Guide de l’administrateur Visual Studio
 titleSuffix: ''
 description: En savoir plus sur le déploiement de Visual Studio dans un environnement d’entreprise.
-ms.custom: seodec18
 ms.date: 05/29/2018
-ms.technology: vs-acquisition
-ms.prod: visual-studio-dev15
+ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -14,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 4af353f5-6cfd-4ebe-bcfb-f42306e451a0
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 358614cae2001f46588bb447d97a863cf19b8036
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: adfebd52f477328193a97a8fdb91300eef215fd7
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159462"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710108"
 ---
 # <a name="visual-studio-2017-administrator-guide"></a>Guide de l’administrateur Visual Studio 2017
 
@@ -56,7 +54,7 @@ Vous pouvez déployer Visual Studio 2017 sur les stations de travail clientes t
 Plusieurs outils sont disponibles pour vous aider à [détecter et à gérer les instances de Visual Studio installées](tools-for-managing-visual-studio-instances.md) sur les ordinateurs clients.
 
 > [!TIP]
-> Outre la documentation du guide de l’administrateur, le [blog d’Heath Stewart](https://blogs.msdn.microsoft.com/heaths/tag/vs2017/) constitue une bonne source d’informations sur l’installation de Visual Studio 2017.
+> En plus de la documentation du guide de l’administrateur, le site des [archives d’installation de Visual Studio](https://devblogs.microsoft.com/setup/tag/vs2017/) constitue une bonne source d’informations sur l’installation de Visual Studio 2017.
 
 ## <a name="specify-customer-feedback-settings"></a>Spécifier les paramètres des commentaires client
 

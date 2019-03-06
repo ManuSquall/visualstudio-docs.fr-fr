@@ -1,20 +1,18 @@
 ---
 title: Générer des remplacements de méthode C# Equals et GetHashCode
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5ec552e320b0c19c5c05e145fd9c5a4588f31b4c
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: bbe04ac7a28666f32aa1da3bebe5ed50f96fb900
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295707"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957963"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>Générer des substitutions des méthodes Equals et GetHashCode dans Visual Studio
 
@@ -22,9 +20,9 @@ Cette génération de code s’applique à :
 
 - C#
 
-**Quoi :** vous permet de générer les méthodes **Equals** et **GetHashCode**.
+**Quoi :** vous permet de générer les méthodes **Equals** et **GetHashCode**.
 
-**Quand :** générez ces substitutions quand vous disposez d’un type qui doit être comparé selon un ou plusieurs champs et non selon l’emplacement de l’objet en mémoire.
+**Quand :** générez ces substitutions quand vous disposez d’un type qui doit être comparé d’après un ou plusieurs champs et non d’après l’emplacement de l’objet en mémoire.
 
 **Pourquoi :**
 

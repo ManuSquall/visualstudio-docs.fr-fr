@@ -1,8 +1,6 @@
 ---
 title: Atteindre le fichier, atteindre le symbole, atteindre la ligne
 ms.date: 08/14/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, go to
@@ -11,19 +9,19 @@ helpviewer_keywords:
 - go to
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d9ceeb7c4d24871bc0f2ddfc743c2c65e087205
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 588bc57dc2cda1030e9e1b8d1f989b2cc2d31662
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907051"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222483"
 ---
 # <a name="find-code-using-go-to-commands"></a>Rechercher du code à l’aide des commandes Atteindre
 
-Les commandes **Atteindre** de Visual Studio vous permettent d’effectuer une recherche ciblée dans votre code pour trouver rapidement des éléments spécifiques. Vous pouvez atteindre une ligne, un type, un symbole, un fichier ou un membre spécifique à partir d’une interface unifiée simple. Cette fonctionnalité existe dans Visual Studio 2017 et ultérieur.
+Les commandes **Atteindre** de Visual Studio vous permettent d’effectuer une recherche ciblée dans votre code pour trouver rapidement des éléments spécifiques. Vous pouvez atteindre une ligne, un type, un symbole, un fichier ou un membre spécifique à partir d’une interface unifiée simple.
 
 ## <a name="how-to-use-it"></a>Utilisation
 
@@ -58,7 +56,7 @@ Préfixe | Icône | Raccourci | Description
 :-: | - | - | -
 :| ![Icône de ligne](media/gotoall-line-icon.png) | **Ctrl**+**G** | Atteindre le numéro de ligne spécifié
 f| ![Icône de fichiers](media/gotoall-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**F** | Atteindre le fichier spécifié
-b| ![Icône de fichiers récents](media/gotoall-recent-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**R** | Atteindre le fichier spécifié, récemment ouvert
+r| ![Icône de fichiers récents](media/gotoall-recent-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**R** | Atteindre le fichier spécifié, récemment ouvert
 t| ![Icône de types](media/gotoall-types-icon.png) | **Ctrl**+**1**, **Ctrl**+**T** | Atteindre le type spécifié
 m| ![Icône de membres](media/gotoall-members-icon.png) | **Ctrl**+**1**, **Ctrl**+**M** | Atteindre le membre spécifié
 \#| ![Icône de symboles](media/gotoall-symbols-icon.png) | **Ctrl**+**1**, **Ctrl**+**S** | Atteindre le symbole spécifié

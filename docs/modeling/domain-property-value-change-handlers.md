@@ -6,17 +6,15 @@ helpviewer_keywords:
 - Domain-Specific Language, overriding event handlers
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 834ee518269c414c8a4ee08b056369813e0a1751
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9ccce6d63e1cb96d4f4027bd13a4a4095e0e4248
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057546"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951486"
 ---
 # <a name="domain-property-value-change-handlers"></a>Gestionnaires de modification de valeur de propriété de domaine
 
@@ -95,7 +93,7 @@ if (newValue > 10)
 }
 ```
 
-### <a name="alternative-technique-calculated-properties"></a>Autre technique : propriétés calculées
+### <a name="alternative-technique-calculated-properties"></a>Autre technique : Propriétés calculées
 
 L'exemple précédent montre comment OnValueChanged() peut être utilisée pour propager des valeurs d'une propriété de domaine à une autre. Chaque propriété a sa propre valeur stockée.
 
@@ -105,7 +103,7 @@ Au lieu de l’exemple précédent, vous pouvez définir le **type** champ `Text
 
 Toutefois, l'un des inconvénients potentiels des propriétés calculées est que l'expression est évaluée chaque fois que la valeur est utilisée, ce qui pourrait poser un problème de performance. De plus, il n'existe aucune méthode OnValueChanging() et OnValueChanged() sur une propriété calculée.
 
-### <a name="alternative-technique-change-rules"></a>Autre technique : modifier les règles
+### <a name="alternative-technique-change-rules"></a>Autre technique : Modifier des règles
 
 Si vous définissez une ChangeRule, elle est exécutée à la fin d’une transaction dans laquelle valeur d’une propriété change.  Pour plus d’informations, consultez [propager les modifications dans le modèle de règles](../modeling/rules-propagate-changes-within-the-model.md).
 

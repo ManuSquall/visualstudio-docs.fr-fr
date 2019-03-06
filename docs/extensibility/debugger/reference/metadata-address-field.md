@@ -1,10 +1,7 @@
 ---
 title: METADATA_ADDRESS_FIELD | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - METADATA_ADDRESS_FIELD
 helpviewer_keywords:
@@ -12,50 +9,56 @@ helpviewer_keywords:
 ms.assetid: 15ab45fe-6b3b-4e09-880b-31b34f523607
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2896cff4133db49ca02aa3b0a08f227f389ab713
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5858bf29d1bf5fd2f93032aec9791380fbbd37c5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834108"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713852"
 ---
 # <a name="metadataaddressfield"></a>METADATA_ADDRESS_FIELD
-Cette structure représente l’adresse d’un champ d’une classe ou structure.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-typedef struct _tagMETADATA_ADDRESS_FIELD {  
-   _mdToken tokField;  
-} METADATA_ADDRESS_FIELD  
-```  
-  
-```csharp  
-public struct METADATA_ADDRESS_FIELD {  
-   public int tokField;  
-}  
-```  
-  
-## <a name="terms"></a>Termes  
- tokField  
- L’ID du jeton de champ.  
-  
- (C++) `_mdToken` est un `typedef` pour 32 bits `int`.  
-  
-## <a name="remarks"></a>Notes  
- Cette structure fait partie de l’union dans le [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) structure lorsque le `dwKind` champ la `DEBUG_ADDRESS_UNION` structure est définie sur `ADDRESS_KIND_FIELD` (une valeur comprise entre le [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) énumération).  
-  
-## <a name="requirements"></a>Configuration requise  
- En-tête : sh.h  
-  
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
-  
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Voir aussi  
- [Structures et Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
- [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)
+
+Cette structure représente l’adresse d’un champ d’une classe ou structure.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+typedef struct _tagMETADATA_ADDRESS_FIELD {
+    _mdToken tokField;
+} METADATA_ADDRESS_FIELD
+```
+
+```csharp
+public struct METADATA_ADDRESS_FIELD {
+    public int tokField;
+}
+```
+
+## <a name="terms"></a>Termes
+
+`tokField`
+
+L’ID du jeton de champ.
+
+(C++) `_mdToken` est un `typedef` pour 32 bits `int`.
+
+## <a name="remarks"></a>Notes
+
+Cette structure fait partie de l’union dans le [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) structure lorsque le `dwKind` champ la `DEBUG_ADDRESS_UNION` structure est définie sur `ADDRESS_KIND_FIELD` (une valeur comprise entre le [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) énumération).
+
+## <a name="requirements"></a>Spécifications
+
+En-tête : sh.h
+
+Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+
+Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Voir aussi
+
+- [Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
+- [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

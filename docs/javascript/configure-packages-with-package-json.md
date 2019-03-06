@@ -1,24 +1,22 @@
 ---
 title: Configurer des packages npm avec package.json
 description: Spécifier les versions de package npm avec package.json
-ms.custom: ''
 ms.date: 09/06/2018
-ms.technology: vs-nodejs
 ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 711d7b65eb329e844fedb0148006cacb1c7a0ebf
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: eb0267f668121e4d56f113798b14810f3446b8cf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219093"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943654"
 ---
 # <a name="packagejson-configuration"></a>Configuration de package.json
 

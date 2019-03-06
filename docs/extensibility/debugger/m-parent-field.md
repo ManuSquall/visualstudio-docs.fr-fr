@@ -1,41 +1,38 @@
 ---
 title: Champ m_Parent | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - m_parent field, Task class [.NET Framework debug engines]
 ms.assetid: da9e3dc7-8e9b-4c3a-a9e0-12921b5300c6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2246a846324710cee0cb49913c1debd3bad0436
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 7de88b41615e2d42a13d8b5ee78b564409a79022
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231127"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56714983"
 ---
 # <a name="mparent-field"></a>champ de m_Parent
-Le champ de stockage pour le <xref:System.Threading.Tasks.Task?displayProperty=fullName> `Parent` propriété.  
-  
- **Namespace :** <xref:System.Threading.Tasks?displayProperty=fullName>  
-  
- **Assembly :** mscorlib (dans *mscorlib.dll*)  
-  
- Étant donné que vous ne pouvez pas accéder à ce membre interne du .NET Framework, la syntaxe suivante est fournie en commun Intermediate Language (CIL).  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```csharp  
-.field private initonly class System.Threading.Tasks.Task m_parent  
-```  
-  
-## <a name="remarks"></a>Notes  
-  
-## <a name="see-also"></a>Voir aussi  
- [Classe de tâche](../../extensibility/debugger/task-class-internal-members.md)
+
+Le champ de stockage pour le parent de la tâche <xref:System.Threading.Tasks.Task>.
+
+**Espace de noms :** <xref:System.Threading.Tasks?displayProperty=fullName>
+
+**Assembly :** mscorlib (dans *mscorlib.dll*)
+
+Étant donné que vous ne pouvez pas accéder à ce membre interne du .NET Framework, la syntaxe suivante est fournie en commun Intermediate Language (CIL).
+
+## <a name="syntax"></a>Syntaxe
+
+```csharp
+.field private initonly class System.Threading.Tasks.Task m_parent
+```
+
+## <a name="see-also"></a>Voir aussi
+
+- [Classe Task](../../extensibility/debugger/task-class-internal-members.md)

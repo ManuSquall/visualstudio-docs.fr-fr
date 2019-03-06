@@ -2,10 +2,8 @@
 title: Désinstaller Visual Studio
 titleSuffix: ''
 description: Découvrez comment désinstaller Visual Studio, étape par étape.
-ms.custom: seodec18
 ms.date: 08/16/2017
-ms.technology: vs-acquisition
-ms.prod: visual-studio-dev15
+ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
 - uninstall
@@ -13,15 +11,15 @@ f1_keywords:
 ms.assetid: 0e445255-b796-426d-ad93-a4d8e36da2c5
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89f517c51fdd1d9e9bd9e47d928b9854421cbbdb
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 0fe26bb7e0139c1521de17dab7cd7e8146aa780a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159956"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907834"
 ---
 # <a name="uninstall-visual-studio-2017"></a>Désinstaller Visual Studio 2017
 

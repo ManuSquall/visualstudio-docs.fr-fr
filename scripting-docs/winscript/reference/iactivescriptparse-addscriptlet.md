@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptParse::AddScriptlet | Documents Microsoft
+title: IActiveScriptParse::AddScriptlet | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e854ac71dc36263d805160f9336e049856076ce5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3b928efe2e8ac7bc0fbdb7c2ae9978a4418cbee7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724649"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090959"
 ---
 # <a name="iactivescriptparseaddscriptlet"></a>IActiveScriptParse::AddScriptlet
-Ajoute un scriptlet du code pour le script. Cette méthode est utilisée dans les environnements où l’état permanent du script est étroitement avec le document de l’hôte et l’hôte est chargé pour la restauration du script, plutôt que dans un `IPersist*` interface. Les exemples principales sont des langages de script HTML qui autorisent les scriptlets de code incorporé dans le document HTML à attacher aux événements intrinsèques (par exemple, ONCLICK="button1.text='Exit' »).  
+Ajoute un scriptlet de code pour le script. Cette méthode est utilisée dans les environnements où l’état permanent du script est étroitement couplé avec le document hôte et l’hôte est chargé pour la restauration du script, plutôt que dans un `IPersist*` interface. Les exemples principales sont des langages de script HTML qui permettent les scriptlets de code incorporé dans le document HTML à joindre aux événements intrinsèques (par exemple, ONCLICK="button1.text='Exit' »).  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT AddScriptlet(  
     LPCOLESTR pstrDefaultName,       // address of default name of scriptlet  
     LPCOLESTR pstrCode,              // address of scriptlet text  
@@ -48,10 +48,10 @@ HRESULT AddScriptlet(
   
 #### <a name="parameters"></a>Paramètres  
  `pstrDefaultName`  
- [in] Adresse d’un nom de valeur par défaut pour associer le scriptlet. Si le scriptlet ne contient pas les informations d’affectation de noms (comme dans l’exemple ONCLICK ci-dessus), ce nom sera utilisé pour identifier le scriptlet. Si ce paramètre est `NULL`, le moteur de script fabrique un nom unique, si nécessaire.  
+ [in] Adresse d’un nom par défaut à associer le scriptlet. Si le scriptlet ne contient pas d’informations d’affectation de noms (comme dans l’exemple ONCLICK ci-dessus), ce nom sera utilisé pour identifier le scriptlet. Si ce paramètre est `NULL`, le moteur de script fabrique un nom unique, si nécessaire.  
   
  `pstrCode`  
- [in] Adresse du scriptlet texte à ajouter. L’interprétation de cette chaîne varie selon le langage de script.  
+ [in] Adresse du texte de scriptlet à ajouter. L’interprétation de cette chaîne varie selon le langage de script.  
   
  `pstrItemName`  
  [in] Adresse d’une mémoire tampon qui contient le nom de l’élément associé à ce scriptlet. Ce paramètre, en plus de `pstrSubItemName`, identifie l’objet pour lequel le scriptlet est un gestionnaire d’événements.  
@@ -63,37 +63,37 @@ HRESULT AddScriptlet(
  [in] Adresse d’une mémoire tampon qui contient le nom de l’événement pour lequel le scriptlet est un gestionnaire d’événements.  
   
  `pstrDelimiter`  
- [in] Adresse de fin-de-scriptlet délimiteur. Lorsque le `pstrCode` paramètre est analysé à partir d’un flux de texte, l’hôte utilise généralement un délimiteur, telles que les guillemets («), pour détecter la fin du scriptlet. Ce paramètre spécifie le délimiteur de l’hôte utilisé, ce qui permet au moteur de script pour fournir certains prétraitement primitifs conditionnelle (par exemple, en remplaçant un guillemet simple ['] par deux guillemets simples à utiliser comme délimiteur). Exactement comment (et si) le script permet de moteur dépend de l’utilisation de ces informations sur le moteur de script. Définissez ce paramètre avec la valeur NULL si l’hôte n’utilisez pas un délimiteur pour marquer la fin du scriptlet.  
+ [in] Adresse du délimiteur de fin de scriptlet. Lorsque le `pstrCode` paramètre est analysé à partir d’un flux de texte, l’hôte utilise généralement un séparateur, telles que les deux guillemets («), pour détecter la fin du scriptlet. Ce paramètre spécifie le délimiteur utilisé par l’hôte, ce qui permet au moteur de script fournir un prétraitement primitif conditionnel (par exemple, en remplaçant un guillemet simple ['] par deux guillemets simples à utiliser comme délimiteur). Exactement comment (et si) le moteur de script utilise ces informations varie selon le moteur de script. Définissez ce paramètre avec la valeur NULL si l’hôte n’utilisez pas un séparateur pour marquer la fin du scriptlet.  
   
  `dwSourceContextCookie`  
- [in] Valeur définie par l’application qui est utilisée à des fins de débogage.  
+ [in] Valeur définie par l’application qui est utilisée pour le débogage.  
   
  `ulStartingLineNumber`  
- [in] Valeur de base zéro qui spécifie la ligne à laquelle l’analyse commencera à.  
+ [in] Valeur de base zéro qui spécifie la ligne qui commence à l’analyse.  
   
  `dwFlags`  
- [in] Indicateurs associés le scriptlet. Peut être une combinaison des valeurs suivantes :  
+ [in] Indicateurs associés au scriptlet. Peut être une combinaison des valeurs suivantes :  
   
 |Valeur de retour|Signification|  
 |------------------|-------------|  
 |SCRIPTTEXT_ISVISIBLE|Indique que le texte du script doit être visible (et, par conséquent, peut être appelé par nom) en tant qu’une méthode globale dans l’espace de noms du script.|  
-|SCRIPTTEXT_ISPERSISTENT|Indique que le code ajouté au cours de cet appel doit être enregistré si le moteur de script est enregistré (par exemple, via un appel à `IPersist*::Save`), ou si le moteur de script est réinitialisé par le biais d’une transition à l’état initialisé. Pour plus d’informations sur cet état, voir les États de moteur de Script.|  
+|SCRIPTTEXT_ISPERSISTENT|Indique que le code ajouté pendant cet appel doit être enregistré si le moteur de script est enregistré (par exemple, via un appel à `IPersist*::Save`), ou si le moteur de script est réinitialisé via une transition vers l’état initialisé. Pour plus d’informations sur cet état, consultez les États de moteur de Script.|  
   
  `pbstrName` ,  
- [out] Nom réel utilisé pour identifier le scriptlet. Cela doit être dans l’ordre de préférence : un nom spécifié explicitement dans le texte du scriptlet, le nom par défaut fourni dans `pstrDefaultName`, ou un nom unique synthétisés par le moteur de script.  
+ [out] Nom réel utilisé pour identifier le scriptlet. Elle doit être dans l’ordre de préférence : un nom spécifié explicitement dans le texte de scriptlet, le nom par défaut fourni dans `pstrDefaultName`, ou un nom unique synthétisés par le moteur de script.  
   
  `pexcepinfo` ,  
- [out] Adresse d’une structure contenant des informations sur l’exception. Cette structure doit être renseignée lorsque DISP_E_EXCEPTION est retourné.  
+ [out] Adresse d’une structure contenant des informations sur les exceptions. Cette structure doit être renseignée lorsque DISP_E_EXCEPTION est retourné.  
   
 ## <a name="return-value"></a>Valeur de retour  
- Retourne l’une des valeurs suivantes :  
+ Retourne une des valeurs suivantes :  
   
 |Valeur de retour|Signification|  
 |------------------|-------------|  
 |`S_OK`|Opération réussie.|  
 |`DISP_E_EXCEPTION`|Une exception s’est produite lors de l’analyse du scriptlet. Le `pexcepinfo` paramètre contient des informations sur l’exception.|  
-|`E_INVALIDARG`|Un argument n’était pas valide.|  
-|`E_NOTIMPL`|Cette méthode n’est pas prise en charge ; le moteur de script ne prend pas en charge l’ajout scriptlets de recevoir des événements.|  
+|`E_INVALIDARG`|Un argument n’est pas valide.|  
+|`E_NOTIMPL`|Cette méthode n’est pas pris en charge ; le moteur de script ne prend pas en charge l’ajout des scriptlets de réception d’événements.|  
 |`E_POINTER`|Un pointeur non valide a été spécifié.|  
 |`E_UNEXPECTED`|L’appel n’était pas attendu (par exemple, le moteur de script n'a pas encore été chargé ou initialisé) et par conséquent a échoué.|  
 |`OLESCRIPT_E_INVALIDNAME`|Le nom par défaut fourni n’est pas valide dans ce langage de script.|  

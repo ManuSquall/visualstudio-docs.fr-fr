@@ -1,21 +1,19 @@
 ---
 title: Boîte de dialogue Schémas XML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: 0271fa26-2205-49bd-96e0-ae1441571808
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5357f762d2a7027db92ad1916acb279abdf23157
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 4ed45f6444eb76d89488e8d9b27d1725c217d6fe
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693638"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55930872"
 ---
 # <a name="xml-schemas-dialog-box"></a>Boîte de dialogue schémas XML
 
@@ -24,7 +22,7 @@ Le **schémas XML** boîte de dialogue permet de sélectionner les XML schema de
 Vous pouvez accéder à la **schémas XML** boîte de dialogue en cliquant sur le **schémas** bouton dans la fenêtre de propriétés de document, ou en sélectionnant **schémas** à partir de la **XML** menu.
 
 ## <a name="uielement-list"></a>Liste des éléments d’interface
- **Utilisez**
+ **Utilisation**
 
  Sélectionnez la manière dont le schéma XML doit être utilisé.
 
@@ -44,7 +42,7 @@ Affiche le nom de fichier du schéma XML.
 
 **Ajouter**
 
-Ouvre le **ouvrir le schéma XSD** boîte de dialogue qui vous permet de sélectionner d’autres schémas à ajouter au jeu de schémas. Lorsque vous ajoutez un schéma au schéma défini, le **utilisez** colonne a la valeur **utiliser ce schéma**.
+Ouvre le **ouvrir le schéma XSD** boîte de dialogue qui vous permet de sélectionner d’autres schémas à ajouter au jeu de schémas. Lorsque vous ajoutez un schéma au schéma défini, le **utilisation** colonne a la valeur **utiliser ce schéma**.
 
 **Supprimer**
 
@@ -53,5 +51,5 @@ Supprime le schéma actuellement sélectionné du jeu de schémas. Cela supprime
 ## <a name="see-also"></a>Voir aussi
 
 - [Composants de l’éditeur XML](../xml-tools/xml-editor-components.md)
-- [Comment : sélectionner les schémas XML à utiliser](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
+- [Guide pratique pour Sélectionner les schémas XML à utiliser](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
 - [Cache de schéma](../xml-tools/schema-cache.md)

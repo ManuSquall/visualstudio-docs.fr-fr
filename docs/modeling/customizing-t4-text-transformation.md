@@ -7,17 +7,15 @@ helpviewer_keywords:
 - text templates, custom hosts
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7755444781bb0205e7483e2365d80cac909c62c6
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 33f7fd14ff62369de66e4934bf9bb2cf6fd83542
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380101"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951551"
 ---
 # <a name="customize-t4-text-transformation"></a>Personnaliser une transformation de texte T4
 

@@ -1,8 +1,6 @@
 ---
-title: 'Procédure pas à pas : créer un extrait de code'
+title: 'Procédure pas à pas : Créer un extrait de code'
 ms.date: 10/27/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, creating
@@ -14,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: 0dcaae11-39cf-4463-9c90-2494321251c2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 517eb98e7ca5b32d07a4501823ca092c366e4639
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 8944117c7d4e47f36f504f9677074ad4f86e33de
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39469150"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949055"
 ---
-# <a name="walkthrough-create-a-code-snippet"></a>Procédure pas à pas : créer un extrait de code
+# <a name="walkthrough-create-a-code-snippet"></a>Procédure pas à pas : Créer un extrait de code
 Vous pouvez créer un extrait de code en quelques étapes seulement. Il vous suffit de créer un fichier XML, de le remplir avec les éléments appropriés et d’y ajouter votre code. Vous pouvez aussi ajouter des références et des paramètres de remplacement dans votre code. Vous pouvez ensuite ajouter l’extrait de code à votre installation Visual Studio avec le bouton **Importer** dans le **Gestionnaire des extraits de code** (**Outils** > **Gestionnaire des extraits de code**).
 
 ## <a name="snippet-template"></a>Modèle d’extrait de code
@@ -80,7 +78,7 @@ Vous pouvez créer un extrait de code en quelques étapes seulement. Il vous suf
 
      *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippets*
 
-6.  Testez votre extrait de code en ouvrant un projet Visual Basic et un fichier de code. Dans le fichier, choisissez **Extraits de code** > **Insérer un extrait** dans le menu contextuel, puis choisissez **My Code Snippets**. Vous devez normalement voir un extrait de code nommé **My Visual Basic Code Snippet** (Mon extrait de code Visual Basic). Double-cliquez dessus.
+6.  Testez votre extrait de code en ouvrant un projet Visual Basic et un fichier de code. Dans le fichier, choisissez **Extraits de code** > **Insérer un extrait de code** dans le menu contextuel (clic droit), puis **Mes extraits de code**. Vous devez normalement voir un extrait de code nommé **My Visual Basic Code Snippet** (Mon extrait de code Visual Basic). Double-cliquez dessus.
 
     `Console.WriteLine("Hello, World!")` est inséré dans le fichier de code.
 

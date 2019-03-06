@@ -1,5 +1,5 @@
 ---
-title: Application_node_event_filter, énumération | Documents Microsoft
+title: Application_node_event_filter, énumération | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,18 +14,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0446265d40fb6277fd155f3ed5822c506ae30bc7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c6974a179ae3f694d1e355969f9abe0ce9163fc4
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641119"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344549"
 ---
 # <a name="applicationnodeeventfilter-enumeration"></a>APPLICATION_NODE_EVENT_FILTER, énumération
 Spécifie les types de nœuds à exclure lors du filtrage de documents de code. Utilisé dans [IDebugApplicationNode100::GetExcludedDocuments](../../winscript/reference/idebugapplicationnode100-getexcludeddocuments.md) et [IDebugApplicationNode100::SetFilterForEventSink](../../winscript/reference/idebugapplicationnode100-setfilterforeventsink.md)  
   
 > [!IMPORTANT]
->  Ces constantes sont implémentées par PDM v10.0 et supérieures. Trouvée dans activdbg100.h.  
+>  Ces constantes sont implémentées par PDM v10.0 et supérieur. Trouvée dans activdbg100.h.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,11 +35,11 @@ typedef enum tagAPPLICATION_NODE_EVENT_FILTER {    FILTER_EXCLUDE_NOTHING = 0,  
   
 ## <a name="members"></a>Membres  
   
-|Membre|Valeur|Description|  
+|Membre|Value|Description|  
 |------------|-----------|-----------------|  
 |FILTER_EXCLUDE_NOTHING|0x00000000|Envoyer tous les événements.|  
-|FILTER_EXCLUDE_ANONYMOUS_CODE|0x00000001|Excluez les nœuds de code anonyme. Ces nœuds sont utilisés par le runtime JScript pour `new Function([args,] <code>)'`.|  
-|FILTER_EXCLUDE_EVAL_CODE|0x00000002|Excluez les nœuds de code eval. Ces nœuds sont utilisés par le runtime JScript pour la prise en charge eval.|  
+|FILTER_EXCLUDE_ANONYMOUS_CODE|0x00000001|Exclure les nœuds de code anonyme. Ces nœuds sont utilisés par le runtime JScript pour `new Function([args,] <code>)'`.|  
+|FILTER_EXCLUDE_EVAL_CODE|0x00000002|Exclure les nœuds de code eval. Ces nœuds sont utilisés par le runtime JScript pour eval prise en charge.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Constantes de débogueur de script actif, énumérations et structures](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

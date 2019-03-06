@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/02/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Questions relatives à la facturation pour les abonnements cloud.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: c0b66b7a10c344d7d534e5618ca560bdae31f30e
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: d85b093b8877430c037fdc528abc8264b6c847b9
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283299"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843777"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>FAQ sur la facturation des abonnements cloud Visual Studio
 
@@ -37,7 +35,7 @@ R : Pas du tout. Si vous souhaitez uniquement acheter des abonnements cloud Vis
 
 ### <a name="q-can-i-use-an-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>Q : Puis-je utiliser un contrat Entreprise pour acheter des abonnements cloud Visual Studio ?
 
-R : Oui, c’est possible. Vous devez être propriétaire ou collaborateur d’un abonnement Azure qui a été créé pour votre contrat Entreprise. Veillez à effectuer vos achats d’abonnements cloud Visual Studio directement sur Visual Studio Marketplace. Vous ne pouvez pas acheter des abonnements cloud Visual Studio à l’aide d’un bon de commande.
+R : Oui, vous pouvez. Vous devez être propriétaire ou collaborateur d’un abonnement Azure qui a été créé pour votre contrat Entreprise. Veillez à effectuer vos achats d’abonnements cloud Visual Studio directement sur Visual Studio Marketplace. Vous ne pouvez pas acheter des abonnements cloud Visual Studio à l’aide d’un bon de commande.
 
 ### <a name="q-how-can-i-tell-whether-i-have-the-necessary-privileges-to-buy-services-in-the-visual-studio-marketplace-through-my-organizations-enterprise-agreement"></a>Q : Comment puis-je savoir si je dispose des privilèges nécessaires pour acheter des services sur Visual Studio Marketplace avec le contrat Entreprise de mon organisation ?
 
@@ -45,9 +43,9 @@ R : L’approche la plus simple pour déterminer si vous avez les autorisations
 Vous devez sélectionner un abonnement Azure (qui est un compte de facturation) dans la liste des abonnements Azure qui sont actuellement liés à votre connexion.
 Étant donné que le nom de l’abonnement Azure est par défaut le type de compte de facturation (« Paiement à l’utilisation », « Contrat Entreprise » et ainsi de suite), il est souvent facile de savoir si l’abonnement Azure fait partie de votre contrat Entreprise.
 
-Une autre approche consiste à essayer d’accéder à [Azure Enterprise Portal](http://ea.azure.com).  Si vous pouvez y accéder, cela signifie que vous avez déjà le rôle d’administrateur d’entreprise ou de propriétaire de compte. Seuls les propriétaires de compte peuvent définir de nouveaux comptes de facturation Azure dans un contrat Entreprise. Si vous ne pouvez pas accéder à Azure Enterprise Portal, renseignez-vous au sein de votre organisation pour savoir qui est votre administrateur d’entreprise et demandez-lui de vous ajouter en tant que propriétaire de compte dans Azure Enterprise Portal.  Si vous ne parvenez pas à identifier l’administrateur d’entreprise, vous pouvez [envoyer un ticket de support](http://aka.ms/AzureEntSupport) et demander les informations de contact.  Pour le ticket de support, vous avez besoin du nom de votre organisation et de votre numéro d’inscription Contrat Entreprise.
+Une autre approche consiste à essayer d’accéder à [Azure Enterprise Portal](http://ea.azure.com).  Si vous pouvez y accéder, cela signifie que vous avez déjà le rôle d’administrateur d’entreprise ou de propriétaire de compte. Seuls les propriétaires de compte peuvent définir de nouveaux comptes de facturation Azure dans un contrat Entreprise. Si vous ne pouvez pas accéder à Azure Enterprise Portal, renseignez-vous au sein de votre organisation pour savoir qui est votre administrateur d’entreprise et demandez-lui de vous ajouter en tant que propriétaire de compte dans Azure Enterprise Portal.  Si vous ne parvenez pas à identifier l’administrateur d’entreprise, vous pouvez [envoyer un ticket de support](https://aka.ms/AzureEntSupport) et demander les informations de contact.  Pour le ticket de support, vous avez besoin du nom de votre organisation et de votre numéro d’inscription Contrat Entreprise.
 
-### <a name="q-can-i-use-the-azure-monetary-commitment-funds-from-my-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>Q : Puis-je utiliser les crédits de contrat de licence prépayé Azure de mon contrat Entreprise pour acheter des abonnements cloud Visual Studio ?
+### <a name="q-can-i-use-the-azure-monetary-commitment-funds-from-my-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>Q : Puis-je utiliser les crédits de contrat de licence prépayé Azure de mon contrat Entreprise pour acheter des abonnements cloud Visual Studio ?
 
 R : Non, ces crédits prépayés ne sont pas éligibles pour l’achat d’abonnements cloud Visual Studio. Quand vous choisissez un abonnement Azure qui a été créé pour votre contrat Entreprise afin d’acheter des abonnements cloud Visual Studio, les frais figureront sur votre prochaine facture de « dépassement ». En général, cela se produit chaque mois, mais en raison des règles d’historique pour certains clients avec un contrat Entreprise, une facture de dépassement peut ne pas être émise avant plusieurs mois. Veuillez consulter un spécialiste en licences pour votre contrat Entreprise si vous souhaitez connaître le montant des achats supplémentaires (achats qui ne sont pas éligibles pour les crédits de contrat de licence prépayé Azure) qui déclenchera une facture de dépassement.
 
@@ -68,11 +66,11 @@ R : Quand vous annulez un abonnement cloud Visual Studio, vous annulez le renou
 
 Avec les abonnements cloud mensuels, les annulations prennent effet le premier jour du mois suivant. Si vous annulez uniquement certains de vos abonnements cloud mensuels, veillez à supprimer les utilisateurs le premier jour du mois suivant pour vous assurer que des abonnements actifs sont toujours affectés aux personnes appropriées.
 
-Pour les abonnements cloud annuels, les annulations prennent effet le premier jour du mois suivant 12 mois à partir de l’achat initial, ou 12 mois à partir de la dernière facturation de renouvellement annuel. Par exemple, si vous avez acheté un abonnement cloud annuel Visual Studio Enterprise le 3 janvier 2018, il reste actif jusqu’au 1er février 2019, date de son renouvellement automatique pour une autre année. Si vous annulez à tout moment entre cette date et le 1er février 2020, l’abonnement expire le 1er février 2020. Aucune remise n’est accordée en cas d’annulation en cours d’année d’abonnement avec les abonnements cloud annuels.
+Pour les abonnements cloud annuels, les annulations prennent effet le premier jour du mois suivant 12 mois à partir de l’achat initial, ou 12 mois à partir de la dernière facturation de renouvellement annuel. Par exemple, si vous avez acheté un abonnement cloud annuel Visual Studio Professional le 3 janvier 2018, il reste actif jusqu’au 1er février 2019, date de son renouvellement automatique pour une autre année. Si vous annulez à tout moment entre cette date et le 1er février 2020, l’abonnement expire le 1er février 2020. Aucune remise n’est accordée en cas d’annulation en cours d’année d’abonnement avec les abonnements cloud annuels.
 
 ### <a name="q-what-kind-of-volume-discounts-are-available-for-visual-studio-subscriptions"></a>Q : Quels sont les types de remise sur la quantité disponibles pour les abonnements Visual Studio ?
 
-R : Vous bénéficiez d’une remise de 5 % à partir du sixième abonnement *pour chaque type* d’abonnement :
+R :  Vous bénéficiez d’une remise de 5 % à partir du sixième abonnement *pour chaque type* d’abonnement :
 
 * Visual Studio Professional mensuel
 * Visual Studio Professional annuel
@@ -83,6 +81,9 @@ Par exemple, si vous achetez six abonnements mensuels Visual Studio Professional
 
 En outre, la remise s’applique uniquement aux frais durant une période de facturation mensuelle donnée. Ainsi, si vous achetez cinq abonnements annuels Visual Studio Professional durant un mois, et que vous achetez ensuite cinq abonnements supplémentaires le mois suivant, vous payez le prix normal pour les dix abonnements.
 
+> [!NOTE]
+> Microsoft n’offre plus les abonnements Visual Studio Professional annuel et Visual Studio Enterprise annuel dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à consulter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
+
 ## <a name="other-questions"></a>Autres questions
 
 ### <a name="q-can-i-use-the-monthly-azure-credits-as-a-visual-studio-subscriber-to-buy-more-visual-studio-cloud-subscriptions"></a>Q : Puis-je utiliser les crédits Azure mensuels en tant qu’abonné Visual Studio pour acheter davantage d’abonnements cloud Visual Studio ?
@@ -92,23 +93,22 @@ Avant d’effectuer des achats, vous devrez [supprimer votre limite de dépense]
 
 ### <a name="q-whats-the-difference-between-annual-and-monthly-cloud-subscriptions"></a>Q : Quelle est la différence entre les abonnements cloud annuels et mensuels ?
 
-R : Les abonnements cloud mensuels incluent Visual Studio, et l’utilisation d’Azure DevOps Services et de TFS. Les abonnements cloud annuels incluent en plus de cela des avantages réservés aux abonnés, notamment l’installation et l’exécution de Windows et d’autres logiciels Microsoft afin des fins de développement et de test, un crédit Azure mensuel à utiliser pour tester les services Azure et effectuer des tâches de développement et de test dans le cloud, de la formation, un support technique, et bien plus encore.
+R :  Les abonnements cloud mensuels incluent Visual Studio, et l’utilisation d’Azure DevOps Services et de TFS. Les abonnements cloud annuels incluent en plus de cela des avantages réservés aux abonnés, notamment l’installation et l’exécution de Windows et d’autres logiciels Microsoft afin des fins de développement et de test, un crédit Azure mensuel à utiliser pour tester les services Azure et effectuer des tâches de développement et de test dans le cloud, de la formation, un support technique, et bien plus encore.
 [Comparer les avantages et les tarifs des abonnements cloud](https://visualstudio.microsoft.com/vs/pricing/)
 
 ### <a name="q-do-i-get-new-versions-of-visual-studio-if-i-buy-a-visual-studio-cloud-subscription"></a>Q : Est-ce que j’ai accès aux nouvelles versions de Visual Studio si je souscris un abonnement cloud Visual Studio ?
 
-R : Oui. Vous pouvez télécharger et exécuter les nouvelles versions dès leur publication. Vous pouvez aussi continuer à exécuter les versions précédentes.
+R :  Oui. Vous pouvez télécharger et exécuter les nouvelles versions dès leur publication. Vous pouvez aussi continuer à exécuter les versions précédentes.
 
 ### <a name="q-can-i-buy-visual-studio-cloud-subscriptions-from-my-software-reseller"></a>Q : Puis-je acheter des abonnements cloud Visual Studio auprès de mon revendeur de logiciels ?
 
-R : Oui, si votre revendeur participe au programme Fournisseur de solutions Cloud. Renseignez-vous auprès de lui.
+R :  Oui, si votre revendeur participe au programme Fournisseur de solutions Cloud. Renseignez-vous auprès de lui.
 
 ## <a name="buy-cloud-subscriptions-now"></a>Acheter des abonnements cloud
 
 * [Visual Studio Professional mensuel](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly)
-* [Visual Studio Professional annuel](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual)
 * [Visual Studio Enterprise mensuel](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly)
-* [Visual Studio Enterprise annuel](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual)
+
 
 ## <a name="related-resources"></a>Ressources connexes
 

@@ -2,20 +2,18 @@
 title: Concepteur de flux de travail - Concepteur d’activités FinalState
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: aa186893-8775-40dd-981f-8593ead831d0
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 4f49ed7bd2d370f72d8a6be69c28148fbf67e1bf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8292e22bac6063a36286930584e1d7c227913511
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924341"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911635"
 ---
 # <a name="finalstate-activity-designer"></a>Concepteur d'activités FinalState
 

@@ -2,23 +2,21 @@
 title: Créer un projet de Workflow Foundation
 ms.date: 06/25/2018
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - Workflow Designer, creating a workflow project
 - creating a workflow project
 ms.assetid: 235a125e-ebe7-4a98-bf77-86c8558728fb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4f8ed1effbc459bd2a17e3433738c1b461513b
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: cf4013f1302ff4952fa34c689801978b9116e549
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755652"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222452"
 ---
 # <a name="workflow-project-templates"></a>Modèles de projet de flux de travail
 
@@ -36,7 +34,7 @@ Visual Studio fournit quatre modèles de projet de flux de travail différents 
 
 - Bibliothèque ActivityDesigner
 
-Pour accéder à ces modèles, installez d’abord le **Windows Workflow Foundation** composant de Visual Studio 2017. Pour obtenir des instructions détaillées, consultez [installer Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
+Pour accéder à ces modèles, installez d’abord le **Windows Workflow Foundation** composant de Visual Studio. Pour obtenir des instructions détaillées, consultez [installer Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
 1. Une fois que vous avez installé le **Windows Workflow Foundation** composant, ouvrez le **nouveau projet** boîte de dialogue en sélectionnant **fichier** > **New**  >  **Projet**.
 
@@ -72,12 +70,12 @@ Si vous choisissez la **bibliothèque d’activités** modèle, Visual Studio cr
 
 Si vous choisissez la **Bibliothèque ActivityDesigner** modèle, Visual Studio crée une définition de concepteur d’activités dans XAML et un fichier d’implémentation code-behind. Le Concepteur de flux de travail s’ouvre et affiche la zone de dessin pour votre concepteur d’activités. Faites glisser Windows Presentation Foundation (WPF) des contrôles de **boîte à outils** vers l’aire de conception pour les utiliser dans votre concepteur d’activités personnalisées.
 
-Pour obtenir un exemple montrant comment implémenter un concepteur d’activités personnalisées, consultez [Comment : créer un concepteur d’activités personnalisées](/dotnet/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer).
+Pour obtenir un exemple montrant comment implémenter un concepteur d’activités personnalisées, consultez [Comment : Créer un concepteur d’activités personnalisées](/dotnet/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer).
 
 > [!NOTE]
 > Concepteurs d’activités personnalisées peuvent être utilisés pour les activités personnalisées et pour les activités de .NET Framework par défaut.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Utiliser le Concepteur de flux de travail](../workflow-designer/using-the-workflow-designer.md)
+- [Utiliser le Concepteur de flux de travail](developing-applications-with-the-workflow-designer.md)
 - [Concevez des workflows (.NET Framework)](/dotnet/framework/windows-workflow-foundation/designing-workflows)

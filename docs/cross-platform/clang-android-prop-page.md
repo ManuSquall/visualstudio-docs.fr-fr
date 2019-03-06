@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.assetid: 663140ea-a568-472b-a79a-dfea8818e06a
 author: corob
 ms.author: mblome
-manager: douge
+manager: jillfra
 f1_keywords:
 - VC.Project.VCClangCompilerTool.AdditionalIncludeDirectories
 - VC.Project.VCClangCompilerTool.DebugInformationFormat
@@ -43,12 +43,12 @@ f1_keywords:
 - vc.project.AdditionalOptionsPage
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: efceeb201a7f1afcbf7cc2c6d46619301284d823
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 055ec15deed2e5071c50d9903779d00030e07b02
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232115"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956231"
 ---
 # <a name="clang-project-properties-android-c"></a>Propriétés du projet Clang (Android C++)
 
@@ -67,7 +67,7 @@ Activer les exceptions C++ | Spécifie le modèle de gestion des exceptions à 
 Activer la liaison au niveau des fonctions | Permet au compilateur d’empaqueter des fonctions individuelles sous la forme de fonctions empaquetées (COMDATs). Requis avec l’option Modifier et Continuer.     (ffunction-sections).
 Activer la liaison au niveau des données | Permet aux optimisations de l’éditeur de liens de supprimer les données inutilisées en émettant chaque élément de données dans une section séparée.
 Activer Advanced SIMD (Neon) | Permet la génération de code pour le matériel NEON Floating Point. Applicable uniquement à l’architecture ARM.
-Floating-point ABI | Option pour choisir Floating Point ABI. | **Soft** : avec l’option 'Soft', le compilateur génère une sortie contenant des appels de bibliothèque pour les opérations à virgule flottante.<br>**SoftFP** : 'SoftFP' autorise la génération de code avec des instructions à virgule flottante matérielle, mais utilise toujours les conventions d’appel soft-float.<br>**Hard** : 'Hard' autorise la génération d’instructions à virgule flottante et utilise les conventions d’appel spécifiques à FPU.<br>
+Floating-point ABI | Option pour choisir Floating Point ABI. | **Soft** : avec l’option 'Soft', le compilateur génère une sortie contenant des appels de bibliothèque pour les opérations à virgule flottante.<br>**SoftFP** : 'SoftFP' autorise la génération de code avec des instructions à virgule flottante matérielle, mais utilise toujours les conventions d’appel soft-float.<br>**Hard** : « Hard » autorise la génération d’instructions à virgule flottante et utilise les conventions d’appel spécifiques FPU.<br>
 Vérification de la sécurité | La vérification de la sécurité permet de détecter les saturations de mémoire tampon de pile, une tentative courante d’attaque contre la sécurité d’un programme. (fstack-protector). | **Désactiver la vérification de la sécurité** : désactivez la vérification de la sécurité.<br>**Activer la vérification de la sécurité** : activez la vérification de la sécurité. (fstack-protector)<br>
 PIC (Position Independent Code) | Générez du code PIC (Position Independent Code) à utiliser dans une bibliothèque partagée.
 Utiliser des enums courts | Un type enum utilise uniquement le nombre d’octets requis par l’ensemble des valeurs possibles d’entrée.

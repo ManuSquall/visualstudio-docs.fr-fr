@@ -1,14 +1,9 @@
 ---
 title: Élément Output (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Output
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 34bc7cd1-efd3-4b57-b691-4584eeb6a0e9
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8e3927a368c7b1b33b85a2067ea158edf80b72e8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 327f65ef6639f444326d59d6db990e9c732a760f
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256685"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54790281"
 ---
 # <a name="output-element-msbuild"></a>Output, élément (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,6 +89,3 @@ Stocke les valeurs de sortie d’une tâche dans les éléments et les propriét
 ## <a name="see-also"></a>Voir aussi  
  [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)   
  [Tâches](../msbuild/msbuild-tasks.md)
-
-
-

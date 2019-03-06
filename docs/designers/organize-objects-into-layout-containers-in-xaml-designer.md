@@ -1,21 +1,19 @@
 ---
 title: Organiser les objets en conteneurs de disposition dans le concepteur XAML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: f8faa01ddc56c5beaa2412bd91a9e68a8bba9525
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 1937ab28af9b4c5c09bb12e2938a2aaa907fe8e6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978175"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948236"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organiser les objets en conteneurs de disposition dans le concepteur XAML
 
@@ -31,19 +29,7 @@ Si les panneaux de disposition permettent de disposer les objets dans une page, 
 
 Commencez votre page en choisissant l'un de ces panneaux de disposition. Votre page peut en contenir plusieurs. Par exemple, vous pouvez commencer par un panneau de disposition **Grid** et ajouter à une zone de ce dernier un **StackPanel** pour disposer les contrôles à la verticale dans cet élément **Grid**.
 
-Les panneaux de disposition suivants sont les plus couramment utilisés, mais il en existe d'autres. Vous les trouverez tous dans le panneau **Composants**.
-
-- [Grid](#Grid)
-
-- [UniformGrid](#UniformGrid)
-
-- [Canvas](#Canvas)
-
-- [StackPanel](#stackpanel)
-
-- [WrapPanel](#wrappanel)
-
-- [DockPanel](#dockpanel)
+Les panneaux de disposition suivants sont les plus couramment utilisés, mais il en existe d'autres. Vous les trouverez toutes dans la **Boîte à outils** de Visual Studio ou dans le panneau **Composants** de Blend pour Visual Studio.
 
 ### <a name="grid"></a>Grille
 
@@ -87,21 +73,13 @@ Permet de disposer les objets de telle sorte qu’il restent, ou s’*ancrent*, 
 
 ![Panneau de disposition DockPanel](../designers/media/72d46b58-9a49-4dd5-8af7-6843c0440226.png)
 
-**Regarder une courte vidéo :** ![Bouton Lecture](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF - DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo).
+**Regardez une courte vidéo :** ![Bouton de lecture](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF - DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)
 
 ## <a name="layout-controls"></a>Contrôles de disposition
 
 Vous pouvez aussi ajouter vos objets à des contrôles de disposition. Ils n’offrent pas autant de fonctionnalités qu’un panneau de disposition, mais ils peuvent s’avérer utiles pour certains scénarios.
 
-Les contrôles de disposition suivants sont les plus couramment utilisés, mais il en existe d’autres. Vous les trouverez tous dans le panneau **Composants**.
-
-- [Border](#Border)
-
-- [Popup](#Popup)
-
-- [ScrollViewer](#scrollviewer)
-
-- [Viewbox](#viewbox)
+Les contrôles de disposition suivants sont les plus couramment utilisés, mais il en existe d’autres. Vous les trouverez toutes dans la **Boîte à outils** de Visual Studio ou dans le panneau **Composants** de Blend pour Visual Studio.
 
 ### <a name="border"></a>Bordure
 
@@ -113,7 +91,7 @@ Permet de créer une bordure, un arrière-plan ou les deux autour d'un objet. Vo
 
 Permet d'afficher des informations ou des options à l'intention des utilisateurs dans une fenêtre. Vous ne pouvez ajouter qu’un seul objet à un **Popup**. Par défaut, un **Popup** contient un **Grid**, mais vous disposez d’autres options.
 
-### <a name="scrollviewer"></a>Visionneuse de défilement
+### <a name="scrollviewer"></a>ScrollViewer
 
 Permet aux utilisateurs de faire défiler une page ou l’une de ses zones vers le bas. Sachant que vous ne pouvez ajouter qu’un seul objet à un **ScrollViewer**, il est judicieux d’ajouter un panneau de disposition tel qu’un **Grid** ou un **StackPanel**.
 

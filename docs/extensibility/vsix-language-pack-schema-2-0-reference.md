@@ -1,9 +1,6 @@
 ---
 title: Référence de schéma 2.0 du module linguistique VSIX | Microsoft Docs
-ms.custom: ''
 ms.date: 10/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language pack
@@ -13,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 2a2932bc-cdbe-4d32-91fa-a3e0474f9098
 ms.author: dagriffe
 author: dgriffen
-manager: douge
+manager: jillfra
 ms.workload:
 - dagriffe
-ms.openlocfilehash: 3c1dfa0e3de06bcd6c61472a085ea3c4cdeeac27
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: acea36031b98693e1d618986720d9932f76a0a63
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51780787"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702523"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>Référence de schéma 2.0 du module linguistique VSIX
 

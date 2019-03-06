@@ -9,15 +9,13 @@ helpviewer_keywords:
 ms.assetid: 499aca80-1069-408d-ac68-326da6a50645
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 7f916e469453d41321dd30404be6c0a6e4f5e56f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 8390808a8174d0abb2dec96beddb473a4fbc0e0b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051482"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55932701"
 ---
 # <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>Procédure : ajouter des ensembles de compteurs personnalisés à l’aide de l’éditeur de test de charge
 

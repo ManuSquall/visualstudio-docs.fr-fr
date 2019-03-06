@@ -1,14 +1,9 @@
 ---
 title: Options, Éditeur de texte, JavaScript, Mise en forme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Formatting.Spacing
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Formatting.General
@@ -17,13 +12,13 @@ ms.assetid: 28a0aef1-9353-4d94-95a5-54b42e15c0dc
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 86c766f776195da17a33b9d52570a2867f700c9b
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 545d5ff9530de577a553923eea3cb208bd5bc68e
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219989"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54794408"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>Options, Éditeur de texte, JavaScript, Mise en forme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,7 +51,7 @@ Utilisez la page **Mise en forme** de la boîte de dialogue **Options** pour dé
 |**Placer l’accolade ouvrante sur une nouvelle ligne pour les blocs de contrôle**|Quand cette option est sélectionnée, l’éditeur de code déplace l’accolade ouvrante associée à un bloc de contrôle (tel que `if` et `while`) sur une nouvelle ligne.|  
   
 ## <a name="spacing"></a>Espacement  
- Ces options déterminent la façon dont les espaces sont insérés dans **Source** vue.  
+ Ces options déterminent la façon dont les espaces sont insérés dans la vue **Source**.  
   
 ## <a name="uielement-list"></a>Liste des éléments d’interface  
   
@@ -71,6 +66,3 @@ Utilisez la page **Mise en forme** de la boîte de dialogue **Options** pour dé
   
 ## <a name="see-also"></a>Voir aussi  
  [Général, Environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)
-
-
-

@@ -2,23 +2,21 @@
 title: Exemple de code pour la création de tests unitaires
 description: Cet article fournit un exemple de code que vous pouvez tester avec des tests unitaires dans Visual Studio.
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: sample
 helpviewer_keywords:
 - unit test sample [Visual Studio]
 - unit tests, samples
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: deddf46a479e0ab8d4e0bebbaf3fffe4d90b622d
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 0b914101a98f3eb40c479a3a39556e7e4138504c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51293445"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929724"
 ---
 # <a name="sample-code-for-testing"></a>Exemple de code de test
 
@@ -130,9 +128,9 @@ namespace BankAccountNS
 
 ## <a name="create-the-project"></a>Créer le projet
 
-Pour utiliser ce code, créez d’abord un projet pour lui dans Visual Studio. Suivez les étapes pour créer le projet dans [Procédure pas à pas : créer et exécuter des tests unitaires pour le code managé](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#create-a-project-to-test).
+Pour utiliser ce code, créez d’abord un projet pour lui dans Visual Studio. Suivez les étapes pour créer le projet comme indiqué dans [Procédure pas à pas : Créer et exécuter des tests unitaires pour du code managé](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#create-a-project-to-test).
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Procédure pas à pas : créer et exécuter des tests unitaires pour le code managé](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
-- [Procédure pas à pas : utiliser l’utilitaire de test en ligne de commande](https://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)
+- [Procédure pas à pas : créer et exécuter des tests unitaires pour du code managé](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+- [Procédure pas à pas : Utiliser l’utilitaire de test en ligne de commande](https://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)

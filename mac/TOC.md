@@ -1,7 +1,7 @@
-# [Présentation de Visual Studio pour Mac](index.md)
-# [Visite guidée de l’IDE](ide-tour.md)
+# [Visual Studio pour Mac](index.yml)
+# [Visite guidée de l’IDE](/visualstudio/mac/ide-tour/)
 
-# [Installation](installation.md)
+# [Installation](/visualstudio/mac/installation/)
 ## [Installer et utiliser derrière un pare-feu ou un proxy](install-behind-a-firewall-or-proxy-server.md)
 ## [Installer une préversion](install-preview.md)
 ## [Mettre à jour](update.md)
@@ -9,7 +9,7 @@
 
 # [Comptes d’utilisateur](user-accounts.md)
 ## [Connexion](signing-in.md)
-## [Activer un abonnement](activation.md)
+## [Activer un abonnement](enable-subscription.md)
 
 # [Personnalisation de l’IDE](customizing-the-ide.md)
 ## [Extension de Visual Studio pour Mac](extending-visual-studio-mac.md)
@@ -41,6 +41,7 @@
 # [Compilation et génération](compiling-and-building.md)
 ## [Génération et nettoyage des projets et des solutions](building-and-cleaning-projects-and-solutions.md)
 ## [Actions de génération](build-actions.md)
+## [Guide pratique pour définir plusieurs projets de démarrage](set-startup-projects.md)
 ## [Personnalisation du système de génération](customizing-build-system.md)
 ## [Configurations](configurations.md)
 ### [Créer et modifier des configurations](create-and-edit-configurations.md)
@@ -50,12 +51,16 @@
 ## [Configuration d’un dépôt Git](set-up-git-repository.md)
 ## [Utilisation de Git](working-with-git.md)
 ## [Configuration d’un dépôt Subversion](set-up-subversion-repository.md)
-## [Utilisation d’une sous-version](working-with-subversion.md)
+## [Utilisation de Subversion](working-with-subversion.md)
+
+# [Déploiement d’applications web](web-app-deployment.md)
+## [Publier sur Azure App Service](publish-app-svc.md)
+## [Publier dans un dossier](publish-folder.md)
 
 # [Charges de travail](workloads.md)
 ## [ASP.NET Core](asp-net-core.md)
 ### [Razor](razor.md)
-### [Javascript](javascript.md)
+### [JavaScript et TypeScript](javascript.md)
 ## [Azure](azure-workload.md)
 ### [Introduction à Azure Functions](azure-functions.md)
 ### [Tutoriel : Azure Functions](azure-functions-lab.md)
@@ -65,6 +70,7 @@
 ### [Utilisation des outils Unity](using-vsmac-tools-unity.md)
 ### [Utilisation de .NET 4.x dans Unity](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
 ### [Journal des modifications](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
+## [Applications mobiles avec Xamarin](/visualstudio/mac/xamarin)
 
 # [Accessibilité](accessibility.md)
 

@@ -1,23 +1,21 @@
 ---
 title: Contenus de langues | Microsoft Docs
 ms.date: 03/22/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - contained languages
 ms.assetid: b75bbb51-8e42-41b1-bece-09ab0b1f03cc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9edaed1eef81d493bdd29311893caef93447e6f7
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 7fe1fdfc8b16988505ef30773cf1ec2e98d58edd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231742"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039642"
 ---
 # <a name="contained-languages"></a>Langues de relation contenant-contenus
 

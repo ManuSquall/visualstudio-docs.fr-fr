@@ -1,8 +1,6 @@
 ---
 title: IDiaSectionContrib::get_initializedData | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,33 +9,34 @@ helpviewer_keywords:
 ms.assetid: f5c108be-a0cc-408b-9590-b8d44361810c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b972c70fd0cc8a9c7f02476434a7f8f9394a8a2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ef878dcae9f8d6d29761bcda5f5aa9588f26d66c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866505"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615678"
 ---
 # <a name="idiasectioncontribgetinitializeddata"></a>IDiaSectionContrib::get_initializedData
-Récupère un indicateur qui indique si la section contient des données initialisées.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_initializedData (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pRetVal`  
- [out] Retourne `TRUE` si la section contient des données initialisée ; sinon, retourne `FALSE`.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+Récupère un indicateur qui indique si la section contient des données initialisées.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_initializedData ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pRetVal`
+
+[out] Retourne `TRUE` si la section contient des données initialisée ; sinon, retourne `FALSE`.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

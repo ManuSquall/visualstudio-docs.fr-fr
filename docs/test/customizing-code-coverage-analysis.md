@@ -1,20 +1,18 @@
 ---
 title: Personnalisation de l'analyse de couverture du code
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 09af57ca64524dafa506d57d486e9385a4c35a93
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8749cd7757796a1b716b1ac9db086d3155f94694
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054936"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952487"
 ---
 # <a name="customize-code-coverage-analysis"></a>Personnaliser l’analyse de la couverture du code
 
@@ -61,7 +59,7 @@ La couverture du code requiert des fichiers de symboles (fichiers *.pdb*) pour l
 
 ### <a name="exclude-and-include"></a>Exclure et inclure
 
-Vous pouvez exclure les assemblys spécifiés de l'analyse de couverture du code. Exemple :
+Vous pouvez exclure les assemblys spécifiés de l'analyse de couverture du code. Par exemple :
 
 ```xml
 <ModulePaths>

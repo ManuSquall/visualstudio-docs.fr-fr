@@ -1,9 +1,6 @@
 ---
 title: Sécurité pour les Solutions SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - security [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, security
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b014c3b4ada42982c41928ca17472e3f585af3ed
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 982a2387ae0e21304fb9726fabdf05554c982fd5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878763"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862940"
 ---
 # <a name="security-for-sharepoint-solutions"></a>Sécurité pour les solutions SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] intègre les fonctionnalités suivantes pour vous aider à améliorer la sécurité des applications SharePoint.
@@ -37,7 +34,7 @@ ms.locfileid: "49878763"
  L’attribut AllowPartiallyTrustedCallers est ajouté à toute solution SharePoint qui n’est pas déployée dans le global assembly cache de système ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Cela inclut les solutions bac à sable ou solutions déployées au répertoire Bin de l’application SharePoint. Pour plus d’informations, consultez [modifications de sécurité Version 1 pour Microsoft .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177515) et [déploiement de composants WebPart dans SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177509).
 
 ## <a name="safe-against-script-property"></a>Protégé contre les propriété de script
- *L’injection de script* est l’insertion de code potentiellement malveillant dans les contrôles ou des pages Web. Pour protéger les sites SharePoint 2010 contre l’injection de script, contributeurs ne peuvent pas afficher ou modifier des composants WebPart ou leurs propriétés par défaut. Ce comportement est contrôlé par un attribut SafeControl appelé SafeAgainstScript. Dans [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)], définissez cet attribut dans un élément de projet **entrées de contrôle sécurisé** sous-propriété **protégé contre les scripts**. Pour plus d’informations, consultez [fournissent des informations de déploiement du package et dans les éléments de projet](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) et [Comment : marquer des contrôles comme des contrôles sécurisés](../sharepoint/how-to-mark-controls-as-safe-controls.md).
+ *L’injection de script* est l’insertion de code potentiellement malveillant dans les contrôles ou des pages Web. Pour protéger les sites SharePoint 2010 contre l’injection de script, contributeurs ne peuvent pas afficher ou modifier des composants WebPart ou leurs propriétés par défaut. Ce comportement est contrôlé par un attribut SafeControl appelé SafeAgainstScript. Dans [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)], définissez cet attribut dans un élément de projet **entrées de contrôle sécurisé** sous-propriété **protégé contre les scripts**. Pour plus d’informations, consultez [fournissent des informations de déploiement du package et dans les éléments de projet](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) et [Comment : Marquer des contrôles comme des contrôles sécurisés](../sharepoint/how-to-mark-controls-as-safe-controls.md).
 
 ## <a name="vista-and-windows-7-user-account-control"></a>Contrôle de compte d’utilisateur 7 Vista et Windows
  [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] et [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] intègrent une fonction de sécurité appelée en tant que le contrôle de compte utilisateur (UAC). Pour développer des solutions SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sur [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] et [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] systèmes, l’UAC exige que vous exécutez [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] en tant qu’un administrateur système. À partir de la **Démarrer** menu, ouvrez le menu contextuel pour [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], puis choisissez **exécuter en tant qu’administrateur**.
@@ -78,13 +75,13 @@ ms.locfileid: "49878763"
 
 -   [Sécurisation des composants WebPart dans SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177511)
 
--   [Sécurité des applications Web amélioration : Menaces et contre-mesures](http://go.microsoft.com/fwlink/?LinkID=140080)
+-   [Amélioration de la sécurité des applications Web : Menaces et contre-mesures](http://go.microsoft.com/fwlink/?LinkID=140080)
 
 ### <a name="general-security"></a>Sécurité générale
 
 -   [MSDN Security Development Lifecycle](http://go.microsoft.com/fwlink/?LinkID=147149)
 
--   [Création d’Applications ASP.NET sécurisées : Authentification, autorisation et une Communication sécurisée](http://go.microsoft.com/fwlink/?LinkId=177494)
+-   [Création d’Applications ASP.NET sécurisées : L’authentification, autorisation et Communication sécurisée](http://go.microsoft.com/fwlink/?LinkId=177494)
 
 ## <a name="see-also"></a>Voir aussi
 

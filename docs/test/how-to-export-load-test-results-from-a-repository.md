@@ -10,15 +10,13 @@ helpviewer_keywords:
 ms.assetid: 716c2af5-8737-4d31-956f-a0273f7c5c0c
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: d50a97854aafda3baf1eedbc9d821c0e530e6bf6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 7bc496c4f6a445ffd43e992302457bdb92f3239a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057163"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949861"
 ---
 # <a name="how-to-export-load-test-results-from-a-repository"></a>Procédure : exporter des résultats des tests de charge à partir d’un dépôt
 

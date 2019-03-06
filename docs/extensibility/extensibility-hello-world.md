@@ -1,20 +1,19 @@
 ---
 title: Didacticiel de Hello World extension | Microsoft Docs
-ms.custom: ''
 ms.date: 07/10/2017
 ms.topic: conceptual
 ms.assetid: f74e1ad1-1ee5-4360-9bd5-d82467b884ca
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2122a98778372690990a75269be2f3087653678
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: f354b31e3979aacdb55aba566a646616ddc4108e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349463"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688340"
 ---
 # <a name="create-your-first-extension-hello-world"></a>Créer votre première extension : Hello World
 
@@ -51,7 +50,11 @@ Avant de commencer, assurez-vous que vous avez installé le **développement d�
 
 Vous devez maintenant voir la page mise en route et certains exemples de ressources.
 
+::: moniker range="vs-2017"
+
 Si vous devez laisser ce didacticiel et revenir à ce dernier, vous pouvez trouver votre nouveau projet HelloWorld sur le **Page de démarrage** dans le **récents** section.
+
+::: moniker-end
 
 ## <a name="add-a-custom-command"></a>Ajouter une commande personnalisée
 

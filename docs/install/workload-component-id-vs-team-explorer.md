@@ -5,25 +5,24 @@ description: Utilisez les ID de composant et de charge de travail de Visual Stud
 keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.date: 11/13/2018
+ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
-ms.service: ''
-ms.technology: vs-acquisition
-ms.prod: visual-studio-dev15
 ms.assetid: c6ef9a3b-d13d-49b4-9faa-51fa06b21e1f
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b54e0f73f4f0d504df3757ffc881b2282fc9471
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+monikerRange: vs-2017
+ms.openlocfilehash: f5b9d6b449a2f551e96132e07c0997455388fa82
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066104"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841505"
 ---
 # <a name="visual-studio-team-explorer-2017-component-directory"></a>Répertoire des composants Visual Studio Team Explorer 2017
 

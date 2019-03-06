@@ -1,23 +1,21 @@
 ---
 title: IPython REPL (fenêtre interactive)
 description: Utilisez la fenêtre interactive de Visual Studio en mode IPython pour un environnement de développement interactif convivial avec des fonctionnalités de calcul parallèle interactives.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 01/28/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 84e93d06e294ef11cc345eb4c443845421a8f834
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 6f4e153fdbf4a3c4be64c5c5ad6e94d6acef34a5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067801"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957872"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>Utiliser IPython dans la fenêtre interactive
 
@@ -43,7 +41,7 @@ Pour cette procédure pas à pas, vous devez avoir installé l’environnement [
    ```python
    import matplotlib.pyplot as plt
    import numpy as np
-  
+
    x = np.linspace(0, 5, 10)
    y = x ** 2
    plt.plot(x, y, 'r', x, x ** 3, 'g', x, x ** 4, 'b')

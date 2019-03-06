@@ -3,24 +3,22 @@ title: Abonnements Visual Studio offerts aux partenaires du réseau MPN (Microso
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 03/16/2018
-ms.topic: Get-Started-Article
+ms.date: 12/19/2018
+ms.topic: conceptual
 description: MPN donne des détails sur les abonnements proposés, sur les règles qui s’appliquent et sur le nombre d’abonnements.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7175dd503c2e91091b5bb6499fa54c0e5f2586ec
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b9445b3b990698b273145ab8791e03ee6690570b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876763"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843158"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Abonnements Visual Studio offerts aux partenaires du réseau MPN (Microsoft Partner Network)
 Les partenaires qui acquièrent une compétence ou qui achètent l’Action Pack MPN sont éligibles aux abonnements Visual Studio. Ces abonnements sont concédés sous licence par utilisateur et sont valides uniquement quand ils sont attribués à un utilisateur nommé spécifique qui travaille pour la société partenaire.
 
 ## <a name="subscriptions-for-partners-with-an-mpn-competency"></a>Abonnements pour les partenaires avec une compétence MPN
-Quand un partenaire acquiert une compétence (au niveau Silver ou Gold), il bénéficie d’un nombre minimal d’abonnements Visual Studio Enterprise. Cet avantage minimal change si le partenaire acquiert au moins une compétence Gold. L’abonnement Visual Studio Enterprise est une offre personnalisée qui équivaut à peu près à l’[abonnement cloud annuel Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/pricing/), mais sans certains avantages (dont la plupart sont offerts séparément aux partenaires en tant qu’avantages MPN généraux plutôt que dans le cadre des abonnements Visual Studio Enterprise offerts par le biais du réseau MPN).
+Quand un partenaire acquiert une compétence (au niveau Silver ou Gold), il bénéficie d’un nombre minimal d’abonnements Visual Studio Enterprise. Cet avantage minimal change si le partenaire acquiert au moins une compétence Gold. L’abonnement Visual Studio Enterprise est une offre personnalisée qui équivaut à peu près à [l’abonnement Visual Studio Enterprise Standard](https://visualstudio.microsoft.com/vs/pricing/), mais sans certains avantages (dont la plupart sont offerts séparément aux partenaires en tant qu’avantages MPN généraux plutôt que dans le cadre des abonnements Visual Studio Enterprise offerts par le biais du réseau MPN).
 
 ### <a name="core-visual-studio-benefit-for-earning-at-least-one-competency-of-any-kind"></a>Avantage Visual Studio principal pour l’acquisition d’au moins une compétence quelle qu’elle soit
 

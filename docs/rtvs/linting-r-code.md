@@ -2,22 +2,20 @@
 title: Vérification (linting) du code R
 description: Comment utiliser la prise en charge pour R du linting intégré de Visual Studio, notamment les options linter.
 ms.date: 07/02/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 f1_keywords:
 - vs.toolsoptionspages.text_editor.r.lint
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 4eaeb0165c049b035555fa63130746baa5fa208f
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: aecf9d95fb8a3b2cda659e2694bff145424e150b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978295"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920468"
 ---
 # <a name="lint-r-code-in-visual-studio"></a>Lint de code R dans Visual Studio
 

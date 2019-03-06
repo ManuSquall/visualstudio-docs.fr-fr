@@ -4,19 +4,17 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 01/23/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Abonnements Visual Studio – Pourquoi les adresses Hotmail ou Gmail de mes abonnés sont-elles affichées ?
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a9b0e02acd0c362759997938cec91983a5d48547
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 0ba4029fcec0c8d35a58def14ab38afbb79e2fee
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335718"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843375"
 ---
-# <a name="visual-studio-subscriptions--why-am-i-seeing-hotmail-or-gmail-addresses-for-my-subscribers"></a>Abonnements Visual Studio – pourquoi les adresses Hotmail ou Gmail de mes abonnés sont-elles affichées ? 
+# <a name="visual-studio-subscriptions--why-am-i-seeing-hotmail-or-gmail-addresses-for-my-subscribers"></a>Abonnements Visual Studio – pourquoi les adresses Hotmail ou Gmail de mes abonnés sont-elles affichées ?
 
 Au fur et à mesure que les entreprises migrent du Centre de gestion des licences en volume (VLSC) vers le nouveau [portail d’administration des abonnements](https://manage.visualstudio.com) Visual Studio, les administrateurs peuvent être surpris de découvrir que « l’adresse e-mail de connexion » de certains abonnés correspond à une adresse e-mail tierce, telle que Yahoo, Gmail ou Hotmail.  Pour plus d’informations, regardez [cette vidéo](https://www.youtube.com/watch?v=1op-i1zEMfY&t=0s&list=PLReL099Y5nRfDyvvwzNDBaZe7qTxmuM2T&index=6).
 
@@ -26,15 +24,15 @@ Ceci est dû à des processus de connexion qui ont été associés à l’expér
 1. L’administrateur « attribuait » l’abonnement à un abonné spécifique, à l’aide de son adresse e-mail professionnelle ou scolaire.
 2. L’abonné « activait » l’abonnement.
 
-Au cours du processus d’activation de l’abonné, un compte Microsoft (MSA) était nécessaire pour se connecter. Si l’abonné ne cherchait pas à définir son compte professionnel ou scolaire (par exemple, tasha@contoso.com) en tant que compte MSA, il pouvait créer un compte MSA ou en utiliser un existant. C’est la raison pour laquelle son « adresse e-mail de connexion » était différente de son « adresse e-mail attribuée ».
+Pendant le processus d’activation de l’abonné : Un compte Microsoft (MSA) était nécessaire pour la connexion. Si l’abonné ne cherchait pas à définir son compte professionnel ou scolaire (par exemple, tasha@contoso.com) en tant que compte MSA, il pouvait créer un compte MSA ou en utiliser un existant. C’est la raison pour laquelle son « adresse e-mail de connexion » était différente de son « adresse e-mail attribuée ».
 
-> [!NOTE] 
+> [!NOTE]
 > La nouvelle expérience des abonnés sur [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) prend en charge à la fois les types d’identité Compte professionnel/scolaire et Compte Microsoft (MAA).
 
 Enfin, étant donné que la migration des administrateurs utilise des données de VLSC concernant « l’adresse e-mail de connexion » des abonnés pour renseigner la nouvelle expérience de gestion des abonnés, les administrateurs qui ont récemment migré peuvent voir ces comptes personnels jusque-là passés inaperçus en raison des modifications apportées à l’interface utilisateur qui rendent cette information plus visible.
 
 ## <a name="solution"></a>Solution
 
-Pour corriger ce problème, vous devez modifier les informations des abonnés pour mettre à jour leurs adresses e-mail de connexion.  Les modifications peuvent être effectuées pour des abonnés spécifiques ou en masse. Pour plus d’informations, consultez [Modifier un abonnement](edit-license.md).  
+Pour corriger ce problème, vous devez modifier les informations des abonnés pour mettre à jour leurs adresses e-mail de connexion.  Les modifications peuvent être effectuées pour des abonnés spécifiques ou en masse. Pour plus d’informations, consultez [Modifier un abonnement](edit-license.md).
 
-Une fois les adresses e-mail des abonnés mises à jour, vous pouvez informer ces derniers que leurs informations de connexion ont été modifiées.  Ils recevront également un e-mail contenant les informations mises à jour.   
+Une fois les adresses e-mail des abonnés mises à jour, vous pouvez informer ces derniers que leurs informations de connexion ont été modifiées.  Ils recevront également un e-mail contenant les informations mises à jour.

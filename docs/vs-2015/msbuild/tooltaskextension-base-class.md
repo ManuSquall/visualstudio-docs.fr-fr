@@ -1,14 +1,9 @@
 ---
 title: Classe de base ToolTaskExtension | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 f1_keywords:
 - MSBuild.ToolTask.ToolCommandFailed
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: 258ae433-f68a-49f1-b276-da20e3472e68
 caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fa6ec44c857d8b8e229d8f34658e8a9d448fcb19
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d1ebec5f0d708396db914d0bffcef832a33ceec9
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221284"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54800476"
 ---
 # <a name="tooltaskextension-base-class"></a>Classe de base ToolTaskExtension
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ De nombreuses tâches héritent de la classe <xref:Microsoft.Build.Tasks.ToolTas
 |<xref:Microsoft.Build.Utilities.ToolTask.LogStandardErrorAsError%2A>|Paramètre `bool` d'option.<br /><br /> Si la valeur est `true`, tous les messages reçus sur le flux d'erreur standard sont journalisés en tant qu'erreurs.|  
 |<xref:Microsoft.Build.Utilities.ToolTask.StandardErrorImportance%2A>|Paramètre `String` facultatif.<br /><br /> Importance avec laquelle le texte doit être enregistré dans le flux de sortie standard.|  
 |<xref:Microsoft.Build.Utilities.ToolTask.StandardOutputImportance%2A>|Paramètre `String` facultatif.<br /><br /> Importance avec laquelle le texte doit être enregistré dans le flux de sortie standard.|  
-|<xref:Microsoft.Build.Utilities.ToolTask.Timeout%2A>|Paramètre `Int32` facultatif virtuel.<br /><br /> Spécifie le délai, en millisecondes, après lequel l'exécutable de la tâche est arrêté. La valeur par défaut est `Int.MaxValue`, ce qui indique qu'il n'existe aucun délai d'expiration. Celui-ci est exprimé en millisecondes.|  
+|<xref:Microsoft.Build.Utilities.ToolTask.Timeout%2A>|Paramètre `Int32` facultatif virtuel.<br /><br /> Spécifie le délai, en millisecondes, après lequel l’exécutable de la tâche est arrêté. La valeur par défaut est `Int.MaxValue`, ce qui indique qu'il n'existe aucun délai d'expiration. Celui-ci est exprimé en millisecondes.|  
 |<xref:Microsoft.Build.Utilities.ToolTask.ToolExe%2A>|Paramètre `string` facultatif virtuel.<br /><br /> Les projets peuvent l'implémenter pour remplacer un ToolName. Les tâches peuvent le remplacer pour préserver le ToolName.|  
 |<xref:Microsoft.Build.Utilities.ToolTask.ToolPath%2A>|Paramètre `string` facultatif.<br /><br /> Spécifie l'emplacement à partir duquel la tâche charge le fichier exécutable sous-jacent. Si ce paramètre n’est pas spécifié, la tâche utilise le chemin d’installation du Kit de développement logiciel (SDK) qui correspond à la version de l’infrastructure qui exécute [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].|  
 |<xref:Microsoft.Build.Utilities.ToolTask.UseCommandProcessor%2A>|Paramètre `bool` facultatif.<br /><br /> Quand la valeur est `true`, cette tâche crée un fichier de commandes pour la ligne de commande et l’exécute à l’aide de l’interpréteur de commandes au lieu d’exécuter la commande directement.|  
@@ -59,6 +54,3 @@ De nombreuses tâches héritent de la classe <xref:Microsoft.Build.Tasks.ToolTas
 ## <a name="see-also"></a>Voir aussi  
  [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)   
  [Tâches](../msbuild/msbuild-tasks.md)
-
-
-

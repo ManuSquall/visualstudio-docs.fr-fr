@@ -1,5 +1,5 @@
 ---
-title: Constantes TEXT_DOC_ATTR | Documents Microsoft
+title: Constantes TEXT_DOC_ATTR | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,25 +18,25 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 130895e0e70b1044fab5d5ab406f940b036c37f0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7e3fd21ba720dfed394e497a9a56a1bb6898dc60
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734249"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348774"
 ---
 # <a name="textdocattr-constants"></a>Constantes TEXT_DOC_ATTR
 Décrit les attributs du document.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 typedef DWORD TEXT_DOC_ATTR;  
 ```  
   
 ## <a name="constants"></a>Constantes  
   
-|Constante|Valeur|Description|  
+|Constante|Value|Description|  
 |--------------|-----------|-----------------|  
 |TEXT_DOC_ATTR_READONLY|0x00000001|Le document est en lecture seule.|  
 |TEXT_DOC_ATTR_TYPE_PRIMARY|0x00000002|Le document est le fichier primaire de cette arborescence du document.|  

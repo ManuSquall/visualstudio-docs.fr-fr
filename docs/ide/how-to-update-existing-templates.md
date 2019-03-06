@@ -1,8 +1,6 @@
 ---
 title: Mettre à jour des modèles d’élément de projet existants
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - item templates, updating
@@ -11,13 +9,13 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 52f24f76ff217b694a1e5d2b510d16b0911d2fda
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: cf40216393e32602139e62378f6874ff362d5ee0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061466"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952149"
 ---
 # <a name="how-to-update-existing-templates"></a>Procédure : Mettre à jour des modèles existants
 

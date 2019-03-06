@@ -1,9 +1,6 @@
 ---
 title: Dans le Kit de développement logiciel de Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - roadmap, Visual Studio integration SDK
@@ -12,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e72c5033554310555005de17872ee83110768687
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 42ec103cf9ca867582d4762e06ca59eac48da588
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757040"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796671"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Dans le kit SDK Visual Studio
 Cette section fournit des informations détaillées sur les extensions de Visual Studio, y compris l’architecture de Visual Studio, composants, services, schémas, utilitaires et autres.
@@ -31,13 +28,13 @@ Cette section fournit des informations détaillées sur les extensions de Visual
  ![Graphique Architecture d’environnement](../../extensibility/internals/media/environment.gif "environnement") généralisée de vue de l’architecture de Visual Studio
 
 ## <a name="vspackages"></a>VSPackages
- Les VSPackages sont des modules logiciels qui constituent et étendent Visual Studio avec des éléments, des services, des projets, des éditeurs et des concepteurs d’interfaces utilisateur. Les VSPackages sont l’unité architecturale au centre de Visual Studio. Pour plus d’informations, consultez [VSPackages](../../extensibility/internals/vspackages.md).
+ Les VSPackages sont des modules logiciels qui constituent et étendent Visual Studio avec des éléments, des services, des projets, des éditeurs et des concepteurs d’interfaces utilisateur. Les VSPackages sont l’unité architecturale au centre de Visual Studio. Pour plus d'informations, consultez [VSPackages](../../extensibility/internals/vspackages.md).
 
-## <a name="visual-studio-shell"></a>Visual Studio Shell
+## <a name="visual-studio-shell"></a>Shell Visual Studio
  L’interpréteur de commandes de Visual Studio fournit des fonctionnalités de base et prend en charge les communications entre son composant VSPackages et des extensions MEF. Pour plus d’informations, consultez [Visual Studio Shell](../../extensibility/internals/visual-studio-shell.md).
 
 ## <a name="user-experience-guidelines"></a>Conseils sur l’expérience utilisateur
- Si vous envisagez de concevoir de nouvelles fonctionnalités pour Visual Studio, vous devez Examinez ces instructions pour les conseils de conception et la convivialité : [recommandations pour l’expérience utilisateur Visual Studio](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
+ Si vous envisagez de concevoir de nouvelles fonctionnalités pour Visual Studio, vous devez prendre un coup de œil à ces instructions pour les conseils de conception et de facilité d’utilisation : [Recommandations pour l’expérience utilisateur Visual Studio](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
 
 ## <a name="commands"></a>Commandes
  Les commandes sont des fonctions qui accomplissent des tâches, comme l’impression d’un document, l’actualisation d’une vue ou la création d’un fichier.
@@ -58,13 +55,13 @@ Cette section fournit des informations détaillées sur les extensions de Visual
 
  Fenêtres Outil offrent généralement différents contrôles avec lesquels l’utilisateur peut interagir. Par exemple, le **propriétés** fenêtre permet à l’utilisateur de définir les propriétés des objets qui jouent un rôle particulier. Le **propriétés** fenêtre est spécialisé en ce sens, mais également général car il peut être utilisé dans de nombreuses situations différentes. De même, le **sortie** est spécialisée dans la fenêtre, car elle fournit textuel de la sortie, mais général car de nombreux sous-systèmes dans Visual Studio peuvent l’utiliser pour fournir la sortie à l’utilisateur de Visual Studio.
 
- Envisagez l’image suivante de Visual Studio, qui contient plusieurs fenêtres d’outils.
+ Prenez en compte l’image suivante de Visual Studio, qui contient plusieurs fenêtres d’outils :
 
  ![Capture d’écran](../../extensibility/internals/media/t1gui.png "T1gui")
 
  Certaines fenêtres Outil sont ancrées ensemble sur un seul volet qui affiche la fenêtre outil de l’Explorateur de solutions et masque les autres fenêtres Outil, mais les rend disponibles en cliquant sur les onglets. L’illustration montre deux autres fenêtres Outil, le **liste d’erreurs** et **sortie** fenêtre, ancrée ensemble sur un seul volet.
 
- Si vous est également affiché, le volet de document principal, qui montre plusieurs fenêtres de l’éditeur. Bien que les fenêtres Outil ont généralement qu’une seule instance (par exemple, vous pouvez ouvrir qu’un seul **l’Explorateur de solutions**), éditeur windows peuvent avoir plusieurs instances, chacun d’eux est utilisé pour modifier un document distinct, mais qui sont ancrées dans le même volet. L’illustration montre un volet de document qui a deux fenêtres de l’éditeur, une fenêtre du Concepteur de formulaire et une fenêtre de navigateur qui affiche la Page de démarrage. Toutes les fenêtres dans le volet de document sont disponibles en cliquant sur les onglets, mais la fenêtre d’éditeur qui contient le fichier de EditorPane.cs est visible et actif.
+ Si vous est également affiché, le volet de document principal, qui montre plusieurs fenêtres de l’éditeur. Bien que les fenêtres Outil ont généralement qu’une seule instance (par exemple, vous pouvez ouvrir qu’un seul **l’Explorateur de solutions**), éditeur windows peuvent avoir plusieurs instances, chacun d’eux est utilisé pour modifier un document distinct, mais qui sont ancrées dans le même volet. L’illustration montre un volet de document qui a deux fenêtres de l’éditeur, une fenêtre du Concepteur de formulaire. Toutes les fenêtres dans le volet de document sont disponibles en cliquant sur les onglets, mais la fenêtre d’éditeur qui contient le fichier de EditorPane.cs est visible et actif.
 
  Lorsque vous étendez Visual Studio, vous pouvez créer outil windows qui permettent aux utilisateurs de Visual Studio interagissent avec votre extension. Vous pouvez également créer vos propres éditeurs qui permettent aux utilisateurs de Visual Studio à modifier des documents. Étant donné que vos fenêtres Outil et les éditeurs seront intégrés dans Visual Studio, il est inutile de les programmer pour ancrer ou s’affichent correctement sur un onglet. Lorsqu’ils sont inscrits correctement dans Visual Studio, ils auront automatiquement les fonctionnalités standard de fenêtres Outil et fenêtres de document dans Visual Studio. Pour plus d’informations, consultez [extension et personnalisation de Windows d’outil](../../extensibility/extending-and-customizing-tool-windows.md).
 
@@ -103,7 +100,7 @@ Cette section fournit des informations détaillées sur les extensions de Visual
  Pour plus d’informations, consultez [Ajout d’un projet et des modèles d’élément de projet](../../extensibility/internals/adding-project-and-project-item-templates.md).
 
 ## <a name="properties-and-options"></a>Propriétés et les Options
- Le **propriétés** fenêtre affiche les propriétés d’un ou plusieurs éléments sélectionnés : [étendre les propriétés](../../extensibility/internals/extending-properties.md) pages d’Options contiennent des jeux d’options qui se rapportent à un composant particulier, comme un programmation de langue ou un VSPackage : [Options et Pages d’Options](../../extensibility/internals/options-and-options-pages.md). Les paramètres sont généralement liés par l’interface utilisateur des fonctionnalités qui peuvent être importées et exportées : [prise en charge pour les paramètres utilisateur](../../extensibility/internals/support-for-user-settings.md).
+ Le **propriétés** fenêtre affiche les propriétés d’un ou plusieurs éléments sélectionnés : [Étendre les propriétés](../../extensibility/internals/extending-properties.md) pages d’Options contiennent des jeux d’options qui se rapportent à un composant particulier, comme un langage de programmation ou à un VSPackage : [Options et Pages d’Options](../../extensibility/internals/options-and-options-pages.md). Les paramètres sont généralement liés par l’interface utilisateur des fonctionnalités qui peuvent être importées et exportées : [Prise en charge pour les paramètres utilisateur](../../extensibility/internals/support-for-user-settings.md).
 
 ## <a name="visual-studio-services"></a>Services de Visual Studio
  Un service fournit un ensemble spécifique d’interfaces pour les composants à consommer. Visual Studio fournit un ensemble de services qui peut être utilisé par tous les composants, y compris les extensions. Par exemple, Visual Studio services activer des fenêtres Outil pour être affiché ou masqué de manière dynamique, activer l’accès à l’aide, barre d’état ou d’événements d’interface utilisateur. L’éditeur Visual Studio fournit également des services pouvant être importé par les extensions de l’éditeur. Pour plus d’informations, consultez [utilisation et fourniture de Services](../../extensibility/using-and-providing-services.md).

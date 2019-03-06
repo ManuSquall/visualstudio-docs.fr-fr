@@ -2,22 +2,20 @@
 title: Concepteur de flux de travail - AddToCollection<T> Concepteur d’activités
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.AddToCollection`1.UI
 ms.assetid: f7fc0702-164e-4370-8946-bb2f9f9384b7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6b260ca798befbbf45ba198f919f84ffc976262
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7e339e2639d85f89d4110c36710ab9c19e0fe333
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869845"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945614"
 ---
 # <a name="addtocollectiont-activity-designer"></a>AddToCollection\<T > Concepteur d’activités
 
@@ -48,6 +46,6 @@ Le tableau suivant présente les propriétés de <xref:System.Activities.Stateme
 
 - [Collection](../workflow-designer/collection-activity-designers.md)
 - [AddToCollection\<T > Concepteur d’activités](../workflow-designer/addtocollection-t-activity-designer.md)
-- [ClearCollection\<T >](../workflow-designer/clearcollection-t-activity-designer.md)
+- [ClearCollection\<T>](../workflow-designer/clearcollection-t-activity-designer.md)
 - [ExistsInCollection\<T>](../workflow-designer/existsincollection-t-activity-designer.md)
 - [RemoveFromCollection\<T>](../workflow-designer/removefromcollection-t-activity-designer.md)

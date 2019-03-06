@@ -1,27 +1,25 @@
 ---
 title: Nœuds du concepteur Shader
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: f5192fbd-c78f-40a8-a4d4-443209610268
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 827da75bb9faadf7506002780273979f628f20cb
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 9d5e27f6cc244580ac4f3c72724dd6fdb6d09999
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078571"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928268"
 ---
 # <a name="shader-designer-nodes"></a>Nœuds du concepteur Shader
 Les articles de cette section de la documentation contiennent des informations sur les différents nœuds du concepteur Shader pour créer des effets graphiques.
 
 ## <a name="nodes-and-node-types"></a>Nœuds et types de nœuds
- Le concepteur Shader représente des effets visuels sous forme de graphe. Ces graphes sont générés à partir de nœuds spécifiquement choisis et connectés de façon précise afin d’obtenir l’effet prévu. Chaque nœud représente une information ou une fonction mathématique, et les connexions entre elles représentent le flux d’informations dans le graphique pour produire le résultat. Le concepteur Shader fournit six types de nœuds différents (filtres, nœuds de texture, paramètres, constantes, nœuds d’utilitaire et nœuds mathématiques). Plusieurs nœuds individuels appartiennent à chaque type. Ces nœuds et types de nœuds sont décrits dans les autres articles de cette section. Pour plus d’informations, consultez les liens figurant à la fin de ce document.
+ Le concepteur Shader représente des effets visuels sous forme de graphique. Ces graphes sont générés à partir de nœuds spécifiquement choisis et connectés de façon précise afin d’obtenir l’effet prévu. Chaque nœud représente une information ou une fonction mathématique, et les connexions entre elles représentent le flux d’informations dans le graphique pour produire le résultat. Le concepteur Shader fournit six types de nœuds différents (filtres, nœuds de texture, paramètres, constantes, nœuds d’utilitaire et nœuds mathématiques). Plusieurs nœuds individuels appartiennent à chaque type. Ces nœuds et types de nœuds sont décrits dans les autres articles de cette section. Pour plus d’informations, consultez les liens figurant à la fin de ce document.
 
 ## <a name="node-structure"></a>Structure de nœuds
  Tous les nœuds sont composés d’une combinaison d’éléments communs. Chaque nœud a au moins un terminal de sortie sur son côté droit (sauf le nœud de couleur finale, qui représente la sortie du nuanceur). Les nœuds qui représentent des calculs ou des échantillonneurs de texture ont des terminaux d’entrée sur leur côté gauche, mais les nœuds qui représentent des informations n’ont aucun terminal d’entrée. Les terminaux de sortie sont connectés aux terminaux d’entrée pour déplacer des informations d’un nœud vers un autre.

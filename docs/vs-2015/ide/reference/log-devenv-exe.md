@@ -1,14 +1,9 @@
 ---
 title: -Log (devenv.exe) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Devenv, /Log switch
 - Log switch [devenv.exe]
@@ -17,13 +12,13 @@ ms.assetid: ae23c4ae-2376-4fe3-b8d2-81d34e61c8ba
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6e3c8ee5d8c0bc5d68159fe0b40f22dda74f564f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8e9e5178be0301bcf2ab14b0d52d6aa3b54bc52a
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292030"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54763170"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,13 +36,10 @@ Enregistre toute l'activité dans le fichier journal de résolution des problèm
 Devenv /log Path\NameOfLogFile  
 ```  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Ce commutateur doit apparaître à la fin de la ligne de commande, après tous les autres commutateurs.  
   
  Le journal est rédigé pour toutes les instances de Visual Studio que vous avez appelées avec le commutateur /log. Il ne consigne pas les instances de Visual Studio que vous avez appelées sans ce commutateur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Commutateurs de la ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)
-
-
-

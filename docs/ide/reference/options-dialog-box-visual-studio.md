@@ -1,8 +1,6 @@
 ---
 title: Boîte de dialogue Options
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs.toolsoptionspages
@@ -14,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 02b09877-1df1-4531-a0d1-a4ca17c7f857
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4150f604269fcebcd4680143fe01e1ff6cc522a5
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: f2b4b30607d5d0c677f7ef5e2401bc55c2398eb0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388437"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912471"
 ---
 # <a name="options-dialog-box-visual-studio"></a>Options, boîte de dialogue (Visual Studio)
 

@@ -1,23 +1,21 @@
 ---
-title: Guide pratique pour créer un modèle 3D de base
+title: 'Procédure : Créer un modèle 3D de base'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6242b80c1dcefe0e1a3a35561337a75e6098d25d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 45944afe3c5ebd1baa307f6063b021c09fd6bfa6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913447"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970268"
 ---
-# <a name="how-to-create-a-basic-3d-model"></a>Guide pratique pour créer un modèle 3D de base
+# <a name="how-to-create-a-basic-3d-model"></a>Procédure : Créer un modèle 3D de base
 
 Cet article montre comment utiliser l’éditeur de modèle pour créer un modèle 3D de base. Les activités suivantes sont décrites :
 
@@ -76,6 +74,6 @@ Cet article montre comment utiliser l’éditeur de modèle pour créer un modè
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour modéliser un terrain 3D](../designers/how-to-model-3-d-terrain.md)
+- [Guide pratique pour modéliser un terrain 3D](../designers/how-to-model-3-d-terrain.md)
 - [Éditeur de modèles](../designers/model-editor.md)
 - [Concepteur Shader](../designers/shader-designer.md)

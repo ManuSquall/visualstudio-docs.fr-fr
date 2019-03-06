@@ -1,8 +1,6 @@
 ---
 title: Personnaliser les tâches de débogage de build à l’aide de tasks.vs.json launch.vs.json
 ms.date: 02/21/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - NMAKE [Visual Studio]
@@ -13,15 +11,15 @@ helpviewer_keywords:
 - vsworkspacesettings.json file [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a5249c1b60c1a3a08e37386bcfbd3d06706bae8
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 23888809dd4dfd05058ed71ba8a82e8e532d7e61
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063177"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954166"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personnaliser des tâches de génération et de débogage pour le développement « Ouvrir le dossier »
 
@@ -33,8 +31,8 @@ Personnalisez votre code base sans projet en utilisant les fichiers *.json* suiv
 
 |Nom de fichier|Objectif|
 |-|-|
-|*tasks.vs.json*|Spécifiez des commandes de génération personnalisée, des commutateurs de compilation ainsi que des tâches arbitraires (non liées à la génération).<br>Accessible via l’option **Configurer les tâches** du menu contextuel de l’**Explorateur de solutions**.|
-|*launch.vs.json*|Spécifiez les arguments de ligne de commande pour le débogage.<br>Accessible via l’option **Paramètres de débogage et de lancement** du menu contextuel de l’**Explorateur de solutions**.|
+|*tasks.vs.json*|Spécifiez des commandes de génération personnalisée, des commutateurs de compilation ainsi que des tâches arbitraires (non liées à la génération).<br>Accessible par l’élément de menu contextuel (clic droit) **Configurer les tâches** de **l’Explorateur de solutions**.|
+|*launch.vs.json*|Spécifiez les arguments de ligne de commande pour le débogage.<br>Accessible par l’élément de menu contextuel (clic droit) **Paramètres de débogage et de lancement** de **l’Explorateur de solutions**.|
 |*VSWorkspaceSettings.json*|Paramètres génériques qui peuvent avoir un impact sur les tâches et le lancement. Par exemple, définir `envVars` dans *VSWorkspaceSettings.json* ajoute les variables d’environnement spécifiées pour exécuter des commandes en externe.<br>Vous créez ce fichier manuellement.|
 
 Ces fichiers *.json* se trouvent dans un dossier masqué appelé *.vs* dans le dossier racine de votre code base. Les fichiers *tasks.vs.json* et *launch.vs.json* sont créés par Visual Studio selon les besoins lorsque vous choisissez l’option **Configurer les tâches** ou **Paramètres de débogage et de lancement** pour un fichier ou dossier dans **l’Explorateur de solutions**. Les fichiers *.json* sont masqués car les utilisateurs ne souhaitent généralement pas les vérifier dans le contrôle de code source. Toutefois, si vous souhaitez être en mesure de les vérifier dans le contrôle de code source, faites glisser les fichiers à la racine de votre code base, où ils sont visibles.
@@ -48,7 +46,7 @@ Vous pouvez automatiser les scripts de génération ou d’autres opérations ex
 
 ![Configurer le menu Tâches](../ide/media/customize-configure-tasks-menu.png)
 
-Permet de créer (ou d’ouvrir) le fichier *tasks.vs.json* dans le dossier *.vs*. Vous pouvez définir une tâche de génération ou une tâche arbitraire dans ce fichier, puis l’appeler en utilisant le nom que vous lui avez attribué à l’aide du menu contextuel de **l’Explorateur de solutions**.
+Permet de créer (ou d’ouvrir) le fichier *tasks.vs.json* dans le dossier *.vs*. Vous pouvez définir une tâche de build ou n’importe quelle tâche dans ce fichier, puis l’appeler en utilisant le nom que vous lui avez attribué dans le menu contextuel (clic droit) de **l’Explorateur de solutions**.
 
 Des tâches personnalisée peuvent être ajoutées à chaque fichier ou à l’ensemble des fichiers d’un type spécifique. Par exemple, les fichiers du package NuGet peuvent être configurés de manière à obtenir une tâche « Restaurer les packages », ou tous les fichiers sources peuvent être configurés afin d’obtenir une tâche d’analyse statique, par exemple un linter pour tous les fichiers *.js*.
 
@@ -58,6 +56,7 @@ Si votre code base utilise des outils de génération personnalisés que Visual 
 
 Prenons un code base composé d’un seul fichier cC# appelé *hello.cs*. Le fichier *makefile* d’un tel code base pourrait se présenter comme ceci :
 
+<!-- markdownlint-disable MD010 -->
 ```makefile
 build: directory hello.exe
 
@@ -74,6 +73,7 @@ directory: bin
 bin:
     md bin
 ```
+<!-- markdownlint-enable MD010 -->
 
 Pour ce fichier *makefile* contenant des cibles de génération, de nettoyage et de regénération, vous pouvez définir le fichier *tasks.vs.json* suivant. Il contient trois tâches pour la génération, la régénération et le nettoyage du code base, en utilisant NMAKE comme outil de génération.
 
@@ -119,7 +119,7 @@ Pour ce fichier *makefile* contenant des cibles de génération, de nettoyage et
 }
 ```
 
-Après avoir défini les tâches de génération dans *tasks.vs.json*, d’autres éléments de menu contextuel sont ajoutés aux fichiers correspondants dans **l’Explorateur de solutions**. Pour cet exemple, les options « Générer », « Regénérer » et « Nettoyer » sont ajoutées au menu contextuel des fichiers *makefile*.
+Une fois définies les tâches de génération dans *tasks.vs.json*, d’autres éléments de menu contextuel (clic droit) sont ajoutés aux fichiers correspondants dans **l’Explorateur de solutions**. Pour cet exemple, les options « Générer », « Regénérer » et « Nettoyer » sont ajoutées au menu contextuel des fichiers *makefile*.
 
 ![menu contextuel makefile avec générer, régénerer et nettoyer](media/customize-build-rebuild-clean.png)
 
@@ -149,7 +149,7 @@ L’exemple suivant montre un fichier *tasks.vs.json* qui définit une tâche un
 }
 ```
 
-- `taskName` spécifie le nom qui apparaît dans le menu contextuel.
+- `taskName` spécifie le nom qui apparaît dans le menu contextuel (clic droit).
 - `appliesTo` spécifie les fichiers que lesquels la commande peut être exécutée.
 - La propriété `command` spécifie la commande à appeler. Dans cet exemple, la variable d’environnement `COMSPEC` sert à identifier l’interpréteur de ligne de commande, en général *cmd.exe*.
 - La propriété `args` spécifie les arguments à passer à la commande appelée.

@@ -1,25 +1,23 @@
 ---
-title: 'CA2135 : Les assemblys de niveau 2 ne doivent pas contenir de LinkDemands'
+title: 'CA2135 : Les assemblys de niveau 2 ne doivent pas contenir de LinkDemands'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2135
 ms.assetid: 7a775285-42d2-4f13-8434-3fdb0deeebe6
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08f8719a7b9434a774d00003a1b135e18c06eacb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fcd9032d550e79a47941540408dc6e98a15e33f7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898185"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949510"
 ---
-# <a name="ca2135-level-2-assemblies-should-not-contain-linkdemands"></a>CA2135 : Les assemblys de niveau 2 ne doivent pas contenir de LinkDemands
+# <a name="ca2135-level-2-assemblies-should-not-contain-linkdemands"></a>CA2135 : Les assemblys de niveau 2 ne doivent pas contenir de LinkDemands
 
 |||
 |-|-|

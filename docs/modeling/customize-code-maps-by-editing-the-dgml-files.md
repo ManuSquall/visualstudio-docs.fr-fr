@@ -17,17 +17,15 @@ helpviewer_keywords:
 - dependency graphs, assigning categories and properties
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 21a32cf13f598c894ebc7841f5ef4a0af3af82ed
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 31f26acadcbeac4aa042f7372fd4c80a9e385c54
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878971"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937940"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Personnaliser des cartes de code en modifiant les fichiers DGML
 
@@ -294,7 +292,7 @@ Modifiez le fichier .dgml de la carte de code dans un éditeur de texte ou un é
 
     <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>
 
-    <Operator> :: = « < » &#124; »\<= » &#124; « = » &#124; » > = » &#124; » > « &#124; » ! = » &#124; « ou » &#124; « et » &#124; « + » &#124; » * » &#124; « / » &#124; »- »
+    <Operator> ::= "<" &#124; "\<=" &#124; "=" &#124; ">=" &#124; ">" &#124; "!=" &#124; "or" &#124; "and" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
 
     <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>
 

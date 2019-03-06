@@ -1,14 +1,9 @@
 ---
 title: Boîte à outils, onglet HTML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.toolbox.html
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: 9bfdd3b8-f5ac-4a5f-bdbf-c2b4e97641d8
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 31ee75c419870d9047b3892c668c5e4665850654
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bd9b728ee8537f5668914f05f05481fd3fe56d92
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292070"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54780422"
 ---
 # <a name="toolbox-html-tab"></a>Boîte à outils, onglet HTML
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,9 +32,9 @@ L’onglet **HTML** de la boîte à outils fournit des composants utiles sur les
   
 ## <a name="tasks"></a>Tâches  
   
--   [Comment : gérer la fenêtre Boîte à outils](http://msdn.microsoft.com/en-us/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
+-   [Comment : gérer la fenêtre Boîte à outils](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
   
--   [Comment : manipuler des onglets de boîte à outils](http://msdn.microsoft.com/en-us/21285050-cadd-455a-b1f5-a2289a89c4db)  
+-   [Comment : manipuler des onglets de boîte à outils](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)  
   
 ## <a name="ui-elements"></a>Éléments de l'interface utilisateur  
  Les outils suivants sont disponibles par défaut sous l’onglet HTML.  
@@ -47,7 +42,7 @@ L’onglet **HTML** de la boîte à outils fournit des composants utiles sur les
  **Pointeur**  
  ![Pointeur HTMLpage de concepteur ASP.NET mobile](../../ide/reference/media/vxpointer.gif "vxPointer")  
   
- Cet outil est sélectionné par défaut quand un onglet de boîte à outils s’ouvre. Il ne peut pas être supprimé. Le pointeur vous permet de faire glisser des objets sur la surface en mode Design, de les redimensionner et de les repositionner sur la page ou le formulaire. Pour plus d’informations, consultez [Comment : gérer la fenêtre Boîte à outils](http://msdn.microsoft.com/en-us/a022c3fe-298c-4a59-a48f-b050da90ebc2) et [Comment : manipuler des onglets de boîte à outils](http://msdn.microsoft.com/en-us/21285050-cadd-455a-b1f5-a2289a89c4db).  
+ Cet outil est sélectionné par défaut quand un onglet de boîte à outils s’ouvre. Il ne peut pas être supprimé. Le pointeur vous permet de faire glisser des objets sur la surface en mode Design, de les redimensionner et de les repositionner sur la page ou le formulaire. Pour plus d’informations, consultez [Comment : gérer la fenêtre Boîte à outils](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) et [Comment : manipuler des onglets de boîte à outils](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
   
  **Input (Button)**  
  ![Bouton de page web HTML](../../ide/reference/media/vxbutton.gif "vxButton")  
@@ -60,7 +55,7 @@ L’onglet **HTML** de la boîte à outils fournit des composants utiles sur les
 <input id="Button1" type="button" value="Button" name="Button1">  
 ```  
   
- Pour plus d’informations, consultez [contrôles Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [syntaxe déclarative du contrôle serveur HtmlInputButton](http://msdn.microsoft.com/en-us/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa), [NIB : Comment : créer des Scripts et modifier des gestionnaires d’événements](http://msdn.microsoft.com/en-us/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [ Organigramme des contrôles serveur Web de bouton](http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlButton>, et <xref:System.Web.UI.WebControls.Button>.  
+ Pour plus d’informations, consultez [contrôles Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [syntaxe déclarative du contrôle serveur HtmlInputButton](http://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa), [NIB : Comment : créer des Scripts et modifier des gestionnaires d’événements](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [ Organigramme des contrôles serveur Web de bouton](http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlButton>, et <xref:System.Web.UI.WebControls.Button>.  
   
  **Input (Reset)**  
  ![Capture d’écran de HTMLpageResetButton](../../ide/reference/media/vxreset.gif "vxReset")  
@@ -73,7 +68,7 @@ L’onglet **HTML** de la boîte à outils fournit des composants utiles sur les
 <input id="Reset1" type="reset" value="Reset" name="Reset1">  
 ```  
   
- Pour plus d’informations, consultez [contrôles Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [syntaxe déclarative des contrôles serveur HtmlInputReset](http://msdn.microsoft.com/en-us/cfc1f1fb-d33a-464d-9bb5-204e66174979), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, et <xref:System.Web.UI.WebControls.Button>.  
+ Pour plus d’informations, consultez [contrôles Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [syntaxe déclarative des contrôles serveur HtmlInputReset](http://msdn.microsoft.com/cfc1f1fb-d33a-464d-9bb5-204e66174979), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, et <xref:System.Web.UI.WebControls.Button>.  
   
  **Input (Submit)**  
  ![Capture d’écran de HTMLpageToolbarSubmitButton](../../ide/reference/media/vxsubmit.gif "vxSubmit")  
@@ -86,7 +81,7 @@ L’onglet **HTML** de la boîte à outils fournit des composants utiles sur les
 <input id="Submit1" type="submit" value="Submit" name="Submit1">  
 ```  
   
- Pour plus d’informations, consultez [contrôles Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [syntaxe déclarative des contrôles serveur HtmlInputSubmit](http://msdn.microsoft.com/en-us/eef2a157-f184-4ce9-b256-d1eacc7930f2), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, et <xref:System.Web.UI.WebControls.Button>.  
+ Pour plus d’informations, consultez [contrôles Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [syntaxe déclarative des contrôles serveur HtmlInputSubmit](http://msdn.microsoft.com/eef2a157-f184-4ce9-b256-d1eacc7930f2), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, et <xref:System.Web.UI.WebControls.Button>.  
   
  **Input (Text)**  
  ![Capture d’écran de HTMLpageToolbarTextField](../../ide/reference/media/vxtextfield.gif "vxTextfield")  
@@ -99,7 +94,7 @@ L’onglet **HTML** de la boîte à outils fournit des composants utiles sur les
 <input id="Text1" TYPE="text" value="Text Field" name="Text1">  
 ```  
   
- Pour plus d’informations, consultez [contrôles Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [syntaxe déclarative du contrôle serveur HtmlInputText](http://msdn.microsoft.com/en-us/87060d90-a11c-434d-9fc9-b03a8487041e), [vue d’ensemble du contrôle serveur Web TextBox](http://msdn.microsoft.com/library/ab354bc1-f23a-48fc-93d8-d4d7c1b7396f), <xref:System.Web.UI.HtmlControls.HtmlInputText>, et <xref:System.Web.UI.WebControls.TextBox>.  
+ Pour plus d’informations, consultez [contrôles Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [syntaxe déclarative du contrôle serveur HtmlInputText](http://msdn.microsoft.com/87060d90-a11c-434d-9fc9-b03a8487041e), [vue d’ensemble du contrôle serveur Web TextBox](http://msdn.microsoft.com/library/ab354bc1-f23a-48fc-93d8-d4d7c1b7396f), <xref:System.Web.UI.HtmlControls.HtmlInputText>, et <xref:System.Web.UI.WebControls.TextBox>.  
   
 > [!IMPORTANT]
 >  Il est recommandé de valider toutes les entrées d’utilisateur. Pour plus d’informations, consultez [Validation des entrées d’utilisateur dans des pages Web ASP.NET](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
@@ -115,7 +110,7 @@ L’onglet **HTML** de la boîte à outils fournit des composants utiles sur les
 <input id="File1" type="file" name="File1">  
 ```  
   
- Pour plus d’informations, consultez [contrôles Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [syntaxe déclarative du contrôle serveur HtmlInputFile](http://msdn.microsoft.com/en-us/a817b4a0-056f-4c17-a696-b9fdcde43db6), et <xref:System.Web.UI.HtmlControls.HtmlInputFile>.  
+ Pour plus d’informations, consultez [contrôles Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [syntaxe déclarative du contrôle serveur HtmlInputFile](http://msdn.microsoft.com/a817b4a0-056f-4c17-a696-b9fdcde43db6), et <xref:System.Web.UI.HtmlControls.HtmlInputFile>.  
   
 > [!IMPORTANT]
 >  Il est recommandé de valider toutes les entrées d’utilisateur. Pour plus d’informations, consultez [Validation des entrées d’utilisateur dans des pages Web ASP.NET](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
@@ -131,7 +126,7 @@ L’onglet **HTML** de la boîte à outils fournit des composants utiles sur les
 <input id="Password1" type="password" name="Password1">  
 ```  
   
- Pour plus d’informations, consultez [Contrôles Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Syntaxe déclarative des contrôles serveur HtmlInputPassword](http://msdn.microsoft.com/en-us/df703dd0-1624-4e5a-a547-c97f2f331b9f), [Comment : définir un contrôle serveur Web TextBox pour l’entrée de mots de passe](http://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310) et [Procédure pas à pas : validation des entrées d’utilisateur dans une page Web Forms](http://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436).  
+ Pour plus d’informations, consultez [Contrôles Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Syntaxe déclarative des contrôles serveur HtmlInputPassword](http://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f), [Comment : définir un contrôle serveur Web TextBox pour l’entrée de mots de passe](http://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310) et [Procédure pas à pas : validation des entrées d’utilisateur dans une page Web Forms](http://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436).  
   
 > [!IMPORTANT]
 >  Si votre application transmet des noms d’utilisateurs et des mots de passe, vous devez configurer votre site web afin qu’il utilise SSL (Secure Sockets Layer) pour chiffrer la transmission. Pour plus d’informations, consultez la rubrique relative à la sécurisation des connexions avec SSL dans le [Guide des opérations IIS](http://go.microsoft.com/fwlink/?linkid=47856). Il est, en outre, recommandé de valider toutes les entrées d’utilisateur. Pour plus d’informations, consultez [Validation des entrées d’utilisateur dans des pages Web ASP.NET](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
@@ -147,7 +142,7 @@ L’onglet **HTML** de la boîte à outils fournit des composants utiles sur les
 <input id="Checkbox1" type="checkbox" name="Checkbox1">   
 ```  
   
- Pour plus d’informations, consultez [contrôles Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [syntaxe déclarative du contrôle serveur HtmlInputCheckBox](http://msdn.microsoft.com/en-us/4a509586-89d8-4ccf-a0b8-b9160ce6e4a6), [case à cocher et vue d’ensemble des contrôles serveur Web CheckBoxList](http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf), <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox>, et <xref:System.Web.UI.WebControls.CheckBox>.  
+ Pour plus d’informations, consultez [contrôles Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [syntaxe déclarative du contrôle serveur HtmlInputCheckBox](http://msdn.microsoft.com/4a509586-89d8-4ccf-a0b8-b9160ce6e4a6), [case à cocher et vue d’ensemble des contrôles serveur Web CheckBoxList](http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf), <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox>, et <xref:System.Web.UI.WebControls.CheckBox>.  
   
  **Input (Radio)**  
  ![Capture d’écran de VisualStudioHTMLpageRadioButton](../../ide/reference/media/vxradio.gif "vxRadio")  
@@ -160,7 +155,7 @@ L’onglet **HTML** de la boîte à outils fournit des composants utiles sur les
 <input id="Radio1" type="radio" name="Radio1">  
 ```  
   
- Pour plus d’informations, consultez [contrôles Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [syntaxe déclarative du contrôle serveur HtmlInputRadioButton](http://msdn.microsoft.com/en-us/6e60ff63-cc57-46ef-bf96-e829e204ba33), [RadioButton et RadioButtonList Web Server Controls Overview](http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747), <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton>, et <xref:System.Web.UI.WebControls.RadioButton>.  
+ Pour plus d’informations, consultez [contrôles Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [syntaxe déclarative du contrôle serveur HtmlInputRadioButton](http://msdn.microsoft.com/6e60ff63-cc57-46ef-bf96-e829e204ba33), [RadioButton et RadioButtonList Web Server Controls Overview](http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747), <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton>, et <xref:System.Web.UI.WebControls.RadioButton>.  
   
  **Input (Hidden)**  
  ![Élément Hidden de page HTML](../../ide/reference/media/vxhidden.gif "vxhidden")  
@@ -173,7 +168,7 @@ L’onglet **HTML** de la boîte à outils fournit des composants utiles sur les
 <input id="Hidden1" type="hidden" name="Hidden1">   
 ```  
   
- Pour plus d’informations, consultez [contrôles Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [syntaxe déclarative du contrôle serveur HtmlInputHidden](http://msdn.microsoft.com/en-us/4194e44d-1d74-4bfc-9cc7-743a2e1ea5f9), et <xref:System.Web.UI.HtmlControls.HtmlInputHidden>.  
+ Pour plus d’informations, consultez [contrôles Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [syntaxe déclarative du contrôle serveur HtmlInputHidden](http://msdn.microsoft.com/4194e44d-1d74-4bfc-9cc7-743a2e1ea5f9), et <xref:System.Web.UI.HtmlControls.HtmlInputHidden>.  
   
  **Textarea**  
  ![Zone de texte de barre d’outils de page HTML](../../ide/reference/media/vxtextarea.gif "vxTextarea")  
@@ -186,7 +181,7 @@ L’onglet **HTML** de la boîte à outils fournit des composants utiles sur les
 <textarea id=" textarea 1 name=" textarea 1" rows=2 cols=20></textarea>   
 ```  
   
- Pour plus d’informations, consultez [syntaxe déclarative du contrôle serveur HtmlTextArea](http://msdn.microsoft.com/en-us/5a103ffa-235b-4452-ba2b-a4fb8ba8cb87), <xref:System.Web.UI.HtmlControls.HtmlTextArea>, et <xref:System.Web.UI.WebControls.TextBox>.  
+ Pour plus d’informations, consultez [syntaxe déclarative du contrôle serveur HtmlTextArea](http://msdn.microsoft.com/5a103ffa-235b-4452-ba2b-a4fb8ba8cb87), <xref:System.Web.UI.HtmlControls.HtmlTextArea>, et <xref:System.Web.UI.WebControls.TextBox>.  
   
 > [!IMPORTANT]
 >  Il est recommandé de valider toutes les entrées d’utilisateur. Pour plus d’informations, consultez [Validation des entrées d’utilisateur dans des pages Web ASP.NET](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
@@ -202,7 +197,7 @@ L’onglet **HTML** de la boîte à outils fournit des composants utiles sur les
 <table cellspacing="1" width="75%" border=1> <tr><td></td></tr></table>   
 ```  
   
- Pour plus d’informations, consultez [syntaxe déclarative du contrôle serveur HtmlTable](http://msdn.microsoft.com/en-us/625b06d8-0f69-4112-a1d4-8ef2a9fbcda9), [Table, TableRow et vue d’ensemble du contrôle serveur Web TableCell](http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a), <xref:System.Web.UI.HtmlControls.HtmlTable>, et <xref:System.Web.UI.WebControls.Table>.  
+ Pour plus d’informations, consultez [syntaxe déclarative du contrôle serveur HtmlTable](http://msdn.microsoft.com/625b06d8-0f69-4112-a1d4-8ef2a9fbcda9), [Table, TableRow et vue d’ensemble du contrôle serveur Web TableCell](http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a), <xref:System.Web.UI.HtmlControls.HtmlTable>, et <xref:System.Web.UI.WebControls.Table>.  
   
  **Image**  
  ![Élément Image de page HTML](../../ide/reference/media/vximage.gif "vxImage")  
@@ -215,7 +210,7 @@ L’onglet **HTML** de la boîte à outils fournit des composants utiles sur les
 <img alt="" src="">  
 ```  
   
- Pour plus d’informations, consultez [syntaxe déclarative du contrôle serveur HtmlImage](http://msdn.microsoft.com/en-us/528430e8-ced1-47d1-8db2-942e734a61f6), [vue d’ensemble du contrôle serveur Web Image](http://msdn.microsoft.com/library/096a8d8d-58ee-4ee8-ab82-6594a0f3a0a9), <xref:System.Web.UI.HtmlControls.HtmlImage>, <xref:System.Web.UI.HtmlControls.HtmlInputImage>, et <xref:System.Web.UI.WebControls.Image>.  
+ Pour plus d’informations, consultez [syntaxe déclarative du contrôle serveur HtmlImage](http://msdn.microsoft.com/528430e8-ced1-47d1-8db2-942e734a61f6), [vue d’ensemble du contrôle serveur Web Image](http://msdn.microsoft.com/library/096a8d8d-58ee-4ee8-ab82-6594a0f3a0a9), <xref:System.Web.UI.HtmlControls.HtmlImage>, <xref:System.Web.UI.HtmlControls.HtmlInputImage>, et <xref:System.Web.UI.WebControls.Image>.  
   
  **Select**  
  ![Liste déroulante de boîte à outils de page HTML](../../ide/reference/media/vxdropdown.gif "vxDropdown")  
@@ -230,7 +225,7 @@ L’onglet **HTML** de la boîte à outils fournit des composants utiles sur les
   
  Vous pouvez créer un élément `select` multiligne en augmentant la valeur de la propriété size.  
   
- Pour plus d’informations, consultez [syntaxe déclarative du contrôle serveur HtmlSelect](http://msdn.microsoft.com/en-us/ee93bdec-b343-441a-a8ff-56ffcafe9ae5), [NIB : Comment : créer des Scripts et modifier des gestionnaires d’événements](http://msdn.microsoft.com/en-us/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [présentation du contrôle serveur Web DropDownList](http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608), [Présentation du contrôle serveur Web ListBox](http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97), <xref:System.Web.UI.HtmlControls.HtmlSelect>, et <xref:System.Web.UI.WebControls.DropDownList>.  
+ Pour plus d’informations, consultez [syntaxe déclarative du contrôle serveur HtmlSelect](http://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5), [NIB : Comment : créer des Scripts et modifier des gestionnaires d’événements](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [présentation du contrôle serveur Web DropDownList](http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608), [Présentation du contrôle serveur Web ListBox](http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97), <xref:System.Web.UI.HtmlControls.HtmlSelect>, et <xref:System.Web.UI.WebControls.DropDownList>.  
   
  **Horizontal Rule**  
  ![Élément Horizontal Rule de page HTML](../../ide/reference/media/vxhorizontal.gif "vxHorizontal")  
@@ -262,6 +257,3 @@ L’onglet **HTML** de la boîte à outils fournit des composants utiles sur les
  [Boîte à outils](../../ide/reference/toolbox.md)   
  [Standard, onglet de la boîte à outils](http://msdn.microsoft.com/library/35e9320d-fcbd-474b-8b8f-55705e9a1870)   
  [Contrôles HTML](http://msdn.microsoft.com/library/83bc6f7e-a2b5-4fe9-9a34-eb34aef673be)
-
-
-

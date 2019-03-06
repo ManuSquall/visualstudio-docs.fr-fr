@@ -1,23 +1,21 @@
 ---
-title: 'Comment : créer une texture de base'
+title: 'Procédure : Créer une texture de base'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 0222e8bf-d29f-421b-9b1f-123d500fa179
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4bd1d34ef2dc31935038bb1be30d548c58208fd
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: d36aa18cb4d641f1a5f22618e98615222cb844d6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028986"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926071"
 ---
-# <a name="how-to-create-a-basic-texture"></a>Guide pratique pour créer une texture de base
+# <a name="how-to-create-a-basic-texture"></a>Procédure : Créer une texture de base
 
 Cet article montre comment utiliser l’éditeur d’images pour créer une texture de base, et détaille notamment les activités suivantes :
 
@@ -39,7 +37,7 @@ Les étapes suivantes montrent comment créer une texture qui représente une ci
 
 ![Cible « Bullseye » avec la transparence illustrée en vert](../designers/media/digit-bullseye-texture-in-editor.png)
 
-Avant de commencer, assurez-vous que la fenêtre **Propriétés** est affichée. Vous allez l’utiliser pour définir la taille de l’image, modifier les propriétés des outils et spécifier des couleurs pendant que vous travaillez.
+Avant de commencer, assurez-vous que la fenêtre **Propriétés** est affichée. Vous utilisez la fenêtre **Propriétés** pour définir la taille de l'image,, modifier les propriétés des outils et spécifier des couleurs pendant que vous travaillez.
 
 ### <a name="create-a-bullseye-target-texture"></a>Créer une texture de type cible
 
@@ -87,8 +85,8 @@ La texture de cible est complète. Voici l’image finale, affichée avec la tra
 
 ![Texture cible « Bullseye » complète](../designers/media/gfx_image_demo_bullseye.png)
 
-Ensuite, vous pouvez générer des niveaux MIP pour cette texture. Pour plus d’informations, consultez l’article [Guide pratique pour créer et modifier les niveaux MIP](../designers/how-to-create-and-modify-mip-levels.md).
+Ensuite, vous pouvez générer des niveaux MIP pour cette texture. Pour plus d’informations, consultez [Guide pratique pour créer et modifier des niveaux MIP](../designers/how-to-create-and-modify-mip-levels.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Éditeur d’images](../designers/image-editor.md)
+- [Image Editor](../designers/image-editor.md)

@@ -1,22 +1,19 @@
 ---
 title: Migrer d’inscription de classe COM du débogueur 64 bits | Microsoft Docs
-ms.custom: ''
 ms.date: 11/10/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 45cfcee6-7a68-4d4f-b3f6-e2d8a0fa066a
 author: gregg-miskelly
 ms.author: greggm
-manager: douge
+manager: jillfra
 ms.workload:
 - greggm
-ms.openlocfilehash: 6c7578ddbdf84a1520a732fb64380bb53e5359f9
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 74fbb959f8272be001aad8a576724d5eb1ad6157
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637849"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56712201"
 ---
 # <a name="migrate-64-bit-debugger-com-class-registration"></a>Migrer le débogueur 64 bits d’inscription de classe COM
 

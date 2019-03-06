@@ -1,8 +1,6 @@
 ---
-title: 'CA1039 : Les listes sont fortement typées'
+title: 'CA1039 : Les listes sont fortement typées'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1039
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 5ac366c4-fd87-4d5c-95d5-f755510c8e5c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 961052d778551818942977b4d8895b85e96091d6
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: d11afe8a3ea8fcae971461b8e33fc4771b74eb75
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551819"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947469"
 ---
-# <a name="ca1039-lists-are-strongly-typed"></a>CA1039 : Les listes sont fortement typées
+# <a name="ca1039-lists-are-strongly-typed"></a>CA1039 : Les listes sont fortement typées
 
 |||
 |-|-|
@@ -40,9 +38,9 @@ Type de public ou protégé implémente <xref:System.Collections.IList?displayPr
 
 - IList.Add
 
-- IList.Contains.
+- IList.Contains
 
-- IList.IndexOf.
+- IList.IndexOf
 
 - IList.Insert
 

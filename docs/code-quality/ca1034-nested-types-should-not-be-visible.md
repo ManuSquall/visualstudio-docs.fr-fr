@@ -1,8 +1,6 @@
 ---
 title: 'CA1034 : Les types imbriqués ne doivent pas être visibles'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - NestedTypesShouldNotBeVisible
@@ -13,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: e9789a2c-2540-42a1-8705-ae7104011194
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 14c0837d482341e1ba60191c8b6bb3f5bd8e6dd4
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: fb01065fed41a30f26e15d7295fabc03fb3f1f4f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550945"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942555"
 ---
 # <a name="ca1034-nested-types-should-not-be-visible"></a>CA1034 : Les types imbriqués ne doivent pas être visibles
 

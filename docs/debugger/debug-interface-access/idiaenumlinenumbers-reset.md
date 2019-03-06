@@ -1,8 +1,6 @@
 ---
-title: IDiaEnumLineNumbers::Reset | Documents Microsoft
-ms.custom: ''
+title: IDiaEnumLineNumbers::Reset | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,27 +9,27 @@ helpviewer_keywords:
 ms.assetid: d50e73aa-11a1-4813-ba23-d5861090ee12
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 655b36e09656edf52d3f8d2a9af9e2994ffdaadc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: fb1ed8a531e7302bd184490b8017679712ef131a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458809"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607315"
 ---
 # <a name="idiaenumlinenumbersreset"></a>IDiaEnumLineNumbers::Reset
-Réinitialise la séquence d’énumération au début.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT Reset();  
-```  
-  
-## <a name="return-value"></a>Valeur de retour  
- Retourne `S_OK`.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+Réinitialise une séquence d’énumération au début.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT Reset();
+```
+
+## <a name="return-value"></a>Valeur de retour
+ Retourne `S_OK`.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

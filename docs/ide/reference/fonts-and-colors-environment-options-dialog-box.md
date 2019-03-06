@@ -1,8 +1,6 @@
 ---
 title: Polices et couleurs, Environnement, boîte de dialogue Options
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.FontsAndColors
@@ -24,19 +22,19 @@ helpviewer_keywords:
 ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f15ac427d3e6fd6ddf7988c82ad46ffe537d299
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: b3fd18198811f6235c4e5d0627303e4243ad595b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389261"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700261"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Polices et couleurs, Environnement, boîte de dialogue Options
 
-La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet d’établir un jeu de polices et un modèle de couleurs personnalisés pour divers éléments d’interface utilisateur dans l’environnement de développement intégré (IDE). Vous pouvez accéder à cette boîte de dialogue en cliquant sur **Outils / Options**, puis en sélectionnant **Environnement / Polices et couleurs**. Si cette page n’apparaît pas dans la liste, sélectionnez **Afficher tous les paramètres** dans la boîte de dialogue **Options**.
+La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet d’établir un jeu de polices et un modèle de couleurs personnalisés pour divers éléments d’interface utilisateur dans l’environnement de développement intégré (IDE). Vous pouvez accéder à cette boîte de dialogue en cliquant sur **Outils** > **Options**, puis en sélectionnant **Environnement** > **Polices et couleurs**. Si cette page n’apparaît pas dans la liste, sélectionnez **Afficher tous les paramètres** dans la boîte de dialogue **Options**.
 
 Les changements relatifs au modèle de couleurs ne sont pas appliqués durant la session où vous les apportez. Vous pouvez évaluer les changements de couleurs en ouvrant une autre instance de Visual Studio, et en reproduisant les conditions dans lesquelles vous souhaitez qu'ils soient appliqués.
 
@@ -65,7 +63,13 @@ Répertorie tous les éléments d'interface utilisateur pour lesquels vous pouve
 
 -   **Police d’environnement**
 
-     Change le style de police et la taille de tous les éléments d’interface utilisateur de l’IDE qui ne disposent pas déjà d’une option distincte dans **Afficher les paramètres de**. Par exemple, cette option s’applique à la **Page de démarrage** mais n’affecte pas la fenêtre **Sortie**.
+     Change le style de police et la taille de tous les éléments d’interface utilisateur de l’IDE qui ne disposent pas déjà d’une option distincte dans **Afficher les paramètres de**.
+
+     ::: moniker range="vs-2017"
+
+     Par exemple, cette option s’applique à la **Page de démarrage** mais n’affecte pas la fenêtre **Sortie**.
+
+     ::: moniker-end
 
 -   **[Toutes les fenêtres Outil de texte]**
 
@@ -128,7 +132,7 @@ Voici certains éléments d'affichage :
 |**Zone non couverte**|Code non couvert par un test unitaire.|
 |**Zone partiellement couverte**|Code partiellement couvert par un test unitaire.|
 |**Zone couverte**|Code complètement couvert par un test unitaire.|
-|**Commentaire CSS**|Commentaire dans des feuilles de style en cascade. Exemple :<br /><br /> /* commentaire \*/|
+|**Commentaire CSS**|Commentaire dans des feuilles de style en cascade. Par exemple :<br /><br /> /* commentaire \*/|
 |**Mot clé CSS**|Mots clés dans la feuille de style en cascade.|
 |**Nom de propriété CSS**|Nom d'une propriété, par exemple Background.|
 |**Valeur de propriété CSS**|Valeur assignée à une propriété, par exemple blue.|
@@ -164,7 +168,7 @@ Voici certains éléments d'affichage :
 |**Marqueur SQL DML**|S'applique à l'éditeur Transact-SQL. Les instructions DML dans cet éditeur sont marquées avec un cadre englobant bleu par défaut.|
 |**Code périmé**|Code annulé et remplacé en attente d'une mise à jour. Dans certains cas, Modifier & Continuer ne peut pas appliquer immédiatement les modifications du code, mais ce sera le cas plus tard, durant le débogage. Cela se produit si vous modifiez une fonction qui doit appeler la fonction en cours d'exécution, ou si vous ajoutez plus de 64 octets de nouvelles variables à une fonction en attente dans la pile des appels. Dans ce cas, le débogueur affiche la boîte de dialogue "Avertissement : code périmé". Par ailleurs, le code annulé et remplacé continue à s'exécuter jusqu'à ce que la fonction en question s'arrête et soit appelée à nouveau. Modifier & Continuer applique les modifications du code à ce moment-là.|
 |**String**|Littéraux de chaîne.|
-|**String (C# @ Verbatim)**|Les littéraux de chaîne en C# sont interprétés textuellement. Exemple :<br /><br /> @"x"|
+|**String (C# @ Verbatim)**|Les littéraux de chaîne en C# sont interprétés textuellement. Par exemple :<br /><br /> @"x"|
 |**Erreur de syntaxe**|Erreurs d'analyse.|
 |**Raccourci de la liste des tâches**|Si le raccourci **Liste des tâches** est ajouté à une ligne, et si la marge des indicateurs est désactivée, la ligne est mise en surbrillance.|
 |**Point de trace (Désactivé)**|Non utilisé.|
@@ -251,4 +255,4 @@ Affiche un aperçu du modèle de style, du modèle de taille et du modèle de co
 
 - [Environnement, boîte de dialogue Options](../../ide/reference/environment-options-dialog-box.md)
 - [Options, boîte de dialogue](../../ide/reference/options-dialog-box-visual-studio.md)
-- [Guide pratique pour modifier les polices et les couleurs dans Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Guide pratique pour changer les polices et les couleurs](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

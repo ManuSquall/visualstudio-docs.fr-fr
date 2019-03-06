@@ -1,10 +1,7 @@
 ---
 title: IDebugPendingBreakpoint2::Virtualize | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugPendingBreakpoint2::Virtualize
 helpviewer_keywords:
@@ -13,77 +10,78 @@ helpviewer_keywords:
 ms.assetid: 58c8e9a5-4494-47c2-bddb-56f628da6a2d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb2e66378b2a7b906b6bf9e0efe4e718316ade54
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 58c2dd4ffd150caebe616e3d891f0227970826cc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948289"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689653"
 ---
 # <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
-Active ou désactive le virtualisé cela en attente de point d’arrêt. Lorsqu’un point d’arrêt en attente est virtualisé, le moteur de débogage va tenter de lier chaque chargement de nouveau code dans le programme.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT Virtualize(   
-   BOOL fVirtualize  
-);  
-```  
-  
-```cpp  
-int Virtualize(   
-   int fVirtualize  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `fVirtualize`  
- [in] Définir à différente de zéro (`TRUE`) pour virtualiser le point d’arrêt en attente ou à zéro (`FALSE`) pour désactiver la virtualisation.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_BP_DELETED` si le point d’arrêt a été supprimé.  
-  
-## <a name="remarks"></a>Notes  
- Un point d’arrêt virtualisé est lié à chaque fois que le code est chargé.  
-  
-## <a name="example"></a>Exemple  
- L’exemple suivant montre comment implémenter cette méthode pour une simple `CPendingBreakpoint` objet qui expose le [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interface.  
-  
-```cpp  
-HRESULT CPendingBreakpoint::Virtualize(BOOL fVirtualize)    
-{    
-   HRESULT hr;    
-  
-   // Verify that the pending breakpoint has not been deleted. If deleted,   
-   // then return hr = E_BP_DELETED.    
-   if (m_state.state != PBPS_DELETED)    
-   {    
-      if (fVirtualize)    
-      {    
-         // Set the PBPSF_VIRTUALIZED flag in the PENDING_BP_STATE_FLAGS   
-         // structure.    
-         SetFlag(m_state.flags, PBPSF_VIRTUALIZED);    
-      }    
-      else    
-      {    
-         // Clear the PBPSF_VIRTUALIZED flag in the PENDING_BP_STATE_FLAGS   
-         // structure.    
-         ClearFlag(m_state.flags, PBPSF_VIRTUALIZED);    
-      }    
-      hr = S_OK;    
-   }    
-   else    
-   {    
-      hr = E_BP_DELETED;    
-   }    
-  
-   return hr;    
-}    
-```  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
+Active ou désactive le virtualisé cela en attente de point d’arrêt. Lorsqu’un point d’arrêt en attente est virtualisé, le moteur de débogage va tenter de lier chaque chargement de nouveau code dans le programme.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT Virtualize(
+    BOOL fVirtualize
+);
+```
+
+```cpp
+int Virtualize(
+    int fVirtualize
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+`fVirtualize`
+
+ [in] Définir à différente de zéro (`TRUE`) pour virtualiser le point d’arrêt en attente ou à zéro (`FALSE`) pour désactiver la virtualisation.
+
+## <a name="return-value"></a>Valeur de retour
+En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_BP_DELETED` si le point d’arrêt a été supprimé.
+
+## <a name="remarks"></a>Notes
+Un point d’arrêt virtualisé est lié à chaque fois que le code est chargé.
+
+## <a name="example"></a>Exemple
+L’exemple suivant montre comment implémenter cette méthode pour une simple `CPendingBreakpoint` objet qui expose le [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interface.
+
+```cpp
+HRESULT CPendingBreakpoint::Virtualize(BOOL fVirtualize)
+{
+    HRESULT hr;
+
+    // Verify that the pending breakpoint has not been deleted. If deleted,
+    // then return hr = E_BP_DELETED.
+    if (m_state.state != PBPS_DELETED)
+    {
+        if (fVirtualize)
+        {
+            // Set the PBPSF_VIRTUALIZED flag in the PENDING_BP_STATE_FLAGS
+            // structure.
+            SetFlag(m_state.flags, PBPSF_VIRTUALIZED);
+        }
+        else
+        {
+            // Clear the PBPSF_VIRTUALIZED flag in the PENDING_BP_STATE_FLAGS
+            // structure.
+            ClearFlag(m_state.flags, PBPSF_VIRTUALIZED);
+        }
+        hr = S_OK;
+    }
+    else
+    {
+        hr = E_BP_DELETED;
+    }
+
+    return hr;
+}
+```
+
+## <a name="see-also"></a>Voir aussi
+- [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

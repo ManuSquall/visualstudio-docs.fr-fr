@@ -1,20 +1,18 @@
 ---
 title: Informations de référence sur l’API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 ms.date: 11/04/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: reference
 ms.author: mblome
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: b2225ec5db308b290e932cb9d29d1c50e32d4608
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 926b2c35d64ebac060f026dbc212874f261719de
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820263"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922158"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Informations de référence sur l’API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
@@ -644,4 +642,3 @@ public:
 
 - [Tests unitaires sur votre code](../test/unit-test-your-code.md)
 - [Écrire des tests unitaires pour C/C++](writing-unit-tests-for-c-cpp.md)
-

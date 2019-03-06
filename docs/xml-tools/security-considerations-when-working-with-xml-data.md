@@ -1,21 +1,19 @@
 ---
 title: Considérations de sécurité lors de l'utilisation de données XML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: fce2b708-1aef-454f-be59-52b76f359351
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6db64424e1b503f4835f268fad9fdc5b8648b150
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: ebcf5769c9ca59a0772530e3551517d14c1ec0c0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572603"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955841"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>Considérations sur la sécurité lorsque vous travaillez avec des données XML
 
@@ -25,7 +23,7 @@ Cette rubrique présente les problèmes de sécurité à prendre en compte lors 
 
  L'éditeur XML est basé sur l'éditeur de texte Visual Studio. Il repose sur les classes <xref:System.Xml> et <xref:System.Xml.Xsl> pour traiter la plupart des processus XML.
 
--   Les transformations XSLT s'exécutent dans un nouveau domaine d'application. Les transformations XSLT sont *bac à sable*; autrement dit, la stratégie de sécurité de l’accès de code de votre ordinateur est utilisée pour déterminer les autorisations limitées selon où se trouve la feuille de style XSLT. Par exemple, les feuilles de style provenant d'un emplacement Internet ont les autorisations les plus limitées, tandis que les feuilles de style copiées vers votre disque dur s'exécutent en Confiance totale.
+-   Les transformations XSLT s'exécutent dans un nouveau domaine d'application. Les transformations XSLT sont *sandbox*; autrement dit, la stratégie de sécurité des accès de code de votre ordinateur est utilisée pour déterminer les autorisations limitées selon où se trouve la feuille de style XSLT. Par exemple, les feuilles de style provenant d'un emplacement Internet ont les autorisations les plus limitées, tandis que les feuilles de style copiées vers votre disque dur s'exécutent en Confiance totale.
 
 -   La classe <xref:System.Xml.Xsl.XslCompiledTransform> permet de compiler le XSLT en un langage intermédiaire Microsoft afin d'accélérer l'exécution.
 

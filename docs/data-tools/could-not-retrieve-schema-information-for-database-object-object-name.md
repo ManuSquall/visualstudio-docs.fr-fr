@@ -5,23 +5,19 @@ ms.topic: reference
 ms.assetid: a1c8f833-c918-4a86-9679-d2a791f938a9
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c342b738269acbb4b2b089fc8e33a0fe9dc770dd
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
-ms.translationtype: MT
+ms.openlocfilehash: b688e1199fefb050c05cc69784256b156e23094d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758275"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943491"
 ---
-# <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>Pas pu récupérer les informations de schéma pour l’objet de base de données \<nom_objet >
+# <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>Impossible de récupérer les informations de schéma pour l’objet de base de données \<nom de l’objet>
 
-Ce message apparaît généralement lorsqu’un objet dans **Explorateur de serveurs** ou **Database Explorer** est copié dans le Presse-papiers, supprimé de la base de données, puis collé dans le concepteur. Parce que l'objet de base de données n'existe plus, ce message apparaît.
-
-Pour corriger cette erreur, sélectionnez **OK** pour faire disparaître la boîte de dialogue.
+Ce message apparaît généralement quand un objet dans l’**Explorateur de serveurs** ou l’**Explorateur de bases de données** est copié dans le Presse-papiers, supprimé de la base de données, puis collé dans le concepteur. Parce que l'objet de base de données n'existe plus, ce message apparaît.
 
 ## <a name="see-also"></a>Voir aussi
 

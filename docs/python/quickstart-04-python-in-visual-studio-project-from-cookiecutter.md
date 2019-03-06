@@ -1,23 +1,21 @@
 ---
 title: Démarrage rapide - Créer un projet Python à l’aide de Cookiecutter
 description: Avec ce guide de démarrage rapide, vous créez un projet Visual Studio pour Python à l’aide d’un modèle Cookiecutter.
-ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 02/25/2019
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b8ad6d53a337e6a2a0d879ff9637156fb3d6d791
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5c5a3170a2fa66a68fd010b616afcd24e8661776
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062701"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843102"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Démarrage rapide : Créer un projet à partir d’un modèle Cookiecutter
 
@@ -27,19 +25,19 @@ Une fois que vous avez [installé la prise en charge de Python dans Visual Studi
 
 1. Lancez Visual Studio.
 
-1. Sélectionnez **Fichier** > **Nouveau** > **À partir de Cookiecutter**. Cette commande ouvre une fenêtre dans Visual Studio, où vous pouvez parcourir les modèles. 
+1. Sélectionnez **Fichier** > **Nouveau** > **À partir de Cookiecutter**. Cette commande ouvre une fenêtre dans Visual Studio, où vous pouvez parcourir les modèles.
 
     ![Nouveau projet à partir d’un modèle Cookiecutter](media/projects-from-cookiecutter1.png)
 
-1. Sélectionnez le modèle **Microsoft/python-sklearn-classifier-cookiecutter**, puis sélectionnez **Suivant**. (Le processus peut prendre plusieurs minutes la première fois que vous utilisez Cookiecutter.)
+1. Sélectionnez le modèle **Microsoft/python-sklearn-classifier-cookiecutter**, puis sélectionnez **Suivant**. (Le processus peut prendre plusieurs minutes la première fois que vous utilisez un modèle particulier, car Visual Studio installe les packages Python nécessaires.)
 
-1. Dans l’étape suivante, définissez un emplacement pour le nouveau projet dans le champ **Créer dans**, puis sélectionnez **Créer**.
+1. À l’étape suivante, définissez un emplacement pour le nouveau projet dans le champ **Créer dans**, puis sélectionnez **Créer et ouvrir un projet**.
 
     ![Deuxième étape de l’utilisation de Cookiecutter : définition des propriétés du projet](media/projects-from-cookiecutter2.png)
 
-1. À la fin du processus, vous voyez s’afficher le message **Fichiers créés.** Sélectionnez la commande **Ouvrir dans l’Explorateur de solutions** pour ouvrir le projet.
+1. À la fin du processus, vous voyez s’afficher le message **Fichiers créés à l’aide du modèle**. Le projet est ouvert automatiquement dans l’Explorateur de solutions.
 
-1. Appuyez sur **Ctrl**+**F5**, ou sélectionnez **Déboguer** > **Exécuter sans débogage**, pour exécuter le programme. 
+1. Appuyez sur **Ctrl**+**F5**, ou sélectionnez **Déboguer** > **Exécuter sans débogage**, pour exécuter le programme.
 
     ![Sortie du projet de modèle python-sklearn-classifier-cookiecutter](media/projects-from-cookiecutter4.png)
 

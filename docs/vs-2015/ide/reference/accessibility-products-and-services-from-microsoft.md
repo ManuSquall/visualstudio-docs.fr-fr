@@ -1,14 +1,9 @@
 ---
 title: Services et produits d’accessibilité de Microsoft | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - TTY/TDD services
 - documentation, recorded documentation
@@ -23,13 +18,13 @@ ms.assetid: ef3c6247-9f59-4ef4-aa8b-a8922b3e0943
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 96ad41ff6cec9a03c8d57905427dbdf45b5b4ed9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d07901a14b61ccddf8d4799828c6d42bddf7f94b
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826984"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54794352"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Services et produits d’accessibilité de Microsoft
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -75,7 +70,7 @@ Microsoft s’engage à faciliter l’utilisation de ses produits et services. L
 ##  <a name="hearing"></a> Service clientèle pour les personnes atteintes de troubles de l’audition  
  Si vous êtes atteint de surdité ou de troubles de l’audition, un accès complet aux services clientèle et produits Microsoft est disponible via un service télétexte/téléscripteur (TTY/TDD) :  
   
-- Pour le service clientèle, contactez Microsoft Sales Information Center au (800) 892-5234 entre 6 h 30 et 17 h 30 Pacifique, du lundi au vendredi, hors jours fériés.  
+- Pour le service clientèle, contactez Microsoft Sales Information Center au (800) 892-5234 entre 6 h 30 et 17 h 30 Pacifique, du lundi au vendredi, hors jours fériés.  
   
 - Pour obtenir une assistance technique aux États-Unis, contactez le support technique Microsoft au (800) 892-5234 entre 6 h 00 et 18 h 00 Pacifique, du lundi au vendredi, hors jours fériés. Au Canada, composez le (905) 568-9641 entre 8 h 00 et 20 h 00 Est, du lundi au vendredi, hors jours fériés.  
   
@@ -87,9 +82,3 @@ Microsoft s’engage à faciliter l’utilisation de ses produits et services. L
 ## <a name="see-also"></a>Voir aussi  
  [Ressources pour la conception d’applications accessibles](../../ide/reference/resources-for-designing-accessible-applications.md)   
  [Fonctionnalités d’accessibilité de Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
-
-
-
-
-
-

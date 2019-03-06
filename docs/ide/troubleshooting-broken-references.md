@@ -1,8 +1,6 @@
 ---
 title: Dépanner des références rompues
 ms.date: 03/21/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: troubleshooting
 helpviewer_keywords:
 - C# projects, references
@@ -12,15 +10,15 @@ helpviewer_keywords:
 - referencing components, troubleshooting
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c1879b67558cb57fba7bc462e4c7df03fb5efc8
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 8f9095e3b8c1f80b35b2d135c122c2d7230c1f8c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32064348"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954749"
 ---
 # <a name="troubleshoot-broken-references"></a>Dépanner des références rompues
 

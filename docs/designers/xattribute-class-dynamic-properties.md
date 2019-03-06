@@ -1,21 +1,19 @@
 ---
 title: Propriétés dynamiques de la classe XAttribute
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: reference
 ms.assetid: 7394cef0-55e9-4e90-bc2e-118ed4b78fb0
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b25d6cc6a88e1e5b7bd0b839cfdca5be713c6b7e
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 7dc7a0cf5ee5f9c67fed4e9cae5da8e80688076c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077185"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933091"
 ---
 # <a name="xattribute-class-dynamic-properties"></a>Propriétés dynamiques de la classe XAttribute
 

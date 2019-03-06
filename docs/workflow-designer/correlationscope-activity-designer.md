@@ -2,22 +2,20 @@
 title: Concepteur de flux de travail - Concepteur d’activités CorrelationScope
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.ServiceModel.Activities.CorrelationScope.UI
 ms.assetid: 75f20664-9042-464d-8e2b-148d365a2286
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1da881dfb7f7a8c063b94e49198d1b299b2e47b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b7ca5955cae8d9b2cb1012e97f034d497bbc79e9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942047"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953176"
 ---
 # <a name="correlationscope-activity-designer"></a>Concepteur d'activités CorrelationScope
 

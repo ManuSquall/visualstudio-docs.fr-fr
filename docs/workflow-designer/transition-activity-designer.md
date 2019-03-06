@@ -2,22 +2,20 @@
 title: Concepteur de flux de travail - Concepteur d’activités Transition
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Transition.UI
 ms.assetid: f6e8b5cc-7fb8-4699-9703-f3c9fc7cc316
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6855cf3361b573d20e9b51590168ab94c9cd500b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ad9572004702f53cefaad05bfcaad0cd29520542
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880765"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923850"
 ---
 # <a name="transition-activity-designer"></a>Concepteur d'activités de transition
 
@@ -34,7 +32,7 @@ Le tableau suivant indique les propriétés  <xref:System.Activities.Statements.
 |Nom de la propriété|Obligatoire|Utilisation|
 |-|--------------|-|
 |<xref:System.Activities.Statements.Transition.DisplayName%2A>|False|Spécifie le nom convivial du concepteur d'activités <xref:System.Activities.Statements.Transition>. La valeur par défaut est **T1**. La valeur peut être modifiée dans la grille des propriétés, dans l’en-tête du concepteur de transition développé et dans l’en-tête de la section d’action du concepteur de transition développé. <xref:System.Activities.Activity.DisplayName%2A> est utilisé dans l'exploration à l'aide de la barre de navigation qui est affichée en haut du concepteur de workflow.<br /><br /> Bien que la propriété <xref:System.Activities.Activity.DisplayName%2A> ne soit pas strictement obligatoire, il est recommandé d'en utiliser une.|
-|<xref:System.Activities.Statements.Transition.Condition%2A>|False|S’il est présent, spécifie une expression qui doit correspondre à **True** avant que le contrôle est passé à l’état de destination. Cette condition peut être modifiée dans la grille des propriétés et dans le concepteur de transition développé. Plusieurs conditions dans une transition partagée sont évaluées dans l'ordre dans lequel elles apparaissent dans le concepteur de transition. **Remarque :** Notez que si le <xref:System.Activities.Statements.Transition.Condition%2A> d’une transition prend la valeur **False** (ou toutes les conditions d’une transition de déclencheur partagée correspondent à **False**), la transition n’a pas lieu. et tous les déclencheurs pour toutes les transitions de l’état seront replanifiées. Dans ce didacticiel, cette situation ne peut pas se produire en raison de la façon dont les conditions sont configurées (il existe des actions spécifiques lorsque l'estimation est correcte ou incorrecte).|
+|<xref:System.Activities.Statements.Transition.Condition%2A>|False|S’il est présent, spécifie une expression qui doit correspondre à **True** avant que le contrôle est passé à l’état de destination. Cette condition peut être modifiée dans la grille des propriétés et dans le concepteur de transition développé. Plusieurs conditions dans une transition partagée sont évaluées dans l'ordre dans lequel elles apparaissent dans le concepteur de transition. **Remarque :**  Notez que si le <xref:System.Activities.Statements.Transition.Condition%2A> d’une transition prend la valeur **False** (ou toutes les conditions d’une transition de déclencheur partagée correspondent à **False**), la transition se produira pas et tous les déclencheurs pour tous le transitions de l’état seront replanifiées. Dans ce didacticiel, cette situation ne peut pas se produire en raison de la façon dont les conditions sont configurées (il existe des actions spécifiques lorsque l'estimation est correcte ou incorrecte).|
 |**Source**|True|Indique l'état d'origine de la transition. Cliquez sur le nom de l'état source pour faire basculer l'affichage du concepteur vers une vue développée de cet état. Cette valeur est définie lorsque la transition est créée et ne peut pas être modifiée.|
 |<xref:System.Activities.Statements.Transition.Trigger%2A>|False|Spécifie l'activité dont l'achèvement initialise la transition. Pour définir cette activité, faites glisser une activité à partir de la **boîte à outils** et déposez-le sur le **déclencheur** section de la transition.|
 |<xref:System.Activities.Statements.Transition.Action%2A>|False|Spécifie l’activité est exécutée à l’issue de l’activité de déclencheur et le <xref:System.Activities.Statements.Transition.Condition%2A>, le cas échéant, prend la valeur **true**. Cette activité est exécutée lors de la transition vers l'état de destination, après l'exécution de l'activité <xref:System.Activities.Statements.State.Exit%2A> pour l'état source, le cas échéant. Lorsque le Concepteur de transition est développé, cette valeur peut être définie en faisant glisser une activité à partir de la **boîte à outils** et déposant sur le **Action** section de la transition. Il peut y avoir plusieurs actions pour une transition unique. Les différentes actions peuvent être développées et contractées, et peuvent être classées en cliquant sur la flèche haut ou bas qui apparaît sur l’action lorsqu’il existe plusieurs actions dans une transition.|

@@ -1,20 +1,18 @@
 ---
 title: Gérer les contrôleurs de test et les agents de test
 ms.date: 09/18/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccc3a6342857d1f228118ef7b26601f3787908e4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ca466163ed7e6bd610b5041d3731bdc2d43c6e16
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059494"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912798"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Gérer les contrôleurs de test et les agents de test
 
@@ -118,9 +116,9 @@ Les statuts possibles d’un agent de test sont les suivants :
 
 |Status|Description|
 |-|-----------------|
-|Exécution du test en cours|L'exécution des tests est en cours.|
+|Exécution du test en cours|Exécution de tests|
 |Prêt|Disponible pour l'exécution de tests et la collecte de données et de diagnostics|
-|Hors connexion|Non disponible pour l'exécution de tests et la collecte de données et de diagnostics|
+|Offline|Non disponible pour l'exécution de tests et la collecte de données et de diagnostics|
 |Déconnecté|L’agent de test n’est pas lancé|
 
 Vous pouvez modifier l'état et d'autres paramètres pour les agents de test à l'aide des procédures suivantes.

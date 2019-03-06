@@ -1,0 +1,46 @@
+items:
+- name: Didacticiels C#
+  href: index.yml
+  items:
+  - name: Vue d'ensemble
+    items:
+    - name: À propos de Visual Studio
+      href: visual-studio-ide.md
+    - name: À propos de l’éditeur de code
+      href: tutorial-editor.md
+    - name: À propos des projets et des solutions
+      href: tutorial-projects-solutions.md
+    - name: Autres fonctionnalités de Visual Studio
+      href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
+  - name: Créer une application
+    items:
+    - name: Créer votre première application C#
+      href: tutorial-console.md
+    - name: Créer une application web
+      href: tutorial-aspnet-core.md
+    - name: Créer une application UWP
+      href: tutorial-uwp.md
+    - name: Créer une application WPF
+      href: tutorial-wpf.md
+    expanded: true
+  - name: Formation à Visual Studio
+    items:
+    - name: Écrire et modifier du code
+      href: tutorial-editor.md
+    - name: Compiler et générer
+      href: ../../ide/compiling-and-building-in-visual-studio.md
+    - name: Déboguer votre code
+      href: ../csharp/tutorial-debugger.md
+    - name: Test unitaire
+      href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
+    - name: Déployer votre projet
+      href: ../../deployment/index.md
+    - name: Accéder aux données
+      href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
+    expanded: true
+ms.openlocfilehash: cc0478d8d9084d37f1c58670e2815ebfd0ee6f1c
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222699"

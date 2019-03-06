@@ -1,23 +1,21 @@
 ---
 title: Fonctionnement de l’allocation de mémoire et des informations de durée de vie des objets | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - .NET memory profiling method
 - Profiling Tools, .NET memory method
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27922f227c6791ad4b64b3258f9107d28b21a964
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 9fc9dd62c3d264d3b502845cb4d0f3e9c2a8fa78
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34476728"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615141"
 ---
 # <a name="understand-memory-allocation-and-object-lifetime-data-values"></a>Comprendre le fonctionnement de l’allocation de mémoire et des valeurs de données de durée de vie des objets
 

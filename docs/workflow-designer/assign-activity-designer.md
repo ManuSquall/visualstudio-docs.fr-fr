@@ -2,22 +2,20 @@
 title: Concepteur de flux de travail - Concepteur d’activités Assign
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Assign.UI
 ms.assetid: ba3feb3c-f144-47ea-926d-cf752b804153
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 600f38d7bcd387915ba61fc148805705e8609431
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4179c23cefbf995242288c1e778f9e0413bfe28e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905248"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913965"
 ---
 # <a name="assign-activity-designer"></a>Concepteur d'activités Assign
 

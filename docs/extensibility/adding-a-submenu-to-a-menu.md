@@ -1,9 +1,6 @@
 ---
 title: Ajout d’un sous-menu à un Menu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - context menus
@@ -13,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 692600cb-d052-40e2-bdae-4354ae7c6c84
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ec436383aa745ed033858724b4d4b2ff8b929c6
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: a356f6a26cfbaad9d81f8a0cb37164660e39f0a8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863918"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004459"
 ---
 # <a name="add-a-submenu-to-a-menu"></a>Ajouter un sous-menu à un Menu
 Cette procédure pas à pas s’appuie sur la démonstration dans [ajouter un Menu dans la barre de menus de Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) en montrant comment ajouter un sous-menu à la **TestMenu** menu.
@@ -156,4 +153,6 @@ Cette procédure pas à pas s’appuie sur la démonstration dans [ajouter un Me
 5.  Sur le **TestMenu** menu, cliquez sur **sous-menu** puis cliquez sur **Test sous-commande**. Une boîte de message doit apparaître et afficher le texte, « Commande de Test à l’intérieur de TestCommand.SubItemCallback() ».
 
 ## <a name="see-also"></a>Voir aussi
- [Ajouter un menu dans la barre de menus de Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) [commandes, menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md)
+
+- [Ajouter un menu dans la barre de menus de Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)
+- [Commandes, menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md)

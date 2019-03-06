@@ -5,25 +5,22 @@ description: Utiliser les ID de composant et de charge de travail Visual Studio 
 keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.date: 11/13/2018
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
-ms.service: ''
-ms.technology: vs-acquisition
-ms.prod: visual-studio-dev15
 ms.assetid: fbbda9c8-d2c6-474d-b52d-a95227d52fe7
 ms.workload:
 - multiple
-ms.openlocfilehash: 48d95724c64d1335067139a8e036febdef137d52
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0af631c4422a4e139cc799a8f4489e0d71e1e7b5
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048445"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840547"
 ---
 # <a name="visual-studio-test-controller-2017-component-directory"></a>Répertoire des composants Visual Studio Test Controller 2017
 

@@ -1,8 +1,6 @@
 ---
 title: Création de modèles d’élément multifichier
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
@@ -10,13 +8,13 @@ helpviewer_keywords:
 - item templates, creating multi-file item templates
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: dd2cbe6d7a0ff586c0e673a6eb0e3d42aa4dec4e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 1871b7270c462ea599450e48f0a86a4887ebc5ac
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065407"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970515"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Procédure : Créer des modèles d’élément multifichier
 

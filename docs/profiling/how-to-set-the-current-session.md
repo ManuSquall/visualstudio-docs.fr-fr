@@ -1,8 +1,6 @@
 ---
-title: Guide pratique pour définir la session active | Microsoft Docs
-ms.custom: ''
+title: 'Procédure : Définir la session active | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - current performance sessions
@@ -14,17 +12,17 @@ helpviewer_keywords:
 - sessions, setting multiple
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f06a45dbdf88fad071afcbb96373930501c6ccb
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: ad917a67ab03a4cb6c1e265ec2dafcbe6e2ee421
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844597"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56601657"
 ---
-# <a name="how-to-set-the-current-session"></a>Guide pratique pour définir la session active
+# <a name="how-to-set-the-current-session"></a>Procédure : Définir la session active
 
 Vous pouvez ouvrir plusieurs sessions de performance dans l’**Explorateur de performances**, puis sélectionner l’une des sessions de performance visibles à définir comme session active.
 
@@ -38,7 +36,7 @@ Après avoir défini une session comme session active, cliquez sur le bouton **L
 
 ## <a name="see-also"></a>Voir aussi
 
-[Configurer des sessions de performances](../profiling/configuring-performance-sessions.md)  
-[Explorateur de performances, fenêtre](../profiling/performance-explorer-window.md)  
-[Propriétés d’une session de performance](../profiling/performance-session-properties.md)  
+[Configurer des sessions de performances](../profiling/configuring-performance-sessions.md)
+[Fenêtre Explorateur de performances](../profiling/performance-explorer-window.md)
+[Propriétés d’une session de performance](../profiling/performance-session-properties.md)
 [Vue d’ensemble de la session de performance](../profiling/performance-session-overview.md)

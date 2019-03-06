@@ -1,8 +1,6 @@
 ---
 title: Profilage et sécurité de Windows Vista | Microsoft Docs
-ms.custom: ''
 ms.date: 11/02/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,security
@@ -10,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 842112fc-b886-4801-8cd7-a25b314b0393
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 767210a934753dd85b22728813d7608618a2b8d3
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 091961f3425714c0dc5ddabfac847c76339ab064
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220650"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55025564"
 ---
 # <a name="profiling-and-windows-vista-security"></a>Profilage et sécurité Windows Vista
 

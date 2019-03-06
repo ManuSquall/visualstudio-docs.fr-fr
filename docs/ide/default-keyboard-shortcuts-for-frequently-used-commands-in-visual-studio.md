@@ -1,20 +1,18 @@
 ---
 title: Raccourcis clavier par défaut pour les commandes fréquemment utilisées
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8a2b269f64bff048f1407db289a9ac4252b8f31
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e96f9f56c2b73b8f3c39635c81019cd01fa8a69a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056475"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956296"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Raccourcis clavier par défaut pour les commandes fréquemment utilisées dans Visual Studio
 
@@ -126,7 +124,7 @@ Vous pouvez accéder à des commandes fréquemment utilisées dans Visual Studio
 |Project.AddExistingItem|**Maj+Alt+A** [Global]|
 |Project.AddNewItem|**Ctrl+Maj+A** [Global]|
 
-## <a name="refactor"></a>Réorganiser
+## <a name="refactor"></a>Refactorisation
 
 |Commande|Raccourci clavier [Contexte]|
 |-------------| - |

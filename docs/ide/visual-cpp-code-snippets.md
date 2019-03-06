@@ -1,22 +1,20 @@
 ---
 title: Extraits de code Visual C++
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f119f3b2bc438eacfaaa722bd57fb440aa303052
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: de27b201dadb23bb8209ebee24b34386f8fa5127
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948926"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929542"
 ---
 # <a name="visual-c-code-snippets"></a>Extraits de code Visual C++
 
@@ -32,7 +30,7 @@ Pour insérer un extrait de code, ouvrez un fichier de code C++ (*.cpp* ou *.h*)
 
 - Dans le menu **Edition / IntelliSense**, sélectionnez **Insérer un extrait**
 
-- Utilisez les touches d’accès rapide **Ctrl**+**K**+**X**
+- Utilisez les touches de raccourci : **Ctrl**+**K**+**X**
 
 Vous devez voir une liste de choix commençant par **#if**. Quand vous sélectionnez **#if**, vous devez voir le code suivant ajouté au fichier :
 
@@ -52,7 +50,7 @@ Pour utiliser un extrait de code pour entourer du code sélectionné, sélection
 
 - Dans le menu **Edition** > **IntelliSense**, sélectionnez **Entourer de**.
 
-- Si vous préférez utiliser le clavier, appuyez sur **Ctrl**+**K**+**S**.
+- Si vous préférez utiliser le clavier, appuyez sur : **Ctrl**+**K**+**S**
 
 Sélectionnez **#if**. Vous devez voir quelque chose de similaire à :
 

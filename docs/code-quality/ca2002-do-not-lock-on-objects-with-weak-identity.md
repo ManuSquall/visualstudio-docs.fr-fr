@@ -1,8 +1,6 @@
 ---
 title: 'CA2002 : Ne définissez pas un verrou sur des objets à identité faible'
 ms.date: 01/31/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - DoNotLockOnObjectsWithWeakIdentity
@@ -12,18 +10,18 @@ helpviewer_keywords:
 - DoNotLockOnObjectsWithWeakIdentity
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ddeb32032f7fbd6ff088980c342405261e5b473
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 054f809483cf2a9c4647370e2f69187795c5c203
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548463"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916581"
 ---
 # <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002 : Ne définissez pas un verrou sur des objets à identité faible
 

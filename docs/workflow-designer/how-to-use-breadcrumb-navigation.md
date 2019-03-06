@@ -1,23 +1,21 @@
 ---
-title: 'Concepteur de flux de travail - Comment : utiliser l’arborescence de Navigation'
+title: 'Concepteur de flux de travail - Comment : Utiliser l’exploration à l’aide de la barre de navigation'
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: 4a688056-37dc-406a-9071-be2141e192fe
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59d1012a3a291c2f49cf5fd5e447ce46909c0cdd
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: b9b4856188cb08379649ab7611dceb5b26b55149
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512276"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950472"
 ---
-# <a name="how-to-use-breadcrumb-navigation"></a>Procédure : utiliser l'exploration à l'aide de la barre de navigation
+# <a name="how-to-use-breadcrumb-navigation"></a>Procédure : Utiliser l’exploration à l’aide de la barre de navigation
 
 Il existe trois méthodes principales pour modifier l’ensemble des activités qui sont affichés dans le Concepteur de flux de travail :
 

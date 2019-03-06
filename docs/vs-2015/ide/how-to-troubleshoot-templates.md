@@ -1,27 +1,22 @@
 ---
-title: Guide pratique pour résoudre les problèmes des modèles | Microsoft Docs
-ms.custom: ''
+title: 'Procédure : Dépanner des modèles | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: troubleshooting
 helpviewer_keywords:
 - Visual Studio templates, troubleshooting
 ms.assetid: 3e577ad2-f725-4c11-93b3-477f2404ec81
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a68097745de1f1d94e5c09963a474a0095588fba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: eb2c708bfb6bfafe90b548ad2826e0cf11882a3b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296424"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793204"
 ---
 # <a name="how-to-troubleshoot-templates"></a>Comment : dépanner des modèles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ Si le chargement d’un modèle dans l’environnement de développement échoue
 5.  Vérifiez que le code XML du fichier .vstemplate adhère au schéma de modèle [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Pour plus d’informations sur le schéma .vstemplate, consultez [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md).  
   
     > [!NOTE]
-    >  Pour obtenir la prise en charge IntelliSense lorsque vous créez le fichier .vstemplate, ajoutez un `xmlns` attribut le `VSTemplate` élément et lui attribuer une valeur de http://schemas.microsoft.com/developer/vstemplate/2005.  
+    >  Pour obtenir une prise en charge d’IntelliSense quand vous créez le fichier .vstemplate, ajoutez un attribut `xmlns` à l’élément `VSTemplate`, puis affectez-lui la valeur http://schemas.microsoft.com/developer/vstemplate/2005.  
   
 6.  Enregistrez et fermez le fichier .vstemplate.   
   
@@ -71,6 +66,3 @@ Si le chargement d’un modèle dans l’environnement de développement échoue
  [Personnalisation des modèles](../ide/customizing-project-and-item-templates.md)   
  [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)   
  [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-
-
-

@@ -1,52 +1,54 @@
 ---
-title: Méthodes anonymes et analyse du code
+title: Avertissements d’analyse de code de méthode anonyme
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - methods, anonymous
 - code analysis, anonymous methods
 - anonymous methods, code analysis
 ms.assetid: bf0a1a9b-b954-4d46-9c0b-cee65330ad00
+dev_langs:
+- CSharp
+- VB
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e069976badeffbce04b2f245277426441d3df2f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a10c5baaed3a98e44d581b6ddb8d6e3a1883d079
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31892701"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940488"
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>Méthodes anonymes et analyse du code
-Un *méthode anonyme* est une méthode qui n’a aucun nom. Méthodes anonymes sont fréquemment utilisés pour passer un bloc de code comme un paramètre de délégué.
 
- Cette rubrique explique comment l’analyse du Code gère les avertissements et les mesures qui sont associés aux méthodes anonymes.
+Un *méthode anonyme* est une méthode qui n’a aucun nom. Méthodes anonymes sont fréquemment utilisés pour passer un bloc de code comme un paramètre de délégué. Cet article explique comment l’analyse du code gère les avertissements et les métriques pour les méthodes anonymes.
 
 ## <a name="anonymous-methods-declared-in-a-member"></a>Méthodes anonymes déclarées dans un membre
- Avertissements et la métrique d’une méthode anonyme qui est déclarée dans un membre, tel qu’une méthode ou un accesseur, est associés au membre qui déclare la méthode. Ils ne sont pas associées au membre qui appelle la méthode.
 
- Par exemple, dans la classe suivante, les avertissements qui se trouvent dans la déclaration de **anonymousMethod** doit être déclenché sur **Method1** et non **méthode2**.
+Avertissements et les métriques pour une méthode anonyme qui est déclarée dans un membre, tel qu’une méthode ou un accesseur, sont associés au membre qui déclare la méthode. Ils ne sont pas associés au membre qui appelle la méthode.
+
+Par exemple, dans la classe suivante, les avertissements qui se trouvent dans la déclaration de **anonymousMethod** doit être déclenché sur **Method1** et non **Method2**.
 
 ```vb
+Delegate Function ADelegate(ByVal value As Integer) As Boolean
 
-      Delegate Function ADelegate(ByVal value As Integer) As Boolean
 Class AClass
-
     Sub Method1()
         Dim anonymousMethod As ADelegate = Function(ByVal value As Integer) value > 5
         Method2(anonymousMethod)
-    End SubSub Method2(ByVal anonymousMethod As ADelegate)
+    End Sub
+    Sub Method2(ByVal anonymousMethod As ADelegate)
         anonymousMethod(10)
-    End SubEnd Class
+    End Sub
+End Class
 ```
 
 ```csharp
+delegate void Delegate();
 
-      delegate void Delegate();
 class Class
 {
     void Method1()
@@ -66,25 +68,27 @@ class Class
 ```
 
 ## <a name="inline-anonymous-methods"></a>Méthodes anonymes inline
- Avertissements et la métrique d’une méthode anonyme qui est déclarée comme une assignation inline à un champ est associés au constructeur. Si le champ est déclaré en tant que `static` (`Shared` dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]), les avertissements et les métriques sont associés au constructeur de classe ; sinon, ils sont associés au constructeur d’instance.
 
- Par exemple, dans la classe suivante, les avertissements qui se trouvent dans la déclaration de **anonymousMethod1** sera déclenché concernant le constructeur par défaut généré implicitement **classe**. Tandis que ceux trouvés dans **anonymousMethod2** seront appliqués au constructeur de classe généré implicitement.
+Avertissements et les métriques pour une méthode anonyme qui est déclarée comme une assignation inline à un champ sont associés au constructeur. Si le champ est déclaré en tant que `static` (`Shared` en Visual Basic), les avertissements et les métriques sont associés au constructeur de classe. Sinon, elles sont associées avec le constructeur d’instance.
+
+Par exemple, dans la classe suivante, les avertissements qui se trouvent dans la déclaration de **anonymousMethod1** sera déclenché concernant le constructeur par défaut généré implicitement de **classe**. Les avertissements qui sont trouvent dans **anonymousMethod2** seront appliqués au constructeur de classe généré implicitement.
 
 ```vb
+Delegate Function ADelegate(ByVal value As Integer) As Boolean
+Class AClass
+    Dim anonymousMethod1 As ADelegate = Function(ByVal value As Integer) value > 5
+    Shared anonymousMethod2 As ADelegate = Function(ByVal value As Integer) value > 5
 
-  Delegate Function ADelegate(ByVal value As Integer) As BooleanClass AClass
-Dim anonymousMethod1 As ADelegate = Function(ByVal value As    Integer) value > 5
-Shared anonymousMethod2 As ADelegate = Function(ByVal value As     Integer) value > 5
-
-Sub Method1()
-    anonymousMethod1(10)
-    anonymousMethod2(10)
-End SubEnd Class
+    Sub Method1()
+        anonymousMethod1(10)
+        anonymousMethod2(10)
+    End Sub
+End Class
 ```
 
 ```csharp
+delegate void Delegate();
 
-      delegate void Delegate();
 class Class
 {
     Delegate anonymousMethod1 = delegate()
@@ -105,27 +109,32 @@ class Class
 }
 ```
 
- Une classe peut contenir une méthode anonyme inline qui assigne une valeur à un champ qui possède plusieurs constructeurs. Dans ce cas, les avertissements et la métrique est associés à tous les constructeurs, sauf si ce constructeur est lié à un autre constructeur de la même classe.
+Une classe peut contenir une méthode anonyme inline qui assigne une valeur à un champ qui possède plusieurs constructeurs. Dans ce cas, les avertissements et les métriques sont associés à tous les constructeurs, sauf si ce constructeur est lié à un autre constructeur dans la même classe.
 
- Par exemple, dans la classe suivante, les avertissements qui se trouvent dans la déclaration de **anonymousMethod** doit être déclenché sur **Class (int)** et **Class (String)** mais pas contre **Class()**.
+Par exemple, dans la classe suivante, les avertissements qui se trouvent dans la déclaration de **anonymousMethod** doit être déclenché sur **Class (int)** et **Class (String)**, mais pas contre **Class()**.
 
 ```vb
+Delegate Function ADelegate(ByVal value As Integer) As Boolean
 
-  Delegate Function ADelegate(ByVal value As Integer) As BooleanClass AClass
+Class AClass
 
-Dim anonymousMethod As ADelegate = Function(ByVal value As Integer)
-value > 5
+    Dim anonymousMethod As ADelegate = Function(ByVal value As Integer) value > 5
 
-SubNew()
-    New(CStr(Nothing))
-End SubSub New(ByVal a As Integer)
-End SubSub New(ByVal a As String)
-End SubEnd Class
+    SubNew()
+        New(CStr(Nothing))
+    End Sub
+
+    Sub New(ByVal a As Integer)
+    End Sub
+
+    Sub New(ByVal a As String)
+    End Sub
+End Class
 ```
 
 ```csharp
+delegate void Delegate();
 
-      delegate void Delegate();
 class Class
 {
     Delegate anonymousMethod = delegate()
@@ -147,9 +156,13 @@ class Class
 }
 ```
 
- Bien que cela peut paraître inattendu, cela se produit, car le compilateur génère une méthode unique pour chaque constructeur qui ne s’enchaîne pas à un autre constructeur. En raison de ce comportement, toute violation qui se produit dans **anonymousMethod** doit être supprimée séparément. Cela signifie également que si un nouveau constructeur est introduit, les avertissements qui ont été précédemment supprimés sur **Class (int)** et **Class (String)** doit également être supprimée sur le nouveau constructeur.
+Les avertissements sont déclenchés sur les constructeurs, car le compilateur génère une méthode unique pour chaque constructeur qui n’est pas lié à un autre constructeur. Étant donné ce comportement, toute violation qui se produit dans **anonymousMethod** doit être supprimée séparément. Cela signifie également que si un nouveau constructeur est introduit, les avertissements qui ont été précédemment supprimés sur **Class (int)** et **Class (String)** doit également être supprimée sur le nouveau constructeur.
 
- Vous pouvez contourner ce problème dans un des deux façons. Vous pouvez déclarer **anonymousMethod** dans un constructeur commun qui chaîne de tous les constructeurs. Ou vous pouvez la déclarer dans une méthode d’initialisation qui est appelée par tous les constructeurs.
+Vous pouvez contourner ce problème de deux manières :
+
+- Déclarer **anonymousMethod** dans un constructeur commun qui chaîne de tous les constructeurs.
+- Déclarer **anonymousMethod** dans une méthode d’initialisation qui est appelée par tous les constructeurs.
 
 ## <a name="see-also"></a>Voir aussi
- [Analyse de la qualité d’un code managé](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)
+
+- [Analyse de la qualité d’un code managé](../code-quality/code-analysis-for-managed-code-overview.md)

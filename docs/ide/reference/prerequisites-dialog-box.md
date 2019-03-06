@@ -1,8 +1,6 @@
 ---
 title: Composants requis, boîte de dialogue
 ms.date: 06/29/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - Microsoft.VisualStudio.Publish.BaseProvider.Dialog.Bootstrapper
@@ -10,15 +8,15 @@ helpviewer_keywords:
 - Prerequisites dialog box
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5faf8e34a9aca77cd6762b5409919fac0978caf7
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: b83a3851c74d97992fa75e9ce533ca707e2115c9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176926"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925993"
 ---
 # <a name="prerequisites-dialog-box"></a>Composants requis, boîte de dialogue
 

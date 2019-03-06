@@ -1,8 +1,6 @@
 ---
 title: 'CA1811 : Évitez le recours à du code privé non appelé'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - AvoidUncalledPrivateCode
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: aadbba74-7821-475f-8980-34d17c0a0a8b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b8c71c7dc549c980be8ae7a2241629774f32150
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9d4a194229ccbe6720f4c8097422691974ab64b7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822968"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55941242"
 ---
 # <a name="ca1811-avoid-uncalled-private-code"></a>CA1811 : Évitez le recours à du code privé non appelé
 
@@ -57,6 +55,6 @@ ms.locfileid: "49822968"
 ## <a name="related-rules"></a>Règles associées
  [CA1812 : Évitez les classes internes non instanciées](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1801 : Passez en revue les paramètres inutilisés](../code-quality/ca1801-review-unused-parameters.md)
+ [CA1801 : Passez en revue les paramètres inutilisés](../code-quality/ca1801-review-unused-parameters.md)
 
  [CA1804 : Supprimez les variables locales inutilisées](../code-quality/ca1804-remove-unused-locals.md)

@@ -1,8 +1,6 @@
 ---
 title: 'CA2115 : Appelez GC.KeepAlive lorsque vous utilisez des ressources natives'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CallGCKeepAliveWhenUsingNativeResources
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f00a59a7-2c6a-4bbe-a1b3-7bf77d366f34
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 21777b19e488e60e68c11ccceaad779dcf4e94a3
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 9a74f6313f90a31d43cf39443b1c44d78f0628f8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546991"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55930985"
 ---
 # <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115 : Appelez GC.KeepAlive lorsque vous utilisez des ressources natives
 
@@ -38,7 +36,7 @@ Une méthode déclarée dans un type avec un finaliseur fait référence à un <
 
 ## <a name="rule-description"></a>Description de la règle
 
-Le garbage collection finalise un objet s’il en existe aucune référence plus à celle-ci dans le code managé. Des références non managées à des objets n’empêchent pas le garbage collection. Cette règle détecte les erreurs susceptibles de se produire du fait qu'une ressource non managée est en cours de finalisation alors qu'elle est encore utilisée dans un code non managé.
+Le garbage collection finalise un objet s’il en existe aucune référence plus à celle-ci dans le code managé. Des références non managées à des objets n’empêchent pas le garbage collection. Cette règle détecte les erreurs susceptibles de se produire du fait qu’une ressource non managée est en cours de finalisation alors qu’elle est encore utilisée dans un code non managé.
 
 Cette règle suppose que <xref:System.IntPtr> et <xref:System.UIntPtr> champs stockent les pointeurs vers les ressources non managées. L’objectif d’un finaliseur étant pour libérer les ressources non managées, la règle suppose que le finaliseur permettra de libérer la ressource non managée vers laquelle pointée les champs de pointeur. Cette règle suppose également que la méthode référence le champ de pointeur pour passer la ressource non managée au code non managé.
 

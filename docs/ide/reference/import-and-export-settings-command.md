@@ -1,8 +1,6 @@
 ---
 title: Importation et exportation de paramètres (commande)
 ms.date: 11/21/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - Tools.ImportandExportSettings
@@ -12,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 94a06468-a44d-403d-a931-77bbc9d06e56
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f212e5c5becb8cf2ae575510825a9c7c9034222
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: b9be5826edf0d7220d30ce5c4a99f333c2ab8b67
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388700"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947222"
 ---
 # <a name="import-and-export-settings-command"></a>Importation et exportation de paramètres (commande)
 
@@ -36,15 +34,15 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 
 /export:`filename`
 
-Facultative. Exporte les paramètres actuels dans le fichier spécifié.
+Optionnel. Exporte les paramètres actuels dans le fichier spécifié.
 
 /import:`filename`
 
-Facultative. Importe les paramètres figurant dans le fichier spécifié.
+Optionnel. Importe les paramètres figurant dans le fichier spécifié.
 
 /reset
 
-Facultative. Réinitialise les paramètres actuels.
+Optionnel. Réinitialise les paramètres actuels.
 
 ## <a name="remarks"></a>Notes
 

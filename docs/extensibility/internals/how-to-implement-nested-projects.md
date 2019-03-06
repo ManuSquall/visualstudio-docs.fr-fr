@@ -1,9 +1,6 @@
 ---
-title: 'Comment : implémenter des projets imbriqués | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Implémenter des projets imbriqués | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, implementing
@@ -11,17 +8,17 @@ helpviewer_keywords:
 ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bee3b5bebb8067ecc4bd1115f46d4b668b114c50
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: deb28fcce5f27b7a392b570c140bb959b30b596c
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512898"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335244"
 ---
-# <a name="how-to-implement-nested-projects"></a>Comment : implémenter des projets imbriqués
+# <a name="how-to-implement-nested-projects"></a>Procédure : Implémenter des projets imbriqués
 
 Lorsque vous créez un type de projet imbriqué, il existe plusieurs étapes supplémentaires qui doivent être implémentées. Un projet parent prend en charge certaines responsabilités de mêmes que la solution dispose de ses projets imbriqués (enfants). Le projet parent est un conteneur de projets similaires à une solution. En particulier, il existe plusieurs événements qui doivent être déclenchés par la solution et par les projets parent pour générer la hiérarchie de projets imbriqués. Ces événements sont décrits dans le processus suivant pour la création de projets imbriqués.
 
@@ -68,7 +65,7 @@ Lorsque vous créez un type de projet imbriqué, il existe plusieurs étapes sup
      Étant donné que les projets parents et enfants sont instanciés par programmation, vous pouvez définir des propriétés pour les projets imbriqués à ce stade.
 
     > [!NOTE]
-    > Non seulement vous recevez les informations de contexte à partir du projet imbriqué, mais vous pouvez également demander si le projet parent a n’importe quel contexte de cet élément en vérifiant <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. De cette façon, vous pouvez ajouter des attributs d’aide très dynamique et options de menu spécifiques à des projets imbriqués individuels.
+    > Non seulement vous recevez les informations de contexte à partir du projet imbriqué, mais vous pouvez également demander si le projet parent a n’importe quel contexte de cet élément en vérifiant [__VSHPROPID. VSHPROPID_UserContext](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_UserContext>). De cette façon, vous pouvez ajouter des attributs d’aide très dynamique et options de menu spécifiques à des projets imbriqués individuels.
 
 10. La hiérarchie est générée pour l’affichage dans **l’Explorateur de solutions** avec un appel à la <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> (méthode).
 

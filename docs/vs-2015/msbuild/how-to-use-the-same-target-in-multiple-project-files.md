@@ -1,14 +1,9 @@
 ---
 title: Guide pratique pour utiliser la même cible dans plusieurs fichiers projet | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, importing
 - MSBuild, using the same target in multiple project files
@@ -16,13 +11,13 @@ ms.assetid: 163734bd-1bfd-4093-a730-7741fc21742d
 caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7b886c4865d715c4fee4e9385288f2e4eb15baa5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9e0f787426846137038adf16b9373012f3deeb25
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223338"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54769331"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Guide pratique pour utiliser la même cible dans plusieurs fichiers projet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ Si vous avez créé plusieurs fichiers projet [!INCLUDE[vstecmsbuild](../include
   
 1.  Dans le fichier projet importateur, définissez toutes les propriétés et les éléments qui sont utilisés comme paramètres des propriétés et des éléments dans le projet importé.  
   
-2.  Utilisez l’élément `Import` pour importer le projet. Exemple :  
+2.  Utilisez l’élément `Import` pour importer le projet. Par exemple :  
   
      `<Import Project="MyCommon.targets"/>`  
   
@@ -123,6 +118,3 @@ Si vous avez créé plusieurs fichiers projet [!INCLUDE[vstecmsbuild](../include
 ## <a name="see-also"></a>Voir aussi  
  [Import, élément (MSBuild)](../msbuild/import-element-msbuild.md)   
  [Cibles](../msbuild/msbuild-targets.md)
-
-
-

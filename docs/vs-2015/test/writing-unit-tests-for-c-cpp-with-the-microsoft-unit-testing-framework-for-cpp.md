@@ -1,24 +1,19 @@
 ---
 title: Écriture de tests unitaires pour C-C++ à l’aide du framework de tests unitaires Microsoft pour C++ | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 180f970f35ed0bb3de70ba3a7b7b47dbe656ddf7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a6600621c195994bf5becec9cae4f77340008516
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904038"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760025"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Écriture de tests unitaires pour C/C++ à l’aide du framework de tests unitaires Microsoft pour C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,7 +82,7 @@ Dans Visual Studio, vous pouvez créer des tests unitaires pour le code non mana
   
         3.  Dans le menu contextuel d'un test, choisissez **Déboguer le test sélectionné** pour exécuter le test dans le débogueur.  
   
-##  <a name="walkthrough"></a>Procédure pas à pas : Développement d’une DLL non managée avec l’Explorateur de tests  
+##  <a name="walkthrough"></a> Procédure pas à pas : Développement d’une DLL non managée avec l’Explorateur de tests  
  Vous pouvez adapter cette procédure pas à pas pour développer votre propre DLL. Les étapes principales sont les suivantes :  
   
 1.  [Créer un projet de test natif](#unitTestProject). Les tests sont créés dans un projet distinct de la DLL que vous développez.  
@@ -404,6 +399,3 @@ Dans Visual Studio, vous pouvez créer des tests unitaires pour le code non mana
  [Débogage du code natif](../debugger/debugging-native-code.md)   
  [Procédure pas à pas : création et utilisation d’une bibliothèque de liens dynamiques (C++)](http://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941)   
  [Importation et exportation](http://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)
-
-
-

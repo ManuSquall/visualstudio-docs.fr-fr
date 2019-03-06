@@ -1,22 +1,20 @@
 ---
 title: Notions de base des tests unitaires
-ms.date: 2016-01-07
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
+ms.date: 01/07/2016
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dff6910f74b9a08a8064e4fb88828a21940c8ab9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: bc001765beb01c7767ec9143cecf8462793dcaa8
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053167"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796827"
 ---
 # <a name="unit-test-basics"></a>Concepts de base des tests unitaires
 
@@ -26,13 +24,13 @@ Les tests unitaires ont le plus d’effet sur la qualité du code quand ils font
 
 Vous pouvez générer rapidement des projets de test et méthodes de test à partir de votre code, ou créer manuellement les tests quand vous le souhaitez. Quand vous utilisez IntelliTest pour explorer votre code .NET, vous pouvez générer des données de test et une suite de tests unitaires. Pour chaque instruction dans le code, une entrée de test est générée pour exécuter cette instruction. Découvrez comment [générer des tests unitaires pour votre code](generate-unit-tests-for-your-code-with-intellitest.md).
 
-L’explorateur de tests peut également exécuter des infrastructures de tests unitaires tierces et open source ayant implémenté les interfaces des composants additionnels de l’explorateur de tests. Vous pouvez ajouter la plupart de ces frameworks dans le gestionnaire d’extensions de Visual Studio et la galerie Visual Studio. Consultez [Installer des frameworks de tests unitaires tiers](../test/install-third-party-unit-test-frameworks.md).
+L’explorateur de tests peut également exécuter des infrastructures de tests unitaires tierces et open source ayant implémenté les interfaces des composants additionnels de l’explorateur de tests. Vous pouvez ajouter la plupart de ces frameworks dans le gestionnaire d’extensions de Visual Studio et la galerie Visual Studio. Pour plus d’informations, consultez [Installer des frameworks de tests unitaires de tiers](../test/install-third-party-unit-test-frameworks.md).
 
 ## <a name="get-started"></a>Prise en main
 
 Pour obtenir une introduction aux tests unitaires qui vous conduit directement dans le code, consultez l’une des rubriques suivantes :
 
-- [Procédure pas à pas : créer et exécuter des tests unitaires pour du code managé](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+- [Procédure pas à pas : créer et exécuter des tests unitaires pour du code managé](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 
 - [Démarrage rapide : développement piloté par les tests avec l’Explorateur de tests](../test/quick-start-test-driven-development-with-test-explorer.md)
 
@@ -127,7 +125,7 @@ Chaque projet de test unitaire contient les classes qui reflètent les noms des 
 
 -   la classe `AccountInfoTests` contient les méthodes de test unitaire pour la classe `AccountInfo` du projet `Accounts` ;
 
--   la classe `CheckingAccountTests` contient les méthodes de test unitaire pour la classe `CheckingAccount`.
+-   la classe`CheckingAccountTests` contient les méthodes de test unitaire pour la classe `CheckingAccount` .
 
 ## <a name="write-your-tests"></a>Écrire vos tests
 
@@ -193,7 +191,7 @@ public void My_Test()
 }
 ```
 
-Pour affecter au délai d’attente la valeur maximale autorisée :
+Pour affecter au délai d’attente la valeur maximale autorisée :
 
 ```csharp
 [TestMethod]
@@ -219,7 +217,7 @@ La barre d’outils de **l’explorateur de tests** vous permet de découvrir, d
 
 ![Exécuter des tests à partir de la barre d'outils de l'explorateur de tests](../test/media/ute_toolbar.png)
 
-Vous pouvez choisir **Exécuter tout** pour exécuter tous vos tests ou **Exécuter** pour sélectionner un sous-ensemble de tests à exécuter. Après que vous avez exécuté un ensemble de tests, un résumé de la série de tests s’affiche en bas de la fenêtre **Explorateur de tests**. Sélectionnez un test pour en afficher les détails dans le volet inférieur. Choisissez **Ouvrir un test** dans le menu contextuel (clavier : **F12**) pour afficher le code source du test sélectionné.
+Vous pouvez choisir **Exécuter tout** pour exécuter tous vos tests ou **Exécuter** pour sélectionner un sous-ensemble de tests à exécuter. Après que vous avez exécuté un ensemble de tests, un résumé de la série de tests s’affiche en bas de la fenêtre **Explorateur de tests**. Sélectionnez un test pour en afficher les détails dans le volet inférieur. Choisissez **Ouvrir le test** dans le menu contextuel (clic droit) (clavier : **F12**) pour afficher le code source du test sélectionné.
 
 Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests avec le bouton bascule ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) dans la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.
 
@@ -257,7 +255,7 @@ Pour plus d’informations, consultez [Exécuter des tests unitaires avec l’Ex
 
 2.  Dans **l’explorateur de tests**, sélectionnez les méthodes de test, puis choisissez **Déboguer les tests sélectionnés** dans le menu contextuel.
 
-En savoir plus sur le [débogage des tests unitaires](../debugger/debugging-in-visual-studio.md).
+En savoir plus sur le [débogage des tests unitaires](../debugger/debugger-feature-tour.md).
 
 **Q : Si j’utilise le TDD (développement piloté par les tests), comment générer du code à partir de mes tests ?**
 

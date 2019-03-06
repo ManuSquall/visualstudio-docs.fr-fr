@@ -9,15 +9,13 @@ helpviewer_keywords:
 ms.assetid: 8a4ba300-425d-447c-91d9-c53f4345feee
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 719163e53b1f8c68850b3f4f211838631a25274a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: de44dde72e339a2afe4caff779e3468ae2b8601e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055606"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942893"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>Analyse des résultats des tests de charge à l’aide de l’analyseur de test de charge
 

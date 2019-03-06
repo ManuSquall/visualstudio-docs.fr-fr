@@ -1,8 +1,6 @@
 ---
 title: Afficher la pile des appels, commande
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.listcallstack
@@ -12,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: a8b20bf2-81d2-4069-aea8-23e6b15b4347
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e809af75f0a4a47da6af30a3d93748401ca4609d
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 55272f5d30602d03d0f3bb7e2ac16e9a709cafdf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512003"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912402"
 ---
 # <a name="list-call-stack-command"></a>Afficher la pile des appels, commande
 Affiche la pile des appels actuelle.
@@ -43,47 +41,47 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
 
  /Count:`number` [ou] /C:`number`
 
- Facultative. Nombre maximal des piles d’appels à afficher. Par défaut, ce nombre est illimité.
+ Optionnel. Nombre maximal des piles d’appels à afficher. Par défaut, ce nombre est illimité.
 
  /ShowTypes:`yes`&#124;`no` [ou] /T:`yes`&#124;`no`
 
- Facultative. Spécifie si les types de paramètre doivent être affichés. La valeur par défaut est `yes`.
+ Optionnel. Spécifie si les types de paramètre doivent être affichés. La valeur par défaut est `yes`.
 
  /ShowNames:`yes`&#124;`no` [ou] /N:`yes`&#124;`no`
 
- Facultative. Spécifie si les noms de paramètres doivent être affichés. La valeur par défaut est `yes`.
+ Optionnel. Spécifie si les noms de paramètres doivent être affichés. La valeur par défaut est `yes`.
 
  /ShowValues:`yes`&#124;`no` [ou] /V:`yes`&#124;`no`
 
- Facultative. Spécifie si les valeurs de paramètre doivent être affichées. La valeur par défaut est `yes`.
+ Optionnel. Spécifie si les valeurs de paramètre doivent être affichées. La valeur par défaut est `yes`.
 
  /ShowModule:`yes`&#124;`no` [ou] /M:`yes`&#124;`no`
 
- Facultative. Spécifie si le nom du module doit être affiché. La valeur par défaut est `yes`.
+ Optionnel. Spécifie si le nom du module doit être affiché. La valeur par défaut est `yes`.
 
  /ShowLineOffset:`yes`&#124;`no` [ou] /#:`yes`&#124;`no`
 
- Facultative. Spécifie si l’offset de ligne doit être affiché. La valeur par défaut est `no`.
+ Optionnel. Spécifie si l’offset de ligne doit être affiché. La valeur par défaut est `no`.
 
  /ShowByteOffset:`yes`&#124;`no` [ou] /B:`yes`&#124;`no`
 
- Facultative. Spécifie si l’offset d’octet doit être affiché. La valeur par défaut est `no`.
+ Optionnel. Spécifie si l’offset d’octet doit être affiché. La valeur par défaut est `no`.
 
  /ShowLanguage:`yes`&#124;`no` [ou] /L:`yes`&#124;`no`
 
- Facultative. Spécifie si le langage doit être affiché. La valeur par défaut est `no`.
+ Optionnel. Spécifie si le langage doit être affiché. La valeur par défaut est `no`.
 
  /IncludeCallsAcrossThreads:`yes`&#124;`no` [ou] /I:`yes`&#124;`no`
 
- Facultative. Spécifie si les appels à destination ou en provenance d’autres threads doivent être inclus. La valeur par défaut est `no`.
+ Optionnel. Spécifie si les appels à destination ou en provenance d’autres threads doivent être inclus. La valeur par défaut est `no`.
 
  /ShowExternalCode:`yes`&#124;`no`
 
- Facultative. Spécifie s’il faut afficher Uniquement mon code pour la pile des appels. Quand Uniquement mon code est désactivé, tout le code non-utilisateur est affiché. Quand Uniquement mon code est activé, le code non-utilisateur est affiché comme `[external]` dans la sortie de la pile des appels.
+ Optionnel. Spécifie s’il faut afficher Uniquement mon code pour la pile des appels. Quand Uniquement mon code est désactivé, tout le code non-utilisateur est affiché. Quand Uniquement mon code est activé, le code non-utilisateur est affiché comme `[external]` dans la sortie de la pile des appels.
 
  Thread:`n`
 
- Facultative. Affiche la pile des appels pour le thread `n`. Si aucun thread n’est spécifié, affiche la pile des appels pour le thread actuel.
+ Optionnel. Affiche la pile des appels pour le thread `n`. Si aucun thread n’est spécifié, affiche la pile des appels pour le thread actuel.
 
 ## <a name="remarks"></a>Notes
  Les modifications apportées aux arguments ou aux commutateurs s’appliquent aux futurs appels de cette commande. Exécutée seule, la commande Debug.ListCallStackby affiche toute la pile des appels. Si vous spécifiez un index, par exemple,
@@ -115,4 +113,4 @@ kb 2
 - [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Commande, fenêtre](../../ide/reference/command-window.md)
 - [Rechercher/Commande, zone](../../ide/find-command-box.md)
-- [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

@@ -1,14 +1,9 @@
 ---
 title: Fonctionnalités d’accessibilité | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Visual Studio, accessibility
 - accessibility [Visual Studio]
@@ -16,13 +11,13 @@ ms.assetid: aa1ada29-4d93-4bf0-af8b-03633fcb0fba
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: dd5280acead15e3470a7580acfde02fea9d59ebf
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 519eefc9260816fcbbbbd3dd8672bbaeebb3429f
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057929"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54778511"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Fonctionnalités d’accessibilité de Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ En plus des fonctionnalités et utilitaires d’accessibilité Windows, les fonc
 
  Pour plus d’informations, consultez les rubriques suivantes :
 
--   [Guide pratique pour définir les options d’accessibilité de l’IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
+-   [Guide pratique pour définir les options d’accessibilité IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
 -   [Guide pratique pour utiliser uniquement le clavier](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
@@ -53,7 +48,7 @@ En plus des fonctionnalités et utilitaires d’accessibilité Windows, les fonc
 
 -   [Conseils et astuces d’accessibilité](../../ide/reference/accessibility-tips-and-tricks.md)
 
--   [Guide pratique pour changer les polices et les couleurs](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+-   [Guide pratique pour modifier les polices et les couleurs dans Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 ## <a name="see-also"></a>Voir aussi
  [Services et produits d’accessibilité de Microsoft](../../ide/reference/accessibility-products-and-services-from-microsoft.md)

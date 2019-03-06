@@ -1,8 +1,6 @@
 ---
 title: Encodages et caractères de saut de ligne
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.Encoding
@@ -16,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 8f9b3ffc-7b8d-44f4-87cb-dc29105be12d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7acf048b112a88b73c614e8c383722c6e2adb051
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 59ed38c28c6818fb618156450d47c05b4f35d63d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052007"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907281"
 ---
 # <a name="encodings-and-line-endings"></a>Encodages et fins de ligne
 

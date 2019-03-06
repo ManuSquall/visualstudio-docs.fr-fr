@@ -1,5 +1,5 @@
 ---
-title: 'IScriptNode :: CreateChildEntry | Documents Microsoft'
+title: 'IScriptNode :: CreateChildEntry | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8fcc010efe8fcf30a8f467dd94befff54bc5fac5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a8ca4ab504a9da2a63d5c70330d50e2c97e09817
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729689"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088229"
 ---
-# <a name="iscriptnode-createchildentry"></a>IScriptNode:: CreateChildEntry
+# <a name="iscriptnode-createchildentry"></a>IScriptNode :: CreateChildEntry
 Ajoute une instance enfant de `IScriptEntry`.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT CreateChildEntry(  
    ULONG              isn,  
    DWORD              dwCookie,  
@@ -41,13 +41,13 @@ HRESULT CreateChildEntry(
   
 #### <a name="parameters"></a>Paramètres  
  `isn`  
- [in] L’index de l’enfant du parent.  
+ [in] L’index de l’enfant de la page parente.  
   
  `dwCookie`  
- [in] Une valeur définie par l’application est utilisée pour associer l’entrée enfant de l’objet hôte.  
+ [in] Une valeur définie par l’application est utilisée pour associer l’entrée de l’enfant à l’objet hôte.  
   
  `pszDelimiter`  
- [in] L’adresse du délimiteur de fin du bloc de script. Pour l’analyse, l’hôte utilise généralement un délimiteur (par exemple, deux guillemets simples), pour détecter la fin du bloc de script.  
+ [in] L’adresse du délimiteur de fin du bloc de script. Pour l’analyse, l’hôte utilise généralement un délimiteur (par exemple, un double guillemet), pour détecter la fin du bloc de script.  
   
  Le délimiteur permet le script de création de moteur pour fournir le prétraitement. Par exemple, le moteur peut remplacer un guillemet simple avec deux guillemets simples à utiliser comme délimiteur. Le moteur détermine comment le délimiteur est utilisé.  
   
@@ -62,17 +62,17 @@ HRESULT CreateChildEntry(
   
  Pour `IScriptEntry` les objets qui représentent une fonction de l’objet, cette méthode échoue.  
   
- Pour `IScriptScriptlet` des objets, cette méthode échoue.  
+ Pour `IScriptScriptlet` objets, cette méthode échoue.  
   
 ## <a name="return-value"></a>Valeur de retour  
  Élément `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
- Le `IScriptNode` interface représente une page Web ou ses éléments. Le `IScriptEntry` interface (qui est dérivée de `IScriptNode`) représente un bloc de script ou d’un objet de fonction. Le `IScriptScriptlet` interface (qui est dérivée de `IScriptEntry`) représente un gestionnaire d’événements.  
+## <a name="remarks"></a>Notes  
+ Le `IScriptNode` interface représente une page Web ou ses éléments. Le `IScriptEntry` interface (qui est dérivée de `IScriptNode`) représente un bloc de script ou un objet de fonction. Le `IScriptScriptlet` interface (qui est dérivée de `IScriptEntry`) représente un gestionnaire d’événements.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IScriptNode (Interface)](../../winscript/reference/iscriptnode-interface.md)   

@@ -1,8 +1,6 @@
 ---
 title: Définir le processus actuel
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Debug.SetCurrentProcess command
@@ -10,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 1e016ebd-aadd-411f-a606-03bf69d3f8aa
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64561db59cc089d9539ab396cf4e869e92fe1117
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 24f4c08147f72168f5207418a51d7a9cfa8a2b51
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33705084"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938434"
 ---
 # <a name="set-current-process"></a>Définir le processus actuel
 Définit le processus spécifié comme processus actif dans le débogueur.
@@ -47,4 +45,4 @@ Debug.SetCurrentProcess index
 
 - [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Commande, fenêtre](../../ide/reference/command-window.md)
-- [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

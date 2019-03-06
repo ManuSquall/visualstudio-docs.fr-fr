@@ -1,8 +1,6 @@
 ---
 title: 'CA1307 : Spécifier StringComparison'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1307
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9b0d5e71-1683-4a0d-bc4a-68b2fbd8af71
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67f0d5152dcdef5ffa3abb76d92e68fd99f9b637
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: a3aabd73a3c234be61cecdf68fbc92fc7e52883e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550412"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927683"
 ---
 # <a name="ca1307-specify-stringcomparison"></a>CA1307 : Spécifier StringComparison
 
@@ -49,4 +47,4 @@ ms.locfileid: "45550412"
 ## <a name="see-also"></a>Voir aussi
 
 - [Avertissements liés à la globalisation](../code-quality/globalization-warnings.md)
-- [CA1309 : Utilisez StringComparison avec la valeur Ordinal](../code-quality/ca1309-use-ordinal-stringcomparison.md)
+- [CA1309 : Utiliser StringComparison avec la valeur ordinal](../code-quality/ca1309-use-ordinal-stringcomparison.md)

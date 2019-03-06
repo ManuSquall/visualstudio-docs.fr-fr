@@ -2,22 +2,20 @@
 title: Concepteur de flux de travail - Concepteur d’activités TransactionScope
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.TransactionScope.UI
 ms.assetid: 8d7ebfc6-7478-4888-b3b0-b14f296096af
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40adf006b141e930a522a2b80787f8f4dfed0a8e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e84312518c19ef2a041091c5e2439dd7fb312c69
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950564"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948886"
 ---
 # <a name="transactionscope-activity-designer"></a>Concepteur d’activités TransactionScope
 

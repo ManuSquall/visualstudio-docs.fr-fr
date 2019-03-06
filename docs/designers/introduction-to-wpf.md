@@ -1,30 +1,28 @@
 ---
 title: Présentation de WPF
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: b8d7cf43-d1f2-4f3d-adb0-4f3a6428edc0
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - csharp
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: db06323da8ccd3009c52be3ba9dd51478d1d722c
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: bc943fe059850b024a5067d36bcc14d258ca5565
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008458"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635070"
 ---
 # <a name="wpf-overview"></a>Vue d’ensemble de WPF
 
 Windows Presentation Foundation (WPF) vous permet de créer des applications clientes de bureau pour Windows avec des expériences utilisateur visuellement surprenantes.
 
-![Exemple d’interface utilisateur Contoso Healthcare](../designers/media/wpfintrofigure24.png)
+![Exemple d'interface utilisateur Contoso Healthcare](../designers/media/wpfintrofigure24.png)
 
 Le cœur de WPF est un moteur de rendu vectoriel et indépendant de toute résolution, créé pour tirer parti du matériel graphique moderne. WPF étend le cœur avec un ensemble complet de fonctionnalités de développement d’applications qui incluent XAML (Extensible Application Markup Language), des contrôles, la liaison de données, la disposition, les graphiques 2D et 3D, l’animation, des styles, des modèles, des documents, des médias, du texte et de la typographie. WPF étant inclus dans le .NET Framework, vous pouvez développer des applications qui incorporent d’autres éléments de la bibliothèque de classes .NET Framework.
 
@@ -68,7 +66,7 @@ Plus précisément, ce code XAML définit une fenêtre et un bouton à l’aide 
 
 L’illustration suivante montre l’interface utilisateur définie par XAML dans l’exemple précédent.
 
-![Fenêtre qui contient un bouton](../designers/media/wpfintrofigure10.png)
+![Fenêtre contenant un bouton](../designers/media/wpfintrofigure10.png)
 
 Comme XAML est basé sur XML, l’interface utilisateur que vous composez avec est assemblée dans une hiérarchie d’éléments imbriqués, connue sous le nom d’ [arborescence des éléments](/dotnet/framework/wpf/advanced/trees-in-wpf). L’arborescence des éléments offre un moyen logique et intuitif de créer et gérer des interfaces utilisateur.
 
@@ -91,16 +89,16 @@ Le comportement principal d’une application est d’implémenter les fonctionn
 ```
 
 ```csharp
-using System.Windows; // Window, RoutedEventArgs, MessageBox 
+using System.Windows; // Window, RoutedEventArgs, MessageBox 
 
 namespace SDKSample
 {
-    public partial class AWindow : Window
+    public partial class AWindow : Window
     {
         public AWindow()
         {
-            // InitializeComponent call is required to merge the UI 
-            // that is defined in markup with this class, including  
+            // InitializeComponent call is required to merge the UI 
+            // that is defined in markup with this class, including  
             // setting properties and registering event handlers
             InitializeComponent();
         }
@@ -117,28 +115,28 @@ namespace SDKSample
 ```vb
 Namespace SDKSample
 
-    Partial Public Class AWindow
+    Partial Public Class AWindow
         Inherits System.Windows.Window
 
-        Public Sub New()
+        Public Sub New()
 
-            ' InitializeComponent call is required to merge the UI 
-            ' that is defined in markup with this class, including  
+            ' InitializeComponent call is required to merge the UI 
+            ' that is defined in markup with this class, including  
             ' setting properties and registering event handlers
             InitializeComponent()
 
-        End Sub 
+        End Sub 
 
-        Private Sub button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+        Private Sub button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
             ' Show message box when button is clicked
             MessageBox.Show("Hello, Windows Presentation Foundation!")
 
-        End Sub 
+        End Sub 
 
-    End Class 
+    End Class 
 
-End Namespace
+End Namespace
 ```
 
 Dans cet exemple, le code-behind implémente une classe qui dérive de la classe <xref:System.Windows.Window> . L’attribut `x:Class` est utilisé pour associer le balisage à la classe code-behind. `InitializeComponent` est appelé depuis le constructeur de la classe code-behind pour fusionner l’interface utilisateur définie dans le balisage avec la classe code-behind. (`InitializeComponent` est généré pour vous lors de la génération de votre application, c’est pourquoi vous n’avez pas besoin de l’implémenter manuellement.) La combinaison de `x:Class` et `InitializeComponent` garantit la bonne initialisation de votre implémentation chaque fois qu’elle est créée. La classe code-behind implémente également un gestionnaire d’événements pour l’événement <xref:System.Windows.Controls.Primitives.ButtonBase.Click> du bouton. Quand vous cliquez sur le bouton, le gestionnaire d’événements affiche un message en appelant la méthode <xref:System.Windows.MessageBox.Show%2A?displayProperty=fullName> .
@@ -199,7 +197,7 @@ Le système de disposition est exposé aux contrôles enfants par des classes WP
 
 - <xref:System.Windows.Controls.Canvas>: les contrôles enfants fournissent leur propre disposition.
 
-- <xref:System.Windows.Controls.DockPanel>:  les contrôles enfants sont alignés aux bords du panneau.
+- <xref:System.Windows.Controls.DockPanel>: les contrôles enfants sont alignés aux bords du panneau.
 
 - <xref:System.Windows.Controls.Grid>: les contrôles enfants sont positionnés en lignes et en colonnes.
 
@@ -207,9 +205,9 @@ Le système de disposition est exposé aux contrôles enfants par des classes WP
 
 - <xref:System.Windows.Controls.VirtualizingStackPanel>: les contrôles enfants sont virtualisés et réorganisés sur une seule ligne, verticale ou horizontale.
 
-- <xref:System.Windows.Controls.WrapPanel>: les contrôles enfants sont positionnés de gauche à droite et renvoyés à la ligne suivante lorsqu’il y a plus de contrôles sur la ligne actuelle que l’espace ne l’autorise.
+- <xref:System.Windows.Controls.WrapPanel>: les contrôles enfants sont positionnés de gauche à droite et renvoyés à la ligne suivante quand il y a plus de contrôles sur la ligne actuelle que l’espace ne l’autorise.
 
-L’exemple suivant utilise un <xref:System.Windows.Controls.DockPanel> pour disposer plusieurs contrôles <xref:System.Windows.Controls.TextBox> .
+L’exemple suivant utilise un <xref:System.Windows.Controls.DockPanel> pour disposer plusieurs contrôles <xref:System.Windows.Controls.TextBox>.
 
 [!code-xaml[IntroToWPFSnippets#LayoutMARKUP](../designers/codesnippet/Xaml/introduction-to-wpf_1.xaml)]
 
@@ -220,7 +218,7 @@ Le <xref:System.Windows.Controls.DockPanel> autorise les contrôles <xref:System
 
 L’illustration suivante affiche le résultat du balisage XAML dans l’exemple précédent.
 
-![DockPanel, page](../designers/media/wpfintrofigure11.png)
+![Page DockPanel](../designers/media/wpfintrofigure11.png)
 
 ## <a name="data-binding"></a>Liaison de données
 
@@ -317,7 +315,7 @@ Pour plus d’informations, consultez [Vue d’ensemble des pinceaux WPF](/dotne
 
 WPF comprend également des fonctionnalités de rendu 3D qui s’intègrent aux graphiques 2D, permettant ainsi la création d’interfaces utilisateur plus intéressantes. Par exemple, la figure suivante montre des images 2D restituées sur des formes 3D.
 
-![Capture d’écran : exemple Visual3D](../designers/media/wpfintrofigure13.png)
+![Capture d'écran : exemple Visual3D](../designers/media/wpfintrofigure13.png)
 
 Pour plus d’informations, consultez [Vue d’ensemble des graphismes 3D](/dotnet/framework/wpf/graphics-multimedia/3-d-graphics-overview).
 
@@ -325,7 +323,7 @@ Pour plus d’informations, consultez [Vue d’ensemble des graphismes 3D](/dotn
 
 La prise en charge d’animations WPF vous permet d’agrandir, de faire bouger, de faire pivoter et de réaliser des fondus avec les contrôles pour créer des transitions de page intéressantes, et plus encore. Vous pouvez animer la plupart des classes WPF, même les classes personnalisées. L’illustration suivante montre une animation simple en action.
 
-![Images d’un cube animé](../designers/media/wpfintrofigure7.png)
+![Images d'un cube animé](../designers/media/wpfintrofigure7.png)
 
 Pour plus d’informations, consultez [Vue d’ensemble de l’animation](/dotnet/framework/wpf/graphics-multimedia/animation-overview).
 
@@ -369,7 +367,7 @@ Pour faciliter un rendu de texte de qualité optimale, WPF offre les fonctionnal
 
 Comme démonstration d’une intégration de texte avec des graphiques, l’illustration suivante montre l’application d’un ornement de texte.
 
-![Texte avec différents ornements de texte](../designers/media/wpfintrofigure23.png)
+![Texte avec différents ornements](../designers/media/wpfintrofigure23.png)
 
 Pour plus d’informations, consultez [Typographie dans WPF](/dotnet/framework/wpf/advanced/typography-in-wpf).
 
@@ -447,7 +445,7 @@ L’exemple suivant indique comment modifier l’apparence d’un <xref:System.W
 
 Dans cet exemple, l’interface utilisateur du bouton par défaut a été remplacée par une <xref:System.Windows.Shapes.Ellipse> aux bords bleu foncé remplie à l’aide d’un <xref:System.Windows.Media.RadialGradientBrush>. Le contrôle <xref:System.Windows.Controls.ContentPresenter> affiche le contenu du <xref:System.Windows.Controls.Button>, « Click Me! ». Quand l’utilisateur clique sur <xref:System.Windows.Controls.Button> , l’événement <xref:System.Windows.Controls.Primitives.ButtonBase.Click> est toujours déclenché dans le cadre du comportement par défaut du contrôle <xref:System.Windows.Controls.Button> . Le résultat est affiché dans la figure suivante :
 
-![Bouton en forme d’ellipse et seconde fenêtre](../designers/media/wpfintrofigure2.png)
+![Bouton en forme d'ellipse et seconde fenêtre](../designers/media/wpfintrofigure2.png)
 
 ### <a name="data-templates"></a>Modèles de données
 
@@ -575,7 +573,7 @@ L’exemple suivant définit une couleur d’arrière-plan commune partagée par
 </Window>
 ```
 
-Cet exemple implémente une ressource de couleur d’arrière-plan à l’aide de l’élément de propriété `Window.Resources`. Cette ressource est disponible pour tous les enfants de la <xref:System.Windows.Window>. Il existe différentes portées de ressource, dont les suivantes, répertoriées dans l’ordre dans lequel elles sont résolues : 
+Cet exemple implémente une ressource de couleur d’arrière-plan à l’aide de l’élément de propriété `Window.Resources` . Cette ressource est disponible pour tous les enfants de la <xref:System.Windows.Window>. Il existe différentes portées de ressource, dont les suivantes, répertoriées dans l’ordre dans lequel elles sont résolues :
 
 1.  Un contrôle individuel (à l’aide de la propriété <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> héritée).
 
@@ -668,7 +666,7 @@ Comme pour toute plateforme de développement, WPF peut être utilisé de diffé
 Nous avons examiné les fonctionnalités principales de WPF. Il est maintenant temps de créer votre première application WPF.
 
 > [!div class="nextstepaction"]
-> [Procédure pas à pas : ma première application WPF pour poste de travail](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)
+> [Procédure pas à pas : Ma première application de bureau WPF](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)
 
 ## <a name="see-also"></a>Voir aussi
 

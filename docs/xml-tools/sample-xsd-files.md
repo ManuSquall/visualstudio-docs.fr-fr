@@ -1,21 +1,19 @@
 ---
 title: Exemples de fichiers XSD
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: sample
 ms.assetid: 6a3d0ab6-825e-42fa-8df0-37fbc5da9e73
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 832038449cefffd6cd10349f66be0a1d20f683d2
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 2d6133ec68cea8e9573519be117428bf9f9317c9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571931"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948418"
 ---
 # <a name="sample-xsd-files"></a>Exemples de fichiers XSD
 

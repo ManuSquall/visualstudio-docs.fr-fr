@@ -1,8 +1,6 @@
 ---
 title: Extraits de code
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.ExpansionManagerImport
@@ -12,23 +10,23 @@ helpviewer_keywords:
 - code snippets
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ed3f2f8e588aa908827516fee44c1a38ad6a008
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 98dadaed75cf16ae6ae35da9d6589355a63bd35c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348485"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908450"
 ---
 # <a name="code-snippets"></a>Extraits de code
 
-Les extraits de code sont de petits blocs de code réutilisables que vous pouvez insérer dans un fichier de code à l'aide d'une commande de menu contextuel ou une combinaison de touches d'accès rapide. Ils contiennent généralement des blocs de code fréquemment utilisés, tels que les blocs `try-finally` ou `if-else`, mais ils permettent d’insérer des classes ou des méthodes entières.
+Les extraits de code sont de petits blocs de code réutilisables que l’on peut insérer dans un fichier de code à l’aide d’une commande de menu contextuel (clic droit) ou d’une combinaison de touches d’accès rapide. Ils contiennent généralement des blocs de code fréquemment utilisés, tels que les blocs `try-finally` ou `if-else`, mais ils permettent d’insérer des classes ou des méthodes entières.
 
 > [!NOTE]
 > Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Extraits de code (Visual Studio pour Mac)](/visualstudio/mac/snippets).
@@ -62,7 +60,7 @@ finally
 }
 ```
 
-Pour insérer cet extrait, cliquez sur **Insérer un extrait** dans le menu contextuel de la fenêtre de code, cliquez sur **Visual C#**, tapez `tryf`, puis appuyez sur **Tab**. Vous pouvez aussi taper `tryf` et appuyer deux fois sur **Tab**.
+Pour insérer cet extrait, cliquez sur **Insérer un extrait de code** dans le menu contextuel (clic droit) de la fenêtre de code, cliquez sur **Visual C#**, tapez `tryf`, puis appuyez sur **Tab**. Vous pouvez aussi taper `tryf` et appuyer deux fois sur **Tab**.
 
 Exemple d'extrait de code d'encerclement : en C++, le raccourci `if` peut être utilisé comme un extrait d'insertion ou comme un extrait de code d'encerclement. Si vous sélectionnez une ligne de code (par exemple, `return FALSE;`), et que vous choisissez ensuite **Entourer de** > **if**, l’extrait est développé autour de la ligne :
 
@@ -99,7 +97,7 @@ Si vous remplacez `newPropertyValue` par `m_property`, chaque instance de `newPr
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Procédure pas à pas : création d’un extrait de code](../ide/walkthrough-creating-a-code-snippet.md)
+- [Procédure pas à pas : Création d’un extrait de code](../ide/walkthrough-creating-a-code-snippet.md)
 - [Guide pratique pour distribuer des extraits de code](../ide/how-to-distribute-code-snippets.md)
 - [Bonnes pratiques pour l’utilisation des extraits de code](../ide/best-practices-for-using-code-snippets.md)
 - [Dépannage des extraits](../ide/troubleshooting-snippets.md)

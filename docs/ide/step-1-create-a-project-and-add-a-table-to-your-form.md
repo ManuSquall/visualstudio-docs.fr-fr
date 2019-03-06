@@ -1,24 +1,21 @@
 ---
-title: 'Étape 1 : créer un projet et ajouter une table à votre formulaire'
-ms.custom: ''
+title: 'Étape 1 : Créer un projet et ajouter une table à votre formulaire'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f83ce585120131d63c07e6db2ed6b90f32cc0876
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 08c5178323c2ee5e92164ca1fd71c5fe88d51d6f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857600"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940657"
 ---
-# <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Étape 1 : créer un projet et ajouter une table à votre formulaire
+# <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Étape 1 : Créer un projet et ajouter une table à votre formulaire
 
 La première étape pour créer un jeu de combinaisons consiste à créer le projet et à ajouter une table à votre formulaire. La table permet d'aligner les icônes dans une grille 4x4, de façon ordonnée. Vous définissez également plusieurs propriétés pour améliorer l'apparence de la grille de jeu.
 
@@ -71,7 +68,7 @@ La première étape pour créer un jeu de combinaisons consiste à créer le pro
 
    5.  Choisissez la propriété **Font**. Un bouton de sélection (**…**) doit s’afficher.
 
-   6.  Choisissez le bouton de sélection et affectez la valeur **Webdings** à la propriété **Font**, la valeur **Bold** à **Font Style** et la valeur **72** à **Size**.
+   6.  Choisissez le bouton de sélection, puis affectez la valeur **Webdings** à **Font**, la valeur **Bold** à **Font Style** et la valeur **48** à **Size**.
 
    7.  Affectez la lettre **c** à la propriété **Text** du contrôle Label.
 
@@ -91,6 +88,6 @@ La première étape pour créer un jeu de combinaisons consiste à créer le pro
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
--   Pour passer à l’étape suivante du tutoriel, consultez [Étape 2 : ajouter un objet aléatoire et une liste d’icônes](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
+-   Pour passer à l’étape suivante du tutoriel, consultez [Étape 2 : Ajouter un objet aléatoire et une liste d’icônes](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
 
--   Pour revenir à la rubrique de présentation, consultez [Tutoriel 3 : Créer un jeu de combinaisons](../ide/tutorial-3-create-a-matching-game.md).
+-   Pour revenir à la rubrique de vue d’ensemble, consultez [Tutoriel 3 : Créer un jeu de combinaisons](../ide/tutorial-3-create-a-matching-game.md).

@@ -1,8 +1,6 @@
 ---
 title: Création et configuration de membres de type (Concepteur de classes)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdetails.method
@@ -28,15 +26,15 @@ helpviewer_keywords:
 ms.assetid: 42af8738-3738-4ca7-82ff-edf573a68f96
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b93fa4720a6f0de9e2d7a64eb2c820811610297
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 97a7886ba57c9e4076121ec8071e52f29af784f5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938797"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956855"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Créer et configurer des membres de type dans le Concepteur de classes
 
@@ -59,12 +57,12 @@ Vous pouvez ajouter ces membres aux types dans un diagramme de classes et config
 
 |Tâche|Contenu de support|
 |----------| - |
-|**Bien démarrer** : avant de créer et de configurer des membres de type, vous devez ouvrir la fenêtre **Détails de classe**.|- [Ouvrir la fenêtre Détails de classe](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [Notes d’utilisation de la fenêtre Détails de classe](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [Affichage d’informations en lecture seule](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [Raccourcis clavier et souris dans le diagramme de classes et dans la fenêtre Détails de classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
-|**Créer et modifier les membres de type** : vous pouvez créer d’autres membres, modifier des membres existants et ajouter des paramètres à une méthode à l’aide de la fenêtre **Détails de classe**.|- [Créer des membres](creating-and-configuring-type-members.md#create-members)<br />- [Modifier des membres de type](creating-and-configuring-type-members.md#modify-type-members)<br />- [Ajouter des paramètres aux méthodes](creating-and-configuring-type-members.md#add-parameters-to-methods)|
+|**Bien démarrer :** avant de créer et de configurer des membres de type, vous devez ouvrir la fenêtre **Détails de classe**.|- [Ouvrir la fenêtre Détails de classe](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [Notes d’utilisation de la fenêtre Détails de classe](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [Affichage d’informations en lecture seule](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [Raccourcis clavier et souris dans le diagramme de classes et dans la fenêtre Détails de classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
+|**Créer et modifier des membres de type :** vous pouvez créer des membres, en modifier et ajouter des paramètres à une méthode avec la fenêtre **Détails de classe**.|- [Créer des membres](creating-and-configuring-type-members.md#create-members)<br />- [Modifier des membres de type](creating-and-configuring-type-members.md#modify-type-members)<br />- [Ajouter des paramètres aux méthodes](creating-and-configuring-type-members.md#add-parameters-to-methods)|
 
 ## <a name="open-the-class-details-window"></a>Ouvrir la fenêtre Détails de classe
 
-Par défaut, la fenêtre **Détails de classe** s’affiche automatiquement quand vous ouvrez un nouveau diagramme de classes. Consultez [Guide pratique pour ajouter des diagrammes de classes aux projets](how-to-add-class-diagrams-to-projects.md). Vous pouvez aussi ouvrir la fenêtre **Détails de classe** des manières suivantes :
+Par défaut, la fenêtre **Détails de classe** s’affiche automatiquement quand vous ouvrez un nouveau diagramme de classes. Voir [Guide pratique pour ajouter des diagrammes de classes à des projets](how-to-add-class-diagrams-to-projects.md). Vous pouvez aussi ouvrir la fenêtre **Détails de classe** des manières suivantes :
 
 - Cliquez avec le bouton droit sur une classe du diagramme pour afficher un menu contextuel, puis sélectionnez **Détails de classe**.
 
@@ -124,7 +122,7 @@ Vous pouvez créer un membre à l'aide de l'un des outils suivants :
 
 4.  Vous pouvez, à titre facultatif, spécifier d'autres détails sur le membre, comme son type.
 
-     **Remarque :** Vous pouvez aussi utiliser des raccourcis clavier pour créer les membres. Pour plus d’informations, consultez [Raccourcis clavier et souris dans le diagramme de classes et dans la fenêtre Détails de classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md).
+     **Remarque :** vous pouvez aussi utiliser les raccourcis clavier pour créer des membres. Pour plus d’informations, consultez [Raccourcis clavier et souris dans le diagramme de classes et dans la fenêtre Détails de classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md).
 
 ## <a name="modify-type-members"></a>Modifier des membres de type
 
@@ -209,7 +207,7 @@ Les lignes de paramètres contiennent les éléments suivants :
 
      La dernière ligne de paramètre d’un membre contient le texte **<add parameter>** dans la cellule**Nom**. Cliquez sur cette cellule pour créer un nouveau paramètre. Pour plus d’informations, consultez [Pour ajouter un paramètre à une méthode](creating-and-configuring-type-members.md#add-parameters-to-methods).
 
-La fenêtre **Propriétés** affiche les mêmes propriétés de paramètre que celles affichées dans la fenêtre **Détails de classe** : **Nom**, **Type**, **Modificateur**, **Résumé**, ainsi que la propriété **Valeur par défaut facultative**. La modification d'une propriété dans un emplacement met à jour la valeur de la propriété de manière globale, y compris l'affichage de sa valeur dans l'autre emplacement.
+La fenêtre **Propriétés** présente les mêmes propriétés de paramètres que la fenêtre **Détails de classe** : **Nom**, **Type**, **Modificateur**, **Résumé**, ainsi que la propriété **Valeur par défaut facultative**. La modification d'une propriété dans un emplacement met à jour la valeur de la propriété de manière globale, y compris l'affichage de sa valeur dans l'autre emplacement.
 
 > [!NOTE]
 > Pour ajouter un paramètre à un délégué, consultez [Créer des membres](creating-and-configuring-type-members.md#create-members).
@@ -320,5 +318,5 @@ Vous ne pouvez pas modifier de code C++ natif à l’aide du Concepteur de class
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Affichage des types et des relations](viewing-types-and-relationships.md)
+- [Affichage des types et des relations](designing-and-viewing-classes-and-types.md)
 - [Refactorisation des classes et des types](refactoring-classes-and-types.md)

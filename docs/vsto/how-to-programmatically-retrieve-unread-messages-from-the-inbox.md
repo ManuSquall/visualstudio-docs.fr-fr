@@ -1,9 +1,6 @@
 ---
-title: 'Comment : récupérer par programme des messages non lus à partir de la boîte de réception'
-ms.custom: ''
+title: 'Procédure : Récupérer par programme des messages non lus à partir de la boîte de réception'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,32 +10,30 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], unread mail
 - unread e-mail
 - mail items [Office development in Visual Studio], unread mail
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3442ecd10bc18e0336542ce2b8396b8b7f654b78
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b618d09fb8b11f98077ab3bb49e32a28869e5b04
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673237"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630806"
 ---
-# <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>Comment : récupérer par programme des messages non lus à partir de la boîte de réception
-  Cet exemple récupère des messages électroniques non lus à partir de l’Outlook **boîte de réception** et affiche le nombre d’éléments.  
-  
- [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
-  
-## <a name="example"></a>Exemple  
+# <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>Procédure : Récupérer par programme des messages non lus à partir de la boîte de réception
+  Cet exemple récupère des messages électroniques non lus à partir de l’Outlook **boîte de réception** et affiche le nombre d’éléments.
+
+ [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
+
+## <a name="example"></a>Exemple
  [!code-vb[Trin_Outlook_RL_UnreadItems#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_UnreadItems/thisaddin.vb#1)]
- [!code-csharp[Trin_Outlook_RL_UnreadItems#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_UnreadItems/thisaddin.cs#1)]  
-  
-## <a name="see-also"></a>Voir aussi  
- [Travailler avec des éléments de messagerie](../vsto/working-with-mail-items.md)   
- [Commencer à programmer des Compléments VSTO](../vsto/getting-started-programming-vsto-add-ins.md)   
- [Comment : créer par programmation un élément de courrier électronique](../vsto/how-to-programmatically-create-an-e-mail-item.md)   
- [Comment : envoyer par programme un e-mail](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
- [Comment : effectuer des actions par programme lors de la réception d’un message électronique](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)  
-  
-  
+ [!code-csharp[Trin_Outlook_RL_UnreadItems#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_UnreadItems/thisaddin.cs#1)]
+
+## <a name="see-also"></a>Voir aussi
+- [Travailler avec des éléments de messagerie](../vsto/working-with-mail-items.md)
+- [Commencer à programmer des Compléments VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
+- [Guide pratique pour Créer par programmation un élément de courrier électronique](../vsto/how-to-programmatically-create-an-e-mail-item.md)
+- [Guide pratique pour Envoyer par programmation un e-mail](../vsto/how-to-programmatically-send-e-mail-programmatically.md)
+- [Guide pratique pour Effectuer des actions par programme lorsqu’un message électronique est reçu.](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)

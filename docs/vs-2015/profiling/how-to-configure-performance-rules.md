@@ -1,27 +1,22 @@
 ---
 title: Guide pratique pour configurer les règles de performance | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.ruleseditor
 ms.assetid: a148b468-b849-4858-880a-808a6b47e596
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3b4750dcd245094d0ea116097c7e58b87065aa91
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: dc91bff6819cc5a1ed1e22864157143843f88ba9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765116"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790427"
 ---
 # <a name="how-to-configure-performance-rules"></a>Guide pratique pour configurer les règles de performance
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ Les avertissements de performance des outils de profilage Visual Studio signalen
   
 ### <a name="to-configure-profiler-performance-warnings"></a>Pour configurer les avertissements de performance du profileur  
   
-1.  Dans le menu **Outils**, cliquez sur **Options**.  
+1.  Dans le menu **Outils** , cliquez sur **Options**.  
   
 2.  Développez **Outils d’analyse des performances**, puis cliquez sur **Règles**.  
   
@@ -45,6 +40,3 @@ Les avertissements de performance des outils de profilage Visual Studio signalen
     -   **Erreur** : arrête l’exécution du profilage et affiche la règle sous forme d’erreur.  
   
     -   **Informations** : affiche la règle à titre d’information uniquement.
-
-
-

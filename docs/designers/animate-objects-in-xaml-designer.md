@@ -1,21 +1,19 @@
 ---
 title: Animer des objets dans le concepteur XAML
 ms.date: 04/11/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: fb88fa26-e835-47f5-9771-2f279441c83c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: c8f8b1b62634c9da86a6aa152bd48cbd8c712198
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a5bd9c24351201d066f9055554468939df02b33e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921402"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940020"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>Animer des objets dans le concepteur XAML
 

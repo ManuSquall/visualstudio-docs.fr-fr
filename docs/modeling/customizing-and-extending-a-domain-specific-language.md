@@ -6,17 +6,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: a49d9998aa319e66c22baa345864bc473f733c87
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 001b0efc5beaa5f76f979070e8e73c2d59fb3e8c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816696"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949796"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Personnalisation et extension d'un langage spécifique à un domaine
 Visual Studio de modélisation et de visualisation Kit de développement logiciel (SDK) VISUALIZATION fournit plusieurs niveaux à laquelle vous pouvez définir des outils de modélisation :
@@ -56,14 +54,14 @@ Visual Studio de modélisation et de visualisation Kit de développement logicie
 |Supprimer, redéfinir la parenté ou relier des éléments connexes lorsqu’un élément est supprimé.|Définir le **Propagates Delete** valeur d’un rôle de relation. Pour obtenir des effets plus complexes, remplacer `ShouldVisitRelationship` et `ShouldVisitRolePlayer` méthodes dans le `MyDslDeleteClosure` (classe), définie dans **DomainModel.cs**<br /><br /> Consultez [personnalisation du comportement de suppression](../modeling/customizing-deletion-behavior.md)|
 |Conserver la disposition des formes et l’apparence sur la copie et de glisser-déplacer.|Ajouter les formes et connecteurs pour copié `ElementGroupPrototype`. Est la méthode la plus commode de substitution `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Consultez [personnalisation du comportement de copie](../modeling/customizing-copy-behavior.md).|
 |Coller des formes à un emplacement choisi, par exemple la position actuelle du curseur.|Substituer `ClipboardCommandSet.ProcessOnCopy()` à utiliser la version spécifique à l’emplacement de `ElementOperations.Merge().` consultez [personnalisation du comportement de copie](../modeling/customizing-copy-behavior.md).|
-|Créer des liens supplémentaires lors du collage|Substituer ClipboardCommandSet.ProcessOnPasteCommand()|
-|Activer les faites glisser et déposez les éléments de ce diagramme et d’autres langages DSL et Windows|Consultez [Comment : ajouter un gestionnaire glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md)|
+|Créer des liens supplémentaires lors du collage|Override ClipboardCommandSet.ProcessOnPasteCommand()|
+|Activer les faites glisser et déposez les éléments de ce diagramme et d’autres langages DSL et Windows|Voir [Guide pratique pour Ajouter un gestionnaire glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md)|
 |Autoriser une forme ou un outil soit glissée vers une forme enfant, tel qu’un port, comme s’il était de faire glisser le parent.|Définir une Directive de fusion sur la classe d’objet cible, pour transférer l’objet déplacé vers le parent. Consultez [personnalisation de la création d’élément et le déplacement des](../modeling/customizing-element-creation-and-movement.md).|
 |Autoriser une forme ou un outil permettant de faire glisser vers une forme et des liens supplémentaires ou des objets créés. Par exemple, pour autoriser un commentaire à être déposé sur un élément auquel il doit être lié.|Définir une Directive de fusion sur la classe de domaine cible et définir les liens à générer. Dans les cas complexes, vous pouvez ajouter le code personnalisé. Consultez [personnalisation de la création d’élément et le déplacement des](../modeling/customizing-element-creation-and-movement.md).|
 |Créer un groupe d’éléments avec un seul outil. Par exemple, un composant avec un ensemble fixe de ports.|Substituez la méthode d’initialisation de boîte à outils de ToolboxHelper.cs. Créer un Prototype de groupe élément (EGP) contenant les éléments et leurs liens de relation. Consultez [personnalisation des outils et la boîte à outils](../modeling/customizing-tools-and-the-toolbox.md).<br /><br /> Inclure les formes principal et le ports dans l’EGP, soit définir BoundsRules pour positionner les formes de port lorsque l’EGP est instancié. Consultez [emplacement de la forme et la taille de contrainte par BoundsRules](../modeling/boundsrules-constrain-shape-location-and-size.md).|
 |Utilisez un outil de connexion pour instancier plusieurs types de relation.|Ajoutez les Directives de connexion de lien (LCD) pour le Générateur de connexion qui est appelé par l’outil. Les écrans LCD déterminent le type de la relation à partir des types des deux éléments. Pour en faire varient selon les États des éléments, vous pouvez ajouter le code personnalisé. Consultez [personnalisation des outils et la boîte à outils](../modeling/customizing-tools-and-the-toolbox.md).|
 |Outils sticky - l’utilisateur peut double-cliquer sur n’importe quel outil pour créer de nombreuses formes ou des connecteurs à la suite.|Dans l’Explorateur DSL, sélectionnez le `Editor` nœud. Dans la fenêtre Propriétés, définissez **utilise des éléments de boîte à outils rémanentes**.|
-|Définir des commandes de menu|Consultez [Comment : modifier une commande de Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|
+|Définir des commandes de menu|Voir [Guide pratique pour Modifier une commande de Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|
 |Limiter le modèle avec des règles de validation|Consultez [Validation dans un langage spécifique à un domaine](../modeling/validation-in-a-domain-specific-language.md)|
 |Générer le code, les fichiers de configuration ou les documents à partir d’un DSL.|[Génération de code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md)|
 |Personnaliser la façon dont les modèles sont enregistrés au fichier.|Consultez [personnalisation du stockage de fichier et de sérialisation XML](../modeling/customizing-file-storage-and-xml-serialization.md)|

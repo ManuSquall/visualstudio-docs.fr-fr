@@ -1,32 +1,27 @@
 ---
-title: Guide pratique pour afficher et modifier le code avec l’Aperçu de définition (Alt+F12) | Microsoft Docs
-ms.custom: ''
+title: 'Procédure : Afficher et modifier le Code à l’aide d’aperçu de définition (Alt + F12) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 45f3dd20-902a-4047-8cca-9f18216123f4
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: cc99602fe1ca2003995594f75736d581fa37e0d0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 24db36d6bb3a431d5ee3848eb8a6a794980f919a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254473"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777301"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Guide pratique pour afficher et modifier le code avec l’Aperçu de définition (ALT + F12)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Utilisez la commande **Aperçu de définition** pour afficher et modifier du code sans sortir du code que vous écrivez. Les options **Aperçu de définition** et **Atteindre la définition** affichent les mêmes informations, mais **Aperçu de définition** affiche le code dans une fenêtre contextuelle, alors que l’option **Atteindre la définition** affiche le code dans une fenêtre de code distincte. L’option **Atteindre la définition** provoque le basculement de votre contexte (c’est-à-dire, la fenêtre de code active, la ligne active et la position du curseur) vers la fenêtre du code de définition. Avec l’option **Aperçu de définition**, vous pouvez afficher et modifier la définition et vous déplacer dans le fichier de définition tout en conservant votre position dans le fichier de code d’origine.  
   
- Vous pouvez utiliser **Aperçu de définition** avec du code C#, Visual Basic et C++. En Visual Basic, **aperçu de définition** affiche un lien vers le **Explorateur d’objets** pour les symboles qui n’ont pas les métadonnées de définition (par exemple, les types de .NET Framework sont intégrées).  
+ Vous pouvez utiliser **Aperçu de définition** avec du code C#, Visual Basic et C++. En Visual Basic, l’option **Aperçu de définition** affiche un lien vers l’**Explorateur d’objets** pour les symboles qui ne disposent pas de métadonnées de définition (par exemple, les types .NET Framework intégrés).  
   
 > [!IMPORTANT]
 >  Vous ne pouvez pas utiliser cette commande dans une version Express de Visual Studio 2013.  
@@ -85,6 +80,3 @@ Utilisez la commande **Aperçu de définition** pour afficher et modifier du cod
   
 ## <a name="see-also"></a>Voir aussi  
  [Conseils de productivité](../ide/productivity-tips-for-visual-studio.md)
-
-
-

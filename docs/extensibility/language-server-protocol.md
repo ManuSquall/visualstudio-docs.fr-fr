@@ -1,22 +1,19 @@
 ---
 title: Vue d’ensemble du protocole langage serveur | Microsoft Docs
-ms.custom: ''
 ms.date: 11/14/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 6a7d93c2-31ea-4bae-8b29-6988a567ddf2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad0e802bd63a9d489a98eb9f216e6739e378d590
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6d3fb814fa202e8a5211ab9db3cb1d71923ccac6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894857"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56679097"
 ---
 # <a name="language-server-protocol"></a>Protocole de serveur de langage
 
@@ -52,13 +49,13 @@ Ci-dessous est un exemple de la façon dont un outil et un serveur de langage co
 
 ![diagramme de flux LSP](media/lsp-flow-diagram.png)
 
-* **L’utilisateur ouvre un fichier (appelé un document) dans l’outil**: l’outil avertit le serveur de langage qu’un document est ouvert (' textDocument/didOpen »). Dès lors, la vérité sur le contenu du document n’est plus sur le système de fichiers mais conservée par l’outil dans la mémoire.
+* **L’utilisateur ouvre un fichier (appelé un document) dans l’outil**: L’outil avertit le serveur de langage qu’un document est ouvert (' textDocument/didOpen »). Dès lors, la vérité sur le contenu du document n’est plus sur le système de fichiers mais conservée par l’outil dans la mémoire.
 
-* **L’utilisateur apporte des modifications**: l’outil informe le serveur sur la modification de document (« textDocument/didChange ») et les informations de sémantique du programme sont mis à jour par le serveur de langage. Dans ce cas, le serveur de langage analyse ces informations et avertit l’outil avec les erreurs détectées et les avertissements (« textDocument/publishDiagnostics »).
+* **L’utilisateur apporte des modifications**: L’outil informe le serveur sur la modification de document (« textDocument/didChange ») et les informations de sémantique du programme sont mis à jour par le serveur de langage. Dans ce cas, le serveur de langage analyse ces informations et avertit l’outil avec les erreurs détectées et les avertissements (« textDocument/publishDiagnostics »).
 
-* **L’utilisateur exécute « Atteindre la définition » sur un symbole dans l’éditeur**: l’outil envoie une demande de « textDocument/définition » avec deux paramètres : (1) l’URI de document et (2) la position du texte à partir d’où la demande de définition d’atteindre a été lancée sur le serveur. Le serveur répond avec l’URI de document et de la position de la définition du symbole à l’intérieur du document.
+* **L’utilisateur exécute « Atteindre la définition » sur un symbole dans l’éditeur**: L’outil envoie une demande de « textDocument/définition » avec deux paramètres : (1) l’URI de document et (2) la position du texte à partir d’où la demande de définition d’atteindre a été lancée sur le serveur. Le serveur répond avec l’URI de document et de la position de la définition du symbole à l’intérieur du document.
 
-* **L’utilisateur ferme le document (fichier)**: envoi d’une notification de ' textDocument/didClose' à partir de l’outil, qui informe le serveur de langage qui le document est maintenant n’est plus en mémoire et que le contenu actuel est maintenant à jour sur le système de fichiers.
+* **L’utilisateur ferme le document (fichier)**: Une notification de « textDocument/didClose » est envoyée à partir de l’outil, qui informe le serveur de langage qui le document est maintenant n’est plus en mémoire et que le contenu actuel est maintenant à jour sur le système de fichiers.
 
 Cet exemple illustre la façon dont le protocole communique avec le serveur de langage au niveau des fonctionnalités de l’éditeur « Atteindre la définition », « Rechercher toutes les références ». Les types de données utilisés par le protocole sont éditeur ou IDE, types de données tels que le document actuellement ouvert et la position du curseur. Les types de données ne sont pas au niveau d’un modèle de domaine langage programmation, ce qui vous donne généralement des arborescences de syntaxe abstraite et des symboles de compilation (par exemple, types résolues, espaces de noms,...). Cela simplifie considérablement le protocole.
 

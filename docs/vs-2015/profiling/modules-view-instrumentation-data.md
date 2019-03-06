@@ -1,27 +1,22 @@
 ---
 title: Modules, vue - Données d’instrumentation | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
 ms.assetid: 895b9589-1987-4160-916f-53b898a69cf0
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 55a01dab80d15bcd7356bc059db2be6d10f504a7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4455f850ad533f17cd9f6cb33e7e874621d0bb2c
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51808523"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54787679"
 ---
 # <a name="modules-view---instrumentation-data"></a>Modules, vue - Données d’instrumentation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,6 +87,3 @@ La vue Modules affiche les données de performances regroupées selon les module
  [Vue Modules - Données d’instrumentation](../profiling/modules-view-sampling-data.md)   
  [Modules, vue - Instrumentation](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [Modules, vue - Échantillonnage](../profiling/modules-view-dotnet-memory-sampling-data.md)
-
-
-

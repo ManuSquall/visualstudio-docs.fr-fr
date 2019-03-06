@@ -3,18 +3,16 @@ title: Avantage Communauté Azure dans les abonnements Visual Studio | Microsoft
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/08/2018
-ms.topic: Get-Started-Article
+ms.date: 12/19/2018
+ms.topic: conceptual
 description: Découvrez l’avantage Azure Community inclus dans certains abonnements Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 693e51d969481d6511e3663d2f675861821c99fb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 78c6954cd6dbbee48a3754d7d58eaa34b2e17158
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937458"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842102"
 ---
 # <a name="azure-community"></a>Communauté Azure
 
@@ -54,15 +52,19 @@ La disponibilité de l’avantage Azure Community dépend de votre niveau d’ab
 
 |                                          Niveau d'abonnement                                           |     Canaux      |    Avantage    | Renouvelable ? |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
-|                           Visual Studio Enterprise (Standard, cloud annuel)                           | Licences en volume, Azure, Détail |   Un an    |    Oui     |
-|                          Visual Studio Professional (Standard, cloud annuel)                          | Licences en volume, Azure, Détail |   Un an    |    Oui     |
+|                           Visual Studio Enterprise (Standard)                           | Licences en volume, Azure, Détail |   Un an    |    Oui     |
+|                          Visual Studio Professional (Standard)                          | Licences en volume, Azure, Détail |   Un an    |    Oui     |
 |                              Visual Studio Test Professional (Standard)                               |    Licences en volume, Détail     |   Un an    |    Oui     |
 |                                       Plateformes MSDN (Standard)                                       |    Licences en volume, Détail     |   Un an    |    Oui     |
 | Visual Studio Enterprise (cloud mensuel), Visual Studio Professional (cloud mensuel), NFR<sup>1</sup> |        Tous        | Non disponible |     Non     |
 |                                     Visual Studio Dev Essentials                                      |        N/A        | Non disponible |     Non     |
 |                                                                                                       |                   |               |            |
 
-<sup>1</sup> *Inclut : NFR (revente interdite), Microsoft FTE, MVP (Microsoft Valued Professional), RD (Region Director), VSIP (Visual Studio Industry Partner), BizSpark, Imagine, MCT (Microsoft Certified Trainer).*
+<sup>1</sup>  *Inclut :  NFR (revente interdite), Microsoft FTE, MVP (Most Valuable Professional), RD (Regional Director), VSIP (Visual Studio Industry Partner), BizSpark, Imagine, MCT (Microsoft Certified Trainer)*
+
+> [!NOTE]
+> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
+
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 

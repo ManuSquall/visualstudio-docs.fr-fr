@@ -1,5 +1,5 @@
 ---
-title: Données Intellitrace
+title: Données IntelliTrace
 ms.date: 10/13/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +10,13 @@ helpviewer_keywords:
 ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: cad52f39fc45e5561e2a87f12c804cb0d445d96a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 0cac9e52c74b9dc830fa801005a22f0123ee2e41
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064755"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926552"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Procédure : collecter des données IntelliTrace permettant de déboguer des problèmes difficiles
 
@@ -62,7 +60,7 @@ Avant d’effectuer les opérations décrites dans cette procédure, vous devez 
      Ce proxy vous permet de collecter des informations sur les appels http d’un client à un serveur web pour les adaptateurs de données de diagnostic d’impact de test et IntelliTrace.
 
     > [!WARNING]
-    > Si vous décidez d'utiliser un compte personnalisé pour l'identité utilisée pour le pool d'applications sur Internet Information Server (IIS) où vous envisagez de collecter des données Intellitrace, vous devez créer le profil utilisateur local sur l'ordinateur IIS pour le compte personnalisé utilisé. Vous pouvez créer le profil local pour le compte personnalisé en vous ouvrant localement une session sur l'ordinateur IIS ou en exécutant la ligne de commande suivante à l'aide des informations d'identification du compte personnalisé :
+    > Si vous décidez d’utiliser un compte personnalisé pour l’identité utilisée pour le pool d’applications sur le serveur IIS (Internet Information Services) où vous envisagez de collecter des données IntelliTrace, vous devez créer le profil d’utilisateur local sur l’ordinateur IIS pour le compte personnalisé utilisé. Vous pouvez créer le profil local pour le compte personnalisé en vous ouvrant localement une session sur l'ordinateur IIS ou en exécutant la ligne de commande suivante à l'aide des informations d'identification du compte personnalisé :
     >
     > **runas /user:domain\name /profile cmd.exe**
 
@@ -83,7 +81,7 @@ Avant d’effectuer les opérations décrites dans cette procédure, vous devez 
 
 7.  Choisissez l’onglet **Modules**. Sélectionnez **Collecter les données de tous les modules à l’exception des suivants**, et utilisez **Ajouter** pour ajouter un module à la liste et **Supprimer** pour supprimer un module. Cette option vous permet d'inclure tous les modules en cours d'exécution sur le système, à l'exception des modules que vous spécifiez.
 
-     ou
+     - ou -
 
      Sélectionnez **Collecter les données des modules suivants uniquement**, et utilisez **Ajouter** pour ajouter un module à la liste et **Supprimer** pour supprimer un module. Cette option vous permet de spécifier quels modules doivent être utilisés.
 
@@ -92,7 +90,7 @@ Avant d’effectuer les opérations décrites dans cette procédure, vous devez 
 
 8.  Choisissez l’onglet **Processus**. Sélectionnez **Collecter les données de tous les processus à l’exception des suivants**, et utilisez **Ajouter** pour ajouter un processus à la liste et **Supprimer** pour supprimer un processus. Cette option vous permet d'inclure tous les processus qui s'exécutent sur le système, à l'exception des processus que vous spécifiez.
 
-     ou
+     - ou -
 
      Sélectionnez **Collecter les données des processus spécifiés uniquement**, et utilisez **Ajouter** pour ajouter un processus à la liste et **Supprimer** pour supprimer un processus. Cette option vous permet de spécifier quels processus doivent être utilisés.
 

@@ -1,8 +1,6 @@
 ---
 title: 'CA1014 : Marquer les assemblys avec CLSCompliantAttribute'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1014
@@ -13,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: 4fe57449-cf45-4745-bcd2-6345f1ed266d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3375d3a88a9776190887252cff7c2f9accb5fd4e
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 0ea7c0d4b9c1d8edea3c2d96f04114db47f3b0d7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547277"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910998"
 ---
 # <a name="ca1014-mark-assemblies-with-clscompliantattribute"></a>CA1014 : Marquer les assemblys avec CLSCompliantAttribute
 

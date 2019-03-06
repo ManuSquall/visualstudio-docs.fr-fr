@@ -1,7 +1,6 @@
 ---
 title: Spécifier des événements de build personnalisés
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 69e935a5-e208-4bcd-865c-3e5f9b047ca8
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6c5bde6b6dce7655043f3dc766a5faa81fa944e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 66feaa25b9910a48e192e80798e50d80d861fb08
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055126"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940605"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Spécifier des événements de build personnalisés
 
@@ -61,4 +60,4 @@ Les événements de build suivent la même syntaxe que les commandes DOS, mais v
 - [Compiler et générer](../ide/compiling-and-building-in-visual-studio.md)
 - [Ligne de commande de l’événement pré-build/post-build, boîte de dialogue](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
 - [Caractères spéciaux MSBuild](../msbuild/msbuild-special-characters.md)
-- [Procédure pas à pas : Générer une application](../ide/walkthrough-building-an-application.md)
+- [Procédure pas à pas : Générer une application](../ide/walkthrough-building-an-application.md)

@@ -2,22 +2,20 @@
 title: Concepteur de flux de travail - RemoveFromCollection&lt;T&gt; Concepteur d’activités
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.RemoveFromCollection`1.UI
 ms.assetid: 6617ba26-c8bc-4aed-b746-112bf490d288
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 415d03ffda6bbd2e839354b4f7cb143337ab08c8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4b3a43c05f8be4806cf10098a4df673903494756
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891360"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942425"
 ---
 # <a name="removefromcollectiont-activity-designer"></a>RemoveFromCollection\<T > Concepteur d’activités
 
@@ -48,5 +46,5 @@ Le tableau suivant présente le <xref:System.Activities.Statements.RemoveFromCol
 
 - [Collection](../workflow-designer/collection-activity-designers.md)
 - [AddToCollection\<T>](../workflow-designer/addtocollection-t-activity-designer.md)
-- [ClearCollection\<T >](../workflow-designer/clearcollection-t-activity-designer.md)
+- [ClearCollection\<T>](../workflow-designer/clearcollection-t-activity-designer.md)
 - [ExistsInCollection\<T>](../workflow-designer/existsincollection-t-activity-designer.md)

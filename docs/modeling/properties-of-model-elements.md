@@ -4,20 +4,18 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 464616a70d1c6779b2dd370933acc4a56300d17e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6c708dea61246b361620d5dcf05437ff68f1ba42
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947714"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929529"
 ---
 # <a name="properties-of-model-elements"></a>Propriétés des éléments de modèle
-Cette section répertorie les propriétés que vous voyez dans la fenêtre Propriétés lorsque vous sélectionnez un élément dans le schéma de définition DSL ou dans l’Explorateur de DSL.
+Cette section répertorie les propriétés que vous voyez dans la fenêtre Propriétés lorsque vous sélectionnez un élément dans le diagramme de définition DSL ou dans l’Explorateur DSL.
 
  Dans certains cas, vous peuvent trouver des propriétés supplémentaires dans la fenêtre Détails DSL.
 

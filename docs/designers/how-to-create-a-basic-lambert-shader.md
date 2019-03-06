@@ -1,23 +1,21 @@
 ---
-title: 'Procédure : créer un nuanceur Lambert de base'
+title: 'Procédure : Créer un nuanceur Lambert de base'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d71a59e0173be60779675f838fad20943eabc85
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 595f44403d5dc8062bea86504a74ed0d7e0ee565
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913252"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913663"
 ---
-# <a name="how-to-create-a-basic-lambert-shader"></a>Guide pratique pour créer un nuanceur Lambert de base
+# <a name="how-to-create-a-basic-lambert-shader"></a>Procédure : Créer un nuanceur Lambert de base
 
 Cet article indique comment utiliser le concepteur Shader et DGSL (Directed Graph Shader Language) pour créer un nuanceur d’éclairage implémentant le modèle d’éclairage Lambert classique.
 
@@ -55,7 +53,7 @@ Avant de commencer, assurez-vous que la fenêtre **Propriétés** et la **Boîte
 ## <a name="see-also"></a>Voir aussi
 
 - [Guide pratique pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Comment : exporter un nuanceur](../designers/how-to-export-a-shader.md)
-- [Comment : créer un nuanceur Phong de base](../designers/how-to-create-a-basic-phong-shader.md)
+- [Guide pratique pour exporter un nuanceur](../designers/how-to-export-a-shader.md)
+- [Guide pratique pour créer un nuanceur Phong de base](../designers/how-to-create-a-basic-phong-shader.md)
 - [Concepteur Shader](../designers/shader-designer.md)
 - [Nœuds du concepteur Shader](../designers/shader-designer-nodes.md)

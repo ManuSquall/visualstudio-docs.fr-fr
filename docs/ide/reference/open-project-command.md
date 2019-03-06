@@ -1,8 +1,6 @@
 ---
-title: Ouvrir un projet, commande
+title: Ouvrir un projet (commande)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - file.openproject
@@ -14,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: baa85f86-041b-49f4-9ced-0c397dc180e1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ff848ded38b0f59d3894ec4f78dd79ec9d182b8
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 7e9249088b188fde1b346772ab1230d33160fe59
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924146"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55914735"
 ---
 # <a name="open-project-command"></a>Ouvrir un projet, commande
 

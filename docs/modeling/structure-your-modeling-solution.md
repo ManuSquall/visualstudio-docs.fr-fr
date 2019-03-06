@@ -4,17 +4,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2c279da9aed4a11799004a38004f8b82dca65174
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 8b602afa2b6611f5201515f492f7b3c7bb7afa08
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966711"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912415"
 ---
 # <a name="structure-your-modeling-solution"></a>Structurer votre solution de modélisation
 
@@ -36,7 +34,7 @@ Dans un projet de taille moyenne ou grande, la structure de l'équipe est basée
 
 2. Créer une solution Visual Studio, que nous appellerons la solution Architecture. Nous l'utiliserons pour créer la conception globale du système. Elle contiendra des modèles, mais pas de code.
 
-   Ajoutez un diagramme de dépendance à cette solution. Sur le diagramme de dépendances, dessinez l’architecture que vous avez choisi pour votre application. Par exemple, le diagramme peut comporter les couches suivantes et les dépendances entre elles : Présentation, Logique métier et Données.
+   Ajoutez un diagramme de dépendance à cette solution. Sur le diagramme de dépendances, dessinez l’architecture que vous avez choisi pour votre application. Par exemple, le diagramme peut afficher ces couches et les dépendances entre eux : Présentation ; Logique métier ; et les données.
 
 4. Créer une solution Visual Studio distincte pour chaque couche dans le schéma de dépendance d’Architecture.
 
@@ -76,7 +74,7 @@ Dans un projet de taille moyenne ou grande, la structure de l'équipe est basée
 
 1. Dans la solution de chaque couche, ajoutez le projet de modélisation Architecture. Dans **l’Explorateur de solutions**, cliquez sur le nœud solution, pointez sur **ajouter**, puis cliquez sur **projet existant**. Le projet de modélisation unique est maintenant accessible à partir de chaque solution : le projet Architecture et le projet de développement de chaque couche.
 
-2. Dans le modèle partagé, créez un package pour chaque couche : dans **l’Explorateur de solutions**, sélectionnez le projet de modélisation. Dans **Explorateur de modèles UML**, cliquez sur le nœud racine de modèle, pointez sur **ajouter**, puis cliquez sur **Package**.
+2. Dans le modèle partagé, créez un package pour chaque couche : Dans **l’Explorateur de solutions**, sélectionnez le projet de modélisation. Dans **Explorateur de modèles UML**, cliquez sur le nœud racine de modèle, pointez sur **ajouter**, puis cliquez sur **Package**.
 
    Chaque package contiendra des diagrammes qui décrivent la configuration requise et la conception de la couche correspondante.
 

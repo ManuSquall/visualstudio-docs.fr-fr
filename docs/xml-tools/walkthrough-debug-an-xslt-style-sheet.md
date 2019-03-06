@@ -1,21 +1,19 @@
 ---
-title: 'Procédure pas à pas : déboguer une feuille de style XSLT'
+title: "Procédure pas à pas : débogage d'une feuille de style XSLT"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 3db9fa5a-f619-4cb6-86e7-64b364e58e5d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebc8e8f8700690a2ae74fcc91384fb77b238ea33
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8e04a2baa31c9fbcd7dd9c2ceeba7ed0840e8b28
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693394"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55930075"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Procédure pas à pas : Déboguer une feuille de style XSLT
 
@@ -31,15 +29,15 @@ Les étapes de cette procédure pas à pas montrent comment utiliser le débogue
 
 ### <a name="to-start-debugging"></a>Pour démarrer le débogage
 
-1.  À partir de la **fichier** menu, pointez sur **ouvrir**, puis cliquez sur **fichier**.
+1.  À partir de la **fichier** menu, pointez sur **Open**, puis cliquez sur **fichier**.
 
-2.  Recherchez le *belowAvg.xsl* de fichier et cliquez sur **ouvrir**.
+2.  Recherchez le *belowAvg.xsl* de fichier et cliquez sur **Open**.
 
      La feuille de style s'ouvre dans l'éditeur XML.
 
 3.  Cliquez sur le bouton Parcourir (**...** ) sur le **entrée** champ de la fenêtre de propriétés de document.
 
-4.  Recherchez le *books.xml* de fichier et cliquez sur **ouvrir**.
+4.  Recherchez le *books.xml* de fichier et cliquez sur **Open**.
 
      Vous définissez ainsi le document source à utiliser pour la transformation XSLT.
 
@@ -63,11 +61,11 @@ Le **sortie XSLT** fenêtre affiche la sortie de la transformation XSL. Cette fe
 
      Cela rend la **Espion 1** fenêtre visible.
 
-2.  Type `$bookAverage` dans les **nom** et appuyez sur **entrée**.
+2.  Type `$bookAverage` dans le **nom** champ et appuyez sur **entrée**.
 
      La valeur de la variable `$bookAverage` s'affiche dans la fenêtre.
 
-3.  Type `self::node()` dans les **nom** et appuyez sur **entrée**.
+3.  Type `self::node()` dans le **nom** champ et appuyez sur **entrée**.
 
      `self::node()` est une expression XPath qui évalue le nœud de contexte actuel. La valeur de l'expression XPath `self::node()` est le premier nœud book. Cette valeur change à mesure que la transformation progresse.
 
@@ -84,17 +82,17 @@ Le **sortie XSLT** fenêtre affiche la sortie de la transformation XSL. Cette fe
 
      Étant donné que le premier nœud book répond le `xsl:if` condition, il est ajouté à la **sortie XSLT** fenêtre. Le débogueur continue l'exécution jusqu'à ce qu'il se repositionne sur l'élément `xsl:if` de la feuille de style. Le débogueur est maintenant placé sur le second nœud book dans le *books.xml* fichier.
 
-     Dans le **Espion 1** fenêtre la `self::node()` change de valeur pour le second nœud book. En examinant la valeur de l'élément price, vous pouvez constater que le prix est supérieur à la moyenne, donc la condition `xsl:if` ne doit pas se vérifier.
+     Dans le **Espion 1** fenêtre le `self::node()` change de valeur pour le second nœud book. En examinant la valeur de l'élément price, vous pouvez constater que le prix est supérieur à la moyenne, donc la condition `xsl:if` ne doit pas se vérifier.
 
 2.  Appuyez sur **F5** pour continuer.
 
      Étant donné que le second nœud book ne répond pas à la `xsl:if` condition, le nœud book n’est pas ajouté à la **sortie XSLT** fenêtre. Le débogueur continue l'exécution jusqu'à ce qu'il se repositionne sur l'élément `xsl:if` de la feuille de style. Le débogueur est maintenant placé sur le troisième `book` nœud dans le *books.xml* fichier.
 
-     Dans le **Espion 1** fenêtre la `self::node()` valeur devient le troisième nœud book. En examinant la valeur de l'élément `price`, vous pouvez constater que le prix est inférieur à la moyenne, donc la condition `xsl:if` doit se vérifier.
+     Dans le **Espion 1** fenêtre le `self::node()` valeur devient le troisième nœud book. En examinant la valeur de l'élément `price`, vous pouvez constater que le prix est inférieur à la moyenne, donc la condition `xsl:if` doit se vérifier.
 
 3.  Appuyez sur **F5** pour continuer.
 
-     Étant donné que la `xsl:if` condition a été remplie, le troisième livre est ajouté à la **sortie XSLT** fenêtre. Tous les livres du document XML ont été traités et le débogueur s'arrête.
+     Étant donné que le `xsl:if` condition est remplie, le troisième livre est ajouté à la **sortie XSLT** fenêtre. Tous les livres du document XML ont été traités et le débogueur s'arrête.
 
 ## <a name="sample-files"></a>Exemples de fichiers
 

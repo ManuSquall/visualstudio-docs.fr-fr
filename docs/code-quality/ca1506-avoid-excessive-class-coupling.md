@@ -1,8 +1,6 @@
 ---
 title: 'CA1506 : Éviter les couplages de classe excessifs'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - AvoidExcessiveClassCoupling
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9f0943c0-e802-4e3f-8798-2ab8653ddc80
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57c23ea9c6afb27ee89886936fff690a4285f5c0
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 0312289379e8aea79ee4e8291d9f4ee984949aaa
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549904"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934287"
 ---
 # <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506 : Éviter les couplages de classe excessifs
 
@@ -49,4 +47,4 @@ ms.locfileid: "45549904"
 ## <a name="see-also"></a>Voir aussi
 
 - [Avertissements liés à la facilité de maintenance](../code-quality/maintainability-warnings.md)
-- [Mesures de la complexité et de la facilité de maintenance du code managé](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+- [Mesures de la complexité et de la facilité de maintenance du code managé](../code-quality/code-metrics-values.md)

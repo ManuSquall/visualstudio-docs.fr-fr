@@ -1,25 +1,23 @@
 ---
-title: 'Procédure : utiliser le Concepteur de schémas XML avec des littéraux XML'
+title: 'Procédure : Utiliser le Concepteur de schémas XML avec des littéraux XML'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: d11803e7-f81a-41a2-a145-ba494a45cc93
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9858768da0096c98ffb3014f0a52936adbf39019
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cc4da90db115e001f7f06ec2e7dd33d64ef20048
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931114"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927280"
 ---
-# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Comment : utiliser le Concepteur de schémas XML avec des littéraux XML
+# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Procédure : Utiliser le Concepteur de schémas XML avec des littéraux XML
 
 Cette rubrique décrit comment afficher un schéma associé à un littéral XML dans un projet Visual Basic.
 

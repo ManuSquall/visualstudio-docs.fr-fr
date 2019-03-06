@@ -1,8 +1,6 @@
 ---
-title: 'CA1303 : Ne pas transmettre des littéraux en tant que paramètres localisés'
+title: 'CA1303 : Ne pas passer de littéraux en paramètres localisés'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - Do not pass literals as localized parameters
@@ -14,21 +12,21 @@ helpviewer_keywords:
 ms.assetid: 904d284e-76d0-4b8f-a4df-0094de8d7aac
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8716a16ea3b141e7c5053e526d92531d0a77bc1e
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 5bdae3d0ee17624a2b168e5ce944ba10ab37fc8a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859404"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907696"
 ---
-# <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303 : Ne pas transmettre des littéraux en tant que paramètres localisés
+# <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303 : Ne pas passer de littéraux en paramètres localisés
 
 |||
 |-|-|

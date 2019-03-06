@@ -1,8 +1,6 @@
 ---
 title: 'CA1064 : Les exceptions doivent être publiques'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1064
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 83eb224c-2456-4368-acf4-3b3378e67759
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 904aa1fe83677e2d53d2e93964619a5c2aa82625
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8196d4c48bfb93735b62c6f24cb08ec462e64c91
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816820"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916841"
 ---
 # <a name="ca1064-exceptions-should-be-public"></a>CA1064 : Les exceptions doivent être publiques
 

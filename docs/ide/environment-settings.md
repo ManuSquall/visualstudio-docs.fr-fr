@@ -1,20 +1,18 @@
 ---
 title: Paramètres d’environnement
 ms.date: 11/21/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 269a5a4e9cd1b2598ca41ad7b4f4ceb0535d3515
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: c49cbb49b6ee28e7bb184c22052a7bc4bee57d13
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389981"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913273"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Paramètres d’environnement pour Visual Studio
 

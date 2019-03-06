@@ -1,14 +1,9 @@
 ---
-title: Attendu &#39;} &#39; | Documents Microsoft
-ms.custom: ''
+title: Attendu '}' | Microsoft Docs
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1009
 dev_langs:
@@ -16,23 +11,22 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: dff04495-9a6e-4604-9231-e40433fec152
-caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2273d0c98ba3d65bd7b9e855532ca5355d25af66
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 614ee85cca7df89987c4e7c1b4ff87eeebb4678d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632819"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844124"
 ---
-# <a name="expected-3939"></a>Attendu &#39;} &#39;
-Ne pas inclure l’accolade droite qui marque la fin du corps de la fonction, la boucle, bloc de code, ou initialiseur d’objet. Un exemple de cette erreur serait un **pour** boucle avec uniquement l’accolade de gauche marquant le corps de la boucle.  
+# <a name="expected-"></a>'}' attendu
+Vous l’avez fait pas incluent l’accolade fermante qui marque la fin du corps de la fonction, la boucle, bloc de code ou initialiseur d’objet. Un exemple de cette erreur serait un **pour** boucle avec uniquement l’accolade gauche marquant le corps de la boucle.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
--   Ajoutez l’accolade droite qui marque la fin de la fonction, une boucle, un bloc ou un initialiseur d’objet.  
+-   Ajoutez l’accolade fermante qui marque la fin de la fonction, une boucle, un bloc ou un initialiseur d’objet.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Objet de fonction](../../javascript/reference/function-object-javascript.md)   

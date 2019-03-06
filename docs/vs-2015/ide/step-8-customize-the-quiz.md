@@ -1,25 +1,20 @@
 ---
-title: 'Étape 8 : personnaliser le questionnaire | Microsoft Docs'
-ms.custom: ''
+title: 'Étape 8 : Personnaliser le questionnaire | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: dc8edb13-1b23-47d7-b859-8c6f7888c1a9
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 559bd2a1b908ab5b1590a2ec2dd71225020db79a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 413a0cb2f1445f166f1a5c9e541b2a4268ff2e31
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260141"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776083"
 ---
 # <a name="step-8-customize-the-quiz"></a>Étape 8 : personnaliser le questionnaire
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,6 +34,3 @@ Dans la dernière partie du didacticiel, vous allez découvrir quelques méthode
 -   Pour passer à l’étape suivante du didacticiel, consultez [Didacticiel 3 : créer un jeu de combinaisons](../ide/tutorial-3-create-a-matching-game.md).  
   
 -   Pour revenir à l’étape précédente du didacticiel, consultez [Étape 7 : ajouter des problèmes de multiplication et de division](../ide/step-7-add-multiplication-and-division-problems.md).
-
-
-

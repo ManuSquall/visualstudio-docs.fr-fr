@@ -1,23 +1,21 @@
 ---
-title: 'Procédure : sélectionner les schémas XML à utiliser'
+title: 'Procédure : Sélectionner les schémas XML à utiliser'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: d6fda3ef-d465-4788-8514-2f2d528d658c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a04075c0625eb7b4dc899a4e183588b96eb7eadd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 553fbc9bc8a96377a31864e1250987713714e147
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872237"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920559"
 ---
-# <a name="how-to-select-the-xml-schemas-to-use"></a>Comment : sélectionner les schémas XML à utiliser
+# <a name="how-to-select-the-xml-schemas-to-use"></a>Procédure : Sélectionner les schémas XML à utiliser
 
 L’éditeur XML fournit un cache de schéma dans le *%InstallDir%\Xml\Schemas* directory. Le cache de schéma contient des schémas XML connus utilisés pour IntelliSense et la validation de documents XML.
 
@@ -40,7 +38,7 @@ Les schémas spécifiés sont enregistrés dans le fichier d’options utilisate
 
    - Sélectionnez un schéma dans le **schémas XML** boîte de dialogue, cliquez sur le **utilisation** colonne, puis sélectionnez **utiliser ce schéma**.
 
-     - ou -
+     ou
 
    - Sélectionnez plusieurs schémas dans le **schémas XML** boîte de dialogue, avec le bouton droit et sélectionnez **utiliser ce schéma**.
 
@@ -58,7 +56,7 @@ Les schémas spécifiés sont enregistrés dans le fichier d’options utilisate
 
 3.  Recherchez et sélectionnez le ou les schémas à ajouter au cache de schéma.
 
-4.  Cliquez sur **Open**.
+4.  Cliquez sur **Ouvrir**.
 
      Les schémas sont ajoutés au schéma de mettre en cache et est le **utilisation** colonne a la valeur **utiliser ce schéma**.
 

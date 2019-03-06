@@ -1,14 +1,9 @@
 ---
 title: Personnalisation des dispositions de fenêtres
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.windows
 - vs.environment
@@ -28,13 +23,13 @@ ms.assetid: 7517ff13-76de-4ecf-9c1b-eb9b7ff4d718
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e37adb6296a805b8a0fd06196e7ccf1acf5bc32e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: c02bd6bfdbb11a42688bb434cecfd5748e072d96
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057559"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802027"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Personnalisation des dispositions de fenêtres dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +53,7 @@ Dans Visual Studio, vous pouvez personnaliser la position, la taille et le compo
  Quand vous devez afficher ou modifier deux emplacements à la fois dans un document, vous pouvez fractionner les fenêtres. Pour diviser votre document en deux sections qui défilent indépendamment, cliquez sur **Fractionner** dans le menu **Fenêtre** . Cliquez sur **Supprimer le fractionnement** dans le menu **Fenêtre** pour revenir à la vue unique.
 
 ### <a name="toolbars"></a>Barres d'outils
- Vous pouvez organiser les barres d'outils en les faisant glisser ou en utilisant la boîte de dialogue **Personnaliser** . Pour plus d’informations sur le positionnement et personnaliser les barres d’outils, consultez [Comment : personnaliser des Menus et barres d’outils](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+ Vous pouvez organiser les barres d'outils en les faisant glisser ou en utilisant la boîte de dialogue **Personnaliser** . Pour plus d’informations sur la façon de positionner et de personnaliser les barres d’outils, consultez [Guide pratique pour personnaliser les menus et les barres d’outils](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ## <a name="arranging-and-docking-windows"></a>Organisation et ancrage de fenêtres
  Vous pouvez *ancrer*les fenêtres de document et les fenêtres pour définir leur position et leur taille dans le cadre de la fenêtre IDE, ou les faire flotter sous forme de fenêtres distinctes indépendantes de l'IDE. Les fenêtres Outil peuvent être ancrées n'importe où dans le cadre de l'IDE ; certaines fenêtres Outil peuvent être ancrées sous forme de fenêtres à onglets dans le cadre de l'éditeur. Les fenêtres de document peuvent être ancrées dans le cadre de l'éditeur, et elles peuvent être épinglées à leur position actuelle dans l'ordre de tabulation. Vous pouvez ancrer plusieurs fenêtres pour les faire flotter ensemble dans un « rafting » par-dessus l'IDE ou en dehors de celui-ci. Il est aussi possible de masquer ou de minimiser les fenêtres.
@@ -82,7 +77,7 @@ Dans Visual Studio, vous pouvez personnaliser la position, la taille et le compo
   Pour réorganiser les fenêtres Outil et les fenêtres de document, vous pouvez les faire glisser, utiliser les commandes du menu **Fenêtre** ou encore cliquer avec le bouton droit sur la barre de titre de la fenêtre à réorganiser.
 
 > [!NOTE]
->  Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+>  Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ### <a name="docking-windows"></a>Ancrage des fenêtres
  Quand vous cliquez sur la barre de titre d'une fenêtre outil ou sur l'onglet de la fenêtre de document et que vous le faites glisser, un repère en forme de losange apparaît. Au cours de l'opération de glissement, quand le curseur de la souris se trouve sur l'une des flèches dans le losange, une zone grisée apparaît pour vous montrer où la fenêtre sera ancrée si vous relâchez le bouton de la souris à ce moment-là.
@@ -144,7 +139,7 @@ Dans Visual Studio, vous pouvez personnaliser la position, la taille et le compo
 
 3.  Appuyez sur **Ctrl + Alt + X** pour afficher la boîte à outils. Si la fenêtre est ancrée, faites-la glisser pour la faire flotter où vous le souhaitez sur l'un des deux écrans.
 
-4.  Appuyez sur F5 pour configurer Visual Studio en mode débogage. Ajustez librement la position des fenêtres de débogage Auto, Pile des appels et Sortie. La disposition que vous allez créer s'applique à la fois au mode d'édition et au mode débogage.
+4.  Appuyez sur F5 pour configurer Visual Studio en mode débogage. Ajustez librement la position des fenêtres de débogage Auto, Pile des appels et Sortie. La disposition que vous allez créer s'applique à la fois au mode d'édition et au mode débogage.
 
 5.  Quand vous êtes satisfait de vos dispositions dans les modes d’édition et débogage, accédez au menu principal et choisissez **Fenêtre > Enregistrer la disposition de fenêtre**. Appelez cette disposition « Concepteur ».
 
@@ -168,7 +163,7 @@ Dans Visual Studio, vous pouvez personnaliser la position, la taille et le compo
 
      Si vous utilisez une configuration à plusieurs écrans au bureau et un ordinateur portable à un seul écran à la maison, vous pouvez créer des dispositions optimisées pour chaque ordinateur.
 
-     Remarque : si vous appliquez une disposition à plusieurs écrans à un système à un seul écran, les fenêtres flottantes que vous avez placées sur le second écran sont alors masquées derrière la fenêtre Visual Studio. Pour faire passer ces fenêtres au premier plan, appuyez sur Alt + Tab. Si vous ouvrez par la suite Visual Studio avec plusieurs écrans, vous pouvez restaurer les positions spécifiées des fenêtres en réappliquant la disposition.
+     Remarque : si vous appliquez une disposition à plusieurs écrans à un système à un seul écran, les fenêtres flottantes que vous avez placées sur le second écran sont alors masquées derrière la fenêtre Visual Studio. Pour faire passer ces fenêtres au premier plan, appuyez sur Alt + Tab. Si vous ouvrez par la suite Visual Studio avec plusieurs écrans, vous pouvez restaurer les positions spécifiées des fenêtres en réappliquant la disposition.
 
 ##### <a name="manage-and-roam-your-layouts"></a>Gérer vos dispositions et les rendre itinérantes
 
@@ -187,4 +182,4 @@ Dans Visual Studio, vous pouvez personnaliser la position, la taille et le compo
 |[Types de fenêtres](../misc/kinds-of-windows.md)|Discute les différences entre fenêtres Outil et les fenêtres de document dans l'IDE.|
 |[Guide pratique pour Organiser et ancrer des fenêtres](../misc/how-to-arrange-and-dock-windows.md)|Explique comment ancrer les fenêtres, les masquer automatiquement et les disposer en mosaïque et également comment réinitialiser leur disposition.|
 |[Guide pratique pour se déplacer dans l’IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)|Explique comment passer d'une fenêtre active à l'autre dans l'IDE, par ordre d'utilisation. Explique également comment passer à des documents spécifiques.|
-|[Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|Contient des informations sur les combinaisons de paramètres et sur l'utilisation de ces paramètres pour la disposition des fenêtres, les raccourcis clavier et autres éléments de l'IDE.|
+|[Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|Contient des informations sur les combinaisons de paramètres et sur l'utilisation de ces paramètres pour la disposition des fenêtres, les raccourcis clavier et autres éléments de l'IDE.|

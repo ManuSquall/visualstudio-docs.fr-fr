@@ -1,8 +1,6 @@
 ---
-title: 'Comment : définir un nom de Thread en Code managé | Documents Microsoft'
-ms.custom: ''
+title: 'Comment : définir un nom de Thread dans du Code managé | Microsoft Docs'
 ms.date: 04/27/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,27 +15,27 @@ helpviewer_keywords:
 ms.assetid: c0c4d74a-0314-4b71-81c9-b0b019347ab8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 39a732f691cbed525e853d74b5cf4e4abb55eb47
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: d0954ffadd1bb1b09d7294be673f961ca2f18058
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472299"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713085"
 ---
 # <a name="how-to-set-a-thread-name-in-managed-code"></a>Comment : définir un nom de thread dans le code managé
-Il est possible d'attribuer des noms aux threads dans toutes les éditions de Visual Studio. Ces noms sont utiles pour effectuer le suivi des threads dans le **Threads** fenêtre.
-  
- Pour définir un nom de thread en code managé, utilisez la propriété <xref:System.Threading.Thread.Name%2A>.  
-  
-## <a name="example"></a>Exemple  
+Il est possible d'attribuer des noms aux threads dans toutes les éditions de Visual Studio. Ces noms sont utiles pour effectuer le suivi des threads dans la fenêtre **Threads**.
+
+ Pour définir un nom de thread en code managé, utilisez la propriété <xref:System.Threading.Thread.Name%2A>.
+
+## <a name="example"></a>Exemple
 
 ```csharp
 public class Needle
 {
-    // This method will be called when the thread is started.  
+    // This method will be called when the thread is started.
     public void Baz()
     {
         Console.WriteLine("Needle Baz is running on another thread");
@@ -48,35 +46,35 @@ public void Main()
 {
     Console.WriteLine("Thread Simple Sample");
     Needle oNeedle = new Needle();
-    // Create a Thread object.   
+    // Create a Thread object.
     System.Threading.Thread oThread = new System.Threading.Thread(oNeedle.Baz);
-    // Set the Thread name to "MyThread".  
+    // Set the Thread name to "MyThread".
     oThread.Name = "MyThread";
-    // Starting the thread invokes the ThreadStart delegate  
+    // Starting the thread invokes the ThreadStart delegate
     oThread.Start();
 }
 ```
 
-```VB 
-Public Class Needle  
-    ' This method will be called when the thread is started.  
-    Sub Baz()  
-        Console.WriteLine("Needle Baz is running on another thread")  
-    End Sub  
-End Class  
-  
-Sub Main()  
-    Console.WriteLine("Thread Simple Sample")  
-    Dim oNeedle As New Needle()  
-   ' Create a Thread object.   
-    Dim oThread As New System.Threading.Thread(AddressOf oNeedle.Baz)  
-    ' Set the Thread name to "MyThread".  
-    oThread.Name = "MyThread"  
-    ' Starting the thread invokes the ThreadStart delegate  
-    oThread.Start()  
-End Sub  
-```  
-  
-## <a name="see-also"></a>Voir aussi  
- [Débogage d’Applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Guide pratique pour définir un nom de thread dans du code natif](../debugger/how-to-set-a-thread-name-in-native-code.md)
+```VB
+Public Class Needle
+    ' This method will be called when the thread is started.
+    Sub Baz()
+        Console.WriteLine("Needle Baz is running on another thread")
+    End Sub
+End Class
+
+Sub Main()
+    Console.WriteLine("Thread Simple Sample")
+    Dim oNeedle As New Needle()
+   ' Create a Thread object.
+    Dim oThread As New System.Threading.Thread(AddressOf oNeedle.Baz)
+    ' Set the Thread name to "MyThread".
+    oThread.Name = "MyThread"
+    ' Starting the thread invokes the ThreadStart delegate
+    oThread.Start()
+End Sub
+```
+
+## <a name="see-also"></a>Voir aussi
+- [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Guide pratique pour définir un nom de thread dans du code natif](../debugger/how-to-set-a-thread-name-in-native-code.md)

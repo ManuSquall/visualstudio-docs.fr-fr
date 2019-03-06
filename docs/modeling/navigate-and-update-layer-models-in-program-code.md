@@ -7,21 +7,19 @@ helpviewer_keywords:
 - layer models, updating in program code
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8ca10b8504dc4383ad6251e3819c14b7102d32d3
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: d74501a45fe3f6a40b8b64cd0b1da3f07a69bde1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566737"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923315"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Parcourir et mettre à jour les modèles de couche dans le code de programme
 
-Cet article décrit les éléments et les relations dans les modèles de couche, que vous pouvez parcourir et mettre à jour à l’aide du code de programme. Pour plus d’informations sur les diagrammes de dépendance du point de vue de l’utilisateur, consultez [des diagrammes de dépendance : référence](../modeling/layer-diagrams-reference.md) et [des diagrammes de dépendance : recommandations](../modeling/layer-diagrams-guidelines.md).
+Cet article décrit les éléments et les relations dans les modèles de couche, que vous pouvez parcourir et mettre à jour à l’aide du code de programme. Pour plus d’informations sur les diagrammes de dépendance du point de vue de l’utilisateur, consultez [des diagrammes de dépendance : Référence](../modeling/layer-diagrams-reference.md) et [des diagrammes de dépendance : Les instructions](../modeling/layer-diagrams-guidelines.md).
 
 Le <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer> modèle décrit dans cette rubrique est une façade plus général <xref:Microsoft.VisualStudio.GraphModel> modèle. Si vous écrivez un [extension de mouvements ou de commandes de menu](../modeling/add-commands-and-gestures-to-layer-diagrams.md), utilisez la `Layer` modèle. Si vous écrivez un [extension de validation de couche](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), il est plus facile à utiliser le `GraphModel`.
 
@@ -92,7 +90,7 @@ Tous les types d'élément qui peuvent être contenus dans un modèle sont des �
 
 ## <a name="artifact-references"></a>Références d'artefact
 
-Une référence d'artefact (<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>) représente le lien entre une couche et un élément de projet, tel qu'un fichier, une classe ou un dossier. L’utilisateur crée des artefacts de créer une couche ou ajouter en faisant glisser des éléments depuis l’Explorateur de solutions, affichage de classes ou Explorateur d’objets sur un diagramme de dépendance. Il est possible de lier à une couche autant de références d’artefact que nécessaire.
+Une référence d’artefact (<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>) représente le lien entre une couche et un élément de projet, tel qu’un fichier, une classe ou un dossier. L’utilisateur crée des artefacts de créer une couche ou ajouter en faisant glisser des éléments depuis l’Explorateur de solutions, affichage de classes ou Explorateur d’objets sur un diagramme de dépendance. Il est possible de lier à une couche autant de références d’artefact que nécessaire.
 
 Chaque ligne figurant dans l’Explorateur de couches affiche une référence d’artefact. Pour plus d’informations, consultez [créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md).
 
@@ -136,5 +134,5 @@ public void ... (...)
 - [Ajout de commandes et de mouvements aux diagrammes de dépendance](../modeling/add-commands-and-gestures-to-layer-diagrams.md)
 - [Ajout d’une validation d’architecture personnalisée aux diagrammes de dépendance](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)
 - [Ajout de propriétés personnalisées à des diagrammes de dépendance](../modeling/add-custom-properties-to-layer-diagrams.md)
-- [Diagrammes de dépendance : référence](../modeling/layer-diagrams-reference.md)
-- [Diagrammes de dépendance : recommandations](../modeling/layer-diagrams-guidelines.md)
+- [Diagrammes de dépendance : Référence](../modeling/layer-diagrams-reference.md)
+- [Diagrammes de dépendance : Guidelines](../modeling/layer-diagrams-guidelines.md)

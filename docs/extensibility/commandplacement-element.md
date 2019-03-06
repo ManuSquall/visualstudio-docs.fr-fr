@@ -1,9 +1,6 @@
 ---
 title: Élément CommandPlacement | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - CommandPlacements element (VSCT XML schema)
@@ -11,64 +8,64 @@ helpviewer_keywords:
 ms.assetid: 2cbd7ac8-c55a-43d8-a26d-713b3d790016
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d7288de9b0724d8ff4ef7b6174f59e747a9879d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f9367e412f66ded1fd009b31a4788ed4ecc86a2b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870261"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56718181"
 ---
 # <a name="commandplacement-element"></a>Élément CommandPlacement
-L’élément CommandPlacement permet de boutons, des groupes et des menus être inclus dans plus d’un groupe ou un menu. À l’aide de l’élément CommandPlacement, il est inutile de redéfinir intégralement ces éléments afin de modifier l’apparence d’une interface utilisateur.  
-  
- Pour plus d’informations, consultez [créer des groupes de boutons réutilisables](../extensibility/creating-reusable-groups-of-buttons.md).  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```  
-<CommandPlacement guid="guidMyCommandSet" id="MyCommand" priority="0x001" >  
-  <Parent>... </Parent>  
-</CommandPlacement>  
-```  
-  
-## <a name="attributes-and-elements"></a>Attributs et éléments  
- Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
-  
-### <a name="attributes"></a>Attributs  
-  
-|Attribut|Description|  
-|---------------|-----------------|  
-|GUID|Obligatoire. Le guid du jeu de commandes, tel que défini dans le [élément Symbols](../extensibility/symbols-element.md).|  
-|ID|Obligatoire. L’id du menu, un groupe ou une commande à placer, tel que défini dans le `Symbols Element`.|  
-|priority|Obligatoire. Détermine la position visuelle de l’élément dans son élément parent.|  
-|Condition|Facultatif. Consultez [Aattributes conditionnel](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
-  
-### <a name="child-elements"></a>Éléments enfants  
-  
-|Élément|Description|  
-|-------------|-----------------|  
-|Parent|Obligatoire. Le menu ou un groupe qui héberge l’élément à être placé.|  
-  
-### <a name="parent-elements"></a>Éléments parents  
-  
-|Élément|Description|  
-|-------------|-----------------|  
-|[Élément CommandPlacements](../extensibility/commandplacements-element.md)|Spécifie les groupes d’éléments CommandPlacements et CommandPlacement.|  
-  
-## <a name="example"></a>Exemple  
-  
-```  
-<CommandPlacements>  
-  <CommandPlacement guid="guidWidgetPackage" id="cmdidInsertOptions"  
-    priority="0x0300">  
-    <Parent guid="cmdGuidWidgetCommands" id="menuIDEditWidget"/>  
-  </CommandPlacement>  
-</CommandPlacements>  
-```  
-  
-## <a name="see-also"></a>Voir aussi  
- [Élément CommandPlacements](../extensibility/commandplacements-element.md)   
- [Visual Studio fichiers command table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+L’élément CommandPlacement permet de boutons, des groupes et des menus être inclus dans plus d’un groupe ou un menu. À l’aide de l’élément CommandPlacement, il est inutile de redéfinir intégralement ces éléments afin de modifier l’apparence d’une interface utilisateur.
+
+ Pour plus d’informations, consultez [créer des groupes de boutons réutilisables](../extensibility/creating-reusable-groups-of-buttons.md).
+
+## <a name="syntax"></a>Syntaxe
+
+```
+<CommandPlacement guid="guidMyCommandSet" id="MyCommand" priority="0x001" >
+  <Parent>... </Parent>
+</CommandPlacement>
+```
+
+## <a name="attributes-and-elements"></a>Attributs et éléments
+ Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.
+
+### <a name="attributes"></a>Attributs
+
+|Attribut|Description|
+|---------------|-----------------|
+|guid|Obligatoire. Le guid du jeu de commandes, tel que défini dans le [élément Symbols](../extensibility/symbols-element.md).|
+|ID|Obligatoire. L’id du menu, un groupe ou une commande à placer, tel que défini dans le `Symbols Element`.|
+|priority|Obligatoire. Détermine la position visuelle de l’élément dans son élément parent.|
+|Condition|Facultatif. Consultez [Aattributes conditionnel](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+
+### <a name="child-elements"></a>Éléments enfants
+
+|Élément|Description|
+|-------------|-----------------|
+|Parent|Obligatoire. Le menu ou un groupe qui héberge l’élément à être placé.|
+
+### <a name="parent-elements"></a>Éléments parents
+
+|Élément|Description|
+|-------------|-----------------|
+|[Élément CommandPlacements](../extensibility/commandplacements-element.md)|Spécifie les groupes d’éléments CommandPlacements et CommandPlacement.|
+
+## <a name="example"></a>Exemple
+
+```
+<CommandPlacements>
+  <CommandPlacement guid="guidWidgetPackage" id="cmdidInsertOptions"
+    priority="0x0300">
+    <Parent guid="cmdGuidWidgetCommands" id="menuIDEditWidget"/>
+  </CommandPlacement>
+</CommandPlacements>
+```
+
+## <a name="see-also"></a>Voir aussi
+- [Élément CommandPlacements](../extensibility/commandplacements-element.md)
+- [Visual Studio fichiers command table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

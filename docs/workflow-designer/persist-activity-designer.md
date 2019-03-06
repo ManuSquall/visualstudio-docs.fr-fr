@@ -2,22 +2,20 @@
 title: Concepteur d’activités de flux de travail concepteur - Persist
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Persist.UI
 ms.assetid: be8648dd-3eb9-4a50-8ec1-57a8be804692
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51f74b5348c7e99824659ee713171bd71c5f522e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c97d916d00d1c976b4e27381f55e42cbb7cb0db
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831340"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940618"
 ---
 # <a name="persist-activity-designer"></a>Concepteur d'activités Persist
 

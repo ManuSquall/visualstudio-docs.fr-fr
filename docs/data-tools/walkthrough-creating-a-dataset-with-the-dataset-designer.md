@@ -10,17 +10,15 @@ helpviewer_keywords:
 - datasets [Visual Basic], creating
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 32a093e59d918f34ddf5da9cbb5edb13c96b2777
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
-ms.translationtype: MT
+ms.openlocfilehash: d706ab0cf179a4a4efefa8f60143ea8ce9800ef9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117925"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927670"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Procédure pas à pas : Créer un jeu de données avec le Concepteur de Dataset
 
@@ -44,11 +42,11 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
 
        Après une courte période, la requête est terminée et la base de données Northwind est créé.
 
-## <a name="create-a-new-windows-forms-application-project"></a>Créer un nouveau projet d’Application Windows Forms
+## <a name="create-a-new-windows-forms-application-project"></a>Créer un projet Application Windows Forms
 
 1. Dans Visual Studio, sur le **fichier** menu, sélectionnez **New** > **projet**.
 
-2. Développez le **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
+2. Développez le **Visual C#**  ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
 
 3. Dans le volet central, sélectionnez le **Windows Forms application** type de projet.
 
@@ -58,7 +56,7 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
 
 ## <a name="add-a-new-dataset-to-the-application"></a>Ajouter un nouveau jeu de données à l’Application
 
-1.  Sur le **projet** menu, sélectionnez **ajouter un nouvel élément**.
+1.  Dans le menu **Projet**, sélectionnez **Ajouter un nouvel élément**.
 
      La boîte de dialogue **Ajouter un nouvel élément** s’affiche.
 
@@ -70,7 +68,7 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
 
 ## <a name="create-a-data-connection-in-server-explorer"></a>Créer une connexion de données dans l’Explorateur de serveurs
 
-1.  Sur le **vue** menu, cliquez sur **Explorateur de serveurs**.
+1.  Dans le menu **Affichage**, cliquez sur **Explorateur de serveurs**.
 
 2.  Dans **Explorateur de serveurs**, cliquez sur le **se connecter à la base de données** bouton.
 

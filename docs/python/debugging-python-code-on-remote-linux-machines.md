@@ -2,22 +2,20 @@
 title: Déboguer du code Python sur des ordinateurs Linux distants
 description: Utilisez Visual Studio pour déboguer du code Python exécuté sur des ordinateurs Linux distants. Découvrez notamment les informations relatives aux étapes de configuration nécessaires, à la sécurité et au dépannage.
 ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4c14fb14a8941895fab473952908e6aefa2e2f14
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: bb98a94e60d84fc48078be396e0fb48dd8952c55
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067944"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945740"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Déboguer à distance du code Python sur Linux
 
@@ -67,7 +65,7 @@ Pour plus d’informations sur la création d’une règle de pare-feu pour une 
         print('Nope. The number I was thinking of was {0}'.format(number))
     ```
 
-1. Installez le package `ptvsd` dans votre environnement à l’aide de `pip3 install ptvsd`. 
+1. Installez le package `ptvsd` dans votre environnement à l’aide de `pip3 install ptvsd`.
    >[!NOTE]
    >Il est conseillé d’enregistrer la version du ptvsd qui est installé au cas où vous en auriez besoin pour la résolution des problèmes ; la [liste des ptvsd](https://pypi.python.org/pypi/ptvsd) indique également les versions disponibles.
 

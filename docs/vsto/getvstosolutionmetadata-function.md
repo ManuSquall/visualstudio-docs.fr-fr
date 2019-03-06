@@ -1,45 +1,40 @@
 ---
-title: Getvstosolutionmetadata, fonction
-ms.custom: ''
+title: GetVstoSolutionMetadata function
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6289a0d19bc6621d98edfc974ad265791876a70
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d7714e78e897e6c8b391a6c30e9a548671ce80c4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673636"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635005"
 ---
-# <a name="getvstosolutionmetadata-function"></a>Getvstosolutionmetadata, fonction
-  Cette API prend en charge l’infrastructure Office et n’est pas destinée à être utilisée directement à partir de votre code.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
+# <a name="getvstosolutionmetadata-function"></a>GetVstoSolutionMetadata function
+  Cette API prend en charge l’infrastructure Office et n’est pas destinée à être utilisée directement à partir de votre code.
+
+## <a name="syntax"></a>Syntaxe
+
 ```csharp
-HRESULT WINAPI GetVstoSolutionMetadata(  
-    LPCWSTR lpwszSolutionMetadataKey,  
-    ISolutionMetadata** ppSolutionInfo  
-);  
-```  
-  
-### <a name="parameters"></a>Paramètres  
-  
-|Paramètre|Description|  
-|---------------|-----------------|  
-|*lpwszSolutionMetadataKey*|N’utilisez pas.|  
-|*ppSolutionInfo*|N’utilisez pas.|  
-  
-## <a name="return-value"></a>Valeur de retour  
- Si la fonction réussit, elle retourne **S_OK**. Si la fonction échoue, elle retourne un code d’erreur.  
-  
-  
+HRESULT WINAPI GetVstoSolutionMetadata(
+    LPCWSTR lpwszSolutionMetadataKey,
+    ISolutionMetadata** ppSolutionInfo
+);
+```
+
+### <a name="parameters"></a>Paramètres
+
+|Paramètre|Description|
+|---------------|-----------------|
+|*lpwszSolutionMetadataKey*|N’utilisez pas.|
+|*ppSolutionInfo*|N’utilisez pas.|
+
+## <a name="return-value"></a>Valeur de retour
+ Si la fonction réussit, elle retourne **S_OK**. Si la fonction échoue, elle retourne un code d’erreur.

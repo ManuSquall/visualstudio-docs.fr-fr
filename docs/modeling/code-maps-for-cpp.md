@@ -4,17 +4,15 @@ ms.date: 05/16/2018
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e2925eb3bfaf64a48b36c3c7205dce36538123c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3904ff08496257d18589e36e5878f49404bbdf7c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823579"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939552"
 ---
 # <a name="code-maps-for-c-projects"></a>Cartes de code pour les projets C++
 

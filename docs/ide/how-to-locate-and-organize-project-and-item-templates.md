@@ -1,8 +1,6 @@
 ---
 title: Organiser les modèles
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], locations
@@ -12,13 +10,13 @@ helpviewer_keywords:
 - templates [Visual Studio], organizing
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c6bca61dd88b164fcae2b2ccb7e2a98086bf102b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 40abd872863231b2631830cd214fc9060da364d3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066286"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952305"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Procédure : Localiser et organiser des modèles de projet et d’élément
 

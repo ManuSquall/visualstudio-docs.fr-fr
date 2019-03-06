@@ -1,14 +1,9 @@
 ---
-title: Attendu &#39;=&#39; (JavaScript) | Microsoft Docs
-ms.custom: ''
+title: Expected '=' (JavaScript) | Microsoft Docs
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1011
 dev_langs:
@@ -16,18 +11,17 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: a8ce6fbf-8663-4770-8fba-677d04c84825
-caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8cae54b60ae94be5929ae5c5cfb8f8f0c1a2ea92
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f055090b32e8bf23919fc699d9045ab89f922e0e
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909995"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840391"
 ---
-# <a name="expected-3939-javascript"></a>Attendu &#39;=&#39; (JavaScript)
+# <a name="expected--javascript"></a>'=' attendu (JavaScript)
 Vous a tenté de créer une variable qui doit être utilisé avec les instructions de compilation conditionnelle, mais s’est pas placer un signe égal entre la variable et la valeur que vous souhaitez affecter à ce dernier.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  

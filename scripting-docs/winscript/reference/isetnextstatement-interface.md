@@ -1,5 +1,5 @@
 ---
-title: Isetnextstatement, Interface | Documents Microsoft
+title: Interface ISetNextStatement | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,17 +12,17 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bdd71a427a8ef2c57684eef75a044d0cedf42415
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ac2d6dd0da14be5a624cff0b55985770b8d70fdf
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733619"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344055"
 ---
 # <a name="isetnextstatement-interface"></a>ISetNextStatement, interface
-Cette interface est implémentée par un interpréteur pour autoriser le Gestionnaire de déboguer des processus mettre à jour de l’instruction en cours. Il est implémenté à partir d’un objet de frame de pile et PDM obtient cette interface via QueryInterface.  
+Cette interface est implémentée par un interpréteur pour autoriser le Gestionnaire de débogage de processus pour mettre à jour de l’instruction en cours. Il est implémenté à partir d’un objet de frame de pile, et la PDM obtient cette interface via QueryInterface.  
   
- interface fournit des méthodes qui sont utiles pour la définition du point d’exécution, qui détermine l’instruction suivante à exécuter.  
+ interface fournit des méthodes qui sont utiles pour configurer le point d’exécution, qui détermine l’instruction suivante à exécuter.  
   
  Outre les méthodes héritées de `IUnknown`, le `ISetNextStatement` interface expose les méthodes suivantes.  
   

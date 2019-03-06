@@ -1,8 +1,6 @@
 ---
 title: "CA2122 : N'exposez pas indirectement des méthodes avec des demandes de liaison"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2122
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 3eda58e7-c6ec-41c3-8112-ae0841109c6a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d17c2981e4dabe82817aeedcf4fcab93e970b47
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 8239b27cd92f66ae8f74ddb1accd95535bf56f93
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548872"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953865"
 ---
 # <a name="ca2122-do-not-indirectly-expose-methods-with-link-demands"></a>CA2122 : N'exposez pas indirectement des méthodes avec des demandes de liaison
 

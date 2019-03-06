@@ -1,14 +1,9 @@
 ---
 title: Comparaison des fichiers de données de performances | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, comparing profiling tools report files
 - profiling tools reports, comparing
@@ -16,13 +11,13 @@ ms.assetid: e6fda144-f21d-4912-9d16-1b8d3555a210
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3aa37462915b3155a21248a968325a24b8da05bd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 132a3cb5f7d4257aa0728960cb5bfd50c5ee3066
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741581"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763200"
 ---
 # <a name="comparing-performance-data-files"></a>Comparaison des fichiers de données de performances
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,6 +36,3 @@ La fonctionnalité de comparaison de fichiers de données des outils de profilag
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Guide pratique pour comparer des fichiers de données de performances](../profiling/how-to-compare-performance-data-files.md)
-
-
-

@@ -1,9 +1,6 @@
 ---
 title: Assistant (. Fichier vsz) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - .vsz files
@@ -12,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 72e1d0f3-eef1-455e-b803-96827f030f50
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0076e1ee7409486a3b7b86ccd0f46bcd02a54a5
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: b1bd68e9d647f9a44eaa8b975995f2d7de3d9640
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757881"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014001"
 ---
 # <a name="wizard-vsz-file"></a>Fichier Assistant (.Vsz)
 

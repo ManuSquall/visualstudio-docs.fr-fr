@@ -1,8 +1,6 @@
 ---
-title: Erreurs de débogage distant et dépannage | Documents Microsoft
-ms.custom: ''
+title: Erreurs de débogage distant et dépannage | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -19,26 +17,26 @@ helpviewer_keywords:
 - remote debugging, errors
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ecbac9eea6b3510d670aa00e48c85c8dd5bb0e4b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: df38a0d65a3073e35228c84fa18606e2fe014f9d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474361"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702107"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>Erreurs de débogage distant et dépannage
-Les erreurs suivantes peuvent se produire lors d’une tentative de débogage distant.  
-  
--   [Erreur : Impossible d’automatiquement une étape dans le serveur](../debugger/error-unable-to-automatically-step-into-the-server.md)  
-  
--   [Erreur : Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) ne semble pas s’exécuter sur l’ordinateur distant](../debugger/error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running-on-the-remote-computer.md)  
-  
--   [Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)  
-  
--   [Erreur : l’ordinateur distant n’apparaît pas dans une boîte de dialogue Connexions à distance](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)  
-  
-## <a name="see-also"></a>Voir aussi  
- [Débogage à distance](../debugger/remote-debugging.md)
+Les erreurs suivantes peuvent se produire lors d’une tentative de débogage distant.
+
+-   [Error: Unable to Automatically Step Into the Server](../debugger/error-unable-to-automatically-step-into-the-server.md)
+
+-   [Erreur : Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) ne semble pas s’exécuter sur l’ordinateur distant](/visualstudio/debugger/error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running)
+
+-   [Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)
+
+-   [Erreur : l’ordinateur distant n’apparaît pas dans une boîte de dialogue Connexions à distance](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)
+
+## <a name="see-also"></a>Voir aussi
+- [Remote Debugging](../debugger/remote-debugging.md)

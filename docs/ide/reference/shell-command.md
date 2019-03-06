@@ -1,8 +1,6 @@
 ---
 title: Shell, commande
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - tools.shell
@@ -17,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 737fda23-b852-45c4-a9fe-41cbce6ba70f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04ec2719b57f387633a7244d7089be963d3ba87c
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: cc571c40dfcc1074b157b850c8b6f3f5e4649563
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704101"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924511"
 ---
 # <a name="shell-command"></a>Shell, commande
 Lance les programmes exécutables à partir de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
@@ -43,20 +41,20 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 
  `args`
 
- Facultative. Arguments à passer au programme appelé.
+ Optionnel. Arguments à passer au programme appelé.
 
 ## <a name="switches"></a>Commutateurs
  /commandwindow [ou] /command [ou] /c [ou] /cmd
 
- Facultative. Spécifie que la sortie pour l’exécutable doit s’afficher dans la fenêtre **Commande**.
+ Optionnel. Spécifie que la sortie pour l’exécutable doit s’afficher dans la fenêtre **Commande**.
 
  /dir:`folder` [ou] /d: `folder`
 
- Facultative. Spécifie le répertoire de travail à définir quand le programme est exécuté.
+ Optionnel. Spécifie le répertoire de travail à définir quand le programme est exécuté.
 
  /outputwindow [ou] /output [ou] /out [ou] /o
 
- Facultative. Spécifie que la sortie pour l’exécutable doit s’afficher dans la fenêtre **Sortie**.
+ Optionnel. Spécifie que la sortie pour l’exécutable doit s’afficher dans la fenêtre **Sortie**.
 
 ## <a name="remarks"></a>Notes
  Les commutateurs /dir /o /c doivent être spécifiés immédiatement après `Tools.Shell`. Toute syntaxe spécifiée après le nom de l’exécutable est transmise en tant qu’argument de la ligne de commande.
@@ -94,4 +92,4 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 - [Commande, fenêtre](../../ide/reference/command-window.md)
 - [Sortie (fenêtre)](../../ide/reference/output-window.md)
 - [Rechercher/Commande, zone](../../ide/find-command-box.md)
-- [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

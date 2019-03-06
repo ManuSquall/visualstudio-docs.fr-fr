@@ -1,8 +1,6 @@
 ---
 title: Général, Environnement, boîte de dialogue Options
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.Message.0x800a002e
@@ -17,22 +15,21 @@ helpviewer_keywords:
 - menus, customizing
 - Windows menu customizing
 - status bars, displaying
-- Visual Studio Start page, setting
 - IDE, startup options
 - editors, autocompletion
 - Options dialog box, General Environment
 - General Environment Options dialog box
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b52a6815fe9eb9333d6a87b25c1b8dd33ff7eb08
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 4faae6f061da675efdecdea5f8c4a0e606d486b8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389161"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710836"
 ---
 # <a name="general-environment-options-dialog-box"></a>Général, Environnement, boîte de dialogue Options
 

@@ -1,14 +1,9 @@
 ---
 title: Utilisation de la boîte à outils | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.chooseitems
 - vs.toolboxpages.activexcontrols
@@ -31,13 +26,13 @@ ms.assetid: 82e7cb43-4d0b-4e17-b7b0-43f96c22c3c2
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 28f142a011f86afe70bfe83fd2cec274548c7b50
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c8498397e45aad889d575c4ec337d107755b2dba
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173145"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788263"
 ---
 # <a name="using-the-toolbox"></a>Utilisation de la boîte à outils
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,6 +68,3 @@ Vous pouvez utiliser la boîte à outils pour ajouter des contrôles et d'autres
   
 ## <a name="creating-and-distributing-custom-toolbox-controls"></a>Création et distribution de contrôles de boîte à outils personnalisés  
  Vous pouvez créer un contrôle de boîte à outils personnalisé en Visual Basic ou Visual C#, et vous pouvez démarrer avec un modèle de projet basé sur [Windows Presentation Foundation](../extensibility/creating-a-wpf-toolbox-control.md) ou [Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md). Vous pouvez ensuite distribuer votre contrôle à vos collègues ou le publier sur le web à l’aide du [programme d’installation de contrôles de boîte à outils](http://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx).
-
-
-

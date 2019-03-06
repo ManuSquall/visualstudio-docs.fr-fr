@@ -10,17 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language, toolbox
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3b0acab24dbb7ff1313e62e91b17bf87190dbb99
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: ae5873462c2938ab4215d1cd4837c496e235ab35
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967439"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913364"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Personnalisation des outils et de la boîte à outils
 
@@ -73,13 +71,13 @@ Le **Générateur de connexion** propriété d’un outil de connexion fait réf
 
      Si vous souhaitez définir une nouvelle icône, créez un fichier bitmap dans l’Explorateur de solutions dans le **Dsl\Resources** dossier. Le fichier doit avoir les valeurs de propriété suivantes : **Action de génération** = **contenu**; **Copy to Output Directory** = **ne copiez pas**.
 
-4.  **Pour un outil d’élément :** définir le **classe** propriété de l’outil pour faire référence à une classe de domaine concrète qui est mappée à une forme.
+4.  **Pour un outil d’élément :** Définir le **classe** propriété de l’outil pour faire référence à une classe de domaine concrète qui est mappée à une forme.
 
-     **Pour un outil de connecteur :** définir le **Générateur de connexion** propriété de l’outil à un des éléments qui sont proposées dans la liste déroulante. Les générateurs de connexions sont automatiquement créés lorsque vous mappez un connecteur sur une relation de domaine. Si vous avez créé récemment un connecteur, vous devez normalement sélectionner le générateur de connexions associé.
+     **Pour un outil de connecteur :** Définir le **Générateur de connexion** propriété de l’outil à un des éléments qui sont proposées dans la liste déroulante. Les générateurs de connexions sont automatiquement créés lorsque vous mappez un connecteur sur une relation de domaine. Si vous avez créé récemment un connecteur, vous devez normalement sélectionner le générateur de connexions associé.
 
 5.  Pour tester la solution DSL, appuyez sur F5 ou CTRL + F5 et dans l’instance expérimentale de Visual Studio, ouvrez un exemple de fichier de modèle. Le nouvel outil doit apparaître sur la boîte à outils. Faites-le glisser vers le diagramme pour vérifier qu'un nouvel élément a été créé.
 
-     Si l’outil n’apparaît pas, arrêtez l’expérimentale de Visual Studio. Dans le Windows **Démarrer** menu, exécutez **réinitialiser l’Instance expérimentale de Microsoft Visual Studio 2010**. Sur le **Build** menu, cliquez sur **régénérer la Solution**. Puis, testez à nouveau le DSL.
+     Si l’outil n’apparaît pas, arrêtez l’expérimentale de Visual Studio. Dans le Windows **Démarrer** menu, exécutez **réinitialiser l’Instance expérimentale de Microsoft Visual Studio 2010**. Dans le menu **Générer**, cliquez sur **Régénérer la solution**. Puis, testez à nouveau le DSL.
 
 ## <a name="customizing"></a> Personnalisation des outils d’élément
  Par défaut, l'outil crée une seule instance de la classe spécifiée, mais vous pouvez modifier ce comportement de deux façons :
@@ -238,6 +236,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 - [Personnalisation de la création et du mouvement des éléments](../modeling/customizing-element-creation-and-movement.md)
 - [Personnalisation du comportement de la copie](../modeling/customizing-copy-behavior.md)
-- [Guide pratique pour ajouter un gestionnaire de glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [Guide pratique pour Ajouter un gestionnaire glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Navigation et mise à jour d’un modèle dans le code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Exemple de diagrammes de circuit DSL](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

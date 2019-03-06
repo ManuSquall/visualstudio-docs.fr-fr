@@ -1,8 +1,6 @@
 ---
-title: 'CA1035 : Les implémentations ICollection possèdent des membres fortement typés'
+title: 'CA1035 : Les implémentations ICollection possèdent des membres fortement typés'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - ICollectionImplementationsHaveStronglyTypedMembers
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: ad404eb5-cf6a-44b7-b78a-8ebfb654bc7f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcf5218f41a11d50b6cc3f36767190cce5deab1b
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: ecf1db06ba3b78c6033b143b55f41cc203441973
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45545526"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55915855"
 ---
-# <a name="ca1035-icollection-implementations-have-strongly-typed-members"></a>CA1035 : Les implémentations ICollection possèdent des membres fortement typés
+# <a name="ca1035-icollection-implementations-have-strongly-typed-members"></a>CA1035 : Les implémentations ICollection possèdent des membres fortement typés
 
 |||
 |-|-|

@@ -1,14 +1,9 @@
 ---
-title: Constante attendue | Documents Microsoft
-ms.custom: ''
+title: Constante attendue | Microsoft Docs
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1031
 dev_langs:
@@ -16,19 +11,18 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 8da7485f-7050-4559-97c3-ccfa782cdff3
-caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a7cd9907da27ac07ff9e1c41157c2b2e08ef82ab
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a449faa9d74e96406bd8fb18bbb63f61d2d53bdc
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632939"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843242"
 ---
 # <a name="expected-constant"></a>Constante attendue
-Vous avez tenté d’utiliser une variable (non conditionnelle compilation) dans une instruction de test de compilation conditionnelle. Instructions de compilation conditionnelle test doivent correspondre à une constante.  
+Vous avez tenté d’utiliser une variable (compilation non conditionnelle) dans une instruction de test de compilation conditionnelle. Instructions de test de compilation conditionnelle doivent correspondre à une constante.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   

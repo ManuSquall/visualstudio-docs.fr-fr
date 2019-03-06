@@ -1,25 +1,23 @@
 ---
-title: 'Procédure pas à pas : utilisation de MSBuild | Microsoft Docs'
-ms.custom: ''
-ms.date: 11/04/2016
-ms.technology: msbuild
+title: 'Procédure pas à pas : Utilisation de MSBuild | Microsoft Docs'
+ms.date: 12/18/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94fdbb5f143d1c087d97490961d230ace239f348
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: ac73f7c7915c3142cd496ebf8a76bb22995028b4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880147"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947060"
 ---
-# <a name="walkthrough-use-msbuild"></a>Procédure pas à pas : utiliser MSBuild
+# <a name="walkthrough-use-msbuild"></a>Procédure pas à pas : Utiliser MSBuild
 MSBuild est la plateforme de génération pour Microsoft et Visual Studio. Cette procédure pas à pas vous présente les blocs de construction de MSBuild, et vous indique comment écrire, manipuler et déboguer des projets MSBuild. Vous allez découvrir comment :
 
 -   créer et manipuler un fichier projet ;
@@ -116,24 +114,28 @@ La tâche Message est l’une des nombreuses tâches fournies avec MSBuild. Pour
 La tâche Message prend la valeur de chaîne de l’attribut Text en tant qu’entrée et l’affiche sur le périphérique de sortie. La cible HelloWorld exécute la tâche Message à deux reprises : tout d’abord pour afficher « Hello », puis pour afficher « World ».
 
 ## <a name="build-the-target"></a>Générer la cible
- Exécutez MSBuild à partir de l’**Invite de commandes de Visual Studio** pour générer la cible HelloWorld définie précédemment. Utilisez le commutateur de ligne de commande -target ou -t pour sélectionner la cible.
+ Exécutez MSBuild à partir de **l’Invite de commandes développeur** pour Visual Studio pour générer la cible HelloWorld définie précédemment. Utilisez le commutateur de ligne de commande -target ou -t pour sélectionner la cible.
 
 > [!NOTE]
->  Dans les sections ci-après, nous appellerons l’**Invite de commandes de Visual Studio** **fenêtre Commande**.
+>  Dans les sections ci-après, nous appellerons **l’Invite de commandes développeur** **fenêtre Commande**.
 
 #### <a name="to-build-the-target"></a>Pour générer la cible
 
-1.  Cliquez sur **Démarrer**, puis sur **Tous les programmes**. Recherchez l’**Invite de commandes de Visual Studio** et cliquez dessus dans le dossier **Visual Studio Tools**.
+1. Ouvrez la **fenêtre Commande**.
 
-2.  Dans la fenêtre Commande, accédez au dossier contenant le fichier projet, dans ce cas, *D:\BuildApp\BuildApp*.
+   (Windows 10) Dans la zone de recherche dans la barre des tâches, commencez à taper le nom de l’outil, tel que `dev` ou `developer command prompt`. S’affiche alors une liste des applications installées qui correspondent à votre modèle de recherche.
 
-3.  Exécutez msbuild avec le commutateur de commande -t:HelloWorld. Cette opération sélectionne et génère la cible HelloWorld :
+   Si vous avez besoin pour le trouver manuellement, le fichier est *LaunchDevCmd.bat* dans le dossier *<visualstudio installation folder>\<version>\Common7\Tools*.
+
+2. Dans la fenêtre Commande, accédez au dossier contenant le fichier projet, dans ce cas, *D:\BuildApp\BuildApp*.
+
+3. Exécutez msbuild avec le commutateur de commande -t:HelloWorld. Cette opération sélectionne et génère la cible HelloWorld :
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4.  Examinez la sortie dans la **fenêtre Commande**. Vous devez voir les deux lignes « Hello » et « World » :
+4. Examinez la sortie dans la **fenêtre Commande**. Vous devez voir les deux lignes « Hello » et « World » :
 
     ```
     Hello
@@ -225,10 +227,10 @@ $(PropertyName)
  Pratiquement tous les éléments MSBuild peuvent posséder un attribut Condition. Pour en savoir plus sur l’utilisation de l’attribut Condition, consultez l’article [Conditions MSBuild](../msbuild/msbuild-conditions.md).
 
 ### <a name="reserved-properties"></a>Propriétés réservées
- MSBuild réserve certains noms de propriété pour stocker des informations sur le fichier projet et les binaires de MSBuild. MSBuildToolsPath est un exemple de propriété réservée. Les propriétés réservées sont référencées avec la notation $ comme toute autre propriété. Pour plus d’informations, consultez [Guide pratique pour référencer le nom ou l’emplacement du fichier projet](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) et [Propriétés réservées et connues de MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).
+ MSBuild réserve certains noms de propriété pour stocker des informations sur le fichier projet et les binaires de MSBuild. MSBuildToolsPath est un exemple de propriété réservée. Les propriétés réservées sont référencées avec la notation $ comme toute autre propriété. Pour plus d'informations, voir [Procédure : Référencer le nom ou l’emplacement du fichier projet](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) et [Propriétés réservées et connues de MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).
 
 ### <a name="environment-variables"></a>Variables d’environnement
- Vous pouvez référencer des variables d’environnement dans les fichiers projet de la même façon que les propriétés de génération. Par exemple, pour utiliser la variable d’environnement PATH dans votre fichier projet, utilisez $(Path). Si le projet contient une définition de propriété qui porte le même nom qu’une variable d’environnement, la propriété du projet remplace la valeur de la variable d’environnement. Pour plus d’informations, consultez [Guide pratique pour utiliser des variables d’environnement dans une build](../msbuild/how-to-use-environment-variables-in-a-build.md).
+ Vous pouvez référencer des variables d’environnement dans les fichiers projet de la même façon que les propriétés de génération. Par exemple, pour utiliser la variable d’environnement PATH dans votre fichier projet, utilisez $(Path). Si le projet contient une définition de propriété qui porte le même nom qu’une variable d’environnement, la propriété du projet remplace la valeur de la variable d’environnement. Pour plus d'informations, voir [Procédure : Utiliser des variables d’environnement dans une build](../msbuild/how-to-use-environment-variables-in-a-build.md).
 
 ## <a name="set-properties-from-the-command-line"></a>Définir les propriétés à partir de la ligne de commande
  Il est possible de définir des propriétés en ligne de commande à l’aide du commutateur de ligne de commande -property ou -p. Les valeurs de propriété reçues à partir de la ligne de commande remplacent celles qui sont définies dans les variables d’environnement et le fichier projet.
@@ -290,7 +292,7 @@ Pour plus d’informations, consultez l’article [Caractères spéciaux MSBuild
 </ItemGroup>
 ```
 
- définit un groupe de deux éléments. Le type d’élément Compile possède deux valeurs : *Program.cs* et *Properties\AssemblyInfo.cs*.
+ définit un groupe de deux éléments. Le type d’élément Compile a deux valeurs : *Program.cs* et *Properties\AssemblyInfo.cs*.
 
  Le code suivant crée le même type d’élément en déclarant les deux fichiers dans un attribut Include, séparés par un point-virgule.
 
@@ -388,7 +390,7 @@ Modifiez la tâche Message afin d’utiliser des retours chariot et des sauts de
 <Photos Include="images\**.jpeg" />
 ```
 
- ajoute tous les fichiers pourvus de l’extension de fichier *.jpeg* du dossier *images* et de l’ensemble de ses sous-dossiers, au type d’élément Photos. Pour plus d’informations, consultez [Guide pratique pour sélectionner des fichiers dans une build](../msbuild/how-to-select-the-files-to-build.md).
+ ajoute tous les fichiers pourvus de l’extension de fichier *.jpeg* du dossier *images* et de l’ensemble de ses sous-dossiers, au type d’élément Photos. Pour plus d'exemples, consultez [Procédure : Sélectionner des fichiers dans une build](../msbuild/how-to-select-the-files-to-build.md).
 
  Notez que les éléments sont ajoutés au type d’élément à mesure qu’ils sont déclarés. Par exemple :
 
@@ -409,7 +411,7 @@ Modifiez la tâche Message afin d’utiliser des retours chariot et des sauts de
 <Compile Include="*.cs" Exclude="*Designer*">
 ```
 
- ajoute tous les fichiers portant l’extension de fichier  *.cs* au type d’élément Compile, à l’exception des fichiers dont les noms contiennent la chaîne *Designer*. Pour plus d’exemples, consultez [Guide pratique pour exclure des fichiers de la build](../msbuild/how-to-exclude-files-from-the-build.md).
+ ajoute tous les fichiers portant l’extension de fichier  *.cs* au type d’élément Compile, à l’exception des fichiers dont les noms contiennent la chaîne *Designer*. Pour plus d'exemples, consultez [Procédure : Exclure des fichiers de la build](../msbuild/how-to-exclude-files-from-the-build.md).
 
 L’attribut Exclude affecte uniquement les éléments ajoutés par l’attribut Include dans l’élément Item qui les contient. Par exemple :
 
@@ -562,7 +564,7 @@ Par exemple, une liste d’éléments de fichiers sources peut être transformé
 Notez que les métadonnées exprimées dans cette syntaxe ne provoquent pas le traitement par lot.
 
 ## <a name="whats-next"></a>Étapes suivantes
- Pour découvrir comment créer pas à pas un fichier projet simple, consultez la [Procédure pas à pas : création d’un fichier projet MSBuild à partir de zéro](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
+ Pour découvrir comment créer pas à pas un fichier projet simple, consultez la [Procédure pas à pas : Création d’un fichier projet MSBuild à partir de zéro](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
 
 ## <a name="see-also"></a>Voir aussi
 

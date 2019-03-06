@@ -1,23 +1,21 @@
 ---
 title: Cibler une version du .NET Framework
 ms.date: 02/06/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
 - .NET Framework version [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3673d3c57a33d99c3c26dd22cd5c2b7b8959e7d6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: bc8a808ba3a5da46b4dbe3be3aa00921ea869cb6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059468"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954086"
 ---
 # <a name="how-to-target-a-version-of-the-net-framework"></a>Procédure : Cibler une version du .NET Framework
 

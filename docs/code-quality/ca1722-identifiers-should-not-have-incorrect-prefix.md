@@ -1,8 +1,6 @@
 ---
 title: 'CA1722 : Les identificateurs ne doivent pas porter un préfixe incorrect'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - IdentifiersShouldNotHaveIncorrectPrefix
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: c3313c51-d004-4f9a-a0d1-6c4c4a1fb1e6
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ff21b8f3c12cfa9fb3dc3ef03ca2ba2040f3769
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c1d2aa6f0889216b39b891b042989f1c8c69692
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857606"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907761"
 ---
 # <a name="ca1722-identifiers-should-not-have-incorrect-prefix"></a>CA1722 : Les identificateurs ne doivent pas porter un préfixe incorrect
 

@@ -7,15 +7,13 @@ helpviewer_keywords:
 ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 69ce0f2504741c0bc48df0245202cdf0eefee20f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 9f8cb4c3c2cba9f7734aa50c95f28bb6cef6bcba
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063314"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928879"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Procédure : Créer un paramètre de test pour un test de charge distribué
 
@@ -81,7 +79,7 @@ Utilisez les étapes suivantes pour créer et supprimer des paramètres de test 
 
 10. Pour exécuter vos tests à distance, ou pour exécuter vos tests à distance et collecter des données à distance, utilisez la liste déroulante **Méthode d’exécution des tests** et sélectionnez **Exécution distante**.
 
-11. Utilisez la liste déroulante **Contrôleur** pour sélectionner un contrôleur de test pour les agents de test, qui sera utilisé pour exécuter vos tests ou pour collecter des données.
+11. Utilisez la liste déroulante **Contrôleur** pour sélectionner un **contrôleur** de test pour les agents de test, qui sera utilisé pour exécuter vos tests ou pour collecter des données.
 
     > [!NOTE]
     > Si vous ajoutez un contrôleur pour la première fois, aucun contrôleur n’est répertorié dans la liste déroulante. La liste est remplie par les contrôleurs précédents que vous avez définis dans d'autres paramètres de test. Vous devez taper le nom du contrôleur dans la zone (par exemple **TestControllerMachine1**).

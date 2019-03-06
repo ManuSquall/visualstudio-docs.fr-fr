@@ -7,19 +7,17 @@ helpviewer_keywords:
 - performance [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 f1_keywords:
 - vs.performancecenter
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: f5fe9324360a01700024e14e6c70755d61aa3e60
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3094d6fbfa561d995c5cc72e0a6e56fbdd47ee63
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065773"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317677"
 ---
 # <a name="optimize-visual-studio-performance"></a>Optimiser les performances de Visual Studio
 
@@ -27,7 +25,7 @@ Cet article contient des suggestions à essayer si vous trouvez que Visual Studi
 
 ## <a name="upgrade-to-visual-studio-2017-version-156-or-later"></a>Mettre à niveau vers Visual Studio 2017 version 15.6 ou ultérieure
 
-Si vous utilisez Visual Studio 2015, téléchargez gratuitement [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) pour bénéficier de ses performances améliorées. Les solutions se chargent deux ou trois fois plus rapidement dans Visual Studio 2017, les performances d’autres opérations ayant également été améliorées. Visual Studio 2017 est compatible côte à côte avec Visual Studio 2015 : vous ne perdrez donc rien en l’essayant.
+Si vous utilisez Visual Studio 2015, téléchargez gratuitement [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) pour bénéficier de ses performances améliorées. Les solutions se chargent deux ou trois fois plus rapidement dans Visual Studio 2017, les performances d’autres opérations ayant également été améliorées. Visual Studio 2017 est compatible côte à côte avec Visual Studio 2015 : vous ne perdrez donc rien en l’essayant.
 
 Si vous utilisez Visual Studio 2017, veillez à exécuter la version 15.6 ou ultérieure. Les données montrent que les solutions se chargent à deux ou trois fois plus rapidement dans la version 15.6. Téléchargez-la [ici](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
 
@@ -52,4 +50,4 @@ Vos commentaires nous aident à améliorer le produit. Utilisez la fonctionnalit
 ## <a name="see-also"></a>Voir aussi
 
 - [Conseils et astuces pour les performances](../ide/visual-studio-performance-tips-and-tricks.md)
-- [Visual Studio blog - Load solutions faster with Visual Studio 2017 version 15.6](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)
+- [Visual Studio blog - Load solutions faster with Visual Studio 2017 version 15.6](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

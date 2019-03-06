@@ -1,5 +1,5 @@
 ---
-title: IDebugAsyncOperationCallBack (Interface) | Documents Microsoft
+title: Interface IDebugAsyncOperationCallBack | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a776592ba09031e633a82f10e8d0ed9852db4b6e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 84b5ac06d0b284a7a1f65481e0cdf8947117f260
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726439"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347890"
 ---
 # <a name="idebugasyncoperationcallback-interface"></a>IDebugAsyncOperationCallBack, interface
-Fournit des événements d’état liées à la progression d’un `IDebugAsyncOperation` d’évaluation de l’interface.  
+Fournit des événements d’état liés à la progression d’une évaluation d’interface `IDebugAsyncOperation`.  
   
 ## <a name="methods"></a>Méthodes  
  Outre les méthodes héritées de `IUnknown`, le `IDebugAsyncOperationCallBack` interface expose les méthodes suivantes.  

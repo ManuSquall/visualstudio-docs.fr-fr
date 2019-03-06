@@ -1,8 +1,6 @@
 ---
 title: Utilisation du code Visual C++ (Concepteur de classes)
 ms.date: 06/21/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.cpplimitation
@@ -17,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: f5b40921-2ef7-4de0-b595-45b44c79ffa6
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 109c2408e16c5ca4943855889191733234778761
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 16dbcbecece0e8ec38e3f38391ca5063e2e3d36c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33958449"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950616"
 ---
 # <a name="work-with-visual-c-code-in-class-designer"></a>Utiliser le code Visual C++ dans le Concepteur de classes
 
@@ -48,7 +46,7 @@ Le **Concepteur de classes** prend en charge les éléments de code C++ suivants
 - TypeDef
 
 > [!NOTE]
-> Cela est différent du diagramme de classes UML, que vous pouvez créer dans un projet de modélisation. Pour plus d’informations, consultez [Diagrammes de classes UML : indications](../../modeling/uml-class-diagrams-reference.md).
+> Cela est différent du diagramme de classes UML, que vous pouvez créer dans un projet de modélisation. Pour plus d'informations, consultez [Diagrammes de classes UML : Référence](../../modeling/create-uml-modeling-projects-and-diagrams.md).
 
 ## <a name="troubleshoot-type-resolution-and-display-issues"></a>Résoudre les problèmes de résolution de type et d’affichage
 
@@ -112,8 +110,6 @@ Vous pouvez trouver de l'aide sur la résolution des erreurs et des avertissemen
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Conception et affichage des classes et des types](designing-and-viewing-classes-and-types.md)
-- [Utilisation des diagrammes de classes](working-with-class-diagrams.md)
 - [Conception et affichage des classes et des types](designing-and-viewing-classes-and-types.md)
 - [Informations supplémentaires sur les erreurs du Concepteur de classes](additional-information-about-errors.md)
 - [Classes de Visual C++ dans le concepteur de classes](visual-cpp-classes.md)

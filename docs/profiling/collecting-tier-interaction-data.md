@@ -1,8 +1,6 @@
 ---
 title: Collecte de données d’interaction de couche | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.tierinteraction
@@ -13,15 +11,15 @@ helpviewer_keywords:
 - ADO.NET performance profiling
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5e86cd1318d4b0db35ce6fa0e0abd925100fe34
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: fcdab1fcb776a729d00a143dfc318053b74c5cf5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548435"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600114"
 ---
 # <a name="collect-tier-interaction-data"></a>Collecter les données d’interaction de couche
 

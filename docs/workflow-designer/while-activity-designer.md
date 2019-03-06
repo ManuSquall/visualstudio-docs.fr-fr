@@ -2,22 +2,20 @@
 title: Concepteur de flux de travail - lors de concepteur d’activités
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.While.UI
 ms.assetid: ea008091-2e4c-4f64-bfa5-afb919552446
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de41c8351c7767cbfe0882cffb48b145e341f923
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5d9ea1f6bd42526eb0ea38c23cbf0f28c4346515
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835863"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953244"
 ---
 # <a name="while-activity-designer"></a>Concepteur d'activités While
 

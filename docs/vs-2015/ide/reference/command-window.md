@@ -1,14 +1,9 @@
 ---
 title: Commande, fenêtre | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.CommandWindow
 helpviewer_keywords:
@@ -21,13 +16,13 @@ ms.assetid: 48711628-1909-4713-a73e-d7b714c77f8a
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b83a9e86aea02e27242a0c1f02ca3f8459152214
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c7ec3911496c5106d53f90a281452df2c8a128f6
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870183"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54788345"
 ---
 # <a name="command-window"></a>Commande, fenêtre
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -125,7 +120,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 >Edit.Find ^^t /regex  
 ```  
   
- Un accent circonflexe fonctionne de la même façon, qu’il soit à l’intérieur ou en dehors des guillemets. Si un accent circonflexe est le dernier caractère de la ligne, il est ignoré. L’exemple présenté ici montre comment rechercher le modèle « ^ t ».  
+ Un accent circonflexe fonctionne de la même façon, qu’il soit à l’intérieur ou en dehors des guillemets. Si un accent circonflexe est le dernier caractère de la ligne, il est ignoré. L’exemple illustré ici montre comment rechercher le modèle « ^t ».  
   
 ## <a name="use-quotes-for-path-names-with-spaces"></a>Utiliser des guillemets pour les noms de chemin avec des espaces  
  Si, par exemple, vous souhaitez ouvrir un fichier qui possède un chemin contenant des espaces, vous devez placer des guillemets doubles autour du chemin ou du segment de chemin contenant des espaces : **C:\\"Program Files"** ou **"C:\Program Files"**.  
@@ -133,6 +128,3 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 ## <a name="see-also"></a>Voir aussi  
  [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)   
  [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
-
-
-

@@ -1,8 +1,6 @@
 ---
 title: Options, Éditeur de texte, C/C++, Mise en forme
 ms.date: 04/30/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C/C++.Formatting.General
@@ -18,12 +16,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee7fab1564b39b29ae288e96c7aa77e0da21e88c
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 3884507bb594853ebdb0cbc16ab2ee07a372c566
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235139"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645483"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Options, Éditeur de texte, C/C++, Mise en forme
 
@@ -40,11 +38,11 @@ Utilisez les pages de propriétés pour changer le comportement par défaut de l
 
 Cette page propose des options pour mettre en forme des instructions et des blocs à mesure que vous les tapez.
 
-**Visual Studio 2017 version 15.7 et ultérieures** : la page comporte également des options pour la configuration de la prise en charge de [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) version 5.0. ClangFormat est un utilitaire qui simplifie l’application de style et de mise en forme à votre code en fonction d’un ensemble de règles qui peuvent être configurées dans un fichier .clang-format ou _clang-format.
+**Visual Studio 2017 15.7 et versions ultérieures :** la page comporte également des options pour la configuration de la prise en charge de [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) version 5.0. ClangFormat est un utilitaire qui simplifie l’application de style et de mise en forme à votre code en fonction d’un ensemble de règles qui peuvent être configurées dans un fichier .clang-format ou _clang-format.
 
 ### <a name="configuring-clangformat-options"></a>Configuration des options de ClangFormat
 
-Dans Visual Studio 2017 version 15.7 et ultérieures, la prise en charge de ClangFormat est activée par défaut. Vous pouvez choisir parmi ces conventions de mise en forme courantes celles que vous souhaitez appliquer à tous vos projets : LLVM, Google, chrome, Mozilla ou WebKit. Vous pouvez également créer un fichier .clang-format ou _clang-format de définition de format personnalisé. Si un tel fichier est présent dans un dossier de projet, Visual Studio l’utilise pour mettre en forme tous les fichiers de code source dans ce dossier et ses sous-dossiers. 
+Dans Visual Studio 2017 version 15.7 et ultérieures, la prise en charge de ClangFormat est activée par défaut. Vous pouvez choisir parmi ces conventions de mise en forme courantes celles que vous souhaitez appliquer à tous vos projets : LLVM, Google, chrome, Mozilla ou WebKit. Vous pouvez également créer un fichier .clang-format ou _clang-format de définition de format personnalisé. Si un tel fichier est présent dans un dossier de projet, Visual Studio l’utilise pour mettre en forme tous les fichiers de code source dans ce dossier et ses sous-dossiers.
 
 Par défaut, Visual Studio exécute clangformat.exe en arrière-plan et applique la mise en forme à mesure que vous tapez au clavier. Vous pouvez également faire en sorte de l’exécuter uniquement pour les commandes de mise en forme appelées manuellement **Mettre en forme le document (Ctrl+K, Ctrl+D)** ou **Mettre en forme la sélection (Ctrl+K, Ctrl+F)**.
 

@@ -6,19 +6,17 @@ helpviewer_keywords:
 - load tests, test agents and controllers
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 1f33859522ff42fc85c31261527f17ea0f765199
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 16686d3900b3db2656492f5049590eeff47eb93a
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068015"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796347"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Configurer les agents de test et les contrôleurs de test pour l’exécution de tests de charge
 
-Visual Studio peut utiliser des ordinateurs physiques ou des machines virtuelles pour générer une charge simulée pour votre application. Ces ordinateurs doivent être configurés comme un contrôleur de test unique, et un ou plusieurs agents de test. Vous pouvez utiliser le contrôleur de test et les agents de test pour générer une charge supérieure à celle qu’un seul ordinateur peut générer à lui seul.
+Visual Studio peut utiliser des ordinateurs physiques ou des machines virtuelles pour générer une charge simulée pour votre application. Ces ordinateurs doivent être configurés comme un contrôleur de test unique, et un ou plusieurs agents de test. Vous pouvez utiliser le contrôleur de test et les agents de test pour générer une charge supérieure à celle qu'un seul ordinateur peut générer à lui seul.
 
 > [!NOTE]
 > Vous pouvez également utiliser le test de charge cloud pour fournir des machines virtuelles qui génèrent la charge de nombreux utilisateurs accédant simultanément à votre site web. Découvrez plus d’informations sur les tests de charge basés sur le cloud dans [Exécuter des tests de charge avec Azure Test Plans](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts).
@@ -27,7 +25,7 @@ Visual Studio peut utiliser des ordinateurs physiques ou des machines virtuelles
 
 ## <a name="load-simulation-architecture"></a>Architecture de la simulation de charge
 
-L’architecture de la simulation de charge se compose d’un client Visual Studio, d’un contrôleur de test et d’agents de test.
+L'architecture de la simulation de charge se compose d'un client Visual Studio, d'un contrôleur de test et d'agents de test.
 
 -   Le client est utilisé pour développer les tests, exécuter les tests et en afficher les résultats.
 
@@ -39,7 +37,7 @@ Cette architecture offre les avantages suivants :
 
 - La possibilité de faire évoluer la génération de charge en ajoutant des agents de test supplémentaires à un contrôleur de test.
 
-- Une flexibilité pour l’installation du logiciel du client, du contrôleur de test et des agents de test sur le même ordinateur ou sur différents ordinateurs. Par exemple :
+- Une flexibilité pour l'installation du logiciel du client, du contrôleur de test et des agents de test sur le même ordinateur ou sur différents ordinateurs. Par exemple :
 
    **Configuration locale :**
 
@@ -57,27 +55,27 @@ Cette architecture offre les avantages suivants :
 
     ![Ordinateurs locaux utilisant le contrôleur et les agents](./media/load-test-configb.png)
 
-Même si un contrôleur de test gère en général plusieurs agents de test, un agent ne peut être associé qu’à un seul contrôleur. Chaque agent de test peut être partagé par une équipe de développeurs. Cette architecture permet d’augmenter facilement le nombre d’agents de test, ce qui génère des charges plus importantes.
+Même si un contrôleur de test gère en général plusieurs agents de test, un agent ne peut être associé qu'à un seul contrôleur. Chaque agent de test peut être partagé par une équipe de développeurs. Cette architecture permet d'augmenter facilement le nombre d'agents de test, ce qui génère des charges plus importantes.
 
 ## <a name="test-agent-and-test-controller-interaction"></a>Interaction entre un agent de test et un contrôleur de test
 
-Le contrôleur de test gère un ensemble d’agents de test pour exécuter des tests. Le contrôleur de test communique avec les agents de test pour démarrer les tests, arrêter les tests, suivre l’état des agents de test et collecter les résultats des tests.
+Le contrôleur de test gère un ensemble d'agents de test pour exécuter des tests. Le contrôleur de test communique avec les agents de test pour démarrer les tests, arrêter les tests, suivre l'état des agents de test et collecter les résultats des tests.
 
 ### <a name="test-controller"></a>Contrôleur de test
 
-Le contrôleur de test fournit une architecture générale pour l’exécution de tests et comprend des fonctionnalités spécifiques pour l’exécution de tests de charge. Le contrôleur de test envoie le test de charge à tous les agents de test et attend qu'ils aient initialisé le test. Quand tous les agents de test sont prêts, le contrôleur de test envoie un message aux agents de test pour qu’ils démarrent le test.
+Le contrôleur de test fournit une architecture générale pour l'exécution de tests et comprend des fonctionnalités spécifiques pour l'exécution de tests de charge. Le contrôleur de test envoie le test de charge à tous les agents de test et attend qu’ils aient initialisé le test. Quand tous les agents de test sont prêts, le contrôleur de test envoie un message aux agents de test pour qu'ils démarrent le test.
 
 ### <a name="test-agent"></a>Agent de test
 
-L’agent de test s’exécute en tant que service qui écoute les demandes de démarrage d’un nouveau test envoyées par le contrôleur de test. Quand l'agent de test reçoit une demande, le service de l'agent de test démarre un processus sur lequel les tests peuvent être exécutés. Chaque agent de test exécute le même test de charge.
+L'agent de test s'exécute en tant que service qui écoute les demandes de démarrage d'un nouveau test envoyées par le contrôleur de test. Quand l’agent de test reçoit une demande, le service de l’agent de test démarre un processus sur lequel les tests peuvent être exécutés. Chaque agent de test exécute le même test de charge.
 
- Une pondération est affectée par l'administrateur aux agents de test. La charge est distribuée en fonction de la pondération d'un agent de test. Par exemple, si l’agent de test 1 a une pondération de 30, que l’agent de test 2 a une pondération de 70 et que la charge est définie à 1 000 utilisateurs, l’agent de test 1 simule 300 utilisateurs virtuels tandis que l’agent de test 2 en simule 700. Consultez [Gérer les contrôleurs de test et les agents de test avec Visual Studio](../test/manage-test-controllers-and-test-agents.md).
+ Une pondération est affectée par l’administrateur aux agents de test. La charge est distribuée en fonction de la pondération d’un agent de test. Par exemple, si l'agent de test 1 a une pondération de 30, que l'agent de test 2 a une pondération de 70 et que la charge est définie à 1 000 utilisateurs, l'agent de test 1 simule 300 utilisateurs virtuels tandis que l'agent de test 2 en simule 700. Consultez [Gérer les contrôleurs de test et les agents de test avec Visual Studio](../test/manage-test-controllers-and-test-agents.md).
 
- L’agent de test prend un ensemble de tests et un ensemble de paramètres de simulation comme entrées. Un concept essentiel est que les tests sont indépendants de l'ordinateur sur lequel ils sont exécutés.
+ L'agent de test prend un ensemble de tests et un ensemble de paramètres de simulation comme entrées. Un concept essentiel est que les tests sont indépendants de l'ordinateur sur lequel ils sont exécutés.
 
 ## <a name="test-controller-and-test-agent-connection-points"></a>Points de connexion d’un contrôleur de test et d’un agent de test
 
-L’illustration suivante montre les points de connexion entre le contrôleur de test, l’agent de test et le client. Elle décrit les ports utilisés pour les connexions entrantes et sortantes ainsi que les restrictions de sécurité sur ces ports.
+L'illustration suivante montre les points de connexion entre le contrôleur de test, l'agent de test et le client. Elle décrit les ports utilisés pour les connexions entrantes et sortantes ainsi que les restrictions de sécurité sur ces ports.
 
  ![Ports et sécurité du contrôleur de test et de l’agent de test](./media/test-controller-agent-firewall.png)
 

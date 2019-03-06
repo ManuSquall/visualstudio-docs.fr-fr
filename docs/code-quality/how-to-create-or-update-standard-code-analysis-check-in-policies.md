@@ -1,8 +1,6 @@
 ---
-title: Créer ou mettre à jour des stratégies d’archivage de l’analyse du Code Standard
+title: Créer ou mettre à jour des stratégies d’archivage d’analyse du code standard
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.policyeditor
@@ -10,17 +8,17 @@ helpviewer_keywords:
 - code analysis, migrating check-in policy
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99f0e665e00e614cfcf3f4e285e33345e31ab42b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 768efb3e874f6427cd23f63f14671aa2db1bea71
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283234"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917075"
 ---
-# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Comment : créer ou mettre à jour des stratégies d’archivage d’analyse du code standard
+# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Procédure : Créer ou mettre à jour des stratégies d’archivage d’analyse du code standard
 
 Vous pouvez exiger que l’analyse de code est exécutée sur tous les projets de code dans un projet Azure DevOps à l’aide de la stratégie d’archivage de l’analyse du code. Nécessitant une analyse du code peut améliorer la qualité du code archivé dans la base de code.
 
@@ -71,4 +69,4 @@ Pour plus d’informations sur la façon de créer et implémenter une règle de
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Créer et utiliser des stratégies d’archivage de l’analyse du code](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+- [Créer et utiliser des stratégies d’archivage de l’analyse du code](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)

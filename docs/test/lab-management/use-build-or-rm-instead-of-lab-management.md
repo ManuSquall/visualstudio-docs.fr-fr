@@ -1,22 +1,20 @@
 ---
 title: Utiliser Azure Pipelines pour les tests automatisés
 ms.date: 10/19/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - automated testing, lab management, test lab
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7a410601b0d7ab6b6a3901333b062e515555ec2d
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: d9bb59a383db46fdfc3b7e5a9a2f429399630873
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50218659"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949952"
 ---
 # <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>Utiliser Azure Test Plans au lieu de Lab Management pour les tests automatisés
 

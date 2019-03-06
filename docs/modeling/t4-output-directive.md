@@ -4,17 +4,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 624afd32a9b0f44e3190fba7e3b126663b96f6f4
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: dfbe77f5b6e2bbda6a51d392c4dd16b079100e81
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860197"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952383"
 ---
 # <a name="t4-output-directive"></a>Directive de sortie T4
 
@@ -49,7 +47,7 @@ Dans les modèles de texte de Visual Studio, le `output` directive est utilisée
 
  `<#@ output extension=".vb" #>`
 
- Les valeurs acceptables : N’importe quel nom extension de fichier valide.
+ Valeurs acceptables : toute extension de nom de fichier valide.
 
 ## <a name="encoding-attribute"></a>attribut d’encodage
  Spécifie l'encodage à utiliser lors de la génération du fichier de sortie. Par exemple :

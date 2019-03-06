@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManagerEvents (Interface) | Documents Microsoft
+title: Interface IMachineDebugManagerEvents | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 369dc8d182efe7bf9697454d0e4b1c9c1a10c027
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f9aab3d7abeecd22e830c68f174896df0e7df2da
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727629"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344026"
 ---
 # <a name="imachinedebugmanagerevents-interface"></a>IMachineDebugManagerEvents, interface
-Signale les modifications en cours d’exécution liste des applications gérée par le Gestionnaire de débogage d’ordinateur. Cette interface peut être utilisée par le débogueur IDE pour afficher une liste dynamique des applications.  
+Signale les modifications apportées à la liste des applications en cours d’exécution tenue à jour par le gestionnaire de débogage d’ordinateur. Cette interface peut être utilisée par l’IDE de débogueur pour afficher une liste dynamique des applications.  
   
  Outre les méthodes héritées de `IUnknown`, le `IMachineDebugManagerEvents` interface expose les méthodes suivantes.  
   
@@ -30,5 +30,5 @@ Signale les modifications en cours d’exécution liste des applications gérée
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[IMachineDebugManagerEvents::onAddApplication](../../winscript/reference/imachinedebugmanagerevents-onaddapplication.md)|Gère l’événement lorsqu’une application est ajoutée à l’exécution liste des applications.|  
-|[IMachineDebugManagerEvents::onRemoveApplication](../../winscript/reference/imachinedebugmanagerevents-onremoveapplication.md)|Gère l’événement lorsqu’une application est supprimée de l’exécution liste des applications.|
+|[IMachineDebugManagerEvents::onAddApplication](../../winscript/reference/imachinedebugmanagerevents-onaddapplication.md)|Gère l’événement lorsqu’une application est ajoutée à l’exécution liste d’applications.|  
+|[IMachineDebugManagerEvents::onRemoveApplication](../../winscript/reference/imachinedebugmanagerevents-onremoveapplication.md)|Gère l’événement lorsqu’une application est supprimée de l’exécution liste d’applications.|

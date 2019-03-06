@@ -2,23 +2,21 @@
 title: Concepteur de flux de travail - commutateur<T> Concepteur d’activités
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Presentation.ModelItemKeyValuePair.UI
 - System.Activities.Statements.Switch`1.UI
 ms.assetid: 18a6c96e-49a9-4356-ab61-fbd7e3ab44bb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40e5e735fb80e6071ad9e9423eecb0284a9823cd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7eb83567a7d59dc02779839a5305b9c1c0329912
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878184"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920937"
 ---
 # <a name="switcht-activity-designer"></a>Commutateur\<T > Concepteur d’activités
 

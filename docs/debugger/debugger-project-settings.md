@@ -1,8 +1,6 @@
 ---
 title: Paramètres du projet du débogueur | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -15,49 +13,40 @@ helpviewer_keywords:
 ms.assetid: 5e1b2a30-d2db-49e8-aba3-2d3a190eea80
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a027307ef960a8b0185daa34374e20270bf2fa19
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: bfaf520658edfdcf5b80fb89f89489a47c7fffa3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152983"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695581"
 ---
 # <a name="debugger-project-settings"></a>Paramètres du projet du débogueur
-Certains paramètres de projet affectent également le débogage. Ces paramètres déterminent des éléments tels que les répertoires de recherche du débogueur, la commande et les arguments de commande utilisés pour démarrer le programme, ainsi que le type d'informations de débogage créées pour le programme. Vous pouvez modifier ces paramètres dans la boîte de dialogue **Pages de propriétés** .  
-  
- Cette section décrit les options disponibles et la manière de les définir.  
-  
-## <a name="in-this-section"></a>Dans cette section  
- [Guide pratique pour spécifier les paramètres du débogueur](../debugger/how-to-specify-debugger-settings.md)  
- Décrit les paramètres du débogueur dans la boîte de dialogue **Options** .  
-  
- [Guide pratique pour définir des configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md)  
- Décrit les paramètres **Debug** et **Release** et la manière de basculer de l'un à l'autre.  
-  
- [Paramètres de projet pour une configuration Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)  
- Répertorie les propriétés disponibles dans la boîte de dialogue **Pages de propriétés** de projets C ou C++.  
-  
- [Paramètres de projet pour des configurations de débogage C#](../debugger/project-settings-for-csharp-debug-configurations.md)  
- Répertorie les propriétés disponibles dans la boîte de dialogue **Pages de propriétés** de projets C# .  
-  
- [Paramètres des pages de propriétés pour les projets web](../debugger/property-pages-settings-for-web-projects.md)  
- Répertorie les propriétés disponibles dans la boîte de dialogue **Pages de propriétés** de projets Web.  
-  
- [Paramètres de projet pour une configuration Debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)  
- Répertorie les propriétés disponibles dans la boîte de dialogue **Pages de propriétés** de projets [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] .  
-  
-## <a name="related-sections"></a>Rubriques connexes  
- [Spécifier les symboles (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
- Indique comment le débogueur utilise des fichiers de symboles et des fichiers sources pour afficher des informations pour le débogage.  
-  
- [Déboguer des applications dans Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)  
- Décrit comment déboguer des applications UWP. (Centre de développement Windows)  
-  
- [Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md)  
- Décrit les paramètres de propriété du débogueur et la préparation nécessaire pour déboguer votre programme à l'aide du débogueur [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .  
-  
-## <a name="see-also"></a>Voir aussi  
+Certains paramètres de projet affectent également le débogage. Ces paramètres déterminent des éléments tels que les répertoires de recherche du débogueur, la commande et les arguments de commande utilisés pour démarrer le programme, ainsi que le type d'informations de débogage créées pour le programme. Vous pouvez modifier ces paramètres dans la boîte de dialogue **Pages de propriétés** .
+
+ Cette section décrit les options disponibles et la manière de les définir.
+
+## <a name="in-this-section"></a>Dans cette section
+ [Comment : spécifier les paramètres du débogueur](../debugger/how-to-specify-debugger-settings.md) décrit les paramètres du débogueur dans le **Options** boîte de dialogue.
+
+ [Comment : jeu de Configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md) décrit le **déboguer** et **version** paramètres et comment passer à l’autre.
+
+ [Paramètres pour une Configuration Debug C++ du projet](../debugger/project-settings-for-a-cpp-debug-configuration.md) répertorie les propriétés disponibles dans le **Pages de propriétés** boîte de dialogue pour les projets C ou C++.
+
+ [Paramètres de projet C# déboguer les Configurations](../debugger/project-settings-for-csharp-debug-configurations.md) répertorie les propriétés disponibles dans le **Pages de propriétés** boîte de dialogue C# projets.
+
+ [Paramètres des Pages de propriété pour les projets Web](../debugger/property-pages-settings-for-web-projects.md) répertorie les propriétés disponibles dans le **Pages de propriétés** boîte de dialogue pour les projets web.
+
+ [Paramètres pour une Configuration Debug Visual Basic du projet](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) répertorie les propriétés disponibles dans le **Pages de propriétés** boîte de dialogue [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projets.
+
+## <a name="related-sections"></a>Rubriques connexes
+ [Spécifier les symboles (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) décrit comment le débogueur utilise les fichiers de symboles et les fichiers sources pour afficher des informations de débogage.
+
+ [Déboguer des applications dans Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps) décrit comment déboguer des applications UWP. (Centre de développement Windows)
+
+ [Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md) décrit les paramètres de propriété du débogueur et la préparation nécessaire pour déboguer votre programme avec le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] débogueur.
+
+## <a name="see-also"></a>Voir aussi
  [Sécurité du débogueur](../debugger/debugger-security.md)

@@ -1,22 +1,21 @@
 ---
 title: Se connecter à Visual Studio
-ms.custom: ''
-ms.date: 11/16/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
+titleSuffix: ''
+ms.custom: seodec18
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7568583ac9239e168760000f0712ca7dcc4c33f
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 008d0d8d464f3f1a24d15f1cb6f299edb30776fd
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159852"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840829"
 ---
 # <a name="sign-in-to-visual-studio"></a>Se connecter à Visual Studio
 
@@ -27,11 +26,11 @@ Vous pouvez éventuellement personnaliser et optimiser votre expérience de dév
 
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Pourquoi dois-je me connecter à Visual Studio ?
 
-Quand vous vous connectez, vous bénéficiez de nombreux avantages supplémentaires dans Visual Studio. Une fois que vous êtes connecté, vous pouvez synchroniser vos paramètres sur tous vos appareils, prolonger une version d’évaluation et vous connecter automatiquement à un service Azure, pour ne citer que quelques exemples.
+Quand vous vous connectez, vous bénéficiez de nombreux avantages supplémentaires dans Visual Studio. Une fois que vous êtes connecté, vous pouvez [synchroniser vos paramètres](synchronized-settings-in-visual-studio.md) sur tous vos appareils, prolonger une version d’évaluation et vous connecter automatiquement à un service Azure, pour ne citer que quelques exemples.
 
 Voici une liste complète de tous les avantages dont vous pouvez éventuellement bénéficier après votre connexion :
 
-- **Accédez à Visual Studio Dev Essentials** : ce programme inclut des logiciels gratuits, des formations, un support technique, et plus encore. Voir [Visual Studio Dev Essentials](http://aka.ms/vsdevhelp) pour obtenir de plus amples informations.
+- **Accédez à Visual Studio Dev Essentials** : ce programme inclut des logiciels gratuits, des formations, un support technique, et plus encore. Voir [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) pour obtenir de plus amples informations.
 
 - **Synchronisez vos paramètres Visual Studio** : les paramètres que vous personnalisez, comme les combinaisons de touches, la disposition des fenêtres et le thème de couleur, s’appliquent immédiatement quand vous vous connectez à Visual Studio sur un appareil. Consultez [Paramètres synchronisés dans Visual Studio](../ide/synchronized-settings-in-visual-studio.md).
 
@@ -69,7 +68,7 @@ Si vous rencontrez des problèmes pendant la connexion, consultez la [page de su
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Guide pratique pour déverrouiller Visual Studio](../ide/how-to-unlock-visual-studio.md)
-* [Vue d’ensemble de l’IDE Visual Studio](../get-started/visual-studio-ide.md)
+* [Comment déverrouiller Visual Studio](../ide/how-to-unlock-visual-studio.md)
+* [Vue d’ensemble de l’IDE de Visual Studio](../get-started/visual-studio-ide.md)
 * [Se connecter (Visual Studio pour Mac)](/visualstudio/mac/signing-in)
 * [Activation (Visual Studio pour Mac)](/visualstudio/mac/activation)

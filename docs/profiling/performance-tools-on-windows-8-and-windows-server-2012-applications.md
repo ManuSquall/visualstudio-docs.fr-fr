@@ -1,20 +1,18 @@
 ---
 title: Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012 | Microsoft Docs
-ms.custom: ''
 ms.date: 06/19/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 404a8a3f40d5d84d60fe4822fb692e4f48a57503
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 8258c259b7f065e28ba7a6e199ddddb432dfb4b6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220799"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629974"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012
 
@@ -39,7 +37,7 @@ Ces fonctionnalités et options de profilage ne sont pas prises en charge pour l
 
 Pour plus d’informations sur le profilage d’applications UWP, consultez les articles suivants :
 
-- [Exécuter des applications UWP sur l’ordinateur local](../debugger/run-windows-store-apps-on-the-local-machine.md)
+- [Exécuter des applications UWP sur l’ordinateur local](/visualstudio/debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml)
 - [Exécuter des applications UWP sur un ordinateur distant](../debugger/run-windows-store-apps-on-a-remote-machine.md)
 - [Découvrir les outils de profilage](profiling-feature-tour.md)
 - [Mémoire JavaScript](../profiling/javascript-memory.md)
@@ -76,7 +74,7 @@ Pour profiler des applications sur les appareils dépourvus de Visual Studio, pr
 
 - Téléchargez les outils dans le cadre des Outils de contrôle à distance pour Visual Studio à partir du [site web MSDN](http://go.microsoft.com/fwlink/?LinkID=219549).
 
-- Copiez et exécutez le programme d’installation des outils de profilage autonomes à partir de votre ordinateur Visual Studio. Les programmes d’installation se trouvent dans le dossier *%VSInstallDir%\Team Tools\Performance Tools\Setups*. Choisissez le programme d’installation correspondant au système d’exploitation (x86/x64) de l’ordinateur distant.
+- Copiez et exécutez le programme d’installation des outils de profilage autonomes à partir de votre ordinateur Visual Studio. Pour obtenir le chemin des outils de profilage, consultez [Spécifier le chemin des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Choisissez le programme d’installation correspondant au système d’exploitation (x86/x64) de l’ordinateur distant.
 
 > [!NOTE]
 > Pour collecter les données de profilage TIP, vous devez installer le profileur autonome de votre ordinateur Visual Studio sur l’ordinateur distant.

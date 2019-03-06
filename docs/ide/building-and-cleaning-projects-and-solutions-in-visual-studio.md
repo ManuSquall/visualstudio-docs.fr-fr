@@ -1,7 +1,6 @@
 ---
 title: Génération et nettoyage des projets et des solutions
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 f1_keywords:
@@ -21,19 +20,19 @@ helpviewer_keywords:
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c96a3b6699428b156a23ad643eb7958cb438b994
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 4e6b970fdda47bab704def8859cb3489bce13bcb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349268"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925382"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Générer et nettoyer des projets et des solutions dans Visual Studio
 
-En appliquant les procédures décrites dans cette rubrique, vous pouvez générer, régénérer ou nettoyer tout ou partie des projets ou éléments de projet dans une solution. Pour obtenir un didacticiel pas à pas, consultez [Procédure pas à pas : génération d’une application](../ide/walkthrough-building-an-application.md).
+En appliquant les procédures décrites dans cette rubrique, vous pouvez générer, régénérer ou nettoyer tout ou partie des projets ou éléments de projet dans une solution. Pour accéder à un tutoriel pas à pas, consultez [Procédure pas à pas : Génération d’une application](../ide/walkthrough-building-an-application.md).
 
 > [!NOTE]
 > Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Générer et nettoyer des projets et des solutions dans Visual Studio pour Mac](/visualstudio/mac/building-and-cleaning-projects-and-solutions).
@@ -118,7 +117,7 @@ Effectuez l'une des étapes suivantes :
 - [Obtention de journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)
 - [Présentation des configurations de build](../ide/understanding-build-configurations.md)
-- [Guide pratique pour définir des configurations de débogage et des configurations Release](../debugger/how-to-set-debug-and-release-configurations.md)
+- [Guide pratique pour Définir des configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md)
 - [Référence à la génération d’un programme C/C++](/cpp/build/reference/c-cpp-building-reference)
 - [Devenv command line switches](../ide/reference/devenv-command-line-switches.md)
 - [Solutions et projets](../ide/solutions-and-projects-in-visual-studio.md)

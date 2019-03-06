@@ -1,9 +1,6 @@
 ---
 title: Localisation de Packages VSIX | Microsoft Docs
-ms.custom: ''
 ms.date: 10/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - localize package
@@ -12,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 10e80b13-b39e-466c-a7c8-774a862355af
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54de0b219eb1c86a413b7a95e87a48e7f65ac9ec
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: e83bf0c3c0bd63ed994784e89252dd2a5479590f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636972"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56687079"
 ---
 # <a name="localizing-vsix-packages"></a>Localisation de packages VSIX
 
@@ -30,7 +27,7 @@ Si le contenu de votre package VSIX inclut un VSPackage qui ajoute les commandes
 
 ## <a name="directory-structure"></a>Structure de répertoires
 
- Lorsqu’un utilisateur installe une extension, **Extensions et mises à jour** vérifie le niveau supérieur du package VSIX un dossier dont le nom correspond aux paramètres régionaux de Visual Studio de l’ordinateur cible. Si **Extensions et mises à jour** recherche un *.vsixlangpack* fichier dans le dossier, il remplace les valeurs localisées dans ce fichier pour les valeurs correspondantes dans le *.vsixmanifest*fichier. Ces valeurs sont affichées lors de l’extension est en cours d’installation. L’exemple suivant montre la structure de répertoires d’un package VSIX est localisée en espagnol (es-ES) et Français (fr-FR).  
+ Lorsqu’un utilisateur installe une extension, **Extensions et mises à jour** vérifie le niveau supérieur du package VSIX un dossier dont le nom correspond aux paramètres régionaux de Visual Studio de l’ordinateur cible. Si **Extensions et mises à jour** recherche un *.vsixlangpack* fichier dans le dossier, il remplace les valeurs localisées dans ce fichier pour les valeurs correspondantes dans le *.vsixmanifest*fichier. Ces valeurs sont affichées lors de l’extension est en cours d’installation. L’exemple suivant montre la structure de répertoires d’un package VSIX est localisée en espagnol (es-ES) et Français (fr-FR).
 
 ```text
 .
@@ -66,7 +63,7 @@ L’exemple suivant affiche les parties pertinentes d’une *Extension.vsixmanif
 
 ### <a name="code"></a>Code
 
- [*Extension.vsixmanifest*]
+- [*Extension.vsixmanifest*]
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -86,7 +83,7 @@ L’exemple suivant affiche les parties pertinentes d’une *Extension.vsixmanif
 </PackageManifest>
 ```
 
- [*Extension.vsixlangpack*]
+- [*Extension.vsixlangpack*]
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -106,6 +103,6 @@ L’exemple suivant affiche les parties pertinentes d’une *Extension.vsixmanif
 
 |Titre|Description|
 |-----------|-----------------|
-|[Référence du schéma 2.0 de module linguistique VSIX](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Un module linguistique VSIX décrit les informations de localisation d’un fichier de déploiement .vsix.|
+|[Référence du schéma 2.0 de module linguistique VSIX](/visualstudio/extensibility/vsix-language-pack-schema-2-0-reference)|Un module linguistique VSIX décrit les informations de localisation d’un fichier de déploiement .vsix.|
 |[Anatomie d’un package VSIX](../extensibility/anatomy-of-a-vsix-package.md)|Décrit la structure et le contenu d’un package vsix.|
 |[Localiser des commandes de menu](../extensibility/localizing-menu-commands.md)|Montre comment localiser les autres ressources de texte dans une extension.|

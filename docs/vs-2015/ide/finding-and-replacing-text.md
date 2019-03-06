@@ -1,14 +1,9 @@
 ---
 title: Recherche et remplacement de texte | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.find
 - vs.findreplacecontrol
@@ -41,13 +36,13 @@ ms.assetid: a62545c3-1570-4d12-99fb-a82607eb35a1
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e4bbe1456632b2707ca548582bb278f7646ec540
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4a0edc40a8a6523c76a6b6f8074a108219152c06
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273440"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756876"
 ---
 # <a name="finding-and-replacing-text"></a>Finding and Replacing Text
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,13 +74,10 @@ Vous pouvez rechercher et remplacer du texte dans l’éditeur de code Visual St
  Lorsque vous choisissez **Rechercher tout**, une fenêtre **Résultats de la recherche** s’ouvre et répertorie les résultats de la recherche. Si vous sélectionnez un résultat dans la liste, le fichier associé est affiché et la correspondance est mise en surbrillance. Si le fichier n’est pas encore ouvert pour modification, il est ouvert dans un onglet d’aperçu dans la partie droite de la zone de configuration des onglets. Vous pouvez utiliser le contrôle **Rechercher** pour effectuer des recherches dans la liste **Résultats de la recherche**.  
   
 ### <a name="creating-custom-search-folder-sets"></a>Création de jeux de dossiers de recherche personnalisés  
- Vous pouvez définir une étendue de recherche en choisissant le **choisir des dossiers de recherche** bouton (il ressemble **...** ) à côté du **Regarder dans** boîte. Dans la boîte de dialogue **Choisir des dossiers de recherche**, vous pouvez spécifier un jeu de dossiers dans lequel effectuer la recherche et vous pouvez enregistrer la spécification afin de pouvoir la réutiliser ultérieurement. Vous pouvez spécifier des dossiers sur un ordinateur distant uniquement si vous avez mappé son lecteur à l’ordinateur local.  
+ Vous pouvez définir une étendue de recherche en choisissant le bouton **Choisir des dossiers de recherche** (il ressemble à **...**) en regard de la zone **Regarder dans**. Dans la boîte de dialogue **Choisir des dossiers de recherche**, vous pouvez spécifier un jeu de dossiers dans lequel effectuer la recherche et vous pouvez enregistrer la spécification afin de pouvoir la réutiliser ultérieurement. Vous pouvez spécifier des dossiers sur un ordinateur distant uniquement si vous avez mappé son lecteur à l’ordinateur local.  
   
 ### <a name="creating-custom-component-sets"></a>Création d’ensembles de composants personnalisés  
  Vous pouvez définir des jeux de composants comme étendue de recherche en choisissant le bouton **Modifier un jeu de composants personnalisés** en regard de la zone **Regarder dans**. Vous pouvez spécifier des composants .NET ou COM installés, des projets Visual Studio inclus dans votre solution ou toute bibliothèque d’assemblys ou de types (.dll, .tlb, .olb, .exe ou .ocx). Pour rechercher des références, cochez la case **Regarder dans les références**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Utilisation d’expressions régulières dans Visual Studio](../ide/using-regular-expressions-in-visual-studio.md)
-
-
-

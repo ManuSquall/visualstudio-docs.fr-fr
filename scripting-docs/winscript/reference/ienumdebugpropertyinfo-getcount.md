@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd53b8943be897933c211ff7f9f914e43b7ebdfa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e9270e389cc176719dcde51ef04af3a1da9f7ef7
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49947847"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344536"
 ---
 # <a name="ienumdebugpropertyinfogetcount"></a>IEnumDebugPropertyInfo::GetCount
 Obtient le nombre de `DebugPropertyInfo` structures dans l’énumérateur.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetCount (  
    ULONG* pcelt  
 );  
@@ -44,5 +44,5 @@ HRESULT GetCount (
  Retourne une liste valide `HRESULT`, généralement `S_OK`.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IEnumDebugPropertyInfo (Interface)](../../winscript/reference/ienumdebugpropertyinfo-interface.md)   
+ [IEnumDebugPropertyInfo Interface](../../winscript/reference/ienumdebugpropertyinfo-interface.md)   
  [Structure DebugPropertyInfo](../../winscript/reference/debugpropertyinfo-structure.md)

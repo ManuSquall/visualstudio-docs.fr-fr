@@ -1,8 +1,6 @@
 ---
 title: "CA2201 : Ne levez pas des types d'exceptions réservés"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - DoNotRaiseReservedExceptionTypes
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: dd14ef5c-80e6-41a5-834e-eba8e2eae75e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 763c8656507f8a1d9c1f59bd548469c338aeb012
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 9db603567cb73827546bc488bf57aba641d97054
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547513"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55946000"
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201 : Ne levez pas des types d'exceptions réservés
 

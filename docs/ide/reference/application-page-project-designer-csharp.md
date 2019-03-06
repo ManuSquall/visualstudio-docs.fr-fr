@@ -1,8 +1,6 @@
 ---
 title: Page Application des propriétés de projet C#
 ms.date: 10/30/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesApplicationWPF
@@ -12,15 +10,15 @@ helpviewer_keywords:
 - Application page in Project Designer
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6ac755bfab72a2e87b652bfb92d3343b46ff45dc
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: ba118f9b0b08b5e092fa85ccc3940cd41a7ff9c8
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672819"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222530"
 ---
 # <a name="application-page-project-designer-c"></a>Page Application, Concepteur de projet (C#)
 
@@ -59,7 +57,7 @@ Par défaut, la valeur est la même que le framework cible que vous avez sélect
 > [!NOTE]
 > Les packages de prérequis répertoriés dans la [boîte de dialogue Composants requis](../../ide/reference/prerequisites-dialog-box.md) sont définis automatiquement la première fois que vous ouvrez la boîte de dialogue. Si vous modifiez par la suite le framework cible du projet, vous devez sélectionner manuellement les prérequis pour qu’ils correspondent au nouveau framework cible.
 
-Pour plus d’informations, consultez [Guide pratique pour cibler une version du .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) et [Présentation du multiciblage Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).
+Pour plus d'informations, voir [Procédure : Cibler une version du .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) et [Présentation du multiciblage Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).
 
 **Type de sortie**
 
@@ -73,7 +71,7 @@ Pour plus d’informations sur la façon d’accéder à cette propriété par p
 
 **Générer automatiquement des redirections de liaison**
 
-Des redirections de liaison sont ajoutées à votre projet si votre application ou ses composants référencent plusieurs versions du même assembly. Si vous voulez définir manuellement des redirections de liaison dans le fichier projet, décochez **Générer automatiquement des redirections de liaison**. Cette case à cocher a été introduite dans Visual Studio 2017 version 15.7.
+Des redirections de liaison sont ajoutées à votre projet si votre application ou ses composants référencent plusieurs versions du même assembly. Si vous voulez définir manuellement des redirections de liaison dans le fichier projet, décochez **Générer automatiquement des redirections de liaison**.
 
 Pour plus d’informations sur la redirection, consultez [Redirection des versions d’assemblys](/dotnet/framework/configure-apps/redirect-assembly-versions).
 

@@ -1,33 +1,31 @@
 ---
-title: Onglet Windows, la boîte de dialogue Propriétés de fenêtre | Documents Microsoft
-ms.custom: ''
+title: Onglet de Windows, la boîte de dialogue Propriétés de fenêtre | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Window Properties dialog box, Windows Tab
 ms.assetid: 9001342a-09a8-4f5e-b6ed-881a3b9d7246
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3589f3242c72002bf28e8aee135b2713c39fdb7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: ce1015741b2a1e7ba1608eea7f198b726e808f7f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475738"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696842"
 ---
 # <a name="windows-tab-window-properties-dialog-box"></a>Onglet Fenêtres de la boîte de dialogue Propriétés de la fenêtre
-Utilisez le **Windows** onglet pour afficher des informations sur windows liées à la fenêtre sélectionnée. Pour afficher le [boîte de dialogue Propriétés de fenêtre](../debugger/window-properties-dialog-box.md), déplacer le focus vers le [affichage Windows](../debugger/windows-view.md) fenêtre. Sélectionnez n’importe quel nœud de fenêtre dans l’arborescence, puis choisissez **propriétés** à partir de la **vue** menu.  
-  
- Les paramètres suivants sont disponibles sur le **Windows** onglet :  
-  
-|Entrée|Description|  
-|-----------|-----------------|  
-|**Fenêtre suivante**|Le handle de la fenêtre de frère suivant dans la même séquence (ordre de plan) indiquée dans l’arborescence des fenêtres (« aucun », s’il n’existe pas de fenêtre suivante). Choisissez cette entrée pour afficher les propriétés de la fenêtre suivante.|  
-|**Fenêtre précédente**|Le handle de la fenêtre de frère précédent dans la même séquence (ordre de plan) indiquée dans l’arborescence des fenêtres (« aucun », s’il n’existe pas de fenêtre précédente). Choisissez cette entrée pour afficher les propriétés de la fenêtre précédente.|  
-|**Fenêtre parente**|Handle de cette fenêtre parente (« aucun », s’il n’existe aucun parent). Choisissez cette entrée pour afficher les propriétés de la fenêtre parente.|  
-|**Premier enfant**|Le handle de première fenêtre enfant cette fenêtre, dans la séquence (ordre de plan) indiqué dans l’arborescence des fenêtres (« aucun », si aucune fenêtre enfant). Choisissez cette valeur pour afficher les propriétés de la première fenêtre enfant.|  
-|**Fenêtre propriétaire**|Le handle de fenêtre propriétaire de cette fenêtre. Fenêtre principale d’une application possède généralement des fenêtres de boîtes de dialogue modales du système, par exemple (« aucun », s’il n’existe aucun propriétaire). Choisissez cette entrée pour afficher les propriétés de la fenêtre propriétaire.|
+Utilisez le **Windows** onglet pour afficher des informations sur windows liés à la fenêtre sélectionnée. Pour afficher le [boîte de dialogue Propriétés de fenêtre](../debugger/window-properties-dialog-box.md), déplacer le focus vers le [Windows vue](../debugger/windows-view.md) fenêtre. Sélectionnez n’importe quel nœud de fenêtre dans l’arborescence, puis choisissez **propriétés** à partir de la **vue** menu.
+
+ Les paramètres suivants sont disponibles sur le **Windows** onglet :
+
+|Entrée|Description|
+|-----------|-----------------|
+|**Fenêtre suivante**|Le handle de la fenêtre de frère suivant dans la même séquence (ordre de plan) indiquée dans l’arborescence de fenêtre (« none », s’il n’existe aucune fenêtre suivante). Choisissez cette entrée pour afficher les propriétés de la fenêtre suivante.|
+|**Fenêtre précédente**|Le handle de la fenêtre de frère précédent dans le même ordre (Z-order) indiqué dans l’arborescence de fenêtre (« none », s’il n’existe aucune fenêtre précédente). Choisissez cette entrée pour afficher les propriétés de la fenêtre précédente.|
+|**Fenêtre parente**|Handle de cette fenêtre parente (« none », s’il n’existe aucun parent). Choisissez cette entrée pour afficher les propriétés de la fenêtre parente.|
+|**Premier enfant**|Handle de première fenêtre enfant cette fenêtre, dans la séquence (Z-order) indiqué dans l’arborescence de fenêtre (« none », si aucune fenêtre enfant). Choisissez cette valeur pour afficher les propriétés de la première fenêtre enfant.|
+|**Fenêtre propriétaire**|Le handle de fenêtre de propriétaire de cette fenêtre. Fenêtre principale d’une application possède généralement des fenêtres de boîte de dialogue modale du système, par exemple (« none », s’il n’existe aucun propriétaire). Choisissez cette entrée pour afficher les propriétés de la fenêtre propriétaire.|

@@ -2,23 +2,21 @@
 title: Concepteur de flux de travail - Concepteur d’activités TryCatch
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.TryCatch.UI
 - System.Activities.Statements.Catch`1.UI
 ms.assetid: 02a326c2-4009-442f-b7cb-e42121fd2992
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de5329d05ebc8dcfe9d9970c353d573835fc5d00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 079c25b2bbaa37432009f0eeade9673f8d0afd28
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866387"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950043"
 ---
 # <a name="trycatch-activity-designer"></a>Concepteur d'activités TryCatch
 
@@ -35,7 +33,7 @@ Le **TryCatch** Concepteur d’activités peut être déplacé de la **boîte à
 
 Cliquez sur le bouton développer dans le coin supérieur droit de **TryCatch** concepteur pour afficher la **essayez**, **intercepte**, et **enfin** zones dans le vue développée. Pour ajouter un bloc catch, cliquez sur le **ajouter un nouveau catch** bouton sur **TryCatch** concepteur. Le bouton se transforme en zone de liste déroulante Type. Sélectionnez un type d'exception et appuyez sur ENTRÉE pour ajouter le catch. Après avoir ajouté un **Catch**, la zone de catch se développe et une activité peut être déposée dans le bloc catch pour définir la logique d’exécution de l’interception. Notez la présence d’une zone de texte à droite de la zone de catch développée. Vous pouvez nommer la variable d'exception à l'aide de cette zone de texte. La variable d’exception peut uniquement être utilisée pour les activités au sein du même **Catch**.
 
-Le **TryCatch** concepteur ne prend pas en charge la modification **Catch**. Si vous souhaitez modifier le type d’exception, vous devez supprimer le **Catch** et ajouter un nouveau. Un **Catch** peut être supprimé en sélectionnant et en la supprimant ou en utilisant le **supprimer** menu sur le menu contextuel accédé par clic droit.
+Le **TryCatch** concepteur ne prend pas en charge la modification **Catch**. Si vous souhaitez modifier le type d’exception, vous devez supprimer le **Catch** et ajouter un nouveau. Un **Catch** peut être supprimé en sélectionnant et en la supprimant ou en sélectionnant **supprimer** dans le menu contextuel accessible par un clic droit.
 
 ### <a name="the-trycatch-properties"></a>Propriétés TryCatch
 

@@ -1,8 +1,6 @@
 ---
 title: IDiaEnumDebugStreamData::Next | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,50 +9,55 @@ helpviewer_keywords:
 ms.assetid: 114171dd-38fd-4bd7-a702-8ff887ffc99b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00ccf7edbe7eb985c83d56aa8b1e851d6ca21374
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: cf641fde4c03053496c732aa7904ddcad671af20
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895247"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695633"
 ---
 # <a name="idiaenumdebugstreamdatanext"></a>IDiaEnumDebugStreamData::Next
-Récupère un nombre spécifié d’enregistrements dans la séquence énumérée.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT Next (   
-   ULONG  celt,  
-   DWORD  cbData,  
-   DWORD* pcbData,  
-   BYTE   data[],  
-   ULONG* pceltFetched  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- celt  
- [in] Le nombre d’enregistrements à récupérer.  
-  
- cbData  
- [in] Taille de la mémoire tampon de données, en octets.  
-  
- pcbData  
- [out] Retourne le nombre d’octets retournés. Si `data` est NULL, puis `pcbData` contient le nombre total d’octets de données disponibles pour tous les enregistrements demandés.  
-  
- données]  
- [out] Une mémoire tampon qui doit être rempli avec les données d’enregistrement de débogage stream.  
-  
- pceltFetched  
- [in, out] Retourne le nombre d’enregistrements dans `data`.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’existe plus aucun enregistrement. Sinon, retourne un code d'erreur.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)   
- [IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)
+Récupère un nombre spécifié d’enregistrements dans la séquence énumérée.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT Next ( 
+   ULONG  celt,
+   DWORD  cbData,
+   DWORD* pcbData,
+   BYTE   data[],
+   ULONG* pceltFetched
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ celt
+
+[in] Le nombre d’enregistrements à récupérer.
+
+ cbData
+
+[in] Taille de la mémoire tampon de données, en octets.
+
+ pcbData
+
+[out] Retourne le nombre d’octets retournés. Si `data` est NULL, puis `pcbData` contient le nombre total d’octets de données disponibles pour tous les enregistrements demandés.
+
+ data[]
+
+[out] Une mémoire tampon qui doit être rempli avec les données d’enregistrement de débogage stream.
+
+ pceltFetched
+
+[in, out] Retourne le nombre d’enregistrements dans `data`.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’existe plus aucun enregistrement. Sinon, retourne un code d'erreur.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
+- [IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)

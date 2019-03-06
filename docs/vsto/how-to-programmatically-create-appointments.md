@@ -1,9 +1,6 @@
 ---
-title: 'Comment : créer des rendez-vous par programmation'
-ms.custom: ''
+title: 'Procédure : Créer des rendez-vous par programmation'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -11,29 +8,27 @@ dev_langs:
 helpviewer_keywords:
 - appointments [Office development in Visual Studio]
 - Outlook calendars [Office development in Visual Studio], creating appointments
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f39584841638a242ab06323736556bc22260f91d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: c3392164106e3569e565cbca684d5d135717de85
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257746"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596904"
 ---
-# <a name="how-to-programmatically-create-appointments"></a>Comment : créer des rendez-vous par programmation
-  Cet exemple crée un rendez-vous et ajoute des destinataires à la demande de réunion de rendez-vous.  
-  
- [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
-  
-## <a name="example"></a>Exemple  
- [!code-csharp[Trin_OL_CreateAppts#1](../vsto/codesnippet/CSharp/Trin_OL_CreateAppts/thisaddin.cs#1)]  
-  
-## <a name="see-also"></a>Voir aussi  
- [Utiliser des éléments de calendrier](../vsto/working-with-calendar-items.md)   
- [Comment : créer un calendrier personnalisé par programmation](../vsto/how-to-programmatically-create-a-custom-calendar.md)   
- [Comment : ajouter par programmation une entrée aux contacts Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)  
-  
-  
+# <a name="how-to-programmatically-create-appointments"></a>Procédure : Créer des rendez-vous par programmation
+  Cet exemple crée un rendez-vous et ajoute des destinataires à la demande de réunion de rendez-vous.
+
+ [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
+
+## <a name="example"></a>Exemple
+ [!code-csharp[Trin_OL_CreateAppts#1](../vsto/codesnippet/CSharp/Trin_OL_CreateAppts/thisaddin.cs#1)]
+
+## <a name="see-also"></a>Voir aussi
+- [Utiliser des éléments de calendrier](../vsto/working-with-calendar-items.md)
+- [Guide pratique pour Créer un calendrier personnalisé par programmation](../vsto/how-to-programmatically-create-a-custom-calendar.md)
+- [Guide pratique pour Ajouter par programmation une entrée aux contacts Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)

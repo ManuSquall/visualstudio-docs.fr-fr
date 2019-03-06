@@ -1,8 +1,6 @@
 ---
 title: -UseEnv (devenv.exe)
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+ms.date: 01/10/2019
 ms.topic: reference
 f1_keywords:
 - VC.Project.UseEnvVars.ExcludePath
@@ -18,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 2dd14603-a61b-42d2-ba31-427a0ee8a799
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a11d8eceec682e37f9bf34c79980c37880bdbe6
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 37326bbe44eed15a562f0d28c01eac02973a2487
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948489"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918895"
 ---
 # <a name="useenv-devenvexe"></a>/UseEnv (devenv.exe)
 
-Démarre Visual Studio et charge des variables d’environnement dans la boîte de dialogue **Répertoires VC++**.
+Lance Visual Studio et charge certaines variables d’environnement pour la compilation.
 
 > [!NOTE]
 > Ce commutateur est installé avec la charge de travail **Développement Desktop avec C++**.
@@ -38,17 +36,37 @@ Démarre Visual Studio et charge des variables d’environnement dans la boîte 
 ## <a name="syntax"></a>Syntaxe
 
 ```shell
-Devenv /useenv
+devenv /UseEnv {SolutionName|ProjectName}
 ```
+
+## <a name="arguments"></a>Arguments
+
+- *SolutionName*
+
+  Chemin complet et nom d’un fichier solution.
+
+- *ProjectName*
+
+  Chemin complet et nom d’un fichier projet.
+
+## <a name="remarks"></a>Notes
+
+Ce commutateur affecte l’environnement IDE de Visual Studio dans les propriétés du projet de **Répertoires VC++**. Si le commutateur `/UseEnv` est spécifié, le nœud **Répertoires VC++** affiche les valeurs des variables d’environnement PATH, INCLUDE, LIBPATH et LIB. (Il indique également les valeurs de **Répertoires sources** et **Répertoires d’exclusion**.) Sinon, le nœud remplace les variables d’environnement par cinq valeurs de répertoire : **Répertoires d’exécutables**, **Répertoires d’inclusion**, **Répertoires de référence**, **Répertoires de bibliothèques** et **Répertoires de bibliothèques WinRT**.
+
+> [!TIP]
+> Pour accéder aux propriétés du projet, cliquez avec le bouton droit sur un projet C++ et sélectionnez **Propriétés**. Dans la boîte de dialogue **Pages de propriétés**, sélectionnez **Propriétés de configuration**, puis **Répertoires VC++**.
+
+Lorsqu’un nom de projet est spécifié avec ce commutateur, l’outil affiche les variables d’environnement de tous les projets de la solution parente du projet.
 
 ## <a name="example"></a>Exemple
 
-L’exemple suivant démarre Visual Studio et charge les variables d’environnement dans la boîte de dialogue **Répertoires VC++**.
+L’exemple suivant lance Visual Studio et charge les variables d’environnement dans la page de propriétés de la solution `MySolution`.
 
 ```shell
-Devenv.exe /useenv
+devenv.exe /useenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln"
 ```
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Commutateurs de ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)
+- [Commutateurs de ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)
+- [Répertoires VC++, page de propriétés (Windows)](/cpp/ide/vcpp-directories-property-page)

@@ -1,8 +1,6 @@
 ---
 title: "CA1032 : Implémenter des constructeurs d'exception standard"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1032
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: a8623c56-273a-4c95-8d83-95911a042be7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6cd6922cae5e2d182a279e2d1637a19f8572468
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 7baf13eb9125b273ad8fb1265a65eb7b053238a1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454750"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922388"
 ---
 # <a name="ca1032-implement-standard-exception-constructors"></a>CA1032 : Implémenter des constructeurs d'exception standard
 
@@ -34,7 +32,7 @@ ms.locfileid: "34454750"
 
 ## <a name="cause"></a>Cause
 
-Un type étend <xref:System.Exception?displayProperty=fullName> mais ne déclare pas tous les constructeurs requis.
+Étend un type <xref:System.Exception?displayProperty=fullName> mais ne déclare pas tous les constructeurs requis.
 
 ## <a name="rule-description"></a>Description de la règle
 
@@ -46,17 +44,17 @@ Types d’exception doivent implémenter les trois constructeurs suivants :
 
 - publique NewException (string, Exception)
 
-En outre, si vous exécutez l’analyse statique du code hérité FxCop comme opposé à [des analyseurs de FxCop de roslyn de](../code-quality/roslyn-analyzers-overview.md), l’absence d’un constructeur quatrième génère également une violation :
+En outre, si vous exécutez l’analyse du code statique FxCop héritée en tant que contrairement à [analyseurs FxCop basée sur Roslyn](../code-quality/roslyn-analyzers-overview.md), l’absence d’un constructeur quatrième génère également une violation :
 
-- NewException protégée ou privée (SerializationInfo, StreamingContext)
+- protégé ou privée NewException (SerializationInfo, StreamingContext)
 
-Ne pas fournir le jeu complet de constructeurs peut rendre difficile une gestion des exceptions correcte. Par exemple, le constructeur qui possède la signature `NewException(string, Exception)` est utilisé pour créer des exceptions provoquées par d’autres exceptions. Sans ce constructeur, vous ne peut pas créer et lever une instance de votre exception personnalisée qui contient une exception interne (imbriquée), ce qui est le code managé doit effectuer dans une telle situation.
+Ne pas fournir le jeu complet de constructeurs peut rendre difficile une gestion des exceptions correcte. Par exemple, le constructeur qui a la signature `NewException(string, Exception)` est utilisé pour créer des exceptions provoquées par d’autres exceptions. Sans ce constructeur, vous ne peut pas créer et lever une instance de votre exception personnalisée qui contient une exception interne (imbriquée), ce qui est le code managé doit faire dans une telle situation.
 
-Les premiers constructeurs de trois exception sont publics par convention. Le quatrième constructeur est protégé dans les classes non scellés et privé dans les classes sealed. Pour plus d’informations, consultez [CA2229 : implémentez des constructeurs de sérialisation](../code-quality/ca2229-implement-serialization-constructors.md)
+Les premiers constructeurs de trois exception sont publics par convention. Le quatrième constructeur est protégé dans les classes non scellés et privées dans les classes sealed. Pour plus d’informations, consultez [CA2229 : Implémentez des constructeurs de sérialisation](../code-quality/ca2229-implement-serialization-constructors.md)
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Pour corriger une violation de cette règle, ajoutez les constructeurs manquants à l’exception et assurez-vous qu’ils disposent de l’accessibilité appropriée.
+Pour corriger une violation de cette règle, ajoutez les constructeurs manquants à l’exception et assurez-vous qu’ils ont l’accessibilité appropriée.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 

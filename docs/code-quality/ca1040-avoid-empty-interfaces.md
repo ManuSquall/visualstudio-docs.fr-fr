@@ -1,8 +1,6 @@
 ---
-title: 'CA1040 : Éviter les interfaces vides'
+title: 'CA1040 : Éviter les interfaces vides'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1040
@@ -13,21 +11,21 @@ helpviewer_keywords:
 ms.assetid: 120a741b-5fd1-4836-8453-7857e0cd0380
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d5c23a52e65d04b5cc8d147cc0ec3bd7c12bde3c
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 73a1080a9701cc38da5d222e66baeb7747ffb8bf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548303"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929087"
 ---
-# <a name="ca1040-avoid-empty-interfaces"></a>CA1040 : Éviter les interfaces vides
+# <a name="ca1040-avoid-empty-interfaces"></a>CA1040 : Éviter les interfaces vides
 
 |||
 |-|-|

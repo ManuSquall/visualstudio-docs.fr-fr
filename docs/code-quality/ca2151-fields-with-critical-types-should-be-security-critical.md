@@ -1,23 +1,21 @@
 ---
-title: 'CA2151 : les champs avec des types critiques doivent être des champs critiques de sécurité'
+title: 'CA2151 : Les champs avec des types critiques doivent être des champs critiques de sécurité'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 09db9d25-7d58-4725-a252-4a07baadf046
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14df76b363f4df5d09b06436765b5f0c66ad2c5d
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 2b75425d35e51125b0cfe1f76c8c18d7f155a12c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551888"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55915884"
 ---
-# <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151 : les champs avec des types critiques doivent être des champs critiques de sécurité
+# <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151 : Les champs avec des types critiques doivent être des champs critiques de sécurité
 
 |||
 |-|-|

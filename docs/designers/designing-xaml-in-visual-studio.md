@@ -1,21 +1,19 @@
 ---
 title: Utiliser XAML
 ms.date: 07/17/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 288e2415-9fcf-408e-bc35-9848315e14fd
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 40b2d37e5b416047aa8a6fecf8c2c9cca0c681ca
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 252e9d17ba272dd61af87427ad91f42d2fcd13ee
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062980"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908034"
 ---
 # <a name="design-xaml-in-visual-studio"></a>Concevoir en XAML dans Visual Studio
 
@@ -42,7 +40,7 @@ Pour la plupart des tâches de base, l'IDE de Visual Studio et l'IDE de Blend po
 
 - **XAML IntelliSense :** Les deux IDE prennent en charge toutes les fonctionnalités courantes que vous pouvez attendre d’IntelliSense, notamment la saisie semi-automatique des instructions, la prise en charge des opérations courantes de l’éditeur telles que l’ajout de commentaires et la mise en forme de code, ainsi que la navigation des ressources, la liaison et le code.
 
-- **Fonctionnalités de débogage de base :** Vous pouvez maintenant déboguer dans Blend, notamment en définissant des points d’arrêt dans votre code afin de déboguer votre application en cours d’exécution. Pour maintenir une expérience de débogage cohérente avec Visual Studio, Blend pour Visual Studio inclut la plupart des fenêtres de débogage et barres d’outils de Visual Studio. Certaines fonctionnalités de débogage avancées, telles que les diagnostics et l'analyse du code, sont disponibles uniquement dans Visual Studio. Consultez [Déboguer dans Visual Studio](../debugger/debugging-in-visual-studio.md).
+- **Fonctionnalités de débogage de base :** Vous pouvez maintenant déboguer dans Blend, notamment en définissant des points d’arrêt dans votre code afin de déboguer votre application en cours d’exécution. Pour maintenir une expérience de débogage cohérente avec Visual Studio, Blend pour Visual Studio inclut la plupart des fenêtres de débogage et barres d’outils de Visual Studio. Certaines fonctionnalités de débogage avancées, telles que les diagnostics et l'analyse du code, sont disponibles uniquement dans Visual Studio. Consultez [Déboguer dans Visual Studio](../debugger/debugger-feature-tour.md).
 
 - **Expérience de rechargement de fichier :** Vous pouvez modifier vos fichiers XAML dans Blend pour Visual Studio ou dans Visual Studio. Vos fichiers modifiés sont alors rechargés automatiquement quand vous passez de l’un à l’autre. Pour minimiser les interruptions de flux de travail, vous pouvez maintenant définir vos préférences de rechargement des fichiers dans la boîte de dialogue correspondante.
 

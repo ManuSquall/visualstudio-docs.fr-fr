@@ -7,24 +7,22 @@ helpviewer_keywords:
 ms.assetid: 2cefe8c2-430a-4cb4-bbe0-f3edb2e5bc03
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 1470ab88cb21a7a80fa46f57f944ec5df21d544f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+manager: jillfra
+ms.openlocfilehash: 9043411cd6681078e9e4d0418e6f3686aa37fc17
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894411"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949809"
 ---
-# <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Guide pratique pour inclure des enregistrements d’écran et des enregistrements vocaux pendant des tests à l’aide des paramètres de test
+# <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Procédure : Inclure des enregistrements d’écran et vocaux pendant des tests à l’aide des paramètres de test
 
 Dans l’éditeur de configuration de Visual Studio, vous pouvez configurer l’adaptateur de données de diagnostic qui enregistre l’écran et la voix de l’utilisateur qui exécute le test. Cet adaptateur de données de diagnostic sauvegarde un enregistrement à l'écran et vocal de la session ouverte pendant le test. L'enregistrement est enregistré avec le résultat du test ou il peut être joint à un bogue. D’autres membres de l’équipe peuvent utiliser l’enregistrement pour isoler les problèmes liés aux applications qui sont difficiles à reproduire.
 
 > [!WARNING]
 > Les enregistrements à l'écran et vocaux ne prennent pas en charge les configurations à plusieurs moniteurs.
 
-L'enregistreur à l'écran et vocal peut être utilisé avec des tests manuels ou automatisés. Par exemple, si vous exécutez à distance un test codé de l'interface utilisateur, vous souhaiterez peut-être enregistrer le bureau pour voir le test codé de l'interface utilisateur pendant qu'il s'exécute. Pour plus d’informations sur la capture à distance d’enregistrements d’écran et vocaux, consultez [Guide pratique pour configurer votre agent de test afin d’exécuter des tests qui interagissent avec le Bureau](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md).
+L'enregistreur à l'écran et vocal peut être utilisé avec des tests manuels ou automatisés. Par exemple, si vous exécutez à distance un test codé de l'interface utilisateur, vous souhaiterez peut-être enregistrer le bureau pour voir le test codé de l'interface utilisateur pendant qu'il s'exécute. Pour plus d’informations sur la capture d’un enregistrement à l’écran et vocal à distance, consultez [Guide pratique pour configurer votre agent de test pour exécuter des tests qui interagissent avec le Bureau](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -52,11 +50,11 @@ L'enregistreur à l'écran et vocal peut être utilisé avec des tests manuels o
 
 6.  Sous **Qualité de l’enregistrement à l’écran**, configurez les options de liste déroulante suivantes :
 
-    1.  **Fréquence d’images :** spécifiez le nombre d’images par seconde à utiliser dans l’enregistrement à l’écran et vocal. La valeur par défaut est 4 images par seconde. Les valeurs comprises entre 2 et 20 peuvent être spécifiées.
+    1.  **Fréquence d’images** : spécifiez le nombre d’images par seconde à utiliser dans l’enregistrement à l’écran et vocal. La valeur par défaut est 4 images par seconde. Les valeurs comprises entre 2 et 20 peuvent être spécifiées.
 
     2.  **Taux d’échantillonnage :** spécifiez le nombre de kilo-octets par seconde à utiliser dans l’enregistrement à l’écran et vocal. La valeur par défaut est 512. Vous pouvez spécifier une valeur comprise entre 512 et 10 000.
 
-    3.  **Qualité (1-100) :** vous pouvez spécifier la qualité de l’enregistrement à l’écran et vocal en sélectionnant une plage de valeurs comprise entre 1 et 100. La valeur par défaut est 50 (moyenne).
+    3.  **Qualité (1-100) :** vous pouvez spécifier la qualité de l’enregistrement à l’écran et vocal en sélectionnant une plage de valeurs comprise entre 1 et 100. La valeur par défaut est 50 (moyenne).
 
 7.  Cliquez sur **OK**. Les paramètres du collecteur de traces de diagnostic sont maintenant configurés et enregistrés pour les paramètres de test.
 

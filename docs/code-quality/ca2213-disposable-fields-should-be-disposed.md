@@ -1,8 +1,6 @@
 ---
-title: "CA2213 : Les champs pouvant être supprimés doivent l'être"
+title: 'CA2213 : Les champs pouvant être supprimés doivent l’être'
 ms.date: 11/05/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - DisposableFieldsShouldBeDisposed
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: e99442c9-70e2-47f3-b61a-d8ac003bc6e5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be06c9bf38ec360cedc858d92a84b1f89c662856
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 1fff209c9a432b78ce27e9c344c1afd29e93d57f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220630"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935535"
 ---
-# <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213 : Les champs pouvant être supprimés doivent l'être
+# <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213 : Les champs pouvant être supprimés doivent l’être
 
 |||
 |-|-|

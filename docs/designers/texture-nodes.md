@@ -1,21 +1,19 @@
 ---
 title: Nœuds de texture
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: reference
 ms.assetid: b7df5ef3-dd4f-4964-9d96-34e0e180515e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3bd146460c57df12b446bead5a4462b14e4cfce
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 73f5bfe71866422cd3717c2a29f1eeb48d15cc76
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925196"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911011"
 ---
 # <a name="texture-nodes"></a>Nœuds de textures
 

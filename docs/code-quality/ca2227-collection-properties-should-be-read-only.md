@@ -1,8 +1,6 @@
 ---
-title: 'CA2227 : Les propriétés de collection doivent être en lecture seule'
+title: 'CA2227 : Les propriétés de collection doivent être en lecture seule'
 ms.date: 09/28/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2227
@@ -13,21 +11,21 @@ helpviewer_keywords:
 ms.assetid: 26967aaf-6fbe-438a-b4d3-ac579b5dc0f9
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: f1bbd3e6ba97d969694e7d2142978c12552b3c50
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 8a6ced277aa442450418ce55f4e1db56ad5d8af1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860249"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926240"
 ---
-# <a name="ca2227-collection-properties-should-be-read-only"></a>CA2227 : Les propriétés de collection doivent être en lecture seule
+# <a name="ca2227-collection-properties-should-be-read-only"></a>CA2227 : Les propriétés de collection doivent être en lecture seule
 
 |||
 |-|-|
@@ -66,4 +64,4 @@ L’exemple suivant illustre un type avec une propriété de collection accessib
 
 ## <a name="related-rules"></a>Règles associées
 
-- [CA1819 : Les propriétés ne doivent pas retourner des tableaux](../code-quality/ca1819-properties-should-not-return-arrays.md)
+- [CA1819 : Propriétés ne doivent pas retourner de tableaux](../code-quality/ca1819-properties-should-not-return-arrays.md)

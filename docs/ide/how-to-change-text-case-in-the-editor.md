@@ -1,8 +1,6 @@
 ---
 title: Convertir du texte en majuscules ou minuscules
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - editors, text case
@@ -10,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: b04d1327-a45e-4c12-a0d0-67672b3fa855
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7165ea27c18e78fc7f9ee2ac790ff6d4d9e52c13
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 04922b703fd2c1158a98fc4574ad217cccd5016e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059283"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907449"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Procédure : changer la casse du texte dans l’éditeur
 

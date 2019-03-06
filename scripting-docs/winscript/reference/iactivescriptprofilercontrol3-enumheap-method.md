@@ -1,5 +1,5 @@
 ---
-title: Iactivescriptprofilercontrol3::enumheap, méthode | Documents Microsoft
+title: Méthode IActiveScriptProfilerControl3::EnumHeap | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,21 +12,21 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7d6fc79a9d6d35e35181c3505e07af2d9a1962c2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 25e81a4aa631c142d4444c0578742f68001a108d
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724559"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347370"
 ---
 # <a name="iactivescriptprofilercontrol3enumheap-method"></a>IActiveScriptProfilerControl3::EnumHeap, méthode
-Retourne une interface ([iactivescriptprofilerheapenum, Interface](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)) qui peut être utilisé pour itérer sur les objets du tas GC dans le contexte du moteur de script associé.  
+Retourne une interface ([iactivescriptprofilerheapenum, Interface](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)) qui peut être utilisé pour itérer sur les objets du tas de garbage collection dans le contexte du moteur de script associé.  
   
- Vous pouvez appeler cette méthode dans un débogage ou en mode version finale. Cette méthode doit être appelée lorsque le thread d’interface utilisateur est inactif. Une fois que la méthode a été appelée, aucune opération ne doit être effectuée dans le moteur de script à l’exception de [iactivescriptprofilerheapenum::Next, méthode](../../winscript/reference/iactivescriptprofilerheapenum-next-method.md) jusqu'à ce que [iactivescriptprofilerheapenum::Next, méthode](../../winscript/reference/iactivescriptprofilerheapenum-next-method.md)retourne S_FALSE ou [iactivescriptprofilerheapenum, Interface](../../winscript/reference/iactivescriptprofilerheapenum-interface.md) pointeur d’interface est libéré.  
+ Vous pouvez appeler cette méthode dans debug ou en mode version finale. Cette méthode doit être appelée lorsque le thread d’interface utilisateur est inactif. Une fois que la méthode a été appelée, aucune opération ne doit être effectuée sur le moteur de script à l’exception [méthode IActiveScriptProfilerHeapEnum::Next](../../winscript/reference/iactivescriptprofilerheapenum-next-method.md) jusqu'à ce que [méthode IActiveScriptProfilerHeapEnum::Next](../../winscript/reference/iactivescriptprofilerheapenum-next-method.md)retourne S_FALSE ou [iactivescriptprofilerheapenum, Interface](../../winscript/reference/iactivescriptprofilerheapenum-interface.md) interface pointeur est relâché.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT EnumHeap([out] IActiveScriptProfilerHeapEnum** ppEnum);  
 ```  
   

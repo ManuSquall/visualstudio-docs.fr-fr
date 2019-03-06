@@ -1,26 +1,25 @@
 ---
 title: Notifications, Environnement, boîte de dialogue Options
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.Notifications
 ms.assetid: 71cf7380-f2c6-436f-a17c-fdd5f90f5865
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd1fc3b6cb38c6d5badff99b83e78605ba5cc31e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 68b3ea123ceec9628ee77b855e53ebe436d21c5b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945127"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937784"
 ---
 # <a name="notifications-environment-options-dialog-box"></a>Notifications, Environnement, boîte de dialogue Options
-Utilisez cette option pour cesser d'ignorer les notifications que vous avez choisi précédemment d'ignorer via la boîte de dialogue Notifications. Pour plus d’informations, consultez [Notifications](../../ide/visual-studio-notifications.md).
+
+Utilisez cette option pour cesser d'ignorer les notifications que vous aviez choisi d'ignorer dans la boîte de dialogue **Notifications**. Pour plus d’informations, voir [Mettre à jour Visual Studio](../../install/update-visual-studio.md).
 
 ### <a name="see-also"></a>Voir aussi
 

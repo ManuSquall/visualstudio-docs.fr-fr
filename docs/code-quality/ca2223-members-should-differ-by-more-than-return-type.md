@@ -1,8 +1,6 @@
 ---
-title: 'CA2223 : Les membres ne doivent pas différer uniquement par leur type de retour'
+title: 'CA2223 : Les membres ne doivent pas différer uniquement par leur type de retour'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - MembersShouldDifferByMoreThanReturnType
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: eb326d9f-50d9-48cb-84be-d41c84a8fe09
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93822dd3db325e3463c4a8f175c8ca289cac9e5d
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 3e4e7aa59d273242bd8b97fd4f2777b7edcb5990
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549824"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55915873"
 ---
-# <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223 : Les membres ne doivent pas différer uniquement par leur type de retour
+# <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223 : Les membres ne doivent pas différer uniquement par leur type de retour
 
 |||
 |-|-|

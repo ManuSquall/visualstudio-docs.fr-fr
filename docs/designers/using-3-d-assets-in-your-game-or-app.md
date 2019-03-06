@@ -1,8 +1,6 @@
 ---
 title: Utilisation de composants 3D dans votre jeu ou votre application
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - VC.Project.ImageContentTask.ContentOutput
@@ -14,15 +12,15 @@ f1_keywords:
 ms.assetid: ea587909-e434-46a8-abf8-9b3e95a58b4f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b41416ea923e8f14aa39bf1607ad7c349e0b149c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2fb6897d9dd603b5a86a6774336d64f51a6bb5d6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880674"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908619"
 ---
 # <a name="use-3d-assets-in-your-game-or-app"></a>Utiliser des composants 3D dans votre jeu ou votre application
 
@@ -95,7 +93,7 @@ Quand vous utilisez l'outil de pipeline de contenu d'image pour générer une re
 |**Compresser**|Spécifie le type de compression utilisé pour le fichier de sortie.<br /><br /> Les options disponibles sont les suivantes :<br /><br /> -   **Aucune compression**<br />-   **Compression BC1_UNORM**<br />-   **Compression BC1_UNORM_SRGB**<br />-   **Compression BC2_UNORM**<br />-   **Compression BC2_UNORM_SRGB**<br />-   **Compression BC3_UNORM**<br />-   **Compression BC3_UNORM_SRGB**<br />-   **Compression BC4_UNORM**<br />-   **Compression BC4_SNORM**<br />-   **Compression BC5_UNORM**<br />-   **Compression BC5_SNORM**<br />-   **Compression BC6H_UF16**<br />-   **Compression BC6H_SF16**<br />-   **Compression BC7_UNORM**<br />-   **Compression BC7_UNORM_SRGB**<br /><br /> Pour plus d’informations sur les formats de compression pris en charge dans les différentes versions de DirectX, consultez [Guide de programmation pour DXGI](http://go.microsoft.com/fwlink/p/?LinkId=246265).|
 |Convertir dans un format alpha prémultiplié|**Oui** pour convertir l’image dans un format alpha prémultiplié dans le fichier de sortie ; sinon, **Non**. Seul le fichier de sortie est modifié ; l'image source est inchangée.|
 |**Générer des mips**|**Oui** pour générer une chaîne MIP complète au moment de la génération et l’inclure dans le fichier de sortie ; sinon, **Non**. Si la valeur **Non** est sélectionnée et que le fichier source contient déjà une chaîne mipmap, le fichier de sortie a une chaîne MIP ; sinon, le fichier de sortie n’a pas de chaîne MIP.|
-|**Sortie de contenu**|Spécifie le nom du fichier de sortie. **Important :** La modification de l’extension du nom de fichier de sortie n’a aucun effet sur son format.|
+|**Sortie de contenu**|Spécifie le nom du fichier de sortie. **Important :**  La modification de l'extension de nom de fichier du fichier de sortie n'a aucun effet sur son format.|
 
 ### <a name="mesh-content-pipeline-configuration"></a>Configuration du pipeline de contenu de maillage
 
@@ -103,7 +101,7 @@ Quand vous utilisez l'outil de pipeline de contenu de maillage pour générer un
 
 |Property|Description|
 |--------------|-----------------|
-|**Sortie de contenu**|Spécifie le nom du fichier de sortie. **Important :** La modification de l’extension du nom de fichier de sortie n’a aucun effet sur son format.|
+|**Sortie de contenu**|Spécifie le nom du fichier de sortie. **Important :**  La modification de l'extension de nom de fichier du fichier de sortie n'a aucun effet sur son format.|
 
 ### <a name="shader-content-pipeline-configuration"></a>Configuration du pipeline de contenu de nuanceur
 
@@ -111,7 +109,7 @@ Quand vous utilisez l'outil de pipeline de contenu de nuanceur pour générer un
 
 |Property|Description|
 |--------------|-----------------|
-|**Sortie de contenu**|Spécifie le nom du fichier de sortie. **Important :** La modification de l’extension du nom de fichier de sortie n’a aucun effet sur son format.|
+|**Sortie de contenu**|Spécifie le nom du fichier de sortie. **Important :**  La modification de l'extension de nom de fichier du fichier de sortie n'a aucun effet sur son format.|
 
 ## <a name="load-and-use-3d-assets-at-run-time"></a>Charger et utiliser des composants 3D lors de l’exécution
 

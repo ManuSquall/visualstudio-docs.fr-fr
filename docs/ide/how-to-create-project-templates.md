@@ -1,8 +1,6 @@
 ---
 title: Créer des modèles de projet
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - VS.ExportTemplateWizard
@@ -10,13 +8,13 @@ helpviewer_keywords:
 - project templates [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5cb90ea6f1e404d65ac3c375f49e77dd02c6711c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 4feed7e3ebdab56adc2c607ed0075c1a7fc3c620
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066913"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937979"
 ---
 # <a name="how-to-create-project-templates"></a>Procédure : Créer des modèles de projet
 

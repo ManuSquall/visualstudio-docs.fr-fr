@@ -1,30 +1,31 @@
 ---
 title: -? (devenv.exe)
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
 - /? Devenv switch
+- Devenv, /? switch
+- Devenv, command-line help
 ms.assetid: fd8fd6b2-1304-4d06-8118-6629666801fb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd6d9059f43b209e6430c806fe26286e046f8f0e
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 955baf3fc4aaa3d7dbe5607d1b41f1c21815166d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948203"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926799"
 ---
 # <a name="-devenvexe"></a>/? (devenv.exe)
-Affiche une boîte de message répertoriant tous les commutateurs `devenv`, avec une brève description de chacun d’eux.
+
+Affiche une boîte de message présentant tous les commutateurs `devenv`, avec une brève description de chacun d’eux.
 
 ## <a name="syntax"></a>Syntaxe
 
-```
+```shell
 devenv /?
 ```
 

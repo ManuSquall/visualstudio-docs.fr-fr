@@ -1,21 +1,19 @@
 ---
 title: Tri, filtrage et regroupement dans l’Explorateur de schémas XML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 4a914de0-9ffc-4526-9603-92e460e52513
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a3e281f8e3995cf22100d328089f1993110f756
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 200ac7f9a38a242d6140902374d477339747b9b4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693667"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55914004"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Tri, filtrage et regroupement (Explorateur de schémas XML)
 
@@ -23,13 +21,13 @@ Cette rubrique décrit les options qui sont disponibles via le **tri, filtrage e
 
 ## <a name="filter-options"></a>Options de filtre
 
- Les options de filtrage suivantes sont disponibles. Par défaut, le **afficher les espaces de noms** et **afficher les fichiers de schéma** sont sélectionnées.
+ Les options de filtrage suivantes sont disponibles. Par défaut, le **afficher les espaces de noms** et **afficher les fichiers de schéma** options sont sélectionnées.
 
 -   **Afficher les espaces de noms**.
 
 -   **Afficher les fichiers de schéma**.
 
--   **Afficher les compositeurs (séquence/choix/tous)**.
+-   **Afficher les éléments de composition (séquence/choix/tous)**.
 
 ## <a name="sorting-options"></a>Options de tri
 
@@ -39,7 +37,7 @@ Cette rubrique décrit les options qui sont disponibles via le **tri, filtrage e
 
 -   **Trier par nom**.
 
--   **Ordre du document**.
+-   **Ordre des documents**.
 
 ### <a name="sort-by-type"></a>Trier par type
 
@@ -77,8 +75,8 @@ Cette rubrique décrit les options qui sont disponibles via le **tri, filtrage e
 
 ### <a name="document-order"></a>Ordre du document
 
- Le **l’ordre du Document** option est disponible lorsque le **afficher les fichiers de schéma** option est sélectionnée. Lorsque **l’ordre du Document** est sélectionnée, les nœuds globaux sont affichés dans l’ordre dans lequel ils apparaissent dans le fichier de schéma.
+ Le **ordre du Document** option est disponible lorsque le **afficher les fichiers de schéma** option est sélectionnée. Lorsque **ordre du Document** est sélectionnée, les nœuds globaux sont affichés dans l’ordre dans lequel ils apparaissent dans le fichier de schéma.
 
-## <a name="persisting-sortfilter-options"></a>Options de tri/filtre persistantes
+## <a name="persisting-sortfilter-options"></a>Options de tri/filtrage persistantes
 
  Les options de tri, de filtrage et de regroupement sont enregistrées dans le Registre pour chaque utilisateur, indépendamment de la solution ou des fichiers ouverts lors de la modification des paramètres.

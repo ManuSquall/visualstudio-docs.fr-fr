@@ -1,20 +1,18 @@
 ---
 title: Utilisation de contrôles HTML5 dans des tests codés de l'interface utilisateur
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a603a662c9007ab3ee0e66df0b23959bfdce83fb
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 05ef65668edc9b008d95492605f967e467aa34b0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896187"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951876"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Utilisation de contrôles HTML5 dans des tests codés de l’interface utilisateur
 
@@ -40,11 +38,11 @@ Les tests codés de l'interface utilisateur incluent la prise en charge d'une pa
 
 |Action|Enregistrement|Code généré|
 |-|---------------|-|
-|**Lire un fichier audio**<br /><br /> Directement à partir du contrôle ou à partir du menu contextuel des contrôles.|Play \<nom> Audio from 00:00:00|HtmlAudio.Play(TimeSpan)|
+|**Lire un fichier audio**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Play \<nom> Audio from 00:00:00|HtmlAudio.Play(TimeSpan)|
 |**Rechercher un moment précis dans le fichier audio**|Seek \<nom> Audio to 00:01:48|HtmlAudio.Seek(TimeSpan)|
-|**Suspendre la lecture du fichier audio**<br /><br /> Directement à partir du contrôle ou à partir du menu contextuel des contrôles.|Pause \<nom> Audio at 00:01:53|HtmlAudio.Pause(TimeSpan)|
-|**Désactiver le son**<br /><br /> Directement à partir du contrôle ou à partir du menu contextuel des contrôles.|Mute \<nom> Audio|HtmlAudio.Mute()|
-|**Réactiver le son**<br /><br /> Directement à partir du contrôle ou à partir du menu contextuel des contrôles.|Unmute \<nom> Audio|HtmlAudio.Unmute()|
+|**Suspendre la lecture du fichier audio**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Pause \<nom> Audio at 00:01:53|HtmlAudio.Pause(TimeSpan)|
+|**Désactiver le son**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Mute \<nom> Audio|HtmlAudio.Mute()|
+|**Réactiver le son**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Unmute \<nom> Audio|HtmlAudio.Unmute()|
 |**Modifier le volume audio**|Set volume of \<nom> Audio to 79%|HtmlAudio.SetVolume(float)|
 
 Consultez [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioElement) pour obtenir une liste de propriétés sur lesquelles vous pouvez ajouter une assertion.
@@ -64,11 +62,11 @@ Consultez [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudi
 
 |Action|Enregistrement|Code généré|
 |-|---------------|-|
-|**Lire un fichier vidéo**<br /><br /> Directement à partir du contrôle ou à partir du menu contextuel des contrôles.|Play \<nom> Video from 00:00:00|HtmlVideo.Play(TimeSpan)|
+|**Lire un fichier vidéo**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Play \<nom> Video from 00:00:00|HtmlVideo.Play(TimeSpan)|
 |**Rechercher un moment précis dans le fichier vidéo**|Seek \<nom> Video to 00:01:48|HtmlVideo.Seek(TimeSpan)|
-|**Suspendre la lecture du fichier vidéo**<br /><br /> Directement à partir du contrôle ou à partir du menu contextuel des contrôles.|Pause \<nom> Video at 00:01:53|HtmlVideo.Pause(TimeSpan)|
-|**Désactiver le son de la vidéo**<br /><br /> Directement à partir du contrôle ou à partir du menu contextuel des contrôles.|Mute \<nom> Video|HtmlVideo.Mute()|
-|**Réactiver le son de la vidéo**<br /><br /> Directement à partir du contrôle ou à partir du menu contextuel des contrôles.|Unmute \<nom> Video|HtmlVideo.Unmute()|
+|**Suspendre la lecture du fichier vidéo**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Pause \<nom> Video at 00:01:53|HtmlVideo.Pause(TimeSpan)|
+|**Désactiver le son de la vidéo**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Mute \<nom> Video|HtmlVideo.Mute()|
+|**Réactiver le son de la vidéo**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Unmute \<nom> Video|HtmlVideo.Unmute()|
 |**Modifier le volume de la vidéo**|Set volume of \<nom> Video to 79%||
 
 Consultez [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/video) pour obtenir une liste de propriétés sur lesquelles vous pouvez ajouter une assertion.
@@ -81,7 +79,7 @@ Consultez [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element
 > Si vous rembobinez ou avancez rapidement la vidéo à l'aide d'étiquettes-30s ou +30s, celle-ci est agrégée pour rechercher le moment précis.
 
 ## <a name="progressbar"></a>Barre de progression
- **Contrôle ProgressBar :** ProgressBar est un contrôle sur lequel il n’est pas possible d’interagir. Vous pouvez ajouter des assertions sur les propriétés `Value` et `Max` de ce contrôle. Pour plus d’informations, consultez [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress).
+ **Contrôle ProgressBar :** ProgressBar est un contrôle sur lequel il n’est pas possible d’interagir. Vous pouvez ajouter des assertions sur les propriétés `Value` et `Max` de ce contrôle. Pour plus d’informations, consultez [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress).
 
  ![Contrôle de barre de progression HTML5](../test/media/codedui_html5_progressbar.png)
 

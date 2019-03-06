@@ -1,16 +1,17 @@
 ---
-title: Guide pratique pour ouvrir plusieurs solutions dans Visual Studio pour Mac
+title: 'Procédure : Ouvrir plusieurs solutions dans Visual Studio pour Mac'
 description: Découvrez comment ouvrir plusieurs solutions dans Visual Studio pour Mac, et comment ouvrir plusieurs instances de l’application.
 author: conceptdev
 ms.author: crdun
 ms.date: 07/19/2018
 ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
-ms.openlocfilehash: 76a536f621a3c715a62b9e132dc661a2bcf8eb07
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.custom: video
+ms.openlocfilehash: cdbe02cf3d60b460252f09764521afd240551115
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294927"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55768225"
 ---
 # <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>Ouvrir plusieurs solutions ou instances de Visual Studio pour Mac
 
@@ -49,3 +50,7 @@ Autre possibilité, si vous avez récemment ouvert la solution, vous pouvez suiv
     ![Capture d’écran du menu Solutions récentes](media/open-multiple-solutions-image2.png)
 
 1. Maintenez la touche **Ctrl**appuyée, puis sélectionnez la solution. Cette combinaison permet d’ouvrir la deuxième solution dans le Panneau Solutions.
+
+## <a name="related-video"></a>Vidéo associée
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Work-With-Multiple-Solutions/player]

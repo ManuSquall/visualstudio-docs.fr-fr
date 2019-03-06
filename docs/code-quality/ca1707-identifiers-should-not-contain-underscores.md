@@ -1,8 +1,6 @@
 ---
 title: 'CA1707 : Les identificateurs ne doivent pas contenir de traits de soulignement'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - IdentifiersShouldNotContainUnderscores
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 5fb539ef-c304-4323-90c0-b14386da9774
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74746897f8ce27a79f666ae1d691b235035b4626
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 1cbd6d3999525808180f69652290807d327b6814
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548593"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917738"
 ---
 # <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707 : Les identificateurs ne doivent pas contenir de traits de soulignement
 
@@ -52,5 +50,5 @@ Ne supprimez aucun avertissement de cette règle.
 
 ## <a name="related-rules"></a>Règles associées
 
-- [CA1709 : La casse des identificateurs doit être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708 : Les identificateurs ne doivent pas différer que par leur casse](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1709 : Identificateurs doivent être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708 : Les identificateurs doivent différer par leur casse](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

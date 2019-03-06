@@ -8,16 +8,14 @@ manager: routlaw
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.devlang: multiple
-ms.service: multiple
-ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 465443211d1a3f1aff8bfa63fa6cb8068b55980b
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: c3eccdd231db075b7022548aabbd61f382a79900
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459762"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842467"
 ---
 # <a name="installation"></a>Installation
 
@@ -27,7 +25,7 @@ Visual Studio Tools pour IA peut être installé sur les systèmes d’exploitat
 
 Cette extension fonctionne avec Visual Studio 2015 et Visual Studio 2017 Community Edition ou version ultérieure.
 
-Vous pouvez télécharger les outils sur [Visual Studio Marketplace](http://aka.ms/vstoolsforai) ou dans Visual Studio :
+Vous pouvez télécharger les outils sur [Visual Studio Marketplace](https://aka.ms/vstoolsforai) ou dans Visual Studio :
 
 1. Sélectionnez **Outils** > **Extensions et mises à jour**.
 
@@ -200,21 +198,32 @@ pip3.5 install Theano==0.9.0
 Pour installer PyTorch, exécutez la commande suivante dans un terminal :
 
 - **Fenêtres**
-    - Il n’existe encore aucun package wheel officiel. Vous pouvez télécharger un [package Anaconda PyTorch](https://anaconda.org/pytorch/repo?type=all) tiers.
-    - Décompressez-le dans votre répertoire de base, par exemple « C:\Users\test\pytorch ».
-    - Ajoutez « C:\Users\test\pytorch\Lib\site-packages » à la variable d’environnement %PYTHONPATH%.
+
+   Il n’existe encore aucun package wheel officiel. Vous pouvez télécharger un package tiers à partir d’[Anaconda](https://anaconda.org/pytorch/repo?type=all) ou [University of California](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pytorch).
+
+   - Décompressez-le dans votre répertoire de base, par exemple, *C:\Users\test\pytorch*.
+   - Ajoutez *C:\Users\test\pytorch\Lib\site-packages* à la variable d’environnement %PYTHONPATH%.
+
+      ```bash
+      pip3 install http://download.pytorch.org/whl/cu80/torch-0.4.0-cp36-cp36m-win_amd64.whl
+      pip3 install torchvision
+      ```
 
 - **macOS**
+
     ```bash
     pip3.5 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl
     ```
+
     > [!NOTE]
     > Les binaires macOS ne prenant pas en charge CUDA, installez-le à partir de la source si CUDA est nécessaire
 
 - **Linux**
+
     ```bash
     pip3.5 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp35-cp35m-manylinux1_x86_64.whl
     ```
+
     > [!NOTE]
     > Ce package unique prend en charge les GPU et UC.
 

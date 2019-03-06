@@ -1,14 +1,9 @@
 ---
-title: Impossible d’assigner à &#39;cela&#39; | Microsoft Docs
-ms.custom: ''
+title: Impossible d’assigner à 'this' | Microsoft Docs
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5000
 dev_langs:
@@ -16,18 +11,17 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: ba2b0a2b-f0f8-4698-b335-a4ab6c166671
-caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 47e55d39e85675b37d2ac9741d1207a9e81d369e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f147e591969f803533bb23ff16d73ee9af2c3d27
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856645"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56839787"
 ---
-# <a name="cannot-assign-to-39this39"></a>Impossible d’assigner à &#39;cela&#39;
+# <a name="cannot-assign-to-this"></a>Impossible d'affecter à 'this'
 Vous avez tenté d’affecter une valeur à **cela**. **Cela** est un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] mot clé qui fait référence à un :
 
 - l’objet en cours d’exécution une méthode,

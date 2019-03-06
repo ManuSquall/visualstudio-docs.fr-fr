@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEx:GetHostPid | Documents Microsoft
+title: IRemoteDebugApplicationEx:GetHostPid | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,37 +18,43 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ffb5ff1d23c832f5710abf6d97199afe3f777b67
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 62033169e10585015b5f1439067aa0cbc42447a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728579"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754638"
 ---
 # <a name="iremotedebugapplicationexgethostpid"></a>IRemoteDebugApplicationEx:GetHostPid
-Retourne l’ID de processus pour l’application hôte.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```  
-HRESULT GetHostPid(  
-   DWORD*  dwHostPid  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `dwHostPid`  
- [out] L’identificateur de processus hôte.  
-  
-## <a name="return-value"></a>Valeur de retour  
- La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
-  
-|Valeur|Description|  
-|-----------|-----------------|  
-|`S_OK`|La méthode a réussi.|  
-  
-## <a name="remarks"></a>Remarques  
- Utilisé par l’IDE.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Interface IRemoteDebugApplicationEx](http://msdn.microsoft.com/en-us/2f65fa67-06b7-4053-8945-22383ab66343)
+
+Retourne l’ID de processus pour l’application hôte.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT GetHostPid(
+   DWORD*  dwHostPid
+);
+```
+
+### <a name="parameters"></a>Paramètres
+
+`dwHostPid`
+
+[out] L’identificateur de processus hôte.
+
+## <a name="return-value"></a>Valeur de retour
+
+La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.
+
+|Value|Description|
+|-----------|-----------------|
+|`S_OK`|La méthode a réussi.|
+
+## <a name="remarks"></a>Notes
+
+Utilisé par l’IDE.
+
+## <a name="see-also"></a>Voir aussi
+
+- [Interface IRemoteDebugApplicationEx](iremotedebugapplicationex-interface.md)

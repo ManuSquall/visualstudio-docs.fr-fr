@@ -1,8 +1,6 @@
 ---
-title: Guide pratique pour spécifier des options d’instrumentation supplémentaires | Microsoft Docs
-ms.custom: ''
+title: 'Procédure : Spécifier des options d’instrumentation supplémentaires | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.advanced
@@ -12,17 +10,17 @@ helpviewer_keywords:
 - performance sessions, options
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f97bc28277adfe1e181e0f6a5be210e45b250717
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: c95add435824663e798d226e0be11ddbe06b8aba
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845247"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618677"
 ---
-# <a name="how-to-specify-additional-instrumentation-options"></a>Guide pratique pour spécifier des options d’instrumentation supplémentaires
+# <a name="how-to-specify-additional-instrumentation-options"></a>Procédure : Spécifier des options d’instrumentation supplémentaires
 
 Vous pouvez instrumenter des binaires à l’aide de l’IDE de Visual Studio ou d’outils en ligne de commande. Si vous instrumentez un fichier binaire à partir de l’IDE, vous pouvez contrôler le volume de données collectées lors de l’instrumentation en spécifiant des options d’instrumentation supplémentaires dans l’outil [VSInstr](../profiling/vsinstr.md). Ces options sont disponibles au niveau de la session ou de la cible. Par exemple, pour inclure ou exclure des fonctions spécifiques lors du processus d’instrumentation, utilisez l’option d’instrumentation supplémentaire au niveau de la cible.
 
@@ -43,5 +41,5 @@ Vous pouvez instrumenter des binaires à l’aide de l’IDE de Visual Studio ou
 
 ## <a name="see-also"></a>Voir aussi
 
-[Configurer des sessions de performances](../profiling/configuring-performance-sessions.md)  
+[Configurer des sessions de performances](../profiling/configuring-performance-sessions.md)
 [Profiler à partir de la ligne de commande](../profiling/using-the-profiling-tools-from-the-command-line.md)

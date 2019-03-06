@@ -1,14 +1,9 @@
 ---
-title: Identificateur non défini | Documents Microsoft
-ms.custom: ''
+title: Identificateur non défini | Microsoft Docs
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5009
 dev_langs:
@@ -16,23 +11,22 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 8c8000d9-dd14-487e-922d-98430024a0f6
-caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f54117dc6d169d11498f15d034fa584fc2e9f64b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 33d659b1c5dddc05d08088e876cb5661c1694766
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633579"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840509"
 ---
 # <a name="undefined-identifier"></a>Identificateur non défini
-Vous avez tenté d’utiliser un identificateur qui la [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] compilateur ne reconnaît pas. La valeur non définie est retournée lorsque vous utilisez :  
+Vous avez tenté d’utiliser un identificateur qui la [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] compilateur ne reconnaît pas. La valeur undefined est retournée à chaque fois que vous utilisez :  
   
 -   une variable qui n’existe pas,  
   
--   une variable qui a été déclarée, mais n’a jamais étée une valeur qui lui est affectée,  
+-   une variable qui a été déclarée, mais jamais eu une valeur qui lui est assignée,  
   
 -   une propriété d’objet qui n’existe pas.  
   

@@ -2,22 +2,20 @@
 title: Concepteur de flux de travail - Concepteur d’activités FlowDecision
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.FlowDecision.UI
 ms.assetid: 4a49edc3-3662-4b7b-812e-0a5ba00d6c94
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a87c5c9ebe1b3eed2c3c569e508c5b76ce6845d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 095ffb7284b9363d3bdb04749c8cff7114927935
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818989"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918401"
 ---
 # <a name="flowdecision-activity-designer"></a>Concepteur d'activités FlowDecision
 
@@ -51,4 +49,4 @@ Le tableau suivant présente les propriétés de <xref:System.Activities.Stateme
 
 - [Organigramme](../workflow-designer/flowchart-activity-designers.md)
 - [Organigramme](../workflow-designer/flowchart-activity-designer.md)
-- [FlowSwitch\<T >](../workflow-designer/flowswitch-t-activity-designer.md)
+- [FlowSwitch\<T>](../workflow-designer/flowswitch-t-activity-designer.md)

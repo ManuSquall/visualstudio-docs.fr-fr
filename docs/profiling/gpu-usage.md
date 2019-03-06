@@ -1,20 +1,18 @@
 ---
 title: Utilisation du GPU | Microsoft Docs
-ms.custom: ''
 ms.date: 11/01/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8265ae81b5ea1c6395af352f8f981f41f77cea8
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: f16a518542e8acab636da6e395fdfee8d7a25085
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220942"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223466"
 ---
 # <a name="gpu-usage"></a>Utilisation du GPU
 
@@ -24,7 +22,7 @@ Cette capture d’écran montre la fenêtre **Rapport d’utilisation du GPU** :
 
 ![Rapport d’utilisation du GPU, avec les chronologies GPU et UC](media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 
 Voici les conditions requises pour l’outil Utilisation du GPU, qui s’ajoutent à celles de Graphics Diagnostics.
 
@@ -104,7 +102,7 @@ Pour trouver plus facilement ce que vous cherchez, filtrez le rapport Utilisatio
 |--------------------|-----------------|
 |**Process**|Nom du processus qui vous intéresse. Tous les processus qui ont utilisé le GPU pendant la session de diagnostic sont inclus dans cette liste déroulante. La couleur associée au processus dans cette liste déroulante est la couleur de l’activité du thread dans les chronologies ci-dessous.|
 |**Thread**|ID de thread qui vous intéresse. Dans une application multithread, ces informations peuvent vous aider à isoler des threads particuliers qui appartiennent au processus qui vous intéresse. Les événements associés au thread sélectionné sont mis en surbrillance dans chaque chronologie.|
-|**Afficher**|Numéro de l’affichage dont la fréquence de rafraîchissement est indiquée **Remarque :** Certains pilotes peuvent être configurés pour présenter plusieurs affichages physiques sous forme d’un affichage virtuel unique, de grande taille. Vous ne verrez peut-être qu'un seul affichage dans la liste, même si l'ordinateur possède plusieurs affichages attachés.|
+|**Afficher**|Numéro de l’affichage dont la fréquence de rafraîchissement est indiquée.**Remarque  :**  Certains pilotes peuvent être configurés pour présenter plusieurs affichages physiques sous forme d'un affichage virtuel unique, de grande taille. Vous ne verrez peut-être qu'un seul affichage dans la liste, même si l'ordinateur possède plusieurs affichages attachés.|
 |**Filtrer**|Mots clés qui vous intéressent. Les événements de la partie inférieure du rapport incluent seulement ceux qui correspondent complètement ou partiellement à un mot clé. Vous pouvez spécifier plusieurs mots clés en les séparant par des virgules.|
 |**Tri des hiérarchies**|Case à cocher qui indique si les hiérarchies d'événements (définies via des marqueurs utilisateur) sont conservées ou ignorées.|
 
@@ -157,7 +155,7 @@ Le matériel et les pilotes GPU suivants sont pris en charge :
 
 - [Résoudre les problèmes graphiques complexes liés à votre jeu à l’aide des outils DirectX (vidéo)](https://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)
 - [Outil Utilisation du GPU dans Visual Studio (vidéo)](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)
-- [Outil Utilisation du GPU dans Visual Studio 2013 Update 4 CTP1 (blog)](https://blogs.msdn.microsoft.com/vcblog/2014/09/04/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1/)
+- [Outil Utilisation du GPU dans Visual Studio 2013 Update 4 CTP1 (blog)](https://devblogs.microsoft.com/cppblog/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1/)
 - [Utilisation du GPU pour DirectX dans Visual Studio (blog)](https://blogs.msdn.microsoft.com/ianhu/2014/12/16/gpu-usage-for-directx-in-visual-studio/)
 - [GPUView](/windows-hardware/drivers/display/using-gpuview)
 - [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer)

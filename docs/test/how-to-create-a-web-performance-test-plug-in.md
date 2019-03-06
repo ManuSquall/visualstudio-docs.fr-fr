@@ -10,15 +10,13 @@ helpviewer_keywords:
 ms.assetid: a612f2d2-9806-477d-a126-12842f07da6e
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: f4848fbaed6df9817cd9f0ddf16f388d855f5cd9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 6a9b5ec7b0a4231297925ab8b487ec3f529ddaef
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067652"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955100"
 ---
 # <a name="how-to-create-a-web-performance-test-plug-in"></a>Procédure : créer un plug-in de test de performances web
 

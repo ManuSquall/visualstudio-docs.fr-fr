@@ -1,22 +1,20 @@
 ---
 title: Limites de l’exploration | Outil de test Microsoft IntelliTest pour les développeurs
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Exploration bounds
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9d1ac08a2314119c924417191ca509a4bcd18021
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: e5ee5d3e05af407f3011111e1dcad84487dd81fe
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000652"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952357"
 ---
 # <a name="exploration-bounds"></a>Limites de l’exploration
 
@@ -107,7 +105,7 @@ Par exemple, chaque chemin dans le code suivant consomme n+1 conditions :
 
 ```csharp
 [PexMethod]
-void ParameterizedTest(int n) 
+void ParameterizedTest(int n)
 {
      for (int i=0; i<n; i++) { // conditions are "0<n", "1<n", ..., "!(n<n)"
           ...
@@ -145,10 +143,10 @@ Nombre maximal de chemins uniques qu’IntelliTest prend en compte au cours d’
 
 La motivation derrière cette limite de l’exploration est que tout code contenant des boucles ou une récursivité peut avoir un nombre infini de chemins d’exécution et IntelliTest doit donc être limité pendant la [génération d’entrées](input-generation.md).
 
-Les deux paramètres **MaxRuns** et **MaxRunsWithUniquePaths** sont liés de la manière suivante : 
+Les deux paramètres **MaxRuns** et **MaxRunsWithUniquePaths** sont liés de la manière suivante :
 
 * IntelliTest appelle une méthode de test paramétrable jusqu’à **MaxRuns** fois avec des entrées de test différentes.
-* Si le code exécuté est déterministe, IntelliTest prend chaque fois un chemin d’exécution différent. Toutefois, sous certaines conditions, le code exécuté peut suivre un chemin d’exécution qu’il a déjà pris auparavant, avec des entrées différentes. 
+* Si le code exécuté est déterministe, IntelliTest prend chaque fois un chemin d’exécution différent. Toutefois, sous certaines conditions, le code exécuté peut suivre un chemin d’exécution qu’il a déjà pris auparavant, avec des entrées différentes.
 * IntelliTest compte le nombre de chemins d’exécution uniques qu’il trouve ; ce nombre est limité par l’option **MaxRunsWithUniquePaths**.
 
 <a name="maxexceptions"></a>

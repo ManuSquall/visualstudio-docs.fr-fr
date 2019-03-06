@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::SetBody | Documents Microsoft
+title: IScriptEntry::SetBody | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 06ee232aa730366e9a23e15cdc45f6734b9ef744
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 993ffe59abb9458e1b400633430f708e7520599c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729139"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088580"
 ---
 # <a name="iscriptentrysetbody"></a>IScriptEntry::SetBody
-Définit le texte qui se trouve dans le corps d’une `IScriptEntry` bloc de script ou un `IScriptScriptlet` scriptlet.  
+Définit le texte qui se trouve dans le corps d’un `IScriptEntry` bloc de script ou un `IScriptScriptlet` scriptlet.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT SetBody(  
    LPCOLESTR          psz  
 );  
@@ -40,18 +40,18 @@ HRESULT SetBody(
  `psz`  
  [in] Pour un `IScriptEntry` bloc de script, `psz` est le texte placé entre les balises de script.  
   
- Pour un `IScriptEntry` bloc de la fonction, `psz` est le corps de la fonction.  
+ Pour un `IScriptEntry` bloc de fonction, `psz` est le corps de fonction.  
   
- Pour un `IScriptScriptlet` objet (qui en dérive `IScriptEntry`), `psz` est le texte du script du scriptlet.  
+ Pour un `IScriptScriptlet` objet (qui dérive à son `IScriptEntry`), `psz` est le texte du script du scriptlet.  
   
 ## <a name="return-value"></a>Valeur de retour  
  Élément `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
   
 ## <a name="see-also"></a>Voir aussi  
  [IScriptEntry (Interface)](../../winscript/reference/iscriptentry-interface.md)   

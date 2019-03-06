@@ -2,8 +2,6 @@
 title: Services et produits d'accessibilité de Microsoft
 description: Découvrez les produits et services de Microsoft qui peuvent contribuer à rendre nos systèmes d’exploitation, programmes et applications plus accessibles afin que tout le monde puisse les utiliser, y compris les personnes handicapées.
 ms.date: 08/22/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - TTY/TDD services
@@ -18,20 +16,20 @@ helpviewer_keywords:
 ms.assetid: ef3c6247-9f59-4ef4-aa8b-a8922b3e0943
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58f3ad239802b032006a5a28816462147018982f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 02b35ff8325c6cb155d54a2ada6bf6f7d63dc341
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839529"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318626"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Services et produits d'accessibilité de Microsoft
 
 > [!TIP]
-> Pour en savoir plus sur les dernières mises à jour en matière d’accessibilité apportées à Visual Studio, consultez le billet de blog [Améliorations apportées à l’accessibilité dans Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/).
+> Pour en savoir plus sur les dernières mises à jour en matière d’accessibilité apportées à Visual Studio, consultez le billet de blog [Améliorations apportées à l’accessibilité dans Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/).
 
 Microsoft s’engage à faciliter l’utilisation de ses produits et services. Les rubriques suivantes fournissent des informations sur les fonctionnalités, produits et services qui améliorent l’accessibilité des personnes handicapées dans Microsoft Windows :
 
@@ -78,7 +76,7 @@ Comme les adresses web peuvent changer, peut-être ne pourrez-vous pas vous conn
 
 Si vous êtes atteint de surdité ou de troubles de l’audition, un accès complet aux services clientèle et produits Microsoft est disponible via un service télétexte/téléscripteur (TTY/TDD) :
 
-- Pour le service clientèle, contactez Microsoft Sales Information Center au (800) 892-5234 entre 6 h 30 et 17 h 30 Pacifique, du lundi au vendredi, hors jours fériés.
+- Pour le service clientèle, contactez Microsoft Sales Information Center au (800) 892-5234 entre 6 h 30 et 17 h 30 Pacifique, du lundi au vendredi, hors jours fériés.
 
 - Pour obtenir une assistance technique aux États-Unis, contactez le support technique Microsoft au (800) 892-5234 entre 6 h 00 et 18 h 00 Pacifique, du lundi au vendredi, hors jours fériés. Au Canada, composez le (905) 568-9641 entre 8 h 00 et 20 h 00 Est, du lundi au vendredi, hors jours fériés.
 

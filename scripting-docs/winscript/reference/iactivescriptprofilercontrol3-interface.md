@@ -1,5 +1,5 @@
 ---
-title: Iactivescriptprofilercontrol3, Interface | Documents Microsoft
+title: Interface IActiveScriptProfilerControl3 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,22 +12,22 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eed00579acfb09217183a1dd1d858a1e99257a2c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bebe351608b3136ac00a059bffab3535141e7fca
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724449"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344718"
 ---
 # <a name="iactivescriptprofilercontrol3-interface"></a>IActiveScriptProfilerControl3, interface
-Fournit une méthode pour énumérer les objets du tas GC associées à un moteur de script.  
+Fournit une méthode pour énumérer les objets du tas de garbage collection associés à un moteur de script.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 interface IActiveScriptProfilerControl3 : IActiveScriptProfilerControl2  
 ```  
   
 ## <a name="methods"></a>Méthodes  
  [Méthode IActiveScriptProfilerControl3::EnumHeap](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md)  
- Retourne une interface ([iactivescriptprofilerheapenum, Interface](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)) qui peut être utilisé pour itérer sur les objets du tas GC dans le contexte du moteur de script associé.
+ Retourne une interface ([iactivescriptprofilerheapenum, Interface](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)) qui peut être utilisé pour itérer sur les objets du tas de garbage collection dans le contexte du moteur de script associé.

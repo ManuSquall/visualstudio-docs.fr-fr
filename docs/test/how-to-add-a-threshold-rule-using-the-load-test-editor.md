@@ -10,15 +10,13 @@ helpviewer_keywords:
 ms.assetid: 3d8fac8f-426f-4155-9ced-f7cd4c79792c
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: ac4b542c7f9b557ad04ead05422f8c89cd4f909c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: efd430ce9f8bef3ab04e3a7cec91ce3f606cc786
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063368"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55930309"
 ---
 # <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Procédure : ajouter une règle de seuil à l’aide de l’éditeur de test de charge
 

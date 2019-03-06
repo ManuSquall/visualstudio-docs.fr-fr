@@ -1,9 +1,6 @@
 ---
 title: Conserver les contrôles dynamiques dans les documents Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,17 +13,17 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], Windows Forms controls
 - documents [Office development in Visual Studio], host controls
 - host controls [Office development in Visual Studio], persisting in the document
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b77310f797db3eb031bc311f4fc68bc7fd6b4c56
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 48b2cc1402243bfedb7b22280b4a161235cb9957
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37059264"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863511"
 ---
 # <a name="persist-dynamic-controls-in-office-documents"></a>Conserver les contrôles dynamiques dans les documents Office
 
@@ -38,7 +35,7 @@ Les contrôles que vous ajoutez aux documents au moment de l’exécution sont a
 
 ## <a name="persist-host-controls-in-the-document"></a>Conserver les contrôles hôtes dans le document
 
-Lorsqu’un document est enregistré puis fermé, tous les contrôles hôtes dynamiques sont supprimés du document. Seuls les objets Office natifs sous-jacents restent en arrière-plan. Par exemple, un <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> contrôle hôte devienne un <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName>. Les objets Office natifs ne sont pas liés aux événements de contrôle hôte, et ils n’ont pas la fonctionnalité de liaison des données du contrôle hôte.
+Lorsqu’un document est enregistré puis fermé, tous les contrôles hôtes dynamiques sont supprimés du document. Seuls les objets Office natifs sous-jacents restent en arrière-plan. Par exemple, un contrôle hôte <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> devient un <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName>. Les objets Office natifs ne sont pas liés aux événements de contrôle hôte, et ils n’ont pas la fonctionnalité de liaison des données du contrôle hôte.
 
 Le tableau suivant répertorie l’objet Office natif laissé en arrière-plan dans un document pour chaque type de contrôle hôte.
 
@@ -56,7 +53,7 @@ Vous pouvez recréer des contrôles hôtes dynamiques à la place des contrôles
 
 Pour recréer un contrôle hôte pour Word, ou un <xref:Microsoft.Office.Tools.Excel.NamedRange> ou <xref:Microsoft.Office.Tools.Excel.ListObject> contrôle hôte pour Excel, utilisez un `Add` \< *classe contrôle*> méthode d’un <xref:Microsoft.Office.Tools.Excel.ControlCollection?displayProperty=fullName> ou <xref:Microsoft.Office.Tools.Word.ControlCollection?displayProperty=fullName> objet. Utilisez une méthode qui a un paramètre pour l’objet Office natif.
 
-Par exemple, si vous souhaitez créer un <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> héberger le contrôle à partir d’un natif existant <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName> lorsque le document est ouvert, utilisez la <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddListObject%2A> (méthode) et passez dans l’espace <xref:Microsoft.Office.Interop.Excel.ListObject>. L’exemple de code suivant montre cette opération dans un projet au niveau du document pour Excel. Le code recrée un <xref:Microsoft.Office.Tools.Excel.ListObject> dynamique qui est basé sur un <xref:Microsoft.Office.Interop.Excel.ListObject> existant nommé `MyListObject` dans la classe `Sheet1` .
+Par exemple, si vous souhaitez créer un contrôle hôte <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> à partir d’un <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName> natif existant lors de l’ouverture du document, utilisez la méthode <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddListObject%2A> et transmettez le <xref:Microsoft.Office.Interop.Excel.ListObject>existant. L’exemple de code suivant montre cette opération dans un projet au niveau du document pour Excel. Le code recrée un <xref:Microsoft.Office.Tools.Excel.ListObject> dynamique qui est basé sur un <xref:Microsoft.Office.Interop.Excel.ListObject> existant nommé `MyListObject` dans la classe `Sheet1` .
 
 [!code-csharp[Trin_ExcelWorkbookDynamicControls#6](../vsto/codesnippet/CSharp/trin_excelworkbookdynamiccontrols4/Sheet1.cs#6)]
 [!code-vb[Trin_ExcelWorkbookDynamicControls#6](../vsto/codesnippet/VisualBasic/trin_excelworkbookdynamiccontrols4/Sheet1.vb#6)]
@@ -89,18 +86,18 @@ Lorsque vous ajoutez des contrôles Windows Forms dynamiques à des documents en
 
 #### <a name="remove-activex-wrappers-when-the-document-is-opened"></a>Supprimer les wrappers ActiveX lorsque le document est ouvert.
 
-Pour supprimer tous les wrappers ActiveX, appelez le `GetVstoObject` méthode permettant de générer un élément hôte pour le <xref:Microsoft.Office.Interop.Word.Document> ou <xref:Microsoft.Office.Interop.Excel.Workbook> qui représente le document récemment ouvert. Par exemple, pour supprimer tous les wrappers ActiveX dans un document Word, vous pouvez appeler la `GetVstoObject` méthode permettant de générer un élément hôte pour le <xref:Microsoft.Office.Interop.Word.Document> objet qui est passé au gestionnaire d’événements pour le <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> événement.
+Pour supprimer tous les wrappers ActiveX, appelez la méthode `GetVstoObject` permettant de générer un élément hôte pour le <xref:Microsoft.Office.Interop.Word.Document> ou <xref:Microsoft.Office.Interop.Excel.Workbook> qui représente le document récemment ouvert. Par exemple, pour supprimer tous les wrappers ActiveX dans un document Word, vous pouvez appeler la méthode `GetVstoObject` permettant de générer un élément hôte pour l’objet <xref:Microsoft.Office.Interop.Word.Document> qui est transmis au gestionnaire d’événements pour l’événement <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen>.
 
 Cette procédure est utile lorsque vous savez que le document sera ouvert uniquement sur des ordinateurs avec le complément VSTO installé. Si le document peut être transmis à d’autres utilisateurs qui n’ont pas le complément VSTO installé, envisagez de supprimer les contrôles avant de fermer le document.
 
-L’exemple de code suivant montre comment appeler le `GetVstoObject` méthode lorsque le document est ouvert.
+L’exemple de code suivant montre comment appeler la méthode `GetVstoObject` lorsque le document est ouvert.
 
 [!code-vb[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#11)]
 [!code-csharp[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#11)]
 
 Bien que le `GetVstoObject` méthode est utilisée principalement pour générer un nouvel élément hôte lors de l’exécution, cette méthode efface également tous les wrappers ActiveX du document la première fois qu’elle est appelée pour un document spécifique. Pour plus d’informations sur l’utilisation de la `GetVstoObject` (méthode), consultez [documents Word d’étendre et classeurs Excel dans des Compléments VSTO lors de l’exécution](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
-Si votre complément, VSTO crée des contrôles dynamiques lorsque le document est ouvert, votre complément, VSTO appellera déjà la `GetVstoObject` méthode en tant que partie du processus de création des contrôles. Vous n’avez pas besoin d’ajouter un appel séparé à la `GetVstoObject` méthode pour supprimer les wrappers ActiveX dans ce scénario.
+Si votre complément, VSTO crée des contrôles dynamiques lorsque le document est ouvert, votre complément, VSTO appellera déjà la `GetVstoObject` méthode en tant que partie du processus de création des contrôles. Vous n’avez pas besoin d’ajouter un appel séparé à la méthode `GetVstoObject` pour supprimer les wrappers ActiveX dans ce scénario.
 
 #### <a name="remove-the-dynamic-controls-before-the-document-is-closed"></a>Supprimer les contrôles dynamiques avant la fermeture du document
 

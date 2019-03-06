@@ -1,8 +1,6 @@
 ---
 title: -Upgrade (devenv.exe)
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
 - /upgrade Devenv switch
@@ -11,46 +9,54 @@ helpviewer_keywords:
 ms.assetid: 3468045c-5cc9-4157-9a9d-622452145d27
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba94a599c119d537efb90b29c1c2ec0084ace447
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: f7ca13af8cd6b1a144ee3202165908f1d282ca81
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948333"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924069"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
-Met à jour le fichier solution et tous ses fichiers projet, ou le fichier projet spécifié, aux formats [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] actuels pour ces fichiers.
+
+Met le fichier solution et tous ses fichiers projet, ou le fichier projet spécifié, aux formats Visual Studio actuels pour ces fichiers.
 
 ## <a name="syntax"></a>Syntaxe
 
-```cmd
-devenv SolutionFile | ProjectFile /upgrade
+```shell
+devenv {SolutionFile|ProjectFile} /Upgrade [/Out OutputFilename]
 ```
 
 ## <a name="arguments"></a>Arguments
- `SolutionFile`
 
- Requis si vous mettez à niveau une solution entière avec ses projets. Chemin et nom d’un fichier solution. Vous pouvez entrer uniquement le nom du fichier solution, ou un chemin complet et le nom du fichier solution. Si le dossier ou le fichier nommé n’existe pas encore, il sera créé.
+- *SolutionFile*
 
- `ProjectFile`
+  Requis en cas de mise à niveau d’une solution tout entière avec ses projets. Chemin et nom d’un fichier solution. Vous pouvez entrer uniquement le nom du fichier solution, ou un chemin complet et le nom du fichier solution. Si le dossier ou le fichier nommé n’existe pas encore, il est créé.
 
- Requis si vous mettez à niveau un projet seul. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer uniquement le nom du fichier projet, ou un chemin complet et le nom du fichier projet. Si le dossier ou le fichier nommé n’existe pas encore, il sera créé.
+- *ProjectFile*
+
+  Requis en cas de mise à niveau d’un seul projet. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer uniquement le nom du fichier projet, ou un chemin complet et le nom du fichier projet. Si le dossier ou le fichier nommé n’existe pas encore, il est créé.
+
+- `/Out` *OutputFilename*
+
+  Optionnel. Nom du fichier auquel vous souhaitez envoyer la sortie de l’outil. Si le fichier existe déjà, l’outil ajoute la sortie à la fin du fichier.
 
 ## <a name="remarks"></a>Notes
- Les sauvegardes sont créées et copiées automatiquement vers un répertoire nommé Backup, créé dans le répertoire actif.
 
- Les solutions ou projets sous contrôle de code source doivent être extraits avant de pouvoir être mis à niveau.
+Les sauvegardes sont créées et copiées automatiquement dans un répertoire nommé Backup, créé dans le répertoire actif.
 
- L’utilisation du commutateur `/upgrade` ne démarre pas [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Les résultats de la mise à niveau peuvent être vus dans le rapport de mise à niveau pour le langage de développement de la solution ou du projet. Aucune information d’erreur ni d’utilisation n’est retournée. Pour plus d’informations sur la mise à niveau de projets dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], consultez [Porter, migrer et mettre à niveau des projets Visual Studio](../../porting/port-migrate-and-upgrade-visual-studio-projects.md).
+Les solutions ou projets sous contrôle de code source doivent être extraits avant de pouvoir être mis à niveau.
+
+Le commutateur `/Upgrade` ne lance pas Visual Studio. Les résultats de la mise à niveau peuvent être vus dans le rapport de mise à niveau pour le langage de développement de la solution ou du projet. Aucune information d’erreur ni d’utilisation n’est retournée. Pour plus d’informations sur la mise à niveau de projets dans Visual Studio, voir [Porter, migrer et mettre à niveau des projets Visual Studio](../../porting/port-migrate-and-upgrade-visual-studio-projects.md).
 
 ## <a name="example"></a>Exemple
- Cet exemple met à niveau un fichier solution nommé « MyProject.sln » dans votre dossier par défaut des solutions [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
-```cmd
-devenv "MyProject.sln" /upgrade
+Cet exemple met à niveau un fichier solution nommé « MyProject.sln ».
+
+```shell
+devenv "%USERPROFILE%\source\repos\MyProject\MyProject.sln" /upgrade
 ```
 
 ## <a name="see-also"></a>Voir aussi

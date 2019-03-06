@@ -2,20 +2,18 @@
 title: Cibler des versions antérieures du .NET Framework pour F#
 description: Découvrez-en plus sur le ciblage d’une version antérieure du .NET Framework lors de l’utilisation de F# dans Visual Studio.
 ms.date: 07/11/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: troubleshooting
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2cb32f37bde0a55da081105cbee52a8744db2b88
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: a1b347a5a2ef2ef9e82b65c768b4f8ec331c912d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978641"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942074"
 ---
 # <a name="target-older-versions-of-net-f"></a>Cibler des versions antérieures de .NET (F#)
 

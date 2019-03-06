@@ -10,21 +10,31 @@ helpviewer_keywords:
 ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 11f7249f30b1866ca7c4aea4bbefa850a5353c0f
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 1745aef29da9fc8efd49789f0112c903128f6f74
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305583"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323696"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personnaliser la façon dont Visual Studio crée des légendes pour les contrôles liés aux données
 
-Lorsque vous faites glisser des éléments à partir de la [fenêtre Sources de données](add-new-data-sources.md#data-sources-window) sur un concepteur, une attention particulière entre en jeu : les noms de colonnes dans les légendes sont reformatés dans une chaîne plus lisible lorsque deux ou plusieurs mots sont identifiés comme étant concaténées. Vous pouvez personnaliser la façon dans lequel ces étiquettes sont créés en définissant le **SmartCaptionExpression**, **SmartCaptionReplacement**, et **SmartCaptionSuffix** des valeurs dans le **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data concepteurs** clé de Registre.
+Lorsque vous faites glisser des éléments à partir de la [fenêtre Sources de données](add-new-data-sources.md#data-sources-window) sur un concepteur, une attention particulière entre en jeu : les noms de colonnes dans les légendes sont reformatés dans une chaîne plus lisible lorsque deux ou plusieurs mots sont identifiés comme étant concaténées.
+
+::: moniker range="vs-2017"
+
+Vous pouvez personnaliser la façon dont ces étiquettes sont créées en définissant le **SmartCaptionExpression**, **SmartCaptionReplacement**, et **SmartCaptionSuffix** des valeurs dans le **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data concepteurs** clé de Registre.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Vous pouvez personnaliser la façon dont ces étiquettes sont créées en définissant le **SmartCaptionExpression**, **SmartCaptionReplacement**, et **SmartCaptionSuffix** des valeurs dans le **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Data concepteurs** clé de Registre.
+
+::: moniker-end
 
 > [!NOTE]
 > Cette clé de Registre n’existe pas jusqu'à ce que vous la créez.
@@ -43,26 +53,36 @@ Le tableau suivant répertorie les paramètres internes par défaut pour ces val
 
 |Élément de Registre|Valeur par défaut|Explication|
 |-------------------|-------------------|-----------------|
-|**SmartCaptionExpression**|**(\\\p{Ll}) (\\\p{Lu})&#124;_ +**|Correspond à un caractère minuscule suivi d’un caractère majuscule ou un trait de soulignement.|
-|**SmartCaptionReplacement**|"$1"|Le **$1** représente les caractères appariés dans la première parenthèse de l’expression et le **$2** représente les caractères appariés dans la deuxième parenthèse. Le remplacement est la première correspondance, un espace, puis la deuxième correspondance.|
+|**SmartCaptionExpression**|**(\\\p{Ll})(\\\p{Lu})&#124;_+**|Correspond à un caractère minuscule suivi d’un caractère majuscule ou un trait de soulignement.|
+|**SmartCaptionReplacement**|**$1 $2**|Le **$1** représente les caractères appariés dans la première parenthèse de l’expression et le **$2** représente les caractères appariés dans la deuxième parenthèse. Le remplacement est la première correspondance, un espace, puis la deuxième correspondance.|
 |**SmartCaptionSuffix**|**:**|Représente un caractère ajouté à la chaîne retournée. Par exemple, si la légende est `Company Name`, rend le suffixe `Company Name:`|
 
 > [!CAUTION]
-> Vous devez être très prudent lorsque vous sert à rien dans l’Éditeur du Registre. Sauvegardez le Registre avant de le modifier. Si vous utilisez l’Éditeur du Registre de manière incorrecte, vous pouvez provoquer de graves problèmes qui peuvent vous obliger à réinstaller votre système d’exploitation. Microsoft ne garantit pas que les problèmes qui vous entraîner à l’aide de l’Éditeur du Registre incorrecte peuvent être résolus. Les opérations exécutées dans l'Éditeur du Registre le sont à vos propres risques.
+> Soyez très prudent lorsque vous sert à rien dans l’Éditeur du Registre. Sauvegardez le Registre avant de le modifier. Si vous utilisez l’Éditeur du Registre de manière incorrecte, vous pouvez provoquer de graves problèmes qui peuvent vous obliger à réinstaller votre système d’exploitation. Microsoft ne garantit pas que les problèmes qui vous entraîner à l’aide de l’Éditeur du Registre incorrecte peuvent être résolus. Les opérations exécutées dans l'Éditeur du Registre le sont à vos propres risques.
 >
-> L’article suivant de la base de connaissances contient des instructions pour la sauvegarde, la modification et la restauration du Registre : [Description du Registre Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us ; 256986)
+> Pour plus d’informations sur la sauvegarde, la modification et la restauration du Registre, consultez [informations du Registre Windows pour les utilisateurs expérimentés](https://support.microsoft.com/help/256986/windows-registry-information-for-advanced-users).
 
 ## <a name="modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Modifier le comportement de sous-titrage intelligent de la fenêtre Sources de données
 
-1.  Ouvrez une fenêtre de commande en cliquant sur **Démarrer** , puis **exécuter**.
+1. Ouvrez une fenêtre de commande en cliquant sur **Démarrer** , puis **exécuter**.
 
-2.  Type `regedit` dans le **exécuter** boîte de dialogue, puis cliquez sur **OK**.
+2. Type `regedit` dans le **exécuter** boîte de dialogue, puis cliquez sur **OK**.
 
-3.  Développez le **HKEY_CURRENT_USER** > **logiciel** > **Microsoft** > **VisualStudio**nœud.
+3. Développez le **HKEY_CURRENT_USER** > **logiciel** > **Microsoft** > **VisualStudio**nœud.
 
-4.  Avec le bouton droit le **15.0** nœud, puis créez un **clé** nommé `Data Designers`.
+::: moniker range="vs-2017"
 
-5.  Avec le bouton droit le **concepteurs de données** nœud et créer trois nouvelles valeurs de chaîne :
+4. Avec le bouton droit le **15.0** nœud, puis créez un **clé** nommé `Data Designers`.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+4. Avec le bouton droit le **16.0** nœud, puis créez un **clé** nommé `Data Designers`.
+
+::: moniker-end
+
+5. Avec le bouton droit le **concepteurs de données** nœud et créer trois nouvelles valeurs de chaîne :
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`
@@ -84,15 +104,25 @@ Le tableau suivant répertorie les paramètres internes par défaut pour ces val
 
 ## <a name="turn-off-the-smart-captioning-feature"></a>Désactiver la fonctionnalité de sous-titrage intelligente
 
-1.  Ouvrez une fenêtre de commande en cliquant sur **Démarrer** , puis **exécuter**.
+1. Ouvrez une fenêtre de commande en cliquant sur **Démarrer** , puis **exécuter**.
 
-2.  Type `regedit` dans le **exécuter** boîte de dialogue, puis cliquez sur **OK**.
+2. Type `regedit` dans le **exécuter** boîte de dialogue, puis cliquez sur **OK**.
 
-3.  Développez le **HKEY_CURRENT_USER** > **logiciel** > **Microsoft** > **VisualStudio**nœud.
+3. Développez le **HKEY_CURRENT_USER** > **logiciel** > **Microsoft** > **VisualStudio**nœud.
 
-4.  Avec le bouton droit le **15.0** nœud, puis créez un **clé** nommé `Data Designers`.
+::: moniker range="vs-2017"
 
-5.  Avec le bouton droit le **concepteurs de données** nœud et créer trois nouvelles valeurs de chaîne :
+4. Avec le bouton droit le **15.0** nœud, puis créez un **clé** nommé `Data Designers`.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+4. Avec le bouton droit le **16.0** nœud, puis créez un **clé** nommé `Data Designers`.
+
+::: moniker-end
+
+5. Avec le bouton droit le **concepteurs de données** nœud et créer trois nouvelles valeurs de chaîne :
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`

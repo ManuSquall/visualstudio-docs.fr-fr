@@ -1,8 +1,6 @@
 ---
 title: 'CA1016 : Marquer les assemblys avec AssemblyVersionAttribute'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - MarkAssembliesWithAssemblyVersion
@@ -13,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: 4340aed8-d92b-4cde-a398-cb6963c6da5a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fbc3fa747171892066705ddc32a114cb34e1b02
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: a00c8e30e981794e69d4572e0a924438514780c7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858173"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917777"
 ---
 # <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016 : Marquer les assemblys avec AssemblyVersionAttribute
 
@@ -70,4 +68,4 @@ Le .NET Framework utilise le numéro de version pour identifier de façon unique
 ## <a name="see-also"></a>Voir aussi
 
 - [Contrôle de version des assemblys](/dotnet/framework/app-domains/assembly-versioning)
-- [Comment : créer une stratégie d'éditeur](/dotnet/framework/configure-apps/how-to-create-a-publisher-policy)
+- [Guide pratique pour Créer une stratégie d’éditeur](/dotnet/framework/configure-apps/how-to-create-a-publisher-policy)

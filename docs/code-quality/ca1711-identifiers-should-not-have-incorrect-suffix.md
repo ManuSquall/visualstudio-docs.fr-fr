@@ -1,8 +1,6 @@
 ---
-title: 'CA1711 : Les identificateurs ne doivent pas porter un suffixe incorrect'
+title: 'CA1711 : Les identificateurs ne doivent pas porter un suffixe incorrect'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1711
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: a63359ab-386d-44ae-b381-ee3a983aca29
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3c9b23e555d0752ee33f2031fb883bdf50ff897
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: a9773dc808d6fbbc7161053dcd4d7a1d7d4e6f13
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549730"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970229"
 ---
-# <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711 : Les identificateurs ne doivent pas porter un suffixe incorrect
+# <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711 : Les identificateurs ne doivent pas porter un suffixe incorrect
 
 |||
 |-|-|

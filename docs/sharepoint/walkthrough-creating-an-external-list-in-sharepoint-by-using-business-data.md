@@ -1,13 +1,8 @@
 ---
 title: 'Procédure pas à pas : Création d’une liste externe dans SharePoint à l’aide des données d’entreprise | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,17 +14,17 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], entity backed list
 - Business Data Connectivity service [SharePoint development in Visual Studio], entity backed list
 - Business Data Connectivity service [SharePoint development in Visual Studio], external list
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 18848f0ebd6ffa289ea09553de82f5b9eb893181
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 45f0a896db97d489d58036ea226962550b512665
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295837"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600296"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Procédure pas à pas : Créer une liste externe dans SharePoint à l’aide de données d’entreprise
 
@@ -37,7 +32,7 @@ Le service de connectivité de données métiers (BDC) permet à SharePoint affi
 
 Cette procédure pas à pas vous montre comment créer un modèle de service BDC qui retourne des informations sur les contacts dans une base de données. Vous allez ensuite créer une liste externe dans SharePoint à l’aide de ce modèle.
 
-Cette procédure pas à pas décrit les tâches suivantes :
+Cette procédure pas à pas décrit les tâches suivantes :
 
 - Création d’un projet.
 - Ajout d’une entité au modèle.
@@ -81,7 +76,7 @@ Pour exécuter cette procédure pas à pas, vous devez disposer des composants s
 
 1. Dans la barre de menus, choisissez **outils** > **se connecter à la base de données**.
 
-     Le **ajouter une connexion** boîte de dialogue s’ouvre.
+     La boîte de dialogue **Ajouter une connexion** s’ouvre.
 
 2. Ajouter une connexion à la base de données SQL Server AdventureWorks.
 
@@ -125,7 +120,7 @@ Le **modèle de connectivité de données métiers** projet ajoute une entité p
 
 Ajouter une entité au modèle. Vous pouvez ajouter des entités à partir de Visual Studio **boîte à outils** sur le concepteur BDC.
 
-1. Dans la barre de menus, choisissez **vue** > **boîte à outils**.
+1. Dans la barre de menus, choisissez **Affichage** > **Boîte à outils**.
 
 2. Sur le **BusinessDataConnectivity** onglet de la **boîte à outils**, ajoutez un **entité** sur le concepteur BDC.
 
@@ -191,12 +186,12 @@ Ajouter une méthode de recherche spécifique à l’entité Contact à l’aide
     |----------|---------------|
     |FirstName|System.String|
     |LastName|System.String|
-    |Téléphone|System.String|
+    |Phone|System.String|
     |EmailAddress|System.String|
     |EmailPromotion|System.Int32|
     |NameStyle|System.Boolean|
     |PasswordHash|System.String|
-    |PasswordSalt du client|System.String|
+    |PasswordSalt|System.String|
 
 11. Dans le concepteur BDC, sur le **Contact** entité, ouvre le **ReadItem** (méthode).
 
@@ -275,13 +270,13 @@ Lorsque vous exécutez le projet, le site SharePoint s’ouvre et Visual Studio 
 
 Pour plus d’informations sur la conception de modèles pour le service BDC dans SharePoint à partir de ces rubriques :
 
-- [Comment : ajouter une méthode de création](../sharepoint/how-to-add-a-creator-method.md).
-- [Comment : ajouter une méthode de mise à jour du](../sharepoint/how-to-add-an-updater-method.md).
-- [Comment : ajouter une méthode de suppression](../sharepoint/how-to-add-a-deleter-method.md).
+- [Guide pratique pour Ajouter une méthode de création](../sharepoint/how-to-add-a-creator-method.md).
+- [Guide pratique pour Ajoutez une méthode de mise à jour du](../sharepoint/how-to-add-an-updater-method.md).
+- [Guide pratique pour Ajouter une méthode de suppression](../sharepoint/how-to-add-a-deleter-method.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-[Concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md)  
-[Créer un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md)  
-[Vue d’ensemble des outils de conception de modèle BDC](../sharepoint/bdc-model-design-tools-overview.md)  
-[Intégrer des données métiers dans SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)
+[Concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md)
+[créer un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md)
+[vue d’ensemble des outils de conception du modèle BDC](../sharepoint/bdc-model-design-tools-overview.md) 
+ [ Intégrer des données métiers dans SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)

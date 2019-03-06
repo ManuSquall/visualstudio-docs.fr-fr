@@ -1,48 +1,45 @@
 ---
-title: IDebugBreakpointChecksumRequest2 | Documents Microsoft
-ms.custom: ''
+title: IDebugBreakpointChecksumRequest2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugBreakpointChecksumRequest2 interface
 ms.assetid: 9cfdbca5-052c-48e9-8411-e2e9e4065d00
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb319b14e1d373abe3c0634c768bfe1dcb04f539
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dfad0d8469a3cd01b5697cd9ba74f7a84ee84b83
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101116"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56706273"
 ---
 # <a name="idebugbreakpointchecksumrequest2"></a>IDebugBreakpointChecksumRequest2
-Représente une somme de contrôle du document pour une demande de point d’arrêt.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```  
-IDebugBreakpointChecksumRequest2 : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
- Implémenté par le [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] déboguer le package et consommé par les moteurs de débogage.  
-  
-## <a name="methods"></a>Méthodes  
- Le tableau suivant présente les méthodes de `IDebugBreakpointChecksumRequest2`.  
-  
-|Méthode|Description|  
-|------------|-----------------|  
-|[GetChecksum](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-getchecksum.md)|Récupère la somme de contrôle du document pour une demande de point d’arrêt étant donnée l’identificateur unique de l’algorithme de somme de contrôle à utiliser.|  
-|[IsChecksumEnabled](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-ischecksumenabled.md)|Détermine si la somme de contrôle est activé pour ce document.|  
-  
-## <a name="requirements"></a>Spécifications  
- En-tête : Msdbg.h  
-  
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
-  
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+Représente une somme de contrôle de document pour une demande de point d’arrêt.
+
+## <a name="syntax"></a>Syntaxe
+
+```
+IDebugBreakpointChecksumRequest2 : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs
+ Implémentée par le [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] déboguer le package et consommées par les moteurs de débogage.
+
+## <a name="methods"></a>Méthodes
+ Le tableau suivant présente les méthodes de `IDebugBreakpointChecksumRequest2`.
+
+|Méthode|Description|
+|------------|-----------------|
+|[GetChecksum](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-getchecksum.md)|Récupère la somme de contrôle de document pour une demande de point d’arrêt étant donnée l’identificateur unique de l’algorithme de checksum à utiliser.|
+|[IsChecksumEnabled](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-ischecksumenabled.md)|Détermine si la somme de contrôle est activé pour ce document.|
+
+## <a name="requirements"></a>Spécifications
+ En-tête : Msdbg.h
+
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll

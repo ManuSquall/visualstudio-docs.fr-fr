@@ -8,15 +8,13 @@ helpviewer_keywords:
 ms.assetid: 257d2a24-d582-4cfe-8b2b-51f51ba9cc84
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 439120b80350081e1770ccce619d51b92673feef
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: bd5a7183589255d246fd299b9ec628330d948dcf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048052"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917543"
 ---
 # <a name="how-to-add-additional-run-settings-to-a-load-test"></a>Procédure : ajouter des paramètres d’exécution supplémentaires à un test de charge
 

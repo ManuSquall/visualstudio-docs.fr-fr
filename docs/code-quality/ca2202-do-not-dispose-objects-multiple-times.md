@@ -1,8 +1,6 @@
 ---
-title: 'CA2202 : Ne pas supprimer des objets plusieurs fois'
+title: "CA2202 : Ne pas supprimer d'objets plusieurs fois"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2202
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: fa85349a-cf1e-42c8-a86b-eacae1f8bd96
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4f666ba0cf620249e9308179d715ca38bf0f18b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ed2edd83918a9e4bc89543d1217d51e5e87f00c1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822863"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926942"
 ---
-# <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202 : Ne pas supprimer des objets plusieurs fois
+# <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202 : Ne pas supprimer d'objets plusieurs fois
 
 |||
 |-|-|
@@ -42,7 +40,7 @@ A implémenté correctement <xref:System.IDisposable.Dispose%2A> méthode peut �
 
 ## <a name="related-rules"></a>Règles associées
 
-- [CA2000 : Supprimez les objets avant de perdre l’étendue](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
+- [CA2000 : Supprimez les objets avant de portée](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 

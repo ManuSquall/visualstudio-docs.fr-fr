@@ -13,17 +13,15 @@ helpviewer_keywords:
 - dependency graphs
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 51b03ce504b2fe8f588cf3e360882f97d61664f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6e060f168ea301b898fe578ac0d5030a2ae7e774
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896937"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223700"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Mapper les dépendances des cartes de code
 
@@ -49,7 +47,7 @@ Vous pouvez mapper les dépendances de code dans les langues suivantes :
 
 ## <a name="install-code-map-and-live-dependency-validation"></a>Carte de Code d’installation et de Validation des dépendances en direct
 
-Pour créer une carte de code dans Visual Studio 2017, installez d’abord le **carte de Code** et **Validation de dépendances dynamique** composants :
+Pour créer une carte de code dans Visual Studio, installez d’abord le **carte de Code** et **Validation de dépendances dynamique** composants :
 
 1. Ouvrez **programme d’installation de Visual Studio**. Vous pouvez l’ouvrir dans le menu Démarrer de Windows, ou dans Visual Studio en sélectionnant **outils** > **obtenir les outils et fonctionnalités**.
 
@@ -240,7 +238,7 @@ Supposons que vous avez une revue du code à effectuer dans certains fichiers co
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Vidéo : comprendre la conception à partir du code avec Visual Studio 2015 code maps](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)]
+- [Vidéo : Comprendre la conception à partir du code avec Visual Studio 2015 code maps](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)]
 - [Utiliser des cartes de code pour déboguer vos applications](../modeling/use-code-maps-to-debug-your-applications.md)
 - [Mapper les méthodes sur la pile des appels pendant le débogage](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [Rechercher des problèmes potentiels à l’aide des analyseurs de carte du code](../modeling/find-potential-problems-using-code-map-analyzers.md)

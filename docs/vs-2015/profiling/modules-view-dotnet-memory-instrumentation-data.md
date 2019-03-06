@@ -1,27 +1,22 @@
 ---
 title: Vue Modules - Données d’instrumentation de la mémoire .NET | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
 ms.assetid: 26516139-0981-41de-917d-ad5769391b8d
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 85024296eff4fb4d26b3a588217a1e6fe5221d3e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 10d63e85a7e0b97b588b368318eb7d040694c72b
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755405"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54784523"
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>Vue Modules - Données d’instrumentation de la mémoire .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,6 +104,3 @@ La vue Modules des données d’allocation de mémoire .NET collectées à l’
  [Vue Modules - Échantillonnage](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [Vue Modules - Données d’instrumentation](../profiling/modules-view-instrumentation-data.md)   
  [Vue Modules - Données d’échantillonnage](../profiling/modules-view-sampling-data.md)
-
-
-

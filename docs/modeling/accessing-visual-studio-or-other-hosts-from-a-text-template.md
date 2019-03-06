@@ -5,17 +5,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 9bb7bce5cb047018540599c9488fa4471dad2d1c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a75dc86a45c78f6b57d5a326c8c342eca70b26e0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059296"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956803"
 ---
 # <a name="access-visual-studio-or-other-hosts-from-a-text-template"></a>Accéder à Visual Studio ou d’autres hôtes à partir d’un modèle de texte
 

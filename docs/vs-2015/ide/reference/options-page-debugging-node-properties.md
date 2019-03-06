@@ -1,25 +1,20 @@
 ---
 title: Page Options, Débogage, propriétés de nœud | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 ms.assetid: 564cc8b2-0084-420e-b560-200cc5621a7e
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8bcc4637ebb933c2d6cc8a06d15ad70c1fbb76c1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 31eff8876dd6ae1a83f74d419853846bf461e275
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223847"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54782195"
 ---
 # <a name="options-page-debugging-node-properties"></a>Page Options, Débogage, propriétés de nœud
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -94,6 +89,3 @@ Les tableaux suivants décrivent les pages (ou collections de propriétés) asso
  [Général, Débogage, boîte de dialogue Options](../../debugger/general-debugging-options-dialog-box.md)   
  [Modifier & Continuer, Débogage, Boîte de dialogue Options](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
  [Juste-à-temps, Débogage, boîte de dialogue Options](../../debugger/just-in-time-debugging-options-dialog-box.md)
-
-
-

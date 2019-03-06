@@ -1,29 +1,23 @@
 ---
-title: Résumé des opérateurs (JavaScript) | Documents Microsoft
-ms.custom: ''
+title: Résumé des opérateurs (JavaScript) | Microsoft Docs
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 3bc55336-912f-4ff8-8d28-1e26e0144840
-caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 302ad9c9a853fb7ed7f24de9669d0cc7a66195aa
-ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
+ms.openlocfilehash: dadd47684978bf4be6c9029646d4b6041cb431ee
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
-ms.locfileid: "29753573"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844332"
 ---
 # <a name="operator-summary-javascript"></a>Résumé des opérateurs (JavaScript)
 Les tableaux suivants répertorient [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] opérateurs dans leurs catégories respectives.  
@@ -36,7 +30,7 @@ Les tableaux suivants répertorient [!INCLUDE[javascript](../../javascript/inclu
 |[Décrément](../../javascript/reference/increment-and-decrement-operators-javascript.md)|--|  
 |[Division](../../javascript/reference/division-operator-decrement-javascript.md)|/|  
 |[Incrément](../../javascript/reference/increment-and-decrement-operators-javascript.md).|++|  
-|[Remainder](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
+|[reste](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
 |[Multiplication](../../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
 |[Soustraction](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
 |[Négation unaire](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
@@ -87,5 +81,5 @@ Les tableaux suivants répertorient [!INCLUDE[javascript](../../javascript/inclu
   
  [void](../../javascript/reference/void-operator-decrementjavascript.md)  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]

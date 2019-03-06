@@ -1,22 +1,20 @@
 ---
 title: Introduction à IntelliTest
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Get started
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3e33bab90c32ca1b7cd92714218e5694daa22aed
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 92a5b5f6ffac7285dd1a22d7193ada74e3a90967
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000737"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949965"
 ---
 # <a name="get-started-with-microsoft-intellitest"></a>Bien démarrer avec Microsoft IntelliTest
 

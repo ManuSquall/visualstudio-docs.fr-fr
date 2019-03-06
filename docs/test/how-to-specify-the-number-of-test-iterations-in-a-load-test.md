@@ -8,15 +8,13 @@ helpviewer_keywords:
 ms.assetid: 45a625db-b3e7-4d64-beda-b9a76248096d
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: e250096a99cfc272cd23b58bf0f7b70eeb3a7c9d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 9d35552ad224b038886bcb9dd44177b80b1536ed
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059838"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954515"
 ---
 # <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>Procédure : spécifier le nombre d’itérations de tests dans un paramètre d’exécution de test de charge
 

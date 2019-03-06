@@ -3,22 +3,21 @@ title: Créer une application Node.js et React
 description: Dans ce tutoriel, vous créez une application à l’aide des outils Node.js pour Visual Studio.
 ms.custom: mvc
 ms.date: 11/01/2018
-ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 9203b07767d38443dbad8cc619a40971ca09f2c6
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: 9259b5a813dc09389c57288e13eafd5a3adb0064
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750784"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55770568"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutoriel : Créer une application Node.js et React dans Visual Studio
 
@@ -60,7 +59,7 @@ webpack regroupe des fichiers JavaScript pour qu’ils puissent s’exécuter da
 
 * Au préalable, vous devez avoir installé Visual Studio 2017 et la charge de travail de développement Node.js.
 
-    Si vous n’avez pas encore installé Visual Studio, accédez à la page  [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  pour l’installer gratuitement.
+    Si vous n’avez pas encore installé Visual Studio, accédez à la page  [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)  pour l’installer gratuitement.
 
     Si vous devez installer la charge de travail, mais que vous avez déjà Visual Studio, sélectionnez le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement Node.js**, puis choisissez **Modifier**.
 
@@ -258,7 +257,7 @@ Au cours des étapes précédentes, vous avez ajouté *webpack-config.js* au pro
     }
     ```
 
-    Le code de configuration de webpack indique à Webpack d’utiliser le chargeur TypeScript pour transpiler le code JSX.
+    Le code de configuration de webpack indique à webpack d’utiliser le chargeur TypeScript pour transpiler le code JSX.
 
 1. Ouvrez *tsconfig.json* et remplacez le code par défaut par le code suivant pour spécifier les options du compilateur TypeScript :
 

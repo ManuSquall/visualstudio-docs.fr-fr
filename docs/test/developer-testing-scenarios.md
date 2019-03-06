@@ -1,22 +1,20 @@
 ---
 title: Outils de test pour développeurs
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit tests
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 396bbfdb915d0e3ecc31f516d60eab80cca6a421
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 216cee6181122997ef8cc5937b9b1af76ba71b06
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295148"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316351"
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Outils de test pour les développeurs, scénarios et fonctions
 
@@ -31,7 +29,7 @@ Améliorez la couverture et évitez les régressions avec IntelliTest. IntelliTe
 ![IntelliTest en action](media/devtest-intellitest.png)
 
 * [Introduction à IntelliTest avec Visual Studio](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20IntelliTest%20with%20Visual%20Studio%20Enterprise%202015.docx)
-* [IntelliTest – One Test to rule them all](https://blogs.msdn.microsoft.com/devops/2015/07/05/intellitest-one-test-to-rule-them-all/)
+* [IntelliTest – One Test to rule them all](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)
 * [Vidéos IntelliTest](https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio)
 * [Bien démarrer avec IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Manuel de référence IntelliTest](intellitest-manual/index.md)
@@ -80,7 +78,7 @@ Visual Studio est également extensible et accepte les adaptateurs de tests unit
 ## <a name="see-also"></a>Voir aussi
 
 * [Bien démarrer avec les tests unitaires](getting-started-with-unit-testing.md)
-* [Accélérer l’exécution des tests unitaires dans Team Foundation Server](https://blogs.msdn.microsoft.com/devops/2015/07/30/speeding-up-unit-test-execution-in-tfs/)
-* [Exécution de tests unitaires contextuelle et en parallèle](https://blogs.msdn.microsoft.com/devops/2016/02/08/parallel-and-context-sensitive-test-execution-with-visual-studio-2015-update-1/)
+* [Accélérer l’exécution des tests unitaires dans Team Foundation Server](https://devblogs.microsoft.com/devops/speeding-up-unit-test-execution-in-tfs/)
+* [Exécution de tests unitaires contextuelle et en parallèle](https://devblogs.microsoft.com/devops/parallel-and-context-sensitive-test-execution-with-visual-studio-2015-update-1/)
 * [Tests unitaires, couverture du code et analyse des clones de code avec Visual Studio (laboratoire)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
 * [Écriture de tests unitaires pour C/C++](writing-unit-tests-for-c-cpp.md)

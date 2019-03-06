@@ -1,24 +1,19 @@
 ---
 title: Créez des applications avec une interface utilisateur native à l’aide de Xamarin
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: tgt-pltfrm-cross-plat
+ms.topic: conceptual
 ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 7a17f8468eca37b5b977aa6b892e268bda5376ba
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f9ad50aea8da784d05f3852860186bb029e67a54
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066238"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954106"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Créer des applications Xamarin avec une interface utilisateur native dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -524,7 +519,7 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
 
 2.  Sélectionnez la cible de l’appareil ou de l’émulateur approprié, puis démarrez l’application en appuyant sur la touche F5.
 
-3.  Sur l’appareil ou dans l’émulateur, tapez un code postal valid dans la zone d’édition (par exemple : 60601), puis appuyez sur **Get Weather**. Les données météorologiques de cette région apparaissent ensuite dans les contrôles.
+3.  Sur l’appareil ou dans l’émulateur, dans la zone d’édition, tapez un code postal valide pour les États-Unis (par exemple 60601), puis appuyez sur **Get Weather**. Les données météorologiques de cette région apparaissent ensuite dans les contrôles.
 
      ![Application météo pour Android et Windows Phone](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
 
@@ -630,7 +625,7 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
 
 2.  Démarrez l'application en appuyant sur la touche F5.
 
-3.  Dans l’émulateur Windows Phone, tapez un code postal valid dans la zone d’édition (par exemple : 60601), puis appuyez sur **Get Weather**. Les données météorologiques de cette région apparaissent ensuite dans les contrôles.
+3.  Dans l’émulateur Windows Phone, dans la zone d’édition, tapez un code postal valide pour les États-Unis (par exemple 60601), puis appuyez sur **Get Weather**. Les données météorologiques de cette région apparaissent ensuite dans les contrôles.
 
      ![Version Windows de l’application en cours d’exécution](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
 
@@ -649,4 +644,4 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
  Le code partagé d’une bibliothèque PCL est indépendant de la plateforme, car la bibliothèque PCL est compilée une seule fois et incluse dans chaque package de l’application spécifique à la plateforme. Si vous souhaitez écrire du code partagé qui utilise la compilation conditionnelle pour isoler le code spécifique à la plateforme, vous pouvez utiliser un projet *partagé*. Pour plus d’informations, consultez [Options de partage du code](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (xamarin.com).
 
 ## <a name="see-also"></a>Voir aussi
- [Site de développement Xamarin](http://developer.xamarin.com/) [centre de développement Windows](https://dev.windows.com/en-us) [Swift et C# aide-mémoire](http://aka.ms/scposter)
+ [Site de développement Xamarin](http://developer.xamarin.com/) [centre de développement Windows](https://dev.windows.com/en-us) [Swift et C# aide-mémoire](https://aka.ms/scposter)

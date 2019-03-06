@@ -1,8 +1,6 @@
 ---
 title: 'CA2004 : Supprimez les appels à GC.KeepAlive'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - RemoveCallsToGCKeepAlive
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: bc543b5b-23eb-4b45-abc2-9325cd254ac2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bea4af6c0ae0e21e15a79d52f4c7205a51a3ea46
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4520649050e6e4004b2c8864d5c081897852826c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819119"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910101"
 ---
 # <a name="ca2004-remove-calls-to-gckeepalive"></a>CA2004 : Supprimez les appels à GC.KeepAlive
 

@@ -1,8 +1,6 @@
 ---
 title: Créer et configurer des datasets
 ms.date: 11/21/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.topic: conceptual
 helpviewer_keywords:
 - typed datasets, creating
@@ -10,15 +8,15 @@ helpviewer_keywords:
 - datasets, configuring
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 23837bcfb1d3761f8ebf23020c15e901833d63b3
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: cba7cf4a402b92f05f12faa39b88ab03cd5bd03b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305220"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943010"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Créer et configurer des datasets dans Visual Studio
 
@@ -40,7 +38,7 @@ Vous pouvez créer un typé <xref:System.Data.DataSet> classe dans Visual Studio
 
 4. Choisissez les tables (ou des colonnes individuelles), procédures stockées, fonctions et vues à partir de la base de données que vous souhaitez être représenté dans le jeu de données.
 
-     ![Choix des objets de base de données](../data-tools/media/raddata-chose-objects.png)
+     ![Choisir des objets de base de données](../data-tools/media/raddata-chose-objects.png)
 
 5. Cliquez sur **Terminer**.
 
@@ -82,7 +80,7 @@ Cette procédure montre comment ajouter une table à partir de la même base de 
 
 ## <a name="add-a-stand-alone-data-table-to-a-dataset"></a>Ajouter une table de données autonome à un jeu de données
 
-1. Ouvrez votre dataset dans le Concepteur de DataSet **.
+1. Ouvrez votre dataset dans le **Concepteur de DataSet**.
 
 2. Faites glisser un <xref:System.Data.DataTable> classe à partir de la **DataSet** onglet de la **boîte à outils** sur le **Concepteur de Dataset**.
 

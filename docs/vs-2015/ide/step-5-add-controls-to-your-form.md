@@ -1,32 +1,27 @@
 ---
-title: 'Étape 5 : ajouter des contrôles à votre formulaire | Microsoft Docs'
-ms.custom: ''
+title: 'Étape 5 : Ajouter des contrôles à votre formulaire | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: dc2746f4-0b5c-4674-9ef7-f40f94150f52
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7f7c65577a08b9aa9d6750b857e2c38939031f38
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 37e73beaadb5c8ce3b289676fc3fd7a7d1f18e0a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257021"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780622"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Étape 5 : ajouter des contrôles à votre formulaire
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Lors de cette étape, vous ajoutez des contrôles à votre formulaire (notamment des contrôles `PictureBox` et `CheckBox`). Vous ajoutez ensuite des boutons à votre formulaire.  
   
- ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo")Pour obtenir une version vidéo de cette rubrique, consultez [Didacticiel 1 : Créer une visionneuse d’images en Visual Basic – Vidéo 2](http://go.microsoft.com/fwlink/?LinkId=205211) ou [Didacticiel 1 : Créer une visionneuse d’images en C# – Vidéo 2](http://go.microsoft.com/fwlink/?LinkId=205200). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.  
+ ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo")pour obtenir une version vidéo de cette rubrique, consultez [didacticiel 1 : créer une visionneuse d’images en Visual Basic – vidéo 2](http://go.microsoft.com/fwlink/?LinkId=205211) ou [didacticiel 1 : créer une visionneuse d’images dans C# -Vidéo 2](http://go.microsoft.com/fwlink/?LinkId=205200). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.  
   
 ### <a name="to-add-controls-to-your-form"></a>Pour ajouter des contrôles à votre formulaire  
   
@@ -89,6 +84,3 @@ Visionneuse d'images avec quatre boutons
 -   Pour passer à l’étape suivante du didacticiel, consultez [Étape 6 : affecter un nom à vos contrôles bouton](../ide/step-6-name-your-button-controls.md).  
   
 -   Pour revenir à l’étape précédente du didacticiel, consultez [Étape 4 : composer votre formulaire avec un contrôle TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).
-
-
-

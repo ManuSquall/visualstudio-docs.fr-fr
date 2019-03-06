@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugdatatarget::readnullterminatedstring, méthode | Documents Microsoft
+title: Méthode IJsDebugDataTarget::ReadNullTerminatedString | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 94cb90b8b44aa5dab13a2e916dec22ae950e77ef
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a681dcedf873f0cb96f47b14278f47271cd43ec8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729499"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093325"
 ---
 # <a name="ijsdebugdatatargetreadnullterminatedstring-method"></a>IJsDebugDataTarget::ReadNullTerminatedString, méthode
 Lit le nombre spécifié de caractères à partir de la cible.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT ReadNullTerminatedString(  
    UINT64 address,  
    UINT16 characterSize,  
@@ -39,21 +39,21 @@ HRESULT ReadNullTerminatedString(
   
 #### <a name="parameters"></a>Paramètres  
  `address`  
- [in] L’adresse à lire.  
+ [in] L’adresse à lire à partir de.  
   
  `characterSize`  
  [in] taille de chaque caractère dans la chaîne  
   
  `maxCharacters`  
- [in] Le nombre maximal de caractères à lire. maxCharacters doit être raisonnable. Toute demande de plus de 128 Mo de mémoire échoue.  Si la chaîne est supérieure à maxCharacters, la chaîne de résultat sera tronquée après maxCharacters.  
+ [in] Le nombre maximal de caractères à lire. maxCharacters doivent être raisonnables. Toute demande de plus de 128 Mo de mémoire échoue.  Si la chaîne est supérieure à maxCharacters, la chaîne de résultat est tronquée après maxCharacters.  
   
  `pString`  
- [out] Le BSTR lire à partir de la cible.  
+ [out] Le BSTR lues dans la cible.  
   
 ## <a name="return-value"></a>Valeur de retour  
   
-## <a name="remarks"></a>Remarques  
- Retourne S_FALSE si tronquée.  
+## <a name="remarks"></a>Notes  
+ Retourne S_FALSE si tronqué.  
   
 ## <a name="requirements"></a>Spécifications  
  **En-tête :** jscript9diag.h  

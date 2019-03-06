@@ -1,8 +1,6 @@
 ---
 title: "CA1501 : Éviter l'excès d'héritage"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1501
@@ -13,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 9e934746-1a4d-492a-91e4-085201abafa4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0627d246fe9f9f72a95cded7daf8d2c94bf20b3a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: bc51b4c84ca38c0fb4e5837e3bcdf1f28a045747
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546944"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947482"
 ---
 # <a name="ca1501-avoid-excessive-inheritance"></a>CA1501 : Éviter l'excès d'héritage
 

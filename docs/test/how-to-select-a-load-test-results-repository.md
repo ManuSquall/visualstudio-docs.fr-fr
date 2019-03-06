@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: fa0c4dd9-612f-4a57-b8eb-458f129d9cda
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 169020d61cee1ae109a302eede0a9beb133fe82f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 6d1b324eb2122559eb45a22bc463458d4f6661ef
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059971"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55941077"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>Procédure : sélectionner un dépôt de résultats des tests de charge
 

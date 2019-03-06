@@ -1,24 +1,22 @@
 ---
 title: Débloquer le téléchargement des outils à distance
-ms.custom: ''
 ms.date: 07/19/2018
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 helpviewer_keywords:
 - remote debugging, unblock download
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e0586b8f0699ec2eca5843d59df1b6ddd7cecbd3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: 8a243033bf5831952d83fdf688302651e02b76b7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180658"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988140"
 ---
-# <a name="how-to-unblock-the-download-of-the-remote-tools-on-windows-server"></a>Comment : débloquer le téléchargement des outils à distance sur Windows Server
+# <a name="how-to-unblock-the-download-of-the-remote-tools-on-windows-server"></a>Procédure : Débloquer le téléchargement des outils à distance sur Windows Server
 
 Les paramètres de sécurité par défaut dans Internet Explorer sur Windows Server peuvent rendre fastidieuse télécharger les composants, tels que les outils à distance.
 
@@ -34,24 +32,24 @@ Pour télécharger les outils de Windows Server, nous vous recommandons une des 
 
 * Téléchargez les outils à distance directement sur Windows Server et acceptez les invites pour ajouter des sites de confiance. Sites Web modernes incluent souvent de nombreuses ressources de tiers, donc cela peut entraîner de nombreuses invites. En outre, des liens redirigés peuvent avoir à être ajoutés manuellement. Vous pouvez choisir d’ajouter les sites de confiance avant de commencer le téléchargement. Accédez à **Options Internet > sécurité > Sites de confiance > Sites** et ajoutez les sites suivants.
 
-  * VisualStudio.Microsoft.com
+  * visualstudio.microsoft.com
   * download.visualstudio.microsoft.com
   * à propos : vide
 
   Pour les versions antérieures du débogueur sur my.visualstudio.com, ajoutez ces sites supplémentaires pour vous assurer que la connexion est réussie :
 
-  * Microsoft.com
+  * microsoft.com
   * go.microsoft.com
   * download.microsoft.com
-  * My.VisualStudio.com
-  * Login.microsoftonline.com
-  * Login.Live.com
-  * Secure.aadcdn.microsoftonline-p.com
-  * msft.STS.Microsoft.com
-  * AUTH.GFX.MS
+  * my.visualstudio.com
+  * login.microsoftonline.com
+  * login.live.com
+  * secure.aadcdn.microsoftonline-p.com
+  * msft.sts.microsoft.com
+  * auth.gfx.ms
   * app.vssps.visualstudio.com
-  * vlscppe.Microsoft.com
-  * Query.prod.cms.RT.Microsoft.com
+  * vlscppe.microsoft.com
+  * query.prod.cms.rt.microsoft.com
 
     Si vous choisissez d’ajouter ces domaines lors du téléchargement des outils à distance, puis choisissez **ajouter** lorsque vous y êtes invité.
 

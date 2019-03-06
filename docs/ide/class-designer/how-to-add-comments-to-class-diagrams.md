@@ -1,8 +1,6 @@
 ---
-title: Guide pratique pour ajouter des commentaires aux diagrammes de classes (Concepteur de classes)
+title: 'Procédure : Ajouter des commentaires à des diagrammes de classes (Concepteur de classes)'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.comment
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: d54005d5-a29d-4c4e-b153-feb6e84dd44f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3b850741793f1b0f1d358aca9ea3161e12a46b9
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 39b220ddc42857040a51b2308c6d4a83d931de09
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957104"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970541"
 ---
-# <a name="how-to-add-comments-to-class-diagrams"></a>Guide pratique pour ajouter des commentaires aux diagrammes de classes
+# <a name="how-to-add-comments-to-class-diagrams"></a>Procédure : Ajouter des commentaires aux diagrammes de classes
 
 Vous pouvez utiliser des zones de commentaire pour annoter les diagrammes de classes. Une zone de commentaire comprend la propriété **Text** dans laquelle vous pouvez taper du texte. Les zones de commentaire sont présentes uniquement sur la surface du diagramme et pas dans le code.
 
@@ -39,5 +37,5 @@ Vous pouvez redimensionner une zone de commentaire. Toutefois, vous ne pouvez pa
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Utiliser des diagrammes de classes](working-with-class-diagrams.md)
+- [Utiliser des diagrammes de classes](designing-and-viewing-classes-and-types.md)
 - [Guide pratique pour personnaliser des diagrammes de classes](how-to-customize-class-diagrams.md)

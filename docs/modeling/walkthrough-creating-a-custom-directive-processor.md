@@ -1,5 +1,5 @@
 ---
-title: "Procédure pas à pas : création d'un processeur de directive personnalisé"
+title: "Procédure pas à pas : Création d'un processeur de directive personnalisé"
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,22 +7,20 @@ helpviewer_keywords:
 - walkthroughs [text templates], directive processor
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: c430dad62686e49d9ce07fdff9a3665b0ea519a4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4b46937e8b30dec1f9e2a78d181cd53692b7d1b4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930321"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910426"
 ---
-# <a name="walkthrough-create-a-custom-directive-processor"></a>Procédure pas à pas : créer un processeur de directive personnalisé
+# <a name="walkthrough-create-a-custom-directive-processor"></a>Procédure pas à pas : Créer un processeur de Directive personnalisé
 
 *Processeurs de directive* fonctionnent en ajoutant du code pour le *classe de transformation générée*. Si vous appelez un *directive* à partir d’un *modèle de texte*, le reste du code que vous écrivez dans votre modèle de texte peut reposer sur les fonctionnalités fournies par la directive.
 
@@ -603,7 +601,7 @@ End Property
 
 4. Pour Visual Basic, ouvrez le **projet** menu, puis cliquez sur **propriétés de CustomDP**. Sur le **Application** sous l’onglet **espace de noms racine**, supprimez la valeur par défaut, `CustomDP`.
 
-5. Sur le **fichier** menu, cliquez sur **Enregistrer tout**.
+5. Dans le menu **Fichier**, cliquez sur **Enregistrer tout**.
 
 6. Dans le menu **Générer** , cliquez sur **Générer la solution**.
 

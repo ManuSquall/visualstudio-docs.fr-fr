@@ -1,8 +1,6 @@
 ---
 title: Rechercher et remplacer dans les fichiers
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.findreplace.replaceinfiles
@@ -13,15 +11,15 @@ helpviewer_keywords:
 - replace in files
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 625cb98391199bad78fb4492e635b2b1767debe7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: fddd048d7c0cc1ffc32dfa81f17964d14d917ec9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057877"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940826"
 ---
 # <a name="replace-in-files"></a>Remplacer dans les fichiers
 

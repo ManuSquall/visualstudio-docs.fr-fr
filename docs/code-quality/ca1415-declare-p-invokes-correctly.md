@@ -1,8 +1,6 @@
 ---
-title: 'CA1415 : Déclarer correctement les méthodes P/Invoke'
+title: 'CA1415 : Déclarer correctement les méthodes P-Invoke'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1415
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 42a90796-0264-4460-bf97-2fb4a093dfdc
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f95c3e68190acbd53c4b75ceb81abf2885d15bce
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: da6448a414437a07b545a999b35031f82e9a8689
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922625"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936874"
 ---
 # <a name="ca1415-declare-pinvokes-correctly"></a>CA1415 : Déclarer correctement les méthodes P/Invoke
 

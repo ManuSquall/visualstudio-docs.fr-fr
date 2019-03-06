@@ -2,22 +2,20 @@
 title: Concepteur de flux de travail - de concepteur d’activités Compensate
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Compensate.UI
 ms.assetid: 7347c947-bfff-4bad-becd-5cd23e7b24cd
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed306b6665919101c682f2f541f5b5ef693d2b58
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c55ecd8e3402d927b11cc00d18d6d134a5b25681
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909833"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911596"
 ---
 # <a name="compensate-activity-designer"></a>Concepteur d'activités Compensate
 

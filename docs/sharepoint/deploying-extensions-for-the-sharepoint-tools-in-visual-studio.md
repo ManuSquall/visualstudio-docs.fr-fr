@@ -1,26 +1,23 @@
 ---
 title: Déploiement d’Extensions pour les outils SharePoint dans Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying extensions
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c3bf20f945c40dd963820b1bf3f4032a2dd517ca
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 3cbd581da1e2a081636c4f4cf7885241c15eff97
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295967"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876263"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Déployer des extensions pour les outils SharePoint dans Visual Studio
 
@@ -52,11 +49,11 @@ Par défaut, les projets VSIX génèrent uniquement des packages VSIX, pas d’a
 
 Vous pouvez également travailler avec des projets supplémentaires pour certains types d’extensions :
 
--   Un projet de bibliothèque de classes qui implémente des commandes SharePoint qui sont utilisés par votre extension. Pour une procédure pas à pas qui illustre ce scénario, consultez [procédure pas à pas : étendre des Explorateur de serveurs pour afficher des WebParts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).
+-   Un projet de bibliothèque de classes qui implémente des commandes SharePoint qui sont utilisés par votre extension. Pour une procédure pas à pas qui illustre ce scénario, consultez [procédure pas à pas : Étendre l’Explorateur de serveurs pour afficher des WebParts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).
 
--   Un projet de modèle d’élément ou un modèle de projet qui crée un modèle d’élément ou d’un modèle de projet, si votre extension définit un nouveau type d’élément de projet SharePoint. Pour une procédure pas à pas qui illustre ce scénario, consultez [procédure pas à pas : créer un élément de projet d’action personnalisé avec un modèle d’élément, partie 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).
+-   Un projet de modèle d’élément ou un modèle de projet qui crée un modèle d’élément ou d’un modèle de projet, si votre extension définit un nouveau type d’élément de projet SharePoint. Pour une procédure pas à pas qui illustre ce scénario, consultez [procédure pas à pas : Créer un élément de projet d’action personnalisé avec un modèle d’élément, partie 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).
 
--   Un projet de bibliothèque de classes qui implémente un Assistant personnalisé pour un modèle d’élément ou d’un modèle de projet, si votre extension inclut un modèle. Pour une procédure pas à pas qui illustre ce scénario, consultez [procédure pas à pas : créer un élément de projet d’action personnalisé avec un modèle d’élément, partie 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).
+-   Un projet de bibliothèque de classes qui implémente un Assistant personnalisé pour un modèle d’élément ou d’un modèle de projet, si votre extension inclut un modèle. Pour une procédure pas à pas qui illustre ce scénario, consultez [procédure pas à pas : Créer un élément de projet d’action personnalisé avec un modèle d’élément, partie 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).
 
 Si vous incluez tous les projets dans la même solution Visual Studio, vous pouvez modifier le fichier source.extension.vsixmanifest dans le projet VSIX pour inclure la sortie de génération de projets de bibliothèque de classes.
 
@@ -218,7 +215,7 @@ Le tableau suivant répertorie les procédures pas à pas qui montrent comment u
 
 |Type d’extension|Procédures pas à pas connexes|
 |--------------------|--------------------------|
-|Une extension qui inclut uniquement l’assembly d’extension|[Procédure pas à pas : Étendre un type d’élément de projet SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)<br /><br /> [Procédure pas à pas : Créer une extension de projet SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)<br /><br /> [Procédure pas à pas : Appel dans le modèle d’objet client SharePoint dans une extension de l’Explorateur de serveurs](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)|
+|Une extension qui inclut uniquement l’assembly d’extension|[Procédure pas à pas : Étendre un type d’élément de projet SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)<br /><br /> [Procédure pas à pas : Créer une extension de projet SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)<br /><br /> [Procédure pas à pas : Appeler le modèle d’objet client SharePoint dans une extension de l’Explorateur de serveurs](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)|
 |Une extension qui inclut des commandes SharePoint|[Procédure pas à pas : Créer une étape de déploiement personnalisée pour les projets SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)<br /><br /> [Procédure pas à pas : Étendre l’Explorateur de serveurs pour afficher des WebParts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)<br /><br /> [Procédure pas à pas : Créer un élément de projet de colonne de site avec un modèle de projet, partie 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|
 |Une extension qui inclut un modèle Visual Studio|[Procédure pas à pas : Créer un élément de projet d’action personnalisé avec un modèle d’élément, partie 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)<br /><br /> [Procédure pas à pas : Créer un élément de projet de colonne de Site avec un modèle de projet, partie 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)|
 |Une extension qui inclut un Assistant de modèle|[Procédure pas à pas : Créer un élément de projet d’action personnalisé avec un modèle d’élément, partie 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)<br /><br /> [Procédure pas à pas : Créer un élément de projet de colonne de Site avec un modèle de projet, partie 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|

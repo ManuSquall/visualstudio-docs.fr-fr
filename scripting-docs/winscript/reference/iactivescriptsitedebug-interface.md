@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebug (Interface) | Documents Microsoft
+title: Interface IActiveScriptSiteDebug | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9b36054deeceb0528fb7ea399cc41d8edbbb47e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 339325686d2a98e34c6e9f96056612769a9e110e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724739"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348306"
 ---
 # <a name="iactivescriptsitedebug-interface"></a>IActiveScriptSiteDebug, interface
-Implémentent des hôtes actifs le `IActiveScriptSiteDebug` interface pour effectuer la gestion des documents et participer au débogage. Le `IActiveScriptSite` objet fournit généralement une implémentation de la `IActiveScriptSiteDebug` interface. Si cette opération est effectuée, appelez le `IActiveScriptSite::QueryInterface` méthode pour obtenir le `IActiveScriptSiteDebug` interface.  
+Implémentent des hôtes intelligents le `IActiveScriptSiteDebug` interface pour effectuer la gestion des documents et participer au débogage. Le `IActiveScriptSite` objet fournit généralement une implémentation de la `IActiveScriptSiteDebug` interface. Si cette opération est effectuée, appelez le `IActiveScriptSite::QueryInterface` méthode pour obtenir le `IActiveScriptSiteDebug` interface.  
   
  Outre les méthodes héritées de `IUnknown`, le `IActiveScriptSiteDebug` interface expose les méthodes suivantes.  
   
@@ -32,5 +32,5 @@ Implémentent des hôtes actifs le `IActiveScriptSiteDebug` interface pour effec
 |------------|-----------------|  
 |[IActiveScriptSiteDebug::GetDocumentContextFromPosition](../../winscript/reference/iactivescriptsitedebug-getdocumentcontextfromposition.md)|Utilisé par le moteur de langage pour déléguer `IDebugCodeContext::GetSourceContext`.|  
 |[IActiveScriptSiteDebug::GetApplication](../../winscript/reference/iactivescriptsitedebug-getapplication.md)|Retourne l’objet d’application de débogage associé à ce site de script.|  
-|[IActiveScriptSiteDebug::GetRootApplicationNode](../../winscript/reference/iactivescriptsitedebug-getrootapplicationnode.md)|Obtient le nœud d’application dans le script de documents doivent être ajoutés.|  
-|[IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md)|Permet à un hôte actif déterminer comment gérer les erreurs d’exécution.|
+|[IActiveScriptSiteDebug::GetRootApplicationNode](../../winscript/reference/iactivescriptsitedebug-getrootapplicationnode.md)|Obtient le nœud d’application sous le script de documents doivent être ajoutés.|  
+|[IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md)|Permet à un hôte intelligent déterminer comment gérer les erreurs d’exécution.|

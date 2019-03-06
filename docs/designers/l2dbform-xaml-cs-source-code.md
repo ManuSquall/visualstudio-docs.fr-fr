@@ -1,21 +1,19 @@
 ---
 title: Code source de L2DBForm.xaml.cs
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: sample
 ms.assetid: 5a40dad3-6763-4576-b3ad-874df3f2c8d9
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d996d5cd6c6856c5e348d362c442e7c6471ceba
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d6f0e70111c557be038e73c05ef7a1578493002d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915163"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951317"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>Code source L2DBForm.xaml.cs
 
@@ -140,5 +138,5 @@ Pour obtenir la source XAML associée pour ces gestionnaires, consultez [Code so
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Procédure pas à pas : exemple LinqToXmlDataBinding](../designers/walkthrough-linqtoxmldatabinding-example.md)
+- [Procédure pas à pas : Exemple LinqToXmlDataBinding](../designers/walkthrough-linqtoxmldatabinding-example.md)
 - [Code source L2DBForm.xaml](../designers/l2dbform-xaml-source-code.md)

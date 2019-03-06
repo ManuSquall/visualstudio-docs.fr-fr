@@ -1,8 +1,6 @@
 ---
 title: Créer des modèles à projets multiples
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-project
@@ -10,13 +8,13 @@ helpviewer_keywords:
 - multi-project templates
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f53fa69f9fafd1dd3686a80fb367c2bc0b99a013
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 5a596d37d4446332461709cb6737d4f526e9b02e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049663"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970879"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Procédure : Créer des modèles à projets multiples
 
@@ -55,7 +53,7 @@ Le fichier *vstemplate* racine d’un modèle à plusieurs projets présente les
         xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     ```
 
-- L’élément **TemplateContent** contient un élément **ProjectCollection** ayant un ou plusieurs éléments **ProjectTemplateLink** qui définissent les chemins des fichiers *vstemplate* des projets inclus. Exemple :
+- L’élément **TemplateContent** contient un élément **ProjectCollection** ayant un ou plusieurs éléments **ProjectTemplateLink** qui définissent les chemins des fichiers *vstemplate* des projets inclus. Par exemple :
 
     ```xml
     <TemplateContent>
@@ -70,17 +68,20 @@ Le fichier *vstemplate* racine d’un modèle à plusieurs projets présente les
     </TemplateContent>
     ```
 
-## <a name="to-create-a-multi-project-template-from-an-existing-solution"></a>Pour créer un modèle à plusieurs projets à partir d’une solution existante
+## <a name="create-a-multi-project-template-from-an-existing-solution"></a>Créer un modèle multiprojet à partir d’une solution existante
 
 1. Créez une solution et ajoutez deux projets ou plus.
 
 1. Personnalisez les projets jusqu’à ce qu’ils soient prêts à être exportés dans un modèle.
 
+   > [!TIP]
+   > Si vous utilisez des [paramètres de modèle](template-parameters.md) et que vous voulez référencer des variables du modèle parent, préfixez le nom du paramètre avec `ext_`. Par exemple, `$ext_safeprojectname$`.
+
 1. Dans le menu **Projet**, choisissez **Exporter le modèle**.
 
    L’Assistant **Exportation de modèle** s’ouvre.
 
-1. Dans la page **Choisir un type de modèle**, sélectionnez **Modèle de projet**. Sélectionnez le projet à exporter dans un modèle, puis choisissez **Suivant**.
+1. Dans la page **Choisir un type de modèle**, sélectionnez **Modèle de projet**. Sélectionnez un des projets que vous voulez exporter vers un modèle, puis choisissez **Suivant**. (Vous répétez ces étapes pour chaque projet de la solution.)
 
 1. Dans la page **Sélectionner les options du modèle**, entrez un nom et éventuellement une description, une icône et une image d’aperçu pour votre modèle. Choisissez **Terminer**.
 

@@ -1,20 +1,18 @@
 ---
 title: Écrire des tests unitaires pour C/C++
 ms.date: 10/09/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: e19eb3bb421a69c902d9a10f0cdb3c5ac2244a04
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 561b55ee961162adb37cd393cac9ecf8b78c5ade
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053742"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926786"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Écrire des tests unitaires pour C/C++ dans Visual Studio
 
@@ -38,7 +36,7 @@ Prise en charge de projets de test unitaire C++ [CodeLens](../ide/find-code-chan
 
 **Visual Studio 2017 version 15.5**
 
-- **L’Adaptateur Google Test** est inclus comme composant par défaut de la charge de travail **Développement Desktop en C++**. Il comprend un modèle de projet que vous pouvez ajouter à une solution via le menu contextuel **Ajouter un nouveau projet** du nœud de la solution dans **l’Explorateur de solutions**. Il comprend également des options que vous pouvez configurer via **Outils** > **Options**. Pour plus d’informations, consultez [Guide pratique pour utiliser Google Test dans Visual Studio](how-to-use-google-test-for-cpp.md).
+- **L’Adaptateur Google Test** est inclus comme composant par défaut de la charge de travail **Développement Desktop en C++**. Il comprend un modèle de projet que l’on peut ajouter à une solution avec le menu contextuel (clic droit) **Ajouter un nouveau projet** du nœud de la solution dans **l’Explorateur de solutions**, ainsi que des options configurables avec **Outils** > **Options**. Pour plus d’informations, consultez [Guide pratique pour utiliser Google Test dans Visual Studio](how-to-use-google-test-for-cpp.md).
 
 - **Boost.Test** est inclus comme composant par défaut de la charge de travail **Développement Desktop en C++**. Il est intégré à **l’Explorateur de tests**, mais il n’a actuellement pas de modèle de projet : il doit donc être configuré manuellement. Pour plus d’informations, consultez [Guide pratique pour utiliser Boost.Test dans Visual Studio](how-to-use-boost-test-for-cpp.md).
 

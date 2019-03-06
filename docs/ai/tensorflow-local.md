@@ -8,16 +8,14 @@ manager: routlaw
 ms.date: 11/13/2017
 ms.topic: quickstart
 ms.devlang: python
-ms.service: multiple
-ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bca48113349607de2f5ada53356f1d24eb82088
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 26668247bf993da3eb3f2803abaf9288e566ffee
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933987"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842859"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>Former un modèle TensorFlow localement
 

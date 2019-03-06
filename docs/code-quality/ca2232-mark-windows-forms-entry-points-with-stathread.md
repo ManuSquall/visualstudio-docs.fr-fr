@@ -1,8 +1,6 @@
 ---
-title: "CA2232 : Marquez les points d'entrée Windows Forms avec STAThread"
+title: "CA2232 : Marquez les points d'entrée Windows Forms avec STAThread"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - MarkWindowsFormsEntryPointsWithStaThread
@@ -13,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: a3c95130-8e7f-4419-9fcd-b67d077e8efb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 97c5ad926ecc2a0480a612575eca7e4fe0af31e5
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 1bea8ee43c90c0e6559846bad00b61ec434ec46f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551439"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923458"
 ---
-# <a name="ca2232-mark-windows-forms-entry-points-with-stathread"></a>CA2232 : Marquez les points d'entrée Windows Forms avec STAThread
+# <a name="ca2232-mark-windows-forms-entry-points-with-stathread"></a>CA2232 : Marquez les points d'entrée Windows Forms avec STAThread
 
 |||
 |-|-|

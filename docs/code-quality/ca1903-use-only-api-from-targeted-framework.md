@@ -1,8 +1,6 @@
 ---
-title: "CA1903 : Utiliser uniquement l'API à partir du Framework cible"
+title: "CA1903 : Utiliser uniquement l'API à partir du Framework cible"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - UseOnlyAPIFromTargetedFramework
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: efdb5cc7-bbd8-4fa7-9fff-02b91e59350e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1d42a74cfaf93ba0e8e5aec7e15c522d2e26b7a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 086c4546d72042d2b2c7c1789cdf1695bc54b81d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822811"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955386"
 ---
-# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903 : Utiliser uniquement l'API à partir du Framework cible
+# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903 : Utiliser uniquement l'API à partir du Framework cible
 
 |||
 |-|-|
@@ -48,7 +46,7 @@ ms.locfileid: "49822811"
 |.NET Framework 3.5|.NET Framework 3.5 SP1|
 |.NET Framework 4|N/A|
 
- Pour modifier le framework cible d’un projet, consultez [ciblant une Version spécifique du .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
+ Pour modifier le framework cible d’un projet, consultez [ciblant une Version spécifique du .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour supprimer la dépendance sur le service pack, supprimez toutes les utilisations du nouveau membre ou type. S’il s’agit d’une dépendance délibérée, supprimez l’avertissement ou désactiver cette règle.
@@ -69,4 +67,4 @@ ms.locfileid: "49822811"
 ## <a name="see-also"></a>Voir aussi
 
 - [Portability Warnings](../code-quality/portability-warnings.md)
-- [Cibler une version spécifique du .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
+- [Cibler une version spécifique du .NET Framework](../ide/visual-studio-multi-targeting-overview.md)

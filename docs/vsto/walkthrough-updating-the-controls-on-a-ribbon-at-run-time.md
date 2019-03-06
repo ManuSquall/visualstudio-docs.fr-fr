@@ -1,9 +1,6 @@
 ---
-title: 'Procédure pas à pas : Mise à jour les contrôles sur un ruban lors de l’exécution'
-ms.custom: ''
+title: 'Procédure pas à pas : Mettre à jour les contrôles sur un ruban lors de l’exécution'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,19 +12,19 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], dynamic menu
 - dynamic menus [Office development in Visual Studio]
 - Ribbon [Office development in Visual Studio], updating
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 40072b1dcd6b24f552a3c87c8241ea4498229053
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 4bad52a02cb87f611293283deb3743c6e148e688
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389148"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875912"
 ---
-# <a name="walkthrough-update-the-controls-on-a-ribbon-at-runtime"></a>Procédure pas à pas : Mise à jour les contrôles sur un ruban lors de l’exécution
+# <a name="walkthrough-update-the-controls-on-a-ribbon-at-runtime"></a>Procédure pas à pas : Mettre à jour les contrôles sur un ruban lors de l’exécution
 
 Cette procédure pas à pas montre comment utiliser le modèle objet de ruban pour mettre à jour les contrôles sur un ruban après le chargement du ruban dans l’application Office.
 
@@ -68,7 +65,7 @@ Commencez par créer un projet de complément VSTO Outlook.
 
 3.  Enregistrez le projet dans le répertoire de projet par défaut.
 
-     Pour plus d’informations, consultez [Comment : les projets Office de créer dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+     Pour plus d'informations, voir [Procédure : Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 ## <a name="design-a-custom-ribbon-group"></a>Conception d’un groupe de ruban personnalisé
 
@@ -294,7 +291,7 @@ Pour plus d'informations sur la personnalisation de l'interface utilisateur d'Of
 
 -   Ajouter une interface utilisateur contextuelle à une personnalisation au niveau du document. Pour plus d’informations, consultez [vue d’ensemble du volet Actions](../vsto/actions-pane-overview.md).
 
--   Étendre un formulaire Microsoft Office standard ou personnalisé. Pour plus d’informations, consultez [procédure pas à pas : concevoir une zone de formulaire Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
+-   Étendre un formulaire Microsoft Office standard ou personnalisé. Pour plus d’informations, consultez [Procédure pas à pas : Concevoir une zone de formulaire Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
 -   Ajouter un volet de tâches personnalisé dans Outlook. Pour plus d’informations, consultez [volets de tâches personnalisés](../vsto/custom-task-panes.md).
 
@@ -303,13 +300,13 @@ Pour plus d'informations sur la personnalisation de l'interface utilisateur d'Of
 - [Accéder au ruban lors de l’exécution](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Vue d’ensemble du ruban](../vsto/ribbon-overview.md)
 - [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/index)
-- [Comment : démarrer avec la personnalisation du ruban](../vsto/how-to-get-started-customizing-the-ribbon.md)
+- [Guide pratique pour Commencer la personnalisation du ruban](../vsto/how-to-get-started-customizing-the-ribbon.md)
 - [Concepteur de ruban](../vsto/ribbon-designer.md)
 - [Procédure pas à pas : Créer un onglet personnalisé à l’aide du Concepteur de ruban](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [Présentation du modèle objet de ruban](../vsto/ribbon-object-model-overview.md)
 - [Personnaliser un ruban pour Outlook](../vsto/customizing-a-ribbon-for-outlook.md)
-- [Comment : modifier la position d’un onglet dans le ruban](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
-- [Comment : personnaliser un onglet intégré](../vsto/how-to-customize-a-built-in-tab.md)
-- [Comment : ajouter des contrôles au mode Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
-- [Comment : exporter un ruban à partir du Concepteur de ruban vers ruban XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
-- [Comment : afficher complément, les erreurs d’interface utilisateur](../vsto/how-to-show-add-in-user-interface-errors.md)
+- [Guide pratique pour Modifier la position d’un onglet dans le ruban](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
+- [Guide pratique pour Personnaliser un onglet intégré](../vsto/how-to-customize-a-built-in-tab.md)
+- [Guide pratique pour Ajouter des contrôles au mode Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
+- [Guide pratique pour Exporter un ruban à partir du Concepteur de ruban vers ruban XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
+- [Guide pratique pour Afficher des erreurs d’interface utilisateur du complément](../vsto/how-to-show-add-in-user-interface-errors.md)

@@ -1,8 +1,6 @@
 ---
-title: 'CA2230 : Utilisez le mot clé params pour les arguments de variables'
+title: 'CA2230 : Utilisez le mot clé params pour les arguments de variables'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - UseParamsForVariableArguments
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: bf98b733-4855-4110-9f16-eba5a9e79421
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8139153be130ef05c150bd9d96d4298554c1269
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b3318a9f5bd65c6b9514519936cc52e037e0c215
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866712"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55944986"
 ---
-# <a name="ca2230-use-params-for-variable-arguments"></a>CA2230 : Utilisez le mot clé params pour les arguments de variables
+# <a name="ca2230-use-params-for-variable-arguments"></a>CA2230 : Utilisez le mot clé params pour les arguments de variables
 
 |||
 |-|-|

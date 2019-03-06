@@ -1,21 +1,19 @@
 ---
 title: Raccourcis clavier pour le concepteur XAML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 40211cc7-294a-4943-85a4-941ad6418dad
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 86c7eea623401edbce5638c9385dc3a5d082548f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1d0f655fb4b5b2bb23b19f7fcaf5106307c10895
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855441"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923602"
 ---
 # <a name="keyboard-shortcuts-for-xaml-designer"></a>Raccourcis clavier pour le concepteur XAML
 

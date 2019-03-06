@@ -1,11 +1,18 @@
 ---
-ms.technology: vs-ai-tools
-ms.openlocfilehash: d5a92cd1382bf65ee19a9f41b02cc2ab0db126c7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+title: Surveiller avec TensorBoard
+author: lisawong19
+ms.author: liwong
+manager: routlaw
+ms.date: 11/13/2017
+ms.topic: conceptual
+ms.workload:
+- multiple
+ms.openlocfilehash: daf7c7fbc9ea7f9a3bfb04d6df600712b0be5237
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888020"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841059"
 ---
 # <a name="monitor-with-tensorboard"></a>Surveiller avec TensorBoard
 

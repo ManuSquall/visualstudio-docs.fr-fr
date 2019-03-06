@@ -2,22 +2,20 @@
 title: Mode d’application des chemins de recherche Python
 description: Visual Studio fournit un moyen plus spécifique de spécifier des chemins de recherche pour les environnements et les projets afin d’éviter d’utiliser des variables à l’échelle du système.
 ms.date: 11/12/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e3e6bd1ce14e1803e48a476246e3cfb8858286bb
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4befbce86d05fc9e3c52247ed71abc8c5ca5e6a6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051527"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929906"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Comment Visual Studio utilise les chemins de recherche Python
 

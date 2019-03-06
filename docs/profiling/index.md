@@ -1,23 +1,16 @@
 ---
 layout: LandingPage
 title: Mesure des performances d’application à l’aide du profilage | Microsoft Docs
-description: Apprenez à utiliser Visual Studio 2017 pour profiler les performances de vos applications, services et outils dans le langage de votre choix.
+description: "Apprenez à utiliser Visual Studio\_2017 pour profiler les performances de vos applications, services et outils dans le langage de votre choix."
 ms.custom: seodec18
 ms.topic: landing-page
-ms.technology: vs-ide-debug
 author: mikejo5000
 ms.author: mikejo
-manager: douge
-ms.openlocfilehash: 972e4b8b58229786d403451ddfd7a49a3fe4d6a0
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065543"
+manager: jillfra
 ---
 # <a name="measure-app-performance-in-visual-studio"></a>Mesurer les performances d’application dans Visual Studio
 
-Les outils de profilage et de diagnostic vous aident à diagnostiquer l’utilisation de la mémoire et du processeur et d’autres problèmes au niveau de l’application. Grâce à ces outils, vous pouvez accumuler des données (par exemple, des valeurs de variables, des appels de fonctions et des événements) pendant que vous exécutez votre application dans le débogueur. Vous pouvez examiner l’état de votre application à différents stades au cours de l’exécution de votre code. 
+Les outils de profilage et de diagnostic vous aident à diagnostiquer l’utilisation de la mémoire et du processeur et d’autres problèmes au niveau de l’application. Grâce à ces outils, vous pouvez accumuler des données (par exemple, des valeurs de variables, des appels de fonctions et des événements) pendant que vous exécutez votre application dans le débogueur. Vous pouvez examiner l’état de votre application à différents stades au cours de l’exécution de votre code.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -50,24 +43,6 @@ Les outils de profilage et de diagnostic vous aident à diagnostiquer l’utilis
                     </div>
                     <div class="cardText">
                         <h3>Bien démarrer avec les outils de diagnostic (utilisation du processeur)</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_video.svg" alt="Watch a Video on the Diagnostics Tools">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Regarder une vidéo sur les outils de diagnostic</h3>
                     </div>
                 </div>
             </div>

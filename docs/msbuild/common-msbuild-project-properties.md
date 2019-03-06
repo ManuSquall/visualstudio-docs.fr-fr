@@ -1,8 +1,6 @@
 ---
 title: Propriétés communes des projets MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 01/18/2018
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,23 +15,23 @@ helpviewer_keywords:
 ms.assetid: 9857505d-ae15-42f1-936d-6cd7fb9dd276
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe2c39fc08528886e143bd51eb1f33219b386807
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 103503b5f35d335867b4f5a9b0b76d7c3e6ed20e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921715"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610604"
 ---
 # <a name="common-msbuild-project-properties"></a>Propriétés communes des projets MSBuild
-Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui sont définies dans les fichiers projet Visual Studio ou incluses dans les fichiers *.targets* fournis par MSBuild.  
-  
- Les fichiers projet dans Visual Studio (*.csproj*, *.vbproj*, *.vcxproj* et autres) contiennent le code XML MSBuild qui s’exécute quand vous générez un projet à l’aide de l’IDE. Les projets importent généralement un ou plusieurs fichiers *.targets* pour définir leur processus de génération. Pour plus d’informations, consultez [Fichiers .targets MSBuild](../msbuild/msbuild-dot-targets-files.md).  
-  
-## <a name="list-of-common-properties-and-parameters"></a>Liste des propriétés et paramètres courants  
-  
+Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui sont définies dans les fichiers projet Visual Studio ou incluses dans les fichiers *.targets* fournis par MSBuild.
+
+ Les fichiers projet dans Visual Studio (*.csproj*, *.vbproj*, *.vcxproj* et autres) contiennent le code XML MSBuild qui s’exécute quand vous générez un projet à l’aide de l’IDE. Les projets importent généralement un ou plusieurs fichiers *.targets* pour définir leur processus de génération. Pour plus d’informations, consultez [Fichiers .targets MSBuild](../msbuild/msbuild-dot-targets-files.md).
+
+## <a name="list-of-common-properties-and-parameters"></a>Liste des propriétés et paramètres courants
+
 | Nom de propriété ou de paramètre | Description |
 |------------------------------------| - |
 | AdditionalLibPaths | Spécifie des dossiers supplémentaires dans lesquels les compilateurs doivent rechercher des assemblys de référence. |
@@ -56,17 +54,17 @@ Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui s
 | CscToolPath | Chemin de *csc.exe*, le compilateur [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. |
 | CustomBeforeMicrosoftCommonTargets | Nom d'un fichier projet ou fichier de cibles qui doit être importé automatiquement avant l'importation des cibles communes. |
 | DebugSymbols | Valeur booléenne qui indique si les symboles sont générés par la procédure.<br /><br /> En spécifiant **/p:DebugSymbols=false** en ligne de commande, vous désactivez la génération de fichiers de symboles de la base de données du programme (*.pdb*). |
+| DebugType | Définit le niveau d'informations de débogage que vous souhaitez générer. Les valeurs valides sont "full", "pdbonly" et "none". |
 | DefineConstants | Définit des constantes conditionnelles du compilateur. Les paires symbole/valeur sont séparées par des points-virgules et spécifiées avec la syntaxe suivante :<br /><br /> *symbole1 = valeur1 ; symbole2 = valeur2*<br /><br /> Cette propriété est équivalente au commutateur `/define` du compilateur. |
 | DefineDebug | Valeur booléenne qui indique si vous souhaitez que la constante DEBUG soit définie. |
 | DefineTrace | Valeur booléenne qui indique si vous souhaitez que la constante TRACE soit définie. |
-| DebugType | Définit le niveau d'informations de débogage que vous souhaitez générer. Les valeurs valides sont "full", "pdbonly" et "none". |
 | DelaySign | Valeur booléenne qui indique si vous souhaitez différer la signature de l'assembly plutôt que le signer complètement. |
 | Déterministe | Valeur booléenne qui indique si le compilateur doit produire des assemblys identiques pour des entrées identiques. Ce paramètre correspond au commutateur `/deterministic` des compilateurs *vbc.exe* et *csc.exe*. |
 | DisabledWarnings | Supprime les avertissements spécifiés. Seule la partie numérique de l'identificateur d'avertissement doit être spécifiée. Les différents avertissements sont séparés par des points-virgules. Ce paramètre correspond au commutateur `/nowarn` du compilateur *vbc.exe*. |
 | DisableFastUpToDateCheck | Valeur booléenne qui s'applique uniquement à [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Le gestionnaire de génération [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utilise un processus appelé FastUpToDateCheck pour déterminer si un projet doit être régénéré pour être à jour. Il est plus rapide d'utiliser ce processus que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Le fait d’affecter à la propriété DisableFastUpToDateCheck la valeur `true` vous permet d’ignorer le gestionnaire de build [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] et de le forcer à utiliser [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pour déterminer si le projet est à jour. |
 | DocumentationFile | Nom du fichier généré en tant que fichier de documentation XML. Ce nom inclut uniquement le nom du fichier et ne comporte aucune information de chemin d'accès. |
 | ErrorReport | Indique comment la tâche du compilateur doit signaler les erreurs internes du compilateur. Les valeurs valides sont "prompt", "send" et "none". Cette propriété est équivalente au commutateur `/errorreport` du compilateur. |
-| ExcludeDeploymentUrl | La [tâche GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md) ajoute une balise deploymentProvider au manifeste de déploiement si le fichier projet contient l’un des éléments suivants :<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> En utilisant ExcludeDeploymentUrl, toutefois, vous pouvez empêcher l’étiquette deploymentProvider d’être ajoutée au manifeste de déploiement même si l’une des URL ci-dessus est spécifiée. Pour cela, ajoutez la propriété suivante à votre fichier projet :<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` <br /><br />**Remarque :** ExcludeDeploymentUrl n’est pas exposé dans l’IDE [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ; pour le définir, vous devez modifier manuellement le fichier projet. La définition de cette propriété n'affecte pas la publication dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Autrement dit, la balise deploymentProvider est encore ajoutée à l'URL spécifiée par PublishUrl. |
+| ExcludeDeploymentUrl | La [tâche GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md) ajoute une balise deploymentProvider au manifeste de déploiement si le fichier projet contient l’un des éléments suivants :<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> En utilisant ExcludeDeploymentUrl, toutefois, vous pouvez empêcher l’étiquette deploymentProvider d’être ajoutée au manifeste de déploiement même si l’une des URL ci-dessus est spécifiée. Pour cela, ajoutez la propriété suivante à votre fichier projet :<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` <br /><br />**Remarque :**  ExcludeDeploymentUrl n'est pas exposé dans l'IDE de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] et peut être défini uniquement en modifiant manuellement le fichier projet. La définition de cette propriété n'affecte pas la publication dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Autrement dit, la balise deploymentProvider est encore ajoutée à l'URL spécifiée par PublishUrl. |
 | FileAlignment | Spécifie, en octets, où les sections du fichier de sortie doivent être alignées. Les valeurs valides sont 512, 1024, 2048, 4096, 8192. Cette propriété est équivalente au commutateur `/filealignment` du compilateur. |
 | FrameworkPathOverride | Spécifie l’emplacement de *mscorlib.dll* et de *microsoft.visualbasic.dll*. Ce paramètre est équivalent au commutateur `/sdkpath` du compilateur *vbc.exe*. |
 | GenerateDocumentation | (Visual Basic uniquement) Paramètre booléen qui indique si la documentation est générée par la build. Si sa valeur est `true`, les informations de documentation sont générées et placées dans un fichier *.xml* avec le nom de la bibliothèque ou du fichier exécutable créé par la tâche de génération. |
@@ -87,9 +85,11 @@ Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui s
 | OutputPath | Spécifie le chemin du répertoire de sortie, relatif au répertoire de projet, par exemple *bin\Debug*. |
 | OutputType | Spécifie le format de fichier du fichier de sortie. Ce paramètre peut prendre l'une des valeurs suivantes :<br /><br /> -   Library. Crée une bibliothèque de code. (Valeur par défaut)<br />-   Exe. Crée une application console.<br />-   Module. Crée un module.<br />-   Winexe. Crée un programme Windows.<br /><br /> Cette propriété est équivalente au commutateur `/target` du compilateur *vbc.exe*. |
 | OverwriteReadOnlyFiles | Valeur booléenne qui indique si vous souhaitez permettre à la génération de remplacer les fichiers en lecture seule ou de générer une erreur. |
+| PathMap | Valeur qui indique comment mapper les chemins d’accès physiques avec les noms de chemins d’accès sources générés en sortie par le compilateur. Cette propriété est équivalente au commutateur `/pathmap` du compilateur *csc.exe*. |
 | PdbFile | Nom du fichier *.pdb* que vous émettez. Cette propriété est équivalente au commutateur `/pdb` du compilateur *csc.exe*. |
 | Plateforme | Système d'exploitation pour lequel vous générez la cible. Les valeurs valides sont « Any CPU », « x86 » et « x64 ». |
 | ProduceReferenceAssembly | Valeur booléenne qui, lorsqu’elle est définie sur `true`, permet la production d’[assemblys de référence](https://github.com/dotnet/roslyn/blob/master/docs/features/refout.md) pour l’assembly actuel. `Deterministic` doit être `true` lors de l’utilisation de cette fonctionnalité. Cette propriété correspond au commutateur `/refout` des compilateurs *vbc.exe* et *csc.exe*. |
+| ProduceOnlyReferenceAssembly | Valeur booléenne qui spécifie que le compilateur doit seulement émettre un assembly de référence, plutôt que le code compilé. Non utilisable avec `ProduceReferenceAssembly`.  Cette propriété correspond au commutateur `/refonly` des compilateurs *vbc.exe* et *csc.exe*. |
 | RemoveIntegerChecks | Valeur booléenne indiquant s'il convient de désactiver les contrôles d'erreurs de dépassement sur les entiers. La valeur par défaut est `false`. Cette propriété est équivalente au commutateur `/removeintchecks` du compilateur *vbc.exe*. |
 | SGenUseProxyTypes | Valeur booléenne qui indique si les types de proxy doivent être générés par *SGen.exe*.<br /><br /> La cible SGen utilise cette propriété pour définir l'indicateur UseProxyTypes. Cette propriété a true comme valeur par défaut et aucune option d'interface utilisateur ne permet de modifier cela. Pour générer l’assembly de sérialisation pour les types non-webservice, ajoutez cette propriété au fichier projet et affectez-lui la valeur false avant d’importer *Microsoft.Common.Targets* ou *C#/VB.targets*. |
 | SGenToolPath | Chemin de l’outil facultatif qui indique où obtenir *SGen.exe* quand la version actuelle de *SGen.exe* est remplacée. |
@@ -128,6 +128,6 @@ Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui s
 | WarningsNotAsErrors | Spécifie une liste d'avertissements à ne pas traiter comme des erreurs. Ce paramètre est équivalent au commutateur `/warnaserror` du compilateur. |
 | Win32Manifest | Nom du fichier manifeste qui doit être incorporé dans l'assembly final. Ce paramètre est équivalent au commutateur `/win32Manifest` du compilateur. |
 | Win32Resource | Nom de fichier de la ressource Win32 à incorporer dans l'assembly final. Ce paramètre est équivalent au commutateur `/win32resource` du compilateur. |
-  
-## <a name="see-also"></a>Voir aussi  
- [Éléments communs des projets MSBuild](../msbuild/common-msbuild-project-items.md)
+
+## <a name="see-also"></a>Voir aussi
+- [Éléments communs des projets MSBuild](../msbuild/common-msbuild-project-items.md)

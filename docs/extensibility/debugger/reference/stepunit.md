@@ -1,10 +1,7 @@
 ---
 title: STEPUNIT | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - STEPUNIT
 helpviewer_keywords:
@@ -12,58 +9,55 @@ helpviewer_keywords:
 ms.assetid: cb8441f2-f744-4e73-acfe-ae8542df9649
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a88cb7126166462e64680938eb5f1b0d456a75f4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0f1d6742b28badf39a5c9273d2891c2da9a9d5f0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901110"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56712123"
 ---
 # <a name="stepunit"></a>STEPUNIT
-Spécifie l’unité de progression pour l’exécution pas à pas.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-enum enum_STEPUNIT {   
-   STEP_STATEMENT   = 0,  
-   STEP_LINE        = 1,  
-   STEP_INSTRUCTION = 2  
-};  
-typedef DWORD STEPUNIT;  
-```  
-  
-```csharp  
-enum enum_STEPUNIT {   
-   STEP_STATEMENT   = 0,  
-   STEP_LINE        = 1,  
-   STEP_INSTRUCTION = 2  
-};  
-```  
-  
-## <a name="members"></a>Membres  
- STEP_STATEMENT  
- Étapes par instruction.  
-  
- STEP_LINE  
- Étapes en ligne.  
-  
- STEP_INSTRUCTION  
- Étapes par instruction.  
-  
-## <a name="remarks"></a>Notes  
- Passé en tant qu’argument à la [étape](../../../extensibility/debugger/reference/idebugprocess3-step.md) (méthode).  
-  
-## <a name="requirements"></a>Configuration requise  
- En-tête : msdbg.h  
-  
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
-  
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Voir aussi  
- [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)
+Spécifie l’unité de progression pour l’exécution pas à pas.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+enum enum_STEPUNIT { 
+   STEP_STATEMENT   = 0,
+   STEP_LINE        = 1,
+   STEP_INSTRUCTION = 2
+};
+typedef DWORD STEPUNIT;
+```
+
+```csharp
+enum enum_STEPUNIT { 
+   STEP_STATEMENT   = 0,
+   STEP_LINE        = 1,
+   STEP_INSTRUCTION = 2
+};
+```
+
+## <a name="members"></a>Membres
+ Étapes de STEP_STATEMENT par instruction.
+
+ Étapes de STEP_LINE par ligne.
+
+ Étapes de STEP_INSTRUCTION par instruction.
+
+## <a name="remarks"></a>Notes
+ Passé en tant qu’argument à la [étape](../../../extensibility/debugger/reference/idebugprocess3-step.md) (méthode).
+
+## <a name="requirements"></a>Spécifications
+ En-tête : msdbg.h
+
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Voir aussi
+- [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)

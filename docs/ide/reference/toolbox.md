@@ -1,8 +1,6 @@
 ---
 title: Fenêtre Boîte à outils
 ms.date: 01/18/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs.toolbox.general
@@ -12,15 +10,15 @@ helpviewer_keywords:
 - custom controls [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef01cb4bb9b9ee3326d3d955aec9c41f9b15b144
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1331f416d95b56d466b6e2fe268ed7db071d66da
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067853"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925396"
 ---
 # <a name="toolbox"></a>Boîte à outils
 
@@ -41,7 +39,7 @@ La version .NET Framework que cible votre projet détermine également les contr
 
 Par défaut, **Boîte à outils** est réduite le long du côté gauche de l’IDE de Visual Studio et apparaît quand le curseur se trouve au-dessus d’elle. Vous pouvez épingler **Boîte à outils** (en cliquant sur l’icône **Épingler** dans la barre d’outils de Boîte à outils) afin que l’application demeure ouverte quand vous déplacez le curseur. Vous pouvez également annuler l’ancrage de la fenêtre **Boîte à outils** et la faire glisser n’importe où à l’écran. Vous pouvez masquer **Boîte à outils**, l’ancrer et annuler son ancrage ; pour ce faire, cliquez avec le bouton droit sur la barre d’outils de Boîte à outils, puis sélectionnez l’option concernée.
 
-Vous pouvez réorganiser les éléments d’un onglet de **Boîte à outils** ou ajouter des onglets et des éléments personnalisés à l’aide des commandes suivantes du menu contextuel :
+Vous pouvez réorganiser les éléments d’un onglet de **Boîte à outils** ou ajouter des onglets et des éléments personnalisés avec les commandes suivantes du menu contextuel (clic droit) :
 
 - **Renommer un élément** : renomme l’élément sélectionné.
 

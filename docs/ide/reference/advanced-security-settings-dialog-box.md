@@ -1,8 +1,6 @@
 ---
 title: Paramètres de sécurité avancés, boîte de dialogue
 ms.date: 06/27/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs.err.debug_in_zone_no_hostproc
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2e7aefe9-6d20-4f3e-b257-aee1ebcc6f5d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dce482f53f9f3e6dd0b57d6cb905f97cdfaa601a
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9c4e28cb084c82690059293fc988204201242abf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180514"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919402"
 ---
 # <a name="advanced-security-settings-dialog-box"></a>Paramètres de sécurité avancés, boîte de dialogue
 

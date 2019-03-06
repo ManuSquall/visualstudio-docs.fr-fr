@@ -1,23 +1,21 @@
 ---
-title: 'Procédure : utiliser la fonction de recherche dans le Concepteur de flux de travail'
+title: 'Procédure : Utiliser la recherche dans le concepteur de workflow'
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: f42d3115-2ed2-4941-8f1e-92dac41c30fa
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ecf4839cec08e9ffb0419aebcff9da145214b117
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b1d29c4398e6b6c377ab493c495951f942d15965
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49943061"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942386"
 ---
-# <a name="how-to-use-search-in-the-workflow-designer"></a>Procédure : utiliser la fonction de recherche dans le Concepteur de flux de travail
+# <a name="how-to-use-search-in-the-workflow-designer"></a>Procédure : Utiliser la recherche dans le concepteur de workflow
 
 Pour faciliter la création de flux de travail plus volumineuses et complexes, vous pouvez rechercher dans le Concepteur de flux de travail pour rechercher des éléments par mot clé. Notez que le concepteur ne prend pas en charge l'activité Replace.
 

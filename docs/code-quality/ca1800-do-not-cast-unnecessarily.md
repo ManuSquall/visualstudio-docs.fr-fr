@@ -1,8 +1,6 @@
 ---
 title: "CA1800 : N'effectuez pas de cast inutilement"
 ms.date: 10/26/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1800
@@ -13,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: b79a010a-6627-421e-8955-6007e32fa808
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - VB
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a1db0f421f72e5b63b14c95a706b738bea1a4174
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: a13aeeffbc77e4f40ff886c0d890f181697fcc11
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550516"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950680"
 ---
 # <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800 : N'effectuez pas de cast inutilement
 

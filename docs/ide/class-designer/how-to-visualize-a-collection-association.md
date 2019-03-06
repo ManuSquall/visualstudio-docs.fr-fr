@@ -1,8 +1,6 @@
 ---
-title: Guide pratique pour visualiser une association de collections (Concepteur de classes)
+title: 'Procédure : Visualiser une association de collections (Concepteur de classes)'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.collectionassociationline
@@ -14,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: 54e39838-2fc9-4dc2-85b6-7e88a743108e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24dc8b21fbdacb5da2795b215cd8503b08cf3449
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: e734b84bb8c386c60f3fef9061d74b8b31277cec
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33995879"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910947"
 ---
-# <a name="how-to-visualize-a-collection-association-in-class-designer"></a>Guide pratique pour visualiser une association de collections dans le Concepteur de classes
+# <a name="how-to-visualize-a-collection-association-in-class-designer"></a>Procédure : Visualiser une association de collections dans le Concepteur de classes
 
 Les propriétés et les champs qui sont des collections d’autres types peuvent être affichés sur le diagramme de classes en tant qu’association de collection. Contrairement à une association normale, qui affiche un champ ou une propriété sous la forme d’une ligne reliant la classe propriétaire au type du champ, une association de collection s’affiche sous la forme d’une ligne reliant la classe propriétaire au type collecté.
 
@@ -42,4 +40,3 @@ La propriété ou le champ s’affiche sous la forme d’une ligne reliée au ty
 
 - [Guide pratique pour créer des associations entre des types](how-to-create-associations-between-types.md)
 - [Conception des classes et des types](designing-and-viewing-classes-and-types.md)
-- [Affichage des types et des relations](viewing-types-and-relationships.md)

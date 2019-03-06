@@ -2,21 +2,19 @@
 title: Symboles de débogage en mode mixte Python/C++
 description: Guide pratique sur la capacité de Visual Studio à charger des symboles pour effectuer le débogage en mode mixte C++ et Python.
 ms.date: 11/12/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 62e3727b36e6ba3231ee12388e1be5bde40d080a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: de2d4832a1c45cbfd2b6f3893dd2b011151d9e48
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062688"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951340"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Installer les symboles de débogage pour les interpréteurs Python
 
@@ -52,7 +50,7 @@ Si vous avez téléchargé les symboles séparément, suivez les étapes ci-dess
 
 1. Sélectionnez le menu **Outils** > **Options**, puis accédez à **Débogage** > **Symboles**.
 
-1. Sélectionnez le bouton **Ajouter** dans la barre d’outils (illustrée ci-dessous), entrez le dossier où vous avez développé les symboles téléchargés (à savoir le dossier contenant *python.pdb*, par exemple le dossier *c:\python34\Symbols* illustré ci-dessous), puis sélectionnez **OK**. 
+1. Sélectionnez le bouton **Ajouter** dans la barre d’outils (illustrée ci-dessous), entrez le dossier où vous avez développé les symboles téléchargés (à savoir le dossier contenant *python.pdb*, par exemple le dossier *c:\python34\Symbols* illustré ci-dessous), puis sélectionnez **OK**.
 
     ![Options des symboles de débogueur en mode mixte](media/mixed-mode-debugging-symbols.png)
 
@@ -63,9 +61,9 @@ Si vous avez téléchargé les symboles séparément, suivez les étapes ci-dess
 
 ## <a name="official-distributions"></a>Distributions officielles
 
-| Version Python | Téléchargements | 
-| --- | --- | 
-| 3.5 et ultérieur | Installez les symboles à l’aide du programme d’installation de Python. | 
+| Version Python | Téléchargements |
+| --- | --- |
+| 3.5 et ultérieur | Installez les symboles à l’aide du programme d’installation de Python. |
 | 3.4.4 | [32 bits](https://www.python.org/ftp/python/3.4.4/python-3.4.4-pdb.zip) - [64 bits](https://www.python.org/ftp/python/3.4.4/python-3.4.4.amd64-pdb.zip) |
 | 3.4.3 | [32 bits](https://www.python.org/ftp/python/3.4.3/python-3.4.3-pdb.zip) - [64 bits](https://www.python.org/ftp/python/3.4.3/python-3.4.3.amd64-pdb.zip) |
 | 3.4.2 | [32 bits](https://www.python.org/ftp/python/3.4.2/python-3.4.2-pdb.zip) - [64 bits](https://www.python.org/ftp/python/3.4.2/python-3.4.2.amd64-pdb.zip) |

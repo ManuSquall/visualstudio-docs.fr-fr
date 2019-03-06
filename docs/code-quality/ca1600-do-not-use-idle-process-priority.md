@@ -1,8 +1,6 @@
 ---
 title: 'CA1600 : Ne pas utiliser de priorité de processus inactif'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - DoNotUseIdleProcessPriority
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9b0d073b-78b6-41be-8ef3-14692a735283
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c1db098a485002d97aaf986fbac95e35519351b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a1774b3feb2da4939420bf75506892aac6dedd72
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924675"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955789"
 ---
 # <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600 : Ne pas utiliser de priorité de processus inactif
 

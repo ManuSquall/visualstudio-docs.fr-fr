@@ -1,23 +1,21 @@
 ---
 title: Déboguer du code Python
 description: Visual Studio fournit de riches fonctionnalités de débogage du code Python, y compris la définition de points d’arrêt, l’exécution pas à pas, l’inspection des valeurs, la gestion des exceptions et le débogage dans la fenêtre interactive.
-ms.date: 10/10/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 01/07/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0e4cc2ff43b59fff0aac70d9cc13a0a00662e209
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5bc1f41e683b8bf58486646b5beb2ae4de3d4049
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068433"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954359"
 ---
 # <a name="debug-your-python-code"></a>Déboguer votre code Python
 
@@ -28,10 +26,6 @@ Consultez également les articles ci-après concernant le débogage propre à un
 - [Débogage à distance Linux](debugging-python-code-on-remote-linux-machines.md)
 - [Débogage Python/C++ en mode mixte](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - [Symboles de débogage en mode mixte](debugging-symbols-for-mixed-mode-c-cpp-python.md)
-
-|   |   |
-|---|---|
-| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | [Regardez une vidéo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Debugging-Python-Ep5dp5LWE_3805918567) pour obtenir une démonstration du débogage de Python (3 min32s).|
 
 <a name="debugging-without-a-project"></a>
 
@@ -84,7 +78,7 @@ Une fois arrêté au niveau d’un point d’arrêt, vous disposez de différent
 
 ### <a name="inspect-and-modify-values"></a>Inspecter et modifier les valeurs
 
-Lorsque vous êtes arrêté dans le débogueur, vous pouvez inspecter et modifier les valeurs des variables. Vous pouvez également utiliser la Fenêtre **Espion** pour surveiller des variables spécifiques, ainsi que des expressions personnalisées. (Pour obtenir des informations générales, consultez la section [Inspect Variables](../debugger/getting-started-with-the-debugger.md#inspect-variables-with-the-autos-and-locals-windows) (Inspecter des variables).)
+Lorsque vous êtes arrêté dans le débogueur, vous pouvez inspecter et modifier les valeurs des variables. Vous pouvez également utiliser la Fenêtre **Espion** pour surveiller des variables spécifiques, ainsi que des expressions personnalisées. (Pour obtenir des informations générales, consultez la section [Inspect Variables](../debugger/debugger-feature-tour.md#inspect-variables-with-the-autos-and-locals-windows) (Inspecter des variables).)
 
 Pour visualiser une valeur à l’aide des **DataTips**, il vous suffit de positionner le pointeur de la souris sur une variable quelconque dans l’éditeur. Vous pouvez alors cliquer sur cette valeur si vous souhaitez la modifier :
 
@@ -252,7 +246,7 @@ Les étapes suivantes permettent le débogage dans la session active de Visual S
 1. Entrez la commande suivante :
 
     ```ps
-    DebugAdapterHost.Logging /On
+    DebugAdapterHost.Logging /On /OutputWindow
     ```
 
 1. Commencez le débogage et suivez toutes les étapes nécessaires pour reproduire votre problème. Pendant ce temps, les journaux de débogage s’affichent dans la Fenêtre **Sortie** sous **Journaux de l’hôte d’adaptateur de débogage**. Vous pouvez alors copier les journaux de cette fenêtre et les coller dans un problème GitHub, un e-mail, etc.
@@ -262,7 +256,7 @@ Les étapes suivantes permettent le débogage dans la session active de Visual S
 1. Si Visual Studio se bloque ou que vous ne parvenez pas à accéder à la Fenêtre **Sortie**, redémarrez Visual Studio, ouvrez une Fenêtre Commande et entrez la commande suivante :
 
     ```ps
-    DebugAdapterHost.Logging /On /OutputWindow
+    DebugAdapterHost.Logging /On
     ```
 
 1. Commencez le débogage et reproduisez votre problème. Les journaux du débogueur se trouvent dans `%temp%\DebugAdapterHostLog.txt`.

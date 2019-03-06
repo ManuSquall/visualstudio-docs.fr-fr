@@ -7,17 +7,15 @@ helpviewer_keywords:
 - layer models, deploying extensions
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 98697642135627173c5a6f31e90bf1dd1d0caeaf
-ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
+ms.openlocfilehash: 594f4118f8c6876857b862d6423180403f4f96c6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53307750"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55915619"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Déployer une extension de modèle de couche
 
@@ -63,7 +61,7 @@ Serveurs Team Foundation Server n’ont pas normalement Visual Studio est instal
 
     -   Si vous avez configuré la build s’exécute en mode interactif en tant qu’un utilisateur particulier, vous pouvez installer uniquement pour cet utilisateur :
 
-         %LocalAppData%\Microsoft\VisualStudio\\[version] \Extensions\Microsoft
+         %LocalAppData%\Microsoft\VisualStudio\\[version]\Extensions\Microsoft
 
 2.  Développez chaque fichier VSIX dans un dossier au même emplacement :
 

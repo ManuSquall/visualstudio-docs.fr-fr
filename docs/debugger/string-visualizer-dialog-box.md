@@ -1,8 +1,6 @@
 ---
 title: Afficher les chaînes dans un visualiseur de chaîne | Microsoft Docs
-ms.custom: ''
 ms.date: 10/10/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.stringviewer
@@ -19,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 080fd8f1-72b0-461f-8451-3c84d5dc51df
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb447a29ea669dbea3a68312884760f8984cc2de
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 88ad69182a422d1fa1ee04eb35f973d0d1f7ea1c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388554"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54968893"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Afficher les chaînes dans un visualiseur de chaîne dans Visual Studio
 

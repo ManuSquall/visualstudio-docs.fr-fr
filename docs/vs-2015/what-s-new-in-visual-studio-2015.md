@@ -3,10 +3,7 @@ title: Nouveautés de Visual Studio 2015 │ Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.StartPage.WhatsNew
 helpviewer_keywords:
@@ -16,13 +13,13 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f1d2b37a988f0078149228cce808397f9fb915d1
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 936a664dfeb063f84218c469b160cec761a0e468
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062436"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844137"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Nouveautés de Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -59,7 +56,7 @@ Pour en savoir plus sur les nombreuses améliorations et nouvelles fonctionnalit
  Visual Studio Tools pour Apache Cordova est le fruit d'une étroite collaboration entre Microsoft et la communauté Open Source d'Apache Cordova. Ces outils permettent le développement multiplateforme pour appareils mobiles en HTML, CSS et JavaScript (ou TypeScript). Vous pouvez cibler des plateformes Android, iOS et Windows avec une base de code unique, et tirer parti de la richesse de l'IDE de Visual Studio, notamment avec JavaScript IntelliSense, l'explorateur DOM, la console JavaScript, les points d'arrêt, les espions, les variables locales, Uniquement mon code, etc.  Avec Visual Studio Tools pour Apache Cordova, vos applications ont accès aux fonctionnalités natives des appareils sur toutes les plateformes grâce à des plug-ins qui fournissent une API JavaScript commune. Pour commencer, consultez [bien démarrer avec Visual Studio Tools pour Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42).
 
 ### <a name="cross-platform-mobile-games-in-c-with-unity"></a>Jeux mobiles multiplateformes en C# avec Unity
- Unity est une plateforme largement utilisée pour le développement de jeux 2D et 3D multiplateforme. Vous pouvez écrire votre jeu en C# et l'exécuter de façon native sur Android, iOS, Windows Phone et de nombreuses autres plateformes. Visual Studio Tools for Unity est une extension qui intègre Unity à l'IDE de Visual Studio. Avec cette extension, vous obtenez toutes les fonctionnalités de l'IDE de Visual Studio et de son débogueur, en plus des fonctionnalités de productivité conçues pour les développeurs Unity. Visual Studio Tools for Unity 2.0 Preview 2 ajoute la prise en charge de Visual Studio 2015 et d'un certain nombre de nouvelles fonctionnalités, notamment une meilleure visualisation des objets dans les fenêtres Variables locales et Espion. Microsoft a récemment acquis SyntaxTree, la société des créateurs de Visual Studio Tools for Unity. Pour télécharger Visual Studio Tools for Unity 2.0 Preview 2 et pour plus d’informations sur Visual Studio Tools for Unity, consultez [Visual Studio Tools for Unity 2.0](http://Aka.ms/vstu).
+ Unity est une plateforme largement utilisée pour le développement de jeux 2D et 3D multiplateforme. Vous pouvez écrire votre jeu en C# et l'exécuter de façon native sur Android, iOS, Windows Phone et de nombreuses autres plateformes. Visual Studio Tools for Unity est une extension qui intègre Unity à l'IDE de Visual Studio. Avec cette extension, vous obtenez toutes les fonctionnalités de l'IDE de Visual Studio et de son débogueur, en plus des fonctionnalités de productivité conçues pour les développeurs Unity. Visual Studio Tools for Unity 2.0 Preview 2 ajoute la prise en charge de Visual Studio 2015 et d'un certain nombre de nouvelles fonctionnalités, notamment une meilleure visualisation des objets dans les fenêtres Variables locales et Espion. Microsoft a récemment acquis SyntaxTree, la société des créateurs de Visual Studio Tools for Unity. Pour télécharger Visual Studio Tools for Unity 2.0 Preview 2 et pour plus d’informations sur Visual Studio Tools for Unity, consultez [Visual Studio Tools for Unity 2.0](https://aka.ms/vstu).
 
 ### <a name="cross-platform-apps-and-libraries-for-native-c"></a>Applications et bibliothèques multiplateformes pour du code C++ natif
  C++ est un langage disponible en mode natif sur la plupart des appareils mobiles. Vous pouvez l'utiliser pour écrire des bibliothèques de code partagé multiplateformes qui peuvent être générées pour plusieurs plateformes mobiles cibles. Vous pouvez même créer des applications mobiles tout en C++. Visual C++ offre les outils nécessaires pour modifier, générer, déployer et déboguer votre code multiplateforme. Outre les modèles pour les applications Windows, vous pouvez créer des projets à partir de modèles pour des applications Android Native Activity, des applications iOS ou des projets de bibliothèque de code partagé pour plusieurs plateformes qui incluent des applications hybrides Xamarin. La technologie IntelliSense spécifique à la plateforme vous permet d'explorer les API et de générer le code approprié pour des cibles Android, iOS ou Windows. Vous pouvez configurer votre build pour les plateformes natives x86 ou ARM et déployer votre code dans un simulateur iOS ou sur des appareils iOS sur un Mac connecté au réseau, sur des appareils Android directement connectés, ou exploiter les performances de l'émulateur Microsoft Visual Studio pour Android à des fins de test. Vous pouvez définir des points d'arrêt, espionner des variables, consulter la pile et exécuter le code C++ pas à pas dans le débogueur Visual Studio. Vous pouvez partager tout le code (hormis le plus spécifique à une plateforme) entre plusieurs plateformes d'applications, puis générer l'ensemble avec une seule solution dans Visual Studio.
@@ -71,7 +68,7 @@ Pour en savoir plus sur les nombreuses améliorations et nouvelles fonctionnalit
 
  ![Plateforme Windows universelle](./cross-platform/media/uwp-coreextensions.png "UWP_CoreExtensions")
 
- Exécutez votre application sur un téléphone Windows 10, un poste de travail Windows 10 ou une console Xbox. C’est le même package d’application ! Avec l’introduction d’un noyau unifié unique dans Windows 10, le même package d’application peut s’exécuter sur toutes les plateformes. Plusieurs plateformes ont des kits de développement logiciel (SDK) Extension que vous pouvez ajouter à votre application pour tirer parti des comportements spécifiques à une plateforme. Par exemple, un SDK d’extension pour mobile gère le comportement du bouton Précédent sur un Windows Phone. Si vous référencez un SDK d’extension dans votre projet, il vous suffit ensuite d’ajouter des vérifications à l’exécution pour vérifier si ce SDK est disponible sur cette plateforme. C’est comme cela que vous pouvez utiliser le même package d’application pour toutes les plateformes !
+ Exécutez votre application sur un téléphone Windows 10, un poste de travail Windows 10 ou une console Xbox. C’est le même package d’application ! Avec l’introduction d’un noyau unifié unique dans Windows 10, le même package d’application peut s’exécuter sur toutes les plateformes. Plusieurs plateformes ont des kits de développement logiciel (SDK) Extension que vous pouvez ajouter à votre application pour tirer parti des comportements spécifiques à une plateforme. Par exemple, un SDK d’extension pour mobile gère le comportement du bouton Précédent sur un Windows Phone. Si vous référencez un SDK d’extension dans votre projet, il vous suffit ensuite d’ajouter des vérifications à l’exécution pour vérifier si ce SDK est disponible sur cette plateforme. C’est comme cela que vous pouvez utiliser le même package d’application pour toutes les plateformes !
 
  Utilisez le langage C#, Visual Basic, C++ ou JavaScript pour créer des [applications Windows universelles](http://msdn.microsoft.com/library/dn975273.aspx).
 
@@ -82,7 +79,7 @@ Pour en savoir plus sur les nombreuses améliorations et nouvelles fonctionnalit
  Visual Studio 2015 continue à prendre en charge le développement d'applications de bureau classiques et d'applications du Windows Store. Visual Studio évolue parallèlement à Windows.  Dans Visual Studio 2015, les bibliothèques et langages du .NET et C++ bénéficient d'avancées très importantes qui s'appliquent à toutes les versions de Windows.
 
 #### <a name="the-net-framework"></a>.NET Framework
- Microsoft [!INCLUDE[net_v46](./includes/net-v46-md.md)] offre environ 150 nouvelles API et 50 API mises à jour pour prendre en charge davantage de scénarios. Par exemple, d'autres collections implémentent désormais <xref:System.Collections.Generic.IReadOnlyCollection%601>, ce qui les rend plus faciles à utiliser. Par ailleurs, la technologie ASP.NET 5 mentionnée précédemment offre une plateforme .NET adaptée à la création d'applications cloud modernes.
+ Microsoft [!INCLUDE[net_v46](./includes/net-v46-md.md)] offre environ 150 nouvelles API et 50 API mises à jour pour prendre en charge davantage de scénarios. Par exemple, d’autres collections implémentent désormais <xref:System.Collections.Generic.IReadOnlyCollection%601>, ce qui les rend plus faciles à utiliser. Par ailleurs, la technologie ASP.NET 5 mentionnée précédemment offre une plateforme .NET adaptée à la création d'applications cloud modernes.
 
  Les applications du Windows Store écrites en C# qui ciblent le .NET Framework peuvent à présent tirer parti de .NET Native, qui compile les applications en code natif plutôt qu'en IL. [!INCLUDE[net_v46](./includes/net-v46-md.md)] ajoute également RyuJIT, un compilateur juste-à-temps (JIT) 64 bits.
 
@@ -112,7 +109,7 @@ Pour en savoir plus sur les nombreuses améliorations et nouvelles fonctionnalit
 
 2. Azure Storage
 
-3. Office 365 (messages électroniques, contacts, calendriers, fichiers, utilisateurs et groupes)
+3. Office 365 (e-mails, contacts, calendriers, fichiers, utilisateurs et groupes)
 
 4. Salesforce
 
@@ -137,14 +134,14 @@ Pour en savoir plus sur les nombreuses améliorations et nouvelles fonctionnalit
 -   **C++ / Android**. Utilisez les modèles de [Visual C++ pour le développement mobile multiplateforme](http://msdnstage.redmond.corp.microsoft.com/library/dn872463\(v=vs.140\).aspx) , ainsi que les outils tiers, tels que [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) , pour créer des applications natives pour Windows et Android.
 
 ## <a name="debugging-and-diagnostics"></a>Débogage et diagnostics
- Pour plus d’informations sur les nouvelles fonctionnalités de débogage, consultez [What’s New for the Debugger in Visual Studio 2015](./debugger/what’s-new-for-the-debugger-in-visual-studio-2015.md).
+ Pour plus d’informations sur les nouvelles fonctionnalités de débogage, consultez [What’s New for the Debugger in Visual Studio 2015](/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio-2015?view=vs-2015).
 
  Pour plus d’informations sur les nouveautés introduite dans les diagnostics, consultez [What ' s New in des outils de profilage](./profiling/what-s-new-in-profiling-tools.md).
 
  Voici une liste d'outils nouveaux ou améliorés qui effectuent différents types d'analyses et de diagnostics sur votre code :
 
 ### <a name="perftips"></a>Conseils sur les performances
- Les conseils pour les performances indiquent le temps d'exécution des méthodes durant le débogage, ce qui vous permet d'identifier rapidement les goulots d'étranglement, sans avoir à invoquer le profileur. Pour commencer, consultez [PerfTips : informations sur les performances at-a-glance while Debugging with Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
+ Les conseils pour les performances indiquent le temps d'exécution des méthodes durant le débogage, ce qui vous permet d'identifier rapidement les goulots d'étranglement, sans avoir à invoquer le profileur. Pour commencer, consultez [Conseils sur les performances : Performance Information at-a-glance while Debugging with Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
 
 ### <a name="error-list"></a>Liste d'erreurs
  La liste d'erreurs prend désormais en charge le filtrage sur n'importe quelle colonne. Elle affiche aussi une vue dynamique des erreurs, des avertissements et de l'analyse du code dans l'ensemble de votre solution C# ou Visual Basic, au fur et à mesure que vous tapez, même quand un changement de code produit des milliers d'avertissements. La nouvelle liste d'erreurs est compatible avec les usages existants. Pour plus d'informations, consultez [Error List Window](./ide/reference/error-list-window.md).
@@ -160,7 +157,7 @@ Pour en savoir plus sur les nombreuses améliorations et nouvelles fonctionnalit
 ## <a name="enjoy-these-additional-ide-improvements"></a>Profiter des améliorations supplémentaires de l'IDE
 
 ### <a name="synchronized-settings-roaming-settings"></a>Paramètres synchronisés (paramètres d'itinérance)
- Visual Studio 2013 a introduit les paramètres synchronisés pour certains des paramètres les plus souvent configurés, par exemple l'éditeur de texte, les combinaisons de touches, les thèmes, les polices et couleurs, le démarrage et les alias d'environnement.  Visual Studio 2015 améliore cette expérience en synchronisant davantage de paramètres, et en les synchronisant pour l'ensemble des applications de la famille Visual Studio (par exemple, les versions Professional, Enterprise, Express et Blend). Quand vous vous connectez à Visual Studio 2015 pour la première fois avec le compte utilisé dans Visual Studio 2013, vos paramètres synchronisés sont appliqués à partir de Visual Studio 2013. Vous pouvez accéder à vos paramètres en tapant « sync » dans la barre d’outils **Lancement rapide**, ou en naviguant vers **Outils > Options > Environnement > Paramètres synchronisés**.
+ Visual Studio 2013 a introduit les paramètres synchronisés pour certains des paramètres les plus souvent configurés, par exemple l’éditeur de texte, les combinaisons de touches, les thèmes, les polices et couleurs, le démarrage et les alias d’environnement.  Visual Studio 2015 améliore cette expérience en synchronisant davantage de paramètres, et en les synchronisant pour l'ensemble des applications de la famille Visual Studio (par exemple, les versions Professional, Enterprise, Express et Blend). Quand vous vous connectez à Visual Studio 2015 pour la première fois avec le compte utilisé dans Visual Studio 2013, vos paramètres synchronisés sont appliqués à partir de Visual Studio 2013. Vous pouvez accéder à vos paramètres en tapant « sync » dans la barre d’outils **Lancement rapide**, ou en naviguant vers **Outils > Options > Environnement > Paramètres synchronisés**.
 
 ### <a name="automatic-extension-updates"></a>mises à jour d'extensions automatiques
  Les extensions Visual Studio installées sont automatiquement mises à jour lorsqu'une nouvelle version est disponible dans la galerie Visual Studio. Consultez [Recherche et utilisation des extensions Visual Studio](./ide/finding-and-using-visual-studio-extensions.md) pour plus d'informations sur la personnalisation des mises à jour d'extensions automatiques.
@@ -183,18 +180,18 @@ Pour en savoir plus sur les nombreuses améliorations et nouvelles fonctionnalit
 ### <a name="notification-hub"></a>Hub de notification
  L'interface utilisateur du hub de notification a été simplifiée pour faciliter des analyses rapides. Des types de notifications ont été ajoutés, qui concernent notamment des problèmes de performances, des problèmes de rendu et des défaillances. Vous pouvez aussi désormais indiquer à Visual Studio d'arrêter d'afficher une notification. Pour plus d’informations, consultez [Notifications de Visual Studio](./ide/visual-studio-notifications.md).
 
-### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens Trouver qu’est-il arrivé à votre code (éditions Enterprise et Professional uniquement)
+### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens : découvrez ce qui est arrivé à votre code (éditions Enterprise et Professional uniquement)
  Ne perdez pas le fil : recherchez des informations relatives à votre code sans quitter l’éditeur. Vous pouvez examiner les modifications et autres éléments de l’historique pour les éléments de travail, bogues, révisions du code, etc. pour le code stocké dans Visual Studio Online (VSO) ou dans Team Foundation Server (TFS).
 
  Dans Visual Studio Enterprise et Visual Studio Professional, vous pouvez désormais effectuer les opérations suivantes :
 
 - Obtenir l'historique d'un fichier de code entier dans l'éditeur Visual Studio.
 
-   ![CodeLens Obtenir des détails du fichier de code](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
+   ![CodeLens : obtenir des détails sur le fichier de code](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
 
 - Consulter un graphique indiquant les personnes qui ont modifié votre code. Cette fonctionnalité vous permet de découvrir des modèles dans les modifications effectuées par votre équipe, et d’en évaluer l’impact.
 
-   ![CodeLens Consultez l’historique des modifications du code sous forme de graphique](./ide/media/codelens.png "CodeLens")
+   ![CodeLens : voir l’historique des modifications du code sous forme de graphique](./ide/media/codelens.png "CodeLens")
 
 - Afficher rapidement la date de dernière modification de votre code.
 

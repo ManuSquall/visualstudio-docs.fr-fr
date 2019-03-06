@@ -1,22 +1,20 @@
 ---
 title: Vues Interaction de couche | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, tier interaction method views
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f2752ae770fa5926839dc9bd5ab097564e02843
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 510fca63f57189aa86c11dd6afbc1ddfe894a597
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31584553"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56599491"
 ---
 # <a name="tier-interaction-views"></a>Interaction de couche, vues
 

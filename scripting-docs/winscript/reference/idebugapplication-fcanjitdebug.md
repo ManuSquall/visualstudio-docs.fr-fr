@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::FCanJitDebug | Documents Microsoft
+title: IDebugApplication::FCanJitDebug | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8ca6b990011252bde581168a272da1041dc24f41
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6808c8bb7e27e7b416e79b2f23e323c3ae3a528f
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725219"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344835"
 ---
 # <a name="idebugapplicationfcanjitdebug"></a>IDebugApplication::FCanJitDebug
-Détermine si un débogueur de (JIT) juste-à-temps est inscrite.  
+Détermine si un débogueur de (JIT) juste-à-temps est inscrit.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 BOOL FCanJitDebug();  
 ```  
   
@@ -38,10 +38,10 @@ BOOL FCanJitDebug();
  Cette méthode ne prend aucun paramètre.  
   
 ## <a name="return-value"></a>Valeur de retour  
- Si la méthode réussit, et un débogueur JIT est enregistré, la méthode retourne `TRUE`. Sinon, il retourne `FALSE`.  
+ Si la méthode réussit, et un débogueur JIT est inscrit, la méthode retourne `TRUE`. Sinon, il retourne `FALSE`.  
   
-## <a name="remarks"></a>Remarques  
- Cette méthode détermine si un débogueur JIT est enregistré.  
+## <a name="remarks"></a>Notes  
+ Cette méthode détermine si un débogueur JIT est inscrit.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IDebugApplication](../../winscript/reference/idebugapplication-interface.md)

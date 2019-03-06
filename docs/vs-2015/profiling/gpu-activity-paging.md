@@ -1,14 +1,9 @@
 ---
 title: Activité GPU (pagination) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.gpuactivity
 - vs.cv.threads.timeline.gpupaging
@@ -16,13 +11,13 @@ ms.assetid: 95284ac5-3492-4f7b-a79f-7d2840a07679
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cba0335a7090bc8f7308d5a64e8fedebedd99a6e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5979ccf8cafedb849b7ae9f7af6b0b35096e624f
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789926"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54769088"
 ---
 # <a name="gpu-activity-paging"></a>Activité GPU (pagination)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,6 +28,3 @@ Les segments **Activité GPU (pagination)** sous l’onglet Threads représenten
   
 ## <a name="see-also"></a>Voir aussi  
  [Vue Utilisation](../profiling/utilization-view.md)
-
-
-

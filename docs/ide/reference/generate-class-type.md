@@ -1,12 +1,10 @@
 ---
 title: Générer une classe ou un type
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 f1_keywords:
 - vsl.GenerateFromUsage
 dev_langs:
@@ -14,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4f7d722669ddf51715b21ddaf1f253fb0668dfaa
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a1258e0448fe7be9dd7fa0180f52604d877b051d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065472"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953163"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Générer une classe ou un type dans Visual Studio
 
@@ -53,8 +51,8 @@ Cette génération de code s’applique à :
       - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
-      - Placez le curseur sur la ligne ondulée rouge, puis cliquez sur l’icône ![Ampoule](media/bulb-cs.png) qui apparaît.
-      - Cliquez sur le bouton ![Ampoule](media/bulb-cs.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne ondulée rouge.
+      - Placez le curseur sur la ligne ondulée rouge, puis cliquez sur l’icône ![ampoule d’erreur](media/error-bulb.png) qui apparaît.
+      - Cliquez sur le bouton ![ampoule d’erreur](media/error-bulb.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne ondulée rouge.
 
       ![Aperçu de l’action Générer la classe](media/class-preview-cs.png)
 
@@ -74,8 +72,8 @@ Cette génération de code s’applique à :
 
    Sélection | Description
    --- | ---
-   Accès | Définissez un accès *Par défaut*, *Interne* ou *Public* pour le type.
-   Genre | Peut être défini sur *classe* ou *structure*.
+   Access | Définissez un accès *Par défaut*, *Interne* ou *Public* pour le type.
+   Kind | Peut être défini sur *classe* ou *structure*.
    Name | Ce paramètre ne peut pas être modifié et affichera le nom que vous avez déjà tapé.
    Projet | Si votre solution contient plusieurs projets, vous pouvez choisir l’emplacement souhaité pour la classe/structure à utiliser.
    Nom du fichier | Vous pouvez créer un nouveau fichier, ou ajouter le type à un fichier existant.

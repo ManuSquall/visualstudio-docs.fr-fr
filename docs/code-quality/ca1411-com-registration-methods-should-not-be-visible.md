@@ -1,8 +1,6 @@
 ---
 title: "CA1411 : Les méthodes d'inscription COM ne doivent pas être visibles"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1411
@@ -13,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: a59f96f1-1f38-4596-b656-947df5c55311
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cd599ee67182084e7f2fb663d343281b0a8b079
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: bd721edab080de7708ac395e2a7d7e486c504fba
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551705"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950654"
 ---
 # <a name="ca1411-com-registration-methods-should-not-be-visible"></a>CA1411 : Les méthodes d'inscription COM ne doivent pas être visibles
 
@@ -55,7 +53,7 @@ Une méthode qui est marquée avec le <xref:System.Runtime.InteropServices.ComRe
  [!code-vb[FxCop.Interoperability.ComRegistration2#1](../code-quality/codesnippet/VisualBasic/ca1411-com-registration-methods-should-not-be-visible_1.vb)]
 
 ## <a name="related-rules"></a>Règles associées
- [CA1410 : Les méthodes d’inscription COM doivent être mises en correspondance](../code-quality/ca1410-com-registration-methods-should-be-matched.md)
+ [CA1410 : Méthodes d’inscription COM doivent être mises en correspondance.](../code-quality/ca1410-com-registration-methods-should-be-matched.md)
 
 ## <a name="see-also"></a>Voir aussi
 

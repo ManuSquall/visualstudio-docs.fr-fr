@@ -1,22 +1,18 @@
 ---
 title: Espace de travail d’indexation dans Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 02/21/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
-ms.assetid: 3163e98c-1c79-48a7-813f-7923be894ba1
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5004db0d895d1fdc697c18606c346c24cd484527
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9bf7df777d27003fa5763debc772a8804ec28ef5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939148"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956985"
 ---
 # <a name="workspace-indexing"></a>Espace de travail d’indexation
 

@@ -1,8 +1,6 @@
 ---
-title: 'CA1045 : Ne pas passer de types par référence'
+title: 'CA1045 : Ne pas passer de types par référence'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1045
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: bcc3900a-e092-4bb8-896f-cb83f6289968
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ee365dd36a3a88b896fe9ec6e2f676b4e29bf1e
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 1f64a7f7c018863e85900da2b09e018d29da4dfe
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547839"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922873"
 ---
-# <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045 : Ne pas passer de types par référence
+# <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045 : Ne pas passer de types par référence
 
 |||
 |-|-|
@@ -89,4 +87,4 @@ Passing by return value:
 ```
 
 ## <a name="related-rules"></a>Règles associées
- [CA1021 : Évitez les paramètres out](../code-quality/ca1021-avoid-out-parameters.md)
+ [CA1021 : Éviter les paramètres out](../code-quality/ca1021-avoid-out-parameters.md)

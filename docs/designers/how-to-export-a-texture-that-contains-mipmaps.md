@@ -1,23 +1,21 @@
 ---
-title: Guide pratique pour exporter une texture qui contient des mipmaps
+title: 'Procédure : Exporter une texture qui contient des mipmaps'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 3d1ad14b-44fb-4cf0-a995-5e2f60026524
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67eb30f340afcd2f8e631170fc84fd00f5a9d43c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f5226903112d06d5efa362c61db938124eed8e68
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831327"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919246"
 ---
-# <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Guide pratique pour exporter une texture qui contient des mipmaps
+# <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Procédure : Exporter une texture qui contient des mipmaps
 
 Le pipeline de contenus d’image peut générer des mipmaps à partir d’une image source dans la phase de génération de votre projet. Pour obtenir certains effets, vous devez parfois spécifier le contenu de l’image de chaque niveau MIP manuellement. Quand vous n’avez pas besoin de spécifier le contenu de l’image de chaque niveau MIP manuellement, la génération de mipmaps au moment de la génération garantit que le contenu mipmap n’est jamais hors synchronisation. Elle élimine également le coût en matière de performances de la génération des mipmaps au moment de l’exécution.
 

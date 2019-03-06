@@ -1,18 +1,16 @@
 ---
 title: Se connecter aux projets dans Team Explorer
 ms.date: 12/04/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.author: gewarren
 author: gewarren
-ms.manager: douge
-ms.openlocfilehash: 6b021dbeddc8d8ed5dd0896853d2ca38641b146b
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.manager: jillfra
+ms.openlocfilehash: d65ea17ad642ea882820bc04f5d217e6290a8a6d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027673"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911103"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>Se connecter aux projets dans Team Explorer
 

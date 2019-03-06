@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNode::Attach | Documents Microsoft
+title: IDebugApplicationNode::Attach | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 393186330979d464fe54bde339806a5d8335a859
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 49df95e2c5298fc9bb7025982e75a90548d9613f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725929"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094950"
 ---
 # <a name="idebugapplicationnodeattach"></a>IDebugApplicationNode::Attach
 Ajoute ce nœud de l’application à l’arborescence du projet spécifié.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT Attach(  
    IDebugApplicationNode*  pdanParent  
 );  
@@ -38,17 +38,17 @@ HRESULT Attach(
   
 #### <a name="parameters"></a>Paramètres  
  `pdanParent`  
- [in] L’arborescence du projet où ce nœud de l’application doit être ajouté.  
+ [in] L’arborescence du projet où ce nœud de l’application doit être ajoutée.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
- Cette méthode ajoute ce nœud de l’application au projet d’une arborescence, à l’aide de `pdanParent` comme parent. Si `pdanParent` est `NULL`, ce nœud de l’application sera le nœud de niveau supérieur.  
+## <a name="remarks"></a>Notes  
+ Cette méthode ajoute ce nœud de l’application au projet une arborescence, à l’aide de `pdanParent` comme parent. Si `pdanParent` est `NULL`, ce nœud de l’application sera le nœud de niveau supérieur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugApplicationNode::Detach](../../winscript/reference/idebugapplicationnode-detach.md)   

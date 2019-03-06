@@ -1,8 +1,6 @@
 ---
 title: Atteindre, commande
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - edit.goto
@@ -12,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 201e1dd2-6701-467d-8cc1-faec2ef20511
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e583ee3bcb764d09bed9907710454dd6c39c6b8d
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 82dd3f226931dfeca2fa0dfad38daa24684fb8da
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704269"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947426"
 ---
 # <a name="go-to-command"></a>Atteindre, commande
 Déplace le curseur à la ligne spécifiée.
@@ -34,7 +32,7 @@ Edit.GoTo [linenumber]
 ## <a name="arguments"></a>Arguments
  `linenumber`
 
- Facultative. Nombre entier représentant le numéro de la ligne à atteindre.
+ Optionnel. Nombre entier représentant le numéro de la ligne à atteindre.
 
 ## <a name="remarks"></a>Notes
  La numérotation des lignes débute à 1. Si la valeur de `linenumber` est inférieure à 1, la première ligne est affichée. Si la valeur de `linenumber` est supérieure au numéro de la dernière ligne, la dernière ligne est affichée.
@@ -54,4 +52,4 @@ Edit.GoTo [linenumber]
 - [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Commande, fenêtre](../../ide/reference/command-window.md)
 - [Rechercher/Commande, zone](../../ide/find-command-box.md)
-- [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

@@ -2,22 +2,20 @@
 title: Concepteur de flux de travail - ParallelForEach&lt;T&gt; Concepteur d’activités
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.ParallelForEach`1.UI
 ms.assetid: e93a4843-aef2-4d3e-9a0a-a2d3d1411aa7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c62918811ba91fe9c30f60e930ce77a640959d0f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: be522112dd4cfa16744d0c9e54601ba7a0492704
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846341"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912623"
 ---
 # <a name="parallelforeach-activity-designer"></a>Concepteur d’activités ParallelForEach
 

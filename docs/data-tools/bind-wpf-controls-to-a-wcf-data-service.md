@@ -12,17 +12,15 @@ helpviewer_keywords:
 ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3330c86c84318be68619a8d031a034b33faa7fd1
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: eb6b9a9a213932662a548314bcc39c75e9d35bc3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305661"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909685"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Lier des contrôles WPF à un service de données WCF
 
@@ -285,7 +283,7 @@ Générez et exécutez l’application pour vérifier que vous pouvez afficher e
 
 3. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le projet **AdventureWorksSalesEditor**.
 
-4. Dans le menu contextuel, sous **Déboguer**, cliquez sur **Démarrer une nouvelle instance**.
+4. Dans le menu contextuel (menu contextuel), sous **déboguer**, cliquez sur **démarrer une nouvelle instance**.
 
      L'application s'exécute. Vérifiez ce qui suit :
 

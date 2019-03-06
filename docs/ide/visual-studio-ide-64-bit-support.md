@@ -1,8 +1,6 @@
 ---
 title: Prise en charge 64 bits
 ms.date: 02/21/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - 64-bit applications [C++]
@@ -10,15 +8,15 @@ helpviewer_keywords:
 - 64-bit programming [C++]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa48de77bdf5ba283068f3dfcc492a76ae3576c0
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 2f625718266d9a8ffa779975d8bc78c2bc560835
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063339"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55930621"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Prise en charge de l’IDE Visual Studio 64 bits
 

@@ -3,22 +3,20 @@ title: Installer Visual Studio Build Tools dans un conteneur
 titleSuffix: ''
 description: Découvrez comment installer Visual Studio Build Tools dans un conteneur Windows pour permettre la prise en charge des flux de travail d’intégration continue (CI) et de livraison continue (CD).
 ms.date: 04/18/2018
-ms.technology: vs-acquisition
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: d5c038e2-e70d-411e-950c-8a54917b578a
 author: heaths
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37ce2fc60ac2a57baddf62e68a900349ed072f4d
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: cae8ce7856249bafced5577030150c6910a86c34
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160086"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911492"
 ---
 # <a name="install-build-tools-into-a-container"></a>Installer Build Tools dans un conteneur
 
@@ -118,8 +116,8 @@ Visual Studio Build Tools, et plus généralement Visual Studio, nécessitent un
 
 Enregistrez l’exemple Dockerfile suivant dans un nouveau fichier sur votre disque. Si le fichier se nomme simplement « Dockerfile », il est reconnu par défaut.
 
-> [!NOTE]
-> Cet exemple de fichier Dockerfile exclut uniquement les anciens SDK Windows qui ne peuvent pas être installés dans des conteneurs. Les versions plus anciennes font échouer la commande de génération.
+> [!WARNING]
+> Cet exemple de fichier Dockerfile exclut uniquement les anciens kits SDK Windows qui ne peuvent pas être installés dans des conteneurs. Les versions précédentes font échouer la commande de build.
 
 1. Ouvrez une invite de commandes.
 2. Créez un répertoire (recommandé) :
@@ -165,8 +163,12 @@ Enregistrez l’exemple Dockerfile suivant dans un nouveau fichier sur votre dis
    CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
    ```
 
-   > [!NOTE]
-   > Si vous basez votre image directement sur microsoft/windowsservercore, l’installation du .NET Framework risque de ne pas s’effectuer correctement. De plus, aucune erreur d’installation ne sera signalée. Le code managé risque de ne pas s’exécuter, une fois l’installation effectuée. À la place, basez votre image sur [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) ou une version plus récente. Notez également que les images les plus récentes peuvent utiliser PowerShell comme `SHELL` par défaut, ce qui provoque l’échec des instructions `RUN` et `ENTRYPOINT`.
+   > [!WARNING]
+   > Si vous basez votre image directement sur microsoft/windowsservercore, l’installation du .NET Framework risque de ne pas s’effectuer correctement. De plus, aucune erreur d’installation ne sera signalée. Le code managé risque de ne pas s’exécuter, une fois l’installation effectuée. Basez plutôt votre image sur [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) ou une version ultérieure. Notez également que les images marquées de la version 4.7.1 (ou une version ultérieure) sont susceptibles d’utiliser PowerShell comme `SHELL` par défaut, ce qui provoque l’échec des instructions `RUN` et `ENTRYPOINT`.
+   >
+   > Quel que soit le produit, Visual Studio 2017 15.8 (ou une version antérieure) ne s’installe pas correctement sur mcr<span></span>.microsoft\.com\/windows\/servercore:1809 (ou une version ultérieure). Aucune erreur ne s’affiche.
+   >
+   > Pour plus d’informations, voir [Problèmes de conteneurs connus](build-tools-container-issues.md).
 
 4. Exécutez la commande suivante dans ce répertoire.
 

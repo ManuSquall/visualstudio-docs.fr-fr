@@ -1,23 +1,21 @@
 ---
 title: Recherche de références dans votre code
 ms.date: 09/26/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, find all references
 - find all references
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ac09eace078ef60f36bd57e9a2c4a1e5f1c510c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 74fb79db00a3e7366e91d3fb53a83f9deeb9a8a0
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942319"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335270"
 ---
 # <a name="find-references-in-your-code"></a>Rechercher des références dans votre code
 
@@ -41,13 +39,18 @@ Vous pouvez utiliser les méthodes suivantes pour accéder à des références d
 
 - Appuyez sur **F8** pour accéder à la référence suivante, ou sur **Maj+F8** pour accéder à la référence précédente.
 - Appuyez sur la touche **Entrée** sur une référence ou double-cliquez sur la référence pour y accéder dans le code.
-- Dans le menu contextuel d’une référence, choisissez les commandes **Aller à l’emplacement précédent** ou**Aller à l’emplacement suivant**.
+- Dans le menu contextuel (clic droit) d’une référence, choisissez les commandes **Accéder à l’emplacement précédent** ou **Accéder à l’emplacement suivant**.
 - Choisissez les flèches **Haut** et **Bas** (si elles sont activées dans la boîte de dialogue **Options**). Pour activer cette fonctionnalité, dans la barre de menus, choisissez **Outils** > **Options** > **Environnement** > **Onglets et fenêtres** > **Onglet d’aperçu**, puis cochez les cases **Autoriser l’ouverture des nouveaux fichiers dans l’onglet d’aperçu** et **Afficher les fichiers sélectionnés dans Rechercher les résultats**.
 
 ## <a name="change-reference-groupings"></a>Changer les regroupements de références
 Par défaut, les références sont regroupées par projet, puis par définition. Toutefois, vous pouvez changer cet ordre de regroupement en changeant le paramètre défini dans la zone de liste déroulante **Grouper par :** de la barre d’outils. Par exemple, vous pouvez changer l’ordre du paramètre par défaut **Projet, puis définition** en **Définition, puis projet**, ainsi que par d’autres paramètres.
 
-**Définition** et **Projet** sont les deux regroupements par défaut utilisés, mais vous pouvez en ajouter d’autres en choisissant la commande **Regroupement** dans le menu contextuel de l’élément sélectionné. Il peut être utile d’ajouter plusieurs regroupements si votre solution contient un grand nombre de fichiers et de chemins.
+**Définition** et **Projet** sont les deux regroupements utilisés par défaut, mais vous pouvez en ajouter d’autres en choisissant la commande **Regroupement** dans le menu contextuel (clic droit) de l’élément sélectionné. Il peut être utile d’ajouter plusieurs regroupements si votre solution contient un grand nombre de fichiers et de chemins.
+
+## <a name="filter-by-reference-type-in-net"></a>Filtrer par type de référence dans .NET
+En C# ou Visual Basic, la fenêtre Rechercher des références comporte une colonne de type qui liste le type de référence qu’elle a trouvé. Cette colonne permet de filtrer par type de référence en cliquant sur l’icône de filtre qui s’affiche quand vous pointez sur l’en-tête de colonne. Les références peuvent être filtrées par lecture, écriture, référence et nom uniquement.
+
+![Colonne de type dans la fenêtre Rechercher des références ](../ide/media/vside_findallreferencesKind.png)
 
 ## <a name="see-also"></a>Voir aussi
 

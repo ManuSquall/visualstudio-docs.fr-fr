@@ -1,25 +1,20 @@
 ---
 title: 'Procédure pas à pas : création d’un composant simple avec Visual C# ou Visual Basic | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 51fc073046833165097a8a9a4fb2f169ed3a04e7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6c45b62e2fb1d6e104621a7fdc285ca208364a22
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851684"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54802614"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Procédure pas à pas : création d'un composant simple avec Visual C# ou Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,14 +30,14 @@ En suivant cette procédure pas-à-pas, vous vous familiariserez avec la plupart
  [Déboguer et tester l'application](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_DebugTest)  
   
 > [!NOTE]
->  Cette procédure pas-à-pas est basée sur Visual Studio Professional, qui offre le modèle d'application WPF sur lequel vous allez vous baser pour générer le projet. Visual Studio Express pour Windows Desktop offre également ce modèle, mais pas Visual Studio Express pour Windows et Visual Studio Express pour le Web. Pour obtenir une présentation de l’utilisation de Visual Studio Express pour Windows, consultez le [Centre de développement des applications du Windows Store](http://msdn.microsoft.com/windows/apps/br229519). Pour obtenir une présentation de l’utilisation de Visual Studio Express pour le web, consultez [Get Started with ASP.NET](http://www.asp.net/get-started)(Prise en main d’ASP.NET). De plus, votre édition de Visual Studio et les paramètres que vous utilisez déterminent les noms et les emplacements des éléments de l'interface utilisateur. Consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Cette procédure pas-à-pas est basée sur Visual Studio Professional, qui offre le modèle d'application WPF sur lequel vous allez vous baser pour générer le projet. Visual Studio Express pour Windows Desktop offre également ce modèle, mais pas Visual Studio Express pour Windows et Visual Studio Express pour le Web. Pour obtenir une présentation de l’utilisation de Visual Studio Express pour Windows, consultez le [Centre de développement des applications du Windows Store](http://msdn.microsoft.com/windows/apps/br229519). Pour obtenir une présentation de l’utilisation de Visual Studio Express pour le web, consultez [Get Started with ASP.NET](http://www.asp.net/get-started)(Prise en main d’ASP.NET). De plus, votre édition de Visual Studio et les paramètres que vous utilisez déterminent les noms et les emplacements des éléments de l'interface utilisateur. Consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ##  <a name="BKMK_ConfigureIDE"></a> Configurer l'IDE  
  Au premier démarrage de Visual Studio, Visual Studio vous invite à vous connecter avec un compte de service Microsoft, [Se connecter à Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2013/06/28/welcome-sign-in-to-visual-studio.aspx). Vous n'avez pas besoin de vous connecter immédiatement ; vous pouvez le faire ultérieurement.  
   
  Lors de votre lancement de Visual Studio, vous devez choisir une combinaison de paramètres qui applique un ensemble de personnalisations prédéfinies à l'IDE. Chaque combinaison de paramètres a été conçue pour vous faciliter le développement d'applications.  
   
- Cette procédure pas à pas présume que vous ayez appliqué les **Paramètres de développement généraux**. Une personnalisation minime est ainsi appliquée à l'IDE. Si vous avez déjà choisi C# ou Visual Basic (les deux conviennent), vous n'êtes pas obligé de modifier vos paramètres.  Si vous souhaitez modifier vos paramètres, vous pouvez utiliser l' **Assistant Importation et exportation de paramètres**. Consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+ Cette procédure pas à pas présume que vous ayez appliqué les **Paramètres de développement généraux**. Une personnalisation minime est ainsi appliquée à l'IDE. Si vous avez déjà choisi C# ou Visual Basic (les deux conviennent), vous n'êtes pas obligé de modifier vos paramètres.  Si vous souhaitez modifier vos paramètres, vous pouvez utiliser l' **Assistant Importation et exportation de paramètres**. Consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Après avoir ouvert Visual Studio, vous pouvez identifier les fenêtres Outil, les menus et barres d'outils et l'espace de la fenêtre principale. Les fenêtres Outil sont ancrées sur les côtés gauche et droit de la fenêtre d'application. **Lancement rapide**, la barre de menus et la barre d'outils standard sont situés en haut. La **page de démarrage**est située au centre de la fenêtre d'application. Lorsque vous chargez une solution ou un projet, les éditeurs et les concepteurs apparaissent dans l'espace où se trouve la **Page de démarrage** . Lorsque vous développez une application, vous passez la majeure partie de votre temps dans cette zone centrale.  
   
@@ -72,7 +67,7 @@ En suivant cette procédure pas-à-pas, vous vous familiariserez avec la plupart
   
    ![IDE avec le thème foncé appliqué](../ide/media/exploreide-darkthemeide.png "ExploreIDE-DarkThemeIDE")  
   
-   Le thème de couleur utilisé pour les images dans le reste de cette procédure pas à pas est le thème clair. Pour plus d’informations sur la personnalisation de l’IDE, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+   Le thème de couleur utilisé pour les images dans le reste de cette procédure pas à pas est le thème clair. Pour plus d’informations sur la personnalisation de l’IDE, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ##  <a name="BKMK_CreateApp"></a> Créer une application simple  
   
@@ -97,7 +92,7 @@ En suivant cette procédure pas-à-pas, vous vous familiariserez avec la plupart
   
     ![Créer un projet Visual C&#35; WPF, HelloWPFApp](../ide/media/exploreide-newprojectcsharp.png "ExploreIDE-NewProjectcsharp")  
   
-   Visual Studio crée la solution et le projet HelloWPFApp, et l' **l'Explorateur de solutions** affiche les différents fichiers. Le Concepteur WPF affiche un mode Design et une vue XAML de MainWindow.xaml en mode Fractionné. Vous pouvez faire glisser le séparateur pour afficher une partie plus ou moins grande de chacune des vues.  Vous pouvez choisir d'afficher uniquement le mode visuel ou uniquement le mode XAML. (Pour plus d'informations, consultez [Concepteur WPF pour les développeurs Windows Forms](http://msdn.microsoft.com/en-us/47ad0909-e89b-4996-b4ac-874d929f94ca)). Les éléments suivants apparaissent dans l' **Explorateur de solutions**:  
+   Visual Studio crée la solution et le projet HelloWPFApp, et l' **l'Explorateur de solutions** affiche les différents fichiers. Le Concepteur WPF affiche un mode Design et une vue XAML de MainWindow.xaml en mode Fractionné. Vous pouvez faire glisser le séparateur pour afficher une partie plus ou moins grande de chacune des vues.  Vous pouvez choisir d'afficher uniquement le mode visuel ou uniquement le mode XAML. (Pour plus d'informations, consultez [Concepteur WPF pour les développeurs Windows Forms](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca)). Les éléments suivants apparaissent dans l' **Explorateur de solutions**:  
   
    Figure 5 : Éléments du projet  
   
@@ -340,6 +335,3 @@ En suivant cette procédure pas-à-pas, vous vous familiariserez avec la plupart
  [Nouveautés dans Visual Studio 2015](../what-s-new-in-visual-studio-2015.md)   
  [Bien démarrer avec le développement dans Visual Studio](../ide/get-started-developing-with-visual-studio.md)   
  [Conseils de productivité](../ide/productivity-tips-for-visual-studio.md)
-
-
-

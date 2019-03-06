@@ -1,8 +1,6 @@
 ---
-title: 'CA1819 : Les propriétés ne doivent pas retourner des tableaux'
+title: 'CA1819 : Les propriétés ne doivent pas retourner des tableaux'
 ms.date: 09/28/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - PropertiesShouldNotReturnArrays
@@ -13,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: 85fcf312-57f8-438a-8b10-34441fe0bdeb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 99fd9627c06b11dae9348a85f417cf152ac1c8c9
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: af31c925420602329eb20b803c92879210518ebd
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859031"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919207"
 ---
-# <a name="ca1819-properties-should-not-return-arrays"></a>CA1819 : Les propriétés ne doivent pas retourner des tableaux
+# <a name="ca1819-properties-should-not-return-arrays"></a>CA1819 : Les propriétés ne doivent pas retourner des tableaux
 
 |||
 |-|-|
@@ -92,4 +90,4 @@ L’exemple suivant résout la violation en modifiant la propriété à retourne
 
 ## <a name="related-rules"></a>Règles associées
 
-- [CA1024 : Utilisez des propriétés quand c’est approprié](../code-quality/ca1024-use-properties-where-appropriate.md)
+- [CA1024 : Utiliser des propriétés lorsque nécessaire](../code-quality/ca1024-use-properties-where-appropriate.md)

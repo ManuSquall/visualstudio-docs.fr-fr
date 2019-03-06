@@ -1,8 +1,6 @@
 ---
 title: Boîte à outils, onglet Composants
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.CHOOSEITEMS.FrameworkComponents
@@ -12,15 +10,15 @@ helpviewer_keywords:
 - Toolbox, Components tab
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a6365ebc9c44d5d453e04a3579d1b87d766413f
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 24f5e486d49dca8290c9063625132f673bf79c3c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924315"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925616"
 ---
 # <a name="toolbox-components-tab"></a>Boîte à outils, onglet Composants
 

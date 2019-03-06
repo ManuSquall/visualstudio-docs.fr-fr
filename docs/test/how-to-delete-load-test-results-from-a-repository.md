@@ -12,15 +12,13 @@ helpviewer_keywords:
 ms.assetid: c2afe36b-d061-4f0e-9580-c18569ec08f9
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: e2a7df778ff506c76513af6e6fe926a193f6a18e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 5e351ccaa6dddcf4773169a1e0a3f8e074002f2d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065272"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936120"
 ---
 # <a name="how-to-delete-load-test-results-from-a-repository"></a>Procédure : supprimer des résultats des tests de charge dans un dépôt
 

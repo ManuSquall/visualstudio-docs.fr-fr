@@ -1,8 +1,6 @@
 ---
-title: 'CA2211 : Les champs non constants ne doivent pas être visibles'
+title: 'CA2211 : Les champs non constants ne doivent pas être visibles'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2211
@@ -13,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: e1e42c40-0acd-4312-af29-70133739a304
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e40065351342ab49b86b21bb525b45ce78c6028
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: c33db7e5237b8e31011689edb725c8ae0e905522
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550544"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911453"
 ---
-# <a name="ca2211-non-constant-fields-should-not-be-visible"></a>CA2211 : Les champs non constants ne doivent pas être visibles
+# <a name="ca2211-non-constant-fields-should-not-be-visible"></a>CA2211 : Les champs non constants ne doivent pas être visibles
 
 |||
 |-|-|

@@ -3,30 +3,28 @@ title: Utiliser Visual Studio pour créer une première application console C#
 titleSuffix: ''
 description: Découvrez pas à pas comment créer une application console Hello World simple dans Visual Studio, en C#.
 ms.date: 09/21/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.custom: seodec18
 ms.topic: quickstart
 ms.devlang: vb
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a1d7b165466f686549273394c204e4ab31c06b46
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 12a08aa0e7509d04b522b74362347bc996e02946
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53158604"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923732"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Démarrage rapide : Utiliser Visual Studio pour créer une première application console C#
 
 Dans cette présentation de 5-10 minutes de l’environnement de développement intégré (IDE) de Visual Studio, vous allez créer une application C# simple qui s’exécute dans la console.
 
-Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) pour l’installer gratuitement.
+Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) pour l’installer gratuitement.
 
 ## <a name="create-a-project"></a>Créer un projet
 
@@ -50,7 +48,7 @@ Vous allez d’abord créer un projet d’application C#. Le type de projet incl
 
 ## <a name="create-the-application"></a>Créer l’application
 
-Une fois que vous avez sélectionné votre modèle de projet C# et nommé votre projet, Visual Studio crée une application « Hello World » simple. 
+Une fois que vous avez sélectionné votre modèle de projet C# et nommé votre projet, Visual Studio crée une application « Hello World » simple.
 
 (Pour cela, il appelle la méthode <xref:System.Console.WriteLine%2A> afin d’afficher la chaîne littérale « Hello World! » dans la fenêtre de console.)
 
@@ -99,4 +97,4 @@ Nous allons ajouter du code pour suspendre l’application afin que la fenêtre 
 Félicitations ! Vous avez terminé ce guide de démarrage rapide. Nous espérons que vous avez appris des choses sur C# et l’environnement IDE de Visual Studio. Pour plus d’informations, passez aux tutoriels suivants.
 
 > [!div class="nextstepaction"]
-> [Bien démarrer avec une application console C# dans Visual Studio](tutorial-csharp-console.md)
+> [Bien démarrer avec une application console C# dans Visual Studio](../get-started/csharp/tutorial-console.md)

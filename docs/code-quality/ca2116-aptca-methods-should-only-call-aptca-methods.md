@@ -1,8 +1,6 @@
 ---
 title: 'CA2116 : Les méthodes APTCA doivent uniquement appeler des méthodes APTCA'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - AptcaMethodsShouldOnlyCallAptcaMethods
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 8b91637e-891f-4dde-857b-bf8012270ec4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7decf94644bdb055f38c267c945dc0dcc813550a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 03948506d928f7d638b21c1fa4bc0a35818ec09a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547917"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926907"
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116 : Les méthodes APTCA doivent uniquement appeler des méthodes APTCA
 
@@ -80,7 +78,7 @@ ClassRequiringFullTrust.DoWork was called.
 
 ## <a name="related-rules"></a>Règles associées
 
-- [CA2117 : Les types APTCA doivent étendre seulement des types de base APTCA](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)
+- [CA2117 : Les types APTCA doivent uniquement étendre des types de base APTCA](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)
 
 ## <a name="see-also"></a>Voir aussi
 

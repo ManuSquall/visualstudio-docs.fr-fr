@@ -1,8 +1,6 @@
 ---
 title: Environnement, boîte de dialogue Options
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.OptionsDialog.Environment
@@ -10,15 +8,15 @@ f1_keywords:
 ms.assetid: 3f463cf0-734b-4fdc-b4ff-b47f9bb99069
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61b2e6461fb80cfd12f76a6e96ac629ce640fa89
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: a77fae7d802b0edf5fceaae8409f2e0a91f6687b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388765"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703251"
 ---
 # <a name="environment-options-dialog-box"></a>Environnement, boîte de dialogue Options
 
@@ -37,11 +35,11 @@ Vous pouvez utiliser les pages du dossier **Environnement** de la boîte de dial
 |Pour définir les options de mappage du clavier.|[Clavier, Environnement, boîte de dialogue Options](../../ide/reference/keyboard-environment-options-dialog-box.md)|
 |Pour spécifier si les notifications sont activées.|[Notifications, Environnement, boîte de dialogue Options](../../ide/reference/notifications-environment-options-dialog-box.md)|
 |Pour spécifier les options de la fenêtre Lancement rapide.|[Lancement rapide, Environnement, boîte de dialogue Options](../../ide/reference/quick-launch-environment-options-dialog-box.md)|
-|Pour spécifier les options de la page de démarrage.|[Démarrage, Environnement, boîte de dialogue Options](../../ide/reference/startup-environment-options-dialog-box.md)|
-|Pour spécifier s'il faut assurer l'itinérance des paramètres sur plusieurs ordinateurs.|[Paramètres synchronisés, Environnement, boîte de dialogue Options](../../ide/reference/synchronized-settings-environment-options-dialog-box.md)|
+|Pour spécifier les options de démarrage.|[Démarrage, Environnement, boîte de dialogue Options](../../ide/reference/startup-environment-options-dialog-box.md)|
+|Pour spécifier s'il faut assurer l'itinérance des paramètres sur plusieurs ordinateurs.|[Paramètres synchronisés, Environnement, boîte de dialogue Options](../../ide/reference/accounts-environment-options-dialog-box.md)|
 |Apprendre à définir des options pour les tâches et les listes de tâches|[Liste des tâches, Environnement, boîte de dialogue Options](../../ide/reference/task-list-environment-options-dialog-box.md)|
 |Modifier les pages Accueil et Recherche, changer d'éditeur de code source système et configurer des options d'Internet Explorer.|[Navigateur web, Environnement, boîte de dialogue Options](../../ide/reference/web-browser-environment-options-dialog-box.md)|
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Options, boîte de dialogue](../../ide/reference/options-dialog-box-visual-studio.md)
+- [Boîte de dialogue Options](../../ide/reference/options-dialog-box-visual-studio.md)

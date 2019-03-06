@@ -1,8 +1,6 @@
 ---
 title: Erreurs d’application d’analyse du code
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 helpviewer_keywords:
 - errors [Visual Studio ALM], code analysis
@@ -12,19 +10,19 @@ helpviewer_keywords:
 ms.assetid: d8fd9475-ac9b-4085-b5a3-b0c807922cac
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eab54410c7eb1db9dfc0ac3b2c9b2f5df8b85eac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9d2350a495bf0540f77ff6f0d4222b18431e1586
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634552"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912428"
 ---
-# <a name="code-analysis-application-errors"></a>Erreurs d’application d’analyse du code
+# <a name="code-analysis-application-errors"></a>Erreurs d’application analyse du code
 
-Cette section est une référence des messages d’erreur générés par l’outil d’analyse du code managé. Pour obtenir une aide pour un message d’erreur spécifique, tapez le numéro d’erreur dans le **recherchez** zone dans l’Index.
+Cette section est une référence des messages d’erreur générés par l’outil d’analyse du code managé.
 
 ## <a name="in-this-section"></a>Dans cette section
 
@@ -39,7 +37,7 @@ Cette section est une référence des messages d’erreur générés par l’out
 |[CA0056](ca0056.md)|Un fichier de projet a une version incorrecte de l’outil d’analyse.|
 |[CA0057](ca0057.md)|Violations ne peut pas être mappées à l’ensemble actuel de cibles et de règles.|
 |[CA0058](ca0058.md)|Impossible de charger les assemblys référencés.|
-|[CA0059](ca0059.md)|Erreur du commutateur de ligne de commande.|
+|[CA0059](ca0059.md)|Erreur de commutateur de ligne de commande.|
 |[CA0060](ca0060.md)|Impossible de charger les assemblys référencés indirectement.|
 |[CA0061](ca0061.md)|La règle «*RuleId*' est introuvable.|
 |[CA0062](ca0062.md)|La règle «*RuleId*« référencée dans l’ensemble de règles »*RuleSetName*» est introuvable.|
@@ -49,7 +47,7 @@ Cette section est une référence des messages d’erreur générés par l’out
 |[CA0066](ca0066.md)|La valeur '*VersionID*' fourni pour le **/TargetFrameworkVersion ne** n’est pas une version reconnue.|
 |[CA0067](ca0067.md)|Répertoire introuvable.|
 |[CA0068](ca0068.md)|Déboguer des informations n’a pas pu être trouvées pour l’assembly cible *'Nom_assembly'*.|
-|[CA0069](ca0069.md)|À l’aide de la plateforme autre. *FrameworkVersion1* est introuvable. À l’aide de *Versionframework2* à la place. Pour obtenir de meilleurs résultats d’analyse Assurez-vous que le .NET Framework approprié est installé.|
+|[CA0069](ca0069.md)|À l’aide de la plateforme autre. *FrameworkVersion1* est introuvable. À l’aide de *Versionframework2* à la place. Pour de meilleurs résultats d’analyse, vérifiez que le .NET Framework approprié est installé.|
 |[CA0070](ca0070.md)|Ne peut pas charger l’assembly ou un type en raison d’autorisations de sécurité.|
 |[CA0501](ca0501.md)|Impossible de lire le rapport de sortie.|
 |[CA0502](ca0502.md)|Langage non pris en charge.|
@@ -61,4 +59,4 @@ Cette section est une référence des messages d’erreur générés par l’out
 ## <a name="related-sections"></a>Rubriques connexes
 
 - [Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)
-- [Analyse de la qualité d’un code managé](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)
+- [Analyse de la qualité d’un code managé](../code-quality/code-analysis-for-managed-code-overview.md)

@@ -6,17 +6,15 @@ robots: noindex,nofollow
 f1_keywords:
 - vs.texteditor
 - vs.ambient
-manager: douge
+manager: jillfra
 author: gewarren
 ms.author: gewarren
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
-ms.openlocfilehash: 5c87831c468ce105bccaaad26e826aae6f0b46bc
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 7b4f78bb2249ef60121cfc1557bf06e696e585b8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160047"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912048"
 ---
 # <a name="f1-help"></a>F1 Aide
 

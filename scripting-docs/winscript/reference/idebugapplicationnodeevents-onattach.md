@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNodeEvents::onAttach | Documents Microsoft
+title: IDebugApplicationNodeEvents::onAttach | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a45fff15ce4f7faf6cf8714cbf01289e69f67691
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 85147e667f4e83698e23792a43020641974482a6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725959"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091258"
 ---
 # <a name="idebugapplicationnodeeventsonattach"></a>IDebugApplicationNodeEvents::onAttach
-Gère un événement, ce qui signifie que l’objet de nœud débogage application a été attaché à un nœud parent.  
+Gère un événement, ce qui signifie que l’objet de nœud d’application debug a été attaché à un nœud parent.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT onAttach(  
    IDebugApplicationNode*  prddpParent  
 );  
@@ -38,17 +38,17 @@ HRESULT onAttach(
   
 #### <a name="parameters"></a>Paramètres  
  `prddpParent`  
- [in] Le nœud Débogage d’application qui est le parent de ce nœud.  
+ [in] Le nœud d’application de débogage qui est le parent de ce nœud.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
- Cette méthode gère un événement, ce qui signifie que l’objet de nœud débogage application a été attaché à un nœud parent.  
+## <a name="remarks"></a>Notes  
+ Cette méthode gère un événement, ce qui signifie que l’objet de nœud d’application debug a été attaché à un nœud parent.  
   
  Les implémenteurs de le `IDebugApplicationNode` interface déclencher cet événement.  
   

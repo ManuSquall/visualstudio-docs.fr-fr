@@ -1,8 +1,6 @@
 ---
 title: Afficher le navigateur Web, commande
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - view.showwebbrowser
@@ -12,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: c6a4fbd6-8e9d-45cc-8b2f-93990d065e78
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87536df138de092948d845cf05d20af8e63ad68a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 0f6d8249503ed775d584c913d685ae35473134be
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672143"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922236"
 ---
 # <a name="showwebbrowser-command"></a>Afficher le navigateur Web, commande
 
@@ -40,11 +38,11 @@ View.ShowWebBrowser URL [/new][/ext]
 ## <a name="switches"></a>Commutateurs
  /new
 
- Facultative. Spécifie que la page s’affiche dans une nouvelle instance du navigateur web.
+ Optionnel. Spécifie que la page s’affiche dans une nouvelle instance du navigateur web.
 
  /ext
 
- Facultative. Spécifie que la page s’affiche dans le navigateur web par défaut en dehors de l’environnement IDE.
+ Optionnel. Spécifie que la page s’affiche dans le navigateur web par défaut en dehors de l’environnement IDE.
 
 ## <a name="remarks"></a>Notes
  L’alias de la commande **ShowWebBrowser** est **navigate** ou **nav**.

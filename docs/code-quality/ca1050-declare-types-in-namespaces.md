@@ -1,8 +1,6 @@
 ---
-title: 'CA1050 : Déclarer les types dans des espaces de noms'
+title: 'CA1050 : Déclarer les types dans des espaces de noms'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1050
@@ -13,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: 1002748d-ac8d-404f-85dd-7a12d1ad3e05
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bff984d9ea11ba8fd7f2e42deb5898f04da7d44
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 8cac669b96f362d6da73e3eb2f373137c3d9bdd3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548480"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953359"
 ---
-# <a name="ca1050-declare-types-in-namespaces"></a>CA1050 : Déclarer les types dans des espaces de noms
+# <a name="ca1050-declare-types-in-namespaces"></a>CA1050 : Déclarer les types dans des espaces de noms
 
 |||
 |-|-|

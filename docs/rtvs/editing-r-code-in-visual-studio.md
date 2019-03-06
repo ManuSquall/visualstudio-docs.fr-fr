@@ -2,20 +2,18 @@
 title: Modifier du code R
 description: Visual Studio offre une expérience de modification personnalisée pour R, tout en conservant toutes les fonctionnalités et la possibilité d’utiliser des extensions.
 ms.date: 11/05/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: c1d44e6d316db2ddce799784169a11a06578fe7f
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 2ec13113d8b7707c404a8af9788dacc98b12bb42
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220877"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921235"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>Modifier le code R dans Visual Studio
 
@@ -41,7 +39,7 @@ Pour changer ce comportement, consultez le paramètre **Avancé** > **Vérificat
 
 ## <a name="edit-and-organize-code"></a>Modifier et organiser le code
 
-Quand vous tapez du code, RTVS propose une saisie semi-automatique, comme décrit dans la page [IntelliSense](r-intellisense.md). Il applique également une mise en forme automatique comme la saisie semi-automatique des parenthèses et des accolades : 
+Quand vous tapez du code, RTVS propose une saisie semi-automatique, comme décrit dans la page [IntelliSense](r-intellisense.md). Il applique également une mise en forme automatique comme la saisie semi-automatique des parenthèses et des accolades :
 
 ![Animation de la mise en forme inline](media/editing-inline-formatting.gif)
 
@@ -130,6 +128,6 @@ Les options de l’onglet **R** > **Avancé** sont propres à RTVS :
 | | Liste de saisie semi-automatique après le premier caractère | Activé | Affiche la liste de saisie semi-automatique quand vous tapez les premiers caractères. Si elle est désactivée, vous affichez la liste de saisie semi-automatique avec **Modifier** > **IntelliSense** > **Liste des membres** (**Ctrl**+**J**). |
 | | Liste de saisie semi-automatique quand la touche **Tab** est enfoncée | Off | Appelle la liste de saisie semi-automatique en tapant un ou plusieurs caractères et en appuyant sur **Tab**. |
 | | Correspondance partielle de noms d’argument de types | Off | Quand vous tapez des noms d’argument dans un appel de fonction, l’aide de la signature affiche une description de l’argument qui correspond le mieux. |
-| Fenêtre interactive | Vérification syntaxique dans la console R | Off | Applique la vérification syntaxique dans la fenêtre interactive. La vérification syntaxique peut ne pas fonctionner correctement avec les instructions multilignes. | 
+| Fenêtre interactive | Vérification syntaxique dans la console R | Off | Applique la vérification syntaxique dans la fenêtre interactive. La vérification syntaxique peut ne pas fonctionner correctement avec les instructions multilignes. |
 | mode Plan | Plan du code | Activé | Crée automatiquement des régions réductibles pour des zones comme les instructions multilignes. |
 | Vérification syntaxique | Afficher les erreurs de syntaxe | Activé | Active la vérification syntaxique automatique du code. |

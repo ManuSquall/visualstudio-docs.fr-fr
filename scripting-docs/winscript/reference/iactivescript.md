@@ -1,5 +1,5 @@
 ---
-title: IActiveScript | Documents Microsoft
+title: IActiveScript | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,25 +14,25 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 68d91a7ad91364d0c2133150d76cdb221929b16b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 340a76dbb6d81c78463fa644dafcbe8097508561
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645679"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346707"
 ---
 # <a name="iactivescript"></a>IActiveScript
-Fournit les méthodes nécessaires pour initialiser le moteur de script. Le moteur de script doit implémenter la `IActiveScript` interface.  
+Fournit les méthodes nécessaires pour initialiser le moteur de script. Le moteur de script doit implémenter le `IActiveScript` interface.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
   
 |Méthode|Description|  
 |------------|-----------------|  
 |[IActiveScript::SetScriptSite](../../winscript/reference/iactivescript-setscriptsite.md)|Informe le moteur de script de la [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) site fourni par l’hôte.|  
-|[IActiveScript::GetScriptSite](../../winscript/reference/iactivescript-getscriptsite.md)|Récupère l’objet de site associé au moteur de Script Windows.|  
+|[IActiveScript::GetScriptSite](../../winscript/reference/iactivescript-getscriptsite.md)|Récupère l’objet de site associé avec le moteur de Script de Windows.|  
 |[IActiveScript::SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md)|Place le moteur de script dans l’état spécifié.|  
 |[IActiveScript::GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md)|Récupère l’état actuel du moteur de script.|  
-|[IActiveScript::Close](../../winscript/reference/iactivescript-close.md)|Force le moteur de script à n’importe quel script actuellement chargé d’abandon, son état est perdu et libérer les pointeurs d’interface qu’à d’autres objets, donc dans un état fermé.|  
+|[IActiveScript::Close](../../winscript/reference/iactivescript-close.md)|Provoque le moteur de script abandonner n’importe quel script actuellement chargé, son état est perdu et libérer les pointeurs d’interface qu’à d’autres objets, donc dans un état fermé.|  
 |[IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md)|Ajoute le nom d’un élément de niveau racine pour l’espace de noms du moteur de script.|  
 |[IActiveScript::AddTypeLib](../../winscript/reference/iactivescript-addtypelib.md)|Ajoute une bibliothèque de types à l’espace de noms pour le script.|  
 |[IActiveScript::GetScriptDispatch](../../winscript/reference/iactivescript-getscriptdispatch.md)|Récupère le `IDispatch` interface pour le script en cours d’exécution.|  

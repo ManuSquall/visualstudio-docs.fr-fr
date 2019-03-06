@@ -2,21 +2,19 @@
 title: Corriger les erreurs d’un programme et améliorer le code
 description: Cet article décrit certaines fonctionnalités de base de Visual Studio qui peuvent vous aider à trouver et à résoudre les problèmes présents dans votre code, notamment les erreurs de génération, l’analyse du code, les outils de débogage et les tests unitaires.
 ms.date: 05/02/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 320615daa95ba9fad69fe48490f83c19ccf8e1ce
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 57650bbe01a9d93b9847fd42075492c158d4db59
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34065115"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928307"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Faire fonctionner le code dans Visual Studio
 
@@ -90,9 +88,9 @@ Les avertissements nouveaux ou mis à jour apparaissent sous l’onglet **Liste 
 
 ![Liste d’erreurs de Visual Studio avec des avertissements](../ide/media/cpp-code-analysis-warning.png)
 
-## <a name="use-light-bulbs-to-fix-or-refactor-code"></a>Utiliser des ampoules pour corriger ou refactoriser du code
+## <a name="use-quick-actions-to-fix-or-refactor-code"></a>Utiliser les actions rapides pour corriger ou refactoriser du code
 
-Les [actions rapides](../ide/quick-actions.md), disponibles à partir de l’icône d’ampoule ou de tournevis, permettent de refactoriser le code inline. Elles vous permettent de résoudre facilement et rapidement des avertissements courants dans du code C#, C++ et Visual Basic. Pour y accéder, cliquez avec le bouton droit sur le trait de soulignement ondulé d’un avertissement et sélectionnez **Actions rapides et refactorisations**. Ou bien, quand votre curseur est sur la ligne marquée d’une ligne ondulée en couleur, appuyez sur **Ctrl**+**.** Ou bien sélectionnez l’icône d’ampoule ou de tournevis dans la marge. Vous voyez alors une liste des corrections ou des refactorisations possibles que vous pouvez appliquer à cette ligne de code.
+Les [actions rapides](../ide/quick-actions.md), disponibles à partir de l’icône d’ampoule ou de tournevis, permettent de refactoriser le code inline. Elles vous permettent de résoudre facilement et rapidement des avertissements courants dans du code C#, C++ et Visual Basic. Pour y accéder, cliquez avec le bouton droit sur le trait de soulignement ondulé d’un avertissement et sélectionnez **Actions rapides et refactorisations**. Ou bien, quand votre curseur est sur la ligne marquée d’une ligne ondulée en couleur, appuyez sur **Ctrl**+**.** ou sélectionnez l’icône d’ampoule, d’ampoule d’erreur ou de tournevis dans la marge. Vous voyez alors une liste des corrections ou des refactorisations possibles que vous pouvez appliquer à cette ligne de code.
 
 ![Aperçu d’une ampoule dans Visual Studio](../ide/media/quick-actions-options.png)
 
@@ -144,7 +142,7 @@ Quand le débogueur est suspendu, vous pouvez inspecter les variables et les pil
 
 ![Inspection d’une valeur à l’exécution dans Visual Studio](../ide/media/vs_ide_gs_debug_inspect_value.png)
 
-Placez le curseur sur une variable pour voir sa valeur actuelle et ses références. Si vous remarquez une valeur inattendue, vous avez probablement un bogue dans les lignes de code précédentes ou dans le code appelant. Pour plus d’informations sur le débogage, consultez [cet article](../debugger/getting-started-with-the-debugger.md) sur l’utilisation du débogueur.
+Placez le curseur sur une variable pour voir sa valeur actuelle et ses références. Si vous remarquez une valeur inattendue, vous avez probablement un bogue dans les lignes de code précédentes ou dans le code appelant. Pour plus d’informations sur le débogage, consultez [cet article](../debugger/debugger-feature-tour.md) sur l’utilisation du débogueur.
 
 Par ailleurs, Visual Studio affiche la fenêtre **Outils de diagnostic**. Celle-ci vous permet d’observer l’utilisation au fil du temps de l’UC et de la mémoire par votre application. Ultérieurement lors du développement de vos applications, vous pourrez utiliser ces outils pour rechercher les utilisations du processeur ou les allocations de mémoire importantes et imprévues. Utilisez-les conjointement avec la fenêtre **Espion** et les points d’arrêt pour déterminer le problème à l’origine d’une utilisation élevée inattendue ou de la non-libération de ressources. Pour plus d’informations, consultez [Visite guidée des fonctionnalités de profilage](../profiling/profiling-feature-tour.md).
 
@@ -159,5 +157,5 @@ Pour plus d’informations sur les tests unitaires dans Visual Studio et comment
 ## <a name="see-also"></a>Voir aussi
 
 - [Visite guidée des fonctionnalités du débogueur](../debugger/debugger-feature-tour.md)
-- [En savoir plus sur l’utilisation du débogueur](../debugger/getting-started-with-the-debugger.md)
+- [En savoir plus sur l’utilisation du débogueur](../debugger/debugger-feature-tour.md)
 - [Générer et corriger du code](../ide/code-generation-in-visual-studio.md)

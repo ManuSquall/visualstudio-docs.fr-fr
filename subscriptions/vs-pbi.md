@@ -3,22 +3,23 @@ title: Avantage Power BI Pro dans les abonnements Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/12/2018
-ms.topic: Get-Started-Article
+ms.date: 12/19/2018
+ms.topic: conceptual
 description: Découvrez l’abonnement Power BI Pro inclus dans certains abonnements Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 50c9b39772e65ba00f859254df4a993870f08023
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 176ce1d13faad7143da591f4f04f9feee1b5b2a0
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219534"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843868"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro dans les abonnements Visual Studio
 
 Transformez vos données en visuels enrichis que vous pouvez collecter et organiser.
+
+> [!Note]
+> Cette licence Power BI a pour objectif de faire découvrir les fonctionnalités de Power BI dans un endroit sûr, sans incidence sur les grands environnements de production/développement/test.  L’offre actuelle de Power BI oblige l’abonné à créer son propre locataire pour appliquer la séparation. Si vous souhaitez disposer d’une licence Power BI associée à vos informations d’identification d’entreprise dans votre locataire d’entreprise, contactez l’administrateur de votre société pour acheter et affecter une licence.
 
 ## <a name="activation-steps"></a>Étapes d’activation
 Pour utiliser Power BI Pro, vous devez créer un compte ou vous connecter à l’aide d’un compte existant.
@@ -73,30 +74,35 @@ Pour utiliser Power BI Pro, vous devez créer un compte ou vous connecter à l
 
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, cloud annuel)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup> | Disponible       |  Oui|
-| Visual Studio Professional (Standard, cloud annuel et cloud mensuel) | Licences en volume, Azure, Détail                                       | Non disponible                                                            |NA         |
+| Visual Studio Enterprise (Standard)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup> | Disponible       |  Oui|
+| Visual Studio Professional (Standard, cloud mensuel) | Licences en volume, Azure, Détail                                       | Non disponible                                                            |NA         |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                                            |NA         |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Disponible       |  Oui|
 | Visual Studio Dev Essentials | NA  | Non disponible |NA|
 | Visual Studio Enterprise (cloud mensuel) | Azure                                       | Non disponible                                  |NA|
 
-<sup>1</sup> *Inclut : NFR (revente interdite), VSIP (Visual Studio Industry Partner), BizSpark, MCT Software & Services Developer, MCT Software & Service, MVP (Microsoft Valued Professional), RD (Region Director).  Exclut : MPN (Microsoft Partner Network), FTE, Imagine.*
+<sup>1</sup>  *Inclut :  NFR (revente interdite), VSIP (Visual Studio Industry Partner), BizSpark, MCT Software & Services Developer, MCT Software & Service, MVP (Most Valuable Professional), RD (Regional Director).  Exclut :  MPN (Microsoft Partner Network), FTE, Imagine.*
+
+> [!NOTE]
+> Microsoft n’offre plus les abonnements Visual Studio Professional annuel et Visual Studio Enterprise annuel dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
 
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
 
 ## <a name="frequently-asked-questions"></a>FAQ
-### <a name="q--if-the-benefit-is-free-why-do-i-have-to-supply-a-credit-card-number"></a>Q : Si l’avantage est gratuit, pourquoi dois-je fournir un numéro de carte de crédit ?
-R : L’avantage est gratuit, mais l’activation utilise le même système que celui utilisé pour traiter les commandes payantes.  Deux types de paiement sont disponibles. 
-- Carte de crédit.  Si vous fournissez un numéro de carte de crédit, votre carte N’EST PAS débitée. 
-- Facture.  Si vous sélectionnez « Facture » comme type de paiement, vous n’avez pas besoin de fournir un numéro de carte de crédit.  Vous pouvez également définir l’intervalle sur « annuel ».  De cette façon, vous recevez un seul e-mail vous informant qu’une facture est prête pour vous.  Le montant de la facture est 0,00 €.  
+### <a name="q--if-the-benefit-is-free-why-do-i-have-to-supply-a-credit-card-number"></a>Q :  Si l’avantage est gratuit, pourquoi dois-je fournir un numéro de carte de crédit ?
+R :  L’avantage est gratuit, mais l’activation utilise le même système que celui utilisé pour traiter les commandes payantes.  Deux types de paiement sont disponibles.
+- Carte de crédit.  Si vous fournissez un numéro de carte de crédit, votre carte N’EST PAS débitée.
+- Facture.  Si vous sélectionnez « Facture » comme type de paiement, vous n’avez pas besoin de fournir un numéro de carte de crédit.  Vous pouvez également définir l’intervalle sur « annuel ».  De cette façon, vous recevez un seul e-mail vous informant qu’une facture est prête pour vous.  Le montant de la facture est 0,00 €.
 
-### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licenses-for-use-in-a-production-environment"></a>Q : L’avantage Power BI Pro inclus dans mes licences d’abonnement est-il utilisable dans un environnement de production ?
-R : Oui.  
+### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licensed-for-use-in-a-production-environment"></a>Q :  L’avantage Power BI Pro inclus dans mon abonnement est-il utilisable dans un environnement de production ?
+R :  Oui, vous pouvez l’utiliser en production, avec deux réserves importantes :
+- Cette offre oblige à effectuer l’installation sur son propre locataire.  Si vous souhaitez disposer d’une licence Power BI associée à vos informations d’identification d’entreprise dans votre locataire d’entreprise, contactez l’administrateur de votre société pour acheter et affecter une licence.
+- Cet avantage Power BI Pro ne peut pas être utilisé sur des locataires de type Secteur public.
 
-### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>Q : Lorsque j’essaie d’activer Power BI Pro, j’obtiens un message m’indiquant que je dispose déjà d’un compte dans le cadre professionnel.  Puis-je continuer à utiliser l’avantage ?
-R : Oui.  Ce message indique que vous êtes connecté à un domaine qui comprend déjà des locataires Office 365 actifs, dont vous n’êtes pas l’administrateur.  Pour ajouter Power BI Pro à un locataire, vous devez en être l’administrateur.  Si ce n’est pas le cas, suivez les étapes ci-dessous pour créer votre propre locataire.
+### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>Q :  Lorsque j’essaie d’activer Power BI Pro, j’obtiens un message m’indiquant que je dispose déjà d’un compte dans le cadre professionnel.  Puis-je continuer à utiliser l’avantage ?
+R :  Oui.  Ce message indique que vous êtes connecté à un domaine qui comprend déjà des locataires Office 365 actifs, dont vous n’êtes pas l’administrateur.  Pour ajouter Power BI Pro à un locataire, vous devez en être l’administrateur.  Si ce n’est pas le cas, suivez les étapes ci-dessous pour créer votre propre locataire.
 1.  Lorsque vous voyez le message qui vous indique que vous disposez déjà d’un compte dans le cadre professionnel, cliquez sur **Créer un compte**.
 
 2.  Dans l’écran suivant, entrez vos informations de contact, puis cliquez sur **Suivant**.
@@ -104,14 +110,14 @@ R : Oui.  Ce message indique que vous êtes connecté à un domaine qui compren
 3.  Créez votre identifiant utilisateur et votre mot de passe.  Pour bénéficier de l’offre gratuite, sélectionnez **. onmicrosoft.com** comme domaine. Cliquez sur **Créer mon compte**.
     > [!div class="mx-imgBorder"]
     > ![Avantage Power BI Pro - Créer un UserID de locataire privé](_img/vs-pbi/vs-pbi-work-userid.png)
-    
+
 4.  Les autres étapes du processus sont identiques à celles listées dans le corps de l’article, à partir de l’étape 6.
 
 
-### <a name="q--im-on-a-government-domain--can-i-use-the-benefit"></a>Q : Mon domaine est de type Secteur public.  Puis-je utiliser l’avantage ? 
-R : Non.  Les locataires appartenant à un domaine de type Secteur public ne peuvent pas bénéficier de l’avantage Power BI Pro. 
+### <a name="q--im-on-a-government-tenant--can-i-use-the-benefit"></a>Q :  J’utilise un locataire de type Secteur public.  Puis-je utiliser l’avantage ?
+R :  Non.  Les locataires de type Secteur public ne peuvent pas bénéficier de l’avantage Power BI Pro.
 
-## <a name="support-resources"></a>Ressources de support technique
+## <a name="support-resources"></a>Ressources de support
 -  Besoin d’aide avec Power BI Pro ?
     - Consultez la [documentation en ligne](/power-bi/).
     - Problèmes d’inscription ?  Consultez [Inscription individuelle à Power BI](/power-bi/service-self-service-signup-for-power-bi).

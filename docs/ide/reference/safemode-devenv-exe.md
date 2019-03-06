@@ -1,8 +1,6 @@
 ---
 title: -SafeMode (devenv.exe)
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
 - /SafeMode Devenv switch
@@ -11,35 +9,36 @@ helpviewer_keywords:
 ms.assetid: b191f6a5-8f12-47ec-bcc7-b68149a22aa8
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6df78ec4be1fc94951634b84a98e80dc1403a41b
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 14b2ac3a80a9e17e0c554f56ae8e31ac32450c5e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948736"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938681"
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode (devenv.exe)
-Démarre [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] en mode sans échec, en chargeant uniquement l’environnement et les services par défaut.
+
+Lance Visual Studio en mode sans échec, en chargeant uniquement l’environnement et les services par défaut.
 
 ## <a name="syntax"></a>Syntaxe
 
-```cmd
+```shell
 devenv /SafeMode
 ```
 
 ## <a name="remarks"></a>Notes
- Ce commutateur empêche le chargement de tous les packages VS tiers au démarrage de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], garantissant ainsi la stabilité de l’exécution.
 
-## <a name="description"></a>Description
- L’exemple suivant démarre [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] en mode sans échec.
+Ce commutateur empêche le chargement de tous les packages VS tiers au démarrage de Visual Studio, garantissant ainsi la stabilité de l’exécution.
 
-## <a name="code"></a>Code
+## <a name="example"></a>Exemple
 
-```cmd
-Devenv.exe /SafeMode
+L’exemple suivant démarre Visual Studio en mode sans échec.
+
+```shell
+devenv /safemode
 ```
 
 ## <a name="see-also"></a>Voir aussi

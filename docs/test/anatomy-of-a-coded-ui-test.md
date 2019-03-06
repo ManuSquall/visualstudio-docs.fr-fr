@@ -1,22 +1,20 @@
 ---
 title: Anatomie d'un test codé de l'interface utilisateur
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5c1a8bcc8ee43aa36b8a39cd53f4be4f6882f06
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 18a2da2ad79a91ca90a749471765970cfd7a1cbd
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896586"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911518"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Anatomie d’un test codé de l’interface utilisateur
 

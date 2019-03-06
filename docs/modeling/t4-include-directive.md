@@ -4,21 +4,19 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: b5a05629773334648239a8656577fbe0ae347625
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1a3ab6aa4cd116c779cac4367d1eeb9a187edaeb
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830702"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323291"
 ---
 # <a name="t4-include-directive"></a>Directive d'inclusion T4
 
-Dans un modèle de texte dans Visual Studio, vous pouvez inclure le texte à partir d’un autre fichier à l’aide un `<#@include#>` directive. Vous pouvez placer les directives `include` n’importe où dans un modèle de texte avant le premier bloc de fonctionnalité de classe `<#+ ... #>`. Les fichiers inclus peuvent également contenir des directives `include` et d'autres directives. Cela vous permet de partager du code de modèle et du texte réutilisable entre les modèles.
+Dans un modèle de texte dans Visual Studio, vous pouvez inclure le texte à partir d’un autre fichier à l’aide un `<#@include#>` directive. Vous pouvez placer les directives `include` n'importe où dans un modèle de texte avant le premier bloc de fonctionnalité de classe `<#+ ... #>`. Les fichiers inclus peuvent également contenir des directives `include` et d'autres directives. Cela vous permet de partager du code de modèle et du texte réutilisable entre les modèles.
 
 ## <a name="using-include-directives"></a>Utilisation de directives Include
 
@@ -30,7 +28,7 @@ Dans un modèle de texte dans Visual Studio, vous pouvez inclure le texte à par
 
    En outre, les extensions spécifiques de Visual Studio peuvent spécifier leurs propres répertoires dans lesquels rechercher des fichiers include. Par exemple, lorsque vous avez installé la visualisation et le SDK de modélisation (outils DSL), le dossier suivant est ajouté à la liste d’inclusion : `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`.
 
-   Ces dossiers d’inclusion supplémentaires peuvent dépendre de l’extension du fichier d’inclusion. Par exemple, le dossier d’inclusion des outils DSL est uniquement accessible aux fichiers d’inclusion ayant l’extension de fichier `.tt`
+   Ces dossiers d'inclusion supplémentaires peuvent dépendre de l'extension du fichier d'inclusion. Par exemple, le dossier d’inclusion des outils DSL est uniquement accessible aux fichiers d’inclusion ayant l’extension de fichier `.tt`
 
 - `filePath` peut inclure des variables d'environnement délimitées par "%". Exemple :
 
@@ -42,7 +40,7 @@ Dans un modèle de texte dans Visual Studio, vous pouvez inclure le texte à par
 
    Vous pouvez utiliser une autre extension telle que `".t4"` pour les fichiers inclus. C’est pourquoi, lorsque vous ajoutez un `.tt` fichier à un projet, Visual Studio définit automatiquement son **un outil personnalisé** propriété `TextTemplatingFileGenerator`. En général, vous ne souhaitez pas que les fichiers inclus soient transformés individuellement.
 
-   D’un autre côté, vous devez savoir que dans certains cas, l’extension de fichier affecte les dossiers supplémentaires dans lesquels seront recherchés les fichiers Include. Cela peut être important lorsque vous possédez un fichier inclus qui contient d'autres fichiers.
+   D'un autre côté, vous devez savoir que dans certains cas, l'extension de fichier affecte les dossiers supplémentaires dans lesquels seront recherchés les fichiers Include. Cela peut être important lorsque vous possédez un fichier inclus qui contient d'autres fichiers.
 
 - Le contenu inclus est traité presque comme s'il faisait partie du modèle de texte d'inclusion. Toutefois, vous pouvez inclure un fichier qui contient un bloc de fonctionnalité de classe `<#+...#>` même si la directive `include` est suivie de texte ordinaire et de blocs de contrôle standard.
 
@@ -67,7 +65,7 @@ Output message 5 (from top template).
 
 ```
    Output Message 2 (from included file).
-<#@include file="TextFile2.t4" #>
+<#@ include file="TextFile2.t4" #>
    Output Message 4 (from included file).
 <#+ // Start of class feature control block.
 void GenerateMessage(int n)
@@ -79,7 +77,7 @@ void GenerateMessage(int n)
 #>
 ```
 
- **TextFile2.t4 :**
+ **TextFile2.t4:**
 
 ```
         Output Message 3 (from included file 2).

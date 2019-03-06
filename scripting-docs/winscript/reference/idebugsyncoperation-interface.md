@@ -1,5 +1,5 @@
 ---
-title: IDebugSyncOperation (Interface) | Documents Microsoft
+title: Interface IDebugSyncOperation | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6705c2aa990aef3cf551a94546bf78a64026cecc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3724ad50771ca49460e130bf93ebc244681bd782
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727009"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349598"
 ---
 # <a name="idebugsyncoperation-interface"></a>IDebugSyncOperation, interface
-Propose un moteur de script extraire une opération (par exemple, évaluation de l’expression) qui doit être effectuée pendant imbriqués dans un thread bloqué particulier. L’interface fournit également un mécanisme d’annulation des opérations qui ne répond pas.  
+Permet d’extraire une opération (par exemple, d’évaluation de l’expression) qui doit être effectuée alors qu’imbriqué dans un thread bloqué particulier, un moteur de script. L’interface fournit également un mécanisme d’annulation des opérations qui ne répond pas.  
   
  Outre les méthodes héritées de `IUnknown`, le `IDebugSyncOperation` interface expose les méthodes suivantes.  
   

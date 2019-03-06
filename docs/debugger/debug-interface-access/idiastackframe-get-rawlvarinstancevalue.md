@@ -1,8 +1,6 @@
 ---
 title: IDiaStackFrame::get_rawLVarInstanceValue | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,45 +9,49 @@ helpviewer_keywords:
 ms.assetid: ce526259-85a6-475b-9274-0b3a21d95db2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f5e34b766e27693326aba34b7b7259042870f00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a8ad236307360a96f64999313764424305980fc9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933493"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624020"
 ---
 # <a name="idiastackframegetrawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
-Cette méthode récupère la valeur de la variable locale spécifiée comme octets bruts.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_rawLVarInstanceValue(  
-   IDiaLVarInstance* pInstance,  
-   DWORD             cbDataMax,  
-   DWORD*            pcbData,  
-   BYTE*             pbData  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pInstance`  
- [in] Un `IDiaLVarInstance` objet représentant une instance d’une variable locale pour obtenir la valeur de.  
-  
- `cbDataMax`  
- [in] Nombre maximal d’octets dans la mémoire tampon vers laquelle pointe `pbData`. Cela peut être un maximum de 8 octets (`sizeof(ULONGLONG)`).  
-  
- `pcbData`  
- [out] Retourne le nombre réel d’octets stockés dans la mémoire tampon.  
-  
- `pbData`  
- [out] Une mémoire tampon à remplir avec des données. Il ne peut pas être `NULL`.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
+Cette méthode récupère la valeur de la variable locale spécifiée comme octets bruts.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_rawLVarInstanceValue(
+   IDiaLVarInstance* pInstance,
+   DWORD             cbDataMax,
+   DWORD*            pcbData,
+   BYTE*             pbData
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `pInstance`
+
+[in] Un `IDiaLVarInstance` objet représentant une instance d’une variable locale pour obtenir la valeur de.
+
+ `cbDataMax`
+
+[in] Nombre maximal d’octets dans la mémoire tampon vers laquelle pointe `pbData`. Cela peut être un maximum de 8 octets (`sizeof(ULONGLONG)`).
+
+ `pcbData`
+
+[out] Retourne le nombre réel d’octets stockés dans la mémoire tampon.
+
+ `pbData`
+
+[out] Une mémoire tampon à remplir avec des données. Il ne peut pas être `NULL`.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

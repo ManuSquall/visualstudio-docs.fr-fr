@@ -1,24 +1,22 @@
 ---
 title: Méthodes et classes assert MSTest
 ms.date: 06/07/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: reference
 helpviewer_keywords:
 - Assert classes
 - Assert methods
 - unit tests, Assert classes
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 91198e9b7048b384bf2095840abbd012042025ed
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: d9d02ee375a5b9e6069a94cd7b534b871792088a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844254"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957388"
 ---
 # <a name="use-assert-classes-for-unit-testing"></a>Utiliser des classes Assert pour les tests unitaires
 

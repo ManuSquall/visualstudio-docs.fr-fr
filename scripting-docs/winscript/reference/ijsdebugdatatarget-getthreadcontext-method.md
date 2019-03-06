@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugdatatarget::GetThreadContext, méthode | Documents Microsoft
+title: Méthode IJsDebugDataTarget::GetThreadContext | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4e2f858c66eda2ad09b04d7beab776c793b6f195
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 50e2bdb7b8720549aac5e5b3c4cebffc4b7ae892
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728179"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090061"
 ---
 # <a name="ijsdebugdatatargetgetthreadcontext-method"></a>IJsDebugDataTarget::GetThreadContext, méthode
-Contexte récupère pour fonction de thread.  
+Récupère le contexte pour un thread donné.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetThreadContext(  
    DWORD threadId,  
    ULONG32 contextFlags,  
@@ -42,7 +42,7 @@ HRESULT GetThreadContext(
  [in] Thread en cours d’exécution dans le processus cible.  
   
  `contextFlags`  
- [in] Spécifie des indicateurs de contexte. Cela est identique à celui du champ ContextFlags du contexte (pour plus d’informations, consultez winnt.h, recherchez CONTEXT_ALL).  
+ [in] Spécifie les indicateurs de contexte. Il est identique au champ ContextFlags du contexte (pour plus d’informations, consultez winnt.h, recherchez CONTEXT_ALL).  
   
  `contextSize`  
  [in] La taille de la mémoire tampon spécifiée par pContext.  

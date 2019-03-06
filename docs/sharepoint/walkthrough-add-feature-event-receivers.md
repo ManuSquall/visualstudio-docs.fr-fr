@@ -1,9 +1,6 @@
 ---
 title: 'Procédure pas à pas : Ajout de récepteurs d’événements de fonctionnalité | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,17 +11,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, advanced packaging tools
 - SharePoint development in Visual Studio, event receivers
 - SharePoint development in Visual Studio, feature event receivers
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4ab2eded41d9416f03592c9346a379f8a276366a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9701281ed6b6e84a3147d6fdeda9ce045fcb5305
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948764"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865292"
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>Procédure pas à pas : Ajout de récepteurs d’événements de fonctionnalité
   Récepteurs d’événements sont des méthodes qui s’exécutent lorsque les événements de fonctionnalité suivants se produisent dans SharePoint :
@@ -122,5 +119,5 @@ ms.locfileid: "49948764"
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Comment : créer un récepteur d’événements](../sharepoint/how-to-create-an-event-receiver.md)
+- [Guide pratique pour Créer un récepteur d’événements](../sharepoint/how-to-create-an-event-receiver.md)
 - [Développer des solutions SharePoint](../sharepoint/developing-sharepoint-solutions.md)

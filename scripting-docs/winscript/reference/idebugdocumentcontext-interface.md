@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext (Interface) | Documents Microsoft
+title: IDebugDocumentContext Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 432fbe9de5b1ab19c64ae1b9eeee36f3b1156d06
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 998a219e8a58927ca62ec90e6b105586a64bbf2b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726229"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349580"
 ---
 # <a name="idebugdocumentcontext-interface"></a>IDebugDocumentContext, interface
-Fournit une représentation abstraite d’une partie du document en cours de débogage. Pour les documents texte, cette représentation se compose d’une plage de la position de caractère.  
+Fournit une représentation abstraite d’une partie du document en cours de débogage. Pour les documents de texte, cette représentation se compose d’une plage de la position de caractère.  
   
  Outre les méthodes héritées de `IUnknown`, le `IDebugDocumentContext` interface expose les méthodes suivantes.  
   

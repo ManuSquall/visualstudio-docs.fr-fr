@@ -1,14 +1,9 @@
 ---
 title: Fonctions des extraits de code | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - code snippets [Visual Studio], functions
 - snippets [Visual Studio], functions
@@ -17,18 +12,18 @@ ms.assetid: c0a2bf21-8fa5-4457-9281-f599beb53e7d
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3874b162719deb02813ceb7eae09b373e208f458
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 95ee6a99a069f81a2e63c5bbe11186afaf773423
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270879"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54790005"
 ---
 # <a name="code-snippet-functions"></a>Fonctions des extraits de code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Trois fonctions peuvent être utilisées avec les extraits de code [!INCLUDE[csprcs](../includes/csprcs-md.md)]. Les fonctions sont spécifiées dans l’élément [Function](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df) de l’extrait de code. Pour plus d’informations sur la création d’extraits de code, consultez [Extraits de code](../ide/code-snippets.md).  
+Trois fonctions peuvent être utilisées avec les extraits de code [!INCLUDE[csprcs](../includes/csprcs-md.md)]. Les fonctions sont spécifiées dans l’élément [Function](http://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) de l’extrait de code. Pour plus d’informations sur la création d’extraits de code, consultez [Extraits de code](../ide/code-snippets.md).  
   
 ## <a name="functions"></a>Fonctions  
  Le tableau suivant décrit les fonctions qui peuvent être utilisées avec l’élément `Function` dans les extraits de code.  
@@ -159,8 +154,5 @@ Trois fonctions peuvent être utilisées avec les extraits de code [!INCLUDE[cs
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Function, élément (extraits de code IntelliSense)](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
+ [Function, élément (extraits de code IntelliSense)](http://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
  [Référence de schéma des extraits de code](../ide/code-snippets-schema-reference.md)
-
-
-

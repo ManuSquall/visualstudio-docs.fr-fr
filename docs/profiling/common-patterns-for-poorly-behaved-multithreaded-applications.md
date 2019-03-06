@@ -1,8 +1,6 @@
 ---
 title: Modèles courants pour des applications multithread au comportement médiocre | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.tools.gallery
@@ -10,15 +8,15 @@ helpviewer_keywords:
 - Concurrency Visualizer, common patterns for poorly-behaved multithreaded applications
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9929fc5acfe58d51de9142abc7addd539cf2b74e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 0c953e4021f654d469a579a3aec5900e4ab93de7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34549004"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634264"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Modèles courants pour des applications multithread au comportement médiocre
 
@@ -72,4 +70,4 @@ Les convois de verrouillage se produisent lorsque l’application acquiert des v
 
 ## <a name="see-also"></a>Voir aussi
 
-[Vue Threads](../profiling/threads-view-parallel-performance.md)
+[vue Threads](../profiling/threads-view-parallel-performance.md)

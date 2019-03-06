@@ -8,16 +8,14 @@ manager: routlaw
 ms.date: 11/13/2017
 ms.topic: tutorial
 ms.devlang: python
-ms.service: multiple
-ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c84fbb3001bffb93d6c06f383551c073461419b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: adb3720f1624f355b99d75bfe446fafab1c5e0ae
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911335"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844390"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Former un modèle TensorFlow dans le cloud
 

@@ -1,22 +1,20 @@
 ---
-title: Création d'un test codé de l'interface utilisateur piloté par les données
+title: Tutoriel de test codé de l’interface utilisateur piloté par les données
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, data-driven
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92bbeb34733332b2bada3955dda2058d63460fec
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f9f5586fee54a3e50f9485b520e092255e57359c
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068485"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796658"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Créer un test codé de l'interface utilisateur piloté par les données
 
@@ -52,7 +50,7 @@ Cet exemple crée un test codé de l'interface utilisateur qui s'exécute sur l'
 
 4. Additionnez 1 et 2, interrompez l'enregistreur et générez la méthode de test. Plus tard, nous allons remplacer les valeurs de cette entrée utilisateur par les valeurs d’un fichier de données.
 
-    ![Générer la méthode de test](../test/media/cuit_datadriven_cuitbuildergencode.png)
+    ![Générer une méthode de test](../test/media/cuit_datadriven_cuitbuildergencode.png)
 
     Fermez le générateur de test. La méthode est ajoutée au test :
 
@@ -60,16 +58,17 @@ Cet exemple crée un test codé de l'interface utilisateur qui s'exécute sur l'
    [TestMethod]
    public void CodedUITestMethod1()
    {
-       // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
+       // To generate code for this test, select "Generate Code for Coded UI Test"
+       // from the shortcut menu and select one of the menu items.
        this.UIMap.AddNumbers();
    }
    ```
 
-5. Utilisez la méthode `AddNumbers()` pour vérifier que le test s'exécute. Placez le curseur dans la méthode de test illustrée ci-dessus, ouvrez le menu contextuel et choisissez **Exécuter les tests**. (Raccourci clavier : **Ctrl**+**R**,**T**).
+5. Utilisez la méthode `AddNumbers()` pour vérifier que le test s'exécute. Placez le curseur dans la méthode de test illustrée ci-dessus, ouvrez le menu contextuel (clic droit) et choisissez **Exécuter les tests**. (Raccourci clavier : **Ctrl**+**R**,**T**).
 
     Le résultat du test qui indique si le test a réussi ou a échoué apparaît dans la fenêtre **Explorateur de tests**. Pour ouvrir la fenêtre Explorateur de tests, dans le menu **Test**, choisissez **Fenêtres**, puis **Explorateur de tests**.
 
-6. Dans la mesure où une source de données peut également être utilisée pour les valeurs de paramètre d’assertion (qui sont utilisées par le test pour vérifier les valeurs attendues), ajoutons une assertion pour confirmer que la somme des deux nombres est correcte. Placez le curseur dans la méthode de test illustrée ci-dessus, ouvrez le menu contextuel et choisissez **Générer le code pour le test codé de l’interface utilisateur**, puis **Utiliser le générateur de test codé de l’interface utilisateur**.
+6. Dans la mesure où une source de données peut également être utilisée pour les valeurs de paramètre d’assertion (qui sont utilisées par le test pour vérifier les valeurs attendues), ajoutons une assertion pour confirmer que la somme des deux nombres est correcte. Placez le curseur dans la méthode de test illustrée ci-dessus, ouvrez le menu contextuel (clic droit) et choisissez **Générer le code du test codé de l’interface utilisateur**, puis **Utiliser le générateur de tests codés de l’interface utilisateur**.
 
     Mappez le contrôle de texte dans la calculatrice qui affiche la somme.
 
@@ -88,13 +87,12 @@ Cet exemple crée un test codé de l'interface utilisateur qui s'exécute sur l'
    ```csharp
    public void CodedUITestMethod1()
    {
-       // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
        this.UIMap.AddNumbers();
        this.UIMap.ValidateSum();
    }
    ```
 
-9. Vérifiez que le test s'exécute à l'aide de la méthode `ValidateSum()`. Placez le curseur dans la méthode de test illustrée ci-dessus, ouvrez le menu contextuel et choisissez **Exécuter les tests**. (Raccourci clavier : **Ctrl**+**R**,**T**).
+9. Vérifiez que le test s'exécute à l'aide de la méthode `ValidateSum()`. Placez le curseur dans la méthode de test illustrée ci-dessus, ouvrez le menu contextuel (clic droit) et choisissez **Exécuter les tests**. (Raccourci clavier : **Ctrl**+**R**,**T**).
 
      À ce stade, toutes les valeurs de paramètre sont définies dans leurs méthodes en tant que constantes. Ensuite, nous allons créer un jeu de données pour créer notre test piloté par les données.
 
@@ -132,7 +130,6 @@ Cet exemple crée un test codé de l'interface utilisateur qui s'exécute sur l'
     [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]
     public void CodedUITestMethod1()
     {
-        // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
         this.UIMap.AddNumbers();
         this.UIMap.ValidateSum();
     }
@@ -151,7 +148,7 @@ Cet exemple crée un test codé de l'interface utilisateur qui s'exécute sur l'
 
 ### <a name="step-4---use-the-data-in-the-coded-ui-test"></a>Étape 4 : utiliser les données dans le test codé de l’interface utilisateur
 
-1.  Ajoutez `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` au début du fichier *CodedUITest.cs* :
+1. Ajoutez `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` au début du fichier *CodedUITest.cs* :
 
     ```csharp
     using System;
@@ -167,16 +164,16 @@ Cet exemple crée un test codé de l'interface utilisateur qui s'exécute sur l'
     using Microsoft.VisualStudio.TestTools.UITesting.WinControls;
     ```
 
-2.  Ajoutez `TestContext.DataRow[]` dans la méthode `CodedUITestMethod1()` qui va appliquer les valeurs de la source de données. Les valeurs de la source de données se substituent aux constantes affectées aux contrôles UIMap en utilisant les contrôles `SearchProperties` :
+2. Ajoutez `TestContext.DataRow[]` dans la méthode `CodedUITestMethod1()` qui va appliquer les valeurs de la source de données. Les valeurs de la source de données se substituent aux constantes affectées aux contrôles UIMap en utilisant les contrôles `SearchProperties` :
 
-    ```csharp
-    public void CodedUITestMethod1()
-    {
-        // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
-        this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();this.UIMap.UICalculatorWindow.UIItemWindow21.UIItem2Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num2"].ToString();
-        this.UIMap.AddNumbers();
-        this.UIMap.ValidateSumExpectedValues.UIItem2TextDisplayText = TestContext.DataRow["Sum"].ToString();
-        this.UIMap.ValidateSum();
+   ```csharp
+   public void CodedUITestMethod1()
+   {
+       this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();
+       this.UIMap.UICalculatorWindow.UIItemWindow2.UIItem2Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num2"].ToString();
+       this.UIMap.AddNumbers();
+       this.UIMap.ValidateSumExpectedValues.UIItem3TextDisplayText = TestContext.DataRow["Sum"].ToString();
+       this.UIMap.ValidateSum();
     }
     ```
 
@@ -198,15 +195,15 @@ Cet exemple crée un test codé de l'interface utilisateur qui s'exécute sur l'
 
 ### <a name="step-5---run-the-data-driven-test"></a>Étape 5 : exécuter le test piloté par les données
 
-1.  Vérifiez que le test est maintenant piloté par les données en l'exécutant de nouveau.
+Vérifiez que le test est maintenant piloté par les données en l'exécutant de nouveau.
 
-     Vous devez voir le test s'exécuter via trois itérations à l'aide des valeurs incluses dans le fichier .*csv*. La validation doit également fonctionner et le test doit s’afficher comme réussi dans l’Explorateur de tests.
+Vous devez voir le test s'exécuter via trois itérations à l'aide des valeurs incluses dans le fichier .*csv*. La validation doit également fonctionner et le test doit s’afficher comme réussi dans l’Explorateur de tests.
 
 ## <a name="q--a"></a>Questions et réponses
 
-###  <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> Quels sont les attributs de la source de données pour d’autres types de source de données, comme SQL Express ou XML ?
+### <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> Quels sont les attributs de la source de données pour d’autres types de source de données, comme SQL Express ou XML ?
 
-Vous pouvez utiliser les exemples de chaînes de source de données indiqués dans le tableau ci-dessous en les copiant dans votre code et en effectuant les personnalisations nécessaires.
+**R :** Vous pouvez utiliser les exemples de chaînes de source de données indiqués dans le tableau ci-dessous en les copiant dans votre code et en effectuant les personnalisations nécessaires.
 
 **Types de source de données et attributs**
 

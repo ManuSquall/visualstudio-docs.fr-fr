@@ -1,23 +1,19 @@
 ---
 title: Écrire et gérer du code
 description: Découvrez comment utiliser l’éditeur de code et d’autres outils dans Visual Studio pour écrire, parcourir, gérer et améliorer votre code.
-layout: LandingPage
 ms.date: 01/01/2018
+layout: LandingPage
+ms.topic: landing-page
 author: gewarren
 ms.author: gewarren
-ms.topic: landing-page
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
-f1_keywords:
-- vs.newproject
 ms.workload:
 - multiple
-ms.openlocfilehash: 929ee8c5618c08431c27754327c9466a54a68b85
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 33c7650efe92ee57bd554d47f9883669a8f50268
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159375"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913091"
 ---
 # <a name="write-and-manage-code-using-visual-studio"></a>Écrire et gérer du code à l’aide de Visual Studio
 

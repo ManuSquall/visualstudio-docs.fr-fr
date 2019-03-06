@@ -1,23 +1,21 @@
 ---
 title: Fonctionnalités de l’éditeur de code
 ms.date: 02/23/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code, editing [Visual Studio]
 - code editor [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca203b0c27906d1f861689953ca55280f73fa894
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 9f263be2e26100c7b61bffca35df39b945d88a91
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160112"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721511"
 ---
 # <a name="features-of-the-code-editor"></a>Fonctionnalités de l’éditeur de code
 
@@ -58,15 +56,15 @@ De nombreuses fonctionnalités avancées sont disponibles dans le menu **Éditio
 |Mettre la sélection en forme|Définit la mise en retrait appropriée des lignes de code et place des accolades pour séparer les lignes dans la sélection.|
 |Remplacer les espaces par des tabulations|Remplace les espaces à gauche par des tabulations le cas échéant.|
 |Remplacer les tabulations par des espaces|Remplace les tabulations à gauche par des espaces. Si vous souhaitez convertir tous les espaces de votre fichier en tabulations (ou toutes les tabulations en espaces), vous pouvez utiliser les commandes `Edit.ConvertSpacesToTabs` et `Edit.ConvertTabsToSpaces`. Ces commandes n’apparaissent pas dans les menus de Visual Studio, mais vous pouvez les appeler à partir de la fenêtre **Accès rapide** ou de la fenêtre Commande.|
-|Mettre en majuscules|Met tous les caractères de la sélection en majuscules ou, en l’absence de sélection, met en majuscule le caractère au point d’insertion.|
-|Mettre en minuscules|Met tous les caractères de la sélection en minuscules ou, en l’absence de sélection, met en minuscule le caractère au point d’insertion.|
+|Mettre en majuscules|Met tous les caractères de la sélection en majuscules ou, en l’absence de sélection, met en majuscule le caractère au point d’insertion. Raccourci : **Ctrl**+**Maj**+**U**.|
+|Mettre en minuscules|Met tous les caractères de la sélection en minuscules ou, en l’absence de sélection, met en minuscule le caractère au point d’insertion. Raccourci : **Ctrl**+**U**.|
 |Déplacer les lignes sélectionnées vers le haut|Déplace la ligne sélectionnée d’une ligne vers le haut. Raccourci : **Alt**+**Flèche Haut**.|
 |Déplacer les lignes sélectionnées vers le bas|Déplace la ligne sélectionnée d’une ligne vers le bas. Raccourci : **Alt**+**Flèche Bas**.|
-|Supprimer les espaces blancs horizontaux|Supprime les tabulations et les espaces à la fin de la ligne active.|
+|Supprimer les espaces blancs horizontaux|Supprime les tabulations et les espaces à la fin de la ligne active. Raccourci : **Ctrl**+**K**, **Ctrl**+**\\**|
 |Afficher les espaces blancs|Affiche les espaces sous forme de points et les tabulations sous forme de flèches. La fin d’un fichier est indiquée par un glyphe rectangulaire. Si l’option **Outils** > **Options** > **Éditeur de texte** > **Tous les langages** > **Retour automatique à la ligne** > **Afficher des glyphes visuels pour le retour automatique à la ligne** est sélectionnée, ce glyphe s’affiche également.|
 |Retour automatique à la ligne|Rend visibles toutes les lignes d’un document dans la fenêtre de code. Vous pouvez activer et désactiver cette fonctionnalité dans les paramètres **Éditeur de texte – Tous les langages** (**Outils** > **Options** > **Éditeur de texte** > **Tous les langages**).|
-|Commenter la sélection|Ajoute des caractères de commentaire à la sélection ou à la ligne active.|
-|Annuler le commentaire de la sélection|Supprime les caractères de commentaire de la sélection ou de la ligne active.|
+|Commenter la sélection|Ajoute des caractères de commentaire à la sélection ou à la ligne active. Raccourci : **Ctrl**+**K**, **Ctrl**+**C**|
+|Annuler le commentaire de la sélection|Supprime les caractères de commentaire de la sélection ou de la ligne active. Raccourci : **Ctrl**+**K**, **Ctrl**+**U**|
 |Augmenter le retrait de ligne|Ajoute une tabulation (ou les espaces équivalents) aux lignes sélectionnées ou à la ligne active.|
 |Réduire le retrait de ligne|Supprime une tabulation (ou les espaces équivalents) des lignes sélectionnées ou de la ligne active.|
 |Sélectionner la balise|Dans un document qui contient des balises (par exemple, XML ou HTML), sélectionne la balise.|
@@ -78,7 +76,7 @@ Vous pouvez vous déplacer dans l’éditeur de code de plusieurs manières, not
 
 ## <a name="find-references-in-your-code-base"></a>Rechercher des références dans votre code base
 
-Pour savoir où des éléments de code particuliers sont référencés dans tout votre code base, vous pouvez utiliser la commande **Rechercher toutes les références**. De plus, quand vous cliquez sur un type ou un membre, la fonctionnalité de **mise en surbrillance des références** met automatiquement en surbrillance toutes les références à ce type ou membre. Pour plus d’informations, consultez [Rechercher des références dans votre code](finding-references.md).
+Pour savoir où des éléments de code particuliers sont référencés dans l’ensemble de votre code base, vous pouvez utiliser la commande **Rechercher toutes les références** ou appuyer sur **Maj**+**F12**. De plus, quand vous cliquez sur un type ou un membre, la fonctionnalité de **mise en surbrillance des références** met automatiquement en surbrillance toutes les références à ce type ou membre. Pour plus d’informations, consultez [Rechercher des références dans votre code](finding-references.md).
 
 ## <a name="customize-the-editor"></a>Personnaliser l’éditeur
 
@@ -93,5 +91,5 @@ Pour plus d’informations sur la personnalisation de l’éditeur, consultez [P
 - [Éditeur de code source (Visual Studio pour Mac)](/visualstudio/mac/source-editor)
 - [IDE Visual Studio](../get-started/visual-studio-ide.md)
 - [Bien démarrer avec C++ dans Visual Studio](../ide/getting-started-with-cpp-in-visual-studio.md)
-- [Bien démarrer avec C# et ASP.NET dans Visual Studio](../ide/tutorial-csharp-aspnet-core.md)
+- [Bien démarrer avec C# et ASP.NET dans Visual Studio](../get-started/csharp/tutorial-aspnet-core.md)
 - [Bien démarrer avec Python dans Visual Studio](../ide/quickstart-python.md)

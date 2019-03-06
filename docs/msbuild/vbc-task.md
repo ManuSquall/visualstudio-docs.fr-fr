@@ -1,8 +1,6 @@
 ---
 title: Vbc, tâche | Microsoft Docs
-ms.custom: ''
 ms.date: 04/12/2018
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Vbc
@@ -17,21 +15,21 @@ helpviewer_keywords:
 ms.assetid: 595278b1-2782-4577-b1ba-b4b5ab5625a3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf2ab82b16d3cdaf493afc15f506dc237e6a91d4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 585a3d4940d11508dbe6d8874cb401cfe380a690
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937874"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623825"
 ---
 # <a name="vbc-task"></a>Vbc (tâche)
-Encapsule *vbc.exe*, qui produit des fichiers exécutables (*.exe*), des bibliothèques de liens dynamiques (*.dll*) ou des modules de code (*.netmodule*). Pour plus d’informations sur *vbc.exe*, consultez [Compilateur de ligne de commande de Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index).  
+Encapsule *vbc.exe*, qui produit des fichiers exécutables (*.exe*), des bibliothèques de liens dynamiques (*.dll*) ou des modules de code (*.netmodule*). Pour plus d’informations sur *vbc.exe*, consultez [Compilateur de ligne de commande de Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index).
 
-## <a name="parameters"></a>Paramètres  
- Le tableau ci-dessous décrit les paramètres de la tâche `Vbc` .  
+## <a name="parameters"></a>Paramètres
+ Le tableau ci-dessous décrit les paramètres de la tâche `Vbc` .
 
 
 | Paramètre | Description |
@@ -53,7 +51,7 @@ Encapsule *vbc.exe*, qui produit des fichiers exécutables (*.exe*), des bibliot
 | `Imports` | Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Importe des espaces de noms à partir des collections d’éléments spécifiées. Ce paramètre correspond au commutateur [-imports](/dotnet/visual-basic/reference/command-line-compiler/imports) du compilateur *vbc.exe*. |
 | `KeyContainer` | Paramètre `String` facultatif.<br /><br /> Spécifie le nom du conteneur de la clé de chiffrement. Ce paramètre correspond au commutateur [-keycontainer](/dotnet/visual-basic/reference/command-line-compiler/keycontainer) du compilateur *vbc.exe*. |
 | `KeyFile` | Paramètre `String` facultatif.<br /><br /> Spécifie le nom du fichier contenant la clé de chiffrement. Pour plus d’informations, consultez [-keyfile](/dotnet/visual-basic/reference/command-line-compiler/keyfile). |
-| `LangVersion` | Paramètre <xref:System.String?displayProperty=fullName> facultatif.<br /><br /> Spécifie la version du langage, « 9 » ou « 10 ». |
+| `LangVersion` | Paramètre <xref:System.String?displayProperty=fullName> facultatif.<br /><br /> Spécifie la [version du langage](/dotnet/visual-basic/language-reference/configure-language-version), comme « 15.5 ». |
 | `LinkResources` | Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Crée un lien à une ressource .NET Framework dans le fichier de sortie ; le fichier de ressources n’est pas placé dans le fichier de sortie. Ce paramètre correspond au commutateur [-linkresource](/dotnet/visual-basic/reference/command-line-compiler/linkresource) du compilateur *vbc.exe*. |
 | `MainEntryPoint` | Paramètre `String` facultatif.<br /><br /> Spécifie la classe ou le module qui contient la procédure `Sub Main`. Ce paramètre correspond au commutateur [-main](/dotnet/visual-basic/reference/command-line-compiler/main) du compilateur *vbc.exe*. |
 | `ModuleAssemblyName` | Paramètre `String` facultatif.<br /><br /> Spécifie l’assembly dont ce module fait partie. |
@@ -90,21 +88,21 @@ Encapsule *vbc.exe*, qui produit des fichiers exécutables (*.exe*), des bibliot
 | `Win32Icon` | Paramètre `String` facultatif.<br /><br /> Insère un fichier *.ico* dans l’assembly, ce qui donne au fichier de sortie l’apparence souhaitée dans **l’Explorateur de fichiers**. Ce paramètre correspond au commutateur [-win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) du compilateur *vbc.exe*. |
 | `Win32Resources` | Paramètre `String` facultatif.<br /><br /> Insère un fichier de ressources Win32 (*.res*) dans le fichier de sortie. Ce paramètre correspond au commutateur [-win32resource](/dotnet/visual-basic/reference/command-line-compiler/win32resource) du compilateur *vbc.exe*. |
 
-## <a name="remarks"></a>Notes  
- En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.ToolTask>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).  
+## <a name="remarks"></a>Remarques
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.ToolTask>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
 
-## <a name="example"></a>Exemple  
- L’exemple suivant compile un projet Visual Basic.  
+## <a name="example"></a>Exemple
+ L’exemple suivant compile un projet Visual Basic.
 
-```xml  
-<VBC  
-   Sources="@(sources)"  
-   Resources="strings.resources"  
-   Optimize="true"  
-   OutputAssembly="out.exe"/>  
-```  
+```xml
+<VBC
+   Sources="@(sources)"
+   Resources="strings.resources"
+   Optimize="true"
+   OutputAssembly="out.exe"/>
+```
 
-## <a name="see-also"></a>Voir aussi  
- [Compilateur de ligne de commande de Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index)   
- [Tâches](../msbuild/msbuild-tasks.md)   
- [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>Voir aussi
+- [Compilateur de ligne de commande de Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index)
+- [Tâches](../msbuild/msbuild-tasks.md)
+- [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

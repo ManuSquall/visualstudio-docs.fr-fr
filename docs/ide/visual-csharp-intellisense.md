@@ -1,23 +1,21 @@
 ---
 title: C# IntelliSense
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - C#, IntelliSense
 - IntelliSense [C#]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 41a4dfa2a904f3fdc09671fd5e9afa0f29c2e9f3
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 5d6bf678e40c999442d35caba53bcaabb8f9ba48
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160138"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936861"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -100,7 +98,7 @@ Pour lancer l’opération **Ajouter using**, positionnez le curseur sur une ré
 
 ![Ajouter using, image développée de l’action rapide](../ide/media/addusing-quickaction.png)
 
-Cliquez sur l’icône Ampoule, puis choisissez **using System.Xml;** pour ajouter automatiquement la directive using.
+Cliquez sur l’icône d’ampoule d’erreur, puis choisissez **using System.Xml;** pour ajouter automatiquement la directive using.
 
 ### <a name="remove-and-sort-usings"></a>Supprimer et trier les directives using
 
@@ -124,7 +122,7 @@ La fonctionnalité **Générer à partir de l’utilisation** permet d’utilise
 
 Une ligne ondulée rouge s’affiche sous chaque identificateur non défini. Quand vous placez le pointeur de la souris sur l'identificateur, un message d'erreur s'affiche dans une info-bulle. Pour afficher les options appropriées, vous pouvez utiliser l'une des procédures suivantes :
 
-- Cliquez sur l'identificateur non défini. Une ampoule **Actions rapides** apparaît sous l’identificateur. Cliquez sur l’ampoule.
+- Cliquez sur l'identificateur non défini. Une ampoule d’erreur **Actions rapides** apparaît sous l’identificateur. Cliquez sur l’ampoule d’erreur.
 
 - Cliquez sur l’identificateur non défini, puis appuyez sur **Ctrl**+**.** (**Ctrl** + point).
 

@@ -1,14 +1,9 @@
 ---
-title: Argument de remplacement incorrect | Documents Microsoft
-ms.custom: ''
+title: Argument de remplacement non valide | Microsoft Docs
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5035
 dev_langs:
@@ -20,19 +15,19 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 588909bae9c5cf198d3108490111b36d5a2d182b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 640eefb53304de48e4ad2398a02910a1cff1b57d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632859"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841284"
 ---
 # <a name="invalid-replacer-argument"></a>Argument de remplacement incorrect
 Une tentative a été effectuée pour appeler `JSON.stringify` avec un argument qui n’est pas valide. Le `replacer` argument doit être une fonction ou un tableau.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
--   Modifier la `replacer` argument à une fonction ou un tableau.  
+-   Modifier le `replacer` argument à une fonction ou un tableau.  
   
 ## <a name="example"></a>Exemple  
  Le code dans cet exemple génère une erreur d’exécution, car `memberfilter` est un objet au lieu d’une fonction ou un tableau.  

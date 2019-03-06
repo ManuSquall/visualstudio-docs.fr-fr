@@ -1,8 +1,6 @@
 ---
 title: Exemple de Dia2dump | Microsoft Docs
-ms.custom: ''
 ms.date: 07/24/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 492c0893-7043-452f-a020-890a47230d20
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2e44abdce737df335133d5e54b6b022c97f639a
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
-ms.translationtype: MT
+ms.openlocfilehash: 3f5b353986cf77c554b277975fabb1cb755faba3
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252279"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428542"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump, exemple
 
@@ -66,7 +64,7 @@ Par défaut, le répertoire d’installation est un répertoire protégé. Cela 
 
 ## <a name="run-the-dia2dump-sample"></a>Exécuter l’exemple Dia2Dump
 
-Dia2Dump.exe s’appuie sur le msdia*version*server .dll COM de fournir ses services. Dans Visual Studio 2015 et Visual Studio 2017, la version est msdia140.dll. Si le msdia*version*.dll COM serveur n’est pas initialisé, vous devez l’enregistrer dia2dump.exe peut fonctionner. Le répertoire de DIA SDK contient un sous-répertoire bin qui contient le x86 version de la DLL. Une version pour x64 machines de l’architecture est dans bin\amd64, et une version pour ARM est dans bin\arm. Pour inscrire la dll, ouvrez une fenêtre d’invite de commandes développeur avec élévation de privilèges et accédez au répertoire qui contient la version de votre architecture de l’ordinateur. Entrez la commande `regsvr32 msdia140.dll` pour inscrire le serveur COM.
+Dia2Dump.exe s’appuie sur le msdia*version*server .dll COM de fournir ses services. À partir de Visual Studio 2015, la version est msdia140.dll. Si le msdia*version*.dll COM serveur n’est pas initialisé, vous devez l’enregistrer dia2dump.exe peut fonctionner. Le répertoire de DIA SDK contient un sous-répertoire bin qui contient le x86 version de la DLL. Une version pour x64 machines de l’architecture est dans bin\amd64, et une version pour ARM est dans bin\arm. Pour inscrire la dll, ouvrez une fenêtre d’invite de commandes développeur avec élévation de privilèges et accédez au répertoire qui contient la version de votre architecture de l’ordinateur. Entrez la commande `regsvr32 msdia140.dll` pour inscrire le serveur COM.
 
 ### <a name="to-run-the-sample"></a>Pour exécuter l'exemple
 
@@ -78,4 +76,4 @@ Dia2Dump.exe s’appuie sur le msdia*version*server .dll COM de fournir ses serv
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Porter, migrer et mettre à niveau des projets Visual Studio](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)  
+- [Porter, migrer et mettre à niveau des projets Visual Studio](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)

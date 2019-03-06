@@ -1,14 +1,9 @@
 ---
-title: 'Procédure : Créer et exécuter une Installation sans assistance | Microsoft Docs'
-ms.custom: ''
+title: 'Comment : créer et exécuter une Installation sans assistance | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-install
+ms.topic: conceptual
 helpviewer_keywords:
 - installing Visual Studio, unattended
 - unattended installation, Visual Studio
@@ -16,21 +11,21 @@ ms.assetid: 3867b5dc-ed34-4ee2-be32-a42e7e320517
 caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: bc1a6ba1a36dd7514257fcbb8ba4c26ca1ee6116
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: b7fdf45fedece028a0bf5d62ccd60951754b9064
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065517"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54803560"
 ---
-# <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Procédure : Créer et exécuter une Installation sans assistance de Visual Studio
+# <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Comment : créer et exécuter une installation sans assistance de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez exécuter l’application d’installation pour [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] comme installation sans assistance via un intranet plutôt qu’à partir de supports tels que les DVD. Cette rubrique décrit comment préparer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour ce type d’installation à partir d’un partage réseau.
 
 ## <a name="creating-a-network-image"></a>Création d’une image réseau
- Tout d'abord, créez une image réseau du support [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+ Tout d’abord, créez une image réseau du support [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
 #### <a name="to-create-a-network-image"></a>Pour créer une image réseau
 
@@ -43,7 +38,7 @@ Vous pouvez exécuter l’application d’installation pour [!INCLUDE[vsprvs](..
      Le chemin d’accès réseau de l’application d’installation pour [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ressemble à \\ \\ *nom_serveur*\IDEinstall\\*produit*.exe.
 
     > [!NOTE]
-    >  L’installation peut échouer si la combinaison du nom du chemin d’accès et du fichier dépasse 260 caractères. La longueur maximale d'un chemin dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] est de 221 caractères.  Le nom de chemin d’accès local ne doit pas dépasser 70 caractères et le nom du chemin d’accès réseau ne doit pas dépasser 39 caractères.
+    >  L’installation peut échouer si la combinaison du nom du chemin d’accès et du fichier dépasse 260 caractères. La longueur maximale d’un chemin dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] est de 221 caractères.  Le nom de chemin d’accès local ne doit pas dépasser 70 caractères et le nom du chemin d’accès réseau ne doit pas dépasser 39 caractères.
 
      L’installation peut également échouer si les noms de dossiers du chemin incluent des espaces incorporés (par exemple, "\\\\*nom_serveur*\installation IDE" ou \\\\*nom_serveur*\Visual Studio\\).
 
@@ -67,13 +62,13 @@ Vous pouvez exécuter l’application d’installation pour [!INCLUDE[vsprvs](..
 |Élément|Attribut|Valeurs|Description|
 |-------------|---------------|------------|-----------------|
 |BundleCustomizations|TargetDir|*Chemin d’accès*|Identique au remplacement du chemin d’accès dans l’interface utilisateur de l’application d’installation. Cet élément est ignoré si Visual Studio est déjà installé.|
-|BundleCustomizations|NoWeb|Oui&#124;par défaut|Si la valeur de cet élément est Oui, l’application d’installation ne tente jamais d’accéder au web lors de l’action d’installation.|
+|BundleCustomizations|NoWeb|oui&#124;par défaut|Si la valeur de cet élément est Oui, l’application d’installation ne tente jamais d’accéder au web lors de l’action d’installation.|
 |SelectableItemCustomization|Hidden|Oui&#124;non|Si la valeur de cet élément est Oui, masque un élément sélectionnable dans l’arborescence de la personnalisation.|
 |SelectableItemCustomization|Selected|Oui&#124;non|Active ou désactive un élément sélectionnable dans l’arborescence de la personnalisation.|
 |BundleCustomizations|Feed|Chemin|Emplacement du flux que l’utilisateur souhaite utiliser.  Ce flux est utilisé pour les opérations de modification ultérieures sur l’ordinateur (« Default » par défaut).|
-|BundleCustomizations|SuppressRefreshPrompt|Oui&#124;par défaut|Empêche l’envoi d’invites demandant à l’utilisateur d’actualiser le programme d’installation si une version plus récente est disponible.|
-|BundleCustomizations|NoRefresh|Oui&#124;par défaut|N’actualise pas le programme d’installation si une version plus récente est disponible.|
-|BundleCustomizations|NoCacheOnlyMode|Oui&#124;par défaut|Empêche le préremplissage du cache du package.|
+|BundleCustomizations|SuppressRefreshPrompt|oui&#124;par défaut|Empêche l’envoi d’invites demandant à l’utilisateur d’actualiser le programme d’installation si une version plus récente est disponible.|
+|BundleCustomizations|NoRefresh|oui&#124;par défaut|N’actualise pas le programme d’installation si une version plus récente est disponible.|
+|BundleCustomizations|NoCacheOnlyMode|oui&#124;par défaut|Empêche le préremplissage du cache du package.|
 
 > [!WARNING]
 >  L’application d’installation respecte l’état sélectionné d’un événement SelectableItem, même s’il est masqué. Par exemple, si vous souhaitez toujours installer un élément sélectionnable, vous pouvez le marquer comme masqué et sélectionné.
@@ -119,7 +114,7 @@ Vous pouvez exécuter l’application d’installation pour [!INCLUDE[vsprvs](..
 
 2. Ouvrez le menu **Démarrer** , puis choisissez **Exécuter**.
 
-3. Tapez le texte suivant : \\\\*Nom_serveur*\IDEinstall\vs_*produit*.exe /AdminFile PathToAdmindeployment.xml fichier
+3. Entrez le texte suivant : \\ \\ *nom_serveur*\IDEinstall\vs_*produit*.exe /AdminFile PathToAdmindeployment.xml fichier
 
     AdditionalParametersAsNeeded
 
@@ -178,7 +173,7 @@ Vous pouvez exécuter l’application d’installation pour [!INCLUDE[vsprvs](..
 
 2.  Entrez la clé du produit.
 
-     (Pour plus d’informations, consultez le [Comment : Recherchez la clé de produit Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) et [Comment : Appliquer automatiquement les clés de produit lors du déploiement de Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md) rubriques.)
+     (Pour plus d’informations, consultez le [Comment : trouver la clé de produit Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) et [Comment : appliquer automatiquement les clés de produit lors du déploiement de Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md) rubriques.)
 
 ## <a name="see-also"></a>Voir aussi
  [Installer Visual Studio](../install/install-visual-studio-2015.md)

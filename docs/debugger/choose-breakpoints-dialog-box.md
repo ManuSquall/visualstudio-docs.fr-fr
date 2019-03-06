@@ -1,8 +1,6 @@
 ---
-title: Choisissez la boîte de dialogue points d’arrêt | Documents Microsoft
-ms.custom: ''
+title: Choisissez la boîte de dialogue points d’arrêt | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.breakpt.choose
@@ -20,27 +18,25 @@ helpviewer_keywords:
 ms.assetid: 35cbd591-4c4f-4035-8731-8162ba1c8318
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ca31b8fa1536e23cce691629ddf5015721d9c9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 50547507bf37eb22346bcbf3f48585c9cb0b26b6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458243"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637033"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>Boîte de dialogue Choisir les points d’arrêt
-Le **choisir les points d’arrêt** boîte de dialogue s’ouvre lorsque vous essayez de définir un point d’arrêt à partir d’entrées ambiguës dans le **nouveau point d’arrêt** boîte de dialogue. Un exemple courant d’entrée ambigu est un nom de la fonction surchargée.  
-  
- **Points d’arrêt**  
- Listes de points d’arrêt possibles qui peuvent être définies en fonction de l’entrée ambiguë. Vous pouvez sélectionner un ou plusieurs des points d’arrêt à définir.  
-  
- **Tous**  
- Sélectionne tous les points d’arrêt répertoriés dans le **points d’arrêt** boîte.  
-  
- **Aucun**  
- Efface tous les points d’arrêt répertoriés dans le **points d’arrêt** boîte.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Utilisation des points d’arrêt](../debugger/using-breakpoints.md)
+Le **choisissez les points d’arrêt** boîte de dialogue s’ouvre lorsque vous essayez de définir un point d’arrêt à partir de l’entrée ambiguë dans le **nouveau point d’arrêt** boîte de dialogue. Un exemple courant de l’entrée ambiguë est un nom de fonction surchargée.
+
+ **Points d’arrêt** répertorie les points d’arrêt possibles qui peuvent être définies en fonction l’entrée ambiguë. Vous pouvez sélectionner un ou plusieurs des points d’arrêt à définir.
+
+ **Tous les** sélectionne tous les points d’arrêt répertoriés dans le **des points d’arrêt** boîte.
+
+ **Aucun** efface tous les points d’arrêt répertoriés dans le **des points d’arrêt** boîte.
+
+## <a name="see-also"></a>Voir aussi
+
+- [Utilisation des points d’arrêt](../debugger/using-breakpoints.md)

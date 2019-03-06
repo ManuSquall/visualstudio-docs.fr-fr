@@ -1,8 +1,6 @@
 ---
 title: Créer des solutions et des projets
 ms.date: 02/06/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.openprojectfromweb
@@ -14,19 +12,19 @@ helpviewer_keywords:
 - projects [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c03709517f1c1d5bd28a2a0847a51895eb49557
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a2e4652bb6a0ea1ec138138e6966ab005362a45d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052150"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937520"
 ---
 # <a name="create-solutions-and-projects"></a>Créer des solutions et des projets
 
-Les *projets* sont des conteneurs logiques dans Visual Studio qui regroupent tous les éléments dont vous avez besoin pour générer votre application, tels que les fichiers de code source, les bitmaps, les icônes, et les références de composant et de service. Quand vous créez un projet, Visual Studio crée une *solution* dans laquelle est placé votre projet. Vous pouvez ensuite ajouter d’autres projets nouveaux ou existants à la solution. Les solutions peuvent également contenir des fichiers qui ne sont pas associés à un projet spécifique.
+Les *projets* regroupent tous les éléments dont vous avez besoin pour générer votre application dans Visual Studio, tels que les fichiers de code source, les bitmaps, les icônes, et les références de composant et de service. Quand vous créez un projet, Visual Studio crée une *solution* dans laquelle est placé votre projet. Vous pouvez ensuite ajouter d’autres projets nouveaux ou existants à la solution. Les solutions peuvent également contenir des fichiers qui ne sont pas associés à un projet spécifique.
 
 ![Hiérarchie de projet/solution](./media/vside-proj-soln.png)
 
@@ -130,7 +128,7 @@ Vous pouvez supprimer des solutions et tout leur contenu définitivement, mais c
 
 ### <a name="to-permanently-delete-a-solution"></a>Pour supprimer définitivement une solution
 
-1. Dans **l’Explorateur de solutions**, dans le menu contextuel de la solution à supprimer, choisissez **Ouvrir le dossier dans l’Explorateur de fichiers**.
+1. Dans **l’Explorateur de solutions**, choisissez **Ouvrir le dossier dans l’Explorateur de fichiers** dans le menu contextuel (clic droit) de la solution à supprimer.
 
 1. Dans l'Explorateur de fichiers, remontez d'un niveau.
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::RemoveGlobalExpressionContextProvider | Documents Microsoft
+title: IDebugApplication::RemoveGlobalExpressionContextProvider | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 791d6a3a237c36c123aea662dc4bb933b97d35d3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5038d85e48b6735c81977d20f295dd4e0868e2e2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725969"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093884"
 ---
 # <a name="idebugapplicationremoveglobalexpressioncontextprovider"></a>IDebugApplication::RemoveGlobalExpressionContextProvider
-Supprime un fournisseur de contexte expression globale de cette application.  
+Supprime un fournisseur de contexte d’expression globale de cette application.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT RemoveGlobalExpressionContextProvider(  
    DWORD_PTR  dwCookie  
 );  
@@ -43,12 +43,12 @@ HRESULT RemoveGlobalExpressionContextProvider(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
- Le `RemoveGlobalExpressionContextProvider` méthode supprime un fournisseur de contexte expression globale de cette application.  
+## <a name="remarks"></a>Notes  
+ Le `RemoveGlobalExpressionContextProvider` méthode supprime un fournisseur de contexte d’expression globale de cette application.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugApplication::AddGlobalExpressionContextProvider](../../winscript/reference/idebugapplication-addglobalexpressioncontextprovider.md)   

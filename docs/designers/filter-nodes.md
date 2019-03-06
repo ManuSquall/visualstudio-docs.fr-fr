@@ -1,21 +1,19 @@
 ---
 title: Nœuds de filtre
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: reference
 ms.assetid: f7cae2dc-e9a7-49d4-8be5-58b79868624e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cf0902847899f8796ac34765c66c79530248e81
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 95a8bfeedea11060cbf3a0aefbf2c11a30230060
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922225"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929789"
 ---
 # <a name="filter-nodes"></a>Nœuds de filtres
 

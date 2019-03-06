@@ -2,22 +2,19 @@
 title: Exemple avancé pour les conteneurs
 description: ''
 ms.date: 04/18/2018
-ms.technology: vs-acquisition
-ms.custom: ''
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: e03835db-a616-41e6-b339-92b41d0cfc70
 author: heaths
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1c79051627bd59ae48b0ad88411a94f4cb36c78
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 90969307d328519c95997be2ff0e8fad87fdc0a1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159813"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939799"
 ---
 # <a name="advanced-example-for-containers"></a>Exemple avancé pour les conteneurs
 
@@ -91,6 +88,10 @@ ENTRYPOINT C:\BuildTools\Common7\Tools\VsDevCmd.bat &&
 # Default to PowerShell if no other command specified.
 CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
 ```
+   > [!WARNING]
+   > Quel que soit le produit, Visual Studio 2017 15.8 (ou une version antérieure) ne s’installe pas correctement sur mcr<span></span>.microsoft\.com\/windows\/servercore:1809 (ou une version ultérieure). Aucune erreur ne s’affiche.
+   >
+   > Pour plus d’informations, voir [Problèmes de conteneurs connus](build-tools-container-issues.md).
 
 Exécutez la commande suivante pour générer l’image dans le répertoire de travail actuel :
 

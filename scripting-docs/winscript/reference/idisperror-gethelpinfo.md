@@ -1,5 +1,5 @@
 ---
-title: IDispError::GetHelpInfo | Documents Microsoft
+title: IDispError::GetHelpInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 17098b4055bb61e9a2f639404edfe2214abc931e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8c2c8ae3a3cff2485c50901bb94ced83098e6000
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728009"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087488"
 ---
 # <a name="idisperrorgethelpinfo"></a>IDispError::GetHelpInfo
-Retourne le chemin d’accès du fichier d’aide et l’ID de contexte de la rubrique qui décrit l’erreur, si possible.  
+Retourne le chemin d’accès du fichier d’aide et l’ID de contexte de la rubrique qui explique l’erreur, si possible.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetHelpInfo(  
    BSTR*  pbstrFileName,  
    DWORD*  pdwContext  
@@ -47,15 +47,15 @@ HRESULT GetHelpInfo(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
 |`E_FAIL`|Une erreur spécifique au fournisseur s’est produite.|  
-|`E_INVALIDARG`|`pbstrFileName`ou `pdwContext` était NULL.|  
+|`E_INVALIDARG`|`pbstrFileName` ou `pdwContext` était NULL.|  
 |`E_OUTOFMEMORY`|Le fournisseur n’a pas pu allouer suffisamment de mémoire dans lequel retourner le chemin de fichier d’aide.|  
   
-## <a name="remarks"></a>Remarques  
- Cette méthode retourne le chemin d’accès du fichier d’aide et l’ID de contexte de la rubrique qui décrit l’erreur, si possible.  
+## <a name="remarks"></a>Notes  
+ Cette méthode retourne le chemin d’accès du fichier d’aide et l’ID de contexte de la rubrique qui explique l’erreur, si possible.  
   
 > [!NOTE]
 >  Cette méthode n’est pas implémentée.  

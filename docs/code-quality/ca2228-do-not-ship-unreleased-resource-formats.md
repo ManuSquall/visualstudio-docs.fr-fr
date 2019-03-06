@@ -1,8 +1,6 @@
 ---
-title: 'CA2228 : Ne distribuez pas des formats de ressources non commercialisés'
+title: 'CA2228 : Ne distribuez pas des formats de ressources non commercialisés'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - DoNotShipUnreleasedResourceFormats
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 2c614edc-4e94-4b4f-8067-eea677a75cd9
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 71667a9d00dd1935e8eaeb281c5f0c6834208702
-ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
+ms.openlocfilehash: 4355db8b15a3869e785589170bec3f80e8f08fbb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50244396"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923406"
 ---
-# <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228 : Ne distribuez pas des formats de ressources non commercialisés
+# <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228 : Ne distribuez pas des formats de ressources non commercialisés
 
 |||
 |-|-|

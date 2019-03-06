@@ -1,8 +1,6 @@
 ---
 title: SetThreadCount | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 apiname:
 - SetThreadCount
@@ -14,31 +12,32 @@ helpviewer_keywords:
 ms.assetid: 335335a5-8ca0-4e18-95f5-62aa6a691386
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cc9a1ae5f7fb51981f3cebc4d6fa658f614de6d
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 656e491e683c7ec2de23ea7e49938e833af3a295
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151838"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709614"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
-Définit le nombre global de threads et affecte ce nombre au thread actif.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cmd  
-HRESULT WINAPI SetThreadCount(int threadCount);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- [in] `threadCount`  
- Nombre de threads à utiliser.  
-  
-## <a name="return-value"></a>Valeur de retour  
- **HRESULT** avec le bit **SUCCEEDED** défini si le nombre de threads a été mis à jour.  
-  
-## <a name="requirements"></a>Configuration requise  
+Définit le nombre global de threads et affecte ce nombre au thread actif.
+
+## <a name="syntax"></a>Syntaxe
+
+```cmd
+HRESULT WINAPI SetThreadCount(int threadCount);
+```
+
+#### <a name="parameters"></a>Paramètres
+[in] `threadCount`
+
+ Nombre de threads à utiliser.
+
+## <a name="return-value"></a>Valeur de retour
+ **HRESULT** avec le bit **SUCCEEDED** défini si le nombre de threads a été mis à jour.
+
+## <a name="requirements"></a>Spécifications
  **En-tête :** *FileTracker.h*

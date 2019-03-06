@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 03e4dcd79d90806eab0d664b2a0cba428c03207c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e1d58419783d4f101a6018fe00d9c9a4ddc94548
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935326"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349645"
 ---
 # <a name="ienumdebugextendedpropertyinfoclone"></a>IEnumDebugExtendedPropertyInfo::Clone
 Crée un énumérateur qui contient le même état d’énumération que l’énumérateur en cours.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT Clone (  
    IEnumDebugExtendedPropertyInfo** ppEnum  
 );  

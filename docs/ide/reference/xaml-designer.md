@@ -1,22 +1,20 @@
 ---
 title: Page des options du concepteur XAML
 ms.date: 03/02/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.XAMLDesigner
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 52691c0b49c74bd39fa97ec8d297ffb823ba705c
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: f56b6405935bd46c7f1e225ce587ed3d13e5fd34
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388359"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954710"
 ---
 # <a name="xaml-designer-options-page"></a>Page des options du concepteur XAML
 
@@ -58,15 +56,15 @@ Utilisez ce paramètre pour déterminer le fonctionnement du zoom pendant la mod
 |||
 |-|-|
 |**Roulette de la souris**|Effectuez un zoom avant dans le concepteur XAML en faisant tourner la roulette de la souris.|
-|**Ctrl + roulette de la souris**|Effectuez un zoom avant dans le concepteur XAML en appuyant sur la touche Ctrl tout en faisant tourner la roulette de la souris.|
-|**Alt + roulette de la souris**|Effectuez un zoom avant dans le concepteur XAML en appuyant sur la touche Alt tout en faisant tourner la roulette de la souris.|
+|**Ctrl + roulette de la souris**|Effectuez un zoom avant dans le Concepteur XAML en appuyant sur la touche **Ctrl** tout en faisant tourner la roulette de la souris.|
+|**Alt + roulette de la souris**|Effectuez un zoom avant dans le Concepteur XAML en appuyant sur la touche **Alt** tout en faisant tourner la roulette de la souris.|
 
 Ces paramètres déterminent le comportement du concepteur pendant la modification d’un document XAML.
 
 |||
 |-|-|
 |**Nommer automatiquement les éléments interactifs à la création**|Spécifie si un nom par défaut est fourni pour un nouvel élément interactif quand vous l’ajoutez au concepteur.|
-|**Insérer automatiquement des propriétés de disposition après la création d’éléments**|Spécifie si des propriétés de disposition sont fournies pour un nouvel élément quand vous l’ajoutez au concepteur.|
+|**Insérer automatiquement des propriétés de disposition après la création d’éléments**|Spécifie si des propriétés de disposition sont fournies pour un nouvel élément quand vous l’ajoutez au concepteur. Les propriétés de disposition sont celles qui influent sur la disposition d’un contrôle, par exemple, Marge et Alignement vertical. Le code XAML suivant illustre la création d’un bouton avec et sans cette option :<br />`<Button Content="Button" HorizontalAlignment="Left" Margin="245,56,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>`<br />`<Button Content="Button" Grid.Row="1"/>`|
 |**Utiliser une disposition basée sur un quadrant**|Indique si le contrôle sélectionné s’aligne sur les bords les plus proches du conteneur parent. Si cette case est décochée, l’alignement des contrôles ne change pas pendant une opération de déplacement ou de création.|
 |**Remplir automatiquement les éléments de la boîte à outils**|Spécifie si les contrôles utilisateur et les contrôles personnalisés dans la solution actuelle sont automatiquement affichés dans la boîte à outils.|
 
@@ -76,7 +74,7 @@ Utilisez ces options pour déterminer des paramètres pendant de la modification
 
 |||
 |-|-|
-|**Zoomer en utilisant**|Effectuez un zoom avant dans le concepteur XAML en faisant tourner la roulette de la souris, ou en appuyant sur la touche Ctrl ou Alt tout en faisant tourner la roulette de la souris.|
+|**Zoomer en utilisant**|Effectuez un zoom avant dans le Concepteur XAML en faisant tourner la roulette de la souris, ou en appuyant sur la touche **Ctrl** ou **Alt** tout en faisant tourner la roulette de la souris.|
 |**Unités de type**|Spécifie si les mesures dans le concepteur sont basées sur des points ou des pixels. Comme les applications Windows universelles ne prennent pas en charge les points, les unités sont automatiquement converties en pixels si l’option **Points** est sélectionnée.|
 
 ## <a name="artboard-blend-only"></a>Planche graphique (Blend uniquement)
@@ -110,4 +108,4 @@ Utilisez ces paramètres pour déterminer si des effets sont affichés pendant l
 ## <a name="see-also"></a>Voir aussi
 
 - [Intégration du format XAML au format WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)
-- [Procédure pas à pas : ma première application de bureau WPF](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)
+- [Procédure pas à pas : Ma première application de bureau WPF](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)

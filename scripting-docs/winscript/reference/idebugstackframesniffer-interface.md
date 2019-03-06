@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrameSniffer (Interface) | Documents Microsoft
+title: Interface IDebugStackFrameSniffer | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 250c104d24f27900a6ff0eb8e8f72644f820bf5a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 41fff384bc9075d94fcfa84d94350fec72ebc64a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726799"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348878"
 ---
 # <a name="idebugstackframesniffer-interface"></a>IDebugStackFrameSniffer, interface
-Fournit un moyen pour énumérer les frames de pile logique connus par un composant. En général, les moteurs de script implémentent cette interface. Le processus débogage Gestionnaire utilise cette interface pour trouver tous les frames de pile associé à un thread donné.  
+Fournit un moyen pour énumérer les frames de pile logique appelées par un composant. En général, les moteurs de script implémentent cette interface. Le processus débogage Gestionnaire utilise cette interface pour trouver tous les frames de pile associée à un thread donné.  
   
 > [!NOTE]
 >  Le débogueur appelle cette interface à partir du thread d’intérêt. Le moteur de script doit identifier le thread actuel et retourne un énumérateur approprié.  
@@ -32,4 +32,4 @@ Fournit un moyen pour énumérer les frames de pile logique connus par un compos
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[IDebugStackFrameSniffer::EnumStackFrames](../../winscript/reference/idebugstackframesniffer-enumstackframes.md)|Retourne un énumérateur de frames de pile du thread actuel.|
+|[IDebugStackFrameSniffer::EnumStackFrames](../../winscript/reference/idebugstackframesniffer-enumstackframes.md)|Retourne un énumérateur de frames de pile pour le thread actuel.|

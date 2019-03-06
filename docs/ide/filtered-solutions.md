@@ -1,21 +1,21 @@
 ---
 title: Charge un sous-ensemble de projets
 ms.date: 12/04/2018
-ms.topic: conceptual
 ms.prod: visual-studio-dev16
-ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - filtered solution
 - solution filtering
 author: gewarren
 ms.author: stsu
-manager: douge
-ms.openlocfilehash: 655644e936bdfb1382e70d746f589b8fcfabf488
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+manager: jillfra
+monikerRange: '>= vs-2019'
+ms.openlocfilehash: 2f7163ecda377d8fa8b7c27ed50dae4068d39600
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52897172"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952916"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Solutions filtrées dans Visual Studio
 

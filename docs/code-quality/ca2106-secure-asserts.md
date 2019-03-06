@@ -1,8 +1,6 @@
 ---
 title: 'CA2106 : Assertions sécurisées'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2106
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 91feb36e-6e2c-436c-8272-5aee31f77e98
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ff16cdce4be04bd076c93763fb6a22d2721675f
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: c8d80c4e9a21c29ce7b34a3998e241b11713f355
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551780"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918219"
 ---
 # <a name="ca2106-secure-asserts"></a>CA2106 : Assertions sécurisées
 

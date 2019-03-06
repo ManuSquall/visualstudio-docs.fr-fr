@@ -1,20 +1,18 @@
 ---
 title: Meilleures pratiques et exemples (SAL)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 7922d381d61d40c20fa69859dd091849684723b2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 28d17301d81ee5b206feb0c3afefba35e50615cd
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899966"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940579"
 ---
 # <a name="best-practices-and-examples-sal"></a>Meilleures pratiques et exemples (SAL)
 Voici quelques méthodes permettant de tirer le meilleur hors de la langue Annotation du Code Source (SAL) et éviter certains problèmes courants.
@@ -67,7 +65,7 @@ void Func2(_Out_ int *p1)
 
 Si une fonction s’affiche sur une limite d’approbation, nous vous recommandons d’utiliser le `_Pre_defensive_` annotation.  Le modificateur « défensif » modifie certaines annotations pour indiquer que, au moment de l’appel, l’interface doit être strictement vérifiée, mais dans le corps de l’implémentation, il doit supposer que les paramètres incorrects peuvent être passés. Dans ce cas, `_In_ _Pre_defensive_` est préférable à une limite d’approbation pour indiquer que, bien que l’appelant obtiendra une erreur si elle tente de passer la valeur NULL, le corps de fonction est analysé comme si le paramètre peut être NULL et toute tentative de suppression de la référence du pointeur sans d’abord vérifier l’absence de valeur NULL sera signalé.  Un `_Post_defensive_` annotation est également disponible pour une utilisation dans les rappels où la partie de confiance est supposée pour être l’appelant et le code non fiable est le code appelé.
 
-## <a name="outwrites"></a>\_Out\_écrit\_
+## <a name="outwrites"></a>\_Out\_writes\_
 
 L’exemple suivant montre une utilisation abusive courantes de `_Out_writes_`.
 
@@ -145,7 +143,7 @@ BOOL StrEquals2(_In_ PSTR p1, _In_ PSTR p2)
 }
 ```
 
-## <a name="outrange"></a>\_Out\_plage\_
+## <a name="outrange"></a>\_Out\_range\_
 
 Si le paramètre est un pointeur et que vous souhaitez exprimer la plage de la valeur de l’élément qui est désignée par le pointeur, utilisez `_Deref_out_range_` au lieu de `_Out_range_`. Dans l’exemple suivant, la plage de * pcbFilled est exprimée, pcbFilled pas.
 

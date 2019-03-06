@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetSignature | Documents Microsoft
+title: IScriptEntry::GetSignature | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 062f069bb6a19c24f26a6a0bc6a9f4de2292d88f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 245b5806006ad94740e09e23f881e26e071a3bc1
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729319"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092727"
 ---
 # <a name="iscriptentrygetsignature"></a>IScriptEntry::GetSignature
 Retourne informations de type pour un `IScriptEntry` objet de fonction.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetSignature(  
    ITypeInfo          **ppti  
    ULONG              *piMethod  
@@ -39,7 +39,7 @@ HRESULT GetSignature(
   
 #### <a name="parameters"></a>Paramètres  
  `ppti`  
- [out] Tapez les informations associées à ce `IScriptEntry` objet de fonction.  
+ [out] Tapez les informations associées à cet `IScriptEntry` objet de fonction.  
   
  `piMethod`  
  [out] Index de la méthode dans le `ITypeInfo` objet.  
@@ -47,11 +47,11 @@ HRESULT GetSignature(
 ## <a name="return-value"></a>Valeur de retour  
  Élément `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Vous définissez des informations de type à l’aide de [IScriptEntry::SetSignature](../../winscript/reference/iscriptentry-setsignature.md) ou [IScriptNode::CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md). Informations de type peuvent également être générées par l’entrée en fonction de la représentation sous forme de la fonction interne.  
   
 ## <a name="see-also"></a>Voir aussi  

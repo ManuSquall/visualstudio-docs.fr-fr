@@ -7,15 +7,13 @@ helpviewer_keywords:
 ms.assetid: 417059bf-37ae-4e7a-b9b0-29bd71f1414f
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: eb77c9c037a46ad1195482abfddd102f50bcd1ae
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 398cbeab145a470e7b3cfc63312f289a5eb545a9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067273"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927956"
 ---
 # <a name="how-to-specify-the-maximum-size-for-the-log-file-for-load-tests"></a>Procédure : spécifier la taille maximale du fichier journal pour les tests de charge
 

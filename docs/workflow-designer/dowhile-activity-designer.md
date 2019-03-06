@@ -2,22 +2,20 @@
 title: Concepteur de flux de travail - Concepteur d’activités DoWhile
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.DoWhile.UI
 ms.assetid: 948deb35-d72f-462b-bea6-4b119c10a148
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19817fb23bd8a22532df7d349262b689f632a3a7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a0069d352897d2d98288988d549d9733a39b2c35
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839620"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918362"
 ---
 # <a name="dowhile-activity-designer"></a>Concepteur d'activités DoWhile
 

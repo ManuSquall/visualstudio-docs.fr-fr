@@ -1,7 +1,6 @@
 ---
-title: Guide pratique pour configurer des projets et cibler plusieurs plateformes
+title: 'Procédure : Configurer des projets pour qu’ils ciblent plusieurs plateformes'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: affa2392-7aed-45ac-9ffa-1d8e0496d590
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 308858941d03f6341cf3d22af074be45d790e16b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e1f302821b219266cf7080437a73cc577ffb0ffa
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930217"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920091"
 ---
-# <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Guide pratique pour configurer des projets et cibler plusieurs plateformes
+# <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Procédure : Configurer des projets pour qu’ils ciblent plusieurs plateformes
 
 Visual Studio permet à une solution de cibler en même temps plusieurs architectures de processeur, ou plateformes, différentes. Les propriétés permettant de les définir sont accessibles à l’aide de la boîte de dialogue **Gestionnaire de configurations**.
 

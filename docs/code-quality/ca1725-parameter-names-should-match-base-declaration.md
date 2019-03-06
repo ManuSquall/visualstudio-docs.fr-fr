@@ -1,8 +1,6 @@
 ---
-title: 'CA1725 : Les noms de paramètres doivent correspondre à la déclaration de base'
+title: 'CA1725 : Les noms des paramètres doivent correspondre à la déclaration de base'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - ParameterNamesShouldMatchBaseDeclaration
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 9b657ab0-fe81-4f4c-9481-ba746988c922
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13bacc9d0b805236c22177df38235412b6a60d9b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 54a7926cd0bf8eb2ebf526c1f19a00c71960900c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918166"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917686"
 ---
-# <a name="ca1725-parameter-names-should-match-base-declaration"></a>CA1725 : Les noms de paramètres doivent correspondre à la déclaration de base
+# <a name="ca1725-parameter-names-should-match-base-declaration"></a>CA1725 : Les noms des paramètres doivent correspondre à la déclaration de base
 
 |||
 |-|-|

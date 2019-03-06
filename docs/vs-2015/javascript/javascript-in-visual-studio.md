@@ -1,25 +1,20 @@
 ---
 title: JavaScript
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-javascript
+ms.topic: conceptual
 ms.assetid: f3eee13e-30e4-4bc1-81f5-058d7e379b75
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 05ef916c2ed4948f23adbb09a68b096d0a704a79
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 962657d19026f85e98b1f1d22241aa57013d7df6
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53050340"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834070"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ JavaScript est un langage de premier ordre dans Visual Studio. Vous pouvez utili
 
 - Pour créer des applications multiplateformes avec Apache Cordova, [procurez-vous Visual Studio Tools pour Apache Cordova](http://go.microsoft.com/fwlink/p/?LinkId=397606).
 
-- Pour créer des applications [Windows Store](http://dev.windows.com/develop), [Windows Phone](http://dev.windows.com/develop) et universelles (prenant en charge les deux plateformes), [procurez-vous les outils](http://dev.windows.com/en-us/develop/downloads).
+- Pour créer des applications [Windows Store](http://dev.windows.com/develop), [Windows Phone](http://dev.windows.com/develop) et universelles (prenant en charge les deux plateformes), [procurez-vous les outils](http://dev.windows.com/develop/downloads).
 
 - Pour créer des services cloud, consultez le [site Microsoft Azure](http://azure.microsoft.com/documentation/).
 
@@ -48,16 +43,16 @@ JavaScript est un langage de premier ordre dans Visual Studio. Vous pouvez utili
 
 |Fonctionnalité|Description|
 |-------------|-----------------|
-|Classes|La nouvelle syntaxe prend en charge la déclaration de [classes](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/class-statement-javascript.md).|
-|Promesses|Les [promesses](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/promise-object-javascript.md) permettent d’effectuer un codage asynchrone simplifié et épuré. Les constructeurs de promesses sont pris en charge, ainsi que les méthodes utilitaires `all` et `race`.|
-|Iterators|Vous pouvez désormais itérer des objets (tableaux et objets apparentés, itérateurs), en appelant un hook d'itération personnalisé contenant des instructions à exécuter pour la valeur de chaque propriété distincte. Pour plus d’informations, consultez [Itérateurs et générateurs](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/advanced/iterators-and-generators-javascript.md). **Remarque :**  Les générateurs ne sont pas pris en charge pour l'instant.|
+|Classes|La nouvelle syntaxe prend en charge la déclaration de [classes](/visualstudio/scripting-docs/javascript/reference/class-statement-javascript).|
+|Promesses|Les [promesses](/visualstudio/scripting-docs/javascript/reference/promise-object-javascript) permettent d’effectuer un codage asynchrone simplifié et épuré. Les constructeurs de promesses sont pris en charge, ainsi que les méthodes utilitaires `all` et `race`.|
+|Iterators|Vous pouvez désormais itérer des objets (tableaux et objets apparentés, itérateurs), en appelant un hook d'itération personnalisé contenant des instructions à exécuter pour la valeur de chaque propriété distincte. Pour plus d’informations, consultez [Itérateurs et générateurs](/visualstudio/scripting-docs/javascript/advanced/iterators-and-generators-javascript). **Remarque :**  Les générateurs ne sont pas pris en charge pour l'instant.|
 |Fonctions de flèche|La fonction de flèche (=>) fournit une syntaxe raccourcie pour le mot clé `function` contenant une liaison `this` lexicale.|
-|Nouvelles méthodes pour les objets intégrés|Les objets prédéfinis [Tableau](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/array-object-javascript.md), [Mathématiques](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/math-object-javascript.md), [Nombre](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/number-object-javascript.md), [Objet](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/object-object-javascript.md) et [Chaîne](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/string-object-javascript.md) comportent de nombreuses fonctions et propriétés nouvelles pour la manipulation et l’inspection de données.|
-|Améliorations du littéral d’objet|Les objets prennent désormais en charge les propriétés calculées, les définitions de méthode concises, et une syntaxe raccourcie pour les propriétés dont la valeur est initialisée à une variable du même nom. Pour plus d’informations, consultez [Création d’objets](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/creating-objects-javascript.md).|
-|Serveurs proxy|Les [proxys](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/proxy-object-javascript.md) permettent d’attribuer aux objets un comportement personnalisé.|
-|Paramètres REST|Les paramètres REST vous permettent de convertir des arguments consécutifs d’un appel de fonction en tableau. Pour plus d’informations, consultez [Fonctions](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/functions-javascript.md).|
-|Opérateur de diffusion|L’[opérateur de diffusion](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/spread-operator-decrement-dot-dot-dot-javascript.md) (`…`) développe des expressions pouvant être itérées dans des arguments individuels. Par exemple, `a.b(…array)` est sensiblement identique à `a.b.apply(a, array)`.|
-|Symboles|Les objets [symbole](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/symbol-object-javascript.md) permettent d’ajouter des propriétés à un objet existant sans risque d’interférence avec les siennes propres, sans visibilité involontaire, et sans ajout non coordonné par un autre code.|
-|Chaînes de modèle|Les [chaînes de modèles](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/advanced/template-strings-javascript.md) sont des littéraux de chaîne qui permettent l’évaluation et la concaténation des expressions avec le littéral de chaîne.|
-|Améliorations Unicode|Des améliorations ont été apportées à la prise en charge d'Unicode. Par exemple, un nouveau format de séquence d'échappement prend en charge les points de code astral (points de code avec plus de quatre chiffres hexadécimaux). Pour plus d’informations, consultez [Caractères spéciaux](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/advanced/special-characters-javascript.md).|
-|WeakSet|Un [WeakSet](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/weakset-object-javascript.md) est une collection d’objets qui seront effacés de la mémoire s’ils ne sont référencés nulle part ailleurs.|
+|Nouvelles méthodes pour les objets intégrés|Les objets prédéfinis [Tableau](/visualstudio/scripting-docs/javascript/reference/array-object-javascript), [Mathématiques](/visualstudio/scripting-docs/javascript/reference/math-object-javascript), [Nombre](/visualstudio/scripting-docs/javascript/reference/number-object-javascript), [Objet](/visualstudio/scripting-docs/javascript/reference/object-object-javascript) et [Chaîne](/visualstudio/scripting-docs/javascript/reference/string-object-javascript) comportent de nombreuses fonctions et propriétés nouvelles pour la manipulation et l’inspection de données.|
+|Améliorations du littéral d’objet|Les objets prennent désormais en charge les propriétés calculées, les définitions de méthode concises, et une syntaxe raccourcie pour les propriétés dont la valeur est initialisée à une variable du même nom. Pour plus d’informations, consultez [Création d’objets](/visualstudio/scripting-docs/javascript/creating-objects-javascript).|
+|Serveurs proxy|Les [proxys](/visualstudio/scripting-docs/javascript/reference/proxy-object-javascript) permettent d’attribuer aux objets un comportement personnalisé.|
+|Paramètres REST|Les paramètres REST vous permettent de convertir des arguments consécutifs d’un appel de fonction en tableau. Pour plus d’informations, consultez [Fonctions](/visualstudio/scripting-docs/javascript/functions-javascript).|
+|Opérateur de diffusion|L’[opérateur de diffusion](/visualstudio/scripting-docs/javascript/reference/spread-operator-decrement-dot-dot-dot-javascript) (`…`) développe des expressions pouvant être itérées dans des arguments individuels. Par exemple, `a.b(…array)` est sensiblement identique à `a.b.apply(a, array)`.|
+|Symboles|Les objets [symbole](/visualstudio/scripting-docs/javascript/reference/symbol-object-javascript) permettent d’ajouter des propriétés à un objet existant sans risque d’interférence avec les siennes propres, sans visibilité involontaire, et sans ajout non coordonné par un autre code.|
+|Chaînes de modèle|Les [chaînes de modèles](/visualstudio/scripting-docs/javascript/advanced/template-strings-javascript) sont des littéraux de chaîne qui permettent l’évaluation et la concaténation des expressions avec le littéral de chaîne.|
+|Améliorations Unicode|Des améliorations ont été apportées à la prise en charge d'Unicode. Par exemple, un nouveau format de séquence d'échappement prend en charge les points de code astral (points de code avec plus de quatre chiffres hexadécimaux). Pour plus d’informations, consultez [Caractères spéciaux](/visualstudio/scripting-docs/javascript/advanced/special-characters-javascript).|
+|WeakSet|Un [WeakSet](/visualstudio/scripting-docs/javascript/reference/weakset-object-javascript) est une collection d’objets qui seront effacés de la mémoire s’ils ne sont référencés nulle part ailleurs.|

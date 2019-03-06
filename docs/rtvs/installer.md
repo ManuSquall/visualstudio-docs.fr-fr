@@ -2,20 +2,18 @@
 title: Bienvenue dans Outils R pour Visual Studio
 description: Informations résumées pour les développeurs ayant installé des outils R pour Visual Studio.
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 2dd23b87bc3d362f7d198cdd0e5d63e0ebac26d5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 15b8a91c0b29b71b85ee5f82dc3b8d662c80549e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35667052"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909152"
 ---
 # <a name="welcome-to-r-tools-for-visual-studio"></a>Bienvenue dans Outils R pour Visual Studio
 

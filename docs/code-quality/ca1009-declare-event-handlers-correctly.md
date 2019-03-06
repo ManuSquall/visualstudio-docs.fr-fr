@@ -1,8 +1,6 @@
 ---
-title: "CA1009 : Déclarer les gestionnaires d'événements correctement"
+title: "CA1009 : Déclarer les gestionnaires d'événements correctement"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1009
@@ -13,21 +11,21 @@ helpviewer_keywords:
 ms.assetid: ab65c471-1449-49d2-9896-7b9af74284b4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7697b394396f729133b7cb6a7f3c0501c5c45202
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: c3c5d2df6be4fef281d91794b5b71bfa0c3e653f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547394"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956066"
 ---
-# <a name="ca1009-declare-event-handlers-correctly"></a>CA1009 : Déclarer les gestionnaires d'événements correctement
+# <a name="ca1009-declare-event-handlers-correctly"></a>CA1009 : Déclarer les gestionnaires d'événements correctement
 
 |||
 |-|-|

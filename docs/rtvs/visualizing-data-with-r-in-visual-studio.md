@@ -2,20 +2,18 @@
 title: Visualisation des données avec R
 description: Guide pratique pour tracer des données à partir de programmes R dans Visual Studio, à l’aide de fenêtres de traçage.
 ms.date: 06/29/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: f44ba213defef153acd2f5d1ef247bb093448263
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: a48ad7800f8ea2b992e848cfbf6b4fdac99b2062
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235253"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911765"
 ---
 # <a name="create-visual-data-plots-with-r"></a>Créer des tracés de données visuels avec R
 
@@ -39,7 +37,7 @@ Les fenêtres de tracés sont indépendantes des projets Visual Studio et resten
 
 La génération d’un tracé utilise la fenêtre de tracés « active » et enregistre tout tracé précédent dans l’historique de tracés (consultez [Historique de tracés](#plot-history)). Par exemple, entrez `plot(100:1)` et le premier tracé est remplacé par une ligne vers le bas.
 
-Comme toutes les autres fenêtres de Visual Studio, la fenêtre de tracés prend en charge les dispositions personnalisées (voir [Personnalisation des dispositions de fenêtres dans Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md)). Les fenêtres de tracés peuvent être ancrées à différents emplacements dans le cadre de Visual Studio, redimensionnées dans ce cadre ou extraites entièrement du cadre pour un redimensionnement indépendant. 
+Comme toutes les autres fenêtres de Visual Studio, la fenêtre de tracés prend en charge les dispositions personnalisées (voir [Personnalisation des dispositions de fenêtres dans Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md)). Les fenêtres de tracés peuvent être ancrées à différents emplacements dans le cadre de Visual Studio, redimensionnées dans ce cadre ou extraites entièrement du cadre pour un redimensionnement indépendant.
 
 Le redimensionnement d’une fenêtre de tracé provoque toujours le réaffichage du tracé, afin de fournir la meilleure qualité d’image. Vous voulez généralement redimensionner un tracé avant de l’exporter vers un fichier ou vers le Presse-papiers à l’aide des commandes décrites dans la section suivante.
 
@@ -47,7 +45,7 @@ Le redimensionnement d’une fenêtre de tracé provoque toujours le réaffichag
 
 La barre d’outils de la fenêtre de tracés contient des commandes applicables, dont la plupart sont également disponibles par l’intermédiaire du menu **Outils R** > **Tracés**.
 
-| Bouton | Commande | Description | 
+| Bouton | Commande | Description |
 | --- | --- | --- |
 | ![Bouton Nouvelle fenêtre de tracés](media/plotting-toolbar-01-new-plot-window.png) | Nouvelle fenêtre de tracés | Crée une fenêtre de tracés distincte avec son propre historique. Voir [Plusieurs fenêtres de tracés](#multiple-plot-windows). |
 | ![Bouton Activer la fenêtre de tracés](media/plotting-toolbar-02-activate-plot-window.png) | Activer la fenêtre de tracés | Définit la fenêtre de tracés active comme fenêtre active, afin que les commandes `plot` ultérieures soient affichées dans cette fenêtre. Voir [Plusieurs fenêtres de tracés](#multiple-plot-windows). Voir [Plusieurs fenêtres de tracés](#multiple-plot-windows). |
@@ -55,8 +53,8 @@ La barre d’outils de la fenêtre de tracés contient des commandes applicables
 | ![Boutons Historique des tracés](media/plotting-toolbar-04-plot-history-arrows.png) | Tracé précédent/suivant |  Accès au tracé précédent ou suivant dans l’historique. Vous pouvez également parcourir l’historique avec Ctrl+Alt+F11 (Précédent) et Ctrl+Alt+F12 (Suivant). Voir [Historique de tracés](#plot-history). |
 | ![Bouton Enregistrer en tant qu’image](media/plotting-toolbar-05-save-as-image.png)| Enregistrer en tant qu’image | Invite à entrer un nom de fichier et enregistre le tracé actuel (le contenu de la fenêtre, à la taille de la fenêtre) dans un fichier image. Les formats disponibles sont `.png`, `.jpg`, `.bmp` et `.tif`. |
 | ![Bouton Enregistrer au format PDF](media/plotting-toolbar-06-save-as-pdf.png)| Enregistrer au format PDF | Enregistre le tracé actuel dans un fichier PDF, à l’aide de la taille de fenêtre actuelle. Le tracé sera réaffiché si le fichier PDF est mis à l’échelle. |
-| ![Bouton Copier en tant qu’image bitmap](media/plotting-toolbar-07-copy-as-bitmap.png)| Copier en tant qu’image bitmap | Copie le tracé dans le Presse-papiers sous forme de bitmap raster, à l’aide de la taille de fenêtre actuelle. | 
-| ![Bouton Copier en tant que métafichier](media/plotting-toolbar-08-copy-as-metafile.png)| Copier en tant que métafichier | Copie le tracé dans le Presse-papiers en tant que [métafichier Windows](https://en.wikipedia.org/wiki/Windows_Metafile) (Wikipedia). | 
+| ![Bouton Copier en tant qu’image bitmap](media/plotting-toolbar-07-copy-as-bitmap.png)| Copier en tant qu’image bitmap | Copie le tracé dans le Presse-papiers sous forme de bitmap raster, à l’aide de la taille de fenêtre actuelle. |
+| ![Bouton Copier en tant que métafichier](media/plotting-toolbar-08-copy-as-metafile.png)| Copier en tant que métafichier | Copie le tracé dans le Presse-papiers en tant que [métafichier Windows](https://en.wikipedia.org/wiki/Windows_Metafile) (Wikipedia). |
 | ![Bouton Supprimer le tracé](media/plotting-toolbar-09-remove-plot.png)| Supprimer le tracé | Supprime le tracé actuel de l’historique. |
 | ![Bouton Effacer tous les tracés](media/plotting-toolbar-10-clear-all-plots.png) | Effacer tous les tracés | Supprime tous les tracés de l’historique (affiche une invite de confirmation). |
 
@@ -85,9 +83,9 @@ La durée de vie de votre historique de tracés dans toutes les fenêtres est li
 
 ## <a name="programmatically-manipulate-plot-windows"></a>Manipuler des fenêtres de tracés par programmation
 
-Vous pouvez manipuler les fenêtres de tracés par programmation à partir de code R, en utilisant des numéros de périphériques pour identifier des fenêtres de tracés spécifiques. 
+Vous pouvez manipuler les fenêtres de tracés par programmation à partir de code R, en utilisant des numéros de périphériques pour identifier des fenêtres de tracés spécifiques.
 
-- `dev.list()` : répertorie tous les périphériques d’affichage dans la session R active.
-- `dev.new()` : crée un périphérique d’affichage (une nouvelle fenêtre de tracés).
-- `dev.set(<device number>)` : définit le périphérique tracé actif.
-- `dev.off()` : supprime le périphérique actif.
+- `dev.list()`: liste tous les périphériques graphiques dans la session R active.
+- `dev.new()`: crée un périphérique graphique (une nouvelle fenêtre de tracés).
+- `dev.set(<device number>)`: définit le périphérique graphique actif.
+- `dev.off()`: supprime le périphérique actif.

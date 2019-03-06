@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 10/03/2017
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Découvrez comment localiser et télécharger les produits Microsoft inclus dans votre abonnement Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ec2dd900e0cfae3b150bba52e31834efb53628e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5aec4ca179f5adc77a01538807ae3498c69964ae
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831430"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842998"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Utilisation de téléchargements réservés aux abonnés dans des abonnements Visual Studio
 Dans le cadre de vos avantages réservés aux abonnés, vous avez accès à un large éventail de téléchargements de logiciels.
@@ -30,7 +28,7 @@ Des produits particuliers peuvent ne pas être disponibles pour les abonnés pou
 - **Le produit est disponible au grand public.** Certains outils, SDK, DDK et Service Packs sont accessibles au grand public à partir du [Centre de téléchargement Microsoft](https://www.microsoft.com/download). Certains de ces produits peuvent ne pas être publiés en vue d’être téléchargés.
 - **Le produit n’a pas encore été publié**  De nombreuses préversions (versions bêta) et versions finales sont disponibles au téléchargement. Toutefois, toutes les versions bêta ne peuvent pas être incluses ; par exemple, certaines nécessitent une inscription ou une éligibilité spéciale. Pour plus d’informations sur les programmes techniques bêta ouverts, consultez [Microsoft Connect](http://connect.microsoft.com/).
 - **Le produit n’est pas disponible dans votre pays.** Certains produits Microsoft ne sont pas disponibles en raison de restrictions régionales.
-- **Logiciel redondant.** Certains téléchargements et certaines clés de produit (Product Keys) des suites Office et des produits Office autonomes ne sont plus disponibles dans les abonnements qui incluent Office. Ces téléchargements et clés de produit restent toutefois disponibles pour la suite Office correspondante du niveau le plus élevé de la même version.  Par exemple, si vous recherchez Powerpoint 2010, la recherche ne produira pas de résultat.  Cependant, vous pouvez rechercher Office 2010 (la suite Office qui contenait Powerpoint 2010) et télécharger la suite.
+- **Logiciel redondant.** Certains téléchargements et certaines clés de produit (Product Keys) des suites Office et des produits Office autonomes ne sont plus disponibles dans les abonnements qui incluent Office. Ces téléchargements et clés de produit restent toutefois disponibles pour la suite Office correspondante du niveau le plus élevé de la même version.  Par exemple, si vous recherchez PowerPoint 2010, la recherche ne produira pas de résultat.  Cependant, vous pouvez rechercher Office 2010 (la suite Office qui contenait PowerPoint 2010) et télécharger la suite.
 
 ## <a name="what-do-i-get"></a>Qu’est-ce que j’obtiens ?
 Le nombre et le type de téléchargements dépendent de votre niveau d’abonnement et de vos adhésions à des programmes.  Les téléchargements disponibles pour les abonnés disposant d’abonnements Visual Studio Enterprise standard peuvent, par exemple, être différents de ceux disponibles pour les abonnés qui obtiennent leurs abonnements par l’intermédiaire d’un abonnement au programme Microsoft Partner Network ou BizSpark.  Pour en savoir plus sur les téléchargements disponibles pour chaque niveau d’abonnement, téléchargez la liste des [produits par niveau d’avantage](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx).

@@ -8,15 +8,13 @@ helpviewer_keywords:
 ms.assetid: ba16ed02-137e-40bf-a4cb-45d87d922d37
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: a2bc06ed17522eef36841b72859554163068afa6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 130f7296985aa5c5e6115cd3e61b00efd90f25c7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048631"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934443"
 ---
 # <a name="edit-load-tests"></a>Modifier des tests de charge
 

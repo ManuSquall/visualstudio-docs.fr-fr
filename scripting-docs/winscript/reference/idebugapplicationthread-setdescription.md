@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThread::SetDescription | Documents Microsoft
+title: IDebugApplicationThread::SetDescription | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 941e2e5ac9843c8894a4dd83e23ab132620b8a02
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9d1e1efc44b6e7f2a7d0bb3bf2de1a492c6793c8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725709"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089854"
 ---
 # <a name="idebugapplicationthreadsetdescription"></a>IDebugApplicationThread::SetDescription
 Définit la description de ce thread.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT SetDescription(  
    LPCOLESTR  pstrDescription  
 );  
@@ -38,16 +38,16 @@ HRESULT SetDescription(
   
 #### <a name="parameters"></a>Paramètres  
  `pstrDescription`  
- [in] La description de ce thread.  
+ [in] Description de ce thread.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette méthode définit la description de ce thread.  
   
 ## <a name="see-also"></a>Voir aussi  

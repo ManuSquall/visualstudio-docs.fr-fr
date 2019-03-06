@@ -1,11 +1,18 @@
 ---
-ms.technology: vs-ai-tools
-ms.openlocfilehash: 7e09023659b1f44af1951e157878d78b641be3f3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+title: Créer un projet AI à partir d’un code existant
+author: lisawong19
+ms.author: liwong
+manager: routlaw
+ms.date: 11/13/2017
+ms.topic: conceptual
+ms.workload:
+- multiple
+ms.openlocfilehash: 57003538072c372ce877c40db76922d6eed7397d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915943"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840816"
 ---
 # <a name="create-an-ai-project-from-existing-code"></a>Créer un projet AI à partir d’un code existant
 
@@ -31,7 +38,7 @@ Une fois que vous avez [installé Visual Studio Tools pour AI](installation.md),
 5. Exécutez le programme en appuyant sur **Ctrl**+**F5** ou en sélectionnant **Déboguer > Démarrer sans débogage**.
 
 > [!div class="nextstepaction"]
-> [Didacticiel : Utilisation de Python dans Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md)
+> [Tutoriel : Utilisation de Python dans Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md)
 
 ## <a name="see-also"></a>Voir aussi
 

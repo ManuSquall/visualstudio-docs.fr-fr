@@ -1,32 +1,27 @@
 ---
 title: 'Procédure pas à pas : Déploiement d’une définition de liste de tâches de projet | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
-- VB
-- CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e0a0338f14ecdea36c5a5678a42a76ae234bb6d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7ea7063ce432841e812312b7c7c36721a7d2d099
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280361"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625736"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>Procédure pas à pas : Déployer une définition de liste de tâches de projet
 
-Cette procédure pas à pas explique comment créer, personnaliser, déboguer et déployer une liste SharePoint à l'aide de [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] en vue d'effectuer le suivi des tâches du projet.
+Cette procédure pas à pas explique comment créer, personnaliser, déboguer et déployer une liste SharePoint à l’aide de [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] en vue d’effectuer le suivi des tâches du projet.
 
 [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -143,7 +138,7 @@ Une fois que vous générez et testez la liste de tâches de projet, vous pouvez
 
 Dans la barre de menus de Visual Studio, choisissez **Build** > **déployer la Solution**.
 
-Visual Studio recycle le pool d’applications IIS, retire toutes les versions existantes de la solution, copie le package de solution (*.wsp*) de fichiers sur SharePoint et ensuite activer ses fonctionnalités. Vous pouvez maintenant utiliser la solution dans SharePoint. Pour plus d’informations sur les étapes de configuration de déploiement, consultez [Comment : modifier une configuration de déploiement SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).
+Visual Studio recycle le pool d’applications IIS, retire toutes les versions existantes de la solution, copie le package de solution (*.wsp*) de fichiers sur SharePoint et ensuite activer ses fonctionnalités. Vous pouvez maintenant utiliser la solution dans SharePoint. Pour plus d’informations sur les étapes de configuration de déploiement, consultez [Comment : Modifier une configuration de déploiement SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).
 
 ### <a name="to-deploy-the-project-task-list-to-a-remote-system"></a>Pour déployer la liste des tâches projet sur un système distant
 
@@ -175,7 +170,7 @@ Pour plus d’informations sur comment personnaliser et déployer des solutions 
 
 - [Procédure pas à pas : Créer une colonne de site, le type de contenu et la liste pour SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)
 
-- [Comment : créer un récepteur d’événements](../sharepoint/how-to-create-an-event-receiver.md)
+- [Guide pratique pour Créer un récepteur d’événements](../sharepoint/how-to-create-an-event-receiver.md)
 
 - [PowerShell de Windows pour SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=217684)
 

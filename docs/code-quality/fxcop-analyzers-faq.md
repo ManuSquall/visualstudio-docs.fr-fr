@@ -1,22 +1,20 @@
 ---
 title: Analyse de code FxCop et analyseurs FxCop
 ms.date: 09/06/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: overview
 helpviewer_keywords:
 - code analysis FAQ
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e05dd0e01254bf1222a8a7de497b11ec2a808bfb
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 319b9a5a63313535889a3396794c9481b6fe4965
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46136365"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949042"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Questions fréquentes (FAQ) sur FxCop et les analyseurs FxCop
 

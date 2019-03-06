@@ -1,22 +1,18 @@
 ---
 title: Espaces de travail dans Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 02/21/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
-ms.assetid: 3489592a-dc0c-4cd3-9b08-cd367626980a
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0230201677fd2422817ca1fbeab6679a424e5c05
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 011781b434c4d005e473c5f97c60a9269dc5d034
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865828"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324232"
 ---
 # <a name="workspaces"></a>Espaces de travail
 
@@ -179,9 +175,21 @@ Un contexte d’interface utilisateur peut être utilisé pour charger automatiq
 
 ### <a name="the-sourceexplorerpackage-package-did-not-load-correctly"></a>Le package SourceExplorerPackage n’a pas été chargé correctement
 
-Extensibilité de l’espace de travail est largement basé sur MEF, et les erreurs de composition génère le package à ouvrir le dossier pour l’échec du chargement d’hébergement. Par exemple, si une extension exporte un type avec `ExportFileContextProviderAttribute`, mais le type implémente uniquement `IWorkspaceProviderFactory<IFileContextActionProvider>`, une erreur se produit lorsque vous tentez d’ouvrir un dossier dans Visual Studio. Vous trouverez les détails de l’erreur dans _%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Corrigez les erreurs pour les types implémentés par votre extension.
+Extensibilité de l’espace de travail est largement basé sur MEF, et les erreurs de composition génère le package à ouvrir le dossier pour l’échec du chargement d’hébergement. Par exemple, si une extension exporte un type avec `ExportFileContextProviderAttribute`, mais le type implémente uniquement `IWorkspaceProviderFactory<IFileContextActionProvider>`, une erreur se produit lorsque vous tentez d’ouvrir un dossier dans Visual Studio.
+
+::: moniker range="vs-2017"
+
+Vous trouverez les détails de l’erreur dans _%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Corrigez les erreurs pour les types implémentés par votre extension.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Vous trouverez les détails de l’erreur dans _%LOCALAPPDATA%\Microsoft\VisualStudio\16.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Corrigez les erreurs pour les types implémentés par votre extension.
+
+::: moniker-end
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-* [Contextes de fichiers](workspace-file-contexts.md) -fournisseurs de contexte de fichier mettre intelligence de code pour les espaces de travail ouvrir le dossier. 
+* [Contextes de fichiers](workspace-file-contexts.md) -fournisseurs de contexte de fichier mettre intelligence de code pour les espaces de travail ouvrir le dossier.
 * [L’indexation](workspace-indexing.md) -espace de travail d’indexation collecte et conserve des informations sur l’espace de travail.

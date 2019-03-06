@@ -1,26 +1,24 @@
 ---
-title: Test unitaire dans Node.js
-description: Visual Studio fournit la prise en charge du test unitaire du code JavaScript à l’aide de Node.js Tools pour Visual Studio
-ms.custom: ''
+title: Tests unitaires JavaScript et TypeScript
+description: Visual Studio fournit la prise en charge des tests unitaires du code JavaScript et TypeScript à l’aide de Node.js Tools pour Visual Studio
 ms.date: 06/06/2018
-ms.technology: vs-nodejs
 ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 071f64c4239441d3c3fd2c111d1b912175e23316
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 7ad0105cffc99894134dc58af7c71c9f95bceace
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766536"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54946696"
 ---
-# <a name="unit-testing-in-nodejs"></a>Test unitaire dans Node.js
+# <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Test unitaire JavaScript et TypeScript dans Visual Studio
 
 Node.js Tools pour Visual Studio vous permet d’écrire et d’exécuter des tests unitaires à l’aide de certains des frameworks JavaScript les plus courants sans avoir besoin de passer à une invite de commandes.
 

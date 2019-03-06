@@ -3,28 +3,27 @@ title: Déboguer du code ASP.NET
 description: Déboguer du code ASP.NET avec le débogueur Visual Studio
 ms.custom: mvc
 ms.date: 08/06/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
 ms.assetid: f4cea2e1-08dc-47ac-aba2-3b8c338e607f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 74671401b3e3eaeae5840110dfc37c926266f98a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 0839fae55c9aeaeb5018ec1b1acba3c62984349a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636985"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683595"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Démarrage rapide : Déboguer du code ASP.NET avec le débogueur Visual Studio
 
 Le débogueur Visual Studio fournit de nombreuses fonctionnalités puissantes pour vous aider à déboguer vos applications. Cette rubrique vous offre un moyen rapide de vous familiariser avec quelques-unes des fonctionnalités de base.
 
-## <a name="create-a-new-project"></a>Créer un projet 
+## <a name="create-a-new-project"></a>Créer un projet
 
 1. Dans Visual Studio, sélectionnez **Fichier > Nouveau projet**.
 
@@ -49,7 +48,7 @@ Le débogueur Visual Studio fournit de nombreuses fonctionnalités puissantes po
     }
     ```
 
-    par ce code :
+    par le code suivant :
 
     ```csharp
     public void OnGet()
@@ -72,13 +71,13 @@ Le débogueur Visual Studio fournit de nombreuses fonctionnalités puissantes po
     }
     ```
 
-## <a name="set-a-breakpoint"></a>Définir un point d’arrêt
+## <a name="set-a-breakpoint"></a>Définir un point d'arrêt
 
 Un *point d’arrêt* est un marqueur qui indique où Visual Studio doit interrompre l’exécution du code pour vous permettre d’examiner les valeurs des variables, le comportement de la mémoire, ou l’exécution ou non d’une branche de code. C’est la fonctionnalité la plus élémentaire du débogage.
 
 1. Pour définir le point d’arrêt, cliquez dans la marge à gauche de la fonction `doWork` (ou sélectionnez la ligne de code et appuyez sur **F9**).
 
-    ![Définir un point d’arrêt](../debugger/media/dbg-qs-set-breakpoint-aspnet.png)
+    ![Définir un point d'arrêt](../debugger/media/dbg-qs-set-breakpoint-aspnet.png)
 
     Le point d’arrêt est défini à gauche de l’accolade ouvrante (`{`).
 
@@ -103,7 +102,7 @@ Avec l’exécution en pause au point d’arrêt, placez le curseur sur l’inst
 
 L’application poursuit son exécution, puis se met en pause sur la ligne de code où vous avez cliqué sur le bouton.
 
-**F10** et **F11** sont des commandes clavier fréquemment utilisées pour avancer pas à pas dans le code. Pour des instructions plus détaillées, consultez le [Guide du débutant](../debugger/getting-started-with-the-debugger.md).
+**F10** et **F11** sont des commandes clavier fréquemment utilisées pour avancer pas à pas dans le code. Pour des instructions plus détaillées, voir [Présentation du débogueur](../debugger/debugger-feature-tour.md).
 
 ## <a name="inspect-variables-in-a-datatip"></a>Inspecter des variables dans une bulle d’informations (datatip)
 
@@ -111,11 +110,11 @@ L’application poursuit son exécution, puis se met en pause sur la ligne de co
 
     ![Afficher un datatip](../debugger/media/dbg-qs-data-tip-aspnet.png)
 
-    La bulle d’informations (datatip) vous montre la valeur actuelle de la variable `c2` et vous permet d’inspecter ses propriétés. Lors du débogage, si vous remarquez une valeur que vous n’attendiez pas, vous avez probablement un bogue dans les lignes de code précédentes ou appelantes. 
+    La bulle d’informations (datatip) vous montre la valeur actuelle de la variable `c2` et vous permet d’inspecter ses propriétés. Lors du débogage, si vous remarquez une valeur que vous n’attendiez pas, vous avez probablement un bogue dans les lignes de code précédentes ou d’appel.
 
 2. Développez le datatip pour examiner les valeurs des propriétés actuelles de l’objet `c2`.
 
-3. Si vous voulez épingler le datatip pour continuer à voir la valeur de `c2` pendant que vous exécutez du code, cliquez sur la petite icône d’épingle. (Vous pouvez déplacer le datatip épinglé à un emplacement approprié.)
+3. Si vous voulez épingler le datatip pour continuer à voir la valeur de `c2` pendant que vous exécutez du code, cliquez sur la petite icône d’épingle. (Vous pouvez déplacer le datatip épinglé vers un emplacement approprié.)
 
 ## <a name="edit-code-and-continue-debugging"></a>Modifier le code et continuer le débogage
 
@@ -127,9 +126,9 @@ Si vous identifiez une modification que vous voulez tester dans votre code penda
 
     ![Modifier & Continuer](../debugger/media/dbg-qs-edit-and-continue-aspnet.png "Modifier & Continuer")
 
-    **F10** fait avancer le débogueur d’une instruction à la fois, mais il passe les fonctions, au lieu d’y effectuer un pas à pas détaillé (le code que vous ignorez ainsi s’exécute néanmoins).
+    **F10** fait avancer le débogueur d’une instruction à la fois, mais il effectue un pas à pas principal sur les fonctions au lieu d’un pas à pas détaillé (le code que vous ignorez s’exécute tout de même).
 
-Pour plus d’informations sur l’utilisation Modifier & Continuer et sur les limitations de cette fonctionnalité, consultez [Modifier & Continuer](../debugger/edit-and-continue.md).
+Pour plus d’informations sur l’utilisation de Modifier & Continuer et sur les limitations de cette fonctionnalité, consultez [Modifier & Continuer](../debugger/edit-and-continue.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

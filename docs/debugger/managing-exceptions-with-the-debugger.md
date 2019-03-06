@@ -2,7 +2,6 @@
 title: Gérer les exceptions avec le débogueur | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/09/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.exceptions
@@ -31,21 +30,21 @@ helpviewer_keywords:
 ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02c7fbfca9a63ac736972ebea01a854e24f90188
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: HT
+ms.openlocfilehash: b83cb026bec6d33490517e5703a042b4a8e2434c
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057916"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428698"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Gérer les exceptions avec le débogueur dans Visual Studio
 
-Une exception est une indication d'un état d'erreur qui se produit pendant qu'un programme est en cours d'exécution. Vous pouvez demander au débogueur les exceptions ou les ensembles d’exceptions pour rompre sur, et à quel point vous voulez le débogueur s’arrête. Lorsque le débogueur s’arrête, il vous montre où l’exception a été levée. Vous pouvez également ajouter ou supprimer des exceptions. Avec une solution ouverte dans Visual Studio, utilisez **Déboguer > Windows > Paramètres d’Exception** pour ouvrir le **paramètres d’Exception** fenêtre.
+Une exception est une indication d'un état d'erreur qui se produit pendant qu'un programme est en cours d'exécution. Vous pouvez demander au débogueur les exceptions ou des ensembles de s’arrêter sur les exceptions et à quel point vous voulez le débogueur s’arrête (autrement dit, mettre en pause dans le débogueur). Lorsque le débogueur s’arrête, il vous montre où l’exception a été levée. Vous pouvez également ajouter ou supprimer des exceptions. Avec une solution ouverte dans Visual Studio, utilisez **Déboguer > Windows > Paramètres d’Exception** pour ouvrir le **paramètres d’Exception** fenêtre.
 
-Fournir des gestionnaires qui répondent aux exceptions plus importantes. Découvrez également comment configurer le débogueur pour toujours arrêter l’exécution pour certaines exceptions.
+Fournir des gestionnaires qui répondent aux exceptions plus importantes. Si vous avez besoin de savoir comment ajouter des gestionnaires pour les exceptions, consultez [corriger les bogues en écrivant mieux C# code](../debugger/write-better-code-with-visual-studio.md). En outre, découvrez comment configurer le débogueur pour toujours arrêter l’exécution pour certaines exceptions.
 
 Quand une exception est levée, le débogueur écrit un message d’exception dans la fenêtre **Sortie**. Cette action peut interrompre l’exécution dans l’exemple suivant cas quand :
 
@@ -67,7 +66,7 @@ Le débogueur peut arrêter l’exécution au point où une exception est levée
 
 Dans le **paramètres d’Exception** fenêtre (**Déboguer > Windows > Paramètres d’Exception**), développez le nœud d’une catégorie d’exceptions, tel que **Exceptions Common Language Runtime**. Puis sélectionnez la case à cocher pour une exception spécifique de cette catégorie, comme **System.AccessViolationException**. Vous pouvez également sélectionner une catégorie entière d'exceptions.
 
-![Vérifié AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")
+![Checked AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")
 
 > [!TIP]
 > Vous pouvez trouver des exceptions spécifiques à l’aide de la **recherche** fenêtre dans le **paramètres d’Exception** barre d’outils, ou utilisez recherche pour filtrer des espaces de noms spécifiques (telles que **System.IO**).
@@ -205,7 +204,7 @@ Vous pouvez ajouter l’exception à **paramètres d’Exception** à l’aide d
 Utilisez le **paramètres d’Exception** fenêtre pour définir des conditions sur les exceptions. Conditions actuellement pris en charge incluent les noms de module à inclure ou exclure de l’exception. En définissant des noms de module en tant que conditions, vous pouvez choisir Arrêter l’exécution de l’exception uniquement sur certains des modules de code. Vous pouvez également choisir d’éviter l’arrêt sur les modules particuliers.
 
 > [!NOTE]
-> Ajout de conditions à une exception est une nouveauté de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> Ajout de conditions à une exception est pris en charge dans [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Pour ajouter des exceptions conditionnelles :
 
@@ -217,14 +216,14 @@ Pour ajouter des exceptions conditionnelles :
 
    ![Conditions supplémentaires pour une exception](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. Pour chaque ligne de la condition, tapez le nom du module et modifier la liste d’opérateurs de comparaison à **est égal à** ou **n’est pas égal**. Vous pouvez spécifier des caractères génériques (**\\***) dans le nom pour spécifier plusieurs modules.
+3. Pour chaque ligne de la condition, tapez le nom du module et modifier la liste d’opérateurs de comparaison à **est égal à** ou **n’est pas égal**. Vous pouvez spécifier des caractères génériques (**\\\***) dans le nom pour spécifier plusieurs modules.
 
 4. Si vous avez besoin supprimer une condition, choisissez le **X** à la fin de la ligne de la condition.
 
 ## <a name="see-also"></a>Voir aussi
 
-[Poursuivre l’exécution après une exception](../debugger/continuing-execution-after-an-exception.md)<br/>
-[Guide pratique pour examiner du code système après une exception](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
-[Guide pratique pour utiliser les vérifications natives à l’exécution](../debugger/how-to-use-native-run-time-checks.md)<br/>
-[Utiliser des vérifications à l’exécution sans la bibliothèque Runtime C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
-[Tutoriel : Apprendre à déboguer avec Visual Studio](../debugger/getting-started-with-the-debugger.md)
+- [Poursuivre l’exécution après une exception](../debugger/continuing-execution-after-an-exception.md)<br/>
+- [Guide pratique pour examiner un code système après une exception](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
+- [Guide pratique pour utiliser les vérifications natives à l’exécution](../debugger/how-to-use-native-run-time-checks.md)<br/>
+- [Utiliser des vérifications à l’exécution sans la bibliothèque Runtime C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
+- [Présentation du débogueur](../debugger/debugger-feature-tour.md)

@@ -1,8 +1,6 @@
 ---
 title: Changer les polices et les couleurs
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, color themes
@@ -10,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 60d91ba1-244b-4c43-847f-60b744f1352a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccb7e762c15b99492bda03d5300af398552cfd01
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f06007294f0743ebdbbcc0c750ffd09307e17ad1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067639"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907462"
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Procédure : changer les polices et les couleurs utilisées dans Visual Studio
 

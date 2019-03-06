@@ -1,8 +1,6 @@
 ---
-title: Guide pratique pour afficher l'héritage entre les types (Concepteur de classes)
+title: 'Procédure : Afficher l’héritage entre les types (Concepteur de classes)'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.AssociationTypeNotFoundError
@@ -13,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: ea3f0ada-f53b-4fb1-9fb5-908286f5ec3e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3398a5096934397556ae1b20845153bd45a78528
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: b23a676e4028e8f06f26ccc985ca22b85f56ac95
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "34000492"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907836"
 ---
-# <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Guide pratique pour afficher l’héritage entre les types dans le Concepteur de classes
+# <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Procédure : Afficher l’héritage entre les types dans le Concepteur de classes
 
-Dans le **Concepteur de classes**, vous pouvez rechercher la relation d’héritage éventuellement existante entre un type de base et ses types dérivés dans un diagramme de classes. Pour créer une relation d’héritage entre deux types, s’il n’en n’existe aucune, consultez [Guide pratique pour créer un héritage entre des types](how-to-create-inheritance-between-types.md).
+Dans le **Concepteur de classes**, vous pouvez rechercher la relation d’héritage éventuellement existante entre un type de base et ses types dérivés dans un diagramme de classes. Pour créer une relation d'héritage, si aucune n'existe, entre deux types, consultez [Guide pratique pour créer un héritage entre des types](how-to-create-inheritance-between-types.md).
 
 ## <a name="to-find-the-base-type"></a>Pour rechercher le type de base
 
@@ -50,4 +48,4 @@ Vous pouvez également cliquer avec le bouton droit sur le type dont vous souhai
 ## <a name="see-also"></a>Voir aussi
 
 - [Guide pratique pour créer des associations entre des types](how-to-create-associations-between-types.md)
-- [Affichage des types et des relations](viewing-types-and-relationships.md)
+- [Affichage des types et des relations](designing-and-viewing-classes-and-types.md)

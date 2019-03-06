@@ -1,22 +1,20 @@
 ---
 title: 'CA3147 : Marquer les gestionnaires de verbe avec ValidateAntiForgeryToken'
 ms.date: 08/08/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 author: dotpaul
 ms.author: paulming
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: da15a441a10f3ad3f3f84ee0cc76eeed8e4127e4
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: f7b94957ed821f71b17aca9c1865d86f2fe853fe
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42623810"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935314"
 ---
 # <a name="ca3147-mark-verb-handlers-with-validateantiforgerytoken"></a>CA3147 : Marquer les gestionnaires de verbe avec ValidateAntiForgeryToken
 

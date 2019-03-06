@@ -1,14 +1,9 @@
 ---
 title: '&lt;loc&gt; (JavaScript) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - <loc> JavaScript XML tag
 - loc JavaScript XML tag
@@ -16,13 +11,13 @@ ms.assetid: 0d3349b6-4bdd-418f-bc11-73665305baae
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9314453b5e75e31f98d6989efa274278706bc5a4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8029dc6282e7b5a4ff9075257bcb1b6213a4a6b4
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244008"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54758523"
 ---
 # <a name="ltlocgt-javascript"></a>&lt;loc&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,12 +33,12 @@ Spécifie l’emplacement et le type de fichier side-car qui fournit des informa
   
 #### <a name="parameters"></a>Paramètres  
  `filename`  
- Facultatif. Le nom de la racine du fichier side-car qui contient des informations de localisation pour la culture neutre. Lorsque Visual Studio recherche les informations de localisation, il tente de trouver une version spécifique à la culture de ce fichier. Par exemple, si `filename` est jquery.xml, Visual Studio recherche le dossier spécifique à la culture approprié (par exemple, JA) dans le même emplacement que le fichier .js qui contient le `<loc>` élément. Si il localise le dossier spécifique à la culture, il vérifie l’existence d’un fichier jquery.xml qu’il contient. Si elle ne peut pas localiser le fichier approprié, il utilise à la place des règles d’emplacement de ressources gérées. La valeur par défaut `filename` est le nom du fichier actuel, mais avec une extension .xml au lieu de .js.  
+ Optionnel. Le nom de la racine du fichier side-car qui contient des informations de localisation pour la culture neutre. Lorsque Visual Studio recherche les informations de localisation, il tente de trouver une version spécifique à la culture de ce fichier. Par exemple, si `filename` est jquery.xml, Visual Studio recherche le dossier spécifique à la culture approprié (par exemple, JA) dans le même emplacement que le fichier .js qui contient le `<loc>` élément. Si il localise le dossier spécifique à la culture, il vérifie l’existence d’un fichier jquery.xml qu’il contient. Si elle ne peut pas localiser le fichier approprié, il utilise à la place des règles d’emplacement de ressources gérées. La valeur par défaut `filename` est le nom du fichier actuel, mais avec une extension .xml au lieu de .js.  
   
  `format`  
- Facultatif. Le type de fichier side-car utilisé pour la localisation. Utiliser `messagebundle` pour spécifier l’utilisation de regroupements de message défini par les métadonnées Ajax ouvert. `messagebundle` est le format recommandé. Toutefois, ce format n’est pas pris en charge dans Microsoft Ajax ou dans les fichiers .winmd. Utilisez `vsdoc` pour spécifier le format de localisation .NET Framework standard qui est utilisé par Microsoft Ajax et Windows Runtime. Cet attribut est facultatif. `vsdoc` est le format par défaut.  
+ Optionnel. Le type de fichier side-car utilisé pour la localisation. Utiliser `messagebundle` pour spécifier l’utilisation de regroupements de message défini par les métadonnées Ajax ouvert. `messagebundle` est le format recommandé. Toutefois, ce format n’est pas pris en charge dans Microsoft Ajax ou dans les fichiers .winmd. Utilisez `vsdoc` pour spécifier le format de localisation .NET Framework standard qui est utilisé par Microsoft Ajax et Windows Runtime. Cet attribut est facultatif. `vsdoc` est le format par défaut.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Le `<loc>` élément doit apparaître en haut du fichier dans la même section que le `<reference>` élément. L’utilisation des règles pour le `<loc>` élément sont les mêmes que les `<reference>` élément. Pour plus d’informations, consultez la section « Références Directives » dans [JavaScript IntelliSense](../ide/javascript-intellisense.md).  
   
  Visual Studio traite un seul `<loc>` élément pour chaque fichier .js. Si plusieurs `<loc>` éléments sont présents, qu’un seul `<loc>` élément est utilisé. Comportement pour déterminer les `<loc>` élément à utiliser n’est pas défini.  
@@ -110,6 +105,3 @@ function illuminate(a)
   
 ## <a name="see-also"></a>Voir aussi  
  [Commentaires sur la documentation XML](../ide/xml-documentation-comments-javascript.md)
-
-
-

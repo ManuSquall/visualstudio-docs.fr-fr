@@ -1,8 +1,6 @@
 ---
 title: Utiliser la liste des tâches
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - TaskListWindow
@@ -13,15 +11,15 @@ helpviewer_keywords:
 - Visual Studio, task list
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7766a7fd935cc1e1131c4780a5a88ef6fa54e838
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 7a54b95130479a2f8091c3618ac32e48c261e5e0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349391"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954697"
 ---
 # <a name="use-the-task-list"></a>Utiliser la liste des tâches
 

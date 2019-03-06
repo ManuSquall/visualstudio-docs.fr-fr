@@ -1,21 +1,19 @@
 ---
 title: Utilisation de modèles 3D
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: fa035091-1354-4d1c-be44-4fb83860466f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d38eb26e40d78ccdca57110d5a7b7966393e7859
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: fbca927a3c4bd26a37318fc9b3403d0eb8d7393c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077826"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923302"
 ---
 # <a name="work-with-3d-models"></a>Utiliser des modèles 3D
 

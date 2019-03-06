@@ -1,8 +1,6 @@
 ---
 title: Pourcentage de réduction du bruit | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.filter
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1c10cd4c-2fdd-48c9-b562-a334b3b2df6c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 184a9b8e132ea1254edc7e9b88139386cc8cf36e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9d3021aef3f9a2e11849991327a6ef8783b62439
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31583994"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636814"
 ---
 # <a name="noise-reduction-percentage"></a>Pourcentage de réduction du bruit
 Par défaut, la valeur du paramètre Pourcentage de réduction du bruit est 2. Seules les entrées qui ont un pourcentage de temps inclusif supérieur ou égal à cette valeur sont affichées dans l’arborescence des appels. En changeant la valeur, vous pouvez contrôler le nombre d’entrées qui sont affichées dans l’arborescence des appels. Par exemple, changer la valeur en 10 affichera seulement les entrées de l’arborescence des appels qui ont un temps inclusif supérieur ou égal à 10 %. En augmentant la valeur du paramètre, vous pouvez vous concentrer sur les entrées qui influent le plus sur les performances de votre processus.

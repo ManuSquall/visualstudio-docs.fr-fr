@@ -1,11 +1,18 @@
 ---
-ms.technology: vs-ai-tools
-ms.openlocfilehash: 5e4623715133f6203e4e967eb29eca20cb2f181e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+title: Créer un projet d’IA à partir d’un modèle
+author: lisawong19
+ms.author: liwong
+manager: routlaw
+ms.date: 11/13/2017
+ms.topic: conceptual
+ms.workload:
+- multiple
+ms.openlocfilehash: 0b537d80b8db9150c6804aff2ee3de0e6c879bb9
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821355"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840589"
 ---
 # <a name="create-an-ai-project-from-a-template-in-visual-studio"></a>Créer un projet AI à partir d’un modèle dans Visual Studio
 

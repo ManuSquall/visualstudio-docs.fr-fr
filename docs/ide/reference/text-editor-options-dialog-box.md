@@ -1,8 +1,6 @@
 ---
 title: Éditeur de texte, boîte de dialogue Options
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
@@ -17,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 90d4e522-6391-4571-927d-b466a9766342
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d746426a5db9a3b71ba3fd3703887f9e4c894ef9
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: a8dbd5c55ac2f5c207f1dd75e0e6ce5f7927f5bc
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448699"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926006"
 ---
 # <a name="text-editor-options-dialog-box"></a>Éditeur de texte, boîte de dialogue Options
 

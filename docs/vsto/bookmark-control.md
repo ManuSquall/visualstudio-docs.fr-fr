@@ -1,8 +1,6 @@
 ---
 title: Bookmark (contrôle)
 ms.date: 02/02/2017
-ms.technology: office-development
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - VST.Toolbox.Bookmark
@@ -16,15 +14,15 @@ helpviewer_keywords:
 - Bookmark control
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 242a4692bc75715e661244dc8f513d30cc9480ed
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 202640fbe484fc9b384e3e50484a1b4fee63bc4a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248190"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55914225"
 ---
 # <a name="bookmark-control"></a>Bookmark (contrôle)
   Le contrôle <xref:Microsoft.Office.Tools.Word.Bookmark> est un signet qui possède un nom unique, qui expose des événements et qui peut être lié à des données. Vous pouvez utiliser le signet comme espace réservé pour marquer un élément ou un emplacement dans un document Microsoft Office Word. Le contrôle <xref:Microsoft.Office.Tools.Word.Bookmark> est une combinaison d’un objet <xref:Microsoft.Office.Interop.Word.Bookmark> et d’un objet <xref:Microsoft.Office.Interop.Word.Range> .
@@ -85,13 +83,13 @@ Le tableau suivant montre comment la phrase « Voici un exemple textuel. » est 
 |Signet1|Voici un exemple textuel.|
 |Signet2|exemple|
 
- Si vous assignez le nouveau texte « Voici un remplacement. » à Signet1, les signets ne se chevauchent plus. Par ailleurs, Signet2 devient un signet vide situé à la fin de Signet1.
+ Si vous assignez le nouveau texte « Voici un remplacement. » à Signet1, les signets ne se chevauchent plus. Par ailleurs, Signet2 devient un signet vide situé à la fin de Signet1.
 
 |Signet|Texte|
 |--------------|----------|
-|Deux signets séparés|[Voici un remplacement.]{}|
+|Deux signets séparés|[this is replacement.]{}|
 |Signet1|Voici un remplacement.|
-|Signet2|*\<vide >*|
+|Signet2|*\<empty>*|
 
 ## <a name="events"></a>Événements
 

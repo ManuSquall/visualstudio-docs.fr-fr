@@ -1,10 +1,7 @@
 ---
 title: IDebugProgramNode2::DetachDebugger_V7 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProgramNode2::DetachDebugger
 helpviewer_keywords:
@@ -12,15 +9,15 @@ helpviewer_keywords:
 - IDebugProgramNode2::DetachDebugger_V7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20981c744408e8d25e6e851c39532db939c71b2b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0b7d97e277a3f7f327bf8830e49507d28e82568f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939955"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713696"
 ---
 # <a name="idebugprogramnode2detachdebuggerv7"></a>IDebugProgramNode2::DetachDebugger_V7
 
@@ -31,7 +28,7 @@ ms.locfileid: "49939955"
 
 ```cpp
 HRESULT DetachDebugger_V7 (
-   void 
+   void 
 );
 ```
 
@@ -52,4 +49,4 @@ Cette méthode est appelée lorsque le débogueur se ferme de façon inattendue.
 
 ## <a name="see-also"></a>Voir aussi
 
-[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
+- [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

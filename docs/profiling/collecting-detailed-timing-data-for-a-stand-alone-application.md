@@ -1,8 +1,6 @@
 ---
 title: Collecte de données de minutage détaillées pour une application autonome en utilisant la ligne de commande du profileur | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools,instrumentation method
@@ -10,46 +8,46 @@ helpviewer_keywords:
 ms.assetid: 4017d9d1-d609-4f41-8e4e-976abae746b3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63ebe0869ec0450604468283f9db1769314a3ce7
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 8bae9bbdff28312c36af91af57368d6b87028d44
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276349"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603623"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Collecter des données de temporisation détaillées pour une application autonome en utilisant la ligne de commande du profileur
-Cette section décrit les procédures et les options de collecte des données de performances détaillées d’un composant client (autonome) utilisant la méthode d’instrumentation à partir de la ligne de commande.  
-  
-## <a name="common-tasks"></a>Tâches courantes  
-  
-|Tâche|Contenu connexe|  
-|----------|---------------------|  
-|**Profiler une application .NET Framework à l’aide de l’instrumentation**|-   [Guide pratique pour instrumenter un composant .NET et collecter des données de minutage détaillées](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)|  
-|**Profiler une application C/C++ à l’aide de l’instrumentation**|-   [Guide pratique pour instrumenter un composant natif et collecter des données de minutage détaillées](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)|  
-|**Ajouter des interactions de couche**|-   [Collecter les données d’interaction de couche](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
-  
+Cette section décrit les procédures et les options de collecte des données de performances détaillées d’un composant client (autonome) utilisant la méthode d’instrumentation à partir de la ligne de commande.
+
+## <a name="common-tasks"></a>Tâches courantes
+
+|Tâche|Contenu connexe|
+|----------|---------------------|
+|**Profiler une application .NET Framework à l’aide de l’instrumentation**|-   [Guide pratique pour pour instrumenter un composant .NET et collecter des données de minutage détaillées](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)|
+|**Profiler une application C/C++ à l’aide de l’instrumentation**|-   [Guide pratique pour pour instrumenter un composant natif et collecter des données de minutage détaillées](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)|
+|**Ajouter des interactions de couche**|-   [Collecter les données d’interaction de couche](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
+
 ## <a name="related-tasks"></a>Tâches connexes
-  
-### <a name="profile-stand-alone-applications"></a>Profiler des applications autonomes  
-  
-|Tâche|Contenu associé|  
-|----------|---------------------|  
-|**Profiler des applications à l’aide de l’échantillonnage**|-   [Collecter des statistiques d’applications en utilisant l’échantillonnage](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|  
-|**Profiler l’allocation de mémoire .NET et le garbage collection**|-   [Collecter des données de mémoire .NET Framework](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|  
-|**Profiler le conflit des ressources et l’activité des threads**|-   [Collecter des données concurrentielles](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|  
-  
-### <a name="profile-by-using-the-instrumentation-method"></a>Profiler avec la méthode d’instrumentation  
-  
-|Tâche|Contenu associé|  
-|----------|---------------------|  
-|**Profiler des applications ASP.NET**|-   [Collecter les données temporelles détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md)|  
-|**Profiler des services**|-   [Collecter les données temporelles détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md)|  
-  
-### <a name="analyze-instrumentation-data-views-and-reports"></a>Analyser des vues et des rapports de données d’instrumentation  
- [Vues de données de la méthode d'instrumentation](../profiling/instrumentation-method-data-views.md)  
-  
-## <a name="reference"></a>Référence  
- [Informations de référence sur les outils de profilage de ligne de commande](../profiling/command-line-profiling-tools-reference.md)
+
+### <a name="profile-stand-alone-applications"></a>Profiler des applications autonomes
+
+|Tâche|Contenu associé|
+|----------|---------------------|
+|**Profiler des applications à l’aide de l’échantillonnage**|-   [Collecter des statistiques d’applications en utilisant l’échantillonnage](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|
+|**Profiler l’allocation de mémoire .NET et le garbage collection**|-   [Collecter des données de mémoire .NET Framework](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|
+|**Profiler le conflit des ressources et l’activité des threads**|-   [Collecter des données concurrentielles](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|
+
+### <a name="profile-by-using-the-instrumentation-method"></a>Profiler avec la méthode d’instrumentation
+
+|Tâche|Contenu associé|
+|----------|---------------------|
+|**Profiler des applications ASP.NET**|-   [Collecter les données temporelles détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md)|
+|**Profiler des services**|-   [Collecter les données temporelles détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md)|
+
+### <a name="analyze-instrumentation-data-views-and-reports"></a>Analyser des vues et des rapports de données d’instrumentation
+- [Vues de données de la méthode d'instrumentation](../profiling/instrumentation-method-data-views.md)
+
+## <a name="reference"></a>Référence
+- [Informations de référence sur les outils de profilage de ligne de commande](../profiling/command-line-profiling-tools-reference.md)

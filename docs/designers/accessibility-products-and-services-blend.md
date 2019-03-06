@@ -1,21 +1,19 @@
 ---
 title: Services et produits d’accessibilité (Blend)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: ba8557f6-231a-4d8b-80dd-80397e87a17f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 849f0aea9c8c3bce391247704b4e551b5f7dafdf
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: d9a442c976538ae47a3ea95795ebb82ca2cbb5f2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890046"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920429"
 ---
 # <a name="accessibility-products-and-services-blend"></a>Services et produits d’accessibilité (Blend)
 Microsoft s’engage à faciliter l’utilisation de ses produits et services. Les sections suivantes fournissent des informations sur les fonctionnalités, produits et services qui améliorent l’accessibilité des personnes handicapées à Microsoft Windows :
@@ -55,11 +53,11 @@ Microsoft s’engage à faciliter l’utilisation de ses produits et services. L
 
  Princeton, NJ 08540
 
- Téléphone depuis les États-Unis : (800) 221-4792
+ Téléphone depuis les États-Unis : (800) 221-4792
 
- Téléphone hors des États-Unis et du Canada : (609) 452-0606
+ Téléphone hors des États-Unis et du Canada : (609) 452-0606
 
- Télécopie : (609) 987-8116
+ Télécopie : (609) 987-8116
 
  [Site Learning Ally](http://go.microsoft.com/fwlink/?LinkId=111110)
 

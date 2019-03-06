@@ -1,23 +1,21 @@
 ---
-title: 'Procédure : modifier des fichiers XML'
+title: 'Procédure : modification de fichiers XML'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 07fa3ecf-6345-4d30-9d85-d5ef5b083319
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3754bcf87d77a3a67801ef7f9df8e07dc687b052
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 0de1dbc3b98850e7a4cde3f5be60ccfa09a34e11
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34549127"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931752"
 ---
-# <a name="how-to-edit-xml-files"></a>Comment : modifier des fichiers XML
+# <a name="how-to-edit-xml-files"></a>Procédure : Modifier des fichiers XML
 
 L'éditeur XML est le nouvel éditeur pour les fichiers XML. Il peut être utilisé avec un fichier XML autonome ou un fichier associé à un projet Visual Studio. L’éditeur XML est associé aux extensions de fichier suivantes : *.config*, *.dtd*, *.xml*, *.xsd*, *.xdr*, *.xsl*, *.xslt*, et *.vssettings*. L'éditeur XML est également associé à tout autre type de fichier qui n'a pas d'éditeur spécifique défini et dont le contenu est du XML ou une DTD.
 
@@ -34,7 +32,7 @@ L'éditeur XML est le nouvel éditeur pour les fichiers XML. Il peut être utili
 
 2.  Sélectionnez **fichier XML** à partir de la **modèles** volet.
 
-3.  Entrez le nom de fichier dans le **nom** et appuyez sur **ajouter**.
+3.  Entrez le nom de fichier dans le **nom** champ et appuyez sur **ajouter**.
 
      Le fichier XML est ajouté au projet et ouvert dans l'éditeur XML. Il contient la déclaration XML par défaut, `<?xml version="1.0" encoding="utf-8" ?>`.
 
@@ -44,21 +42,21 @@ L'éditeur XML est le nouvel éditeur pour les fichiers XML. Il peut être utili
 
      Le **ajouter un élément existant** boîte de dialogue s’affiche.
 
-2.  Sélectionnez un fichier XML et appuyez sur une **ajouter**.
+2.  Sélectionnez un fichier XML et la presse **ajouter**.
 
 ## <a name="to-create-a-new-xml-or-xslt-file"></a>Pour créer un nouveau fichier XML ou XSLT
 
-1.  À partir de la **fichier** menu, sélectionnez **nouveau**.
+1.  À partir de la **fichier** menu, sélectionnez **New**.
 
      Le **nouveau fichier** boîte de dialogue s’affiche.
 
-2.  Sélectionnez **fichier XML** pour créer un nouveau fichier XML ; ou sélectionnez **fichier XSLT** pour créer une nouvelle feuille de style XSLT.
+2.  Sélectionnez **fichier XML** pour créer un nouveau fichier XML ; ou, sélectionnez **fichier XSLT** pour créer une nouvelle feuille de style XSLT.
 
-3.  Cliquez sur **ouvrir**.
+3.  Cliquez sur **Ouvrir**.
 
 ## <a name="to-create-a-project-for-xml-files"></a>Pour créer un projet pour des fichiers XML
 
-1.  À partir de la **fichier** menu, sélectionnez **nouveau**, puis sélectionnez **projet**.
+1.  À partir de la **fichier** menu, sélectionnez **New**, puis sélectionnez **projet**.
 
      La boîte de dialogue **Nouveau projet** s’affiche.
 
@@ -72,4 +70,4 @@ L'éditeur XML est le nouvel éditeur pour les fichiers XML. Il peut être utili
 
 - [Éditeur XML](../xml-tools/xml-editor.md)
 - [Propriétés des documents XML, fenêtre Propriétés](../xml-tools/xml-document-properties-properties-window.md)
-- [Comment : créer un schéma XML à partir d’un document XML](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)
+- [Guide pratique pour Créer un schéma XML à partir d’un document XML](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)

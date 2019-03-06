@@ -1,22 +1,19 @@
 ---
 title: Ce que&#39;s dans le Kit de développement logiciel Visual Studio 2017 | Microsoft Docs
-ms.custom: ''
 ms.date: 10/31/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 9efcf0a3-dbde-4cab-8ed3-425826a48b2e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f2a003bc19764aa07262552d3f0cc41316835b6
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: caa7593c85351512e683f2cf93adeb3211e3e4d8
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566906"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323917"
 ---
 # <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>Ce que&#39;s dans le Kit de développement logiciel Visual Studio 2017
 
@@ -34,14 +31,14 @@ Le nouveau format prend en charge :
 
 Pour en savoir plus sur ces modifications, consultez les rubriques suivantes :
 
-* [Modifications apportées à l’extensibilité pour 2017](breaking-changes-2017.md)
+* [Modifications apportées à l’extensibilité pour Visual Studio 2017](breaking-changes-2017.md)
 * [Prise en charge de Ngen dans VSIX v3](ngen-support.md)
 * [Installer en dehors du dossier d’extensions](set-install-root.md)
 * [Forum aux questions pour l’extensibilité de Visual Studio 2017](faq-2017.md)
 
 ## <a name="migrate-extensibility-project-to-visual-studio-2017"></a>Migrer un projet d’extensibilité vers Visual Studio 2017
 
-Pour savoir comment mettre à jour vos projets d’extensibilité et leur manifeste VSIX pour Visual Studio 2017, consultez [Comment : migrer des projets d’extensibilité vers Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
+Pour savoir comment mettre à jour vos projets d’extensibilité et leur manifeste VSIX pour Visual Studio 2017, consultez [Comment : Migrer des projets d’extensibilité vers Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
 ## <a name="custom-project-and-item-templates"></a>Modèles de projet et d’élément personnalisés
 
@@ -49,4 +46,4 @@ Pour savoir comment mettre à jour vos projets d’extensibilité et leur manife
 
 ## <a name="updated-extension-performance-guidelines"></a>Instructions relatives aux performances de mise à jour d’extension
 
-Il existe un nouveau [Comment : diagnostiquer les performances de l’extension](how-to-diagnose-extension-performance.md) article sous [gérer les VSPackages](managing-vspackages.md) de montrer comment détecter et analyser l’impact de l’extension de Visual Studio solution et démarrage les temps de chargement.
+Il existe un nouveau [Comment : Diagnostiquer les performances de l’extension](how-to-diagnose-extension-performance.md) article sous [gérer les VSPackages](managing-vspackages.md) de montrer comment détecter et analyser l’impact de l’extension de Visual Studio solution et démarrage les temps de chargement.

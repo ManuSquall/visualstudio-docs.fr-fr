@@ -1,8 +1,6 @@
 ---
 title: IDiaSession::findSymbolByRVA | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,50 +9,53 @@ helpviewer_keywords:
 ms.assetid: 14fb2903-b771-44d6-b0a8-44e0097c58ce
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13dd765c6980dc88a6b9225aac05396a7eb61849
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: bf6a32284588163aae57d03ec67c69a9f64663b0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839789"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632197"
 ---
 # <a name="idiasessionfindsymbolbyrva"></a>IDiaSession::findSymbolByRVA
-Récupère un type de symbole spécifié qui contienne, ou est le plus proche, une adresse virtuelle relative (RVA) spécifiée.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT findSymbolByRVA (   
-   DWORD        rva,  
-   SymTagEnum   symtag,  
-   IDiaSymbol** ppSymbol  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `rva`  
- [in] Spécifie l’adresse RVA.  
-  
- `symtag`  
- [in] Type de symbole à rechercher. Les valeurs sont extraites à partir de la [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md) énumération.  
-  
- `ppSymbol`  
- [out] Retourne un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) de récupérer l’objet qui représente le symbole.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="example"></a>Exemple  
-  
-```C++  
-IDiaSymbol* pFunc;  
-pSession->findSymbolByRVA( rva, SymTagFunction, &pFunc );  
-```  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum, énumération](../../debugger/debug-interface-access/symtagenum.md)
+Récupère un type de symbole spécifié qui contienne, ou est le plus proche, une adresse virtuelle relative (RVA) spécifiée.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT findSymbolByRVA ( 
+   DWORD        rva,
+   SymTagEnum   symtag,
+   IDiaSymbol** ppSymbol
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `rva`
+
+[in] Spécifie l’adresse RVA.
+
+ `symtag`
+
+[in] Type de symbole à rechercher. Les valeurs sont extraites à partir de la [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md) énumération.
+
+ `ppSymbol`
+
+[out] Retourne un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) de récupérer l’objet qui représente le symbole.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="example"></a>Exemple
+
+```C++
+IDiaSymbol* pFunc;
+pSession->findSymbolByRVA( rva, SymTagFunction, &pFunc );
+```
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [SymTagEnum, énumération](../../debugger/debug-interface-access/symtagenum.md)

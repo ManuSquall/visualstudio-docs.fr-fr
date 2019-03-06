@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManagerCookie::AddApplication | Documents Microsoft
+title: IMachineDebugManagerCookie::AddApplication | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2c452c4fe2826c7c5372c7598a14731e14077925
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ef3dc3bddd0259eb4dd3a1fc874cbadbc16195d9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728629"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090660"
 ---
 # <a name="imachinedebugmanagercookieaddapplication"></a>IMachineDebugManagerCookie::AddApplication
-Ajoute une application en cours d’exécution la liste des applications.  
+Ajoute une application à l’exécution liste d’applications.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT AddApplication(  
    IRemoteDebugApplication*  pda,  
    DWORD                     dwDebugAppCookie,  
@@ -40,23 +40,23 @@ HRESULT AddApplication(
   
 #### <a name="parameters"></a>Paramètres  
  `pda`  
- [in] Application à l’exécution liste des applications.  
+ [in] Application à l’exécution liste d’applications.  
   
  `dwDebugAppCookie`  
  [in] Un cookie qui identifie l’application de débogage.  
   
  `pdwAppCookie`  
- [out] Un cookie est utilisé pour supprimer l’application à partir du Gestionnaire de débogage d’ordinateur.  
+ [out] Un cookie qui est utilisé pour supprimer l’application à partir du Gestionnaire de débogage d’ordinateur.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
- Cette méthode est appelée par le Gestionnaire de processus de débogage chaque fois que `IProcessDebugManager::AddApplication` est appelée.  
+## <a name="remarks"></a>Notes  
+ Cette méthode est appelée par le Gestionnaire de débogage de processus chaque fois que `IProcessDebugManager::AddApplication` est appelée.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IMachineDebugManagerCookie (Interface)](../../winscript/reference/imachinedebugmanagercookie-interface.md)   

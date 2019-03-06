@@ -1,11 +1,18 @@
 ---
-ms.technology: vs-ai-tools
-ms.openlocfilehash: 01097a738c24c44f3dd2800ce852d3e79a60ba44
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+title: Surveiller l’utilisation du GPU
+author: lisawong19
+ms.author: liwong
+manager: routlaw
+ms.date: 11/13/2017
+ms.topic: conceptual
+ms.workload:
+- multiple
+ms.openlocfilehash: f455a1cbfbad58ebe724c879837e161954cf4be2
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909079"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842232"
 ---
 # <a name="monitoring-gpu-utilization"></a>Surveillance de l’utilisation du GPU
 

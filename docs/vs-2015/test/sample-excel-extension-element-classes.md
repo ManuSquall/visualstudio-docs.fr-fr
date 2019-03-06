@@ -1,26 +1,21 @@
 ---
-title: 'Exemple d’extension Excel : classes d’éléments | Microsoft Docs'
-ms.custom: ''
+title: 'Exemple d’Extension Excel : Classes d’éléments | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 7c251098-00aa-49cf-9e37-5717c0c6b3f1
 caps.latest.revision: 11
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fb5085bdd9a79330f7c4f73fb39993af63eb0a78
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 052ef261270b2cd6e66d71bbbb0c9cc3d12696eb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811944"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796039"
 ---
-# <a name="sample-excel-extension-element-classes"></a>Exemple d'extension Excel : classes d'éléments
+# <a name="sample-excel-extension-element-classes"></a>Exemple d’Extension Excel : Classes d'éléments
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L’extension utilise des classes dérivées de <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement> et qui représentent le contrôle Worksheet et le contrôle Cell dans [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)].  
@@ -58,6 +53,3 @@ L’extension utilise des classes dérivées de <xref:Microsoft.VisualStudio.Tes
  <xref:System.Runtime.InteropServices.ComVisibleAttribute>   
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.IQueryElement>   
  [Extension des tests codés de l’interface utilisateur et des enregistrements des actions pour prendre charge Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
-
-
-

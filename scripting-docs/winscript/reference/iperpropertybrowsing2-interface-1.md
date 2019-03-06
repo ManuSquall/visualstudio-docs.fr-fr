@@ -1,5 +1,5 @@
 ---
-title: IPerPropertyBrowsing2 (Interface) 1 | Documents Microsoft
+title: L’Interface 1 IPerPropertyBrowsing2 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,24 +18,24 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75a0a7ef30bca2205789a63ea577808c11582791
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bded7159b72fc8c1ae8408611ce858105e6734da
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728389"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344024"
 ---
 # <a name="iperpropertybrowsing2-interface-1"></a>IPerPropertyBrowsing2 (Interface) 1
-Accès les informations contenues dans les pages de propriétés offertes par un objet.  
+Les accès les informations contenues dans les pages de propriétés offertes par un objet.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
   
 |Méthode|Description|  
 |------------|-----------------|  
-|`GetDisplayString`|Retourne une chaîne de texte qui décrit la propriété spécifiée.|  
+|`GetDisplayString`|Retourne une chaîne de texte décrivant la propriété spécifiée.|  
 |`MapPropertyToPage`|Retourne le CLSID de la page de propriétés qui permet la manipulation de la propriété spécifiée.|  
-|`GetPredefinedStrings`|Retourne un tableau de nombres de chaînes (`LPOLESTR` pointeurs) qui répertorie les descriptions des valeurs autorisées acceptant la propriété spécifiée.|  
-|`SetPredefinedValue`|Définit la valeur de la propriété la valeur prédéfinie identifié par le jeton`dwCookie.`|  
+|`GetPredefinedStrings`|Retourne un tableau compté de chaînes (`LPOLESTR` pointeurs) répertoriant les descriptions des valeurs autorisées capable d’accepter la propriété spécifiée.|  
+|`SetPredefinedValue`|Définit la valeur de la propriété à la valeur prédéfinie identifiée par le jeton `dwCookie.`|  
   
 ## <a name="requirements"></a>Spécifications  
  En-tête : dbgprop.h

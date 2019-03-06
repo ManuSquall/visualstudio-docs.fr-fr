@@ -1,30 +1,25 @@
 ---
-title: 'Procédure pas à pas : ma première application de bureau WPF | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure pas à pas : Mon premier Application2 de bureau WPF | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 3c460fa9-2ea1-413f-ae54-54a1f2a499d1
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7d8af02051774b744f9229e15a6184603c4d9f6b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3607bac8d8cd9808a54e4c8956b3c4d41df8aecb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899277"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795943"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Procédure pas à pas : ma première application de bureau WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-un name = « introduction » ></a> cette procédure pas à pas fournit une introduction au développement de Windows Presentation Foundation (WPF). Vous allez créer une application de base qui inclut des éléments communs à la plupart des applications de bureau WPF : balisage XAML, code-behind, définitions d’application, contrôles, disposition, liaison de données et styles.  
+un name = « introduction » ></a> cette procédure pas à pas fournit une introduction au développement de Windows Presentation Foundation (WPF). Vous allez créer une application de base qui inclut les éléments qui sont communes à la plupart des applications de bureau WPF : Balisage XAML, code-behind, définitions d’application, contrôles, disposition, liaison de données et des styles.  
   
 ##  <a name="Create_The_Application_Code_Files"></a> Création du projet d’application  
  Dans cette section, vous allez créer l’infrastructure de l’application, c’est-à-dire le projet et une fenêtre principale ou un formulaire.  
@@ -645,7 +640,7 @@ un name = « introduction » ></a> cette procédure pas à pas fournit une int
     </Style>  
     ```  
   
-     Ce code XAML ajoute les styles suivants :  
+     Ce code XAML ajoute les styles suivants :  
   
     -   `headerTextStyle`: pour mettre en forme le titre de la page `Label`.  
   
@@ -981,8 +976,5 @@ un name = « introduction » ></a> cette procédure pas à pas fournit une int
 - [Documents dans WPF](https://msdn.microsoft.com/library/ms748388\(v=vs.100\).aspx)  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : création d’une application de bureau WPF connectée à un service mobile Azure](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)   
+ [Procédure pas à pas : Créer une Application de bureau WPF connectée à un Service Mobile Azure](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)   
  [Créer des applications de bureau modernes à l’aide de Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
-
-
-

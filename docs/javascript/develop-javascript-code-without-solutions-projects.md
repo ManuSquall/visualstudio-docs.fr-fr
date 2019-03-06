@@ -4,38 +4,36 @@ titleSuffix: ''
 description: Visual Studio prend en charge la création de code sans dépendance par rapport à un fichier projet ou solution
 ms.custom: seodec18
 ms.date: 09/24/2018
-ms.technology: vs-nodejs
 ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a68174fd9cc1efcdde068448445adcf68fe36f63
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 30479614158686ee50ba704bcf148760136138f0
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058452"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796762"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Développer du code JavaScript et TypeScript dans Visual Studio sans solutions ni projets
 
-Visual Studio 2017 introduit la possibilité de [développer du code sans projets ni solutions](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md), ce qui vous permet d’ouvrir un dossier de code et de commencer immédiatement à travailler avec la prise en charge d’un éditeur enrichi comme IntelliSense, la recherche, la refactorisation, le débogage et bien plus encore.
-Outre ces fonctionnalités, Node.js Tools pour Visual Studio ajoute la prise en charge de la génération de fichiers TypeScript, la gestion de packages npm et l’exécution de scripts npm.
+Visual Studio 2017 introduit la possibilité de [développer du code sans projets ni solutions](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md), ce qui vous permet d’ouvrir un dossier de code et de commencer immédiatement à utiliser des fonctionnalités d’édition avancées, par exemple IntelliSense, la recherche, la refactorisation, le débogage et bien plus encore. Outre ces fonctionnalités, Node.js Tools pour Visual Studio ajoute la prise en charge de la génération de fichiers TypeScript, la gestion de packages npm et l’exécution de scripts npm.
 
-Pour commencer, sélectionnez **Ouvrir un dossier** dans la page de démarrage qui s’affiche quand vous ouvrez Visual Studio, ou sélectionnez **Fichier** > **Ouvrir** > **Dossier** dans la barre d’outils. L’Explorateur de solutions affiche tous les fichiers dans le dossier et vous pouvez les ouvrir pour commencer à les modifier. En arrière-plan, Visual Studio indexe les fichiers pour activer npm, la génération et les fonctionnalités de débogage.
+Pour commencer, dans la barre d’outils, sélectionnez **Fichier** > **Ouvrir** > **Dossier**. L’Explorateur de solutions affiche tous les fichiers dans le dossier et vous pouvez les ouvrir pour commencer à les modifier. En arrière-plan, Visual Studio indexe les fichiers pour activer npm, la génération et les fonctionnalités de débogage.
 
 > [!IMPORTANT]
 > Visual Studio 2017 version 15.8 est nécessaire pour la plupart des fonctionnalités décrites dans cet article, y compris l’intégration npm.
 
 ## <a name="npm-integration"></a>Intégration npm
 
-Si le dossier que vous ouvrez contient un fichier *package.json*, vous pouvez cliquer avec le bouton droit sur *package.json* pour afficher un menu contextuel spécifique à npm. 
+Si le dossier que vous ouvrez contient un fichier *package.json*, vous pouvez cliquer avec le bouton droit sur *package.json* pour afficher un menu contextuel spécifique à npm.
 
-![Menu npm dans l’Explorateur de solutions](../javascript/media/solution-explorer-npm-ctx.png) 
+![Menu npm dans l’Explorateur de solutions](../javascript/media/solution-explorer-npm-ctx.png)
 
 Dans le menu contextuel, vous pouvez gérer les packages installés par npm de la même façon que vous [gérez les packages npm](npm-package-management.md) lors de l’utilisation d’un fichier projet.
 
@@ -44,7 +42,8 @@ En outre, le menu vous permet également d’exécuter des scripts définis dans
 ## <a name="build-and-debug"></a>Génération et débogage
 
 ### <a name="packagejson"></a>package.json
-Si le fichier *package.json* dans le dossier spécifie un élément `main`, la commande **Déboguer** sera disponible dans le menu contextuel pour *package.json*. En cliquant dessus, vous démarrez *node.exe* avec le script spécifié comme argument.
+Si le fichier *package.json* dans le dossier spécifie un élément `main`, la commande **Déboguer** sera disponible dans le menu contextuel pour *package.json*.
+En cliquant dessus, vous démarrez *node.exe* avec le script spécifié comme argument.
 
 ### <a name="javascript-files"></a>Fichiers JavaScript
 Vous pouvez déboguer des fichiers JavaScript en cliquant avec le bouton droit sur un fichier et en sélectionnant **Déboguer** dans le menu contextuel. Cette opération démarre *node.exe* avec ce fichier JavaScript comme argument.

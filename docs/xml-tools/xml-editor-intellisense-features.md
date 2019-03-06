@@ -1,21 +1,19 @@
 ---
 title: Fonctionnalités IntelliSense de l’Éditeur XML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78a9711a623abe2f7a37cb03be628c2b60723359
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6e4c2f9f47b8b47f0258a9cb90e8350549d91fe7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886381"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938356"
 ---
 # <a name="xml-editor-intellisense-features"></a>Fonctionnalités IntelliSense de l’éditeur XML
 
@@ -45,7 +43,7 @@ L'éditeur XML offre des fonctionnalités IntelliSense complètes comparables à
 
 -   Noms de paramètre pour un modèle nommé donné.
 
-Pour plus d’informations, consultez [procédure pas à pas : utilisation d’IntelliSense XSLT](../xml-tools/walkthrough-using-xslt-intellisense.md) rubrique.
+Pour plus d’informations, consultez [Procédure pas à pas : Utilisation d’IntelliSense XSLT](../xml-tools/walkthrough-using-xslt-intellisense.md) rubrique.
 
 ## <a name="auto-completion"></a>La saisie semi-automatique
  L'éditeur XML facilite également l'édition du XML en complétant automatiquement la syntaxe XML requise. Par exemple, si vous entrez la balise de début suivante :
@@ -122,4 +120,4 @@ Par exemple, si vous sélectionnez l'élément `e:Book` dans la liste IntelliSen
 
 - [Éditeur XML](../xml-tools/xml-editor.md)
 - [Utilisation de la fonctionnalité IntelliSense](../ide/using-intellisense.md)
-- [Procédure pas à pas : utilisation d’IntelliSense XSLT](../xml-tools/walkthrough-using-xslt-intellisense.md)
+- [Procédure pas à pas : Utilisation d’IntelliSense XSLT](../xml-tools/walkthrough-using-xslt-intellisense.md)

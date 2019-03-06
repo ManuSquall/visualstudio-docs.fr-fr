@@ -2,22 +2,20 @@
 title: Concepteur de flux de travail - si Concepteur d’activités
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.If.UI
 ms.assetid: 930a8fa2-db98-43e9-ad6d-a85cc7a6519a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 716f2b13758864d5eda449967990f9e5be399a9d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 762199906bbb84701c044b5fa9f3f3b8c6fdfdae
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822838"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916971"
 ---
 # <a name="if-activity-designer"></a>Concepteur d'activités If
 

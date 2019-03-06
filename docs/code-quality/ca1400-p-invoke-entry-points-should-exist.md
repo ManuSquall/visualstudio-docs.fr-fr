@@ -1,8 +1,6 @@
 ---
-title: 'CA1400 : Des points d’entrée P/Invoke doivent exister'
+title: "CA1400 : Des points d'entrée P-Invoke doivent exister"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1400
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 1d64e470-7b2f-4cca-8fb0-ac92829e6332
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 950983bd8c953a9a29c7d2f0ca216975d6c0f142
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2374e3c1aa79414bfa39ea97abeec7e8e44d2c36
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839256"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929815"
 ---
 # <a name="ca1400-pinvoke-entry-points-should-exist"></a>CA1400 : Des points d'entrée P/Invoke doivent exister
 

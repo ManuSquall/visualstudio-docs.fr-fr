@@ -1,8 +1,6 @@
 ---
 title: Installer des analyseurs Roslyn
 ms.date: 08/03/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -10,19 +8,19 @@ helpviewer_keywords:
 - Roslyn analyzers
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: aa0805b3cffe5a44ae2c6198c6ca2682ceca9f95
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 738246e3c35ec5019dd0f793d86a5447bd7556fb
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865401"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222933"
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>Installer les analyseurs .NET Compiler Platform
 
-Visual Studio 2017 inclut un ensemble principal de .NET Compiler Platform (*Roslyn*) analyseurs. Ces analyseurs sont toujours activées. Vous pouvez installer des analyseurs supplémentaires comme packages NuGet, soit en tant qu’extensions Visual Studio dans *VSIX* fichiers.
+Visual Studio inclut un ensemble principal de .NET Compiler Platform (*Roslyn*) analyseurs. Ces analyseurs sont toujours activées. Vous pouvez installer des analyseurs supplémentaires comme packages NuGet, soit en tant qu’extensions Visual Studio dans *VSIX* fichiers.
 
 ## <a name="to-install-nuget-analyzer-packages"></a>Pour installer les packages NuGet analyzer
 
@@ -32,7 +30,7 @@ Visual Studio 2017 inclut un ensemble principal de .NET Compiler Platform (*Rosl
 
    > [!NOTE]
    > La page www.nuget.org pour chaque package de l’analyseur vous montre la commande Coller dans le **Console du Gestionnaire de Package**. Il existe même un bouton pratique pour copier le texte dans le Presse-papiers.
-   > 
+   >
    > ![Page NuGet.org affichant la commande de Console du Gestionnaire de Package](media/nuget-install-command.png)
 
    Les assemblys de l’analyseur sont installés et s’affichent dans **l’Explorateur de solutions** sous **références** > **analyseurs**.
@@ -62,7 +60,7 @@ Visual Studio 2017 inclut un ensemble principal de .NET Compiler Platform (*Rosl
 
 6. Sélectionnez **modifier** pour démarrer l’installation.
 
-7. Après une minute ou deux, l’installation est terminée. Sélectionnez **fermer**.
+7. Après une minute ou deux, l’installation est terminée. Sélectionnez **Fermer**.
 
 8. Ouvrez à nouveau Visual Studio.
 
@@ -71,9 +69,9 @@ Si vous souhaitez vérifier si l’extension est installée, sélectionnez **out
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Utiliser les analyseurs de Roslyn dans Visual Studio](../code-quality/use-roslyn-analyzers.md)
+> [Utiliser des analyseurs Roslyn dans Visual Studio](../code-quality/use-roslyn-analyzers.md)
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Vue d’ensemble des analyseurs de Roslyn dans Visual Studio](../code-quality/roslyn-analyzers-overview.md)
-- [Installer les analyseurs FxCop](../code-quality/install-fxcop-analyzers.md)
+- [Installer des analyseurs FxCop](../code-quality/install-fxcop-analyzers.md)

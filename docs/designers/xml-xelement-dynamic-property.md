@@ -1,23 +1,21 @@
 ---
 title: Xml (propriété dynamique XElement)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: reference
 apiname:
 - XElement.Xml
 ms.assetid: 69ab2a33-4fe7-4cfa-97f8-eaf063decb18
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a69245a875d0c1df1942af12afaacc5a9ffc34b
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 7d58dea02a45ccc84e7829da2acdb479eb17dda3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080835"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931245"
 ---
 # <a name="xml-xelement-dynamic-property"></a>Xml (propriété dynamique XElement)
 

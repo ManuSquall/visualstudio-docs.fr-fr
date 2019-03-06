@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteWindow::EnableModeless | Documents Microsoft
+title: IActiveScriptSiteWindow::EnableModeless | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7099fe7d13a1cb3231e67049104722af9373d7a8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4cea23890539ca80abf8e3e58b0f8c48b7ca1fc9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724929"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093013"
 ---
 # <a name="iactivescriptsitewindowenablemodeless"></a>IActiveScriptSiteWindow::EnableModeless
 Force l’hôte activer ou désactiver la fenêtre principale, ainsi que toutes les boîtes de dialogue non modale.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT EnableModeless(  
     BOOL fEnable  // enable flag  
 );  
@@ -43,10 +43,10 @@ HRESULT EnableModeless(
 ## <a name="return-value"></a>Valeur de retour  
  Retourne `S_OK` en cas de réussite, ou `E_FAIL` si une erreur s’est produite.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette méthode est identique à la `IOleInPlaceFrame::EnableModeless` (méthode).  
   
- Les appels à cette méthode peuvent être imbriqués.  
+ Appels à cette méthode peuvent être imbriquées.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IActiveScriptSiteWindow](../../winscript/reference/iactivescriptsitewindow.md)

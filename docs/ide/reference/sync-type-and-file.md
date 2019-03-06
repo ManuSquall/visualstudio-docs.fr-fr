@@ -1,23 +1,21 @@
 ---
 title: Renommer un nom de fichier pour qu’il corresponde à un type
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: bfc1a88091fa30bceea15a3f8e1b78df5cc7a87c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 90783dcd609094659517d994c3a4d4e0610b7735
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054785"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940267"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>Synchroniser un type avec un nom de fichier ou un nom de fichier avec un type (refactorisation)
 
@@ -32,6 +30,9 @@ Cette refactorisation s’applique à :
 **Quand :** Vous avez renommé un fichier ou un type et n’avez pas encore mis à jour le fichier ou type correspondant.
 
 **Pourquoi :** Si vous placez un type dans un fichier avec un autre nom, ou vice versa, il est difficile de trouver ce que vous cherchez. En renommant le type ou le nom de fichier, le code devient plus lisible, ce qui facilite la navigation.
+
+> [!NOTE]
+> Cette refactorisation n’est pas encore disponible pour les projets .NET Standard et .NET Core.
 
 ## <a name="how-to"></a>Procédure
 
@@ -63,8 +64,6 @@ Cette refactorisation s’applique à :
    - Visual Basic : Dans l’exemple ci-dessous, le fichier **Employee.vb** a été renommé **Person.vb** afin de correspondre au nom du type.
 
        ![Résultat de l’action Inclure (Visual Basic)](media/synctype-result-vb.png)
-
-> REMARQUE : Cette refactorisation n’est pas encore disponible pour les projets .NET Standard et .NET Core.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -2,23 +2,21 @@
 title: Tutoriel d’apprentissage de Flask dans Visual Studio - étape 4, modèles de projet web
 titleSuffix: ''
 description: Une procédure pas à pas montrant les principes de base de Flask dans le contexte de projets Visual Studio, en particulier les fonctionnalités fournies par les modèles Projet web Flask et Projet web Flask/Jade.
-ms.date: 09/04/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 01/07/2019
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c072d1187abf463cc2f185946f7e238bb091a534
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b17400aae5386a2d86cc13d0b81293bd2ef068fb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051699"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908918"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Étape 4 : Utiliser le modèle de projet web Flask complet
 
@@ -164,7 +162,7 @@ Les modèles de page individuelle *about.html*, *contact.html* et *index.html* �
 
 Comme mentionné au début de cet article, Visual Studio fournit un modèle de « Projet web Flask/Jade », qui crée une application visuellement identique à ce qui est produit par le « Projet web Flask ». La principale différence est qu’il utilise le moteur de création de modèles Jade, qui est une extension de Jinja implémentant les mêmes concepts avec un langage plus concis. Plus précisément, Jade utilise par exemple des mots clés au lieu de balises entre des délimiteurs {% %}, et vous permet de référencer des styles CSS et des éléments HTML en utilisant des mots clés.
 
-Pour activer Jade, le modèle de projet inclut d’abord le package pyjade dans *requirements.txt*. 
+Pour activer Jade, le modèle de projet inclut d’abord le package pyjade dans *requirements.txt*.
 
 Le fichier *\_\_init\_\_.py* de l’application contient une ligne pour
 

@@ -1,8 +1,6 @@
 ---
-title: 'CA1024 : Utiliser les propriétés lorsque cela est approprié'
+title: 'CA1024 : Utiliser les propriétés lorsque cela est approprié'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - UsePropertiesWhereAppropriate
@@ -13,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: 3a04f765-af7c-4872-87ad-9cc29e8e657f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f74c41584c8dc8960adce2bd253f7d1c38707f7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8a3fba3a733381642999d7bccb5666b7db895b87
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823214"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922301"
 ---
-# <a name="ca1024-use-properties-where-appropriate"></a>CA1024 : Utiliser les propriétés lorsque cela est approprié
+# <a name="ca1024-use-properties-where-appropriate"></a>CA1024 : Utiliser les propriétés lorsque cela est approprié
 
 |||
 |-|-|

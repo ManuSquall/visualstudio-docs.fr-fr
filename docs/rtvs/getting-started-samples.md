@@ -2,20 +2,18 @@
 title: Exemples de projets R
 description: Index d’une collection d’exemples pour bien démarrer avec R et Visual Studio.
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: adb26b3cf6097d830c899ef4ef251d2066b81a38
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: adcc5ce422cdd06e641408b3506fb751a4c730d1
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235249"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840881"
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>Exemples de projets Outils R pour Visual Studio
 
@@ -49,7 +47,7 @@ Comme avec tous les exemples, ouvrez le fichier, placez le curseur en haut, puis
 
     ![Exemple de tracé de benchmark](media/samples-mro-benchmark-plot.png)
 
-- `Bike_Rental_Estimation_with_MRS` crée un modèle de prévision de demande de location de vélos selon un jeu de données d’historique à l’aide de Microsoft ML Server. 
+- `Bike_Rental_Estimation_with_MRS` crée un modèle de prévision de demande de location de vélos selon un jeu de données d’historique à l’aide de Microsoft ML Server.
 
 - `Data_Exploration` contient trois scripts :
 
@@ -60,14 +58,14 @@ Comme avec tous les exemples, ouvrez le fichier, placez le curseur en haut, puis
       ![Sortie de l’exemple Using ggplot2.R](media/samples-3d-interactive.png)
 
 - `Datasets` contient trois fichiers *.csv* utilisés par d’autres exemples.
-- `Flight_Delays_Prediction_with_R` et `Flight_Delays_Prediction_with_MRS` montrent comment prédire les vols en retard à l’aide de R, de l’apprentissage automatique et des données d’historique sur les vols à l’heure et la météo. 
-- `Machine learning` contient trois exemples permettant d’apprendre à prévoir les vols en retard, les prix immobiliers et les locations de vélos. Ces exemples réunis illustrent l’application de R et de Microsoft ML Server pour résoudre de vrais problèmes. Ces exemples vous montrent également comment utiliser plusieurs modèles d’apprentissage automatique connus et comment les déployer en tant que service web Azure à l’aide d’un espace de travail [Azure Machine Learning](https://azure.microsoft.com/services/machine-learning/).
+- `Flight_Delays_Prediction_with_R` et `Flight_Delays_Prediction_with_MRS` montrent comment prédire les vols en retard à l’aide de R, de Machine Learning et des données d’historique sur les vols à l’heure et la météo.
+- `Machine learning` contient trois exemples permettant d’apprendre à prévoir les vols en retard, les prix immobiliers et les locations de vélos. Ces exemples réunis illustrent l’application de R et de Microsoft ML Server pour résoudre de vrais problèmes. Ces exemples vous montrent également comment utiliser plusieurs modèles Machine Learning populaires et comment les déployer en tant que service web Azure à l’aide d’un espace de travail [Azure Machine Learning](https://azure.microsoft.com/services/machine-learning/).
 
 - `R_MRO_MRS_Comparison` est une comparaison en six parties qui présente les similitudes et les différences entre R, Microsoft R Open et Microsoft ML Server. Cette comparaison porte sur les commandes, la syntaxe, les constructions et les performances.
 
 ## <a name="whats-special-about-microsoft-r-open-and-microsoft-ml-server"></a>Quelles sont les particularités de Microsoft R Open et de Microsoft ML Server ?
 
-[Microsoft R Open](http://aka.ms/rtvs-r-open), distribution Microsoft de R, présente deux différences importantes avec [CRAN R](https://cran.r-project.org/) :
+[Microsoft R Open](https://aka.ms/rtvs-r-open), distribution Microsoft de R, présente deux différences importantes avec [CRAN R](https://cran.r-project.org/) :
 
 1. [De meilleures performances de calcul](https://mran.revolutionanalytics.com/rro/#intelmkl1) avec les bibliothèques [Intel Math Kernel Libraries](https://software.intel.com/intel-mkl). Les bibliothèques sont disponibles en téléchargement gratuit sur le site web de Microsoft pour une utilisation avec Microsoft R Open.
 
@@ -83,7 +81,7 @@ La comparaison suivante montre que MLS et MRO avec MKL offrent des performances 
 
 ![Comparaison entre, d’une part, MLS et MRO avec MKL et, d’autre part, R et MRO sans MKL](media/samples-speed-comparison.png)
 
-Pour obtenir une comparaison technique de R avec MRO et MLS, lisez la [discussion approfondie de Lixun Zhang](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) sur le sujet.
+Pour obtenir une comparaison technique de R avec MRO et MLS, lisez la [discussion approfondie de Lixun Zhang](http://htmlpreview.github.io/? https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) sur le sujet.
 
 La figure suivante compare ensuite le temps écoulé en secondes utilisé dans la création de modèles de régression logistique pour prévoir les vols en retard de plus de 15 minutes.  Le temps écoulé utilisé dans CRAN R augmente considérablement à la suite d’une augmentation de quelques lignes, tandis que le temps écoulé dans MLS n’est multiplié que par deux environ. Pour plus d’informations sur ce benchmark, visitez l’exemple *Benchmarks/rxGlm_benchmark.R*.
 

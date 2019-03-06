@@ -1,8 +1,6 @@
 ---
-title: IDiaEnumSectionContribs::Reset | Documents Microsoft
-ms.custom: ''
+title: IDiaEnumSectionContribs::Reset | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,27 +9,27 @@ helpviewer_keywords:
 ms.assetid: 97ea62ed-bdf8-4df2-b178-b17b9df20adc
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7d90950a178397722ecb89629718a748f5a6708
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 1fb0a79cf2ef300df7e0cf4a745d8d22a30a80fe
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456589"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56644417"
 ---
 # <a name="idiaenumsectioncontribsreset"></a>IDiaEnumSectionContribs::Reset
-Réinitialise la séquence d’énumération au début.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT Reset();  
-```  
-  
-## <a name="return-value"></a>Valeur de retour  
- Retourne `S_OK`.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)
+Réinitialise une séquence d’énumération au début.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT Reset();
+```
+
+## <a name="return-value"></a>Valeur de retour
+ Retourne `S_OK`.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)

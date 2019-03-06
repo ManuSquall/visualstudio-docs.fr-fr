@@ -25,7 +25,7 @@
 #### [CAST Highlight](vs-cast.md)
 #### [CloudPilot](vs-cloudpilot.md)
 #### [Visual Studio App Center](vs-visual-studio-app-center.md)
-#### [Parasoft ](vs-parasoft.md)
+#### [Parasoft](vs-parasoft.md)
 #### [WhiteSource Bolt](vs-whitesource.md)
 #### [Enterprise Mobility et Security](vs-ems.md)
 #### [Compte de développeur Windows](vs-windows-dev.md)
@@ -44,7 +44,6 @@
 #### [Conversation Azure Advisory](vs-azure-advisory-chat.md)
 #### [Communauté Azure](vs-azure-community.md)
 #### [Support technique](vs-tech-support.md)
-#### [Support de la communauté des développeurs ](vs-priority-support.md)
 #### [Support concierge](vs-concierge-chat.md)
 ## Gestion des abonnements
 ### [Responsabilités de l’administrateur](admin-responsibilities.md)
@@ -82,7 +81,7 @@
 #### [Gestion des abonnements pour MPN](manage-mpn-subscriptions.md)
 #### [Microsoft for Startups](program-startups.md)
 ## Ressources
-### [Livre blanc des contrats de licence Visual Studio](http://aka.ms/vslicensing)
+### [Livre blanc des contrats de licence Visual Studio](https://aka.ms/vslicensing)
 ### [Comparer les options et les prix des abonnements](https://visualstudio.microsoft.com/vs/pricing)
 ### [Comparer les fonctionnalités IDE Visual Studio](https://visualstudio.microsoft.com/vs/compare)
 ### [Prise en charge des abonnements et de l’administration de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)

@@ -1,8 +1,6 @@
 ---
 title: 'CA1300 : Spécifier MessageBoxOptions'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - SpecifyMessageBoxOptions
@@ -13,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 9357a724-026e-4a3d-a03a-f14635064ec6
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 815fe7b7f839adeb3204e33bb532b70909d92b53
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: bd269b099095326a260da7613bf3c2c402e864be
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056385"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55914200"
 ---
 # <a name="ca1300-specify-messageboxoptions"></a>CA1300 : Spécifier MessageBoxOptions
 

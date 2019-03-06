@@ -2,22 +2,20 @@
 title: Concepteur de flux de travail - Concepteur d’activités Delay
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Delay.UI
 ms.assetid: f51742a8-2c9a-47d1-8a23-18459d03ae19
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bce0be0f6c7953c44601edd090b1e1e7d3b6f6a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e69c82899cb5f7aa24235641ae517709686170a7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832983"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55932844"
 ---
 # <a name="delay-activity-designer"></a>Concepteur d'activités Delay
 

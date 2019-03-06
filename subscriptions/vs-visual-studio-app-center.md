@@ -3,18 +3,16 @@ title: Avantage Visual Studio App Center dans les abonnements Visual Studio | Mi
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/15/2018
-ms.topic: Get-Started-Article
+ms.date: 12/19/2018
+ms.topic: conceptual
 description: Découvrez l’avantage Visual Studio App Center inclus dans les abonnements Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 112597455bbabe9f42cc2834bd06bf5c52d7cc9f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 30953834e36cb88e79a800e0356ac59189165aee
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940981"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843557"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center dans les abonnements Visual Studio
 
@@ -44,21 +42,26 @@ La mise en route de Visual Studio App Center est simple.
 
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, cloud annuel et cloud mensuel)   | Licences en volume, Azure, Détail, NFR<sup>1</sup> | Included       |  Oui          |
-| Visual Studio Professional (Standard, cloud annuel et cloud mensuel) | Licences en volume, Azure, Détail                                       | Included                                                            |Oui |
+| Visual Studio Enterprise (Standard, cloud mensuel)   | Licences en volume, Azure, Détail, NFR<sup>1</sup> | Included       |  Oui          |
+| Visual Studio Professional (Standard, cloud mensuel) | Licences en volume, Azure, Détail                                       | Included                                                            |Oui |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Included                                                            |Oui |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Included                                                            |Oui |
 | Visual Studio Dev Essentials | NA  | Included                                                            |Oui |
 
 
-<sup>1</sup> *Inclut : NFR (revente interdite), FTE, VSIP (Visual Studio Industry Partner), Imagine, MPN (Microsoft Partner Network), MCT Software & Services, MCT Software & Services Developer, BizSpark, MVP (Microsoft Valued Professional), RD (Region Director).*
+<sup>1</sup>  *Inclut :  NFR (revente interdite), FTE, VSIP (Visual Studio Industry Partner), Imagine, MPN (Microsoft Partner Network), MCT Software & Services, MCT Software & Services Developer, BizSpark, MVP (Most Valuable Professional), RD (Regional Director).*
+
+
+> [!NOTE]
+> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
+
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
 ## <a name="frequently-asked-questions"></a>FAQ
 
-### <a name="q--i-get-an-error-that-my-browser-is-unsupported--whats-wrong"></a>Q : Je reçois une erreur indiquant que mon navigateur n’est pas pris en charge.  Quel est le problème ?
-R : App Center nécessite des fonctionnalités récentes qui ne sont peut-être plus fournies par certains navigateurs plus anciens.  Si votre navigateur n’est pas pris en charge, procédez comme suit :
+### <a name="q--i-get-an-error-that-my-browser-is-unsupported--whats-wrong"></a>Q :  Je reçois une erreur indiquant que mon navigateur n’est pas pris en charge.  Quel est le problème ?
+R :  App Center nécessite des fonctionnalités récentes qui ne sont peut-être plus fournies par certains navigateurs plus anciens.  Si votre navigateur n’est pas pris en charge, procédez comme suit :
 1.  Ouvrez un autre navigateur, tel que Microsoft Edge ou une version récente de Google Chrome, Firefox ou Safari.
 2.  Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) pour Visual Studio, puis connectez-vous.
 3.  Cliquez sur le lien **Commencer** de la vignette Visual Studio App Center.

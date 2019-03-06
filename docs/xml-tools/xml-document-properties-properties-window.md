@@ -1,25 +1,23 @@
 ---
 title: Propriétés des documents XML, fenêtre Propriétés
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7c29a6e106381e23007f8cb3d899cb3b3c0e387
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 69cd8a8f1acd650c65c995f303adc4d3ee2c1bc5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693563"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938241"
 ---
 # <a name="xml-document-properties-properties-window"></a>Propriétés des documents XML, fenêtre Propriétés
 
-Le **propriétés** fenêtre fournit des informations de base sur le document actif dans l’éditeur XML. Les propriétés disponibles varient selon le type de document XML actif.
+Le **propriétés** fenêtre fournit des informations de base sur le document est actif dans l’éditeur XML. Les propriétés disponibles varient selon le type de document XML actif.
 
 > [!NOTE]
 > Toutes les propriétés des documents XML sont enregistrées dans la solution. Vous ne devez donc pas réentrer ces valeurs la prochaine fois que vous ouvrez la solution.
@@ -30,7 +28,7 @@ Le **propriétés** fenêtre fournit des informations de base sur le document ac
 
  **Entrée**
 
- Document d'entrée associé à la feuille de style XSLT. Il est utilisé par le **ShowXSLT sortie** commande. Un document peut être sélectionné à l’aide de la recherche (**...** ) bouton.
+ Document d'entrée associé à la feuille de style XSLT. Il est utilisé par le **ShowXSLT sortie** commande. Un document peut être sélectionné à l’aide de la navigation (**...** ) bouton.
 
  Cette propriété n'est visible que lorsqu'un fichier XSLT est actif dans la fenêtre de l'éditeur.
 
@@ -48,9 +46,9 @@ Le **propriétés** fenêtre fournit des informations de base sur le document ac
 
  **Feuille de style**
 
- Le fichier XSLT utilisé pour transformer le document lorsque la **afficher la sortie XSLT** commande est utilisée. Si ce champ est vide lorsque la **afficher la sortie XSLT** commande est utilisée, l’éditeur utilise la valeur fournie dans le `xml-stylesheet` du traitement des instructions du document, ou il vous invite à entrer le nom de fichier.
+ Le fichier XSLT utilisé pour transformer le document lorsque le **afficher la sortie XSLT** commande est utilisée. Si ce champ est vide lorsque le **afficher la sortie XSLT** commande est utilisée, l’éditeur utilise la valeur fournie dans le `xml-stylesheet` du document, ou il l’instruction de traitement vous demande le nom de fichier.
 
- Lorsque vous modifiez un fichier XSLT, cette propriété peut être utilisée pour spécifier qu’une feuille de style différente doit être utilisée lorsque la **afficher la sortie XSLT** ou **débogage XSLT** commande est sélectionnée. Par exemple, il se peut que vous souhaitiez utiliser cette fonction lorsque vous modifiez une feuille de style incluse dans une feuille de style parente.
+ Lorsque vous modifiez un fichier XSLT, cette propriété peut être utilisée pour spécifier qu’une feuille de style différente doit être utilisée lorsque le **afficher la sortie XSLT** ou **débogage XSLT** une commande est sélectionnée. Par exemple, il se peut que vous souhaitiez utiliser cette fonction lorsque vous modifiez une feuille de style incluse dans une feuille de style parente.
 
 ## <a name="see-also"></a>Voir aussi
 

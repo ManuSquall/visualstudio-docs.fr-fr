@@ -1,21 +1,19 @@
 ---
 title: Personnalisation des modèles de projet et d’élément
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - customizing templates [Visual Studio]
 - Visual Studio templates, customizing
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 451885aca46addf663d0e3a3ae9768f7d0f0cdba
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 7e80bf422906c2b89e75462938d736fd3a0e5a41
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051754"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919324"
 ---
 # <a name="customize-project-and-item-templates"></a>Personnaliser des modèles de projet et d’élément
 

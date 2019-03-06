@@ -1,22 +1,20 @@
 ---
 title: Créer un test codé de l'interface utilisateur
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fe8bed9c1f1f8aee9ae8e6d1ba460bf226d7b818
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: d2cb1e2a05499c01cc1441db0a289cfc95b8e243
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895520"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955061"
 ---
-# <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Procédure pas à pas : créer, modifier et gérer un test codé de l’interface utilisateur
+# <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Procédure pas à pas : Créer, modifier et gérer un test codé de l’interface utilisateur
 
 Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et gérer un test codé de l’interface utilisateur pour tester une application WPF (Windows Presentation Framework). La procédure pas à pas fournit des solutions pour corriger des tests interrompus par différents problèmes de synchronisation et de refactorisation des contrôles.
 
@@ -355,11 +353,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et g�
 
 ## <a name="videos"></a>Vidéos
 
-![lien vers la vidéo](../data-tools/media/playvideo.gif) [Bien démarrer avec les tests codés de l’interface utilisateur](http://go.microsoft.com/fwlink/?LinkID=230573)
-
-![lien vers la vidéo](../data-tools/media/playvideo.gif) [Maintenance et débogage des tests codés de l’interface utilisateur](http://go.microsoft.com/fwlink/?LinkID=230574)
-
-![lien vers la vidéo](../data-tools/media/playvideo.gif) [Codage manuel des tests codés de l’interface utilisateur](http://go.microsoft.com/fwlink/?LinkID=230575)
+![lien vers la vidéo](../data-tools/media/playvideo.gif) [Bien démarrer avec les tests codés de l’interface utilisateur](https://onedrive.live.com/?id=2DB0E1EFE1C1D3B8%21110&cid=2DB0E1EFE1C1D3B8)
 
 ## <a name="faq"></a>FAQ
 

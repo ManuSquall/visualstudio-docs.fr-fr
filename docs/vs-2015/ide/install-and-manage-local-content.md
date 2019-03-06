@@ -1,14 +1,9 @@
 ---
 title: Installer et gérer un contenu local | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - hv_manage
 helpviewer_keywords:
@@ -28,13 +23,13 @@ ms.assetid: efd9df4c-2e69-4c50-992c-9678a8d8cf19
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7b8a67a9105314ad73076d3a8b12d51c23f83097
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a6e52c9a34b5fc6ea487cffd1728a525dc5a0984
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832730"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54766222"
 ---
 # <a name="install-and-manage-local-content"></a>Installer et gérer un contenu local
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -131,6 +126,3 @@ Microsoft Help Viewer vous permet d’ajouter, de supprimer, de mettre à jour e
   
 ## <a name="see-also"></a>Voir aussi  
  [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)
-
-
-

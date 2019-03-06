@@ -1,8 +1,6 @@
 ---
-title: "CA1065 : Ne pas lever d'exceptions dans des emplacements inattendus"
+title: "CA1065 : Ne pas lever d'exceptions dans les emplacements inattendus"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1065
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 4e1bade4-4ca2-4219-abc3-c7b2d741e157
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4999770367ad7b170398333cf7c7cf2cb9d1c407
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 9dd45410a2c928a0ffbbe827b100edd119cf59f0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546692"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950368"
 ---
-# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065 : Ne pas lever d'exceptions dans des emplacements inattendus
+# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065 : Ne pas lever d'exceptions dans les emplacements inattendus
 
 |||
 |-|-|

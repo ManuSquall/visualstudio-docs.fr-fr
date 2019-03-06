@@ -1,9 +1,6 @@
 ---
-title: 'Comment : permettre au code à exécuter derrière des documents avec des autorisations restreintes'
-ms.custom: ''
+title: 'Procédure : Autoriser le code de s’exécuter derrière des documents avec des autorisations restreintes'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,46 +12,44 @@ helpviewer_keywords:
 - code [Office development in Visual Studio], running behind restricted documents
 - documents [Office development in Visual Studio], restricted permissions
 - Office documents [Office development in Visual Studio, restricted permissions
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 831be19e4be8c746e668b946fd170fc4c86def49
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: be5afe96af1baa615e5000a6c1a19b543f3c89c5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855845"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637657"
 ---
-# <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Comment : permettre au code à exécuter derrière des documents avec des autorisations restreintes
-  Vous pouvez utiliser la fonctionnalité Information Rights Management (IRM) de Microsoft Office pour restreindre les autorisations à un document ou classeur. Par défaut, le code derrière un document Microsoft Office Word restreint ou un classeur Microsoft Office Excel n’est pas autorisé à exécuter. Vous pouvez modifier la valeur par défaut afin que vos extensions de code managé peuvent accéder au modèle objet, et votre solution fonctionnera.  
-  
- [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
-  
- Vous devez être l’auteur du document ou classeur ou ont un accès contrôle total pour pouvoir modifier les paramètres d’autorisation.  
-  
-## <a name="to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Pour autoriser le code de s’exécuter derrière des documents avec des autorisations restreintes  
-  
-1. Ouvrez le document ou le classeur dans Word ou Excel.  
-  
-2. Cliquez sur le **fichier** onglet, pointez sur **préparation**, pointez sur **restreindre l’autorisation**, puis cliquez sur **accès restreint**.  
-  
-   > [!NOTE]  
-   >  À la première utilisation, vous êtes invité à installer le client Windows Rights Management. Après avoir installé le client, vous devrez peut-être répéter ces étapes.  
-  
-3. Dans le **autorisation** boîte de dialogue, sélectionnez **restreindre l’autorisation à ce document**, puis cliquez sur **plus d’Options**.  
-  
-4. Sous **des autorisations supplémentaires pour les utilisateurs**, sélectionnez **accéder par programmation au contenu**.  
-  
-   Word ou Excel autorise un accès par programmation au modèle objet.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Information rights management et vue d’ensemble des extensions de code managé](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
- [Protection des documents dans les solutions au niveau du document](../vsto/document-protection-in-document-level-solutions.md)   
- [Protection de mot de passe des documents Office](../vsto/password-protection-on-office-documents.md)   
- [Concevoir et créer des solutions Office](../vsto/designing-and-creating-office-solutions.md)   
- [Sécurisez les solutions Office](../vsto/securing-office-solutions.md)   
- [Déployer une solution Office](../vsto/deploying-an-office-solution.md)  
-  
-  
+# <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Procédure : Autoriser le code de s’exécuter derrière des documents avec des autorisations restreintes
+  Vous pouvez utiliser la fonctionnalité Information Rights Management (IRM) de Microsoft Office pour restreindre les autorisations à un document ou classeur. Par défaut, le code derrière un document Microsoft Office Word restreint ou un classeur Microsoft Office Excel n’est pas autorisé à exécuter. Vous pouvez modifier la valeur par défaut afin que vos extensions de code managé peuvent accéder au modèle objet, et votre solution fonctionnera.
+
+ [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
+
+ Vous devez être l’auteur du document ou classeur ou ont un accès contrôle total pour pouvoir modifier les paramètres d’autorisation.
+
+## <a name="to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Pour autoriser le code de s’exécuter derrière des documents avec des autorisations restreintes
+
+1. Ouvrez le document ou le classeur dans Word ou Excel.
+
+2. Cliquez sur le **fichier** onglet, pointez sur **préparation**, pointez sur **restreindre l’autorisation**, puis cliquez sur **accès restreint**.
+
+   > [!NOTE]
+   >  À la première utilisation, vous êtes invité à installer le client Windows Rights Management. Après avoir installé le client, vous devrez peut-être répéter ces étapes.
+
+3. Dans le **autorisation** boîte de dialogue, sélectionnez **restreindre l’autorisation à ce document**, puis cliquez sur **plus d’Options**.
+
+4. Sous **des autorisations supplémentaires pour les utilisateurs**, sélectionnez **accéder par programmation au contenu**.
+
+   Word ou Excel autorise un accès par programmation au modèle objet.
+
+## <a name="see-also"></a>Voir aussi
+- [Information rights management et vue d’ensemble des extensions de code managé](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
+- [Protection des documents dans les solutions au niveau du document](../vsto/document-protection-in-document-level-solutions.md)
+- [Protection de mot de passe des documents Office](../vsto/password-protection-on-office-documents.md)
+- [Concevoir et créer des solutions Office](../vsto/designing-and-creating-office-solutions.md)
+- [Sécurisez les solutions Office](../vsto/securing-office-solutions.md)
+- [Déployer une solution Office](../vsto/deploying-an-office-solution.md)

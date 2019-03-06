@@ -1,8 +1,6 @@
 ---
-title: 'CA1814 : Utilisez des tableaux en escalier à la place de tableaux multidimensionnels'
+title: 'CA1814 : Utilisez des tableaux en escalier à la place de tableaux multidimensionnels'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - PreferJaggedArraysOverMultidimensional
@@ -13,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: b1ccf563-2ec8-42e5-b89c-731a9de1ea1d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 69210ac7957cf66119c059fc34a9eb4e11a4d0cb
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 6d3dc26964a62c952b9c8d18c710e6163bf8ab08
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551889"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955321"
 ---
-# <a name="ca1814-prefer-jagged-arrays-over-multidimensional"></a>CA1814 : Utilisez des tableaux en escalier à la place de tableaux multidimensionnels
+# <a name="ca1814-prefer-jagged-arrays-over-multidimensional"></a>CA1814 : Utilisez des tableaux en escalier à la place de tableaux multidimensionnels
 
 |||
 |-|-|

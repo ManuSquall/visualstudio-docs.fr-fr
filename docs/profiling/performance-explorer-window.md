@@ -1,8 +1,6 @@
 ---
 title: Explorateur de performances, fenêtre | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performanceexplorer
@@ -11,19 +9,19 @@ helpviewer_keywords:
 - performance tools, Performance Explorer
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f27d1436aaeb0ec75876edf9119dff93f7539483
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c8ffa5340ceaa00adb5e86100d8e58c307f41d40
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31582109"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56647031"
 ---
 # <a name="performance-explorer-window"></a>Explorateur de performances, fenêtre
 
-La fenêtre **Explorateur de performances** de l’IDE de Visual Studio permet de configurer et de démarrer des sessions de performance à l’aide des Outils de profilage de Visual Studio.
+La fenêtre **Explorateur de performances** de l’IDE de Visual Studio permet de configurer et de démarrer des sessions de performance à l’aide des Outils de profilage de Visual Studio. Si vous avez besoin d’ouvrir la fenêtre, suivez les instructions indiquées dans [Guide du débutant en profilage des performances](../profiling/beginners-guide-to-cpu-sampling.md).
 
 ## <a name="performance-explorer-toolbar"></a>Barre d’outils de l’Explorateur de performances
 
@@ -53,6 +51,6 @@ La fenêtre **Explorateur de performances** contient un contrôle d’arborescen
 
 ## <a name="see-also"></a>Voir aussi
 
-[Vues d’ensemble](../profiling/overviews-performance-tools.md)  
-[Configuration de sessions de performances](../profiling/configuring-performance-sessions.md)  
+[Vues d’ensemble](../profiling/overviews-performance-tools.md)
+[Configuration de sessions de performances](../profiling/configuring-performance-sessions.md)
 [Contrôle de la collecte de données](../profiling/controlling-data-collection.md)

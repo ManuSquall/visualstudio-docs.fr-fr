@@ -4,17 +4,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: cd7f1f36374f3411b5a76f5df5e3e25bb52df230
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6be7cad9034f67a00d8f795a5c4f4f9ad45c1abe
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948634"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922366"
 ---
 # <a name="t4-assembly-directive"></a>Directive d'assembly T4
 

@@ -1,44 +1,40 @@
 ---
-title: 'Procédure : Mise à niveau des projets Visual C++ vers Visual Studio 2015 | Microsoft Docs'
+title: 'Comment : mettre à niveau des projets Visual C++ vers Visual Studio 2015 | Microsoft Docs'
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [C++], upgrading
 ms.assetid: 9a283ebb-f6d8-49c0-a73e-323979ff56a2
 caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 493b96d4c66c35a242efd4957288d215ab2877ed
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 047cb8733e1f1fa32e67b2fc7b6c53edb6174fcb
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063287"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54797049"
 ---
-# <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Procédure : Mise à niveau des projets Visual C++ vers Visual Studio 2015
+# <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Procédure : Mise à niveau de projets Visual C++ vers Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pour la dernière documentation sur Visual Studio 2017, consultez [Visual C++ Guide du portage et mise à niveau](https://docs.microsoft.com/cpp/porting/visual-cpp-porting-and-upgrading-guide).
 
 Lorsque vous ouvrez pour la première fois un projet Visual C++ créé dans une version antérieure de Visual Studio, vous pouvez être invité à le mettre à jour. Le message vous demande si vous souhaitez effectuer une mise à niveau vers la version la plus récente du compilateur et des bibliothèques Visual C++. Les options de mise à niveau dépendent de la version de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] qui a été utilisée pour créer le projet.
 
- Vous pouvez utiliser [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] pour ouvrir, modifier et générer des projets [!INCLUDE[win8](../includes/win8-md.md)] créés dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], mais pour créer un projet [!INCLUDE[win8](../includes/win8-md.md)], vous devez utiliser [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. (Pour créer un projet [!INCLUDE[win81](../includes/win81-md.md)] , vous devez utiliser [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)].)
+ Vous pouvez utiliser [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] pour ouvrir, modifier et générer des projets [!INCLUDE[win8](../includes/win8-md.md)] créés dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], mais pour créer un projet [!INCLUDE[win8](../includes/win8-md.md)] , vous devez utiliser [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. (Pour créer un projet [!INCLUDE[win81](../includes/win81-md.md)] , vous devez utiliser [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)].)
 
- Pour créer un projet Windows 10, vous devez utiliser [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)].
+ Pour créer un projet Windows 10, vous devez utiliser [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)].
 
  Si vous n’êtes pas invité à effectuer une mise à jour, vous n’aurez rien à faire pour améliorer le projet.
 
 -   Si le projet (.vcproj) a été créé dans une version de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] qui est plus ancienne que [!INCLUDE[vs2010](../includes/vs2010-md.md)], vous devez mettre à jour le projet.
 
--   Si le projet (.vcxproj) a été créé dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ou [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], vous disposez de deux options :
+-   Si le projet (.vcxproj) a été créé dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)],  [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]ou [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] , vous disposez de deux options :
 
     -   Vous pouvez ignorer la mise à jour. [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] chargera le projet sans effectuer de modification s’il a accès aux outils Visual C++ dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] avec SP1, [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ou [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Vous pouvez fournir cet accès en installant la version de Visual Studio avec laquelle le projet a été créé sur le même ordinateur doté de [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]. Pour plus d’informations, consultez [Installing Visual Studio Versions Side-by-Side](../install/install-visual-studio-versions-side-by-side.md).
 

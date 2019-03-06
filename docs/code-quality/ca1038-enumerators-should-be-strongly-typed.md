@@ -1,8 +1,6 @@
 ---
-title: 'CA1038 : Les énumérateurs doivent être fortement typés'
+title: 'CA1038 : Les énumérateurs doivent être fortement typés'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - EnumeratorsShouldBeStronglyTyped
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 8919f526-d487-42a4-87dc-2b2ee25260c4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22cc84a0cdc8d4fdb86f6890ae0ebd25eb65beb8
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 61eced11a61b8da92d01d26c0e66ad5d9c49f72d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45545487"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922405"
 ---
-# <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038 : Les énumérateurs doivent être fortement typés
+# <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038 : Les énumérateurs doivent être fortement typés
 
 |||
 |-|-|

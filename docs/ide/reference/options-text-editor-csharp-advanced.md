@@ -1,23 +1,21 @@
 ---
 title: Options, Éditeur de texte, C#, Avancé
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7cfbc6d57e5bfd3c6a8f317967448039a9b3f5e4
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 010f2a2e6dc163f24a29e8e352b21d8ef8d72b48
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670713"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927514"
 ---
 # <a name="options-text-editor-c-advanced"></a>Options, Éditeur de texte, C#, Avancé
 
@@ -48,7 +46,7 @@ Utilisez la page d’options **Avancé** pour modifier les paramètres de mise e
    using Newtonsoft.Json;
    using System;
    ```
-   
+
    Après le tri :
 
    ```csharp
@@ -59,7 +57,7 @@ Utilisez la page d’options **Avancé** pour modifier les paramètres de mise e
    using FluentValidation;
    using Newtonsoft.Json;
    ```
-   
+
 - Séparer les groupes de directives using
 
    La commande **Supprimer et trier les instructions using** du menu contextuel sépare les directives `using` en insérant une ligne vide entre les groupes de directives qui ont le même espace de noms racine.
@@ -74,28 +72,28 @@ Utilisez la page d’options **Avancé** pour modifier les paramètres de mise e
    using Newtonsoft.Json;
    using System;
    ```
-   
+
    Après le tri :
-   
+
    ```csharp
    using AutoMapper;
-   
+
    using FluentValidation;
-   
+
    using Newtonsoft.Json;
-   
+
    using System;
    using System.Collections.Generic;
    using System.Linq;
    ```
-   
-- Suggérer des usings pour les types dans les assemblys de référence 
-- Suggérer des usings pour les types dans les packages NuGet 
+
+- Suggérer des usings pour les types dans les assemblys de référence
+- Suggérer des usings pour les types dans les packages NuGet
 
    Quand ces options sont sélectionnées, une [Action rapide](../quick-actions.md) est disponible pour installer un package NuGet et ajouter une directive `using` pour les types non référencés.
 
    ![Action rapide pour installer un package NuGet dans Visual Studio](media/nuget-lightbulb.png)
-  
+
 ## <a name="highlighting"></a>Highlighting
 
 - Surligner les références jusqu’au symbole sous le curseur
@@ -110,13 +108,17 @@ Utilisez la page d’options **Avancé** pour modifier les paramètres de mise e
 
 - Afficher les séparateurs de ligne de procédure
 
-   L’éditeur de texte indique la portée visuelle des procédures. Une ligne est tracée dans les fichiers sources *.vb* de votre projet, aux emplacements présentés dans le tableau suivant :
+   L’éditeur de texte indique la portée visuelle des procédures. Une ligne est tracée dans les fichiers sources *.cs* de votre projet, aux emplacements présentés dans le tableau suivant :
 
-   |Emplacement dans le fichier source .vb|Exemple d’emplacement de la ligne|
+   |Emplacement dans le fichier source .cs|Exemple d’emplacement de la ligne|
    |---------------------------------|------------------------------|
    |Après la fermeture d’une construction de déclaration de bloc|-   À la fin d’une classe, d’une structure, d’un module, d’une interface ou d’un enum<br />-   Après une propriété, une fonction ou un sub<br />-   Pas entre les clauses get et set d’une propriété|
    |Après un ensemble de constructions de lignes uniques|-   Après les instructions import, avant une définition de type dans un fichier de classe<br />-   Après les variables déclarées dans une classe, avant toute procédure|
    |Après les déclarations de lignes uniques (déclarations pas au niveau des blocs)|-   À la suite des instructions import et inherits, des déclarations de variables, des déclarations event et delegate, et des instructions declare de DLL|
+
+## <a name="block-structure-guides"></a>Repères de structure de bloc
+
+Cochez ces cases pour afficher des lignes verticales en pointillés entre accolades (**{}**) dans votre code. Cela vous permet de voir facilement les blocs de code pour vos constructions au niveau des déclarations et au niveau du code.
 
 ## <a name="editor-help"></a>Aide de l'éditeur
 

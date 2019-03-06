@@ -1,23 +1,21 @@
 ---
-title: 'Exemple de fichier XSD : relations'
+title: 'Exemple de fichier XSD : Relations'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: sample
 ms.assetid: 60126510-b7dd-4cb4-92d3-9883590b92f2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66ddb896fad5d69fafc67c04ef839b952cac4d11
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: e643ab6566818df7cdfee2bc4e5b256ecf065b5a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572772"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951694"
 ---
-# <a name="sample-xsd-file-relationships"></a>Exemple de fichier XSD : relations
+# <a name="sample-xsd-file-relationships"></a>Exemple de fichier XSD : Relations
 
 Le fichier XSD suivant est utilisé dans différents exemples de la documentation du Concepteur de schémas XSD. Ce fichier est un schéma de bon de commande avec des annotations et une documentation.
 

@@ -1,20 +1,18 @@
 ---
 title: Créer des modèles d’élément
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - item templates [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b871c5c502c026a8a374af232888c09f18798a0c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 22d0fcfe1a048b83926cbd79e9c479e2f1ec85ab
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062455"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935574"
 ---
 # <a name="how-to-create-item-templates"></a>Procédure : Créer des modèles d’élément
 

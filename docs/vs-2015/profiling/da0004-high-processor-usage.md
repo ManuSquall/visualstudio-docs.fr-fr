@@ -1,14 +1,9 @@
 ---
 title: 'DA0004 : Utilisation intensive du processeur | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DAHighProcessorUsage
 - vs.performance.rules.DA0004
@@ -18,13 +13,13 @@ ms.assetid: 2c4fb569-929e-4f1d-8c50-b590ee371351
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a942a26bb4cd8ccca94fd442250fe8a239cba4ed
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a0e14a7400b937c56c2aac49a43d1d59cf96eba0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764030"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54762522"
 ---
 # <a name="da0004-high-processor-usage"></a>DA0004 : Utilisation intensive du processeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51764030"
 Id de règle | DA0004 |  
 | Catégorie | Utilisation des outils de profilage |  
 | Méthodes de profilage | Échantillonnage de l’instrumentation |  
-| Message | Utilisation de votre processeur est constamment supérieure à 75 %. Envisagez d’utiliser le mode d’échantillonnage pour les applications de processeur de manière intensive. |  
+| Message | Utilisation de votre processeur est constamment supérieure à 75 %. Utilisez le mode d’échantillonnage pour les applications utilisant le processeur de manière intensive.|  
 | Type de règle | Informations |  
   
  Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 10 échantillons pour déclencher cette règle.  
@@ -45,7 +40,3 @@ Id de règle | DA0004 |
   
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations  
  Profilez votre application à l’aide de la méthode d’échantillonnage au lieu de la méthode d’instrumentation, sauf si vous avez besoin de minutage de fonctions ou si vous êtes plus intéressé par les E/S que par les goulots d’étranglement du processeur.
-
-
-
-

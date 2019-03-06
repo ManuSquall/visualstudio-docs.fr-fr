@@ -4,26 +4,24 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 89723d09fdd6362cdc301f1fa551b7c062639df0
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 24567262eff261638a6004817d4d0eef51537fd6
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967322"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223505"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Bien démarrer avec les langages spécifiques à un domaine
 
 Cette rubrique explique les concepts de base dans la définition et utilisation d’un langage spécifique à un domaine (DSL) créé avec le SDK de modélisation pour Visual Studio.
 
 > [!NOTE]
-> Dans Visual Studio 2017, le SDK de Transformation de modèle de texte et le SDK de modélisation de Visual Studio sont installés automatiquement lorsque vous installez des fonctionnalités spécifiques de Visual Studio. Pour plus d’informations, consultez [ce billet de blog](https://blogs.msdn.microsoft.com/devops/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> Le SDK de Transformation de modèle de texte et le SDK de modélisation de Visual Studio sont installés automatiquement lorsque vous installez des fonctionnalités spécifiques de Visual Studio. Pour plus d’informations, consultez [ce billet de blog](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
-Si vous ne connaissez pas DSL, nous vous recommandons de collaborer via le **atelier des outils DSL**, que vous trouverez dans ce site : [création and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+Si vous ne connaissez pas DSL, nous vous recommandons de collaborer via le **atelier des outils DSL**, que vous trouverez dans ce site : [SDK de création et de modélisation](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>Que pouvez-vous faire avec un langage spécifique à un domaine ?
 
@@ -31,7 +29,7 @@ Un langage spécifique à un domaine est une notation, en général graphique, q
 
 Lorsque vous avez conçu une solution DSL, vous pouvez le distribuer dans le cadre d’un package d’Extension d’intégration Visual Studio (VSIX). Les utilisateurs travaillent avec la solution DSL dans Visual Studio :
 
-![Diagramme d’arbre généalogique, boîte à outils et explorateur](../modeling/media/familyt_instance.png)
+![Diagramme d'arbre généalogique, boîte à outils et explorateur](../modeling/media/familyt_instance.png)
 
 La notation n'est qu’une partie d’une solution DSL. Avec la notation, votre package VSIX inclut des outils que les utilisateurs peuvent appliquer pour les aider à modifier et générer le matériel à partir de leurs modèles.
 
@@ -279,7 +277,7 @@ Renommez les classes de domaine existants et les relations. Par exemple, à part
 
 6. Dans un fichier .tt, vous pouvez ajouter le code qui obtient les propriétés de chaque personne.
 
-   ![Diagramme d’arbre généalogique, boîte à outils et explorateur](../modeling/media/familyt_instance.png)
+   ![Diagramme d'arbre généalogique, boîte à outils et explorateur](../modeling/media/familyt_instance.png)
 
 ### <a name="define-new-classes"></a>Définir de nouvelles Classes
  Vous pouvez ajouter des classes de domaine et les relations à un modèle. Par exemple, vous pouvez créer une nouvelle classe pour représenter les villes et une nouvelle relation pour représenter qu’une personne vécu dans une ville.
@@ -305,7 +303,7 @@ Renommez les classes de domaine existants et les relations. Par exemple, à part
 
     1.  Cliquez sur le **relation de référence** d’outils, cliquez sur une personne et puis cliquez sur Ville.
 
-         ![Fragment de définition DSL : racine d’arbre généalogique](../modeling/media/familyt_root.png)
+         ![Fragment de définition DSL : racine d'arbre généalogique](../modeling/media/familyt_root.png)
 
         > [!NOTE]
         >  Référence représentent des références croisées à partir d’une partie de l’arborescence du modèle vers un autre.
@@ -330,7 +328,7 @@ Renommez les classes de domaine existants et les relations. Par exemple, à part
 
     2.  Utilisez le **mappage d’élément de diagramme** outil pour lier le nouveau connecteur à la relation entre personne et ville.
 
-         ![Définition d’arbre généalogique avec mappage de forme ajouté](../modeling/media/familyt_shapemap.png)
+         ![Définition d'arbre généalogique avec mappage de forme ajouté](../modeling/media/familyt_shapemap.png)
 
 6.  Créer un outil d’élément pour effectuer une nouvelle ville.
 
@@ -386,7 +384,7 @@ Renommez les classes de domaine existants et les relations. Par exemple, à part
 ## <a name="validation-and-commands"></a>Validation et commandes
  Vous pouvez développer davantage ce DSL en ajoutant des contraintes de validation. Ces contraintes sont des méthodes que vous pouvez définir, assurez-vous que le modèle est dans un état correct. Par exemple, vous pouvez définir une contrainte pour vous assurer que la date de naissance d’un enfant est ultérieure à celle de ses parents. La fonctionnalité de validation affiche un avertissement si l’utilisateur tente d’enregistrer un modèle qui déclenche une des contraintes. Pour plus d’informations, consultez [Validation dans un langage spécifique à un domaine](../modeling/validation-in-a-domain-specific-language.md).
 
- Vous pouvez également définir des commandes de menu que l’utilisateur peut appeler. Commandes peuvent modifier le modèle. Ils peuvent également interagir avec d’autres modèles dans Visual Studio et avec les ressources externes. Pour plus d’informations, consultez [Comment : modifier une commande de Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+ Vous pouvez également définir des commandes de menu que l’utilisateur peut appeler. Commandes peuvent modifier le modèle. Ils peuvent également interagir avec d’autres modèles dans Visual Studio et avec les ressources externes. Pour plus d'informations, voir [Procédure : Modifier une commande de Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
 ## <a name="deploying-the-dsl"></a>Déploiement de la solution DSL
  Pour autoriser d’autres utilisateurs d’utiliser le langage spécifique à un domaine, vous distribuez un fichier d’Extension Visual Studio (VSIX). Il est créé lorsque vous générez la solution DSL.
@@ -395,7 +393,7 @@ Renommez les classes de domaine existants et les relations. Par exemple, à part
 
  Vous pouvez utiliser la même procédure pour installer la solution DSL sur votre ordinateur afin que vous n’avez pas à utiliser l’instance expérimentale de Visual Studio.
 
- Pour plus d’informations, consultez [déploiement de Solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).
+ Pour plus d’informations, consultez [Déploiement de solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).
 
 ##  <a name="Reset"></a> Suppression des anciennes DSL expérimental
  Si vous avez créé plusieurs DSL expérimentale que vous ne souhaitez plus, vous pouvez les supprimer à partir de votre ordinateur en réinitialisant l’instance expérimentale de Visual Studio.

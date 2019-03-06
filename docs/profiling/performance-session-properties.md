@@ -1,8 +1,6 @@
 ---
 title: Propriétés d’une session de performance | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,properties
@@ -10,15 +8,15 @@ helpviewer_keywords:
 - performance tools, performance session properties
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ce4fb6b9a57db78e3dbb7f3082a87df9ffb7360
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 77da53856e0562d036fade431dd0deba0376fe9f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254691"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624969"
 ---
 # <a name="performance-session-properties"></a>Propriétés d’une session de performance
 
@@ -40,13 +38,13 @@ Pour plus d'informations, voir :
 
 [Collecter les données liées à l’allocation et à la durée de vie de la mémoire .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
- [Guide pratique pour définir les options de nom de fichier des données de performance](../profiling/how-to-set-performance-data-file-name-options.md)
+- [Guide pratique pour définir les options de nom de fichier des données de performances](../profiling/how-to-set-performance-data-file-name-options.md)
 
 ## <a name="launch"></a>Lancer
 
 Ces paramètres vous permettent de sélectionner des fichiers binaires dans une liste et de spécifier l’ordre de démarrage des fichiers binaires.
 
-Pour plus d’informations, consultez [Guide pratique pour spécifier le fichier binaire à démarrer](../profiling/how-to-specify-the-binary-to-start.md).
+Pour plus d'informations, voir [Procédure : Spécifier le binaire à démarrer](../profiling/how-to-specify-the-binary-to-start.md)
 
 ## <a name="sampling"></a>Échantillonnage
 
@@ -58,12 +56,12 @@ Ces paramètres vous permettent de sélectionner l’événement d’échantillo
 - Compteurs de performance : pour les problèmes de performances de bas niveau
 - Il est possible de spécifier des événements d’échantillon supplémentaires sur la base des compteurs de performance disponibles.
 
-Pour plus d’informations, consultez [Guide pratique pour choisir des événements d’échantillonnage](../profiling/how-to-choose-sampling-events.md).
+Pour plus d'informations, voir [Procédure : choisir des événements d’échantillonnage](../profiling/how-to-choose-sampling-events.md)
 
 ## <a name="binary"></a>Binaire
 Ces paramètres vous permettent de spécifier si vous souhaitez déplacer le fichier binaire instrumenté vers un autre emplacement. Par exemple, si vous profilez *My.DLL* et que vous choisissez de ne pas déplacer le fichier binaire instrumenté, une copie de sauvegarde de *My.DLL* nommée *My.Orig.DLL* est créée. Ensuite, *My.DLL* est modifié en insérant des sondes pour collecter des données. Si vous déplacez le fichier binaire instrumenté, le fichier binaire d’origine n’est pas renommé et le fichier binaire instrumenté est copié dans l’emplacement spécifié pour être utilisé pendant l’instrumentation.
 
-Pour plus d’informations, consultez [Guide pratique pour spécifier le fichier binaire à démarrer](../profiling/how-to-specify-the-binary-to-start.md).
+Pour plus d'informations, voir [Procédure : Spécifier le binaire à démarrer](../profiling/how-to-specify-the-binary-to-start.md)
 
 ## <a name="tier-interactions"></a>Interactions de couche
 
@@ -83,7 +81,7 @@ Pour plus d'informations, voir :
 
 Ces paramètres vous permettent de collecter des données à propos des compteurs de performance de l’UC quand vous utilisez l’instrumentation comme méthode de profilage. Les compteurs de performance portables sont disponibles indépendamment de la conception ou du fabricant de l’UC. Les événements de plateforme sont spécifiques à la conception et au fabricant de l’UC. Pour plus d’informations sur les compteurs de performance de processeur, consultez la documentation spécifique au processeur.
 
-Pour plus d’informations, consultez [Guide pratique pour collecter les données des compteurs UC](../profiling/how-to-collect-cpu-counter-data.md).
+Pour plus d'informations, voir [Procédure : Collecter les données des compteurs UC](../profiling/how-to-collect-cpu-counter-data.md)
 
 ## <a name="windows-events"></a>Événements Windows
 
@@ -99,7 +97,7 @@ Pour plus d'informations, voir :
 
 Cette option vous permet de collecter les données des compteurs de l’Analyseur de performances Windows. Pour collecter ces données, cochez la case **Collecter les compteurs de performance Windows**. L’intervalle de collecte peut être défini dans la zone **Intervalle de collecte**. Les options **Catégorie de compteurs** et **Instance** peuvent également être disponibles. Certains compteurs de l’Analyseur de performances Windows par défaut sont disponibles.
 
- Pour plus d’informations, consultez [Guide pratique pour collecter les données des compteurs Windows](../profiling/how-to-collect-windows-counter-data.md).
+ Pour plus d'informations, voir [Procédure : collecter les données des compteurs Windows](../profiling/how-to-collect-windows-counter-data.md).
 
 ## <a name="advanced"></a>Avancé
 
@@ -113,6 +111,6 @@ Pour plus d'informations, voir :
 
 ## <a name="see-also"></a>Voir aussi
 
-[Vues d’ensemble](../profiling/overviews-performance-tools.md)  
-[Configurer des sessions de performances](../profiling/configuring-performance-sessions.md)  
-[Contrôler la collecte des données](../profiling/controlling-data-collection.md)
+[Vues d’ensemble](../profiling/overviews-performance-tools.md)
+[Configurer des sessions de performances](../profiling/configuring-performance-sessions.md)
+[Contrôler la collecte de données](../profiling/controlling-data-collection.md)

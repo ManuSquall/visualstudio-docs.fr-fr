@@ -1,8 +1,6 @@
 ---
 title: SDK Debug Interface Access | Microsoft Docs
-ms.custom: ''
 ms.date: 07/24/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 4c0abe53-11d3-4b7a-bdc7-b054f85aaf40
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 279f5b883ca359c38ad8d357d153d02ea022b9da
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
-ms.translationtype: MT
+ms.openlocfilehash: 915f594a984af41da167e0fd3d58beb2f6ddd978
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251664"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608082"
 ---
 # <a name="debug-interface-access-sdk"></a>Kit de développement logiciel de Debug Interface Access
 
@@ -29,17 +27,22 @@ Le Microsoft Debug Interface Access Kit de développement logiciel (DIA SDK) fou
 
 ## <a name="in-this-section"></a>Dans cette section
 
-[Prise en main](../../debugger/debug-interface-access/getting-started-debug-interface-access-sdk.md)  
+[Prise en main](../../debugger/debug-interface-access/getting-started-debug-interface-access-sdk.md)
+
 Donne une vue d’ensemble du SDK DIA fonctionnalités et spécifie où le DIA SDK est installé, ainsi que les fichiers de bibliothèque et un en-tête requis.
 
-[Interrogation du fichier .Pdb](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)  
+[Interrogation du fichier .Pdb](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
+
 Fournit des instructions sur l’utilisation de l’API DIA pour interroger le fichier .pdb.
 
-[Symboles et étiquettes de symbole](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)  
+[Symboles et étiquettes de symbole](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
+
 Explique comment les balises symbols et symbol sont utilisés dans l’API de DIA.
 
-[Référence](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)  
+[Référence](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
+
 Contient les interfaces, méthodes, énumérations et structures de l’API de DIA.
 
-[Dia2dump, exemple](../../debugger/debug-interface-access/dia2dump-sample.md)  
+[Dia2dump, exemple](../../debugger/debug-interface-access/dia2dump-sample.md)
+
 Illustre l’utilisation de l’API DIA pour rechercher et parcourir des informations de débogage.

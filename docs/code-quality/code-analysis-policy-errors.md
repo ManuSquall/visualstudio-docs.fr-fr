@@ -1,8 +1,6 @@
 ---
 title: Erreurs de stratégie d’analyse du code
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.policyfailures
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d1f221cd-68c0-4277-9397-b76ad0dbae77
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf6b70402e8044297b81cceddd986c0e09819825
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 103a48172665875c3615ce57b90dc77beeb6b5c4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891984"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921560"
 ---
 # <a name="code-analysis-policy-errors"></a>Erreurs de stratégie d’analyse du code
 

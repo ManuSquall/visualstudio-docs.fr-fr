@@ -1,8 +1,6 @@
 ---
-title: 'CA1044 : Les propriétés ne doivent pas être en écriture seule'
+title: 'CA1044 : Les propriétés ne doivent pas être en écriture seule'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - PropertiesShouldNotBeWriteOnly
@@ -13,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: 8386bf3a-b161-4841-bf8b-92591595aea9
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6018957bc6de32668cbaf0a719f2a603dc7f496f
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: f0e3c1cea0c1880bc13359c9b808eff0098609e6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550984"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918638"
 ---
-# <a name="ca1044-properties-should-not-be-write-only"></a>CA1044 : Les propriétés ne doivent pas être en écriture seule
+# <a name="ca1044-properties-should-not-be-write-only"></a>CA1044 : Les propriétés ne doivent pas être en écriture seule
 
 |||
 |-|-|

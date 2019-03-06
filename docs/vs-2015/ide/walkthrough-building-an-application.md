@@ -1,25 +1,20 @@
 ---
-title: 'Procédure pas à pas : Génération d’une application | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure pas à pas : Création d’une Application | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 4842955d-8959-4e4e-98b8-2358360179b3
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e6c45a552e66c2d256c191f6bd8296f5b2ca2c61
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7f4103502b3ebd6371f0b1c0ac27c6da7c8904c6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220201"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799153"
 ---
 # <a name="walkthrough-building-an-application"></a>Procédure pas à pas : génération d'une application
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +75,7 @@ Avec cette procédure pas à pas, vous allez vous familiariser avec plusieurs op
 4.  Sélectionnez le bouton **OK** .  
   
 ##  <a name="BKMK_CreateBuildConfig"></a>Créer une configuration de build personnalisée  
- Lorsque vous créez une solution, les configurations de build Debug et Release, et leurs plateformes cibles par défaut, sont automatiquement définies pour la solution. Vous pouvez ensuite personnaliser ces configurations ou créer les vôtres. Les configurations de build spécifient le type de build. Les plateformes de build spécifient le système d’exploitation qui est ciblé par une application pour cette configuration. Pour plus d’informations, consultez [Présentation des configurations de build](../ide/understanding-build-configurations.md), [Présentation des plateformes de générations](../ide/understanding-build-platforms.md) et [Configurations de projet Debug et Release](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Lorsque vous créez une solution, les configurations de build Debug et Release, et leurs plateformes cibles par défaut, sont automatiquement définies pour la solution. Vous pouvez ensuite personnaliser ces configurations ou créer les vôtres. Les configurations de build spécifient le type de build. Les plateformes de build spécifient le système d’exploitation qui est ciblé par une application pour cette configuration. Pour plus d’informations, consultez [Présentation des configurations de build](../ide/understanding-build-configurations.md), [Présentation des plateformes de générations](../ide/understanding-build-platforms.md) et [Configurations de projet Debug et Release](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  Vous pouvez modifier ou créer des configurations et des paramètres de plateforme dans la boîte de dialogue **Gestionnaire de configurations**. Dans cette procédure, vous allez créer une configuration de build à des fins de test.  
   
@@ -98,7 +93,7 @@ Avec cette procédure pas à pas, vous allez vous familiariser avec plusieurs op
   
 4. Dans la liste **Plateforme de la solution active**, choisissez **Nouveau**.  
   
-5. Dans le **nouvelle plateforme de Solution** boîte de dialogue, sélectionnez **x64**et ne copiez pas les paramètres à partir de la x86 plateforme.  
+5. Dans la boîte de dialogue **Nouvelle plateforme de solution**, sélectionnez **x64** et ne copiez pas les paramètres de la plateforme x86.  
   
     ![Boîte de dialogue Nouvelle plateforme de solution](../ide/media/buildwalk-newsolutionplatform.png "BuildWalk_NewSolutionPlatform")  
   
@@ -121,11 +116,11 @@ Avec cette procédure pas à pas, vous allez vous familiariser avec plusieurs op
   
   La fenêtre **Sortie** affiche les résultats de la génération. La génération a réussi, mais plusieurs messages d’avertissement ont été générés.  
   
-  Figure 1 : Avertissements Visual Basic  
+  Figure 1 : Avertissements de Visual Basic  
   
   ![Fenêtre Sortie Visual Basic](../ide/media/buildwalk-vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")  
   
-  Figure 2 : Avertissements Visual C#  
+  Figure 2 : Visual C# avertissements  
   
   ![Fenêtre Sortie Visual C#](../ide/media/buildwalk-csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")  
   
@@ -208,7 +203,7 @@ Avec cette procédure pas à pas, vous allez vous familiariser avec plusieurs op
 ##  <a name="BKMK_releasebuild"></a> Créer une version Release  
  Vous pouvez créer une version de l’exemple d’application qui soit optimisée pour sa livraison. Pour la version Release, vous allez spécifier que le fichier exécutable doit être copié vers un partage réseau avant que la génération ne démarre.  
   
- Pour plus d’informations, consultez [Guide pratique pour modifier le répertoire de sortie de la génération](../ide/how-to-change-the-build-output-directory.md) et [Génération et nettoyage de solutions et de projets dans Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md).  
+ Pour plus d'informations, voir [Procédure : Modifier le répertoire de sortie de génération](../ide/how-to-change-the-build-output-directory.md) et [génération et nettoyage des projets et Solutions dans Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md).  
   
 #### <a name="to-specify-a-release-build-for-visual-basic"></a>Pour spécifier une version Release Visual Basic  
   
@@ -262,8 +257,5 @@ Avec cette procédure pas à pas, vous allez vous familiariser avec plusieurs op
   
 ## <a name="see-also"></a>Voir aussi  
  [Procédure pas à pas : génération d’un projet (C++)](http://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)   
- [Présentation de la précompilation de projets d’application web ASP.NET](http://msdn.microsoft.com/en-us/b940abbd-178d-4570-b441-52914fa7b887)   
+ [Présentation de la précompilation de projets d’application web ASP.NET](http://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)   
  [Procédure pas à pas : utilisation de MSBuild](../msbuild/walkthrough-using-msbuild.md)
-
-
-

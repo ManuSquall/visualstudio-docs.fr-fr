@@ -2,20 +2,18 @@
 title: Règles d’imbrication de fichiers pour l’Explorateur de solutions
 ms.date: 05/25/2018
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 helpviewer_keywords:
 - file nesting
 - Solution Explorer, file nesting
 author: angelosp
 ms.author: angelpe
-manager: douge
-ms.openlocfilehash: d50d16d23c2f12ac5ac9feaaa37ee3797802c97e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 58e727c6335dd391abab4f50a110d361a658e00a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928696"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955984"
 ---
 # <a name="customize-file-nesting-in-solution-explorer"></a>Personnaliser l’imbrication de fichiers dans l’Explorateur de solutions
 
@@ -50,17 +48,17 @@ Nous vous recommandons d’utiliser les paramètres **web** comme point de dépa
 
 Concentrons-nous sur le nœud **dependentFileProviders** et ses nœuds enfants. Chaque nœud enfant est un type de règle que Visual Studio peut utiliser pour imbriquer des fichiers. Par exemple, **a le même nom de fichier mais avec une extension différente** est un type de règle. Les règles disponibles sont les suivantes :
 
-* **extensionToExtension** : utilisez ce type de règle pour imbriquer *file.js* sous *file.ts*
+* **extensionToExtension** : utilisez ce type de règle pour imbriquer *file.js* sous *file.ts*.
 
-* **fileSuffixToExtension** : utilisez ce type de règle pour imbriquer *file-vsdoc.js* sous *file.js*
+* **fileSuffixToExtension** : utilisez ce type de règle pour imbriquer *file-vsdoc.js* sous *file.js*.
 
-* **addedExtension** : utilisez ce type de règle pour imbriquer *file.html.css* sous *file.html*
+* **addedExtension** : utilisez ce type de règle pour imbriquer *file.html.css* sous *file.html*.
 
-* **pathSegment** : utilisez ce type de règle pour imbriquer *jquery.min.js* sous *jquery.js*
+* **pathSegment** : utilisez ce type de règle pour imbriquer *jquery.min.js* sous *jquery.js*.
 
-* **allExtensions** : utilisez ce type de règle pour imbriquer *file.** sous *file.js*
+* **allExtensions** : utilisez ce type de règle pour imbriquer *file.** sous *file.js*.
 
-* **fileToFile** : utilisez ce type de règle pour imbriquer *bower.json* sous *.bowerrc*
+* **fileToFile** : utilisez ce type de règle pour imbriquer *bower.json* sous *.bowerrc*.
 
 ### <a name="the-extensiontoextension-provider"></a>Fournisseur extensionToExtension
 
@@ -132,7 +130,7 @@ Vous pouvez gérer tous les paramètres, notamment vos paramètres personnalisé
 
 ## <a name="create-solution-specific-and-project-specific-settings"></a>Créer des paramètres spécifiques à la solution et au projet
 
-Vous pouvez créer des paramètres spécifiques à la solution et au projet via le menu contextuel de chaque solution et projet :
+Vous pouvez créer des paramètres propres à la solution ou au projet dans le menu contextuel (clic droit) de chaque solution ou projet :
 
 ![Règles d’imbrication spécifiques à la solution et au projet](media/filenesting_solutionprojectspecific.png)
 

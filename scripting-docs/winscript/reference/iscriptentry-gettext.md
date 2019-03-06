@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetText | Documents Microsoft
+title: IScriptEntry::GetText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 548b26be48766fa4eb6c6eba16ae3bca2847a322
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7a01d6df1281a32fee435c80465f148fcc7436a3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729059"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096419"
 ---
 # <a name="iscriptentrygettext"></a>IScriptEntry::GetText
 Retourne le texte qui correspond à la `IScriptEntry` bloc de script ou le code source qui est contenu dans le `IScriptScriptlet` Gestionnaire d’événements.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetText(  
    BSTR               *pbstr  
 );  
@@ -43,11 +43,11 @@ HRESULT GetText(
 ## <a name="return-value"></a>Valeur de retour  
  Élément `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IScriptEntry](../../winscript/reference/iscriptentry-interface.md)

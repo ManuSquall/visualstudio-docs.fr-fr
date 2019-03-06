@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugframe, Interface | Documents Microsoft
+title: Interface IJsDebugFrame | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f09a147375661fb52b88f531aff981897138adff
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2fa491a02d289a0a92a70348ec5ef483dd8f8467
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729609"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093299"
 ---
 # <a name="ijsdebugframe-interface"></a>IJsDebugFrame, interface
 Représente un frame de pile.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 IJsDebugFrame : public IUnknown;  
 ```  
   
@@ -39,8 +39,8 @@ IJsDebugFrame : public IUnknown;
 |[Méthode IJsDebugFrame::GetDocumentPositionWithId](../../winscript/reference/ijsdebugframe-getdocumentpositionwithid-method.md)|Retourne la position actuelle de ce frame de pile dans le document au niveau de l’utilisateur.|  
 |[Méthode IJsDebugFrame::GetDocumentPositionWithName](../../winscript/reference/ijsdebugframe-getdocumentpositionwithname-method.md)|Retourne la position actuelle de ce frame de pile dans le document au niveau de l’utilisateur.|  
 |[Méthode IJsDebugFrame::GetName](../../winscript/reference/ijsdebugframe-getname-method.md)|Obtient le nom convivial du frame de pile.|  
-|[Méthode IJsDebugFrame::GetReturnAddress](../../winscript/reference/ijsdebugframe-getreturnaddress-method.md)|Obtient l’adresse de retour envoyée à la 'start' (voir GetStackRange) de l’image.|  
-|[Méthode IJsDebugFrame::GetStackRange](../../winscript/reference/ijsdebugframe-getstackrange-method.md)|Retourne la plage d’adresses absolues du frame de pile JavaScript logique.|  
+|[Méthode IJsDebugFrame::GetReturnAddress](../../winscript/reference/ijsdebugframe-getreturnaddress-method.md)|Obtient l’adresse de retour envoyée au « début » (consultez GetStackRange) du cadre.|  
+|[Méthode IJsDebugFrame::GetStackRange](../../winscript/reference/ijsdebugframe-getstackrange-method.md)|Retourne la plage d’adresse absolue du frame de pile JavaScript logique.|  
   
 ## <a name="requirements"></a>Spécifications  
  **En-tête :** jscript9diag.h  

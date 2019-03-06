@@ -3,21 +3,18 @@ title: Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 772b6cf4-cee5-42d0-bc18-b4eb07e22ff0
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c6bd4e34e25add01de6e6e54c2439c2ca80ccf33
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 76e1d9c4a7cbfdfc2a7011668eb58a5ea9741d3d
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062481"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54780677"
 ---
 # <a name="visual-studio-ide"></a>Environnement IDE de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +69,7 @@ Si vous souhaitez savoir sur les nouvelles fonctionnalités dans Visual Studio 2
 
  Vous pouvez personnaliser Visual Studio de beaucoup d'autres façons et retrouver votre paramétrage ailleurs si vous travaillez sur plusieurs ordinateurs. Pour plus d'informations, consultez [Personnalisation de l'IDE](../ide/personalizing-the-visual-studio-ide.md).
 
- Il existe des raccourcis clavier pour presque tout, que vous pouvez également personnaliser. Pour créer des raccourcis, tapez « Clavier » dans la zone Lancement rapide pour ouvrir la boîte de dialogue Clavier. Dans cette boîte de dialogue, vous pouvez appuyer sur F1 pour accéder à la page d'aide MSDN si vous avez besoin de plus d'informations sur les options. Pour plus d'informations, consultez [Raccourcis clavier par défaut dans Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+ Il existe des raccourcis clavier pour presque tout, que vous pouvez également personnaliser. Pour créer des raccourcis, tapez « Clavier » dans la zone Lancement rapide pour ouvrir la boîte de dialogue Clavier. Dans cette boîte de dialogue, vous pouvez appuyer sur F1 pour accéder à la page d'aide MSDN si vous avez besoin de plus d'informations sur les options. Pour plus d'informations, consultez [Raccourcis clavier par défaut dans Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
 ## <a name="connecting-to-visual-studio-team-services-and-team-foundation-server"></a>Connexion à Visual Studio Team Services et à Team Foundation Server
  Visual Studio Team Services (VSTS) est un service basé sur le cloud destiné à héberger des projets de logiciels et à permettre la collaboration dans des équipes. VSTS prend en charge les systèmes de contrôle de code source Git et Team Foundation, ainsi que les méthodologies de développement Scrum, CMMI et Agile. La gestion de version Team Foundation (TFVC) utilise un dépôt de serveur unique et centralisé pour effectuer le suivi et la gestion des versions des fichiers. Les modifications locales sont toujours archivées sur le serveur central, où les autres développeurs peuvent obtenir les dernières modifications. Team Foundation Server (TFS) 2015 est le hub de gestion du cycle de vie des applications pour Visual Studio. Il permet à toutes personnes impliquées dans le processus de développement de participer à une même solution. TFS est également utile pour la gestion des équipes et des projets hétérogènes.
@@ -95,7 +92,7 @@ Si vous souhaitez savoir sur les nouvelles fonctionnalités dans Visual Studio 2
 
  Si votre projet a une interface utilisateur basée sur XAML, le concepteur par défaut est Blend pour Visual Studio. Il s'agit d'un outil graphique sophistiqué qui fonctionne dans une parfaite intégration avec Visual Studio.
 
- ![Planche graphique](../ide/media/b5-artboard.png "b5_artboard")
+ ![Artboard](../ide/media/b5-artboard.png "b5_artboard")
 
 |||
 |-|-|
@@ -110,11 +107,11 @@ Si vous souhaitez savoir sur les nouvelles fonctionnalités dans Visual Studio 2
 ## <a name="writing-navigating-and-understanding-code"></a>Écriture, navigation et compréhension du code
  Si vous êtes développeur, la fenêtre de l'éditeur est l'endroit où vous passerez probablement le plus de temps. Visual Studio comprend des éditeurs pour C#, C++, Visual Basic, JavaScript, XML, HTML, CSS et F#, tandis que des tiers offrent des éditeurs (et des compilateurs) sous forme de plug-ins pour de nombreux autres langages.
 
- Vous pouvez modifier des fichiers individuels dans l’éditeur de texte en cliquant sur **fichier &#124; Open &#124; fichier.** . Pour modifier des fichiers dans un projet ouvert, cliquez sur le nom du fichier dans l'Explorateur de solutions. Le code est colorisé, et vous pouvez personnaliser le jeu de couleurs en tapant « Couleurs » dans la zone de lancement rapide. Vous pouvez avoir un grand nombre de fenêtres d'éditeur de texte ouvertes en même temps sous forme d'onglets. Vous pouvez fractionner chaque fenêtre indépendamment. Vous pouvez également exécuter l'éditeur de texte en mode plein écran.
+ Vous pouvez modifier des fichiers individuels dans l’éditeur de texte en cliquant sur **fichier &#124; Open &#124; fichier.** . Pour modifier des fichiers dans un projet ouvert, cliquez sur le nom du fichier dans l'Explorateur de solutions. Le code est colorisé, et vous pouvez personnaliser le jeu de couleurs en tapant « Couleurs » dans la zone de lancement rapide. Vous pouvez avoir un grand nombre de fenêtres d'éditeur de texte ouvertes en même temps sous forme d'onglets. Vous pouvez fractionner chaque fenêtre indépendamment. Vous pouvez également exécuter l'éditeur de texte en mode plein écran.
 
  ![GreetingsConsoleApp.cpp dans l’éditeur de code](../ide/media/c-ide-editorlinenumberswordwrapon.png "IDE_EditorLineNumbersWordWrapOn C ++")
 
- L'éditeur de texte est très interactif (si vous voulez qu'il le soit) et offre de nombreuses fonctionnalités de productivité qui vous aident à écrire du code plus vite et mieux. Les fonctionnalités varient selon le langage, et vous n’êtes pas obligé d’utiliser une d'entre elles (Type « Éditeur » dans Lancement rapide) pour activer ou désactiver les fonctionnalités : Certaines des fonctionnalités de productivité courantes sont :
+ L'éditeur de texte est très interactif (si vous voulez qu'il le soit) et offre de nombreuses fonctionnalités de productivité qui vous aident à écrire du code plus vite et mieux. Les fonctionnalités varient selon le langage, et leur utilisation n'est pas obligatoire (tapez « Éditeur » dans la zone Lancement rapide) pour activer ou désactiver les fonctionnalités. Voici quelques-unes des fonctionnalités de productivité courantes :
 
 1. La[Refactoring](../ide/refactoring-in-visual-studio.md) inclut des opérations comme le renommage intelligent des variables, le déplacement de lignes de code sélectionnées dans une fonction distincte, le déplacement de code à d’autres endroits, la réorganisation des paramètres des fonctions, etc.
 
@@ -136,7 +133,7 @@ Si vous souhaitez savoir sur les nouvelles fonctionnalités dans Visual Studio 2
 
 8. L'option de menu contextuel **Atteindre la définition** vous amène directement à l'endroit où la fonction ou l'objet est défini. D'autres commandes de navigation sont également disponibles en cliquant avec le bouton droit dans l'éditeur.
 
-9. Un outil connexe, l'[Explorateur d'objets](http://msdn.microsoft.com/en-us/f89acfc5-1152-413d-9f56-3dc16e3f0470), vous permet d'examiner les assemblys .NET ou Windows Runtime sur votre système, pour voir les types qu'ils contiennent ainsi que les méthodes et les propriétés que ces types contiennent.
+9. Un outil connexe, l'[Explorateur d'objets](http://msdn.microsoft.com/f89acfc5-1152-413d-9f56-3dc16e3f0470), vous permet d'examiner les assemblys .NET ou Windows Runtime sur votre système, pour voir les types qu'ils contiennent ainsi que les méthodes et les propriétés que ces types contiennent.
 
      ![Explorateur d’objets montrant le composant System.Timer](../ide/media/objectbrowser.png "ObjectBrowser")
 
@@ -157,7 +154,7 @@ La sortie de la génération, incluant des messages d’erreur ou de réussite, 
 
  La [Immediate Window](../ide/reference/immediate-window.md) vous permet de taper une expression et de voir son résultat immédiatement.
 
- La fenêtre [IntelliTrace](http://msdn.microsoft.com/en-us/629e9660-c59a-446b-8c30-290059158f61) enregistre chaque appel de méthode et d'autres événements dans un programme .NET en cours d'exécution et peut vous aider à localiser rapidement l'origine d'un problème.
+ La fenêtre [IntelliTrace](http://msdn.microsoft.com/629e9660-c59a-446b-8c30-290059158f61) enregistre chaque appel de méthode et d'autres événements dans un programme .NET en cours d'exécution et peut vous aider à localiser rapidement l'origine d'un problème.
 
  Pour plus d'informations, consultez [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md).
 

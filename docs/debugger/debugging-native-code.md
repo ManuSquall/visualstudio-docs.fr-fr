@@ -1,8 +1,6 @@
 ---
 title: Débogage du Code natif | Microsoft Docs
-ms.custom: ''
 ms.date: 04/11/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -19,59 +17,46 @@ helpviewer_keywords:
 ms.assetid: d94eee90-7e0d-4cac-88c1-9831030daa5e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eba1f156589babb9a3bec38982bd27b7c17a83c8
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: 59811e522268b7a9cb3993add76d2ace8dc3aada
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180189"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56685493"
 ---
 # <a name="debugging-native-code"></a>Débogage du code natif
-Cette section décrit des techniques et des problèmes de débogage courants pour les applications natives. Les techniques décrites dans cette section sont des techniques avancées. Pour plus d’informations à l’aide du débogueur Visual Studio, consultez [présentation du débogueur](../debugger/getting-started-with-the-debugger.md).  
-  
-## <a name="in-this-section"></a>Dans cette section  
- [Guide pratique pour déboguer le code optimisé](../debugger/how-to-debug-optimized-code.md)  
- Contient des conseils sur le débogage d’un code optimisé, en particulier sur les raisons pour lesquelles vous devez déboguer une version non optimisée de votre programme, sur les paramètres d’optimisation par défaut pour les configurations Debug et Release, ainsi que sur la recherche des bogues qui n’apparaissent que dans le code optimisé (activation de l’optimisation dans une configuration de build Debug).  
-  
- [DebugBreak et __debugbreak](../debugger/debugbreak-and-debugbreak.md)  
- Décrit la fonction Win32 `DebugBreak` et fournit un lien vers sa rubrique de référence dans le Kit de développement Platform SDK. Décrit également l'objet intrinsèque `__debugbreak`.  
-  
- [Assertions C/C++](../debugger/c-cpp-assertions.md)  
- Décrit les instructions d'assertion, leur fonctionnement, les avantages liés à leur utilisation (interception des erreurs de logique, vérification des résultats d'une opération et test des conditions d'erreur), leur interaction avec `_DEBUG` et les types d'assertions pris en charge dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
-  
- [Guide pratique pour déboguer du code d’assembly inline](../debugger/how-to-debug-inline-assembly-code.md)  
- Explique brièvement comment utiliser la fenêtre Code Machine pour afficher les instructions assembly et la fenêtre Registres pour afficher le contenu du Registre, et fournit des liens vers des rubriques relatives à ces fenêtres.  
-  
- [Techniques de débogage de MFC](../debugger/mfc-debugging-techniques.md)  
- Vous renvoie à des techniques de débogage pour les programmes MFC, parmi lesquelles afxDebugBreak, la macro TRACE, la détection des fuites de mémoire dans les MFC, les assertions MFC et la réduction de la taille des versions Debug MFC.  
-  
- [Techniques de débogage CRT](../debugger/crt-debugging-techniques.md)  
- Vous renvoie à des techniques de débogage pour la bibliothèque Runtime C, parmi lesquelles l'utilisation de la bibliothèque de débogage CRT, les macros pour la création de rapports, les différences entre malloc et _malloc_dbg, l'écriture de fonctions de raccordement de débogage et le tas de débogage CRT.  
-  
- [Forum Aux Questions sur le débogage du code natif](../debugger/debugging-native-code-faqs.md)  
- Fournit des réponses aux questions fréquemment posées sur le débogage des programmes Visual C++  
-  
- [Débogage COM et ActiveX](../debugger/com-and-activex-debugging.md)  
- Fournit des informations sur le débogage des applications COM et ActiveX, y compris sur les outils que vous pouvez utiliser pour le débogage COM et ActiveX.  
-  
- [Guide pratique pour déboguer du code injecté](../debugger/how-to-debug-injected-code.md)  
- Explique comment déboguer du code qui utilise des attributs. Les instructions concernent le mode d'activation de l'annotation de la source, le mode d'affichage du code injecté et le mode d'affichage du code machine au point d'exécution en cours.  
-  
- [Procédure pas à pas : débogage d’une application parallèle](../debugger/walkthrough-debugging-a-parallel-application.md)  
- Décrit comment utiliser le **tâches parallèles** et **piles parallèles** outil windows pour déboguer une application parallèle.  
-  
-## <a name="related-sections"></a>Rubriques connexes  
- [Types de projets Visual C++](../debugger/debugging-preparation-visual-cpp-project-types.md)  
- Fournit des liens vers des rubriques qui décrivent le débogage de types de projets natifs, créés par les modèles de projet Visual C++.  
+Cette section décrit des techniques et des problèmes de débogage courants pour les applications natives. Les techniques décrites dans cette section sont des techniques avancées. Pour plus d’informations à l’aide du débogueur Visual Studio, consultez [tout d’abord examiner le débogueur](../debugger/debugger-feature-tour.md)).
+
+## <a name="in-this-section"></a>Dans cette section
+ [Comment : déboguer du Code optimisé](../debugger/how-to-debug-optimized-code.md) donne des conseils pour le débogage de code optimisé, en particulier, raison pour laquelle vous devez déboguer une version non optimisée de votre programme, les paramètres d’optimisation par défaut pour les configurations Debug et Release et des conseils pour rechercher les bogues qui s’affichent uniquement dans le code optimisé (activation de l’optimisation dans une configuration de build Debug).
+
+ [DebugBreak et __debugbreak](../debugger/debugbreak-and-debugbreak.md) décrit Win32 `DebugBreak` fonction et fournit un lien vers sa rubrique de référence dans le kit Platform SDK. Décrit également l'objet intrinsèque `__debugbreak`.
+
+ [Assertions C/C++](../debugger/c-cpp-assertions.md) décrit les instructions d’assertion, leur fonctionnement, les avantages de leur utilisation (interception erreurs de logique, vérification des résultats d’une opération et test des conditions d’erreur), leur interaction avec `_DEBUG`et les types de assertions pris en charge dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+
+ [Comment : déboguer du Code assembleur Inline](../debugger/how-to-debug-inline-assembly-code.md) fournit de brèves instructions sur l’utilisation de la fenêtre code machine pour afficher les instructions d’assembly et la fenêtre registres pour afficher le contenu du Registre et fournit des liens vers des rubriques relatives à ces fenêtres.
+
+ [Techniques de débogage MFC](../debugger/mfc-debugging-techniques.md) vous renvoie à des techniques de débogage pour les programmes MFC, notamment : afxDebugBreak, la macro TRACE, la détection de mémoire les fuites dans MFC, MFC assertions, et réduire la taille de débogage MFC génère.
+
+ [Techniques de débogage CRT](../debugger/crt-debugging-techniques.md) vous renvoie à des techniques de débogage pour la bibliothèque Runtime C, notamment à l’aide de la bibliothèque de débogage CRT, les macros pour la création de rapports, les différences entre malloc et _malloc_dbg, l’écriture de fonctions de raccordement de débogage et le tas de débogage CRT.
+
+ [Forum aux questions sur Code natif de débogage](../debugger/debugging-native-code-faqs.md) fournit des réponses aux questions fréquemment posées sur le débogage des programmes Visual C++
+
+ [Débogage COM et ActiveX](../debugger/com-and-activex-debugging.md) fournit des informations sur le débogage des applications COM et ActiveX, y compris les outils que vous pouvez utiliser pour COM et ActiveX de débogage.
+
+ [Comment : déboguer du Code injecté](../debugger/how-to-debug-injected-code.md) fournit des conseils sur le débogage du code qui utilise des attributs. Les instructions concernent le mode d'activation de l'annotation de la source, le mode d'affichage du code injecté et le mode d'affichage du code machine au point d'exécution en cours.
+
+ [Procédure pas à pas : Débogage d’une Application parallèle](../debugger/walkthrough-debugging-a-parallel-application.md) explique comment utiliser le **tâches parallèles** et **piles parallèles** outil windows pour déboguer une application parallèle.
+
+## <a name="related-sections"></a>Rubriques connexes
+ [Types de projets Visual C++](../debugger/debugging-preparation-visual-cpp-project-types.md) fournit des liens vers des rubriques qui décrivent comment déboguer des types de projets natifs créés par les modèles de projet Visual C++.
 
  [Débogage de projets DLL](../debugger/debugging-dll-projects.md) fournit des informations sur la façon de déboguer des DLL natives et managées.
-  
- [Visite guidée des fonctionnalités du débogueur](../debugger/debugger-feature-tour.md)  
- Fournit des liens vers des sections plus vastes de la documentation relative au débogage. Les informations comprennent les nouveautés du débogueur, les paramètres et la préparation, les points d'arrêt, la gestion des exceptions, la fonctionnalité Modifier & Continuer, le débogage de code managé, le débogage de code natif, le débogage SQL et les références relatives à l'interface utilisateur.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Sécurité du débogueur](../debugger/debugger-security.md)  
- [Débogage dans Visual Studio](../debugger/index.md) [visite guidée des fonctionnalités du débogueur](../debugger/debugger-feature-tour.md)
+
+ [Tout d’abord examiner le débogueur](../debugger/debugger-feature-tour.md) fournit des liens vers des sections plus vastes de la documentation relative au débogage. Les informations comprennent les nouveautés du débogueur, les paramètres et la préparation, les points d'arrêt, la gestion des exceptions, la fonctionnalité Modifier &amp; Continuer, le débogage de code managé, le débogage de code natif, le débogage SQL et les références relatives à l'interface utilisateur.
+
+## <a name="see-also"></a>Voir aussi
+ [Sécurité du débogueur](../debugger/debugger-security.md) [débogage dans Visual Studio](../debugger/index.md)

@@ -1,8 +1,6 @@
 ---
 title: 'CA1709 : La casse des identificateurs doit être correcte'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - IdentifiersShouldBeCasedCorrectly
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f633d1a7-4ca4-40ae-b207-ec571c5fb083
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e1422b409ba27b56adead768c6272f955e75000
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f692218cd051338a6bd4e83a07d985bb52f907e6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891347"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55932077"
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709 : La casse des identificateurs doit être correcte
 
@@ -50,7 +48,7 @@ ms.locfileid: "49891347"
 
  Cette règle fractionne le nom en mots en fonction de la casse et vérifie les mots de deux lettres à une liste de mots à deux lettres communs, tels que « In » ou « My ». Si une correspondance est introuvable, le mot est censé pour être un acronyme. En outre, cette règle suppose qu’il a détecté un acronyme lorsque le nom contient quatre lettres majuscules dans une ligne ou trois lettres majuscules dans une ligne à la fin du nom.
 
- Par convention, les acronymes de deux lettres utilisent toutes les lettres majuscules et les acronymes de trois caractères ou plus Pascal casse. Les exemples suivants utilisent cette convention d’affectation de noms : 'DB', 'CR', 'Cpa' et 'Ecma'. Les exemples suivants enfreignent la convention : 'Io', 'XML' et 'DoD' et pour les noms de paramètres non, 'xp' et 'cpl'.
+ Par convention, les acronymes de deux lettres utilisent toutes les lettres majuscules et les acronymes de trois caractères ou plus Pascal casse. Les exemples suivants utilisent cette convention d’affectation de noms : 'DB', 'CR', 'Cpa' et 'Ecma'. Les exemples suivants enfreignent la convention : « E/s », 'XML' et 'DoD' et pour les noms de paramètres non, 'xp' et 'cpl'.
 
  « ID » est de cas spéciaux pour provoquer une violation de cette règle. 'Id' n’est pas un acronyme mais une abréviation pour « identification ».
 
@@ -60,7 +58,7 @@ ms.locfileid: "49891347"
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Il est possible de supprimer cet avertissement si vous avez vos propres conventions d’affectation de noms, ou si l’identificateur représente un nom approprié, par exemple, le nom d’une société ou une technologie sans.
 
- Vous pouvez également ajouter des termes, abréviations et acronymes à un dictionnaire d’analyse du code personnalisé. Termes spécifiés dans le dictionnaire personnalisé n’entraînent pas de violations de cette règle. Pour plus d’informations, consultez [Comment : personnaliser le dictionnaire d’analyse du Code](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+ Vous pouvez également ajouter des termes, abréviations et acronymes à un dictionnaire d’analyse du code personnalisé. Termes spécifiés dans le dictionnaire personnalisé n’entraînent pas de violations de cette règle. Pour plus d'informations, voir [Procédure : Personnaliser le dictionnaire d’analyse du Code](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
 
 ## <a name="related-rules"></a>Règles associées
- [CA1708 : Les identificateurs ne doivent pas différer que par leur casse](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708 : Les identificateurs doivent différer par leur casse](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

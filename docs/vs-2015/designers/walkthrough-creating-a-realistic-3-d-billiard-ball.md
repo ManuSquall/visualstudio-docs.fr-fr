@@ -1,27 +1,22 @@
 ---
-title: 'Procédure pas à pas : création d’une boule de billard 3D réaliste | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure pas à pas : Création d’une boule de billard 3D réaliste | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 29d45f4d5df6131182dfe70467e655bd23f6fcf2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e63b1d767fca3514f6f765c56362d0e395496fc4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829584"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793303"
 ---
-# <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Procédure pas à pas : création d'une boule de billard 3D réaliste
+# <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Procédure pas à pas : Création d’une boule de billard 3D réaliste
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette procédure pas à pas montre comment créer une boule de billard 3D réaliste en utilisant le concepteur Shader et l’Éditeur d’images dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. L’apparence 3D de la boule de billard s’obtient en combinant plusieurs techniques de nuanceur avec les ressources appropriées en texture.  
@@ -193,7 +188,7 @@ Cette procédure pas à pas montre comment créer une boule de billard 3D réali
   
    ![Disposition de la carte cubique d’environnement](../designers/media/gfx-shader-demo-billiard-art-env-texture-top.png "gfx_shader_demo_billiard_art_env_texture_top")  
   
-   L’image en haut est la face de cube Y (+ Y) positif ; au milieu, de gauche à droite, est le – X, + Z, + X et-Z faces ; de cube dans la partie inférieure est la face de cube – Y.  
+   L’image en haut est la face de cube Y positif (+Y) ; au milieu, de gauche à droite, il s’agit des faces de cube –X, +Z, +X et –Z ; en bas il s’agit de la face de cube –Y.  
   
    Vous pouvez maintenant modifier le nuanceur pour fusionner l’exemple de carte cubique dans le reste du nuanceur.  
   
@@ -221,10 +216,7 @@ Cette procédure pas à pas montre comment créer une boule de billard 3D réali
   
 ## <a name="see-also"></a>Voir aussi  
  [Comment : exporter un nuanceur](../designers/how-to-export-a-shader.md)   
- [Comment : appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
+ [Guide pratique pour Appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [Concepteur de nuanceur](../designers/shader-designer.md)   
  [Éditeur d’images](../designers/image-editor.md)   
  [Nœuds du concepteur Shader](../designers/shader-designer-nodes.md)
-
-
-

@@ -5,17 +5,15 @@ ms.topic: reference
 ms.assetid: 3794e88b-4d3d-4e7a-ade6-8208eabe3eae
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fd679e9275aedc8db9f65864a240e1c12e4faffc
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
-ms.translationtype: MT
+ms.openlocfilehash: aab3fe715ab0b41dc7bb875bee4d8b1b94837bf7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089462"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970489"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>Un ou plusieurs des objets de base de données sélectionnés retournent un schéma qui ne correspond pas au schéma de la classe cible
 
@@ -25,9 +23,9 @@ Lorsque vous faites glisser des objets de base de données sur des classes d'ent
 
 ## <a name="to-correct-this-error"></a>Pour corriger cette erreur
 
-1. Cliquez sur **OK** pour faire disparaître la boîte de dialogue.
+1. Cliquez sur **OK** pour fermer la boîte de dialogue.
 
-2. Sélectionnez un objet de base de données qui retourne des données qui correspondent au schéma de la classe cible (la classe de l’objet de base de données a été déposé dans le **Concepteur O/R**).
+2. Sélectionnez un objet de base de données qui retourne des données correspondants au schéma de la classe cible (classe dans laquelle l’objet de base de données a été déposé dans le **Concepteur O/R**).
 
 ## <a name="see-also"></a>Voir aussi
 

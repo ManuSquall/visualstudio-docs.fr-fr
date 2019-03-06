@@ -1,8 +1,6 @@
 ---
 title: Fonctions des extraits de code
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - code snippets [Visual Studio], functions
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c0a2bf21-8fa5-4457-9281-f599beb53e7d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3362bae41b540ee097e1109848680a11d37a272
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 60453b6842dd321b7c85c2837e12b1208adb18f9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512133"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939513"
 ---
 # <a name="code-snippet-functions"></a>Fonctions des extraits de code
 
@@ -31,11 +29,11 @@ Le tableau suivant décrit les fonctions qui peuvent être utilisées avec l’�
 
 |Fonction|Description|Langue|
 |--------------|-----------------|--------------|
-|`GenerateSwitchCases(` `EnumerationLiteral` `)`|Génère une instruction switch et un ensemble d’instructions case pour les membres de l’énumération spécifiée par le paramètre `EnumerationLiteral`. Le paramètre `EnumerationLiteral` doit être une référence à un littéral d’énumération ou un type d’énumération.|C#|
+|`GenerateSwitchCases(EnumerationLiteral)`|Génère une instruction switch et un ensemble d’instructions case pour les membres de l’énumération spécifiée par le paramètre `EnumerationLiteral`. Le paramètre `EnumerationLiteral` doit être une référence à un littéral d’énumération ou un type d’énumération.|C#|
 |`ClassName()`|Retourne le nom de la classe qui contient l’extrait de code inséré.|C#|
-|`SimpleTypeName(` `TypeName` `)`|Réduit le paramètre *TypeName* à sa forme la plus simple dans le contexte dans lequel l’extrait de code a été appelé.|C#|
+|`SimpleTypeName(TypeName)`|Réduit le paramètre *TypeName* à sa forme la plus simple dans le contexte dans lequel l’extrait de code a été appelé.|C#|
 
-## <a name="example"></a>Exemple
+## <a name="generateswitchcases-example"></a>Exemple de GenerateSwitchCases
 
 L'exemple suivant montre comment utiliser la fonction `GenerateSwitchCases`. Quand cet extrait de code est inséré et qu’une énumération est entrée dans le littéral `$switch_on$`, le littéral `$cases$` génère une instruction `case` pour chaque valeur contenue dans l’énumération.
 
@@ -77,7 +75,7 @@ L'exemple suivant montre comment utiliser la fonction `GenerateSwitchCases`. Qua
 </CodeSnippets>
 ```
 
-## <a name="example"></a>Exemple
+## <a name="classname-example"></a>Exemple de ClassName
 
 L'exemple suivant montre comment utiliser la fonction `ClassName`. Quand cet extrait de code est inséré, le littéral `$classname$` est remplacé par le nom de la classe englobante à cet emplacement dans le fichier de code.
 
@@ -124,7 +122,7 @@ L'exemple suivant montre comment utiliser la fonction `ClassName`. Quand cet ext
 </CodeSnippets>
 ```
 
-## <a name="example"></a>Exemple
+## <a name="simpletypename-example"></a>Exemple de SimpleTypeName
 
 Cet exemple montre comment utiliser la fonction `SimpleTypeName`. Quand cet extrait de code est inséré dans un fichier de code, le littéral `$SystemConsole$` est remplacé par la forme la plus simple du type <xref:System.Console> dans le contexte dans lequel l’extrait de code a été appelé.
 

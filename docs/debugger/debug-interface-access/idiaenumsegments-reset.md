@@ -1,8 +1,6 @@
 ---
-title: IDiaEnumSegments::Reset | Documents Microsoft
-ms.custom: ''
+title: IDiaEnumSegments::Reset | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,27 +9,27 @@ helpviewer_keywords:
 ms.assetid: 5eabca3c-6023-4474-a545-a3bec7521e4d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfc8bbc8d95147a68a37746febebd28e61de3b19
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 9f85cd612dc2b45150745c17420d79a487c821ff
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457025"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603103"
 ---
 # <a name="idiaenumsegmentsreset"></a>IDiaEnumSegments::Reset
-Réinitialise la séquence d’énumération au début.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT Reset ();  
-```  
-  
-## <a name="return-value"></a>Valeur de retour  
- Retourne `S_OK`.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)
+Réinitialise une séquence d’énumération au début.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT Reset ();
+```
+
+## <a name="return-value"></a>Valeur de retour
+ Retourne `S_OK`.
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)

@@ -1,8 +1,6 @@
 ---
 title: Compatibilité des versions des stratégies d’archivage de l’analyse du code
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - version compatibility, code analysis check-in policy
@@ -10,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 1af376e3-3be7-4445-803b-76a858567a5b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d04ac68140395cbc2dae9bd70f57e587d9b7732
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0fc164dea10a74bbff725ee153f298c820f1c203
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898226"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936445"
 ---
 # <a name="version-compatibility-for-code-analysis-check-in-policies"></a>Compatibilité des versions des stratégies d’archivage de l’analyse du code
 

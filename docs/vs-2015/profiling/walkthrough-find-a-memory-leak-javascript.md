@@ -1,14 +1,9 @@
 ---
-title: 'Procédure pas à pas : rechercher une fuite de mémoire (JavaScript) | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure pas à pas : Rechercher une fuite de mémoire (JavaScript) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: f595412f-776b-49a2-8433-ea0062c6904d
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e2b84adac23547f42cca6113c5f5a7090f224e8c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 88f9d8fc871f182bb3a6d7f36c3648982e7a9684
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51744952"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780932"
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>Procédure pas à pas : rechercher une fuite de mémoire (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -224,7 +219,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
     - Cet objet est l'objet créé à partir de l'instantané n°2 et représente une fuite de mémoire potentielle.  
   
-      La connaissance de l'application est une aide à ce stade. Sélectionner le bouton **Fuite de mémoire** doit supprimer un élément DIV et ajouter un élément, si le code ne semble pas fonctionner correctement (dans ce cas, une fuite de mémoire se produit). La section suivante explique comment résoudre cela.  
+      Connaissance de l’application aide à ce stade : En choisissant le **fuite de mémoire** bouton doit supprimer un élément DIV et ajouter un élément, si le code ne semble pas fonctionner correctement (autrement dit, il les fuites de mémoire). La section suivante explique comment résoudre cela.  
   
     > [!TIP]
     >  Parfois, la recherche d'un objet par rapport à l'objet `Global` peut aider à identifier cet objet. Pour cela, ouvrez le menu contextuel de l'identificateur et choisissez **Afficher en vue racine**.  
@@ -293,6 +288,3 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 ## <a name="see-also"></a>Voir aussi  
  [Mémoire JavaScript](../profiling/javascript-memory.md)
-
-
-

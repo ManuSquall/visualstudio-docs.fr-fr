@@ -1,5 +1,5 @@
 ---
-title: "Procédure pas à pas : génération de code à l'aide de modèles de texte"
+title: 'Procédure pas à pas : Génération de Code à l’aide de modèles de texte'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,19 +7,17 @@ helpviewer_keywords:
 - walkthroughs [text templates]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 09bfb2e1a17a4832f4afa4f432e4232ce6845323
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: a1fabf31a58203e2fb98dd4929907de4f8fff436
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859794"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928905"
 ---
-# <a name="walkthrough-generate-code-by-using-text-templates"></a>Procédure pas à pas : générer du code à l’aide de modèles de texte
+# <a name="walkthrough-generate-code-by-using-text-templates"></a>Procédure pas à pas : Générer du Code à l’aide de modèles de texte
 
 La génération de code vous permet de générer du code de programme qui est fortement typé mais peut être facilement modifié quand le modèle source change. Comparez ceci avec l’autre technique consistant à écrire un programme complètement générique qui accepte un fichier de configuration, qui est plus flexible mais génère du code qui n’est pas aussi facile à lire et à modifier et n’offre pas d’aussi bonnes performances. Cette procédure pas à pas montre les avantages offerts par la génération de code.
 

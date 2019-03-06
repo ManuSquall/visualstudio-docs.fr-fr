@@ -1,23 +1,21 @@
 ---
 title: Utiliser l’éditeur de jeu de règles Code Analysis
 ms.date: 04/04/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.ruleseteditor
 ms.assetid: 370c97bf-bb29-4b2f-b9ae-ba125bce7b2d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bdd80031530049b204c0befc445c1416aa08b43e
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 719d8f1e11365de0b864f41f54546fb4bfc64cd2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000814"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937217"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Utiliser l’éditeur de jeu de règles code analysis
 

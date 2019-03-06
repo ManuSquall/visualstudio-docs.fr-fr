@@ -1,8 +1,6 @@
 ---
-title: 'CA2208 : Instanciez les exceptions d’argument comme il se doit'
+title: "CA2208 : Instanciez les exceptions d'argument comme il se doit"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2208
@@ -13,21 +11,21 @@ helpviewer_keywords:
 ms.assetid: e2a48939-d9fa-478c-b2f9-3bdbce07dff7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f7a10d126d5432a80b146fe2086c01064d83006e
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: d82b1884336b314e8fcede3c6041030a878b999c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547433"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922925"
 ---
-# <a name="ca2208-instantiate-argument-exceptions-correctly"></a>CA2208 : Instanciez les exceptions d’argument comme il se doit
+# <a name="ca2208-instantiate-argument-exceptions-correctly"></a>CA2208 : Instanciez les exceptions d'argument comme il se doit
 
 |||
 |-|-|

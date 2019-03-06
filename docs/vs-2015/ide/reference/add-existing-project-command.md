@@ -1,14 +1,9 @@
 ---
 title: Ajouter un projet existant, commande | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - file.addexistingproject
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 71cf3e31-c76b-405b-ad6a-1b1bc654bd40
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c881f32594ee6327dfba9792fa83bd2d092efcf9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7523db6598a32c76944c22bfdabe56ee288c6b43
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267642"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54771080"
 ---
 # <a name="add-existing-project-command"></a>Ajouter un projet existant, commande
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,13 +35,13 @@ File.AddExistingProject filename
   
 ## <a name="arguments"></a>Arguments  
  `filename`  
- Facultatif. Chemin complet et nom (extension comprise) du projet à ajouter à la solution.  
+ Optionnel. Chemin complet et nom (extension comprise) du projet à ajouter à la solution.  
   
  Si l’argument `filename` comprend des espaces, il doit être placé entre guillemets.  
   
  Si aucun nom de fichier n’est spécifié, la commande ouvre la boîte de dialogue Fichier pour que l’utilisateur puisse sélectionner un projet.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  La saisie semi-automatique tente de deviner le chemin et le nom de fichier à mesure que vous tapez.  
   
 ## <a name="example"></a>Exemple  
@@ -61,6 +56,3 @@ File.AddExistingProject filename
  [Fenêtre Commande](../../ide/reference/command-window.md)   
  [Zone Rechercher/Commande](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

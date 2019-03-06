@@ -1,10 +1,7 @@
 ---
 title: IDebugReference2::GetParent | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugReference2::GetParent
 helpviewer_keywords:
@@ -12,39 +9,40 @@ helpviewer_keywords:
 ms.assetid: e3061665-ad3e-4c1b-b33f-82755fa21be3
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c6fe4c6fa66d2a5f8b514028c5633727b003992
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 985a9b15c61099548ace4ba20d8ea2706506fc17
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913025"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56697635"
 ---
 # <a name="idebugreference2getparent"></a>IDebugReference2::GetParent
-Obtient la référence parente d’une référence. Réservé à un usage ultérieur.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-HRESULT GetParent (   
-   IDebugReference2** ppParent  
-);  
-```  
-  
-```csharp  
-int GetParent (   
-   out IDebugReference2 ppParent  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `ppParent`  
- [out] Retourne un [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objet qui représente le parent de cette propriété.  
-  
-## <a name="return-value"></a>Valeur de retour  
- Retourne toujours `E_NOTIMPL`.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
+Obtient la référence parente d’une référence. Réservé à un usage ultérieur.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT GetParent ( 
+   IDebugReference2** ppParent
+);
+```
+
+```csharp
+int GetParent ( 
+   out IDebugReference2 ppParent
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ `ppParent`
+
+ [out] Retourne un [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objet qui représente le parent de cette propriété.
+
+## <a name="return-value"></a>Valeur de retour
+ Retourne toujours `E_NOTIMPL`.
+
+## <a name="see-also"></a>Voir aussi
+- [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

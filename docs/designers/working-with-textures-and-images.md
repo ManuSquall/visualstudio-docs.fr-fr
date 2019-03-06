@@ -1,21 +1,19 @@
 ---
 title: Utilisation des textures et des images
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: b9fbc8fa-66d1-4055-8460-24d8b8fbe43e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb7cc97a797d02bd8353cbcfb19af6b8f9edf674
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 5642a2e84766758b5fdf50bc652fd32b585427bf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079658"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933464"
 ---
 # <a name="work-with-textures-and-images"></a>Utiliser des textures et des images
 
@@ -54,5 +52,5 @@ Les mappages de cube peuvent contenir différents types de données, par exemple
 
 |Titre|Description|
 |-----------|-----------------|
-|[Éditeur d’images](../designers/image-editor.md)|Décrit comment utiliser l’Éditeur d’images pour utiliser les textures et les images.|
+|[Image Editor](../designers/image-editor.md)|Décrit comment utiliser l’Éditeur d’images pour utiliser les textures et les images.|
 |[Exemples de l’éditeur d’images](../designers/image-editor-examples.md)|Fournit des liens vers des rubriques qui expliquent comment utiliser l’Éditeur d’images pour effectuer des tâches de traitement d’images courantes.|

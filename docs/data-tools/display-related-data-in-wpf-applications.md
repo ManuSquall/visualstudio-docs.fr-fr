@@ -13,17 +13,15 @@ helpviewer_keywords:
 ms.assetid: 3aa80194-0191-474d-9d28-5ec05654b426
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f37fdeb7ddd305c7c258958d92c08cf1d8f2a4a8
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: da6f276e714c816ea9b3c1b735ad50f31ffdc3c0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304595"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931505"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Afficher des données associées dans des applications WPF
 
@@ -33,9 +31,9 @@ Vous pouvez créer des contrôles liés aux données qui affichent les données 
 
 ## <a name="to-create-controls-that-display-related-records"></a>Pour créer des contrôles qui affichent des enregistrements connexes
 
-1. Dans le menu Données **, cliquez sur Afficher les sources de données** pour ouvrir la fenêtre Sources de données **.
+1. Dans le menu **Données**, cliquez sur **Afficher les sources de données** pour ouvrir la fenêtre **Sources de données**.
 
-2. Cliquez sur Ajouter une nouvelle source de données **et suivez les étapes de l'Assistant Configuration de source de données**.
+2. Cliquez sur **Ajouter une nouvelle source de données** et suivez les étapes de l’Assistant **Configuration de source de données**.
 
 3. Ouvrez le Concepteur WPF et vous assurer que le concepteur contient un conteneur qui est une cible de dépôt valide pour les éléments dans le **des Sources de données** fenêtre.
 

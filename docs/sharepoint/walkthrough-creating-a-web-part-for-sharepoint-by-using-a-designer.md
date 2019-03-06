@@ -1,30 +1,25 @@
 ---
 title: 'Procédure pas à pas : Création d’un composant WebPart pour SharePoint à l’aide d’un concepteur | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], designer
 - Web Parts [SharePoint development in Visual Studio], creating
 - Web Parts [SharePoint development in Visual Studio], designing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1b5cfd9afaf0c37dcf267c63641b7917efe4c249
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4a22d814ce50dea1ee67ed3bf1f071839e60a797
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831809"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607019"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Procédure pas à pas : Créer un composant WebPart pour SharePoint à l’aide d’un concepteur
 
@@ -74,7 +69,7 @@ Concevez le composant WebPart en ajoutant des contrôles à partir de la **boît
 
 1. Dans le concepteur Visual Web Developer, choisissez le **conception** tab pour passer en mode Design.
 
-2. Dans la barre de menus, choisissez **vue** > **boîte à outils**.
+2. Dans la barre de menus, choisissez **Affichage** > **Boîte à outils**.
 
 3. Dans le **Standard** nœud de la **boîte à outils**, choisissez le **CheckBoxList** contrôler, puis effectuez l’une des étapes suivantes :
 
@@ -192,6 +187,6 @@ Dans le composant WebPart, spécifiez les calendriers que vous souhaitez inclure
 
 ## <a name="see-also"></a>Voir aussi
 
-[Créer des composants WebPart pour SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)  
-[Comment : créer un composant WebPart SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
-[Procédure pas à pas : Créer un composant WebPart pour SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)
+[Créer des composants WebPart pour SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
+[Comment : Créer un composant WebPart SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)
+[procédure pas à pas : Créer un composant WebPart pour SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)

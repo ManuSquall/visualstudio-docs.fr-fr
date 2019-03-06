@@ -1,14 +1,9 @@
 ---
 title: Vue Résumé | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.summary
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: 98a1eb71-bbf5-4ce7-8559-cdc29f082c4b
 caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fdacfcba18d465685053cdea4581a5806c25db9d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bfba1981fb6becea34fb567a2f7ae2e6c06896d2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757325"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767855"
 ---
 # <a name="summary-view"></a>Vue Résumé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,8 +52,8 @@ La vue Résumé affiche des informations sur les fonctions ou les objets dont le
 |**Afficher une arborescence des appels tronquée**|Affiche les chemins d’exécution les plus consommateurs dans la vue Arborescence des appels. Pour plus d’informations, consultez [Arborescence des appels, vue](../profiling/call-tree-view.md).|  
 |**Afficher les hotlines**|Non disponible pour les données de profilage qui ont été collectées avec la méthode d’instrumentation. Affiche les lignes de code source les plus consommatrices dans la vue Lignes. Pour plus d’informations, consultez [Lignes, vue](../profiling/lines-view.md).|  
 |**Comparer des rapports**|Affiche la boîte de dialogue **Sélectionner des fichiers d’analyse à comparer**, où vous pouvez spécifier un autre fichier de données de profilage à comparer au fichier actif. Pour plus d’informations, consultez [Comparaison des fichiers de données de performances](../profiling/comparing-performance-data-files.md).|  
-|**Exporter les données du rapport**|Affiche la boîte de dialogue **Exporter le rapport**, où vous pouvez spécifier une ou plusieurs vues de rapport à enregistrer comme fichiers .csv (valeurs séparées par des virgules) ou .xml. Pour plus d’informations, consultez [Guide pratique pour exporter les rapports des outils de profilage](http://msdn.microsoft.com/en-us/174b5bd3-df9b-4fd4-88d4-76032ab90451).|  
-|**Enregistrer le rapport analysé**|Enregistre le fichier de données de profilage actif dans un fichier .vsps, qui s’ouvre plus rapidement dans l’interface pour [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Pour plus d’informations, consultez [Guide pratique pour enregistrer des fichiers de données de profilage analysés](http://msdn.microsoft.com/en-us/0340ddde-caf4-48ac-8af3-d15dcdade556).|  
+|**Exporter les données du rapport**|Affiche la boîte de dialogue **Exporter le rapport**, où vous pouvez spécifier une ou plusieurs vues de rapport à enregistrer comme fichiers .csv (valeurs séparées par des virgules) ou .xml. Pour plus d’informations, consultez [Guide pratique pour exporter les rapports des outils de profilage](http://msdn.microsoft.com/174b5bd3-df9b-4fd4-88d4-76032ab90451).|  
+|**Enregistrer le rapport analysé**|Enregistre le fichier de données de profilage actif dans un fichier .vsps, qui s’ouvre plus rapidement dans l’interface pour [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Pour plus d’informations, consultez [Guide pratique pour enregistrer des fichiers de données de profilage analysés](http://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556).|  
 |**Filtrer les données du rapport**|Affiche le volet de filtrage du rapport de profilage où vous pouvez spécifier des critères pour limiter les données de la vue Rapport. Pour plus d’informations, consultez [Filtre de la vue Rapport de performances](../profiling/performance-report-view-filter.md).|  
 |**Plein écran**|Active ou désactive le mode Plein écran pour la vue Rapport.|  
   
@@ -66,6 +61,3 @@ La vue Résumé affiche des informations sur les fonctions ou les objets dont le
  [Mode Résumé](../profiling/summary-view-sampling-data.md)   
  [Mode Résumé](../profiling/summary-view-instrumentation-data.md)   
  [Mode Résumé](../profiling/summary-view-dotnet-memory-data.md)
-
-
-

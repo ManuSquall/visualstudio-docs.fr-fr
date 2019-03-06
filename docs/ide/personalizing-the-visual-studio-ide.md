@@ -1,20 +1,18 @@
 ---
 title: Personnaliser l’IDE
 ms.date: 11/20/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfd3ed3461b40f85e66d62f01e68aff4ce740031
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 36e5e8f59474a9a2fcbfef7a1c6b3d75febe3086
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159501"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708769"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personnaliser l’IDE Visual Studio
 
@@ -52,9 +50,13 @@ Vous pouvez changer la casse du menu principal à l’aide des options **1re let
 
 Pour ajouter ou supprimer des éléments de menu ou de barre d’outils, consultez [Guide pratique pour personnaliser des menus et des barres d’outils](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
+::: moniker range="vs-2017"
+
 ## <a name="start-page"></a>Page de démarrage
 
 Pour créer une page de démarrage personnalisée pour vous et votre équipe, consultez [Personnaliser la page de démarrage](../ide/customizing-the-start-page-for-visual-studio.md).
+
+::: moniker-end
 
 ## <a name="window-layouts"></a>Dispositions de fenêtres
 

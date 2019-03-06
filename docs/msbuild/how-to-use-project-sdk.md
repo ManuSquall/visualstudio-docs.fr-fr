@@ -1,24 +1,22 @@
 ---
-title: Guide pratique pour référencer un kit SDK de projet MSBuild | Microsoft Docs
-ms.custom: ''
+title: 'Procédure : Référencer un kit SDK de projet MSBuild | Microsoft Docs'
 ms.date: 01/25/2018
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, SDKs, SDK
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abc61f0e07ed1e22d0ec3b2c8fb15d66c9eea3cd
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 55fcc74069ab912a7ec0fb9a6c4996cfd0b9cc36
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220442"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638177"
 ---
-# <a name="how-to-use-msbuild-project-sdks"></a>Guide pratique pour utiliser les kits SDK de projet MSBuild
+# <a name="how-to-use-msbuild-project-sdks"></a>Procédure : Utiliser les kits SDK de projet MSBuild
 
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 15.0 a introduit le concept de « kit SDK de projet », qui simplifie l’utilisation de kits de développement logiciel qui nécessitent l’importation des propriétés et des cibles.
 
@@ -96,7 +94,7 @@ Durant l’évaluation du projet, [!INCLUDE[vstecmsbuild](../extensibility/inter
 Durant l’évaluation de l’importation, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] résout dynamiquement le chemin d’accès au kit SDK de projet en fonction du nom et de la version que vous avez spécifiés.  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] contient également une liste des programmes de résolution de kits SDK inscrits, qui sont des plug-ins permettant de localiser les kits SDK de projet sur votre ordinateur.  Ces plug-ins sont les suivants :
 
 1. Un programme de résolution basé sur NuGet qui interroge vos flux de packages configurés pour localiser les packages NuGet qui correspondent à l’ID et à la version du kit SDK que vous avez spécifié.<br/>
-   Ce programme de résolution est uniquement actif si vous avez spécifié une version facultative, et il peut être utilisé pour tout kit SDK de projet personnalisé.  
+   Ce programme de résolution est uniquement actif si vous avez spécifié une version facultative, et il peut être utilisé pour tout kit SDK de projet personnalisé.
 2. Un programme de résolution d’interface CLI .NET qui résout les kits SDK installés avec l’interface CLI .NET.<br/>
    Ce programme de résolution localise les kits SDK de projet tels que `Microsoft.NET.Sdk` et `Microsoft.NET.Sdk.Web` qui font partie du produit.
 3. Un programme de résolution par défaut qui résout les kits SDK installés avec MSBuild.
@@ -112,11 +110,11 @@ Le programme de résolution de kits SDK basé sur NuGet prend en charge la spéc
 }
 ```
 
-Seule une version de chaque kit SDK de projet peut être utilisée durant une build.  Si vous référencez deux versions différentes du même kit SDK de projet, MSBuild émet un avertissement.  Il est recommandé de ne **pas** spécifier de version dans vos projets si une version est spécifiée dans votre fichier *global.json*.  
+Seule une version de chaque kit SDK de projet peut être utilisée durant une build.  Si vous référencez deux versions différentes du même kit SDK de projet, MSBuild émet un avertissement.  Il est recommandé de ne **pas** spécifier de version dans vos projets si une version est spécifiée dans votre fichier *global.json*.
 
 ## <a name="see-also"></a>Voir aussi
 
- [Concepts MSBuild](../msbuild/msbuild-concepts.md)   
- [Personnaliser votre build](../msbuild/customize-your-build.md)   
- [Packages, métadonnées et frameworks](/dotnet/core/packages)   
- [Ajouts au format csproj pour .NET Core](/dotnet/core/tools/csproj)
+- [Concepts MSBuild](../msbuild/msbuild-concepts.md)
+- [Personnaliser votre build](../msbuild/customize-your-build.md)
+- [Packages, métadonnées et frameworks](/dotnet/core/packages)
+- [Ajouts au format csproj pour .NET Core](/dotnet/core/tools/csproj)

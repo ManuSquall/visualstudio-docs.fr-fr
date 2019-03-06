@@ -1,8 +1,6 @@
 ---
 title: Commandes de navigation dans le code
 ms.date: 08/14/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, navigation
@@ -17,15 +15,15 @@ helpviewer_keywords:
 - go to
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ac6fb3ae1f8c4e7fb48c9cd9a0d2b77cb875094
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 45d165cd25b6ef17c4603ab5c1c7c783edd85d8b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894467"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927605"
 ---
 # <a name="navigate-code"></a>Naviguer dans le code
 
@@ -68,7 +66,7 @@ Cette option permet de rechercher toutes les références à l’élément séle
 Entrée | Fonction
 ------------ | ---
 **Clavier** | Placez le curseur de texte à l’intérieur du nom de type, puis appuyez sur **Maj**+**F12**
-**Souris** | Sélectionnez **Rechercher toutes les références** dans le menu contextuel
+**Souris** | Sélectionnez **Rechercher toutes les références** dans le menu contextuel (clic droit)
 
 ## <a name="reference-highlighting"></a>Mise en surbrillance des références
 
@@ -78,7 +76,7 @@ Quand vous cliquez sur un symbole dans le code source, toutes les instances de c
 
 L’option Atteindre propose les commandes suivantes, disponibles dans le menu **Édition**, sous **Atteindre** :
 
-- **Atteindre la ligne** (**Ctrl**+**G**) : accéder au numéro de ligne spécifié dans le document actif.
+- **Atteindre la ligne** (**Ctrl**+**G**) : accéder au numéro de ligne spécifié dans le document actif.
 
 - **Atteindre tout** (**Ctrl**+**T** ou **Ctrl**+**,**) : accéder à la ligne, au type, au fichier, au membre ou au symbole spécifié.
 
@@ -111,7 +109,7 @@ Entrée | Fonction
 
 ## <a name="peek-definition"></a>Aperçu de définition
 
-L’option Aperçu de la définition affiche la définition de l’élément sélectionné dans une fenêtre sans vous obliger à quitter votre emplacement actuel dans l’éditeur de code. Pour plus d’informations, consultez [Guide pratique pour afficher et modifier le code avec l’Aperçu de définition](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) et [Atteindre la définition et Aperçu de la définition](../ide/go-to-and-peek-definition.md).
+L’option Aperçu de la définition affiche la définition de l’élément sélectionné dans une fenêtre sans vous obliger à quitter votre emplacement actuel dans l’éditeur de code. Pour plus d'informations, voir [Procédure : Afficher et modifier le code avec l’Aperçu de définition](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) et [Atteindre la définition et Aperçu de la définition](../ide/go-to-and-peek-definition.md).
 
 Entrée | Fonction
 ------------ | ---
@@ -150,7 +148,7 @@ Pour désactiver les lignes de repère de structure, accédez à **Outils** > **
 
 ## <a name="enhanced-scroll-bar"></a>Barre de défilement améliorée
 
-Vous pouvez utiliser la barre de défilement améliorée dans une fenêtre de code pour bénéficier d’une vue panoramique de votre code. En mode plan, vous pouvez afficher des aperçus du code en déplaçant le curseur vers le haut et vers le bas dans la barre de défilement. Pour plus d’informations, consultez [Guide pratique pour suivre votre code en personnalisant la barre de défilement](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).
+Vous pouvez utiliser la barre de défilement améliorée dans une fenêtre de code pour bénéficier d’une vue panoramique de votre code. En mode plan, vous pouvez afficher des aperçus du code en déplaçant le curseur vers le haut et vers le bas dans la barre de défilement. Pour plus d'informations, voir [Procédure : Suivre votre code en personnalisant la barre de défilement](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).
 
 ## <a name="codelens-information"></a>Informations sur CodeLens
 

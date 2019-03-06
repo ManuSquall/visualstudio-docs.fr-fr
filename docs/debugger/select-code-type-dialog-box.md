@@ -1,8 +1,6 @@
 ---
-title: Sélectionnez le Type de Code, boîte de dialogue | Documents Microsoft
-ms.custom: ''
+title: Sélectionnez le Type de Code, boîte de dialogue | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.selectengines
@@ -20,25 +18,23 @@ helpviewer_keywords:
 ms.assetid: 932269fe-94e3-43cb-8931-078f31afd177
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0f291df376de5de00f1cc6a8a2f94767eccec49
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 16091b8743a30404560a1bf841710f65ad1343a3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475140"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701353"
 ---
 # <a name="select-code-type-dialog-box"></a>Sélectionner le type de code, boîte de dialogue
-Pour ouvrir cette boîte de dialogue, ouvrez le **attacher au processus** boîte de dialogue, puis cliquez sur le **sélectionnez** bouton.  
-  
- **Déterminer automatiquement le type de code à déboguer**  
- Le débogueur approprié sera sélectionné sur la base du type de code qui s'exécute.  
-  
- **Déboguer ces types de codes :**  
- Dans la liste fournie, sélectionnez le type de code que vous souhaitez déboguer.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Sécurité du débogueur](../debugger/debugger-security.md)   
- [Attacher au processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+Pour ouvrir cette boîte de dialogue, ouvrez la boîte de dialogue **Attacher au processus**, puis cliquez sur le bouton **Sélectionner**.
+
+ **Déterminer automatiquement le type de code à déboguer** le débogueur approprié sera sélectionné en fonction du type de code qui est en cours d’exécution.
+
+ **Déboguer ces types de codes :** dans la liste fournie, choisissez le type de code que vous souhaitez déboguer.
+
+## <a name="see-also"></a>Voir aussi
+- [Sécurité du débogueur](../debugger/debugger-security.md)
+- [S’attacher à des processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

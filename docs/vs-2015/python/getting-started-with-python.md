@@ -1,25 +1,20 @@
 ---
 title: Bien démarrer avec Python | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-python
+ms.topic: conceptual
 ms.assetid: 33f4f6fb-0ae4-4234-9df2-531f2d3af17f
 caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
-manager: ghogen
-ms.openlocfilehash: 5cb04bb01aaa6eb06c5e3c50aa13ab51c136678c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 11febf99dc411d50ee94e003515bfa6581591b91
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275286"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678863"
 ---
 # <a name="getting-started-with-python"></a>Mise en route de Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ Comme un langage de programmation Python est :
   
 - Fiable.
 - Généralement utile pour les scripts de programmes rapides, scripts d’application, applications de bureau, serveurs web, services web et calcul scientifique.
-- Facile à apprendre et bénéficie d’une conception qui favorise le codage (nombreuses universités l’utiliser pour les cours de programmation introduction).
+- Facile à maîtriser, il bénéficie d’une conception qui favorise le codage (de nombreuses universités l’utilisent pour les cours d’initiation à la programmation).
 - Flexible, prenant en charge les styles de programmation impératives, fonctionnelles et orientée objet.
 - Gratuit et open source.
 - S’exécute correctement sur tous les principaux systèmes d’exploitation.  
@@ -48,10 +43,10 @@ Pour installer Python lui-même, visitez [ https://www.python.org/download/ ](ht
   
 ## <a name="python-tools-for-visual-studio"></a>Outils Python pour Visual Studio
   
-Python Tools pour Visual Studio, que vous pouvez installer à partir de [visualstudio.com](https://www.visualstudio.com/en-us/explore/python-vs), fournissent les fonctionnalités suivantes :  
+Python Tools pour Visual Studio, que vous pouvez installer à partir de [visualstudio.com](https://www.visualstudio.com/explore/python-vs), fournissent les fonctionnalités suivantes :  
   
 - Prise en charge de divers interpréteurs : CPython, IronPython et IPython dans plusieurs versions.  
-- Un système de projet qui récupère implicitement une structure de dossiers de code Python et permet également un contrôle explicite afin d’identifier le code d’application, code de test, pages web, JavaScript, scripts de compilation et ainsi de suite.  
+- Système de projet qui récupère implicitement une structure de dossiers de code Python et qui autorise par ailleurs un contrôle explicite permettant d’identifier le code d’application, le code de test, les pages web, JavaScript, les scripts de build, etc.  
 - Modèles de projet de type console, web, Azure, science des données et autres.    
 - Le SDK Azure pour Python (voir ci-dessous)    
 - Fonctionnalités d’édition et de compréhension de code élaborées, dont la coloration syntaxique, la saisie semi-automatique dans l’ensemble du code et des bibliothèques, une aide sur les signatures, un affichage de classes, les fonctions Atteindre la définition et Rechercher toutes les références, la refactorisation, etc.    
@@ -70,7 +65,7 @@ Les ressources suivantes vous permettront de démarrer :
 - [Documentation](https://github.com/Microsoft/PTVS/wiki)  
 
 
-Notez que Visual Studio ne pas à l’heure actuelle fournit les moyens de créer un exécutable autonome à l’aide de Python, ce qui signifie essentiellement un programme avec un interpréteur Python incorporé. Toutefois, la communauté Python décrit différents moyens de le faire sur [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython prend également en charge l’incorporation dans une application native, comme décrit dans le billet de blog, [Using CPython’s Embeddable Zip File](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/) (Utilisation d’un fichier zip incorporable dans CPython).
+Notez que Visual Studio ne pas à l’heure actuelle fournit les moyens de créer un exécutable autonome à l’aide de Python, ce qui signifie essentiellement un programme avec un interpréteur Python incorporé. Toutefois, la communauté Python décrit différents moyens de le faire sur [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython prend également en charge l’incorporation dans une application native, comme décrit dans le billet de blog, [Using CPython’s Embeddable Zip File](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/) (Utilisation d’un fichier zip incorporable dans CPython).
   
 ## <a name="building-ui-with-python"></a>Création de l’interface utilisateur avec Python  
 
@@ -104,4 +99,3 @@ Nous vous recommandons de vous procurer IPython et les bibliothèques de calcul 
 [Bien démarrer avec PTVS : débogage](../python/getting-started-with-ptvs-debugging.md)
 [Bien démarrer avec PTVS : Interactive Python](../python/getting-started-with-ptvs-interactive-python.md)
 [Bien démarrer avec PTVS : création d’un site web dans Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
-

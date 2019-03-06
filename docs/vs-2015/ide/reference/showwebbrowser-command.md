@@ -1,14 +1,9 @@
 ---
 title: Afficher le navigateur web, commande | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - view.showwebbrowser
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: c6a4fbd6-8e9d-45cc-8b2f-93990d065e78
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f9bf9668a690347988e3148cf90da69ec3b33ca2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c1fca2c1c1dde167c8028d6ad4d543e108a488b4
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49171949"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54798211"
 ---
 # <a name="showwebbrowser-command"></a>Afficher le navigateur Web, commande
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,12 +39,12 @@ View.ShowWebBrowser URL [/new][/ext]
   
 ## <a name="switches"></a>Commutateurs  
  /new  
- Facultatif. Spécifie que la page s’affiche dans une nouvelle instance du navigateur web.  
+ Optionnel. Spécifie que la page s’affiche dans une nouvelle instance du navigateur web.  
   
  /ext  
- Facultatif. Spécifie que la page s’affiche dans le navigateur web par défaut en dehors de l’IDE.  
+ Optionnel. Spécifie que la page s’affiche dans le navigateur web par défaut en dehors de l’IDE.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  L’alias de la commande **ShowWebBrowser** est **navigate** ou **nav**.  
   
 ## <a name="example"></a>Exemple  
@@ -64,6 +59,3 @@ View.ShowWebBrowser URL [/new][/ext]
  [Fenêtre Commande](../../ide/reference/command-window.md)   
  [Zone Rechercher/Commande](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

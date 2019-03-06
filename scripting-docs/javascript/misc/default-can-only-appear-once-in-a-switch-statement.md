@@ -1,14 +1,9 @@
 ---
-title: '&#39; par défaut &#39; ne peut apparaître qu’une seule fois dans un &#39; commutateur &#39; instruction | Documents Microsoft'
-ms.custom: ''
+title: "'default' ne peut apparaître qu’une seule fois dans une instruction 'switch' | Microsoft Docs"
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1027
 dev_langs:
@@ -16,23 +11,22 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: a94100f4-6ee5-4759-b635-9d309e47111e
-caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1e60dd1ce6b4102ab856cd3d45416175c7030e8d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a5d31a74900e8eee5daa97bb7f9af5146b237e04
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633099"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842180"
 ---
-# <a name="39default39-can-only-appear-once-in-a-39switch39-statement"></a>&#39; par défaut &#39; ne peut apparaître qu’une seule fois dans un &#39; commutateur &#39; instruction
+# <a name="default-can-only-appear-once-in-a-switch-statement"></a>'default' ne peut apparaître qu'une fois dans une instruction 'switch'
 Vous avez tenté d’utiliser le **par défaut** instruction plusieurs fois dans une instruction switch. Le cas par défaut est toujours la dernière instruction case dans une instruction switch (c’est le cas de passage).  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
--   Supprimer les supplémentaire **par défaut** cas les instructions à partir de votre `switch` instruction (utilisez à la plupart des instruction case une valeur par défaut dans votre instruction switch).  
+-   Supprimez les supplémentaire **par défaut** cas les instructions à partir de votre `switch` instruction (utilisez à la plupart des instruction case par défaut dans votre instruction switch).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Instruction switch](../../javascript/reference/switch-statement-javascript.md)   

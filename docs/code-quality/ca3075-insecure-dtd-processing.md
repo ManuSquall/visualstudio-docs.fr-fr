@@ -1,23 +1,21 @@
 ---
-title: 'CA3075 : traitement DTD non sécurisé'
+title: 'CA3075 : Traitement DTD non sécurisé'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 65798d66-7a30-4359-b064-61a8660c1eed
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b83fbf98143511bac19bef1fb2b528c71517a55f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ec4ea49b9b5563382786b5cf83f577e0b8e96386
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823007"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921404"
 ---
-# <a name="ca3075-insecure-dtd-processing"></a>CA3075 : traitement DTD non sécurisé
+# <a name="ca3075-insecure-dtd-processing"></a>CA3075 : Traitement DTD non sécurisé
 
 |||
 |-|-|

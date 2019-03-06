@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::GetLanguage | Documents Microsoft
+title: IScriptNode::GetLanguage | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 10bab879574f378a1000c398a8f566eea7dd9b4b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1639d1f956413545d82f79af3e6b310b20af564e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733719"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089581"
 ---
 # <a name="iscriptnodegetlanguage"></a>IScriptNode::GetLanguage
 Retourne le langage de script qui est utilisé par le nœud de script actuel.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetLanguage(  
    BSTR               *pbstr  
 );  
@@ -38,16 +38,16 @@ HRESULT GetLanguage(
   
 #### <a name="parameters"></a>Paramètres  
  `pbstr`  
- [out] Retourne « JScript » si le nœud de script utilise JScript ou « VBScript » si le nœud de script utilise Visual Basic Scripting Edition (VBScript).  
+ [out] Retourne « JScript » si le nœud de script utilise JScript, ou « VBScript » si le nœud de script utilise Visual Basic Scripting Edition (VBScript).  
   
 ## <a name="return-value"></a>Valeur de retour  
  Élément `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IScriptNode](../../winscript/reference/iscriptnode-interface.md)

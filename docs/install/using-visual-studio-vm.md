@@ -2,10 +2,8 @@
 title: Utilisation de Visual Studio sur une machine virtuelle Azure
 titleSuffix: ''
 description: En savoir plus sur l’utilisation de Visual Studio sur une machine virtuelle Azure
-ms.date: 09/12/2018
-ms.technology: vs-acquisition
+ms.date: 02/19/2019
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - azure services
@@ -14,15 +12,15 @@ helpviewer_keywords:
 - visual studio
 author: PhilLee-MSFT
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc3ceb0caa8e5b8e135c2fad3bbab28c51773ae6
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 12d99cf2e15bf1d806035598f9c92b5ed3319d25
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159969"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450397"
 ---
 # <a id="top"> </a> Images Visual Studio sur Azure
 
@@ -32,13 +30,13 @@ Vous découvrez Azure ? [Créez un compte Azure gratuit](https://azure.microsoft
 
 ## <a name="what-configurations-and-versions-are-available"></a>Quelles sont les configurations et les versions disponibles ?
 
-Sur la Place de marché Microsoft Azure, vous trouverez des images des versions principales les plus récentes : Visual Studio 2017 et Visual Studio 2015. Pour chaque version principale, la version (RTW) publiée d’origine et les versions mises à jour les plus récentes s’affichent. Chacune de ces versions propose les éditions Visual Studio Enterprise et Visual Studio Community. Ces images sont mises à jour au moins une fois par mois afin d’inclure les dernières mises à jour de Visual Studio et Windows. Bien que les noms des images ne changent pas, la description de chaque image inclut la version du produit installée et la date de « référence » de l’image.
+Sur la Place de marché Microsoft Azure, vous trouverez des images des versions principales les plus récentes : Visual Studio 2017 et Visual Studio 2015.  Nous avons récemment ajouté la prise en charge des versions préliminaires de la prochaine version majeure, Visual Studio 2019.  Pour chaque version principale publiée, la version publiée d’origine (RTW) et les dernières versions mises à jour s’affichent.  Chacune de ces versions propose les éditions Visual Studio Enterprise et Visual Studio Community.  Ces images sont mises à jour au moins une fois par mois afin d’inclure les dernières mises à jour de Visual Studio et Windows.  Bien que les noms des images ne changent pas, la description de chaque image inclut la version du produit installée et la date de « référence » de l’image.
 
 | Version commerciale                                              | Éditions                     |     Version du produit      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|   Visual Studio 2019 : Préversion (Preview 1)                   |           Entreprise         | Version 16.0.0 Preview 1 |
-| Visual Studio 2017 : Dernière version (version 15.9)                    |    Enterprise, Community     |      Version 15.9.0      |
-|         Visual Studio 2017 : RTW                              |    Enterprise, Community     |      Version 15.0.18     |
+|    Visual Studio 2019 : Préversion (préversion 3)                   |           Entreprise         | Version 16.0.0 Préversion 3 |
+| Visual Studio 2017 : Dernière version (version 15.9)                    |    Enterprise, Community     |      Version 15.9.7      |
+|         Visual Studio 2017 : RTW                              |    Enterprise, Community     |      Version 15.0.20     |
 |   Visual Studio 2015 : Dernière version (Mise à jour 3)                      |    Enterprise, Community     |  Version 14.0.25431.01   |
 |         Visual Studio 2015 : RTW                              |             Aucun.             | (Expirée pour la maintenance)  |
 
@@ -53,7 +51,7 @@ Chaque image contient l’ensemble de fonctionnalités recommandé pour cette é
 
 * Toutes les charges de travail disponibles, y compris les composants facultatifs recommandés de cette charge de travail
 * Kits SDK .NET 4.6.2 et .NET 4.7, packs de ciblage et outils de développement
-* Visual F#
+* Visual F#
 * Extension GitHub pour Visual Studio
 * Outils LINQ to SQL
 

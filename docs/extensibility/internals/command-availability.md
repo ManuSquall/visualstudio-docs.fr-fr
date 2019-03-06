@@ -1,8 +1,6 @@
 ---
 title: Commande disponibilité | Microsoft Docs
 ms.date: 03/22/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, context
@@ -10,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: c74e3ccf-d771-48c8-a2f9-df323b166784
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98250763f504bc7d142f15e559334f296a2e026b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: ae72a9f8ed20840da958c3c9314c8f25aada801f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511132"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625619"
 ---
 # <a name="command-availability"></a>Disponibilité de la commande
 
@@ -32,15 +30,15 @@ Les contextes de commande suivants sont les plus courantes :
 
 - VSPackage : VSPackages peut définir lorsque les commandes sont à être affiché ou masqué.
 
-- Projet : Commandes de projet s’affichent uniquement pour le projet actuellement sélectionné.
+- Projet : Commandes de projet s’affichent uniquement pour le projet sélectionné actuellement.
 
 - Éditeur : Éditeur qu’une seule peut être actif à la fois. Commandes à partir de l’éditeur actif sont disponibles. Un éditeur travaille en étroite collaboration avec un service de langage. Le service de langage doit traiter ses commandes dans le contexte de l’éditeur associé.
 
-- Type de fichier : un éditeur peut charger plusieurs types de fichier. Les commandes disponibles peuvent varier selon le type de fichier.
+- Type de fichier : Un éditeur peut charger plusieurs types de fichier. Les commandes disponibles peuvent varier selon le type de fichier.
 
-- La fenêtre active : la dernière fenêtre de document actif définit le contexte d’interface (UI) utilisateur pour les combinaisons de touches. Toutefois, une fenêtre outil qui a une table de clé de liaison qui ressemble à du navigateur web interne peut également définir le contexte d’interface utilisateur. Pour les fenêtres de document à plusieurs onglets tels que l’éditeur HTML, chaque onglet possède un contexte de commande autre GUID. Après avoir enregistré une fenêtre outil, il est toujours disponible sur le **vue** menu.
+- Fenêtre active : La dernière fenêtre de document actif définit le contexte d’interface (UI) utilisateur pour les combinaisons de touches. Toutefois, une fenêtre outil qui a une table de clé de liaison qui ressemble à du navigateur web interne peut également définir le contexte d’interface utilisateur. Pour les fenêtres de document à plusieurs onglets tels que l’éditeur HTML, chaque onglet possède un contexte de commande autre GUID. Après avoir enregistré une fenêtre outil, il est toujours disponible sur le **vue** menu.
 
-- Contexte d’interface utilisateur : contextes d’interface utilisateur sont identifiées par les valeurs de la <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT> de classe, par exemple, <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid> lorsque la solution est en cours de génération, ou <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid> lorsque le débogueur est actif. Plusieurs contextes d’interface utilisateur peuvent être actives en même temps.
+- Contexte d’interface utilisateur : Contextes d’interface utilisateur sont identifiées par les valeurs de la <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT> de classe, par exemple, <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid> lorsque la solution est en cours de génération, ou <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid> lorsque le débogueur est actif. Plusieurs contextes d’interface utilisateur peuvent être actives en même temps.
 
 ## <a name="define-custom-context-guids"></a>Définir le GUID de contexte personnalisé
 
@@ -51,7 +49,7 @@ Si un contexte de la commande appropriée que GUID n’est pas déjà défini, v
 2.  Obtenir l’état d’un GUID de contexte en appelant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> (méthode).
 
 3.  Activer et désactiver les GUID de contexte en appelant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> (méthode).
-   
+
 > [!CAUTION]
 > Assurez-vous que votre VSPackage n’affecte pas les GUID de contexte existant, car d’autres packages VS dépendent les.
 

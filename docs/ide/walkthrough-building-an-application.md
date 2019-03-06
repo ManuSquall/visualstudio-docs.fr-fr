@@ -1,22 +1,21 @@
 ---
-title: 'Procédure pas à pas : générer une application'
+title: 'Procédure pas à pas : Générer une application'
 ms.date: 09/25/2017
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2987df6c8ed8a26c2cf95020e26f67c36721d676
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 31806b05dc088da2e4cb5920f28a2e4cd04f0053
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672780"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954125"
 ---
-# <a name="walkthrough-build-an-application"></a>Procédure pas à pas : générer une application
+# <a name="walkthrough-build-an-application"></a>Procédure pas à pas : Générer une application
 
 Avec cette procédure pas à pas, vous allez vous familiariser avec plusieurs options qu’il est possible de configurer lors de la génération d’applications avec Visual Studio. Vous allez créer une configuration de build personnalisée, masquer certains messages d’avertissement et afficher davantage d’informations de sortie de build dans un exemple d’application.
 
@@ -26,7 +25,7 @@ Téléchargez l’exemple [Introduction to Building WPF Applications](https://co
 
 ## <a name="create-a-custom-build-configuration"></a>Créer une configuration de build personnalisée
 
-Lorsque vous créez une solution, les configurations de build Debug et Release, et leurs plateformes cibles par défaut, sont automatiquement définies pour la solution. Vous pouvez ensuite personnaliser ces configurations ou créer les vôtres. Les configurations de build spécifient le type de build. Les plateformes de build spécifient le système d’exploitation qui est ciblé par une application pour cette configuration. Pour plus d’informations, consultez [Présentation des configurations de build](../ide/understanding-build-configurations.md), [Présentation des plateformes de build](../ide/understanding-build-platforms.md) et [Comment : définir des configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md).
+Lorsque vous créez une solution, les configurations de build Debug et Release, et leurs plateformes cibles par défaut, sont automatiquement définies pour la solution. Vous pouvez ensuite personnaliser ces configurations ou créer les vôtres. Les configurations de build spécifient le type de build. Les plateformes de build spécifient le système d’exploitation qui est ciblé par une application pour cette configuration. Pour plus d’informations, consultez [Présentation des configurations de build](../ide/understanding-build-configurations.md), [Présentation des plateformes de build](../ide/understanding-build-platforms.md) et [Guide pratique pour Définir des configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md).
 
 Vous pouvez modifier ou créer des configurations et des paramètres de plateforme dans la boîte de dialogue **Gestionnaire de configurations**. Dans cette procédure, vous allez créer une configuration de build à des fins de test.
 
@@ -130,7 +129,7 @@ Vous pouvez temporairement masquer certains messages d’avertissement pendant l
 
    ![Fenêtre Sortie, Avertissement sur la génération Visual Basic](../ide/media/buildwalk_visualbasicbuildwarnings.png)
 
-   Pour plus d’informations, consultez [Guide pratique pour supprimer les avertissements du compilateur](../ide/how-to-suppress-compiler-warnings.md).
+   Pour plus d'informations, voir [Procédure : supprimer les avertissements du compilateur](../ide/how-to-suppress-compiler-warnings.md).
 
 ## <a name="display-additional-build-details-in-the-output-window"></a>Afficher des informations de génération supplémentaires dans la fenêtre Sortie
 
@@ -162,13 +161,13 @@ Vous pouvez modifier la quantité d’informations relatives au processus de gé
     > [!TIP]
     > Pour effectuer une recherche dans la fenêtre **Sortie**, affichez la boîte de dialogue **Rechercher** en appuyant sur les touches**Ctrl**+**F**.
 
-Pour plus d’informations, consultez [Comment : afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md).
+Pour plus d'informations, voir [Procédure : afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md).
 
 ## <a name="create-a-release-build"></a>Créer une version Release
 
 Vous pouvez créer une version de l’exemple d’application qui soit optimisée pour sa livraison. Pour la version Release, vous allez spécifier que le fichier exécutable doit être copié vers un partage réseau avant que la génération ne démarre.
 
-Pour plus d’informations, consultez [Guide pratique pour modifier le répertoire de sortie de la génération](../ide/how-to-change-the-build-output-directory.md) et [Générer et nettoyer des projets et des solutions dans Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md).
+Pour plus d'informations, voir [Procédure : Changer le répertoire de sortie de build](../ide/how-to-change-the-build-output-directory.md) et [Générer et nettoyer des projets et des solutions dans Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md).
 
 ### <a name="specify-a-release-build-for-visual-basic"></a>Spécifier une version Release pour Visual Basic
 
@@ -224,6 +223,6 @@ Félicitations ! La procédure pas à pas est terminée.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Procédure pas à pas : générer un projet (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
+- [Procédure pas à pas : Générer un projet (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
 - [Présentation de la précompilation de projets d’application web ASP.NET](/previous-versions/aspnet/aa983464\(v\=vs.110\))
-- [Procédure pas à pas : utiliser MSBuild](../msbuild/walkthrough-using-msbuild.md)
+- [Procédure pas à pas : Utiliser MSBuild](../msbuild/walkthrough-using-msbuild.md)

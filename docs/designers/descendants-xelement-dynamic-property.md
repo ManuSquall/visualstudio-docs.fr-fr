@@ -1,21 +1,19 @@
 ---
 title: Descendants (propriété dynamique XElement)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: reference
 ms.assetid: 9611d00f-23bf-444b-ab0c-f30701bfc13d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7255753445d014b1ab59f6e2e8143b341b28a892
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: fa3bf24178f1096cd05e8471c18f466fdd8ee17f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890251"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55914251"
 ---
 # <a name="descendants-xelement-dynamic-property"></a>Descendants (propriété dynamique XElement)
 

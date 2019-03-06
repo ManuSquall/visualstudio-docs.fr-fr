@@ -3,12 +3,8 @@ title: Utilisez les paramètres de ligne de commande pour installer Visual Studi
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-install
+ms.topic: conceptual
 f1_keywords:
 - command-line parameters
 - switches
@@ -17,13 +13,13 @@ ms.assetid: 480f3cb4-d873-434e-a8bf-82cff7401cf2
 caps.latest.revision: 10
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: e84d9d7bde30ab781da2f135c94baf74b697e567
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: cd61d03b5639038612e305697f4245e582ee3efe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059137"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794037"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Utiliser les paramètres de ligne de commande pour installer Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,14 +37,14 @@ Quand vous installez Visual Studio 2015 à partir d’une invite de commandes, 
 |Paramètre|Description|
 |---------------|-----------------|
 |**/?**<br /><br /> **/help**<br /><br /> **/h**|Affiche les paramètres de la ligne de commande.|
-|**/ AddRemoveFeatures**|Spécifie les fonctionnalités à ajouter ou à supprimer du produit installé.|
-|**/ AdminFile** *AdminDeployment.xml*|Installe Visual Studio à l'aide du fichier de données que vous avez spécifié pour l'installation administrative.|
-|**/ /Chainingpackage** *BundleName*|Spécifie le groupe qui effectue le chaînage vers ce groupe. Peut également servir à spécifier une cohorte d'amélioration de l'expérience utilisateur.|
+|**/AddRemoveFeatures**|Spécifie les fonctionnalités à ajouter ou à supprimer du produit installé.|
+|**/AdminFile** *AdminDeployment.xml*|Installe Visual Studio à l'aide du fichier de données que vous avez spécifié pour l'installation administrative.|
+|**/ChainingPackage** *BundleName*|Spécifie le groupe qui effectue le chaînage vers ce groupe. Peut également servir à spécifier une cohorte d'amélioration de l'expérience utilisateur.|
 |**/Createadminfile \<filename >**|Spécifie l'emplacement pour créer un fichier de contrôle qui peut être utilisé avec /AdminFile|
-|**/ /Custominstallpath** *InstallationDirectory*|Installe tous les packages reciblables dans le répertoire que vous spécifiez.|
-|**/ ForceRestart**|Redémarre toujours l'ordinateur après l'installation.|
+|**/CustomInstallPath** *InstallationDirectory*|Installe tous les packages reciblables dans le répertoire que vous spécifiez.|
+|**/ForceRestart**|Redémarre toujours l'ordinateur après l'installation.|
 |**/full**|Installe toutes les fonctionnalités du produit.|
-|**/Installselectableitems \<nom de l’élément 1 > [ ;\< nom de l’élément 2 >]**|Liste d’éléments de l’arborescence de sélection à cocher sur l’écran de sélection de l’Assistant Installation.|
+|**/InstallSelectableItems \<nom de l’élément 1>[;\<nom de l’élément 2>]**|Liste d’éléments de l’arborescence de sélection à cocher sur l’écran de sélection de l’Assistant Installation.|
 |**/l**<br /><br /> **/ Journal** *nom de fichier*|Spécifie l'emplacement du fichier journal.|
 |**/ Layout** *directory*|Copie les fichiers sur le média d'installation dans le répertoire que vous spécifiez.|
 |**/NoCacheOnlyMode**|Empêche le préremplissage du cache du package.|
@@ -63,7 +59,7 @@ Quand vous installez Visual Studio 2015 à partir d’une invite de commandes, 
 |**/repair**|Répare Visual Studio.|
 |**/SuppressRefreshPrompt**|Empêche l'affichage de la boîte de dialogue des mises à jour disponibles dans l'Assistant Installation. Ce dernier accepte donc automatiquement toute version mise à jour requise ou recommandée.|
 |**/u**<br /><br /> **/Uninstall**|Désinstalle [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
-|**/ Désinstallation/force**<br /><br /> **/u /force**|Désinstalle Visual Studio et toutes les fonctionnalités partagées avec d’autres produits. **Avertissement :**  Si vous utilisez ce paramètre, d'autres produits installés sur le même ordinateur peuvent cesser de fonctionner correctement.|
+|**/Uninstall /Force**<br /><br /> **/u /force**|Désinstalle Visual Studio et toutes les fonctionnalités partagées avec d’autres produits. **Avertissement :** si vous utilisez ce paramètre, autres produits qui sont installés sur le même ordinateur fonctionne plus correctement.|
 
 ## <a name="see-also"></a>Voir aussi
  [Guide de l’administrateur Visual Studio](../install/visual-studio-administrator-guide.md)

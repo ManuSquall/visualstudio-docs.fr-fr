@@ -1,8 +1,6 @@
 ---
-title: Options de la fenêtre Sortie, débogage, boîte de dialogue | Documents Microsoft
-ms.custom: ''
+title: Fenêtre Sortie, débogage, de boîte de dialogue Options | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.options.OutputWindow
@@ -16,27 +14,27 @@ dev_langs:
 ms.assetid: d67387c2-39e9-4790-93bc-e41bff12fb9c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6e339be389e629970a5f9b3bb1813165b1fcc7e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
-ms.translationtype: MT
+ms.openlocfilehash: 9224258a2dfd48cc17ed15f9723e455e225af8b2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572275"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716257"
 ---
 # <a name="output-window-debugging-options-dialog-box"></a>Fenêtre Sortie, Débogage, boîte de dialogue Options
-Vous pouvez spécifier les types d’informations de débogage s’affichent dans le **sortie** fenêtre. Pour afficher ces options, ouvrez le **outils** menu, cliquez sur **Options**, développez le **débogage** nœud, puis cliquez sur **fenêtre sortie**.
+Vous pouvez spécifier les types d’informations de débogage qui apparaissent dans la fenêtre **Sortie**. Pour afficher ces options, ouvrez le menu **Outils**, cliquez sur **Options**, développez le nœud **Débogage** et cliquez sur **Fenêtre Sortie**.
 
-**Paramètres généraux de sortie** cette catégorie contient des contrôles qui déterminent si les messages généraux de débogage s’affichent dans le **sortie** fenêtre. Vous pouvez spécifier si chaque type de message doit apparaître.  
+**Paramètres généraux de sortie** cette catégorie contient des contrôles qui déterminent si les messages généraux de débogage s’affichent dans le **sortie** fenêtre. Vous pouvez spécifier si chaque type de message doit apparaître.
 
-**Paramètres de Trace WPF** cette catégorie contient des contrôles qui déterminent le niveau des messages de trace WPF qui s’affichent dans le **sortie** fenêtre. Vous pouvez spécifier si chaque type de message s’affiche et spécifier un niveau allant **critique** à **tous les**.
+**Paramètres de Trace WPF** cette catégorie contient des contrôles qui déterminent le niveau des messages de trace WPF qui apparaissent dans le **sortie** fenêtre. Vous pouvez spécifier si chaque type de message doit apparaître et spécifier un niveau allant de **Critique** à **Tous**.
 
-Pour plus d’informations, consultez [Comment : afficher des informations de Trace WPF](../debugger/how-to-display-wpf-trace-information.md).
+Pour plus d’informations, consultez [Comment : afficher les informations de Trace WPF](../debugger/how-to-display-wpf-trace-information.md).
 
-Si vous avez besoin de restaurer les paramètres par défaut, vous pouvez effectuer à l’aide de ce **outils** > **importation et exportation de paramètres** > **réinitialiser tous les paramètres**. Si vous souhaitez uniquement réinitialiser un sous-ensemble de paramètres, enregistrez vos paramètres dans le **Assistant Importation et exportation paramètres** avant d’apporter les modifications que vous souhaitez tester, puis importer les paramètres enregistrés ultérieurement.
-  
+Si vous avez besoin restaurer les paramètres par défaut, vous pouvez effectuer à l’aide de ce **outils** > **importation et exportation de paramètres** > **réinitialiser tous les paramètres**. Si vous souhaitez uniquement un sous-ensemble de paramètres de réinitialisation, enregistrez vos paramètres dans le **Assistant Importation et exportation paramètres** avant d’apporter les modifications que vous souhaitez tester, puis importer vos paramètres enregistrés ultérieurement.
+
 ## <a name="see-also"></a>Voir aussi
-[Débogage, boîte de dialogue Options](../debugger/debugging-options-dialog-box.md)   
-[Sortie (fenêtre)](../ide/reference/output-window.md)
+- [Débogage, boîte de dialogue Options](../debugger/debugging-options-dialog-box.md)
+- [Sortie (fenêtre)](../ide/reference/output-window.md)

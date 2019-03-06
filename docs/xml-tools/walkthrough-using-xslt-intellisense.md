@@ -1,23 +1,21 @@
 ---
-title: "Procédure pas à pas : utilisation d'IntelliSense XSLT"
+title: 'Procédure pas à pas : Utilisation d’IntelliSense XSLT'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 079d95ac-2eaf-4ae1-9cd3-2c81a961a942
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86a71a70296a3b4e49f2cf7c596a7f71063c8297
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 630e88c01960a6477d586952b0680d53fee62401
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693521"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55915926"
 ---
-# <a name="walkthrough-using-xslt-intellisense"></a>Procédure pas à pas : utilisation d'IntelliSense XSLT
+# <a name="walkthrough-using-xslt-intellisense"></a>Procédure pas à pas : Utilisation d’IntelliSense XSLT
 
 Cette procédure pas à pas montre comment utiliser IntelliSense XSLT pour effectuer la saisie semi-automatique de valeurs de certains attributs.
 

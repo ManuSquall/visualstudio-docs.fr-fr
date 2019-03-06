@@ -1,24 +1,22 @@
 ---
-title: 'Comment : modifier l’espace de noms d’un langage spécifique à un domaine'
+title: 'Procédure : Modifier l’espace de noms d’un langage spécifique à un domaine'
 ms.date: 10/31/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, namespace
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 47e13e8399cba7762ff7443e4fc4cbf3a89375a6
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 16fec4cf6150fe0711812d9fabe57fc667e36eef
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966828"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949191"
 ---
-# <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Comment : modifier l’espace de noms d’un langage spécifique à un domaine
+# <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Procédure : Modifier l’espace de noms d’un langage spécifique à un domaine
 
 Vous pouvez modifier l’espace de noms d’un langage spécifique à un domaine. Apportez la modification dans le **Explorateur DSL**dans les propriétés du projet de Dsl Package et dans les informations de l’assembly.
 

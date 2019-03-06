@@ -1,47 +1,44 @@
 ---
-title: IDebugSourceServerModule | Documents Microsoft
-ms.custom: ''
+title: IDebugSourceServerModule | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugSourceServerModule interface
 ms.assetid: 38213060-451d-46e6-8b4a-efc123e01a2c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5210b819d78bcec1cac5179ac679cf201279e9fc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c40a2da886b4e999649349d4af306295c87863ff
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116162"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703797"
 ---
 # <a name="idebugsourceservermodule"></a>IDebugSourceServerModule
-Représente les informations du serveur source qui sont contenues dans un fichier PDB.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```  
-IDebugSourceServerModule : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
- Cette interface est implémentée par les moteurs de débogage et consommée par le débogueur de l’interface utilisateur.  
-  
-## <a name="methods"></a>Méthodes  
- Le tableau suivant présente les méthodes de `IDebugSourceServerModule`.  
-  
-|Méthode|Description|  
-|------------|-----------------|  
-|[GetSourceServerData](../../../extensibility/debugger/reference/idebugsourceservermodule-getsourceserverdata.md)|Récupère un tableau d’informations du serveur source.|  
-  
-## <a name="requirements"></a>Spécifications  
- En-tête : Msdbg.h  
-  
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
-  
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+Représente les informations du serveur source qui sont contenues dans un fichier PDB.
+
+## <a name="syntax"></a>Syntaxe
+
+```
+IDebugSourceServerModule : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs
+ Cette interface est implémentée par les moteurs de débogage et utilisée par l’interface utilisateur du débogueur.
+
+## <a name="methods"></a>Méthodes
+ Le tableau suivant présente les méthodes de `IDebugSourceServerModule`.
+
+|Méthode|Description|
+|------------|-----------------|
+|[GetSourceServerData](../../../extensibility/debugger/reference/idebugsourceservermodule-getsourceserverdata.md)|Récupère un tableau d’informations du serveur source.|
+
+## <a name="requirements"></a>Spécifications
+ En-tête : Msdbg.h
+
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll

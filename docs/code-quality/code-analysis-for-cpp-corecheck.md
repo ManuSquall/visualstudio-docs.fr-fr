@@ -1,8 +1,6 @@
 ---
 title: Référence des vérificateurs C++ Core Guidelines
 ms.date: 03/22/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 helpviewer_keywords:
 - code analysis, C++ core check
@@ -12,16 +10,16 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c11386dcd742e64737a4b06f2db9f55145f535d7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 6db375422e4a8d21d9b82cac82a07fed45e7d279
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053384"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796814"
 ---
 # <a name="c-core-guidelines-checker-reference"></a>Référence des vérificateurs C++ Core Guidelines
 
-Cette section répertorie les avertissements de l’outil de vérification des recommandations C++ Core. Pour plus d’informations sur l’analyse du Code, consultez [/Analyze (analyse du Code)](/cpp/build/reference/analyze-code-analysis) et [démarrage rapide : analyse du Code pour C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md).
+Cette section répertorie les avertissements de l’outil de vérification des recommandations C++ Core. Pour plus d’informations sur l’analyse du Code, consultez [/Analyze (analyse du Code)](/cpp/build/reference/analyze-code-analysis) et [démarrage rapide : Analyse du code pour C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md).
 
 > [!NOTE]
 > Certains avertissements appartiennent à plusieurs groupes, et pas tous les avertissements sont marqués d’une rubrique de référence complète.
@@ -67,7 +65,7 @@ Cette section répertorie les avertissements de l’outil de vérification des r
 [C26481 NO_POINTER_ARITHMETIC](C26481.md) n’utilisent des opérations arithmétiques de pointeur. Utilisez span à la place. Consultez [Bounds.1 des recommandations C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).
 
 [C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md).
-L’expression '% expr %' : aucun groupe de DÉSINTÉGRATION de pointeur. Consultez [Bounds.3 des recommandations C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).
+Expression '% expr %' : Aucun tableau de DÉSINTÉGRATION de pointeur. Consultez [Bounds.3 des recommandations C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).
 
 ## <a name="uniquepointer-group"></a>Groupe de UNIQUE_POINTER
 
@@ -97,23 +95,23 @@ L’expression '% expr %' : aucun groupe de DÉSINTÉGRATION de pointeur. Consu
 
 [C26427 NO_GLOBAL_INIT_EXTERNS](C26427.md) initialiseur Global accède à l’objet extern « symbole % ». Consultez [C++ Core Guidelines I.22](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#i22-avoid-complex-initialization-of-global-objects).
 
-[C26444 NO_UNNAMED_RAII_OBJECTS](c26444.md) Évitez sans nom des objets avec la construction personnalisée et la destruction. Consultez [ES.84 : ne (tentez) déclarez une variable locale sans nom](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
+[C26444 NO_UNNAMED_RAII_OBJECTS](c26444.md) Évitez sans nom des objets avec la construction personnalisée et la destruction. Consultez [ES.84 : (Essayez de) déclarez une variable locale sans nom](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
 
 ## <a name="class-group"></a>Groupe de classes
 
 [C26432 DEFINE_OR_DELETE_SPECIAL_OPS](C26432.md) si vous définissez ou supprimez une opération par défaut dans le type '% symbole %', définissez ou supprimez-les tous. Consultez [C++ Core Guidelines C.21](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c21-if-you-define-or-delete-any-default-operation-define-or-delete-them-all).
 
-[C26433 OVERRIDE_EXPLICITLY](c26433.md) fonction '% symbole %' doit être marquée avec 'override'. Consultez [C.128 : fonctions virtuelles doivent spécifier un seul de virtuel, substitution, ou final](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c128-virtual-functions-should-specify-exactly-one-of-virtual-override-or-final).
+[C26433 OVERRIDE_EXPLICITLY](c26433.md) fonction '% symbole %' doit être marquée avec 'override'. Consultez [C.128 : Fonctions virtuelles doivent spécifier un seul de virtuel, substitution, ou final](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c128-virtual-functions-should-specify-exactly-one-of-virtual-override-or-final).
 
 [C26434 DONT_HIDE_METHODS](C26434.md) fonction '% symbol_1 %' masque une fonction non virtuelle '% symbol_2 %'. Consultez [C++ Core Guidelines C.128](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c128-virtual-functions-should-specify-exactly-one-of-virtual-override-or-final).
 
-[C26435 SINGLE_VIRTUAL_SPECIFICATION](c26435.md) fonction '% symbole %' doit spécifier un seul 'virtual', 'override' ou 'final'. Consultez [C.128 : fonctions virtuelles doivent spécifier un seul de virtuel, substitution, ou final](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
+[C26435 SINGLE_VIRTUAL_SPECIFICATION](c26435.md) fonction '% symbole %' doit spécifier un seul 'virtual', 'override' ou 'final'. Consultez [C.128 : Fonctions virtuelles doivent spécifier un seul de virtuel, substitution, ou final](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
 
 
 [C26436 NEED_VIRTUAL_DTOR](C26436.md) le type '% symbole % avec une fonction virtuelle a besoin d’un destructeur non virtuel public virtuel ou protégé. Consultez [C++ Core Guidelines C.35](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c35-a-base-class-destructor-should-be-either-public-and-virtual-or-protected-and-nonvirtual).
 
 
-[C26443 NO_EXPLICIT_DTOR_OVERRIDE](c26443.md) destructeur de substitution n’employez pas explicites 'override' ou 'virtual' spécificateurs. Consultez [C.128 : fonctions virtuelles doivent spécifier un seul de virtuel, substitution, ou final](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
+[C26443 NO_EXPLICIT_DTOR_OVERRIDE](c26443.md) destructeur de substitution n’employez pas explicites 'override' ou 'virtual' spécificateurs. Consultez [C.128 : Fonctions virtuelles doivent spécifier un seul de virtuel, substitution, ou final](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
 
 
 ## <a name="type-group"></a>TYPE de groupe
@@ -131,7 +129,7 @@ L’expression '% expr %' : aucun groupe de DÉSINTÉGRATION de pointeur. Consu
 [C26440 DECLARE_NOEXCEPT](C26440.md) pouvez déclarer la fonction '% symbole %' `noexcept`. Consultez [C++ Core Guidelines F.6](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept).
 
 [C26447 DONT_THROW_IN_NOEXCEPT](c26447.md) la fonction est déclarée **noexcept** mais appelle une fonction qui peut lever des exceptions.
-Consultez [C++ Core Guidelines : F.6 : Si votre fonction ne peut pas lever, déclarer noexcept](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept).
+Consultez [C++ Core Guidelines :  F.6 : Si votre fonction ne peut pas lever, déclarer noexcept](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept).
 
 ## <a name="concurrency-group"></a>Groupe d’accès concurrentiel
 
@@ -141,7 +139,7 @@ Consultez [C++ Core Guidelines : F.6 : Si votre fonction ne peut pas lever, d�
 
 [C26460 USE_CONST_REFERENCE_ARGUMENTS](c26460.md) l’argument de référence '% argument %' pour la fonction 'fonction %' peut être marquée comme `const`. Consultez [. con.3 les instructions de base C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref).
 
-[C26461 USE_CONST_POINTER_ARGUMENTS](c26461.md): l’argument de pointeur 'argument %' pour la fonction 'fonction %' peut être marquée comme un pointeur vers `const`. Consultez [. con.3 les instructions de base C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref).
+[C26461 USE_CONST_POINTER_ARGUMENTS](c26461.md): L’argument de pointeur 'argument %' pour la fonction 'fonction %' peut être marquée comme un pointeur vers `const`. Consultez [. con.3 les instructions de base C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref).
 
 [C26462 USE_CONST_POINTER_FOR_VARIABLE](c26462.md) la valeur indiquée par « %variable% » est assignée une seule fois, marquez-la comme étant un pointeur vers `const`. Consultez [C++ Core instructions con.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).
 
@@ -185,7 +183,7 @@ Consultez [C++ Core Guidelines : F.6 : Si votre fonction ne peut pas lever, d�
 
 ## <a name="bounds-group"></a>Groupe de limites
 
-[C26446 USE_GSL_AT](c26446.md) préfèrent utiliser `gsl::at()` au lieu d’un opérateur d’indice. Consultez [C++ Core Guidelines : Bounds.4 : n’utilisez pas les fonctions de bibliothèque standard et les types qui ne sont pas vérifiées de limites](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
+[C26446 USE_GSL_AT](c26446.md) préfèrent utiliser `gsl::at()` au lieu d’un opérateur d’indice. Consultez [C++ Core Guidelines :  Bounds.4 : N’utilisez pas les fonctions de bibliothèque standard et les types qui ne sont pas vérifiées de limites](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
 [C26481 NO_POINTER_ARITHMETIC](C26481.md).
 N’utilisez pas opérations arithmétiques de pointeur. Utilisez span à la place. Consultez [Bounds.1 des recommandations C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
@@ -194,19 +192,19 @@ N’utilisez pas opérations arithmétiques de pointeur. Utilisez span à la pla
 
 [C26483 STATIC_INDEX_OUT_OF_RANGE](c26483.md) valeur %value% est en dehors des limites (0, liée %) de la variable « %variable% ». Uniquement des index à l’aide d’expressions constantes situées dans les limites du tableau de tableaux. Consultez [Bounds.2 des recommandations C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
 
-[C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md) Expression '% expr %' : aucun groupe de DÉSINTÉGRATION de pointeur. Consultez [Bounds.3 des recommandations C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
+[C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md) Expression '% expr %' : Aucun tableau de DÉSINTÉGRATION de pointeur. Consultez [Bounds.3 des recommandations C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
 
 ## <a name="gsl-group"></a>Groupe de GSL
 
 [C26445 NO_SPAN_REF](c26445.md) une référence à `gsl::span` ou `std::string_view` peut être une indication d’un problème de durée de vie.
-Consultez [GSL.view des recommandations C++ Core : vues](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views)
+Consultez [GSL.view des recommandations C++ Core : Affichage](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views)
 
-[C26446 USE_GSL_AT](c26446.md) préfèrent utiliser `gsl::at()` au lieu d’un opérateur d’indice. Consultez [C++ Core Guidelines : Bounds.4 : n’utilisez pas les fonctions de bibliothèque standard et les types qui ne sont pas vérifiées de limites](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
+[C26446 USE_GSL_AT](c26446.md) préfèrent utiliser `gsl::at()` au lieu d’un opérateur d’indice. Consultez [C++ Core Guidelines :  Bounds.4 : N’utilisez pas les fonctions de bibliothèque standard et les types qui ne sont pas vérifiées de limites](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
-[C26448 USE_GSL_FINALLY ](c26448.md) envisagez d’utiliser `gsl::finally` si l’action finale est destinée. Consultez [C++ Core Guidelines : GSL.util : utilitaires](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities).
+[C26448 USE_GSL_FINALLY](c26448.md) envisagez d’utiliser `gsl::finally` si l’action finale est destinée. Consultez [C++ Core Guidelines :  GSL.util : Utilitaires](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities).
 
 [C26449 NO_SPAN_FROM_TEMPORARY](c26449.md) 
- `gsl::span` ou `std::string_view` créé à partir d’une table temporaire ne sont pas valides lorsque temporaire est invalidée. Consultez [C++ Core Guidelines : GSL.view : vues](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views).
+ `gsl::span` ou `std::string_view` créé à partir d’une table temporaire ne sont pas valides lorsque temporaire est invalidée. Consultez [C++ Core Guidelines : GSL.view : Vues](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views).
 
 
 ## <a name="deprecated-warnings"></a>Avertissements déconseillées

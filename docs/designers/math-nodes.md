@@ -1,21 +1,19 @@
 ---
 title: Nœuds mathématiques
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: reference
 ms.assetid: adc225cc-1cf5-4f7c-9b00-e7ac8450b6b9
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 793f8ed4538568d588b4980226606d6cd1a6545a
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 43809923b730800cfa71185b136743f3098239e1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978201"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952090"
 ---
 # <a name="math-nodes"></a>Nœuds mathématiques
 

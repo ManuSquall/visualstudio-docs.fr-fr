@@ -1,14 +1,9 @@
 ---
 title: 'Procédure : Personnaliser des menus et des barres d’outils'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.renametoolbar
 - vs.customize.toolbars
@@ -32,15 +27,15 @@ ms.assetid: b570ae2f-5302-45dc-9cc9-8d4d1ad50603
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3196aac35a05d915f1f4c3b58547e0787e9a1afc
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: b492764c6d872ff8f2568b4abcbeefe133ee23c9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066702"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795431"
 ---
-# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Procédure : Personnaliser des Menus et barres d’outils dans Visual Studio
+# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Procédure : Personnaliser les menus et les barres d’outils dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez personnaliser Visual Studio non seulement en ajoutant et en supprimant des barres d'outils et des menus dans la barre de menus, mais aussi en ajoutant et en supprimant des commandes dans une barre d'outils ou un menu quelconques.
@@ -96,7 +91,7 @@ Vous pouvez personnaliser Visual Studio non seulement en ajoutant et en supprima
          Vous pouvez également faire glisser le bord gauche d'une barre d'outils pour placer cette dernière n'importe où dans la zone d'ancrage principale.
 
         > [!NOTE]
-        >  Pour plus d’informations sur la façon d’améliorer la facilité d’utilisation et l’accessibilité des barres d’outils, consultez [Comment : définir les Options d’accessibilité IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
+        >  Pour plus d’informations sur l’amélioration de l’utilisation et de l’accessibilité des barres d’outils, consultez [Guide pratique pour définir les options d’accessibilité de l’IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
 
 ##  <a name="bkmk_customize"></a> Personnalisation d’un menu ou d’une barre d’outils
 

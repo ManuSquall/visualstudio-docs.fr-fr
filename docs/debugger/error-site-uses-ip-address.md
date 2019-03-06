@@ -1,8 +1,6 @@
 ---
-title: 'Erreur : Le Site utilise les adresses IP | Documents Microsoft'
-ms.custom: ''
+title: 'Erreur : Le Site utilise les adresses IP | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.webdbg_siteusesipaddress
@@ -15,28 +13,28 @@ helpviewer_keywords:
 - debugger, Web application errors
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b726902c57cc95b694f2ab7e656a444ed42a0ba9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 57790fce73c96a37c678f32cb76e332c28f73673
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470902"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696504"
 ---
 # <a name="error-site-uses-ip-address"></a>Erreur : le site utilise l'adresse IP
-Cette erreur se produit lorsque le débogueur essaie de s'auto-attacher à une application Web qui utilise une adresse IP. Cela se produit si vous modifiez **identification de site Web** à **utiliser une adresse IP spécifique** dans IIS.  
-  
- Pour que l'auto-attachement fonctionne, vous devez créer le projet avec l'adresse IP spécifique plutôt qu'avec seulement le nom de l'ordinateur. Sinon, le débogueur transformera le nom de l'ordinateur en localhost, ce qui empêchera d'envoyer le verbe de débogage à IIS.  
-  
-### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
-  
-1.  À la place de l’attachement manuel de l’utilisation (dans le menu Déboguer, choisissez **attacher au processus**).  
-  
-     - ou -  
-  
-2.  Modifier la **identification du site Web IIS** paramètre.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Débogage d’applications web : erreurs et dépannage](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+Cette erreur se produit lorsque le débogueur essaie de s'auto-attacher à une application Web qui utilise une adresse IP. C’est le cas si vous transformez **Identification de site web** en **Utiliser une adresse IP spécifique** dans IIS.
+
+ Pour que l'auto-attachement fonctionne, vous devez créer le projet avec l'adresse IP spécifique plutôt qu'avec seulement le nom de l'ordinateur. Sinon, le débogueur transformera le nom de l'ordinateur en localhost, ce qui empêchera d'envoyer le verbe de débogage à IIS.
+
+### <a name="to-correct-this-error"></a>Pour corriger cette erreur
+
+1.  Utilisez plutôt la procédure d’attachement manuel (dans le menu Déboguer, choisissez **Attacher au processus**).
+
+     - ou -
+
+2.  Modifiez le paramètre **Identification de site web d’IIS**.
+
+## <a name="see-also"></a>Voir aussi
+- [Débogage d’applications web : erreurs et dépannage](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

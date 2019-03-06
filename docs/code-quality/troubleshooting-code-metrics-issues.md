@@ -1,21 +1,19 @@
 ---
 title: Résolution des problèmes liés à la métrique du code
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: troubleshooting
 ms.assetid: f2fdb995-4888-4246-85dc-7bacadd45968
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef7078b09b1bf2382e1c91878995772d80bfa625
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5903494097ed954eebecc80f98a641cc7f4fa95f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853959"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956114"
 ---
 # <a name="troubleshooting-code-metrics-issues"></a>Résolution des problèmes liés à la métrique du code
 Vous pouvez rencontrer certains des problèmes suivants quand vous collectez des métriques du code :
@@ -30,4 +28,4 @@ Vous pouvez rencontrer certains des problèmes suivants quand vous collectez des
 - La fonction contient une instruction switch (Select Case dans VB). Des différences de compilateur entre [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] et les versions antérieures peuvent générer un code MSIL différent pour certaines instructions switch qui contiennent des éléments case avec fallthrough.
 
 ## <a name="see-also"></a>Voir aussi
- [Mesures de la complexité et de la facilité de maintenance du code managé](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+ [Mesures de la complexité et de la facilité de maintenance du code managé](../code-quality/code-metrics-values.md)

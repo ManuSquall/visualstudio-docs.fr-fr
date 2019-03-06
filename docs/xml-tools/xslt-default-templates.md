@@ -1,21 +1,19 @@
 ---
 title: Modèles par défaut XSLT
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 773dd34e-67d3-4997-8df9-b71e7f880d88
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b50a7457ddbae24f2a00e4c631371cb2aeb1169
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d2910a9f81a8bf4bf1e5f25245ad9a3b02adffe1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693953"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55915934"
 ---
 # <a name="xslt-default-templates"></a>Modèles par défaut XSLT
 

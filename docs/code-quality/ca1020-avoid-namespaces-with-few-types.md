@@ -1,8 +1,6 @@
 ---
-title: 'CA1020 : Éviter les espaces de noms comportant peu de types'
+title: 'CA1020 : Éviter les espaces de noms comportant peu de types'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1020
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 9cb272f6-a3ff-45af-b35d-70dea620b074
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc7a691cb5c5626ea096046e277ec3d1655db0b6
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 396208b9594e46aa179c3eebddc5a552ce0fca3c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546218"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916659"
 ---
-# <a name="ca1020-avoid-namespaces-with-few-types"></a>CA1020 : Éviter les espaces de noms comportant peu de types
+# <a name="ca1020-avoid-namespaces-with-few-types"></a>CA1020 : Éviter les espaces de noms comportant peu de types
 
 |||
 |-|-|

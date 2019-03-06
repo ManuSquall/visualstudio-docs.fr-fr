@@ -1,14 +1,9 @@
 ---
 title: Informations de référence sur les tâches MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: b3144b27-a426-4259-b8ae-5f7991b202b6
 caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b6f1767ce1c572e1e3d8eacae8ba3a60f3593476
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5bd6df873bf1aadbec4b12763369c60f127819c0
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193986"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834421"
 ---
 # <a name="msbuild-task-reference"></a>Informations de référence sur les tâches MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -235,6 +230,3 @@ Les tâches fournissent le code exécuté pendant le processus de génération. 
  [Référence MSBuild](../msbuild/msbuild-reference.md)   
  [Task Writing (Écriture de tâches)](../msbuild/task-writing.md)   
  [Tâches MSBuild](../msbuild/msbuild-tasks.md)
-
-
-

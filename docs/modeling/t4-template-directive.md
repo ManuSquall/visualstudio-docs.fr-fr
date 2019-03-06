@@ -4,17 +4,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: c3859c9818c4312628ef3d0cf9f3e6277a7ae424
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 88690e57e1781e9fe43b3cf4108c62fab189a988
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389430"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949029"
 ---
 # <a name="t4-template-directive"></a>Directive du modèle T4
 
@@ -37,7 +35,7 @@ Exemple :
 `compilerOptions="optimize+"`
 
 Valeurs valides :
- 
+
 Toutes les options du compilateur valides.
 
 Ignoré pour les modèles au moment de l'exécution (prétraités).
@@ -47,11 +45,11 @@ Ces options sont appliquées lorsque le modèle a été converti en [!INCLUDE[cs
 ## <a name="culture-attribute"></a>attribut de culture
 
 Exemple :
- 
+
 `culture="de-CH"`
 
 Valeurs valides :
- 
+
 "", la culture dite indifférente, qui est la valeur par défaut.
 
 Culture exprimée sous la forme d'une chaîne au format xx-XX. Par exemple, en-US, ja-JP, de-CH, de-DE. Pour plus d'informations, consultez <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
@@ -67,11 +65,11 @@ debug="true"
 ```
 
 Valeurs valides :
- 
+
 `true`
- 
+
 `false` (par défaut)
- 
+
 Si l'attribut `debug` a la valeur `true`, le fichier de code intermédiaire contient des informations qui permettent au débogueur d'identifier plus précisément la position, dans votre modèle, où s'est produit un arrêt ou une exception.
 
 Pour les modèles au moment du design le fichier de code intermédiaire sera écrit pour votre **%temp%** directory.
@@ -89,9 +87,9 @@ hostspecific="true"
 Valeurs valides :
 
 `true`
- 
+
 `false` (par défaut)
- 
+
 `trueFromBase`
 
 Si vous affectez à cet attribut la valeur `true`, une propriété nommée `Host` est ajoutée à la classe générée par votre modèle de texte. La propriété est une référence à l'hôte du moteur de transformation, et est déclarée comme <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Si vous avez défini un hôte personnalisé, vous pouvez effectuer un cast de celui-ci en type d'hôte personnalisé.

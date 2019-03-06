@@ -1,21 +1,18 @@
 ---
-title: Présentation et de diagnostic a provoqué par les extensions de l’interface utilisateur-blocage | Documents Microsoft
-ms.custom: ''
+title: Comprendre et de diagnostic de l’interface utilisateur-absence de réponse causé par les extensions | Microsoft Docs
 ms.date: 01/26/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 author: PooyaZv
 ms.author: pozandev
-manager: douge
+manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: ac962df3bc72d886ffc6d5d495d115abe60d9895
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b8138acda19152306efbd820cbba13e6dbf51b6f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137474"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927383"
 ---
-# <a name="understanding-and-diagnosing-ui-unresponsiveness-caused-by-extensions"></a>Présentation et de diagnostiquer le problème de blocage de l’interface utilisateur a provoqué par les Extensions
+# <a name="understanding-and-diagnosing-ui-unresponsiveness-caused-by-extensions"></a>Compréhension et l’absence de réponse de l’interface utilisateur causé par les Extensions de diagnostic
 
 À remplir.

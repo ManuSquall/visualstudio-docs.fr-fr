@@ -1,8 +1,6 @@
 ---
-title: 'CA2112 : Les types sécurisés ne doivent pas exposer de champs'
+title: 'CA2112 : Les types sécurisés ne doivent pas exposer de champs'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2112
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 9eb13a78-3487-49f2-81d1-3c3866db132f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 538c7ac89643c168086d6bdcb514d88295e482dc
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 2d46c9fe1b97b5bdfb081150a44aa69363eced53
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548325"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922795"
 ---
-# <a name="ca2112-secured-types-should-not-expose-fields"></a>CA2112 : Les types sécurisés ne doivent pas exposer de champs
+# <a name="ca2112-secured-types-should-not-expose-fields"></a>CA2112 : Les types sécurisés ne doivent pas exposer de champs
 
 |||
 |-|-|

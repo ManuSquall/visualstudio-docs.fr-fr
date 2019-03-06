@@ -1,20 +1,18 @@
 ---
 title: Étendre des tests codés de l’interface utilisateur et des enregistrements des actions
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: cbf4d89fc0a32501a2ea275c5168969dd2a0fd19
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 07cdc27cb47a6de46585f573d78b5af00631c2a2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894116"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951187"
 ---
 # <a name="extend-coded-ui-tests-and-action-recordings"></a>Étendre des tests codés de l’interface utilisateur et des enregistrements des actions
 

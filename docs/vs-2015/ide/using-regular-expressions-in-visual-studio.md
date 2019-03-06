@@ -1,14 +1,9 @@
 ---
 title: Utilisation des expressions régulières
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vsregularexpressionhelp
 - vs.regularexpressionhelp
@@ -23,13 +18,13 @@ ms.assetid: 718a617d-0e05-47e1-a218-9746971527f4
 caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 90639e9f3f24a7985255e0a7ea42e303b9917739
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 8ede92874833ca54f44740f518994dac1d6a822f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059429"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774510"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Utiliser des expressions régulières dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +69,7 @@ Voici quelques exemples :
 |                                                                                                           Correspond à n'importe quel espace blanc                                                                                                           |                                                   (?([^\r\n])\s)                                                   |                                                `Public\sInterface` correspond à l’expression "Public Interface".                                                 |
 |                                                                                                             Correspond à n'importe quel caractère numérique                                                                                                             |                                                         \d                                                         |                                                `\d` correspond à "3" dans "3456", à "2" dans "23" et à "1" dans "1".                                                |
 |                                                                                                              Correspond à un caractère Unicode                                                                                                              |                              \uXXXX où XXXX spécifie la valeur du caractère Unicode.                              |                                                            `\u0065` correspond au caractère "e".                                                            |
-|                                                                                                                 Correspond à un identificateur                                                                                                                 |                                         \b (*\w+&#124;[\w-[0-9\\*]] \w\*) \b                                          |                                                       Correspond à « type1 » mais pas à « &type1 » ni « #define ».                                                       |
+|                                                                                                                 Correspond à un identificateur                                                                                                                 |                                         \b(*\w+&#124;[\w-[0-9\\*]]\w\*)\b                                          |                                                       Correspond à « type1 » mais pas à « &type1 » ni « #define ».                                                       |
 |                                                                                                            Correspond à une chaîne entre guillemets                                                                                                             |                                             ((\\".+?\\")&#124;('.+?'))                                             |                                                    Correspond à n'importe quelle chaîne entre apostrophes ou guillemets.                                                     |
 |                                                                                                             Correspond à un nombre hexadécimal                                                                                                              |                                              \b0[xX]([0-9a-fA-F]\)\b                                               |                                                          Correspond à « 0xc67f » mais pas à « 0xc67fc67f ».                                                           |
-|                                                                                                             Correspond à des nombres entiers et décimaux                                                                                                             |                                               \b[0-9]\*\\.\* [0-9] + \b                                               |                                                                     Correspond à « 1,333 ».                                                                      |
+|                                                                                                             Correspond à des nombres entiers et décimaux                                                                                                             |                                               \b[0-9]\*\\.\*[0-9]+\b                                               |                                                                     Correspond à « 1,333 ».                                                                      |

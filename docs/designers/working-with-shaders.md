@@ -1,21 +1,19 @@
 ---
 title: Utilisation des nuanceurs
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 6b2ea1ed-b995-4e75-af19-c68fd37a3bc5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e77085c840a7ef52bdf40d0c0491bfdfc9d384c3
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: d1f07b293447a10a7d39e24ef42b1faedc27c7d6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280197"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934860"
 ---
 # <a name="work-with-shaders"></a>Utiliser des nuanceurs
 

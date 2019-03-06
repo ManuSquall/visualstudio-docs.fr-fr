@@ -8,17 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, deletion
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: a4b3df4661b23268fed811799c80cfc31b624a50
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 35707e715a8f38f7ebe1b508ee1e933f54b09c3e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849149"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939682"
 ---
 # <a name="customizing-deletion-behavior"></a>Personnalisation du comportement de la commande de suppression
 La suppression d'un élément provoque généralement aussi la suppression des éléments associés. Toutes les relations qui y sont connectées et tous les éléments enfants sont supprimés. Ce comportement se nomme *suppression de la propagation*. Vous pouvez personnaliser la propagation de la suppression, par exemple pour que des éléments associés supplémentaires soient supprimés. En écrivant du code de programme, vous pouvez faire en sorte que la propagation de la suppression dépende de l'état du modèle. Vous pouvez aussi provoquer d'autres modifications en réponse à une suppression.
@@ -140,7 +138,7 @@ partial class MusicLibDeleteClosure
 
 2. La méthode <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> est appelée quand l'élément a été supprimé. Il reste dans le tas CLR pour qu'une opération d'annulation puisse être effectuée si nécessaire, mais il n'est plus lié aux autres éléments et est supprimé de `store.ElementDirectory`. Pour les relations, les rôles font toujours référencent les anciens acteurs de rôle.`IsDeleted` a la valeur true.
 
-3. Les méthode OnDeleting et OnDeleted sont appelées quand l'utilisateur appelle l'opération Annuler après avoir créé un élément et quand une suppression précédente est répétée dans Rétablir. Utilisez `this.Store.InUndoRedoOrRollback` pour éviter de mettre à jour les éléments du magasin dans ces cas-là. Pour plus d’informations, consultez [Comment : utiliser les Transactions pour mettre à jour le modèle](../modeling/how-to-use-transactions-to-update-the-model.md).
+3. Les méthode OnDeleting et OnDeleted sont appelées quand l'utilisateur appelle l'opération Annuler après avoir créé un élément et quand une suppression précédente est répétée dans Rétablir. Utilisez `this.Store.InUndoRedoOrRollback` pour éviter de mettre à jour les éléments du magasin dans ces cas-là. Pour plus d'informations, voir [Procédure : Utiliser des Transactions pour mettre à jour le modèle](../modeling/how-to-use-transactions-to-update-the-model.md).
 
    Par exemple, le code suivant supprime un album quand son dernier morceau enfant est supprimé :
 

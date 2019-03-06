@@ -1,9 +1,6 @@
 ---
 title: 'Procédure pas à pas : Ajouter une Page d’Application à un flux de travail | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,20 +10,20 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, adding applications page to workflow
 - application page [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4bdb01e5cbb45b9986e61a99e18b5984e92d37dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 930252a509466fa65a7cbdf2eabac35cfeb25081
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866894"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865828"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Procédure pas à pas : Ajouter une page d’application à un flux de travail
-  Cette procédure pas à pas montre comment ajouter une page d’application qui affiche les données dérivées d’un flux de travail dans un projet de flux de travail. Il s’appuie sur le projet décrit dans la rubrique [procédure pas à pas : créer un flux de travail avec des formulaires d’association et d’initiation](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
+  Cette procédure pas à pas montre comment ajouter une page d’application qui affiche les données dérivées d’un flux de travail dans un projet de flux de travail. Il s’appuie sur le projet décrit dans la rubrique [procédure pas à pas : Créer un flux de travail avec des formulaires d’association et d’initiation](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
  Cette procédure pas à pas décrit les tâches suivantes :
 
@@ -45,14 +42,14 @@ ms.locfileid: "49866894"
 
 -   Visual Studio.
 
--   Vous devez également terminer le projet dans la rubrique [procédure pas à pas : créer un flux de travail avec des formulaires d’association et d’initiation](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
+-   Vous devez également terminer le projet dans la rubrique [procédure pas à pas : Créer un flux de travail avec des formulaires d’association et d’initiation](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
 ## <a name="ammend-the-workflow-code"></a>Ammend le code de flux de travail
  Tout d’abord, ajoutez une ligne de code pour le flux de travail pour définir la valeur de la colonne de résultat à la quantité de la note de frais. Cette valeur est utilisée ultérieurement dans le calcul de résumé de rapport de dépenses.
 
 #### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>Pour définir la valeur de la colonne de résultat dans le flux de travail
 
-1.  Charger le projet terminé à partir de la rubrique [procédure pas à pas : création d’un Workflow avec les formulaires d’Association et Initiation](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1.  Charger le projet terminé à partir de la rubrique [procédure pas à pas : Création d’un Workflow avec les formulaires d’Association et Initiation](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
 2.  Ouvrez le code *Workflow1.cs* ou *Workflow1.vb* (selon votre langage de programmation).
 
@@ -353,6 +350,6 @@ ms.locfileid: "49866894"
 ## <a name="see-also"></a>Voir aussi
 
 - [Procédure pas à pas : Créer un flux de travail avec des formulaires d’association et d’initiation](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)
-- [Comment : créer une page d’application](../sharepoint/how-to-create-an-application-page.md)
+- [Guide pratique pour Créer une page d’application](../sharepoint/how-to-create-an-application-page.md)
 - [Créer des pages d’application pour SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
 - [Développer des solutions SharePoint](../sharepoint/developing-sharepoint-solutions.md)

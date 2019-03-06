@@ -1,14 +1,9 @@
 ---
 title: Création et configuration de membres de type (Concepteur de classes) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdetails.method
 - vs.classdetails.property
@@ -34,13 +29,13 @@ ms.assetid: 42af8738-3738-4ca7-82ff-edf573a68f96
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 93a112fac274921fe2d1075e1a1b9178c408240c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 51e9f831941fff79c42c8e7fc529db3df0d46b0d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827972"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795301"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Création et configuration de membres de type (Concepteur de classes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +63,7 @@ Vous pouvez ajouter ces membres aux types dans un diagramme de classes et config
 |**Créer et modifier les membres de type** : vous pouvez créer d’autres membres, modifier des membres existants et ajouter des paramètres à une méthode à l’aide de la fenêtre Détails de classe.|-   [Création de membres](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers)<br />-   [Modification des membres de type](../ide/creating-and-configuring-type-members-class-designer.md#ModifyTypeMembers)<br />-   [Ajout de paramètres aux méthodes](../ide/creating-and-configuring-type-members-class-designer.md#AddMethodParams)|  
   
 ##  <a name="OpenClassDetails"></a> Ouverture de la fenêtre Détails de classe  
- Par défaut, la fenêtre Détails de classe s’affiche automatiquement quand vous ouvrez un nouveau diagramme de classes (consultez [Guide pratique pour ajouter des diagrammes de classes aux projets (Concepteur de classes)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)). Vous pouvez aussi ouvrir explicitement la fenêtre Détails de classe, comme indiqué ci-après.  
+ Par défaut, la fenêtre Détails de classe s’affiche automatiquement lorsque vous ouvrez un nouveau diagramme de classes (consultez [Comment : ajouter des diagrammes de classes aux projets (Concepteur de classes)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)). Vous pouvez aussi ouvrir explicitement la fenêtre Détails de classe, comme indiqué ci-après.  
   
 #### <a name="to-open-the-class-details-window"></a>Pour ouvrir la fenêtre Détails de classe  
   
@@ -136,7 +131,7 @@ Vous pouvez ajouter ces membres aux types dans un diagramme de classes et config
      **Remarque :** Vous pouvez aussi utiliser des raccourcis clavier pour créer les membres. Pour plus d’informations, consultez [Raccourcis clavier et souris dans le diagramme de classes et dans la fenêtre Détails de classe (Concepteur de classes)](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md).  
   
 ##  <a name="ModifyTypeMembers"></a> Modification des membres de type  
- Le Concepteur de classes permet de modifier les membres de types affichés sur le diagramme. Vous pouvez modifier les membres de n'importe quel type affiché sur un diagramme de classes, à condition que ce type ne soit pas en lecture seule. Consultez [Affichage d’informations en lecture seule (Concepteur de classes)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a). Pour modifier des membres de type, utilisez la modification sur place sur l'aire de conception, la fenêtre Propriétés et la fenêtre Détails de classe.  
+ Le Concepteur de classes permet de modifier les membres de types affichés sur le diagramme. Vous pouvez modifier les membres de n'importe quel type affiché sur un diagramme de classes, à condition que ce type ne soit pas en lecture seule. Consultez [Affichage d’informations en lecture seule (Concepteur de classes)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a). Pour modifier des membres de type, utilisez la modification sur place sur l'aire de conception, la fenêtre Propriétés et la fenêtre Détails de classe.  
   
  Tous les membres affichés dans la fenêtre Détails de classe représentent les membres des types figurant dans le diagramme de classes. Il existe quatre types de membres : les méthodes, les propriétés, les champs et les événements.  
   
@@ -268,7 +263,7 @@ Vous pouvez ajouter ces membres aux types dans un diagramme de classes et config
   
  Toutes les cellules de la fenêtre Détails de classe sont modifiables, à quelques exceptions près :  
   
-- Le type est en lecture seule quand, par exemple, il réside dans un assembly référencé (consultez [Affichage d’informations en lecture seule (Concepteur de classes)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)). Lorsque vous sélectionnez la forme dans le Concepteur de classes, la fenêtre Détails de classe affiche ses détails en lecture seule.  
+- Le type est en lecture seule quand, par exemple, il réside dans un assembly référencé (consultez [Affichage d’informations en lecture seule (Concepteur de classes)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)). Lorsque vous sélectionnez la forme dans le Concepteur de classes, la fenêtre Détails de classe affiche ses détails en lecture seule.  
   
 - Pour les indexeurs, le nom est en lecture seule et le reste (type, modificateur, résumé) est modifiable.  
   

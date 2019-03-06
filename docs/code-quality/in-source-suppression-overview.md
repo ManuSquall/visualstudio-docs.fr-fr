@@ -1,27 +1,25 @@
 ---
 title: Supprimer les avertissements d’analyse du code
-ms.date: 08/03/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
+ms.date: 12/01/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
 - code analysis, source suppression
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e90de7acf13ca28a20a35aa3ad3e70f58780279
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 6cd61304e150da63d2d461ef364e7039789c71fc
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513044"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223084"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Supprimer les avertissements d’analyse du code
 
@@ -35,7 +33,7 @@ En C / c++ / CLI, utilisez les macros autorité de certification\_supprimer\_MES
 > Vous ne devez pas utiliser les suppressions dans la source sur les versions release, pour empêcher les métadonnées de suppression à la source d’expédition accidentellement. En outre, en raison du coût de traitement de la suppression à la source, les performances de votre application peuvent se dégrader.
 
 > [!NOTE]
-> Si vous migrez un projet vers Visual Studio 2017, vous pourrez soudainement être confronté à un grand nombre d’avertissements d’analyse du code. Provenant de ces avertissements [analyseurs de Roslyn](roslyn-analyzers-overview.md). Si vous n’êtes pas prêt à résoudre les avertissements, vous pouvez supprimer tous les en choisissant **analyser** > **exécuter l’analyse du Code et supprimer les problèmes actifs**.
+> Si vous migrez un projet vers Visual Studio 2017 ou Visual Studio 2019, vous pourrez soudainement être confronté à un grand nombre d’avertissements d’analyse du code. Provenant de ces avertissements [analyseurs de Roslyn](roslyn-analyzers-overview.md). Si vous n’êtes pas prêt à résoudre les avertissements, vous pouvez supprimer tous les en choisissant **analyser** > **exécuter l’analyse du Code et supprimer les problèmes actifs**.
 >
 > ![Exécuter l’analyse du code et supprimer des problèmes dans Visual Studio](media/suppress-active-issues.png)
 
@@ -67,17 +65,19 @@ Les propriétés de l’attribut incluent :
 
 - **MessageId** -identificateur Unique d’un problème pour chaque message.
 
-- **Étendue** -la cible sur laquelle l’avertissement est supprimé. Si la cible n’est pas spécifiée, il est défini sur la cible de l’attribut. Étendues prises en charge sont les suivantes :
+- **Étendue** -la cible sur laquelle l’avertissement est supprimé. Si la cible n’est pas spécifiée, il est défini sur la cible de l’attribut. Prise en charge [étendues](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) incluent les éléments suivants :
 
-    - Module
+   - `module`
 
-    - Espace de noms
+   - `resource`
 
-    - Ressource
+   - `type`
 
-    - Type
+   - `member`
 
-    - Membre
+   - `namespace` -Cette étendue supprime les avertissements par rapport à l’espace de noms. Il ne supprime pas les avertissements par rapport aux types dans l’espace de noms.
+
+   - `namespaceanddescendants` -(Nouveauté pour Visual Studio 2019) cette étendue supprime les avertissements dans un espace de noms et tous les symboles de ses descendants. Le `namespaceanddescendants` valeur est uniquement valide pour les analyseurs de Roslyn et est ignorée par binaire, en fonction de FxCop analyse statique.
 
 - **Cible** : un identificateur qui est utilisé pour spécifier la cible sur laquelle l’avertissement est supprimé. Il doit contenir un nom d’élément qualifié complet.
 
@@ -140,7 +140,7 @@ public class Animal
 
 Les compilateurs de code managé et certains des outils tiers génèrent du code pour faciliter le développement de code rapide. Code généré par le compilateur qui s’affiche dans les fichiers sources est généralement signalé par le `GeneratedCodeAttribute` attribut.
 
-Vous pouvez choisir s’il faut supprimer les avertissements d’analyse du code et les erreurs pour le code généré. Pour plus d’informations sur la suppression de ces erreurs et avertissements, consultez [Comment : supprimer les avertissements pour le Code généré](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).
+Vous pouvez choisir s’il faut supprimer les avertissements d’analyse du code et les erreurs pour le code généré. Pour plus d’informations sur la suppression de ces erreurs et avertissements, consultez [Comment : Supprimer les avertissements pour du Code généré](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).
 
 > [!NOTE]
 > Analyse du code ignore `GeneratedCodeAttribute` lorsqu’il est appliqué à un assembly entier ou un paramètre unique.
@@ -152,7 +152,7 @@ L’outil d’analyse du code managé examine `SuppressMessage` attributs qui so
 `[module: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "MyNamespace")]`
 
 > [!NOTE]
-> Lorsque vous supprimez un avertissement avec la portée espace de noms, il supprime l’avertissement par rapport à l’espace de noms. Il ne supprime pas l’avertissement par rapport aux types dans l’espace de noms.
+> Lorsque vous supprimez un avertissement avec `namespace` étendue, il supprime l’avertissement par rapport à l’espace de noms. Il ne supprime pas l’avertissement par rapport aux types dans l’espace de noms.
 
 Toute suppression peut être exprimée en spécifiant une portée explicite. Ces suppressions doivent exister au niveau global. Vous ne pouvez pas spécifier de suppression au niveau membre en décorant un type.
 
@@ -169,5 +169,6 @@ Le fichier de suppression globale conserve les suppressions qui sont des suppres
 
 ## <a name="see-also"></a>Voir aussi
 
+- <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>
 - [Utiliser les analyseurs Roslyn](../code-quality/use-roslyn-analyzers.md)

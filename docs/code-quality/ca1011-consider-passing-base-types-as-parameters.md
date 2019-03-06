@@ -1,8 +1,6 @@
 ---
-title: 'CA1011 : Si possible, transmettez les types de base en tant que paramètres'
+title: 'CA1011 : Si possible, transmettez les types de base en tant que paramètres'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - ConsiderPassingBaseTypesAsParameters
@@ -13,21 +11,21 @@ helpviewer_keywords:
 ms.assetid: ce1e1241-dcf4-419b-9363-1d5bc4989279
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b968a94b76f0b2161eef84fdad2cf01288165e65
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 644c581757a559311b6660a77c4d9190a7361314
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899407"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916555"
 ---
-# <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011 : Si possible, transmettez les types de base en tant que paramètres
+# <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011 : Si possible, transmettez les types de base en tant que paramètres
 
 |||
 |-|-|
@@ -70,4 +68,4 @@ L’exemple suivant montre une méthode, `ManipulateFileStream`, qui peut être 
 
 ## <a name="related-rules"></a>Règles associées
 
-[CA1059 : Les membres ne doivent pas exposer certains types concrets](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)
+[CA1059 : Membres ne doivent pas exposer certains types concrets](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)

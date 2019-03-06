@@ -1,8 +1,6 @@
 ---
 title: Créer et exécuter des tests unitaires pour le code managé
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, walkthrough
@@ -11,18 +9,18 @@ helpviewer_keywords:
 - unit tests, running
 - unit tests, authoring
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 13488619b38f5fd974d793d56f6a8d8cf86f15c1
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 26988b2fd74ae66bd1ef2724c55248371a81adf1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39469111"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922288"
 ---
-# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Procédure pas à pas : créer et exécuter des tests unitaires pour le code managé
+# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Procédure pas à pas : Créer et exécuter des tests unitaires pour le code managé
 
 Cet article décrit la création, l’exécution et la personnalisation d’une série de tests unitaires à l’aide du framework de tests unitaires Microsoft pour le code managé et de **l’explorateur de tests** de Visual Studio. Vous commencez avec un projet C# qui est en développement, vous créez des tests qui utilisent son code, vous exécutez les tests et vous examinez les résultats. Ensuite, vous pouvez modifier le code de votre projet et réexécuter les tests.
 
@@ -84,6 +82,11 @@ public void Debit(double amount)
 
 1. Dans le menu **Fichier**, sélectionnez **Ajouter** > **Nouveau projet**.
 
+   > [!TIP]
+   > Il existe deux autres façons d’ajouter un projet supplémentaire à une solution existante. Vous pouvez cliquer avec le bouton droit sur la solution dans l’**Explorateur de solutions**, puis choisir **Ajouter** > **Nouveau projet**. Vous pouvez aussi sélectionner **Fichier** > **Nouveau** > **Projet** puis, dans la boîte de dialogue **Nouveau projet**, sélectionnez l’option **Ajouter à la solution** :
+   >
+   > ![Option Ajouter à la solution dans la boîte de dialogue Nouveau projet](media/add-to-solution.png)
+
 2. Dans la boîte de dialogue **Nouveau projet**, développez **Installé**, développez **Visual C#**, puis choisissez **Test**.
 
 3. Dans la liste des modèles, sélectionnez **Projet de test unitaire**.
@@ -94,7 +97,7 @@ public void Debit(double amount)
 
 5. Dans le projet **BankTests**, ajoutez une référence au projet **Bank**.
 
-   Dans **l’Explorateur de solutions**, sélectionnez **Références** dans le projet **BankTests**, puis choisissez **Ajouter une référence** dans le menu contextuel.
+   Dans **l’Explorateur de solutions**, sélectionnez **Références** dans le projet **BankTests**, puis choisissez **Ajouter une référence** dans le menu contextuel (clic droit).
 
 6. Dans la boîte de dialogue **Gestionnaire de références**, développez **Solution**, puis cochez l’élément **Bank**.
 
@@ -104,7 +107,7 @@ Créez une classe de test pour vérifier la classe `BankAccount`. Vous pouvez ut
 
 ### <a name="rename-a-class-file"></a>Renommer un fichier de classe
 
-Dans **l’Explorateur de solutions**, sélectionnez le fichier *UnitTest1.cs* dans le projet BankTests. Dans le menu contextuel, choisissez **Renommer**, puis renommez le fichier *BankAccountTests.cs*. Choisissez **Oui** dans la boîte de dialogue qui vous demande si vous souhaitez renommer toutes les références à l’élément de code `UnitTest1` dans le projet.
+Dans **l’Explorateur de solutions**, sélectionnez le fichier *UnitTest1.cs* dans le projet BankTests. Dans le menu contextuel (clic droit), choisissez **Renommer**, puis renommez le fichier *BankAccountTests.cs*. Choisissez **Oui** dans la boîte de dialogue qui vous demande si vous souhaitez renommer toutes les références à l’élément de code `UnitTest1` dans le projet.
 
 Cette opération a pour effet de remplacer le nom de la classe par `BankAccountTests`. Le fichier *BankAccountTests.cs* contient maintenant le code suivant :
 

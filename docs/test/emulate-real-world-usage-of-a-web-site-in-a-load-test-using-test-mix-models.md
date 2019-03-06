@@ -8,15 +8,13 @@ helpviewer_keywords:
 ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 33f44051025310072972ef3c15a1d4a4325c0efe
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+manager: jillfra
+ms.openlocfilehash: 25e44e9b05a34cbcd245debc87dfbe23c5772a3c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896573"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948925"
 ---
 # <a name="emulate-expected-real-world-usage-of-a-website-or-application-in-a-load-test-using-a-test-mix-model"></a>Émuler l’utilisation réelle attendue d’un site web ou d’une application dans un test de charge à l’aide de modèles de combinaison de tests
 
@@ -62,7 +60,7 @@ Vous pouvez spécifier l'une des options de modèle de combinaison de tests suiv
 
 - TestB : 2 tests par utilisateur et par heure
 
-- TestC : 0,125 tests par utilisateur et par heure
+- TestC : 0,125 test par utilisateur et par heure
 
   Si vous utilisez le modèle de combinaison de tests rythmée, le moteur d'exécution de test de charge garantit que le taux réel de démarrage des tests sera inférieur ou égal au taux spécifié. Si la durée d'exécution des tests est trop longue pour pouvoir achever le nombre de tests assigné, une erreur est retournée.
 
@@ -71,21 +69,21 @@ Vous pouvez spécifier l'une des options de modèle de combinaison de tests suiv
 #### <a name="apply-distribution-to-pacing-delay"></a>Appliquer une distribution au rythme
  La propriété **Appliquer une distribution au rythme** dans un scénario de test de charge peut avoir la valeur True ou False :
 
-- **True** : Le scénario applique des délais de distribution statistiques normaux spécifiés par la valeur de la colonne **Tests par utilisateur et par heure** dans la boîte de dialogue **Modifier la combinaison de tests**. Pour plus d’informations, consultez [Modifier des modèles de combinaison de texte pour spécifier la probabilité d’exécution d’un test par un utilisateur virtuel](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+- **True** : le scénario applique des délais de distribution statistiques normaux spécifiés par la valeur de la colonne **Tests par utilisateur et par heure** dans la boîte de dialogue **Modifier la combinaison de tests**. Pour plus d’informations, consultez [Modifier des modèles de combinaison de texte pour spécifier la probabilité d’exécution d’un test par un utilisateur virtuel](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
    Supposons que vous ayez comme valeur **Tests par utilisateur et par heure** dans la boîte de dialogue **Modifier la combinaison de tests** du jeu de tests 2 utilisateurs par heure. Si la propriété **Appliquer une distribution au rythme** a la valeur **True**, une distribution statistique classique s’applique au délai d’attente entre les tests. Les tests exécuteront toujours 2 tests par heure, mais l'intervalle entre eux ne sera pas nécessairement de 30 minutes. Le premier test peut être exécuté après 4 minutes et le deuxième test après 45 minutes.
 
-- **False** : les tests seront exécutés à un rythme spécifique que vous avez spécifié avec la valeur de la colonne **Tests par utilisateur et par heure** dans la boîte de dialogue **Modifier la combinaison de tests**. Pour plus d’informations, consultez [Modifier des modèles de combinaison de texte pour spécifier la probabilité d’exécution d’un test par un utilisateur virtuel](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+- **False** : les tests seront exécutés à un rythme spécifique que vous avez spécifié avec la valeur de la colonne **Tests par utilisateur et par heure** dans la boîte de dialogue **Modifier la combinaison de tests**. Pour plus d’informations, consultez [Modifier des modèles de combinaison de texte pour spécifier la probabilité d’exécution d’un test par un utilisateur virtuel](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
    Supposons que vous ayez comme valeur **Tests par utilisateur et par heure** dans la boîte de dialogue **Modifier la combinaison de tests** du jeu de tests 2 utilisateurs par heure. Si la propriété **Appliquer une distribution au rythme** a la valeur **False**, vous n’avez pour ainsi dire aucune marge de manœuvre pour exécuter vos tests. Le test s'exécutera toutes les 30 minutes. Cela permet de s'assurer que vous exécutez 2 tests par heure.
 
-  Pour plus d’informations, consultez [Guide pratique pour appliquer la distribution au rythme quand vous utilisez un modèle de combinaison de tests basée sur le rythme de l’utilisateur](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md).
+  Pour plus d'informations, voir [Procédure : Appliquer une distribution au rythme durant l’utilisation d’un modèle de combinaison de tests dépendant du rythme de l’utilisateur](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md).
 
 ###  <a name="SequentialOrder"></a> Ordre séquentiel
  Sélectionner l'option Basé sur l'ordre séquentiel des tests permet à chaque utilisateur virtuel d'exécuter tous les tests du scénario dans l'ordre dans lequel les tests ont été définis.
 
 ## <a name="test-iterations-property"></a>Propriété des itérations de tests
- Dans les propriétés Paramètres d'exécution, vous pouvez spécifier une valeur pour la propriété des itérations de tests. Cette valeur définit le nombre d'itérations de tests à exécuter dans un test de charge. Une fois que le nombre d'itérations de tests spécifié a été démarré, aucune itération supplémentaire n'a lieu, quels que soient les paramètres définis dans les profils de charge. Une fois que le nombre d'itérations de tests spécifié a été réalisé, le test de charge s'achève. Pour plus d’informations, consultez [Guide pratique pour spécifier le nombre d’itérations de tests dans un paramètre d’exécution](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
+ Dans les propriétés Paramètres d'exécution, vous pouvez spécifier une valeur pour la propriété des itérations de tests. Cette valeur définit le nombre d'itérations de tests à exécuter dans un test de charge. Une fois que le nombre d'itérations de tests spécifié a été démarré, aucune itération supplémentaire n'a lieu, quels que soient les paramètres définis dans les profils de charge. Une fois que le nombre d'itérations de tests spécifié a été réalisé, le test de charge s'achève. Pour plus d'informations, voir [Procédure : Spécifier le nombre d’itérations de tests dans un paramètre d’exécution](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
 
 ## <a name="initialize-and-terminate-tests"></a>Tests d'initialisation et de fin
  Vous pouvez sélectionner les tests à exécuter au début et à la fin de la session de test de charge de chaque utilisateur virtuel. Pour plus d’informations, consultez [Modifier des modèles de combinaison de texte pour spécifier la probabilité d’exécution d’un test par un utilisateur virtuel](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).

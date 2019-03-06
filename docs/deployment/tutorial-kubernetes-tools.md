@@ -1,26 +1,24 @@
 ---
 title: Didacticiel d’outils Kubernetes | Microsoft Docs
-ms.custom: ''
 ms.date: 06/08/2018
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
-manager: douge
+manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 8cf4192ce0f925624dbbe890381d3557f2a27223
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: e819e4935a14d3902245432b5a5c843071af0fbf
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942931"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843232"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Bien démarrer avec Visual Studio Tools de Kubernetes
 
 Les outils Kubernetes de Visual Studio vous aider à rationaliser le développement d’applications en conteneur ciblant Kubernetes. Visual Studio peut automatiquement créer les fichiers de configuration en tant que code nécessaires pour prendre en charge le déploiement de Kubernetes, telles que des graphiques Dockerfiles et Helm. Vous pouvez déboguer votre code dans un cluster Azure Kubernetes Service (AKS) en direct à l’aide d’espaces de développement Azure, ou publier directement sur un cluster AKS à partir de Visual Studio.
 
-Ce didacticiel couvre l’utilisation de Visual Studio pour ajouter la prise en charge de Kubernetes à un projet et publier sur AKS. Si vous êtes principalement intéressé par l’utilisation [Azure Dev espaces](http://aka.ms/get-azds) pour déboguer et tester votre projet en cours d’exécution dans ACS, vous pouvez passer à la [didacticiel d’Azure Dev espaces](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio) à la place.
+Ce didacticiel couvre l’utilisation de Visual Studio pour ajouter la prise en charge de Kubernetes à un projet et publier sur AKS. Si vous êtes principalement intéressé par l’utilisation [Azure Dev espaces](https://aka.ms/get-azds) pour déboguer et tester votre projet en cours d’exécution dans ACS, vous pouvez passer à la [didacticiel d’Azure Dev espaces](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio) à la place.
 
 ## <a name="prerequisites"></a>Prérequis
 
@@ -80,7 +78,7 @@ Les fichiers ajoutés sont :
 
 ## <a name="publish-to-azure-kubernetes-service-aks"></a>Publier sur Azure Kubernetes Service (AKS)
 
-Avec tous ces fichiers en place, vous pouvez utiliser l’IDE Visual Studio pour écrire et déboguer votre code d’application, tout comme vous avez toujours. Vous pouvez également utiliser [Azure Dev espaces](http://aka.ms/get-azds) pour exécuter et déboguer votre code en temps réel dans un cluster AKS rapidement. Pour plus d’informations, veuillez vous reporter la [didacticiel d’espaces de développement Azure](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio)
+Avec tous ces fichiers en place, vous pouvez utiliser l’IDE Visual Studio pour écrire et déboguer votre code d’application, tout comme vous avez toujours. Vous pouvez également utiliser [Azure Dev espaces](https://aka.ms/get-azds) pour exécuter et déboguer votre code en temps réel dans un cluster AKS rapidement. Pour plus d’informations, veuillez vous reporter la [didacticiel d’espaces de développement Azure](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio)
 
 Une fois que vous disposez de votre code en cours d’exécution comme vous le souhaitez, vous pouvez publier directement à partir de Visual Studio sur un cluster AKS.
 
@@ -122,4 +120,4 @@ Félicitations ! Vous pouvez maintenant utiliser toute la puissance de Visual S
 
 En savoir plus sur le développement de Kubernetes sur Azure en lisant le [documentation AKS](/azure/aks).
 
-En savoir plus sur les espaces de développement Azure en lisant le [documentation des espaces de développement Azure](http://aka.ms/get-azds)
+En savoir plus sur les espaces de développement Azure en lisant le [documentation des espaces de développement Azure](https://aka.ms/get-azds)

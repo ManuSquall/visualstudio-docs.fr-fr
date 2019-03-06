@@ -1,8 +1,6 @@
 ---
 title: MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, about MSBuild
@@ -10,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: e39f13f7-1e1d-4435-95ca-0c222bca071c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e87b1a71cde4d6fb37e05fa99698b636ff87bf4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ce0e95a72c6c2400f5ac245f3ac4741423194c68
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876722"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618235"
 ---
 # <a name="msbuild"></a>MSBuild
 Le [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] est une plateforme de génération d'applications. Ce moteur, également appelé MSBuild, fournit un schéma XML pour un fichier projet qui contrôle la manière dont la plateforme de génération traite et génère les logiciels. Visual Studio utilise MSBuild, mais il ne dépend pas de Visual Studio. En appelant *msbuild.exe* sur votre fichier projet ou solution, vous pouvez gérer et générer des produits dans des environnements où Visual Studio n’est pas installé.
@@ -29,7 +27,7 @@ Le [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] 
 
  Les exemples suivants illustrent les cas où vous pouvez exécuter des builds à l'aide d'une ligne de commande MSBuild au lieu de l'IDE de Visual Studio.
 
--   Visual Studio n'est pas installé.
+-   Visual Studio n'est pas installé. ([Télécharger MSBuild sans Visual Studio](https://visualstudio.microsoft.com/downloads/?q=build+tools).)
 
 -   Vous souhaitez utiliser la version 64 bits de MSBuild. Cette version MSBuild est généralement inutile, mais elle permet à MSBuild d'accéder à plus de mémoire.
 
@@ -50,7 +48,7 @@ Vous pouvez écrire du code dans l'IDE de Visual Studio, mais les générations 
 > [!NOTE]
 >  Vous pouvez utiliser Team Foundation Build automatiquement pour compiler, tester, puis déployer votre application. Votre système de génération peut automatiquement exécuter des générations lorsque les développeurs archivent du code (par exemple, dans le cadre d'une stratégie continue d'intégration) ou selon une planification (par exemple, une build nocturne de test de vérification de build). Team Foundation Build compile votre code à l’aide de MSBuild. Pour plus d’informations, consultez [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
- Cette rubrique fournit une vue d'ensemble de MSBuild. Pour un didacticiel d’introduction, consultez la [Procédure pas à pas : utilisation de MSBuild](../msbuild/walkthrough-using-msbuild.md).
+ Cette rubrique fournit une vue d'ensemble de MSBuild. Pour suivre un tutoriel d’introduction, voir [Procédure pas à pas : Utiliser MSBuild](../msbuild/walkthrough-using-msbuild.md).
 
 ##  <a name="use-msbuild-at-a-command-prompt"></a>Utiliser MSBuild dans une invite de commandes
  Pour exécuter [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] dans une invite de commandes, transmettez un fichier projet à *MSBuild.exe*, avec les options de ligne de commande appropriées. Les options de ligne de commande vous permettent de définir des propriétés, d'exécuter des cibles spécifiques et de définir d'autres options qui contrôlent le processus de génération. Par exemple, la syntaxe de ligne de commande suivante permet de générer le fichier *MyProj.proj* avec la propriété `Configuration` définie sur `Debug`.
@@ -67,7 +65,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 ##  <a name="project-file"></a>Fichier projet
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] utilise un format de fichier projet XML qui est simple et extensible. Le format du fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] permet aux développeurs de décrire les éléments qui seront générés et la manière dont ils le seront pour différents systèmes d’exploitation et configurations. De plus, le format de fichier projet permet aux développeurs de créer des règles de génération réutilisables qui peuvent être réparties en fichiers distincts, de telle sorte que les builds puissent être exécutées de façon cohérente sur différents projets du produit.
 
- Les sections suivantes décrivent certains éléments de base du format de fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Pour suivre un tutoriel sur la création d’un fichier projet de base, voir [Procédure pas à pas : Créer un fichier projet MSBuild à partir de zéro](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
+ Les sections suivantes décrivent certains éléments de base du format de fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Pour suivre un tutoriel sur la création d'un fichier projet de base, voir [Procédure pas à pas : Créer un fichier projet MSBuild à partir de zéro](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
 
 ###  <a name="BKMK_Properties"></a> Propriétés
  Les propriétés sont des paires clé/valeur qui peuvent être utilisées pour configurer les générations. Les propriétés sont déclarées en créant un élément portant le nom de la propriété comme enfant d’un élément [PropertyGroup](../msbuild/propertygroup-element-msbuild.md). Par exemple, le code suivant crée une propriété nommée `BuildDir` avec la valeur `Build`.
@@ -149,7 +147,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 ## <a name="use-msbuild-in-visual-studio"></a>Utiliser MSBuild dans Visual Studio
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utilise le format de fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pour stocker les informations de génération des projets managés. Les paramètres de projet ajoutés ou modifiés à l’aide de l’interface [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sont répercutés dans le fichier *.\*proj* généré pour chaque projet. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utilise une instance hébergée de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pour générer des projets managés. Cela signifie qu’un projet managé peut être généré dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ou à partir d’une invite de commandes (même si [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] n’est pas installé) ; les résultats seront identiques.
 
- Pour suivre un didacticiel sur l’utilisation de MSBuild dans Visual Studio, consultez la [Procédure pas à pas : utilisation de MSBuild](../msbuild/walkthrough-using-msbuild.md).
+ Pour suivre un tutoriel sur l’utilisation de MSBuild dans Visual Studio, voir [Procédure pas à pas : Utiliser MSBuild](../msbuild/walkthrough-using-msbuild.md).
 
 ##  <a name="BKMK_Multitargeting"></a> Multiciblage
  Visual Studio vous permet de compiler une application pour l'exécuter sur n'importe quelle version du .NET Framework. Par exemple, vous pouvez compiler une application qui s'exécutera sur le .NET Framework version 2.0 sur une plateforme 32 bits, et vous pouvez compiler la même application pour qu'elle s'exécute sur le .NET Framework version 4.5 sur une plateforme 64 bits. Le multi-ciblage désigne la possibilité de compiler en plusieurs Frameworks.
@@ -172,8 +170,8 @@ Pour plus d’informations, consultez l’article [Multiciblage de MSBuild](../m
 
 | Titre | Description |
 | - | - |
-| [Procédure pas à pas : création d’un fichier projet MSBuild en partant de zéro](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) | Indique comment créer de façon incrémentielle un fichier projet de base, en utilisant uniquement un éditeur de texte. |
-| [Procédure pas à pas : utilisation de MSBuild](../msbuild/walkthrough-using-msbuild.md) | Présente les composantes de MSBuild et indique comment écrire, manipuler et déboguer des projets MSBuild sans fermer l'IDE de Visual Studio. |
+| [Procédure pas à pas : Créer un fichier projet MSBuild à partir de zéro](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) | Indique comment créer de façon incrémentielle un fichier projet de base, en utilisant uniquement un éditeur de texte. |
+| [Procédure pas à pas : Utiliser MSBuild](../msbuild/walkthrough-using-msbuild.md) | Présente les composantes de MSBuild et indique comment écrire, manipuler et déboguer des projets MSBuild sans fermer l'IDE de Visual Studio. |
 | [Concepts MSBuild](../msbuild/msbuild-concepts.md) | Présente les quatre composantes de MSBuild : propriétés, éléments, cibles et tâches. |
 | [Éléments](../msbuild/msbuild-items.md) | Décrit les concepts généraux sous-jacents au format de fichier [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] et la manière dont les éléments s'ajustent les uns aux autres. |
 | [Propriétés MSBuild](../msbuild/msbuild-properties.md) | Présente les propriétés et les collections de propriétés. Les propriétés sont des paires clé/valeur qui peuvent être utilisées pour configurer les générations. |
@@ -182,9 +180,9 @@ Pour plus d’informations, consultez l’article [Multiciblage de MSBuild](../m
 | [Conditions MSBuild](../msbuild/msbuild-conditions.md) | Explique comment utiliser l'attribut `Condition` dans un élément MSBuild. |
 | [Concepts avancés](../msbuild/msbuild-advanced-concepts.md) | Présente le traitement par lot, l'exécution de transformations, le multiciblage, ainsi que d'autres techniques avancées. |
 | [Journalisation dans MSBuild](../msbuild/logging-in-msbuild.md) | Décrit comment consigner des événements, des messages et des erreurs de build. |
-| [Ressources supplémentaires](../msbuild/additional-msbuild-resources.md) | Répertorie les ressources de communauté et de prise en charge pour des informations supplémentaires sur MSBuild. |
+| [Ressources supplémentaires](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild) | Répertorie les ressources de communauté et de prise en charge pour des informations supplémentaires sur MSBuild. |
 
 ## <a name="reference"></a>Référence
- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md) Liens vers des rubriques contenant les informations de référence.
+- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md) Liens vers des rubriques contenant les informations de référence.
 
- [Glossaire](msbuild-glossary.md) Définit les termes courants utilisés dans MSBuild.
+- [Glossaire](msbuild-glossary.md) Définit les termes courants utilisés dans MSBuild.

@@ -13,17 +13,15 @@ helpviewer_keywords:
 ms.assetid: 56a1fbff-c7e8-4187-a1c1-ffd17024bc1b
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c76f769234d8b8c14ccd44d8c2cf4c669bf48ffd
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 5fd3e7867b74c9dab923e91fd76424e88b309743
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305479"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931609"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Créer des tables de recherche dans des applications WPF
 
@@ -39,7 +37,7 @@ Par exemple, considérez une table de `Orders` dans une base de données de vent
 
     -   Service de données WCF, service WCF ou service web. Pour plus d’informations, consultez [Comment : se connecter aux données dans un Service](../data-tools/how-to-connect-to-data-in-a-service.md).
 
-    -   Objects Pour plus d’informations, consultez [lier des objets dans Visual Studio](bind-objects-in-visual-studio.md).
+    -   Objets. Pour plus d’informations, consultez [lier des objets dans Visual Studio](bind-objects-in-visual-studio.md).
 
     > [!NOTE]
     > Avant de pouvoir créer une table de recherche, les deux tables ou objets connexes doivent exister en tant que source de données pour le projet.
@@ -48,7 +46,7 @@ Par exemple, considérez une table de `Orders` dans une base de données de vent
 
      Pour plus d’informations sur les cibles de dépôt valides, consultez [WPF de lier des contrôles à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
-3.  Dans le menu Données **, cliquez sur Afficher les sources de données** pour ouvrir la fenêtre Sources de données **.
+3.  Dans le menu **Données**, cliquez sur **Afficher les sources de données** pour ouvrir la fenêtre **Sources de données**.
 
 4.  Développez les nœuds dans le **des Sources de données** fenêtre, jusqu'à ce que vous pouvez voir la table parente ou objet et la table enfant connexe ou l’objet.
 

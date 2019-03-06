@@ -2,22 +2,20 @@
 title: Réparer Visual Studio
 titleSuffix: ''
 description: Découvrez comment réparer une installation de Visual Studio 2017.
-ms.date: 09/28/2017
-ms.technology: vs-acquisition
+ms.date: 01/15/2019
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: PoulChapman
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a622c005626c28a1275915f3f464b7961cdbd914
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 72a047512b8f6434661193f088f981c52c0ad118
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53158825"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939435"
 ---
 # <a name="repair-visual-studio-2017"></a>Réparer Visual Studio 2017
 
@@ -28,9 +26,14 @@ Il peut arriver que votre installation Visual Studio soit endommagée ou corromp
      Par exemple, sur un ordinateur exécutant la Mise à jour anniversaire Windows 10 ou une version ultérieure, sélectionnez **Démarrer**, puis faites défiler jusqu’à la lettre **V** pour l’afficher comme **Visual Studio Installer**.
 
    > [!NOTE]
-   >   Sur certains ordinateurs, le programme d’installation de Visual Studio peut être répertorié sous la lettre **« M »** comme **Microsoft, programme d’installation de Visual Studio**.<br/><br/> Ou bien, vous pouvez trouver Visual Studio Installer à l’emplacement suivant :`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
+   > Sur certains ordinateurs, le programme d’installation de Visual Studio peut être répertorié sous la lettre **« M »** comme **Microsoft, programme d’installation de Visual Studio**.<br/><br/> Ou bien, vous pouvez trouver Visual Studio Installer à l’emplacement suivant :`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
-2. Cliquez ou appuyez pour démarrer le programme d’installation, sélectionnez **Plus**, puis **Réparer**.
+2. Cliquez ou appuyez pour lancer le programme d’installation, sélectionnez **Plus**, puis **Réparer**.
+
+    ![Réparer Visual Studio dans Visual Studio Installer](media/repair-visual-studio.png "Réparer Visual Studio dans Visual Studio Installer")
+
+   > [!TIP]
+   > L’option **Réparer** n’apparaît que pour les instances installées de Visual Studio. Si vous ne voyez pas l’option **Réparer**, c’est sans doute que vous avez sélectionné **Plus** dans une version présentée comme « Disponible » et non « Installé » dans Visual Studio Installer.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

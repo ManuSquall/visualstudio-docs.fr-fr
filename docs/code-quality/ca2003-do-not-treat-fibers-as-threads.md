@@ -1,8 +1,6 @@
 ---
 title: 'CA2003 : Ne traitez pas les fibres comme des threads'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2003
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 15398fb1-f384-4bcc-ad93-00e1c0fa9ddf
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3322b968266ad6fdfe1be2e5bdaac73aad32b9c7
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 8faaf3c6557065188c795d75ea9bbe4e78998709
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551910"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55969839"
 ---
 # <a name="ca2003-do-not-treat-fibers-as-threads"></a>CA2003 : Ne traitez pas les fibres comme des threads
 

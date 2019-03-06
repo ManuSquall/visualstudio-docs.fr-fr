@@ -1,8 +1,6 @@
 ---
-title: "CA2225 : Les surcharges d'opérateur offrent d'autres méthodes nommées"
+title: "CA2225 : Les surcharges d'opérateur offrent d'autres méthodes nommées"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - OperatorOverloadsHaveNamedAlternates
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: af8f7ab1-63ad-4861-afb9-b7a7a2be15e1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a12060752317a2b4c23ec2eba7e96e945be00db0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c12d7ed3fbfdfa5c61171061b9411db442341cdd
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914578"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953111"
 ---
-# <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225 : Les surcharges d'opérateur offrent d'autres méthodes nommées
+# <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225 : Les surcharges d'opérateur offrent d'autres méthodes nommées
 
 |||
 |-|-|
@@ -53,13 +51,13 @@ ms.locfileid: "49914578"
 |/=|/=|/=|Diviser|
 |==|=|==|Equals|
 |^|Xor|^|Xor|
-|^=|XOR =|^=|Xor|
+|^=|Xor=|^=|Xor|
 |>|>|>|Comparer|
 |>=|>=|>=|Comparer|
 |++|N/A|++|Incrémentation|
 |<>|!=|Equals|
-|<<|<<|<<|MAJ|
-|<<=|<<=|<<=|MAJ|
+|<<|<<|<<|LeftShift|
+|<<=|<<=|<<=|LeftShift|
 |<|<|<|Comparer|
 |<=|<=|\<=|Comparer|
 |&&|N/A|&&|LogicalAnd|
@@ -67,8 +65,8 @@ ms.locfileid: "49914578"
 |!|N/A|!|LogicalNot|
 |%|Mod|%|Mod ou reste|
 |%=|N/A|%=|Mod|
-|* (binaire)|*|*|Multiplier|
-|*=|N/A|*=|Multiplier|
+|* (binaire)|*|*|Multiplication|
+|*=|N/A|*=|Multiplication|
 |~|Ne convient pas|~|OnesComplement|
 |>>|>>|>>|MAJ droite|
 =|N/A|>>=|MAJ droite|
@@ -97,12 +95,12 @@ ms.locfileid: "49914578"
  [!code-csharp[FxCop.Usage.OperatorOverloadsHaveNamedAlternates#1](../code-quality/codesnippet/CSharp/ca2225-operator-overloads-have-named-alternates_1.cs)]
 
 ## <a name="related-rules"></a>Règles associées
- [CA1046 : Ne pas surcharger l’opérateur égal sur les types de référence](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
+ [CA1046 : Ne pas surcharger l’opérateur égal sur les types référence](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
- [CA2226 : Les opérateurs doivent avoir des surcharges symétriques](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+ [CA2226 : Les opérateurs doivent contenir des surcharges symétriques](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
- [CA2224 : Remplacez Equals lors de la surcharge de l’opérateur égal](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+ [CA2224 : Remplacez equals lors de la surcharge l’opérateur égal](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 
- [CA2218 : Remplacez GetHashCode lors du remplacement de Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
+ [CA2218 : Remplacez GetHashCode au moment de remplacer Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 
  [CA2231 : Surchargez l’opérateur égal (equals) en remplaçant ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)

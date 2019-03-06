@@ -1,20 +1,18 @@
 ---
 title: Introduire une variable locale
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 108477845bb79d5ed13cb3ebdf3121e4960455a6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5564752fcecfe2d7a1b2d0bf7632a9cebe3d9353
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068080"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921222"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Introduire une variable locale dans Visual Studio
 
@@ -48,11 +46,11 @@ Cette génération de code s’applique à :
       - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
-      - Cliquez sur le bouton ![Ampoule](media/bulb-cs.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne ondulée rouge.
+      - Cliquez sur le bouton ![Tournevis](media/screwdriver.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne avec l’expression en surbrillance.
 
    ![Introduire un aperçu local](media/local-preview-cs.png)
 
-3. Sélectionnez **Introduire un élément local pour (toutes les occurrences de '*expression*'** à partir du menu déroulant.
+3. Sélectionnez **Introduire un élément local pour (toutes les occurrences) de « expression »** dans le menu déroulant.
 
    > [!TIP]
    > Utilisez le lien **Aperçu des modifications** en bas de la fenêtre d’aperçu [pour voir tous les changements](../../ide/preview-changes.md) qui seront apportés avant d’effectuer votre sélection.
@@ -73,4 +71,4 @@ Cette génération de code s’applique à :
 ## <a name="see-also"></a>Voir aussi
 
 - [Génération de code](../code-generation-in-visual-studio.md)
-- [Aperçu des modifications](../../ide/preview-changes.md)
+- [Aperçu des changements](../../ide/preview-changes.md)

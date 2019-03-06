@@ -1,25 +1,20 @@
 ---
 title: Nœuds de texture | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: b7df5ef3-dd4f-4964-9d96-34e0e180515e
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bda107323b24940ed8cab18a61f9e491f8392f53
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e43329cb15eaf41ccb8859521bd45eff6f749c10
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252354"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779838"
 ---
 # <a name="texture-nodes"></a>Nœuds de texture
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +23,7 @@ Dans le concepteur de nuanceur, les nœuds de texture échantillonnent différen
   
 ## <a name="texture-node-reference"></a>Informations de référence des nœuds de texture  
   
-|Nœud|Détails|Properties|  
+|Nœud|Détails|Propriétés|  
 |----------|-------------|----------------|  
 |**Cubemap Sample (Exemple de carte cubique)**|Extrait un échantillon de couleur d’une carte cubique aux coordonnées spécifiées.<br /><br /> Vous pouvez utiliser une carte cubique pour fournir un détail de couleur pour les effets de réflexion ou pour appliquer à un objet sphérique une texture avec moins de distorsion qu’une texture 2D.<br /><br /> **Entrée :**<br /><br /> `UVW`: `float3`<br /> Vecteur qui spécifie l’emplacement de l’extraction de l’échantillon sur le cube de texture. L’échantillon est prélevé à l’intersection de ce vecteur et du cube.<br /><br /> **Sortie :**<br /><br /> `Output`: `float4`<br /> Échantillon de couleur.|**Texture**<br /> Registre de texture associé à l’échantillonneur.|  
 |**Normal Map Sample (Exemple de carte de normales)**|Extrait un échantillon de normale d’une carte de normales 2D aux coordonnées spécifiées.<br /><br /> Vous pouvez utiliser une carte de normales pour simuler l’apparence de détails géométriques supplémentaires sur la surface d’un objet. Les cartes de normales contiennent des données compressées qui représentent un vecteur unitaire et non des données de couleur.<br /><br /> **Entrée :**<br /><br /> `UV`: `float2`<br /> Coordonnées de l’emplacement auquel l’échantillon est prélevé.<br /><br /> **Sortie :**<br /><br /> `Output`: `float3`<br /> Échantillon de normale.|**Axis Adjustment (Ajustement d’un axe)**<br /> Facteur utilisé pour ajuster la latéralisation gauche/droite de l’échantillon de carte de normales.<br /><br /> **Texture**<br /> Registre de texture associé à l’échantillonneur.|  
@@ -39,6 +34,3 @@ Dans le concepteur de nuanceur, les nœuds de texture échantillonnent différen
 |**Dimensions de la texture**|Génère la largeur et la hauteur d’une carte de textures 2D.<br /><br /> Vous pouvez utiliser les dimensions de texture pour prendre en compte la largeur et la hauteur de la texture dans un nuanceur.<br /><br /> **Sortie :**<br /><br /> `Output`: `float2`<br /> Largeur et hauteur de la texture, exprimées en tant que vecteur. La largeur est stockée dans le premier élément du vecteur. La hauteur est stockée dans le second élément.|**Texture**<br /> Registre de texture associé aux dimensions de la texture.|  
 |**Différentiel d’élément de texture**|Génère le différentiel (la distance) entre les éléments de texture d’une carte de textures 2D.<br /><br /> Vous pouvez utiliser le différentiel d’élément de texture pour échantillonner des valeurs d’éléments de texture voisins dans un nuanceur.<br /><br /> **Sortie :**<br /><br /> `Output`: `float2`<br /> Différentiel (distance) d’un élément de texture à l’élément de texture suivant (déplacement en diagonale dans le sens positif), exprimé sous la forme d’un vecteur dans un espace de texture normalisé. Vous pouvez dériver les positions de tous les éléments de texture voisins en ignorant ou en inversant de manière sélective les coordonnées U ou V du différentiel.|**Texture**<br /> Registre de texture associé au différentiel d’élément de texture.|  
 |**Échantillon de texture**|Extrait un échantillon de couleur d’une carte de textures 2D aux coordonnées spécifiées.<br /><br /> Vous pouvez utiliser une carte de textures pour ajouter un détail de couleur à la surface d’un objet.<br /><br /> **Entrée :**<br /><br /> `UV`: `float2`<br /> Coordonnées de l’emplacement auquel l’échantillon est prélevé.<br /><br /> **Sortie :**<br /><br /> `Output`: `float4`<br /> Échantillon de couleur.|**Texture**<br /> Registre de texture associé à l’échantillonneur.|
-
-
-

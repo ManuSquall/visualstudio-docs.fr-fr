@@ -1,10 +1,7 @@
 ---
 title: NATIVE_ADDRESS | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - NATIVE_ADDRESS
 helpviewer_keywords:
@@ -12,47 +9,53 @@ helpviewer_keywords:
 ms.assetid: 7a0cd085-bfc8-45cc-a3d4-4459070e207a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 751b4dfc641b017a4dc3f47f90b95e8447a2b1c6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7d7d061d7cd60444a523d5764c30b7ff538faefe
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840426"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719111"
 ---
 # <a name="nativeaddress"></a>NATIVE_ADDRESS
-Cette structure représente une adresse native.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp  
-typedef struct _tagNATIVE_ADDRESS {  
-   DWORD unknown;  
-} NATIVE_ADDRESS;  
-```  
-  
-```csharp  
-public struct NATIVE_ADDRESS {  
-   public uint unknown;  
-}  
-```  
-  
-## <a name="terms"></a>Termes  
- Inconnu  
- L’adresse native (la signification de ce dépend de l’exécution et le système d’exploitation).  
-  
-## <a name="remarks"></a>Notes  
- Cette structure fait partie de l’union dans le [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) structure lorsque le `dwKind` champ la `DEBUG_ADDRESS_UNION` structure est définie sur `ADDRESS_KIND_NATIVE` (une valeur comprise entre le [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) énumération).  
-  
-## <a name="requirements"></a>Configuration requise  
- En-tête : sh.h  
-  
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
-  
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Voir aussi  
- [Structures et Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
+
+Cette structure représente une adresse native.
+
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+typedef struct _tagNATIVE_ADDRESS {
+    DWORD unknown;
+} NATIVE_ADDRESS;
+```
+
+```csharp
+public struct NATIVE_ADDRESS {
+    public uint unknown;
+}
+```
+
+## <a name="terms"></a>Termes
+
+`unknown`
+
+L’adresse native (la signification de ce dépend de l’exécution et le système d’exploitation).
+
+## <a name="remarks"></a>Notes
+
+Cette structure fait partie de l’union dans le [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) structure lorsque le `dwKind` champ la `DEBUG_ADDRESS_UNION` structure est définie sur `ADDRESS_KIND_NATIVE` (une valeur comprise entre le [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) énumération).
+
+## <a name="requirements"></a>Spécifications
+
+En-tête : sh.h
+
+Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+
+Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Voir aussi
+
+- [Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)

@@ -1,25 +1,20 @@
 ---
 title: Guide pratique pour modifier des fichiers Web.Config pour instrumenter et profiler des applications web ASP.NET compilées dynamiquement | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: a92e5692-2183-4ae3-9431-b067c6a7aab4
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8f668bebb2967ca89feb1c6f52f00253ac3eb07b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 53c55987c22104a8951976890812d90f6bb838d4
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807749"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54774991"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Guide pratique pour modifier des fichiers Web.Config pour instrumenter et profiler des applications web ASP.NET compilées dynamiquement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -146,7 +141,7 @@ Vous pouvez utiliser la méthode d’instrumentation des outils de profilage de 
     |Nom d'attribut|Valeur d'attribut|  
     |--------------------|---------------------|  
     |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation**|  
-    |**valeur**|`PerformanceToolsFolder` **\VSInstr.Exe**|  
+    |**value**|`PerformanceToolsFolder` **\VSInstr.Exe**|  
   
 4.  Ajoutez un autre élément **add** en tant qu’enfant de l’élément **appSettings**.  
   
@@ -155,7 +150,7 @@ Vous pouvez utiliser la méthode d’instrumentation des outils de profilage de 
     |Nom d'attribut|Valeur d'attribut|  
     |--------------------|---------------------|  
     |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools**|  
-    |**valeur**|`PerformanceToolsFolder`|  
+    |**value**|`PerformanceToolsFolder`|  
   
      `PerformanceToolsFolder` est le chemin des fichiers exécutables du profileur. Si [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] est installé à l’emplacement par défaut, cette valeur est **C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools**.  
   
@@ -228,7 +223,4 @@ Vous pouvez utiliser la méthode d’instrumentation des outils de profilage de 
   
 ## <a name="see-also"></a>Voir aussi  
  [Guide pratique pour instrumenter une application ASP.NET compilée dynamiquement et collecter des données de minutage détaillées](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)   
- [Guide pratique pour instrumenter une application ASP.NET compilée dynamiquement et collecter des données de mémoire](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)
-
-
-
+ [Guide pratique pour instrumenter une application ASP.NET compilée dynamiquement et collecter des données de mémoire](/visualstudio/profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data?view=vs-2015)

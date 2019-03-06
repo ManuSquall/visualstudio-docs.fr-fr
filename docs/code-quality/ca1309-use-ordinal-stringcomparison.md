@@ -1,8 +1,6 @@
 ---
 title: 'CA1309 : Utiliser StringComparison avec la valeur Ordinal'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - UseOrdinalStringComparison
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 19be0854-cb6e-4efd-a4c8-a5c1fc6f7a71
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91953fd855576b6f40d02ebb3653fff07bfdef9c
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b00accdbdb08e4267bbca2b7e5fab8002f539f1d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546429"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922520"
 ---
 # <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309 : Utiliser StringComparison avec la valeur Ordinal
 
@@ -50,4 +48,4 @@ Une opération de comparaison de chaînes qui est non linguistique ne définit p
 ## <a name="see-also"></a>Voir aussi
 
 - [Avertissements liés à la globalisation](../code-quality/globalization-warnings.md)
-- [CA1307 : Spécifiez StringComparison](../code-quality/ca1307-specify-stringcomparison.md)
+- [CA1307 : Spécifier StringComparison](../code-quality/ca1307-specify-stringcomparison.md)

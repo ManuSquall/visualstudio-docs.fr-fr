@@ -1,8 +1,6 @@
 ---
-title: 'Comment : déboguer le Code optimisé | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Déboguer le Code optimisé | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -20,17 +18,17 @@ helpviewer_keywords:
 ms.assetid: fc8eeeb8-6629-4c9b-99f7-2016aee81dff
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6e212129c17ec7b4fe6cb9a6808c91cb302deb3
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 756b8859c2f13c53eb46a0d9ae9d32836997f70f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52387860"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035924"
 ---
-# <a name="how-to-debug-optimized-code"></a>Comment : déboguer le code optimisé
+# <a name="how-to-debug-optimized-code"></a>Procédure : déboguer du code optimisé
 
 > [!NOTE]
 > Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Réinitialiser les paramètres](../ide/environment-settings.md#reset-settings).
@@ -76,7 +74,7 @@ ms.locfileid: "52387860"
 
 8. Si vous avez choisi l'option `Custom` pour `Optimization`, vous pouvez maintenant définir des options pour l'une des autres propriétés affichées dans la liste des propriétés.
 
-9. Sélectionnez le nœud Propriétés de configuration, C/C++, Ligne de commande de la page des propriétés du projet, et ajoutez `(`[/Zo](/cpp/build/reference/zo-enhance-optimized-debugging)`)` à la zone de texte **Options supplémentaires**.
+9. Sélectionnez les propriétés de Configuration, C/C++, nœud de ligne de commande de la page de propriétés de projet et ajoutez `(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` à la **des Options supplémentaires** zone de texte.
 
     > [!WARNING]
     >  `/Zo` nécessite Visual Studio 2013 Update 3 ou une version ultérieure.

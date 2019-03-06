@@ -1,22 +1,20 @@
 ---
-title: Guide pratique pour filtrer les vues de rapport des outils de profilage de façon à afficher Uniquement mon code | Microsoft Docs
-ms.custom: ''
+title: 'Procédure : Filtrer les vues de rapport des outils de profilage de façon à afficher Uniquement mon code | Microsoft Docs'
 ms.date: 02/15/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b1e2291ff5c4b7ff072e45df9e2d32768011bca
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: b11d3c177f880894a2f47abd8e80e7796c7923ef
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815780"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624332"
 ---
-# <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>Guide pratique pour filtrer les vues de rapport des outils de profilage de façon à afficher Uniquement mon code
+# <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>Procédure : Filtrer les vues des rapports des outils de profilage de façon à afficher Uniquement mon code
 
 Visual Studio offre des fonctionnalités de filtrage qui vous permettent d’afficher uniquement le code que vous avez implémenté dans les rapports de performances. Cette fonctionnalité se nomme Uniquement mon code et est activée par défaut. Elle peut être configurée via l’option **Uniquement mon code** de la boîte de dialogue **Options**.
 

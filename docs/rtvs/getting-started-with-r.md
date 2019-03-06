@@ -2,24 +2,22 @@
 title: Didacticiel Bien démarrer avec R
 description: Procédure pas à pas d’utilisation de R dans Visual Studio, y compris la création du projet, la fenêtre interactive, la modification du code et le débogage.
 ms.date: 06/29/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 88387485b952bf201a222741a6b3d02861df186c
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: d3ef293b4e25f85cd901c42382158bdd75742e26
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235412"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936419"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Bien démarrer avec Outils R pour Visual Studio
 
-Après avoir installé Outils R pour Visual Studio (RTVS) (voir [Installation](installing-r-tools-for-visual-studio.md)), vous pouvez rapidement vous faire une idée de ce que ces outils ont à offrir. 
+Après avoir installé Outils R pour Visual Studio (RTVS) (voir [Installation](installing-r-tools-for-visual-studio.md)), vous pouvez rapidement vous faire une idée de ce que ces outils ont à offrir.
 
 ## <a name="create-an-r-project"></a>Créer un projet R
 
@@ -94,7 +92,7 @@ Par exemple, les étapes suivantes créent un petit extrait de code pour explore
 
 > [!Tip]
 > Nous vous recommandons d’apporter des modifications et d’appuyer sur **Ctrl**+**Entrée** pour exécuter rapidement le code. Vous pouvez aussi sélectionner tout votre code avec **Ctrl**+**A**, puis appuyer sur **Ctrl**+**Entrée**. Sur des opérations identiques, vous obtiendrez de meilleurs résultats qu’avec la souris.
-> 
+>
 > Par ailleurs, vous pouvez faire glisser et déplacer la fenêtre de tracés à l’extérieur du cadre de Visual Studio et placer tout autre élément désiré sur votre écran. Vous pouvez ensuite redimensionner la fenêtre de tracés à la taille souhaitée, puis l’enregistrer dans un fichier image ou PDF.
 
 1. Ajoutez quelques lignes de code pour inclure un second tracé :

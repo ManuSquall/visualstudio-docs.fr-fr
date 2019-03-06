@@ -2,20 +2,19 @@
 title: Fenêtres du débogueur | Microsoft Docs
 ms.custom: seodec18
 ms.date: 04/25/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05d3cd5cd56010e62b6ca50a76e726cb7998070b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: HT
+ms.openlocfilehash: fbc1dd2eae7f5ef4048a1c6e92a34f7ad5aa3d9e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065149"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701704"
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>En savoir plus sur Windows de débogueur dans Visual Studio
 
@@ -36,19 +35,19 @@ Vous pouvez ouvrir la plupart des fenêtres du débogueur pendant le débogage d
 |Piles parallèles|Ctrl+Maj+D, S|[Utilisation de la fenêtre Piles parallèles](../debugger/using-the-parallel-stacks-window.md)|
 |Espion parallèle|Ctrl+Maj+D, (1, 2, 3, 4)|[Bien démarrer avec le débogage d’applications multithread](../debugger/get-started-debugging-multithreaded-apps.md)|
 |Threads|Ctrl+Alt+H|[Déboguer à l’aide de la fenêtre Threads](../debugger/how-to-use-the-threads-window.md)|
-|Modules|Ctrl+Alt+U|[Guide pratique pour Utiliser la fenêtre Modules](../debugger/how-to-use-the-modules-window.md)|
+|Modules|Ctrl+Alt+U|[Guide pratique pour utiliser la fenêtre Modules](../debugger/how-to-use-the-modules-window.md)|
 |Threads GPU|-|[Guide pratique pour utiliser la fenêtre Threads GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
 |Tâches|Ctrl+Maj+D, K|[Utilisation de la fenêtre Tâches](../debugger/using-the-tasks-window.md)|
-|Python Debug Interactive|Maj+Alt+I|[Boucle REPL Interactive Python](../python/python-interactive-repl-in-visual-studio.md)|
-|Console JavaScript|Ctrl+Alt+V, C|[Démarrage rapide : Déboguer du code JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
-|Explorateur DOM|Ctrl+Alt+V, D|[Déboguer la disposition avec l’Explorateur DOM](../debugger/debug-layout-using-dom-explorer.md)|
+|Python Debug Interactive|Maj+Alt+I|[REPL interactif Python](../python/python-interactive-repl-in-visual-studio.md)|
+|Console JavaScript|Ctrl+Alt+V, C|[Démarrage rapide : déboguer du code JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
+|Explorateur DOM|Ctrl+Alt+V, D|[Déboguer la disposition avec l’Explorateur DOM](/visualstudio/debugger/quickstart-debug-html-and-css)|
 |Arborescence d’éléments visuels en direct|-|[Inspecter les propriétés XAML en phase de débogage](../debugger/inspect-xaml-properties-while-debugging.md)|
 |Explorateur de propriétés en direct|-|[Inspecter les propriétés XAML en phase de débogage](../debugger/inspect-xaml-properties-while-debugging.md)|
 |Processus|Ctrl+Alt+Z|[Déboguer les threads et les processus](../debugger/debug-threads-and-processes.md)|
 |Mémoire|Ctrl+Alt+M, (1, 2, 3, 4)|[Fenêtres Mémoire](../debugger/memory-windows.md)|
-|Code Machine|Ctrl+Alt+D|[Guide pratique pour La fenêtre code machine](../debugger/how-to-use-the-disassembly-window.md)|
-|Registres|Ctrl+Alt+G|[Guide pratique pour Utiliser la fenêtre Registres](../debugger/how-to-use-the-registers-window.md)|
+|Code Machine|Ctrl+Alt+D|[Guide pratique pour utiliser la fenêtre Code Machine](../debugger/how-to-use-the-disassembly-window.md)|
+|Registres|Ctrl+Alt+G|[Guide pratique pour utiliser la fenêtre Registres](../debugger/how-to-use-the-registers-window.md)|
 
 ## <a name="see-also"></a>Voir aussi
 
-[Principes de base du débogueur](../debugger/getting-started-with-the-debugger.md)
+[Présentation du débogueur](../debugger/debugger-feature-tour.md)

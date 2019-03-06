@@ -2,22 +2,20 @@
 title: Outils F#
 description: Découvrez les fonctionnalités de Visual Studio prises en charge en F#.
 ms.date: 07/11/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - F# features [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4512a6ad5efe519c203a764b18cdfc352ed6e81a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dc3a49c586b7a8f5a67d6c1a3a77d00772698389
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921429"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955856"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Développer avec Visual F# dans Visual Studio
 
@@ -138,7 +136,7 @@ Le tableau suivant récapitule les fonctionnalités qui sont disponibles quand v
 |Fonctionnalité|Description|Pris en charge en F# ?|
 |-------|-----------|----------------|
 |Automatique (fenêtre)|Affiche les variables automatiques ou temporaires.|Non|
-|Points d'arrêt|Permet de suspendre l’exécution du code à des points spécifiques lors du débogage.|Oui|
+|Points d’arrêt|Permet de suspendre l’exécution du code à des points spécifiques lors du débogage.|Oui|
 |Points d’arrêt conditionnels|Permet de définir des points d’arrêt qui testent une condition qui détermine si l’exécution doit être suspendue.|Oui|
 |Modifier & Continuer|Permet de modifier et de compiler le code à mesure que vous déboguez un programme en cours d’exécution sans arrêter et redémarrer le débogueur.|Non|
 |Évaluateur d’expression|Évalue et exécute le code au moment de l’exécution.|Non, mais l’évaluateur d’expression C# peut être utilisé, bien que vous deviez utiliser la syntaxe C#.|

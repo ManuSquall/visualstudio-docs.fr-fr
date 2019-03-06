@@ -2,22 +2,20 @@
 title: Concepteur de flux de travail - Concepteur d’activités TransactedReceiveScope
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.ServiceModel.Activities.TransactedReceiveScope.UI
 ms.assetid: 7ca93aad-4e83-4d81-90f4-998ee114d9b6
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a42c1cc9dac8e71bfe71f684232fdbf67fadb710
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4a103b0db53ced447e16d269d747fa3355aeb00c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929541"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921209"
 ---
 # <a name="transactedreceivescope-activity-designer"></a>Concepteur d'activités TransactedReceiveScope
 

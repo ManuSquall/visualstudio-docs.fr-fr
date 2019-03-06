@@ -8,16 +8,14 @@ manager: routlaw
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.devlang: multiple
-ms.service: multiple
-ms.technology: vs-ai-tools
 ms.workload:
 - azure
-ms.openlocfilehash: 6cf5c2529d54637e1e6ad4a111c3d3c456e6fae1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c15196caab6aa17f3d9890367148535dd6d314d3
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882390"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840560"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Former des modèles IA dans Azure Batch AI
 
@@ -35,7 +33,7 @@ Comme il est intégré à Visual Studio Tools pour IA, vous pouvez dynamiquement
 
 3. Sélectionnez **Affichage > Team Explorer...** pour ouvrir la fenêtre **Team Explorer**, dans laquelle vous pouvez vous connecter à GitHub ou à Azure DevOps Services, ou bien cloner un dépôt.
 
-    ![Fenêtre Team Explorer montrant Azure DevOps Services, GitHub et le clonage d’un dépôt](media/train-model/team-explorer.png)
+    ![Fenêtre Team Explorer montrant Azure DevOps Services, GitHub et le clonage d’un dépôt](media/train-model/team-explorer-devops.png)
 
 4. Dans le champ URL, sous **Dépôts Git locaux**, entrez `https://github.com/Microsoft/samples-for-ai`, entrez un dossier pour les fichiers clonés, puis sélectionnez **Cloner**.
 
@@ -50,11 +48,11 @@ Comme il est intégré à Visual Studio Tools pour IA, vous pouvez dynamiquement
 
     ![Galerie d’exemples](media/train-model/tensorflowexamples.png)
 
-7. Définir le projet MNIST comme **Projet de démarrage**
+7. Définissez le projet MNIST comme **Projet de démarrage**.
 
     ![Galerie d’exemples](media/train-model/mnist-startup.png)
 
-8. <strong>Cliquez avec le bouton droit sur **Projet MNIST, **Envoyer la tâche</strong>
+8. <strong>Cliquez avec le bouton droit sur le **projet MNIST,** **Envoyer la tâche**</strong>.
 
     ![Galerie d’exemples](media/train-model/submit-job.png)
 9. Sélectionnez votre cluster **Azure Batch AI**, puis cliquez sur **Importer**. Sélectionnez le fichier `AzureBatchAI_TF_MNIST.json` pour remplir rapidement quelques valeurs par défaut comme l’image Docker à utiliser. Cliquez ensuite sur **Envoyer**

@@ -1,9 +1,6 @@
 ---
 title: Les Services associés et les Interfaces (VSPackage de contrôle de code Source) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, interfaces
@@ -11,34 +8,34 @@ helpviewer_keywords:
 ms.assetid: 3e96e838-5675-46bb-99cf-40d420086038
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e68c7c0101661ae9afffa7e9e12e8e4faa44fc7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 00bebd0a08acb9eeab369f5aa80b94e6805277b0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940487"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56598997"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Services et interfaces associés (VSPackage de contrôle de code source)
-Cette section répertorie toutes les interfaces associées à un VSPackage dans contrôle de la source de la [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. Le contrôle de code source VSPackage implémente certaines de ces interfaces et d’autres utilise pour accomplir les tâches de contrôle de code source.  
-  
-## <a name="interfaces-implemented-by-and-for-source-control-vspackages"></a>Interfaces implémentées par et pour les VSPackages de contrôle de code Source  
- Les interfaces suivantes sont décrites dans le [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], et le contrôle de code source VSPackage implémente un sous-ensemble d'entre elles en fonction de son jeu de fonctionnalités souhaitées. Certaines interfaces sont marqués comme obligatoire et doit être implémentée par chaque VSPackage de contrôle de code source.  
-  
- Pour ces interfaces un package n’implémente pas, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fournit une implémentation par défaut. Notez que l’implémentation par défaut est conçue pour le cas lorsque aucun VSPackage n’est enregistré et aucun projet n’est pas contrôlé. Un contrôle de source correctement écrites VSPackage implémente les interfaces nécessaires plutôt que de le laisser à l’implémentation par défaut de ces interfaces.  
-  
- Un VSPackage de contrôle de code source doit implémenter un service privé qui encapsule tout ou partie des interfaces suivantes.  
-  
- Les interfaces sont :  
-  
--   Requis : L’entité appropriée (contrôle de code source VSPackage, Stub de contrôle de code Source, de projet) doit implémenter l’interface.  
-  
--   Recommandé : L’entité doit implémenter cette interface ; Sinon, les fonctionnalités de contrôle de code source peuvent être limitées.  
-  
--   Facultatif : l’entité peut implémenter cette interface pour fournir un ensemble de fonctionnalités plus riches.  
-  
+Cette section répertorie toutes les interfaces associées à un VSPackage dans contrôle de la source de la [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. Le contrôle de code source VSPackage implémente certaines de ces interfaces et d’autres utilise pour accomplir les tâches de contrôle de code source.
+
+## <a name="interfaces-implemented-by-and-for-source-control-vspackages"></a>Interfaces implémentées par et pour les VSPackages de contrôle de code Source
+ Les interfaces suivantes sont décrites dans le [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], et le contrôle de code source VSPackage implémente un sous-ensemble d'entre elles en fonction de son jeu de fonctionnalités souhaitées. Certaines interfaces sont marqués comme obligatoire et doit être implémentée par chaque VSPackage de contrôle de code source.
+
+ Pour ces interfaces un package n’implémente pas, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fournit une implémentation par défaut. Notez que l’implémentation par défaut est conçue pour le cas lorsque aucun VSPackage n’est enregistré et aucun projet n’est pas contrôlé. Un contrôle de source correctement écrites VSPackage implémente les interfaces nécessaires plutôt que de le laisser à l’implémentation par défaut de ces interfaces.
+
+ Un VSPackage de contrôle de code source doit implémenter un service privé qui encapsule tout ou partie des interfaces suivantes.
+
+ Les interfaces sont :
+
+-   Obligatoire : L’entité appropriée (contrôle de code source VSPackage, Stub de contrôle de code Source, de projet) doit implémenter l’interface.
+
+-   Recommandé : L’entité doit implémenter cette interface ; Sinon, les fonctionnalités de contrôle de code source peuvent être limitées.
+
+-   Facultatif : l’entité peut implémenter cette interface pour fournir un ensemble de fonctionnalités plus riches.
+
 | Interface | Objectif | Implémenté par | Implémenter ? |
 | - | - |--------------------------|-------------|
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> | Éditeurs appellent cette interface avant de modifier ou de l’enregistrement d’un fichier. Le contrôle de code source VSPackage peut extraire le fichier ou refuser l’opération si l’extraction échoue. | Contrôle de code source VSPackage | Recommandé |
@@ -63,6 +60,6 @@ Cette section répertorie toutes les interfaces associées à un VSPackage dans 
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> | Cette interface est utilisée pour enregistrer des paramètres de contrôle de la source dans le fichier solution (.sln). Les paramètres incluent l’emplacement de contrôle de source et les indicateurs d’état de contrôle de code source. | Contrôle de code source VSPackage | Recommandé |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> | Cette interface est utilisée pour enregistrer les paramètres de contrôle de source dans le fichier d’options (.suo) de solution. Cela peut inclure des paramètres de contrôle de source de spécifiques à l’utilisateur comme emplacement de l’inscription de l’utilisateur actuel. | Contrôle de code source VSPackage | Recommandé |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> | Cette interface est utilisée pour surveiller les événements afin d’effectuer des opérations telles que l’archivage des fichiers projet avant de fermer les solutions, ou bien les nouveaux fichiers à partir du contrôle de code source lors de l’ouverture d’un projet. | Contrôle de code source VSPackage | Recommandé |
-  
-## <a name="see-also"></a>Voir aussi  
- [Éléments de conception](../../extensibility/internals/source-control-vspackage-design-elements.md)
+
+## <a name="see-also"></a>Voir aussi
+- [Éléments de conception](../../extensibility/internals/source-control-vspackage-design-elements.md)

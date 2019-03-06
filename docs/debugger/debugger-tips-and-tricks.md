@@ -3,7 +3,6 @@ title: Trucs et astuces dans le débogueur
 description: En savoir plus sur certaines des fonctionnalités connues prises en charge par le débogueur Visual Studio
 ms.custom: seodec18
 ms.date: 06/15/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - stepping
@@ -12,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: 5262d8b1-2648-429e-85d5-90fcaadfb362
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 238236df48adab491cd8a1f9282a8f6a440c5321
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 87c9bd45383cdd4e5329834e4a64b1917229e08b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055223"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717544"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Découvrez des conseils de productivité et des astuces pour le débogueur dans Visual Studio
 
-Lisez cette rubrique pour découvrir quelques conseils de productivité et des conseils le débogueur Visual Studio. Pour examiner les fonctionnalités de base du débogueur, consultez [visite guidée des fonctionnalités débogueur](../debugger/debugger-feature-tour.md). Dans cette rubrique, nous abordons certaines zones qui ne sont pas inclus dans la visite guidée des fonctionnalités.
+Lisez cette rubrique pour découvrir quelques conseils de productivité et des conseils le débogueur Visual Studio. Pour examiner les fonctionnalités de base du débogueur, consultez [tout d’abord examiner le débogueur](../debugger/debugger-feature-tour.md). Dans cette rubrique, nous abordons certaines zones qui ne sont pas inclus dans la visite guidée des fonctionnalités.
 
 ## <a name="pin-data-tips"></a>Code confidentiel des bulles d’informations
 
@@ -78,9 +77,9 @@ Il est facile d’afficher des variables à l’aide des fenêtres du débogueur
 3. Recherchez la variable dans le **variables locales** fenêtre (**Déboguer > Windows > variables locales**), avec le bouton droit de la variable, puis sélectionnez **Make Object ID**.
 
     ![Créer un ID d’objet](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
-  
+
 4.  Le symbole **$** et un nombre s’affichent alors dans la fenêtre **Variables locales** . Cette variable est l’ID d’objet.
-  
+
 5.  Avec le bouton droit de la variable d’ID objet et choisissez **ajouter un espion**.
 
 Pour plus d’informations, consultez [créer un ID d’objet](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds).
@@ -89,7 +88,7 @@ Pour plus d’informations, consultez [créer un ID d’objet](../debugger/watch
 
 Pour afficher les valeurs de retour pour vos fonctions, examinez les fonctions qui s’affichent dans le **automatique** fenêtre pendant que vous avancerez dans votre code. Pour afficher la valeur de retour pour une fonction, assurez-vous que la fonction que vous êtes intéressé a déjà été exécutée (appuyez sur **F10** une fois si vous êtes actuellement arrêté sur l’appel de fonction). Si la fenêtre est fermée, utilisez **Déboguer > Windows > automatique** pour ouvrir le **automatique** fenêtre.
 
-![Automatique fenêtre](../debugger/media/dbg-tips-autos-window.png "AutosWindow")
+![Fenêtre Automatique](../debugger/media/dbg-tips-autos-window.png "AutosWindow")
 
 En outre, vous pouvez entrer des fonctions dans le **immédiat** fenêtre pour afficher les valeurs de retour. (Ouvrir à l’aide de **Déboguer > Windows > exécution**.)
 
@@ -124,11 +123,11 @@ Si vous avez besoin de déboguer les types de problèmes qui sont communes aux a
 #### <a name="to-show-threads-in-your-source-code"></a>Pour afficher les threads dans votre code source
 
 1.  Pendant le débogage, cliquez sur le **afficher les Threads dans la Source** bouton ![afficher les Threads dans la Source](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") dans le **déboguer** barre d’outils.
-  
+
 2.  Examinez la reliure située sur le côté gauche de la fenêtre. Sur cette ligne, vous voyez un *marqueur de thread* icône ![marqueur de Thread](../debugger/media/dbg-thread-marker.png "ThreadMarker") qui ressemble à deux threads de maillage. Le marqueur de thread indique qu'un thread est interrompu à cet emplacement.
 
     Notez qu’un marqueur de thread peut être partiellement masqué par un point d’arrêt.
-  
+
 3.  Placez le pointeur sur le marqueur de thread. Un DataTip apparaît. Le DataTip vous indique le nom et le numéro d'ID de thread de chaque thread interrompu.
 
     Vous pouvez également afficher l’emplacement de threads dans le [fenêtre Piles parallèles](../debugger/get-started-debugging-multithreaded-apps.md).
@@ -163,8 +162,8 @@ Pour savoir comment le débogueur classe code en tant que code utilisateur, cons
 
 Pour des conseils supplémentaires et des astuces et des informations plus détaillées, consultez ces billets de blog :
 
-- [7 piratages connus inférieure pour le débogage dans Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/06/26/7-lesser-known-hacks-for-debugging-in-visual-studio/)
-- [7 merveilles cachées dans Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/10/05/7-hidden-gems-in-visual-studio-2017/)
+- [7 piratages connus inférieure pour le débogage dans Visual Studio](https://devblogs.microsoft.com/visualstudio/7-lesser-known-hacks-for-debugging-in-visual-studio/)
+- [7 merveilles cachées dans Visual Studio](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
 
 ## <a name="see-also"></a>Voir aussi
 [Raccourcis clavier](../ide/tips-and-tricks-for-visual-studio.md)

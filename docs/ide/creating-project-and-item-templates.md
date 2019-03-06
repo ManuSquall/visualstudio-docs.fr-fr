@@ -1,8 +1,6 @@
 ---
 title: Modèles pour les projets et les fichiers
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - templates [Visual Studio], project
@@ -11,13 +9,13 @@ helpviewer_keywords:
 - project templates [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 04aa647d378e956c7a2394b7c3fc2a187a7c5963
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 603920aac4a7ba6d91996f3717927112ec8e5ec5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049278"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933858"
 ---
 # <a name="project-and-item-templates"></a>Modèles de projet et d’élément
 

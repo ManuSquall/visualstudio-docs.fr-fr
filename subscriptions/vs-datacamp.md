@@ -3,18 +3,16 @@ title: Améliorez aujourd’hui vos compétences en matière de science des donn
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 05/30/2018
-ms.topic: Get-Started-Article
+ms.date: 12/19/2018
+ms.topic: conceptual
 description: Découvrez l’abonnement DataCamp Training inclus dans certains abonnements Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cd0b92d8515e488d74cc124c888bb0e8ca9537e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 83cbb3cb0b10faddab860caf71e11ca4a03d4e4a
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863905"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841427"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Avantage DataCamp Training dans les abonnements Visual Studio
 
@@ -33,7 +31,7 @@ La durée de votre avantage DataCamp dépend du type de votre abonnement Visual 
 3. Dans la page DataCamp, vous pouvez créer un compte.  Vous pouvez choisir d’entrer une adresse e-mail et un mot de passe, ou de vous connecter avec des comptes Facebook, LinkedIn ou Google existants.  Une fois que vous avez fourni vos informations de connexion, cliquez sur **Get Started** (Démarrer).
    > [!div class="mx-imgBorder"]
    > ![DataCamp : Créer un compte](_img/vs-datacamp/vs-datacamp-create-account.png)
-   > 
+   >
    > [!NOTE]
    > Quand vous commencez à créer votre compte, vous pouvez recevoir un message d’erreur similaire à celui-ci : « Désolé !  Votre code de promotion n’est pas valide ou a expiré. »  La raison est que votre code de promotion expire au bout de quelques minutes après sa création.  Si vous recevez ce message, retournez à la page [Avantages](https://my.visualstudio.com/benefits), puis cliquez sur le lien **Activer** dans la vignette de l’avantage DataCamp.
 
@@ -42,12 +40,9 @@ La durée de votre avantage DataCamp dépend du type de votre abonnement Visual 
     - Commencer l’apprentissage de Python pour la science des données
     - Développer vos compétences en science des données
 
-
-~~~
-Just click on your chosen path to get started.
-> [!div class="mx-imgBorder"]
-> ![DataCamp Choose Path](_img\vs-datacamp\vs-datacamp-choose-path.png)
-~~~
+   Cliquez simplement sur le parcours de votre choix pour commencer.
+   > [!div class="mx-imgBorder"]
+   > ![DataCamp, Choisir un parcours](_img/vs-datacamp/vs-datacamp-choose-path.png)
 
 5. Une fois que vous avez sélectionné votre parcours, vous pouvez affiner davantage votre parcours d’apprentissage en sélectionnant un objectif.  Par exemple, si vous avez choisi le parcours « Développer vos compétences en science des données », vous voyez les options suivantes. Choisissez une option ou cliquez sur **I am not sure.  Show me all career paths** (Je ne suis pas sûr. Montrez-moi tous les parcours professionnels.) pour créer un parcours plus étendu.
    > [!div class="mx-imgBorder"]
@@ -65,31 +60,34 @@ Just click on your chosen path to get started.
 
 Vous pouvez arrêter à tout moment et reprendre votre formation à la prochaine session.  Accédez à [http://www.datacamp.com](http://www.datacamp.com), puis connectez-vous.  Vous voyez votre tableau de bord et vous pouvez reprendre votre formation là où vous l’avez interrompue. Cliquez simplement sur **Continue Track** (Continuer le parcours).
 
-> [!div class="mx-imgBorder"]   
+> [!div class="mx-imgBorder"]
 > ![DataCamp : Continuer la formation](_img/vs-datacamp/vs-datacamp-continue-training.png)
 
 ## <a name="eligibility"></a>Éligibilité
 
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, cloud annuel)   | Licences en volume, Azure, Détail, | 3 mois       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
-| Visual Studio Professional (Standard, cloud annuel) | Licences en volume, Azure, Détail                                       | 3 mois                                                            |  Non.  Disponible pour les nouveaux abonnés uniquement           |
+| Visual Studio Enterprise (Standard)   | Licences en volume, Azure, Détail, | 3 mois       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
+| Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | 3 mois                                                            |  Non.  Disponible pour les nouveaux abonnés uniquement           |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Disponible                                             |  Non.  Disponible pour les nouveaux abonnés uniquement           |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Disponible                                              |  Non.  Disponible pour les nouveaux abonnés uniquement           |
 | Visual Studio Dev Essentials | N/A  | 2 mois | Non. Disponible pour les nouveaux abonnés uniquement |
-| Visual Studio Enterprise (Standard, cloud annuel)  | NFR<sup>1</sup> |Non disponible  | N/A |
+| Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Non disponible  | N/A |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure | Non disponible | N/A |
 
 
 
-<sup>1</sup> *Inclut : NFR (revente interdite), FTE, MVP (Microsoft Valued Professional), RD (Region Director), MPN (Microsoft Partner Network), VSIP (Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark, Imagine.*
+<sup>1</sup>  *Inclut :  NFR (revente interdite), FTE, MVP (Most Valuable Professional), RD (Regional Director), MPN (Microsoft Partner Network), VSIP (Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark, Imagine*
 
+
+> [!NOTE]
+> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
 
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
 
-## <a name="support-resources"></a>Ressources de support technique
+## <a name="support-resources"></a>Ressources de support
 -  Besoin d’aide pour utiliser DataCamp ?  Consultez les ressources suivantes :
     - [Communauté DataCamp](https://www.datacamp.com/community/tutorials), avec des forums et des didacticiels.
     - [Centre d’aide DataCamp](https://support.datacamp.com/hc), qui vous permet de rechercher des rubriques d’aide et de consulter les questions des utilisateurs.

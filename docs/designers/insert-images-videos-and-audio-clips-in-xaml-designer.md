@@ -1,21 +1,19 @@
 ---
 title: Insérer des images, des vidéos et des clips audio dans le concepteur XAML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: ff707aca-6bc5-4a2d-834b-bb6511a7b8f6
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 3ca0d99a1bab255208b8eb9f1bb7fda69a14c1c4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8ef1c82e18b99383f61ccbad298102b4db1fcb24
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882338"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937306"
 ---
 # <a name="insert-images-videos-and-audio-clips-in-xaml-designer"></a>Insérer des images, des vidéos et des clips audio dans le concepteur XAML
 Images, vidéos et clips audio contribuent à agrémenter visuellement votre application.

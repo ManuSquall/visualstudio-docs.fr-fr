@@ -8,15 +8,13 @@ helpviewer_keywords:
 ms.assetid: d0b5b23c-7e94-4637-be6c-2620a5442d46
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 4b9408560eabf9a824f391625753b2ddd390a9d2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: f27ef33b03d6b8c7d9f84fab67a7791c9ba42735
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054072"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55914459"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>Procédure : créer un plug-in au niveau de la requête
 

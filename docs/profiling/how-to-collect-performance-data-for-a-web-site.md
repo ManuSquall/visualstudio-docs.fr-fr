@@ -1,8 +1,6 @@
 ---
 title: 'Procédure : collecter des données de performances pour un site web | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vsperf.url.url
@@ -16,15 +14,15 @@ helpviewer_keywords:
 - ASP.NET, performance profilng
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2d9cb832d8797eb4ebf16482f4bef02aa6644a3
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f91646575fba2df1f48c08adc7a9233bb63f27df
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064295"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630481"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Procédure : collecter des données de performances pour un site web
 
@@ -103,7 +101,7 @@ Vous pouvez utiliser **l’Assistant Performance** pour collecter des données d
 
 ## <a name="see-also"></a>Voir aussi
 
-[Vues d’ensemble](../profiling/overviews-performance-tools.md)  
-[Configurer des sessions de performances](../profiling/configuring-performance-sessions.md)  
-[Comprendre les valeurs de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md)  
-[Fonctionnement des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)
+[Vues d’ensemble](../profiling/overviews-performance-tools.md)
+[Configurer des sessions de performances](../profiling/configuring-performance-sessions.md)
+[Comprendre le fonctionnement des valeurs de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md)
+[Comprendre le fonctionnement des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)

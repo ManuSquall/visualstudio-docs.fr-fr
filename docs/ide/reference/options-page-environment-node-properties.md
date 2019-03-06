@@ -1,8 +1,6 @@
 ---
 title: Page Options, Environnement, propriétés de nœud
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - automation [Visual Studio], controlling Tools Options
@@ -10,21 +8,23 @@ helpviewer_keywords:
 ms.assetid: 26dca41f-91fc-4ca7-9103-3da402baa1d5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e22b24889a14d49afddd3c30858814ddec663e6a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 79ddd62df2afd5052d3ef1ecc0753d3f8ba6cf3a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672728"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708327"
 ---
 # <a name="options-page-environment-node-properties"></a>Page Options, Environnement, propriétés de nœud
-Ce document décrit les pages (ou collections de propriétés) associées à la catégorie **Environnement**, `DTE.Properties("Environment", <Property Page>)`, de la boîte de dialogue **Options**. Le titre de chaque sous-section correspond à l’appel utilisé pour accéder à la collection de propriétés, tandis que le tableau dans chaque sous-section répertorie les propriétés de la collection.
+
+Cet article décrit les pages (ou collections de propriétés) associées à la catégorie **Environnement**, `DTE.Properties("Environment", <Property Page>)`, de la boîte de dialogue **Options**. Le titre de chaque sous-section correspond à l’appel utilisé pour accéder à la collection de propriétés, tandis que le tableau dans chaque sous-section répertorie les propriétés de la collection.
 
 ## <a name="general"></a>Général
- `DTE.Properties("Environment", "General")`
+
+`DTE.Properties("Environment", "General")`
 
 |Nom de l'élément de propriété|Value|Description|
 | - |-----------|-----------------|
@@ -39,7 +39,8 @@ Ce document décrit les pages (ou collections de propriétés) associées à la 
 |AutohidePinActiveTabOnly|Get/Set (booléen)|Détermine si le bouton **Masquer automatiquement** affecte seulement l’onglet actif.|
 
 ## <a name="add-inmacros-security"></a>Sécurité des compléments/macros
- `DTE.Properties("Environment", "AddinMacrosSecurity")`
+
+`DTE.Properties("Environment", "AddinMacrosSecurity")`
 
 |Nom de l'élément de propriété|Value|Description|
 | - |-----------|-----------------|
@@ -48,7 +49,8 @@ Ce document décrit les pages (ou collections de propriétés) associées à la 
 |LoadAddinsFromTheWeb|Get/Set (booléen)|Permet le chargement des compléments à partir d'une URL sur le web.|
 
 ## <a name="documents"></a>Documents
- `DTE.Properties("Environment", "Documents")`
+
+`DTE.Properties("Environment", "Documents")`
 
 |Nom de l'élément de propriété|Value|Description|
 | - |-----------|-----------------|
@@ -65,7 +67,8 @@ Ce document décrit les pages (ou collections de propriétés) associées à la 
 |DocumentDockPreference|Get/Set (Enum)|<xref:EnvDTE100.vsDocumentDockPreferenceOptions>. Position dans l'onglet où insérer le document ouvert.|
 
 ## <a name="extension-manager"></a>Gestionnaire d’extensions
- `DTE.Properties("Environment", "ExtensionManager")`
+
+`DTE.Properties("Environment", "ExtensionManager")`
 
 |Nom de l'élément de propriété|Value|Description|
 | - |-----------|-----------------|
@@ -74,7 +77,8 @@ Ce document décrit les pages (ou collections de propriétés) associées à la 
 |AutomaticallyCheckForUpdates|Get/Set (booléen)|Recherche automatiquement les mises à jour des extensions installées.|
 
 ## <a name="find-and-replace"></a>Rechercher et remplacer
- `DTE.Properties("Environment", "FindAndReplace")`
+
+`DTE.Properties("Environment", "FindAndReplace")`
 
 |Nom de l'élément de propriété|Value|Description|
 | - |-----------|-----------------|
@@ -84,7 +88,8 @@ Ce document décrit les pages (ou collections de propriétés) associées à la 
 |HideWindowsAfterMatchFromQuickFindReplace|Get/Set (booléen)|Masque la fenêtre **Rechercher et remplacer** une fois qu’une correspondance est trouvée à l’aide de **Recherche rapide** ou de **Remplacement rapide**.|
 
 ## <a name="import-and-export-settings"></a>Importation et exportation de paramètres
- `DTE.Properties("Environment", "Import and Export Settings")`
+
+`DTE.Properties("Environment", "Import and Export Settings")`
 
 |Nom de l'élément de propriété|Value|Description|
 | - |-----------|-----------------|
@@ -93,21 +98,24 @@ Ce document décrit les pages (ou collections de propriétés) associées à la 
 |AutoSaveFile|Get/Set (chaîne)|Nom du fichier où les paramètres utilisateur sont automatiquement enregistrés.|
 
 ## <a name="international-settings"></a>Paramètres internationaux
- `DTE.Properties("Environment", "International")`
+
+`DTE.Properties("Environment", "International")`
 
 |Nom de l'élément de propriété|Value|Description|
 | - |-----------|-----------------|
 |Langue|Get/Set (chaîne)|Valeur LCID pour la langue actuelle de Visual Studio.|
 
 ## <a name="keyboard"></a>Clavier
- `DTE.Properties("Environment", "Keyboard")`
+
+`DTE.Properties("Environment", "Keyboard")`
 
 |Nom de l'élément de propriété|Value|Description|
 | - |-----------|-----------------|
 |Scheme|Get/Set (chaîne)|Retourne une chaîne qui contient un schéma intégré, une chaîne contenant le chemin d'accès complet du fichier .vsk qui est chargé, ou « (Par défaut) » si aucun fichier .vsk n'est chargé.|
 
 ## <a name="projects-and-solution"></a>Projets et solution
- `DTE.Properties("Environment", "ProjectsAndSolution")`
+
+`DTE.Properties("Environment", "ProjectsAndSolution")`
 
 |Nom de l'élément de propriété|Value|Description|
 | - |-----------|-----------------|
@@ -130,17 +138,31 @@ Ce document décrit les pages (ou collections de propriétés) associées à la 
 |MSBuildOutputVerbosity|Get/Set (chaîne)|Spécifie le niveau de détail pour la sortie de la build.|
 
 ## <a name="startup"></a>Démarrage
- `DTE.Properties("Environment", "Startup")`
+
+`DTE.Properties("Environment", "Startup")`
+
+::: moniker range="vs-2017"
 
 |Nom de l'élément de propriété|Value|Description|
 | - |-----------|-----------------|
-|OnStartUp|Get/Set (Enum)|Action à exécuter au démarrage, à partir de <xref:EnvDTE.vsStartUp>, avec des valeurs de 0 à 5 :<br /><br /> - 0 : Ouvrir la page d’accueil<br />- 1 : Charger la dernière solution chargée<br />- 2 : Afficher la boîte de dialogue **Ouvrir un projet**<br />- 3 : Afficher la boîte de dialogue **Nouveau projet**<br />- 4 : Afficher l’environnement vide<br />- 5 : Afficher la page de démarrage|
+|OnStartUp|Get/Set (Enum)|Action à exécuter au démarrage, à partir de <xref:EnvDTE.vsStartUp>, avec des valeurs de 0 à 5 :<br /><br /> -   0 : ouvrir la page d’accueil<br />-   1 : charger la dernière solution chargée<br />-   2 : afficher la boîte de dialogue **Ouvrir un projet**<br />-   3 : afficher la boîte de dialogue **Nouveau projet**<br />-   4 : afficher l’environnement vide<br />-   5 : afficher la page de démarrage|
 |StartPageRSSUrl|Get/Set (chaîne)|URL du flux RSS utilisé au démarrage.|
 |StartPageRefreshDownloadedContent|Get/Set (booléen)|Actualise la page de démarrage après chaque passage de l'intervalle spécifié dans StartPageRefreshInterval.|
 |StartPageRefreshInterval|Get/Set (Short)|Intervalle en minutes pour actualiser la page de démarrage.|
 
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+|Nom de l'élément de propriété|Value|Description|
+| - |-----------|-----------------|
+|OnStartUp|Get/Set (Enum)|Action à exécuter au démarrage, à partir de <xref:EnvDTE.vsStartUp>.|
+
+::: moniker-end
+
 ## <a name="tasklist"></a>TaskList
- `DTE.Properties("Environment", "TaskList")`
+
+`DTE.Properties("Environment", "TaskList")`
 
 |Nom de l'élément de propriété|Value|Description|
 | - |-----------|-----------------|
@@ -150,7 +172,8 @@ Ce document décrit les pages (ou collections de propriétés) associées à la 
 |CommentTokens|SafeArray|Retourne un SafeArray des valeurs de jeton de commentaire. Chacun a les champs `Name` (chaîne) et `Priority` (<xref:EnvDTE.vsTaskPriority>, Haute, Moyenne ou Faible).|
 
 ## <a name="web-browser"></a>Navigateur web
- `DTE.Properties("Environment", "WebBrowser")`
+
+`DTE.Properties("Environment", "WebBrowser")`
 
 |Nom de l'élément de propriété|Value|Description|
 | - |-----------|-----------------|

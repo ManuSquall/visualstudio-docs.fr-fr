@@ -1,23 +1,21 @@
 ---
 title: Remplacer une variable temporaire par sa valeur
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a6fea50f3cceb907cb014d29bb46988ab07dad6c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a7c691efcc507212aa0649b6c4b4179fb8288f06
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066861"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55946104"
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>Inclure une variable temporaire (refactorisation)
 

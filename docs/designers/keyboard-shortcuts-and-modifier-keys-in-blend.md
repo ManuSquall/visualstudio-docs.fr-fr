@@ -1,21 +1,19 @@
 ---
 title: Raccourcis clavier et touches de modification dans Blend
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: f9ec9724-7571-4777-8ff8-d9be012eae8f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bff2fde2a629d0f5581f3cda2b0ae71d913acc0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9575effa2740620c585e1dddc64bb67a1d919d2f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903294"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939669"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Raccourcis clavier et touches de modification dans Blend
 

@@ -6,17 +6,15 @@ helpviewer_keywords:
 - tests and requirements
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: e1fd3b1cd19efa9032b7b92576a489e3b17373db
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 82f464e6c58c8403ffee34957f9bd49b39471114
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919329"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940280"
 ---
 # <a name="develop-tests-from-a-model"></a>Développer des tests à partir d'un modèle
 Vous pouvez utiliser les spécifications et les modèles architecturaux pour mieux organiser les tests de votre système et de ses composants. Cette pratique vous permet de vous assurer que vous testez les impératifs importants des utilisateurs et des autres parties prenantes, et vous aide à mettre rapidement à jour les tests quand les impératifs changent. Si vous utilisez [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], vous pouvez également tenir à jour des liens entre les modèles et les tests.
@@ -52,7 +50,7 @@ Vous pouvez utiliser les spécifications et les modèles architecturaux pour mie
 
     -   Si le plan de développement implémente un aspect du cas d'usage avant un autre, vous pouvez activer les tests séparément à mesure que le développement progresse.
 
--   Lors de la conception des tests, séparez le choix des données de test du code ou du script qui détermine si la post-condition a été remplie. Par exemple, voici un exemple de test d'une fonction arithmétique simple : entrer 4, vérifier que la sortie est 2. Au lieu de cela, concevez le script comme suit : choisir une entrée, multiplier le résultat par lui-même et vérifier que le résultat est l'entrée d'origine. Ce style vous permet de faire varier les entrées de test sans modifier le corps principal du test.
+-   Lors de la conception des tests, séparez le choix des données de test du code ou du script qui détermine si la post-condition a été remplie. Par exemple, un test d’une fonction arithmétique simple peut être : Entrée 4 ; Vérifiez que la sortie est 2. Au lieu de cela, concevez le script en tant que : Choisissez une entrée ; multiplier le résultat par lui-même et vérifiez que le résultat est l’entrée d’origine. Ce style vous permet de faire varier les entrées de test sans modifier le corps principal du test.
 
 #### <a name="linking-tests-to-use-cases"></a>Liaison de tests à des cas d'usage
  Si vous utilisez [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] pour concevoir et exécuter vos tests, vous pouvez organiser vos tests sous spécification, cas d’usage ou des éléments de travail récit utilisateur. Vous pouvez lier ces éléments de travail à des cas d'usage dans votre modèle. Cela vous permet d'effectuer un suivi rapide des modifications d'impératifs lors des tests et vous aide à suivre la progression de chaque cas d'usage.

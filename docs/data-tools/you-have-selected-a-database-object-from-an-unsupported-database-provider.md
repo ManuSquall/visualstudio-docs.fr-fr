@@ -5,36 +5,28 @@ ms.topic: reference
 ms.assetid: c0f1298e-31aa-471e-ae19-1bafffd2ae40
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5b6eef41ebd3ae6fc08029a618cf276e22001235
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
-ms.translationtype: MT
+ms.openlocfilehash: 13e6dd42ed372fb28d850a566ea1900447ad220c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37116874"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909509"
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>Vous avez sélectionné un objet de base de données dans un fournisseur de base de données non pris en charge
 
-Le **Concepteur O/R** prend en charge uniquement le fournisseur de données .NET Framework pour SQL Server (<xref:System.Data.SqlClient>). Bien que vous pouvez cliquer sur **OK** et continuer à travailler avec des objets provenant de fournisseurs de base de données non pris en charge, vous pouvez rencontrer un comportement inattendu au moment de l’exécution.
+Le **Concepteur O/R** prend en charge uniquement le fournisseur de données .NET Framework pour SQL Server (<xref:System.Data.SqlClient>). Bien que vous puissiez cliquer sur **OK** et continuer d’utiliser des objets de fournisseurs de base de données non pris en charge, vous risquez de rencontrer des comportements inattendus au moment de l’exécution.
 
 > [!NOTE]
 > Seules les connexions de données qui utilisent le fournisseur de données .NET Framework pour SQL Server sont prises en charge.
 
-## <a name="to-correct-this-error"></a>Pour corriger cette erreur
+## <a name="options"></a>Options
 
-- Cliquez sur **OK**.
+- Cliquez sur **OK** pour continuer de concevoir les classes d'entité qui mappent à la connexion utilisée par le fournisseur de bases de données non pris en charge. Vous risquez de rencontrer des comportements inattendus en utilisant des fournisseurs de base de données non pris en charge.
 
-   Vous pouvez continuer à concevoir les classes d’entité qui mappent à la connexion qui utilise le fournisseur de base de données non pris en charge. Vous risquez de rencontrer des comportements inattendus en utilisant des fournisseurs de base de données non pris en charge.
-
-    - ou -
-
-- Cliquez sur **Annuler**.
-
-   L'action est arrêtée. Créez ou utilisez une connexion de données qui utilise le fournisseur .NET Framework pour SQL Server.
+- Cliquez sur **Annuler** pour arrêter l’action. Créez ou utilisez une connexion de données différente qui utilise le fournisseur .NET Framework pour SQL Server.
 
 ## <a name="see-also"></a>Voir aussi
 

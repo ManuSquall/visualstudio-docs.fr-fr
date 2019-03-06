@@ -1,21 +1,19 @@
 ---
 title: Nœuds de paramètre
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: reference
 ms.assetid: da54db0b-3a3d-48dc-858c-7ac43aa04b13
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52e7002deeba9d2d61eb860b2f5814375f2a18e6
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: c99986b65e1b396a92e667ceb4eeff2b92a58dc6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977698"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55944505"
 ---
 # <a name="parameter-nodes"></a>Nœuds de paramètres
 

@@ -3,24 +3,23 @@ title: Analyser les données d’utilisation de l’UC (ASP.NET)
 description: Mesurer les performances des applications en ASP.NET à l’aide de l’outil de diagnostic de l’utilisation de l’UC
 ms.custom: mvc
 ms.date: 08/06/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - Profiling Tools, quick start
 - Diagnostics Tools, CPU Usage
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 4d4f2382814cabbd26f93db27301ffa9b8d1c658
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: b21e9b1735f7d6e631d25cecb2923662625400c0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42626663"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634056"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Démarrage rapide : analyser les données d’utilisation de l’UC dans Visual Studio (ASP.NET)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Démarrage rapide : Analyser les données d’utilisation de l’UC dans Visual Studio (ASP.NET)
 
 Visual Studio fournit de nombreuses fonctionnalités puissantes qui vous permettent d’analyser les problèmes de performances dans votre application. Cette rubrique vous offre un moyen rapide de vous familiariser avec quelques-unes des fonctionnalités de base. Ici, nous allons examiner un outil pour identifier les goulots d’étranglement de performances liés à une utilisation élevée de l’UC. Les outils de diagnostics sont pris en charge pour le développement .NET dans Visual Studio (y compris ASP.NET) et pour le développement natif/C++.
 
@@ -88,8 +87,8 @@ Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Out
             {
                 m_totalIterations += iters;
             }
-            // we're just spinning here  
-            // and using Random to frustrate compiler optimizations  
+            // we're just spinning here
+            // and using Random to frustrate compiler optimizations
             for (var i = 0; i < iters; i++)
             {
                 result = rand.Next();
@@ -154,8 +153,8 @@ Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Out
     }
     ```
 
-##  <a name="step-1-collect-profiling-data"></a>Étape 1 : Collecter les données de profilage 
-  
+##  <a name="step-1-collect-profiling-data"></a>Étape 1 : Collecter les données de profilage
+
 1.  Tout d’abord, définissez un point d’arrêt dans votre application sur cette ligne de code dans le constructeur `Simple` :
 
     `for (int i = 0; i < 200; i++)`
@@ -168,7 +167,7 @@ Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Out
 
     > [!TIP]
     > En définissant deux points d’arrêt, vous limitez la collecte de données aux sections de code que vous souhaitez analyser.
-  
+
 1.  La fenêtre **Outils de diagnostic** est déjà visible, sauf si vous l’avez désactivée. Pour réafficher la fenêtre, cliquez sur **Déboguer** > **Fenêtres** > **Afficher les outils de diagnostic**.
 
 1.  Cliquez sur **Déboguer** > **Démarrer le débogage** (ou bien sur **Démarrer** dans la barre d’outils, ou sur **F5**).
@@ -190,7 +189,7 @@ Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Out
      Vous disposez maintenant de données de performances pour votre application, et plus spécifiquement pour la région de code qui s’exécute entre les deux points d’arrêt.
 
      Le profileur commence la préparation des données de thread. Attendez qu’elle se termine.
-  
+
      L’outil Utilisation de l’UC affiche le rapport sous l’onglet **Utilisation de l’UC**.
 
      À ce stade, vous pouvez commencer à analyser les données.
@@ -208,7 +207,7 @@ Nous vous recommandons de commencer à analyser vos données en examinant la lis
 
 2. Dans la liste des fonctions, double-cliquez sur la fonction `MyProfilingApp_MVC.Models.ServerClass::GetNumber`.
 
-    Quand vous double-cliquez sur la fonction, la vue **Appelant/appelé** s’ouvre dans le volet gauche. 
+    Quand vous double-cliquez sur la fonction, la vue **Appelant/appelé** s’ouvre dans le volet gauche.
 
     ![Outils de diagnostic : vue Appelant/appelé](../profiling/media/quickstart-cpu-usage-caller-callee-aspnet.png)
 
@@ -227,7 +226,7 @@ Nous vous recommandons de commencer à analyser vos données en examinant la lis
 - [Analyser l’utilisation de l’UC](../profiling/cpu-usage.md) pour obtenir des informations détaillées sur l’outil d’utilisation de l’UC.
 - Analyser l’utilisation de l’UC sans débogueur ou en ciblant une application en cours d’exécution. Pour plus d’informations, consultez la section [Recueillir des données de profilage sans débogage](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) dans [Exécuter des outils de profilage avec ou sans débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>Voir aussi
 
- [Profilage dans Visual Studio](../profiling/index.md)  
- [Découvrir les outils de profilage](../profiling/profiling-feature-tour.md)
+- [Profilage dans Visual Studio](../profiling/index.md)
+- [Découvrir les outils de profilage](../profiling/profiling-feature-tour.md)

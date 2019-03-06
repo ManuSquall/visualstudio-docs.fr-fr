@@ -1,8 +1,6 @@
 ---
 title: Définition d'options d'éditeur spécifiques au langage
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - editor options
@@ -10,15 +8,15 @@ helpviewer_keywords:
 - editor settings
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9890b68b05f4cedbb1a95299b87f505daea902f9
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 2d99d6ccfb7b5a310726fdb1cf2dbfebd6591bef
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389414"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942295"
 ---
 # <a name="setting-language-specific-editor-options"></a>Définition d’options d’éditeur spécifiques au langage
 

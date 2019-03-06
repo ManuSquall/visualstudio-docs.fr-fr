@@ -1,20 +1,18 @@
 ---
 title: Générer une substitution de méthode
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bb4a35c1f7c9e2752148e54f934a3fcbfb974136
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: afb32a7ddb9a53ac6585cc690a3ba8fd1098b080
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063640"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947027"
 ---
 # <a name="generate-an-override-in-visual-studio"></a>Générer une substitution dans Visual Studio
 

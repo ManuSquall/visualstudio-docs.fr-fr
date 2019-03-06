@@ -2,8 +2,6 @@
 title: Ressources pour la conception d’applications accessibles
 description: Découvrez comment créer des applications accessibles afin de faciliter leur utilisation par des personnes handicapées.
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility, Windows applications
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 426bf023-bb34-43c4-9edb-c307191c8170
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19642d5a327982454c9eaf4e5233451d5dba499e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: b79d1f95b6aab700de060a3749374e9ecb48c229
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671714"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952662"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Ressources pour la conception d’applications accessibles
 
@@ -37,7 +35,7 @@ Utilisez les liens suivants pour trouver des informations sur les technologies q
 
 ## <a name="windows-applications"></a>applications Windows
 
-* **[Procédure pas à pas : création d’une application Windows accessible](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)** : cet article fournit des instructions détaillées pour inclure les cinq exigences d’accessibilité et obtenir le logo « Certifié pour Windows » dans un exemple d’application Windows.
+* **[Procédure pas à pas : Création d’une application Windows accessible](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)**  : cet article fournit des instructions détaillées pour inclure les cinq exigences d’accessibilité et obtenir le logo « Certifié pour Windows » dans un exemple d’application Windows.
 
 * **Recommandations en matière de design de l’interface utilisateur clavier** Cet article technique explique comment concevoir une application Windows pour permettre aux utilisateurs de s’en servir à partir du clavier. Pour plus d’informations, consultez [Recommandations en matière de conception d’interface utilisateur clavier](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design).
 
@@ -45,7 +43,7 @@ Utilisez les liens suivants pour trouver des informations sur les technologies q
 
 ## <a name="websites"></a>Sites Web
 
--   [Procédure pas à pas : directives d’accessibilité pour l’utilisation de contrôles Image, Menu et AutoPostBack](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) : cet article fournit des instructions détaillées pour inclure des contrôles accessibles dans un exemple de page web. Il donne également des conseils de conception de l’accessibilité pour le web.
+-   [Procédure pas à pas : Directives d’accessibilité pour l’utilisation de contrôles Image, Menu et AutoPostBack](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) : cet article fournit des instructions détaillées pour inclure des contrôles accessibles dans un exemple de page web. Il donne également des conseils de conception de l’accessibilité pour le web.
 
 -   **Création de pages web accessibles en DHTML** Cet article technique répertorie les éléments HTML 4.0 accessibles, ainsi que les conseils de design concernant l’accessibilité pour le web. Pour plus d’informations, consultez [Créer des pages web accessibles avec DHTML](https://msdn.microsoft.com/library/ms528445.aspx).
 

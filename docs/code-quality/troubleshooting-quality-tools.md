@@ -1,23 +1,21 @@
 ---
 title: Résolution des problèmes liés aux outils de qualité
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: troubleshooting
 helpviewer_keywords:
 - Visual Studio ALM, developing the application
 ms.assetid: 535b9e67-ce9e-4a3e-8d28-9365f257036e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c8ba75170f0641ae4d0a436253f694f1af93641
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cdef5a6d8ff725155fce84450b2d6494705de03a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921551"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938798"
 ---
 # <a name="troubleshooting-quality-tools"></a>Résolution des problèmes liés aux outils de qualité
 

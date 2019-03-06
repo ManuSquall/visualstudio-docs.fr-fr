@@ -1,8 +1,6 @@
 ---
 title: IDiaFrameData::get_systemExceptionHandling | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,39 +9,40 @@ helpviewer_keywords:
 ms.assetid: e8df1972-913c-446c-9779-775575b0caa9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 889f2cf72d27b84cff86792f7b0ba3a43d63d09e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 0365c253626546d824459c580fdf2be1b87ed4ed
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882728"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642090"
 ---
 # <a name="idiaframedatagetsystemexceptionhandling"></a>IDiaFrameData::get_systemExceptionHandling
-Récupère un indicateur qui indique si la gestion des exceptions de système sont en vigueur.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C++  
-HRESULT get_systemExceptionHandling (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- pRetVal  
- [out] Retourne `TRUE` si la gestion des exceptions de système est en vigueur ; sinon, retourne `FALSE`.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
-  
-## <a name="remarks"></a>Notes  
- Gestion des exceptions de système sont plus communément appelée gestion structurée des exceptions.  
-  
- Pour déterminer si la gestion des exceptions C++ sont appliquée, appelez le [IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md) (méthode).  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
- [IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)
+Récupère un indicateur qui indique si la gestion des exceptions de système sont en vigueur.
+
+## <a name="syntax"></a>Syntaxe
+
+```C++
+HRESULT get_systemExceptionHandling ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Paramètres
+ pRetVal
+
+[out] Retourne `TRUE` si la gestion des exceptions de système est en vigueur ; sinon, retourne `FALSE`.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.
+
+## <a name="remarks"></a>Remarques
+ Gestion des exceptions de système sont plus communément appelée gestion structurée des exceptions.
+
+ Pour déterminer si la gestion des exceptions C++ sont appliquée, appelez le [IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md) (méthode).
+
+## <a name="see-also"></a>Voir aussi
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+- [IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)

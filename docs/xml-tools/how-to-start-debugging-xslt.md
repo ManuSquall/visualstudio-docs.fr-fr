@@ -1,24 +1,22 @@
 ---
-title: 'Procédure : démarrer le débogage XSLT'
+title: 'Procédure : démarrage du débogage XSLT'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: e499aea3793e5c496930fe255133d51361e6f394
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 196e071802c068475da1dea1ba7f2a5b94a86a36
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178346"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936332"
 ---
-# <a name="how-to-start-debugging-xslt"></a>Comment : démarrer le débogage XSLT
+# <a name="how-to-start-debugging-xslt"></a>Procédure : Démarrer le débogage XSLT
 
 Le débogueur XSLT permet de déboguer une feuille de style XSLT ou une application XSLT. Lors du débogage, vous pouvez exécuter le code ligne par ligne (pas à pas détaillé, pas à pas principal ou pas à pas sortant). Les commandes permettant d'utiliser la fonctionnalité d'exécution du code pas à pas dans le débogueur XSLT sont identiques à celles des autres débogueurs Visual Studio. Une fois le débogage lancé, le débogueur XSLT ouvre des fenêtres pour afficher le document d'entrée et la sortie XSLT.
 
@@ -94,4 +92,4 @@ namespace ConsoleApplication
 ## <a name="see-also"></a>Voir aussi
 
 - [Procédure pas à pas : Déboguer une feuille de style XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
-- [Principes de base du débogueur](../debugger/getting-started-with-the-debugger.md)
+- [Présentation du débogueur](../debugger/debugger-feature-tour.md)

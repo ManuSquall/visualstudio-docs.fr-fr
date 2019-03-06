@@ -2,22 +2,20 @@
 title: Concepteur de flux de travail - Concepteur d’activités WriteLine
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.WriteLine.UI
 ms.assetid: 1b5f29a8-b7fd-477e-949e-2f689cae3c96
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a512288d141823115361bf8eacfd179a74a1da1b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 17dd6e3c617749d82533d8bccb7f0caaa073ac26
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876709"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55930322"
 ---
 # <a name="writeline-activity-designer"></a>Concepteur d'activités WriteLine
 

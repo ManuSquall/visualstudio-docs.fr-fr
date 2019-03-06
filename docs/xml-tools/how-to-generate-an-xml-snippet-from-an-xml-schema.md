@@ -1,23 +1,21 @@
 ---
-title: "Procédure : générer un extrait XML à partir d'un schéma XML"
+title: "Procédure : génération d'un extrait XML à partir d'un schéma XML"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ac437bbbe876d81acc917f011a3051c9c264b6a
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: e8f9d984cabdb9e29ff1f5eac1734105d2a3e2f4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2018
-ms.locfileid: "34477676"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913952"
 ---
-# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Comment : générer un extrait XML à partir d’un schéma XML
+# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Procédure : Générer un extrait XML à partir d’un schéma XML
 
 L'éditeur XML permet de générer des extraits XML à partir d'un schéma de langage XSD (XML Schema definition). Par exemple, lorsque vous créez un fichier XML, tout en étant positionné en regard du nom de l’élément, vous pouvez appuyer sur **onglet** pour remplir l’élément avec des données XML générées à partir des informations de schéma pour cet élément.
 
@@ -52,9 +50,9 @@ Des valeurs par défaut sont générées et notées comme valeurs modifiables. S
 
 ### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Pour créer un nouveau fichier XML et l’associer à un schéma XML
 
-1.  Sur le **fichier** menu, pointez sur **nouveau**, puis cliquez sur **fichier**.
+1.  Sur le **fichier** menu, pointez sur **New**, puis cliquez sur **fichier**.
 
-2.  Sélectionnez **fichier XML** dans les **modèles** volet et cliquez sur **ouvrir**.
+2.  Sélectionnez **fichier XML** dans le **modèles** volet et cliquez sur **Open**.
 
      Un nouveau fichier s'ouvre dans l'éditeur. Il contient une déclaration XML par défaut, `<?xml version="1.0" encoding="utf-8">`.
 
@@ -66,11 +64,11 @@ Des valeurs par défaut sont générées et notées comme valeurs modifiables. S
 
      Le **ouvrir le schéma XSD** boîte de dialogue s’affiche.
 
-5.  Sélectionnez le fichier de schéma et cliquez sur **ouvrir**.
+5.  Sélectionnez le fichier de schéma et cliquez sur **Open**.
 
 6.  Cliquez sur **OK**.
 
-     Le schéma XML est à présent associé au document XML.
+     Le schéma XML est désormais associée au document XML.
 
 ### <a name="to-generate-an-xml-snippet"></a>Pour générer un extrait XML
 
@@ -88,7 +86,7 @@ Des valeurs par défaut sont générées et notées comme valeurs modifiables. S
 
 3.  Sélectionnez **Contact** dans la liste des membres et appuyez sur **entrée**.
 
-     L'éditeur ajoute la balise de début `<Contact` et place le curseur après le nom de l'élément.
+     L’éditeur ajoute l’étiquette de début `<Contact` et place le curseur après le nom de l’élément.
 
 4.  Appuyez sur **onglet** pour générer des données XML pour le `Contact` élément basé sur ses informations de schéma.
 
@@ -143,7 +141,7 @@ Des valeurs par défaut sont générées et notées comme valeurs modifiables. S
 
 ### <a name="output"></a>Sortie
 
- Voici les données XML générées sur la base des informations de schéma associées à l'élément `Contact`. Les éléments marqués comme `bold` champs modifiables dans l’extrait XML.
+ Voici les données XML générées sur la base des informations de schéma associées à l'élément `Contact`. Les éléments marqués comme `bold` champs modifiables dans l’extrait de code XML.
 
 ```xml
 <Contact>
@@ -159,4 +157,4 @@ Des valeurs par défaut sont générées et notées comme valeurs modifiables. S
 ## <a name="see-also"></a>Voir aussi
 
 - [Extraits XML](../xml-tools/xml-snippets.md)
-- [Comment : utiliser XML des extraits de code](../xml-tools/how-to-use-xml-snippets.md)
+- [Guide pratique pour Utiliser des extraits XML](../xml-tools/how-to-use-xml-snippets.md)

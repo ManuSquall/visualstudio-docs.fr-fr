@@ -1,14 +1,9 @@
 ---
 title: Utilisation efficace de la mémoire lors de la génération de projets volumineux | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - memory use (MSBuild)
 - msbuild, efficient memory use building large trees
@@ -17,13 +12,13 @@ ms.assetid: 853a21ed-69f7-4817-af00-57f73e2c74b5
 caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 89c7102a789f07cc9f0434dd5bf351ea4814d073
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b214ff057125b2921ec853fbee004cbb7d41f9e0
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218511"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54792765"
 ---
 # <a name="using-memory-efficiently-when-you-build-large-projects"></a>Utilisation efficace de la mémoire lors de la génération de projets volumineux
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,6 +30,3 @@ Les projets volumineux contiennent souvent de nombreux sous-projets et autres d�
   
 ## <a name="see-also"></a>Voir aussi  
  [Génération parallèle de plusieurs projets](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)
-
-
-

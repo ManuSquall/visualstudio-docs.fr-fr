@@ -1,23 +1,21 @@
 ---
-title: "Procédure : créer un schéma XML à partir d'un document XML"
+title: "Procédure : création d'un schéma XML à partir d'un document XML"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 1d6700a9-fd67-4794-8997-399589e99bec
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f33fc5b48b9fd6b1cc08570e62e73f05fd19e70
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: ebea3b20bc606ec82529e4a9b2a547d6a44fc905
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548283"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953787"
 ---
-# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Comment : créer un schéma XML à partir d’un document XML
+# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Procédure : Créer un schéma XML à partir d’un document XML
 
 L'éditeur XML permet de créer un schéma de langage XSD (XML Schema definition) à partir d'un document XML. Le document d'instance XML détermine la façon dont le schéma est généré, comme suit :
 
@@ -29,7 +27,7 @@ L'éditeur XML permet de créer un schéma de langage XSD (XML Schema definition
 
 Les schémas créés sont ensuite utilisés pour fournir une fonctionnalité IntelliSense pour le document XML.
 
-Pour plus d’informations sur le moteur d’inférence de schéma, consultez [déduire un schéma XML](/dotnet/standard/data/xml/inferring-an-xml-schema).
+Pour plus d’informations sur le moteur d’inférence de schéma, consultez [inférence d’un schéma XML](/dotnet/standard/data/xml/inferring-an-xml-schema).
 
 ## <a name="to-create-an-xml-schema"></a>Pour créer un schéma XML
 

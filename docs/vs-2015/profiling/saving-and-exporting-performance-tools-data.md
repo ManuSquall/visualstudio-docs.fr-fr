@@ -1,27 +1,22 @@
 ---
 title: Enregistrement et exportation de données des outils d’analyse des performances | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, saving and exporting reports
 ms.assetid: 2e9b28fe-3ed2-4e1d-b9cb-0a5e384380b0
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a9b96ae54c91e80fe34c817f710cb400e61f9876
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 22dd181a991c4c2c006335df955ba27dd4d27ce6
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768504"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54756409"
 ---
 # <a name="saving-and-exporting-performance-tools-data"></a>Enregistrement et exportation de données des outils d’analyse des performances
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +64,7 @@ Cette rubrique décrit comment enregistrer et exporter des fichiers de données 
   
 4.  Sous **Emplacement du rapport exporté**, spécifiez le répertoire.  
   
-5.  Sous **format du rapport exporté**, sélectionnez (délimité par des virgules) (*.csv) ou données XML (\*.xml).  
+5.  Sous **Format du rapport exporté**, sélectionnez (délimité par des virgules) (*.csv) ou Données XML (\*.xml).  
   
 6.  Cliquez sur **Exporter**.  
   
@@ -89,7 +84,7 @@ Cette rubrique décrit comment enregistrer et exporter des fichiers de données 
   
 6.  Sous **Emplacement du rapport exporté**, spécifiez le répertoire.  
   
-7.  Sous **format du rapport exporté**, sélectionnez (délimité par des virgules) (*.csv) ou données XML (\*.xml).  
+7.  Sous **Format du rapport exporté**, sélectionnez (délimité par des virgules) (*.csv) ou Données XML (\*.xml).  
   
 8.  Cliquez sur **Exporter**.  
   
@@ -100,6 +95,3 @@ Cette rubrique décrit comment enregistrer et exporter des fichiers de données 
  [Analyse des données des outils d’analyse des performances](../profiling/analyzing-performance-tools-data.md)   
  [Comparaison des fichiers de données de performances](../profiling/comparing-performance-data-files.md)   
  [VSPerfReport](../profiling/vsperfreport.md)
-
-
-

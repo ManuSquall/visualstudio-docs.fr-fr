@@ -2,22 +2,20 @@
 title: Concepteur de flux de travail - ForEach&lt;T&gt; Concepteur d’activités
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.ForEach`1.UI
 ms.assetid: 67097b3a-fcf5-4a72-beb1-2c7784151a86
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99531f690e9dcbd1b35453acd17f1c52b8afb1d2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e441898973614b6e3e33fc91d5d9688b51aab7fe
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836214"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928866"
 ---
 # <a name="foreachlttgt-activity-designer"></a>ForEach&lt;T&gt; Concepteur d’activités
 

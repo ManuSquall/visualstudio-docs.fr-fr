@@ -1,8 +1,6 @@
 ---
-title: 'Procédure pas à pas : développement basé d’abord sur les tests avec la fonctionnalité Générer à partir de l’utilisation'
+title: 'Procédure pas à pas : Développement basé d’abord sur les tests avec la fonctionnalité Générer à partir de l’utilisation'
 ms.date: 10/09/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 dev_langs:
 - VB
 - CSharp
@@ -12,17 +10,17 @@ helpviewer_keywords:
 - Test-First Development
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c500f7a245ffd3a0dec175dd5f016cf1b2596fa4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c92ae058caa140f036ac8828899620bcc8d426ac
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821485"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943036"
 ---
-# <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Procédure pas à pas : développement basé d’abord sur les tests avec la fonctionnalité Générer à partir de l’utilisation
+# <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Procédure pas à pas : Développement basé d’abord sur les tests avec la fonctionnalité Générer à partir de l’utilisation
 
 Cette rubrique montre comment utiliser la fonctionnalité [Générer à partir de l’utilisation](../ide/visual-csharp-intellisense.md#generate-from-usage), qui prend en charge le développement basé d’abord sur les tests.
 
@@ -65,7 +63,7 @@ Cette rubrique montre comment utiliser la fonctionnalité [Générer à partir d
    > [!NOTE]
    >  IntelliSense offre désormais deux options pour la saisie semi-automatique des instructions IntelliSense : le *mode de saisie semi-automatique* et le *mode de suggestion*. Utilisez le mode de suggestion quand les classes et les membres sont utilisés avant d’être définis. Quand une fenêtre **IntelliSense** est ouverte, vous pouvez appuyer sur **Ctrl**+**Alt**+**Barre d’espace** pour basculer entre le mode de complétion et le mode de suggestion. Pour plus d’informations, consultez [Utiliser IntelliSense](../ide/using-intellisense.md). Le mode de suggestion sera utile lorsque vous taperez `Automobile` à l’étape suivante.
 
-3. Recherchez la méthode `TestMethod1()` et renommez-la `DefaultAutomobileIsInitializedCorrectly()`. Dans cette méthode, créez une instance d’une classe nommée `Automobile`, comme illustré dans les captures d’écran suivantes. Une ligne ondulée s’affiche pour signaler une erreur de compilation. Une ampoule [Actions rapides](../ide/quick-actions.md) s’affiche dans la marge de gauche (dans C# uniquement), ou directement sous la ligne ondulée si vous pointez dessus.
+3. Recherchez la méthode `TestMethod1()` et renommez-la `DefaultAutomobileIsInitializedCorrectly()`. Dans cette méthode, créez une instance d’une classe nommée `Automobile`, comme illustré dans les captures d’écran suivantes. Un soulignement ondulé apparaît pour signaler une erreur de compilation. Une ampoule d’erreur [Actions rapides](../ide/quick-actions.md) apparaît dans la marge de gauche ou directement sous le soulignement ondulé si vous pointez dessus.
 
     ![Actions rapides en Visual Basic](../ide/media/genclass_underlinevb.png)
 
@@ -91,7 +89,7 @@ Supposez que la spécification de produit indique que la classe `Automobile` a d
      [!code-csharp[VbTDDWalkthrough#1](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.cs)]
      [!code-vb[VbTDDWalkthrough#1](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.vb)]
 
-2. Du fait que le code fait référence à deux propriétés non définies sur `Automobile`, une ligne ondulée s’affiche sous `Model` et `TopSpeed`. Pointez sur `Model` et choisissez l’ampoule **Actions rapides**, puis choisissez **Générer la propriété « Automobile.Model »**.
+2. Du fait que le code fait référence à deux propriétés non définies sur `Automobile`, une ligne ondulée s’affiche sous `Model` et `TopSpeed`. Pointez sur `Model` et choisissez l’ampoule d’erreur **Actions rapides**, puis choisissez **Générer la propriété « Automobile.Model »**.
 
 3. Générez un stub pour la propriété `TopSpeed` de la même façon.
 
@@ -105,12 +103,12 @@ Maintenant, nous allons créer une méthode de test qui génère un stub de cons
      [!code-csharp[VbTDDWalkthrough#2](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.cs)]
      [!code-vb[VbTDDWalkthrough#2](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.vb)]
 
-2.  Cliquez sur l’ampoule **Actions rapides** sous la ligne ondulée rouge, puis cliquez sur **Générer un constructeur dans « Automobile »**.
+2.  Cliquez sur l’ampoule d’erreur **Actions rapides** sous la ligne ondulée rouge, puis cliquez sur **Générer un constructeur dans « Automobile »**.
 
      Dans le fichier de classe `Automobile` , notez que le nouveau constructeur a examiné les noms des variables locales utilisées dans l’appel de constructeur, qu’il a identifié des propriétés ayant le même nom dans la classe `Automobile` et qu’il a fourni du code dans le corps du constructeur pour stocker les valeurs d’arguments dans les propriétés `Model` et `TopSpeed` .
 
 
-3.  Une fois le nouveau constructeur généré, une ligne ondulée apparaît sous l’appel au constructeur par défaut dans `DefaultAutomobileIsInitializedCorrectly`. Le message d’erreur indique que la classe `Automobile` n’a aucun constructeur qui n’accepte aucun argument. Pour générer un constructeur explicite par défaut sans aucun paramètre, cliquez sur l’ampoule **Actions rapides**, puis cliquez sur **Générer un constructeur dans « Automobile »**.
+3.  Une fois le nouveau constructeur généré, une ligne ondulée apparaît sous l’appel au constructeur par défaut dans `DefaultAutomobileIsInitializedCorrectly`. Le message d’erreur indique que la classe `Automobile` n’a aucun constructeur qui n’accepte aucun argument. Pour générer un constructeur explicite par défaut sans aucun paramètre, cliquez sur l’ampoule d’erreur **Actions rapides**, puis cliquez sur **Générer un constructeur dans « Automobile »**.
 
 ### <a name="generate-a-stub-for-a-method"></a>Générer un stub pour une méthode
 Supposez que la spécification stipule qu’un nouvel élément `Automobile` peut être placé dans l’état `IsRunning` si ses propriétés `Model` et `TopSpeed` ont des valeurs autres que les valeurs par défaut.
@@ -120,7 +118,7 @@ Supposez que la spécification stipule qu’un nouvel élément `Automobile` peu
      [!code-csharp[VbTDDWalkthrough#3](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.cs)]
      [!code-vb[VbTDDWalkthrough#3](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.vb)]
 
-2.  Cliquez sur l’ampoule **Actions rapides** pour l’appel de la méthode `myAuto.Start`, puis cliquez sur **Générer une méthode « Automobile.Start »**.
+2.  Cliquez sur l’ampoule d’erreur **Actions rapides** pour l’appel de la méthode `myAuto.Start`, puis cliquez sur **Générer une méthode « Automobile.Start »**.
 
 3.  Cliquez sur l’ampoule **Actions rapides** pour la propriété `IsRunning`, puis cliquez sur **Générer la propriété « Automobile.IsRunning »**.
 

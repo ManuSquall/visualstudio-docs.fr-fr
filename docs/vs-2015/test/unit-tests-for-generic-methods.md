@@ -1,32 +1,27 @@
 ---
 title: Tests unitaires pour les méthodes génériques | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - generics, and unit tests
 - unit tests, and generics
 ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: 49
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3657c3ea41af2aa85177ff47a28797ef7f55cc41
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1b419568490e41b135c2c7c801154f6550c546e9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914396"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771463"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Tests unitaires pour les méthodes génériques
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez générer des tests unitaires pour les méthodes génériques exactement comme vous le feriez pour d’autres méthodes, comme décrit dans [Comment : créer et exécuter un test unitaire](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48). Les sections suivantes fournissent des informations et des exemples de création de tests unitaires pour les méthodes génériques.  
+Vous pouvez générer des tests unitaires pour les méthodes génériques exactement comme vous le feriez pour d’autres méthodes, comme décrit dans [Comment : Créer et exécuter un Test unitaire](http://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48). Les sections suivantes fournissent des informations et des exemples de création de tests unitaires pour les méthodes génériques.  
   
 ## <a name="type-arguments-and-type-constraints"></a>Arguments de type et contraintes de type  
  Quand [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] génère un test unitaire pour une classe générique, comme `MyList<T>`, il génère deux méthodes : une méthode d'assistance générique et une méthode de test. Si `MyList<T>` a une ou plusieurs contraintes de type, l'argument de type doit satisfaire toutes les contraintes de type. Pour vérifier que le code générique testé fonctionne comme prévu pour toutes les entrées autorisées, la méthode de test appelle la méthode d'assistance générique avec toutes les contraintes que vous souhaitez tester.  
@@ -116,7 +111,7 @@ public void SizeOfLinkedListTestHelper<T>()
 [TestMethod()]  
 public void SizeOfLinkedListTest()   
 {  
-    SizeOfLinkedListTestHelper<int>();  // step 6  
+    SizeOfLinkedListTestHelper<int>();  // step 6  
     SizeOfLinkedListTestHelper<char>(); // step 7  
 }  
 ```  
@@ -203,8 +198,5 @@ namespace ClassLibrary2
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Anatomie d’un test unitaire](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144)   
+ [Anatomie d’un test unitaire](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
  [Tests unitaires sur votre code](../test/unit-test-your-code.md)
-
-
-

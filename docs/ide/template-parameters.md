@@ -1,8 +1,6 @@
 ---
 title: Paramètres de modèle de projet et d’élément
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Visual Studio templates, parameters
@@ -11,19 +9,19 @@ helpviewer_keywords:
 - item templates, parameters
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: bd566988d7546bed72f6ae3ea2c5c6f3159054f4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 2626734653381701680e85cbb190c028d92048a4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067666"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907683"
 ---
 # <a name="template-parameters"></a>Paramètres de modèle
 
 Vous pouvez remplacer des valeurs dans votre modèle quand ce dernier est instancié. Pour configurer cette fonctionnalité, utilisez des *paramètres de modèle*. Les paramètres de modèle peuvent être utilisés pour remplacer des valeurs, comme les noms de classes et les espaces de noms, dans le modèle. L’Assistant Modèle, qui s’exécute en arrière-plan quand un utilisateur ajoute un nouvel élément ou un nouveau projet, remplace ces paramètres.
 
-## <a name="declaring-and-enabling-template-parameters"></a>Déclaration et activation des paramètres de modèle
+## <a name="declare-and-enable-template-parameters"></a>Déclarer et activer des paramètres de modèle
 
 Les paramètres de modèle sont déclarés au format $*paramètre*$. Par exemple :
 
@@ -33,7 +31,7 @@ Les paramètres de modèle sont déclarés au format $*paramètre*$. Par exemple
 
 - $guid5$
 
-### <a name="to-enable-parameter-substitution-in-templates"></a>Pour activer la substitution des paramètres dans les modèles
+### <a name="enable-parameter-substitution-in-templates"></a>Activer la substitution des paramètres dans les modèles
 
 1. Dans le fichier *.vstemplate* du modèle, localisez l’élément `ProjectItem` qui correspond à l’élément pour lequel vous souhaitez activer le remplacement des paramètres.
 
@@ -47,11 +45,12 @@ Les paramètres de modèle sont déclarés au format $*paramètre*$. Par exemple
 
 ## <a name="reserved-template-parameters"></a>Paramètres de modèle réservés
 
-Le tableau suivant liste les paramètres de modèle réservés qui peuvent être utilisés par n’importe quel modèle.
+Le tableau suivant liste les paramètres de modèle réservés qui peuvent être utilisés par n’importe quel modèle :
 
 |Paramètre|Description|
 |---------------|-----------------|
 |clrversion|Version actuelle du Common Language Runtime (CLR).|
+|ext_*|Ajoutez le préfixe `ext_` à n’importe quel paramètre pour référencer les variables du modèle parent. Par exemple, `ext_safeprojectname`.|
 |guid[1-10]|GUID utilisé pour remplacer le GUID du projet dans un fichier projet. Vous pouvez spécifier jusqu’à 10 GUID uniques (par exemple, `guid1`).|
 |itemname|Nom fourni par l’utilisateur dans la boîte de dialogue **Ajouter un nouvel élément**.|
 |machinename|Nom de l’ordinateur actuel (par exemple, Ordi01).|
@@ -119,6 +118,7 @@ Dans le fichier *.vstemplate* du modèle de projet, ajoutez l’attribut `Replac
 
 ## <a name="see-also"></a>Voir aussi
 
+- [Guide pratique pour substituer des paramètres dans un modèle](how-to-substitute-parameters-in-a-template.md)
 - [Personnaliser les modèles](../ide/customizing-project-and-item-templates.md)
 - [Guide pratique pour créer des modèles de projet](../ide/how-to-create-project-templates.md)
 - [Informations de référence sur les schémas de modèles](../extensibility/visual-studio-template-schema-reference.md)

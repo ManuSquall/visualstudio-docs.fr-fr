@@ -1,24 +1,21 @@
 ---
-title: 'Étape 7 : garder les paires visibles'
-ms.custom: ''
+title: 'Étape 7 : Garder les paires visibles'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 42e1d08c-7b2e-4efd-9f47-85d6206afe35
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e27a5378aacec6af4ca07f13242f24bd665a762e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 0114800d2f968db79215afffab34fdd701bf0656
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747852"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55946429"
 ---
-# <a name="step-7-keep-pairs-visible"></a>Étape 7 : garder les paires visibles
+# <a name="step-7-keep-pairs-visible"></a>Étape 7 : Garder les paires visibles
 Le jeu fonctionne correctement tant que le joueur se contente de choisir des paires d'icônes qui ne correspondent pas. Voyons ce qui doit se produire lorsque le joueur choisit une paire d'icônes identiques. Au lieu de faire disparaître les icônes en activant le minuteur (à l'aide de la méthode <xref:System.Windows.Forms.Timer.Start>), le jeu doit se réinitialiser pour arrêter le suivi de tous les contrôles Label à l'aide des variables de référence `firstClicked` et `secondClicked`, sans réinitialiser les couleurs des deux contrôles Label choisis.
 
 ## <a name="to-keep-pairs-visible"></a>Pour garder des paires visibles
@@ -61,6 +58,6 @@ Le jeu fonctionne correctement tant que le joueur se contente de choisir des pai
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
--   Pour passer à l’étape suivante du tutoriel, consultez [Étape 8 : ajouter une méthode pour vérifier si le joueur a gagné](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).
+-   Pour passer à l’étape suivante du tutoriel, consultez [Étape 8 : Ajouter une méthode pour vérifier si le joueur a gagné](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).
 
--   Pour revenir à l’étape précédente du tutoriel, consultez [Étape 6 : ajouter une minuterie](../ide/step-6-add-a-timer.md).
+-   Pour revenir à l’étape précédente du tutoriel, consultez [Étape 6 : Ajouter une minuterie](../ide/step-6-add-a-timer.md).

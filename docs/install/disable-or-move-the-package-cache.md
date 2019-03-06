@@ -2,9 +2,7 @@
 title: Désactiver ou déplacer le cache du package
 description: Découvrez comment désactiver, activer ou déplacer le cache de packages pour les déploiements de Visual Studio.
 ms.date: 04/14/2017
-ms.technology: vs-acquisition
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - cache
@@ -15,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 2429993A-3F0E-41C5-9562-FEA6AE994440
 author: heaths
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 006e7112a2b6c7b990fb412c6a9a2c458bc9e8b2
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 8472394c06d3388b480abdaf262610811a7a72f4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159540"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970255"
 ---
 # <a name="disable-or-move-the-package-cache"></a>Désactiver ou déplacer le cache du package
 

@@ -1,23 +1,21 @@
 ---
 title: Gérer des projets d’application Python
 description: Les projets dans Visual Studio gèrent les dépendances entre les fichiers et la complexité des relations dans une application.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 01/28/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6b0d31905cd0dfb835275d6fd0bbe8f153253b56
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: fc8e6b87569d6c383d0629bae8c582537a3bc948
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068284"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155862"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projets Python dans Visual Studio
 
@@ -38,8 +36,7 @@ Visual Studio fournit divers modèles de projet Python pour configurer rapidemen
 
 |   |   |
 |---|---|
-| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | [Regardez une vidéo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567) pour obtenir une présentation des projets Python (2 min17 s). |
-| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | Visionnez également la vidéo [Deep Dive: Use source control with Python projects](https://youtu.be/Aq8eqApnugM) (Expérience approfondie : Utiliser le contrôle de code source avec les projets Python), youtube.com, 8 min 55 s. |
+| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | [Immersion : Use source control with Python projects](https://youtu.be/Aq8eqApnugM) (Expérience approfondie : Utiliser le contrôle de code source avec les projets Python), youtube.com, 8 min 55 s. |
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>Ajouter des fichiers, attribuer un fichier de démarrage et définir des environnements
 
@@ -114,7 +111,7 @@ Les fichiers liés sont ignorés si l’une des conditions suivantes se présent
 
 Pour ajouter un élément existant en tant que lien, cliquez avec le bouton droit sur le dossier du projet dans lequel vous souhaitez ajouter le fichier, puis sélectionnez **Ajouter** > **Élément existant**. Dans la boîte de dialogue qui s’affiche, sélectionnez un fichier et choisissez **Ajouter en tant que lien** dans la liste déroulante du bouton **Ajouter**. Si aucun fichier n’est en conflit, cette commande crée un lien dans le dossier sélectionné. Toutefois, le lien n’est pas ajouté s’il existe déjà un fichier portant le même nom ou si un lien vers ce fichier existe déjà dans le projet.
 
-Si vous tentez de créer un lien vers un fichier qui existe déjà dans les dossiers du projet, il est ajouté en tant que fichier normal et non en tant que lien. Pour convertir un fichier en lien, sélectionnez **Fichier** > **Enregistrer sous** pour enregistrer le fichier à un emplacement en dehors de l’arborescence du projet ; Visual Studio le convertit automatiquement en lien. De même, un lien peut être reconverti en fichier à l’aide de **Fichier** > **Enregistrer sous** pour enregistrer le fichier quelque part dans l’arborescence du projet. 
+Si vous tentez de créer un lien vers un fichier qui existe déjà dans les dossiers du projet, il est ajouté en tant que fichier normal et non en tant que lien. Pour convertir un fichier en lien, sélectionnez **Fichier** > **Enregistrer sous** pour enregistrer le fichier à un emplacement en dehors de l’arborescence du projet ; Visual Studio le convertit automatiquement en lien. De même, un lien peut être reconverti en fichier à l’aide de **Fichier** > **Enregistrer sous** pour enregistrer le fichier quelque part dans l’arborescence du projet.
 
 Si vous déplacez un fichier lié dans **l’Explorateur de solutions**, le lien est déplacé, mais le fichier en lui-même n’est pas affecté. De même, la suppression d’un lien supprime le lien sans affecter le fichier.
 

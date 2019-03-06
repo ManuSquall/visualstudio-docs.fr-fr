@@ -1,45 +1,42 @@
 ---
-title: IDebugGenericFieldInstance | Documents Microsoft
-ms.custom: ''
+title: IDebugGenericFieldInstance | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericFieldInstance interface
 ms.assetid: f68b4761-be8b-4801-9d4b-cde90e01d95e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da0abc75fa59f19d61ee95194905be678336808b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b9da35f705f066e32c91a0dfc955d9f98104e8ab
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110713"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56687365"
 ---
 # <a name="idebuggenericfieldinstance"></a>IDebugGenericFieldInstance
-Représente une instance d’un champ d’un type générique de code managé.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```  
-IDebugGenericFieldInstance : IUnknown  
-```  
-  
-## <a name="methods"></a>Méthodes  
- Cette interface implémente les méthodes suivantes :  
-  
-|Méthode|Description|  
-|------------|-----------------|  
-|[GetTypeArguments](../../../extensibility/debugger/reference/idebuggenericfieldinstance-gettypearguments.md)|Récupère les arguments de paramètre de type pour cette instance.|  
-|[TypeArgumentCount](../../../extensibility/debugger/reference/idebuggenericfieldinstance-typeargumentcount.md)|Retourne le nombre de types des arguments de paramètre pour cette instance.|  
-  
-## <a name="requirements"></a>Spécifications  
- En-tête : Sh.h  
-  
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
-  
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+Représente une instance d’un champ pour un type générique du code managé.
+
+## <a name="syntax"></a>Syntaxe
+
+```
+IDebugGenericFieldInstance : IUnknown
+```
+
+## <a name="methods"></a>Méthodes
+ Cette interface implémente les méthodes suivantes :
+
+|Méthode|Description|
+|------------|-----------------|
+|[GetTypeArguments](../../../extensibility/debugger/reference/idebuggenericfieldinstance-gettypearguments.md)|Récupère les arguments de paramètre de type pour cette instance.|
+|[TypeArgumentCount](../../../extensibility/debugger/reference/idebuggenericfieldinstance-typeargumentcount.md)|Retourne le nombre de type des arguments de paramètre pour cette instance.|
+
+## <a name="requirements"></a>Spécifications
+ En-tête : SH.h
+
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll

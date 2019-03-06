@@ -6,15 +6,13 @@ manager: evelynp
 ms.date: 04/10/2018
 ms.topic: conceptual
 description: Comment ajouter une identité secondaire à votre abonnement Visual Studio pour l’utiliser avec Azure DevOps et Azure
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: vs subscription
-ms.openlocfilehash: 68ce5c2a19797b827f1ed6304107ac62ef82623f
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: ee1db1fc10629c5476b9fd78b826993401aa14db
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858150"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842128"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Identités pour les abonnés Visual Studio
 
@@ -62,9 +60,9 @@ Votre compte secondaire est ajouté à l’abonnement Visual Studio. Ainsi, les 
 
 ## <a name="faq"></a>FAQ
 
-### <a name="q--why-doesnt-azure-devops-recognize-me-as-a-visual-studio-subscriber"></a>Q : Pourquoi Azure DevOps ne me reconnaît-il pas comme abonné Visual Studio ?
+### <a name="q--why-doesnt-azure-devops-recognize-me-as-a-visual-studio-subscriber"></a>Q :  Pourquoi Azure DevOps ne me reconnaît-il pas en tant qu’abonné Visual Studio ?
 
-R : Azure DevOps doit reconnaître automatiquement votre abonnement quand vous vous connectez avec votre identité principale ou secondaire. Si ce n’est pas le cas, vous pouvez essayer les solutions suivantes :
+R : Azure DevOps doit reconnaître automatiquement votre abonnement quand vous vous connectez à l’aide de votre identité principale ou secondaire. Si ce n’est pas le cas, vous pouvez essayer les solutions suivantes :
 
 * Vérifiez que vous disposez d’un abonnement Visual Studio actif qui [inclut Azure DevOps en tant qu’avantage](vs-azure-devops.md).
 

@@ -1,65 +1,77 @@
 ---
 title: -Clean (devenv.exe)
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
 - builds [Team System], cleaning files
-- clean Devenv switch
-- /clean Devenv switch
-- Devenv, /clean switch
+- Clean Devenv switch
+- /Clean Devenv switch
+- Devenv, /Clean switch
 ms.assetid: 79929dfd-22c9-4cec-a0d0-a16f15b8f7e4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7827f11a93e517f81eb03cfe2e33305859b4d78
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 810f05b0838f27004bee983dc0acf7a3009e22a0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948853"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954008"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
+
 Nettoie tous les fichiers et répertoires de sortie intermédiaires.
 
 ## <a name="syntax"></a>Syntaxe
 
-```
-devenv FileName /Clean [ /project projectnameorfile [/projectconfig name ] ]
+```shell
+devenv SolutionName /Clean [Config [/Project ProjName [/ProjectConfig ProjConfigName]] [/Out OutputFilename]]
 ```
 
 ## <a name="arguments"></a>Arguments
- `FileName`
 
- Obligatoire. Chemin complet et nom du fichier solution ou fichier projet.
+- *SolutionName*
 
- /project `ProjName`
+  Obligatoire. Chemin complet et nom du fichier solution.
 
- Facultative. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer un chemin relatif du dossier `SolutionName` vers le fichier projet, le nom d’affichage du projet ou encore le chemin complet et le nom du fichier projet.
+- *Config*
 
- /projectconfig `ProjConfigName`
+  Optionnel. Configuration (par exemple, `Debug` ou `Release`) à appliquer pour nettoyer les fichiers intermédiaires de la solution nommée dans *SolutionName*. Si plusieurs plateformes de solution sont disponibles, vous devez également en spécifier une (par exemple, `Debug|Win32`). Si cet argument n’est pas spécifié ou consiste en une chaîne vide (`""`), l’outil utilise la configuration active de la solution.
 
- Facultative. Nom d’une configuration de build de projet à utiliser lors du nettoyage du `/project` nommé.
+- `/Project` *ProjName*
+
+  Optionnel. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer le nom d’affichage du projet ou un chemin d’accès relatif du dossier *SolutionName* au fichier projet. Vous pouvez également saisir le chemin d’accès complet et le nom du fichier projet.
+
+- `/ProjectConfig` *ProjConfigName*
+
+  Optionnel. Nom de la configuration de build du projet (par exemple, `Debug` ou `Release`) à utiliser lors du nettoyage du `/Project` nommé. Si plusieurs plateformes de solution sont disponibles, vous devez également en spécifier une (par exemple, `Debug|Win32`). Si ce commutateur est spécifié, il remplace l’argument *Config*.
+
+- `/Out` *OutputFilename*
+
+  Optionnel. Nom du fichier auquel vous souhaitez envoyer la sortie de l’outil. Si le fichier existe déjà, l’outil ajoute la sortie à la fin du fichier.
 
 ## <a name="remarks"></a>Notes
- Ce commutateur exécute la même fonction que la commande de menu **Nettoyer la solution** dans l’environnement de développement intégré (IDE).
 
- Placez entre guillemets doubles les chaînes contenant des espaces.
+Ce commutateur a la même fonction que la commande de menu **Nettoyer la Solution** dans l’environnement IDE.
 
- Les informations résumées pour les nettoyages et les builds, notamment les erreurs, peuvent être affichées dans la fenêtre **Commande**, ou dans tout fichier journal spécifié avec le commutateur `/out`.
+Placez entre guillemets doubles les chaînes contenant des espaces.
+
+Il est possible d’afficher une synthèse des informations de nettoyage et de build, erreurs incluses, dans la fenêtre **Commande** et dans tous les fichiers journaux spécifiés avec le commutateur [/Out](out-devenv-exe.md).
+
+Si le commutateur `/Project` n’est pas spécifié, l’action de nettoyage est effectuée sur tous les projets de la solution, même si *FileName* a été spécifié comme fichier projet.
 
 ## <a name="example"></a>Exemple
- Le premier exemple nettoie la solution `MySolution` à l’aide de la configuration par défaut spécifiée dans le fichier solution.
 
- Le deuxième exemple nettoie le projet `CSharpConsoleApp` en utilisant la configuration de build de projet `Debug` présente dans la configuration de solution `Debug` de `MySolution`.
+Le premier exemple nettoie la solution `MySolution` à l’aide de la configuration par défaut spécifiée dans le fichier solution.
 
-```
-Devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /Clean
+Le second exemple nettoie le projet `CSharpWinApp` suivant la configuration de build de projet `Debug` présente dans `MySolution`.
 
-devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /Clean /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig "Debug"
+```shell
+devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /Clean
+
+devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /Clean "Debug" /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig "Debug"
 ```
 
 ## <a name="see-also"></a>Voir aussi

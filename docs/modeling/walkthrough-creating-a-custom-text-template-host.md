@@ -1,5 +1,5 @@
 ---
-title: "Procédure pas à pas : création d'un hôte de modèle de texte personnalisé"
+title: "Procédure pas à pas : Création d'un hôte de modèle de texte personnalisé"
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,24 +7,22 @@ helpviewer_keywords:
 - text templates, custom host walkthrough
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 21ef658d3eebe23fba228517700b3804f89a7842
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bd488230fc6b88feb60ceeb0556385b99e823de9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878841"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951590"
 ---
-# <a name="walkthrough-create-a-custom-text-template-host"></a>Procédure pas à pas : créer un hôte de modèle de texte personnalisé
+# <a name="walkthrough-create-a-custom-text-template-host"></a>Procédure pas à pas : Créer un hôte de modèle de texte personnalisé
 
-Un *modèle de texte*<em>hôte</em> fournit un environnement qui permet la *moteur de transformation de modèle de texte* à exécuter. L'hôte est chargé de gérer l'interaction du moteur avec le système de fichiers. Le moteur ou *processeur de directive* qui a besoin d’un fichier ou un assembly peut demander une ressource à partir de l’hôte. L'hôte peut ensuite effectuer des recherches dans les répertoires et le Global Assembly Cache pour trouver la ressource demandée. Pour plus d’informations, consultez [le processus de Transformation de modèle de texte](../modeling/the-text-template-transformation-process.md).
+Un *hôte de modèle de texte* fournit un environnement qui permet la *moteur de transformation de modèle de texte* à exécuter. L'hôte est chargé de gérer l'interaction du moteur avec le système de fichiers. Le moteur ou *processeur de directive* qui a besoin d’un fichier ou un assembly peut demander une ressource à partir de l’hôte. L'hôte peut ensuite effectuer des recherches dans les répertoires et le Global Assembly Cache pour trouver la ressource demandée. Pour plus d’informations, consultez [le processus de Transformation de modèle de texte](../modeling/the-text-template-transformation-process.md).
 
 Vous pouvez écrire un hôte personnalisé si vous souhaitez utiliser le *transformation du modèle de texte* fonctionnalité à partir en dehors de Visual Studio ou si vous souhaitez intégrer ces fonctionnalités dans des outils personnalisés. Pour créer un hôte personnalisé, vous devez créer une classe qui hérite de <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Pour obtenir la documentation de méthodes individuelles, consultez <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.
 
@@ -718,7 +716,7 @@ Dans cette procédure pas à pas, vous allez créer un hôte personnalisé dans 
 
 4. Pour [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] uniquement, ouvrez le **projet** menu, puis cliquez sur **propriétés de CustomHost**. Dans le **objet de démarrage** , cliquez sur **CustomHost.Program**.
 
-5. Sur le **fichier** menu, cliquez sur **Enregistrer tout**.
+5. Dans le menu **Fichier**, cliquez sur **Enregistrer tout**.
 
 6. Dans le menu **Générer** , cliquez sur **Générer la solution**.
 
@@ -821,7 +819,7 @@ Pour tester l'hôte personnalisé, vous allez écrire un modèle de texte, puis 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Dans cette procédure pas à pas, vous avez créé un hôte de transformation de modèle de texte qui prend en charge les fonctionnalités de transformation de base. Vous pouvez développer votre hôte pour prendre en charge des modèles de texte qui appellent des processeurs de directive personnalisés ou générés. Pour plus d’informations, consultez [procédure pas à pas : connexion d’un hôte à un processeur de Directive généré](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).
+Dans cette procédure pas à pas, vous avez créé un hôte de transformation de modèle de texte qui prend en charge les fonctionnalités de transformation de base. Vous pouvez développer votre hôte pour prendre en charge des modèles de texte qui appellent des processeurs de directive personnalisés ou générés. Pour plus d’informations, consultez [Procédure pas à pas : Connexion d’un hôte à un processeur de Directive généré](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).
 
 ## <a name="see-also"></a>Voir aussi
 

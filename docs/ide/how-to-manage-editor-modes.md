@@ -1,8 +1,6 @@
 ---
 title: Mode Plein écran et mode Espace virtuel
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - word wrap
@@ -23,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: 1fb48027-d870-439f-8b72-4a0321390748
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5250176bee4993f9d01bffcaed71579c17e55c9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b441543079ab3369beddcd95999809e075b3bb2b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056306"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907140"
 ---
 # <a name="how-to-manage-editor-modes"></a>Procédure : Gérer les modes de l’éditeur
 

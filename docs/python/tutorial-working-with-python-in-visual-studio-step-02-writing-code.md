@@ -2,23 +2,21 @@
 title: Tutoriel Python dans Visual Studio - étape 2, écrire et exécuter du code
 titleSuffix: ''
 description: Étape 2 d’une procédure pas à pas portant sur les fonctionnalités de Python dans Visual Studio qui explique comment modifier du code et exécuter un projet.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 01/28/2019
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9b2f1c4743652f0925ef083d0ca62a34485c219b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 13590ffaed624a8704d74d738dab35da28b5443b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054798"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843089"
 ---
 # <a name="step-2-write-and-run-code"></a>Étape 2 : Écrire et exécuter du code
 
@@ -47,7 +45,7 @@ Bien que l’**Explorateur de solutions** soit l’emplacement où vous gérez l
     ![Coloration syntaxique et mise en évidence des erreurs par IntelliSense](media/vs-getting-started-python-06-IntelliSense3b.png)
 
     > [!Tip]
-    > L’environnement de développement de quelqu’un étant une affaire très personnelle, Visual Studio vous donne un contrôle complet sur son apparence et son comportement. Sélectionnez la commande de menu **Outils** > **Options**, et explorez les paramètres sous les onglets **Environnement** et **Éditeur de texte**. Par défaut, vous voyez seulement un nombre limité d’options. Pour afficher toutes les options pour chaque langage de programmation, sélectionnez **Afficher tous les paramètres** en bas de la boîte de dialogue. 
+    > L’environnement de développement de quelqu’un étant une affaire très personnelle, Visual Studio vous donne un contrôle complet sur son apparence et son comportement. Sélectionnez la commande de menu **Outils** > **Options**, et explorez les paramètres sous les onglets **Environnement** et **Éditeur de texte**. Par défaut, vous voyez seulement un nombre limité d’options. Pour afficher toutes les options pour chaque langage de programmation, sélectionnez **Afficher tous les paramètres** en bas de la boîte de dialogue.
 
 1. Exécutez le code que vous avez écrit à ce stade en appuyant sur **Ctrl**+**F5**, ou en sélectionnant l’élément de menu **Déboguer** > **Exécuter sans débogage**. Visual Studio vous avertit si votre code contient encore des erreurs.
 
@@ -55,7 +53,7 @@ Bien que l’**Explorateur de solutions** soit l’emplacement où vous gérez l
 
     ![Sortie pour la première exécution du programme](media/vs-getting-started-python-07-output.png)
 
-1. En plus des instructions et des fonctions, IntelliSense fournit aussi la saisie semi-automatique pour les instructions Python `import` et `from`. Ces saisies semi-automatiques vous permettent de découvrir facilement les modules qui sont disponibles dans votre environnement, ainsi que les membres de ces modules. Dans l’éditeur, supprimez la ligne `print` et commencez à taper `import `. Une liste des modules apparaît quand vous tapez l’espace :
+1. En plus des instructions et des fonctions, IntelliSense fournit aussi la saisie semi-automatique pour les instructions Python `import` et `from`. Ces saisies semi-automatiques vous permettent de découvrir facilement les modules qui sont disponibles dans votre environnement, ainsi que les membres de ces modules. Dans l’éditeur, supprimez la ligne `print` et commencez à taper `import`. Une liste des modules apparaît quand vous tapez l’espace :
 
     ![Affichage des modules disponibles pour une instruction import dans IntelliSense](media/vs-getting-started-python-08-import1.png)
 

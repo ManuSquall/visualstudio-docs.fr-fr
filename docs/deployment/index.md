@@ -4,17 +4,15 @@ title: Déployer vos applications | Microsoft Docs
 description: Découvrez comment utiliser Visual Studio 2017 pour déployer des applications, des services et des composants.
 ms.custom: seodec18
 ms.topic: landing-page
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-deployment
 ms.author: mikejo
 author: mikejo5000
-manager: douge
-ms.openlocfilehash: 04e773afd6fc44e79f01dc4204c851cc4a67c947
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 4f6d81af23ba5763b89b19b29cb493e6cb59c8ff
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053939"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947119"
 ---
 # <a name="deployment-in-visual-studio"></a>Déploiement dans Visual Studio
 
@@ -84,7 +82,7 @@ Visual Studio fournit plusieurs outils différents qui vous permettent de déplo
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="Deploy to Azure App Service">
+                            <img src="https://docs.microsoft.com/media/logos/logo_azure.svg" alt="Deploy to Azure App Service">
                         </div>
                     </div>
                     <div class="cardText">
@@ -102,7 +100,7 @@ Visual Studio fournit plusieurs outils différents qui vous permettent de déplo
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="Deploy to Azure App Service">
+                            <img src="https://docs.microsoft.com/media/logos/logo_azure.svg" alt="Deploy to Azure App Service">
                         </div>
                     </div>
                     <div class="cardText">
@@ -125,7 +123,7 @@ Visual Studio fournit plusieurs outils différents qui vous permettent de déplo
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Deploy ASP.NET to Azure">
+                            <img src="https://docs.microsoft.com/media/logos/logo_azure.svg" alt="Deploy ASP.NET to Azure">
                         </div>
                     </div>
                     <div class="cardText">
@@ -161,7 +159,7 @@ Visual Studio fournit plusieurs outils différents qui vous permettent de déplo
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Deploy a .NET core app">
+                            <img src="https://docs.microsoft.com/media/logos/logo_NETcore.svg" alt="Deploy a .NET core app">
                         </div>
                     </div>
                     <div class="cardText">
@@ -197,7 +195,7 @@ Visual Studio fournit plusieurs outils différents qui vous permettent de déplo
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Import publish settings and deploy to Azure App Service">
+                            <img src="https://docs.microsoft.com/media/logos/logo_azure.svg" alt="Import publish settings and deploy to Azure App Service">
                         </div>
                     </div>
                     <div class="cardText">
@@ -255,7 +253,7 @@ Visual Studio fournit plusieurs outils différents qui vous permettent de déplo
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Déployer une application de bureau avec ClickOnce</h3>
+                        <h3>Déployer une application de bureau avec ClickOnce (C#)</h3>
                     </div>
                 </div>
             </div>
@@ -263,17 +261,35 @@ Visual Studio fournit plusieurs outils différents qui vous permettent de déplo
         </a>
     </li>
     <li>
-        <a href="/cpp/ide/deployment-in-visual-cpp">
+        <a href="/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_learn-about.svg" alt="Learn about deployment in Visual C++">
+                            <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="Learn about deployment in Visual C++">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>En savoir plus sur le déploiement dans Visual C++</h3>
+                        <h3>Déployer une application C/C++</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/cpp/ide/clickonce-deployment-for-visual-cpp-applications">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="Learn about deployment in Visual C++">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Déployer une application C++/CLR</h3>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrameSniffer::EnumStackFrames | Documents Microsoft
+title: IDebugStackFrameSniffer::EnumStackFrames | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5d64d896dcc14a280a74f64f5093b6708a7fcb5f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 245908b543bf1482022846801e5ac7d2f557ebb5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726789"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089301"
 ---
 # <a name="idebugstackframesnifferenumstackframes"></a>IDebugStackFrameSniffer::EnumStackFrames
-Retourne un énumérateur de frames de pile du thread actuel.  
+Retourne un énumérateur de frames de pile pour le thread actuel.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT EnumStackFrames(  
    IEnumDebugStackFrames**  ppedsf  
 );  
@@ -38,17 +38,17 @@ HRESULT EnumStackFrames(
   
 #### <a name="parameters"></a>Paramètres  
  `ppedsf`  
- [out] Énumérateur des frames de pile du thread actuel.  
+ [out] Énumérateur de frames de pile pour le thread actuel.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
- L’énumérateur de frame de pile retourne les frames en commençant par le haut de la pile, en commençant par le frame plus récemment envoyée.  
+## <a name="remarks"></a>Notes  
+ L’énumérateur de frame de pile retourne les frames à partir du haut de la pile, en commençant par le frame envoyée le plus récemment.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IDebugStackFrameSniffer](../../winscript/reference/idebugstackframesniffer-interface.md)

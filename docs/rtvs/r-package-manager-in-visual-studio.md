@@ -2,20 +2,18 @@
 title: Gestionnaire de package pour R
 description: Guide pratique pour utiliser le Gestionnaire de package R dans Visual Studio pour l’installation et la gestion des packages R.
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 4063787711ae825cd587f72d735710444906d99b
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d35bfd45e862912ff78ae600eed01ce8dc002493
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35666512"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931583"
 ---
 # <a name="package-manager"></a>Gestionnaire de package
 

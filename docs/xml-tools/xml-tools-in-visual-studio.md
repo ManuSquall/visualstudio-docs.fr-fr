@@ -1,8 +1,6 @@
 ---
 title: Outils XML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 f1_keywords:
 - vb.xmldesigner
@@ -31,15 +29,15 @@ helpviewer_keywords:
 ms.assetid: 1fd5de47-2d61-4180-9539-c2c4bf9ab768
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f87c06e2bfc3885c0f52230e927933ff3cb0d87c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9d07e7d2a1a8d96b19354ea8d1261b2e82a84d3a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054996"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55946889"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Outils XML dans Visual Studio
 

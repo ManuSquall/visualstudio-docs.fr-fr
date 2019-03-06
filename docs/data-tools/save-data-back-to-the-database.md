@@ -17,17 +17,15 @@ helpviewer_keywords:
 ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e33fa9b6047cbe470702cebdbb27f74d074e460e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 31b41a9c18a9e055c9d144c7115d3673ee2e4443
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916905"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928658"
 ---
 # <a name="save-data-back-to-the-database"></a>Enregistrer les données dans la base de données
 
@@ -49,7 +47,7 @@ Si vous êtes familiarisé avec les TableAdapters, vous pouvez passer directemen
 |[Guide pratique pour mettre à jour les données à l’aide d’un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)|Comment effectuer des mises à jour avec les TableAdapters|
 |[Mise à jour hiérarchique](../data-tools/hierarchical-update.md)|Comment effectuer des mises à jour à partir d’un jeu de données avec deux ou plusieurs tables connexes|
 |[Gérer une exception d’accès concurrentiel](../data-tools/handle-a-concurrency-exception.md)|Comment gérer des exceptions lorsque deux utilisateurs tentent de modifier les mêmes données dans une base de données en même temps|
-|[Comment : enregistrer des données à l’aide d’une transaction](../data-tools/save-data-by-using-a-transaction.md)|Comment enregistrer des données dans une transaction en utilisant le système. Espace de noms de transactions et un objet TransactionScope|
+|[Guide pratique pour enregistrer des données avec une transaction](../data-tools/save-data-by-using-a-transaction.md)|Comment enregistrer des données dans une transaction en utilisant le système. Espace de noms de transactions et un objet TransactionScope|
 |[Enregistrer des données dans une transaction](../data-tools/save-data-in-a-transaction.md)|Procédure pas à pas qui crée une application Windows Forms pour montrer l’enregistrement des données à une base de données à l’intérieur d’une transaction|
 |[Enregistrer des données dans une base de données (plusieurs tables)](../data-tools/save-data-to-a-database-multiple-tables.md)|Comment modifier les enregistrements et enregistrer les modifications dans plusieurs tables dans la base de données|
 |[Guide pratique pour enregistrer les données d’un objet dans une base de données](../data-tools/save-data-from-an-object-to-a-database.md)|Comment passer des données à partir d’un objet qui n’est pas dans un jeu de données à une base de données à l’aide d’une méthode DbDirect du TableAdapter|
@@ -72,29 +70,29 @@ Vous pouvez mettre à jour le contenu d’un jeu de données par *fusion* avec u
 
 Lors de la fusion des jeux de données, vous pouvez passer un argument booléen (`preserveChanges`) qui indique le <xref:System.Data.DataSet.Merge%2A> méthode s’il faut conserver les modifications existantes dans le jeu de données cible. Étant donné que les jeux de données conserver plusieurs versions d’enregistrements, il est important de garder à l’esprit que plusieurs versions des enregistrements sont en cours de fusion. Le tableau suivant montre comment un enregistrement dans les deux jeux de données est fusionné :
 
-|DataRowVersion|Dataset cible|Jeu de données source|
+|DataRowVersion|DataSet cible|Jeu de données source|
 | - | - | - |
 |D'origine|James Wilson|James C. Wilson|
-|Actuel|Jim Wilson|James C. Wilson|
+|Actuelle|Jim Wilson|James C. Wilson|
 
 Appel de la <xref:System.Data.DataSet.Merge%2A> méthode sur le tableau précédent avec `preserveChanges=false targetDataset.Merge(sourceDataset)` entraîne les données suivantes :
 
-|DataRowVersion|Dataset cible|Jeu de données source|
+|DataRowVersion|DataSet cible|Jeu de données source|
 | - | - | - |
 |D'origine|James C. Wilson|James C. Wilson|
-|Actuel|James C. Wilson|James C. Wilson|
+|Actuelle|James C. Wilson|James C. Wilson|
 
 Appel de la <xref:System.Data.DataSet.Merge%2A> méthode avec `preserveChanges = true targetDataset.Merge(sourceDataset, true)` entraîne les données suivantes :
 
-|DataRowVersion|Dataset cible|Jeu de données source|
+|DataRowVersion|DataSet cible|Jeu de données source|
 | - | - | - |
 |D'origine|James C. Wilson|James C. Wilson|
-|Actuel|Jim Wilson|James C. Wilson|
+|Actuelle|Jim Wilson|James C. Wilson|
 
 > [!CAUTION]
 > Dans le `preserveChanges = true` scénario, si le <xref:System.Data.DataSet.RejectChanges%2A> méthode est appelée sur un enregistrement dans le jeu de données cible, puis il revient aux données d’origine à partir de la *source* jeu de données. Cela signifie que si vous essayez de mettre à jour de la source de données d’origine avec le jeu de données cible, il ne peut pas être en mesure de trouver la ligne d’origine pour mettre à jour. Vous pouvez empêcher une violation d’accès concurrentiel en remplissant un autre jeu de données avec les enregistrements mis à jour à partir de la source de données, puis exécutez une fusion pour éviter une violation d’accès concurrentiel. (Une violation d’accès concurrentiel se produit lorsqu’un autre utilisateur modifie un enregistrement dans la source de données une fois que le jeu de données a été renseigné.)
 
-## <a name="update-constraints"></a>Contraintes de mise à jour
+## <a name="update-constraints"></a>Mettre à jour des contraintes
 
 Pour apporter des modifications à une ligne de données existante, ajouter ou mettre à jour des données dans les colonnes individuelles. Si le jeu de données contient des contraintes (telles que les clés étrangères ou des contraintes non nullable), il est possible que l’enregistrement soit temporairement dans un état d’erreur quand vous mettez à jour. Autrement dit, il peut être dans un état d’erreur après avoir terminé la mise à jour d’une colonne, mais avant de passer à la suivante.
 
@@ -226,7 +224,7 @@ Vous pouvez valider les données de plusieurs manières :
 - Dans les données back-end, en envoyant des données à la source de données, par exemple, la base de données et en l’autorisant à accepter ou refuser les données. Si vous travaillez avec une base de données qui a des fonctionnalités évoluées de validation des données et fournir des informations d’erreur, cela peut être une approche pratique, car vous pouvez valider les données, quel que soit l’emplacement d’origine. Toutefois, cette approche ne peut pas satisfaire les exigences de la validation spécifique à l’application. En outre, la source de données valider des données peut entraîner de nombreux allers-retours vers la source de données, en fonction de la façon dont votre application facilite la résolution des erreurs de validation déclenchés par le serveur principal.
 
    > [!IMPORTANT]
-   > Lorsque vous utilisez les commandes de données avec un <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> propriété a la valeur <xref:System.Data.CommandType.Text>, soigneusement vérifier les informations qui sont envoyées à partir d’un client avant de le transmettre à votre base de données. Les utilisateurs malveillants peuvent tenter d’envoyer (injecter) des instructions SQL modifiées ou supplémentaires dans le but d’obtenir un accès non autorisé ou d’endommager la base de données. Avant de transférer l’entrée utilisateur et une base de données, vérifiez toujours que les informations sont valides. Il est recommandé de toujours utiliser des requêtes paramétrables ou les procédures stockées lorsque cela est possible.
+   > Lorsque vous utilisez les commandes de données avec un <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> propriété a la valeur <xref:System.Data.CommandType.Text>, soigneusement vérifier les informations qui sont envoyées à partir d’un client avant de le transmettre à votre base de données. Des utilisateurs malveillants peuvent tenter d’envoyer (injecter) des instructions SQL modifiées ou supplémentaires afin d’accéder à la base de données ou de l’endommager. Avant de transférer l’entrée utilisateur et une base de données, vérifiez toujours que les informations sont valides. Il est recommandé de toujours utiliser des requêtes paramétrables ou les procédures stockées lorsque cela est possible.
 
 ## <a name="transmit-updates-to-the-data-source"></a>Transmettre les mises à jour de la source de données
 
@@ -281,4 +279,4 @@ Dans une instruction de mise à jour, vous devez spécifier les nouvelles valeur
 - [Guide pratique pour mettre à jour les données à l’aide d’un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)
 - [Lier des contrôles à des données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Valider des données](validate-data-in-datasets.md)
-- [Comment : ajouter, modifier et supprimer des entités (WCF data services)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)
+- [Guide pratique pour ajouter, modifier et supprimer des entités (services de données WCF)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)

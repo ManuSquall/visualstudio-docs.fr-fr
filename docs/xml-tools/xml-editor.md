@@ -1,20 +1,18 @@
 ---
 title: Éditeur XML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e120d65c9336acaa509e74c79d9e538673cd256
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 9126b16692e844ca6bb3dcdbd6aad250b1209011
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349320"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948158"
 ---
 # <a name="xml-editor"></a>Éditeur XML
 

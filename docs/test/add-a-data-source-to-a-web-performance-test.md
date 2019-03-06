@@ -8,15 +8,13 @@ helpviewer_keywords:
 ms.assetid: 2ada376d-f168-455d-9643-6acb535360c1
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 6d2ae95883884909641541e0efe6e4efbc7fe06a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 7f56491a8268e939f7bd455c4afef6813116ef9f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065205"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950602"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Ajouter une source de données à un test de performances de site Web
 
@@ -36,7 +34,7 @@ Votre solution doit également inclure un test de performances web qui parcourt 
 
 ## <a name="create-a-sql-database"></a>Créer une base de données SQL
 
-1. Si vous n’avez pas Visual Studio Enterprise, vous pouvez le télécharger à partir de la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
+1. Si vous n’avez pas Visual Studio Enterprise, vous pouvez le télécharger à partir de la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017).
 
 2. Créez une base de données SQL.
 

@@ -1,8 +1,6 @@
 ---
 title: Référence de ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -14,40 +12,47 @@ helpviewer_keywords:
 ms.assetid: 2a7d5704-5e8c-452c-9ef3-5e8ec5e952fe
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16e2752181b05719969e787ccf90aaa72ae5b620
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 0f3b22dacdb0192df70f9fcb13b8a228188f129d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081564"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638112"
 ---
-# <a name="clickonce-reference"></a>Référence de ClickOnce
-Les pages suivantes décrivent la structure des fichiers XML utilisés pour représenter des applications ClickOnce.  
-  
-## <a name="in-this-section"></a>Dans cette section  
- [Manifeste d’application ClickOnce](../deployment/clickonce-application-manifest.md)  
- Répertorie et décrit les éléments et attributs qui composent un manifeste d’application.  
-  
- [Manifeste de déploiement ClickOnce](../deployment/clickonce-deployment-manifest.md)  
- Répertorie et décrit les éléments et attributs qui composent un manifeste de déploiement.  
-  
- [Informations de référence sur le schéma de produit et de package](../deployment/product-and-package-schema-reference.md)  
- Répertorie les éléments du fichier de produit et du package.  
-  
- [Informations de référence sur les API non managées ClickOnce](../deployment/clickonce-unmanaged-api-reference.md)  
- Listes d’API publiques non managées de dfshim.dll.  
-  
-## <a name="reference"></a>Référence  
-  
-## <a name="related-sections"></a>Rubriques connexes  
- [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md)  
- Fournit des informations conceptuelles détaillées sur le déploiement ClickOnce.  
-  
- <xref:System.Deployment.Application>  
- Fournit des liens pour faire référence à la documentation des classes publiques qui prennent en charge ClickOnce dans du code géré.  
-  
- [Publier des applications ClickOnce](../deployment/publishing-clickonce-applications.md)  
+# <a name="clickonce-reference"></a>Informations de référence sur ClickOnce
+Les pages suivantes décrivent la structure des fichiers XML utilisés pour représenter des applications ClickOnce.
+
+## <a name="in-this-section"></a>Dans cette section
+ [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
+
+ Répertorie et décrit les éléments et attributs qui composent un manifeste d’application.
+
+ [Manifeste de déploiement ClickOnce](../deployment/clickonce-deployment-manifest.md)
+
+ Répertorie et décrit les éléments et attributs qui composent un manifeste de déploiement.
+
+ [Informations de référence sur le schéma de produit et de package](../deployment/product-and-package-schema-reference.md)
+
+ Répertorie les éléments du fichier de produit et du package.
+
+ [Informations de référence sur les API non managées ClickOnce](../deployment/clickonce-unmanaged-api-reference.md)
+
+ Listes d’API publiques non managées de dfshim.dll.
+
+## <a name="reference"></a>Référence
+
+## <a name="related-sections"></a>Rubriques connexes
+ [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md)
+
+ Fournit des informations conceptuelles détaillées sur le déploiement ClickOnce.
+
+<xref:System.Deployment.Application>
+
+ Fournit des liens pour faire référence à la documentation des classes publiques qui prennent en charge ClickOnce dans du code géré.
+
+ [Publier des applications ClickOnce](../deployment/publishing-clickonce-applications.md)
+
  Fournit des procédures pas à pas et de quelle manière-pour le qui effectuent les tâches ClickOnce.

@@ -1,21 +1,19 @@
 ---
 title: Vue Graphique du concepteur de schémas XML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: 5881afde-3f24-4eb9-bff8-6cb3fc8aade7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 603c0849d22f658800776e8a1e4cb1f429990e00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 26ce96a699abeaf9e5fd205c1e1f53add79ab56d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894623"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952643"
 ---
 # <a name="graph-view"></a>Vue du graphique
 
@@ -37,13 +35,13 @@ La vue du graphique fournit une représentation graphique des nœuds de schéma 
 
  ![Concepteur XSD ; vue Graphique](../xml-tools/media/xsdgraphviewwatermark.gif)
 
- Si le jeu de schémas comporte des erreurs, le texte suivant est affiché à la fin de la liste : « Utilisez la liste d'erreurs pour afficher et résoudre les erreurs dans le jeu ».
+ Si le jeu de schémas comporte des erreurs, le texte suivant s’affiche à la fin de la liste : « Utiliser la liste d’erreurs pour afficher et corriger les erreurs dans le jeu. »
 
 ## <a name="breadcrumb-bar"></a>Barre de navigation
 
  La barre de fil d'Ariane (breadcrumb) en bas de la vue du graphique indique l'emplacement du nœud sélectionné dans le jeu de schémas. Si plusieurs éléments sont sélectionnés, la barre de fil d'Ariane (breadcrumb) est vide.
 
-## <a name="context-menu"></a>Menu contextuel
+## <a name="context-right-click-menu"></a>Menu contextuel (clic droit)
 
  Le tableau décrit les options disponibles pour tous les nœuds sur l'aire de conception de la vue du graphique.
 
@@ -93,7 +91,7 @@ La vue du graphique fournit une représentation graphique des nœuds de schéma 
 
 ## <a name="properties-window"></a>Fenêtre Propriétés
 
- Utilisez le menu contextuel pour ouvrir la **propriétés** fenêtre. Par défaut, le **propriétés** fenêtre apparaît dans le coin inférieur droit de Visual Studio. Lorsque vous cliquez sur un nœud qui est affiché dans la vue de modèle de contenu, les propriétés de ce nœud seront affichera dans le **propriétés** fenêtre.
+ Utilisez le menu contextuel (clic droit) pour ouvrir la **propriétés** fenêtre. Par défaut, le **propriétés** fenêtre apparaît dans le coin inférieur droit de Visual Studio. Lorsque vous cliquez sur un nœud qui est affiché dans la vue de modèle de contenu, les propriétés de ce nœud seront affichera dans le **propriétés** fenêtre.
 
 ## <a name="xsd-toolbar"></a>Barre d’outils XSD
 
@@ -109,10 +107,10 @@ La vue du graphique fournit une représentation graphique des nœuds de schéma 
 |**Effacer l’espace de travail**|Efface l'espace de travail et l'aire de conception.|
 |**Supprimer à partir de l’espace de travail**|Supprime les nœuds sélectionnés de l'espace de travail et de l'aire de conception.|
 |**Supprimer toutes les valeurs sauf la sélection à partir de l’espace de travail**|Supprime les nœuds qui ne sont pas sélectionnés dans l'espace de travail et l'aire de conception. Cette option est activée dans la vue de modèle de contenu et dans la vue du graphique.|
-|**Gauche à droite**|Modifie la disposition de la vue du graphique pour représenter hiérarchiquement les nœuds de gauche à droite. Cette option est accessible en utilisant le raccourci clavier : **Alt**+**flèche droite**.|
-|**De droite à gauche**|Modifie la disposition de la vue du graphique pour représenter hiérarchiquement les nœuds de droite à gauche. Cette option est accessible en utilisant le raccourci clavier : **Alt**+**flèche gauche**.|
-|**Haut en bas**|Modifie la disposition de la vue du graphique pour représenter hiérarchiquement les nœuds de haut en bas. Cette option est accessible en utilisant le raccourci clavier : **Alt**+**flèche vers le bas**.|
-|**Bas en haut**|Modifie la disposition de la vue du graphique pour représenter hiérarchiquement les nœuds de bas en haut. Cette option est accessible en utilisant le raccourci clavier : **Alt**+**flèche haut**.|
+|**Gauche à droite**|Modifie la disposition de la vue du graphique pour représenter hiérarchiquement les nœuds de gauche à droite. Cette option est accessible en utilisant le raccourci clavier : **ALT**+**flèche droite**.|
+|**De droite à gauche**|Modifie la disposition de la vue du graphique pour représenter hiérarchiquement les nœuds de droite à gauche. Cette option est accessible en utilisant le raccourci clavier : **ALT**+**flèche gauche**.|
+|**Haut en bas**|Modifie la disposition de la vue du graphique pour représenter hiérarchiquement les nœuds de haut en bas. Cette option est accessible en utilisant le raccourci clavier : **ALT**+**flèche vers le bas**.|
+|**Bas en haut**|Modifie la disposition de la vue du graphique pour représenter hiérarchiquement les nœuds de bas en haut. Cette option est accessible en utilisant le raccourci clavier : **ALT**+**flèche haut**.|
 
 ## <a name="panscroll"></a>Panoramique/Défilement
 
@@ -142,7 +140,7 @@ Le curseur de Zoom est opaque lorsque vous sélectionnez il, pointez dessus ou u
 
 ## <a name="xml-editor-integration"></a>Intégration de l’éditeur XML
 
- Vous pouvez basculer entre la vue du graphique et l'Éditeur XML en cliquant sur un nœud et en utilisant le menu contextuel Afficher le code.
+ Vous pouvez basculer entre la vue du graphique et de l’éditeur XML en cliquant sur un nœud à l’aide du menu contextuel (clic droit) afficher le Code.
 
  Si vous apportez des modifications au jeu de schémas dans l’Éditeur XML, les modifications sont synchronisées dans la vue du graphique. Pour plus d’informations, consultez [intégration avec l’éditeur XML](../xml-tools/integration-with-xml-editor.md).
 

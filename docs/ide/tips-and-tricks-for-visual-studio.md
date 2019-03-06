@@ -1,20 +1,18 @@
 ---
 title: Raccourcis clavier
 ms.date: 11/02/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2b2c520a98d1bc3fa9d162889794ed1524d7d82
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e420ed36168e45e067a78a1118b2199981aff3eb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062268"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927566"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Raccourcis clavier pour Visual Studio
 

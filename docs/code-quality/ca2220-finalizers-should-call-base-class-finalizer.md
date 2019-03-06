@@ -1,8 +1,6 @@
 ---
-title: 'CA2220 : Les finaliseurs doivent appeler le finaliseur de leur classe de base'
+title: 'CA2220 : Les finaliseurs doivent appeler le finaliseur de leur classe de base'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2220
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 48329f42-170d-45ee-a381-e33f55a240c5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c814324ac21017acf6a0182f7807b0a0878c8aca
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 034f80c9198ab098070e6642f4a4d96cff1744c5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551205"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927644"
 ---
-# <a name="ca2220-finalizers-should-call-base-class-finalizer"></a>CA2220 : Les finaliseurs doivent appeler le finaliseur de leur classe de base
+# <a name="ca2220-finalizers-should-call-base-class-finalizer"></a>CA2220 : Les finaliseurs doivent appeler le finaliseur de leur classe de base
 
 |||
 |-|-|

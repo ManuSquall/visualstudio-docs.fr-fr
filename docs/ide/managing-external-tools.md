@@ -1,8 +1,6 @@
 ---
 title: Gérer les outils externes
 ms.date: 11/20/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.externaltools
@@ -10,15 +8,15 @@ helpviewer_keywords:
 - external tools [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eeeee2e6e7ae5d043124faaa79bc6bad7c527702
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5e73a20cfd50d859cc050f540fa2d84cae874fc9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945881"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907800"
 ---
 # <a name="manage-external-tools"></a>Gérer les outils externes
 
@@ -66,8 +64,8 @@ Voici une liste complète des arguments qui peuvent être utilisés lors de la d
 |Nom cible|$(TargetName)|Nom de fichier de l'élément à générer.|
 |Extension cible|$(TargetExt)|Extension de nom de fichier de l'élément à générer.|
 |Répertoire binaire|$(BinDir)|Emplacement final du binaire en cours de génération (sous la forme lecteur + chemin d’accès).|
-|Répertoire du projet|$(ProjDir)|Répertoire du projet actif (lecteur + chemin d'accès).|
-|Nom du fichier projet|$(ProjFileName)|Nom de fichier du projet actif (lecteur + chemin d'accès + nom de fichier).|
+|Répertoire du projet|$(ProjectDir)|Répertoire du projet actif (lecteur + chemin d'accès).|
+|Nom du fichier projet|$(ProjectFileName)|Nom de fichier du projet actif (lecteur + chemin d'accès + nom de fichier).|
 |Répertoire de la solution|$(SolutionDir)|Répertoire de la solution active (lecteur + chemin d'accès).|
 |Nom du fichier solution|$(SolutionFileName)|Nom de fichier de la solution active (lecteur + chemin d’accès + nom de fichier).|
 

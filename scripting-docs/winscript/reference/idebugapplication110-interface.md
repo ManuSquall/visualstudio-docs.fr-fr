@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication110 (Interface) | Documents Microsoft
+title: Interface IDebugApplication110 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cd7c283e925db5b42b4d04bfc42ea087ecc22b6f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b13208d6a507ea4ed3157606f358b6b0168180cf
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726059"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349554"
 ---
 # <a name="idebugapplication110-interface"></a>IDebugApplication110 (interface)
-Le `IDebugApplication110` interface étend les fonctionnalités de la [IDebugApplication (Interface)](../../winscript/reference/idebugapplication-interface.md). Vous pouvez obtenir une instance de cette interface en appelant QueryInterface sur une implémentation de [IDebugApplication (Interface)](../../winscript/reference/idebugapplication-interface.md).  
+Le `IDebugApplication110` interface étend les fonctionnalités de la [IDebugApplication Interface](../../winscript/reference/idebugapplication-interface.md). Vous pouvez obtenir une instance de cette interface en appelant QueryInterface sur une implémentation de [IDebugApplication Interface](../../winscript/reference/idebugapplication-interface.md).  
   
 > [!IMPORTANT]
 >  Elle est implémentée par PDM version v11.0 et supérieures. Trouvée dans activdbg100.h.  
@@ -34,4 +34,4 @@ Le `IDebugApplication110` interface étend les fonctionnalités de la [IDebugApp
 |------------|-----------------|  
 |[IDebugApplication110::SynchronousCallInMainThread](../../winscript/reference/idebugapplication110-synchronouscallinmainthread.md)|Effectue un appel synchrone sur le thread principal.|  
 |[IDebugApplication110::AsynchronousCallInMainThread](../../winscript/reference/idebugapplication110-asynchronouscallinmainthread.md)|Effectue un appel asynchrone sur le thread principal.|  
-|[IDebugApplication110::CallableWaitForHandles](../../winscript/reference/idebugapplication110-callablewaitforhandles.md)|Attend qu’une des poignées spécifiées soit signalé tout en autorisant inter-threads appelle publication sur ce thread. Cette méthode doit être appelée à partir du thread de débogueur.|
+|[IDebugApplication110::CallableWaitForHandles](../../winscript/reference/idebugapplication110-callablewaitforhandles.md)|Attend qu’une des poignées spécifiées soit signalé tout en permettant aux inter-threads appels seront publiées sur ce thread. Cette méthode doit être appelée à partir du thread de débogueur.|

@@ -1,20 +1,18 @@
 ---
 title: Gérer les propriétés des projets et des solutions
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77ac77ca999ef627c0f3c9e763b7e5799b97d679
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: cb32a3b71a6868e763b9ad77c49f5cb06a4039fc
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349242"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928034"
 ---
 # <a name="manage-project-and-solution-properties"></a>Gérer les propriétés des projets et des solutions
 

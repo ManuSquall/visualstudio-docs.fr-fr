@@ -1,25 +1,20 @@
 ---
 title: Guide pratique pour configurer les cibles et les tâches | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 ms.assetid: 92814100-392a-471d-96fd-e26f637d6cc2
 caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ce147a9a393b30111f3f76f605e327b70206ad7f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 036705b8184b0c2465b92d616bec399c769fc496
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264049"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54758224"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Guide pratique pour configurer les cibles et les tâches
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -118,6 +113,3 @@ Des tâches MSBuild sélectionnées peuvent être définies pour s’exécuter d
   
 ## <a name="see-also"></a>Voir aussi  
  [Configuration des cibles et des tâches](../msbuild/configuring-targets-and-tasks.md)
-
-
-

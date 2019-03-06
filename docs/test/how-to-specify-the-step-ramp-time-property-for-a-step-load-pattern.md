@@ -7,19 +7,17 @@ helpviewer_keywords:
 ms.assetid: 4a69e857-f93b-4907-9a01-fd1b66291205
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 81373e30498ad02f4007e096cfbc6a7cff953402
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+manager: jillfra
+ms.openlocfilehash: 9240a4129e7a58443ca0efaaa7ee1e27da96dcad
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895717"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916711"
 ---
-# <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Guide pratique pour spécifier la propriété de la durée de démarrage de l’étape dans le modèle de charge
+# <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Procédure : Spécifier la propriété de la durée de démarrage de l’étape dans le modèle de charge
 
-Après avoir créé votre test de charge avec l’**Assistant Nouveau test de charge**, vous pouvez utiliser l’**éditeur de test de charge** pour changer les propriétés des scénarios en fonction de vos besoins et objectifs. Pour plus d’informations, consultez [Procédure pas à pas : création et exécution d’un test de charge](../test/walkthrough-create-and-run-a-load-test.md).
+Après avoir créé votre test de charge avec l’**Assistant Nouveau test de charge**, vous pouvez utiliser l’**éditeur de test de charge** pour changer les propriétés des scénarios en fonction de vos besoins et objectifs. Pour plus d’informations, consultez [Procédure pas à pas : créer et exécuter un test de charge](../test/walkthrough-create-and-run-a-load-test.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -32,15 +30,15 @@ La propriété **Durée de démarrage de l’étape** est utilisée uniquement a
 
 Un modèle de charge dans l’étape est utilisé pour augmenter la charge sur le ou les serveurs au cours de l’exécution du test de charge pour voir comment les performances varient au fur et à mesure que la charge utilisateur augmente. Par exemple, pour voir les performances de votre serveur ou de vos serveurs lorsque la charge utilisateur passe à 2 000 utilisateurs, vous pouvez exécuter un test de charge de 10 heures à l’aide d’un modèle de charge dans l’étape dont les propriétés sont les suivantes :
 
--   Nombre initial d'utilisateurs : 100
+-   Nombre initial d’utilisateurs : 100
 
--   Nombre maximal d'utilisateurs : 2 000
+-   Nombre maximal d’utilisateurs : 2 000
 
--   Durée de l'étape (secondes) : 1 800
+-   Durée de l’étape (secondes) : 1800
 
--   Durée de démarrage de l'étape (secondes) : 20
+-   Durée de démarrage de l’étape (secondes) : 20
 
--   Nombre d'utilisateurs dans l'étape : 100
+-   Nombre d’utilisateurs par étape : 100
 
 Ces paramètres exécutent le test de charge pendant 30 minutes (1 800 secondes) avec des charges utilisateur de 100, 200, 300 et jusqu'à 2 000 utilisateurs.
 

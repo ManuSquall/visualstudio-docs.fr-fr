@@ -1,8 +1,6 @@
 ---
 title: Boîte de dialogue Options, Projets et solutions, Générer et exécuter
 ms.date: 07/14/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.Build_and_Run
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: c884976e-c0df-4c6d-8e3a-856ea2bd547c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b2d047201214e3a7cd4c14c61baa041840decd8
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 5e2e62a0b9ece6052d222a8c228bbd7fe018b0a3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143318"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954775"
 ---
 # <a name="options-dialog-box-projects-and-solutions-build-and-run"></a>Boîte de dialogue Options, Projets et solutions, Générer et exécuter
 

@@ -3,18 +3,16 @@ title: Avantage Support technique
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 10/03/2017
-ms.topic: Get-Started-Article
+ms.date: 12/19/2018
+ms.topic: conceptual
 description: Découvrez comment activer l’avantage Support technique inclus dans votre abonnement Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9fa92d530ac6db46ce014210bf1c4c91836b2d32
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fc1fabec9e6f220162ace335e69e63e8bc1c7286
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950067"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841701"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Activer l’avantage Support technique dans les abonnements Visual Studio
 
@@ -22,13 +20,13 @@ Résolvez les problèmes couverts par la garantie de réparation et d’assistan
 
 > [!NOTE]
 > Les abonnements d’un même niveau ne sont pas tous éligibles pour recevoir des incidents de support technique. C’est le cas des abonnements fournis dans le cadre des programmes FTE, NFR, MPN, MCT et d’autres programmes. Si votre abonnement n’est pas éligible pour recevoir des incidents de support technique, la vignette Support technique n’apparaît pas dans vos avantages disponibles.
-> 
+>
 > [!div class="mx-imgBorder"]
 > ![Vignette de l’avantage Support technique](_img/vs-tech-support/vs-tech-support-tile.png)
 
 
-1. Pour commencer à utiliser votre avantage Support technique, cliquez sur **Activer par chat** sur la vignette Support technique. 
-2. Cette action lance une session de conversation avec un représentant du support qui peut créer et vous fournir votre ID de contrat et votre ID d’accès. 
+1. Pour commencer à utiliser votre avantage Support technique, accédez à https://my.visualstudio.com/Benefits, faites défiler la page jusqu’à la section Support et, dans la vignette Support technique, cliquez sur **Activer par chat**.
+2. Cette action lance une session de conversation avec un représentant du support qui peut créer et vous fournir votre ID de contrat et votre ID d’accès.
 3. Pour cela, le représentant a besoin des informations suivantes :
    - L’adresse e-mail avec laquelle vous vous connectez à votre abonnement.
    - L’ID d’abonnement qui est indiqué sous l’onglet [Abonnements](https://my.visualstudio.com/subscriptions).
@@ -38,7 +36,7 @@ Résolvez les problèmes couverts par la garantie de réparation et d’assistan
 
 
 > [!NOTE]
-> Pour activer votre compte de support dans une autre langue que l’anglais, choisissez votre pays dans [cette liste](https://support.microsoft.com/help/14084/activate-support-contract).   
+> Pour activer votre compte de support dans une autre langue que l’anglais, choisissez votre pays dans [cette liste](https://support.microsoft.com/help/14084/activate-support-contract).
 
 
 ## <a name="how-to-submit-an-incident"></a>Comment signaler un incident
@@ -48,12 +46,12 @@ Une fois que vous avez votre ID de contrat et votre ID d’accès, si vous avez 
 ### <a name="submit-an-incident-online"></a>Soumettre un incident en ligne
 
 1. Pour [créer un incident en ligne](http://support.microsoft.com/oas/), indiquez le produit pour lequel vous souhaitez obtenir de l’aide. Vous pouvez sélectionner un produit dans les différentes listes proposées ou effectuer une recherche par nom. Pour créer un incident concernant Visual Studio Enterprise 2017, par exemple, cliquez sur **Visual Studio** dans le groupe **Outils de développement**.
-   > [!div class="mx-imgBorder"]    
+   > [!div class="mx-imgBorder"]
    > ![Avantage Support technique, Sélectionner le produit concerné par l’incident](_img/vs-tech-support/vs-tech-support-select-product.png)
 
 2. Sélectionnez le produit pour lequel vous avez besoin de support. (Par exemple, cliquez sur **Visual Studio Enterprise 2017** dans la liste des produits Visual Studio.)
 3. Dans la page **Créer un incident**, sélectionnez le type de problème rencontré dans la liste déroulante. Dans notre exemple, nous allons choisir **Environnement de développement intégré (IDE)**.
-   > [!div class="mx-imgBorder"]    
+   > [!div class="mx-imgBorder"]
    > ![Avantage Support technique, Créer un incident](_img/vs-tech-support/vs-tech-support-create-incident.png)
 
 4. Choisissez ensuite la **catégorie** qui se rapproche le plus de votre question ou problème. Dans notre exemple, nous allons choisir  **Outils d’architecture**.
@@ -64,7 +62,7 @@ Une fois que vous avez votre ID de contrat et votre ID d’accès, si vous avez 
    - Entrez vos ID de contrat et d’accès
    - Cliquez sur **Ajouter**
 7. Une fois que votre contrat de support a été ajouté, il s’affiche dans la liste des contrats de support professionnel. Choisissez-le, puis cliquez sur **Continuer**.
-   > [!div class="mx-imgBorder"]     
+   > [!div class="mx-imgBorder"]
    > ![Avantage Support technique, Paiement](_img/vs-tech-support/vs-tech-support-payment.png)
 
 8. Entrez vos coordonnées et la méthode de contact de votre choix, puis cliquez sur **Continuer**.
@@ -85,23 +83,25 @@ Avant d’appeler le support, préparez votre ID de contrat et votre ID d’acc�
 Pour pouvoir utiliser votre avantage Support technique fourni dans l’abonnement Visual Studio afin de résoudre des problèmes liés à Azure, vous devez lier vos ID de contrat et d’accès à votre abonnement Azure.
 
 1.  Accédez à https://portal.azure.com et connectez-vous
-2.  Dans le volet de navigation de gauche, cliquez sur « Aide et support »
-3.  Sous « Support », cliquez sur « Lier un contrat de support technique »
-4.  Entrez vos « ID d’accès » et « ID de contrat » fournis à l’étape 1 ci-dessus.
-
-Une fois que vous avez effectué ces étapes, vous pouvez choisir le plan de support qui est associé à votre avantage inclus dans l’abonnement Visual Studio.  (Le nom du plan peut contenir « MSDN ».)
+2.  Dans le volet de navigation gauche, cliquez sur **Aide et support**
+3.  Sous « Support », cliquez sur **Nouvelle demande de support**
 
 ## <a name="eligibility"></a>Éligibilité
 
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, cloud annuel)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup> | 4 incidents       |  Oui|
-| Visual Studio Professional (Standard, cloud annuel) | Licences en volume, Azure, Détail, NFR sélectif<sup>2</sup>                                        | 2 incidents                                                          |Oui         |
+| Visual Studio Enterprise (Standard)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup> | 4 incidents       |  Oui|
+| Visual Studio Professional (Standard) | Licences en volume, Azure, Détail, NFR sélectif<sup>2</sup>                                        | 2 incidents                                                          |Oui         |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | 2 incidents                                             |  Oui         |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | 2 incidents                                               | Oui         |
 | Visual Studio Dev Essentials | NA | Non disponible |NA|
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |NA|
 
-<sup>1</sup> *Inclut : Imagine Premium. Exclut : NFR (revente interdite), VSIP (Visual Studio Industry Partner), MPN (Microsoft Partner Network), FTE, MCT Software & Services Developer, BizSpark, Imagine Standard, MVP (Microsoft Valued Professional), RD (Region Director), MCT Software & Services.*
+<sup>1</sup> *Inclut : Imagine Premium. Exclut : NFR (revente interdite), VSIP (Visual Studio Industry Partner), MPN (Microsoft Partner Network), FTE, MCT Software & Services Developer, BizSpark, Imagine Standard, MVP (Most Valuable Professional), RD (Regional Director), MCT Software & Services.*
 
-<sup>2</sup> *Inclut : Imagine Standard.*
+<sup>2</sup> *Inclut : Imagine Standard.*
+
+> [!NOTE]
+> Microsoft n’offre plus les abonnements Visual Studio Professional annuel et Visual Studio Enterprise annuel dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
+
+Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.

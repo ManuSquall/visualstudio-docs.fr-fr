@@ -2,20 +2,18 @@
 title: Projets R
 description: Guide pratique pour créer des projets R managés dans Visual Studio, y compris les propriétés, les commandes de projet et les modèles.
 ms.date: 06/29/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: f91d105d1c7b5b60d74dae2f9669a18f8ec064c8
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 3fbe819a13466c3b67f34b0de9d7e60e10aaa57b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248281"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936185"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Créer des projets R dans Visual Studio
 
@@ -66,14 +64,14 @@ Si vous avez un dossier de fichiers *.R* que vous souhaitez gérer dans un proje
 Pour ouvrir les pages de propriétés du projet, cliquez avec le bouton droit sur le projet dans l’**Explorateur de solutions**, puis sélectionnez **Propriétés**, ou sélectionnez l’élément de menu **Projet > Propriétés de (nom du projet)**. La fenêtre qui s’ouvre affiche les propriétés du projet :
 
 
-| Onglet | Property | Description | 
-| --- | --- | --- | 
-| Exécuter | Fichier de démarrage | Nom du fichier qui s’exécute avec la commande **Fichier de démarrage source**, **F5**, **Déboguer** > **Démarrer le débogage**, ou **Déboguer** > **Démarrer sans débogage**. Vous pouvez également le définir comme fichier de démarrage en cliquant avec le bouton droit sur le fichier dans le projet et en sélectionnant **Définir comme script R de démarrage**. | 
-| | Réinitialiser la Fenêtre interactive R à l’exécution | Efface toutes les variables de l’espace de travail de la fenêtre interactive quand vous exécutez le projet. Cela permet de garantir l’absence de contenu d’espace de travail résiduel des exécutions précédentes. | 
-| | Chemin de projet distant | Chemin à un espace de travail distant. | 
-| | Transférer des fichiers à l’exécution | Indique si les fichiers projet, conformément au filtre dans **Fichiers à transférer**, doivent être copiés vers un espace de travail distant à chaque exécution. | 
-| | Fichiers à transférer | Noms de fichiers et caractères génériques indiquant les fichiers à copier vers un espace de travail distant si **Transférer des fichiers à l’exécution** est sélectionné. | 
-| Paramètres | (Fichier Settings.R) | Les paramètres de projet R proviennent des fichiers *Settings.R* ou **.Settings.R* qui se trouvent dans le projet. S’il n’existe aucun fichier de paramètres, vous pouvez ajouter des variables, enregistrer la page, et un fichier *Settings.R* par défaut est créé pour vous. Vous pouvez également ajouter le fichier de paramètres au projet par le biais de la commande de menu **Fichier** > **Ajouter un nouvel élément**. <br/> Les paramètres sont stockés sous forme de code R et le fichier peut être approvisionné avant d’exécuter d’autres modules. Ainsi, l’environnement est prérempli avec les paramètres prédéfinis. | 
+| Onglet | Property | Description |
+| --- | --- | --- |
+| Exécuter | Fichier de démarrage | Nom du fichier qui s’exécute avec la commande **Fichier de démarrage source**, **F5**, **Déboguer** > **Démarrer le débogage**, ou **Déboguer** > **Démarrer sans débogage**. Vous pouvez également le définir comme fichier de démarrage en cliquant avec le bouton droit sur le fichier dans le projet et en sélectionnant **Définir comme script R de démarrage**. |
+| | Réinitialiser la Fenêtre interactive R à l’exécution | Efface toutes les variables de l’espace de travail de la fenêtre interactive quand vous exécutez le projet. Cela permet de garantir l’absence de contenu d’espace de travail résiduel des exécutions précédentes. |
+| | Chemin de projet distant | Chemin à un espace de travail distant. |
+| | Transférer des fichiers à l’exécution | Indique si les fichiers projet, conformément au filtre dans **Fichiers à transférer**, doivent être copiés vers un espace de travail distant à chaque exécution. |
+| | Fichiers à transférer | Noms de fichiers et caractères génériques indiquant les fichiers à copier vers un espace de travail distant si **Transférer des fichiers à l’exécution** est sélectionné. |
+| Paramètres | (Fichier Settings.R) | Les paramètres de projet R proviennent des fichiers *Settings.R* ou **.Settings.R* qui se trouvent dans le projet. S’il n’existe aucun fichier de paramètres, vous pouvez ajouter des variables, enregistrer la page, et un fichier *Settings.R* par défaut est créé pour vous. Vous pouvez également ajouter le fichier de paramètres au projet par le biais de la commande de menu **Fichier** > **Ajouter un nouvel élément**. <br/> Les paramètres sont stockés sous forme de code R et le fichier peut être approvisionné avant d’exécuter d’autres modules. Ainsi, l’environnement est prérempli avec les paramètres prédéfinis. |
 
 ## <a name="r-specific-project-commands"></a>Commandes de projet propres à R
 
@@ -85,7 +83,7 @@ Les projets Visual Studio prennent en charge plusieurs commandes générales par
 | Ouvrir le dossier conteneur | Ouvre l’Explorateur Windows à l’emplacement du fichier sélectionné. |
 | Ajouter un script R | Crée et ouvre un nouveau fichier *.R* avec un nom par défaut. Vous pouvez aussi utiliser la commande **Ajouter** > **Nouvel élément** pour créer des fichiers *.R* et plusieurs autres types de fichiers. Consultez [Modèles d’élément propres à R](#r-specific-item-templates). |
 | Ajouter un fichier Markdown R | Crée et ouvre un nouveau document *.rmd* avec un nom par défaut. Vous pouvez aussi utiliser la commande **Ajouter** > **Nouvel élément** pour créer des fichiers *.rmd* et plusieurs autres types de fichiers. Consultez [Modèles d’élément propres à R](#r-specific-item-templates).  |
-| Publier les procédures stockées | Démarre un processus pour publier toutes les procédures stockées contenues dans le script R. Consultez [Utiliser des procédures stockées SQL Server](integrating-sql-server-with-r.md#work-with-sql-server-stored-procedures). | 
+| Publier les procédures stockées | Démarre un processus pour publier toutes les procédures stockées contenues dans le script R. Consultez [Utiliser des procédures stockées SQL Server](integrating-sql-server-with-r.md#work-with-sql-server-stored-procedures). |
 
 ## <a name="r-specific-item-templates"></a>Modèles d’élément propres à R
 
@@ -98,7 +96,7 @@ Les outils R pour Visual Studio incluent plusieurs modèles pour des types de f
 | --- | --- |
 | Script R | Fichier texte contenant les mêmes commandes qui peuvent être entrées sur la ligne de commande R. |
 | R Markdown | Fichier contenant un document [R Markdown](rmarkdown-with-r-in-visual-studio.md). |
-| Paramètres R | Fichier qui contient des paramètres d’application R. | 
+| Paramètres R | Fichier qui contient des paramètres d’application R. |
 | Documentation R | Fichier de documentation R générique contenant uniquement les champs de nom, d’alias et de titre. |
 | Documentation R (fonction) | Fichier de documentation R contenant de nombreux champs avec des commentaires pour décrire une fonction. |
 | Documentation R (jeu de données) | Fichier de documentation R contenant de nombreux champs avec des commentaires pour décrire un jeu de données. |

@@ -1,20 +1,18 @@
 ---
 title: Ensemble de règles des règles recommandées natives
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7aab8c5796a111d90c29e7fa656749adcdf124bd
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 1a63abd92ae7791bbed107862a736cbd5fc5c649
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43225124"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955399"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Ensemble de règles des règles recommandées natives
 
@@ -60,7 +58,7 @@ Les règles recommandées natives vous concentrer sur les problèmes plus fréqu
 |[C6270](../code-quality/c6270.md)|Argument float manquant pour le formatage de la fonction|
 |[C6271](../code-quality/c6271.md)|Argument supplémentaire pour le formatage de la fonction|
 |[C6272](../code-quality/c6272.md)|Argument non float pour le formatage de la fonction|
-|[C6273](../code-quality/c6273.md)|Argument de type non entier pour le formatage (fonction)|
+|[C6273](../code-quality/c6273.md)|Argument non entier pour la fonction Format|
 |[C6274](../code-quality/c6274.md)|Argument autre qu’un caractère pour le formatage de la fonction|
 |[C6276](../code-quality/c6276.md)|Cast de chaîne non valide|
 |[C6277](../code-quality/c6277.md)|Appel CreateProcess non valide|
@@ -127,7 +125,7 @@ Les règles recommandées natives vous concentrer sur les problèmes plus fréqu
 |[C6518](../code-quality/c6518.md)|Taille accessible en écriture dans mémoire tampon non accessible en écriture|
 |[C6522](../code-quality/c6522.md)|Type de chaîne de taille non valide|
 |[C6525](../code-quality/c6525.md)|Chaîne de taille non valide. Emplacement inaccessible|
-|[C6527](../code-quality/c6527.md)|Annotation non valide : la propriété NeedsRelease ne doit pas être utilisée sur des valeurs de type void|
+|[C6527](../code-quality/c6527.md)|Annotation non valide : Propriété de 'NeedsRelease' ne peut pas être utilisée sur les valeurs de type void|
 |[C6530](../code-quality/c6530.md)|Style de chaîne de format non reconnu|
 |[C6540](../code-quality/c6540.md)|L'utilisation des annotations d'attribut sur cette fonction rendra non valides toutes ses annotations __declspec existantes|
 |[C6551](../code-quality/c6551.md)|Spécification de taille non valide : expression impossible à analyser|
@@ -228,16 +226,16 @@ Les règles recommandées natives vous concentrer sur les problèmes plus fréqu
 |[C28282](../code-quality/c28282.md)|Les chaînes de format doivent être comprises dans des conditions préalables|
 |[C28285](../code-quality/c28285.md)|Pour la fonction, erreur de syntaxe dans le paramètre|
 |[C28286](../code-quality/c28286.md)|Pour la fonction, erreur de syntaxe près de la fin|
-|[C28287](../code-quality/c28287.md)|Pour la fonction, erreur de syntaxe dans \_à\_() annotation (nom de paramètre non reconnu)|
-|[C28288](../code-quality/c28288.md)|Pour la fonction, erreur de syntaxe dans \_à\_() annotation (nom de paramètre non valide)|
-|[C28289](../code-quality/c28289.md)|Pour la fonction : ReadableTo ou WritableTo n'a pas eu de spécification de limites en tant que paramètre|
+|[C28287](../code-quality/c28287.md)|Pour la fonction, erreur de syntaxe dans l’annotation \_At\_() (nom de paramètre non reconnu)|
+|[C28288](../code-quality/c28288.md)|Pour la fonction, erreur de syntaxe dans l’annotation \_At\_() (nom de paramètre non valide)|
+|[C28289](../code-quality/c28289.md)|Pour la fonction : ReadableTo ou WritableTo n’avait pas une spécification de limite en tant que paramètre|
 |[C28290](../code-quality/c28290.md)|l'annotation pour la fonction contient plus d'Externals que le nombre réel de paramètres|
 |[C28291](../code-quality/c28291.md)|post null/notnull au niveau 0 deref n'a pas de sens pour la fonction.|
 |[C28300](../code-quality/c28300.md)|Opérandes d’expression de types incompatibles pour l’opérateur|
 |[C28301](../code-quality/c28301.md)|Aucune annotation pour la première déclaration de la fonction.|
-|[C28302](../code-quality/c28302.md)|Un supplémentaire \_Deref\_ opérateur a été trouvé dans une annotation.|
-|[C28303](../code-quality/c28303.md)|Un ambigu \_Deref\_ opérateur a été trouvé dans une annotation.|
-|[C28304](../code-quality/c28304.md)|Un placé \_Notref\_ opérateur appliqué à un jeton a été trouvé.|
+|[C28302](../code-quality/c28302.md)|Un opérateur \_Deref\_ en trop a été trouvé dans une annotation.|
+|[C28303](../code-quality/c28303.md)|Un opérateur ambigu \_Deref\_ a été trouvé dans une annotation.|
+|[C28304](../code-quality/c28304.md)|Un opérateur \_Notref\_ placé de manière incorrecte et appliqué à un jeton a été trouvé.|
 |[C28305](../code-quality/c28305.md)|Une erreur a été détectée pendant l'analyse d'un jeton.|
 |[C28306](../code-quality/c28306.md)|L’annotation sur paramètre est obsolète|
 |[C28307](../code-quality/c28307.md)|L’annotation sur paramètre est obsolète|

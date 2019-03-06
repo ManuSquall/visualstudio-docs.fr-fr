@@ -1,8 +1,6 @@
 ---
-title: 'CA2212 : Ne marquez pas les composants pris en charge avec WebMethod'
+title: 'CA2212 : Ne marquez pas les composants pris en charge avec webMethod'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2212
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 774bc55d-e588-48ee-8f38-c228580feca2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d1595c6bdf7eafb5b86daba99e943aad3f02ac7
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: a47b7e703d811ff5dce421db103af89bb3a76512
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550646"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917036"
 ---
-# <a name="ca2212-do-not-mark-serviced-components-with-webmethod"></a>CA2212 : Ne marquez pas les composants pris en charge avec WebMethod
+# <a name="ca2212-do-not-mark-serviced-components-with-webmethod"></a>CA2212 : Ne marquez pas les composants pris en charge avec webMethod
 
 |||
 |-|-|

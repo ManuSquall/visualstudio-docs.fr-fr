@@ -6,17 +6,15 @@ helpviewer_keywords:
 - Domain-Specific Language, connectors
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: e26401247c2b6cefc3d86dbd5b6e80adfe473937
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 754f479b99eef44159994425ddd7a0d812bcf2ee
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967309"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909230"
 ---
 # <a name="properties-of-connectors"></a>Propriétés des connecteurs
 Connecteurs représentent les relations de domaine dans un concepteur généré.
@@ -34,22 +32,22 @@ Connecteurs représentent les relations de domaine dans un concepteur généré.
 |Couleur du texte|La couleur qui est utilisée pour les éléments décoratifs de texte qui sont associés à ce connecteur.|Noir|
 |Thickness|L’épaisseur de la ligne de ce connecteur, mesurée en pouces.|0.03125|
 |Modificateur d'accès|Le niveau d’accès de la classe (`public` ou `internal`).|Public|
-|Attributs personnalisés|Utilisé pour ajouter des attributs à la classe de code source qui est générée à partir de ce connecteur.|\<Aucun >|
+|Attributs personnalisés|Utilisé pour ajouter des attributs à la classe de code source qui est générée à partir de ce connecteur.|\<aucune>|
 |Génère le Double dérivée|Si `True`, une classe de base et une classe partielle (pour prendre en charge la personnalisation via des substitutions) sont générés. Pour plus d’informations, consultez [substitution et extension des Classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |A le constructeur personnalisé|Si `True`, un constructeur personnalisé est fourni dans le code source. Pour plus d’informations, consultez [substitution et extension des Classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |Modificateur d’héritage|Décrit le type d’héritage de la classe de code source qui est générée à partir du connecteur (`none`, `abstract` ou `sealed`).|none|
 |Connecteur de base|La classe de base de ce connecteur.|(aucune)|
 |Name|Le nom de ce connecteur.|Nom actuel|
 |Espace de noms|L’espace de noms qui est affilié à ce connecteur.|Espace de noms actuel|
-|Type de l’info-bulle|Comment l’info-bulle est définie (fixe, variable, ou aucun). Si fixe, puis la valeur de la `Fixed Tooltip Text` propriété est utilisée en tant que l’info-bulle ; si la variable, l’info-bulle est définie dans du code personnalisé.|\<Aucun >|
-|Notes|Remarques informelles associées à ce connecteur.|\<Aucun >|
+|Type de l’info-bulle|Comment l’info-bulle est définie (fixe, variable, ou aucun). Si fixe, puis la valeur de la `Fixed Tooltip Text` propriété est utilisée en tant que l’info-bulle ; si la variable, l’info-bulle est définie dans du code personnalisé.|\<aucune>|
+|Notes|Remarques informelles associées à ce connecteur.|\<aucune>|
 |Style de routage|Le style qui est utilisé pour router le connecteur. Un `Rectilinear` connecteur établit à angle droit active en fonction des besoins ; un `Straight` n’est pas le cas du connecteur.|Rectiligne|
 |Couleur exposé en tant que propriété<br /><br /> Style de tiret exposé en tant que propriété<br /><br /> Épaisseur exposé en tant que propriété<br /><br /> Expose la couleur du texte|Si `True`, l’utilisateur peut définir la propriété indiquée d’une forme. Pour définir ceci, avec le bouton droit de la définition de forme, puis cliquez sur **ajouter les objets exposés**.|False|
-|Description|Utilisé pour documenter le concepteur généré.|\<Aucun >|
-|Nom complet|Le nom qui s’affichera dans le concepteur généré pour ce connecteur.|\<Aucun >|
-|Texte d’info-bulle fixe|Le texte qui est utilisé pour une info-bulle fixe.|\<Aucun >|
-|Help Keyword|Le mot clé qui est utilisé pour indexer l’aide F1 pour cet élément.|\<Aucun >|
+|Description|Utilisé pour documenter le concepteur généré.|\<aucune>|
+|Nom complet|Le nom qui s’affichera dans le concepteur généré pour ce connecteur.|\<aucune>|
+|Texte d’info-bulle fixe|Le texte qui est utilisé pour une info-bulle fixe.|\<aucune>|
+|Help Keyword|Le mot clé qui est utilisé pour indexer l’aide F1 pour cet élément.|\<aucune>|
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Glossaire des outils Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossaire des Outils Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

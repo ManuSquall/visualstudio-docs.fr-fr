@@ -7,17 +7,15 @@ helpviewer_keywords:
 - error, process
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6d69aa899ffea95c8da7c3513c6f7b0fa6002ee
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 72ff34e07ddef0a85a6fa45de94e0c3b872dc607
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895156"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913403"
 ---
 # <a name="visual-studio-unrecoverable-process-error"></a>Erreur de processus irrécupérable Visual Studio
 

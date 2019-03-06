@@ -2,20 +2,18 @@
 title: Extraits de code pour R
 description: Les extraits de code pour R dans Visual Studio fournissent des raccourcis pour insérer rapidement des blocs de code de longueur arbitraire, ce qui vous évite de retaper du code similaire plusieurs fois de suite.
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 0c9db243b3903ddcbaa310bbf5ba3fd911eee7fc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 05a21da94dd643b04cea94b7840ca26d9379cb5a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35667728"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956361"
 ---
 # <a name="code-snippets"></a>Extraits de code
 
@@ -38,7 +36,7 @@ Pour voir tous les extraits de code disponibles, ouvrez la boîte de dialogue **
 
 ![Boîte de dialogue Extraits de code pour R](media/code-snippet-dialog.png)
 
-Pour créer des extraits de code personnalisés, suivez les instructions de [Procédure pas à pas : créer un extrait de code](../ide/walkthrough-creating-a-code-snippet.md). En fin de compte, un extrait de code est un simple fichier XML. Par exemple, le code suivant est l’extrait de code pour l’opération de barre verticale (raccourci `>`) :
+Pour créer des extraits de code personnalisés, suivez les instructions de [Procédure pas à pas : Créer un extrait de code](../ide/walkthrough-creating-a-code-snippet.md). En fin de compte, un extrait de code est un simple fichier XML. Par exemple, le code suivant est l’extrait de code pour l’opération de barre verticale (raccourci `>`) :
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

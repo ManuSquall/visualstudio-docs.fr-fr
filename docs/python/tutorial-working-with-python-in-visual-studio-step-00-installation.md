@@ -2,23 +2,21 @@
 title: Tutoriel Python dans Visual Studio - étape 0, installation
 titleSuffix: ''
 description: Étape 0 (conditions préalables d’installation) d’une procédure pas à pas portant sur l’utilisation de Python dans Visual Studio.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 01/28/2019
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5096d0789f8f3c84c041591918af73cc230fe16d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 559323ff3204c70f8068eef782ab5b0d90f9ff3a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064441"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920065"
 ---
 # <a name="install-python-support-in-visual-studio"></a>Installer la prise en charge de Python dans Visual Studio
 

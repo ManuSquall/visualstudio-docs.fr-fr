@@ -12,18 +12,16 @@ helpviewer_keywords:
 - formatting conventions [EditorConfig]
 author: kuhlenh
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: a54a3d6b967e7652c25e24922d7bd3b49141cc17
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 52848599e05f5b7e5050e408f98d9ff4d670ca72
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769749"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911869"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Paramètres des conventions de codage .NET pour EditorConfig
 
@@ -1391,6 +1389,7 @@ La liste suivante présente les règles de conventions de mise en forme disponib
 - Paramètres de mise en forme .NET
     - [Organiser les instructions using](#usings)
         - dotnet_sort_system_directives_first
+        - dotnet_separate_import_directive_groups
 - Paramètres de mise en forme C#
     - [Options de saut de ligne](#newline)
         - csharp_new_line_before_open_brace
@@ -1433,6 +1432,7 @@ Le tableau suivant indique le nom de la règle, les langages applicables, la val
 | Nom de la règle | Langages applicables | Valeur par défaut de Visual Studio | Version de Visual Studio 2017 |
 | ----------- | -------------------- | ----------------------| ---------------- |
 | dotnet_sort_system_directives_first | C# et Visual Basic | true | 15.3 |
+| dotnet_separate_import_directive_groups | C# et Visual Basic | False | 15.5 |
 
 **dotnet\_sort\_system\_directives_first**
 
@@ -1459,6 +1459,34 @@ Exemple de fichier *.editorconfig* :
 # .NET formatting settings:
 [*.{cs,vb}]
 dotnet_sort_system_directives_first = true
+```
+
+**dotnet\_separate\_import\_directive\_groups**
+
+- Quand cette règle est définie sur **true**, placez une ligne vide entre les groupes de directives using.
+- Quand cette règle est définie sur **false**, ne placez pas de ligne vide entre les groupes de directives using.
+
+Exemples de code :
+
+```csharp
+// dotnet_separate_import_directive_groups = true
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
+using Octokit;
+
+// dotnet_separate_import_directive_groups = false
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Octokit;
+```
+
+Exemple de fichier *.editorconfig* :
+
+```EditorConfig
+# .NET formatting settings:
+[*.{cs,vb}]
+dotnet_separate_import_directive_groups = true
 ```
 
 ### <a name="c-formatting-settings"></a>Paramètres de mise en forme C#
@@ -2194,6 +2222,7 @@ charset = utf-8-bom
 [*.{cs,vb}]
 # Organize usings
 dotnet_sort_system_directives_first = true
+dotnet_separate_import_directive_groups = false
 
 # this. preferences
 dotnet_style_qualification_for_field = false:none

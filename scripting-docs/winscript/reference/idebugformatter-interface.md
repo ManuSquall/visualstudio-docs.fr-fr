@@ -1,5 +1,5 @@
 ---
-title: IDebugFormatter (Interface) | Documents Microsoft
+title: Interface IDebugFormatter | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 97f95aa1ecb91f6caca187939a79a6f09cd2108f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 353a85ab51252c92086fa478d95b2e29ab3db62d
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729169"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348033"
 ---
 # <a name="idebugformatter-interface"></a>IDebugFormatter, interface
-Permet à un langage ou un IDE pour personnaliser la conversion entre les valeurs de type VARIANT ou types VARTYPE et les chaînes.  
+Permet à un langage ou à un IDE de personnaliser la conversion entre des valeurs de type VARIANT ou des types VARTYPE et des chaînes.  
   
  Outre les méthodes héritées de `IUnknown`, le `IDebugFormatter` interface expose les méthodes suivantes.  
   
@@ -32,4 +32,4 @@ Permet à un langage ou un IDE pour personnaliser la conversion entre les valeur
 |------------|-----------------|  
 |[IDebugFormatter::GetStringForVariant](../../winscript/reference/idebugformatter-getstringforvariant.md)|Retourne une chaîne qui représente la valeur de type VARIANT donnée.|  
 |[IDebugFormatter::GetVariantForString](../../winscript/reference/idebugformatter-getvariantforstring.md)|Retourne une valeur VARIANT contenant la chaîne donnée.|  
-|[IDebugFormatter::GetStringForVarType](../../winscript/reference/idebugformatter-getstringforvartype.md)|Retourne une chaîne qui représente la valeur VARTYPE spécifiée.|
+|[IDebugFormatter::GetStringForVarType](../../winscript/reference/idebugformatter-getstringforvartype.md)|Retourne une chaîne qui représente la valeur VARTYPE donnée.|

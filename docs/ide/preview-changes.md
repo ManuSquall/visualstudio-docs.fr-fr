@@ -1,22 +1,20 @@
 ---
 title: Aperçu des modifications du code
 ms.date: 12/16/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 f1_keywords:
 - vs.codefix.previewchanges
 ms.workload:
 - multiple
-ms.openlocfilehash: 16f681d8498242eb8ddc9c1a81fe8d17186f2fff
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 07d722848725753b0b2abf25c8497327cdb53835
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067354"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952162"
 ---
 # <a name="preview-changes-window"></a>Fenêtre Aperçu des modifications
 

@@ -2,20 +2,18 @@
 title: Fenêtre d’aide pour R
 description: L’aide R est directement intégrée à la fenêtre interactive de Visual Studio via la commande « ? » .
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 6576a701abe699bfe47666acfc21c848dde1f53a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: af6c6156b1d88c1d015f7700fc7bed061bbe9a76
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35666681"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957742"
 ---
 # <a name="help-in-r-tools-for-visual-studio"></a>Aide dans Outil R pour Visual Studio
 

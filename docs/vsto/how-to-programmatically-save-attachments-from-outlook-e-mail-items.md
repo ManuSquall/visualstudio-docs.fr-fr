@@ -1,9 +1,6 @@
 ---
-title: 'Comment : enregistrer des pièces jointes à partir d’éléments de messagerie Outlook par programmation'
-ms.custom: ''
+title: 'Procédure : Enregistrer des pièces jointes à partir d’éléments de messagerie Outlook par programmation'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,33 +11,31 @@ helpviewer_keywords:
 - saving e-mail attachments
 - mail items [Office development in Visual Studio], attachments
 - attachments [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fd564b71622ad5f9ee6500ddc3864bad0b21686b
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 413cee4a768dcf2fe1b6b82b78e213db5b1df9b6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671184"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56631118"
 ---
-# <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>Comment : enregistrer des pièces jointes à partir d’éléments de messagerie Outlook par programmation
-  Cet exemple enregistre les pièces jointes de messagerie électronique dans un dossier spécifié lorsque le courrier est reçu dans la Boîte de réception.  
-  
-> [!IMPORTANT]  
->  Cet exemple fonctionne uniquement si vous ajoutez un dossier nommé **TestFileSave** à la racine du répertoire C.  
-  
- [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
-  
-## <a name="example"></a>Exemple  
- [!code-csharp[Trin_OL_SaveAttachments#1](../vsto/codesnippet/CSharp/Trin_OL_SaveAttachments/thisaddin.cs#1)]  
-  
-## <a name="see-also"></a>Voir aussi  
- [Travailler avec des éléments de messagerie](../vsto/working-with-mail-items.md)   
- [Comment : récupérer par programme un dossier par nom](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
- [Comment : effectuer des actions par programme lors de la réception d’un message électronique](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)   
- [Comment : effectuer une recherche par programme dans un dossier spécifique](../vsto/how-to-programmatically-search-within-a-specific-folder.md)  
-  
-  
+# <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>Procédure : Enregistrer des pièces jointes à partir d’éléments de messagerie Outlook par programmation
+  Cet exemple enregistre les pièces jointes de messagerie électronique dans un dossier spécifié lorsque le courrier est reçu dans la Boîte de réception.
+
+> [!IMPORTANT]
+>  Cet exemple fonctionne uniquement si vous ajoutez un dossier nommé **TestFileSave** à la racine du répertoire C.
+
+ [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
+
+## <a name="example"></a>Exemple
+ [!code-csharp[Trin_OL_SaveAttachments#1](../vsto/codesnippet/CSharp/Trin_OL_SaveAttachments/thisaddin.cs#1)]
+
+## <a name="see-also"></a>Voir aussi
+- [Travailler avec des éléments de messagerie](../vsto/working-with-mail-items.md)
+- [Guide pratique pour Récupérer par programme un dossier par nom](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
+- [Guide pratique pour Effectuer des actions par programme lorsqu’un message électronique est reçu.](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
+- [Guide pratique pour Rechercher par programmation dans un dossier spécifique](../vsto/how-to-programmatically-search-within-a-specific-folder.md)

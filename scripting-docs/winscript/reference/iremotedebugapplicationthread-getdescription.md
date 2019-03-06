@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::GetDescription | Documents Microsoft
+title: IRemoteDebugApplicationThread::GetDescription | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 74d3f59648a5a6aa0f510e98b33c3c26b1f9db56
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ff7e331ebd61d499ddd865409e23a5ad4ffae11a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728479"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095431"
 ---
 # <a name="iremotedebugapplicationthreadgetdescription"></a>IRemoteDebugApplicationThread::GetDescription
 Obtient la description et l’état de ce thread.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetDescription(  
    BSTR*  pbstrDescription,  
    BSTR*  pbstrState  
@@ -39,7 +39,7 @@ HRESULT GetDescription(
   
 #### <a name="parameters"></a>Paramètres  
  `pbstrDescription`  
- [out] La description de ce thread.  
+ [out] Description de ce thread.  
   
  `pbstrState`  
  [out] Description de l’état du thread.  
@@ -47,11 +47,11 @@ HRESULT GetDescription(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette méthode obtient la description et l’état de ce thread.  
   
 ## <a name="see-also"></a>Voir aussi  

@@ -1,8 +1,6 @@
 ---
-title: 'CA1724 : les noms de types ne doivent pas être identiques aux espaces de noms'
+title: 'CA1724 : Les noms de types ne doivent pas être identiques aux espaces de noms'
 ms.date: 09/28/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - TypeNamesShouldNotMatchNamespaces
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 329af3b5-5600-4101-831d-531ab3eb7060
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf359ffcc098fa2b5653c28da302e2777216ea5b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: f81327324de937df57edfb36cae34d613f6298a5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860262"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953969"
 ---
-# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724 : Les noms de types ne doivent pas correspondre aux espaces de noms
+# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724 : Noms de types ne doivent pas correspondre aux espaces de noms
 
 |||
 |-|-|

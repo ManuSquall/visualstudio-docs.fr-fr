@@ -1,8 +1,6 @@
 ---
 title: Ajouter un projet existant, commande
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - file.addexistingproject
@@ -12,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 71cf3e31-c76b-405b-ad6a-1b1bc654bd40
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c030358eb071613e98d473845708b01235683ded
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: d0946efb15758c76c078ff234717af6fd1fac15c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704783"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951629"
 ---
 # <a name="add-existing-project-command"></a>Ajouter un projet existant, commande
 Ajoute un projet existant à la solution actuelle.
@@ -53,4 +51,4 @@ File.AddExistingProject filename
 - [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Commande, fenêtre](../../ide/reference/command-window.md)
 - [Rechercher/Commande, zone](../../ide/find-command-box.md)
-- [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

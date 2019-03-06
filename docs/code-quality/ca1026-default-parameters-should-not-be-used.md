@@ -1,8 +1,6 @@
 ---
-title: 'CA1026 : Les paramètres par défaut ne doivent pas être utilisés'
+title: 'CA1026 : Les paramètres par défaut ne doivent pas être utilisés'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1026
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 09643415-36ef-4d0f-9411-5721e14e2512
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec4a248be45489eafcbd208329a52cfc06d8237f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a5dc7f7e62526050eeabdb91a557bbdf0fbcf6da
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825332"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957950"
 ---
-# <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026 : Les paramètres par défaut ne doivent pas être utilisés
+# <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026 : Les paramètres par défaut ne doivent pas être utilisés
 
 |||
 |-|-|
@@ -52,7 +50,7 @@ ms.locfileid: "49825332"
  [!code-vb[FxCop.Design.DefaultParameters#1](../code-quality/codesnippet/VisualBasic/ca1026-default-parameters-should-not-be-used_1.vb)]
 
 ## <a name="related-rules"></a>Règles associées
- [CA1025 : Remplacez les arguments répétitifs par un tableau params](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)
+ [CA1025 : Remplacer les arguments répétitifs par un tableau params](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)
 
 ## <a name="see-also"></a>Voir aussi
  [Indépendance du langage et composants indépendants du langage](/dotnet/standard/language-independence-and-language-independent-components)

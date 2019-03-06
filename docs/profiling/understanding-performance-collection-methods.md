@@ -1,8 +1,6 @@
 ---
 title: Présentation des méthodes de collecte des performances | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.wizard.methodpage
@@ -10,15 +8,15 @@ helpviewer_keywords:
 - Profiling Tools, profiling methods
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d278f8ca6019dd8a29d5e4c57e1e191137a32972
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 018c71be69efa7b68f08cb0d320633b82be9832d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668770"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635083"
 ---
 # <a name="understand-performance-collection-methods"></a>Présenter les méthodes de collecte des performances
 
@@ -133,5 +131,5 @@ Données d’interaction de couche collectées par les outils de profilage
 
 ## <a name="see-also"></a>Voir aussi
 
-[Guide pratique pour collecter les données de performances d’un site web](../profiling/how-to-collect-performance-data-for-a-web-site.md)  
+[Guide pratique pour collecter des données de performances pour un site web](../profiling/how-to-collect-performance-data-for-a-web-site.md)
 [Guide du débutant en profilage des performances](../profiling/beginners-guide-to-performance-profiling.md)

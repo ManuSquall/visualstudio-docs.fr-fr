@@ -4,17 +4,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6b3078fdc54a5efa652d9de737559365cca7f58a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3dcad8664fd0759a81e7c676c2d266475a3db9fe
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927084"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923276"
 ---
 # <a name="properties-of-domain-roles"></a>Propriétés des rôles de domaine
 Les propriétés dans le tableau suivant sont associées à un rôle de domaine. Pour plus d’informations sur les rôles de domaine, consultez [présentation des modèles, des Classes et des relations](../modeling/understanding-models-classes-and-relationships.md). Pour plus d’informations sur l’utilisation de ces propriétés, consultez [personnalisation et extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -37,7 +35,7 @@ Les propriétés dans le tableau suivant sont associées à un rôle de domaine.
 |Category|La catégorie sous laquelle la propriété générée apparaît dans le **propriétés** fenêtre dans le concepteur généré. Si cette propriété est vide, la propriété générée apparaît sous le **divers** catégorie|< aucun\>|
 |Description|La description qui est utilisée pour documenter le code et est utilisée dans l’interface utilisateur du concepteur généré.<br /><br /> La description s’affiche dans l’info-bulle IntelliSense pour la propriété générée sur la classe d’acteur de rôle.|`Description for` *le nom complet du rôle*|
 |Nom complet|Le nom qui s’affiche dans le concepteur généré pour le rôle de domaine.|Valeur ajustée de la propriété Name.|
-|Help Keyword|Le mot clé facultatif qui est utilisé pour indexer l’aide F1 pour le rôle de domaine.|\<Aucun >|
+|Help Keyword|Le mot clé facultatif qui est utilisé pour indexer l’aide F1 pour le rôle de domaine.|\<aucune>|
 |Nom d’affichage de propriété|Le nom qui s’affiche dans le concepteur généré pour la propriété de rôle généré.|La valeur de la propriété de nom de la propriété corrigée.|
 
 > [!NOTE]

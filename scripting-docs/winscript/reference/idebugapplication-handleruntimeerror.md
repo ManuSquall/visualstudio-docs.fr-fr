@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::HandleRuntimeError | Documents Microsoft
+title: IDebugApplication::HandleRuntimeError | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eead4780ff061ff9c7280aeee0936c8f64741981
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2a64bc0b3543af322ec092340026e4abdc7380f9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725789"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097316"
 ---
 # <a name="idebugapplicationhandleruntimeerror"></a>IDebugApplication::HandleRuntimeError
 Provoque le blocage du thread actuel et envoie une notification de l’erreur à l’IDE de débogueur.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT HandleRuntimeError(  
    IActiveScriptErrorDebug*  pErrorDebug,  
    IActiveScriptSite*        pScriptSite,  
@@ -48,10 +48,10 @@ HRESULT HandleRuntimeError(
  [in] Le site de script du thread.  
   
  `pbra`  
- [out] Action à entreprendre lorsque le débogueur sort de l’application.  
+ [out] Action à entreprendre lorsque le débogueur reprend l’application.  
   
  `perra`  
- [out] Action à entreprendre lorsque le débogueur sort de l’application s’il existe une erreur.  
+ [out] Action à entreprendre lorsque le débogueur reprend l’application s’il existe une erreur.  
   
  `pfCallOnScriptError`  
  [out] Indicateur qui est `TRUE` si le moteur doit appeler le `IActiveScriptSite::OnScriptError` (méthode).  
@@ -59,18 +59,18 @@ HRESULT HandleRuntimeError(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
- Un moteur de langage appelle cette méthode dans le contexte d’un thread qui provoque une erreur d’exécution. Cette méthode provoque le blocage du thread actuel et envoie une notification d’erreur à envoyer au débogueur IDE. Lorsque le débogueur IDE reprend l’application, cette méthode retourne l’action à entreprendre.  
+## <a name="remarks"></a>Notes  
+ Un moteur de langage appelle cette méthode dans le contexte d’un thread qui provoque une erreur d’exécution. Cette méthode provoque le blocage du thread actuel et envoie une notification d’erreur à envoyer à l’IDE de débogueur. Lorsque l’IDE de débogueur reprend l’application, cette méthode est retournée avec l’action à entreprendre.  
   
 > [!NOTE]
->  Lors de l’erreur d’exécution, le moteur de langage peut être appelé par le thread pour effectuer des tâches telles qu’énumérer les frames de pile ou d’évaluer des expressions.  
+>  Dans l’erreur d’exécution, le moteur de langage peut être appelé par le thread pour effectuer des tâches telles qu’énumérer les frames de pile ou d’évaluer des expressions.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDebugApplication (Interface)](../../winscript/reference/idebugapplication-interface.md)   
+ [Interface IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
  [IActiveScriptErrorDebug (Interface)](../../winscript/reference/iactivescripterrordebug-interface.md)   
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)   
  [Énumération BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)   

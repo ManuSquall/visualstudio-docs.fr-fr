@@ -7,17 +7,15 @@ helpviewer_keywords:
 - EditorConfig naming conventions
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df74252361e330ac992f8f3e852d9c33006d18e7
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: b6844c20a5be1a963b37aa1e24536d4d33565405
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443582"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908190"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Conventions de nommage .NET pour EditorConfig
 
@@ -86,7 +84,7 @@ Pour décrire les modificateurs des symboles auxquels vous voulez appliquer la r
 
 `dotnet_naming_symbols.<symbolTitle>.required_modifiers = <values>`
 
-La liste suivante répertorie les valeurs autorisées, et vous pouvez spécifier plusieurs valeurs en les séparant par une virgule.
+La liste suivante répertorie les valeurs autorisées, et vous pouvez spécifier plusieurs valeurs en les séparant par une virgule. Une règle de nommage fait uniquement correspondre les signatures contenant tous les modificateurs spécifiés dans `required_modifiers`. Si vous omettez cette propriété, la valeur par défaut d’une liste vide est utilisée. En d’autres termes, aucun modificateur spécifique n’est nécessaire pour une correspondance. Cela signifie que les modificateurs d’un symbole n’ont aucun effet sur l’application ou non de cette règle.
 
 - `abstract` ou `must_inherit`
 - `async`

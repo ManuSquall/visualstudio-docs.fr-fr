@@ -1,22 +1,20 @@
 ---
-title: 'CA3076 : exécution non sécurisée de script XSLT'
+title: 'CA3076 : Exécution non sécurisée de script XSLT'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74fe556d775e60dec5dde4528a1924e55ab4c2ed
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 5f98b022aef49a4d98ad4864793aa55732f8de6c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546390"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929178"
 ---
-# <a name="ca3076-insecure-xslt-script-execution"></a>CA3076 : exécution non sécurisée de script XSLT
+# <a name="ca3076-insecure-xslt-script-execution"></a>CA3076 : Exécution non sécurisée de script XSLT
 
 |||
 |-|-|
@@ -31,7 +29,7 @@ Si vous exécutez le langage XSLT (Extensible Stylesheet Language Transformation
 
 ## <a name="rule-description"></a>Description de la règle
 
-**XSLT** est une norme World Wide Web Consortium (W3C) pour la transformation des données XML. XSLT est généralement utilisé pour écrire des feuilles de style pour transformer des données XML dans d’autres formats tels que HTML, texte de longueur fixe, séparées par des virgules ou un autre format XML. Bien qu’il soit interdit par défaut, vous pouvez choisir de l’activer pour votre projet.
+**XSLT** est une norme W3C (World Wide Web Consortium) pour la transformation des données XML. XSLT est généralement utilisé pour écrire des feuilles de style pour transformer des données XML dans d’autres formats tels que HTML, texte de longueur fixe, séparées par des virgules ou un autre format XML. Bien qu’il soit interdit par défaut, vous pouvez choisir de l’activer pour votre projet.
 
 Pour garantir que vous n’exposez pas une surface d’attaque, cette règle se déclenche chaque fois que le XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> reçoit des instances de combinaisons non sécurisées de <xref:System.Xml.Xsl.XsltSettings> et <xref:System.Xml.XmlResolver>, ce qui permet le traitement d’un script malveillant.
 

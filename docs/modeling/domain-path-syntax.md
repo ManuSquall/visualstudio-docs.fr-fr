@@ -6,17 +6,15 @@ helpviewer_keywords:
 - Domain-Specific Language, domain path
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 984b27b65b251a1e87c72962e488fd0d4036a4d0
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 47c2adc2894cc67b337243c30f4a62bc3642ff39
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749542"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955230"
 ---
 # <a name="domain-path-syntax"></a>Syntaxe du chemin de domaine
 Les définitions DSL utilisent une syntaxe semblable à XPath pour rechercher des éléments spécifiques dans un modèle.
@@ -29,9 +27,9 @@ Les définitions DSL utilisent une syntaxe semblable à XPath pour rechercher de
 
  ![Relation de référence CommentReferencesSubjects](../modeling/media/dsl_reference.png)
 
- La syntaxe traverse l'arborescence du modèle. Par exemple, la relation de domaine **CommentReferencesSubjects** dans l’illustration ci-dessus a un **sujets** rôle. Le segment de chemin d’accès **/ ! Subjectt** Spécifie que le chemin d’accès se termine sur les éléments accédées par le biais du **sujets** rôle.
+ La syntaxe traverse l'arborescence du modèle. Par exemple, la relation de domaine **CommentReferencesSubjects** dans l’illustration ci-dessus a un **sujets** rôle. Le segment de chemin d’accès **/ ! Subjects** Spécifie que le chemin d’accès se termine sur des éléments accédés via le **sujets** rôle.
 
- Chaque segment commence par le nom d'une relation de domaine. Si le parcours provient d’un élément à une relation, le segment de chemin d’accès s’affiche en tant que *Relationship.PropertyName*. Si le saut est à partir d’un lien à un élément, le segment de chemin d’accès s’affiche en tant que *relation / ! RoleName*.
+ Chaque segment commence par le nom d'une relation de domaine. Si le parcours provient d’un élément à une relation, le segment de chemin d’accès apparaît comme *relation.nom_propriété*. Si le tronçon va d’un lien à un élément, le segment de chemin d’accès apparaît comme *relation / ! RoleName*.
 
  Les barres obliques séparent les différentes parties de la syntaxe d'un chemin d'accès. Chaque segment de chemin d'accès est soit un tronçon d'un élément vers un lien (une instance d'une relation), soit un lien vers un élément. Les segments de chemin d'accès apparaissent fréquemment par paires. Un segment de chemin d'accès représente un tronçon d'un élément vers un lien et le segment suivant représente un tronçon du lien vers l'élément à l'autre extrémité. (Tout lien peut aussi être la source ou la cible d'une relation.)
 

@@ -4,17 +4,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: a46509fb55c3d99c3cb2920dd6088497f326ab08
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fbe658dd3cad8c89dca04fe1dc9fb61d6c5813e3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895494"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913208"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Contrôle de la visibilité d'une icône ou d'un élément décoratif
 Un *decorator* est une icône ou une ligne de texte qui apparaît sur la forme d’un langage spécifique à un domaine (DSL). Vous pouvez afficher l’élément décoratif et disparaissent selon l’état des propriétés dans le modèle. Par exemple, sur une forme représentant une personne, vous pouvez avoir des icônes différentes qui s’affichent en fonction du sexe de la personne, nombre d’enfants et ainsi de suite.
@@ -84,7 +82,7 @@ Un *decorator* est une icône ou une ligne de texte qui apparaît sur la forme d
 
 4.  Cliquez sur **générer la Solution** sur le **Build** menu.
 
-5.  Double-cliquez sur le rapport d’erreurs qui s’affiche : «*Votre_classe* ne contient pas de définition pour GetDecoratorControlValue... ».
+5.  Double-cliquez sur le rapport d’erreurs qui s’est affiché : «*Votre_classe* ne contient pas de définition pour GetDecoratorControlValue... ».
 
      L’éditeur de texte s’ouvre sur Dsl\GeneratedCode\DomainClasses.cs. Au-dessus de l’erreur en surbrillance est un commentaire que vous êtes invité à ajouter une méthode.
 

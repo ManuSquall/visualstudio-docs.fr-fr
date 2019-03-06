@@ -2,10 +2,8 @@
 title: Installer Visual Studio
 titleSuffix: ''
 description: Découvrez comment installer Visual Studio, étape par étape.
+ms.date: 02/11/2019
 ms.custom: seodec18
-ms.date: 05/07/2018
-ms.technology: vs-acquisition
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -17,19 +15,19 @@ helpviewer_keywords:
 - Visual Studio installer
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9160a5ebca6efe2cca48a2b8832a51fab3c6ca5a
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: e87026ab387d2a3c7d84a7c546034a7a404db5bf
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159735"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607022"
 ---
 # <a name="install-visual-studio-2017"></a>Installer Visual Studio 2017
 
-Découvrez une nouvelle façon d’installer Visual Studio ! Dans notre toute nouvelle version, nous avons facilité la sélection et l’installation des seules fonctionnalités nécessaires. Nous avons également réduit l’encombrement minimal de Visual Studio afin qu’il s’installe plus rapidement et avec moins d’impact sur le système qu’auparavant.
+Découvrez une nouvelle façon d’installer Visual Studio ! Dans cette version, nous vous avons simplifié la tâche en vous permettant de sélectionner et d’installer uniquement les fonctionnalités nécessaires. Nous avons également réduit l’encombrement minimal de Visual Studio afin qu’il s’installe plus rapidement et avec moins d’impact sur le système qu’auparavant.
 
 > [!NOTE]
 > Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Installer Visual Studio pour Mac](/visualstudio/mac/installation).
@@ -56,10 +54,6 @@ Ensuite, téléchargez le fichier du programme d’amorçage de Visual Studio. P
  > [!div class="button"]
  > [Télécharger Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 <br/>
-
-|         |         |
-|---------|---------|
-|  ![Icône représentant une caméra pour les vidéos](media/video-icon.png "Regarder une vidéo")  |    [Regardez une vidéo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Download-the-Visual-Studio-Installer-GgrESHD6D_3311787171) sur la façon de télécharger le fichier du programme d’amorçage de Visual Studio et de sélectionner l’édition de Visual Studio qui vous convient. |
 
 ## <a name="step-3---install-the-visual-studio-installer"></a>Étape 3 : Installer le programme d’installation de Visual Studio
 
@@ -96,29 +90,17 @@ Une fois le programme d’installation installé, vous pouvez l’utiliser pour 
 > [!TIP]
 > À tout moment après l’installation, vous pouvez installer les charges de travail ou les composants que vous n’avez pas installés au début. Si Visual Studio est ouvert, accédez à **Outils** > **Obtenir les outils et fonctionnalités** pour ouvrir Visual Studio Installer. Vous pouvez également ouvrir **Visual Studio Installer** à partir du menu Démarrer. À partir de là, vous pouvez sélectionner les charges de travail ou les composants que vous souhaitez installer, puis cliquer sur **Modifier**.
 
-|         |         |
-|---------|---------|
-|  ![Icône représentant une caméra pour les vidéos](media/video-icon.png "Regarder une vidéo")  |    [Regardez une vidéo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Workloads-in-Visual-Studio-2017-jHE19HD6D_1611787171) sur la façon d’installer Visual Studio Installer, puis d’installer une charge de travail. |
-
 ## <a name="step-5---select-individual-components-optional"></a>Étape 5 : Sélectionner les différents composants (facultatif)
 
 Si vous ne souhaitez pas utiliser la fonctionnalité Charges de travail pour personnaliser votre installation de Visual Studio, vous pouvez pour cela installer les composants séparément. Pour sélectionner des composants, cliquez sur l’option **Composants individuels** à partir de Visual Studio Installer, sélectionnez ce que vous souhaitez, puis suivez les invites.
 
   ![Visual Studio 2017 - Installer des composants individuels](media/vs2017-components.PNG "Installer des composants individuels de Visual Studio")
 
-  |         |         |
-  |---------|---------|
-  |  ![Icône représentant une caméra pour les vidéos](media/video-icon.png "Regarder une vidéo")  |   [Regardez une vidéo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Components-in-Visual-Studio-2017-ZMfaVID6D_7411787171) sur l’installation d’un composant individuel à l’aide de Visual Studio Installer. |
-
 ## <a name="step-6---install-language-packs-optional"></a>Étape 6 : Installer les modules linguistiques (facultatif)
 
 Par défaut, le programme d’installation essaie d’installer la langue du système d’exploitation quand vous l’exécutez pour la première fois. Pour installer Visual Studio 2017 dans la langue de votre choix, cliquez sur l’option **Modules linguistiques** dans le programme d’installation de Visual Studio et suivez les invites.
 
   ![Visual Studio 2017 - Installer des modules linguistiques](media/vs2017-languages.PNG "Installer des modules linguistiques de Visual Studio")
-
-  |         |         |
-  |---------|---------|
-  |  ![Icône représentant une caméra pour les vidéos](media/video-icon.png "Regarder une vidéo")  |   [Regardez une vidéo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Language-Packs-in-Visual-Studio-2017-ByT7yID6D_9011787171) sur l’installation d’un module linguistique à l’aide de Visual Studio Installer. |
 
 ### <a name="change-the-installer-language-from-the-command-line"></a>Changer la langue du programme d’installation à partir de la ligne de commande
 
@@ -142,7 +124,7 @@ Pour plus d’informations, consultez la page [Changer les emplacements d’inst
 
    Par exemple, pour [créer une application C++](../ide/getting-started-with-cpp-in-visual-studio.md), cliquez sur **Installé**, développez **Visual C++**, puis sélectionnez le type de projet C++ que vous souhaitez générer.
 
-   Pour [créer une application C#](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md), cliquez sur **Installé**, développez **Visual C#**, puis sélectionnez le type de projet C# que vous souhaitez générer.
+   Pour [créer une application C#](../get-started/csharp/tutorial-wpf.md), cliquez sur **Installé**, développez **Visual C#**, puis sélectionnez le type de projet C# que vous souhaitez générer.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

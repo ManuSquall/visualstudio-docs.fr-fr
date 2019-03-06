@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::OnEnterScript | Documents Microsoft
+title: IActiveScriptSite::OnEnterScript | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,27 +18,27 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb4514770faaaad46c8590e6df03488e3d5bc679
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ccef1b2bf63c4421843d3a33cab2e4f471a48251
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724829"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346512"
 ---
 # <a name="iactivescriptsiteonenterscript"></a>IActiveScriptSite::OnEnterScript
 Informe l’hôte que le moteur de script a commencé l’exécution du code de script.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT OnEnterScript(void);  
 ```  
   
 ## <a name="return-value"></a>Valeur de retour  
  Retourne `S_OK` en cas de réussite.  
   
-## <a name="remarks"></a>Remarques  
- Le moteur de script doit appeler cette méthode sur chaque entrée ou sur une nouvelle entrée dans le moteur de script. Par exemple, si le script appelle un objet qui déclenche un événement géré par le moteur de script, le moteur de script doit appeler `IActiveScriptSite::OnEnterScript` avant l’exécution de l’événement et doit appeler le [IActiveScriptSite::OnLeaveScript](../../winscript/reference/iactivescriptsite-onleavescript.md) méthode après exécution de l’événement, mais avant de retourner à l’objet qui a déclenché l’événement. Les appels à cette méthode peuvent être imbriqués. Chaque appel à cette méthode nécessite un appel correspondant à `IActiveScriptSite::OnLeaveScript`.  
+## <a name="remarks"></a>Notes  
+ Le moteur de script doit appeler cette méthode sur chaque entrée ou sur une nouvelle entrée dans le moteur de script. Par exemple, si le script appelle un objet qui déclenche un événement géré par le moteur de script, le moteur de script doit appeler `IActiveScriptSite::OnEnterScript` avant l’exécution de l’événement et doit appeler le [IActiveScriptSite::OnLeaveScript](../../winscript/reference/iactivescriptsite-onleavescript.md) méthode après l’exécution de l’événement, mais avant de retourner à l’objet qui a déclenché l’événement. Appels à cette méthode peuvent être imbriquées. Chaque appel à cette méthode nécessite un appel correspondant à `IActiveScriptSite::OnLeaveScript`.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

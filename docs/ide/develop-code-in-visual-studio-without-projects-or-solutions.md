@@ -1,8 +1,6 @@
 ---
 title: Développer du code sans projets ni solutions
 ms.date: 02/21/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - open folder [Visual Studio]
@@ -10,19 +8,19 @@ helpviewer_keywords:
 - projects and solutions, develop code without
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5885fc8c62b8da4213446601f37700cc077eda8c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 12f232de6f758f5f1fcca28bcf1adf473e5e7153
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062362"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56718546"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Développer du code dans Visual Studio sans projets ni solutions
 
-Visual Studio 2017 permet d’ouvrir du code à partir de presque n’importe quel type de projet basé sur un répertoire dans Visual Studio sans avoir recours à un fichier solution ou de projet. Cela signifie que vous pouvez, par exemple, cloner un référentiel sur GitHub, l’ouvrir directement dans Visual Studio et commencer à développer sans avoir à créer de solution ou de projet. Si nécessaire, vous pouvez spécifier des tâches de génération et des paramètres de lancement personnalisés à l’aide de simples fichiers JSON.
+Vous pouvez ouvrir du code à partir de quasiment n’importe quel type de projet basé sur un répertoire dans Visual Studio sans devoir recourir à un fichier solution ou un fichier projet. Cela signifie que vous pouvez, par exemple, cloner un référentiel sur GitHub, l’ouvrir directement dans Visual Studio et commencer à développer sans avoir à créer de solution ou de projet. Si nécessaire, vous pouvez spécifier des tâches de génération et des paramètres de lancement personnalisés à l’aide de simples fichiers JSON.
 
 Une fois que vous avez ouvert vos fichiers de code dans Visual Studio, l’**Explorateur de solutions** les affiche dans le dossier. Vous pouvez cliquer sur n’importe quel fichier pour le modifier. En arrière-plan, Visual Studio démarre l’indexation des fichiers pour activer les fonctionnalités IntelliSense, de navigation et de refactorisation. Au fil des modifications, créations, déplacements et suppressions de fichiers, Visual Studio effectue automatiquement le suivi des modifications et met à jour en permanence son index IntelliSense. Le code apparaît avec coloration syntaxique ; dans de nombreux cas, il comprend la saisie semi-automatique des instructions IntelliSense de base.
 
@@ -31,9 +29,19 @@ Une fois que vous avez ouvert vos fichiers de code dans Visual Studio, l’**Exp
 Vous pouvez ouvrir du code dans Visual Studio de différentes façons :
 
 - Dans la barre de menus de Visual Studio, choisissez **Fichier** > **Ouvrir** > **Dossier**, puis accédez à l’emplacement du code.
+
 - Dans le menu contextuel (clic droit) d’un dossier contenant le code, choisissez la commande **Ouvrir dans Visual Studio**.
+
+::: moniker range="vs-2017"
 - Choisissez le lien **Ouvrir le dossier** dans la **Page de démarrage** de Visual Studio.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+- Choisissez le lien **Ouvrir le dossier** dans la Fenêtre de démarrage.
+::: moniker-end
+
 - Si vous préférez utiliser le clavier, appuyez sur **Ctrl**+**Maj**+**Alt**+**O** dans Visual Studio.
+
 - Ouvrez le code d’un référentiel GitHub cloné.
 
 ### <a name="to-open-code-from-a-cloned-github-repo"></a>Pour ouvrir du code à partir d’un référentiel GitHub cloné
@@ -63,10 +71,6 @@ L’exemple suivant montre comment cloner un référentiel GitHub, puis ouvrir s
    ![Présenter l’affichage des dossiers](./media/VSIDE_Code_Clone3_show.png)
 
    Vous pouvez parcourir les dossiers et fichiers dans le dépôt cloné, et afficher et rechercher le code dans l’éditeur de code Visual Studio, avec la colorisation de la syntaxe et d’autres fonctionnalités.
-
-| | |
-|---------|---------|
-| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png)| [Regarder une vidéo](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171) montrant comment cloner et ouvrir du code à partir d’un dépôt GitHub dans Visual Studio. |
 
 ## <a name="run-and-debug-your-code"></a>Exécuter et déboguer son code
 

@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 02/12/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: En savoir plus sur les avantages inclus dans votre abonnement Visual Studio
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a3fb7fd86a5a875c16072792d9d82737b5f19160
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: c7616bc468aad5b4753fb3a05652f976bae6299b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282220"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56839706"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Avantages inclus dans votre abonnement Visual Studio
 
@@ -45,4 +43,3 @@ En tant qu’abonné Visual Studio, vous avez également accès aux différents 
 > Votre abonnement peut également comprendre un accès aux téléchargements de logiciels.  Pour plus d’informations sur les téléchargements, dont ceux qui sont inclus dans votre abonnement, visitez [https://my.visualstudio.com/downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs).
 
 Pour plus d’informations sur les avantages inclus dans votre abonnement, consultez la [page sur les tarifs de Visual Studio](https://visualstudio.microsoft.com/vs/pricing/).  Des informations sur les avantages spécifiques, y compris les abonnements qui les proposent, sont disponibles dans la rubrique **Utilisation des avantages pour les abonnés** ci-dessous.
-

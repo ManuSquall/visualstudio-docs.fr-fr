@@ -1,21 +1,19 @@
 ---
 title: Nœuds constants
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: reference
 ms.assetid: 2c798a50-a2d7-459b-9879-ad4ad8290c9b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00185a4165c6b97a8fcf1dd8d7ce81b219abef75
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: af585d77176e52442d5eee37f3d16fcbafd31ef9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890114"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910803"
 ---
 # <a name="constant-nodes"></a>Nœuds de constantes
 

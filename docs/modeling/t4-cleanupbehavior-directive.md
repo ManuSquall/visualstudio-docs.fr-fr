@@ -4,17 +4,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 44d1dc61b1330b344b333b62c30308fdb65494d1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 27df15c0b935ff4bae497940c095dba1598bc4c1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946037"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970567"
 ---
 # <a name="t4-cleanupbehavior-directive"></a>Directive CleanUpBehavior T4
 

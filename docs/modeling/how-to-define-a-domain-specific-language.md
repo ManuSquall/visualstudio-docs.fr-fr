@@ -13,22 +13,20 @@ helpviewer_keywords:
 - Domain-Specific Language, domain properties
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: ed1259ef04f59d37752d89f922623b963bcbbc22
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: a46dc8def91a15b8534d597f8cc0d14eb99f9002
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967530"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927878"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Comment : définir un langage spécifique à un domaine
 Pour définir un langage spécifique à un domaine (DSL), vous créez une solution Visual Studio à partir d’un modèle. Le composant principal de la solution est le diagramme de définition DSL, qui est stocké dans DslDefinition.dsl. La définition DSL définit les classes et les formes de la solution DSL. Après avoir modifié et ajouté à ces éléments, vous pouvez ajouter du code programme pour personnaliser la solution DSL plus en détail.
 
-Si vous ne connaissez pas DSL, nous vous recommandons de collaborer via le **atelier des outils DSL**, que vous trouverez dans ce site : [création and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+Si vous ne connaissez pas DSL, nous vous recommandons de collaborer via le **atelier des outils DSL**, que vous trouverez dans ce site : [SDK de création et de modélisation](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="templates"></a> Sélection d’une Solution de modèle
  Pour définir un DSL, vous devez avoir installé les composants suivants :
@@ -169,9 +167,9 @@ Si vous ne connaissez pas DSL, nous vous recommandons de collaborer via le **ate
 
 |Mode d'affichage de l'élément|Classe parente (incorporation)|Exemple dans le modèle de solution DSL|
 |-|-|-|
-|Forme sur le diagramme.<br /><br /> Couloir.|Classe racine de solution DSL.|Langage minimal.<br /><br /> Flux de tâches : classe Actor.|
-|Forme dans un couloir.|Classe de domaine d'éléments qui sont affichés sous forme de couloirs.|Flux de tâches : classe Task.|
-|Élément dans une liste dans une forme, où l'élément est supprimé si le conteneur est supprimé.<br /><br /> Port sur le bord d'une forme.|Classe de domaine mappée à la forme de conteneur.|Diagramme de classes : classe Attribute.<br /><br /> Diagramme de composants : classe Port.|
+|Forme sur le diagramme.<br /><br /> Couloir.|Classe racine de solution DSL.|Langage minimal.<br /><br /> Flux de tâches : Classe d’acteur.|
+|Forme dans un couloir.|Classe de domaine d'éléments qui sont affichés sous forme de couloirs.|Flux de tâches : Classe de tâche.|
+|Élément dans une liste dans une forme, où l'élément est supprimé si le conteneur est supprimé.<br /><br /> Port sur le bord d'une forme.|Classe de domaine mappée à la forme de conteneur.|Diagramme de classes : Classe d’attributs.<br /><br /> Diagramme de composant : Classe de port.|
 |Élément dans une liste, non supprimé en cas de suppression du conteneur.|Classe racine de solution DSL.<br /><br /> La liste affiche des liens de référence.||
 |Non affiché directement.|Classe dont il fait partie.||
 
@@ -187,7 +185,7 @@ Si vous ne connaissez pas DSL, nous vous recommandons de collaborer via le **ate
 >  L'incorporation n'est pas la même chose que l'héritage. Les enfants dans une relation d'incorporation n'héritent pas des fonctionnalités de leurs parents.
 
 ### <a name="add-domain-properties-to-each-domain-class"></a>Ajouter des propriétés de domaine à chaque classe de domaine
- Les propriétés de domaine contiennent des valeurs. En voici quelques exemples : Nom, Titre, Date de publication.
+ Les propriétés de domaine contiennent des valeurs. Les exemples sont : Nom, titre, Date de Publication.
 
  Cliquez sur **propriétés de domaine** dans la classe, appuyez sur la touche entrée, puis tapez le nom d’une propriété. Le type par défaut d'une propriété de domaine est String. Si vous souhaitez modifier le type, sélectionnez la propriété de domaine et définissez le **Type** dans le **propriétés** fenêtre. Si le type que vous souhaitez n’est pas dans la liste déroulante, consultez [Ajout des Types de propriété](#addTypes).
 
@@ -409,7 +407,7 @@ Si vous ne connaissez pas DSL, nous vous recommandons de collaborer via le **ate
 
    Après avoir testé un connecteur, vous souhaiterez peut-être ajuster certaines de ses propriétés et ajouter certaines fonctionnalités avancées. Pour plus d’informations, consultez [personnalisation et extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-## <a name="compartments"></a> Définition de formes qui contiennent des listes : formes de compartiments
+## <a name="compartments"></a> Définition de formes qui contiennent des listes : Formes de compartiments
  Une forme de compartiment contient une ou plusieurs listes d'éléments. Par exemple, dans une solution DSL de bibliothèque musicale, vous pourriez utiliser des formes de compartiments pour représenter des albums. Dans chaque album figure une liste de morceaux.
 
  ![Forme de compartiment](../modeling/media/compartmentshape.png)
@@ -605,7 +603,7 @@ Si vous ne connaissez pas DSL, nous vous recommandons de collaborer via le **ate
 
  Vous devez donc savoir que quand vous modifiez certaines relations dans votre définition DSL, il n'est pas rare que des erreurs soient signalées quand vous enregistrez la définition ou quand vous transformez tous les modèles. La plupart de ces erreurs sont faciles à corriger. Double-cliquez sur le rapport d'erreur pour afficher l'emplacement de l'erreur.
 
- Voir aussi [Comment : modifier le Namespace d’un langage spécifique à un domaine](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
+ Consultez aussi [Guide pratique pour Modifier le Namespace d’un langage spécifique à un domaine](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
 ## <a name="trouble"></a> Résolution des problèmes
  Le tableau suivant mentionne certains des problèmes les plus courants qui peuvent être rencontrés lors de la conception d'une solution DSL, avec quelques suggestions de solution. Obtenir des conseils supplémentaires sont disponibles sur le [Forum d’extension des outils de visualisation](http://go.microsoft.com/fwlink/?LinkId=186074).
@@ -619,8 +617,8 @@ Si vous ne connaissez pas DSL, nous vous recommandons de collaborer via le **ate
 | J'ai créé une classe de domaine, mais je ne parviens pas à créer d'instances dans l'explorateur de langage. | Chaque classe de domaine, à l'exception de la racine, doit être la cible d'une relation d'incorporation. |
 | Dans l'explorateur de ma solution DSL, les éléments sont affichés uniquement avec leur nom de type. | Dans la définition DSL, sélectionnez une propriété de domaine de la classe et dans les propriétés de fenêtre, définissez **Is Element Name** sur true. |
 | Ma solution DSL s'ouvre toujours dans l'éditeur XML. | Cela peut être dû à une erreur lors de la lecture du fichier. Toutefois, même après avoir corrigé cette erreur, vous devez réinitialiser de manière explicite l'éditeur pour qu'il soit votre concepteur DSL.<br /><br /> Cliquez sur l’élément de projet, cliquez sur **ouvrir avec** et sélectionnez * Votre_langage ***concepteur (par défaut)**. |
-| La boîte à outils de ma solution DSL n'apparaît pas après que j'ai modifié les noms des assemblys. | Examiner et mettre à jour **DslPackage\GeneratedCode\Package.tt** pour plus d’informations, consultez [Comment : modifier le Namespace d’un langage spécifique à un domaine](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md). |
-| La boîte à outils de ma solution DSL n'apparaît pas, mais je n'ai pas modifié le nom de l'assembly.<br /><br /> Ou une boîte de message apparaît et signale l'échec du chargement d'une extension. | Réinitialisez l'instance expérimentale et regénérez votre solution.<br /><br /> 1.  Dans le Windows menu Démarrer, sous **tous les programmes**, développez [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], puis **outils**, puis cliquez sur **réinitialiser l’Instance expérimentale Microsoft Visual Studio**.<br />2.  Sur le **Build** menu, cliquez sur **régénérer la Solution**. |
+| La boîte à outils de ma solution DSL n'apparaît pas après que j'ai modifié les noms des assemblys. | Examiner et mettre à jour **DslPackage\GeneratedCode\Package.tt** pour plus d’informations, consultez [Comment : Modifier le Namespace d’un langage spécifique à un domaine](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md). |
+| La boîte à outils de ma solution DSL n'apparaît pas, mais je n'ai pas modifié le nom de l'assembly.<br /><br /> Ou une boîte de message apparaît et signale l'échec du chargement d'une extension. | Réinitialisez l'instance expérimentale et regénérez votre solution.<br /><br /> 1.  Dans le Windows menu Démarrer, sous **tous les programmes**, développez [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], puis **outils**, puis cliquez sur **réinitialiser l’Instance expérimentale Microsoft Visual Studio**.<br />2.  Dans le menu **Générer**, cliquez sur **Régénérer la solution**. |
 
 ## <a name="see-also"></a>Voir aussi
 

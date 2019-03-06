@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEvents::OnBreakFlagChange | Documents Microsoft
+title: IRemoteDebugApplicationEvents::OnBreakFlagChange | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a8b4caac89897f015fec7ac483b967f9b42676aa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 91facd7a7055ab5ac9e7666c6a0d171e78c73eed
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729119"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086734"
 ---
 # <a name="iremotedebugapplicationeventsonbreakflagchange"></a>IRemoteDebugApplicationEvents::OnBreakFlagChange
 Gère un événement lorsque les indicateurs de saut changent.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT OnBreakFlagChange(  
    APPBREAKFLAGS                   abf,  
    IRemoteDebugApplicationThread*  prdatSteppingThread  
@@ -47,12 +47,12 @@ HRESULT OnBreakFlagChange(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
- Cette méthode gère l’événement lors de la modification de l’indicateur de pause.  
+## <a name="remarks"></a>Notes  
+ Cette méthode gère l’événement lors de la modification de l’indicateur d’arrêt.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IRemoteDebugApplicationEvents (Interface)](../../winscript/reference/iremotedebugapplicationevents-interface.md)   

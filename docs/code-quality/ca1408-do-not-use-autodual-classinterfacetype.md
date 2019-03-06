@@ -1,8 +1,6 @@
 ---
 title: 'CA1408 : Ne pas utiliser le paramètre AutoDual ClassInterfaceType'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - DoNotUseAutoDualClassInterfaceType
@@ -13,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 60ca5e02-3c51-42dd-942b-4f950eecfa0f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a4baa4f12a3d4cb113dd99f1cd3e158742c1ed1a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: c811c7e2b6ba06c716179469c8b038fd26b3b38a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45545604"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908012"
 ---
 # <a name="ca1408-do-not-use-autodual-classinterfacetype"></a>CA1408 : Ne pas utiliser le paramètre AutoDual ClassInterfaceType
 
@@ -58,7 +56,7 @@ ms.locfileid: "45545604"
 ## <a name="related-rules"></a>Règles associées
  [CA1403 : Les types Structurer automatiquement ne doivent pas être visibles par COM](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)
 
- [CA1412 : Marquez les interfaces ComSource comme IDispatch](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)
+ [CA1412 : Marquer les Interfaces ComSource comme IDispatch](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)
 
 ## <a name="see-also"></a>Voir aussi
 

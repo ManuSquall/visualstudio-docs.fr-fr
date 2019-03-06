@@ -2,10 +2,8 @@
 title: Utiliser les paramètres de ligne de commande pour installer Visual Studio
 titleSuffix: ''
 description: Découvrez comment utiliser les paramètres de ligne de commande pour contrôler ou personnaliser votre installation de Visual Studio.
+ms.date: 02/12/2019
 ms.custom: seodec18
-ms.date: 11/14/2018
-ms.technology: vs-acquisition
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - command-line parameters
@@ -14,15 +12,15 @@ f1_keywords:
 ms.assetid: 480f3cb4-d873-434e-a8bf-82cff7401cf2
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba270b4d7240d30db5b20388d6c75782dba6a256
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: f0c328b8ed549dc4afd90ccc1e02353f292f0dfc
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159722"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796840"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Utiliser les paramètres de ligne de commande pour installer Visual Studio 2017
 
@@ -34,11 +32,11 @@ Quand vous installez Visual Studio 2017 à partir d’une invite de commandes, 
 
 Les options de ligne de commande sont utilisées conjointement avec le programme d’amorçage du programme d’installation, qui est le petit fichier (environ 1 Mo) qui lance le processus de téléchargement. Le programme d’amorçage est le premier exécutable qui est lancé quand vous effectuez un téléchargement à partir du site Visual Studio. Utilisez les liens suivants pour obtenir un lien direct vers le programme d’amorçage de la version la plus récente de l’édition du produit que vous installez :
 
-- [Visual Studio Enterprise 2017](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
-- [Visual Studio Professional 2017](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
-- [Visual Studio Community 2017](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+- [Visual Studio Enterprise 2017](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+- [Visual Studio Professional 2017](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+- [Visual Studio Community 2017](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
 
-## <a name="list-of-command-line-parameters"></a>Liste des paramètres de ligne de commande
+## <a name="command-line-parameters"></a>Paramètres de ligne de commande
 
  Les paramètres de ligne de commande Visual Studio ne respectent pas la casse.
 
@@ -47,7 +45,7 @@ Les options de ligne de commande sont utilisées conjointement avec le programme
 (Remplacez `vs_enterprise.exe` comme il convient pour l’édition du produit que vous installez.)
 
 >[!TIP]
-> Pour plus d’exemples sur l’utilisation de la ligne de commande afin d’installer Visual Studio 2017, consultez la page [Exemples de paramètres de ligne de commande](command-line-parameter-examples.md).)
+> Pour obtenir des exemples supplémentaires sur l’utilisation de la ligne de commande afin d’installer Visual Studio 2017, consultez la page [Exemples de paramètres de ligne de commande](command-line-parameter-examples.md).
 
 | **Commande** | **Description** |
 | ----------------------- | --------------- |
@@ -56,7 +54,9 @@ Les options de ligne de commande sont utilisées conjointement avec le programme
 | `update` | Met à jour un produit installé. |
 | `repair` | Répare un produit installé. |
 | `uninstall` | Désinstalle un produit installé. |
-| `export` | **Nouveautés de la version 15.9** : Exporte la sélection de l’installation dans un fichier de configuration d’installation. |
+| `export` | **Nouveautés de la version 15.9** : Exporte la sélection de l’installation dans un fichier de configuration d’installation. **Remarque** : Peut uniquement être utilisé avec vs_installer.exe. |
+
+## <a name="install-options"></a>Options d’installation
 
 | **Option d’installation** | **Description** |
 | ----------------------- | --------------- |
@@ -78,7 +78,10 @@ Les options de ligne de commande sont utilisées conjointement avec le programme
 | `--help, --?, -h, -?` | Permet d’afficher une version hors connexion de cette page. |
 | `--config <path>` | **Facultatif** et **nouveautés de la version 15.9** : Pendant une opération d’installation ou de modification, cette option détermine les charges de travail et composants à ajouter en fonction d’un fichier de configuration d’installation déjà enregistré. Cette opération étant additive, elle ne supprime aucune charge de travail ou composant ne figurant pas dans le fichier. De plus, les éléments qui ne s’appliquent pas au produit ne sont pas ajoutés. Pendant une opération d’exportation, cette option détermine l’emplacement auquel enregistrer le fichier de configuration d’installation. |
 
-> Remarque : Lorsque vous spécifiez plusieurs charges de travail et plusieurs composants, vous devez répéter le commutateur de ligne de commande `--add` ou `--remove` pour chaque élément.
+> [!IMPORTANT]
+> Lorsque vous spécifiez plusieurs charges de travail et plusieurs composants, vous devez répéter le commutateur de ligne de commande `--add` ou `--remove` pour chaque élément.
+
+## <a name="layout-options"></a>Options de disposition
 
 | **Options de disposition** | **Description** |
 | ----------------------- | --------------- |
@@ -104,7 +107,7 @@ Les options de ligne de commande sont utilisées conjointement avec le programme
 | `--cache` | **Nouveautés de la version 15.2, facultatif** : Le cas échéant, les packages sont conservés après leur installation pour les réparations ultérieures. Cela remplace le paramètre de stratégie globale à utiliser pour les installations, réparations ou modifications ultérieures. La stratégie par défaut consiste à mettre les packages en cache. Option ignorée pour la commande de désinstallation. Pour plus d’informations, consultez [Désactiver ou déplacer le cache du package](disable-or-move-the-package-cache.md). |
 | `--nocache` | **Nouveautés de la version 15.2, facultatif** : Le cas échéant, les packages sont supprimés après avoir été installés ou réparés. Ils seront à nouveau téléchargés uniquement si nécessaire et à nouveau supprimés après utilisation. Cela remplace le paramètre de stratégie globale à utiliser pour les installations, réparations ou modifications ultérieures. La stratégie par défaut consiste à mettre les packages en cache. Option ignorée pour la commande de désinstallation. Pour plus d’informations, consultez [Désactiver ou déplacer le cache du package](disable-or-move-the-package-cache.md). |
 | `--noUpdateInstaller` | **Nouveautés de la version 15.2, facultatif** : Le cas échéant, empêche la mise à jour du programme d’installation quand le mode silencieux est spécifié. Le programme d’installation ne parvient pas à exécuter la commande et retourne un code de sortie différent de zéro si noUpdateInstaller est spécifié avec le mode silencieux quand une mise à jour du programme d’installation est obligatoire. |
-| `--noWeb` | **Nouveautés de la version 15.3, facultatif** : Le programme d’installation télécharge désormais le contenu qu’il installe à partir d’Internet.  Tout le contenu en cours d’installation doit être disponible dans une disposition hors connexion.  Si la disposition n’a pas de contenu, le programme d’installation échoue.  Pour plus d’informations, consultez [Déploiement à partir d’une installation réseau](create-a-network-installation-of-visual-studio.md). |
+| `--noWeb` | **Nouveautés de la version 15.3, facultatif** : S’il est présent, le programme d’installation de Visual Studio utilise les fichiers dans votre répertoire de disposition pour installer Visual Studio. Si un utilisateur tente d’installer des composants qui ne sont pas dans la disposition, le programme d’installation échoue.  Pour plus d’informations, consultez [Déploiement à partir d’une installation réseau](create-a-network-installation-of-visual-studio.md). <br/><br/> **Important** : Cela n’empêche pas le programme d’installation de Visual Studio de vérifier la présence de mises à jour. Pour plus d’informations, consultez [Contrôler les mises à jour applicables aux déploiements de Visual Studio à partir du réseau](controlling-updates-to-visual-studio-deployments.md).|
 | `--path <name>=<path>` | **Nouveautés de la version 15.7, facultatif** : Permet de spécifier des chemins d’installation personnalisés pour l’installation. Les noms de chemin pris en charge sont shared, cache et install. |
 | `--path cache=<path>` | **Nouveautés de la version 15.7, facultatif** : Utilise l’emplacement que vous spécifiez pour télécharger les fichiers d’installation. Cet emplacement peut être défini uniquement pendant la première installation de Visual Studio. Exemple : `--path cache="C:\VS\cache"` |
 | `--path shared=<path>` | **Nouveautés de la version 15.7, facultatif** : Contient des fichiers partagés pour les installations de Visual Studio côte à côte. Certains outils et kits SDK effectuent l’installation à un emplacement sur ce lecteur, tandis que d’autres peuvent l’effectuer sur un autre lecteur en passant outre ce paramétrage. Exemple : `--path shared="C:\VS\shared"` <br><br>Important : Ceci ne peut être défini qu’une seule fois, lors de la première installation de Visual Studio. |

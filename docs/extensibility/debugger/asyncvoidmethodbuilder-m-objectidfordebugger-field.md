@@ -1,40 +1,37 @@
 ---
 title: Champ AsyncVoidMethodBuilder.m_objectIdForDebugger | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - m_objectIdForDebugger field, AsyncVoidMethodBuilder structure [.NET Framework debug engines]
 ms.assetid: 81331a7b-6bec-46e4-a53e-515d0fad2400
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e9b0fc96eca5582be01745f4fe934cfe812bc65
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 19ad68ce060eca252befb033b3181fc9da7a28c2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155423"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56706130"
 ---
 # <a name="asyncvoidmethodbuildermobjectidfordebugger-field"></a>Champ AsyncVoidMethodBuilder.m_objectIdForDebugger
-Représente l’objet initialisée tardivement utilisé par le débogueur pour identifier de manière unique ce générateur.  
-  
- **Namespace :** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
-  
- **Assembly :** mscorlib (dans mscorlib.dll)  
-  
- Étant donné que vous ne pouvez pas accéder à ce membre interne du .NET Framework, la syntaxe suivante est fournie en commun Intermediate Language (CIL).  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```csharp  
-.field private object m_objectIdForDebugger  
-```  
-  
-## <a name="see-also"></a>Voir aussi  
- <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>   
- [Mécanismes internes d’extension parallèle pour le .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+Représente l’objet initialisée tardivement utilisé par le débogueur pour identifier de manière unique ce générateur.
+
+ **Espace de noms :** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
+
+ **Assembly :** mscorlib (dans mscorlib.dll)
+
+ Étant donné que vous ne pouvez pas accéder à ce membre interne du .NET Framework, la syntaxe suivante est fournie en commun Intermediate Language (CIL).
+
+## <a name="syntax"></a>Syntaxe
+
+```csharp
+.field private object m_objectIdForDebugger
+```
+
+## <a name="see-also"></a>Voir aussi
+- <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>
+- [Mécanismes internes d’extension parallèle pour le .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

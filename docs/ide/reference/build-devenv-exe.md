@@ -1,8 +1,6 @@
 ---
-title: Build, commutateur DevEnv
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+title: -Build (devenv.exe)
+ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
 - builds, command-line
@@ -13,53 +11,66 @@ helpviewer_keywords:
 ms.assetid: ced21627-7653-455b-8821-3e31c6a448cf
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cdd510e523aaabc468c1f01626593e51d0ad1558
-ms.sourcegitcommit: 9571742f4a808c75b1034aa72fc24b54bc50692e
+ms.openlocfilehash: 67aba8d93514618fc09abe933cfd28023136a4d6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49410960"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928710"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 
-Génère une solution à l’aide d’un fichier de configuration de solution spécifié.
+Génère une solution ou un projet à l’aide d’un fichier de configuration de solution spécifié.
 
 ## <a name="syntax"></a>Syntaxe
 
-```cmd
-Devenv SolutionName /build SolnConfigName [/project ProjName [/projectconfig ProjConfigName]]
+```shell
+devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig ProjConfigName]] [/Out OutputFilename]]
 ```
 
 ## <a name="arguments"></a>Arguments
 
-|||
-|-|-|
-|*SolutionName*|Obligatoire. Chemin complet et nom du fichier solution.|
-|*SolnConfigName*|Obligatoire. Nom de la configuration de solution à utiliser pour générer la solution nommée dans *SolutionName*. Si plusieurs plateformes de solution sont disponibles, vous devez également spécifier la plateforme, par exemple **« Debug\|Win32 »**.|
-|/project *ProjName*|Facultative. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer un chemin relatif du dossier *SolutionName* au fichier projet, le nom d’affichage du projet, ou le chemin et le nom complet du fichier projet.|
-|/projectconfig *ProjConfigName*|Facultative. Nom d’une configuration de build de projet à utiliser durant la génération du projet nommé. Si plusieurs plateformes de projet sont disponibles, vous devez également spécifier la plateforme, par exemple **« Debug\|Win32 »**.|
+- *SolutionName*
+
+  Obligatoire. Chemin complet et nom du fichier solution.
+
+- *SolnConfigName*
+
+  Optionnel. Nom de la configuration de solution (par exemple, `Debug` ou `Release`) à utiliser pour générer la solution nommée dans *SolutionName*. Si plusieurs plateformes de solution sont disponibles, vous devez également en spécifier une (par exemple, `Debug|Win32`). Si cet argument n’est pas spécifié ou consiste en une chaîne vide (`""`), l’outil utilise la configuration active de la solution.
+
+- `/Project` *ProjName*
+
+  Optionnel. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer un chemin relatif du dossier *SolutionName* au fichier projet, le nom d’affichage du projet, ou le chemin et le nom complet du fichier projet.
+
+- `/ProjectConfig` *ProjConfigName*
+
+  Optionnel. Nom d’une configuration de build de projet (par exemple, `Debug` ou `Release`) à utiliser lors de la génération du projet nommé. Si plusieurs plateformes de solution sont disponibles, vous devez également en spécifier une (par exemple, `Debug|Win32`). Si ce commutateur est spécifié, il remplace l’argument *SolnConfigName*.
+
+- `/Out` *OutputFilename*
+
+  Optionnel. Nom du fichier auquel vous souhaitez envoyer la sortie de l’outil. Si le fichier existe déjà, l’outil ajoute la sortie à la fin du fichier.
 
 ## <a name="remarks"></a>Notes
 
-- Le commutateur **/build** a la même fonction que la commande de menu **Générer la solution** dans l’IDE (environnement de développement intégré).
+- Le commutateur `/Build` a la même fonction que la commande de menu **Générer la solution** dans l’environnement de développement intégré (IDE).
 
 - Placez les chaînes contenant des espaces entre des guillemets doubles.
 
-- Vous pouvez afficher les informations récapitulatives des builds, notamment les erreurs, dans la fenêtre Commande ou dans un fichier journal spécifié à l’aide du commutateur **/out**.
+- Il est possible d’afficher une synthèse des informations de build, erreurs incluses, dans la fenêtre Commande et dans tous les fichiers journaux spécifiés avec le commutateur `/Out`.
 
-- Le commutateur **/build** génère uniquement les projets qui ont changé depuis la dernière build. Pour générer tous les projets d’une solution, utilisez plutôt [/rebuild](../../ide/reference/rebuild-devenv-exe.md).
+- Le commutateur `/Build` ne génère que les projets qui ont changé depuis la dernière build. Pour générer tous les projets d’une solution, utilisez plutôt [/rebuild](../../ide/reference/rebuild-devenv-exe.md).
 
-- Si vous obtenez un message d’erreur indiquant **Configuration de projet non valide**, vérifiez que vous avez spécifié une plateforme de solution ou une plateforme de projet, par exemple **« Debug\|Win32 »**.
+- Si vous obtenez un message d’erreur indiquant **Configuration de projet non valide**, vérifiez que vous avez spécifié une plateforme de solution ou de projet (par exemple, `Debug|Win32`).
 
 ## <a name="example"></a>Exemple
 
-La commande suivante permet de générer le projet « CSharpConsoleApp », à l’aide de la configuration de build de projet « Debug » dans la configuration de solution « Debug » de « MySolution ».
+La commande suivante génère le projet `CSharpWinApp` suivant la configuration de build de projet `Debug` présente dans `MySolution`.
 
-```cmd
-devenv "C:\Visual Studio Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
+```shell
+devenv "%USERPROFILE%\source\repos\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
 ## <a name="see-also"></a>Voir aussi

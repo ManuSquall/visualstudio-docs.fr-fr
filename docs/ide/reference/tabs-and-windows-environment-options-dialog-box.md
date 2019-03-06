@@ -1,23 +1,21 @@
 ---
 title: Onglets et fenêtres, Environnement, boîte de dialogue Options
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.TabsAndWindows
 ms.assetid: f5167564-0a4e-4f98-9580-fc6cb7d9dd8d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49230a20bf8279548687d38e1ff3811e0b1730d7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3fcc961a478d3e23c7a8dcf06805505b6c437ed9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944279"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924667"
 ---
 # <a name="tabs-and-windows-environment-options-dialog-box"></a>Onglets et fenêtres, Environnement, boîte de dialogue Options
 

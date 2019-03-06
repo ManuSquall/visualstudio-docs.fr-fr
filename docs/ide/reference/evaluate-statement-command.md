@@ -1,8 +1,6 @@
 ---
 title: Évaluer l'instruction, commande
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.evaluatestatement
@@ -12,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 032039bc-9477-4f93-9b9d-66d4be0e90f4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f713cd511225e03ec50c2cbe699c40bd704faa20
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 98bdaf41aa34367d656e2bfb5694f3b615dbe3b8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704234"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911739"
 ---
 # <a name="evaluate-statement-command"></a>Évaluer l'instruction, commande
 Évalue et affiche l’instruction donnée.
@@ -65,4 +63,4 @@ Debug.EvaluateStatement text
 - [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Commande, fenêtre](../../ide/reference/command-window.md)
 - [Rechercher/Commande, zone](../../ide/find-command-box.md)
-- [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

@@ -1,22 +1,20 @@
 ---
 title: Vue d’ensemble | Outil de test Microsoft IntelliTest pour les développeurs
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Visual Studio IntelliTest developer testing tool
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c2a8e6df93d3af64bd114e0e9994aadce58e7f8d
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 94a52d81dd5e3b15340a2d58702600388b150001
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296019"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318249"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Vue d’ensemble de Microsoft IntelliTest
 
@@ -153,5 +151,5 @@ Comme IntelliTest intercepte et « lève à nouveau » les exceptions dans cha
 
 ## <a name="further-reading"></a>Informations supplémentaires
 
-* [Billet de blog d’introduction](https://blogs.msdn.microsoft.com/devops/2014/11/19/introducing-smart-unit-tests/).
+* [Billet de blog d’introduction](https://devblogs.microsoft.com/devops/introducing-smart-unit-tests/).
 * [Générer des tests unitaires pour votre code avec IntelliTest](../../test/generate-unit-tests-for-your-code-with-intellitest.md)

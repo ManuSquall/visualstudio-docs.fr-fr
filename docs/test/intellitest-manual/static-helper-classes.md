@@ -1,22 +1,20 @@
 ---
 title: Classes d’assistance statiques | Outil de test Microsoft IntelliTest pour les développeurs
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Static helper classes
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a5c635c8fb3def61b8278b7b7c4b66aa196d82b8
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: c639175e74d13a35724a4388505a177c8b60db0b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000475"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912454"
 ---
 # <a name="static-helper-classes"></a>Classes d’assistance statiques
 
@@ -132,7 +130,7 @@ public static class MathEx {
 public partial class MathExTests {
      [PexMethod]
      public int SquareTest(int a) {
-        int result = MathEx.Square(a); 
+        int result = MathEx.Square(a);
         // storing result
         return result;
      }
@@ -150,7 +148,8 @@ Normalement, IntelliTest tente de couvrir tous les chemins d’exécution du cod
 
 **Exemple**
 
-Cet exemple montre l’implémentation de la méthode **PexAssume.Arrays.ElementsAreNotNull**. Dans la méthode, vous ignorez les contraintes sur la valeur de la longueur du tableau, afin d’éviter qu’IntelliTest tente de générer différentes tailles de tableau. Les contraintes sont ignorées seulement ici. Si le code testé se comporte différemment pour des longueurs de tableau différentes, IntelliTest ne peut pas générer des tableaux de tailles différentes à partir des contraintes du code testé.
+Cet exemple montre l’implémentation de la méthode **PexAssume.Arrays.ElementsAreNotNull**.
+Dans la méthode, vous ignorez les contraintes sur la valeur de la longueur du tableau, afin d’éviter qu’IntelliTest tente de générer différentes tailles de tableau. Les contraintes sont ignorées seulement ici. Si le code testé se comporte différemment pour des longueurs de tableau différentes, IntelliTest ne peut pas générer des tableaux de tailles différentes à partir des contraintes du code testé.
 
 ```csharp
 public static void AreElementsNotNull<T>(T[] value)

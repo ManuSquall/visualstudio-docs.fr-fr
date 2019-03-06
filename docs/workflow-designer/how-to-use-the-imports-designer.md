@@ -1,25 +1,23 @@
 ---
-title: 'Concepteur de flux de travail - Comment : utiliser le Concepteur d’importations'
+title: 'Concepteur de flux de travail - Comment : Utiliser le concepteur d’importations'
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Presentation.View.ImportDesigner.UI
 ms.assetid: 61328ab6-9b66-4e12-8630-22e30ee8c9d1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e26dafe6d8d7e455d1977f82f96f776185a5fdb3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: df041111bb452462c969995bacee97b08488d1c6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845263"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931960"
 ---
-# <a name="how-to-use-the-imports-designer"></a>Procédure : utiliser le concepteur d'importations
+# <a name="how-to-use-the-imports-designer"></a>Procédure : Utiliser le concepteur d’importations
 
 Le concepteur d'importations vous permet d'entrer des espaces de noms pour les types que vous utiliserez dans vos expressions. Comme beaucoup le **importe** ou **à l’aide de** activer de mots clés dans Visual Basic et c#, en spécifiant les espaces de noms dans le Concepteur d’importations vous permet d’entrer simplement un nom de type dans votre expression plutôt qu’un qualifié complet nom du type de version.
 

@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: e17a423e9db6826c8cc693e1c75c75bb067a19e8
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: e184daa5271497e158c68989cb43889a03a98802
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295291"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953484"
 ---
 # <a name="debugging-with-xamarin"></a>Débogage avec Xamarin
 
@@ -79,10 +79,10 @@ Quand un point d’arrêt a été atteint, les outils de débogage vous permette
 
 Voici les quatre boutons :
 
-*   **Lecture** : commence l’exécution du code, jusqu’au point d’arrêt suivant.
-*   **Pas à pas principal** : exécute la ligne de code suivante. Si la ligne suivante est un appel de fonction, Pas à pas principal exécute la fonction et s’arrête à la ligne de code suivante *après* la fonction.
-*   **Pas à pas détaillé** : exécute également la ligne de code suivante. Si la ligne suivante est un appel de fonction, Pas à pas détaillé s’arrête à la première ligne de la fonction, ce qui vous permet de continuer le débogage ligne par ligne de la fonction. Si la ligne suivante n’est pas une fonction, il se comporte comme Pas à pas principal.
-*   **Pas à pas sortant** : retourne à la ligne où la fonction active a été appelée.
+* **Lecture** : commence l’exécution du code, jusqu’au point d’arrêt suivant.
+* **Pas à pas principal** : exécute la ligne de code suivante. Si la ligne suivante est un appel de fonction, Pas à pas principal exécute la fonction et s’arrête à la ligne de code suivante *après* la fonction.
+* **Pas à pas détaillé** : exécute également la ligne de code suivante. Si la ligne suivante est un appel de fonction, Pas à pas détaillé s’arrête à la première ligne de la fonction, ce qui vous permet de continuer le débogage ligne par ligne de la fonction. Si la ligne suivante n’est pas une fonction, il se comporte comme Pas à pas principal.
+* **Pas à pas sortant** : retourne à la ligne où la fonction active a été appelée.
 
 ## <a name="debugging-monos-class-libraries"></a>Débogage des bibliothèques de classes de Mono
 

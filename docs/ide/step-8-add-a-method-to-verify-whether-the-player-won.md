@@ -1,24 +1,21 @@
 ---
-title: 'Étape 8 : ajouter une méthode pour vérifier si le joueur a gagné'
-ms.custom: ''
+title: 'Étape 8 : Ajouter une méthode pour vérifier si le joueur a gagné'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 6e317f6e-ba4c-4306-8924-300b0c2f65c6
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34b4e8085c3ff3de8037827769331eac83325ff8
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: b6bd64908c902c83023bc48bc72ab6443b2a7df7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748008"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934456"
 ---
-# <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Étape 8 : ajouter une méthode pour vérifier si le joueur a gagné
+# <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Étape 8 : Ajouter une méthode pour vérifier si le joueur a gagné
 Vous avez créé un jeu divertissant, mais il a besoin d'un élément supplémentaire pour être complet. Le jeu doit se terminer en cas de victoire du joueur : vous devez donc ajouter une méthode `CheckForWinner()` pour vérifier si le joueur a gagné.
 
 ## <a name="to-add-a-method-to-verify-whether-the-player-won"></a>Pour ajouter une méthode afin de vérifier si le joueur a gagné
@@ -42,6 +39,6 @@ Vous avez créé un jeu divertissant, mais il a besoin d'un élément supplémen
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
--   Pour passer à l’étape suivante du tutoriel, consultez [Étape 9 : tester d’autres fonctionnalités](../ide/step-9-try-other-features.md).
+-   Pour passer à l’étape suivante du tutoriel, consultez [Étape 9 : Tester d’autres fonctionnalités](../ide/step-9-try-other-features.md)
 
--   Pour revenir à l’étape précédente du tutoriel, consultez [Étape 7 : garder les paires visibles](../ide/step-7-keep-pairs-visible.md).
+-   Pour revenir à l’étape précédente du tutoriel, consultez [Étape 7 : Garder les paires visibles](../ide/step-7-keep-pairs-visible.md).

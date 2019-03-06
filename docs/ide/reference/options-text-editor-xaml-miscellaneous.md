@@ -1,8 +1,6 @@
 ---
 title: Options, Éditeur de texte, XAML, Divers
 ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XAML.Miscellaneous
@@ -27,15 +25,15 @@ helpviewer_keywords:
 ms.assetid: 2a420e58-a408-4e8d-9220-44eeb4f67801
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 30986c0f18a2cc272cb917be9ce24b2a335c0b4b
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 9b124b86b98f86c775165d8fe33164a352d8e20a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388632"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954762"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>Options, Éditeur de texte, XAML, Divers
 

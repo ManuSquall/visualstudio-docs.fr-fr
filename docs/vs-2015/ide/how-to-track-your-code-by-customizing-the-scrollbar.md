@@ -1,25 +1,20 @@
 ---
-title: Guide pratique pour suivre votre code en personnalisant la barre de défilement | Microsoft Docs
-ms.custom: ''
+title: 'Procédure : Suivre votre Code en personnalisant la barre de défilement | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: a9ebe7ec-4b6f-4ba2-a79e-80fab3db485b
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bcbce0884dbc5be78371b6df00b0eb482aa8c26e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 11df0e3ca4e8b9c814bf91735d48bb091c711068
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270775"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788204"
 ---
 # <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Comment : suivre votre code en personnalisant la barre de défilement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,4 +54,3 @@ Quand vous travaillez sur de longs fichiers de code, il peut être difficile de 
      ![Barre de défilement avec une info-bulle](../ide/media/enhancedscrollbarsearchtooltip.png "EnhancedScrollbarSearchTooltip")  
   
      Pour conserver le mode mappage et l’info-bulle d’aperçu de la barre de défilement, mais pas la vue d’ensemble du code source, définissez **Vue d’ensemble du code source** sur **Désactivé**.
-

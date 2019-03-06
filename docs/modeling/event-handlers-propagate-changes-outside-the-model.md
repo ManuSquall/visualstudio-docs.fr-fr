@@ -7,17 +7,15 @@ helpviewer_keywords:
 - Domain-Specific Language, events
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 02cf41daa9bea74e62ceb96f7c6227982bfcad84
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 50ca0b96ecee2c3537ce88c4468efee48c7cd732
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967348"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940775"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Propagation de modifications en dehors du modèle par des gestionnaires d'événements
 
@@ -177,7 +175,7 @@ Chaque type d’événement correspond à une collection dans Store.EventManager
 |ElementAdded|Une instance d’une classe de domaine, une relation de domaine, forme, connecteur ou diagramme est créée.|
 |ElementDeleted|Un élément de modèle a été supprimé du répertoire d’éléments du magasin et n’est plus la source ou la cible d’une relation. L’élément n’est pas réellement supprimé de la mémoire, mais est conservée dans le cas d’une opération d’annulation ultérieure.|
 |ElementEventsBegun|Appelé à la fin d’une transaction externe.|
-|Événement ElementEventsEnded|Appelé lorsque tous les autres événements ont été traitées.|
+|ElementEventsEnded|Appelé lorsque tous les autres événements ont été traitées.|
 |ElementMoved|Un élément de modèle a été déplacé à partir de la partition d’un magasin vers un autre.<br /><br /> Cela n’est pas lié à l’emplacement d’une forme sur le diagramme.|
 |ElementPropertyChanged|La valeur d’une propriété de domaine a changé. Cela est exécutée uniquement si les valeurs anciennes et nouvelles sont inégales.|
 |RolePlayerChanged|Un des deux rôles (fin) d’une relation de fait référence à un nouvel élément.|
@@ -189,6 +187,6 @@ Chaque type d’événement correspond à une collection dans Store.EventManager
 ## <a name="see-also"></a>Voir aussi
 
 - [Propagation et réponse aux modifications](../modeling/responding-to-and-propagating-changes.md)
-- [Exemple de code : diagrammes de Circuit](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [Exemple de code : Diagrammes de circuit](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

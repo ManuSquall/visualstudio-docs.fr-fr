@@ -1,27 +1,24 @@
 ---
-title: 'Étape 2 : exécuter votre programme'
-ms.custom: ''
+title: 'Étape 2 : Exécuter votre programme'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04c3eb73949ab84548c6eb58e7cf4389dbeb8fc4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: c598aff620232ec56707206efa4715f8bc7ea2da
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179058"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952319"
 ---
-# <a name="step-2-run-your-program"></a>Étape 2 : exécuter votre programme
+# <a name="step-2-run-your-program"></a>Étape 2 : Exécuter votre programme
 Lorsque vous avez créé une solution, vous avez en fait généré un programme qui fonctionne. Pour le moment, le programme offre peu de fonctionnalités : il affiche simplement une fenêtre vide avec la barre de titre **Form1**. Mais il fonctionne réellement, comme vous allez le découvrir.
 
- ![lien vers la vidéo](../data-tools/media/playvideo.gif)Pour obtenir une version vidéo de cette rubrique, consultez [Didacticiel 1 : Créer une visionneuse d’images en Visual Basic - Vidéo 1](http://go.microsoft.com/fwlink/?LinkId=205209) ou [Tutoriel 1 : Créer une visionneuse d’images en C# - Vidéo 1](http://go.microsoft.com/fwlink/?LinkId=205199). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.
+ ![lien vers la vidéo](../data-tools/media/playvideo.gif)Pour obtenir une version vidéo de cette rubrique, consultez [Turoriel 1 : Créer une visionneuse d’images en Visual Basic – vidéo 1](http://go.microsoft.com/fwlink/?LinkId=205209) ou [Tutoriel 1 : Créer une visionneuse d'images en C# - Vidéo 1](http://go.microsoft.com/fwlink/?LinkId=205199). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.
 
 ## <a name="to-run-your-program"></a>Pour exécuter votre programme
 
@@ -55,10 +52,10 @@ Barre d’outils **Débogage**
     -   Choisissez le bouton **X** dans l’angle supérieur de la fenêtre **Form1**.
 
     > [!NOTE]
-    >  Lorsque vous exécutez votre programme dans l’IDE, vous effectuez un débogage, car vous le faites généralement pour rechercher et résoudre des bogues (erreurs) dans le programme. Bien que ce programme soit petit et ne fasse pas encore grand chose, il n'en reste pas moins un programme. Vous suivez la même procédure pour exécuter et déboguer d'autres programmes. Pour en savoir plus sur le débogage, consultez [Principes de base du débogueur](../debugger/getting-started-with-the-debugger.md).
+    >  Lorsque vous exécutez votre programme dans l’IDE, vous effectuez un débogage, car vous le faites généralement pour rechercher et résoudre des bogues (erreurs) dans le programme. Bien que ce programme soit petit et ne fasse pas encore grand chose, il n'en reste pas moins un programme. Vous suivez la même procédure pour exécuter et déboguer d'autres programmes. Pour en savoir plus sur le débogage, consultez [Présentation du débogueur](../debugger/debugger-feature-tour.md).
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
--   Pour accéder à l’étape suivante du tutoriel, consultez [Étape 3 : définir les propriétés de votre formulaire](../ide/step-3-set-your-form-properties.md).
+-   Pour passer à l’étape suivante du didacticiel, consultez [Étape 3 : définir les propriétés de votre formulaire](../ide/step-3-set-your-form-properties.md).
 
--   Pour revenir à l’étape précédente du tutoriel, consultez [Étape 1 : créer un projet d’application Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md).
+-   Pour revenir à l’étape précédente du didacticiel, consultez [Étape 1 : créer un projet Application Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md).

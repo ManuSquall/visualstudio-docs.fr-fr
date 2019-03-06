@@ -1,23 +1,21 @@
 ---
 title: Outils de test
 ms.date: 03/16/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - testing tools [Visual Studio]
 - unit tests [Visual Studio]
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a619989543b30ccf07cdb300a5688a985cf27eb7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 6cace8f9728f71648300f3dfd9a073453e74ada7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068245"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957167"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Outils de test dans Visual Studio
 
@@ -45,4 +43,4 @@ Les outils de test de Visual Studio peuvent vous aider vous et votre équipe à 
 * [Tests exploratoires et manuels (Azure Test Plans)](/azure/devops/test/index?view=vsts)
 * [Tests de charge (Azure Test Plans)](/azure/devops/test/load-test/index?view=vsts)
 * [Tests continus (Azure Test Plans)](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
-* [Outils d’analyse du code](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)
+* [Outils d’analyse du code](../code-quality/code-analysis-for-managed-code-overview.md)

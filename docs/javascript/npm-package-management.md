@@ -3,22 +3,21 @@ title: Gérer les packages npm
 description: Visual Studio vous aide à gérer les packages à l’aide du Gestionnaire de package Node.js (npm)
 ms.custom: seodec18
 ms.date: 06/06/2018
-ms.technology: vs-nodejs
 ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 297bad186c7f3412e56a5a59f65b82ab9cd35a03
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c4f04d1d919123bca787c6175696224042f79725
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049650"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948200"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Gérer les packages npm dans Visual Studio
 
@@ -37,7 +36,7 @@ Le moyen le plus simple pour installer des packages npm consiste à utiliser la 
 
 ![Installer un nouveau package npm à partir de l’Explorateur de solutions](../javascript/media/solution-explorer-install-package.png)
 
-Dans cette fenêtre, vous pouvez rechercher un package, spécifier des options et effectuer une installation. 
+Dans cette fenêtre, vous pouvez rechercher un package, spécifier des options et effectuer une installation.
 
 ![Rechercher un package npm](../javascript/media/search-package.png)
 
@@ -74,10 +73,10 @@ Vous pouvez également utiliser la commande `.npm` dans la fenêtre interactive 
 Dans la fenêtre, vous pouvez utiliser des commandes telles que les suivantes pour installer un package :
 
 `.npm install azure@4.2.3`
- 
+
  > [!Tip]
- > Par défaut, npm s’exécute dans le répertoire de base de votre projet. Si vous avez plusieurs projets dans votre solution, spécifiez le nom ou le chemin du projet entre crochets. 
+ > Par défaut, npm s’exécute dans le répertoire de base de votre projet. Si vous avez plusieurs projets dans votre solution, spécifiez le nom ou le chemin du projet entre crochets.
  > `.npm [MyProjectNameOrPath] install azure@4.2.3`
 
  > [!Tip]
- > Si votre projet ne contient pas de fichier package.json, utilisez `.npm init -y` pour en créer un avec des entrées par défaut. 
+ > Si votre projet ne contient pas de fichier package.json, utilisez `.npm init -y` pour en créer un avec des entrées par défaut.

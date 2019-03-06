@@ -1,8 +1,6 @@
 ---
-title: 'CA2119 : Scellez les méthodes qui satisfont les interfaces privées'
+title: 'CA2119 : Scellez les méthodes qui satisfont les interfaces privées'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - SealMethodsThatSatisfyPrivateInterfaces
@@ -13,21 +11,21 @@ helpviewer_keywords:
 ms.assetid: 483d02e1-cfaf-4754-a98f-4116df0f3509
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: aa207e85bcb7054b1a7b91ac8dd29ff45fe1091a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 4c019e98e7f1311b6521dff563cb8e7bb0a2356e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550594"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952045"
 ---
-# <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119 : Scellez les méthodes qui satisfont les interfaces privées
+# <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119 : Scellez les méthodes qui satisfont les interfaces privées
 
 |||
 |-|-|

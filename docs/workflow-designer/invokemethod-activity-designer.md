@@ -2,22 +2,20 @@
 title: Concepteur de flux de travail - Concepteur d’activités InvokeMethod
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.InvokeMethod.UI
 ms.assetid: 15e6efdc-52ca-46d8-9c5e-063f7c8265a6
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ac82e36d3abc942e0c5492cc4d7acf347eba36c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 32e595247b147d9a775fcea0299c291d9027aea9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839568"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942984"
 ---
 # <a name="invokemethod-activity-designer"></a>Concepteur d'activités InvokeMethod
 
@@ -57,7 +55,7 @@ L'algorithme permettant d'inscrire les paramètres dans <xref:System.Activities.
 
 3.  Effectuez une itération au sein de la collection <xref:System.Activities.Statements.InvokeMethod.Parameters%2A> et inscrivez chaque argument.
 
-L'exception obtenue est de type <xref:System.Activities.InvalidWorkflowException> avec le message suivant : 'InvokeMethod' : Une variable, un RuntimeArgument ou un DelegateArgument, portant le nom 'TargetObject' existe déjà. Les noms doivent être uniques au sein de la portée de l'environnement.
+L’exception qui en résulte est de type <xref:System.Activities.InvalidWorkflowException> avec le message suivant : 'InvokeMethod' : Une variable, RuntimeArgument ou un permet de delegateargument, de déjà existe avec le nom 'TargetObject'. Les noms doivent être uniques au sein de la portée de l'environnement.
 
 Cette restriction ne s’applique pas à <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> et <xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>. Ils ne sont pas des arguments de flux de travail et par conséquent, ne sont pas inscrits dans le <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A> collection de la <xref:System.Activities.Statements.InvokeMethod> activité dans le <xref:System.Activities.Activity.CacheMetadata%2A> (méthode).
 

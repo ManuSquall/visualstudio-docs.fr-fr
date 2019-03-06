@@ -1,8 +1,6 @@
 ---
 title: Personnaliser des menus et des barres d’outils
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.renametoolbar
@@ -26,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: b570ae2f-5302-45dc-9cc9-8d4d1ad50603
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb58d0a20e8764e7cefe013458476ddcd41ac416
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 84c4b2e5aa532becc1bf9bc50a3c7bcdbd2b8d4e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049689"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955633"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Procédure : Personnaliser des menus et des barres d’outils dans Visual Studio
 

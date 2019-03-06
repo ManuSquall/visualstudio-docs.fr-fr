@@ -1,20 +1,18 @@
 ---
 title: Guide pratique pour utiliser Boost.Test pour C++
 ms.date: 01/29/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 65ee2d95d85c657057f7ef4494c19f8b5644513e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 31de4178d5d6ab2e1798c0b881ceb0fcb6fb2366
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063245"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954213"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Guide pratique pour utiliser Boost.Test pour C++ dans Visual Studio
 

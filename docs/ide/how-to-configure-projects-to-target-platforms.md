@@ -1,7 +1,6 @@
 ---
-title: Guide pratique pour configurer des projets et cibler des plateformes
+title: 'Procédure : Configurer des projets pour des plateformes cibles'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: 845302fc-273d-4f81-820a-7296ce91bd76
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2152f90d244ed283250bf8ea6a42a39b545f9c09
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ee7c0ee30ebe5a424439aab8e06c18c10fc679bf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847979"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942113"
 ---
-# <a name="how-to-configure-projects-to-target-platforms"></a>Guide pratique pour configurer des projets et cibler des plateformes
+# <a name="how-to-configure-projects-to-target-platforms"></a>Procédure : Configurer des projets pour des plateformes cibles
 
 Visual Studio vous permet de configurer vos applications pour cibler différentes plateformes, notamment des plateformes 64 bits. Pour plus d’informations sur la prise en charge des plateformes 64 bits dans Visual Studio, consultez [Applications 64 bits](/dotnet/framework/64-bit-apps).
 

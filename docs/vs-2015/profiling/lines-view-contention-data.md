@@ -1,27 +1,22 @@
 ---
 title: Lignes, vue - Données de conflit | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Lines view
 ms.assetid: 859b02d2-eddf-4ad3-95de-0df67ee2ab03
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d85173dcf2ab5632fdb18233f9f27f329ddd3769
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8cb6b8191b39bfc79615bf0bbcd4fb469395f8d8
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773195"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54779048"
 ---
 # <a name="lines-view---contention-data"></a>Lignes, vue - Données de conflit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,6 +70,3 @@ La vue Lignes des données de conflit répertorie les données de performance po
  [Lignes, vue](../profiling/lines-view.md)   
  [Lignes, vue - Échantillonnage](../profiling/lines-view-dotnet-memory-sampling-data.md)   
  [Lignes, vue](../profiling/lines-view-sampling-data.md)
-
-
-

@@ -1,8 +1,6 @@
 ---
-title: 'CA2241 : Fournissez des arguments corrects aux méthodes de mise en forme'
+title: "CA2241 : Indiquer le nombre correct d'arguments dans les méthodes de mise en forme"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2241
@@ -14,20 +12,20 @@ helpviewer_keywords:
 ms.assetid: 83639bc4-4c91-4a07-a40e-dc5e49a84494
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ef5b2f3b7244762e69d87882cbf2caae63cb34b
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: f9f48f9cba146251aee1a58ffc7a3403ed899c4a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547878"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921495"
 ---
-# <a name="ca2241-provide-correct-arguments-to-formatting-methods"></a>CA2241 : Fournissez des arguments corrects aux méthodes de mise en forme
+# <a name="ca2241-provide-correct-arguments-to-formatting-methods"></a>CA2241 : Indiquer le nombre correct d'arguments dans les méthodes de mise en forme
 
 |||
 |-|-|

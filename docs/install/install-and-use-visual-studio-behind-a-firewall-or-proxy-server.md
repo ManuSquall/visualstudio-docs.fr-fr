@@ -1,10 +1,8 @@
 ---
 title: Installer et utiliser derrière un pare-feu ou un serveur proxy
 description: Passez en revue les URL de domaine à ajouter à la liste verte, ainsi que les ports et protocoles à ouvrir, si votre organisation utilise un pare-feu ou un serveur proxy
-ms.custom: seodec18
 ms.date: 07/10/2018
-ms.technology: vs-acquisition
-ms.prod: visual-studio-dev15
+ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -14,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: ''
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91074815c0723f24bbb89bcb45eafc0fae5866d6
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: feb115bb3fe7114b6379e27c09279165e6ca7a7e
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160164"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954346"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installer et utiliser Visual Studio et les services Azure derrière un pare-feu ou un serveur proxy
 
@@ -86,7 +84,7 @@ Pour vous assurer que vous avez accès à tout ce dont vous avez besoin lorsque 
 | Scénario ou service | Point de terminaison DNS | Protocole | Port | Description |
 | - | - | - | - | - |
 | URL<br>résolution | go.microsoft.com<br><br>aka.ms | | | Permet de raccourcir les URL, puis les résoudre en URL plus longues |
-| Page de démarrage | vsstartpage.blob.core.windows.net | | 443 | Permet d’afficher les actualités sur les développeurs affichées sur la page de démarrage dans Visual Studio |
+| Page de démarrage | vsstartpage.blob.core.windows.net | | 443 | Permet d’afficher la section Informations pour les développeurs située sur la page de démarrage (Visual Studio 2017 uniquement) |
 | Ciblé<br> Notification <br>Service | targetednotifications.azurewebsites.net <br><br>www.research.net | | 80<br><br>443 | Permet de filtrer une liste de notifications globale sur une liste qui s’applique uniquement à certains types de scénarios de machines/d’utilisation |
 | Extension <br>Vérification de mise à jour | marketplace.visualstudio.com<br><br>&#42;.windows.net <br>&#42;.microsoftonline.com <br>&#42;.live.com | | 443 | Permet de fournir des notifications lorsqu’une extension installée a une mise à jour disponible <br><br> Utilisé comme emplacement de connexion |
 | Projet IA <br>Intégration | az861674.vo.msecnd.net | | 443<br> | Permet de configurer de nouveaux projets pour envoyer des données d’utilisation à votre compte Application Insights enregistré |
@@ -101,7 +99,7 @@ Pour vous assurer que vous avez accès à tout ce dont vous avez besoin lorsque 
 | NuGet<br><br>Package NuGet<br> découverte | Api.nuget.org <br>www.nuget.org <br>Nuget.org<br><br>crl3.digicert.com <br>crl4.digicert.com <br>ocsp.digicert.com <br>cacerts.digicert.com | https<br><br>http/s | 443<br><br>80/443<br> | Permet de vérifier les packages NuGet signés.<br><br>Requis pour la recherche des versions et packages NuGet |
 | Informations de référentiel GitHub | api.github.com | https | 443 | Requis pour l’obtention d’informations supplémentaires sur les packages Bower |
 | Linters Web | Eslint.org<br><br>www.Bing.com <br><br>www.coffeelint.org | http | 80 | |
-| Cookiecutter<br>Modèle Explorer<br>découverte <br><br>Cookiecutter <br>Projet Explorer<br> création | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | https | 443<br> | Permet de détecter les modèles en ligne à partir de notre flux recommandé et de dépôts Github <br><br>Permet de créer un projet à partir d’un modèle cookiecutter qui requiert une installation à la demande unique d’un package Python cookiecutter à partir de l’index du package Python (PyPI) |
+| Cookiecutter<br>Modèle Explorer<br>découverte <br><br>Cookiecutter <br>Projet Explorer<br> création | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | https | 443<br> | Permet de détecter les modèles en ligne à partir de notre flux recommandé et de dépôts GitHub <br><br>Permet de créer un projet à partir d’un modèle cookiecutter qui requiert une installation à la demande unique d’un package Python cookiecutter à partir de l’index du package Python (PyPI) |
 | Package Python <br>découverte<br><br>Package Python <br>gestion<br><br>Python <br>Nouveau projet <br>C++ | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https | 443 | Offre la possibilité de rechercher des packages pip<br><br>Permet d’installer le pip automatiquement s’il est manquant <br><br> Permet de créer le <br><br>Permet de résoudre les modèles de projets Python suivants dans la boîte de dialogue Nouveau projet pour les URL du modèle de cookiecutter :<br> - Projet Classifier<br>- Projet clustering <br> - Projet Regression <br> - PyGame avec PyKinect <br> - Projet Pyvot |
 | Office Web <br>complément <br> manifeste <br>Vérification <br>Service | verificationservice.osi.office.net | https | 443 | Permet de valider les manifestes pour les compléments Office Web |
 | SharePoint et <br>Compléments Office | sharepoint.com | https | 443 | Permet de publier et tester des compléments Office et SharePoint sur SharePoint Online |
@@ -135,7 +133,7 @@ Nous offrons une option de support par [**Conversation en direct**](https://visu
 
 Voici d’autres options de support :
 
-* Signalez-nous les problèmes au niveau d’un produit via l’outil [Signaler un problème](../ide/how-to-report-a-problem-with-visual-studio-2017.md) qui apparaît dans Visual Studio Installer et dans l’IDE Visual Studio.
+* Signalez-nous les problèmes au niveau d’un produit via l’outil [Signaler un problème](../ide/how-to-report-a-problem-with-visual-studio.md) qui apparaît dans Visual Studio Installer et dans l’IDE Visual Studio.
 * Suggérez une fonctionnalité, suivez les problèmes des produits et trouvez les réponses à vos questions dans la [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com/).
 * Utilisez [GitHub](https://github.com/) pour communiquer avec nous et d’autres développeurs Visual Studio en prenant part à la [conversation Visual Studio dans la communauté Gitter](https://gitter.im/Microsoft/VisualStudio).
 

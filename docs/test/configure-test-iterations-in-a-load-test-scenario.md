@@ -5,19 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, scenarios, iterations
 - load test, iterations
-- load tests, sceanrios
+- load tests, scenarios
 ms.assetid: ac480fb7-f4f7-47dc-9ae5-98be3aca4fba
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 28bc6d6cb35397d49868c0603f7beb17f9138c2d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 6c3ebadd34988c83dbb688d3864ab88280d7a077
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055685"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796450"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Configurer les itérations de tests dans un scénario de test de charge
 
@@ -51,7 +49,7 @@ La propriété **Nombre maximal d’itérations de test** contrôle le nombre ma
 
 1. Ouvrez un test de charge.
 
-2. L'Éditeur de test de charge s'affiche. L’arborescence du test de charge s’affiche.
+2. L'Éditeur de test de charge s'affiche. L'arborescence du test de charge s'affiche.
 
 3. Dans le dossier **Scénarios** des arborescences du test de charge, choisissez le nœud de scénario pour lequel vous souhaitez spécifier le nombre maximal d’itérations de tests.
 
@@ -79,7 +77,7 @@ La propriété **Temps de réflexion entre les itérations de tests** est utilis
 
 1. Ouvrez un test de charge.
 
-     L’**éditeur de test de charge** s’affiche. L’arborescence du test de charge s’affiche.
+     L’**éditeur de test de charge** s’affiche. L'arborescence du test de charge s'affiche.
 
 2. Dans le dossier **Scénarios** des arborescences du test de charge, choisissez le nœud de scénario dont vous souhaitez spécifier le temps de réflexion.
 

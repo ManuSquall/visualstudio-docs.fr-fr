@@ -2,21 +2,19 @@
 title: Configuration de Service R à distance pour Linux
 description: Guide pratique pour configurer Service R à distance sur Ubuntu et le sous-système Windows pour Linux.
 ms.date: 12/04/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 ms.reviewer: karthiknadig
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 81a0a5c26e91056e757bc6e6f68cd217e98c7e06
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 3fd7f8be7b2de02fb89c9eec3ea7859241beb0f2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220806"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945818"
 ---
 # <a name="remote-r-service-for-linux"></a>Service R à distance pour Linux
 
@@ -170,4 +168,3 @@ Dans chaque cas, les interpréteurs R suivants doivent être installés sur l’
     ```
 1. Utilisez la commande `az container list` pour vérifier l’état. Recherchez `provisioningState` : `Succeeded`.
 1. Si le provisionnement a réussi, vous pouvez maintenant vous connecter au conteneur. Recherchez l’adresse IP publique, dans le champ `ipAddress`, que vous utilisez avec les informations d’identification incluses dans le fichier Docker pour vous connecter au conteneur à partir de RTVS.
-

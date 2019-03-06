@@ -1,8 +1,6 @@
 ---
 title: 'CA1820 : Vérifiez la présence de chaînes vides par la longueur de chaîne'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - TestForEmptyStringsUsingStringLength
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: da1e70c8-b1dc-46b9-8b8f-4e6e48339681
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c6c25f48ecd628d3d6c32bb235180f91e750cdf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ae65ad9c1ad740b3ea39dd97d7430804292df057
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847772"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948444"
 ---
 # <a name="ca1820-test-for-empty-strings-using-string-length"></a>CA1820 : Vérifiez la présence de chaînes vides par la longueur de chaîne
 
@@ -33,20 +31,25 @@ ms.locfileid: "49847772"
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Une chaîne est comparée à une chaîne vide à l’aide de <xref:System.Object.Equals%2A?displayProperty=fullName>.
+
+Une chaîne est comparée à une chaîne vide à l’aide de <xref:System.Object.Equals%2A?displayProperty=nameWithType>.
 
 ## <a name="rule-description"></a>Description de la règle
- Comparer des chaînes à l’aide de la <xref:System.String.Length%2A?displayProperty=fullName> propriété ou le <xref:System.String.IsNullOrEmpty%2A?displayProperty=fullName> méthode est beaucoup plus rapide que l’utilisation de <xref:System.Object.Equals%2A>. Il s’agit, car <xref:System.Object.Equals%2A> exécute des instructions MSIL très supérieur à soit <xref:System.String.IsNullOrEmpty%2A> ou le nombre d’instructions exécutées pour récupérer le <xref:System.String.Length%2A> propriété valeur et la comparer à zéro.
 
- Vous devez être conscient que <xref:System.Object.Equals%2A> et <xref:System.String.Length%2A> == 0 se comportent différemment pour les chaînes null. Si vous essayez d’obtenir la valeur de la <xref:System.String.Length%2A> propriété sur une chaîne null, le common language runtime lève un <xref:System.NullReferenceException?displayProperty=fullName>. Si vous effectuez une comparaison entre une chaîne null et une chaîne vide, le common language runtime ne lève pas d’exception ; la comparaison retourne `false`. Test de valeur null n’affecte pas considérablement les performances relatives de ces deux approches. Lorsque vous ciblez [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], utilisez le <xref:System.String.IsNullOrEmpty%2A> (méthode). Sinon, utilisez le <xref:System.String.Length%2A> == comparaison autant que possible.
+Comparer des chaînes à l’aide de la <xref:System.String.Length%2A?displayProperty=nameWithType> propriété ou le <xref:System.String.IsNullOrEmpty%2A?displayProperty=nameWithType> méthode est plus rapide que l’utilisation de <xref:System.Object.Equals%2A>. Il s’agit, car <xref:System.Object.Equals%2A> exécute des instructions MSIL très supérieur à soit <xref:System.String.IsNullOrEmpty%2A> ou le nombre d’instructions exécutées pour récupérer le <xref:System.String.Length%2A> propriété valeur et la comparer à zéro.
+
+Pour les chaînes null, <xref:System.Object.Equals%2A> et <xref:System.String.Length%2A> == 0 se comportent différemment. Si vous essayez d’obtenir la valeur de la <xref:System.String.Length%2A> propriété sur une chaîne null, le common language runtime lève un <xref:System.NullReferenceException?displayProperty=fullName>. Si vous effectuez une comparaison entre une chaîne null et une chaîne vide, le common language runtime ne lève pas d’exception et retourne `false`. Test de valeur null n’affecte pas considérablement les performances relatives de ces deux approches. Lorsque vous ciblez .NET Framework 2.0 ou version ultérieure, utilisez le <xref:System.String.IsNullOrEmpty%2A> (méthode). Sinon, utilisez le <xref:System.String.Length%2A> == 0 comparaison autant que possible.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, modifiez la comparaison à utiliser le <xref:System.String.Length%2A> propriété et test pour la chaîne null. Si vous ciblez [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], utilisez le <xref:System.String.IsNullOrEmpty%2A> (méthode).
+
+Pour corriger une violation de cette règle, modifiez la comparaison à utiliser le <xref:System.String.Length%2A> propriété et test pour la chaîne null. Si vous ciblez .NET Framework 2.0 ou version ultérieure, utilisez le <xref:System.String.IsNullOrEmpty%2A> (méthode).
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Il est possible de supprimer un avertissement de cette règle si les performances ne sont pas un problème.
+
+Il est possible de supprimer un avertissement de cette règle si les performances ne sont pas un problème.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant illustre les différentes techniques utilisées pour rechercher une chaîne vide.
 
- [!code-csharp[FxCop.Performance.StringTest#1](../code-quality/codesnippet/CSharp/ca1820-test-for-empty-strings-using-string-length_1.cs)]
+L’exemple suivant illustre les différentes techniques utilisées pour rechercher une chaîne vide.
+
+[!code-csharp[FxCop.Performance.StringTest#1](../code-quality/codesnippet/CSharp/ca1820-test-for-empty-strings-using-string-length_1.cs)]

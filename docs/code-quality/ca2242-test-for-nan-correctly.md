@@ -1,8 +1,6 @@
 ---
-title: 'CA2242 : Effectuez correctement des tests NaN'
+title: 'CA2242 : Effectuez correctement des tests NaN'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - TestForNaNCorrectly
@@ -12,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: e12dcffc-e255-4e1e-8fdf-3c6054d44abe
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c742c73d73802a21ea7a21a426cf815ee4e34e2d
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 43c2dd1f6a23c3df4d77207efb49531b97b3b381
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45545617"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929048"
 ---
-# <a name="ca2242-test-for-nan-correctly"></a>CA2242 : Effectuez correctement des tests NaN
+# <a name="ca2242-test-for-nan-correctly"></a>CA2242 : Effectuez correctement des tests NaN
 
 |||
 |-|-|

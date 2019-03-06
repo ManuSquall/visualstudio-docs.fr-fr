@@ -1,14 +1,9 @@
 ---
 title: Création d'une interface utilisateur à l'aide du concepteur XAML
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner
 - VS.DevicePanel
@@ -18,13 +13,13 @@ ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8928f725e144c980d3e625d557a71047959b8b9b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: c928d9f939db96ae302620952bbb6bbdedc396a3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058819"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795167"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Création d'une interface utilisateur à l'aide du concepteur XAML dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,9 +87,9 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
 
  **Affichage** : spécifie différentes tailles et résolutions d’affichage pour l’application.
 
- **Orientation** Spécifie différentes orientations de l’application : **Paysage** ou **Portrait**.
+ **Orientation** : spécifie différentes orientations pour l’application : **Paysage** ou **Portrait**.
 
- **Edge** spécifie différents alignements de bord pour votre application : **Les deux**, **gauche**, **droite**, ou **aucun**.
+ **Bord** : spécifie différents alignements de bord de votre application : **Les deux**, **Gauche**, **Droit**ou **Aucun**.
 
  **Contraste élevé** : affiche un aperçu de l’application en fonction du paramètre de contraste sélectionné. Ce paramètre, lorsqu'il est défini sur une valeur différente de **Par défaut**, remplace la propriété `RequestedTheme` définie dans App.xaml.
 
@@ -143,4 +138,4 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
  À droite de chaque valeur de propriété figure un *marqueur de propriété* qui apparaît comme un symbole de zone. L'apparence du marqueur de propriété indique s'il y a une liaison de données ou une ressource appliquée à la propriété. Par exemple, un symbole de zone vide indique une valeur par défaut, un symbole de zone noire indique généralement qu'une ressource locale a été appliquée, et enfin une zone orange indique généralement qu'une liaison de données a été appliquée. Quand vous cliquez sur le marqueur de propriété, vous pouvez accéder à la définition d'un style, ouvrir le générateur de liaisons de données ou ouvrir le sélecteur de ressources.
 
 ## <a name="see-also"></a>Voir aussi
- [Utilisation des éléments dans le concepteur XAML](../designers/working-with-elements-in-xaml-designer.md) [comment créer et appliquer une ressource](../designers/how-to-create-and-apply-a-resource.md) [procédure pas à pas : Liaison de données dans le concepteur XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+ [Utilisation des éléments dans le concepteur XAML](../designers/working-with-elements-in-xaml-designer.md) [comment créer et appliquer une ressource](../designers/how-to-create-and-apply-a-resource.md) [procédure pas à pas : Effectuer une liaison de données dans le concepteur XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

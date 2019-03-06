@@ -1,8 +1,6 @@
 ---
 title: 'CA1504 : Vérifier les noms de champs trompeurs'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - ReviewMisleadingFieldNames
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 94136ff1-4aaf-4dc2-9170-48c171ab7499
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dae321a15de10063352a00980879f35e10cfb9bb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0c58a0a27c11aea2954d4950b742a8928f98732e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887319"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947508"
 ---
 # <a name="ca1504-review-misleading-field-names"></a>CA1504 : Vérifier les noms de champs trompeurs
 

@@ -1,8 +1,6 @@
 ---
 title: Définir le frame de pile en cours, commande
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.setcurrentstackframe
@@ -12,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 3dcf52c0-6781-4598-bac2-0094dce67c20
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95f8c762f16eb4a784ccc2cffb5bfa27d215370e
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 9eea69dc4d2931f66d4c6769667e23bdfb4eecf1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704796"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938284"
 ---
 # <a name="set-current-stack-frame-command"></a>Définir le frame de pile en cours, commande
 Vous permet de définir un frame de pile spécifique.
@@ -47,4 +45,4 @@ Debug.SetCurrentStackFrame index
 - [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Commande, fenêtre](../../ide/reference/command-window.md)
 - [Rechercher/Commande, zone](../../ide/find-command-box.md)
-- [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

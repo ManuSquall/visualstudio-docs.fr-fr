@@ -1,20 +1,18 @@
 ---
 title: Tests unitaires du code Visual C#
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 76c20fb987bb1380cb4d3f00e078aac81f26e89f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 23c16ab17ef1ad4870fa6435939bc29db5208803
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064852"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917764"
 ---
 # <a name="unit-testing-visual-c-code"></a>Tests unitaires du code Visual C#
 

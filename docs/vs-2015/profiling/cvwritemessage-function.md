@@ -1,14 +1,9 @@
 ---
 title: CvWriteMessage, fonction | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - cvmarkers/CvWriteMessageW
 - cvmarkers/CvWriteMessageExW
@@ -31,13 +26,13 @@ ms.assetid: e20ae7be-bfa7-437a-b8c1-fa0f1baa7f83
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d98ead3931e884c0a99b112a71ee3921e85e3eb3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f6a364498306758f8c2f01de741aed50166cc8f4
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793293"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54779061"
 ---
 # <a name="cvwritemessage-function"></a>CvWriteMessage, fonction
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -119,7 +114,7 @@ HRESULT CvWriteMessageExVA(
 ## <a name="return-value"></a>Valeur de retour  
  S_OK lorsque le message est correctement écrit. Code d’erreur en cas d’erreur. Utilisez les macros SUCCEEDED/FAILED pour vérifier la condition d’erreur.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  **En-tête** : cvmarkers.h  
   
  **Unicode** : CvWriteMessageW, CvWriteMessageVW, CvWriteMessageExW, CvWriteMessageExVW  
@@ -128,6 +123,3 @@ HRESULT CvWriteMessageExVA(
   
 ## <a name="see-also"></a>Voir aussi  
  [Informations de référence sur la bibliothèque C++](../profiling/cpp-library-reference.md)
-
-
-

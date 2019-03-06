@@ -1,22 +1,20 @@
 ---
 title: Avertissements et erreurs | Outil de test Microsoft IntelliTest pour les développeurs
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Warnings and errors
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: efb82a7419ba58c27ccab864d2360538075a1089
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 27a35850b97a73252562ebb7dbb959bdaabf3abd
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000612"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925404"
 ---
 # <a name="warnings-and-errors"></a>Avertissements et erreurs
 
@@ -116,7 +114,7 @@ void ParameterizedTest(int n) {
 }
 ```
 
-Vous pouvez modifier l’option **MaxConditions** d’un attribut dérivé de **PexSettingsAttributeBase**, comme [PexClass](attribute-glossary.md#pexclass) ou [PexMethod](attribute-glossary.md#pexmethod). Exemple :
+Vous pouvez modifier l’option **MaxConditions** d’un attribut dérivé de **PexSettingsAttributeBase**, comme [PexClass](attribute-glossary.md#pexclass) ou [PexMethod](attribute-glossary.md#pexmethod). Par exemple :
 
 ```csharp
 [PexMethod(MaxConditions=10000)]

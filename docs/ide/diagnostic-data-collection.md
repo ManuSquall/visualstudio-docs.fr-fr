@@ -1,20 +1,18 @@
 ---
 title: Données de diagnostic et journaux générés par le système
 ms.date: 05/24/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: michma
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f55d8a0f32886ed477026e298ed2c8c5d6e26f16
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 0f92e899ff8e56c68fcf1a4ab639d027c139afcf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34478291"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925489"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Journaux générés par le système et collectés par Visual Studio
 

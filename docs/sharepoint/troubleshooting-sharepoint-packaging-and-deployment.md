@@ -1,9 +1,6 @@
 ---
 title: Résolution des problèmes SharePoint Packaging and Deployment | Microsoft Docs
-ms.custom: ''
 ms.date: 02/22/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VSTO.WorkflowDeployment.Troubleshooting
@@ -21,17 +18,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packaging
 - SharePoint development in Visual Studio, troubleshooting
 - SharePoint development in Visual Studio, deployment conflict resolution
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ba6f0a1aff0c263534c17256b7f5cf49ff9c9533
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ed0801e9654e1d2f78f2ed49f47dabe6f0e619ab
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898055"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868038"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Résoudre les problèmes de déploiement et empaquetage de SharePoint
   Cette rubrique couvre différents problèmes que vous pouvez rencontrer lorsque vous empaquetez et déployez des solutions SharePoint.
@@ -40,10 +37,10 @@ ms.locfileid: "49898055"
  Pour effectuer un diagnostic entre Visual Studio, SharePoint et d'autres couches, vous pouvez utiliser la clé de Registre EnableDiagnostics afin de consulter la trace de la pile. Pour plus d’informations, consultez [solutions SharePoint déboguer](../sharepoint/debugging-sharepoint-solutions.md).
 
 ## <a name="add-project-output-to-the-solution-package"></a>Ajouter la sortie du projet au package de solution
- Vous pouvez ajouter la sortie de projet à un package via le Concepteur de packages. Toutefois, lorsque vous ajoutez la sortie de projet, assurez-vous que la plateforme du projet correspond à la plateforme de la solution SharePoint. Nous vous recommandons d’utiliser le **Any CPU** plateforme cible pour les assemblys que vous souhaitez déployer sur un serveur SharePoint. Pour plus d’informations, consultez [Page Compiler, Concepteur de projets &#40;Visual Basic&#41; ](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) et [avancé de boîte de dialogue Paramètres du compilateur &#40;Visual Basic&#41;](/visualstudio/ide/reference/advanced-compiler-settings-dialog-box-visual-basic).
+ Vous pouvez ajouter la sortie de projet à un package via le Concepteur de packages. Toutefois, lorsque vous ajoutez la sortie de projet, assurez-vous que la plateforme du projet correspond à la plateforme de la solution SharePoint. Nous vous recommandons d’utiliser le **Any CPU** plateforme cible pour les assemblys que vous souhaitez déployer sur un serveur SharePoint. Pour plus d’informations, consultez [Page Compiler, Concepteur de projets &#40;Visual Basic&#41; ](../ide/reference/compile-page-project-designer-visual-basic.md) et [avancé de boîte de dialogue Paramètres du compilateur &#40;Visual Basic&#41;](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).
 
 ## <a name="validation-warnings-and-errors"></a>Erreurs et avertissements de validation
- Les outils de développement SharePoint dans Visual Studio exécutent des étapes de validation pour vérifier que le package de solution est correctement formé. Vous pouvez également créer des étapes de validation personnalisées pour vos fonctionnalités et vos packages. Pour plus d’informations, consultez [Comment : créer des règles de validation pour les solutions SharePoint fonctionnalité personnalisée et un package](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
+ Les outils de développement SharePoint dans Visual Studio exécutent des étapes de validation pour vérifier que le package de solution est correctement formé. Vous pouvez également créer des étapes de validation personnalisées pour vos fonctionnalités et vos packages. Pour plus d'informations, voir [Procédure : Créer des règles de validation pour les solutions SharePoint fonctionnalité personnalisée et un package](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
 
 ## <a name="deployment-conflict-resolution"></a>Résolution des conflits de déploiement
  Lorsque vous déployez une solution SharePoint, vous pouvez être confronté à des collisions lorsqu'un élément sur le serveur a un nom, une URL ou un ID identique à celui ou celle d'un élément dans votre package de solution. Vous pouvez modifier le **Deployment Conflict Resolution** propriété à résoudre, signaler ou ignorer des collisions relatives des modules, les parties Web, les instances de listes et les types de contenu.
@@ -65,7 +62,7 @@ ms.locfileid: "49898055"
 
 3. Définition de l’ordre d’activation des fonctionnalités en fonction de la hiérarchie du Concepteur de packages.
 
-   Vous pouvez ajouter des étapes de déploiement personnalisées pour les autres modifications le **F5** comportement. Pour plus d’informations, consultez [procédure pas à pas : créer une étape de déploiement personnalisée pour les projets SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
+   Vous pouvez ajouter des étapes de déploiement personnalisées pour les autres modifications le **F5** comportement. Pour plus d’informations, consultez [Procédure pas à pas : Créer une étape de déploiement personnalisée pour les projets SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
 
 ## <a name="delay-displaying-sharepoint-page-when-deploy-visual-web-part"></a>Différer l’affichage de page SharePoint lorsque déployez le composant visual web part
  L’affichage de la page SharePoint prend un certain temps lors du déploiement d’un composant Visual Web Part dans le dossier Bin sur [!INCLUDE[wiprlhext](../sharepoint/includes/wiprlhext-md.md)], [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] ou [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)]. Si vous modifiez des fichiers dans un répertoire [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] de niveau supérieur, tel que le répertoire bin, l'application Web entière est recompilée. Cela peut différer de 25 secondes le rendu de la page SharePoint.
@@ -76,7 +73,7 @@ ms.locfileid: "49898055"
 ### <a name="resolution"></a>Résolution
  Pour contourner ce problème, exécutez les étapes suivantes :
 
-1.  Installez la mise à jour KB967535 comme indiqué dans l’article du Support de Microsoft [FIX : un correctif est disponible pour résoudre deux problèmes dans ASP.NET sur IIS 7.0 pour Windows Vista et Windows Server 2008](http://go.microsoft.com/fwlink/?LinkId=179055).
+1.  Installez la mise à jour KB967535 comme indiqué dans l’article du Support de Microsoft [corriger : Un correctif est disponible pour résoudre deux problèmes dans ASP.NET sur IIS 7.0 pour Windows Vista et Windows Server 2008](http://go.microsoft.com/fwlink/?LinkId=179055).
 
 2.  Ajoutez la ligne suivante au fichier Web.config :
 
@@ -88,7 +85,7 @@ ms.locfileid: "49898055"
  Si le nom d'un élément de projet SharePoint quelconque contient des parenthèses, le déploiement de la solution associée échoue avec une erreur.
 
 ### <a name="error-message"></a>Message d'erreur
- Une erreur s'est produite lors de l'étape de déploiement 'Ajouter une solution' : Échec de l'extraction du fichier .cab dans la solution.
+ Erreur lors de l’étape de déploiement 'Ajouter une Solution' : Échec d’extraction du fichier .cab dans la solution.
 
 ### <a name="resolution"></a>Résolution
  Pour résoudre ce problème, supprimez les parenthèses dans les noms d'éléments de projet SharePoint.
@@ -97,7 +94,7 @@ ms.locfileid: "49898055"
  La première fois que vous déployez un élément Visual Web Part sur un site d'une application Web autre que celle dans laquelle il est actuellement déployé (en modifiant la propriété SiteUrl de l'élément Visual Web Part), vous obtenez une erreur.
 
 ### <a name="error-message"></a>Message d'erreur
- Une erreur s’est produite lors de l’étape de déploiement 'Ajouter une solution' : Une fonctionnalité avec l’ID [#] a déjà été installée dans cette batterie de serveur. Utilisez l’attribut force pour installer à nouveau la fonctionnalité de façon explicite.
+ Erreur lors de l’étape de déploiement 'Ajouter une Solution' : Une fonctionnalité avec l’ID [#] a déjà été installée dans cette batterie de serveurs. Utilisez l’attribut force pour installer à nouveau la fonctionnalité de façon explicite.
 
 ### <a name="resolution"></a>Résolution
  Cette erreur est due au mode de retrait des fonctionnalités d’éléments Visual Web Part dans SharePoint. Pour déployer correctement le composant visual Web part, redéployez la solution en choisissant le **F5** clé.
@@ -114,5 +111,5 @@ ms.locfileid: "49898055"
  Pour supprimer cet avertissement, générez le projet puis fermez et rouvrez le concepteur, ou désactivez l'option de retrait automatique pour le projet. Pour ce faire, désactivez le **retrait automatique après le débogage** case à cocher sur la **SharePoint** onglet de la boîte de dialogue des propriétés de projet.
 
 ## <a name="see-also"></a>Voir aussi
- [Empaqueter et déployer des solutions SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
 
+- [Empaqueter et déployer des solutions SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

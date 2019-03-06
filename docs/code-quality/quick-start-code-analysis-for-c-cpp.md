@@ -1,8 +1,6 @@
 ---
-title: 'Démarrage rapide : analyse du code pour C/C++'
+title: 'Démarrage rapide : Analyse du code pour C/C++'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - C/C++ code analysis
@@ -12,14 +10,14 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3aefc42e77c6ccaf14a426a26e12b81b49bb5632
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ecb4f46b238b72c9d83b46122b8567a8636282b8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818761"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950095"
 ---
-# <a name="quickstart-code-analysis-for-cc"></a>Démarrage rapide : analyse du code pour C/C++
+# <a name="quickstart-code-analysis-for-cc"></a>Démarrage rapide : Analyse du code pour C/C++
 
 Vous pouvez améliorer la qualité de votre application en exécutant l'analyse de code de manière régulière sur le code C ou C++. Cela peut vous aider à rechercher les problèmes courants, les violations d'une bonne pratique de programmation ou les défauts difficiles à détecter à travers des tests. Les avertissements de l'analyse du code diffèrent des erreurs et des avertissements du compilateur, car l'analyse du code recherche des modèles de code spécifiques qui sont valides, mais qui peuvent créer des problèmes pour vous ou d'autres utilisateurs de votre code.
 
@@ -111,9 +109,9 @@ Vous pouvez utiliser la fonctionnalité de suivi des éléments de travail pour 
 
 Vous pouvez effectuer une recherche dans de longues listes de messages d'avertissement, et vous pouvez filtrer les avertissements dans les solutions à projets multiples.
 
-- **Pour filtrer des avertissements par titre ou id d’avertissement**: entrez le mot clé dans la zone de recherche.
+- **Pour filtrer des avertissements par titre ou id d’avertissement**: Entrez le mot clé dans la zone de recherche.
 
-- **Pour filtrer des avertissements par niveau de gravité**: par défaut, messages d’analyse du code sont affectés d’une gravité **avertissement**. Vous pouvez affecter la gravité d’un ou plusieurs messages en tant que **erreur** dans une règle personnalisée définie. Sur le **gravité** colonne de la **liste d’erreurs**, choisissez la flèche déroulante, puis sur l’icône de filtre. Choisissez **avertissement** ou **erreur** pour afficher uniquement les messages qui sont affectés à la gravité correspondante. Choisissez **sélectionner tout** pour afficher tous les messages.
+- **Pour filtrer des avertissements par niveau de gravité**: Par défaut, messages d’analyse du code sont affectés d’une gravité **avertissement**. Vous pouvez affecter la gravité d’un ou plusieurs messages en tant que **erreur** dans une règle personnalisée définie. Sur le **gravité** colonne de la **liste d’erreurs**, choisissez la flèche déroulante, puis sur l’icône de filtre. Choisissez **avertissement** ou **erreur** pour afficher uniquement les messages qui sont affectés à la gravité correspondante. Choisissez **sélectionner tout** pour afficher tous les messages.
 
 ## <a name="see-also"></a>Voir aussi
 

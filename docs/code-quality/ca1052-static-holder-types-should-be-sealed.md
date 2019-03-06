@@ -1,8 +1,6 @@
 ---
 title: 'CA1052 : Les types de conteneurs statiques doivent être sealed'
 ms.date: 11/09/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - StaticHolderTypesShouldBeSealed
@@ -13,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: 51a3165d-781e-4a55-aa0d-ea25fee7d4f2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 937a5eba672eef928dd4f8c0e5356e504d769153
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 36bd459f2a9f7300328aadd3509530f4802e71cd
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348660"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922448"
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052 : Les types de conteneurs statiques doivent être sealed
 
@@ -68,4 +66,4 @@ L’exemple suivant montre comment la corriger une violation de cette règle en 
 
 ## <a name="related-rules"></a>Règles associées
 
-[CA1053 : Les types de conteneurs statiques ne doivent pas comporter de constructeur](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)
+[CA1053 : Types de conteneurs statiques ne doivent pas avoir de constructeurs](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)

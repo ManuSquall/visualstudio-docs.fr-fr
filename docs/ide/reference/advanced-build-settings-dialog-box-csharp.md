@@ -1,8 +1,6 @@
 ---
 title: Paramètres de génération avancés, boîte de dialogue (C#)
 ms.date: 06/20/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - cs.AdvancedBuildSettings
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 141f2dee-1563-4ce6-ba37-32920b082519
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cf4fd5b48dc3bfcfbfe1809eebe656a5b8f2079d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a668e64f6b8a10cf22e08575ca9c2df385131666
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928280"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55930457"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Paramètres de génération avancés, boîte de dialogue (C#)
 

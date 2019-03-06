@@ -1,8 +1,6 @@
 ---
 title: Rechercher et remplacer du texte, et sélection avec signes insertion multiples
 ms.date: 08/14/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.find
@@ -12,7 +10,6 @@ f1_keywords:
 - findresultswindow
 - vs.findreplace.quickreplace
 - vs.findsymbol
-- vs.findinfiles
 - vs.findresults1
 - vs,findsymbolwindow
 - vs.findreplace.quickfind
@@ -30,15 +27,15 @@ helpviewer_keywords:
 - multi-caret selection
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6120d1ece56e24712fd1217090159ec627f88d61
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 23bda0ccea91089957b9aa6bea97bb5b7b592b20
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349099"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937446"
 ---
 # <a name="find-and-replace-text"></a>Rechercher et remplacer du texte
 

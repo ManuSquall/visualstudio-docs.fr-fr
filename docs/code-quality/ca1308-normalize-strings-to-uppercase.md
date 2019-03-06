@@ -1,8 +1,6 @@
 ---
 title: 'CA1308 : Normaliser les chaînes en majuscules'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1308
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 7e9a7457-3f93-4938-ac6f-1389fba8d9cc
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ebb31029dcc3ef88df776470afdeeb17cea601d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4e8d8b5b522f805bd7e8826cea5ced394c50064f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949797"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919090"
 ---
 # <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308 : Normaliser les chaînes en majuscules
 

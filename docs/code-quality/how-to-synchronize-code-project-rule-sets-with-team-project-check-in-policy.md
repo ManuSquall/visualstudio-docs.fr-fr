@@ -1,25 +1,23 @@
 ---
-title: "Comment : synchroniser des ensembles de règles applicables à des projets de code avec la stratégie d'archivage du projet d'équipe"
+title: "Procédure : Synchroniser des ensembles de règles applicables à des projets de code avec la stratégie d'archivage du projet d'équipe"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
 ms.assetid: 9b02f934-2db6-41ec-aaff-9c31ceec2f04
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3769962829f5d0511b684f03ad8682071b48c07b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 41fb9f60efa439f3a8157059ee4e64af5c25292e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281154"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945441"
 ---
-# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Comment : synchroniser des ensembles de règles de projet de Code avec une stratégie d’archivage Azure DevOps Project
+# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Procédure : Synchroniser des ensembles de règles de projet de Code avec une stratégie d’archivage Azure DevOps Project
 
 Vous synchronisez les paramètres d’analyse de code pour les projets de code à la stratégie d’archivage pour le projet Azure DevOps en spécifiant un ensemble de règles qui contient au moins les règles qui sont spécifiés dans l’ensemble de règles pour la stratégie d’archivage. Votre développeur en chef peut informer vous du nom et l’emplacement de l’ensemble de règles pour la stratégie d’archivage. Vous pouvez utiliser une des options suivantes pour vous assurer que l’analyse du code pour le projet utilise le jeu de règles approprié :
 
@@ -55,7 +53,7 @@ Vous synchronisez les paramètres d’analyse de code pour les projets de code �
 
 1.  Suivez une des procédures plus haut dans cette rubrique pour sélectionner la stratégie d’archivage du projet Azure DevOps sur la page d’analyse du Code de la boîte de dialogue des paramètres de projet.
 
-2.  Cliquez sur **Open**.
+2.  Cliquez sur **Ouvrir**.
 
 3.  Ajouter ou supprimer des règles à l’aide de la [Éditeur d’ensemble de règles](../code-quality/working-in-the-code-analysis-rule-set-editor.md).
 

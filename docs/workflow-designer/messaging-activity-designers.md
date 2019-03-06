@@ -2,20 +2,18 @@
 title: Concepteur de flux de travail - concepteurs d’activités de messagerie
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: 897e63cf-a42f-4edd-876f-c4ccfffaf6d6
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97279d92b9853f183778d069aa81182fa6cf8b56
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 1b4156c8125ad6cf3af9f5600ceb2b6c5bc21419
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755225"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948184"
 ---
 # <a name="messaging-activity-designers"></a>Concepteurs d'activités de messagerie
 

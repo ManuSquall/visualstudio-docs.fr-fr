@@ -15,17 +15,15 @@ helpviewer_keywords:
 ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fef30f836ab27cd7a67d85a04254be0018d5b33e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: a8e14a53719d4913bcc04bcb2b702ca4ec4a8c55
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388736"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927215"
 ---
 # <a name="handle-a-concurrency-exception"></a>Gérer une exception d’accès concurrentiel
 
@@ -85,7 +83,7 @@ Ensuite, créez un dataset nommé **NorthwindDataSet**:
 
 1. Sur le **données** menu, choisissez **ajouter nouvelle source de données**.
 
-   L'Assistant Configuration de source de données s'ouvre.
+   L’Assistant Configuration de source de données s’ouvre.
 
 2. Sur le **choisir un Type de Source de données** s’affiche, sélectionnez **base de données**.
 
@@ -208,7 +206,7 @@ Vous pouvez maintenant tester le formulaire pour vous assurer qu’il se comport
 
 8. Dans le premier enregistrement sur le formulaire (**ALFKI**), modifiez **ContactName** à **Maria Anders1**.
 
-9. Sélectionnez le **enregistrer** bouton.
+9. Sélectionnez le bouton **Enregistrer**.
 
      L’erreur d’accès concurrentiel est levée, et la boîte de message s’affiche.
 

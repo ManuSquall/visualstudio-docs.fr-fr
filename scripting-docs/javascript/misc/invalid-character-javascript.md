@@ -1,14 +1,9 @@
 ---
-title: Caractère non valide (JavaScript) | Documents Microsoft
-ms.custom: ''
+title: Caractère non valide (JavaScript) | Microsoft Docs
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1014
 dev_langs:
@@ -16,19 +11,18 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: b6a54a93-7fc9-459a-bdd6-f42d1ce40b5f
-caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c91e755b9a52deade5d5d5d24c0a7f28310c4425
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 49a465345ad7cb70fc21d1a253816162daf939a8
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633729"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843657"
 ---
 # <a name="invalid-character-javascript"></a>Caractère non valide (JavaScript)
-Vous composé d’un identificateur à l’aide d’un caractère (ou caractères) ne pas reconnue comme valide par le [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] compilateur. Les caractères valides utilisent les règles suivantes :  
+Composé d’un identificateur à l’aide d’une (ou les caractères) ne pas reconnu comme valide par le [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] compilateur. Caractères valides utilisent les règles suivantes :  
   
 -   Le premier caractère doit être une lettre ASCII (majuscule ou minuscule) ou un trait de soulignement (_).  
   

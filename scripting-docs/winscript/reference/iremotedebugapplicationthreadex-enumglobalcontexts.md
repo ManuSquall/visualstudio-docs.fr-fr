@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThreadEx:EnumGlobalContexts | Documents Microsoft
+title: IRemoteDebugApplicationThreadEx:EnumGlobalContexts | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c57dc014e9f448e58db5fe6509536db5023b22dd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5112ea59584544669b995d20490a1f01fac971ed
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728889"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347942"
 ---
 # <a name="iremotedebugapplicationthreadexenumglobalcontexts"></a>IRemoteDebugApplicationThreadEx:EnumGlobalContexts
-Énumère les contextes d’expression globale pour toutes les langues en cours d’exécution dans ce thread.  
+Énumère les contextes d’expression globale pour tous les langages s’exécutant dans ce thread.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT EnumGlobalExpressionContexts(  
    IEnumDebugExpressionContexts**  ppEnum  
 );  
@@ -38,13 +38,13 @@ HRESULT EnumGlobalExpressionContexts(
   
 #### <a name="parameters"></a>Paramètres  
  `ppEnum`  
- [out] Énumérateur qui répertorie les contextes d’expression globale pour toutes les langues en cours d’exécution dans ce thread.  
+ [out] Énumérateur qui répertorie les contextes d’expression globale pour tous les langages s’exécutant dans ce thread.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes

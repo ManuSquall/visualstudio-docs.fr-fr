@@ -1,20 +1,18 @@
 ---
 title: Action rapide Ajouter un paramètre à une méthode
 ms.date: 09/28/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0337f9869764f544f5248d4da717af849457b8e8
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: 3e1461afe5c4d6026f8532896ba837e971fed652
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443747"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934352"
 ---
 # <a name="add-a-parameter-to-a-method-using-a-quick-action"></a>Ajouter un paramètre à une méthode avec une Action rapide
 
@@ -24,11 +22,11 @@ Cette génération de code s’applique à :
 
 - Visual Basic
 
-**Quoi :** permet d’ajouter automatiquement un paramètre à une méthode, selon l’utilisation.
+**Quoi :** permet d’ajouter automatiquement un paramètre à une méthode, en fonction de l’utilisation.
 
 **Quand :** vous souhaitez ajouter un paramètre à une méthode et le déclarer correctement et automatiquement.
 
-**Pourquoi :** vous pourriez ajouter le paramètre à la déclaration de méthode avant de l’appeler, mais cette fonctionnalité l’ajoute automatiquement sur la base d’un appel de méthode.
+**Pourquoi :** vous pourriez ajouter le paramètre à la déclaration de méthode avant de l’appeler, mais cette fonctionnalité l’ajoute automatiquement sur la base d’un appel de méthode.
 
 ## <a name="how-to-use-it"></a>Utilisation
 

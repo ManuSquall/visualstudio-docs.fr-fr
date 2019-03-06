@@ -1,8 +1,6 @@
 ---
 title: Éléments (Propriété dynamique XElement)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: reference
 apiname:
 - XElement.Elements
@@ -10,15 +8,15 @@ apitype: Assembly
 ms.assetid: 3d5737f2-d2ed-410a-821c-349dbb2b574f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c78dece049aa2d446a0f03b24f3e2c2640131327
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 4ff2071ba71d60db87332b0e23948d63ac1b2289
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924409"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913195"
 ---
 # <a name="elements-xelement-dynamic-property"></a>Éléments (Propriété dynamique XElement)
 

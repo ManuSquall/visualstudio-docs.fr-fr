@@ -1,14 +1,9 @@
 ---
 title: Sortie, fenêtre| Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.build.output
 - vs.debug.output
@@ -21,13 +16,13 @@ ms.assetid: d8931d88-250e-4db4-963f-2c5b3e99b45f
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 55869ff13cf4048b6d256e57892d470062847501
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 26b826b19a14731ba4fbbb11eccee5fc4337c4ff
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189902"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784817"
 ---
 # <a name="output-window"></a>Fenêtre Sortie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -78,6 +73,3 @@ La fenêtre **Sortie** peut afficher des messages d’état pour diverses foncti
  [Compilation et génération](../../ide/compiling-and-building-in-visual-studio.md)   
  [Présentation des configurations de build](../../ide/understanding-build-configurations.md)   
  [Présentation des bibliothèques de classes .NET](http://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)
-
-
-

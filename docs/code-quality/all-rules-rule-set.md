@@ -1,20 +1,18 @@
 ---
 title: Ensemble de règles de toutes les règles
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 522d8977ed4b4881d2a9b2856438070924864489
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f287328c40e2391a17d0c9e0b8ce8067ba216295
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31883876"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922938"
 ---
 # <a name="all-rules-rule-set"></a>Ensemble de règles de toutes les règles
 

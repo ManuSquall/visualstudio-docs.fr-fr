@@ -1,14 +1,9 @@
 ---
 title: Polices et couleurs, Environnement, boîte de dialogue Options | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPag.Environment.Fonts_And_Colors
 - VS.ToolsOptionsPages.FontsAndColors
@@ -31,13 +26,13 @@ ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: dbaaab64a50a918844a8f9060ce80ee8c8e7ae00
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 691500690470f66bced8fdec5ff885a2d1f0d73b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220233"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761625"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Polices et couleurs, Environnement, boîte de dialogue Options
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ ms.locfileid: "50220233"
 La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet d’établir un jeu de polices et un modèle de couleurs personnalisés pour divers éléments d’interface utilisateur dans l’environnement de développement intégré (IDE). Vous pouvez accéder à cette boîte de dialogue en cliquant sur **Outils / Options**, puis en sélectionnant **Environnement / Polices et couleurs**. Si cette page n’apparaît pas dans la liste, sélectionnez **Afficher tous les paramètres** dans la boîte de dialogue **Options**.  
   
 > [!NOTE]
->  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Les changements relatifs au modèle de couleurs ne sont pas appliqués durant la session où vous les apportez. Vous pouvez évaluer les changements de couleurs en ouvrant une autre instance de Visual Studio, et en reproduisant les conditions dans lesquelles vous souhaitez qu'ils soient appliqués.  
   
@@ -133,7 +128,7 @@ La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet
 |**Zone non couverte**|Code non couvert par un test unitaire.|  
 |**Zone partiellement couverte**|Code partiellement couvert par un test unitaire.|  
 |**Zone couverte**|Code complètement couvert par un test unitaire.|  
-|**Commentaire CSS**|Commentaire dans des feuilles de style en cascade. Exemple :<br /><br /> /* commentaire \*/|  
+|**Commentaire CSS**|Commentaire dans des feuilles de style en cascade. Par exemple :<br /><br /> /* commentaire \*/|  
 |**Mot clé CSS**|Mots clés dans la feuille de style en cascade.|  
 |**Nom de propriété CSS**|Nom d'une propriété, par exemple Background.|  
 |**Valeur de propriété CSS**|Valeur assignée à une propriété, par exemple blue.|  
@@ -153,7 +148,7 @@ La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet
 |**Mot clé**|Mots clés réservés du langage donné. Exemple : class et namespace.|  
 |**Adresse mémoire**|Couleur de texte utilisée pour afficher la colonne d’adresse dans la fenêtre **Mémoire**.|  
 |**Mémoire modifiée**|Couleur de texte utilisée pour afficher les données modifiées dans la fenêtre **Mémoire**.|  
-|**Données de la mémoire**|La couleur de texte utilisée pour afficher les données dans le **mémoire** fenêtre.|  
+|**Données de la mémoire**|Couleur de texte utilisée pour afficher les données dans la fenêtre **Mémoire**.|  
 |**Mémoire illisible**|Couleur de texte utilisée pour afficher les zones de mémoire illisibles dans la fenêtre **Mémoire**.|  
 |**Nombre**|Nombre dans du code, qui représente une valeur numérique réelle.|  
 |**Operator**|Opérateurs tels que +, - et !=.|  
@@ -169,7 +164,7 @@ La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet
 |**Marqueur SQL DML**|S'applique à l'éditeur Transact-SQL. Les instructions DML dans cet éditeur sont marquées avec un cadre englobant bleu par défaut.|  
 |**Code périmé**|Code annulé et remplacé en attente d'une mise à jour. Dans certains cas, Modifier & Continuer ne peut pas appliquer immédiatement les modifications du code, mais ce sera le cas plus tard, durant le débogage. Cela se produit si vous modifiez une fonction qui doit appeler la fonction en cours d'exécution, ou si vous ajoutez plus de 64 octets de nouvelles variables à une fonction en attente dans la pile des appels. Dans ce cas, le débogueur affiche la boîte de dialogue "Avertissement : code périmé". Par ailleurs, le code annulé et remplacé continue à s'exécuter jusqu'à ce que la fonction en question s'arrête et soit appelée à nouveau. Modifier & Continuer applique les modifications du code à ce moment-là.|  
 |**String**|Littéraux de chaîne.|  
-|**String (C# @ Verbatim)**|Les littéraux de chaîne en C# sont interprétés textuellement. Exemple :<br /><br /> @"x"|  
+|**String (C# @ Verbatim)**|Les littéraux de chaîne en C# sont interprétés textuellement. Par exemple :<br /><br /> @"x"|  
 |**Erreur de syntaxe**|Erreurs d'analyse.|  
 |**Raccourci de la liste des tâches**|Si le raccourci **Liste des tâches** est ajouté à une ligne, et si la marge des indicateurs est désactivée, la ligne est mise en surbrillance.|  
 |**Point de trace (Désactivé)**|Non utilisé.|  
@@ -197,7 +192,7 @@ La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet
 |**Attribut XML**|Noms d'attributs.|  
 |**Guillemets d’attribut XML**|Guillemets pour les attributs XML.|  
 |**Valeur d’attribut XML**|Contenu des attributs XML.|  
-|**Section Cdata XML**|Contenu de \<! [ CDATA [...]] >.|  
+|**Section Cdata XML**|Contenu de \<![CDATA[…]]>.|  
 |**Commentaire XML**|Contenu de \<!-- -->.|  
 |**Délimiteur XML**|Séparateurs de syntaxe XML, notamment <, <?, <!, \<!--, -->, ?\>, \<![, ]]> et [, ].|  
 |**Attribut de documentation XML**|Valeur d’un attribut de documentation xml, tel que \<param name="I"> où "I" est colorisé.|  
@@ -242,6 +237,3 @@ La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet
  [Environnement, boîte de dialogue Options](../../ide/reference/environment-options-dialog-box.md)   
  [Boîte de dialogue Options](../../ide/reference/options-dialog-box-visual-studio.md)   
  [Guide pratique pour modifier les polices et les couleurs dans Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
-
-
-

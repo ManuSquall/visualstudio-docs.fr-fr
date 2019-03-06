@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 10/03/2017
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Découvrez comment obtenir et gérer vos clés de produit dans les abonnements Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 88fb704df9858572581d205a8c5d457203488ee3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9a1163aecab9f9330f1464704d0aa97018e51d6b
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900850"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953899"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Utilisation de clés de produit dans les abonnements Visual Studio
 
@@ -32,14 +30,14 @@ Si vous avez demandé toutes les clés de produit disponibles dans le cadre de v
 ## <a name="retail-and-volume-licensing-versions-of-products"></a>Versions commercialisées et de licence en volume des produits
 Les abonnements Visual Studio offrent différentes versions commercialisées et de licence en volume des produits Microsoft. Certains produits proposés dans la page Téléchargements sont disponibles uniquement dans leur version commercialisée ou uniquement dans leur version de licence en volume, alors que d’autres produits sont disponibles dans les deux versions. En règle générale, les produits nécessitant une activation, comme Windows, Windows Server et les produits clients Office, sont proposés uniquement dans leur version commercialisée à partir de la page Téléchargements.
 
-Les clients de licences en volume peuvent également télécharger les logiciels à partir du centre VSLC (Volume Licensing Service Center) pour obtenir les versions de licence en volume des produits (et les clés de produit correspondantes).  L'accès au centre VSLC est géré par des administrateurs désignés au sein de l’organisation du client.
+Les clients du programme de licence en volume peuvent également télécharger les logiciels dans le Centre de gestion des licences en volume pour obtenir les versions de type licence en volume des produits (et les clés de produit correspondantes).  L'accès au centre VSLC est géré par des administrateurs désignés au sein de l’organisation du client.
 
 ## <a name="daily-product-key-claim-limits"></a>Nombre maximal de demandes de clés de produit par jour.
 Microsoft s’engage à protéger l’intégrité du programme d’abonnement Visual Studio et la valeur des logiciels et avantages reçus par les abonnés légitimes du programme. En contrepartie, Microsoft a mis en place des limites quotidiennes de demandes de clés pour les abonnements Visual Studio. L’objectif est de limiter le nombre de clés pouvant être demandées par jour et par abonnement.
 
 La limite de demandes quotidiennes est de dix clés pour tous les abonnements Visual Studio, y compris ceux fournis par MPN, BizSpark, MCT Software & Services et MCT, à l’exception de Visual Studio Professional (MPN) pour lequel la limite de demandes quotidiennes s’élève à sept clés.
 
-Remarque : Le nombre de demandes de clés autorisées peut changer. Vérifiez ici les limites en vigueur.
+Remarque : le nombre de demandes de clés autorisé peut faire l’objet de modifications. Vérifiez ici les limites en vigueur.
 
 Si vous avez demandé le nombre maximal de clés disponibles dans le cadre de votre abonnement dans une période de 24 heures, une erreur vous signale que votre limite a été atteinte. Cette limite est réinitialisée toutes les 24 heures, à partir de 00 h 01 (heure du Pacifique).
 
@@ -47,9 +45,9 @@ Nos études montrent que la plupart des abonnés ont suffisamment de clés de pr
 
 ## <a name="locating-and-claiming-product-keys"></a>Recherche et demande de clés de produit
 Vous devez être connecté à votre abonnement Visual Studio pour afficher vos clés de produit. Pour rechercher des clés de produit, sélectionnez le lien bleu **Obtenir une clé** d’un produit spécifique dans la page [Téléchargements](https://my.visualstudio.com/downloads), comme illustré ci-dessous.  Toutes les clés disponibles sont également regroupées dans la page [Clés de produit](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs). Quand plusieurs clés d’un même produit sont disponibles, des remarques sont affichées dans la colonne Remarques du téléchargement pour vous aider à identifier la clé appropriée.
-> [!div class="mx-imgBorder"]   
+> [!div class="mx-imgBorder"]
 > ![Obtenir une clé à partir de la page Téléchargements](_img/product-keys/download-get-key.png)
-    
+
 Certains produits regroupent plusieurs éditions du produit en un seul téléchargement. Dans ces cas de figure, la clé de produit entrée détermine l’édition du produit installée.
 Certaines clés sont fournies automatiquement, comme les clés « statiques » qui peuvent être utilisées un nombre de fois illimité, car elles ne nécessitent aucune activation. D’autres clés doivent être demandées à l’aide du lien **Obtenir une clé** correspondant au produit.
 
@@ -106,10 +104,10 @@ Les abonnés Visual Studio peuvent augmenter le nombre d’utilisateurs autoris�
 Cinq clés de chaque type sont disponibles pour Windows Server 2008 R2, et chaque clé prend en charge 20 connexions. Pour Windows Server 2012 R2, quatre clés de chaque type sont disponibles, et chaque clé prend en charge 50 connexions.
 
 #### <a name="to-enable-additional-connections-in-windows-server"></a>Pour activer des connexions supplémentaires dans Windows Server :
-1.  Ouvrez le Gestionnaire de serveur.
-2.  Ouvrez la liste des serveurs dans le volet de navigation de gauche.
-3.  Cliquez avec le bouton droit sur votre serveur de licences et choisissez « Installer les licences ».
-4.  Suivez les étapes de l'Assistant.  Quand vous sélectionnez le type de contrat, choisissez « Pack de licence (version commerciale) », puis entrez la clé de produit obtenue sur le portail MY.
+1. Ouvrez le Gestionnaire de serveur.
+2. Ouvrez la liste des serveurs dans le volet de navigation de gauche.
+3. Cliquez avec le bouton droit sur votre serveur de licences et choisissez « Installer les licences ».
+4. Suivez les étapes de l'Assistant.  Quand vous sélectionnez le type de contrat, choisissez « Pack de licence (version commerciale) », puis entrez la clé de produit obtenue sur le portail MY.
 
 Les utilisateurs finaux peuvent utiliser les services Bureau à distance pour se connecter aux applications si les conditions suivantes sont remplies :
 - Les utilisateurs doivent rester anonymes (état non identifié).

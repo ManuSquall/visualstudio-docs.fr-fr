@@ -1,22 +1,20 @@
 ---
 title: Glossaire des attributs | Outil de test Microsoft IntelliTest pour les développeurs
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Attribute glossary
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0a83a7bd2fc40862411bbfd85f72b804318983c5
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 0f5e18bb1a63b7d7630ebc1b7ce2812432dedda9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294212"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916920"
 ---
 # <a name="attribute-glossary"></a>Glossaire des attributs
 
@@ -160,7 +158,7 @@ using Microsoft.Pex.Framework;
 <a name="pexassemblyundertest"></a>
 ## <a name="pexassemblyundertest"></a>PexAssemblyUnderTest
 
-Cet attribut spécifie un assembly qui est testé par le projet de test actuel. 
+Cet attribut spécifie un assembly qui est testé par le projet de test actuel.
 
 ```csharp
 [assembly: PexAssemblyUnderTest("MyAssembly")]

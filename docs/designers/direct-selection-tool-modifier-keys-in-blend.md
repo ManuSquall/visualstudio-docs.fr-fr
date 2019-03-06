@@ -1,28 +1,26 @@
 ---
 title: Touches de modification de l’outil Sélection directe dans Blend
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 21f9b951-dc2b-4d09-bd70-75caed8fb964
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1630432d6135ab4a6f6a221f54b89aa18e7e8cb3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 955968137e1f8d2ba1322f5ccf9be2eac6196580
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876228"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940254"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend"></a>Touches de modification de l’outil Sélection directe dans Blend
 Le tableau suivant répertorie les raccourcis que vous pouvez utiliser pour modifier la forme d’un tracé existant avec l’outil **Sélection directe** ![outil Sélection directe](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png). Pour ajouter ou supprimer des points sur un tracé existant, ou pour joindre deux tracés existants, utilisez l’outil **Stylet**.
 
 |Pour|Procédez comme suit|Pointeur|
 | - |-------------|-------------|
-|Faire apparaître les poignées de tangente pour un point d'un tracé|Cliquez sur un point d’un tracé.|![Faire apparaître les poignées de tangente pour un point d’un tracé](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png)<br /><br /> Déplacer le pointeur de point|
+|Faire apparaître les poignées de tangente pour un point d’un tracé|Cliquez sur un point d’un tracé.|![Faire apparaître les poignées de tangente pour un point d’un tracé](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png)<br /><br /> Déplacer le pointeur de point|
 |Déplacer un point sur un tracé|Faire glisser un point sur un tracé|![Déplacer un point sur un tracé](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png)<br /><br /> Déplacer le pointeur de point|
 |Faire apparaître les poignées de tangente pour un segment entre deux points d’un tracé|Cliquez sur un segment d'un tracé|![Faire apparaître les poignées de tangente pour un segment entre deux points d’un tracé](../designers/media/2ace930f-98fa-410b-92cf-7a4b88503ee7.png)<br /><br /> Déplacer un pointeur de segment|
 |Déplacer un segment entre deux points d’un tracé|Faire glisser un segment d’un tracé|![Déplacer un segment entre deux points d’un tracé](../designers/media/2ace930f-98fa-410b-92cf-7a4b88503ee7.png)<br /><br /> Déplacer un pointeur de segment|

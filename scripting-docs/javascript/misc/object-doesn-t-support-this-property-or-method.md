@@ -1,14 +1,9 @@
 ---
-title: Objet ne&#39;t prend en charge cette propriété ou méthode | Documents Microsoft
-ms.custom: ''
+title: Objet ne prend en charge cette propriété ou méthode | Microsoft Docs
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT438
 dev_langs:
@@ -16,18 +11,17 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 35f7a9b4-74fa-4ddb-b9f2-1a92345cb2ff
-caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c87d7d1c23682d014924c5c9b948133d8391c72
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 02084c6989a3c3948ddbc0bd0ff2999a69ba70cb
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/10/2018
-ms.locfileid: "24633409"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842985"
 ---
-# <a name="object-doesn39t-support-this-property-or-method"></a>Objet ne&#39;t prend en charge cette propriété ou méthode
+# <a name="object-doesnt-support-this-property-or-method"></a>Propriété ou méthode non prise en charge par cet objet
 Vous avez spécifié une propriété ou une méthode qui n'existe pas pour cet objet. Tous les objets ne prennent pas en charge toutes les propriétés et toutes les méthodes.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
@@ -39,5 +33,5 @@ Vous avez spécifié une propriété ou une méthode qui n'existe pas pour cet o
 -   Pour plus d'informations, voir la documentation de l'objet.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Object (objet)](../../javascript/reference/object-object-javascript.md)   
+ [Objet Object](../../javascript/reference/object-object-javascript.md)   
  [Objets JavaScript](../../javascript/reference/javascript-objects.md)

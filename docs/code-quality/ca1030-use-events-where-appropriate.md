@@ -1,8 +1,6 @@
 ---
 title: 'CA1030 : Utiliser des événements lorsque cela est approprié'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - UseEventsWhereAppropriate
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: ea051367-deeb-40f9-9b65-eb818f1e133a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08f5ec37d38824ca640dd19827db3b1d355d0ad7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 32645985237503a526ce7381cbeec4ecc9770b06
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815637"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929269"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030 : Utiliser des événements lorsque cela est approprié
 
@@ -35,7 +33,7 @@ ms.locfileid: "49815637"
 ## <a name="cause"></a>Cause
  Un nom de la méthode publique, protégée ou privée commence par l’une des opérations suivantes :
 
-- Composant additionnel
+- AddOn
 
 - RemoveOn
 
