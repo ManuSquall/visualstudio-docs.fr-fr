@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Découvrez comment obtenir et gérer vos clés de produit dans les abonnements Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: ed204bad85bcc63603aff6585adfdf30ffec4168
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 9a1163aecab9f9330f1464704d0aa97018e51d6b
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843717"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953899"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Utilisation de clés de produit dans les abonnements Visual Studio
 
@@ -104,10 +104,10 @@ Les abonnés Visual Studio peuvent augmenter le nombre d’utilisateurs autoris�
 Cinq clés de chaque type sont disponibles pour Windows Server 2008 R2, et chaque clé prend en charge 20 connexions. Pour Windows Server 2012 R2, quatre clés de chaque type sont disponibles, et chaque clé prend en charge 50 connexions.
 
 #### <a name="to-enable-additional-connections-in-windows-server"></a>Pour activer des connexions supplémentaires dans Windows Server :
-1.  Ouvrez le Gestionnaire de serveur.
-2.  Ouvrez la liste des serveurs dans le volet de navigation de gauche.
-3.  Cliquez avec le bouton droit sur votre serveur de licences et choisissez « Installer les licences ».
-4.  Suivez les étapes de l'Assistant.  Quand vous sélectionnez le type de contrat, choisissez « Pack de licence (version commerciale) », puis entrez la clé de produit obtenue sur le portail MY.
+1. Ouvrez le Gestionnaire de serveur.
+2. Ouvrez la liste des serveurs dans le volet de navigation de gauche.
+3. Cliquez avec le bouton droit sur votre serveur de licences et choisissez « Installer les licences ».
+4. Suivez les étapes de l'Assistant.  Quand vous sélectionnez le type de contrat, choisissez « Pack de licence (version commerciale) », puis entrez la clé de produit obtenue sur le portail MY.
 
 Les utilisateurs finaux peuvent utiliser les services Bureau à distance pour se connecter aux applications si les conditions suivantes sont remplies :
 - Les utilisateurs doivent rester anonymes (état non identifié).

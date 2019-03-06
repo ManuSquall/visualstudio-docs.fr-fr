@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edb6d9133fdf3a2a7a4109b9f438f86cc0cdec61
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c9f42cb9cc506a47432397bc0135d2bd3123bcf7
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931570"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953967"
 ---
 # <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>Résolution des problèmes d’installation et de mise à niveau de Visual Studio 2017
 
@@ -84,7 +84,7 @@ Voici un tableau des problèmes connus et de certaines solutions de contournemen
 
 ## <a name="how-to-get-visual-studio-installation-logs"></a>Guide pratique pour obtenir les journaux d’installation de Visual Studio
 
-Les journaux d’installation sont nécessaires pour résoudre la plupart des problèmes d’installation. Lorsque vous envoyez un problème à l’aide de [Signaler un problème](../ide/how-to-report-a-problem-with-visual-studio-2017.md) dans Visual Studio Installer, ces journaux sont automatiquement inclus dans votre rapport.
+Les journaux d’installation sont nécessaires pour résoudre la plupart des problèmes d’installation. Lorsque vous envoyez un problème à l’aide de [Signaler un problème](../ide/how-to-report-a-problem-with-visual-studio.md) dans Visual Studio Installer, ces journaux sont automatiquement inclus dans votre rapport.
 
 Si vous contactez le Support Microsoft, vous devrez peut-être fournir ces journaux d’installation à l’aide de l’outil [Microsoft Visual Studio and .NET Framework Log Collection Tool](https://aka.ms/vscollect). L’outil de collecte des journaux permet de collecter des journaux d’installation à partir de tous les composants installés par Visual 2017 Studio, y compris .NET Framework, Kit SDK Windows et SQL Server. Il permet également de collecter des informations sur l’ordinateur, un inventaire de Windows Installer et des informations du journal des événements Windows pour Visual Studio Installer, le programme d’installation de Windows et la restauration du système.
 

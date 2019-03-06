@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00002de014e36f53976009f0904c987214f0c28b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c15824ec28547cbdb18fdfebc4ebcee1bdd1d387
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685129"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953380"
 ---
 # <a name="customize-startup"></a>Personnaliser le démarrage
 
@@ -34,17 +34,17 @@ Vous pouvez également afficher une page de démarrage personnalisée, qui est u
 
 1. Dans la barre de menus, choisissez **Outils** > **Options**.
 
-1. Développez **Environnement**, puis choisissez **Démarrage**.
+2. Développez **Environnement**, puis choisissez **Démarrage**.
 
 ::: moniker range="vs-2017"
 
-1. Dans la liste **Au démarrage**, choisissez l’élément à afficher au démarrage de Visual Studio.
+3. Dans la liste **Au démarrage**, choisissez l’élément à afficher au démarrage de Visual Studio.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. Dans la liste **Au démarrage, ouvrir**, choisissez ce qui doit se produire après le lancement de Visual Studio. Vous avez le choix entre la **Fenêtre Démarrer** (qui vous permet d’ouvrir un projet nouveau ou déjà existant), la **Solution la plus récente** ou un **Environnement vide**.
+3. Dans la liste **Au démarrage, ouvrir**, choisissez ce qui doit se produire après le lancement de Visual Studio. Vous avez le choix entre la **Fenêtre Démarrer** (qui vous permet d’ouvrir un projet nouveau ou déjà existant), la **Solution la plus récente** ou un **Environnement vide**.
 
 ::: moniker-end
 

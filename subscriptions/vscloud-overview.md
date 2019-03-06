@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Louez Visual Studio Professional ou Visual Studio Enterprise sur une base mensuelle ou annuelle, sans contrat à long terme.
 searchscope: VS Subscription
-ms.openlocfilehash: 5aee20e2c96dd79455968e8aeb87b8f17ec0cf65
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: eb9d7034a18d8be6fd4c20ddde1c3708cc206fa0
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842219"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953419"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Acheter des abonnements cloud Visual Studio Enterprise et Visual Studio Professional
 
@@ -26,28 +26,28 @@ Vous pouvez acheter des [abonnements Visual Studio Professional et Visual Studio
 
 ## <a name="before-you-start"></a>Avant de commencer
 
-*   Pour payer vos achats, vous avez besoin d’un [abonnement Azure](https://azure.microsoft.com/pricing/purchase-options/). Vous pouvez vous [inscrire](https://portal.azure.com) avant votre premier achat ou lors de votre premier achat dans Visual Studio Marketplace.
+* Pour payer vos achats, vous avez besoin d’un [abonnement Azure](https://azure.microsoft.com/pricing/purchase-options/). Vous pouvez vous [inscrire](https://portal.azure.com) avant votre premier achat ou lors de votre premier achat dans Visual Studio Marketplace.
 
 ## <a name="who-can-buy-visual-studio-cloud-subscriptions"></a>Qui peut acheter des abonnements cloud Visual Studio ?
 Toute personne ayant un [accès Propriétaire et Contributeur](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0) à l’abonnement Azure peut acheter des abonnements cloud.
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>Comment acheter des abonnements cloud ?
 
-1.  Connectez-vous à [Visual Studio Marketplace > Abonnements](https://marketplace.visualstudio.com/subscriptions).
+1. Connectez-vous à [Visual Studio Marketplace > Abonnements](https://marketplace.visualstudio.com/subscriptions).
 
-2.  Choisissez l’abonnement que vous souhaitez acheter, par exemple, l’abonnement mensuel Visual Studio Professional.
+2. Choisissez l’abonnement que vous souhaitez acheter, par exemple, l’abonnement mensuel Visual Studio Professional.
 
-3.  Sélectionnez l’abonnement Azure à utiliser pour la facturation. Vous pouvez créer un abonnement Azure si vous n’en avez pas.
+3. Sélectionnez l’abonnement Azure à utiliser pour la facturation. Vous pouvez créer un abonnement Azure si vous n’en avez pas.
     > [!div class="mx-imgBorder"]
     > ![Sélectionner l’abonnement Azure pour la facturation](_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png)
 
-4.  Sélectionnez le nombre d’abonnements à acheter.
+4. Sélectionnez le nombre d’abonnements à acheter.
     > [!div class="mx-imgBorder"]
     > ![Sélectionner le nombre d’abonnements](_img/buy-vs-subscriptions/buy-vs-sub-users.png)
 
     Si vous ne voulez pas que les abonnements vous soient affectés, désactivez **M'attribuer cet abonnement**.
 
-5.  Confirmez et finalisez votre achat. Si vous vous êtes affecté un abonnement à vous-même, vous pouvez accéder au [portail des abonnés Visual Studio](https://my.visualstudio.com) pour commencer à télécharger des logiciels et à utiliser d’autres offres réservées aux abonnés.
+5. Confirmez et finalisez votre achat. Si vous vous êtes affecté un abonnement à vous-même, vous pouvez accéder au [portail des abonnés Visual Studio](https://my.visualstudio.com) pour commencer à télécharger des logiciels et à utiliser d’autres offres réservées aux abonnés.
 
 > [!div class="mx-imgBorder"]
 > ![Finaliser l’achat correctement](_img/buy-vs-subscriptions/buy-vs-sub-success.png)

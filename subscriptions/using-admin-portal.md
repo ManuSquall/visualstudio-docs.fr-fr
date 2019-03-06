@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Découvrez comment gérer les abonnements Visual Studio de votre organisation dans le portail d’administration.
 searchscope: VS Subscription
-ms.openlocfilehash: ec741707f061de7e7173da9c4a07a50469cf50da
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 0c22fa379a3bca8987b50f1e8c19240e4a30fb98
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843709"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953949"
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>Utilisation du portail d’administration des abonnements Visual Studio
 
@@ -38,13 +38,14 @@ Si vous voulez utiliser le portail d’administration pour gérer les abonnement
 ### <a name="onboarding"></a>Intégration
 
 Quand votre organisation est prête à être intégrée au portail d’administration des abonnements Visual Studio, un e-mail est envoyé au contact principal et au destinataire des avis pour les inviter à effectuer le processus d’intégration. Les étapes de l’intégration au nouveau portail sont décrites ci-dessous. Pour connaître la procédure pas à pas à suivre, regardez cette [vidéo sur l’intégration au portail d’administration](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting) ou consultez cet [article du support technique](https://support.microsoft.com/help/4013931/visual-studio-subscriptions-administrator-migration-process "Processus de migration vers le portail d’administration des abonnements Visual Studio").
-1.  **Recherche de votre numéro de client public (PCN) et connexion :**
-    - Dans l’e-mail, le contact principal et le destinataire des avis sont indiqués avec un lien unique et avec les trois derniers chiffres de leur numéro de client public (PCN). *
-    - Pour obtenir le PCN complet, le contact principal doit se connecter au centre VLSC (des instructions pour rechercher le PCN y sont fournies).
-    - Une fois qu’ils ont trouvé leur PCN, les contacts doivent sélectionner leur lien unique qui les invite à se connecter. Ils peuvent se connecter à l’aide d’un compte professionnel ou scolaire si votre organisation est sur AAD ou avec un compte Microsoft (MSA) si votre organisation n’est pas sur AAD.
-    - Ils doivent ensuite entrer leur PCN.
-2.  **Assignation des administrateurs.** Après avoir entré leur PCN, les contacts sont inscrits comme super administrateurs dans le nouveau système, ce qui leur donne le droit d’ajouter d’autres super administrateurs et administrateurs (auparavant appelés gestionnaires d’abonnements). Pour éviter de perdre l’accès, cette étape doit être effectuée avant la date de migration de votre organisation.
-3.  **Accès au nouveau portail d’administration des abonnements.**  Après la migration de votre organisation, des e-mails sont envoyés aux nouveaux super administrateurs et administrateurs pour les inviter à accéder au nouveau portail et à commencer la gestion des abonnements.
+
+1. **Recherche de votre numéro de client public (PCN) et connexion :**
+    - Dans l’e-mail, le contact principal et le destinataire des avis sont indiqués avec un lien unique et avec les trois derniers chiffres de leur numéro de client public (PCN). * 
+    - Pour obtenir le PCN complet, le contact principal doit se connecter au centre VLSC (des instructions pour rechercher le PCN y sont fournies). 
+    - Une fois qu’ils ont trouvé leur PCN, les contacts doivent sélectionner leur lien unique qui les invite à se connecter. Ils peuvent se connecter à l’aide d’un compte professionnel ou scolaire si votre organisation est sur AAD ou avec un compte Microsoft (MSA) si votre organisation n’est pas sur AAD. 
+    - Ils doivent ensuite entrer leur PCN. 
+2. **Assignation des administrateurs.** Après avoir entré leur PCN, les contacts sont inscrits comme super administrateurs dans le nouveau système, ce qui leur donne le droit d’ajouter d’autres super administrateurs et administrateurs (auparavant appelés gestionnaires d’abonnements). Pour éviter de perdre l’accès, cette étape doit être effectuée avant la date de migration de votre organisation. 
+3. **Accès au nouveau portail d’administration des abonnements.**  Après la migration de votre organisation, des e-mails sont envoyés aux nouveaux super administrateurs et administrateurs pour les inviter à accéder au nouveau portail et à commencer la gestion des abonnements.  
 
 > [!NOTE]
 > Si les contacts principaux ou les contacts pour les notifications reçoivent plusieurs e-mails, cela signifie qu’ils ont plusieurs numéros PCN. Ils doivent alors effectuer le processus en utilisant le lien unique correspondant au numéro PCN référencé dans chaque e-mail.*

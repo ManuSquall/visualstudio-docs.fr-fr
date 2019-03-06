@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d7150ec407b2ce9c0c4c5bf22a8ae75b3ac3b93
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 2af264ec8cf44f435f640a81a61dbd4cdbd84bd3
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450592"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223310"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Nouveautés de Visual Studio 2017
 
@@ -266,7 +266,7 @@ Choisissez votre langage de développement préféré entre &mdash;C#, Visual Ba
 
 **Nouveauté de la version 15.5** : Visual Studio 2017 version 15.5 offre une prise en charge optimale du SDK Windows 10 Fall Creators Update (10.0.16299.0). Windows 10 Fall Creators Update apporte aussi de nombreuses améliorations pour les développeurs d’applications UWP. Voici quelques-uns des changements majeurs : 
 
-* **Prise en charge de .NET Standard 2.0**<br/>En plus de simplifier le processus de développement des applications, Windows 10 Fall Creators Update est la première version de Windows 10 à offrir la prise en charge de .NET Standard 2.0. [.NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/) est une implémentation de référence de la bibliothèque de classes de base que toutes les plateformes .NET peuvent implémenter. L’objectif de .NET Standard est de permettre aux développeurs d’applications .NET de partager plus facilement du code entre les différentes plateformes .NET dont ils ont besoin.
+* **Prise en charge de .NET Standard 2.0**<br/>En plus de simplifier le processus de développement des applications, Windows 10 Fall Creators Update est la première version de Windows 10 à offrir la prise en charge de .NET Standard 2.0. [.NET Standard](https://devblogs.microsoft.com/dotnet/introducing-net-standard/) est une implémentation de référence de la bibliothèque de classes de base que toutes les plateformes .NET peuvent implémenter. L’objectif de .NET Standard est de permettre aux développeurs d’applications .NET de partager plus facilement du code entre les différentes plateformes .NET dont ils ont besoin.
 * **Le meilleur d’UWP et de Win32**<br/>Nous avons ajouté la fonctionnalité [Pont du bureau](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) à la plateforme Windows 10 pour que Windows 10 puisse mieux répondre aux besoins de tous les développeurs d’applications .NET ciblant UWP, WPF, Windows Forms ou Xamarin. Avec le nouveau type de projet de création de package d’application disponible dans Visual Studio 2017 version 15.5, vous pouvez créer des packages d’application Windows pour vos projets WPF ou Windows Forms, de la même manière que pour des projets UWP. Une fois que vous avez créé le package de votre application, vous pouvez utiliser toutes les fonctionnalités de déploiement d’applications Windows 10, puis distribuer votre application par le biais de Microsoft Store (pour les applications consommateur) ou de Microsoft Store pour Entreprises et Éducation. Les applications packagées ont accès à la surface d’API UWP complète et aux API Win32 du bureau. Vous pouvez donc maintenant moderniser progressivement vos applications WPF et Windows Forms avec des API UWP et des fonctionnalités Windows 10. De plus, vous pouvez ajouter vos composants Win32 dans vos applications UWP qui sont disponibles sur le bureau avec toutes les fonctionnalités Win32.
 
 Pour plus d’informations sur UWP, consultez la page [Développer des applications pour la plateforme Windows universelle (UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md).
@@ -377,7 +377,7 @@ Si vous souhaitez faire des suggestions sur la façon dont nous pouvons amélior
 
 ### <a name="report-a-problem"></a>Signaler un problème
 
- Parfois, un message ne suffit pas pour transmettre l’impact complet du problème que vous avez rencontré. Si vous rencontrez un blocage, un incident ou un autre problème de performance, vous pouvez utiliser l’outil **Signaler un problème** pour nous envoyer facilement les étapes de reproduction du problème et les fichiers utiles pour le support technique (captures d’écran, fichiers de trace et heap dump, par exemple). Pour plus d’informations sur l’utilisation de cet outil, consultez la page [Guide pratique pour signaler un problème](how-to-report-a-problem-with-visual-studio-2017.md).
+ Parfois, un message ne suffit pas pour transmettre l’impact complet du problème que vous avez rencontré. Si vous rencontrez un blocage, un incident ou un autre problème de performance, vous pouvez utiliser l’outil **Signaler un problème** pour nous envoyer facilement les étapes de reproduction du problème et les fichiers utiles pour le support technique (captures d’écran, fichiers de trace et heap dump, par exemple). Pour plus d’informations sur l’utilisation de cet outil, consultez la page [Guide pratique pour signaler un problème](how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="see-also"></a>Voir aussi
 

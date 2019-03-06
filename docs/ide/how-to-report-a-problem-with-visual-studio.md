@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76571106832c79ea3ecc7aa6d1b2e58355912960
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 5c9bfa7c772b2c194430273f8af0ac640c05171d
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56800686"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953652"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio"></a>Guide pratique pour signaler un problème avec Visual Studio
 

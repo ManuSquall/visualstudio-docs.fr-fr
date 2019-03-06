@@ -7,12 +7,12 @@ ms.date: 03/13/2018
 ms.topic: conceptual
 description: Questions fréquentes (FAQ) sur la migration de l’administration du Centre de gestion des licences en volume
 searchscope: VS Subscription
-ms.openlocfilehash: 2cf7e53e4739c22499bab6df74fcb55b5d0ad019
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 21083f50966472bb7d6d85c8ad594b586b810df9
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844098"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953942"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Migration de l’administration des abonnements Visual Studio
 
@@ -44,21 +44,21 @@ Oui.  Ce processus est constitué de deux phases. Configurer (ou intégrer) votr
 ### <a name="what-is-the-onboarding-process"></a>Qu’est-ce que le processus d’intégration ?
 Un e-mail est envoyé aux contacts principaux et aux contacts pour les notifications, les invitant à effectuer le processus d’intégration.
 Voici des instructions sur le processus.
-1.  **Recherche de votre numéro de client public (PCN) et connexion :**
+1. **Recherche de votre numéro de client public (PCN) et connexion :**
 
-    a.  Dans l’e-mail, les contacts principaux et les contacts pour les notifications sont indiqués avec un lien unique et les trois derniers chiffres de leur numéro PCN (Public Customer Number).*
+    a. Dans l’e-mail, les contacts principaux et les contacts pour les notifications sont indiqués avec un lien unique et les trois derniers chiffres de leur numéro PCN (Public Customer Number).*
 
-    b.  Pour obtenir le numéro PCN complet, le contact principal doit se connecter au Centre VLSC (vous pouvez trouver ci-dessous des instructions pour trouver le numéro PCN).
+    b. Pour obtenir le numéro PCN complet, le contact principal doit se connecter au Centre VLSC (vous pouvez trouver ci-dessous des instructions pour trouver le numéro PCN).
 
-    c.  Une fois qu’ils ont trouvé leur PCN, les contacts doivent sélectionner leur lien unique qui les invite à se connecter. Ils peuvent se connecter avec un compte professionnel ou scolaire (si votre organisation est sur Azure AD), ou avec un compte Microsoft (MSA) si votre organisation n’est pas sur Azure AD.
+    c. Une fois qu’ils ont trouvé leur PCN, les contacts doivent sélectionner leur lien unique qui les invite à se connecter. Ils peuvent se connecter avec un compte professionnel ou scolaire (si votre organisation est sur Azure AD), ou avec un compte Microsoft (MSA) si votre organisation n’est pas sur Azure AD.
 
-    d.  Ils sont ensuite invités à entrer le numéro PCN.
+    d. Ils sont ensuite invités à entrer le numéro PCN.
 
-2.  **Configurez vos administrateurs :**
+2. **Configurez vos administrateurs :**
 
     Après avoir entré le numéro PCN, ils sont dirigés vers la page où ils peuvent ajouter des super administrateurs et des administrateurs (auparavant appelés gestionnaires d’abonnements). Dans l’idéal, ceci doit être effectué avant la date de la migration de votre organisation, de façon à éviter toute interruption dans la gestion de vos abonnements.
 
-3.  **Accès au nouveau portail de gestion des abonnements :** Après la migration de votre organisation, des e-mails sont envoyés aux super administrateurs et aux administrateurs pour les inviter à accéder au nouveau portail et à commencer à gérer les abonnements.
+3. **Accès au nouveau portail de gestion des abonnements :** Après la migration de votre organisation, des e-mails sont envoyés aux super administrateurs et aux administrateurs pour les inviter à accéder au nouveau portail et à commencer à gérer les abonnements.
 
 > [!NOTE]
 > Si les contacts principaux ou les contacts pour les notifications reçoivent plusieurs e-mails, cela signifie qu’ils ont plusieurs numéros PCN. Ils doivent alors effectuer le processus en utilisant le lien unique correspondant au numéro PCN référencé dans chaque e-mail.

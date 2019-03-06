@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 27e990c300702301fc7c701339254bbe6f385cd0
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: af11a16c94f50c5d7614d8d630534433332a4d91
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843791"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223388"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Déboguer une application JavaScript ou TypeScript dans Visual Studio
 
@@ -172,4 +172,4 @@ Le débogage des fichiers générés dynamiquement n’est pas automatique. Vous
 
    Pour Internet Explorer, accédez à **l’Explorateur de solutions > Script Documents (Documents de script) > Windows Internet Explorer > YourPageName (Nom de votre page)**.
 
-Pour plus d’informations, consultez [Débogage côté client de projets ASP.NET dans Google Chrome](https://blogs.msdn.microsoft.com/webdev/2016/11/21/client-side-debugging-of-asp-net-projects-in-google-chrome/).
+Pour plus d’informations, consultez [Débogage côté client de projets ASP.NET dans Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome/).

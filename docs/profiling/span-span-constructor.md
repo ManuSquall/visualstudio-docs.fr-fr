@@ -12,14 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b04f9edc946b83f8785c6a6fb3e9720db4840f0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f761e87c1658c11bfdfd93a4f4e22299d88575a8
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596196"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953299"
 ---
 # <a name="spanspan-constructor"></a>span::span, constructeur
+
 Initialise une nouvelle instance de la classe `span`.
 
 ## <a name="syntax"></a>Syntaxe
@@ -52,18 +53,21 @@ span(
 ```
 
 #### <a name="parameters"></a>Paramètres
- `_Series` Contexte valide de la série de marqueurs.
 
- `_Format` Chaîne de mise en forme composite contenant du texte associé à zéro, un ou plusieurs éléments de mise en forme qui correspondent aux objets de la liste d’arguments.
+`_Series` Contexte valide de la série de marqueurs.
 
- `_Importance` Niveau d’importance.
+`_Format` Chaîne de mise en forme composite contenant du texte associé à zéro, un ou plusieurs éléments de mise en forme qui correspondent aux objets de la liste d’arguments.
 
- `_Category` Catégorie.
+`_Importance` Niveau d’importance.
+
+`_Category` Catégorie.
 
 ## <a name="requirements"></a>Spécifications
- **En-tête :** *cvmarkersobj.h*
 
- **Espace de noms :** Concurrency::diagnostic
+**En-tête :** *cvmarkersobj.h*
 
- ## <a name="see-also"></a>Voir aussi
+**Espace de noms :** Concurrency::diagnostic
+
+## <a name="see-also"></a>Voir aussi
+
 - [span, classe](../profiling/span-class.md)

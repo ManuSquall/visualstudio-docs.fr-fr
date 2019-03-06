@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67153c0acebc3b190830daa2e14ef3578ce00652
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: feb115bb3fe7114b6379e27c09279165e6ca7a7e
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796619"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954346"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installer et utiliser Visual Studio et les services Azure derrière un pare-feu ou un serveur proxy
 
@@ -133,7 +133,7 @@ Nous offrons une option de support par [**Conversation en direct**](https://visu
 
 Voici d’autres options de support :
 
-* Signalez-nous les problèmes au niveau d’un produit via l’outil [Signaler un problème](../ide/how-to-report-a-problem-with-visual-studio-2017.md) qui apparaît dans Visual Studio Installer et dans l’IDE Visual Studio.
+* Signalez-nous les problèmes au niveau d’un produit via l’outil [Signaler un problème](../ide/how-to-report-a-problem-with-visual-studio.md) qui apparaît dans Visual Studio Installer et dans l’IDE Visual Studio.
 * Suggérez une fonctionnalité, suivez les problèmes des produits et trouvez les réponses à vos questions dans la [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com/).
 * Utilisez [GitHub](https://github.com/) pour communiquer avec nous et d’autres développeurs Visual Studio en prenant part à la [conversation Visual Studio dans la communauté Gitter](https://gitter.im/Microsoft/VisualStudio).
 

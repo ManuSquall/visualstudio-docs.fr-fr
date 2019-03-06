@@ -7,12 +7,12 @@ ms.date: 03/14/2018
 ms.topic: conceptual
 description: Découvrez comment les administrateurs des abonnements peuvent accéder au portail d’administration et gérer les abonnements acquis via une licence en volume
 searchscope: VS Subscription
-ms.openlocfilehash: 846eb6ecf69253086079cf06fe4c53a8860d996d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 6c8a68a1a25e99018e7f41fedbfc9d01b191e2e7
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843134"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953258"
 ---
 # <a name="accessing-the-portal-and-managing-administrators---for-subscriptions-acquired-through-volume-licensing-vl"></a>Accès au portail et gestion des administrateurs - pour les abonnements acquis via une licence en volume
 
@@ -31,7 +31,7 @@ Si vous avez déjà été configuré comme administrateur, vous pouvez accéder 
 
 Quand votre organisation est prête à être intégrée au portail d’administration des abonnements Visual Studio, un e-mail est envoyé au contact principal et au destinataire des avis pour les inviter à effectuer le processus d’intégration. Les étapes de l’intégration au nouveau portail sont décrites ci-dessous. Si vous voulez voir tout le processus, regardez cette vidéo d’intégration de l’administrateur ou consultez les sections suivantes de cette documentation.
 
-1.  Recherche de votre PCN et connexion
+1. Recherche de votre PCN et connexion
 
      a. Dans l’e-mail, le contact principal et le destinataire des avis sont indiqués avec un lien unique et avec les trois derniers chiffres de leur numéro de client public (PCN).  (Si les contacts principaux ou les contacts pour les notifications reçoivent plusieurs e-mails, cela signifie qu’ils ont plusieurs numéros PCN. Ils doivent alors effectuer le processus en utilisant le lien unique correspondant au numéro PCN référencé dans chaque e-mail.)
 
@@ -41,9 +41,9 @@ Quand votre organisation est prête à être intégrée au portail d’administr
 
      d. Ils doivent ensuite entrer leur PCN.
 
-2.  Configurez vos administrateurs.  Après avoir entré leur PCN, les contacts sont inscrits comme super administrateurs dans le nouveau système, ce qui leur donne le droit d’ajouter d’autres super administrateurs et administrateurs (auparavant appelés gestionnaires d’abonnements). Pour éviter de perdre l’accès, cette étape doit être effectuée avant la date de migration de votre organisation.
+2. Configurez vos administrateurs.  Après avoir entré leur PCN, les contacts sont inscrits comme super administrateurs dans le nouveau système, ce qui leur donne le droit d’ajouter d’autres super administrateurs et administrateurs (auparavant appelés gestionnaires d’abonnements). Pour éviter de perdre l’accès, cette étape doit être effectuée avant la date de migration de votre organisation.
 
-3.  Accès au nouveau portail de gestion des abonnements. Après la migration de votre organisation, des e-mails sont envoyés aux nouveaux super administrateurs et administrateurs pour les inviter à accéder au nouveau portail et à commencer la gestion des abonnements.
+3. Accès au nouveau portail de gestion des abonnements. Après la migration de votre organisation, des e-mails sont envoyés aux nouveaux super administrateurs et administrateurs pour les inviter à accéder au nouveau portail et à commencer la gestion des abonnements.
 
 Si vous devez être ajouté au nouveau portail d’administration des abonnements Visual Studio, mais que vous ne savez pas qui est votre contact principal ou destinataire des avis, connectez-vous à [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) pour rechercher cette information. Consultez la rubrique [Rechercher votre contact principal](find-primary-contact.md) pour savoir comment localiser votre contact principal ou votre contact pour les notifications dans le Centre VLSC.
 

@@ -1,7 +1,7 @@
 ---
 title: Créer une installation réseau
 description: Découvrez comment créer un point d’installation réseau pour le déploiement de Visual Studio en entreprise.
-ms.date: 02/12/2019
+ms.date: 02/27/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e25bdc20393c0d3faff5faa72c89bd531972e5d4
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 076782f8f6e5d654c66e6a39f3ffe0342a74c560
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796398"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954019"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Créer une installation réseau de Visual Studio 2017
 
@@ -201,7 +201,7 @@ Si vous devez créer une disposition pour une version antérieure de Visual Stud
 
 ### <a name="how-to-get-support-for-your-offline-installer"></a>Comment obtenir de l’assistance pour votre programme d’installation hors connexion
 
-Si vous rencontrez un problème avec votre installation hors connexion, nous voulons le savoir. Le meilleur moyen de nous en faire part est d’utiliser l’outil [Signaler un problème](../ide/how-to-report-a-problem-with-visual-studio-2017.md). Lorsque vous utilisez cet outil, vous pouvez nous envoyer la télémétrie et des journaux, dont nous avons besoin pour nous aider à diagnostiquer et à résoudre le problème.
+Si vous rencontrez un problème avec votre installation hors connexion, nous voulons le savoir. Le meilleur moyen de nous en faire part est d’utiliser l’outil [Signaler un problème](../ide/how-to-report-a-problem-with-visual-studio.md). Lorsque vous utilisez cet outil, vous pouvez nous envoyer la télémétrie et des journaux, dont nous avons besoin pour nous aider à diagnostiquer et à résoudre le problème.
 
 Nous offrons également une option de support par [**Conversation en direct**](https://visualstudio.microsoft.com/vs/support/#talktous) (en anglais uniquement) pour les problèmes liés à l’installation.
 
@@ -210,6 +210,7 @@ D’autres options de support sont également à votre disposition. Pour en obte
 ## <a name="see-also"></a>Voir aussi
 
 * [Mettre à jour une installation réseau de Visual Studio 2017](update-a-network-installation-of-visual-studio.md)
+* [Contrôler les mises à jour applicables aux déploiements de Visual Studio à partir du réseau](controlling-updates-to-visual-studio-deployments.md)
 * [Guide de l’administrateur Visual Studio](visual-studio-administrator-guide.md)
 * [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [ID de charge de travail et de composant Visual Studio](workload-and-component-ids.md)

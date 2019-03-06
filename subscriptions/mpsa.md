@@ -7,12 +7,12 @@ ms.date: 03/14/2018
 ms.topic: conceptual
 description: Abonnements Visual Studio dans un programme MPSA (Microsoft Products and Services Agreement)
 searchscope: VS Subscription
-ms.openlocfilehash: 59332dcc1d993df414a9c5981778767adaf155e9
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: cf0a6c0c7f09cefa70edd0af1dcedf46afdf81bf
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841668"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953805"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Abonnements Visual Studio dans un programme MPSA (Microsoft Products and Services Agreement)
 
@@ -29,21 +29,22 @@ Un locataire non managé est un locataire sans aucun administrateur interne qui 
 Avant de terminer l’association du locataire, voici quelques exigences/étapes nécessaires pour devenir administrateur des abonnements Visual Studio.
 
 ## <a name="pre-tenant-association-managed-tenant"></a>Association prélocataire (locataire managé)
--   Vous devez être un utilisateur inscrit auprès du portail Business Center.
--   Vous devez être administrateur d’utilisateurs (au minimum) ou administrateur général au sein du locataire dont vous faites partie. (Cela s’applique si votre entreprise utilise déjà des services cloud). Chaque rôle est nécessaire pour être administrateur des abonnements Visual Studio.
--   Vous devez être administrateur général dans le locataire dont vous faites partie pour être en mesure d’associer votre compte d’achats à un locataire.
--   Vous devez être administrateur de compte ou gestionnaire de comptes dans Business Center.
--   Le champ « Pays ou région » au sein de votre profil utilisateur (et tout autre utilisateur) dans [Azure](https://portal.azure.com/) doit être rempli de façon appropriée selon votre région (autrement dit, États-Unis, CA, etc.).
+
+- Vous devez être un utilisateur inscrit auprès du portail Business Center.
+- Vous devez être administrateur d’utilisateurs (au minimum) ou administrateur général au sein du locataire dont vous faites partie. (Cela s’applique si votre entreprise utilise déjà des services cloud). Chaque rôle est nécessaire pour être administrateur des abonnements Visual Studio.
+- Vous devez être administrateur général dans le locataire dont vous faites partie pour être en mesure d’associer votre compte d’achats à un locataire.
+- Vous devez être administrateur de compte ou gestionnaire de comptes dans Business Center.
+- Le champ « Pays ou région » au sein de votre profil utilisateur (et tout autre utilisateur) dans [Azure](https://portal.azure.com/) doit être rempli de façon appropriée selon votre région (autrement dit, États-Unis, CA, etc.). 
 
 > [!NOTE]
 > Les utilisateurs qui vont devenir administrateurs des abonnements Visual Studio ne sont pas nécessairement des utilisateurs de Business Center, car ils doivent uniquement répondre aux critères des étapes 2 et 5.
 
 Une fois que vous répondez aux critères de l’étape 5 ci-dessus, vous pouvez continuer à associer votre compte d’achats à un locataire en suivant les étapes ci-dessous.
-1.  Connectez-vous à [Business Center](https://businessaccount.microsoft.com/).
-2.  Cliquez sur l’onglet **Compte** et sélectionnez **Associate Domains** (Associer les domaines).
-3.  Sélectionnez votre **compte d’achats** (si vous en avez plusieurs).
-4.  Sélectionnez votre **locataire** (autrement dit, contoso.onmicrosoft.com).
-5.  Cliquez sur **Associate Domain** (Associer le domaine).
+1. Connectez-vous à [Business Center](https://businessaccount.microsoft.com/).
+2. Cliquez sur l’onglet **Compte** et sélectionnez **Associate Domains** (Associer les domaines).
+3. Sélectionnez votre **compte d’achats** (si vous en avez plusieurs).
+4. Sélectionnez votre **locataire** (autrement dit, contoso.onmicrosoft.com).
+5. Cliquez sur **Associate Domain** (Associer le domaine).
 
 Lors de l’association, tous les utilisateurs répondant aux critères requis sont généralement provisionnés en tant qu’administrateurs des abonnements Visual Studio en quelques minutes. Toutefois, dans certains cas, cela peut prendre jusqu’à 24 heures. Une fois provisionné, vous êtes en mesure d’accéder au portail d’administration des abonnements Visual Studio. Si cette opération dure plus de 24 heures, contactez le support MPSA.
 

@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: b6a79982159c20d1d9634cd04117c859f8c69275
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: e34a1a65e168b92f5002fc52586cae8967b46d3a
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294225"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953873"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Se connecter à Visual Studio pour Mac
 
@@ -34,7 +34,7 @@ Pour vous connecter à Visual Studio pour Mac, procédez comme suit :
 
     Vous ne pouvez pas utiliser les informations d’identification Xamarin pour vous connecter à Visual Studio pour Mac.
 
-3.  Une fois connecté, vous allez voir votre type de licence. Dans cette boîte de dialogue, vous pouvez ajouter des comptes Microsoft supplémentaires que vous souhaitez utiliser :
+3. Une fois connecté, vous allez voir votre type de licence. Dans cette boîte de dialogue, vous pouvez ajouter des comptes Microsoft supplémentaires que vous souhaitez utiliser :
 
     ![Connexion réussie](media/signing-in-image14.png)
 

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ff769fa7625ee1798088953a04113ffb8ed74d8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1c79f70129a21ab28c653ecfbef5e00a8050d9b0
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944258"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323463"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Arguments de ligne de commande pour Help Content Manager
 
@@ -57,7 +57,7 @@ Le tableau suivant définit les commutateurs et les arguments que vous pouvez ut
 |/membership|Non|-   **Minimum** : installe un ensemble minimum de contenu d’aide sur la référence que vous spécifiez à l’aide du commutateur /skuId. Le mappage entre le SKU et l’ensemble de contenu est exposé dans l’API de service.<br />-   **Recommended** : installe un ensemble de livres recommandés pour la référence que vous spécifiez à l’aide de l’argument /skuId. La source d’installation est l’API de service ou le *.MSHA*.<br />-   **Full** : installe le jeu complet de livres pour la référence que vous spécifiez à l’aide de l’argument /skuId. La source d’installation est l’API de service ou le *.MSHA*.|
 |/locationpath|Non|Spécifie le dossier par défaut du contenu d’aide locale. Vous devez utiliser ce commutateur uniquement pour installer ou déplacer le contenu. Si vous spécifiez ce commutateur, vous devez également spécifier le commutateur /silent.|
 |/silent|Non|Installe ou supprime le contenu d’aide sans questionner l’utilisateur ou afficher d’élément d’interface utilisateur tel que l’icône dans la zone de notification d’état. La sortie est stockée dans un fichier, dans le répertoire *%Temp%*. **Important :**  Pour installer le contenu en mode silencieux, vous devez utiliser les fichiers signés numériquement *.cab*, pas les fichiers *.mshc*.|
-|/launchingApp|Non|Définit l’application et le contexte de catalogue lorsque la visionneuse d’aide est lancée sans application parente. Les arguments pour ce commutateur sont *CompanyName*, *ProductName* et *VersionNumber* (par exemple, `/launchingApp Microsoft,VisualStudio,15.0`).<br /><br /> Cet argument est requis pour installer le contenu avec le paramètre /silent.|
+|/launchingApp|Non|Définit l’application et le contexte de catalogue lorsque la visionneuse d’aide est lancée sans application parente. Les arguments pour ce commutateur sont *CompanyName*, *ProductName* et *VersionNumber* (par exemple, `/launchingApp Microsoft,VisualStudio,16.0`).<br /><br /> Cet argument est requis pour installer le contenu avec le paramètre /silent.|
 |/wait *secondes*|Non|Suspend les opérations d’installation, de désinstallation et d’actualisation. Si une opération est en cours pour le catalogue, le processus attend jusqu’au nombre donné de secondes pour continuer. Utilisez 0 pour une attente indéfinie.|
 |/?|Non|Répertorie les commutateurs, ainsi que leur description, de l’outil en ligne de commande pour le gestionnaire de contenu d’aide.|
 

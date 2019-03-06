@@ -7,12 +7,12 @@ ms.date: 07/12/2018
 ms.topic: conceptual
 description: Découvrez comment intégrer correctement votre organisation aux abonnements Visual Studio après la migration vers le portail d’administration.
 searchscope: VS Subscription
-ms.openlocfilehash: 1862361ec6ce38acc3376d972c29d56c5aa7bd51
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 3916fd762e9a2feaaa4892e4233d08a345db44a1
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842154"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954226"
 ---
 # <a name="onboard-to-the-visual-studio-subscriptions-administration-portal-after-your-organization-is-migrated"></a>Effectuer l’intégration au portail d’administration des abonnements Visual Studio après la migration de votre organisation
 
@@ -24,9 +24,9 @@ Toutefois, les abonnements sont désormais gérés via un nouveau portail appel�
 
 Vous pouvez rencontrer un des cas suivants :
 
-1. [Le contact principal n’a pas effectué le processus d’intégration.](#Onboarding-not-completed-by-Primary-Contact)<sup>1</sup>
-2. [Le contact principal a effectué l’intégration, mais ne vous a pas ajouté en tant qu’administrateur. Vos informations d’identification ont été répertoriées dans VLSC.](#Primary-Contact-did-not-provide-you-administrator-access)
-3. [Le contact principal a effectué l’intégration, mais ne vous a pas ajouté en tant qu’administrateur. Vos informations d’identification n’ont pas été répertoriées dans VLSC.](#Your-credentials-were-not-listed-in-VLSC-prior-to-migration)
+1. [Le contact principal n’a pas terminé le processus d’intégration.](#Onboarding-not-completed-by-Primary-Contact)<sup>1</sup> 
+2. [Le contact principal a effectué l’intégration, mais ne vous a pas ajouté en tant qu’administrateur. Vos informations d’identification ont été répertoriées dans VLSC.](#Primary-Contact-did-not-provide-you-administrator-access) 
+3. [Le contact principal a effectué l’intégration, mais ne vous a pas ajouté en tant qu’administrateur. Vos informations d’identification n’ont pas été répertoriées dans VLSC.](#Your-credentials-were-not-listed-in-VLSC-prior-to-migration)  
 
 <sup>1</sup> Si vous êtes le contact principal ou le destinataire des notifications et que vous n’avez pas terminé le processus d’intégration, vous devez suivre les étapes du scénario un afin de configurer de votre organisation.
 
