@@ -11,28 +11,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba235f98ce0c6f8016463c86635eff0c4178ff4f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2602996e6c823888b272129ea0c2414534a4e1f7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992462"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613932"
 ---
 # <a name="getting-started-with-performance-tools"></a>Bien démarrer avec les outils d’analyse des performances
 
-Visual Studio propose plusieurs façons de collecter, afficher et analyser les données de performances du code. Dans de nombreux cas, le meilleur moyen de bien démarrer avec les outils de performances consiste à utiliser les paramètres par défaut de l’**Assistant Performance**. L’Assistant collecte des statistiques d’application qui peuvent pointer vers les problèmes de performances de votre code.  
-  
+Visual Studio propose plusieurs façons de collecter, afficher et analyser les données de performances du code. Dans de nombreux cas, le meilleur moyen de bien démarrer avec les outils de performances consiste à utiliser les paramètres par défaut de l’**Assistant Performance**. L’Assistant collecte des statistiques d’application qui peuvent pointer vers les problèmes de performances de votre code.
+
 - Des avertissements de performances qui vous informent des problèmes de codage courants s’affichent dans la fenêtre **Liste d’erreurs** de Visual Studio. Les avertissements vous permettent d’accéder à votre code source ainsi qu’à des rubriques d’aide détaillées qui vous aideront à écrire du code plus efficace.
 
-- Des rapports de performances offrent des vues des différents niveaux de votre structure d’application, des lignes de code source et des processus. Des rapports de performances affichent les données d’exécution d’application, des fonctions appelantes et appelées d’une fonction spécifique jusqu’à l’arborescence des appels de l’application entière.  
-  
-Pour profiler rapidement un projet, une application ou un site web ASP.NET, sélectionnez **Déboguer** > **Profileur de performances**, puis **Assistant Performance**. Pour obtenir des instructions détaillées, consultez [Guide du débutant en profilage des performances](../profiling/beginners-guide-to-cpu-sampling.md) et [Guide pratique pour collecter les données de performances d’un site web](../profiling/how-to-collect-performance-data-for-a-web-site.md).  
+- Des rapports de performances offrent des vues des différents niveaux de votre structure d’application, des lignes de code source et des processus. Des rapports de performances affichent les données d’exécution d’application, des fonctions appelantes et appelées d’une fonction spécifique jusqu’à l’arborescence des appels de l’application entière.
 
-Pour spécifier et configurer manuellement une session de profilage des performances, sélectionnez **Déboguer** > **Profiler** > **Explorateur de performances**. Utilisez le dossier **Cibles** et les pages de **Propriétés** dans l’**Explorateur de performances** pour configurer des sessions. Pour obtenir des instructions, consultez [Guide pratique pour créer manuellement des sessions de performance](../profiling/how-to-manually-create-performance-sessions.md).  
-  
+Pour profiler rapidement un projet, une application ou un site web ASP.NET, sélectionnez **Déboguer** > **Profileur de performances**, puis **Assistant Performance**. Pour obtenir des instructions détaillées, consultez [Guide du débutant en profilage des performances](../profiling/beginners-guide-to-cpu-sampling.md) et [Guide pratique pour collecter les données de performances d’un site web](../profiling/how-to-collect-performance-data-for-a-web-site.md).
+
+Pour spécifier et configurer manuellement une session de profilage des performances, sélectionnez **Déboguer** > **Profiler** > **Explorateur de performances**. Utilisez le dossier **Cibles** et les pages de **Propriétés** dans l’**Explorateur de performances** pour configurer des sessions. Pour obtenir des instructions, consultez [Guide pratique pour créer manuellement des sessions de performance](../profiling/how-to-manually-create-performance-sessions.md).
+
 **Voir aussi :**
-  
- [Présentations des outils d’analyse des performances](../profiling/overviews-performance-tools.md)   
- [Analyse des données des outils d’analyse des performances](../profiling/analyzing-performance-tools-data.md)   
- [Utilisation des règles de performance pour analyser des données](../profiling/using-performance-rules-to-analyze-data.md)   
- [Configuration de sessions de performance](../profiling/configuring-performance-sessions.md)
+
+- [Vues d’ensemble des outils d’analyse des performances](../profiling/overviews-performance-tools.md)
+- [Analyse des données des outils d’analyse des performances](../profiling/analyzing-performance-tools-data.md)
+- [Utilisation des règles de performance pour analyser des données](../profiling/using-performance-rules-to-analyze-data.md)
+- [Configuration de sessions de performance](../profiling/configuring-performance-sessions.md)

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76e2d85cd1417d7700841b3d035255317f2581a0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 77da53856e0562d036fade431dd0deba0376fe9f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959419"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624969"
 ---
 # <a name="performance-session-properties"></a>Propriétés d’une session de performance
 
@@ -38,7 +38,7 @@ Pour plus d'informations, voir :
 
 [Collecter les données liées à l’allocation et à la durée de vie de la mémoire .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
- [Guide pratique pour définir les options de nom de fichier des données de performances](../profiling/how-to-set-performance-data-file-name-options.md)
+- [Guide pratique pour définir les options de nom de fichier des données de performances](../profiling/how-to-set-performance-data-file-name-options.md)
 
 ## <a name="launch"></a>Lancer
 
@@ -111,6 +111,6 @@ Pour plus d'informations, voir :
 
 ## <a name="see-also"></a>Voir aussi
 
-[Vues d’ensemble](../profiling/overviews-performance-tools.md)  
-[Configurer des sessions de performances](../profiling/configuring-performance-sessions.md)  
-[Contrôler la collecte des données](../profiling/controlling-data-collection.md)
+[Vues d’ensemble](../profiling/overviews-performance-tools.md)
+[Configurer des sessions de performances](../profiling/configuring-performance-sessions.md)
+[Contrôler la collecte de données](../profiling/controlling-data-collection.md)

@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 591c8d37a7403aefd74a5ca0ccfeeef6dea5967c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e8278448c1b10062c3e030d763d1cf4e37f9cc7e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928115"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681749"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Outils de détection et de gestion des instances de Visual Studio
 
@@ -44,7 +44,7 @@ C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -p
 ```
 
 >[!TIP]
->Pour plus d’informations sur l’installation de Visual Studio 2017, consultez les [articles de blog de Heath Stewart](https://blogs.msdn.microsoft.com/heaths/tag/vs2017/).
+>Pour plus d’informations sur l’installation de Visual Studio 2017, consultez les [archives d’installation de Visual Studio](https://devblogs.microsoft.com/setup/tag/vs2017/).
 
 ## <a name="editing-the-registry-for-a-visual-studio-instance"></a>Modification du Registre pour une instance de Visual Studio
 

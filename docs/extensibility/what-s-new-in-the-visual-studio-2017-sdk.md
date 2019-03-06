@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3d149a7cec711e59909ff21944ed52e3c074113
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: caa7593c85351512e683f2cf93adeb3211e3e4d8
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710173"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323917"
 ---
 # <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>Ce que&#39;s dans le Kit de développement logiciel Visual Studio 2017
 
@@ -31,7 +31,7 @@ Le nouveau format prend en charge :
 
 Pour en savoir plus sur ces modifications, consultez les rubriques suivantes :
 
-* [Modifications apportées à l’extensibilité pour 2017](breaking-changes-2017.md)
+* [Modifications apportées à l’extensibilité pour Visual Studio 2017](breaking-changes-2017.md)
 * [Prise en charge de Ngen dans VSIX v3](ngen-support.md)
 * [Installer en dehors du dossier d’extensions](set-install-root.md)
 * [Forum aux questions pour l’extensibilité de Visual Studio 2017](faq-2017.md)

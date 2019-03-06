@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e63919a13a948f7e6be2d2789aa778bd39514e51
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 37025177c026d0b6578644ca5765a6878be984ea
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54950830"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625684"
 ---
 # <a name="cpu-and-windows-counters"></a>Compteurs UC et Windows
 
@@ -129,7 +129,7 @@ L’outil en ligne de commande [VSPerfCmd](../profiling/vsperfcmd.md) permet de 
 
 ## <a name="see-also"></a>Voir aussi
 
-[Vues d’ensemble](../profiling/overviews-performance-tools.md)  
-[Guide pratique pour choisir des événements d’échantillonnage](../profiling/how-to-choose-sampling-events.md)  
-[Guide pratique pour collecter les données des compteurs de processeur](../profiling/how-to-collect-cpu-counter-data.md)  
+[Vues d’ensemble](../profiling/overviews-performance-tools.md)
+[Guide pratique pour choisir des événements d’échantillonnage](../profiling/how-to-choose-sampling-events.md)
+[Guide pratique pour collecter les données des compteurs CPU](../profiling/how-to-collect-cpu-counter-data.md)
 [Guide pratique pour collecter les données des compteurs Windows](../profiling/how-to-collect-windows-counter-data.md)

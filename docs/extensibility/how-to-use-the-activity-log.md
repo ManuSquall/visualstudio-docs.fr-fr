@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae4b85aa39f2323ed3e4a4353b28239a015ae7f7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5cb2453d42517982cc1dd1e2a2f5c51814496392
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719273"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324011"
 ---
 # <a name="how-to-use-the-activity-log"></a>Procédure : Utiliser le journal d’activité
 Les VSPackages peuvent écrire des messages dans le journal d’activité. Cette fonctionnalité est particulièrement utile pour déboguer les VSPackages dans les environnements de vente au détail.
@@ -46,7 +46,9 @@ Les VSPackages peuvent écrire des messages dans le journal d’activité. Cette
 
 1. Exécuter Visual Studio avec le [/Log](../ide/reference/log-devenv-exe.md) commutateur de ligne de commande pour écrire ActivityLog.xml sur le disque pendant votre session.
 
-2. Après la fermeture de Visual Studio, recherchez le journal d’activité dans le sous-dossier data de Visual Studio :  <em>*%AppData%</em>\Microsoft\VisualStudio\15.0\ActivityLog.xml*.
+2. Après la fermeture de Visual Studio, recherchez le journal d’activité dans le sous-dossier data de Visual Studio :
+
+   <em>*%AppData%</em>\Microsoft\VisualStudio\\\<version>\ActivityLog.xml*.
 
 3. Ouvrez le journal d’activité avec n’importe quel éditeur de texte. Voici une entrée de type :
 
@@ -55,11 +57,13 @@ Les VSPackages peuvent écrire des messages dans le journal d’activité. Cette
    ```
 
 ## <a name="robust-programming"></a>Programmation fiable
- Étant donné que le journal d’activité est un service, le journal d’activité n’est pas disponible dans le constructeur de VSPackage.
 
- Vous devez obtenir le journal d’activité juste avant l’écriture dans celle-ci. Ne pas mettre en cache ou enregistrer le journal d’activité pour une utilisation ultérieure.
+Étant donné que le journal d’activité est un service, le journal d’activité n’est pas disponible dans le constructeur de VSPackage.
+
+Vous devez obtenir le journal d’activité juste avant l’écriture dans celle-ci. Ne pas mettre en cache ou enregistrer le journal d’activité pour une utilisation ultérieure.
 
 ## <a name="see-also"></a>Voir aussi
+
 - [/Log (devenv.exe)](../ide/reference/log-devenv-exe.md)
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>
 - <xref:Microsoft.VisualStudio.Shell.Interop.__ACTIVITYLOG_ENTRYTYPE>

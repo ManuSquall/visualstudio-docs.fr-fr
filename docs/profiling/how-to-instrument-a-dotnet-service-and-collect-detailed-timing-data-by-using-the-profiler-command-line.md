@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0c329755c1468d0ced5ab7f85335086a2388e21c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 57cc289b64db3cd4f22fd549ea9b28046f7f652b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54933281"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638983"
 ---
 # <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Procédure : Instrumenter un service .NET et collecter des données de temporisation détaillées en utilisant la ligne de commande du profileur
 
@@ -20,7 +20,7 @@ Cet article explique comment utiliser les Outils de profilage en ligne de comman
 
 > [!NOTE]
 > Vous ne pouvez pas profiler un service avec la méthode d’instrumentation si le service ne peut pas être redémarré après le démarrage de l’ordinateur, comme un service qui démarre seulement quand le système d’exploitation démarre.
-> 
+>
 > Pour obtenir le chemin des outils de profilage, consultez [Spécifier le chemin des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
 >
 > Pour ajouter des données d’interaction de couche à une exécution de profilage, vous devez utiliser des procédures spécifiques avec les outils de profilage en ligne de commande. Consultez [Collecter les données d’interaction de couche](../profiling/adding-tier-interaction-data-from-the-command-line.md).
@@ -108,5 +108,5 @@ Vous devez redémarrer l’ordinateur pour que les nouveaux paramètres d’envi
 
 ## <a name="see-also"></a>Voir aussi
 
-[Profiler des services](../profiling/command-line-profiling-of-services.md)  
-[Vues de données de la méthode d'instrumentation](../profiling/instrumentation-method-data-views.md)
+[Profiler des services](../profiling/command-line-profiling-of-services.md)
+[Vues de données de la méthode d’instrumentation](../profiling/instrumentation-method-data-views.md)

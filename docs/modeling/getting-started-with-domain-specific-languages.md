@@ -7,19 +7,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05d085ca32363888e2c59748aa5fdfd19eb190d5
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 24567262eff261638a6004817d4d0eef51537fd6
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316793"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223505"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Bien démarrer avec les langages spécifiques à un domaine
 
 Cette rubrique explique les concepts de base dans la définition et utilisation d’un langage spécifique à un domaine (DSL) créé avec le SDK de modélisation pour Visual Studio.
 
 > [!NOTE]
-> Dans Visual Studio 2017, le SDK de Transformation de modèle de texte et le SDK de modélisation de Visual Studio sont installés automatiquement lorsque vous installez des fonctionnalités spécifiques de Visual Studio. Pour plus d’informations, consultez [ce billet de blog](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> Le SDK de Transformation de modèle de texte et le SDK de modélisation de Visual Studio sont installés automatiquement lorsque vous installez des fonctionnalités spécifiques de Visual Studio. Pour plus d’informations, consultez [ce billet de blog](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
 Si vous ne connaissez pas DSL, nous vous recommandons de collaborer via le **atelier des outils DSL**, que vous trouverez dans ce site : [SDK de création et de modélisation](http://go.microsoft.com/fwlink/?LinkID=186128)
 
@@ -29,7 +29,7 @@ Un langage spécifique à un domaine est une notation, en général graphique, q
 
 Lorsque vous avez conçu une solution DSL, vous pouvez le distribuer dans le cadre d’un package d’Extension d’intégration Visual Studio (VSIX). Les utilisateurs travaillent avec la solution DSL dans Visual Studio :
 
-![Diagramme d’arbre généalogique, boîte à outils et explorateur](../modeling/media/familyt_instance.png)
+![Diagramme d'arbre généalogique, boîte à outils et explorateur](../modeling/media/familyt_instance.png)
 
 La notation n'est qu’une partie d’une solution DSL. Avec la notation, votre package VSIX inclut des outils que les utilisateurs peuvent appliquer pour les aider à modifier et générer le matériel à partir de leurs modèles.
 
@@ -277,7 +277,7 @@ Renommez les classes de domaine existants et les relations. Par exemple, à part
 
 6. Dans un fichier .tt, vous pouvez ajouter le code qui obtient les propriétés de chaque personne.
 
-   ![Diagramme d’arbre généalogique, boîte à outils et explorateur](../modeling/media/familyt_instance.png)
+   ![Diagramme d'arbre généalogique, boîte à outils et explorateur](../modeling/media/familyt_instance.png)
 
 ### <a name="define-new-classes"></a>Définir de nouvelles Classes
  Vous pouvez ajouter des classes de domaine et les relations à un modèle. Par exemple, vous pouvez créer une nouvelle classe pour représenter les villes et une nouvelle relation pour représenter qu’une personne vécu dans une ville.
@@ -303,7 +303,7 @@ Renommez les classes de domaine existants et les relations. Par exemple, à part
 
     1.  Cliquez sur le **relation de référence** d’outils, cliquez sur une personne et puis cliquez sur Ville.
 
-         ![Fragment de définition DSL : racine d’arbre généalogique](../modeling/media/familyt_root.png)
+         ![Fragment de définition DSL : racine d'arbre généalogique](../modeling/media/familyt_root.png)
 
         > [!NOTE]
         >  Référence représentent des références croisées à partir d’une partie de l’arborescence du modèle vers un autre.
@@ -328,7 +328,7 @@ Renommez les classes de domaine existants et les relations. Par exemple, à part
 
     2.  Utilisez le **mappage d’élément de diagramme** outil pour lier le nouveau connecteur à la relation entre personne et ville.
 
-         ![Définition d’arbre généalogique avec mappage de forme ajouté](../modeling/media/familyt_shapemap.png)
+         ![Définition d'arbre généalogique avec mappage de forme ajouté](../modeling/media/familyt_shapemap.png)
 
 6.  Créer un outil d’élément pour effectuer une nouvelle ville.
 

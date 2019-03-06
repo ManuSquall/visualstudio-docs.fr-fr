@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d8633eeae377fa511aee105d674d03d418dd1e9
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 1570590a37e76301305159a4249165b1a20c475a
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317144"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223323"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Mesurer l’utilisation de la mémoire dans Visual Studio
 
@@ -164,7 +164,7 @@ Le rapport des modifications ajoute des colonnes (marquées par la mention **(Di
 
 [Analyser l’UC et la mémoire pendant le débogage](https://devblogs.microsoft.com/visualstudio/analyze-cpu-memory-while-debugging/)
 
-[Blog Visual C++ : Profilage de la mémoire dans Visual C++ 2015](https://blogs.msdn.microsoft.com/vcblog/2015/10/21/memory-profiling-in-visual-c-2015/)
+[Blog Visual C++ : Profilage de la mémoire dans Visual C++ 2015](https://devblogs.microsoft.com/cppblog/memory-profiling-in-visual-c-2015/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

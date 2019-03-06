@@ -18,18 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d88c8197cc93a2c898ecbf19d52127061b73604
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 130683b114c4601de209ec5f86b7b6f3e8bed027
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936575"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56597242"
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>ItemDefinitionGroup, élément (MSBuild)
 L’élément `ItemDefinitionGroup` vous permet de définir un ensemble de définitions d’élément, correspondant à des valeurs de métadonnées appliquées par défaut à tous les éléments du projet. ItemDefinitionGroup évite d’avoir à utiliser les tâches [CreateItem](../msbuild/createitem-task.md) et [CreateProperty](../msbuild/createproperty-task.md). Pour plus d’informations, consultez [Définitions d’éléments](../msbuild/item-definitions.md).
 
-\<Project>  
-\<ItemDefinitionGroup>
+\<Project> \<ItemDefinitionGroup>
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -83,5 +82,5 @@ L’exemple de code suivant définit deux éléments de métadonnées, m et n, d
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)   
-[Éléments](../msbuild/msbuild-items.md)
+- [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
+- [Éléments](../msbuild/msbuild-items.md)

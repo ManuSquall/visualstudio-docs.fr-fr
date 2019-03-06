@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ab421e4a74b76d8caf8edba159b640c9313215c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dbdc92ff0d8a4020c664de527b60e95ed6113329
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55006084"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635096"
 ---
 # <a name="collect-net-memory-allocation-and-lifetime-data"></a>Collecter les données liées à l’allocation et à la durée de vie de la mémoire .NET
 
@@ -79,6 +79,6 @@ Les tâches du tableau suivant correspondent aux options de la boîte de dialogu
 
 ## <a name="see-also"></a>Voir aussi
 
-[Configurer des sessions de performances](../profiling/configuring-performance-sessions.md)  
-[Guide pratique pour choisir des méthodes de collecte](../profiling/how-to-choose-collection-methods.md)  
+[Configurer des sessions de performances](../profiling/configuring-performance-sessions.md)
+[Guide pratique pour choisir des méthodes de collecte](../profiling/how-to-choose-collection-methods.md)
 [Propriétés d’une session de performance](../profiling/performance-session-properties.md)

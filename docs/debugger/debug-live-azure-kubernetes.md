@@ -9,16 +9,16 @@ helpviewer_keywords:
 author: poppastring
 ms.author: madownie
 manager: andster
-monikerRange: vs-2019
+monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 437c9a6d75df3c063a53bda0549c22fd0cbc0876
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 21142ada9b8a922e5a66a673eae1059a845f6231
+ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627946"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007291"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>Déboguer les Services Kubernetes Azure live ASP.NET à l’aide du débogueur de capture instantanée
 

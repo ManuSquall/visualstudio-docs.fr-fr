@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb64e988f88546efafc26ffe8bcc39441e20cd4f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 018c71be69efa7b68f08cb0d320633b82be9832d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918613"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635083"
 ---
 # <a name="understand-performance-collection-methods"></a>Présenter les méthodes de collecte des performances
 
@@ -131,5 +131,5 @@ Données d’interaction de couche collectées par les outils de profilage
 
 ## <a name="see-also"></a>Voir aussi
 
-[Guide pratique pour collecter des données de performances pour un site web](../profiling/how-to-collect-performance-data-for-a-web-site.md)  
+[Guide pratique pour collecter des données de performances pour un site web](../profiling/how-to-collect-performance-data-for-a-web-site.md)
 [Guide du débutant en profilage des performances](../profiling/beginners-guide-to-performance-profiling.md)

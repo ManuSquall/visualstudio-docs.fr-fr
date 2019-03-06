@@ -18,60 +18,59 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae63602b1892bca722ae8eb5e2052c103597fb6e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 607c5f2c3cda64e7407203b0c45287a58342b807
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941189"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622915"
 ---
 # <a name="propertygroup-element-msbuild"></a>Élément PropertyGroup (MSBuild)
-Contient un ensemble d’éléments [Property](../msbuild/property-element-msbuild.md) définis par l’utilisateur. Chaque élément `Property` utilisé dans un projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] doit être un enfant d’un élément `PropertyGroup`.  
+Contient un ensemble d’éléments [Property](../msbuild/property-element-msbuild.md) définis par l’utilisateur. Chaque élément `Property` utilisé dans un projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] doit être un enfant d’un élément `PropertyGroup`.
 
- \<Project>  
- \<PropertyGroup >  
+ \<Project> \<PropertyGroup>
 
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntaxe
 
-```xml  
-<PropertyGroup Condition="'String A' == 'String B'">  
-    <Property1>...</Property1>  
-    <Property2>...</Property2>  
-</PropertyGroup>  
-```  
+```xml
+<PropertyGroup Condition="'String A' == 'String B'">
+    <Property1>...</Property1>
+    <Property2>...</Property2>
+</PropertyGroup>
+```
 
-## <a name="attributes-and-elements"></a>Attributs et éléments  
- Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
+## <a name="attributes-and-elements"></a>Attributs et éléments
+ Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.
 
-### <a name="attributes"></a>Attributs  
+### <a name="attributes"></a>Attributs
 
-|Attribut|Description|  
-|---------------|-----------------|  
-|Condition|Attribut facultatif.<br /><br /> Condition à évaluer. Pour plus d’informations, consultez l’article [Conditions (Conditions MSBuild)](../msbuild/msbuild-conditions.md).|  
+|Attribut|Description|
+|---------------|-----------------|
+|Condition|Attribut facultatif.<br /><br /> Condition à évaluer. Pour plus d’informations, consultez l’article [Conditions (Conditions MSBuild)](../msbuild/msbuild-conditions.md).|
 
-### <a name="child-elements"></a>Éléments enfants  
+### <a name="child-elements"></a>Éléments enfants
 
-|Élément|Description|  
-|-------------|-----------------|  
-|[Property](../msbuild/property-element-msbuild.md)|Élément facultatif.<br /><br /> Nom de propriété défini par l’utilisateur, qui contient la valeur de propriété. Un élément `PropertyGroup` peut ne contenir aucun élément *Property* ou en contenir plusieurs.|  
+|Élément|Description|
+|-------------|-----------------|
+|[Property](../msbuild/property-element-msbuild.md)|Élément facultatif.<br /><br /> Nom de propriété défini par l’utilisateur, qui contient la valeur de propriété. Un élément `PropertyGroup` peut ne contenir aucun élément *Property* ou en contenir plusieurs.|
 
-### <a name="parent-elements"></a>Éléments parents  
+### <a name="parent-elements"></a>Éléments parents
 
 | Élément | Description |
 | - | - |
 | [Projet](../msbuild/project-element-msbuild.md) | Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
 
-## <a name="example"></a>Exemple  
- L’exemple de code suivant montre comment définir des propriétés en fonction d’une condition. Dans cet exemple, si la valeur de la propriété `CompileConfig` est `DEBUG`, les propriétés `Optimization`, `Obfuscate` et `OutputPath` contenues dans l’élément `PropertyGroup` sont définies.  
+## <a name="example"></a>Exemple
+ L’exemple de code suivant montre comment définir des propriétés en fonction d’une condition. Dans cet exemple, si la valeur de la propriété `CompileConfig` est `DEBUG`, les propriétés `Optimization`, `Obfuscate` et `OutputPath` contenues dans l’élément `PropertyGroup` sont définies.
 
-```xml  
-<PropertyGroup Condition="'$(CompileConfig)' == 'DEBUG'" >  
-    <Optimization>false</Optimization>  
-    <Obfuscate>false</Obfuscate>  
-    <OutputPath>$(OutputPath)\debug</OutputPath>  
-</PropertyGroup>  
-```  
+```xml
+<PropertyGroup Condition="'$(CompileConfig)' == 'DEBUG'" >
+    <Optimization>false</Optimization>
+    <Obfuscate>false</Obfuscate>
+    <OutputPath>$(OutputPath)\debug</OutputPath>
+</PropertyGroup>
+```
 
-## <a name="see-also"></a>Voir aussi  
- [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)  
- [Propriétés MSBuild](../msbuild/msbuild-properties.md)
+## <a name="see-also"></a>Voir aussi
+- [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
+- [Propriétés MSBuild](../msbuild/msbuild-properties.md)

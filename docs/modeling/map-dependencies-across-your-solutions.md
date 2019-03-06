@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30eb3183d261297295d9d6d3715f3683e4b6ee34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6e060f168ea301b898fe578ac0d5030a2ae7e774
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950225"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223700"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Mapper les dépendances des cartes de code
 
@@ -47,7 +47,7 @@ Vous pouvez mapper les dépendances de code dans les langues suivantes :
 
 ## <a name="install-code-map-and-live-dependency-validation"></a>Carte de Code d’installation et de Validation des dépendances en direct
 
-Pour créer une carte de code dans Visual Studio 2017, installez d’abord le **carte de Code** et **Validation de dépendances dynamique** composants :
+Pour créer une carte de code dans Visual Studio, installez d’abord le **carte de Code** et **Validation de dépendances dynamique** composants :
 
 1. Ouvrez **programme d’installation de Visual Studio**. Vous pouvez l’ouvrir dans le menu Démarrer de Windows, ou dans Visual Studio en sélectionnant **outils** > **obtenir les outils et fonctionnalités**.
 

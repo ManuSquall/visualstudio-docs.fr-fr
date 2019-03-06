@@ -1,18 +1,18 @@
 ---
 title: Conseils de productivité
-ms.date: 11/04/2016
+ms.date: 2/21/2019
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 860583dffd4076db9c4c4660928b75419bd36218
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6b2b2aca59fccee30f017c7679d16c7b32f23c44
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913026"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702718"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Conseils de productivité pour Visual Studio
 
@@ -66,11 +66,13 @@ Vous pouvez rechercher des commandes, des fichiers et des options dans l’IDE e
 
 - **Afficher uniquement les erreurs que vous souhaitez traiter**. Si vous sélectionnez le bouton **Filtre** dans la barre d’outils **Liste d’erreurs**, vous pouvez réduire le nombre d’erreurs qui s’affichent dans la fenêtre **Liste d’erreurs**. Vous pouvez afficher uniquement les erreurs des fichiers ouverts dans l'éditeur, uniquement les erreurs du fichier actif ou uniquement les erreurs du projet actif. Vous pouvez également rechercher des erreurs spécifiques dans la fenêtre **Liste d’erreurs**.
 
-- **Rechercher des boîtes de dialogue, commandes de menu et options**. Dans la zone [Lancement rapide](../ide/reference/quick-launch-environment-options-dialog-box.md), entrez les mots clés ou expressions pour les éléments recherchés. Par exemple, les options suivantes apparaissent si vous entrez `new project` :
+- **Rechercher des boîtes de dialogue, commandes de menu et options**. Dans la zone de recherche [Lancement rapide](../ide/reference/quick-launch-environment-options-dialog-box.md), entrez les mots clés ou expressions correspondant aux éléments recherchés. Par exemple, les options suivantes apparaissent si vous entrez `new project` :
 
     ![Résultats du lancement rapide pour « nouveau projet »](../ide/media/productivity_quicklaunch.png)
 
     **Lancement rapide** affiche notamment des liens vers les boîtes de dialogue **Nouveau projet** et **Ajouter un nouvel élément**, ainsi que vers la page **Projets et solutions** dans la boîte de dialogue **Options**. Les résultats de lancement rapide peuvent également inclure des fichiers de projet et des fenêtres Outil.
+
+  La zone de recherche **Lancement rapide** s’affiche dans le coin supérieur droit de l’IDE. (Vous pouvez également appuyer sur **Ctrl**+**Q** pour y accéder.)
 
 ## <a name="debug-code"></a>Déboguer du code
 

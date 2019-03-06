@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: e85ca90dac30ad348dfeb91357ded153c1764a16
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6cd61304e150da63d2d461ef364e7039789c71fc
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927813"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223084"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Supprimer les avertissements d’analyse du code
 
@@ -33,7 +33,7 @@ En C / c++ / CLI, utilisez les macros autorité de certification\_supprimer\_MES
 > Vous ne devez pas utiliser les suppressions dans la source sur les versions release, pour empêcher les métadonnées de suppression à la source d’expédition accidentellement. En outre, en raison du coût de traitement de la suppression à la source, les performances de votre application peuvent se dégrader.
 
 > [!NOTE]
-> Si vous migrez un projet vers Visual Studio 2017, vous pourrez soudainement être confronté à un grand nombre d’avertissements d’analyse du code. Provenant de ces avertissements [analyseurs de Roslyn](roslyn-analyzers-overview.md). Si vous n’êtes pas prêt à résoudre les avertissements, vous pouvez supprimer tous les en choisissant **analyser** > **exécuter l’analyse du Code et supprimer les problèmes actifs**.
+> Si vous migrez un projet vers Visual Studio 2017 ou Visual Studio 2019, vous pourrez soudainement être confronté à un grand nombre d’avertissements d’analyse du code. Provenant de ces avertissements [analyseurs de Roslyn](roslyn-analyzers-overview.md). Si vous n’êtes pas prêt à résoudre les avertissements, vous pouvez supprimer tous les en choisissant **analyser** > **exécuter l’analyse du Code et supprimer les problèmes actifs**.
 >
 > ![Exécuter l’analyse du code et supprimer des problèmes dans Visual Studio](media/suppress-active-issues.png)
 

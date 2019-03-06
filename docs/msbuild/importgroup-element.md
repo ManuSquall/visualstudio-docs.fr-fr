@@ -16,62 +16,61 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97d5aeac5115dfa251b42c824b88a779e22ad6a4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3dd0b9fc5ef9441e867d5103bbb722a3628ffc78
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978332"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610526"
 ---
 # <a name="importgroup-element"></a>ImportGroup, élément
-Contient une collection d’éléments `Import` regroupés sous une condition facultative. Pour plus d’informations, consultez [Import, élément (MSBuild)](../msbuild/import-element-msbuild.md).  
+Contient une collection d’éléments `Import` regroupés sous une condition facultative. Pour plus d’informations, consultez [Import, élément (MSBuild)](../msbuild/import-element-msbuild.md).
 
- \<Project>  
- \<ImportGroup>  
+ \<Project> \<ImportGroup>
 
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntaxe
 
-```xml  
-<ImportGroup Condition="'String A' == 'String B'">  
-    <Import ... />  
-    <Import ... />  
-</ImportGroup>  
-```  
+```xml
+<ImportGroup Condition="'String A' == 'String B'">
+    <Import ... />
+    <Import ... />
+</ImportGroup>
+```
 
-## <a name="attributes-and-elements"></a>Attributs et éléments  
- Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
+## <a name="attributes-and-elements"></a>Attributs et éléments
+ Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.
 
-### <a name="attributes"></a>Attributs  
+### <a name="attributes"></a>Attributs
 
-|Attribut|Description|  
-|---------------|-----------------|  
-|`Condition`|Attribut facultatif.<br /><br /> Condition à évaluer. Pour plus d’informations, consultez l’article [Conditions (Conditions MSBuild)](../msbuild/msbuild-conditions.md).|  
+|Attribut|Description|
+|---------------|-----------------|
+|`Condition`|Attribut facultatif.<br /><br /> Condition à évaluer. Pour plus d’informations, consultez l’article [Conditions (Conditions MSBuild)](../msbuild/msbuild-conditions.md).|
 
-### <a name="child-elements"></a>Éléments enfants  
+### <a name="child-elements"></a>Éléments enfants
 
-|Élément|Description|  
-|-------------|-----------------|  
-|[Import](../msbuild/import-element-msbuild.md)|Importe le contenu d’un fichier projet dans un autre fichier projet.|  
+|Élément|Description|
+|-------------|-----------------|
+|[Import](../msbuild/import-element-msbuild.md)|Importe le contenu d’un fichier projet dans un autre fichier projet.|
 
-### <a name="parent-elements"></a>Éléments parents  
+### <a name="parent-elements"></a>Éléments parents
 
 | Élément | Description |
 | - | - |
 | [Projet](../msbuild/project-element-msbuild.md) | Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
 
-## <a name="example"></a>Exemple  
- L’exemple de code suivant illustre l’élément `ImportGroup`.  
+## <a name="example"></a>Exemple
+ L’exemple de code suivant illustre l’élément `ImportGroup`.
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <ImportGroup>  
-        <Import Project="$(Targets1.targets)" />  
-        <Import Project="$(Targets2.targets)" />  
-    </ImportGroup>  
-...  
-</Project>  
-```  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ImportGroup>
+        <Import Project="$(Targets1.targets)" />
+        <Import Project="$(Targets2.targets)" />
+    </ImportGroup>
+...
+</Project>
+```
 
-## <a name="see-also"></a>Voir aussi  
- [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)   
- [Éléments](../msbuild/msbuild-items.md)
+## <a name="see-also"></a>Voir aussi
+- [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
+- [Éléments](../msbuild/msbuild-items.md)

@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 02/12/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: cae109ef815e837026bc12366a5902d7d151edcb
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 1a7ba3101713c4461f3d3558a97cdbea37eac604
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56319465"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428568"
 ---
 # <a name="xamarin-mobile-app-development"></a>Développement d’applications mobiles Xamarin
 
@@ -28,7 +28,7 @@ Pour plus d’informations sur Android Designer, consultez le guide de [présent
 
 ## <a name="ios"></a>iOS
 
-Le concepteur iOS est entièrement intégré à Visual Studio pour Mac et permet la modification visuelle des fichiers .xib et Storyboard pour créer des interfaces utilisateur et des transitions iOS, tvOS et WatchOS. L’interface utilisateur toute entière peut être créée à l’aide de la fonctionnalité de glisser-déplacer entre la boîte à outils et l’aire de conception, tout en utilisant une approche intuitive pour la gestion des événements. Le concepteur iOS prend aussi en charge [custom controls/xamarin/ios/user-interface/designer/ios-designable-controls-overview) avec l’avantage supplémentaire du rendu au moment du design.
+Le concepteur iOS est entièrement intégré à Visual Studio pour Mac et permet la modification visuelle des fichiers .xib et Storyboard pour créer des interfaces utilisateur et des transitions iOS, tvOS et WatchOS. L’interface utilisateur toute entière peut être créée à l’aide de la fonctionnalité de glisser-déplacer entre la boîte à outils et l’aire de conception, tout en utilisant une approche intuitive pour la gestion des événements. Le concepteur iOS prend également en charge les [contrôles personnalisés](/xamarin/ios/user-interface/designer/ios-designable-controls-overview) avec l’avantage supplémentaire du rendu au moment du design.
 
 ![Concepteur de Storyboard iOS](media/intro-image30.png)
 

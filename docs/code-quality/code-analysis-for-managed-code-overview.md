@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0da99377a6e0f5405029c0ac194484de3a3a1c90
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 38a2bce9e3343c4439eaf033ccfb8d6e58b01baa
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909139"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222595"
 ---
 # <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Vue d’ensemble de l’analyse statique du code pour le code managé dans Visual Studio
 
-Visual Studio 2017 peut effectuer une analyse de code du code managé de deux manières : avec *FxCop* analyse statique d’assemblys managés et avec les plus modernes *analyseurs de Roslyn*. Cette rubrique traite de l’analyse du code statique FxCop. Pour en savoir plus sur l’analyse du code à l’aide des analyseurs de code, consultez [analyseurs de vue d’ensemble de Roslyn](../code-quality/roslyn-analyzers-overview.md).
+Visual Studio peut effectuer une analyse de code du code managé de deux manières : avec *FxCop* analyse statique d’assemblys managés et avec les plus modernes *analyseurs de Roslyn*. Cette rubrique traite de l’analyse du code statique FxCop. Pour en savoir plus sur l’analyse du code à l’aide des analyseurs de code, consultez [analyseurs de vue d’ensemble de Roslyn](../code-quality/roslyn-analyzers-overview.md).
 
 L'outil d'analyse du code managé analyse les assemblys et signale les informations à leur sujet, notamment les violations des règles de programmation et de design présentées dans les règles de conception de Microsoft .NET Framework.
 
@@ -59,21 +59,21 @@ Public class MyClass
 Pour plus d’informations, consultez [supprimer les avertissements](../code-quality/in-source-suppression-overview.md).
 
 > [!NOTE]
-> Si vous migrez un projet vers Visual Studio 2017, vous pourrez soudainement être confronté à un grand nombre d’avertissements d’analyse du code. Si vous n’êtes pas prêt à résoudre les avertissements et souhaitent être plus productifs tout de suite, vous pouvez *baseline* l’état d’analyse de votre projet. À partir de la **analyser** menu, sélectionnez **exécuter l’analyse du Code et supprimer les problèmes actifs**.
+> Si vous migrez un projet vers Visual Studio 2017 ou Visual Studio 2019, vous pourrez soudainement être confronté à un grand nombre d’avertissements d’analyse du code. Si vous n’êtes pas prêt à résoudre les avertissements et souhaitent être plus productifs tout de suite, vous pouvez *baseline* l’état d’analyse de votre projet. À partir de la **analyser** menu, sélectionnez **exécuter l’analyse du Code et supprimer les problèmes actifs**.
 
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>Exécuter l’analyse du code dans le cadre de la stratégie d’archivage
 
-En tant qu'organisation, vous pourriez demander à ce que tous les archivages respectent certaines stratégies. En particulier, vous souhaitez vous assurer que vous suivez ces règles :
+En tant qu’organisation, vous pourriez demander à ce que tous les archivages respectent certaines stratégies. En particulier, vous souhaitez vous assurer que vous suivez ces règles :
 
 - Il n’y a aucune erreur de build dans le code en cours d’archivage.
 
 - Analyse du code est exécutée dans le cadre de la build la plus récente.
 
-Vous pouvez l’effectuer en spécifiant des stratégies d’archivage. Pour plus d’informations, consultez [améliorant la qualité du Code avec les stratégies d’archivage de projet](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md).
+Vous pouvez l'effectuer en spécifiant des stratégies d'archivage. Pour plus d’informations, consultez [améliorant la qualité du Code avec les stratégies d’archivage de projet](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md).
 
 ## <a name="team-build-integration"></a>Intégration de Team build
 
-Vous pouvez utiliser les fonctionnalités intégrées du système de génération pour exécuter l’outil d’analyse dans le cadre du processus de génération. Pour plus d’informations, consultez [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
+Vous pouvez utiliser les fonctionnalités intégrées du système de génération pour exécuter l'outil d'analyse dans le cadre du processus de génération. Pour plus d’informations, consultez [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
 ## <a name="see-also"></a>Voir aussi
 

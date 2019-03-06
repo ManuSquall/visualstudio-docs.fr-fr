@@ -7,22 +7,23 @@ ms.date: 03/13/2018
 ms.topic: conceptual
 description: Découvrez les responsabilités des administrateurs des abonnements.
 searchscope: VS Subscription
-ms.openlocfilehash: ca1dc2dd7a2232a85a7e6aefece63272bb0039fc
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 98806d2927c2a4dd6ff597ac12b9580d40ccaad7
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842349"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954478"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Vue d’ensemble des responsabilités des administrateurs
 En tant qu’administrateur, vous avez la possibilité de gérer les abonnements pour votre organisation.  Le rôle d’administrateur a également la responsabilité de vérifier que les abonnements sont gérés conformément aux termes du contrat de licence. Cet article présente les responsabilités, les avantages et les limitations du rôle d’administrateur.
 
 ## <a name="roles--responsibilities"></a>Rôles et responsabilités
 Quatre principales responsabilités incombent à un administrateur Visual Studio :
-1.  **Comprendre les avantages et restrictions des abonnements Visual Studio.** Bien comprendre vos avantages peut vous permettre de réduire les coûts en terme de matériel par l’utilisation des services cloud, et de réduire les coûts en termes de logiciels avec des licences par utilisateur pour les environnements de préproduction.
-2.  **Attribuer des abonnements Visual Studio à des personnes spécifiques nommées et encourager leur utilisation.** Votre contrat exige que les abonnements Visual Studio soient attribués à des personnes spécifiques nommées. Vérifiez auprès des personnes auxquelles un abonnement a été attribué qu’elles accèdent aux avantages inclus dans leur abonnement Visual Studio et qu’elles en exploitent tout le potentiel.
-3.  **Faire un inventaire précis de votre environnement de préproduction.** Cette opération est essentielle pour garantir que tous les utilisateurs qui interagissent avec des logiciels sous licence Visual Studio disposent des licences appropriées avec leur propre abonnement Visual Studio.
-4.  **Effectuer le suivi des changements d’attributions d’utilisateurs et acquérir des licences supplémentaires dans les délais.** Les contrats de licence en volume Microsoft et MPSA vous donnent toute la souplesse nécessaire pour utiliser et attribuer des abonnements Visual Studio. En retour, vous êtes censé effectuer le suivi des changements apportés à l’utilisation des logiciels et des attributions d’utilisateurs, et traiter les commandes de licences supplémentaires selon la planification indiquée dans le contrat.
+
+1. **Comprendre les avantages et restrictions des abonnements Visual Studio.** Bien comprendre vos avantages peut vous permettre de réduire les coûts en terme de matériel par l’utilisation des services cloud, et de réduire les coûts en termes de logiciels avec des licences par utilisateur pour les environnements de préproduction. 
+2. **Attribuer des abonnements Visual Studio à des personnes spécifiques nommées et encourager leur utilisation.** Votre contrat exige que les abonnements Visual Studio soient attribués à des personnes spécifiques nommées. Vérifiez auprès des personnes auxquelles un abonnement a été attribué qu’elles accèdent aux avantages inclus dans leur abonnement Visual Studio et qu’elles en exploitent tout le potentiel.
+3. **Faire un inventaire précis de votre environnement de préproduction.** Cette opération est essentielle pour garantir que tous les utilisateurs qui interagissent avec des logiciels sous licence Visual Studio disposent des licences appropriées avec leur propre abonnement Visual Studio. 
+4. **Effectuer le suivi des changements d’attributions d’utilisateurs et acquérir des licences supplémentaires dans les délais.** Les contrats de licence en volume Microsoft et MPSA vous donnent toute la souplesse nécessaire pour utiliser et attribuer des abonnements Visual Studio. En retour, vous êtes censé effectuer le suivi des changements apportés à l’utilisation des logiciels et des attributions d’utilisateurs, et traiter les commandes de licences supplémentaires selon la planification indiquée dans le contrat.
 
 ## <a name="benefits-and-limitations"></a>Avantages et limitations
 Les abonnements Visual Studio permettent aux membres de l’équipe de développement d’installer et d’utiliser des logiciels pour concevoir, développer, tester, évaluer et présenter d’autres logiciels. Les logiciels des abonnements Visual Studio ne sont pas concédés sous licence pour les environnements de production.
@@ -70,9 +71,10 @@ Les administrateurs d’abonnements Visual Studio sont censés effectuer le suiv
 - Un utilisateur interagit avec le logiciel Visual Studio.
 
 Votre obligation d’effectuer l’achat est déterminée par la **limite supérieure d’utilisation**. Cette limite est le point culminant en attributions d’utilisateurs par jour ou en utilisateurs qui interagissent avec le logiciel Visual Studio, la valeur la plus élevée l’emportant.
-1.  Les administrateurs d’abonnements Visual Studio peuvent augmenter la limite supérieure d’utilisation en attribuant des abonnements Visual Studio à des personnes individuelles.
-2.  Les administrateurs d’abonnements Visual Studio peuvent réattribuer des abonnements d’un abonné à un autre si 90 jours se sont écoulés depuis l’attribution initiale. Pour éviter une limite artificielle, effectuez toujours cette opération en supprimant tout d’abord l’abonnement existant, puis en ajoutant le nouveau.
-3.  Les administrateurs d’abonnements Visual Studio peuvent modifier le niveau d’abonnement attribué pour une personne, ce qui constituerait une diminution dans une attribution et une augmentation dans une autre. Quand vous réduisez le niveau d’abonnement attribué d’un abonné, la personne doit immédiatement cesser d’utiliser tout ce qui se trouve uniquement dans l’abonnement de niveau supérieur et le désinstaller.
+
+1. Les administrateurs d’abonnements Visual Studio peuvent augmenter la limite supérieure d’utilisation en attribuant des abonnements Visual Studio à des personnes individuelles.
+2. Les administrateurs d’abonnements Visual Studio peuvent réattribuer des abonnements d’un abonné à un autre si 90 jours se sont écoulés depuis l’attribution initiale. Pour éviter une limite artificielle, effectuez toujours cette opération en supprimant tout d’abord l’abonnement existant, puis en ajoutant le nouveau.
+3. Les administrateurs d’abonnements Visual Studio peuvent modifier le niveau d’abonnement attribué pour une personne, ce qui constituerait une diminution dans une attribution et une augmentation dans une autre. Quand vous réduisez le niveau d’abonnement attribué d’un abonné, la personne doit immédiatement cesser d’utiliser tout ce qui se trouve uniquement dans l’abonnement de niveau supérieur et le désinstaller. 
 
 ### <a name="cloud-subscriptions-open-license-or-open-value"></a>Abonnements cloud, Licence open ou Open Value
 Vous pouvez attribuer des abonnements via un programme comme Abonnements Microsoft cloud, Licence open ou Open Value. Dans ce cas, vous devez traiter votre commande d’utilisateurs supplémentaires au cours du mois où les utilisateurs (employés ou prestataires externes) commencent à interagir avec les logiciels sous licence Visual Studio.

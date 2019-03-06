@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe8de3edf65b67463bb1678f23d71695bc4867b9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: HT
+ms.openlocfilehash: 206b14a1cdab61d64354e134449149b70a030683
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599166"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954491"
 ---
 # <a name="debug-64-bit-applications"></a>Déboguer des applications 64 bits
 Vous pouvez déboguer une application 64 bits qui s'exécute sur l'ordinateur local ou sur un ordinateur distant.
@@ -50,7 +50,7 @@ Vous pouvez déboguer une application 64 bits qui s'exécute sur l'ordinateur lo
 
 -   Un logiciel de sécurité réseau installé sur votre ordinateur altère la fiabilité de la pile de mise en réseau, et il a ignoré des paquets qui passent sur localhost. Essayez de désactiver tous les logiciels de sécurité réseau et voyez si le problème est résolu. Si tel est le cas, signalez à votre fournisseur de logiciels de sécurité réseau que le logiciel interfère avec le trafic de localhost.
 
--   Vous rencontrez un problème de blocage ou de performances avec Visual Studio. Si le problème se produit régulièrement, vous pouvez collecter les dumps de Visual Studio (devenv.exe) et le processus de travail (msvsmon.exe), puis les envoyer à Microsoft. Pour plus d’informations sur le signalement d’un problème, consultez [How to Report a Problem with Visual Studio](../ide/How-to-Report-a-Problem-with-Visual-Studio-2017.md).
+-   Vous rencontrez un problème de blocage ou de performances avec Visual Studio. Si le problème se produit régulièrement, vous pouvez collecter les dumps de Visual Studio (devenv.exe) et le processus de travail (msvsmon.exe), puis les envoyer à Microsoft. Pour plus d’informations sur le signalement d’un problème, consultez [How to Report a Problem with Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="see-also"></a>Voir aussi
 

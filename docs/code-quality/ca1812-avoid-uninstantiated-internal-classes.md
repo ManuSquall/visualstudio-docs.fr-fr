@@ -1,4 +1,4 @@
----
+﻿---
 title: 'CA1812 : Évitez les classes internes non instanciées'
 ms.date: 11/04/2016
 ms.topic: reference

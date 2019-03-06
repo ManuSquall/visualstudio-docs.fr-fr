@@ -26,18 +26,18 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: cd3017768bd44891a6db91020e93ffafcedf6bdc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 49ee21943f63cee3fff35d2bb92817294169c61f
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694606"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223583"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Comment : activer et désactiver Modifier & Continuer (C#, VB, C++)
 
 Vous pouvez activer ou désactiver **Modifier & Continuer** dans Visual Studio **Options** boîte de dialogue au moment du design. **Modifier et Continuer** ne fonctionne que dans les versions Debug. Pour plus d’informations, consultez [Modifier et Continuer](../debugger/edit-and-continue.md).
 
-Pour C++ natif, **Modifier & Continuer** nécessite que vous utilisiez le `/INCREMENTAL` option. Pour plus d’informations sur les fonctionnalités requises en C++, consultez ce [billet de blog](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/) et [Modifier & Continuer (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).
+Pour C++ natif, **Modifier & Continuer** nécessite que vous utilisiez le `/INCREMENTAL` option. Pour plus d’informations sur les fonctionnalités requises en C++, consultez ce [billet de blog](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/) et [Modifier & Continuer (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).
 
 **Pour activer ou désactiver Modifier & Continuer :**
 

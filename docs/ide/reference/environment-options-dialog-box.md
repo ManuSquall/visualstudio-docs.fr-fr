@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c76be48965aa49e0bad61afd0b70a6b8413075ec
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a77fae7d802b0edf5fceaae8409f2e0a91f6687b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952825"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703251"
 ---
 # <a name="environment-options-dialog-box"></a>Environnement, boîte de dialogue Options
 
@@ -35,7 +35,7 @@ Vous pouvez utiliser les pages du dossier **Environnement** de la boîte de dial
 |Pour définir les options de mappage du clavier.|[Clavier, Environnement, boîte de dialogue Options](../../ide/reference/keyboard-environment-options-dialog-box.md)|
 |Pour spécifier si les notifications sont activées.|[Notifications, Environnement, boîte de dialogue Options](../../ide/reference/notifications-environment-options-dialog-box.md)|
 |Pour spécifier les options de la fenêtre Lancement rapide.|[Lancement rapide, Environnement, boîte de dialogue Options](../../ide/reference/quick-launch-environment-options-dialog-box.md)|
-|Pour spécifier les options de la page de démarrage.|[Démarrage, Environnement, boîte de dialogue Options](../../ide/reference/startup-environment-options-dialog-box.md)|
+|Pour spécifier les options de démarrage.|[Démarrage, Environnement, boîte de dialogue Options](../../ide/reference/startup-environment-options-dialog-box.md)|
 |Pour spécifier s'il faut assurer l'itinérance des paramètres sur plusieurs ordinateurs.|[Paramètres synchronisés, Environnement, boîte de dialogue Options](../../ide/reference/accounts-environment-options-dialog-box.md)|
 |Apprendre à définir des options pour les tâches et les listes de tâches|[Liste des tâches, Environnement, boîte de dialogue Options](../../ide/reference/task-list-environment-options-dialog-box.md)|
 |Modifier les pages Accueil et Recherche, changer d'éditeur de code source système et configurer des options d'Internet Explorer.|[Navigateur web, Environnement, boîte de dialogue Options](../../ide/reference/web-browser-environment-options-dialog-box.md)|

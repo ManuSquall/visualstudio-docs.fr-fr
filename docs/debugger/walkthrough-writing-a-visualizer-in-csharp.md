@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0eb372fffac9c9750f5912871e32a987b41e41b6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 45c80500e216041a444b1f6232d8c939132e413d
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042398"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323369"
 ---
-# <a name="walkthrough-writing-a-visualizer-in-c"></a>Procédure pas à pas : Écriture d'un visualiseur en C# #
+# <a name="walkthrough-writing-a-visualizer-in-c"></a>Procédure pas à pas : écriture d’un visualiseur en C\#
 Cette procédure pas à pas explique comment écrire un visualiseur simple à l’aide de C#. Le visualiseur que permet de créer cette procédure pas à pas affiche le contenu d’une chaîne à l’aide d’un message Windows Forms. Ce visualiseur de chaîne simple n’est pas particulièrement utile en soi, mais il montre les étapes de base que vous devez suivre pour créer des visualiseurs plus utiles pour les autres types de données.
 
 > [!NOTE]
@@ -221,7 +221,7 @@ Effectuez les tâches suivantes pour créer un visualiseur.
 
    Félicitations ! Vous venez de générer et de tester votre premier visualiseur.
 
-   Pour utiliser votre visualiseur dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] au lieu de simplement l'appeler de l'atelier de test, vous devez l'installer. Pour plus d'informations, voir [Procédure : Installer un visualiseur](../debugger/how-to-install-a-visualizer.md).
+   Pour utiliser votre visualiseur dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] au lieu de simplement l'appeler de l'atelier de test, vous devez l'installer. Pour plus d’informations, consultez [Comment : installer un visualiseur](../debugger/how-to-install-a-visualizer.md).
 
 ## <a name="create-a-visualizer-using-the-visualizer-item-template"></a>Créer un visualiseur en utilisant le modèle d’élément visualiseur
 

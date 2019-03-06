@@ -4,7 +4,7 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Hebrew character display, creating applications
-- bi-directional language support, about bi-directional language support
+- bidirectional language support, about bidirectional language support
 - Arabic language, creating applications
 ms.assetid: b56f9795-ed8d-4452-9d49-8ca0b0145d86
 author: gewarren
@@ -12,31 +12,31 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aa75ee12e09d4aa56a112a135a2e9e913b5cd39
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 99df6eddcdd6f02e4cce8410762d3c0b9f00f29a
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335231"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450319"
 ---
-# <a name="create-applications-in-bi-directional-languages"></a>Créer des applications dans des langues bidirectionnelles
+# <a name="create-applications-in-bidirectional-languages"></a>Créer des applications dans des langues bidirectionnelles
 
 Vous pouvez utiliser Visual Studio pour créer des applications qui affichent correctement les langues qui s’écrivent de droite à gauche, comme l’arabe et l’hébreu. Pour certaines fonctionnalités, il suffit de définir des propriétés. Dans d’autres cas, vous devez implémenter des fonctionnalités dans le code.
 
 > [!NOTE]
 > Pour entrer et afficher des langues bidirectionnelles, vous devez utiliser une version de Windows configurée avec la langue appropriée. Il peut s’agir d’une version anglaise de Windows sur laquelle est installé le module linguistique correspondant, ou d’une version localisée de Windows.
 
-## <a name="types-of-applications-that-support-bi-directional-languages"></a>Types d’applications qui prennent en charge les langues bidirectionnelles
+## <a name="types-of-applications-that-support-bidirectional-languages"></a>Types d’application qui prennent en charge les langues bidirectionnelles
 
 -  Applications Windows
 
-   Vous pouvez créer des applications entièrement bidirectionnelles prenant en charge le texte bidirectionnel, l’ordre de lecture de droite à gauche et la mise en miroir (c’est-à-dire l’inversement de la disposition des fenêtres, des menus, des boîtes de dialogue, etc.). À l’exception de la mise en miroir, ces fonctionnalités sont disponibles par défaut ou en tant que paramètres de propriété. La mise en miroir est prise en charge par défaut pour certaines fonctionnalités, telles que les boîtes de message. Dans d’autres cas, vous devez implémenter la mise en miroir dans votre code. Pour plus d’informations, consultez la page [Prise en charge bidirectionnelle pour les applications Windows Forms](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications).
+   Vous pouvez créer des applications entièrement bidirectionnelles prenant en charge le texte bidirectionnel, l’ordre de lecture de droite à gauche et la mise en miroir (c’est-à-dire l’inversion de la disposition des fenêtres, des menus, des boîtes de dialogue, etc.). À l’exception de la mise en miroir, ces fonctionnalités sont disponibles par défaut ou en tant que paramètres de propriété. La mise en miroir est prise en charge par défaut pour certaines fonctionnalités, telles que les boîtes de message. Dans d’autres cas, vous devez implémenter la mise en miroir dans votre code. Pour plus d’informations, consultez la page sur la [prise en charge bidirectionnelle des applications Windows Forms](/dotnet/framework/winforms/advanced/bidirectional-support-for-windows-forms-applications).
 
 -  Applications web
 
-   Les services web prennent en charge l’envoi et la réception de texte UTF-8 et Unicode. Ils sont donc adaptés aux applications qui comportent des langues bidirectionnelles. Les applications clientes web s’appuient sur les navigateurs pour leur interface utilisateur. Le degré de prise en charge bidirectionnelle d’une application web dépend donc de celui du navigateur du client. Dans Visual Studio, vous pouvez créer des applications avec prise en charge de l’arabe ou de l’hébreu, de l’ordre de lecture de droite à gauche, de l’encodage des fichiers et des paramètres de culture locale. Pour plus d’informations, consultez la page [Prise en charge bidirectionnelle pour les applications web ASP.NET](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03).
+   Les services web prennent en charge l’envoi et la réception de texte UTF-8 et Unicode. Ils sont donc adaptés aux applications qui comportent des langues bidirectionnelles. Les applications clientes web s’appuient sur les navigateurs pour leur interface utilisateur. Le degré de prise en charge des fonctionnalités bidirectionnelles d’une application web dépend donc de celui du navigateur de l’utilisateur. Dans Visual Studio, vous pouvez créer des applications avec prise en charge de l’arabe ou de l’hébreu, de l’ordre de lecture de droite à gauche, de l’encodage des fichiers et des paramètres de culture locale. Pour plus d’informations, consultez la page [Prise en charge bidirectionnelle pour les applications web ASP.NET](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03).
 
-Les applications console ne prennent pas en charge le texte en langue bidirectionnelle. Cela est dû à la façon dont Windows fonctionne avec les applications console.
+Les applications console ne prennent pas en charge le texte des langues bidirectionnelles. Cela est dû à la façon dont Windows fonctionne avec les applications console.
 
 ## <a name="fully-supported-features"></a>Fonctionnalités entièrement prises en charge
 
@@ -48,7 +48,7 @@ Dans Visual Studio, au moment du design, vous pouvez utiliser les langues bidire
 
 - **Noms d’objets**
 
-   Vous pouvez utiliser les langues bidirectionnelles pour attribuer des noms aux solutions, projets, fichiers, dossiers, etc. Dans le code, vous pouvez utiliser les langues bidirectionnelles pour les noms de variables, de classes, d’objets, d’attributs, de métadonnées et d’autres éléments.
+   Vous pouvez utiliser les langues bidirectionnelles pour affecter des noms aux solutions, projets, fichiers, dossiers, etc. Dans le code, vous pouvez utiliser les langues bidirectionnelles pour les noms de variables, de classes, d’objets, d’attributs, de métadonnées et d’autres éléments.
 
 - **Encodage de fichiers**
 
@@ -62,7 +62,7 @@ Par défaut, les contrôles de d’entrée de texte dans Visual Studio utilisent
 
 - Les cases à cocher, listes déroulantes et autres contrôles des boîtes de dialogue Visual Studio utilisent toujours l’ordre de lecture de gauche à droite.
 
-- L’éditeur de code (et éditeur de texte) ne prend pas en charge l’ordre de lecture de droite à gauche. Vous pouvez entrer du texte dans une langue bidirectionnelle, mais l’ordre de lecture restera de gauche à droite.
+- L’éditeur de code (et éditeur de texte) ne prend pas en charge l’ordre de lecture de droite à gauche. Vous pouvez entrer du texte dans une langue bidirectionnelle, mais l’ordre de lecture reste de gauche à droite.
 
 ## <a name="arabic-or-hebrew-object-names"></a>Noms d’objets en arabe ou en hébreu
 

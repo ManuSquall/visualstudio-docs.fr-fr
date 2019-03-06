@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 02ebd2be3fc7cbb1f0003b2f44023b99cbc0c603
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2ddc50ba84a4fbe66cbcbaaff2e2eb847a8a8ced
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948041"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953238"
 ---
 # <a name="managing-roles-in-azure-cloud-services-with-visual-studio"></a>Gestion des rôles dans Azure Cloud Services avec Visual Studio
 Après avoir créé votre projet de service cloud Azure, vous pouvez ajouter de nouveaux rôles ou supprimer des rôles existants. Vous pouvez également importer un projet existant et le convertir à un rôle. Par exemple, vous pouvez importer une application web ASP.NET et la désigner comme rôle web.
@@ -28,7 +28,7 @@ Les étapes suivantes vous guident dans le processus d’ajout d’un rôle web 
 
 1. Cliquez sur le nœud **Rôles** pour afficher le menu contextuel. Dans le menu contextuel, sélectionnez **Ajouter**, puis sélectionnez un rôle web ou un rôle de travail existant à partir de la solution actuelle, ou créez un projet de rôle web ou de travail. Vous pouvez également sélectionner un projet approprié, par exemple un projet d’application web ASP.NET, et l’associer à un projet de rôle.
 
-    ![Options de menu pour ajouter un rôle à un projet de service cloud Azure](./media/vs-azure-tools-cloud-service-project-managing-roles/add-role.png)
+   ![Options de menu pour ajouter un rôle à un projet de service cloud Azure](./media/vs-azure-tools-cloud-service-project-managing-roles/add-role.png)
 
 ## <a name="removing-a-role-from-an-azure-cloud-service"></a>Suppression d’un rôle à partir d’un service cloud Azure
 Les étapes suivantes vous guident dans le processus de suppression d’un rôle web ou de travail à partir d’un projet de service cloud Azure dans Visual Studio.
@@ -41,7 +41,7 @@ Les étapes suivantes vous guident dans le processus de suppression d’un rôle
 
 1. Cliquez avec le bouton droit sur le nœud que vous souhaitez supprimer, puis, dans le menu contextuel, sélectionnez **Supprimer**.
 
-    ![Options de menu pour ajouter un rôle à un service cloud Azure](./media/vs-azure-tools-cloud-service-project-managing-roles/remove-role.png)
+   ![Options de menu pour ajouter un rôle à un service cloud Azure](./media/vs-azure-tools-cloud-service-project-managing-roles/remove-role.png)
 
 ## <a name="readding-a-role-to-an-azure-cloud-service-project"></a>Réajout d’un rôle à un projet de service cloud Azure
 Si vous supprimez un rôle dans votre projet de service cloud mais décidez ultérieurement de rétablir le rôle dans le projet, seuls la déclaration de rôle et les attributs de base, tels que les informations de diagnostic et les points de terminaison, sont ajoutés. Aucune ressource ou référence supplémentaire n’est ajoutée au fichier `ServiceDefinition.csdef` ou au fichier `ServiceConfiguration.cscfg`. Si vous souhaitez ajouter ces informations, vous devez les ajouter manuellement à ces fichiers.

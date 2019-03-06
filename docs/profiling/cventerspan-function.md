@@ -24,111 +24,105 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7135ce785665bcaf01b209ebc8e9ec094db55f5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8d501f7c1e75f5b63c82c34f2dc0a4913d7a88c7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54922832"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634017"
 ---
 # <a name="cventerspan-function"></a>CvEnterSpan, fonction
-Marque le début d’un nouvel intervalle.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```C  
-HRESULT CvEnterSpanW(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,   
-    _Out_ PCV_SPAN* ppSpan,   
-    _In_ PCWSTR pMessage,  
-    ...   
-    );   
-  
-HRESULT CvEnterSpanA(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,   
-    _Out_ PCV_SPAN* ppSpan,   
-    _In_ PCSTR pMessage,   
-    ...   
-    );   
-  
-HRESULT CvEnterSpanVW(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,   
-    _Out_ PCV_SPAN* ppSpan,   
-    _In_ PCWSTR pMessage,  
-    _In_ va_list argList  
-    );   
-  
-HRESULT CvEnterSpanVA(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,   
-    _Out_ PCV_SPAN* ppSpan,   
-    _In_ PCSTR pMessage,   
-    _In_ va_list argList  
-    );   
-  
-HRESULT CvEnterSpanExW(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,   
-    _In_ CV_IMPORTANCE level,   
-    _In_ int category,   
-    _Out_ PCV_SPAN* ppSpan,   
-    _In_ PCWSTR pMessage,   
-    ...   
-    );   
-  
-HRESULT CvEnterSpanExA(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,   
-    _In_ CV_IMPORTANCE level,   
-    _In_ int category,   
-    _Out_ PCV_SPAN* ppSpan,   
-    _In_ PCSTR pMessage,   
-    ...   
-    );   
-  
-HRESULT CvEnterSpanExVW(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,   
-    _In_ CV_IMPORTANCE level,   
-    _In_ int category,   
-    _Out_ PCV_SPAN* ppSpan,   
-    _In_ PCWSTR pMessage,   
-    _In_ va_list argList);   
-  
-HRESULT CvEnterSpanExVA(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,   
-    _In_ CV_IMPORTANCE level,   
-    _In_ int category,   
-    _Out_ PCV_SPAN* ppSpan,   
-    _In_ PCSTR pMessage,   
-    _In_ va_list argList);  
-  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `argList`  
- Liste d’arguments.  
-  
- `category`  
- Catégorie de l’intervalle  
-  
- `level`  
- Niveau d’importance de l’intervalle.  
-  
- `pMarkerSeries`  
- Contexte valide de la série de marqueurs. Ne peut pas être Null.  
-  
- `pMessage`  
- Chaîne de format de message. Ne peut pas être Null.  
-  
- `ppSpan`  
- Adresse de la variable qui doit contenir l’objet d’intervalle résultant. L’adresse ne peut pas être Null et la variable peut avoir n’importe quelle valeur.  
-  
-## <a name="return-value"></a>Valeur de retour  
- S_OK lorsque le message est correctement écrit. Code d’erreur en cas d’erreur. Utilisez les macros SUCCEEDED/FAILED pour vérifier la condition d’erreur.  
-  
-## <a name="requirements"></a>Spécifications  
- **En-tête :** *cvmarkers.h*  
-  
- **Unicode :** CvEnterSpanW, CvEnterSpanVW, CvEnterSpanExW, CvEnterSpanExVW  
-  
- **ANSI :** CvEnterSpanA, CvEnterSpanVA, CvEnterSpanExA, CvEnterSpanExVW  
-  
-## <a name="see-also"></a>Voir aussi  
- [Informations de référence sur la bibliothèque C++](../profiling/cpp-library-reference.md)
+Marque le début d’un nouvel intervalle.
+
+## <a name="syntax"></a>Syntaxe
+
+```C
+HRESULT CvEnterSpanW(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _Out_ PCV_SPAN* ppSpan,
+    _In_ PCWSTR pMessage,
+    ...
+    );
+
+HRESULT CvEnterSpanA(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _Out_ PCV_SPAN* ppSpan,
+    _In_ PCSTR pMessage,
+    ...
+    );
+
+HRESULT CvEnterSpanVW(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _Out_ PCV_SPAN* ppSpan,
+    _In_ PCWSTR pMessage,
+    _In_ va_list argList
+    );
+
+HRESULT CvEnterSpanVA(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _Out_ PCV_SPAN* ppSpan,
+    _In_ PCSTR pMessage,
+    _In_ va_list argList
+    );
+
+HRESULT CvEnterSpanExW(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ CV_IMPORTANCE level,
+    _In_ int category,
+    _Out_ PCV_SPAN* ppSpan,
+    _In_ PCWSTR pMessage,
+    ...
+    );
+
+HRESULT CvEnterSpanExA(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ CV_IMPORTANCE level,
+    _In_ int category,
+    _Out_ PCV_SPAN* ppSpan,
+    _In_ PCSTR pMessage,
+    ...
+    );
+
+HRESULT CvEnterSpanExVW(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ CV_IMPORTANCE level,
+    _In_ int category,
+    _Out_ PCV_SPAN* ppSpan,
+    _In_ PCWSTR pMessage,
+    _In_ va_list argList);
+
+HRESULT CvEnterSpanExVA(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ CV_IMPORTANCE level,
+    _In_ int category,
+    _Out_ PCV_SPAN* ppSpan,
+    _In_ PCSTR pMessage,
+    _In_ va_list argList);
+
+```
+
+#### <a name="parameters"></a>Paramètres
+ `argList` Liste d’arguments.
+
+ `category` Catégorie de l’intervalle
+
+ `level` Niveau d’importance de l’intervalle.
+
+ `pMarkerSeries` Contexte valide de la série de marqueurs. Ne peut pas être Null.
+
+ `pMessage` Chaîne de format de message. Ne peut pas être Null.
+
+ `ppSpan` Adresse de la variable qui doit contenir l’objet d’intervalle résultant. L’adresse ne peut pas être Null et la variable peut avoir n’importe quelle valeur.
+
+## <a name="return-value"></a>Valeur de retour
+ S_OK lorsque le message est correctement écrit. Code d’erreur en cas d’erreur. Utilisez les macros SUCCEEDED/FAILED pour vérifier la condition d’erreur.
+
+## <a name="requirements"></a>Spécifications
+ **En-tête :** *cvmarkers.h*
+
+ **Unicode :** CvEnterSpanW, CvEnterSpanVW, CvEnterSpanExW, CvEnterSpanExVW
+
+ **ANSI :** CvEnterSpanA, CvEnterSpanVA, CvEnterSpanExA, CvEnterSpanExVW
+
+## <a name="see-also"></a>Voir aussi
+- [Informations de référence sur la bibliothèque C++](../profiling/cpp-library-reference.md)

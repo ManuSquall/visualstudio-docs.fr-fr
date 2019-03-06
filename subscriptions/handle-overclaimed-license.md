@@ -7,12 +7,12 @@ ms.date: 02/13/2018
 ms.topic: conceptual
 description: Découvrez comment les administrateurs peuvent résoudre les problèmes de surutilisation d’abonnements
 searchscope: VS Subscription
-ms.openlocfilehash: aa80a065568cbe7b7f7c3cef1a62fd230c54e751
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 6c48bbc077c3d88e1d83f7fa860f4fc6c55fdcd1
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843696"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953928"
 ---
 # <a name="handling-over-claimed-subscriptions"></a>Gestion des abonnements « surutilisés »
 
@@ -24,9 +24,8 @@ Les commandes sont parfois modifiées après l’ajout des abonnés. Le risque e
 > [!div class="mx-imgBorder"]
 > ![Notification de surutilisation d’abonnements](_img/over-claimed/over-claimed-alert.png)
 
+1. Pour résoudre le problème de surutilisation de licences, cliquez sur le texte de l’alerte. Vous voyez s’afficher une liste filtrée des abonnés pour lesquels le niveau et la date d’expiration de l’abonnement attribué donne lieu à une surutilisation de licences. 
 
-1.  Pour résoudre le problème de surutilisation de licences, cliquez sur le texte de l’alerte. Vous voyez s’afficher une liste filtrée des abonnés pour lesquels le niveau et la date d’expiration de l’abonnement attribué donne lieu à une surutilisation de licences.
+2. Supprimez des abonnés de façon à résoudre le problème de surutilisation des licences. 
 
-2.  Supprimez des abonnés de façon à résoudre le problème de surutilisation des licences.
-
-3.  La vue d’ensemble sur le côté gauche de la page est ensuite actualisée pour montrer qu’il n’y a plus de problème et retirer toutes les notifications de surutilisation.
+3. La vue d’ensemble sur le côté gauche de la page est ensuite actualisée pour montrer qu’il n’y a plus de problème et retirer toutes les notifications de surutilisation. 

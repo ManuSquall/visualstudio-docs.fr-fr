@@ -18,64 +18,62 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5a7ecc4c91dcb39d090c00b7b2ed37bd6bb906c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ff783c76595e1cc79d2520a4e27f5afa01b0a978
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55011895"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603675"
 ---
 # <a name="onerror-element-msbuild"></a>Élément OnError (MSBuild)
-Provoque l’exécution d’une ou de plusieurs cibles si l’attribut `ContinueOnError` est défini sur `false` pour une tâche en échec.  
+Provoque l’exécution d’une ou de plusieurs cibles si l’attribut `ContinueOnError` est défini sur `false` pour une tâche en échec.
 
- \<Project>  
- \<Target>  
- \<OnError>  
+ \<Project> \<Target> \<OnError>
 
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntaxe
 
-```xml  
-<OnError ExecuteTargets="TargetName"  
-    Condition="'String A'=='String B'" />  
-```  
+```xml
+<OnError ExecuteTargets="TargetName"
+    Condition="'String A'=='String B'" />
+```
 
-## <a name="attributes-and-elements"></a>Attributs et éléments  
- Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
+## <a name="attributes-and-elements"></a>Attributs et éléments
+ Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.
 
-### <a name="attributes"></a>Attributs  
+### <a name="attributes"></a>Attributs
 
-|Attribut|Description|  
-|---------------|-----------------|  
-|`Condition`|Attribut facultatif.<br /><br /> Condition à évaluer. Pour plus d’informations, consultez l’article [Conditions (Conditions MSBuild)](../msbuild/msbuild-conditions.md).|  
-|`ExecuteTargets`|Attribut requis.<br /><br /> Les cibles à exécuter si une tâche échoue. Séparez les cibles multiples avec des points-virgules. Les cibles multiples sont exécutées dans l’ordre spécifié.|  
+|Attribut|Description|
+|---------------|-----------------|
+|`Condition`|Attribut facultatif.<br /><br /> Condition à évaluer. Pour plus d’informations, consultez l’article [Conditions (Conditions MSBuild)](../msbuild/msbuild-conditions.md).|
+|`ExecuteTargets`|Attribut requis.<br /><br /> Les cibles à exécuter si une tâche échoue. Séparez les cibles multiples avec des points-virgules. Les cibles multiples sont exécutées dans l’ordre spécifié.|
 
-### <a name="child-elements"></a>Éléments enfants  
- Aucun.  
+### <a name="child-elements"></a>Éléments enfants
+ Aucun.
 
-### <a name="parent-elements"></a>Éléments parents  
+### <a name="parent-elements"></a>Éléments parents
 
 | Élément | Description |
 | - | - |
 | [Target](../msbuild/target-element-msbuild.md) | Élément conteneur des tâches [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
 
-## <a name="remarks"></a>Notes  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] exécute l’élément `OnError` si l’une des tâches de l’élément `Target` échoue avec l’attribut `ContinueOnError` défini sur `ErrorAndStop` (ou `false`). Lorsque la tâche échoue, les cibles spécifiées dans l’attribut `ExecuteTargets` sont exécutées. S’il existe plusieurs éléments `OnError` dans la cible, les éléments `OnError` sont exécutés séquentiellement lorsque la tâche échoue.  
+## <a name="remarks"></a>Remarques
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] exécute l’élément `OnError` si l’une des tâches de l’élément `Target` échoue avec l’attribut `ContinueOnError` défini sur `ErrorAndStop` (ou `false`). Lorsque la tâche échoue, les cibles spécifiées dans l’attribut `ExecuteTargets` sont exécutées. S’il existe plusieurs éléments `OnError` dans la cible, les éléments `OnError` sont exécutés séquentiellement lorsque la tâche échoue.
 
- Pour plus d’informations sur l’attribut `ContinueOnError`, voir [Élément Task (MSBuild)](../msbuild/task-element-msbuild.md). Pour plus d’informations sur les cibles, consultez l’article [MSBuild Targets](../msbuild/msbuild-targets.md) (Cibles MSBuild).  
+ Pour plus d’informations sur l’attribut `ContinueOnError`, voir [Élément Task (MSBuild)](../msbuild/task-element-msbuild.md). Pour plus d’informations sur les cibles, consultez l’article [MSBuild Targets](../msbuild/msbuild-targets.md) (Cibles MSBuild).
 
-## <a name="example"></a>Exemple  
- Le code suivant exécute les tâches `TaskOne` et `TaskTwo`. Si `TaskOne` échoue, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] évalue l’élément `OnError` et exécute la cible `OtherTarget`.  
+## <a name="example"></a>Exemple
+ Le code suivant exécute les tâches `TaskOne` et `TaskTwo`. Si `TaskOne` échoue, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] évalue l’élément `OnError` et exécute la cible `OtherTarget`.
 
-```xml  
-<Target Name="ThisTarget">  
-    <TaskOne ContinueOnError="ErrorAndStop">  
-    </TaskOne>  
-    <TaskTwo>  
-    </TaskTwo>  
-    <OnError ExecuteTargets="OtherTarget" />  
-</Target>  
-```  
+```xml
+<Target Name="ThisTarget">
+    <TaskOne ContinueOnError="ErrorAndStop">
+    </TaskOne>
+    <TaskTwo>
+    </TaskTwo>
+    <OnError ExecuteTargets="OtherTarget" />
+</Target>
+```
 
-## <a name="see-also"></a>Voir aussi  
- [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)   
- [Cibles](../msbuild/msbuild-targets.md)
+## <a name="see-also"></a>Voir aussi
+- [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
+- [Cibles](../msbuild/msbuild-targets.md)

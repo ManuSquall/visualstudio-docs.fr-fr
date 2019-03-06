@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 09/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Découvrez comment vous pouvez utiliser Azure DevOps en tant qu’abonné Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 631683b48faed4e5b967e060b66123aaf685889b
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 01f5f34210b4a562015eb030b9a23ef4d5017add
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380014"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842648"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Avantages Azure DevOps pour les abonnés Visual Studio
 
@@ -49,9 +47,8 @@ En savoir plus sur les fonctionnalités Azure DevOps :
 
 
 
-## <a name="support-resources"></a>Ressources de support technique
+## <a name="support-resources"></a>Ressources de support
 
 - Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 - [Documentation d’Azure DevOps](/azure/devops/).
-

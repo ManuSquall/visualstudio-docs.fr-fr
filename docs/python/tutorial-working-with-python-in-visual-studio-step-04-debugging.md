@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e165362a73a826c608f1ce93bc4ab910050c7b8c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f0496e9319db9351c6315f77886a1a22451a1d14
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948808"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716504"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>Étape 4 : Exécuter du code dans le débogueur
 
@@ -47,12 +47,9 @@ En plus de ses fonctionnalités de gestion de projets, de son expérience utilis
 1. Vérifiez que le code fonctionne correctement en appuyant sur **F5** ou en sélectionnant la commande de menu **Déboguer** > **Démarrer le débogage**. Cette commande exécute le code dans le débogueur mais, comme vous n’avez rien fait pour interrompre le programme pendant son exécution, il affiche simplement un motif de vague pour quelques itérations. Appuyez sur une touche pour fermer la fenêtre de sortie.
 
     > [!Tip]
-    > Pour fermer automatiquement la fenêtre de sortie à la fin du programme, remplacez l’appel `main()` par le code suivant :
+    > Pour fermer automatiquement la fenêtre Sortie à la fin de l’exécution du programme, sélectionnez la commande de menu **Outils** > **Options**, développez le nœud **Python**, sélectionnez **Débogage**, puis désactivez l’option **Attendre une entrée quand le processus quitte de manière habituelle** :
     >
-    > ```python
-    > if __name__ == "__main__":
-    >     sys.exit(int(main() or 0))
-    > ```
+    > ![Option de débogage Python permettant de fermer la fenêtre Sortie quand l’utilisateur quitte le programme normalement](media/vs-getting-started-python-22-debugging5.png)
 
 1. Définissez un point d’arrêt sur la première instruction `for` en cliquant une fois dans la marge grise à gauche en regard de cette ligne, ou en plaçant le point d’insertion dans cette ligne et en utilisant la commande **Déboguer** > **Basculer le point d’arrêt** (**F9**). Un point rouge apparaît dans la marge grise pour indiquer le point d’arrêt (comme indiqué par la flèche) :
 

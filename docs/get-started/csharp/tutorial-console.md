@@ -2,7 +2,7 @@
 title: 'Tutoriel : Créer une application console C# simple'
 description: Découvrez comment créer une application console C# dans Visual Studio, étape par étape.
 ms.custom: seodec18, get-started
-ms.date: 01/25/2019
+ms.date: 02/26/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: CSharp
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 79a29fa8b0d512049bf604668d11ea92e2511984
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 427d6e0bc17f977d54db7e313f5f119662df17c8
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156070"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841172"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutoriel : Créer une application console C# simple dans Visual Studio
 
@@ -39,7 +39,7 @@ Commençons par créer un projet d’application C#. Le type de projet inclut to
 
    ![Modèle de projet d’application console (.NET Core) dans la boîte de dialogue Nouveau projet dans l’IDE de Visual Studio](./media/new-project-csharp-calculator-console-app.png)
 
-### <a name="add-a-workgroup-optional"></a>Ajouter un groupe de travail (facultatif)
+### <a name="add-a-workload-optional"></a>Ajouter une charge de travail (facultatif)
 
 Si vous ne voyez pas le modèle de projet **Application console (.NET Core)**, vous pouvez l’obtenir en ajoutant la charge de travail **Développement multiplateforme .NET Core**. Voici comment procéder.
 
@@ -80,6 +80,7 @@ Commençons par quelques notions mathématiques relatives aux entiers en C#.
             Console.WriteLine(c);
             Console.ReadKey();
     ```
+
 1. Cliquez sur **Calculator** pour exécuter votre programme, ou appuyez sur **F5**.
 
    ![Cliquer sur le bouton Calculator pour exécuter l’application à partir de la barre d’outils](./media/csharp-console-calculator-button.png)
@@ -151,6 +152,7 @@ Continuons en ajoutant un ensemble plus complexe de code de calculatrice à votr
         }
     }
     ```
+
 1. Cliquez sur **Calculator** pour exécuter votre programme, ou appuyez sur **F5**.
 
    ![Cliquer sur le bouton Calculator pour exécuter l’application à partir de la barre d’outils](./media/csharp-console-calculator-button.png)
@@ -382,6 +384,7 @@ Allons-y.
         }
     }
     ```
+
 1. Cliquez sur **Calculator** pour exécuter votre programme, ou appuyez sur **F5**.
 
 1. Suivez les invites et divisez le nombre **42** par le nombre **119**. Votre application doit se présenter comme suit :
@@ -404,7 +407,7 @@ Allons-y.
 
 ## <a name="code-complete"></a>Code terminé
 
-Au cours de ce tutoriel, nous avons apporté de nombreuses modifications à l’application de calculatrice. L’application gère désormais plus efficacement les ressources de calcul, ainsi que la plupart des erreurs d’entrée utilisateur.
+Durant ce tutoriel, nous avons apporté de nombreux changements à l’application de calculatrice. L’application gère désormais plus efficacement les ressources de calcul, ainsi que la plupart des erreurs d’entrée utilisateur.
 
 Voici le code complet, au même endroit :
 

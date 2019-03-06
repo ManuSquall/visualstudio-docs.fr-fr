@@ -10,16 +10,16 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d765d9d4299821b0e940311cdb9d73b96b59327b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c439c5bbd35f4ece7ad57302737835622409b353
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692058"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323586"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ Project system d’extensibilité et ensemble d’outils integration
 
-Le *système de projet Visual C++* est utilisé pour les fichiers .vcxproj. Il est basé sur le [Visual Studio Common Project System (CPS)](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md) et fournit supplémentaires, des points d’extension spécifique de C++ pour faciliter l’intégration de nouveaux jeux d’outils, des architectures de build et des plateformes cibles.
+Le système de projet Visual C++ est utilisé pour les fichiers .vcxproj. Il est basé sur le [Visual Studio Common Project System (CPS)](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md) et fournit supplémentaires, des points d’extension spécifique de C++ pour faciliter l’intégration de nouveaux jeux d’outils, des architectures de build et des plateformes cibles.
 
 ## <a name="c-msbuild-targets-structure"></a>Structure de cibles de MSBuild de C++
 
@@ -55,7 +55,7 @@ Ces fichiers définissent peu de choses par eux-mêmes. Au lieu de cela, ils imp
 
 Ces valeurs de propriété spécifient les noms de dossiers sous le `$(VCTargetsPath)` dossier racine :
 
-> `$(VCTargetsPath)`\\ &nbsp;&nbsp;&nbsp;&nbsp;*Type d’application* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(ApplicationType)` \\ &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationTypeRevision)`\\ &nbsp;&nbsp;&nbsp;< C58 > &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *Plates-formes* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)` \\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</C158><spanclass="notranslate">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *Ensemble* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)` &nbsp;&nbsp;&nbsp;&nbsp;</C252>plateformes</span>\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Used when `$(ApplicationType)` is empty, for Windows Desktop projects) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Ensemble*\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`
+`$(VCTargetsPath)`\\ &nbsp;&nbsp;&nbsp;&nbsp;*Type d’application* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(ApplicationType)` \\ &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationTypeRevision)`\\ &nbsp;&nbsp;&nbsp;< C58 > &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *Plates-formes* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)` \\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</C158><spanclass="notranslate">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *Ensemble* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)` &nbsp;&nbsp;&nbsp;&nbsp;</C252>plateformes</span>\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Used when `$(ApplicationType)` is empty, for Windows Desktop projects) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`
 
 ### <a name="add-a-new-platform-toolset"></a>Ajouter un nouvel ensemble d’outils de plateforme
 
@@ -81,34 +81,33 @@ Pour ajouter un nouveau type d’application, créez un *MyApplicationType* doss
 
 `$(ApplicationType)` et `$(ApplicationTypeRevision)` propriétés ne sont pas visibles dans l’interface utilisateur. Ils sont définis dans les modèles de projet et ne peut pas être modifiées une fois que le projet est créé.
 
-
 ## <a name="the-vcxproj-import-tree"></a>L’arborescence d’importation .vcxproj
 
 Une arborescence simplifiée des importations pour les fichiers de cibles et les propriétés de Microsoft C++ ressemble à :
 
-> `$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(MSBuildExtensionsPath)` \\ `$(MSBuildToolsVersion)` \\ *Microsoft.Common.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportBefore*\\*par défaut* \\ \*. *props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Type d’Application* \\ `$(ApplicationType)` \\ *Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Type d’Application* \\ `$(ApplicationType)` \\ `$(ApplicationTypeRevision)` \\ *Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Type d’application*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*plateformes* \\ `$(Platform)` \\ *Platform.default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportAfter*\\*par défaut*\\\*. *props*
+`$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(MSBuildExtensionsPath)` \\ `$(MSBuildToolsVersion)` \\ *Microsoft.Common.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportBefore*\\*par défaut* \\ \*. *props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Type d’Application* \\ `$(ApplicationType)` \\ *Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Type d’Application* \\ `$(ApplicationType)` \\ `$(ApplicationTypeRevision)` \\ *Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Type d’application*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*plateformes* \\ `$(Platform)` \\ *Platform.default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportAfter*\\*par défaut*\\\*. *props*
 
 Ne définissent pas les projets Windows Desktop `$(ApplicationType)`, donc ils importent uniquement
 
-> `$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(MSBuildExtensionsPath)` \\ `$(MSBuildToolsVersion)` \\ *Microsoft.Common.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportBefore*\\*par défaut* \\ \*. *props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *plateformes* \\ `$(Platform)` \\ *Platform.default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportAfter* \\  *Par défaut*\\\*. *props*
+`$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(MSBuildExtensionsPath)` \\ `$(MSBuildToolsVersion)` \\ *Microsoft.Common.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportBefore*\\*par défaut* \\ \*. *props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *plateformes* \\ `$(Platform)` \\ *Platform.default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportAfter* \\  *Par défaut*\\\*. *props*
 
 Nous allons utiliser le `$(_PlatformFolder)` propriété permettant de contenir le `$(Platform)` emplacements de dossier de plateforme. Cette propriété est
 
-> `$(VCTargetsPath)`\\*Plateformes*\\`$(Platform)`
+`$(VCTargetsPath)`\\*Plateformes*\\`$(Platform)`
 
 pour les applications de bureau Windows, et
 
-> `$(VCTargetsPath)`\\*Type d’application*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*plateformes*\\`$(Platform)`
+`$(VCTargetsPath)`\\*Type d’application*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*plateformes*\\`$(Platform)`
 
 pour tout le reste.
 
 Les fichiers props sont importés dans cet ordre :
 
-> `$(VCTargetsPath)`\\*Microsoft.Cpp.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *Platform.props* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Microsoft.Cpp.Platform.props* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *ImportBefore* \\\*. *props* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *Ensemble*\\`$(PlatformToolset)`\\*Toolset.props* &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\ *</c152>ImportAfter<spanclass="notranslate">*\\\*. *props</span>*
+`$(VCTargetsPath)`\\*Microsoft.Cpp.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *Platform.props* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Microsoft.Cpp.Platform.props* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *ImportBefore* \\\*. *props* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *Ensemble*\\`$(PlatformToolset)`\\*Toolset.props* &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\ *</c152>ImportAfter<spanclass="notranslate">*\\\*. *props</span>*
 
 Les fichiers cibles sont importés dans cet ordre :
 
-> `$(VCTargetsPath)`\\*Microsoft.Cpp.targets* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Microsoft.Cpp.Current.targets* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *Platform.targets* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Microsoft.Cpp.Platform.targets*  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</c102><spanclass="notranslate">&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*. *cibles* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *Ensemble* \\ `$(PlatformToolset)` \\ *Toolset.target* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *ImportAfter* \\\*. *cibles</span>*
+`$(VCTargetsPath)`\\*Microsoft.Cpp.targets* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Microsoft.Cpp.Current.targets* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *Platform.targets* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Microsoft.Cpp.Platform.targets*  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</c102><spanclass="notranslate">&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*. *cibles* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *Ensemble* \\ `$(PlatformToolset)` \\ *Toolset.target* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *ImportAfter* \\\*. *cibles</span>*
 
 Si vous devez définir certaines propriétés par défaut pour votre boîte à outils, vous pouvez ajouter des fichiers dans les dossiers ImportBefore et ImportAfter appropriés.
 
@@ -361,7 +360,9 @@ Actuellement, la ligne de commande généré par le `CLCommandLine` tâche utili
 
 Si vous ajoutez une cible qui s’exécute avant la compilation, ordinaires ou au moment du design, assurez-vous qu’il ne s’arrête pas au moment du design génère ou affecter les performances. Pour tester votre cible, le plus simple consiste à ouvrir une invite de commandes développeur et exécutez la commande suivante :
 
-> MSBuild /p:SolutionDir =*solution-directory-avec-fin-barre oblique inverse*; Configuration = Debug ; Plateforme = Win32 ; BuildingInsideVisualStudio = true ; DesignTimebuild = true/t:\_PerfIntellisenseInfo /v:d /fl /fileloggerparameters:PerformanceSummary \*.vcxproj
+```
+msbuild /p:SolutionDir=*solution-directory-with-trailing-backslash*;Configuration=Debug;Platform=Win32;BuildingInsideVisualStudio=true;DesignTimebuild=true /t:\_PerfIntellisenseInfo /v:d /fl /fileloggerparameters:PerformanceSummary \*.vcxproj
+```
 
 Cette commande génère un journal de génération détaillées, *msbuild.log*, qui se termine par un résumé pour les cibles et les tâches des performances.
 
@@ -373,7 +374,17 @@ Veillez à utiliser `Condition ="'$(DesignTimeBuild)' != 'true'"` dans toutes le
 
 Si `GeneratorTarget` métadonnées sont définie pour un élément de projet, la cible est exécutée automatiquement à la fois lorsque le projet est chargé et lorsque le fichier source est modifié.
 
+::: moniker range="vs-2017"
+
 Par exemple, pour générer automatiquement .cpp ou .h des fichiers à partir de fichiers .xaml, le `$(VSInstallDir)` \\ *MSBuild*\\*Microsoft* \\  *WindowsXaml*\\*v15.0*\\\*\\*Microsoft.Windows.UI.Xaml.CPP.Targets* fichiers définissent ces entités :
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Par exemple, pour générer automatiquement .cpp ou .h des fichiers à partir de fichiers .xaml, le `$(VSInstallDir)` \\ *MSBuild*\\*Microsoft* \\  *WindowsXaml*\\*v16.0*\\\*\\*Microsoft.Windows.UI.Xaml.CPP.Targets* fichiers définissent ces entités :
+
+::: moniker-end
 
 ```xml
 <ItemDefinitionGroup>
@@ -422,7 +433,7 @@ Les fichiers de la règle doivent être ajoutés à la `PropertyPageSchema` grou
 
 `Context` limites règle la visibilité des métadonnées, qui est également contrôlée par le type de règle et peut avoir une des valeurs suivantes :
 
-> `Project` | `File` | `PropertySheet`
+`Project` | `File` | `PropertySheet`
 
 CPS prend en charge les autres valeurs pour le type de contexte, mais ils ne sont pas utilisés dans les projets Visual C++.
 
@@ -448,7 +459,6 @@ Le format de la règle est simple, donc cette section décrit uniquement les att
 ```
 
 Le `PageTemplate` attribut définit comment la règle s’affiche dans le **Pages de propriétés** boîte de dialogue. L’attribut peut avoir une des valeurs suivantes :
-
 
 | Attribut | Description |
 |------------| - |
@@ -604,7 +614,7 @@ Pour désactiver les mises à niveau du projet, utilisez un `NoUpgrade` valeur 
 
 ## <a name="project-cache-and-extensibility"></a>Le cache de projet et l’extensibilité
 
-Pour améliorer les performances lorsque vous travaillez avec grandes solutions de C++ dans Visual Studio 2017, le [projet cache](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/faster-c-solution-load-with-vs-15/) a été introduit. Il est implémenté comme une base de données SQLite rempli avec les données de projet et ensuite utilisé pour charger des projets sans charger des projets MSBuild ou CPS en mémoire.
+Pour améliorer les performances lorsque vous travaillez avec grandes solutions de C++ dans Visual Studio 2017, le [projet cache](https://devblogs.microsoft.com/cppblog/faster-c-solution-load-with-vs-15/) a été introduit. Il est implémenté comme une base de données SQLite rempli avec les données de projet et ensuite utilisé pour charger des projets sans charger des projets MSBuild ou CPS en mémoire.
 
 Comme il n’y a aucun objet CPS présentes pour les projets .vcxproj chargés à partir du cache, les composants MEF de l’extension importer `UnconfiguredProject` ou `ConfiguredProject` ne peut pas être créé. Pour prendre en charge d’extensibilité, le cache du projet n’est pas utilisé lorsque Visual Studio détecte si un projet utilise (ou est susceptible d’utiliser) extensions MEF.
 

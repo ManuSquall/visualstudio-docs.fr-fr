@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 361b64191d10056d80ab89dd6d4254ca128dcc96
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 55fcc74069ab912a7ec0fb9a6c4996cfd0b9cc36
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020592"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638177"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Procédure : Utiliser les kits SDK de projet MSBuild
 
@@ -94,7 +94,7 @@ Durant l’évaluation du projet, [!INCLUDE[vstecmsbuild](../extensibility/inter
 Durant l’évaluation de l’importation, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] résout dynamiquement le chemin d’accès au kit SDK de projet en fonction du nom et de la version que vous avez spécifiés.  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] contient également une liste des programmes de résolution de kits SDK inscrits, qui sont des plug-ins permettant de localiser les kits SDK de projet sur votre ordinateur.  Ces plug-ins sont les suivants :
 
 1. Un programme de résolution basé sur NuGet qui interroge vos flux de packages configurés pour localiser les packages NuGet qui correspondent à l’ID et à la version du kit SDK que vous avez spécifié.<br/>
-   Ce programme de résolution est uniquement actif si vous avez spécifié une version facultative, et il peut être utilisé pour tout kit SDK de projet personnalisé.  
+   Ce programme de résolution est uniquement actif si vous avez spécifié une version facultative, et il peut être utilisé pour tout kit SDK de projet personnalisé.
 2. Un programme de résolution d’interface CLI .NET qui résout les kits SDK installés avec l’interface CLI .NET.<br/>
    Ce programme de résolution localise les kits SDK de projet tels que `Microsoft.NET.Sdk` et `Microsoft.NET.Sdk.Web` qui font partie du produit.
 3. Un programme de résolution par défaut qui résout les kits SDK installés avec MSBuild.
@@ -110,11 +110,11 @@ Le programme de résolution de kits SDK basé sur NuGet prend en charge la spéc
 }
 ```
 
-Seule une version de chaque kit SDK de projet peut être utilisée durant une build.  Si vous référencez deux versions différentes du même kit SDK de projet, MSBuild émet un avertissement.  Il est recommandé de ne **pas** spécifier de version dans vos projets si une version est spécifiée dans votre fichier *global.json*.  
+Seule une version de chaque kit SDK de projet peut être utilisée durant une build.  Si vous référencez deux versions différentes du même kit SDK de projet, MSBuild émet un avertissement.  Il est recommandé de ne **pas** spécifier de version dans vos projets si une version est spécifiée dans votre fichier *global.json*.
 
 ## <a name="see-also"></a>Voir aussi
 
- [Concepts MSBuild](../msbuild/msbuild-concepts.md)   
- [Personnaliser votre build](../msbuild/customize-your-build.md)   
- [Packages, métadonnées et frameworks](/dotnet/core/packages)   
- [Ajouts au format csproj pour .NET Core](/dotnet/core/tools/csproj)
+- [Concepts MSBuild](../msbuild/msbuild-concepts.md)
+- [Personnaliser votre build](../msbuild/customize-your-build.md)
+- [Packages, métadonnées et frameworks](/dotnet/core/packages)
+- [Ajouts au format csproj pour .NET Core](/dotnet/core/tools/csproj)

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 753201d8f09b93186cac279d20dee2c7f3e1534d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 28ddaafc8ab4ddbaef1d7e42faedc2229664c6e6
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843310"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323638"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analyseurs de Roslyn et bibliothèque de code pour ImmutableArrays
 
@@ -298,7 +298,7 @@ Ensuite, la méthode extrait la racine du document, et étant donné que cela pe
 
 Vous pouvez maintenant appuyer sur **F5** pour exécuter votre analyseur dans une deuxième instance de Visual Studio. Ouvrez le projet de console que vous avez utilisé avant. Doit maintenant apparaître l’ampoule s’affichent dans laquelle votre nouvelle expression de création d’objet pour `ImmutableArray<int>`. Si vous appuyez sur **Ctrl**+**.** (période), puis vous verrez votre code à résoudre, et vous verrez un aperçu de différence de code généré automatiquement dans l’ampoule l’interface utilisateur. Roslyn cela crée pour vous.
 
-**Conseil Pro :** Si vous lancez la deuxième instance de Visual Studio, et vous ne voyez pas l’ampoule avec votre correctif de code, vous devrez peut-être effacer le cache du composant de Visual Studio. Effacement du cache de force Visual Studio pour re-examiner les composants, afin de Visual Studio doit ensuite capter de votre composant plus récente. Tout d’abord, arrêtez la deuxième instance de Visual Studio. Ensuite, dans **Windows Explorer**, accédez à *%LOCALAPPDATA%\Microsoft\VisualStudio\15.0Roslyn\\*. (Le « 15.0 » change d’une version à l’autre avec Visual Studio). Supprimer le sous-répertoire *ComponentModelCache*.
+**Conseil Pro :** Si vous lancez la deuxième instance de Visual Studio, et vous ne voyez pas l’ampoule avec votre correctif de code, vous devrez peut-être effacer le cache du composant de Visual Studio. Effacement du cache de force Visual Studio pour re-examiner les composants, afin de Visual Studio doit ensuite capter de votre composant plus récente. Tout d’abord, arrêtez la deuxième instance de Visual Studio. Ensuite, dans **Windows Explorer**, accédez à *%LOCALAPPDATA%\Microsoft\VisualStudio\16.0Roslyn\\*. (Le « 16.0 » change d’une version à l’autre avec Visual Studio.) Supprimer le sous-répertoire *ComponentModelCache*.
 
 ## <a name="talk-video-and-finish-code-project"></a>Communiquer avec vidéo et terminer le projet de code
 

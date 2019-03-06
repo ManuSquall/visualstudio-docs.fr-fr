@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf8f72f0d9b0c2d847ddb2c5e7e6c3c8d4ae4467
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6daa21f9db7eef9a651577ad829d884dccf353dc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932493"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717518"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
 
@@ -31,13 +31,19 @@ devenv /Command CommandName
 
 ## <a name="arguments"></a>Arguments
 
-- *CommandName*
+*CommandName*
 
-  Obligatoire. Nom complet d’une commande Visual Studio ou de son alias, entre guillemets doubles. Pour plus d’informations sur la syntaxe des commandes et des alias, consultez [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md).
+Obligatoire. Nom complet d’une commande Visual Studio ou de son alias, entre guillemets doubles. Pour plus d’informations sur la syntaxe des commandes et des alias, consultez [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md).
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
-Une fois le démarrage terminé, l’IDE exécute la commande nommée. Si vous utilisez ce commutateur, l’environnement IDE n’affiche pas la page initiale de Visual Studio au démarrage.
+Une fois le démarrage terminé, l’IDE exécute la commande nommée.
+
+::: moniker range="vs-2017"
+
+Si vous utilisez ce commutateur, l’IDE n’affiche pas la page de démarrage au démarrage.
+
+::: moniker-end
 
 Si un complément expose une commande, vous pouvez utiliser ce commutateur pour lancer le complément à partir de la ligne de commande. Pour plus d'informations, voir [Procédure : Contrôler les compléments avec le Gestionnaire de compléments](/previous-versions/xwdatdwh(v=vs.140)).
 

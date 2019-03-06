@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: baee97f08a4e6015d6c2e1d88f83f5835431578b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5f0a13f6355b868292d7d2867e54a8e62cb87c0f
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957911"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223011"
 ---
 # <a name="dependency-diagrams-reference"></a>Diagrammes de dépendance : référence
 
@@ -34,7 +34,7 @@ Dans Visual Studio, vous pouvez utiliser un *diagramme de dépendances* pour vis
 Pour voir quelles éditions de Visual Studio prennent en charge cette fonctionnalité, consultez [prise en charge de l’édition pour l’architecture et les outils de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!NOTE]
-> Diagrammes de dépendance ne sont pas pris en charge pour les projets .NET Core dans Visual Studio 2017.
+> Diagrammes de dépendance ne sont pas pris en charge pour les projets .NET Core dans Visual Studio.
 
 Vous pouvez spécifier les dépendances prévues ou existantes entre des couches. Ces dépendances, représentées comme des flèches, indiquent quelles couches peuvent utiliser ou actuellement utiliser la fonctionnalité représentée par d'autres couches. En organisant votre système en couches qui décrivent des fonctions et des rôles distincts, un diagramme de dépendances peut aider à rendre plus facile à comprendre, la réutilisation et la maintenance de votre code.
 

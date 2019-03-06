@@ -8,16 +8,16 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 89406cfa114d91cc6e6a33064bf073cc35181cdf
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: a10945547170add8757378a11d569177d9b41750
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954304"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223492"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Utilisation des vérificateurs C++ Core Guidelines
 
-Les recommandations C++ Core Guidelines sont un ensemble portable d’instructions, des règles et des meilleures pratiques sur le codage en C++ créé par les concepteurs et les experts de C++. Visual Studio prend actuellement en charge un sous-ensemble de ces règles dans le cadre de ses outils d’analyse de code C++. Les vérificateurs d’indication core sont installés par défaut dans Visual Studio 2017 et sont [disponible comme package NuGet pour Visual Studio 2015](#vs2015_corecheck).
+Les recommandations C++ Core Guidelines sont un ensemble portable d’instructions, des règles et des meilleures pratiques sur le codage en C++ créé par les concepteurs et les experts de C++. Visual Studio prend actuellement en charge un sous-ensemble de ces règles dans le cadre de ses outils d’analyse de code C++. Les vérificateurs d’indication core sont installés par défaut dans Visual Studio 2017 et Visual Studio 2019 et sont [disponible comme package NuGet pour Visual Studio 2015](#vs2015_corecheck).
 
 ## <a name="the-c-core-guidelines-project"></a>Les recommandations C++ Core Guidelines de projet
 

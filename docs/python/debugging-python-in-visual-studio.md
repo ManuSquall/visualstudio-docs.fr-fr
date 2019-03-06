@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fc6c448a80f9517a3bde0333736f4cb83efb09c6
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 5bc1f41e683b8bf58486646b5beb2ae4de3d4049
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155875"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954359"
 ---
 # <a name="debug-your-python-code"></a>Déboguer votre code Python
 
@@ -246,7 +246,7 @@ Les étapes suivantes permettent le débogage dans la session active de Visual S
 1. Entrez la commande suivante :
 
     ```ps
-    DebugAdapterHost.Logging /On
+    DebugAdapterHost.Logging /On /OutputWindow
     ```
 
 1. Commencez le débogage et suivez toutes les étapes nécessaires pour reproduire votre problème. Pendant ce temps, les journaux de débogage s’affichent dans la Fenêtre **Sortie** sous **Journaux de l’hôte d’adaptateur de débogage**. Vous pouvez alors copier les journaux de cette fenêtre et les coller dans un problème GitHub, un e-mail, etc.
@@ -256,7 +256,7 @@ Les étapes suivantes permettent le débogage dans la session active de Visual S
 1. Si Visual Studio se bloque ou que vous ne parvenez pas à accéder à la Fenêtre **Sortie**, redémarrez Visual Studio, ouvrez une Fenêtre Commande et entrez la commande suivante :
 
     ```ps
-    DebugAdapterHost.Logging /On /OutputWindow
+    DebugAdapterHost.Logging /On
     ```
 
 1. Commencez le débogage et reproduisez votre problème. Les journaux du débogueur se trouvent dans `%temp%\DebugAdapterHostLog.txt`.

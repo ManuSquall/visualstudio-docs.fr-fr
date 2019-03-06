@@ -3,15 +3,9 @@ layout: HubPage
 hide_bc: true
 title: Documentation Visual Studio | Documents Microsoft
 titleSuffix: ''
-description: Apprenez à utiliser Visual Studio 2017 pour développer des applications, des services et des outils dans le langage de votre choix pour vos plateformes et vos appareils.
+description: 'Apprenez à utiliser Visual Studio pour développer des applications, des services et des outils dans le langage de votre choix, pour vos plateformes et vos appareils.'
 ms.topic: hub-page
 ms.custom: seodec18
-ms.openlocfilehash: 9bcd261ce7d6efbd7fac50352c9dfaa17ed6c41f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316780"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -55,7 +49,7 @@ ms.locfileid: "56316780"
                 </a>
             </li>
             <li>
-                <a href="/visualstudio/ide/whats-new-in-visual-studio">
+                <a href="/visualstudio/ide/whats-new-visual-studio-2017">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -65,7 +59,7 @@ ms.locfileid: "56316780"
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>Nouveautés dans Visual Studio 2017 RC</h3>
+                                    <h3>Nouveautés de Visual Studio</h3>
                                 </div>
                             </div>
                         </div>
@@ -586,7 +580,7 @@ Application web avec ASP.NET Core</a>
                                             <div class="cardText">
                                                 <a href="/visualstudio/rtvs/">
                                                     <h3>R</h3>
-                                                    <p>Langage de programmation extensible généralement utilisé pour le calcul statistique et les graphiques.</p>
+                                                    <p>(Visual Studio 2017 uniquement) Langage de programmation extensible généralement utilisé pour le calcul statistique et les graphiques.</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -705,7 +699,7 @@ Application web avec ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="rtvs/data-science-and-analytical-applications-workload.md">
+                                <a href="python/data-science-and-analytical-applications-workload.md">
                                   <div class="cardSize">
                                     <div class="cardPadding">
                                       <div class="card">
@@ -716,7 +710,7 @@ Application web avec ASP.NET Core</a>
                                         </div>
                                           <div class="cardText">
                                             <h3>Applications de science des données et analytiques</h3>
-                                            <p>Langages et outils permettant de créer des applications de science des données, notamment en Python, R et F#.</p>
+                                            <p>Langages et outils permettant de créer des applications de science des données, notamment Python et F# (et R dans Visual Studio 2017 uniquement).</p>
                                         </div>
                                       </div>
                                     </div>

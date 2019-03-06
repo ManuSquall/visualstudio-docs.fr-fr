@@ -12,53 +12,53 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f18d712eb8c135b67c37ca22ae4ae944ad6b934
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6c0f21042a7b49780dae3a46ec5a1f284dc0430a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979229"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646497"
 ---
 # <a name="manage-channels"></a>Gérer les canaux
-Dans la **vue Threads** du visualiseur concurrentiel, vous pouvez organiser les canaux pour votre processus afin de pouvoir examiner des modèles particuliers. Vous pouvez trier les canaux, les déplacer vers le haut et vers le bas, ainsi que les masquer ou les afficher.  
-  
-## <a name="sort-by"></a>Trier par  
- Vous pouvez utiliser le contrôle Trier par pour trier les threads selon différents critères, en fonction du niveau de zoom actuel. Cette fonction est particulièrement utile quand vous recherchez un modèle particulier. Vous pouvez effectuer le tri selon les critères suivants :  
-  
-|Critères|Définition|  
-|--------------|----------------|  
-|Heure de début|Trie les threads sur leur heure de début. Il s’agit de l’ordre de tri par défaut.|  
-|Heure de fin|Trie les threads sur leur heure de fin.|  
-|Exécution|Trie les threads sur le pourcentage de temps consacré à l’exécution.|  
-|Synchronisation|Trie les threads sur le pourcentage de temps consacré à la synchronisation.|  
-|E/S|Trie les threads sur le pourcentage de temps consacré aux E/S (lecture et écriture de données).|  
-|Veille|Trie les threads sur le pourcentage de temps passé en veille.|  
-|Pagination|Trie les threads sur le pourcentage de temps consacré à la pagination.|  
-|Anticipation|Trie les threads sur le pourcentage de temps consacré à l’anticipation.|  
-|Traitement de l'interface utilisateur|Trie les threads sur le pourcentage de temps consacré au traitement de l’interface utilisateur.|  
-  
-## <a name="move-selected-channel-up-or-down"></a>Déplacer le canal sélectionné vers le haut ou vers le bas  
- Vous pouvez utiliser ces contrôles pour déplacer un canal vers le haut ou vers le bas dans la liste. Par exemple, vous pourrez placer les canaux associés côte à côte pour faciliter l’examen d’un modèle particulier ou d’une relation inter-threads.  
-  
-## <a name="move-selected-channel-to-top-or-bottom"></a>Déplacer le canal sélectionné en haut ou en bas  
- Vous pouvez déplacer des canaux sélectionnés en haut ou en bas de la liste pour pouvoir examiner un modèle particulier, ou faire disparaître certains canaux quand vous en examinez d’autres.  
-  
-## <a name="hide-selected-channels"></a>Masquer les canaux sélectionnés  
- Choisissez ce contrôle pour masquer des canaux. Par exemple, si un thread est à 100 % de synchronisation pendant toute la durée de votre processus managé, vous pouvez le masquer pendant que vous analysez d’autres threads.  
-  
+Dans la **vue Threads** du visualiseur concurrentiel, vous pouvez organiser les canaux pour votre processus afin de pouvoir examiner des modèles particuliers. Vous pouvez trier les canaux, les déplacer vers le haut et vers le bas, ainsi que les masquer ou les afficher.
+
+## <a name="sort-by"></a>Trier par
+ Vous pouvez utiliser le contrôle Trier par pour trier les threads selon différents critères, en fonction du niveau de zoom actuel. Cette fonction est particulièrement utile quand vous recherchez un modèle particulier. Vous pouvez effectuer le tri selon les critères suivants :
+
+|Critères|Définition|
+|--------------|----------------|
+|Heure de début|Trie les threads sur leur heure de début. Il s’agit de l’ordre de tri par défaut.|
+|Heure de fin|Trie les threads sur leur heure de fin.|
+|Exécution|Trie les threads sur le pourcentage de temps consacré à l’exécution.|
+|Synchronisation|Trie les threads sur le pourcentage de temps consacré à la synchronisation.|
+|E/S|Trie les threads sur le pourcentage de temps consacré aux E/S (lecture et écriture de données).|
+|Veille|Trie les threads sur le pourcentage de temps passé en veille.|
+|Pagination|Trie les threads sur le pourcentage de temps consacré à la pagination.|
+|Anticipation|Trie les threads sur le pourcentage de temps consacré à l’anticipation.|
+|Traitement de l'interface utilisateur|Trie les threads sur le pourcentage de temps consacré au traitement de l’interface utilisateur.|
+
+## <a name="move-selected-channel-up-or-down"></a>Déplacer le canal sélectionné vers le haut ou vers le bas
+ Vous pouvez utiliser ces contrôles pour déplacer un canal vers le haut ou vers le bas dans la liste. Par exemple, vous pourrez placer les canaux associés côte à côte pour faciliter l’examen d’un modèle particulier ou d’une relation inter-threads.
+
+## <a name="move-selected-channel-to-top-or-bottom"></a>Déplacer le canal sélectionné en haut ou en bas
+ Vous pouvez déplacer des canaux sélectionnés en haut ou en bas de la liste pour pouvoir examiner un modèle particulier, ou faire disparaître certains canaux quand vous en examinez d’autres.
+
+## <a name="hide-selected-channels"></a>Masquer les canaux sélectionnés
+ Choisissez ce contrôle pour masquer des canaux. Par exemple, si un thread est à 100 % de synchronisation pendant toute la durée de votre processus managé, vous pouvez le masquer pendant que vous analysez d’autres threads.
+
 > [!NOTE]
->  Masquer un thread le supprime également du temps de calcul, qui est affiché dans la légende active et dans les rapports de profils.  
-  
-## <a name="show-all-channels"></a>Afficher tous les canaux  
- Ce contrôle est actif quand un ou plusieurs canaux sont masqués. Si vous cliquez dessus, tous les éléments masqués sont affichés et réintégrés dans les calculs de temps.  
-  
-## <a name="move-markers-to-top"></a>Déplacer les marqueurs en haut  
- Si une trace contient des événements de marqueur, vous pouvez utiliser cette commande pour déplacer les canaux de marqueurs en haut de la chronologie. Leur ordre relatif est conservé.  
-  
-## <a name="group-markers-by-thread"></a>Regrouper les marqueurs par thread  
- Si une trace contient des événements de marqueur, vous pouvez utiliser cette commande pour regrouper des canaux de marqueurs sous le thread qui a généré les événements de marqueur.  Les canaux de disques sont déplacés en haut de la liste de canaux, et les canaux GPU sont déplacés en bas.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Zoom, contrôle (vue Threads)](../profiling/zoom-control-threads-view.md)   
- [Mode Mesure activé/désactivé](../profiling/measure-mode-on-off.md)   
- [vue Threads](../profiling/threads-view-parallel-performance.md)
+>  Masquer un thread le supprime également du temps de calcul, qui est affiché dans la légende active et dans les rapports de profils.
+
+## <a name="show-all-channels"></a>Afficher tous les canaux
+ Ce contrôle est actif quand un ou plusieurs canaux sont masqués. Si vous cliquez dessus, tous les éléments masqués sont affichés et réintégrés dans les calculs de temps.
+
+## <a name="move-markers-to-top"></a>Déplacer les marqueurs en haut
+ Si une trace contient des événements de marqueur, vous pouvez utiliser cette commande pour déplacer les canaux de marqueurs en haut de la chronologie. Leur ordre relatif est conservé.
+
+## <a name="group-markers-by-thread"></a>Regrouper les marqueurs par thread
+ Si une trace contient des événements de marqueur, vous pouvez utiliser cette commande pour regrouper des canaux de marqueurs sous le thread qui a généré les événements de marqueur.  Les canaux de disques sont déplacés en haut de la liste de canaux, et les canaux GPU sont déplacés en bas.
+
+## <a name="see-also"></a>Voir aussi
+- [Contrôle Zoom (vue Threads)](../profiling/zoom-control-threads-view.md)
+- [Mode Mesure activé/désactivé](../profiling/measure-mode-on-off.md)
+- [vue Threads](../profiling/threads-view-parallel-performance.md)

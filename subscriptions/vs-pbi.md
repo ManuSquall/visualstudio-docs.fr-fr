@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Découvrez l’abonnement Power BI Pro inclus dans certains abonnements Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a437dd537caa75865a245a22387a4db53d94927f
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 176ce1d13faad7143da591f4f04f9feee1b5b2a0
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380181"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843868"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro dans les abonnements Visual Studio
 
@@ -94,17 +92,17 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 
 ## <a name="frequently-asked-questions"></a>FAQ
 ### <a name="q--if-the-benefit-is-free-why-do-i-have-to-supply-a-credit-card-number"></a>Q :  Si l’avantage est gratuit, pourquoi dois-je fournir un numéro de carte de crédit ?
-A :  L’avantage est gratuit, mais l’activation utilise le même système que celui utilisé pour traiter les commandes payantes.  Deux types de paiement sont disponibles. 
-- Carte de crédit.  Si vous fournissez un numéro de carte de crédit, votre carte N’EST PAS débitée. 
-- Facture.  Si vous sélectionnez « Facture » comme type de paiement, vous n’avez pas besoin de fournir un numéro de carte de crédit.  Vous pouvez également définir l’intervalle sur « annuel ».  De cette façon, vous recevez un seul e-mail vous informant qu’une facture est prête pour vous.  Le montant de la facture est 0,00 €.  
+R :  L’avantage est gratuit, mais l’activation utilise le même système que celui utilisé pour traiter les commandes payantes.  Deux types de paiement sont disponibles.
+- Carte de crédit.  Si vous fournissez un numéro de carte de crédit, votre carte N’EST PAS débitée.
+- Facture.  Si vous sélectionnez « Facture » comme type de paiement, vous n’avez pas besoin de fournir un numéro de carte de crédit.  Vous pouvez également définir l’intervalle sur « annuel ».  De cette façon, vous recevez un seul e-mail vous informant qu’une facture est prête pour vous.  Le montant de la facture est 0,00 €.
 
 ### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licensed-for-use-in-a-production-environment"></a>Q :  L’avantage Power BI Pro inclus dans mon abonnement est-il utilisable dans un environnement de production ?
-A :  Oui, vous pouvez l’utiliser en production, avec deux réserves importantes :
-- Cette offre oblige à effectuer l’installation sur son propre locataire.  Si vous souhaitez disposer d’une licence Power BI associée à vos informations d’identification d’entreprise dans votre locataire d’entreprise, contactez l’administrateur de votre société pour acheter et affecter une licence. 
-- Cet avantage Power BI Pro ne peut pas être utilisé sur des locataires de type Secteur public.  
+R :  Oui, vous pouvez l’utiliser en production, avec deux réserves importantes :
+- Cette offre oblige à effectuer l’installation sur son propre locataire.  Si vous souhaitez disposer d’une licence Power BI associée à vos informations d’identification d’entreprise dans votre locataire d’entreprise, contactez l’administrateur de votre société pour acheter et affecter une licence.
+- Cet avantage Power BI Pro ne peut pas être utilisé sur des locataires de type Secteur public.
 
 ### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>Q :  Lorsque j’essaie d’activer Power BI Pro, j’obtiens un message m’indiquant que je dispose déjà d’un compte dans le cadre professionnel.  Puis-je continuer à utiliser l’avantage ?
-A :  Oui.  Ce message indique que vous êtes connecté à un domaine qui comprend déjà des locataires Office 365 actifs, dont vous n’êtes pas l’administrateur.  Pour ajouter Power BI Pro à un locataire, vous devez en être l’administrateur.  Si ce n’est pas le cas, suivez les étapes ci-dessous pour créer votre propre locataire.
+R :  Oui.  Ce message indique que vous êtes connecté à un domaine qui comprend déjà des locataires Office 365 actifs, dont vous n’êtes pas l’administrateur.  Pour ajouter Power BI Pro à un locataire, vous devez en être l’administrateur.  Si ce n’est pas le cas, suivez les étapes ci-dessous pour créer votre propre locataire.
 1.  Lorsque vous voyez le message qui vous indique que vous disposez déjà d’un compte dans le cadre professionnel, cliquez sur **Créer un compte**.
 
 2.  Dans l’écran suivant, entrez vos informations de contact, puis cliquez sur **Suivant**.
@@ -112,14 +110,14 @@ A :  Oui.  Ce message indique que vous êtes connecté à un domaine qui compre
 3.  Créez votre identifiant utilisateur et votre mot de passe.  Pour bénéficier de l’offre gratuite, sélectionnez **. onmicrosoft.com** comme domaine. Cliquez sur **Créer mon compte**.
     > [!div class="mx-imgBorder"]
     > ![Avantage Power BI Pro - Créer un UserID de locataire privé](_img/vs-pbi/vs-pbi-work-userid.png)
-    
+
 4.  Les autres étapes du processus sont identiques à celles listées dans le corps de l’article, à partir de l’étape 6.
 
 
-### <a name="q--im-on-a-government-tenant--can-i-use-the-benefit"></a>Q :  J’utilise un locataire de type Secteur public.  Puis-je utiliser l’avantage ? 
-A :  Non.  Les locataires de type Secteur public ne peuvent pas bénéficier de l’avantage Power BI Pro. 
+### <a name="q--im-on-a-government-tenant--can-i-use-the-benefit"></a>Q :  J’utilise un locataire de type Secteur public.  Puis-je utiliser l’avantage ?
+R :  Non.  Les locataires de type Secteur public ne peuvent pas bénéficier de l’avantage Power BI Pro.
 
-## <a name="support-resources"></a>Ressources de support technique
+## <a name="support-resources"></a>Ressources de support
 -  Besoin d’aide avec Power BI Pro ?
     - Consultez la [documentation en ligne](/power-bi/).
     - Problèmes d’inscription ?  Consultez [Inscription individuelle à Power BI](/power-bi/service-self-service-signup-for-power-bi).

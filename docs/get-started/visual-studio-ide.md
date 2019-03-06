@@ -1,7 +1,7 @@
 ---
 title: Vue d’ensemble de Visual Studio 2017
 titleSuffix: ''
-ms.date: 10/26/2018
+ms.date: 2/21/2019
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.custom: vs-get-started
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d38f102dd0a61d80c383307abdc96a03b50c0d74
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: f49d4e9c734d1a7f20a765a75c4dcb6b950b38f8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316819"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705503"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Bienvenue dans l’IDE Visual Studio
 
@@ -62,6 +62,8 @@ Voici quelques-unes des fonctionnalités populaires de Visual Studio qui vous ai
 - [Lancement rapide](../ide/reference/quick-launch-environment-options-dialog-box.md)
 
    La maîtrise de Visual Studio peut sembler insurmontable parfois, avec autant de menus, d’options et de propriétés. La zone de recherche **Lancement rapide** est un excellent moyen de trouver rapidement ce dont vous avez besoin dans Visual Studio. Quand vous commencez à taper le nom d’un élément que vous recherchez, Visual Studio affiche des résultats qui vous mènent exactement où vous devez accéder. Si vous avez besoin ajouter des fonctionnalités à Visual Studio, par exemple pour ajouter la prise en charge d’un langage de programmation supplémentaire, **Lancement rapide** fournit des résultats qui ouvrent Visual Studio Installer pour installer une charge de travail ou un composant spécifique.
+
+   Vous trouverez la zone de recherche **Lancement rapide** dans le coin supérieur droit de l’IDE. (Vous pouvez également appuyer sur **Ctrl**+**Q** pour y accéder.)
 
    ![Zone de recherche Lancement rapide dans Visual Studio](media/quick-launch-nuget.png)
 

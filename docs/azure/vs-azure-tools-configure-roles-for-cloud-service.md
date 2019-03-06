@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 751ee5f414db3ee2ad944cd48503887bf5c65c2a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 06914374169d3d6dab6dd5a489461c11ddbc66aa
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942674"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953886"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Configurer des rôles de service cloud Azure avec Visual Studio
 Un service cloud Azure peut avoir un ou plusieurs rôles de travail ou rôles web. Pour chaque rôle, vous devez définir le mode de configuration de ce rôle et configurer son mode d’exécution. Pour en savoir plus sur les rôles dans les services cloud, regardez la vidéo [Introduction aux services cloud Azure](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
@@ -48,8 +48,6 @@ Vous pouvez configurer un service cloud Azure à partir de l’Explorateur de so
 
     > [!IMPORTANT]
     > Si vous choisissez une configuration de service spécifique, certaines propriétés sont désactivées parce qu’elles peuvent être définies uniquement pour toutes les configurations. Pour modifier ces propriétés, vous devez sélectionner **Toutes les configurations**.
-    >
-    >
 
     ![Liste Configuration du service pour un service cloud Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/cloud-service-service-configuration-property.png)
 

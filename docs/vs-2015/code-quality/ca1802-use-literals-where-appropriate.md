@@ -22,7 +22,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 25b9c521d55b16cef885c50138bff84c3000e1b3
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49940084"

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49690730b60de6c1ec0aa2f4a0776e45cca43ccb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fa0b5a95a4191a977144808bfb8888e282f7fce9
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913169"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223271"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Page Application, Concepteur de projet (Visual Basic)
 
@@ -76,7 +76,7 @@ Pour plus d’informations sur la propriété **Type d’application**, consulte
 
 ### <a name="auto-generate-binding-redirects"></a>Générer automatiquement des redirections de liaison
 
-Des redirections de liaison sont ajoutées à votre projet si votre application ou ses composants référencent plusieurs versions du même assembly. Si vous voulez définir manuellement des redirections de liaison dans le fichier projet, décochez **Générer automatiquement des redirections de liaison**. Cette case à cocher a été introduite dans Visual Studio 2017 version 15.7.
+Des redirections de liaison sont ajoutées à votre projet si votre application ou ses composants référencent plusieurs versions du même assembly. Si vous voulez définir manuellement des redirections de liaison dans le fichier projet, décochez **Générer automatiquement des redirections de liaison**.
 
 Pour plus d’informations sur la redirection, consultez [Redirection des versions d’assemblys](/dotnet/framework/configure-apps/redirect-assembly-versions).
 

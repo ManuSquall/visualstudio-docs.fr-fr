@@ -18,18 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99476f19055acf678bd9bc8662605351a1e6dfb9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b4c7df0cf9e837e27e8f572bb50d5e3395b3424a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924433"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629909"
 ---
 # <a name="import-element-msbuild"></a>Import, élément (MSBuild)
 Importe le contenu d’un fichier projet dans un autre fichier projet.
 
-\<Project>  
-\<Import>  
+\<Project> \<Import>
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -58,7 +57,7 @@ Importe le contenu d’un fichier projet dans un autre fichier projet.
 | [Projet](../msbuild/project-element-msbuild.md) | Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
 | [ImportGroup](../msbuild/importgroup-element.md) | Contient une collection d’éléments `Import` regroupés sous une condition facultative. |
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  L’élément `Import` vous permet de réutiliser du code commun à de nombreux fichiers projet. Cela facilite la maintenance du code, car les mises à jour que vous apportez au code partagé sont propagées à tous les projets qui l’importent.
 
  Par convention, les fichiers projet importés partagés sont enregistrés en tant que fichiers *.targets*, mais il s’agit de fichiers projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] standard. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ne vous empêche pas d’importer un projet ayant une extension de nom de fichier différente, mais nous vous recommandons d’utiliser l’extension *.targets* pour des raisons de cohérence.
@@ -108,5 +107,5 @@ Importe le contenu d’un fichier projet dans un autre fichier projet.
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)  
-[Guide pratique pour utiliser la même cible dans plusieurs fichiers projet](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+- [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
+- [Guide pratique pour utiliser la même cible dans plusieurs fichiers projet](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

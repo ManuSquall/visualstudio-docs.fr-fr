@@ -7,18 +7,20 @@ ms.author: mblome
 manager: wpickett
 dev_langs:
 - CPP
-ms.openlocfilehash: c591ecdb206d14e217fb38c01864aa2691ffe2d4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 15877cbaed093eab2cf436ed5122c80b9e135800
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914995"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223349"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Utilisation des vérificateurs C++ Core Guidelines
-Les recommandations C++ Core Guidelines sont un ensemble portable d’instructions, des règles et des meilleures pratiques sur le codage en C++ créé par les concepteurs et les experts de C++. Visual Studio prend actuellement en charge un sous-ensemble de ces règles dans le cadre de ses outils d’analyse de code C++. Les vérificateurs d’indication core sont installés par défaut dans Visual Studio 2017 et sont [disponible comme package NuGet pour Visual Studio 2015](#vs2015_corecheck).
+
+Les recommandations C++ Core Guidelines sont un ensemble portable d’instructions, des règles et des meilleures pratiques sur le codage en C++ créé par les concepteurs et les experts de C++. Visual Studio prend actuellement en charge un sous-ensemble de ces règles dans le cadre de ses outils d’analyse de code C++. Les vérificateurs d’indication core sont installés par défaut dans Visual Studio 2017 et Visual Studio 2019 et sont [disponible comme package NuGet pour Visual Studio 2015](#vs2015_corecheck).
 
 ## <a name="the-c-core-guidelines-project"></a>Les recommandations C++ Core Guidelines de projet
- Créé par Bjarne Stroustrup et d’autres, les recommandations C++ Core Guidelines sont un guide d’utilisation de C++ moderne efficacement et en toute sécurité. Les instructions de mettre l’accent sur la sécurité de type statique et sécurité des ressources. Ils identifient les moyens pour éliminer ou réduire les parties plus sujet aux erreurs de la langue et que vous suggèrent comment rendre votre code plus simple et plus performant de façon fiable. Ces instructions sont gérées par le Standard C++ Foundation. Pour plus d’informations, consultez la documentation, [C++ Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)et accéder aux fichiers de projet de documentation de C++ Core Guidelines sur [GitHub](https://github.com/isocpp/CppCoreGuidelines).
+
+Créé par Bjarne Stroustrup et d’autres, les recommandations C++ Core Guidelines sont un guide d’utilisation de C++ moderne efficacement et en toute sécurité. Les instructions de mettre l’accent sur la sécurité de type statique et sécurité des ressources. Ils identifient les moyens pour éliminer ou réduire les parties plus sujet aux erreurs de la langue et que vous suggèrent comment rendre votre code plus simple et plus performant de façon fiable. Ces instructions sont gérées par le Standard C++ Foundation. Pour plus d’informations, consultez la documentation, [C++ Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)et accéder aux fichiers de projet de documentation de C++ Core Guidelines sur [GitHub](https://github.com/isocpp/CppCoreGuidelines).
 
 ## <a name="enable-the-c-core-check-guidelines-in-code-analysis"></a>Activer les recommandations C++ Core Check dans l’analyse du Code
  Vous pouvez activer l’analyse du code sur votre projet en sélectionnant le **activer l’analyse du Code sur la Build** case à cocher dans la **analyse du Code** section de la **Pages de propriétés** boîte de dialogue pour votre projet.
