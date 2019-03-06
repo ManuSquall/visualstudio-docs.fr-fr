@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a063a42cd3597f69d0500012d74c7be700e02138
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c70782190bbfd76f5536a68eb597dbf3d122e773
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634992"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323826"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Procédure pas à pas : Téléchargement d’assemblys satellites à la demande avec l’API à l’aide du Concepteur de déploiement ClickOnce
 Les applications Windows Forms peuvent être configurées pour plusieurs cultures à l’aide d’assemblys satellites. Un *assembly satellite* contient des ressources d’application pour une culture autre que la culture par défaut de l’application.
@@ -53,7 +53,7 @@ Les applications Windows Forms peuvent être configurées pour plusieurs culture
 
 6.  Fermez la boîte de dialogue **Fichiers d’application**.
 
-### <a name="to-download-satellite-assemblies-on-demand-in-c"></a>Pour télécharger des assemblys satellites à la demande en C#
+### <a name="to-download-satellite-assemblies-on-demand-in-c"></a>Pour télécharger des assemblys satellites à la demande en C\#
 
 1.  Ouvrez le fichier *Program.cs*. Si ce fichier ne s’affiche pas dans l’Explorateur de solutions, sélectionnez votre projet et, dans le menu **Projet**, cliquez sur **Afficher tous les fichiers**.
 

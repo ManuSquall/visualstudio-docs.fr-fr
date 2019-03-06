@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6daa7667c26e2394e86833f6d0ce633ea9a4a168
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1fdfb43a00515dff57dd59943043ee0a42dc270f
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637332"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428724"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>Configurer le pare-feu de Windows pour le débogage distant
 
@@ -52,11 +52,25 @@ Visual Studio et le débogueur distant essaient d’ouvrir les ports appropriés
 
 Pour le débogage distant, les ports suivants doivent être ouverts sur l’ordinateur distant :
 
+::: moniker range="vs-2017"
+
 |**Ports**|**Entrant/sortant**|**Protocole**|**Description**|
 |-|-|-|-|
 |4022|Entrant|TCP|Pour VS 2017. Le port numéro s’incrémente de 2 pour chaque version de Visual Studio. Pour plus d’informations, consultez [Affectations de port du débogueur distant de Visual Studio](../debugger/remote-debugger-port-assignments.md).|
 |4023|Entrant|TCP|Pour VS 2017. Le port numéro s’incrémente de 2 pour chaque version de Visual Studio. Ce port est uniquement utilisé à distance déboguer un processus 32 bits à partir d’une version 64 bits du débogueur distant. Pour plus d’informations, consultez [Affectations de port du débogueur distant de Visual Studio](../debugger/remote-debugger-port-assignments.md).|
 |3702|Sortant|UDP|(Facultatif) Requis pour la détection du débogueur distant.|
+
+::: moniker-end
+
+::: moniker range=">= vs-2019"
+
+|**Ports**|**Entrant/sortant**|**Protocole**|**Description**|
+|-|-|-|-|
+|4024|Entrant|TCP|Pour VS 2019. Le port numéro s’incrémente de 2 pour chaque version de Visual Studio. Pour plus d’informations, consultez [Affectations de port du débogueur distant de Visual Studio](../debugger/remote-debugger-port-assignments.md).|
+|4025|Entrant|TCP|Pour VS 2019. Le port numéro s’incrémente de 2 pour chaque version de Visual Studio. Ce port est uniquement utilisé à distance déboguer un processus 32 bits à partir d’une version 64 bits du débogueur distant. Pour plus d’informations, consultez [Affectations de port du débogueur distant de Visual Studio](../debugger/remote-debugger-port-assignments.md).|
+|3702|Sortant|UDP|(Facultatif) Requis pour la détection du débogueur distant.|
+
+::: moniker-end
 
 Si vous sélectionnez **utiliser le Mode compatibilité managé** sous **outils** > **Options** > **débogage**, ouvrez ces ports supplémentaires débogueur distant. Mode de compatibilité de débogueur managé permet un hérité, la version de Visual Studio 2010 du débogueur.
 

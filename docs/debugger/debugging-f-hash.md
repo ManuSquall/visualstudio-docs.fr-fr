@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53f50c3a107f9796e4fbb661f303bfcabf284cc6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 11a310884f9f63264157c96bafc15e8161c0239d
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710095"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323839"
 ---
-# <a name="debugging-f"></a>Débogage de F#
+# <a name="debugging-f"></a>Débogage de F\#
 Le débogage de F# est semblable au débogage de tout langage managé, à quelques exceptions près :
 
 -   La fenêtre **Automatique** n’affiche pas les variables F#.
