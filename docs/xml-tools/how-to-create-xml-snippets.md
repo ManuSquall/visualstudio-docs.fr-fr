@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8a17f5699ffc5bfe33e86370a9c5ef114331e90
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fd29a8d31d425529db377c812611f1efddc60f11
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907332"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526618"
 ---
 # <a name="how-to-create-xml-snippets"></a>Procédure : Créer des extraits XML
 
-Vous pouvez utiliser l'éditeur XML pour créer de nouveaux extraits XML. Cet éditeur comporte un extrait XML appelé « Snippet », qui est souvent utilisé pour la création de nouveaux extraits XML.
+L’éditeur XML peut être utilisé pour créer de nouveaux extraits XML. Cet éditeur comporte un extrait XML appelé « Snippet », qui est souvent utilisé pour la création de nouveaux extraits XML.
 
 ## <a name="to-create-a-new-xml-snippet"></a>Pour créer un nouvel extrait XML
 
@@ -80,7 +80,7 @@ Vous pouvez utiliser l'éditeur XML pour créer de nouveaux extraits XML. Cet é
 
 - $name$ est une variable définie par l'utilisateur. Elle crée un élément `name` dont la valeur par défaut modifiable est « name ». Les variables définies par l'utilisateur se définissent à l'aide de l'élément `Literal`.
 
-- $selected$ est une variable prédéfinie. Elle représente le texte sélectionné dans l'éditeur XML avant l'appel de l'extrait. La position de cette variable détermine l'emplacement du texte sélectionné dans l'extrait de code qui entoure cette sélection.
+- $selected$ est une variable prédéfinie. Il représente le texte qui a été sélectionné dans l’éditeur XML avant l’appel de l’extrait de code. La position de cette variable détermine l'emplacement du texte sélectionné dans l'extrait de code qui entoure cette sélection.
 
 - $end$ est une variable prédéfinie. Lorsque l’utilisateur appuie sur **entrée** pour terminer la modification des champs d’extrait de code, cette variable détermine où le signe insertion (^) est déplacé vers.
 

@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d892ba202a73560568bdb6c43427a8ee0f7c1aee
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e4a56249c0a87b2516dc233818208f7c7c4b696e
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913624"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526215"
 ---
 # <a name="how-to-use-xml-snippets"></a>Procédure : Utiliser des extraits XML
 
-Vous pouvez invoquer des extraits XML en utilisant les deux commandes suivantes du menu contextuel de l'éditeur XML. Le **insérer un extrait** commande insère l’extrait de code XML à la position du curseur. Le **entourer** commande encapsule l’extrait XML autour du texte sélectionné. Chaque extrait XML possède des types d'extrait désignés. Le type d’extrait détermine si l’extrait de code est disponible avec le **insérer un extrait** commande, le **entourer** commande, ou les deux.
+Vous pouvez appeler des extraits de code XML à l’aide de le des deux commandes suivantes dans le menu contextuel de l’éditeur XML. Le **insérer un extrait** commande insère l’extrait de code XML à la position du curseur. Le **entourer** commande encapsule l’extrait XML autour du texte sélectionné. Chaque extrait XML possède des types d'extrait désignés. Le type d’extrait détermine si l’extrait de code est disponible avec le **insérer un extrait** commande, le **entourer** commande, ou les deux.
 
 Une fois l'extrait XML ajouté à l'éditeur, tous ses champs modifiables sont surlignés en jaune et le curseur est placé dans le premier d'entre eux.
 
@@ -80,7 +80,7 @@ Les procédures suivantes expliquent comment accéder à la **entourer** command
 
 ### <a name="to-use-surround-with-from-the-context-menu"></a>Utiliser entourer dans le menu contextuel
 
-1. Sélectionnez le texte à entourer dans l'éditeur XML.
+1. Sélectionnez le texte à entourer dans l’éditeur XML.
 
 2. Avec le bouton droit et sélectionnez **entourer**.
 
@@ -90,7 +90,7 @@ Les procédures suivantes expliquent comment accéder à la **entourer** command
 
 ### <a name="to-use-surround-with-from-the-intellisense-menu"></a>Utiliser Entourer à partir du menu IntelliSense
 
-1. Sélectionnez le texte à entourer dans l'éditeur XML.
+1. Sélectionnez le texte à entourer dans l’éditeur XML.
 
 2. À partir de la **modifier** menu, pointez sur **IntelliSense**, puis sélectionnez **entourer**.
 

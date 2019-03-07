@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 603761f2886ffc64170774a2d6c460d39596454b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9e6530f5f2856953041039171b2604236706bfd3
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922028"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525138"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Procédure : Obtenir une vue d’ensemble d’un schéma défini à l’aide de la vue du graphique
 
@@ -23,11 +23,11 @@ Cette rubrique explique comment utiliser le [vue du graphique](../xml-tools/grap
 
 1.  Créer un nouveau fichier de schéma XML et enregistrez le fichier sous *Relationships.xsd*.
 
-2.  Cliquez sur le **utiliser l’éditeur XML pour afficher et modifier le fichier de schéma XML sous-jacent** lien sur la vue de départ.
+2.  Cliquez sur le **éditeur XML de l’utiliser pour afficher et modifier le fichier de schéma XML sous-jacent** lien sur la vue de départ.
 
 3.  Copiez le code d’exemple de schéma XML à partir de [schéma de l’exemple de code XML : relations](../xml-tools/sample-xsd-file-relationships.md) et collez-le pour remplacer le code qui a été ajouté au nouveau fichier XSD par défaut.
 
-4.  Cliquez n’importe où dans l’éditeur XML et sélectionnez **Concepteur de vues**.
+4.  Avec le bouton droit n’importe où dans l’éditeur XML et sélectionnez **Concepteur de vues**.
 
 5.  Sélectionnez la vue du graphique à partir de la **barre d’outils XSD**.
 
