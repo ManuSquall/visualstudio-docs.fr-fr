@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e1bc769b27ee9dcc22cfa822eb488b0f0ea9f15
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4d6ab950c31bc6444eb0b8ae054d74c9a69ed466
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910545"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526488"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Menus contextuels (Explorateur de schémas XML)
 
@@ -50,7 +50,7 @@ Le tableau suivant décrit les options disponibles pour un nœud de type jeu de 
 |**Afficher toutes les références sortantes**|Recherche et met en surbrillance les éléments suivants :<br /><br /> -Tous les espaces de noms spécifiés dans les attributs de l’espace de noms de toutes les instructions d’importation qui n’ont pas le `schemaLocation` attribut.<br />-Tous les fichiers spécifiés dans le `schemaLocation` attributs de toutes les instructions import et include.|
 |**Afficher les Types globaux**|Recherche et met en surbrillance tous les types globaux dans ce fichier.|
 |**Afficher les éléments globaux**|Recherche et met en surbrillance tous les éléments globaux dans ce fichier.|
-|**Afficher le code**|Ouvre le fichier qui contient le nœud sélectionné dans l'Éditeur XML. L'élément sélectionné dans l'Explorateur de schémas XML est également sélectionné dans l'Éditeur XML.|
+|**Afficher le code**|Ouvre le fichier qui contient le nœud sélectionné dans l’éditeur XML. L’élément sélectionné dans l’Explorateur de schémas XML sera également être sélectionné dans l’éditeur XML.|
 |**Propriétés (fenêtre)**|Ouvre le **propriétés** fenêtre (si elle n’est pas déjà ouvert). Cette fenêtre affiche des informations sur le nœud.|
 
 ## <a name="all-global-node-types"></a>Tous les types de nœuds globaux
@@ -60,7 +60,7 @@ Le tableau suivant décrit les options disponibles pour un nœud de type jeu de 
 |-|-----------------|
 |**Afficher dans la vue du graphique**|Ouvre la vue du graphique. Si le nœud sélectionné n'est pas dans l'espace de travail, ajoute ce nœud à l'espace de travail et sélectionne le nœud.|
 |**Afficher en vue de modèle de contenu**|Ouvre la vue de modèle de contenu. Si le nœud sélectionné n'est pas dans l'espace de travail, ajoute ce nœud à l'espace de travail et sélectionne le nœud.|
-|**Afficher le code**|Ouvre le fichier qui contient le nœud sélectionné dans l'Éditeur XML. L'élément sélectionné dans l'Explorateur de schémas XML est également sélectionné dans l'Éditeur XML.|
+|**Afficher le code**|Ouvre le fichier qui contient le nœud sélectionné dans l’éditeur XML. L’élément sélectionné dans l’Explorateur de schémas XML sera également être sélectionné dans l’éditeur XML.|
 |**Propriétés (fenêtre)**|Ouvre le **propriétés** fenêtre (si elle n’est pas déjà ouvert). Cette fenêtre affiche des informations sur le nœud.|
 
 ## <a name="node-type-element"></a>Type de nœud : Élément

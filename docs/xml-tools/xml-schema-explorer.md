@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ac977be83440bfd3e0b1436635bbeb9c39c0ec
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 24dd2c13a0d2d4d2a98d11e5154b96261d19d492
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915984"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525708"
 ---
 # <a name="xml-schema-explorer"></a>Explorateur de schémas XML
 
@@ -31,7 +31,7 @@ Le **Explorateur de schémas XML** est intégré à Microsoft Visual Studio et l
 
 -   trier l’arborescence par ordre des documents, par type ou par nom ; Pour plus d’informations, consultez [tri, filtrage et de regroupement](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md).
 
--   ouvrir l'éditeur XML et accéder aux emplacements de code dans le fichier XSD ; Pour plus d’informations, consultez [intégration avec l’éditeur XML](../xml-tools/integration-with-xml-editor.md).
+-   Ouvrez l’éditeur XML et accéder à des emplacements de code dans le fichier XSD. Pour plus d’informations, consultez [intégration avec l’éditeur XML](../xml-tools/integration-with-xml-editor.md).
 
 -   générer un exemple de code XML pour les éléments globaux.
 
@@ -46,7 +46,7 @@ Le **Explorateur de schémas XML** fournit une vue hiérarchique de jeu à trave
 -   Vous pouvez accéder à la **Explorateur de schémas XML** à partir d’un *.vb* fichier ayant un littéral XML Visual Basic associé à un *.xsd* fichier. Pour afficher le schéma définis dans le **Explorateur de schémas XML**, cliquez sur un nœud XML dans un littéral XML ou une importation d’espace de noms XML et sélectionnez le **afficher dans l’Explorateur de schémas** commande. Pour plus d’informations, consultez [littéraux d’intégration de données XML avec l’Explorateur de schémas XML](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).
 
 ## <a name="tree-view"></a>arborescence
- Le **Explorateur de schémas XML** affiche précompilés schéma définie les informations dans une structure arborescente. L’arborescence est organisée comme suit :
+ Le **Explorateur de schémas XML** affiche précompilés schéma définie les informations dans une structure arborescente. L'arborescence est organisée comme suit :
 
 -   Au niveau supérieur se trouve le nœud de jeu de schémas.
 
@@ -72,11 +72,11 @@ Voici un exemple d’arborescence :
 -   L'activation d'un jeu de schémas ou d'un nœud d'espace de noms n'aboutit à rien.
 
 ## <a name="drag-and-drop-nodes"></a>Glissez -déplacez les nœuds
- Vous pouvez glisser et déposer des nœuds, des nœuds de fichier et des nœuds d’espace de noms par glisser-déposer dans une vue du concepteur XSD. Si la vue actuelle est la [vue de départ](../xml-tools/start-view.md), faire glisser un nœud à la vue s’ouvre le [vue du graphique](../xml-tools/graph-view.md). Si la vue actuelle est la [affichage du modèle de contenu](../xml-tools/content-model-view.md) ou de la vue du graphique, la vue ne change pas lorsque vous supprimez un nœud sur celle-ci.
+ Vous pouvez déplacer des nœuds, des nœuds de fichier et des nœuds d'espace de noms par glisser-déplacer dans une vue du concepteur XSD. Si la vue actuelle est la [vue de départ](../xml-tools/start-view.md), faire glisser un nœud à la vue s’ouvre le [vue du graphique](../xml-tools/graph-view.md). Si la vue actuelle est la [affichage du modèle de contenu](../xml-tools/content-model-view.md) ou de la vue du graphique, la vue ne change pas lorsque vous supprimez un nœud sur celle-ci.
 
  Suppression des fichiers sur la vue ajoutera tous les nœuds globaux dans le fichier pour le [espace de travail concepteur XSD](../xml-tools/xml-schema-designer-workspace.md). Le dépôt d’espaces de noms sur la vue ajoute tous les nœuds globaux dans l’espace de noms à l’espace de travail. L'espace de travail est partagé entre toutes les vues.
 
- Vous ne pouvez pas faire glisser-déposer des importations ou des nœuds locaux.
+ Vous ne pouvez pas faire glisser-déplacer des importations ou des nœuds locaux.
 
 ## <a name="see-also"></a>Voir aussi
 

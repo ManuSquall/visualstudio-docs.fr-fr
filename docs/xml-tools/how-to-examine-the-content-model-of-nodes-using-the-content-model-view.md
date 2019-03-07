@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d188ef947c8c789f8de032522d43c09660f2ded
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 63edeb597c3c085df3c9c9eb15f6c051e524a476
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920910"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525997"
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Procédure : Examiner le modèle de contenu de nœuds à l’aide de la vue de modèle de contenu
 
@@ -23,11 +23,11 @@ Cette rubrique explique comment Explorer vos nœuds à l’aide de la [affichage
 
 1.  Créez un fichier de schéma XML.
 
-2.  Cliquez sur **utiliser l’éditeur XML pour afficher et modifier le fichier de schéma XML sous-jacent** sur la vue de départ.
+2.  Cliquez sur **éditeur XML de l’utiliser pour afficher et modifier le fichier de schéma XML sous-jacent** sur la vue de départ.
 
 3.  Copiez le code d’exemple de schéma XML à partir de [schéma de l’exemple de code XML : schéma d’ordre d’achat](../xml-tools/sample-xsd-file-purchase-order-schema.md) et collez-le pour remplacer le code qui a été ajouté au nouveau fichier XSD par défaut.
 
-4.  Sélectionnez le `purchaseOrder` élément dans l’Explorateur de schémas en double-cliquant sur le `purchaseOrder` élément dans l’éditeur XML et en sélectionnant **afficher dans l’Explorateur XML**.
+4.  Sélectionnez le `purchaseOrder` élément dans l’Explorateur de schémas en double-cliquant sur le `purchaseOrder` élément dans le code XML éditeur et en sélectionnant **afficher dans l’Explorateur XML**.
 
 5.  Cliquez sur le `purchaseOrder` dans l’Explorateur de XML et sélectionnez **afficher en vue de modèle de contenu**.
 

@@ -8,39 +8,40 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c212bcac1584a47f696f6ab90d4f616286a2ac5e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: dab4013bf3921a2af4f69d464c10d1e70f9407b3
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912562"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526202"
 ---
 # <a name="edit-xslt-style-sheets"></a>Modification des feuilles de style XSLT
 
-L'Éditeur XML permet également de modifier des feuilles de style XSLT. Vous pouvez ainsi tirer profit des fonctionnalités par défaut de l'éditeur telles qu'IntelliSense, mode plan, extraits XML, etc. Des nouvelles fonctions facilitent en outre le développement en XSLT.
+L’éditeur XML peut également être utilisé pour modifier les feuilles de style XSLT. Vous pouvez ainsi tirer profit des fonctionnalités par défaut de l’éditeur telles qu’IntelliSense, mode plan, extraits XML, etc. Des nouvelles fonctions facilitent en outre le développement en XSLT.
 
 ## <a name="xslt-features"></a>Fonctions XSLT
- Le tableau suivant décrit les fonctionnalités spécifiques à la manipulation des feuilles de style XSLT.
 
- **La coloration syntaxique**
+Le tableau suivant décrit les fonctions spécifiques à la manipulation des feuilles de style XSLT.
 
- Mots clés XSLT, tels que `template`, `match`, et ainsi de suite, sont affichés dans la couleur de mot clé XSLT spécifiée par le **polices et couleurs** paramètres.
+**La coloration syntaxique**
 
- **Soulignements ondulés**
+Mots clés XSLT, tels que `template` et `match`, sont affichés dans la couleur de mot clé XSLT spécifiée par le **polices et couleurs** paramètres.
 
- L’éditeur XML utilise installée *xslt.xsd* fichier pour valider les feuilles de style XSLT. Les erreurs de validation sont indiquées par des soulignements ondulés bleus. L'éditeur XML compile également la feuille de style en arrière-plan et signale les erreurs ou avertissements du compilateur à l'aide de soulignements ondulés appropriés.
+**Soulignements ondulés**
 
- **Prise en charge des blocs de script**
+L’éditeur XML utilise installée *xslt.xsd* fichier pour valider les feuilles de style XSLT. Les erreurs de validation sont indiquées par des soulignements ondulés bleus. L’éditeur XML compile également la feuille de style en arrière-plan et signale les erreurs du compilateur ou avertissements avec des soulignements ondulés appropriés.
 
- Le code placé dans des blocs de script est pris en charge par le débogueur XSLT ; vous pouvez donc définir des points d'arrêt et effectuer une exécution pas à pas dans le code du bloc de script.
+**Prise en charge des blocs de script**
 
- **Afficher la sortie XSLT**
+Le code placé dans des blocs de script est pris en charge par le débogueur XSLT ; vous pouvez donc définir des points d'arrêt et effectuer une exécution pas à pas dans le code du bloc de script.
 
- Vous pouvez exécuter une transformation XSL et afficher la sortie depuis l'éditeur XML. Pour plus d'informations, voir [Procédure : Exécuter une transformation XSLT à partir de l’éditeur XML](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md).
+**Afficher la sortie XSLT**
 
- **Débogage XSLT**
+Vous pouvez exécuter une transformation XSL et afficher la sortie à partir de l’éditeur XML. Pour plus d'informations, voir [Procédure : Exécuter une transformation XSLT à partir de l’éditeur XML](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md).
 
- Vous pouvez lancer le débogueur XSLT à partir d'un fichier XSLT dans l'éditeur XML. Le débogueur prend en charge la définition de points d'arrêt dans le fichier XSLT, l'affichage de l'état d'exécution de XSLT, etc. Lorsque le pointeur est placé sur une variable XSLT, une info-bulle apparaît et affiche la valeur de la variable. Le débogueur peut permettre de déboguer une feuille de style ou une transformation XSLT compilée invoquée depuis une autre application. Pour plus d’informations, consultez [XSLT débogage](../xml-tools/debugging-xslt.md).
+**Débogage XSLT**
+
+Vous pouvez lancer le débogueur XSLT à partir d’un fichier XSLT dans l’éditeur XML. Le débogueur prend en charge la définition de points d'arrêt dans le fichier XSLT, l'affichage de l'état d'exécution de XSLT, etc. Lorsque le pointeur est placé sur une variable XSLT, une info-bulle apparaît et affiche la valeur de la variable. Le débogueur peut permettre de déboguer une feuille de style ou une transformation XSLT compilée invoquée depuis une autre application. Pour plus d’informations, consultez [XSLT débogage](../xml-tools/debugging-xslt.md).
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d9ef409b305901cc36e67eeadfe0000202c935b5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 528a57ddf6dd9b193e767a4942d26e43789043c0
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602284"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525897"
 ---
 # <a name="office-primary-interop-assemblies"></a>assemblys PIA (Primary Interop Assembly) Office
 
@@ -57,15 +57,15 @@ Quand vous installez Visual Studio, les assemblys PIA sont automatiquement insta
 
 Ces copies des assemblys PIA aident Visual Studio à éviter plusieurs problèmes de développement pouvant se produire quand différentes versions d'assemblys PIA sont enregistrées dans le Global Assembly Cache.
 
-Visual Studio installe ces copies des assemblys PIA aux emplacements suivants sur l'ordinateur de développement :
+À partir de Visual Studio 2017, ces copies des assemblys PIA sont installés sur l’ordinateur de développement qui suivent des emplacements partagés :
 
-- *%ProgramFiles%\Microsoft visual Studio 12. 0\Visual Studio Tools for Office\PIA\Office14*
+- *%ProgramFiles%\Microsoft Studio\Shared\Visual visual Studio Tools for Office\PIA\*
 
-  (ou *% ProgramFiles (x86) %\Microsoft Visual Studio 12. 0\Visual Studio Tools for Office\PIA\Office14* sur les systèmes d’exploitation 64 bits)
+- (ou * % ProgramFiles (x86) %\Microsoft Visual Studio\Shared\Visual Studio Tools pour Office\PIA\* sur les systèmes d’exploitation 64 bits)
 
-- *%ProgramFiles%\Microsoft visual Studio 12. 0\Visual Studio Tools for Office\PIA\Office15*
-
-  (ou *% ProgramFiles (x86) %\Microsoft Visual Studio 12. 0\Visual Studio Tools for Office\PIA\Office15* sur les systèmes d’exploitation 64 bits)
+> [!NOTE]
+> Pour les versions antérieures de Visual Studio, ces PIA sera installé dans Visual Studio Tools pour le dossier Office\PIA sous le * % ProgramFiles% pour cette version de Visual Studio.  
+> Par exemple : * % ProgramFiles (x86) %\Microsoft Visual Studio 14.0\Visual Studio Tools for Office\PIA\*
 
 ### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>Assemblys PIA dans le global assembly cache
 
@@ -79,7 +79,7 @@ Les assemblys PIA Office ne sont pas obligatoires sur les ordinateurs des utilis
 
 Tous les modèles de projet Office dans Visual Studio sont conçus pour fonctionner avec une seule application Microsoft Office. Pour utiliser des fonctionnalités dans plusieurs applications Microsoft Office ou dans une application ou composant qui ne dispose pas d'un projet dans Visual Studio, vous devez ajouter une référence aux assemblys PIA requis.
 
-Dans la plupart des cas, vous devez ajouter des références aux assemblys PIA sont installés par Visual Studio sous le `%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\` directory. Ces versions des assemblys apparaissent sous la **Framework** onglet de la **Gestionnaire de références** boîte de dialogue. Pour plus d'informations, voir [Procédure : Cibler les applications Office via les assemblys PIA](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).
+Dans la plupart des cas, vous devez ajouter des références aux assemblys PIA sont installés par Visual Studio sous le `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` directory. Ces versions des assemblys apparaissent sous la **Framework** onglet de la **Gestionnaire de références** boîte de dialogue. Pour plus d'informations, voir [Procédure : Cibler les applications Office via les assemblys PIA](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).
 
 Si vous avez installé et enregistré les assemblys PIA dans le Global Assembly Cache, ces versions des assemblys apparaissent sous l'onglet **COM** de la boîte de dialogue **Gestionnaire de références** . Vous devez éviter d'ajouter des références à ces versions d'assemblys, car des erreurs de développement peuvent se produire quand vous les utilisez. Par exemple, si vous avez enregistré différentes versions des assemblys PIA dans le Global Assembly Cache, votre projet crée automatiquement une liaison à la dernière version enregistrée de l'assembly, même si vous spécifiez une autre version de l'assembly sous l'onglet **COM** de la boîte de dialogue **Gestionnaire de références** .
 
@@ -90,7 +90,7 @@ Si vous avez installé et enregistré les assemblys PIA dans le Global Assembly 
 
 ## <a name="primary-interop-assemblies-for-microsoft-office-applications"></a>Assemblys PIA pour les applications Microsoft Office
 
-La table suivante indique les assemblys PIA disponibles pour [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] et [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].
+Le tableau suivant répertorie les assemblys PIA qui sont disponibles pour [!INCLUDE[Office_16_short](../vsto/includes/office-16-short-md.md)], [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] et [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].
 
 <br/>
 

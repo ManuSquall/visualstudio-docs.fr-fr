@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00cad1b3087b1a7cd8b530ca659ad6c87868a3ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b858d0b5fb8aab1dabb90ae47d234869412adf2e
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933572"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525789"
 ---
 # <a name="content-model-view"></a>Vue de modèle de contenu
 
@@ -33,7 +33,7 @@ Pour plus d’informations sur l’ajout de nœuds, consultez la section « Ajo
 
 Lorsqu’un nœud est sélectionné dans le **espace de travail** Panneau de configuration, il est ajouté à l’aire de conception vue de modèle de contenu où vous pouvez afficher les détails du nœud.
 
-Le modèle de contenu d’un nœud est représenté par une arborescence graphique développable avec des éléments et des attributs qui apparaissent sous forme de nœuds d’arbre. Un seul niveau est développé par défaut. D'autres informations, telles que les compositeurs, les noms de type, les groupes et d'autres conteneurs sont placés dans une barre verticale (lorsque ces informations sont développées) le long des éléments et des attributs qu'ils encadrent. Lorsque vous double-cliquez sur une barre verticale, elle devient horizontale et l'arborescence est réduite. Lorsque vous double-cliquez sur une barre horizontale, elle devient verticale et l’arborescence est développée. En sélectionnant la barre verticale sélectionne tous les nœuds dans le conteneur. Développeurs apparaissent à droite d’un nœud si un élément peut être développé ou réduit.
+Le modèle de contenu d'un nœud est représenté par une arborescence graphique développable avec des éléments et des attributs qui apparaissent sous forme de nœuds d'arbre. Un seul niveau est développé par défaut. D'autres informations, telles que les compositeurs, les noms de type, les groupes et d'autres conteneurs sont placés dans une barre verticale (lorsque ces informations sont développées) le long des éléments et des attributs qu'ils encadrent. Lorsque vous double-cliquez sur une barre verticale, elle devient horizontale et l'arborescence est réduite. Lorsque vous double-cliquez sur une barre horizontale, elle devient verticale et l’arborescence est développée. En sélectionnant la barre verticale sélectionne tous les nœuds dans le conteneur. Développeurs apparaissent à droite d’un nœud si un élément peut être développé ou réduit.
 
 Si l’aire de conception est vide, l’éditeur XML, le **Explorateur de schémas XML**, et le filigrane sont affichés. Le *filigrane* est une liste de liens vers toutes les vues du concepteur XSD. Si le jeu de schémas comporte des erreurs, le texte suivant s’affiche à la fin de la liste : « Utiliser la liste d’erreurs pour afficher et corriger les erreurs dans le jeu. »
 
@@ -51,8 +51,8 @@ Lorsque vous cliquez sur un élément sur l’aire de conception ou **espace de 
 |**Afficher dans la vue du graphique**|Bascule vers la vue du graphique.|
 |**Générer un exemple de XML**|Disponible uniquement pour les éléments globaux. Génère un exemple de fichier XML pour l'élément global.|
 |**Afficher la Documentation**|Affiche ou masque le contenu du nœud Annotation/Documentation.|
-|**Exporter le diagramme en tant qu’Image**|Enregistre l’aire de conception dans un fichier XPS.|
-|**Afficher le code**|Ouvre le fichier qui contient le nœud sélectionné dans l'Éditeur XML. L’élément est sélectionné dans le **Explorateur de schémas XML** est également sélectionné dans l’éditeur XML.|
+|**Exporter le diagramme en tant qu’Image**|Enregistre l'aire de conception dans un fichier XPS.|
+|**Afficher le code**|Ouvre le fichier qui contient le nœud sélectionné dans l’éditeur XML. L’élément est sélectionné dans le **Explorateur de schémas XML** est également sélectionné dans l’éditeur XML.|
 |**Propriétés (fenêtre)**|Ouvre le **propriétés** fenêtre (si elle n’est pas déjà ouvert). Cette fenêtre affiche des informations sur le nœud.|
 
 Le tableau suivant décrit les options disponibles pour le **espace de travail** Panneau de configuration.
@@ -66,7 +66,7 @@ Le tableau suivant décrit les options disponibles pour le **espace de travail**
 |**Supprimer toutes les valeurs sauf la sélection à partir de l’espace de travail**|Supprime les nœuds qui ne sont pas sélectionnés dans l'espace de travail et l'aire de conception.|
 |**Générer un exemple de XML**|Disponible uniquement pour les éléments globaux. Génère un exemple de fichier XML pour l'élément global.|
 |**Sélectionner tout**|Sélectionne tous les nœuds dans le **espace de travail** Panneau de configuration.|
-|**Afficher le code**|Ouvre le fichier qui contient le nœud sélectionné dans l'Éditeur XML. L’élément est sélectionné dans le **Explorateur de schémas XML** est également sélectionné dans l’éditeur XML.|
+|**Afficher le code**|Ouvre le fichier qui contient le nœud sélectionné dans l’éditeur XML. L’élément est sélectionné dans le **Explorateur de schémas XML** est également sélectionné dans l’éditeur XML.|
 |**Propriétés (fenêtre)**|Ouvre le **propriétés** fenêtre (si elle n’est pas déjà ouvert). Cette fenêtre affiche des informations sur le nœud.|
 
 ## <a name="properties-window"></a>Fenêtre Propriétés

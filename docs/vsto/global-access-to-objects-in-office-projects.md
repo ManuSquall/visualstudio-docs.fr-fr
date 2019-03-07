@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9c9ed2a67f320d9d7af94e1a31d88e48e3672a11
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5dbe3c5810de40e19ab5abc3698a791388508283
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600387"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525195"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Accès global aux objets dans les projets Office
   Lorsque vous créez un projet Office, Visual Studio génère automatiquement une classe nommée `Globals` dans le projet. Vous pouvez utiliser la classe `Globals` pour accéder à plusieurs éléments de projet différents au moment de l'exécution à partir du code du projet.
@@ -74,7 +74,7 @@ ms.locfileid: "56600387"
  Code qui tente d’utiliser la `Globals` classe avant l’initialisation du document ou un complément VSTO peut lever une exception au moment de l’exécution. Par exemple, l'utilisation de `Globals` lors de la déclaration d'une variable au niveau de la classe peut échouer, car la classe `Globals` peut ne pas être initialisée avec des références à tous les éléments hôtes avant l'instanciation de l'objet déclaré.
 
 > [!NOTE]
->  La classe `Globals` n'est jamais initialisée au moment du design, mais des instances de contrôle sont créées par le concepteur. Cela signifie que si vous créez un contrôle utilisateur qui utilise une propriété de la classe `Globals` depuis l'intérieur d'une classe de contrôle utilisateur, vous devez spécifier si la propriété doit retourner **null** avant d'essayer d'utiliser l'objet retourné.
+>  La classe `Globals` n'est jamais initialisée au moment du design, mais des instances de contrôle sont créées par le concepteur. Cela signifie que si vous créez un contrôle utilisateur qui utilise une propriété de la `Globals` classe à partir d’à l’intérieur d’une classe de contrôle utilisateur, vous devez vérifier si la propriété retourne **null** avant d’essayer d’utiliser l’objet retourné.
 
 ## <a name="see-also"></a>Voir aussi
 - [Accéder au ruban lors de l’exécution](../vsto/accessing-the-ribbon-at-run-time.md)

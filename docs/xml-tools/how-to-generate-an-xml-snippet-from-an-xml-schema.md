@@ -8,18 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8f9d984cabdb9e29ff1f5eac1734105d2a3e2f4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 311503aed0787fece7985d7df1f6dc2d4ddd03b2
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913952"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526241"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Procédure : Générer un extrait XML à partir d’un schéma XML
 
-L'éditeur XML permet de générer des extraits XML à partir d'un schéma de langage XSD (XML Schema definition). Par exemple, lorsque vous créez un fichier XML, tout en étant positionné en regard du nom de l’élément, vous pouvez appuyer sur **onglet** pour remplir l’élément avec des données XML générées à partir des informations de schéma pour cet élément.
+L’éditeur XML a la possibilité de générer des extraits XML à partir d’un schéma XML Schema definition language (XSD). Par exemple, lorsque vous créez un fichier XML, tout en étant positionné en regard du nom de l’élément, vous pouvez appuyer sur **onglet** pour remplir l’élément avec des données XML générées à partir des informations de schéma pour cet élément.
 
-Cette fonctionnalité n’est disponible que pour les éléments. Les règles suivantes s'appliquent également :
+Cette fonction n'est disponible que pour les éléments. Les règles suivantes s'appliquent également :
 
 -   L'élément doit avoir un type de schéma associé ; autrement dit, l'élément doit être valide par rapport à un schéma associé. Le type de schéma ne peut pas être abstract et doit contenir les attributs et/ou éléments enfants obligatoires.
 
@@ -43,7 +43,7 @@ Des valeurs par défaut sont générées et notées comme valeurs modifiables. S
 
 ## <a name="example"></a>Exemple
 
- Les étapes décrites dans cette section vous montrent comment utiliser la fonctionnalité générés par schéma d’extrait de code XML de l’éditeur XML.
+ Les étapes décrites dans cette section vous montrent comment utiliser la fonctionnalité d’extrait de code XML généré par le schéma de l’éditeur XML.
 
 > [!NOTE]
 > Avant d'entamer ces procédures, enregistrez le fichier de schéma sur votre ordinateur local.
