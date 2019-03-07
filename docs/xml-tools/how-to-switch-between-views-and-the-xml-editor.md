@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Basculer entre les vues et l’éditeur XML'
+title: 'Procédure : Commuter entre les vues et l’éditeur XML'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: cb69fbbd-d99c-439e-9498-5df9050f8df0
@@ -8,22 +8,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d7d4964aa83e4db03c8f9d21297b88ba90b2078
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c6ea8cd3b4dfe1d8e9732fab6467328d2528268d
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944141"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525494"
 ---
 # <a name="how-to-switch-between-views-and-the-xml-editor"></a>Procédure : Basculer entre les vues et l’éditeur XML
 
-Cette rubrique montre comment basculer entre les vues XML du Concepteur de schémas XML (Concepteur XSD) et l'Éditeur XML. Cet exemple utilise le [schéma de bon de commande](../xml-tools/sample-xsd-file-simple-schema.md).
+Cette rubrique montre comment basculer entre les vues du Concepteur de schémas XML (Concepteur XSD) et de l’éditeur XML. Cet exemple utilise le [schéma de bon de commande](../xml-tools/sample-xsd-file-simple-schema.md).
 
-## <a name="to-switch-between-the-views-and-the-xml-editor"></a>Pour basculer entre les vues et l'Éditeur XML
+## <a name="to-switch-between-the-views-and-the-xml-editor"></a>Pour basculer entre les vues et de l’éditeur XML
 
 1.  Pour créer et modifier un fichier de schéma XML, suivez les étapes de [Comment : Créer et modifier un fichier de schéma XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2.  Pour basculer vers le Concepteur de schémas XML à partir de l’éditeur XML, cliquez sur n’importe où dans l’éditeur XML et sélectionnez **Concepteur de vues**.
+2.  Pour basculer vers le Concepteur de schémas XML à partir de l’éditeur XML, avec le bouton droit n’importe où dans l’éditeur XML et sélectionnez **Concepteur de vues**.
 
 3.  Pour basculer vers la vue du graphique à l’aide de la limite, cliquez sur le **utiliser la vue du graphique pour voir la relation entre les nœuds** lien sur la vue de départ.
 
