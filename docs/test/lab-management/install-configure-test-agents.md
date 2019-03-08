@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55cff84a4633b3b59d8167c0f460cbd96a98f04c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 04111b7a408b2378e0067ce1e3dd4e5ffd23ee48
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912740"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223024"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Installer des agents de test et des contrôleurs de test
 
@@ -24,7 +24,7 @@ Vous pouvez aussi vous demander s’il ne serait pas plus facile [d’utiliser l
 
 ## <a name="system-requirements"></a>Configuration requise
 
-Le tableau suivant présente la configuration système requise pour l’installation de l’agent de test ou du contrôleur de test pour Visual Studio 2017 :
+Le tableau suivant présente la configuration système requise pour l’installation de l’agent de test ou du contrôleur de test pour Visual Studio :
 
 | Élément | Spécifications |
 | ---- | ------------ |
@@ -34,7 +34,7 @@ Le tableau suivant présente la configuration système requise pour l’installa
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Installer le contrôleur de test et les agents de test
 
-Vous pouvez télécharger des agents pour Visual Studio 2017 à partir de [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Recherchez *Agents pour Visual Studio 2017*, sélectionnez *Agent* ou *Contrôleur*, puis choisissez *Télécharger*. Exécutez l’exécutable téléchargé pour installer l’agent de test ou le contrôleur de test.
+Vous pouvez télécharger des agents pour Visual Studio à partir de [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Recherchez *Agents pour Visual Studio 2017*, sélectionnez *Agent* ou *Contrôleur*, puis choisissez *Télécharger*. Exécutez l’exécutable téléchargé pour installer l’agent de test ou le contrôleur de test.
 
 Vous pouvez télécharger des agents pour Visual Studio 2015 et Visual Studio 2013 à partir de la page [Téléchargements plus anciens](https://visualstudio.microsoft.com/vs/older-downloads/).
 

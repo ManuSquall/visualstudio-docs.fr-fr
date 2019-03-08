@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11fb8fe4b30aa986a6c442278d1e8984604a6794
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: df48a659d7718691d86909458a4a1a150d2d64dd
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927982"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223518"
 ---
 # <a name="get-started-with-unit-testing"></a>Bien démarrer avec les tests unitaires
 
@@ -74,7 +74,7 @@ Vous pouvez également créer des stubs de méthodes de tests unitaires avec la 
 Si vous utilisez le framework de tests MSTest, xUnit ou NUnit dans Visual Studio 2017 ou une version ultérieure, vous pouvez afficher les résultats temps réel de vos tests unitaires.
 
 > [!NOTE]
-> Les tests unitaires en direct ne sont disponibles que dans Visual Studio 2017 Enterprise.
+> Live Unit Testing est uniquement disponible dans Visual Studio Enterprise.
 
 1. Activez les tests unitaires en direct à partir du menu **Test**.
 

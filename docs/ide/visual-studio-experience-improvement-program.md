@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbebdd92941fcc7873e59973303289a60496383f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f64655dd1afca25ca0c216fa93cb9f85fb4a5b41
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927527"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323116"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Programme d’amélioration du produit Visual Studio
 
@@ -31,8 +31,7 @@ Le programme VSCEIP est activé par défaut. Vous pouvez le désactiver ou le r�
 
    La boîte de dialogue **Programme d’amélioration de l’expérience utilisateur Visual Studio** s’ouvre.
 
-1. Pour refuser de participer, sélectionnez **Non, je ne souhaite pas participer**, puis sélectionnez **OK**.
-   Pour accepter de participer, sélectionnez **Oui, je souhaite participer**, puis sélectionnez **OK**.
+1. Pour refuser de participer, sélectionnez **Non, je ne souhaite pas participer**, puis sélectionnez **OK**. Pour accepter de participer, sélectionnez **Oui, je souhaite participer**, puis sélectionnez **OK**.
 
    ![Boîte de dialogue Programme d’amélioration de l’expérience utilisateur Visual Studio](media/experience-improvement-program.png)
 
@@ -42,11 +41,26 @@ Si vous installez [Visual Studio Build Tools](https://visualstudio.microsoft.com
 
 La clé et les paramètres de Registre appropriés sont les suivants :
 
-Sur un système d’exploitation 64 bits, la clé est **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM** Sur un système d’exploitation 32 bits, la clé est **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM** Quand la stratégie de groupe est activée, la clé est **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
+::: moniker range="vs-2017"
 
-Entry = **OptIn**
+- Sur un OS 64 bits, clé = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM**
+- Sur un OS 32 bits, clé = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM**
+- Quand la stratégie de groupe est activée, clé = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- Sur un système d’exploitation 64 bits, clé = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\16.0\SQM**
+- Sur un système d’exploitation 32 bits, clé = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\16.0\SQM**
+- Quand la stratégie de groupe est activée, clé = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
+
+::: moniker-end
+
+Entrée = **OptIn**
 
 Valeur = (DWORD)
+
 - **0** pour refuser de participer (permet de désactiver le programme VSCEIP)
 - **1** pour accepter de participer (permet d’activer le programme VSCEIP)
 
@@ -59,6 +73,6 @@ Pour plus d’informations sur les informations collectées, traitées ou transm
 
 * [Informations de diagnostic collectées par Visual Studio](diagnostic-data-collection.md)
 * [Nous contacter](../ide/talk-to-us.md)
-* [Comment signaler un problème avec Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
+* [Comment signaler un problème avec Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md)
 * [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com/)
 * [Déclaration de confidentialité Microsoft](https://privacy.microsoft.com/privacystatement)

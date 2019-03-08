@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2e4652bb6a0ea1ec138138e6966ab005362a45d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7faad2a4d10b304cd273f51559fb67dbd0f876a2
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937520"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223245"
 ---
 # <a name="create-solutions-and-projects"></a>Créer des solutions et des projets
 
@@ -53,7 +53,7 @@ Cela étant dit, le développement d’applications dans Visual Studio peut se f
    ![Nouveau projet, boîte de dialogue](./media/vside-newproject-templates-list.png)
 
    > [!NOTE]
-   > La liste des langages de programmation et des modèles de projet disponibles dépend de la version de Visual Studio que vous utilisez et des charges de travail qui sont installées. Pour découvrir comment installer des charges de travail supplémentaires, consultez [Modifier Visual Studio 2017 en ajoutant ou supprimant des charges de travail et des composants](../install/modify-visual-studio.md).
+   > La liste des langages de programmation et des modèles de projet disponibles dépend de la version de Visual Studio que vous utilisez et des charges de travail qui sont installées. Pour découvrir comment installer des charges de travail supplémentaires, consultez [Modifier Visual Studio en ajoutant ou supprimant des charges de travail et des composants](../install/modify-visual-studio.md).
 
 2. Affichez la liste des modèles disponibles pour le langage de programmation souhaité en choisissant la flèche à côté du nom du langage, puis en choisissant un type de projet.
 

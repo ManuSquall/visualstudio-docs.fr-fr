@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5a74c5992699fa321839c671f527c513ae2b9291
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 38cb805978396c8c1744a953a7b1ef7417f43483
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155485"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323249"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Guide pratique pour installer la prise en charge de Python dans Visual Studio sur Windows
 
@@ -47,7 +47,17 @@ Pour tester rapidement la prise en charge de Python après avoir suivi la procé
 
     ![Charge de travail de développement Python dans le programme d’installation de Visual Studio](media/installation-python-workload.png)
 
-    Facultatif : Si vous travaillez dans le domaine de la science des données, considérez également la charge de travail **Applications de science des données et analytiques**. Cette charge de travail inclut la prise en charge de Python, ainsi que les langages R et F#. Pour plus d’informations, consultez [Charge de travail Applications de science et analyse des données](../rtvs/data-science-and-analytical-applications-workload.md).
+   ::: moniker range="vs-2017"
+
+    Facultatif : Si vous travaillez dans le domaine de la science des données, considérez également la charge de travail **Applications de science des données et analytiques**. Cette charge de travail inclut la prise en charge des langages Python, R et F#. Pour plus d’informations, consultez [Charge de travail Applications de science et analyse des données](data-science-and-analytical-applications-workload.md).
+    
+    ::: moniker-end
+    
+   ::: moniker range=">=vs-2019"
+
+    Facultatif : Si vous travaillez dans le domaine de la science des données, considérez également la charge de travail **Applications de science des données et analytiques**. Cette charge de travail inclut la prise en charge des langages Python et F#. Pour plus d’informations, consultez [Charge de travail Applications de science et analyse des données](data-science-and-analytical-applications-workload.md).
+    
+    ::: moniker-end
 
     > [!Note]
     > Les charges de travail Python et Science des données ne sont disponibles qu’avec Visual Studio 2017 version 15.2 et version ultérieure.

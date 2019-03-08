@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: 022ca2d1365d947d9eaa89e5bedddcf1b0f2a2e6
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: a19a243d6bd54c62d680ff348be016c011653db7
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318314"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221890"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>FAQ concernant l’Explorateur de tests Visual Studio
 
@@ -27,71 +27,71 @@ ms.locfileid: "56318314"
 
 **L’Explorateur de tests ne découvre pas mes tests qui sont définis dynamiquement (théories, adaptateurs personnalisés, caractéristiques personnalisées, #ifdefs, etc.). Comment puis-je découvrir ces tests ?**
 
-  Générez votre projet et vérifiez que la découverte basée sur les assemblys est activée sous **Outils** > **Options** > **Test**.
+Générez votre projet et vérifiez que la découverte basée sur les assemblys est activée sous **Outils** > **Options** > **Test**.
 
-  La [découverte de tests en temps réel](https://go.microsoft.com/fwlink/?linkid=862824) correspond à la découverte de tests basée sur les sources. Elle ne peut pas découvrir les tests qui utilisent des théories, des adaptateurs personnalisés, des caractéristiques personnalisées, des instructions `#ifdef`, etc., car ils sont définis au moment de l’exécution. Une build est nécessaire pour trouver ces tests avec précision. Dans Visual Studio 2017 version 15.6 et ultérieure, la découverte basée sur les assemblys (le découvreur traditionnel) s’exécute seulement après les builds. En d’autres termes, la découverte de tests en temps réel trouve autant de tests que possible au fur et à mesure que vous effectuez des modifications, et la découverte basée sur les assemblys permet de faire apparaître les tests définis dynamiquement après une build. La découverte de tests en temps réel améliore la réactivité, tout en vous permettant d’obtenir des résultats complets et précis après une build.
+La [découverte de tests en temps réel](https://go.microsoft.com/fwlink/?linkid=862824) correspond à la découverte de tests basée sur les sources. Elle ne peut pas découvrir les tests qui utilisent des théories, des adaptateurs personnalisés, des caractéristiques personnalisées, des instructions `#ifdef`, etc., car ils sont définis au moment de l’exécution. Une build est nécessaire pour trouver ces tests avec précision. Dans Visual Studio 2017 version 15.6 et ultérieure, la découverte basée sur les assemblys (le découvreur traditionnel) s’exécute seulement après les builds. En d’autres termes, la découverte de tests en temps réel trouve autant de tests que possible au fur et à mesure que vous effectuez des modifications, et la découverte basée sur les assemblys permet de faire apparaître les tests définis dynamiquement après une build. La découverte de tests en temps réel améliore la réactivité, tout en vous permettant d’obtenir des résultats complets et précis après une build.
 
 ## <a name="test-explorer--plus-symbol"></a>Symbole « + » (plus) de l’Explorateur de tests
 
 **Que signifie le signe plus (+) qui apparaît sur la ligne supérieure l’Explorateur de tests ?**
 
-  Le signe « + » (plus) indique que d’autres tests peuvent être découverts après une build tant que la découverte basée sur les assemblys est activée. Ce symbole apparaît si des tests définis dynamiquement sont détectés dans votre projet.
+Le signe « + » (plus) indique que d’autres tests peuvent être découverts après une build tant que la découverte basée sur les assemblys est activée. Ce symbole apparaît si des tests définis dynamiquement sont détectés dans votre projet.
 
-  ![Signe plus sur la ligne de résumé](media/testex-plussymbol.png)
+![Signe plus sur la ligne de résumé](media/testex-plussymbol.png)
 
 ## <a name="assembly-based-discovery"></a>Découverte basée sur les assemblys
 
 **La découverte basée sur les assemblys ne fonctionne plus avec mon projet. Comment puis-je la réactiver ?**
 
-  Accédez à **Outils** > **Options** > **Test** et cochez la case **Découvrez également les tests des assemblys générés après les builds**.
+Accédez à **Outils** > **Options** > **Test** et cochez la case **Découvrez également les tests des assemblys générés après les builds**.
 
-  ![Option basée sur les assemblys](media/testex-toolsoptions.png)
+![Option basée sur les assemblys](media/testex-toolsoptions.png)
 
 ## <a name="real-time-test-discovery"></a>Découverte de tests en temps réel
 
 **Les tests s’affichent désormais automatiquement dans l’Explorateur de tests quand j’écris, sans que j’aie à générer mon projet. Que s’est-il passé ?**
 
-  Cette fonctionnalité s’appelle la [découverte de tests en temps réel](https://go.microsoft.com/fwlink/?linkid=862824). Elle utilise un analyseur Roslyn pour trouver les tests et remplir l’Explorateur de tests en temps réel, sans que vous ayez à générer votre projet. Pour plus d’informations sur le comportement de la découverte de tests pour les tests définis dynamiquement, par exemple les théories ou les caractéristiques personnalisées, consultez le FAQ n° 1.
+Cette fonctionnalité s’appelle la [découverte de tests en temps réel](https://go.microsoft.com/fwlink/?linkid=862824). Elle utilise un analyseur Roslyn pour trouver les tests et remplir l’Explorateur de tests en temps réel, sans que vous ayez à générer votre projet. Pour plus d’informations sur le comportement de la découverte de tests pour les tests définis dynamiquement, par exemple les théories ou les caractéristiques personnalisées, consultez le FAQ n° 1.
 
 ## <a name="real-time-test-discovery-compatibility"></a>Compatibilité de la découverte de tests en temps réel
 
 **Quels langages et quelles infrastructures de test peuvent utiliser la découverte de tests en temps réel ?**
 
-  La [découverte de tests en temps réel](https://go.microsoft.com/fwlink/?linkid=862824) fonctionne uniquement avec les langages managés (C# et Visual Basic), car elle utilise le compilateur Roslyn. Pour le moment, la découverte de tests en temps réel fonctionne uniquement avec les frameworks xUnit, NUnit et MSTest.
+La [découverte de tests en temps réel](https://go.microsoft.com/fwlink/?linkid=862824) fonctionne uniquement avec les langages managés (C# et Visual Basic), car elle utilise le compilateur Roslyn. Pour le moment, la découverte de tests en temps réel fonctionne uniquement avec les frameworks xUnit, NUnit et MSTest.
 
 ## <a name="test-explorer-logs"></a>Journaux de l’Explorateur de tests
 
 **Comment activer les journaux pour l’Explorateur de tests ?**
 
-  Accédez à **Outils** > **Options** > **Test** et recherchez la section Journalisation.
+Accédez à **Outils** > **Options** > **Test** et recherchez la section Journalisation.
 
 ## <a name="uwp-test-discovery"></a>Découverte de tests UWP
 
 **Pourquoi dois-je d’abord déployer mon application pour que mes tests soient découverts dans des projets UWP ?**
 
-  Les tests UWP ciblent un runtime différent quand l’application est déployée. Pour trouver de manière précise les tests pour les projets UWP, vous devez donc non seulement générer votre projet, mais aussi le déployer.
+Les tests UWP ciblent un runtime différent quand l’application est déployée. Pour trouver de manière précise les tests pour les projets UWP, vous devez donc non seulement générer votre projet, mais aussi le déployer.
 
 ## <a name="test-explorer-sorting"></a>Tri dans l’Explorateur de tests
 
 **Comment fonctionne le tri des résultats de tests dans l’affichage des hiérarchies ?**
 
-  L’affichage des hiérarchies trie les tests par ordre alphabétique et non par résultat. Les autres paramètres de regroupement trient normalement les résultats de tests par résultat, puis par ordre alphabétique. Consultez les différentes options de regroupement dans l’image suivante à des fins de comparaison. Vous pouvez fournir des commentaires sur la conception [dans ce problème GitHub](https://github.com/Microsoft/vstest/issues/1425).
+L’affichage des hiérarchies trie les tests par ordre alphabétique et non par résultat. Les autres paramètres de regroupement trient normalement les résultats de tests par résultat, puis par ordre alphabétique. Consultez les différentes options de regroupement dans l’image suivante à des fins de comparaison. Vous pouvez fournir des commentaires sur la conception [dans ce problème GitHub](https://github.com/Microsoft/vstest/issues/1425).
 
-  ![SortingExamples](media/testex-sortingex.png)
+![SortingExamples](media/testex-sortingex.png)
 
 ## <a name="test-explorer-hierarchy-view"></a>Vue de la hiérarchie de l’Explorateur de tests
 
 **La vue de la hiérarchie inclut des icônes passed (réussi), failed (échec), skipped (ignoré) et not run (non exécuté) en regard des regroupements Projet, Espace de noms et Classe. Que signifient ces icônes ?**
 
-  Les icônes en regard des regroupements Projet, Espace de noms et Classe indiquent l’état des tests dans le regroupement. Consultez le tableau suivant.
+Les icônes en regard des regroupements Projet, Espace de noms et Classe indiquent l’état des tests dans le regroupement. Consultez le tableau suivant.
 
-  ![Icônes de la hiérarchie de l’Explorateur de tests](media/testex-hierarchyicons.png)
+![Icônes de la hiérarchie de l’Explorateur de tests](media/testex-hierarchyicons.png)
 
 ## <a name="search-by-file-path"></a>Rechercher par chemin d’accès du fichier
 
 **Il n’y a plus de filtre « Chemin d’accès du fichier » dans la zone de recherche de l’explorateur de tests.**
 
-Le filtre de chemin d’accès du fichier dans la zone de recherche de l’**explorateur de tests** a été supprimé dans Visual Studio 2017, version 15.7, préversion 3. Cette fonctionnalité étant très peu utilisée, l’Explorateur de tests peut récupérer des méthodes de test plus rapidement en la laissant de côté. Si ce changement interrompt votre flux de développement, faites-le nous savoir en envoyant vos commentaires à la [Communauté des développeurs](https://developercommunity.visualstudio.com/).
+Le filtre de chemin d’accès du fichier dans la zone de recherche de l’**Explorateur de tests** a été supprimé dans Visual Studio 2017, version 15.7. Cette fonctionnalité étant très peu utilisée, l’Explorateur de tests peut récupérer des méthodes de test plus rapidement en la laissant de côté. Si ce changement interrompt votre flux de développement, faites-le nous savoir en envoyant vos commentaires à la [Communauté des développeurs](https://developercommunity.visualstudio.com/).
 
 ## <a name="remove-undocumented-interfaces"></a>Supprimer des interfaces non documentées
 
@@ -112,11 +112,11 @@ Au lieu d’utiliser des extensions d’adaptateur de test, les projets doivent 
 > [!NOTE]
 > Si vous utilisez l’adaptateur de test NUnit 2 et que vous ne pouvez pas migrer vers l’adaptateur de test NUnit 3, vous pouvez désactiver ce nouveau comportement de la découverte dans Visual Studio version 15.8 dans **Outils** > **Options**  >  **Test**.
 
-  ![Comportement de l’adaptateur de l’Explorateur de tests dans les options des outils](media/testex-adapterbehavior.png)
+![Comportement de l’adaptateur de l’Explorateur de tests dans les options des outils](media/testex-adapterbehavior.png)
 
 ## <a name="uwp-testcontainer-was-not-found"></a>TestContainer UWP est introuvable
 
-**Mes tests UWP ne sont plus exécutés dans Visual Studio 2017 version 15.7 et ultérieure.**
+**Mes tests UWP ne sont plus exécutés dans Visual Studio 2017 versions 15.7 et ultérieures.**
 
 Les projets de test UWP récents spécifient une propriété de génération de plateforme de test qui permet de meilleures performances pour identifier les applications de test. Si vous avez un projet de test UWP qui a été initialisé avant Visual Studio version 15.7, vous pouvez voir l’erreur suivante dans **Sortie** > **Tests** :
 

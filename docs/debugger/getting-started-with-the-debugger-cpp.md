@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebfe3efdb567930d931ab43d5cf2ce33713247f8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a9975d0c4a62b4ae4d2695a34eeab0d43ba4a424
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679122"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428776"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutoriel : Apprendre à déboguer le code C# avec Visual Studio
 
@@ -35,11 +35,20 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
 ## <a name="prerequisites"></a>Prérequis
 
+::: moniker range=">=vs-2019"
+
+* Au préalable, vous devez avoir installé Visual Studio 2019 et la charge de travail **Développement Desktop en C++**.
+
+::: moniker-end
+::: moniker range="vs-2017"
+
 * Au préalable, vous devez avoir installé Visual Studio 2017 et la charge de travail **Développement Desktop en C++**.
 
-    Si vous n’avez pas encore installé Visual Studio, accédez à la page  [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)  pour l’installer gratuitement.
+::: moniker-end
 
-    Si vous devez installer la charge de travail mais que vous avez déjà Visual Studio, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet** (sélectionnez **Fichier** > **Nouveau** > **Projet**). Visual Studio Installer est lancé. Choisissez la charge de travail **Développement Desktop en C++**, puis choisissez **Modifier**.
+Si vous n’avez pas encore installé Visual Studio, accédez à la page  [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)  pour l’installer gratuitement.
+
+Si vous devez installer la charge de travail mais que vous avez déjà Visual Studio, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet** (sélectionnez **Fichier** > **Nouveau** > **Projet**). Visual Studio Installer est lancé. Choisissez la charge de travail **Développement Desktop en C++**, puis choisissez **Modifier**.
 
 ## <a name="create-a-project"></a>Créer un projet
 
@@ -218,7 +227,7 @@ Nous utilisons ici principalement des raccourcis clavier, car c’est un bon moy
      ![Utiliser la fonctionnalité Exécuter jusqu’au clic](../debugger/media/get-started-run-to-click-cpp.png "Exécuter jusqu’au clic")
 
    > [!NOTE]
-   > Le bouton **Exécuter jusqu’au clic** est une nouveauté de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Si vous ne voyez pas le bouton avec la flèche verte, utilisez à la place **F11** dans cet exemple pour faire avancer le débogueur jusqu’au bon endroit.
+   > Le bouton **Exécuter jusqu’au clic** est disponible à compter de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Si vous ne voyez pas le bouton avec la flèche verte, utilisez à la place **F11** dans cet exemple pour faire avancer le débogueur jusqu’au bon endroit.
 
 2. Cliquez sur le bouton **Exécuter jusqu’au clic** ![Exécuter jusqu’au clic](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 

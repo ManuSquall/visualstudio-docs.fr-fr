@@ -17,18 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8944117c7d4e47f36f504f9677074ad4f86e33de
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d717619954981c6b8cdf900f8fb358272478264b
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949055"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223427"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Procédure pas à pas : Créer un extrait de code
+
 Vous pouvez créer un extrait de code en quelques étapes seulement. Il vous suffit de créer un fichier XML, de le remplir avec les éléments appropriés et d’y ajouter votre code. Vous pouvez aussi ajouter des références et des paramètres de remplacement dans votre code. Vous pouvez ensuite ajouter l’extrait de code à votre installation Visual Studio avec le bouton **Importer** dans le **Gestionnaire des extraits de code** (**Outils** > **Gestionnaire des extraits de code**).
 
 ## <a name="snippet-template"></a>Modèle d’extrait de code
- Voici le modèle d’extrait de code de base :
+
+Voici le modèle d’extrait de code de base :
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -48,13 +50,13 @@ Vous pouvez créer un extrait de code en quelques étapes seulement. Il vous suf
 
 ### <a name="create-a-code-snippet"></a>Créer un extrait de code
 
-1.  Créez un fichier XML dans Visual Studio et ajoutez-y le modèle ci-dessus.
+1. Créez un fichier XML dans Visual Studio et ajoutez-y le modèle ci-dessus.
 
-2.  Entrez un titre pour l’extrait de code (par exemple, « Hello World VB » dans l’élément **Title**.
+2. Entrez un titre pour l’extrait de code (par exemple, « Hello World VB » dans l’élément **Title**.
 
-3.  Indiquez le langage de l’extrait dans l’attribut **Languages** de l’élément **Code**. Pour cet exemple, entrez « VB ».
+3. Indiquez le langage de l’extrait dans l’attribut **Languages** de l’élément **Code**. Pour cet exemple, entrez « VB ».
 
-4.  Ajoutez du code dans la section **CDATA** de l’élément **Code**, par exemple :
+4. Ajoutez du code dans la section **CDATA** de l’élément **Code**, par exemple :
 
     ```xml
     <Code Language="VB">
@@ -62,33 +64,53 @@ Vous pouvez créer un extrait de code en quelques étapes seulement. Il vous suf
     </Code>
     ```
 
-5.  Enregistrez l’extrait de code sous le nom *VBCodeSnippet.snippet*.
+5. Enregistrez l’extrait de code sous le nom *VBCodeSnippet.snippet*.
 
 ### <a name="add-a-code-snippet-to-visual-studio"></a>Ajouter un extrait de code à Visual Studio
 
-1.  Vous pouvez ajouter vos propres extraits de code à votre installation Visual Studio par le biais du Gestionnaire des extraits de code. Ouvrez le **Gestionnaire des extraits de code** (**Outils** > **Gestionnaire des extraits de code**).
+1. Vous pouvez ajouter vos propres extraits de code à votre installation Visual Studio par le biais du Gestionnaire des extraits de code. Ouvrez le **Gestionnaire des extraits de code** (**Outils** > **Gestionnaire des extraits de code**).
 
-2.  Cliquez sur le bouton **Importer**.
+2. Cliquez sur le bouton **Importer**.
 
-3.  Accédez à l’emplacement où vous avez enregistré l’extrait de code dans la procédure précédente, sélectionnez-le, puis cliquez sur **Ouvrir**.
+3. Accédez à l’emplacement où vous avez enregistré l’extrait de code dans la procédure précédente, sélectionnez-le, puis cliquez sur **Ouvrir**.
 
-4.  La boîte de dialogue **Importer un extrait de code** s’ouvre et vous invite à choisir l’emplacement où ajouter l’extrait de code parmi les emplacements proposés dans le volet droit. **My Code Snippets** (Mes extraits de code) est l’une de ces propositions. Sélectionnez-la, puis cliquez sur **Terminer**, puis sur **OK**.
+4. La boîte de dialogue **Importer un extrait de code** s’ouvre et vous invite à choisir l’emplacement où ajouter l’extrait de code parmi les emplacements proposés dans le volet droit. **My Code Snippets** (Mes extraits de code) est l’une de ces propositions. Sélectionnez-la, puis cliquez sur **Terminer**, puis sur **OK**.
 
-5.  L’extrait de code est copié à l’emplacement suivant :
+5. L’extrait de code est copié à l’emplacement suivant :
 
-     *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippets*
+   ::: moniker range="vs-2017"
 
-6.  Testez votre extrait de code en ouvrant un projet Visual Basic et un fichier de code. Dans le fichier, choisissez **Extraits de code** > **Insérer un extrait de code** dans le menu contextuel (clic droit), puis **Mes extraits de code**. Vous devez normalement voir un extrait de code nommé **My Visual Basic Code Snippet** (Mon extrait de code Visual Basic). Double-cliquez dessus.
+   *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippets*
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   *%USERPROFILE%\Documents\Visual Studio 2019\Code Snippets\Visual Basic\My Code Snippets*
+
+   ::: moniker-end
+
+6. Testez votre extrait de code en ouvrant un projet Visual Basic et un fichier de code. Dans le fichier, choisissez **Extraits de code** > **Insérer un extrait de code** dans le menu contextuel (clic droit), puis **Mes extraits de code**. Vous devez normalement voir un extrait de code nommé **My Visual Basic Code Snippet** (Mon extrait de code Visual Basic). Double-cliquez dessus.
 
     `Console.WriteLine("Hello, World!")` est inséré dans le fichier de code.
 
 ### <a name="add-description-and-shortcut-fields"></a>Ajouter des champs Description et Raccourci
 
-1.  Les champs Description donnent des informations supplémentaires sur votre extrait de code affiché dans le Gestionnaire des extraits de code. Le raccourci est une balise que les utilisateurs peuvent entrer pour insérer votre extrait de code. Pour modifier l’extrait de code que vous avez ajouté, ouvrez le fichier *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet*.
+::: moniker range="vs-2017"
 
-2.  Ajoutez les éléments **Author** et **Description** à l’élément **Header**, puis renseignez-les.
+1. Les champs Description donnent des informations supplémentaires sur votre extrait de code affiché dans le Gestionnaire des extraits de code. Le raccourci est une balise que les utilisateurs peuvent entrer pour insérer votre extrait de code. Pour modifier l’extrait de code que vous avez ajouté, ouvrez le fichier *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet*.
 
-3.  L’élément **Header** doit ressembler à ceci :
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Les champs Description donnent des informations supplémentaires sur votre extrait de code affiché dans le Gestionnaire des extraits de code. Le raccourci est une balise que les utilisateurs peuvent entrer pour insérer votre extrait de code. Pour modifier l’extrait de code que vous avez ajouté, ouvrez le fichier *%USERPROFILE%\Documents\Visual Studio 2019\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet*.
+
+::: moniker-end
+
+2. Ajoutez les éléments **Author** et **Description** à l’élément **Header**, puis renseignez-les.
+
+3. L’élément **Header** doit ressembler à ceci :
 
     ```xml
     <Header>
@@ -98,9 +120,9 @@ Vous pouvez créer un extrait de code en quelques étapes seulement. Il vous suf
     </Header>
     ```
 
-4.  Ouvrez le **Gestionnaire des extraits de code** et sélectionnez votre extrait de code. Dans le volet droit, les champs **Description** et **Author** doivent maintenant être renseignés.
+4. Ouvrez le **Gestionnaire des extraits de code** et sélectionnez votre extrait de code. Dans le volet droit, les champs **Description** et **Author** doivent maintenant être renseignés.
 
-5.  Pour ajouter un raccourci, ajoutez un élément **Shortcut** en dessous des éléments **Author** et **Description** :
+5. Pour ajouter un raccourci, ajoutez un élément **Shortcut** en dessous des éléments **Author** et **Description** :
 
     ```xml
     <Header>
@@ -111,19 +133,19 @@ Vous pouvez créer un extrait de code en quelques étapes seulement. Il vous suf
     </Header>
     ```
 
-6.  Enregistrez de nouveau le fichier d’extrait de code.
+6. Enregistrez de nouveau le fichier d’extrait de code.
 
-7.  Pour tester le raccourci, ouvrez un projet Visual Basic et un fichier de code. Tapez `hello` dans le fichier et appuyez deux fois sur **Tab**.
+7. Pour tester le raccourci, ouvrez un projet Visual Basic et un fichier de code. Tapez `hello` dans le fichier et appuyez deux fois sur **Tab**.
 
     L’extrait de code est inséré.
 
 ### <a name="add-references-and-imports"></a>Ajouter des références et des importations
 
-1.  Vous pouvez ajouter une référence à un projet avec l’élément **References** et ajouter une déclaration Imports avec l’élément **Imports**. (Cela s’applique aussi pour C#.) Par exemple, si vous remplacez `Console.WriteLine` par `MessageBox.Show` dans l’exemple de code, il peut être nécessaire d’ajouter l’assembly *System.Windows.Forms.dll* au projet.
+1. Vous pouvez ajouter une référence à un projet avec l’élément **References** et ajouter une déclaration Imports avec l’élément **Imports**. (Cela s’applique aussi pour C#.) Par exemple, si vous remplacez `Console.WriteLine` par `MessageBox.Show` dans l’exemple de code, il peut être nécessaire d’ajouter l’assembly *System.Windows.Forms.dll* au projet.
 
-2.  Ouvrez votre extrait de code.
+2. Ouvrez votre extrait de code.
 
-3.  Ajoutez l’élément **References** sous l’élément **Snippet** :
+3. Ajoutez l’élément **References** sous l’élément **Snippet** :
 
     ```xml
     <References>
@@ -133,7 +155,7 @@ Vous pouvez créer un extrait de code en quelques étapes seulement. Il vous suf
     </References>
     ```
 
-4.  Ajoutez l’élément **Imports** sous l’élément **Snippet** :
+4. Ajoutez l’élément **Imports** sous l’élément **Snippet** :
 
     ```xml
     <Imports>
@@ -143,17 +165,17 @@ Vous pouvez créer un extrait de code en quelques étapes seulement. Il vous suf
     </Imports>
     ```
 
-5.  Modifiez la section **CDATA** de la façon suivante :
+5. Modifiez la section **CDATA** de la façon suivante :
 
     ```xml
     <![CDATA[MessageBox.Show("Hello, World!")]]>
     ```
 
-6.  Enregistrez l’extrait de code.
+6. Enregistrez l’extrait de code.
 
-7.  Ouvrez un projet Visual Basic et ajoutez l’extrait de code.
+7. Ouvrez un projet Visual Basic et ajoutez l’extrait de code.
 
-8.  Vous voyez maintenant une instruction `Imports` en haut du fichier de code :
+8. Vous voyez maintenant une instruction `Imports` en haut du fichier de code :
 
     ```vb
     Imports System.Windows.Forms
@@ -163,11 +185,11 @@ Vous pouvez créer un extrait de code en quelques étapes seulement. Il vous suf
 
 ### <a name="add-replacements"></a>Ajouter des remplacements
 
-1.  Vous souhaitez peut-être que certaines parties de votre extrait de code soient remplacées par l’utilisateur, par exemple, si vous ajoutez une variable que l’utilisateur doit remplacer par une valeur dans le projet actuel. Vous pouvez ajouter deux types de remplacements : des littéraux et des objets. Les littéraux sont des chaînes d’un type donné (littéraux de chaîne, noms de variable ou représentations sous forme de chaînes de valeurs numériques). Les objets sont des instances d’un type autre qu’une chaîne. Dans cette procédure, vous allez déclarer un remplacement de littéral et un remplacement d’objet, puis modifier le code pour faire référence à ces remplacements.
+1. Vous souhaitez peut-être que certaines parties de votre extrait de code soient remplacées par l’utilisateur, par exemple, si vous ajoutez une variable que l’utilisateur doit remplacer par une valeur dans le projet actuel. Vous pouvez ajouter deux types de remplacements : des littéraux et des objets. Les littéraux sont des chaînes d’un type donné (littéraux de chaîne, noms de variable ou représentations sous forme de chaînes de valeurs numériques). Les objets sont des instances d’un type autre qu’une chaîne. Dans cette procédure, vous allez déclarer un remplacement de littéral et un remplacement d’objet, puis modifier le code pour faire référence à ces remplacements.
 
-2.  Ouvrez votre extrait de code.
+2. Ouvrez votre extrait de code.
 
-3.  Cet exemple utilise une chaîne de connexion SQL : vous devez donc changer les éléments **Imports** et **References** pour ajouter les références appropriées :
+3. Cet exemple utilise une chaîne de connexion SQL : vous devez donc changer les éléments **Imports** et **References** pour ajouter les références appropriées :
 
     ```xml
     <References>
@@ -188,7 +210,7 @@ Vous pouvez créer un extrait de code en quelques étapes seulement. Il vous suf
     </Imports>
     ```
 
-4.  Si vous souhaitez déclarer un remplacement de littéral pour la chaîne de connexion SQL, ajoutez un élément **Declarations** sous l’élément **Snippet** puis, à l’intérieur du nouvel élément, ajoutez un élément **Literal** et des sous-éléments pour l’ID, l’info-bulle et la valeur par défaut du remplacement :
+4. Si vous souhaitez déclarer un remplacement de littéral pour la chaîne de connexion SQL, ajoutez un élément **Declarations** sous l’élément **Snippet** puis, à l’intérieur du nouvel élément, ajoutez un élément **Literal** et des sous-éléments pour l’ID, l’info-bulle et la valeur par défaut du remplacement :
 
     ```xml
     <Declarations>
@@ -200,7 +222,7 @@ Vous pouvez créer un extrait de code en quelques étapes seulement. Il vous suf
     </Declarations>
     ```
 
-5.  Pour déclarer un remplacement d’objet pour la connexion SQL, ajoutez un élément **Object** à l’intérieur de l’élément **Declarations**, et ajoutez des sous-éléments pour l’ID, le type de l’objet, l’info-bulle et la valeur par défaut. L’élément **Declarations** obtenu doit ressembler à ceci :
+5. Pour déclarer un remplacement d’objet pour la connexion SQL, ajoutez un élément **Object** à l’intérieur de l’élément **Declarations**, et ajoutez des sous-éléments pour l’ID, le type de l’objet, l’info-bulle et la valeur par défaut. L’élément **Declarations** obtenu doit ressembler à ceci :
 
     ```xml
     <Declarations>
@@ -218,7 +240,7 @@ Vous pouvez créer un extrait de code en quelques étapes seulement. Il vous suf
     </Declarations>
     ```
 
-6.  Dans la section Code, référencez les remplacements en les entourant de signes $, par exemple `$replacement$` :
+6. Dans la section Code, référencez les remplacements en les entourant de signes $, par exemple `$replacement$` :
 
     ```xml
     <Code Language="VB" Kind="method body">
@@ -232,9 +254,9 @@ Vous pouvez créer un extrait de code en quelques étapes seulement. Il vous suf
     </Code>
     ```
 
-7.  Enregistrez l’extrait de code.
+7. Enregistrez l’extrait de code.
 
-8.  Ouvrez un projet Visual Basic et ajoutez l’extrait de code.
+8. Ouvrez un projet Visual Basic et ajoutez l’extrait de code.
 
 9. Le code doit ressembler à l’exemple ci-dessous, où les remplacements `SQL connection string` et `dcConnection` sont indiqués en orange clair. Choisissez **Tab** pour passer de l’un à l’autre.
 

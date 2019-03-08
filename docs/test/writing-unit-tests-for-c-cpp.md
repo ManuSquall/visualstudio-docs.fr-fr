@@ -7,12 +7,12 @@ manager: wpickett
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 561b55ee961162adb37cd393cac9ecf8b78c5ade
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e78d5b983031a3589c46bbceeaeee87d125eace3
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926786"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223050"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Écrire des tests unitaires pour C/C++ dans Visual Studio
 
@@ -30,11 +30,11 @@ Visual Studio inclut ces frameworks de test C++, aucun téléchargement supplém
 
 En plus des frameworks installés, vous pouvez écrire votre propre adaptateur de test pour n’importe quel framework que vous voulez utiliser dans Visual Studio. Un adaptateur de test peut intégrer des tests unitaires à la fenêtre de **l’Explorateur de tests**. Plusieurs adaptateurs de tiers sont disponibles sur [Visual Studio Marketplace](https://marketplace.visualstudio.com). Pour plus d’informations, consultez [Installer des frameworks de tests unitaires de tiers](install-third-party-unit-test-frameworks.md).
 
-**Visual Studio 2017 version 15.7 (Professionnel et Entreprise)**
+**Visual Studio 2017 versions 15.7 et ultérieures (Professional et Enterprise)**
 
 Prise en charge de projets de test unitaire C++ [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md).
 
-**Visual Studio 2017 version 15.5**
+**Visual Studio 2017 versions 15.5 et ultérieures**
 
 - **L’Adaptateur Google Test** est inclus comme composant par défaut de la charge de travail **Développement Desktop en C++**. Il comprend un modèle de projet que l’on peut ajouter à une solution avec le menu contextuel (clic droit) **Ajouter un nouveau projet** du nœud de la solution dans **l’Explorateur de solutions**, ainsi que des options configurables avec **Outils** > **Options**. Pour plus d’informations, consultez [Guide pratique pour utiliser Google Test dans Visual Studio](how-to-use-google-test-for-cpp.md).
 
@@ -117,7 +117,9 @@ Pour connaître les bonnes pratiques relatives aux tests unitaires, consultez [C
 
 ## <a name="use-codelens"></a>Utiliser CodeLens
 
-**Visual Studio 2017 version 15.7, éditions Professional et Enterprise uniquement** : [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) vous permet d’afficher rapidement l’état d’un test unitaire sans quitter l’éditeur de code. Vous pouvez initialiser CodeLens pour un projet de test unitaire C++ de l’une des manières suivantes :
+**Visual Studio 2017 versions 15.7 et ultérieures (éditions Professional and Enterprise uniquement)**
+
+[CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) vous permet d’afficher rapidement l’état d’un test unitaire sans quitter l’éditeur de code. Vous pouvez initialiser CodeLens pour un projet de test unitaire C++ de l’une des manières suivantes :
 
 - Modifiez et générez votre projet de test ou solution.
 - Régénérez votre projet ou solution.
@@ -127,10 +129,10 @@ Une fois que **CodeLens** est initialisé, vous pouvez voir des icônes d’éta
 
 ![C++ CodeLens - Icônes](media/cpp-test-codelens-icons.png)
 
- Cliquez sur l’icône pour plus d’informations, ou pour exécuter ou déboguer le test unitaire :
+Cliquez sur l’icône pour plus d’informations, ou pour exécuter ou déboguer le test unitaire :
 
 ![C++ CodeLens - Exécuter et déboguer](media/cpp-test-codelens-run-debug.png)
 
 ## <a name="see-also"></a>Voir aussi
 
-[Tests unitaires sur votre code](unit-test-your-code.md)
+- [Tests unitaires sur votre code](unit-test-your-code.md)

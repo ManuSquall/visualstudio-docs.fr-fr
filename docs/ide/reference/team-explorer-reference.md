@@ -5,12 +5,12 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-ms.openlocfilehash: 56e6277b589f12563ad6dfa3912815b966db399a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6a7c1e9d0f5e8b8ef48a033d58038818d2d620e5
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946273"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222972"
 ---
 # <a name="team-explorer-reference"></a>Informations de référence sur Team Explorer
 
@@ -33,7 +33,7 @@ La page d’**accueil** propose des fonctions différentes selon que vous êtes 
 
 | Page d’**accueil** avec Git | Page d’**accueil** avec TFVC |
 | - | - |
-| ![Page d’accueil de Team Explorer avec Git dans Visual Studio 2019](media/team-explorer-reference/team-explorer-git.png) | ![Page d’accueil de Team Explorer avec TFVC dans Visual Studio 2017](media/team-explorer-reference/team-explorer-tfvc.png) |
+| ![Page d’accueil de Team Explorer avec Git dans Visual Studio 2019](media/team-explorer-reference/team-explorer-git.png) | ![Page d’accueil de Team Explorer avec TFVC dans Visual Studio](media/team-explorer-reference/team-explorer-tfvc.png) |
 
 ## <a name="changes-page-git"></a>Page Modifications (Git)
 
@@ -82,7 +82,7 @@ La page **Éléments de travail** vous permet de voir les requêtes d’[éléme
 ::: moniker range=">= vs-2019"
 
 > [!NOTE]
-> Il existe une nouvelle [expérience d’éléments de travail](/azure/devops/boards/work-items/set-work-item-experience-vs) dans Visual Studio 2019 Preview 1. Pour obtenir des informations sur l’affichage des éléments de travail dans Visual Studio 2019 Preview 1, consultez [Afficher et ajouter des éléments de travail](/azure/devops/boards/work-items/view-add-work-items).
+> Visual Studio 2019 propose une nouvelle [expérience en matière d’éléments de travail](/azure/devops/boards/work-items/set-work-item-experience-vs). Pour obtenir des informations sur l’affichage des éléments de travail dans Visual Studio 2019, consultez [Afficher et ajouter des éléments de travail](/azure/devops/boards/work-items/view-add-work-items).
 
 ::: moniker-end
 

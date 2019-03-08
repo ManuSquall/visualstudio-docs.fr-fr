@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 22d0fcfe1a048b83926cbd79e9c479e2f1ec85ab
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 88f6061d959167163c8502899813dc4c6db88f10
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935574"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222085"
 ---
 # <a name="how-to-create-item-templates"></a>Procédure : Créer des modèles d’élément
 
@@ -109,19 +109,29 @@ Dans certains cas, vous pouvez avoir envie de créer un modèle d’élément ma
 
 1. Créez un projet et un élément de projet.
 
-1. Modifiez l'élément de projet jusqu'à ce qu'il soit prêt à être enregistré en tant que modèle.
+2. Modifiez l'élément de projet jusqu'à ce qu'il soit prêt à être enregistré en tant que modèle.
 
-1. Modifiez le fichier de code pour indiquer où le remplacement de paramètres doit avoir lieu, le cas échéant. Pour plus d’informations sur le remplacement de paramètres, consultez [Guide pratique pour substituer des paramètres dans un modèle](../ide/how-to-substitute-parameters-in-a-template.md).
+3. Modifiez le fichier de code pour indiquer où le remplacement de paramètres doit avoir lieu, le cas échéant. Pour plus d’informations sur le remplacement de paramètres, consultez [Guide pratique pour substituer des paramètres dans un modèle](../ide/how-to-substitute-parameters-in-a-template.md).
 
-1. Créez un fichier XML et enregistrez-le avec l’extension de nom de fichier *.vstemplate* dans le même répertoire que votre fichier d’élément de projet.
+4. Créez un fichier XML et enregistrez-le avec l’extension de nom de fichier *.vstemplate* dans le même répertoire que votre fichier d’élément de projet.
 
-1. Modifiez le fichier XML *.vstemplate* pour fournir des métadonnées de modèle d’élément. Pour plus d’informations, consultez [Informations de référence sur les schémas de modèles (extensibilité)](../extensibility/visual-studio-template-schema-reference.md), ainsi que l’exemple de la section précédente.
+5. Modifiez le fichier XML *.vstemplate* pour fournir des métadonnées de modèle d’élément. Pour plus d’informations, consultez [Informations de référence sur les schémas de modèles (extensibilité)](../extensibility/visual-studio-template-schema-reference.md), ainsi que l’exemple de la section précédente.
 
-1. Enregistrez le fichier *.vstemplate*, puis fermez-le.
+6. Enregistrez le fichier *.vstemplate*, puis fermez-le.
 
-1. Dans l’**Explorateur Windows**, sélectionnez les fichiers à inclure dans votre modèle. Cliquez avec le bouton droit sur la sélection, puis choisissez **Envoyer vers** > **Dossier compressé**. Les fichiers que vous avez sélectionnés sont compressés dans un fichier *.zip*.
+7. Dans l’**Explorateur Windows**, sélectionnez les fichiers à inclure dans votre modèle. Cliquez avec le bouton droit sur la sélection, puis choisissez **Envoyer vers** > **Dossier compressé**. Les fichiers que vous avez sélectionnés sont compressés dans un fichier *.zip*.
 
-1. Copiez le fichier *.zip*, puis collez-le à l’emplacement du modèle d’élément utilisateur. Dans Visual Studio 2017, le répertoire par défaut est *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*. Pour plus d'informations, voir [Procédure : localiser et organiser des modèles de projet et d’élément](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+::: moniker range="vs-2017"
+
+8. Copiez le fichier *.zip*, puis collez-le à l’emplacement du modèle d’élément utilisateur. Le répertoire par défaut est *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*. Pour plus d'informations, voir [Procédure : localiser et organiser des modèles de projet et d’élément](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+8. Copiez le fichier *.zip*, puis collez-le à l’emplacement du modèle d’élément utilisateur. Le répertoire par défaut est *%USERPROFILE%\Documents\Visual Studio 2019\Templates\ItemTemplates*. Pour plus d'informations, voir [Procédure : localiser et organiser des modèles de projet et d’élément](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+
+::: moniker-end
 
 ## <a name="see-also"></a>Voir aussi
 

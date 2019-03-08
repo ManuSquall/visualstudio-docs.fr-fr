@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6faaf37c3a1c8e67412898ca631210eb551f3331
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9b5f3eec072988c7ab093f305cf2903ae1079cc2
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926045"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221877"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Synchroniser les paramètres Visual Studio sur plusieurs ordinateurs
 
@@ -60,20 +60,30 @@ Les paramètres sont synchronisés entre les versions et éditions de Visual Stu
 
 ## <a name="side-by-side-synchronized-settings"></a>Paramètres synchronisés côte à côte
 
-Dans Visual Studio 2017 version 15.3 et ultérieure, certains paramètres tels que la disposition de la fenêtre Outil ne sont pas partagés entre les différentes installations côte à côte de Visual Studio 2017. Le fichier *CurrentSettings.vssettings* dans *%userprofile%\Documents\Visual Studio 2017\Settings* se trouve dans un dossier spécifique à l’installation semblable à *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx\Settings*.
+::: moniker range="vs-2017"
+
+Certains paramètres tels que la disposition de la fenêtre Outil ne sont pas partagés entre les différentes installations côte à côte de Visual Studio. Le fichier *CurrentSettings.vssettings* dans *%userprofile%\Documents\Visual Studio 2017\Settings* se trouve dans un dossier spécifique à l’installation semblable à *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx\Settings*.
 
 > [!NOTE]
-> Pour utiliser les nouveaux paramètres spécifiques à l’installation, effectuez une nouvelle installation. Quand vous effectuez une mise à niveau d’une installation existante de Visual Studio 2017 vers la mise à jour la plus récente, elle utilise l’emplacement partagé existant.
+> Pour utiliser les nouveaux paramètres spécifiques à l’installation, effectuez une nouvelle installation. Quand vous mettez à niveau une installation existante de Visual Studio, elle utilise l’emplacement partagé existant.
 
-Si vous disposez d’installations côte à côte de Visual Studio 2017 et si vous souhaitez utiliser le nouvel emplacement du fichier de paramètres spécifiques à l’installation, effectuez les étapes suivantes :
+Si vous disposez d’installations côte à côte de Visual Studio et que vous souhaitez utiliser le nouvel emplacement du fichier de paramètres spécifiques à l’installation, effectuez les étapes suivantes :
 
 1. Effectuez une mise à niveau vers Visual Studio 2017 version 15.3 ou ultérieure.
 
-1. Utilisez l’Assistant **Importation et exportation de paramètres** pour exporter tous vos paramètres existants vers un emplacement situé en dehors du dossier *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx*.
+2. Utilisez l’Assistant **Importation et exportation de paramètres** pour exporter tous vos paramètres existants vers un emplacement situé en dehors du dossier *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx*.
 
-1. Ouvrez l’**Invite de commandes développeur pour VS 2017** correspondant à l’installation mise à niveau de Visual Studio, puis exécutez `devenv /resetuserdata`.
+3. Ouvrez l’**Invite de commandes développeur pour VS 2017** et exécutez `devenv /resetuserdata`.
 
 1. Lancez Visual Studio et importez les paramètres enregistrés du fichier de paramètres exportés.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Certains paramètres tels que la disposition de la fenêtre Outil ne sont pas partagés entre les différentes installations côte à côte de Visual Studio. Le fichier *CurrentSettings.vssettings* dans *%userprofile%\Documents\Visual Studio 2019\Settings* se trouve dans un dossier spécifique à l’installation semblable à *%localappdata%\Microsoft\VisualStudio\16.0_xxxxxxxx\Settings*.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Voir aussi
 

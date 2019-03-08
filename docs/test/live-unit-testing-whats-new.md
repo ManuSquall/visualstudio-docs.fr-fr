@@ -10,16 +10,16 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: a8101697ad225becb1fcddc5ee737fc4c6195cc7
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 95cbdeb9a4e8a3f98fefa7650b36cc4dd59ed550
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796580"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221539"
 ---
 # <a name="whats-new-in-live-unit-testing"></a>Nouveautés de Live Unit Testing
 
-Cette rubrique liste les nouvelles fonctionnalités ajoutées à Live Unit Testing dans chaque version de Visual Studio à partir de Visual Studio 2017 version 15.3. Pour une vue d’ensemble de l’utilisation de Live Unit Testing, consultez [Live Unit Testing avec Visual Studio 2017](live-unit-testing.md).
+Cette rubrique liste les nouvelles fonctionnalités ajoutées à Live Unit Testing dans chaque version de Visual Studio à partir de Visual Studio 2017 version 15.3. Pour obtenir une vue d’ensemble de l’utilisation de Live Unit Testing, consultez [Live Unit Testing avec Visual Studio](live-unit-testing.md).
 
 ## <a name="whats-new-in-live-unit-testing-for-visual-studio-2017-version-154"></a>Nouveautés de Live Unit Testing dans Visual Studio 2017 version 15.4
 
@@ -45,7 +45,7 @@ Cette rubrique liste les nouvelles fonctionnalités ajoutées à Live Unit Testi
 
 - Prise en charge de .NET Core et de .NET Standard. Vous pouvez utiliser Live Unit Testing sur des solutions .NET Core et .NET Standard écrites en C# ou en Visual Basic.
 
--  Amélioration des performances. Vous remarquerez une nette accélération des performances après la première build complète et l’exécution de tests sous Live Unit Testing, puis lors des démarrages suivants de Live Unit Testing sur la même solution. Nous conservons à présent les données générées par Live Unit Testing et les réutilisons autant que possible avec les vérifications de mise à jour.
+- Amélioration des performances. Vous remarquerez une nette accélération des performances après la première build complète et l’exécution de tests sous Live Unit Testing, puis lors des démarrages suivants de Live Unit Testing sur la même solution. Nous conservons à présent les données générées par Live Unit Testing et les réutilisons autant que possible avec les vérifications de mise à jour.
 
 En plus de ces ajouts majeurs, Live Unit Testing comprend les améliorations suivantes :
 
@@ -58,10 +58,12 @@ En plus de ces ajouts majeurs, Live Unit Testing comprend les améliorations sui
 - Plusieurs éléments de menu supplémentaires ont été ajoutés sous la barre de menus de Test/Live Unit Testing. **Réinitialiser et nettoyer** supprime les données persistantes et les regénère. **Option** permet d’accéder à Outils/Options/Live Unit Testing/Général.
 
 - Vous pouvez à présent utiliser les attributs suivants pour spécifier dans le code source que vous souhaitez exclure les méthodes de test ciblées de Live Unit Testing :
+
    - Pour xUnit : `[Trait("Category", "SkipWhenLiveUnitTesting")]`
    - Pour NUnit : `[Category("SkipWhenLiveUnitTesting")]`
    - Pour MSTest : `[TestCategory("SkipWhenLiveUnitTesting")]`
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Présentation de Live Unit Testing](live-unit-testing-intro.md)
-- [Live Unit Testing avec Visual Studio 2017](live-unit-testing.md)
+- [Live Unit Testing avec Visual Studio](live-unit-testing.md)

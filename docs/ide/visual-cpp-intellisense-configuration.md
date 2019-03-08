@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64b14c27ffce1d2818b1ce38cdea72f63f9a7e28
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 18b62be13af1b057a9bbfaeb73e390abb0bf62ea
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864868"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222894"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Configurer un projet C++ pour IntelliSense
 
@@ -74,7 +74,7 @@ Ce problème se manifeste principalement de deux manières dans Visual Studio :
 
 Pour résoudre ces types de problèmes, ajoutez un fichier nommé **cpp.hint** à la racine du répertoire de votre solution. Pour plus d’informations, voir [Fichiers hint](/cpp/ide/hint-files).
 
-Les erreurs de l’analyseur de balises **Visual Studio 2017 version 15.7** s’affichent dans la fenêtre Liste d’erreurs.
+Les erreurs de l’analyseur de balises s’affichent dans la fenêtre **Liste d’erreurs**.
 
 ## <a name="validate-project-settings-with-diagnostic-logging"></a>Valider les paramètres du projet avec la journalisation des diagnostics
 
@@ -107,7 +107,7 @@ Dans certains cas toutefois, Visual Studio ne met pas à jour la base de donnée
 
 ## <a name="troubleshooting-intellisense-build-failures"></a>Résoudre les échecs des builds IntelliSense
 
-Même s’il ne génère pas de binaires, un build IntelliSense peut échouer. L’une des causes d’échec possibles est la présence de fichiers .props ou .targets personnalisés. Dans Visual Studio 2017 version 15.6, les erreurs de build IntelliSense seul sont enregistrées dans la Fenêtre Sortie. Pour les afficher, définissez **Afficher la sortie de** sur **Solution** :
+Même s’il ne génère pas de binaires, un build IntelliSense peut échouer. L’une des causes d’échec possibles est la présence de fichiers .props ou .targets personnalisés. Dans Visual Studio 2017 versions 15.6 et ultérieures, les erreurs de build liées uniquement à IntelliSense sont journalisées dans la fenêtre Sortie. Pour les afficher, définissez **Afficher la sortie de** sur **Solution** :
 
 ![Fenêtre Sortie pour les erreurs de la solution](media/vcpp-intellisense-output-window.png)
 

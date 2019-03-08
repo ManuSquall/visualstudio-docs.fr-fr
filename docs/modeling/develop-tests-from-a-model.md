@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82f464e6c58c8403ffee34957f9bd49b39471114
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 289d21b4828e22877ac139f2f29b6500907cf4e0
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940280"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567313"
 ---
 # <a name="develop-tests-from-a-model"></a>Développer des tests à partir d'un modèle
 Vous pouvez utiliser les spécifications et les modèles architecturaux pour mieux organiser les tests de votre système et de ses composants. Cette pratique vous permet de vous assurer que vous testez les impératifs importants des utilisateurs et des autres parties prenantes, et vous aide à mettre rapidement à jour les tests quand les impératifs changent. Si vous utilisez [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], vous pouvez également tenir à jour des liens entre les modèles et les tests.
@@ -59,7 +59,7 @@ Vous pouvez utiliser les spécifications et les modèles architecturaux pour mie
 
 1. Dans [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], créez un impératif et basez une suite de tests dessus.
 
-    L'impératif que vous créez est un élément de travail dans [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Il peut être un élément de travail récit utilisateur, une exigence ou cas d’usage, selon le modèle de processus que votre projet utilise avec Team Foundation. Pour plus d’informations, consultez [outils sur Agile et Agile project management](/azure/devops/boards/backlogs/overview?view=vsts).
+    L'impératif que vous créez est un élément de travail dans [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Il peut être un élément de travail récit utilisateur, une exigence ou cas d’usage, selon le modèle de processus que votre projet utilise avec Team Foundation. Pour plus d’informations, consultez [outils sur Agile et Agile project management](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
 
 2. Liez l'élément de travail Spécification à un ou plusieurs cas d'usage dans votre modèle.
 
@@ -147,7 +147,7 @@ Assert (countAfter == countBefore = 1);
 
 1. Dans [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], créez un impératif et basez une suite de tests dessus.
 
-    L'impératif que vous créez est un élément de travail dans [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Il peut être un élément de travail récit utilisateur, une exigence ou cas d’usage, selon le modèle de processus que votre projet utilise avec Team Foundation. Pour plus d’informations, consultez [outils sur Agile et Agile project management](/azure/devops/boards/backlogs/overview?view=vsts).
+    L'impératif que vous créez est un élément de travail dans [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Il peut être un élément de travail récit utilisateur, une exigence ou cas d’usage, selon le modèle de processus que votre projet utilise avec Team Foundation. Pour plus d’informations, consultez [outils sur Agile et Agile project management](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
 
 2. Liez l'élément de travail Spécification à un ou plusieurs éléments dans votre modèle.
 

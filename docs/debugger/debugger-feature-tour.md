@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f0248936b41c9103a772cd4b2622f4fddfe5fff
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 14c248bbea783070e3d3bfbc439005bafb9b1fd2
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696738"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428685"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Premier aperçu du débogueur Visual Studio
 
@@ -77,7 +77,7 @@ Dans le débogueur, placez le curseur sur une ligne de code jusqu’à ce que le
 ![Exécuter jusqu’au clic](../debugger/media/dbg-tour-run-to-click-2.png "Exécuter jusqu’au clic")
 
 > [!NOTE]
-> Le bouton **Exécuter jusqu’au clic** (Exécuter l’exécution jusqu’ici) est une nouveauté de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> Le bouton **Exécuter jusqu’au clic** (Exécuter l’exécution jusqu’ici) est disponible à compter de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Cliquez sur le bouton **Exécuter jusqu’au clic** (Exécuter l’exécution jusqu’ici). Le débogueur avance jusqu’à la ligne de code où vous avez cliqué.
 
@@ -188,7 +188,7 @@ Dans cet exemple, l’appel de `DirectoryInfo` a provoqué l’erreur sur la cha
 L’Assistance sur l’exception est une fonctionnalité intéressante qui peut vous aider à déboguer des erreurs. Vous pouvez également examiner les détails de l’erreur et ajouter un espion à partir de l’Assistance sur l’exception. Si nécessaire, vous pouvez aussi changer les conditions pour lever une exception donnée. Pour plus d’informations sur la prise en charge des exceptions dans le code, consultez [Techniques et outils de débogage](../debugger/write-better-code-with-visual-studio.md).
 
 > [!NOTE]
-> L’Assistance sur l’exception remplace l’Assistant Exception dans [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> L’Assistance sur l’exception a remplacé l’Assistant Exception dans [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Développez le nœud **Paramètres d’exception** pour voir plus d’options sur la façon de gérer ce type d’exception ; dans le cadre de cette visite guidée, vous ne devez néanmoins rien changer !
 

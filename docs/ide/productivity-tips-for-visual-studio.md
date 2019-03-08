@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b2b2aca59fccee30f017c7679d16c7b32f23c44
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 362a4c000d8834ee5adc14b0620a77a51a47c0c3
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702718"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223141"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Conseils de productivité pour Visual Studio
 
@@ -24,7 +24,7 @@ Pour plus d'informations sur les raccourcis clavier courants, consultez [Conseil
 
 Écrivez le code plus rapidement à l’aide des fonctionnalités suivantes.
 
-- **Utilisez des commandes pratiques**. Visual Studio propose différentes commandes pour vous aider à accomplir plus rapidement des tâches d’édition. Par exemple, dans **Visual Studio 2017 versions 15.6** et ultérieures, vous pouvez choisir une commande afin de facilement dupliquer une ligne de code sans avoir à la copier, à repositionner le curseur, puis à coller la ligne. Choisissez **Edition** > **Dupliquer** ou appuyez sur **Ctrl**+**E**,**V**. Vous pouvez également développer ou diminuer rapidement une sélection de texte en choisissant **Modifier** > **Avancé** > **Développer la sélection** ou **Modifier** > **Avancé** > **Diminuer la sélection** ou en appuyant sur **Maj**+**Alt**+**=** ou sur **Maj**+**Alt**+**-**  (disponible dans **Visual Studio 2017 version 15.5** et version ultérieure).
+- **Utilisez des commandes pratiques**. Visual Studio propose différentes commandes pour vous aider à accomplir plus rapidement des tâches d’édition. Par exemple, vous pouvez choisir une commande pour dupliquer facilement une ligne de code sans avoir à la copier, à repositionner le curseur, puis à coller la ligne. Choisissez **Edition** > **Dupliquer** ou appuyez sur **Ctrl**+**E**,**V**. Vous pouvez également développer ou diminuer rapidement une sélection de texte en choisissant **Modifier** > **Avancé** > **Développer la sélection** ou **Modifier** > **Avancé** > **Diminuer la sélection** ou en appuyant sur **Maj**+**Alt**+**=** ou sur **Maj**+**Alt**+**-**.
 
 - **Utiliser IntelliSense**. Lorsque vous écrivez du code dans l'éditeur, les informations IntelliSense, telles que Liste des membres, Informations sur les paramètres, Info express, l'assistance de signature et Compléter le mot, s'affichent. Ces fonctionnalités prennent en charge la correspondance approximative de texte. Par exemple, les listes de résultats pour la liste des membres comprennent non seulement les entrées qui commencent par les caractères saisis, mais également celles qui contiennent la combinaison de caractères n’importe où dans leurs noms. Pour plus d’informations, consultez [Utiliser IntelliSense](../ide/using-intellisense.md).
 
@@ -102,9 +102,19 @@ Le débogage peut prendre beaucoup de temps, mais les conseils suivants peuvent 
 
 Vous pouvez rapidement accéder à une invite de commandes développeur ou à un autre outil Visual Studio si vous l’épinglez au menu Démarrer ou à la barre des tâches.
 
-1. Dans l’Explorateur Windows, accédez à `%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools`.
+::: moniker range="vs-2017"
 
-1. Cliquez avec le bouton droit ou ouvrez le menu contextuel pour **Invite de commandes développeur**, puis choisissez **Épingler au menu Démarrer** ou **Épingler à la barre des tâches**.
+1. Dans l’Explorateur Windows, accédez à *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Dans l’Explorateur Windows, accédez à *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2019\Visual Studio Tools*.
+
+::: moniker-end
+
+2. Cliquez avec le bouton droit ou ouvrez le menu contextuel pour **Invite de commandes développeur**, puis choisissez **Épingler au menu Démarrer** ou **Épingler à la barre des tâches**.
 
 ## <a name="manage-files-toolbars-and-windows"></a>Gérer des fichiers, des barres d’outils et des fenêtres
 

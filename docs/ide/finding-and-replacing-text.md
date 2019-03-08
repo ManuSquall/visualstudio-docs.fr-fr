@@ -30,16 +30,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23bda0ccea91089957b9aa6bea97bb5b7b592b20
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f5fc437d1365fe58c8eb7ae725196c4ad3370836
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937446"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323732"
 ---
 # <a name="find-and-replace-text"></a>Rechercher et remplacer du texte
 
-Vous pouvez rechercher et remplacer du texte dans l’éditeur Visual Studio avec [Rechercher et remplacer](#find-and-replace-control) ou [Rechercher/remplacer dans les fichiers](#find-in-files-and-replace-in-files). Parmi les nouveautés de Visual Studio 2017 version 15.8, vous pouvez rechercher et remplacer *certaines* instances d’un modèle à l’aide de la *[sélection avec signes insertion multiples](#multi-caret-selection)*.
+Vous pouvez rechercher et remplacer du texte dans l’éditeur Visual Studio avec [Rechercher et remplacer](#find-and-replace-control) (**Ctrl**+**F** ou **Ctrl**+**H**) ou [Rechercher/remplacer dans les fichiers](#find-in-files-and-replace-in-files) (**Ctrl**+**Maj**+**F** ou **Ctrl**+**Maj**+**H**). Vous pouvez également rechercher et remplacer uniquement *certaines* instances d’un modèle à l’aide de la *[sélection avec signes insertion multiples](#multi-caret-selection)*.
 
 > [!TIP]
 > Si vous renommez des symboles du code comme des variables et des méthodes, il est préférable de les *[refactoriser](../ide/reference/rename.md)* au lieu d’utiliser Rechercher et remplacer. La refactorisation fonctionne de façon intelligente et comprend la notion d’étendue, alors que Rechercher et remplacer remplace aveuglément toutes les instances.
@@ -53,7 +53,10 @@ Vous pouvez limiter les recherches au document actif, à la solution actuelle ou
 
 ## <a name="find-and-replace-control"></a>Contrôle Rechercher et remplacer
 
-Le contrôle **Rechercher et remplacer** s’affiche dans le coin supérieur droit de la fenêtre de l’éditeur de code. Le contrôle **Rechercher et remplacer** met immédiatement en surbrillance chaque occurrence de la chaîne de recherche donnée dans le document actif. Vous pouvez passer d’une occurrence à une autre en choisissant le bouton **Suivant** ou **Précédent** sur le contrôle de recherche.
+- Appuyez sur le raccourci **Ctrl**+**F** pour *rechercher* une chaîne dans le fichier actif.
+- Appuyez sur le raccourci **Ctrl**+**H** pour *rechercher et remplacer* une chaîne dans le fichier actif.
+
+Le contrôle **Rechercher et remplacer** s’affiche dans le coin supérieur droit de la fenêtre de l’éditeur de code. Il met immédiatement en surbrillance chaque occurrence de la chaîne de recherche donnée dans le document actif. Vous pouvez passer d’une occurrence à une autre en choisissant le bouton **Suivant** ou **Précédent** sur le contrôle de recherche.
 
 ![Rechercher et remplacer dans Visual Studio](media/find-and-replace-box.png)
 
@@ -69,7 +72,10 @@ Une version de la commande **Rechercher** est également disponible dans certain
 
 ## <a name="find-in-files-and-replace-in-files"></a>Rechercher dans les fichiers et remplacer dans les fichiers
 
-L’option **Rechercher/Remplacer dans les fichiers** fonctionne comme le contrôle **Rechercher et remplacer**, à ceci près que vous pouvez définir une étendue de recherche. Vous pouvez non seulement rechercher dans le fichier actif ouvert dans l’éditeur, mais aussi rechercher dans tous les documents ouverts, dans la solution complète, dans le projet actif et dans des jeux de dossiers sélectionnés. Vous pouvez également effectuer une recherche basée sur une extension de nom de fichier. Pour accéder à la boîte de dialogue **Rechercher/Remplacer dans les fichiers**, sélectionnez **Rechercher et remplacer** dans le menu **Edition** ou appuyez sur **Ctrl+Maj+F**.
+- Appuyez sur le raccourci **Ctrl**+**Maj**+**F** pour *rechercher* une chaîne dans plusieurs fichiers.
+- Appuyez sur le raccourci **Ctrl**+**Maj**+**H** pour *rechercher et remplacer* une chaîne dans plusieurs fichiers.
+
+L’option **Rechercher/Remplacer dans les fichiers** fonctionne comme le contrôle **Rechercher et remplacer**, à ceci près que vous pouvez définir une étendue de recherche. Vous pouvez non seulement rechercher dans le fichier actif ouvert dans l’éditeur, mais aussi rechercher dans tous les documents ouverts, dans la solution complète, dans le projet actif et dans des jeux de dossiers sélectionnés. Vous pouvez également effectuer une recherche basée sur une extension de nom de fichier. Pour accéder à la boîte de dialogue **Rechercher/Remplacer dans les fichiers**, sélectionnez **Rechercher et remplacer** dans le menu **Edition** (ou appuyez sur **Ctrl**+**Maj**+**F**).
 
 ![Rechercher dans des fichiers dans Visual Studio](media/find-in-files-box.png)
 
@@ -93,7 +99,7 @@ Vous pouvez définir des jeux de composants comme étendue de recherche en chois
 > [!NOTE]
 > Cette section s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Sélection de bloc](/visualstudio/mac/block-selection).
 
-**Nouveauté de Visual Studio 2017 version 15.8**
+**Introduite dans Visual Studio 2017 version 15.8**
 
 Utilisez la *sélection avec signes insertion multiples* pour effectuer la même modification à plusieurs endroits à la fois. Par exemple, vous pouvez insérer le même texte ou modifier du texte existant à plusieurs emplacements en même temps.
 

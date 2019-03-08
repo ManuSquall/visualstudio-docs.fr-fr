@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 319b9a5a63313535889a3396794c9481b6fe4965
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1634731e68c395dea5a14876cf67944714cb4c3a
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949042"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222482"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Questions fréquentes (FAQ) sur FxCop et les analyseurs FxCop
 
@@ -31,7 +31,7 @@ Les analyseurs FxCop sont basés sur .NET Compiler Platform (« Roslyn »). Vo
 
 ## <a name="does-the-run-code-analysis-command-run-fxcop-analyzers"></a>La commande Exécuter l’analyse du Code exécute-t-elle les analyseurs FxCop ?
 
-Non. Quand vous sélectionnez **Analyser** > **Exécuter l’analyse du code** dans Visual Studio 2017, elle exécute l’analyse statique du code ou FxCop hérité. L’option **Exécuter l’analyse du Code** n’a aucun effet sur les analyseurs basés sur Roslyn, notamment les analyseurs FxCop basés sur Roslyn.
+Non. Quand vous sélectionnez **Analyser** > **Exécuter l’analyse du code**, elle exécute l’analyse statique du code ou FxCop hérité. L’option **Exécuter l’analyse du Code** n’a aucun effet sur les analyseurs basés sur Roslyn, notamment les analyseurs FxCop basés sur Roslyn.
 
 ## <a name="does-the-runcodeanalysis-msbuild-project-property-run-analyzers"></a>La propriété de projet msbuild RunCodeAnalysis exécute-t-elle des analyseurs ?
 

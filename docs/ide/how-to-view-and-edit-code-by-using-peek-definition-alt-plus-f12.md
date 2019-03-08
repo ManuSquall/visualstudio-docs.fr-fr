@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cda6865a4dee34976fa2885313db6aad253f32c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5ce26aeb22ca34a6cb01608e89dba4666e30f846
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924446"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223596"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Procédure : afficher et modifier le code avec l’Aperçu de définition (Alt + F12)
 
@@ -24,11 +24,11 @@ Vous pouvez utiliser **Aperçu de définition** avec du code C#, Visual Basic e
 
 ### <a name="to-open-a-peek-definition-window"></a>Pour ouvrir une fenêtre Aperçu de définition
 
-1. Vous pouvez afficher l’aperçu d’une définition en choisissant **Aperçu de la définition** dans le menu contextuel (clic droit) d’un type ou membre que vous souhaitez explorer. Dans Visual Studio 2017 version 15.4 ou ultérieure, si l’option est activée, vous pouvez également afficher l’aperçu d’une définition à l’aide de la souris en appuyant sur **Ctrl** (ou sur une autre touche de modification) et en cliquant sur le nom du membre. Si vous préférez utiliser le clavier, appuyez sur **Alt**+**F12**.
+1. Vous pouvez afficher l’aperçu d’une définition en choisissant **Aperçu de la définition** dans le menu contextuel (clic droit) d’un type ou membre que vous souhaitez explorer. Si l’option est activée, vous pouvez également afficher l’aperçu d’une définition à l’aide de la souris en appuyant sur **Ctrl** (ou sur une autre touche de modification) et en cliquant sur le nom du membre. Si vous préférez utiliser le clavier, appuyez sur **Alt**+**F12**.
 
      Cette illustration représente la fenêtre **Aperçu de définition** pour une méthode nommée `Print()` :
 
-     ![Aperçu, fenêtre](../ide/media/peekwindow.png)
+     ![Fenêtre d'aperçu](../ide/media/peekwindow.png)
 
      La fenêtre de définition apparaît sous la ligne `printer.Print("Hello World!")` du fichier d'origine. La fenêtre ne masque aucune partie du code de votre fichier d'origine. Les lignes qui suivent `printer.Print("Hello World!")` apparaissent sous la fenêtre de définition.
 
@@ -42,13 +42,13 @@ Vous pouvez utiliser **Aperçu de définition** avec du code C#, Visual Basic e
 
 Si une fenêtre **Aperçu de définition** est déjà ouverte, vous pouvez appeler de nouveau **Aperçu de définition** sur le code affiché dans cette fenêtre. Une autre fenêtre de définition s'ouvre. Un ensemble de points de navigation apparaissent en regard de l'onglet de la fenêtre de définition. Vous pouvez les utiliser pour naviguer entre les fenêtres de définition. L’info-bulle sur chaque point indique le nom et le chemin du fichier de définition que le point représente.
 
-   ![Fenêtre d’aperçu dans une fenêtre d’aperçu](../ide/media/peekwithinpeek.png)
+   ![Fenêtre d'aperçu dans une fenêtre d'aperçu](../ide/media/peekwithinpeek.png)
 
 ### <a name="peek-definition-with-multiple-results"></a>Utiliser l’option Aperçu de définition avec plusieurs résultats
 
 Si vous utilisez l’option **Aperçu de définition** sur du code possédant plusieurs définitions (par exemple, une classe partielle), une liste de résultats apparaît à droite de la vue Définition de code. Vous pouvez choisir un résultat quelconque dans la liste pour afficher sa définition.
 
-   ![Fenêtre d’aperçu de plusieurs résultats](../ide/media/peekmultiple.png)
+   ![Fenêtre d'aperçu de plusieurs résultats](../ide/media/peekmultiple.png)
 
 ### <a name="edit-inside-the-peek-definition-window"></a>Apporter des modifications dans la fenêtre Aperçu de définition
 

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d8fcde39c2e64d431848b510b5e046031b6dac2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 135e1828c72f1824833ea675fa5bd2b01c7c80af
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934066"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223037"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Démarrage rapide : Personnaliser l’éditeur et l’IDE de Visual Studio
 
@@ -22,7 +22,7 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 ## <a name="set-the-color-theme"></a>Définir le thème de couleur
 
-Le thème de couleur par défaut de l’interface utilisateur de Visual Studio 2017 se nomme **Bleu**. Nous allons le remplacer par le thème **Dark** (Sombre).
+Le thème de couleur par défaut de l’interface utilisateur de Visual Studio se nomme **Bleu**. Nous allons le remplacer par le thème **Dark** (Sombre).
 
 1. Dans la barre de menus, qui est la rangée de menus tels que **Fichier** et **Edition**, choisissez **Outils** > **Options**.
 
