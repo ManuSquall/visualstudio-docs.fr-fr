@@ -153,9 +153,9 @@ items:
   - name: Analyse du code pour les avertissements liés au code managé
     href: code-analysis-for-managed-code-warnings.md
     items:
-    - name: Avertissements d'analyse du code pour le code managé par CheckId
+    - name: Avertissements liés à l’analyse de code managé par CheckId
       href: code-analysis-warnings-for-managed-code-by-checkid.md
-    - name: Avertissements de chiffrement
+    - name: Avertissements liés au chiffrement
       href: cryptography-warnings.md
       items:
       - name: 'CA5350 : N’utilisez pas d’algorithmes de chiffrement faibles'
@@ -314,7 +314,7 @@ items:
         href: ca1309-use-ordinal-stringcomparison.md
       - name: 'CA2101 : Spécifiez le marshaling pour les arguments de chaîne P-Invoke'
         href: ca2101-specify-marshaling-for-p-invoke-string-arguments.md
-    - name: avertissements liés à l’interopérabilité
+    - name: Avertissements liés à l’interopérabilité
       href: interoperability-warnings.md
       items:
       - name: "CA1400 : Des points d'entrée P-Invoke doivent exister"
@@ -349,7 +349,7 @@ items:
         href: ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md
       - name: 'CA1415 : Déclarer correctement les méthodes P-Invoke'
         href: ca1415-declare-p-invokes-correctly.md
-    - name: avertissements liés à la facilité de maintenance
+    - name: Avertissements liés à la maintenabilité
       href: maintainability-warnings.md
       items:
       - name: 'CA1500 : Les noms de variables ne doivent pas être identiques aux noms de champs'
@@ -364,14 +364,14 @@ items:
         href: ca1505-avoid-unmaintainable-code.md
       - name: 'CA1506 : Éviter les couplages de classe excessifs'
         href: ca1506-avoid-excessive-class-coupling.md
-    - name: avertissements liés à la mobilité
+    - name: Avertissements liés à la mobilité
       href: mobility-warnings.md
       items:
       - name: 'CA1600 : Ne pas utiliser de priorité de processus inactif'
         href: ca1600-do-not-use-idle-process-priority.md
       - name: "CA1601 : Ne pas utiliser de minuteries qui empêchent les changements d'état de l'alimentation"
         href: ca1601-do-not-use-timers-that-prevent-power-state-changes.md
-    - name: avertissements liés à l’affectation de noms
+    - name: Avertissements liés à l’attribution de noms
       href: naming-warnings.md
       items:
       - name: "CA1700 : Ne nommez pas les valeurs enum 'Reserved'"
@@ -420,7 +420,7 @@ items:
         href: ca1724-type-names-should-not-match-namespaces.md
       - name: 'CA1726 : Utilisez les termes par défaut'
         href: ca1726-use-preferred-terms.md
-    - name: avertissements liés aux performances
+    - name: Avertissements liés aux performances
       href: performance-warnings.md
       items:
       - name: "CA1800 : N'effectuez pas de cast inutilement"
@@ -455,7 +455,7 @@ items:
         href: ca1823-avoid-unused-private-fields.md
       - name: 'CA1824 : Marquer les assemblys avec NeutralResourcesLanguageAttribute'
         href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
-    - name: avertissements liés à la portabilité
+    - name: Avertissements liés à la portabilité
       href: portability-warnings.md
       items:
       - name: 'CA1900 : Les champs de type valeur doivent être portables'
@@ -464,7 +464,7 @@ items:
         href: ca1901-p-invoke-declarations-should-be-portable.md
       - name: "CA1903 : Utiliser uniquement l'API à partir du Framework cible"
         href: ca1903-use-only-api-from-targeted-framework.md
-    - name: avertissements liés à la fiabilité
+    - name: Avertissements liés à la fiabilité
       href: reliability-warnings.md
       items:
       - name: 'CA2000 : Supprimer les objets avant la mise hors de portée'
@@ -479,6 +479,8 @@ items:
         href: ca2004-remove-calls-to-gc-keepalive.md
       - name: 'CA2006 : Utilisez SafeHandle pour encapsuler les ressources natives'
         href: ca2006-use-safehandle-to-encapsulate-native-resources.md
+      - name: 'CA2007 : N’attendez pas directement une Tâche'
+        href: ca2007-do-not-directly-await-task.md
     - name: Avertissements liés à la sécurité
       href: security-warnings.md
       items:
@@ -580,7 +582,7 @@ items:
         href: ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md
       - name: 'CA3147 : Marquer les gestionnaires de verbe avec ValidateAntiForgeryToken'
         href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
-    - name: avertissements liés à l’utilisation
+    - name: Avertissements liés à l’utilisation
       href: usage-warnings.md
       items:
       - name: 'CA1801 : Passez en revue les paramètres inutilisés'
@@ -671,7 +673,7 @@ items:
         href: ca2243-attribute-string-literals-should-parse-correctly.md
     - name: Erreurs de stratégie d’analyse du code
       href: code-analysis-policy-errors.md
-  - name: Avertissements des vérificateurs C++ Core Guidelines
+  - name: Avertissements liés au vérificateur C++ Core Guidelines
     href: code-analysis-for-cpp-corecheck.md
     items:
     - name: C26400
@@ -828,7 +830,7 @@ items:
       href: C26497.md
     - name: C26498
       href: C26498.md
-  - name: Analyse de code pour les avertissements C/C++
+  - name: Avertissements liés à l’analyse de code C/C++
     href: code-analysis-for-c-cpp-warnings.md
     items:
     - name: C1250
@@ -1468,9 +1470,9 @@ items:
       href: ca0505.md
     - name: FxCopCmd (erreurs)
       href: fxcopcmd-errors.md
-ms.openlocfilehash: 4d6e4458e334cc1d51b65ae9ba8eaeb83fc70aa2
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: d922322159ed52441168ab7bfec76c0f92804501
+ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54835148"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "57699666"
