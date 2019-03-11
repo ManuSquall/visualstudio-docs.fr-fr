@@ -116,6 +116,8 @@ items:
       items:
       - name: Appliquer des modifications en mode arrêt avec Modifier et Continuer
         href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
+    - name: Écrire et déboguer du code XAML en cours d’exécution
+      href: xaml-edit-and-continue.md
     - name: Opération Modifier et Continuer non prise en charge pour F#
       href: edit-and-continue-not-supported-for-f-hash.md
   - name: Afficher les données du débogueur
@@ -612,7 +614,7 @@ items:
   - name: Référence du débogage de l'interface utilisateur
     href: debugging-user-interface-reference.md
     items:
-    - name: Boîte de dialogue Choisir les points d’arrêt
+    - name: Boîte de dialogue Choisir les points d'arrêt
       href: choose-breakpoints-dialog-box.md
     - name: Configurer le pare-feu pour le débogage distant (boîte de dialogue)
       href: configure-firewall-for-remote-debugging-dialog-box.md
@@ -841,9 +843,9 @@ items:
   items:
   - name: Nouveautés du débogueur dans Visual Studio
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 703836e5453534998db5090d904aae4339993c43
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 60b141b0f9a7b00dda32a68f5f33e2bc8321dad6
+ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335465"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "57699653"

@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c79f51d1bcc82bda9e7c3f21548eac445f36f925
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fb70eca0ae2f2998752ccc0f096f594e6825e4e8
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948275"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221942"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>Vue d’ensemble des analyseurs .NET Compiler Platform
 
-Visual Studio 2017 comprend un ensemble intégré d’analyseurs .NET Compiler Platform qui analysent votre code C# et Visual Basic à mesure que vous tapez. Les analyseurs observent le style du code, la qualité et facilité de gestion du code, la conception du code, ainsi que d’autres problèmes. Vous pouvez installer des analyseurs supplémentaires comme une extension Visual Studio ou par projet comme un package NuGet.
+Visual Studio comprend un ensemble intégré d’analyseurs .NET Compiler Platform qui analysent votre code C# et Visual Basic à mesure que vous l’écrivez. Les analyseurs observent le style du code, la qualité et facilité de gestion du code, la conception du code, ainsi que d’autres problèmes. Vous pouvez installer des analyseurs supplémentaires comme une extension Visual Studio ou par projet comme un package NuGet.
 
 Si des violations de règle sont trouvées par un analyseur, elles sont signalées à la fois dans l’éditeur de code sous la forme d’une *ligne ondulée* sous le code problématique et dans la **liste d’erreurs**.
 

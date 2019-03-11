@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea4cd33c67cfbd2d2150fceacaf0399810db0ca4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0044991b330594d80422f0c6ac1d1d64b1fec237
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638034"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567181"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Actions personnalisées dans les zones de formulaire Outlook
   Actions affichent les boutons qui permettent aux utilisateurs de répondre à un élément de Microsoft Office Outlook. Par exemple, pour répondre à un élément de messagerie, les utilisateurs cliquent sur le **réponse**, **répondre à tous**, ou **transférer** boutons d’action. Chacune de ces actions crée un élément de messagerie et renseigne les champs de l’élément à l’aide des informations à partir de l’élément d’origine.
@@ -28,7 +28,7 @@ ms.locfileid: "56638034"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="add-custom-actions-to-a-form-region"></a>Ajouter des actions personnalisées à une zone de formulaire
- Pour ajouter une action personnalisée à une zone de formulaire, utilisez le **Actions personnalisées** boîte de dialogue. Vous pouvez ouvrir le **Actions personnalisées** boîte de dialogue dans **l’Explorateur de solutions** en développant le **manifeste** nœud, en sélectionnant le **CustomActions**propriété, puis en cliquant sur le bouton de sélection (![ellipse concepteur mobile ASP.NET](../sharepoint/media/mwellipsis.gif "ellipse de concepteur ASP.NET Mobile")).
+ Pour ajouter une action personnalisée à une zone de formulaire, utilisez le **Actions personnalisées** boîte de dialogue. Vous pouvez ouvrir le **Actions personnalisées** boîte de dialogue en sélectionnant la zone de formulaire dans **l’Explorateur de solutions**, en développant le **manifeste** nœud dans le **propriétés Fenêtre**, en sélectionnant le **CustomActions** propriété, puis en cliquant sur le bouton de sélection (![ellipse concepteur mobile ASP.NET](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile Ellipse de concepteur")).
 
  Vous pouvez utiliser la **Actions personnalisées** boîte de dialogue pour spécifier un *formulaire cible*. Un formulaire de la cible est le formulaire qui apparaît lorsque l’utilisateur exécute l’action personnalisée.
 

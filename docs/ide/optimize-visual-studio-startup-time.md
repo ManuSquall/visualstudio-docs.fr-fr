@@ -14,12 +14,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 22dcbcbf9a3506e3cd6c962b1f31ada24d5234e5
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 60302646abbf36034756f38183d7be7f0d28c1ca
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315870"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223648"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Améliorer la vitesse de démarrage de Visual Studio
 
@@ -27,7 +27,7 @@ Visual Studio est conçu pour démarrer aussi rapidement et efficacement que pos
 
 ## <a name="startup-behavior"></a>Comportement au démarrage
 
-Pour éviter d’allonger le temps de démarrage, Visual Studio 2017 utilise une approche de chargement _à la demande_ pour charger les extensions. Ce comportement signifie que les extensions ne s’ouvrent pas immédiatement au démarrage de Visual Studio, mais en fonction des besoins. En outre, les fenêtres d’outils restées ouvertes dans une session antérieure de Visual Studio pouvant ralentir la vitesse de démarrage, Visual Studio ouvre les fenêtres d’outils de façon plus intelligente pour ne pas affecter la vitesse de démarrage.
+Pour ne pas allonger le temps de démarrage, Visual Studio utilise une approche de chargement _à la demande_ pour charger les extensions. Ce comportement signifie que les extensions ne s’ouvrent pas immédiatement au démarrage de Visual Studio, mais en fonction des besoins. En outre, les fenêtres d’outils restées ouvertes dans une session antérieure de Visual Studio pouvant ralentir la vitesse de démarrage, Visual Studio ouvre les fenêtres d’outils de façon plus intelligente pour ne pas affecter la vitesse de démarrage.
 
 Si Visual Studio détecte un démarrage lent, un message s’affiche pour vous signaler l’extension ou la fenêtre d’outils qui en est la cause. Le message fournit un lien vers la boîte de dialogue **Gérer le niveau de performance de Visual Studio**. Pour accéder à cette boîte de dialogue, choisissez **Aide** > **Gérer le niveau de performance de Visual Studio** dans la barre de menus.
 
@@ -66,7 +66,7 @@ Vous pouvez toujours réactiver l’extension pour les sessions ultérieures à 
      ![Gérer le niveau de performance de Visual Studio – Affichage Fenêtres d’outils](../ide/media/vside_perfdialog_toolwindows.png)
 
 > [!NOTE]
-> Certaines versions de Visual Studio antérieures à la version 2017 comportaient une fonctionnalité nommée **chargement de solution allégé**. Cette fonctionnalité n’est plus disponible dans Visual Studio 2017 versions 15.5 et ultérieures. dans lesquelles les solutions volumineuses qui contiennent du code managé se chargent beaucoup plus vite qu’avant, même sans utiliser le chargement de solution allégé.
+> Certaines versions de Visual Studio antérieures à la version 2017 comportaient une fonctionnalité nommée **chargement de solution allégé**. Dans les versions actuelles, les solutions volumineuses qui contiennent du code managé se chargent beaucoup plus vite qu’avant, même sans utiliser le chargement de solution allégé.
 
 ## <a name="see-also"></a>Voir aussi
 

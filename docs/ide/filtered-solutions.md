@@ -10,18 +10,18 @@ author: gewarren
 ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 2f7163ecda377d8fa8b7c27ed50dae4068d39600
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cfa95c68d3b7ebe681e40d23a5424a3356a61ab6
+ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952916"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007174"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Solutions filtrées dans Visual Studio
 
-**Nouveautés de Visual Studio 2019 Preview 1**
+**Nouveautés de Visual Studio 2019**
 
-La collaboration entre grandes équipes de développement passe souvent par une vaste solution unique comprenant de nombreux projets. Toutefois, les développeurs individuels travaillent généralement sur un petit sous-ensemble de ces projets. Pour améliorer les performances associées à l’ouverture de grandes solutions, Visual Studio 2019 Preview 1 introduit le *filtrage de solution*. Le filtrage de solution permet d’ouvrir une solution avec uniquement certains projets chargés. Le chargement d’un sous-ensemble de projets d’une solution permet non seulement de réduire la durée des processus de chargement, de build et de test de la solution, mais aussi de mieux cibler la revue du code.
+La collaboration entre grandes équipes de développement passe souvent par une vaste solution unique comprenant de nombreux projets. Toutefois, les développeurs individuels travaillent généralement sur un petit sous-ensemble de ces projets. Pour améliorer les performances associées à l’ouverture de grandes solutions, Visual Studio 2019 introduit le *filtrage de solution*. Le filtrage de solution permet d’ouvrir une solution avec uniquement certains projets chargés. Le chargement d’un sous-ensemble de projets d’une solution permet non seulement de réduire la durée des processus de chargement, de build et de test de la solution, mais aussi de mieux cibler la revue du code.
 
 Les fonctionnalités suivantes sont disponibles :
 

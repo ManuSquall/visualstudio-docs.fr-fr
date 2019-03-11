@@ -10,12 +10,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: a9571456a5c9b277b69e6045e1277f78d586f3e0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1f5ad2f5860c148d4bb9d0ee026eee9b1e83c74c
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923368"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223128"
 ---
 # <a name="code-style-preferences"></a>Préférences de style de code
 
@@ -38,11 +38,11 @@ Les paramètres de style de code pour .NET peuvent également être gérés avec
 
 ## <a name="format-document-command"></a>Commande Mettre le document en forme
 
-Dans Visual Studio 2017 version 15.8 et les versions ultérieures, vous pouvez configurer la commande **Mettre le document en forme** (**Edition** > **Avancé** > **Mettre le document en forme**) pour effectuer un nettoyage de code supplémentaire sur un fichier, par exemple supprimer et trier les using ou appliquer des préférences de style de code. Vous pouvez définir les paramètres que la commande **Mettre le document en forme** doit appliquer dans la page [Options de mise en forme](reference/options-text-editor-csharp-formatting.md#format-document-settings).
+Vous pouvez configurer la commande **Mettre le document en forme** (**Edition** > **Avancé** > **Mettre le document en forme**) pour effectuer un nettoyage de code supplémentaire sur un fichier, par exemple supprimer et trier les using ou appliquer des préférences de style de code. Vous pouvez définir les paramètres que la commande **Mettre le document en forme** doit appliquer dans la page [Options de mise en forme](reference/options-text-editor-csharp-formatting.md#format-document-settings).
 
 Le nettoyage du code respecte les paramètres configurés dans un fichier *.editorconfig* ou, en l’absence de la règle ou du fichier approprié, ceux définis dans **Outils** > **Options** > **Éditeur de texte** > **C#** > [**Style de code** ou **Mise en forme**].
 
-La première fois que vous déclenchez la commande **Mettre le document en forme** dans Visual Studio 2017, une barre d’informations jaune vous invite à configurer vos paramètres de nettoyage du code.
+La première fois que vous déclenchez la commande **Mettre le document en forme** dans Visual Studio, une barre d’informations jaune vous invite à configurer vos paramètres de nettoyage du code.
 
 > [!TIP]
 > Les règles configurées avec la valeur **none** dans un fichier *.editorconfig* ne participent pas au nettoyage du code. Toutefois, elles peuvent être appliquées individuellement via le menu **Actions rapides et refactorisations**.

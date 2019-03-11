@@ -1,18 +1,12 @@
 ---
 layout: LandingPage
 title: Débogage de vos applications | Microsoft Docs
-description: Apprenez à utiliser Visual Studio 2017 pour déboguer des applications, des services et des outils dans le langage de votre choix pour vos plateformes et vos appareils.
+description: 'Apprenez à utiliser Visual Studio pour déboguer des applications, des services et des outils dans le langage de votre choix pour vos plateformes et vos appareils.'
 ms.custom: seodec18
 ms.topic: landing-page
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
-ms.openlocfilehash: 81ecddbfdb3f1b36a28156686e5d07ff4e6ee558
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156031"
 ---
 # <a name="debugging-in-visual-studio"></a>Débogage dans Visual Studio
 

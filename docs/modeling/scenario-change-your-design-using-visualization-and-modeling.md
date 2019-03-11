@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f320c992f3bb82ee29829d8d0a8dccc230ee6eb3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 41ca66c796b352113973dcf8d8158f385f49a8ec
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951603"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567368"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scénario : Changer votre conception à l’aide des outils de visualisation et de modélisation
 
@@ -172,7 +172,7 @@ Dinner Now doit estimer le coût de réalisation pour remplir le nouveau besoin.
 
 |**Diagramme**|**Éléments décrits**|
 |-|-|
-|*Diagramme de dépendances*<br /><br /> Consultez :<br /><br /> - [Créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagrammes de dépendance : Référence](../modeling/layer-diagrams-reference.md)<br />- [Diagrammes de dépendance : Instructions](../modeling/layer-diagrams-guidelines.md)<br />- [Valider du code avec des diagrammes de dépendance](../modeling/validate-code-with-layer-diagrams.md)|Architecture logique du code.<br /><br /> Un diagramme de dépendances organise et associe les artefacts dans une solution Visual Studio pour groupes abstraits appelés *couches*. Ces couches identifient les rôles, les tâches ou les fonctions que ces artefacts effectuent dans le système.<br /><br /> Les diagrammes de couche sont utiles pour décrire la conception prévue du système et valider le code en constante évolution par rapport à cette conception.<br /><br /> Pour créer des couches, faites glisser des éléments à partir de l’Explorateur de solutions, des cartes de code, de l’affichage de classes et de l’Explorateur d’objets. Pour dessiner de nouvelles couches, utilisez la boîte à outils ou cliquez avec le bouton droit sur la surface du diagramme.<br /><br /> Pour afficher les dépendances existantes, cliquez avec le bouton droit sur la surface du diagramme de couche, puis cliquez sur **Générer des dépendances**. Pour spécifier les dépendances prévues, dessinez de nouvelles dépendances.|
+|*Diagramme de dépendances*<br /><br /> Consultez :<br /><br /> - [Créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagrammes de dépendance : Référence](../modeling/layer-diagrams-reference.md)<br />- [Diagrammes de dépendance : Recommandations](../modeling/layer-diagrams-guidelines.md)<br />- [Valider du code avec des diagrammes de dépendance](../modeling/validate-code-with-layer-diagrams.md)|Architecture logique du code.<br /><br /> Un diagramme de dépendances organise et associe les artefacts dans une solution Visual Studio pour groupes abstraits appelés *couches*. Ces couches identifient les rôles, les tâches ou les fonctions que ces artefacts effectuent dans le système.<br /><br /> Les diagrammes de couche sont utiles pour décrire la conception prévue du système et valider le code en constante évolution par rapport à cette conception.<br /><br /> Pour créer des couches, faites glisser des éléments à partir de l’Explorateur de solutions, des cartes de code, de l’affichage de classes et de l’Explorateur d’objets. Pour dessiner de nouvelles couches, utilisez la boîte à outils ou cliquez avec le bouton droit sur la surface du diagramme.<br /><br /> Pour afficher les dépendances existantes, cliquez avec le bouton droit sur la surface du diagramme de couche, puis cliquez sur **Générer des dépendances**. Pour spécifier les dépendances prévues, dessinez de nouvelles dépendances.|
 
  Par exemple, le diagramme de dépendance suivant décrit les dépendances entre les couches et le nombre d’artefacts qui sont associés à chaque couche :
 
@@ -214,7 +214,7 @@ Au fur et à mesure que le travail avance, les équipes mettent à jour leurs é
 
 Consultez :
 
-- [Sur les outils Agile et de gestion de projet Agile](/azure/devops/boards/backlogs/overview?view=vsts)
+- [Sur les outils Agile et de gestion de projet Agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts)
 
 - [Graphiques, tableaux de bord et widgets (Services de DevOps Azure)](/azure/devops/report/dashboards/overview?view=vsts)
 
@@ -329,7 +329,7 @@ Cette carte montre que la classe PaymentApprover se trouve maintenant dans l’e
 
 |**Diagramme**|**Éléments décrits**|
 |-|-|
-|Diagramme de dépendances|L’architecture logique du système. Utiliser la validation de dépendance pour vous assurer que le code reste cohérent avec la conception.<br /><br /> Pour vous aider à identifier dependencys existantes ou prévues dependencys, créez une carte de code et regroupez les éléments connexes. Pour créer un diagramme de dépendances, consultez :<br /><br /> - [Créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagrammes de dépendance : Instructions](../modeling/layer-diagrams-guidelines.md)|
+|Diagramme de dépendances|L’architecture logique du système. Utiliser la validation de dépendance pour vous assurer que le code reste cohérent avec la conception.<br /><br /> Pour vous aider à identifier dependencys existantes ou prévues dependencys, créez une carte de code et regroupez les éléments connexes. Pour créer un diagramme de dépendances, consultez :<br /><br /> - [Créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagrammes de dépendance : Recommandations](../modeling/layer-diagrams-guidelines.md)|
 |Diagramme de classes (basé sur le code)|Classes existantes dans le code d’un projet spécifique.<br /><br /> Pour visualiser et modifier une classe existante dans le code, utilisez le Concepteur de classes.<br /><br /> Voir [Guide pratique pour Ajouter des diagrammes de classes aux projets (Concepteur de classes)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md).|
 
 ### <a name="DefineClasses"></a> Définir un glossaire des Types : Diagrammes de classes
@@ -398,7 +398,7 @@ Pour commencer l’exploration et l’examen des classes existantes, vous pouvez
 
 |**Diagramme**|**Description**|
 |-|-|
-|Diagramme de dépendances|Définit l’architecture logique du système relative aux classes.<br /><br /> Utiliser la validation de dépendance pour vous assurer que le code reste cohérent avec la conception.<br /><br /> Consultez :<br /><br /> - [Créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagrammes de dépendance : Référence](../modeling/layer-diagrams-reference.md)<br />- [Diagrammes de dépendance : Instructions](../modeling/layer-diagrams-guidelines.md)<br />- [Valider du code avec des diagrammes de dépendance](../modeling/validate-code-with-layer-diagrams.md)|
+|Diagramme de dépendances|Définit l’architecture logique du système relative aux classes.<br /><br /> Utiliser la validation de dépendance pour vous assurer que le code reste cohérent avec la conception.<br /><br /> Consultez :<br /><br /> - [Créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagrammes de dépendance : Référence](../modeling/layer-diagrams-reference.md)<br />- [Diagrammes de dépendance : Recommandations](../modeling/layer-diagrams-guidelines.md)<br />- [Valider du code avec des diagrammes de dépendance](../modeling/validate-code-with-layer-diagrams.md)|
 |Carte de code|Permet de visualiser l’organisation et les relations dans le code existant.<br /><br /> Pour identifier les classes, leurs relations et leurs méthodes, créez une carte de code qui montre ces éléments.<br /><br /> Consultez :<br /><br /> - [Mapper les dépendances dans vos solutions](../modeling/map-dependencies-across-your-solutions.md)|
 
 ### <a name="DescribeLayers"></a> Décrire l’Architecture logique : diagrammes de dépendance
@@ -454,9 +454,9 @@ Consultez :
 
 - [Créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)
 
-- [Diagrammes de dépendance : Référence](../modeling/layer-diagrams-reference.md)
+- [Diagrammes de dépendance : Informations de référence](../modeling/layer-diagrams-reference.md)
 
-- [Diagrammes de dépendance : Guidelines](../modeling/layer-diagrams-guidelines.md)
+- [Diagrammes de dépendance : Recommandations](../modeling/layer-diagrams-guidelines.md)
 
 - [Validation du code avec des diagrammes de dépendance](../modeling/validate-code-with-layer-diagrams.md)
 

@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a54f18e6e69fd71f1d46205903728a909c668383
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1dc65b29bafd67fa8265feb75b533d66504d33c8
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935717"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222059"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identifier et personnaliser les raccourcis clavier dans Visual Studio
 
@@ -106,11 +106,21 @@ Vous pouvez partager les raccourcis clavier personnalisés en les exportant vers
 
 4. Cochez la case **Clavier**, puis choisissez le bouton **Suivant**.
 
-    ![Exporter uniquement les raccourcis clavier personnalisés](../ide/media/exportshortcuts.png)
+   ![Exporter uniquement les raccourcis clavier personnalisés](../ide/media/exportshortcuts.png)
 
-5. Dans les zones **Comment voulez-vous appeler votre fichier des paramètres ?** et **Stocker mon fichier des paramètres dans ce répertoire**, laissez les valeurs par défaut ou spécifiez des valeurs différentes, puis choisissez le bouton **Terminer**.
+5. Dans les zones **Comment voulez-vous appeler votre fichier des paramètres** et **Stocker mon fichier des paramètres dans ce répertoire**, laissez les valeurs par défaut ou spécifiez des valeurs différentes, puis choisissez le bouton **Terminer**.
 
-    Par défaut, les raccourcis sont enregistrés dans un fichier du dossier *%USERPROFILE%\Documents\Visual Studio 2017\Settings*. Le nom du fichier reflète la date à laquelle vous avez exporté les paramètres, et l’extension est *.vssettings*.
+::: moniker range="vs-2017"
+
+Par défaut, les raccourcis sont enregistrés dans un fichier du dossier *%USERPROFILE%\Documents\Visual Studio 2017\Settings*. Le nom du fichier reflète la date à laquelle vous avez exporté les paramètres, et l’extension est *.vssettings*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Par défaut, les raccourcis sont stockés dans un fichier du dossier *%USERPROFILE%\Documents\Visual Studio 2019\Settings*. Le nom du fichier reflète la date à laquelle vous avez exporté les paramètres, et l’extension est *.vssettings*.
+
+::: moniker-end
 
 ### <a name="to-import-only-keyboard-shortcuts"></a>Pour importer uniquement les raccourcis clavier
 

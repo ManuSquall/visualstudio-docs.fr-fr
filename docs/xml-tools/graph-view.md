@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26ce96a699abeaf9e5fd205c1e1f53add79ab56d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5424e813c5f1e3908c02dbc63798f5891edb8131
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952643"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526644"
 ---
 # <a name="graph-view"></a>Vue du graphique
 
@@ -27,7 +27,7 @@ La vue du graphique fournit une représentation graphique des nœuds de schéma 
 
  L’aire de conception de la vue du graphique affiche le contenu de la [espace de travail de Concepteur de schémas XML](../xml-tools/xml-schema-designer-workspace.md). Si l'espace de travail contient des nœuds globaux du jeu de schémas, les nœuds sont représentés sur l'aire de conception de la vue du graphique et des flèches sont dessinées entre les nœuds qui ont des relations.
 
- Le fait de double-cliquer sur un nœud dans la vue du graphique affiche l'Éditeur XML.
+ Éditeur XML en double-cliquant sur un nœud dans la vue du graphique s’affiche.
 
  Pour supprimer les nœuds sélectionnés à partir de l’espace de travail, utilisez la barre d’outils Concepteur XSD ou la **supprimer** clé.
 
@@ -53,9 +53,9 @@ La vue du graphique fournit une représentation graphique des nœuds de schéma 
 |**Effacer l’espace de travail**|Efface l'espace de travail et l'aire de conception.|
 |**Supprimer à partir de l’espace de travail**|Supprime les nœuds sélectionnés de l'espace de travail et de l'aire de conception.|
 |**Supprimer toutes les valeurs sauf la sélection à partir de l’espace de travail**|Supprime les nœuds qui ne sont pas sélectionnés dans l'espace de travail et l'aire de conception.|
-|**Exporter le diagramme en tant qu’Image**|Enregistre l’aire de conception dans un fichier XPS.|
+|**Exporter le diagramme en tant qu’Image**|Enregistre l'aire de conception dans un fichier XPS.|
 |**Sélectionner tout**|Sélectionne tous les nœuds sur l'aire de conception.|
-|**Afficher le code**|Ouvre le fichier qui contient le nœud sélectionné dans l'Éditeur XML. L’élément est sélectionné dans le **Explorateur de schémas XML** est également sélectionné dans l’éditeur XML.|
+|**Afficher le code**|Ouvre le fichier qui contient le nœud sélectionné dans l’éditeur XML. L’élément est sélectionné dans le **Explorateur de schémas XML** est également sélectionné dans l’éditeur XML.|
 |**Propriétés (fenêtre)**|Ouvre le **propriétés** fenêtre (si elle n’est pas déjà ouvert). Cette fenêtre affiche des informations sur le nœud.|
 
  En plus des options communes décrites ci-dessus, le menu contextuel pour les éléments globaux comprend les options suivantes :
@@ -142,7 +142,7 @@ Le curseur de Zoom est opaque lorsque vous sélectionnez il, pointez dessus ou u
 
  Vous pouvez basculer entre la vue du graphique et de l’éditeur XML en cliquant sur un nœud à l’aide du menu contextuel (clic droit) afficher le Code.
 
- Si vous apportez des modifications au jeu de schémas dans l’Éditeur XML, les modifications sont synchronisées dans la vue du graphique. Pour plus d’informations, consultez [intégration avec l’éditeur XML](../xml-tools/integration-with-xml-editor.md).
+ Si vous apportez des modifications au schéma défini dans l’éditeur XML, les modifications seront synchronisées dans la vue du graphique. Pour plus d’informations, consultez [intégration avec l’éditeur XML](../xml-tools/integration-with-xml-editor.md).
 
 ## <a name="see-also"></a>Voir aussi
 

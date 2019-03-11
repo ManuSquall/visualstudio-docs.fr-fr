@@ -8,18 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7e9f995c8fc1107da7bc90b230eddc265e6082b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b228bbacb69449803847847932163a05f3cf5310
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913130"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323972"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Procédure : Supprimer les avertissements du compilateur
 
 Vous pouvez nettoyer un journal de génération en filtrant un ou plusieurs types d’avertissements du compilateur. Par exemple, vous souhaitez peut-être passer en revue uniquement une partie de la sortie générée quand vous définissez le niveau de détail **Normal**, **Détaillé** ou **Diagnostic** pour le journal de génération. Pour plus d’informations sur le niveau de détail, consultez [Guide pratique pour afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md).
 
-## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Supprimer des avertissements spécifiques pour Visual C# ou F# #
+## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Supprimer des avertissements spécifiques pour Visual C# ou F\#
 
 Utilisez la page de propriétés **Générer** pour supprimer des avertissements spécifiques pour les projets C# et F#.
 

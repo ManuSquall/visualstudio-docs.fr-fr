@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 684c129ed104ed11b7cd6c88a7b603956acf64cf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 51d4d81667bed3df6f970cd59c21286b7ef9a6a2
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922210"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223440"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>Page Projets et solutions, boîte de dialogue Options
 
@@ -71,7 +71,7 @@ Quand cette option est sélectionnée, Visual Studio affiche un message de confi
 
 ### <a name="reopen-documents-on-solution-load"></a>Rouvrir les documents au chargement de la solution
 
-**Nouveautés de Visual Studio 2017 version 15.8 préversion 2 et ultérieures**
+**Introduite dans Visual Studio 2017 version 15.8**
 
 Quand cette option est sélectionnée, les documents qui ont été laissés ouverts lors de la précédente fermeture de cette solution s’ouvrent automatiquement lors de l’ouverture de la solution.
 

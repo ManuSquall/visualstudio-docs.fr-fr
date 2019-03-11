@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0628b4824ebb33199521b660112622b130a090b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e89b09c3f868a3a1c67a0ca1dd9a42f73639d598
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937914"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525356"
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Procédure : Créer et modifier un fichier de schéma XSD
 
@@ -29,14 +29,10 @@ Cette rubrique décrit comment créer un fichier XSD (XML Schema Definition) et 
 
 ## <a name="to-edit-a-file"></a>Pour modifier un fichier
 
-1. Sélectionnez le **utiliser l’éditeur XML pour afficher et modifier le fichier de schéma XML sous-jacent** lien sur la vue de départ.
+1. Sélectionnez le **éditeur XML de l’utiliser pour afficher et modifier le fichier de schéma XML sous-jacent** lien sur la vue de départ.
 
-   L'Éditeur XML apparaît avec le nouveau fichier ouvert.
+   L’éditeur XML s’affiche avec le nouveau fichier est ouvert.
 
 2. Copiez le code d’exemple de schéma XML à partir de [schéma de bon de commande](../xml-tools/sample-xsd-file-simple-schema.md) et collez-le pour remplacer le code qui a été ajouté au nouveau fichier XSD par défaut.
 
    Le **Explorateur de schémas XML** est mis à jour avec le nouveau jeu de schémas.
-
-## <a name="see-also"></a>Voir aussi
-
-- [Utilisation des données XML](../xml-tools/working-with-xml-data.md)
