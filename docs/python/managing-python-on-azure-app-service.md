@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: f68f12578ea7b5148aa018c21e14c334c33ad9a1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c0f0cdb6c1807aa8ce0a30e7371fe8ad4270ca7b
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918921"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324180"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Guide pratique pour configurer un environnement Python sur Azure App Service (Windows)
 
@@ -76,7 +76,7 @@ Par exemple, après l’ajout d’une référence à `python361x64` (Python 3.6.
 
 ## <a name="set-webconfig-to-point-to-the-python-interpreter"></a>Définir web.config pour le faire pointer vers l’interpréteur Python
 
-Après avoir installé l’extension de site (via le portail ou un modèle Azure Resource Manager), faites pointer le fichier *web.config* de votre application vers l’interpréteur Python. Le fichier *web.config* indique au serveur web IIS (7+) qui s’exécute sur App Service comment il doit prendre en charge les requêtes Python via FastCGI ou HttpPlatform.
+Après avoir installé l’extension de site (via le portail ou un modèle Azure Resource Manager), faites pointer le fichier *web.config* de votre application vers l’interpréteur Python. Le fichier *web.config* indique au serveur web IIS (7+) qui s’exécute sur App Service comment il doit gérer les requêtes Python avec HttpPlatform (recommandé) ou FastCGI.
 
 Commencez par rechercher le chemin complet du fichier *python.exe* de l’extension de site, puis créez et modifiez le fichier *web.config* approprié.
 
@@ -97,6 +97,33 @@ Si vous avez des difficultés à voir le chemin pour l’extension, vous pouvez 
 1. Dans votre page App Service, sélectionnez **Outils de développement** > **Console**.
 1. Entrez la commande `ls ../home` ou `dir ..\home` pour afficher les dossiers des extensions de niveau supérieur, par exemple *Python361x64*.
 1. Entrez une commande telle que `ls ../home/python361x64` ou `dir ..\home\python361x64` pour vérifier qu’il contient *python.exe* et d’autres fichiers de l’interpréteur.
+
+### <a name="configure-the-httpplatform-handler"></a>Configurer le gestionnaire HttpPlatform
+
+Le module HttpPlatform passe les connexions de socket directement à un processus Python autonome. Cette transmission vous permet d’exécuter n’importe quel serveur web de votre choix, mais nécessite un script de démarrage qui exécute un serveur web local. Vous spécifiez le script dans l’élément `<httpPlatform>` de *web.config*, où l’attribut `processPath` pointe vers l’interpréteur Python de l’extension de site, et où l’attribut `arguments` pointe vers votre script et les arguments à fournir :
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <system.webServer>
+    <handlers>
+      <add name="PythonHandler" path="*" verb="*" modules="httpPlatformHandler" resourceType="Unspecified"/>
+    </handlers>
+    <httpPlatform processPath="D:\home\Python361x64\python.exe"
+                  arguments="D:\home\site\wwwroot\runserver.py --port %HTTP_PLATFORM_PORT%"
+                  stdoutLogEnabled="true"
+                  stdoutLogFile="D:\home\LogFiles\python.log"
+                  startupTimeLimit="60"
+                  processesPerApplication="16">
+      <environmentVariables>
+        <environmentVariable name="SERVER_PORT" value="%HTTP_PLATFORM_PORT%" />
+      </environmentVariables>
+    </httpPlatform>
+  </system.webServer>
+</configuration>
+```
+
+La variable d’environnement `HTTP_PLATFORM_PORT` montrée ici contient le port sur lequel votre serveur local doit écouter les connexions à partir de localhost. Cet exemple montre également comment créer une autre variable d’environnement si vous le souhaitez, dans ce cas `SERVER_PORT`.
 
 ### <a name="configure-the-fastcgi-handler"></a>Configurer le gestionnaire FastCGI
 
@@ -128,33 +155,6 @@ Les `<appSettings>` définis ici sont disponibles pour votre application en tant
 - `WSGI_LOG` est facultatif mais recommandé pour le débogage de votre application.
 
 Consultez [Publier sur Azure](publishing-python-web-applications-to-azure-from-visual-studio.md) pour plus d’informations sur le contenu de *web.config* avec les applications web Bottle, Flask et Django.
-
-### <a name="configure-the-httpplatform-handler"></a>Configurer le gestionnaire HttpPlatform
-
-Le module HttpPlatform passe les connexions de socket directement à un processus Python autonome. Cette transmission vous permet d’exécuter n’importe quel serveur web de votre choix, mais nécessite un script de démarrage qui exécute un serveur web local. Vous spécifiez le script dans l’élément `<httpPlatform>` de *web.config*, où l’attribut `processPath` pointe vers l’interpréteur Python de l’extension de site, et où l’attribut `arguments` pointe vers votre script et les arguments à fournir :
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<configuration>
-  <system.webServer>
-    <handlers>
-      <add name="PythonHandler" path="*" verb="*" modules="httpPlatformHandler" resourceType="Unspecified"/>
-    </handlers>
-    <httpPlatform processPath="D:\home\Python361x64\python.exe"
-                  arguments="D:\home\site\wwwroot\runserver.py --port %HTTP_PLATFORM_PORT%"
-                  stdoutLogEnabled="true"
-                  stdoutLogFile="D:\home\LogFiles\python.log"
-                  startupTimeLimit="60"
-                  processesPerApplication="16">
-      <environmentVariables>
-        <environmentVariable name="SERVER_PORT" value="%HTTP_PLATFORM_PORT%" />
-      </environmentVariables>
-    </httpPlatform>
-  </system.webServer>
-</configuration>
-```
-
-La variable d’environnement `HTTP_PLATFORM_PORT` montrée ici contient le port sur lequel votre serveur local doit écouter les connexions à partir de localhost. Cet exemple montre également comment créer une autre variable d’environnement si vous le souhaitez, dans ce cas `SERVER_PORT`.
 
 ## <a name="install-packages"></a>Installer des packages
 

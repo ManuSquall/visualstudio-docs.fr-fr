@@ -9,19 +9,19 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4e631c5b4d9b02b38939e6a1aba6337f633f83fa
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4e73e6939dd5b2cad382d56616e7cf1f2d64934e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921534"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223713"
 ---
-# <a name="live-unit-testing-with-visual-studio-2017"></a>Live Unit Testing avec Visual Studio 2017
+# <a name="live-unit-testing-with-visual-studio"></a>Live Unit Testing avec Visual Studio
 
 Au fil du développement d’une application, Live Unit Testing exécute automatiquement en arrière-plan tous les tests unitaires affectés, et présente en temps réel les résultats et la couverture du code dans l’IDE Visual Studio. Lorsque vous modifiez votre code, Live Unit Testing fournit des commentaires sur l’impact de vos modifications sur les tests existants et vous indique si le code que vous avez ajouté est couvert par un ou plusieurs tests existants. Cela vous rappellera d’écrire des tests unitaires lorsque vous créez des correctifs de bogues ou que vous ajoutez des fonctionnalités.
 
 > [!NOTE]
-> Live Unit Testing est disponible pour les projets Visual Basic et C# qui ciblent .NET Core ou le .NET Framework dans l’édition Enterprise de Visual Studio 2017.
+> Live Unit Testing est disponible pour les projets Visual Basic et C# qui ciblent .NET Core ou le .NET Framework dans l’édition Enterprise de Visual Studio.
 
 Lorsque vous utilisez Live Unit Testing pour vos tests, Live Unit Testing conserve des données sur l’état de vos tests. La capacité de Live Unit Testing à utiliser des données persistantes lui permet d’offrir des performances supérieures lors de l’exécution de vos tests de façon dynamique en réponse à des modifications du code.
 
@@ -51,7 +51,7 @@ Live Unit Testing fonctionne avec les trois frameworks de tests unitaires popula
 </tr>
 </table>
 
-Si vous avez des projets de test basés sur MSTest plus anciens qui référencent `Microsoft.VisualStudio.QualityTools.UnitTestFramework` et que vous ne souhaitez pas passer aux packages NuGet de MSTest plus récents, faites une mise à niveau vers Visual Studio 2017 version 15.4.
+Si vous avez des projets de test basés sur MSTest plus anciens qui référencent `Microsoft.VisualStudio.QualityTools.UnitTestFramework` et que vous ne souhaitez pas passer aux packages NuGet de MSTest plus récents, faites une mise à niveau vers Visual Studio 2017 version 15.4 ou ultérieure.
 
 Dans certains cas, vous devez peut-être restaurer explicitement les packages NuGet référencés par les projets dans la solution pour que Live Unit Testing fonctionne. Pour ce faire, générez une version explicite de la solution (sélectionnez **Générer** > **Regénérer la solution** dans le menu de niveau supérieur de Visual Studio) ou restaurez les packages dans la solution (cliquez avec le bouton droit sur la solution et sélectionnez **Restaurer des packages NuGet**) avant d’activer Live Unit Testing.
 
@@ -178,8 +178,8 @@ Pour les solutions comptant de nombreux projets de test, vous pouvez contrôler 
 
 Pour sélectionner les projets individuels dans les tests unitaires, procédez comme suit une fois Live Unit Testing démarré :
 
-1.  Cliquez avec le bouton droit sur la solution dans **l’Explorateur de solutions** et choisissez **Live Tests** > **Exclure** pour exclure toute la solution.
-1.  Cliquez avec le bouton droit sur chaque projet de test à inclure dans les tests et choisissez **Live Tests** > **Inclure**.
+1. Cliquez avec le bouton droit sur la solution dans **l’Explorateur de solutions** et choisissez **Live Tests** > **Exclure** pour exclure toute la solution.
+1. Cliquez avec le bouton droit sur chaque projet de test à inclure dans les tests et choisissez **Live Tests** > **Inclure**.
 
 **Exclusion de tests individuels de la fenêtre de l’éditeur de code**
 
@@ -200,4 +200,4 @@ Vous pouvez également utiliser les attributs suivants pour exclure des méthode
 - [Outils de test de code](https://visualstudio.microsoft.com/vs/testing-tools/)
 - [Blog sur Live Unit Testing](https://go.microsoft.com/fwlink/?linkid=842514)
 - [FAQ Live Unit Testing](live-unit-testing-faq.md)
-- [Vidéo Channel 9 : Live Unit Testing dans Visual Studio 2017](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)
+- [Vidéo Channel 9 : Live Unit Testing dans Visual Studio](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)

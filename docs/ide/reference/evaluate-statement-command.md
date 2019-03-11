@@ -1,6 +1,6 @@
 ---
-title: Évaluer l'instruction, commande
-ms.date: 11/04/2016
+title: EvaluateStatement
+ms.date: 02/25/2019
 ms.topic: reference
 f1_keywords:
 - debug.evaluatestatement
@@ -13,48 +13,33 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98bdaf41aa34367d656e2bfb5694f3b615dbe3b8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c7eff96d1b413ea10b1274eb7d7938148727acbc
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911739"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953053"
 ---
-# <a name="evaluate-statement-command"></a>Évaluer l'instruction, commande
+# <a name="evaluate-statement-command"></a>Évaluer l’instruction, commande
+
 Évalue et affiche l’instruction donnée.
 
 ## <a name="syntax"></a>Syntaxe
 
 ```cmd
-Debug.EvaluateStatement text
+>Debug.EvaluateStatement text
 ```
 
 ## <a name="arguments"></a>Arguments
- `text` Obligatoire. Instruction à évaluer.
 
-## <a name="remarks"></a>Notes
- La fenêtre utilisée pour entrer la commande **EvaluateStatement** détermine si un signe égal (=) est interprété comme un opérateur de comparaison ou comme un opérateur d’assignation.
+`text`
 
- Dans la fenêtre **Commande**, un signe égal (=) est interprété comme un opérateur de comparaison. Ainsi, si les valeurs des variables `a` et `b` sont différentes, la commande
-
-```cmd
->Debug.EvaluateStatement(a=b)
-```
-
- retourne la valeur `false`.
-
- Dans la fenêtre **Exécution**, en revanche, un signe égal (=) est interprété comme un opérateur d’assignation. Ainsi, la commande
-
-```cmd
->Debug.EvaluateStatement(a=b)
-```
-
- assigne à la variable `a` la valeur de variable `b`.
+Obligatoire. Instruction à évaluer.
 
 ## <a name="example"></a>Exemple
 
 ```cmd
->Debug.EvaluateStatement(a+b)
+>Debug.EvaluateStatement args.Length
 ```
 
 ## <a name="see-also"></a>Voir aussi

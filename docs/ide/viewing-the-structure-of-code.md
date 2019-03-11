@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e535ca76fd7b85d8267c0c002ffc8090430c5f0d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9d1072e6e9a2b097d9d2f50cc372ee8ba621e3d3
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926370"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323865"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Afficher la structure du code à l’aide de différentes fenêtres d’outils
 
@@ -126,7 +126,19 @@ Le menu contextuel de la fenêtre **Hiérarchie d’appels** contient les comman
 
 La fenêtre **Explorateur d’objets** affiche les descriptions du code dans vos projets.
 
-Vous pouvez filtrer les composants que vous souhaitez afficher à l’aide de la liste déroulante en haut de la fenêtre. Les composants personnalisés peuvent inclure des fichiers exécutables de code managé, des assemblys de bibliothèque, des bibliothèques de types et des fichiers *.ocx*. Il n'est pas possible d'ajouter des composants personnalisés C++. Les paramètres personnalisés sont enregistrés dans le répertoire d’application utilisateur Visual Studio : *%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat*.
+Vous pouvez filtrer les composants que vous souhaitez afficher à l’aide de la liste déroulante en haut de la fenêtre. Les composants personnalisés peuvent inclure des fichiers exécutables de code managé, des assemblys de bibliothèque, des bibliothèques de types et des fichiers *.ocx*. Il n'est pas possible d'ajouter des composants personnalisés C++.
+
+::: moniker range="vs-2017"
+
+Les paramètres personnalisés sont enregistrés dans le répertoire d’application utilisateur Visual Studio : *%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Les paramètres personnalisés sont enregistrés dans le répertoire d’application utilisateur Visual Studio : *%APPDATA%\Microsoft\VisualStudio\16.0\ObjBrowEX.dat*.
+
+::: moniker-end
 
 Le volet gauche de l’**Explorateur d’objets** montre les assemblys. Vous pouvez développer les assemblys pour afficher les espaces de noms qu’ils contiennent, puis développer les espaces de noms pour afficher les types qu’ils contiennent. Quand vous sélectionnez un type, ses membres (tels que les propriétés et les méthodes) sont répertoriés dans le volet droit. Le volet inférieur droit affiche des informations détaillées sur l'élément sélectionné.
 

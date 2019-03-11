@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4676727f70b8065aee34578f563f286bc85bcb25
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3082f2a3acaac7b874f98d675ae28d11ea0374ae
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950303"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223768"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Bien démarrer avec Live Unit Testing dans Visual Studio
 
@@ -34,13 +34,13 @@ La solution Visual Basic complète peut être téléchargée à partir du dépô
 
 ## <a name="prerequisites"></a>Prérequis
 
-Ce didacticiel nécessite que Visual Studio 2017 Enterprise Edition version 15.3 soit installé avec la charge de travail .NET Core 2.0.
+Ce tutoriel nécessite que Visual Studio Enterprise Edition soit installé avec la charge de travail .NET Core 2.0.
 
 ## <a name="create-the-solution-and-the-class-library-project"></a>Créer la solution et le projet de bibliothèque de classes
 
 Commencez par créer une solution Visual Studio nommée `UtilityLibraries`, qui se compose d’un projet de bibliothèque de classes .NET Standard unique, `StringLibrary`. Vous pouvez écrire `StringLibrary` en C# ou Visual Basic.
 
-La solution est simplement un conteneur pour un ou plusieurs projets. Pour créer la solution, ouvrez Visual Studio 2017 et procédez comme suit :
+La solution est simplement un conteneur pour un ou plusieurs projets. Pour créer la solution, ouvrez Visual Studio et effectuez les étapes suivantes :
 
 1. Sélectionnez **Fichier** > **Nouveau** > **Projet** dans le menu Visual Studio du plus haut niveau.
 

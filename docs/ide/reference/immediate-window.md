@@ -1,6 +1,6 @@
 ---
 title: Exécution (fenêtre)
-ms.date: 11/04/2016
+ms.date: 02/25/2019
 ms.topic: reference
 dev_langs:
 - VB
@@ -16,24 +16,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3947c2f16be4e5c0d8054e48a46981aa22475423
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e3a8315b087e259e7e1e37dfa8ab30d476bea308
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931947"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954197"
 ---
 # <a name="immediate-window"></a>Exécution (fenêtre)
 
-La fenêtre **Exécution** est utilisée pour déboguer et évaluer des expressions, exécuter des instructions, imprimer les valeurs des variables, etc. Elle vous permet d’entrer des expressions qui doivent être évaluées ou exécutées par le langage de développement lors du processus de débogage.
+Utilisez la fenêtre **Exécution** pour déboguer et évaluer des expressions, exécuter des instructions et imprimer les valeurs de variables. La fenêtre **Exécution** évalue les expressions en générant et en utilisant le projet actuellement sélectionné.
 
 Pour afficher la fenêtre **Exécution**, ouvrez un projet à modifier, puis choisissez **Déboguer** > **Fenêtres** > **Exécution**  ou appuyez sur **Ctrl**+**Alt**+**I**. Vous pouvez également entrer **Debug.Immediate** dans la fenêtre **Commande**.
 
-Vous pouvez utiliser la fenêtre **Exécution** pour émettre des commandes Visual Studio. Parmi les commandes disponibles, `EvaluateStatement` peut être utilisée pour assigner des valeurs aux variables. La fenêtre **Exécution** prend également en charge IntelliSense.
+La fenêtre **Exécution** prend en charge IntelliSense.
 
 ## <a name="display-the-values-of-variables"></a>Afficher les valeurs de variables
 
-La fenêtre **Exécution** peut être particulièrement utile lors du débogage d’une application. Par exemple, pour vérifier la valeur d’une variable `varA`, vous pouvez utiliser la [commande Imprimer](../../ide/reference/print-command.md) :
+La fenêtre **Exécution** est particulièrement utile lors du débogage d’une application. Par exemple, pour vérifier la valeur d’une variable `varA`, vous pouvez utiliser la [commande Imprimer](../../ide/reference/print-command.md) :
 
 ```cmd
 >Debug.Print varA
@@ -42,13 +42,13 @@ La fenêtre **Exécution** peut être particulièrement utile lors du débogage 
 Le point d’interrogation (?) est un alias pour `Debug.Print` et cette commande peut donc également s’écrire comme suit :
 
 ```cmd
->? varA
+? varA
 ```
 
 Les deux versions de cette commande retournent la valeur de la variable `varA`.
 
 > [!TIP]
-> Pour émettre une commande Visual Studio dans la fenêtre **Exécution**, vous devez faire précéder la commande d’un signe supérieur à (>). Pour entrer plusieurs commandes, basculez vers la fenêtre **Commande**.
+> Pour émettre une commande Visual Studio dans la fenêtre **Exécution**, vous devez faire précéder la commande d’un signe supérieur à (>). Pour entrer plusieurs commandes, passez à la [Fenêtre Commande](command-window.md).
 
 ## <a name="design-time-expression-evaluation"></a>Évaluation des expressions au moment du design
 
@@ -56,7 +56,7 @@ Vous pouvez utiliser la fenêtre **Exécution** pour exécuter une fonction ou u
 
 ### <a name="execute-a-function-at-design-time"></a>Exécuter une fonction au moment du design
 
-1. Copiez le code suivant dans une application console [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] :
+1. Copiez le code suivant dans une application console Visual Basic :
 
    ```vb
    Module Module1
@@ -72,15 +72,15 @@ Vous pouvez utiliser la fenêtre **Exécution** pour exécuter une fonction ou u
    End Module
    ```
 
-2. Dans le menu **Déboguer**, cliquez sur **Fenêtres**, puis sur **Exécution**.
+2. Dans le menu **Déboguer**, choisissez **Windows** > **Exécution**.
 
 3. Tapez `?MyFunction(2)` dans la fenêtre **Exécution** et appuyez sur **Entrée**.
 
     La fenêtre **Exécution** exécute `MyFunction` et affiche `4`.
 
-Si la fonction ou la sous-routine contient un point d’arrêt, Visual Studio arrête l’exécution à ce point. Vous pouvez ensuite utiliser les fenêtres du débogueur pour examiner l’état de votre programme. Pour plus d’informations, voir [Procédure pas à pas : Déboguer au moment du design](../../debugger/walkthrough-debugging-at-design-time.md).
+Si la fonction ou la sous-routine contient un point d’arrêt, Visual Studio arrête l’exécution à ce point. Vous pouvez ensuite utiliser les fenêtres du débogueur pour examiner l’état de votre programme. Pour plus d’informations, consultez [Procédure pas à pas : Déboguer au moment du design](../../debugger/walkthrough-debugging-at-design-time.md).
 
-Vous ne pouvez pas utiliser l’évaluation des expressions au moment du design dans les types de projet qui requièrent le démarrage d’un environnement d’exécution, notamment les projets [!INCLUDE[trprVSTOshort](../../ide/reference/includes/trprvstoshort_md.md)], projets web, projets Smart Device et projets SQL.
+Vous ne pouvez pas utiliser l’évaluation des expressions au moment du design dans les types de projet qui requièrent le démarrage d’un environnement d’exécution, notamment les projets Visual Studio Tools pour Office, projets web, projets Smart Device et projets SQL.
 
 ### <a name="design-time-expression-evaluation-in-multi-project-solutions"></a>Évaluation des expressions au moment du design dans les solutions à projets multiples
 
@@ -88,7 +88,7 @@ Lors de l’établissement du contexte pour l’évaluation des expressions au m
 
 ## <a name="enter-commands"></a>Entrer des commandes
 
-Vous devez entrer le signe supérieur à (>) lors de l’émission de commandes Visual Studio dans la fenêtre **Exécution**. Utilisez les touches **Haut** et **Bas** pour faire défiler les commandes précédemment émises.
+Vous devez entrer le signe supérieur à (>) lors de l’émission de commandes Visual Studio dans la fenêtre **Exécution**. Utilisez les touches **Haut** et **Bas** pour faire défiler les commandes précédemment utilisées.
 
 |Tâche|Solution|Exemple|
 |----------|--------------|-------------|
@@ -101,25 +101,23 @@ Vous devez entrer le signe supérieur à (>) lors de l’émission de commandes 
 
 Quand vous cliquez sur n’importe quelle ligne précédente dans la fenêtre **Exécution**, vous passez automatiquement en mode Marque. Cela vous permet de sélectionner, de modifier et de copier le texte de commandes précédentes comme vous le feriez dans n’importe quel éditeur de texte, et de les coller dans la ligne active.
 
-## <a name="the-equals-sign-"></a>Signe égal (=)
+## <a name="examples"></a>Exemples
 
-La fenêtre utilisée pour entrer la commande `EvaluateStatement` détermine si un signe égal (=) est interprété comme un opérateur de comparaison ou comme un opérateur d’assignation.
-
-Dans la fenêtre **Exécution**, un signe égal (=) est interprété comme un opérateur d’assignation. Ainsi, la commande
+L’exemple suivant montre les quatre expressions et leurs résultats dans la fenêtre **Exécution** pour un projet Visual Basic.
 
 ```cmd
->Debug.EvaluateStatement(varA=varB)
+j = 2
+Expression has been evaluated and has no value
+
+? j
+2
+
+j = DateTime.Now.Day
+Expression has been evaluated and has no value
+
+? j
+26
 ```
-
-assigne la valeur de variable `varB` à la variable `varA`.
-
-En revanche, dans la fenêtre **Commande**, un signe égal (=) est interprété comme un opérateur de comparaison. Vous ne pouvez pas utiliser d’opérations d’assignation dans la fenêtre **Commande**. Ainsi, si les valeurs des variables `varA` et `varB` sont différentes, la commande
-
-```cmd
->Debug.EvaluateStatement(varA=varB)
-```
-
-retourne la valeur `False`.
 
 ## <a name="first-chance-exception-notifications"></a>Notifications d’exceptions de première chance
 

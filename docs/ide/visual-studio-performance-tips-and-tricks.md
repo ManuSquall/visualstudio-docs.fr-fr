@@ -7,19 +7,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdfc350305400a42565aa55fa5e29cc40286ed0c
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 4a2662f51baa38b2b2cf65af9654ed76ae63698e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318769"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222985"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Conseils et astuces sur les performances dans Visual Studio
 
 Les recommandations pour améliorer les performances de Visual Studio concernent les cas où la mémoire est insuffisante, ce qui se produit rarement. Dans ces situations, vous pouvez optimiser certaines fonctionnalités de Visual Studio que vous n’utilisez peut-être pas. Les conseils suivants ne sont pas à interpréter comme des recommandations générales.
 
 > [!NOTE]
-> Si vous rencontrez des difficultés à utiliser le produit en raison de problèmes de mémoire, faites-le nous savoir via [l’outil de commentaires](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
+> Si vous rencontrez des difficultés à utiliser le produit en raison de problèmes de mémoire, faites-le nous savoir via [l’outil de commentaires](../ide/how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="use-a-64-bit-os"></a>Utiliser un système d’exploitation 64 bits
 
@@ -41,9 +41,9 @@ Si vous désactivez la restauration automatique de fichiers, vous pouvez accéde
 
 - Pour la fonctionnalité **Atteindre** générale, sélectionnez **Edition** > **Atteindre** > **Atteindre tout**, ou appuyez sur **Ctrl**+**T**.
 
-- Dans Visual Studio 2017 version 15.8 et les versions ultérieures, vous pouvez accéder à l’emplacement de la dernière modification d’une solution via **Edition** > **Atteindre** > **Accéder à l’emplacement de la dernière modification**, ou en appuyant sur **Ctrl**+**Maj**+**Ret. arr**.
+- Pour accéder à l’emplacement de la dernière modification d’une solution, sélectionnez **Edition** > **Atteindre** > **Accéder à l’emplacement de la dernière modification** ou appuyez sur **Ctrl**+**Maj**+**Ret. arr**.
 
-- Dans Visual Studio 2017 version 15.8 et les versions ultérieures, utilisez **Aller au fichier récent** pour afficher la liste des derniers fichiers ouverts dans une solution. Sélectionnez **Edition** > **Atteindre** > **Aller au fichier récent**, ou appuyez sur **Ctrl**+**1**, **Ctrl**+**R**.
+- Utilisez **Aller au fichier récent** pour afficher la liste des derniers fichiers ouverts dans une solution. Sélectionnez **Edition** > **Atteindre** > **Aller au fichier récent**, ou appuyez sur **Ctrl**+**1**, **Ctrl**+**R**.
 
 ## <a name="configure-debugging-options"></a>Configurer les options de débogage
 

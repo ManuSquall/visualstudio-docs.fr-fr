@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Découvrez l’abonnement DataCamp Training inclus dans certains abonnements Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 83cbb3cb0b10faddab860caf71e11ca4a03d4e4a
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 0751c29833b9fac85107af9992910f8046487a70
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841427"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428633"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Avantage DataCamp Training dans les abonnements Visual Studio
 
@@ -69,8 +69,8 @@ Vous pouvez arrêter à tout moment et reprendre votre formation à la prochaine
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | Licences en volume, Azure, Détail, | 3 mois       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
 | Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | 3 mois                                                            |  Non.  Disponible pour les nouveaux abonnés uniquement           |
-| Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Disponible                                             |  Non.  Disponible pour les nouveaux abonnés uniquement           |
-| Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Disponible                                              |  Non.  Disponible pour les nouveaux abonnés uniquement           |
+| Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | 3 mois                                             |  Non.  Disponible pour les nouveaux abonnés uniquement           |
+| Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | 3 mois                                              |  Non.  Disponible pour les nouveaux abonnés uniquement           |
 | Visual Studio Dev Essentials | N/A  | 2 mois | Non. Disponible pour les nouveaux abonnés uniquement |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Non disponible  | N/A |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure | Non disponible | N/A |

@@ -25,3 +25,7 @@ Suivez les instructions contenues dans le guide des contributeurs pour [modifier
 ### <a name="larger-edits"></a>Modifications plus importantes
 
 Passez en revue les instructions figurant dans le guide des contributeurs pour effectuer des[demandes de tirage (pull requests)](https://docs.microsoft.com/contribute/how-to-write-workflows-major#pull-request-processing).
+
+**REMARQUE**
+
+Nous ne travaillons pas activement sur les fichiers du dossier `docs/vs-2015` dans la mesure où ceux-ci concernent Visual Studio 2015, une version antérieure de notre produit. Nous n’acceptons pas les demandes de tirage (pull request) pour des modifications triviales de ces fichiers.

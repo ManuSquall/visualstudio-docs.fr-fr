@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45d165cd25b6ef17c4603ab5c1c7c783edd85d8b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 792b3ccf09faf9983afcd72de9acc0f23540683d
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927605"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223531"
 ---
 # <a name="navigate-code"></a>Naviguer dans le code
 
@@ -82,7 +82,7 @@ L’option Atteindre propose les commandes suivantes, disponibles dans le menu *
 
 - **Atteindre le fichier** (**Ctrl**+**1**, **Ctrl**+**F**) : accéder au fichier spécifié dans la solution.
 
-- **Aller au fichier récent** (**Ctrl**+**1**, **Ctrl**+**R**) : accéder au fichier spécifié, récemment ouvert, dans la solution (nouveauté de Visual Studio 2017 version 15.8).
+- **Aller au fichier récent** (**Ctrl**+**1**, **Ctrl**+**R**) : accéder au fichier spécifié, récemment ouvert, dans la solution.
 
 - **Atteindre le type** (**Ctrl**+**1**, **Ctrl**+**T**) : accéder au type spécifié dans la solution.
 
@@ -105,7 +105,7 @@ L’option Atteindre la définition permet d’atteindre la définition de l’�
 Entrée | Fonction
 ------------ | ---
 **Clavier** | Placez le curseur de texte à l’intérieur du nom de type, puis appuyez sur **F12**.
-**Souris** | Cliquez avec le bouton droit sur le nom de type et sélectionnez **Atteindre la définition** OU appuyez sur **Ctrl**, puis cliquez sur le nom de type (nouveauté de Visual Studio 2017 version 15.4)
+**Souris** | Cliquez avec le bouton droit sur le nom de type et sélectionnez **Atteindre la définition** OU appuyez sur **Ctrl**, puis cliquez sur le nom de type.
 
 ## <a name="peek-definition"></a>Aperçu de définition
 

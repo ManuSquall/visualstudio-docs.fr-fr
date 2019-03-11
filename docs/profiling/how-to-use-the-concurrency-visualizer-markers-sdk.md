@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe76cc490523325c8334ad7ada3273f101e0bbc9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2be76e5af3dafd3eebb8649fa82db6a14d46bb0d
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626126"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323534"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Procédure : Utiliser le SDK des marqueurs du visualiseur concurrentiel
 Cette rubrique montre comment utiliser le kit SDK du visualiseur concurrentiel pour créer des étendues et écrire des indicateurs, des messages et des alertes.
@@ -78,7 +78,7 @@ Cette rubrique montre comment utiliser le kit SDK du visualiseur concurrentiel p
 
      ![Visualiseur concurrentiel avec 3 séries de marqueurs personnalisés](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
 
-### <a name="to-use-visual-basic-or-c"></a>Pour utiliser Visual Basic ou C# #
+### <a name="to-use-visual-basic-or-c"></a>Pour utiliser Visual Basic ou C\#
 
 1.  Ajoutez la prise en charge du kit SDK du visualiseur concurrentiel à votre application. Pour plus d’informations, consultez [Kit SDK du visualiseur concurrentiel](../profiling/concurrency-visualizer-sdk.md).
 
