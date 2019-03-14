@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c953e4021f654d469a579a3aec5900e4ab93de7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4aec033266ccb2a6e6dcd0342669b7c31082488a
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634264"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57737021"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Modèles courants pour des applications multithread au comportement médiocre
 
@@ -30,7 +30,7 @@ Parfois, une application parallélisée continue de s’exécuter de façon sér
 
 Comme le montre l’illustration suivante, le visualiseur concurrentiel peut également exposer ce symptôme dans la vue Utilisation de l’UC, où vous voyez que, malgré la présence de plusieurs threads, l’application n’utilise qu’un seul cœur logique.
 
-Pour plus d’informations, consultez « Performance Pattern 1: Identifying Lock Contention » dans le blog [Parallel Performance Tools For Windows](http://go.microsoft.com/fwlink/?LinkID=160569) d’Hazim Shafi, sur le site web des blogs MSDN.
+Pour plus d’informations, consultez la section « Démarrer avec le problème » dans l’article de MSDN Magazine [Performances des threads - Profilage de simultanéité des contentions de ressources dans Visual Studio 2010](https://msdn.microsoft.com/magazine/ff714587.aspx).
 
 ![Conflits de verrous](../profiling/media/lockcontention_2.png "LockContention_2")
 

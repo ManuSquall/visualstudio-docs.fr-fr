@@ -8,16 +8,16 @@ ms.assetid: 203e60b2-7b80-4ff4-9fa1-aa9f4374377b
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8452410235226b3d7a1446d7a8c5a2ee709eff6e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e20b2f7ebe351aa050ea66468fb33aba8e4a31bc
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943543"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525067"
 ---
 # <a name="options-text-editor-xml-formatting"></a>Options, Éditeur de texte, XML, Mise en forme
 
-Utilisez la page de propriétés **Mise en forme** pour spécifier la mise en forme des éléments et des attributs dans vos documents XML. Pour ouvrir la boîte de dialogue **Options**, cliquez sur le menu **Outils**, puis sur **Options**. Pour accéder à la page de propriétés **Mise en forme**, développez le nœud **Éditeur de texte** > **XML** > **Mise en forme**.
+Utilisez la page d’options **Mise en forme** pour spécifier la mise en forme des éléments et des attributs dans vos documents XML. Pour accéder aux options de mise en forme XML, choisissez **Outils** > **Options** > **Éditeur de texte** > **XML**, puis **Mise en forme**.
 
 ## <a name="attributes"></a>Attributs
 
@@ -30,7 +30,7 @@ Ne remet pas en forme les attributs. Il s’agit du paramétrage par défaut.
 
 **Aligner les attributs chacun sur une ligne séparée**
 
-À partir du deuxième attribut, aligne les attributs verticalement au niveau d’indentation du premier attribut. Le texte XML qui suivant illustre la façon dont les attributs sont alignés.
+À partir du deuxième attribut, aligne les attributs verticalement au niveau d’indentation du premier attribut. Le texte XML suivant illustre la façon dont les attributs sont alignés :
 
 ```xml
 <item id = "123-A"
@@ -66,5 +66,5 @@ Si un élément contient un mélange de texte et de balises, ce contenu est cons
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour créer une documentation XML (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
-- [Génération de code](../code-generation-in-visual-studio.md)
+- [Options XML - Divers](options-text-editor-xml-miscellaneous.md)
+- [Outils XML dans Visual Studio](../../xml-tools/xml-tools-in-visual-studio.md)

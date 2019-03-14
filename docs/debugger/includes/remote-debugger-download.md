@@ -8,17 +8,24 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 887d41805063f64c6b96a0375284928efd9321ef
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 01ec01ad642333d9ee46296cbcb4a02526152e94
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56741445"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526871"
 ---
 Sur l’appareil distant ou serveur que vous souhaitez déboguer sur, plutôt que l’ordinateur Visual Studio, téléchargez et installez la version correcte des outils distants parmi les liens dans le tableau suivant.
 
 - Téléchargez les outils à distance la plus récentes pour votre version de Visual Studio. La dernière version des outils à distance est compatible avec les versions antérieures de Visual Studio, mais les versions antérieures des outils à distance ne sont pas compatibles avec les versions ultérieures de Visual Studio.
 - Téléchargez les outils à distance avec la même architecture que l’ordinateur que vous les installez sur. Par exemple, si vous souhaitez déboguer une application 32 bits sur un ordinateur distant exécutant un système d’exploitation de 64 bits, installez les outils à distance de 64 bits.
+
+::: moniker range=">=vs-2019"
+
+> [!NOTE]
+> Jusqu'à ce que les outils à distance autonomes pour Visual Studio 2019 sont disponibles, si vous devez utiliser le débogueur distant avec Visual Studio 2019, [trouver le débogueur distant](https://docs.microsoft.com/visualstudio/debugger/remote-debugging?view=vs-2017#fileshare_msvsmon) dans votre propre installation de Visual Studio 2019 et de le copier, puis exécutez-le sur votre à distance de l’ordinateur ou l’exécuter à partir d’un partage de fichiers.
+
+::: moniker-end
 
 |Version|Lien|Notes|
 |-|-|-|
