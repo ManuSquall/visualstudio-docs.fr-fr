@@ -6,7 +6,7 @@ Manager: lank
 layout: LandingPage
 Ms.date: 06/25/2018
 Ms.topic: landing-page
-Description: Welcome to Visual Studio Subscriptions
+Description: "Bienvenue dans les abonnements Visual\_Studio"
 Searchscope: VS Subscription
 ---
 
@@ -150,7 +150,7 @@ Pour rendre votre abonnement encore plus utile, nous ajoutons et mettons souvent
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-ide-benefit">Visual Studio</a></li>
                             <li>Visual Studio pour Mac</li>
-                            <li>Team Foundation Server et licence d’accès client TFS</li>
+                            <li>Azure DevOps Server et CAL</li>
                         </ul>
                     </div>
                 </div>
