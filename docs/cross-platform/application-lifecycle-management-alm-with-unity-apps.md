@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: ca0c3da5048194ce438e815bd1612f6b166bb29b
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: d52e02947a9148463396260afd3e389fa1d248ee
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802564"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567300"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps avec les applications Unity
 
@@ -26,7 +26,7 @@ Les tableaux suivants identifient la façon dont les fonctionnalités DevOps de 
 
 ## <a name="agile-tools"></a>Outils agiles
 
-Lien de référence : [À propos des outils agiles et de la gestion de projet agile](/azure/devops/boards/backlogs/overview?view=vsts) (avec Azure Boards ou TFS, notamment Team Explorer Everywhere)
+Lien de référence : [À propos des outils agiles et de la gestion de projet agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts) (avec Azure Boards ou TFS, notamment Team Explorer Everywhere)
 
 Commentaire général : toutes les fonctionnalités de planification et de suivi sont indépendantes du type de projet et des langages de codage.
 

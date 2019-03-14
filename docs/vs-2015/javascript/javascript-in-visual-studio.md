@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 962657d19026f85e98b1f1d22241aa57013d7df6
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 66132724b5ece0570ead7c12949dfc5650521b29
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834070"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567381"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ JavaScript est un langage de premier ordre dans Visual Studio. Vous pouvez utili
 
 - Pour créer des applications multiplateformes avec Apache Cordova, [procurez-vous Visual Studio Tools pour Apache Cordova](http://go.microsoft.com/fwlink/p/?LinkId=397606).
 
-- Pour créer des applications [Windows Store](http://dev.windows.com/develop), [Windows Phone](http://dev.windows.com/develop) et universelles (prenant en charge les deux plateformes), [procurez-vous les outils](http://dev.windows.com/develop/downloads).
+- Pour créer des applications [Windows Store](http://dev.windows.com/develop), [Windows Phone](http://dev.windows.com/develop) et universelles (prenant en charge les deux plateformes), [procurez-vous les outils](https://developer.microsoft.com/windows/downloads).
 
 - Pour créer des services cloud, consultez le [site Microsoft Azure](http://azure.microsoft.com/documentation/).
 
@@ -44,15 +44,15 @@ JavaScript est un langage de premier ordre dans Visual Studio. Vous pouvez utili
 |Fonctionnalité|Description|
 |-------------|-----------------|
 |Classes|La nouvelle syntaxe prend en charge la déclaration de [classes](/visualstudio/scripting-docs/javascript/reference/class-statement-javascript).|
-|Promesses|Les [promesses](/visualstudio/scripting-docs/javascript/reference/promise-object-javascript) permettent d’effectuer un codage asynchrone simplifié et épuré. Les constructeurs de promesses sont pris en charge, ainsi que les méthodes utilitaires `all` et `race`.|
-|Iterators|Vous pouvez désormais itérer des objets (tableaux et objets apparentés, itérateurs), en appelant un hook d'itération personnalisé contenant des instructions à exécuter pour la valeur de chaque propriété distincte. Pour plus d’informations, consultez [Itérateurs et générateurs](/visualstudio/scripting-docs/javascript/advanced/iterators-and-generators-javascript). **Remarque :**  Les générateurs ne sont pas pris en charge pour l'instant.|
+|Promesses|Les [promesses](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise) permettent d’effectuer un codage asynchrone simplifié et épuré. Les constructeurs de promesses sont pris en charge, ainsi que les méthodes utilitaires `all` et `race`.|
+|Iterators|Vous pouvez désormais itérer des objets (tableaux et objets apparentés, itérateurs), en appelant un hook d'itération personnalisé contenant des instructions à exécuter pour la valeur de chaque propriété distincte. Pour plus d’informations, consultez [Itérateurs et générateurs](/visualstudio/scripting-docs/javascript/advanced/iterators-and-generators-javascript). **Remarque :** Les générateurs ne sont pas pris en charge pour l’instant.|
 |Fonctions de flèche|La fonction de flèche (=>) fournit une syntaxe raccourcie pour le mot clé `function` contenant une liaison `this` lexicale.|
-|Nouvelles méthodes pour les objets intégrés|Les objets prédéfinis [Tableau](/visualstudio/scripting-docs/javascript/reference/array-object-javascript), [Mathématiques](/visualstudio/scripting-docs/javascript/reference/math-object-javascript), [Nombre](/visualstudio/scripting-docs/javascript/reference/number-object-javascript), [Objet](/visualstudio/scripting-docs/javascript/reference/object-object-javascript) et [Chaîne](/visualstudio/scripting-docs/javascript/reference/string-object-javascript) comportent de nombreuses fonctions et propriétés nouvelles pour la manipulation et l’inspection de données.|
+|Nouvelles méthodes pour les objets intégrés|Les objets prédéfinis [Tableau](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array), [Mathématiques](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math), [Nombre](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number), [Objet](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object) et [Chaîne](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) comportent de nombreuses fonctions et propriétés nouvelles pour la manipulation et l’inspection de données.|
 |Améliorations du littéral d’objet|Les objets prennent désormais en charge les propriétés calculées, les définitions de méthode concises, et une syntaxe raccourcie pour les propriétés dont la valeur est initialisée à une variable du même nom. Pour plus d’informations, consultez [Création d’objets](/visualstudio/scripting-docs/javascript/creating-objects-javascript).|
-|Serveurs proxy|Les [proxys](/visualstudio/scripting-docs/javascript/reference/proxy-object-javascript) permettent d’attribuer aux objets un comportement personnalisé.|
+|Serveurs proxy|Les [proxys](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy) permettent d’attribuer aux objets un comportement personnalisé.|
 |Paramètres REST|Les paramètres REST vous permettent de convertir des arguments consécutifs d’un appel de fonction en tableau. Pour plus d’informations, consultez [Fonctions](/visualstudio/scripting-docs/javascript/functions-javascript).|
-|Opérateur de diffusion|L’[opérateur de diffusion](/visualstudio/scripting-docs/javascript/reference/spread-operator-decrement-dot-dot-dot-javascript) (`…`) développe des expressions pouvant être itérées dans des arguments individuels. Par exemple, `a.b(…array)` est sensiblement identique à `a.b.apply(a, array)`.|
-|Symboles|Les objets [symbole](/visualstudio/scripting-docs/javascript/reference/symbol-object-javascript) permettent d’ajouter des propriétés à un objet existant sans risque d’interférence avec les siennes propres, sans visibilité involontaire, et sans ajout non coordonné par un autre code.|
-|Chaînes de modèle|Les [chaînes de modèles](/visualstudio/scripting-docs/javascript/advanced/template-strings-javascript) sont des littéraux de chaîne qui permettent l’évaluation et la concaténation des expressions avec le littéral de chaîne.|
-|Améliorations Unicode|Des améliorations ont été apportées à la prise en charge d'Unicode. Par exemple, un nouveau format de séquence d'échappement prend en charge les points de code astral (points de code avec plus de quatre chiffres hexadécimaux). Pour plus d’informations, consultez [Caractères spéciaux](/visualstudio/scripting-docs/javascript/advanced/special-characters-javascript).|
-|WeakSet|Un [WeakSet](/visualstudio/scripting-docs/javascript/reference/weakset-object-javascript) est une collection d’objets qui seront effacés de la mémoire s’ils ne sont référencés nulle part ailleurs.|
+|Opérateur de diffusion|L’[opérateur de diffusion](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Spread_operator) (`…`) développe des expressions pouvant être itérées dans des arguments individuels. Par exemple, `a.b(…array)` est sensiblement identique à `a.b.apply(a, array)`.|
+|Symboles|Les objets [symbole](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol) permettent d’ajouter des propriétés à un objet existant sans risque d’interférence avec les siennes propres, sans visibilité involontaire, et sans ajout non coordonné par un autre code.|
+|Chaînes de modèle|Les [chaînes de modèles](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Template_literals) sont des littéraux de chaîne qui permettent l’évaluation et la concaténation des expressions avec le littéral de chaîne.|
+|Améliorations Unicode|Des améliorations ont été apportées à la prise en charge d'Unicode. Par exemple, un nouveau format de séquence d'échappement prend en charge les points de code astral (points de code avec plus de quatre chiffres hexadécimaux). Pour plus d’informations, consultez [Caractères spéciaux](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions#Types_of_special_characters).|
+|WeakSet|Un [WeakSet](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WeakSet) est une collection d’objets qui seront effacés de la mémoire s’ils ne sont référencés nulle part ailleurs.|

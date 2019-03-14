@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 118b8a6c8d857e626d39cf27d2767f75cd0550ee
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: da49cd81ea309df2d8e2bd0b4c41c28a84564fa8
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704811"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526088"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>Créer une carte visuelle de la pile des appels pendant le débogage (C#, Visual Basic, C++, JavaScript)
 
@@ -45,7 +45,7 @@ Pour une procédure pas à pas, regardez cette vidéo : [Vidéo : Déboguez vi
 Pour plus d’informations des commandes et des actions que vous pouvez utiliser des cartes de code, consultez [Parcourir et réorganiser des cartes de code](../modeling/browse-and-rearrange-code-maps.md).
 
 >[!IMPORTANT]
->Vous pouvez créer uniquement dans les cartes de code [Visual Studio Enterprise edition](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017).
+>Vous pouvez créer uniquement dans les cartes de code [Visual Studio Enterprise edition](https://visualstudio.microsoft.com/downloads/).
 
 Voici un rapide coup de œil à une carte de code :
 

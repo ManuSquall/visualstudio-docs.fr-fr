@@ -2,7 +2,7 @@
 title: 'Tutoriel : Créer une application console C# simple'
 description: Découvrez comment créer une application console C# dans Visual Studio, étape par étape.
 ms.custom: seodec18, get-started
-ms.date: 02/26/2019
+ms.date: 03/12/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: CSharp
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 427d6e0bc17f977d54db7e313f5f119662df17c8
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c73212ad53389b71ee2eb2a2660cd3dcbccaad8b
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841172"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57736913"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutoriel : Créer une application console C# simple dans Visual Studio
 
@@ -34,8 +34,9 @@ Commençons par créer un projet d’application C#. Le type de projet inclut to
 1. Ouvrez Visual Studio 2017.
 
 2. Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**.
+   (Vous pouvez également appuyer sur **Ctrl**+**Maj**+**N**.)
 
-3. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, développez **C#**, puis choisissez **.NET Core**. Dans le volet central, choisissez **Application console (.NET Core)**. Ensuite, nommez le fichier *Calculator*.
+3. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, développez **C#**, puis choisissez **.NET Core**. Dans le volet central, choisissez **Application console (.NET Core)**. Ensuite, nommez le fichier ***Calculator***.
 
    ![Modèle de projet d’application console (.NET Core) dans la boîte de dialogue Nouveau projet dans l’IDE de Visual Studio](./media/new-project-csharp-calculator-console-app.png)
 
@@ -61,9 +62,11 @@ Si vous ne voyez pas le modèle de projet **Application console (.NET Core)**, v
 
 ## <a name="create-the-app"></a>Créer l’application
 
-Tout d’abord, nous allons découvrir certaines notions mathématiques de base relatives aux entiers en C#. Nous ajouterons ensuite du code pour créer une calculatrice de base. Ensuite, nous allons modifier le code pour ajouter des fonctionnalités. Après cela, nous allons déboguer l’application pour rechercher et corriger les erreurs. Enfin, nous affinerons le code pour le rendre plus efficace.
+Tout d’abord, nous allons découvrir certaines notions mathématiques de base relatives aux entiers en C#. Nous ajouterons ensuite du code pour créer une calculatrice de base. Ensuite, Après cela, nous allons déboguer l’application pour rechercher et corriger les erreurs. Enfin, nous affinerons le code pour le rendre plus efficace.
 
-Commençons par quelques notions mathématiques relatives aux entiers en C#.
+### <a name="explore-integer-math"></a>Explorer les mathématiques avec des entiers
+
+Commençons par quelques notions mathématiques de base relatives aux entiers en C#.
 
 1. Dans l’éditeur de code, supprimez le code « Hello World » par défaut.
 
@@ -81,15 +84,23 @@ Commençons par quelques notions mathématiques relatives aux entiers en C#.
             Console.ReadKey();
     ```
 
+    Notez que, quand vous procédez ainsi, la fonctionnalité IntelliSense dans Visual Studio vous offre la possibilité de renseigner automatiquement l’entrée.
+
+    ![Animation de code mathématique avec des entiers qui illustre la fonctionnalité de saisie semi-automatique IntelliSense dans l’IDE Visual Studio](./media/integer-math-intellisense.gif)
+
 1. Cliquez sur **Calculator** pour exécuter votre programme, ou appuyez sur **F5**.
 
    ![Cliquer sur le bouton Calculator pour exécuter l’application à partir de la barre d’outils](./media/csharp-console-calculator-button.png)
 
-   Une fenêtre de console s’ouvre en affichant la somme de 42 + 119.
+   Une fenêtre de console s’ouvre en affichant la somme de 42 + 119, c’est-à-dire **161**.
 
-1. Essayez maintenant de changer la ligne de code `int c = a + b;` en utilisant un autre opérateur, par exemple `-` pour la soustraction, `*` pour la multiplication ou */* pour la division.
+    ![Fenêtre de console affichant les résultats de code mathématique avec des entiers](./media/csharp-console-integer-math.png)
 
-    Notez qu’après avoir changé d’opérateur et exécuté le programme, le résultat change également.
+1. **(Facultatif)** Vous pouvez changer d’opérateur pour modifier le résultat. Par exemple, vous pouvez remplacer l’opérateur `+` dans la ligne de code `int c = a + b;` par `-` pour la soustraction, `*` pour la multiplication ou `/` pour la division. Ensuite, quand vous exécutez le programme, le résultat change également.
+
+1. Fermez la fenêtre de console.
+
+### <a name="add-code-to-create-a-calculator"></a>Ajouter du code pour créer une calculatrice
 
 Continuons en ajoutant un ensemble plus complexe de code de calculatrice à votre projet.
 
@@ -165,6 +176,10 @@ Continuons en ajoutant un ensemble plus complexe de code de calculatrice à votr
 
     ![Fenêtre de console montrant l’application Calculator, avec des invites sur les actions à effectuer](./media/csharp-console-calculator.png)
 
+### <a name="add-functionality-to-the-calculator"></a>Ajouter des fonctionnalités à la calculatrice
+
+Modifions le code pour ajouter d’autres fonctionnalités.
+
 ### <a name="add-decimals"></a>Ajouter des nombres décimaux
 
 Actuellement, l’application Calculator accepte et retourne des nombres entiers. Toutefois, elle sera plus précise si nous ajoutons le code permettant les nombres décimaux.
@@ -178,6 +193,8 @@ Corrigeons le code afin qu’il gère les nombres décimaux.
 1. Appuyez sur **Ctrl** + **F** pour ouvrir le contrôle **Rechercher et remplacer**.
 
 1. Remplacez chaque instance de la variable `int` par `float`.
+
+   Veillez à activer/désactiver **Respecter la casse** (**Alt**+**C**) et **Mot entier** (**Alt**+**W**) dans le contrôle **Rechercher et remplacer**.
 
     ![Animation du contrôle Rechercher et remplacer montrant comment modifier la variable int en float](./media/find-replace-control-animation.gif)
 
@@ -536,4 +553,5 @@ Félicitations ! Vous avez terminé ce didacticiel. Pour plus d’informations, 
 
 ## <a name="see-also"></a>Voir aussi
 
+* [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
 * [Apprendre à déboguer du code C# dans Visual Studio](tutorial-debugger.md)

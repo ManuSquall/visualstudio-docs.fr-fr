@@ -8,16 +8,16 @@ ms.assetid: b6538cbe-badd-4313-a1fb-39e906736bbe
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4300eaa751eb8ac24461f9aca11e75c07d78a94d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d3421580251a6a871adba311fd609e881e088ebd
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930283"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525080"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>Options, Éditeur de texte, XML, Divers
 
-Utilisez la page de propriétés **Divers** pour modifier les paramètres de complétion automatique et de schéma pour l’éditeur XML. Pour ouvrir la boîte de dialogue **Options**, cliquez sur le menu **Outils**, puis sur **Options**. Pour accéder à la page de propriétés **Divers**, développez le nœud **Éditeur de texte** > **XML** > **Divers**.
+Utilisez la page d’options **Divers** pour modifier les paramètres de saisie semi-automatique et de schéma pour l’éditeur XML. Pour accéder aux options XML diverses, choisissez **Outils** > **Options** > **Éditeur de texte** > **XML**, puis **Divers**.
 
 ## <a name="auto-insert"></a>Insertion automatique
 
@@ -47,15 +47,15 @@ Les schémas et les DTD (définitions de type de document) sont automatiquement 
 
 **Passer en mode Plan à l’ouverture des fichiers**
 
-Active la fonctionnalité mode plan à l’ouverture d’un fichier. Elle est activée par défaut.
+Active le mode plan à l'ouverture d'un fichier. Elle est activée par défaut.
 
 ## <a name="caching"></a>Mise en cache
 
 **Schémas**
 
-Spécifie l'emplacement du cache de schéma. Le bouton Parcourir (...) permet d’ouvrir l’emplacement du cache de schéma actuel dans une nouvelle fenêtre. L’emplacement par défaut est *\<répertoire d’installation de Management Studio>* \Xml\Schemas.
+Spécifie l'emplacement du cache de schéma. Le bouton **Parcourir** permet d’ouvrir l’emplacement du cache de schéma actuel dans une nouvelle fenêtre. L’emplacement par défaut est *%VsInstallDir%\xml\Schemas*.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour créer une documentation XML (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
-- [Génération de code](../code-generation-in-visual-studio.md)
+- [Options XML - Mise en forme](options-text-editor-xml-formatting.md)
+- [Outils XML dans Visual Studio](../../xml-tools/xml-tools-in-visual-studio.md)
