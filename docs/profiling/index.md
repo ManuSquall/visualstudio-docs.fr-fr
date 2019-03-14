@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
 title: Mesure des performances d’application à l’aide du profilage | Microsoft Docs
-description: "Apprenez à utiliser Visual Studio\_2017 pour profiler les performances de vos applications, services et outils dans le langage de votre choix."
+description: 'Apprenez à utiliser Visual Studio pour profiler les performances de vos applications, services et outils dans le langage de votre choix.'
 ms.custom: seodec18
 ms.topic: landing-page
 author: mikejo5000
