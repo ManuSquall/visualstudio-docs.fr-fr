@@ -1,6 +1,6 @@
 ---
 title: 'CA1711 : Les identificateurs ne doivent pas porter un suffixe incorrect'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - CA1711
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9773dc808d6fbbc7161053dcd4d7a1d7d4e6f13
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 83eff2b91a62d389f2273ff600e077eaea379d88
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970229"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57871887"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711 : Les identificateurs ne doivent pas porter un suffixe incorrect
 
@@ -33,6 +33,8 @@ ms.locfileid: "55970229"
 ## <a name="cause"></a>Cause
 
 Un identificateur a un suffixe incorrect.
+
+Par défaut, cette règle examine uniquement des identificateurs visibles de l’extérieur, mais il s’agit de [configurable](#configurability).
 
 ## <a name="rule-description"></a>Description de la règle
 
@@ -51,7 +53,7 @@ Le tableau suivant répertorie les suffixes réservés et les types de base et l
 |Autorisation|<xref:System.Security.IPermission?displayProperty=fullName>|
 |File d'attente|<xref:System.Collections.Queue?displayProperty=fullName>|
 |Stack|<xref:System.Collections.Stack?displayProperty=fullName>|
-|Flux|<xref:System.IO.Stream?displayProperty=fullName>|
+|Stream|<xref:System.IO.Stream?displayProperty=fullName>|
 
 En outre, les suffixes suivants doivent **pas** servir :
 
@@ -63,7 +65,7 @@ En outre, les suffixes suivants doivent **pas** servir :
 
 - `Ex` ou suffixe semblable pour le distinguer d’une version antérieure du même type
 
-Conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage qui est requis pour les nouvelles bibliothèques de logiciels et confirment au client que la bibliothèque a été développée par une personne compétente en matière de développement de code managé.
+Les conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage qui est requis pour les nouvelles bibliothèques de logiciels et confirment au client que la bibliothèque a été développée par une personne compétente en matière de développement de code managé.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
@@ -72,6 +74,16 @@ Supprimez le suffixe du nom de type.
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
 Ne supprimez pas d’avertissement de cette règle, sauf si le suffixe a une signification non équivoque dans le domaine d’application.
+
+## <a name="configurability"></a>Possibilités de configuration
+
+Si vous exécutez cette règle à partir de [analyseurs FxCop](install-fxcop-analyzers.md) (et non par le biais d’analyse statique du code), vous pouvez configurer les parties de votre codebase pour exécuter cette règle sur, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement par rapport à la surface d’API non publics, ajoutez la paire clé-valeur suivante dans un fichier .editorconfig dans votre projet :
+
+```
+dotnet_code_quality.ca1711.api_surface = private, internal
+```
+
+Vous pouvez configurer cette option pour simplement cette règle, pour toutes les règles ou pour toutes les règles de cette catégorie (d’affectation de noms). Pour plus d’informations, consultez [analyseurs FxCop configurer](configure-fxcop-analyzers.md).
 
 ## <a name="related-rules"></a>Règles associées
 

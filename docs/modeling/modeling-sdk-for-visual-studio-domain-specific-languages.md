@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df931cf5cb9034a868f412a344e26a58e6006455
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b028655c0654bc5332264c3bcc0fced01480b69f
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942776"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867446"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Kit de développement logiciel de modélisation pour Visual Studio - Langages spécifiques à un domaine
 
@@ -40,7 +40,7 @@ Toutes ces fonctionnalités peuvent être personnalisées et étendues. Les exte
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-[Billets de blog connexes](https://blogs.msdn.microsoft.com/visualstudioalm/tag/code-index/)
+[Billets de blog connexes](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)
 
 Pour obtenir des conseils sur les techniques avancées et la résolution des problèmes, visitez [forum Visual Studio DSL & extensibilité des outils de modélisation](http://go.microsoft.com/fwlink/?LinkID=186074).
 
@@ -69,10 +69,10 @@ Pour obtenir des conseils sur les techniques avancées et la résolution des pro
 
  [Création d’un langage spécifique à un domaine basé sur WPF](../modeling/creating-a-wpf-based-domain-specific-language.md)
 
- [Guide pratique pour Étendre le Concepteur de langage spécifique à un domaine](../modeling/how-to-extend-the-domain-specific-language-designer.md)
+ [Guide pratique pour étendre le Concepteur Domain-Specific Language](../modeling/how-to-extend-the-domain-specific-language-designer.md)
 
  [Éditions de Visual Studio prises en charge pour le SDK de visualisation et de modélisation](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md)
 
- [Guide pratique pour Migrer un langage spécifique à un domaine vers une nouvelle Version](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)
+ [Guide pratique pour migrer un langage spécifique à un domaine vers une nouvelle version](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)
 
  [Informations de référence de l’API pour le SDK de modélisation pour Visual Studio](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)

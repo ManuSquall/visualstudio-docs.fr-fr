@@ -7,18 +7,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f53376d1cff79dd69b7fb17704c4ddae8803c46
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 12ba03ab97da3295a93b54dfc012d10fc012fd30
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913182"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872386"
 ---
 # <a name="improve-performance-for-code-maps"></a>Améliorer les performances pour les cartes de code
 
 Quand vous générez une carte pour la première fois, Visual Studio indexe toutes les dépendances qu’il trouve. Ce processus peut prendre un certain temps, en particulier pour les solutions de grande taille, mais améliore les performances ultérieures. Si votre code change, Visual Studio réindexe uniquement le code mis à jour. Pour réduire le temps nécessaire pour le mappage à la fin du rendu, envisagez les suggestions suivantes :
 
-- [Créez uniquement une carte des dépendances qui vous intéressent.](#create-a-code-map-to-see-specific-dependencies)
+- Créez uniquement une carte des dépendances qui vous intéressent.
 
 - Avant de générer la carte pour une solution entière, limitez la portée de la solution.
 
