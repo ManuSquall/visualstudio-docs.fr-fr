@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c595465a9791f00036fb5358c49afae808dce13
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b29735eeb8b35b2d674f3574343b19665c87fa19
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932714"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983843"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Ajouter des commandes et des mouvements aux diagrammes de dépendance
 
@@ -54,7 +54,17 @@ Pour créer une extension, la méthode la plus rapide consiste à utiliser le mo
 
     [Définition d’un gestionnaire de mouvements](#gesture)
 
+::: moniker range="vs-2017"
+
 6. Pour installer l’extension dans l’instance principale de Visual Studio, ou sur un autre ordinateur, recherchez le *.vsix* de fichiers dans le *bin* directory. Copiez-le sur l’ordinateur sur lequel vous souhaitez l’installer, puis double-cliquez dessus. Pour le désinstaller, choisissez **Extensions et mises à jour** sur le **outils** menu.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+6. Pour installer l’extension dans l’instance principale de Visual Studio, ou sur un autre ordinateur, recherchez le *.vsix* de fichiers dans le *bin* directory. Copiez-le sur l’ordinateur sur lequel vous souhaitez l’installer, puis double-cliquez dessus. Pour le désinstaller, choisissez **gérer les Extensions** sur le **Extensions** menu.
+
+::: moniker-end
 
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>Ajout d’une commande ou d’un mouvement à une extension VSIX distincte
 
@@ -104,11 +114,9 @@ Si vous souhaitez créer une extension VSIX qui contient des commandes, des vali
 
      Voir aussi [Parcourir et mise à jour des modèles dans le code de programme de couche](../modeling/navigate-and-update-layer-models-in-program-code.md).
 
-6.  Pour tester la fonctionnalité, appuyez sur Ctrl+F5 ou F5. Une instance expérimentale de Visual Studio s’ouvre. Dans cette instance, créez ou ouvrez un diagramme de dépendance.
+6.  Pour tester la fonctionnalité, appuyez sur **Ctrl**+**F5** ou **F5**. Une instance expérimentale de Visual Studio s’ouvre. Dans cette instance, créez ou ouvrez un diagramme de dépendance.
 
 7.  Pour installer l’extension VSIX dans l’instance principale de Visual Studio, ou sur un autre ordinateur, recherchez le **.vsix** de fichiers dans le **bin** répertoire du projet VSIX. Copiez-le sur l’ordinateur sur lequel vous souhaitez installer l’extension VSIX. Double-cliquez sur le fichier VSIX dans l’Explorateur Windows.
-
-     Pour le désinstaller, utilisez **Extensions et mises à jour** dans le menu **Outils** .
 
 ##  <a name="command"></a> Définition d’une commande de menu
 

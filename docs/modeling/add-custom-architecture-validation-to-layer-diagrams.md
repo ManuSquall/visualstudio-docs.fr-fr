@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ceb330756ea98961f420be6b148b7a295eee6a6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ba9f4f3a7f6c3ab8d01b50a614fb006305d25eee
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970684"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983362"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Ajouter une validation d’architecture personnalisée aux diagrammes de dépendance
 
@@ -59,7 +59,17 @@ Pour créer un validateur, la méthode la plus rapide consiste à utiliser le mo
    > [!NOTE]
    > Votre méthode est appelée uniquement dans des circonstances spécifiques et les points d’arrêt ne fonctionnent pas automatiquement. Pour plus d’informations, consultez [Débogage de la validation de couche](#debugging).
 
+::: moniker range="vs-2017"
+
 5. Pour installer l’extension dans l’instance principale de Visual Studio, ou sur un autre ordinateur, recherchez le *.vsix* de fichiers dans le *bin* directory. Copiez-le sur l’ordinateur sur lequel vous souhaitez l’installer, puis double-cliquez dessus. Pour le désinstaller, choisissez **Extensions et mises à jour** sur le **outils** menu.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+5. Pour installer l’extension dans l’instance principale de Visual Studio, ou sur un autre ordinateur, recherchez le *.vsix* de fichiers dans le *bin* directory. Copiez-le sur l’ordinateur sur lequel vous souhaitez l’installer, puis double-cliquez dessus. Pour le désinstaller, choisissez **gérer les Extensions** sur le **Extensions** menu.
+
+::: moniker-end
 
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>Ajout d’un validateur de couche à une extension VSIX séparée
 
@@ -118,8 +128,6 @@ Si vous souhaitez créer une extension VSIX qui contient des validateurs de couc
     > Votre méthode est appelée uniquement dans des circonstances spécifiques et les points d’arrêt ne fonctionnent pas automatiquement. Pour plus d’informations, consultez [Débogage de la validation de couche](#debugging).
 
 8.  Pour installer l’extension VSIX dans l’instance principale de Visual Studio, ou sur un autre ordinateur, recherchez le **.vsix** de fichiers dans le **bin** répertoire du projet VSIX. Copiez-le sur l’ordinateur sur lequel vous souhaitez installer l’extension VSIX. Double-cliquez sur le fichier VSIX dans l’Explorateur Windows.
-
-     Pour le désinstaller, utilisez **Extensions et mises à jour** dans le menu **Outils** .
 
 ##  <a name="programming"></a> Programmation de la validation
 
