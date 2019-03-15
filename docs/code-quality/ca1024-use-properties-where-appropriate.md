@@ -1,6 +1,6 @@
 ---
 title: 'CA1024 : Utiliser les propriétés lorsque cela est approprié'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - UsePropertiesWhereAppropriate
@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a3fba3a733381642999d7bccb5666b7db895b87
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e4008872a7cb96386ef702d21ba8a18d96037d83
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922301"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869255"
 ---
 # <a name="ca1024-use-properties-where-appropriate"></a>CA1024 : Utiliser les propriétés lorsque cela est approprié
 
@@ -35,7 +35,9 @@ ms.locfileid: "55922301"
 
 ## <a name="cause"></a>Cause
 
-Une méthode publique ou protégée a un nom qui commence par `Get`, n’accepte aucun paramètre et retourne une valeur qui n’est pas un tableau.
+Une méthode a un nom qui commence par `Get`, n’accepte aucun paramètre et retourne une valeur qui n’est pas un tableau.
+
+Par défaut, cette règle examine uniquement les méthodes publiques et protégées, mais il s’agit de [configurable](#configurability).
 
 ## <a name="rule-description"></a>Description de la règle
 
@@ -69,11 +71,21 @@ Pour corriger une violation de cette règle, modifiez la méthode à une propri�
 
 Supprimez un avertissement de cette règle si la méthode rencontre au moins un des critères répertoriés précédemment.
 
-## <a name="controlling-property-expansion-in-the-debugger"></a>Contrôle de l’Expansion de propriété dans le débogueur
+## <a name="configurability"></a>Possibilités de configuration
 
-Les programmeurs évitent à l’aide d’une propriété est, car ils ne voulez pas que le débogueur développe automatiquement. Par exemple, la propriété pourrait impliquer d’allouer un grand objet ou d’appeler un P/Invoke, mais il peut en fait pas d’effets secondaires observables.
+Si vous exécutez cette règle à partir de [analyseurs FxCop](install-fxcop-analyzers.md) (et non par le biais d’analyse statique du code), vous pouvez configurer les parties de votre codebase pour exécuter cette règle sur, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement par rapport à la surface d’API non publics, ajoutez la paire clé-valeur suivante dans un fichier .editorconfig dans votre projet :
 
-Vous pouvez empêcher le débogueur de développer automatiquement les propriétés en appliquant <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. L’exemple suivant illustre cet attribut est appliqué à une propriété d’instance.
+```
+dotnet_code_quality.ca1024.api_surface = private, internal
+```
+
+Vous pouvez configurer cette option pour simplement cette règle, pour toutes les règles ou pour toutes les règles de cette catégorie (conception). Pour plus d’informations, consultez [analyseurs FxCop configurer](configure-fxcop-analyzers.md).
+
+## <a name="control-property-expansion-in-the-debugger"></a>Expansion de propriété de contrôle dans le débogueur
+
+L’une des raisons les programmeurs évitent à l’aide d’une propriété sont, car ils ne voulez pas que le débogueur il. Par exemple, la propriété pourrait impliquer d’allouer un grand objet ou d’appeler un P/Invoke, mais il peut en fait pas d’effets secondaires observables.
+
+Vous pouvez empêcher le débogueur à partir des propriétés d’autoexpanding en appliquant <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. L’exemple suivant illustre cet attribut est appliqué à une propriété d’instance.
 
 ```vb
 Imports System
@@ -123,6 +135,6 @@ namespace Microsoft.Samples
 
 ## <a name="example"></a>Exemple
 
-L’exemple suivant contient plusieurs méthodes qui doivent être converties en propriétés, et plusieurs qui convient pas, car ils ne se comportent pas comme champs.
+L’exemple suivant contient plusieurs méthodes qui doivent être converties en propriétés et plusieurs qui convient pas, car ils ne se comportent comme des champs.
 
 [!code-csharp[FxCop.Design.MethodsProperties#1](../code-quality/codesnippet/CSharp/ca1024-use-properties-where-appropriate_1.cs)]

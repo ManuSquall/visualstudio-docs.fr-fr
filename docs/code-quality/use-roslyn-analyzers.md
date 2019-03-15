@@ -1,5 +1,5 @@
 ---
-title: Utiliser et configurez des analyseurs de Roslyn
+title: Suppression et la gravité de la règle analyseur
 ms.date: 03/26/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 887fb6101773a86d346215f558f10216ca4612b8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a2b874a3bddfbfb7831b286cec0887f24ce6bcb8
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924602"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873500"
 ---
-# <a name="configure-and-use-roslyn-analyzer-rules"></a>Configurer et utiliser des règles de l’analyseur Roslyn
+# <a name="use-roslyn-analyzers"></a>Utiliser les analyseurs Roslyn
 
 Règles de l’analyseur .NET compiler Platform (« Roslyn »), ou *diagnostics*, analyser votre code c# ou Visual Basic en cours de frappe. Chacun des diagnostics a un état de gravité et la suppression par défaut qui peut être remplacé pour votre projet. Cet article décrit la gravité de règle de paramètre, à l’aide des ensembles de règles et suppression des violations.
 
@@ -91,7 +91,7 @@ Vous pouvez modifier le niveau de gravité d’une règle à partir de **l’Exp
 
 ### <a name="to-set-rule-severity-in-the-rule-set-file"></a>Pour définir la règle de gravité dans la règle de définie le fichier
 
-1. Ouvrez l’ensemble de règles fichier en double-cliquant dessus dans **l’Explorateur de solutions**, en sélectionnant **Open ensemble de règles Active** dans le menu contextuel de la **analyseurs** nœud, ou en sélectionnant **Open** sur le **analyse du Code** page de propriétés pour le projet.
+1. Ouvrir le [ensemble de règles](analyzer-rule-sets.md) fichier en double-cliquant dessus dans **l’Explorateur de solutions**, en sélectionnant **Open ensemble de règles Active** dans le menu contextuel de la **analyseurs** nœud, ou en sélectionnant **Open** sur le **analyse du Code** page de propriétés pour le projet.
 
 1. Accédez à la règle en développant son assembly conteneur.
 
