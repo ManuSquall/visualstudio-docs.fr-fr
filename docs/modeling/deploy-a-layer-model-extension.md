@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 594f4118f8c6876857b862d6423180403f4f96c6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e8fe915f31181af4158bdfe7e292313886ed7d4c
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915619"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983102"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Déployer une extension de modèle de couche
 
@@ -37,9 +37,19 @@ Votre extension est compilée dans un fichier VSIX, que vous pouvez installer su
 
 ### <a name="to-uninstall-the-extension"></a>Pour désinstaller l'extension
 
-1.  Dans Visual Studio, sur le **outils** menu, cliquez sur **Extensions et mises à jour**.
+::: moniker range="vs-2017"
 
-2.  Cliquez sur le nom de l’extension, puis **désinstallation**.
+1. Dans Visual Studio, choisissez **outils** > **Extensions et mises à jour**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Dans Visual Studio, choisissez **Extensions** > **gérer les Extensions**.
+
+::: moniker-end
+
+2. Cliquez sur le nom de l’extension, puis **désinstallation**.
 
 ## <a name="install-an-extension-on-team-foundation-server"></a>Installer une Extension sur Team Foundation Server
 
