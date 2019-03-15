@@ -13,17 +13,23 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 309c02abb29b599a5753a39c28d9b95314088550
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+monikerRange: vs-2017
+ms.openlocfilehash: 882465acd61f3f76d358f52ae75c9041c311dcd5
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696712"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867280"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation, élément (modèles Visual Studio)
-Spécifie si l’utilisateur est invité à entrer un projet à l’emplacement par le biais d’enregistrement la **nouveau projet** boîte de dialogue lors de la création d’un projet. Si cet élément est défini sur `true`, puis l’utilisateur est invité à entrer un enregistrement emplacement ; si `false`, alors il n’est pas invité. (Autrement dit, un projet temporaire est créé.)
 
- \<VSTemplate> \<TemplateData> \<PromptForSaveOnCreation>
+Spécifie si l’utilisateur est invité à entrer un projet à l’emplacement par le biais d’enregistrement la **nouveau projet** boîte de dialogue lors de la création d’un projet. Si cet élément est défini sur `true`, puis l’utilisateur est invité à entrer un enregistrement emplacement. Si `false`, alors il n’est pas invité (autrement dit, un projet temporaire est créé).
+
+```xml
+\<VSTemplate>
+\<TemplateData>
+\<PromptForSaveOnCreation>
+```
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -59,7 +65,7 @@ Spécifie si l’utilisateur est invité à entrer un projet à l’emplacement 
 ## <a name="example"></a>Exemple
  L’exemple suivant définit la valeur de `PromptForSaveOnCreation` égal à `false`, qui spécifie que le projet doit être créé comme un projet temporaire.
 
-```
+```xml
 <VSTemplate Type="Project" Version="3.0.0"
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     <TemplateData>
@@ -85,5 +91,6 @@ Spécifie si l’utilisateur est invité à entrer un projet à l’emplacement 
 ```
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Informations de référence sur les schémas de modèles Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)

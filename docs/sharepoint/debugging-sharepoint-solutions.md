@@ -15,27 +15,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d375386da4d62117105bc732425a2678e0a48d0a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 57133b97ede20c0ed28eecbec6e3cea964f9558a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640231"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873108"
 ---
 # <a name="debug-sharepoint-solutions"></a>Déboguer des solutions SharePoint
   Vous pouvez déboguer des solutions SharePoint à l’aide de la [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] débogueur. Lorsque vous démarrez le débogage, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] déploie les fichiers de projet sur le serveur SharePoint, puis ouvre une instance du site SharePoint dans le navigateur Web. Les sections suivantes expliquent comment déboguer des applications SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
--   [Activation du débogage](#EnableDebug)
+-   [Activer le débogage](#enable-debugging)
 
--   [Processus de déploiement et de débogage F5](#Deployment)
+-   [Processus de débogage et de déploiement F5](#f5-debug-and-deployment-process)
 
--   [Fonctionnalités de projet SharePoint](#Features)
+-   [Fonctionnalités de projet SharePoint](#sharepoint-project-features)
 
--   [Débogage de workflows](#Workflow)
+-   [Déboguer des workflows](#debug-workflows)
 
--   [Débogage des récepteurs d’événements de fonctionnalité](#FeatureEvents)
+-   [Déboguer les récepteurs d’événements de fonctionnalité](#debug-feature-event-receivers)
 
--   [L’activation des informations de débogage avancées](#EnhancedDebug)
+-   [Activer les informations de débogage d’ehanced](#enable-enhanced-debugging-information)
 
 ## <a name="enable-debugging"></a>Activer le débogage
  Lorsque vous déboguez tout d’abord une solution SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], une boîte de dialogue vous avertit que le fichier web.config n’est pas configuré pour activer le débogage. (Le fichier web.config est créé lorsque vous installez SharePoint server. Pour plus d’informations, consultez [utilisation des fichiers Web.config](http://go.microsoft.com/fwlink/?LinkID=149266).) La boîte de dialogue vous donne la possibilité d’exécution du projet sans débogage ou en modifiant le fichier web.config pour activer le débogage. Si vous choisissez la première option, le projet s’exécute normalement. Si vous choisissez la deuxième option, le fichier web.config est configuré pour :
@@ -137,7 +137,7 @@ ms.locfileid: "56640231"
 
  Pour désactiver l’activation automatique de la fonctionnalité dans SharePoint et permettre un débogage approprié des récepteurs d’événements de fonctionnalité, affectez la valeur du projet **Configuration de déploiement Active** propriété **aucune Activation** avant le débogage. Ensuite, une fois que vous commencez à déboguer votre application SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]manuellement activer la fonctionnalité dans SharePoint. Pour activer la fonctionnalité, ouvrez le **Actions du Site** menu dans SharePoint, choisissez **paramètres du Site**, choisissez le **gérer les fonctionnalités du Site** lier, puis choisissez le **Activer** bouton en regard de la fonctionnalité pour continuer le débogage comme d’habitude.
 
-## <a name="enable-enhanced-debug-information"></a>Activer les informations de débogage amélioré
+## <a name="enable-enhanced-debugging-information"></a>Activer les informations de débogage avancées
  En raison des interactions parfois complexes entre la [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] processus (devenv.exe), le [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] processus hôte SharePoint (*vssphost4.exe*), SharePoint et la couche WCF, diagnostiquer les erreurs qui se produisent alors que génération, déploiement et ainsi de suite peuvent être un défi. Pour vous aider à résoudre ces erreurs, vous pouvez activer les informations de débogage avancées. Pour ce faire, accédez à la clé de Registre suivante dans le Registre Windows :
 
  **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools**

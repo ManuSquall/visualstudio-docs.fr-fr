@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c8555067dc86c610c370568ce9e0c7fd13cc5ca
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 4ab66596dd550a74a18e425769a0c7120cf3220a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709744"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873439"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Prise en charge du SDK Visual Studio
 Plusieurs options de support sont disponibles pour les clients qui ont des questions sur la façon d’étendre l’environnement de développement intégré (IDE) Visual Studio.
@@ -36,7 +36,7 @@ Plusieurs options de support sont disponibles pour les clients qui ont des quest
  Le [Forums MSDN](http://go.microsoft.com/fwlink/?LinkID=76632) offrent une autre façon de discuter avec des pairs et experts. L’interface graphique utilisateur (IU) des forums est conçu pour les rendre plus facile à utiliser que les groupes de discussion. Le [Forum Visual Studio Extensibility](http://go.microsoft.com/fwlink/?LinkID=121964) est un bon point de départ trouver des réponses aux questions d’extensibilité. Toujours effectuer une recherche avant de vous posez une question, car une autre personne peut avoir déjà posé la même question.
 
 ### <a name="visual-studio-gallery"></a>Galerie Visual Studio
- Le [galerie Visual Studio](https://marketplace.visualstudio.com/) est ici que les extensions et des exemples de code. Vous trouverez les outils pouvant améliorer votre productivité et l’utilisateur une expérience avec Visual Studio, exemples d’applications qui illustrent l’utilisation des VSPackages et Managed Extensibility Framework (MEF) et autres types d’exemples.
+ Le [Visual Studio Marketplace](https://marketplace.visualstudio.com/) est ici que les extensions et des exemples de code. Vous trouverez les outils pouvant améliorer votre productivité et l’utilisateur une expérience avec Visual Studio, exemples d’applications qui illustrent l’utilisation des VSPackages et Managed Extensibility Framework (MEF) et autres types d’exemples.
 
 ### <a name="visual-studio-sdk-samples"></a>Exemples du Kit de développement logiciel Visual Studio
 
@@ -53,16 +53,18 @@ Vous trouverez des exemples d’open source d’extensions du Kit de développem
 ## <a name="paid-support"></a>Le support technique payant
 
 ### <a name="developer-tools-support"></a>Prise en charge des outils de développeur
- Prise en charge peut également être acheté. Un éventail d’offres de support sont disponibles sous la catégorie outils de développement à [Microsoft Help et des centres de Support](http://go.microsoft.com/fwlink/?LinkID=82383).
 
- Les clients qui souhaitent utiliser le [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] à développer des packages complexes permettre envisager d’acheter un contrat de Premier Support avec Microsoft. Pour plus d’informations, consultez [Premier Microsoft Support](http://go.microsoft.com/fwlink/?LinkID=76660). Pour les petites entreprises, [prise en charge de partenaire parti](http://www.microsoft.com/services/microsoftservices/srv_mspa.mspx) peut être une alternative intéressante à une offre de Premier Support traditionnel.
+Prise en charge peut également être acheté. Un éventail d’offres de support sont disponibles sous la catégorie outils de développement à [Microsoft Help et des centres de Support](http://go.microsoft.com/fwlink/?LinkID=82383).
+
+Les clients qui souhaitent utiliser le [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] à développer des packages complexes permettre envisager d’acheter un contrat de Premier Support avec Microsoft. Pour plus d’informations, consultez [Premier Microsoft Support](https://support.microsoft.com/premier). Pour les petites entreprises, [prise en charge de partenaire parti](http://www.microsoft.com/services/microsoftservices/srv_mspa.mspx) peut être une alternative intéressante à une offre de Premier Support traditionnel.
 
 > [!NOTE]
->  Prise en charge standard ne peut pas être utilisée pour consultation ou pour obtenir des conseils.
+> Prise en charge standard ne peut pas être utilisée pour consultation ou pour obtenir des conseils.
 
- Questions sur les offres de Premier Support conjointement avec le programme VSIP peuvent être envoyées à [ vsipsvs@microsoft.com ](mailto:vsipsvs@microsoft.com). Questions sur le nouveau programme d’avantages des partenaires peuvent être envoyées à [ advantg@microsoft.com ](mailto:advantg@microsoft.com).
+Questions sur les offres de Premier Support conjointement avec le programme VSIP peuvent être envoyées à [ vsipsvs@microsoft.com ](mailto:vsipsvs@microsoft.com). Questions sur le nouveau programme d’avantages des partenaires peuvent être envoyées à [ advantg@microsoft.com ](mailto:advantg@microsoft.com).
 
- Vous trouverez plus d’informations sur les demandes de support individuels à [prennent en charge les requêtes individuelles](http://go.microsoft.com/fwlink/?LinkID=82385).
+Vous trouverez plus d’informations sur les demandes de support individuels à [prennent en charge les requêtes individuelles](http://go.microsoft.com/fwlink/?LinkID=82385).
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Nous contacter](../ide/talk-to-us.md)

@@ -14,25 +14,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1c2c73e4c74502c047251bd64a2f6d3550cf7fe6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 297fefddd45b080af236da0b4fe53649e7d630cf
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642831"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867562"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Empaqueter et déployer des solutions SharePoint
   En règle générale, une solution SharePoint est déployée sur un serveur SharePoint à l’aide d’un fichier de package (.wsp) de solution. Vous pouvez utiliser Visual Studio pour organiser vos éléments de projet SharePoint en fonctionnalités et pour créer un package pour déployer vos fonctionnalités SharePoint.
 
  Cette rubrique fournit les informations suivantes :
 
--   [Création de fonctionnalités et des Packages](#Creating)
+-   [Créer des fonctionnalités et des packages](#create-features-and-packages)
 
--   [Fonctionnalité et empaquetage de prise en charge de l’outil](#Tools)
+-   [Prise en charge des outils de packaging et de fonctionnalité](#feature-and-packaging-tool-support)
 
--   [Déploiement de Solutions SharePoint](#Deploying)
+-   [Déployer des solutions SharePoint](#deploy-sharepoint-solutions)
 
--   [Déploiement de fichiers dans les Solutions SharePoint](#DeployingFiles)
+-   [Déployer des fichiers dans les solutions SharePoint](#deploy-files-in-sharepoint-solutions)
 
 ## <a name="create-features-and-packages"></a>Créer des fonctionnalités et des packages
  Vous pouvez utiliser Visual Studio pour regrouper des éléments SharePoint connexes dans un *fonctionnalité*. Par exemple, une fonctionnalité pour une définition de liste de Contacts peut inclure l’instance de liste et la définition de liste. Vous pouvez combiner ces deux éléments dans une fonctionnalité unique à des fins de déploiement. Pour plus d’informations sur les fonctionnalités, consultez [bloc de construction : Fonctionnalités](http://go.microsoft.com/fwlink/?LinkID=169183).

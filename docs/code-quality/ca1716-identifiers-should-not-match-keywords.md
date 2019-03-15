@@ -1,6 +1,6 @@
 ---
 title: 'CA1716 : Les identificateurs ne doivent pas correspondre à des mots clés'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - IdentifiersShouldNotMatchKeywords
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb483206ba13f89f0a23667039bf5f1a9d740b73
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 279bcf3aecc2a637a7a36c2041ed63a72017a800
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910193"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867730"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716 : Les identificateurs ne doivent pas correspondre à des mots clés
 
@@ -32,7 +32,9 @@ ms.locfileid: "55910193"
 
 ## <a name="cause"></a>Cause
 
-Un nom d’un espace de noms, un type ou un membre d’interface ou virtuel correspond à un mot clé réservé dans un langage de programmation.
+Le nom d’un espace de noms, type, ou virtuel ou membre d’interface correspond à un mot clé réservé dans un langage de programmation.
+
+Par défaut, cette règle examine uniquement les espaces de noms extérieurement visibles, les types et membres, mais il s’agit de [configurable](#configurability).
 
 ## <a name="rule-description"></a>Description de la règle
 
@@ -41,12 +43,10 @@ Identificateurs pour les espaces de noms, types et virtuels et les membres d’i
 Cette règle vérifie par rapport à des mots clés dans les langues suivantes :
 
 - Visual Basic
-
 - C#
-
 - C++/CLI
 
-Comparaison de non-respect de la casse est utilisée pour [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] mots clés et comparaison respectant la casse est utilisée pour les autres langues.
+Comparaison de non-respect de la casse est utilisée pour les mots clés Visual Basic et comparaison respectant la casse est utilisée pour les autres langues.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
@@ -54,4 +54,14 @@ Sélectionnez un nom qui n’apparaît pas dans la liste des mots clés.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Vous pouvez supprimer un avertissement de cette règle si vous êtes convaincu que l’identificateur sera confondez pas les utilisateurs de l’API, et que la bibliothèque est utilisable dans toutes les langues disponibles dans le .NET Framework.
+Vous pouvez supprimer un avertissement de cette règle si vous êtes convaincu que l’identificateur ne confondez pas les utilisateurs de l’API, et que la bibliothèque est utilisable dans toutes les langues disponibles dans .NET.
+
+## <a name="configurability"></a>Possibilités de configuration
+
+Si vous exécutez cette règle à partir de [analyseurs FxCop](install-fxcop-analyzers.md) (et non par le biais d’analyse statique du code), vous pouvez configurer les parties de votre codebase pour exécuter cette règle sur, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement par rapport à la surface d’API non publics, ajoutez la paire clé-valeur suivante dans un fichier .editorconfig dans votre projet :
+
+```
+dotnet_code_quality.ca1716.api_surface = private, internal
+```
+
+Vous pouvez configurer cette option pour simplement cette règle, pour toutes les règles ou pour toutes les règles de cette catégorie (d’affectation de noms). Pour plus d’informations, consultez [analyseurs FxCop configurer](configure-fxcop-analyzers.md).
