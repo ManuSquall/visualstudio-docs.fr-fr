@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad0d12560b1da99beadf2e519d2e430e8d76a45f
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 6cf4cd222c511d1ae9071d07f0fab517e36eb30e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875366"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868257"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Procédure pas à pas : Déboguer une application SharePoint à l’aide d’IntelliTrace
 
@@ -33,15 +33,15 @@ En utilisant IntelliTrace, vous pouvez déboguer plus facilement des solutions S
 
  Cette procédure pas à pas décrit les tâches suivantes :
 
-- [Créer un récepteur de fonctionnalité](#BKMK_CreateReceiver)
+- [Créer un récepteur de fonctionnalité](#create-a-feature-receiver)
 
-- [Ajoutez le Code au récepteur de fonctionnalité](#BKMK_AddCode)
+- [Ajoutez le Code au récepteur de fonctionnalité](#add-code-to-the-feature-receiver)
 
-- [Le projet de test](#BKMK_Test1)
+- [Le projet de test](#test-the-project)
 
-- [Collecter des données IntelliTrace à l’aide de Microsoft Monitoring Agent](#BKMK_CollectDiagnosticData)
+- [Collecter des données IntelliTrace à l’aide de Microsoft Monitoring Agent](#collect-intellitrace-data-by-using-microsoft-monitoring-agent)
 
-- [Déboguer et corriger la Solution SharePoint](#BKMK_DebugSolution)
+- [Déboguer et corriger la Solution SharePoint](#debug-and-fix-the-sharepoint-solution)
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 

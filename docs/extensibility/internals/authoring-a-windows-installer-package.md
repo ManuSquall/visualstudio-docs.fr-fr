@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 946dcfecb43aa5a0390f752b5e40cb5869bb1b68
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1194dba5069913d01a6e4858801ea2890db94224
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635200"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57871602"
 ---
 # <a name="author-a-windows-installer-package"></a>Créer un package Windows Installer
 Les lecteurs de données du modèle de programme d’installation de Windows. Au lieu d’écrire un script de procédure pour copier des fichiers et écrire des entrées de Registre, par exemple, vous créer des lignes et des colonnes dans les tables de base de données qui contiennent des données de fichiers et du Registre.
@@ -47,7 +47,7 @@ Une variété d’outils de d’installation tiers fournissent un environnement 
 
    L’ensemble d’outils Windows Installer XML (WiX) génère des packages de programme d’installation de Windows à partir des fichiers de source XML. L’ensemble d’outils WiX est un projet open source de Microsoft. Vous pouvez télécharger le code source et les exécutables à partir de [ensemble d’outils Wix](http://sourceforge.net/projects/wix).
 
-   Pour les produits commerciaux qui s’intègrent dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] à l’aide de la [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], consultez [ http://visualstudiogallery.com ](http://visualstudiogallery.com/).
+   Pour les produits commerciaux qui s’intègrent dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] à l’aide de la [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], consultez [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
 
 ## <a name="see-also"></a>Voir aussi
 - [Installer des VSPackages avec Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
