@@ -2,7 +2,6 @@
 title: IDispatchEx::InvokeEx | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e631ecca1181a25fa3cf419f5fc96666f0db3cd6
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 33494836e463c9c2fd74acf7835d7e4630747b0e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54086526"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58157345"
 ---
 # <a name="idispatchexinvokeex"></a>IDispatchEx::InvokeEx
 Fournit l’accès aux méthodes et propriétés exposées par un `IDispatchEx` objet.  
@@ -65,7 +64,7 @@ HRESULT InvokeEx(
 |DISPATCH_CONSTRUCT|Le membre est utilisé en tant que constructeur. (Il s’agit d’une nouvelle valeur définie par `IDispatchEx`). Les valeurs autorisées pour `wFlags` sont :<br /><br /> DISPATCH_PROPERTYGET DISPATCH_METHOD DISPATCH_PROPERTYPUT DISPATCH_PROPERTYPUTREF DISPATCH_CONSTRUCT|  
   
  `pdp`  
- Pointeur vers une structure qui contient un tableau d’arguments, un tableau d’arguments DISPID pour les arguments nommés et le nombre d’éléments de chaque tableau. Consultez le `IDispatch` documentation pour obtenir une description complète de la structure DISPPARAMS.  
+ Pointeur vers une structure qui contient un tableau d'arguments, un tableau d'arguments DISPID pour les arguments nommés et le nombre d'éléments de chaque tableau. Consultez le `IDispatch` documentation pour obtenir une description complète de la structure DISPPARAMS.  
   
  `pVarRes`  
  Pointeur vers l’emplacement où le résultat doit être stockée ou Null si l’appelant n’attend aucun résultat. Cet argument est ignoré si DISPATCH_PROPERTYPUT ou DISPATCH_PROPERTYPUTREF est spécifié.  
