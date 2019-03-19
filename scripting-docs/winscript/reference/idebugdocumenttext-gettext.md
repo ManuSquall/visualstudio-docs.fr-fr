@@ -2,7 +2,6 @@
 title: IDebugDocumentText::GetText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 77cc255bcd04754cbfde4638b67a85f6fdc0a922
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 63e1fee3531272f18c85c23ea83b8ca12920bd2a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54091986"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58144795"
 ---
 # <a name="idebugdocumenttextgettext"></a>IDebugDocumentText::GetText
 Récupère les caractères et/ou les attributs de caractère associés à une plage de la position de caractère.  
@@ -67,5 +66,5 @@ HRESULT GetText(
  Cette méthode récupère les caractères et/ou les attributs de caractère associés à une plage de la position de caractère. La plage de position de caractère est spécifiée par une position de caractère et un nombre de caractères.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDebugDocumentText (Interface)](../../winscript/reference/idebugdocumenttext-interface.md)   
+ [IDebugDocumentText Interface](../../winscript/reference/idebugdocumenttext-interface.md)   
  [Énumération SOURCE_TEXT_ATTR](../../winscript/reference/source-text-attr-enumeration.md)
