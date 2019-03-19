@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f529a3861ed6061b428818140ad90d6ca79991af
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fab823a9057c44eca9928b1b1f97ec446fb251c4
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600865"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58145081"
 ---
 # <a name="solution-user-options-suo-file"></a>Fichiers des options utilisateur de solution (.Suo)
 Le fichier d’options (.suo) de solution utilisateur contient des options de la solution par l’utilisateur. Ce fichier ne doit pas être archivé au contrôle de code source.
@@ -38,4 +38,4 @@ Le fichier d’options (.suo) de solution utilisateur contient des options de la
 
 ## <a name="see-also"></a>Voir aussi
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>
-- [Solutions](../../extensibility/internals/solutions.md)
+- [Solutions](../../extensibility/internals/solutions-overview.md)

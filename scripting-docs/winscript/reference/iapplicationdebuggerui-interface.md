@@ -2,7 +2,6 @@
 title: Interface IApplicationDebuggerUI | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e3c5f9e4cabeb4fba31bb039a7cf673ca1759860
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: f138492e5b0a465bb0f101c15457ed1021ab3d5a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54348904"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58146174"
 ---
 # <a name="iapplicationdebuggerui-interface"></a>IApplicationDebuggerUI, interface
 Implémenté par l’environnement de développement intégré (IDE) de débogueur (en plus de `IApplicationDebugger`) afin de donner un composant externe davantage de contrôle sur l’interface utilisateur (IU) du débogueur.  

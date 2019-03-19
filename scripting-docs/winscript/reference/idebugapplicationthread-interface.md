@@ -2,7 +2,6 @@
 title: Interface IDebugApplicationThread | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 262174d0daecd2c37bafbecee13532ba62e9967f
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: a464085eddbea4f5d29c684c0f1dabc6f853b6d1
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54347786"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58158787"
 ---
 # <a name="idebugapplicationthread-interface"></a>IDebugApplicationThread, interface
 Permet de moteurs de langage et les hôtes pour assurer la synchronisation de thread et à mettre à jour les informations d’état de débogage de threads spécifiques. Cette interface étend la `IRemoteDebugApplicationThread` interface pour fournir un accès non-remote pour le thread.  

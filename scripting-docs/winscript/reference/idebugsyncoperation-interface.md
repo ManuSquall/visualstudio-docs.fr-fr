@@ -2,7 +2,6 @@
 title: Interface IDebugSyncOperation | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3724ad50771ca49460e130bf93ebc244681bd782
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 7184be62a8ad2b65e81d1ad82f01f0ce3f4668c5
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54349598"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58146381"
 ---
 # <a name="idebugsyncoperation-interface"></a>IDebugSyncOperation, interface
 Permet d’extraire une opération (par exemple, d’évaluation de l’expression) qui doit être effectuée alors qu’imbriqué dans un thread bloqué particulier, un moteur de script. L’interface fournit également un mécanisme d’annulation des opérations qui ne répond pas.  

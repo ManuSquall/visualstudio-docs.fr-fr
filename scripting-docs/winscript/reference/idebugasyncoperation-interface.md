@@ -2,7 +2,6 @@
 title: Interface IDebugAsyncOperation | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c0088fddd2661d6711c9a18495f4b8704f782b3c
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 820ecc40924ace4153b76f46c8b8fd1603512ebb
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54349987"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58150814"
 ---
 # <a name="idebugasyncoperation-interface"></a>IDebugAsyncOperation, interface
 Le Gestionnaire de débogage de processus implémente le `IDebugAsyncOperation` interface. Un moteur de langage appelle le `IDebugApplication::CreateAsyncDebugOperation` méthode pour obtenir une référence à cette interface. Le moteur de langage peut utiliser le `IDebugAsyncOperation` interface pour fournir l’accès asynchrone à une opération de débogage synchrone.  

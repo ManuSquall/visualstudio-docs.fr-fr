@@ -2,7 +2,6 @@
 title: IActiveScriptAuthor::GetInfoFromContext | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2d32e2864f42fa9a2bfc30cfe83da7d4e021dfd0
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: e4fe885e116019608dd8d748c3cbdaff5d31dd2a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54088866"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58154411"
 ---
 # <a name="iactivescriptauthorgetinfofromcontext"></a>IActiveScriptAuthor::GetInfoFromContext
 Retourne type d’informations et les positions d’ancrage pour un caractère donné dans un bloc de code. Fournit des informations de membre IntelliSense, des listes globales et des conseils sur les paramètres.  
@@ -61,9 +60,9 @@ HRESULT GetInfoFromContext(
 |Constante|Value|Description|  
 |--------------|-----------|-----------------|  
 |SCRIPT_CMPL_NOLIST|0x0000|Aucune liste.|  
-|SCRIPT_CMPL_MEMBERLIST|0 x 0001|Liste des membres.|  
-|SCRIPT_CMPL_ENUMLIST|0 x 0002|Liste d’énumération.|  
-|SCRIPT_CMPL_PARAMLIST|0 x 0004|Appelez la liste de paramètres de méthode.|  
+|SCRIPT_CMPL_MEMBERLIST|0x0001|Liste des membres.|  
+|SCRIPT_CMPL_ENUMLIST|0x0002|Liste d’énumération.|  
+|SCRIPT_CMPL_PARAMLIST|0x0004|Appelez la liste de paramètres de méthode.|  
 |SCRIPT_CMPL_GLOBALLIST|0x0008|Liste globale.|  
   
  Le type SCRIPT_CMPL_GLOBALLIST est traité comme un élément de saisie semi-automatique par défaut qui peut être combiné à l’aide de l’opérateur OR avec d’autres éléments de saisie semi-automatique. Le script du moteur de création de tout d’abord essaie de remplir les informations de type pour les autres éléments de liste de saisie semi-automatique. Si cette tentative échoue, le moteur remplit pour SCRIPT_CMPL_GLOBALLIST.  
@@ -104,5 +103,5 @@ HRESULT GetInfoFromContext(
 ## <a name="remarks"></a>Notes  
   
 ## <a name="see-also"></a>Voir aussi  
- [Interface de IProvideMultipleClassInfo](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo)   
+ [IProvideMultipleClassInfo Interface](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo)   
  [Interface IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)
