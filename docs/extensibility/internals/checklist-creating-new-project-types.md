@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 336c7a98a3c03f63b74cefa3ab3a4586408cfccf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4fdbb093abdf0d99f17c9bd27af3623d529a31ae
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621004"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58146342"
 ---
 # <a name="checklist-create-new-project-types"></a>Liste de vérification : Créer des types de projet
 Vous devez effectuer plusieurs tâches pour créer un nouveau type de projet. La liste de vérification suivante fournit un guide pour ces tâches :
@@ -37,7 +37,7 @@ Vous devez effectuer plusieurs tâches pour créer un nouveau type de projet. La
 
     -   Gestion d’éléments de projet, y compris l’ajout de votre projet pour le **nouveau projet** boîte de dialogue. Pour plus d’informations, consultez [ajouter le projet et les modèles d’élément de projet](../../extensibility/internals/adding-project-and-project-item-templates.md) et [inscrire les modèles de projet et d’élément](../../extensibility/internals/registering-project-and-item-templates.md).
 
-    -   Persistance de l’état du projet et des éléments individuels. Pour plus d’informations, consultez [ouvrir et enregistrer des éléments de projet](../../extensibility/internals/opening-and-saving-project-items.md). Pour la persistance des informations sur la solution, consultez [Solutions](../../extensibility/internals/solutions.md).
+    -   Persistance de l’état du projet et des éléments individuels. Pour plus d’informations, consultez [ouvrir et enregistrer des éléments de projet](../../extensibility/internals/opening-and-saving-project-items.md). Pour la persistance des informations sur la solution, consultez [Solutions](../../extensibility/internals/solutions-overview.md).
 
     -   Propriétés indépendantes de la configuration à afficher dans la fenêtre Propriétés. Pour plus d’informations, consultez [étendre propriétés](../../extensibility/internals/extending-properties.md).
 
