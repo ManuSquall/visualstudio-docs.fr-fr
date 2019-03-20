@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ab66596dd550a74a18e425769a0c7120cf3220a
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 941ba0a890e854f449647977162183cbcac1bab8
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873439"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58193894"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Prise en charge du SDK Visual Studio
 Plusieurs options de support sont disponibles pour les clients qui ont des questions sur la façon d’étendre l’environnement de développement intégré (IDE) Visual Studio.
@@ -54,9 +54,9 @@ Vous trouverez des exemples d’open source d’extensions du Kit de développem
 
 ### <a name="developer-tools-support"></a>Prise en charge des outils de développeur
 
-Prise en charge peut également être acheté. Un éventail d’offres de support sont disponibles sous la catégorie outils de développement à [Microsoft Help et des centres de Support](http://go.microsoft.com/fwlink/?LinkID=82383).
+Prise en charge peut également être acheté. Un éventail d’offres de support sont disponibles sous la catégorie outils de développement à [Microsoft Help et des centres de Support](https://support.microsoft.com/supportforbusiness/productselection?fltadd=sps-business-1&sapId=4fd4947b-15ea-ce01-080f-97f2ca3c76e8).
 
-Les clients qui souhaitent utiliser le [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] à développer des packages complexes permettre envisager d’acheter un contrat de Premier Support avec Microsoft. Pour plus d’informations, consultez [Premier Microsoft Support](https://support.microsoft.com/premier). Pour les petites entreprises, [prise en charge de partenaire parti](http://www.microsoft.com/services/microsoftservices/srv_mspa.mspx) peut être une alternative intéressante à une offre de Premier Support traditionnel.
+Les clients qui souhaitent utiliser le [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] à développer des packages complexes permettre envisager d’acheter un contrat de Premier Support avec Microsoft. Pour plus d’informations, consultez [Premier Microsoft Support](https://support.microsoft.com/premier). Pour les petites entreprises, [Support avancé pour les partenaires](https://partner.microsoft.com/support/advanced-cloud-support) peut être une alternative intéressante à une offre de Premier Support traditionnel.
 
 > [!NOTE]
 > Prise en charge standard ne peut pas être utilisée pour consultation ou pour obtenir des conseils.
