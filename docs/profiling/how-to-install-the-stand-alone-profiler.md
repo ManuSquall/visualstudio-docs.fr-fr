@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26d28825d03c6deeeaa0ee33ccf62620398e1d52
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1f69e73274429a0da032760ab563d5aadf71a655
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612775"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867254"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Procédure : Installer le profileur autonome
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fournit un profileur autonome basé sur la ligne de commande qui peut être exécuté sans installer l’IDE [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Cette situation se produit quand un environnement de développement n’est pas ou ne peut pas être installé sur un ordinateur. Par exemple, vous ne devez pas installer un environnement de développement sur un serveur web de production.
@@ -26,7 +26,7 @@ ms.locfileid: "56612775"
 
 ### <a name="to-install-the-stand-alone-profiler"></a>Pour installer le profileur autonome
 
-1. Téléchargez les [Outils d’analyse des performances pour Visual Studio](https://visualstudio.microsoft.com/downloads/?q=performance+tools#performance-tools-for-visual-studio-2017).
+1. Téléchargez les [Outils d’analyse des performances pour Visual Studio](https://visualstudio.microsoft.com/downloads/?q=performance+tools#performance-tools-for-visual-studio).
 
 1. Recherchez le programme d’installation de profil autonome (*vs_standaloneprofiler.exe*) où vous avez téléchargé les outils d’analyse des performances et exécutez-le.
 

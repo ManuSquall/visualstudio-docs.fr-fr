@@ -18,14 +18,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e87026ab387d2a3c7d84a7c546034a7a404db5bf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cf1497e79b6f41104664013efcf63adea5223f11
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607022"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983544"
 ---
-# <a name="install-visual-studio-2017"></a>Installer Visual Studio 2017
+# <a name="install-visual-studio"></a>Installer Visual Studio
 
 Découvrez une nouvelle façon d’installer Visual Studio ! Dans cette version, nous vous avons simplifié la tâche en vous permettant de sélectionner et d’installer uniquement les fonctionnalités nécessaires. Nous avons également réduit l’encombrement minimal de Visual Studio afin qu’il s’installe plus rapidement et avec moins d’impact sur le système qu’auparavant.
 
@@ -130,9 +130,9 @@ Pour plus d’informations, consultez la page [Changer les emplacements d’inst
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Mettre à jour Visual Studio 2017](update-visual-studio.md)
-* [Modifier Visual Studio 2017](modify-visual-studio.md)
-* [Désinstaller Visual Studio 2017](uninstall-visual-studio.md)
-* [Créer une installation hors connexion de Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
-* [Utiliser les paramètres de ligne de commande pour installer Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
+* [Mettre à jour Visual Studio](update-visual-studio.md)
+* [Modifier Visual Studio](modify-visual-studio.md)
+* [Désinstaller Visual Studio](uninstall-visual-studio.md)
+* [Créer une installation hors connexion de Visual Studio](create-an-offline-installation-of-visual-studio.md)
+* [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Installer Visual Studio pour Mac](/visualstudio/mac/installation)

@@ -3,18 +3,18 @@ title: Générer des instructions using
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
-ms.author: kendrahavens
+ms.author: kehavens
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9fd34b40bdd1167eca7fa1dff8ab60bcc787b7c7
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: f59dceabb076ebce36755c41caa6de00258be883
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324754"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58160639"
 ---
 # <a name="generate-usings-in-visual-studio"></a>Générer des instructions using dans Visual Studio
 

@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 18b62be13af1b057a9bbfaeb73e390abb0bf62ea
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: aee7faef7b33c8dd87a056077991a915df9b64a0
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222894"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194056"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Configurer un projet C++ pour IntelliSense
 
@@ -52,7 +52,7 @@ Pour plus d'informations, voir [Procédure : Activer IntelliSense pour des proj
 
 ### <a name="open-folder-projects"></a>Projets Ouvrir un dossier
 
-Dans le cas des projets CMake, vérifiez que les chemins d’accès #include sont spécifiés correctement pour toutes les configurations dans CMakeLists.txt. Un fichier CppProperties.json peut être requis dans d’autres types de projets. Pour plus d’informations, voir [Configurer IntelliSense avec CppProperties.json](/cpp/ide/non-msbuild-projects#cppproperties). Vérifiez que les chemins d’accès sont corrects pour chaque configuration définie dans le fichier.
+Dans le cas des projets CMake, vérifiez que les chemins d’accès #include sont spécifiés correctement pour toutes les configurations dans CMakeLists.txt. Un fichier CppProperties.json peut être requis dans d’autres types de projets. Pour plus d’informations, voir [Configurer IntelliSense avec CppProperties.json](/cpp/build/open-folder-projects-cpp#configure-intellisense-and-browsing-hints-with-cpppropertiesjson). Vérifiez que les chemins d’accès sont corrects pour chaque configuration définie dans le fichier.
 
 S’il y a une erreur de syntaxe dans le fichier CppProperties.json, IntelliSense sera incorrect dans les fichiers affectés. Visual Studio affichera l’erreur dans la Fenêtre Sortie.
 
@@ -72,7 +72,7 @@ Ce problème se manifeste principalement de deux manières dans Visual Studio :
 
    ![L’analyseur de balises propose de définir une fonction existante](media/vcpp-intellisense-tag-parser-function.png)
 
-Pour résoudre ces types de problèmes, ajoutez un fichier nommé **cpp.hint** à la racine du répertoire de votre solution. Pour plus d’informations, voir [Fichiers hint](/cpp/ide/hint-files).
+Pour résoudre ces types de problèmes, ajoutez un fichier nommé **cpp.hint** à la racine du répertoire de votre solution. Pour plus d’informations, voir [Fichiers hint](/cpp/build/reference/hint-files).
 
 Les erreurs de l’analyseur de balises s’affichent dans la fenêtre **Liste d’erreurs**.
 

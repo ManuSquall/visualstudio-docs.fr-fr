@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c2294ee956595eea051b9b04906c446a82b58cf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2572f66acf20efb322323fa3be28f0cfe790594d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628986"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57870290"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Vue d’ensemble du déploiement dans Visual Studio
 
@@ -35,7 +35,7 @@ Pour de nombreux types d’application courants, vous pouvez déployer votre app
 - [Azure App Service](#azure-app-service)
 - [Machines virtuelles Azure](#azure-virtual-machines)
 - [Système de fichiers](#file-system)
-- [Cibles personnalisées (IIS, FTP, etc.)](#custom-targets), y compris tous les serveurs web arbitraires.
+- [Cibles personnalisées (IIS, FTP, etc.)](#custom-targets-iis-ftp), y compris tous les serveurs web arbitraires.
 
 Sous l’onglet **Publier**, vous pouvez sélectionner un profil de publication existant, en importer un ou en créer un à l’aide des options décrites ici. Vous trouverez une présentation des options de publication dans l’environnement de développement intégré (IDE) pour différents types d’applications sur la page [Premier aperçu du déploiement](../deployment/deploying-applications-services-and-components.md).
 
