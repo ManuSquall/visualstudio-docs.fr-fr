@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 135e1828c72f1824833ea675fa5bd2b01c7c80af
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 504b33ee897ac59b7fe55625a67a01b8dca8ff32
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223037"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869329"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Démarrage rapide : Personnaliser l’éditeur et l’IDE de Visual Studio
 
@@ -33,7 +33,7 @@ Le thème de couleur par défaut de l’interface utilisateur de Visual Studio s
    ![VS dans le thème Sombre](media/quickstart-personalize-dark-theme.png)
 
 > [!TIP]
-> Vous pouvez installer d’autres thèmes prédéfinis en téléchargeant et en installant **l’éditeur de thème de couleur de Visual Studio** à partir de la [place de marché Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Une fois cet outil installé, d’autres thèmes de couleurs apparaissent dans la liste déroulante des **thèmes de couleurs**.
+> Vous pouvez installer d’autres thèmes prédéfinis en téléchargeant et en installant **l’éditeur de thème de couleur de Visual Studio** à partir de la [Place de marché Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Une fois cet outil installé, d’autres thèmes de couleurs apparaissent dans la liste déroulante des **thèmes de couleurs**.
 
 ## <a name="change-text-color"></a>Modifier la couleur du texte
 

@@ -16,14 +16,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f523aaa61e1908d0e947de4cf555ec95ad2d4306
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 91a2bda02f62391c84ff5b39a934192eccbd6bb8
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910816"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57984139"
 ---
-# <a name="set-defaults-for-enterprise-deployments-of-visual-studio-2017"></a>Définir les valeurs par défaut des déploiements d’entreprise de Visual Studio 2017
+# <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Définir les valeurs par défaut des déploiements d’entreprise de Visual Studio
 
 Vous pouvez définir des stratégies de Registre qui affectent le déploiement de Visual Studio. Ces stratégies sont globales pour le nouveau programme d’installation et affectent :
 
@@ -62,6 +62,6 @@ Vous pouvez définir les valeurs de Registre suivantes :
 
 ## <a name="see-also"></a>Voir aussi
 
- * [Installer Visual Studio](install-visual-studio.md)
- * [Désactiver ou déplacer le cache du package](disable-or-move-the-package-cache.md)
- * [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+- [Installer Visual Studio](install-visual-studio.md)
+- [Désactiver ou déplacer le cache du package](disable-or-move-the-package-cache.md)
+- [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

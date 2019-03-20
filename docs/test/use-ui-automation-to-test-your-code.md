@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bab3cf50dfc860a857b3e9875ae6c71aff79014e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 76739803cad3e822a45bae9d28a86e278d6a970d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223479"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58145224"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Utiliser l’automatisation de l’interface utilisateur pour tester votre code
 
@@ -140,7 +140,7 @@ Pour accédez aux modèles et aux outils de test codé de l’interface utilisat
 
 8. Exécutez le test.
 
-   Ouvrez l’Explorateur de tests ou le menu contextuel dans la méthode de test, puis choisissez **Exécuter les tests**. Pour plus d’informations sur la façon d’exécuter les tests, consultez [Exécuter des tests unitaires avec l’Explorateur de tests](../test/run-unit-tests-with-test-explorer.md) et *Options supplémentaires pour l’exécution des tests codés de l’interface utilisateur* dans la section [Quelle est la suite ?](#what's-next?) située à la fin de cette rubrique.
+   Ouvrez l’Explorateur de tests ou le menu contextuel dans la méthode de test, puis choisissez **Exécuter les tests**. Pour plus d’informations sur la façon d’exécuter les tests, consultez [Exécuter des tests unitaires avec l’Explorateur de tests](../test/run-unit-tests-with-test-explorer.md) et *Options supplémentaires pour l’exécution des tests codés de l’interface utilisateur* dans la section [Quelle est la suite ?](#whats-next?) située à la fin de cette rubrique.
 
 Les autres sections de cette rubrique décrivent plus en détail les étapes de cette procédure.
 

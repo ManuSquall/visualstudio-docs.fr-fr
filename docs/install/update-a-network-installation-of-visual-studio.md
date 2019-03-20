@@ -13,14 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a59bbac5140e4267a52847a2152862057ce24210
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 731c2ca6993ed4d71238a290f782bdd079271039
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796632"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983830"
 ---
-# <a name="update-a-network-based-installation-of-visual-studio-2017"></a>Mettre à jour une installation réseau de Visual Studio 2017
+# <a name="update-a-network-based-installation-of-visual-studio"></a>Mettre à jour une installation réseau de Visual Studio
 
 Il est possible de mettre à jour une disposition d’installation réseau de Visual Studio avec les dernières mises à jour de produit, afin de pouvoir l’utiliser comme point d’installation de la dernière mise à jour de Visual Studio, et pour gérer aussi les installations déjà déployées sur les stations de travail clientes.
 

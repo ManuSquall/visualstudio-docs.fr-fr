@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 03/06/2017
 ms.author: mikejo
-ms.openlocfilehash: e5ca90c5b4cf6922b917a6255ba69395abac724d
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: f2d055cf7bb5294095baeef6591ac88389a2fe2b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953011"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869926"
 ---
 # <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>Utiliser l’émulateur express pour exécuter et déboguer un service cloud Azure sur une machine locale
 Avec l’émulateur express, vous testez et déboguez un service cloud sans avoir à exécuter Visual Studio en tant qu’administrateur. Vous pouvez définir les paramètres du projet pour utiliser l’émulateur express ou l’émulateur complet selon la configuration requise de votre service cloud. Pour plus d’informations sur l’émulateur complet, consultez [Exécuter une application Azure dans l’émulateur de calcul](/azure/storage/common/storage-use-emulator).
@@ -48,4 +48,4 @@ Les problèmes suivants sont des restrictions connues de l’émulateur express�
 - Les limitations qui s’appliquent à l’émulateur de calcul Azure s’appliquent aussi à l’émulateur express. Par exemple, il ne peut pas y avoir plus de 50 instances de rôle par déploiement. Pour plus d’informations sur l’émulateur de calcul Azure, consultez la page [Exécuter une application Azure dans l’émulateur de calcul](http://go.microsoft.com/fwlink/p/?LinkId=623050).
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Débogage des services cloud Azure](https://msdn.microsoft.com/library/azure/ee405479.aspx)
+[Débogage des services cloud Azure](vs-azure-tools-debugging-cloud-services-overview.md)

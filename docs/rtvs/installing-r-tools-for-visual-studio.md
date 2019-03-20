@@ -8,20 +8,20 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 1cfdf0e301ff4c2fdf997824a037eedcc9886081
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 676b46c87fe9b6af6e0e1baed0ff5fcdc7e68b6e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909191"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873647"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Comment installer Outils R pour Visual Studio
 
 Dans cet article :
 
 - [Versions prises en charge de Visual Studio](#supported-versions-of-visual-studio)
-- [Installer RTVS dans Visual Studio 2017](#installing-rtvs-in-visual-studio-2017)
-- [Installer RTVS dans Visual Studio 2015](#installing-rtvs-in-visual-studio-2015)
+- [Installer RTVS dans Visual Studio 2017](#install-rtvs-in-visual-studio-2017)
+- [Installer RTVS dans Visual Studio 2015](#install-rtvs-in-visual-studio-2015)
 - [Installation hors connexion](#offline-installation-of-visual-studio-and-rtvs)
 
 > [!Note]
@@ -66,7 +66,7 @@ Microsoft R Open et CRAN R autorisent tous deux plusieurs versions côte à c�
 Téléchargez la version actuelle de RTVS pour Visual Studio 2015 à partir de [https://aka.ms/rtvs-current](https://aka.ms/rtvs-current). RTVS recherche une version appropriée de Visual Studio et vous aide à installer un interpréteur R si vous ne l’avez pas déjà fait.
 
 > [!Note]
-> Le programme d’installation de RTVS autonome fonctionne uniquement avec Visual Studio 2015 ; avec Visual Studio 2017. Installez la prise en charge de R via la [charge de travail Applications de science et analyse des données](#installing-rtvs-in-visual-studio-2017) comme décrit précédemment.
+> Le programme d’installation de RTVS autonome fonctionne uniquement avec Visual Studio 2015 ; avec Visual Studio 2017. Installez la prise en charge de R via la [charge de travail Applications de science et analyse des données](#install-rtvs-in-visual-studio-2017) comme décrit précédemment.
 
 RTVS pour Visual Studio 2015 est installé dans : `%ProgramFiles(x86)%\Microsoft Visual Studio 14\Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio`
 
