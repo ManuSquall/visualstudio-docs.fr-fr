@@ -94,12 +94,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ac0f1d9fe779e1d2c3109b69bc29d8067fbebb2b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c660138437d9b08d49f9cf0c212e7b3612e9215
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783259"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869862"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Ressources pour résoudre les erreurs d'environnement de développement intégré
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -113,7 +113,7 @@ Les messages d’erreur n’ont pas tous une rubrique d’aide associée. Si les
 ## <a name="the-developer-community"></a>Communauté des développeurs  
  Dans les forums, vous pouvez dialoguer avec les autres développeurs et avec les employés Microsoft. Si vous rencontrez une erreur pour laquelle vous ne trouvez pas de résolution, vous pouvez publier vos questions sur le problème dans un forum. Vous pouvez aussi explorer les groupes de discussion pour voir si d’autres utilisateurs ont déjà soumis le même problème.  
   
- Vous pouvez accéder aux forums, blogs, conversations et autres ressources sur le site web [Communautés techniques Microsoft](http://go.microsoft.com/fwlink/?LinkID=144922).  
+ Vous pouvez accéder aux forums, blogs, conversations et autres ressources sur le site web [Communautés techniques Microsoft](https://techcommunity.microsoft.com/).  
   
 ## <a name="product-support"></a>Support technique  
  Si vous avez encore des questions après avoir essayé les autres ressources, vous pouvez contacter les services de support technique Microsoft en visitant le site web [Support Microsoft](http://go.microsoft.com/fwlink/?linkid=1782). Pour plus d’informations sur le support technique disponible dans votre région, consultez [Nous contacter](../../ide/talk-to-us.md).

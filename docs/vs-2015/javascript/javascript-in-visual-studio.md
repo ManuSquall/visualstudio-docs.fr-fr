@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 66132724b5ece0570ead7c12949dfc5650521b29
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: 14da091149f44d185d783c071f67294b7d2431e6
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567381"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195019"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,14 +43,14 @@ JavaScript est un langage de premier ordre dans Visual Studio. Vous pouvez utili
 
 |Fonctionnalité|Description|
 |-------------|-----------------|
-|Classes|La nouvelle syntaxe prend en charge la déclaration de [classes](/visualstudio/scripting-docs/javascript/reference/class-statement-javascript).|
+|Classes|La nouvelle syntaxe prend en charge la déclaration de [classes](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/class).|
 |Promesses|Les [promesses](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise) permettent d’effectuer un codage asynchrone simplifié et épuré. Les constructeurs de promesses sont pris en charge, ainsi que les méthodes utilitaires `all` et `race`.|
-|Iterators|Vous pouvez désormais itérer des objets (tableaux et objets apparentés, itérateurs), en appelant un hook d'itération personnalisé contenant des instructions à exécuter pour la valeur de chaque propriété distincte. Pour plus d’informations, consultez [Itérateurs et générateurs](/visualstudio/scripting-docs/javascript/advanced/iterators-and-generators-javascript). **Remarque :** Les générateurs ne sont pas pris en charge pour l’instant.|
+|Iterators|Vous pouvez désormais itérer des objets (tableaux et objets apparentés, itérateurs), en appelant un hook d'itération personnalisé contenant des instructions à exécuter pour la valeur de chaque propriété distincte. Pour plus d’informations, consultez [Itérateurs et générateurs](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_Generators). **Remarque :** Les générateurs ne sont pas pris en charge pour l’instant.|
 |Fonctions de flèche|La fonction de flèche (=>) fournit une syntaxe raccourcie pour le mot clé `function` contenant une liaison `this` lexicale.|
 |Nouvelles méthodes pour les objets intégrés|Les objets prédéfinis [Tableau](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array), [Mathématiques](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math), [Nombre](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number), [Objet](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object) et [Chaîne](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) comportent de nombreuses fonctions et propriétés nouvelles pour la manipulation et l’inspection de données.|
-|Améliorations du littéral d’objet|Les objets prennent désormais en charge les propriétés calculées, les définitions de méthode concises, et une syntaxe raccourcie pour les propriétés dont la valeur est initialisée à une variable du même nom. Pour plus d’informations, consultez [Création d’objets](/visualstudio/scripting-docs/javascript/creating-objects-javascript).|
+|Améliorations du littéral d’objet|Les objets prennent désormais en charge les propriétés calculées, les définitions de méthode concises, et une syntaxe raccourcie pour les propriétés dont la valeur est initialisée à une variable du même nom. Pour plus d’informations, consultez [Création d’objets](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object).|
 |Serveurs proxy|Les [proxys](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy) permettent d’attribuer aux objets un comportement personnalisé.|
-|Paramètres REST|Les paramètres REST vous permettent de convertir des arguments consécutifs d’un appel de fonction en tableau. Pour plus d’informations, consultez [Fonctions](/visualstudio/scripting-docs/javascript/functions-javascript).|
+|Paramètres REST|Les paramètres REST vous permettent de convertir des arguments consécutifs d’un appel de fonction en tableau. Pour plus d’informations, consultez [Fonctions](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function).|
 |Opérateur de diffusion|L’[opérateur de diffusion](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Spread_operator) (`…`) développe des expressions pouvant être itérées dans des arguments individuels. Par exemple, `a.b(…array)` est sensiblement identique à `a.b.apply(a, array)`.|
 |Symboles|Les objets [symbole](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol) permettent d’ajouter des propriétés à un objet existant sans risque d’interférence avec les siennes propres, sans visibilité involontaire, et sans ajout non coordonné par un autre code.|
 |Chaînes de modèle|Les [chaînes de modèles](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Template_literals) sont des littéraux de chaîne qui permettent l’évaluation et la concaténation des expressions avec le littéral de chaîne.|

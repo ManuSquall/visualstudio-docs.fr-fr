@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 72e1351d593059d83efede7676b0182cd60c9f7d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b99db8a9e1f34bc724059ff9cbf2a065df39e78f
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752880"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57872827"
 ---
 # <a name="maintaining-security"></a>Gestion de la sécurité
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,14 +33,13 @@ On dit souvent qu'une vigilance permanente est le prix à payer pour bénéficie
  [Sécurité, confidentialité et comptes](http://go.microsoft.com/fwlink/?LinkId=72881)  
  Obtenez de l'aide sur la sécurité, la confidentialité et les comptes d'utilisateur, par exemple des informations sur les virus, les mots de passe, le Contrôle parental, les pare-feu et le chiffrement de lecteur.  
   
- [Recherche dans les bulletins de sécurité Microsoft](http://go.microsoft.com/fwlink/?LinkId=110396)  
- Cette page vous permet de trouver facilement d’anciens bulletins. Destinés aux professionnels de l'informatique, les bulletins de sécurité fournissent des informations détaillées sur les mises à jour de la sécurité.  
+ [Recherche dans les bulletins de sécurité Microsoft](/security-updates/)  
+ Cette page vous permet de trouver facilement d'anciens bulletins. Destinés aux professionnels de l'informatique, les bulletins de sécurité fournissent des informations détaillées sur les mises à jour de la sécurité.  
   
- [Guide de sécurité Windows Server 2003](http://go.microsoft.com/fwlink/?LinkId=65300)  
- Fournit des conseils aux professionnels de l'informatique pour assurer le fonctionnement sécurisé d'un environnement Windows Server 2003 tout en assurant l'accès approprié au contenu adéquat par les bonnes personnes.  
+ [Guide de sécurité de Windows Server 2003] (/previous-versions/tn-archive/cc163140(v=technet.10) fournit des conseils pour les professionnels de l’informatique à fonctionner en toute sécurité un environnement Windows Server 2003 tout en assurant l’accès approprié au contenu adéquat par les bonnes personnes.  
   
- [Bonnes pratiques pour la sécurité de l’entreprise](http://go.microsoft.com/fwlink/?LinkId=72879)  
- Collection de livres blancs traitant des différents aspects de la sécurité dans les réseaux d’entreprise.  
+ [Bonnes pratiques pour la sécurité de l’entreprise](/previous-versions/tn-archive/cc750076%28v%3dtechnet.10%29)  
+ Collection de livres blancs traitant des différents aspects de la sécurité dans les réseaux d'entreprise.  
   
- [Microsoft Baseline Security Analyzer](http://go.microsoft.com/fwlink/?LinkId=9173)  
- MBSA (Microsoft Baseline Security Analyzer) est un outil permettant à un utilisateur privé, un utilisateur professionnel ou un administrateur d’analyser un ou plusieurs ordinateurs Windows afin de rechercher les erreurs communes de configuration de la sécurité.
+ [Microsoft Baseline Security Analyzer](/windows/security/threat-protection/mbsa-removal-and-guidance)  
+ MBSA (Microsoft Baseline Security Analyzer) est un outil permettant à un utilisateur privé, un utilisateur professionnel ou un administrateur d'analyser un ou plusieurs ordinateurs Windows afin de rechercher les erreurs communes de configuration de la sécurité.

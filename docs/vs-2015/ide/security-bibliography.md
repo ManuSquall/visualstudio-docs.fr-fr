@@ -11,12 +11,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6440dabdc1252440e68e424e94aa6534d63173e8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 454e71026eeee3cbd76c95038ba59fb709b8d88f
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784204"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58193674"
 ---
 # <a name="security-bibliography"></a>Bibliographie relative à la sécurité
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,11 +24,11 @@ ms.locfileid: "54784204"
 Vous trouverez ci-après une sélection de ressources disponibles en ligne et sur papier sur le thème du développement d’applications sécurisées et la configuration d’environnements sécurisés :  
   
 ## <a name="microsoft-web-sites"></a>Sites web Microsoft  
- [Sécurité Microsoft](http://go.microsoft.com/fwlink/?LinkId=55529)  
+ [Sécurité Microsoft](https://www.microsoft.com/security)  
  Découvrez comment Microsoft s’efforce de vous aider à assurer la sécurité de vos applications et de vos systèmes (des systèmes de bureau aux systèmes réseau), avec des liens vers des ressources sur la sécurité à l’usage des professionnels de l’informatique, des développeurs et des utilisateurs privés.  
   
- [Ressources de sécurité sur MSDN](http://go.microsoft.com/fwlink/?LinkID=25440)  
+ [Ressources de sécurité sur MSDN](https://www.microsoft.com/msrc?rtc=1)  
  Vous guide vers la documentation orientée développeur, des exemples de code, des articles techniques et d’autres ressources vous permettant de développer des applications sécurisées.  
   
- [Sécurité Microsoft TechNet](http://go.microsoft.com/fwlink/?LinkId=67991)  
+ [Sécurité Microsoft TechNet](https://www.microsoft.com/securityengineering)  
  Contient des pointeurs vers les principales informations techniques sur la sécurité à l’usage des professionnels de l’informatique et des utilisateurs avancés.

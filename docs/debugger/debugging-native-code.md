@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 59811e522268b7a9cb3993add76d2ace8dc3aada
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5a7cf0b150c45037941010bf7e611f4bc21252c7
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685493"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57870413"
 ---
 # <a name="debugging-native-code"></a>Débogage du code natif
 Cette section décrit des techniques et des problèmes de débogage courants pour les applications natives. Les techniques décrites dans cette section sont des techniques avancées. Pour plus d’informations à l’aide du débogueur Visual Studio, consultez [tout d’abord examiner le débogueur](../debugger/debugger-feature-tour.md)).
@@ -59,4 +59,6 @@ Cette section décrit des techniques et des problèmes de débogage courants pou
  [Tout d’abord examiner le débogueur](../debugger/debugger-feature-tour.md) fournit des liens vers des sections plus vastes de la documentation relative au débogage. Les informations comprennent les nouveautés du débogueur, les paramètres et la préparation, les points d'arrêt, la gestion des exceptions, la fonctionnalité Modifier &amp; Continuer, le débogage de code managé, le débogage de code natif, le débogage SQL et les références relatives à l'interface utilisateur.
 
 ## <a name="see-also"></a>Voir aussi
- [Sécurité du débogueur](../debugger/debugger-security.md) [débogage dans Visual Studio](../debugger/index.md)
+
+- [Sécurité du débogueur](../debugger/debugger-security.md)
+- [Débogage dans Visual Studio](../debugger/index.md)

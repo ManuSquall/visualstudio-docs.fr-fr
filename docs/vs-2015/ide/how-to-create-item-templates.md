@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Créer des modèles d’élément | Microsoft Docs'
+title: Guide pratique pour créer des modèles d’élément | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,21 +14,21 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 09d81f82584e7ab2002d9338999927e1ac3e09bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c120e94943d9e75c968ecf13fbdb1ec6d883eff2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788246"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867920"
 ---
 # <a name="how-to-create-item-templates"></a>Guide pratique pour créer des modèles d’élément
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Les étapes de la [première procédure](../ide/how-to-create-item-templates.md#export_template) de cette rubrique montrent comment créer un modèle d’élément à l’aide de l’Assistant **Exportation de modèle**. Si votre modèle se compose de plusieurs fichiers, consultez [Guide pratique pour créer des modèles d’élément multifichier](../ide/how-to-create-multi-file-item-templates.md).  
+Les étapes de la [première procédure](#to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box) de cette rubrique montrent comment créer un modèle d’élément à l’aide de l’Assistant **Exportation de modèle**. Si votre modèle se compose de plusieurs fichiers, consultez [Guide pratique pour créer des modèles d’élément multifichier](../ide/how-to-create-multi-file-item-templates.md).  
   
- L'Assistant exécute de nombreuses tâches à votre place pour créer le modèle de base mais, dans de nombreux cas, vous devez modifier manuellement le fichier .vstemplate après avoir exporté le modèle. Par exemple, si vous souhaitez que l’élément s’affiche dans la boîte de dialogue **Ajouter un nouvel élément** pour un projet d’application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], vous devez effectuer quelques étapes supplémentaires. La [deuxième procédure](../ide/how-to-create-item-templates.md#modify_template) de cette rubrique vous aide à accomplir cette tâche.  
+ L'Assistant exécute de nombreuses tâches à votre place pour créer le modèle de base mais, dans de nombreux cas, vous devez modifier manuellement le fichier .vstemplate après avoir exporté le modèle. Par exemple, si vous souhaitez que l’élément s’affiche dans la boîte de dialogue **Ajouter un nouvel élément** pour un projet d’application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], vous devez effectuer quelques étapes supplémentaires. La [deuxième procédure](#to-enable-the-item-template-to-be-used-in-a-store-project) de cette rubrique vous aide à accomplir cette tâche.  
  
- Dans certains cas, il est possible que vous vouliez ou deviez créer un modèle d'élément manuellement à partir de zéro. La [troisième procédure](../ide/how-to-create-item-templates.md#create_template) montre comment procéder.  
+ Dans certains cas, il est possible que vous vouliez ou deviez créer un modèle d'élément manuellement à partir de zéro. La [troisième procédure](#to-enable-templates-for-specific-project-sub-types) montre comment procéder.  
   
  Consultez [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md) pour plus d’informations sur les éléments qui peuvent être utilisés dans le fichier .vstemplate.  
   

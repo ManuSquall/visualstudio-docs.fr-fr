@@ -1,5 +1,5 @@
 ---
-title: 'Démarrage rapide : Développement avec l’Explorateur de tests piloté par test | Microsoft Docs'
+title: 'Démarrage rapide : développement piloté avec l’Explorateur de tests | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -8,12 +8,12 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9429bf3f77ec015c245eb29e6354aaf810bb895a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: af763149df8997e711677d978468a57d276cb636
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797963"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868922"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Démarrage rapide : développement piloté avec l’Explorateur de tests
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,10 +65,10 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
 >  Les résultats affichés concernent la série la plus récente. La barre de résultats colorée montre uniquement les résultats des tests qui ont été exécutés. Par exemple, si vous exécutez plusieurs tests et que certains d'entre eux échouent puis que vous n'exécutez que les tests réussis, la barre de résultats affiche tout en vert.  
   
 > [!NOTE]
->  Si aucun test n'apparaît, vérifiez que vous avez installé un adaptateur pour connecter l'Explorateur de tests à l'infrastructure de test que vous utilisez. Pour plus d’informations, consultez [Utilisation de différents frameworks de test dans l'Explorateur de tests](#frameworks).  
+>  Si aucun test n'apparaît, vérifiez que vous avez installé un adaptateur pour connecter l'Explorateur de tests à l'infrastructure de test que vous utilisez. Pour plus d’informations, consultez [utiliser un autre framework de test](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
   
 ##  <a name="walkthrough"></a> Procédure pas à pas : Utilisation de tests unitaires pour développer une méthode  
- Cette procédure pas-à-pas montre comment développer une méthode testée en C# à l'aide de l'infrastructure des tests unitaires Microsoft. Vous pouvez facilement l'adapter à d'autres langages et utiliser d'autres infrastructures de tests comme NUnit. Pour plus d'informations, consultez [Utilisation de différentes infrastructures de tests](#frameworks).  
+ Cette procédure pas-à-pas montre comment développer une méthode testée en C# à l'aide de l'infrastructure des tests unitaires Microsoft. Vous pouvez facilement l'adapter à d'autres langages et utiliser d'autres infrastructures de tests comme NUnit. Pour plus d’informations, consultez [Usa autre framework de test](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
   
 #### <a name="creating-the-test-and-method"></a>Créer le test et la méthode  
   
