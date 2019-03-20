@@ -2,7 +2,6 @@
 title: IDebugApplication::StepOutComplete | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1798d347fff11a49b945519fd20c370eca75d590
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 04f8ecfb835199afa0a60f3fde3c8fbdc8812240
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54089919"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58153134"
 ---
 # <a name="idebugapplicationstepoutcomplete"></a>IDebugApplication::StepOutComplete
 Notifie le Gestionnaire de débogage de processus qu’un moteur de langage en mode de pas à pas est sur le point de retourner à son appelant.  
