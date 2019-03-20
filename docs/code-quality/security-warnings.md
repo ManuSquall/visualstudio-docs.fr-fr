@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8abfceedb112bb638dde2ff826182ad044573c74
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e8d2dadbb4bbd17b1ee1856dd896d78b0faef2cd
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955373"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195084"
 ---
-# <a name="security-warnings"></a>Avertissements de sécurité
+# <a name="security-warnings"></a>Avertissements liés à la sécurité
 
 Les avertissements de sécurité prennent en charge des bibliothèques et des applications plus sûres. Ces avertissements contribuent à empêcher la présence de défauts de sécurité dans votre programme. Si vous désactivez chacun de ces avertissements, vous devez indiquer clairement le motif de l’opération dans le code et également en informer le responsable de la sécurité désigné pour votre projet de développement.
 
@@ -77,5 +77,5 @@ Les avertissements de sécurité prennent en charge des bibliothèques et des ap
 |[CA2153 : Éviter la gestion des Exceptions d’état endommagé](../code-quality/ca2153-avoid-handling-corrupted-state-exceptions.md)|Les[exceptions d’état endommagé (CSE, Corrupted State Exceptions)](https://msdn.microsoft.com/magazine/dd419661.aspx) indiquent une altération de la mémoire dans votre processus. Le fait d’intercepter ces exceptions au lieu d’autoriser le processus à se bloquer peut engendrer des failles de sécurité si une personne malveillante réussit à placer une attaque dans la région de la mémoire endommagée.|
 |[CA3075 : Traitement DTD non sécurisé](../code-quality/ca3075-insecure-dtd-processing.md)|Si vous utilisez des instances de DTDProcessing non sécurisées ou référencez des sources d’entités externes, l’analyseur peut accepter une entrée non fiable et divulguer des informations sensibles à des personnes malveillantes.|
 |[CA3076 : Exécution du Script XSLT non sécurisé](../code-quality/ca3076-insecure-xslt-script-execution.md)|Si vous exécutez le langage XSLT (Extensible Stylesheet Language Transformations) dans les applications .NET de manière non sécurisée, le processeur peut résoudre les références URI non fiables qui pourraient divulguer des informations sensibles à des personnes malveillantes, ce qui aboutirait à des attaques par déni de service et intersites.|
-|[CA3077 : Traitement non sécurisé dans la conception d’API, Document XML et le lecteur de texte XML](../code-quality/ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md)|Lors de la conception d’une API dérivée de XMLDocument et XMLTextReader, tenez compte de DtdProcessing.  L’utilisation d’instances de DTDProcessing non sécurisées lors de la référence ou la résolution de sources d’entités externes ou la définition de valeurs non sécurisées dans le code XML peut aboutir à la divulgation d’informations.|
+|[CA3077 : Traitement non sécurisé dans la conception d’API, Document XML et le lecteur de texte XML](../code-quality/ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md)|Lors de la conception d’une API dérivée de XMLDocument et XMLTextReader, tenez compte de DtdProcessing. L’utilisation d’instances de DTDProcessing non sécurisées lors de la référence ou la résolution de sources d’entités externes ou la définition de valeurs non sécurisées dans le code XML peut aboutir à la divulgation d’informations.|
 |[CA3147 : Marquer des gestionnaires de verbe avec ValidateAntiForgeryToken](../code-quality/ca3147-mark-verb-handlers-with-validateantiforgerytoken.md)|Lorsque vous concevez un contrôleur ASP.NET MVC, tenez compte des attaques par falsification de requête intersites. Une attaque de falsification de requête intersites peut envoyer des requêtes malveillantes à partir d’un utilisateur authentifié à votre contrôleur ASP.NET MVC.|

@@ -13,14 +13,14 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 4b46937e8b30dec1f9e2a78d181cd53692b7d1b4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e5745f917749e29855dd244646ba13a2bbc26942
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910426"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195123"
 ---
-# <a name="walkthrough-create-a-custom-directive-processor"></a>Procédure pas à pas : Créer un processeur de Directive personnalisé
+# <a name="walkthrough-create-a-custom-directive-processor"></a>Procédure pas à pas : Créer un processeur de directive personnalisé
 
 *Processeurs de directive* fonctionnent en ajoutant du code pour le *classe de transformation générée*. Si vous appelez un *directive* à partir d’un *modèle de texte*, le reste du code que vous écrivez dans votre modèle de texte peut reposer sur les fonctionnalités fournies par la directive.
 
@@ -34,7 +34,7 @@ Cette procédure pas à pas décrit notamment les tâches suivantes :
 
 - Tester le processeur de directive
 
-## <a name="create-a-custom-directive-processor"></a>Créer un processeur de Directive personnalisé
+## <a name="create-a-custom-directive-processor"></a>Créer un processeur de directive personnalisé
 
 Dans cette procédure pas à pas, vous allez créer un processeur de directive personnalisé. Vous ajouterez une directive personnalisée qui lit un fichier XML, le stocke dans une variable <xref:System.Xml.XmlDocument> et l'expose via une propriété. Dans la section « Test du processeur de directive », vous allez utiliser cette propriété dans un modèle de texte pour accéder au fichier XML.
 
@@ -331,7 +331,7 @@ End Property
             {
                 XmlDocument d = new XmlDocument();
 
-                using (XmlTextReader reader = new XmlTextReader(fileName))
+                using (XmlReader reader = XmlReader.Create(fileName))
                 {
                     try
                     {
@@ -581,7 +581,7 @@ End Property
 
                 Dim d As XmlDocument = New XmlDocument()
 
-                Using reader As XmlTextReader = New XmlTextReader(fileName)
+                Using reader As XmlReader = XmlReader.Create(fileName)
 
                     Try
                         d.Load(reader)

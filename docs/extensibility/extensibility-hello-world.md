@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 910e1890fd07c0888c47735451cba29aa08ec916
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: HT
+ms.openlocfilehash: 3beedce039d1c093b5dfebce07b09d7d3a5795dc
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160704"
+ms.locfileid: "58194734"
 ---
 # <a name="create-your-first-extension-hello-world"></a>Créer votre première extension : Hello World
 
@@ -44,7 +44,7 @@ Avant de commencer, assurez-vous que vous avez installé le **développement d�
 
 ::: moniker range="vs-2017"
 
-Étape 1. À partir de la **fichier** menu, sélectionnez **nouveau projet**.
+Étape 1. Dans le menu **Fichier**, sélectionnez **Nouveau** > **Projet**.
 
 Étape 2. Dans la zone de recherche en haut à droite, tapez « vsix » et sélectionnez le visuel C# **projet VSIX**. Entrez « HelloWorld » pour le **nom** en bas de la boîte de dialogue et sélectionnez **OK**.
 
@@ -58,7 +58,7 @@ Si vous devez laisser ce didacticiel et revenir à ce dernier, vous pouvez trouv
 
 ::: moniker range=">=vs-2019"
 
-Étape 1. À partir de la **fichier** menu, sélectionnez **nouveau projet**. Recherchez « vsix » et sélectionnez le visuel C# **projet VSIX** , puis **suivant**.
+Étape 1. Dans le menu **Fichier**, sélectionnez **Nouveau** > **Projet**. Recherchez « vsix » et sélectionnez le visuel C# **projet VSIX** , puis **suivant**.
 
 Étape 2. Entrez « HelloWorld » pour le **nom_projet** et sélectionnez **créer**.
 
@@ -84,7 +84,7 @@ Votre nouveau fichier de commandes est visible dans **l’Explorateur de solutio
 
 ## <a name="modify-the-source-code"></a>Modifier le code source
 
-Ce point, la commande et le bouton de texte est généré automatiquement et pas très intéressant. Si vous souhaitez apporter des modifications, vous pouvez modifier le fichier VSCT et le fichier CS.
+À ce stade, la commande et le texte du bouton sont générés automatiquement et pas très intéressant. Si vous souhaitez apporter des modifications, vous pouvez modifier le fichier VSCT et le fichier CS.
 
 * Le fichier VSCT est où vous pouvez renommer vos commandes, ainsi définir où ils vont dans le système de commande de Visual Studio. À mesure que vous explorez le fichier VSCT, vous remarquerez des commentaires qui expliquent chaque section des contrôles de code VSCT.
 
