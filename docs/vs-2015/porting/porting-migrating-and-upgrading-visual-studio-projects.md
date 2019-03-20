@@ -19,12 +19,12 @@ caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 3b76154db0d85cba745ffe1c694b18a1fb9dde26
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 7fd6319c9c4527988511c423cd2094ffa34d93c3
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805551"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194922"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Portage, migration et mise à niveau des projets Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Si vous envisagez de passer à une version plus récente de Visual Studio, vous 
 |Office 2007 VSTO|Si vous mettez à niveau le projet pour cibler Office 2013 et .NET Framework 4, vous pouvez ouvrir ce projet dans [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]ou Visual Studio 2010 SP1.|
 |Office 2010 VSTO|Si le projet cible .NET Framework 4, vous pouvez ouvrir ce projet dans [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]et Visual Studio 2010 SP1. Tous les autres projets nécessitent une mise à niveau définitive.|
 |Applications Internet riches|Si vous mettez à niveau le projet, vous pouvez uniquement l'ouvrir dans [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]et Visual Studio 2010 SP1.|
-|SharePoint 2007|Ce projet ne peut pas être ouvert dans [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Toutefois, si vous mettez à niveau manuellement le projet vers SharePoint 2010, vous pouvez l'ouvrir dans [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]et Visual Studio 2010 SP1. Pour plus d’informations sur la mise à niveau de SharePoint 2007, consultez [Migration de SharePoint 2007 vers SharePoint 2010 pour le professionnel de l’informatique](http://go.microsoft.com/fwlink/?LinkId=238224), [Migration d’un flux de travail 2007 vers Visual Studio & SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=238225) et [Outil de migration de recherche de contenu SharePoint Enterprise pour SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=238226).|
+|SharePoint 2007|Ce projet ne peut pas être ouvert dans [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Toutefois, si vous mettez à niveau manuellement le projet vers SharePoint 2010, vous pouvez l'ouvrir dans [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]et Visual Studio 2010 SP1. Pour plus d’informations sur la mise à niveau de SharePoint 2007, consultez [migration de SharePoint 2007 vers SharePoint 2010 pour les professionnels de l’informatique](http://go.microsoft.com/fwlink/?LinkId=238224) et [outil de Migration de SharePoint Enterprise Search pour SharePoint Server 2010](https://docs.microsoft.com/previous-versions/office/developer/sharepoint-2010/ee556856(v%3Doffice.14)).|
 |SharePoint 2010|Vous pouvez ouvrir le projet dans [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]et Visual Studio 2010 SP1.|
 |SketchFlow|Si vous permettez à Visual Studio de mettre à niveau le projet vers WPF 4.5/Silverlight 5, vous pouvez l'ouvrir dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] et dans [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)].|
 |Base de données [!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)]|Vous pouvez ouvrir le projet dans [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]et Visual Studio 2010 SP1. Si vous avez un fichier de base de données (.mdf) créé dans une version antérieure de SQL Server, vous devez effectuer une mise à niveau vers [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] pour pouvoir l'utiliser avec SQL Server Express LocalDB, mais la base de données n'est plus compatible avec les versions antérieures de SQL Server. Si vous n'effectuez pas de mise à niveau, vous pouvez continuer à utiliser la base de données dans [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] en installant et utilisant [!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] sur le même ordinateur. Pour plus d’informations, consultez [mettre à niveau les fichiers .mdf](../data-tools/upgrade-dot-mdf-files.md).|
@@ -91,7 +91,7 @@ Si vous envisagez de passer à une version plus récente de Visual Studio, vous 
 
 - Si vous essayez d’ouvrir un projet pour une application de bureau dans [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)], une erreur se produit et l’un de ces messages s’affiche : « Cette édition de Visual Studio prend seulement en charge les applications [!INCLUDE[win81](../includes/win81-md.md)] » ou « Ce projet est incompatible avec l’édition actuelle de Visual Studio ». [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] est limité au développement, au test et au déploiement d’applications Windows Store conçues pour Windows 8.1. Pour ouvrir un projet d'application de bureau, vous devez utiliser une édition de Visual Studio qui prend en charge ce type de projet.
 
-   Pour plus d’informations sur les éditions de Visual Studio, consultez [Produits Microsoft Visual Studio](http://go.microsoft.com/fwlink/?LinkId=254332).
+   Pour plus d’informations sur les éditions de Visual Studio, consultez [Produits Microsoft Visual Studio](https://visualstudio.microsoft.com/products/).
 
 - Si vous tentez d'ouvrir un projet d'application Windows Store dans le [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop, une erreur se produit. [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop ne peut pas être utilisé pour générer des applications Windows Store. Si vous souhaitez générer des applications Windows Store, vous pouvez également installer [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]. Ou, pour développer des applications pour toutes les plateformes Microsoft et pour le web, essayez Visual Studio Professional 2013.
 

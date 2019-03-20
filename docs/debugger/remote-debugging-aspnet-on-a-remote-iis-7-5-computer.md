@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 2abc097809e05a8e7072e0dd6adfa06af23736fa
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: ee7ab155a24b52916d6b8d53f412e8c71cab8db4
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526700"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194203"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Déboguer à distance ASP.NET sur un ordinateur distant IIS
 Pour déboguer une application ASP.NET qui a été déployée sur IIS, installer et exécuter les outils à distance sur l’ordinateur où vous avez déployé votre application, puis attacher à votre application en cours d’exécution à partir de Visual Studio.
@@ -211,7 +211,7 @@ Pour plus d’informations sur l’exécution du débogueur distant en tant que 
 Dans la plupart des configurations, les ports requis sont ouverts par l’installation d’ASP.NET et le débogueur distant. Toutefois, vous devrez peut-être vérifier que les ports sont ouverts.
 
 > [!NOTE]
-> Sur une machine virtuelle Azure, vous devez ouvrir les ports via la [groupe de sécurité réseau](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic).
+> Sur une machine virtuelle Azure, vous devez ouvrir les ports via la [groupe de sécurité réseau](/azure/virtual-machines/windows/nsg-quickstart-portal).
 
 Ports requis :
 

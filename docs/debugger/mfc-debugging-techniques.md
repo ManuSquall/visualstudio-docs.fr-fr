@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff3fbd9332c2d402e2b1f72880595bd649cf01c3
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: be4cd6555e358be763a8837444332affced44a94
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316871"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58154804"
 ---
 # <a name="mfc-debugging-techniques"></a>Techniques de débogage MFC
 Si vous déboguez un programme MFC, les techniques de débogage suivantes peuvent vous être utiles.
@@ -230,7 +230,7 @@ Les blocs non objet incluent les tableaux et les structures alloués avec `new`.
 Dans un programme MFC, vous pouvez utiliser [CMemoryState::DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) pour faire un dump une description de tous les objets sur le tas qui n’ont pas été libérés. `DumpAllObjectsSince` permet de faire un dump de tous les objets alloués depuis le dernier [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint). Si aucun appel à `Checkpoint` n'a eu lieu, `DumpAllObjectsSince` fait un dump de tous les objets et non-objets actuellement en mémoire.
 
 > [!NOTE]
-> Avant de pouvoir utiliser le dump d'objets MFC, vous devez [activer le traçage de diagnostic](#BKMK_Enabling_Memory_Diagnostics).
+> Avant de pouvoir utiliser le dump d'objets MFC, vous devez [activer le traçage de diagnostic](#BKMK_Enabling_memory_diagnostics).
 
 > [!NOTE]
 > MFC fait automatiquement un dump de tous les objets qui ont été perdus lorsque votre programme s'arrête ; il est donc inutile de créer du code pour faire un dump des objets en ce point.

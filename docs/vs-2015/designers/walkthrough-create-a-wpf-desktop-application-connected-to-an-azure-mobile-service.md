@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Créer une Application de bureau WPF connectée à un Service Mobile Azure | Microsoft Docs'
+title: 'Procédure pas à pas : création d’une application de bureau WPF connectée à un service mobile Azure | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -9,14 +9,14 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a1b6b456ead22ce68cd336f7278fa0f81d32d81
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 21e8a2e56da1ab319cbd3f78c70d696a2388d2d3
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803729"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195071"
 ---
-# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Procédure pas à pas : Créer une Application de bureau WPF connectée à un Service Mobile Azure
+# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Procédure pas à pas : création d’une application de bureau WPF connectée à un service mobile Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidement une application de bureau moderne qui utilise un service mobile Azure pour stocker et fournir des données.  
@@ -484,7 +484,7 @@ Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidemen
     > [!NOTE]
     >  Vous devez peut-être modifier la partie numérique de l’URL. Microsoft Azure nécessite une URL unique pour chaque service mobile.  
   
-     Cela définit l’URL du service *https://wpfquickstart01.azure-mobile.net/*.  
+     Cela définit l’URL du service `https://wpfquickstart01.azure-mobile.net/`.  
   
 4.  Dans la liste **Base de données** , choisissez une option de base de données. Comme il s’agit d’une application qui ne sera probablement pas beaucoup utilisée, choisissez l’option **Créer une base de données SQL gratuite de 20 Mo** , ou choisissez la base de données gratuite déjà associée à votre abonnement.  
   

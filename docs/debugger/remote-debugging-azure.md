@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 161683697ee66286e1d43e6730584f0660bd390c
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: caf4a90b55e53cb9e4887f32c0388d7b313486dd
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526462"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194935"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Débogage distant ASP.NET Core sur IIS dans Azure dans Visual Studio 2017
 
@@ -229,7 +229,7 @@ Dans ce didacticiel, nous utilisons Visual Studio 2017.
 
 Dans la plupart des configurations, les ports requis sont ouverts par l’installation d’ASP.NET et le débogueur distant. Toutefois, si vous dépannez les problèmes de déploiement et l’application est hébergée derrière un pare-feu, vous devez vérifier que les ports appropriés sont ouverts.
 
-Sur une machine virtuelle Azure, vous devez ouvrir les ports via la [groupe de sécurité réseau](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic).
+Sur une machine virtuelle Azure, vous devez ouvrir les ports via la [groupe de sécurité réseau](/azure/virtual-machines/windows/nsg-quickstart-portal).
 
 Ports requis :
 

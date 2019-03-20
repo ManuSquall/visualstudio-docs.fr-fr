@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dee4518b6bc0015ec67978637d5696a25c4e04e4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 92d59e722b78e389bf355eeac8a1aa267979fc5b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767953"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873856"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Utiliser UI Automation pour tester votre code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Vous pouvez créer des tests automatisés qui vérifient l’interface utilisate
 
  Créer un test codé de l'interface utilisateur est très facile. Il vous suffit d'exécuter le test manuellement pendant que le Générateur de test codé de l'interface utilisateur s'exécute en arrière-plan. Vous pouvez aussi spécifier les valeurs qui doivent apparaître dans des champs spécifiques. Le Générateur de test codé de l'interface utilisateur enregistre vos actions et génère du code à partir de ces actions. Une fois le test créé, vous pouvez le modifier dans un éditeur spécial qui vous permet de modifier la séquence d'actions.
 
- En guise d'alternative, si vous avez un cas de test qui a été enregistré dans Microsoft Test Manager, vous pouvez générer du code à partir de ce cas de test. Pour plus d’informations, consultez [Enregistrer et lire des tests manuels](http://msdn.microsoft.com/library/9792e72f-600e-441f-9d4e-6510e5965665).
+ En guise d'alternative, si vous avez un cas de test qui a été enregistré dans Microsoft Test Manager, vous pouvez générer du code à partir de ce cas de test. Pour plus d’informations, consultez [Enregistrer et lire des tests manuels](/azure/devops/test/mtm/record-play-back-manual-tests).
 
  Le Générateur de test codé de l'interface utilisateur et l'éditeur spécial simplifient la création et la modification des tests codés de l'interface utilisateur même si vos compétences principales sont axées sur les tests plutôt que sur le codage. Si vous êtes développeur et que vous souhaitez approfondir le test, le code est structuré pour être facile à copier et à adapter. Par exemple, vous pouvez enregistrer un test d’achat d’un article sur un site web, puis modifier le code généré et ajouter une boucle qui achète de nombreux articles.
 
@@ -297,7 +297,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 -   **Éditeur de code :**
 
-    -   Ajoutez manuellement du code pour les contrôles dans votre test comme décrit dans la section [Codage des actions et propriétés du contrôle d’IU](#VerifyingCodeCUITActionsandProperties) de cette rubrique.
+    -   Ajoutez manuellement du code pour les contrôles dans votre test comme décrit dans la section [Codage des actions et propriétés du contrôle d’IU](#actions) de cette rubrique.
 
     -   Après avoir créé un test codé de l'interface utilisateur, vous pouvez le modifier pour qu'il soit piloté par les données. Pour plus d’informations, consultez [Création d’un test codé de l’interface utilisateur piloté par les données](../test/creating-a-data-driven-coded-ui-test.md).
 

@@ -14,12 +14,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fee905da1fbb973a9cb1a6c954b7d450511b4be1
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a0964e390455b2225ec35debe79cdc79c38ed931
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54768878"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194559"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Vue d’ensemble du multiciblage Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ Dans cette version de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pouvez 
 >  Dans les éditions Express de Visual Studio, vous ne pouvez pas définir la version du Framework cible dans la boîte de dialogue **Nouveau projet**.
 
 ## <a name="resolving-system-and-user-assembly-references"></a>Résolution des références système et d’assembly utilisateur
- Pour cibler une version du .Net Framework, vous devez d’abord installer les références d’assembly appropriées. Les références d’assembly pour les versions 2.0, 3.0 et 3.5 du .NET Framework sont incluses dans .NET Framework 3.5 SP1, que vous pouvez télécharger à partir du site web du [Centre de téléchargement Microsoft, Microsoft Visual Studio](http://go.microsoft.com/fwlink/?LinkId=227602). Les références d’assembly pour .NET Framework 3.5 Client Profile, .NET Framework 4, .NET Framework 4 Client Profile et Silverlight sont également disponibles à partir du site web des [téléchargements de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=179687).
+ Pour cibler une version du .Net Framework, vous devez d’abord installer les références d’assembly appropriées. Les références d’assembly pour les versions 2.0, 3.0 et 3.5 du .NET Framework sont incluses dans .NET Framework 3.5 SP1, que vous pouvez télécharger à partir du site web du [Centre de téléchargement Microsoft, Microsoft Visual Studio](https://www.microsoft.com/download/details.aspx?id=25150). Les références d’assembly pour .NET Framework 3.5 Client Profile, .NET Framework 4, .NET Framework 4 Client Profile et Silverlight sont également disponibles à partir du site web des [téléchargements de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=179687).
 
 > [!NOTE]
 >  .NET Framework Client Profile est un sous-ensemble du .NET Framework qui fournit un ensemble limité de bibliothèques et de fonctionnalités. Pour plus d’informations sur les profils clients, consultez [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).
@@ -79,4 +79,6 @@ Dans cette version de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pouvez 
  Quand vous ciblez .NET Framework 3.5 ou une version ultérieure, une référence à System.Core et une importation au niveau du projet pour System.Linq (en Visual Basic uniquement) sont automatiquement ajoutées. Si vous voulez utiliser les fonctionnalités LINQ, vous devez également activer Option Infer (en Visual Basic uniquement). La référence et l’importation sont automatiquement supprimées si vous faites passer la version du .NET Framework à une version antérieure. Pour plus d’informations, consultez [Guide pratique pour créer un projet LINQ](http://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2).
 
 ## <a name="see-also"></a>Voir aussi
- [Multi-ciblage](../msbuild/msbuild-multitargeting-overview.md) [.NET Framework Multi-Targeting pour les projets Web ASP.NET](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76) [plateforme compatibilité et configurations requises](http://www.microsoft.com/visualstudio/eng/products/compatibility)
+[Multi-ciblage](../msbuild/msbuild-multitargeting-overview.md)
+[.NET Framework Multi-Targeting pour les projets Web ASP.NET](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)
+[plateforme compatibilité et configurations requises](/visualstudio/productinfo/vs2015-compatibility-vs)

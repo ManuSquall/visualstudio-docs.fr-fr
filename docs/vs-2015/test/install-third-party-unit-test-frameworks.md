@@ -8,12 +8,12 @@ ms.assetid: 47893b70-46f8-49dc-84bd-ec820178f683
 caps.latest.revision: 12
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0901c16d4e467869768b3863a194ea524b5f9472
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7ae69e33d60c4d6bc4257c6c9006b795d8cbdced
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787879"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868707"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>Installer des frameworks de tests unitaires tierces
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ L'Explorateur de tests Visual Studio peut exécuter n'importe quel framework de 
 ### <a name="installing-from-the-web"></a>Installation à partir du web  
  Si vous savez quel framework vous intéresse :  
   
-1. Ouvrez [la galerie Visual Studio](http://go.microsoft.com/fwlink/?LinkId=236267) sur le site web MSDN.  
+1. Ouvrez [Visual Studio Marketplace ](https://marketplace.visualstudio.com).  
   
 2. Tapez le nom du framework dans la zone **Rechercher**.  
   
@@ -50,7 +50,7 @@ L'Explorateur de tests Visual Studio peut exécuter n'importe quel framework de 
   
    Pour parcourir la liste des frameworks ainsi que d'autres outils de test :  
   
-4. Ouvrez [la galerie Visual Studio](http://go.microsoft.com/fwlink/?LinkId=236267) sur le site web MSDN.  
+4. Ouvrez [Visual Studio Marketplace ](https://marketplace.visualstudio.com).  
   
 5. Choisissez **Parcourir**.  
   

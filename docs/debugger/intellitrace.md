@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24785b4f39265b71c3f1cb18b4331ded53652905
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: e68e6c7258cb906ac81cb97f7d82bd5c5d9b467a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526761"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873121"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace pour Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -52,7 +52,7 @@ Vous pouvez utiliser IntelliTrace dans Visual Studio Enterprise Edition (mais pa
 
 | | |
 |---------------------| - |
-| **Prise en charge complète** | - Applications Visual Basic et Visual C# qui utilisent .NET Framework 2.0 ou versions ultérieures.<br/>Vous pouvez déboguer la plupart des applications, notamment ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010 et SharePoint 2013, ainsi que les applications 64 bits.<br/>Pour déboguer des applications SharePoint avec IntelliTrace, consultez [procédure pas à pas : débogage d’une Application SharePoint par IntelliTrace à l’aide de](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Pour déboguer des applications Microsoft Azure avec IntelliTrace, consultez [débogage d’un Service Cloud publié avec IntelliTrace et Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services). |
+| **Prise en charge complète** | - Applications Visual Basic et Visual C# qui utilisent .NET Framework 2.0 ou versions ultérieures.<br/>Vous pouvez déboguer la plupart des applications, notamment ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010 et SharePoint 2013, ainsi que les applications 64 bits.<br/>Pour déboguer des applications SharePoint avec IntelliTrace, consultez [procédure pas à pas : débogage d’une Application SharePoint par IntelliTrace à l’aide de](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Pour déboguer des applications Microsoft Azure avec IntelliTrace, consultez [débogage d’un Service Cloud publié avec IntelliTrace et Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md). |
 | **Prise en charge limitée** | -Applications C++ ciblant l’affichage des instantanés à l’aide d’IntelliTrace revenir en arrière de la prise en charge Windows. Seuls les événements de débogueur et l’exception sont pris en charge.<br />-.NET core et les applications ASP.NET Core pris en charge pour certains événements (événements de contrôleur MVC, ADO.NET et HTTPClient) dans le débogage local. Le collecteur autonome n’est pas pris en charge pour les applications .NET Core ou ASP.NET Core.<br />- Applications F# à titre expérimental<br />-Les applications UWP pris en charge pour les événements uniquement |
 | **Non pris en charge** | -Autres langages et un script<br />- Services Windows, Silverlight, Xbox ou applications [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] |
 
@@ -91,7 +91,7 @@ Vous pouvez enregistrer les données IntelliTrace à partir des sources suivante
 
 - Un bogue ou un incident se produit dans une application déployée.
 
-     Pour les applications basées sur Microsoft Azure, vous pouvez configurer la collection de données IntelliTrace avant de publier l’application. Pendant que votre application s'exécute, IntelliTrace enregistre les données dans un fichier .iTrace. Consultez [déboguer un Service Cloud publié avec IntelliTrace et Visual Studio](http://go.microsoft.com/fwlink/?LinkID=262248).
+     Pour les applications basées sur Microsoft Azure, vous pouvez configurer la collection de données IntelliTrace avant de publier l’application. Pendant que votre application s'exécute, IntelliTrace enregistre les données dans un fichier .iTrace. Consultez [déboguer un Service Cloud publié avec IntelliTrace et Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).
 
      Pour les applications web ASP.NET hébergées sur IIS 7.0, 7.5 et 8.0, et les applications SharePoint 2010 ou SharePoint 2013, utilisez Microsoft Monitoring Agent, seul ou avec System Center 2012, pour enregistrer les données IntelliTrace dans un fichier .iTrace.
 
