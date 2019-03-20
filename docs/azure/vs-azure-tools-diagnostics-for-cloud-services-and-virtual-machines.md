@@ -193,7 +193,7 @@ Les processus actuellement suivis sont répertoriés dans la capture d’écran 
 
 ![Vidages sur incident](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766026.png)
 
-Pour plus d’informations, consultez [Contrôler la journalisation et le suivi dans Windows Azure](https://msdn.microsoft.com/magazine/ff714589.aspx) et [Microsoft Azure Diagnostics Part 4: Custom logging components and Azure Diagnostics 1.3 changes](http://justazure.com/microsoft-azure-diagnostics-part-4-custom-logging-components-azure-diagnostics-1-3-changes/).
+Pour plus d’informations, consultez [Contrôler la journalisation et le suivi dans Microsoft Azure](https://msdn.microsoft.com/magazine/ff714589.aspx) et [Diagnostics Microsoft Azure Partie 4 : Custom logging components and Azure Diagnostics 1.3 changes](http://justazure.com/microsoft-azure-diagnostics-part-4-custom-logging-components-azure-diagnostics-1-3-changes/).
 
 ## <a name="view-the-diagnostics-data"></a>Affichage des données de diagnostic
 Après avoir collecté les données de diagnostic pour un service cloud ou une machine virtuelle, vous pouvez les visualiser.
@@ -206,7 +206,7 @@ Après avoir collecté les données de diagnostic pour un service cloud ou une m
 
     Un rapport contenant les données disponibles s’affiche.
 
-    ![Rapport de diagnostics Microsoft Azure dans Visual Studio](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796666.png)
+    ![Rapport Diagnostics Microsoft Azure dans Visual Studio](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796666.png)
 
     Si les données les plus récentes n’apparaissent pas, vous devez peut-être attendre la fin de la période de transfert.
 
