@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d4a4c4038c34f2cfa1dc2b4fcc022b24c135aef
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 0ba14e170a07b3ac1378087f1cebd31ab7c7df8a
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868141"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195175"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ Project system d’extensibilité et ensemble d’outils integration
 
@@ -418,7 +418,7 @@ Le système de projet Visual C++ est basé sur le [système de projet Visual Stu
 
 Pour plus d’informations générales de conception, consultez [extensibilité des plateformes - partie 1](https://blogs.msdn.microsoft.com/vsproject/2009/06/09/platform-extensibility-part-1/) et [extensibilité des plateformes - partie 2](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/).
 
-En termes simples, les pages de propriétés que vous consultez dans la **propriétés du projet** boîte de dialogue pour un projet C++ sont définis par *règle* fichiers. Un fichier de règle spécifie un jeu de propriétés à afficher sur une page de propriétés et comment et où ils doivent être enregistrés dans le projet de fichier. Fichiers de règles sont des fichiers .xml qui utilisent le format Xaml. Les types utilisés pour sérialiser les sont décrites dans [Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes). Pour plus d’informations sur l’utilisation de fichiers de règles dans les projets, consultez [les fichiers de règles XML de la Page propriété](/cpp/ide/property-page-xml-files).
+En termes simples, les pages de propriétés que vous consultez dans la **propriétés du projet** boîte de dialogue pour un projet C++ sont définis par *règle* fichiers. Un fichier de règle spécifie un jeu de propriétés à afficher sur une page de propriétés et comment et où ils doivent être enregistrés dans le projet de fichier. Fichiers de règles sont des fichiers .xml qui utilisent le format Xaml. Les types utilisés pour sérialiser les sont décrites dans [Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes). Pour plus d’informations sur l’utilisation de fichiers de règles dans les projets, consultez [les fichiers de règles XML de la Page propriété](/cpp/build/reference/property-page-xml-files).
 
 Les fichiers de la règle doivent être ajoutés à la `PropertyPageSchema` groupe d’éléments :
 
@@ -636,8 +636,8 @@ Pour plus d’informations sur la création des fichiers VSIX, consultez [de liv
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 
-Le système de génération de Microsoft ([MSBuild](../msbuild/msbuild.md)) fournit le moteur de génération et le format XML extensible pour les fichiers de projet. Vous devez être familiarisé avec basic [concepts MSBuild](../msbuild/msbuild-concepts.md) et par la procédure [MSBuild pour Visual C++](/cpp/build/msbuild-visual-cpp-overview) système de projet works afin d’étendre le Visual C++.
+Le système de génération de Microsoft ([MSBuild](../msbuild/msbuild.md)) fournit le moteur de génération et le format XML extensible pour les fichiers de projet. Vous devez être familiarisé avec basic [concepts MSBuild](../msbuild/msbuild-concepts.md) et par la procédure [MSBuild pour Visual C++](/cpp/build/reference/msbuild-visual-cpp-overview) système de projet works afin d’étendre le Visual C++.
 
 Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) fournit l’API qui sont utilisées par CPS et le système de projet Visual C++ de l’extension. Pour une vue d’ensemble de l’utilisation de MEF par CPS, consultez [CPS et MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md#cps-and-mef) dans le [vue d’ensemble de VSProjectSystem de MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md).
 
-Vous pouvez personnaliser le système de génération existante pour ajouter des étapes de génération ou de nouveaux types de fichiers. Pour plus d’informations, consultez [vue d’ensemble de MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp-overview) et [utilisation des propriétés de projet](/cpp/ide/working-with-project-properties).
+Vous pouvez personnaliser le système de génération existante pour ajouter des étapes de génération ou de nouveaux types de fichiers. Pour plus d’informations, consultez [vue d’ensemble de MSBuild (Visual C++)](/cpp/build/reference/msbuild-visual-cpp-overview) et [utilisation des propriétés de projet](/cpp/build/working-with-project-properties).
