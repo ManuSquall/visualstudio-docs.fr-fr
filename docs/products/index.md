@@ -6,6 +6,7 @@ description: "Apprenez à utiliser Visual Studio\_2017 pour développer des appl
 ms.topic: landing-page
 searchScope: []
 ---
+<!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
     <div class="container">
         <h1>Documentation des produits Visual Studio</h1>

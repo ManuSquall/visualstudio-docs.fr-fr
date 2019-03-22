@@ -12,6 +12,8 @@ manager: jillfra
 
 Visual Studio fournit plusieurs outils différents qui vous permettent de déployer vos applications.
 
+<!-- markdownlint-disable MD033 -->
+
 <h2>Faire l’expérience du déploiement Visual Studio avec les guides de démarrage rapide de 5 minutes</h2>
 
 <ul class="panelContent cardsFTitle">
