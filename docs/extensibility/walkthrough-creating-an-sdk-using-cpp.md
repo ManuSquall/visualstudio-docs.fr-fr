@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18627c629e428e00c719459f7a243b74b7c4f26a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: da9be257587936088ee5f91c5e1723d71be11965
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689679"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325066"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>Procédure pas à pas : Créer un kit de développement à l’aide de C++
 Cette procédure pas à pas montre comment créer une bibliothèque C++ native mathématiques SDK, package le Kit de développement logiciel comme un Visual Studio Extension (VSIX) et ensuite l’utiliser pour créer une application. La procédure pas à pas est divisée en ces étapes :
@@ -135,7 +135,7 @@ Cette procédure pas à pas montre comment créer une bibliothèque C++ native m
 
 17. Dans **Explorateur de fichiers**, accédez à la *$SolutionRoot$ \NativeMathVSIX\bin\Debug* dossier, puis exécutez *NativeMathVSIX.vsix* pour commencer l’installation.
 
-18. Choisissez le **installer** bouton, attendez que l’installation se termine, puis démarrez Visual Studio.
+18. Choisissez le **installer** bouton, attendez que l’installation se termine et ouvrez Visual Studio.
 
 ##  <a name="createSample"></a> Pour créer un exemple d’application qui utilise la bibliothèque de classes
 

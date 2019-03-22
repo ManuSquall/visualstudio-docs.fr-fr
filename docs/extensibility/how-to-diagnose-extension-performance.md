@@ -8,12 +8,12 @@ ms.author: bertaygu
 manager: jillfra
 ms.workload:
 - bertaygu
-ms.openlocfilehash: 2d9337b443fdaabe713f1708b2be9051c2f02b3c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3d8fb5de23cbc4664ea322a9149653598956aed7
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707066"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323683"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Mesurer l’impact d’extension dans le démarrage
 
@@ -74,11 +74,11 @@ Dans l’idéal, toute demande d’e/s réseau ou de fichier synchrone doit êtr
 
 Un des modèles courants dans l’initialisation des packages consiste à initialiser les services fournis par ce package dans le package soit utilisé par `constructor` ou `initialize` (méthode). Bien que cela garantit que les services sont prêtes à être utilisées, il peut également ajouter les coûts inutiles pour empaqueter le chargement si ces services ne servent pas immédiatement. Au lieu de cela, ces services doivent être initialisés à la demande afin de minimiser le travail effectué dans l’initialisation des packages.
 
-Pour les services globaux fournis par un package, vous pouvez utiliser `AddService` méthodes qui prennent une fonction pour initialiser tardivement le service uniquement lorsque cela est demandé par un composant. Pour les services utilisés dans le package, vous pouvez utiliser le mode différé<T> ou AsyncLazy<T> pour vous assurer que les services sont initialisés ou interrogée à la première utilisation.
+Pour les services globaux fournis par un package, vous pouvez utiliser `AddService` méthodes qui prennent une fonction pour initialiser tardivement le service uniquement lorsque cela est demandé par un composant. Pour les services utilisés dans le package, vous pouvez utiliser le mode différé\<T > ou AsyncLazy\<T > pour vous assurer que les services sont initialisés ou interrogée à la première utilisation.
 
 ## <a name="measuring-impact-of-auto-loaded-extensions-using-activity-log"></a>Mesurer l’impact auto chargé des extensions à l’aide du journal d’activité
 
-À compter de Visual Studio 2017 Update 3, journal d’activité de Visual Studio maintenant contient des entrées pour l’impact sur les performances des packages au cours du chargement de solution et de démarrage. Pour afficher ces mesures, vous devez démarrer Visual Studio avec le commutateur /log et ouvrez *ActivityLog.xml* fichier.
+À compter de Visual Studio 2017 Update 3, journal d’activité de Visual Studio maintenant contient des entrées pour l’impact sur les performances des packages au cours du chargement de solution et de démarrage. Pour afficher ces mesures, vous devez ouvrir Visual Studio avec le commutateur /log et ouvrez *ActivityLog.xml* fichier.
 
 Dans le journal d’activité, les entrées se trouvent sous la source de « Gérer les performances de Visual Studio » et ressemblent à l’exemple suivant :
 
@@ -141,9 +141,9 @@ Une fois que vous définissez votre environnement Visual Studio avec votre exten
 
 ![menu collecter perfview](media/perfview-collect-menu.png)
 
-Les options par défaut fournira des piles d’appels pour la consommation du processeur, mais étant donné que nous sommes intéressés à durée de blocage, ainsi, vous devez également activer **temps Thread** piles. Une fois que les paramètres sont prêts, vous pouvez cliquer sur **démarrer la collecte** et démarré Visual Studio une fois que l’enregistrement est démarré.
+Les options par défaut fournira des piles d’appels pour la consommation du processeur, mais étant donné que nous sommes intéressés à durée de blocage, ainsi, vous devez également activer **temps Thread** piles. Une fois que les paramètres sont prêts, vous pouvez cliquer sur **démarrer la collecte** puis ouvrez Visual Studio après l’enregistrement de démarrage.
 
-Avant d’arrêter la collection, vous souhaitez vous assurer que Visual Studio soit entièrement initialisé, la fenêtre principale est complètement visible et si votre extension possède des interface utilisateur qui affiche automatiquement, ils sont également visibles. Une fois que Visual Studio est complètement chargée et que votre extension est initialisée, vous pouvez arrêter l’enregistrement pour analyser la trace.
+Avant d’arrêter la collection, vous souhaitez vous assurer que Visual Studio soit entièrement initialisé, la fenêtre principale est complètement visible et si votre extension possède des interface utilisateur qui affiche automatiquement, ils sont également visibles. Lorsque Visual Studio est complètement chargé et que votre extension est initialisée, vous pouvez arrêter l’enregistrement pour analyser la trace.
 
 **Analyse une trace avec PerfView :**
 

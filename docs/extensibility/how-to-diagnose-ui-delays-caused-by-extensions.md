@@ -6,12 +6,12 @@ author: PooyaZv
 ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: ac3d44734c868bdf57f76aec0572e6b7d3ea9f03
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 00266fd8fbc881707652247e08b093ca4b15a88d
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719481"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324342"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Procédure : Diagnostiquer les délais de l’interface utilisateur causés par les extensions
 
@@ -43,7 +43,7 @@ Pour de diagnostiquer un délai de l’interface utilisateur, vous devez d’abo
 
 ## <a name="restart-vs-with-activity-logging-on"></a>Redémarrez Visual Studio avec l’activité de journalisation
 
-Visual Studio peut générer un « journal d’activité » qui fournit des informations utiles lors du débogage d’un problème. Pour allumer l’activité de journalisation dans Visual Studio, démarrez Visual Studio avec le `/log` option de ligne de commande. Après le démarrage de Visual Studio, le journal d’activité est stocké dans l’emplacement suivant :
+Visual Studio peut générer un « journal d’activité » qui fournit des informations utiles lors du débogage d’un problème. Pour activer sur l’activité de journalisation dans Visual Studio, ouvrez Visual Studio avec le `/log` option de ligne de commande. Après le démarrage de Visual Studio, le journal d’activité est stocké dans l’emplacement suivant :
 
 ```DOS
 %APPDATA%\Microsoft\VisualStudio\<vs_instance_id>\ActivityLog.xml
