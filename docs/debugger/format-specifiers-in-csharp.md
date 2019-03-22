@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4091aa8c312938a725a89e5ef131923671af3169
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: caaf36e286f1bdc664ebdbb10e3baf7ed28183e7
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698987"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57870518"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Dans les spécificateurs de format C# dans le débogueur Visual Studio
 Vous pouvez modifier le format dans lequel une valeur est affichée dans le **espion** fenêtre à l’aide de spécificateurs de format. Vous pouvez également utiliser des spécificateurs de format dans le **immédiat** fenêtre, le **commande** fenêtre, dans [des points de trace](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)et dans les fenêtres sources. Si vous faites une pause d’une expression dans ces fenêtres, le résultat s’affiche dans un [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) dans l’affichage du format spécifié.
@@ -51,6 +51,14 @@ Nous allons utiliser l’exemple de code suivant :
 Ajouter le `my_var1` à la variable le **espion** fenêtre pendant le débogage, **déboguer** > **Windows** > **regarder**  >  **Espion 1**. Ensuite, avec le bouton droit de la variable et sélectionnez **affichage hexadécimal**. Maintenant le **espion** fenêtre affiche la valeur 0 x 0065. Pour afficher cette valeur comme un entier décimal plutôt qu’un entier hexadécimal, ajoutez le spécificateur de format décimal **, d** dans le **nom** colonne après le nom de variable. Le **valeur** colonne affiche maintenant **101**.
 
 ![WatchFormatCSharp](../debugger/media/watchformatcsharp.png "WatchFormatCSharp")
+
+::: moniker range=">= vs-2019" 
+
+Vous pouvez afficher et sélectionner dans la liste des spécificateurs de format disponibles en ajoutant une virgule (,) à la valeur de la **espion** fenêtre. 
+
+![FormatSpecCSharp](../debugger/media/vs-2019/format-specs-csharp.png "FormatSpecCSharp")
+
+::: moniker-end
 
 ## <a name="format-specifiers"></a>Spécificateurs de format
 Le tableau suivant décrit les C# spécificateurs pour le débogueur Visual Studio de format.

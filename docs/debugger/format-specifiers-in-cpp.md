@@ -1,13 +1,10 @@
 ---
 title: Mettre en forme spécificateurs dans le débogueur (C++) | Microsoft Docs
-ms.date: 11/20/2018
+ms.date: 3/11/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
-- CSharp
-- VB
-- FSharp
 - C++
 helpviewer_keywords:
 - QuickWatch dialog box, format specifiers in C++
@@ -27,15 +24,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8ad821c15ee8b405982d36c6b1c62d038bb11633
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 8e6be79bc38e9283493bf5b7428a21c17cf9d3e0
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227720"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57870591"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Spécificateurs de format pour C++ dans le débogueur Visual Studio
-Vous pouvez modifier le format dans lequel une valeur est affichée dans le **espion** fenêtre à l’aide de spécificateurs de format.
+Vous pouvez modifier le format dans lequel une valeur est affichée dans le **espion**, **automatique**, et **variables locales** windows à l’aide de spécificateurs de format.
 
 Vous pouvez également utiliser des spécificateurs de format dans le **immédiat** fenêtre, le **commande** fenêtre, dans [des points de trace](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)et même les fenêtres sources. Si vous faites une pause d’une expression dans ces fenêtres, le résultat s’affiche dans un [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). L’affichage du DataTip reflète le spécificateur de format.
 
@@ -57,8 +54,55 @@ Ajouter le `my_var1` à la variable le **espion** fenêtre pendant le débogage,
 
 ![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")
 
+::: moniker range=">= vs-2019" 
+Vous pouvez afficher et sélectionner dans la liste des spécificateurs de format disponibles en ajoutant une virgule (,) à la valeur de la **espion** fenêtre. 
+
+![WatchFormatSpecDropdown](../debugger/media/vs-2019/format-specs-cpp.png "FormatSpecCpp")
+
+::: moniker-end
+
 ## <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> Spécificateurs de format
 Les tableaux suivants décrivent les spécificateurs de format que vous pouvez utiliser dans Visual Studio. Les spécificateurs en gras sont uniquement compatible avec le nouveau débogueur et ne pas pour le débogage d’interopérabilité avec C++ / c++ / CLI.
+
+::: moniker range=">= vs-2019" 
+
+|Spécificateur|Format|Valeur d’espion d’origine|Valeur affichée|
+|---------------|------------|--------------------------|---------------------|
+|d|entier décimal|0x00000066|102|
+|o|entier octal non signé|0x00000066|000000000146|
+|x<br /><br /> **h**|entier hexadécimal|102|0xcccccccc|
+|X<br /><br /> **H**|entier hexadécimal|102|0xcccccccc|
+|xb<br /><br /> **hb**|Entier hexadécimal (sans 0x au début)|102|cccccccc|
+|Xb<br /><br /> **Hb**|Entier hexadécimal (sans 0x au début)|102|CCCCCCCC|
+|b|Entier binaire non signé|25|0b00000000000000000000000000011001|
+|bb|entier binaire non signé (sans 0b au début)|25|00000000000000000000000000011001|
+|e|Notation scientifique|25000000|2.500000e + 07|
+|g|Forme courte de la notation scientifique ou virgule flottante|25000000|2.5e + 07|
+|c|caractère unique|0x0065, c|101 ’e’|
+|s|const char * chaîne (avec les guillemets)|\<location> "hello world"|"hello world"|
+|**sb**|const char* chaîne (sans guillemets)|\<location> "hello world"|hello world|
+|s8|Chaîne UTF-8|\<emplacement > « Ceci est un â˜• tasse de café de UTF-8 »|« Il s’agit d’un ☕ tasse de café de UTF-8 »|
+|**s8b**|chaîne UTF-8 (sans guillemets)|\<location> "hello world"|hello world|
+|su|Chaîne Unicode (encodage UTF-16) (avec les guillemets)|\<emplacement > L « hello world »|L"hello world"<br /><br /> u"hello world"|
+|sub|chaîne Unicode (encodage UTF-16) (sans guillemets)|\<emplacement > L « hello world »|hello world|
+|bstr|Chaîne binaire de BSTR (avec les guillemets)|\<emplacement > L « hello world »|L"hello world"|
+|env|Bloc d’environnement (chaîne finissant par une double valeur null)|\<location> L"=::=::\\\\"|L "= :: = ::\\\\\\0 = C : = C :\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
+|**s32**|Chaîne UTF-32 (avec les guillemets)|\<emplacement > U « hello world »|u"hello world"|
+|**s32b**|chaîne UTF-32 (sans guillemets)|\<emplacement > U « hello world »|hello world|
+|**en**|enum|Saturday(6)|Saturday|
+|**hv**|Type de pointeur : indique que la valeur de pointeur inspectée est le résultat de l’allocation de tas d’un tableau, par exemple, `new int[3]`.|\<emplacement>{\<premier membre>}|\<emplacement > {\<premier membre >, \<deuxième membre >,...}|
+|**na**|Supprime l’adresse mémoire d’un pointeur vers un objet.|\<emplacement>, {membre=valeur...}|{membre=valeur…}|
+|**nd**|Affiche uniquement les informations de classe de base, en ignorant les classes dérivées|`(Shape*) square` inclut les informations de classe de base et de classe dérivée|Affiche uniquement les informations de classe de base|
+|hr|HRESULT ou code d’erreur Win32. Ce spécificateur n’est plus nécessaire pour les valeurs HRESULT comme le débogueur les décode automatiquement.|S_OK|S_OK|
+|wc|Indicateur de classe de fenêtre|0x0010|WC_DEFAULTCHAR|
+|wm|Numéros de messages Windows|16|WM_CLOSE|
+|nr|Supprimer l'élément « Affichage brut »|
+|nvo|Afficher l’élément « Affichage brut » pour les valeurs numériques uniquement|
+|!|format brut, ignorant toutes les personnalisations d’affichage de type de données|\<représentation personnalisée>|4|
+
+::: moniker-end
+
+::: moniker range="vs-2017" 
 
 |Spécificateur|Format|Valeur d’espion d’origine|Valeur affichée|
 |---------------|------------|--------------------------|---------------------|
@@ -86,8 +130,10 @@ Les tableaux suivants décrivent les spécificateurs de format que vous pouvez u
 |wm|Numéros de messages Windows|16|WM_CLOSE|
 |!|format brut, ignorant toutes les personnalisations d’affichage de type de données|\<représentation personnalisée>|4|
 
+::: moniker-end
+
 > [!NOTE]
-> Lorsque le **hv** spécificateur de format est présent, le débogueur tente de déterminer la longueur de la mémoire tampon et afficher ce nombre d’éléments. Comme il n’est pas toujours possible pour le débogueur de rechercher la taille exacte de la mémoire tampon d’un tableau, vous devez utiliser un spécificateur de taille `(pBuffer,[bufferSize])` chaque fois que cela est possible. Le **hv** spécificateur de format est utile lorsque la taille du tampon n’est pas immédiatement disponible
+> Lorsque le **hv** spécificateur de format est présent, le débogueur tente de déterminer la longueur de la mémoire tampon et afficher ce nombre d’éléments. Comme il n’est pas toujours possible pour le débogueur de rechercher la taille exacte de la mémoire tampon d’un tableau, vous devez utiliser un spécificateur de taille `(pBuffer,[bufferSize])` chaque fois que cela est possible. Le **hv** spécificateur de format est utile lorsque la taille du tampon n’est pas immédiatement disponible.
 
 ### <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> Spécificateurs de taille pour les pointeurs en tant que tableaux
 Si vous avez un pointeur vers un objet que vous voulez afficher sous forme de tableau, vous pouvez utiliser un entier ou une expression pour spécifier le nombre d’éléments du tableau.

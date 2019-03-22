@@ -19,6 +19,7 @@ Les abonnements Visual Studio sont un ensemble complet de ressources qui vous pe
 Les administrateurs se connectent à [https://manage.visualstudio.com](https://manage.visualstudio.com) pour affecter des abonnements à votre équipe.<br>
 Les abonnés se connectent à [https://my.visualstudio.com](https://my.visualstudio.com) pour accéder aux avantages de leur abonnement.
 
+<!-- markdownlint-disable MD033 -->
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/azure/">

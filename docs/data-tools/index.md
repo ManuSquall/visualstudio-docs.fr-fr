@@ -1,23 +1,19 @@
 ---
 title: Développer des solutions de données
-description: Découvrez-en plus sur les différents outils de développement de solutions de données dans Visual Studio, notamment les outils .NET Framework, SQL Server Data Tools, Azure Data Lake, Azure HDInsight et Azure Streaming Analytics.
+description: 'Découvrez-en plus sur les différents outils de développement de solutions de données dans Visual Studio, notamment les outils .NET Framework, SQL Server Data Tools, Azure Data Lake, Azure HDInsight et Azure Streaming Analytics.'
 layout: LandingPage
 ms.date: 01/01/2018
 author: gewarren
 ms.author: gewarren
 ms.topic: landing-page
 ms.workload:
-- data-storage
-ms.openlocfilehash: 4d92ea058830d5da769ad54ceb88e51aefa6112d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924732"
+  - data-storage
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Utiliser les outils de données dans Visual Studio pour développer des solutions de données
 
 Découvrez comment utiliser les outils de données dans Visual Studio pour développer et tester des solutions de données à l’aide de SQL Server, Azure Data Lake ou Hadoop.
+
+<!-- markdownlint-disable MD033 -->
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -123,7 +119,7 @@ Découvrez comment utiliser les outils de données dans Visual Studio pour déve
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <p><Access data in Visual Studio></p>
+                        <p>Accéder aux données dans Visual Studio</p>
                     </div>
                 </div>
             </div>

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: eb6b9a9a213932662a548314bcc39c75e9d35bc3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ceaf74ad2673b0dae80c9529ad082c6ae3187352
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909685"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069773"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Lier des contrôles WPF à un service de données WCF
 
@@ -50,7 +50,7 @@ Pour exécuter cette procédure pas à pas, vous devez disposer des composants s
 
 La connaissance préalable des concepts suivants s'avère également utile, mais n'est pas obligatoire pour suivre cette procédure pas à pas :
 
-- Services de données WCF. Pour plus d’informations, consultez [vue d’ensemble](/dotnet/framework/data/wcf/wcf-data-services-overview).
+- [WCF Data Services](/dotnet/framework/data/wcf/wcf-data-services-overview).
 
 - Modèles de données dans les [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)].
 
@@ -60,21 +60,9 @@ La connaissance préalable des concepts suivants s'avère également utile, mais
 
 ## <a name="create-the-service-project"></a>Créer le projet de service
 
-Démarrer cette procédure pas à pas en créant un projet pour un Service de données WCF :
+1. Démarrer cette procédure pas à pas en créant un C# ou Visual Basic **Application Web ASP.NET** projet. Nommez le projet **AdventureWorksService**.
 
-1. Démarrez Visual Studio.
-
-2. Dans le menu **Fichier** , pointez sur **Nouveau**, puis cliquez sur **Projet**.
-
-3. Développez **Visual C#** ou **Visual Basic**, puis sélectionnez **Web**.
-
-4. Sélectionnez le modèle de projet **Application web ASP.NET**.
-
-5. Dans la zone **Nom**, tapez **AdventureWorksService**, puis cliquez sur **OK**.
-
-     Visual Studio crée le projet **AdventureWorksService**.
-
-6. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur **Default.aspx** et sélectionnez **Supprimer**. Ce fichier n'est pas nécessaire dans cette procédure pas à pas.
+2. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur **Default.aspx** et sélectionnez **Supprimer**. Ce fichier n’est pas nécessaire pour la procédure pas à pas.
 
 ## <a name="create-an-entity-data-model-for-the-service"></a>Créer un Entity Data Model pour le service
 
@@ -92,7 +80,7 @@ Pour exposer des données à une application à l’aide d’un Service de donn�
 
 5. Dans la page **Choisir votre connexion de données**, sélectionnez une des options suivantes :
 
-    - Si une connexion de données à l’exemple de base de données AdventureWorksLT est disponible dans la liste déroulante, sélectionnez-la.
+    - Si une connexion de données à l'exemple de base de données AdventureWorksLT est disponible dans la liste déroulante, sélectionnez-la.
 
     - Cliquez sur **Nouvelle connexion** et créez une connexion à la base de données AdventureWorksLT.
 

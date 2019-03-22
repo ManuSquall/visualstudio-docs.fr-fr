@@ -12,6 +12,8 @@ manager: jillfra
 
 Le débogueur Visual Studio vous permet d’observer le comportement de votre programme au moment de l’exécution et de déterminer détecter les problèmes. Le débogueur fonctionne avec tous les langages de programmation Visual Studio et les bibliothèques qui leur sont associées. Avec le débogueur, vous pouvez interrompre l’exécution de votre programme afin d’examiner votre code, d’examiner et de modifier les variables, de visualiser les registres, d’afficher les instructions créées à partir de votre code source et de connaître l’espace mémoire utilisé par votre application.
 
+<!-- markdownlint-disable MD033 -->
+
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="https://docs.microsoft.com/visualstudio/debugger/what-is-debugging">
