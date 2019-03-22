@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ba14e170a07b3ac1378087f1cebd31ab7c7df8a
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
-ms.translationtype: HT
+ms.openlocfilehash: a524d242f5c3fb146f3446cd0c020b01e130277c
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195175"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268728"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ Project system d’extensibilité et ensemble d’outils integration
 
@@ -416,7 +416,7 @@ Le système de projet Visual C++ est basé sur le [système de projet Visual Stu
 
 ### <a name="project-property-pages"></a>Pages de propriétés du projet
 
-Pour plus d’informations générales de conception, consultez [extensibilité des plateformes - partie 1](https://blogs.msdn.microsoft.com/vsproject/2009/06/09/platform-extensibility-part-1/) et [extensibilité des plateformes - partie 2](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/).
+Pour plus d’informations générales de conception, consultez [Framework Multi-Targeting pour les projets VC ++](https://devblogs.microsoft.com/visualstudio/framework-multi-targeting-for-vc-projects/).
 
 En termes simples, les pages de propriétés que vous consultez dans la **propriétés du projet** boîte de dialogue pour un projet C++ sont définis par *règle* fichiers. Un fichier de règle spécifie un jeu de propriétés à afficher sur une page de propriétés et comment et où ils doivent être enregistrés dans le projet de fichier. Fichiers de règles sont des fichiers .xml qui utilisent le format Xaml. Les types utilisés pour sérialiser les sont décrites dans [Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes). Pour plus d’informations sur l’utilisation de fichiers de règles dans les projets, consultez [les fichiers de règles XML de la Page propriété](/cpp/build/reference/property-page-xml-files).
 
