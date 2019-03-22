@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 140c72e124143860fee80054ab3fe7e6e921b918
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: c4ff83c2d4d28b6393f7f6d03b01e35d9cc0aa4f
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194669"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324639"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Procédure : Utiliser des Assistants avec des modèles de projet
 
@@ -242,7 +242,7 @@ Afin que votre modèle de projet personnalisés à utiliser votre Assistant pers
 
      Là encore, n’oubliez pas les guillemets. Vous devez voir une ligne dans la sortie semblable à celle-ci
 
-     **Jeton de clé publique <token>**
+     **Jeton de clé publique est \<jeton >**
 
      Prenez note de cette valeur.
 

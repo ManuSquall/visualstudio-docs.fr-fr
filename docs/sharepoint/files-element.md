@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1cf64fc8f70c0a3cf3ed5df1237603f490a703db
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3c669b7cc314bc2d7a999e77d5cfb95251789dd8
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639568"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323290"
 ---
 # <a name="files-element"></a>Files (élément)
   Spécifie les fichiers à déployer avec l’élément de projet SharePoint, tels que les fichiers d’élément de fonctionnalité et la sortie des projets non-SharePoint dépendants.
@@ -57,10 +57,10 @@ ms.locfileid: "56639568"
 
 |||
 |-|-|
-|**Espace de noms**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Espace de noms**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**Nom de schéma**|Schéma d’élément de projet SharePoint|
 |**Fichier de validation**|ProjectItemModelSchema.xsd|
-|**Peut être vide**|Aucune|
+|**Peut être vide**|Non|
 
 ## <a name="see-also"></a>Voir aussi
 - [Référence de schéma élément de projet SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cbe2e3318d01d7b50767c13d09687526c00b49f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2e9f75cfd94ccbf4262771f6278b429006eba939
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722263"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324066"
 ---
 # <a name="create-a-software-development-kit"></a>Création d’un kit de développement logiciel
 Un kit de développement logiciel (SDK) est une collection d’API que vous pouvez référencer en tant qu’un seul élément dans Visual Studio. Le **Gestionnaire de références** boîte de dialogue répertorie tous les kits de développement logiciel qui sont pertinents pour le projet. Lorsque vous ajoutez un kit SDK à un projet, les API sont disponibles dans Visual Studio.
@@ -65,17 +65,17 @@ Un kit de développement logiciel (SDK) est une collection d’API que vous pouv
 ### <a name="installation"></a>Installation
  SDK d’extension peut être installé pour un utilisateur spécifique ou pour tous les utilisateurs sans spécifier une clé de Registre. Pour installer un kit de développement logiciel pour tous les utilisateurs, utilisez le chemin d’accès suivant :
 
- *% Programme Files%\Microsoft SDK\<plateforme cible > \v<platform version number>\ExtensionSDKs*
+ *% Programme Files%\Microsoft SDK\<plateforme cible\>\v < numéro de version de plateforme\>\ExtensionSDKs*
 
  Pour une installation spécifique à l’utilisateur, utilisez le chemin d’accès suivant :
 
- *Kits de développement logiciel de %USERPROFILE%\AppData\Local\Microsoft\<plateforme cible > \v<platform version number>\ExtensionSDKs*
+ *Kits de développement logiciel de %USERPROFILE%\AppData\Local\Microsoft\<plateforme cible\>\v < numéro de version de plateforme\>\ExtensionSDKs*
 
  Si vous souhaitez utiliser un autre emplacement, vous devez effectuer une des deux opérations :
 
 1.  Spécifier dans une clé de Registre :
 
-     **HKLM\Software\Microsoft\Microsoft SDKs\<target platform>\v<platform version number>\ExtensionSDKs\<SDKName>\<SDKVersion>**\
+     **Kits de développement logiciel HKLM\Software\Microsoft\Microsoft\<plateforme cible > \v < numéro de version de plateforme\>\ExtensionSDKs\<SDKName >\<SDKVersion >**\
 
      et ajoutez une sous-clé (par défaut) qui a la valeur `<path to SDK><SDKName><SDKVersion>`.
 
