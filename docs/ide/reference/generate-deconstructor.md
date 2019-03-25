@@ -3,18 +3,18 @@ title: Action rapide Générer un constructeur
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
-ms.author: kendrahavens
+ms.author: kehavens
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: a609b16e0d1bc7e30dc26ef047228a6cacdb46b2
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 8887f4cd6b4dcd7f08e808f1271f5d546d6a224c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324734"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58159177"
 ---
 # <a name="generate-a-deconstructor-in-visual-studio"></a>Générer un constructeur dans Visual Studio
 
@@ -42,7 +42,7 @@ Cette génération de code s’applique à :
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
       - Cliquez sur le bouton ![Tournevis](media/screwdriver.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne vide dans la classe.
 
-      ![Générer un déconstructeur (correcteur de code)](media/deconstruct-codefix.png)
+      ![Générer un déconstructeur (correctif de code)](media/deconstruct-codefix.png)
 
 3. Sélectionnez **Générer la méthode 'MyInternalClass.Deconstruct'** pour générer le déconstructeur.
 

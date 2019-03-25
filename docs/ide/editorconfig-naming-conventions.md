@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6844c20a5be1a963b37aa1e24536d4d33565405
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 881cf54df018a383d081112f44f98fd8f5d71efa
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908190"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983272"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Conventions de nommage .NET pour EditorConfig
 
@@ -54,7 +54,7 @@ La liste suivante répertorie les valeurs autorisées, et vous pouvez spécifier
 - champ
 - événement
 - délégué
-- parameter
+- paramètre
 - type_parameter
 - locaux
 - local_function
@@ -73,18 +73,19 @@ La liste suivante répertorie les valeurs autorisées, et vous pouvez spécifier
 - private
 - protected
 - protected\_internal ou protected_friend
+- private\_protected
 - locaux
 
 > [!NOTE]
 > Ne spécifiez aucun niveau d’accessibilité dans le cadre de votre convention d’affectation de noms si l’accessibilité ne s’applique pas au type de symbole que vous ciblez. Par exemple, les paramètres n’ont pas de niveaux d’accessibilité. Si vous spécifiez un niveau d’accessibilité pour une convention d’affectation de noms de paramètre, votre règle d’affectation de noms ne fonctionnera pas correctement.
 
-### <a name="symbol-modifiers"></a>Modificateurs de symboles
+### <a name="symbol-modifiers-optional"></a>Modificateurs de symboles (facultatif)
 
 Pour décrire les modificateurs des symboles auxquels vous voulez appliquer la règle de nommage, spécifiez un nom de propriété au format suivant :
 
 `dotnet_naming_symbols.<symbolTitle>.required_modifiers = <values>`
 
-La liste suivante répertorie les valeurs autorisées, et vous pouvez spécifier plusieurs valeurs en les séparant par une virgule. Une règle de nommage fait uniquement correspondre les signatures contenant tous les modificateurs spécifiés dans `required_modifiers`. Si vous omettez cette propriété, la valeur par défaut d’une liste vide est utilisée. En d’autres termes, aucun modificateur spécifique n’est nécessaire pour une correspondance. Cela signifie que les modificateurs d’un symbole n’ont aucun effet sur l’application ou non de cette règle.
+La liste suivante répertorie les valeurs autorisées (séparez les valeurs par une virgule) :
 
 - `abstract` ou `must_inherit`
 - `async`
@@ -95,7 +96,10 @@ La liste suivante répertorie les valeurs autorisées, et vous pouvez spécifier
    > [!NOTE]
    > S’il existe une règle d’affectation des noms pour les symboles `static` ou `shared`, elle est également appliquée aux symboles `const`, car ils sont implicitement statiques. Si vous ne souhaitez pas que la règle d’affectation des noms `static` s’applique aux symboles `const`, créez une règle d’affectation des noms distincte pour les symboles `const`.
 
-`required_modifiers` est une propriété facultative. Si vous omettez cette propriété, votre règle de nommage s’applique à tous les modificateurs.
+Une règle de nommage fait correspondre les signatures contenant *tous* les modificateurs spécifiés dans `required_modifiers`. Si vous omettez cette propriété, la valeur par défaut d’une liste vide est utilisée. En d’autres termes, aucun modificateur spécifique n’est nécessaire pour une correspondance. Cela signifie que les modificateurs d’un symbole n’ont aucun effet sur l’application ou non de cette règle.
+
+> [!TIP]
+> Ne spécifiez pas une valeur `*` pour `required_modifiers`. Omettez simplement la propriété `required_modifiers` et votre règle de nommage s’appliquera à tous les types de modificateurs.
 
 ## <a name="style"></a>Style
 

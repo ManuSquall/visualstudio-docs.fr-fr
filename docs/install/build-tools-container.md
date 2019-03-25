@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cae8ce7856249bafced5577030150c6910a86c34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8ebece0823c42c4dd1f2faaeb894e88c06ed0bef
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911492"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983440"
 ---
 # <a name="install-build-tools-into-a-container"></a>Installer Build Tools dans un conteneur
 
@@ -199,4 +199,4 @@ Si vous souhaitez utiliser cette image pour votre flux de travail CI/CD, vous po
 
 * [Exemple avancé pour les conteneurs](advanced-build-tools-container.md)
 * [Problèmes de conteneurs connus](build-tools-container-issues.md)
-* [ID de composant et de charge de travail de Visual Studio Build Tools 2017](workload-component-id-vs-build-tools.md)
+* [ID de composant et de charge de travail de Visual Studio Build Tools](workload-component-id-vs-build-tools.md)

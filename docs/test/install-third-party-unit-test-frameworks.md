@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: af10b4d83cd39c388c5343501f4d6281c0b7a960
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: bf56749ccf49755fa66d44a3ab535d0b3e7611ce
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316143"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57982920"
 ---
 # <a name="install-unit-test-frameworks"></a>Installer des frameworks de tests unitaires
 
@@ -26,9 +26,19 @@ Vous pouvez télécharger et installer des frameworks de tests unitaires tiers �
 
 ### <a name="install-from-visual-studio"></a>Installer à partir de Visual Studio
 
-1. Choisissez **Outils** dans le menu standard, puis choisissez **Extensions et mises à jour**.
+::: moniker range="vs-2017"
 
-2. Développez **En ligne** > **Visual Studio Marketplace** > **Outils**. Choisissez **Test**.
+1. Choisissez **Outils** > **Extensions et mises à jour**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Choisissez **Extensions** > **Gérer les extensions**.
+
+::: moniker-end
+
+2. Développez **En ligne** > **Visual Studio Marketplace** > **Outils**, puis choisissez **Test**.
 
 3. Parcourez la liste pour rechercher le framework.
 

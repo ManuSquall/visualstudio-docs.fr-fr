@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f52e1cb8538204dbf0e29ccdadcc4cb2894255ff
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 20df5476a2ca6cf8fb0ffbf22e8106e51d17128d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021869"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070306"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Publier une application Node.js sur Azure (App Service Linux)
 
@@ -36,15 +36,44 @@ Dans ce didacticiel, vous apprendrez à :
 > * Créer un service d’applications Linux sur Azure
 > * Déployer sur Linux
 
+## <a name="prerequisites"></a>Prérequis
+
+* Au préalable, vous devez avoir installé Visual Studio et la charge de travail de développement Node.js. 
+
+    ::: moniker range=">=vs-2019"
+    Si vous n’avez pas encore installé Visual Studio 2019, accédez à la page  [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/)  pour l’installer gratuitement.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Si vous n’avez pas encore installé Visual Studio 2017, accédez à la page  [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/)  pour l’installer gratuitement.
+    ::: moniker-end
+
+    Si vous devez installer la charge de travail, mais que vous avez déjà installé Visual Studio, cliquez sur **Outils** > **Obtenir les outils et fonctionnalités...**, qui ouvre Visual Studio Installer. Choisissez la charge de travail **Développement Node.js**, puis choisissez **Modifier**.
+
+    ![Charge de travail Node.js dans Visual Studio Installer](../ide/media/quickstart-nodejs-workload.png)
+
+* Le runtime Node.js doit être installé.
+
+    Si vous ne l’avez pas déjà fait, installez la version LTS à partir du site web [Node.js](https://nodejs.org/en/download/). En règle générale, Visual Studio détecte automatiquement le runtime Node.js installé. S’il ne détecte aucun runtime installé, vous pouvez configurer votre projet pour référencer le runtime installé dans la page de propriétés (après avoir créé un projet, cliquez avec le bouton droit sur le nœud de projet, puis choisissez **Propriétés**).
+
 ## <a name="create-a-nodejs-project-to-run-in-azure"></a>Créer un projet Node.js à exécuter dans Azure
 
-1. Créez une application TypeScript Express en utilisant la boîte de dialogue **Fichier** > **Nouveau projet**.
+1. Ouvrez Visual Studio.
 
-1. Sous le nœud **TypeScript**, sélectionnez **Application Node.js Express 4 de base**.
+1. Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**.
+
+1. Créez une application TypeScript Express.
+
+    ::: moniker range=">=vs-2019"
+    Dans la boîte de dialogue **Créer un projet**, tapez **javascript** dans la zone de recherche pour filtrer les résultats, choisissez **Application Azure Node.js Express 4 de base**, puis choisissez **Suivant**. Choisissez ensuite **Créer**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Dans la boîte de dialogue **Nouveau projet**, dans le volet gauche, développez **JavaScript**, puis choisissez **Node.js**. Dans le volet central, choisissez **Application Azure Node.js Express 4 de base**, puis **OK**.
 
     ![Créer une application TypeScript Express](../javascript/media/azure-ts-express-app.png)
+    ::: moniker-end
+    Si vous ne voyez pas le modèle de projet **Application Azure Node.js Express 4 de base**, vous devez ajouter la charge de travail **Développement Node.js**. Pour obtenir des instructions détaillées, consultez les [Prérequis](#prerequisites).
 
-1. Cliquez sur **OK** pour créer le projet dans Visual Studio.
+    Visual Studio crée le projet et l’ouvre dans l’Explorateur de solutions (volet droit).
 
 1. Appuyez sur **F5** pour générer et exécuter l’application, et vérifiez que tout s’exécute comme prévu.
 

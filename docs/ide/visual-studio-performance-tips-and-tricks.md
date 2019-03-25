@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a2662f51baa38b2b2cf65af9654ed76ae63698e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 7fccae7d42d9e8f99c78fd55f74466e2f83e5dfa
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222985"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868228"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Conseils et astuces sur les performances dans Visual Studio
 
@@ -25,7 +25,7 @@ Les recommandations pour améliorer les performances de Visual Studio concernent
 
 Si vous mettez à niveau votre système d’une version 32 bits de Windows vers une version 64 bits, vous passez de 2 Go à 4 Go la quantité de mémoire virtuelle disponible pour Visual Studio. Cela permet à Visual Studio de gérer des charges de travail beaucoup plus importantes, même avec un processus 32 bits.
 
-Pour plus d’informations, consultez [Limites de mémoire](/windows/desktop/Memory/memory-limits-for-windows-releases#memory_limits) et [Use /LARGEADDRESSAWARE on 64-bit Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
+Pour plus d’informations, consultez [Limites de mémoire](/windows/desktop/Memory/memory-limits-for-windows-releases) et [Use /LARGEADDRESSAWARE on 64-bit Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
 
 ## <a name="disable-automatic-file-restore"></a>Désactiver la restauration automatique de fichiers
 
@@ -105,7 +105,17 @@ Pour plus d’informations sur les performances de .NET Compiler Platform (« Ro
 
     Les extensions sont des composants logiciels supplémentaires ajoutés à Visual Studio qui fournissent de nouvelles fonctionnalités ou étendent les fonctionnalités existantes. Les extensions peuvent souvent être une source de problèmes de ressources mémoire. Si vous rencontrez des problèmes de ressources mémoire, essayez de désactiver les extensions une par une pour connaître leur impact sur le scénario ou le flux de travail.
 
+   ::: moniker range="vs-2017"
+
     Pour désactiver des extensions, accédez à **Outils** > **Extensions et mises à jour** et désactivez une extension particulière.
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+    Pour désactiver des extensions, accédez à **Outils** > **Gérer les extensions** et désactivez une extension particulière.
+
+   ::: moniker-end
 
 - **Désactiver le concepteur XAML**
 

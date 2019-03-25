@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4a8a8ae7f3a256665697615c3c239a88f2b0d87
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: e8ddc4e7a44aa0d5d42a64556092874413e3a3b2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315103"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57982764"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Créer des stubs de méthodes de tests unitaires avec la commande Créer des tests unitaires
 
@@ -38,17 +38,28 @@ Pour commencer, sélectionnez une méthode, un type ou un espace de noms dans l�
 
 ![Utilisation de la commande Créer des tests unitaires](media/createunittestcommand.png)
 
-## <a name="setting-unit-test-traits"></a>Définition des caractéristiques des tests unitaires
+## <a name="set-unit-test-traits"></a>Définir des caractéristiques des tests unitaires
 
 Si vous prévoyez d’exécuter ces tests dans le cadre du processus d’automatisation des tests, vous pouvez envisager de créer le test dans un autre projet de test (la deuxième option dans la boîte de dialogue ci-dessus) et de définir les caractéristiques pour le test unitaire. Cela vous permet d’inclure ou d’exclure plus facilement ces tests spécifiques dans le cadre d’un pipeline d’intégration continue ou de déploiement continu. Les caractéristiques sont définies en ajoutant des métadonnées au test unitaire directement, comme indiqué ci-dessous.
 
 ![Définition des caractéristiques des tests unitaires](media/createunittest.png)
 
-## <a name="using-third-party-unit-test-frameworks"></a>Utilisation de frameworks de tests unitaires tiers
+## <a name="use-third-party-unit-test-frameworks"></a>Utiliser des infrastructures de tests unitaires tierces
 
 Avec Visual Studio, vous pouvez facilement avoir des tests unitaires créés automatiquement à l’aide d’un framework de test. Pour installer d’autres frameworks de tests :
 
+::: moniker range="vs-2017"
+
 1. Choisissez **Outils** > **Extensions et mises à jour**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Choisissez **Extensions** > **Gérer les extensions**.
+
+::: moniker-end
+
 2. Développez **En ligne** > **Visual Studio Marketplace** > **Outils**, puis choisissez **Test**.
 
 ![Utilisation de frameworks de test tiers](media/createunittestfx.png)

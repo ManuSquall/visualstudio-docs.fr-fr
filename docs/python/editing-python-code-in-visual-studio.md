@@ -1,7 +1,7 @@
 ---
 title: Modifier le code Python
 description: Pour Python, Visual Studio fournit des fonctionnalités riches et diverses telles que la navigation, des extraits de code et IntelliSense, ainsi que la mise en forme, le linting et la refactorisation.
-ms.date: 11/19/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3a18b743b4dd0f239399b7350e1a479acf7ef4c8
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 0c7091a55487f83c88323d68ae8075630d39d471
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155394"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58155522"
 ---
 # <a name="edit-python-code"></a>Modifier le code Python
 
@@ -109,10 +109,20 @@ L’utilisation de la commande **Exécuter Mypy** sur ce code génère l’erreu
 
 ![Exemple de résultat de la validation des affinages de type par mypy](media/code-editing-type-hints-validation-error.png)
 
+::: moniker range="vs-2017"
 > [!Tip]
-> Pour les versions de Python antérieures à la version 3.5, Visual Studio affiche également les affinages de type que vous fournissez par le biais de *fichiers stub* (*.pyi*). Vous pouvez utiliser des fichiers stub chaque fois que vous ne souhaitez pas inclure d’indicateurs de type directement dans votre code, ou que vous souhaitez créer des affinages de type pour une bibliothèque qui ne les utilise pas directement. Pour plus d’informations, consultez [Create Stubs for Python Modules](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) (Créer des stubs pour des modules Python) dans le wiki du projet mypy.
+> Pour les versions de Python antérieures à la version 3.5, Visual Studio affiche également les affinages de type que vous fournissez par le biais de *fichiers stub* Typeshed (*.pyi*). Vous pouvez utiliser des fichiers stub chaque fois que vous ne souhaitez pas inclure d’indicateurs de type directement dans votre code, ou que vous souhaitez créer des affinages de type pour une bibliothèque qui ne les utilise pas directement. Pour plus d’informations, consultez [Create Stubs for Python Modules](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) (Créer des stubs pour des modules Python) dans le wiki du projet mypy.
 >
 > Visual Studio ne prend pas en charge les affinages de type dans les commentaires.
+::: moniker-end
+::: moniker range=">=vs-2019"
+> [!Tip]
+> Pour les versions de Python antérieures à la version 3.5, Visual Studio affiche également les affinages de type que vous fournissez par le biais de *fichiers stub* Typeshed (*.pyi*). Vous pouvez utiliser des fichiers stub chaque fois que vous ne souhaitez pas inclure d’indicateurs de type directement dans votre code, ou que vous souhaitez créer des affinages de type pour une bibliothèque qui ne les utilise pas directement. Pour plus d’informations, consultez [Create Stubs for Python Modules](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) (Créer des stubs pour des modules Python) dans le wiki du projet mypy.
+>
+> Visual Studio inclut un ensemble de groupes de fichiers Typeshed pour Python 2 et 3, des téléchargements supplémentaires ne sont donc pas nécessaires. Toutefois, si vous souhaitez utiliser un autre ensemble de fichiers, vous pouvez spécifier le chemin d’accès dans les options **Outils** > **Options** > **Python**  >  **Serveur de langage**. Consultez [Options - Serveur de langage](python-support-options-and-settings-in-visual-studio.md#language-server-options).
+>
+> Visual Studio ne prend pas en charge les affinages de type dans les commentaires.
+::: moniker-end
 
 ### <a name="signature-help"></a>Assistance pour la signature
 

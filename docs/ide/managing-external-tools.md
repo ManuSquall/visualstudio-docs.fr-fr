@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e73a20cfd50d859cc050f540fa2d84cae874fc9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3562ed9ebf2d62ab002ac227486218c8c38ad337
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907800"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983791"
 ---
 # <a name="manage-external-tools"></a>Gérer les outils externes
 
@@ -24,13 +24,24 @@ Vous pouvez appeler des outils externes depuis Visual Studio en utilisant le men
 
 ## <a name="tools-available-on-the-tools-menu"></a>Outils disponibles dans le menu Outils
 
-Le menu **Outils** contient plusieurs commandes prédéfinies comme :
+Le menu **Outils** contient plusieurs commandes prédéfinies, notamment :
+
+::: moniker range="vs-2017"
 
 * **Extensions et mises à jour** pour [gérer les extensions Visual Studio](finding-and-using-visual-studio-extensions.md)
 * **Gestionnaire des extraits de code** pour [organiser les extraits de code](code-snippets.md)
-* **PreEmptive Protection - Dotfuscator** pour lancer [Dotfuscator Community Edition (CE)](dotfuscator/index.md) s’il est [installé](dotfuscator/install.md)
 * **Personnaliser** pour [personnaliser des menus et des barres d’outils](how-to-customize-menus-and-toolbars-in-visual-studio.md)
 * **Options** pour [définir différentes options de l’IDE Visual Studio et d’autres outils](reference/options-dialog-box-visual-studio.md)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+* **Gestionnaire des extraits de code** pour [organiser les extraits de code](code-snippets.md)
+* **Personnaliser** pour [personnaliser des menus et des barres d’outils](how-to-customize-menus-and-toolbars-in-visual-studio.md)
+* **Options** pour [définir différentes options de l’IDE Visual Studio et d’autres outils](reference/options-dialog-box-visual-studio.md)
+
+::: moniker-end
 
 ## <a name="add-new-tools-to-the-tools-menu"></a>Ajouter de nouveaux outils au menu Outils
 

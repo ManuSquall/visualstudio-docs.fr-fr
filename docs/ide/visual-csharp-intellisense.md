@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5d6bf678e40c999442d35caba53bcaabb8f9ba48
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ef4f8974f448ad9e2e81d4f1ba98aa02ed9da354
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936861"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194601"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -94,7 +94,7 @@ Vous pouvez installer une [extension IntelliCode](/visualstudio/intellicode/inte
 
 L’opération IntelliSense **Ajouter using** ajoute automatiquement la directive `using` obligatoire dans votre fichier de code. Avec cette fonctionnalité, vous pouvez conserver le focus dans le code que vous écrivez au lieu de devoir le déplacer vers une autre partie du code.
 
-Pour lancer l’opération **Ajouter using**, positionnez le curseur sur une référence de type qui ne peut pas être résolue. Par exemple, quand vous créez une application console et que vous ajoutez ensuite `XmlTextReader` dans le corps de la méthode `Main`, une ligne ondulée rouge s’affiche sous cette ligne de code pour signaler que la référence de type ne peut pas être résolue. Vous pouvez ensuite appeler l’opération **Ajouter using** via **Actions rapides**. **Actions rapides** est visible seulement quand vous placez le curseur sur le type indépendant.
+Pour lancer l’opération **Ajouter using**, positionnez le curseur sur une référence de type qui ne peut pas être résolue. Par exemple, quand vous créez une application console et que vous ajoutez ensuite `XmlReader` dans le corps de la méthode `Main`, une ligne ondulée rouge s’affiche sous cette ligne de code pour signaler que la référence de type ne peut pas être résolue. Vous pouvez ensuite appeler l’opération **Ajouter using** via **Actions rapides**. Les **Actions rapides** ne sont visibles que lorsque vous placez le curseur sur le type indépendant.
 
 ![Ajouter using, image développée de l’action rapide](../ide/media/addusing-quickaction.png)
 

@@ -6,20 +6,22 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 03/07/2019
+ms.date: 03/13/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
 ms.workload:
 - multiple
-ms.openlocfilehash: ddba89da33d06b740978fe2972863a2c3177496f
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: d5c5a21c83329d8c528421c2336755a5d0621be9
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567407"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194978"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numéros de builds et dates de publication de Visual Studio
+
+::: moniker range="vs-2017"
 
 ## <a name="visual-studio-2017"></a>Visual Studio 2017
 
@@ -27,6 +29,8 @@ Le tableau suivant répertorie les numéros de build et les dates de publication
 
 | **Version**| **Canal** | **Date de publication** | **Version de build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.9 | Édition | 12 mars 2019 | 15.9.28307.518 |
+| 15.0.21 | Édition | 12 mars 2019 | 15.0.26228.76 |
 | 15.9.8 | Édition | 5 mars 2019 | 15.9.28307.481 |
 | 15.9.7 | Édition | 12 février 2019 | 15.9.28307.423 |
 | 15.0.21 | Édition | 12 février 2019 | 15.0.26228.73 |
@@ -172,12 +176,21 @@ Le tableau suivant répertorie les numéros de build et les dates de publication
 | 15.1 préversion 1 | Preview | 7 mars 2017 | 15.0.26304.0 |
 | 15.0.0 | Édition | 7 mars 2017 | 15.0.26228.4 |
 
+> [!NOTE]
+> Pour plus d’informations sur les numéros de build et les dates de publication de la prochaine version de Visual Studio, consultez la page des [numéros de build et dates de publication de Visual Studio 2019](/visualstudio/install/visual-studio-build-numbers-and-release-dates?view=vs-2019).
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
 ## <a name="visual-studio-2019"></a>Visual Studio 2019
 
 Le tableau suivant liste les numéros de build et les dates de publication de Visual Studio 2019 à ce jour.
 
 | **Version**| **Canal** | **Date de publication** | **Version de build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.0 | Release Candidate 2 (RC.2) | 12 mars 2019 | 16.0.28711.60 |
+| 16.0.0 | Préversion 4.2 | 12 mars 2019 | 16.0.28711.60 |
 | 16.0.0 | Release Candidate 1 Svc1 (RC.1 Svc1) | 6 mars 2019 | 16.0.28705.295 |
 | 16.0.0 | Preview 4.1 Svc1 | 6 mars 2019 | 16.0.28705.295 |
 | 16.0.0 | Release Candidate 1 (RC.1) | 5 mars 2019 | 16.0.28701.123 |
@@ -191,11 +204,13 @@ Le tableau suivant liste les numéros de build et les dates de publication de Vi
 | 16.0.0 | Preview 1.1 | 10 décembre 2018 | 16.0.28408.50 |
 | 16.0.0 | Preview 1 | 4 décembre 2018 | 16.0.28329.73 |
 
+::: moniker-end
+
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Fréquence des versions de Visual Studio](/visualstudio/productinfo/release-rhythm)
-* [Guide de l’administrateur Visual Studio 2017](visual-studio-administrator-guide.md)
-* [Utiliser les paramètres de ligne de commande pour installer Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
+* [Fréquence des versions de Visual Studio](/visualstudio/productinfo/release-rhythm/)
+* [Guide de l’administrateur Visual Studio](visual-studio-administrator-guide.md)
+* [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Outils de détection et de gestion des instances de Visual Studio](tools-for-managing-visual-studio-instances.md)

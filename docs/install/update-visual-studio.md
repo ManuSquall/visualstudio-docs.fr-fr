@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0808708360db6aa35cb20ce42c75fea04f5131b
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.openlocfilehash: e58927f434b5ad5b8d8fe34c29d034cfc4dd57dc
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57737011"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983973"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Mettre à jour Visual Studio avec la version la plus récente
 
@@ -82,7 +82,7 @@ Vous pouvez rechercher une mise à jour et ensuite installer la mise à jour à 
 
 ### <a name="use-the-visual-studio-installer"></a>Utiliser le programme d’installation de Visual Studio
 
-Comme dans les versions antérieures de Visual Studio 2017, vous pouvez utiliser le programme d’installation de Visual Studio pour installer une mise à jour.
+Comme dans les versions antérieures de Visual Studio, vous pouvez utiliser Visual Studio Installer pour installer une mise à jour.
 
 1. Enregistrez votre travail.
 
@@ -150,14 +150,14 @@ Si vous choisissez d’ignorer une notification, Visual Studio cesse de l’affi
 
    Choisissez le bouton **Mettre à jour** pour installer les mises à jour.
 
-     ![Mettre à jour Visual Studio 2017 à l’aide du programme d’installation de Visual Studio](media/update-visual-studio.png "Mettre à jour Visual Studio 2017 à l’aide du programme d’installation de Visual Studio")
+     ![Mettre à jour Visual Studio 2017 à l’aide du programme d’installation de Visual Studio](media/update-visual-studio.png "Mettre à jour Visual Studio à l’aide de Visual Studio Installer")
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Modifier Visual Studio 2017](modify-visual-studio.md)
-* [Désinstaller Visual Studio 2017](uninstall-visual-studio.md)
+* [Modifier Visual Studio](modify-visual-studio.md)
+* [Désinstaller Visual Studio](uninstall-visual-studio.md)
 * [Mettre à jour Visual Studio pour Mac](/visualstudio/mac/update)
 
 ::: moniker-end

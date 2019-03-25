@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd95c248ecec057cfb602b7f2324d680f715ed68
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0a41b9286ba35351a0dea91d87a4852319a94e93
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946540"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983063"
 ---
 # <a name="options-page-debugging-node-properties"></a>Page Options, Débogage, propriétés de nœud
 Les tableaux suivants décrivent les pages (ou collections de propriétés) associées à la catégorie **Débogage**, `DTE.Properties("Debugging", <Property Page>)`, de la boîte de dialogue **Options**.
@@ -84,5 +84,5 @@ Les tableaux suivants décrivent les pages (ou collections de propriétés) asso
 - [Page Options, Propriétés du nœud Polices et couleurs](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
 - [Page Options, Propriétés du nœud Éditeur de texte](../../ide/reference/options-page-text-editor-node-properties.md)
 - [Général, Débogage, boîte de dialogue Options](../../debugger/general-debugging-options-dialog-box.md)
-- [Modifier & Continuer, Débogage, Boîte de dialogue Options](../../debugger/edit-and-continue.md?view=vs-2015)
+- [Modifier et continuer le débogage](../../debugger/edit-and-continue.md)
 - [Juste-à-temps, Débogage, boîte de dialogue Options](../../debugger/just-in-time-debugging-options-dialog-box.md)
