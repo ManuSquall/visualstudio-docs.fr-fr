@@ -7,14 +7,14 @@ ms.author: mblome
 manager: wpickett
 dev_langs:
 - CPP
-ms.openlocfilehash: 15877cbaed093eab2cf436ed5122c80b9e135800
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 7d888204de33ba870111be08ae91bb09d09416d4
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223349"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323696"
 ---
-# <a name="using-the-c-core-guidelines-checkers"></a>Utilisation des vérificateurs C++ Core Guidelines
+# <a name="use-the-c-core-guidelines-checkers"></a>Utiliser les vérificateurs de C++ Core Guidelines
 
 Les recommandations C++ Core Guidelines sont un ensemble portable d’instructions, des règles et des meilleures pratiques sur le codage en C++ créé par les concepteurs et les experts de C++. Visual Studio prend actuellement en charge un sous-ensemble de ces règles dans le cadre de ses outils d’analyse de code C++. Les vérificateurs d’indication core sont installés par défaut dans Visual Studio 2017 et Visual Studio 2019 et sont [disponible comme package NuGet pour Visual Studio 2015](#vs2015_corecheck).
 
@@ -80,7 +80,7 @@ Comme les nouvelles règles sont ajoutées pour le vérificateur de recommandati
 Rubriques de référence pour la plupart des règles sont sous [Visual Studio C++ Core vérifier référence](code-analysis-for-cpp-corecheck.md).
 
 À compter de Visual Studio 2017 version 15.3, les ensembles de règles pris en charge sont :
-- **Règles pour les pointeurs propriétaire** appliquer [vérifie de gestion des ressources liées à owner<T> à partir de C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Règles pour les pointeurs propriétaire** appliquer [vérifie de gestion des ressources liées à owner\<T > à partir de C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
 - **Règles constantes** appliquer [les vérifications liées const à partir de C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
 
@@ -153,7 +153,7 @@ Le compilateur Microsoft Visual C++ a une prise en charge limitée pour le GSL s
 }
 ```
 
-## <a name="suppressing-analysis-by-using-command-line-options"></a>Suppression d’analyse à l’aide des options de ligne de commande
+## <a name="suppress-analysis-by-using-command-line-options"></a>Supprimer l’analyse à l’aide des options de ligne de commande
 
 Au lieu de #pragmas, vous pouvez utiliser les options de ligne de commande dans la page de propriétés du fichier à supprimer des avertissements pour un projet ou un seul fichier. Par exemple, pour désactiver l’avertissement 26400 pour un fichier :
 
@@ -165,12 +165,12 @@ Au lieu de #pragmas, vous pouvez utiliser les options de ligne de commande dans 
 
 Vous pouvez utiliser l’option de ligne de commande pour désactiver temporairement toutes les analyses de code pour un fichier en spécifiant `/analyze-`. Cela génère l’avertissement *D9025 substitution '/analyze' avec ' / analyze-'*, ce qui vous rappelle pour réactiver l’analyse du code plus tard.
 
-## <a name="corecheck_per_file"></a> L’activation de l’outil de vérification C++ Core instructions sur les fichiers de projet spécifique
+## <a name="corecheck_per_file"></a> Activer le vérificateur de recommandations C++ Core sur les fichiers de projet spécifique
 
 Il peut parfois être utile de l’analyse du code concentré et toujours utiliser l’IDE Visual Studio. L’exemple de scénario suivant peut être utilisé pour les grands projets pour gagner du temps de génération et pour le rendre plus facile pour filtrer les résultats :
 
 1. Dans l’interface de commande définir le `esp.extension` et `esp.annotationbuildlevel` variables d’environnement.
-2. Pour hériter de ces variables, démarrez Visual Studio à partir de l’interface de commande.
+2. Pour hériter de ces variables, ouvrez Visual Studio à partir de l’interface de commande.
 3. Chargez votre projet et ouvrez ses propriétés.
 4. Activer l’analyse du code, choisissez les ensembles de règles approprié, mais n’activez pas les extensions d’analyse de code.
 5. Accédez au fichier que vous souhaitez analyser avec le vérificateur de recommandations C++ Core et ouvrez ses propriétés.
