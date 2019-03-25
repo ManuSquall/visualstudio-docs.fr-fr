@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07666efb673702e20c3c5c4a9b279de729e4c838
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cad2d1a83ed60cde4f3a410f8183e5ee6074321c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605403"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983908"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Publier une application sur IIS en important des paramètres de publication dans Visual Studio
 
 Vous pouvez utiliser l’outil **Publier** pour importer des paramètres de publication, puis déployer votre application. Dans cet article, nous utilisons des paramètres de publication pour IIS, mais vous pouvez utiliser une procédure similaire pour importer des paramètres de publication [Azure App Service](../deployment/tutorial-import-publish-settings-azure.md). Dans certains scénarios, l’utilisation d’un profil de paramètres de publication peut être plus rapide que la configuration manuelle du déploiement sur IIS pour chaque installation de Visual Studio.
 
-Ces étapes s’appliquent aux applications ASP.NET, ASP.NET Core et .NET Core dans Visual Studio. Les étapes correspondent à Visual Studio 2017 version 15.6.
+Ces étapes s’appliquent aux applications ASP.NET, ASP.NET Core et .NET Core dans Visual Studio.
 
 Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
@@ -38,9 +38,19 @@ Un fichier de paramètres de publication (*\*.publishsettings*) est différent d
 
 ## <a name="prerequisites"></a>Prérequis
 
-* Sur votre ordinateur de développement, Visual Studio 2017 et la charge de travail **Développement web et ASP.NET** doivent être installés.
+::: moniker range=">=vs-2019"
 
-    Si vous n’avez pas encore installé Visual Studio, accédez à la page  [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)  pour l’installer gratuitement.
+* Visual Studio 2019 et la charge de travail **Développement web et ASP.NET** doivent être installés.
+
+    Si vous n’avez pas encore installé Visual Studio, accédez à la page  [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/)  pour l’installer gratuitement.
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+* Visual Studio 2017 et la charge de travail **Développement web et ASP.NET** doivent être installés.
+
+    Si vous n’avez pas encore installé Visual Studio, accédez à la page  [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/)  pour l’installer gratuitement.
+::: moniker-end
 
 * Sur votre serveur, vous devez exécuter Windows Server 2012 ou Windows Server 2016, et le [rôle serveur web IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) doit être correctement installé (nécessaire pour générer le fichier de paramètres de publication (*\*.publishsettings*)). ASP.NET 4.5 ou ASP.NET Core doit également être installé sur le serveur. Pour configurer ASP.NET 4.5, consultez [IIS 8.0 avec ASP.NET 3.5 et ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). Pour configurer ASP.NET Core, consultez [Héberger ASP.NET Core sur Windows avec IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
 

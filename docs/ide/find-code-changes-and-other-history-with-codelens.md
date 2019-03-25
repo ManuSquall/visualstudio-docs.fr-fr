@@ -9,19 +9,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d495f4f64e56981637680f8333936647fe70c68
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: af930f983ad328dac16e5eec1fb0cf2650f7681a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941047"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867853"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Rechercher les modifications de code et d'autres historiques avec CodeLens
 
 CodeLens vous permet de rester concentré sur votre travail pendant que vous cherchez ce qui s’est produit dans votre code, sans quitter l’éditeur. Vous pouvez trouver les références à un morceau de code, les changements dans votre code, les bogues liés, les éléments de travail, les revues du code et les tests unitaires.
 
+::: moniker range="vs-2017"
+
 > [!NOTE]
 > CodeLens est disponible uniquement dans les éditions Visual Studio Enterprise et Visual Studio Professional. Il n'est pas disponible dans l'édition Visual Studio Community.
+
+::: moniker-end
 
 Recherchez où et comment les différentes parties de votre code sont utilisées dans votre solution :
 
@@ -54,7 +58,7 @@ Vous pouvez rechercher des références dans du code C# ou Visual Basic.
 
 Pour visualiser les relations entre le code et ses références, [créez une carte de code](../modeling/map-dependencies-across-your-solutions.md). Dans le menu contextuel de la carte de code, sélectionnez **Afficher toutes les références**.
 
-![CodeLens - Références sur la carte de code](../ide/media/codelensmappedreferences.png)
+![CodeLens - Références sur le code de mappage](../ide/media/codelensmappedreferences.png)
 
 ## <a name="a-namefind-code-historyfind-changes-in-your-code"></a><a name="find-code-history"/>Rechercher des modifications dans votre code
 
@@ -62,7 +66,7 @@ Examinez l’historique de votre code pour savoir ce qui s’y est produit. Vous
 
 Vous avez besoin de :
 
-- Visual Studio Enterprise ou Visual Studio Professional
+- Visual Studio 2019 (ou Visual Studio 2017 édition Enterprise ou Professional)
 
 - Team Foundation Server 2013 ou ultérieur, Azure DevOps Services ou Git
 
@@ -182,7 +186,7 @@ Recherchez des éléments de travail liés en sélectionnant l’indicateur **É
 
 Recherchez des revues du code liées en sélectionnant l’indicateur **Revues**. Pour utiliser le clavier, maintenez enfoncée la touche **Alt**, puis appuyez sur **Gauche** ou sur **Droite** pour parcourir les options d’indicateur.
 
-![CodeLens - Afficher les demandes de revue du code](../ide/media/codelens-code-reviews.png)
+![CodeLens - Afficher les demandes de révision du code](../ide/media/codelens-code-reviews.png)
 
 ## <a name="linked-bugs"></a>Bogues liés
 
@@ -210,7 +214,7 @@ Vous pouvez découvrir les tests unitaires qui existent pour votre code C# ou Vi
 
 3. Passez en revue les tests du code en appuyant sur **Alt**+**3**.
 
-     ![CodeLens - Choisir l’indicateur d’état de test dans l’éditeur de code](../ide/media/codelens-choose-test-indicator.png)
+     ![CodeLens - Choisir l'indicateur d'état de test dans l'éditeur de code](../ide/media/codelens-choose-test-indicator.png)
 
 4. Si une icône d'avertissement s'affiche ![Icône Avertissement](../ide/media/codelenstestwarningicon.png), cela signifie que les tests n’ont pas encore été exécutés : exécutez-les donc.
 

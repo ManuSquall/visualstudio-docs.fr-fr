@@ -1,7 +1,7 @@
 ---
 title: Options et paramètres pour Python
 description: Document de référence pour les différents paramètres dans Visual Studio concernant des projets et du code Python.
-ms.date: 02/11/2019
+ms.date: 03/13/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Python_Tools
@@ -17,18 +17,23 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 04f696325da6f9f5b08f37b3d0d0f90498aacd85
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a25c7aa9404cf0a10b6c55313016c30577eef504
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702016"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151165"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Options pour Python dans Visual Studio
 
-Pour afficher les options relatives à Python, utilisez la commande de menu **Outils** > **Options**, vérifiez que la case **Afficher tous les paramètres** est cochée, puis accédez à **Python Tools** :
+Pour afficher les options relatives à Python, utilisez la commande de menu **Outils** > **Options**, vérifiez que la case **Afficher tous les paramètres** est cochée, puis accédez à **Python** :
 
+::: moniker range="vs-2017"
 ![Boîte de dialogue Options pour Python, onglet Général](media/options-general.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Boîte de dialogue Options pour Python, onglet Général](media/options-general-2019.png)
+::: moniker-end
 
 Il existe également des options supplémentaires spécifiques à Python sous l’onglet **Éditeur de texte** > **Python** > **Avancé**, ainsi que sous l’onglet **Environnement** > **Polices et couleurs** dans le groupe **Éditeur de texte**.
 
@@ -43,16 +48,36 @@ Il existe également des options supplémentaires spécifiques à Python sous l�
 | --- | --- | --- |
 | **Afficher la fenêtre Sortie pendant la création d’environnements virtuels**| Activé | Désactivez-la pour empêcher la fenêtre **Sortie** de s’afficher. |
 | **Afficher la fenêtre Sortie pendant l’installation ou la suppression des packages** | Activé | Désactivez-la pour empêcher la fenêtre **Sortie** de s’afficher. |
-| **Toujours exécuter pip comme administrateur** | Off | Élève toujours les privilèges des opérations `pip install` pour tous les environnements. Au moment de l’installation des packages, Visual Studio demande des privilèges d’administrateur, si l’environnement se trouve dans une zone protégée du système de fichiers, par exemple *c:\Program Files*. Dans cette invite, vous pouvez choisir de toujours élever les privilèges de `pip install` pour cet environnement uniquement. Consultez [Onglet packages](python-environments-window-tab-reference.md#packages-tab). |
+| **Afficher la barre de notification pour créer des environnements** | Activé | *Visual Studio 2019 uniquement.* Lorsque cette option est définie et que l’utilisateur ouvre un projet qui contient un fichier *requirements.txt* ou *environment.yml*, Visual Studio affiche une barre d’informations avec des suggestions pour créer un environnement virtuel ou un environnement conda, respectivement, au lieu d’utiliser l’environnement global par défaut. |
+| **Afficher la barre de notification pour installer des packages** | Activé | *Visual Studio 2019 uniquement.* Lorsque cette option est définie et que l’utilisateur ouvre un projet qui contient un fichier *requirements.txt* (et n’utilise pas l’environnement global par défaut), Visual Studio compare ces exigences avec les packages installés dans l’environnement actuel. Si des packages sont manquants, Visual Studio affiche une invite pour installer ces dépendances. |
+| **Toujours exécuter des Gestionnaires de package en tant qu’administrateur** | Off | Élève toujours les privilèges de `pip install` et d’opérations de gestionnaire de package similaires pour tous les environnements. Au moment de l’installation des packages, Visual Studio demande des privilèges d’administrateur, si l’environnement se trouve dans une zone protégée du système de fichiers, par exemple *c:\Program Files*. Dans cette invite, vous pouvez choisir de toujours élever les privilèges de la commande d’installation pour cet environnement uniquement. Consultez [Onglet packages](python-environments-window-tab-reference.md#packages-tab). |
 | **Générer automatiquement la base de données de saisie semi-automatique à la première utilisation** | Activé | *S’applique à Visual Studio 2017 version 15.5, versions antérieures et versions ultérieures lorsque vous utilisez une base de données IntelliSense.* Donne la priorité à l’achèvement de la base de données pour une bibliothèque quand vous écrivez du code qui l’utilise. Pour plus d’informations, voir [Onglet IntelliSense](python-environments-window-tab-reference.md#intellisense-tab). |
 | **Ignorer les variables PYTHONPATH à l’échelle du système** | Activé | PYTHONPATH est ignoré par défaut, car Visual Studio fournit un moyen plus direct de spécifier des chemins de recherche dans les projets et environnements. Consultez la page [Chemins de recherche](search-paths.md) pour plus d’informations. |
 | **Mettre à jour les chemins de recherche lors de l’ajout de fichiers liés** | Activé | Quand cette option est définie, l’ajout d’un [fichier lié](managing-python-projects-in-visual-studio.md#linked-files) à un projet met à jour les [Chemins de recherche](search-paths.md) afin qu’IntelliSense puisse inclure le contenu du dossier du fichier lié dans sa base de données de saisie semi-automatique. Désactivez cette option pour exclure ce contenu de la base de données de saisie semi-automatique. |
 | **Avertir quand le module importé est introuvable** | Activé | Désactivez cette option pour supprimer les avertissements quand vous savez qu’un module importé n’est actuellement pas disponible, mais n’affecte pas par ailleurs le fonctionnement du code. |
 | **Signaler une indentation incohérente comme** | **Avertissements** | Comme l’interpréteur Python dépend fortement d’une mise en retrait appropriée pour déterminer la portée, Visual Studio émet par défaut des avertissements quand il détecte des mises en retrait incohérentes pouvant indiquer des erreurs de codage. Option définie sur **Erreurs** pour être encore plus stricte, ce qui entraîne la fermeture du programme dans ces cas. Pour désactiver complètement ce comportement, sélectionnez **Ne pas le faire**. |
-| **Rechercher des enquêtes/actualités** | **Une fois par semaine** | Définit la fréquence à laquelle vous permettez à Visual Studio d’ouvrir une fenêtre contenant une page web avec des enquêtes et des actualités liées à Python, le cas échéant. Les options sont **Jamais**, **Une fois par jour**, **Une fois par semaine** et **Une fois par mois**. |
+| **Rechercher des enquêtes/actualités** | **Une fois par semaine** | *Visual Studio 2017 et versions antérieures.* Définit la fréquence à laquelle vous permettez à Visual Studio d’ouvrir une fenêtre contenant une page web avec des enquêtes et des actualités liées à Python, le cas échéant. Les options sont **Jamais**, **Une fois par jour**, **Une fois par semaine** et **Une fois par mois**. |
 | Bouton **Réinitialiser toutes les boîtes de dialogue masquées définitivement** | N/A | Différentes boîtes de dialogue fournissent des options telles que **Ne plus afficher ce message**. Utilisez ce bouton pour effacer ces options et entraîner le retour des boîtes de dialogue. |
 
+::: moniker range="vs-2017"
 ![Boîte de dialogue Options pour Python, onglet Général](media/options-general.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Boîte de dialogue Options pour Python, onglet Général](media/options-general-2019.png)
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+## <a name="conda-options"></a>Options de Conda
+
+(Onglet **Outils** > **Options** > **Python** > **Conda**.)
+
+| Option | Par défaut | Description |
+| --- | --- | --- |
+| **Chemin de l’exécutable Conda** | (vide) | Spécifie un chemin d’accès exact à l’exécutable *conda.exe* au lieu de compter sur l’installation Miniconda par défaut qui est fournie avec la charge de travail Python. Si un autre chemin d’accès est indiqué ici, il est prioritaire sur l’installation par défaut et les autres exécutables conda.exe spécifiés dans le Registre. Vous pouvez modifier ce paramètre si vous installez manuellement une version plus récente d’Anaconda ou de Miniconda, ou si vous souhaitez utiliser une distribution 32 bits au lieu de la distribution 64 bits par défaut. |
+
+![Boîte de dialogue Options de Python, onglet Serveur de langage](media/options-conda.png)
+
+::: moniker-end
 
 ## <a name="debugging-options"></a>Options de débogage
 
@@ -65,8 +90,15 @@ Il existe également des options supplémentaires spécifiques à Python sous l�
 | **Sortie du programme Tee dans la fenêtre Sortie du débogage** | Activé | Affiche la sortie du programme dans une fenêtre de console distincte et la fenêtre **Sortie** de Visual Studio. Désactivez cette option pour afficher la sortie uniquement dans la fenêtre de console distincte. |
 | **Arrêter en cas d’exception SystemExit avec le code de sortie zéro** | Off | Si cette option est définie, arrête le débogueur sur cette exception. Quand elle est désactivée, le débogueur se ferme sans s’arrêter. |
 | **Activer le débogage de la bibliothèque Python standard** | Off | Permet d’effectuer un pas à pas détaillé dans le code source de la bibliothèque standard pendant le débogage, mais augmente le temps nécessaire au démarrage du débogueur.|
+| **Montrer la valeur de retour de la fonction** | Activé | *Visual Studio 2019 uniquement.* Affiche les valeurs renvoyées de fonction dans la fenêtre **Variables locales** lors du survol d’un appel de fonction dans le débogueur (F10) |
+| **Utiliser le débogueur hérité** | Off | *Visual Studio 2019 uniquement.* Indique à Visual Studio d’utiliser le débogueur hérité par défaut. Pour plus d’informations, consultez [Débogage - Utiliser le débogueur hérité](debugging-python-in-visual-studio.md#use-the-legacy-debugger). |
 
+::: moniker range="vs-2017"
 ![Boîte de dialogue Options pour Python, onglet Débogage](media/options-debugging.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Boîte de dialogue Options pour Python, onglet Débogage](media/options-debugging-2019.png)
+::: moniker-end
 
 ## <a name="diagnostics-options"></a>Options des diagnostics
 
@@ -92,6 +124,20 @@ Il existe également des options supplémentaires spécifiques à Python sous l�
 | **Masquer les suggestions d’analyse statique** | Off | Quand cette option est définie, n’affiche que les suggestions obtenues en évaluant l’expression. Si cette option est associée à la valeur **Ne jamais évaluer les expressions** de l’option **Mode de saisie semi-automatique**, aucune saisie semi-automatique utile ne s’affiche dans la fenêtre **Interactive**. |
 
 ![Boîte de dialogue Options pour Python, onglet Fenêtres interactives](media/options-interactive-windows.png)
+
+::: moniker range=">=vs-2019"
+## <a name="language-server-options"></a>Options Serveur de langage
+
+(Onglet **Outils** > **Options** > **Python** > **Serveur de langage**.)
+
+| Option | Par défaut | Description |
+| --- | --- | --- |
+| **Désactiver les complétions de Typeshed** | Off | Visual Studio IntelliSense utilise généralement une version groupée de Typeshed (un ensemble de fichiers *.pyi*) pour rechercher des indicateurs de type de bibliothèque standard et de bibliothèques tierces pour Python 2 et Python 3. La définition de cette option désactive le comportement TypeShed groupé. |
+| **Chemin Typeshed personnalisé** | (vide) | Si cette option est définie, Visual Studio utilise les fichiers Typeshed de ce chemin au lieu de sa version groupée. Ignorez si l’option **Désactiver les complétions de Typeshed** est définie. |
+
+![Boîte de dialogue Options de Python, onglet Serveur de langage](media/options-language-server.png)
+
+::: moniker-end
 
 ## <a name="advanced-python-editor-options"></a>Options avancées de l’éditeur Python
 

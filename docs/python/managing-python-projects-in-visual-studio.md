@@ -1,7 +1,7 @@
 ---
 title: Gérer des projets d’application Python
 description: Les projets dans Visual Studio gèrent les dépendances entre les fichiers et la complexité des relations dans une application.
-ms.date: 01/28/2019
+ms.date: 03/18/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fc8e6b87569d6c383d0629bae8c582537a3bc948
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: fb9682f46913aec0bfd7d91d5cd8d535410470bb
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155862"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194339"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projets Python dans Visual Studio
 
@@ -29,8 +29,13 @@ Visual Studio fournit divers modèles de projet Python pour configurer rapidemen
 
 <a name="lightweight-usage-project-free"></a>
 
+::: moniker range=">=vs-2019"
 > [!Tip]
-> Même sans projet, Visual Studio fonctionne bien avec le code Python. Par exemple, vous pouvez ouvrir un fichier Python seul et profiter de la saisie semi-automatique, d’IntelliSense et du débogage (en cliquant avec le bouton droit dans l’éditeur et en sélectionnant **Démarrer avec débogage**). Étant donné que ce code utilise toujours l’environnement global par défaut, vous pouvez toutefois rencontrer des saisies semi-automatiques incorrectes ou des erreurs si le code est destiné à un autre environnement. En outre, Visual Studio analyse tous les fichiers et packages dans le dossier à partir duquel le fichier unique est ouvert, ce qui peut consommer beaucoup de temps processeur.
+> Visual Studio 2019 prend en charge l’ouverture d’un dossier contenant le code Python et l’exécution de ce code sans créer de fichiers projet et solution Visual Studio. Pour plus d’informations, consultez [Démarrage rapide : Ouvrez et exécutez du code Python dans un dossier ](quickstart-05-python-visual-studio-open-folder.md). L’utilisation d’un fichier projet présente toutefois des avantages, comme expliqué dans cette section.
+::: moniker-end
+
+> [!Tip]
+> Sans projet, toutes les versions de Visual Studio fonctionnent bien avec le code Python. Par exemple, vous pouvez ouvrir un fichier Python seul et profiter de la saisie semi-automatique, d’IntelliSense et du débogage (en cliquant avec le bouton droit dans l’éditeur et en sélectionnant **Démarrer avec débogage**). Étant donné que ce code utilise toujours l’environnement global par défaut, vous pouvez toutefois rencontrer des saisies semi-automatiques incorrectes ou des erreurs si le code est destiné à un autre environnement. En outre, Visual Studio analyse tous les fichiers et packages dans le dossier à partir duquel le fichier unique est ouvert, ce qui peut consommer beaucoup de temps processeur.
 >
 > Il est très simple de créer un projet Visual Studio à partir du code existant, comme décrit dans la section [Créer un projet à partir de fichiers existants](#create-project-from-existing-files).
 
@@ -42,14 +47,23 @@ Visual Studio fournit divers modèles de projet Python pour configurer rapidemen
 
 Quand vous développez votre application, vous devez généralement ajouter de nouveaux fichiers de différents types au projet. Vous pouvez les ajouter en cliquant avec le bouton droit sur le projet et en sélectionnant **Ajouter** > **Élément existant** pour rechercher un fichier à ajouter, ou en sélectionnant **Ajouter** > **Nouvel élément**, qui affiche une boîte de dialogue avec un large éventail de modèles d’élément. Comme décrit dans la référence [Modèle d’élément](python-item-templates.md), les options incluent des fichiers Python vides, une classe Python, un test unitaire et divers fichiers associés aux applications web. Vous pouvez explorer ces options avec un projet de test pour savoir ce qui est disponible dans votre version de Visual Studio.
 
-Chaque projet Python comprend un fichier de démarrage attribué, indiqué en gras dans **l’Explorateur de solutions**. Le fichier de démarrage est le fichier exécuté quand vous démarrez le débogage (**F5** ou **Déboguer** > **Démarrer le débogage**), ou quand vous exécutez le projet dans la fenêtre **Interactive** (**Maj**+**Alt**+**F5** ou **Déboguer** > **Exécuter le projet en mode interactif Python**). Pour changer de fichier de démarrage, cliquez sur le nouveau fichier et sélectionnez **Définir comme fichier de démarrage**.
+Chaque projet Python comprend un fichier de démarrage attribué, indiqué en gras dans **l’Explorateur de solutions**. Le fichier de démarrage est le fichier exécuté quand vous démarrez le débogage (**F5** ou **Déboguer** > **Démarrer le débogage**), ou quand vous exécutez le projet dans la fenêtre **Interactive** (**Maj**+**Alt**+**F5** ou **Déboguer** > **Exécuter le projet en mode interactif Python**). Pour le modifier, cliquez avec le bouton droit sur le nouveau fichier et sélectionnez **Définir comme élément de démarrage** (ou **Définir comme fichier de démarrage** dans les versions antérieures de Visual Studio).
 
 > [!Tip]
-> Si vous supprimez le fichier de démarrage sélectionné à partir d’un projet et que vous n’en sélectionnez pas un autre, Visual Studio ne sait pas avec quel fichier Python démarrer lorsque vous essayez d’exécuter le projet. Dans ce cas, Visual Studio 2017 versions 15.6 et ultérieures présente une erreur ; les versions antérieures ouvrent une fenêtre de sortie avec l’interpréteur Python en cours d’exécution, ou la fenêtre de sortie s’affiche mais disparaît presque immédiatement. Si vous rencontrez l’un de ces comportements, vérifiez que vous avez un fichier de démarrage assigné.
+> Si vous supprimez le fichier de démarrage sélectionné d’un projet et que vous n’en sélectionnez pas un autre, Visual Studio ne sait pas avec quel fichier Python démarrer lorsque vous essayez d’exécuter le projet. Dans ce cas, Visual Studio 2017 versions 15.6 et ultérieures présente une erreur ; les versions antérieures ouvrent une fenêtre de sortie avec l’interpréteur Python en cours d’exécution, ou la fenêtre de sortie s’affiche mais disparaît presque immédiatement. Si vous rencontrez l’un de ces comportements, vérifiez que vous avez un fichier de démarrage assigné.
 >
 > Si vous voulez maintenir la fenêtre de sortie ouverte pour une raison quelconque, cliquez avec le bouton droit sur le projet, sélectionnez **Propriétés**, sélectionnez l’onglet **Déboguer**, puis ajoutez `-i` au champ **Arguments de l’interpréteur**. Avec cet argument, l’interpréteur passe en mode interactif à la fin d’un programme, maintenant ainsi la fenêtre ouverte jusqu’à ce que vous entriez **Ctrl**+**Z** > **Entrée** pour quitter.
 
-Un nouveau projet est toujours associé à l’environnement Python global par défaut. Pour associer le projet à un autre environnement (y compris les environnements virtuels), cliquez avec le bouton droit sur le nœud **Environnements Python** du projet, sélectionnez **Add/Remove Python Environments** (Ajouter/supprimer des environnement Python) et sélectionnez ceux que vous souhaitez. Pour modifier l’environnement actif, cliquez avec le bouton droit sur l’environnement souhaité et sélectionnez **Activer l’environnement** comme indiqué ci-dessous. Pour plus d’informations, consultez [Sélectionner un environnement pour un projet](selecting-a-python-environment-for-a-project.md).
+::: moniker range="vs-2017"
+Un nouveau projet est toujours associé à l’environnement Python global par défaut. Pour associer le projet à un autre environnement (y compris les environnements virtuels), cliquez avec le bouton droit sur le nœud **Environnements Python** du projet, sélectionnez **Add/Remove Python Environments** (Ajouter/supprimer des environnement Python) et sélectionnez ceux que vous souhaitez.
+::: moniker-end
+::: moniker range=">=vs-2019"
+Un nouveau projet est toujours associé à l’environnement Python global par défaut. Pour associer le projet à un autre environnement (y compris les environnements virtuels), cliquez avec le bouton droit sur le nœud **Environnements Python** du projet, sélectionnez **Ajouter un environnement...** et sélectionnez ceux que vous souhaitez. Vous pouvez également utiliser le contrôle de liste déroulante des environnements de la barre d’outils pour en sélectionner ou en ajouter un autre pour le projet.
+
+![Ajouter une commande d’environnement dans la barre d’outils Python](media/environments/environments-toolbar-2019.png)
+::: moniker-end
+
+Pour modifier l’environnement actif, cliquez avec le bouton droit sur l’environnement souhaité dans l’**Explorateur de solutions** et sélectionnez **Activer l’environnement** comme indiqué ci-dessous. Pour plus d’informations, consultez [Sélectionner un environnement pour un projet](selecting-a-python-environment-for-a-project.md).
 
 ![Activation d’un environnement pour un projet Python](media/projects-activate-environment.png)
 
