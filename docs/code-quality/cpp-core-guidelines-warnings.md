@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 39bdcc15bece0fff3547738bbdcaf898496379ad
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: f57fc0ff69e732e105ce6e9f3202f356633ff176
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872432"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323449"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Utilisation des vérificateurs C++ Core Guidelines
 
@@ -84,7 +84,7 @@ Les recommandations C++ Core Guidelines sont là pour vous aider à écrire du c
 
 Comme les nouvelles règles sont ajoutées pour le vérificateur de recommandations C++ Core, le nombre d’avertissements qui se sont produites pour code préexistant peut augmenter. Vous pouvez utiliser des ensembles de règles prédéfinies pour filtrer les types de règles à activer. À compter de Visual Studio 2017 version 15.3, les ensembles de règles pris en charge sont :
 
-  - **Règles pour les pointeurs propriétaire** appliquer [vérifie de gestion des ressources liées à owner<T> à partir de C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+  - **Règles pour les pointeurs propriétaire** appliquer [vérifie de gestion des ressources liées à owner\<T > à partir de C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
   - **Règles constantes** appliquer [les vérifications liées const à partir de C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
 
@@ -162,7 +162,7 @@ Vous pouvez utiliser l’option de ligne de commande pour désactiver temporaire
 Il peut parfois être utile de concentrée l’analyse du code et de tirer parti de l’IDE Visual Studio. Voici un exemple de scénario qui peut être utilisé pour les grands projets pour gagner du temps de génération et pour le rendre plus facile pour filtrer les résultats.
 
 1. Dans l’interface de commande définir le `esp.extension` et `esp.annotationbuildlevel` variables d’environnement.
-2. Démarrez Visual Studio à partir de l’interface de commande pour hériter de ces variables.
+2. Ouvrez Visual Studio à partir de l’interface de commande pour hériter de ces variables.
 3. Chargez votre projet et ouvrez ses propriétés.
 4. Activer l’analyse du code, choisissez les ensembles de règles approprié, mais n’activez pas les extensions d’analyse de code.
 5. Accédez au fichier que vous souhaitez analyser avec le vérificateur de recommandations C++ Core et ouvrez ses propriétés.
