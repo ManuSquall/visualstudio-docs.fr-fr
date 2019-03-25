@@ -13,27 +13,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2684ed1389556dfb96bf8eeb113f82336eb8c6d0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5a2c05d029e2a46aba736288fd794af12206c80e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605183"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983869"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Ensemble d'outils MSBuild (ToolsVersion)
+
 MSBuild utilise un ensemble d’outils de tâches, de cibles et d’outils pour générer une application. Un ensemble d’outils MSBuild comprend généralement un fichier *microsoft.common.tasks*, un fichier *microsoft.common.targets* et des compilateurs comme *csc.exe* et *vbc.exe*. La plupart des ensembles d'outils peuvent être utilisés pour compiler des applications pour plusieurs versions de .NET Framework et pour plusieurs plateformes système. Cependant, l'ensemble d'outils MSBuild 2.0 ne peut être utilisé que pour cibler .NET Framework 2.0.
 
 ## <a name="toolsversion-attribute"></a>Attribut ToolsVersion
+::: moniker range=">=vs-2019"
+ Spécifiez l’ensemble d’outils dans l’attribut `ToolsVersion` de l’élément [Project](../msbuild/project-element-msbuild.md) du fichier projet. L’exemple suivant spécifie que le projet doit être généré à l’aide de l’ensemble d’outils MSBuild « actuel ».
+
+```xml
+<Project ToolsVersion="Current" ... </Project>
+```
+
+::: moniker-end
+
+::: moniker range="vs-2017"
  Spécifiez l’ensemble d’outils dans l’attribut `ToolsVersion` de l’élément [Project](../msbuild/project-element-msbuild.md) du fichier projet. L’exemple suivant spécifie que le projet doit être généré à l’aide de l’ensemble d’outils MSBuild 15.0.
 
 ```xml
 <Project ToolsVersion="15.0" ... </Project>
 ```
 
+::: moniker-end
+
 > [!NOTE]
 > Certains types de projets utilisent l’attribut `sdk` à la place de `ToolsVersion`. Pour plus d’informations, voir [Packages, métadonnées et frameworks](/dotnet/core/packages) et [Ajouts au format csproj pour .NET Core](/dotnet/core/tools/csproj).
 
 ## <a name="how-the-toolsversion-attribute-works"></a>Fonctionnement de l’attribut ToolsVersion
+
  Quand vous créez un projet dans Visual Studio ou que vous mettez à niveau un projet existant, un attribut nommé `ToolsVersion` est automatiquement inclus dans le fichier projet, et sa valeur correspond à la version de MSBuild incluse dans l’édition de Visual Studio. Pour plus d’informations, voir [Cibler une version spécifique de .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
 
  Quand une valeur pour `ToolsVersion` est définie dans un fichier projet, MSBuild utilise cette valeur pour déterminer les valeurs des propriétés de l'ensemble d'outils qui sont disponibles pour le projet. Une des propriétés de l'ensemble d'outils est `$(MSBuildToolsPath)`, qui spécifie le chemin d'accès aux outils .NET Framework. Cette propriété de l'ensemble d'outils (ou `$(MSBuildBinPath)`) est la seule propriété obligatoire.
@@ -57,6 +71,7 @@ MSBuild utilise un ensemble d’outils de tâches, de cibles et d’outils pour 
  Les sous-ensembles d'outils, qui sont décrits plus loin dans cette rubrique, permettent à MSBuild de passer automatiquement à l'ensemble d'outils à utiliser en fonction du contexte dans lequel la génération est effectuée. Par exemple, MSBuild utilise un ensemble d'outils plus récent quand il est exécuté dans Visual Studio 2012 que quand il est exécuté avec Visual Studio 2010, sans que vous ayez à changer explicitement le fichier projet.
 
 ## <a name="toolset-implementation"></a>Implémentation d’un ensemble d’outils
+
  Implémentez un ensemble d'outils en sélectionnant les chemins d'accès aux différents outils, cibles et tâches qui constituent l'ensemble d'outils. Les outils de l'ensemble d'outils défini par MSBuild proviennent des sources suivantes :
 
 - Le dossier .NET Framework
@@ -94,6 +109,7 @@ Vous pouvez aussi déterminer l'ensemble d'outils par programmation en appelant 
 -   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> retourne le chemin d'accès des outils de génération.
 
 ### <a name="sub-toolsets"></a>Sous-ensembles d'outils
+
  Dans les versions de MSBuild antérieures à 15.0, MSBuild utilise une clé de Registre pour spécifier le chemin d’accès des outils de base. Si la clé a une sous-clé, MSBuild l'utilise pour spécifier le chemin d'accès d'un sous-ensemble d'outils qui contient des outils supplémentaires. Dans ce cas, l'ensemble d'outils est défini en combinant les définitions des propriétés qui sont définies dans les deux clés.
 
 > [!NOTE]
@@ -116,5 +132,6 @@ MSBuild fournit des surcharges pour les méthodes `ToolLocationHelper`, qui ajou
 Les sous-ensembles d'outils ont été introduits dans .NET Framework 4.5.
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Configurations standard et personnalisées des ensembles d’outils](../msbuild/standard-and-custom-toolset-configurations.md)
 - [Multiciblage](../msbuild/msbuild-multitargeting-overview.md)

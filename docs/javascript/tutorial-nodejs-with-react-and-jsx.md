@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 9259b5a813dc09389c57288e13eafd5a3adb0064
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 58d8cba033fd3e43b8e54afdc7651a45df17a59a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55770568"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069981"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutoriel : Créer une application Node.js et React dans Visual Studio
 
@@ -57,11 +57,18 @@ webpack regroupe des fichiers JavaScript pour qu’ils puissent s’exécuter da
 
 ## <a name="prerequisites"></a>Prérequis
 
-* Au préalable, vous devez avoir installé Visual Studio 2017 et la charge de travail de développement Node.js.
+* Au préalable, vous devez avoir installé Visual Studio et la charge de travail de développement Node.js.
 
-    Si vous n’avez pas encore installé Visual Studio, accédez à la page  [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)  pour l’installer gratuitement.
+    ::: moniker range=">=vs-2019"
+    Si vous n’avez pas encore installé Visual Studio 2019, accédez à la page  [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/)  pour l’installer gratuitement.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Si vous n’avez pas encore installé Visual Studio 2017, accédez à la page  [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/)  pour l’installer gratuitement.
+    ::: moniker-end
 
-    Si vous devez installer la charge de travail, mais que vous avez déjà Visual Studio, sélectionnez le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement Node.js**, puis choisissez **Modifier**.
+    Si vous devez installer la charge de travail, mais que vous avez déjà installé Visual Studio, cliquez sur **Outils** > **Obtenir les outils et fonctionnalités...**, qui ouvre Visual Studio Installer. Choisissez la charge de travail **Développement Node.js**, puis choisissez **Modifier**.
+
+    ![Charge de travail Node.js dans Visual Studio Installer](../ide/media/quickstart-nodejs-workload.png)
 
 * Le runtime Node.js doit être installé.
 
@@ -73,13 +80,19 @@ webpack regroupe des fichiers JavaScript pour qu’ils puissent s’exécuter da
 
 Commencez par créer un projet d’application web Node.js.
 
-1. Ouvrez Visual Studio 2017.
+1. Ouvrez Visual Studio.
 
 1. Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**.
 
-1. Dans la boîte de dialogue **Nouveau projet**, dans le volet gauche, développez **JavaScript**, puis choisissez **Node.js**. Dans le volet central, choisissez **Application web Node.js vide**, tapez le nom **NodejsWebAppBlank**, puis choisissez **OK**.
+1. Créer un nouveau projet.
 
-     Si vous ne voyez pas le modèle de projet **Application web Node.js vide**, vous devez d’abord installer la charge de travail Développement Node.js.
+    ::: moniker range=">=vs-2019"
+    Dans la boîte de dialogue **Créer un projet**, tapez **javascript** dans la zone de recherche pour filtrer les résultats, choisissez **Application web Node.js vide**, puis choisissez **Suivant**. Choisissez ensuite **Créer**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Dans la boîte de dialogue **Nouveau projet**, dans le volet gauche, développez **JavaScript**, puis choisissez **Node.js**. Dans le volet central, choisissez **Application web Node.js vide**, tapez le nom **NodejsWebAppBlank**, puis choisissez **OK**.
+    ::: moniker-end
+    Si vous ne voyez pas le modèle de projet **Application web Node.js vide**, vous devez ajouter la charge de travail **Développement Node.js**. Pour obtenir des instructions détaillées, consultez les [Prérequis](#prerequisites).
 
     Visual Studio crée la solution et ouvre votre projet.
 
@@ -333,7 +346,7 @@ Chaque fois que vous apportez des changements à *app.tsx*, vous devez réexécu
 
 1. Dans *server.js*, cliquez dans la marge située à gauche de la déclaration de `staticPath` pour définir un point d’arrêt :
 
-    ![Définir un point d’arrêt](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
+    ![Définir un point d'arrêt](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
 
     Les points d'arrêt constituent une fonctionnalité élémentaire et essentielle de toute procédure de débogage fiable. Quand vous définissez un point d'arrêt, Visual Studio interrompt l'exécution du code à l'emplacement du point d'arrêt pour vous permettre d'examiner les valeurs des variables, le comportement de la mémoire ou encore la bonne exécution ou non d'une branche de code.
 
@@ -361,7 +374,7 @@ Dans la section précédente, vous avez attaché le débogueur au code Node.js c
 
 3. Passez à Visual Studio et définissez un point d’arrêt dans le code d’*app-bundle.js*, dans la fonction `render()`, comme indiqué dans l’illustration suivante :
 
-    ![Définir un point d’arrêt](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
+    ![Définir un point d'arrêt](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
     Pour trouver la fonction `render()` dans *app-bundle.js*, utilisez **Ctrl**+**F** (**Modifier** > **Rechercher et remplacer** > **Recherche rapide**).
 
@@ -377,7 +390,7 @@ Dans la section précédente, vous avez attaché le débogueur au code Node.js c
 
     ![Attacher au processus](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
-    Vous savez que le débogueur est correctement attaché quand l’Explorateur DOM et la console JavaScript s’ouvrent dans Visual Studio. Ces outils de débogage sont similaires aux outils de développement Chrome et aux outils F12 pour Edge.
+    Vous savez que le débogueur est correctement attaché quand l’Explorateur DOM et la console JavaScript s’ouvrent dans Visual Studio. Ces outils de débogage sont similaires aux outils de développement Chrome et aux outils F12 pour Microsoft Edge.
 
     > [!NOTE]
     > Si le débogueur ne s’attache pas et que vous voyez le message « Impossible de s’attacher au processus. Une opération n’est pas légale dans l’état actuel. », utilisez le Gestionnaire des tâches pour fermer toutes les instances de Chrome avant de démarrer Chrome en mode débogage. Les extensions Chrome peuvent être en cours d’exécution et empêcher le mode débogage complet.

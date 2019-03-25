@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 340d376308c9647895f814dbf6d3d438a98d75e2
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 2144ebd4725532d3dbbf4685f6629cbbbdd7c73e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843809"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069682"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Développement mobile multiplateforme dans Visual Studio
 
@@ -96,7 +96,7 @@ Avec Visual Studio Tools pour Xamarin, vous pouvez cibler Android, iOS et Window
 
  ![Applications hybrides multiappareils en JavaScript](../cross-platform/media/multidevicehybridapps.png "Applications hybrides multiappareils en JavaScript")
 
- Pour commencer, installez Visual Studio 2017, puis choisissez la fonctionnalité **Développement mobile en JavaScript** durant l’installation. Les Outils Cordova installent automatiquement l’ensemble des logiciels tiers nécessaires pour générer votre application multiplateforme.
+ Pour commencer, installez Visual Studio, puis choisissez la fonctionnalité **Développement mobile en JavaScript** au cours de l’installation. Les Outils Cordova installent automatiquement l’ensemble des logiciels tiers nécessaires pour générer votre application multiplateforme.
 
  Une fois que vous avez installé l’extension, ouvrez Visual Studio et créez un projet **Application vide (Apache Cordova)** . Ensuite, vous pouvez développer votre application en utilisant JavaScript ou TypeScript. Vous pouvez aussi ajouter des plug-ins pour étendre les fonctionnalités de votre application. Les API des plug-ins s'affichent alors dans IntelliSense quand vous écrivez du code.
 

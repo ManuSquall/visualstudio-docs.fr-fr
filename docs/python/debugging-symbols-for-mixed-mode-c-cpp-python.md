@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de2d4832a1c45cbfd2b6f3893dd2b011151d9e48
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 66320e95664b86e56fc3c328c36360e4df4352b9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951340"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869361"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Installer les symboles de débogage pour les interpréteurs Python
 
@@ -54,7 +54,7 @@ Si vous avez téléchargé les symboles séparément, suivez les étapes ci-dess
 
     ![Options des symboles de débogueur en mode mixte](media/mixed-mode-debugging-symbols.png)
 
-1. Pendant une session de débogage, Visual Studio peut également vous demander d’indiquer l’emplacement d’un fichier source pour l’interpréteur Python. Si vous avez téléchargé des fichiers sources (à partir de [python.org/downloads](https://www.python.org/downloads), par exemple), vous pouvez également y faire référence.
+1. Pendant une session de débogage, Visual Studio peut également vous demander d’indiquer l’emplacement d’un fichier source pour l’interpréteur Python. Si vous avez téléchargé des fichiers sources (à partir de [python.org/downloads/](https://www.python.org/downloads/), par exemple), vous pouvez également y faire référence.
 
 > [!Note]
 > Les fonctionnalités de mise en cache des symboles proposées dans la boîte de dialogue permettent de créer un cache local des symboles obtenus à partir d’une source en ligne. Ces fonctionnalités ne sont pas nécessaires avec les symboles de l’interpréteur Python, car ceux-ci sont déjà présents localement. Dans tous les cas, consultez [Spécifier les symboles et les fichiers sources dans le débogueur Visual Studio](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) pour plus d’informations.

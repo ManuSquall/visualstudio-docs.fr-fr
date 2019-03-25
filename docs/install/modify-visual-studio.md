@@ -16,14 +16,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf114093c6ba3e267cab901864c5442df8e33236
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 03dbfd8140249a93dfb649894dabab1c57b203c2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957297"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983999"
 ---
-# <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>Modifier Visual Studio 2017 en ajoutant ou supprimant des charges de travail et des composants
+# <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Modifier Visual Studio en ajoutant ou supprimant des charges de travail et des composants
 
 Nous avons simplifié le travail de personnalisation des tâches Visual Studio, mais aussi de Visual Studio à proprement parler. Pour ce faire, démarrez le nouveau programme d’installation de Visual Studio et apportez les modifications souhaitées.
 
@@ -69,6 +69,6 @@ Si vous ne voulez pas utiliser la fonctionnalité pratique Charges de travail po
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Installer Visual Studio 2017](install-visual-studio.md)
-* [Mettre à jour Visual Studio 2017](update-visual-studio.md)
-* [Désinstaller Visual Studio 2017](uninstall-visual-studio.md)
+* [Installer Visual Studio](install-visual-studio.md)
+* [Mettre à jour Visual Studio](update-visual-studio.md)
+* [Désinstaller Visual Studio](uninstall-visual-studio.md)

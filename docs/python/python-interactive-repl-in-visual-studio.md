@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aa223bc4e63d5672feb6d518bc8df534f3162da0
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: f7d4b36003d097fc4750b80f62fc1267908b8c0b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155654"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151139"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Utiliser la fenêtre interactive Python
 
@@ -56,7 +56,7 @@ Enfin, sélectionnez le code dans le fichier, et utilisez la commande [**Envoyer
 
 ## <a name="interactive-window-options"></a>Options de la fenêtre interactive
 
-Vous pouvez contrôler différents aspects de la fenêtre **Interactive** via **Outils** > **Options** > **Python Tools** > **Fenêtres interactives** (consultez [Options](python-support-options-and-settings-in-visual-studio.md)) :
+Vous pouvez contrôler différents aspects de la fenêtre **Interactive** via **Outils** > **Options** > **Python** > **Fenêtres interactives** (consultez [Options](python-support-options-and-settings-in-visual-studio.md)) :
 
 ![Options de la fenêtre interactive Python](media/options-interactive-windows.png)
 
@@ -121,4 +121,4 @@ Visual Studio détecte également les cellules de code commençant par des comme
 
 La fenêtre **Interactive** inclut la fonctionnalité IntelliSense basée sur les objets dynamiques, contrairement à l’éditeur de code dans lequel la fonctionnalité IntelliSense repose uniquement sur l’analyse du code source. Ces suggestions sont plus appropriées dans la fenêtre **Interactive**, en particulier avec du code généré dynamiquement. L’inconvénient est que les fonctions qui comportent des effets secondaires (par exemple, la journalisation des messages) peuvent affecter votre expérience de développement.
 
-Si ce comportement pose problème, changez les paramètres sous **Outils** > **Options** > **Python Tools** > **Fenêtres interactives** dans le groupe **Mode de saisie semi-automatique**, comme indiqué dans [Options - Options des fenêtres interactives](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options).
+Si ce comportement pose problème, changez les paramètres sous **Outils** > **Options** > **Python** > **Fenêtres interactives** dans le groupe **Mode de saisie semi-automatique**, comme indiqué dans [Options - Options des fenêtres interactives](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options).

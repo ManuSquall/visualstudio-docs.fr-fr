@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df48a659d7718691d86909458a4a1a150d2d64dd
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 52a3d63bb7f632f1eacea603c96787dbb36d90fa
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223518"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57984116"
 ---
 # <a name="get-started-with-unit-testing"></a>Bien démarrer avec les tests unitaires
 
@@ -112,25 +112,39 @@ Vous pouvez exécuter des tests unitaires dans Visual Studio à l’aide de fram
 
 Voici les étapes à suivre pour activer les frameworks de tests tiers :
 
-1. Dans la barre de menus, choisissez **Outils** > **Extensions et mises à jour**.
+::: moniker range="vs-2017"
 
-1. Dans la boîte de dialogue **Extensions et mises à jour**, développez la catégorie **En ligne**, puis **Visual Studio Marketplace**. Choisissez ensuite **Outils** > **Test en cours**.
+1. Dans la barre de menus, choisissez **Outils**>**Extensions et mises à jour**.
+
+2. Dans la boîte de dialogue **Extensions et mises à jour**, développez la catégorie **En ligne**, puis **Visual Studio Marketplace**. Choisissez ensuite **Outils** > **Test en cours**.
 
    ![Visual Studio Marketplace](media/extensions-and-updates-testing.png)
 
-1. Sélectionnez le framework ou l’adaptateur à installer, puis choisissez **Télécharger**.
+::: moniker-end
 
-1. Créez un projet de bibliothèque de classes, puis ajoutez-le à votre solution.
+::: moniker range=">=vs-2019"
+
+1. Dans la barre de menus, choisissez **Extensions** > **Gérer les extensions**.
+
+2. Dans la boîte de dialogue **Gérer les extensions**, développez la catégorie **En ligne**, puis **Visual Studio Marketplace**. Choisissez ensuite **Outils** > **Test en cours**.
+
+   ![Visual Studio Marketplace](media/extensions-and-updates-testing.png)
+
+::: moniker-end
+
+3. Sélectionnez le framework ou l’adaptateur à installer, puis choisissez **Télécharger**.
+
+4. Créez un projet de bibliothèque de classes, puis ajoutez-le à votre solution.
 
    ![Nommer le projet de bibliothèque de classes et l’ajouter](media/create3rdpartyunittest3.png)
 
-1. Installez le plug-in. Dans **l’Explorateur de solutions**, sélectionnez le projet de bibliothèque de classes, puis choisissez **Gérer les packages NuGet** dans le menu contextuel.
+5. Installez le plug-in. Dans **l’Explorateur de solutions**, sélectionnez le projet de bibliothèque de classes, puis choisissez **Gérer les packages NuGet** dans le menu contextuel.
 
    ![Gérer les packages NuGet pour installer le plug-in](media/create3rdpartyunittest3a.png)
 
    [NuGet](https://www.nuget.org/) est une extension de Visual Studio que vous pouvez utiliser pour ajouter et mettre à jour des bibliothèques et des outils pour vos projets.
 
-1. Dans la fenêtre **Gestionnaire de package NuGet**, recherchez et sélectionnez le plug-in, puis choisissez **Installer**.
+6. Dans la fenêtre **Gestionnaire de package NuGet**, recherchez et sélectionnez le plug-in, puis choisissez **Installer**.
 
    ![Installer votre framework tiers](media/create3rdpartyunittest4.png)
 
@@ -138,15 +152,15 @@ Voici les étapes à suivre pour activer les frameworks de tests tiers :
 
    ![La référence du framework de tests unitaires tiers est ajoutée à votre solution](media/create3rdpartyunittest6.png)
 
-1. Dans le nœud **Références** du projet de bibliothèque de classes, sélectionnez **Ajouter une référence**.
+7. Dans le nœud **Références** du projet de bibliothèque de classes, sélectionnez **Ajouter une référence**.
 
    ![Ajouter une référence au projet](media/createunittest6.png)
 
-1. Dans la boîte de dialogue **Gestionnaire de références**, sélectionnez le projet contenant le code à tester.
+8. Dans la boîte de dialogue **Gestionnaire de références**, sélectionnez le projet contenant le code à tester.
 
    ![Sélectionner le projet de code à tester](media/createunittest7.png)
 
-1. Codez votre test unitaire.
+9. Codez votre test unitaire.
 
    ![Ajouter du code à votre fichier de code de test unitaire](media/create3rdpartyunittest7.png)
 

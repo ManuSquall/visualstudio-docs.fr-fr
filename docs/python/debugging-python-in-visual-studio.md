@@ -1,7 +1,7 @@
 ---
 title: Déboguer du code Python
 description: Visual Studio fournit de riches fonctionnalités de débogage du code Python, y compris la définition de points d’arrêt, l’exécution pas à pas, l’inspection des valeurs, la gestion des exceptions et le débogage dans la fenêtre interactive.
-ms.date: 01/07/2019
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5bc1f41e683b8bf58486646b5beb2ae4de3d4049
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 81e83b85c3f221cbd949067da6279facafb6e3d6
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954359"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151360"
 ---
 # <a name="debug-your-python-code"></a>Déboguer votre code Python
 
@@ -40,7 +40,7 @@ Consultez également les articles ci-après concernant le débogage propre à un
 
 Le flux de travail de débogage de base implique la définition de points d’arrêt, l’exécution de code pas à pas, l’inspection de valeurs et la gestion des exceptions, comme décrit dans les sections suivantes.
 
-Une session de débogage est initialisée par la commande **Débogage** > **Démarrer le débogage**, le bouton **Démarrer** de la barre d’outils ou la touche **F5**. Ces opérations lancent le fichier de démarrage de votre projet (indiqué en gras dans **l’Explorateur de solutions**) avec l’environnement actif du projet et tous les arguments de ligne de commande ou chemins de recherche qui ont été spécifiés dans **Propriétés du projet** (consultez la section [Options de débogage d’un projet](#project-debugging-options)). **Visual Studio 2017 versions 15.6** et ultérieures vous avertit si vous n’avez pas de fichier de démarrage défini ; les versions antérieures peuvent ouvrir une fenêtre de sortie avec l’interpréteur Python en cours d’exécution, ou la fenêtre de sortie s’affiche brièvement et disparaît. Dans tous les cas, cliquez avec le bouton droit sur le fichier approprié et sélectionnez **Définir comme fichier de démarrage**.
+Une session de débogage est initialisée par la commande **Débogage** > **Démarrer le débogage**, le bouton **Démarrer** de la barre d’outils ou la touche **F5**. Ces opérations lancent le fichier de démarrage de votre projet (indiqué en gras dans **l’Explorateur de solutions**) avec l’environnement actif du projet et tous les arguments de ligne de commande ou chemins de recherche qui ont été spécifiés dans **Propriétés du projet** (consultez la section [Options de débogage d’un projet](#project-debugging-options)). Visual Studio 2017 version 15.6 et ultérieures vous avertit si vous n’avez pas de fichier de démarrage défini ; les versions antérieures peuvent ouvrir une fenêtre de sortie avec l’interpréteur Python en cours d’exécution, ou la fenêtre de sortie s’affiche brièvement et disparaît. Dans tous les cas, cliquez avec le bouton droit sur le fichier approprié et sélectionnez **Définir comme fichier de démarrage**.
 
 > [!Note]
 > Le débogueur démarre toujours avec l’environnement Python actif associé au projet. Pour changer d’environnement, activez-en un autre en suivant les instructions de la page [Sélectionner un environnement Python pour un projet](selecting-a-python-environment-for-a-project.md).
@@ -175,16 +175,12 @@ Outre les [commandes REPL standard](python-interactive-repl-in-visual-studio.md#
 | `$stepout`, `$return`, `$r` | Sort de la fonction active. |
 | `$stepover`, `$until`, `$unt` | Passe à l'appel de fonction suivant. |
 | `$thread` | | Affiche l’ID du thread actuel. |
-| `$thread` | thread id | Remplace le thread actuel par l’ID de thread spécifié. |
+| `$thread` | thread ID | Remplace le thread actuel par l’ID de thread spécifié. |
 | `$threads` | | Répertorie les threads en cours de débogage. |
 | `$up`, `$u` | | Remonte le frame actuel d’un niveau dans la trace de la pile. |
 | `$where`, `$w`, `$bt` | Répertorie les frames du thread actuel. |
 
 Notez que les fenêtres du débogueur standard telles que **Processus**, **Threads** et **Pile des appels** ne sont pas synchronisées avec la **Fenêtre interactive de débogage**. La modification du processus, du thread ou du frame actifs dans la **fenêtre interactive de débogage** n’affecte pas les autres fenêtres du débogueur. De même, la modification du processus, du thread ou du frame actifs dans les autres fenêtres du débogueur n’affecte pas la **fenêtre interactive de débogage**.
-
-La **fenêtre interactive de débogage** comporte son propre jeu d’options, accessibles par le biais des commandes **Outils** > **Options** > **Python Tools** > **Fenêtre interactive de débogage**. Contrairement à la fenêtre **interactive Python** standard, dont il existe une instance distincte pour chaque environnement Python, il n’existe qu’une seule fenêtre de **débogage interactive**, laquelle utilise systématiquement l’interpréteur Python pour le processus en cours de débogage. Consultez [Options - Options de débogage](python-support-options-and-settings-in-visual-studio.md#debugging-options).
-
-![Options de la fenêtre de débogage interactive](media/debugging-interactive-options.png)
 
 <a name="use-the-experimental-debugger"></a>
 

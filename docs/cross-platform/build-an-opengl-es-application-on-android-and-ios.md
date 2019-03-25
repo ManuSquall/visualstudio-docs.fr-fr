@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 7f2a09d7f3eb0df05ae1ba3c05706746cb9d7eb9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8929a0b3bec64bbf2fc12bd84f6938463393a32c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013637"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070267"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Générer une application OpenGL ES sur Android et iOS
 
@@ -31,13 +31,11 @@ Avant de pouvoir créer une application OpenGL ES pour iOS et Android, vous deve
 
 Dans ce didacticiel, vous allez tout d’abord créer un projet Application OpenGLES, puis vous allez générer et exécuter l’application par défaut dans l’Émulateur Visual Studio pour Android. Ensuite, vous allez générer l’application pour iOS et exécuter l’application dans iOS Simulator.
 
-### <a name="to-create-a-new-project"></a>Pour créer un projet
+1. Dans Visual Studio, choisissez **Fichier** > **Nouveau** > **Projet**.
 
-1. Ouvrez Visual Studio. Dans la barre de menus, sélectionnez **Fichier**, **Nouveau**, **Projet**.
+2. Dans la boîte de dialogue **Nouveau projet**, sous **Modèles**, choisissez **Visual C++** > **Interplateforme**, puis choisissez le modèle **Application OpenGLES (Android, iOS)**.
 
-2. Dans la boîte de dialogue **Nouveau projet** , sous **Modèles**, choisissez **Visual C++**, **Interplateforme**, puis choisissez le modèle **Application OpenGLES (Android, iOS)** .
-
-3. Donnez à l’application un nom, par exemple `MyOpenGLESApp`, puis choisissez **OK**.
+3. Donnez à l’application un nom comme `MyOpenGLESApp`, puis choisissez **OK**.
 
     ![Nouveau projet d’application OpenGLES](../cross-platform/media/cppmdd_opengles_newproj.PNG "CPPMDD_OpenGLES_NewProj")
 
@@ -147,6 +145,6 @@ Vous pouvez modifier le code C++ partagé pour ajouter ou modifier des fonctionn
 
 Pour bénéficier de la fonctionnalité IntelliSense pour une plateforme de projet spécifique, choisissez le projet dans la liste déroulante du sélecteur de contexte dans la barre Navigation en haut de la fenêtre de l’éditeur.
 
-![Liste déroulante du sélecteur de contexte de projet dans l’éditeur](../cross-platform/media/cppmdd_opengles_contextswitcher.png)
+![Liste déroulante du sélecteur de contexte de projet dans l'éditeur](../cross-platform/media/cppmdd_opengles_contextswitcher.png)
 
 Les problèmes IntelliSense dans le projet actuel sont signalés par un trait ondulé rouge. Les problèmes dans d’autres projets sont signalés par un trait ondulé violet. Par défaut, Visual Studio ne prend en charge ni la colorisation de code ni IntelliSense pour les fichiers Java ou Objective-C. Toutefois, vous pouvez modifier les fichiers sources et les ressources pour définir le nom de votre application, son icône et d’autres détails d’implémentation.

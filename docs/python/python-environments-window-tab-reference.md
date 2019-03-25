@@ -1,7 +1,7 @@
 ---
 title: Référence sur la fenêtre Environnements Python
 description: Cet article donne des informations sur chacun des onglets qui s’affichent sur la fenêtre Environnements Python dans Visual Studio.
-ms.date: 12/06/2018
+ms.date: 03/18/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 75f04d8045ebafea64634b156a57bc2f50a5009b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b55b2e1a34afa78ac1e122081eca261f3dcdabc8
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909984"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195204"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Référence sur les onglets de la fenêtre Environnements Python
 
@@ -26,13 +26,23 @@ Pour ouvrir la fenêtre **Environnements Python** :
 
 Si vous agrandissez suffisamment la fenêtre **Environnements Python**, ces options s’affichent sous forme d’onglets, sans doute plus pratiques à utiliser. Dans un souci de clarté, les onglets de cet article apparaissent dans l’affichage développé.
 
-![Affichage développé de la fenêtre Environnements Python](media/environments-expanded-view.png)
+::: moniker range="vs-2017"
+![Affichage développé de la fenêtre Environnements Python](media/environments/environments-expanded-view.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Affichage développé de la fenêtre Environnements Python](media/environments/environments-expanded-view-2019.png)
+::: moniker-end
 
 ## <a name="overview-tab"></a>Onglet Vue d’ensemble
 
 Fournit des commandes et des informations de base pour l’environnement :
 
-![Onglet Vue d’ensemble, Environnements Python](media/environments-overview-tab.png)
+::: moniker range="vs-2017"
+![Onglet Vue d’ensemble, Environnements Python](media/environments/environments-overview-tab.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Onglet Vue d’ensemble, Environnements Python](media/environments/environments-overview-tab-2019.png)
+::: moniker-end
 
 | Commande | Description |
 | --- | --- |
@@ -52,13 +62,18 @@ Les scripts de démarrage contiennent du code que la fenêtre **Interactive** ch
 
 1. Quand vous installez un environnement, Visual Studio crée un dossier *Documents\Visual Studio 2017\Python Scripts\\\<environnement>* où &lt;environnement&gt; correspond au nom de l’environnement. Vous pouvez facilement accéder au dossier spécifique à l’environnement avec la commande **Explorer les scripts interactifs**. Quand vous démarrez la fenêtre **Interactive** pour cet environnement, elle charge et exécute tous les fichiers *.py* qui s’y trouvent dans l’ordre alphabétique.
 
-1. Le contrôle **Scripts** sous l’onglet **Outils** > **Options** > **Python Tools** > **Fenêtres interactives** (consultez [Options des fenêtres interactives](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) est destiné à spécifier un dossier supplémentaire pour les scripts de démarrage qui sont chargés et exécutés dans tous les environnements. Toutefois, cette fonctionnalité ne fonctionne pas actuellement.
+1. Le contrôle **Scripts** sous l’onglet **Outils** > **Options** > **Python** > **Fenêtres interactives** (consultez [Options des fenêtres interactives](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) est destiné à spécifier un dossier supplémentaire pour les scripts de démarrage qui sont chargés et exécutés dans tous les environnements. Toutefois, cette fonctionnalité ne fonctionne pas actuellement.
 
 ## <a name="configure-tab"></a>Onglet Configurer
 
-S’il est disponible, il contient les informations décrites dans le tableau ci-dessous. Si cet onglet n’est pas affiché, cela signifie que Visual Studio gère automatiquement toutes les informations.
+S’il est disponible, l’onglet **Configure** contient les informations décrites dans le tableau ci-dessous. Si cet onglet n’est pas affiché, cela signifie que Visual Studio gère automatiquement toutes les informations.
 
-![Onglet Configurer, Environnements Python](media/environments-configure-tab.png)
+::: moniker range="vs-2017"
+![Onglet Configurer, Environnements Python](media/environments/environments-configure-tab.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Onglet Configurer, Environnements Python](media/environments/environments-configure-tab-2019.png)
+::: moniker-end
 
 | Champ | Description |
 | --- | --- |
@@ -75,35 +90,50 @@ S’il est disponible, il contient les informations décrites dans le tableau ci
 
 *Également appelé « pip » dans les versions antérieures.*
 
-Gère les packages installés dans l’environnement à l’aide de pip, ce qui vous permet également de rechercher des packages et d’en installer de nouveaux (y compris toutes les dépendances). Dans Visual Studio 2017 versions 15.7 et ultérieures, un onglet **Packages (Conda)** s’affiche et utilise le gestionnaire de package conda à la place. (Si vous ne voyez pas ce choix, définissez l’option **Outils** > **Options** > **Python** > **Expérimental** > **Utiliser le Gestionnaire de package Conda si disponible (au lieu de Pip)** et redémarrez Visual Studio.)
+Gère les packages installés dans l’environnement à l’aide de pip (l’onglet **Packages (PyPI)**) ou de conda (l’onglet **Packages (Conda)**, pour les environnements conda dans Visual Studio 2017 version 15.7 et ultérieure). Dans cet onglet, vous pouvez également rechercher et installer de nouveaux packages, y compris leurs dépendances.
 
 Les packages qui sont déjà installés apparaissent avec des contrôles pour mettre à jour (flèche vers le haut) et désinstaller (X dans un cercle) le package :
 
-![Onglet packages, Environnements Python](media/environments-pip-tab-controls.png)
+![Onglet packages, Environnements Python](media/environments/environments-pip-tab-controls.png)
 
 La saisie d’un terme de recherche filtre la liste des packages installés, ainsi que des packages qui peuvent être installés à partir de PyPI.
 
-![Onglet packages, Environnements Python, avec recherche de « num »](media/environments-pip-tab.png)
+::: moniker range="vs-2017"
+![Onglet packages, Environnements Python, avec recherche de « num »](media/environments/environments-pip-tab.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Onglet packages, Environnements Python, avec recherche de « num »](media/environments/environments-pip-tab-2019.png)
+::: moniker-end
 
 Comme vous pouvez le voir dans l’image ci-dessus, les résultats de la recherche affichent plusieurs packages qui correspondent au terme de recherche. Toutefois, la première entrée de la liste est une commande qui permet d’exécuter **pip install \<nom>** directement. Si vous êtes sous l’onglet **Packages (Conda)**, vous voyez plutôt **conda install \<nom>**  :
 
-![Onglet de packages Conda montrant une commande d’installation conda](media/environments-conda-tab-install.png)
+::: moniker range="vs-2017"
+![Onglet de packages Conda montrant une commande d’installation conda](media/environments/environments-conda-tab-install.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Onglet de packages Conda montrant une commande d’installation conda](media/environments/environments-conda-tab-install-2019.png)
+::: moniker-end
 
 Dans les deux cas, vous pouvez personnaliser l’installation en ajoutant des arguments dans la zone de recherche après le nom du package. Quand vous incluez des arguments, les résultats de la recherche affichent **pip install** ou **conda install** suivi du contenu de la zone de recherche :
 
-![Utilisation d’arguments avec les commandes d’installation pip et conda](media/environments-pip-tab-arguments.png)
+::: moniker range="vs-2017"
+![Utilisation d’arguments avec les commandes d’installation pip et conda](media/environments/environments-pip-tab-arguments.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Utilisation d’arguments avec les commandes d’installation pip et conda](media/environments/environments-pip-tab-arguments-2019.png)
+::: moniker-end
 
-L’installation d’un package crée des sous-dossiers dans le dossier *Lib* de l’environnement sur le système de fichiers. Par exemple, si Python 3.6 est installé dans *c:\Python36*, les packages sont installés dans *c:\Python36\Lib*. Si Anaconda3 est installé dans *c:\Program Files\Anaconda3*, les packages sont installés dans *c:\Program Files\Anaconda3\Lib*.
+L’installation d’un package crée des sous-dossiers dans le dossier *Lib* de l’environnement sur le système de fichiers. Par exemple, si Python 3.6 est installé dans *c:\Python36*, les packages sont installés dans *c:\Python36\Lib*. Si Anaconda3 est installé dans *c:\Program Files\Anaconda3*, les packages sont installés dans *c:\Program Files\Anaconda3\Lib*. Pour les environnements conda, les packages sont installés dans le dossier de cet environnement.
 
 ### <a name="grant-administrator-privileges-for-package-install"></a>Octroyer des privilèges d’administrateur pour l’installation des packages
 
 Au moment d’installer des packages dans un environnement situé dans une zone protégée du système de fichiers, par exemple *c:\Program Files\Anaconda3\Lib*, Visual Studio doit exécuter `pip install` avec une élévation de privilèges pour lui permettre de créer des sous-dossiers de package. Quand une élévation est nécessaire, Visual Studio affiche l’invite **Des privilèges d’administrateur peuvent être nécessaires pour installer, mettre à jour ou supprimer des packages pour cet environnement** :
 
-![Invite d’élévation pour l’installation de packages](media/environments-pip-elevate.png)
+![Invite d’élévation pour l’installation de packages](media/environments/environments-pip-elevate.png)
 
 **Élever les privilèges maintenant** accorde des privilèges d’administrateur à pip pour une seule opération, pouvant aussi faire l’objet d’une demande d’autorisations du système d’exploitation. Quand vous sélectionnez **Continuer sans privilège d’administrateur**, une tentative d’installation du package a lieu, mais pip ne parvient pas à créer de dossiers, et une sortie telle que **Erreur : impossible de créer « C:\Program Files\Anaconda3\Lib\site-packages\png.py » : Autorisation refusée.** s’affiche.
 
-En sélectionnant **Toujours élever les privilèges pour l’installation et la suppression des packages**, vous empêchez la boîte de dialogue de s’afficher pour l’environnement en question. Pour que la boîte de dialogue s’affiche à nouveau, accédez à **Outils** > **Options** > **Python Tools** > **Général**, puis sélectionnez le bouton **Réinitialiser toutes les boîtes de dialogue masquées définitivement**.
+En sélectionnant **Toujours élever les privilèges pour l’installation et la suppression des packages**, vous empêchez la boîte de dialogue de s’afficher pour l’environnement en question. Pour que la boîte de dialogue s’affiche à nouveau, accédez à **Outils** > **Options** > **Python** > **Général**, puis sélectionnez le bouton **Réinitialiser toutes les boîtes de dialogue masquées définitivement**.
 
 Sous ce même onglet **Options**, vous pouvez également sélectionner **Toujours exécuter pip comme administrateur** afin de supprimer la boîte de dialogue pour tous les environnements. Consultez [Options - Onglet Général](python-support-options-and-settings-in-visual-studio.md#general-options).
 
@@ -111,7 +141,7 @@ Sous ce même onglet **Options**, vous pouvez également sélectionner **Toujour
 
 Quand Python 2.6, 3.1 et 3.2 sont utilisés, Visual Studio affiche un avertissement signalant qu’**en raison des restrictions de sécurité, l’installation à partir d’Internet est susceptible de ne pas fonctionner sur cette version de Python** :
 
-![Message concernant les restrictions d’installation de pip avec l’ancienne version de Python](media/environments-old-version-restriction.png)
+![Message concernant les restrictions d’installation de pip avec l’ancienne version de Python](media/environments/environments-old-version-restriction.png)
 
 La raison de cet avertissement est que dans les versions plus anciennes de Python, `pip install` ne contient pas la prise en charge de la sécurité TLS (Transport Layer Security) 1.2, qui est nécessaire pour télécharger des packages à partir de la source de packages, pypi.org. Les builds Python personnalisées peuvent prendre en charge TLS 1.2, auquel cas `pip install` peut fonctionner.
 
@@ -119,11 +149,12 @@ Il est possible de télécharger le *get-pip.py* approprié pour un package à p
 
 La recommandation, toutefois, est d’effectuer simplement une mise à niveau vers Python 2.7 ou 3.3 +, auquel cas l’alerte n’apparaît pas.
 
+::: moniker range="vs-2017"
 ## <a name="intellisense-tab"></a>Onglet IntelliSense
 
 Affiche l’état actuel de la base de données de saisie semi-automatique IntelliSense :
 
-![Onglet IntelliSense, Environnements Python](media/environments-intellisense-tab.png)
+![Onglet IntelliSense, Environnements Python](media/environments/environments-intellisense-tab.png)
 
 - Dans **Visual Studio 2017 version 15.5** et versions précédentes, les saisies semi-automatiques IntelliSense dépendent d’une base de données qui a été compilée pour cette bibliothèque. La génération de la base de données est effectuée en arrière-plan quand une bibliothèque est installée, mais peut prendre du temps et ne pas être terminée lorsque vous démarrez l’écriture de code.
 - **Visual Studio 2017 versions 15.6** et ultérieures utilise une méthode plus rapide pour fournir des complétions qui ne dépendent pas de la base de données par défaut. Pour cette raison, l’onglet est étiqueté **IntelliSense [base de données désactivée]**. Vous pouvez activer la base de données en désactivant l’option **Outils** > **Options** > **Python** > **Expérimental** > **Utiliser le nouveau style IntelliSense pour les environnements**.
@@ -131,6 +162,8 @@ Affiche l’état actuel de la base de données de saisie semi-automatique Intel
 Lorsque Visual Studio détecte un nouvel environnement (ou que vous en ajoutez un), il commence automatiquement à compiler la base de données en analysant les fichiers source de la bibliothèque. Ce processus peut prendre entre une minute et plus d’une heure, selon ce qui est installé. (Anaconda, par exemple, est fourni avec de nombreuses bibliothèques et la compilation de la base de données prend un certain temps). Une fois ce processus terminé, vous obtenez la base de données IntelliSense détaillée et n’avez pas à actualiser une nouvelle fois la base de données (avec le bouton **Refresh DB** (Actualiser base de données)) jusqu’à ce que vous installiez d’autres bibliothèques.
 
 Les bibliothèques pour lesquelles les données n’ont pas été compilées sont marquées d’un **!**  ; si la base de données d’un environnement n’est pas complète, un **!** apparaît également en regard de celle-ci dans la liste principale des environnements.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Voir aussi
 

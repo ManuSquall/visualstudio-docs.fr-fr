@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b5f3eec072988c7ab093f305cf2903ae1079cc2
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 1ff663a7d2a22f152b3a0b9081623766535f9a53
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221877"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869042"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Synchroniser les paramètres Visual Studio sur plusieurs ordinateurs
 
@@ -41,7 +41,7 @@ Par défaut, les paramètres suivants sont synchronisés :
 
    - Tous les paramètres de la page d’options **Environnement** > **Démarrage**
 
-   - Tous les paramètres des pages d’options de l’**Éditeur de texte**
+   - Tous les paramètres des pages d’options de l’**éditeur de texte**, par exemple, les [préférences de style de code](code-styles-and-quick-actions.md).
 
    - Tous les paramètres des pages d’options du **Concepteur XAML**
 
@@ -75,7 +75,7 @@ Si vous disposez d’installations côte à côte de Visual Studio et que vous s
 
 3. Ouvrez l’**Invite de commandes développeur pour VS 2017** et exécutez `devenv /resetuserdata`.
 
-1. Lancez Visual Studio et importez les paramètres enregistrés du fichier de paramètres exportés.
+1. Ouvrez Visual Studio et importez les paramètres enregistrés du fichier de paramètres exportés.
 
 ::: moniker-end
 
