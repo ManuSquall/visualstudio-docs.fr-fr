@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c15824ec28547cbdb18fdfebc4ebcee1bdd1d387
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: c8b31f033b9c04871e57836dd263071d87a24fda
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953380"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070111"
 ---
 # <a name="customize-startup"></a>Personnaliser le démarrage
 
@@ -65,7 +65,7 @@ Pour installer une page de démarrage personnalisée, ouvrez le fichier *.vsix*,
 1. Dans la liste **Personnaliser la page de démarrage**, choisissez la page que vous souhaitez.
 
 > [!TIP]
-> Si une erreur dans une page de démarrage personnalisée provoque le blocage de Visual Studio, vous pouvez démarrer Visual Studio en mode sans erreur, puis le configurer pour utiliser la page de démarrage par défaut. Consultez [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
+> Si une erreur dans une page de démarrage personnalisée provoque le blocage de Visual Studio, vous pouvez ouvrir Visual Studio en mode sans erreur, puis le configurer pour utiliser la page de démarrage par défaut. Consultez [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
 
 ## <a name="see-also"></a>Voir aussi
 
