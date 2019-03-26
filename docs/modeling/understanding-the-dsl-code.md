@@ -9,25 +9,27 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29424efe9b6d170033853e1959073406626b7be0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ab82a563d5b5dce373394f9f83e883e2d2ee1129
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928281"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416017"
 ---
 # <a name="understanding-the-dsl-code"></a>Fonctionnement du code DSL
+
 Une solution de langage spécifique à un domaine (DSL) génère une API que vous pouvez utiliser pour lire et mettre à jour les instances du DSL dans Visual Studio. Cette API est définie dans le code généré à partir de la définition DSL. Cette rubrique décrit l'API générée.
 
 ## <a name="the-example-solution-component-diagrams"></a>L’exemple de solution : Diagrammes de composants
- Pour créer la solution qui est la source de la plupart des exemples de cette rubrique, créez un DSL à partir de la **modèles de composants** modèle de solution. Il s'agit de l'un des modèles standard qui apparaissent quand vous créez une solution DSL.
+
+Pour créer la solution qui est la source de la plupart des exemples de cette rubrique, créez un DSL à partir de la **modèles de composants** modèle de solution. Il s'agit de l'un des modèles standard qui apparaissent quand vous créez une solution DSL.
 
 > [!NOTE]
->  Le modèle DSL de diagrammes de composant n’est pas lié aux diagrammes de composant UML que vous pouvez créer à l’aide du menu Architecture dans Visual Studio. Dans le **nouveau projet** boîte de dialogue, développez **autres types de projets\extensibilité** puis cliquez sur **Concepteur de langage spécifique à un domaine**.
+> Le modèle DSL de diagrammes de composant se nomme **Concepteur de langage spécifique à un domaine**.
 
- Appuyez sur F5 et expérimentez un peu, si vous ne vous êtes pas encore familiarisé avec ce modèle de solution. Notez en particulier que pour créer des ports, vous devez faire glisser un outil « port » sur un composant et que vous pouvez connecter des ports.
+Appuyez sur **F5** et faire des essais si vous n’êtes pas familiarisé avec ce modèle de solution. Notez en particulier que pour créer des ports, vous devez faire glisser un outil « port » sur un composant et que vous pouvez connecter des ports.
 
- ![Composants et ports interconnectés](../modeling/media/componentsample.png)
+![Composants et ports interconnectés](../modeling/media/componentsample.png)
 
 ## <a name="the-structure-of-the-dsl-solution"></a>Structure de la solution DSL
  Le **Dsl** projet définit l’API pour votre DSL. Le **DslPackage** projet définit comment il s’intègre à Visual Studio. Vous pouvez aussi ajouter vos propres projets, qui peuvent également contenir du code généré à partir du modèle.
@@ -90,7 +92,7 @@ Une solution de langage spécifique à un domaine (DSL) génère une API que vou
 
  `Diagram.cs`
 
- Contient la classe qui définit le diagramme. Elle est dérivée de <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram>.
+ Contient la classe qui définit le diagramme. Il est dérivé de <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram>.
 
  Pour rendre la couleur et certaines autres variables de fonctionnalités de style au moment de l’exécution, avec le bouton droit de la classe sur le diagramme de définition DSL et pointez sur **ajouter les objets exposés**.
 
@@ -126,7 +128,7 @@ Une solution de langage spécifique à un domaine (DSL) génère une API que vou
 
   `DomainModel.cs`
 
-  Classe qui représente le modèle du domaine. Elle est dérivée de <xref:Microsoft.VisualStudio.Modeling.DomainModel>.
+  Classe qui représente le modèle du domaine. Il est dérivé de <xref:Microsoft.VisualStudio.Modeling.DomainModel>.
 
 > [!NOTE]
 >  Elle est différente de la classe racine du modèle.
@@ -347,4 +349,4 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 - [Guide pratique pour définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md)
 - [Présentation des modèles, des classes et des relations](../modeling/understanding-models-classes-and-relationships.md)
 - [Personnalisation et extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md)
-- [Écriture de code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+- [Écriture de Code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md)

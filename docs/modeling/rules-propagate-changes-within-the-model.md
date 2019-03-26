@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be803d02ab2040537b06a81327355abf80f56aab
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8f61c9623cd2006f0df82c93dc420a25f23d3d2a
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919870"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416203"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Propagation de modifications dans le modèle par des règles
 Vous pouvez créer une règle de magasin pour propager une modification d’un élément à un autre dans la visualisation et modélisation de kit de développement logiciel (SDK) VISUALIZATION. En cas de modification à un élément dans le Store, les règles sont planifiées pour être exécutée, généralement lors de la transaction externe est validée. Il existe différents types de règles pour différents types d’événements, comme l’ajout d’un élément ou sa suppression. Vous pouvez attacher des règles à des types d’éléments, des formes ou des diagrammes. Nombreuses fonctionnalités intégrées sont définies par les règles : par exemple, règles garantissent qu’un diagramme est mis à jour quand le modèle change. Vous pouvez personnaliser votre langage spécifique à un domaine en ajoutant vos propres règles.
@@ -212,4 +212,3 @@ namespace Company.TaskRuleExample
 ## <a name="see-also"></a>Voir aussi
 
 - [Propagation de modifications en dehors du modèle par des gestionnaires d’événements](../modeling/event-handlers-propagate-changes-outside-the-model.md)
-- [Emplacement et de la taille de la forme contrainte par BoundsRules](../modeling/boundsrules-constrain-shape-location-and-size.md)

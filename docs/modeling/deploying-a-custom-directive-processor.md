@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cad29fbc042e9f6397dc1f09fe3fce81f20403aa
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1c139e2a9675bdbe204b54220709ac8cdc794e5b
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932051"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416056"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Déploiement d'un processeur de directive personnalisé
 
@@ -22,9 +22,9 @@ Pour utiliser un processeur de directive personnalisé dans Visual Studio sur n�
 
 Les différentes méthodes disponibles sont les suivantes :
 
--   [Extensions Visual Studio](../extensibility/shipping-visual-studio-extensions.md). Cette extension permet d'installer et de désinstaller le processeur de directive sur votre propre ordinateur et sur d'autres. En général, vous pouvez empaqueter d’autres fonctionnalités dans la même extension VSIX.
+-   [Extensions Visual Studio](../extensibility/shipping-visual-studio-extensions.md). Cette extension permet d'installer et de désinstaller le processeur de directive sur votre propre ordinateur et sur d'autres. En général, vous pouvez empaqueter d'autres fonctionnalités dans la même extension VSIX.
 
--   [VSPackage](../extensibility/internals/vspackages.md). Si vous définissez un VSPackage qui contient d’autres fonctionnalités en plus du processeur de directive, vous pouvez aisément inscrire ce dernier.
+-   [VSPackage](../extensibility/internals/vspackages.md). Si vous définissez un VSPackage qui contient d'autres fonctionnalités en plus du processeur de directive, vous pouvez aisément inscrire ce dernier.
 
 -   Définition d'une clé de Registre. Dans cette méthode, vous ajoutez une entrée de Registre pour le processeur de directive.
 
@@ -40,15 +40,13 @@ Vous pouvez ajouter un processeur de directive personnalisé à un [Extension Vi
 
 -   Un fichier .pkgdef qui inscrit le processeur de directive. Le nom racine du fichier doit être identique à celui de l'assembly. Par exemple, vos fichiers peuvent être nommés CDP.dll et CDP.pkgdef.
 
-Pour inspecter ou modifier le contenu d’un fichier .vsix, remplacez son extension de nom par .zip, puis ouvrez-le. Après avoir modifié le contenu, réaffectez l'extension .vsix au nom de fichier.
+Pour inspecter ou modifier le contenu d'un fichier .vsix, remplacez son extension de nom par .zip, puis ouvrez-le. Après avoir modifié le contenu, réaffectez l'extension .vsix au nom de fichier.
 
 Un fichier .vsix peut être créé de plusieurs façons. La procédure suivante décrit une de ces méthodes.
 
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>Pour développer un processeur de directive personnalisé dans un projet VSIX
 
-1.  Créez un projet VSIX dans Visual Studio.
-
-    -   Dans le **nouveau projet** boîte de dialogue, développez **Visual Basic** ou **Visual C#**, puis développez **extensibilité**. Cliquez sur **projet VSIX**.
+1.  Créer un nouveau **projet VSIX** projet.
 
 2.  Dans **source.extension.vsixmanifest**, définissez le type de contenu et les éditions prises en charge.
 
@@ -128,7 +126,7 @@ Un fichier .vsix peut être créé de plusieurs façons. La procédure suivante 
 
 -   Si vous ne voyez pas l’extension dans le Gestionnaire d’extensions, mais le système vous autorisera pas à installer, supprimez-la de **%localappdata%\Microsoft\VisualStudio\\\*. 0\Extensions\\** .
 
--   Ouvrez le fichier .vsix et inspectez son contenu. Pour l’ouvrir, remplacez l’extension de nom du fichier par .zip. Vérifiez qu'il contient les fichiers .dll, .pkgdef et extension.vsixmanifest. Le fichier extension.vsixmanifest doit comporter la liste appropriée dans le nœud SupportedProducts, ainsi qu’un nœud VsPackage sous le nœud de contenu :
+-   Ouvrez le fichier .vsix et inspectez son contenu. Pour l'ouvrir, remplacez l'extension de nom du fichier par .zip. Vérifiez qu'il contient les fichiers .dll, .pkgdef et extension.vsixmanifest. Le fichier extension.vsixmanifest doit comporter la liste appropriée dans le nœud SupportedProducts, ainsi qu'un nœud VsPackage sous le nœud de contenu :
 
      `<Content>`
 
@@ -150,7 +148,7 @@ Un fichier .vsix peut être créé de plusieurs façons. La procédure suivante 
 
  Le fichier .pkgdef sera généré en même temps que le projet. Lorsque vous installerez le VSPackage, le fichier .pkgdef inscrira le processeur de directive.
 
- Vérifiez que le fichier .pkgdef s’affiche dans le dossier de génération, qui correspond en général à bin\Debug ou bin\Release. S'il ne s'affiche pas, ouvrez le fichier .csproj dans un éditeur de texte et supprimez le nœud suivant : `<GeneratePkgDefFile>false</GeneratePkgDefFile>`.
+ Vérifiez que le fichier .pkgdef s'affiche dans le dossier de génération, qui correspond en général à bin\Debug ou bin\Release. S'il ne s'affiche pas, ouvrez le fichier .csproj dans un éditeur de texte et supprimez le nœud suivant : `<GeneratePkgDefFile>false</GeneratePkgDefFile>`.
 
  Pour plus d'informations, consultez [VSPackages](../extensibility/internals/vspackages.md).
 
@@ -184,7 +182,7 @@ Un fichier .vsix peut être créé de plusieurs façons. La procédure suivante 
 
    Si le processeur de directive personnalisé ne se trouve pas dans le GAC, les sous-clés de Registre doivent se présenter comme dans le tableau suivant :
 
-|Name|Type|Données|
+|Nom|Type|Données|
 |-|-|-|
 |(Default)|REG_SZ|(valeur non définie)|
 |Classe|REG_SZ|**\<Nom de Namespace >. \<Nom de la classe >**|
@@ -192,7 +190,7 @@ Un fichier .vsix peut être créé de plusieurs façons. La procédure suivante 
 
  Si l'assembly se trouve dans le GAC, les sous-clés de Registre doivent se présenter comme dans le tableau suivant :
 
-|Name|Type|Données|
+|Nom|Type|Données|
 |-|-|-|
 |(Default)|REG_SZ|(valeur non définie)|
 |Classe|REG_SZ|\<**Votre nom de classe complet**>|

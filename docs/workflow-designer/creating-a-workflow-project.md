@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf4013f1302ff4952fa34c689801978b9116e549
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 15c02312d5c257f13b9c0394790bc8a2611d7972
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222452"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58414756"
 ---
 # <a name="workflow-project-templates"></a>Modèles de projet de flux de travail
 
@@ -36,20 +36,14 @@ Visual Studio fournit quatre modèles de projet de flux de travail différents 
 
 Pour accéder à ces modèles, installez d’abord le **Windows Workflow Foundation** composant de Visual Studio. Pour obtenir des instructions détaillées, consultez [installer Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
-1. Une fois que vous avez installé le **Windows Workflow Foundation** composant, ouvrez le **nouveau projet** boîte de dialogue en sélectionnant **fichier** > **New**  >  **Projet**.
+1. Une fois que vous avez installé le **Windows Workflow Foundation** composant, sélectionnez **fichier** > **New** > **deprojet**.
 
-1. Dans le volet gauche, sélectionnez le **Visual C#** > **Workflow** catégorie (ou **Visual Basic** > **Workflow**si vous préférez Visual Basic).
+1. Recherchez et sélectionnez un modèle de projet de flux de travail, par exemple, le **Application Console de Workflow** modèle.
 
-1. Dans le volet central, sélectionnez un modèle de projet, tel que **Application Console de Workflow**.
-
-1. Dans le **nom** , entrez un nom descriptif pour votre projet pour faciliter l’identification.
-
-1. Dans le **emplacement** , entrez le répertoire dans lequel vous souhaitez enregistrer votre projet, ou sélectionnez **Parcourir** pour naviguer jusqu'à lui.
-
-1. Dans le **Solution** , entrez le nom de la nouvelle solution. Sélectionnez **OK** pour créer l’application.
+1. Suivez les instructions créer le projet.
 
    > [!NOTE]
-   > Si vous souhaitez ajouter un nouveau projet à une solution existante, ouvrez cette solution dans Visual Studio, avec le bouton droit de la solution dans **l’Explorateur de solutions**, puis sélectionnez **ajouter** > **nouveau Projet** pour ouvrir le **nouveau projet** boîte de dialogue.
+   > Si vous souhaitez ajouter un nouveau projet à une solution existante, ouvrez cette solution dans Visual Studio, avec le bouton droit de la solution dans **l’Explorateur de solutions**, puis sélectionnez **ajouter** > **nouveau Projet**.
 
 ## <a name="workflow-console-app"></a>Application de console de workflow
 
