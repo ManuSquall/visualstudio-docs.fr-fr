@@ -16,40 +16,41 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a46dc8def91a15b8534d597f8cc0d14eb99f9002
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b5ed2b15c59ca4b9955a2f28985325a2d5e244ee
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927878"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416420"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Comment : définir un langage spécifique à un domaine
 Pour définir un langage spécifique à un domaine (DSL), vous créez une solution Visual Studio à partir d’un modèle. Le composant principal de la solution est le diagramme de définition DSL, qui est stocké dans DslDefinition.dsl. La définition DSL définit les classes et les formes de la solution DSL. Après avoir modifié et ajouté à ces éléments, vous pouvez ajouter du code programme pour personnaliser la solution DSL plus en détail.
 
-Si vous ne connaissez pas DSL, nous vous recommandons de collaborer via le **atelier des outils DSL**, que vous trouverez dans ce site : [SDK de création et de modélisation](http://go.microsoft.com/fwlink/?LinkID=186128)
+Si vous ne connaissez pas DSL, nous vous recommandons de collaborer via le **atelier des outils DSL**, que vous trouverez dans ce site : [Visualisation et modélisation du Kit de développement logiciel](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="templates"></a> Sélection d’une Solution de modèle
- Pour définir un DSL, vous devez avoir installé les composants suivants :
 
+Pour définir un DSL, vous devez avoir installé les composants suivants :
 
-| | |
-|-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
-| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
-| Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling | |
+- Visual Studio
+- Visual Studio extension charge de travail développement (inclut le SDK Visual Studio)
+- Modélisation du Kit de développement logiciel (installer comme composants individuels dans Visual Studio)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
+Pour créer un nouveau langage spécifique à un domaine, vous créez une nouvelle solution Visual Studio à l’aide du modèle de projet de langage spécifique à un domaine.
 
- Pour créer un nouveau langage spécifique à un domaine, vous créez une nouvelle solution Visual Studio à l’aide du modèle de projet de langage spécifique à un domaine.
+### <a name="to-create-a-dsl-solution"></a>Pour créer une solution DSL
 
-#### <a name="to-create-a-dsl-solution"></a>Pour créer une solution DSL
+1. Créer un nouveau **Domain-Specific Language** projet.
 
-1. Créer une solution avec le **Domain-Specific Language** modèle, qui peut être trouvée sous **autres Types de projet/extensibilité** dans le **nouveau projet** boîte de dialogue.
+   ::: moniker range="vs-2017"
 
     ![Boîte de dialogue Créer DSL](../modeling/media/create_dsldialog.png)
 
-    Lorsque vous cliquez sur **OK**, le **Domain-Specific Language Assistant** s’ouvre et affiche une liste des solutions de modèle DSL.
+   ::: moniker-end
+
+    Le **Domain-Specific Language Assistant** s’ouvre et affiche une liste des solutions de modèle DSL.
 
 2. Cliquez sur chaque modèle pour afficher une description. Choisissez la solution qui ressemble le plus à ce que vous voulez créer.
 
@@ -142,7 +143,7 @@ Si vous ne connaissez pas DSL, nous vous recommandons de collaborer via le **ate
 
  La figure suivante est un exemple de modèle de cette solution DSL :
 
- ![Modèle d’instance du DSL généré](../modeling/media/music_instance.png)
+ ![Modèle d'instance du DSL généré](../modeling/media/music_instance.png)
 
 > [!NOTE]
 >  Le terme « modèle » fait référence à une instance de votre solution DSL créée par les utilisateurs. Elle est généralement affichée sous forme de diagramme. Cette rubrique traite du diagramme de définition DSL et des diagrammes de modèles qui apparaissent lors de l'utilisation de votre solution DSL.
@@ -330,7 +331,7 @@ Si vous ne connaissez pas DSL, nous vous recommandons de collaborer via le **ate
 
  Par exemple, si Albums et Artistes sont affichés en tant que formes sur votre diagramme, vous pourriez définir une relation nommée ArtistesApparusSurAlbums qui relie des Artistes aux Albums sur lesquels ils ont travaillé. Voir l'exemple sur la figure.
 
- ![Modèle d’instance du DSL généré](../modeling/media/music_instance.png)
+ ![Modèle d'instance du DSL généré](../modeling/media/music_instance.png)
 
  Les relations de référence peuvent aussi lier des éléments du même type. Par exemple, dans une solution DSL représentant un arbre généalogique, la relation entre les parents et leurs enfants est une relation de référence de Personne à Personne.
 
@@ -594,7 +595,7 @@ Si vous ne connaissez pas DSL, nous vous recommandons de collaborer via le **ate
 
      Pour plus d’informations, consultez [personnalisation et extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-2.  Étendez vos outils de modélisation à l'aide de code de programme pour obtenir des effets avancés. Par exemple, vous pouvez créer des commandes de menu qui peuvent modifier le modèle et vous pouvez créer des outils qui intègrent plusieurs solutions DSL. Le Kit VMSDK a été conçu spécifiquement pour simplifier l'intégration à vos extensions avec le code généré à partir de la définition DSL.  Pour plus d’informations, consultez [écriture du Code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md).
+2.  Étendez vos outils de modélisation à l'aide de code de programme pour obtenir des effets avancés. Par exemple, vous pouvez créer des commandes de menu qui peuvent modifier le modèle et vous pouvez créer des outils qui intègrent plusieurs solutions DSL. Le Kit VMSDK a été conçu spécifiquement pour simplifier l'intégration à vos extensions avec le code généré à partir de la définition DSL.  Pour plus d’informations, consultez [écriture de Code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
 ### <a name="changing-the-dsl-definition"></a>Modification de la définition DSL
  Quand vous créez un élément dans une définition DSL, de nombreuses valeurs par défaut sont définies automatiquement. Une fois ces valeurs définies, vous pouvez les modifier. Cela simplifie le développement des solutions DSL tout en permettant d'effectuer de puissantes personnalisations.
@@ -606,7 +607,7 @@ Si vous ne connaissez pas DSL, nous vous recommandons de collaborer via le **ate
  Consultez aussi [Guide pratique pour Modifier le Namespace d’un langage spécifique à un domaine](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
 ## <a name="trouble"></a> Résolution des problèmes
- Le tableau suivant mentionne certains des problèmes les plus courants qui peuvent être rencontrés lors de la conception d'une solution DSL, avec quelques suggestions de solution. Obtenir des conseils supplémentaires sont disponibles sur le [Forum d’extension des outils de visualisation](http://go.microsoft.com/fwlink/?LinkId=186074).
+ Le tableau suivant mentionne certains des problèmes les plus courants qui peuvent être rencontrés lors de la conception d'une solution DSL, avec quelques suggestions de solution. Obtenir des conseils supplémentaires sont disponibles sur le [Forum des outils d’extensibilité de visualisation](http://go.microsoft.com/fwlink/?LinkId=186074).
 
 
 | Problème | Suggestion |

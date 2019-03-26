@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00796a43326d26fa7f25d6cb925851f411f916e3
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 524d50a946091325be5c27bd7ae55dd5dc720a1d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355787"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415694"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Génération de code durant la conception à l'aide de modèles de texte T4
 Modèles de texte T4 au moment du design vous permettent de générer du code de programme et d’autres fichiers dans votre projet Visual Studio. En règle générale, vous écrivez les modèles pour qu’ils varient le code qu’ils génèrent en fonction des données à partir d’un *modèle*. Un modèle est un fichier ou une base de données qui contient des informations clés sur les exigences de votre application.
@@ -34,13 +34,9 @@ Modèles de texte T4 au moment du design vous permettent de générer du code de
 
  Un modèle de texte contient une combinaison du texte que vous souhaitez générer et du code de programme qui génère des parties variables du texte. Le code de programme vous permet de répéter ou omettre les parties du texte généré de manière conditionnelle. Le texte généré peut lui-même être du code de programme qui constituera une partie de votre application.
 
-## <a name="creating-a-design-time-t4-text-template"></a>Création d’un modèle de texte T4 au moment du design
+## <a name="create-a-design-time-t4-text-template"></a>Créer un modèle de texte T4 au moment du Design
 
-#### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>Pour créer un modèle T4 au moment de la conception dans Visual Studio
-
-1. Créer un projet Visual Studio, ou ouvrez-en une existante.
-
-    Par exemple, sur le **fichier** menu, choisissez **New** > **projet**.
+1. Créez un projet Visual Studio, ou ouvrez-en une existante.
 
 2. Ajouter un fichier de modèle de texte à votre projet et donnez-lui un nom qui a l’extension **.tt**.
 
@@ -70,10 +66,11 @@ Modèles de texte T4 au moment du design vous permettent de générer du code de
 6. Dans **l’Explorateur de solutions**, développez le nœud de fichier de modèle et vous trouverez un fichier portant l’extension **.txt**. Ce fichier contient le texte généré à partir du modèle.
 
    > [!NOTE]
-   >  Si votre projet est un projet Visual Basic, vous devez cliquer sur **afficher tous les fichiers** afin de voir le fichier de sortie.
+   > Si votre projet est un projet Visual Basic, vous devez cliquer sur **afficher tous les fichiers** afin de voir le fichier de sortie.
 
-### <a name="regenerating-the-code"></a>Regénération du code
- Un modèle est exécuté, générant le fichier auxiliaire, dans les cas suivants :
+### <a name="regenerate-the-code"></a>Régénérer le code
+
+Un modèle est exécuté, générant le fichier auxiliaire, dans les cas suivants :
 
 - Modifier le modèle, puis modifiez le focus vers une autre fenêtre de Visual Studio.
 
@@ -83,12 +80,11 @@ Modèles de texte T4 au moment du design vous permettent de générer du code de
 
 - Dans **l’Explorateur de solutions**, dans le menu contextuel de n’importe quel fichier, choisissez **exécuter un outil personnalisé**. Appliquez cette méthode pour transformer un sous-ensemble de modèles sélectionné.
 
-  Vous pouvez également configurer un projet Visual Studio afin que les modèles sont exécutées lorsque les fichiers de données qu’ils lisent ont changé. Pour plus d’informations, consultez [regénération automatique du code](#Regenerating).
+Vous pouvez également configurer un projet Visual Studio afin que les modèles sont exécutées lorsque les fichiers de données qu’ils lisent ont changé. Pour plus d’informations, consultez [regénération automatique du code](#Regenerating).
 
-## <a name="generating-variable-text"></a>Génération de texte variable
- Les modèles de texte vous permettent d'utiliser du code de programme pour varier le contenu du fichier généré.
+## <a name="generate-variable-text"></a>Générer du texte Variable
 
-#### <a name="to-generate-text-by-using-program-code"></a>Pour générer du texte à l'aide de code de programme
+Les modèles de texte vous permettent d'utiliser du code de programme pour varier le contenu du fichier généré.
 
 1. Modifiez le contenu du fichier `.tt` :
 

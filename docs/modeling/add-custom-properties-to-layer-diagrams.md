@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ba8f58d13d3e0c9e360796092a8d522f54d0384
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 76bfa81f1285dce000f79c356a604bab1d53cc55
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939539"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415822"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Ajouter des propriétés personnalisées à des diagrammes de dépendance
 
@@ -22,7 +22,7 @@ Lorsque vous écrivez le code d’extension pour des diagrammes de dépendance, 
 
 ## <a name="non-visible-properties"></a>Propriétés non visibles
 
-Si vous souhaitez simplement votre code associe des valeurs pour n’importe quel élément dans un diagramme de dépendances, vous n’avez pas besoin de définir un composant MEF. Il existe un dictionnaire nommé `Properties` dans <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>. Ajoutez simplement les valeurs marshalables au dictionnaire d’un élément de couche. Elles seront enregistrées en tant que partie du diagramme de dépendance. Pour plus d’informations, consultez [Parcourir et mise à jour des modèles dans le code de programme de couche](../modeling/navigate-and-update-layer-models-in-program-code.md).
+Si vous souhaitez simplement votre code associe des valeurs pour n’importe quel élément dans un diagramme de dépendances, vous n’avez pas besoin de définir un composant MEF. Il existe un dictionnaire nommé `Properties` dans <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>. Ajoutez simplement les valeurs marshalables au dictionnaire d'un élément de couche. Elles seront enregistrées en tant que partie du diagramme de dépendance.
 
 ## <a name="editable-properties"></a>Propriétés modifiables
 

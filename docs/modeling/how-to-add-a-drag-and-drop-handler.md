@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43a147db40ef8e604a3ae7fd8a72f9eb6a704e63
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 49eed907e38c79a98e5604a96380efa5d7281c1d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867746"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415666"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Procédure : Ajouter un gestionnaire de glisser-déplacer
 
@@ -128,7 +128,7 @@ Pour connaître les formats dans lesquels vos informations sur la source du dép
 
     -   diagrameventargs.Data.getdataformats () - répertorie les formats dans lesquels vous pouvez décoder l’objet glissé. Par exemple, si l'utilisateur déplace un fichier à partir du Bureau, les formats disponibles incluent le nom de fichier (« `FileNameW` »).
 
-    -   `diagramEventArgs.Data.GetData(format)` -Décode l’objet glissé dans le format spécifié. Effectuez une conversion de type de l'objet dans le type approprié. Par exemple :
+    -   `diagramEventArgs.Data.GetData(format)` -Décode l’objet glissé dans le format spécifié. Effectuez une conversion de type de l'objet dans le type approprié. Exemple :
 
          `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
@@ -158,13 +158,13 @@ Les propriétés `Data` et `Prototype` des arguments de l'événement contiennen
 
 ### <a name="to-prepare-a-dsl-project-for-model-bus"></a>Pour préparer un projet DSL pour le bus de modèles
 
-1.  Rendez le DSL source accessible par Visual Studio Model Bus :
+Rendez le DSL source accessible par Visual Studio Model Bus :
 
-    1.  Téléchargez et installez l'extension Visual Studio Model Bus, si ce n'est déjà fait. Pour plus d’informations, consultez [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
+1. Téléchargez et installez l'extension Visual Studio Model Bus, si ce n'est déjà fait. Pour plus d’informations, consultez [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
 
-    2.  Ouvrez le fichier de définition DSL du DSL source dans le concepteur DSL. Cliquez sur l’aire de conception, puis sur **activer Modelbus**. Dans la boîte de dialogue, choisissez l'une ou l'autre des options.  Cliquez sur **OK**. Un nouveau projet « ModelBus » vient s'ajouter à la solution DSL.
+2. Ouvrez le fichier de définition DSL du DSL source dans le concepteur DSL. Cliquez sur l’aire de conception, puis sur **activer Modelbus**. Dans la boîte de dialogue, choisissez l'une ou l'autre des options.  Cliquez sur **OK**. Un nouveau projet « ModelBus » vient s'ajouter à la solution DSL.
 
-    3.  Cliquez sur **transformer tous les modèles** et régénérez la solution.
+3. Cliquez sur **transformer tous les modèles** et régénérez la solution.
 
 ### <a name="to-send-an-object-from-a-source-dsl"></a>Pour envoyer un objet à partir d'un DSL source
 
