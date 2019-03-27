@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c427a16964bbccfc77139c17659a4fd98d490253
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: HT
+ms.openlocfilehash: b85999a22bf49923630a0abe2f9ef33950edd8fe
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069864"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325079"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Lier des contrôles WPF à un dataset
 
@@ -74,7 +74,7 @@ Créer un projet WPF pour afficher les enregistrements produit.
 
 1. Ouvrez Visual Studio.
 
-2. Dans la fenêtre de démarrage, choisissez **créer un nouveau projet**.
+2. Dans la fenêtre de démarrage, choisissez **Créer un projet**.
 
 3. Recherchez le C# **application WPF** modèle de projet et suivez les étapes pour créer le projet, le projet d’affectation de noms **AdventureWorksProductsEditor**.
 

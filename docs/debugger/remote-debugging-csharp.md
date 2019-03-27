@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 55265b24a60697b7d84940968c192b7e6a38a2f3
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: c2e388154e0efa129a916fd0461a01317edbb870
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526735"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355161"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Débogage à distance un C# ou un projet Visual Basic dans Visual Studio
 Pour déboguer une application de Visual Studio qui a été déployée sur un autre ordinateur, installer et exécuter les outils à distance sur l’ordinateur où vous avez déployé votre application, configurez votre projet pour se connecter à l’ordinateur distant à partir de Visual Studio, puis exécutez votre application.
@@ -71,7 +71,15 @@ Le débogueur ne peut pas déployer d’applications de bureau Visual C# ou Visu
 
 5. Assurez-vous que la zone de texte **Répertoire de travail** est vide.
 
-6. Choisissez **utiliser l’ordinateur distant**et le type **MJO-DL:4022** dans la zone de texte. (4022 est le numéro de port indiqué dans la fenêtre du débogueur distant. Le numéro de port incrémente 2 dans chaque version de Visual Studio).
+6. Choisissez **utiliser l’ordinateur distant**et le type **yourmachinename:port** dans la zone de texte. (Le numéro de port est indiqué dans la fenêtre du débogueur distant. Le numéro de port incrémente 2 dans chaque version de Visual Studio).
+
+    Dans cet exemple, utilisez :
+    ::: moniker range=">=vs-2019"
+    **MJO-DL:4024** sur Visual Studio 2019
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    **MJO-DL:4022** sur Visual Studio 2017
+    ::: moniker-end
 
 7. Vérifiez que l’option **Permettre le débogage du code natif** n’est pas sélectionnée.
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a42396236c88bdc574a10a7557963dfc39922a1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fed1fff9e776521581455a89db48897f22de7bf5
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631131"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355615"
 ---
 # <a name="msbuild-properties"></a>MSBuild (propriétés)
 Les propriétés sont des paires nom-valeur qui peuvent être utilisées pour configurer des générations. Elles sont utiles pour transmettre des valeurs aux tâches, évaluer des conditions et stocker les valeurs qui seront référencées dans tout le fichier projet.
@@ -118,7 +118,6 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
  Les propriétés peuvent contenir un code XML arbitraire, ce qui peut aider à transmettre des valeurs aux tâches ou à afficher les informations de journalisation. L’exemple suivant présente la propriété `ConfigTemplate`, qui est pourvue d’une valeur qui contient le code XML et d’autres références de propriété. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] remplace les références de propriété par leurs valeurs de propriété respectives. Les valeurs de propriété sont attribuées dans l’ordre dans lequel elles apparaissent. Par conséquent, dans cet exemple, les propriétés `$(MySupportedVersion)`, `$(MyRequiredVersion)` et `$(MySafeMode)` doivent déjà avoir été définies.
 
 ```xml
-
 <PropertyGroup>
     <ConfigTemplate>
         <Configuration>

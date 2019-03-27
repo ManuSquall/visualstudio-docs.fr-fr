@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4e73e6939dd5b2cad382d56616e7cf1f2d64934e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 1a51b056e4a3a4f2f434e6fd57ec270029d9155b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223713"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325131"
 ---
 # <a name="live-unit-testing-with-visual-studio"></a>Live Unit Testing avec Visual Studio
 
@@ -28,28 +28,12 @@ Lorsque vous utilisez Live Unit Testing pour vos tests, Live Unit Testing conser
 ## <a name="supported-test-frameworks"></a>Frameworks de test pris en charge
 Live Unit Testing fonctionne avec les trois frameworks de tests unitaires populaires listés dans le tableau suivant. La version minimale prise en charge des adaptateurs et des frameworks est également listée dans le tableau. Les frameworks de tests unitaires sont tous disponibles dans NuGet.org.
 
-<table>
-<tr>
-   <th>Framework de test</th>
-   <th>Version minimale de l’adaptateur Visual Studio</th>
-   <th>Version minimale du framework</th>
-</tr>
-<tr>
-   <td>xUnit.net</td>
-   <td> xunit.runner.visualstudio version 2.2.0-beta3-build1187</td>
-   <td>xunit 1.9.2</td>
-</tr>
-<tr>
-   <td>NUnit</td>
-   <td>NUnit3TestAdapter version 3.5.1</td>
-   <td>NUnit version 3.5.0</td>
-</tr>
-<tr>
-   <td>MSTest</td>
-   <td>MSTest.TestAdapter 1.1.4-preview</td>
-   <td>MSTest.TestFramework 1.0.5-preview</td>
-</tr>
-</table>
+
+|Framework de test  |Version minimale de l’adaptateur Visual Studio  |Version minimale du framework  |
+|---------|---------|---------|
+|xUnit.net |xunit.runner.visualstudio version 2.2.0-beta3-build1187 |xunit 1.9.2 |
+|NUnit |NUnit3TestAdapter version 3.5.1 |NUnit version 3.5.0 |
+|MSTest |MSTest.TestAdapter 1.1.4-preview |MSTest.TestFramework 1.0.5-preview |
 
 Si vous avez des projets de test basés sur MSTest plus anciens qui référencent `Microsoft.VisualStudio.QualityTools.UnitTestFramework` et que vous ne souhaitez pas passer aux packages NuGet de MSTest plus récents, faites une mise à niveau vers Visual Studio 2017 version 15.4 ou ultérieure.
 

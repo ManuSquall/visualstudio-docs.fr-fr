@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c120e94943d9e75c968ecf13fbdb1ec6d883eff2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f7ec6628c6cfd12a35de151689196dadd4868f83
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867920"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324758"
 ---
 # <a name="how-to-create-item-templates"></a>Guide pratique pour créer des modèles d’élément
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ Les étapes de la [première procédure](#to-add-a-custom-project-item-template-
   
     Un projet C++ Windows Store pour Windows 8.1 utilise la valeur `WinRT-Native-6.3`. Pour Windows 10 et d’autres types de projets, consultez [TemplateGroupID, élément (modèles Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md).  
   
-    L'exemple suivant illustre le contenu complet d'un fichier .vstemplate après l'ajout de la ligne XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`. Cet exemple est spécifique aux projets C#. Vous pouvez modifier les éléments [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> <ProjectTpe> et \< pour spécifier d’autres types de projets et langages.  
+    L'exemple suivant illustre le contenu complet d'un fichier .vstemplate après l'ajout de la ligne XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`. Cet exemple est spécifique aux projets C#. Vous pouvez modifier le \<ProjectType > et \< [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> éléments à spécifier d’autres types de projets et langages.  
   
    ```xml  
    <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">  

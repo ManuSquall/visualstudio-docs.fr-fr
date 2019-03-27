@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: f59dceabb076ebce36755c41caa6de00258be883
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: afd4b758332d9357dc20dd84e726d72da4d2db74
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160639"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355183"
 ---
 # <a name="generate-usings-in-visual-studio"></a>Générer des instructions using dans Visual Studio
 
@@ -22,7 +22,7 @@ Cette génération de code s’applique à :
 
 - C#
 
-**Quoi :** **Quoi :** Permet d’ajouter immédiatement les importations ou [instructions using](/dotnet/csharp/language-reference/keywords/using-statement) nécessaires du code copié-collé.
+**Quoi :** Permet d’ajouter immédiatement les importations ou [instructions using](/dotnet/csharp/language-reference/keywords/using-statement) nécessaires du code copié-collé.
 
 **Quand :** Il est pratique courante de copier-coller du code à partir de différents endroits d’un projet ou d’autres sources de code. Cette action rapide analyse les importations manquantes dans le code copié-collé et vous invite à les ajouter.
 

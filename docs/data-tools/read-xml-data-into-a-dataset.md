@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b603979424c3593a673cf11db81ca2fc1c6a03bd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 58058bf189cf65214ed7d3fe6083ef418107db4f
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934144"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268536"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Lire les données XML dans un dataset
 
@@ -33,17 +33,7 @@ ADO.NET fournit des méthodes simples pour travailler avec des données XML. Dan
 
 ## <a name="create-a-new-project"></a>Créer un projet
 
-Dans cette étape, vous allez créer un Visual Basic ou le visuel C# projet.
-
-1. Dans Visual Studio, sur le **fichier** menu, sélectionnez **New** > **projet**.
-
-2. Développez le **Visual C#**  ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
-
-3. Dans le volet central, sélectionnez le **Windows Forms application** type de projet.
-
-4. Nommez le projet **ReadingXML**, puis choisissez **OK**.
-
-   Le **ReadingXML** projet est créé et ajouté à **l’Explorateur de solutions**.
+Créer un nouveau **Windows Forms application** projet pour soit C# ou Visual Basic. Nommez le projet **ReadingXML**.
 
 ## <a name="generate-the-xml-file-to-be-read-into-the-dataset"></a>Générer le fichier XML à lire dans le jeu de données
 
@@ -123,15 +113,15 @@ Dans cette étape, vous allez créer un Visual Basic ou le visuel C# projet.
 
 L’interface utilisateur pour cette application se compose des éléments suivants :
 
--   Un <xref:System.Windows.Forms.DataGridView> contrôle qui affiche le contenu du fichier XML sous forme de données.
+- Un <xref:System.Windows.Forms.DataGridView> contrôle qui affiche le contenu du fichier XML sous forme de données.
 
--   Un <xref:System.Windows.Forms.TextBox> contrôle qui affiche le schéma XML pour le fichier XML.
+- Un <xref:System.Windows.Forms.TextBox> contrôle qui affiche le schéma XML pour le fichier XML.
 
--   Deux <xref:System.Windows.Forms.Button> contrôles.
+- Deux <xref:System.Windows.Forms.Button> contrôles.
 
-    -   Un bouton lit le fichier XML dans le jeu de données et l’affiche dans le <xref:System.Windows.Forms.DataGridView> contrôle.
+    - Un bouton lit le fichier XML dans le jeu de données et l’affiche dans le <xref:System.Windows.Forms.DataGridView> contrôle.
 
-    -   Un deuxième bouton extrait le schéma du jeu de données et via un <xref:System.IO.StringWriter> affiche dans le <xref:System.Windows.Forms.TextBox> contrôle.
+    - Un deuxième bouton extrait le schéma du jeu de données et via un <xref:System.IO.StringWriter> affiche dans le <xref:System.Windows.Forms.TextBox> contrôle.
 
 ### <a name="to-add-controls-to-the-form"></a>Pour ajouter des contrôles au formulaire
 
@@ -139,11 +129,11 @@ L’interface utilisateur pour cette application se compose des éléments suiva
 
 2.  À partir de la **boîte à outils**, faites glisser les contrôles suivants sur le formulaire :
 
-    -   Un seul <xref:System.Windows.Forms.DataGridView> contrôle
+    - Un seul <xref:System.Windows.Forms.DataGridView> contrôle
 
-    -   Un seul <xref:System.Windows.Forms.TextBox> contrôle
+    - Un seul <xref:System.Windows.Forms.TextBox> contrôle
 
-    -   Deux <xref:System.Windows.Forms.Button> contrôles
+    - Deux <xref:System.Windows.Forms.Button> contrôles
 
 3.  Définissez les propriétés suivantes :
 
@@ -220,9 +210,9 @@ Vous pouvez maintenant tester le formulaire pour vous assurer qu’il se comport
 
 Cette procédure pas à pas vous enseigne les principes fondamentaux de la lecture d’un fichier XML dans un jeu de données, ainsi que la création d’un schéma en fonction du contenu du fichier XML. Voici quelques tâches que vous pouvez effectuer ensuite :
 
--   Modifier les données dans le jeu de données et les enregistrer à nouveau au format XML. Pour plus d'informations, consultez <xref:System.Data.DataSet.WriteXml%2A>.
+- Modifier les données dans le jeu de données et les enregistrer à nouveau au format XML. Pour plus d'informations, consultez <xref:System.Data.DataSet.WriteXml%2A>.
 
--   Modifier les données dans le jeu de données et écrire sur une base de données.
+- Modifier les données dans le jeu de données et écrire sur une base de données.
 
 ## <a name="see-also"></a>Voir aussi
 
