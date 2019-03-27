@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 945a04213ab902c17459eba6e418aeebea78f6d9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b5f2296e7dbd6c40327ed516f4da2bf51b8dd4cd
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936614"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268562"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Enregistrer des données dans une base de données (plusieurs tables)
 
@@ -31,17 +31,15 @@ Vous pouvez enregistrer des données de votre application dans la base de donné
 
 Cette procédure pas à pas décrit notamment les tâches suivantes :
 
--   Création d’un nouveau **Windows Forms Application** projet.
+-  Création et configuration d’une source de données dans votre application avec le [Assistant de Configuration de Source de données](../data-tools/media/data-source-configuration-wizard.png).
 
--   Création et configuration d’une source de données dans votre application avec le [Assistant de Configuration de Source de données](../data-tools/media/data-source-configuration-wizard.png).
+-  Définition des contrôles des éléments dans le [fenêtre Sources de données](add-new-data-sources.md#data-sources-window). Pour plus d’informations, consultez [définir le contrôle à créer lors du déplacement de la fenêtre Sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
--   Définition des contrôles des éléments dans le [fenêtre Sources de données](add-new-data-sources.md#data-sources-window). Pour plus d’informations, consultez [définir le contrôle à créer lors du déplacement de la fenêtre Sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+-  Création de contrôles liés aux données en faisant glisser des éléments depuis la fenêtre **Sources de données** vers votre formulaire.
 
--   Création de contrôles liés aux données en faisant glisser des éléments depuis la fenêtre **Sources de données** vers votre formulaire.
+-  Modification des enregistrements dans chaque table dans le jeu de données.
 
--   Modification des enregistrements dans chaque table dans le jeu de données.
-
--   Modification du code pour renvoyer les données mises à jour dans le dataset à la base de données.
+-  Modification du code pour renvoyer les données mises à jour dans le dataset à la base de données.
 
 ## <a name="prerequisites"></a>Prérequis
 
@@ -63,17 +61,7 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
 
 ## <a name="create-the-windows-forms-application"></a>Créer l’application Windows Forms
 
-La première étape consiste à créer un **Windows Forms Application**. Affectation d’un nom au projet est facultative pendant cette étape, mais nous allons lui donner un nom, car nous allons enregistrer le projet ultérieurement.
-
-1. Dans Visual Studio, sur le **fichier** menu, sélectionnez **New** > **projet**.
-
-2. Développez le **Visual C#**  ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
-
-3. Dans le volet central, sélectionnez le **Windows Forms application** type de projet.
-
-4. Nommez le projet **UpdateMultipleTablesWalkthrough**, puis choisissez **OK**.
-
-     Le projet **UpdateMultipleTablesWalkthrough** est créé et ajouté à l’**Explorateur de solutions**.
+Créer un nouveau **Windows Forms application** projet pour soit C# ou Visual Basic. Attribuez le nom **UpdateMultipleTablesWalkthrough** au projet.
 
 ## <a name="create-the-data-source"></a>Créer la source de données
 
@@ -89,11 +77,11 @@ Cette étape crée une source de données à partir de la base de données North
 
 4. Sur le **choisir votre connexion de données** , effectuez une des opérations suivantes :
 
-    -   Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.
+    - Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.
 
          - ou -
 
-    -   Sélectionnez **Nouvelle connexion** pour ouvrir la boîte de dialogue **Ajouter/Modifier la connexion**.
+    - Sélectionnez **Nouvelle connexion** pour ouvrir la boîte de dialogue **Ajouter/Modifier la connexion**.
 
 5. Si votre base de données requiert un mot de passe, sélectionnez l’option pour inclure les données sensibles, puis sélectionnez **suivant**.
 
@@ -109,7 +97,7 @@ Cette étape crée une source de données à partir de la base de données North
 
 Pour cette procédure pas à pas, les données dans le `Customers` table se trouve dans un **détails** où les données sont affichées dans des contrôles individuels. Les données à partir de la `Orders` table se trouve dans un **grille** mise en page qui s’affiche dans un <xref:System.Windows.Forms.DataGridView> contrôle.
 
-### <a name="to-set-the-drop-type-for-the-items-in-the-data-sources-window"></a>Pour définir le type de dépôt des éléments de la fenêtre Sources de données
+### <a name="to-set-the-drop-type-for-the-items-in-the-data-sources-window"></a>Pour définir le type de déplacement des éléments de la fenêtre Sources de données
 
 1. Dans le **des Sources de données** fenêtre, développez le **clients** nœud.
 

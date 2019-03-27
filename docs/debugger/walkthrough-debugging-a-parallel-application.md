@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07ecb3d7658cc89207551af7df875eba0b2c1e4f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0c6a8c564e6786c2919bcf61ae8f23c990e9abc1
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709406"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476057"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Procédure pas à pas : Débogage d’une Application parallèle dans Visual Studio (C#, Visual Basic, C++)
 
@@ -62,23 +62,39 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
 
 #### <a name="to-create-the-sample-project"></a>Pour créer l'exemple de projet
 
-1. Dans Visual Studio, dans le menu **Fichier**,pointez sur **Nouveau**, puis cliquez sur **Projet**.
+1. Ouvrez Visual Studio et créez un projet.
 
-2. Sélectionnez **Visual C#** , **Visual Basic**, ou **Visual C++**. Pour les langages managés, assurez-vous que [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] est affiché dans la fenêtre .NET Framework.
+    ::: moniker range=">=vs-2019"
+    Type **Ctrl + Q** pour ouvrir la zone de recherche, tapez **console** (ou **c ++**), choisissez **modèles**, puis :
+    
+    - Pour C# ou Visual Basic, choisissez **créer un nouveau projet application Console (.NET Framework)** pour soit C# ou Visual Basic. Dans la boîte de dialogue qui s’affiche, choisissez **créer**.
+    - Pour C++, choisissez **créer un nouveau projet application Console** pour C++. Dans la boîte de dialogue qui s’affiche, choisissez **créer**.
 
-3. Sous **Windows Desktop**, choisissez **Application Console** puis cliquez sur **OK**. Restez en configuration Debug, qui est la valeur par défaut.
+    Ensuite, tapez un nom ou utilisez le nom par défaut et cliquez sur **créer**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans le volet gauche de la **nouveau projet** boîte de dialogue, sélectionnez les éléments suivants :
 
-4. Ouvrez le fichier de code .cpp, .cs ou .vb dans le projet. Supprimez son contenu pour créer un fichier de code vide.
+    - Pour un C# application, sous **Visual C#** , choisissez **Windows Desktop**, puis, dans le volet central, choisissez **application Console (.NET Framework)**.
+    - Pour une application Visual Basic, sous **Visual Basic**, choisissez **Windows Desktop**, puis, dans le volet central, choisissez **application Console (.NET Framework)**.
+    - Pour une application C++, sous **Visual C++**, choisissez **Windows Desktop**,, puis **Application de Console Windows**.
 
-5. Collez le code suivant dans le langage choisi dans le fichier de code vide.
+    Ensuite, tapez un nom ou utilisez le nom par défaut et cliquez sur **OK**.
+    ::: moniker-end
+
+    Si vous ne voyez pas le **application Console** modèle de projet, accédez à **outils** > **obtenir les outils et fonctionnalités...** , qui ouvre le programme d’installation Visual Studio. Choisissez la charge de travail **Développement .NET Desktop** ou **Développement Desktop avec C++**, puis choisissez **Modifier**.
+
+1. Ouvrez le fichier de code .cpp, .cs ou .vb dans le projet. Supprimez son contenu pour créer un fichier de code vide.
+
+1. Collez le code suivant dans le langage choisi dans le fichier de code vide.
 
    [!code-csharp[Debugger#1](../debugger/codesnippet/CSharp/walkthrough-debugging-a-parallel-application_1.cs)]
    [!code-cpp[Debugger#1](../debugger/codesnippet/CPP/walkthrough-debugging-a-parallel-application_1.cpp)]
    [!code-vb[Debugger#1](../debugger/codesnippet/VisualBasic/walkthrough-debugging-a-parallel-application_1.vb)]
 
-6. Dans le menu **Fichier**, cliquez sur **Enregistrer tout**.
+1. Dans le menu **Fichier**, cliquez sur **Enregistrer tout**.
 
-7. Dans le menu **Générer**, cliquez sur **Régénérer la solution**.
+1. Dans le menu **Générer**, cliquez sur **Régénérer la solution**.
 
     Notez qu'il y a quatre appels à `Debugger.Break` (`DebugBreak` dans l'exemple C++). Vous n'avez donc pas à insérer de points d'arrêt. La simple exécution de l'application entraînera son arrêt dans le débogueur jusqu'à quatre fois.
 

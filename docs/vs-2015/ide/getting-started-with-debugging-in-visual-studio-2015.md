@@ -10,12 +10,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7fecc637a62e96381362d79f66eb5a3cd4d8fa1d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dfa68202d7f73d45b8422bb34c90954528d6af7b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54764846"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324771"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Prise en main du débogage dans Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Visual Studio 2015 intègre un ensemble puissant d'outils de génération et de
 
  Pour commencer, utilisez simplement **Debug** comme configuration de build et **x86** comme plateforme. Une fois le codage et le débogage terminés, passez à la configuration **Release** et ciblez une plateforme spécifique. (Les anciennes versions de Visual Studio proposent une plateforme par défaut **AnyCPU** pour les projets de code .Net.)
 
- Remarque : quand vous générez votre projet, les valeurs de configuration et de plateforme servent également à déterminer le chemin d’accès au répertoire du projet à créer pour stocker le fichier exécutable. En général, il s’agit de **\<chemin_projet>\\<nom_projet>\\<configuration\>\\<plateforme\>**. Par exemple, un projet avec une configuration `Debug` et une plateforme `x86` se trouve sous `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86`. Cela peut être utile si vous utilisez vos propres outils ou scripts pour gérer ces fichiers exécutables générés.
+ Remarque : quand vous générez votre projet, les valeurs de configuration et de plateforme servent également à déterminer le chemin d’accès au répertoire du projet à créer pour stocker le fichier exécutable. En général, il s’agit de **\<chemin_projet>\\<nom_projet\>\\<configuration\>\\<plateforme\>**. Par exemple, un projet avec une configuration `Debug` et une plateforme `x86` se trouve sous `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86`. Cela peut être utile si vous utilisez vos propres outils ou scripts pour gérer ces fichiers exécutables générés.
 
 ### <a name="building-your-code"></a>Génération de code
  Une fois votre build configurée, il est temps de passer à la génération de votre projet. Le moyen le plus simple consiste à appuyer sur F7, mais vous pouvez aussi démarrer la build en sélectionnant **Générer->Générer la solution** dans le menu principal.

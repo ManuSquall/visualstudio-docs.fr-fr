@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3c73ab24cd2b50efd26f9a5b3ac1105325345033
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: aa8b91ccdf4aaa5b46f167673007723938fc62ef
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945065"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268780"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Créer un Windows Form pour rechercher des données
 
@@ -31,27 +31,25 @@ Vous pouvez ajouter des requêtes paramétrables à n’importe quel TableAdapte
 
 Cette procédure pas à pas décrit notamment les tâches suivantes :
 
--   Création d’un nouveau **Windows Forms Application** projet.
+- Création et configuration de la source de données dans votre application avec le **Configuration de Source de données** Assistant.
 
--   Création et configuration de la source de données dans votre application avec le **Configuration de Source de données** Assistant.
+- Définissant le type de déplacement des éléments dans le **des Sources de données** fenêtre.
 
--   Définissant le type de déplacement des éléments dans le **des Sources de données** fenêtre.
+- Création de contrôles affichant les données en faisant glisser des éléments depuis la fenêtre **Sources de données** vers un formulaire.
 
--   Création de contrôles affichant les données en faisant glisser des éléments depuis la fenêtre **Sources de données** vers un formulaire.
+- Ajout de contrôles pour afficher les données dans le formulaire.
 
--   Ajout de contrôles pour afficher les données dans le formulaire.
+- Fin de la **Générateur de critères de recherche** boîte de dialogue.
 
--   Fin de la **Générateur de critères de recherche** boîte de dialogue.
-
--   Entrée de paramètres dans le formulaire et l’exécution de la requête paramétrable.
+- Entrée de paramètres dans le formulaire et l’exécution de la requête paramétrable.
 
 ## <a name="prerequisites"></a>Prérequis
 
 Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de données Northwind.
 
-1.  Si vous n’avez pas SQL Server Express LocalDB, installez-le à partir de la [page de téléchargement de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), ou via le **le programme d’installation de Visual Studio**. Dans le **le programme d’installation de Visual Studio**, vous pouvez installer SQL Server Express LocalDB dans le cadre de la **stockage de données et de traitement** charge de travail, ou comme un composant individuel.
+1. Si vous n’avez pas SQL Server Express LocalDB, installez-le à partir de la [page de téléchargement de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), ou via le **le programme d’installation de Visual Studio**. Dans le **le programme d’installation de Visual Studio**, vous pouvez installer SQL Server Express LocalDB dans le cadre de la **stockage de données et de traitement** charge de travail, ou comme un composant individuel.
 
-2.  Installer la base de données Northwind en suivant ces étapes :
+2. Installer la base de données Northwind en suivant ces étapes :
 
     1. Dans Visual Studio, ouvrez le **Explorateur d’objets SQL Server** fenêtre. (Explorateur d’objets SQL Server est installé dans le cadre de la **stockage de données et de traitement** charge de travail dans le **le programme d’installation de Visual Studio**.) Développez le **SQL Server** nœud. Avec le bouton droit sur votre instance de base de données locale et sélectionnez **nouvelle requête**.
 
@@ -65,17 +63,7 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
 
 ## <a name="create-the-windows-forms-application"></a>Créer l’application Windows Forms
 
-La première étape consiste à créer une application Windows Forms. Affectation d’un nom au projet est facultative à ce stade, mais vous devez lui donner un nom ici, car vous allez enregistrer le projet ultérieurement :
-
-1. Dans Visual Studio, sur le **fichier** menu, sélectionnez **New** > **projet**.
-
-2. Développez le **Visual C#**  ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
-
-3. Dans le volet central, sélectionnez le **Windows Forms application** type de projet.
-
-4. Nommez le projet **WindowsSearchForm**, puis choisissez **OK**.
-
-     Le projet **WindowsSearchForm** est créé et ajouté à l’**Explorateur de solutions**.
+Créer un nouveau **Windows Forms application** projet pour soit C# ou Visual Basic. Attribuez le nom **WindowsSearchForm** au projet.
 
 ## <a name="create-the-data-source"></a>Créer la source de données
 
@@ -89,9 +77,9 @@ Cette étape crée une source de données à partir d’une base de données à 
 
 4.  Dans la page **Choisir votre connexion de données**, effectuez l’une des opérations suivantes :
 
-    -   Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.
+    - Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.
 
-    -   Sélectionnez **Nouvelle connexion** pour afficher la boîte de dialogue **Ajouter/Modifier la connexion**.
+    - Sélectionnez **Nouvelle connexion** pour afficher la boîte de dialogue **Ajouter/Modifier la connexion**.
 
 5.  Si votre base de données nécessite un mot de passe, sélectionnez l’option pour inclure les données sensibles, puis cliquez sur **Suivant**.
 
@@ -151,11 +139,11 @@ Exécution de l’application ouvre votre formulaire et le rend prêt à utilise
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Selon les exigences de votre application, vous pouvez exécuter différentes étapes après la création d’un formulaire paramétrable. Vous pouvez apporter à cette procédure pas à pas les améliorations suivantes :
+Selon les spécifications de votre application, vous pouvez exécuter différentes étapes après la création d'un formulaire paramétrable. Vous pouvez apporter à cette procédure pas à pas les améliorations suivantes :
 
--   Ajout de contrôles affichant les données associées. Pour plus d’informations, consultez [relations dans les Datasets](relationships-in-datasets.md).
+- Ajout de contrôles affichant les données associées. Pour plus d’informations, consultez [relations dans les Datasets](relationships-in-datasets.md).
 
--   Modification du dataset pour ajouter ou supprimer des objets de base de données. Pour plus d’informations, consultez [Créer et configurer des datasets](../data-tools/create-and-configure-datasets-in-visual-studio.md).
+- Modification du dataset pour ajouter ou supprimer des objets de base de données. Pour plus d’informations, consultez [Créer et configurer des datasets](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
 ## <a name="see-also"></a>Voir aussi
 

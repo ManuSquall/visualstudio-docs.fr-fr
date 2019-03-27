@@ -30,12 +30,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 51e9f831941fff79c42c8e7fc529db3df0d46b0d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5c036680d540854eb3143875663aeac35a466884
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795301"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323605"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Création et configuration de membres de type (Concepteur de classes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Vous pouvez ajouter ces membres aux types dans un diagramme de classes et config
 |**Créer et modifier les membres de type** : vous pouvez créer d’autres membres, modifier des membres existants et ajouter des paramètres à une méthode à l’aide de la fenêtre Détails de classe.|-   [Création de membres](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers)<br />-   [Modification des membres de type](../ide/creating-and-configuring-type-members-class-designer.md#ModifyTypeMembers)<br />-   [Ajout de paramètres aux méthodes](../ide/creating-and-configuring-type-members-class-designer.md#AddMethodParams)|  
   
 ##  <a name="OpenClassDetails"></a> Ouverture de la fenêtre Détails de classe  
- Par défaut, la fenêtre Détails de classe s’affiche automatiquement lorsque vous ouvrez un nouveau diagramme de classes (consultez [Comment : ajouter des diagrammes de classes aux projets (Concepteur de classes)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)). Vous pouvez aussi ouvrir explicitement la fenêtre Détails de classe, comme indiqué ci-après.  
+ Par défaut, la fenêtre Détails de classe s’affiche automatiquement quand vous ouvrez un nouveau diagramme de classes (consultez [Guide pratique pour ajouter des diagrammes de classes aux projets (Concepteur de classes)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)). Vous pouvez aussi ouvrir explicitement la fenêtre Détails de classe, comme indiqué ci-après.  
   
 #### <a name="to-open-the-class-details-window"></a>Pour ouvrir la fenêtre Détails de classe  
   
@@ -209,7 +209,7 @@ Vous pouvez ajouter ces membres aux types dans un diagramme de classes et config
   
 - **\<ajouter un paramètre>**  
   
-   La dernière ligne de paramètre d’un membre contient le texte **<add parameter>** dans la cellule**Nom**. Cliquez sur cette cellule pour créer un nouveau paramètre. Pour plus d’informations, consultez [Pour ajouter un paramètre à une méthode](../ide/creating-and-configuring-type-members-class-designer.md#HowToAddParameterToMethod).  
+   La dernière ligne de paramètre d'un membre contient le texte **<ajouter un paramètre\>** dans la cellule **Nom**. Cliquez sur cette cellule pour créer un nouveau paramètre. Pour plus d’informations, consultez [Pour ajouter un paramètre à une méthode](../ide/creating-and-configuring-type-members-class-designer.md#HowToAddParameterToMethod).  
   
   **Propriétés des paramètres dans la fenêtre Propriétés**  
   
