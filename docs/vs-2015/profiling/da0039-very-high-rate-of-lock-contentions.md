@@ -13,17 +13,17 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f5b994e14dc63d9fabe0c02b70f5df584c03067e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fbe28f56b5dfd64b90bef52437b6bd6c2e15922f
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752407"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355449"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039 : taux très élevé de conflits de verrouillage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Pour obtenir la dernière documentation sur Visual Studio 2017, consultez [DA0039 : Très haute taux de conflits de verrou](https://docs.microsoft.com/visualstudio/profiling/da0039-very-high-rate-of-lock-contentions) sur docs.microsoft.com.  
+Pour obtenir la dernière documentation sur Visual Studio, consultez [DA0039 : très élevé taux de conflits de verrou](https://docs.microsoft.com/visualstudio/profiling/da0039-very-high-rate-of-lock-contentions) sur docs.microsoft.com.  
   
 |||  
 |-|-|  

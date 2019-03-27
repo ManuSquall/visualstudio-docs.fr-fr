@@ -14,16 +14,28 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7e026b85a990e0186decc9c67ebecb169c0fa98
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 842fed287a6035684534c3d735d146e1b9a0fbfb
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983895"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324972"
 ---
 # <a name="select-the-installation-locations-in-visual-studio"></a>Sélectionner les emplacements d’installation dans Visual Studio
 
+::: moniker range="vs-2017"
+
 **Nouveautés dans la version 15.7** : Vous pouvez réduire l’empreinte de l’installation de Visual Studio sur votre lecteur système en changeant l’emplacement de certains de ses fichiers. Plus précisément, vous pouvez utiliser un autre emplacement pour le cache de téléchargement, les composants partagés, les SDK et les fichiers des outils.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Vous pouvez réduire l’empreinte de l’installation de Visual Studio sur votre lecteur système en changeant l’emplacement de certains de ses fichiers. Plus précisément, vous pouvez utiliser un autre emplacement pour le cache de téléchargement, les composants partagés, les SDK et les fichiers des outils.
+
+::: moniker-end
 
    > [!NOTE]
    > L’emplacement d’installation de certains outils et SDK est régi par des règles différentes. Ces outils et SDK sont toujours installés sur votre lecteur système, même si vous choisissez un autre emplacement.

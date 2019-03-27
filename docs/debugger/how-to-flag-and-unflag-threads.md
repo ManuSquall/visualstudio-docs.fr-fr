@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 619814a77b0bfaddc1c8c68213d050646a07e7e0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1d106260aab40707aeb04f37df05a9d1ffb26a1b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721987"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324414"
 ---
 # <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>Comment : ajouter et supprimer les indicateurs des Threads (C#, Visual Basic, C++)
 
@@ -31,7 +31,7 @@ Threads avec indicateur bénéficient d’un traitement spécial dans le **Threa
 ### <a name="to-flag-or-unflag-a-thread"></a>Pour marquer ou supprimer l'indicateur d'un thread
 
 - Dans le **Threads** ou **espion parallèle** fenêtre, recherchez le thread qui vous intéresse et cliquez sur l’icône d’indicateur pour activer ou désactiver l’indicateur.
-- Dans le **piles parallèles** fenêtre, avec le bouton droit sur un thread ou un groupe de threads et sélectionnez **indicateur / <thread>**  ou **supprimer l’indicateur / <thread>** .
+- Dans le **piles parallèles** fenêtre, avec le bouton droit sur un thread ou un groupe de threads et sélectionnez **indicateur / \<thread >** ou **supprimer l’indicateur / \<thread >**.
 
 ### <a name="to-unflag-all-threads"></a>Pour supprimer tous les indicateurs de thread
 
