@@ -11,18 +11,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 701b178ea161884ef748008b1f933a53fc35a1cb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c95b442835289265d197b6806c6d87fa051f2c1b
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914472"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515231"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Utiliser la règle définit pour les règles d’analyse de code de groupe
 
-Lorsque vous configurez l’analyse du code dans Visual Studio, vous pouvez choisir parmi une liste des intégré *ensembles de règles*. Un ensemble de règles s’applique à un projet et est un regroupement de code des règles d’analyse qui identifient les problèmes ciblés et des conditions spécifiques pour ce projet. Par exemple, vous pouvez appliquer un ensemble de règles est conçu pour analyser le code des API disponibles publiquement, ou simplement la valeur minimale des règles recommandées. Vous pouvez également appliquer un ensemble de règles qui inclut toutes les règles.
+Lorsque vous configurez l’analyse du code dans Visual Studio, vous pouvez choisir parmi une liste des intégré *ensembles de règles*. Un ensemble de règles est un regroupement de règles d’analyse du code qui identifient les problèmes ciblés et des conditions spécifiques pour ce projet. Par exemple, vous pouvez appliquer un ensemble de règles qui a conçu pour analyser le code des API disponibles publiquement. Vous pouvez également appliquer un ensemble de règles qui inclut toutes les règles disponibles.
 
-Vous pouvez personnaliser un ensemble de règles en ajoutant ou supprimant des règles, ou en modifiant les niveaux de gravité de règle apparaissent comme des avertissements ou erreurs dans le **liste d’erreurs**. Ensembles de règles personnalisés peuvent répondre à un besoin pour votre environnement de développement particulier. Lorsque vous personnalisez un ensemble de règles, l’éditeur d’ensemble de règles fournit la recherche et des outils pour vous aider dans le processus de filtrage.
+Vous pouvez personnaliser un ensemble de règles en ajoutant ou supprimant des règles ou en modifiant les niveaux de gravité de règle apparaissent comme des avertissements ou erreurs dans le **liste d’erreurs**. Ensembles de règles personnalisés peuvent répondre à un besoin pour votre environnement de développement particulier. Lorsque vous personnalisez un ensemble de règles, l’éditeur d’ensemble de règles fournit la recherche et des outils pour vous aider dans le processus de filtrage.
 
 Ensembles de règles sont disponibles pour [analyse statique du code managé](how-to-configure-code-analysis-for-a-managed-code-project.md), [analyse du code C++](using-rule-sets-to-specify-the-cpp-rules-to-run.md), et [analyseurs de Roslyn](analyzer-rule-sets.md).
 
