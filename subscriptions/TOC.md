@@ -68,6 +68,7 @@
 #### [Rechercher un abonnement](search-license.md)
 #### [Exporter des abonnements](exporting-subscriptions.md)
 #### [Surutilisations](handle-overclaimed-license.md)
+#### [Utilisation maximum](maximum-usage.md)
 #### [Abonnements arrivés à expiration](handle-expired-license.md)
 #### [Abonnés avec connexions par e-mail personnel](personal-email-sign-ins.md)
 ## Acquisition d’abonnements Visual Studio
