@@ -8,12 +8,12 @@ ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fbbad4e48aaba41672a1f795e8b3d7851f7bd5e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e86f026ec4d4133635ba5cf9d6c37970abe6e139
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926253"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415899"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Procédure : Créer un plug-in d’enregistreur
 
@@ -35,34 +35,24 @@ Les procédures suivantes décrivent le mode de création du code rudimentaire p
 
 1.  Ouvrez une solution contenant le projet de test de performances web et de charge avec le test de performances web pour lequel vous souhaitez créer un plug-in d’enregistreur.
 
-2.  Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur la solution, sélectionnez **Ajouter**, puis choisissez **Nouveau projet**.
+2.  Ajoutez ensuite un nouveau projet **Bibliothèque de classes** à la solution.
 
-     La boîte de dialogue **Ajouter un nouveau projet** s’affiche.
-
-3.  Sous **Modèles installés**, sélectionnez **Visual C#**.
-
-4.  Dans la liste des modèles, sélectionnez **Bibliothèque de classes**.
-
-5.  Dans la zone de texte **Nom**, tapez un nom pour le plug-in d’enregistreur.
-
-     La nouvelle bibliothèque de classes est ajoutée à **l’Explorateur de solutions**, et la nouvelle classe s’ouvre dans **l’Éditeur de code**.
-
-6.  Dans **l’Explorateur de solutions**, dans le dossier de projet de la nouvelle bibliothèque de classes, cliquez avec le bouton droit sur le dossier **Références**, puis sélectionnez **Ajouter une référence**.
+3.  Dans **l’Explorateur de solutions**, dans le dossier de projet de la nouvelle bibliothèque de classes, cliquez avec le bouton droit sur le dossier **Références**, puis sélectionnez **Ajouter une référence**.
 
     > [!TIP]
     > **RecorderPlugins** est un exemple de dossier de projet de nouvelle bibliothèque de classes.
 
      La boîte de dialogue **Ajouter une référence** s’affiche.
 
-7.  Sélectionnez l’onglet **.NET**.
+4.  Sélectionnez l’onglet **.NET**.
 
-8.  Faites défiler la liste vers le bas et sélectionnez **Microsoft.VisualStudio.QualityTools.WebTestFramework**, puis choisissez **OK**.
+5.  Faites défiler la liste vers le bas et sélectionnez **Microsoft.VisualStudio.QualityTools.WebTestFramework**, puis choisissez **OK**.
 
      **Microsoft.VisualStudio.QualityTools.WebTestFramework** est ajouté dans le dossier **Références** dans **l’Explorateur de solutions**.
 
-9. Écrivez le code de votre plug-in d'enregistreur. Commencez par créer une classe publique qui dérive de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>.
+6. Écrivez le code de votre plug-in d'enregistreur. Commencez par créer une classe publique qui dérive de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>.
 
-10. Remplacez la méthode <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*> .
+7. Remplacez la méthode <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*> .
 
     ```csharp
     public class Class1 : WebTestRecorderPlugin
@@ -79,11 +69,11 @@ Les procédures suivantes décrivent le mode de création du code rudimentaire p
     > [!NOTE]
     > Si vous modifiez le test de performances web, définissez également la propriété <xref:Microsoft.VisualStudio.TestTools.WebTesting.PostWebTestRecordingEventArgs.RecordedWebTestModified*> sur True : `e.RecordedWebTestModified = true;`
 
-11. Ajoutez d’autres lignes de code en fonction des opérations que le plug-in d’enregistreur devra exécuter à l’issue de l’enregistrement web. Par exemple, vous pouvez ajouter le code pour gérer la corrélation personnalisée comme l'illustre l'exemple ci-dessous. Il est également possible de créer un plug-in d’enregistreur pour notamment convertir les commentaires en transactions ou ajouter des règles de validation au test de performances web.
+8. Ajoutez d’autres lignes de code en fonction des opérations que le plug-in d’enregistreur devra exécuter à l’issue de l’enregistrement web. Par exemple, vous pouvez ajouter le code pour gérer la corrélation personnalisée comme l'illustre l'exemple ci-dessous. Il est également possible de créer un plug-in d’enregistreur pour notamment convertir les commentaires en transactions ou ajouter des règles de validation au test de performances web.
 
-12. Dans le menu **Générer**, choisissez **Générer \<nom du projet de la bibliothèque de classes>**.
+9. Dans le menu **Générer**, choisissez **Générer \<nom du projet de la bibliothèque de classes>**.
 
-13. Ensuite, vous devez déployer le plug-in d'enregistreur pour l'enregistrer avec Visual Studio.
+Ensuite, déployez le plug-in d’enregistreur pour l’inscrire auprès de Visual Studio.
 
 ### <a name="deploy-the-recorder-plug-in"></a>Déployer le plug-in d’enregistreur
 
@@ -96,7 +86,7 @@ Après avoir compilé le plug-in d’enregistreur, placez la DLL ainsi créée d
 > [!WARNING]
 > Après avoir copié le plug-in d'enregistreur dans l'un des deux emplacements, vous devez redémarrer Visual Studio pour enregistrer le plug-in d'enregistreur.
 
-### <a name="to-execute-the-recorder-plug-in"></a>Pour exécuter le plug-in d'enregistreur
+### <a name="execute-the-recorder-plug-in"></a>Exécuter le plug-in d’enregistreur
 
 1.  Créez un test de performances web.
 
@@ -123,9 +113,7 @@ Cet exemple montre comment créer un plug-in d’enregistreur pour le test de pe
 > [!NOTE]
 > Une liste complète de l'exemple de code se trouve à la fin de cette rubrique.
 
-**Revue de l’exemple de code**
-
-## <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>Effectue une itération au sein du résultat pour rechercher la première page avec ReportSession
+### <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>Effectue une itération au sein du résultat pour rechercher la première page avec ReportSession
 
 Cette partie de l'exemple de code effectue une itération au sein de chaque objet enregistré et recherche le corps de la réponse de ReportSession.
 
@@ -142,7 +130,7 @@ foreach (WebTestResultUnit unit in e.RecordedWebTestResult.Children)
              {
 ```
 
-## <a name="add-an-extraction-rule"></a>Ajouter une règle d'extraction
+### <a name="add-an-extraction-rule"></a>Ajouter une règle d'extraction
 
 Maintenant qu'une réponse a été trouvée, vous devez ajouter une règle d'extraction. Cette partie de l’exemple de code crée la règle d’extraction à l’aide de la classe <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRuleReference>, puis recherche la bonne demande dans le test de performances web pour y ajouter la règle d’extraction. Chaque objet résultant a une nouvelle propriété nommée DeclarativeWebTestItemId, qui est utilisée dans le code pour obtenir la bonne demande auprès du test de performances web.
 
@@ -166,7 +154,7 @@ ExtractionRuleReference ruleReference = new ExtractionRuleReference();
      }
 ```
 
-## <a name="replace-query-string-parameters"></a>Remplacer les paramètres de chaîne de requête
+### <a name="replace-query-string-parameters"></a>Remplacer les paramètres de chaîne de requête
 
 Maintenant, le code recherche tous les paramètres de chaîne de requête dont le nom ReportSession et remplacez la valeur par {{SessionId}} comme indiqué dans cette partie de l'exemple de code :
 
