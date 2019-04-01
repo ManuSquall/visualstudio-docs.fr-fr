@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8dc08ce4ef3f4afd8cd7630848ef1ee67e1f2970
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 8762d13e1a5981f634b1b13fe08968a6b01c2b94
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152926"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475966"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Démarrage rapide : Déboguer avec C# ou Visual Basic à l’aide du débogueur Visual Studio
 
@@ -25,13 +25,13 @@ Le débogueur Visual Studio fournit de nombreuses fonctionnalités puissantes po
 
 ## <a name="create-a-new-project"></a>Créer un projet
 
-1. Dans Visual Studio, sélectionnez **Fichier > Nouveau > Projet**.
+1. Ouvrez Visual Studio et créez un projet.
 
     ::: moniker range=">=vs-2019"
-    La boîte de dialogue **Créer un projet** s’affiche. Tapez **.net** dans la zone de recherche pour filtrer les résultats, choisissez **Application console (.NET Core)**, puis cliquez sur **Suivant**. Entrez ensuite un nom tel que **MyDbgApp** et choisissez **Créer**.
+    Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **console**, choisissez **Modèles**, puis choisissez **Créer un projet d’application console (.NET Core)**. Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    La boîte de dialogue **Nouveau projet** s’affiche. Sous **Visual C#**, choisissez **.NET Core** puis, dans le volet central, choisissez **Application console (.NET Core)**. Tapez ensuite un nom tel que **MyDbgApp** et cliquez sur **OK**.
+    Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, sous **Visual C#**, choisissez **.NET Core** puis, dans le volet central, choisissez **Application console (.NET Core)**. Tapez ensuite un nom tel que **MyDbgApp** et cliquez sur **OK**.
     ::: moniker-end
 
      Si vous ne voyez pas le modèle de projet **Application console (.NET Core)**, accédez à **Outils** > **Obtenir les outils et fonctionnalités...**, qui ouvre Visual Studio Installer. Choisissez la charge de travail **Développement .NET Desktop** et **.NET Core**, puis choisissez **Modifier**.

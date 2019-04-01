@@ -9,18 +9,18 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 66320e95664b86e56fc3c328c36360e4df4352b9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 472cd590627a84ea0a11b9de8b533bba3a88a253
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869361"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355433"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Installer les symboles de débogage pour les interpréteurs Python
 
 Pour offrir une expérience de débogage complète, le [débogueur Python en mode mixte](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) dans Visual Studio nécessite des symboles de débogage pour l’interpréteur Python utilisé afin d’analyser de nombreuses structures de données internes. Par exemple, pour *python27.dll*, le fichier de symboles correspondant est *python27.pdb* ; pour *python36.dll*, il s’agit du fichier de symboles *python36.pdb*. Chaque version de l’interpréteur fournit également des fichiers de symboles pour différents modules.
 
-Dans Visual Studio 2017, les interpréteurs Python 3 et Anaconda 3 installent automatiquement leurs symboles respectifs, qui sont ensuite automatiquement détectés par Visual Studio. Dans Visual Studio 2015 et versions antérieures, ou si vous utilisez des interpréteurs tiers, vous devez télécharger les symboles séparément, puis indiquer leur emplacement à Visual Studio dans la boîte de dialogue **Outils** > **Options** sous l’onglet **Débogage** > **Symboles**. Ces étapes sont détaillées dans les sections suivantes.
+Dans Visual Studio 2017 et ultérieur, les interpréteurs Python 3 et Anaconda 3 installent automatiquement leurs symboles respectifs, qui sont ensuite automatiquement détectés par Visual Studio. Dans Visual Studio 2015 et versions antérieures, ou si vous utilisez des interpréteurs tiers, vous devez télécharger les symboles séparément, puis indiquer leur emplacement à Visual Studio dans la boîte de dialogue **Outils** > **Options** sous l’onglet **Débogage** > **Symboles**. Ces étapes sont détaillées dans les sections suivantes.
 
 Visual Studio peut vous inviter à fournir les symboles dont il a besoin, en général au moment du démarrage d’une session de débogage en mode mixte. Dans ce cas, il affiche une boîte de dialogue avec deux options possibles :
 

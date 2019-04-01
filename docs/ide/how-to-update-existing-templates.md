@@ -10,26 +10,26 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cf40216393e32602139e62378f6874ff362d5ee0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 57e457224d47e278df169b931c6e9cf6b8ae25e1
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952149"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355381"
 ---
 # <a name="how-to-update-existing-templates"></a>Procédure : Mettre à jour des modèles existants
 
-Une fois que vous avez créé un modèle et compressé les fichiers dans un fichier *.zip*, vous pouvez modifier le modèle. Vous pouvez modifier les fichiers manuellement dans le modèle ou exporter un nouveau modèle à partir d'un projet basé sur le modèle.
+Une fois que vous avez créé un modèle et compressé les fichiers dans un fichier *.zip*, vous pouvez modifier le modèle. Vous pouvez le faire en modifiant les fichiers manuellement dans le modèle ou en exportant un nouveau modèle à partir d’un projet basé sur le modèle.
 
-## <a name="using-the-export-template-wizard-to-update-an-existing-project-template"></a>Utilisation de l’Assistant Exportation de modèle pour mettre à jour un modèle de projet existant
+## <a name="use-the-export-template-wizard"></a>Utiliser l’Assistant Exportation de modèle
 
 Visual Studio fournit un **Assistant Exportation de modèle** utilisable pour mettre à jour un modèle existant :
 
-1. Ouvrez la boîte de dialogue **Nouveau projet** en choisissant **Fichier** > **Nouveau** > **Projet**.
+1. Choisissez **Fichier** > **Nouveau** > **Projet** dans la barre de menus.
 
-1. Sélectionnez le modèle que vous souhaitez mettre à jour, entrez le nom et l’emplacement de votre projet, puis choisissez **OK**.
+1. Sélectionnez le modèle que vous voulez mettre à jour et continuez dans les étapes pour créer le nouveau projet.
 
-1. Modifiez le projet dans Visual Studio.
+1. Modifiez le projet dans Visual Studio. Par exemple, changez le type de sortie ou ajoutez un nouveau fichier au projet.
 
 1. Dans le menu **Projet**, choisissez **Exporter le modèle**.
 
@@ -37,7 +37,7 @@ Visual Studio fournit un **Assistant Exportation de modèle** utilisable pour me
 
 1. Suivez les instructions de l’Assistant pour exporter le modèle en tant que fichier *.zip*.
 
-1. (Facultatif) Pour ajouter le modèle à la boîte de dialogue **Nouveau projet**, placez le fichier *.zip* dans le répertoire suivant : *%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ProjectTemplates*. Vous devez effectuer cette étape si vous n’avez pas sélectionné l’option **Importer automatiquement le modèle dans Visual Studio** dans l’**Assistant Exportation de modèle**.
+1. (Facultatif) Placez le fichier *.zip* dans le répertoire suivant : *%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ProjectTemplates* afin de le rendre disponible pour la sélection. Vous devez effectuer cette étape si vous n’avez pas sélectionné l’option **Importer automatiquement le modèle dans Visual Studio** dans l’**Assistant Exportation de modèle**.
 
 1. Supprimez l’ancien fichier *.zip* du modèle.
 

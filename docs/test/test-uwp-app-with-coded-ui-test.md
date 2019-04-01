@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 1b07aa8559f331dd9416448f4a6b55aa8bdddb49
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 11fc95978690e98d496f539d4e98acf58104be3b
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942256"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416121"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Créer un test codé de l’interface utilisateur pour tester une application UWP
 
@@ -29,7 +29,11 @@ La première étape consiste à créer une application UWP simple sur laquelle e
 
 1. Dans Visual Studio, créez un projet à l’aide du modèle **Application vide (Windows universel)** pour Visual C# ou Visual Basic.
 
-     ![Modèle d’application vide Windows universel](../test/media/blank-uwp-app-template.png)
+   ::: moniker range="vs-2017"
+
+   ![Modèle d’application vide Windows universel](../test/media/blank-uwp-app-template.png)
+
+   ::: moniker-end
 
 1. Dans la boîte de dialogue **Nouveau projet de plateforme Windows universelle**, sélectionnez **OK** pour accepter les versions de plateforme par défaut.
 
@@ -57,20 +61,24 @@ La première étape consiste à créer une application UWP simple sur laquelle e
 
    ![Application UWP avec une zone de texte et un bouton](media/uwp-app.png)
 
-## <a name="create-a-coded-ui-test"></a>Créer un test d’interface utilisateur codé
+## <a name="create-a-coded-ui-test"></a>Créer un test d'interface utilisateur codé
 
 1. Pour ajouter un projet de test à une solution, cliquez avec le bouton droit sur la solution dans **l’Explorateur de solutions**, puis choisissez **Ajouter** > **Nouveau projet**.
 
-1. Dans la boîte de dialogue **Nouveau projet**, sélectionnez le modèle **Projet de test codé de l’interface utilisateur (Windows universel)**. Vous pouvez rechercher le modèle sous la catégorie **Windows universel** sous **Visual C#** ou **Visual Basic**.
+1. Recherchez et sélectionnez le modèle **Projet de test codé de l’interface utilisateur (Windows universel)**.
 
-     ![Nouveau projet de test codé de l’interface utilisateur](../test/media/coded-ui-test-project-uwp-template.png)
+   ::: moniker range="vs-2017"
+
+   ![Nouveau projet de test codé de l’interface utilisateur](../test/media/coded-ui-test-project-uwp-template.png)
+
+   ::: moniker-end
 
    > [!NOTE]
    > Si vous ne voyez pas le modèle **Projet de test codé de l’interface utilisateur (Windows universel)**, vous devez [installer le composant de test codé de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
 1. Dans la boîte de dialogue **Générer le code pour le test codé de l’interface utilisateur**, sélectionnez **Modifier manuellement le test**.
 
-     ![Boîte de dialogue Générer le code pour le test codé de l’interface utilisateur](../test/media/manually-edit-the-test.png)
+   ![Boîte de dialogue Générer le code pour le test codé de l’interface utilisateur](../test/media/manually-edit-the-test.png)
 
 1. Si votre application UWP n’est pas déjà en cours d’exécution, démarrez-la en appuyant sur **Ctrl**+**F5**.
 
@@ -96,7 +104,7 @@ La première étape consiste à créer une application UWP simple sur laquelle e
 
 1. Générez le code de test pour l’assertion. Dans la boîte de dialogue **Générateur de test codé de l’interface utilisateur**, sélectionnez **Générer le code**. Dans la boîte de dialogue **Générer le code**, sélectionnez **Ajouter et générer**.
 
-     ![Générer du code pour l’assertion d’une zone de texte](../test/media/add-and-generate-assert-method.png)
+     ![Générer le code pour l'assertion d'une zone de texte](../test/media/add-and-generate-assert-method.png)
 
    Dans l’**Explorateur de solutions**, ouvrez *UIMap.Designer.cs* afin de voir le code ajouté pour la méthode assert et les contrôles.
 

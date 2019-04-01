@@ -13,12 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 731c2ca6993ed4d71238a290f782bdd079271039
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 4f7f7a7297b7cc48b9300c21875af5a0971136e1
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983830"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475979"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Mettre à jour une installation réseau de Visual Studio
 
@@ -100,6 +102,9 @@ Le fichier vs_enterprise.exe peut être appelé à l’intérieur du répertoire
 > Certains fichiers de métadonnées importantes, qui sont nécessaires à l’option `--verify`, doivent se trouver dans le cache hors connexion de la disposition. Si ces fichiers de métadonnées sont manquants, "--verify" ne peut pas s’exécuter et le programme d’installation signale une erreur. Si vous rencontrez cette erreur, recréez une nouvelle disposition en mode hors connexion dans un dossier différent (ou dans le même dossier de cache hors connexion). Pour cela, exécutez la même commande de disposition que celle que vous avez utilisée pour créer la disposition hors connexion initiale. Par exemple, `Vs_enterprise.exe --layout <layoutDir>`.
 
 Comme Microsoft fournit régulièrement des mises à jour de Visual Studio, la version de la nouvelle disposition que vous créez peut donc être différente de celle de la disposition initiale.
+
+> [!NOTE]
+> La vérification fonctionne seulement pour la dernière version d’une version mineure spécifique de Visual Studio. Dès qu’une nouvelle version est publiée, la vérification ne fonctionne plus pour les versions du niveau de correctif antérieures de la même version mineure.
 
 ## <a name="how-to-fix-a-layout"></a>Comment corriger une disposition
 

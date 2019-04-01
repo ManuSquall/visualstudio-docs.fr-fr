@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3db5b22e2248c7ae79ec5300823f6ee7d4f415c7
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: c6d67dd56ad26d3dff3912ae5bdca979c2eaf9d9
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428659"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325290"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Premier aperçu de l’IDE Visual Studio
 
@@ -27,7 +27,7 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 Quand vous lancez Visual Studio, la première chose que vous voyez est la fenêtre de démarrage. La fenêtre de démarrage est conçue pour vous aider à « accéder au code » plus rapidement. Elle contient des options pour fermer ou extraire du code, ouvrir une solution ou un projet existant, créer un projet ou simplement ouvrir un dossier qui contient des fichiers de code.
 
-[![](media/vs-2019/start-window.png "Fenêtre de démarrage dans Visual Studio 2019")](media/vs-2019/start-window.png)
+[![](media/vs-2019/start-window.png "La fenêtre de démarrage dans Visual Studio 2019")](media/vs-2019/start-window.png)
 
 Si vous utilisez Visual Studio pour la première fois, votre liste des derniers projets est vide.
 
@@ -57,13 +57,13 @@ Pour continuer à explorer les fonctionnalités de Visual Studio, nous allons cr
 
 ::: moniker range=">=vs-2019"
 
-1. Dans la **Fenêtre de démarrage**, sélectionnez **Créer un projet**, puis dans la zone de recherche, tapez **javascript** pour filtrer la liste des types de projets et afficher seulement ceux dont le nom ou le type de langage contient le mot « javascript ».
+1. Dans la fenêtre de démarrage, sélectionnez **Créer un projet** puis, dans la zone de recherche, tapez **javascript** pour filtrer la liste des types de projets et afficher seulement ceux dont le nom ou le type de langage contient le mot « javascript ».
 
    Visual Studio fournit différents types de modèles de projet qui vous aident à bien démarrer le codage. (Si vous êtes développeur TypeScript, n’hésitez pas à créer un projet dans ce langage. L’interface utilisateur que nous allons explorer est identique pour tous les langages de programmation.)
 
    ![Rechercher des modèles de projet dans la fenêtre de démarrage de Visual Studio](media/vs-2019/create-new-project.png)
 
-1. Choisissez un modèle de projet **Application web Node.js vide**, puis cliquez sur **Suivant**. 
+1. Choisissez un modèle de projet **Application web Node.js vide**, puis cliquez sur **Suivant**.
 
 1. Dans la boîte de dialogue **Configurer votre nouveau projet** qui apparaît, acceptez le nom de projet par défaut et choisissez **Créer**.
 

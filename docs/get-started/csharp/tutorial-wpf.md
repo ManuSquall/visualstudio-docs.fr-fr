@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ec12b302fd51b42e99df5838206bbbf497a03e8
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 173f2320b0117d31cbd3d0b999f2e24c40a5860b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145185"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325186"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Tutoriel : Créer une application simple en C\#
 
@@ -35,7 +35,7 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 ::: moniker range="vs-2017"
 
-Quand vous démarrez Visual Studio pour la première fois, vous êtes invité à vous connecter. Cette étape est facultative pour ce didacticiel. Ensuite, vous pouvez voir s’afficher une boîte de dialogue qui vous invite à choisir vos paramètres de développement et le thème de couleur. Conservez les valeurs par défaut et choisissez **Démarrer Visual Studio**.
+Quand vous ouvrez Visual Studio pour la première fois, vous êtes invité à vous connecter. Cette étape est facultative pour ce didacticiel. Ensuite, vous pouvez voir s’afficher une boîte de dialogue qui vous invite à choisir vos paramètres de développement et le thème de couleur. Conservez les valeurs par défaut et choisissez **Démarrer Visual Studio**.
 
 ![Boîte de dialogue Choisir les paramètres](../media/exploreide-settings.png)
 
@@ -47,7 +47,7 @@ Après le démarrage de Visual Studio, vous voyez les fenêtres Outil, les menus
 
 ::: moniker range=">=vs-2019"
 
-Quand vous lancez Visual Studio, la fenêtre **Démarrer** s’ouvre en premier. Sélectionnez **Continuer sans code** pour ouvrir l’environnement de développement. Vous allez voir les fenêtres Outils, les menus et barres d’outils ainsi que l’espace de la fenêtre principale. Les fenêtres Outil sont ancrées sur les côtés gauche et droit de la fenêtre d'application. **Lancement rapide**, la barre de menus et la barre d'outils standard sont situés en haut. Quand vous chargez une solution ou un projet, les éditeurs et les concepteurs apparaissent dans l’espace central de la fenêtre d’application. Quand vous développez une application, vous passez la majeure partie de votre temps dans cette zone centrale.
+Quand vous lancez Visual Studio, la fenêtre de démarrage s’ouvre en premier. Sélectionnez **Continuer sans code** pour ouvrir l’environnement de développement. Vous allez voir les fenêtres Outils, les menus et barres d’outils ainsi que l’espace de la fenêtre principale. Les fenêtres Outil sont ancrées sur les côtés gauche et droit de la fenêtre d'application. **Lancement rapide**, la barre de menus et la barre d'outils standard sont situés en haut. Quand vous chargez une solution ou un projet, les éditeurs et les concepteurs apparaissent dans l’espace central de la fenêtre d’application. Quand vous développez une application, vous passez la majeure partie de votre temps dans cette zone centrale.
 
 ::: moniker-end
 

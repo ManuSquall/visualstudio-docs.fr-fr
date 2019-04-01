@@ -23,16 +23,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7719a355e95473e5a077fc935431c54fe1facdac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4904f7bb57430fc71ab6875d39a18c5bfb0c2fe0
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927540"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268624"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Personnalisation des dispositions de fenêtres dans Visual Studio
 
-Dans Visual Studio, vous pouvez personnaliser la position, la taille et le comportement des fenêtres pour créer des dispositions de fenêtres optimisées pour différents flux de travail de développement. Quand vous personnalisez la disposition, l'IDE mémorise vos paramètres. Ainsi, si vous modifiez l'emplacement d'ancrage de l' **Explorateur de solutions** et que vous fermez Visual Studio, l' **Explorateur de solutions** sera ancré au même emplacement au prochain démarrage, même si vous travaillez sur un autre ordinateur. Vous pouvez également nommer et enregistrer une disposition personnalisée, et basculer d’une disposition à une autre avec une seule commande. Vous pouvez par exemple créer une disposition pour la modification et une autre pour le débogage, et basculer de l’une à l’autre avec la commande de menu **Fenêtre** > **Appliquer la disposition de fenêtre**.
+Dans Visual Studio, vous pouvez personnaliser la position, la taille et le comportement des fenêtres pour créer des dispositions de fenêtres optimisées pour différents workflows de développement. Quand vous personnalisez la disposition, l'IDE mémorise vos paramètres. Ainsi, si vous modifiez l’emplacement d’ancrage de l’**Explorateur de solutions** et que vous fermez Visual Studio, l’**Explorateur de solutions** sera ancré au même emplacement à l’ouverture suivante de Visuel Studio, même si vous travaillez sur un autre ordinateur.
+
+Vous pouvez également nommer et enregistrer une disposition personnalisée, et basculer d’une disposition à l’autre avec une seule commande. Vous pouvez par exemple créer une disposition pour la modification et une autre pour le débogage, et passer de l’une à l’autre avec la commande de menu **Fenêtre** > **Appliquer la disposition de fenêtre**.
 
 ## <a name="kinds-of-windows"></a>Types de fenêtres
 
@@ -64,21 +66,21 @@ Vous pouvez *ancrer* les fenêtres de document et les fenêtres d’outils pour 
 
 Vous pouvez organiser les fenêtres comme suit :
 
--   épingler les fenêtres de document à gauche de la zone de configuration des onglets ;
+- épingler les fenêtres de document à gauche de la zone de configuration des onglets ;
 
--   ancrer les fenêtres au cadre de modification sous forme d'onglets ;
+- ancrer les fenêtres au cadre de modification sous forme d'onglets ;
 
--   ancrer les fenêtres Outil au bord d'un cadre dans l'IDE ;
+- ancrer les fenêtres Outil au bord d'un cadre dans l'IDE ;
 
--   faire flotter des fenêtres de document ou Outil par dessus l'IDE ou en dehors de celui-ci ;
+- faire flotter des fenêtres de document ou Outil par dessus l'IDE ou en dehors de celui-ci ;
 
--   masquer les fenêtres Outil le long du bord de l'IDE ;
+- masquer les fenêtres Outil le long du bord de l'IDE ;
 
--   afficher les fenêtres sur plusieurs écrans ;
+- afficher les fenêtres sur plusieurs écrans ;
 
--   rétablir la position de la fenêtre selon la disposition par défaut ou une disposition personnalisée enregistrée.
+- rétablir la position de la fenêtre selon la disposition par défaut ou une disposition personnalisée enregistrée.
 
-Pour réorganiser les fenêtres Outil et les fenêtres de document, vous pouvez les faire glisser, utiliser les commandes du menu **Fenêtre** ou encore cliquer avec le bouton droit sur la barre de titre de la fenêtre à réorganiser.
+Réorganisez les fenêtres Outil et les fenêtres de document en les faisant glisser, avec les commandes du menu **Fenêtre** ou en cliquant avec le bouton droit sur la barre de titre de la fenêtre à réorganiser.
 
 ### <a name="dock-windows"></a>Ancrer des fenêtres
 
@@ -94,17 +96,15 @@ L'illustration suivante montre le repère en forme de losange pour les fenêtres
 
 Les fenêtres Outil peuvent être ancrées à un côté d'un cadre dans l'IDE ou dans le cadre de modification. Quand vous faites glisser une fenêtre Outil vers un autre emplacement, un repère en forme de losange apparaît pour vous aider à la réancrer facilement.
 
-Repère en forme de losange pour les fenêtres Outil
-
 ![Repères en forme de losange de la fenêtre d'outils](../ide/media/vs10guidediamond.png)
 
-L’illustration suivante montre l’ancrage de **l’Explorateur de solutions** à un nouvel emplacement indiqué par la zone ombrée bleue :
+L’illustration suivante montre l’ancrage de l’**Explorateur de solutions** à un nouvel emplacement indiqué par la zone ombrée bleue :
 
 ![Ancrage de l'Explorateur de solutions dans une nouvelle position](../ide/media/vs2015_dock_diamond.png)
 
 ### <a name="close-and-auto-hide-tool-windows"></a>Fermer et masquer les fenêtres d’outil
 
-Vous pouvez fermer une fenêtre Outil en cliquant sur le signe **X** dans le coin supérieur droit de la barre de titre. Pour rouvrir la fenêtre, utilisez le raccourci clavier correspondant ou la commande de menu. Les fenêtres Outil prennent en charge une fonctionnalité nommée *Masquer automatiquement*, qui permet de faire disparaître une fenêtre quand vous utilisez une autre fenêtre. Quand une fenêtre est automatiquement masquée, son nom s'affiche sous un onglet au bord de l'IDE. Pour réutiliser la fenêtre, pointez sur l'onglet pour que la fenêtre soit de nouveau visible.
+Vous pouvez fermer une fenêtre Outil en cliquant sur le **X** dans le coin supérieur droit de la barre de titre. Pour rouvrir la fenêtre, utilisez son raccourci clavier ou la commande de menu. Les fenêtres Outil prennent en charge une fonctionnalité nommée *Masquer automatiquement*, qui permet de faire disparaître une fenêtre quand vous utilisez une autre fenêtre. Quand une fenêtre est masquée automatiquement, son nom apparaît sur un onglet figurant sur le bord de l’IDE. Pour réutiliser la fenêtre, pointez sur l'onglet pour que la fenêtre soit de nouveau visible.
 
 ![Masquer automatiquement](../ide/media/vs2015_auto_hide.png)
 
@@ -125,11 +125,11 @@ Si vous possédez un deuxième écran et que votre système d'exploitation le pr
 
 Vous pouvez faire revenir l'IDE à la disposition d'origine des fenêtres pour votre collection de paramètres à l'aide de la commande **Rétablir la disposition de fenêtre** . Quand vous exécutez cette commande, les actions suivantes se produisent :
 
--   Toutes les fenêtres sont déplacées vers leurs positions par défaut.
+- Toutes les fenêtres sont déplacées vers leurs positions par défaut.
 
--   Les fenêtres qui sont fermées dans la disposition de fenêtre par défaut sont fermées.
+- Les fenêtres qui sont fermées dans la disposition de fenêtre par défaut sont fermées.
 
--   Les fenêtres qui sont ouvertes dans la disposition de fenêtre par défaut sont ouvertes.
+- Les fenêtres qui sont ouvertes dans la disposition de fenêtre par défaut sont ouvertes.
 
 ### <a name="create-and-save-custom-layouts"></a>Créer et enregistrer des dispositions personnalisées
 
@@ -139,25 +139,25 @@ Commencez par créer une solution de test qui comporte deux projets, chacun avec
 
 #### <a name="create-a-ui-project-and-customize-the-layout"></a>Créer un projet d'interface utilisateur et personnaliser la disposition
 
-1.  Dans la boîte de dialogue **Nouveau projet**, créez une **application de poste de travail WPF C#** et appelez-la comme vous le souhaitez. Supposons que vous devez travailler sur l’interface utilisateur de ce projet. Vous voulez donc maximiser l’espace de la fenêtre du concepteur et mettre les autres fenêtres Outil à l’écart.
+1. Créez un projet **Application WPF** C#. Imaginez que dans ce projet, vous allez développer une interface utilisateur. Vous voulez maximiser l’espace de la fenêtre du concepteur et écarter les autres fenêtres Outil.
 
-2.  Si vous avez plusieurs écrans, déplacez les fenêtres **Explorateur de solutions** et **Propriétés** sur votre deuxième écran. Dans un système à un seul écran, essayez de fermer toutes les fenêtres à l'exception de celle du concepteur.
+2. Si vous avez plusieurs écrans, déplacez les fenêtres **Explorateur de solutions** et **Propriétés** sur votre deuxième écran. Dans un système à un seul écran, essayez de fermer toutes les fenêtres à l'exception de celle du concepteur.
 
-3.  Appuyez sur **Ctrl+Alt+X** pour afficher la **Boîte à outils**. Si la fenêtre est ancrée, faites-la glisser pour la faire flotter où vous le souhaitez sur l’un des écrans.
+3. Appuyez sur **Ctrl**+**Alt**+**X** pour afficher la fenêtre **Boîte à outils**. Si la fenêtre est ancrée, faites-la glisser pour la faire flotter là où vous voulez la placer.
 
-4.  Appuyez sur **F5** pour faire passer Visual Studio en mode débogage. Ajustez comme vous le souhaitez la position des fenêtres de débogage **Automatique**, **Pile des appels** et **Sortie**. La disposition que vous allez créer s'applique à la fois au mode d'édition et au mode débogage.
+4. Appuyez sur **F5** pour faire passer Visual Studio en mode débogage. Ajustez comme vous le souhaitez la position des fenêtres de débogage **Automatique**, **Pile des appels** et **Sortie**. La disposition que vous allez créer s’applique à la fois au mode Édition et au mode Débogage.
 
-5.  Quand vous êtes satisfait de vos dispositions dans les modes d’édition et débogage, accédez au menu principal et choisissez **Fenêtre** > **Enregistrer la disposition de fenêtre**. Appelez cette disposition « Concepteur ».
+5. Quand vous êtes satisfait de vos dispositions dans les modes Édition et Débogage, accédez au menu principal et choisissez **Fenêtre** > **Enregistrer la disposition de fenêtre**. Appelez cette disposition « Concepteur ».
 
-     Notez que le prochain raccourci clavier disponible dans la liste réservée (**Ctrl** + **Alt** + **1...0**) est attribué à votre nouvelle disposition.
+     Notez que le prochain raccourci clavier disponible dans la liste réservée (**Ctrl**+**Alt**+**1...0**) est attribué à votre nouvelle disposition.
 
 #### <a name="create-a-database-project-and-layout"></a>Créer un projet de base de données et une disposition
 
-1.  Ajoutez un nouveau projet **Base de données SQL Server** à la solution.
+1. Ajoutez un nouveau projet **Base de données SQL Server** à la solution.
 
-2.  Cliquez avec le bouton droit sur le nouveau projet dans **l’Explorateur de solutions** et choisissez **Afficher dans l’Explorateur d’objets**. Dans la fenêtre **Explorateur d'objets SQL Server** qui s'affiche, vous pouvez accéder aux tables, vues et autres objets dans votre base de données. Vous pouvez soit faire flotter cette fenêtre ou la laisser ancrée. Ajustez librement les autres fenêtres d'outils. Pour plus de réalisme, vous pouvez ajouter une base de données réelle, mais cette étape n’est pas obligatoire dans cette procédure pas à pas.
+2. Cliquez avec le bouton droit sur le nouveau projet dans **l’Explorateur de solutions** et choisissez **Afficher dans l’Explorateur d’objets**. Dans la fenêtre **Explorateur d'objets SQL Server** qui s'affiche, vous pouvez accéder aux tables, vues et autres objets dans votre base de données. Vous pouvez soit faire flotter cette fenêtre ou la laisser ancrée. Ajustez librement les autres fenêtres d'outils. Pour plus de réalisme, vous pouvez ajouter une base de données réelle, mais cette étape n’est pas obligatoire dans cette procédure pas à pas.
 
-3.  Quand vous êtes satisfait de votre disposition, accédez au menu principal et choisissez **Fenêtre** > **Enregistrer la disposition de fenêtre**. Nommez cette disposition « Projet BD ». (Nous ne prenons pas la peine de créer une disposition en mode débogage pour ce projet.)
+3. Quand vous êtes satisfait de votre disposition, accédez au menu principal et choisissez **Fenêtre** > **Enregistrer la disposition de fenêtre**. Nommez cette disposition « Projet BD ». (Nous ne prenons pas la peine de créer une disposition en mode débogage pour ce projet.)
 
 #### <a name="switch-between-the-layouts"></a>Basculer entre les dispositions
 

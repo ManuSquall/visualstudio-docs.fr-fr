@@ -7,41 +7,36 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8c7a92820d52dbade817ead287541470cc2b2b1a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2ba4b896a5cea964a4df6392a7c1963f8df00d31
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925239"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415601"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Démarrage rapide : développement piloté par les tests avec l’Explorateur de tests
 
 Nous vous recommandons de créer des tests unitaires pour que votre code continue à s'exécuter correctement dans de nombreuses étapes incrémentielles de développement. Vous pouvez utiliser plusieurs Infrastructures pour écrire des tests unitaires, y compris ceux développés par des tiers. Il existe des frameworks de tests qui sont spécialisés dans les tests avec certains langages ou certaines plateformes. L'explorateur de tests fournit une interface unique pour les tests unitaires dans l'une de ces infrastructures. Les adaptateurs sont disponibles pour les infrastructures les plus couramment utilisées, et vous pouvez écrire vos propres adaptateurs pour d'autres frameworks.
 
- L'Explorateur de tests remplace les fenêtres de test unitaire trouvées dans les éditions antérieures de Visual Studio. Ses avantages incluent :
+L'Explorateur de tests remplace les fenêtres de test unitaire trouvées dans les éditions antérieures de Visual Studio. Ses avantages incluent :
 
--   Exécution du .NET, de code non managé, de code de base de données et d'autres sortes de tests à l'aide d'une interface unique.
+- Exécution du .NET, de code non managé, de code de base de données et d'autres sortes de tests à l'aide d'une interface unique.
 
--   Utilisation du framework de tests unitaires de votre choix, par exemple NUnit ou MSTest.
+- Utilisation du framework de tests unitaires de votre choix, par exemple NUnit ou MSTest.
 
--   Consultez dans une seule fenêtre toutes les informations dont vous avez besoin.
+- Consultez dans une seule fenêtre toutes les informations dont vous avez besoin.
 
 ## <a name="use-test-explorer"></a>Utiliser l’Explorateur de tests
- ![Explorateur de tests unitaires indiquant le bouton Exécuter tout](../test/media/unittestexplorer-beta-.png)
+
+![Explorateur de tests montrant le bouton Exécuter tout](../test/media/unittestexplorer-beta-.png)
 
 ### <a name="to-run-unit-tests-by-using-test-explorer"></a>Pour exécuter des tests unitaires à l’aide de l’Explorateur de tests
 
-1. Créez des tests unitaires qui utilisent les frameworks de test de votre choix.
+1. Créez des tests unitaires qui utilisent les frameworks de test de votre choix. Par exemple, pour créer un test qui utilise le framework MSTest :
 
-    Par exemple, pour créer un test qui utilise le framework MSTest :
+   1. Créez un **projet de test unitaire** pour C#, Visual Basic ou C++.
 
-   1.  Créez un projet de test.
-
-        Dans la boîte de dialogue **Nouveau projet**, développez **Visual Basic**, **Visual C#** ou **Visual C++**, puis sélectionnez **Test**.
-
-        Sélectionnez **Projet de test unitaire**.
-
-   2.  Écrivez chaque test unitaire sous forme de méthode. Ajoutez devant chaque méthode de test l'attribut `[TestMethod]` .
+   2. Écrivez chaque test unitaire sous forme de méthode. Ajoutez devant chaque méthode de test l'attribut `[TestMethod]` .
 
 2. Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests avec le bouton bascule ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) dans la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.
 
@@ -66,19 +61,17 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
 > [!NOTE]
 > Si aucun test n'apparaît, vérifiez que vous avez installé un adaptateur pour connecter l'Explorateur de tests à l'infrastructure de test que vous utilisez. Pour plus d’informations, consultez [Installer des frameworks de tests unitaires de tiers](install-third-party-unit-test-frameworks.md).
 
+## <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>Procédure pas à pas : utilisation de tests unitaires pour développer une méthode
 
-##  <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>Procédure pas à pas : utilisation de tests unitaires pour développer une méthode
- Cette procédure pas-à-pas montre comment développer une méthode testée en C# à l'aide de l'infrastructure des tests unitaires Microsoft. Vous pouvez facilement l'adapter à d'autres langages et utiliser d'autres infrastructures de tests comme NUnit. Pour plus d’informations, consultez [Installer des frameworks de tests unitaires de tiers](install-third-party-unit-test-frameworks.md).
+Cette procédure pas-à-pas montre comment développer une méthode testée en C# à l'aide de l'infrastructure des tests unitaires Microsoft. Vous pouvez facilement l'adapter à d'autres langages et utiliser d'autres infrastructures de tests comme NUnit. Pour plus d’informations, consultez [Installer des frameworks de tests unitaires de tiers](install-third-party-unit-test-frameworks.md).
 
 ### <a name="create-the-test-and-method"></a>Créer le test et la méthode
 
-1. Créez un projet de bibliothèque de classes Visual C#. Ce projet contiendra le code que nous voulons fournir. Dans cet exemple, cela est nommé `MyMath`.
+1. Créez un projet de **bibliothèque de classes** C#. Ce projet contiendra le code que nous voulons fournir. Dans cet exemple, il est nommé `MyMath`.
 
-2. Créez un projet de test.
+2. Créez un **projet de test unitaire**.
 
-   -   Dans la boîte de dialogue **Nouveau projet**, choisissez **Visual C#** > **Test**, puis **Projet de test unitaire**.
-
-        ![Nouveaux codes et projets de test](../test/media/unittestexplorerwalk1.png)
+   ![Nouveaux codes et projets de test](../test/media/unittestexplorerwalk1.png)
 
 3. Écrivez une méthode de test de base. Vérifiez le résultat obtenu pour une entrée spécifique :
 

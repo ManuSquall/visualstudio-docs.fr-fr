@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be4d194ab0b308f436692be5dd0e7d1bc3315725
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 8cb1b18488eaf9ddf3308e74d583fd1b92fc2563
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867824"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354727"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Démarrage rapide : Premier aperçu de l’IDE Visual Studio
 
@@ -39,9 +39,9 @@ Si vous fermez la **Page de démarrage** et souhaitez la revoir, vous pouvez la 
 
 ## <a name="start-window"></a>Fenêtre de démarrage
 
-Lorsque vous ouvrez Visual Studio, la première chose que vous voyez est la fenêtre de démarrage. La fenêtre de démarrage est conçue pour vous aider à « accéder au code » plus rapidement. Elle contient des options pour fermer ou extraire du code, ouvrir une solution ou un projet existant, créer un projet ou simplement ouvrir un dossier qui contient des fichiers de code.
+Quand vous ouvrez Visual Studio, la première chose que vous voyez est la fenêtre de démarrage. La fenêtre de démarrage est conçue pour vous aider à « accéder au code » plus rapidement. Elle contient des options pour fermer ou extraire du code, ouvrir une solution ou un projet existant, créer un projet ou simplement ouvrir un dossier qui contient des fichiers de code.
 
-[![](media/vs-2019/start-window-labeled.png "Fenêtre de démarrage dans Visual Studio 2019")](media/vs-2019/start-window-labeled.png#lightbox)
+[![](media/vs-2019/start-window-labeled.png "La fenêtre de démarrage dans Visual Studio 2019")](media/vs-2019/start-window-labeled.png#lightbox)
 
 Si vous utilisez Visual Studio pour la première fois, votre liste des derniers projets est vide.
 
@@ -71,7 +71,7 @@ Pour continuer à explorer les fonctionnalités de Visual Studio, nous allons cr
 
 1. Dans la fenêtre de démarrage, choisissez **Créer un projet**.
 
-   Une fenêtre indiquant **Créer un projet** s’affiche. Cette fenêtre est parfois appelée la boîte de dialogue **Nouveau projet** et c’est là que vous pouvez rechercher et sélectionner un modèle de projet. Elle conserve également une liste des modèles de projet récemment utilisés.
+   Une boîte de dialogue indiquant **Créer un projet** s’affiche. Ici, vous pouvez rechercher, filtrer et sélectionner un modèle de projet. Elle montre également la liste des modèles de projet récemment utilisés.
 
 1. Dans la zone de recherche située en haut, tapez **console** pour filtrer la liste des types de projets à ceux dont le nom contient le mot « console ». Affinez davantage les résultats de la recherche en sélectionnant **C#** (ou un autre langage de votre choix) dans le sélecteur **Langage**.
 

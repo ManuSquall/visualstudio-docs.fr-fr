@@ -11,19 +11,19 @@ ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 29f6cfe21537cd74ffa135edc3f93b9d8548aab7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c72eb3db36310efd69d18078ca43c1907697453b
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946663"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58414968"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Procédure : Lier un contrôleur de test ou un agent de test à une carte réseau
 
 Si un ordinateur, sur lequel le contrôleur de test ou l’agent de test est installé, a plusieurs cartes réseau, vous devez spécifier l’adresse IP à la place du nom de l’ordinateur pour identifier le contrôleur de test ou l’agent de test.
 
 > [!WARNING]
-> Lors de la configuration d’un agent de test, vous pouvez recevoir l’erreur suivante :
+> Lors de la configuration d'un agent de test, vous pouvez recevoir l'erreur suivante :
 >
 > **Erreur 8110. Impossible de se connecter à l’ordinateur contrôleur spécifié ou d’accéder à l’objet contrôleur**
 >
@@ -55,9 +55,9 @@ Si un ordinateur, sur lequel le contrôleur de test ou l’agent de test est ins
 
      `net stop vsttcontroller`
 
-3.  Ouvrez le fichier config XML *QTCcontroller.exe.config* situé dans *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE*.
+3.  Ouvrez le fichier de configuration XML *QTCcontroller.exe.config* qui se trouve dans *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<édition>\Common7\IDE*.
 
-4.  recherchez l’étiquette `<appSettings>`.
+4.  recherchez la balise `<appSettings>`.
 
     ```xml
     <appSettings>
@@ -83,7 +83,7 @@ Si un ordinateur, sur lequel le contrôleur de test ou l’agent de test est ins
     `net start vsttcontroller`
 
     > [!WARNING]
-    > Vous devez encore exécuter l’installation de l’agent de test pour connecter l’agent de test au contrôleur. Cette fois, spécifiez l'adresse IP du contrôleur à la place de son nom.
+    > Vous devez encore exécuter l'installation de l'agent de test pour connecter l'agent de test au contrôleur. Cette fois, spécifiez l'adresse IP du contrôleur à la place de son nom.
 
      Cela s'applique au contrôleur, au service Agent et au processus Agent. La propriété `BindTo` doit être définie pour chaque processus qui s'exécute sur un ordinateur doté de plusieurs cartes réseau. La procédure permettant de définir la propriété `BindTo` est la même pour les trois processus et correspond à celle spécifiée précédemment dans cette rubrique pour le contrôleur de test.
 
@@ -101,9 +101,9 @@ Si un ordinateur, sur lequel le contrôleur de test ou l’agent de test est ins
 
      **net stop vsttagent**
 
-3.  Ouvrez le fichier config XML *QTAgentService.exe.config* situé dans *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE*.
+3.  Ouvrez le fichier de configuration XML *QTAgentService.exe.config* qui se trouve dans *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<édition>\Common7\IDE*.
 
-4.  recherchez l’étiquette `<appSettings>`.
+4.  recherchez la balise `<appSettings>`.
 
     ```xml
     <appSettings>
@@ -124,7 +124,7 @@ Si un ordinateur, sur lequel le contrôleur de test ou l’agent de test est ins
     </appSettings>
     ```
 
-6.  Démarrez le service de l'agent de test. Pour cela, exécutez la commande suivante à l'invite de commande :
+6.  Démarrez le service de l’agent de test. Pour cela, exécutez la commande suivante à l'invite de commande :
 
     `net start vsttagent`
 
@@ -133,5 +133,4 @@ Si un ordinateur, sur lequel le contrôleur de test ou l’agent de test est ins
 - [Installer et configurer des agents de test](../test/lab-management/install-configure-test-agents.md)
 - [Modifier les paramètres de journalisation du test de charge](../test/modify-load-test-logging-settings.md)
 - [Configurer les ports des contrôleurs de test et des agents de test](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [Guide pratique pour spécifier la taille maximale du fichier journal](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
 - [Guide pratique pour spécifier les délais d’expiration des contrôleurs de test et des agents de test](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

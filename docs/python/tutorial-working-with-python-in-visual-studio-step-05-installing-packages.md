@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c6fdbe80238bb562fb84d540b23ade349435d91c
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 786b116d153eeea2ddb1c495f88ae0cd6ce135c6
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194896"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354762"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>Étape 5 : Installer des packages dans votre environnement Python
 
@@ -46,7 +46,7 @@ La communauté des développeurs Python a produit des milliers de packages utile
 
    Une petite barre de progression peut apparaître sous l’environnement pour indiquer que Visual Studio crée sa base de données IntelliSense pour le package nouvellement installé. L’onglet **IntelliSense** affiche également des informations plus détaillées. Notez que tant que cette base de données n’est pas terminée, les fonctionnalités IntelliSense, comme la saisie semi-automatique et la vérification de la syntaxe, ne sont pas actives dans l’éditeur pour ce package.
 
-   Notez que **Visual Studio 2017 versions 15.6** et ultérieures utilise une méthode différente et plus rapide pour travailler avec IntelliSense, et affiche un message à cet effet sous l’onglet **IntelliSense**.
+   Notez que Visual Studio 2017 version 15.6 et ultérieure utilise une méthode différente et plus rapide pour travailler avec IntelliSense, et affiche un message à cet effet sous l’onglet **IntelliSense**.
 
 7. Créez un projet en sélectionnant **Fichier** > **Nouveau** > **Projet**, puis le modèle **Application Python**. Dans le fichier de code qui s’affiche, collez le code suivant, qui crée une courbe de la fonction cosinus comme dans les étapes du didacticiel précédent, mais cette fois avec seulement une représentation graphique :
 

@@ -10,16 +10,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9e6488d21538d49a6bb33648725fb164cdd8acaf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 56660aaa920fc5813f73bfcc9c191ee0baafb113
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929945"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354922"
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>Démarrage rapide : Créer un projet Python à partir du code existant
 
-Une fois que vous avez [installé la prise en charge de Python dans Visual Studio 2017](installing-python-support-in-visual-studio.md), il est facile de placer du code Python existant dans un projet Visual Studio.
+Une fois que vous avez [installé la prise en charge de Python dans Visual Studio](installing-python-support-in-visual-studio.md), il est facile de placer du code Python existant dans un projet Visual Studio.
 
 > [!Important]
 > Le processus décrit ici ne déplace pas ou ne copie pas les fichiers sources d’origine. Si vous voulez travailler avec une copie, dupliquez d’abord le dossier.

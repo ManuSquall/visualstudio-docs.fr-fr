@@ -11,23 +11,23 @@ ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 6cf4e15ec464b1d438245cd7bfe254d9464ad2a6
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.openlocfilehash: 07865a05b9aa8788b27fe1ddc067b0bb858bb9d3
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57987082"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354906"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Démarrage rapide : Ouvrez et exécutez du code Python dans un dossier
 
 Une fois que vous avez [installé la prise en charge de Python dans Visual Studio 2019](installing-python-support-in-visual-studio.md), il est facile d’exécuter du code Python existant dans Visual Studio 2019 sans créer de projet Visual Studio.
 
 > [!Note]
-> Visual Studio 2017 et versions antérieures vous obligeaient à créer un projet Visual Studio pour exécuter du code Python, ce que vous pouviez facilement faire à l’aide d’un modèle de projet prédéfini. Consultez [Démarrage rapide : Créer un projet Python à partir du code existant](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
+> Visual Studio 2017 et antérieur vous oblige à créer un projet Visual Studio pour exécuter du code Python, ce que vous pouvez faire facilement avec un modèle de projet intégré. Consultez [Démarrage rapide : Créer un projet Python à partir du code existant](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
 
 1. Pour cette procédure pas à pas, vous pouvez utiliser n’importe quel dossier avec le code Python que vous souhaitez. Pour suivre l’exemple présenté ici, clonez le référentiel GitHub gregmalcolm/python_koans sur votre ordinateur à l’aide de la commande `git clone https://github.com/gregmalcolm/python_koans` dans un dossier approprié.
 
-1. Lancez Visual Studio 2019 puis, dans l’écran d’accueil, sélectionnez **Ouvrir** en bas de la colonne **Prise en main**. Si Visual Studio est déjà en cours d’exécution, vous pouvez également sélectionner la commande **Fichier** > **Ouvrir** > **Dossier**.
+1. Lancez Visual Studio 2019 puis, dans la fenêtre de démarrage, sélectionnez **Ouvrir** en bas de la colonne **Prise en main**. Si Visual Studio est déjà en cours d’exécution, vous pouvez également sélectionner la commande **Fichier** > **Ouvrir** > **Dossier**.
 
     ![L’écran de démarrage de Visual Studio](media/quickstart-open-folder/01-open-local-folder.png)
 

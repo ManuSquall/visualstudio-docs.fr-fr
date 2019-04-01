@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4868da71193519ceeb236349b8953a14189abaa7
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f5ae66de706d29f7efb63f2c5b975a268c5f50ab
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983505"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354742"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Bienvenue dans l’IDE Visual Studio | Python
 
@@ -44,7 +44,7 @@ Cette image montre Visual Studio avec un projet Python ouvert et plusieurs fenê
 
 Visual Studio est disponible pour Windows et Mac ; toutefois, Python n’est pris en charge que sur Visual Studio pour Windows.
 
-Il existe trois éditions de Visual Studio 2017 sur Windows : Community, Professional et Enterprise. Consultez [Comparez les IDE Visual Studio 2017](https://visualstudio.microsoft.com/vs/compare/) pour en savoir plus sur les fonctionnalités prises en charge dans chaque édition.
+Il existe trois éditions de Visual Studio sur Windows : Community, Professional et Enterprise. Consultez [Comparez les IDE Visual Studio](https://visualstudio.microsoft.com/vs/compare/) pour en savoir plus sur les fonctionnalités prises en charge dans chaque édition.
 
 ## <a name="popular-productivity-features"></a>Fonctionnalités de productivité populaires
 

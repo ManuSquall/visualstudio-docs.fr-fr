@@ -1,8 +1,10 @@
 ---
 title: Créer une application web ASP.NET Core dans C#
 description: Découvrez comment créer une simple application web Hello World dans Visual Studio avec C# et ASP.NET Core, étape par étape.
-ms.date: 02/01/2019
 ms.custom: mvc,seodec18
+ms.date: 03/23/2019
+ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: quickstart
 author: TerryGLee
 ms.author: tglee
@@ -12,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 60f7c7bd7d0a3073f75d4ece7012601ded8eb059
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 247906426dcf57463a36ea85ce781b39aae2ffba
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957782"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475849"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Démarrage rapide : Utiliser Visual Studio pour créer votre première application web ASP.Core
 
@@ -27,7 +29,17 @@ Dans cette introduction de 5 à 10 minutes à l’utilisation de Visual Studio, 
 
 ### <a name="install-visual-studio"></a>Installer Visual Studio
 
+::: moniker range="vs-2017"
+
 Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) pour l’installer gratuitement.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) pour l’installer gratuitement.
+
+::: moniker-end
 
 ### <a name="choose-your-theme-optional"></a>Choisir votre thème (facultatif)
 
@@ -36,6 +48,8 @@ Ce tutoriel de démarrage rapide contient des captures d’écran qui utilisent 
 ## <a name="create-a-project"></a>Créer un projet
 
 Pour commencer, vous allez créer un projet d’application web ASP.NET Core. Le type de projet s’accompagne d’entrée de jeu de tous les modèles de fichiers permettant de créer une application web.
+
+::: moniker range="vs-2017"
 
 1. Ouvrez Visual Studio 2017.
 
@@ -61,9 +75,46 @@ Pour commencer, vous allez créer un projet d’application web ASP.NET Core. Le
    ![Boîte de dialogue Nouvelle application web ASP.NET Core](../ide/media/aspnet-core-2dot1.png)
 
    > [!NOTE]
-   > Si vous ne voyez pas **ASP.NET Core 2.1** ou ultérieur, vérifiez que vous exécutez la version la plus récente de Visual Studio. Pour savoir comment mettre à jour votre installation, consultez la page [Mettre à jour Visual Studio 2017 vers la version la plus récente](../install/update-visual-studio.md).
+   > Si vous ne voyez pas **ASP.NET Core 2.1** ou ultérieur, vérifiez que vous exécutez la version la plus récente de Visual Studio. Pour plus d’informations sur la mise à jour votre installation, consultez la page [Mettre à jour Visual Studio vers la version la plus récente](../install/update-visual-studio.md).
 
 Peu après, Visual Studio ouvre votre fichier projet.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Dans la fenêtre de démarrage, choisissez **Créer un projet**.
+
+   ![Afficher la fenêtre « Créer un projet »](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+
+1. Dans la fenêtre **Créer un projet**, entrez ou tapez *ASP.NET* dans la zone de recherche. Ensuite, choisissez **C#** Dans la liste des langages, puis choisissez **Windows** dans la liste des plateformes. 
+
+   Après avoir appliqué les filtres de langage et de plateforme, choisissez le modèle **Application web ASP.NET Core**, puis choisissez **Suivant**.
+
+   ![Choisir le modèle C# pour l’application web ASP.NET Core](../get-started/csharp/media/vs-2019/csharp-create-new-project-search-aspnet-core-filtered.png)
+
+   > [!NOTE]
+   > Si vous ne voyez pas le modèle **Application web ASP.NET Core**, vous pouvez l’installer à partir de la fenêtre **Créer un projet**. Dans le **Vous ne trouvez pas ce que vous cherchez ?**, choisissez le lien **Installer plus d’outils et de fonctionnalités**.
+   >
+   > ![Le lien « Installer plus d’outils et de fonctionnalités » du message « Vous ne trouvez pas ce que vous cherchez ? » dans la fenêtre « Créer un projet »](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > 
+   > Ensuite, dans Visual Studio Installer, choisissez la charge de travail **Développement web et ASP.NET**.
+   >
+   > ![Charge de travail Application web ASP.NET Core dans Visual Studio Installer](../get-started/media/aspnet-core-web-dev-workload.png)
+   >
+   > Après cela, choisissez le bouton **Modifier** dans Visual Studio Installer. Vous pouvez être invité à enregistrer votre travail ; le cas échéant, faites-le. Ensuite, choisissez **Continuer** pour installer la charge de travail. Ensuite, revenez à l’étape 2 de cette procédure « [Créer un projet](#create-a-project) ».
+
+1. Dans la fenêtre **Configurer votre nouveau projet**, tapez ou entrez *HelloWorld* dans la zone **Nom du projet**. Choisissez ensuite **Créer**.
+
+   ![Dans la fenêtre « Configurer votre nouveau projet », nommez votre projet « HelloWorld »](../get-started/csharp/media/vs-2019/csharp-name-your-aspnet-helloworld-project.png)
+
+1. Dans la boîte de dialogue **Créer une application web ASP.NET Core**, vérifiez que **ASP.NET Core 2.1** apparaît dans le menu déroulant du haut. Ensuite, choisissez **Application web**, qui inclut des exemples Razor Pages. Ensuite, choisissez **Créer**.
+
+   ![La fenêtre « Créez une application web ASP.NET Core »](../get-started/csharp/media/vs-2019/csharp-create-aspnet-core-razor-pages-app.png)
+
+   Visual Studio ouvre votre nouveau projet.
+
+::: moniker-end
 
 ## <a name="create-and-run-the-app"></a>Créer et exécuter l’application
 

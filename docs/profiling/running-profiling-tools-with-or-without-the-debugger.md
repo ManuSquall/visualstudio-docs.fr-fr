@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed4cf1cce3ba677b5232c86b7abb1386d4d1dc50
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 63215d6350a4922ed416c8c48f006cd23c9e0728
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597529"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323722"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Exécuter des outils de profilage avec ou sans le débogueur
 
@@ -67,7 +67,7 @@ Pour plus d’informations, consultez [Searching and filtering the Events tab of
 
 ## <a name="collect-profiling-data-without-debugging"></a>Collecter les données de profilage sans débogage
 
-Pour recueillir des données de performances sans débogage, vous pouvez exécuter les outils du **Profileur de performances**. L’exécution de certains des outils de profilage nécessite des privilèges d’administrateur. Vous pouvez démarrer Visual Studio en tant qu’administrateur, ou vous pouvez exécuter les outils en tant qu’administrateur quand vous démarrez la session de diagnostic.
+Pour recueillir des données de performances sans débogage, vous pouvez exécuter les outils du **Profileur de performances**. L’exécution de certains des outils de profilage nécessite des privilèges d’administrateur. Vous pouvez ouvrir Visual Studio en tant qu’administrateur, ou vous pouvez exécuter les outils en tant qu’administrateur quand vous démarrez la session de diagnostic.
 
 1. Avec un projet ouvert dans Visual Studio, sélectionnez **Déboguer** > **Profileur de performances**, ou appuyez sur **Alt**+**F2**.
 
