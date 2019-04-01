@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 008d0d8d464f3f1a24d15f1cb6f299edb30776fd
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c7568f27d9be2ff38c2d5c87cf8a950e06846db5
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840829"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325105"
 ---
 # <a name="sign-in-to-visual-studio"></a>Se connecter à Visual Studio
 
@@ -44,7 +44,7 @@ Voici une liste complète de tous les avantages dont vous pouvez éventuellement
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>Comment se connecter à Visual Studio ?
 
-La première fois que vous démarrez Visual Studio, vous êtes invité à vous connecter et à fournir des informations d'inscription de base. Vous devez choisir un compte Microsoft ou bien un compte professionnel ou scolaire qui vous représente le mieux. Si vous n'avez aucun de ces comptes, vous pouvez créer gratuitement un compte Microsoft. Consultez [Comment ouvrir un compte Microsoft ?](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
+Quand vous ouvrez Visual Studio pour la première fois, vous êtes invité à vous connecter et à fournir des informations d’inscription de base. Vous devez choisir un compte Microsoft ou bien un compte professionnel ou scolaire qui vous représente le mieux. Si vous n'avez aucun de ces comptes, vous pouvez créer gratuitement un compte Microsoft. Consultez [Comment ouvrir un compte Microsoft ?](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
 
 Choisissez ensuite les paramètres d'interface utilisateur et le thème de couleur que vous souhaitez utiliser dans Visual Studio. Visual Studio mémorise ces paramètres et les synchronise dans tous les environnements de Visual Studio auxquels vous êtes connecté. Pour obtenir la liste des paramètres qui sont synchronisés, consultez [Paramètres synchronisés](../ide/synchronized-settings-in-visual-studio.md). Vous pouvez changer les paramètres ultérieurement si vous ouvrez le menu **Outils** > **Options** dans Visual Studio.
 

@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cb8540fd53a66d67907de47f6332a05c6240f09
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 6ee40d877af75469dcc1abc176d67f43c8bdcfb3
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868896"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324394"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense JavaScript
 
@@ -53,6 +53,7 @@ TypeScript utilise plusieurs sources pour générer ces informations :
 - [Acquisition automatique de définitions de type](#Auto)
 
 <a name="TypeInference"></a>
+
 ### <a name="intellisense-based-on-type-inference"></a>IntelliSense basé sur l’inférence de type
 
 Dans JavaScript, la plupart du temps, aucune information de type explicite n’est disponible. Heureusement, il est en général assez facile de déduire un type en fonction du contexte du code.
@@ -90,6 +91,7 @@ exports.Foo = Foo;
 ```
 
 <a name="JsDoc"></a>
+
 ### <a name="intellisense-based-on-jsdoc"></a>IntelliSense basé sur JSDoc
 
 Si l’inférence de type ne fournit pas les informations de type souhaitées (ou pour prendre en charge de la documentation), vous pouvez fournir les informations de type explicitement par le biais d’annotations JSDoc.  Par exemple, pour donner à un objet partiellement déclaré un type spécifique, vous pouvez utiliser la balise `@type` comme indiqué ci-dessous :
@@ -123,7 +125,7 @@ Consultez [Prise en charge de JSDoc dans JavaScript](https://github.com/Microsof
 
 Nous présentons ci-après un exemple simple de fichier de définition TypeScript qui fournit ces informations de type (par le biais d’une interface) à un fichier JavaScript dans le même projet (à l’aide d’une balise `JsDoc`).
 
-<img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png" height="400" width="640" alt="TypeScript definition file" />
+![Fichier de définition TypeScript](https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png)
 
 <a name="Auto"></a>
 ### <a name="automatic-acquisition-of-type-definitions"></a>Acquisition automatique de définitions de type

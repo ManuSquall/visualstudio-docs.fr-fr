@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b55b2e1a34afa78ac1e122081eca261f3dcdabc8
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: d8e60b92b7c76c22c35edbe42d60644583f37123
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195204"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355774"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Référence sur les onglets de la fenêtre Environnements Python
 
@@ -60,7 +60,7 @@ Quand vous utilisez des fenêtres interactives dans votre flux de travail quotid
 
 Les scripts de démarrage contiennent du code que la fenêtre **Interactive** charge et exécute automatiquement, notamment les importations, les définitions de fonctions et, littéralement, tout autre élément. Ces scripts sont référencés de deux manières :
 
-1. Quand vous installez un environnement, Visual Studio crée un dossier *Documents\Visual Studio 2017\Python Scripts\\\<environnement>* où &lt;environnement&gt; correspond au nom de l’environnement. Vous pouvez facilement accéder au dossier spécifique à l’environnement avec la commande **Explorer les scripts interactifs**. Quand vous démarrez la fenêtre **Interactive** pour cet environnement, elle charge et exécute tous les fichiers *.py* qui s’y trouvent dans l’ordre alphabétique.
+1. Quand vous installez un environnement, Visual Studio crée un dossier *Documents\Visual Studio <version>\Python Scripts\\\<environnement>* où &lt;version&gt; correspond à la version de Visual Studio (comme 2017 ou 2019) et où &lt;environnement&gt; correspond au nom de l’environnement. Vous pouvez facilement accéder au dossier spécifique à l’environnement avec la commande **Explorer les scripts interactifs**. Quand vous démarrez la fenêtre **Interactive** pour cet environnement, elle charge et exécute tous les fichiers *.py* qui s’y trouvent dans l’ordre alphabétique.
 
 1. Le contrôle **Scripts** sous l’onglet **Outils** > **Options** > **Python** > **Fenêtres interactives** (consultez [Options des fenêtres interactives](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) est destiné à spécifier un dossier supplémentaire pour les scripts de démarrage qui sont chargés et exécutés dans tous les environnements. Toutefois, cette fonctionnalité ne fonctionne pas actuellement.
 
@@ -156,8 +156,8 @@ Affiche l’état actuel de la base de données de saisie semi-automatique Intel
 
 ![Onglet IntelliSense, Environnements Python](media/environments/environments-intellisense-tab.png)
 
-- Dans **Visual Studio 2017 version 15.5** et versions précédentes, les saisies semi-automatiques IntelliSense dépendent d’une base de données qui a été compilée pour cette bibliothèque. La génération de la base de données est effectuée en arrière-plan quand une bibliothèque est installée, mais peut prendre du temps et ne pas être terminée lorsque vous démarrez l’écriture de code.
-- **Visual Studio 2017 versions 15.6** et ultérieures utilise une méthode plus rapide pour fournir des complétions qui ne dépendent pas de la base de données par défaut. Pour cette raison, l’onglet est étiqueté **IntelliSense [base de données désactivée]**. Vous pouvez activer la base de données en désactivant l’option **Outils** > **Options** > **Python** > **Expérimental** > **Utiliser le nouveau style IntelliSense pour les environnements**.
+- Dans Visual Studio 2017 version 15.5 et antérieures, les complétions IntelliSense dépendent d’une base de données qui a été compilée pour cette bibliothèque. La génération de la base de données est effectuée en arrière-plan quand une bibliothèque est installée, mais peut prendre du temps et ne pas être terminée lorsque vous démarrez l’écriture de code.
+- Visual Studio 2017 versions 15.6 et ultérieures utilise une méthode plus rapide pour fournir des complétions qui ne dépendent pas de la base de données par défaut. Pour cette raison, l’onglet est étiqueté **IntelliSense [base de données désactivée]**. Vous pouvez activer la base de données en désactivant l’option **Outils** > **Options** > **Python** > **Expérimental** > **Utiliser le nouveau style IntelliSense pour les environnements**.
 
 Lorsque Visual Studio détecte un nouvel environnement (ou que vous en ajoutez un), il commence automatiquement à compiler la base de données en analysant les fichiers source de la bibliothèque. Ce processus peut prendre entre une minute et plus d’une heure, selon ce qui est installé. (Anaconda, par exemple, est fourni avec de nombreuses bibliothèques et la compilation de la base de données prend un certain temps). Une fois ce processus terminé, vous obtenez la base de données IntelliSense détaillée et n’avez pas à actualiser une nouvelle fois la base de données (avec le bouton **Refresh DB** (Actualiser base de données)) jusqu’à ce que vous installiez d’autres bibliothèques.
 

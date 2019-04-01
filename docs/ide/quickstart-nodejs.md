@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 17bd74a9c5a484d7e3539e787f4ae05d078aa80b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 79197d99ea04d95c369738af5832f70f4f7dc7e7
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867010"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355297"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Démarrage rapide : Utiliser Visual Studio pour créer votre première application Node.js
 
@@ -53,15 +53,13 @@ Vous allez d’abord créer un projet d’application web Node.js.
 
 1. Ouvrez Visual Studio.
 
-1. Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**.
-
 1. Créer un nouveau projet.
 
     ::: moniker range=">=vs-2019"
-    Dans la boîte de dialogue **Créer un projet**, tapez **javascript** dans la zone de recherche pour filtrer les résultats, choisissez **Application web Node.js vide**, puis choisissez **Suivant**. Choisissez ensuite **Créer**.
+    Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **Node.js**, puis choisissez **Créer un projet d’application web Node.js vide** (JavaScript). Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Dans la boîte de dialogue **Nouveau projet**, dans le volet gauche, développez **JavaScript**, puis choisissez **Node.js**. Dans le volet central, choisissez **Application web Node.js vide**, puis **OK**.
+    Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans la boîte de dialogue **Nouveau projet**, développez **JavaScript**, puis choisissez **Node.js**. Dans le volet central, choisissez **Application web Node.js vide**, puis **OK**.
     ::: moniker-end
     Si vous ne voyez pas le modèle de projet **Application web Node.js vide**, vous devez ajouter la charge de travail **Développement Node.js**. Pour obtenir des instructions détaillées, consultez les [Prérequis](#prerequisites).
 

@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1871b7270c462ea599450e48f0a86a4887ebc5ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 745f371fa0461c2dc0dcedac0e06d160bbf7e209
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970515"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416342"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Procédure : Créer des modèles d’élément multifichier
 
@@ -28,11 +28,11 @@ Il arrive que les modèles d’élément spécifient un seul élément, mais cet
 
 Les modèles d’élément multifichiers exigent des paramètres pour garantir que les extensions de fichier appropriées sont utilisées lors de la création de l’élément. Si vous créez un modèle d’élément multifichier à l’aide de l’**Assistant Exportation de modèle**, ces paramètres sont générés automatiquement et aucune autre modification n’est nécessaire.
 
-## <a name="to-create-a-multi-file-item-template-by-using-the-export-template-wizard"></a>Pour créer un modèle d’élément multifichier à l’aide de l’Assistant Exportation de modèle
+## <a name="use-the-export-template-wizard"></a>Utiliser l’Assistant Exportation de modèle
 
 Vous pouvez créer un modèle d’élément multifichier de la même manière qu’un modèle d’élément à un seul fichier. Consultez [Guide pratique pour créer des modèles d’élément](../ide/how-to-create-item-templates.md). Dans la page **Sélectionner l’élément à exporter** de l’Assistant, sélectionnez le fichier qui contient des fichiers dépendants (par exemple, un fichier de formulaire Windows Forms). L’Assistant inclut automatiquement tous les fichiers dépendants, comme les fichiers du concepteur et les fichiers de ressources, dans le modèle.
 
-## <a name="to-manually-create-a-multi-file-item-template"></a>Pour créer manuellement un modèle d’élément multifichier
+## <a name="manually-create-a-multi-file-item-template"></a>Créer manuellement un modèle d’élément multifichier
 
 1. Créez le modèle d’élément comme vous le feriez manuellement pour un modèle d’élément à un seul fichier, mais incluez chaque fichier qui constitue l’élément multifichier.
 

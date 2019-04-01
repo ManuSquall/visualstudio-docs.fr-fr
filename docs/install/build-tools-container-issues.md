@@ -10,33 +10,41 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52e3ab107aac36f50307db910c71e03b5a8b439b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 21486fb42f689fbdd5876353a0d99b8f818cf817
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983700"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415623"
 ---
 # <a name="known-issues-for-containers"></a>Problèmes connus liés aux conteneurs
 
 Quelques problèmes nous ont été signalés concernant l’installation de Visual Studio dans un conteneur Docker.
 
-::: moniker range="vs-2017"
-
 ## <a name="windows-container"></a>Conteneur Windows
 
-Les problèmes suivants se produisent lorsque vous installez Visual Studio Build Tools 2017 dans un conteneur Windows.
+Les problèmes connus suivants se produisent quand vous installez Visual Studio Build Tools dans un conteneur Windows.
+
+::: moniker range="vs-2017"
 
 * Vous ne pouvez pas installer Visual Studio dans un conteneur basé sur l’image microsoft/windowsservercore:10.0.14393.1593. Les images marquées avec des versions de Windows antérieures ou ultérieures à la version 10.0.14393 doivent normalement fonctionner.
+
 * Vous ne pouvez pas installer le SDK Windows 10.0.14393 ou version ultérieure. Certains packages ne peuvent pas être installés, si bien que les charges de travail qui en dépendent ne peuvent pas fonctionner.
+
+::: moniker-end
+
 * Passez `-m 2GB` (ou plus) au moment de la génération de l’image. L’installation de certaines charges de travail nécessite plus de mémoire que la valeur par défaut (1 Go).
 * Configurez Docker pour utiliser des disques ayant une capacité supérieure à la valeur par défaut (20 Go).
 * Passez `--norestart` sur la ligne de commande. Au moment de la rédaction de cet article, le redémarrage d’un conteneur Windows au sein même de celui-ci retourne `ERROR_TOO_MANY_OPEN_FILES` à l’hôte.
-* Si vous basez votre image directement sur microsoft/windowsservercore, l’installation du .NET Framework risque de ne pas s’effectuer correctement. De plus, aucune erreur d’installation ne sera signalée. Le code managé risque de ne pas s’exécuter, une fois l’installation effectuée. Basez plutôt votre image sur [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) ou une version ultérieure. Par exemple, vous pouvez voir s’afficher l’erreur suivante durant la génération avec MSBuild :
+* Si vous basez votre image directement sur microsoft/windowsservercore, l’installation du .NET Framework risque de ne pas s’effectuer correctement et aucune erreur d’installation ne sera signalée. Le code managé risque de ne pas s’exécuter une fois l’installation terminée. Basez plutôt votre image sur [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) ou une version ultérieure. Par exemple, vous pouvez voir une erreur lors de la génération avec MSBuild qui est similaire à ceci :
 
   > C:\BuildTools\MSBuild\15.0\bin\Roslyn\Microsoft.CSharp.Core.targets(84,5) : erreur MSB6003 : L’exécutable de tâche spécifié, « csc.exe », n’a pas pu être exécuté. Impossible de charger le fichier ou l’assembly 'System.IO.FileSystem, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a', ou l’une de ses dépendances. Le système ne trouve pas le fichier spécifié.
 
-* Vous ne pouvez pas installer Visual Studio 2017 version 15.8 ou antérieure (n’importe quel produit) sur mcr<span></span>.microsoft.com/windows/servercore:1809 ou version ultérieure. Pour plus d'informations, voir https://aka.ms/setup/containers/servercore1809.
+::: moniker range="vs-2017"
+
+* Vous ne pouvez pas installer Visual Studio 2017 version 15.8 ou antérieure (n’importe quel produit) sur mcr.microsoft.com/windows/servercore:1809 ou ultérieur. Pour plus d'informations, voir https://aka.ms/setup/containers/servercore1809.
 
 ::: moniker-end
 

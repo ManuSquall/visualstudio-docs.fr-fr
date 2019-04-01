@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97a7886ba57c9e4076121ec8071e52f29af784f5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 962b3ef149730772c01c8cfe3a3bf026d59fd3b0
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956855"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324238"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Créer et configurer des membres de type dans le Concepteur de classes
 
@@ -47,7 +47,7 @@ Vous pouvez ajouter ces membres aux types dans un diagramme de classes et config
 |Interface|méthode, propriété, événement (pour C# et Visual Basic)|
 |Classe abstraite|méthode, propriété (pour C# et Visual Basic), champ, événement (pour C# et Visual Basic), constructeur (méthode), destructeur (méthode), constante|
 |Structure (Struct en C#)|méthode, propriété (pour C# et Visual Basic) champ, événement (pour C# et Visual Basic), constructeur (méthode), constante|
-|délégué|parameter|
+|délégué|paramètre|
 |Module (VB uniquement)|méthode, propriété, champ, événement, constructeur, constante|
 
 > [!NOTE]
@@ -205,7 +205,7 @@ Les lignes de paramètres contiennent les éléments suivants :
 
 - **\<ajouter un paramètre>**
 
-     La dernière ligne de paramètre d’un membre contient le texte **<add parameter>** dans la cellule**Nom**. Cliquez sur cette cellule pour créer un nouveau paramètre. Pour plus d’informations, consultez [Pour ajouter un paramètre à une méthode](creating-and-configuring-type-members.md#add-parameters-to-methods).
+     La dernière ligne de paramètres d’un membre contient le texte **<ajouter un paramètre\>** dans la cellule **Nom**. Cliquez sur cette cellule pour créer un nouveau paramètre. Pour plus d’informations, consultez [Pour ajouter un paramètre à une méthode](creating-and-configuring-type-members.md#add-parameters-to-methods).
 
 La fenêtre **Propriétés** présente les mêmes propriétés de paramètres que la fenêtre **Détails de classe** : **Nom**, **Type**, **Modificateur**, **Résumé**, ainsi que la propriété **Valeur par défaut facultative**. La modification d'une propriété dans un emplacement met à jour la valeur de la propriété de manière globale, y compris l'affichage de sa valeur dans l'autre emplacement.
 

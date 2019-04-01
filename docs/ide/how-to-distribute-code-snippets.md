@@ -1,6 +1,6 @@
 ---
-title: 'Procédure : Distribuer des extraits de code'
-ms.date: 11/04/2016
+title: Distribuer des extraits de code en tant qu’extension
+ms.date: 03/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
@@ -12,24 +12,28 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dde020192e4b301083c69963720f6222639f7b1
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 0f0b3211352dc16e51b64196e13f7378bf2a423c
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323051"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355420"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Procédure : Distribuer des extraits de code
 
-Vous pouvez donner des extraits de code à vos amis pour qu’ils les installent sur leurs ordinateurs à l’aide du **Gestionnaire des extraits de code**. Toutefois, si vous avez plusieurs extraits de code à distribuer ou que vous souhaitez les distribuer plus largement, vous pouvez inclure votre fichier d’extraits de code dans une extension Visual Studio. Les utilisateurs de Visual Studio peuvent ensuite installer l’extension.
+Vous pouvez donner des extraits de code à vos amis pour qu’ils les installent sur leurs ordinateurs à l’aide du **Gestionnaire des extraits de code**. Cependant, si vous avez plusieurs extraits de code à distribuer ou que vous voulez les distribuer à plus grande échelle, vous pouvez inclure vos fichiers d’extraits de code dans une extension Visual Studio. Les utilisateurs de Visual Studio peuvent ensuite installer l’extension pour obtenir les extraits de code.
 
-Vous devez installer le kit SDK Visual Studio pour pouvoir créer des extensions Visual Studio. Recherchez la version du kit SDK Visual Studio qui correspond à votre installation de Visual Studio dans la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017).
+## <a name="prerequisites"></a>Prérequis
+
+Installez la charge de travail **Développement d’extension Visual Studio** pour accéder aux modèles de projet **Projet VSIX**.
+
+![Charge de travail Développement d’extension Visual Studio](media/vs-2019/extension-development-workload.png)
 
 ## <a name="set-up-the-extension"></a>Configurer l’extension
 
-Au cours de cette procédure, nous allons utiliser l’extrait de code Hello World créé dans [Procédure pas à pas : Créer un extrait de code](../ide/walkthrough-creating-a-code-snippet.md). Nous fournirons le texte du fichier *.snippet* pour que vous n’ayez pas à revenir en arrière afin d’en créer un.
+Dans cette procédure, vous utilisez l’extrait de code Hello World créé dans [Procédure pas à pas : Créer un extrait de code](../ide/walkthrough-creating-a-code-snippet.md). Cet article fournit l’extrait de code XML : vous n’êtes donc pas obligé de revenir en arrière et de créer un extrait de code.
 
-1. Créez un projet VSIX nommé **TestSnippet**. (**Fichier** > **Nouveau** > **Projet** > **Visual C# (ou Visual Basic)** > **Extensibilité**.)
+1. Créez un projet à partir du modèle **Projet VSIX vide** et nommez le projet **TestSnippet**.
 
 2. Dans le projet **TestSnippet**, ajoutez un nouveau fichier XML et appelez-le *VBCodeSnippet.snippet*. Remplacez le contenu par le code XML suivant :
 
@@ -111,7 +115,9 @@ Au cours de cette procédure, nous allons utiliser l’extrait de code Hello Wor
 
 4. Testez l'extrait de code. Dans l'instance expérimentale, ouvrez un projet Visual Basic et ouvrez l'un des fichiers de code. Placez votre curseur quelque part dans le code, effectuez un clic droit et, dans le menu contextuel, sélectionnez **Insérer un extrait**.
 
-5. Normalement, vous devez voir *HelloWorldVB* parmi les dossiers. Double-cliquez dessus. Vous devez voir une fenêtre contextuelle **Insérer un extrait : HelloWorldVB >** comportant une liste déroulante **HelloWorldVB**. Cliquez sur la liste déroulante **HelloWorldVB**. La ligne suivante doit normalement être ajoutée au fichier :
+5. Normalement, vous devez voir *HelloWorldVB* parmi les dossiers. Double-cliquez dessus. Vous devez voir une fenêtre contextuelle **Insérer un extrait : HelloWorldVB >** comportant une liste déroulante **HelloWorldVB**. Cliquez sur la liste déroulante **HelloWorldVB**.
+
+   La ligne suivante est ajoutée au fichier de code :
 
     ```vb
     Console.WriteLine("Hello, World!")

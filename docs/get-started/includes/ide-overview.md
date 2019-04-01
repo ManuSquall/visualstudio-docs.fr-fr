@@ -6,12 +6,12 @@ ms.author: gewarren
 author: gewarren
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: c411df964d0f0ffb6a96484f6ad4d245d561410c
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 63e39c3879d51a34bc61f703eaae1e75dc2fd742
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58070332"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58342492"
 ---
 *L’environnement de développement intégré* de Visual Studio est une plateforme de lancement créative avec laquelle vous pouvez modifier, déboguer et générer du code, puis publier une application. Un environnement de développement intégré (IDE) est un programme riche en fonctionnalités qui peut être utilisé pour de nombreux aspects du développement de logiciels. Au-delà de l’éditeur et du débogueur standard fournis par la plupart des IDE, Visual Studio inclut des compilateurs, des outils de complétion de code, des concepteurs graphiques et de nombreuses autres fonctionnalités afin de faciliter le processus de développement logiciel.
 
@@ -232,11 +232,11 @@ Nous allons aller plus loin en créant un programme simple.
 
 1. Ouvrez Visual Studio.
 
-   La fenêtre de démarrage s’affiche avec diverses options de clonage d’un référentiel, d’ouverture d’un projet récent ou de création d’un tout nouveau projet.
+   La fenêtre de démarrage s’affiche avec différentes options de clonage d’un référentiel, d’ouverture d’un projet récent ou de création d’un tout nouveau projet.
 
 1. Choisissez **Créer un projet**.
 
-   ![Fenêtre de démarrage de Visual Studio, Créer un projet](../media/vs-2019/start-window-create-new-project.png)
+   ![Fenêtre de démarrage de Visual Studio - Créer un projet](../media/vs-2019/start-window-create-new-project.png)
 
    La fenêtre **Créer un projet** s’affiche et présente plusieurs *modèles* de projet. Un modèle contient les fichiers et les paramètres de base nécessaires pour un type de projet donné.
 

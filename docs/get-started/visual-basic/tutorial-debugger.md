@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc450217dc6b0055a14cccd02c471329870a74ac
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 9c1c05fa3d424d90bedbbd52ac66636dc1fc1dcb
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155526"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355511"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Tutoriel : Apprendre à déboguer du code Visual Basic avec Visual Studio
 
@@ -36,25 +36,37 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
 ## <a name="prerequisites"></a>Prérequis
 
-* Au préalable, vous devez avoir installé Visual Studio 2017 et la charge de travail **Développement .NET Desktop**.
+::: moniker range=">=vs-2019"
 
-    Si vous n’avez pas encore installé Visual Studio, accédez à la page  [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)  pour l’installer gratuitement.
+Visual Studio 2019 et la charge de travail **Développement .NET Desktop** doivent être installés.
 
-    Si vous devez installer la charge de travail mais que vous avez déjà Visual Studio, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet** (sélectionnez **Fichier** > **Nouveau** > **Projet**). Visual Studio Installer est lancé. Choisissez la charge de travail **Développement .NET Desktop**, puis choisissez **Modifier**.
+::: moniker-end
+::: moniker range="vs-2017"
+
+Au préalable, vous devez avoir installé Visual Studio 2017 et la charge de travail **Développement .NET Desktop**.
+
+::: moniker-end
+
+Si vous n’avez pas encore installé Visual Studio, accédez à la page  [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/)  pour l’installer gratuitement.
+
+Si vous devez installer la charge de travail, mais que vous avez déjà installé Visual Studio, cliquez sur **Outils** > **Obtenir les outils et fonctionnalités...**, qui ouvre Visual Studio Installer. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement .NET Desktop**, puis choisissez **Modifier**.
 
 ## <a name="create-a-project"></a>Créer un projet
 
-1. Dans Visual Studio, sélectionnez **Fichier > Nouveau projet**.
+1. Ouvrez Visual Studio.
 
-2. Sous **Visual Basic**, choisissez **Windows Desktop** puis, dans le volet central, **Application console**.
+    ::: moniker range=">=vs-2019"
+    Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **visual basic**, choisissez **Modèles**, puis choisissez **Créer un projet d’application console (.NET Framework)**. Dans la boîte de dialogue qui s’affiche, tapez un nom comme **get-started-debugging**, puis choisissez **Créer**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, sous **Visual Basic**, choisissez **Windows Desktop** puis, dans le volet central, choisissez **Application console (.NET Framework)**. Ensuite, tapez un nom comme **get-started-debugging**, puis cliquez sur **OK**.
+    ::: moniker-end
 
-    Si vous ne voyez pas le modèle de projet **Application console**, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**. Visual Studio Installer est lancé. Choisissez la charge de travail *Développement .NET Desktop**, puis **Modifier**.
-
-3. Tapez un nom comme **get-started-debugging**, puis cliquez sur **OK**.
+    Si vous ne voyez pas le modèle de projet **Application console (.NET Framework)**, accédez à **Outils** > **Obtenir les outils et fonctionnalités...**, qui ouvre Visual Studio Installer. Choisissez la charge de travail **Développement .NET Desktop**, puis choisissez **Modifier**.
 
     Visual Studio crée le projet.
 
-4. Dans *Program.cs*, remplacez le code suivant
+1. Dans *Module1.vb*, remplacez le code suivant
 
     ```vb
     Module Module1
@@ -200,7 +212,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
     Un cercle rouge apparaît là où vous avez défini le point d’arrêt.
 
-    ![Définir un point d’arrêt](../visual-basic/media/get-started-set-breakpoint-vb.png)
+    ![Définir un point d'arrêt](../visual-basic/media/get-started-set-breakpoint-vb.png)
 
     Les points d'arrêt constituent une fonctionnalité élémentaire et essentielle de toute procédure de débogage fiable. Quand vous définissez un point d'arrêt, Visual Studio interrompt l'exécution du code à l'emplacement du point d'arrêt pour vous permettre d'examiner les valeurs des variables, le comportement de la mémoire ou encore la bonne exécution ou non d'une branche de code.
 

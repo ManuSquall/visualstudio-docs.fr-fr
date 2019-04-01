@@ -2,7 +2,7 @@
 title: Utilisation de Visual Studio sur une machine virtuelle Azure
 titleSuffix: ''
 description: En savoir plus sur l’utilisation de Visual Studio sur une machine virtuelle Azure
-ms.date: 02/19/2019
+ms.date: 03/25/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12d99cf2e15bf1d806035598f9c92b5ed3319d25
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 3853d91d6bd473499f47ad47c9d72e708420a1f3
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450397"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476018"
 ---
 # <a id="top"> </a> Images Visual Studio sur Azure
 
@@ -34,9 +36,9 @@ Sur la Place de marché Microsoft Azure, vous trouverez des images des versions 
 
 | Version commerciale                                              | Éditions                     |     Version du produit      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|    Visual Studio 2019 : Préversion (préversion 3)                   |           Entreprise         | Version 16.0.0 Préversion 3 |
-| Visual Studio 2017 : Dernière version (version 15.9)                    |    Enterprise, Community     |      Version 15.9.7      |
-|         Visual Studio 2017 : RTW                              |    Enterprise, Community     |      Version 15.0.20     |
+|       Visual Studio 2019 : Preview (RC3)                      |           Entreprise         |    Version 16.0.0 RC3    |
+| Visual Studio 2017 : Dernière version (version 15.9)                    |    Enterprise, Community     |      Version 15.9.9      |
+|         Visual Studio 2017 : RTW                              |    Enterprise, Community     |      Version 15.0.22     |
 |   Visual Studio 2015 : Dernière version (Mise à jour 3)                      |    Enterprise, Community     |  Version 14.0.25431.01   |
 |         Visual Studio 2015 : RTW                              |             Aucun.             | (Expirée pour la maintenance)  |
 
@@ -101,7 +103,9 @@ Le spectre des environnements de développement est immense, et il existe des co
 
 Résumé rapide : Utilisez l’outil de préparation du système (Sysprep) et arrêtez la machine virtuelle en cours d’exécution, puis capturez *(Figure 1)* la machine virtuelle en tant qu’image via l’interface utilisateur du portail Azure. Azure enregistre le fichier `.vhd` qui contient l’image dans le compte de stockage de votre choix. La nouvelle image apparaît ensuite comme une ressource image dans la liste des ressources de votre abonnement.
 
-<img src="media/capture-vm.png" alt="Capture an image through the Azure portal’s UI" style="border:3px solid Silver; display: block; margin: auto;"><center>*(Figure 1) Capture d’une image par le biais de l’interface utilisateur du Portail Azure.*</center>
+![Capture d’une image via l’interface utilisateur du portail Azure](media/capture-vm.png)
+
+*(Figure 1) Capture d’une image via l’interface utilisateur du portail Azure.*
 
 Pour plus d’informations, consultez [Créer une image managée d’une machine virtuelle généralisée dans Azure](/azure/virtual-machines/windows/capture-image-resource).
 

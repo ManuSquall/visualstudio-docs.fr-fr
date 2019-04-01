@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 20df5476a2ca6cf8fb0ffbf22e8106e51d17128d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: d4fbe922512194c6dd87ffc72e27cfcf9c7631f0
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58070306"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355748"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Publier une application Node.js sur Azure (App Service Linux)
 
@@ -59,15 +59,13 @@ Dans ce didacticiel, vous apprendrez à :
 
 1. Ouvrez Visual Studio.
 
-1. Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**.
-
 1. Créez une application TypeScript Express.
 
     ::: moniker range=">=vs-2019"
-    Dans la boîte de dialogue **Créer un projet**, tapez **javascript** dans la zone de recherche pour filtrer les résultats, choisissez **Application Azure Node.js Express 4 de base**, puis choisissez **Suivant**. Choisissez ensuite **Créer**.
+    Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **Node.js**, puis choisissez **Créer une application Azure Node.js Express 4 de base** (TypeScript). Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Dans la boîte de dialogue **Nouveau projet**, dans le volet gauche, développez **JavaScript**, puis choisissez **Node.js**. Dans le volet central, choisissez **Application Azure Node.js Express 4 de base**, puis **OK**.
+    Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, développez **TypeScript**, puis choisissez **Node.js**. Dans le volet central, choisissez **Application Azure Node.js Express 4 de base**, puis **OK**.
 
     ![Créer une application TypeScript Express](../javascript/media/azure-ts-express-app.png)
     ::: moniker-end

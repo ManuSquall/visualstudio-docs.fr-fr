@@ -1,23 +1,25 @@
 ---
 title: Numéros de builds et dates de publication de Visual Studio
 titleSuffix: ''
-description: Liste des versions publiées et des numéros de build de Visual Studio 2017 et versions ultérieures, triés par date.
+description: Liste des versions publiées et des numéros de build de Visual Studio, triées par date.
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 03/13/2019
+ms.date: 03/26/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
 ms.workload:
 - multiple
-ms.openlocfilehash: d5c5a21c83329d8c528421c2336755a5d0621be9
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 3e88054d497bda068585b7bc58787ee3058bcb71
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194978"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476083"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numéros de builds et dates de publication de Visual Studio
 
@@ -29,6 +31,7 @@ Le tableau suivant répertorie les numéros de build et les dates de publication
 
 | **Version**| **Canal** | **Date de publication** | **Version de build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.10 | Édition | 25 mars 2019 | 15.9.28307.557 |
 | 15.9.9 | Édition | 12 mars 2019 | 15.9.28307.518 |
 | 15.0.21 | Édition | 12 mars 2019 | 15.0.26228.76 |
 | 15.9.8 | Édition | 5 mars 2019 | 15.9.28307.481 |
@@ -189,6 +192,8 @@ Le tableau suivant liste les numéros de build et les dates de publication de Vi
 
 | **Version**| **Canal** | **Date de publication** | **Version de build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.0 | Release Candidate 3 (RC.3) | 19 mars 2019 | 16.0.28714.193 |
+| 16.0.0 | Preview 4.3 | 19 mars 2019 | 16.0.28714.193 |
 | 16.0.0 | Release Candidate 2 (RC.2) | 12 mars 2019 | 16.0.28711.60 |
 | 16.0.0 | Préversion 4.2 | 12 mars 2019 | 16.0.28711.60 |
 | 16.0.0 | Release Candidate 1 Svc1 (RC.1 Svc1) | 6 mars 2019 | 16.0.28705.295 |

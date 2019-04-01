@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 790d6d866619b19a81bd0e92ecb043385736eaac
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: e7cc22e4fbba012d0774a3a1e84adc0cf02e8dcb
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983306"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355537"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Guide pratique pour installer la prise en charge de Python dans Visual Studio sur Windows
 
@@ -50,14 +50,14 @@ Pour tester rapidement la prise en charge de Python après avoir suivi la procé
 
     ::: moniker range="vs-2017"
     Facultatif : Si vous travaillez dans le domaine de la science des données, considérez également la charge de travail **Applications de science des données et analytiques**. Cette charge de travail inclut la prise en charge des langages Python, R et F#. Pour plus d’informations, consultez [Charge de travail Applications de science et analyse des données](data-science-and-analytical-applications-workload.md).
+
+    > [!Note]
+    > Les charges de travail Python et Science des données ne sont disponibles qu’avec Visual Studio 2017 version 15.2 et version ultérieure.
     ::: moniker-end
 
     ::: moniker range=">=vs-2019"
     Facultatif : Si vous travaillez dans le domaine de la science des données, considérez également la charge de travail **Applications de science des données et analytiques**. Cette charge de travail inclut la prise en charge des langages Python et F#. Pour plus d’informations, consultez [Charge de travail Applications de science et analyse des données](data-science-and-analytical-applications-workload.md).
     ::: moniker-end
-
-    > [!Note]
-    > Les charges de travail Python et Science des données ne sont disponibles qu’avec Visual Studio 2017 version 15.2 et version ultérieure.
 
 1. Sur le côté droit du programme d’installation, choisissez d’options si vous le souhaitez. Ignorez cette étape pour accepter les options par défaut.
 

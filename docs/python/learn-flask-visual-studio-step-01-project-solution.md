@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cad792adaaebb6c446d071aca0edd57932605375
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 137ffe6cc89c439de2fded337349310da865e3be
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920101"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355696"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Tutoriel : Bien démarrer avec l’infrastructure web Flask dans Visual Studio
 
@@ -40,7 +40,7 @@ Au cours de ces étapes, vous créez une même solution Visual Studio qui contie
 
 ## <a name="prerequisites"></a>Prérequis
 
-- Visual Studio 2017 sur Windows avec les options suivantes :
+- Visual Studio 2017 ou ultérieur sur Windows avec les options suivantes :
   - La charge de travail **Développement Python** (onglet **Charge de travail** dans le programme d’installation). Pour obtenir des instructions, consultez [Installer la prise en charge de Python dans Visual Studio](installing-python-support-in-visual-studio.md).
   - **Git pour Windows** et **Extension GitHub pour Visual Studio** sous l’onglet **Composants individuels** sous **Outils de code**.
 
@@ -60,7 +60,7 @@ Le développement Python n’est actuellement pas pris en charge dans Visual Stu
     - **Emplacement** : spécifiez un emplacement où créer la solution et le projet Visual Studio.
     - **Nom de la solution** : défini sur **LearningFlask**, qui convient pour la solution en tant que conteneur pour plusieurs projets de ce tutoriel.
     - **Créer le répertoire pour la solution** : Laissez cette option activée (par défaut).
-    - **Créer un dépôt Git** : Sélectionnez cette option (désactivée par défaut) pour que Visual Studio crée un dépôt Git local au moment de la création de la solution. Si vous ne voyez pas cette option, exécutez le programme d’installation de Visual Studio 2017 et ajoutez **Git pour Windows** et **Extension GitHub pour Visual Studio** sous l’onglet **Composants individuels** sous **Outils de code**.
+    - **Créer un dépôt Git** : Sélectionnez cette option (désactivée par défaut) pour que Visual Studio crée un dépôt Git local au moment de la création de la solution. Si vous ne voyez pas cette option, exécutez le programme d’installation de Visual Studio et ajoutez **Git pour Windows** et **Extension GitHub pour Visual Studio** sous l’onglet **Composants individuels** sous **Outils de code**.
 
 1. Au bout d’un moment, Visual Studio affiche une boîte de dialogue indiquant **Des packages externes sont nécessaires pour ce projet** (voir plus bas). Cette boîte de dialogue s’affiche, car le modèle inclut un fichier *requirements.txt* référençant le dernier package Flask 1.x. (Sélectionnez **Afficher les packages requis** pour voir les dépendances exactes.)
 

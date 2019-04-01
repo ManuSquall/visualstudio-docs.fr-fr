@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a546f1e0d40e810d696fb37bbee29d98ab8861fe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 451464cd2576c1dd70c7b8235cead327b2f05ca2
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949640"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355271"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Vue d’ensemble du multiciblage Visual Studio
 
@@ -35,13 +35,13 @@ Le ciblage du Framework inclut les fonctionnalités suivantes :
 
 - Quand vous ouvrez un projet qui cible une version antérieure du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], Visual Studio peut automatiquement le mettre à niveau ou laisser la cible telle quelle.
 
-- Quand vous créez un projet, vous pouvez spécifier la version du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] que vous voulez cibler.
+- Quand vous créez un projet, vous pouvez spécifier la version du .NET Framework que vous voulez cibler.
 
-- Vous pouvez modifier la version du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] que cible un projet existant.
+- Vous pouvez changer la version du .NET Framework ciblée par un projet existant.
 
-- Vous pouvez cibler une version différente du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] dans chacun des différents projets de la même solution.
+- Vous pouvez cibler une version différente du .NET Framework dans chacun des différents projets de la même solution.
 
-- Quand vous modifiez la version du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] ciblée par un projet, [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] applique les modifications obligatoires aux références et aux fichiers de configuration.
+- Quand vous changez la version du .NET Framework ciblée par un projet, [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] applique les changements nécessaires aux références et aux fichiers de configuration.
 
 Quand vous travaillez sur un projet qui cible une version antérieure du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], Visual Studio change dynamiquement l’environnement de développement, de la façon suivante :
 
@@ -62,17 +62,27 @@ Quand vous travaillez sur un projet qui cible une version antérieure du [!INCLU
 
 ## <a name="select-a-target-framework-version"></a>Sélectionner une version du framework cible
 
-Quand vous créez un projet, sélectionnez la version du .NET Framework cible dans la boîte de dialogue **Nouveau projet**. La liste des frameworks disponibles inclut les versions de framework installées applicables au type de modèle sélectionné. Pour les types de modèles qui n’ont pas besoin de .NET Framework, par exemple des modèles .NET Core, la liste déroulante **Framework** est masquée.
+Quand vous créez un projet, sélectionnez la version du .NET Framework cible après avoir sélectionné un modèle de projet. La liste des frameworks disponibles inclut les versions de framework installées applicables au type de modèle sélectionné. Pour les types de modèles qui n’ont pas besoin de .NET Framework, par exemple des modèles .NET Core, la liste déroulante **Framework** est masquée.
 
-![Liste déroulante Framework dans la boîte de dialogue Nouveau projet](media/vside-newproject-framework.png)
+::: moniker range="vs-2017"
 
-Dans un projet existant, vous pouvez modifier la version du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] cible dans la boîte de dialogue Propriétés du projet. Pour plus d'informations, voir [Procédure : cibler une version du .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+![Liste déroulante Framework dans Visual Studio 2017](media/vside-newproject-framework.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+![Liste déroulante Framework dans Visual Studio 2019](media/vs-2019/configure-new-project-framework.png)
+
+::: moniker-end
+
+Dans un projet existant, vous pouvez changer la version du .NET Framework cible dans la boîte de dialogue Propriétés du projet. Pour plus d'informations, voir [Procédure : cibler une version du .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 ## <a name="resolve-system-and-user-assembly-references"></a>Résoudre des références d’assembly système et utilisateur
 
 Pour cibler une version du .Net Framework, vous devez d’abord installer les références d’assembly appropriées. Vous pouvez télécharger des packs du développeur pour différentes versions du .NET Framework à partir de la page de [Téléchargements .NET](https://www.microsoft.com/net/download/windows).
 
-La boîte de dialogue **Ajouter une référence** désactive les assemblys système qui ne se rapportent pas à la version du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] cible afin qu’ils ne puissent pas être ajoutés à un projet par inadvertance. (Les assemblys système sont des fichiers *.dll* inclus dans une version du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].) Les références qui appartiennent à une version du Framework ultérieure à la version ciblée ne seront pas résolues, et les contrôles qui dépendent d’une telle référence ne peuvent pas être ajoutés. Si vous voulez activer une telle référence, réinitialisez la cible du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] du projet sur une cible qui inclut la référence.  Pour plus d'informations, voir [Procédure : cibler une version du .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+La boîte de dialogue **Ajouter une référence** désactive les assemblys système qui ne se rapportent pas à la version du .NET Framework cible, de façon à ce qu’ils ne puissent pas être ajoutés à un projet par inadvertance. (Les assemblys système sont des fichiers *.dll* inclus dans une version du .NET Framework.) Les références qui appartiennent à une version du Framework ultérieure à la version ciblée ne seront pas résolues, et les contrôles qui dépendent d’une telle référence ne peuvent pas être ajoutés. Si vous voulez activer une telle référence, réinitialisez la cible du .NET Framework du projet sur une cible qui inclut la référence.  Pour plus d'informations, voir [Procédure : cibler une version du .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 Pour plus d’informations sur les références d’assembly, consultez [Résoudre les assemblys au moment du design](../msbuild/resolving-assemblies-at-design-time.md).
 

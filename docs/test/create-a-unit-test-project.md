@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 381f04b78e5cfc9ed61187e62e310a2d927eb0ce
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ca83689628f02a8c7a2e0166b390d5b277086c1d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949432"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416134"
 ---
 # <a name="create-a-unit-test-project"></a>Créer un projet de test unitaire
 
@@ -23,11 +23,23 @@ Les tests unitaires reflètent souvent la structure du code testé. Par exemple,
 
 ## <a name="to-create-a-unit-test-project"></a>Pour créer un projet de test unitaire
 
-1. Dans le menu **Fichier**, choisissez **Nouveau**, puis **Projet**. Vous pouvez aussi appuyer sur **Ctrl**+**Maj**+**N**.
+1. Dans le menu **Fichier**, choisissez **Nouveau** > **Projet** ou appuyez sur **Ctrl**+**Maj**+**N**.
+
+::: moniker range="vs-2017"
 
 2. Dans la boîte de dialogue **Nouveau projet**, développez le nœud **Installé**, choisissez le langage que vous voulez utiliser pour votre projet de test, puis sélectionnez **Test**.
 
 3. Pour utiliser l’une des infrastructures de tests unitaires Microsoft, choisissez **Projet de test unitaire** dans la liste des modèles de projet. Sinon, choisissez le modèle de projet de l’infrastructure de tests unitaires que vous souhaitez utiliser. Nommez le projet, puis sélectionnez **OK**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Dans la page **Créer un projet**, tapez **test unitaire** dans la zone de recherche. Sélectionnez le modèle de projet **Projet de test unitaire (.NET Framework)**, puis cliquez sur **Suivant**.
+
+3. Dans la page **Configurer votre nouveau projet**, entrez un nom pour le projet, puis cliquez sur **Créer**.
+
+::: moniker-end
 
 4. Dans votre projet de test unitaire, ajoutez une référence au code testé. Pour ajouter une référence à un projet de code dans la même solution :
 

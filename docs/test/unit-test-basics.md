@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc001765beb01c7767ec9143cecf8462793dcaa8
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 080674094ede1a1d0f38327fc47e238d5f958362
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796827"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416368"
 ---
 # <a name="unit-test-basics"></a>Concepts de base des tests unitaires
 
@@ -38,7 +38,7 @@ Pour obtenir une introduction aux tests unitaires qui vous conduit directement d
 
 ## <a name="the-mybank-solution-example"></a>Exemple de solution MyBank
 
-Dans cette rubrique, nous utilisons comme exemple le développement d’une application fictive, appelée `MyBank` . Vous n’avez pas besoin du code réel pour suivre les explications fournies dans cette rubrique. Les méthodes de test sont écrites en C# et présentées à l’aide du framework de tests unitaires Microsoft pour le code managé. Toutefois, les concepts sont facilement transférés vers d’autres langages et frameworks.
+Dans cet article, nous utilisons comme exemple le développement d’une application fictive, appelée `MyBank`. Vous n’avez pas besoin du code réel pour suivre les explications fournies dans cette rubrique. Les méthodes de test sont écrites en C# et présentées à l’aide du framework de tests unitaires Microsoft pour le code managé. Toutefois, les concepts sont facilement transférés vers d’autres langages et frameworks.
 
 ![Solution MyBank](../test/media/ute_mybanksolution.png)
 
@@ -102,14 +102,26 @@ Un projet de test unitaire reflète généralement la structure d’un seul proj
 
 **Pour ajouter un projet de test unitaire à une solution :**
 
-1. Dans le menu **Fichier**, choisissez **Nouveau**, puis **Projet** (**Ctrl**+**Maj**+**N**).
+1. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur la solution et choisissez **Ajouter** > **Nouveau** **Projet**.
+
+::: moniker range="vs-2017"
 
 2. Dans la boîte de dialogue **Nouveau projet**, développez le nœud **Installé**, choisissez le langage que vous voulez utiliser pour votre projet de test, puis sélectionnez **Test**.
 
 3. Pour utiliser l’une des infrastructures de tests unitaires Microsoft, choisissez **Projet de test unitaire** dans la liste des modèles de projet. Sinon, choisissez le modèle de projet de l’infrastructure de tests unitaires que vous souhaitez utiliser. Pour tester le projet `Accounts` de notre exemple, vous devez le nommer `AccountsTests`.
 
-   > [!WARNING]
+   > [!NOTE]
    > Certaines infrastructures de tests unitaires tierces et open source ne fournissent pas de modèle de projet Visual Studio. Pour plus d’informations sur la création d’un projet, consultez la documentation relative à l’infrastructure.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Utilisez la zone de recherche de modèle de projet pour rechercher un modèle de projet de test unitaire pour le framework de test que vous voulez utiliser.
+
+3. Dans la page suivante, nommez le projet. Pour tester le projet `Accounts` de notre exemple, vous pouvez le nommer `AccountsTests`.
+
+::: moniker-end
 
 4. Dans votre projet de test unitaire, ajoutez une référence au projet de code testé : le projet Accounts (Comptes) dans notre exemple.
 

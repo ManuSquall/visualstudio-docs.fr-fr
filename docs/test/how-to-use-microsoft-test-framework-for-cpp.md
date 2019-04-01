@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: ac55d7513fd6670e30c9fa2097a5d38a96a92e26
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f5ab27f8f10cb7221ce85bd29df13e446253b8a8
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955074"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324907"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Utiliser le framework de tests unitaires Microsoft pour C++ dans Visual Studio
 
@@ -30,7 +30,7 @@ Dans certains cas, par exemple lors du test de fonctions non exportées dans une
 
    1. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet du programme que vous testez, puis choisissez **Propriétés** > **Propriétés de configuration** > **Répertoires VC++**.
 
-   2. Cliquez sur la flèche vers le bas dans les lignes suivantes et choisissez **<Edit>** :
+   2. Cliquez sur la flèche vers le bas dans les lignes suivantes et choisissez **\<Modifier>**  :
 
 
       | Répertoire | Property |

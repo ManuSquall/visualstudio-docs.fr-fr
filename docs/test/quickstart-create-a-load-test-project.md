@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ac5e6b8cdce628fb37aea79d965a4721fe5560e0
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c6703221f9db06ca8edba68a2f2bcc9b79a5d531
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069968"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415484"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Démarrage rapide : Créer un projet de test de charge
 
@@ -22,13 +22,13 @@ Dans ce guide de démarrage rapide de 10 minutes, vous découvrirez comment cré
 
 ## <a name="software-requirements"></a>Configuration logicielle requise
 
-Les projets de test de performances web et de test de charge sont uniquement disponibles dans l’édition Enterprise de Visual Studio.
+Les projets de test de performances web et de test de charge sont disponibles seulement dans l’**édition Enterprise** de Visual Studio.
 
 ## <a name="install-the-load-testing-component"></a>Installer le composant de test de charge
 
 Si le composant des outils de test de performances web et de charge n’est pas installé, utilisez pour cela Visual Studio Installer.
 
-1. Ouvrez **Visual Studio Installer** à partir du menu **Démarrer** de Windows. Vous pouvez également y accéder dans Visual Studio à partir de la boîte de dialogue **Nouveau projet**, ou en choisissant **Outils** > **Obtenir des outils et fonctionnalités** dans la barre de menus.
+1. Ouvrez **Visual Studio Installer** à partir du menu **Démarrer** de Windows. Vous pouvez également y accéder dans Visual Studio à partir de la boîte de dialogue Nouveau projet, ou en choisissant **Outils** > **Obtenir des outils et fonctionnalités** dans la barre de menus.
 
 1. Dans **Visual Studio Installer**, choisissez l’onglet **Composants individuels** et faites défiler jusqu’à la section **Débogage et test**. Sélectionnez **Outils de test de performances web et de test de charge**.
 
@@ -64,7 +64,7 @@ Dans cette section, nous créons un projet de test de charge C#. Vous pouvez ég
 
 2. Dans la fenêtre de démarrage, choisissez **Créer un projet**.
 
-3. Dans la boîte de dialogue **Créer un projet**, tapez **test web** dans la zone de recherche, puis sélectionnez le modèle **Projet de test de performance web et de charge \[Déconseillé]** pour C#. Sélectionnez **Suivant**.
+3. Dans la page **Créer un projet**, tapez **test web** dans la zone de recherche, puis sélectionnez le modèle **Projet de test de performance web et de charge \[déprécié]** pour C#. Sélectionnez **Suivant**.
 
 4. Entrez un nom pour le projet si vous ne voulez pas utiliser le nom par défaut, puis choisissez **Créer**.
 

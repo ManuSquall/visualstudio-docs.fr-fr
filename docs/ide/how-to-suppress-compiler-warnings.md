@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b228bbacb69449803847847932163a05f3cf5310
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 2d3f207190fed7c01dd851d809e12e6032549ff3
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323972"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323462"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Procédure : Supprimer les avertissements du compilateur
 
@@ -63,7 +63,7 @@ Cet exemple montre comment modifier le fichier *.vbproj* pour supprimer des aver
 
 1. Dans la barre de menus, sélectionnez **Projet** > **Décharger le projet**.
 
-1. Dans l’**Explorateur de solutions**, ouvrez le menu contextuel (clic droit) du projet, puis choisissez **Modifier <ProjectName>.vbproj**.
+1. Dans l’**Explorateur de solutions**, ouvrez le menu contextuel (clic droit) du projet, puis sélectionnez **Modifier\<nom_projet>.vbproj**.
 
     Le fichier de projet XML s’ouvre dans l’éditeur de code.
 

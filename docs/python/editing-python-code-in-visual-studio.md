@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0c7091a55487f83c88323d68ae8075630d39d471
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: aec55c4eb6bfd5aacd8368db7d7fcfdb6574b982
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155522"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355550"
 ---
 # <a name="edit-python-code"></a>Modifier le code Python
 
@@ -31,9 +31,9 @@ Vous pouvez également utiliser **l’Explorateur d’objets** de Visual Studio 
 
 IntelliSense fournit [les saisies semi-automatiques](#completions), [l’assistance pour la signature](#signature-help), [Info express](#quick-info) et [la coloration du code](#code-coloring). Visual Studio 2017 version 15.7 et les versions ultérieures prennent également en charge les [affinages de type](#type-hints).
 
-Pour améliorer le niveau de performance, IntelliSense dans **Visual Studio 2017 version 15.5** et versions antérieures dépend d’une base de données de saisie semi-automatique qui est générée pour chaque environnement Python dans votre projet. Il est possible que les bases de données doivent être actualisées si vous ajoutez, supprimez ou mettez à jour des packages. Leur état s’affiche sous l’onglet **IntelliSense** de la fenêtre **Environnements Python** (de la même famille que **l’Explorateur de solutions**) (consultez [Référence sur la fenêtre Environnements](python-environments-window-tab-reference.md#intellisense-tab)).
+Pour améliorer les performances, IntelliSense dans Visual Studio 2017 version 15.5 et antérieure dépend d’une base de données de complétion qui est générée pour chaque environnement Python dans votre projet. Il est possible que les bases de données doivent être actualisées si vous ajoutez, supprimez ou mettez à jour des packages. Leur état s’affiche sous l’onglet **IntelliSense** de la fenêtre **Environnements Python** (de la même famille que **l’Explorateur de solutions**) (consultez [Référence sur la fenêtre Environnements](python-environments-window-tab-reference.md#intellisense-tab)).
 
-**Visual Studio 2017 versions 15.6** et ultérieures utilise un autre moyen pour fournir les saisies semi-automatiques IntelliSense qui ne dépendent pas de la base de données.
+Visual Studio 2017 version 15.6 et ultérieure utilise un autre moyen pour fournir des complétions IntelliSense qui ne dépendent pas de la base de données.
 
 ### <a name="completions"></a>Saisies semi-automatiques
 

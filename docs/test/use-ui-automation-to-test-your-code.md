@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76739803cad3e822a45bae9d28a86e278d6a970d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 0e7b4041097fe0170d51692369c0d7f70783cca0
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145224"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416264"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Utiliser l’automatisation de l’interface utilisateur pour tester votre code
 
@@ -62,9 +62,13 @@ Pour accédez aux modèles et aux outils de test codé de l’interface utilisat
 
 1. Créer un projet de test codé de l'interface utilisateur.
 
-   Les tests codés de l'interface utilisateur doivent appartenir à un projet de test codé de l'interface utilisateur. Si vous n’avez pas encore de projet de test codé de l’interface utilisateur, créez-en un. Choisissez **Fichier** > **Nouveau** > **Projet** pour ouvrir la boîte de dialogue **Nouveau projet**. Dans le volet des catégories à gauche, développez **Installé** > **Visual Basic** *ou* **Visual C#**  >  **Test**. Sélectionnez le modèle **Projet de test codé de l’interface utilisateur** et choisissez **OK**.
+   Les tests codés de l'interface utilisateur doivent appartenir à un projet de test codé de l'interface utilisateur. Si vous n’avez pas encore de projet de test codé de l’interface utilisateur, créez-en un. Choisissez **Fichier** > **Nouveau** > **Projet**. Recherchez et sélectionnez le modèle de projet **Projet de test codé de l’interface utilisateur**.
+
+   ::: moniker range="vs-2017"
 
    ![Modèle de projet de test codé de l’interface utilisateur dans la boîte de dialogue Nouveau projet](media/coded-ui-test-project-template.png)
+
+   ::: moniker-end
 
    > [!NOTE]
    > Si vous ne voyez pas le modèle **Projet de test codé de l’interface utilisateur**, vous devez [installer le composant de test codé de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
