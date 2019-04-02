@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 0b70d8f1692eed8dcd1ba339dc9bcbb361e60db0
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 1014d76473511df9b73cae371e5e5dea2364f8b2
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323813"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790418"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Procédure : Créer des extensions compatible avec Visual Studio 2017 et Visual Studio 2015
 
@@ -95,7 +95,7 @@ Nous devons indiquer à Visual Studio quelles versions à cibler pour la créati
 
 ### <a name="2-adding-prerequisites-to-the-extensionvsixmanifest-file"></a>2. Ajout de conditions préalables à la *extension.vsixmanifest* fichier
 
-Conditions préalables sont une nouvelle fonctionnalité avec Visual Studio 2017. Dans ce cas, nous devons l’éditeur Visual Studio Core comme condition préalable. Étant donné que le concepteur Visual Studio 2015 VSIX ne gère pas la nouvelle `Prerequisites` section, vous devrez modifier cette partie manuellement dans le code XML. Vous pouvez également ouvrir Visual Studio 2017 et utiliser le Concepteur de manifeste mis à jour pour insérer les conditions préalables.
+Nous avons besoin de l’éditeur Visual Studio Core comme condition préalable. Ouvrez Visual Studio et utiliser le Concepteur de manifeste mis à jour pour insérer les conditions préalables.
 
 Pour effectuer cette opération manuellement :
 
@@ -112,7 +112,7 @@ Pour effectuer cette opération manuellement :
 * Enregistrez et fermez le fichier.
 
 > [!NOTE]
-> Si vous choisissez d’y parvenir avec le concepteur VSIX dans Visual Studio 2017, vous devez modifier manuellement la version prérequise pour vous assurer qu’il est compatible avec toutes les versions de Visual Studio 2017. Il s’agit, car le concepteur insère la version minimale que votre version actuelle de Visual Studio (par exemple, 15.0.26208.0). Toutefois, étant donné que les autres utilisateurs devront peut-être une version antérieure, vous devez modifier manuellement ce 15.0.
+> Vous devrez peut-être modifier manuellement la version prérequise pour vous assurer qu’il est compatible avec toutes les versions de Visual Studio 2017. Il s’agit, car le concepteur insère la version minimale que votre version actuelle de Visual Studio (par exemple, 15.0.26208.0). Toutefois, étant donné que les autres utilisateurs devront peut-être une version antérieure, vous devez modifier manuellement ce 15.0.
 
 À ce stade, votre fichier manifeste doit ressembler à ceci :
 
