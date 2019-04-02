@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9830178d936e912caf6ab21761f7a072c29a4d4
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 7b04977a15dfa082674b7661588b496d1a3c494d
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194416"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790158"
 ---
 # <a name="create-an-options-page"></a>Créer une page d’options
 
@@ -101,7 +101,7 @@ Cette procédure pas à pas crée une page Outils/Options simple qui utilise une
 
      Dans le volet gauche, vous devez voir **ma catégorie**. (Les catégories d’options sont répertoriées par ordre alphabétique, afin qu’il doit s’afficher sur à mi-chemin dans la liste.) Ouvrez **ma catégorie** puis cliquez sur **ma Page de grille**. La grille d’options s’affiche dans le volet droit. La catégorie de propriété est **mes Options de**, et le nom de propriété est **mon Option entier**. La description de la propriété, **mon option entier**, apparaît au bas du volet. Remplacez la valeur de sa valeur initiale de 256 par autre chose. Cliquez sur **OK**, puis rouvrez **ma Page de grille**. Vous pouvez voir que la nouvelle valeur est conservée.
 
-     Votre page d’options est également disponible via le lancement rapide de Visual Studio. Dans la fenêtre lancement rapide dans le coin supérieur droit de l’IDE, tapez **ma catégorie** et vous verrez **ma catégorie -> Page de grille Mes** répertoriés dans la liste déroulante.
+     Votre page d’options est également disponible via la zone de recherche de Visual Studio. Dans la zone de recherche en haut de l’IDE, tapez **ma catégorie** et vous verrez **ma catégorie -> Page de grille Mes** répertoriés dans les résultats.
 
 ## <a name="create-a-tools-options-custom-page"></a>Créer une page personnalisée Outils/Options
 
