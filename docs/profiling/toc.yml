@@ -42,10 +42,10 @@ items:
     href: application-timeline.md
   - name: Utiliser les conseils sur les performances
     href: perftips.md
-  - name: Analyser la mémoire JavaScript
-    href: javascript-memory.md
   - name: Analyser l’utilisation du réseau
     href: network-usage.md
+  - name: Analyser la mémoire JavaScript
+    href: javascript-memory.md
   - name: Analyser la réactivité de l’interface utilisateur HTML
     href: html-ui-responsiveness.md
   - name: Utiliser l’Explorateur de performances
@@ -807,9 +807,9 @@ items:
   items:
   - name: Nouveautés des outils de profilage
     href: what-s-new-in-profiling-tools.md
-ms.openlocfilehash: bb8084e155ff87a596fdb5374cb3e67f86243f3d
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: 8369f284b302be0240f85c26aa7c89d13566af5f
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007369"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790782"
