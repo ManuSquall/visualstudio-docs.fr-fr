@@ -10,19 +10,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 10557e8ce959be2d1170044e20fd0ad99c76fa86
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 111100038817d16d4655271f648aeb076bf1e9af
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957837"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856630"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Apprendre à utiliser l’éditeur de code
 
 Dans cette présentation de l’éditeur de code de Visual Studio, nous allons découvrir de quelles façons Visual Studio facilite l’écriture, la navigation et la compréhension du code.
 
 > [!TIP]
-> Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) pour l’installer gratuitement. Selon le type de développement d’applications que vous exécutez, vous devrez peut-être installer la **charge de travail de développement Node.js** avec Visual Studio.
+> Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/) pour l’installer gratuitement. Selon le type de développement d’applications que vous exécutez, vous devrez peut-être installer la **charge de travail de développement Node.js** avec Visual Studio.
 
 Cet article part du principe que vous connaissez déjà le développement JavaScript. Si ce n’est pas le cas, nous vous suggérons de consulter un tutoriel comme [Créer une application Node.js et Express](../javascript/tutorial-nodejs.md) pour commencer.
 
@@ -120,7 +120,7 @@ Pour voir quels extraits de code sont disponibles pour votre langage, choisissez
 
 - [Extraits de code](../ide/code-snippets.md)
 - [Naviguer dans le code](../ide/navigating-code.md)
-- [Mode Plan](../ide/outlining.md)
+- [mode Plan](../ide/outlining.md)
 - [Atteindre la définition et Aperçu de la définition](../ide/go-to-and-peek-definition.md)
 - [Refactorisation](../ide/refactoring-in-visual-studio.md)
-- [Utiliser IntelliSense](../ide/using-intellisense.md)
+- [Utilisez IntelliSense](../ide/using-intellisense.md)
