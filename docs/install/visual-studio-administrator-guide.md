@@ -2,7 +2,7 @@
 title: Guide de l’administrateur Visual Studio
 titleSuffix: ''
 description: En savoir plus sur le déploiement de Visual Studio dans un environnement d’entreprise.
-ms.date: 05/29/2018
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c9dbd7c3687596df0ccb0397cc5d52ff7888f9ff
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 0c12ae3e101f2f59f0f7f6560ea86f1e6161c6ff
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324933"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790093"
 ---
 # <a name="visual-studio-administrator-guide"></a>Guide de l’administrateur Visual Studio
 
@@ -30,7 +30,17 @@ Dans les environnements d’entreprise, il est courant pour les administrateurs 
 
 ## <a name="deploy-visual-studio-in-an-enterprise-environment"></a>Déployer Visual Studio dans un environnement d’entreprise
 
-Vous pouvez déployer Visual Studio sur les stations de travail clientes tant que chaque ordinateur cible satisfait aux [conditions d’installation minimales](/visualstudio/productinfo/vs2017-system-requirements-vs). Que votre déploiement s’effectue à l’aide de logiciels comme System Center ou à l’aide d’un fichier de commandes, vous voulez généralement effectuer les étapes suivantes :
+::: moniker range="vs-2017"
+
+Vous pouvez déployer Visual Studio sur les stations de travail clientes tant que chaque ordinateur cible satisfait aux [conditions d’installation minimales](/visualstudio/productinfo/vs2017-system-requirements-vs/). Que votre déploiement s’effectue à l’aide de logiciels comme System Center ou à l’aide d’un fichier de commandes, vous voulez généralement effectuer les étapes suivantes :
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Vous pouvez déployer Visual Studio sur les stations de travail clientes tant que chaque ordinateur cible satisfait aux [conditions d’installation minimales](/visualstudio/releases/2019/system-requirements/). Que votre déploiement s’effectue à l’aide de logiciels comme System Center ou à l’aide d’un fichier de commandes, vous voulez généralement effectuer les étapes suivantes :
+
+::: moniker-end
 
 1. [Créer un partage réseau qui contient les fichiers du produit Visual Studio](create-a-network-installation-of-visual-studio.md) à un emplacement réseau.
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c05d598d0eee46ec2d84b7d2bbf859dd455473a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: af87464f8fb49ca68ecf8c442a099c71b9df5b69
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57873176"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790808"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Démarrage rapide : Découvrir les outils de profilage
 
@@ -119,6 +119,7 @@ Quand vous sélectionnez une période de temps dans les graphiques et que vous c
 
 Vous pouvez également utiliser les graphiques pour déterminer la présence éventuelle de goulots d’étranglement liés à l’UC ou au GPU.
 
+::: moniker range="vs-2017"
 ## <a name="analyze-performance-javascript-uwp"></a>Analyser les performances (JavaScript UWP)
 
 Pour les applications UWP, vous pouvez utiliser les outils Mémoire JavaScript et Réactivité de l’interface utilisateur HTML.
@@ -130,6 +131,7 @@ L’outil Mémoire JavaScript est similaire à l’outil Utilisation de la mémo
 Pour diagnostiquer la réactivité de l’interface utilisateur, la lenteur du temps de chargement et la lenteur des mises à jour visuelles dans les applications UWP, utilisez l’outil Réactivité de l’interface utilisateur HTML. L’utilisation est similaire à l’outil Chronologie de l’application pour les autres types d’application. Pour plus d’informations, consultez [Réactivité de l’interface utilisateur HTML](../profiling/html-ui-responsiveness.md).
 
 ![Outil de profilage - Réactivité de l’interface utilisateur HTML](../profiling/media/diaghtmlresp.png "DiagHTMLResp")
+::: moniker-end
 
 ## <a name="analyze-network-usage-uwp"></a>Analyser l’utilisation du réseau (UWP)
 
