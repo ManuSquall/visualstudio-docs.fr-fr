@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c6a8c564e6786c2919bcf61ae8f23c990e9abc1
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: e9a214234d2382fe9cb950ed294bf8aa807b69da
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476057"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790704"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Procédure pas à pas : Débogage d’une Application parallèle dans Visual Studio (C#, Visual Basic, C++)
 
@@ -65,10 +65,10 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
 1. Ouvrez Visual Studio et créez un projet.
 
     ::: moniker range=">=vs-2019"
-    Type **Ctrl + Q** pour ouvrir la zone de recherche, tapez **console** (ou **c ++**), choisissez **modèles**, puis :
-    
-    - Pour C# ou Visual Basic, choisissez **créer un nouveau projet application Console (.NET Framework)** pour soit C# ou Visual Basic. Dans la boîte de dialogue qui s’affiche, choisissez **créer**.
-    - Pour C++, choisissez **créer un nouveau projet application Console** pour C++. Dans la boîte de dialogue qui s’affiche, choisissez **créer**.
+    Appuyez sur **ÉCHAP** pour fermer la fenêtre de démarrage. Type **Ctrl + Q** pour ouvrir la zone de recherche, tapez **console** (ou **c ++**), choisissez **modèles**, puis :
+
+    - Pour C# ou Visual Basic, choisissez **créer un nouveau projet application Console (.NET Framework)** pour soit C# ou Visual Basic. Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
+    - Pour C++, choisissez **créer un nouveau projet application Console** pour C++. Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
 
     Ensuite, tapez un nom ou utilisez le nom par défaut et cliquez sur **créer**.
     ::: moniker-end
@@ -82,7 +82,7 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
     Ensuite, tapez un nom ou utilisez le nom par défaut et cliquez sur **OK**.
     ::: moniker-end
 
-    Si vous ne voyez pas le **application Console** modèle de projet, accédez à **outils** > **obtenir les outils et fonctionnalités...** , qui ouvre le programme d’installation Visual Studio. Choisissez la charge de travail **Développement .NET Desktop** ou **Développement Desktop avec C++**, puis choisissez **Modifier**.
+    Si vous ne voyez pas le modèle de projet **Application console**, accédez à **Outils** > **Obtenir les outils et fonctionnalités...**, qui ouvre Visual Studio Installer. Choisissez la charge de travail **Développement .NET Desktop** ou **Développement Desktop avec C++**, puis choisissez **Modifier**.
 
 1. Ouvrez le fichier de code .cpp, .cs ou .vb dans le projet. Supprimez son contenu pour créer un fichier de code vide.
 

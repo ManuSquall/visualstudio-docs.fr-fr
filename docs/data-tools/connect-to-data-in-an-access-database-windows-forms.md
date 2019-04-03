@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 293df62cc82295a9d2eea577df4e3f46dd14cef6
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 9d4fcce4664483cd1d981f6a0b1233a6302c553b
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227642"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647347"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Se connecter à des données dans une base de données Access (Windows Forms)
 
@@ -95,7 +95,7 @@ Pour créer le jeu de données, exécutez l’**Assistant Configuration de sourc
 
 8. Dans le **nom de fichier de base de données**, spécifiez le chemin d’accès et le nom de la *.mdb* fichier que vous souhaitez vous connecter à, puis sélectionnez **OK**.
 
-   ![Ajouter une connexion à un fichier de base de données Access](../data-tools/media/dataaddconnectionaccessmdb.png)
+   ![Ajouter une connexion à un fichier de base de données Access](../data-tools/media/add-connection-access-db.png)
 
 9. Sélectionnez **suivant** sur le **choisir votre connexion de données** page.
 

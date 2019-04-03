@@ -1,7 +1,7 @@
 ---
 title: Déboguer des applications UWP | Microsoft Docs
 ms.custom: seodec18
-ms.date: 01/17/2017
+ms.date: 03/28/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0c5427d96edc2db2b935cd809019049828274706
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 41fbfb4a19c4c730c046f4c44fc9d88fd9882c45
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699091"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790262"
 ---
 # <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>Déboguer des applications Windows universelle (UWP) dans Visual Studio
 
@@ -26,7 +26,6 @@ Le débogueur Visual Studio fournit la prise en charge complète pour le déboga
 
 |Tâche de débogage|Article|
 |-|-|
-|Déboguer des applications de Windows 8.1|[Déboguer des applications du Windows Store dans Visual Studio](debug-store-apps-in-visual-studio.md)|
 |Exécuter des applications UWP sur un ordinateur local, un appareil à distance ou connecté ou un simulateur d’applications.|[Commencer une session de débogage pour une application UWP](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)|
 |Déboguer des applications déployées, locale et distantes.|[Déboguer un package d'application installé](../debugger/debug-installed-app-package.md)|
 |Analysez les conséquences de la classe ContentPrefetcher sur les applications UWP.|[Prérécupérer du contenu pour les applications UWP](../debugger/prefetch-content-for-windows-store-apps.md)|

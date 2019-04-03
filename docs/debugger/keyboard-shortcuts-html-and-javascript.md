@@ -1,6 +1,6 @@
 ---
 title: Raccourcis (HTML et JavaScript) clavier | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 03/28/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -13,18 +13,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbe25da9dd687eba011bd8e3cc2701cf154e0358
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 7f85eee14ef026787c9b929a64e14b462397338d
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697262"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789806"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Raccourcis clavier (HTML et JavaScript)
 
+::: moniker range=">=vs-2019"
+ Raccourcis clavier dans Visual Studio pour déboguer les applications Node.js dans Visual Studio avec le **développement Node.js** charge de travail installée.
+::: moniker-end
+::: moniker range="vs-2017"
  Raccourcis clavier dans Visual Studio pour déboguer les applications UWP à l’aide de HTML et JavaScript.
+::: moniker-end
+
 
 ## <a name="general-shortcuts"></a>Raccourcis généraux
+
  Ces raccourcis fonctionnent sur tous les outils pour les applications UWP à l’aide de HTML et JavaScript.
 
 |Action|Raccourci|
@@ -35,6 +42,7 @@ ms.locfileid: "56697262"
 |Ouvrir le hub Performances et diagnostics|Alt+F2|
 
 ## <a name="javascript-console-shortcuts"></a>Raccourcis de la console JavaScript
+
  Utilisez ces raccourcis dans la fenêtre de la console JavaScript.
 
 |Action|Raccourci|
@@ -44,6 +52,7 @@ ms.locfileid: "56697262"
 |Basculer entre les modes ligne simple et multiligne|Ctrl+Alt+M|
 
 ## <a name="dom-explorer-shortcuts"></a>Raccourcis de l'Explorateur DOM
+
  Utilisez ces raccourcis dans l'Explorateur DOM.
 
 |Action|Raccourci|
@@ -56,5 +65,6 @@ ms.locfileid: "56697262"
 |Réduire de 1 la valeur CSS sélectionnée|Flèche bas|
 
 ## <a name="see-also"></a>Voir aussi
-- [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)
-- [Démarrage rapide : déboguer du code JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)
+- [Commandes de la console JavaScript](../debugger/javascript-console-commands.md)
+- [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
+- [Démarrage rapide : déboguer du code JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
