@@ -1,27 +1,22 @@
 ---
-title: 'Comment : démarrer le débogage XSLT | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Démarrer le débogage XSLT | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 8358335a-fcb0-45e0-a37e-45b43e49ec0a
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 22a2ad1a37b67b2ac2120bfef9975e2a780d737f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 2a7553bb07e90e690d6409a2ad22636ddc8b627c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246621"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949308"
 ---
-# <a name="how-to-start-debugging-xslt"></a>Procédure : démarrer le débogage XSLT
+# <a name="how-to-start-debugging-xslt"></a>Procédure : démarrage du débogage XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le débogueur XSLT permet de déboguer une feuille de style XSLT ou une application XSLT. Lors du débogage, vous pouvez exécuter le code ligne par ligne (pas à pas détaillé, pas à pas principal ou pas à pas sortant). Les commandes permettant d'utiliser la fonctionnalité d'exécution du code pas à pas dans le débogueur XSLT sont identiques à celles des autres débogueurs Visual Studio. Une fois le débogage lancé, le débogueur XSLT ouvre des fenêtres pour afficher le document d'entrée et la sortie XSLT.  
@@ -94,5 +89,4 @@ namespace ConsoleApplication
   
 ## <a name="see-also"></a>Voir aussi  
  [Procédure pas à pas : Déboguer une feuille de Style XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)   
- [Vue d’ensemble du débogage de code](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9)
-
+ [Vue d’ensemble du débogage de code](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)

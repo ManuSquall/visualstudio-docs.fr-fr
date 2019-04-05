@@ -1,23 +1,20 @@
 ---
 title: Exporter des diagrammes UML aux fichiers image | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: b29ce2a5-0ee3-4ab7-9aa3-13ca9c6b37a2
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: bd80ea5ce8cc1ee3778b3fc185746ee95ad3eacf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ebd8317af13ab542936b5f5d2f886b937bc6e65d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771549"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58947107"
 ---
 # <a name="export-uml-diagrams-to-image-files"></a>Exporter des diagrammes UML dans des fichiers image
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -147,6 +144,3 @@ namespace SaveToImage
 ## <a name="see-also"></a>Voir aussi  
  [Exporter des diagrammes en tant qu’images](../modeling/export-diagrams-as-images.md)   
  [Définir une commande de menu sur un diagramme de modélisation](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
-
-
-

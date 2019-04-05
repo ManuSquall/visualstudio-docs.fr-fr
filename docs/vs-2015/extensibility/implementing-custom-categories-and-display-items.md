@@ -1,27 +1,22 @@
 ---
 title: Implémentation des catégories personnalisées et des éléments d’affichage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
 - custom categories
 ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 394f8f99539ab49c1201fa61ce612aee22ff2064
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 040c2408f8b0e120996f95e31afdf188d123f76a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769115"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948742"
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>Implémentation des catégories personnalisées et des éléments d’affichage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +53,7 @@ Un VSPackage peut fournir de contrôle des polices et couleurs du texte de sa à
   
 - Remplir le Registre avec deux valeurs :  
   
-  |Name|Type|Données|Description|  
+  |Nom|Type|Données|Description|  
   |----------|----------|----------|-----------------|  
   |Category|REG_SZ|GUID|Un GUID est créé pour identifier la catégorie.|  
   |Package|REG_SZ|GUID|Le GUID du service VSPackage qui prend en charge de la catégorie.|  
@@ -73,7 +68,7 @@ Un VSPackage peut fournir de contrôle des polices et couleurs du texte de sa à
   
 - Remplir le Registre avec deux valeurs :  
   
-  |Name|Type|Données|Description|  
+  |Nom|Type|Données|Description|  
   |----------|----------|----------|-----------------|  
   |Category|REG_SZ|GUID|Un GUID est créé pour identifier le groupe.|  
   |Package|REG_SZ|GUID|Le GUID du service qui prend en charge de la catégorie.|  
@@ -138,6 +133,5 @@ Un VSPackage peut fournir de contrôle des polices et couleurs du texte de sa à
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>   
  [L’obtention de la police et les informations de couleur de colorisation de texte](../extensibility/getting-font-and-color-information-for-text-colorization.md)   
  [L’accès à la police stockée ni les paramètres de couleur](../extensibility/accessing-stored-font-and-color-settings.md)   
- [Comment : accéder aux polices intégrées et modèle de couleurs](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)   
+ [Guide pratique pour Le jeu de couleurs et polices intégrées d’accès](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)   
  [Vue d’ensemble des polices et des couleurs](../extensibility/font-and-color-overview.md)
-

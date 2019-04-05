@@ -1,25 +1,20 @@
 ---
 title: Utilisation du GPU | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 957fed3c-4ded-4e05-87c6-ccc33de65349
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3068f614275c14d022ed4d74fa6a10ffe396f68b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: edeb59f08dba3328c464782dd685b24c6bcda852
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817501"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949463"
 ---
 # <a name="gpu-usage"></a>Utilisation du GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +73,7 @@ Servez-vous de l'outil Utilisation du GPU dans le hub Performances et diagnostic
   
     ![Postcollection, avec la plage sélectionnée](../debugger/media/gfx-diag-gpu-usage-select2.png "gfx_diag_gpu_usage_select2")  
   
-   Cela entraîne l'ouverture d'un nouveau document avec onglets qui contient le rapport. Le rapport Utilisation du GPU vous aide à identifier le moment où un événement graphique démarre sur l'UC et où il atteint le GPU, ainsi que sa durée d'exécution par le GPU. Ces informations peuvent vous aider à identifier les goulots d'étranglement et les opportunités d'augmentation du parallélisme dans votre code.  
+   Cela entraîne l'ouverture d'un nouveau document avec onglets qui contient le rapport. Le rapport Utilisation du GPU vous aide à identifier le moment où un événement graphique démarre sur l'UC et où il atteint le GPU, ainsi que sa durée d'exécution par le GPU. Ces informations peuvent vous aider à identifier les goulots d’étranglement et les opportunités d’augmentation du parallélisme dans votre code.  
   
 ## <a name="using-the-gpu-usage-report"></a>Emploi du rapport Utilisation du GPU  
  La partie supérieure du rapport Utilisation du GPU affiche les chronologies de l'activité de traitement de l'UC, de l'activité de rendu du GPU et de l'activité de copie du GPU. Ces chronologies sont séparées par des barres verticales, gris clair, représentant le vsync de l’affichage. La fréquence des barres correspond à la fréquence de rafraîchissement de l’un des affichages (sélectionné à l’aide de la liste déroulante **Affichage**) à partir desquels les données d’utilisation du GPU ont été collectées. Dans la mesure où l'affichage peut avoir une fréquence de rafraîchissement plus élevée que les performances cibles de votre application, il n'existe peut-être pas de relation 1 à 1 entre le vsync et la fréquence d'images que votre application doit atteindre. Pour atteindre ses performances cibles, une application doit achever tous les traitements, effectuer le rendu et exécuter un appel de Present() au niveau de la fréquence d'images ciblée. Toutefois, le frame rendu ne s'affichera pas jusqu'au prochain vsync après Present().  
@@ -99,7 +94,7 @@ Servez-vous de l'outil Utilisation du GPU dans le hub Performances et diagnostic
 |--------------------|-----------------|  
 |**Process**|Nom du processus qui vous intéresse. Tous les processus qui ont utilisé le GPU pendant la session de diagnostic sont inclus dans cette liste déroulante. La couleur associée au processus dans cette liste déroulante est la couleur de l’activité du thread dans les chronologies ci-dessous.|  
 |**Thread**|ID de thread qui vous intéresse. Dans une application multithread, cela peut vous aider à isoler les threads particuliers qui appartiennent au processus qui vous intéresse. Les événements associés au thread sélectionné sont mis en surbrillance dans chaque chronologie.|  
-|**Afficher**|Numéro de l’affichage dont la fréquence de rafraîchissement est indiquée **Remarque :** Certains pilotes peuvent être configurés pour présenter plusieurs affichages physiques sous forme d’un affichage virtuel unique, de grande taille. Vous ne verrez peut-être qu'un seul affichage dans la liste, même si l'ordinateur possède plusieurs affichages attachés.|  
+|**Afficher**|Numéro de l’affichage dont la fréquence de rafraîchissement est indiquée.**Remarque  :**  Certains pilotes peuvent être configurés pour présenter plusieurs affichages physiques sous forme d'un affichage virtuel unique, de grande taille. Vous ne verrez peut-être qu'un seul affichage dans la liste, même si l'ordinateur possède plusieurs affichages attachés.|  
 |**Filtrer**|Mots clés qui vous intéressent. Les événements de la partie inférieure du rapport incluent uniquement ceux qui correspondent complètement ou partiellement à un mot clé. Vous pouvez spécifier plusieurs mots clés en les séparant par des virgules.|  
 |**Tri des hiérarchies**|Case à cocher qui indique si les hiérarchies d'événements (définies via des marqueurs utilisateur) sont conservées ou ignorées.|  
   
@@ -155,6 +150,3 @@ Servez-vous de l'outil Utilisation du GPU dans le hub Performances et diagnostic
 -   [Outil Utilisation du GPU dans Visual Studio 2013 Update 4 CTP1 (blog)](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
   
 -   [Utilisation du GPU pour DirectX dans Visual Studio (blog)](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)
-
-
-

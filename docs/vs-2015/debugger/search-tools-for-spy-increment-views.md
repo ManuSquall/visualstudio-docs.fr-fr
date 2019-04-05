@@ -1,14 +1,9 @@
 ---
 title: Outils de recherche pour les vues Spy ++ | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - searching, Spy++
 - Spy++, searching
@@ -16,13 +11,13 @@ ms.assetid: db0c32cf-8e50-4e1b-9a9f-4c07fd6a2163
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 44e2318fe7de45e8d2b66e1d87df562c4eabc7c5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5d520f8b3b4ec67dc9166acf97a313e52d0eb655
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730156"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58947392"
 ---
 # <a name="search-tools-for-spy-views"></a>Outils de recherche pour les vues Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,6 +49,3 @@ Utilisez ces boîtes de dialogue pour spécifier les données affiche une fenêt
   
  [Informations de référence sur Spy++](../debugger/spy-increment-reference.md)  
  Inclut des sections décrivant chaque Spy ++ menu et boîte de dialogue.
-
-
-

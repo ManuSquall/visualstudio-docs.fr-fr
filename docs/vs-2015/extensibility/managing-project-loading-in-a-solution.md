@@ -1,26 +1,21 @@
 ---
 title: La gestion du chargement de projet dans une Solution | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - solutions, managing project loading
 ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 041c5ab52a7a0e8be89ef1abe6db4d1aed51ecfc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0ce2f80aa50c3222797d925a888e5c004b21512d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781762"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949322"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>Gestion du chargement de projet dans une solution
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,7 +82,7 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
   
 -   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>: Elle est déclenchée avant l’ouverture d’une solution. Vous pouvez l’utiliser pour modifier le projet de chargement de priorité pour les projets de la solution.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>: Cela est déclenché une fois que la solution est entièrement chargée, mais avant d’arrière-plan le chargement du projet commence à nouveau. Par exemple, un utilisateur a peut-être accédé un projet dont la priorité de chargement est LoadIfNeeded, ou le Gestionnaire de chargement de solution peut avoir changé une priorité de chargement du projet à BackgroundLoad, qui démarre une charge de l’arrière-plan de ce projet.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>: Elle est déclenchée une fois que la solution est entièrement chargée, mais avant d’arrière-plan le chargement du projet commence à nouveau. Par exemple, un utilisateur a peut-être accédé un projet dont la priorité de chargement est LoadIfNeeded, ou le Gestionnaire de chargement de solution peut avoir changé une priorité de chargement du projet à BackgroundLoad, qui démarre une charge de l’arrière-plan de ce projet.  
   
 -   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>: Elle est déclenchée après qu’une solution est initialement entièrement chargée, s’il existe un gestionnaire de chargement de solution. Il est également déclenché après chargement de l’arrière-plan ou à la demande chargé chaque fois que la solution devienne complètement chargée. En même temps, <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid> est réactivé.  
   
@@ -120,4 +115,3 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
   
 > [!NOTE]
 >  . Par défaut, seuls les projets qui ont la demande chargent et priorités de chargement en arrière-plan sont chargées, mais si le <xref:Microsoft.VisualStudio.Shell.Interop.__VSBSLFLAGS> indicateur est transmis à la méthode, tous les projets seront chargés à l’exception de ceux qui est marqués pour charger explicitement.
-

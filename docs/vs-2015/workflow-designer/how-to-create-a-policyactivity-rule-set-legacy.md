@@ -1,11 +1,8 @@
 ---
-title: 'Comment : créer un ensemble de règles PolicyActivity (hérité) | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Créer un ensemble de règles PolicyActivity (hérité) | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - PolicyActivity activity, creating rule sets
@@ -17,15 +14,15 @@ ms.assetid: f272489d-3342-4511-8b59-6a0fd7a42d70
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 7ab49957d830bf558a9dddf55cdc5e8c2f3f75d2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5e7528e8a589cb64e4debc8c1e119f8f59a6244c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194621"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948674"
 ---
-# <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Procédure : créer un ensemble de règles PolicyActivity (héritée)
+# <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Procédure : Créer un ensemble de règles PolicyActivity (hérité)
 Cette rubrique décrit comment créer un ensemble de règles d'activité de stratégie à l'aide du [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité qui cible le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
  Après avoir fait glisser un **stratégie** élément d’activité à partir de la **boîte à outils** vers l’aire de conception de flux de travail, vous pouvez sélectionner une règle existante ou créer un ensemble de règles pour le [PolicyActivity ](http://go.microsoft.com/fwlink?LinkID=65019) activité. Vous sélectionnez une règle existante, définie à l’aide de la [sélectionnez règle boîte de dialogue (hérité)](../workflow-designer/select-rule-set-dialog-box-legacy.md) et que vous créez des ensembles de règles à l’aide de la [règle éditeur de boîte de dialogue (hérité)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).  
@@ -43,7 +40,7 @@ Cette rubrique décrit comment créer un ensemble de règles d'activité de stra
   
     -   Cliquez sur le **RuleSetReference** ellipses **[...]** , puis sélectionnez une règle existante, définie le [sélectionnez règle boîte de dialogue (hérité)](../workflow-designer/select-rule-set-dialog-box-legacy.md). Passez à l'étape 10.  
   
-         ou  
+         - ou -  
   
     -   Tapez un nom d'ensemble de règles. Cliquez sur le **RuleSetReference** ellipses **[...]** , puis sélectionnez **modifier** dans le [sélectionnez règle boîte de dialogue (hérité)](../workflow-designer/select-rule-set-dialog-box-legacy.md).  
   

@@ -1,12 +1,9 @@
 ---
 title: Créer une application de données simple à l’aide d’ADO.NET | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,19 +13,19 @@ ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
 caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4754cad05858ed48fd421301b4b0f1d2c569a926
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9f3c5dd921ab9c86d197d22aea63bad86264bb5b
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824280"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58949613"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Créer une application de données simple à l’aide d’ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-Quand vous créez une application qui manipule les données d’une base de données, vous effectuez des tâches élémentaires, comme définir les chaînes de connexion, insérer les données et exécuter les procédures stockées. En suivant cette rubrique, vous pouvez découvrir comment interagir avec une base de données à partir d’une application de « formulaires de données » de Windows Forms simple à l’aide de Visual c# ou Visual Basic et ADO.NET.  Toutes les technologies de données .NET, y compris les datasets, LINQ to SQL et Entity Framework — finalement les étapes qui sont très similaires à celles présentées dans cet article.  
+Quand vous créez une application qui manipule les données d'une base de données, vous effectuez des tâches élémentaires, comme définir les chaînes de connexion, insérer les données et exécuter les procédures stockées. En suivant cette rubrique, vous pouvez découvrir comment interagir avec une base de données à partir d’une application de « formulaires de données » de Windows Forms simple à l’aide de Visual c# ou Visual Basic et ADO.NET.  Toutes les technologies de données .NET, y compris les datasets, LINQ to SQL et Entity Framework — finalement les étapes qui sont très similaires à celles présentées dans cet article.  
   
  Cet article montre un moyen simple d’obtenir des données en dehors d’une base de données de manière très rapide. Si votre application a besoin de modifier les données de manières non triviale et mettre à jour de la base de données, vous devez envisager l’utilisation de Entity Framework et à l’aide de la liaison de données à synchroniser automatiquement les contrôles d’interface utilisateur pour les modifications dans les données sous-jacentes.  
   
@@ -60,7 +57,7 @@ Quand vous créez une application qui manipule les données d’une base de donn
   
 - Chaîne de connexion de la base de données, une fois que vous l'avez configurée. Vous pouvez trouver cette valeur en ouvrant **Explorateur d’objets SQL Server**, ouvrez le menu contextuel pour la base de données, sélectionnez **propriétés**, puis faites défiler jusqu'à la **ConnectionString** propriété.  
   
-  Cette rubrique suppose que vous êtes familiarisé avec les fonctionnalités de base de l’IDE de Visual Studio et que vous pouvez créer une application Windows Forms, ajouter des formulaires à ce projet, placer des boutons et autres contrôles sur les formulaires, définir les propriétés de ces contrôles et coder des événements simples. Si vous n’êtes pas familiarisé avec ces tâches, nous vous suggérons d’effectuer la [mise en route avec Visual c# et Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) avant de commencer cette rubrique.  
+  Cette rubrique suppose que vous êtes familiarisé avec les fonctionnalités de base de l'IDE de Visual Studio et que vous pouvez créer une application Windows Forms, ajouter des formulaires à ce projet, placer des boutons et autres contrôles sur les formulaires, définir les propriétés de ces contrôles et coder des événements simples. Si vous n’êtes pas familiarisé avec ces tâches, nous vous suggérons d’effectuer la [mise en route avec Visual c# et Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) avant de commencer cette rubrique.  
   
 ##  <a name="BKMK_setupthesampledatabase"></a> Configurer la base de données  
  L'exemple de base de données pour cette procédure pas à pas inclut les tables Customer et Orders. Initialement, les tables ne contiennent pas de données, mais vous les ajouterez quand vous exécuterez l'application que vous allez créer. La base de données dispose également de cinq procédures stockées simples. [Créer une base de données SQL à l’aide d’un script](../data-tools/create-a-sql-database-by-using-a-script.md) contient un script Transact-SQL qui crée les tables, les clés primaires et étrangères, les contraintes et les procédures stockées.  
@@ -71,7 +68,7 @@ Quand vous créez une application qui manipule les données d’une base de donn
   
     Visual Studio crée le projet et plusieurs fichiers, y compris un formulaire Windows vide nommé Form1.  
   
-2. Ajoutez deux formulaires Windows à votre projet afin qu’il comporte trois formulaires et puis attribuez-leur les noms suivants :  
+2. Ajoutez deux formulaires Windows à votre projet afin qu’il comporte trois formulaires, puis attribuez-leur les noms suivants :  
   
    -   Navigation  
   
@@ -84,7 +81,7 @@ Quand vous créez une application qui manipule les données d’une base de donn
    > [!NOTE]
    >  La zone de groupe et les contrôles d'étiquette ajoutent de la clarté mais ne sont pas utilisés dans le code.  
   
-   **Écran de navigation**  
+   **Formulaire Navigation**  
   
    ![Boîte de dialogue de navigation](../data-tools/media/simpleappnav.png "SimpleAppNav")  
   
@@ -227,7 +224,7 @@ Quand vous créez une application qui manipule les données d’une base de donn
  Cette section contient des vues d'ensemble de ce que fait chaque formulaire et indique le code qui crée les formulaires. Les commentaires numérotés identifient des sections du code.  
   
 ### <a name="navigation-form"></a>Formulaire Navigation  
- Le formulaire Navigation s'ouvre quand vous exécutez l'application. Le **ajouter un compte** bouton ouvre le formulaire NewCustomer. Le **remplissage ou annuler des commandes** bouton ouvre le formulaire FillOrCancel. Le **Exit** bouton ferme l’application.  
+ Le formulaire Navigation s'ouvre quand vous exécutez l'application. Le bouton **Ajouter un compte** ouvre le formulaire NewCustomer. Le bouton **Remplir ou annuler les commandes** ouvre le formulaire FillOrCancel. Le bouton **Quitter** ferme l’application.  
   
 #### <a name="make-the-navigation-form-the-startup-form"></a>Faire du formulaire Navigation le formulaire de démarrage  
  Si vous utilisez c#, dans **l’Explorateur de solutions**, ouvrez le fichier Program.cs et modifiez la `Application.Run` ligne à ceci : `Application.Run(new Navigation());`  
@@ -734,7 +731,7 @@ End Namespace
 |NC-16|Définissez une méthode pour vérifier qu'il existe un nom de client.<br /><br /> -Si la zone de texte est vide, afficher un message et renvoyer `false`, car un nom est requis pour créer le compte.<br />-Si la zone de texte n’est pas vide, retourner `true`.|  
 |NC-17|Ajoutez le code au gestionnaire d'événements Click pour le bouton `btnPlaceOrder`.|  
 |NC-18|Enveloppez l'appel à `isPlaceOrderReady` autour du code de l'événement `btnPlaceOrder_Click` pour qu'`uspPlaceNewOrder` ne s'exécute pas si l'entrée requise n'est pas présente.|  
-|NC-19 à NC-25|Ces sections de code sont similaires au code que vous avez ajouté pour le gestionnaire d'événements `btnCreateAccount_Click`.<br /><br /> -NC-19. Créez l'objet `SqlCommand`, `cmdNewOrder`, et spécifiez `Sales.uspPlaceOrder` en tant que procédure stockée.<br />-NC-20 à NC-23 sont les paramètres d’entrée pour la procédure stockée.<br />-CN-24. `@RC` contient une valeur de retour qui correspond à la référence de commande générée depuis la base de données. La direction de ce paramètre est spécifiée comme `ReturnValue`.<br />NC-25. Stockez la valeur de la référence de commande dans la variable `orderID` que vous avez déclarée au niveau NC-2, puis affichez la valeur dans une boîte de message.|  
+|NC-19 à NC-25|Ces sections de code sont similaires au code que vous avez ajouté pour le gestionnaire d'événements `btnCreateAccount_Click`.<br /><br /> -   NC-19. Créez l'objet `SqlCommand`, `cmdNewOrder`, et spécifiez `Sales.uspPlaceOrder` en tant que procédure stockée.<br />-NC-20 à NC-23 sont les paramètres d’entrée pour la procédure stockée.<br />-   NC-24. `@RC` contient une valeur de retour qui correspond à la référence de commande générée depuis la base de données. La direction de ce paramètre est spécifiée comme `ReturnValue`.<br />-   NC-25. Stockez la valeur de la référence de commande dans la variable `orderID` que vous avez déclarée au niveau NC-2, puis affichez la valeur dans une boîte de message.|  
 |NC-26|Définissez une méthode pour vérifier qu'un ID de client existe et qu'une quantité a été spécifiée dans `numOrderAmount`.|  
 |NC-27|Appelez la méthode `ClearForm` dans le gestionnaire d'événements Click `btnAddAnotherAccount`.|  
 |NC-28|Créez la méthode `ClearForm` pour effacer les valeurs du formulaire si vous souhaitez ajouter un client.|  
@@ -1145,4 +1142,3 @@ End Namespace
   
 ##  <a name="BKMK_testyourapplication"></a> Tester votre application  
  Sélectionnez la touche F5 pour générer et tester votre application après avoir codé chaque gestionnaire d’événements Click, puis après avoir terminé le codage.
-
