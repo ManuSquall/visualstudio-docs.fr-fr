@@ -1,12 +1,9 @@
 ---
 title: Génération de code dans un processus de génération | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
@@ -14,17 +11,17 @@ ms.assetid: 4da43429-2a11-4d7e-b2e0-9e4af7033b5a
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e7cadbf9d4d99fa9deaf4d71545f43d2bf49a3f3
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+manager: jillfra
+ms.openlocfilehash: 61301fce94ab1359a10249f739d2bf613ebfdda8
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281808"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001372"
 ---
 # <a name="code-generation-in-a-build-process"></a>Génération de code dans un processus de génération
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-Transformation de texte peut être appelée dans le cadre du processus de génération d’une solution Visual Studio. Il existe des tâches de génération qui sont spécialisées pour la transformation de texte. Les tâches de génération T4 exécutent les modèles de texte au moment du design. En outre, elles compilent les modèles de texte (prétraités) au moment de l'exécution.
+Transformation de texte peut être appelée dans le cadre du processus de génération d’une solution Visual Studio. Il existe des tâches de génération qui sont spécialisées pour la transformation de texte. Les tâches de génération T4 exécutent les modèles de texte au moment du design. En outre, elles compilent les modèles de texte (prétraités) au moment de l’exécution.
 
 Il existe quelques différences en matière de possibilités offertes par les tâches de génération, selon le moteur de génération que vous utilisez. Lorsque vous générez la solution dans Visual Studio, un modèle de texte peut accéder à l’API Visual Studio (EnvDTE) si le [hostspecific = « true »](../modeling/t4-template-directive.md) attribut est défini. Mais cela n'est pas vrai lorsque vous générez la solution à partir de la ligne de commande ou lorsque vous démarrez une génération serveur via Visual Studio. Dans ces situations, la génération est exécutée par MSBuild et un autre hôte T4 est utilisé.
 
@@ -32,7 +29,7 @@ Cela signifie que vous ne pouvez pas accéder aux éléments tels que les noms d
 
 ##  <a name="buildserver"></a> Configurer vos ordinateurs
 
-Pour activer les tâches de génération sur votre ordinateur de développement, installez [Modeling SDK pour Visual Studio](http://www.microsoft.com/download/details.aspx?id=40754).
+Pour activer les tâches de génération sur votre ordinateur de développement, installez [Modeling SDK pour Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148).
 
 Si [votre serveur de builds](http://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9) s’exécute sur un ordinateur sur lequel Visual Studio n’est pas installé, copiez les fichiers suivants sur l’ordinateur de build à partir de votre ordinateur de développement. Remplacez ‘*’ par les numéros de version les plus récents.
 
@@ -133,7 +130,7 @@ Vous pouvez utiliser des caractères génériques dans TransformFile :
 
 ## <a name="source-control"></a>Contrôle de code source
 
-Il n'existe aucune intégration prédéfinie spécifique avec un système de contrôle de code source. Toutefois, vous pouvez ajouter vos propres extensions, par exemple pour extraire et archiver un fichier généré. Par défaut, la tâche de transformation de texte évite de remplacer un fichier en lecture seule. Lorsqu'un tel fichier est trouvé, une erreur est journalisée dans la liste d'erreurs de Visual Studio, et la tâche échoue.
+Il n'existe aucune intégration prédéfinie spécifique avec un système de contrôle de code source. Toutefois, vous pouvez ajouter vos propres extensions, par exemple pour extraire et archiver un fichier généré. Par défaut, la tâche de transformation de texte évite de remplacer un fichier en lecture seule. Lorsqu’un tel fichier est trouvé, une erreur est journalisée dans la liste d’erreurs de Visual Studio, et la tâche échoue.
 
 Pour spécifier que les fichiers en lecture seule doivent être remplacés, insérez la propriété suivante :
 
@@ -182,7 +179,7 @@ Ces propriétés sont utilisées uniquement par MSBuild. Elles n'affectent pas l
 
 `$(IntermediateOutputPath).` est un dossier utile pour la redirection
 
-Si vous spécifiez un nom de fichier de sortie, il est prioritaire par rapport à l'extension spécifiée dans la directive de sortie des modèles.
+Si vous spécifiez un nom de fichier de sortie, il est prioritaire par rapport à l’extension spécifiée dans la directive de sortie des modèles.
 
 ```xml
 <ItemGroup>
@@ -194,11 +191,11 @@ Si vous spécifiez un nom de fichier de sortie, il est prioritaire par rapport �
 </ItemGroup>
 ```
 
-Il est déconseillé de spécifier OutputFileName ou OutputFilePath si vous transformez également des modèles dans Visual Studio via la commande Transformer tous les modèles, ou si vous exécutez le générateur de fichier unique. Vous obtiendrez des chemins d'accès de fichiers distincts selon la façon dont vous avez déclenché la transformation. Cela peut vraiment prêter à confusion.
+Il est déconseillé de spécifier OutputFileName ou OutputFilePath si vous transformez également des modèles dans Visual Studio via la commande Transformer tous les modèles, ou si vous exécutez le générateur de fichier unique. Vous obtiendrez des chemins d’accès de fichiers distincts selon la façon dont vous avez déclenché la transformation. Cela peut vraiment prêter à confusion.
 
 ## <a name="adding-reference-and-include-paths"></a>Ajout de chemins d'accès des références et Include
 
-L'hôte possède un ensemble de chemins d'accès par défaut dans lesquels il recherche les assemblys référencés dans les modèles. Pour effectuer un ajout à cet ensemble :
+L’hôte possède un ensemble de chemins d’accès par défaut dans lesquels il recherche les assemblys référencés dans les modèles. Pour effectuer un ajout à cet ensemble :
 
 ```
 <ItemGroup>
@@ -207,7 +204,7 @@ L'hôte possède un ensemble de chemins d'accès par défaut dans lesquels il re
 </ItemGroup>
 ```
 
-Pour définir les dossiers où rechercher les fichiers Include, fournissez une liste d'éléments délimités par des points-virgules. Généralement, vous effectuez l’ajout à la liste des dossiers existants.
+Pour définir les dossiers où rechercher les fichiers Include, fournissez une liste d'éléments délimités par des points-virgules. Généralement, vous effectuez l'ajout à la liste des dossiers existants.
 
 ```
 <PropertyGroup>
@@ -288,4 +285,4 @@ Vous trouverez de bons conseils dans le modèle T4 MSbuild, $(VSToolsPath)\TextT
 
 - [Écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md)
 - [Visual Studio Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)
-- [Oleg Sych : Présentation de T4 : intégration](http://www.olegsych.com/2010/04/understanding-t4-msbuild-integration/)
+- [Oleg Sych : Présentation de T4 : intégration](https://github.com/olegsych/T4Toolbox)

@@ -1,28 +1,23 @@
 ---
-title: 'Comment : fournir un contexte pour les éditeurs | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Fournir un contexte pour les éditeurs | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - provide context
 ms.assetid: 12df4d06-df6b-4eaf-a7bf-c83655a0c683
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 60ce6535375e79f7fef7fe25ef6a8381a02b0ad5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8a74acbcf3da16d7b8e2ac68e761719a6192a2b4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778382"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58947925"
 ---
-# <a name="how-to-provide-context-for-editors"></a>Comment : fournir un contexte pour les éditeurs
+# <a name="how-to-provide-context-for-editors"></a>Procédure : Fournir un contexte pour les éditeurs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pour un éditeur, le contexte est actif uniquement lorsque l’éditeur a le focus ou qu’il avait le focus immédiatement avant le focus a été déplacé vers une fenêtre outil. Vous pouvez fournir le contexte pour un éditeur en procédant comme suit :  
@@ -98,4 +93,3 @@ Pour un éditeur, le contexte est actif uniquement lorsque l’éditeur a le foc
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackSelectionEx>
-

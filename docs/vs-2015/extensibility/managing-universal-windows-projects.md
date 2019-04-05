@@ -1,24 +1,19 @@
 ---
 title: Gestion de projets de Windows universelle | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b2c10232b917e8343ace8d1a31fcd3609ecdfb95
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e905ca4a34399c1ec590d5ff16441bd5afe9ce23
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783777"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949327"
 ---
 # <a name="managing-universal-windows-projects"></a>Gestion de projets Windows universels
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -578,4 +573,3 @@ Les applications Windows universelles sont des applications qui ciblent Windows 
     ```  
   
 13. Générez et exécutez le projet. Créer un projet universel c# dans l’instance expérimentale, accédez à la **outils** menu et cliquez sur **TestUniversalProject appeler**et vérifiez le texte dans le volet de sortie général. Une fois que le fichier dans le projet de plateforme est renommé, vous devez voir les deux un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> événement et un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> événement. Parce que la modification du fichier à l’origine aucun autre fichier à modifier, et dans la mesure où les modifications apportées aux éléments dans un projet de plateforme ne sont propagées de n’importe où, il existe un seul chaque de ces événements.
-

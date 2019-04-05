@@ -1,27 +1,22 @@
 ---
 title: Liste des Services disponibles | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - services, Visual Studio
 - Visual Studio, services
 ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
 caps.latest.revision: 50
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0363aba508ff1a00fcca34f4b0b7a857aa15fc4f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d67d0300d99cf43165446458414cc2244c6ede0c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730695"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001471"
 ---
 # <a name="list-of-available-services"></a>Liste des services disponibles
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -165,6 +160,5 @@ ms.locfileid: "51730695"
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService>|<xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService>|Oui|Oui|Fournit l’accès aux fichiers de documentation au format XML associés à un fichier de métadonnées particulier.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [COM et des Services gérés](http://msdn.microsoft.com/en-us/6c5808b4-ad87-48d7-ae06-33a81e7052af)   
+ [COM et des Services gérés](/java/api/overview/partnercenter/managedservices?view=partnercenter-1.8.1)   
  [Utilisation et fourniture de services](../../extensibility/using-and-providing-services.md)
-
