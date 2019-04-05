@@ -1,14 +1,9 @@
 ---
 title: Applications d’exécution Windows Store dans le simulateur | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 81b69bf8-ec87-4bb6-9ad4-1fa7b7802d16
 caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 504a63d0f99a1a96d1192a1666d45dafde037253
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9ceda4b04d5a029066d5594cac7e0a0701b1b4ca
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775106"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948663"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Exécuter des applications du Windows Store dans le simulateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ Le simulateur Visual Studio pour les applications Windows Store est une applicat
 ## <a name="pinch-and-zoom"></a>Pincement de deux doigts pour zoomer  
  Définit le mode d'interaction pour utiliser le pincement de deux doigts pour zoomer.  
   
--   ![Cible à deux doigts](../debugger/media/simulator-twofinger.png "SIMULATOR_TwoFinger")  
+-   ![Cible du doigt simulateur deux](../debugger/media/simulator-twofinger.png "SIMULATOR_TwoFinger")  
   
      L'icône double cible indique l'emplacement des deux doigts sur l'écran du périphérique.  
   
@@ -114,10 +109,10 @@ Le simulateur Visual Studio pour les applications Windows Store est une applicat
   
 -   Pour définir l’emplacement où se trouve les captures d’écran, sélectionnez le bouton **Paramètres de capture d’écran** et sélectionnez l’emplacement dans le menu contextuel.  
   
-     ![Menu contextuel des paramètres d’écran](../debugger/media/simulator-screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
+     ![Menu contextuel des paramètres de capture d’écran](../debugger/media/simulator-screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ##  <a name="BKMK_Simulate_network_connection_properties"></a> Simuler des propriétés de connexion réseau  
- Vous pouvez aider les utilisateurs de votre application à gérer le coût des connexions réseau limitées en faisant bien comprendre le coût des connexions réseau ou les modifications de l'état du forfait données et en permettant à votre application d'utiliser ces informations pour éviter de subir des frais d'itinérance supplémentaires ou de dépasser la limite de transfert de données spécifiée. Les API [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) vous permettent de répondre aux événements [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) et [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) qui assurent la connexion. Consultez [Comment gérer les contraintes liées au coût des connexions réseau limitées (HTML)](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
+ Vous pouvez aider les utilisateurs de votre application à gérer le coût des connexions réseau limitées en faisant bien comprendre le coût des connexions réseau ou les modifications de l'état du forfait données et en permettant à votre application d'utiliser ces informations pour éviter de subir des frais d'itinérance supplémentaires ou de dépasser la limite de transfert de données spécifiée. Les API [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) vous permettent de répondre aux événements [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) et [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) qui assurent la connexion. Consultez [Démarrage rapide : Gestion des contraintes de coût réseau limitées](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
   
  Pour déboguer ou tester votre code réseau sensible au coût, le simulateur peut simuler les propriétés d’un réseau qui sont exposées par l’objet [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) retourné par [GetInternetConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx).  
   
@@ -141,7 +136,7 @@ Le simulateur Visual Studio pour les applications Windows Store est une applicat
   
    **Pour plus d'informations sur la gestion des connexions réseau**  
   
-   [Comment gérer les contraintes liées au coût des connexions réseau limitées (HTML)](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [Démarrage rapide : La gestion des contraintes de coût réseau limitées](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
    [Exemple d’informations réseau](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
@@ -149,7 +144,7 @@ Le simulateur Visual Studio pour les applications Windows Store est une applicat
   
    [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
   
-   [Comment répondre aux événements système avec des tâches en arrière-plan](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
+   [Comment répondre aux événements système avec des tâches en arrière-plan](http://msdn.microsoft.com/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
   
    [Comment déclencher des événements d’interruption, de reprise et d’arrière-plan dans les applications du Windows Store.](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
@@ -160,6 +155,3 @@ Le simulateur Visual Studio pour les applications Windows Store est une applicat
   
 ## <a name="see-also"></a>Voir aussi  
  [Exécuter des applications à partir de Visual Studio](../debugger/run-store-apps-from-visual-studio.md)
-
-
-

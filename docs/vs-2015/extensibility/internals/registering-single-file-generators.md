@@ -1,27 +1,22 @@
 ---
 title: L’inscription de générateurs de fichier unique | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, custom tools
 - custom tools, defining registry settings
 ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8e601b3fcf8bd702c1bc6cde427766d0f107e6bd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6c6722078f2f25bfb2a14b44e001b0f2921e8ad5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51780982"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954076"
 ---
 # <a name="registering-single-file-generators"></a>Inscription de générateurs de fichier unique
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ Pour mettre à disposition dans un outil personnalisé [!INCLUDE[vsprvs](../../i
   
     -   (Default)  
   
-         Facultatif. Fournit une description conviviale de l’outil personnalisé. Ce paramètre est facultatif mais recommandé.  
+         Optionnel. Fournit une description conviviale de l’outil personnalisé. Ce paramètre est facultatif mais recommandé.  
   
     -   CLSID  
   
@@ -84,5 +79,4 @@ Pour mettre à disposition dans un outil personnalisé [!INCLUDE[vsprvs](../../i
  [Implémentation de générateurs de fichier unique](../../extensibility/internals/implementing-single-file-generators.md)   
  [Déterminer le Namespace par défaut d’un projet](../../misc/determining-the-default-namespace-of-a-project.md)   
  [Exposition des Types aux concepteurs visuels](../../extensibility/internals/exposing-types-to-visual-designers.md)   
- [Introduction à l’objet BuildManager](http://msdn.microsoft.com/en-us/50080ec2-c1c9-412c-98ef-18d7f895e7fa)
-
+ [Introduction à l’objet BuildManager](http://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)

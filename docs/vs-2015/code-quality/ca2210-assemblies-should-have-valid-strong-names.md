@@ -1,14 +1,9 @@
 ---
-title: 'CA2210 : Les assemblys doivent avoir des noms forts valides | Microsoft Docs'
-ms.custom: ''
+title: 'CA2210 : Assemblys doivent avoir des noms forts valides | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - AssembliesShouldHaveValidStrongNames
 - CA2210
@@ -20,14 +15,14 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1551cccb11fc33a21503e7030cfd671c953ee17d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 29c0a8f3eca5d6da2c86a1881e943754ad1ba087
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865815"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948035"
 ---
-# <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210 : Les assemblys doivent porter des noms forts valides
+# <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210 : Les assemblys doivent porter des noms forts valides
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -101,7 +96,4 @@ ms.locfileid: "49865815"
 
 ## <a name="see-also"></a>Voir aussi
  <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>
- [Comment : signer un Assembly avec un nom fort](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) [Sn.exe (Strong Name Tool)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)
-
-
-
+ [Guide pratique pour Signer un Assembly avec un nom fort](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) [Sn.exe (Strong Name Tool)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)

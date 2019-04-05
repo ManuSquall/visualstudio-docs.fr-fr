@@ -1,27 +1,22 @@
 ---
 title: Vue d’ensemble du modèle Automation | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], about automation
 - extensibility
 ms.assetid: 12b6d6db-0d22-4aaa-aa7d-1365f759b7b0
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bd1e8ced29b1b1b090fd0feabca93f23dcb67a15
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0eb1d870b3858255fe6b4a0cf9a255d9d1df8c59
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809673"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949212"
 ---
 # <a name="automation-model-overview"></a>Modèle d’automatisation
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,5 +46,4 @@ Objets automation Visual Studio
   Pour plus d’informations sur l’automatisation, consultez [automatisation et extensibilité pour Visual Studio](http://msdn.microsoft.com/library/f71a2253-3e68-4e5e-9a18-edbba816caf6). Ce document et les documents, il fournit des liens pour vous aider à prendre des décisions concernant la façon dont vous devez fournir l’automation pour votre VSPackage.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : créer un complément](http://msdn.microsoft.com/library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)
-
+ [Guide pratique pour Créer un complément](http://msdn.microsoft.com/library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)

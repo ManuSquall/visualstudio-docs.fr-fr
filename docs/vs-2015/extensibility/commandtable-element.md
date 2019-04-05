@@ -1,14 +1,9 @@
 ---
 title: Élément CommandTable | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - CommandTable
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 15c38159-660a-4ef4-9643-aa6fcfca82a9
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1adc3e8f8c7894cfb3a55617ce594f52a60f2498
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 538de61fed22f4bcfcb38022b41a81d1239f5f4e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817371"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948777"
 ---
 # <a name="commandtable-element"></a>Élément CommandTable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,22 +48,22 @@ CommandTable est l’élément racine du fichier .vsct. Il s’agit du fichier q
   
 | Attribut |                                                                                                                   Description                                                                                                                   |
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|   xmlns   |                                   Obligatoire. Espaces de noms XML :<br /><br /> xmlns = »<http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable>»<br /><br /> prend = «<http://www.w3.org/2001/XMLSchema>»                                   |
-| language  | Facultatif. L’attribut de langage peut être utilisé pour spécifier la langue par défaut de tous les \<chaînes > éléments dans la table de commande.  Si la langue n’est pas spécifiée, la langue du processus en cours est utilisée :<br /><br /> Language = « en-us » |
+|   xmlns   |                                   Obligatoire. Espaces de noms XML :<br /><br /> xmlns="<http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable>"<br /><br /> xmlns:xs="<http://www.w3.org/2001/XMLSchema>"                                   |
+| language  | Optionnel. L’attribut de langage peut être utilisé pour spécifier la langue par défaut de tous les \<chaînes > éléments dans la table de commande.  Si la langue n’est pas spécifiée, la langue du processus en cours est utilisée :<br /><br /> language="en-us" |
   
 ### <a name="child-elements"></a>Éléments enfants  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Élément Extern](../extensibility/extern-element.md)|Facultatif. Contient des directives de préprocesseur pour le compilateur.|  
-|[Élément Include](../extensibility/include-element.md)|Facultatif. Contient les chemins d’accès à tous les fichiers à inclure dans la compilation.|  
+|[Élément Extern](../extensibility/extern-element.md)|Optionnel. Contient des directives de préprocesseur pour le compilateur.|  
+|[Élément Include](../extensibility/include-element.md)|Optionnel. Contient les chemins d’accès à tous les fichiers à inclure dans la compilation.|  
 |[Élément Define](../extensibility/define-element.md)|Facultatif. Définit un symbole donné son nom et sa valeur.|  
-|[Élément Commands](../extensibility/commands-element.md)|Facultatif. L’élément parent définissant toutes les commandes pour le VSPackage qui contient tous les autres éléments.|  
+|[Élément Commands](../extensibility/commands-element.md)|Optionnel. L’élément parent définissant toutes les commandes pour le VSPackage qui contient tous les autres éléments.|  
 |[Élément CommandPlacements](../extensibility/commandplacements-element.md)|Facultatif. Définit où sur la barre de commandes les commandes doivent être placés.|  
 |[Élément VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|Facultatif. Détermine la visibilité statique des commandes et des barres d’outils.|  
-|[Élément KeyBindings](../extensibility/keybindings-element.md)|Facultatif. Spécifie les combinaisons de touches de raccourci, le cas échéant, pour les commandes.|  
+|[Élément KeyBindings](../extensibility/keybindings-element.md)|Optionnel. Spécifie les combinaisons de touches de raccourci, le cas échéant, pour les commandes.|  
 |[Élément UsedCommands](../extensibility/usedcommands-element.md)|Facultatif. Permet à un VSPackage pour éventuellement implémenter sa propre version de la fonctionnalité à l’origine de la prise en charge par les autres VSPackages.|  
-|[Élément Symbols](http://msdn.microsoft.com/en-us/f2ddd0aa-c3dd-439e-834d-28f136a27ffa)|Facultatif. Contient les données de symbole--GUID, ID et ainsi de suite--pour le compilateur.|  
+|[Élément Symbols](http://msdn.microsoft.com/f2ddd0aa-c3dd-439e-834d-28f136a27ffa)|Facultatif. Contient les données de symbole--GUID, ID et ainsi de suite--pour le compilateur.|  
   
 ### <a name="parent-elements"></a>Éléments parents  
   
@@ -78,4 +73,3 @@ CommandTable est l’élément racine du fichier .vsct. Il s’agit du fichier q
   
 ## <a name="see-also"></a>Voir aussi  
  [Fichiers Visual Studio Command Table (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

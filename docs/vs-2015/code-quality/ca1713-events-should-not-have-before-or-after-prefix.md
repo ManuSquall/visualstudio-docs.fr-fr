@@ -1,14 +1,9 @@
 ---
-title: 'CA1713 : Les événements ne doivent pas être préfixe before ou after | Microsoft Docs'
-ms.custom: ''
+title: 'CA1713 : Événements ne doivent pas être préfixe before ou after | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - EventsShouldNotHaveBeforeOrAfterPrefix
 - CA1713
@@ -20,12 +15,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 56d67ff76e0969c179fa593415871f10f60c05c6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6a36f9c8ce788b30f14d8ca0ce9d565ab45975a5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874343"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951843"
 ---
 # <a name="ca1713-events-should-not-have-before-or-after-prefix"></a>CA1713 : Les événements ne doivent pas être munis d'un préfixe Before ou After
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,13 +38,10 @@ ms.locfileid: "49874343"
 ## <a name="rule-description"></a>Description de la règle
  Noms d’événements doivent décrire l’action qui déclenche l’événement. Pour nommer des événements associés déclenchés dans une séquence spécifique, utilisez le présent ou le passé pour indiquer la position relative dans la séquence d'actions. Par exemple, lorsque vous nommez une paire d’événements qui est déclenché lors de la fermeture d’une ressource, vous pouvez le nommer « Fermer » et « Fermé », au lieu de 'BeforeClose' et 'AfterClose'.
 
- Conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage qui est requis pour les nouvelles bibliothèques de logiciels et confirment au client que la bibliothèque a été développée par une personne compétente en matière de développement de code managé.
+ Les conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage qui est requis pour les nouvelles bibliothèques de logiciels et confirment au client que la bibliothèque a été développée par une personne compétente en matière de développement de code managé.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Supprimez le préfixe de nom de l’événement et envisagez de modifier le nom à utiliser le présent ou passé d’un verbe.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Ne supprimez aucun avertissement de cette règle.
-
-
-

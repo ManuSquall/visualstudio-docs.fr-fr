@@ -1,12 +1,9 @@
 ---
 title: Personnalisation de la création d’élément et le déplacement des | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.elementmergedirective
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: cbd28f15-dfd7-46bd-ab79-5430e3ed83c8
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 470ff89dfd864443206c1d9131fb126d58280859
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: a62aacf8ad702aca19531876c57aaf45b10ce639
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853829"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948933"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personnalisation de la création et du mouvement des éléments
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +51,7 @@ Vous pouvez autoriser un élément à faire glisser vers un autre, à partir de 
 ## <a name="defining-an-element-merge-directive"></a>Définition d’une Directive de fusion d’élément  
  Vous pouvez ajouter des directives de fusion d’élément pour les classes de domaine, des relations de domaine, des formes, des connecteurs et des diagrammes. Vous pouvez ajouter ou les trouver dans l’Explorateur DSL sous la classe de domaine de réception. La classe de récepteur est la classe de domaine de l’élément qui est déjà dans le modèle, et sur lequel l’élément nouveau ou copié est fusionnée.  
   
- ![DSL&#45;EMD&#95;détails](../modeling/media/dsl-emd-details.png "EMD_Details de DSL")  
+ ![DSL&#45;EMD&#95;Details](../modeling/media/dsl-emd-details.png "DSL-EMD_Details")  
   
  Le **l’indexation de la classe** est la classe de domaine d’éléments qui peuvent être fusionnées dans les membres de la classe réceptrice. Instances de sous-classes de la classe de l’indexation sont également fusionnés par cette EMD, sauf si vous définissez **s’applique aux sous-classes** sur False.  
   
@@ -79,7 +76,7 @@ Vous pouvez autoriser un élément à faire glisser vers un autre, à partir de 
 >   
 >  Si vous souhaitez vous assurer qu’un nouvel élément ou une nouvelle relation est toujours traitée par votre code personnalisé, vous pouvez définir un `AddRule` sur la relation d’incorporation et un `DeleteRule` sur la classe de domaine de l’élément. Pour plus d’informations, consultez [propager les modifications dans le modèle de règles](../modeling/rules-propagate-changes-within-the-model.md).  
   
-## <a name="example-defining-an-emd-without-custom-code"></a>Exemple : Définition d’une directive EMD sans code personnalisé  
+## <a name="example-defining-an-emd-without-custom-code"></a>Exemple : Définition d’une directive EMD sans code personnalisé  
  L’exemple suivant permet aux utilisateurs de créer un élément et un connecteur en même temps en faisant glisser à partir de la boîte à outils vers une forme existante. L’exemple ajoute une directive EMD à la définition DSL. Avant cette modification, les utilisateurs peuvent faire glisser outils sur le diagramme, mais pas sur des formes existantes.  
   
  Les utilisateurs peuvent également coller des éléments sur d’autres éléments.  
@@ -94,7 +91,7 @@ Vous pouvez autoriser un élément à faire glisser vers un autre, à partir de 
   
    1.  Dans **Explorateur DSL**, développez **Classes de domaine**. Avec le bouton droit `ExampleElement` puis cliquez sur **ajouter nouvelle Directive de fusion**.  
   
-   2.  Assurez-vous que le **détails DSL** fenêtre est ouverte, afin que vous puissiez voir les détails de la nouvelle EMD. (Menu : **vue**, **autres Windows**, **détails DSL**.)  
+   2.  Assurez-vous que le **détails DSL** fenêtre est ouverte, afin que vous puissiez voir les détails de la nouvelle EMD. (Menu : **Afficher**, **autres Windows**, **détails DSL**.)  
   
 3. Définir le **classe d’indexation** dans la fenêtre Détails DSL, pour définir quelle classe d’éléments peut être fusionné sur `ExampleElement` objets.  
   
@@ -148,7 +145,7 @@ Vous pouvez autoriser un élément à faire glisser vers un autre, à partir de 
   
      Si vous écrivez du code personnalisé qui crée de nouveaux éléments, vous pouvez appeler explicitement la EMD à l’aide de la `ElementOperations.Merge` (méthode). Cela permet de s’assurer que votre code lie les nouveaux éléments dans le modèle de la même façon que les autres opérations. Pour plus d’informations, consultez [personnalisation du comportement de copie](../modeling/customizing-copy-behavior.md).  
   
-## <a name="example-adding-custom-accept-code-to-an-emd"></a>Exemple : Ajout de code acceptation personnalisée à une directive EMD  
+## <a name="example-adding-custom-accept-code-to-an-emd"></a>Exemple : Ajout de code pour une directive EMD acceptation personnalisée  
  En ajoutant le code personnalisé à une directive EMD, vous pouvez définir le comportement de fusion plus complexe. Cet exemple simple empêche l’ajout d’un nombre fixe d’éléments vers le diagramme de l’utilisateur. L’exemple modifie la valeur par défaut EMD qui accompagne une relation d’incorporation.  
   
 #### <a name="to-write-custom-accept-code-to-restrict-what-the-user-can-add"></a>Pour écrire du code d’acceptation personnalisée pour limiter ce que l’utilisateur peut ajouter  
@@ -163,7 +160,7 @@ Vous pouvez autoriser un élément à faire glisser vers un autre, à partir de 
   
 4.  Régénérez la solution. Cela prendra plus de temps que d’habitude, car le code généré sera actualisé à partir du modèle.  
   
-     Une erreur de build seront signalées, semblable à : « Company.ElementMergeSample.ExampleElement ne contient pas une définition pour CanMergeExampleElement... »  
+     Une erreur de build seront signalées, similaire à : « Company.ElementMergeSample.ExampleElement ne contient pas une définition pour CanMergeExampleElement... »  
   
      Vous devez implémenter la méthode `CanMergeExampleElement`.  
   
@@ -211,7 +208,7 @@ Vous pouvez autoriser un élément à faire glisser vers un autre, à partir de 
   
     3.  Vérifiez que vous ne pouvez pas utiliser une des manières suivantes pour ajouter plus de quatre éléments au modèle. Il s’agit, car ils utilisent tous la Directive de fusion.  
   
-## <a name="example-adding-custom-merge-code-to-an-emd"></a>Exemple : Ajout de code personnalisé de fusion à une directive EMD  
+## <a name="example-adding-custom-merge-code-to-an-emd"></a>Exemple : Ajout de code personnalisé de fusion à une directive EMD  
  Dans le code de la fusion personnalisée, vous pouvez définir ce qui se passe lorsque l’utilisateur fait glisser un outil ou colle un élément sur un élément. Il existe deux façons de définir une fusion personnalisée :  
   
 1. Définissez **utilise une fusion personnalisée** et fournir le code requis. Votre code remplace le code généré de fusion. Utilisez cette option si vous souhaitez complètement redéfinir ce que fait la fusion.  
@@ -324,6 +321,3 @@ Vous pouvez autoriser un élément à faire glisser vers un autre, à partir de 
  [Navigation et mise à jour d’un modèle dans le Code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Personnalisation des outils et la boîte à outils](../modeling/customizing-tools-and-the-toolbox.md)   
  [Exemple de diagrammes de circuit DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-
-
-

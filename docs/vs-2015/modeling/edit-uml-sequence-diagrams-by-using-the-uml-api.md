@@ -1,25 +1,22 @@
 ---
 title: Modifier des diagrammes de séquence UML à l’aide de l’API UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML activity diagrams, programming
 ms.assetid: 8cdd0203-85ef-4c62-9abc-da4cb26fa504
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f68cf87a7f45b906c6de43e0a837d49132b7a3e0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1c71becfb04115faefe88d5018c238ead38e4c88
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725559"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953205"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>Modifier des diagrammes de séquence à l'aide de l'API UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +55,7 @@ using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;
  Pour plus d’informations, consultez [définir une commande de menu sur un diagramme de modélisation](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
   
 ### <a name="getting-the-context"></a>Obtention du contexte  
- Si vous modifiez une interaction dans le cadre d'un gestionnaire de mouvements ou d'une commande dans un diagramme de séquence, vous pouvez obtenir une référence au contexte. Exemple :  
+ Si vous modifiez une interaction dans le cadre d'un gestionnaire de mouvements ou d'une commande dans un diagramme de séquence, vous pouvez obtenir une référence au contexte. Exemple :  
   
 ```  
 [SequenceDesignerExtension]  
@@ -127,7 +124,7 @@ public void Execute (IMenuCommand command)
   
   Cela est particulièrement important quand vous insérez de nouveaux éléments ou déplacez des éléments existants. Ils ne seront pas dans les positions correctes dans le diagramme tant que vous n'aurez pas effectué l'une de ces opérations. Il vous suffit d'appeler l'une de ces opérations une seule fois à la fin d'une série de modifications.  
   
-  Pour éviter de déconcerter l'utilisateur qui effectue une opération d'annulation après votre commande, utilisez un `ILinkedUndoTransaction` pour délimiter vos modifications et les opérations `Layout()` ou `UpdateShapePositions()` finales. Exemple :  
+  Pour éviter de déconcerter l'utilisateur qui effectue une opération d'annulation après votre commande, utilisez un `ILinkedUndoTransaction` pour délimiter vos modifications et les opérations `Layout()` ou `UpdateShapePositions()` finales. Exemple :  
   
 ```  
 using (ILinkedUndoTransaction transaction = LinkedUndoContext.BeginTransaction("create loop"))  
@@ -187,7 +184,7 @@ System.Diagnostics.Debug.Assert(
 ```  
   
 ### <a name="to-create-messages"></a>Pour créer des messages  
- Pour créer un message, vous devez identifier les points d'insertion sur les lignes de vie source et cible. Exemple :  
+ Pour créer un message, vous devez identifier les points d'insertion sur les lignes de vie source et cible. Exemple :  
   
 ```  
 interaction.CreateMessage( sourceInsertionPoint,   
@@ -256,6 +253,3 @@ cf.CreateInteractionOperand(cf.Operands.Last(), true);
  [Définir un personnalisé élément de boîte à outils de modélisation](../modeling/define-a-custom-modeling-toolbox-item.md)   
  [Définir des contraintes de validation pour les modèles UML](../modeling/define-validation-constraints-for-uml-models.md)   
  [Programmation avec l’API UML](../modeling/programming-with-the-uml-api.md)
-
-
-

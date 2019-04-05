@@ -1,12 +1,9 @@
 ---
 title: Valider du code avec des diagrammes de couche | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, validating
 - validation, layer diagrams
@@ -23,13 +20,13 @@ ms.assetid: 70cbe55d-4b33-4355-b0a7-88c770a6f75c
 caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4d010345c551572bb6458110d2de9ca33fc73155
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 74c61beeae78fbf76ffee76ff930171ddbe8089a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792162"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952673"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>Valider du code avec des diagrammes de couche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +41,7 @@ Pour vous assurer que le code n'est pas en conflit avec sa conception, validez v
   
 - Refactoriser ou migrer le code vers une conception différente.  
   
-   Rechercher le code ou les dépendances qui requièrent du travail lorsque vous déplacez le code vers une architecture différente.  
+   Recherchez le code ou les dépendances qui requièrent du travail lorsque vous déplacez le code vers une architecture différente.  
   
   **Spécifications**  
   
@@ -56,10 +53,10 @@ Pour vous assurer que le code n'est pas en conflit avec sa conception, validez v
   
   Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
-  Vous pouvez valider manuellement le code depuis un diagramme de couche ouvert dans Visual Studio ou depuis une invite de commandes. Vous pouvez également valider le code automatiquement en exécutant des builds locales ou Team Foundation Build. Consultez [vidéo Channel 9 : conception et valider votre architecture à l’aide de diagrammes de couche](http://go.microsoft.com/fwlink/?LinkID=252073).  
+  Vous pouvez valider manuellement le code depuis un diagramme de couche ouvert dans Visual Studio ou depuis une invite de commandes. Vous pouvez également valider le code automatiquement en exécutant des builds locales ou Team Foundation Build. Consultez [vidéo Channel 9 : Concevoir et valider votre architecture à l’aide de diagrammes de couche](http://go.microsoft.com/fwlink/?LinkID=252073).  
   
 > [!IMPORTANT]
->  Si vous souhaitez effectuer la validation de couche à l’aide de Team Foundation Build, vous devez aussi installer la même version de Visual Studio sur votre serveur de builds.  
+>  Si vous souhaitez effectuer la validation de couche à l'aide de Team Foundation Build, vous devez aussi installer la même version de Visual Studio sur votre serveur de builds.  
   
 -   [Si un élément prend en charge la validation](#SupportsValidation)  
   
@@ -74,14 +71,14 @@ Pour vous assurer que le code n'est pas en conflit avec sa conception, validez v
 -   [Comprendre et résoudre les erreurs de validation de couche](#UnderstandingValidationErrors)  
   
 ##  <a name="SupportsValidation"></a> Si un élément prend en charge la validation  
- Vous pouvez lier des couches à des sites web, des documents Office, des fichiers texte brut et des fichiers de projets partagés entre plusieurs applications, mais le processus de validation ne les inclura pas. Aucune erreur de validation n'apparaîtra pour des références à des projets ou à des assemblys qui sont liés à des couches distinctes, lorsqu'aucune dépendance n'apparaît entre ces couches. De telles références ne sont pas considérées comme des dépendances à moins que le code utilise ces références.  
+ Vous pouvez lier des couches à des sites web, des documents Office, des fichiers texte brut et des fichiers de projets partagés entre plusieurs applications, mais le processus de validation ne les inclura pas. Aucune erreur de validation n’apparaîtra pour des références à des projets ou à des assemblys qui sont liés à des couches distinctes, lorsqu’aucune dépendance n’apparaît entre ces couches. De telles références ne sont pas considérées comme des dépendances à moins que le code utilise ces références.  
   
 1.  Dans le diagramme de couche, sélectionnez une ou plusieurs couches, cliquez sur votre sélection et puis cliquez sur **afficher les liens**.  
   
-2.  Dans **Explorateur de couches**, examinez le **prend en charge la Validation** colonne. Si la valeur faux lui est affectée, l’élément ne peut pas être validé.  
+2.  Dans **Explorateur de couches**, examinez le **prend en charge la Validation** colonne. Si la valeur faux lui est affectée, l'élément ne peut pas être validé.  
   
 ##  <a name="IncludeReferences"></a> Inclure d’autres assemblys .NET et les projets pour la validation  
- Lorsque vous faites glisser des éléments vers le diagramme de couche, les références aux projets ou assemblys .NET correspondants sont ajoutés automatiquement à la **références de couche** dossier dans le projet de modélisation. Ce dossier contient des références aux assemblys et aux projets analysés pendant la validation. Vous pouvez également inclure d’autres assemblys .NET et des projets pour qu’ils soient validés sans les faire glisser manuellement vers le diagramme de couche.  
+ Lorsque vous faites glisser des éléments vers le diagramme de couche, les références aux projets ou assemblys .NET correspondants sont ajoutés automatiquement à la **références de couche** dossier dans le projet de modélisation. Ce dossier contient des références aux assemblys et aux projets analysés pendant la validation. Vous pouvez également inclure d'autres assemblys .NET et des projets pour qu'ils soient validés sans les faire glisser manuellement vers le diagramme de couche.  
   
 1.  Dans **l’Explorateur de solutions**, cliquez sur le projet de modélisation ou **références de couche** dossier, puis cliquez sur **ajouter une référence**.  
   
@@ -148,7 +145,7 @@ Pour vous assurer que le code n'est pas en conflit avec sa conception, validez v
  Pendant le processus de développement, vous pouvez supprimer certains conflits signalés pendant la validation. Par exemple, vous pouvez supprimer des erreurs que vous êtes déjà en train de traiter qui ne sont pas pertinentes dans le cadre de votre scénario spécifique. Lorsque vous supprimez une erreur, il est conseillé d’entrer un élément de travail dans [!INCLUDE[esprfound](../includes/esprfound-md.md)].  
   
 > [!WARNING]
->  Vous devez être connecté à un contrôle de code source (SSC, Source Code Control) TFS pour créer un élément de travail ou un lien vers celui-ci. Si vous essayez d'ouvrir une connexion à un autre contrôle de code source TFS, Visual Studio ferme automatiquement la solution actuelle. Vérifiez que vous êtes connecté au contrôle de code source TFS approprié avant d'essayer de créer un élément de travail ou un lien vers celui-ci. Dans les versions ultérieures de Visual Studio, les commandes de menu ne sont pas disponibles si vous n'êtes pas connecté à un contrôle de code source.  
+>  Vous devez être connecté à un contrôle de code source (SSC, Source Code Control) TFS pour créer un élément de travail ou un lien vers celui-ci. Si vous essayez d'ouvrir une connexion à un autre contrôle de code source TFS, Visual Studio ferme automatiquement la solution actuelle. Vérifiez que vous êtes connecté au contrôle de code source TFS approprié avant d’essayer de créer un élément de travail ou un lien vers celui-ci. Dans les versions ultérieures de Visual Studio, les commandes de menu ne sont pas disponibles si vous n'êtes pas connecté à un contrôle de code source.  
   
 ##### <a name="to-create-a-work-item-for-a-validation-error"></a>Pour créer un élément de travail pour une erreur de validation  
   
@@ -158,8 +155,8 @@ Pour vous assurer que le code n'est pas en conflit avec sa conception, validez v
   
 |**To**|**Procédez comme suit**|  
 |------------|----------------------------|  
-|Supprimer des erreurs sélectionnées pendant la validation|Avec le bouton droit à un ou plusieurs erreurs sélectionnées, pointez sur **gérer les erreurs de Validation**, puis cliquez sur **supprimer les erreurs**.<br /><br /> Les erreurs supprimées apparaissent barrées. Lors de la prochaine validation, ces erreurs ne s'afficheront pas.<br /><br /> Les erreurs supprimées sont suivies dans un fichier .suppressions pour le fichier de diagramme de couche correspondant.|  
-|Cesser de supprimer des erreurs sélectionnées|Avec le bouton droit de l’ou les erreurs supprimées sélectionnées, pointez sur **gérer les erreurs de Validation**, puis cliquez sur **arrêter la suppression des erreurs**.<br /><br /> Les erreurs supprimées qui sont sélectionnées s’afficheront lors de la prochaine validation.|  
+|Supprimer des erreurs sélectionnées pendant la validation|Avec le bouton droit à un ou plusieurs erreurs sélectionnées, pointez sur **gérer les erreurs de Validation**, puis cliquez sur **supprimer les erreurs**.<br /><br /> Les erreurs supprimées apparaissent barrées. Lors de la prochaine validation, ces erreurs ne s’afficheront pas.<br /><br /> Les erreurs supprimées sont suivies dans un fichier .suppressions pour le fichier de diagramme de couche correspondant.|  
+|Cesser de supprimer des erreurs sélectionnées|Avec le bouton droit de l’ou les erreurs supprimées sélectionnées, pointez sur **gérer les erreurs de Validation**, puis cliquez sur **arrêter la suppression des erreurs**.<br /><br /> Les erreurs supprimées qui sont sélectionnées s'afficheront lors de la prochaine validation.|  
 |Restaurer toutes les erreurs supprimées dans le **liste d’erreurs** fenêtre|Avec le bouton droit n’importe où dans le **liste d’erreurs** fenêtre, pointez sur **gérer les erreurs de Validation**, puis cliquez sur **afficher les erreurs supprimées**.|  
 |Masquer toutes les erreurs supprimées à partir de la **liste d’erreurs** fenêtre|Avec le bouton droit n’importe où dans le **liste d’erreurs** fenêtre, pointez sur **gérer les erreurs de Validation**, puis cliquez sur **masquer les erreurs supprimées**.|  
   
@@ -190,7 +187,7 @@ Pour vous assurer que le code n'est pas en conflit avec sa conception, validez v
   
    Pour gérer les erreurs dans la fenêtre liste d’erreurs, consultez [gérer les erreurs de Validation](#ManageErrors).  
   
-#### <a name="to-validate-code-automatically-during-a-team-foundation-build"></a>Pour valider automatiquement le code au cours d’une build Team Foundation  
+#### <a name="to-validate-code-automatically-during-a-team-foundation-build"></a>Pour valider automatiquement le code au cours d'une build Team Foundation  
   
 1. Dans **Team Explorer**, double-cliquez sur la définition de build, puis cliquez sur **processus**.  
   
@@ -220,11 +217,11 @@ Pour vous assurer que le code n'est pas en conflit avec sa conception, validez v
 ##  <a name="UnderstandingValidationErrors"></a> Compréhension et résolution des erreurs de Validation de couche  
  Lorsque vous validez du code par rapport à un diagramme de couche, des erreurs de validation se produisent si le code est en conflit avec la conception. Par exemple, les conditions suivantes peuvent provoquer des erreurs de validation :  
   
-- Un artefact est assigné à une couche inappropriée. Dans ce cas, déplacez l'artefact.  
+- Un artefact est assigné à une couche inappropriée. Dans ce cas, déplacez l’artefact.  
   
 - Un artefact, tel qu'une classe, utilise une autre classe d'une manière qui génère un conflit avec votre architecture. Dans ce cas, refactorisez le code pour supprimer la dépendance.  
   
-  Pour résoudre ces erreurs, mettez à jour le code de façon à ce que la validation ne génère plus d'erreur. Vous pouvez effectuer cette tâche de façon itérative.  
+  Pour résoudre ces erreurs, mettez à jour le code de façon à ce que la validation ne génère plus d’erreur. Vous pouvez effectuer cette tâche de façon itérative.  
   
   La section suivante décrit la syntaxe utilisée lors de ces erreurs, explique la signification de ces erreurs, et suggère des opérations pour les résoudre ou les gérer.  
   
@@ -237,17 +234,14 @@ Pour vous assurer que le code n'est pas en conflit avec sa conception, validez v
   
 |**Syntaxe de l’erreur**|**Description de l’erreur**|  
 |----------------------|---------------------------|  
-|AV0001 : Dépendance non valide : *Artifact1*(*ArtifactType1*)--> *Artifact2*(*ArtifactType2*)<br /><br /> Couches : *LayerName1*, *LayerName2* &#124; dépendances : *DependencyType*|*Artifact1* dans *LayerName1* ne doit pas avoir une dépendance *Artifact2* dans *LayerName2* car *LayerName1* n’a pas de dépendance directe *LayerName2*.|  
-|AV1001 : Les Namespace non valide : *artefact*<br /><br /> Couche : *LayerName* &#124; requis Namespace : *NamespaceName1* &#124; Namespace actuel : *NamespaceName2*|*LayerName* requiert que ses artefacts associés appartiennent à *NamespaceName1*. *Artefact* est dans *NamespaceName2*, et non *NamespaceName1*.|  
+|AV0001 : Dépendance non valide : *Artifact1*(*ArtifactType1*) --> *Artifact2*(*ArtifactType2*)<br /><br /> Couches : *LayerName1*, *LayerName2* &#124; dépendances : *DependencyType*|*Artifact1* dans *LayerName1* ne doit pas avoir une dépendance *Artifact2* dans *LayerName2* car *LayerName1* n’a pas de dépendance directe *LayerName2*.|  
+|AV1001 : Namespace non valide : *Artifact*<br /><br /> Couche : *LayerName* &#124; requis Namespace : *NamespaceName1* &#124; Namespace actuel : *NamespaceName2*|*LayerName* requiert que ses artefacts associés appartiennent à *NamespaceName1*. *Artefact* est dans *NamespaceName2*, et non *NamespaceName1*.|  
 |AV1002 : Dépend de Namespace interdit : *Artifact1*(*ArtifactType1*) &#124; *Artifact2*(*ArtifactType2*)<br /><br /> Couche : *LayerName* &#124; Forbidden Namespace : *NamespaceName* &#124; dépendances : *DependencyType*|*LayerName* requiert que ses artefacts associés ne dépendent pas *NamespaceName*. *Artifact1* ne peut pas dépendre *Artifact2* car *Artifact2* est dans *NamespaceName*.|  
-|AV1003 : Dans Namespace interdit : *artefact*(*ArtifactType*)<br /><br /> Couche : *LayerName* &#124; Forbidden Namespace : *NamespaceName*|*LayerName* requiert que ses artefacts associés n’appartiennent pas à *NamespaceName*. *Artefact* appartient à *NamespaceName*.|  
-|AV3001 : Missing Link : couche '*LayerName*'établit un lien vers'*artefact*' qui est introuvable. Vérifiez qu'il ne manque aucune référence d'assembly.|*LayerName* lié à un artefact qui est introuvable. Par exemple, il manque peut-être un lien vers une classe car le projet de modélisation ne comporte pas de référence à l'assembly contenant la classe.|  
-|AV9001 : erreurs internes détectées lors de l'analyse de l'architecture. Il est possible que les résultats ne soient pas complets. Pour plus d'informations, consultez le journal des événements de build ou la fenêtre Sortie.|Consultez le journal détaillé des événements de build ou la fenêtre Sortie pour plus de détails.|  
+|AV1003 : Dans Namespace interdit : *Artifact*(*ArtifactType*)<br /><br /> Couche : *LayerName* &#124; Forbidden Namespace : *NamespaceName*|*LayerName* requiert que ses artefacts associés n’appartiennent pas à *NamespaceName*. *Artefact* appartient à *NamespaceName*.|  
+|AV3001 : Lien manquant : Couche «*LayerName*'établit un lien vers'*artefact*' qui est introuvable. Vérifiez qu'il ne manque aucune référence d'assembly.|*LayerName* lié à un artefact qui est introuvable. Par exemple, il manque peut-être un lien vers une classe car le projet de modélisation ne comporte pas de référence à l'assembly contenant la classe.|  
+|AV9001 : Analyse de l’architecture des erreurs internes détectées. Il est possible que les résultats ne soient pas complets. Pour plus d'informations, consultez le journal des événements de build ou la fenêtre Sortie.|Consultez le journal détaillé des événements de build ou la fenêtre Sortie pour plus de détails.|  
   
 ## <a name="security"></a>Sécurité  
   
 ## <a name="see-also"></a>Voir aussi  
  [Valider votre système pendant le développement](../modeling/validate-your-system-during-development.md)
-
-
-

@@ -1,27 +1,22 @@
 ---
 title: Visual Studio Command Table (. Fichiers VSCT) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, overview
 - Visual Studio command table configuration files (VSCT), overview
 ms.assetid: 1313adb4-add4-4e74-90e2-f4be522f5259
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7a68d9f5dac293cc9048cb4b84aaa487c5079250
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 98b3892d10b003d6236ae9ccfbebb83a602a5877
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748840"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58947403"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>Fichiers Visual Studio Command Table (.Vsct)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,14 +29,14 @@ Un fichier de configuration de table de commande est un fichier texte qui décri
  [Conception de fichiers XML Command Table (.Vsct)](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)  
  Explique comment concevoir des fichiers .vsct.  
   
- [Guide pratique pour créer un fichier .Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)  
+ [Guide pratique pour Créer un. Fichier VSCT](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)  
  Compare les méthodes de création d’un fichier .vsct. Décrit le processus permettant de créer manuellement un nouveau fichier .vsct.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
  [Schéma de référence XML VSCT](../../extensibility/vsct-xml-schema-reference.md)  
  Fournit des détails sur chaque section du fichier de configuration XML de table de commandes.  
   
- [Commande de Configuration de la Table (. Fichiers CTC)](http://msdn.microsoft.com/en-us/3413dda1-f372-4669-bcf0-c64d3463842c)  
+ [Commande de Configuration de la Table (. Fichiers CTC)](http://msdn.microsoft.com/3413dda1-f372-4669-bcf0-c64d3463842c)  
  Présente une vue d’ensemble du format de fichier .ctc déconseillées.  
   
  [Comment VSPackages ajoute des éléments de l’interface utilisateur](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
@@ -52,4 +47,3 @@ Un fichier de configuration de table de commande est un fichier texte qui décri
   
  [Commandes, menus et barres d’outils](../../extensibility/internals/commands-menus-and-toolbars.md)  
  Explique comment créer une interface utilisateur comprenant des menus, des barres d’outils et des listes déroulantes de commandes.
-

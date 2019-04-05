@@ -1,13 +1,8 @@
 ---
 title: À l’aide de points d’arrêt | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.breakpointswin
@@ -45,13 +40,13 @@ ms.assetid: 020b2e97-3b3e-4b2c-872d-b5c6025e120e
 caps.latest.revision: 63
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d980fd2367545eb5c824bacc507d9ced9aa2d723
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: ff5858482f64e8e73844c433febe8033b7ab1d70
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765957"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58947910"
 ---
 # <a name="using-breakpoints"></a>Utilisation des points d'arrêt
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +63,7 @@ Vous pouvez définir des points d’arrêt quand vous voulez interrompre l’ex�
   
  À ce stade, la valeur de `testInt` est toujours égale à 1.  
   
- Vous pouvez examiner l’état actuel de l’application, y compris les valeurs de variables et la pile des appels. Pour plus d’informations sur la pile des appels, consultez [How to: Use the Call Stack Window](../debugger/how-to-use-the-call-stack-window.md).  
+ Vous pouvez examiner l’état actuel de l’application, y compris les valeurs de variables et la pile des appels. Pour plus d’informations sur la pile des appels, consultez [Comment : utiliser la fenêtre Pile des appels](../debugger/how-to-use-the-call-stack-window.md).  
   
  Vous pouvez définir un point d’arrêt sur n’importe quelle ligne de code exécutable. Par exemple, dans le code C# ci-dessus, vous pouvez définir un point d’arrêt sur la déclaration des variables, la boucle `for` ou tout code à l’intérieur de la boucle `for` , mais vous ne pouvez pas définir un point d’arrêt sur les déclarations d’espace de noms ou de classe ou la signature de la méthode.  
   
@@ -76,7 +71,7 @@ Vous pouvez définir des points d’arrêt quand vous voulez interrompre l’ex�
  Vous pouvez aussi définir des points d’arrêt dans la pile des appels, dans la fenêtre Code machine et, dans le code C++ natif, au niveau d’une condition de données ou d’une adresse mémoire.  
   
 ## <a name="BKMK_Set_a_breakpoint_in_the_call_stack_window"></a> Définition d’un point d’arrêt dans la fenêtre Pile des appels  
- Vous pouvez arrêter l’exécution au niveau de l’instruction ou de la ligne à laquelle une fonction appelante retourne une valeur en définissant un point d’arrêt dans la fenêtre **Pile des appels** . Pour plus d’informations sur la pile des appels, consultez [How to: Use the Call Stack Window](../debugger/how-to-use-the-call-stack-window.md). Le débogueur doit avoir interrompu l’exécution.  
+ Vous pouvez arrêter l’exécution au niveau de l’instruction ou de la ligne à laquelle une fonction appelante retourne une valeur en définissant un point d’arrêt dans la fenêtre **Pile des appels** . Pour plus d’informations sur la pile des appels, consultez [Comment : utiliser la fenêtre Pile des appels](../debugger/how-to-use-the-call-stack-window.md). Le débogueur doit avoir interrompu l’exécution.  
   
 1. Commencez le débogage de l’application, puis attendez que l’exécution soit interrompue (par exemple, au niveau d’un point d’arrêt). Ouvrez la fenêtre **Pile des appels** (**Déboguer/Fenêtres/Pile des appels**ou **Ctrl+Alt+C**).  
   
@@ -155,7 +150,7 @@ Vous pouvez définir des points d’arrêt quand vous voulez interrompre l’ex�
   
    Quand vous cochez la case **Conditions** , la fenêtre se développe pour afficher les différents types de conditions.  
   
-   **Expression conditionnelle :** quand vous sélectionnez Expression conditionnelle, vous avez le choix entre deux conditions : **Est true** et **En cas de modification**. Choisissez **Est true** pour arrêter l’exécution quand l’expression est satisfaite ou **En cas de modification** pour l’arrêter quand la valeur de l’expression a changé.  
+   **Expression conditionnelle :** Lorsque vous sélectionnez Expression conditionnelle, vous pouvez ensuite choisir deux conditions : **A la valeur true** et **lorsque modifié**. Choisissez **Est true** pour arrêter l’exécution quand l’expression est satisfaite ou **En cas de modification** pour l’arrêter quand la valeur de l’expression a changé.  
   
    Dans l’exemple suivant, nous avons défini que le point d’arrêt est atteint uniquement quand la valeur de `testInt` est égale à **4**:  
   
@@ -259,6 +254,3 @@ Vous pouvez définir des points d’arrêt quand vous voulez interrompre l’ex�
   
 ## <a name="see-also"></a>Voir aussi  
  [Naviguer dans le code avec le débogueur](../debugger/navigating-through-code-with-the-debugger.md)
-
-
-
