@@ -1,12 +1,9 @@
 ---
 title: Séparer les datasets et les TableAdapters dans différents projets | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +16,13 @@ ms.assetid: f66a3940-6227-46af-a930-9177f425f4fd
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1e94c76254b14bdf82e4e7a219cbb0f35cb532f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 2f4b470bab1bc3a017edeb1c686a53baf2293495
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824321"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938575"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Séparer les datasets et les TableAdapters en différents projets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +30,7 @@ ms.locfileid: "49824321"
   
 Datasets typés ont été améliorées afin que le [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) et classes de jeu de données peuvent être générées dans des projets séparés. Cela vous permet de rapidement séparer les couches application et générer des applications de données multicouches.  
   
- La procédure suivante décrit le processus d’utilisation de la[création et modification de données typés](../data-tools/creating-and-editing-typed-datasets.md) pour générer le code de jeu de données dans un projet qui est séparé du projet qui contient le texte généré `TableAdapter` code.  
+ La procédure suivante décrit le processus d’utilisation du Concepteur de Dataset pour générer le code de jeu de données dans un projet qui est séparé du projet qui contient le texte généré `TableAdapter` code.  
   
 ## <a name="separatedatasets-and-tableadapters"></a>Separatedatasets et les TableAdapters  
  Quand vous séparez le code de jeu de données à partir de `TableAdapter` code, le projet qui contient le code de jeu de données doit se trouver dans la solution actuelle. Si ce projet ne se trouve pas dans la solution actuelle, il n’est pas disponible dans le **DataSet Project** liste dans le **propriétés** fenêtre.  
@@ -75,4 +72,3 @@ Datasets typés ont été améliorées afin que le [TableAdapters](http://msdn.m
  [Mise à jour hiérarchique](../data-tools/hierarchical-update.md)   
  [Accès aux données dans Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
  [ADO.NET](http://msdn.microsoft.com/library/5b96ed06-9759-4966-a797-a1d5f6ee50ca)
-

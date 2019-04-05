@@ -1,12 +1,9 @@
 ---
 title: Enregistrer des données dans une transaction | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +19,13 @@ ms.assetid: 80260118-08bc-4b37-bfe5-9422ee7a1e4e
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b0912ffbe2a9a82ac5efbd3b2ca6ba3566ce5b02
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 48c8732f75f23a0d0b0929eeef8865044f19d27b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219300"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938196"
 ---
 # <a name="save-data-in-a-transaction"></a>Enregistrer des données dans une transaction
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +34,7 @@ ms.locfileid: "50219300"
 Cette procédure pas à pas montre comment enregistrer des données dans une transaction à l’aide de la <xref:System.Transactions> espace de noms. Cet exemple utilise les tables `Customers` et `Orders` de l'exemple de base de données Northwind.  
   
 ## <a name="prerequisites"></a>Prérequis  
- Cette procédure pas à pas requiert un accès à l'exemple de base de données Northwind. Pour plus d’informations sur la configuration de la base de données Northwind, consultez [Comment : installer Sample Databases](../data-tools/how-to-install-sample-databases.md).  
+ Cette procédure pas à pas requiert un accès à l'exemple de base de données Northwind.
   
 ## <a name="create-a-windows-application"></a>Créer une application Windows  
  La première étape consiste à créer un **Windows Application**.  
@@ -50,7 +47,7 @@ Cette procédure pas à pas montre comment enregistrer des données dans une tra
   
 3.  Sélectionnez **Windows Application**, puis sélectionnez **OK**. Pour plus d’informations, consultez [les Applications clientes](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
-     Le **SavingDataInATransactionWalkthrough** projet est créé et ajouté à **l’Explorateur de solutions**.  
+     Le projet **SavingDataInATransactionWalkthrough** est créé et ajouté à l’**Explorateur de solutions**.  
   
 ## <a name="create-a-database-data-source"></a>Créer une source de données de base de données  
  Cette étape utilise le [Assistant de Configuration de Source de données](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) pour créer une source de données basée sur le `Customers` et `Orders` tables dans la base de données Northwind.  
@@ -59,7 +56,7 @@ Cette procédure pas à pas montre comment enregistrer des données dans une tra
   
 1.  Sur le **données** menu, sélectionnez**afficher les Sources de données**.  
   
-2.  Dans le **des Sources de données** fenêtre, sélectionnez **ajouter une nouvelle Source de données** pour démarrer le **Assistant de Configuration de Source de données**.  
+2.  Dans la fenêtre **Sources de données**, sélectionnez **Ajouter une nouvelle source de données** pour démarrer l’**Assistant Configuration de source de données**.  
   
 3.  Sur le **choisir un Type de Source de données**s’affiche, sélectionnez **base de données**, puis sélectionnez **suivant**.  
   
@@ -69,7 +66,7 @@ Cette procédure pas à pas montre comment enregistrer des données dans une tra
   
          - ou -  
   
-    -   Sélectionnez **nouvelle connexion** pour lancer le **Ajouter/modifier la connexion** boîte de dialogue zone et créer une connexion à la base de données Northwind.  
+    -   Sélectionnez **Nouvelle connexion** pour lancer la boîte de dialogue **Ajouter/Modifier une connexion** et créez une connexion à la base de données Northwind.  
   
 5.  Si votre base de données requiert un mot de passe, sélectionnez l’option pour inclure les données sensibles, puis sélectionnez **suivant**.  
   
@@ -79,25 +76,25 @@ Cette procédure pas à pas montre comment enregistrer des données dans une tra
   
 8.  Sélectionnez le `Customers` et `Orders` tables, puis sélectionnez **Terminer**.  
   
-     Le **NorthwindDataSet** est ajouté à votre projet et le `Customers` et `Orders` tables apparaissent dans le **des Sources de données** fenêtre.  
+     **NorthwindDataSet** est ajouté à votre projet et les tables `Customers` et `Orders` apparaissent dans la fenêtre **Sources de données**.  
   
 ## <a name="addcontrols-to-the-form"></a>Addcontrols au formulaire  
- Vous pouvez créer les contrôles liés aux données en faisant glisser des éléments à partir de la **des Sources de données** fenêtre vers votre formulaire.  
+ Pour créer des contrôles liés aux données, vous pouvez faire glisser des éléments depuis la fenêtre **Sources de données** vers votre formulaire.  
   
 #### <a name="to-create-data-bound-controls-on-the-windows-form"></a>Pour créer des données des contrôles sur le formulaire Windows liés  
   
 -   Dans le **des Sources de données** fenêtre, développez le **clients** nœud.  
   
--   Faites glisser le **clients** nœud à partir de la **des Sources de données** fenêtre sur **Form1**.  
+-   Faites glisser le nœud **Customers** depuis la fenêtre **Sources de données** vers **Form1**.  
   
-     Un contrôle <xref:System.Windows.Forms.DataGridView> et une barre d'outils (<xref:System.Windows.Forms.BindingNavigator>) pour parcourir les enregistrements apparaissent dans le formulaire. Un [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), [CustomersTableAdapter](../data-tools/tableadapter-overview.md),<xref:System.Windows.Forms.BindingSource>, et <xref:System.Windows.Forms.BindingNavigator> s’affichent dans la barre d’état du composant.  
+     Un contrôle <xref:System.Windows.Forms.DataGridView> et une barre d'outils (<xref:System.Windows.Forms.BindingNavigator>) pour parcourir les enregistrements apparaissent dans le formulaire. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> et <xref:System.Windows.Forms.BindingNavigator> s’affichent dans la barre d’état des composants.  
   
 -   Faites glisser le **commandes** nœud (pas le principal **commandes** nœud, mais le nœud de table enfant associé ci-dessous le **télécopie** colonne) vers le formulaire sous la  **CustomersDataGridView**.  
   
-     Un <xref:System.Windows.Forms.DataGridView> s'affiche dans le formulaire. Un [OrdersTableAdapter](../data-tools/tableadapter-overview.md) et <xref:System.Windows.Forms.BindingSource> s’affichent dans la barre d’état du composant.  
+     Un <xref:System.Windows.Forms.DataGridView> s'affiche dans le formulaire. Un OrdersTableAdapter et <xref:System.Windows.Forms.BindingSource> s’affichent dans la barre d’état du composant.  
   
 ## <a name="add-a-reference-to-the-systemtransactions-assembly"></a>Ajoutez une référence à l’assembly System.Transactions  
- Les transactions utilisent l’espace de noms <xref:System.Transactions>. Une référence de project vers l'assembly system.transactions n'est pas ajoutée par défaut, vous devez donc l'ajouter manuellement.  
+ Les transactions utilisent l’espace de noms <xref:System.Transactions>. Une référence de projet à l’assembly System.Transactions n’est pas ajoutée par défaut, vous devez l’ajouter manuellement.  
   
 #### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>Pour ajouter une référence au fichier DLL System.Transactions  
   
@@ -105,7 +102,7 @@ Cette procédure pas à pas montre comment enregistrer des données dans une tra
   
 2.  Sélectionnez **System.Transactions**(sur le **.NET** onglet), puis sélectionnez **OK**.  
   
-     Une référence à **System.Transactions** est ajouté au projet.  
+     Une référence à **System.Transactions** est ajoutée au projet.  
   
 ## <a name="modifythe-code-in-the-bindingnavigators-saveitem-button"></a>Code Modifythe dans du bouton SaveItem de BindingNavigator  
  Pour la première table déposée dans votre formulaire, le code est ajouté par défaut pour le `click` événement de sauvegarde situé dans le <xref:System.Windows.Forms.BindingNavigator>. Vous devez manuellement ajouter du code pour mettre à jour toutes les tables supplémentaires. Pour cette procédure pas à pas, nous refactoriser le code en dehors de l’enregistrement d’enregistrement existant de clic du bouton Gestionnaire d’événements. Nous créons également quelques méthodes supplémentaires pour fournir des fonctionnalités de mise à jour spécifique en fonction de si la ligne doit être ajouté ou supprimé.  
@@ -131,28 +128,28 @@ Cette procédure pas à pas montre comment enregistrer des données dans une tra
   
 #### <a name="to-delete-existing-orders"></a>Pour supprimer des commandes existantes  
   
--   Ajoutez le code suivant `DeleteOrders` méthode **Form1**:  
+-   Ajoutez la méthode `DeleteOrders` suivante à **Form1** :  
   
      [!code-csharp[VbRaddataSaving#5](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#5)]
      [!code-vb[VbRaddataSaving#5](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#5)]  
   
 #### <a name="to-delete-existing-customers"></a>Pour supprimer des clients existants  
   
--   Ajoutez le code suivant `DeleteCustomers` méthode **Form1**:  
+-   Ajoutez la méthode `DeleteCustomers` suivante à **Form1** :  
   
      [!code-csharp[VbRaddataSaving#6](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#6)]
      [!code-vb[VbRaddataSaving#6](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#6)]  
   
 #### <a name="to-add-new-customers"></a>Pour ajouter de nouveaux clients  
   
--   Ajoutez le code suivant `AddNewCustomers` méthode **Form1**:  
+-   Ajoutez la méthode `AddNewCustomers` suivante à **Form1** :  
   
      [!code-csharp[VbRaddataSaving#7](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#7)]
      [!code-vb[VbRaddataSaving#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#7)]  
   
 #### <a name="to-add-new-orders"></a>Pour ajouter de nouvelles commandes  
   
--   Ajoutez le code suivant `AddNewOrders` méthode **Form1**:  
+-   Ajoutez la méthode `AddNewOrders` suivante à **Form1** :  
   
      [!code-csharp[VbRaddataSaving#8](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#8)]
      [!code-vb[VbRaddataSaving#8](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#8)]  
@@ -165,4 +162,3 @@ Cette procédure pas à pas montre comment enregistrer des données dans une tra
   
 ## <a name="see-also"></a>Voir aussi  
  [Enregistrer les données dans la base de données](../data-tools/save-data-back-to-the-database.md)
-

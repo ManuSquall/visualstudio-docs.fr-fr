@@ -1,26 +1,21 @@
 ---
 title: Chaînes de substitution utilisés dans. Pkgdef et. Les fichiers Pkgundef | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, isolated mode%2C .pkgdef and .pkgundef files
 ms.assetid: b1755d63-d794-4fd7-864b-70a9684881c2
 caps.latest.revision: 5
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1496931b02c5673c1f08253ebed7da0cae0b904c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 47434d9d1dfcedeeaea330b1d65645d7a632c6e6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817540"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938895"
 ---
 # <a name="substitution-strings-used-in-pkgdef-and-pkgundef-files"></a>Chaînes de substitution utilisés dans. Pkgdef et. Fichiers Pkgundef
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,4 +41,3 @@ Vous pouvez utiliser les chaînes de substitution répertoriés ci-dessous dans 
 |$WINDIR$|Le dossier Windows.|  
   
  Si l’analyseur ne reconnaît pas la chaîne de substitution, ou il ne peut pas déterminer la valeur d’une entrée de Registre ou une variable d’environnement, il n’effectue pas substitution sur cette partie de la chaîne.
-

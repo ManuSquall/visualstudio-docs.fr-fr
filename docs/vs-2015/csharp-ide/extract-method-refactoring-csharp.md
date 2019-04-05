@@ -1,14 +1,9 @@
 ---
 title: Extraire la méthode (refactorisation c#) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.csharp.refactoring.extractmethod
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: eeba11df-a815-4bec-9c21-8a831891b783
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: cc05da79676beed5fa698f11843a6b7485280e71
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b2d38c46d630f7deccaec8c093c2c4e75456eec0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228057"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938525"
 ---
 # <a name="extract-method-refactoring-c"></a>Extraire la méthode (Refactorisation C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

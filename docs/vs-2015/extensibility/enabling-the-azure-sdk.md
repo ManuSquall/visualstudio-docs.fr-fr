@@ -1,27 +1,22 @@
 ---
 title: L’activation de Microsoft Azure SDK | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-azure
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: tgt-pltfrm-azure
+ms.topic: conceptual
 helpviewer_keywords:
 - azure
 - cloud
 ms.assetid: 1c323afd-fb4e-449a-adaa-bb7a5d3b1468
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b5831bfe9ef722e2253b35255ec23304068bab9d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e47fa574d607f0fe56950b232991ad6e5ff2b351
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725822"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001423"
 ---
 # <a name="enabling-the-azure-sdk"></a>L’activation du SDK Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,6 @@ Le Kit de développement pour vous aide à .NET vous créez, configurez, génér
     >  Pour installer les outils Azure, vous devez disposer d’Internet Information Services 7.0 et l’installation des composants de développement d’applications ASP.NET. Si ces composants ne sont pas installés, le programme d’installation de Azure Tools vous invitera à les installer.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Azure](http://go.microsoft.com/fwlink?LinkID=164788)   
- [Bien démarrer avec Azure](http://go.microsoft.com/fwlink?LinkID=159361)   
- [Communauté Azure](http://go.microsoft.com/fwlink?LinkID=159370)
-
+ [Azure](https://azure.microsoft.com/)   
+ [Bien démarrer avec Azure](https://azure.microsoft.com/get-started/)   
+ [Communauté Azure](https://azure.microsoft.com/support/community/)

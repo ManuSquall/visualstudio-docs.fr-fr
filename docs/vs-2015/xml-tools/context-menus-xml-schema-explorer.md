@@ -1,25 +1,20 @@
 ---
 title: Menus contextuels (Explorateur de schémas XML) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 854ea473f2f606b28052b093978253372b4fec59
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5398cea07863e17a8e430e7f827aac0b4e217355
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294611"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938940"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Menus contextuels (Explorateur de schémas XML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +22,7 @@ ms.locfileid: "49294611"
   
 Les éléments de menu contextuel suivants vous permettent d'effectuer des recherches spécifiques au schéma et d'autres opérations.  
   
-## <a name="node-type-schema-set"></a>Type de nœud : jeu de schémas  
+## <a name="node-type-schema-set"></a>Type de nœud : Jeu de schémas  
  Le tableau suivant décrit les options disponibles pour un nœud de type jeu de schémas.  
   
 |Option|Description|  
@@ -37,7 +32,7 @@ Les éléments de menu contextuel suivants vous permettent d'effectuer des reche
 |**Afficher les éléments globaux**|Recherche et met en surbrillance tous les éléments globaux dans le jeu de schémas.|  
 |**Propriétés (fenêtre)**|Ouvre le **propriétés** fenêtre (si elle n’est pas déjà ouvert). Cette fenêtre affiche des informations sur le nœud.|  
   
-## <a name="node-type-namespace"></a>Type de nœud : espace de noms  
+## <a name="node-type-namespace"></a>Type de nœud : Espace de noms  
  Le tableau suivant décrit les options disponibles pour un nœud de type espace de noms.  
   
 |Option|Description|  
@@ -48,7 +43,7 @@ Les éléments de menu contextuel suivants vous permettent d'effectuer des reche
 |**Afficher les éléments globaux**|Recherche et met en surbrillance tous les éléments globaux dans l'espace de noms sélectionné.|  
 |**Propriétés (fenêtre)**|Ouvre le **propriétés** fenêtre (si elle n’est pas déjà ouvert). Cette fenêtre affiche des informations sur le nœud.|  
   
-## <a name="node-type-file"></a>Type de nœud : fichier  
+## <a name="node-type-file"></a>Type de nœud : Fichier  
  Le tableau suivant décrit les options disponibles pour un nœud de type fichier.  
   
 |Option|Description|  
@@ -70,7 +65,7 @@ Les éléments de menu contextuel suivants vous permettent d'effectuer des reche
 |**Afficher le code**|Ouvre le fichier qui contient le nœud sélectionné dans l'Éditeur XML. L'élément sélectionné dans l'Explorateur de schémas XML est également sélectionné dans l'Éditeur XML.|  
 |**Propriétés (fenêtre)**|Ouvre le **propriétés** fenêtre (si elle n’est pas déjà ouvert). Cette fenêtre affiche des informations sur le nœud.|  
   
-## <a name="node-type-element"></a>Type de nœud : élément  
+## <a name="node-type-element"></a>Type de nœud : Élément  
  En plus des options relatives aux nœuds globaux décrites ci-dessus, le menu contextuel pour les nœuds d'élément comprend les options suivantes :  
   
 |Option|Description|  
@@ -82,7 +77,7 @@ Les éléments de menu contextuel suivants vous permettent d'effectuer des reche
 |**Afficher le groupe de Substitution têtes**|Pour les éléments globaux qui sont membres d'un groupe de substitution, recherche et met en surbrillance tous les en-têtes directs et indirects de l'élément sélectionné, notamment :<br /><br /> : Un en-tête de groupe de substitution spécifié sur l’élément sélectionné.<br />: Un en-tête de groupe de substitution spécifié sur son élément head.|  
 |**Générer un exemple de XML**|Disponible uniquement pour les éléments globaux. Génère un exemple de fichier XML pour l'élément global.|  
   
-## <a name="node-type-global-types"></a>Type de nœud : types globaux  
+## <a name="node-type-global-types"></a>Type de nœud : Types globaux  
  En plus des options relatives aux nœuds globaux décrites ci-dessus, le menu contextuel pour les nœuds de type global comprend les options suivantes :  
   
 |Option|Description|  
@@ -92,7 +87,7 @@ Les éléments de menu contextuel suivants vous permettent d'effectuer des reche
 |**Afficher tous les types dérivés**|Recherche et met en surbrillance tous les types qui sont directement et indirectement dérivés du type sélectionné.|  
 |**Afficher tous les ancêtres**|Affiche tous les types parents (de base).|  
   
-## <a name="node-type-attribute"></a>Type de nœud : attribut  
+## <a name="node-type-attribute"></a>Type de nœud : Attribut  
  En plus des options relatives aux nœuds globaux décrites ci-dessus, le menu contextuel pour les nœuds d'attribut comprend les options suivantes :  
   
 |Option|Description|  
@@ -101,7 +96,7 @@ Les éléments de menu contextuel suivants vous permettent d'effectuer des reche
 |**Accédez à l’attribut d’origine**|Pour les références d'attribut, navigue vers la définition réelle de l'attribut.|  
 |**Afficher toutes les références**|Pour les attributs globaux, recherche et met en surbrillance toutes les références (autres attributs qui ont `ref="selectedAttribute"`) à l'attribut sélectionné.|  
   
-## <a name="node-type-attribute-group"></a>Type de nœud : groupe d'attributs  
+## <a name="node-type-attribute-group"></a>Type de nœud : Groupe d’attributs  
  En plus des options relatives aux nœuds globaux décrites ci-dessus, le menu contextuel pour les nœuds d'attribut comprend les options suivantes :  
   
 |Option|Description|  
@@ -110,7 +105,7 @@ Les éléments de menu contextuel suivants vous permettent d'effectuer des reche
 |**Afficher tous les membres**|Recherche et met en surbrillance tous les membres du groupe d'attributs.|  
 |**Afficher toutes les références**|Recherche et met en surbrillance toutes les références (groupes d'attributs qui ont `ref="selectedAttributeGroup"`) au groupe d'attributs sélectionné.|  
   
-## <a name="node-type-named-group"></a>Type de nœud : groupe nommé  
+## <a name="node-type-named-group"></a>Type de nœud : Groupe nommé  
  En plus des options relatives aux nœuds globaux décrites ci-dessus, le menu contextuel pour les nœuds de groupe nommé comprend les options suivantes :  
   
 |Option|Description|  
@@ -122,6 +117,3 @@ Les éléments de menu contextuel suivants vous permettent d'effectuer des reche
 ## <a name="see-also"></a>Voir aussi  
  [Explorateur de schémas XML](../xml-tools/xml-schema-explorer.md)   
  [Recherche dans le jeu de schémas](../xml-tools/searching-the-schema-set.md)
-
-
-

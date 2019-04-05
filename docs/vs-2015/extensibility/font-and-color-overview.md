@@ -1,27 +1,22 @@
 ---
 title: Vue d’ensemble de la couleur et de police | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], font and color
 - font and color control [Visual Studio SDK], editors
 ms.assetid: 2203e4e7-8b7f-44ec-8884-6ff718d4f278
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d849d93bdab481cecbb7d1f0f862f1db8eb3c181
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0a20cfa2372b1e55652ffcebe6d173cff86140a6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769441"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938628"
 ---
 # <a name="font-and-color-overview"></a>Vue d’ensemble de la couleur et de police
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +24,7 @@ ms.locfileid: "51769441"
 Cette rubrique décrit les paramètres de police et la couleur du texte dans le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] l’environnement de développement intégré (IDE). Il présente également les concepts des catégories et des éléments d’affichage, et il explique comment les VSPackages et l’éditeur principal utilisent des attributs de texte.  
   
 ## <a name="the-fonts-and-colors-property-page"></a>La Page polices et couleurs propriété  
- Vous pouvez gérer les attributs du texte affiché dans le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] l’environnement de développement intégré (IDE) via la **polices et couleurs** page de propriétés. Pour rechercher le **polices et couleurs** page de propriété, sur le **outils** menu, cliquez sur **Options**. Développez **environnement**, puis cliquez sur **polices et couleurs**.  
+ Vous pouvez gérer les attributs du texte affiché dans le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] l’environnement de développement intégré (IDE) via la **polices et couleurs** page de propriétés. Pour rechercher le **polices et couleurs** page de propriété, sur le **outils** menu, cliquez sur **Options**. Développez l’option **Environnement**, puis cliquez sur **Polices et couleurs**.  
   
 ## <a name="categories-and-display-items"></a>Catégories et les éléments d’affichage  
  Polices et couleurs sont organisés en **catégories** et **éléments affichés**.  
@@ -78,7 +73,7 @@ Cette rubrique décrit les paramètres de police et la couleur du texte dans le 
   
 - La possibilité pour les deux utiliser des éléments d’affichage intégrées à partir de la **texte EditorCategory** et d’étendre les.  
   
-   Pour plus d’informations, consultez [Comment : utiliser des éléments Coloriables intégrés](../extensibility/internals/how-to-use-built-in-colorable-items.md) et [éléments Coloriables personnalisés](../extensibility/internals/custom-colorable-items.md).  
+   Pour plus d'informations, voir [Procédure : Utiliser des éléments Coloriables intégrés](../extensibility/internals/how-to-use-built-in-colorable-items.md) et [éléments Coloriables personnalisés](../extensibility/internals/custom-colorable-items.md).  
   
 - Persistance automatique du courant de l’état de ces deux intégrés et personnalisé afficher les éléments avec le **éditeur de texte** catégorie.  
   
@@ -87,4 +82,3 @@ Cette rubrique décrit les paramètres de police et la couleur du texte dans le 
 ## <a name="see-also"></a>Voir aussi  
  [Interfaces héritées dans l’éditeur](../extensibility/legacy-interfaces-in-the-editor.md)   
  [Couleurs de syntaxe dans un service de langage hérité](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
-
