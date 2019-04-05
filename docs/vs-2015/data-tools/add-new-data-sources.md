@@ -1,12 +1,9 @@
 ---
 title: Ajouter de nouvelles sources de données | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 f1_keywords:
 - vs.datasource.datasourcefieldspicker
 dev_langs:
@@ -21,13 +18,13 @@ ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
 caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 50a18de0fa3006e1cf95e48d50f24411347fd135
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5bbfeafdf60e58031813c2dcd64b2adfcfb9b5b9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279147"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58947960"
 ---
 # <a name="add-new-data-sources"></a>Ajouter de nouvelles sources de données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +58,7 @@ Dans le contexte de .NET data tools dans Visual Studio, le terme *source de donn
 ### <a name="dataset"></a>Groupe de données  
  Pour créer un jeu de données comme source de données, exécutez le **Assistant de Configuration de Source de données** (**projet** > **ajouter de nouvelles données** Source) et choisissez le  **Base de données** type de source de données. Suivez les invites pour spécifier une connexion de base de données nouvelle ou existante, ou un fichier de base de données.  
   
-### <a name="entity-classes"></a>Classes d’entité  
+### <a name="entity-classes"></a>Classes Entity  
  Pour créer un modèle Entity Framework comme source de données, exécutez d’abord le **Assistant Entity Data Model** pour créer les classes d’entité (**projet** > **ajouter un nouvel élément**  >  **ADO.NET Entity Data Model**).  
   
  ![Nouvel élément de projet de modèle Entity Framework](../data-tools/media/raddata-new-entity-framework-model-project-item.png "élément de projet de modèle raddata nouvel Entity Framework")  
@@ -88,7 +85,7 @@ Dans le contexte de .NET data tools dans Visual Studio, le terme *source de donn
 -   Services Web.  
   
     > [!NOTE]
-    >  Les éléments qui apparaissent dans le **des Sources de données** fenêtre sont dépendants des données retournées par le service. Certains services peut ne pas fournissent suffisamment d’informations pour le **Assistant de Configuration de Source de données** pour créer des objets pouvant être liés. Par exemple, si le service retourne un dataset non typé, aucun élément n’apparaîtra dans le **des Sources de données** fenêtre lorsque vous terminez l’Assistant. Il s’agit, car les datasets non typés ne fournissent pas un schéma, et par conséquent, l’Assistant n’a pas suffisamment d’informations pour créer la source de données.  
+    >  Les éléments qui apparaissent dans le **des Sources de données** fenêtre sont dépendants des données retournées par le service. Certains services peuvent ne pas fournir suffisamment d’informations pour que l’**Assistant Configuration de source de données** puisse créer des objets pouvant être liés. Par exemple, si le service retourne un dataset non typé, aucun élément n’apparaîtra dans le **des Sources de données** fenêtre lorsque vous terminez l’Assistant. Il s’agit, car les datasets non typés ne fournissent pas un schéma, et par conséquent, l’Assistant n’a pas suffisamment d’informations pour créer la source de données.  
   
 ## <a name="data-source-for-an-object"></a>Source de données pour un objet  
  Vous pouvez créer une source de données à partir de n’importe quel objet qui expose une ou plusieurs propriétés publiques en exécutant la **Assistant de Configuration de Source de données** , puis en sélectionnant le **objet** type de source de données. Toutes les propriétés publiques d’un objet sont affichées dans le **des Sources de données** fenêtre.   Si vous utilisez Entity Framework et que vous avez généré un modèle, il s’agit où vous trouvez les classes d’entité qui seront les sources de données pour votre application.  
@@ -108,4 +105,3 @@ Dans le contexte de .NET data tools dans Visual Studio, le terme *source de donn
   
 ## <a name="see-also"></a>Voir aussi  
  [Outils de données Visual Studio pour .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
-

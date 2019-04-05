@@ -1,12 +1,9 @@
 ---
 title: Créer des diagrammes et projets de modélisation UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.addnewdiagramdialog
 - vs.teamarch.createnewmodelingprojectdialog
@@ -27,13 +24,13 @@ ms.assetid: c178b04b-4fd2-4bed-97e3-d793dae8649c
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5d841c9fde677eb4a8fb17e952a817364dab277e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9b36c038194f20cecf1be59775c2261497a0fda8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738394"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948364"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Créer des projets et des diagrammes de modélisation UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,7 +136,7 @@ Les modèles UML vous aident à comprendre, à expliquer et à concevoir les sys
      Le diagramme de modélisation s'ouvre et s'affiche dans le projet de modélisation.  
   
     > [!NOTE]
-    >  Chaque diagramme a une paire de fichiers dans le système de fichiers. Ne sélectionnez pas un fichier ayant l'extension `.layout`. En outre, Visual Studio ne prend pas en charge l'ajout de diagrammes UML existants à plusieurs projets de modélisation. Chaque fichier de diagramme doit être ouvert au sein du projet de modélisation dans lequel il a été créé. La raison en est qu'un diagramme UML est une vue du modèle appartenant à son projet de modélisation.  
+    >  Chaque diagramme a une paire de fichiers dans le système de fichiers. Ne sélectionnez pas un fichier ayant l’extension `.layout`. En outre, Visual Studio ne prend pas en charge l'ajout de diagrammes UML existants à plusieurs projets de modélisation. Chaque fichier de diagramme doit être ouvert au sein du projet de modélisation dans lequel il a été créé. La raison en est qu'un diagramme UML est une vue du modèle appartenant à son projet de modélisation.  
   
 ##  <a name="NonModelDiagrams"></a> Diagrammes qui ne nécessitent pas de projets de modélisation  
  Les types de diagrammes suivants ne font pas partie d'un projet de modélisation :  
@@ -155,12 +152,9 @@ Les modèles UML vous aident à comprendre, à expliquer et à concevoir les sys
   
 |**Problème**|**Causes**|**Résolution**|  
 |---------------|----------------|--------------------|  
-|Le projet de modélisation ne peut pas être ouvert ou chargé dans la solution.<br /><br /> Le message suivant s'affiche :<br /><br /> « Un ou plusieurs projets de la solution n'ont pas été correctement chargés. Pour plus d'informations, consultez la fenêtre de Sortie. »<br /><br /> La fenêtre Sortie affiche le message suivant :<br /><br /> «*NomFichierEtCheminDuProjetDeModélisation*.modelproj : erreur : format Guid non reconnu. »|Un projet de modélisation possède des références aux projets qui ont le même nom et qui sont dans la même solution.<br /><br /> Par exemple, une couche est liée aux projets qui ont le même nom et qui sont dans la même solution.|Utilisez un éditeur de texte pour ouvrir le fichier du projet de modélisation, supprimez les références et réessayez d'ouvrir le projet de modélisation.<br /><br /> Pour éviter ce problème, n'ajoutez pas de références aux projets qui ont le même nom. Assurez-vous que les projets ont des noms uniques.|  
+|Le projet de modélisation ne peut pas être ouvert ou chargé dans la solution.<br /><br /> Le message suivant s'affiche :<br /><br /> « Un ou plusieurs projets de la solution n'ont pas été correctement chargés. Pour plus d'informations, consultez la fenêtre de Sortie. »<br /><br /> La fenêtre Sortie affiche le message suivant :<br /><br /> «*NomFichierEtCheminDuProjetDeModélisation*.modelproj : erreur : Format de Guid non reconnu. »|Un projet de modélisation possède des références aux projets qui ont le même nom et qui sont dans la même solution.<br /><br /> Par exemple, une couche est liée aux projets qui ont le même nom et qui sont dans la même solution.|Utilisez un éditeur de texte pour ouvrir le fichier du projet de modélisation, supprimez les références et réessayez d'ouvrir le projet de modélisation.<br /><br /> Pour éviter ce problème, n'ajoutez pas de références aux projets qui ont le même nom. Assurez-vous que les projets ont des noms uniques.|  
 |Il manque des éléments dans les diagrammes qui sont ajoutés, copiés ou déplacés vers d'autres projets de modélisation ou d'autres emplacements de la solution.<br /><br /> ou<br /><br /> Les messages suivants s'affichent lorsque vous essayez d'ouvrir un diagramme :<br /><br /> -« Des formes ou des connecteurs du diagramme sont manquants, car leurs définitions n’existent pas dans ce projet. Les définitions ont été supprimées du modèle pendant que le diagramme était fermé, ou le diagramme a été copié dans un projet ne contenant pas ces définitions. »<br /><br /> ou<br /><br /> -« Ce document est déjà ouvert par un autre projet ».|Le fichier de diagramme a été ajouté, déplacé ou copié à partir d'un projet de modélisation vers un autre projet de modélisation ou vers un autre emplacement de la solution.|Pour copier un fichier de diagramme, créez un diagramme et copiez les éléments du diagramme source vers le nouveau diagramme.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Modifier des modèles UML et des diagrammes](../modeling/edit-uml-models-and-diagrams.md)   
  [Structurer votre solution de modélisation](../modeling/structure-your-modeling-solution.md)
-
-
-

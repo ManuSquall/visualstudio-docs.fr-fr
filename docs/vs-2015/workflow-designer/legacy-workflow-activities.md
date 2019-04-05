@@ -1,11 +1,8 @@
 ---
 title: Activités de Workflow hérité | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - workflows, activities
@@ -15,13 +12,13 @@ ms.assetid: 4af7a06b-1e82-43c8-aec8-0dc5fb63d08a
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 6ff21a431e380a281ce1261215367b89c4ecf1a3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: fa5a6da8d45435fc7c755905a19e95e90a98ad57
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205398"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953875"
 ---
 # <a name="legacy-workflow-activities"></a>Activités de workflow héritées
 [!INCLUDE[wf](../includes/wf-md.md)] inclut un ensemble d'activités par défaut qui fournit les fonctionnalités utilisées pour le flux de contrôle, les conditions, la gestion des événements, la gestion des états et pour communiquer avec les applications et les services. Lorsque vous concevez des workflows, vous pouvez utiliser les activités fournies par le système via [!INCLUDE[wfd1](../includes/wfd1-md.md)], ou vous pouvez créer vos propres activités personnalisées.  
@@ -36,7 +33,7 @@ ms.locfileid: "49205398"
 |[CompensatableSequenceActivity](http://go.microsoft.com/fwlink?LinkID=65027)|Version compensable de [SequenceActivity](http://go.microsoft.com/fwlink?LinkID=65020). [!INCLUDE[crdefault](../includes/crdefault-md.md)][À l’aide de l’activité CompensatableSequenceActivity](http://go.microsoft.com/fwlink?LinkID=65002).|  
 |[CompensatableTransactionScopeActivity](http://go.microsoft.com/fwlink?LinkID=65051)|Version compensable de **TransactionScopeActivity**. [!INCLUDE[crdefault](../includes/crdefault-md.md)][À l’aide de l’activité CompensatableTransactionScopeActivity](http://go.microsoft.com/fwlink?LinkID=65063).|  
 |[CompensateActivity](http://go.microsoft.com/fwlink?LinkID=65052)|Permet d'appeler le code utilisé pour annuler ou compenser les opérations déjà exécutées par le workflow lorsqu'une erreur se produit. [!INCLUDE[crdefault](../includes/crdefault-md.md)][À l’aide de l’activité CompensateActivity](http://go.microsoft.com/fwlink?LinkID=65064).|  
-|[Activité CompensationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65053)|Un wrapper pour une ou plusieurs activités qui effectuent une compensation pour une activité TransactionScopeActivity terminée [!INCLUDE[crdefault](../includes/crdefault-md.md)] [à l’aide de l’activité CompensationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65065).|  
+|[CompensationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65053)|Un wrapper pour une ou plusieurs activités qui effectuent une compensation pour une activité TransactionScopeActivity terminée [!INCLUDE[crdefault](../includes/crdefault-md.md)] [à l’aide de l’activité CompensationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65065).|  
 |[ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)|Exécute les activités enfants basées sur une condition qui s’applique à la [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017) activité elle-même et selon les conditions qui s’appliquent séparément à chaque enfant. [!INCLUDE[crdefault](../includes/crdefault-md.md)][À l’aide de l’activité ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65066).|  
 |[DelayActivity](http://go.microsoft.com/fwlink?LinkID=65028)|Permet de générer des délais dans votre workflow sur la base d'un intervalle de délai d'attente. [!INCLUDE[crdefault](../includes/crdefault-md.md)][À l’aide de l’activité DelayActivity](http://go.microsoft.com/fwlink?LinkID=65067).|  
 |[EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029)|Encapsule une ou plusieurs activités exécutées lorsqu'un événement spécifié se produit. [!INCLUDE[crdefault](../includes/crdefault-md.md)][À l’aide de l’activité EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65068).|  
@@ -62,7 +59,7 @@ ms.locfileid: "49205398"
 |[SynchronizationScopeActivity](http://go.microsoft.com/fwlink?LinkID=65057)|Exécute séquentiellement des activités contenues dans un domaine synchronisé. [!INCLUDE[crdefault](../includes/crdefault-md.md)][À l’aide de l’activité SynchronizationScopeActivity](http://go.microsoft.com/fwlink?LinkID=65085).|  
 |[TerminateActivity](http://go.microsoft.com/fwlink?LinkID=65058)|Permet de mettre fin immédiatement à l'opération effectuée par votre workflow en cas d'erreur. [!INCLUDE[crdefault](../includes/crdefault-md.md)][À l’aide de l’activité TerminateActivity](http://go.microsoft.com/fwlink?LinkID=65086).|  
 |[ThrowActivity](http://go.microsoft.com/fwlink?LinkID=65059)|Permet de capturer les exceptions métier levées dans le cadre des métadonnées de processus d'un workflow. [!INCLUDE[crdefault](../includes/crdefault-md.md)][À l’aide de l’activité ThrowActivity](http://go.microsoft.com/fwlink?LinkID=65087).|  
-|[Activité TransactionScopeActivity](http://go.microsoft.com/fwlink?LinkID=65093)|Fournit une infrastructure pour la gestion des transactions et des exceptions. Pour plus d’informations, consultez [à l’aide de l’activité TransactionScopeActivity](http://go.microsoft.com/fwlink?LinkID=65088).|  
+|[TransactionScopeActivity](http://go.microsoft.com/fwlink?LinkID=65093)|Fournit une infrastructure pour la gestion des transactions et des exceptions. Pour plus d’informations, consultez [à l’aide de l’activité TransactionScopeActivity](http://go.microsoft.com/fwlink?LinkID=65088).|  
 |[WebServiceFaultActivity](http://go.microsoft.com/fwlink?LinkID=65046)|Permet de modéliser l'occurrence d'une erreur de service Web. [!INCLUDE[crdefault](../includes/crdefault-md.md)][À l’aide de l’activité WebServiceFaultActivity](http://go.microsoft.com/fwlink?LinkID=65089).|  
 |[WebServiceInputActivity](http://go.microsoft.com/fwlink?LinkID=65047)|Reçoit des données en provenance d'un service Web. [!INCLUDE[crdefault](../includes/crdefault-md.md)][À l’aide de l’activité WebServiceInputActivity](http://go.microsoft.com/fwlink?LinkID=65090).|  
 |[WebServiceOutputActivity](http://go.microsoft.com/fwlink?LinkID=65048)|Répond à une demande de service Web faite à un workflow. [!INCLUDE[crdefault](../includes/crdefault-md.md)][À l’aide de l’activité WebServiceOutputActivity](http://go.microsoft.com/fwlink?LinkID=65092).|  
@@ -74,10 +71,10 @@ ms.locfileid: "49205398"
  [Vues Activité (hérité)](../workflow-designer/activity-views-legacy.md)  
  Décrit les différents modes Design des activités.  
   
- [Guide pratique pour ajouter des activités à la boîte à outils (hérité)](../workflow-designer/how-to-add-activities-to-the-toolbox-legacy.md)  
+ [Guide pratique pour ajouter des activités à la boîte à outils (héritées)](../workflow-designer/how-to-add-activities-to-the-toolbox-legacy.md)  
  Indique comment ajouter des activités à la boîte à outils.  
   
- [Guide pratique pour créer une condition de règle déclarative (hérité)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)  
+ [Guide pratique pour créer une condition de règle déclarative (héritée)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)  
  Affiche les étapes à suivre pour créer une condition de règle déclarative.  
   
  [Guide pratique pour créer un ensemble de règles PolicyActivity (hérité)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md)  

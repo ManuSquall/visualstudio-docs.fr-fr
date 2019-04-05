@@ -1,12 +1,9 @@
 ---
 title: Débogage d’un modèle de texte T4 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, troubleshooting
 - text templates, debugging
@@ -14,13 +11,13 @@ ms.assetid: 0877fdf2-20bf-42da-b3cc-4c5856b80821
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f299b89f7f59cbfc043bb77e6e56c3e5fac22d16
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 08e74dbb5fefcdaa0959690c7eb1633bca2a8bc6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298907"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949289"
 ---
 # <a name="debugging-a-t4-text-template"></a>Débogage d'un modèle de texte T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,6 +81,3 @@ Vous pouvez définir des points d’arrêt dans les modèles de texte. Pour déb
 |Une Exception a été levée lors du traitement d’une directive nommée '{0}'.|Se produit lorsqu’un processeur de directive lève une exception lors du traitement d’une directive.|N’oubliez pas que les paramètres au processeur de directive sont corrects.|  
 |L’hôte a levé une exception en tentant de résoudre la référence d’assembly '{0}'.|Se produit lorsque l’hôte lève une exception lorsqu’elle tente de résoudre une référence d’assembly. Le message fournit l’assembly de référence de chaîne.|Assembly proviennent de références \<@# assembly #> directives et de processeurs de directive. N’oubliez pas que le paramètre 'name' fourni dans le paramètre de l’assembly est correct.|  
 |Essayez de spécifier non pris en charge {1} valeur '{0}' pour la directive {2}|Se produit par la classe RequiresProvidesDirectiveProcessor (tous nos processeurs de directive générés dérivent à partir de celui-ci), lorsque vous fournissez un non pris en charge argument requires / provides.|N’oubliez pas que les noms dans le name = 'value' paires fournis dans le requiert et fournit des paramètres sont corrects.|
-
-
-

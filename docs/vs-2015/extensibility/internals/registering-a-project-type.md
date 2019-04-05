@@ -1,14 +1,9 @@
 ---
 title: L’inscription d’un Type de projet | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], new project registry entries
 - registry, new project types
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 38848e54f95cc3d78cf3bae2f32bd9827e98c5ac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9f56de9b3ce3f1faf5a63fa6b8fd8574a57b82f3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785324"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949917"
 ---
 # <a name="registering-a-project-type"></a>Inscription d’un type de projet
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,7 +49,7 @@ Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de
    @="devenv.exe \"%1\""  
 ```  
   
-|Name|Type|Données|Description|  
+|Nom|Type|Données|Description|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`FigPrjFile`|Nom et description des fichiers du type de projet qui ont l’extension .figp.|  
 |`Content Type`|REG_SZ|`Text/plain`|Type de contenu pour les fichiers de projet.|  
@@ -86,7 +81,7 @@ Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de
    "FigProjectItemsEvents"="Returns the FigProjectItemsEvents Object"  
 ```  
   
-|Name|Type|Données|Description|  
+|Nom|Type|Données|Description|  
 |----------|----------|----------|-----------------|  
 |`@` (Valeur par défaut)|REG_SZ|`FigPrj Project VSPackage`|Nom localisé de ce inscrit un VSPackage (type de projet).|  
 |`InprocServer32`|REG_SZ|`%MODULE%`|Chemin d’accès du type de projet DLL. L’IDE se charge de cette DLL et transmet le CLSID VSPackage à `DllGetClassObject` pour obtenir <xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory> pour construire le <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> objet.|  
@@ -137,7 +132,7 @@ Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de
    "SortPriority"=dword:00000064  
 ```  
   
-|Name|Type|Données|Description|  
+|Nom|Type|Données|Description|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`FigPrj Project`|Nom par défaut des projets de ce type.|  
 |`DisplayName`|REG_SZ|`#%IDS_PROJECT_TYPE%`|ID de ressource du nom doivent être extraites de la DLL satellite inscrit sous Packages.|  
@@ -177,7 +172,7 @@ Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de
    "NewProjectDialogOnly"=dword:00000000  
 ```  
   
-|Name|Type|Données|Description|  
+|Nom|Type|Données|Description|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`#%IDS_NEWPROJ_ TEMPLATES_ENTRY%`|ID de ressource pour les modèles de projet.|  
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Par défaut le chemin d’accès pour les projets du type de projet enregistré.|  
@@ -198,7 +193,7 @@ Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de
    "SortPriority"=dword:00000064  
 ```  
   
-|Name|Type|Données|Description|  
+|Nom|Type|Données|Description|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|Aucun.|Valeur par défaut qui indique que les entrées suivantes sont pour les entrées de projets fichiers divers.|  
 |`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|Valeur d’ID de ressource pour les fichiers de modèle d’ajouter de nouveaux éléments.|  
@@ -227,9 +222,9 @@ Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de
   
   Le dernier champ identifie le numéro de version pour la ressource CTMENU. Vous pouvez fusionner à nouveau le menu en modifiant le numéro de version.  
   
-|Name|Type|Données|Description|  
+|Nom|Type|Données|Description|  
 |----------|----------|----------|-----------------|  
-|% CLSID_Package %|REG_SZ|`,1000,1`|La ressource à récupérer les informations de menu.|  
+|%CLSID_Package%|REG_SZ|`,1000,1`|La ressource à récupérer les informations de menu.|  
   
  Les exemples suivants se trouvent dans le Registre sous la clé [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\NewProjectTemplates].  
   
@@ -241,7 +236,7 @@ Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de
    "NewProjectDialogOnly"=dword:00000000  
 ```  
   
-|Name|Type|Données|Description|  
+|Nom|Type|Données|Description|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`#%IDS_NEWPROJ_TEMPLATES_ENTRY%`|Valeur d’ID de ressource pour les modèles de projet Figures nouveau projet.|  
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Chemin d’accès de la valeur par défaut du répertoire de nouveaux projets. Éléments dans ce répertoire s’afficheront dans le **Assistant Nouveau projet** boîte de dialogue.|  
@@ -256,7 +251,7 @@ Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de
    "UseInterface"=dword:00000001  
 ```  
   
-|Name|Type|Données|Description|  
+|Nom|Type|Données|Description|  
 |----------|----------|----------|-----------------|  
 |`Package`|REG_SZ|`%CLSID_Package%`|ID de classe du VSPackage inscrit.|  
 |`UseInterface`|REG_DWORD|`1`|1 indique que l’interface utilisateur doit être utilisée pour interagir avec ce projet. 0 indique qu’il n’existe aucune interface de l’interface utilisateur.|  
@@ -275,4 +270,3 @@ Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de
  [Liste de vérification : Créer de nouveaux Types de projet](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Éléments d’un modèle de projet](../../extensibility/internals/elements-of-a-project-model.md)   
  [Création d’instances de projets à l’aide de fabriques de projets](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
-

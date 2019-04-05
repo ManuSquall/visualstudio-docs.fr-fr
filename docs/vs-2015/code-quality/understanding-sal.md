@@ -1,25 +1,20 @@
 ---
 title: Présentation de SAL | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
 caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 712d99f3839982632e54b622b3512eb611f2bf95
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 847631d28febe81be2e688b7c643ed1f4cfcba18
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792813"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954045"
 ---
 # <a name="understanding-sal"></a>Présentation de SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ void * memcpy(
  Vous pouvez indiquer ce que fait cette fonction ? Lorsqu’une fonction est implémentée ou appelée, certaines propriétés doivent être maintenues pour assurer l’exactitude du programme. Simplement en examinant une déclaration telle que celle dans l’exemple, vous ne connaissez pas ce qu’ils sont. Sans annotations SAL, vous seriez obligé de s’appuient sur la documentation ou des commentaires de code. Voici la la documentation MSDN pour `memcpy` indique :  
   
 > « Copies comptent les octets de src vers la destination. Si la source et la destination se chevauchent, le comportement de memcpy est indéfini. Memmove permet de gérer les régions qui se chevauchent.   
-> **Note de sécurité :** vous assurer que la mémoire tampon de destination est la même taille ou supérieure à la mémoire tampon source. Pour plus d’informations, consultez dépassements de mémoire tampon. »  
+> **Note de sécurité :** Assurez-vous que la mémoire tampon de destination est d'une taille identique ou supérieure à celle de la mémoire tampon source. Pour plus d’informations, consultez dépassements de mémoire tampon. »  
   
  La documentation contient deux éléments d’information qui suggèrent que votre code doit conserver certaines propriétés pour assurer l’exactitude du programme :  
   
@@ -126,7 +121,7 @@ wchar_t * wmemcpy(
    > **C6387 Valeur de paramètre non valide**   
    > « Que » peut être '0' : Ceci n’est pas conforme à la spécification de la fonction 'InCallee'.  
   
-### <a name="example-the-in-annotation"></a>Exemple : Le \_dans\_ Annotation  
+### <a name="example-the-in-annotation"></a>Exemple : Le \_dans\_ Annotation  
  Le `_In_` annotation indique que :  
   
 -   Le paramètre doit être valide et ne sera pas modifié.  
@@ -164,7 +159,7 @@ void BadInCaller()
   
  Si vous utilisez Visual Studio Code Analysis sur cet exemple, il valide le fait que les appelants passer un pointeur non Null à une mémoire tampon initialisé pour `pInt`. Dans ce cas, `pInt` pointeur ne peut pas être NULL.  
   
-### <a name="example-the-inopt-annotation"></a>Exemple : Le \_In_opt\_ Annotation  
+### <a name="example-the-inopt-annotation"></a>Exemple : Le \_In_opt\_ Annotation  
  `_In_opt_` est identique à `_In_`, sauf que le paramètre d’entrée est autorisé à avoir la valeur NULL et, par conséquent, la fonction doit vérifier cela.  
   
 ```cpp  
@@ -192,7 +187,7 @@ void InOptCaller()
   
  Analyse du Code Visual Studio valide le fait que la fonction vérifie les valeurs NULL avant d’accéder à la mémoire tampon.  
   
-### <a name="example-the-out-annotation"></a>Exemple : Le \_Out\_ Annotation  
+### <a name="example-the-out-annotation"></a>Exemple : Le \_Out\_ Annotation  
  `_Out_` prend en charge un scénario courant dans lequel un pointeur non NULL qui pointe vers une mémoire tampon d’élément est transmis et la fonction initialise l’élément. L’appelant ne possède pas d’initialiser la mémoire tampon avant l’appel ; la fonction appelée promet d’initialiser avant de retourner.  
   
 ```cpp  
@@ -219,7 +214,7 @@ void OutCaller()
   
  L’outil analyse de Code Visual Studio valide le fait que l’appelant passe un pointeur non NULL dans une mémoire tampon pour `pInt` et que la mémoire tampon est initialisée par la fonction avant de retourner.  
   
-### <a name="example-the-outopt-annotation"></a>Exemple : Le \_Out_opt\_ Annotation  
+### <a name="example-the-outopt-annotation"></a>Exemple : Le \_Out_opt\_ Annotation  
  `_Out_opt_` est identique à `_Out_`, sauf que le paramètre ne peut pas être NULL et, par conséquent, la fonction doit vérifier cela.  
   
 ```cpp  
@@ -247,7 +242,7 @@ void OutOptCaller()
   
  Analyse du Code Visual Studio valide le fait que cette fonction vérifie les valeurs NULL avant `pInt` est déréférencé et si `pInt` n’est pas NULL, que la mémoire tampon est initialisée par la fonction avant de retourner.  
   
-### <a name="example-the-inout-annotation"></a>Exemple : Le \_Inout\_ Annotation  
+### <a name="example-the-inout-annotation"></a>Exemple : Le \_Inout\_ Annotation  
  `_Inout_` est utilisé pour annoter un paramètre de pointeur qui peut être modifié par la fonction. Le pointeur doit pointer vers les données initialisées valides avant l’appel, et même si elle est modifiée, elle doit toujours avoir une valeur valide en retour. L’annotation Spécifie que la fonction peut librement lire et écrire dans la mémoire tampon d’un élément. L’appelant doit fournir la mémoire tampon et l’initialiser.  
   
 > [!NOTE]
@@ -279,7 +274,7 @@ void BadInOutCaller()
   
  Analyse du Code Visual Studio valide le fait que les appelants passer un pointeur non NULL à une mémoire tampon initialisé pour `pInt`et que, avant le retour, `pInt` est toujours non NULL et la mémoire tampon est initialisée.  
   
-### <a name="example-the-inoutopt-annotation"></a>Exemple : Le \_Inout_opt\_ Annotation  
+### <a name="example-the-inoutopt-annotation"></a>Exemple : Le \_Inout_opt\_ Annotation  
  `_Inout_opt_` est identique à `_Inout_`, sauf que le paramètre d’entrée est autorisé à avoir la valeur NULL et, par conséquent, la fonction doit vérifier cela.  
   
 ```cpp  
@@ -309,7 +304,7 @@ void InOutOptCaller()
   
  Analyse du Code Visual Studio valide le fait que cette fonction vérifie les valeurs NULL avant d’accéder à la mémoire tampon et si `pInt` n’est pas NULL, que la mémoire tampon est initialisée par la fonction avant de retourner.  
   
-### <a name="example-the-outptr-annotation"></a>Exemple : Le \_Outptr\_ Annotation  
+### <a name="example-the-outptr-annotation"></a>Exemple : Le \_Outptr\_ Annotation  
  `_Outptr_` est utilisé pour annoter un paramètre destiné à retourner un pointeur.  Le paramètre lui-même ne doit pas être NULL et la fonction appelée retourne un pointeur non NULL qu’il contient et ce pointeur pointe vers les données initialisées.  
   
 ```cpp  
@@ -340,7 +335,7 @@ void OutPtrCaller()
   
  Analyse du Code Visual Studio valide le fait que l’appelant passe un pointeur non NULL `*pInt`, et que la mémoire tampon est initialisée par la fonction avant de retourner.  
   
-### <a name="example-the-outptropt-annotation"></a>Exemple : Le \_Outptr_opt\_ Annotation  
+### <a name="example-the-outptropt-annotation"></a>Exemple : Le \_Outptr_opt\_ Annotation  
  `_Outptr_opt_` est identique à `_Outptr_`, sauf que le paramètre est facultatif, l’appelant peut passer un pointeur NULL pour le paramètre.  
   
 ```cpp  
@@ -373,7 +368,7 @@ void OutPtrOptCaller()
   
  Analyse du Code Visual Studio valide le fait que cette fonction vérifie les valeurs NULL avant `*pInt` est déréférencé, et que la mémoire tampon est initialisée par la fonction avant de retourner.  
   
-### <a name="example-the-success-annotation-in-combination-with-out"></a>Exemple : Le \_réussite\_ Annotation en association avec \_Out\_  
+### <a name="example-the-success-annotation-in-combination-with-out"></a>Exemple : Le \_réussite\_ Annotation en association avec \_Out\_  
  Annotations peuvent être appliquées à la plupart des objets.  En particulier, vous pouvez annoter une fonction entière.  L’une des caractéristiques d’une fonction plus évidents est qu’elle peut réussir ou échouer. Mais comme l’association entre une mémoire tampon et sa taille, C/C++ ne peut pas exprimer fonction réussite ou l’échec. À l’aide de la `_Success_` annotation, que vous pouvez déterminer la réussite d’une fonction ressemble.  Le paramètre à la `_Success_` annotation est simplement une expression que lorsqu’il est true indique que la fonction a réussi. L’expression peut être tout ce que l’analyseur d’annotation peut gérer. Les effets des annotations après le retour de la fonction sont appliquent uniquement lorsque la fonction réussit. Cet exemple montre comment `_Success_` interagit avec `_Out_` adoptent l’attitude. Vous pouvez utiliser le mot clé `return` pour représenter la valeur de retour.  
   
 ```cpp  
@@ -424,6 +419,3 @@ bool GetValue(_Out_ int *pInt, bool flag)
  [Annotation du comportement de verrouillage](../code-quality/annotating-locking-behavior.md)   
  [Spécifiant le moment où une Annotation est applicable et](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Bonnes pratiques et exemples](../code-quality/best-practices-and-examples-sal.md)
-
-
-

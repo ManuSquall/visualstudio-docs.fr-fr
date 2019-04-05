@@ -1,30 +1,27 @@
 ---
 title: Développer des tests à partir d’un modèle | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - tests and requirements
 ms.assetid: 40f87192-ba85-4552-8804-314a678261ae
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c0613e43816e7ef7036c5e13b7abafe90b451b81
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f5aa84c4f7a39a5e5b7a1ee3458c09397bc81f37
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787183"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953582"
 ---
 # <a name="develop-tests-from-a-model"></a>Développer des tests à partir d'un modèle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez utiliser les spécifications et les modèles architecturaux pour mieux organiser les tests de votre système et de ses composants. Cette pratique vous permet de vous assurer que vous testez les impératifs importants des utilisateurs et des autres parties prenantes, et vous aide à mettre rapidement à jour les tests quand les impératifs changent. Si vous utilisez [!INCLUDE[TCMext](../includes/tcmext-md.md)], vous pouvez également tenir à jour des liens entre les modèles et les tests.  
+Vous pouvez utiliser les spécifications et les modèles architecturaux pour mieux organiser les tests de votre système et de ses composants. Cette pratique vous permet de vous assurer que vous testez les besoins importants des utilisateurs et des autres parties prenantes, et vous aide à mettre rapidement à jour les tests quand les besoins changent. Si vous utilisez [!INCLUDE[TCMext](../includes/tcmext-md.md)], vous pouvez également tenir à jour des liens entre les modèles et les tests.  
   
  Pour connaître les versions de Visual Studio prennent en charge ces fonctionnalités, consultez [versions prises en charge pour l’architecture et les outils de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -45,7 +42,7 @@ Vous pouvez utiliser les spécifications et les modèles architecturaux pour mie
  Vous pouvez créer et tenir à jour une relation entre des tests système et un modèle d'impératifs. Pour établir cette relation, vous devez écrire des tests qui correspondent aux principaux éléments du modèle d'impératifs. Visual Studio vous aide à tenir à jour cette relation en vous permettant de créer des liens entre les tests et les parties du modèle. Pour plus d’informations sur les modèles d’impératifs, consultez [modéliser les besoins des utilisateurs](../modeling/model-user-requirements.md).  
   
 ### <a name="write-tests-for-each-use-case"></a>Écrire des tests pour chaque cas d'usage  
- Si vous utilisez [!INCLUDE[TCMext](../includes/tcmext-md.md)], vous pouvez créer un groupe de tests pour chaque cas d'usage que vous avez défini dans votre modèle d'impératifs. Par exemple, si vous avez un cas d'usage Commander un repas, qui comprend Créer une commande et Ajouter un article à la commande, vous pouvez créer des tests à la fois pour le cas d'usage global et pour les cas d'usage plus détaillés. Pour plus d’informations sur les cas d’utilisation, consultez [diagrammes de cas d’utilisation UML : indications](../modeling/uml-use-case-diagrams-guidelines.md).  
+ Si vous utilisez [!INCLUDE[TCMext](../includes/tcmext-md.md)], vous pouvez créer un groupe de tests pour chaque cas d'usage que vous avez défini dans votre modèle d'impératifs. Par exemple, si vous avez un cas d'usage Commander un repas, qui comprend Créer une commande et Ajouter un article à la commande, vous pouvez créer des tests à la fois pour le cas d'usage global et pour les cas d'usage plus détaillés. Pour plus d’informations sur les cas d’utilisation, consultez [UML utiliser des diagrammes de cas : Les instructions](../modeling/uml-use-case-diagrams-guidelines.md).  
   
  Les instructions suivantes peuvent être utiles :  
   
@@ -59,7 +56,7 @@ Vous pouvez utiliser les spécifications et les modèles architecturaux pour mie
   
     -   Si le plan de développement implémente un aspect du cas d'usage avant un autre, vous pouvez activer les tests séparément à mesure que le développement progresse.  
   
--   Lors de la conception des tests, séparez le choix des données de test du code ou du script qui détermine si la post-condition a été remplie. Par exemple, voici un exemple de test d'une fonction arithmétique simple : entrer 4, vérifier que la sortie est 2. Au lieu de cela, concevez le script comme suit : choisir une entrée, multiplier le résultat par lui-même et vérifier que le résultat est l'entrée d'origine. Ce style vous permet de faire varier les entrées de test sans modifier le corps principal du test.  
+-   Lors de la conception des tests, séparez le choix des données de test du code ou du script qui détermine si la post-condition a été remplie. Par exemple, un test d’une fonction arithmétique simple peut être : Entrée 4 ; Vérifiez que la sortie est 2. Au lieu de cela, concevez le script en tant que : Choisissez une entrée ; multiplier le résultat par lui-même et vérifiez que le résultat est l’entrée d’origine. Ce style vous permet de faire varier les entrées de test sans modifier le corps principal du test.  
   
 #### <a name="linking-tests-to-use-cases"></a>Liaison de tests à des cas d'usage  
  Si vous utilisez [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] pour concevoir et exécuter vos tests, vous pouvez organiser vos tests sous spécification, cas d’usage ou des éléments de travail récit utilisateur. Vous pouvez lier ces éléments de travail à des cas d'usage dans votre modèle. Cela vous permet d'effectuer un suivi rapide des modifications d'impératifs lors des tests et vous aide à suivre la progression de chaque cas d'usage.  
@@ -116,7 +113,7 @@ Assert (countAfter == countBefore = 1);
   
  Une règle invariante de ce genre régit non seulement tous les cas d'usage actuellement définis, mais aussi les autres cas d'usage qui seront définis ultérieurement. Ainsi, il est utile de l'écrire et de la tester séparément de tout cas d'usage.  
   
- Vous pouvez écrire une règle métier invariante sous forme de commentaire dans un diagramme de classes. Pour plus d’informations, consultez [diagrammes de classes UML : indications](../modeling/uml-class-diagrams-guidelines.md).  
+ Vous pouvez écrire une règle métier invariante sous forme de commentaire dans un diagramme de classes. Pour plus d'informations, consultez [Diagrammes de classes UML : Les instructions](../modeling/uml-class-diagrams-guidelines.md).  
   
  Vous pouvez lier des tests à une règle métier en liant le commentaire à un élément de travail Récit utilisateur ou Spécification, que vous pouvez lier à une suite de tests dans [!INCLUDE[TCMlong](../includes/tcmlong-md.md)]. Pour plus d’informations, consultez [attachement de cas de Test aux éléments de modèle](#Attaching).  
   
@@ -130,7 +127,7 @@ Assert (countAfter == countBefore = 1);
  Essayez de vérifier l'état du système après chaque message ou action. Cela peut nécessiter une instrumentation supplémentaire.  
   
 ## <a name="deriving-subsystem-tests-from-models"></a>Dérivation de tests de sous-systèmes à partir de modèles  
- Dans la conception globale d'un grand système, vous pouvez identifier les composants ou les sous-systèmes. Ils représentent des parties qui peuvent être conçues séparément, qui se trouvent sur des ordinateurs différents ou qui sont des modules réutilisables pouvant être recombinés de plusieurs manières. Pour plus d’informations, consultez [diagrammes de composants UML : indications](../modeling/uml-component-diagrams-guidelines.md).  
+ Dans la conception globale d'un grand système, vous pouvez identifier les composants ou les sous-systèmes. Ils représentent des parties qui peuvent être conçues séparément, qui se trouvent sur des ordinateurs différents ou qui sont des modules réutilisables pouvant être recombinés de plusieurs manières. Pour plus d’informations, consultez [diagrammes de composants UML : Les instructions](../modeling/uml-component-diagrams-guidelines.md).  
   
  Vous pouvez appliquer à chaque composant majeur les mêmes principes que ceux utilisés pour l'ensemble du système. Dans un grand projet, chaque composant peut avoir son propre modèle d'impératifs. Dans les projets plus petits, vous pouvez créer un modèle d'architecture ou une conception globale pour montrer les principaux composants et leurs interactions. Pour plus d’informations, consultez [modèle d’architecture de votre application](../modeling/model-your-app-s-architecture.md).  
   
@@ -153,7 +150,7 @@ Assert (countAfter == countBefore = 1);
 ##  <a name="Attaching"></a> Attachement de cas de Test aux éléments de modèle  
  Si votre projet utilise [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], vous pouvez lier des tests aux éléments de votre modèle. Cela vous permet d'identifier rapidement les tests affectés par une modification des impératifs et de suivre dans quelle mesure un impératif a été satisfait.  
   
- Vous pouvez lier des tests à tous les types d'éléments. Voici quelques exemples :  
+ Vous pouvez lier des tests à tous les types d'éléments. Voici quelques exemples :  
   
 -   Lier un cas d'usage aux tests qui l'utilisent.  
   
@@ -182,6 +179,3 @@ Assert (countAfter == countBefore = 1);
  [Modéliser les besoins des utilisateurs](../modeling/model-user-requirements.md)   
  [Modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md)   
  [Analyse et modélisation de l’architecture](../modeling/analyze-and-model-your-architecture.md)
-
-
-

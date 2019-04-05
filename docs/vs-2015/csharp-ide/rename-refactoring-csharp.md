@@ -1,14 +1,9 @@
 ---
 title: Renommer (refactorisation c#) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.csharp.refactoring.rename
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: 268942fc-b142-4dfa-8d90-bedd548c2e4f
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: d88cf6d88f23a3a079d5f9a556c316a204c9ef27
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 40e13682b6ff22a0052adc7db9f9db9f18d36cc9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274961"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951169"
 ---
 # <a name="rename-refactoring-c"></a>Refactorisation de changement de nom (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ ms.locfileid: "49274961"
 |Affichage de classes|Lorsque vous sélectionnez un identificateur dans l’affichage de classes, la refactorisation de changement de nom est disponible dans le menu contextuel et **refactoriser** menu.|  
 |Explorateur d'objets|Lorsque vous sélectionnez un identificateur dans l’Explorateur d’objets, la refactorisation de changement de nom est uniquement disponible à partir de la **refactoriser** menu.|  
 |Grille des propriétés du Concepteur Windows Forms|Dans le **grille des propriétés** du Concepteur Windows Forms, la modification du nom d’un contrôle déclenchera une opération de changement de nom pour ce contrôle. Le **renommer** boîte de dialogue s’affiche pas.|  
-|Explorateur de solutions|Dans **l’Explorateur de solutions**, un **renommer** commande est disponible dans le menu contextuel. Si le fichier source sélectionné contient une classe dont nom de classe est le même que le nom de fichier, vous pouvez utiliser cette commande pour renommer le fichier source et exécuter la refactorisation de changement de nom simultanément.<br /><br /> Par exemple, si vous créez une application Windows par défaut, puis renommez Form1.cs en TestForm.cs, le nom de fichier source Form1.cs devient TestForm.cs et la classe Form1 et toutes les références à cette classe est renommée TestForm. **Remarque :** le **Annuler** commande (CTRL + Z) annuler la refactorisation de changement de nom dans le code et uniquement sera pas les changez le nom du fichier de sauvegarde pour le nom d’origine. <br /><br /> Si le fichier source sélectionné ne contient pas une classe dont le nom est le même que le nom de fichier, le **renommer** commande **l’Explorateur de solutions** renommera uniquement le fichier source et n’exécutera pas de changement de nom la refactorisation.|  
+|Explorateur de solutions|Dans **l’Explorateur de solutions**, un **renommer** commande est disponible dans le menu contextuel. Si le fichier source sélectionné contient une classe dont nom de classe est le même que le nom de fichier, vous pouvez utiliser cette commande pour renommer le fichier source et exécuter la refactorisation de changement de nom simultanément.<br /><br /> Par exemple, si vous créez une application Windows par défaut, puis renommez Form1.cs en TestForm.cs, le nom de fichier source Form1.cs devient TestForm.cs et la classe Form1 et toutes les références à cette classe est renommée TestForm. **Remarque :**  Le **Annuler** commande (CTRL + Z) annuler la refactorisation de changement de nom dans le code et uniquement sera pas les changez le nom du fichier de sauvegarde pour le nom d’origine. <br /><br /> Si le fichier source sélectionné ne contient pas une classe dont le nom est le même que le nom de fichier, le **renommer** commande **l’Explorateur de solutions** renommera uniquement le fichier source et n’exécutera pas de changement de nom la refactorisation.|  
   
 ## <a name="rename-operations"></a>Renommer des opérations  
  Lorsque vous exécutez **renommer**, le moteur de refactorisation exécute une opération de changement de nom spécifique pour chaque symbole de code, comme décrit dans le tableau suivant.  
@@ -53,8 +48,8 @@ ms.locfileid: "49274961"
 |-----------------|----------------------|  
 |Champ|Modifie la déclaration et les utilisations du champ vers le nouveau nom.|  
 |variable locale|Modifie la déclaration et les utilisations de la variable vers le nouveau nom.|  
-|Méthode|Modifie le nom de la méthode et toutes les références à cette méthode pour le nouveau nom. **Remarque :** lorsque vous renommez une méthode d’extension, l’opération de changement de nom se propage à toutes les instances de la méthode qui sont dans la portée, même si la méthode d’extension est utilisée comme une méthode statique ou une méthode d’instance. Pour plus d’informations, consultez la page [Méthodes d’extension](http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|  
-|Espace de noms|Modifie le nom de l’espace de noms pour le nouveau nom dans la déclaration, toutes les `using` instructions et des noms qualifiés complets. **Remarque :** lorsque vous renommez un espace de noms, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] met également à jour le **Namespace par défaut** propriété sur le **Application** page de la **le Concepteur de projets**. Cette propriété ne peut pas être réinitialisée en sélectionnant **Annuler** à partir de la **modifier** menu. Pour réinitialiser le **Namespace par défaut** valeur de propriété, vous devez modifier la propriété dans le **Concepteur de projet**. Pour plus d’informations, consultez [Page Application](../ide/reference/application-page-project-designer-csharp.md).|  
+|Méthode|Modifie le nom de la méthode et toutes les références à cette méthode pour le nouveau nom. **Remarque :**  Lorsque vous renommez une méthode d’extension, l’opération de changement de nom se propage à toutes les instances de la méthode qui sont dans la portée, même si la méthode d’extension est utilisée comme une méthode statique ou une méthode d’instance. Pour plus d’informations, consultez [Méthodes d’extension](http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|  
+|Espace de noms|Modifie le nom de l’espace de noms pour le nouveau nom dans la déclaration, toutes les `using` instructions et des noms qualifiés complets. **Remarque :**  Lorsque vous renommez un espace de noms, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] met également à jour le **Namespace par défaut** propriété sur le **Application** page de la **Concepteur de projet**. Cette propriété ne peut pas être réinitialisée en sélectionnant **Annuler** à partir de la **modifier** menu. Pour réinitialiser le **Namespace par défaut** valeur de propriété, vous devez modifier la propriété dans le **Concepteur de projet**. Pour plus d’informations, consultez [Page Application](../ide/reference/application-page-project-designer-csharp.md).|  
 |Propriété|Modifie la déclaration et les utilisations de la propriété vers le nouveau nom.|  
 |Type|Modifie toutes les déclarations et toutes les utilisations du type vers le nouveau nom, y compris les constructeurs et destructeurs. Pour les types partiels, l’opération de changement de nom se propage à toutes les parties.|  
   
