@@ -1,12 +1,9 @@
 ---
 title: Mettre à niveau les fichiers .mdf | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,14 +20,14 @@ ms.assetid: 14ca6f76-f80e-4926-8020-3fee2d802b75
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: d71b38fe0d4aef412860a9dc65002c9b8d98c79c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dc67a44586d221830825b94dd1c0eb160e307d21
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812632"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948288"
 ---
 # <a name="upgrade-mdf-files"></a>Mettre à jour des fichiers .mdf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,17 +71,17 @@ Cette rubrique décrit les options de mise à niveau de votre fichier de base de
   
 2. Dans le **ajouter une connexion** boîte de dialogue, spécifiez les informations suivantes :  
   
-   -   **Source de données**: `Microsoft SQL Server (SqlClient)`  
+   -   **Source de données** : `Microsoft SQL Server (SqlClient)`  
   
-   -   **Nom du serveur**:  
+   -   **Nom du serveur** :  
   
        -   Pour utiliser la version par défaut : `(localdb)\MSSQLLocalDB`.  Elle permet d’indiquer ProjectV12 ou ProjectV13, selon la version de Visual Studio est installée et lorsque la première instance de base de données locale a été créée. Le **MSSQLLocalDB** nœud **Explorateur d’objets SQL Server** montre de quelle version il pointe vers.  
   
        -   Pour utiliser une version spécifique : `(localdb)\ProjectsV12` ou `(localdb)\ProjectsV13`, où V12 est LocalDB 2014 et V13 est LocalDB 2016.  
   
-   -   **Attacher un fichier de base de données**: le chemin d’accès physique du fichier .mdf principal.  
+   -   **Attacher un fichier de base de données**: Le chemin d’accès physique du fichier .mdf principal.  
   
-   -   **Nom logique**: le nom que vous souhaitez utiliser avec le fichier.  
+   -   **Nom logique**: Le nom que vous souhaitez utiliser avec le fichier.  
   
 3. Sélectionnez le bouton **OK**.  
   
@@ -123,8 +120,3 @@ Cette rubrique décrit les options de mise à niveau de votre fichier de base de
 4. Sélectionnez le bouton **OK**.  
   
    SQL Server Express sera le moteur de base de données par défaut pour vos applications.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Vue d’ensemble des données locales](../data-tools/local-data-overview.md)   
- [Procédure pas à pas : connexion à des données dans un fichier de base de données local (Windows Forms)](../data-tools/walkthrough-connecting-to-data-in-a-local-database-file-windows-forms.md)
-

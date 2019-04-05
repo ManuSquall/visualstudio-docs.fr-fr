@@ -1,27 +1,22 @@
 ---
 title: Atteindre un point d’arrêt | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], hitting breakpoints
 - breakpoints, hitting
 ms.assetid: a77816e3-b15b-46a0-90cd-be7242e4d6c9
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1b2eef9b068a64f62a955cb21feb8ff445ca0fe9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5ae077b8ccb4ce41f94fbc5e11bfff1f16c826c0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51720776"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949597"
 ---
 # <a name="hitting-a-breakpoint"></a>Atteinte d’un point d’arrêt
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,4 +31,3 @@ La section suivante décrit le processus lorsque le moteur de débogage (dé) at
   
 ## <a name="see-also"></a>Voir aussi  
  [Événements d’appel du débogueur](../../extensibility/debugger/calling-debugger-events.md)
-

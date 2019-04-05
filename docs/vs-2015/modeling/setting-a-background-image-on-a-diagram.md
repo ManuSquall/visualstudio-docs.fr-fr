@@ -1,23 +1,20 @@
 ---
 title: Définition d’une Image d’arrière-plan sur un diagramme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: e334a24c-8521-4072-b50f-e59158dde145
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fd9d5ca21dbe1b0444c650a127fc0184dfb640f1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 071a18af0532a55946087f7c47535405d0d3b40e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240550"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949053"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Définition d'une image d'arrière-plan dans un schéma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,6 +109,3 @@ Dans le Kit de développement logiciel (SDK) de visualisation et de modélisatio
  [Personnalisation des champs de texte et Image](../modeling/customizing-text-and-image-fields.md)   
  [Navigation et mise à jour d’un modèle dans le Code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Écriture de code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-
-
-

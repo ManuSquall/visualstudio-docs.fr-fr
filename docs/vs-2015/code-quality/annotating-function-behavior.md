@@ -1,14 +1,9 @@
 ---
 title: Annotation du comportement de la fonction | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - _On_failure_
 - _Return_type_success_
@@ -25,13 +20,13 @@ ms.assetid: c0aa268d-6fa3-4ced-a8c6-f7652b152e61
 caps.latest.revision: 13
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 88213e1cd8112aecac527f7d72d2d74dbf10c559
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 39edea3bfb299a49fde9cad14321caa6b4bf674a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783127"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949022"
 ---
 # <a name="annotating-function-behavior"></a>Annotation du comportement d’une fonction
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,9 +52,9 @@ En plus d’annoter [paramètres de fonction et valeurs de retour](../code-quali
 |Annotation|Description|  
 |----------------|-----------------|  
 |`_Always_(anno_list)`|Équivalente à `anno_list _On_failure_(anno_list)` ; en d'autres termes, les annotations dans `anno_list` s'appliquent, indépendamment de la réussite ou de l'échec de la fonction.|  
-|`_On_failure_(anno_list)`|À utiliser uniquement lorsque l’annotation `_Success_` est également utilisée pour annoter la fonction, explicitement ou implicitement via `_Return_type_success_` sur un typedef. Lorsque l'annotation `_On_failure_` est présente sur un paramètre de fonction ou une valeur de retour, chaque annotation dans `anno_list` (anno) se comporte comme si elle était codée en tant que `_When_(!expr, anno)`, où `expr` est le paramètre de l'annotation requise `_Success_`. Cela signifie que l'application implicite de `_Success_` à toutes les post-conditions n'est pas applicable à `_On_failure_`.|  
+|`_On_failure_(anno_list)`|À utiliser uniquement lorsque l'annotation `_Success_` est également utilisée pour annoter la fonction, explicitement ou implicitement via `_Return_type_success_` sur un typedef. Lorsque l'annotation `_On_failure_` est présente sur un paramètre de fonction ou une valeur de retour, chaque annotation dans `anno_list` (anno) se comporte comme si elle était codée en tant que `_When_(!expr, anno)`, où `expr` est le paramètre de l'annotation requise `_Success_`. Cela signifie que l'application implicite de `_Success_` à toutes les post-conditions n'est pas applicable à `_On_failure_`.|  
 |`_Return_type_success_(expr)`|Peut être appliquée à un typedef. Indique que toutes les fonctions qui retournent ce type et n'ont pas explicitement l'annotation `_Success_` sont annotées comme si elles avaient l'annotation `_Success_(expr)`. L'annotation `_Return_type_success_` ne peut pas être utilisée sur un typedef de fonction ou de pointeur de fonction.|  
-|`_Success_(expr)`|`expr` est une expression qui retourne une valeur rvalue. Lorsque l'annotation `_Success_` est présente dans une déclaration ou une définition de fonction, chaque annotation (`anno`) sur la fonction et dans la condition préalable se comporte comme si elle était codée en tant que `_When_(expr, anno)`. L’annotation `_Success_` peut uniquement être utilisée sur une fonction, et non sur ses paramètres ou son type de retour. Il peut y avoir au plus une annotation `_Success_` sur une fonction, et elle ne peut pas être dans `_When_`, `_At_` ou `_Group_`. Pour plus d’informations, consultez [spécifiant quand et où une Annotation s’applique](../code-quality/specifying-when-and-where-an-annotation-applies.md).|  
+|`_Success_(expr)`|`expr` est une expression qui retourne une valeur rvalue. Lorsque l'annotation `_Success_` est présente dans une déclaration ou une définition de fonction, chaque annotation (`anno`) sur la fonction et dans la condition préalable se comporte comme si elle était codée en tant que `_When_(expr, anno)`. L'annotation `_Success_` peut uniquement être utilisée sur une fonction, et non sur ses paramètres ou son type de retour. Il peut y avoir au plus une annotation `_Success_` sur une fonction, et elle ne peut pas être dans `_When_`, `_At_` ou `_Group_`. Pour plus d’informations, consultez [spécifiant quand et où une Annotation s’applique](../code-quality/specifying-when-and-where-an-annotation-applies.md).|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Utilisation d’Annotations SAL pour réduire les défauts du Code C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
@@ -70,6 +65,3 @@ En plus d’annoter [paramètres de fonction et valeurs de retour](../code-quali
  [Spécifiant le moment où une Annotation est applicable et](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Fonctions intrinsèques](../code-quality/intrinsic-functions.md)   
  [Bonnes pratiques et exemples](../code-quality/best-practices-and-examples-sal.md)
-
-
-

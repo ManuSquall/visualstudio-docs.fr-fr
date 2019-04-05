@@ -1,14 +1,9 @@
 ---
 title: Utilisation de polices et couleurs | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - fonts, controlling in IDE
 - IDE, controlling text color and fonts
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: d1a9b99f-fbdc-45ed-920a-e08c3d931ac9
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b49c5172a75e0abec8084892346a2fb0da877b81
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 42ebc9414e3e5bb10f2468ed7f5f4fb4900e4ec6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729598"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948007"
 ---
 # <a name="using-fonts-and-colors"></a>Utilisation de polices et couleurs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ Le [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] fournit la prise en charge pou
   
  Cette approche nécessite un VSPackage implémenter le <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> interface et des interfaces associées.  
   
- [Guide pratique pour accéder aux polices intégrées et au modèle de couleurs](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
+ [Guide pratique pour Le jeu de couleurs et polices intégrées d’accès](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
  Explique comment définir et enregistrer une catégorie à l’aide de couleurs et polices intégrées et lancer l’utilisation de couleurs et polices fournies par le système.  
   
 ## <a name="reference"></a>Référence  
@@ -80,4 +75,3 @@ Le [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] fournit la prise en charge pou
   
  [Extension d’autres parties de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  
  Explique comment utiliser les services de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour créer des éléments d’interface utilisateur qui correspondent au reste de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
-
