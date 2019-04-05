@@ -1,11 +1,8 @@
 ---
 title: Utiliser des cartes de code pour déboguer vos applications | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio Ultimate, visualizing code
@@ -20,13 +17,13 @@ ms.assetid: 9fd0c9a2-d351-40c8-be88-0749788264bf
 caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: af5f34b307f94f1bae4c913421acbe0a934ed113
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9c0fa386d6f6df813cfbed1d4a618414f2810f86
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743835"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953863"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Utiliser des cartes du code pour déboguer vos applications
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +48,7 @@ Les cartes de code peuvent vous éviter de vous perdre dans les bases de code vo
  ![Carte de code &#45; rechercher du code](../modeling/media/codemapstoryboardpaint1.png "CodeMapStoryboardPaint1")  
   
 ## <a name="start-mapping-the-code"></a>Commencer à mapper le code  
- Commencez maintenant à mapper la méthode `undo` et ses relations. Dans l'éditeur de code, ajoutez la méthode `undo` et les champs référencés à une nouvelle carte de code. Lorsque vous créez une carte, l'indexation du code peut prendre un certain temps. Cela permet aux opérations ultérieures de s'exécuter plus rapidement.  
+ Commencez maintenant à mapper la méthode `undo` et ses relations. Dans l'éditeur de code, ajoutez la méthode `undo` et les champs référencés à une nouvelle carte de code. Lorsque vous créez un mappage, l'indexation du code peut prendre un certain temps. Cela permet aux opérations ultérieures de s'exécuter plus rapidement.  
   
  ![Carte de code &#45; afficher (méthode) et les champs associés](../modeling/media/codemapstoryboardpaint3.png "CodeMapStoryboardPaint3")  
   
@@ -78,7 +75,7 @@ Les cartes de code peuvent vous éviter de vous perdre dans les bases de code vo
  ![Ouvrez une carte de code à partir de l’éditeur de code](../modeling/media/codemapstoryboardpaint6a.PNG "CodeMapStoryboardPaint6A")  
   
 > [!NOTE]
->  Si vous ajoutez des éléments à partir d'un projet partagé par plusieurs applications, comme Windows Phone ou Windows Store, ces éléments apparaissent toujours avec le projet d'application actif sur la carte. Ainsi, si vous changez de contexte vers un autre projet d'application, le contexte sur la carte change également pour tout élément récemment ajouté à partir du projet partagé. Les opérations que vous effectuez avec un élément de la carte s'appliquent uniquement aux éléments qui partagent le même contexte.  
+>  Si vous ajoutez des éléments à partir d'un projet partagé par plusieurs applications, comme Windows Phone ou Windows Store, ces éléments apparaissent toujours avec le projet d'application actif sur la carte. Ainsi, si vous changez de contexte vers un autre projet d'application, le contexte sur la carte change également pour tout élément récemment ajouté à partir du projet partagé. Les opérations que vous effectuez avec un élément de la carte s’appliquent uniquement aux éléments qui partagent le même contexte.  
   
  Modifiez la disposition pour réorganiser le flux des relations et simplifier la lecture de la carte. Vous pouvez également déplacer des éléments sur la carte en les faisant glisser.  
   
@@ -146,6 +143,3 @@ Les cartes de code peuvent vous éviter de vous perdre dans les bases de code vo
 ## <a name="see-also"></a>Voir aussi  
  [Mapper les méthodes sur la pile des appels pendant le débogage](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)   
  [Visualiser du code](../modeling/visualize-code.md)
-
-
-

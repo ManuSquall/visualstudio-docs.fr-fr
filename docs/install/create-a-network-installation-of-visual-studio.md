@@ -13,14 +13,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 076782f8f6e5d654c66e6a39f3ffe0342a74c560
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 63fad9e14bba478d2e0f2a69c42de18f45156482
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954019"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324282"
 ---
-# <a name="create-a-network-installation-of-visual-studio-2017"></a>Créer une installation réseau de Visual Studio 2017
+# <a name="create-a-network-installation-of-visual-studio"></a>Créer une installation réseau de Visual Studio
 
 En règle générale, un administrateur d’entreprise crée un point d’installation réseau à déployer sur les stations de travail clientes. Nous avons conçu Visual Studio 2017 pour que vous puissiez mettre en cache dans un dossier unique les fichiers de l’installation initiale avec toutes les mises à jour de produit. (Ce processus est également appelé _création d’une disposition_.) 
 
@@ -48,7 +50,7 @@ Les autres programmes d’amorçage pris en charge incluent [vs_buildtools.exe](
 Vous devez avoir une connexion Internet pour effectuer cette étape. Pour créer une installation hors connexion avec toutes les langues et toutes les fonctionnalités, utilisez une des commandes des exemples suivants.
 
    > [!IMPORTANT]
-   > Une disposition Visual Studio 2017 complète nécessite au moins 35 Go d’espace disque et peut être assez longue à télécharger.  Consultez la section [Personnaliser la disposition du réseau](#customizing-the-network-layout) pour savoir plus en détails comment créer une disposition comprenant uniquement les composants que vous souhaitez installer.
+   > Une disposition Visual Studio 2017 complète nécessite au moins 35 Go d’espace disque et peut être assez longue à télécharger.  Consultez la section [Personnaliser la disposition réseau](#customize-the-network-layout) pour plus de détails sur la création d’une disposition comprenant uniquement les composants que vous souhaitez installer.
    >
    > [!TIP]
    > Vérifiez que vous exécutez la commande à partir de votre répertoire de téléchargement. En règle générale, il s’agit du répertoire `C:\Users\<username>\Downloads` sur un ordinateur exécutant Windows 10.
@@ -127,7 +129,7 @@ Voici quelques exemples montrant comment créer une disposition partielle person
     vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional 
     ```
 
-### <a name="new-in-153"></a>Nouveautés de la version 15.3
+### <a name="new-in-version-153"></a>Nouveautés dans la version 15.3
 
 Lorsque vous exécutez une commande de disposition, les options que vous spécifiez sont enregistrées (par exemple, les langues et les charges de travail). Les commandes de disposition suivantes englobent toutes les options précédentes.  Voici un exemple de disposition avec une charge de travail pour l’anglais uniquement :
 
@@ -209,7 +211,7 @@ D’autres options de support sont également à votre disposition. Pour en obte
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Mettre à jour une installation réseau de Visual Studio 2017](update-a-network-installation-of-visual-studio.md)
+* [Mettre à jour une installation réseau de Visual Studio](update-a-network-installation-of-visual-studio.md)
 * [Contrôler les mises à jour applicables aux déploiements de Visual Studio à partir du réseau](controlling-updates-to-visual-studio-deployments.md)
 * [Guide de l’administrateur Visual Studio](visual-studio-administrator-guide.md)
 * [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

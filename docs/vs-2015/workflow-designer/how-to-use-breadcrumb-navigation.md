@@ -1,25 +1,22 @@
 ---
-title: 'Comment : utiliser l’arborescence de Navigation | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Utilisez l’arborescence de Navigation | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 4a688056-37dc-406a-9071-be2141e192fe
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 19f9add69f8746962e6ed0ef9e4beea0f7ba37ec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 8327565d9705c8522442acc77899fe171a5bf12d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259028"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952038"
 ---
-# <a name="how-to-use-breadcrumb-navigation"></a>Procédure : utiliser l'exploration à l'aide de la barre de navigation
+# <a name="how-to-use-breadcrumb-navigation"></a>Procédure : Utiliser l’exploration à l’aide de la barre de navigation
 Il existe trois méthodes principales pour modifier l'ensemble des activités affichées dans [!INCLUDE[wfd1](../includes/wfd1-md.md)] :  
   
 1.  Double-cliquez pour descendre dans la hiérarchie et accéder à une activité enfant.  
@@ -30,18 +27,18 @@ Il existe trois méthodes principales pour modifier l'ensemble des activités af
   
 ### <a name="using-breadcrumb-navigation"></a>Utilisation de l'exploration à l'aide de la barre de navigation  
   
-1.  Double-cliquez sur une activité de [!INCLUDE[wfd2](../includes/wfd2-md.md)] pour qu'elle remplace l'activité racine. L'activité sur laquelle vous avez cliqué est alors entièrement développée à la racine et ses ancêtres sont affichés dans la barre de navigation. Cette procédure est parfois appelée exploration avant ou arrière d'une activité.  
+1.  Double-cliquez sur une activité de [!INCLUDE[wfd2](../includes/wfd2-md.md)] pour qu'elle remplace l'activité racine. L’activité sur laquelle vous avez cliqué est alors entièrement développée à la racine et ses ancêtres sont affichés dans la barre de navigation. Cette procédure est parfois appelée exploration avant ou arrière d'une activité.  
   
 2.  Pour accéder à un ancêtre de l'activité racine actuelle, cliquez sur l'activité dans la barre de navigation.  
   
 ### <a name="expanding-or-collapsing-an-activity-in-place"></a>Développement ou réduction d'une activité sur place  
   
-1.  Cliquer sur les chevrons sur une activité se développe ou réduit l'activité en place.  
+1.  Cliquer sur les chevrons sur une activité se développe ou réduit l’activité en place.  
   
 2.  Lorsque l'état de développement est modifié en cliquant sur le bouton, le nouvel état de développement est enregistré en XAML.  
   
     > [!WARNING]
-    >  Toutes les activités ne peuvent pas être développées sur place. Il existe deux cas pour lesquels il est impossible de développer une activité sur place : soit le parent de l'activité n'autorise pas ses enfants à être développés sur place, (par exemple, les activités d'un organigramme ne peuvent pas être développées sur place), soit le concepteur d'activités lui-même ne peut pas être développé sur place. Bien que ce ne soit pas le cas des concepteurs d'activités inclus dans [!INCLUDE[wfd2](../includes/wfd2-md.md)], certaines activités personnalisées peuvent présenter ce comportement.  
+    >  Toutes les activités ne peuvent pas être développées sur place. Il existe deux cas pour lesquels il est impossible de développer une activité sur place : soit le parent de l’activité n’autorise pas ses enfants à être développés sur place, (par exemple, les activités d’un organigramme ne peuvent pas être développées sur place), soit le concepteur d’activités lui-même ne peut pas être développé sur place. Bien que ce ne soit pas le cas des concepteurs d'activités inclus dans [!INCLUDE[wfd2](../includes/wfd2-md.md)], certaines activités personnalisées peuvent présenter ce comportement.  
   
 ### <a name="expanding-all-or-collapsing-all-activities"></a>Développement ou réduction de toutes les activités  
   

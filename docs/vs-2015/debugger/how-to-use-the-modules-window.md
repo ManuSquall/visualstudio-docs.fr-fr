@@ -1,14 +1,9 @@
 ---
-title: 'Comment : utiliser la fenêtre Modules | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Utiliser la fenêtre Modules | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.modules
 dev_langs:
@@ -31,19 +26,19 @@ ms.assetid: d840fdca-b035-4452-b652-72580c831896
 caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fea513b7593e260b5f5fb71e40ced98a1f8cc279
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 105325341d8f93f9531c2c85deb8ef21266e872c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764403"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949091"
 ---
-# <a name="how-to-use-the-modules-window"></a>Comment : utiliser la fenêtre Modules
+# <a name="how-to-use-the-modules-window"></a>Procédure : Utiliser la fenêtre Modules
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 REMARQUE]
->  Cette fonctionnalité n’est pas disponible pour le débogage de script ou SQL.  
+>  Cette fonctionnalité n'est pas disponible pour le débogage de script ou SQL.  
   
  Le **Modules** fenêtre répertorie les fichiers DLL et EXE utilisés par votre programme et affiche les informations pertinentes pour chacun.  
   
@@ -51,7 +46,7 @@ REMARQUE]
   
 -   Sur le **déboguer** menu, choisissez **Windows**, puis cliquez sur **Modules**.  
   
-     Par défaut, le **Modules** fenêtre trie les modules par ordre de chargement. Cependant, vous pouvez choisir d'effectuer le tri en fonction d'une autre colonne.  
+     Par défaut, la fenêtre **Modules** trie les modules dans l’ordre de chargement. Cependant, vous pouvez choisir d'effectuer le tri en fonction d'une autre colonne.  
   
 ### <a name="to-sort-by-any-column"></a>Pour trier selon une colonne  
   
@@ -70,7 +65,7 @@ REMARQUE]
   
 #### <a name="to-change-symbol-load-settings"></a>Pour modifier les paramètres de chargement de symboles  
   
-1.  Dans le **Modules** fenêtre, avec le bouton droit n’importe quel module.  
+1.  Dans la fenêtre **Modules**, cliquez avec le bouton droit sur un module.  
   
 2.  Cliquez sur **paramètres des symboles**.  
   
@@ -78,16 +73,11 @@ REMARQUE]
   
 #### <a name="to-change-symbol-load-behavior-for-a-specific-module"></a>Pour modifier le chargement des symboles pour un module spécifique  
   
-1.  Dans le **Modules** fenêtre, cliquez sur le module.  
+1.  Dans la fenêtre **Modules**, cliquez avec le bouton droit sur le module.  
   
 2.  Pointez sur **paramètres de chargement des symboles automatique** puis cliquez sur **toujours charger manuellement** ou **par défaut**. Les modifications seront appliquées lorsque vous redémarrerez la session de débogage.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Interruption de l’exécution](http://msdn.microsoft.com/en-us/30fc4643-f337-4651-b1ff-f2de2c098d40)   
+ [Interruption de l’exécution](http://msdn.microsoft.com/30fc4643-f337-4651-b1ff-f2de2c098d40)   
  [Affichage des données dans le débogueur](../debugger/viewing-data-in-the-debugger.md)   
  [Spécifier les fichiers de symbole (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
-
-
-
-
-

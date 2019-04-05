@@ -1,6 +1,6 @@
 ---
 title: "CA2217 : Ne marquez pas les enums avec l'attribut FlagsAttribute"
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - DoNotMarkEnumsWithFlags
@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce4036ef3c0c9ea177ea4225ed10ca7cfe128697
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 94666390cc49f365b9f036b076bcd97d68d4edb9
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926812"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872286"
 ---
 # <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217 : Ne marquez pas les enums avec l'attribut FlagsAttribute
 
@@ -36,7 +36,9 @@ ms.locfileid: "55926812"
 
 ## <a name="cause"></a>Cause
 
-Une énumération extérieurement visible est marquée avec <xref:System.FlagsAttribute>et possède une ou plusieurs valeurs qui ne sont pas des puissances de deux ou une combinaison de l’autre défini des valeurs dans l’énumération.
+Une énumération est marquée avec <xref:System.FlagsAttribute> et possède une ou plusieurs valeurs qui ne sont pas des puissances de deux ou une combinaison de l’autre défini des valeurs dans l’énumération.
+
+Par défaut, cette règle examine uniquement les énumérations extérieurement visibles, mais il s’agit de [configurable](#configurability).
 
 ## <a name="rule-description"></a>Description de la règle
 
@@ -50,17 +52,25 @@ Pour corriger une violation de cette règle, supprimez <xref:System.FlagsAttribu
 
 Ne supprimez aucun avertissement de cette règle.
 
-## <a name="example-that-should-not-have-the-attribute"></a>Exemple qui ne doit pas avoir l’attribut
+## <a name="configurability"></a>Possibilités de configuration
 
-L’exemple suivant montre une énumération, `Color`, qui contient la valeur 3. 3 n’est pas une puissance de deux, ou une combinaison d’une des valeurs définies. Le `Color` énumération ne doit pas être marquée avec <xref:System.FlagsAttribute>.
+Si vous exécutez cette règle à partir de [analyseurs FxCop](install-fxcop-analyzers.md) (et non par le biais d’analyse statique du code), vous pouvez configurer les parties de votre codebase pour exécuter cette règle sur, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement par rapport à la surface d’API non publics, ajoutez la paire clé-valeur suivante dans un fichier .editorconfig dans votre projet :
+
+```
+dotnet_code_quality.ca2217.api_surface = private, internal
+```
+
+Vous pouvez configurer cette option pour simplement cette règle, pour toutes les règles ou pour toutes les règles de cette catégorie (utilisation). Pour plus d’informations, consultez [analyseurs FxCop configurer](configure-fxcop-analyzers.md).
+
+## <a name="examples"></a>Exemples
+
+Le code suivant montre une énumération, `Color`, qui contient la valeur 3. 3 n’est pas une puissance de deux, ou une combinaison d’une des valeurs définies. Le `Color` énumération ne doit pas être marquée avec <xref:System.FlagsAttribute>.
 
 [!code-cpp[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/CPP/ca2217-do-not-mark-enums-with-flagsattribute_1.cpp)]
 [!code-csharp[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/CSharp/ca2217-do-not-mark-enums-with-flagsattribute_1.cs)]
 [!code-vb[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/VisualBasic/ca2217-do-not-mark-enums-with-flagsattribute_1.vb)]
 
-## <a name="example-that-should-have-the-attribute"></a>Exemple qui doit avoir l’attribut
-
-L’exemple suivant montre une énumération, `Days`, qui répond aux exigences du marquage par <xref:System.FlagsAttribute>.
+Le code suivant montre une énumération, `Days`, qui répond aux exigences du marquage par <xref:System.FlagsAttribute>:
 
 [!code-cpp[FxCop.Usage.EnumNoFlags2#1](../code-quality/codesnippet/CPP/ca2217-do-not-mark-enums-with-flagsattribute_2.cpp)]
 [!code-csharp[FxCop.Usage.EnumNoFlags2#1](../code-quality/codesnippet/CSharp/ca2217-do-not-mark-enums-with-flagsattribute_2.cs)]

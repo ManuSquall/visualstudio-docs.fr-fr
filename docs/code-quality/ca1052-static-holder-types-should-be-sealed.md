@@ -1,6 +1,6 @@
 ---
 title: 'CA1052 : Les types de conteneurs statiques doivent être sealed'
-ms.date: 11/09/2018
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - StaticHolderTypesShouldBeSealed
@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 36bd459f2a9f7300328aadd3509530f4802e71cd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 46a8c9a4e22c7a54a4b2b68f95bb2b81f3a0888e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922448"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870384"
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052 : Les types de conteneurs statiques doivent être sealed
 
@@ -36,7 +36,9 @@ ms.locfileid: "55922448"
 
 ## <a name="cause"></a>Cause
 
-Un public ou protégé, non abstraite type contient uniquement des membres statiques et n’est pas déclaré avec le [sealed](/dotnet/csharp/language-reference/keywords/sealed) ([NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)) modificateur.
+Un type non abstrait contient uniquement des membres statiques et n’est pas déclaré avec le [sealed](/dotnet/csharp/language-reference/keywords/sealed) ([NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)) modificateur.
+
+Par défaut, cette règle examine uniquement les types visibles de l’extérieur, mais il s’agit de [configurable](#configurability).
 
 ## <a name="rule-description"></a>Description de la règle
 
@@ -50,9 +52,19 @@ Pour corriger une violation de cette règle, marquez le type comme `sealed` ou `
 
 Supprimez un avertissement de cette règle uniquement si le type est conçu pour être hérité. L’absence de la `sealed` ou `NotInheritable` modificateur suggère que le type est utile comme type de base.
 
+## <a name="configurability"></a>Possibilités de configuration
+
+Si vous exécutez cette règle à partir de [analyseurs FxCop](install-fxcop-analyzers.md) (et non par le biais d’analyse statique du code), vous pouvez configurer les parties de votre codebase pour exécuter cette règle sur, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement par rapport à la surface d’API non publics, ajoutez la paire clé-valeur suivante dans un fichier .editorconfig dans votre projet :
+
+```
+dotnet_code_quality.ca1052.api_surface = private, internal
+```
+
+Vous pouvez configurer cette option pour simplement cette règle, pour toutes les règles ou pour toutes les règles de cette catégorie (conception). Pour plus d’informations, consultez [analyseurs FxCop configurer](configure-fxcop-analyzers.md).
+
 ## <a name="example-of-a-violation"></a>Exemple de violation
 
-L’exemple suivant montre un type qui viole la règle.
+L’exemple suivant montre un type qui viole la règle :
 
 [!code-csharp[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_1.cs)]
 [!code-vb[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/VisualBasic/ca1052-static-holder-types-should-be-sealed_1.vb)]
@@ -60,10 +72,10 @@ L’exemple suivant montre un type qui viole la règle.
 
 ## <a name="fix-with-the-static-modifier"></a>Résoudre avec le modificateur static
 
-L’exemple suivant montre comment la corriger une violation de cette règle en marquant le type avec le `static` modificateur dans C#.
+L’exemple suivant montre comment la corriger une violation de cette règle en marquant le type avec le `static` modificateur dans C#:
 
 [!code-csharp[FxCop.Design.StaticMembersFixed#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_2.cs)]
 
 ## <a name="related-rules"></a>Règles associées
 
-[CA1053 : Types de conteneurs statiques ne doivent pas avoir de constructeurs](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)
+- [CA1053 : Types de conteneurs statiques ne doivent pas avoir de constructeurs](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)

@@ -1,27 +1,22 @@
 ---
 title: 'Procédure pas à pas : Déboguer une feuille de Style XSLT | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 3db9fa5a-f619-4cb6-86e7-64b364e58e5d
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 10dad7382a30800675c257a4e2c8219d20e5b18b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1f211e2f13f710b66e33691dbc318349eddf15ff
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887690"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938267"
 ---
-# <a name="walkthrough-debug-an-xslt-style-sheet"></a>Procédure pas à pas : déboguer une feuille de style XSLT
+# <a name="walkthrough-debug-an-xslt-style-sheet"></a>Procédure pas à pas : débogage d'une feuille de style XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les étapes de cette procédure pas à pas montrent comment utiliser le débogueur XSLT. Elles comprennent l'affichage des variables, la définition de points d'arrêt et le parcours pas à pas du code. La feuille de style recherche tous les livres coûtant moins que le prix moyen du livre.  
@@ -32,7 +27,7 @@ Les étapes de cette procédure pas à pas montrent comment utiliser le débogue
   
 2.  Copiez les deux fichiers exemples vers votre ordinateur local.  
   
-## <a name="start-debugging"></a>Lancement du débogage  
+## <a name="start-debugging"></a>Démarrer le débogage  
   
 #### <a name="to-start-debugging"></a>Pour démarrer le débogage  
   
@@ -161,4 +156,3 @@ Les étapes de cette procédure pas à pas montrent comment utiliser le débogue
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage XSLT](../xml-tools/debugging-xslt.md)
-

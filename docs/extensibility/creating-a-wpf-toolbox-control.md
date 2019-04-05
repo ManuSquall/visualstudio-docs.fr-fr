@@ -1,6 +1,6 @@
 ---
 title: Création d’un contrôle de boîte à outils WPF | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - toolbox control
@@ -12,23 +12,24 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5495d5aaa3591a5d090b9c0324fb75d2f17d9a4a
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 811c87f73d1122b3e97ffdef9b4d3f6c044ce941
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316767"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194825"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>Créer un contrôle de boîte à outils WPF
-Le modèle de contrôle de boîte à outils WPF (Windows Presentation Framework) vous permet de créer des contrôles WPF qui sont automatiquement ajoutés à la **boîte à outils** lorsque l’extension est installée. Cette rubrique montre comment utiliser le modèle pour créer un **boîte à outils** contrôle que vous pouvez distribuer à d’autres utilisateurs.
+
+Le modèle de contrôle de boîte à outils WPF (Windows Presentation Framework) vous permet de créer des contrôles WPF qui sont automatiquement ajoutés à la **boîte à outils** lorsque l’extension est installée. Cette procédure pas à pas montre comment utiliser le modèle pour créer un **boîte à outils** contrôle que vous pouvez distribuer à d’autres utilisateurs.
 
 À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS par la suite. Pour plus d’informations, consultez [installer le SDK Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
-## <a name="create-a-wpf-toolbox-control"></a>Créer un contrôle de boîte à outils WPF
+## <a name="create-the-toolbox-control"></a>Créer le contrôle de boîte à outils
 
 ### <a name="create-an-extension-with-a-wpf-toolbox-control"></a>Créer une extension avec un contrôle de boîte à outils WPF
 
-1. Créez un projet VSIX nommé `MyToolboxControl`. Vous pouvez trouver le modèle de projet VSIX dans le **nouveau projet** boîte de dialogue sous **Visual C#** > **extensibilité**.
+1. Créez un projet VSIX nommé `MyToolboxControl`. Vous pouvez trouver le modèle de projet VSIX dans le **nouveau projet** boîte de dialogue en recherchant « vsix ».
 
 2. Quand le projet s’ouvre, ajoutez un **contrôle de boîte à outils WPF** modèle d’élément nommé `MyToolboxControl`. Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **ajouter** > **un nouvel élément**. Dans le **ajouter un nouvel élément** boîte de dialogue, accédez à **Visual C#** > **extensibilité** et sélectionnez **contrôle de boîte à outils WPF**. Dans le **nom** en bas de la fenêtre, modifiez le nom de fichier de commande pour *MyToolboxControl.cs*.
 
@@ -53,6 +54,7 @@ Le modèle de contrôle de boîte à outils WPF (Windows Presentation Framework)
     ```
 
 ## <a name="renaming-the-control"></a>Renommer le contrôle
+
  Par défaut, votre contrôle apparaît dans le **boîte à outils** comme **MyToolboxControl** dans un groupe nommé **MyToolboxControl.MyToolboxControl**. Vous pouvez modifier ces noms dans le *MyToolboxControl.xaml.cs* fichier.
 
 1. Ouvrez *MyToolboxControl.xaml.cs* en mode code.
@@ -74,7 +76,8 @@ Le modèle de contrôle de boîte à outils WPF (Windows Presentation Framework)
     }
     ```
 
-## <a name="build-test-and-deployment"></a>Génération, de Test et de déploiement
+## <a name="build-test-and-deployment"></a>Génération, de test et de déploiement
+
  Lorsque vous déboguez le projet, vous devez rechercher le contrôle est installé dans le **boîte à outils** de l’instance expérimentale de Visual Studio.
 
 ### <a name="to-build-and-test-the-control"></a>Pour générer et tester le contrôle
@@ -97,4 +100,4 @@ Le modèle de contrôle de boîte à outils WPF (Windows Presentation Framework)
 
 3. Télécharger le *.vsix* fichier à un réseau ou à un site Web.
 
-    Si vous chargez le fichier à la [galerie Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) site Web, les autres utilisateurs peuvent utiliser **outils** > **Extensions et mises à jour** dans Visual Studio pour rechercher le contrôle en ligne et l’installer.
+    Si vous chargez le fichier à la [Visual Studio Marketplace](https://marketplace.visualstudio.com/) site Web, les autres utilisateurs peuvent utiliser **outils** > **Extensions et mises à jour** dans Visual Studio pour rechercher le contrôler en ligne et l’installer.

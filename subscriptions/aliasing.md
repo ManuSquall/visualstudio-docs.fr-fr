@@ -7,12 +7,12 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 description: La connexion peut échouer si des alias ou des noms conviviaux sont utilisés.
 searchscope: VS Subscription
-ms.openlocfilehash: 2e552f2f7200235dafe0edf40e13dbc299f0d129
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f0b18aca4c6188c23998c8a87f86359895198b95
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841625"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195149"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>La connexion à Abonnements Visual Studio peut échouer lors de l’utilisation d’alias
 
@@ -28,7 +28,7 @@ Une entreprise peut par exemple posséder un service en ligne Microsoft pour sa 
 
 En tant qu’administrateur, vous avez deux options pour garantir à vos abonnés la réussite de leur expérience de connexion sur [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
 - La première option (recommandée) consiste à utiliser le compte d’annuaire en tant qu’adresse attribuée dans le Centre de gestion des licences en volume (VLSC). Pour plus d’informations, consultez la section [Attribution d’un compte d’annuaire à des abonnés](#assigning-subscribers-to-a-directory-account) de cet article.
-- La deuxième option (moins sécurisée) consiste à permettre à vos abonnés d’associer leur adresse e-mail « professionnelle ou scolaire » à un compte « personnel » (également appelé compte Microsoft ou MSA). Pour plus d’informations, consultez la section [Définition d’un compte professionnel ou scolaire en tant que compte personnel](#defining-a-work-or-school-account-as-a-personal-account ) de cet article.
+- La deuxième option (moins sécurisée) consiste à permettre à vos abonnés d’associer leur adresse e-mail « professionnelle ou scolaire » à un compte « personnel » (également appelé compte Microsoft ou MSA). Pour plus d’informations, consultez la section [Définition d’un compte professionnel ou scolaire en tant que compte personnel](#defining-a-work-or-school-account-as-a-personal-account) de cet article.
 
 > [!NOTE]
 > Dès que votre entreprise aura migré vers le nouveau [portail de gestion](https://manage.visualstudio.com) des abonnements Visual Studio, vous pourrez bénéficier de la nouvelle expérience d’administration qui permet de fournir à la fois des adresses e-mail et des adresses d’annuaire en tant qu’éléments de profil des abonnés. Découvrez-en plus sur [la migration](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details).

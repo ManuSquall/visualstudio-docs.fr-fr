@@ -1,7 +1,7 @@
 ---
 title: Sélectionner un environnement et un interpréteur Python pour un projet
 description: Vous pouvez sélectionner un environnement Python, y compris les environnements Anaconda et virtuels, à appliquer à un projet spécifique.
-ms.date: 02/11/2019
+ms.date: 03/18/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b505a350cdb66cafb975585cb7ed0209104dabac
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1bf1937c92f5da234ab72934c5acd52bc9cd0a6b
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721803"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194961"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>Guide pratique pour sélectionner l’environnement Python d’un projet
 
@@ -23,15 +23,16 @@ L’ensemble du code d’un projet Python s’exécute dans le contexte d’un e
 
 Tous les nouveaux projets Python dans Visual Studio sont initialement configurés pour utiliser l’environnement global par défaut, qui s’affiche sous le nœud **Environnements Python** dans l’**Explorateur de solutions** :
 
-![Environnement Python global par défaut indiqué dans l’Explorateur de solutions](media/environments-project.png)
+![Environnement Python global par défaut indiqué dans l’Explorateur de solutions](media/environments/environments-project.png)
 
+::: moniker range="vs-2017"
 Pour changer l’environnement d’un projet, cliquez avec le bouton droit sur le nœud **Environnements Python**, puis sélectionnez **Ajouter/Supprimer des environnements Python**. Dans la liste affichée, qui inclut les environnements de type global, virtuel et conda, sélectionnez tous ceux que vous souhaitez voir apparaître sous le nœud **Environnements Python** :
 
-![Boîte de dialogue Ajouter/supprimer des environnements Python](media/environments-add-remove.png)
+![Boîte de dialogue Ajouter/supprimer des environnements Python](media/environments/environments-add-remove.png)
 
 Une fois que vous avez sélectionné **OK**, tous les environnements sélectionnés apparaissent sous le nœud **Environnements Python**. L’environnement actuellement activé apparaît en gras :
 
-![Plusieurs environnements Python qui s’affichent dans l’Explorateur de solutions](media/environments-project-multiple.png)
+![Plusieurs environnements Python qui s’affichent dans l’Explorateur de solutions](media/environments/environments-project-multiple.png)
 
 Pour activer rapidement un autre environnement, cliquez dessus avec le bouton droit et sélectionnez **Activer l’environnement**. Votre choix sera enregistré avec le projet, et cet environnement sera activé chaque fois que vous ouvrirez le projet. Si vous désactivez toutes les options de la boîte de dialogue **Ajouter/supprimer des environnements Python**, Visual Studio active l’environnement global par défaut.
 
@@ -42,6 +43,19 @@ Le menu contextuel sur le nœud **Environnements Python** propose également des
 | **Ajouter un environnement virtuel** | Commence le processus de création d’un environnement virtuel dans le projet. Voir [Créer un environnement virtuel](#create-a-virtual-environment). |
 | **Ajouter un environnement virtuel existant** | Vous invite à sélectionner un dossier contenant un environnement virtuel et l’ajoute à la liste sous **Environnements Python**, mais ne l’active pas. Consultez [Activer un environnement virtuel existant](#activate-an-existing-virtual-environment). |
 | **Créer un environnement Conda** | Bascule vers la **fenêtre** *Environnements Python*, dans laquelle vous pouvez entrer un nom pour l’environnement et spécifier son interpréteur de base. Consultez [Environnements Conda](managing-python-environments-in-visual-studio.md#conda-environments). |
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+Pour modifier l’environnement pour un projet, cliquez avec le bouton droit sur le nœud **Environnements Python** et sélectionnez **Ajouter un environnement**, ou sélectionnez **Ajouter un environnement** dans la liste déroulante d’environnements dans la barre d’outils Python.
+
+Dans la boîte de dialogue **Ajouter un environnement**, sélectionnez l’onglet **Environnement existant**, puis sélectionnez un nouvel environnement dans la liste déroulante **Environnement** :
+
+![Sélection d’un environnement de projet dans la boîte de dialogue Ajouter des environnements](media/environments/environments-project-2019.png)
+
+Si vous déjà ajouté un environnement autre que l’environnement global par défaut à un projet, vous devrez peut-être activer un environnement qui vient d’être ajouté. Cliquez avec le bouton droit sur cet environnement sous le nœud **Environnements Python** et sélectionnez **Activer l’environnement**. Pour supprimer un environnement du projet, sélectionnez **Supprimer**.
+
+![Activation et suppression d’un environnement de projet](media/environments/environments-project-add-remove-2019.png)
+::: moniker-end
 
 ## <a name="use-virtual-environments"></a>Utiliser des environnements virtuels
 
@@ -59,17 +73,18 @@ Dans Visual Studio, un environnement virtuel peut, comme n’importe quel autre 
 
 Une fois qu’un environnement virtuel est ajouté à votre projet, il apparaît dans la fenêtre **Environnements Python**. Vous pouvez ensuite l’activer, comme tout autre environnement, et vous pouvez gérer ses packages.
 
+::: moniker range="vs-2017"
 ### <a name="create-a-virtual-environment"></a>Créer un environnement virtuel
 
-Vous pouvez créer un nouvel environnement virtuel directement sur Visual Studio de la façon suivante :
+Vous pouvez créer un nouvel environnement virtuel directement dans Visual Studio de la façon suivante :
 
 1. Cliquez avec le bouton droit sur **Environnements Python** dans l’**Explorateur de solutions**, puis sélectionnez **Ajouter un environnement virtuel**, ce qui entraîne l’affichage de la boîte de dialogue suivante :
 
-    ![Création d’un environnement virtuel](media/environments-add-virtual-1.png)
+    ![Création d’un environnement virtuel](media/environments/environments-add-virtual-1.png)
 
 1. Dans le champ **Emplacement de l’environnement virtuel**, spécifiez un chemin d’accès pour l’environnement virtuel. Si vous n’indiquez qu’un nom, l’environnement virtuel sera créé dans le projet actuel, dans un sous-dossier portant ce nom.
 
-1. Sélectionnez un environnement comme interpréteur de base et cliquez sur **Créer**. Visual Studio affiche une barre de progression pendant qu’il configure l’environnement et télécharge les packages nécessaires. À ce stade, l’environnement virtuel apparaît dans la fenêtre **Environnements Python** du projet auquel il appartient.
+1. Sélectionnez un environnement comme interpréteur de base et cliquez sur **Créer**. Visual Studio affiche une barre de progression pendant qu’il configure l’environnement et télécharge les packages nécessaires. Lorsque l’opération est terminée, l’environnement virtuel apparaît dans la fenêtre **Environnements Python** du projet auquel il appartient.
 
 1. L’environnement virtuel n’est pas activé par défaut. Pour l’activer pour le projet, cliquez dessus avec le bouton droit et sélectionnez **Activer l’environnement**.
 
@@ -78,7 +93,7 @@ Vous pouvez créer un nouvel environnement virtuel directement sur Visual Studio
 >
 > Si un fichier *requirements.txt* existe au moment de l’ajout d’un environnement virtuel, la boîte de dialogue **Ajouter un environnement virtuel** affiche une option qui permet d’installer les packages automatiquement, et donc de recréer un environnement sur un autre ordinateur en toute simplicité :
 >
-> ![Créer un environnement virtuel avec requirements.txt](media/environments-requirements-txt.png)
+> ![Créer un environnement virtuel avec requirements.txt](media/environments/environments-requirements-txt.png)
 >
 > Dans les deux cas, le résultat est le même qu’avec la commande **Ajouter un environnement virtuel existant**.
 
@@ -91,6 +106,40 @@ Si vous avez déjà créé un environnement virtuel ailleurs, vous pouvez l’ac
 1. Dans la boîte de dialogue **Parcourir** qui s’affiche, accédez au dossier contenant l’environnement virtuel, sélectionnez-le, puis cliquez sur **OK**. Si Visual Studio détecte un fichier *requirements.txt* dans cet environnement, il vous demande si vous souhaitez installer ces packages.
 
 1. Après quelques instants, l’environnement virtuel apparaît sous le nœud **Environnements Python** dans l’**Explorateur de solutions**. Il n’est pas activé par défaut : cliquez dessus avec le bouton droit et sélectionnez **Activer l’environnement**.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+### <a name="create-a-virtual-environment"></a>Créer un environnement virtuel
+
+Vous pouvez créer un nouvel environnement virtuel directement dans Visual Studio de la façon suivante :
+
+1. Cliquez avec le bouton droit sur **Environnements Python** dans l’**Explorateur de solutions** et sélectionnez **Ajouter un environnement**, ou sélectionnez **Ajouter un environnement** dans la liste déroulante d’environnements dans la barre d’outils Python. Dans la boîte de dialogue **Ajouter un environnement** qui s’affiche, sélectionnez l’onglet **Environnement virtuel** :
+
+    ![Onglet Environnement virtuel de la boîte de dialogue Ajouter un environnement](media/environments/environments-add-virtual-1-2019.png)
+
+1. Spécifiez un nom pour l’environnement virtuel, sélectionnez un interpréteur de base et vérifiez son emplacement. Sous **Installer les packages à partir d’un fichier**, fournissez le chemin d’accès à un fichier *requirements.txt* si vous le souhaitez.
+
+1. Passez en revue les autres options de la boîte de dialogue :
+
+    | Option | Description |
+    | --- | --- |
+    | Définir en tant qu’environnement actuel | Active le nouvel environnement dans le projet sélectionné lorsque l’environnement est créé. |
+    | Définir en tant qu’environnement par défaut pour les nouveaux projets | Définit et active automatiquement l’environnement virtuel dans tous les nouveaux projets créés dans Visual Studio. Lorsque vous utilisez cette option, l’environnement virtuel doit être placé dans un emplacement en dehors d’un projet spécifique.  |
+    | Afficher dans la fenêtre des environnements Python | Spécifie l’ouverture ou non de la fenêtre **Environnements Python** après la création de l’environnement. |
+    | Rendre cet environnement disponible globalement | Spécifie si l’environnement virtuel joue également un environnement global. Lorsque vous utilisez cette option, l’environnement virtuel doit être placé dans un emplacement en dehors d’un projet spécifique. |
+
+1. Sélectionnez **Créer** pour finaliser l’environnement virtuel. Visual Studio affiche une barre de progression pendant qu’il configure l’environnement et télécharge les packages nécessaires. Lorsque l’opération est terminée, l’environnement virtuel est activé et apparaît sous le nœud **Environnements Python** dans l’**Explorateur de solutions** et dans la fenêtre **Environnements Python** du projet auquel il appartient.
+
+### <a name="activate-an-existing-virtual-environment"></a>Activer un environnement virtuel existant
+
+Si vous avez déjà créé un environnement virtuel ailleurs, vous pouvez l’activer pour un projet de la façon suivante :
+
+1. Cliquez avec le bouton droit sur **Environnements Python** dans l’**Explorateur de solutions**, puis sélectionnez **Ajouter un environnement**.
+
+1. Dans la boîte de dialogue **Parcourir** qui s’affiche, accédez au dossier contenant l’environnement virtuel, sélectionnez-le, puis cliquez sur **OK**. Si Visual Studio détecte un fichier *requirements.txt* dans cet environnement, il vous demande si vous souhaitez installer ces packages.
+
+1. Après quelques instants, l’environnement virtuel apparaît sous le nœud **Environnements Python** dans l’**Explorateur de solutions**. Il n’est pas activé par défaut : cliquez dessus avec le bouton droit et sélectionnez **Activer l’environnement**.
+::: moniker-end
 
 ### <a name="remove-a-virtual-environment"></a>Retirer un environnement virtuel
 
@@ -102,11 +151,18 @@ Si vous avez déjà créé un environnement virtuel ailleurs, vous pouvez l’ac
 
 Dans l’Explorateur de solutions, développez le nœud d’un environnement donné pour afficher rapidement les packages qui y sont installés (que vous pouvez donc importer et utiliser dans votre code lorsque l’environnement est actif) :
 
-![Packages Python pour un environnement dans l’Explorateur de solutions](media/environments-installed-packages.png)
+![Packages Python pour un environnement dans l’Explorateur de solutions](media/environments/environments-installed-packages.png)
 
-Pour installer de nouveaux packages, cliquez avec le bouton droit sur l’environnement, puis sélectionnez **Installer un package Python** pour passer à l’onglet **Packages** de la fenêtre **Environnements Python**. Entrez un critère recherche (en général, le nom de package) : Visual Studio affichera les packages correspondants.
+::: moniker range="vs-2017"
+Pour installer de nouveaux packages, cliquez avec le bouton droit sur l’environnement, puis sélectionnez **Installer un package Python** pour passer à l’onglet **Packages** approprié de la fenêtre **Environnements Python**. Entrez un critère recherche (en général, le nom de package) : Visual Studio affichera les packages correspondants.
+::: moniker-end
+::: moniker range=">=vs-2019"
+Pour installer de nouveaux packages, cliquez avec le bouton droit sur l’environnement, puis sélectionnez **Gérer les packages Python** (ou utilisez le bouton de package dans la barre d’outils Python) pour passer à l’onglet **Packages** approprié de la fenêtre **Environnements Python**. Dans l’onglet **Packages**, entrez un critère de recherche (en général, le nom de package), Visual Studio affiche alors les packages correspondants.
+::: moniker-end
 
-Dans Visual Studio, les packages (et les dépendances) sont téléchargés à partir de [Python Package Index (PyPI)](https://pypi.org), où vous pouvez également rechercher les packages disponibles. La barre d’état et la fenêtre Sortie de Visual Studio affichent des informations sur l’installation. Pour désinstaller un package, cliquez avec le bouton droit sur celui-ci, puis sélectionnez **Supprimer**.
+Dans Visual Studio, les packages (et les dépendances) de la plupart des environnements sont téléchargés à partir de [Python Package Index (PyPI)](https://pypi.org), où vous pouvez également rechercher les packages disponibles. La barre d’état et la fenêtre Sortie de Visual Studio affichent des informations sur l’installation. Pour désinstaller un package, cliquez avec le bouton droit sur celui-ci, puis sélectionnez **Supprimer**.
+
+Le gestionnaire de package conda utilise généralement `https://repo.continuum.io/pkgs/` comme canal par défaut, mais d’autres canaux est disponibles. Pour plus d’informations, consultez [Gérer les canaux](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-channels.html) (docs.conda.io).
 
 Sachez que les entrées affichées ne sont pas toujours exactes, et que l’installation et la désinstallation ne sont pas forcément fiables ou disponibles. Visual Studio utilise le gestionnaire de packages pip s’il est disponible, et le télécharge et l’installe si besoin. Visual Studio peut également utiliser le gestionnaire de packages easy_install. Les packages installés en ligne de commande avec `pip` ou `easy_install` s’affichent également.
 

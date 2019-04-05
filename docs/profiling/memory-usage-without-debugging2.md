@@ -1,6 +1,6 @@
 ---
 title: Analyser l’utilisation de la mémoire sans débogage | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+ms.custom: ''
 ms.date: 11/15/2018
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a51f86da8eac527ed7744e345ff811797afcd36d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 915a46a1f201dab55edb0b0b091c003d6b449049
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615913"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873452"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analyser l’utilisation de la mémoire sans débogage
 
@@ -72,7 +72,7 @@ Une fois que vous avez arrêté la collecte des données, l’outil **Utilisatio
 
 Les chiffres mentionnés dans les volets **Instantané** indiquent les octets et objets en mémoire quand chaque instantané a été réalisé ainsi que la différence entre cet instantané et le précédent.
 
-Les chiffres sont des liens qui permettent d’ouvrir des vues de rapports détaillées d’**Utilisation de la mémoire** dans de nouvelles fenêtres Visual Studio. Un [rapport de détails d’instantané](#snapshot-details-report) montre les types et les instances d’un seul instantané. Un [rapport de différences d’instantanés](#snapshot-difference-diff-reports) compare les types et les instances de deux instantanés.
+Les chiffres sont des liens qui permettent d’ouvrir des vues de rapports détaillées d’**Utilisation de la mémoire** dans de nouvelles fenêtres Visual Studio. Un [rapport de détails d’instantané](#snapshot-details-reports) montre les types et les instances d’un seul instantané. Un [rapport de différences d’instantanés](#snapshot-difference-diff-reports) compare les types et les instances de deux instantanés.
 
   ![Liens d’affichages d’instantanés](../profiling/media/memuse__snapshotview_numbered.png "Liens d’affichages d’instantanés")
 

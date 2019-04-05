@@ -1,27 +1,22 @@
 ---
 title: Boîte de dialogue de recherche de message | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - message options, Search
 ms.assetid: 44fb43b7-b006-46cc-a70c-036aac3cceec
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f01a95c87f5be7f628ea06d7100751eab907765c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6a2950ead23d2f1c6a5d1b4cb4d348a2937db4d2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740921"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952143"
 ---
 # <a name="message-search-dialog-box"></a>Boîte de dialogue Recherche d'un message
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +25,13 @@ Utilisez cette boîte de dialogue pour rechercher et sélectionner le nœud pour
   
  Les paramètres suivants sont disponibles :  
   
- **Outil recherche**  
+ **Outil Recherche**  
  L’outil de glisser -déplacer permet de sélectionner une fenêtre.  
   
  **Masquer Spy ++**  
  Supprime la fenêtre principale de Spy ++ et laisse le **un message** boîte de dialogue visible en haut de vos autres applications.  
   
- **handle**  
+ **Handle**  
  ID unique du message à rechercher.  
   
  **Type**  
@@ -69,7 +64,3 @@ Utilisez cette boîte de dialogue pour rechercher et sélectionner le nœud pour
   
  [Informations de référence sur Spy++](../debugger/spy-increment-reference.md)  
  Inclut des sections décrivant chaque Spy ++ menu et boîte de dialogue.
-
-
-
-

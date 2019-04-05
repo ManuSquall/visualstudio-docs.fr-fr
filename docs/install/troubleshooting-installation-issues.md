@@ -13,14 +13,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9f42cb9cc506a47432397bc0135d2bd3123bcf7
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 464bd3a6e4c5ed8ade1f9174ff205e2eda5c4aff
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953967"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325118"
 ---
-# <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>Résolution des problèmes d’installation et de mise à niveau de Visual Studio 2017
+# <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Résolution des problèmes d’installation et de mise à niveau de Visual Studio
 
 > [!IMPORTANT]
 > Vous rencontrez un problème d’installation ? Nous pouvons vous aider. Nous proposons une option de support [**Conversation en direct**](https://visualstudio.microsoft.com/vs/support/#talktous) (en anglais uniquement).
@@ -86,7 +88,7 @@ Voici un tableau des problèmes connus et de certaines solutions de contournemen
 
 Les journaux d’installation sont nécessaires pour résoudre la plupart des problèmes d’installation. Lorsque vous envoyez un problème à l’aide de [Signaler un problème](../ide/how-to-report-a-problem-with-visual-studio.md) dans Visual Studio Installer, ces journaux sont automatiquement inclus dans votre rapport.
 
-Si vous contactez le Support Microsoft, vous devrez peut-être fournir ces journaux d’installation à l’aide de l’outil [Microsoft Visual Studio and .NET Framework Log Collection Tool](https://aka.ms/vscollect). L’outil de collecte des journaux permet de collecter des journaux d’installation à partir de tous les composants installés par Visual 2017 Studio, y compris .NET Framework, Kit SDK Windows et SQL Server. Il permet également de collecter des informations sur l’ordinateur, un inventaire de Windows Installer et des informations du journal des événements Windows pour Visual Studio Installer, le programme d’installation de Windows et la restauration du système.
+Si vous contactez le Support Microsoft, vous devrez peut-être fournir ces journaux d’installation à l’aide de l’outil [Microsoft Visual Studio and .NET Framework Log Collection Tool](https://aka.ms/vscollect). L’outil de collecte des journaux permet de collecter des journaux d’installation à partir de tous les composants installés par Visual Studio, y compris .NET Framework, SDK Windows et SQL Server. Il permet également de collecter des informations sur l’ordinateur, un inventaire de Windows Installer et des informations du journal des événements Windows pour Visual Studio Installer, le programme d’installation de Windows et la restauration du système.
 
 Pour collecter les journaux :
 
@@ -104,7 +106,7 @@ Si les solutions listées dans ce guide de résolution des problèmes ne vous pe
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Supprimer Visual Studio 2017](remove-visual-studio.md)
+* [Supprimer Visual Studio](remove-visual-studio.md)
 * [Installer et utiliser Visual Studio et les services Azure derrière un pare-feu ou un serveur proxy](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Outils de détection et de gestion des instances de Visual Studio](tools-for-managing-visual-studio-instances.md)
 * [Guide de l’administrateur Visual Studio](visual-studio-administrator-guide.md)

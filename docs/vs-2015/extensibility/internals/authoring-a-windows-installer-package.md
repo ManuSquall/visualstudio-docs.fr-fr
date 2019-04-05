@@ -1,27 +1,22 @@
 ---
 title: Création d’un Package de programme d’installation de Windows | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - .msi files, VSPackages
 - msi files, VSPackages
 ms.assetid: 0ce7c21d-0d3f-47fe-a0bb-eed506e32609
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c51696cd41083e81fb1561eb8707c4f4844b32d5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 30c941fd4f3c281dfe363d284a559bafe055451c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742652"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001642"
 ---
 # <a name="authoring-a-windows-installer-package"></a>Création d’un package Windows Installer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,8 +49,7 @@ Les lecteurs de données du modèle de programme d’installation de Windows. Au
   
    L’ensemble d’outils génère des packages de programme d’installation de Windows à partir des fichiers de source XML. L’ensemble d’outils est un projet open source de Microsoft. Vous pouvez télécharger le code source et les exécutables à partir de [ http://sourceforge.net/projects/wix ](http://sourceforge.net/projects/wix).  
   
-  Pour les produits commerciaux qui s’intègrent dans [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] à l’aide de la [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], consultez [ http://visualstudiogallery.com ](http://visualstudiogallery.com/).  
+  Pour les produits commerciaux qui s’intègrent dans [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] à l’aide de la [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], consultez [ https://marketplace.visualstudio.com/ ](https://marketplace.visualstudio.com/).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Installation de VSPackages avec Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
-

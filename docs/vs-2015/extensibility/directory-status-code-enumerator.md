@@ -1,27 +1,22 @@
 ---
 title: Énumérateur de Code de statut de répertoire | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - directory status code enumerator
 - source control plug-ins, directory status enumeration
 ms.assetid: 616026b5-f529-40ef-90c1-1836e116d797
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6a23bef10dda57d761ce7f07c3b87808b021830c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e082a691a389d5cb9a8fa307a627b11911e0db78
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766652"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58954207"
 ---
 # <a name="directory-status-code-enumerator"></a>Énumérateur de code d’état de répertoire
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,4 +50,3 @@ enum SccDirStatus {
 ## <a name="see-also"></a>Voir aussi  
  [Plug-ins de contrôle de code source](../extensibility/source-control-plug-ins.md)   
  [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)
-

@@ -1,14 +1,9 @@
 ---
 title: Applications d’exécution Windows Store sur un ordinateur à distance | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 0f6814d6-cd0d-49f3-b501-dea8c094b8ef
 caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3a3be715f58d3ed80122dfdd3aaf879c7db8aebd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 262391145b5cfc3889b2eea32df4e0955ed71b1a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784544"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938963"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>Exécuter des applications du Windows Store sur un ordinateur distant
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -173,11 +168,8 @@ S’applique uniquement à Windows] (.. /Image/windows_only_content.png « wind
 ##  <a name="BKMK_RunRemoteDebug"></a> Exécution d'une session de débogage distant  
  Le démarrage, la désactivation et l'exploration d'une session de débogage distant s'effectuent de la même façon que pour une session locale. Avant de démarrer le débogage, vérifiez que Remote Debugging Monitor est en cours d'exécution sur le périphérique distant.  
   
- Choisissez ensuite **Démarrer le débogage** dans le menu **Déboguer** (clavier : F5). Le projet est recompilé, puis déployé et démarré sur le périphérique distant. Le débogueur interrompt l'exécution aux points d'arrêt et vous pouvez effectuer un pas à pas détaillé, principal et sortant de votre code. Choisissez **Arrêter le débogage** pour terminer la session de débogage et fermer l'application distante. Pour plus d’informations, consultez [déboguer des applications dans Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
+ Puis choisissez **démarrer le débogage** sur le **déboguer** menu (clavier : F5). Le projet est recompilé, puis déployé et démarré sur le périphérique distant. Le débogueur interrompt l'exécution aux points d'arrêt et vous pouvez effectuer un pas à pas détaillé, principal et sortant de votre code. Choisissez **Arrêter le débogage** pour terminer la session de débogage et fermer l'application distante. Pour plus d’informations, consultez [déboguer des applications dans Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Test des applications du Windows Store avec Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
  [Déboguer des applications dans Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)
-
-
-

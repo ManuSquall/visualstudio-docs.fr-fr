@@ -11,20 +11,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: fb70eca0ae2f2998752ccc0f096f594e6825e4e8
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 36985ab7a0ee94cb735b1954a9e5ea9c2e0d2bbf
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221942"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869094"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>Vue d’ensemble des analyseurs .NET Compiler Platform
 
-Visual Studio comprend un ensemble intégré d’analyseurs .NET Compiler Platform qui analysent votre code C# et Visual Basic à mesure que vous l’écrivez. Les analyseurs observent le style du code, la qualité et facilité de gestion du code, la conception du code, ainsi que d’autres problèmes. Vous pouvez installer des analyseurs supplémentaires comme une extension Visual Studio ou par projet comme un package NuGet.
+Les analyseurs .NET Compiler Platform (« Roslyn ») analysent votre code pour rechercher des problèmes de style, de qualité et de facilité de gestion, de conception et d’autres problèmes encore. Visual Studio comprend un ensemble intégré d’analyseurs qui analysent votre code C# et Visual Basic à mesure que vous l’écrivez. Vous configurez des préférences pour ces analyseurs intégrés sur la page [Options de l’éditeur de texte](../ide/code-styles-and-quick-actions.md) ou dans un [fichier .editorconfig](../ide/editorconfig-code-style-settings-reference.md). Vous pouvez installer des analyseurs supplémentaires sous la forme d’une extension Visual Studio ou d’un package NuGet.
 
-Si des violations de règle sont trouvées par un analyseur, elles sont signalées à la fois dans l’éditeur de code sous la forme d’une *ligne ondulée* sous le code problématique et dans la **liste d’erreurs**.
+Si des violations de règle sont trouvées par un analyseur, elles sont signalées à la fois dans l’éditeur de code (sous la forme d’une *ligne ondulée* sous le code problématique) et dans la fenêtre **Liste d’erreurs**.
 
-Un ou plusieurs *correctifs de code* que vous pouvez appliquer pour corriger le problème sont associés à de nombreuses règles d’analyseur, ou *diagnostics*. Les diagnostics d’analyseur qui sont intégrés à Visual Studio ont chacun un correctif de code qui leur est associé. Les correctifs de code sont affichés dans l’icône du menu Ampoule, avec d’autres types *d’actions rapides*. Pour plus d’informations sur ces correctifs de code, consultez [Actions rapides courantes](../ide/common-quick-actions.md).
+Un ou plusieurs *correctifs de code* que vous pouvez appliquer pour corriger le problème sont associés à de nombreuses règles d’analyseur, ou *diagnostics*. Les diagnostics d’analyseur qui sont intégrés à Visual Studio ont chacun un correctif de code qui leur est associé. Les correctifs de code sont affichés dans l’icône du menu Ampoule, avec d’autres types d’[Actions rapides](../ide/quick-actions.md). Pour plus d’informations sur ces correctifs de code, consultez [Actions rapides courantes](../ide/common-quick-actions.md).
 
 ![Violation d’analyseur et correctif de code par action rapide](../code-quality/media/built-in-analyzer-code-fix.png)
 
@@ -32,11 +32,11 @@ Un ou plusieurs *correctifs de code* que vous pouvez appliquer pour corriger le 
 
 Les analyseurs .NET Compiler Platform (« Roslyn ») remplaceront à terme [l’analyse statique du code](../code-quality/code-analysis-for-managed-code-overview.md) pour le code managé. Un grand nombre de règles d’analyse du code statique ont déjà été réécrites sous la forme de diagnostics d’analyseurs Roslyn.
 
-Comme les violations des règles d’analyse statique du code, les violations d’analyseurs Roslyn s’affichent dans la **liste d’erreurs**. De plus, les violations d’analyseurs Roslyn s’affichent également dans l’éditeur de code sous la forme de *lignes ondulées* sous le code problématique. La couleur de la ligne ondulée dépend du [paramètre de gravité](../code-quality/use-roslyn-analyzers.md#rule-severity) de la règle. La capture d’écran suivante montre trois violations (une rouge, une verte et une grise) :
+Comme les violations des règles d’analyse statique du code, les violations d’analyseurs Roslyn s’affichent dans la **Liste d’erreurs**. De plus, les violations d’analyseurs Roslyn s’affichent également dans l’éditeur de code sous la forme de *lignes ondulées* sous le code problématique. La couleur de la ligne ondulée dépend du [paramètre de gravité](../code-quality/use-roslyn-analyzers.md#rule-severity) de la règle. La capture d’écran suivante montre trois violations (une rouge, une verte et une grise) :
 
 ![Lignes ondulées dans l’éditeur de code](media/diagnostics-severity-colors.png)
 
-Les analyseurs Roslyn analysent le code au moment de la génération, comme l’analyse statique du code si elle est activée, mais également à mesure que vous tapez. Les analyseurs Roslyn peuvent également fournir une analyse au moment du design des fichiers de code qui ne sont pas ouverts dans l’éditeur si vous activez [l’analyse complète de la solution](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md#to-toggle-full-solution-analysis).
+Les analyseurs Roslyn analysent le code au moment de la génération, comme l’analyse statique du code si elle est activée, mais également à mesure que vous tapez. Si vous activez l’[analyse complète de la solution](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md#to-toggle-full-solution-analysis), les analyseurs Roslyn fournissent également une analyse au moment de la conception des fichiers de code qui ne sont pas ouverts dans l’éditeur.
 
 > [!NOTE]
 > Les erreurs et les avertissements au moment de la génération provenant des analyseurs Roslyn sont affichés uniquement si les analyseurs sont installés comme un package NuGet.
@@ -80,6 +80,6 @@ Vous ne pouvez pas définir la gravité des règles à partir des analyseurs qui
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Actions rapides en Visual Studio](../ide/quick-actions.md)
+- [FAQ sur les analyseurs](analyzers-faq.md)
 - [Écrire votre propre analyseur Roslyn](../extensibility/getting-started-with-roslyn-analyzers.md)
 - [SDK .NET Compiler Platform](/dotnet/csharp/roslyn-sdk/)

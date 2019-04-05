@@ -1,14 +1,9 @@
 ---
 title: Shell (isolé ou intégré) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell
 - Visual Studio, Shell
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 856e32d4569e5dcb73e783d0a6b66e186fbb1848
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9d8b08dfe812245a21160fa2f16b4c94728785ae
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755881"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952617"
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell (isolé ou intégré)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ Vous pouvez créer votre propre application basée sur Visual Studio en mode int
  Pour distribuer votre application de shell intégré ou isolé, vous devez inclure votre application, un shell d’intégré ou isolé spécial redistribuable et un programme d’installation. Pour plus d’informations sur la distribution et l’installation, consultez [distribution d’Applications Shell isolé](../extensibility/distributing-isolated-shell-applications.md).  
   
 > [!IMPORTANT]
->  Le [contrat de licence utilisateur final (CLUF)](https://www.visualstudio.com/en-us/support/legal/mt171552) pour Visual Studio intégré et isolé interpréteurs de commandes inclut une section sur la collecte de données (**Section 3. Données**).  Il décrit les données d’utilisation client qui peuvent être collectées par Microsoft avec les utilisateurs du logiciel shell intégré ou isolé que vous intégrez votre application. Pour plus d’informations, consultez [Visual Studio produit déclaration de confidentialité Microsoft](https://www.visualstudio.com/en-us/dn948229).  
+>  Le [contrat de licence utilisateur final (CLUF)](https://www.visualstudio.com/support/legal/mt171552) pour Visual Studio intégré et isolé interpréteurs de commandes inclut une section sur la collecte de données (**Section 3. Données**).  Il décrit les données d’utilisation client qui peuvent être collectées par Microsoft avec les utilisateurs du logiciel shell intégré ou isolé que vous intégrez votre application. Pour plus d’informations, consultez [Visual Studio produit déclaration de confidentialité Microsoft](https://www.visualstudio.com/dn948229).  
 > 
 >  Si vous collectez des données d’utilisation distincts à partir de vos clients via votre application, vous devez fournir des avis approprié aux utilisateurs de votre application de ce que vous collectez.  Lorsque vous distribuez le logiciel shell isolé ou intégré dans le cadre de votre application, en fonction de la licence Visual Studio Software Development Kit, vous devez inclure un des éléments suivants :  
 > 
@@ -64,4 +59,3 @@ Vous pouvez créer votre propre application basée sur Visual Studio en mode int
   
 ## <a name="see-also"></a>Voir aussi  
  [Publication d’extensions Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
-

@@ -9,28 +9,28 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5a596d37d4446332461709cb6737d4f526e9b02e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4ef0dc772422322d8cfa2f8c7ca88a7cf30eab31
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970879"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416249"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Procédure : Créer des modèles à projets multiples
 
-Les modèles à plusieurs projets jouent le rôle de conteneurs pour au moins deux projets. Quand vous créez un projet basé sur un modèle à plusieurs projets à partir de la boîte de dialogue **Nouveau projet**, tous les projets inclus dans le modèle sont ajoutés à la solution.
+Les modèles à plusieurs projets jouent le rôle de conteneurs pour au moins deux projets. Quand vous créez un projet basé sur un modèle multiprojet, tous les projets inclus dans le modèle sont ajoutés à la solution.
 
 Un modèle à plusieurs projets contient deux modèles de projet ou plus, ainsi qu’un modèle racine de type **ProjectGroup**.
 
 Les modèles à plusieurs projets se comportent différemment des modèles à projet unique. Leurs caractéristiques particulières sont les suivantes :
 
-- Vous ne pouvez pas assigner les noms de manière individuelle aux projets d’un modèle à plusieurs projets dans la boîte de dialogue **Nouveau projet**. Pour spécifier un nom pour chaque projet, utilisez plutôt l’attribut **ProjectName** sur l’élément **ProjectTemplateLink** dans le fichier *vstemplate*.
+- Vous ne pouvez pas affecter des noms de façon individuelle aux projets d’un modèle multiprojet quand le modèle est utilisé pour créer un projet. Pour spécifier un nom pour chaque projet, utilisez plutôt l’attribut **ProjectName** sur l’élément **ProjectTemplateLink** dans le fichier *vstemplate*.
 
 - Les modèles à plusieurs projets peuvent contenir des projets pour des langages différents, mais l’ensemble du modèle lui-même doit être placé dans une seule catégorie. Spécifiez la catégorie du modèle dans l’élément **ProjectType** du fichier *vstemplate*.
 
 Un modèle à plusieurs projets doit inclure les éléments suivants, compressés dans un fichier *.zip* :
 
-- Un fichier *vstemplate* racine pour l’ensemble du modèle à plusieurs projets. Ce fichier *vstemplate* racine contient les métadonnées affichées dans la boîte de dialogue **Nouveau projet** et indique l’emplacement des fichiers *vstemplate* pour les projets du modèle. Ce fichier doit se trouver à la racine du fichier *.zip*.
+- Un fichier *vstemplate* racine pour l’ensemble du modèle à plusieurs projets. Ce fichier *vstemplate* racine contient des métadonnées qui s’affichent dans la boîte de dialogue où vous créez un projet. Il spécifie également où trouver les fichiers *vstemplate* pour les projets du modèle. Ce fichier doit se trouver à la racine du fichier *.zip*.
 
 - Deux dossiers ou plus contenant les fichiers exigés pour un modèle de projet complet sont nécessaires. Les dossiers incluent tous les fichiers de code du projet, ainsi qu’un fichier *vstemplate* pour le projet.
 
@@ -72,37 +72,37 @@ Le fichier *vstemplate* racine d’un modèle à plusieurs projets présente les
 
 1. Créez une solution et ajoutez deux projets ou plus.
 
-1. Personnalisez les projets jusqu’à ce qu’ils soient prêts à être exportés dans un modèle.
+2. Personnalisez les projets jusqu’à ce qu’ils soient prêts à être exportés dans un modèle.
 
    > [!TIP]
    > Si vous utilisez des [paramètres de modèle](template-parameters.md) et que vous voulez référencer des variables du modèle parent, préfixez le nom du paramètre avec `ext_`. Par exemple, `$ext_safeprojectname$`.
 
-1. Dans le menu **Projet**, choisissez **Exporter le modèle**.
+3. Dans le menu **Projet**, choisissez **Exporter le modèle**.
 
    L’Assistant **Exportation de modèle** s’ouvre.
 
-1. Dans la page **Choisir un type de modèle**, sélectionnez **Modèle de projet**. Sélectionnez un des projets que vous voulez exporter vers un modèle, puis choisissez **Suivant**. (Vous répétez ces étapes pour chaque projet de la solution.)
+4. Dans la page **Choisir un type de modèle**, sélectionnez **Modèle de projet**. Sélectionnez un des projets que vous voulez exporter vers un modèle, puis choisissez **Suivant**. (Vous répétez ces étapes pour chaque projet de la solution.)
 
-1. Dans la page **Sélectionner les options du modèle**, entrez un nom et éventuellement une description, une icône et une image d’aperçu pour votre modèle. Choisissez **Terminer**.
+5. Dans la page **Sélectionner les options du modèle**, entrez un nom et éventuellement une description, une icône et une image d’aperçu pour votre modèle. Choisissez **Terminer**.
 
    Le projet est exporté dans un fichier *.zip* et placé à l’emplacement de sortie spécifié.
 
    > [!NOTE]
    > Chaque projet doit être exporté séparément dans un modèle, donc répétez les étapes précédentes pour chaque projet dans la solution.
 
-1. Créez un répertoire pour votre modèle, avec un sous-répertoire pour chaque projet.
+6. Créez un répertoire pour votre modèle, avec un sous-répertoire pour chaque projet.
 
-1. Extrayez le contenu du fichier *.zip* de chaque projet dans le sous-répertoire correspondant que vous avez créé.
+7. Extrayez le contenu du fichier *.zip* de chaque projet dans le sous-répertoire correspondant que vous avez créé.
 
-1. Dans le répertoire de base, créez un fichier XML portant une extension *.vstemplate*. Ce fichier contient les métadonnées du modèle à plusieurs projets. Consultez l’exemple qui suit pour la structure du fichier. Veillez à spécifier le chemin relatif du fichier *vstemplate* de chaque projet.
+8. Dans le répertoire de base, créez un fichier XML portant une extension *.vstemplate*. Ce fichier contient les métadonnées du modèle à plusieurs projets. Consultez l’exemple qui suit pour la structure du fichier. Veillez à spécifier le chemin relatif du fichier *vstemplate* de chaque projet.
 
-1. Sélectionnez tous les fichiers dans le répertoire de base, puis cliquez avec le bouton droit pour faire apparaître un menu contextuel et choisissez **Envoyer vers** > **Dossier compressé**.
+9. Sélectionnez tous les fichiers dans le répertoire de base, puis cliquez avec le bouton droit pour faire apparaître un menu contextuel et choisissez **Envoyer vers** > **Dossier compressé**.
 
    Les fichiers et dossiers sont compressés dans un fichier *.zip*.
 
-1. Copiez le fichier *.zip* dans le répertoire des modèles de projet utilisateur. Par défaut, ce répertoire est : *%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ProjectTemplates*.
+10. Copiez le fichier *.zip* dans le répertoire des modèles de projet utilisateur. Par défaut, ce répertoire est : *%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ProjectTemplates*.
 
-1. Dans Visual Studio, ouvrez la boîte de dialogue **Nouveau projet** et vérifiez que votre modèle apparaît.
+11. Dans Visual Studio, choisissez **Fichier** > **Nouveau** > **Projet** et vérifiez que votre modèle apparaît.
 
 ## <a name="two-project-example"></a>Exemple avec deux projets
 

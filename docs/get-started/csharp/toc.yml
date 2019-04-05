@@ -11,7 +11,7 @@ items:
     - name: À propos des projets et des solutions
       href: tutorial-projects-solutions.md
     - name: Autres fonctionnalités de Visual Studio
-      href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
+      href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
   - name: Créer une application
     items:
     - name: Créer votre première application C#
@@ -22,9 +22,23 @@ items:
       href: tutorial-uwp.md
     - name: Créer une application WPF
       href: tutorial-wpf.md
+    - name: Tutoriel vidéo - Créer une application web ASP.NET Core
+      items:
+      - name: 1 - Installer Visual Studio
+        href: tutorial-aspnet-core-ef-step-01.md
+      - name: 2 - Créer votre première application web ASP.NET Core
+        href: tutorial-aspnet-core-ef-step-02.md
+      - name: 3 - Utiliser les données
+        href: tutorial-aspnet-core-ef-step-03.md
+      - name: 4 - Exposer une API web
+        href: tutorial-aspnet-core-ef-step-04.md
+      - name: 5 - Déployer votre application ASP.NET Core sur Azure
+        href: tutorial-aspnet-core-ef-step-05.md
     expanded: true
   - name: Formation à Visual Studio
     items:
+    - name: Ouvrir un projet à partir d’un référentiel
+      href: ../tutorial-open-project-from-repo.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     - name: Écrire et modifier du code
       href: tutorial-editor.md
     - name: Compiler et générer
@@ -32,15 +46,15 @@ items:
     - name: Déboguer votre code
       href: ../csharp/tutorial-debugger.md
     - name: Test unitaire
-      href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
+      href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     - name: Déployer votre projet
       href: ../../deployment/index.md
     - name: Accéder aux données
-      href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
+      href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     expanded: true
-ms.openlocfilehash: cc0478d8d9084d37f1c58670e2815ebfd0ee6f1c
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: cb9f6575183977a63224f7333c95fef18a0fd779
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222699"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018127"

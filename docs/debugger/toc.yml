@@ -117,7 +117,7 @@ items:
       - name: Appliquer des modifications en mode arrêt avec Modifier et Continuer
         href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
     - name: Écrire et déboguer du code XAML en cours d’exécution
-      href: xaml-edit-and-continue.md
+      href: xaml-hot-reload.md
     - name: Opération Modifier et Continuer non prise en charge pour F#
       href: edit-and-continue-not-supported-for-f-hash.md
   - name: Afficher les données du débogueur
@@ -400,15 +400,10 @@ items:
           href: refresh-an-app-javascript.md
         - name: Déboguer un contrôle WebView
           href: debug-a-webview-control.md
-        - name: Raccourcis clavier (HTML et JavaScript)
-          href: keyboard-shortcuts-html-and-javascript.md
         - name: Déboguer des exemples de code HTML et CSS
           href: debug-html-css-and-javascript-sample-code.md
       - name: Déboguer du code JavaScript à l’aide de la console
         href: quickstart-debug-javascript-using-the-console.md
-        items:
-        - name: JavaScript Console commands
-          href: javascript-console-commands.md
       - name: Guide pratique pour déclencher, suspendre, reprendre et mettre en arrière-plan des événements
         href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
       - name: Prérécupérer du contenu pour les applications du Microsoft Store
@@ -583,6 +578,10 @@ items:
     - name: Déboguer des applications web
       href: debugging-web-applications.md
       items:
+      - name: JavaScript Console commands
+        href: javascript-console-commands.md
+      - name: Raccourcis clavier (HTML et JavaScript)
+        href: keyboard-shortcuts-html-and-javascript.md
       - name: Débogage de scripts côté client
         href: client-side-script-debugging.md
         items:
@@ -843,9 +842,9 @@ items:
   items:
   - name: Nouveautés du débogueur dans Visual Studio
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 60b141b0f9a7b00dda32a68f5f33e2bc8321dad6
-ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
+ms.openlocfilehash: 9d5ba973ffafe79b4c9b1f4f23ee08792d24bb7b
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57699653"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790743"

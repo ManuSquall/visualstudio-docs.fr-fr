@@ -1,25 +1,20 @@
 ---
 title: Création d’ensembles de règles analyse de Code personnalisé | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 88db3a0a-1b92-496d-9fae-b2bb980f5933
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c0dabe89c47e42eee57803475abf5274a74ec651
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f6d848c2f32f51a14c03d8b321f05b6b60143a87
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273583"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951779"
 ---
 # <a name="creating-custom-code-analysis-rule-sets"></a>Création d'ensembles de règles d'analyse du code personnalisés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +24,7 @@ Vous appliquez des règles d’analyse du code à un projet de code managé en s
  Vous pouvez également créer un ensemble de règles personnalisé qui combine deux ou les ensembles de règles standard ou qui spécifie les règles dans un ou plusieurs ensembles de règles standard. Vous enregistrez la règle personnalisée définit dans un fichier .ruleset, et vous pouvez les spécifier dans plusieurs projets de code.  
   
 ## <a name="in-this-section"></a>Dans cette section  
- [Guide pratique pour créer un ensemble de règles personnalisées](../code-quality/how-to-create-a-custom-rule-set.md)  
+ [Guide pratique pour Créer un ensemble de règles personnalisé](../code-quality/how-to-create-a-custom-rule-set.md)  
  Décrit comment créer une règle personnalisée définie par un ou plusieurs ensembles de règles standard de modification.  
   
  [Utilisation de l’Éditeur d’ensembles de règles](../code-quality/working-in-the-code-analysis-rule-set-editor.md)  
@@ -39,6 +34,3 @@ Vous appliquez des règles d’analyse du code à un projet de code managé en s
  [Référence d’ensemble de règles d’analyse de code](../code-quality/code-analysis-rule-set-reference.md)   
  [Analyse de la qualité d’un code managé](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)   
  [Analyse de la qualité du code C/C++ à l’aide de l’analyse du code](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md)
-
-
-

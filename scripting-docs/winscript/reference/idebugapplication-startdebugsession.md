@@ -2,7 +2,6 @@
 title: IDebugApplication::StartDebugSession | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 453286e310a6f16576d947cceb1947945f8627d3
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: a42fe61d67eedbe6f69350c7b5ec17726f43486e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54086483"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58145796"
 ---
 # <a name="idebugapplicationstartdebugsession"></a>IDebugApplication::StartDebugSession
 Démarre l’environnement de développement intégré de débogueur par défaut (IDE) et l’attache une session de débogage de cette application, si un n’est pas déjà attaché.  

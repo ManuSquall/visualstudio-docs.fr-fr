@@ -1,12 +1,9 @@
 ---
-title: 'Diagrammes de cas d’usage UML : Indications | Microsoft Docs'
-ms.custom: ''
+title: 'Diagrammes de cas d’usage UML : Guidelines | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - diagrams - modeling, use case
 - UML, use case diagrams
@@ -17,15 +14,15 @@ ms.assetid: b1ae8ed0-d00b-4f9b-8e23-733e09e81e9b
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b4a4bc02202f8ec1f41052dcdea63d97bbcb9671
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b69a06f0dff7347e5f24899552f25721e71ee818
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793085"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950842"
 ---
-# <a name="uml-use-case-diagrams-guidelines"></a>Diagrammes de cas d'usage UML : indications
+# <a name="uml-use-case-diagrams-guidelines"></a>Diagrammes de cas d’usage UML : Recommandations
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dans Visual Studio, vous pouvez dessiner un *utiliser le diagramme de cas* pour synthétiser les personnes qui utilisent votre application ou système, et qu’ils peuvent faire avec. Pour créer un diagramme de cas d’usage UML, sur le **Architecture** menu, cliquez sur **nouveau UML ou diagramme de couche**.  
@@ -44,7 +41,7 @@ Dans Visual Studio, vous pouvez dessiner un *utiliser le diagramme de cas* pour 
   
   Un diagramme de cas d'usage ne montre pas les détails des cas d'usage : il résume uniquement certaines des relations entre les cas d'usage, les acteurs et les systèmes. En particulier, le diagramme n'indique pas l'ordre dans lequel les étapes sont effectuées pour atteindre les objectifs de chaque cas d'usage. Vous pouvez décrire ces détails dans d'autres diagrammes et documents, que vous pouvez lier à chaque cas d'usage. Pour plus d’informations, consultez [description des cas d’usage en détail](#Details) dans cette rubrique.  
   
-  Les descriptions que vous fournissez pour les cas d'usage utiliseront plusieurs termes liés au domaine dans lequel le système fonctionne, telles que Vente, Menu, Client et ainsi de suite. Il est important de définir clairement ces termes et leurs relations, ce que vous pouvez faire à l'aide d'un diagramme de classes UML. Pour plus d’informations, consultez [diagrammes de classes UML : indications](../modeling/uml-class-diagrams-guidelines.md).  
+  Les descriptions que vous fournissez pour les cas d'usage utiliseront plusieurs termes liés au domaine dans lequel le système fonctionne, telles que Vente, Menu, Client et ainsi de suite. Il est important de définir clairement ces termes et leurs relations, ce que vous pouvez faire à l'aide d'un diagramme de classes UML. Pour plus d'informations, consultez [Diagrammes de classes UML : Les instructions](../modeling/uml-class-diagrams-guidelines.md).  
   
   Les cas d'usage traitent uniquement des exigences fonctionnelles d'un système. Les autres exigences telles que les règles métier, les impératifs de qualité de service et les contraintes d'implémentation doivent être représentées séparément. Vous devez également décrire les détails internes et d'architecture séparément. Pour plus d’informations sur la façon de définir les besoins des utilisateurs, consultez [modéliser les besoins des utilisateurs](../modeling/model-user-requirements.md).  
   
@@ -91,13 +88,13 @@ Dans Visual Studio, vous pouvez dessiner un *utiliser le diagramme de cas* pour 
   
     -   Les acteurs représentent des classes d'utilisateurs, d'organisations et de systèmes externes qui interagissent avec votre système.  
   
-    -   Renommez-les. Par exemple : **agence de carte de crédit du client, Restaurant,.**  
+    -   Renommez-les. Exemple : **Agence de carte de crédit du client, Restaurant.**  
   
 3.  Faites glisser **cas d’usage** à partir de la boîte à outils vers les systèmes appropriés.  
   
     -   Les cas d'usage représentent les activités que les acteurs exécutent avec l'aide de votre système.  
   
-    -   Renommez-les à l'aide de titres que les acteurs eux-mêmes comprendront. N'utilisez pas de titres associés à votre code. Par exemple : **commander un repas, payer un repas, livrer le repas**.  
+    -   Renommez-les à l'aide de titres que les acteurs eux-mêmes comprendront. N'utilisez pas de titres associés à votre code. Exemple : **Commander un repas, payer un repas, livrer le repas**.  
   
     -   Commencer avec les transactions majeures telles que **commander un repas**, laissant jusqu'à occuper des interactions mineures telles que **sélectionner un élément de Menu**.  
   
@@ -145,7 +142,7 @@ Dans Visual Studio, vous pouvez dessiner un *utiliser le diagramme de cas* pour 
   
 1.  Avec le bouton droit de l’acteur, puis cliquez sur **propriétés**.  
   
-     Le **propriétés** fenêtre s’affiche.  
+     La fenêtre **Propriétés** s'affiche.  
   
 2.  Définir le **chemin d’accès de l’Image** propriété à l’emplacement d’un fichier image.  
   
@@ -203,7 +200,7 @@ Dans Visual Studio, vous pouvez dessiner un *utiliser le diagramme de cas* pour 
 >  De nombreuses équipes ne placent pas les informations de multiplicité sur les diagrammes de cas d'usage et laissent les multiplicités définies sur la valeur par défaut (1). Au lieu de cela, elles fournissent ces informations dans des descriptions séparées des cas d'usage. Dans ce cas, toutes les multiplicités dans les diagrammes de cas d'usage seront masquées.  
   
 ### <a name="using-an-actor-or-use-case-on-multiple-diagrams"></a>Utilisation d'un acteur ou d'un cas d'usage dans plusieurs diagrammes  
- Vous pouvez afficher les mêmes acteurs et cas d'usage dans plusieurs diagrammes. Exemple :  
+ Vous pouvez afficher les mêmes acteurs et cas d'usage dans plusieurs diagrammes. Exemple :  
   
 -   Vous pouvez décrire dans différents diagrammes les différents cas d'usage dans lesquels un acteur est impliqué.  
   
@@ -233,9 +230,9 @@ Dans Visual Studio, vous pouvez dessiner un *utiliser le diagramme de cas* pour 
   
 - Liez le cas d'usage à un ou plusieurs diagrammes dans le projet.  
   
-  -   Un diagramme d'activités aide à expliquer un processus plus complexe où il existe des boucles, des branches et des threads parallèles. Il peut également illustrer le flux de données entre différentes parties du processus. Pour plus d’informations, consultez [diagrammes d’activités UML : instructions](../modeling/uml-activity-diagrams-guidelines.md).  
+  -   Un diagramme d'activités aide à expliquer un processus plus complexe où il existe des boucles, des branches et des threads parallèles. Il peut également illustrer le flux de données entre différentes parties du processus. Pour plus d’informations, consultez [diagrammes d’activités UML : Les instructions](../modeling/uml-activity-diagrams-guidelines.md).  
   
-  -   Un diagramme de séquence aide à expliquer une série complexe d'interactions entre différents acteurs. Vous pouvez également l'utiliser pour montrer ce qui se passe dans le système en réponse à chaque cas d'usage. Pour plus d’informations, consultez [diagrammes de séquence UML : indications](../modeling/uml-sequence-diagrams-guidelines.md).  
+  -   Un diagramme de séquence aide à expliquer une série complexe d'interactions entre différents acteurs. Vous pouvez également l'utiliser pour montrer ce qui se passe dans le système en réponse à chaque cas d'usage. Pour plus d’informations, consultez [diagrammes de séquence UML : Les instructions](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 - Liez le cas d'usage à une page, une section ou un paragraphe OneNote qui décrit le cas d'usage en détail.  
   
@@ -337,7 +334,7 @@ Dans Visual Studio, vous pouvez dessiner un *utiliser le diagramme de cas* pour 
   
 - Les noms des actions dans le diagramme d'activités sont les mêmes que ceux des cas d'usage inclus.  
   
-  Pour plus d’informations, consultez [diagrammes d’activités UML : instructions](../modeling/uml-activity-diagrams-guidelines.md).  
+  Pour plus d’informations, consultez [diagrammes d’activités UML : Les instructions](../modeling/uml-activity-diagrams-guidelines.md).  
   
   ![Utilisez les étapes du cas indiqués dans le diagramme d’activités lié](../modeling/media/uml-ucguidesteps.png "UML_UCGuideSteps")  
   
@@ -445,13 +442,10 @@ Dans Visual Studio, vous pouvez dessiner un *utiliser le diagramme de cas* pour 
   
 ## <a name="see-also"></a>Voir aussi  
  [Modéliser les besoins des utilisateurs](../modeling/model-user-requirements.md)   
- [Diagrammes de séquence UML : indications](../modeling/uml-sequence-diagrams-guidelines.md)   
+ [Diagrammes de séquence UML : Instructions](../modeling/uml-sequence-diagrams-guidelines.md)   
  [Modifier des modèles UML et des diagrammes](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagrammes de cas d’usage UML : référence](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagrammes de classes UML : référence](../modeling/uml-class-diagrams-reference.md)   
- [Diagrammes de composants UML : référence](../modeling/uml-component-diagrams-reference.md)   
- [Diagrammes d’activités UML : indications](../modeling/uml-activity-diagrams-guidelines.md)   
+ [Diagrammes de cas d’usage UML : Référence](../modeling/uml-use-case-diagrams-reference.md)   
+ [Diagrammes de classes UML : Référence](../modeling/uml-class-diagrams-reference.md)   
+ [Diagrammes de composants UML : Référence](../modeling/uml-component-diagrams-reference.md)   
+ [Diagrammes d’activités UML : Instructions](../modeling/uml-activity-diagrams-guidelines.md)   
  [Vidéo : Organisation des fonctions en cas d’utilisation](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases/)
-
-
-

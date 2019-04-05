@@ -2,7 +2,6 @@
 title: IDebugDocumentHost::GetScriptTextAttributes | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 016073d2ce22ab814716efc204ce573ea17cd510
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 6a5e56468e51f6d90e37e90c885b6b9df48d5f6e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54092714"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58158995"
 ---
 # <a name="idebugdocumenthostgetscripttextattributes"></a>IDebugDocumentHost::GetScriptTextAttributes
 Retourne les attributs de texte pour un bloc de texte du document.  
@@ -55,9 +54,9 @@ HRESULT GetScriptTextAttributes(
   
 |Constante|Value|Description|  
 |--------------|-----------|-----------------|  
-|GETATTRTYPE_DEPSCAN|0 x 0001|Indique que les identificateurs et les opérateurs point doivent être identifiés avec les indicateurs SOURCETEXT_ATTR_IDENTIFIER et SOURCETEXT_ATTR_MEMBERLOOKUP, respectivement.|  
+|GETATTRTYPE_DEPSCAN|0x0001|Indique que les identificateurs et les opérateurs point doivent être identifiés avec les indicateurs SOURCETEXT_ATTR_IDENTIFIER et SOURCETEXT_ATTR_MEMBERLOOKUP, respectivement.|  
 |GETATTRFLAG_THIS|0x0100|Indique que l’identificateur pour l’objet actif doit être identifié avec l’indicateur SOURCETEXT_ATTR_THIS.|  
-|GETATTRFLAG_HUMANTEXT|0 x 8000|Indique que le texte de commentaire et de contenu de chaîne doit être identifié avec l’indicateur SOURCETEXT_ATTR_HUMANTEXT.|  
+|GETATTRFLAG_HUMANTEXT|0x8000|Indique que le texte de commentaire et de contenu de chaîne doit être identifié avec l’indicateur SOURCETEXT_ATTR_HUMANTEXT.|  
   
  `pattr`  
  [in, out] Mémoire tampon pour contenir les attributs retournés.  
@@ -74,5 +73,5 @@ HRESULT GetScriptTextAttributes(
  Cette méthode retourne les attributs de texte pour un bloc de texte du document arbitraire. Il est acceptable pour les ordinateurs hôtes à retourner `E_NOTIMPL`, auquel cas les attributs par défaut sont utilisés.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Interface IDebugDocumentHost](../../winscript/reference/idebugdocumenthost-interface.md)   
+ [IDebugDocumentHost Interface](../../winscript/reference/idebugdocumenthost-interface.md)   
  [Énumération SOURCE_TEXT_ATTR](../../winscript/reference/source-text-attr-enumeration.md)

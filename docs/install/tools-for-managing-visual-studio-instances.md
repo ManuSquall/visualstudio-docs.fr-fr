@@ -14,12 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8278448c1b10062c3e030d763d1cf4e37f9cc7e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 0a5344c2c816224151b6498bb5512bd0fec35356
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681749"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415212"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Outils de détection et de gestion des instances de Visual Studio
 
@@ -37,25 +39,31 @@ De plus, l’[API de configuration de l’installation](<xref:Microsoft.VisualSt
 
 ## <a name="using-vswhereexe"></a>Utilisation de vswhere.exe
 
-`vswhere.exe` est inclus automatiquement dans Visual Studio 2017 version 15.2 ou supérieure. Vous pouvez également le télécharger à partir de la [page des versions Release](https://github.com/Microsoft/vswhere/releases). Utilisez `vswhere -?` pour obtenir des informations d’aide sur l’outil. Par exemple, cette commande affiche toutes les versions Release de Visual Studio, y compris les anciennes versions du produit et les préversions, et renvoie les résultats au format JSON :
+`vswhere.exe` est automatiquement inclus dans Visual Studio (à compter de Visual Studio 2017 version 15.2 et ultérieure), ou vous pouvez le télécharger à partir de [la page des versions de VSWhere](https://github.com/Microsoft/vswhere/releases). Utilisez `vswhere -?` pour obtenir des informations d’aide sur l’outil. Par exemple, cette commande affiche toutes les versions de Visual Studio, y compris les anciennes versions du produit et les préversions, et retourne les résultats au format JSON :
 
 ```cmd
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json
 ```
+::: moniker range="vs-2017"
 
->[!TIP]
->Pour plus d’informations sur l’installation de Visual Studio 2017, consultez les [archives d’installation de Visual Studio](https://devblogs.microsoft.com/setup/tag/vs2017/).
+> [!TIP]
+> Pour plus d’informations sur l’installation de Visual Studio 2017, consultez les [archives d’installation de Visual Studio](https://devblogs.microsoft.com/setup/tag/vs2017/).
+
+::: moniker-end
 
 ## <a name="editing-the-registry-for-a-visual-studio-instance"></a>Modification du Registre pour une instance de Visual Studio
 
-Dans Visual Studio 2017, les paramètres du Registre sont stockés à un emplacement privé, ce qui active plusieurs instances côte à côte de la même version de Visual Studio sur le même ordinateur.
+Dans Visual Studio, les paramètres du Registre sont stockés à un emplacement privé, ce qui permet d’avoir plusieurs instances côte à côte de la même version de Visual Studio sur la même machine.
 
 Comme ces entrées ne sont pas stockées dans le Registre global, il existe des instructions spéciales pour l’utilisation de l’Éditeur du Registre afin d’apporter des modifications aux paramètres du Registre :
 
-1. Si vous avez une instance de Visual Studio 2017 ouverte, fermez-la.
-2. Démarrez `regedit.exe`.
-3. Sélectionnez le nœud `HKEY_LOCAL_MACHINE`.
-4. Dans le menu principal Regedit, sélectionnez **Fichier -> Charger la ruche...**, puis sélectionnez le fichier de Registre privé qui est stocké dans le dossier **AppData\Local**. Par exemple :
+1. Si vous avez une instance de Visual Studio ouverte, fermez-la.
+
+1. Démarrez `regedit.exe`.
+
+1. Sélectionnez le nœud `HKEY_LOCAL_MACHINE`.
+
+1. Dans le menu principal de Regedit, sélectionnez **Fichier** > **Charger la ruche...**, puis sélectionnez le fichier du Registre privé, qui est stocké dans le dossier **AppData\Local**. Par exemple :
    ```
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin
    ```
@@ -66,7 +74,7 @@ Comme ces entrées ne sont pas stockées dans le Registre global, il existe des 
 Vous êtes invité à fournir un nom de ruche, qui devient le nom de votre ruche isolée. Après cela, vous devez être en mesure de parcourir le Registre sous la ruche isolée que vous avez créée.
 
 > [!IMPORTANT]
-> Avant de redémarrer Visual Studio, vous devez décharger la ruche isolée que vous avez créée. Pour ce faire, sélectionnez Fichier -> Décharger la ruche dans le menu principal Regedit. (Si vous ne le faites pas, le fichier reste verrouillé et Visual Studio n’est pas en mesure de démarrer.)
+> Avant de redémarrer Visual Studio, vous devez décharger la ruche isolée que vous avez créée. Pour cela, sélectionnez **Fichier** > **Décharger la ruche** dans le menu principal de Regedit. (Si vous ne le faites pas, le fichier reste verrouillé et Visual Studio n’est pas en mesure de démarrer.)
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

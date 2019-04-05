@@ -1,14 +1,9 @@
 ---
 title: Déboguer les styles CSS à l’aide de l’Explorateur DOM | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,13 +19,13 @@ ms.assetid: 2dfef7c6-7db2-4550-b694-783b0e535cea
 caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1f5a2c8ef6792403628430cb9881b24e6e279f02
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2467bce94a9f9de3df87ab1c05fd4b84a7e68ee4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750151"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950796"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>Déboguer les styles CSS avec l’explorateur DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +95,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 5.  Appuyez sur F5 pour exécuter l’application en mode débogage.  
   
-     Lorsque le chargement de l’application est terminé, examinez les en-têtes des éléments de la liste, tels que **Titre de groupe : 1**. La couleur est inchangée, donc la tentative d’application de la couleur orange aux titres n’a pas fonctionné. Nous identifierons le problème et le résoudrons à l’aide des onglets CSS de l’explorateur DOM.  
+     Lorsque l’application chargement est terminé, examinez les en-têtes des éléments de liste, tel que **titre de groupe : 1**. La couleur est inchangée, donc la tentative d’application de la couleur orange aux titres n’a pas fonctionné. Nous identifierons le problème et le résoudrons à l’aide des onglets CSS de l’explorateur DOM.  
   
     > [!TIP]
     >  Une fois que l’application s’affiche dans le simulateur, positionnez le simulateur en regard de la fenêtre Visual Studio afin de pouvoir afficher immédiatement les résultats de vos sélections et des modifications que vous apportez aux styles CSS.  
@@ -108,9 +103,9 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 6.  Passez dans Visual Studio et cliquez sur **Sélectionner un élément** dans l’explorateur DOM (ou appuyez sur Ctrl+B). Le mode de sélection est alors modifié pour vous permettre de sélectionner un élément en cliquant dessus, et l’application est mise au premier plan. Le mode est restauré à la suite d’un seul clic. Le bouton **Sélectionner un élément** se présente comme suit : ![Sélectionnez le bouton de l’élément dans l’Explorateur DOM](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
   
     > [!TIP]
-    >  Vous pouvez également sélectionner des éléments HTML directement dans l’explorateur DOM. Pour plus d’informations sur la sélection d’éléments, consultez [Guide de démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md).  
+    >  Vous pouvez également sélectionner des éléments HTML directement dans l’explorateur DOM. Pour plus d’informations sur la sélection d’éléments, consultez [Guide de démarrage rapide : Déboguer le code HTML et CSS](../debugger/quickstart-debug-html-and-css.md).  
   
-7.  Dans le simulateur, amenez le pointeur au-dessus du titre du premier élément dans la liste, **Titre de groupe : 1**, dans le volet gauche de la page d’accueil. Le titre est mis en surbrillance, comme illustré ci-après :  
+7.  Dans le simulateur, amenez le pointeur au-dessus du titre du premier élément dans la liste, **titre de groupe : 1**, dans le volet gauche de la page d’accueil. Le titre est mis en surbrillance, comme illustré ci-après :  
   
      ![L’aide du bouton Sélectionner un élément](../debugger/media/js-css-select-element.png "JS_CSS_Select_Element")  
   
@@ -162,10 +157,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 16. Pour modifier le fichier CSS source, cliquez sur le lien **items.css** sous l’onglet **Styles** . Vous ouvrez ainsi items.css, dans lequel vous pouvez modifier la valeur du style `color` de votre code d’application. Pour actualiser l’application sans arrêter et redémarrer le débogueur, cliquez sur le ![bouton d’application Windows Actualiser](../debugger/media/js-refresh.png "JS_Refresh") (**Windows actualiser application**) bouton sur le **Déboguer** barre d’outils.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Démarrage rapide : Déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Déboguer la disposition à l’aide de l’Explorateur DOM](../debugger/debug-layout-using-dom-explorer.md)   
  [Afficher les écouteurs d’événements DOM](../debugger/view-dom-event-listeners.md)   
  [Support technique et accessibilité](http://go.microsoft.com/fwlink/?LinkId=253502)
-
-
-

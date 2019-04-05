@@ -1,25 +1,22 @@
 ---
 title: Définir un gestionnaire de liaison des éléments de travail | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: d52e0bbf-0166-4bb4-a2e3-cefed6188875
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7ce74627d1d2d48ab02e0b124fbc38949f1f76f9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7bc151e69206e37f88eac04ac8bbb2f4d9dbf1ad
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733065"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948918"
 ---
 # <a name="define-a-work-item-link-handler"></a>Définir un gestionnaire de liens d’éléments de travail
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +28,7 @@ Vous pouvez créer une extension d’intégration Visual Studio qui répond quan
   
 -   un projet de bibliothèque de classes qui contient le code du gestionnaire de liens ;  
   
--   un projet VSIX qui joue le rôle de conteneur pour l'installation de la commande. Si vous le souhaitez, vous pouvez inclure d'autres composants dans le même VSIX.  
+-   un projet VSIX qui joue le rôle de conteneur pour l'installation de la commande. Si vous le souhaitez, vous pouvez inclure d’autres composants dans le même VSIX.  
   
 #### <a name="to-set-up-the-visual-studio-solution"></a>Pour configurer la solution Visual Studio  
   
@@ -72,7 +69,7 @@ Vous pouvez créer une extension d’intégration Visual Studio qui répond quan
 ## <a name="defining-the-work-item-link-handler"></a>Définition du gestionnaire de liens d’éléments de travail  
  Effectuez toutes les tâches suivantes dans le projet de bibliothèque de classes.  
   
-### <a name="project-references"></a>Références du projet  
+### <a name="project-references"></a>Références de projets  
  Ajoutez les assemblys [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] suivants à vos références de projet :  
   
  `Microsoft.TeamFoundation.WorkItemTracking.Client.dll`  
@@ -106,7 +103,7 @@ using Microsoft.VisualStudio.TeamFoundation.WorkItemTracking;
 using System.Linq;  
 ```  
   
-### <a name="define-the-linked-work-item-event-handler"></a>Définir le gestionnaire d'événements de l'élément de travail lié  
+### <a name="define-the-linked-work-item-event-handler"></a>Définir le gestionnaire d’événements de l’élément de travail lié  
  Ajoutez un fichier de classe au projet de bibliothèque de classes et définissez son contenu comme indiqué ci-dessous. Adaptez le nom de la classe et de l'espace de noms à vos besoins.  
   
 ```  
@@ -155,7 +152,7 @@ namespace WorkItems
  À des fins de test, exécutez votre gestionnaire de liens en mode débogage.  
   
 > [!WARNING]
->  Vous devez être connecté à un contrôle de code source (SSC, Source Code Control) TFS pour créer un élément de travail ou un lien vers celui-ci. Si vous essayez d'ouvrir une connexion à un autre contrôle de code source TFS, Visual Studio ferme automatiquement la solution actuelle. Vérifiez que vous êtes connecté au contrôle de code source TFS approprié avant d'essayer de créer un élément de travail ou un lien vers celui-ci. Dans les versions ultérieures de Visual Studio, les commandes de menu ne sont pas disponibles si vous n'êtes pas connecté à un contrôle de code source.  
+>  Vous devez être connecté à un contrôle de code source (SSC, Source Code Control) TFS pour créer un élément de travail ou un lien vers celui-ci. Si vous essayez d'ouvrir une connexion à un autre contrôle de code source TFS, Visual Studio ferme automatiquement la solution actuelle. Vérifiez que vous êtes connecté au contrôle de code source TFS approprié avant d’essayer de créer un élément de travail ou un lien vers celui-ci. Dans les versions ultérieures de Visual Studio, les commandes de menu ne sont pas disponibles si vous n'êtes pas connecté à un contrôle de code source.  
   
 #### <a name="to-test-the-link-handler"></a>Pour tester le gestionnaire de liens  
   
@@ -163,7 +160,7 @@ namespace WorkItems
   
      Une instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] démarre.  
   
-     **Résolution des problèmes**: si un nouveau [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ne démarre pas, vérifiez que le projet VSIX est défini comme projet de démarrage de la solution.  
+     **Résolution des problèmes**: Si un nouveau [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ne démarre pas, vérifiez que le projet VSIX est défini comme projet de démarrage de la solution.  
   
 2.  Dans l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ouvrez ou créez un projet de modélisation, puis ouvrez ou créez un diagramme de modélisation.  
   
@@ -177,13 +174,13 @@ namespace WorkItems
   
          Un nouveau formulaire d'élément de travail s'ouvre.  
   
-5.  Vérifiez que le titre de l'élément de travail est le même que celui de l'élément de modèle si vous avez utilisé l'exemple de code donné dans la section précédente. Cela prouve que `OnWorkItemCreated()` a correctement fonctionné.  
+5.  Vérifiez que le titre de l’élément de travail est le même que celui de l’élément de modèle si vous avez utilisé l’exemple de code donné dans la section précédente. Cela prouve que `OnWorkItemCreated()` a correctement fonctionné.  
   
 6.  Complétez le formulaire, puis enregistrez et fermez l'élément de travail.  
   
-7.  Vérifiez que l'élément de travail est maintenant de couleur rouge. Cela met en évidence `OnWorkItemLinked()` dans l'exemple de code.  
+7.  Vérifiez que l’élément de travail est maintenant de couleur rouge. Cela met en évidence `OnWorkItemLinked()` dans l'exemple de code.  
   
-     **Résolution des problèmes**: si les méthodes de gestionnaire n’ont pas été exécutés, vérifiez que :  
+     **Résolution des problèmes**: Si les méthodes de gestionnaire n’ont pas été exécutés, vérifiez que :  
   
     -   Le projet de bibliothèque de classes est répertorié en tant que composant MEF dans le **contenu** liste **source.extensions.manifest** dans le projet VSIX.  
   
@@ -191,10 +188,10 @@ namespace WorkItems
   
     -   les paramètres de tous les attributs `Import` et `Export` sont valides.  
   
-## <a name="about-the-work-item-handler-code"></a>À propos du code du gestionnaire d'éléments de travail  
+## <a name="about-the-work-item-handler-code"></a>À propos du code du gestionnaire d’éléments de travail  
   
 ### <a name="listening-for-new-work-items"></a>Écoute de nouveaux éléments de travail  
- `OnWorkItemCreated` est appelé quand l'utilisateur choisit de créer un élément de travail à lier aux éléments de modèle. Votre code peut initialiser les champs d'éléments de travail. L'élément de travail est ensuite présenté à l'utilisateur, qui peut mettre à jour les champs et enregistrer l'élément de travail. Le lien vers un élément de modèle n'est pas créé tant que l'élément de travail n'a pas été enregistré avec succès.  
+ `OnWorkItemCreated` est appelé quand l'utilisateur choisit de créer un élément de travail à lier aux éléments de modèle. Votre code peut initialiser les champs d’éléments de travail. L'élément de travail est ensuite présenté à l'utilisateur, qui peut mettre à jour les champs et enregistrer l'élément de travail. Le lien vers un élément de modèle n’est pas créé tant que l’élément de travail n’a pas été enregistré avec succès.  
   
 ```  
 public void OnWorkItemCreated(  
@@ -235,7 +232,7 @@ public void OnWorkItemRemoved
 {...}  
 ```  
   
-## <a name="updating-a-work-item"></a>Mise à jour d'un élément de travail  
+## <a name="updating-a-work-item"></a>Mise à jour d’un élément de travail  
  Vous pouvez manipuler un élément de travail à l'aide des espaces de noms Team Foundation.  
   
  Pour utiliser l'exemple suivant, ajoutez ces assemblys .NET aux références de votre projet :  
@@ -265,7 +262,7 @@ public void OnWorkItemLinked
 }   
 ```  
   
-## <a name="accessing-the-work-item-reference-links"></a>Accès aux liens de la référence de l'élément de travail  
+## <a name="accessing-the-work-item-reference-links"></a>Accès aux liens de la référence de l’élément de travail  
  Vous pouvez accéder aux liens comme suit :  
   
 ```  
@@ -304,6 +301,3 @@ element.AddReference(ReferenceConstants.WorkItem, linkString, true);
  [Attacher des chaînes de référence à des éléments de modèle UML](../modeling/attach-reference-strings-to-uml-model-elements.md)   
  [Définir et installer une extension de modélisation](../modeling/define-and-install-a-modeling-extension.md)   
  [Programmation avec l’API UML](../modeling/programming-with-the-uml-api.md)
-
-
-

@@ -1,23 +1,20 @@
 ---
 title: Définition de formes et connecteurs | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 1fae548d-9288-4dd5-a24f-ff0d69c73628
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 61cd27b307b4761e3f7773f91583965466892285
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 02b470926001c08695bc6c18712cbd0db41503cf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812944"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950172"
 ---
 # <a name="defining-shapes-and-connectors"></a>Définition de formes et de connecteurs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,10 +43,7 @@ Il existe plusieurs types élémentaires de formes que vous pouvez utiliser pour
 |Forme image|Forme qui affiche une image.|  
 |Forme port|Petit rectangle destiné à être attaché au contour d'une autre forme. Généralement utilisé dans les modèles de composants.<br /><br /> L'élément de modèle représenté par un port est généralement incorporé sous l'élément représenté par la forme parente. À titre d'exemple, créez un DSL à partir du modèle de solution Composants.<br /><br /> Par défaut, une forme port peut glisser le long des côtés de sa forme parente. Vous pouvez définir une règle des limites pour la contraindre à un emplacement particulier.<br /><br /> En rendant une forme port très petite et transparente, vous pouvez l'utiliser pour fournir un point de connexion fixe sur la surface de sa forme parente.|  
 |Couloirs|Les couloirs partitionnent un diagramme en segments horizontaux ou verticaux. Le couloir demeure toujours sous les autres formes du diagramme.<br /><br /> Généralement, les éléments de modèle du couloir sont apparentés à la racine du modèle et les autres éléments leur sont apparentés à leur tour. À titre d'exemple, créez un DSL à partir du modèle de solution Flux de tâches.|  
-|Connecteurs|Les lignes tracées entre les formes représentent généralement les relations de référence. Vous pouvez définir des options pour rendre un connecteur droit ou rectiligne, ainsi que pour obtenir différents types de flèche.|  
+|Connectors|Les lignes tracées entre les formes représentent généralement les relations de référence. Vous pouvez définir des options pour rendre un connecteur droit ou rectiligne, ainsi que pour obtenir différents types de flèche.|  
   
 ##  <a name="shapeInheritance"></a> Héritage de forme  
  Une forme peut hériter d'une autre forme. Cependant, les formes doivent être du même type. Par exemple, seule une forme géométrique peut hériter d'une forme géométrique. Les formes héritées possèdent les compartiments et décorateurs de leur forme de base. Les connecteurs peuvent hériter de connecteurs.
-
-
-

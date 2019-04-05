@@ -1,6 +1,6 @@
 ---
 title: Création de modèles de projets et modèles d’élément | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 ms.assetid: 586da5dc-f678-402b-afd0-0332959fd7a6
 author: gregvanl
@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 733ffa76fdc24639d0e379b7e00a4a8c72a5f40e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 01af6001bd116fd2b523668eddbdc68d2dd5beab
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714320"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194468"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Créer des modèles de projet et d’élément personnalisés
 
@@ -30,37 +30,37 @@ Pour les scénarios de création de modèle de base, vous devez utiliser le **Ex
 
 ## <a name="create-a-project-template"></a>Créer un modèle de projet
 
-1.  Créez un projet de modèle de projet. Vous pouvez trouver le modèle de projet dans le **nouveau projet** boîte de dialogue, dans Visual Basic ou Visual c# *extensibilité* dossier.
+1. Créez un projet de modèle de projet. Vous pouvez trouver le modèle de projet dans le **nouveau projet** boîte de dialogue, en recherchant « modèle de projet » et en sélectionnant le C# ou la version Visual Basic.
 
      Le modèle génère un fichier de classe, une icône, une *.vstemplate* de fichiers, un fichier de projet modifiable nommé *ProjectTemplate.vbproj* ou *ProjectTemplate.csproj*et certains fichiers qui sont généralement générés par d’autres types de projet, tel un *resources.resx* fichier, un *AssemblyInfo* fichier et un *.settings* fichier. Chaque fichier de code contient des substitutions de paramètre commun le cas échéant.
 
-2.  Ajouter et supprimer des éléments à partir du projet en fonction des besoins de votre projet. Ne supprimez pas le fichier projet modifiable, la *AssemblyInfo* fichier, ou le *.vstemplate* fichier.
+2. Ajouter et supprimer des éléments à partir du projet en fonction des besoins de votre projet. Ne supprimez pas le fichier projet modifiable, la *AssemblyInfo* fichier, ou le *.vstemplate* fichier.
 
-3.  Mise à jour le *.vstemplate* fichier afin de refléter les ajouts et les suppressions. Le [projet](../extensibility/project-element-visual-studio-templates.md) élément doit contenir un [ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md) élément pour chaque fichier à inclure dans le modèle.
+3. Mise à jour le *.vstemplate* fichier afin de refléter les ajouts et les suppressions. Le [projet](../extensibility/project-element-visual-studio-templates.md) élément doit contenir un [ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md) élément pour chaque fichier à inclure dans le modèle.
 
-4.  Modifier vos fichiers de code et d’autres contenus visibles par l’utilisateur et ajoutez des substitutions de paramètre appropriée.
+4. Modifier vos fichiers de code et d’autres contenus visibles par l’utilisateur et ajoutez des substitutions de paramètre appropriée.
 
-5.  Modifier le contenu généré en fonction des besoins.
+5. Modifier le contenu généré en fonction des besoins.
 
-6.  Générez le projet.
+6. Générez le projet.
 
      Visual Studio crée un *.zip* fichier qui contient votre modèle. Il n’est pas déployée, et il n’est pas disponible dans l’instance expérimentale.
 
 ## <a name="create-an-item-template"></a>Créer un modèle d’élément
 
-1.  Créer un projet de modèle d’élément.
+1. Créer un projet de modèle d’élément.
 
      Le modèle génère un fichier de classe, une icône, une *.vstemplate* fichier et un *AssemblyInfo* fichier. Le fichier de classe contient des substitutions de paramètre commun.
 
-2.  Ajouter et supprimer des éléments à partir du projet en fonction des besoins de votre projet.
+2. Ajouter et supprimer des éléments à partir du projet en fonction des besoins de votre projet.
 
-3.  Mise à jour le *.vstemplate* fichier afin de refléter les ajouts et les suppressions. Le [projet](../extensibility/project-element-visual-studio-templates.md) élément doit contenir un [ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md) élément pour chaque fichier à inclure dans le modèle.
+3. Mise à jour le *.vstemplate* fichier afin de refléter les ajouts et les suppressions. Le [projet](../extensibility/project-element-visual-studio-templates.md) élément doit contenir un [ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md) élément pour chaque fichier à inclure dans le modèle.
 
-4.  Modifier vos fichiers de code et d’autres contenus visibles par l’utilisateur et ajoutez des substitutions de paramètre appropriée.
+4. Modifier vos fichiers de code et d’autres contenus visibles par l’utilisateur et ajoutez des substitutions de paramètre appropriée.
 
-5.  Modifier le contenu généré en fonction des besoins.
+5. Modifier le contenu généré en fonction des besoins.
 
-6.  Générez le projet.
+6. Générez le projet.
 
      Visual Studio crée un fichier compressé qui contient votre modèle. Il n’est pas déployée, et il n’est pas disponible dans l’instance expérimentale.
 
@@ -68,19 +68,19 @@ Pour les scénarios de création de modèle de base, vous devez utiliser le **Ex
 
 ### <a name="to-deploy-the-project-or-item-template"></a>Pour déployer le modèle de projet ou un élément
 
-1.  Créez un projet VSIX. Pour plus d’informations, consultez [modèle de projet VSIX](../extensibility/vsix-project-template.md).
+1. Créez un projet VSIX. Pour plus d’informations, consultez [modèle de projet VSIX](../extensibility/vsix-project-template.md).
 
-2.  Définissez le projet VSIX comme projet de démarrage. Dans le **l’Explorateur de solutions**, sélectionnez le nœud du projet VSIX, avec le bouton droit, puis sélectionnez **définir comme projet de démarrage**.
+2. Définissez le projet VSIX comme projet de démarrage. Dans le **l’Explorateur de solutions**, sélectionnez le nœud du projet VSIX, avec le bouton droit, puis sélectionnez **définir comme projet de démarrage**.
 
-3.  Définissez le projet de modèle de projet en tant qu’actif du projet VSIX. Ouvrez le *.vsixmanifest* fichier. Accédez à la **actifs** onglet et cliquez sur **New**.
+3. Définissez le projet de modèle de projet en tant qu’actif du projet VSIX. Ouvrez le *.vsixmanifest* fichier. Accédez à la **actifs** onglet et cliquez sur **New**.
 
-    1.  Définir le **Type** champ **Microsoft.VisualStudio.ProjectTemplate** ou **Microsoft.VisualStudio.ItemTemplate**.
+    1. Définir le **Type** champ **Microsoft.VisualStudio.ProjectTemplate** ou **Microsoft.VisualStudio.ItemTemplate**.
 
-    2.  Pour la source, sélectionnez le **un projet dans la solution actuelle** option, puis sélectionnez le projet qui contient votre modèle.
+    2. Pour la source, sélectionnez le **un projet dans la solution actuelle** option, puis sélectionnez le projet qui contient votre modèle.
 
-4.  Générer la solution, puis appuyez sur **F5**. L’instance expérimentale s’affiche.
+4. Générer la solution, puis appuyez sur **F5**. L’instance expérimentale s’affiche.
 
-5.  Pour un projet de modèle de projet, vous devez voir votre modèle de projet répertorié dans le **nouveau projet** boîte de dialogue (**fichier** > **New**  >  **Projet**), dans le nœud Visual Basic ou Visual c#. Pour un projet de modèle d’élément, vous devez voir votre modèle d’élément répertoriée dans le **ajouter un nouvel élément** boîte de dialogue. Pour afficher le **ajouter un nouvel élément** boîte de dialogue, à partir de la **l’Explorateur de solutions**, sélectionnez le nœud du projet, puis cliquez sur **ajouter** > **unnouvelélément**).
+5. Pour un projet de modèle de projet, vous devez voir votre modèle de projet répertorié dans le **nouveau projet** boîte de dialogue (**fichier** > **New**  >  **Projet**), dans le nœud Visual Basic ou Visual c#. Pour un projet de modèle d’élément, vous devez voir votre modèle d’élément répertoriée dans le **ajouter un nouvel élément** boîte de dialogue. Pour afficher le **ajouter un nouvel élément** boîte de dialogue, à partir de la **l’Explorateur de solutions**, sélectionnez le nœud du projet, puis cliquez sur **ajouter** > **unnouvelélément**).
 
 ## <a name="see-also"></a>Voir aussi
 

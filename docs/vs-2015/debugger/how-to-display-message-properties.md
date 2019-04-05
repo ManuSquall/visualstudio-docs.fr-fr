@@ -1,29 +1,24 @@
 ---
-title: 'Comment : afficher les propriétés de Message | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Afficher les propriétés de Message | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - message properties in SpyHelp
 ms.assetid: 8b72b071-691b-48b7-8852-f748c20fc787
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ae1f0bf05d2bfdc90875b62ebad964bf8d37204f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b440d2883a06b41b751b6ae84e41b118e864cfec
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748693"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954021"
 ---
-# <a name="how-to-display-message-properties"></a>Comment : afficher les propriétés d'un message
+# <a name="how-to-display-message-properties"></a>Procédure : Afficher les propriétés d’un message
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pour en savoir plus sur un message répertorié dans [vue Messages](../debugger/messages-view.md), utilisez le [boîte de dialogue Propriétés de Message](../debugger/message-properties-dialog-box.md).  
@@ -35,6 +30,3 @@ Pour en savoir plus sur un message répertorié dans [vue Messages](../debugger/
 2. À partir de la **vue** menu, choisissez **propriétés**.  
   
    Boîtes de dialogue de propriétés ne sont pas modales, afin que vous pouvez cliquer sur un autre élément dans une fenêtre d’affichage et de la boîte de dialogue s’affiche plus d’informations sur l’élément sélectionné.
-
-
-

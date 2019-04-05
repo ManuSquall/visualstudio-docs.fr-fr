@@ -1,27 +1,22 @@
 ---
 title: Analyseur de Service de langage hérité et le moteur d’analyse | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - parsers, language services [managed package framework]
 - language services [managed package framework], Parsers
 ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fd419c569a298afd37548fd7b85a23cad733e371
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4d5110c0289a630640fdb2c2383234173d931c72
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786397"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950254"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Scanneur et analyseur du service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,14 +43,14 @@ namespace MyNamespace
   
 |Nom du jeton|Type de jeton|  
 |----------------|----------------|  
-|espace de noms, void publique, classe, int|keyword|  
-|=|opérateur|  
-|{ } ( ) ;|Délimiteur|  
+|namespace, class, public, void, int|keyword|  
+|=|operator|  
+|{ } ( ) ;|délimiteur|  
 |MyNamespace, MyClass, MyFunction, arg1, var1|'identificateur'|  
 |MyNamespace|namespace|  
 |MyClass|class|  
 |MyFunction|méthode|  
-|arg1|parameter|  
+|arg1|paramètre|  
 |var1|variable locale|  
   
  Le rôle de l’analyseur consiste à identifier les jetons. Bien que certains jetons peuvent avoir plusieurs types. Une fois que l’analyseur a identifié les jetons, le service de langage peut utiliser les informations pour fournir des fonctionnalités utiles, telles que la coloration syntaxique, correspondance des accolades et les opérations IntelliSense.  
@@ -63,7 +58,7 @@ namespace MyNamespace
 ## <a name="types-of-parsers"></a>Types d’analyseurs  
  Un analyseur de service de langage n’est pas identique à un analyseur utilisé dans le cadre d’un compilateur. Toutefois, ce type d’analyseur doit utiliser un analyseur et un analyseur, dans la même façon que d’un analyseur du compilateur.  
   
-- Un scanneur est utilisé pour identifier les types de jetons. Ces informations sont utilisées pour la coloration syntaxique et identifier rapidement les types de jetons qui peuvent déclencher d’autres opérations, par exemple, la correspondance des accolades. Ce scanneur est représenté par le <xref:Microsoft.VisualStudio.Package.IScanner> interface.  
+- Un scanneur est utilisé pour identifier les types de jetons. Ces informations sont utilisées pour mettre en surbrillance la syntaxe et identifier rapidement les types de jetons qui peuvent déclencher d'autres opérations, par exemple des accolades correspondantes. Ce scanneur est représenté par le <xref:Microsoft.VisualStudio.Package.IScanner> interface.  
   
 - Un analyseur est utilisé pour décrire les fonctions et l’étendue des jetons. Ces informations sont utilisées dans les opérations IntelliSense pour identifier les éléments de langage, tels que les méthodes, les variables, les paramètres et les déclarations et pour fournir des listes de membres et les signatures de méthode en fonction du contexte. Cet analyseur est également utilisé pour localiser des paires d’éléments de langage correspondant, tels que des accolades et des parenthèses. Cet analyseur est accessible via la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> méthode dans la <xref:Microsoft.VisualStudio.Package.LanguageService> classe.  
   
@@ -120,7 +115,7 @@ namespace MyNamespace
 12. Terminé.  
   
 ### <a name="summary"></a>Récapitulatif  
- L’opération d’accolades correspondante est généralement limitée à simples paires d’éléments de langage. Des éléments plus complexes, telles que la mise en correspondance triplets («`if(…)`«, »`{`« et »`}`», ou «`else`«, »`{`« et »`}`»), peut être mis en surbrillance dans le cadre d’une opération de saisie semi-automatique par word. Par exemple, lorsque le mot « else » est terminé, la mise en correspondance «`if`» instruction peut être mis en surbrillance. S’il y avait une série de `if` / `else if` instructions, tous les peuvent être mis en surbrillance à l’aide du même mécanisme comme accolades correspondantes. Le <xref:Microsoft.VisualStudio.Package.Source> classe de base prend déjà en charge, comme suit : l’analyseur doit retourner la valeur du jeton de déclencheur <xref:Microsoft.VisualStudio.Package.TokenTriggers> combinée avec la valeur de déclencheur <xref:Microsoft.VisualStudio.Package.TokenTriggers> pour le jeton qui se trouve avant la position du curseur.  
+ L’opération d’accolades correspondante est généralement limitée à simples paires d’éléments de langage. Des éléments plus complexes, telles que la mise en correspondance triplets («`if(…)`«, »`{`« et »`}`», ou «`else`«, »`{`« et »`}`»), peut être mis en surbrillance dans le cadre d’une opération de saisie semi-automatique par word. Par exemple, lorsque le mot « else » est terminé, la mise en correspondance «`if`» instruction peut être mis en surbrillance. S’il y avait une série de `if` / `else if` instructions, tous les peuvent être mis en surbrillance à l’aide du même mécanisme comme accolades correspondantes. Le <xref:Microsoft.VisualStudio.Package.Source> classe de base prend déjà en charge, comme suit : L’analyseur doit retourner la valeur du jeton de déclencheur <xref:Microsoft.VisualStudio.Package.TokenTriggers> combinée avec la valeur de déclencheur <xref:Microsoft.VisualStudio.Package.TokenTriggers> pour le jeton qui se trouve avant la position du curseur.  
   
  Pour plus d’informations, consultez [accolades correspondantes dans un Service de langage hérité](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md).  
   
@@ -143,4 +138,3 @@ namespace MyNamespace
  [Vue d’ensemble du Service de langage hérité](../../extensibility/internals/legacy-language-service-overview.md)   
  [Couleurs de syntaxe dans un Service de langage hérité](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)   
  [Accolades correspondantes dans un service de langage hérité](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)
-

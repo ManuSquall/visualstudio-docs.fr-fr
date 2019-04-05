@@ -9,12 +9,12 @@ caps.latest.revision: 134
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c8cf042ce5a0b713eccdf9c89b15dcb57cf966ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b3c9c1ac41247a4576661ed7f985fe1e5385b3dd
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753898"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195110"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Rechercher les modifications de code et d'autres historiques avec CodeLens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ Restez concentré sur votre travail pendant que vous cherchez ce qui est arrivé
 ### <a name="find-changes-in-your-code"></a>Rechercher des modifications dans votre code  
  Recherchez qui a modifié votre code C# ou Visual Basic, ainsi que les modifications apportées, dans les indicateurs de niveau d'élément de code C’est ce que vous voyez quand vous utilisez la gestion de version Team Foundation (TFVC) dans Team Foundation Server ou Visual Studio Team Services.  
   
- ![CodeLens : Obtenir modifications l’historique de votre code dans TFVC](../ide/media/codelenscodechanges.png "CodeLensCodeChanges")  
+ ![CodeLens : obtenir l’historique des modifications de votre code dans TFVC](../ide/media/codelenscodechanges.png "CodeLensCodeChanges")  
   
  La période prise en charge par défaut s'étend sur les 12 derniers mois. Si votre code est stocké dans Team Foundation Server, vous pouvez modifier cette période en exécutant la [commande TFSConfig](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62) avec la [commande CodeIndex](../ide/codeindex-command.md) et l'indicateur **/indexHistoryPeriod** .  
   
@@ -95,42 +95,42 @@ Restez concentré sur votre travail pendant que vous cherchez ce qui est arrivé
   
  Quand vos fichiers sont dans un dépôt Git et que vous choisissez l'indicateur de modifications de niveau d'élément de code, voici ce que vous voyez.  
   
- ![CodeLens : Obtenir modifications l’historique de votre code dans Git](../ide/media/codelenscodechangesgit.png "CodeLensCodeChangesGit")  
+ ![CodeLens : obtenir l’historique des modifications de votre code dans Git](../ide/media/codelenscodechangesgit.png "CodeLensCodeChangesGit")  
   
  Recherchez les modifications pour un fichier entier (à l'exception des fichiers C# et Visual Basic) dans les indicateurs de niveau fichier au bas de la fenêtre.  
   
- ![CodeLens : Obtenir des détails du fichier de code](../ide/media/codelensfilelevel.png "CodeLensFileLevel")  
+ ![CodeLens : obtenir des détails sur le fichier de code](../ide/media/codelensfilelevel.png "CodeLensFileLevel")  
   
  Pour obtenir plus d'informations sur une modification, cliquez avec le bouton droit sur cet élément. Selon que vous utilisez TFVC ou Git, vous obtenez une série d'options permettant de comparer les versions du fichier, d'afficher les détails et d'effectuer le suivi de l'ensemble de modifications, d'obtenir la version sélectionnée du fichier et d'envoyer un courrier électronique à l'auteur de cette modification. Certaines de ces informations apparaissent dans Team Explorer.  
   
  Vous pouvez également voir qui a modifié votre code au fil du temps. Cette fonctionnalité vous permet de découvrir des modèles dans les modifications effectuées par votre équipe, et d’en évaluer l’impact.  
   
- ![CodeLens : Voir code modifie l’historique sous forme de graphique](../ide/media/codelens.png "CodeLens")  
+ ![CodeLens : voir l’historique des modifications du code sous forme de graphique](../ide/media/codelens.png "CodeLens")  
   
 #### <a name="find-changes-in-your-current-branch"></a>Rechercher des modifications dans votre branche actuelle  
  Supposez que votre équipe a plusieurs branches (une branche principale et un développement enfant) pour réduire le risque de rupture du code stable :  
   
- ![CodeLens : Rechercher quand votre code possède une branche](../ide/media/codelensfirstbranchconceptual.png "CodeLensFirstBranchConceptual")  
+ ![CodeLens : rechercher quand une branche a été créée dans votre code](../ide/media/codelensfirstbranchconceptual.png "CodeLensFirstBranchConceptual")  
   
  Découvrez combien de personnes ont modifié votre code et combien de modifications ont été apportées (**Alt + 6**) dans votre branche principale :  
   
- ![CodeLens : Rechercher le nombre de modifications dans votre branche](../ide/media/codelensbranchchanges.png "CodeLensBranchChanges")  
+ ![CodeLens : rechercher le nombre de modifications dans votre branche](../ide/media/codelensbranchchanges.png "CodeLensBranchChanges")  
   
 #### <a name="find-when-your-code-was-branched"></a>Savoir quand une branche a été créée dans votre code  
  Accédez à votre code dans la branche enfant, par exemple la branche Dev. Choisissez l'indicateur de modifications (**Alt + 6**) :  
   
- ![CodeLens : Rechercher quand votre code possède une branche](../ide/media/codelensfirstbranchscreenshot.png "CodeLensFirstBranchScreenshot")  
+ ![CodeLens : rechercher quand une branche a été créée dans votre code](../ide/media/codelensfirstbranchscreenshot.png "CodeLensFirstBranchScreenshot")  
   
 #### <a name="find-incoming-changes-from-other-branches"></a>Rechercher les modifications entrantes d'autres branches  
- ![CodeLens : Rechercher des modifications du code dans d’autres branches](../ide/media/codelensbranchchangecheckinconceptual.png "CodeLensBranchChangeCheckinConceptual")  
+ ![CodeLens : rechercher les modifications de code dans d’autres branches](../ide/media/codelensbranchchangecheckinconceptual.png "CodeLensBranchChangeCheckinConceptual")  
   
  …comme cette résolution de bogue dans la branche Dev :  
   
- ![CodeLens : Modification archivée dans une autre branche](../ide/media/codelensbranchchangedevscreenshot.png "CodeLensBranchChangeDevScreenshot")  
+ ![CodeLens : modification archivée dans une autre branche](../ide/media/codelensbranchchangedevscreenshot.png "CodeLensBranchChangeDevScreenshot")  
   
  Vous pouvez examiner cette modification sans quitter votre branche actuelle (Main) :  
   
- ![CodeLens : Voir les modifications entrantes à partir d’une autre branche](../ide/media/codelensbranchchangemainscreenshot.png "CodeLensBranchChangeMainScreenshot")  
+ ![CodeLens : voir les modifications entrantes d’une autre branche](../ide/media/codelensbranchchangemainscreenshot.png "CodeLensBranchChangeMainScreenshot")  
   
 #### <a name="find-when-changes-got-merged"></a>Savoir quand des modifications ont été fusionnées  
  Vous pouvez ainsi identifier les modifications qui sont incluses dans votre branche :  
@@ -142,7 +142,7 @@ Restez concentré sur votre travail pendant que vous cherchez ce qui est arrivé
  ![CodeLens &#45; Modifications fusionnées entre les branches](../ide/media/codelensbranchmergedscreenshot.png "CodeLensBranchMergedScreenshot")  
   
 #### <a name="compare-an-incoming-change-with-your-local-version-shift--f10"></a>Comparer une modification entrante à votre version locale (Maj + F10)  
- ![CodeLens : Comparer la modification entrante](../ide/media/codelensbranchincomingchangemenu.png "CodeLensBranchIncomingChangeMenu")  
+ ![CodeLens : comparer la modification entrante et la modification locale](../ide/media/codelensbranchincomingchangemenu.png "CodeLensBranchIncomingChangeMenu")  
   
  Vous pouvez également double-cliquer sur l'ensemble de modifications.  
   
@@ -150,14 +150,14 @@ Restez concentré sur votre travail pendant que vous cherchez ce qui est arrivé
   
 |**Icône**|**D’où provient la modification ?**|  
 |--------------|-----------------------------------------|  
-|![CodeLens : Icône changer à partir actuel branche](../ide/media/codelensbranchcurrenticon.png "CodeLensBranchCurrentIcon")|La branche actuelle|  
+|![CodeLens : icône Changer à partir de la branche actuelle](../ide/media/codelensbranchcurrenticon.png "CodeLensBranchCurrentIcon")|La branche actuelle|  
 |![CodeLens &#45; Icône Changer à partir de la branche parente](../ide/media/codelensbranchparenticon.png "CodeLensBranchParentIcon")|La branche parente|  
-|![CodeLens : Icône changer à partir enfant branche](../ide/media/codelensbranchchildicon.png "CodeLensBranchChildIcon")|Un branche enfant|  
+|![CodeLens : icône Changer à partir de la branche enfant](../ide/media/codelensbranchchildicon.png "CodeLensBranchChildIcon")|Un branche enfant|  
 |![CodeLens &#45; Icône Changer à partir de la branche homologue](../ide/media/codelensbranchpeericon.png "CodeLensBranchPeerIcon")|Une branche homologue|  
 |![CodeLens &#45; Icône Changer à partir d’une branche plus éloignée](../ide/media/codelensbranchfurtherawayicon.png "CodeLensBranchFurtherAwayIcon")|Une branche plus éloignée qu'un parent, enfant ou homologue|  
-|![CodeLens : Icône fusionner à partir parent](../ide/media/codelensbranchmergefromparenticon.png "CodeLensBranchMergeFromParentIcon")|Une fusion de la branche parente à une branche enfant|  
-|![CodeLens : Icône fusionner à partir enfant branche](../ide/media/codelensbranchmergefromchildicon.png "CodeLensBranchMergeFromChildIcon")|Une fusion d'une branche enfant à la branche parente|  
-|![CodeLens : Icône fusionner à partir branche sans relation](../ide/media/codelensbranchmergefromunrelatedicon.png "CodeLensBranchMergeFromUnrelatedIcon")|Une fusion d'une branche sans relation (fusion sans base)|  
+|![CodeLens : icône Fusionner à partir du parent](../ide/media/codelensbranchmergefromparenticon.png "CodeLensBranchMergeFromParentIcon")|Une fusion de la branche parente à une branche enfant|  
+|![CodeLens : icône Fusionner à partir de la branche enfant](../ide/media/codelensbranchmergefromchildicon.png "CodeLensBranchMergeFromChildIcon")|Une fusion d'une branche enfant à la branche parente|  
+|![CodeLens : icône Fusionner à partir d’une branche sans relation](../ide/media/codelensbranchmergefromunrelatedicon.png "CodeLensBranchMergeFromUnrelatedIcon")|Une fusion d'une branche sans relation (fusion sans base)|  
   
 ### <a name="find-linked-work-items"></a>Rechercher des éléments de travail liés  
  ![CodeLens &#45; Rechercher des éléments de travail pour un code spécifique](../ide/media/codelensworkitems.png "CodeLensWorkItems")  
@@ -206,7 +206,7 @@ Restez concentré sur votre travail pendant que vous cherchez ce qui est arrivé
   
 ##  <a name="QA"></a> Q et R  
   
-###  <a name="ChangeOrTurnOff"></a> Q : Comment activer ou désactiver le CodeLens ? Ou comment choisir les indicateurs à afficher ?  
+###  <a name="ChangeOrTurnOff"></a> Q : comment activer ou désactiver CodeLens ? Ou comment choisir les indicateurs à afficher ?  
  **R :**  Vous pouvez activer ou désactiver les indicateurs, à l'exception de l'indicateur des références. Accédez à **Outils**, **Options**, **Éditeur de texte**, **Tous les langages**, **CodeLens**.  
   
  Lorsque les indicateurs sont activés, vous pouvez aussi ouvrir les options CodeLens à partir des indicateurs.  
@@ -224,7 +224,7 @@ Restez concentré sur votre travail pendant que vous cherchez ce qui est arrivé
   
 -   Si votre code est stocké dans TFS, assurez-vous que l'indexation de code est activée en utilisant la [commande CodeIndex](../ide/codeindex-command.md) avec la [commande TFS Config](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62).  
   
--   Les indicateurs liés au TFS s'affichent uniquement si des éléments de travail sont liés au code et lorsque vous êtes autorisé à ouvrir les éléments de travail liés. [Confirmez que vous disposez des autorisations de membre de l'équipe.](http://msdn.microsoft.com/f58805de-ba61-4d09-8f2d-d3ab9662ecfd)  
+-   Les indicateurs liés au TFS s'affichent uniquement si des éléments de travail sont liés au code et lorsque vous êtes autorisé à ouvrir les éléments de travail liés. [Confirmez que vous disposez des autorisations de membre de l'équipe.](/azure/devops/organizations/security/view-permissions)  
   
 -   Les indicateurs de test unitaire ne s'affichent pas quand le code de l'application ne contient pas de tests unitaires. Les indicateurs d'état de test s'affichent automatiquement dans les projets de test. Si vous savez que le code de votre application contient des tests unitaires, mais que les indicateurs de test ne s'affichent pas, essayez de générer la solution (**Ctrl+Maj+B**).  
   
@@ -273,11 +273,11 @@ Restez concentré sur votre travail pendant que vous cherchez ce qui est arrivé
   
      ![CodeLens &#45; Ancrer en tant que fenêtre](../ide/media/codelensviewreferencesdocked.png "CodeLensViewReferencesDocked")  
   
--   **Équipe** : Actualisez manuellement ces indicateurs ici :  
+-   **Équipe**: actualisez manuellement ces indicateurs ici :  
   
      ![CodeLens&#45; Actualiser les indicateurs](../ide/media/codelensrefreshindicatorsfromcode.png "CodeLensRefreshIndicatorsFromCode")  
   
--   **Test** : [Rechercher des tests unitaires pour votre code](#FindRunUnitTests) pour actualiser cet indicateur.  
+-   **Test**: [Rechercher des tests unitaires pour votre code](#FindRunUnitTests) pour actualiser cet indicateur.  
   
 ###  <a name="LocalVersion"></a> Q : Que signifie « Version locale » ?  
  **R :** La flèche **Version locale** pointe vers l'ensemble de modifications le plus récent dans votre version locale de ce fichier. Lorsque le serveur possède des ensembles de modifications plus récents, ils apparaissent au-dessus ou en-dessous de la flèche **Version locale** , selon l'ordre utilisé pour trier les ensembles de modifications.  

@@ -1,30 +1,27 @@
 ---
-title: 'Comment : ajouter des activités à la boîte à outils | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Ajouter des activités à la boîte à outils | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: b3a8a785-5928-457a-8a50-30267e29503d
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 7fc523cd032863498cdefac1e12f0653a57ab7cc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 52f9fabec46fb04f2cc936c7bf76d67bd2dabcd3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299855"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953683"
 ---
-# <a name="how-to-add-activities-to-the-toolbox"></a>Comment : ajouter des activités à la boîte à outils
+# <a name="how-to-add-activities-to-the-toolbox"></a>Procédure : Ajouter des activités à la boîte à outils
 Activités peuvent être ajoutées à la **boîte à outils** dans votre solution de plusieurs façons différentes. Vous pouvez les ajouter à partir de votre projet en cours, les référencer à partir d'un autre projet ou les référencer à partir d'un autre assembly.  
   
 ### <a name="to-add-an-activity-from-within-your-current-project"></a>Pour ajouter une activité à partir de votre projet en cours  
   
-1.  Ajoutez une nouvelle activité personnalisée à votre projet de workflow actif. [!INCLUDE[crabout](../includes/crabout-md.md)] Ajout d’une nouvelle activité personnalisée à votre projet, consultez [Comment : ajouter un nouvel élément à un projet de flux de travail](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).  
+1.  Ajoutez une nouvelle activité personnalisée à votre projet de workflow actif. [!INCLUDE[crabout](../includes/crabout-md.md)] Ajout d’une nouvelle activité personnalisée à votre projet, consultez [Comment : Ajouter un nouvel élément à un projet de flux de travail](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).  
   
 2.  Ajoutez une logique personnalisée à votre activité.  
   

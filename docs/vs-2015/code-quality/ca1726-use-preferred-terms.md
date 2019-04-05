@@ -1,14 +1,9 @@
 ---
-title: 'CA1726 : Utilisez les termes par défaut | Microsoft Docs'
-ms.custom: ''
+title: 'CA1726 : Utilisez les termes préférés | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UsePreferredTerms
 - CA1726
@@ -19,17 +14,17 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c17514d00be7b0a3303b1c5bf703702fe564e0d1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e31c459d2d5ce8dc114605716c09f8360eca23d3
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220517"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "59001843"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726 : Utilisez les termes par défaut
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Pour obtenir la dernière documentation sur Visual Studio 2017, consultez [CA1726 : utilisez les termes préférés](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms) sur docs.microsoft.com.  
+Pour obtenir la dernière documentation sur Visual Studio, consultez [CA1726 : Utiliser des termes](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms) sur docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -46,27 +41,27 @@ Pour obtenir la dernière documentation sur Visual Studio 2017, consultez [CA172
   
 |Terme obsolète|Terme favori|  
 |-------------------|--------------------|  
-|ne sont pas|Ne sont pas|  
+|ne sont pas|AreNot|  
 |Annulé|Canceled|  
 |Ne peut pas|Ne peut pas|  
 |ComPlus|EnterpriseServices|  
-|Impossible|N’a pas pu|  
-|N’a pas|DidNot|  
-|Lecteur|Ne|  
-|Non|Ne pas connecter|  
+|Impossible|CouldNot|  
+|Didnt|DidNot|  
+|Lecteur|DoesNot|  
+|Dont|DoNot|  
 |Indicateur ou indicateurs|Il n’existe aucun terme de remplacement. Ne pas utiliser.|  
-|n’avait pas|HadNot|  
+|Hadnt|HadNot|  
 |N’a pas encore|HasNot|  
 |ne l’avez pas|HaveNot|  
 |Indices|Index|  
-|n’est pas|IsNot|  
-|Connexion|Ouverture de session|  
-|Déconnexion|Fermeture de session|  
+|Isnt|IsNot|  
+|LogIn|LogOn|  
+|LogOut|LogOff|  
 |Shouldnt|ShouldNot|  
-|Authentification|Connexion|  
-|Approbation|Déconnexion|  
+|SignOn|SignIn|  
+|SignOff|SignOut|  
 |Wasnt|WasNot|  
-|n’ont pas été|N’ont pas été|  
+|n’ont pas été|WereNot|  
 |Ne doit pas|WillNot|  
 |Wouldnt|WouldNot|  
 |Accessible en écriture|Accessible en écriture|  
@@ -79,4 +74,3 @@ Pour obtenir la dernière documentation sur Visual Studio 2017, consultez [CA172
   
 ## <a name="related-rules"></a>Règles associées  
  [Avertissements liés à l’affectation de noms](../code-quality/naming-warnings.md)
-

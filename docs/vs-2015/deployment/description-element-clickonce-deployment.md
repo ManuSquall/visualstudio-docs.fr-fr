@@ -1,14 +1,9 @@
 ---
 title: '&lt;Description&gt; , élément (déploiement ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#description
 dev_langs:
@@ -21,13 +16,13 @@ ms.assetid: 18f6919e-a3ab-4942-a57d-167fabfac44e
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 8ddba6356ab051dbad27e55eefd53a517b47a21a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: cadf4a0b525e5603247748edd63516dc26d8a0b6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224768"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950211"
 ---
 # <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;Description&gt; , élément (déploiement ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,8 +33,8 @@ Identifie les informations de l’application utilisées pour créer la présenc
   
 ```  
   
-      <description   
-   publisher   
+      <description   
+   publisher   
    product  
    suiteName  
    supportUrl  
@@ -53,7 +48,7 @@ Identifie les informations de l’application utilisées pour créer la présenc
 |---------------|-----------------|  
 |`publisher`|Obligatoire. Identifie le nom de société utilisé pour la sélection élective d’icône dans le Windows **Démarrer** menu et le **Ajout / Suppression de programmes** élément dans le panneau de configuration, lorsque le déploiement est configuré pour l’installation.|  
 |`product`|Obligatoire. Identifie le nom de produit complet. Utilisé en tant que le titre de l’icône installée dans le Windows **Démarrer** menu.|  
-|`suiteName`|Facultatif. Identifie un sous-dossier dans le `publisher` dossier dans le Windows **Démarrer** menu.|  
+|`suiteName`|Optionnel. Identifie un sous-dossier dans le `publisher` dossier dans le Windows **Démarrer** menu.|  
 |`supportUrl`|Facultatif. Spécifie une URL de prise en charge qui est indiquée dans le **Ajout / Suppression de programmes** élément dans le panneau de configuration. Un raccourci vers cette URL est également créé pour la prise en charge de l’application dans le Windows **Démarrer** menu, lorsque le déploiement est configuré pour l’installation.|  
   
 ## <a name="remarks"></a>Notes  
@@ -71,6 +66,3 @@ Identifie les informations de l’application utilisées pour créer la présenc
   
 ## <a name="see-also"></a>Voir aussi  
  [Manifeste de déploiement ClickOnce](../deployment/clickonce-deployment-manifest.md)
-
-
-

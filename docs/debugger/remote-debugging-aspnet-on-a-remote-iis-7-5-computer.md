@@ -11,27 +11,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 4cefca3c40b36c24fa5c1c78c7b6bca3d2a599ba
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5ebc7c3c172502198f56a8e35107f37d51ef2509
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720029"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355722"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Déboguer à distance ASP.NET sur un ordinateur distant IIS
 Pour déboguer une application ASP.NET qui a été déployée sur IIS, installer et exécuter les outils à distance sur l’ordinateur où vous avez déployé votre application, puis attacher à votre application en cours d’exécution à partir de Visual Studio.
 
 ![Composants du débogueur distant](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
 
-Ce guide explique comment paramétrer et configurer une application Visual Studio 2017 ASP.NET MVC 4.5.2, déployez-le sur IIS et attacher le débogueur distant à partir de Visual Studio.
+Ce guide explique comment paramétrer et configurer une application Visual Studio ASP.NET MVC 4.5.2, déployez-le sur IIS et attacher le débogueur distant à partir de Visual Studio.
 
 > [!NOTE]
 > À distance à la place de débogage ASP.NET Core, consultez [à distance déboguer ASP.NET Core sur un ordinateur IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md). Pour Azure App Service, vous pouvez facilement déployer et déboguer sur une instance préconfigurée d’IIS à l’aide du [débogueur de capture instantanée](../debugger/debug-live-azure-applications.md) (.NET 4.6.1 requise) ou par [attacher le débogueur à partir de l’Explorateur de serveurs](../debugger/remote-debugging-azure.md).
 
+## <a name="prerequisites"></a>Prérequis
+
+::: moniker range=">=vs-2019"
+Visual Studio 2019 est nécessaire pour suivre les étapes indiquées dans cet article.
+::: moniker-end
+::: moniker range="vs-2017"
+Visual Studio 2017 est nécessaire pour suivre les étapes indiquées dans cet article.
+::: moniker-end
+
 Ces procédures ont été testées sur ces configurations de serveur :
 * Windows Server 2012 R2 et IIS 8 (pour Windows Server 2008 R2, les étapes de serveur sont différents)
 
-## <a name="requirements"></a>Spécifications
+## <a name="network-requirements"></a>Configuration réseau requise
 
 Le débogueur distant est pris en charge sur Windows Server depuis Windows Server 2008 Service Pack 2. Pour obtenir une liste complète des exigences, consultez [exigences](../debugger/remote-debugging.md#requirements_msvsmon).
 
@@ -48,7 +57,14 @@ Cet article contient des instructions sur la configuration d’une configuration
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>Créer l’ASP.NET 4.5.2 application sur l’ordinateur Visual Studio
 
-1. Créez une application ASP.NET MVC. (**Fichier > Nouveau > projet**, puis sélectionnez <strong>Visual C# > Web > Application Web ASP.NET. Dans la section des modèles ASP.NET 4.5.2</strong> , sélectionnez **MVC**. Assurez-vous que l’option **activer la prise en charge Docker** n’est pas sélectionnée et que **authentification** a la valeur **aucune authentification**. Nommez le projet **MyASPApp**.)
+1. Créez une application ASP.NET MVC.
+
+    ::: moniker range=">=vs-2019"
+    Dans Visual Studio 2019, tapez **Ctrl + Q** pour ouvrir la zone de recherche, tapez **asp.net**, choisissez **modèles**, puis choisissez **créer nouveau ASP.NET Web Application (.NET Framework)**. Dans la boîte de dialogue qui s’affiche, nommez le projet **MyASPApp**, puis choisissez **créer**. Sélectionnez **MVC** et choisissez **créer**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Pour ce faire, dans Visual Studio 2017, choisissez **fichier > Nouveau > projet**, puis sélectionnez **Visual C# > Web > Application Web ASP.NET**. Dans la section des modèles **ASP.NET 4.5.2** , sélectionnez **MVC**. Assurez-vous que l’option **activer la prise en charge Docker** n’est pas sélectionnée et que **authentification** a la valeur **aucune authentification**. Nommez le projet **MyASPApp**.)
+    ::: moniker-end
 
 2. Ouvrez le fichier HomeController.cs et définissez un point d’arrêt dans la méthode `About()` .
 
@@ -165,7 +181,7 @@ Vous pouvez également publier et déployer l’application avec le système de 
 
 ## <a name="BKMK_msvsmon"></a> Téléchargez et installez les outils à distance sur Windows Server
 
-Dans ce didacticiel, nous utilisons Visual Studio 2017.
+Téléchargez la version des outils à distance qui correspond à votre version de Visual Studio.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
@@ -184,9 +200,16 @@ Pour plus d’informations sur l’exécution du débogueur distant en tant que 
 2. Dans Visual Studio, cliquez sur **Déboguer > Attacher au processus** (Ctrl + Alt + P).
 
     > [!TIP]
-    > Dans Visual Studio 2017, vous pouvez rattacher vers le même processus que vous avez précédemment attaché à l’aide de **Déboguer > Attacher au processus...** Maj+Alt+P
+    > Dans Visual Studio 2017 et versions ultérieures, vous pouvez rattacher vers le même processus que vous avez précédemment attaché à l’aide de **Déboguer > Attacher au processus...** Maj+Alt+P
 
-3. Définissez le champ Qualificateur sur **\<nom_ordinateur_distant>:4022**.
+3. Définissez le champ qualificateur sur  **\<nom_ordinateur_distant > : port**.
+
+    ::: moniker range=">=vs-2019"
+    **\<nom de l’ordinateur distant > : 4024** sur Visual Studio 2019
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    **\<nom de l’ordinateur distant > : 4022** sur Visual Studio 2017
+    ::: moniker-end
 4. Cliquez sur **Actualiser**.
     Des processus doivent s’afficher dans la fenêtre **Processus disponibles** .
 
@@ -211,14 +234,18 @@ Pour plus d’informations sur l’exécution du débogueur distant en tant que 
 Dans la plupart des configurations, les ports requis sont ouverts par l’installation d’ASP.NET et le débogueur distant. Toutefois, vous devrez peut-être vérifier que les ports sont ouverts.
 
 > [!NOTE]
-> Sur une machine virtuelle Azure, vous devez ouvrir les ports via la [groupe de sécurité réseau](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic).
+> Sur une machine virtuelle Azure, vous devez ouvrir les ports via la [groupe de sécurité réseau](/azure/virtual-machines/windows/nsg-quickstart-portal).
 
 Ports requis :
 
-- 80 - requises pour IIS
-- 8172 - (facultatif) nécessaire pour Web Deploy pour déployer l’application à partir de Visual Studio
-- 4022 - requis pour le débogage distant à partir de Visual Studio 2017 (consultez [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md) pour plus d’informations.
-- UDP 3702 - port de détection de (facultatif) vous permet du **trouver** bouton lors de l’attachement au débogueur distant dans Visual Studio.
+* 80 - requises pour IIS
+::: moniker range=">=vs-2019"
+* 4024 - requis pour le débogage distant à partir de Visual Studio 2019 (consultez [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md) pour plus d’informations).
+::: moniker-end
+::: moniker range="vs-2017"
+* 4022 - requis pour le débogage distant à partir de Visual Studio 2017 (consultez [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md) pour plus d’informations).
+::: moniker-end
+* UDP 3702 - port de détection de (facultatif) vous permet du **trouver** bouton lors de l’attachement au débogueur distant dans Visual Studio.
 
 1. Pour ouvrir un port sur Windows Server, ouvrez le **Démarrer** menu, recherchez **pare-feu Windows avec fonctions avancées de sécurité**.
 

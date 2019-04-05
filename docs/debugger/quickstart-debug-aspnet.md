@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 0839fae55c9aeaeb5018ec1b1acba3c62984349a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 89aab0b0217fb92d4b2e8c30c0e8a2798cea171c
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683595"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354841"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Démarrage rapide : Déboguer du code ASP.NET avec le débogueur Visual Studio
 
@@ -25,17 +25,20 @@ Le débogueur Visual Studio fournit de nombreuses fonctionnalités puissantes po
 
 ## <a name="create-a-new-project"></a>Créer un projet
 
-1. Dans Visual Studio, sélectionnez **Fichier > Nouveau projet**.
+1. Ouvrez Visual Studio.
 
-1. Sous **Visual C#**, choisissez **Web** puis, dans le volet central, choisissez **Application web ASP.NET Core**.
+    ::: moniker range=">=vs-2019"
+    Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **asp.net**, choisissez **Modèles**, puis choisissez **Créer une application web ASP.NET Core**. Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, sous **Visual C#**, choisissez **Web** puis, dans le volet central, choisissez **Application web ASP.NET Core**. Tapez un nom comme **MyDbgApp**, puis cliquez sur **OK**.
 
-1. Tapez un nom comme **MyDbgApp**, puis cliquez sur **OK**.
-
-1. Dans la boîte de dialogue qui s’affiche, choisissez **Application web** dans le volet central, puis cliquez sur **OK**.
-
-     Si vous ne voyez pas le modèle de projet **Application web**, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement web et ASP.NET**, puis **Modifier**.
+    Dans la boîte de dialogue qui s’affiche, choisissez **Application web** dans le volet central, puis cliquez sur **OK**.
 
     ![Choisir une application web](../debugger/media/dbg-qs-aspnet-choose-web-app.png)
+    ::: moniker-end
+
+    Si vous ne voyez pas le modèle de projet **Application web ASP.NET Core**, accédez à **Outils** > **Obtenir les outils et fonctionnalités...**, qui ouvre Visual Studio Installer. Choisissez la charge de travail **Développement web et ASP.NET**, puis **Modifier**.
 
     Visual Studio crée le projet.
 
@@ -94,7 +97,7 @@ Un *point d’arrêt* est un marqueur qui indique où Visual Studio doit interro
 
 ## <a name="navigate-code"></a>Naviguer dans le code
 
-Il existe différentes commandes pour indiquer au débogueur de continuer. Nous montrons une commande de navigation pratique dans le code qui est une nouveauté de Visual Studio 2017.
+Il existe différentes commandes pour indiquer au débogueur de continuer. Nous montrons une commande de navigation pratique dans le code qui est disponible à compter de Visual Studio 2017.
 
 Avec l’exécution en pause au point d’arrêt, placez le curseur sur l’instruction `return c2` jusqu’à ce que le bouton vert **Exécuter jusqu’au clic** ![Exécuter jusqu’au clic](../debugger/media/dbg-tour-run-to-click.png) apparaisse, puis appuyez sur le bouton **Exécuter jusqu’au clic**.
 

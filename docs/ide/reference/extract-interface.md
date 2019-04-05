@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: f0036bb9bf8ef6d0c09fddc2b8ac0a4977c3674c
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: cdead60fbde711ac9b219a6bbcb635e329d51a0a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323430"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983195"
 ---
 # <a name="extract-an-interface-refactoring"></a>Extraire une interface (refactorisation)
 
@@ -72,11 +72,17 @@ Cette refactorisation s’applique à :
 
    - C# :
 
-      ![Classe résultante – C#](media/extractinterface-class-cs.png)![Interface résultante – C#](media/extractinterface-interface-cs.png)
+      ![Classe résultante - C#](media/extractinterface-class-cs.png)
+      
+      
+      ![Interface résultante - C#](media/extractinterface-interface-cs.png)
 
    - Visual Basic :
 
-      ![Classe résultante – Visual Basic](media/extractinterface-class-vb.png)![Interface résultante – Visual Basic](media/extractinterface-interface-vb.png)
+      ![Classe résultante - Visual Basic](media/extractinterface-class-vb.png)
+      
+      
+      ![Interface résultante - Visual Basic](media/extractinterface-interface-vb.png)
 
 ## <a name="see-also"></a>Voir aussi
 

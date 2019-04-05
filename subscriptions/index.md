@@ -6,10 +6,15 @@ Manager: lank
 layout: LandingPage
 Ms.date: 06/25/2018
 Ms.topic: landing-page
-Description: Welcome to Visual Studio Subscriptions
+Description: Bienvenue dans les abonnements Visual Studio
 Searchscope: VS Subscription
+ms.openlocfilehash: bac5cbd1ae0da5d4607b566af898c28efc0876ad
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322596"
 ---
-
 # <a name="visual-studio-subscriptions"></a>Abonnements Visual Studio
 
 Les abonnements Visual Studio sont un ensemble complet de ressources qui vous permettent de créer, déployer et gérer des applications sur vos plateformes et appareils préférés, notamment Windows, iOS, Android et Linux.  Les avantages des abonnements sont notamment l’accès aux outils de développement, à des services cloud et à des logiciels, à de la formation et à du support pour vos besoins en développement et en tests.
@@ -19,6 +24,7 @@ Les abonnements Visual Studio sont un ensemble complet de ressources qui vous pe
 Les administrateurs se connectent à [https://manage.visualstudio.com](https://manage.visualstudio.com) pour affecter des abonnements à votre équipe.<br>
 Les abonnés se connectent à [https://my.visualstudio.com](https://my.visualstudio.com) pour accéder aux avantages de leur abonnement.
 
+<!-- markdownlint-disable MD033 -->
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/azure/">
@@ -150,7 +156,7 @@ Pour rendre votre abonnement encore plus utile, nous ajoutons et mettons souvent
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-ide-benefit">Visual Studio</a></li>
                             <li>Visual Studio pour Mac</li>
-                            <li>Team Foundation Server et licence d’accès client TFS</li>
+                            <li>Azure DevOps Server et CAL</li>
                         </ul>
                     </div>
                 </div>

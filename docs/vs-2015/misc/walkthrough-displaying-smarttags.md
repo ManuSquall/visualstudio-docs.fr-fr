@@ -1,28 +1,23 @@
 ---
 title: 'Procédure pas à pas : Affichage de balises actives | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - smart tags
 ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
-manager: douge
-ms.openlocfilehash: 459530726628819587a3c228910baa3b902ae865
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e918c8e83909bb5a04d27f72cb07c7135b00daa9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939096"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951212"
 ---
-# <a name="walkthrough-displaying-smarttags"></a>Procédure pas à pas : affichage de balises actives
-Les balises actives sont déconseillées au profit des ampoules. Consultez [Walkthrough: Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
+# <a name="walkthrough-displaying-smarttags"></a>Procédure pas à pas : Affichage de balises actives
+Les balises actives sont déconseillées au profit des ampoules. Consultez [Procédure pas à pas : Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
   
  Les balises actives sont des balises sur du texte qui se développent pour afficher un ensemble d’actions. Par exemple, dans un projet Visual Basic ou Visual C#, une ligne rouge apparaît sous un mot quand vous renommez un identificateur tel qu’un nom de variable. Lorsque vous déplacez le pointeur sur le trait de soulignement, un bouton est affiché près du pointeur. Si vous cliquez sur le bouton, une action suggérée est affichée, par exemple **Renommer IsRead en IsReady**. Si vous cliquez sur l’action, toutes les références à **IsRead** dans le projet sont renommées **IsReady**.  
   
@@ -31,7 +26,7 @@ Les balises actives sont déconseillées au profit des ampoules. Consultez [Walk
 > [!NOTE]
 >  Vous pouvez implémenter d’autres types de balises de manière similaire.  
   
- La procédure suivante montre comment créer une balise active qui apparaît sur le mot actuel et suggère deux actions : **Convert to upper case** et **Convert to lower case**.  
+ La procédure suivante montre comment créer une balise active qui apparaît sur le mot actuel et qui a deux actions suggérées : **Convertir en majuscules** et **convertir en minuscules**.  
   
 ## <a name="prerequisites"></a>Prérequis  
  Pour suivre cette procédure pas à pas, vous devez installer le Kit de développement logiciel (SDK) Visual Studio. Pour plus d’informations, consultez [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
@@ -60,7 +55,7 @@ Les balises actives sont déconseillées au profit des ampoules. Consultez [Walk
   
 1.  Ajoutez un fichier de classe et nommez-le `TestSmartTag`.  
   
-2.  Ajoutez les importations suivantes :  
+2.  Ajoutez les importations suivantes :  
   
      [!code-csharp[VSSDKSmartTagTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#1)]
      [!code-vb[VSSDKSmartTagTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#1)]  
@@ -100,7 +95,7 @@ Les balises actives sont déconseillées au profit des ampoules. Consultez [Walk
      [!code-csharp[VSSDKSmartTagTest#8](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#8)]
      [!code-vb[VSSDKSmartTagTest#8](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#8)]  
   
-10. Déclarez l’événement `SmartTagsChanged`.  
+10. Déclarez l’événement `SmartTagsChanged` .  
   
      [!code-csharp[VSSDKSmartTagTest#9](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#9)]
      [!code-vb[VSSDKSmartTagTest#9](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#9)]  
@@ -185,7 +180,7 @@ Les balises actives sont déconseillées au profit des ampoules. Consultez [Walk
   
      Un bouton doit s’afficher à côté du pointeur.  
   
-5.  Quand vous cliquez sur le bouton, deux suggestions d’action doivent s’afficher : **Convert to upper case** et **Convert to lower case**. Si vous cliquez sur la première action, tout le texte du mot actuel doit être converti en majuscules. Si vous cliquez sur la deuxième action, tout le texte doit être converti en minuscules.  
+5.  Lorsque vous cliquez sur le bouton, deux actions suggérées doivent être affichées. **Convertir en majuscules** et **convertir en minuscules**. Si vous cliquez sur la première action, tout le texte du mot actuel doit être converti en majuscules. Si vous cliquez sur la deuxième action, tout le texte doit être converti en minuscules.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : Liaison d’un type de contenu à une extension de nom de fichier](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Procédure pas à pas : Liaison d’un Type de contenu à une Extension de nom de fichier](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

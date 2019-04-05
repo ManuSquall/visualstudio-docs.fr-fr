@@ -1,14 +1,9 @@
 ---
 title: Onglet Général, boîte de dialogue Propriétés de Thread | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - threading [Visual Studio], thread properties
 - thread properties
@@ -16,13 +11,13 @@ ms.assetid: 46b6c668-6786-456e-97dc-337bcac0d812
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2777096e13ef649f2a340d3b3cae92d050d9531f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b1a8e6fd583f6035fc84f0c86adcee059562235d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728976"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949880"
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>Onglet Général de la boîte de dialogue Propriétés du thread
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ Utilisez cette boîte de dialogue pour en savoir plus sur un thread spécifique.
 |**ID du processus**|ID unique de ce processus. Numéros d’ID de processus sont réutilisés, donc ils identifient un processus uniquement pour la durée de vie du processus. Le type d’objet de processus est créé lorsqu’un programme est exécuté. Tous les threads dans un processus partagent le même espace d’adressage et ont accès aux mêmes données. Choisissez cette valeur pour afficher les propriétés de l’ID de processus.|  
 |**État du thread**|L’état actuel du thread. Un thread en cours d’exécution utilise un processeur ; un thread de secours est sur le point d’utiliser un. Un Thread prêt attend de pouvoir utiliser un processeur, car aucun n’est libre. Un thread en cours de Transition est en attente d’une ressource pour s’exécuter, comme l’attente de sa pile d’exécution soit paginée à partir du disque. Un thread en attente n’a pas besoin du processeur, car il est en attente pour une opération de périphérique ou d’une ressource se libèrent.|  
 |**Raison de l’attente**|Cela s’applique uniquement lorsque le thread est en état d’attente. Les paires d’événements sont utilisés pour communiquer avec les sous-systèmes protégés.|  
-|**Temps processeur**|Temps processeur total passé sur ce processus et ses threads. Égal à temps utilisateur + temps privilégié.|  
+|**Temps CPU**|Temps processeur total passé sur ce processus et ses threads. Égal à temps utilisateur + temps privilégié.|  
 |**Temps utilisateur**|Temps total passé par ce thread à exécuter du code en Mode utilisateur. Applications s’exécutent en Mode utilisateur, tout comme les sous-systèmes tels que le Gestionnaire de fenêtres et le moteur de graphiques.|  
 |**Temps privilégié**|Temps total passé par ce thread à exécuter du code en Mode privilégié. Lorsqu’un service de système de Windows est appelé, le service s’exécute souvent en Mode privilégié pour accéder aux données privées du système. Ces données sont protégées contre tout accès par les threads s’exécutant en Mode utilisateur. Les appels au système peuvent être explicites ou implicites, telles que lorsqu’une erreur de page ou une interruption se produit.|  
 |**Temps écoulé**|Le temps total écoulé (en secondes) ce thread a été exécuté.|  
@@ -46,7 +41,4 @@ Utilisez cette boîte de dialogue pour en savoir plus sur un thread spécifique.
 |**Priorité de base**|La priorité de base actuelle de ce thread.|  
 |**Adresse de début**|Adresse virtuelle initiale pour ce thread.|  
 |**PC de l’utilisateur**|Le compteur de programme utilisateur pour le thread.|  
-|**Changements de contexte**|Le nombre de commutateurs d’un thread à un autre. Commutateurs de thread peuvent se produire à l’intérieur d’un processus unique ou entre processus. Un commutateur de thread peut être dû à un seul thread demandant des informations ou par un thread en cours lorsqu’un thread de priorité plus élevée est prêt à exécuter.|
-
-
-
+|**Commutateurs de contexte**|Le nombre de commutateurs d’un thread à un autre. Commutateurs de thread peuvent se produire à l’intérieur d’un processus unique ou entre processus. Un commutateur de thread peut être dû à un seul thread demandant des informations ou par un thread en cours lorsqu’un thread de priorité plus élevée est prêt à exécuter.|

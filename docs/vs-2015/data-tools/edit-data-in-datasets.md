@@ -1,12 +1,9 @@
 ---
 title: Modifier des données dans les jeux de données | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +16,13 @@ ms.assetid: 50d5c580-fbf7-408f-be70-e63ac4f4d0eb
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5a983b671b5c6b43009ad3cc32c2cb287977f05c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 41467515e172b34fe96200020189a02a6a4fc8a2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949290"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952663"
 ---
 # <a name="edit-data-in-datasets"></a>Modifier des données dans des datasets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,9 +78,9 @@ Pour modifier les données dans les tables de données de la même manière que 
   
 - Chaque ligne de données contient des informations relatives à ses <xref:System.Data.DataRow.RowState%2A> (par exemple, <xref:System.Data.DataRowState>, <xref:System.Data.DataRowState>, <xref:System.Data.DataRowState>, ou <xref:System.Data.DataRowState>).  
   
-- Chaque ligne de données modifiée contient plusieurs versions de cette ligne (<xref:System.Data.DataRowVersion>), la version d’origine (avant modification) et la version actuelle (après les modifications). Pendant la période quand une modification est en attente (le temps lorsque vous pouvez répondre à la <xref:System.Data.DataTable.RowChanging> événement), une troisième version — la version proposée — est également disponible. Pour plus d’informations, consultez [Comment : obtenir des Versions spécifiques d’un DataRow](../data-tools/how-to-get-specific-versions-of-a-datarow.md).  
+- Chaque ligne de données modifiée contient plusieurs versions de cette ligne (<xref:System.Data.DataRowVersion>), la version d’origine (avant modification) et la version actuelle (après les modifications). Pendant la période quand une modification est en attente (le temps lorsque vous pouvez répondre à la <xref:System.Data.DataTable.RowChanging> événement), une troisième version — la version proposée — est également disponible.
   
-  Le <xref:System.Data.DataSet.HasChanges%2A> retourne de la méthode d’un dataset `true` si les modifications ont été apportées dans le jeu de données. Après avoir déterminé qu’il existe des lignes modifiées, vous pouvez appeler la `GetChanges` méthode d’un <xref:System.Data.DataSet> ou <xref:System.Data.DataTable> pour retourner un jeu de lignes modifiées. Pour plus d’informations, consultez [Comment : récupérer des lignes modifiées](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
+  Le <xref:System.Data.DataSet.HasChanges%2A> retourne de la méthode d’un dataset `true` si les modifications ont été apportées dans le jeu de données. Après avoir déterminé qu’il existe des lignes modifiées, vous pouvez appeler la `GetChanges` méthode d’un <xref:System.Data.DataSet> ou <xref:System.Data.DataTable> pour retourner un jeu de lignes modifiées. Pour plus d'informations, voir [Procédure : Récupérer des lignes modifiées](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
   
 #### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>Pour déterminer si des modifications ont été apportées aux lignes  
   
@@ -115,4 +112,3 @@ Pour modifier les données dans les tables de données de la même manière que 
   
      [!code-csharp[VbRaddataEditing#23](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#23)]
      [!code-vb[VbRaddataEditing#23](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#23)]
-

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fb0b713df5658fa245fb49a537cde16accce41c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6d846385349ad0dbcfe60bdf9b1fd7f1b5db507f
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713150"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476044"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Guide du débogage pour grands débutants
 
@@ -78,21 +78,20 @@ Nous allons maintenant créer une application qui comporte quelques bogues.
 
 1. Visual Studio et la charge de travail **Développement .NET Desktop** ou **Développement multiplateforme .NET Core**, en fonction du type d’application que vous souhaitez créer, doivent être installés.
 
-    Si vous n’avez pas encore installé Visual Studio, accédez à la page  [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)  pour l’installer gratuitement.
+    Si vous n’avez pas encore installé Visual Studio, accédez à la page  [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/)  pour l’installer gratuitement.
 
     Si vous devez installer la charge de travail, mais que vous avez déjà installé Visual Studio, cliquez sur **Outils** > **Obtenir des outils et fonctionnalités**. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement .NET Desktop** (ou **Développement multiplateforme .NET Core**), puis **Modifier**.
 
-1. Ouvrez Visual Studio, puis choisissez **Fichier** > **Nouveau** > **Projet**.
+1. Ouvrez Visual Studio.
 
-1. Choisissez un modèle pour votre code d’application.
+    ::: moniker range=">=vs-2019"
+    Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **console**, choisissez **Modèles**, puis choisissez **Créer une application console (.NET Framework)** ou **Créer une application console (.NET Core)**. Dans la boîte de dialogue qui apparaît, choisissez **Créer**. Tapez un nom comme **ConsoleApp-FirstApp**, puis cliquez sur **Créer**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, sous **Visual C#**, choisissez **Application console** puis, dans le volet central, choisissez **Application console (.NET Framework)** ou **Application console (.NET Core)**. Tapez un nom comme **ConsoleApp-FirstApp**, puis cliquez sur **OK**.
+    ::: moniker-end
 
-    Pour .NET Framework, dans la boîte de dialogue **Nouveau projet**, sélectionnez **Visual C#** , **Windows Desktop** dans la section Modèles installés puis, dans le volet central, sélectionnez **Application console (.NET Framework)**.
-
-    Pour .NET Core, dans la boîte de dialogue **Nouveau projet**, sélectionnez **Visual C#** , **.NET Core** dans la section Modèles installés puis, dans le volet central, sélectionnez **Application console (.NET Core)**.
-
-    Si vous ne voyez pas ces modèles, vous devez installer la charge de travail appropriée (voir les étapes précédentes).
-
-1. Dans le champ **Nom**, tapez **ConsoleApp-FirstApp** et cliquez sur **OK**.
+    Si vous ne voyez pas le modèle de projet **Application console (.NET Framework)** ou **Application console (.NET Core)**, accédez à **Outils** > **Obtenir les outils et fonctionnalités...**, ce qui ouvre Visual Studio Installer. Choisissez la charge de travail **Développement .NET Desktop** ou **Développement multiplateforme .NET Core**, puis choisissez **Modifier**.
 
     Visual Studio crée le projet de console, qui apparaît dans l’Explorateur de solutions dans le volet droit.
 

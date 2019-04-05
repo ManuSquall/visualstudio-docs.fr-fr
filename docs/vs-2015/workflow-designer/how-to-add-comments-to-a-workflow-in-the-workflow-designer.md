@@ -1,11 +1,8 @@
 ---
-title: 'Comment : ajouter des commentaires à un flux de travail dans le Concepteur de flux de travail | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Ajouter des commentaires à un flux de travail dans le Concepteur de flux de travail | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Presentation.Annotations.Annotation.UI
@@ -14,15 +11,15 @@ ms.assetid: 9aa0e8d6-8129-4438-8389-d460611581a7
 caps.latest.revision: 7
 author: steved0x
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: c605ec087a4aa5bec3aecf91d9f0ac1c1a1fb42a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d60eaa4d86e3a0bc421b4d8c02eb61976337d553
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194608"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951239"
 ---
-# <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Procédure : ajouter des commentaires à un workflow dans le Concepteur de flux de travail
+# <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Procédure : Ajouter des commentaires à un workflow dans le concepteur de workflow
 Pour faciliter la création de workflows de plus grande taille et plus complexes, [!INCLUDE[net_v45](../includes/net-v45-md.md)] permet au développeur d'ajouter des annotations aux types suivants d'élément dans le concepteur :  
   
 -   <xref:System.Activities.Activity>  
@@ -80,7 +77,7 @@ Pour faciliter la création de workflows de plus grande taille et plus complexes
   
 4.  Pour supprimer toutes les annotations à la fois, cliquez sur le Concepteur de workflow et sélectionnez **Annotation**, **supprimer toutes les Annotations**.  
   
-### <a name="adding-editing-and-deleting-an-annotation-for-a-variable-or-argument"></a>Ajout, modification et suppression d’une annotation pour une variable ou un argument  
+### <a name="adding-editing-and-deleting-an-annotation-for-a-variable-or-argument"></a>Ajout, modification et suppression d'une annotation pour une variable ou un argument  
   
 1.  Cliquez avec le bouton droit sur une variable ou un argument et sélectionnez Ajouter une annotation.  
   

@@ -1,27 +1,22 @@
 ---
 title: Création d’Instances de projet à l’aide de fabriques de projet | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project factories
 - projects [Visual Studio SDK], project factories
 ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 358c13bdc8bc312a479b9c316fa516ad68b10630
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b33d5d1a09425a18f0c9489b15147e3355e45c99
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736261"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949633"
 ---
 # <a name="creating-project-instances-by-using-project-factories"></a>Création d’instances de projets à l’aide de fabriques de projets
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Types de projets dans [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] utiliser u
   
  Vous pouvez implémenter la <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> interface dans une classe dans votre projet. En règle générale, il se trouve dans son propre module.  
   
- Pour obtenir un exemple d’implémentation de la `IVsProjectFactory` l’interface, consultez PrjFac.cpp qui est contenue dans le [projet de base](http://msdn.microsoft.com/en-us/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) répertoire d’exemple.  
+ Pour obtenir un exemple d’implémentation de la `IVsProjectFactory` l’interface, consultez PrjFac.cpp qui est contenue dans le [projet de base](http://msdn.microsoft.com/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) répertoire d’exemple.  
   
  Les projets qui prennent en charge l’agrégation par un propriétaire doivent conserver une clé de propriétaire dans leur fichier projet. Lorsque le <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> méthode est appelée sur un projet avec une clé de propriétaire, le projet détenu convertit sa clé de propriétaire à une fabrique de projet GUID appelle ensuite la `CreateProject` méthode sur cette fabrique de projet pour effectuer la création réelle.  
   
@@ -57,5 +52,4 @@ Types de projets dans [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] utiliser u
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes>   
- [Liste de vérification : création de nouveaux types de projets](../../extensibility/internals/checklist-creating-new-project-types.md)
-
+ [Liste de vérification : Créer de nouveaux Types de projet](../../extensibility/internals/checklist-creating-new-project-types.md)

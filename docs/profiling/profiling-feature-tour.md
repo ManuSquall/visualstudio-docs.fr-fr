@@ -2,7 +2,7 @@
 title: Mesurer les performances avec des outils de profilage
 description: Examinez brièvement les différents outils de diagnostic disponibles dans Visual Studio.
 ms.custom: mvc
-ms.date: 05/18/2017
+ms.date: 05/18/2018
 ms.topic: quickstart
 helpviewer_keywords:
 - diagnostic tools
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74787c9b310742e94b45c09748ec5b6c0210b2fe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: af87464f8fb49ca68ecf8c442a099c71b9df5b69
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611917"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790808"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Démarrage rapide : Découvrir les outils de profilage
 
@@ -119,6 +119,7 @@ Quand vous sélectionnez une période de temps dans les graphiques et que vous c
 
 Vous pouvez également utiliser les graphiques pour déterminer la présence éventuelle de goulots d’étranglement liés à l’UC ou au GPU.
 
+::: moniker range="vs-2017"
 ## <a name="analyze-performance-javascript-uwp"></a>Analyser les performances (JavaScript UWP)
 
 Pour les applications UWP, vous pouvez utiliser les outils Mémoire JavaScript et Réactivité de l’interface utilisateur HTML.
@@ -130,6 +131,7 @@ L’outil Mémoire JavaScript est similaire à l’outil Utilisation de la mémo
 Pour diagnostiquer la réactivité de l’interface utilisateur, la lenteur du temps de chargement et la lenteur des mises à jour visuelles dans les applications UWP, utilisez l’outil Réactivité de l’interface utilisateur HTML. L’utilisation est similaire à l’outil Chronologie de l’application pour les autres types d’application. Pour plus d’informations, consultez [Réactivité de l’interface utilisateur HTML](../profiling/html-ui-responsiveness.md).
 
 ![Outil de profilage - Réactivité de l’interface utilisateur HTML](../profiling/media/diaghtmlresp.png "DiagHTMLResp")
+::: moniker-end
 
 ## <a name="analyze-network-usage-uwp"></a>Analyser l’utilisation du réseau (UWP)
 

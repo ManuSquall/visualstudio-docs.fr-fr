@@ -2,7 +2,6 @@
 title: IActiveScriptAuthor::GetLanguageFlags | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dca878d6d4fd15db4b516e37932fbfebd30607a2
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: d9f1a68db05ac0d909108ce77587ae4b071c9a2b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54093195"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58146277"
 ---
 # <a name="iactivescriptauthorgetlanguageflags"></a>IActiveScriptAuthor::GetLanguageFlags
 Retourne des informations de langue.  
@@ -42,9 +41,9 @@ HRESULT GetLanguageFlags(
   
 |Constante|Value|Description|  
 |--------------|-----------|-----------------|  
-|fasaPreferInternalHandler|0 x 0001|Le langage préfère la création du Gestionnaire d’événements script par le moteur plutôt que l’application de création de script.|  
-|fasaSupportInternalHandler|0 x 0002|Le langage prend en charge les gestionnaires d’événements de script créées par le moteur de création de script.|  
-|fasaCaseSensitive|0 x 0004|Le langage de script respecte la casse.|  
+|fasaPreferInternalHandler|0x0001|Le langage préfère la création du Gestionnaire d’événements script par le moteur plutôt que l’application de création de script.|  
+|fasaSupportInternalHandler|0x0002|Le langage prend en charge les gestionnaires d’événements de script créées par le moteur de création de script.|  
+|fasaCaseSensitive|0x0004|Le langage de script respecte la casse.|  
   
 ## <a name="return-value"></a>Valeur de retour  
  Élément `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  

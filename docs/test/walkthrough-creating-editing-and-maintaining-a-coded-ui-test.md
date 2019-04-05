@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d2cb1e2a05499c01cc1441db0a289cfc95b8e243
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cae9138c881115651ebd9e862e912ff10da20d2f
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955061"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416399"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Procédure pas à pas : Créer, modifier et gérer un test codé de l’interface utilisateur
 
@@ -22,41 +22,27 @@ Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et g�
 
 ## <a name="create-a-wpf-app"></a>Créer une application WPF
 
-1.  Dans le menu **Fichier**, pointez sur **Nouveau**, puis sélectionnez **Projet**.
+1. Créez un projet **Application WPF (.NET Framework)** et nommez-le **SimpleWPFApp**.
 
-     La boîte de dialogue **Nouveau projet** s’affiche.
+     Le **Concepteur WPF** s’ouvre et affiche la fenêtre MainWindow du projet.
 
-2.  Dans le volet **Installé**, développez **Visual C#** puis sélectionnez **Bureau Windows**.
+2. Si la boîte à outils n'est pas encore ouverte, ouvrez-la. Choisissez le menu **Affichage**, puis **Boîte à outils**.
 
-3.  Au-dessus du volet central, vérifiez que la liste déroulante des frameworks cibles est définie sur **.NET Framework 4.5**.
+3. Sous la section **Tous les contrôles WPF**, faites glisser un contrôle **Button**, **CheckBox** et **ProgressBar** sur la fenêtre MainWindow de l’aire de conception.
 
-4.  Dans le volet central, sélectionnez le modèle **Application WPF**.
+4. Sélectionnez le contrôle **Button**. Dans la fenêtre **Propriétés**, changez la valeur de la propriété **Nom** de \<Sans nom> en button1. Changez ensuite la valeur de la propriété **Contenu** de Button en Start.
 
-5.  Dans la zone de texte **Nom**, tapez **SimpleWPFApp**.
+5. Sélectionnez le contrôle **ProgressBar**. Dans la fenêtre **Propriétés**, changez la valeur de la propriété **Nom** de \<Sans nom> en progressBar1. Changez ensuite la valeur de la propriété **Maximum** de **100** en **10000**.
 
-6.  Choisissez un dossier dans lequel enregistrer le projet. Dans la zone de texte **Emplacement**, tapez le nom du dossier.
-
-7.  Cliquez sur **OK**.
-
-     Le **Concepteur WPF pour Visual Studio** s’ouvre et affiche la fenêtre MainWindow du projet.
-
-8.  Si la boîte à outils n'est pas encore ouverte, ouvrez-la. Choisissez le menu **Affichage**, puis **Boîte à outils**.
-
-9. Sous la section **Tous les contrôles WPF**, faites glisser un contrôle **Button**, **CheckBox** et **ProgressBar** sur la fenêtre MainWindow de l’aire de conception.
-
-10. Sélectionnez le contrôle **Button**. Dans la fenêtre **Propriétés**, changez la valeur de la propriété **Nom** de \<Sans nom> en button1. Changez ensuite la valeur de la propriété **Contenu** de Button en Start.
-
-11. Sélectionnez le contrôle **ProgressBar**. Dans la fenêtre **Propriétés**, changez la valeur de la propriété **Nom** de \<Sans nom> en progressBar1. Changez ensuite la valeur de la propriété **Maximum** de **100** en **10000**.
-
-12. Sélectionnez le contrôle **Checkbox**. Dans la fenêtre **Propriétés**, changez la valeur de la propriété **Nom** de \<Sans nom> en checkBox1 et effacez la valeur de la propriété **IsEnabled**.
+6. Sélectionnez le contrôle **Checkbox**. Dans la fenêtre **Propriétés**, changez la valeur de la propriété **Nom** de \<Sans nom> en checkBox1 et effacez la valeur de la propriété **IsEnabled**.
 
      ![Application WPF simple](../test/media/codedui_wpfapp.png)
 
-13. Double-cliquez sur le contrôle bouton pour ajouter un gestionnaire d'événements Click.
+7. Double-cliquez sur le contrôle bouton pour ajouter un gestionnaire d'événements Click.
 
      *MainWindow.xmal.cs* s’affiche dans l’éditeur de code avec le curseur dans la nouvelle méthode button1_Click.
 
-14. Au début de la classe MainWindow, ajoutez un délégué. Le délégué sera utilisé pour la barre de progression. Pour ajouter le délégué, ajoutez le code suivant :
+8. Au début de la classe MainWindow, ajoutez un délégué. Le délégué sera utilisé pour la barre de progression. Pour ajouter le délégué, ajoutez le code suivant :
 
     ```csharp
     public partial class MainWindow : Window
@@ -70,7 +56,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et g�
         }
     ```
 
-15. Dans la méthode button1_Click, ajoutez le code suivant :
+9. Dans la méthode button1_Click, ajoutez le code suivant :
 
     ```csharp
     private void button1_Click(object sender, RoutedEventArgs e)
@@ -95,7 +81,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et g�
     }
     ```
 
-16. Enregistrez le fichier.
+10. Enregistrez le fichier.
 
 ### <a name="run-the-wpf-app"></a>Exécuter l’application WPF
 
@@ -120,22 +106,14 @@ Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et g�
 
 ## <a name="create-a-coded-ui-test-for-simplewpfapp"></a>Créer un test codé de l’interface utilisateur pour SimpleWPFApp
 
-1. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur la solution, choisissez **Ajouter** puis sélectionnez **Nouveau projet**.
+1. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur la solution et choisissez **Ajouter** > **Nouveau projet**.
 
-     La boîte de dialogue **Ajouter un nouveau projet** apparaît.
-
-1. Dans le volet **Installé**, développez **Visual C#** puis sélectionnez **Test**.
-
-1. Dans le volet central, sélectionnez le modèle **Projet de test codé de l’interface utilisateur**.
+2. Recherchez et sélectionnez le modèle de projet **Projet de test codé de l’interface utilisateur** et continuez les étapes jusqu’à ce que le projet soit créé.
 
    > [!NOTE]
    > Si vous ne voyez pas le modèle **Projet de test codé de l’interface utilisateur**, vous devez [installer le composant de test codé de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
-1. Cliquez sur **OK**.
-
-     Le nouveau projet de test codé de l’interface utilisateur nommé **CodedUITestProject1** est ajouté à votre solution.
-
-     La boîte de dialogue **Générer le code pour le test codé de l’interface utilisateur** s’affiche.
+     Le nouveau projet de test codé de l’interface utilisateur nommé **CodedUITestProject1** est ajouté à votre solution et la boîte de dialogue **Générer le code pour le test codé de l’interface utilisateur** s’affiche.
 
 1. Sélectionnez l’option **Enregistrer les actions, modifier le mappage de l’interface utilisateur ou ajouter des assertions** et choisissez **OK**.
 
@@ -355,7 +333,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et g�
 
 ![lien vers la vidéo](../data-tools/media/playvideo.gif) [Bien démarrer avec les tests codés de l’interface utilisateur](https://onedrive.live.com/?id=2DB0E1EFE1C1D3B8%21110&cid=2DB0E1EFE1C1D3B8)
 
-## <a name="faq"></a>FAQ
+## <a name="faq"></a>Questions fréquentes (FAQ)
 
 [FAQ concernant les tests codés de l’interface utilisateur](https://social.msdn.microsoft.com/Forums/vsautotest/3a74dd2c-cef8-4923-abbf-7a91f489e6c4/faqs)
 

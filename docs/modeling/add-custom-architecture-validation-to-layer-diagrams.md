@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ceb330756ea98961f420be6b148b7a295eee6a6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7e1d0a0cd2b82c16871e157e6f78c766895c34b3
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970684"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415042"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Ajouter une validation d’architecture personnalisée aux diagrammes de dépendance
 
@@ -30,7 +30,7 @@ Vous pouvez empaqueter votre extension de validation de couche dans une extensio
 > [!WARNING]
 > Après avoir créé un projet de validation, copiez l’ [exemple de code](#example) à la fin de cette rubrique, puis adaptez-le à vos besoins.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
 Consultez [Spécifications](../modeling/extend-layer-diagrams.md#prereqs).
 
@@ -40,9 +40,7 @@ Pour créer un validateur, la méthode la plus rapide consiste à utiliser le mo
 
 ### <a name="to-define-an-extension-by-using-a-project-template"></a>Pour définir une extension à l’aide d’un modèle de projet
 
-1. Créez un projet dans une nouvelle solution en sélectionnant la commande **Nouveau projet** dans le menu **Fichier** .
-
-2. Dans la boîte de dialogue **Nouveau projet** , sous **Projets de modélisation**, cliquez sur **Layer Designer Validation Extension**(Extension de validation du concepteur de couche).
+1. Créer un nouveau **couche Designer Validation Extension** projet.
 
     Le modèle crée un projet qui contient un petit exemple.
 
@@ -52,14 +50,24 @@ Pour créer un validateur, la méthode la plus rapide consiste à utiliser le mo
    > - Modifiez les appels à `LogValidationError` pour supprimer les arguments facultatifs `errorSourceNodes` et `errorTargetNodes`.
    > - Si vous utilisez des propriétés personnalisées, appliquez la mise à jour mentionnée dans [ajouter des propriétés personnalisées aux diagrammes de dépendance](../modeling/add-custom-properties-to-layer-diagrams.md).
 
-3. Modifiez le code pour définir votre validation. Pour plus d’informations, consultez [Programmation de la validation](#programming).
+2. Modifiez le code pour définir votre validation. Pour plus d’informations, consultez [Programmation de la validation](#programming).
 
-4. Pour tester l’extension, consultez [Débogage de la validation de couche](#debugging).
+3. Pour tester l’extension, consultez [Débogage de la validation de couche](#debugging).
 
    > [!NOTE]
    > Votre méthode est appelée uniquement dans des circonstances spécifiques et les points d’arrêt ne fonctionnent pas automatiquement. Pour plus d’informations, consultez [Débogage de la validation de couche](#debugging).
 
-5. Pour installer l’extension dans l’instance principale de Visual Studio, ou sur un autre ordinateur, recherchez le *.vsix* de fichiers dans le *bin* directory. Copiez-le sur l’ordinateur sur lequel vous souhaitez l’installer, puis double-cliquez dessus. Pour le désinstaller, choisissez **Extensions et mises à jour** sur le **outils** menu.
+::: moniker range="vs-2017"
+
+4. Pour installer l’extension dans l’instance principale de Visual Studio, ou sur un autre ordinateur, recherchez le *.vsix* de fichiers dans le *bin* directory. Copiez-le sur l’ordinateur sur lequel vous souhaitez l’installer, puis double-cliquez dessus. Pour le désinstaller, choisissez **Extensions et mises à jour** sur le **outils** menu.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+4. Pour installer l’extension dans l’instance principale de Visual Studio, ou sur un autre ordinateur, recherchez le *.vsix* de fichiers dans le *bin* directory. Copiez-le sur l’ordinateur sur lequel vous souhaitez l’installer, puis double-cliquez dessus. Pour le désinstaller, choisissez **gérer les Extensions** sur le **Extensions** menu.
+
+::: moniker-end
 
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>Ajout d’un validateur de couche à une extension VSIX séparée
 
@@ -67,15 +75,13 @@ Si vous souhaitez créer une extension VSIX qui contient des validateurs de couc
 
 ### <a name="to-add-layer-validation-to-a-separate-vsix"></a>Pour ajouter la validation de couche à une extension VSIX séparée
 
-1.  Créez un projet de bibliothèque de classes dans une solution Visual Studio nouvelle ou existante. Dans la boîte de dialogue **Nouveau projet** , cliquez sur **Visual C#** , puis sur **Bibliothèque de classes**. Ce projet contiendra la classe de validation de couche.
+1. Créer un nouveau **bibliothèque de classes** projet. Ce projet contiendra la classe de validation de couche.
 
-2.  Identifiez ou créez un projet VSIX dans votre solution. Un projet VSIX contient un fichier nommé **source.extension.vsixmanifest**. Si vous devez ajouter un projet VSIX, procédez comme suit :
+2. Rechercher ou créer un **projet VSIX** dans votre solution. Un projet VSIX contient un fichier nommé **source.extension.vsixmanifest**.
 
-    1.  Dans la boîte de dialogue **Nouveau projet** , choisissez **Visual C#**, **Extensibilité**, **Projet VSIX**.
+3. Dans **l’Explorateur de solutions**, dans le menu contextuel du projet VSIX, choisissez **définir comme projet de démarrage**.
 
-    2.  Dans l’ **Explorateur de solutions**, dans le menu contextuel du projet VSIX, choisissez **Définir comme projet de démarrage**.
-
-3.  Dans **source.extension.vsixmanifest**, sous **Composants**, ajoutez le projet de validation de couche en tant que composant MEF :
+4. Dans **source.extension.vsixmanifest**, sous **Composants**, ajoutez le projet de validation de couche en tant que composant MEF :
 
     1.  Choisissez **Nouveau**.
 
@@ -87,7 +93,7 @@ Si vous souhaitez créer une extension VSIX qui contient des validateurs de couc
 
          **Projet** = *votre projet de validateur*
 
-4.  Vous devez également l’ajouter en tant que validation de couche :
+5. Vous devez également l’ajouter en tant que validation de couche :
 
     1.  Choisissez **Nouveau**.
 
@@ -99,7 +105,7 @@ Si vous souhaitez créer une extension VSIX qui contient des validateurs de couc
 
          **Projet** = *votre projet de validateur*
 
-5.  Revenez au projet de validation de couche et ajoutez les références de projet suivantes :
+6. Revenez au projet de validation de couche et ajoutez les références de projet suivantes :
 
     |**Référence**|**Ce que cela vous permet de faire**|
     |-|-|
@@ -110,16 +116,14 @@ Si vous souhaitez créer une extension VSIX qui contient des validateurs de couc
     |System.ComponentModel.Composition|Définir le composant de validation à l’aide de Managed Extensibility Framework (MEF)|
     |Microsoft.VisualStudio.Modeling.Sdk.[version]|Définir des extensions de modélisation|
 
-6.  Copiez l’exemple de code à la fin de cette rubrique dans le fichier de classe du projet de bibliothèque de validateurs destiné à contenir le code de votre validation. Pour plus d’informations, consultez [Programmation de la validation](#programming).
+7. Copiez l’exemple de code à la fin de cette rubrique dans le fichier de classe du projet de bibliothèque de validateurs destiné à contenir le code de votre validation. Pour plus d’informations, consultez [Programmation de la validation](#programming).
 
-7.  Pour tester l’extension, consultez [Débogage de la validation de couche](#debugging).
+8. Pour tester l’extension, consultez [Débogage de la validation de couche](#debugging).
 
     > [!NOTE]
     > Votre méthode est appelée uniquement dans des circonstances spécifiques et les points d’arrêt ne fonctionnent pas automatiquement. Pour plus d’informations, consultez [Débogage de la validation de couche](#debugging).
 
-8.  Pour installer l’extension VSIX dans l’instance principale de Visual Studio, ou sur un autre ordinateur, recherchez le **.vsix** de fichiers dans le **bin** répertoire du projet VSIX. Copiez-le sur l’ordinateur sur lequel vous souhaitez installer l’extension VSIX. Double-cliquez sur le fichier VSIX dans l’Explorateur Windows.
-
-     Pour le désinstaller, utilisez **Extensions et mises à jour** dans le menu **Outils** .
+9. Pour installer l’extension VSIX dans l’instance principale de Visual Studio, ou sur un autre ordinateur, recherchez le **.vsix** de fichiers dans le **bin** répertoire du projet VSIX. Copiez-le sur l’ordinateur sur lequel vous souhaitez installer l’extension VSIX. Double-cliquez sur le fichier VSIX dans l’Explorateur Windows.
 
 ##  <a name="programming"></a> Programmation de la validation
 

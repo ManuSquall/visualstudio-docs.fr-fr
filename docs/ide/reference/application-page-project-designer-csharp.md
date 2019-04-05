@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba118f9b0b08b5e092fa85ccc3940cd41a7ff9c8
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 18527e9b45726dbd76f1e76f5d63976278800f6f
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222530"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355339"
 ---
 # <a name="application-page-project-designer-c"></a>Page Application, Concepteur de projet (C#)
 
@@ -52,7 +52,7 @@ Pour accéder à cette propriété par programmation, consultez <xref:VSLangProj
 
 Spécifie la version du .NET Framework ciblée par l’application. Cette option peut avoir des valeurs différentes selon les versions du .NET Framework installées sur votre ordinateur.
 
-Par défaut, la valeur est la même que le framework cible que vous avez sélectionné dans la boîte de dialogue **Nouveau projet**.
+Par défaut, la valeur est la même que le framework cible que vous avez sélectionné quand vous avez créé le projet.
 
 > [!NOTE]
 > Les packages de prérequis répertoriés dans la [boîte de dialogue Composants requis](../../ide/reference/prerequisites-dialog-box.md) sont définis automatiquement la première fois que vous ouvrez la boîte de dialogue. Si vous modifiez par la suite le framework cible du projet, vous devez sélectionner manuellement les prérequis pour qu’ils correspondent au nouveau framework cible.

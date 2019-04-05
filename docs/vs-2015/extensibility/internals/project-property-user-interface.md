@@ -1,14 +1,9 @@
 ---
 title: Interface utilisateur des propriétés de projet | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project properties [Visual Studio], user interface
 - projects [Visual Studio SDK], properties UI
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: b6aec634-8533-476c-9ebd-36536a2288e2
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e295bff2f8398765f90c3fd537ca4f546208ce4b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a7650fc8a2ba297ccd3bc2a87be72a3f70062a18
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768298"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951059"
 ---
 # <a name="project-property-user-interface"></a>Interface utilisateur des propriétés du projet
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -64,5 +59,4 @@ Un sous-type de projet permettre utiliser les éléments dans le projet **Pages 
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:EnvDTE.IFilterProperties>   
- [Boîte de dialogue Pages de propriétés](http://msdn.microsoft.com/en-us/4a3d34ac-ed03-45e8-ae60-a0e1aad300e4)
-
+ [Boîte de dialogue Pages de propriétés](http://msdn.microsoft.com/4a3d34ac-ed03-45e8-ae60-a0e1aad300e4)

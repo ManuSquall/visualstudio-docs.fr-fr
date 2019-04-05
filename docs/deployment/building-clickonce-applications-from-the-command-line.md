@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5576a6d219a27ad51c096ee3ddb177b656b0552e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fcab7ac3bb2a7983d8500b6f27f910fa33fc1efe
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636955"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58567839"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Générer des applications ClickOnce à partir de la ligne de commande
 Dans [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], vous pouvez générer des projets à partir de la ligne de commande, même s’ils sont créés dans l’environnement de développement intégré (IDE). En fait, vous pouvez régénérer un projet créé avec [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] sur un autre ordinateur disposant uniquement le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] installé. Cela vous permet de reproduire une build à l’aide d’un processus automatisé, par exemple, dans une build centrale laboratoire ou à l’aide de techniques de script avancées dépasse le cadre de la génération du projet lui-même.
@@ -41,21 +41,21 @@ Dans [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md
 
 #### <a name="to-create-and-publish-a-clickonce-project"></a>Pour créer et publier un projet ClickOnce
 
-1. Cliquez sur **nouveau projet** à partir de la **fichier** menu. La boîte de dialogue **Nouveau projet** s’affiche.
+1. Ouvrez Visual Studio et créez un projet.
 
-2. Sélectionnez **Windows Application** et nommez-le `CmdLineDemo`.
+    Choisissez le **Application de bureau Windows** modèle de projet, puis nommez le projet `CmdLineDemo`.
 
-3. À partir de la **Build** menu, cliquez sur le **publier** commande.
+1. À partir de la **Build** menu, cliquez sur le **publier** commande.
 
     Cette étape garantit que le projet est correctement configuré pour produire un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement d’application.
 
     L'Assistant Publication apparaît.
 
-4. Dans l’Assistant Publication, cliquez sur **Terminer**.
+1. Dans l’Assistant Publication, cliquez sur **Terminer**.
 
     Visual Studio génère et affiche la page Web par défaut, appelée *Publish.htm*.
 
-5. Enregistrez votre projet et prenez note de l’emplacement du dossier dans lequel il est stocké.
+1. Enregistrez votre projet et prenez note de l’emplacement du dossier dans lequel il est stocké.
 
    Les étapes ci-dessus créent une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] projet qui a été publié pour la première fois. Maintenant, vous pouvez reproduire la build en dehors de l’IDE.
 

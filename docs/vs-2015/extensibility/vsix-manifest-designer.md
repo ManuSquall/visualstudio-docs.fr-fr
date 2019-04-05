@@ -1,14 +1,9 @@
 ---
 title: Concepteur de manifeste VSIX | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - VS.Sdk.VsixManifestEditor
 helpviewer_keywords:
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 72639c3fbef6b8e297d9e81a7383b2ee8220d896
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 308259e7addcf41ae6e15191934a8c37ac3f57b5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796439"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938048"
 ---
 # <a name="vsix-manifest-designer"></a>Concepteur de manifeste VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ Modifie un fichier de manifeste de package VSIX, qui définit le comportement d�
   
 - Les cibles d’installation  
   
-- Ressources  
+- Assets  
   
 - Dépendances  
   
@@ -158,4 +153,3 @@ Modifie un fichier de manifeste de package VSIX, qui définit le comportement d�
 ## <a name="see-also"></a>Voir aussi  
  [Référence de schéma 2.0 d’Extension VSIX](../extensibility/vsix-extension-schema-2-0-reference.md)   
  [Anatomie d’un package VSIX](../extensibility/anatomy-of-a-vsix-package.md)
-

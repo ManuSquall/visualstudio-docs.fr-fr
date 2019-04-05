@@ -2,7 +2,7 @@
 title: 'Tutoriel : Application Hello World avec WPF (Windows Presentation Foundation) en C#'
 description: Créez une application de bureau Windows .NET simple en C# avec Visual Studio à l’aide du framework d’interface utilisateur WPF (Windows Presentation Foundation).
 ms.custom: seodec18, get-started
-ms.date: 10/03/2017
+ms.date: 03/14/2019
 ms.technology: vs-ide-general
 ms.topic: conceptual
 dev_langs:
@@ -13,26 +13,31 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d59cb6a94259342b635df6632d54db825a427c63
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 173f2320b0117d31cbd3d0b999f2e24c40a5860b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323852"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325186"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Tutoriel : Créer une application simple en C\#
 
-Avec cette procédure pas à pas, vous allez vous familiariser avec la plupart des outils, boîtes de dialogue et concepteurs que vous pouvez utiliser quand vous développez des applications avec Visual Studio. Vous allez créer une application « Hello, World », concevoir l’interface utilisateur, ajouter du code et déboguer des erreurs, tout en découvrant l’utilisation de l’environnement de développement intégré ([IDE](visual-studio-ide.md)).
+Avec ce didacticiel, vous allez vous familiariser avec la plupart des outils, boîtes de dialogue et concepteurs que vous pouvez utiliser lorsque vous développez des applications avec Visual Studio. Vous allez créer une application « Hello, World », concevoir l’interface utilisateur, ajouter du code et déboguer des erreurs, tout en découvrant l’utilisation de l’environnement de développement intégré ([IDE](visual-studio-ide.md)).
 
+::: moniker range="vs-2017"
 Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) pour l’installer gratuitement.
+::: moniker-end
+::: moniker range=">=vs-2019"
+Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) pour l’installer gratuitement.
+::: moniker-end
 
 ## <a name="configure-the-ide"></a>Configurer l'IDE
 
-Quand vous démarrez Visual Studio pour la première fois, vous êtes invité à vous connecter. Cette étape est facultative pour cette procédure pas à pas. Ensuite, vous pouvez voir s’afficher une boîte de dialogue qui vous invite à choisir vos paramètres de développement et le thème de couleur. Conservez les valeurs par défaut et choisissez **Démarrer Visual Studio**.
+::: moniker range="vs-2017"
+
+Quand vous ouvrez Visual Studio pour la première fois, vous êtes invité à vous connecter. Cette étape est facultative pour ce didacticiel. Ensuite, vous pouvez voir s’afficher une boîte de dialogue qui vous invite à choisir vos paramètres de développement et le thème de couleur. Conservez les valeurs par défaut et choisissez **Démarrer Visual Studio**.
 
 ![Boîte de dialogue Choisir les paramètres](../media/exploreide-settings.png)
-
-::: moniker range="vs-2017"
 
 Après le démarrage de Visual Studio, vous voyez les fenêtres Outil, les menus, les barres d’outils et l’espace de la fenêtre principale. Les fenêtres Outil sont ancrées sur les côtés gauche et droit de la fenêtre d'application. **Lancement rapide**, la barre de menus et la barre d'outils standard sont situés en haut. La **page de démarrage**est située au centre de la fenêtre d'application. Lorsque vous chargez une solution ou un projet, les éditeurs et les concepteurs apparaissent dans l'espace où se trouve la **Page de démarrage** . Quand vous développez une application, vous passez la majeure partie de votre temps dans cette zone centrale.
 
@@ -42,7 +47,7 @@ Après le démarrage de Visual Studio, vous voyez les fenêtres Outil, les menus
 
 ::: moniker range=">=vs-2019"
 
-Quand vous lancez Visual Studio, la fenêtre **Démarrer** s’ouvre en premier. Sélectionnez **Continuer sans code** pour ouvrir l’environnement de développement. Vous allez voir les fenêtres Outils, les menus et barres d’outils ainsi que l’espace de la fenêtre principale. Les fenêtres Outil sont ancrées sur les côtés gauche et droit de la fenêtre d'application. **Lancement rapide**, la barre de menus et la barre d'outils standard sont situés en haut. Quand vous chargez une solution ou un projet, les éditeurs et les concepteurs apparaissent dans l’espace central de la fenêtre d’application. Quand vous développez une application, vous passez la majeure partie de votre temps dans cette zone centrale.
+Quand vous lancez Visual Studio, la fenêtre de démarrage s’ouvre en premier. Sélectionnez **Continuer sans code** pour ouvrir l’environnement de développement. Vous allez voir les fenêtres Outils, les menus et barres d’outils ainsi que l’espace de la fenêtre principale. Les fenêtres Outil sont ancrées sur les côtés gauche et droit de la fenêtre d'application. **Lancement rapide**, la barre de menus et la barre d'outils standard sont situés en haut. Quand vous chargez une solution ou un projet, les éditeurs et les concepteurs apparaissent dans l’espace central de la fenêtre d’application. Quand vous développez une application, vous passez la majeure partie de votre temps dans cette zone centrale.
 
 ::: moniker-end
 
@@ -52,20 +57,37 @@ Lorsque vous créez une application dans Visual Studio, vous créez d'abord un p
 
 1. Créer un nouveau projet. Dans la barre de menus, sélectionnez **Fichier** > **Nouveau** > **Projet**.
 
+     ::: moniker range="vs-2017"
      ![Dans la barre de menus, choisissez Fichier, Nouveau, Projet](../media/exploreide-filenewproject.png)
+     ::: moniker-end
+     ::: moniker range=">=vs-2019"
+     [Dans la barre de menus, choisissez Fichier, Nouveau, Projet](../media/vs-2019/exploreide-filenewproject-vs2019.png)
+     ::: moniker-end
 
-1. Dans la boîte de dialogue**Nouveau projet**, sélectionnez la catégorie **Installé** > **Visual C#** > **Bureau Windows**, puis sélectionnez le modèle **Application WPF (.NET Framework)**. Nommez le projet **HelloWPFApp**.
+::: moniker range="vs-2017"
+2. Dans la boîte de dialogue**Nouveau projet**, sélectionnez la catégorie **Installé** > **Visual C#** > **Bureau Windows**, puis sélectionnez le modèle **Application WPF (.NET Framework)**. Nommez le projet **HelloWPFApp** et sélectionnez **OK**.
 
      ![Modèle Application WPF dans la boîte de dialogue Nouveau projet de Visual Studio](media/exploreide-newprojectcsharp.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+2. Sur l’écran **Créer un projet**, recherchez « WPF », choisissez **Application WPF (.NET Framework)**, puis choisissez **Suivant**.
 
-1. Sélectionnez **OK**.
+   ![Modèle Application WPF dans la boîte de dialogue Nouveau projet de Visual Studio](media/vs-2019/exploreide-newprojectcsharp-vs2019.png)
 
-   Visual Studio crée la solution et le projet HelloWPFApp, et affiche les différents fichiers dans **l’Explorateur de solutions**. Le **Concepteur WPF** affiche une vue Design et une vue XAML pour *MainWindow.xaml* dans une vue fractionnée. Vous pouvez faire glisser le séparateur pour afficher une partie plus ou moins grande de chacune des vues. Vous pouvez choisir d'afficher uniquement le mode visuel ou uniquement le mode XAML. Les éléments suivants apparaissent dans l' **Explorateur de solutions**:
+3. Sur l’écran suivant, nommez le projet **HelloWPFApp** et choisissez **Créer**.
+::: moniker-end
 
-   ![Explorateur de solutions avec fichiers HelloWPFApp chargés](../media/exploreide-hellowpfappfiles.png)
+Visual Studio crée la solution et le projet HelloWPFApp, et affiche les différents fichiers dans **l’Explorateur de solutions**. Le **Concepteur WPF** affiche une vue Design et une vue XAML pour *MainWindow.xaml* dans une vue fractionnée. Vous pouvez faire glisser le séparateur pour afficher une partie plus ou moins grande de chacune des vues. Vous pouvez choisir d'afficher uniquement le mode visuel ou uniquement le mode XAML. Les éléments suivants apparaissent dans l' **Explorateur de solutions**:
 
-   > [!NOTE]
-   > Pour plus d’informations sur XAML (Extensible Application Markup Language), voir la page [Vue d’ensemble de XAML pour WPF](/dotnet/framework/wpf/advanced/xaml-overview-wpf).
+::: moniker range="vs-2017"
+![Explorateur de solutions avec fichiers HelloWPFApp chargés](../media/exploreide-hellowpfappfiles.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Explorateur de solutions avec fichiers HelloWPFApp chargés](../media/vs-2019/exploreide-hellowpfappfiles.png)
+::: moniker-end
+
+> [!NOTE]
+> Pour plus d’informations sur XAML (Extensible Application Markup Language), voir la page [Vue d’ensemble de XAML pour WPF](/dotnet/framework/wpf/advanced/xaml-overview-wpf).
 
 Après avoir créé le projet, vous pouvez le personnaliser. Dans la fenêtre **Propriétés** (disponible dans le menu **Affichage** ), vous pouvez afficher et modifier les options des éléments du projet, des contrôles et des autres éléments d'une application.
 
@@ -87,7 +109,7 @@ Nous allons ajouter trois types de contrôles à cette application : un contrôl
 
 ### <a name="add-a-textblock-control"></a>Pour ajouter un contrôle TextBlock
 
-1. Ouvrez la fenêtre **Boîte à outils** en choisissant le menu **Affichage** , puis l'élément **Boîte à outils** .
+1. Appuyez sur **Ctrl**+**Q** pour appeler **Lancement rapide** et tapez **Boîte à outils**. Choisissez **Affichage > Boîte à outils** dans la liste des résultats.
 
 2. Dans la fenêtre **Boîte à outils**, développez le nœud **Contrôles WPF communs** pour afficher le contrôle TextBlock.
 
@@ -113,7 +135,7 @@ Le balisage XAML devrait ressembler à l’exemple suivant :
    Text="Select a message option and then choose the Display button."
    ```
 
-2. Recentrez l’élément TextBlock si nécessaire, puis enregistrez vos modifications en appuyant sur **Ctrl**+**S** ou en utilisant l’élément de menu **Fichier**.
+2. Recentrez l’élément TextBlock si nécessaire, puis enregistrez vos modifications en appuyant sur Ctrl+S ou en utilisant l’élément de menu **Fichier**.
 
 Vous ajouterez ensuite deux contrôles [RadioButton](/dotnet/framework/wpf/controls/radiobutton) au formulaire.
 
@@ -127,7 +149,7 @@ Vous ajouterez ensuite deux contrôles [RadioButton](/dotnet/framework/wpf/contr
 
      Votre fenêtre doit se présenter comme suit :
 
-     ![Formulaire Greetings avec bloc de texte et deux cases d'option](../media/exploreide-greetingswithradiobuttons.png)
+     ![Formulaire Greetings avec TextBlock et deux cases d’option](../media/exploreide-greetingswithradiobuttons.png)
 
 3. Dans la fenêtre **Propriétés** du contrôle RadioButton de gauche, affectez à la propriété **Nom** (propriété en haut de la fenêtre **Propriétés**) la valeur `HelloButton`.
 
@@ -207,17 +229,15 @@ Dans cette étape, vous recherchez l’erreur que nous avons provoquée précéd
 
 #### <a name="start-debugging-and-find-the-error"></a>Démarrer le débogage et rechercher l’erreur
 
-1. Démarrez le débogueur en sélectionnant **Déboguer**, puis **Démarrer le débogage**.
+1. Démarrez le débogueur en appuyant sur **F5** ou en sélectionnant **Déboguer**, puis **Démarrer le débogage**.
 
-     ![Commande Démarrer le débogage du menu Débogage](../media/exploreide-startdebugging.png)
+   Une fenêtre **Mode arrêt** s’affiche. La fenêtre **Sortie** indique qu’une exception IOException s’est produite : Impossible de trouver la ressource « mainwindow.xaml ».
 
-     Une fenêtre **Mode arrêt** s’affiche. La fenêtre **Sortie** indique qu’une exception IOException s’est produite : Impossible de trouver la ressource « mainwindow.xaml ».
+   ![Capture d’écran de message IOException](../media/exploreide-ioexception.png)
 
 2. Arrêtez le débogueur en choisissant **Déboguer** > **Arrêter le débogage**.
 
-     ![Commande Arrêter le débogage du menu Débogage](../media/exploreide-stopdebugging.png)
-
-Nous avons renommé *MainWindow.xaml* en *Greetings.xaml* au début de cette procédure pas à pas, mais le code continue de faire référence à *MainWindow.xaml* comme URI de démarrage de l’application. Cela explique pourquoi le projet ne démarre pas.
+Nous avons renommé *MainWindow.xaml* en *Greetings.xaml* au début de ce didacticiel, mais le code continue de faire référence à *MainWindow.xaml* comme URI de démarrage de l’application. Cela explique pourquoi le projet ne démarre pas.
 
 #### <a name="specify-greetingsxaml-as-the-startup-uri"></a>Spécifier Greetings.xaml comme URI de démarrage
 
@@ -237,8 +257,6 @@ Vous pouvez tester le code pendant le débogage en ajoutant des points d’arrê
 
 2. Ajoutez un point d'arrêt à partir du menu en sélectionnant **Déboguer**, puis **Basculer le point d'arrêt**.
 
-     ![Commande Basculer le point d'arrêt du menu Débogage](../media/exploreide-togglebreakpoint.png)
-
      Un cercle rouge apparaît à côté de la ligne de code dans la bordure gauche de la fenêtre de l’éditeur.
 
 3. Sélectionnez la ligne suivante : `MessageBox.Show("Goodbye.")`.
@@ -247,7 +265,9 @@ Vous pouvez tester le code pendant le débogage en ajoutant des points d’arrê
 
 5. Dans la fenêtre **Greetings** , choisissez la case d'option **Hello** , puis le bouton **Afficher** .
 
-     La ligne `MessageBox.Show("Hello.")` est mise en surbrillance en jaune. Dans la partie inférieure de l'IDE, les fenêtres Automatique, Variables locales et Espion sont ancrées ensemble sur le côté gauche. Les fenêtres Pile des appels, Points d'arrêt, Commande, Immédiat et Sortie sont ancrées ensemble sur le côté droit.
+    La ligne `MessageBox.Show("Hello.")` est mise en surbrillance en jaune. Dans la partie inférieure de l’IDE, les fenêtres Automatique, Variables locales et Espion sont ancrées ensemble sur le côté gauche. Les fenêtres Pile des appels, Points d’arrêt, Paramètres d’exception, Commande, Immédiat et Sortie sont ancrées ensemble sur le côté droit.
+
+    ![Capteur d’écran de point d’arrêt dans le débogueur](media/exploreide-debugbreakpoint.png)
 
 6. Dans la barre de menus, choisissez **Déboguer** > **Pas à pas sortant**.
 
@@ -271,15 +291,9 @@ Maintenant que vous avez vérifié que tout fonctionne, vous pouvez préparer un
 
 1. Dans le menu principal, sélectionnez **Générer** > **Nettoyer la solution** pour supprimer les fichiers intermédiaires et les fichiers de sortie créés lors des builds précédentes. Cette opération n'est pas nécessaire, mais elle nettoie les sorties des versions Debug.
 
-     ![Commande Nettoyer la solution du menu Générer](../media/exploreide-cleansolution.png)
-
 2. Remplacez la configuration de build **Debug** pour HelloWPFApp par **Release** à l’aide du contrôle de liste déroulante de la barre d’outils (« Debug » est actuellement affiché).
 
-     ![Barre d'outils Standard avec Version finale sélectionnée](../media/exploreide-releaseversion.png)
-
 3. Générez la solution en choisissant **Générer** > **Générer la solution**.
-
-     ![Commande Générer la solution du menu Générer](../media/exploreide-buildsolution.png)
 
 Félicitations ! Vous avez terminé ce didacticiel. Le fichier *.exe* que vous avez généré se trouve sous le répertoire de votre solution et de votre projet (*...\HelloWPFApp\HelloWPFApp\bin\Release*).
 

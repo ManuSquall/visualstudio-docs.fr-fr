@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Créer des modèles d’élément | Microsoft Docs'
+title: Guide pratique pour créer des modèles d’élément | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,21 +14,21 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 09d81f82584e7ab2002d9338999927e1ac3e09bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f7ec6628c6cfd12a35de151689196dadd4868f83
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788246"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324758"
 ---
 # <a name="how-to-create-item-templates"></a>Guide pratique pour créer des modèles d’élément
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Les étapes de la [première procédure](../ide/how-to-create-item-templates.md#export_template) de cette rubrique montrent comment créer un modèle d’élément à l’aide de l’Assistant **Exportation de modèle**. Si votre modèle se compose de plusieurs fichiers, consultez [Guide pratique pour créer des modèles d’élément multifichier](../ide/how-to-create-multi-file-item-templates.md).  
+Les étapes de la [première procédure](#to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box) de cette rubrique montrent comment créer un modèle d’élément à l’aide de l’Assistant **Exportation de modèle**. Si votre modèle se compose de plusieurs fichiers, consultez [Guide pratique pour créer des modèles d’élément multifichier](../ide/how-to-create-multi-file-item-templates.md).  
   
- L'Assistant exécute de nombreuses tâches à votre place pour créer le modèle de base mais, dans de nombreux cas, vous devez modifier manuellement le fichier .vstemplate après avoir exporté le modèle. Par exemple, si vous souhaitez que l’élément s’affiche dans la boîte de dialogue **Ajouter un nouvel élément** pour un projet d’application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], vous devez effectuer quelques étapes supplémentaires. La [deuxième procédure](../ide/how-to-create-item-templates.md#modify_template) de cette rubrique vous aide à accomplir cette tâche.  
+ L'Assistant exécute de nombreuses tâches à votre place pour créer le modèle de base mais, dans de nombreux cas, vous devez modifier manuellement le fichier .vstemplate après avoir exporté le modèle. Par exemple, si vous souhaitez que l’élément s’affiche dans la boîte de dialogue **Ajouter un nouvel élément** pour un projet d’application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], vous devez effectuer quelques étapes supplémentaires. La [deuxième procédure](#to-enable-the-item-template-to-be-used-in-a-store-project) de cette rubrique vous aide à accomplir cette tâche.  
  
- Dans certains cas, il est possible que vous vouliez ou deviez créer un modèle d'élément manuellement à partir de zéro. La [troisième procédure](../ide/how-to-create-item-templates.md#create_template) montre comment procéder.  
+ Dans certains cas, il est possible que vous vouliez ou deviez créer un modèle d'élément manuellement à partir de zéro. La [troisième procédure](#to-enable-templates-for-specific-project-sub-types) montre comment procéder.  
   
  Consultez [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md) pour plus d’informations sur les éléments qui peuvent être utilisés dans le fichier .vstemplate.  
   
@@ -67,7 +67,7 @@ Les étapes de la [première procédure](../ide/how-to-create-item-templates.md#
   
     Un projet C++ Windows Store pour Windows 8.1 utilise la valeur `WinRT-Native-6.3`. Pour Windows 10 et d’autres types de projets, consultez [TemplateGroupID, élément (modèles Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md).  
   
-    L'exemple suivant illustre le contenu complet d'un fichier .vstemplate après l'ajout de la ligne XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`. Cet exemple est spécifique aux projets C#. Vous pouvez modifier les éléments [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> <ProjectTpe> et \< pour spécifier d’autres types de projets et langages.  
+    L'exemple suivant illustre le contenu complet d'un fichier .vstemplate après l'ajout de la ligne XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`. Cet exemple est spécifique aux projets C#. Vous pouvez modifier le \<ProjectType > et \< [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> éléments à spécifier d’autres types de projets et langages.  
   
    ```xml  
    <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">  

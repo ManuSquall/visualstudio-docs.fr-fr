@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 548a8a4ec05c0ee88e68095a5322a8831e77b9b4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 664d323976692d20a3f9f9bb8a7e66c0aa4f9761
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937251"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "58069604"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Déploiement MSI et VSIX d'un langage spécifique à un domaine
 Vous pouvez installer une langue spécifique à un domaine sur votre ordinateur ou sur d’autres ordinateurs. Visual Studio doit déjà être installé sur l’ordinateur cible.
@@ -25,14 +25,15 @@ Vous pouvez installer une langue spécifique à un domaine sur votre ordinateur 
 |VSX (Extension de Visual Studio)|Très facile à déployer : Copiez et exécutez le **.vsix** fichier à partir du projet DslPackage.<br /><br /> Pour plus d’informations, consultez [installation et désinstallation d’une solution DSL à l’aide de la VSX](#Installing).|
 |MSI (fichier de programme d’installation)|-Permet à l’utilisateur ouvrir Visual Studio en double-cliquant sur un fichier DSL.<br />-Associe une icône avec le type de fichier DSL dans l’ordinateur cible.<br />-Associe un XSD (schéma XML) avec le type de fichier DSL. Cela évite des avertissements lorsque le fichier est chargé dans Visual Studio.<br /><br /> Vous devez ajouter un projet d’installation à votre solution pour créer un fichier MSI.<br /><br /> Pour plus d’informations, consultez [déploiement d’une solution DSL à l’aide d’un fichier MSI](#msi).|
 
-## <a name="Installing"></a> Installation et désinstallation d’une solution DSL à l’aide de la VSX
- Lorsque votre solution DSL est installé par cette méthode, l’utilisateur peut ouvrir un fichier DSL à partir de Visual Studio, mais le fichier ne peut pas être ouvert à partir de l’Explorateur Windows.
+## <a name="Installing"></a> Installer et désinstaller une solution DSL à l’aide de la VSX
 
-#### <a name="to-install-a-dsl-by-using-the-vsx"></a>Pour installer une solution DSL à l’aide de la VSX
+Lorsque votre solution DSL est installé par cette méthode, l’utilisateur peut ouvrir un fichier DSL à partir de Visual Studio, mais le fichier ne peut pas être ouvert à partir de l’Explorateur Windows.
 
-1. Sur votre ordinateur, recherchez le **.vsix** fichier qui a été généré par votre projet de Package DSL.
+### <a name="to-install-a-dsl-by-using-the-vsx"></a>Pour installer une solution DSL à l’aide de la VSX
 
-   1.  Dans **l’Explorateur de solutions**, avec le bouton droit le **DslPackage** de projet, puis cliquez sur **ouvrir le dossier dans l’Explorateur Windows**.
+1. Recherchez le **.vsix** fichier qui a été généré par votre projet de Package DSL :
+
+   1.  Dans **l’Explorateur de solutions**, cliquez sur le **DslPackage** de projet, puis cliquez sur **ouvrir le dossier dans l’Explorateur de fichiers**.
 
    2.  Recherchez le fichier **bin\\\*\\**_VotreProjet_**. DslPackage.vsix**
 
@@ -50,9 +51,9 @@ Vous pouvez installer une langue spécifique à un domaine sur votre ordinateur 
 
 5. Pour tester la solution DSL, utilisez Visual Studio pour créer un nouveau fichier portant l’extension que vous avez défini pour votre DSL.
 
-#### <a name="to-uninstall-a-dsl-that-was-installed-by-using-vsx"></a>Pour désinstaller une solution DSL a été installée à l’aide de VSX
+### <a name="to-uninstall-a-dsl-that-was-installed-by-using-vsx"></a>Pour désinstaller une solution DSL a été installée à l’aide de VSX
 
-1. Sur le **outils** menu, cliquez sur **Gestionnaire d’extensions**.
+1. Dans le menu **Outils** , choisissez **Extensions et mises à jour**.
 
 2. Développez **Extensions installées**.
 
@@ -69,7 +70,7 @@ Vous pouvez installer une langue spécifique à un domaine sur votre ordinateur 
 
  Pour générer un fichier MSI, vous ajoutez un projet d’installation à votre solution Visual Studio. La méthode la plus simple de création d’un projet d’installation consiste à utiliser le modèle CreateMsiSetupProject.tt, que vous pouvez télécharger depuis le [site VMSDK](http://go.microsoft.com/fwlink/?LinkID=186128).
 
-#### <a name="to-deploy-a-dsl-in-an-msi"></a>Pour déployer une solution DSL dans un fichier MSI
+### <a name="to-deploy-a-dsl-in-an-msi"></a>Pour déployer une solution DSL dans un fichier MSI
 
 1. Définissez `InstalledByMsi` dans le manifeste d’extension. Cela empêche le VSX installé et désinstallé à l’exception par le fichier MSI. Ceci est important si vous inclurez des autres composants dans le fichier MSI.
 
@@ -127,7 +128,7 @@ Vous pouvez installer une langue spécifique à un domaine sur votre ordinateur 
 
     Si vous préférez, vous pouvez créer le projet d’installation manuellement, au lieu d’utiliser le modèle de texte. Pour une procédure pas à pas qui inclut cette procédure, consultez le chapitre 5 du [de visualisation et modélisation de laboratoire de kit de développement logiciel](http://go.microsoft.com/fwlink/?LinkId=208878).
 
-#### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>Pour désinstaller une solution DSL a été installée à partir d’un fichier MSI
+### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>Pour désinstaller une solution DSL a été installée à partir d’un fichier MSI
 
 1.  Dans Windows, ouvrez le **programmes et fonctionnalités** le panneau de configuration.
 

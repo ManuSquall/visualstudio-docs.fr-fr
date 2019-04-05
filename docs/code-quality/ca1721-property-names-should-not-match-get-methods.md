@@ -1,6 +1,6 @@
 ---
 title: 'CA1721 : Les noms des propriétés ne doivent pas être identiques à ceux des méthodes Get'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - CA1721
@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 88a56a37248112d377b47054ed815a4aa2629f9d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e2b9c878f630d9e739efc46380ecdfc6555880be
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55953930"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869217"
 ---
 # <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721 : Les noms des propriétés ne doivent pas être identiques à ceux des méthodes Get
 
@@ -34,27 +34,45 @@ ms.locfileid: "55953930"
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Le nom d’un membre public ou protégé commence par 'Get' et sinon correspond au nom d’une propriété publique ou protégée. Par exemple, un type qui contient une méthode nommée 'GetColor' et une propriété nommée 'Color' enfreint cette règle.
+
+Le nom d’un membre commence par 'Get' et sinon correspond au nom d’une propriété. Par exemple, un type qui contient une méthode nommée 'GetColor' et une propriété qui est nommée « Color » provoque une violation de règle.
+
+Par défaut, cette règle examine uniquement les propriétés et les membres visibles de l’extérieur, mais il s’agit de [configurable](#configurability).
 
 ## <a name="rule-description"></a>Description de la règle
- Méthodes Get doivent avoir des noms distinguant clairement leur fonction.
 
- Conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cette cohérence réduit le temps nécessaire pour apprendre une nouvelle bibliothèque de logiciels et confirment au client que la bibliothèque a été développée par une personne compétente en matière de développement de code managé.
+Les méthodes et propriétés « Get » doivent porter des noms distinguant clairement leur fonction.
+
+Les conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cette cohérence réduit le temps nécessaire pour apprendre une nouvelle bibliothèque de logiciels et confirment au client que la bibliothèque a été développée par une personne compétente en matière de développement de code managé.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Modifiez le nom afin qu’il ne correspond pas au nom d’une méthode qui est précédé de 'Get'.
+
+Modifiez le nom afin qu’il ne correspond pas au nom d’une méthode qui est précédé de 'Get'.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Ne supprimez aucun avertissement de cette règle.
+
+Ne supprimez aucun avertissement de cette règle.
 
 > [!NOTE]
-> Cet avertissement peut être exclu si la méthode Get est causée par l’implémentation de IExtenderProvider (interface).
+> Cet avertissement peut être exclu si la méthode « Get » est causée par l’implémentation de IExtenderProvider (interface).
+
+## <a name="configurability"></a>Possibilités de configuration
+
+Si vous exécutez cette règle à partir de [analyseurs FxCop](install-fxcop-analyzers.md) (et non par le biais d’analyse statique du code), vous pouvez configurer les parties de votre codebase pour exécuter cette règle sur, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement par rapport à la surface d’API non publics, ajoutez la paire clé-valeur suivante dans un fichier .editorconfig dans votre projet :
+
+```
+dotnet_code_quality.ca1721.api_surface = private, internal
+```
+
+Vous pouvez configurer cette option pour simplement cette règle, pour toutes les règles ou pour toutes les règles de cette catégorie (d’affectation de noms). Pour plus d’informations, consultez [analyseurs FxCop configurer](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Exemple
- L’exemple suivant contient une méthode ou une propriété qui violent cette règle.
 
- [!code-csharp[FxCop.Naming.GetMethod#1](../code-quality/codesnippet/CSharp/ca1721-property-names-should-not-match-get-methods_1.cs)]
- [!code-vb[FxCop.Naming.GetMethod#1](../code-quality/codesnippet/VisualBasic/ca1721-property-names-should-not-match-get-methods_1.vb)]
+L’exemple suivant contient une méthode ou une propriété qui violent cette règle.
+
+[!code-csharp[FxCop.Naming.GetMethod#1](../code-quality/codesnippet/CSharp/ca1721-property-names-should-not-match-get-methods_1.cs)]
+[!code-vb[FxCop.Naming.GetMethod#1](../code-quality/codesnippet/VisualBasic/ca1721-property-names-should-not-match-get-methods_1.vb)]
 
 ## <a name="related-rules"></a>Règles associées
- [CA1024 : Utiliser des propriétés lorsque nécessaire](../code-quality/ca1024-use-properties-where-appropriate.md)
+
+- [CA1024 : Utiliser des propriétés lorsque nécessaire](../code-quality/ca1024-use-properties-where-appropriate.md)

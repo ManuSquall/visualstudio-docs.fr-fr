@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5b7538342cad63d820992fe699e65386f4f3c8e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: db9aaeb48095b058abb0deefa342598eefeed1b9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908463"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868909"
 ---
 # <a name="devenv-command-line-switches"></a>Commutateurs de ligne de commande Devenv
 
@@ -67,6 +67,7 @@ Les commutateurs de ligne de commande suivants affichent l’environnement IDE e
 |[/Command](command-devenv-exe.md)|Démarre l’IDE et exécute la commande spécifiée.<br /><br /> `devenv /command "nav https://docs.microsoft.com/"`|
 |[/DebugExe](debugexe-devenv-exe.md)|Charge un exécutable C++ sous le contrôle du débogueur. Ce commutateur n’est pas disponible pour les exécutables Visual Basic ou C#. Pour plus d’informations, consultez [Démarrer automatiquement un processus dans le débogueur](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger).<br /><br /> `devenv /debugexe mysln.exe`|
 |[/Diff](diff.md)|Compare deux fichiers. Accepte quatre paramètres : *SourceFile*, *TargetFile*, *SourceDisplayName* (facultatif) et *TargetDisplayName* (facultatif).<br /><br /> `devenv /diff File1 File2 Alias1 Alias2`|
+|[/DoNotLoadProjects](donotloadprojects-devenv-exe.md)|Ouvre la solution spécifiée sans charger de projets.<br /><br /> `devenv /donotloadprojects mysln.sln`|
 |[/Edit](edit-devenv-exe.md)|Ouvre les fichiers spécifiés dans une instance en cours d’exécution de cette application. S’il n’existe aucune instance en cours d’exécution, il démarre une nouvelle instance avec une disposition de fenêtre simplifiée.<br /><br /> `devenv /edit File1 File2`|
 |[/LCID ou /L](lcid-devenv-exe.md)|Spécifie la langue par défaut pour l’IDE. Si la langue spécifiée n’est pas incluse dans votre installation de Visual Studio, ce paramètre est ignoré.<br /><br /> `devenv /l 1033`|
 |[/Log](log-devenv-exe.md)|Démarre Visual Studio et enregistre toute l’activité dans le fichier journal.<br /><br /> `devenv /log mylogfile.xml`|

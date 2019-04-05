@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 567d315694ff4f55ae5e1d2df2e7963bc21902a3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: da5eab1424ac6f6fe580ec0f71ec3efd6e120020
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932012"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57866995"
 ---
 # <a name="rule-sets-for-roslyn-analyzers"></a>Ensembles de règles pour les analyseurs Roslyn
 
-Ensembles de règles prédéfinis sont inclus avec certains packages d’analyseur de NuGet. Par exemple, les ensembles de règles qui sont inclus dans le [Microsoft.CodeAnalysis.FxCopAnalyzers NuGet package de l’analyseur](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) (depuis la version 2.6.2) activer ou désactiver les règles en fonction de leur catégorie, telles que la sécurité, d’affectation de noms, ou performances. À l’aide des ensembles de règles rend plus facile pour rapidement afficher uniquement ces violations des règles qui se rapportent à une catégorie particulière de règle.
+Ensembles de règles prédéfinis sont inclus avec certains packages d’analyseur de NuGet. Par exemple, les ensembles de règles qui sont inclus dans le [Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) package NuGet de l’analyseur (depuis la version 2.6.2) activer ou désactiver les règles selon leur catégorie, telles que la sécurité, d’affectation de noms, ou performances. À l’aide des ensembles de règles rend plus facile pour rapidement afficher uniquement ces violations des règles qui se rapportent à une catégorie particulière de règle.
 
 Si vous migrez à partir de l’analyse statique du code « FxCop » héritée vers des analyseurs de Roslyn, ces ensembles de règles permettent de continuer à utiliser les mêmes configurations de règle que vous avez utilisé précédemment.
 
@@ -41,7 +41,7 @@ Les ensembles de règles analyseur prédéfini incluent trois ensembles de règl
 
 En outre, il existe deux ensembles de règles pour chaque catégorie de règles dans le package, telles que les performances ou la sécurité. Un ensemble de règles Active toutes les règles pour la catégorie et un ensemble de règles respecte les paramètres de gravité et d’activation par défaut pour chaque règle dans la catégorie.
 
- Le [Microsoft.CodeAnalysis.FxCopAnalyzers NuGet package de l’analyseur](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) inclut les ensembles de règles pour les catégories suivantes, pour faire correspondre les ensembles de règles disponibles pour une analyse statique du code héritée « FxCop » :
+Le [Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) package NuGet de l’analyseur inclut les ensembles de règles pour les catégories suivantes, qui correspondent aux ensembles de règles disponibles pour l’analyse du code statique FxCop « hérités » :
 
 - design
 - documentation
@@ -54,7 +54,8 @@ En outre, il existe deux ensembles de règles pour chaque catégorie de règles 
 
 ## <a name="see-also"></a>Voir aussi
 
+- [Forum aux questions sur les analyseurs](analyzers-faq.md)
 - [Vue d’ensemble des analyseurs .NET Compiler Platform](roslyn-analyzers-overview.md)
-- [Installer les analyseurs .NET Compiler Platform](install-roslyn-analyzers.md)
-- [Configurer et utiliser des règles de l’analyseur Roslyn](use-roslyn-analyzers.md)
+- [Installer des analyseurs](install-roslyn-analyzers.md)
+- [Utiliser des analyseurs](use-roslyn-analyzers.md)
 - [Utiliser la règle définit pour les règles d’analyse de code de groupe](using-rule-sets-to-group-code-analysis-rules.md)

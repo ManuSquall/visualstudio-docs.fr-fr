@@ -172,8 +172,12 @@ items:
     - name: Utiliser des solutions et des projets
       href: ide/solutions-and-projects-in-visual-studio.md
       items:
+      - name: Créer un projet
+        href: ide/create-new-project.md
       - name: Créer des solutions et des projets
         href: ide/creating-solutions-and-projects.md
+      - name: Ouvrir un projet à partir d’un référentiel
+        href: get-started/tutorial-open-project-from-repo.md
       - name: Porter, migrer et mettre à niveau des projets
         href: porting/port-migrate-and-upgrade-visual-studio-projects.md
       - name: Porter, migrer et mettre à niveau des projets dans Visual Studio 2019
@@ -225,7 +229,7 @@ items:
           href: ide/how-to-manually-create-web-templates.md
         - name: Dépanner des modèles
           href: ide/how-to-troubleshoot-templates.md
-      - name: Localiser et organiser des modèles de projet et d’élément
+      - name: Localiser des modèles de projet et d’élément
         href: ide/how-to-locate-and-organize-project-and-item-templates.md
       - name: Personnaliser des modèles de projet et d’élément
         href: ide/customizing-project-and-item-templates.md
@@ -302,6 +306,7 @@ items:
             - name: Dépanner des extraits
               href: ide/troubleshooting-snippets.md
         - name: Actions rapides
+          displayName: light bulb screwdriver suggestions
           href: ide/quick-actions.md
           items:
           - name: Actions rapides courantes
@@ -375,9 +380,9 @@ items:
             href: ide/reference/sync-type-and-file.md
           - name: Utiliser un type explicite
             href: ide/reference/convert-var-to-explicit-type.md
-          - name: Utiliser une expression lambda ou un corps de bloc
+          - name: Utiliser un corps d’expression ou un corps de bloc pour les expressions lambda
             href: ide/reference/use-block-body-lambda.md
-          - name: Paramètres et valeurs inutilisés
+          - name: Affectations, variables et paramètres de valeur inutilisés
             href: ide/reference/unused-values-parameters.md
           - name: Mettre à la ligne, mettre en retrait et aligner des paramètres
             href: ide/reference/wrap-align-indent-parameters.md
@@ -395,9 +400,9 @@ items:
             href: ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md
           - name: Tous les raccourcis clavier
             href: ide/default-keyboard-shortcuts-in-visual-studio.md
-        - name: Conseils pour les développeurs .NET
+        - name: Conseils pour les développeurs C#
           displayName: ReSharper
-          href: ide/visual-studio-2017-for-dotnet-developers.md
+          href: ide/csharp-developer-productivity.md
       - name: Utilisez IntelliSense
         href: ide/using-intellisense.md
         items:
@@ -784,7 +789,7 @@ items:
           href: ide/reference/autorecover-environment-options-dialog-box.md
         - name: Environnement – Documents
           href: ide/reference/documents-environment-options-dialog-box.md
-        - name: Environnement – Extensions et mises à jour
+        - name: Environnement – Extensions
           href: ide/reference/extensions-and-updates-environment-options-dialog-box.md
         - name: Environnement – Rechercher et remplacer
           href: ide/reference/find-and-replace-environment-options-dialog-box.md
@@ -984,6 +989,8 @@ items:
       href: ide/reference/deploy-devenv-exe.md
     - name: -Diff (devenv.exe)
       href: ide/reference/diff.md
+    - name: -DoNotLoadProjects (devenv.exe)
+      href: ide/reference/donotloadprojects-devenv-exe.md
     - name: -Edit (devenv.exe)
       href: ide/reference/edit-devenv-exe.md
     - name: -LCID (devenv.exe)
@@ -1188,9 +1195,9 @@ items:
     displayName: Feedback
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: fb7a40cf8558fb5c3732fba0ec32ebbbb35fb0bb
-ms.sourcegitcommit: e2b1932d3d4d77dfacb5d245c8b2c7490a94a20e
+ms.openlocfilehash: 91a495ff1f48243244f4c68bb6a8a87a6acdd7ea
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "57683396"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58568021"

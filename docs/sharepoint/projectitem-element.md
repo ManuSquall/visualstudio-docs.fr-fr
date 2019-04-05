@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6fc30ff87d02013a95ea7950841e3185b2bdc69d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2768a2e55b3e38158f2ef6b856a653a1a2c12dfa
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643663"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322992"
 ---
 # <a name="projectitem-element"></a>ProjectItem (élément)
   Représente un élément de projet SharePoint. Cet élément de l’élément racine requis de la *.spdata* fichier.
@@ -70,10 +70,10 @@ ms.locfileid: "56643663"
 
 |||
 |-|-|
-|**Espace de noms**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Espace de noms**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**Nom de schéma**|Schéma d’élément de projet SharePoint|
 |**Fichier de validation**|ProjectItemModelSchema.xsd|
-|**Peut être vide**|Aucune|
+|**Peut être vide**|Non|
 
 ## <a name="see-also"></a>Voir aussi
 [Rseference de schéma d’élément de projet SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)

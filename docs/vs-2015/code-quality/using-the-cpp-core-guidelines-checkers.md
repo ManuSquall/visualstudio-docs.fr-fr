@@ -1,24 +1,22 @@
 ---
 title: À l’aide du C++ Core Guidelines checkers | Microsoft Docs
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-code-analysis
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: a2098fd9-8334-4e95-9b8d-bc3da689d9e3
 caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 1153f7a32c26946fafb1230699c4afcae976cd9e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c0fb306cb7326464af847f09b319e8e702c76831
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799559"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952468"
 ---
-# <a name="using-the-c-core-guidelines-checkers"></a>À l’aide des vérificateurs C++ Core Guidelines
+# <a name="using-the-c-core-guidelines-checkers"></a>Utilisation des vérificateurs C++ Core Guidelines
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les recommandations C++ Core Guidelines sont un ensemble portable d’instructions, des règles et des meilleures pratiques sur le codage en C++ créé par les concepteurs et les experts de C++.  Visual Studio prend désormais en charge les packages de-créer des règles supplémentaires pour le code des outils d’analyse pour vérifier la conformité avec les recommandations C++ Core Guidelines dans votre code et de suggérer des améliorations.  
@@ -83,30 +81,27 @@ int main()
   
 - C26494 est règle Type.5 : Initialisez toujours un objet.  
   
-- C26485 est règle Bounds.3 : aucune perte de tableau en pointeur.  
+- C26485 est règle Bounds.3 : Aucune perte de tableau en pointeur.  
   
-- C26481 est règle Bounds.1 : ne pas utiliser l’opération arithmétique de pointeur. Utilisez plutôt `span`.  
+- C26481 est règle Bounds.1 : N’utilisez pas opérations arithmétiques de pointeur. Utilisez plutôt `span`.  
   
   Si les ensembles de règles C++ Core Check l’analyse de code sont installées et activées lorsque vous compilez ce code, les deux premiers avertissements sont générés, mais la troisième est supprimée. Voici la sortie de génération à partir de l’exemple de code :  
   
-  **1 >---génération démarrée : projet : CoreCheckExample, Configuration : débogage Win32--**  
+  **1 >---début de la génération : Projet : CoreCheckExample, Configuration : Débogage Win32--**  
 **----**  
-**1 > CoreCheckExample.cpp**  
+**1>  CoreCheckExample.cpp**  
 **1 > CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
 **rojects\CoreCheckExample\Debug\CoreCheckExample.exe**  
 **1 > CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
 **rojects\CoreCheckExample\Debug\CoreCheckExample.pdb (fichier PDB complet)**  
 **c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche**  
-**ckexample\corecheckexample.cpp(6) : avertissement C26494 : Variable « arr » est uninitializ**  
+**ckexample\corecheckexample.cpp(6) : avertissement C26494 : La variable « arr » est uninitializ**  
 **Ed. initialisez toujours un objet. (type.5 : http://go.microsoft.com/fwlink/p/?Link**  
-**ID = 620421)**  
+**ID=620421)**  
 **c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche**  
-**ckexample\corecheckexample.cpp(7) : avertissement C26485 : l’Expression « arr » : aucun tableau à**  
+**ckexample\corecheckexample.cpp(7) : avertissement C26485 : Expression « arr » : Aucun tableau à**  
  **atténuation de pointeur. (bounds.3 : http://go.microsoft.com/fwlink/p/?LinkID=620415)**  
-**=== Génération : 1 a réussi, 0 a échoué, 0 mis à jour, 0 a été ignoré ===** The C++ Core Guidelines sont là pour vous aider à écrire du code de meilleure et plus sûr. Toutefois, si vous avez une instance où une règle ou un profil ne doit pas être appliqué, il est facile de supprimer directement dans le code. Vous pouvez utiliser le `gsl::suppress` attribut conserver C++ Core Check de détection et de signaler toute violation d’une règle dans le bloc de code suivant. Vous pouvez marquer les instructions individuelles pour supprimer des règles spécifiques. Vous pouvez même supprimer le profil bounds entière en écrivant `[[gsl::suppress(bounds)]]` sans inclure un numéro de règle spécifique.  
+**=== Build : 1 a réussi, 0 a échoué, 0 mis à jour, 0 a été ignoré ===** The C++ Core Guidelines sont là pour vous aider à écrire du code de meilleure et plus sûr. Toutefois, si vous avez une instance où une règle ou un profil ne doit pas être appliqué, il est facile de supprimer directement dans le code. Vous pouvez utiliser le `gsl::suppress` attribut conserver C++ Core Check de détection et de signaler toute violation d’une règle dans le bloc de code suivant. Vous pouvez marquer les instructions individuelles pour supprimer des règles spécifiques. Vous pouvez même supprimer le profil bounds entière en écrivant `[[gsl::suppress(bounds)]]` sans inclure un numéro de règle spécifique.  
   
 ## <a name="use-the-guideline-support-library"></a>Utiliser la bibliothèque de prise en charge d’indication  
  Le package NuGet de Microsoft.CppCoreCheck installe également un package qui contient l’implémentation Microsoft de la bibliothèque de prise en charge d’orientation (GSL). GSL est également disponible dans leur forme autonome à [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl). Cette bibliothèque est utile si vous souhaitez suivre les instructions de base. GSL inclut les définitions qui vous permettent de remplacer des constructions susceptibles d’engendrer des erreurs avec des solutions plus sûres. Par exemple, vous pouvez remplacer un `T*, length` paire de paramètres avec le `span<T>` type. GSL étant open source, si vous souhaitez jeter un coup de œil à la source de la bibliothèque, commentaire ou contribuer, le projet, consultez [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
-
-
-

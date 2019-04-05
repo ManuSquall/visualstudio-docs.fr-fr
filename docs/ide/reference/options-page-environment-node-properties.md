@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79ddd62df2afd5052d3ef1ecc0753d3f8ba6cf3a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ee14cddc6a3eb4b0348b88be1d7c2b0a48b44c01
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708327"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355602"
 ---
 # <a name="options-page-environment-node-properties"></a>Page Options, Environnement, propriétés de nœud
 
@@ -120,7 +120,7 @@ Cet article décrit les pages (ou collections de propriétés) associées à la 
 |Nom de l'élément de propriété|Value|Description|
 | - |-----------|-----------------|
 |OnRunOrPreview|Get/Set (chaîne)|Détermine si l'IDE enregistre tout avant un aperçu ou l'exécution d'un projet généré.|
-|ProjectsLocation|Get/Set (chaîne)|Détermine le répertoire par défaut où la boîte de dialogue **Ajouter un projet** enregistre les nouveaux projets.|
+|ProjectsLocation|Get/Set (chaîne)|Détermine le répertoire par défaut où les nouveaux projets sont enregistrés.|
 |ShowOutputWindowBeforeBuild|Get/Set (booléen)|Détermine si le démarrage d’une build affiche la fenêtre **Sortie**.|
 |ShowTaskListAfterBuild|Get/Set (booléen)|Détermine si une opération de build qui échoue affiche la **Liste des tâches** quand la build est terminée.|
 |TrackFileSelectionInExplorer|Get/Set (booléen)|Détermine si l’élément actuel est suivi dans l’**Explorateur de solutions**.|

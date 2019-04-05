@@ -1,25 +1,22 @@
 ---
-title: 'Comment : définir et utiliser des délégués d’activité dans le Concepteur de flux de travail | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Définir et utiliser des délégués d’activité dans le Concepteur de flux de travail | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
 caps.latest.revision: 3
 author: steved0x
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: f99816153870884f868a6b229068bdc281408337
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 37adb6cf6462887010b1c06c7d5af4a539203b15
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865490"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953966"
 ---
-# <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Procédure : définir et utiliser des délégués d'activité dans le Concepteur de flux de travail
+# <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Procédure : Définir et utiliser des délégués d’activité dans le concepteur de workflow
 [!INCLUDE[net_v45](../includes/net-v45-md.md)] inclut un nouveau concepteur prêt à l'emploi pour l'activité <xref:System.Activities.Statements.InvokeDelegate>. Ce concepteur peut être utilisé pour assigner des délégués à l'activité qui dérive de <xref:System.Activities.ActivityDelegate>, telle que <xref:System.Activities.ActivityAction> ou <xref:System.Activities.ActivityFunc%601>.  
   
 ### <a name="define-an-activity-delegate"></a>Définir un délégué d'activité  
@@ -60,7 +57,7 @@ ms.locfileid: "49865490"
   
 18. Dans le **valeur** colonne de l’argument nommé **Argument**, entrez **Items [Index]**. Cliquez sur **Ok** pour fermer la **DelegateArguments** boîte de dialogue.  
   
-19. Faites glisser une activité <xref:System.Activities.Statements.Assign> sur la ligne horizontale sous l'activité <xref:System.Activities.Statements.InvokeDelegate>. Le <xref:System.Activities.Statements.Assign> activité est créée et un <xref:System.Activities.Statements.Sequence> activité est créée automatiquement pour contenir les deux activités dans le **corps** section de la **MyForEach** activité. La séquence est nécessaire, car le **corps** section peut contenir uniquement une seule activité. La fonctionnalité de création automatique d’une nouvelle activité <xref:System.Activities.Statements.Sequence> est une nouveauté du [!INCLUDE[net_v45](../includes/net-v45-md.md)].  
+19. Faites glisser une activité <xref:System.Activities.Statements.Assign> sur la ligne horizontale sous l'activité <xref:System.Activities.Statements.InvokeDelegate>. Le <xref:System.Activities.Statements.Assign> activité est créée et un <xref:System.Activities.Statements.Sequence> activité est créée automatiquement pour contenir les deux activités dans le **corps** section de la **MyForEach** activité. La séquence est nécessaire, car le **corps** section peut contenir uniquement une seule activité. La fonctionnalité de création automatique d'une nouvelle activité <xref:System.Activities.Statements.Sequence> est une nouveauté du [!INCLUDE[net_v45](../includes/net-v45-md.md)].  
   
 20. Définir le **à** propriété de la <xref:System.Activities.Statements.Assign> activité **index**. Définir le **valeur** propriété de la **affecter** activité **index + 1**.  
   

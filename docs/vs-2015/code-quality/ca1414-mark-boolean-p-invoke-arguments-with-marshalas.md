@@ -1,14 +1,9 @@
 ---
-title: 'CA1414 : Marquer les arguments P-Invoke booléens comme MarshalAs | Microsoft Docs'
-ms.custom: ''
+title: 'CA1414 : Marquer les arguments P-Invoke booléens comme MarshalAs | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1414
 - MarkBooleanPInvokeArgumentsWithMarshalAs
@@ -20,12 +15,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7f8378d2b3f498146fc960e57d1d3562827fe347
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e444519c5a6d6d1547b782006d063e90d4a3b976
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918400"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952755"
 ---
 # <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414 : Marquer les arguments P/Invoke booléens comme MarshalAs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ ms.locfileid: "49918400"
 ## <a name="rule-description"></a>Description de la règle
  Une plateforme d’appeler la méthode accède à un code non managé et est définie à l’aide de la `Declare` mot clé dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ou <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. <xref:System.Runtime.InteropServices.MarshalAsAttribute> Spécifie le comportement de marshaling est utilisé pour convertir les types de données entre code managé et non managé. Types de nombreuses données simples, tels que <xref:System.Byte?displayProperty=fullName> et <xref:System.Int32?displayProperty=fullName>, ont une représentation unique dans le code non managé et ne nécessitent pas de spécification de leur comportement de marshaling ; le common language runtime fournit automatiquement le comportement correct.
 
- Le <xref:System.Boolean> type de données a plusieurs représentations en code non managé. Lorsque le <xref:System.Runtime.InteropServices.MarshalAsAttribute> n’est pas spécifié, la valeur par défaut de marshaling de comportement pour le <xref:System.Boolean> est de type de données <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. Il s’agit d’un entier 32 bits, ce qui n’est pas approprié dans toutes les circonstances. La représentation booléenne qui est requis par la méthode non managée doit être déterminée et mis en correspondance avec le texte approprié <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. UnmanagedType.Bool est du type BOOL Win32, qui est toujours 4 octets. UnmanagedType.U1 doit être utilisé pour C++ `bool` ou d’autres types de 1 octet. Pour plus d’informations, consultez [Marshaling par défaut pour les Types booléens](http://msdn.microsoft.com/en-us/d4c00537-70f7-4ca6-8197-bfc1ec037ff9).
+ Le <xref:System.Boolean> type de données a plusieurs représentations en code non managé. Lorsque le <xref:System.Runtime.InteropServices.MarshalAsAttribute> n’est pas spécifié, la valeur par défaut de marshaling de comportement pour le <xref:System.Boolean> est de type de données <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. Il s’agit d’un entier 32 bits, ce qui n’est pas approprié dans toutes les circonstances. La représentation booléenne qui est requis par la méthode non managée doit être déterminée et mis en correspondance avec le texte approprié <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. UnmanagedType.Bool est du type BOOL Win32, qui est toujours 4 octets. UnmanagedType.U1 doit être utilisé pour C++ `bool` ou d’autres types de 1 octet. Pour plus d’informations, consultez [Marshaling par défaut pour les Types booléens](http://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9).
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, appliquez <xref:System.Runtime.InteropServices.MarshalAsAttribute> à la <xref:System.Boolean> paramètre ou valeur de retour. Définissez la valeur de l’attribut approprié <xref:System.Runtime.InteropServices.UnmanagedType>.
@@ -59,12 +54,9 @@ ms.locfileid: "49918400"
  [!code-vb[FxCop.Interoperability.BoolMarshalAs#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Interoperability.BoolMarshalAs/vb/FxCop.Interoperability.BoolMarshalAs.vb#1)]
 
 ## <a name="related-rules"></a>Règles associées
- [CA1901 : Les déclarations P/Invoke doivent être portables](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)
+ [CA1901 : Les déclarations P/Invoke doivent être portables](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)
 
- [CA2101 : Spécifier le marshaling pour les arguments de chaîne P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
+ [CA2101 : Spécifiez le marshaling pour les arguments de chaîne P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
 
 ## <a name="see-also"></a>Voir aussi
- <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> [Marshaling par défaut pour les Types booléens](http://msdn.microsoft.com/en-us/d4c00537-70f7-4ca6-8197-bfc1ec037ff9) [interopération avec du Code non managé](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)
-
-
-
+ <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> [Marshaling par défaut pour les Types booléens](http://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9) [interopération avec du Code non managé](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

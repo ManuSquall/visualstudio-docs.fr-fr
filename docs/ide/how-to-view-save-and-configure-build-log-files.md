@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f50117a4101fd3c76e431891ca9a9fe20fa3959
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3517f697425b40e1d9c26b2a16e3d50ed9b8b251
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925226"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323868"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Procédure : Afficher, enregistrer et configurer des fichiers journaux de génération
 
@@ -53,7 +53,7 @@ Si vous générez un projet à l’aide de MSBuild, vous pouvez créer un fichie
      Pour plus d’informations, consultez [Options (boîte de dialogue), Projets et solutions, Générer et exécuter](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md) et <xref:Microsoft.Build.Framework.LoggerVerbosity>.
 
     > [!IMPORTANT]
-    > Vous devez regénérer le projet pour que vos changements soient appliqués dans la fenêtre **Sortie** (tous les projets) et le fichier *<ProjectName>.txt* (projets C++ uniquement).
+    > Vous devez regénérer le projet pour que vos modifications soient appliquées dans la fenêtre **Sortie** (tous les projets) et dans le fichier *\<nom_projet>.txt* (projets C++ uniquement).
 
 ## <a name="see-also"></a>Voir aussi
 

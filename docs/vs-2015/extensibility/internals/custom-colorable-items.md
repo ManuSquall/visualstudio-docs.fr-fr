@@ -1,27 +1,22 @@
 ---
 title: Éléments Coloriables personnalisés | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - colorable items
 - language services, custom colorable items
 ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 272d16b9f5f8fb33b68c911c5e7bd27923f4c2db
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: e210d8c03d3e99cf1e37608f5b65d5a4ab0656f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796946"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949504"
 ---
 # <a name="custom-colorable-items"></a>Éléments coloriables personnalisés
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ Vous pouvez remplacer la liste des types pour la colorisation, telles que les mo
 > [!CAUTION]
 >  Vous devez inclure le nom du langage dans le nom de l’élément coloriable pour éviter les conflits avec des noms d’élément coloriable existants. Si vous modifiez le nom d’un de vos éléments coloriables pendant le développement, vous devez réinitialiser le cache a été créé à la première fois que vos éléments coloriables ont eu accès. Vous pouvez réinitialiser le cache expérimental avec l’outil CreateExpInstance, qui est installé avec le SDK de Visual Studio, généralement dans le répertoire  
 >   
->  **C:\Program fichiers (x86) \Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin**  
+>  **C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin**  
 >   
 >  Pour réinitialiser le cache, appelez `CreateExpInstance /Reset`. Pour plus d’informations sur CreateExpInstance, consultez [CreateExpInstance Utility](../../extensibility/internals/createexpinstance-utility.md).  
   
@@ -76,5 +71,4 @@ Vous pouvez remplacer la liste des types pour la colorisation, telles que les mo
  [Couleurs de syntaxe dans les éditeurs personnalisés](../../extensibility/syntax-coloring-in-custom-editors.md)   
  [Couleurs de syntaxe dans un Service de langage hérité](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   
  [Implémentation de la coloration syntaxique](../../extensibility/internals/implementing-syntax-coloring.md)   
- [Guide pratique pour utiliser des éléments coloriables intégrés](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
-
+ [Guide pratique pour Utiliser des éléments Coloriables intégrés](../../extensibility/internals/how-to-use-built-in-colorable-items.md)

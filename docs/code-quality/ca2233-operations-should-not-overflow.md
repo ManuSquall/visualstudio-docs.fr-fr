@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 06c50ba5ecd8ef8e7eda9bbf2df9fdfa43fac0b6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 013571a948c6c3fdca5da3c5c9278ca21e1f3698
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928944"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869107"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233 : Les opérations ne doivent pas déborder
 
@@ -49,7 +49,7 @@ Pour corriger une violation de cette règle, validez les opérandes avant d’ef
 
 Il est possible de supprimer un avertissement de cette règle si les valeurs possibles des opérandes ne provoquent jamais de dépassement de capacité de l’opération arithmétique.
 
-## <a name="example-of-a-violation"></a>Exemple de Violation
+## <a name="example-of-a-violation"></a>Exemple de violation
 
 Une méthode dans l’exemple suivant manipule un entier qui enfreint cette règle. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] nécessite le **supprimer** l’option de dépassement doit être désactivée pour cette option pour déclencher.
 

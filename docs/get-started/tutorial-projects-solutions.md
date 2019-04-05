@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ce001f4ec7b036581a99e4feb8693b7220470d6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1a87080f2c6bc92bc37cc98a08bfc6643e3d12c4
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911895"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324131"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Découvrir les projets et les solutions
 
@@ -35,9 +35,11 @@ Malgré son nom, une solution n’est pas une « réponse ». Il s’agit simp
 
 Nous allons commencer notre exploration en créant une solution vide. Une fois que vous connaîtrez mieux Visual Studio, vous n’aurez sans doute pas souvent besoin de créer des solutions vides. Quand vous créez un projet, Visual Studio crée automatiquement une solution pour héberger le projet (s’il n’y a pas d’autre solution déjà ouverte).
 
+::: moniker range="vs-2017"
+
 1. Ouvrez Visual Studio.
 
-1. Dans la barre de menus, qui est la rangée de menus tels que **Fichier** et **Edition**, choisissez **Fichier** > **Nouveau** > **Projet**.
+1. Dans la barre de menus, choisissez **Fichier** > **Nouveau** > **Projet**.
 
    La boîte de dialogue **Nouveau projet** s'affiche.
 
@@ -46,6 +48,22 @@ Nous allons commencer notre exploration en créant une solution vide. Une fois q
    ![Modèle Solution vide dans Visual Studio](media/tutorial-projects-new-solution.png)
 
    La **page de démarrage** se ferme et une solution s’affiche dans l’**Explorateur de solutions** sur le côté droit de la fenêtre Visual Studio. **L’Explorateur de solutions** vous sera sans doute souvent utile pour parcourir le contenu de vos projets.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Ouvrez Visual Studio.
+
+2. Dans la fenêtre de démarrage, choisissez **Créer un projet**.
+
+3. Sur la page **Créer un projet**, entrez **nouvelle solution** dans la zone de recherche, sélectionnez le modèle **Nouvelle solution**, puis choisissez **Suivant**.
+
+4. Nommez la solution **QuickSolution**, puis choisissez **Créer**.
+
+   Une solution s’affiche dans l’**Explorateur de solutions** sur le côté droit de la fenêtre Visual Studio. **L’Explorateur de solutions** vous sera sans doute souvent utile pour parcourir le contenu de vos projets.
+
+::: moniker-end
 
 ### <a name="add-a-project"></a>Ajouter un projet
 
@@ -146,7 +164,7 @@ Nous allons utiliser le nouveau projet de test unitaire pour tester notre métho
    End Class
    ```
 
-   Vous voyez qu’une ligne ondulée rouge s’affiche sous une partie du code. Pour résoudre cette erreur, nous devons référencer le projet de test comme [assembly friend](/dotnet/csharp/programming-guide/concepts/assemblies-gac/friend-assemblies) dans le projet **QuickDate**.
+   Vous voyez qu’une ligne ondulée rouge s’affiche sous une partie du code. Pour résoudre cette erreur, nous devons référencer le projet de test comme [assembly friend](/dotnet/standard/assembly/friend-assemblies) dans le projet **QuickDate**.
 
 1. Retournez dans le projet **QuickDate**, ouvrez le fichier *Calendar.cs* s’il n’est pas ouvert, puis ajoutez [l’instruction using](/dotnet/csharp/language-reference/keywords/using-statement) et l’attribut <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> suivants en haut du fichier pour résoudre l’erreur dans le projet de test.
 

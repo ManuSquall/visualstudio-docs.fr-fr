@@ -1,25 +1,20 @@
 ---
 title: Éditeur XML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 623869f3-040b-4bf4-b353-ddc2229694e4
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5053910e4f5760648eef989162eb31e3c3cc5c9e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: caff32f582778ec03765554979abe6be5d608d26
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896326"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951910"
 ---
 # <a name="xml-editor"></a>Éditeur XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ L'éditeur XML est basé sur l'éditeur de texte [!INCLUDE[msCoName](../includes
   
 - Intégration avec le [Explorateur de schémas XML](../xml-tools/xml-schema-explorer.md). Cela fournit une vue hiérarchique des schémas XML.  
   
-  L'éditeur XML est invoqué pour les extensions de fichier les plus connues, telles que .xml, .xsd, .xsl et .config. Il est également appelé à l’ouverture d’un fichier dont l’extension est inconnue mais qui contient du XML. Vous pouvez également ouvrir n’importe quel fichier avec l’éditeur XML à l’aide de la **ouvrir avec** option et en sélectionnant l’éditeur XML dans la liste.  
+  L’éditeur XML est invoqué pour les extensions de fichier les plus connues, telles que .xml, .xsd, .xsl et .config. Il est également appelé à l’ouverture d’un fichier dont l’extension est inconnue mais qui contient du XML. Vous pouvez également ouvrir n’importe quel fichier avec l’éditeur XML à l’aide de la **ouvrir avec** option et en sélectionnant l’éditeur XML dans la liste.  
   
 ## <a name="express-editions"></a>Versions Express Edition  
  Les fonctions suivantes de l'éditeur XML ne sont pas disponibles dans les versions Visual Studio Express Edition :  
@@ -68,7 +63,7 @@ L'éditeur XML est basé sur l'éditeur de texte [!INCLUDE[msCoName](../includes
  Décrit la fonctionnalité IntelliSense de l'éditeur.  
   
  [Extraits XML](../xml-tools/xml-snippets.md)  
- Explique l’utilisation de la fonctionnalité d’extrait XML.  
+ Explique l'utilisation de la fonction d'extrait XML.  
   
  [Modification de feuilles de style XSLT](../xml-tools/editing-xslt-style-sheets.md)  
  Explique comment modifier les feuilles de style XSLT.  
@@ -80,14 +75,11 @@ L'éditeur XML est basé sur l'éditeur de texte [!INCLUDE[msCoName](../includes
  Décrit les composants de l'interface utilisateur de l'éditeur XML.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
- [Édition de texte, de Code et de balise](http://msdn.microsoft.com/en-us/0d9c00d7-5df4-48a3-b185-2a265f055439)  
+ [Édition de texte, de Code et de balise](http://msdn.microsoft.com/0d9c00d7-5df4-48a3-b185-2a265f055439)  
  Fournit des informations sur l'éditeur de texte.  
   
- [Référence du standard XML](http://msdn.microsoft.com/en-us/79c78508-c9d0-423a-a00f-672e855de401)  
+ [Référence du standard XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
  Fournit des informations sur les technologies XML, y compris le langage XML, la définition de type de document (DTD), le langage XSD (XML Schema Definition) et XSLT.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Outils XML dans Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)
-
-
-

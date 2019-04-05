@@ -1,32 +1,29 @@
 ---
 title: Fonctionnement du Code DSL | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, generated code
 ms.assetid: 8e5c10e4-6323-433e-b88a-5d3d92639030
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: afe6a273716ab5e531781634be959c80d30a9e26
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 2fc0db508fc06cc5b80db589ba7ebd88bc3221be
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834017"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950423"
 ---
 # <a name="understanding-the-dsl-code"></a>Fonctionnement du code DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Une solution DSL (Domain-Specific Language) génère une API que vous pouvez utiliser pour lire et mettre à jour des instances du DSL dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Cette API est définie dans le code généré à partir de la définition DSL. Cette rubrique décrit l'API générée.  
   
-## <a name="the-example-solution-component-diagrams"></a>Exemple de solution : diagrammes de composants  
+## <a name="the-example-solution-component-diagrams"></a>L’exemple de solution : Diagrammes de composants  
  Pour créer la solution qui est la source de la plupart des exemples de cette rubrique, créez un DSL à partir de la **modèles de composants** modèle de solution. Il s'agit de l'un des modèles standard qui apparaissent quand vous créez une solution DSL.  
   
 > [!NOTE]
@@ -63,15 +60,15 @@ Une solution DSL (Domain-Specific Language) génère une API que vous pouvez uti
 ## <a name="generated-files-in-dsl"></a>Fichiers générés dans la solution DSL  
  Les fichiers générés suivants apparaissent dans le **Dsl** projet.  
   
- *Votre_solution_dsl* `Schema.xsd`  
+ *YourDsl* `Schema.xsd`  
   
- Schéma pour les fichiers qui contient les instances de votre DSL. Ce fichier est copié à la compilation (**bin**) directory. Lorsque vous installez votre DSL, vous pouvez copier ce fichier sur **\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas** afin que les fichiers de modèle peuvent être validés. Pour plus d’informations, consultez [déploiement de Solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).  
+ Schéma pour les fichiers qui contient les instances de votre DSL. Ce fichier est copié à la compilation (**bin**) directory. Lorsque vous installez votre DSL, vous pouvez copier ce fichier sur **\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas** afin que les fichiers de modèle peuvent être validés. Pour plus d’informations, consultez [Déploiement de solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).  
   
  Si vous personnalisez la sérialisation en définissant des options dans l'Explorateur DSL, le schéma changera en conséquence. Toutefois, si vous écrivez votre propre code de sérialisation, ce fichier peut ne plus représenter le schéma réel. Pour plus d’informations, consultez [stockage de fichiers de personnalisation et la sérialisation XML](../modeling/customizing-file-storage-and-xml-serialization.md).  
   
  `ConnectionBuilders.cs`  
   
- Un générateur de connexion est une classe qui crée des relations. Il s'agit du code derrière un outil de connexion. Ce fichier contient une paire de classes pour chaque outil de connexion. Leurs noms sont dérivés les noms de l’outil de relation et de connexion de domaine : *relation*générateur, et *Outil_connecteur*ConnectAction.  
+ Un générateur de connexion est une classe qui crée des relations. Il s'agit du code derrière un outil de connexion. Ce fichier contient une paire de classes pour chaque outil de connexion. Leurs noms sont dérivés les noms de l’outil de relation et de connexion de domaine : *Relation*générateur, et *Outil_connecteur*ConnectAction.  
   
  (Dans l'exemple de solution de composant, l'un des générateurs de connexions se nomme ConnectionBuilder. Il s'agit d'une coïncidence, car la relation de domaine se nomme Connection.)  
   
@@ -97,7 +94,7 @@ Une solution DSL (Domain-Specific Language) génère une API que vous pouvez uti
   
  `Diagram.cs`  
   
- Contient la classe qui définit le diagramme. Elle est dérivée de <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram>.  
+ Contient la classe qui définit le diagramme. Il est dérivé de <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram>.  
   
  Pour rendre la couleur et certaines autres variables de fonctionnalités de style au moment de l’exécution, avec le bouton droit de la classe sur le diagramme de définition DSL et pointez sur **ajouter les objets exposés**.  
   
@@ -133,18 +130,18 @@ Une solution DSL (Domain-Specific Language) génère une API que vous pouvez uti
   
   `DomainModel.cs`  
   
-  Classe qui représente le modèle du domaine. Elle est dérivée de <xref:Microsoft.VisualStudio.Modeling.DomainModel>.  
+  Classe qui représente le modèle du domaine. Il est dérivé de <xref:Microsoft.VisualStudio.Modeling.DomainModel>.  
   
 > [!NOTE]
 >  Elle est différente de la classe racine du modèle.  
   
- Les fermetures Copier et Supprimer définissent les autres éléments qui doivent être inclus quand un élément est copié ou supprimé. Vous pouvez contrôler ce comportement en définissant le **propage la copie** et **Propagates Delete** propriétés des rôles de chaque côté de chaque relation. Si vous voulez que les valeurs soient déterminées de manière dynamique, vous pouvez écrire du code pour substituer les méthodes des classes Closure. Pour plus d’informations, consultez [Comment : copie du programme et le comportement de coller - redirection](../misc/how-to-program-copy-and-paste-behavior-redirect.md).  
+ Les fermetures Copier et Supprimer définissent les autres éléments qui doivent être inclus quand un élément est copié ou supprimé. Vous pouvez contrôler ce comportement en définissant le **propage la copie** et **Propagates Delete** propriétés des rôles de chaque côté de chaque relation. Si vous voulez que les valeurs soient déterminées de manière dynamique, vous pouvez écrire du code pour substituer les méthodes des classes Closure. Pour plus d'informations, consultez [Guide pratique pour Programmer le comportement de copie et collage - rediriger](../misc/how-to-program-copy-and-paste-behavior-redirect.md).  
   
  `DomainModelResx.resx`  
   
  Ce fichier contient des chaînes telles que les descriptions des classes de domaine et des propriétés, des noms de propriétés, des étiquettes de boîte à outils, des messages d'erreur standard et d'autres chaînes qui peuvent être affichées à l'utilisateur. Il contient également des icônes d'outils et des images pour les formes d'images.  
   
- Ce fichier est lié à l'assembly généré et fournit les valeurs par défaut de ces ressources. Vous pouvez localiser votre DSL en créant un assembly satellite qui contient une version localisée des ressources. Cette version sera utilisée lors de l'installation de la solution DSL dans une culture correspondant aux ressources localisées. Pour plus d’informations, consultez [déploiement de Solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).  
+ Ce fichier est lié à l'assembly généré et fournit les valeurs par défaut de ces ressources. Vous pouvez localiser votre DSL en créant un assembly satellite qui contient une version localisée des ressources. Cette version sera utilisée lors de l'installation de la solution DSL dans une culture correspondant aux ressources localisées. Pour plus d’informations, consultez [Déploiement de solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).  
   
  `DomainRelationships.cs`  
   
@@ -349,13 +346,10 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 > [!WARNING]
 >  Si vous modifiez le fichier .tt pour inclure des ressources telles que des icônes et des images, assurez-vous que la ressource est incluse dans la build VSIX. Dans l’Explorateur de solutions, sélectionnez le fichier et assurez-vous que le **inclure dans VSIX** propriété est `True`.  
   
- Ce fichier contrôle comment la solution DSL est empaquetée dans un fichier VSIX (Visual Studio Integration Extension). Pour plus d’informations, consultez [déploiement de Solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).  
+ Ce fichier contrôle comment la solution DSL est empaquetée dans un fichier VSIX (Visual Studio Integration Extension). Pour plus d’informations, consultez [Déploiement de solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md)   
  [Présentation des modèles, des Classes et des relations](../modeling/understanding-models-classes-and-relationships.md)   
  [Personnalisation et extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md)   
  [Écriture de code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-
-
-

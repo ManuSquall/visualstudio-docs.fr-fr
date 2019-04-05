@@ -1,6 +1,6 @@
 ---
 title: Déboguer le code HTML et CSS dans les applications UWP | Microsoft Docs
-ms.date: 07/17/2017
+ms.date: 07/17/2018
 ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.DomExplorer
@@ -14,14 +14,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: e1f430268549da74c1039899e828d37a21ac336c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dbd276751d8052f21d92e38a0e337f9c133edf2c
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721054"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790028"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Déboguer le code HTML et CSS dans les applications UWP dans Visual Studio
 

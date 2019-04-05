@@ -1,23 +1,20 @@
 ---
 title: Personnalisation du comportement de copie | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 87fff01c-60ba-440a-b8a0-185edcef83ac
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c2478925ecf481aaf49dbfbe5818d8839b9ad54f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: dfbaf72f39bd4a61458abc1e2f75572e210c6cfe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844083"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951627"
 ---
 # <a name="customizing-copy-behavior"></a>Personnalisation du comportement de la commande copier
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +91,7 @@ partial class MyDslClipboardCommandSet
  Substituer *MyDsl* `ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` dans le projet DslPackage.  
   
  **Conserver la disposition des formes via la copie et de collage.**  
- Quand l'utilisateur copie plusieurs formes, vous pouvez conserver leurs positions relatives quand elles sont collées. Cette technique est illustrée par l’exemple [VMSDK : exemple de diagrammes de Circuit](http://go.microsoft.com/fwlink/?LinkId=213879).  
+ Quand l'utilisateur copie plusieurs formes, vous pouvez conserver leurs positions relatives quand elles sont collées. Cette technique est illustrée par l’exemple [VMSDK : Exemple de diagrammes de circuit](http://go.microsoft.com/fwlink/?LinkId=213879).  
   
  Pour obtenir cet effet, ajoutez les formes et les connecteurs à l'ElementGroupPrototype copié. La méthode la plus simple à substituer est ElementOperations.CreateElementGroupPrototype(). Pour cela, ajoutez le code suivant au projet DSL :  
   
@@ -151,7 +148,7 @@ partial class MyDslDiagram // EDIT NAME
 ```  
   
  **Coller des formes à un emplacement choisi, telles que la position actuelle du curseur.**  
- Quand l'utilisateur copie plusieurs formes, vous pouvez conserver leurs positions relatives quand elles sont collées. Cette technique est illustrée par l’exemple [VMSDK : exemple de diagrammes de Circuit](http://go.microsoft.com/fwlink/?LinkId=213879).  
+ Quand l'utilisateur copie plusieurs formes, vous pouvez conserver leurs positions relatives quand elles sont collées. Cette technique est illustrée par l’exemple [VMSDK : Exemple de diagrammes de circuit](http://go.microsoft.com/fwlink/?LinkId=213879).  
   
  Pour obtenir cet effet, substituez `ClipboardCommandSet.ProcessOnMenuPasteCommand()` pour utiliser la version d'`ElementOperations.Merge()` spécifique à l'emplacement. Pour cela, ajoutez le code suivant au projet DslPackage :  
   
@@ -218,7 +215,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 ```  
   
  **Laisser l’utilisateur glisser -déplacer des éléments.**  
- Consultez [Comment : ajouter un gestionnaire glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md).  
+ Voir [Guide pratique pour Ajouter un gestionnaire glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
 ##  <a name="customizeLinks"></a> Personnalisation du comportement de copie de lien  
  Quand l'utilisateur copie un élément, le comportement standard est que tout élément incorporé est également copié. Vous pouvez modifier le comportement de copie standard. Dans la définition DSL, sélectionnez un rôle au côté « un » d’une relation et dans la fenêtre Propriétés, définissez la **propage la copie** valeur.  
@@ -290,7 +287,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 ```  
   
 ## <a name="receiving-items-dragged-from-other-models"></a>Réception d'éléments déplacés à partir d'autres modèles  
- ElementOperations peut également servir à définir le comportement de copie, de déplacement, de suppression et de glisser-déplacer. En guise de démonstration de l'utilisation d'ElementOperations, l'exemple fourni ici définit un comportement de glisser-déplacer personnalisé. Toutefois, pour ce faire, vous pouvez envisager l’autre approche décrite dans [Comment : ajouter un gestionnaire glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md), qui est plus extensible.  
+ ElementOperations peut également servir à définir le comportement de copie, de déplacement, de suppression et de glisser-déplacer. En guise de démonstration de l'utilisation d'ElementOperations, l'exemple fourni ici définit un comportement de glisser-déplacer personnalisé. Toutefois, pour ce faire, vous pouvez envisager l’autre approche décrite dans [Comment : Ajouter un gestionnaire glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md), qui est plus extensible.  
   
  Définissez deux méthodes dans votre classe ElementOperations :  
   
@@ -378,7 +375,7 @@ private ElementGroupPrototype ConvertDraggedTypeToLocal (MyTargetShape snapshot,
 ## <a name="standard-copy-behavior"></a>Comportement de copie standard  
  Le code de cette section montre des méthodes que vous pouvez substituer pour modifier le comportement de copie. Pour vous aider à voir comment obtenir vos propres personnalisations, cette section montre du code qui substitue les méthodes impliquées dans la copie, mais ne modifie pas le comportement standard.  
   
- Quand l'utilisateur appuie sur Ctrl+C ou utilise la commande de menu Copier, la méthode <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A> est appelée. Vous pouvez voir comment cela est défini dans **DslPackage\Generated Code\CommandSet.cs**. Pour plus d’informations sur la façon dont les commandes sont configurés, consultez [Comment : ajouter une commande au Menu contextuel](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
+ Quand l'utilisateur appuie sur Ctrl+C ou utilise la commande de menu Copier, la méthode <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A> est appelée. Vous pouvez voir comment cela est défini dans **DslPackage\Generated Code\CommandSet.cs**. Pour plus d’informations sur la façon dont les commandes sont configurés, consultez [Comment : Ajouter une commande au Menu contextuel](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
  Vous pouvez substituer ProcessOnMenuCopyCommand en ajoutant une définition de classe partielle de *MyDsl* `ClipboardCommandSet` dans le projet DslPackage.  
   
@@ -568,9 +565,6 @@ namespace Company.MyDsl
   
 ## <a name="see-also"></a>Voir aussi  
  [Personnalisation de la création d’élément et le déplacement](../modeling/customizing-element-creation-and-movement.md)   
- [Comment : ajouter un gestionnaire glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md)   
+ [Guide pratique pour Ajouter un gestionnaire glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [Personnalisation du comportement de suppression](../modeling/customizing-deletion-behavior.md)   
- [Exemple : Exemple de diagrammes de Circuit](http://go.microsoft.com/fwlink/?LinkId=213879)
-
-
-
+ [Exemple : Exemple de diagrammes de Circuit](http://go.microsoft.com/fwlink/?LinkId=213879)

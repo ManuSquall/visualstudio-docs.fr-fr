@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0fa9749a06c568f7fab55cd6c7a862fa616ecf6d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1d0ff9d8f3113b1df1e10891a3bd2197dd92482d
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708696"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789898"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>Déboguer des applications UWP sur des ordinateurs distants à partir de Visual Studio
 
@@ -55,9 +55,9 @@ Pour déboguer une application UWP sur un appareil distant à partir de Visual S
 
     ![Propriétés du projet pour le débogage distant managé](../debugger/media/vsrun_managed_projprop_remote.png "Managed Debug des propriétés de projet")
 
-###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> Configurer un projet JavaScript ou C++ pour le débogage distant
+###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> Configurer un projet C++ pour le débogage distant
 
-1.  Sélectionnez le projet C++ ou JavaScript dans Visual Studio **l’Explorateur de solutions** et sélectionnez le **propriétés** icône, appuyez sur **Alt**+**entrée** , ou avec le bouton droit et choisissez **propriétés**.
+1.  Sélectionnez le projet C++ dans Visual Studio **l’Explorateur de solutions** et sélectionnez le **propriétés** icône, appuyez sur **Alt**+**entrée**, ou avec le bouton droit et choisissez **propriétés**.
 
 1.  Sélectionnez le **débogage** onglet.
 

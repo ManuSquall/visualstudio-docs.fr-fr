@@ -9,18 +9,18 @@ ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d64f104cd7d893b48fca5fdbd454fb380dafc6ef
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d8971546c0f51dc759731a90569d3f7dc3f0e142
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947287"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069942"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Procédure pas à pas : Utilisation du graphique d’activités des utilisateurs virtuels pour isoler les problèmes
 
 Dans cette procédure pas à pas, vous allez apprendre à utiliser le graphique d’activités des utilisateurs virtuels pour isoler les erreurs qui se sont produites pour les utilisateurs virtuels individuels qui ont exécuté votre test de charge.
 
-Le graphique d'activités des utilisateurs virtuels vous permet de visualiser les activités des utilisateurs virtuels associées à votre test de charge. Chaque ligne du graphique représente un utilisateur virtuel individuel. Le graphique d'activités des utilisateurs virtuels vous montre exactement ce que chaque utilisateur virtuel faisait pendant le test. Il permet d’isoler les problèmes de performances en visualisant les modèles d’activités des utilisateurs et les modèles de charge, de mettre en corrélation des tests lents ou ayant échoué et de consulter des requêtes basées sur d’autres activités des utilisateurs virtuels. Le graphique d'activités des utilisateurs virtuels est disponible uniquement une fois l'exécution du test de charge terminée.
+Le graphique d'activités des utilisateurs virtuels vous permet de visualiser les activités des utilisateurs virtuels associées à votre test de charge. Chaque ligne du graphique représente un utilisateur virtuel individuel. Le graphique d'activités des utilisateurs virtuels vous montre exactement ce que chaque utilisateur virtuel faisait pendant le test. Il permet d'isoler les problèmes de performances en visualisant les modèles d'activités des utilisateurs et les modèles de charge, de mettre en corrélation des tests lents ou ayant échoué et de consulter des requêtes basées sur d'autres activités des utilisateurs virtuels. Le graphique d'activités des utilisateurs virtuels est disponible uniquement une fois l'exécution du test de charge terminée.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -36,7 +36,7 @@ Le graphique d'activités des utilisateurs virtuels vous permet de visualiser le
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>Ouvrir la solution ColorWebApp créée dans les procédures pas à pas précédentes
 
-1.  Démarrez Visual Studio.
+1.  Ouvrez Visual Studio.
 
 2.  Ouvrez la solution **ColorWebApp** qui contient *LoadTest1.loadtest*. Ce test de charge résulte des trois procédures pas à pas répertoriées au début de cette rubrique dans la section des conditions requises.
 
@@ -75,11 +75,11 @@ Une fois que vous avez exécuté le test de charge et que vous avez collecté le
 
      Le **Graphique d’activités des utilisateurs virtuels** affiche uniquement les utilisateurs virtuels qui sont restés plus de 3 secondes dans la page *Red.aspx*, comme spécifié par le seuil de violation configuré dans la procédure pas à pas précédente.
 
-6.  Placez le pointeur de la souris au-dessus de la ligne horizontale qui représente l’utilisateur virtuel avec l’erreur de règle de validation de la violation de seuil.
+6.  Placez le pointeur de la souris au-dessus de la ligne horizontale qui représente l'utilisateur virtuel avec l'erreur de règle de validation de la violation de seuil.
 
 7.  Une info-bulle s'affiche avec les informations suivantes :
 
-    -   **Identifiant utilisateur**
+    -   **ID utilisateur**
 
     -   **Scénario**
 

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3d698732e1f2362fbb9a536dc4e5a8e4cc412db
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 0ffbe0b8365948dc5a69edca390f308cb55ba5a3
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227566"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323436"
 ---
 # <a name="view-events-with-intellitrace-in-visual-studio-enterprise-c-visual-basic"></a>Afficher les événements avec IntelliTrace dans Visual Studio Enterprise (C#, Visual Basic)
 
@@ -53,7 +53,7 @@ Vous pouvez essayer de déboguer avec seulement les événements IntelliTrace. L
 
 ## <a name="start-debugging-and-view-intellitrace-events"></a>Démarrer le débogage et afficher les événements IntelliTrace
 
-1. Démarrez le débogage selon la procédure habituelle. (Appuyez sur **F5** ou cliquez sur **Déboguer > Démarrer le débogage**.
+1. Démarrez le débogage selon la procédure habituelle. (Appuyez sur **F5** ou cliquez sur **Déboguer / Démarrer le débogage**.)
 
     > [!TIP]
     > Gardez les fenêtres **Variables locales** et **Automatique** ouvertes pendant que vous déboguez pour voir et enregistrer les valeurs qui s’y affichent.

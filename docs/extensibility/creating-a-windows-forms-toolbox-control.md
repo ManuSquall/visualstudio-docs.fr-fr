@@ -1,6 +1,6 @@
 ---
 title: Création d’un Windows Forms de contrôle de boîte à outils | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - winforms
@@ -12,31 +12,35 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbac3ebe4c53ec08fd9191b861cfe1187574273c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a3c423361b860c5769d9555409b44973fdc25896
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687885"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194575"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Créer un contrôle de boîte à outils Windows Forms
-Le modèle d’élément de contrôle de boîte à outils Windows Forms qui est inclus dans les outils d’extensibilité de Visual Studio (Visual Studio SDK) vous permet de créer un contrôle qui est automatiquement ajouté à la **boîte à outils** lorsque l’extension est installée. Cette rubrique montre comment utiliser le modèle pour créer un contrôle simple compteur que vous pouvez distribuer à d’autres utilisateurs.
+
+Le modèle d’élément de contrôle de boîte à outils Windows Forms qui est inclus dans les outils d’extensibilité de Visual Studio (Visual Studio SDK), vous permet de créer un **boîte à outils** contrôle qui est ajouté automatiquement lorsque l’extension est installée. Cette procédure pas à pas montre comment utiliser le modèle pour créer un contrôle simple compteur que vous pouvez distribuer à d’autres utilisateurs.
 
 ## <a name="prerequisites"></a>Prérequis
+
 À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS par la suite. Pour plus d’informations, consultez [installer le SDK Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
-## <a name="create-a-windows-forms-toolbox-control"></a>Créer un contrôle de boîte à outils Windows Forms
+## <a name="create-the-toolbox-control"></a>Créer le contrôle de boîte à outils
+
 Le modèle de contrôle de boîte à outils Windows Forms crée un contrôle utilisateur non défini et fournit toutes les fonctionnalités requises pour ajouter le contrôle à la **boîte à outils**.
 
 ### <a name="create-an-extension-with-a-windows-forms-toolbox-control"></a>Créer une extension avec un contrôle de boîte à outils Windows Forms
 
-1. Créez un projet VSIX nommé `MyWinFormsControl`. Vous pouvez trouver le modèle de projet VSIX dans le **nouveau projet** boîte de dialogue sous **Visual C#** > **extensibilité**.
+1. Créez un projet VSIX nommé `MyWinFormsControl`. Vous pouvez trouver le modèle de projet VSIX dans le **nouveau projet** boîte de dialogue, en recherchant « vsix ».
 
 2. Quand le projet s’ouvre, ajoutez un **contrôle de boîte à outils Windows Forms** modèle d’élément nommé `Counter`. Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **ajouter** > **un nouvel élément**. Dans le **ajouter un nouvel élément** boîte de dialogue, accédez à **Visual C#** > **extensibilité** et sélectionnez **contrôle de boîte à outils Windows Forms**
 
 3. Cette opération ajoute un contrôle utilisateur, un `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> pour placer le contrôle dans le **boîte à outils**et un **Microsoft.VisualStudio.ToolboxControl** l’entrée de composant dans le manifeste VSIX pour le déploiement.
 
 ### <a name="build-a-user-interface-for-the-control"></a>Créer une interface utilisateur pour le contrôle
+
 Le `Counter` contrôle requiert deux contrôles enfants : un <xref:System.Windows.Forms.Label> pour afficher le nombre actuel et un <xref:System.Windows.Forms.Button> pour réinitialiser le nombre sur 0. Aucun autre contrôle enfant n’est requis, car les appelants incrémente le compteur par programmation.
 
 #### <a name="to-build-the-user-interface"></a>Pour créer l’interface utilisateur
@@ -58,6 +62,7 @@ Le `Counter` contrôle requiert deux contrôles enfants : un <xref:System.Windo
     |`Button1`|**Text**|Réinitialiser|
 
 ### <a name="code-the-user-control"></a>Coder le contrôle utilisateur
+
 Le `Counter` contrôle expose une méthode pour incrémenter le compteur, un événement à déclencher chaque fois que le compteur est incrémenté, un **réinitialiser** bouton et trois propriétés pour stocker le nombre actuel, le texte affiché et s’il faut afficher ou masquer la **réinitialiser** bouton. L’attribut `ProvideToolboxControl` détermine l’emplacement dans la **boîte à outils** où le contrôle `Counter` s’affiche.
 
 #### <a name="to-code-the-user-control"></a>Pour coder le contrôle utilisateur
@@ -146,13 +151,14 @@ Le `Counter` contrôle expose une méthode pour incrémenter le compteur, un év
     ```
 
 ### <a name="test-the-control"></a>Tester le contrôle
+
  Pour tester un **boîte à outils** contrôler, testez-le d’abord dans l’environnement de développement et à le tester dans une application compilée.
 
 #### <a name="to-test-the-control"></a>Pour tester le contrôle
 
-1. Appuyez sur **F5**.
+1. Appuyez sur **F5** à **démarrer le débogage**.
 
-    Cela génère le projet et ouvre une deuxième instance expérimentale de Visual Studio qui a le contrôle est installé.
+    Cette commande génère le projet et ouvre une deuxième instance expérimentale de Visual Studio qui a le contrôle est installé.
 
 2. Dans l’instance expérimentale de Visual Studio, créez un **Windows Forms Application** projet.
 
@@ -199,16 +205,18 @@ Le `Counter` contrôle expose une méthode pour incrémenter le compteur, un év
 
 16. Cliquez sur **Test** jusqu'à ce que le compteur atteint **5** fermer le message boîtes à chaque fois.
 
-    Le **réinitialiser** bouton s’affiche à nouveau.
+    Le **réinitialiser** bouton s’affiche de nouveau.
 
 17. Cliquez sur **Réinitialiser**.
 
     Le compteur est remis à **0**.
 
 ## <a name="next-steps"></a>Étapes suivantes
-Lorsque vous générez un **boîte à outils** (contrôle), Visual Studio crée un fichier nommé *ProjectName.vsix* dans le dossier \bin\debug\ de votre projet. Vous pouvez déployer le contrôle en chargeant le *.vsix* fichier à un réseau ou à un site Web. Lorsqu’un utilisateur ouvre le *.vsix* , le contrôle est installé et ajouté à Visual Studio **boîte à outils** sur l’ordinateur de l’utilisateur. Ou bien, vous pouvez télécharger le *.vsix* fichier [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkID=123847) afin que les utilisateurs puissent le trouver en naviguant dans le **outils**  >   **Extension et mises à jour** boîte de dialogue.
+
+Lorsque vous générez un **boîte à outils** (contrôle), Visual Studio crée un fichier nommé *ProjectName.vsix* dans le dossier \bin\debug\ de votre projet. Vous pouvez déployer le contrôle en chargeant le *.vsix* fichier à un réseau ou à un site Web. Lorsqu’un utilisateur ouvre le *.vsix* , le contrôle est installé et ajouté à Visual Studio **boîte à outils** sur l’ordinateur de l’utilisateur. Ou bien, vous pouvez télécharger le *.vsix* fichier [Visual Studio Marketplace](https://marketplace.visualstudio.com/) afin que les utilisateurs puissent le trouver en naviguant dans le **outils**  >   **Extensions et mises à jour** boîte de dialogue.
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Étendre d’autres parties de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
 - [Créer un contrôle de boîte à outils WPF](../extensibility/creating-a-wpf-toolbox-control.md)
 - [Étendre d’autres parties de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)

@@ -1,34 +1,66 @@
 ---
-title: Organiser les modèles
+title: Localiser les modèles
 ms.date: 01/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], locations
 - item templates [Visual Studio], locations
 - template locations [Visual Studio]
-- Visual Studio templates, organizing
-- templates [Visual Studio], organizing
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a228c882ff573b9e319d5fdbeb1ba6472cc5e3d5
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: db74d23cf42e371f00bf25c7edcd8c480f7649d4
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221645"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415458"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Procédure : Localiser et organiser des modèles de projet et d’élément
 
-Les fichiers de modèle doivent être placés à un emplacement que Visual Studio reconnaît pour que les modèles s’affichent dans les boîtes de dialogue **Nouveau projet** et **Ajouter un nouvel élément**. Vous pouvez également créer des sous-catégories personnalisées à l’emplacement du modèle utilisateur, et les catégories apparaissent dans les boîtes de dialogue **Nouveau projet** et **Ajouter un nouvel élément**.
+Les fichiers de modèle doivent être placés dans un emplacement connu pour être affichés dans les boîtes de dialogue Nouveau projet et Nouvel élément.
+
+::: moniker range="vs-2017"
+
+Vous pouvez également créer des sous-catégories personnalisées à l’emplacement du modèle utilisateur, et les catégories apparaissent dans les boîtes de dialogue **Nouveau projet** et **Ajouter un nouvel élément**.
+
+::: moniker-end
 
 ## <a name="locate-templates"></a>Localiser les modèles
 
 Les modèles installés et les modèles utilisateur sont stockés à deux emplacements différents.
 
+### <a name="installed-templates"></a>Modèles installés
+
+Par défaut, les modèles installés avec Visual Studio se trouvent dans :
+
+::: moniker range="vs-2017"
+
+- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2017\\\<édition>\\Common7\IDE\ProjectTemplates\\<Langage\>\\<ID_paramètres_régionaux\>*
+
+- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2017\\\<édition>\Common7\IDE\ItemTemplates\\<Langage\>\\<ID_paramètres_régionaux\>*
+
+Par exemple, le répertoire suivant contient les modèles d’élément Visual Basic pour le français (LCID 1036) :
+
+*C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\Common7\\IDE\\ItemTemplates\\VisualBasic\\1033*
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2019\\\<édition>\\Common7\IDE\ProjectTemplates\\<Langage\>\\<ID_paramètres_régionaux\>*
+
+- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2019\\\<édition>\Common7\IDE\ItemTemplates\\<Langage\>\\<ID_paramètres_régionaux\>*
+
+Par exemple, le répertoire suivant contient les modèles d’élément Visual Basic pour le français (LCID 1036) :
+
+*C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\ItemTemplates\\VisualBasic\\1033*
+
+::: moniker-end
+
 ### <a name="user-templates"></a>Modèles utilisateur
 
-Si vous ajoutez un fichier compressé (*.zip*) incluant un fichier *.vstemplate* au répertoire des modèles utilisateur, le modèle apparaît dans la boîte de dialogue **Nouveau projet** ou **Ajouter un nouvel élément**. Par défaut, les modèles utilisateur se trouvent dans :
+Si vous ajoutez un fichier compressé (*.zip*) incluant un fichier *.vstemplate* au répertoire des modèles utilisateur, le modèle apparaît dans la boîte de dialogue Nouveau projet ou Nouvel élément. Par défaut, les modèles utilisateur se trouvent dans :
 
 ::: moniker range="vs-2017"
 
@@ -55,19 +87,9 @@ Par exemple, le répertoire suivant contient les modèles de projet utilisateur 
 ::: moniker-end
 
 > [!TIP]
-> Vous pouvez définir l’emplacement des modèles utilisateur dans **Outils** > **Options** > **Projets et solutions** > **Emplacements**.
+> Vous pouvez changer l’emplacement connu des modèles utilisateur dans **Outils** > **Options** > **Projets et solutions** > **Emplacements**.
 
-### <a name="installed-templates"></a>Modèles installés
-
-Par défaut, les modèles installés avec Visual Studio se trouvent dans :
-
-- *\\<répertoire_installation_Visual_Studio\>\Common7\IDE\ItemTemplates\\<langage de programmation\>\\<Locale ID>*
-
-- *\\<répertoire_installation_Visual_Studio\>\Common7\IDE\ProjectTemplates\\<langage de programmation\>\\<Locale ID>*
-
-Par exemple, le répertoire suivant contient les modèles d’élément Visual Basic pour le français (LCID 1036) :
-
-- *C:\\<répertoire_installation_Visual_Studio\>\Common7\IDE\ItemTemplates\VisualBasic\1036*
+::: moniker range="vs-2017"
 
 ## <a name="organize-templates"></a>Organiser les modèles
 
@@ -76,7 +98,7 @@ Les catégories des boîtes de dialogue **Nouveau projet** et **Ajouter un nouve
 > [!NOTE]
 > Vous ne pouvez pas créer de catégorie au niveau du langage de programmation. Vous ne pouvez créer une catégorie qu'à l'intérieur de chaque langage.
 
-### <a name="to-create-new-user-project-template-categories"></a>Pour créer des catégories de modèles de projet utilisateur
+### <a name="create-new-user-project-template-categories"></a>Créer des catégories de modèles de projet utilisateur
 
 1. Créez un sous-dossier dans le dossier du langage de programmation du répertoire des modèles de projet utilisateur. Par exemple, pour créer une catégorie **HelloWorld** pour les modèles de projet C#, créez le répertoire suivant :
 
@@ -86,9 +108,9 @@ Les catégories des boîtes de dialogue **Nouveau projet** et **Ajouter un nouve
 
 1. Dans le menu **Fichier**, choisissez **Nouveau** > **Projet**.
 
-   La catégorie **HelloWorld** apparaît dans la boîte de dialogue **Nouveau projet**, sous **Installé** > **Visual C#**.
+   La catégorie **HelloWorld** apparaît dans la boîte de dialogue **Nouveau projet**, sous **Installé** > **Visual C#**.
 
-### <a name="to-create-new-user-item-template-categories"></a>Pour créer des catégories de modèles d’élément utilisateur
+### <a name="create-new-user-item-template-categories"></a>Créer des catégories de modèles d’élément utilisateur
 
 1. Créez un sous-dossier dans le dossier du langage de programmation du répertoire des modèles d’élément utilisateur. Par exemple, pour créer une catégorie **HelloWorld** pour les modèles d’élément C#, créez le répertoire suivant :
 
@@ -98,13 +120,11 @@ Les catégories des boîtes de dialogue **Nouveau projet** et **Ajouter un nouve
 
 1. Créez un projet ou ouvrez un projet existant. Ensuite, dans le menu **Projet**, choisissez **Ajouter un nouvel élément**.
 
-   La catégorie **HelloWorld** apparaît dans la boîte de dialogue **Ajouter un nouvel élément**, sous **Installé** > **Éléments Visual C#**.
+   La catégorie **HelloWorld** apparaît dans la boîte de dialogue **Ajouter un nouvel élément**, sous **Installé** > **Éléments Visual C#**.
 
 ### <a name="display-templates-in-parent-categories"></a>Afficher les modèles dans les catégories parentes
 
 Vous pouvez permettre l’affichage des modèles des sous-catégories dans leur catégorie parente à l’aide de l’élément `NumberOfParentCategoriesToRollUp` du fichier *.vstemplate*. Ces étapes sont les mêmes pour les modèles de projet et les modèles d’élément.
-
-#### <a name="to-display-templates-in-parent-categories"></a>Pour afficher les modèles dans les catégories parentes
 
 1. Localisez le fichier *.zip* qui contient le modèle.
 
@@ -133,6 +153,8 @@ Vous pouvez permettre l’affichage des modèles des sous-catégories dans leur 
 1. Supprimez les fichiers de modèles extraits et l’ancien fichier *.zip* de modèle.
 
 1. Placez le nouveau fichier *.zip* dans le répertoire qui contenait le fichier *.zip* supprimé.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Voir aussi
 

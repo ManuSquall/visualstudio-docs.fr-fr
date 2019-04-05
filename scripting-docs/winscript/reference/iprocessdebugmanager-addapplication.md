@@ -2,7 +2,6 @@
 title: IProcessDebugManager::AddApplication | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa0b811a23f8c97f1924883a04878f22cabc9b26
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 206baa92ae8d2803b2b07f4966565755a1785d61
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54087527"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58147369"
 ---
 # <a name="iprocessdebugmanageraddapplication"></a>IProcessDebugManager::AddApplication
 Ajoute une application à la liste du Gestionnaire de débogage de machine d’exécution des applications.  

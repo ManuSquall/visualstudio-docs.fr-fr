@@ -1,12 +1,9 @@
 ---
 title: 'Diagrammes de classes UML : Référence | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.common.generalization.properties
 - vs.teamarch.logicalclassdiagram.toolbox
@@ -26,15 +23,15 @@ ms.assetid: b7c88be0-0d86-4d65-af74-f37e8812d20f
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4f3a4fe9949236045238688a9edcd5eef911efb8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 07930dc31651d11aedccc6c597070bbba62ff0b9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741061"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953192"
 ---
-# <a name="uml-class-diagrams-reference"></a>Diagrammes de classes UML : référence
+# <a name="uml-class-diagrams-reference"></a>Diagrammes de classes UML : Référence
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Un diagramme de classes UML décrit les structures des objets et des informations utilisés par votre application, à la fois en interne et en communication avec ses utilisateurs. Il décrit les informations sans référence à une implémentation particulière. Ses classes et relations peuvent être implémentées de différentes manières, par exemple avec des tables de bases de données, des nœuds XML ou des compositions d'objets logiciels.  
@@ -42,7 +39,7 @@ Un diagramme de classes UML décrit les structures des objets et des information
 > [!NOTE]
 >  Cette rubrique concerne les diagrammes de classes UML. Il existe un autre genre de diagramme de classes, le diagramme de classes .NET, qui sert à visualiser le code de programme. Pour plus d’informations, consultez [conception et affichage des Classes et des Types](http://go.microsoft.com/fwlink/?LinkId=142231).  
   
- Pour créer un diagramme de classes UML, sur le **Architecture** menu, choisissez **nouveau UML ou diagramme de couche**. Pour plus d’informations sur la façon de dessiner des diagrammes de classes UML, consultez [diagrammes de classes UML : indications](../modeling/uml-class-diagrams-guidelines.md). Pour plus d’informations sur la façon de créer et dessiner des diagrammes de modélisation, consultez [modèles et diagrammes UML modifier](../modeling/edit-uml-models-and-diagrams.md).  
+ Pour créer un diagramme de classes UML, sur le **Architecture** menu, choisissez **nouveau UML ou diagramme de couche**. Pour plus d’informations sur la façon de dessiner des diagrammes de classes UML, consultez [diagrammes de classes UML : Les instructions](../modeling/uml-class-diagrams-guidelines.md). Pour plus d’informations sur la façon de créer et dessiner des diagrammes de modélisation, consultez [modèles et diagrammes UML modifier](../modeling/edit-uml-models-and-diagrams.md).  
   
  Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -59,7 +56,7 @@ Un diagramme de classes UML décrit les structures des objets et des information
   
   ![Trois classes affichant des relations et des propriétés](../modeling/media/uml-classovreading.png "UML_ClassOvReading")  
   
-| **Forme** |       **Élément**        |                                                                                                                                                             **Description**                                                                                                                                                              |
+| **Shape** |       **Élément**        |                                                                                                                                                             **Description**                                                                                                                                                              |
 |-----------|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |     1     |        **Classe**         |                                                           Définition d'objets qui partagent des caractéristiques structurelles ou comportementales données. Pour plus d’informations, consultez [propriétés de types UML sur les diagrammes de classes](../modeling/properties-of-types-on-uml-class-diagrams.md).                                                            |
 |     1     |        Classifieur        |                                                                                                             Nom général d'une classe, d'une interface ou d'une énumération. Les composants, les cas d'usage et les acteurs sont également des classifieurs.                                                                                                             |
@@ -93,11 +90,8 @@ Un diagramme de classes UML décrit les structures des objets et des information
   
 ## <a name="see-also"></a>Voir aussi  
  [Modifier des modèles UML et des diagrammes](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagrammes de classes UML : indications](../modeling/uml-class-diagrams-guidelines.md)   
+ [Diagrammes de classes UML : Instructions](../modeling/uml-class-diagrams-guidelines.md)   
  [Propriétés de types de diagrammes de classes UML](../modeling/properties-of-types-on-uml-class-diagrams.md)   
  [Propriétés d’attributs dans des diagrammes de classes UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [Propriétés d’opérations sur les diagrammes de classes UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
  [Propriétés des associations dans les diagrammes de classes UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)
-
-
-

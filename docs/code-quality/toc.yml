@@ -29,16 +29,24 @@ items:
   items:
   - name: Analyse du code pour le code managé
     items:
-    - name: FAQ pour les analyseurs FxCop
-      href: fxcop-analyzers-faq.md
-    - name: Migrer depuis FxCop
-      href: fxcop-analyzers.yml
+    - name: Analyseurs FXCop
       items:
-      - name: Installer des analyseurs FxCop
+      - name: Questions fréquentes (FAQ)
+        href: fxcop-analyzers-faq.md
+      - name: Installez
         href: install-fxcop-analyzers.md
+      - name: Configurer
+        href: configure-fxcop-analyzers.md
+        items:
+        - name: Options de configuration
+          href: fxcop-analyzer-options.md
+      - name: Effectuer une migration à partir d’une analyse statique du code
+        href: fxcop-analyzers.yml
+    - name: FAQ sur les Analyseurs
+      href: analyzers-faq.md
     - name: Installer des analyseurs Roslyn
       href: install-roslyn-analyzers.md
-    - name: Configurer et utiliser des analyseurs Roslyn
+    - name: Utiliser et configurer des analyseurs Roslyn
       href: use-roslyn-analyzers.md
     - name: Activer l’analyse automatique du code
       href: how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md
@@ -574,6 +582,30 @@ items:
         href: ca5122-p-invoke-declarations-should-not-be-safe-critical.md
       - name: 'CA2153 : Éviter la gestion des exceptions d’état endommagé'
         href: ca2153-avoid-handling-corrupted-state-exceptions.md
+      - name: 'CA3001 : Passez en revue le code pour détecter les vulnérabilités de l’injection SQL'
+        href: ca3001-review-code-for-sql-injection-vulnerabilities.md
+      - name: 'CA3002 : Passez en revue le code pour détecter les vulnérabilités des scripts XSS'
+        href: ca3002-review-code-for-xss-vulnerabilities.md
+      - name: 'CA3003 : Passez en revue le code pour détecter les vulnérabilités de l’injection de chemin de fichier'
+        href: ca3003-review-code-for-file-path-injection-vulnerabilities.md
+      - name: 'CA3004 : Passez en revue le code pour détecter les vulnérabilités sur la divulgation d’informations'
+        href: ca3004-review-code-for-information-disclosure-vulnerabilities.md
+      - name: 'CA3005 : Passez en revue le code pour détecter les vulnérabilités de l’injection LDAP'
+        href: ca3005-review-code-for-ldap-injection-vulnerabilities.md
+      - name: 'CA3006 : Passez en revue le code pour détecter les vulnérabilités de l’injection de commande de processus'
+        href: ca3006-review-code-for-process-command-injection-vulnerabilities.md
+      - name: 'CA3007 : Passez en revue le code pour détecter les vulnérabilités de la redirection ouverte'
+        href: ca3007-review-code-for-open-redirect-vulnerabilities.md
+      - name: 'CA3008 : Passez en revue le code pour détecter les vulnérabilités de l’injection XPath'
+        href: ca3008-review-code-for-xpath-injection-vulnerabilities.md
+      - name: 'CA3009 : Passez en revue le code pour détecter les vulnérabilités de l’injection XML'
+        href: ca3009-review-code-for-xml-injection-vulnerabilities.md
+      - name: 'CA3010 : Passez en revue le code pour détecter les vulnérabilités de l’injection XAML'
+        href: ca3010-review-code-for-xaml-injection-vulnerabilities.md
+      - name: 'CA3011 : Passez en revue le code pour détecter les vulnérabilités de l’injection de DLL'
+        href: ca3011-review-code-for-dll-injection-vulnerabilities.md
+      - name: 'CA3012 : Passez en revue le code pour détecter les vulnérabilités de l’injection regex'
+        href: ca3012-review-code-for-regex-injection-vulnerabilities.md
       - name: 'CA3075 : Traitement DTD non sécurisé'
         href: ca3075-insecure-dtd-processing.md
       - name: 'CA3076 : Exécution non sécurisée de script XSLT'
@@ -1470,9 +1502,9 @@ items:
       href: ca0505.md
     - name: FxCopCmd (erreurs)
       href: fxcopcmd-errors.md
-ms.openlocfilehash: d922322159ed52441168ab7bfec76c0f92804501
-ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
+ms.openlocfilehash: 88bdee94ec0f5bc9fd8a1792dc6bd907093e8394
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57699666"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018270"

@@ -1,25 +1,20 @@
 ---
 title: Texture ponctuelle, bilinéaire, trilinéaire et ANISOTROPIQUE variantes de filtrage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 57d14fc9-b5f7-45ee-9717-48086886742d
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ef054b1773b1f0d07e21ec25cb326594a4d3b2d9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5c53f3b0633ec8938de210cb518d9fae1937eb2c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791230"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938327"
 ---
 # <a name="point-bilinear-trilinear-and-anisotropic-texture-filtering-variants"></a>Variantes de filtrage de texture ponctuelle, bilinéaire, trilinéaire et anisotropique
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ Substitue le mode de filtrage sur les échantillonneurs de texture appropriés.
   
 4. Filtrage anisotropique (mode le plus coûteux, qualité visuelle optimale)  
   
-   Si le coût de chaque variante en termes de performances est significatif ou s'il augmente avec les modes de filtrage plus intensifs, vous pouvez mettre en balance le coût et la qualité d'image qu'ils procurent. Selon votre évaluation, vous pouvez soit accepter de supporter un coût supplémentaire en termes de performances et bénéficier d'une meilleure qualité visuelle, soit opter pour une qualité visuelle réduite au profit d'une fréquence d'images supérieure, soit réserver les performances à d'autres processus.  
+   Si le coût de chaque variante en termes de performances est significatif ou s'il augmente avec les modes de filtrage plus intensifs, vous pouvez mettre en balance le coût et la qualité d'image qu'ils procurent. Selon votre évaluation, vous pouvez soit accepter de supporter un coût supplémentaire en termes de performances et bénéficier d’une meilleure qualité visuelle, soit opter pour une qualité visuelle réduite au profit d’une fréquence d’images supérieure, soit réserver les performances à d’autres processus.  
   
    Si vous trouvez que le coût en termes de performances est négligeable ou stable d'un mode de filtrage à un autre (par exemple, quand le GPU ciblé offre une bande passante de mémoire et un débit de nuanceur généreux), préférez le filtrage anisotropique pour accéder à une qualité d'image optimale dans votre application.  
   
@@ -62,15 +57,15 @@ Substitue le mode de filtrage sur les échantillonneurs de texture appropriés.
   
 - `D3D11_FILTER_ANISOTROPIC`  
   
-  Dans le **filtrage de Texture de Point** variant, le mode de filtrage fourni par l’application est remplacé par `D3D11_FILTER_MIN_MAG_MIP_POINT`; dans le **filtrage de Texture bilinéaire** variant, il est remplacé par `D3D11_FILTER_MIN_MAG_LINEAR_MIP_POINT`; puis, dans le **filtrage de Texture trilinéaire** variant, il est remplacé par `D3D11_FILTER_MIN_MAG_MIP_LINEAR`.  
+  Dans la variante **Filtrage de texture de point**, le mode de filtrage fourni par l’application est remplacé par `D3D11_FILTER_MIN_MAG_MIP_POINT` ; dans la variante **Filtrage de texture bilinéaire**, il est remplacé par `D3D11_FILTER_MIN_MAG_LINEAR_MIP_POINT` ; et dans la variante **Filtrage de texture trilinéaire**, il est remplacé par `D3D11_FILTER_MIN_MAG_MIP_LINEAR`.  
   
-  Dans le **filtrage de Texture ANISOTROPIQUE** variant, le mode de filtrage fourni par l’application est remplacé par `D3D11_FILTER_ANISOTROPIC`, et le Max Anisotropy est définie sur 16.  
+  Dans la variante **Filtrage de texture anisotropique**, le mode de filtrage fourni par l’application est remplacé par `D3D11_FILTER_ANISOTROPIC`, et le paramètre d’anisotropie maximale est défini sur 16.  
   
 ## <a name="restrictions-and-limitations"></a>Restrictions et limitations  
- Dans Direct3D, le niveau de fonctionnalité 9.1 spécifie une anisotropie maximale de 2x. Étant donné que le **filtrage de Texture ANISOTROPIQUE** variante tente d’utiliser exclusivement des 16 x ANISOTROPIE, la lecture échoue lors de l’analyse des frames est exécutée sur un périphérique de niveau de fonctionnalité 9.1. Les appareils actuels concernés par cette limitation sont notamment les tablettes Surface RT et Surface 2 ARM. Cette limitation peut aussi toucher les GPU plus anciens qui peuvent encore équiper certains ordinateurs, mais ceux-ci étant considérés comme obsolètes, ils sont de moins en moins répandus.  
+ Dans Direct3D, le niveau de fonctionnalité 9.1 spécifie une anisotropie maximale de 2x. Étant donné que la variante **Filtrage de texture anisotropique** essaie d’utiliser exclusivement l’anisotropie 16x, la lecture échoue quand l’analyse des frames est exécutée sur un appareil ayant un niveau de fonctionnalité 9.1. Les appareils actuels concernés par cette limitation sont notamment les tablettes Surface RT et Surface 2 ARM. Cette limitation peut aussi toucher les GPU plus anciens qui peuvent encore équiper certains ordinateurs, mais ceux-ci étant considérés comme obsolètes, ils sont de moins en moins répandus.  
   
 ## <a name="example"></a>Exemple  
- Le **filtrage de Texture de Point** variante peut être reproduite à l’aide de code similaire à celui-ci :  
+ La variante **Filtrage de texture de point** peut être reproduite avec un code similaire à celui-ci :  
   
 ```  
 D3D11_SAMPLER_DESC sampler_description;  
@@ -84,7 +79,7 @@ d3d_context->PSSetSamplers(0, 1, &sampler
 ```  
   
 ## <a name="example"></a>Exemple  
- Le **filtrage de Texture bilinéaire** variante peut être reproduite à l’aide de code similaire à celui-ci :  
+ La variante **Filtrage de texture bilinéaire** peut être reproduite avec un code similaire à celui-ci :  
   
 ```  
 D3D11_SAMPLER_DESC sampler_description;   
@@ -98,7 +93,7 @@ d3d_context->PSSetSamplers(0, 1, &sampler
 ```  
   
 ## <a name="example"></a>Exemple  
- Le **filtrage de Texture trilinéaire** variante peut être reproduite à l’aide de code similaire à celui-ci :  
+ La variante **Filtrage de texture trilinéaire** peut être reproduite avec un code similaire à celui-ci :  
   
 ```  
 D3D11_SAMPLER_DESC sampler_description;   
@@ -112,7 +107,7 @@ d3d_context->PSSetSamplers(0, 1, &sampler
 ```  
   
 ## <a name="example"></a>Exemple  
- Le **filtrage de Texture ANISOTROPIQUE** variante peut être reproduite à l’aide de code similaire à celui-ci :  
+ La variante **Filtrage de texture anisotropique** peut être reproduite avec un code similaire à celui-ci :  
   
 ```  
 D3D11_SAMPLER_DESC sampler_description;   
@@ -125,6 +120,3 @@ sampler_description.MaxAnisotropy = 16;
 d3d_device->CreateSamplerState(&sampler_desc, &sampler);  
 d3d_context->PSSetSamplers(0, 1, &sampler  
 ```
-
-
-

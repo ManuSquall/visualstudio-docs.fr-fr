@@ -3,10 +3,17 @@ layout: HubPage
 hide_bc: true
 title: Documentation Visual Studio | Documents Microsoft
 titleSuffix: ''
-description: 'Apprenez à utiliser Visual Studio pour développer des applications, des services et des outils dans le langage de votre choix, pour vos plateformes et vos appareils.'
+description: Apprenez à utiliser Visual Studio pour développer des applications, des services et des outils dans le langage de votre choix, pour vos plateformes et vos appareils.
 ms.topic: hub-page
 ms.custom: seodec18
+ms.openlocfilehash: f63b848481a43a9684424b31fe36c3436faff021
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515322"
 ---
+<!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
     <div class="container">
         <ul class="cardsY panelContent featuredContent">
@@ -49,7 +56,7 @@ ms.custom: seodec18
                 </a>
             </li>
             <li>
-                <a href="/visualstudio/ide/whats-new-visual-studio-2017">
+                <a href="/visualstudio/ide/whats-new-visual-studio-2019">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -85,6 +92,7 @@ ms.custom: seodec18
                                                 <h3>Apprendre à utiliser Visual Studio</h3>
                                                 <ul class="noBullet">
                                                     <li><a class="barLink" href="get-started/visual-studio-ide.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_overview.svg" alt="Guided tour icon" />Commencer la visite guidée</a></li>
+                                                    <li><a class="barLink" href="get-started/tutorial-open-project-from-repo.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_pull-request.svg" alt="Repo icon" />Ouvrir le code à partir d’un dépôt</a></li>
                                                     <li><a class="barLink" href="ide/index-writing-code.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_code-edit.svg" alt="Pencil icon" />Écrire et modifier du code</a></li>
                                                     <li><a class="barLink" href="ide/compiling-and-building-in-visual-studio.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_build.svg" alt="Crane icon" />Générer votre code</a></li>
                                                     <li><a class="barLink" href="debugger/debugger-feature-tour.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_debug.svg" alt="Debug icon" />Déboguer votre code</a></li>
@@ -862,7 +870,7 @@ Application web avec ASP.NET Core</a>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Développement mobile avec JavaScript</h3>
-                                                    <p>Créez des applications multiplateformes pour iOS, Android ou Windows à l’aide du framework Apache Cordova.</p>
+                                                    <p>(Visual Studio 2017 et Visual Studio 2015 uniquement) Créez des applications multiplateformes pour iOS, Android ou Windows à l’aide du framework Apache Cordova.</p>
                                                 </div>
                                             </div>
                                         </div>

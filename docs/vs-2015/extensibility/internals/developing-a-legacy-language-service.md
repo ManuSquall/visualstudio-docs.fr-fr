@@ -1,14 +1,9 @@
 ---
 title: Développement d’un Service de langage hérité | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - vs.vsip.LangServWiz.langtoks
 - vs.vsip.LangServWiz.welcome
@@ -20,13 +15,13 @@ helpviewer_keywords:
 ms.assetid: 6151ba88-c1c3-41de-a1cc-668f494d48d1
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 801a349b588a1dd7612b573fcc97b4b344a69452
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0a4477249dfad57bb75a83b40d6c3b1a4343a23f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746791"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953483"
 ---
 # <a name="developing-a-legacy-language-service"></a>Développement d’un service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,7 +49,7 @@ Cette section fournit des liens vers des rubriques qui vous aident à créer un 
  [Prise en charge du service de langage pour le débogage](../../extensibility/internals/language-service-support-for-debugging.md)  
  Décrit comment un service de langage peut fournir des fonctionnalités pour prendre en charge d’un débogueur.  
   
- [Liste de vérification : création d’un service de langage hérité](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)  
+ [Liste de vérification : Création d’un Service de langage hérité](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)  
  Fournit des instructions détaillées pour la création et l’intégration d’un service de langage pour l’éditeur principal.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
@@ -67,9 +62,8 @@ Cette section fournit des liens vers des rubriques qui vous aident à créer un 
  [Informations sur les paramètres dans un service de langage hérité](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)  
  Décrit comment fournir des conseils de méthode pour les méthodes et les fonctions surchargées.  
   
- [Guide pratique pour fournir la prise en charge de texte masqué dans un service de langage hérité](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
+ [Guide pratique pour Fournir la prise en charge de texte masqué dans un Service de langage hérité](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
  Explique l’objectif d’une zone de texte masqué et fournit des instructions sur la façon d’implémenter une zone de texte masqué.  
   
- [Guide pratique pour fournir la prise en charge étendue du Mode Plan dans un service de langage hérité](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
+ [Guide pratique pour Fournir une prise en charge étendue de mode plan dans un Service de langage hérité](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
  Explique les deux options qui prennent en charge en mode plan pour votre langage au-delà de la prise en charge la *réduire aux définitions* commande.
-

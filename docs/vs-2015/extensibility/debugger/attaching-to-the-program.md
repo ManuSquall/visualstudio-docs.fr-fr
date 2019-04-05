@@ -1,26 +1,21 @@
 ---
 title: Attacher au programme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
 ms.assetid: 9a3f5b83-60b5-4ef0-91fe-a432105bd066
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8c16c13b4dec412fa44be5cbfbbdd8494b805545
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0caeb922ecf908f56d9792e6363ac66c339c53e7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51777940"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953452"
 ---
 # <a name="attaching-to-the-program"></a>Attachement au programme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -75,6 +70,5 @@ Une fois que vous avez enregistré vos programmes avec le port approprié, vous 
  [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)   
  [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md)   
- [Attacher](../../extensibility/debugger/reference/idebugprogramex2-attach.md)   
+ [Attach](../../extensibility/debugger/reference/idebugprogramex2-attach.md)   
  [Attacher](../../extensibility/debugger/reference/idebugengine2-attach.md)
-

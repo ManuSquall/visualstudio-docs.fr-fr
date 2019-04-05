@@ -1,8 +1,8 @@
 ---
-title: Utiliser l’émulateur Express pour exécuter et déboguer un service cloud Azure sur un ordinateur local | Microsoft Docs
-description: Utiliser l’émulateur Express pour exécuter et déboguer un service cloud sur un ordinateur local
+title: Utiliser l’émulateur express pour exécuter et déboguer un service cloud Azure sur un ordinateur local | Microsoft Docs
+description: Utilisation de l’émulateur express pour exécuter et déboguer un service cloud sur une machine locale
 author: mikejo5000
-manager: douge
+manager: jillfra
 ms.assetid: 73108f98-a552-4817-b7a1-551367b71906
 ms.topic: conceptual
 ms.workload: azure-vs
@@ -10,44 +10,44 @@ ms.date: 03/06/2017
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 28dd59e3d691df0199afffe93d68d60668c6afe4
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 8ce7337350ac80e1992e850eb10d0ac7297f9502
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51001705"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "59001282"
 ---
-# <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>Utilisation de l’émulateur express pour exécuter et déboguer un service cloud Azure sur une machine locale
-À l’aide de l’émulateur Express, vous pouvez tester et déboguer un service cloud sans exécuter Visual Studio en tant qu’administrateur. Vous pouvez définir les paramètres de votre projet à utiliser l’émulateur Express ou l’émulateur complet, selon les besoins de votre service cloud. Pour plus d’informations sur l’émulateur complet, consultez [exécuter une Application Azure dans l’émulateur de calcul](/azure/storage/common/storage-use-emulator).
+# <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>Utiliser l’émulateur express pour exécuter et déboguer un service cloud Azure sur une machine locale
+Avec l’émulateur express, vous testez et déboguez un service cloud sans avoir à exécuter Visual Studio en tant qu’administrateur. Vous pouvez définir les paramètres du projet pour utiliser l’émulateur express ou l’émulateur complet selon la configuration requise de votre service cloud. Pour plus d’informations sur l’émulateur complet, consultez [Exécuter une application Azure dans l’émulateur de calcul](/azure/storage/common/storage-use-emulator).
 
-## <a name="using-emulator-express-in-visual-studio"></a>À l’aide de l’émulateur Express dans Visual Studio
-Lorsque vous créez un projet Azure dans Azure SDK 2.3 ou version ultérieure, l’émulateur Express est utilisé automatiquement. Pour les projets existants qui ont été créés avec une version antérieure du SDK Azure, procédez comme suit pour sélectionner l’émulateur Express :
+## <a name="using-emulator-express-in-visual-studio"></a>Utiliser l’émulateur express dans Visual Studio
+Quand vous créez un projet Azure dans le Kit de développement logiciel (SDK) Azure 2.3 ou une version ultérieure, l’émulateur express est automatiquement utilisé. Dans le cas des projets existants créés à l’aide d’une version antérieure du Kit SDK Azure, suivez ces étapes pour sélectionner l’émulateur express :
 
-1. Créez ou ouvrez un projet de service cloud Azure dans Visual Studio.
+1. Créez ou ouvrez un projet de service cloud Azure dans Visual Studio.
 
-1. Dans **l’Explorateur de solutions**, cliquez sur le projet, puis, dans le menu contextuel, sélectionnez **propriétés**.
+1. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le projet, puis, dans le menu contextuel, sélectionnez **Propriétés**.
 
-1. Dans les pages de propriétés de projets, sélectionnez le **Web** onglet.
+1. Sur les pages de propriétés des projets, sélectionnez l’onglet **Web**.
 
-    ![Propriétés d’un projet de service cloud Azure](./media/vs-azure-tools-emulator-express-debug-run/web-properties.png)
+    ![Propriétés pour un projet de service cloud Azure](./media/vs-azure-tools-emulator-express-debug-run/web-properties.png)
 
-1. Sous **serveur de développement Local**, sélectionnez **option utiliser IIS Express**.
+1. Sous **Serveur de développement local**, sélectionnez **l’option Utiliser IIS Express**.
 
-1. Sous **émulateur**, sélectionnez **utiliser l’émulateur Express**.
+1. Sous **Émulateur**, sélectionnez **Utiliser l’émulateur express**.
    
-1. Pour lancer l’émulateur Express, exécutez la commande suivante à une invite de commandes : 
+1. Pour lancer l’émulateur express, exécutez la commande suivante à l’invite de commande : 
 
     ```
     csrun.exe /useemulatorexpress
     ```
 
-## <a name="emulator-express-limitations"></a>Limitations d’émulateur Express
-Limitations de l’émulateur Express sont connues pour les problèmes suivants : 
+## <a name="emulator-express-limitations"></a>Limitations de l’émulateur express
+Les problèmes suivants sont des restrictions connues de l’émulateur express : 
 
-- L’émulateur Express n’est pas compatible avec le serveur Web IIS.
-- Votre service cloud peut contenir plusieurs rôles, mais chaque rôle est limité à une instance.
-- Vous ne pouvez pas accéder à des numéros de port inférieur à 1000. Si vous utilisez un fournisseur d’authentification qui utilise habituellement un port inférieur à 1000, vous devrez peut-être modifier cette valeur à un numéro de port supérieur à 1000.
-- Les limitations qui s’appliquent à l’émulateur de calcul Azure s’appliquent également à l’émulateur Express. Par exemple, vous ne peut pas avoir plus de 50 instances de rôle par déploiement. Pour plus d’informations sur l’émulateur de calcul Azure, consultez [exécuter une Application Azure dans l’émulateur de calcul](http://go.microsoft.com/fwlink/p/?LinkId=623050).
+- L’émulateur express n’est pas compatible avec le serveur web IIS.
+- Votre service cloud peut contenir plusieurs rôles, mais chaque rôle est limité à une seule instance.
+- Vous n’avez pas accès aux numéros de port inférieurs à 1 000. Si vous faites appel à un fournisseur d’authentification qui utilise habituellement un numéro de port inférieur à 1000, vous devrez peut-être remplacer cette valeur par un numéro de port supérieur à 1000.
+- Les limitations qui s’appliquent à l’émulateur de calcul Azure s’appliquent aussi à l’émulateur express. Par exemple, il ne peut pas y avoir plus de 50 instances de rôle par déploiement. Pour plus d’informations sur l’émulateur de calcul Azure, consultez la page [Exécuter une application Azure dans l’émulateur de calcul](http://go.microsoft.com/fwlink/p/?LinkId=623050).
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Débogage des services cloud Azure](https://msdn.microsoft.com/library/azure/ee405479.aspx)

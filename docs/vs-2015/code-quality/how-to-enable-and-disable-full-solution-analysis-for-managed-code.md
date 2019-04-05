@@ -1,12 +1,9 @@
 ---
-title: 'Comment : activer et désactiver l’analyse de la Solution complète pour le Code managé | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Activer et désactiver l’analyse de la Solution complète pour le Code managé | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - full solution analysis
 ms.assetid: 04315147-5792-47f0-8b5f-9ac8413c6a57
@@ -14,14 +11,14 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: af0aae4020182f6414d44a2004f98a6fc0df23ca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6b9efdb5ea3e7ccbee9aefb724e847db6a37c2a0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221869"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938659"
 ---
-# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Comment : activer et désactiver l’analyse de la Solution complète pour le Code managé
+# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Procédure : Activer et désactiver l’analyse de la Solution complète pour le Code managé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 REMARQUE]
@@ -59,6 +56,3 @@ REMARQUE]
  Par défaut, l’analyse complète de la solution est activée pour Visual Basic et désactivée pour Visual c#.  
   
  Visual Studio Update 3 RC inclut un moteur de diagnostic v2 analyseur code améliorée qui réduit l’utilisation de la mémoire de manière significative et diminue les temps de processeur à inactif, même si l’analyse complète de la solution est activée.
-
-
-

@@ -11,12 +11,12 @@ ms.assetid: a612f2d2-9806-477d-a126-12842f07da6e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6a9b5ec7b0a4231297925ab8b487ec3f529ddaef
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c107e6dcba9be92b738bb4756806d584b9abdb50
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955100"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416004"
 ---
 # <a name="how-to-create-a-web-performance-test-plug-in"></a>Procédure : créer un plug-in de test de performances web
 
@@ -33,43 +33,35 @@ Vous pouvez utiliser des plug-ins de test de performances web personnalisés ave
 
 ## <a name="to-create-a-custom-web-performance-test-plug-in"></a>Pour créer un plug-in de test de performances de site web
 
-1.  Ouvrez un projet de test de performances web et de charge qui contient un test de performances web.
+1. Ouvrez un projet de test de performances web et de charge qui contient un test de performances web.
 
-2.  Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur la solution, sélectionnez **Ajouter**, puis choisissez **Nouveau projet**.
+2. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur la solution, sélectionnez **Ajouter**, puis choisissez **Nouveau projet**.
 
-     La boîte de dialogue **Ajouter un nouveau projet** s’affiche.
+3. Créez un projet de **Bibliothèque de classes**.
 
-3.  Sous **Modèles installés**, sélectionnez **Visual C#**.
+   Le nouveau projet de bibliothèque de classes est ajouté à **l’Explorateur de solutions** et la nouvelle classe s’affiche dans **l’éditeur de code**.
 
-4.  Dans la liste des modèles, sélectionnez **Bibliothèque de classes**.
+4. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le dossier **Références** de la nouvelle bibliothèque de classes, puis sélectionnez **Ajouter une référence**.
 
-5.  Dans la zone de texte **Nom**, tapez le nom de votre classe.
+   La boîte de dialogue **Ajouter une référence** s’affiche.
 
-6.  Cliquez sur **OK**.
+5. Choisissez l’onglet **.NET**, faites défiler la liste vers le bas, puis sélectionnez **Microsoft.VisualStudio.QualityTools.WebTestFramework**
 
-7.  Le nouveau projet de bibliothèque de classes est ajouté à **l’Explorateur de solutions** et la nouvelle classe s’affiche dans **l’éditeur de code**.
-
-8.  Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le dossier **Références** de la nouvelle bibliothèque de classes, puis sélectionnez **Ajouter une référence**.
-
-9. La boîte de dialogue **Ajouter une référence** s’affiche.
-
-10. Choisissez l’onglet **.NET**, faites défiler la liste vers le bas, puis sélectionnez **Microsoft.VisualStudio.QualityTools.WebTestFramework**
-
-11. Cliquez sur **OK**.
+6. Cliquez sur **OK**.
 
      La référence à **Microsoft.VisualStudio.QualityTools.WebTestFramework** est ajoutée au dossier **Référence** dans **l’Explorateur de solutions**.
 
-12. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le nœud supérieur du projet de test de performances web et de charge qui contient le test de charge auquel vous souhaitez ajouter le plug-in du test de performances web, puis sélectionnez **Ajouter une référence**.
+7. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le nœud supérieur du projet de test de performances web et de charge qui contient le test de charge auquel vous souhaitez ajouter le plug-in du test de performances web, puis sélectionnez **Ajouter une référence**.
 
-13. La boîte de dialogue **Ajouter une référence** s’affiche.
+8. La boîte de dialogue **Ajouter une référence** s’affiche.
 
-14. Choisissez l’onglet **Projets**, puis sélectionnez le **Projet de bibliothèque de classes**.
+9. Choisissez l’onglet **Projets**, puis sélectionnez le **Projet de bibliothèque de classes**.
 
-15. Cliquez sur **OK**.
+10. Cliquez sur **OK**.
 
-16. Dans **l’éditeur de code**, écrivez le code de votre plug-in. Commencez par créer une classe publique qui dérive de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>.
+11. Dans **l’éditeur de code**, écrivez le code de votre plug-in. Commencez par créer une classe publique qui dérive de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>.
 
-17. Implémentez le code dans un ou plusieurs gestionnaires d'événements. Pour un exemple d'implémentation, reportez-vous à la section suivante.
+12. Implémentez le code dans un ou plusieurs gestionnaires d'événements. Pour un exemple d'implémentation, reportez-vous à la section suivante.
 
     - <xref:Microsoft.VisualStudio.TestTools.WebTesting.PostWebTestRecordingEventArgs>
 
@@ -87,22 +79,22 @@ Vous pouvez utiliser des plug-ins de test de performances web personnalisés ave
 
     - <xref:Microsoft.VisualStudio.TestTools.WebTesting.PostTransactionEventArgs>
 
-18. Après avoir écrit le code, générez le nouveau projet.
+13. Après avoir écrit le code, générez le nouveau projet.
 
-19. Ouvrez un test de performances web.
+14. Ouvrez un test de performances web.
 
-20. Pour ajouter le plug-in de test de performances web, choisissez **Ajouter un plug-in de test Web**dans la barre d’outils.
+15. Pour ajouter le plug-in de test de performances web, choisissez **Ajouter un plug-in de test Web**dans la barre d’outils.
 
      La boîte de dialogue **Ajouter un plug-in de test web** s’affiche.
 
-21. Sous **Sélectionner un plug-in**, sélectionnez votre classe de plug-in de test de performances web.
+16. Sous **Sélectionner un plug-in**, sélectionnez votre classe de plug-in de test de performances web.
 
-22. Dans le volet **Propriétés du plug-in sélectionné**, définissez les valeurs initiales du plug-in à utiliser au moment de l’exécution.
+17. Dans le volet **Propriétés du plug-in sélectionné**, définissez les valeurs initiales du plug-in à utiliser au moment de l’exécution.
 
     > [!NOTE]
     > Vous pouvez exposer autant de propriétés que vous souhaitez de vos plug-ins ; il suffit de les rendre publics, définissables et d'un type de base, tel qu'un entier, une valeur booléenne ou une chaîne. Vous pouvez également modifier ultérieurement les propriétés du plug-in de test de performances web dans la fenêtre Propriétés.
 
-23. Cliquez sur **OK**.
+18. Cliquez sur **OK**.
 
      Le plug-in est ajouté au dossier **Plug-ins de test web**.
 
@@ -113,8 +105,8 @@ Vous pouvez utiliser des plug-ins de test de performances web personnalisés ave
     >
     > Cela se produit si vous effectuez des modifications du code dans l’un de vos plug-ins et si vous créez une autre version de la DLL **(Version=0.0.0.0)**. Toutefois, le plug-in fait toujours référence à la version du plug-in d’origine. Pour résoudre ce problème, procédez comme suit :
     >
-    > 1.  Dans le projet de test de performances web et de charge, un message d’avertissement s’affiche dans les références. Supprimez et rajoutez la référence à la DLL de votre plug-in.
-    > 2.  Supprimez le plug-in de votre test ou de l'emplacement approprié, puis rajoutez-le.
+    > 1. Dans le projet de test de performances web et de charge, un message d’avertissement s’affiche dans les références. Supprimez et rajoutez la référence à la DLL de votre plug-in.
+    > 2. Supprimez le plug-in de votre test ou de l'emplacement approprié, puis rajoutez-le.
 
 ## <a name="example"></a>Exemple
 

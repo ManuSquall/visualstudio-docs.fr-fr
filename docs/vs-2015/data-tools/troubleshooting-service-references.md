@@ -1,12 +1,9 @@
 ---
 title: Dépannage de références de Service | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: reference
 f1_keywords:
 - msvse_wcf.Err.ReferenceGroup_NamespaceConflictsOther
 - msvse_wcf.Err.AddSvcRefDlg_NothingSelectedOnGo
@@ -19,13 +16,13 @@ ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 90ec170182d0b54e6185de68f5ca03a5e114f0ef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 8af0f56d75d231cdde2dc156519e08d580ad4f5f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223958"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954041"
 ---
 # <a name="troubleshooting-service-references"></a>Dépannage des références de service
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +45,7 @@ Cette rubrique répertorie les problèmes courants qui peuvent se produire lorsq
 -   Dans **l’Explorateur de solutions**, cliquez sur le projet bibliothèque du Service WCF, puis cliquez sur **Build**.
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Erreur d’accès à un Service sur un bureau à distance
- Lorsqu’un utilisateur accède à un service WCF hébergé sur le Web via une connexion Bureau à distance et l’utilisateur ne dispose pas des autorisations d’administration, l’authentification NTLM est utilisée. Si l’utilisateur ne dispose pas des autorisations d’administration, l’utilisateur peut recevoir le message d’erreur suivant : « la requête HTTP n’est pas autorisée avec le schéma d’authentification client 'Anonyme'. L’en-tête d’authentification reçu du serveur était 'NTLM'. »
+ Lorsqu’un utilisateur accède à un service WCF hébergé sur le Web via une connexion Bureau à distance et l’utilisateur ne dispose pas des autorisations d’administration, l’authentification NTLM est utilisée. Si l’utilisateur ne dispose pas des autorisations d’administration, l’utilisateur peut recevoir le message d’erreur suivant : « La requête HTTP n’est pas autorisée avec le schéma d’authentification client 'Anonyme'. L’en-tête d’authentification reçu du serveur était 'NTLM'. »
 
  Pour corriger cette erreur :
 
@@ -73,15 +70,15 @@ Cette rubrique répertorie les problèmes courants qui peuvent se produire lorsq
 
  Pour corriger cette erreur, vous devrez manuellement régénérer le projet de service :
 
-1.  Dans le menu **Outils** , cliquez sur **Options**.
+1.  Dans le menu **Outils**, cliquez sur **Options**.
 
 2.  Dans le **Options** boîte de dialogue, développez **projets et Solutions**, puis sélectionnez **général**.
 
 3.  Assurez-vous que le **Show advanced les configurations de build** case à cocher est sélectionnée, puis cliquez sur **OK**.
 
-4.  Charger le projet de service WCF. Pour plus d’informations, consultez [NIB Comment : créer des Solutions multiprojets](http://msdn.microsoft.com/en-us/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
+4.  Charger le projet de service WCF. Pour plus d’informations, consultez [NIB Comment : Créer des Solutions à projets multiples](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
 
-5.  Dans le **Configuration Manager** boîte de dialogue, définissez la **configuration de solution Active** à **déboguer**. Pour plus d’informations, consultez [Guide pratique pour créer et modifier des configurations](../ide/how-to-create-and-edit-configurations.md).
+5.  Dans le **Configuration Manager** boîte de dialogue, définissez la **configuration de solution Active** à **déboguer**. Pour plus d'informations, voir [Procédure : Créer et modifier des configurations](../ide/how-to-create-and-edit-configurations.md).
 
 6.  Dans **l’Explorateur de solutions**, sélectionnez le projet de service WCF.
 
@@ -92,13 +89,13 @@ Cette rubrique répertorie les problèmes courants qui peuvent se produire lorsq
 
  Pour corriger cette erreur, désactivez les flux RSS :
 
-1.  Dans Internet Explorer, sur le **outils** menu, cliquez sur **Options Internet**.
+1.  Dans Internet Explorer, accédez au menu **Outils** et cliquez sur **Options Internet**.
 
 2.  Sur le **contenu** sous l’onglet le **flux** , cliquez sur **paramètres**.
 
 3.  Dans le **paramètres de flux** boîte de dialogue, désactivez le **activer le mode lecture du flux** case à cocher, puis cliquez sur **OK**.
 
-4.  Cliquez sur **OK** pour fermer la **Options Internet** boîte de dialogue.
+4.  Cliquez sur **OK** pour fermer la boîte de dialogue **Options Internet**.
 
 ## <a name="see-also"></a>Voir aussi
 

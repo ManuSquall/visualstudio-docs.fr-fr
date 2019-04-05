@@ -2,7 +2,6 @@
 title: IActiveScriptAuthor::AddNamedItem | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 85c434ea17d41fb98300289c3161349f9d9f5a2f
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 95bc529db8129c4e9af1ed9f9dc3d91de9686223
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54094859"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58145653"
 ---
 # <a name="iactivescriptauthoraddnameditem"></a>IActiveScriptAuthor::AddNamedItem
 Ajoute le nom d’un élément de niveau racine pour la création d’espace de noms du moteur de script. Un *élément de niveau racine* est un objet qui peut contenir des méthodes et propriétés, et qui peut également contenir une source d’événement.  

@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 64da24c21ef40bd850e7fb91ed530df67bfe66b4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b96ceed46b9411e128a34861fbd06fd53817a18a
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763282"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194455"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +69,7 @@ IntelliSense vous aide à écrire du code plus vite et avec moins d'erreurs en f
 
 -   Fonctions définies dans tous les blocs de script du document actif. Les blocs de script inline sont pris en charge dans les fichiers qui ont les extensions .aspx., .ascx, .master, .html, et .htm.
 
--   Éléments `script` avec des attributs `src` qui pointent sur un autre fichier de script. Le fichier de script cible doit avoir l'extension de nom de fichier .js.
+-   Éléments `script` comportant des attributs `src` qui pointent sur un autre fichier de script. Le fichier de script cible doit avoir l'extension de nom de fichier .js.
 
 -   Fichiers JavaScript qui référencent d'autres fichiers JavaScript à l'aide d'une directive `reference`.
 
@@ -91,7 +91,7 @@ IntelliSense vous aide à écrire du code plus vite et avec moins d'erreurs en f
 
 -   Parcourt la liste et collecte des informations de type et d'autres données pertinentes à partir de chaque fichier.
 
--   Regroupe les données et les transmet au service de langage JavaScript, qui met les informations de type et les données à la disposition d'IntelliSense.
+-   Regroupe les données et les transmet à JavaScript Language Service, qui met les informations de type et les données à la disposition d’IntelliSense.
 
 -   Surveille les fichiers pour les modifications qui peuvent affecter la liste IntelliSense et met à jour la liste si nécessaire. Les scripts sur les magasins distants (tels que ceux référencés à l'aide du protocole HTTP) ne sont pas analysés.
 
@@ -122,7 +122,7 @@ IntelliSense vous aide à écrire du code plus vite et avec moins d'erreurs en f
  JavaScript IntelliSense fournit des références de programmation pour les éléments DOM DHTML (Dynamic HTML), tels que `body`, `form` et `div`. Seuls les éléments inclus dans le document actuel et la page maître sont affichés par IntelliSense. JavaScript IntelliSense prend en charge également les objets `window` et `document`, ainsi que leurs membres.
 
 ###  <a name="IntrinsicObjects"></a> Objets intrinsèques
- JavaScript IntelliSense fournit des références de programmation pour les objets intrinsèques tels que `Array`, `String`, `Math`, `Date` et `Number`. Pour plus d'informations sur les objets intrinsèques, consultez [Objets intrinsèques](/visualstudio/scripting-docs/javascript/intrinsic-objects-javascript).
+ JavaScript IntelliSense fournit des références de programmation pour les objets intrinsèques tels que `Array`, `String`, `Math`, `Date` et `Number`. Pour plus d’informations sur les objets intrinsèques, consultez [les objets prédéfinis Standard](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects).
 
 ###  <a name="UserDefined"></a>Variables, fonctions et objets définis par l’utilisateur
  Lorsque vous modifiez un fichier JavaScript, [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] analyse les documents ouverts et référencés pour déterminer toutes les ressources de code disponibles. Ceci inclut les variables, fonctions et objets que vous avez créés. Ces ressources sont ensuite disponibles pour JavaScript IntelliSense.
@@ -137,7 +137,7 @@ IntelliSense vous aide à écrire du code plus vite et avec moins d'erreurs en f
 
  Si vous ne travaillez pas avec une page Web compatible ASP.NET AJAX, vous pouvez référencer un fichier de script externe en utilisant l'attribut `src` dans la balise d'ouverture d'un élément `script`. L'attribut `src` spécifie l'URL pour un fichier externe qui contient le code source ou les données.
 
- L'exemple suivant montre un balisage utilisant l'attribut `src` dans une balise <`script`> pour référencer un fichier de script.
+ L’exemple suivant présente le balisage qui utilise le `src` d’attribut dans un <`script`> balise pour référencer un fichier de script.
 
 ```html
 <script type="text/javascript" src="~/Scripts/JavaScript.js">
@@ -145,7 +145,7 @@ IntelliSense vous aide à écrire du code plus vite et avec moins d'erreurs en f
 </script>
 ```
 
- Si vous travaillez avec une page web compatible ASP.NET AJAX, vous pouvez référencer des fichiers de script à l’aide de l’objet <xref:System.Web.UI.ScriptReference> du contrôle <xref:System.Web.UI.ScriptManager>.
+ Si vous travaillez avec une page Web compatible ASP.NET AJAX, vous pouvez référencer des fichiers de script à l'aide de l'objet <xref:System.Web.UI.ScriptReference> du contrôle <xref:System.Web.UI.ScriptManager>.
 
  L'exemple suivant montre un balisage qui utilise un objet <xref:System.Web.UI.ScriptReference> dans un contrôle <xref:System.Web.UI.ScriptManager> pour référencer un fichier de script.
 
@@ -213,7 +213,7 @@ IntelliSense vous aide à écrire du code plus vite et avec moins d'erreurs en f
 
 -   Si une référence de page est spécifiée, aucun autre type de directives de référence n'est autorisé.
 
--   Les noms de fichiers utilisent des chemins d'accès relatifs. Vous pouvez utiliser l’opérateur tilde (`~`) pour indiquer des chemins d’accès relatifs au niveau de la racine de l’application.
+-   Les noms de fichiers utilisent des chemins d'accès relatifs. Vous pouvez utiliser l'opérateur tilde (`~`) pour indiquer des chemins d'accès relatifs au niveau de la racine de l'application.
 
 -   Les chemins d'accès absolus sont ignorés.
 
@@ -236,10 +236,10 @@ IntelliSense vous aide à écrire du code plus vite et avec moins d'erreurs en f
 >  Les références IntelliSense sont généralement utilisées pour fournir la prise en charge d’IntelliSense pour les objets globaux et pour les [extensions](#Extensibility) IntelliSense. Vous pouvez également utiliser cette fonctionnalité pour les scripts qui doivent être chargés au moment de l’exécution à l’aide du chargeur de script.
 
 ### <a name="remote-file-references"></a>Références de fichiers distants
- Vous pouvez demander à Visual Studio de télécharger des fichiers JavaScript distants référencés dans un fichier JavaScript afin d'assurer la prise en charge d'IntelliSense pour la bibliothèque ou le fichier distant. Lorsque vous utilisez cette fonction, les fichiers sont téléchargés lorsque vous les incluez en tant que référence dans votre fichier JavaScript.
+ Vous pouvez demander à Visual Studio de télécharger des fichiers JavaScript distants référencés dans un fichier JavaScript afin d'assurer la prise en charge d'IntelliSense pour la bibliothèque ou le fichier distant. Lorsque vous utilisez cette fonctionnalité, les fichiers sont téléchargés lorsque vous les incluez en tant que référence dans votre fichier JavaScript.
 
 > [!NOTE]
->  À l’exception des projets Web, cette fonctionnalité fonctionne uniquement pour les fichiers JavaScript ouverts en dehors du contexte d’un projet. Pour les projets Web, les fichiers distants référencés dans votre projet sont téléchargés par défaut.
+>  À l'exception des projets Web, cette fonctionnalité fonctionne uniquement pour les fichiers JavaScript ouverts en dehors du contexte d'un projet. Pour les projets Web, les fichiers distants référencés dans votre projet sont téléchargés par défaut.
 
  Pour obtenir des instructions sur l’utilisation de cette fonctionnalité, consultez [Options, Éditeur de texte, JavaScript, IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md).
 

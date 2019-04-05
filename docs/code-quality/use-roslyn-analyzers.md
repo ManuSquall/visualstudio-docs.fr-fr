@@ -1,6 +1,6 @@
 ---
-title: Utiliser et configurez des analyseurs de Roslyn
-ms.date: 03/26/2018
+title: Suppression et la gravité de la règle analyseur
+ms.date: 03/26/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 887fb6101773a86d346215f558f10216ca4612b8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 30d8423481705a26f1275db8fb37c497b889dc84
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924602"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515335"
 ---
-# <a name="configure-and-use-roslyn-analyzer-rules"></a>Configurer et utiliser des règles de l’analyseur Roslyn
+# <a name="use-roslyn-analyzers"></a>Utiliser les analyseurs Roslyn
 
 Règles de l’analyseur .NET compiler Platform (« Roslyn »), ou *diagnostics*, analyser votre code c# ou Visual Basic en cours de frappe. Chacun des diagnostics a un état de gravité et la suppression par défaut qui peut être remplacé pour votre projet. Cet article décrit la gravité de règle de paramètre, à l’aide des ensembles de règles et suppression des violations.
 
@@ -46,12 +46,17 @@ Les icônes en regard de chaque diagnostic dans **l’Explorateur de solutions**
 
 ## <a name="rule-sets"></a>Ensembles de règles
 
-Un [ensemble de règles](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) est un fichier XML qui stocke l’état de gravité et de suppression pour les diagnostics individuels. Ensembles de règles s’appliquent à un seul projet, et un projet peut avoir plusieurs ensembles de règles. Pour afficher l’ensemble dans l’éditeur de règles active, cliquez sur le **analyseurs** nœud **l’Explorateur de solutions** et sélectionnez **Open ensemble de règles Active**. Si c’est la première fois que vous accédez à la règle définie, un fichier nommé  *\<nom_projet > .ruleset* est ajouté au projet et apparaît dans **l’Explorateur de solutions**.
+Un [ensemble de règles](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) est un fichier XML qui stocke l’état de gravité et de suppression pour les diagnostics individuels.
 
 > [!NOTE]
-> Ensembles de règles incluent l’analyse statique du code (binaire) et règles de l’analyseur Roslyn.
+> Ensembles de règles peuvent inclure des règles d’analyse statique du code (binaire) et les analyseurs de Roslyn.
 
-Vous pouvez modifier la règle active définie pour un projet sur le **analyse du Code** onglet de propriétés d’un projet. Sélectionnez l’ensemble de règles dans le **exécuter cet ensemble de règles** liste déroulante. Vous pouvez également ouvrir l’ensemble de règles la **analyse du Code** page de propriétés en sélectionnant **ouvrir**.
+Pour modifier la règle active définie dans l’éditeur d’ensemble de règles, cliquez sur le **références** > **analyseurs** nœud **l’Explorateur de solutions** et sélectionnez **Ouvrir l’ensemble de règles actif**. S’il s’agit de la première fois que vous êtes en train de modifier l’ensemble de règles, Visual Studio effectue une copie de la règle par défaut à définir le fichier, le nomme  *\<nom_projet > .ruleset*et l’ajoute à votre projet. Cette règle personnalisée, définie également devient la règle active définie pour votre projet.
+
+Pour modifier la règle active définie pour un projet, accédez à la **analyse du Code** onglet de propriétés d’un projet. Sélectionnez la règle dans la liste sous **exécuter cet ensemble de règles**. Pour ouvrir l’ensemble de règles, sélectionnez **ouvrir**.
+
+> [!NOTE]
+> Projets .NET core et .NET Standard ne prennent pas en charge les commandes de menu pour les ensembles de règles **l’Explorateur de solutions**, par exemple, **Open ensemble de règles Active**. Pour spécifier une règle par défaut définie pour un projet .NET Core ou .NET Standard, manuellement [ajouter la **CodeAnalysisRuleSet** propriété au fichier projet](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project). Vous pouvez configurer les règles dans l’ensemble de règles dans Visual Studio IU de l’éditeur d’ensemble de règles.
 
 ## <a name="rule-severity"></a>Gravité des règles
 
@@ -79,7 +84,7 @@ Vous pouvez modifier le niveau de gravité d’une règle à partir de **l’Exp
 
 ![Fichier d’ensemble de règles dans l’Explorateur de solutions](media/ruleset-in-solution-explorer.png)
 
-### <a name="to-set-rule-severity-from-solution-explorer"></a>Définir la gravité de règle à partir de l’Explorateur de solutions
+### <a name="set-rule-severity-from-solution-explorer"></a>Définir le niveau de gravité de règle à partir de l’Explorateur de solutions
 
 1. Dans **l’Explorateur de solutions**, développez **références** > **analyseurs** (**dépendances**  >  **Analyseurs** pour les projets .NET Core).
 
@@ -89,9 +94,9 @@ Vous pouvez modifier le niveau de gravité d’une règle à partir de **l’Exp
 
    La gravité de la règle est enregistrée dans le fichier d’ensemble de règles actif.
 
-### <a name="to-set-rule-severity-in-the-rule-set-file"></a>Pour définir la règle de gravité dans la règle de définie le fichier
+### <a name="set-rule-severity-in-the-rule-set-file"></a>Définir le niveau de gravité de règle dans le fichier d’ensemble de règles
 
-1. Ouvrez l’ensemble de règles fichier en double-cliquant dessus dans **l’Explorateur de solutions**, en sélectionnant **Open ensemble de règles Active** dans le menu contextuel de la **analyseurs** nœud, ou en sélectionnant **Open** sur le **analyse du Code** page de propriétés pour le projet.
+1. Ouvrir le [ensemble de règles](analyzer-rule-sets.md) fichier en double-cliquant dessus dans **l’Explorateur de solutions**, en sélectionnant **Open ensemble de règles Active** dans le menu contextuel de la **analyseurs** nœud, ou en sélectionnant **Open** sur le **analyse du Code** page de propriétés pour le projet.
 
 1. Accédez à la règle en développant son assembly conteneur.
 

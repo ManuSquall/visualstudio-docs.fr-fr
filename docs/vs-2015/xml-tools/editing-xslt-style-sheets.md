@@ -1,34 +1,29 @@
 ---
 title: Modification des feuilles de Style XSLT | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 080bed0f-0ca9-4be7-aecd-6bdaebc04007
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7dd25a531682c74284a74f065dc729f37ac7fb1a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a442612d3eb4845def1a82712ac01c6b90d4047c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286999"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954119"
 ---
 # <a name="editing-xslt-style-sheets"></a>Modification de feuilles de style XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-L'Éditeur XML permet également de modifier des feuilles de style XSLT. Vous pouvez ainsi tirer profit des fonctionnalités par défaut de l'éditeur telles qu'IntelliSense, mode plan, extraits XML, etc. Des nouvelles fonctions facilitent en outre le développement en XSLT.  
+L'Éditeur XML permet également de modifier des feuilles de style XSLT. Vous pouvez ainsi tirer profit des fonctionnalités par défaut de l’éditeur telles qu’IntelliSense, mode plan, extraits XML, etc. Des nouvelles fonctionnalités facilitent en outre le développement en XSLT.  
   
-## <a name="xslt-features"></a>Fonctions XSLT  
- Le tableau suivant décrit les fonctionnalités spécifiques à la manipulation des feuilles de style XSLT.  
+## <a name="xslt-features"></a>Fonctionnalités XSLT  
+ Le tableau suivant décrit les fonctions spécifiques à la manipulation des feuilles de style XSLT.  
   
  **La coloration syntaxique**  
  Mots clés XSLT, tels que `template`, `match`, et ainsi de suite, sont affichés dans la couleur de mot clé XSLT spécifiée par le **polices et couleurs** paramètres.  
@@ -40,13 +35,10 @@ L'Éditeur XML permet également de modifier des feuilles de style XSLT. Vous po
  Le code placé dans des blocs de script est pris en charge par le débogueur XSLT ; vous pouvez donc définir des points d'arrêt et effectuer une exécution pas à pas dans le code du bloc de script.  
   
  **Afficher la sortie XSLT**  
- Vous pouvez exécuter une transformation XSL et afficher la sortie depuis l'éditeur XML. Pour plus d’informations, consultez [Comment : exécuter une Transformation XSLT à partir de l’éditeur XML](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md).  
+ Vous pouvez exécuter une transformation XSL et afficher la sortie depuis l'éditeur XML. Pour plus d'informations, voir [Procédure : Exécuter une Transformation XSLT à partir de l’éditeur XML](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md).  
   
  **Débogage XSLT**  
  Vous pouvez lancer le débogueur XSLT à partir d'un fichier XSLT dans l'éditeur XML. Le débogueur prend en charge la définition de points d'arrêt dans le fichier XSLT, l'affichage de l'état d'exécution de XSLT, etc. Lorsque le pointeur est placé sur une variable XSLT, une info-bulle apparaît et affiche la valeur de la variable. Le débogueur peut permettre de déboguer une feuille de style ou une transformation XSLT compilée invoquée depuis une autre application. Pour plus d’informations, consultez [XSLT débogage](../xml-tools/debugging-xslt.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Éditeur XML](../xml-tools/xml-editor.md)
-
-
-

@@ -8,12 +8,12 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f00ff0f794bec43a6d81bf4303488885d901bcb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 487af3eb2a2cce1c68a94b996f371ab1c491e4c5
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914017"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416323"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Procédure : Créer un adaptateur de données de diagnostic
 
@@ -42,27 +42,15 @@ Voici une liste partielle des principaux événements que vous pouvez utiliser l
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestStepEnd>|Fin de chaque étape de test dans un test|
 
 > [!NOTE]
-> Lorsqu’un test manuel est terminé, plus aucun événement de collection de données n’est envoyé à l’adaptateur de données de diagnostic. Lorsqu'un test est réexécuté, un nouvel identificateur de cas de test lui est affecté. Si un utilisateur réinitialise un test pendant son exécution (ce qui déclenche l’événement <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseReset> ) ou modifie le résultat d’une étape de test, aucun événement de collection de données n’est envoyé à l’adaptateur de données de diagnostic, mais l’identificateur de cas de test reste inchangé. Pour déterminer si un cas de test a été réinitialisé, vous devez effectuer le suivi de l'identificateur de cas de test de votre adaptateur de données de diagnostic.
+> Lorsqu'un test manuel est terminé, plus aucun événement de collecte de données n'est envoyé à l'adaptateur de données de diagnostic. Lorsqu'un test est réexécuté, un nouvel identificateur de cas de test lui est affecté. Si un utilisateur réinitialise un test pendant son exécution (ce qui déclenche l'événement <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseReset> ) ou modifie le résultat d'une étape de test, aucun événement de collecte de données n'est envoyé à l'adaptateur de données de diagnostic, mais l'identificateur de cas de test reste inchangé. Pour déterminer si un cas de test a été réinitialisé, vous devez effectuer le suivi de l'identificateur de cas de test de votre adaptateur de données de diagnostic.
 
 Utilisez la procédure suivante pour créer un adaptateur de données de diagnostic qui collecte un fichier de données basé sur les informations configurées lors de la création de vos paramètres de test.
 
 Pour obtenir un exemple complet de projet d’adaptateur de données de diagnostic, notamment un éditeur de configuration personnalisé, consultez [Exemple de projet pour la création d’un adaptateur de données de diagnostic](../test/quickstart-create-a-load-test-project.md).
 
-##  <a name="create-and-install-a-diagnostic-data-adapter"></a>Créer et installer un adaptateur de données de diagnostic
+## <a name="create-and-install-a-diagnostic-data-adapter"></a>Créer et installer un adaptateur de données de diagnostic
 
-### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>Pour créer et installer un adaptateur de données de diagnostic
-
-1. Créer un nouveau projet de bibliothèque de classes.
-
-   1.  Dans le menu **Fichier**, sélectionnez **Nouveau**, puis pointez sur **Nouveau projet**.
-
-   2.  Dans **Types de projets**, sélectionnez la langue à utiliser.
-
-   3.  Dans **Modèles Visual Studio installés**, sélectionnez **Bibliothèque de classes**.
-
-   4.  Tapez un nom pour votre Adaptateur de données de diagnostic.
-
-   5.  Cliquez sur **OK**.
+1. Créez un projet de **Bibliothèque de classes**.
 
 2. Ajoutez l’assembly **Microsoft.VisualStudio.QualityTools.ExecutionCommon**.
 

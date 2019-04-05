@@ -7,12 +7,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9ae6220ac38de7bf2edc7b5c305ecb377a46f18
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: a1ea74d3c5f3fed961a956e9a55a4930d009d530
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323998"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790211"
 ---
 # <a name="troubleshooting-template-installation"></a>Résolution des problèmes d’installation du modèle
 
@@ -41,7 +41,7 @@ Si vous rencontrez des problèmes de déploiement de vos modèles de projet ou u
 
 ::: moniker range="vs-2017"
 
-4. Démarrez Visual Studio et lancer les boîtes de dialogue Nouveau projet et un nouvel élément pour initialiser les deux arborescences du modèle.
+4. Ouvrez Visual Studio et lancer les boîtes de dialogue Nouveau projet et un nouvel élément pour initialiser les deux arborescences du modèle.
 
    Le journal de modèle s’affiche désormais dans **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_[instanceid]\VsTemplateDiagnosticsList.csv** (instanceid correspond à l’ID d’installation de votre instance de Visual Studio). L’initialisation de chaque arborescence de modèle ajoute des entrées dans ce fichier journal.
 
@@ -49,7 +49,7 @@ Si vous rencontrez des problèmes de déploiement de vos modèles de projet ou u
 
 ::: moniker range=">=vs-2019"
 
-4. Démarrez Visual Studio et lancer les boîtes de dialogue Nouveau projet et un nouvel élément pour initialiser les deux arborescences du modèle.
+4. Ouvrez Visual Studio et lancez le **créer un nouveau projet** et **un nouvel élément** boîtes de dialogue pour initialiser les deux arborescences du modèle.
 
    Le journal de modèle s’affiche désormais dans **%LOCALAPPDATA%\Microsoft\VisualStudio\16.0_[instanceid]\VsTemplateDiagnosticsList.csv** (instanceid correspond à l’ID d’installation de votre instance de Visual Studio). L’initialisation de chaque arborescence de modèle ajoute des entrées dans ce fichier journal.
 

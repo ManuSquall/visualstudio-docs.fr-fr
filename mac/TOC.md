@@ -1,7 +1,7 @@
 # [Visual Studio pour Mac](index.yml)
-# [Visite guidée de l’IDE](/visualstudio/mac/ide-tour/)
+# [Visite guidée de l’IDE](ide-tour.md)
 
-# [Installation](/visualstudio/mac/installation/)
+# [Installation](installation.md)
 ## [Installer et utiliser derrière un pare-feu ou un proxy](install-behind-a-firewall-or-proxy-server.md)
 ## [Installer une préversion](install-preview.md)
 ## [Mettre à jour](update.md)
@@ -33,7 +33,7 @@
 ## [Sélection de bloc](block-selection.md)
 ## [Thèmes de l’éditeur](editor-themes.md)
 ## [EditorConfig](editorconfig.md)
-## [Raccourcis clavier courants](keyboard-shortcuts.md)
+## [Raccourcis clavier par défaut](keyboard-shortcuts.md)
 
 # [Débogage](debugging.md)
 ## [Visualisations des données](data-visualizations.md)

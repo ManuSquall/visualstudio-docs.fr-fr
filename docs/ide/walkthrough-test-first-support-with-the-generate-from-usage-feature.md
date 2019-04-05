@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c92ae058caa140f036ac8828899620bcc8d426ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8d4862bc9d4dc43549a1b0d5050035dbb8dd407b
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943036"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355628"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Procédure pas à pas : Développement basé d’abord sur les tests avec la fonctionnalité Générer à partir de l’utilisation
 
@@ -34,15 +34,19 @@ Cette rubrique montre comment utiliser la fonctionnalité [Générer à partir d
 
 ### <a name="create-a-windows-class-library-project-and-a-test-project"></a>Créer un projet de bibliothèque de classes Windows et un projet de test
 
-1. Dans [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] ou [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], créez un projet de **bibliothèque de classes Windows**. Nommez-le `GFUDemo_VB` ou `GFUDemo_CS`, selon le langage que vous utilisez.
+1. En C# ou en Visual Basic, créez un projet **Bibliothèque de classes Windows**. Nommez-le `GFUDemo_VB` ou `GFUDemo_CS`, selon le langage que vous utilisez.
 
-2. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur l’icône de solution en haut, choisissez **Ajouter**, puis choisissez **Nouveau projet**. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, choisissez **Tester**.
+2. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur l’icône de solution en haut, choisissez **Ajouter** > **Nouveau projet**.
 
-3. Dans le volet central, choisissez **Projet de test unitaire** et acceptez le nom par défaut `UnitTestProject1`. L’illustration suivante montre la boîte de dialogue quand elle apparaît dans [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. Dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], la boîte de dialogue a une apparence similaire.
+3. Créez un **Projet de test unitaire (.NET Framework)**.
 
-    ![Nouveau projet de test, boîte de dialogue ](../ide/media/newproject_test.png)
+   ::: moniker range="vs-2017"
 
-4. Choisissez **OK** pour fermer la boîte de dialogue **Nouveau projet**.
+   L’illustration suivante montre la boîte de dialogue **Nouveau projet** pour les modèles C#.
+
+   ![Modèle Projet de test unitaire](../ide/media/newproject_test.png)
+
+   ::: moniker-end
 
 ### <a name="add-a-reference-to-the-class-library-project"></a>Ajouter une référence au projet de bibliothèque de classes
 

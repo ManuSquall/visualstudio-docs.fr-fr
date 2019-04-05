@@ -1,14 +1,9 @@
 ---
 title: Ajout d’un Menu contextuel dans une fenêtre outil | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - context menus, adding to tool windows
 - menus, context menus
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
 caps.latest.revision: 38
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 179a103475a47be95cbf45f88640b8a635a7ff34
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5587c559615bcf6ae17a445490951c32741086c3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796218"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953284"
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>Ajout d’un menu contextuel dans une fenêtre d’outil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -286,4 +281,3 @@ Cette procédure pas à pas place un menu contextuel dans une fenêtre outil. Un
 ## <a name="see-also"></a>Voir aussi  
  [Commandes, Menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md)   
  [Utilisation et fourniture de services](../extensibility/using-and-providing-services.md)
-

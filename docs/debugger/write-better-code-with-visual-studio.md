@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a355930734bfb122a088fb20817b3318a365cc63
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6bfbcf9a63a01d391cbbc65067793d75d42899c1
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961713"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790327"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Outils pour vous aider à écrire du code de meilleure qualité et des techniques de débogage
 
@@ -42,7 +42,7 @@ Le code suivant a des bogues que vous pouvez corriger à l’aide de l’IDE Vis
 
 Pour créer l’application :
 
-1. Ouvrez Visual Studio et choisissez **fichier > Nouveau projet**. Sous **Visual C#** , choisissez **Windows Desktop** ou **.NET Core**, puis, dans le volet central, choisissez un **application Console**.
+1. Ouvrez Visual Studio et choisissez **fichier** > **New** > **projet**. Sous **Visual C#** , choisissez **Windows Desktop** ou **.NET Core**, puis, dans le volet central, choisissez un **application Console**.
 
     > [!NOTE]
     > Si vous ne voyez pas le modèle de projet **Application console**, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement .NET Desktop** ou **Développement multiplateforme .NET Core**, puis **Modifier**.

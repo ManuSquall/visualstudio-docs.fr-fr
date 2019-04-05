@@ -1,25 +1,22 @@
 ---
-title: 'Comment : utiliser des Transactions pour mettre à jour le modèle | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Utiliser des Transactions pour mettre à jour le modèle | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: e24436a5-7f97-401b-bc83-20d188d10d5b
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 50f9d491ed52098edb8a8ccd1a7b2f9c8834447e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7ff4aba08b4eaa1d508c3371a3da80b8cac48534
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236858"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953713"
 ---
-# <a name="how-to-use-transactions-to-update-the-model"></a>Comment : utiliser des transactions pour mettre à jour le modèle
+# <a name="how-to-use-transactions-to-update-the-model"></a>Procédure : Utiliser des transactions pour mettre à jour le modèle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Transactions Assurez-vous que les modifications qui ont été apportées dans le magasin sont traitées en tant que groupe. Les modifications qui sont regroupées peuvent être validées ou restaurées en tant qu’unité unique.  
@@ -108,6 +105,3 @@ if (!this.Store.InUndoRedoOrRollback) {...}
 if (!this.Store.InSerializationTransaction) {...}  
   
 ```
-
-
-

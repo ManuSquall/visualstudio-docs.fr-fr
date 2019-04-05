@@ -1,12 +1,9 @@
 ---
 title: 'Procédure pas à pas : Connexion d’un hôte à un processeur de Directive généré | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], connecting host to processor
 - text templates, custom directive hosts
@@ -14,23 +11,23 @@ ms.assetid: 254540d9-90d6-42de-8c1c-068affd56e83
 caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 329cb0a6008824b23d7188c0ea6c4cf5e524476d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 00baf3697347f208c5bd6cd2aa1abfe02b6fa2cb
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817871"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58954192"
 ---
-# <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Procédure pas à pas : connexion d'un hôte à un processeur de directive généré
+# <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Procédure pas à pas : Connexion d’un hôte à un processeur de Directive généré
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez écrire votre propre hôte qui traite les modèles de texte. Un hôte personnalisé de base est illustré dans [procédure pas à pas : création d’un hôte de modèle de texte personnalisé](../modeling/walkthrough-creating-a-custom-text-template-host.md). Vous pouvez étendre cet hôte pour ajouter des fonctions telles que la génération de plusieurs fichiers de sortie.  
+Vous pouvez écrire votre propre hôte qui traite les modèles de texte. Un hôte personnalisé de base est illustré dans [procédure pas à pas : Création d’un hôte de modèle de texte personnalisé](../modeling/walkthrough-creating-a-custom-text-template-host.md). Vous pouvez étendre cet hôte pour ajouter des fonctions telles que la génération de plusieurs fichiers de sortie.  
   
  Dans cette procédure pas à pas, vous développez votre hôte personnalisé afin qu’il prend en charge les modèles de texte qui appellent des processeurs de directive. Lorsque vous définissez un langage spécifique à un domaine, il génère un *processeur de directive* pour le modèle de domaine. Le processeur de directive rend plus facile aux utilisateurs d’écrire des modèles qui accéder au modèle, ce qui réduit la nécessité d’écrire des assembly et importer des directives dans les modèles.  
   
 > [!WARNING]
->  Cette procédure pas à pas s’appuie sur [procédure pas à pas : création d’un hôte de modèle de texte personnalisé](../modeling/walkthrough-creating-a-custom-text-template-host.md). Effectuez tout d’abord cette procédure pas à pas.  
+>  Cette procédure pas à pas s’appuie sur [procédure pas à pas : Création d’un hôte de modèle de texte personnalisé](../modeling/walkthrough-creating-a-custom-text-template-host.md). Effectuez tout d’abord cette procédure pas à pas.  
   
  Cette procédure pas à pas comprend les tâches suivantes :  
   
@@ -49,7 +46,7 @@ Vous pouvez écrire votre propre hôte qui traite les modèles de texte. Un hôt
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
 |Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling|[http://go.microsoft.com/fwlink/?LinkID=186128](http://go.microsoft.com/fwlink/?LinkID=186128)|  
   
- En outre, vous devez disposer de la transformation de modèle de texte personnalisé créée dans [procédure pas à pas : création d’un hôte de modèle de texte personnalisé](../modeling/walkthrough-creating-a-custom-text-template-host.md).  
+ En outre, vous devez disposer de la transformation de modèle de texte personnalisé créée dans [procédure pas à pas : Création d’un hôte de modèle de texte personnalisé](../modeling/walkthrough-creating-a-custom-text-template-host.md).  
   
 ## <a name="using-domain-specific-language-tools-to-generate-a-directive-processor"></a>À l’aide des outils Domain-Specific Language pour générer un processeur de Directive  
  Dans cette procédure pas à pas, vous utilisez l’Assistant Concepteur de langage spécifique à un domaine pour créer un langage spécifique à un domaine pour la solution DSLMinimalTest.  
@@ -58,15 +55,15 @@ Vous pouvez écrire votre propre hôte qui traite les modèles de texte. Un hôt
   
 1. Créer une solution de langage spécifique à un domaine qui présente les caractéristiques suivantes :  
   
-   - Nom : DSLMinimalTest  
+   - Nom : DSLMinimalTest  
   
-   - Modèle de solution : langage Minimal  
+   - Modèle de solution : Langage minimal  
   
    - Extension de fichier : min  
   
    - Nom de la société : Fabrikam  
   
-     Pour plus d’informations sur la création d’une solution de langage spécifique à un domaine, consultez [Comment : créer une Solution de langage spécifique à un domaine](../modeling/how-to-create-a-domain-specific-language-solution.md).  
+     Pour plus d’informations sur la création d’une solution de langage spécifique à un domaine, consultez [Comment : Créer une solution de langage spécifique à un domaine](../modeling/how-to-create-a-domain-specific-language-solution.md).  
   
 2. Dans le menu **Générer** , cliquez sur **Générer la solution**.  
   
@@ -86,7 +83,7 @@ Vous pouvez écrire votre propre hôte qui traite les modèles de texte. Un hôt
 6. Enregistrer la solution, puis fermez le Concepteur de langage spécifique à un domaine.  
   
 ## <a name="connecting-a-custom-text-template-host-to-a-directive-processor"></a>Connexion d’un hôte de modèle de texte personnalisé à un processeur de Directive  
- Après avoir généré le processeur de directive, vous vous connectez le processeur de directive et l’hôte de modèle de texte personnalisé que vous avez créé dans [procédure pas à pas : création d’un hôte de modèle de texte personnalisé](../modeling/walkthrough-creating-a-custom-text-template-host.md).  
+ Après avoir généré le processeur de directive, vous vous connectez le processeur de directive et l’hôte de modèle de texte personnalisé que vous avez créé dans [procédure pas à pas : Création d’un hôte de modèle de texte personnalisé](../modeling/walkthrough-creating-a-custom-text-template-host.md).  
   
 #### <a name="to-connect-a-custom-text-template-host-to-the-generated-directive-processor"></a>Pour vous connecter à un hôte de modèle de texte personnalisé pour le processeur de directive généré  
   
@@ -230,7 +227,7 @@ Vous pouvez écrire votre propre hôte qui traite les modèles de texte. Un hôt
             }  
     ```  
   
-7.  Sur le **fichier** menu, cliquez sur **Enregistrer tout**.  
+7.  Dans le menu **Fichier**, cliquez sur **Enregistrer tout**.  
   
 8.  Dans le menu **Générer** , cliquez sur **Générer la solution**.  
   
@@ -362,7 +359,4 @@ Vous pouvez écrire votre propre hôte qui traite les modèles de texte. Un hôt
     ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : création d’un hôte de modèle de texte personnalisé](../modeling/walkthrough-creating-a-custom-text-template-host.md)
-
-
-
+ [Procédure pas à pas : Créer un hôte de modèle de texte personnalisé](../modeling/walkthrough-creating-a-custom-text-template-host.md)

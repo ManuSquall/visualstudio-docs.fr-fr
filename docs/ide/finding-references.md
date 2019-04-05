@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74fb79db00a3e7366e91d3fb53a83f9deeb9a8a0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: df3eb6577c72aa421f2a22d93b3109f63548cc96
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335270"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324745"
 ---
 # <a name="find-references-in-your-code"></a>Rechercher des références dans votre code
 
 Vous pouvez utiliser la commande **Rechercher toutes les références** pour savoir où des éléments de code particuliers sont référencés dans tout votre code base. La commande **Rechercher toutes les références** est disponible dans le menu contextuel (clic droit) de l’élément dont vous souhaitez trouver les références. Si vous préférez utiliser le clavier, appuyez sur **Maj+F12**.
 
-Les résultats s’affichent dans une fenêtre Outil nommée **Références <element>**, où *element* est le nom de l’élément qui fait l’objet de la recherche. À partir de la barre d’outils de la fenêtre **Références**, vous pouvez effectuer les opérations suivantes :
+Les résultats apparaissent dans une fenêtre Outil nommée **Références \<élément>**, où *élément* est le nom de l’élément qui fait l’objet de la recherche. À partir de la barre d’outils de la fenêtre **Références**, vous pouvez effectuer les opérations suivantes :
 - Changer l’étendue de recherche dans une zone de liste déroulante. Vous pouvez choisir d’effectuer la recherche uniquement dans les documents modifiés dans l’ensemble de la solution.
 - Copier l’élément référencé sélectionné en choisissant le bouton **Copier**.
 - Pour accéder à l’emplacement suivant ou précédent dans la liste, choisissez les boutons appropriés appuyez sur les touches **F8** et **Maj+F8**.

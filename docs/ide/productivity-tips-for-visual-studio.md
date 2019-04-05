@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 362a4c000d8834ee5adc14b0620a77a51a47c0c3
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 02c1629b11e33de0ce8a24ffc7f5b939a7841705
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223141"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355761"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Conseils de productivité pour Visual Studio
 
@@ -66,13 +66,23 @@ Vous pouvez rechercher des commandes, des fichiers et des options dans l’IDE e
 
 - **Afficher uniquement les erreurs que vous souhaitez traiter**. Si vous sélectionnez le bouton **Filtre** dans la barre d’outils **Liste d’erreurs**, vous pouvez réduire le nombre d’erreurs qui s’affichent dans la fenêtre **Liste d’erreurs**. Vous pouvez afficher uniquement les erreurs des fichiers ouverts dans l'éditeur, uniquement les erreurs du fichier actif ou uniquement les erreurs du projet actif. Vous pouvez également rechercher des erreurs spécifiques dans la fenêtre **Liste d’erreurs**.
 
-- **Rechercher des boîtes de dialogue, commandes de menu et options**. Dans la zone de recherche [Lancement rapide](../ide/reference/quick-launch-environment-options-dialog-box.md), entrez les mots clés ou expressions correspondant aux éléments recherchés. Par exemple, les options suivantes apparaissent si vous entrez `new project` :
+- **Recherchez des boîtes de dialogue, des commandes de menu, des options, etc.** Dans la zone de recherche [Lancement rapide](../ide/reference/quick-launch-environment-options-dialog-box.md), entrez les mots clés ou expressions correspondant aux éléments recherchés. Par exemple, les options suivantes apparaissent si vous entrez **nouveau projet** :
 
-    ![Résultats du lancement rapide pour « nouveau projet »](../ide/media/productivity_quicklaunch.png)
+   ::: moniker range="vs-2017"
 
-    **Lancement rapide** affiche notamment des liens vers les boîtes de dialogue **Nouveau projet** et **Ajouter un nouvel élément**, ainsi que vers la page **Projets et solutions** dans la boîte de dialogue **Options**. Les résultats de lancement rapide peuvent également inclure des fichiers de projet et des fenêtres Outil.
+   ![Résultats du lancement rapide pour « nouveau projet »](../ide/media/productivity_quicklaunch.png)
 
-  La zone de recherche **Lancement rapide** s’affiche dans le coin supérieur droit de l’IDE. (Vous pouvez également appuyer sur **Ctrl**+**Q** pour y accéder.)
+   **Lancement rapide** affiche notamment des liens pour créer un projet et pour ajouter un nouvel élément ainsi qu’un lien vers la page **Projets et solutions** dans la boîte de dialogue **Options**, entre autres. Les résultats de la recherche peuvent également inclure des fichiers de projet et des fenêtres Outil.
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![Résultats de la recherche du lancement rapide pour « nouveau projet »](../ide/media/vs-2019/productivity-quick-launch-new-project.png)
+
+   ::: moniker-end
+
+   Appuyez sur **Ctrl**+**Q** pour accéder directement à la zone de recherche **Lancement rapide**.
 
 ## <a name="debug-code"></a>Déboguer du code
 

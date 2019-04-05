@@ -1,25 +1,20 @@
 ---
 title: Outil de ligne de commande de Capture | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d4cafc8c066025f87d233d8b6db8a97be1aa16f5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: be0b661c85165ff348eccf7d55507ce228100091
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770687"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952574"
 ---
 # <a name="command-line-capture-tool"></a>Outil en ligne de commande de capture
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,10 +73,10 @@ DXCap.exe –info
  En mode de lecture, `xml_filename` spécifie le nom du fichier dans lequel une représentation XML de la lecture est écrite. Si `xml_filename` n’est pas spécifié, la représentation XML est écrite dans un fichier portant le même nom que le fichier en cours de lecture, mais avec l’extension `.xml`.  
   
  `-v`  
- Mode de validation. En mode de validation, les frames capturés sont lus par le matériel et par WARP. Leurs résultats sont comparés à l'aide d'une fonction de comparaison d'images. Vous pouvez utiliser cette fonctionnalité pour identifier rapidement les problèmes de pilote qui affectent le rendu.  
+ Mode de validation. En mode de validation, les frames capturés sont lus par le matériel et par WARP. Leurs résultats sont comparés à l’aide d’une fonction de comparaison d’images. Vous pouvez utiliser cette fonctionnalité pour identifier rapidement les problèmes de pilote qui affectent le rendu.  
   
  `-examine` `events`  
- En mode de validation, `events` spécifie l’ensemble des événements graphiques dont les résultats immédiats sont comparés. Par exemple, `-examine present,draw,copy,clear` limite la comparaison aux événements appartenant à ces catégories.  
+ En mode de validation, `events` spécifie l'ensemble des événements graphiques dont les résultats immédiats sont comparés. Par exemple, `-examine present,draw,copy,clear` limite la comparaison aux événements appartenant à ces catégories.  
   
 > [!TIP]
 >  Nous vous recommandons de commencer avec `-examine present,draw,copy,clear` , car cela sera révéler la plupart des problèmes mais beaucoup plus rapidement qu’un ensemble plus complet d’événements. Si nécessaire, vous pouvez spécifier un ensemble distinct ou plus important d'événements pour valider ces derniers et identifier d'autres genres de problèmes.  
@@ -142,10 +137,10 @@ DXCap.exe –file regression_test_12.vsglog –c BasicHLSL11.exe
 DXCap.exe –c "C:\Program Files\Internet Explorer\iexplorer.exe" "www.fishgl.com"  
 ```  
   
- La commande dans l’exemple ci-dessus capture des informations graphiques à partir de la version bureau d’Internet Explorer lorsque vous affichez la page Web située à www.fishgl.com qui utilise l’API WebGL pour restituer le contenu 3D.  
+ La commande de l’exemple ci-dessus capture des informations graphiques de la version de bureau d’Internet Explorer tout en affichant la page web située à l’adresse www.fishgl.com, qui utilise l’API WebGL pour effectuer le rendu du contenu 3D.  
   
 > [!NOTE]
->  Étant donné que les arguments de ligne de commande qui apparaissent après l’application sont passés à ce dernier, vous devez spécifier les arguments destinés à DXCap.exe avant d’utiliser la `–c` option.  
+>  Dans la mesure où les arguments de ligne de commande qui apparaissent après l’application lui sont passés, vous devez spécifier les arguments destinés à DXCap.exe avant d’utiliser l’option `–c`.  
   
 ### <a name="capture-graphics-information-from-a-windows-store-app"></a>Capturer les informations graphiques d'une application du Windows Store  
  Vous pouvez capturer les informations graphiques d'une application du Windows Store.  
@@ -168,17 +163,17 @@ DXCap.exe –e map
   
  La commande ci-dessus énumère les applications du Windows Store qui correspondent à « map ». Voici la sortie :  
   
- **Package « Microsoft.BingMaps » :**  
+ **Package "Microsoft.BingMaps" :**  
  **InstallDirectory : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **FullName : Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **FullName         : Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
  **UserSID : S-1-5-21-2127521184-1604012920-1887927527-5603533**  
- **Nom : Microsoft.BingMaps**  
- **Serveur de publication : CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = US**  
- **Version : 2.1.2914.1734**  
- **Des Applications :**  
- **ID : AppexMaps**  
+ **Name             : Microsoft.BingMaps**  
+ **Publisher        : CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US**  
+ **Version           : 2.1.2914.1734**  
+ **Applications accessibles :**  
+ **Id   : AppexMaps**  
  **Exe : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
- **IsWWA : non**  
+ **IsWWA: No**  
  **AppSpec (pour lancer) : DXCap.exe - c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps** la dernière ligne de sortie pour chaque application énumérée affiche la commande que vous pouvez utiliser pour capturer les informations graphiques à partir de celui-ci.  
   
 ### <a name="capture-specific-frames-or-frames-between-specific-times"></a>Capturer des frames spécifiques ou des frames situés à des périodes spécifiques  
@@ -267,7 +262,7 @@ DXCap.exe -p BasicHLSL11.vsglog -screenshot –frame 5, 7-9
 DXCap.exe –p regression_test_12.vsglog –toXML  
 ```  
   
- Par défaut, la sortie XML est écrite dans un fichier qui porte le même nom que le journal de graphisme, mais dont l’extension est .xml. Dans l’exemple ci-dessus, le fichier XML est nommé **regression_test_12.xml**. Pour renommer le fichier XML en un autre nom, spécifiez-le après `-toXML`.  
+ Par défaut, la sortie XML est écrite dans un fichier qui porte le même nom que le journal de graphisme, mais dont l'extension est .xml. Dans l’exemple ci-dessus, le fichier XML est nommé **regression_test_12.xml**. Pour renommer le fichier XML en un autre nom, spécifiez-le après `-toXML`.  
   
 ```ms-dos  
 DXCap.exe –p regression_test_12.vsglog –toXML temp.xml  
@@ -302,6 +297,3 @@ DXCap.exe –p regression_test_12.vsglog –toXML temp.xml
 ```  
   
 ## <a name="requirements"></a>Configuration requise
-
-
-

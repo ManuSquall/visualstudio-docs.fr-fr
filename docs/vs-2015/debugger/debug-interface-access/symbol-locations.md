@@ -1,14 +1,9 @@
 ---
 title: Emplacements de symboles | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 7c8cd8fe-169e-4161-9cff-5e9015984add
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 54db4657ee779da1dfb5c0f743930f752ed26dbf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1f9ea0c6f2eede11100a4956ef4c63b20c6fa9a0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750550"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948522"
 ---
 # <a name="symbol-locations"></a>Emplacements des symboles
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -60,8 +55,5 @@ La plupart des symboles ont un emplacement défini dans le fichier image. Emplac
  [IDiaSymbol::get_token](../../debugger/debug-interface-access/idiasymbol-get-token.md)   
  [IDiaSymbol::get_value](../../debugger/debug-interface-access/idiasymbol-get-value.md)   
  [IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)   
- [LocationType (énumération)](../../debugger/debug-interface-access/locationtype.md)   
+ [LocationType, énumération](../../debugger/debug-interface-access/locationtype.md)   
  [Symboles et étiquettes de symbole](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
-
-
-

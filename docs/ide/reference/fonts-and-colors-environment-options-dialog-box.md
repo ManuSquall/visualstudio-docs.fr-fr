@@ -25,16 +25,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3fd18198811f6235c4e5d0627303e4243ad595b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b48c86c74b724dc6df5d5935f1340f6de0fc9185
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700261"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647464"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Polices et couleurs, Environnement, boîte de dialogue Options
 
-La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet d’établir un jeu de polices et un modèle de couleurs personnalisés pour divers éléments d’interface utilisateur dans l’environnement de développement intégré (IDE). Vous pouvez accéder à cette boîte de dialogue en cliquant sur **Outils** > **Options**, puis en sélectionnant **Environnement** > **Polices et couleurs**. Si cette page n’apparaît pas dans la liste, sélectionnez **Afficher tous les paramètres** dans la boîte de dialogue **Options**.
+La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet d’établir un jeu de polices et un modèle de couleurs personnalisés pour divers éléments d’interface utilisateur dans l’environnement de développement intégré (IDE). Vous pouvez accéder à cette boîte de dialogue en cliquant sur **Outils** > **Options**, puis en sélectionnant **Environnement** > **Polices et couleurs**.
 
 Les changements relatifs au modèle de couleurs ne sont pas appliqués durant la session où vous les apportez. Vous pouvez évaluer les changements de couleurs en ouvrant une autre instance de Visual Studio, et en reproduisant les conditions dans lesquelles vous souhaitez qu'ils soient appliqués.
 
@@ -218,7 +218,7 @@ Les éléments peuvent hériter de la couleur de premier plan d’autres éléme
 
 **Default**
 
-Couleur qui s’affiche pour l’élément la première fois que vous démarrez Visual Studio. Si vous cliquez sur le bouton **Par défaut**, la valeur initiale est restaurée à l’aide de cette couleur.
+Couleur qui s’affiche pour l’élément la première fois que vous ouvrez Visual Studio. Si vous cliquez sur le bouton **Par défaut**, la valeur initiale est restaurée à l’aide de cette couleur.
 
 **Personnalisé**
 
@@ -237,7 +237,7 @@ Les éléments peuvent hériter de la couleur d’arrière-plan d’autres élé
 
 **Default**
 
-Couleur qui s’affiche pour l’élément la première fois que vous démarrez Visual Studio. Si vous cliquez sur le bouton **Par défaut**, la valeur initiale est restaurée à l’aide de cette couleur.
+Couleur qui s’affiche pour l’élément la première fois que vous ouvrez Visual Studio. Si vous cliquez sur le bouton **Par défaut**, la valeur initiale est restaurée à l’aide de cette couleur.
 
 **Personnalisé**
 

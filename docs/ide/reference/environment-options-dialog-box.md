@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a77fae7d802b0edf5fceaae8409f2e0a91f6687b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 36b1d371846ad65fd34a7a5cbd4e8bdcdc0ebd9b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703251"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983713"
 ---
 # <a name="environment-options-dialog-box"></a>Environnement, boîte de dialogue Options
 
@@ -27,7 +27,7 @@ Vous pouvez utiliser les pages du dossier **Environnement** de la boîte de dial
 |Personnaliser la personnalisation de la présentation et du comportement des fenêtres, des menus et d'autres éléments de l'environnement de développement intégré (IDE).|[Général, Environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)|
 |Modifier les paramètres par défaut d'enregistrement et de restauration automatiques des fichiers.|[Récupération automatique, Environnement, boîte de dialogue Options](../../ide/reference/autorecover-environment-options-dialog-box.md)|
 |Définir les paramètres de gestion et d'affichage de documents, y compris du comportement des Fichiers divers.|[Documents, Environnement, boîte de dialogue Options](../../ide/reference/documents-environment-options-dialog-box.md)|
-|Personnalisez le déroulement des mises à jour et la gestion des extensions.|[Extensions et mises à jour, Environnement, boîte de dialogue Options](../../ide/reference/extensions-and-updates-environment-options-dialog-box.md)|
+|Personnalisez le déroulement des mises à jour et la gestion des extensions.|[Extensions, Environnement, boîte de dialogue Options](../../ide/reference/extensions-and-updates-environment-options-dialog-box.md)|
 |Personnalisez quand les boîtes de message doivent apparaître et comment la fenêtre **Rechercher et remplacer** doit agir pendant une recherche rapide ou un remplacement rapide, et remplissez automatiquement également la zone Rechercher.|[Rechercher et remplacer, Environnement, boîte de dialogue Options](../../ide/reference/find-and-replace-environment-options-dialog-box.md)|
 |Définir la police et les couleurs dans certains éditeurs, boîtes de dialogue, fenêtres d'outils et autres éléments de l'interface utilisateur.|[Polices et couleurs, Environnement, boîte de dialogue Options](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md)|
 |Personnalisez l'emplacement des fichiers vssettings qui stockent les informations des paramètres utilisateur.|[Importation et exportation de paramètres, Environnement, boîte de dialogue Options](../../ide/reference/import-and-export-settings-environment-options-dialog-box.md)|

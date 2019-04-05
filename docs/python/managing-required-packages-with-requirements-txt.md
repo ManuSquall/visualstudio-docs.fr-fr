@@ -1,7 +1,7 @@
 ---
 title: Gérer les dépendances de package à l’aide d’un fichier requirements.txt
 description: Fichier requirements.txt contenant les dépendances d’un projet. Si vous recevez un projet contenant un fichier requirements.txt, vous pouvez installer ces dépendances en toute simplicité, en une seule étape.
-ms.date: 01/28/2019
+ms.date: 03/18/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2026c80141c29e14ca1d7c8f1f7e1bc5cecd2e32
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 88cd2ee237a92aff4ca6f641556b8003be550c3d
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924342"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194838"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>Gérer les packages requis avec requirements.txt
 
@@ -25,11 +25,13 @@ Techniquement, vous pouvez utiliser n’importe quel nom de fichier pour suivre 
 
 - Si vous avez chargé un projet contenant *requirements.txt* et si vous souhaitez installer tous les packages listés dans ce fichier, développez le nœud **Environnements Python** dans **l’Explorateur de solutions**, puis cliquez avec le bouton droit sur un nœud d’environnement et sélectionnez **Installer à partir de requirements.txt** :
 
-    ![Installer à partir de requirements.txt](media/environments-requirements-txt-install.png)
+    ![Installer à partir de requirements.txt](media/environments/environments-requirements-txt-install.png)
+
+- Si vous souhaitez installer les dépendances dans un environnement virtuel, créez et activez tout d’abord cet environnement, puis utilisez la commande **Installer à partir de requirements.txt**. Pour plus d’informations sur la création d’un environnement virtuel, consultez [Utiliser des environnements virtuels](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
 - Si vous avez déjà installé tous les packages nécessaires dans un environnement, cliquez avec le bouton droit sur celui-ci dans l’**Explorateur de solutions**, puis sélectionnez **Générer requirements.txt** pour créer le fichier nécessaire. Si le fichier existe déjà, une invite s’affiche sur le mode de mise à jour :
 
-    ![Options de mise à jour pour requirements.txt](media/environments-requirements-txt-replace.png)
+    ![Options de mise à jour pour requirements.txt](media/environments/environments-requirements-txt-replace.png)
 
   - **Replace entire file** (Remplacer l’intégralité du fichier) supprime tous les éléments, commentaires et options qui existent.
   - **Actualiser les entrées existantes** détecte les spécifications du package et met à jour les spécificateurs de version pour qu’ils correspondent à la version actuellement installée.

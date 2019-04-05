@@ -1,12 +1,9 @@
 ---
 title: Créer des tables de recherche dans les applications Windows Forms | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,15 +16,15 @@ ms.assetid: 0edd5385-c381-4b17-9096-74e2778db9d5
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 334acba1e70545f1f8be758e34c8fc4843878406
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7f0abb70297436e75bbe4d9b6b24b4aeb3a7a341
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223888"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949859"
 ---
-# <a name="create-lookup-tables-in-windows-forms-applications"></a>Créer des tables de recherche dans les applications Windows Forms
+# <a name="create-lookup-tables-in-windows-forms-applications"></a>Créer des tables de recherche dans des applications Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -39,10 +36,10 @@ Le terme *table de recherche* décrit les contrôles qui sont liés aux tables d
   
 ## <a name="to-databind-a-lookup-control"></a>Pour lier un contrôle de recherche  
   
-1.  Ouvrez le **des Sources de données** fenêtre.  
+1.  Ouvrez la fenêtre **Sources de données**.  
   
     > [!NOTE]
-    >  Les tables de recherche nécessitent que les deux tables ou objets connexes sont disponibles dans le **des Sources de données** fenêtre. Pour plus d’informations, consultez la page [Comment : afficher des données connexes dans une application Windows Forms](../data-tools/how-to-display-related-data-in-a-windows-forms-application.md).  
+    > Les tables de recherche nécessitent que les deux tables ou objets connexes sont disponibles dans le **des Sources de données** fenêtre.
   
 2.  Développez les nœuds dans le **des Sources de données** fenêtre jusqu'à ce que vous pouvez voir la table parente et toutes ses colonnes et la table enfant connexe et toutes ses colonnes.  
   
@@ -55,7 +52,7 @@ Le terme *table de recherche* décrit les contrôles qui sont liés aux tables d
   
 5.  Faites glisser le nœud de la table enfant principale à partir de la **des Sources de données** fenêtre vers votre formulaire.  
   
-     Supprimer des contrôles liés aux données (avec des étiquettes descriptives) et un outil (<xref:System.Windows.Forms.BindingNavigator>) apparaissent sur le formulaire. Un [DataSet](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource>, et <xref:System.Windows.Forms.BindingNavigator> s’affichent dans la barre d’état du composant.  
+     Supprimer des contrôles liés aux données (avec des étiquettes descriptives) et un outil (<xref:System.Windows.Forms.BindingNavigator>) apparaissent sur le formulaire. Un [DataSet](../data-tools/dataset-tools-in-visual-studio.md), TableAdapter, <xref:System.Windows.Forms.BindingSource>, et <xref:System.Windows.Forms.BindingNavigator> s’affichent dans la barre d’état du composant.  
   
 6.  Maintenant, faites glisser le nœud de la table parent principal à partir de la **des Sources de données** fenêtre directement sur le contrôle de recherche (le <xref:System.Windows.Forms.ComboBox>).  
   
@@ -70,4 +67,3 @@ Le terme *table de recherche* décrit les contrôles qui sont liés aux tables d
   
 ## <a name="see-also"></a>Voir aussi  
  [Lier des contrôles Windows Forms à des données dans Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-

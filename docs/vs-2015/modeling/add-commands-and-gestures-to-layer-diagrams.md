@@ -1,12 +1,9 @@
 ---
 title: Ajouter des commandes et des mouvements aux diagrammes de couche | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, adding custom commands
 - layer diagrams, adding custom gestures
@@ -14,13 +11,13 @@ ms.assetid: ac9c417b-0b40-4a90-86f5-ee3cbdce030b
 caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ae57d950b20fc6e342056b8c89738fa895c48c28
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 0be2860408634d78b8d25403de99e7fcb410422c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733372"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953203"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>Ajouter des commandes et des mouvements aux diagrammes de couche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -107,7 +104,7 @@ Vous pouvez définir des commandes de menu contextuel et des gestionnaires de mo
   
      Voir aussi [Parcourir et mise à jour des modèles dans le code de programme de couche](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
-2.  Pour tester la fonctionnalité, appuyez sur Ctrl+F5 ou F5. Une instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] s'ouvre. Dans cette instance, créez ou ouvrez un diagramme de couche.  
+2.  Pour tester la fonctionnalité, appuyez sur Ctrl+F5 ou F5. Une instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] s’ouvre. Dans cette instance, créez ou ouvrez un diagramme de couche.  
   
 3.  Pour installer l’extension VSIX dans l’instance principale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ou sur un autre ordinateur, recherchez le fichier **.vsix** dans le répertoire **bin** du projet VSIX. Copiez-le sur l’ordinateur sur lequel vous souhaitez installer l’extension VSIX. Double-cliquez sur le fichier VSIX dans l’Explorateur Windows (l’Explorateur de fichiers dans Windows 8).  
   
@@ -250,7 +247,7 @@ namespace MyLayerExtensions // change to your preference
   
    **OnDragDrop** : appelée quand l’utilisateur dépose un élément sur le diagramme.  
   
-- Le premier argument de chaque méthode est un `IShape`, à partir duquel vous pouvez obtenir l’élément de couche. Exemple :  
+- Le premier argument de chaque méthode est un `IShape`, à partir duquel vous pouvez obtenir l’élément de couche. Exemple :  
   
   ```  
   public void OnDragDrop(IShape target, IDataObject data)  
@@ -271,6 +268,3 @@ namespace MyLayerExtensions // change to your preference
  [Parcourir et mettre à jour des modèles de couche dans le code de programme](../modeling/navigate-and-update-layer-models-in-program-code.md)   
  [Ajouter une validation d’architecture personnalisée aux diagrammes de couche](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)   
  [Définir et installer une extension de modélisation](../modeling/define-and-install-a-modeling-extension.md)
-
-
-

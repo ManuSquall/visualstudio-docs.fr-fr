@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 2ec13113d8b7707c404a8af9788dacc98b12bb42
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7ecfd8f1cf50e94991ce2fd94ad94ac9815c92ca
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921235"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868015"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>Modifier le code R dans Visual Studio
 
@@ -97,7 +97,7 @@ Les options de mise en forme (dont la désactivation de la mise en forme) sont d
 
 ## <a name="inserting-roxygen-comments"></a>Insertion de commentaires Roxygen
 
-RTVS fournit un raccourci pour la génération de commentaires [Roxygen](http://roxygen.org/) à l’aide des noms de paramètre d’une fonction. Il suffit de taper `###` sur une ligne vide au-dessus de la définition de fonction :
+RTVS fournit un raccourci pour la génération de commentaires [Roxygen](https://cran.r-project.org/web/packages/roxygen2/index.html) à l’aide des noms de paramètre d’une fonction. Il suffit de taper `###` sur une ligne vide au-dessus de la définition de fonction :
 
 ![Animation de l’insertion d’un commentaire Roxygen](media/editing-roxygen-comments.gif)
 

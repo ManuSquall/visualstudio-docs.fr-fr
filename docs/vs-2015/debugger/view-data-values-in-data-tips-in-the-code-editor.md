@@ -1,14 +1,9 @@
 ---
 title: Afficher les valeurs de données dans des bulles d’informations dans l’éditeur de code | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -25,13 +20,13 @@ ms.assetid: ffa7bd18-439b-4685-a9b3-c7884b5de41f
 caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 37fc58a68f8cf482ac6a2bbab3ecb47c28d60904
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: bb42950acf958dbb71877671da57f5ea6fcd6898
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799442"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938337"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>Afficher les valeurs des données dans les conseils de données de l'éditeur de code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +81,7 @@ Les DataTips sont un moyen pratique de visualiser des informations sur les varia
   
 -   Dans un DataTip, placez le pointeur de la souris sur le **+** connexion qui précède le nom de variable.  
   
-     La variable se développe et affiche ses éléments sous forme d’arborescence.  
+     La variable se développe et affiche ses éléments sous forme d'arborescence.  
   
      Une fois la variable développée, vous pouvez utiliser les touches de direction du clavier pour vous déplacer vers le haut ou vers le bas. Vous pouvez également utiliser la souris.  
   
@@ -148,9 +143,6 @@ Les DataTips sont un moyen pratique de visualiser des informations sur les varia
   
 ## <a name="see-also"></a>Voir aussi  
  [Affichage des données dans le débogueur](../debugger/viewing-data-in-the-debugger.md)   
- [Comment : utiliser la boîte de dialogue Espion express](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
+ [Guide pratique pour Utilisez la boîte de dialogue Espion express](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
  [Créer des visualiseurs personnalisés](../debugger/create-custom-visualizers-of-data.md)   
- [Comment : modifier le Format numérique de débogueur Windows](http://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)
-
-
-
+ [Guide pratique pour Modifier le Format numérique de débogueur Windows](http://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)

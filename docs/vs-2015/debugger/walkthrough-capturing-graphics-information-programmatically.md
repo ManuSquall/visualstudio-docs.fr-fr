@@ -1,27 +1,22 @@
 ---
 title: 'Procédure pas à pas : Capture d’informations graphiques par programmation | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: a5adeff9-afaf-4047-b5ce-ef0aefe710eb
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: feff1af744bd9f42d2fe8af67a72ec4856a09acc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bb12e0691d4e867a73b9c8999d0ad57cebd7ec44
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747666"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950759"
 ---
-# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Procédure pas à pas : capture d'informations Graphics par programmation
+# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Procédure pas à pas : capture d’informations graphiques par programmation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour capturer par programmation les informations graphiques d'une application Direct3D.  
@@ -46,7 +41,7 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../inc
 -   Capture d'informations graphiques  
   
 > [!NOTE]
->  Si les implémentations précédentes de la capture par programmation dépendaient des Outils de contrôle à distance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour fournir la fonctionnalité de capture, Windows 8.1 prend directement en charge la capture via Direct3D 11.2. Ainsi, vous n'avez plus besoin d'installer les Outils de contrôle à distance pour utiliser la capture par programmation dans Windows 8.1.  
+>  Si les implémentations précédentes de la capture par programmation dépendaient des Outils de contrôle à distance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour fournir la fonctionnalité de capture, Windows 8.1 prend directement en charge la capture via Direct3D 11.2. Ainsi, vous n'avez plus besoin d'installer les Outils de contrôle à distance pour utiliser la capture par programmation dans Windows 8.1.  
   
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>Préparation de votre application à l'utilisation de la capture par programmation  
  Pour utiliser la capture par programmation dans votre application, celle-ci doit inclure les en-têtes nécessaires. Ces en-têtes font partie du Kit de développement logiciel (SDK) Windows 8.1.  
@@ -193,20 +188,17 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../inc
 >  Pour écrire à un emplacement spécifique, vous devez avoir des autorisations d'accès en écriture à cet emplacement ; sinon, une erreur se produit. Gardez à l'esprit que les applications [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] sont plus limitées que les applications de bureau en ce qui concerne l'écriture des données et qu'une configuration supplémentaire peut être nécessaire pour leur permettre d'écrire à certains emplacements.  
   
 ### <a name="capturing-the-graphics-information"></a>Capture des informations graphiques  
- Après avoir préparé l'application à la capture par programmation et éventuellement configuré l'emplacement et le nom du fichier journal de graphisme, générez, puis exécutez ou déboguez l'application pour capturer les données ; ne démarrez pas Graphics Diagnostics à partir de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] quand vous utilisez l'API de capture par programmation. Le journal de graphisme est écrit à l'emplacement que vous avez spécifié. Si vous voulez conserver cette version du journal, déplacez-le à un autre emplacement ; à défaut, il sera remplacé quand vous exécuterez à nouveau l'application.  
+ Après avoir préparé l'application à la capture par programmation et éventuellement configuré l'emplacement et le nom du fichier journal de graphisme, générez, puis exécutez ou déboguez l'application pour capturer les données ; ne démarrez pas Graphics Diagnostics à partir de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] quand vous utilisez l'API de capture par programmation. Le journal de graphisme est écrit à l'emplacement que vous avez spécifié. Si vous voulez conserver cette version du journal, déplacez-le à un autre emplacement ; à défaut, il sera remplacé quand vous exécuterez à nouveau l'application.  
   
 > [!TIP]
 >  Vous pouvez toujours capturer les informations graphiques manuellement pendant que vous utilisez la capture par programmation : il vous suffit d'appuyer sur **Impr. écran**pendant que l'application a le focus. Vous pouvez employer cette technique pour capturer des informations graphiques supplémentaires qui ne sont pas capturées par l'API de capture par programmation.  
   
 ## <a name="next-steps"></a>Étapes suivantes  
- Cette procédure pas à pas vous a montré comment capturer des informations graphiques par programmation. Pour franchir une étape supplémentaire, envisagez cette possibilité :  
+ Cette procédure pas à pas vous a montré comment capturer des informations graphiques par programmation. Pour franchir une étape supplémentaire, envisagez cette possibilité :  
   
 -   Découvrez comment analyser les informations graphiques capturées à l'aide des outils Graphics Diagnostics. Consultez [vue d’ensemble](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : Capture d’informations graphiques](../debugger/walkthrough-capturing-graphics-information.md)   
+ [Procédure pas à pas : capture d’informations graphiques](../debugger/walkthrough-capturing-graphics-information.md)   
  [Capturing Graphics Information](../debugger/capturing-graphics-information.md)   
  [Outil de capture en ligne de commande](../debugger/command-line-capture-tool.md)
-
-
-

@@ -2,7 +2,6 @@
 title: IEnumDebugPropertyInfo::Next | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 24835d4d17cacae44a3eb4593b6292ada4672ccb
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: b1568d2387422bebc86ce2b035ba997610833e85
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54096367"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58144522"
 ---
 # <a name="ienumdebugpropertyinfonext"></a>IEnumDebugPropertyInfo::Next
 Récupère un nombre spécifié de `DebugPropertyInfo` structures dans une séquence d’énumération.  
@@ -52,5 +51,5 @@ HRESULT Next (
  Retourne une liste valide `HRESULT`, généralement `S_OK`.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IEnumDebugPropertyInfo (Interface)](../../winscript/reference/ienumdebugpropertyinfo-interface.md)   
+ [IEnumDebugPropertyInfo Interface](../../winscript/reference/ienumdebugpropertyinfo-interface.md)   
  [Structure DebugPropertyInfo](../../winscript/reference/debugpropertyinfo-structure.md)

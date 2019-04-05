@@ -1,14 +1,9 @@
 ---
 title: Créer des vues personnalisées d’objets natifs | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - natvis
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: 2d9a177a-e14b-404f-a6af-49498eff0bd7
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ff03e5e07c07b4516009c7606f8a8ea183c57298
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6a863c0b393da0934c0f3ceb3b36084b953a81f3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732494"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938847"
 ---
 # <a name="create-custom-views-of-native-objects"></a>Créer des vues personnalisées d’objets natifs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -353,7 +348,7 @@ L'infrastructure Natvis de Visual Studio vous permet de personnaliser la façon 
 -   Si un nœud `Expand` est spécifié sans aucun nœud enfant en dessous, le type ne peut pas être développé dans les fenêtres du débogueur.  
 
 ####  <a name="BKMK_Item_expansion"></a> Expansion d'éléments  
- L'élément `Item` est le plus basique et le plus courant des éléments utilisés dans un nœud `Expand` . `Item` définit un seul élément enfant. Supposons, par exemple, que vous ayez une classe `CRect` avec des champs `top`, `left`, `right` et `bottom` et l'entrée de visualisation suivante :  
+ L'élément `Item` est le plus basique et le plus courant des éléments utilisés dans un nœud `Expand` . `Item` définit un seul élément enfant. Supposons, par exemple, que vous ayez une classe `CRect` avec des champs `top`, `left`, `right`et `bottom` et l'entrée de visualisation suivante :  
 
 ```xml  
 <Type Name="CRect">  
@@ -407,7 +402,7 @@ L'infrastructure Natvis de Visual Studio vous permet de personnaliser la façon 
 
    Vous pouvez maintenant utiliser l'opérateur `[]` avec une expansion `ArrayItems` , par exemple `vector[i]`. L'opérateur [] peut être utilisé avec n'importe quel visualisation d'un tableau unidimensionnel qui utilise `ArrayItems` ou `IndexListItems`,même si le type lui-même n'autorise pas cet opérateur (par exemple `CATLArray`).  
 
-   Il est également possible de spécifier des tableaux multidimensionnels. Le débogueur a juste besoin d'un peu plus d'informations pour afficher correctement les éléments enfants dans ce cas :  
+   Il est également possible de spécifier des tableaux multidimensionnels. Le débogueur a juste besoin d'un peu plus d'informations pour afficher correctement les éléments enfants dans ce cas :  
 
 ```xml  
 <Type Name="Concurrency::array&lt;*,*&gt;">  
@@ -432,7 +427,7 @@ L'infrastructure Natvis de Visual Studio vous permet de personnaliser la façon 
  ![Tableau à deux dimensions avec expansion ArrayItems](../debugger/media/dbg-natvis-expand-arrayitems-2d.png "DBG_NATVIS_Expand_ArrayItems_2D")  
 
 ####  <a name="BKMK_IndexListItems_expansion"></a> Expansion d'IndexListItems  
- Vous pouvez utiliser l'expansion `ArrayItems` , uniquement si les éléments du tableau sont disposés de façon contiguë en mémoire. Le débogueur atteint l'élément suivant tout simplement en incrémentant son pointeur vers l'élément actuel. Pour prendre en charge les cas où vous devez manipuler l'index du nœud de valeur, vous pouvez utiliser des nœuds `IndexListItems`. Voici une visualisation qui utilise le nœud `IndexListItems` :  
+ Vous pouvez utiliser l'expansion `ArrayItems` , uniquement si les éléments du tableau sont disposés de façon contiguë en mémoire. Le débogueur atteint l'élément suivant tout simplement en incrémentant son pointeur vers l'élément actuel. Pour prendre en charge les cas où vous devez manipuler l'index du nœud de valeur, vous pouvez utiliser des nœuds `IndexListItems` . Voici une visualisation qui utilise le nœud `IndexListItems` :  
 
 ```xml  
 <Type Name="Concurrency::multi_link_registry&lt;*&gt;">  
@@ -532,7 +527,7 @@ L'infrastructure Natvis de Visual Studio vous permet de personnaliser la façon 
 
 ```  
 
- La syntaxe est très similaire à celle du nœud `LinkedListItems`. `LeftPointer`, `RightPointer`et `ValueNode` sont évalués dans le contexte de la classe du nœud de l'arborescence et l'expression `ValueNode` peut être laissée vide ou utiliser `this` pour faire référence au nœud même de l'arborescence.  
+ La syntaxe est très similaire à celle du nœud `LinkedListItems` . `LeftPointer`, `RightPointer`et `ValueNode` sont évalués dans le contexte de la classe du nœud de l'arborescence et l'expression `ValueNode` peut être laissée vide ou utiliser `this` pour faire référence au nœud même de l'arborescence.  
 
 ####  <a name="BKMK_ExpandedItem_expansion"></a> Expansion d'ExpandedItem  
  L'élément `ExpandedItem` peut servir à générer un affichage agrégé des enfants en présentant les propriétés des classes de base ou des membres de données comme s'ils étaient des enfants du type visualisé. L'expression spécifiée est évaluée et les nœuds enfants du résultat sont ajoutés à la liste enfant du type visualisé. Supposons, par exemple, que vous ayez un type de pointeur intelligent `auto_ptr<vector<int>>` qui se présente généralement comme suit :  
@@ -632,12 +627,9 @@ L'infrastructure Natvis de Visual Studio vous permet de personnaliser la façon 
 </Type>  
 ```  
 
- Vous pouvez voir un exemple de UIVisualizer dans l’extension Image Watch utilisée pour afficher des images bitmap en mémoire : [ImageWatch](https://visualstudiogallery.msdn.microsoft.com/e682d542-7ef3-402c-b857-bbfba714f78d)  
+ Vous pouvez voir un exemple de UIVisualizer dans l’extension Image Watch utilisée pour afficher des images bitmap en mémoire : [ImageWatch](https://visualstudiogallery.msdn.microsoft.com/e682d542-7ef3-402c-b857-bbfba714f78d)  
 
 ### <a name="customvisualizer-element"></a>Élément CustomVisualizer  
  `CustomVisualizer` est un point d'extensibilité qui spécifie une extension VSIX que vous pouvez écrire pour contrôler la visualisation dans le code qui s'exécute dans Visual Studio. Pour plus d’informations sur l’écriture d’extensions VSIX, consultez [Visual Studio SDK](../extensibility/visual-studio-sdk.md). L'écriture d'un visualiseur personnalisé représente beaucoup plus de travail que l'écriture d'une définition natvis XML, mais vous êtes libre de toute contrainte relative à ce que natvis prend ou non en charge. Les visualiseurs personnalisés ont accès à l'ensemble des API d'extensibilité du débogueur, qui peuvent être utilisées pour interroger et modifier le processus du programme débogué ou pour communiquer avec d'autres parties de Visual Studio.  
 
  Vous pouvez utiliser les attributs `Condition`, `IncludeView`et `ExcludeView` sur les éléments CustomVisualizer.
-
-
-

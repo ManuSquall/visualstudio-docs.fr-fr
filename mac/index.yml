@@ -1,121 +1,110 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: b8f5921be45ead5ec97263c01b780c57cb1acb68
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318949"
 documentType: LandingData
-title: Documentation de Visual Studio pour Mac
+title: Documentation de Visual Studio 2019 pour Mac
 metadata:
   description: Cet article présente les fonctionnalités de Visual Studio pour Mac.
   author: conceptdev
   ms.author: crdun
-  ms.date: 02/06/2019
+  ms.date: 04/02/2019
   ms.topic: landing-page
   ms.prod: visual-studio-mac
   ms.technology: vs-ide-general
 sections:
-- title: Bien démarrer avec Visual Studio pour Mac
-  items:
-  - type: paragraph
-    text: Installez et découvrez l’environnement de développement intégré (IDE) de Visual Studio pour Mac.
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
+  - title: Bien démarrer avec Visual Studio pour Mac
     items:
-    - href: ~/installation.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_setup.svg
-      title: Installer Visual Studio pour Mac
-    - href: ~/ide-tour.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_vs-mac.svg
-      title: Visite guidée de Visual Studio pour Mac
-    - href: ~/installation.md?view=vsmac-2019
-      html: <p></p>
-      image:
-        src: ~/media/index-2019-preview.png
-      title: Essayez la préversion 2019 !
-- title: Quelles applications puis-je créer ?
-  items:
-  - type: paragraph
-    text: Avec Visual Studio pour Mac, vous pouvez créer des sites web avec ASP.NET Core et des applications avec .NET Core, des jeux avec Unity et des applications mobiles pour Android et iOS avec Xamarin. Azure peut être incorporé à toutes vos applications.
-  - type: list
-    style: icon48
+      - type: paragraph
+        text: Installez et découvrez l’environnement de développement intégré (IDE) de Visual Studio pour Mac.
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 2
+        items:
+          - href: ~/installation.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
+            title: Installer Visual Studio pour Mac
+          - href: ~/ide-tour.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_vs-mac.svg'
+            title: Visite guidée de Visual Studio pour Mac
+  - title: "Quelles applications puis-je créer\_?"
     items:
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_NETcore.svg
-      text: ASP.NET Core
-      href: ~/asp-net-core.md
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_azure.svg
-      text: Azure
-      href: ~/azure-workload.md
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_unity.svg
-      text: Unity
-      href: ~/unity-tools.md
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_xamarin.svg
-      text: Xamarin
-      href: /xamarin/
-- title: Quels langages puis-je utiliser ?
-  items:
-  - type: paragraph
-    text: Avec Visual Studio pour Mac, vous pouvez écrire en C#, F#, Razor, HTML5, CSS, Javascript et Typescript, XAML et XML.
-  - type: list
-    style: icon48
+      - type: paragraph
+        text: 'Avec Visual Studio pour Mac, vous pouvez créer des sites web avec ASP.NET Core et des applications avec .NET Core, des jeux avec Unity et des applications mobiles pour Android et iOS avec Xamarin. Azure peut être incorporé à toutes vos applications.'
+      - type: list
+        style: icon48
+        items:
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_NETcore.svg'
+            text: ASP.NET Core
+            href: ~/asp-net-core.md
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_azure.svg'
+            text: Azure
+            href: ~/azure-workload.md
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_unity.svg'
+            text: Unity
+            href: ~/unity-tools.md
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_xamarin.svg'
+            text: Xamarin
+            href: /xamarin/
+  - title: "Quels langages puis-je utiliser\_?"
     items:
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_Csharp.svg
-      text: C#
-      href: /dotnet/csharp/
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_Fsharp.svg
-      text: F#
-      href: /dotnet/fsharp/
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_js.svg
-      text: JavaScript
-      href: ~/javascript.md
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_TS.svg
-      text: TypeScript
-      href: ~/javascript.md
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_html5.svg
-      text: HTML/Razor
-      href: ~/razor.md
-- title: Écrire du code avec Visual Studio pour Mac
-  items:
-  - type: paragraph
-    text: Découvrez plus en détail comment utiliser Visual Studio pour écrire, compiler, déboguer et stocker votre code.
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
+      - type: paragraph
+        text: 'Avec Visual Studio pour Mac, vous pouvez écrire en C#, F#, Razor, HTML5, CSS, Javascript et Typescript, XAML et XML.'
+      - type: list
+        style: icon48
+        items:
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_Csharp.svg'
+            text: 'C#'
+            href: /dotnet/csharp/
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_Fsharp.svg'
+            text: 'F#'
+            href: /dotnet/fsharp/
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_js.svg'
+            text: JavaScript
+            href: ~/javascript.md
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_TS.svg'
+            text: TypeScript
+            href: ~/javascript.md
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_html5.svg'
+            text: HTML/Razor
+            href: ~/razor.md
+  - title: Écrire du code avec Visual Studio pour Mac
     items:
-    - href: ~/source-editor.md
-      html: <p>IntelliSense, refactorisation et coloration syntaxique pour votre langage préféré.</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_code-edit.svg
-      title: Écrire du code
-    - href: ~/compiling-and-building.md
-      html: <p>Configurez votre compilateur et créez votre application.</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_build.svg
-      title: Compiler et générer
-    - href: ~/debugging.md
-      html: <p>Exécutez votre application sous le débogueur pour examiner les problèmes.</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_debug.svg
-      title: Débogage
-    - href: ~/version-control.md
-      html: <p>Accédez à des dépôts sources Azure DevOps, Git ou Subversion.</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_pull-request.svg
-      title: Gestion de version
+      - type: paragraph
+        text: 'Découvrez plus en détail comment utiliser Visual Studio pour écrire, compiler, déboguer et stocker votre code.'
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: ~/source-editor.md
+            html: '<p>IntelliSense, refactorisation et coloration syntaxique pour votre langage préféré.</p>'
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_code-edit.svg'
+            title: Écrire du code
+          - href: ~/compiling-and-building.md
+            html: <p>Configurez votre compilateur et créez votre application.</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_build.svg'
+            title: Compiler et générer
+          - href: ~/debugging.md
+            html: <p>Exécutez votre application sous le débogueur pour examiner les problèmes.</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_debug.svg'
+            title: Débogage
+          - href: ~/version-control.md
+            html: '<p>Accédez à des dépôts sources Azure DevOps, Git ou Subversion.</p>'
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_pull-request.svg'
+            title: Gestion de version

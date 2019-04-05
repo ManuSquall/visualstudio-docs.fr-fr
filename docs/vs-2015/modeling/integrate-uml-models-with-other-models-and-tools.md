@@ -1,25 +1,22 @@
 ---
 title: Intégrer des modèles UML avec d’autres modèles et outils | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, references to models
 ms.assetid: 9e75e7d1-93cf-4196-baa3-bd10b9af16d3
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d1cc5a26a9c2febb0dd1dff3c0d14ba3786dde9f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1a8b67e5c784e24b1af71089d33e7db60cb1f92c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764137"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953020"
 ---
 # <a name="integrate-uml-models-with-other-models-and-tools"></a>Intégrer des modèles UML à d'autres modèles et outils
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +40,7 @@ Les modèles UML peuvent être intégrés à d'autres modèles et à des langage
   
    Pour plus d’informations, consultez [définir un profil pour étendre UML](../modeling/define-a-profile-to-extend-uml.md).  
   
-   Pour un exemple de projet dans lequel un profil est déployé avec les commandes de menu et des gestionnaires de mouvements, consultez [exemple : profils UML](http://go.microsoft.com/fwlink/?LinkID=213811).  
+   Pour un exemple de projet dans lequel un profil est déployé avec les commandes de menu et des gestionnaires de mouvements, consultez [exemple : Les profils UML](http://go.microsoft.com/fwlink/?LinkID=213811).  
   
 - **Références.** Vous pouvez attacher un ensemble de chaînes à n'importe quel élément UML. Vous pouvez écrire du code qui stocke des informations telles qu'un nom de fichier ou le GUID d'un autre élément. Pour cela, nul besoin de fournir des définitions supplémentaires. Les références ne sont pas directement visibles par l'utilisateur.  
   
@@ -68,12 +65,12 @@ Les modèles UML peuvent être intégrés à d'autres modèles et à des langage
   
 2. **Événements VMSDK** peut être utilisé pour propager les modifications en dehors du modèle – par exemple, pour modifier le nom de fichier d’un document lié ou pour modifier un élément dans un autre modèle.  
   
-   Pour plus d’informations sur ces deux mécanismes, consultez [Comment : répondre aux modifications dans un modèle UML](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
+   Pour plus d’informations sur ces deux mécanismes, consultez [Comment : Répondre aux modifications dans un modèle UML](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
   
    Faire glisser les éléments pour les copier d'un modèle à un autre  
    Vous pouvez laisser l'utilisateur créer des éléments en les faisant glisser sur un diagramme UML. Il n'est pas obligatoire que l'élément créé soit une copie de l'original. Vous pouvez par exemple laisser l'utilisateur faire glisser un diagramme d'activités de l'Explorateur de solutions vers un autre diagramme d'activités pour créer une nouvelle action.  
   
-   Pour plus d’informations, consultez [définir un gestionnaire de mouvements sur un diagramme de modélisation](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) et [Comment : ajouter un gestionnaire glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md).  
+   Pour plus d’informations, consultez [définir un gestionnaire de mouvements sur un diagramme de modélisation](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) et [Comment : Ajouter un gestionnaire glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
 ## <a name="samples"></a>Exemples  
  Consultez l’exemple de code [Link UML Elements to Diagrams or autres Files](http://go.microsoft.com/fwlink/?LinkId=213813). Cet exemple permet aux utilisateurs de faire glisser un fichier sur n'importe quel élément UML et d'ouvrir ultérieurement le fichier en double-cliquant sur l'élément. Vous pouvez par exemple lier un diagramme d'activités à un élément de cas d'usage. Une icône indique les éléments qui ont des liens.  
@@ -88,7 +85,7 @@ Les modèles UML peuvent être intégrés à d'autres modèles et à des langage
   
    L'exemple ajoute un élément décoratif d'image aux formes UML.  
   
-- [Guide pratique pour répondre à des modifications dans un modèle UML](../misc/how-to-respond-to-changes-in-a-uml-model.md)  
+- [Guide pratique pour Répondre aux modifications dans un modèle UML](../misc/how-to-respond-to-changes-in-a-uml-model.md)  
   
    L'exemple montre comment définir une règle qui répond à l'apparition de nouvelles formes sur un diagramme.  
   
@@ -98,15 +95,12 @@ Les modèles UML peuvent être intégrés à d'autres modèles et à des langage
   
    L'exemple montre comment gérer les éléments déplacés à partir de l'Explorateur Windows (ou de l'Explorateur de fichiers), de l'Explorateur de solutions et d'autres éléments UML.  
   
-  Pour un exemple dans lequel un modèle UML est lue par un DSL, consultez [Comment : ajouter un gestionnaire glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md).  
+  Pour un exemple dans lequel un modèle UML est lue par un DSL, consultez [Comment : Ajouter un gestionnaire glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Définir une commande de menu sur un diagramme de modélisation](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [Définir un gestionnaire de mouvements sur un diagramme de modélisation](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)   
- [Comment : ajouter un gestionnaire glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md)   
- [Comment : répondre aux modifications dans un modèle UML](../misc/how-to-respond-to-changes-in-a-uml-model.md)   
- [Exemple : Les profils UML](http://go.microsoft.com/fwlink/?LinkID=213811)   
+ [Guide pratique pour Ajouter un gestionnaire glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md)   
+ [Guide pratique pour Répondre aux modifications dans un modèle UML](../misc/how-to-respond-to-changes-in-a-uml-model.md)   
+ [Exemple : Profils UML](http://go.microsoft.com/fwlink/?LinkID=213811)   
  [Link UML Elements to Diagrams or other Files](http://go.microsoft.com/fwlink/?LinkId=213813)
-
-
-

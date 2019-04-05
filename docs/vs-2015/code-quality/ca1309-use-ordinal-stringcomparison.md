@@ -1,14 +1,9 @@
 ---
-title: 'CA1309 : Utiliser StringComparison avec la valeur ordinale | Microsoft Docs'
-ms.custom: ''
+title: 'CA1309 : Utiliser StringComparison avec la valeur ordinale | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UseOrdinalStringComparison
 - CA1309
@@ -20,12 +15,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a239d8c40a07e92ee46c2d27bf3276e9b8bba2ca
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7b491cf06528b67c96f90f314210e61800e0cab1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885015"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948028"
 ---
 # <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309 : Utiliser StringComparison avec la valeur Ordinal
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,4 @@ ms.locfileid: "49885015"
  Il est possible de supprimer un avertissement de cette règle lorsque la bibliothèque ou l’application est destiné à une audience locale limitée ou lorsque la sémantique de la culture actuelle doit être utilisée sans.
 
 ## <a name="see-also"></a>Voir aussi
- [Avertissements de globalisation](../code-quality/globalization-warnings.md) [CA1307 : spécifier StringComparison](../code-quality/ca1307-specify-stringcomparison.md)
-
-
-
+ [Avertissements de globalisation](../code-quality/globalization-warnings.md) [CA1307 : Spécifier StringComparison](../code-quality/ca1307-specify-stringcomparison.md)

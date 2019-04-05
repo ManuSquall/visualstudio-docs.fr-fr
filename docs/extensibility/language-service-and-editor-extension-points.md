@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15ccf8ab1b3f2fa97faaae5b97c47ac3179a672d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0c80ee3cebe003eff7248626f0d8e27b3c179453
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679383"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323803"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Points d’extension éditeur et le service de langage
 L’éditeur fournit des points d’extension que vous pouvez étendre en tant que parties de composant Managed Extensibility Framework (MEF), y compris la plupart des fonctionnalités de service de langage. Voici les catégories de point d’extension principal :
@@ -260,7 +260,7 @@ internal IEditorFormatMapService FormatMapService { get; set; }
 
   L’exemple suivant montre les attributs d’exportation sur un fournisseur de baliseur.
 
-<CodeContentPlaceHolder>8</CodeContentPlaceHolder> les types de balise suivants sont intégrés :
+\<CodeContentPlaceHolder > 8</CodeContentPlaceHolder> les types de balise suivants sont intégrés :
 
 - <xref:Microsoft.VisualStudio.Text.Tagging.ClassificationTag>: associé à un <xref:Microsoft.VisualStudio.Text.Classification.IClassificationType>.
 

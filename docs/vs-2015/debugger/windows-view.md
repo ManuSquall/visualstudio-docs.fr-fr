@@ -1,14 +1,9 @@
 ---
 title: Affichage de Windows | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.windowsview
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 154786ce-c803-4bfb-8198-f7962a900363
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e297e43c25a2e72412c84e5cc01d3b59436f83dc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 636feaa6d7d29b016012cb17cf5a333133680509
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778480"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950907"
 ---
 # <a name="windows-view"></a>Vue Fenêtres
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +35,13 @@ Vue Fenêtres Spy++
  Lorsque la vue de Windows a le focus, vous pouvez utiliser l’outil de recherche dans les [boîte de dialogue de recherche de fenêtre](../debugger/window-search-dialog-box.md) pour afficher des informations à partir de n’importe quelle fenêtre ouverte sur votre système.  
   
 ## <a name="in-this-section"></a>Dans cette section  
- [Guide pratique pour utiliser l’outil Recherche](../debugger/how-to-use-the-finder-tool.md)  
+ [Guide pratique pour utiliser l’outil de recherche](../debugger/how-to-use-the-finder-tool.md)  
  Montre comment cet outil analyse windows pour les propriétés ou les messages.  
   
  [Guide pratique pour rechercher une fenêtre dans la vue Fenêtres](../debugger/how-to-search-for-a-window-in-windows-view.md)  
  Explique comment rechercher une fenêtre spécifique dans la vue de Windows.  
   
- [Comment : afficher les propriétés de la fenêtre](../debugger/how-to-display-window-properties.md) m  
+ [Guide pratique pour Afficher les propriétés de la fenêtre](../debugger/how-to-display-window-properties.md) m  
  Procédures pour ouvrir la boîte de dialogue Propriétés de la fenêtre.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
@@ -67,6 +62,3 @@ Vue Fenêtres Spy++
   
  [Informations de référence sur Spy++](../debugger/spy-increment-reference.md)  
  Inclut des sections décrivant chaque Spy ++ menu et boîte de dialogue.
-
-
-

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a6b8a01151e192c4c92f8e8264d45b70d1fba85
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 524d50a946091325be5c27bd7ae55dd5dc720a1d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323421"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415694"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Génération de code durant la conception à l'aide de modèles de texte T4
 Modèles de texte T4 au moment du design vous permettent de générer du code de programme et d’autres fichiers dans votre projet Visual Studio. En règle générale, vous écrivez les modèles pour qu’ils varient le code qu’ils génèrent en fonction des données à partir d’un *modèle*. Un modèle est un fichier ou une base de données qui contient des informations clés sur les exigences de votre application.
@@ -28,19 +28,15 @@ Modèles de texte T4 au moment du design vous permettent de générer du code de
  Par exemple, vous pourriez avoir un modèle qui définit un flux de travail sous la forme d'un tableau ou d'un diagramme. À partir du modèle, vous pouvez générer le logiciel qui exécute le flux de travail. Lorsque les besoins de vos utilisateurs changent, il est facile de discuter du nouveau flux de travail avec les utilisateurs. La regénération du code à partir du flux de travail est plus fiable que la mise à jour manuelle du code.
 
 > [!NOTE]
->  Un *modèle* est une source de données qui décrit un aspect particulier d’une application. Il peut assumer n'importe quelle forme, dans n'importe quel genre de fichier ou de base de données. Il n'est pas obligatoire qu'il soit dans un format spécifique, tel qu'un modèle UML ou un modèle de langage spécifique à un domaine. Les modèles les plus courants assument la forme de tableaux ou de fichiers XML.
+>  Un *modèle* est une source de données qui décrit un aspect particulier d’une application. Il peut assumer n'importe quelle forme, dans n'importe quel genre de fichier ou de base de données. Il n’est pas obligatoire qu’il soit dans un format spécifique, tel qu’un modèle UML ou un modèle de langage spécifique à un domaine. Les modèles les plus courants assument la forme de tableaux ou de fichiers XML.
 
  Vous connaissez sans doute déjà le concept de génération de code. Lorsque vous définissez des ressources dans un **.resx** fichier dans votre solution Visual Studio, un ensemble de classes et méthodes est généré automatiquement. Le fichier de ressources simplifie et rend plus fiable la modification des ressources, par rapport à la modification manuelle des classes et des méthodes. Avec les modèles de texte, vous pouvez générer du code de la même façon à partir d'une source que vous avez conçue vous-même.
 
- Un modèle de texte contient une combinaison du texte que vous souhaitez générer et du code de programme qui génère des parties variables du texte. Le code de programme vous permet de répéter ou d'omettre de manière conditionnelle des parties du texte généré. Le texte généré peut lui-même être du code de programme qui constituera une partie de votre application.
+ Un modèle de texte contient une combinaison du texte que vous souhaitez générer et du code de programme qui génère des parties variables du texte. Le code de programme vous permet de répéter ou omettre les parties du texte généré de manière conditionnelle. Le texte généré peut lui-même être du code de programme qui constituera une partie de votre application.
 
-## <a name="creating-a-design-time-t4-text-template"></a>Création d'un modèle de texte T4 au moment de la conception
+## <a name="create-a-design-time-t4-text-template"></a>Créer un modèle de texte T4 au moment du Design
 
-#### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>Pour créer un modèle T4 au moment de la conception dans Visual Studio
-
-1. Créer un projet Visual Studio, ou ouvrez-en une existante.
-
-    Par exemple, sur le **fichier** menu, choisissez **New** > **projet**.
+1. Créez un projet Visual Studio, ou ouvrez-en une existante.
 
 2. Ajouter un fichier de modèle de texte à votre projet et donnez-lui un nom qui a l’extension **.tt**.
 
@@ -57,7 +53,7 @@ Modèles de texte T4 au moment du design vous permettent de générer du code de
 
     Si vous avez ajouté le modèle à un projet [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], l'attribut de langage est « `VB` ».
 
-4. Ajoutez du texte à la fin du fichier. Par exemple :
+4. Ajoutez du texte à la fin du fichier. Exemple :
 
    ```
    Hello, world!
@@ -70,10 +66,11 @@ Modèles de texte T4 au moment du design vous permettent de générer du code de
 6. Dans **l’Explorateur de solutions**, développez le nœud de fichier de modèle et vous trouverez un fichier portant l’extension **.txt**. Ce fichier contient le texte généré à partir du modèle.
 
    > [!NOTE]
-   >  Si votre projet est un projet Visual Basic, vous devez cliquer sur **afficher tous les fichiers** afin de voir le fichier de sortie.
+   > Si votre projet est un projet Visual Basic, vous devez cliquer sur **afficher tous les fichiers** afin de voir le fichier de sortie.
 
-### <a name="regenerating-the-code"></a>Regénération du code
- Un modèle est exécuté, générant le fichier auxiliaire, dans les cas suivants :
+### <a name="regenerate-the-code"></a>Régénérer le code
+
+Un modèle est exécuté, générant le fichier auxiliaire, dans les cas suivants :
 
 - Modifier le modèle, puis modifiez le focus vers une autre fenêtre de Visual Studio.
 
@@ -83,12 +80,11 @@ Modèles de texte T4 au moment du design vous permettent de générer du code de
 
 - Dans **l’Explorateur de solutions**, dans le menu contextuel de n’importe quel fichier, choisissez **exécuter un outil personnalisé**. Appliquez cette méthode pour transformer un sous-ensemble de modèles sélectionné.
 
-  Vous pouvez également configurer un projet Visual Studio afin que les modèles sont exécutées lorsque les fichiers de données qu’ils lisent ont changé. Pour plus d’informations, consultez [regénération automatique du code](#Regenerating).
+Vous pouvez également configurer un projet Visual Studio afin que les modèles sont exécutées lorsque les fichiers de données qu’ils lisent ont changé. Pour plus d’informations, consultez [regénération automatique du code](#Regenerating).
 
-## <a name="generating-variable-text"></a>Génération de texte variable
- Les modèles de texte vous permettent d'utiliser du code de programme pour varier le contenu du fichier généré.
+## <a name="generate-variable-text"></a>Générer du texte Variable
 
-#### <a name="to-generate-text-by-using-program-code"></a>Pour générer du texte à l'aide de code de programme
+Les modèles de texte vous permettent d'utiliser du code de programme pour varier le contenu du fichier généré.
 
 1. Modifiez le contenu du fichier `.tt` :
 
@@ -125,7 +121,7 @@ Modèles de texte T4 au moment du design vous permettent de générer du code de
 ## <a name="debugging-a-design-time-t4-text-template"></a>Débogage d'un modèle de texte T4 au moment de la conception
  Pour déboguer un modèle de texte
 
-- Insérez `debug="true"` dans la directive `template`. Par exemple :
+- Insérez `debug="true"` dans la directive `template`. Exemple :
 
    `<#@ template debug="true" hostspecific="false" language="C#" #>`
 
@@ -141,7 +137,7 @@ Modèles de texte T4 au moment du design vous permettent de générer du code de
 >  Mais vous pouvez laisser la clause dans la directive de modèle même quand vous ne déboguez pas. Cela ne provoque qu'une très faible dégradation des performances.
 
 ## <a name="generating-code-or-resources-for-your-solution"></a>Génération de code ou de ressources pour votre solution
- Vous pouvez générer des fichiers programmes qui varient en fonction d'un modèle. Un modèle est une entrée telle qu'une base de données, un fichier de configuration, un modèle UML, un modèle DSL ou autre source. En général, plusieurs fichiers programmes sont générés à partir du même modèle. Pour cela, vous devez créer un fichier de modèle pour chaque fichier programme généré et faire en sorte que tous les modèles lisent le même modèle.
+ Vous pouvez générer des fichiers programmes qui varient en fonction d'un modèle. Un modèle est une entrée telle qu'une base de données, un fichier de configuration, un modèle UML, un modèle DSL ou autre source. Généralement, vous générez plusieurs fichiers de programme à partir du même modèle. Pour cela, vous devez créer un fichier de modèle pour chaque fichier programme généré et faire en sorte que tous les modèles lisent le même modèle.
 
 #### <a name="to-generate-program-code-or-resources"></a>Pour générer du code de programme ou des ressources
 
@@ -268,7 +264,7 @@ Modèles de texte T4 au moment du design vous permettent de générer du code de
  Le type de `this.Host` (en VB, `Me.Host`) est `Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost`.
 
 ### <a name="getting-data-from-visual-studio"></a>Obtention de données à partir de Visual Studio
- Pour utiliser les services fournis dans Visual Studio, définissez le `hostSpecific` attribut et charge le `EnvDTE` assembly. Importation `Microsoft.VisualStudio.TextTemplating`, qui contient le `GetCOMService()` méthode d’extension.  Vous pouvez ensuite utiliser IServiceProvider.GetCOMService() pour accéder à DTE et d'autres services. Par exemple :
+ Pour utiliser les services fournis dans Visual Studio, définissez le `hostSpecific` attribut et charge le `EnvDTE` assembly. Importation `Microsoft.VisualStudio.TextTemplating`, qui contient le `GetCOMService()` méthode d’extension.  Vous pouvez ensuite utiliser IServiceProvider.GetCOMService() pour accéder à DTE et d'autres services. Exemple :
 
 ```src
 <#@ template hostspecific="true" language="C#" #>
@@ -365,7 +361,7 @@ Warning("A warning message");
 
 6. Enregistrez le fichier.
 
-    Un fichier auxiliaire est créé, avec l'extension spécifiée. Ses propriétés sont correctes pour le type de fichier. Par exemple, le **Action de génération** propriété d’un fichier .cs serait **compiler**.
+    Un fichier auxiliaire est créé, avec l’extension spécifiée. Ses propriétés sont correctes pour le type de fichier. Par exemple, le **Action de génération** propriété d’un fichier .cs serait **compiler**.
 
     Vérifiez que le contenu du fichier généré est identique à celui du fichier d'origine.
 

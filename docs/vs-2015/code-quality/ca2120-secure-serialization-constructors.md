@@ -1,14 +1,9 @@
 ---
-title: 'CA2120 : Sécuriser des constructeurs de sérialisation | Microsoft Docs'
-ms.custom: ''
+title: 'CA2120 : Sécuriser des constructeurs de sérialisation | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2120
 - SecureSerializationConstructors
@@ -20,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3bc919d8ea9186a5b0fff6bdd23efa7da1bd8b17
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ea70b7f9462e3195a78b915691a5069ebd6fe6aa
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834187"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "59000424"
 ---
 # <a name="ca2120-secure-serialization-constructors"></a>CA2120 : Sécurisez les constructeurs de sérialisation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,11 +52,8 @@ ms.locfileid: "49834187"
 ## <a name="related-rules"></a>Règles associées
  [CA2229 : Implémentez des constructeurs de sérialisation](../code-quality/ca2229-implement-serialization-constructors.md)
 
- [CA2237 : Marquez les types ISerializable avec SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+ [CA2237 : Marquer les types ISerializable avec SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
 ## <a name="see-also"></a>Voir aussi
  <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>
  <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>
-
-
-

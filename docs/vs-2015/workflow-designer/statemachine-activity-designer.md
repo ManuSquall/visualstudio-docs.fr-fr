@@ -1,11 +1,8 @@
 ---
 title: Concepteur d’activités StateMachine | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - StateMachine Designer
@@ -14,16 +11,16 @@ ms.assetid: 474d5fb3-1049-4b3f-bc6b-7524dbbe1672
 caps.latest.revision: 5
 author: steved0x
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 18f7cc5eb88265de1250e4a06f78b13bcc419fb7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 96965a2b0861e7c4df4a43e4d258afc0a48090bd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301403"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949082"
 ---
 # <a name="statemachine-activity-designer"></a>Concepteur d'activités StateMachine
-L’activité <xref:System.Activities.Statements.StateMachine> contient une collection d’états et modélise les workflows à l’aide du modèle familier de machine à états.  
+L'activité <xref:System.Activities.Statements.StateMachine> contient une collection d'états et modélise les workflows à l'aide du modèle familier de machine à états.  
   
 ## <a name="using-the-statemachine-activity-designer"></a>Utilisation du concepteur d'activités StateMachine  
  Pour ajouter un <xref:System.Activities.Statements.StateMachine> activité, faites glisser le **StateMachine** Concepteur d’activités à partir de la **Machine à états** section de la **boîte à outils** et déposez-le sur le [!INCLUDE[wfd1](../includes/wfd1-md.md)] surface. Pour ajouter un état de l’enfant à cette <xref:System.Activities.Statements.StateMachine> activité, faites glisser un <xref:System.Activities.Statements.State> ou <xref:System.Activities.Core.Presentation.FinalState> à partir de la **boîte à outils** et déposez-le sur le **StateMachine**.  

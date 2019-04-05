@@ -1,26 +1,21 @@
 ---
 title: Modification du Shell isolé à l’aide de le. Fichier VSCT | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, isolated mode%2C .vsct file
 ms.assetid: 6d147c2d-10e9-400e-b8ce-5566287b41ba
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0eb5b110386f4a696c228e746223d745df6b18f7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8c106a04e809e772ac3b8a77192fb2f101161e9c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817605"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952613"
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-vsct-file"></a>Modification du Shell isolé à l’aide de le. Fichier VSCT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ Le projet de l’interface utilisateur pour un projet de shell isolé Visual Stu
   
 ```  
   
- Pour une plus détaillée exemple ces personnalisations, consultez [procédure pas à pas : création d’une Application Shell isolée de base](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+ Pour une plus détaillée exemple ces personnalisations, consultez [procédure pas à pas : Création d’un base d’Application Shell isolée](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ## <a name="referenced-files"></a>Fichiers référencés  
  Le fichier .vsct par défaut pour une application référence les fichiers suivants. Ces fichiers se trouvent dans le sous-répertoire \VisualStudioIntegration\Common\Inc\ du répertoire d’installation de Visual Studio SDK.  
@@ -63,4 +58,3 @@ Le projet de l’interface utilisateur pour un projet de shell isolé Visual Stu
   
 ## <a name="see-also"></a>Voir aussi  
  [Shell isolé Visual Studio](../extensibility/visual-studio-isolated-shell.md)
-

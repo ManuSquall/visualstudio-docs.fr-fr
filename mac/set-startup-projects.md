@@ -5,19 +5,21 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 02/21/2019
 ms.topic: conceptual
-ms.prod: visual-studio-mac-dev16
+ms.prod: visual-studio-mac
 ms.assetid: fd354fff-ce6b-4505-a815-84a2311e39ba
-ms.openlocfilehash: 84581fb3f6e33d22f0895b807998120ea7ca0cb7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 65b44dddfdadcb7ef38332fa35443dbaeededb5d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56724045"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58152913"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>Procédure : Définir plusieurs projets de démarrage
+
 Visual Studio pour Mac vous permet de spécifier le mode de démarrage de plusieurs projets quand vous déboguez ou exécutez votre solution.
 
 ## <a name="to-set-multiple-startup-projects"></a>Pour définir plusieurs projets de démarrage
+
 1.  Dans le **Panneau Solutions**, sélectionnez la solution (nœud supérieur).
 
 2. Choisissez le menu contextuel (clic droit) du nœud de la solution, puis choisissez **Définir les projets de démarrage**.

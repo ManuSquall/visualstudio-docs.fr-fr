@@ -1,26 +1,21 @@
 ---
 title: IDebugAlias2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugAlias2 interface
 ms.assetid: 5252dcbb-8bfe-4d8a-a8e5-b022b194df19
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7e696b897e19127c6f805a621f1cac9915e07aa1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2349203c49bc164bb3af6bcf51e39afb56022be0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762782"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951248"
 ---
 # <a name="idebugalias2"></a>IDebugAlias2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -50,9 +45,8 @@ IDebugAlias2 : IDebugAlias
  Un alias est un nombre décimal sous forme de chaîne suivie du caractère #, par exemple, 1001#.  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : Ee.h  
+ En-tête : EE.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
-
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll

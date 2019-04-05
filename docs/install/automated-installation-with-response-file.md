@@ -1,7 +1,7 @@
 ---
 title: Automatiser l’installation avec un fichier réponse
 description: Découvrez comment créer un fichier réponse JSON qui vous aide à automatiser l’installation de Visual Studio
-ms.date: 08/14/2017
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58c8d580ace576f7b2a4512e5bc91f83529fba77
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: eb822a275f55b8c0f833f0c284aba2fd663a27fd
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939578"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790574"
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>Guide pratique pour définir des paramètres dans un fichier réponse
 
@@ -48,6 +50,8 @@ Vous pouvez mettre à jour le fichier `response.json` qui est créé dans un dos
 
 Le fichier `response.json` de base dans une disposition doit ressembler à l’exemple suivant, à ceci près qu’il doit inclure la valeur du produit et du canal que vous souhaitez installer :
 
+::: moniker range="vs-2017"
+
 ```json
 {
   "installChannelUri": ".\\ChannelManifest.json",
@@ -58,11 +62,29 @@ Le fichier `response.json` de base dans une disposition doit ressembler à l’e
 }
 ```
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+```json
+{
+  "installChannelUri": ".\\ChannelManifest.json",
+  "channelUri": "https://aka.ms/vs/16/release/channel",
+  "installCatalogUri": ".\\Catalog.json",
+  "channelId": "VisualStudio.16.Release",
+  "productId": "Microsoft.VisualStudio.Product.Enterprise"
+}
+```
+
+::: moniker-end
+
 Lorsque vous créez ou mettez à jour une disposition, un fichier response.template.json est également créé.  Ce fichier contient tous les ID de charge de travail, de composant et de langue qu’il est possible d’utiliser.  Ce fichier est fourni en tant que modèle pour tout ce qui peut être inclus dans une installation personnalisée.  Les administrateurs peuvent utiliser ce fichier comme point de départ d’un fichier réponse personnalisé.  Supprimez simplement les ID des éléments que vous ne souhaitez pas installer et enregistrez-le dans votre propre fichier réponse.  Ne personnalisez pas le fichier response.template.json, sinon vos modifications sont perdues chaque fois que la disposition est mise à jour.
 
 ## <a name="example-layout-response-file-content"></a>Exemple de contenu de fichier réponse dans la disposition
 
 L’exemple suivant installe Visual Studio Enterprise avec six charges de travail et composants courants, ainsi que les langues d’interface utilisateur Anglais et Français. Vous pouvez utiliser cet exemple comme modèle ; il vous suffit de remplacer les charges de travail et les composants par ceux que vous voulez installer :
+
+::: moniker range="vs-2017"
 
 ```json
 {
@@ -95,8 +117,45 @@ L’exemple suivant installe Visual Studio Enterprise avec six charges de travai
 }
 ```
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+```json
+{
+  "installChannelUri": ".\\ChannelManifest.json",
+  "channelUri": "https://aka.ms/vs/16/release/channel",
+  "installCatalogUri": ".\\Catalog.json",
+  "channelId": "VisualStudio.16.Release",
+  "productId": "Microsoft.VisualStudio.Product.Enterprise",
+
+  "installPath": "C:\\VS2019",
+  "quiet": false,
+  "passive": false,
+  "includeRecommended": true,
+  "norestart": false,
+
+  "addProductLang": [
+    "en-US",
+    "fr-FR"
+    ],
+
+    "add": [
+        "Microsoft.VisualStudio.Workload.ManagedDesktop",
+        "Microsoft.VisualStudio.Workload.Data",
+        "Microsoft.VisualStudio.Workload.NativeDesktop",
+        "Microsoft.VisualStudio.Workload.NetWeb",
+        "Microsoft.VisualStudio.Workload.Office",
+        "Microsoft.VisualStudio.Workload.Universal",
+        "Component.GitHub.VisualStudio"
+    ]
+}
+```
+
+::: moniker-end
+
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Voir aussi
 
-* [ID de charge de travail et de composant Visual Studio 2017](workload-and-component-ids.md)
+* [ID de charge de travail et de composant Visual Studio](workload-and-component-ids.md)

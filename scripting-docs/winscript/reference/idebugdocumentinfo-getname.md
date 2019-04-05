@@ -2,7 +2,6 @@
 title: IDebugDocumentInfo::GetName | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f3ecde4fbde1a265596a01d7f0f953763363e797
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 9975563c27b986190fbd2731c3f36b1e32719c0b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54097693"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58160324"
 ---
 # <a name="idebugdocumentinfogetname"></a>IDebugDocumentInfo::GetName
 Retourne le nom de document spécifié.  
@@ -56,5 +55,5 @@ HRESULT GetName(
  Cette méthode retourne le nom de document spécifié.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDebugDocumentInfo (Interface)](../../winscript/reference/idebugdocumentinfo-interface.md)   
+ [IDebugDocumentInfo Interface](../../winscript/reference/idebugdocumentinfo-interface.md)   
  [Énumération DOCUMENTNAMETYPE](../../winscript/reference/documentnametype-enumeration.md)

@@ -1,14 +1,9 @@
 ---
 title: Anatomie d’un Package VSIX | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - visual studio extension
 - vsix
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e1534c13c6c09a95fab21582ba0016153d1a6992
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d4e46a74651a838a2f9badfc8b9d43d00250ea1c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806982"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950873"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomie d’un package VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ Un package VSIX est un fichier .vsix contenant une ou plusieurs extensions de Vi
 >  Les noms des fichiers inclus dans les packages VSIX ne doivent pas inclure les espaces, ni les caractères réservés dans les identificateurs URI (Uniform Resource), comme définis sous [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
   
 ## <a name="the-vsix-manifest"></a>Le manifeste VSIX  
- Le manifeste VSIX contient des informations sur l’extension à installer et suit le schéma VSX. Pour plus d’informations, consultez [VSIX Extension schéma 1.0 référence](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). Pour un exemple de manifeste VSIX, consultez [PackageManifest Element (Root Element, VSX Schema)](http://msdn.microsoft.com/en-us/f8ae42ba-775a-4d2b-976a-f556e147f187).  
+ Le manifeste VSIX contient des informations sur l’extension à installer et suit le schéma VSX. Pour plus d’informations, consultez [VSIX Extension schéma 1.0 référence](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). Pour un exemple de manifeste VSIX, consultez [PackageManifest Element (Root Element, VSX Schema)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
   
  Le manifeste VSIX doit être nommé `extension.vsixmanifest` quand il est inclus dans un fichier .vsix.  
   
@@ -50,7 +45,7 @@ Un package VSIX est un fichier .vsix contenant une ou plusieurs extensions de Vi
   
  Si un utilisateur tente d’installer une extension qui a des dépendances, le programme d’installation vérifie que les assemblys requis sont installés sur le système de l’utilisateur. Si les assemblys requis sont introuvables, **Extensions et mises à jour** affiche une liste des assemblys manquants.  
   
- Si le manifeste d’extension contient un ou plusieurs [référence](http://msdn.microsoft.com/en-us/32c52934-e81e-4b53-8cb6-4df45ef7bfa8) éléments, **Extensions et mises à jour** compare le manifeste de chaque référence pour les extensions qui sont installés sur le système et installe le extension référencée s’il n’est pas déjà installé. Si une version antérieure d’une extension référencée est installée, la version plus récente remplace.  
+ Si le manifeste d’extension contient un ou plusieurs [référence](http://msdn.microsoft.com/32c52934-e81e-4b53-8cb6-4df45ef7bfa8) éléments, **Extensions et mises à jour** compare le manifeste de chaque référence pour les extensions qui sont installés sur le système et installe le extension référencée s’il n’est pas déjà installé. Si une version antérieure d’une extension référencée est installée, la version plus récente remplace.  
   
  Si un projet dans une solution à projets multiples inclut une référence à un autre projet dans la même solution, le package VSIX inclut les dépendances de ce projet. Vous pouvez substituer ce comportement en cliquant sur la référence pour le projet interne, puis, dans le **propriétés** fenêtre, en définissant le **sortie groupes inclus dans le VSIX** propriété `BuiltProjectOutputGroup`.  
   
@@ -59,10 +54,9 @@ Un package VSIX est un fichier .vsix contenant une ou plusieurs extensions de Vi
 ## <a name="installation-location"></a>Emplacement d'installation  
  Pendant l’installation, **Extensions et mises à jour** recherche le contenu du package VSIX dans un dossier sous % LocalAppData%\Microsoft\VisualStudio\14.0\Extensions.  
   
- Par défaut, l’installation s’applique uniquement à l’utilisateur actuel, car % LocalAppData% est un répertoire spécifique à l’utilisateur. Toutefois, si vous définissez la [AllUsers](http://msdn.microsoft.com/en-us/ac817f50-3276-4ddb-b467-8bbb1432455b) élément du manifeste à `True`, l’extension est installée sous... \\ *VisualStudioInstallationFolder*\Common7\IDE\Extensions et sera disponible à tous les utilisateurs de l’ordinateur.  
+ Par défaut, l’installation s’applique uniquement à l’utilisateur actuel, car % LocalAppData% est un répertoire spécifique à l’utilisateur. Toutefois, si vous définissez la [AllUsers](http://msdn.microsoft.com/ac817f50-3276-4ddb-b467-8bbb1432455b) élément du manifeste à `True`, l’extension est installée sous... \\ *VisualStudioInstallationFolder*\Common7\IDE\Extensions et sera disponible à tous les utilisateurs de l’ordinateur.  
   
-## <a name="contenttypesxml"></a>[Content_Types] .xml  
+## <a name="contenttypesxml"></a>[Content_Types].xml  
  Le fichier [Content_Types] .xml identifie les types de fichiers dans le fichier .vsix développé. Visual Studio utilise ce fichier pendant l’installation du package, mais n’installe pas le fichier lui-même. Pour plus d’informations sur ce fichier, consultez [la Structure de la Content_types\].xml fichier](../extensibility/the-structure-of-the-content-types-dot-xml-file.md).  
   
- Un fichier [Content_Types] .xml est requis par l’Open Packaging Conventions (OPC) standard. Pour plus d’informations sur OPC, consultez [OPC : une nouvelle norme pour l’empaquetage de vos données](http://go.microsoft.com/fwlink/?LinkID=148207) sur le site Web MSDN.
-
+ Un fichier [Content_Types] .xml est requis par l’Open Packaging Conventions (OPC) standard. Pour plus d’informations sur OPC, consultez [OPC : Un nouveau Standard d’empaquetage de vos données](http://go.microsoft.com/fwlink/?LinkID=148207) sur le site Web MSDN.

@@ -9,12 +9,12 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d9434ac138f848442a32986d85ae816bb8d78e71
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c5ca8c45d48776405b5c0602c44de368cd2899ca
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946942"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416355"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Procédure : créer un complément Visual Studio pour l’Afficheur de résultats de test de performances Web
 
@@ -24,7 +24,7 @@ Pour étendre l’interface utilisateur de **l’Afficheur de résultats de test
 
 -   <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 
-Vous devez également ajouter une référence à la DLL LoadTestPackage, qui est située dans le dossier *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies*.
+Vous devez également ajouter une référence à la DLL LoadTestPackage, qui se trouve dans le dossier *%ProgramFiles(x86)%\Microsoft Visual Studio\\\<version>\Enterprise\Common7\IDE\PrivateAssemblies*.
 
 Pour étendre l’interface utilisateur de **l’Afficheur de résultats de test de performances web**, vous devez créer un complément Visual Studio et un contrôle utilisateur. Les procédures suivantes expliquent comment les créer et comment implémenter les classes nécessaires pour étendre l’interface utilisateur de **l’Afficheur de résultats de test de performances web**.
 
@@ -51,46 +51,38 @@ Un complément est une DLL compilée qui s’exécute dans l’environnement de 
 
 1. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur la solution, choisissez **Ajouter** puis sélectionnez **Nouveau projet**.
 
-    La boîte de dialogue **Nouveau projet** s’affiche.
-
-2. Sous **Modèles installé**, développez **Autres types de projets** et sélectionnez **Extensibilité**.
-
-3. Dans la liste des modèles, sélectionnez **Complément Visual Studio**.
-
-4. Sous **Nom**, tapez un nom pour le complément. Par exemple, **WebPerfTestResultsViewerAddin**.
-
-5. Cliquez sur **OK**.
+2. Créez un projet **Complément Visual Studio**.
 
     **L’Assistant Complément** Visual Studio démarre.
 
-6. Sélectionnez **Suivant**.
+3. Sélectionnez **Suivant**.
 
-7. Dans la page **Sélectionner un langage de programmation**, sélectionnez le langage de programmation que vous souhaitez utiliser pour écrire le complément.
+4. Dans la page **Sélectionner un langage de programmation**, sélectionnez le langage de programmation que vous souhaitez utiliser pour écrire le complément.
 
    > [!NOTE]
    > Pour l'exemple de code, cette rubrique utilise Visual C#.
 
-8. Dans la page **Sélectionner une application hôte**, sélectionnez **Visual Studio** et désactivez **Visual Studio Macros**.
+5. Dans la page **Sélectionner une application hôte**, sélectionnez **Visual Studio** et désactivez **Visual Studio Macros**.
 
-9. Sélectionnez **Suivant**.
+6. Sélectionnez **Suivant**.
 
-10. Entrez le nom et la description de votre complément dans la page **Entrer un nom et une description**.
+7. Entrez le nom et la description de votre complément dans la page **Entrer un nom et une description**.
 
      Une fois le complément créé, ses nom et description s’affichent dans la liste **Compléments disponibles** dans le **Gestionnaire de compléments**. Indiquez suffisamment d'informations dans la description de votre complément afin que les utilisateurs puissent connaître l'utilité de votre complément, son fonctionnement, etc.
 
-11. Sélectionnez **Suivant**.
+8. Sélectionnez **Suivant**.
 
-12. Dans la page **Choisir les options du complément**, sélectionnez **Je souhaite que mon complément soit chargé en même temps que l’application hôte**.
+9. Dans la page **Choisir les options du complément**, sélectionnez **Je souhaite que mon complément soit chargé en même temps que l’application hôte**.
 
-13. Désactivez les autres cases à cocher.
+10. Désactivez les autres cases à cocher.
 
-14. Dans la page **Choisir les informations contenues dans « À propos de »**, vous pouvez indiquer si vous voulez que les informations relatives à votre complément apparaissent dans une boîte de dialogue **À propos de**. Si vous souhaitez que les informations soient affichées, cochez la case **Oui, je souhaite que mon complément propose une boîte de dialogue « À propos de »**.
+11. Dans la page **Choisir les informations contenues dans « À propos de »**, vous pouvez indiquer si vous voulez que les informations relatives à votre complément apparaissent dans une boîte de dialogue **À propos de**. Si vous souhaitez que les informations soient affichées, cochez la case **Oui, je souhaite que mon complément propose une boîte de dialogue « À propos de »**.
 
      Les informations que vous pouvez ajouter dans la boîte de dialogue **À propos de** de Visual Studio incluent notamment le numéro de version, des informations relatives à la prise en charge, des données relatives à la licence, etc.
 
-15. Sélectionnez **Suivant**.
+12. Sélectionnez **Suivant**.
 
-16. Vous pouvez vérifier les options sélectionnées dans la page **Résumé**. Si vous êtes satisfait, choisissez **Terminer** pour créer le complément. Pour effectuer une modification, choisissez le bouton **Précédent**.
+13. Vous pouvez vérifier les options sélectionnées dans la page **Résumé**. Si vous êtes satisfait, choisissez **Terminer** pour créer le complément. Pour effectuer une modification, choisissez le bouton **Précédent**.
 
      La nouvelle solution et le nouveau projet sont créés. Le fichier *Connect.cs* du nouveau complément s’affiche dans **l’éditeur de code**.
 
@@ -108,7 +100,7 @@ Deux copies du fichier *.addin* sont créées automatiquement par **l’Assistan
 
 |**Emplacement du fichier .addin**|**Description**|
 |-|----------------------------|-|
-|Dossier de projet racine|Utilisé pour le déploiement du projet de complément. Incluse dans le projet pour des modifications facilitées. Chemin d'accès local pour un déploiement de style XCopy.|
+|Dossier de projet racine|Utilisé pour le déploiement du projet de complément. Incluse dans le projet pour des modifications facilitées. Chemin d’accès local pour un déploiement de style XCopy.|
 |Dossier des compléments|Utilisé pour exécuter le complément dans l'environnement de débogage. Doit toujours pointer sur le chemin de sortie de la configuration de build actuelle.|
 
 ## <a name="create-a-windows-form-control-library-project"></a>Créer un projet de bibliothèque de contrôles Windows Forms
@@ -119,24 +111,11 @@ Le complément Visual Studio créé dans les procédures précédentes référen
 
 1.  Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur la solution, choisissez **Ajouter** puis sélectionnez **Nouveau projet**.
 
-     La boîte de dialogue **Nouveau projet** s’affiche.
+2. Créez un projet **Bibliothèque de contrôles Windows Forms**.
 
-2.  Sous **Modèles installés**, développez **Visual Basic** ou **Visual C#**, puis sélectionnez **Windows**.
+3.  Dans la **Boîte à outils**, faites glisser un <xref:System.Windows.Forms.DataGridView> sur la surface de userControl1.
 
-    > [!NOTE]
-    > Pour l'exemple de code, cette rubrique utilise Visual C#.
-
-3.  Dans la liste des modèles, sélectionnez **Bibliothèque de contrôles Windows Forms**.
-
-4.  Sous **Nom**, tapez un nom pour le complément. Par exemple, **WebPerfTestResultsViewerControl**.
-
-5.  Cliquez sur **OK**.
-
-     Le projet de bibliothèque de contrôles Windows Forms WebPerfTestResultsViewerControl est ajouté dans **l’Explorateur de solutions** et *UserControl1.cs* est affiché en mode Design.
-
-6.  Dans la **Boîte à outils**, faites glisser un <xref:System.Windows.Forms.DataGridView> sur la surface de userControl1.
-
-7.  Cliquez sur le glyphe d’étiquette d’action (![Glyphe d’étiquette active](../test/media/vs_winformsmttagglyph.gif)) dans le coin supérieur droit de <xref:System.Windows.Forms.DataGridView> et suivez ces étapes :
+4. Cliquez sur le glyphe d’étiquette d’action (![Glyphe d’étiquette active](../test/media/vs_winformsmttagglyph.gif)) dans le coin supérieur droit de <xref:System.Windows.Forms.DataGridView> et suivez ces étapes :
 
     1.  Choisissez **Ancrer dans le conteneur parent**.
 
@@ -154,13 +133,13 @@ Le complément Visual Studio créé dans les procédures précédentes référen
 
     7.  Choisissez **Fermer**.
 
-8.  Dans la fenêtre **Propriétés**, remplacez la propriété **(Name)** de <xref:System.Windows.Forms.DataGridView> par **resultControlDataGridView**.
+5.  Dans la fenêtre **Propriétés**, remplacez la propriété **(Name)** de <xref:System.Windows.Forms.DataGridView> par **resultControlDataGridView**.
 
-9. Cliquez avec le bouton droit sur l’aire de conception et sélectionnez **Afficher le code**.
+6. Cliquez avec le bouton droit sur l’aire de conception et sélectionnez **Afficher le code**.
 
      Le fichier *UserControl1.cs* s’affiche dans **l’Éditeur de code**.
 
-10. Remplacez le nom UserContro1 de la classe instanciée <xref:System.Windows.Forms.UserControl> par resultControl :
+7. Remplacez le nom UserContro1 de la classe instanciée <xref:System.Windows.Forms.UserControl> par resultControl :
 
     ```csharp
     namespace WebPerfTestResultsViewerControl
@@ -178,8 +157,6 @@ Le complément Visual Studio créé dans les procédures précédentes référen
      Vous ajouterez ultérieurement du code supplémentaire au fichier *Connect.cs*.
 
 ## <a name="add-code-to-the-webperftestresultsvieweraddin"></a>Ajouter du code au projet WebPerfTestResultsViewerAddin
-
-### <a name="to-add-code-to-the-visual-studio-add-in-to-extend-the-web-test-results-viewer"></a>Pour ajouter du code au complément Visual Studio afin d’étendre l’Afficheur des résultats de test web
 
 1.  Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le nœud **Références** du projet WebPerfTestResultsViewerAddin, puis sélectionnez **Ajouter une référence**.
 
@@ -276,8 +253,6 @@ Le complément Visual Studio créé dans les procédures précédentes référen
      Après la complétion du code du complément Visual Studio, vous devez ajouter la méthode Update au resultControl dans le projet WebPerfTestResultsViewerControl.
 
 ## <a name="add-code-to-the-webperftestresultsviewercontrol"></a>Ajouter du code au WebPerfTestResultsViewerControl
-
-### <a name="to-add-code-to-the-user-control"></a>Pour ajouter du code au contrôle utilisateur
 
 1.  Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet WebPerfTestResultsViewerControl, puis sélectionnez **Propriétés**.
 

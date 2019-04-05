@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c439c5bbd35f4ece7ad57302737835622409b353
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: a524d242f5c3fb146f3446cd0c020b01e130277c
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323586"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268728"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ Project system d’extensibilité et ensemble d’outils integration
 
@@ -55,7 +55,7 @@ Ces fichiers définissent peu de choses par eux-mêmes. Au lieu de cela, ils imp
 
 Ces valeurs de propriété spécifient les noms de dossiers sous le `$(VCTargetsPath)` dossier racine :
 
-`$(VCTargetsPath)`\\ &nbsp;&nbsp;&nbsp;&nbsp;*Type d’application* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(ApplicationType)` \\ &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationTypeRevision)`\\ &nbsp;&nbsp;&nbsp;< C58 > &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *Plates-formes* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)` \\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</C158><spanclass="notranslate">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *Ensemble* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)` &nbsp;&nbsp;&nbsp;&nbsp;</C252>plateformes</span>\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Used when `$(ApplicationType)` is empty, for Windows Desktop projects) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`
+`$(VCTargetsPath)`\\ &nbsp;&nbsp;&nbsp;&nbsp;*Type d’application* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(ApplicationType)` \\ &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationTypeRevision)`\\ &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *Plates-formes* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)` \\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *PlatformToolsets* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)` &nbsp;&nbsp;&nbsp;&nbsp;plateformes\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Utilisé lorsque `$(ApplicationType)` est vide, pour les projets de bureau Windows) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`
 
 ### <a name="add-a-new-platform-toolset"></a>Ajouter un nouvel ensemble d’outils de plateforme
 
@@ -215,7 +215,7 @@ Le `ClCompile` cible ne doit pas avoir de dépendances, à l’exception du `Sel
 
 ## <a name="msbuild-tasks-to-use-in-toolset-targets"></a>Tâches MSBuild à utiliser dans les cibles de l’ensemble d’outils
 
-Pour appeler un outil de génération réelle, la cible doit appeler une tâche MSBuild. Il existe un basic [Exec, tâche](../msbuild/exec-task.md) qui vous permet de spécifier une ligne de commande à exécuter. Toutefois, les outils de génération ont généralement des nombreuses options, entrées. et les sorties pour effectuer le suivi pour les builds incrémentielles, donc il est plus judicieux d’avoir des tâches spéciales pour eux. Par exemple, le `CL` tâche traduit les propriétés MSBuild CL.exe commutateurs, les écrit dans un fichier réponse et appelle CL.exe. Il effectue également le suivi de tous les fichiers d’entrée et de sortie pour les générations incrémentielles ultérieures. Pour plus d’informations, consultez [build incrémentielle et les vérifications de statut](#incremental-build-and-up-to-date-check).
+Pour appeler un outil de génération réelle, la cible doit appeler une tâche MSBuild. Il existe un basic [Exec, tâche](../msbuild/exec-task.md) qui vous permet de spécifier une ligne de commande à exécuter. Toutefois, les outils de génération ont généralement des nombreuses options, entrées. et les sorties pour effectuer le suivi pour les builds incrémentielles, donc il est plus judicieux d’avoir des tâches spéciales pour eux. Par exemple, le `CL` tâche traduit les propriétés MSBuild CL.exe commutateurs, les écrit dans un fichier réponse et appelle CL.exe. Il effectue également le suivi de tous les fichiers d’entrée et de sortie pour les générations incrémentielles ultérieures. Pour plus d’informations, consultez [les builds incrémentielles et les vérifications à jour](#incremental-builds-and-up-to-date-checks).
 
 Le Microsoft.Cpp.Common.Tasks.dll implémente ces tâches :
 
@@ -416,9 +416,9 @@ Le système de projet Visual C++ est basé sur le [système de projet Visual Stu
 
 ### <a name="project-property-pages"></a>Pages de propriétés du projet
 
-Pour plus d’informations générales de conception, consultez [extensibilité des plateformes - partie 1](https://blogs.msdn.microsoft.com/vsproject/2009/06/09/platform-extensibility-part-1/) et [extensibilité des plateformes - partie 2](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/).
+Pour plus d’informations générales de conception, consultez [Framework Multi-Targeting pour les projets VC ++](https://devblogs.microsoft.com/visualstudio/framework-multi-targeting-for-vc-projects/).
 
-En termes simples, les pages de propriétés que vous consultez dans la **propriétés du projet** boîte de dialogue pour un projet C++ sont définis par *règle* fichiers. Un fichier de règle spécifie un jeu de propriétés à afficher sur une page de propriétés et comment et où ils doivent être enregistrés dans le projet de fichier. Fichiers de règles sont des fichiers .xml qui utilisent le format Xaml. Les types utilisés pour sérialiser les sont décrites dans [Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes). Pour plus d’informations sur l’utilisation de fichiers de règles dans les projets, consultez [les fichiers de règles XML de la Page propriété](/cpp/ide/property-page-xml-files).
+En termes simples, les pages de propriétés que vous consultez dans la **propriétés du projet** boîte de dialogue pour un projet C++ sont définis par *règle* fichiers. Un fichier de règle spécifie un jeu de propriétés à afficher sur une page de propriétés et comment et où ils doivent être enregistrés dans le projet de fichier. Fichiers de règles sont des fichiers .xml qui utilisent le format Xaml. Les types utilisés pour sérialiser les sont décrites dans [Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes). Pour plus d’informations sur l’utilisation de fichiers de règles dans les projets, consultez [les fichiers de règles XML de la Page propriété](/cpp/build/reference/property-page-xml-files).
 
 Les fichiers de la règle doivent être ajoutés à la `PropertyPageSchema` groupe d’éléments :
 
@@ -636,8 +636,8 @@ Pour plus d’informations sur la création des fichiers VSIX, consultez [de liv
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 
-Le système de génération de Microsoft ([MSBuild](../msbuild/msbuild.md)) fournit le moteur de génération et le format XML extensible pour les fichiers de projet. Vous devez être familiarisé avec basic [concepts MSBuild](../msbuild/msbuild-concepts.md) et par la procédure [MSBuild pour Visual C++](/cpp/build/msbuild-visual-cpp-overview) système de projet works afin d’étendre le Visual C++.
+Le système de génération de Microsoft ([MSBuild](../msbuild/msbuild.md)) fournit le moteur de génération et le format XML extensible pour les fichiers de projet. Vous devez être familiarisé avec basic [concepts MSBuild](../msbuild/msbuild-concepts.md) et par la procédure [MSBuild pour Visual C++](/cpp/build/reference/msbuild-visual-cpp-overview) système de projet works afin d’étendre le Visual C++.
 
 Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) fournit l’API qui sont utilisées par CPS et le système de projet Visual C++ de l’extension. Pour une vue d’ensemble de l’utilisation de MEF par CPS, consultez [CPS et MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md#cps-and-mef) dans le [vue d’ensemble de VSProjectSystem de MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md).
 
-Vous pouvez personnaliser le système de génération existante pour ajouter des étapes de génération ou de nouveaux types de fichiers. Pour plus d’informations, consultez [vue d’ensemble de MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp-overview) et [utilisation des propriétés de projet](/cpp/ide/working-with-project-properties).
+Vous pouvez personnaliser le système de génération existante pour ajouter des étapes de génération ou de nouveaux types de fichiers. Pour plus d’informations, consultez [vue d’ensemble de MSBuild (Visual C++)](/cpp/build/reference/msbuild-visual-cpp-overview) et [utilisation des propriétés de projet](/cpp/build/working-with-project-properties).

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e07081d8b02e4f884ae7ec983e4c97dcb8bfe672
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 88903c1370219976bca6e8418c3254d048db51d2
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938733"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324719"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Procédure : Spécifier des événements de build (Visual Basic)
 
@@ -115,7 +115,7 @@ La procédure suivante montre comment définir la version minimale du système d
    End Sub
    ```
 
-   La commande prend deux arguments. Le premier argument est le chemin du manifeste de l’application (autrement dit, le dossier dans lequel le processus de génération crée le manifeste, en général *<Projectname>.publish*). Le second argument est la nouvelle version du système d’exploitation.
+   La commande prend deux arguments. Le premier argument est le chemin du manifeste d’application (c’est-à-dire le dossier où le processus de génération crée le manifeste, en général *\<nom_projet>.publish*). Le second argument est la nouvelle version du système d’exploitation.
 
 5. Dans le menu **Générer** , cliquez sur **Générer la solution**.
 

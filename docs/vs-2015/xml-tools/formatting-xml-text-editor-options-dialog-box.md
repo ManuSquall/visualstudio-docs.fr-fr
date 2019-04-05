@@ -1,25 +1,20 @@
 ---
 title: Mise en forme, XML, éditeur de texte, boîte de dialogue Options | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: bb539b3a-027c-4b2f-906e-403e0e22ba8d
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5c8379393dd5327359789f8621cf67ed55e89209
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d4f759b947344298eca36c3fd99d024f7fcde2c9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256670"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951934"
 ---
 # <a name="formatting-xml-text-editor-options-dialog-box"></a>Mise en forme, XML, Éditeur de texte, boîte de dialogue Options
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ Cette boîte de dialogue permet de spécifier les paramètres de mise en forme d
 >  Ces paramètres sont disponibles lorsque vous sélectionnez le **éditeur de texte** dossier, le **XML** dossier, puis le **mise en forme** option à partir de la **Options** boîte de dialogue.  
   
 ## <a name="attributes"></a>Attributs  
- **Conserver la mise en forme manuelle des attributs**  
+ **Préserver la mise en forme manuelle des attributs**  
  Les attributs ne sont pas remis en forme. Il s'agit de la valeur par défaut.  
   
 > [!NOTE]
@@ -51,7 +46,7 @@ Cette boîte de dialogue permet de spécifier les paramètres de mise en forme d
  **Lors du collage à partir du Presse-papiers**  
  Remet en forme le texte XML collé à partir du Presse-papiers.  
   
- **Sur la balise de fin**  
+ **Après la balise de fin**  
  Remet l’élément en forme après l’étiquette de fin.  
   
 ## <a name="mixed-content"></a>Contenu mixte  
@@ -70,6 +65,3 @@ Cette boîte de dialogue permet de spécifier les paramètres de mise en forme d
 ## <a name="see-also"></a>Voir aussi  
  [Propriétés des documents XML, fenêtre Propriétés](../xml-tools/xml-document-properties-properties-window.md)   
  [Composants de l’éditeur XML](../xml-tools/xml-editor-components.md)
-
-
-

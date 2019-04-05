@@ -1,28 +1,23 @@
 ---
-title: 'Comment : résoudre les problèmes des Services | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Dépanner les Services | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: troubleshooting
 helpviewer_keywords:
 - services, troubleshooting
 ms.assetid: 001551da-4847-4f59-a0b2-fcd327d7f5ca
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8df01dcc2c8e15144f6049148286012bda6ac3f5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 47dad5f6b508356bde7570996127007b25b287b0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798207"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948666"
 ---
-# <a name="how-to-troubleshoot-services"></a>Comment : résoudre les problèmes des Services
+# <a name="how-to-troubleshoot-services"></a>Procédure : Dépanner les services
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Il existe plusieurs problèmes courants qui peuvent se produire lorsque vous essayez d’obtenir un service :  
@@ -77,4 +72,3 @@ if (log == null) return;
  [Liste des Services disponibles](../extensibility/internals/list-of-available-services.md)   
  [À l’aide et fourniture de Services](../extensibility/using-and-providing-services.md)   
  [Éléments fondamentaux du service](../extensibility/internals/service-essentials.md)
-

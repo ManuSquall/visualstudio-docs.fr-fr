@@ -12,12 +12,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 26635f9f6680931d02993613f96dcfcbe623af1d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: acfa1e274b7c0744c2d9968682960b1cd50e0044
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919675"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57736927"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Procédure pas à pas : Analyse du code C/C++ pour détecter les erreurs
 
@@ -67,7 +67,7 @@ Cette procédure pas à pas montre comment analyser des défauts de code potenti
 
      avertissement C6230 : Cast implicite entre types sémantiquement différents : utilisation de HRESULT dans un contexte Boolean.
 
-     L’éditeur de code affiche la ligne qui a provoqué l’avertissement dans la fonction `bool``ProcessDomain()`. Cet avertissement indique qu’une valeur HRESULT est utilisé dans une instruction 'if' où un résultat booléen est attendu.
+     L’éditeur de code affiche la ligne qui a provoqué l’avertissement dans la fonction `bool ProcessDomain()`. Cet avertissement indique qu’une valeur HRESULT est utilisé dans une instruction 'if' où un résultat booléen est attendu.
 
 3. Corriger cet avertissement à l’aide de la macro SUCCEEDED. Votre code doit ressembler au code suivant :
 

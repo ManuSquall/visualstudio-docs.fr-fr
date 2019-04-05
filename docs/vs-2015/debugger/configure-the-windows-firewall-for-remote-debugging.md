@@ -1,25 +1,20 @@
 ---
 title: Configurer le pare-feu Windows pour le débogage à distance | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 66e3230a-d195-4473-bbce-8ca198516014
 caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 39854b47bd31660fdc523bfd122363d5958df8e2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: a4f123c6dfbe7d3f194c3f07c5ed685cf5cc862c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734581"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938206"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>Configurer le Pare-feu Windows pour le débogage distant
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +23,7 @@ Cette rubrique explique comment configurer le pare-feu pour activer le débogage
   
 - Windows 7  
   
-- Windows 8/8.1  
+- Windows 8/8.1  
   
 - Windows 10  
   
@@ -85,8 +80,8 @@ Cette rubrique explique comment configurer le pare-feu pour activer le débogage
 |-|-|-|-|  
 |**Ports**|**Entrant/sortant**|**Protocole**|**Description**|  
 |3702|Sortant|UDP|Requis pour la détection du débogueur distant.|  
-|4020||TCP|Pour VS 2015. Le numéro de port est incrémenté de 2 pour chaque version de Visual Studio. Pour plus d’informations, consultez Affectations de port du débogueur distant de Visual Studio.|  
-|4021||TCP|Pour VS 2015. Le numéro de port est incrémenté de 2 pour chaque version de Visual Studio. Pour plus d’informations, consultez Affectations de port du débogueur distant de Visual Studio.|  
+|4020||TCP|Pour VS 2015. Le numéro de port est incrémenté de 2 pour chaque version de Visual Studio. Pour plus d’informations, consultez Affectations de port du débogueur distant de Visual Studio.|  
+|4021||TCP|Pour VS 2015. Le numéro de port est incrémenté de 2 pour chaque version de Visual Studio. Pour plus d’informations, consultez Affectations de port du débogueur distant de Visual Studio.|  
   
 ## <a name="ports-on-the-remote-computer-that-enable-remote-debugging-with-managed-or-native-compatibility-mode"></a>Ports sur l’ordinateur distant qui permettent le débogage distant avec le mode de compatibilité managé ou natif  
   
@@ -118,6 +113,3 @@ Cette rubrique explique comment configurer le pare-feu pour activer le débogage
   
 ## <a name="see-also"></a>Voir aussi  
  [Remote Debugging](../debugger/remote-debugging.md)
-
-
-

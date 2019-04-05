@@ -1,12 +1,9 @@
 ---
 title: Créer des tables de recherche dans les applications WPF | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -24,15 +21,15 @@ ms.assetid: 56a1fbff-c7e8-4187-a1c1-ffd17024bc1b
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6ce3b1cb07256c35949591b4d6ea012f56e432c6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: dbeaf44d767779281a3af4fe41f97a827a38c097
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303340"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58953367"
 ---
-# <a name="create-lookup-tables-in-wpf-applications"></a>Créer des tables de recherche dans les applications WPF
+# <a name="create-lookup-tables-in-wpf-applications"></a>Créer des tables de recherche dans des applications WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -44,11 +41,11 @@ Le terme *table de recherche* (parfois appelé un *liaison de correspondance*) d
   
 1.  Ajoutez l’un des types suivants de sources de données avec les données associées à votre projet :  
   
-    -   Jeu de données ou Entity Data Model. Pour plus d'informations, consultez [How to: Connect to Data in a Database](../data-tools/how-to-connect-to-data-in-a-database.md).  
+    -   Jeu de données ou Entity Data Model.
+
+    -   Service de données WCF, service WCF ou service Web. Pour plus d'informations, voir [Procédure : se connecter à des données dans un service](../data-tools/how-to-connect-to-data-in-a-service.md).  
   
-    -   Service de données WCF, service WCF ou service Web. Pour plus d’informations, consultez [Comment : se connecter aux données dans un Service](../data-tools/how-to-connect-to-data-in-a-service.md).  
-  
-    -   Objets. Pour plus d’informations, consultez [Comment : se connecter aux données dans des objets](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b).  
+    -   Objets. Pour plus d'informations, voir [Procédure : Se connecter aux données dans des objets](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b).  
   
     > [!NOTE]
     >  Avant de pouvoir créer une table de recherche, les deux tables ou objets connexes doivent exister en tant que source de données pour le projet.  
@@ -57,7 +54,7 @@ Le terme *table de recherche* (parfois appelé un *liaison de correspondance*) d
   
      Pour plus d’informations sur les cibles de dépôt valides, consultez [WPF de lier des contrôles à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
   
-3.  Sur le **données** menu, cliquez sur **afficher les Sources de données** pour ouvrir le **des Sources de données** fenêtre.  
+3.  Dans le menu **Données**, cliquez sur **Afficher les sources de données** pour ouvrir la fenêtre **Sources de données**.  
   
 4.  Développez les nœuds dans le **des Sources de données** fenêtre, jusqu'à ce que vous pouvez voir la table parente ou objet et la table enfant connexe ou l’objet.  
   
@@ -103,5 +100,4 @@ Le terme *table de recherche* (parfois appelé un *liaison de correspondance*) d
  [Lier des contrôles WPF à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
  [Lier des contrôles WPF à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)   
  [Afficher les données associées dans les applications WPF](../data-tools/display-related-data-in-wpf-applications.md)   
- [Procédure pas à pas : affichage de données connexes dans une application WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)
-
+ [Procédure pas à pas : Affichage de données liées dans une Application WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)

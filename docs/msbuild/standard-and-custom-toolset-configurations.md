@@ -11,17 +11,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d38d63de6c223d8a77bd2c1fa2e0a13b0e814ef8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e3a77797cb519294c16329a432cf742746293c13
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620315"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983401"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Configurations standard et personnalisées des ensembles d’outils
 Un ensemble d’outils MSBuild contient des références à des tâches, des cibles et des outils que vous pouvez utiliser pour générer un projet d’application. MSBuild inclut un ensemble d’outils standard, mais vous pouvez également créer des ensembles d’outils personnalisés. Pour plus d’informations sur la façon de spécifier un ensemble d’outils, consultez [Ensemble d’outils (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)
 
 ## <a name="standard-toolset-configurations"></a>Configurations standard des ensembles d’outils
+
+::: moniker range=">=vs-2019"
+ MSBuild 16.0 inclut les ensembles d’outils standard suivants :
+
+|ToolsVersion|Chemin de l’ensemble d’outils (spécifié dans la propriété de build MSBuildToolsPath ou MSBuildBinPath)|
+|------------------| - |
+|2.0|*\<Chemin d’installation de Windows>\Microsoft.Net\Framework\v2.0.50727\\*|
+|3.5|*\<Chemin d’installation de Windows>\Microsoft.NET\Framework\v3.5\\*|
+|4.0|*\<Chemin d’installation de Windows>\Microsoft.NET\Framework\v4.0.30319\\*|
+|Actuelle|*\<Chemin d’installation de Visual Studio>\MSBuild\Current\bin*|
+
+ La valeur de `ToolsVersion` détermine l’ensemble d’outils utilisé par un projet généré par Visual Studio. Dans Visual Studio 2019, la valeur par défaut est « Current » (quelle que soit la version spécifiée dans le fichier projet), mais vous pouvez remplacer cet attribut avec le commutateur **/toolsversion** à une invite de commandes. Pour plus d’informations sur cet attribut et sur les autres manières de spécifier `ToolsVersion`, voir [Écraser les paramètres ToolsVersion](../msbuild/overriding-toolsversion-settings.md).
+
+ ::: moniker-end
+
+::: moniker range="vs-2017"
  MSBuild 15.0 inclut les ensembles d’outils standard suivants :
 
 |ToolsVersion|Chemin de l’ensemble d’outils (spécifié dans la propriété de build MSBuildToolsPath ou MSBuildBinPath)|
@@ -32,8 +48,9 @@ Un ensemble d’outils MSBuild contient des références à des tâches, des cib
 |15.0|*\<Chemin d’installation de Visual Studio>\MSBuild\15.0\bin*|
 
  La valeur de `ToolsVersion` détermine l’ensemble d’outils utilisé par un projet généré par Visual Studio. Dans Visual Studio 2017, la valeur par défaut est « 15.0 » (quelle que soit la version spécifiée dans le fichier projet), mais vous pouvez remplacer cet attribut avec le commutateur **/toolsversion** à une invite de commandes. Pour plus d’informations sur cet attribut et sur les autres manières de spécifier `ToolsVersion`, voir [Écraser les paramètres ToolsVersion](../msbuild/overriding-toolsversion-settings.md).
+ ::: moniker-end
 
- Visual Studio 2017 n’utilise pas une clé de Registre pour le chemin à MSBuild. Pour les versions de MSBuild antérieures à 15.0 qui sont installées avec Visual Studio 2017, les clés de Registre suivantes spécifient le chemin d’installation de MSBuild.exe.
+Visual Studio 2017 et versions ultérieures n’utilise pas une clé de Registre pour le chemin à MSBuild. Pour les versions de MSBuild antérieures à 15.0 qui sont installées avec Visual Studio 2017, les clés de Registre suivantes spécifient le chemin d’installation de MSBuild.exe.
 
 |Clé du Registre|Nom de la clé|Valeur de clé de type chaîne|
 |------------------|--------------|----------------------|
@@ -56,11 +73,11 @@ Un ensemble d’outils MSBuild contient des références à des tâches, des cib
 ## <a name="custom-toolset-definitions"></a>Définitions d’ensembles d’outils personnalisés
  Quand un ensemble d’outils standard ne répond pas à vos spécifications pour la génération, vous pouvez créer un ensemble d’outils personnalisé. Par exemple, vous pouvez avoir un scénario de laboratoire de génération dans lequel vous devez disposer d’un système distinct pour la génération de projets [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Un ensemble d’outils personnalisé permet d’affecter des valeurs personnalisées à l’attribut `ToolsVersion` lors de la création de projets ou de l’exécution de *MSBuild.exe*. Il est également possible d’utiliser la propriété `$(MSBuildToolsPath)` pour importer des fichiers *.targets* à partir de ce répertoire, ainsi que de définir ses propres propriétés d’ensemble d’outils personnalisé pour pouvoir les utiliser à chaque projet exploitant cet ensemble d’outils.
 
- Spécifiez un ensemble d’outils personnalisé dans le fichier de configuration de *MSBuild.exe* (ou de l’outil personnalisé qui héberge le moteur MSBuild si c’est ce que vous utilisez). Par exemple, le fichier de configuration de *MSBuild.exe* pourrait comporter la définition d’ensemble d’outils suivante si l’objectif est de remplacer le comportement par défaut de ToolsVersion 15.0.
+ Spécifiez un ensemble d’outils personnalisé dans le fichier de configuration de *MSBuild.exe* (ou de l’outil personnalisé qui héberge le moteur MSBuild si c’est ce que vous utilisez). Par exemple, le fichier de configuration de *MSBuild.exe* pourrait comporter la définition d’ensemble d’outils suivante si l’objectif est de définir un ensemble d’outils nommé *MyCustomToolset*.
 
 ```xml
-<msbuildToolsets default="15.0">
-   <toolset toolsVersion="15.0">
+<msbuildToolsets default="MyCustomToolset">
+   <toolset toolsVersion="MyCustomToolset">
       <property name="MSBuildToolsPath"
         value="C:\SpecialPath" />
    </toolset>

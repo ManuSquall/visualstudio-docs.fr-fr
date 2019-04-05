@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c910ab867be379264464650cef6bec00fc9d82f9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 371cdc85648b8b058267540b305162adf371c4f6
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933390"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355326"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Utiliser plusieurs comptes d’utilisateur
 
@@ -55,7 +55,7 @@ La prochaine fois que vous ouvrirez **l’Explorateur de serveurs**, les ressour
 
 Azure Active Directory (AAD) prend en charge l'authentification unique des utilisateurs finaux dans les applications web MVC ASP.NET ou l'authentification AD dans les services API web. L’authentification d’un domaine est différente de l’authentification d’un compte utilisateur en particulier. Les utilisateurs qui ont accès à votre domaine Active Directory peuvent utiliser leur compte AAD pour se connecter à vos applications web. Les applications Office 365 peuvent également utiliser l'authentification de domaine.
 
-Pour voir à quoi cela ressemble concrètement, créez une application web (**Fichier** > **Nouveau projet** > **C#** > **Cloud** > **Application web ASP.NET**). Dans la boîte de dialogue **Nouveau projet ASP.NET**, choisissez **Modifier l’authentification**. L'Assistant Authentification s'affiche et vous permet de choisir le type d'authentification à utiliser dans votre application.
+Pour voir comment cela fonctionne, créez un projet **Application web ASP.NET**. Dans la boîte de dialogue **Nouveau projet ASP.NET**, choisissez **Modifier l’authentification**. L'Assistant Authentification s'affiche et vous permet de choisir le type d'authentification à utiliser dans votre application.
 
 ![Boîte de dialogue Modifier l'authentification pour ASP.NET](../ide/media/vs2015_change_authentication.png)
 

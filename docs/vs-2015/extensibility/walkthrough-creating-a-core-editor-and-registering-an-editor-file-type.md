@@ -1,26 +1,21 @@
 ---
 title: 'Procédure pas à pas : Création d’un éditeur de base et l’inscription d’un Type de fichier éditeur | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - walkthrough
 ms.assetid: 24d2bffd-a35c-46db-8515-fd60b884b7fb
 caps.latest.revision: 30
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1573709c7ef42e51454ca65103a6faeda78dcc1b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9e900fa7d7bb65d5f55faab00c779247114278eb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778707"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950639"
 ---
 # <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>Procédure pas à pas : Création d’un éditeur de base et l’inscription d’un Type de fichier d’éditeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ Cette procédure pas à pas montre comment créer un VSPackage qui démarre le [
   
 ### <a name="to-create-the-vspackage"></a>Pour créer le VSPackage  
   
--   Démarrer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et créer un [!INCLUDE[csprcs](../includes/csprcs-md.md)] VSPackage nommé `MyPackage`, comme indiqué dans [procédure pas à pas : création d’un VSPackage de commande de Menu](http://msdn.microsoft.com/en-us/d699c149-5d1e-47ff-94c7-e1222af02c32).  
+-   Démarrer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et créer un [!INCLUDE[csprcs](../includes/csprcs-md.md)] VSPackage nommé `MyPackage`, comme indiqué dans [procédure pas à pas : Création d’un VSPackage de commande de Menu](http://msdn.microsoft.com/d699c149-5d1e-47ff-94c7-e1222af02c32).  
   
 ### <a name="to-add-the-editor-factory"></a>Pour ajouter la fabrique d’éditeur  
   
@@ -403,4 +398,3 @@ Cette procédure pas à pas montre comment créer un VSPackage qui démarre le [
 ## <a name="see-also"></a>Voir aussi  
  [À l’intérieur de l’éditeur principal](../extensibility/inside-the-core-editor.md)   
  [Instanciation de l’éditeur de base à l’aide de l’API héritée](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)
-

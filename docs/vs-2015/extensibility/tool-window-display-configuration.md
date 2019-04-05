@@ -1,27 +1,22 @@
 ---
 title: Outil de Configuration de la fenêtre Affichage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, configuring
 - tool windows, appearance
 ms.assetid: 502a4926-bb83-473e-94e2-8e833c5f8b53
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c563888424ae4825f3e5b10fc0592029a29cb84b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1af78bd58c42cf1312e36621011802e908c9e919
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736954"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954053"
 ---
 # <a name="tool-window-display-configuration"></a>Configuration de l’affichage fenêtre outil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,12 +37,12 @@ HKEY_LOCAL_MACHINE\
               (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000  
 ```  
   
-|Name|Type|Données|Description|  
+|Nom|Type|Données|Description|  
 |----------|----------|----------|-----------------|  
-|Name|REG_SZ|« Nom court s’affiche ici »|Un nom court qui décrit la fenêtre outil. Utilisé uniquement pour référence dans le Registre.|  
-|Float|REG_SZ|« X1, Y1, X2, Y2 »|Quatre valeurs séparées par des virgules. X1, Y1 est la coordonnée de l’angle supérieur gauche de la fenêtre outil. X2, Y2 est la coordonnée de l’angle inférieur droit. Toutes les valeurs sont en coordonnées d’écran.|  
-|Style|REG_SZ|« MDI »<br /><br /> « Flotter »<br /><br /> « Lié »<br /><br /> « Onglets »<br /><br /> « AlwaysFloat »|Un mot clé spécifiant initial afficher l’état de la fenêtre outil.<br /><br /> « MDI » = ancrée avec fenêtre MDI.<br /><br /> « Flotter » = flottante.<br /><br /> « Lié » = lié à une autre fenêtre (spécifiée dans l’entrée de fenêtre).<br /><br /> « Onglets » = combinées avec une autre fenêtre d’outil.<br /><br /> « AlwaysFloat » = ne peut pas être ancrée.<br /><br /> Pour plus d’informations, consultez la section commentaires ci-dessous.|  
-|Fenêtre|REG_SZ|*\<GUID &GT;*|Le GUID d’une fenêtre à laquelle la fenêtre outil peut être liée ou avec onglets. Le GUID peut appartenir à un de vos propres windows ou l’une des fenêtres dans le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE.|  
+|Nom|REG_SZ|« Nom court s’affiche ici »|Un nom court qui décrit la fenêtre outil. Utilisé uniquement pour référence dans le Registre.|  
+|Float|REG_SZ|"X1,Y1,X2,Y2"|Quatre valeurs séparées par des virgules. X1, Y1 est la coordonnée de l’angle supérieur gauche de la fenêtre outil. X2, Y2 est la coordonnée de l’angle inférieur droit. Toutes les valeurs sont en coordonnées d’écran.|  
+|Style|REG_SZ|« MDI »<br /><br /> « Flotter »<br /><br /> « Lié »<br /><br /> « Onglets »<br /><br /> "AlwaysFloat"|Un mot clé spécifiant initial afficher l’état de la fenêtre outil.<br /><br /> « MDI » = ancrée avec fenêtre MDI.<br /><br /> « Flotter » = flottante.<br /><br /> « Lié » = lié à une autre fenêtre (spécifiée dans l’entrée de fenêtre).<br /><br /> « Onglets » = combinées avec une autre fenêtre d’outil.<br /><br /> « AlwaysFloat » = ne peut pas être ancrée.<br /><br /> Pour plus d’informations, consultez la section commentaires ci-dessous.|  
+|Fenêtre|REG_SZ|*\<GUID>*|Le GUID d’une fenêtre à laquelle la fenêtre outil peut être liée ou avec onglets. Le GUID peut appartenir à un de vos propres windows ou l’une des fenêtres dans le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE.|  
 |Orientation|REG_SZ|« Left »<br /><br /> « Droite »<br /><br /> « Top »<br /><br /> « Bottom »|Consultez la section commentaires ci-dessous.|  
 |DontForceCreate|REG_DWORD|0 ou 1|Lorsque cette entrée est présente et sa valeur n’est pas égal à zéro, la fenêtre est chargée, mais s’affiche pas immédiatement.|  
   
@@ -91,10 +86,10 @@ HKEY_LOCAL_MACHINE\
                 <GUID>    = reg_sz:  
 ```  
   
-|Name|Type|Données|Description|  
+|Nom|Type|Données|Description|  
 |----------|----------|----------|-----------------|  
 |(Default)|REG_SZ|Aucun.|Laissez vide.|  
-|*\<GUID &GT;*|REG_DWORD ou REG_SZ|0 ou une chaîne descriptive.|Facultatif. Nom de l’entrée doit être le GUID d’une commande nécessitant une visibilité. La valeur conserve seulement une chaîne informative. En règle générale, la valeur est un `reg_dword` définie sur 0.|  
+|*\<GUID>*|REG_DWORD ou REG_SZ|0 ou une chaîne descriptive.|Optionnel. Nom de l’entrée doit être le GUID d’une commande nécessitant une visibilité. La valeur conserve seulement une chaîne informative. En règle générale, la valeur est un `reg_dword` définie sur 0.|  
   
 ### <a name="example"></a>Exemple  
   
@@ -115,4 +110,3 @@ HKEY_LOCAL_MACHINE\
   
 ## <a name="see-also"></a>Voir aussi  
  [Concepts de base des VSPackages](../misc/vspackage-essentials.md)
-

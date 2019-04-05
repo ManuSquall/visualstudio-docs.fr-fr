@@ -1,14 +1,9 @@
 ---
 title: 'Procédure pas à pas : Configuration et à l’aide d’un ensemble de règles | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, walkthroughs
 - code analysis, rule sets
@@ -17,14 +12,14 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5976ee0c0fbfc4befe97f2ab25c46744a8267134
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14f67aee6bba5f0cafc67a4a16184f3b769a2bae
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906043"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950823"
 ---
-# <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Procédure pas à pas : configuration et utilisation d’un ensemble de règles personnalisé
+# <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Procédure pas à pas : Configuration et utilisation d’un ensemble de règles personnalisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette procédure pas à pas montre comment utiliser les outils d’analyse de code qui ont été configurés pour utiliser un texte personnalisé *ensemble de règles* sur une bibliothèque de classes. Vous pouvez sélectionner un ensemble de règles relatives au type de projet que vous avez spécifié pour votre solution, ou vous pouvez sélectionner autres ensembles de règles pour répondre à un besoin spécifique, comme l’analyse du code hérité pour les problèmes qui peuvent être résolus de façon permanente. Dans les deux cas, les ensembles de règles peuvent également être personnalisés pour les adapter précisément aux besoins de votre projet.  
@@ -77,7 +72,7 @@ Cette procédure pas à pas montre comment utiliser les outils d’analyse de co
    > [!TIP]
    >  Dans une situation réelle, pour hiérarchiser les problèmes que vous souhaitez cibler avec l’analyse du code il est conseillé pour commencer le **règles minimales recommandées** ensemble de règles et corriger les problèmes de votre choisis et puis ajouter de façon incrémentielle des règles ou règle définit pour rechercher et corriger les problèmes supplémentaires.  
   
-   Ensuite, vous allez ajouter du code à la bibliothèque de classes qui sera utilisée pour montrer les violations de la CA1704 « Identificateurs doivent être correctement orthographiés » règle d’analyse du Code. Pour plus d’informations, consultez [CA1704 : les identificateurs doivent être correctement orthographiés](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).  
+   Ensuite, vous allez ajouter du code à la bibliothèque de classes qui sera utilisée pour montrer les violations de la CA1704 « Identificateurs doivent être correctement orthographiés » règle d’analyse du Code. Pour plus d’informations, consultez [CA1704 : Les identificateurs doivent être correctement orthographiés](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).  
   
 #### <a name="add-your-own-code"></a>Ajouter votre propre code  
   
@@ -115,7 +110,7 @@ Cette procédure pas à pas montre comment utiliser les outils d’analyse de co
   
 2. Dans la fenêtre liste d’erreurs, cliquez sur **avertissements** puis cliquez sur le **Description** en-tête de colonne pour trier les avertissements dans l’ordre alphanumérique.  
   
-    Dans une application réelle, vous serez résoudre toute violation de règle à ce stade, si vous le souhaitez désactiver ou supprimer une règle si vous avez déterminé qu’il n’était pas impératif de les corriger. Pour plus d’informations, consultez [supprimer les avertissements par à l’aide de l’attribut SuppressMessage](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md).  
+    Dans une application réelle, vous serez résoudre toute violation de règle à ce stade, si vous le souhaitez désactiver ou supprimer une règle si vous avez déterminé qu’il n’était pas impératif de les corriger. Pour plus d’informations, consultez [Supprimer des avertissements à l’aide de l’attribut SuppressMessage](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md).  
   
 3. Notez les avertissements CA1704. Les violations de cette règle indiquent que vous devez « si possible, donnez un nom plus significatif pour les paramètres. » Vous pouvez corriger le problème dans votre code, ou vous pouvez désactiver la règle, comme expliqué dans la procédure suivante.  
   
@@ -158,8 +153,5 @@ Cette procédure pas à pas montre comment utiliser les outils d’analyse de co
 2.  Dans la fenêtre liste d’erreurs, notez que lorsque vous cliquez sur **avertissements**, vous ne voyez plus l’avertissement CA1704 concernant la règle « Identificateurs doivent être correctement orthographiés ».  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : configurer l’analyse du Code pour un projet de Code managé](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
+ [Guide pratique pour Configurer l’analyse du Code pour un projet de Code managé](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
  [Informations de référence sur l’ensemble de règles d’analyse du code](../code-quality/code-analysis-rule-set-reference.md)
-
-
-

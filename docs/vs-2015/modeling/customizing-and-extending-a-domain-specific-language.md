@@ -1,25 +1,22 @@
 ---
 title: Personnalisation et extension d’un langage spécifique à un domaine | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
 ms.assetid: b155eb79-4e0a-4a99-a6f2-ca4f811fb5ca
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3d5b55a9b9a55d00cbfb7928295699c254f72639
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: dfa174ca228adcd404edb3e91733731f975ed732
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180685"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948919"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Personnalisation et extension d'un langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,14 +58,14 @@ Visual Studio de modélisation et de visualisation Kit de développement logicie
 |Supprimer, redéfinir la parenté ou relier des éléments connexes lorsqu’un élément est supprimé.|Définir le **Propagates Delete** valeur d’un rôle de relation. Pour obtenir des effets plus complexes, remplacer `ShouldVisitRelationship` et `ShouldVisitRolePlayer` méthodes dans le `MyDslDeleteClosure` (classe), définie dans **DomainModel.cs**<br /><br /> Consultez [personnalisation du comportement de suppression](../modeling/customizing-deletion-behavior.md)|  
 |Conserver la disposition des formes et l’apparence sur la copie et de glisser-déplacer.|Ajouter les formes et connecteurs pour copié `ElementGroupPrototype`. Est la méthode la plus commode de substitution `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Consultez [personnalisation du comportement de copie](../modeling/customizing-copy-behavior.md).|  
 |Coller des formes à un emplacement choisi, par exemple la position actuelle du curseur.|Substituer `ClipboardCommandSet.ProcessOnCopy()` à utiliser la version spécifique à l’emplacement de `ElementOperations.Merge().` consultez [personnalisation du comportement de copie](../modeling/customizing-copy-behavior.md).|  
-|Créer des liens supplémentaires lors du collage|Substituer ClipboardCommandSet.ProcessOnPasteCommand()|  
-|Activer le glisser-déplacer à partir de ce diagramme, autres UML ou DSL diagrammes et les éléments de Windows|Consultez [Comment : ajouter un gestionnaire glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md)|  
+|Créer des liens supplémentaires lors du collage|Override ClipboardCommandSet.ProcessOnPasteCommand()|  
+|Activer le glisser-déplacer à partir de ce diagramme, autres UML ou DSL diagrammes et les éléments de Windows|Voir [Guide pratique pour ajouter un gestionnaire glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md)|  
 |Autoriser une forme ou un outil soit glissée vers une forme enfant, tel qu’un port, comme s’il était de faire glisser le parent.|Définir une Directive de fusion sur la classe d’objet cible, pour transférer l’objet déplacé vers le parent. Consultez [personnalisation de la création d’élément et le déplacement des](../modeling/customizing-element-creation-and-movement.md).|  
 |Autoriser une forme ou un outil permettant de faire glisser vers une forme et des liens supplémentaires ou des objets créés. Par exemple, pour autoriser un commentaire à être déposé sur un élément auquel il doit être lié.|Définir une Directive de fusion sur la classe de domaine cible et définir les liens à générer. Dans les cas complexes, vous pouvez ajouter le code personnalisé. Consultez [personnalisation de la création d’élément et le déplacement des](../modeling/customizing-element-creation-and-movement.md).|  
 |Créer un groupe d’éléments avec un seul outil. Par exemple, un composant avec un ensemble fixe de ports.|Substituez la méthode d’initialisation de boîte à outils de ToolboxHelper.cs. Créer un Prototype de groupe élément (EGP) contenant les éléments et leurs liens de relation. Consultez [personnalisation des outils et la boîte à outils](../modeling/customizing-tools-and-the-toolbox.md).<br /><br /> Inclure les formes principal et le ports dans l’EGP, soit définir BoundsRules pour positionner les formes de port lorsque l’EGP est instancié. Consultez [emplacement de la forme et la taille de contrainte par BoundsRules](../modeling/boundsrules-constrain-shape-location-and-size.md).|  
 |Utilisez un outil de connexion pour instancier plusieurs types de relation.|Ajoutez les Directives de connexion de lien (LCD) pour le Générateur de connexion qui est appelé par l’outil. Les écrans LCD déterminent le type de la relation à partir des types des deux éléments. Pour en faire varient selon les États des éléments, vous pouvez ajouter le code personnalisé. Consultez [personnalisation des outils et la boîte à outils](../modeling/customizing-tools-and-the-toolbox.md).|  
 |Outils rémanentes – l’utilisateur peut double-cliquer sur n’importe quel outil pour créer de nombreuses formes ou des connecteurs à la suite.|Dans l’Explorateur DSL, sélectionnez le `Editor` nœud. Dans la fenêtre Propriétés, définissez **utilise des éléments de boîte à outils rémanentes**.|  
-|Définir des commandes de menu|Consultez [Comment : modifier une commande de Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|  
+|Définir des commandes de menu|Voir [Guide pratique pour modifier une commande de menu standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|  
 |Limiter le modèle avec des règles de validation|Consultez [Validation dans un langage spécifique à un domaine](../modeling/validation-in-a-domain-specific-language.md)|  
 |Générer le code, les fichiers de configuration ou les documents à partir d’un DSL.|[Génération de code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md)|  
 |Personnaliser la façon dont les modèles sont enregistrés au fichier.|Consultez [personnalisation du stockage de fichier et de sérialisation XML](../modeling/customizing-file-storage-and-xml-serialization.md)|  
@@ -81,6 +78,3 @@ Visual Studio de modélisation et de visualisation Kit de développement logicie
  [Comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md)   
  [Écriture de Code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
  [SDK de modélisation pour Visual Studio - Langages spécifiques à un domaine](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
-
-
-

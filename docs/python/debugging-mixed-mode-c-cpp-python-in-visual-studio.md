@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b8bba4541f27a64f553c985f50dbe535b82440cf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fc7148e9ba2ad9882f42d3c2acdb067329ec4ee5
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916828"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355232"
 ---
 # <a name="debug-python-and-c-together"></a>Déboguer conjointement Python et C++
 
@@ -57,13 +57,13 @@ Les fonctionnalités de débogage en mode mixte sont les suivantes, comme expliq
 
     Vous pouvez sélectionner d’autres types de codes, en plus ou au lieu du type **Natif**. Par exemple, si une application managée héberge CPython, qui utilise lui-même des modules d’extension natifs, et que vous souhaitez les déboguer tous les trois, vous pouvez sélectionner les types **Python**, **Natif** et **Managé** afin de bénéficier d’une expérience de débogage unifiée incluant des piles des appels combinées et l’exécution d’un débogage pas à pas portant sur les trois runtimes simultanément.
 
-1. Quand vous démarrez un débogage en mode mixte pour la première fois, une boîte de dialogue **Symboles Python obligatoires** peut s’afficher (consultez [Symboles pour le débogage en mode mixte](debugging-symbols-for-mixed-mode-c-cpp-python.md)). Vous ne devez installer les symboles qu’une seule fois pour un environnement Python donné. Les symboles sont automatiquement inclus si vous installez la prise en charge de Python par le biais du programme d’installation de Visual Studio 2017.
+1. Quand vous démarrez un débogage en mode mixte pour la première fois, une boîte de dialogue **Symboles Python obligatoires** peut s’afficher (consultez [Symboles pour le débogage en mode mixte](debugging-symbols-for-mixed-mode-c-cpp-python.md)). Vous ne devez installer les symboles qu’une seule fois pour un environnement Python donné. Les symboles sont automatiquement inclus si vous installez la prise en charge de Python via le programme d’installation de Visual Studio (Visual Studio 2017 et ultérieur).
 
 1. Pour mettre à disposition le code source du code Python standard pendant le débogage, rendez-vous sur [https://www.python.org/downloads/source/](https://www.python.org/downloads/source/), téléchargez l’archive correspondant à votre version, puis extrayez-la dans un dossier. Faites ensuite pointer Visual Studio vers des fichiers spécifiques dans ce dossier quand il vous le demande.
 
 ## <a name="enable-mixed-mode-debugging-in-a-cc-project"></a>Activer le débogage en mode mixte dans un projet C/C++
 
-Visual Studio 2017 (version 15.5 et ultérieur) prend en charge le débogage en mode mixte d’un projet C/C++ (par exemple, lors de [l’incorporation de Python dans une autre application, comme décrit sur python.org](https://docs.python.org/3/extending/embedding.html)). Pour activer le débogage en mode mixte, configurez le projet C/C++ pour lancer le **débogage Python/Natif** :
+Visual Studio (2017 version 15.5 et ultérieur) prend en charge le débogage en mode mixte d’un projet C/C++ (par exemple lors de [l’incorporation de Python dans une autre application, comme décrit sur python.org](https://docs.python.org/3/extending/embedding.html)). Pour activer le débogage en mode mixte, configurez le projet C/C++ pour lancer le **débogage Python/Natif** :
 
 1. Cliquez avec le bouton droit sur le projet C/C++ dans **l’Explorateur de solutions**, puis sélectionnez **Propriétés**.
 1. Sélectionnez l’onglet **Débogage**, choisissez **Débogage Python/natif** dans le **Débogueur à lancer**, puis sélectionnez **OK**.

@@ -27,12 +27,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 836c5be9df565d6171949845e36febc22024b20a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5db2476f16010f61af23c460fdd2bc78066c0e4a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752288"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868122"
 ---
 # <a name="general-environment-options-dialog-box"></a>Général, Environnement, boîte de dialogue Options
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Utilisez cette page pour modifier les thèmes de couleurs, les paramètres de la
  **Thème de couleur**  
  Choisissez le thème de couleur **Bleu**, **Clair** ou **Sombre** pour l’IDE.  
   
- Vous pouvez installer d’autres thèmes prédéfinis et créer des thèmes personnalisés en téléchargeant et en installant l’**éditeur de thème de couleur de Visual Studio 2015** à partir de la [galerie Visual Studio](https://visualstudiogallery.msdn.microsoft.com/site/search?f%5B0%5D.Type=RootCategory&f%5B0%5D.Value=tools). Une fois cet outil installé, d'autres thèmes de couleurs apparaissent dans la zone de liste des thèmes de couleurs.  
+ Pour installer d’autres thèmes prédéfinis et créer des thèmes personnalisés, téléchargez et installez **l’éditeur de thèmes de couleur de Visual Studio 2015** sur [Visual Studio Marketplace](https://marketplace.visualstudio.com). Une fois cet outil installé, d'autres thèmes de couleurs apparaissent dans la zone de liste des thèmes de couleurs.  
   
  Appliquer une 1ère lettre en majuscules à la barre de menus  
  Les initiales des menus sont en **majuscules** par défaut dans Visual Studio 2015. Désélectionnez cette option pour les définir sur **Tout en majuscules**.  

@@ -1,6 +1,6 @@
 ---
 title: 'Procédure : Utiliser des Assistants avec des modèles de projet'
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], wizards
@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ad50d22641d6b52d688c685fbf0f50fd0c54b31
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c4ff83c2d4d28b6393f7f6d03b01e35d9cc0aa4f
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723706"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324639"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Procédure : Utiliser des Assistants avec des modèles de projet
 
@@ -33,12 +33,12 @@ Le <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> méthodes d’interface 
 
 Vous commencez à créer un modèle personnalisé avec le projet de modèle de projet, qui fait partie du SDK Visual Studio. Dans cette procédure, nous allons utiliser un C# projet de modèle de projet, mais il existe également un projet de modèle de projet Visual Basic. Ensuite, vous ajoutez un projet VSIX à la solution qui contient le projet de modèle de projet.
 
-1. Créer un projet de modèle de projet c# (dans Visual Studio, **fichier** > **New** > **projet** > **Visual c#**   >  **Extensibilité** > **le modèle de projet c#**). Nommez-le **MyProjectTemplate**.
+1. Créer un C# projet de modèle de projet (dans Visual Studio, sélectionnez **fichier** > **New** > **projet** et recherchez « modèle de projet » ). Nommez-le **MyProjectTemplate**.
 
    > [!NOTE]
    > Vous pouvez être invité à installer le SDK Visual Studio. Pour plus d’informations, consultez [l’installation de Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
-2. Ajouter un nouveau projet VSIX (**fichier** > **New** > **projet** > **Visual C#**   >  **Extensibilité** > **projet VSIX**) dans la même solution que le projet de modèle de projet (dans **l’Explorateur de solutions**, Sélectionnez le nœud de la solution, avec le bouton droit, puis sélectionnez **ajouter** > **nouveau projet**). Nommez-le **MyProjectWizard.**
+2. Ajouter un nouveau projet VSIX dans la même solution que le projet de modèle de projet (dans **l’Explorateur de solutions**, sélectionnez le nœud de la solution, avec le bouton droit, puis sélectionnez **ajouter** > **nouveau projet**  et recherchez « vsix »). Nommez-le **MyProjectWizard.**
 
 3. Définissez le projet VSIX comme projet de démarrage. Dans **l’Explorateur de solutions**, sélectionnez le nœud du projet VSIX, avec le bouton droit, puis sélectionnez **définir comme projet de démarrage**.
 
@@ -50,7 +50,7 @@ Vous commencez à créer un modèle personnalisé avec le projet de modèle de p
 
 7. Générez la solution et commencez le débogage. Une seconde instance de Visual Studio apparaît. (Cela peut prendre quelques minutes.)
 
-8. Dans la deuxième instance de Visual Studio, essayez de créer un nouveau projet avec votre nouveau modèle (**fichier** > **New** > **projet > Visual C#**   >  **MonProjet modèle**). Le nouveau projet doit s’afficher avec une classe nommée **Class1**. Vous venez de créer un modèle de projet personnalisé ! Arrêter le débogage maintenant.
+8. Dans la deuxième instance de Visual Studio, essayez de créer un nouveau projet avec votre nouveau modèle (**fichier** > **New** > **projet**, recherchez » MonProjet »). Le nouveau projet doit s’afficher avec une classe nommée **Class1**. Vous venez de créer un modèle de projet personnalisé ! Arrêter le débogage maintenant.
 
 ## <a name="create-a-custom-template-wizard"></a>Assistant Création d’un modèle personnalisé
 
@@ -60,11 +60,11 @@ Cette procédure montre comment créer un Assistant personnalisé qui ouvre un f
 
 2. Dans **l’Explorateur de solutions**, sélectionnez le nœud du projet VSIX. Ci-dessous **l’Explorateur de solutions**, vous devez voir le **propriétés** fenêtre. Si vous ne le faites pas, sélectionnez **vue** > **fenêtre Propriétés**, ou appuyez sur **F4**. Dans le **propriétés** fenêtre, sélectionnez les champs suivants à `true`:
 
-   -   **IncludeAssemblyInVSIXContainer**
+   - **IncludeAssemblyInVSIXContainer**
 
-   -   **IncludeDebugSymbolsInVSIXContainer**
+   - **IncludeDebugSymbolsInVSIXContainer**
 
-   -   **IncludeDebugSymbolsInLocalVSIXDeployment**
+   - **IncludeDebugSymbolsInLocalVSIXDeployment**
 
 3. Ajoutez l’assembly en tant que ressource au projet VSIX. Ouvrez le *source.extension.vsixmanifest* fichier et sélectionnez le **actifs** onglet. Dans le **ajouter un nouveau composant** fenêtre, pour **Type** sélectionnez **Microsoft.VisualStudio.Assembly**, pour **Source** sélectionnez **A projet dans la solution actuelle**et pour **projet** sélectionnez **MyProjectWizard**.
 
@@ -157,7 +157,7 @@ Cette procédure montre comment créer un Assistant personnalisé qui ouvre un f
 
    - Un <xref:System.Object> tableau qui contient un ensemble de paramètres passé à l’Assistant par Visual Studio.
 
-     Cet exemple ajoute une valeur de paramètre à partir du formulaire d’entrée utilisateur pour le <xref:System.Collections.Generic.Dictionary%602> paramètre. Chaque instance de la `$custommessage$` paramètre dans le projet sera remplacé par le texte entré par l’utilisateur. Vous devez ajouter les assemblys suivants à votre projet : **Système** et **System.Drawing**.
+     Cet exemple ajoute une valeur de paramètre à partir du formulaire d’entrée utilisateur pour le <xref:System.Collections.Generic.Dictionary%602> paramètre. Chaque instance de la `$custommessage$` paramètre dans le projet sera remplacé par le texte entré par l’utilisateur. Ajoutez les assemblys suivants à votre projet : **Système** et **System.Drawing**.
 
 7. À présent créer le **UserInputForm**. Dans le *WizardImplementation.cs* , ajoutez le code suivant après la fin de la `WizardImplementation` classe.
 
@@ -228,7 +228,7 @@ Afin que votre modèle de projet personnalisés à utiliser votre Assistant pers
 
      *C:\Program fichiers (x86) \Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools*
 
-     Si vous ne trouvez pas l’outil, essayez d’exécuter **où /R.  Sn.exe** dans la fenêtre de commande. Prenez note du chemin d’accès.
+     Si vous ne trouvez pas l’outil, essayez d’exécuter **où /R. sn.exe** dans la fenêtre de commande. Prenez note du chemin d’accès.
 
 10. Extrayez la clé publique à partir de la *key.snk* fichier. Dans la fenêtre de commande, tapez
 
@@ -242,7 +242,7 @@ Afin que votre modèle de projet personnalisés à utiliser votre Assistant pers
 
      Là encore, n’oubliez pas les guillemets. Vous devez voir une ligne dans la sortie semblable à celle-ci
 
-     **Jeton de clé publique <token>**
+     **Jeton de clé publique est \<jeton >**
 
      Prenez note de cette valeur.
 
@@ -297,19 +297,19 @@ namespace $safeprojectname$
 
 Vous pouvez maintenant créer un projet à partir de votre modèle et utiliser l’Assistant personnalisé.
 
-1.  Régénérez la solution et démarrez le débogage. Une seconde instance de Visual Studio doit apparaître.
+1. Régénérez la solution et démarrez le débogage. Une seconde instance de Visual Studio doit apparaître.
 
-2.  Créer un nouveau projet MyProjectTemplate. (**Fichier** > **nouveau** > **projet** > **Visual C#**  >  **MyProjectTemplate**)
+2. Créer un nouveau projet MyProjectTemplate. (**Fichier** > **nouveau** > **projet**).
 
-3.  Dans le **nouveau projet** boîte de dialogue, localisez votre modèle, tapez un nom, puis cliquez sur **OK**.
+3. Dans le **nouveau projet** boîte de dialogue, recherchez « MonProjet » rechercher votre modèle, tapez un nom, puis cliquez sur **OK**.
 
      Le formulaire d’entrée de l’utilisateur d’Assistant s’ouvre.
 
-4.  Tapez une valeur pour le paramètre personnalisé, puis cliquez sur le bouton.
+4. Tapez une valeur pour le paramètre personnalisé, puis cliquez sur le bouton.
 
      Le formulaire d’entrée de l’utilisateur d’Assistant se ferme et un projet est créé à partir du modèle.
 
-5.  Dans **l’Explorateur de solutions**, cliquez sur le fichier de code source, puis cliquez sur **afficher le Code**.
+5. Dans **l’Explorateur de solutions**, cliquez sur le fichier de code source, puis cliquez sur **afficher le Code**.
 
      Notez que `$custommessage$` a été remplacé par le texte entré dans le formulaire d’entrée de l’utilisateur d’Assistant.
 

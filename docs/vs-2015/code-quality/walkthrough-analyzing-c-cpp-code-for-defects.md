@@ -1,14 +1,9 @@
 ---
-title: 'Procédure pas à pas : Analyse du Code C-C++ pour rechercher les erreurs | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure pas à pas : Analyse du Code C / C++ pour rechercher les erreurs | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - C/C++, code analysis
 - code analysis, walkthroughs
@@ -18,15 +13,15 @@ ms.assetid: eaee55b8-85fe-47c7-a489-9be0c46ae8af
 caps.latest.revision: 37
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 6a5e98ee673d232065dd522b0b81a21760306979
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3e82444513c4e8e766cb7c3201f54089aee3c817
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782308"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938528"
 ---
-# <a name="walkthrough-analyzing-cc-code-for-defects"></a>Procédure pas à pas : analyse du code C/C++ pour rechercher les erreurs
+# <a name="walkthrough-analyzing-cc-code-for-defects"></a>Procédure pas à pas : Analyse du code C/C++ pour détecter les erreurs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette procédure pas à pas montre comment analyser des défauts de code potentiels du code C/C++ à l’aide de l’outil d’analyse de code pour le code C/C++.  
@@ -57,7 +52,7 @@ Cette procédure pas à pas montre comment analyser des défauts de code potenti
   
      La solution de démonstration remplit désormais **l’Explorateur de solutions**.  
   
-2.  Sur le **Build** menu, cliquez sur **régénérer la Solution**.  
+2.  Dans le menu **Générer**, cliquez sur **Régénérer la solution**.  
   
      La solution se génère sans erreurs ni avertissements.  
   
@@ -83,7 +78,7 @@ Cette procédure pas à pas montre comment analyser des défauts de code potenti
   
 2.  Dans le **liste d’erreurs**, double-cliquez sur l’avertissement suivant :  
   
-     avertissement C6230 : cast implicite entre types sémantiquement différents : utilisation de HRESULT dans un contexte Boolean.  
+     avertissement C6230 : Cast implicite entre types sémantiquement différents : utilisation de HRESULT dans un contexte Boolean.  
   
      L’éditeur de code affiche la ligne qui a provoqué l’avertissement dans la fonction `bool``ProcessDomain()`. Cet avertissement indique qu’une valeur HRESULT est utilisé dans une instruction 'if' où un résultat booléen est attendu.  
   
@@ -95,7 +90,7 @@ Cette procédure pas à pas montre comment analyser des défauts de code potenti
   
 4.  Dans le **liste d’erreurs**, double-cliquez sur l’avertissement suivant :  
   
-     avertissement C6282 : opérateur Incorrect : assignation à la constante dans un contexte de test. == Est-il intentionnel ?  
+     avertissement C6282 : Opérateur incorrect : assignation à la constante dans un contexte de test. == Est-il intentionnel ?  
   
 5.  Corriger cet avertissement en testant l’égalité. Votre code doit ressembler au code suivant :  
   
@@ -137,7 +132,7 @@ Cette procédure pas à pas montre comment analyser des défauts de code potenti
   
 6.  Dans le **liste d’erreurs**, double-cliquez sur l’avertissement suivant :  
   
-     avertissement C6011 : déréférencement de pointeur NULL 'newNode'.  
+     avertissement C6011 : Déréférencement de pointeur NULL 'newNode'.  
   
      Cet avertissement indique que l’appelant pour vérifier la valeur de retour. Dans ce cas, un appel à **AllocateNode** peut retourner une valeur NULL (consultez le fichier d’en-tête annotations.h la déclaration de fonction d’AllocateNode).  
   
@@ -179,7 +174,7 @@ Cette procédure pas à pas montre comment analyser des défauts de code potenti
   
 3.  Dans le **liste d’erreurs**, double-cliquez sur l’avertissement suivant :  
   
-     avertissement C6011 : suppression de référence pointeur NULL 'node'.  
+     avertissement C6011 : Déréférencement de pointeur NULL 'node'.  
   
      Cet avertissement indique que le nœud passé dans la fonction peut être null et indique le numéro de ligne où l’avertissement a été déclenché.  
   
@@ -200,7 +195,4 @@ Cette procédure pas à pas montre comment analyser des défauts de code potenti
      Le projet est généré sans les avertissements ou erreurs.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : analyse du code managé pour les erreurs de code](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
-
-
-
+ [Procédure pas à pas : Analyse du code géré pour la recherche des défaillances du code](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

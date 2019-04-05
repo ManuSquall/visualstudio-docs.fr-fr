@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b727f1e4de34a0bde6b4caba570840cea6e1a201
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: af0bd2c315114444057ca05e9bb85691fe72e966
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950147"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416234"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Accéder à un modèle et le mettre à jour dans le code du programme
 
@@ -27,7 +27,7 @@ Vous pouvez écrire du code pour créer et supprimer des éléments de modèle, 
 
  Ce modèle est une instance de cette solution DSL :
 
- ![Modèle d’arbre généalogique de la famille Tudor](../modeling/media/tudor_familytreemodel.png)
+ ![Modèle d'arbre généalogique de la famille Tudor](../modeling/media/tudor_familytreemodel.png)
 
 ### <a name="references-and-namespaces"></a>Espaces de noms et références
  Pour exécuter le code dans cette rubrique, vous devez référencer :
@@ -226,27 +226,28 @@ using (Transaction t =
   Lorsque vous créez un élément de cette façon, un connecteur sur le diagramme est automatiquement créé, mais il a une forme par défaut, la couleur et autres fonctionnalités. Pour contrôler la façon dont le connecteur associé est créé, consultez [création d’un élément et sa forme](#merge).
 
 ##  <a name="deleteelements"></a> La suppression d’éléments
- Supprimer un élément en appelant `Delete()`:
 
- `henry.Delete();`
+Supprimer un élément en appelant `Delete()`:
 
- Cette opération supprimera également :
+`henry.Delete();`
+
+Cette opération supprimera également :
 
 - Liens de relation vers et à partir de l’élément. Par exemple, `edward.Parents` ne contient plus de `henry`.
 
 - Éléments à des rôles pour lesquels le `PropagatesDelete` indicateur a la valeur true. Par exemple, la forme qui affiche l’élément sera supprimée.
 
-  Par défaut, chaque relation d’incorporation a `PropagatesDelete` true au niveau du rôle cible. Suppression `henry` ne supprime pas le `familyTree`, mais `familyTree.Delete()` supprime tous les `Persons`. Pour plus d’informations, consultez [personnalisation du comportement de suppression](../modeling/customizing-deletion-behavior.md).
+Par défaut, chaque relation d’incorporation a `PropagatesDelete` true au niveau du rôle cible. Suppression `henry` ne supprime pas le `familyTree`, mais `familyTree.Delete()` supprime tous les `Persons`.
 
-  Par défaut, `PropagatesDelete` n’est pas vrai pour les rôles de relations de référence.
+Par défaut, `PropagatesDelete` n’est pas vrai pour les rôles de relations de référence.
 
-  Vous pouvez provoquer les règles de suppression omettre les propagations spécifiques lorsque vous supprimez un objet. Cela est utile si vous remplacez un seul élément d’une autre. Vous fournissez le GUID d’un ou plusieurs rôles pour lesquels la suppression ne doit pas être propagée. Le GUID peut être obtenu à partir de la classe de relation :
+Vous pouvez provoquer les règles de suppression omettre les propagations spécifiques lorsque vous supprimez un objet. Cela est utile si vous remplacez un seul élément d’une autre. Vous fournissez le GUID d’un ou plusieurs rôles pour lesquels la suppression ne doit pas être propagée. Le GUID peut être obtenu à partir de la classe de relation :
 
-  `henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
+`henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
 
-  (Cet exemple particulier n’a aucun effet, étant donné que `PropagatesDelete` est `false` pour les rôles de la `ParentsHaveChildren` relation.)
+(Cet exemple particulier n’a aucun effet, étant donné que `PropagatesDelete` est `false` pour les rôles de la `ParentsHaveChildren` relation.)
 
-  Dans certains cas, la suppression est interdite par l’existence d’un verrou, sur l’élément ou sur un élément qui serait supprimé par propagation. Vous pouvez utiliser `element.CanDelete()` pour vérifier si l’élément peut être supprimé.
+Dans certains cas, la suppression est interdite par l’existence d’un verrou, sur l’élément ou sur un élément qui serait supprimé par propagation. Vous pouvez utiliser `element.CanDelete()` pour vérifier si l’élément peut être supprimé.
 
 ##  <a name="deletelinks"></a> Suppression des liens de relation
  Vous pouvez supprimer un lien de relation en supprimant un élément à partir d’une propriété de rôle :
@@ -486,6 +487,6 @@ partial class MyDiagram
 - <xref:Microsoft.VisualStudio.Modeling.ModelElement>
 - [Validation dans un langage spécifique à un domaine](../modeling/validation-in-a-domain-specific-language.md)
 - [Génération de code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md)
-- [Guide pratique pour Utiliser des Transactions pour mettre à jour le modèle](../modeling/how-to-use-transactions-to-update-the-model.md)
+- [Guide pratique pour utiliser des transactions pour mettre à jour le modèle](../modeling/how-to-use-transactions-to-update-the-model.md)
 - [Intégration de modèles à l’aide de Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)
 - [Propagation et réponse aux modifications](../modeling/responding-to-and-propagating-changes.md)

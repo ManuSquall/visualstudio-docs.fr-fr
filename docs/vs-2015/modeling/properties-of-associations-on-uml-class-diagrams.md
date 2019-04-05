@@ -1,12 +1,9 @@
 ---
 title: Propriétés des associations dans UML des diagrammes de classes | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.common.association.properties
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: f82bcd34-7903-4c00-8da1-613efa07d223
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b132ee2aa0f67662fcfcad92b8ae945c2d66c680
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4a322ea68053012a2e8f53993f06768b966cb61d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810286"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949961"
 ---
 # <a name="properties-of-associations-on-uml-class-diagrams"></a>Propriétés des associations dans les diagrammes de classes UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +31,7 @@ Dans un diagramme de classes UML, vous pouvez dessiner *associations* entre tout
 
  Pour dessiner une association, cliquez sur **Association** dans la boîte à outils, cliquez sur le premier type, puis sur le second. Vous pouvez cliquer deux fois sur le même type pour indiquer que les instances peuvent être associées à d'autres instances du même type.  
 
-## <a name="properties"></a>Propriétés  
+## <a name="properties"></a>Properties  
  Il s'agit des propriétés d'une association dans un diagramme de classes UML.  
 
  Pour afficher les propriétés d’une association, cliquez sur l’association, puis **propriétés**. Les propriétés s'affichent dans la fenêtre Propriétés.  
@@ -45,10 +42,10 @@ Dans un diagramme de classes UML, vous pouvez dessiner *associations* entre tout
 
 |**Property**|Description|  
 |------------------|-----------------|  
-|**Nom (1)**|Identifie l'association. Apparaît également dans le diagramme, près du point central de l'association.|  
+|**Name (1)**|Identifie l'association. Apparaît également dans le diagramme, près du point central de l'association.|  
 |**Nom qualifié**|Identifie l'association de manière unique. A pour préfixe le nom qualifié du package qui contient le premier rôle de l'association.|  
 |**Éléments de travail**|Nombre d'éléments de travail liés à cette association. Pour lier des éléments de travail, voir [lier des éléments de modèle et des éléments de travail](../modeling/link-model-elements-and-work-items.md).|  
-|**Couleur**|Couleur du connecteur. Contrairement aux autres propriétés, il s'agit d'une propriété de cette vue de l'association, et non d'une propriété de la relation sous-jacente dans le modèle.|  
+|**Color**|Couleur du connecteur. Contrairement aux autres propriétés, il s'agit d'une propriété de cette vue de l'association, et non d'une propriété de la relation sous-jacente dans le modèle.|  
 |**Premier rôle**<br /><br /> **Second rôle**|Chaque extrémité de l'association correspond à un rôle. Chaque rôle décrit les propriétés de l'attribut équivalent sur la classe, à l'extrémité opposée de l'association.<br /><br /> Dans l'exemple de diagramme, l'association entre Menu et Élément de menu dispose de rôles appelés Menu et Contenu.<br /><br /> Le contenu correspond au nom d'un attribut sur la classe Menu.|  
 
 ### <a name="properties-of-each-role"></a>Propriétés de chaque rôle  
@@ -65,15 +62,12 @@ Dans un diagramme de classes UML, vous pouvez dessiner *associations* entre tout
 |   **Est en lecture seule**   |             False             |                                                                                                                                                                                                                                                                                   Si la valeur est True, une instance de l'association ne peut pas être modifiée après sa création. Le lien pointe toujours vers le même objet.                                                                                                                                                                                                                                                                                    |
 | **Multiplicité (3)** |               1               | **1** -cette extrémité de l’association est toujours liée à un objet. Dans l'illustration, chaque élément de menu possède un menu.<br /><br /> **valeur 0.. 1** - soit cette extrémité de l’association liée à un objet, ou il n’existe aucun lien.<br /><br /> **\\**\* -chaque objet à l’autre extrémité de l’association est lié à une collection d’objets à cette fin, et la collection peut être vide.<br /><br /> **1..\\**  \* -chaque objet à l’autre extrémité de l’association est lié au moins un objet à cette fin. Dans l'illustration, chaque menu possède au moins un élément de menu.<br /><br /> *n* **..** *m* -chaque objet à l’autre extrémité possède une collection d’entre *n* et *m* des liens vers des objets de cette extrémité. |
 |    **Est ordonné**    |             False             |                                                                                                                                                                                                                                                                                                  Si la valeur est True, la collection retournée forme une liste séquentielle. Pour une valeur Multiplicity supérieure à 1.                                                                                                                                                                                                                                                                                                   |
-|    **Est Unique**     |             False             |                                                                                                                                                                                                                                                                                              Si la valeur est True, la collection retournée ne contient pas de valeur en double. Pour une valeur Multiplicity supérieure à 1.                                                                                                                                                                                                                                                                                              |
+|    **Est unique**     |             False             |                                                                                                                                                                                                                                                                                              Si la valeur est True, la collection retournée ne contient pas de valeur en double. Pour une valeur Multiplicity supérieure à 1.                                                                                                                                                                                                                                                                                              |
 |    **Visibilité**    |            Public             |                                                                                                                                                                                                                                 Public : visible globalement<br /><br /> Private : non visible en dehors du type propriétaire<br /><br /> Protected : visible par les types dérivés du propriétaire<br /><br /> Package : visible par les autres types dans le même package                                                                                                                                                                                                                                  |
 
 ## <a name="see-also"></a>Voir aussi  
- [Diagrammes de classes UML : référence](../modeling/uml-class-diagrams-reference.md)   
+ [Diagrammes de classes UML : Référence](../modeling/uml-class-diagrams-reference.md)   
  [Propriétés de types de diagrammes de classes UML](../modeling/properties-of-types-on-uml-class-diagrams.md)   
  [Propriétés d’attributs dans des diagrammes de classes UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [Propriétés d’opérations sur les diagrammes de classes UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
- [Diagrammes de classes UML : recommandations](../modeling/uml-class-diagrams-guidelines.md)
-
-
-
+ [Diagrammes de classes UML : Recommandations](../modeling/uml-class-diagrams-guidelines.md)

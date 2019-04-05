@@ -1,29 +1,24 @@
 ---
-title: 'Comment : créer un contrôle de boîte à outils qui utilise Windows Forms | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Créer un contrôle de boîte à outils qui utilise Windows Forms | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - Toolbox control
 - winforms
 - toolbox
 ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
-manager: douge
-ms.openlocfilehash: 2860f3fca32b3a87967a404fb47626416d9f5dce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7bb327ff7cd3909e4d860203322a9b72aa71fbf3
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263716"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001435"
 ---
-# <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Comment : créer un contrôle de boîte à outils qui utilise Windows Forms
+# <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Procédure : Créer un contrôle de boîte à outils qui utilise Windows Forms
 Le modèle de contrôle de boîte à outils Windows Forms inclus dans le [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] vous permet de créer des contrôles Windows Forms qui sont automatiquement ajoutés à la **boîte à outils** au moment où l’extension est installée. Cette rubrique vous montre comment utiliser le modèle pour créer un contrôle de **boîte à outils** que vous pouvez distribuer à d’autres utilisateurs.  
   
 > [!NOTE]
@@ -92,7 +87,7 @@ Le modèle de contrôle de boîte à outils Windows Forms inclus dans le [!INCLU
   
 2.  Chargez le fichier .vsix sur un réseau ou un site web.  
   
-     Si vous chargez le fichier sur le site web [Galerie Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) , les autres utilisateurs peuvent utiliser le **Gestionnaire d’extensions** de Visual Studio pour rechercher le contrôle et l’installer.  
+     Si vous chargez le fichier à la [Visual Studio Marketplace](https://marketplace.visualstudio.com/) site Web, les autres utilisateurs peuvent utiliser **Gestionnaire d’extensions** dans Visual Studio pour rechercher le contrôle et l’installer.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Création d’un contrôle de boîte à outils WPF](../extensibility/creating-a-wpf-toolbox-control.md)

@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4d71c74f54e2ce2a79ffff44d8054c15bd3b4a86
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 9f175e8870795374ab35058ef163f4752115d5be
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54835084"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567245"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Bienvenue dans Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -97,7 +97,7 @@ Bienvenue dans Visual Studio ! Nous vous offrons tout ce dont vous avez besoin p
 |||||
 |-|-|-|-|
 |[Nouveautés de Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)|[Nouveautés dans Visual C#](http://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[Nouveautés de .NET Framework 4.6](http://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[Nouveautés dans ALM](http://msdn.microsoft.com/54b98a53-6083-4303-869a-8063d8fae938)|
-|[Nouveautés dans C++](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Nouveautés dans Visual Basic](http://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[Nouveautés de JavaScript](/visualstudio/scripting-docs/javascript/what-s-new-in-javascript)||
+|[Nouveautés dans C++](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Nouveautés dans Visual Basic](http://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[Nouveautés de JavaScript](javascript/javascript-in-visual-studio.md#whats-new-in-javascript)||
 |[Python](./python/getting-started-with-python.md)||||
 
 ## <a name="in-this-section"></a>Dans cette section

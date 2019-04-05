@@ -1,25 +1,22 @@
 ---
-title: 'Comment : appeler une opération de contrat Windows Communication Foundation (hérité) | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Appeler une opération de contrat Windows Communication Foundation (hérité) | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: a9058345-708f-4fcf-8739-2a43e5285b7a
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 5e59d5ed9617d4be71a0542e35dd509d9035ae33
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b6cdd551a0cf8ee085359f5545dd16dfac163c4d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181842"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58947875"
 ---
-# <a name="how-to-invoke-a-windows-communication-foundation-contract-operation-legacy"></a>Procédure : appeler une opération de contrat Windows Communication Foundation (héritée)
+# <a name="how-to-invoke-a-windows-communication-foundation-contract-operation-legacy"></a>Procédure : Appeler une opération de contrat Windows Communication Foundation (héritée)
 Cette rubrique décrit comment appeler une opération de contrat [!INCLUDE[indigo1](../includes/indigo1-md.md)] à l'aide du [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité qui cible le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
  Après avoir fait glisser un **SendActivity** activité à partir de la boîte à outils vers l’aire de conception de workflow, vous devez importer un contrat existant et déterminer quelle opération doit être appelée à partir de là **SendActivity** activité. Vous sélectionnez votre contrat et ses opérations via la [opération boîte de dialogue Choisir (hérité)](../workflow-designer/choose-operation-dialog-box-legacy.md).  
@@ -52,5 +49,5 @@ Cette rubrique décrit comment appeler une opération de contrat [!INCLUDE[indig
   
 ## <a name="see-also"></a>Voir aussi  
  [Choisissez l’opération, boîte de dialogue (hérité)](../workflow-designer/choose-operation-dialog-box-legacy.md)   
- [Comment : implémenter une opération de contrat WCF (héritée)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)   
+ [Guide pratique pour Implémenter une opération de contrat WCF (héritée)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)   
  [Activités de flux de travail héritées](../workflow-designer/legacy-workflow-activities.md)

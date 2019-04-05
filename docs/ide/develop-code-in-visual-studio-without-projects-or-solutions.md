@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12f232de6f758f5f1fcca28bcf1adf473e5e7153
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 7554d3f89547701e1a7cad0280a1655450520586
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718546"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323649"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Développer du code dans Visual Studio sans projets ni solutions
 
@@ -37,7 +37,7 @@ Vous pouvez ouvrir du code dans Visual Studio de différentes façons :
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-- Choisissez le lien **Ouvrir le dossier** dans la Fenêtre de démarrage.
+- Choisissez le lien **Ouvrir le dossier** dans la fenêtre de démarrage.
 ::: moniker-end
 
 - Si vous préférez utiliser le clavier, appuyez sur **Ctrl**+**Maj**+**Alt**+**O** dans Visual Studio.
@@ -103,7 +103,7 @@ Si votre codebase contient du code Python ou JavaScript, il est inutile de confi
 
 ### <a name="codebases-that-contain-c-code"></a>Codebases qui contiennent du code C++
 
-Pour savoir comment ouvrir du code C++ sans solutions ni projets dans Visual Studio, consultez la page [Ouvrir des projets de dossier pour C++](/cpp/ide/non-msbuild-projects).
+Pour savoir comment ouvrir du code C++ sans solutions ni projets dans Visual Studio, consultez la page [Ouvrir des projets de dossier pour C++](/cpp/build/open-folder-projects-cpp).
 
 ### <a name="codebases-that-contain-a-visual-studio-project"></a>Codebases qui contiennent un projet Visual Studio
 
@@ -118,6 +118,6 @@ Le texte du bouton **Démarrer** évolue pour refléter le fait que le projet es
 ## <a name="see-also"></a>Voir aussi
 
 - [Personnaliser des tâches de génération et de débogage](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
-- [Ouvrir des projets de dossier pour C++](/cpp/ide/non-msbuild-projects)
-- [Projets CMake dans C++](/cpp/ide/cmake-tools-for-visual-cpp)
+- [Ouvrir des projets de dossier pour C++](/cpp/build/open-folder-projects-cpp)
+- [Projets CMake dans C++](/cpp/build/cmake-projects-in-visual-studio)
 - [Écriture de code dans l’éditeur de code et de texte](../ide/writing-code-in-the-code-and-text-editor.md)

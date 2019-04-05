@@ -1,25 +1,22 @@
 ---
 title: Présentation des modèles, des Classes et des relations | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, models
 ms.assetid: 2ecd569c-b369-41ea-b78e-a61b62e2e4e9
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b86e9bd2aa11f098b26edf90f3ed415c66b874a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 678e7a9c32f8c69e9f0bac5ebc3a077e7e625771
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271789"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954136"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Présentation des modèles, des classes et des relations
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +28,13 @@ Un langage spécifique à un domaine (DSL) est défini par son fichier de défin
 ## <a name="the-dsl-definition"></a>La définition DSL  
  Lorsque vous ouvrez `Dsl\DslDefinition.dsl`, votre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fenêtre ressemble à l’image suivante.  
   
- ![concepteur DSL](../modeling/media/dsl-designer.png "dsl_designer")  
+ ![concepteur dsl](../modeling/media/dsl-designer.png "dsl_designer")  
   
  Les informations les plus importantes dans la définition DSL s’affiche dans le diagramme de définition DSL. Des informations supplémentaires, qui fait également partie de DslDefinition.dsl, s’affiche dans l’Explorateur DSL, qui apparaît généralement sur le côté du diagramme. Vous travaillez avec le schéma pour les tâches les plus fréquentes et avec l’Explorateur DSL pour les personnalisations plus avancées.  
   
  Le diagramme de définition DSL montre les classes de domaine qui définissent des éléments de modèle et les relations qui définissent des liens entre éléments de modèle. Il montre également les formes et connecteurs qui sont utilisées pour afficher les éléments de modèle à l’utilisateur.  
   
- ![concepteur DSL avec couloir](../modeling/media/dsl-desinger.png "dsl_desinger")  
+ ![concepteur dsl avec couloir](../modeling/media/dsl-desinger.png "dsl_desinger")  
   
  Lorsque vous sélectionnez un élément dans la définition DSL, dans le diagramme ou dans l’Explorateur DSL, les informations le concernant s’affiche dans la fenêtre Propriétés. Informations supplémentaires peuvent être affichées dans la fenêtre Détails DSL.  
   
@@ -59,9 +56,9 @@ Un langage spécifique à un domaine (DSL) est défini par son fichier de défin
   
  ![Relations d’incorporation et de référence](../modeling/media/music-classes.png "Music_Classes")  
   
- L’illustration montre quatre classes de domaine : musique, Album, artiste et morceau. Les classes de domaine définissent les propriétés de domaine comme nom, titre et ainsi de suite. Dans le modèle d’instance, les valeurs de certaines de ces propriétés sont affichées dans le diagramme.  
+ L’illustration montre quatre classes de domaine : Musique, Album, artiste et morceau. Les classes de domaine définissent les propriétés de domaine comme nom, titre et ainsi de suite. Dans le modèle d’instance, les valeurs de certaines de ces propriétés sont affichées dans le diagramme.  
   
- Entre les classes sont des relations de domaine : MusicHasAlbums, MusicHasArtists, AlbumbHasSongs et ArtistAppearedOnAlbums. Les relations ont les multiplicités telles que 1..1, 0.. *. Par exemple, chaque chanson doit être associé à exactement un Album via la relation AlbumHasSongs. Chaque Album peut avoir autant de morceaux de musique.  
+ Entre les classes sont des relations de domaine : MusicHasAlbums MusicHasArtists, AlbumbHasSongs et ArtistAppearedOnAlbums. Les relations ont les multiplicités telles que 1..1, 0.. *. Par exemple, chaque chanson doit être associé à exactement un Album via la relation AlbumHasSongs. Chaque Album peut avoir autant de morceaux de musique.  
   
 ### <a name="rearranging-the-dsl-definition-diagram"></a>Réorganiser le diagramme de définition DSL  
  Notez qu’une classe de domaine peut apparaître plusieurs fois sur le diagramme de définition DSL, comme le fait Album dans cette image. Il y a toujours une vue principale, et il peut y avoir certains *référence* vues.  
@@ -157,7 +154,4 @@ Un langage spécifique à un domaine (DSL) est défini par son fichier de défin
   
 ## <a name="see-also"></a>Voir aussi  
  [Relations de domaine dans l’API générée](../misc/domain-relationships-in-the-generated-api.md)   
- [Glossaire des outils Domain-Specific Language](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Glossaire des Outils Domain-Specific Language](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

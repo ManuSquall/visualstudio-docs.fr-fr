@@ -2,7 +2,6 @@
 title: Interface IScriptEntry | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9d7b33e2e5c90d5c489fe283575b4a2e45671f9a
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 0dc50a6aa5cf032827feac6b483b141b79f60e77
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54349346"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58148124"
 ---
 # <a name="iscriptentry-interface"></a>IScriptEntry, interface
 Un objet qui implémente le `IScriptEntry` interface représente un bloc de script ou un objet de fonction.  

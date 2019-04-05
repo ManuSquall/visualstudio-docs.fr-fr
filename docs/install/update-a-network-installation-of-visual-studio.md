@@ -13,14 +13,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a59bbac5140e4267a52847a2152862057ce24210
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 4f7f7a7297b7cc48b9300c21875af5a0971136e1
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796632"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475979"
 ---
-# <a name="update-a-network-based-installation-of-visual-studio-2017"></a>Mettre à jour une installation réseau de Visual Studio 2017
+# <a name="update-a-network-based-installation-of-visual-studio"></a>Mettre à jour une installation réseau de Visual Studio
 
 Il est possible de mettre à jour une disposition d’installation réseau de Visual Studio avec les dernières mises à jour de produit, afin de pouvoir l’utiliser comme point d’installation de la dernière mise à jour de Visual Studio, et pour gérer aussi les installations déjà déployées sur les stations de travail clientes.
 
@@ -100,6 +102,9 @@ Le fichier vs_enterprise.exe peut être appelé à l’intérieur du répertoire
 > Certains fichiers de métadonnées importantes, qui sont nécessaires à l’option `--verify`, doivent se trouver dans le cache hors connexion de la disposition. Si ces fichiers de métadonnées sont manquants, "--verify" ne peut pas s’exécuter et le programme d’installation signale une erreur. Si vous rencontrez cette erreur, recréez une nouvelle disposition en mode hors connexion dans un dossier différent (ou dans le même dossier de cache hors connexion). Pour cela, exécutez la même commande de disposition que celle que vous avez utilisée pour créer la disposition hors connexion initiale. Par exemple, `Vs_enterprise.exe --layout <layoutDir>`.
 
 Comme Microsoft fournit régulièrement des mises à jour de Visual Studio, la version de la nouvelle disposition que vous créez peut donc être différente de celle de la disposition initiale.
+
+> [!NOTE]
+> La vérification fonctionne seulement pour la dernière version d’une version mineure spécifique de Visual Studio. Dès qu’une nouvelle version est publiée, la vérification ne fonctionne plus pour les versions du niveau de correctif antérieures de la même version mineure.
 
 ## <a name="how-to-fix-a-layout"></a>Comment corriger une disposition
 

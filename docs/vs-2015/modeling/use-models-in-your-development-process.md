@@ -1,13 +1,8 @@
 ---
 title: Utiliser des modèles dans votre processus de développement | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - UML, using models
@@ -15,18 +10,18 @@ ms.assetid: a33ac8fc-4ba0-4850-b71b-014dc8674e54
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 56534483f8b9cda99b756524d87408efbedfe275
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c75b2aa7d4796a97370f414f0b7286c271b4c977
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757701"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "59001204"
 ---
 # <a name="use-models-in-your-development-process"></a>Utiliser des modèles dans votre processus de développement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dans Visual Studio, vous pouvez utiliser un modèle pour vous aider à comprendre et à modifier un système, une application ou un composant. Un modèle peut vous aider à visualiser le monde dans lequel votre système fonctionne, à clarifier les besoins des utilisateurs, à définir l'architecture de votre système, à analyser le code et à vous assurer qu'il répond aux impératifs. Voir [Channel 9 Video : améliorer l’architecture par une modélisation de](http://go.microsoft.com/fwlink/?LinkID=252078).  
+Dans Visual Studio, vous pouvez utiliser un modèle pour vous aider à comprendre et à modifier un système, une application ou un composant. Un modèle peut vous aider à visualiser le monde dans lequel votre système fonctionne, à clarifier les besoins des utilisateurs, à définir l'architecture de votre système, à analyser le code et à vous assurer qu'il répond aux impératifs. Consultez [vidéo Channel 9 : Améliorer l’architecture via la modélisation](http://go.microsoft.com/fwlink/?LinkID=252078).  
   
  Pour connaître les versions de Visual Studio qui prennent en charge chaque type de modèle, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -104,7 +99,7 @@ Dans Visual Studio, vous pouvez utiliser un modèle pour vous aider à comprendr
   
 -   Cas d'usage. Vous pouvez lier un cas d'usage aux tâches de développement qui l'implémenteront.  
   
--   Extensions de cas d'usage. Si seul l'un des aspects d'un cas d'usage sera implémenté dans une itération, vous pouvez le séparer dans un cas d'usage de base avec une ou plusieurs extensions. Les extensions sont des cas d'usage liés au cas de base avec la relation « étendre ». Pour plus d’informations sur l’extension du cas d’utilisation, consultez [diagrammes de cas d’utilisation UML : référence](../modeling/uml-use-case-diagrams-reference.md).  
+-   Extensions de cas d'usage. Si seul l'un des aspects d'un cas d'usage sera implémenté dans une itération, vous pouvez le séparer dans un cas d'usage de base avec une ou plusieurs extensions. Les extensions sont des cas d'usage liés au cas de base avec la relation « étendre ». Pour plus d’informations sur l’extension du cas d’utilisation, consultez [UML utiliser des diagrammes de cas : Référence](../modeling/uml-use-case-diagrams-reference.md).  
   
 -   Commentaires décrivant les règles métier ou les impératifs de qualité de service. Pour plus d’informations, consultez [modéliser les besoins de l’utilisateur](../modeling/model-user-requirements.md).  
   
@@ -137,18 +132,15 @@ Dans Visual Studio, vous pouvez utiliser un modèle pour vous aider à comprendr
   
 |**Catégorie**|**Liens**|  
 |------------------|---------------|  
-|**Vidéos**|![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") [MSDN vidéos de procédure : comment créer et utiliser les modèles UML et des diagrammes (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9 : UML with Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") [série MSDN Comment faire : outils UML et extensibilité (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|  
+|**Vidéos**|![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") [MSDN vidéos de procédure : Comment créer et utiliser des modèles UML et diagrammes (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9 : UML avec Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") [série MSDN Comment faire : Outils UML et extensibilité (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|  
 |**Forums**|-   [Outils de visualisation et de modélisation Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling (outils DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
 |**Blogs**|[Blog Visual Studio ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**Articles et journaux techniques**|[Centre d’architecture MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Guide des outils d’architecture Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Utiliser des modèles dans le développement Agile](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+ [Utiliser des modèles dans le développement Agile](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
  [Créer des modèles pour votre application](../modeling/create-models-for-your-app.md)   
  [Modéliser les besoins des utilisateurs](../modeling/model-user-requirements.md)   
  [Modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md)   
  [Développer des tests à partir d’un modèle](../modeling/develop-tests-from-a-model.md)   
  [Structurer votre solution de modélisation](../modeling/structure-your-modeling-solution.md)
-
-
-

@@ -1,27 +1,22 @@
 ---
 title: Accolades correspondantes dans un Service de langage hérité | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - brace matching
 - language services [managed package framework], brace matching
 ms.assetid: 4e3d0a70-f22f-49dd-92d8-edf48ab62b52
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 70ad3062a4cbbce8ef46c3afe8851382949fe3f3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 03420aa0638fcf12fa36fb871b4a14d2695f0377
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753214"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952706"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Accolades correspondantes dans un service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ Correspondance d’accolade permet le développeur à effectuer le suivi des él
   
  Vous pouvez faire correspondre deux ou trois éléments qui se produisent conjointement, appelées paires et triples. Triplets sont des ensembles de trois éléments qui se produisent conjointement. Par exemple, en c#, le `foreach` instruction constitue un triple : «`foreach()`«, »`{`», et «`}`». Les trois éléments sont mis en surbrillance quand l’accolade fermante est tapée.  
   
- Services de langage hérité sont implémentés en tant que partie d’un VSPackage, mais la plus récente pour implémenter des fonctionnalités de service de langage consiste à utiliser des extensions MEF. Pour en savoir plus sur la nouvelle façon d’implémenter les accolades correspondantes, consultez [procédure pas à pas : affichage d’accolades correspondantes](../../extensibility/walkthrough-displaying-matching-braces.md).  
+ Services de langage hérité sont implémentés en tant que partie d’un VSPackage, mais la plus récente pour implémenter des fonctionnalités de service de langage consiste à utiliser des extensions MEF. Pour en savoir plus sur la nouvelle façon d’implémenter les accolades correspondantes, consultez [procédure pas à pas : Affichage d’accolades correspondantes](../../extensibility/walkthrough-displaying-matching-braces.md).  
   
 > [!NOTE]
 >  Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.  
@@ -145,4 +140,3 @@ namespace TestLanguagePackage
 ## <a name="see-also"></a>Voir aussi  
  [Fonctionnalités de Service de langage hérité](../../extensibility/internals/legacy-language-service-features1.md)   
  [Scanneur et analyseur du service de langage hérité](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
-

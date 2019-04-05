@@ -1,27 +1,22 @@
 ---
-title: 'Comment : inscrire un Service | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Inscrire un Service | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - services, registering
 ms.assetid: d086be78-ec3c-43cc-b799-5180a71e19f1
 caps.latest.revision: 16
-manager: douge
-ms.openlocfilehash: a1f8026a648b2a0809af17664d4399f815c329be
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0ec69fa123775cb477195d4022fb439fb990f415
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206256"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001648"
 ---
-# <a name="how-to-register-a-service"></a>Procédure : inscription d’un service
+# <a name="how-to-register-a-service"></a>Procédure : Inscrire un Service
 Un MPF (Managed Package Framework) fournit des attributs permettant de contrôler l’inscription des services gérés. L’utilitaire RegPkg utilise ces attributs pour inscrire un service dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="example"></a>Exemple  
@@ -46,5 +41,5 @@ Un MPF (Managed Package Framework) fournit des attributs permettant de contrôle
 >  Même s’il est possible d’utiliser le même type ou le même GUID pour le service et l’interface, nous vous le déconseillons, car un service peut exposer plusieurs interfaces.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Inscription de VSPackages](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd)   
+ [Inscription de VSPackages](../extensibility/internals/registering-vspackages.md)   
  [Éléments fondamentaux du service](../extensibility/internals/service-essentials.md)

@@ -11,16 +11,16 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 9d1a64da1e27f5d3504608441306e820b4547539
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 694a9f7ba6bd5870a54b6b10e028c463d47ababf
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710823"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355800"
 ---
-# <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Débogage distant ASP.NET Core sur IIS dans Azure dans Visual Studio 2017
+# <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Débogage distant ASP.NET Core sur IIS dans Azure dans Visual Studio
 
-Ce guide explique comment paramétrer et configurer une application ASP.NET Core Visual Studio 2017, déployez-le sur IIS à l’aide d’Azure et attacher le débogueur distant à partir de Visual Studio.
+Ce guide explique comment paramétrer et configurer une application ASP.NET Core Visual Studio, déployez-le sur IIS à l’aide d’Azure et attacher le débogueur distant à partir de Visual Studio.
 
 La méthode recommandée pour déboguer à distance sur Azure dépend de votre scénario :
 
@@ -42,22 +42,31 @@ La méthode recommandée pour déboguer à distance sur Azure dépend de votre s
 > [!WARNING]
 > Veillez à supprimer les ressources Azure que vous créez lorsque vous avez effectué les étapes de ce didacticiel. De cette façon, que vous pouvez éviter d’encourir des frais inutiles.
 
+## <a name="prerequisites"></a>Prérequis
 
-### <a name="requirements"></a>Spécifications
+::: moniker range=">=vs-2019"
+Visual Studio 2019 est nécessaire pour suivre les étapes indiquées dans cet article.
+::: moniker-end
+::: moniker range="vs-2017"
+Visual Studio 2017 est nécessaire pour suivre les étapes indiquées dans cet article.
+::: moniker-end
+
+### <a name="network-requirements"></a>Configuration réseau requise
 
 Débogage entre deux ordinateurs connectés via un proxy n’est pas pris en charge. Débogage sur une latence élevée ou faible bande passante, telles que la numérotation Internet, ou via Internet entre les pays n’est pas recommandé et peut échouer ou être trop faibles. Pour obtenir une liste complète des exigences, consultez [exigences](../debugger/remote-debugging.md#requirements_msvsmon).
 
-## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Créer l’application ASP.NET Core sur l’ordinateur Visual Studio 2017
+## <a name="create-the-aspnet-core-application-on-the-visual-studio-computer"></a>Créer l’application ASP.NET Core sur l’ordinateur Visual Studio
 
-1. Créez une nouvelle application ASP.NET Core. (Choisissez **fichier > Nouveau > projet**, puis sélectionnez **Visual C# > Web > Application Web ASP.NET Core**).
+1. Créez une nouvelle application ASP.NET Core.
 
-    Dans le **ASP.NET Core** section de modèles, sélectionnez **Web Application**.
+    ::: moniker range=">=vs-2019"
+    Dans Visual Studio 2019, tapez **Ctrl + Q** pour ouvrir la zone de recherche, tapez **asp.net**, choisissez **modèles**, puis choisissez **créer la nouvelle Application de Web ASP.NET Core** . Dans la boîte de dialogue qui s’affiche, nommez le projet **MyASPApp**, puis choisissez **créer**. Ensuite, choisissez **l’Application Web (Model-View-Controller)**, puis choisissez **créer**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Dans Visual Studio 2017, choisissez **fichier > Nouveau > projet**, puis sélectionnez **Visual C# > Web > Application Web ASP.NET Core**. Dans la section modèles ASP.NET Core, sélectionnez **l’Application Web (Model-View-Controller)**. Assurez-vous que ASP.NET Core 2.1 est sélectionné, qui **activer la prise en charge Docker** n’est pas sélectionnée et que **authentification** a la valeur **aucune authentification**. Nommez le projet **MyASPApp**.
+    ::: moniker-end
 
-2. Assurez-vous que l’option **ASP.NET Core 2.0** est sélectionnée, qui **activer la prise en charge Docker** est **pas** sélectionné et que **authentification** est défini sur **Aucune authentification**.
-
-3. Nommez le projet **MyASPApp** et cliquez sur **OK** pour créer la solution.
-
-4. Ouvrez le fichier About.cshtml.cs et définissez un point d’arrêt dans le `OnGet` (méthode) (dans les modèles plus anciens, open Homecontrôleur.cs au lieu de cela et définir le point d’arrêt dans le `About()` méthode).
+1. Ouvrez le fichier About.cshtml.cs et définissez un point d’arrêt dans le `OnGet` (méthode) (dans les modèles plus anciens, open Homecontrôleur.cs au lieu de cela et définir le point d’arrêt dans le `About()` méthode).
 
 ## <a name="remote_debug_azure_app_service"></a> Débogage distant ASP.NET Core sur un Azure App Service
 
@@ -87,9 +96,9 @@ Débogage entre deux ordinateurs connectés via un proxy n’est pas pris en cha
 
 Vous pouvez créer une machine virtuelle Azure pour Windows Server et puis installer et configurer IIS et les autres composants logiciels requis. Cela prend plus de temps qu’un déploiement dans Azure App Service et nécessite que vous suivez les étapes restantes de ce didacticiel.
 
-Tout d’abord, suivez toutes les étapes décrites dans [installer et exécuter IIS](/azure/virtual-machines/windows/quick-create-portal).
-
-Lorsque vous ouvrez le port 80 dans le groupe de sécurité réseau, vous devez également ouvrir le port 4022 pour le débogueur distant. De cette façon, vous ne devrez pas ouvrir ultérieurement.
+Ces procédures ont été testées sur ces configurations de serveur :
+* Windows Server 2012 R2 et IIS 8
+* Windows Server 2016 et IIS 10
 
 ### <a name="app-already-running-in-iis-on-the-azure-vm"></a>Application déjà en cours d’exécution dans IIS sur la machine virtuelle Azure ?
 
@@ -98,6 +107,10 @@ Cet article contient des instructions sur la configuration d’une configuration
 * Si votre application s’exécute dans IIS et que vous souhaitez simplement télécharger le débogueur distant et démarrer le débogage, accédez à [télécharger et installer les outils à distance sur Windows Server](#BKMK_msvsmon).
 
 * Si vous souhaitez une aide pour vous assurer que votre application est configurée, déployé et fonctionne correctement dans IIS afin que vous puissiez déboguer, suivez les étapes dans cette rubrique.
+
+    * Avant de commencer, suivez les étapes décrites dans [installer et exécuter IIS](/azure/virtual-machines/windows/quick-create-portal).
+
+    * Lorsque vous ouvrez le port 80 dans le groupe de sécurité réseau, vous devez également ouvrir le [corriger port](#bkmk_openports) pour le débogueur distant (4024 ou 4022). De cette façon, vous ne devrez pas ouvrir ultérieurement.
 
 ### <a name="update-browser-security-settings-on-windows-server"></a>Mettre à jour les paramètres de sécurité de navigateur sur Windows Server
 
@@ -181,7 +194,7 @@ Si vous n’utilisez pas Web Deploy, vous devez publier et déployer l’applica
 
 ### <a name="BKMK_msvsmon"></a> Téléchargez et installez les outils à distance sur Windows Server
 
-Dans ce didacticiel, nous utilisons Visual Studio 2017.
+Téléchargez la version des outils à distance qui correspond à votre version de Visual Studio.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
@@ -198,9 +211,17 @@ Dans ce didacticiel, nous utilisons Visual Studio 2017.
 2. Dans Visual Studio, cliquez sur **Déboguer > Attacher au processus** (Ctrl + Alt + P).
 
     > [!TIP]
-    > Dans Visual Studio 2017, vous pouvez attacher nouveau vers le même processus que vous avez précédemment attaché à l’aide de **Déboguer > Attacher au processus...** Maj+Alt+P
+    > Dans Visual Studio 2017 et versions ultérieures, vous pouvez attacher nouveau vers le même processus que vous avez précédemment attaché à l’aide de **Déboguer > Attacher au processus...** Maj+Alt+P
 
-3. Définissez le champ Qualificateur sur **\<nom_ordinateur_distant>:4022**.
+3. Définissez le champ qualificateur sur  **\<nom_ordinateur_distant > : port**.
+
+    ::: moniker range=">=vs-2019"
+    **\<nom de l’ordinateur distant > : 4024** sur Visual Studio 2019
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    **\<nom de l’ordinateur distant > : 4022** sur Visual Studio 2017
+    ::: moniker-end
+
 4. Cliquez sur **Actualiser**.
     Des processus doivent s’afficher dans la fenêtre **Processus disponibles** .
 
@@ -229,13 +250,18 @@ Dans ce didacticiel, nous utilisons Visual Studio 2017.
 
 Dans la plupart des configurations, les ports requis sont ouverts par l’installation d’ASP.NET et le débogueur distant. Toutefois, si vous dépannez les problèmes de déploiement et l’application est hébergée derrière un pare-feu, vous devez vérifier que les ports appropriés sont ouverts.
 
-Sur une machine virtuelle Azure, vous devez ouvrir les ports via la [groupe de sécurité réseau](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic).
+Sur une machine virtuelle Azure, vous devez ouvrir les ports via la [groupe de sécurité réseau](/azure/virtual-machines/windows/nsg-quickstart-portal).
 
 Ports requis :
 
-- 80 - requises pour IIS
-- 4022 - requis pour le débogage distant à partir de Visual Studio 2017 (consultez [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md) pour plus d’informations).
-- UDP 3702 - port de détection de (facultatif) vous permet du **trouver** bouton lors de l’attachement au débogueur distant dans Visual Studio.
+* 80 - requises pour IIS
+::: moniker range=">=vs-2019"
+* 4024 - requis pour le débogage distant à partir de Visual Studio 2019 (consultez [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md) pour plus d’informations).
+::: moniker-end
+::: moniker range="vs-2017"
+* 4022 - requis pour le débogage distant à partir de Visual Studio 2017 (consultez [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md) pour plus d’informations).
+::: moniker-end
+* UDP 3702 - port de détection de (facultatif) vous permet du **trouver** bouton lors de l’attachement au débogueur distant dans Visual Studio.
 
 En outre, ces ports doivent déjà être ouvert par l’installation d’ASP.NET :
 - 8172 - (facultatif) nécessaire pour Web Deploy pour déployer l’application à partir de Visual Studio

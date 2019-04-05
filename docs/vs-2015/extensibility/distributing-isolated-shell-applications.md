@@ -1,24 +1,19 @@
 ---
 title: Distribution d’Applications de Shell isolé | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: c503a985-d67a-4ef8-9123-7744a78f2f17
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 27228131c1e955a394e666ac05f0ddd68c879be0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bf0d8a4cab8d30a56e84d1a6869c2c842b982aea
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758777"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953166"
 ---
 # <a name="distributing-isolated-shell-applications"></a>Distribution d’Applications de Shell isolé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +22,7 @@ Vous devez installer Visual Studio et le Kit de développement logiciel Visual S
   
 ## <a name="prerequisites-for-distributing-isolated-shell-applications"></a>Conditions préalables pour la distribution d’Applications de Shell isolé  
   
-|Name|Description|  
+|Nom|Description|  
 |----------|-----------------|  
 |SDK Visual Studio|Le Kit de développement logiciel vous devez disposer pour développer et tester des extensions de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Vous pouvez également utiliser le Kit de développement logiciel pour créer votre propre instance du shell isolé Visual Studio.<br /><br /> Visual Studio est un prérequis pour le Kit de développement.|  
 |Microsoft Visual Studio isolé redistribuable du Shell|Shell isolé redistribuables que vous incluez dans votre programme d’installation lorsque vous générez un environnement d’outils dans Visual Studio. Le package redistribuable de Shell isolé inclut le .NET Framework 4.5.|  
@@ -37,4 +32,3 @@ Vous devez installer Visual Studio et le Kit de développement logiciel Visual S
   
 ## <a name="allowing-for-updates-to-your-application"></a>Autoriser les mises à jour à votre Application  
  Le programme d’installation doit tenir compte du fait que votre application sera être mis à jour, mises à jour Microsoft ou par les mises à jour de votre entreprise. Pour plus d’informations sur les mises à jour, consultez [maintenance des instructions pour les Applications de Shell isolé](../extensibility/servicing-guidelines-for-isolated-shell-applications.md).
-

@@ -1,25 +1,22 @@
 ---
 title: Lire des modèles et des diagrammes dans d’autres éditions de Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - models, versions of Visual Studio
 ms.assetid: 46eee279-a9e4-4742-a024-5bd2cf032b86
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6d104d8d92345ba56d390fdd7ad9b856432b4c92
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c02e700eaa17f29726d9e3ddee83bfbc4874fdda
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757368"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948634"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Lire des modèles et des diagrammes dans d'autres éditions de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,15 +59,12 @@ Quand vous ouvrez un modèle dans une version de Visual Studio qui ne prend pas 
   
 |Titre|Description|  
 |-----------|-----------------|  
-|[Informations de référence sur les diagrammes de couche](../modeling/layer-diagrams-reference.md)|Un diagramme de couche montre la structure d'une architecture existante ou proposée. Quand du code est écrit, il peut être validé automatiquement par rapport à un diagramme de couche.|  
-|[Informations de référence sur les diagrammes d’activités UML](../modeling/uml-activity-diagrams-reference.md)|Un diagramme d'activités montre un flux de travail dans un processus d'entreprise ou un logiciel.|  
-|[Informations de référence sur les diagrammes de classes UML](../modeling/uml-class-diagrams-reference.md)|Un diagramme de classes montre les types et les relations utilisés dans de nombreux contextes tels que le code, les schémas de base de données, les protocoles de communication ou le glossaire des termes employés pour décrire un domaine d'entreprise.|  
-|[Informations de référence sur les diagrammes de composants UML](../modeling/uml-component-diagrams-reference.md)|Un diagramme de composants montre les parties séparables dans une conception de logiciel, ainsi que leurs interfaces.|  
-|[Informations de référence sur les diagrammes de séquence UML](../modeling/uml-sequence-diagrams-reference.md)|Un diagramme de séquence montre les interactions entre des éléments dans une conception de logiciel.|  
-|[Informations de référence sur les diagrammes de cas d’usage UML](../modeling/uml-use-case-diagrams-reference.md)|Un diagramme de cas d'usage montre les utilisateurs d'un système et les activités qu'ils peuvent effectuer pour atteindre des objectifs spécifiques.|  
+|[Diagrammes de couche : Informations de référence](../modeling/layer-diagrams-reference.md)|Un diagramme de couche montre la structure d'une architecture existante ou proposée. Quand du code est écrit, il peut être validé automatiquement par rapport à un diagramme de couche.|  
+|[Diagrammes d’activités UML : Informations de référence](../modeling/uml-activity-diagrams-reference.md)|Un diagramme d'activités montre un flux de travail dans un processus d'entreprise ou un logiciel.|  
+|[Diagrammes de classes UML : Informations de référence](../modeling/uml-class-diagrams-reference.md)|Un diagramme de classes montre les types et les relations utilisés dans de nombreux contextes tels que le code, les schémas de base de données, les protocoles de communication ou le glossaire des termes employés pour décrire un domaine d'entreprise.|  
+|[Diagrammes de composants UML : Informations de référence](../modeling/uml-component-diagrams-reference.md)|Un diagramme de composants montre les parties séparables dans une conception de logiciel, ainsi que leurs interfaces.|  
+|[Diagrammes de séquence UML : Informations de référence](../modeling/uml-sequence-diagrams-reference.md)|Un diagramme de séquence montre les interactions entre des éléments dans une conception de logiciel.|  
+|[Diagrammes de cas d’usage UML : Informations de référence](../modeling/uml-use-case-diagrams-reference.md)|Un diagramme de cas d'usage montre les utilisateurs d'un système et les activités qu'ils peuvent effectuer pour atteindre des objectifs spécifiques.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Créer des modèles pour votre application](../modeling/create-models-for-your-app.md)
-
-
-

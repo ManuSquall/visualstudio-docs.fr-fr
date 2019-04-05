@@ -12,12 +12,12 @@ ms.prod: .net-core
 ms.assetid: 2c119a5f-0272-48c0-8d6c-806196944aea
 ms.workload:
 - multiple
-ms.openlocfilehash: edcf47601007e3249c58dd8ad215c5ba1fd3bf83
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 97facaed877030dca4a6a2257147c4d92201ab55
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54998922"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322702"
 ---
 # <a name="version-control-in-visual-studio"></a>Gestion de version dans Visual Studio
 
@@ -27,6 +27,7 @@ Les systèmes de gestion de version vous permettent de suivre les modifications 
 
 Git est le système de gestion de version actuellement le plus utilisé, et devient rapidement la norme dans ce domaine. Git est un système de gestion de version distribué. Cela signifie que votre copie locale du code est un référentiel de gestion de version complet. Ces dépôts locaux entièrement opérationnels facilitent le travail en mode hors connexion ou à distance. Vous validez votre travail localement, puis synchronisez votre copie du référentiel avec la copie sur le serveur. Ce paradigme diffère de la gestion de version centralisée où les clients doivent synchroniser le code avec un serveur avant de créer de nouvelles versions du code.
 
+<!-- markdownlint-disable MD033 -->
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/azure/devops/git/what-is-git">

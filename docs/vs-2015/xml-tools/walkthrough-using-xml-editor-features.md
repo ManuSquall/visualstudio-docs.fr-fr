@@ -1,30 +1,25 @@
 ---
-title: 'Procédure pas à pas : Utilisation des fonctionnalités de l’éditeur XML | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure pas à pas : À l’aide des fonctionnalités de l’éditeur XML | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b054f7bfc4a70ee19e60315e3e7bc2a790db3cba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f965bf147454d2076445170ea6fb6748782052d8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252283"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950466"
 ---
-# <a name="walkthrough-using-xml-editor-features"></a>Procédure pas à pas : utilisation des fonctionnalités de l’Éditeur XML
+# <a name="walkthrough-using-xml-editor-features"></a>Procédure pas à pas : À l’aide des fonctionnalités de l’éditeur XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Les étapes de cette procédure pas à pas expliquent la création d'un document XML. Cette procédure utilise également certaines fonctions de l'éditeur XML qui en font un outil précieux pour l'édition XML.  
+Les étapes de cette procédure pas à pas expliquent la création d'un document XML. Cette procédure utilise également certaines fonctionnalités de l’éditeur XML qui en font un outil précieux pour l’édition XML.  
   
 > [!NOTE]
 >  Avant d'entamer cette procédure, enregistrez le fichier hireDate.xsd (plus bas dans cette rubrique) sur votre ordinateur local.  
@@ -67,25 +62,25 @@ Les étapes de cette procédure pas à pas expliquent la création d'un document
   
 2.  Sélectionnez  **\<!--** pour ajouter un nœud de commentaire et appuyez sur ENTRÉE.  
   
-     L’éditeur insère une étiquette de fin de commentaire et place le curseur entre les étiquettes de début et de fin du commentaire.  
+     L'éditeur insère une balise de fin de commentaire et place le curseur entre les balises de début et de fin du commentaire.  
   
 3.  Tapez dans **fichier Test XML**.  
   
 4.  Sur une nouvelle ligne, tapez `<`, puis sélectionnez **employé** à partir de la liste des membres.  
   
-     L'éditeur ajoute le début d'un élément XML, `<employee`. À ce stade, vous pouvez ajouter des attributs à l’élément ou fermer l’étiquette de fin en entrant `>`.  
+     L'éditeur ajoute le début d'un élément XML, `<employee`. À ce stade, vous pouvez ajouter des attributs à l'élément ou fermer la balise de fin en entrant `>`.  
   
 5.  Entrez `>` pour fermer la balise.  
   
-6.  L’éditeur ajoute l’étiquette de fin. La balise de fin est ajoutée et signalée par un soulignement ondulé indiquant une erreur de validation L'info-bulle affiche le message : Le contenu de l'élément 'employee' est incomplet. 'ID' attendu.  
+6.  L'éditeur ajoute la balise de fin. La balise de fin est ajoutée et signalée par un soulignement ondulé indiquant une erreur de validation L’info-bulle affiche le message : L’élément 'employee' contenu est incomplet. 'ID' attendu.  
   
 7.  Type `<` et sélectionnez **ID** à partir de la liste des membres. Entrez ensuite `>`.  
   
-     L’éditeur ajoute l’élément XML `<ID></ID>` et place le curseur après l’étiquette de début ID.  
+     L'éditeur ajoute l'élément XML `<ID></ID>` et place le curseur après la balise de début ID.  
   
 8.  Type **abc**.  
   
-     Le **abc** texte a une ligne ondulée. L'info-bulle affiche le message : L'élément 'ID' a une valeur non valide selon son type de données.  
+     Le **abc** texte a une ligne ondulée. L’info-bulle affiche le message : L’élément 'ID' a une valeur non valide selon son type de données.  
   
 9. Cliquez avec le bouton droit sur l’élément ID et sélectionnez **atteindre la définition**.  
   
@@ -93,9 +88,9 @@ Les étapes de cette procédure pas à pas expliquent la création d'un document
   
 10. Revenez dans le fichier XML et remplacez le **abc** texte avec **123**.  
   
-     La ligne ondulée et l'info-bulle disparaissent sous la valeur de l'élément ID. L'info-bulle de la balise de fin employee affiche à présent le message : Le contenu de l'élément 'employee' est incomplet. 'hire-date' attendu.  
+     La ligne ondulée et l'info-bulle disparaissent sous la valeur de l'élément ID. L’info-bulle de la balise de fin employee affiche maintenant le message : L’élément 'employee' contenu est incomplet. 'hire-date' attendu.  
   
-11. Placez le curseur après la balise de fin ID, entrez `<`, sélectionnez hire-date dans la liste des membres, puis entrez `>`.  
+11. Placez le curseur après l’étiquette de fin ID, entrez `<`, sélectionnez hire-date dans la liste des membres, puis entrez `>`.  
   
      L’éditeur ajoute l’élément XML `<hire-date></hire-date>` et place le curseur après l’étiquette de début hire-date.  
   
@@ -136,4 +131,3 @@ Les étapes de cette procédure pas à pas expliquent la création d'un document
   
 ## <a name="see-also"></a>Voir aussi  
  [Éditeur XML](../xml-tools/xml-editor.md)
-

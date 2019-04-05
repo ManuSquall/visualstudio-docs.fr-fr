@@ -1,25 +1,20 @@
 ---
 title: effectuer le rendu 16 BPP variante de Format cible | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 24b22ad9-5ad0-4161-809a-9b518eb924bf
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bf00bf536e5f1ee140a818ee59c66703906860f0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ee5112f27498bfa14d742469478cc4961f3cc7b0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727637"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950743"
 ---
 # <a name="16bpp-render-target-format-variant"></a>Variante de format cible de rendu 16 bpp
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ Affecte aux pixels le format DXGI_FORMAT_B5G6R5_UNORM pour toutes les cibles de 
   
  Si cette variante donne lieu à un net gain de performances, cela indique probablement que votre application consomme trop de bande passante de mémoire. Les gains de performances peuvent être particulièrement prononcés quand le frame profilé pâtit d'un grand nombre de superpositions ou contient beaucoup de simulations de transparence.  
   
- Si les types de scènes affichées par votre application ne nécessitent pas une reproduction haute fidélité des couleurs, n'exigent pas la présence d'un canal alpha dans la cible de rendu et ne contiennent pas souvent de dégradés lisses (qui sont sensibles aux effets de traîne en cas de fidélité des couleurs réduite), utilisez une cible de rendu au format 16 bpp pour réduire l'utilisation de bande passante de mémoire.  
+ Si les types de scènes affichées par votre application ne nécessitent pas une reproduction haute fidélité des couleurs, n’exigent pas la présence d’un canal alpha dans la cible de rendu et ne contiennent pas souvent de dégradés lisses (qui sont sensibles aux effets de traîne en cas de fidélité des couleurs réduite), utilisez une cible de rendu au format 16 bpp pour réduire l’utilisation de bande passante de mémoire.  
   
  Si les scènes affichées dans votre application nécessitent une reproduction haute fidélité des couleurs ou un canal alpha ou si les dégradés lisses sont courants, envisagez d'autres stratégies pour réduire l'utilisation de bande passante de mémoire (par exemple, en réduisant le nombre de superpositions ou les simulations de transparence, en réduisant les dimensions du tampon de trame ou en faisant en sorte que les ressources de texture consomment moins de bande passante de mémoire en activant la compression ou en réduisant leurs dimensions). Comme toujours, vous devez réfléchir aux avantages et aux inconvénients qui accompagnent ces optimisations de qualité d'image.  
   
@@ -61,6 +56,3 @@ target_description.BindFlags = D3D11_BIND_RENDER_TARGET;
 target_description.Format = DXGI_FORMAT_B5G6R5_UNORM;  
 d3d_device->CreateTexture2D(&target_description, nullptr, &render_target);  
 ```
-
-
-

@@ -1,26 +1,21 @@
 ---
 title: Détails de Configuration de contrôle de la source | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], configuration details
 ms.assetid: adbee9fc-7a2e-4abe-a3b8-e6615bcd797f
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 55e2364ca096b5329369e51ccdadf07f191720e8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 85c537d5e915324a2bd8cd858c5ff133370b62f7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753709"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951317"
 ---
 # <a name="source-control-configuration-details"></a>Détails de configuration du contrôle de code source
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -65,4 +60,3 @@ Pour implémenter le contrôle de code source, vous devez configurer correctemen
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments>   
  [Prise en charge du contrôle de code source](../../extensibility/internals/supporting-source-control.md)
-

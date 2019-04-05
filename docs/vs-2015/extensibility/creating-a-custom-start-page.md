@@ -1,24 +1,19 @@
 ---
 title: Page de démarrage de création personnalisé | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 87f653a6ac745253ae86eb6bf8dfab92169ac4db
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e7fbc9f18a668cbe3738ab3c8dd734ddadd8ce08
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806059"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58947211"
 ---
 # <a name="creating-a-custom-start-page"></a>Création d’une page de démarrage personnalisée
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,4 +91,3 @@ Si vous ne pouvez pas créer une Page de démarrage personnalisée en utilisant 
  [Ajout de commandes de Visual Studio à une Page de démarrage](../extensibility/adding-visual-studio-commands-to-a-start-page.md)   
  [Procédure pas à pas : Enregistrement des paramètres utilisateur sur une Page de démarrage](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)   
  [Déploiement de pages de démarrage personnalisées](../extensibility/deploying-custom-start-pages.md)
-

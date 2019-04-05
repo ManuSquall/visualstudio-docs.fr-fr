@@ -1,12 +1,9 @@
 ---
 title: Personnalisation de l’Explorateur de modèles | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.explorerbehavior
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: d2926444-9408-41d8-a27e-3fd0c416f9ac
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 77999eea0a76088368ff5e7ee66f9088dc45efa5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 73dc110b6dec5625b5773039b2309ee5a45900bb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175940"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951982"
 ---
 # <a name="customizing-the-model-explorer"></a>Personnalisation de l'Explorateur de modèles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -119,7 +116,4 @@ Vous pouvez modifier l’apparence et le comportement de l’Explorateur pour vo
      L’Explorateur doit afficher uniquement une **acteurs** nœud et ne doit pas afficher le **commentaires** nœud.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Glossaire des outils Domain-Specific Language](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Glossaire des Outils Domain-Specific Language](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

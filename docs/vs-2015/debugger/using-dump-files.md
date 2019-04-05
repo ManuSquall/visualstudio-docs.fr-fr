@@ -1,14 +1,9 @@
 ---
 title: À l’aide de fichiers de vidage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.crashdump
 dev_langs:
@@ -29,13 +24,13 @@ ms.assetid: b71be6dc-57e0-4730-99d2-b540a0863e49
 caps.latest.revision: 56
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0c117e0aa7922c70f919a7b16fa6d40a447f2ce2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 756b2791e5cc41ef934037ba3a680792db658591
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761135"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001456"
 ---
 # <a name="using-dump-files"></a>À l’aide de fichiers de vidage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,9 +78,9 @@ Fichiers dump avec ou sans tas ; créez un fichier dump ; ouvrez un fichier du
   
 - Pour déboguer [en mode noyau](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) vider les fichiers dans Visual Studio 2013, téléchargez le [Windows 8.1 Version de débogage outils pour Windows](http://msdn.microsoft.com/windows/hardware/gg463009). Consultez [le débogage du noyau dans Visual Studio](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
   
-- Visual Studio ne peut pas déboguer des fichiers dump enregistrés dans l’ancien format dump appelé un [dump complet en mode utilisateur](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx). Notez qu'un dump complet en mode utilisateur n'est pas le même qu'un dump avec le tas.  
+- Visual Studio ne peut pas déboguer des fichiers dump enregistrés dans l’ancien format dump appelé un [dump complet en mode utilisateur](/windows-hardware/drivers/debugger/user-mode-dump-files#full). Notez qu'un dump complet en mode utilisateur n'est pas le même qu'un dump avec le tas.  
   
-- Pour déboguer avec le [SOS.dll (Extension de débogage SOS)](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498) dans Visual Studio, vous devez installer le débogage outils pour Windows qui fait partie du Kit WDK (Windows Driver Kit). Consultez [Windows 8.1 Preview : télécharger les kits, bits et outils](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
+- Pour déboguer avec le [SOS.dll (Extension de débogage SOS)](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498) dans Visual Studio, vous devez installer le débogage outils pour Windows qui fait partie du Kit WDK (Windows Driver Kit). Consultez [Windows 8.1 Preview : Téléchargez les kits, bits et outils](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
   
   ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
@@ -104,9 +99,9 @@ Fichiers dump avec ou sans tas ; créez un fichier dump ; ouvrez un fichier du
   
 1.  Dans Visual Studio, choisissez **fichier**, **Open**, **fichier**.  
   
-2.  Dans le **ouvrir un fichier** boîte de dialogue, recherchez et sélectionnez le fichier de vidage. Il porte généralement une extension .dmp. Puis choisissez **OK**.  
+2.  Dans la boîte de dialogue **Ouvrir un fichier**, localisez et sélectionnez le fichier dump. Il porte généralement une extension .dmp. Puis choisissez **OK**.  
   
-3.  Le **résumé du fichier minidump** fenêtre s’affiche. Dans cette fenêtre, vous pouvez afficher les informations de résumé de débogage du fichier dump, définir le chemin d’accès aux symboles, commencer le débogage et copier les informations de résumé vers le Presse-papiers.  
+3.  Le **résumé du fichier minidump** fenêtre s’affiche. Dans cette fenêtre, vous pouvez afficher les informations de résumé de débogage du fichier dump, définir le chemin d'accès aux symboles, commencer le débogage et copier les informations de résumé vers le Presse-papiers.  
   
      ![Page de résumé minidump](../debugger/media/dbg-dump-summarypage.png "DBG_DUMP_SummaryPage")  
   
@@ -133,7 +128,7 @@ Fichiers dump avec ou sans tas ; créez un fichier dump ; ouvrez un fichier du
   
 1. Répertoire qui contient le fichier dump.  
   
-2. Chemin d’accès du module spécifié dans le fichier dump. Il s’agit du chemin d’accès du module sur l’ordinateur où le dump a été collecté.  
+2. Chemin d'accès du module spécifié dans le fichier dump. Il s'agit du chemin d'accès du module sur l'ordinateur où le dump a été collecté.  
   
 3. Les chemins d’accès aux symboles spécifiés dans le **débogage**, **Options**, **symboles** page de Visual Studio **outils**, **Options**  boîte de dialogue. Vous pouvez ajouter d'autres emplacements à rechercher sur cette page.  
   
@@ -145,6 +140,5 @@ Fichiers dump avec ou sans tas ; créez un fichier dump ; ouvrez un fichier du
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage juste-à-temps](../debugger/just-in-time-debugging-in-visual-studio.md)   
- [Spécifier les symboles (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+ [Spécifier les fichiers de symboles (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [IntelliTrace](../debugger/intellitrace.md)
-

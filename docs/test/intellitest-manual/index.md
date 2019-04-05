@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2ba7a355b5fe8e2b332928c351753a99faed6681
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d7258549b242091737e14e00980447eb48d5e78b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948944"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324797"
 ---
 # <a name="intellitest-reference-manual"></a>Manuel de référence IntelliTest
 
@@ -30,11 +30,11 @@ ms.locfileid: "55948944"
     * [Language](introduction.md#language)
     * [Raisonnement symbolique](introduction.md#symbolic-reasoning)
     * [Traces de pile incorrectes](introduction.md#incorrect-stack-traces)
-  - [Compléments de lecture](introduction.md#further-reading)<p>&nbsp;</p>
+  - [Compléments de lecture](introduction.md#further-reading)
 
 * **[Bien démarrer avec IntelliTest](getting-started.md)**
   - [Attributs importants](getting-started.md#important-attributes)
-  - [Classes d’assistance statiques importantes](getting-started.md#helper-classes)<p>&nbsp;</p>
+  - [Classes d’assistance statiques importantes](getting-started.md#helper-classes)
 
 * **[Génération de tests](test-generation.md)**
   - [Générateurs de tests](test-generation.md#test-generators)
@@ -47,7 +47,7 @@ ms.locfileid: "55948944"
   - [Postcondition](test-generation.md#postcondition)
   - [Échecs de test](test-generation.md#test-failures)
   - [Installation et suppression](test-generation.md#setup-teardown)
-  - [Compléments de lecture](test-generation.md#further-reading)<p>&nbsp;</p>
+  - [Compléments de lecture](test-generation.md#further-reading)
 
 * **[Génération d’entrée](input-generation.md)**
   - [Solveur de contraintes](input-generation.md#constraint-solver)
@@ -60,7 +60,7 @@ ms.locfileid: "55948944"
   - [Structs](input-generation.md#structs)
   - [Tableaux et chaînes](input-generation.md#arrays-and-strings)
   - [Obtention d’entrées supplémentaires](input-generation.md#additional-inputs)
-  - [Compléments de lecture](input-generation.md#further-reading)<p>&nbsp;</p>
+  - [Compléments de lecture](input-generation.md#further-reading)
 
 * **[Limites de l’exploration](exploration-bounds.md)**
   - [MaxConstraintSolverTime](exploration-bounds.md#maxconstraintsolvertime)
@@ -75,7 +75,7 @@ ms.locfileid: "55948944"
   - [MaxExceptions](exploration-bounds.md#maxexceptions)
   - [TestExcludePathBoundsExceeded](exploration-bounds.md#testexcludepathboundsexceeded)
   - [TestEmissionFilter](exploration-bounds.md#testemissionfilter)
-  - [TestEmissionBranchHits](exploration-bounds.md#testemissionbranchhits)<p>&nbsp;</p>
+  - [TestEmissionBranchHits](exploration-bounds.md#testemissionbranchhits)
 
 * **[Glossaire des attributs](attribute-glossary.md)**
   - [PexAssumeNotNull](attribute-glossary.md#pexassumenotnull)
@@ -90,7 +90,7 @@ ms.locfileid: "55948944"
   - [PexAllowedException](attribute-glossary.md#pexallowedexception)
   - [PexAllowedExceptionFromAssembly](attribute-glossary.md#pexallowedexceptionfromassembly)
   - [PexAllowedExceptionFromType](attribute-glossary.md#pexallowedexceptionfromtype)
-  - [PexAllowedExceptionFromTypeUnderTest](attribute-glossary.md#pexallowedexceptionfromtypeundertest)<p>&nbsp;</p>
+  - [PexAllowedExceptionFromTypeUnderTest](attribute-glossary.md#pexallowedexceptionfromtypeundertest)
 
 * **[Cascade des paramètres](settings-waterfall.md)**
 
@@ -99,7 +99,7 @@ ms.locfileid: "55948944"
   - [PexAssert](static-helper-classes.md#pexassert)
   - [PexChoose](static-helper-classes.md#pexchoose)
   - [PexObserve](static-helper-classes.md#pexobserve)
-  - [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue)<p>&nbsp;</p>
+  - [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue)
 
 * **[Avertissements et erreurs](warnings-and-errors.md)**
   - [MaxBranches dépassé](warnings-and-errors.md#maxbranches-exceeded)
@@ -121,7 +121,7 @@ ms.locfileid: "55948944"
   - [Problème de testabilité](warnings-and-errors.md#testability-issue)
   - [Limitation](warnings-and-errors.md#limitation)
   - [Confusion observée au niveau des appels](warnings-and-errors.md#observed-call-mismatch)
-  - [Valeur stockée dans un champ statique](warnings-and-errors.md#value-static-field)<p>&nbsp;</p>
+  - [Valeur stockée dans un champ statique](warnings-and-errors.md#value-static-field)
 
 ## <a name="got-feedback"></a>Vous avez des commentaires ?
 

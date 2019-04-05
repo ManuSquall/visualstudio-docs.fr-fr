@@ -1,11 +1,8 @@
 ---
-title: 'Comment : créer des Applications de Console de Workflow séquentiel (hérité) | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Créer des Applications de Console de Workflow séquentiel (hérité) | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - workflows, console applications
@@ -15,15 +12,15 @@ ms.assetid: 9f7be7fa-551f-42c6-a9bb-f5ae8ab83625
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: e467e4a574263eaa35640bc99f99c1f599a74df9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6d42c6159cdfadf84edd2c02205dea0b102b134a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306317"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953641"
 ---
-# <a name="how-to-create-sequential-workflow-console-applications-legacy"></a>Procédure : créer des applications console de workflow séquentiel (héritée)
+# <a name="how-to-create-sequential-workflow-console-applications-legacy"></a>Procédure : Créer des applications console de workflows séquentiels (héritées)
 Suivez ces étapes pour créer un projet d'application console de workflow séquentiel à l'aide du [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité fourni par [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
 ### <a name="to-create-a-sequential-workflow-console-application"></a>Pour créer une application console de workflow séquentiel  
@@ -57,4 +54,4 @@ Suivez ces étapes pour créer un projet d'application console de workflow séqu
   
 ## <a name="see-also"></a>Voir aussi  
  [Création de projets de flux de travail hérités](../workflow-designer/creating-legacy-workflow-projects.md)   
- [Développement de Workflows](http://msdn.microsoft.com/en-us/557bcb1f-a7ab-49f6-8df7-2706b7001301)
+ [Développement de Workflows](http://msdn.microsoft.com/557bcb1f-a7ab-49f6-8df7-2706b7001301)

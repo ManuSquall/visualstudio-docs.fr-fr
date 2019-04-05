@@ -1,14 +1,9 @@
 ---
 title: La vue messages | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.messagesview
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 14c2a786-c23a-4b2d-acad-8c32a856c70d
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3f896650d7979365346d493c5aac06340007cbb7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 14569a915dc1da4d8628283dfa1aae5338502de1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784375"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950765"
 ---
 # <a name="messages-view"></a>Affichage Messages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ Chaque fenêtre a un flux de message associé. Une fenêtre d’affichage de Mes
  Une fenêtre d’affichage de Messages standard s’affiche ci-dessous. Notez que la première colonne contient le handle de fenêtre et la deuxième colonne contient un code de message (expliqué dans [Codes des messages](../debugger/message-codes.md)). Paramètres de message décodés et les valeurs de retour sont sur la droite.  
   
  ![Spy&#43; &#43; la vue Messages](../debugger/media/spy-messagesview.png "Spy ++ _MessagesView")  
-Messages Spy++, vue  
+Vue Messages Spy++  
   
 ## <a name="procedures"></a>Procédures  
   
@@ -89,6 +84,3 @@ Messages Spy++, vue
   
  [Informations de référence sur Spy++](../debugger/spy-increment-reference.md)  
  Inclut des sections décrivant chaque Spy ++ menu et boîte de dialogue.
-
-
-

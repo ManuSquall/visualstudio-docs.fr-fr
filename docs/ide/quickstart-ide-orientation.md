@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 622887a3886eb51b148451bfaee561b7d5c7a466
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 8cb1b18488eaf9ddf3308e74d583fd1b92fc2563
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223622"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354727"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Démarrage rapide : Premier aperçu de l’IDE Visual Studio
 
@@ -21,9 +21,11 @@ Dans cette présentation de 5-10 minutes de l’environnement de développement 
 
 Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) pour l’installer gratuitement.
 
+::: moniker range="vs-2017"
+
 ## <a name="start-page"></a>Page de démarrage
 
-Quand vous lancez Visual Studio, la première chose qui s’affiche en général est la **Page de démarrage**. La **Page de démarrage** est conçue comme un « hub » pour vous aider à trouver plus rapidement les commandes et fichiers projet dont vous avez besoin. La section **Récent** affiche les projets et dossiers que vous avez utilisés récemment. Sous **Nouveau projet**, vous pouvez cliquer sur un lien pour afficher la boîte de dialogue **Nouveau projet**, ou sous **Ouvrir**, vous pouvez ouvrir un projet ou dossier de code existant. Vous trouverez à droite un flux des dernières informations pour les développeurs.
+Lorsque vous ouvrez Visual Studio, la première chose qui s’affiche en général est la **Page de démarrage**. La **Page de démarrage** est conçue comme un « hub » pour vous aider à trouver plus rapidement les commandes et fichiers projet dont vous avez besoin. La section **Récent** affiche les projets et dossiers que vous avez utilisés récemment. Sous **Nouveau projet**, vous pouvez cliquer sur un lien pour afficher la boîte de dialogue **Nouveau projet**, ou sous **Ouvrir**, vous pouvez ouvrir un projet ou dossier de code existant. Vous trouverez à droite un flux des dernières informations pour les développeurs.
 
 ![Page de démarrage dans Visual Studio](media/start-page.png)
 
@@ -31,9 +33,29 @@ Si vous fermez la **Page de démarrage** et souhaitez la revoir, vous pouvez la 
 
 ![Menu Fichier dans Visual Studio](media/quickstart-IDE-file-menu-large.png)
 
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+## <a name="start-window"></a>Fenêtre de démarrage
+
+Quand vous ouvrez Visual Studio, la première chose que vous voyez est la fenêtre de démarrage. La fenêtre de démarrage est conçue pour vous aider à « accéder au code » plus rapidement. Elle contient des options pour fermer ou extraire du code, ouvrir une solution ou un projet existant, créer un projet ou simplement ouvrir un dossier qui contient des fichiers de code.
+
+[![](media/vs-2019/start-window-labeled.png "La fenêtre de démarrage dans Visual Studio 2019")](media/vs-2019/start-window-labeled.png#lightbox)
+
+Si vous utilisez Visual Studio pour la première fois, votre liste des derniers projets est vide.
+
+Si vous travaillez avec des codes base non-MSBuild, utilisez l’option **Ouvrir un dossier local** pour ouvrir votre code dans Visual Studio. Pour plus d’informations, consultez [Développer du code dans Visual Studio sans projets ni solutions](develop-code-in-visual-studio-without-projects-or-solutions.md). Sinon, vous pouvez créer un projet ou en cloner un à partir d’un fournisseur de code source comme GitHub ou Azure DevOps.
+
+L’option **Continuer sans code** ouvre simplement l’environnement de développement Visual Studio sans aucun projet ou code spécifique chargé. Vous pouvez choisir cette option pour rejoindre une session [Live Share](/visualstudio/liveshare/) ou effectuer l’attachement à un processus pour le débogage. Vous pouvez également appuyer sur **Échap** pour fermer la fenêtre de démarrage et ouvrir l’IDE.
+
+::: moniker-end
+
 ## <a name="create-a-project"></a>Créer un projet
 
 Pour continuer à explorer les fonctionnalités de Visual Studio, nous allons créer un projet.
+
+::: moniker range="vs-2017"
 
 1. Dans la **Page de démarrage**, dans la zone de recherche sous **Nouveau projet**, tapez **console** pour filtrer la liste des types de projets à ceux dont le nom contient le mot « console ».
 
@@ -42,6 +64,24 @@ Pour continuer à explorer les fonctionnalités de Visual Studio, nous allons cr
    Visual Studio fournit différents types de modèles de projet qui vous aident à bien démarrer le codage. Choisissez un modèle de projet C# **Application console (.NET Framework)**. (Ou, si vous êtes un développeur en Visual Basic, C++, Javascript ou autre langage, n’hésitez pas à créer un projet dans l’un de ces langages. L’interface utilisateur que nous allons explorer est identique pour tous les langages de programmation.)
 
 1. Dans la boîte de dialogue **Nouveau projet** qui apparaît, acceptez le nom de projet par défaut et sélectionnez **OK**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Dans la fenêtre de démarrage, choisissez **Créer un projet**.
+
+   Une boîte de dialogue indiquant **Créer un projet** s’affiche. Ici, vous pouvez rechercher, filtrer et sélectionner un modèle de projet. Elle montre également la liste des modèles de projet récemment utilisés.
+
+1. Dans la zone de recherche située en haut, tapez **console** pour filtrer la liste des types de projets à ceux dont le nom contient le mot « console ». Affinez davantage les résultats de la recherche en sélectionnant **C#** (ou un autre langage de votre choix) dans le sélecteur **Langage**.
+
+   ![Boîte de dialogue Nouveau projet dans Visual Studio 2019](media/vs-2019/create-a-new-project.png)
+
+1. Si vous avez sélectionné le langage C#, Visual Basic ou F#, sélectionnez le modèle **Application console (.NET Framework)**, puis choisissez **Suivant**. (Si vous avez sélectionné un autre langage, choisissez n’importe quel modèle. L’interface utilisateur que nous allons explorer est identique pour tous les langages de programmation.)
+
+1. Dans la page **Configurer votre nouveau projet**, acceptez le nom et l’emplacement de projet par défaut, puis choisissez **Créer**.
+
+::: moniker-end
 
    Le projet est créé et un fichier nommé *Program.cs* s’ouvre dans la fenêtre **Éditeur**. **L’Éditeur** affiche le contenu des fichiers. C’est là que vous effectuez la majeure partie de votre travail de codage dans Visual Studio.
 
@@ -57,11 +97,21 @@ L’**Explorateur de solutions**, qui se trouve généralement sur le côté dro
 
 La barre de menus en haut de la fenêtre de Visual Studio regroupe les commandes en catégories. Par exemple, le menu **Projet** contient les commandes liées au projet sur lequel vous travaillez. Dans le menu **Outils**, vous pouvez personnaliser le comportement de Visual Studio en sélectionnant **Options**, ou vous pouvez ajouter des fonctionnalités à votre installation en sélectionnant **Obtenir des outils et des fonctionnalités**.
 
-![Barre de menus dans Visual Studio](media/quickstart-IDE-menu-bar.png)
+::: moniker range="vs-2017"
 
-Ouvrons la fenêtre **Liste d’erreurs** en sélectionnant le menu **Afficher**, puis **Liste d’erreurs**.
+![Barre de menus dans Visual Studio 2017](media/quickstart-IDE-menu-bar.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+![Barre de menus dans Visual Studio 2019](media/vs-2019/menu-bar.png)
+
+::: moniker-end
 
 ## <a name="error-list"></a>Liste d'erreurs
+
+Ouvrez la fenêtre **Liste d’erreurs** en sélectionnant le menu **Affichage**, puis **Liste d’erreurs**.
 
 La **Liste d’erreurs** affiche les erreurs, avertissements et messages concernant l’état actuel de votre code. S’il existe des erreurs (par exemple, une accolade ou un point-virgule manquant) dans votre fichier, ou n’importe où dans votre projet, elles sont répertoriées ici.
 
@@ -77,19 +127,35 @@ Générons le projet pour afficher une sortie de génération. Dans le menu **G�
 
 ## <a name="quick-launch"></a>Lancement rapide
 
-La zone **Lancement rapide** permet d’effectuer rapidement et facilement presque n’importe quelle opération dans Visual Studio. Vous pouvez saisir du texte concernant ce que vous voulez faire et une liste d’options pertinente s’affiche. Imaginez par exemple que vous souhaitez augmenter les commentaires de la sortie de la génération pour afficher des détails supplémentaires sur ce que fait la génération. Voici comment procéder :
+La zone de recherche **Lancement rapide** permet d’accéder rapidement et facilement à quasiment n’importe quel élément dans Visual Studio. Vous pouvez saisir du texte concernant ce que vous voulez faire et une liste d’options pertinente s’affiche. Imaginez par exemple que vous souhaitez augmenter les commentaires de la sortie de la génération pour afficher des détails supplémentaires sur ce que fait la génération. Voici comment procéder :
 
-1. Localisez la zone **Lancement rapide** dans le coin supérieur droit de l’IDE. (Vous pouvez également appuyer sur **Ctrl**+**Q** pour y accéder.)
+::: moniker range="vs-2017"
 
-1. Tapez **commentaires** dans la zone **Lancement rapide**. Parmi les résultats affichés, choisissez **Projets et solutions --> Générer et exécuter** sous la catégorie **Options**.
+1. Localisez la zone de recherche **Lancement rapide** dans le coin supérieur droit de l’IDE. (Vous pouvez également appuyer sur **Ctrl**+**Q** pour y accéder.)
 
-   ![Zone de lancement rapide dans Visual Studio](media/quickstart-IDE-quick-launch.png)
+2. Tapez **commentaires** dans la zone de recherche **Lancement rapide**. Parmi les résultats affichés, choisissez **Projets et solutions --> Générer et exécuter** sous la catégorie **Options**.
+
+   ![Zone de recherche Lancement rapide dans Visual Studio 2017](media/quickstart-IDE-quick-launch.png)
 
    La boîte de dialogue **Options** s’affiche sur la page des options **Générer et exécuter**.
 
-1. Sous **Commentaires relatifs à la sortie de génération du projet MSBuild**, choisissez **Normal**, puis cliquez sur **OK**.
+::: moniker-end
 
-1. Regénérez le projet en cliquant avec le bouton droit sur le projet **ConsoleApp1** dans l’**Explorateur de solutions** et en choisissant **Regénérer** dans le menu contextuel.
+::: moniker range=">=vs-2019"
+
+1. Localisez la zone de recherche **Lancement rapide** dans la partie supérieure de l’IDE, juste à droite des menus. (Vous pouvez également appuyer sur **Ctrl**+**Q** pour y accéder.)
+
+2. Tapez **commentaires** dans la zone de recherche **Lancement rapide**. Parmi les résultats affichés, choisissez **Modifier les commentaires MSBuild**.
+
+   ![Zone de recherche Lancement rapide dans Visual Studio 2019](media/vs-2019/quick-launch-verbosity.png)
+
+   La boîte de dialogue **Options** s’affiche sur la page des options **Générer et exécuter**.
+
+::: moniker-end
+
+3. Sous **Commentaires relatifs à la sortie de génération du projet MSBuild**, choisissez **Normal**, puis cliquez sur **OK**.
+
+4. Regénérez le projet en cliquant avec le bouton droit sur le projet **ConsoleApp1** dans l’**Explorateur de solutions** et en choisissant **Regénérer** dans le menu contextuel.
 
    Cette fois, la fenêtre **Sortie** affiche une journalisation de commentaires plus importante à partir du processus de génération, notamment quels fichiers ont été copiés et où.
 
@@ -99,7 +165,17 @@ La zone **Lancement rapide** permet d’effectuer rapidement et facilement presq
 
 Si vous rencontrez des problèmes pendant l’utilisation de Visual Studio, ou si vous avez des suggestions d’amélioration du produit, vous pouvez utiliser le menu **Envoyer des commentaires** en haut de la fenêtre de Visual Studio, à côté de la zone **Lancement rapide**.
 
-![Menu Envoyer des commentaires dans Visual Studio](media/quickstart-IDE-send-feedback.png)
+::: moniker range="vs-2017"
+
+![Menu Envoyer des commentaires dans Visual Studio 2017](media/quickstart-IDE-send-feedback.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+![Menu Envoyer des commentaires dans Visual Studio 2019](media/vs-2019/send-feedback-menu.png)
+
+::: moniker-end
 
 ## <a name="next-steps"></a>Étapes suivantes
 

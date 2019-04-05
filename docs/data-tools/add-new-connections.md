@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: da6763cffedccb1dae296e2959732237cd126b25
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b01af2aa269cbaddbd84d24827b1a77e97d52d8a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909918"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57982803"
 ---
 # <a name="add-new-connections"></a>Ajouter de nouvelles connexions
 
@@ -24,7 +24,7 @@ Vous pouvez tester votre connexion à une base de données ou un service et Expl
 
 - Cloud Explorer
 
-   Installez cette fenêtre manuellement comme une extension Visual Studio en sélectionnant **outils** > **Extensions et mises à jour** > **Online**  >  **Visual Studio Marketplace**. Fournit des fonctionnalités spécialisées pour l’exploration et la connexion aux services Azure.
+   Installez cette fenêtre manuellement comme une extension de Visual Studio à partir de [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.CloudExplorerForVS). Fournit des fonctionnalités spécialisées pour l’exploration et la connexion aux services Azure.
 
 - Explorateur d'objets SQL Server
 

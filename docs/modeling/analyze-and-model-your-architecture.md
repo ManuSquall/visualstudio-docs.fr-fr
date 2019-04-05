@@ -30,12 +30,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ddf7e7bf78baede7e964aeeed7484261fdab2ef7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d459f641983960fdd7c4c1ded3b90c0a578c42b3
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924462"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873666"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analyser et modéliser votre architecture
 
@@ -88,7 +88,7 @@ Diagrammes de dépendance vous permettent de définir la structure d’une appli
 **Voir :**
 
 -   [Créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)
--   [Diagrammes de dépendance : Référence](../modeling/layer-diagrams-reference.md)
+-   [Diagrammes de dépendance : Informations de référence](../modeling/layer-diagrams-reference.md)
 -   [Validation du code avec des diagrammes de dépendance](../modeling/validate-code-with-layer-diagrams.md)
 
 ### <a name="domain-specific-language-dsl"></a>Langage spécifique à un domaine (DSL)
@@ -97,7 +97,7 @@ Un langage spécifique à un domaine est une notation que vous concevez dans un 
 **Utilisations courantes :**
 
 -   Générer ou configurer certaines parties de l’application. Un travail est requis pour développer la notation et les outils. Le résultat est ainsi plus adapté à votre domaine qu'une personnalisation UML.
--   Pour les grands projets ou dans les lignes de produits où l’investissement effectué dans le développement du DSL et de ses outils est amorti par son utilisation dans plusieurs projets.
+-   Pour les grands projets ou dans les lignes de produits où l’investissement effectué dans le développement du langage spécifique à un domaine et ses outils est amorti par son utilisation dans plusieurs projets.
 
 **Voir :**
 
@@ -109,5 +109,5 @@ Un langage spécifique à un domaine est une notation que vous concevez dans un 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Nouveautés](../modeling/what-s-new-for-design-in-visual-studio.md)
+- [Quelles sont les nouveautés pour la modélisation dans Visual Studio 2017](../modeling/what-s-new-for-design-in-visual-studio.md)
 - [DevOps et Application Lifecycle Management](/azure/devops/user-guide/devops-alm-overview)

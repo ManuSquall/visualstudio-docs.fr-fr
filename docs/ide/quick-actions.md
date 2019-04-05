@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ee5e9c9872074d43e418dcbc33d11347c53ef02
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1a08e54025ac0826b88a3d3fcee299beef245d13
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952565"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867035"
 ---
 # <a name="quick-actions"></a>Actions rapides
 
@@ -24,8 +24,11 @@ Les actions rapides vous permettent de refactoriser, générer ou modifier facil
 Les actions rapides peuvent servir à :
 
 - appliquer un correctif de code en cas de violation de règle de [l’analyseur de code](../code-quality/roslyn-analyzers-overview.md) ;
-- [supprimer](../code-quality/use-roslyn-analyzers.md) une violation de règle de l’analyseur de code ;
+
+- [supprimer](../code-quality/use-roslyn-analyzers.md#suppress-violations) une violation de règle de l’analyseur de code ;
+
 - appliquer une refactorisation (par exemple, [rendre inline une variable temporaire](../ide/reference/inline-temporary-variable.md)) ;
+
 - générer du code (par exemple, [introduire une variable locale](../ide/reference/introduce-local-variable.md)).
 
 > [!NOTE]
@@ -33,7 +36,7 @@ Les actions rapides peuvent servir à :
 
 Les actions rapides peuvent être appliquées en utilisant l’icône en forme d’ampoule ![icône en forme d’ampoule](media/light-bulb-icon.png) ou de tournevis ![icône en forme de tournevis](media/screwdriver-icon.png), ou en appuyant sur **Ctrl**+**.** lorsque le curseur se trouve sur une ligne de code pour laquelle une action est disponible. Vous voyez une ampoule d’erreur ![icône en forme d’ampoule d’erreur](media/error-light-bulb-icon.png) s’il existe une ligne ondulée rouge indiquant une erreur, pour laquelle Visual Studio met à disposition un correctif.
 
-Des éditeurs tiers peuvent fournir des diagnostics et des suggestions personnalisés pour n’importe quel langage, par exemple dans le cadre d’un Kit de développement logiciel (SDK). Dans ce cas, les ampoules Visual Studio s’allument en fonction des règles établies.
+Des éditeurs tiers peuvent fournir des diagnostics et des suggestions personnalisés pour n’importe quel langage, par exemple dans le cadre d’un Kit de développement logiciel (SDK). Dans ce cas, les ampoules Visual Studio s’affichent en fonction des règles établies.
 
 ## <a name="icons"></a>Icônes
 
@@ -41,17 +44,17 @@ L’icône qui s’affiche quand une action rapide est disponible donne une indi
 
 ## <a name="to-see-a-light-bulb-or-screwdriver"></a>Pour afficher une ampoule ou un tournevis
 
-- Si un correctif est disponible, les ampoules apparaissent spontanément quand vous placez le pointeur de la souris à l’emplacement d’une erreur.
+Si un correctif est disponible, les ampoules apparaissent :
+
+- Lorsque vous pointez la souris à l’emplacement d’une erreur
 
    ![Ampoule avec pointage de la souris](../ide/media/vs2015_lightbulb_hover.png)
 
-- Les ampoules et tournevis apparaissent dans la marge de gauche de l’éditeur quand vous déplacez le signe insertion dans une ligne de code pour lequel une action rapide est disponible.
+- Dans la marge gauche de l’éditeur lorsque vous déplacez le point d’insertion (curseur) dans la ligne de code concernée
 
-- Appuyez sur **Ctrl**+**.** n’importe où sur une ligne pour afficher la liste des actions rapides et refactorisations disponibles.
+Vous pouvez également appuyer sur **Ctrl**+**.** n’importe où sur une ligne pour afficher la liste des actions rapides et refactorisations disponibles.
 
-## <a name="to-see-potential-fixes"></a>Pour afficher les corrections éventuelles
-
-Sélectionnez la flèche vers le bas en regard de l’ampoule ou le lien **Afficher les corrections éventuelles** pour afficher une liste des actions rapides disponibles.
+Pour afficher les corrections éventuelles, sélectionnez la flèche vers le bas en regard de l’ampoule ou le lien **Afficher les corrections éventuelles**. Une liste des actions rapides disponibles s’affiche.
 
 ![Ampoule développée](../ide/media/vs2015_lightbulb_hover_expanded.png)
 

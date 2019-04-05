@@ -2,7 +2,6 @@
 title: IDebugApplicationNode::Detach | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ec67c17b184000239cd60dbf138a91fda8209c26
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: ce6f4fdf0e5c49062f0d930b64de8fb1b06888d1
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54086995"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58149560"
 ---
 # <a name="idebugapplicationnodedetach"></a>IDebugApplicationNode::Detach
 Supprime ce nœud de l’application à partir de l’arborescence du projet.  

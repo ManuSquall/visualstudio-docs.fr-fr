@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dcad8664fd0759a81e7c676c2d266475a3db9fe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 048116c07f30267c6beb2703c3eaa6fb4d3655f0
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923276"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415523"
 ---
 # <a name="properties-of-domain-roles"></a>Propriétés des rôles de domaine
 Les propriétés dans le tableau suivant sont associées à un rôle de domaine. Pour plus d’informations sur les rôles de domaine, consultez [présentation des modèles, des Classes et des relations](../modeling/understanding-models-classes-and-relationships.md). Pour plus d’informations sur l’utilisation de ces propriétés, consultez [personnalisation et extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -26,15 +26,15 @@ Les propriétés dans le tableau suivant sont associées à un rôle de domaine.
 |Modificateur d’accès de méthode Getter de propriété|Le modificateur d’accès pour l’accesseur Get de la propriété générée (`public`, `internal`, `private`, `protected`, ou `protected internal`).|`public`|
 |Modificateur d’accès de méthode Setter de propriété|Le modificateur d’accès pour l’accesseur Set pour la propriété générée (`public`, `internal`, `private`, `protected`, ou `protected internal`).|`public`|
 |Multiplicité|Le nombre d’éléments de modèle qui peuvent jouer le rôle opposé (`0..1`, `1..1`, `0..*`, ou `1..*`). Si la multiplicité est `0..*` ou `1..*`, puis la propriété générée représente une collection ; sinon, la propriété générée représente un élément de modèle unique.|Varie selon le type de relation et si c’est le rôle source ou cible dans la relation.|
-|Name|Le nom du rôle de domaine. Cette propriété ne peut pas contenir un espace blanc.|Le nom de la classe de domaine de l’acteur de rôle pour ce rôle.|
+|Nom|Le nom du rôle de domaine. Cette propriété ne peut pas contenir un espace blanc.|Le nom de la classe de domaine de l’acteur de rôle pour ce rôle.|
 |Propage la copie|`DoNotPropagateCopy` -L’acteur de rôle copié n’aura aucune copie de ce lien.<br /><br /> `PropagateCopyToLinkOnly` -Les points de lien copié à l’objet de l’acteur de rôle opposé.<br /><br /> `PropagateCopyToLinkAndOppositeRolePlayer` -Le lien copié pointe vers une copie de l’acteur de rôle opposé.|`PropagateCopyToLinkAndOppositeRolePlayer` pour les rôles de la source des incorporations.<br /><br /> `DoNotPropagateCopy` pour d’autres rôles.<br /><br /> Pour plus d’informations, consultez [personnalisation du comportement de copie](../modeling/customizing-copy-behavior.md)|
-|Propage la suppression|`True` Pour supprimer l’élément qui joue ce rôle lorsque le lien associé est supprimé.|`True` pour la cible d’un rôle d’incorporation.<br /><br /> `False` pour d’autres rôles.<br /><br /> Pour plus d’informations, consultez [personnalisation du comportement de suppression](../modeling/customizing-deletion-behavior.md).|
+|Propage la suppression|`True` Pour supprimer l’élément qui joue ce rôle lorsque le lien associé est supprimé.|`True` pour la cible d’un rôle d’incorporation.<br /><br /> `False` pour d’autres rôles.|
 |Nom de la propriété|Le nom de la propriété générée dans le code de l’acteur de rôle. Ce nom ne peut pas contenir d’espaces blancs.|Le nom du rôle opposé si ce rôle dispose d’un zéro-à-un ou une-à-un multiplicité ; Sinon, le nom pluralisée du rôle opposé.|
 |Acteur de rôle|La classe de domaine de l’élément qui peut jouer ce rôle dans la relation. Cette propriété est en lecture seule.|La classe de domaine de l’acteur de rôle pour ce rôle.|
 |Notes|Remarques informelles associées avec le rôle de domaine.|< aucun\>|
 |Category|La catégorie sous laquelle la propriété générée apparaît dans le **propriétés** fenêtre dans le concepteur généré. Si cette propriété est vide, la propriété générée apparaît sous le **divers** catégorie|< aucun\>|
 |Description|La description qui est utilisée pour documenter le code et est utilisée dans l’interface utilisateur du concepteur généré.<br /><br /> La description s’affiche dans l’info-bulle IntelliSense pour la propriété générée sur la classe d’acteur de rôle.|`Description for` *le nom complet du rôle*|
-|Nom complet|Le nom qui s’affiche dans le concepteur généré pour le rôle de domaine.|Valeur ajustée de la propriété Name.|
+|Display Name|Le nom qui s’affiche dans le concepteur généré pour le rôle de domaine.|Valeur ajustée de la propriété Name.|
 |Help Keyword|Le mot clé facultatif qui est utilisé pour indexer l’aide F1 pour le rôle de domaine.|\<aucune>|
 |Nom d’affichage de propriété|Le nom qui s’affiche dans le concepteur généré pour la propriété de rôle généré.|La valeur de la propriété de nom de la propriété corrigée.|
 

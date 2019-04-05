@@ -1,27 +1,22 @@
 ---
 title: 'Exemple de fichier XSD : Schéma d’ordre d’achat | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: f92b63b5-ec61-43b5-ae1e-63432a7a7e30
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6b421c1e7113bbabaea8cfd21659926053a009e7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6680c9ca768dcb551d98cc9c393f8e5c59500794
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272296"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938096"
 ---
-# <a name="sample-xsd-file-purchase-order-schema"></a>Exemple de fichier XSD : schéma de bon de commande
+# <a name="sample-xsd-file-purchase-order-schema"></a>Exemple de fichier XSD : Schéma d'ordre d'achat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -94,6 +89,3 @@ Le fichier XSD suivant est utilisé dans différents exemples de la documentatio
   </xsd:complexType>  
 </xsd:schema>  
 ```
-
-
-

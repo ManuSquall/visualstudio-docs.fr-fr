@@ -1,28 +1,23 @@
 ---
 title: Migrer des applications vers la plateforme Windows universelle (UWP) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 ms.assetid: 5279ab9b-71d9-4be5-81f6-a1f24b06f5fb
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: 8d4bc5d8e8a24483c30ac813d3253626e58dd353
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0b093a8474d9dd7971b6a5f311deea9a522730c1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791746"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948653"
 ---
-# <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>Migrer des applications vers la plateforme Windows universelle
-Apportez les modifications manuelles nécessaires à vos fichiers de projet existants pour les applications Windows Store 8.1, les applications Windows Phone 8.1 ou les applications Windows universelles créées avec Visual Studio 2015 RC pour pouvoir les utiliser avec Visual Studio 2015 RTM. (Si vous disposez d’une application Windows 8.1 universelle avec un projet d’application Windows et un projet Windows Phone, vous devez suivre les étapes de migration de chaque projet.)  
+# <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>Migrer des applications vers la plateforme Windows universelle (UWP)
+Apportez les modifications manuelles nécessaires à vos fichiers de projet existants pour les applications Windows Store 8.1, les applications Windows Phone 8.1 ou les applications Windows universelles créées avec Visual Studio 2015 RC pour pouvoir les utiliser avec Visual Studio 2015 RTM. (Si vous disposez d’une application Windows 8.1 universelle avec un projet d’application Windows et un projet Windows Phone, vous devez suivre les étapes de migration de chaque projet.)  
   
  Avec la plateforme Windows universelle, vous ciblez désormais avec votre application une ou plusieurs familles d’appareils. Pour plus d’informations sur les applications Windows universelles, consultez ce [guide de plateforme](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx).  
   
@@ -46,7 +41,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
   
      Plusieurs versions de la plateforme Windows universelle peuvent être installées. Nous vous recommandons d’utiliser la version la plus récente pour votre application.  
   
-2.  Dans l’Explorateur de fichiers, accédez au dossier où votre projet de plateforme Windows universelle est stocké. Créez un fichier .json dans ce dossier. Nommez le fichier : project.json, puis ajoutez le contenu suivant à ce fichier :  
+2.  Dans l’Explorateur de fichiers, accédez au dossier où votre projet de plateforme Windows universelle est stocké. Créez un fichier .json dans ce dossier. Nommez le fichier : project.json, puis ajoutez le contenu suivant à ce fichier :  
   
     ```json  
     {  
@@ -97,7 +92,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
   
     3.  Remplacez la valeur existante de la \<TargetPlatformVersion > élément sur la valeur de la version de plateforme Windows universelle que vous avez installé. Ajoutez également un \<TargetPlatformMinVersion > élément et lui donner la même valeur.  
   
-    4.  Modifiez la valeur de la \<minimumvisualstudioversion par > élément : **14**.  
+    4.  Modifiez la valeur de la \<minimumvisualstudioversion par > élément à : **14**.  
   
     5.  Remplacez le \<ProjectTypeGuids > comme illustré ci-dessous :  
   
@@ -273,7 +268,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
   
     2.  Mettez à jour la valeur de l’élément ApplicationTypeRevision, de 8.1 à 10.0.  
   
-    3.  Modifiez la valeur de la \<minimumvisualstudioversion par > élément : 14.  
+    3.  Modifiez la valeur de la \<minimumvisualstudioversion par > élément à : 14.  
   
     4.  Ajouter un \<EnableDotNetNativeCompatibleProfile > élément et affectez-lui la valeur : true.  
   
@@ -337,7 +332,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
   
 2. Vous devez mettre à jour le \<Package > élément avec les nouveaux schémas en fonction de votre type de projet existant. Tout d’abord, supprimez les schémas ci-dessous selon que vous disposez d’un projet Windows Store ou Windows Phone.  
   
-    **ANCIEN pour un projet du Windows Store :** votre \<Package > élément sera similaire à celui-ci.  
+    **ANCIEN projet du Windows Store :** Votre \<Package > élément sera similaire à celui-ci.  
   
    ```xml  
    <Package  
@@ -346,7 +341,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
   
    ```  
   
-    **ANCIEN pour un projet de Windows Phone :** votre \<Package > élément sera similaire à celui-ci.  
+    **ANCIEN pour les projets Windows Phone :** Votre \<Package > élément sera similaire à celui-ci.  
   
    ```xml  
    <Package  
@@ -356,7 +351,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
    xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">  
    ```  
   
-    **NOUVEAUTÉ de la plateforme Windows universelle :** ajouter les schémas ci-dessous à votre \<Package > élément. Supprimez tous les préfixes d’identificateur d’espace de noms associés dans les éléments pour les schémas que vous venez de supprimer. Mettez à jour la propriété IgnorableNamespaces en spécifiant la valeur uap mp. Votre nouveau \<Package > élément doit ressembler à celui-ci.  
+    **NOUVEAUTÉ pour Windows universel plateforme :** Ajoutez les schémas ci-dessous à votre \<Package > élément. Supprimez tous les préfixes d’identificateur d’espace de noms associés dans les éléments pour les schémas que vous venez de supprimer. Mettez à jour la propriété IgnorableNamespaces en spécifiant la valeur uap mp. Votre nouveau \<Package > élément doit ressembler à celui-ci.  
   
    ```xml  
    <Package  
@@ -367,7 +362,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
   
    ```  
   
-3. Ajouter un \<dépendances > élément enfant à le \<Package > élément. Ajoutez ensuite une \<TargetDeviceFamily > élément enfant à cette \<dépendances > élément avec les attributs Name, MinVersion et MaxVersionTested. Affectez à l’attribut Name la valeur Windows.Universal. Affectez aux attributs MinVersion et MaxVersionTested la valeur de la version de la plateforme Windows universelle que vous avez installée. Cet élément doit ressembler à celui-ci :  
+3. Ajouter un \<dépendances > élément enfant à le \<Package > élément. Ajoutez ensuite une \<TargetDeviceFamily > élément enfant à cette \<dépendances > élément avec les attributs Name, MinVersion et MaxVersionTested. Donnez à l’attribut de nom de la valeur : Windows.Universal. Affectez aux attributs MinVersion et MaxVersionTested la valeur de la version de la plateforme Windows universelle que vous avez installée. Cet élément doit ressembler à celui-ci :  
   
    ```xml  
    <Dependencies>  
@@ -375,7 +370,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
    </Dependencies>  
    ```  
   
-4. **Pour le Store Windows uniquement :** vous devez ajouter un \<MP : phoneidentity > élément enfant à le \<Package > élément. Ajoutez un attribut PhoneProductId et un attribut PhonePublisherId. Définissez l’attribut PhoneProductId la même valeur que l’attribut Name dans le \<identité > élément. Affectez à l’attribut PhonePublishedId la valeur 00000000-0000-0000-0000-000000000000. Comme ceci :  
+4. **Pour Windows Store uniquement :** Vous devez ajouter un \<MP : phoneidentity > élément enfant à le \<Package > élément. Ajoutez un attribut PhoneProductId et un attribut PhonePublisherId. Définissez l’attribut PhoneProductId la même valeur que l’attribut Name dans le \<identité > élément. Définissez la valeur de l’attribut PhonePublishedId sur : 00000000-0000-0000-0000-000000000000. Comme ceci :  
   
    ```xml  
    <Identity Name="aa3815a1-2d97-4c71-8c99-578135b28cd8" Publisher="CN=xxxxxxxx" Version="1.0.0.0" />   
@@ -419,7 +414,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
   
    ```  
   
-    **S’applique uniquement à Windows Store :** les noms de tailles de vignettes ont changé. Modifier les attributs dans le \<VisualElements > élément afin de refléter le nouveau convergé tailles de vignettes. 70x70 devient 71x71 et 30x30 devient 44x44.  
+    **S’applique uniquement à Windows Store :** Les noms de taille de vignette ont changé. Modifier les attributs dans le \<VisualElements > élément afin de refléter le nouveau convergé tailles de vignettes. 70x70 devient 71x71 et 30x30 devient 44x44.  
   
     **ANCIEN :** noms de tailles de vignettes  
   
@@ -496,7 +491,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
   
     ```  
   
-     **Nouveau :** \<PackageDependency > élément  
+     **NOUVEAU :** \<PackageDependency > élément  
   
     ```xml  
     <Dependencies>  
@@ -523,7 +518,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
     </Extension>  
     ```  
   
-     **NOUVEAU :** avec la tâche de type Bluetooth.  
+     **NOUVEAU :** Avec la tâche de type Bluetooth.  
   
     ```xml  
     <Extension Category="windows.backgroundTasks" EntryPoint="Fabrikam.BackgroundTask" Executable="MyBackground.exe">  
@@ -552,7 +547,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
     </Capabilities>  
     ```  
   
-     **NOUVEAU :** après remplacement par une fonctionnalité Bluetooth générique.  
+     **NOUVEAU :** Remplacé par une fonctionnalité Bluetooth générique.  
   
     ```xml  
     <Capabilities>  
@@ -756,7 +751,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
   
      ![Ouvrez le dossier pour afficher les versions installées](../misc/media/uap-uwpversions.png "UAP_UWPVersions")  
   
-     Plusieurs versions de la plateforme Windows universelle peuvent être installées. Nous vous recommandons d'utiliser la version la plus récente pour votre application.  
+     Plusieurs versions de la plateforme Windows universelle peuvent être installées. Nous vous recommandons d’utiliser la version la plus récente pour votre application.  
   
 2.  Ouvrez votre solution qui contient votre application Windows universelle C++. Cliquez avec le bouton droit sur le fichier projet .vcxproj et choisissez de décharger le fichier projet. Une fois le projet déchargé, cliquez de nouveau avec le bouton droit sur le fichier projet et choisissez de le modifier.  
   
@@ -826,7 +821,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
   
 ###  <a name="UnitTestRCUpdate10CSharp"></a> Mettre à jour vos projets de test unitaire C# /Visual Basic  
   
-1. Utilisez Visual Studio pour ouvrir votre solution contenant votre projet de test unitaire C#/VB. Modifiez la valeur de la \<OuttputType > élément : AppContainerExe.  
+1. Utilisez Visual Studio pour ouvrir votre solution contenant votre projet de test unitaire C#/VB. Modifiez la valeur de la \<OuttputType > élément à : AppContainerExe.  
   
    ```xml  
   

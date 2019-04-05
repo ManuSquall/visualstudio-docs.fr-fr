@@ -35,16 +35,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 28a35f37e298533fe3181f9325241bbef116f2d4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9e863a4106ea81dc06ef84fb812bbb32c6e94b07
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699468"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790509"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>Commencer une session de débogage pour une application UWP
 
-Cet article décrit comment démarrer une session de débogage de Visual Studio pour une application Universal Windows Platform (UWP). Les applications UWP peuvent être écrites en XAML et C++, XAML et C#/ Visual Basic, ou HTML et JavaScript. Pour démarrer le débogage d’une application UWP, configurer la session de débogage et choisissez la méthode pour démarrer l’application.
+Cet article décrit comment démarrer une session de débogage de Visual Studio pour une application Universal Windows Platform (UWP). Les applications UWP peuvent être écrites en XAML et C++, XAML et C#/ Visual Basic. Pour démarrer le débogage d’une application UWP, configurer la session de débogage et choisissez la méthode pour démarrer l’application.
+
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> À partir de Visual Studio 2019, les applications UWP pour HTML et JavaScript n’est plus en charge.
+::: moniker-end
+::: moniker range="vs-2017"
+Dans Visual Studio 2017, la plupart des commandes et des options indiquées dans cet article s’appliquent également aux applications UWP pour HTML et JavaScript. Où les commandes sont différentes entre gérés et les applications C++, les applications JavaScript sont généralement le même que les commandes pour les applications C++ UWP.
+::: moniker-end
 
 ##  <a name="BKMK_The_easy_way_to_start_debugging"></a>Démarrer le débogage à partir de la barre d’outils de Visual Studio
 
@@ -90,7 +98,7 @@ Pour configurer les options de débogage supplémentaires, utilisez la page de p
 
      ![C#et la page de propriétés de débogage de projet Visual Basic](../debugger/media/dbg_csvb_debugpropertypage.png)
 
-   - Pour les applications C++ et JavaScript, sélectionnez **propriétés de Configuration** > **débogage**.
+   - Pour les applications C++, sélectionnez **propriétés de Configuration** > **débogage**.
 
      ![Page de propriétés de débogage de l’application UWP C++](../debugger/media/dbg_cpp_debugpropertypage.png)
 
@@ -98,13 +106,13 @@ Pour configurer les options de débogage supplémentaires, utilisez la page de p
 
 Pour C# et les applications Visual Basic, Visual Studio débogue le code managé par défaut. Vous pouvez choisir de déboguer des types de code supplémentaires ou autres. Vous pouvez également définir **type de débogueur** valeurs pour les tâches en arrière-plan qui font partie du projet.
 
-Dans les applications C++, Visual Studio débogue le code natif par défaut. Dans les applications JavaScript, Visual Studio débogue le script par défaut. Vous pouvez choisir de déboguer des types spécifiques de code à la place ou en plus de code natif.
+Dans les applications C++, Visual Studio débogue le code natif par défaut. Vous pouvez choisir de déboguer des types spécifiques de code à la place ou en plus de code natif.
 
 **Pour spécifier les types de code à déboguer :**
 
 - Pour C# et les applications Visual Basic, sélectionnez une des débogueurs suivantes à partir de la **type d’Application** et **type de processus d’arrière-plan** menus déroulants sous **type de débogueur** sur le **déboguer** page de propriétés.
 
-- Pour C / c++ / applications JavaScript, sélectionnez une des débogueurs suivantes à partir de la **Type de débogueur** liste déroulante sur le **débogage** page de propriétés.
+- Pour les applications C++, sélectionnez un des débogueurs suivantes à partir de la **Type de débogueur** liste déroulante sur le **débogage** page de propriétés.
 
 |||
 |-|-|
@@ -124,10 +132,10 @@ Dans les applications C++, Visual Studio débogue le code natif par défaut. Dan
 
 -   Pour C# et les applications Visual Basic, désélectionnez le **autoriser le bouclage de réseau local** case à cocher sous **options de démarrage** sur le **déboguer** page de propriétés.
 
--   Pour les applications Visual C++ et JavaScript, sélectionnez **non** à partir de la **autoriser le bouclage de réseau Local** liste déroulante sur le **débogage** page de propriétés.
+-   Pour les applications Visual C++, sélectionnez **non** à partir de la **autoriser le bouclage de réseau Local** liste déroulante sur le **débogage** page de propriétés.
 
 ###  <a name="BKMK__Optional__Reinstall_the_app_when_you_start_debugging"></a> Réinstallez l’application lorsque vous démarrez le débogage (facultatif)
- Pour diagnostiquer les problèmes d’installation avec un C# ou une application Visual Basic, sélectionnez **désinstaller et réinstaller mon package** sur le **déboguer** page de propriétés. Cette option recrée l’installation d’origine lorsque vous démarrez le débogage. Cette option n’est pas disponible pour les projets C++ et JavaScript.
+ Pour diagnostiquer les problèmes d’installation avec un C# ou une application Visual Basic, sélectionnez **désinstaller et réinstaller mon package** sur le **déboguer** page de propriétés. Cette option recrée l’installation d’origine lorsque vous démarrez le débogage. Cette option n’est pas disponible pour les projets C++.
 
 ###  <a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a> Définir les options d’authentification pour le débogage distant
 
@@ -139,7 +147,7 @@ Le **universel (protocole non chiffré)** mode d’authentification est pour les
 
 - Pour C# et les applications Visual Basic, sur le **déboguer** page de propriétés, sélectionnez **Machine distante** en tant que le **appareil cible**. Ensuite, sélectionnez **aucun** ou **universel (protocole non chiffré)** pour **Mode d’authentification**.
 
-- Pour les applications C++ et JavaScript, sélectionnez **Machine distante** sous **débogueur à lancer** sur le **débogage** page de propriétés. Ensuite, sélectionnez **aucune authentification** ou **universel (protocole non chiffré)** pour **Type d’authentification**.
+- Pour les applications C++, sélectionnez **Machine distante** sous **débogueur à lancer** sur le **débogage** page de propriétés. Ensuite, sélectionnez **aucune authentification** ou **universel (protocole non chiffré)** pour **Type d’authentification**.
 
 > [!CAUTION]
 > Il n’existe aucune sécurité du réseau lorsque vous exécutez le débogueur distant dans **aucun** ou **universel (protocole non chiffré)** modes. Choisissez ces modes uniquement sur des réseaux approuvés que vous êtes sûr ne sont pas exposés à un code malveillant ou de trafic hostile.
@@ -156,7 +164,7 @@ Par défaut, Visual Studio démarre l’application immédiatement lorsque vous 
 
 - Pour C# et les applications Visual Basic, sélectionnez **ne pas lancer, mais déboguer mon code au démarrage** sous **options de démarrage** sur le **déboguer** page de propriétés.
 
-- Pour les applications C++ et JavaScript, sélectionnez **non** à partir de la **lancer l’Application** liste déroulante sur le **débogage** page de propriétés.
+- Pour les applications C++, sélectionnez **non** à partir de la **lancer l’Application** liste déroulante sur le **débogage** page de propriétés.
 
 Pour plus d’informations sur le débogage des tâches en arrière-plan, consultez [déclencheur suspendre, reprendre, événements et d’arrière-plan pour les applications UWP](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).
 
@@ -202,10 +210,12 @@ Pour attacher le débogueur à une application [!INCLUDE[win8_appname_long](../d
 
  Visual Studio attache le débogueur au processus. L'exécution se poursuit jusqu'à ce qu'un point d'arrêt soit atteint, que vous suspendiez manuellement l'exécution, qu'une exception non gérée se produise ou que l'application se termine.
 
+::: moniker range="vs-2017"
 > [!NOTE]
 > Les applications JavaScript s’exécutent dans une instance du processus *wwahost.exe*. Si plusieurs applications JavaScript s’exécute, vous devez connaître l’id numérique de processus (PID) de votre application *wwahost.exe* processus à attacher à celui-ci.
 >
 > Pour attacher à votre application JavaScript, le plus simple consiste à fermer toutes les autres applications JavaScript. Ou, vous pouvez noter le PID de l’exécution *wwahost.exe* processus dans le Gestionnaire des tâches Windows avant de démarrer votre application. Lorsque vous démarrez votre application, son *wwahost.exe* PID sera celle qui est différente de celles mentionnées précédemment.
+::: moniker-end
 
 ## <a name="see-also"></a>Voir aussi
 - [Déboguer des applications dans Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)

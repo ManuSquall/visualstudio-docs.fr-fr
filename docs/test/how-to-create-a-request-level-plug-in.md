@@ -9,12 +9,12 @@ ms.assetid: d0b5b23c-7e94-4637-be6c-2620a5442d46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f27ef33b03d6b8c7d9f84fab67a7791c9ba42735
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6aec2dfe707fb7c7cbae6a3220cedade47e0c0c5
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914459"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415549"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>Procédure : créer un plug-in au niveau de la requête
 
@@ -32,50 +32,42 @@ En outre, vous pouvez utiliser des plug-ins de requête de test de performances 
 
 1.  Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur la solution, sélectionnez **Ajouter**, puis choisissez **Nouveau projet**.
 
-     La boîte de dialogue **Ajouter un nouveau projet** s’affiche.
+2. Créez un projet de **Bibliothèque de classes**.
 
-2.  Sous **Modèles installés**, sélectionnez **Visual C#**.
-
-3.  Dans la liste des modèles, sélectionnez **Bibliothèque de classes**.
-
-4.  Dans la zone de texte **Nom**, tapez un nom pour votre classe, puis choisissez **OK**.
-
-     Le nouveau projet de bibliothèque de classes est ajouté à **l’Explorateur de solutions** et la nouvelle classe s’affiche dans **l’éditeur de code**.
-
-5.  Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le dossier **Références** de la nouvelle bibliothèque de classes, puis sélectionnez **Ajouter une référence**.
+3.  Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le dossier **Références** de la nouvelle bibliothèque de classes, puis sélectionnez **Ajouter une référence**.
 
      La boîte de dialogue **Ajouter une référence** s’affiche.
 
-6.  Choisissez l’onglet **.NET**, faites défiler la liste vers le bas, sélectionnez **Microsoft.VisualStudio.QualityTools.WebTestFramework**, puis cliquez sur **OK**
+4.  Choisissez l’onglet **.NET**, faites défiler la liste vers le bas, sélectionnez **Microsoft.VisualStudio.QualityTools.WebTestFramework**, puis cliquez sur **OK**
 
      La référence à **Microsoft.VisualStudio.QualityTools.WebTestFramework** est ajoutée au dossier **Référence** dans **l’Explorateur de solutions**.
 
-7.  Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le nœud supérieur du projet de test de performances web et de charge auquel vous souhaitez ajouter le plug-in du test de requête de test de performances web. Sélectionnez **Ajouter une référence**.
+5.  Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le nœud supérieur du projet de test de performances web et de charge auquel vous souhaitez ajouter le plug-in du test de requête de test de performances web. Sélectionnez **Ajouter une référence**.
 
      La boîte de dialogue **Ajouter une référence** s’affiche.
 
-8.  Choisissez l’onglet **Projets**, sélectionnez le **Projet de bibliothèque de classes**, puis choisissez **OK**.
+6.  Choisissez l’onglet **Projets**, sélectionnez le **Projet de bibliothèque de classes**, puis choisissez **OK**.
 
-9. Dans **l’éditeur de code**, écrivez le code de votre plug-in. Commencez par créer une classe publique qui dérive de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>.
+7. Dans **l’éditeur de code**, écrivez le code de votre plug-in. Commencez par créer une classe publique qui dérive de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>.
 
-10. Implémentez le code à l'intérieur d'un des gestionnaires d'événements <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PreRequest*> et <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PostRequest*>. Pour un exemple d'implémentation, reportez-vous à la section suivante.
+8. Implémentez le code à l'intérieur d'un des gestionnaires d'événements <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PreRequest*> et <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PostRequest*>. Pour un exemple d'implémentation, reportez-vous à la section suivante.
 
-11. Après avoir écrit le code, générez le nouveau projet.
+9. Après avoir écrit le code, générez le nouveau projet.
 
-12. Ouvrez le test de performances web auquel vous souhaitez ajouter le plug-in de requête.
+10. Ouvrez le test de performances web auquel vous souhaitez ajouter le plug-in de requête.
 
-13. Cliquez avec le bouton droit sur la requête à laquelle vous souhaitez ajouter le plug-in de requête, puis sélectionnez **Ajouter un plug-in de requête**.
+11. Cliquez avec le bouton droit sur la requête à laquelle vous souhaitez ajouter le plug-in de requête, puis sélectionnez **Ajouter un plug-in de requête**.
 
      La boîte de dialogue **Ajouter un plug-in de requête de test web** s’affiche.
 
-14. Sous **Sélectionner un plug-in**, sélectionnez votre nouveau plug-in.
+12. Sous **Sélectionner un plug-in**, sélectionnez votre nouveau plug-in.
 
-15. Dans le volet **Propriétés du plug-in sélectionné**, définissez les valeurs initiales du plug-in à utiliser au moment de l’exécution.
+13. Dans le volet **Propriétés du plug-in sélectionné**, définissez les valeurs initiales du plug-in à utiliser au moment de l’exécution.
 
     > [!NOTE]
     > Vous pouvez exposer autant de propriétés que vous souhaitez de vos plug-ins ; il suffit de les rendre publics, définissables et d'un type de base, tel qu'un entier, une valeur booléenne ou une chaîne. Vous pouvez également modifier ultérieurement les propriétés du plug-in de test de performances web dans la fenêtre Propriétés.
 
-16. Cliquez sur **OK**.
+14. Cliquez sur **OK**.
 
      Le plug-in est ajouté au dossier **Plug-ins de requête**, qui est un dossier enfant de la requête HTTP.
 
@@ -86,8 +78,8 @@ En outre, vous pouvez utiliser des plug-ins de requête de test de performances 
     >
     > Cela se produit si vous effectuez des modifications du code dans l’un de vos plug-ins et si vous créez une autre version de la DLL **(Version=0.0.0.0)**. Toutefois, le plug-in fait toujours référence à la version du plug-in d’origine. Pour résoudre ce problème, procédez comme suit :
     >
-    > 1.  Dans le projet de test de performances web et de charge, un message d’avertissement s’affiche dans les références. Supprimez et rajoutez la référence à la DLL de votre plug-in.
-    > 2.  Supprimez le plug-in de votre test ou de l'emplacement approprié, puis rajoutez-le.
+    > 1. Dans le projet de test de performances web et de charge, un message d’avertissement s’affiche dans les références. Supprimez et rajoutez la référence à la DLL de votre plug-in.
+    > 2. Supprimez le plug-in de votre test ou de l'emplacement approprié, puis rajoutez-le.
 
 ## <a name="example"></a>Exemple
 

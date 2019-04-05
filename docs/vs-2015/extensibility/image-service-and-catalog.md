@@ -1,21 +1,17 @@
 ---
 title: Service et le catalogue de l’image | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c0e01d60bd7fab0b435f1b10ae744c3454aa0e44
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 95d3de67dce269696bdd3fbea7ec562511bd0347
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774365"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "59001240"
 ---
 # <a name="image-service-and-catalog"></a>Catalogue et service d’images
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -126,13 +122,13 @@ Ce livre de recettes contient des conseils et meilleures pratiques pour arrêter
 
 |||  
 |-|-|  
-|**Symbole**|**Description**|  
+|**Symbol**|**Description**|  
 |CommonProgramFiles|La valeur de la variable d’environnement % %CommonProgramFiles%|  
 |LocalAppData|La valeur de la variable d’environnement % LocalAppData|  
 |ManifestFolder|Le dossier contenant le fichier manifest|  
-|Mes documents|Le chemin d’accès complet du dossier Mes Documents de l’utilisateur actuel|  
+|MyDocuments|Le chemin d’accès complet du dossier Mes Documents de l’utilisateur actuel|  
 |ProgramFiles|La valeur de la variable d’environnement % ProgramFiles %|  
-|Système|Le dossier Windows\System32|  
+|Système|The Windows\System32 folder|  
 |WinDir|La valeur de la variable d’environnement % WinDir %|  
 
  **Image**  
@@ -170,7 +166,7 @@ Ce livre de recettes contient des conseils et meilleures pratiques pour arrêter
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Attribut** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                            **Définition**                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |      URI      |                                                                                                                                                                                                                                                                                                               [Obligatoire] URI qui définit où l’image peut être chargé à partir de. Il peut avoir l'une des valeurs suivantes :<br /><br /> -A [URI à en-tête Pack](http://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) à l’aide de l’application : / / / autorité<br />-Une référence de ressource du composant absolu<br />-Un chemin d’accès à un fichier contenant une ressource native                                                                                                                                                                                                                                                                                                               |
-|  Présentation   | [Facultatif] Indique quel type d’arrière-plan de que la source est destinée à être utilisée.<br /><br /> Il peut avoir l'une des valeurs suivantes :<br /><br /> *Lumière :* la source peut être utilisée sur un arrière-plan clair.<br /><br /> <em>Foncé :</em>la source peut être utilisée sur un arrière-plan sombre.<br /><br /> *Contraste élevé :* la source peut être utilisée sur n’importe quel arrière-plan en mode contraste élevé.<br /><br /> *HighContrastLight :* la source peut être utilisée sur un arrière-plan clair en mode de contraste élevé.<br /><br /> *HighContrastDark :* la source peut être utilisée sur un arrière-plan sombre en mode de contraste élevé.<br /><br /> Si l’attribut d’arrière-plan est omis, la source peut être utilisée sur n’importe quel arrière-plan.<br /><br /> Si l’arrière-plan est *Light*, *foncé*, *HighContrastLight*, ou *HighContrastDark*, les couleurs de la source ne sont jamais inversés. Si l’arrière-plan est omis ou défini sur *contraste élevé*, l’inversion des couleurs de la source est contrôlée par l’image **AllowColorInversion** attribut. |
+|  Présentation   | [Facultatif] Indique quel type d’arrière-plan de que la source est destinée à être utilisée.<br /><br /> Il peut avoir l'une des valeurs suivantes :<br /><br /> *Light :* La source peut être utilisée sur un arrière-plan clair.<br /><br /> <em>Foncé :</em>la source peut être utilisée sur un arrière-plan sombre.<br /><br /> *Contraste élevé :* La source peut être utilisée sur n’importe quel arrière-plan en mode contraste élevé.<br /><br /> *HighContrastLight :* La source peut être utilisée sur un arrière-plan clair en mode de contraste élevé.<br /><br /> *HighContrastDark :* La source peut être utilisée sur un arrière-plan sombre en mode de contraste élevé.<br /><br /> Si l’attribut d’arrière-plan est omis, la source peut être utilisée sur n’importe quel arrière-plan.<br /><br /> Si l’arrière-plan est *Light*, *foncé*, *HighContrastLight*, ou *HighContrastDark*, les couleurs de la source ne sont jamais inversés. Si l’arrière-plan est omis ou défini sur *contraste élevé*, l’inversion des couleurs de la source est contrôlée par l’image **AllowColorInversion** attribut. |
 |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
  Un \<Source > élément peut avoir un seul des sous-éléments facultatives suivantes :  
@@ -179,9 +175,9 @@ Ce livre de recettes contient des conseils et meilleures pratiques pour arrêter
 |-|-|-|  
 |**Élément**|**Attributs (tous requis)**|**Définition**|  
 |\<Taille >|Value|La source sera utilisée pour les images de la taille spécifiée (en unités de périphérique). L’image sera carré.|  
-|\<SizeRange >|MinSize, MaxSize|La source servira pour les images à partir de MinSize vers taille maximale (en unités de périphérique) (inclus). L’image sera carré.|  
-|\<Dimensions >|Largeur, hauteur|La source sera utilisée pour les images de la donnée de la largeur et la hauteur (en unités de périphérique).|  
-|\<DimensionRange >|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|La source servira pour les images à partir de la largeur/hauteur minimale de la largeur/hauteur maximale (en unités de périphérique) (inclus).|  
+|\<SizeRange>|MinSize, MaxSize|La source servira pour les images à partir de MinSize vers taille maximale (en unités de périphérique) (inclus). L’image sera carré.|  
+|\<Dimensions>|Largeur, hauteur|La source sera utilisée pour les images de la donnée de la largeur et la hauteur (en unités de périphérique).|  
+|\<DimensionRange>|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|La source servira pour les images à partir de la largeur/hauteur minimale de la largeur/hauteur maximale (en unités de périphérique) (inclus).|  
 
  Un \<Source > élément peut également avoir un facultatif \<NativeResource > sous-élément qui définit un \<Source > qui est chargé à partir d’un assembly natif plutôt qu’un assembly managé.  
 
@@ -244,7 +240,7 @@ Ce livre de recettes contient des conseils et meilleures pratiques pour arrêter
 
     -   Requis si vous utilisez le **BrushToColorConverter** pour le ImageThemingUtilities. **ImageBackgroundColor** dans votre interface utilisateur WPF  
 
--   **Microsoft.VisualStudio.Shell. \<VSVersion >.0**  
+-   **Microsoft.VisualStudio.Shell.\<VSVersion>.0**  
 
     -   Requis si vous utilisez le **IVsUIObject** type  
 
@@ -655,7 +651,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3.  Mettre à jour votre code pour utiliser le service d’images pour demander des monikers via le mappage mis à jour. (Cela peut signifier la mise à jour vers **CrispImages** pour code managé, ou demandant HBITMAP ou éléments HICON le service de l’image et en les passant autour du code natif.)  
 
 ## <a name="testing-your-images"></a>Test de vos images  
- Vous pouvez utiliser l’outil Visionneuse de bibliothèque d’images pour tester vos manifestes de l’image pour vous assurer que tout est correctement créé. Vous pouvez trouver l’outil dans le [SDK Visual Studio 2015](http://msdn.microsoft.com/library/bb166441.aspx). Vous pouvez trouver la documentation de cet outil et d’autres [ici](http://aka.ms/VSImageThemeTools).  
+ Vous pouvez utiliser l’outil Visionneuse de bibliothèque d’images pour tester vos manifestes de l’image pour vous assurer que tout est correctement créé. Vous pouvez trouver l’outil dans le [SDK Visual Studio 2015](http://msdn.microsoft.com/library/bb166441.aspx). Vous pouvez trouver la documentation de cet outil et d’autres [ici](https://aka.ms/VSImageThemeTools).  
 
 ## <a name="additional-resources"></a>Ressources supplémentaires  
 
@@ -679,7 +675,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  La visionneuse de bibliothèque Image peut charger des manifestes d’images et permet à l’utilisateur pour les manipuler dans la même façon Visual Studio pour vous assurer que le manifeste a été créé correctement. L’utilisateur peut modifier en arrière-plan, de tailles, de paramètre PPP, de contraste élevé et d’autres paramètres. Également, il affiche des informations de chargement pour rechercher des erreurs dans les manifestes et affiche des informations de source de chaque image dans le manifeste.  
 
-## <a name="faq"></a>FAQ  
+## <a name="faq"></a>Questions fréquentes (FAQ)  
 
 -   Y a-t-il des dépendances que vous devez inclure lors du chargement \<Include="Microsoft.VisualStudio.* de référence. Interop.14.0.designTime » / > ?  
 
@@ -952,7 +948,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphGroupJSharpInterface|GlyphItemPrivate|InterfacePrivate|  
         |GlyphGroupJSharpInterface|GlyphItemShortcut|InterfaceShortcut|  
         |GlyphGroupError||StatusError|  
-        |GlyphBscFile||Fichier|  
+        |GlyphBscFile||ClassFile|  
         |GlyphAssembly||Référence|  
         |GlyphLibrary||Bibliothèque|  
         |GlyphVBProject||VBProjectNode|  
@@ -969,7 +965,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphReference||ClassMethodReference|  
         |GlyphRecursion||Récursivité|  
         |GlyphXmlItem||Balise|  
-        |GlyphJSharpProject||Collection DocumentCollection|  
+        |GlyphJSharpProject||DocumentCollection|  
         |GlyphJSharpDocument||Document|  
         |GlyphForwardType||GoToNext|  
         |GlyphCallersGraph||CallTo|  
@@ -995,4 +991,3 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphXmlDescendantQuestion||XmlDescendantLowConfidence|  
         |GlyphXmlDescendantCheck||XmlDescendantHighConfidence|  
         |GlyphCompletionWarning||IntellisenseWarning|
-

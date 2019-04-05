@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6a54909ad928cd923d7ab0d9df4cfcfdb400029
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f8dffcc3bd007f27ba9912f909990a206ec6458a
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928424"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268644"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Procédure : Créer et modifier des configurations
 
@@ -46,17 +46,13 @@ Dans la boîte de dialogue **Gestionnaire de configurations**, vous pouvez utili
 
  Après avoir installé les configurations de votre choix, vous pouvez définir les propriétés de projet appropriées pour ces configurations.
 
-### <a name="to-set-properties-based-on-configurations"></a>Pour définir des propriétés sur la base de configurations
+### <a name="set-properties-based-on-configurations"></a>Définir des propriétés en fonction des configurations
 
--   Dans l’ **Explorateur de solutions**, ouvrez le menu contextuel d’un projet et choisissez **Propriétés**.
+Pour définir des propriétés en fonction des configurations, dans l’**Explorateur de solutions**, ouvrez le menu contextuel d’un projet, puis choisissez **Propriétés**. Vous pouvez définir des propriétés pour vos configurations. Par exemple, pour une configuration Release, vous pouvez spécifier l’optimisation du code quand la solution est générée et, pour une configuration Debug, vous pouvez spécifier l’ajout du symbole de compilation conditionnelle `DEBUG`.
 
-     La fenêtre **Pages de propriétés** apparaît.
+Pour plus d’informations sur les paramètres des pages de propriétés, consultez [Gestion des propriétés des projets et des solutions](../ide/managing-project-and-solution-properties.md).
 
-     Vous pouvez définir des propriétés pour vos configurations. Par exemple, pour une configuration Release, vous pouvez spécifier l’optimisation du code quand la solution est générée et, pour une configuration Debug, vous pouvez spécifier l’ajout du symbole de compilation conditionnelle `DEBUG`. Pour plus d’informations sur les paramètres des pages de propriétés, consultez [Gestion des propriétés des projets et des solutions](../ide/managing-project-and-solution-properties.md).
-
-## <a name="create-and-modify-project-configurations"></a>Créer et modifier des configurations de projet
-
-### <a name="to-create-a-project-configuration"></a>Pour créer une configuration de projet
+## <a name="create-a-project-configuration"></a>Créer une configuration de projet
 
 1.  Ouvrez la boîte de dialogue **Gestionnaire de configurations**.
 
@@ -72,7 +68,7 @@ Dans la boîte de dialogue **Gestionnaire de configurations**, vous pouvez utili
 
 6.  Pour créer une configuration à l’échelle de la solution au même moment, cochez la case **Créer une nouvelle configuration de solution**.
 
-### <a name="to-rename-a-project-configuration"></a>Pour renommer une configuration de projet
+## <a name="rename-a-project-configuration"></a>Renommer une configuration de projet
 
 1.  Ouvrez la boîte de dialogue **Gestionnaire de configurations**.
 

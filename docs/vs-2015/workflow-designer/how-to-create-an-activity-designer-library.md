@@ -1,25 +1,22 @@
 ---
-title: 'Comment : créer une bibliothèque ActivityDesigner | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Créer une bibliothèque ActivityDesigner | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 5b62e092-63b3-462d-9d77-fb112482f45d
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 6802f92f349d15d48935f4e7c3db85abf7c12535
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 69d68fdc0a34ffa680ec2306a087cd29002eb185
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258269"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953035"
 ---
-# <a name="how-to-create-an-activity-designer-library"></a>Procédure : créer une bibliothèque ActivityDesigner
+# <a name="how-to-create-an-activity-designer-library"></a>Procédure : Créer une bibliothèque ActivityDesigner
 Les concepteurs d'activités personnalisées vous permettent de créer une interface utilisateur pour une activité standard ou personnalisée. Vous contrôlez la complexité de l'interface utilisateur et avez la possibilité de créer plusieurs concepteurs d'activités pour une activité. Ce scénario vous permet de créer des concepteurs adaptés pour plusieurs audiences.  
   
 ### <a name="to-create-an-activity-designer-library"></a>Pour créer une bibliothèque ActivityDesigner  
@@ -43,7 +40,7 @@ Les concepteurs d'activités personnalisées vous permettent de créer une inter
   
 8.  Le modèle de projet crée une définition de concepteur d'activités en XAML et le fichier d'implémentation code-behind dans le code source. [!INCLUDE[wfd1](../includes/wfd1-md.md)] s'ouvre et affiche la zone de dessin pour votre concepteur d'activités.  
   
-9. Faites glisser [!INCLUDE[avalon1](../includes/avalon1-md.md)] des contrôles de la **boîte à outils** vers l’aire de conception pour les utiliser dans votre concepteur d’activités personnalisées.  Pour obtenir un exemple montrant comment implémenter un concepteur d’activités personnalisées, consultez [Comment : créer un concepteur d’activités personnalisé](http://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31).  
+9. Faites glisser [!INCLUDE[avalon1](../includes/avalon1-md.md)] des contrôles de la **boîte à outils** vers l’aire de conception pour les utiliser dans votre concepteur d’activités personnalisées.  Pour obtenir un exemple montrant comment implémenter un concepteur d’activités personnalisées, consultez [Comment : Créer un concepteur d’activités personnalisées](http://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31).  
   
     > [!WARNING]
     >  Concepteurs d’activités personnalisées peuvent être utilisés pour les activités personnalisées ainsi par défaut [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]activités.  

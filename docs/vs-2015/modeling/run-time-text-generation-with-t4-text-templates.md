@@ -1,12 +1,9 @@
 ---
 title: Génération de texte de l’exécution avec les modèles de texte T4 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Preprocessed Text Template project item
 - TextTemplatingFilePreprocessor custom tool
@@ -16,13 +13,13 @@ ms.assetid: 79b4b3c6-a9a7-4446-b6fd-e2388fc6b05f
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 75da17b32d3997121777f398a6663932c7d7143d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 2290ec08ea64a2775b3e4ced171dbf14399219cb
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920129"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001369"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Génération de texte durant l'exécution à l'aide des modèles de texte T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -375,7 +372,7 @@ End of common template.
   
 ```  
   
- **DerivedTemplate1.tt :**  
+ **DerivedTemplate1.tt:**  
   
 ```csharp  
 <#@ template language="C#" inherits="AbstractBaseTemplate1" #>  
@@ -431,7 +428,4 @@ End material for DerivedTemplate1.
 ## <a name="see-also"></a>Voir aussi  
  [Génération de code et modèles de texte T4](../modeling/code-generation-and-t4-text-templates.md)   
  [Écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md)   
- [Présentation T4 : Les modèles de texte prétraités par Oleg Sych](http://www.olegsych.com/2009/09/t4-preprocessed-text-templates/)
-
-
-
+ [Présentation T4 : Modèles de texte prétraités par Oleg Sych](https://github.com/olegsych/T4Toolbox)

@@ -1,22 +1,20 @@
 ---
 title: Typés et les datasets non typés | Microsoft Docs
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c83ba0bb-5425-4d47-8891-6b4dbf937701
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 71761826611c490a3fb43413acaa29eb6520138f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 219ba8c35cf67e3675f565b89607e6d518599dfd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283788"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952387"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Datasets typés et non typés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,4 +40,3 @@ Un dataset typé est un jeu de données est tout d’abord dérivé de la base d
  Même si les datasets typés présentent de nombreux avantages, un dataset non typé est utile dans diverses circonstances. La situation la plus évidente est lorsque aucun schéma n’est disponible pour le jeu de données. Cela peut se produire, par exemple, si votre application interagit avec un composant qui retourne un jeu de données, mais vous ne savez pas à l’avance la structure. De même, voici les heures lorsque vous travaillez avec des données qui n’ont pas d’une structure statique et prévisible. Dans ce cas, il est peu pratique d’utiliser un dataset typé, car vous seriez obligé de régénérer la classe dataset typée pour chaque modification de la structure de données.  
   
  En règle générale, il existe plusieurs fois lorsque vous pouvez créer un jeu de données de manière dynamique sans disposer d’un schéma. Dans ce cas, le jeu de données est simplement une structure pratique dans laquelle vous pouvez conserver des informations, tant que les données peuvent être représentées de manière relationnelle. En même temps, vous pouvez tirer parti des fonctionnalités du jeu de données, telles que la possibilité de sérialiser les informations à passer à un autre processus ou d’écrire un fichier XML.
-

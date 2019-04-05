@@ -21,17 +21,17 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e952f9611b7bdb4d96e8a50b502ae15e1e6ce528
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8390fcfd5dd89607422b7614d064ec736f98f61b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802312"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867917"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Profilage sur des clusters HPC (High Performance Computing)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez profiler sur des nœuds de calcul de clusters Microsoft Windows HPC à l’aide de la méthode d’échantillonnage des outils de profilage [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] ou [!INCLUDE[vsUltExt](../includes/vsultext-md.md)]. Pour plus d’informations sur HPC, consultez [Windows HPC](http://go.microsoft.com/fwlink/?LinkId=165393) sur le site web de Microsoft.  
+Vous pouvez profiler sur des nœuds de calcul de clusters Microsoft Windows HPC à l’aide de la méthode d’échantillonnage des outils de profilage [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] ou [!INCLUDE[vsUltExt](../includes/vsultext-md.md)]. Pour plus d’informations sur HPC, consultez [Big Compute : HPC & Batch](https://azure.microsoft.com/solutions/big-compute/) sur le site Web de Microsoft.  
   
 ## <a name="prerequisites"></a>Prérequis  
  Pour effectuer un profilage sur un nœud de calcul HPC, vous devez effectuer les opérations suivantes :  
@@ -55,8 +55,8 @@ Vous pouvez profiler sur des nœuds de calcul de clusters Microsoft Windows HPC 
 |||  
 |-|-|  
 |*%HeadNode%*|Nom du nœud principal du cluster.|  
-|*%FxPath%*|Chemin du programme d’installation de [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]. Sur le [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] support d’installation est le chemin d’accès : WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
-|*%ProfilerPath%*|Chemin de la version autonome du programme d’installation des outils de profilage. Sur le [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] support d’installation est le chemin d’accès : Standalone Profiler\x64\vs_profiler.exe|  
+|*%FxPath%*|Chemin du programme d’installation de [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]. Sur le support d’installation de [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)], le chemin est le suivant : WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
+|*%ProfilerPath%*|Chemin de la version autonome du programme d’installation des outils de profilage. Sur le média d’installation de [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)], le chemin est le suivant : Standalone Profiler\x64\vs_profiler.exe|  
   
 ## <a name="profiling-on-an-hpc-compute-node"></a>Profilage sur un nœud de calcul HPC  
  Pour configurer une session de profilage, spécifiez le cluster HPC et les informations cibles à l’aide de l’Assistant Performance HPC. Vous pouvez définir des options supplémentaires dans les pages de propriétés de session de performance. Les outils de profilage déploient automatiquement les fichiers binaires cibles nécessaires. Ils démarrent également le profileur et l’application HPC.  

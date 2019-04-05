@@ -1,14 +1,9 @@
 ---
 title: Étendre les modèles et diagrammes UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending
 - UML model, extending
@@ -16,13 +11,13 @@ ms.assetid: b5bfa61e-ea59-4c3b-b5af-53475d7d13cd
 caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 74f3c518682997dca57a630c6f084437f7175d80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2c13d30b1657917d55e5d3218c70aa8f2a69ec67
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794762"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "59001231"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Étendre des diagrammes et des modèles UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ Cette rubrique résume les différentes manière d’étendre les outils de mod�
   
  L’équipe Fabrikam responsable des outils effectue une série d’améliorations pour aider les équipes de développement. Les sections suivantes décrivent les différents genres d’extensions que vous pouvez définir. Vous pouvez combiner plusieurs de ces techniques dans une même extension Visual Studio.  
   
- Pour plus d’informations, consultez cette vidéo : ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo")[série MSDN Comment faire : outils UML et extensibilité](http://go.microsoft.com/fwlink/?LinkId=214467).  
+ Pour plus d’informations, consultez cette vidéo : ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo")[série MSDN Comment faire : Outils UML et extensibilité](http://go.microsoft.com/fwlink/?LinkId=214467).  
   
 ##  <a name="Requirements"></a> Spécifications  
   
@@ -63,7 +58,7 @@ Cette rubrique résume les différentes manière d’étendre les outils de mod�
  Pour plus d’informations, consultez [définir des contraintes de validation pour les modèles UML](../modeling/define-validation-constraints-for-uml-models.md).  
   
 ## <a name="menu-commands"></a>Commandes de menu  
- Vous pouvez définir des commandes que les utilisateurs peuvent appeler en cliquant avec le bouton droit sur les éléments d’un diagramme UML. Les commandes peuvent mettre à jour le modèle et les diagrammes ou exécuter d'autres opérations dans [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
+ Vous pouvez définir des commandes que les utilisateurs peuvent appeler en cliquant avec le bouton droit sur les éléments d’un diagramme UML. Les commandes peuvent mettre à jour le modèle et les diagrammes ou exécuter d’autres opérations dans [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
   
  Fabrikam définit des commandes de menu qui automatisent des opérations courantes, telles que la création d’un bureau d’enregistrement et sa connexion à un tapis roulant sélectionné ou la réorganisation d’un diagramme en fonction des règles de disposition de la société.  
   
@@ -81,10 +76,10 @@ Cette rubrique résume les différentes manière d’étendre les outils de mod�
   
  Les développeurs de Fabrikam créent du code qui définit automatiquement la couleur d’un élément en fonction de son stéréotype. Il est ainsi plus facile aux utilisateurs de distinguer les différents rôles joués par les éléments dans les modèles.  
   
- Pour plus d’informations, consultez [Comment : répondre aux modifications dans un modèle UML](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
+ Pour plus d'informations, voir [Procédure : Répondre aux modifications dans un modèle UML](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
   
 ## <a name="model-bus"></a>Bus de modèles  
- Le bus de modèles vous permet d'accéder à un diagramme ou à un modèle à partir d'un autre diagramme ou d'une autre Extension [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Cela vous permet entre autres de répartir les informations sur plusieurs modèles, pour que plusieurs personnes puissent travailler en même temps sur le modèle combiné.  
+ Le bus de modèles vous permet d’accéder à un diagramme ou à un modèle à partir d’un autre diagramme ou d’une autre extension [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] . Cela vous permet entre autres de répartir les informations sur plusieurs modèles, pour que plusieurs personnes puissent travailler en même temps sur le modèle combiné.  
   
  Fabrikam utilise des éléments de diagrammes d’activités pour représenter l’équipement de manutention de bagages. Chaque élément de l’équipement peut avoir une spécification plus détaillée dans un autre diagramme, qui peut se trouver dans un autre modèle. Les contraintes de validation sur le diagramme de flux de bagages peuvent récupérer des propriétés pertinentes de l’équipement à partir des autres diagrammes. Les références aux autres diagrammes sont stockées dans des propriétés supplémentaires définies dans des stéréotypes.  
   
@@ -118,7 +113,7 @@ Cette rubrique résume les différentes manière d’étendre les outils de mod�
   
 |**Catégorie**|**Liens**|  
 |------------------|---------------|  
-|**Vidéos**|![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") [série MSDN Comment faire : outils UML et extensibilité](http://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9 : UML with Visual Studio](http://go.microsoft.com/fwlink/?LinkId=199957)|  
+|**Vidéos**|![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") [série MSDN Comment faire : Extensibilité et les outils UML](http://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9 : UML avec Visual Studio](http://go.microsoft.com/fwlink/?LinkId=199957)|  
 |**Forums**|-   [Outils de visualisation et de modélisation Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling (outils DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
 |**Blogs**|[Blog Visual Studio ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**Articles et journaux techniques**|[Centre d’architecture MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)|  
@@ -126,6 +121,3 @@ Cette rubrique résume les différentes manière d’étendre les outils de mod�
 ## <a name="see-also"></a>Voir aussi  
  [Créer des modèles pour votre application](../modeling/create-models-for-your-app.md)   
  [Informations de référence sur l’API pour l’extensibilité de la modélisation UML](../modeling/api-reference-for-uml-modeling-extensibility.md)
-
-
-

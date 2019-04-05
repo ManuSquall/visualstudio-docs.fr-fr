@@ -1,27 +1,22 @@
 ---
-title: 'Procédure pas à pas : Objets manquants en raison état de l’appareil | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure pas à pas : Objets manquants en raison de l’état de l’appareil | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 1b0d2bbd-0729-4aa5-8308-70c5bf1468c5
 caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5c0ad6017dd6ff660dfbd47977e1a53346cf6c55
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 51fb019d428ed7196818c96e759c0abc8f8e68c7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773728"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953096"
 ---
-# <a name="walkthrough-missing-objects-due-to-device-state"></a>Procédure pas à pas : objets manquants en raison de l'état du périphérique
+# <a name="walkthrough-missing-objects-due-to-device-state"></a>Procédure pas à pas : objets manquants en raison de l’état de l’appareil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette procédure pas à pas montre comment utiliser Graphics Diagnostics dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour examiner un objet qui est manquant à cause de la configuration incorrecte de l’état de l’appareil.  
@@ -113,6 +108,3 @@ Cette procédure pas à pas montre comment utiliser Graphics Diagnostics dans [!
    Après avoir déterminé que le problème de rendu est lié à une fonction de profondeur mal configurée, vous pouvez utiliser cette information ainsi que votre connaissance du code pour identifier l’emplacement où la fonction de profondeur a été mal définie, et résoudre le problème. Si vous êtes peu familiarisé avec le code, vous pouvez identifier le problème à l’aide des indices que vous avez rassemblés lors du débogage. Par exemple, en reprenant la **description du stencil de profondeur** de ce scénario, vous pouvez rechercher le code pour les mots tels que « profondeur » ou « supérieure ». Après avoir corrigé le code, vous devez le régénérer, puis réexécuter l’application pour vérifier que le problème d’affichage est résolu :  
   
    ![Application une fois le problème est résolu](../debugger/media/vsg-walkthru1-finalview.png "vsg_walkthru1_finalview")
-
-
-

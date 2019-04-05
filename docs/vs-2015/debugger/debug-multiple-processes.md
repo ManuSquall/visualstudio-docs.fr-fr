@@ -1,14 +1,9 @@
 ---
 title: Déboguer plusieurs processus | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.programs
 - vs.debug.processes.attaching
@@ -24,13 +19,13 @@ ms.assetid: bde37134-66af-4273-b02e-05b3370c31ab
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 56982a3b5c0a0d8a5cb0b682ab67b6f5eb133dd1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1d0986e1780cb9fea061132b5985972cf9635c8b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793046"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938127"
 ---
 # <a name="debug-multiple-processes"></a>Déboguer plusieurs processus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,10 +52,10 @@ Voici comment démarrer les processus de débogage, basculer d'un processus à u
   
    ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
-##  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> Rechercher les sources et symboles (fichiers .pdb)  
+##  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> Rechercher les fichiers sources et de symboles (.pdb)  
  Pour parcourir le code source d'un processus, le débogueur doit accéder aux fichiers sources et aux fichiers de symboles du processus. Consultez [Spécifier les fichiers de symbole (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
- Si vous ne pouvez pas accéder aux fichiers pour un processus, vous pouvez naviguer en utilisant la fenêtre Code Machine. Consultez [Comment : utiliser la fenêtre code machine](../debugger/how-to-use-the-disassembly-window.md)  
+ Si vous ne pouvez pas accéder aux fichiers pour un processus, vous pouvez naviguer en utilisant la fenêtre Code Machine. Voir [Guide pratique pour utiliser la fenêtre Code Machine](../debugger/how-to-use-the-disassembly-window.md)  
   
  ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
@@ -145,7 +140,7 @@ Voici comment démarrer les processus de débogage, basculer d'un processus à u
   
 -   [Basculer entre les processus](#BKMK_Switch_between_processes) • [Break, étape et continue de commandes](#BKMK_Break__step__and_continue_commands)  
   
-###  <a name="BKMK_Switch_between_processes"></a> Basculer entre les processus  
+###  <a name="BKMK_Switch_between_processes"></a> Basculer entre processus  
  Pendant un débogage, vous pouvez attacher plusieurs processus à la fois, mais seul l'un d'entre eux est actif dans le débogueur à un moment donné. Vous pouvez définir actif ou *actuel* processus dans la barre d’outils emplacement de débogage ou dans le **processus** fenêtre. Pour basculer entre les processus, les deux processus doivent être en mode arrêt.  
   
  **Pour définir le processus actuel**  
@@ -168,7 +163,7 @@ Voici comment démarrer les processus de débogage, basculer d'un processus à u
   
   ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
-###  <a name="BKMK_Break__step__and_continue_commands"></a> Arrêter, l’étape et continue de commandes  
+###  <a name="BKMK_Break__step__and_continue_commands"></a> Commandes Arrêter, Exécuter pas à pas et Continuer  
   
 > [!NOTE]
 >  Par défaut, les commandes de débogage break, continue et step affectent tous les processus en cours de débogage. Pour modifier ce comportement, consultez [configurer le comportement d’exécution de plusieurs processus](#BKMK_Configure_the_execution_behavior_of_multiple_processes)  
@@ -180,7 +175,7 @@ Voici comment démarrer les processus de débogage, basculer d'un processus à u
 |**Déboguer** menu :<br /><br /> -   **Continuer**|Tout les processus reprennent.|Tous les processus suspendus reprennent.|  
 |**Déboguer** menu :<br /><br /> -   **Pas à pas détaillé**<br />-   **Pas à pas principal**<br />-   **Pas à pas sortant**|Tous les processus s'exécutent pendant les étapes de processus actuelles.<br /><br /> Puis, tous les processus s'arrêtent.|Étapes de processus actuel.<br /><br /> Les processus suspendus reprennent.<br /><br /> Les processus en cours d'exécution se poursuivent.|  
 |**Déboguer** menu :<br /><br /> -   **Pas à pas détaillé des processus en cours**<br />-   **Pas à pas principal des processus en cours**<br />-   **Pas à pas sortant des processus en cours**|N/A|Étapes de processus actuel.<br /><br /> D'autres processus conservent leur état existant (Suspendu ou En cours d'exécution).|  
-|Fenêtre source<br /><br /> -   **Point d’arrêt**|Tous les processus s'arrêtent.|Seul le processus de fenêtre source est rompu.|  
+|Fenêtre source<br /><br /> -   **Breakpoint**|Tous les processus s'arrêtent.|Seul le processus de fenêtre source est rompu.|  
 |Menu contextuel de la fenêtre source :<br /><br /> -   **Exécuter jusqu’au curseur**<br /><br /> La fenêtre source doit figurer dans le processus actuel.|Tous les processus s'exécutent pendant que le processus de fenêtre source s'exécute jusqu'au curseur puis s'arrête.<br /><br /> Puis, tous les autres processus s'arrêtent.|Le processus de fenêtre source s'exécute sur le curseur.<br /><br /> D'autres processus conservent leur état existant (Suspendu ou En cours d'exécution).|  
 |**Processus** menu contextuel de fenêtre :<br /><br /> -   **Arrêter le processus**|N/A|Le processus sélectionné s'interrompt.<br /><br /> D'autres processus conservent leur état existant (Suspendu ou En cours d'exécution).|  
 |**Processus** menu contextuel de fenêtre :<br /><br /> -   **Continuer le processus**|N/A|Le processus sélectionné reprend.<br /><br /> D'autres processus conservent leur état existant (Suspendu ou En cours d'exécution).|  
@@ -225,11 +220,8 @@ Voici comment démarrer les processus de débogage, basculer d'un processus à u
  ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ## <a name="see-also"></a>Voir aussi  
- [Spécifier les symboles (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
- [Attacher au processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
+ [Spécifier les fichiers de symboles (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+ [Attacher à des processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Naviguer dans le code avec le débogueur](../debugger/navigating-through-code-with-the-debugger.md)   
  [Débogage juste-à-temps](../debugger/just-in-time-debugging-in-visual-studio.md)   
  [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-
-
-

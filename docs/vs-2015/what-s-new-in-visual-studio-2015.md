@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 936a664dfeb063f84218c469b160cec761a0e468
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 18e5effdd2398ce3532c73c1d9f9941554b2043b
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844137"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195162"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Nouveautés de Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -131,14 +131,13 @@ Pour en savoir plus sur les nombreuses améliorations et nouvelles fonctionnalit
 
      Les articles[Debugging](http://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/) (iOS) et [Debug on Device](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debugging_with_xamarin_android/) des [guides du développeur Xamarin](http://developer.xamarin.com/guides) décrivent le débogage.
 
--   **C++ / Android**. Utilisez les modèles de [Visual C++ pour le développement mobile multiplateforme](http://msdnstage.redmond.corp.microsoft.com/library/dn872463\(v=vs.140\).aspx) , ainsi que les outils tiers, tels que [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) , pour créer des applications natives pour Windows et Android.
+-   **C++ / Android**. Utilisez les modèles de [Visual C++ pour le développement mobile multiplateforme](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) , ainsi que les outils tiers, tels que [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) , pour créer des applications natives pour Windows et Android.
 
 ## <a name="debugging-and-diagnostics"></a>Débogage et diagnostics
- Pour plus d’informations sur les nouvelles fonctionnalités de débogage, consultez [What’s New for the Debugger in Visual Studio 2015](/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio-2015?view=vs-2015).
 
- Pour plus d’informations sur les nouveautés introduite dans les diagnostics, consultez [What ' s New in des outils de profilage](./profiling/what-s-new-in-profiling-tools.md).
+Pour plus d’informations sur les nouveautés introduite dans les diagnostics, consultez [What ' s New in des outils de profilage](./profiling/what-s-new-in-profiling-tools.md).
 
- Voici une liste d'outils nouveaux ou améliorés qui effectuent différents types d'analyses et de diagnostics sur votre code :
+Voici une liste d'outils nouveaux ou améliorés qui effectuent différents types d'analyses et de diagnostics sur votre code :
 
 ### <a name="perftips"></a>Conseils sur les performances
  Les conseils pour les performances indiquent le temps d'exécution des méthodes durant le débogage, ce qui vous permet d'identifier rapidement les goulots d'étranglement, sans avoir à invoquer le profileur. Pour commencer, consultez [Conseils sur les performances : Performance Information at-a-glance while Debugging with Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)

@@ -1,11 +1,8 @@
 ---
-title: 'Comment : créer une bibliothèque de flux de travail de Machine à états (hérité) | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Créer une bibliothèque de flux de travail de Machine à états (hérité) | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - projects, state machine workflow library
@@ -15,15 +12,15 @@ ms.assetid: 5bd68c6e-6a98-47d9-826d-9bb7a4fd72f8
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 9f813df11fdc787455c1c435a53cff2e074612a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f1f972903cadf6a918b34b1d0fbed560bd26606f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189934"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949711"
 ---
-# <a name="how-to-create-a-state-machine-workflow-library-legacy"></a>Procédure : créer une bibliothèque de workflows d'ordinateur d'état (héritée)
+# <a name="how-to-create-a-state-machine-workflow-library-legacy"></a>Procédure : Créer une bibliothèque de workflows de machine à états (héritée)
 Suivez ces étapes pour créer un projet de bibliothèque de workflows d'ordinateur d'état à l'aide du [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité fourni par [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
 ### <a name="to-create-a-state-machine-workflow-library-project"></a>Pour créer un projet de bibliothèque de workflows d'ordinateur d'état  

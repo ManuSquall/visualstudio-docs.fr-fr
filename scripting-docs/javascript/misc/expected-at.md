@@ -14,14 +14,14 @@ ms.assetid: 82ff8b74-1710-4358-9a26-dc92ab29c53b
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 05842c274c27165a7065cb90fda60dd75da2a659
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: da8eb2f21cbe7ef611aaba863e853a2fe7a71753
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840336"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018309"
 ---
-# <a name="expected-"></a>'@' attendu
+# <a name="expected-"></a>Attendu '\@'
 Vous avez tenté de créer une variable qui doit être utilisé avec les instructions de compilation conditionnelle à l’aide de la `@set` instruction, mais ne pas placer une arobase «**@**» avant le nom de variable.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  

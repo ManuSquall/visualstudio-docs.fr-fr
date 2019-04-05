@@ -1,27 +1,24 @@
 ---
-title: 'Comment : générer des modèles à partir de modèles à l’aide de séquences d’échappement | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Générer des modèles à partir de modèles à l’aide de séquences d’échappement | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, generating templates from templates
 ms.assetid: 4126156a-7cea-48b8-925e-7790806cfe6c
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fd3a54c69b33e503908217b9d0d83c6f61c6380a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a710554d46df8238f33aa90b647def337b57a9a3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249409"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938553"
 ---
-# <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>Comment : générer des modèles à partir de modèles à l'aide de séquences d'échappement
+# <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>Procédure : Générer des modèles à partir de modèles à l’aide de séquences d’échappement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez créer un modèle de texte qui crée un autre modèle de texte en tant que sortie de texte générée. Pour ce faire, vous devez utiliser des séquences d’échappement pour délimiter les balises de modèle de texte. Si vous n’utilisez pas de séquences d’échappement, votre modèle de texte généré aura une signification prédéfinie. Pour plus d’informations sur l’utilisation de séquences d’échappement dans les modèles de texte, consultez [à l’aide de séquences d’échappement dans les modèles de texte](../modeling/using-escape-sequences-in-text-templates.md).  
@@ -79,6 +76,3 @@ XmlDocument xDoc = new XmlDocument();
      }  
 #>  
 ```
-
-
-

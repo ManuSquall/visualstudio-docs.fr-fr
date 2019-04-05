@@ -2,7 +2,6 @@
 title: Windows Script, moteurs | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16e699ee789ae10883152b5d8aa7d8ffee0ddffd
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 3434e9baaeb483e60087aec1b8536108c8af4471
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572619"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58157761"
 ---
 # <a name="windows-script-engines"></a>Windows Script, moteurs
 Pour implémenter un moteur Microsoft Windows Script, créez un objet OLE COM qui prend en charge les interfaces suivantes.  
@@ -29,7 +28,7 @@ Pour implémenter un moteur Microsoft Windows Script, créez un objet OLE COM qu
 |Interface|Description|  
 |[IActiveScript](../winscript/reference/iactivescript.md)|Fournit les fonctionnalités de script de base. L’implémentation de cette interface est obligatoire.|  
 |[IActiveScriptParse](../winscript/reference/iactivescriptparse.md)|Permet d’ajouter du texte de script, d’évaluer les expressions, etc. L’implémentation de cette interface est facultative. Toutefois, si elle n’est pas implémentée, le moteur de script doit implémenter l’une des interfaces IPersist* pour charger un script.|  
-|IPersist*|Assure la prise en charge de la persistance. Vous devez implémenter au moins une des interfaces suivantes si l’interface [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) n’est pas implémentée.<br /><br /> IPersistStorage : assure la prise en charge de l’attribut DATA={url} dans la balise OBJECT.<br /><br /> IPersistStreamInit : prend en charge le même attribut qu’`IPersistStorage`, ainsi que l’attributDATA="string-encoded byte stream" dans la balise OBJECT.<br /><br /> IPersistPropertyBag : assure la prise en charge de l’attribut PARAM= dans la balise OBJECT.|  
+|IPersist*|Assure la prise en charge de la persistance. Vous devez implémenter au moins une des interfaces suivantes si l’interface [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) n’est pas implémentée.<br /><br /> IPersistStorage : Prend en charge l’attribut DATA={url} dans la balise OBJECT.<br /><br /> IPersistStreamInit : Prend en charge le même attribut qu’`IPersistStorage`, ainsi que l’attributDATA="string-encoded byte stream" dans la balise OBJECT.<br /><br /> IPersistPropertyBag : Prend en charge l’attribut PARAM= dans la balise OBJECT.|  
   
 > [!NOTE]
 >  Il est possible que le moteur de script ne soit jamais appelé pour enregistrer ou restaurer un état de script par le biais d’`IPersist*`. Au lieu de cela, l’interface [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) est utilisée avec un appel à [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) pour créer un script vide, puis des scriptlets sont ajoutés et connectés à des événements avec [IActiveScriptParse::AddScriptlet](../winscript/reference/iactivescriptparse-addscriptlet.md). Enfin, du code général est ajouté avec [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md). Néanmoins, un moteur de script doit implémenter au moins une interface `IPersist*` (de préférence `IPersistStreamInit`), car d’autres applications hôtes peuvent tenter de les utiliser.  

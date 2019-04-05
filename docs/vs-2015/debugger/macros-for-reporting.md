@@ -1,14 +1,9 @@
 ---
 title: Macros pour la création de rapports | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.macros
 dev_langs:
@@ -28,13 +23,13 @@ ms.assetid: f2085314-a3a8-4caf-a5a4-2af9ad5aad05
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dc2a5226b3d6f512d2c2f89d9fef2a80eef34340
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e4aee33d571f95e24a359fa2bc7e12ae8d64eae0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758458"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952023"
 ---
 # <a name="macros-for-reporting"></a>Macros pour la création de rapports
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,8 +38,8 @@ Vous pouvez utiliser la **_RPTn**, et **_RPTFn** macros, définies dans CRTDBG. 
   
 |Macro|Description|  
 |-----------|-----------------|  
-|**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|Sort une chaîne de message et zéro à quatre arguments. Pour _RPT1 à **_RPT4**, la chaîne du message sert d’une chaîne de mise en forme printf-style pour les arguments.|  
-|**_RPTF0**, **_RPTF1**, **, _RPTF2**, **_RPTF4**|Identique à **_RPTn** , mais ces macros également le fichier nom et numéro de ligne où se trouve la macro de sortie.|  
+|**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|Sort une chaîne de message et zéro à quatre arguments. Pour _RPT1 à **_RPT4**, la chaîne de message fait office de chaîne de mise en forme du style printf pour les arguments.|  
+|**_RPTF0**, **_RPTF1**, **,_RPTF2**, **_RPTF4**|Identique à **_RPTn** , mais ces macros également le fichier nom et numéro de ligne où se trouve la macro de sortie.|  
   
  Prenons l'exemple suivant :  
   
@@ -57,13 +52,13 @@ Vous pouvez utiliser la **_RPTn**, et **_RPTFn** macros, définies dans CRTDBG. 
 #endif  
 ```  
   
- Ce code sort les valeurs de `someVar` et `otherVar` à **stdout**. Vous pouvez utiliser l'appel suivant à `_RPTF2` pour reporter ces mêmes valeurs et, en outre, le nom de fichier et le numéro de ligne:  
+ Ce code écrit les valeurs de `someVar` et de `otherVar` dans **stdout**. Vous pouvez utiliser l'appel suivant à `_RPTF2` pour reporter ces mêmes valeurs et, en outre, le nom de fichier et le numéro de ligne:  
   
 ```  
 if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d, otherVar= %d\n", someVar, otherVar );  
 ```  
   
- Si vous constatez qu’une application particulière nécessite des rapports de débogage que les macros distribuées avec la bibliothèque Runtime C ne fournissent pas, vous pouvez écrire une macro conçue spécialement pour répondre à vos besoins. Dans un des fichiers d’en-tête, par exemple, vous pouvez inclure du code semblable au suivant pour définir une macro intitulée **ALERT_IF2**:  
+ Si vous constatez qu’une application particulière nécessite des rapports de débogage que les macros distribuées avec la bibliothèque Runtime C ne fournissent pas, vous pouvez écrire une macro conçue spécialement pour répondre à vos besoins. Dans un de vos fichiers d’en-tête, par exemple, vous pourriez inclure un code semblable au suivant pour définir une macro intitulée **ALERT_IF2** :  
   
 ```  
 #ifndef _DEBUG                  /* For RELEASE builds */  
@@ -90,6 +85,3 @@ someVar=%d, otherVar=%d.\n", someVar, otherVar );
   
 ## <a name="see-also"></a>Voir aussi  
  [Techniques de débogage CRT](../debugger/crt-debugging-techniques.md)
-
-
-

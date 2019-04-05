@@ -1,29 +1,24 @@
 ---
-title: 'Comment : rechercher une fenêtre dans la vue de Windows | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Rechercher une fenêtre dans la vue de Windows | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - windows, searching in Windows view
 ms.assetid: 30306970-b861-4315-acf8-f86a43d4e73b
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 60eb467a24c85d176dae7727a476cc45dac6c876
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 435f189d22abed9697953fc8b946deac64f86740
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782971"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953277"
 ---
-# <a name="how-to-search-for-a-window-in-windows-view"></a>Comment : rechercher une fenêtre dans la vue Fenêtres
+# <a name="how-to-search-for-a-window-in-windows-view"></a>Procédure : Rechercher une fenêtre dans la vue Fenêtres
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez rechercher une fenêtre spécifique dans la vue de Windows à l’aide de son handle, légende, classe ou une combinaison de sa légende et de la classe en tant que critères de recherche. Vous pouvez également spécifier le sens initial de la recherche. Les champs dans la boîte de dialogue affiche les attributs de la fenêtre sélectionnée dans l’arborescence de la fenêtre.  
@@ -56,6 +51,3 @@ Vous pouvez rechercher une fenêtre spécifique dans la vue de Windows à l’ai
 5.  Cliquez sur **OK**.  
   
      Si une fenêtre correspondante est trouvée, elle est mise en surbrillance dans le [Windows vue](../debugger/windows-view.md) fenêtre.
-
-
-

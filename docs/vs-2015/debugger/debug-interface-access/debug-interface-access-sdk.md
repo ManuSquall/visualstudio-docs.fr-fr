@@ -1,14 +1,9 @@
 ---
 title: SDK Debug Interface Access | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: 4c0abe53-11d3-4b7a-bdc7-b054f85aaf40
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 394109e1d691819e06159073a6ea00b65d97de0a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ddaea95bc879364de99c0ec01213cda30fa4e7d7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810037"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950955"
 ---
 # <a name="debug-interface-access-sdk"></a>Kit de développement logiciel de Debug Interface Access
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,6 +45,3 @@ Le Microsoft Debug Interface Access Kit de développement logiciel (DIA SDK) fou
   
  [Dia2dump.cpp, fichier source](../../debugger/debug-interface-access/dia2dump-cpp-source-file.md)  
  Le code utilisé par source [Dia2dump exemple](../../debugger/debug-interface-access/dia2dump-sample.md) pour illustrer l’API de DIA.
-
-
-

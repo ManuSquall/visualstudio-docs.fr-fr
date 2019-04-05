@@ -1,14 +1,9 @@
 ---
 title: '&lt;dépendance&gt; , élément (déploiement ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
 - urn:schemas-microsoft-com:asm.v2#os
@@ -30,13 +25,13 @@ ms.assetid: 9b4d2082-0347-4922-ac70-85f11b913039
 caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: af4b3fc79118e25fb5631de1a4ea4d5897355bf1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f191b11dfce5b3877d0a31e260e092000a556a5a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214918"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950012"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;dépendance&gt; , élément (déploiement ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,8 +86,8 @@ Identifie la version de l’application à installer et l’emplacement du manif
 |`preRequisite`|Facultatif. Spécifie que cet assembly doit déjà exister dans le GAC. Les valeurs valides sont `true` et `false`. Si `true`et l’assembly spécifié n’existe pas dans le GAC, l’application ne parvient pas à exécuter.|  
 |`visible`|Facultatif. Identifie l’identité de l’application de niveau supérieur, y compris ses dépendances. Utilisé en interne par [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] pour gérer le stockage des applications et l’activation.|  
 |`dependencyType`|Obligatoire. La relation entre cette dépendance et l’application. Les valeurs valides sont les suivantes :<br /><br /> -   `install`. Composant représente une installation distincte de l’application actuelle.<br />-   `preRequisite`. Composant est requis par l’application actuelle.|  
-|`codebase`|Facultatif. Le chemin d’accès complet au manifeste d’application.|  
-|`size`|Facultatif. La taille du manifeste d’application, en octets.|  
+|`codebase`|Optionnel. Le chemin d’accès complet au manifeste d’application.|  
+|`size`|Optionnel. La taille du manifeste d’application, en octets.|  
   
 ## <a name="assemblyidentity"></a>assemblyIdentity  
  Obligatoire. Cet élément est un enfant de l’élément `dependentAssembly` . Le contenu de `assemblyIdentity` doit être identique à celui décrit dans la [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifeste d’application. Le tableau suivant présente les attributs de la `assemblyIdentity` élément.  
@@ -103,7 +98,7 @@ Identifie la version de l’application à installer et l’emplacement du manif
 |`Version`|Obligatoire. Spécifie le numéro de version de l’application, dans le format suivant : `major.minor.build.revision`|  
 |`publicKeyToken`|Obligatoire. Spécifie une chaîne hexadécimale de 16 caractères qui représente les 8 derniers octets du hachage SHA-1 de la clé publique sous laquelle l’application ou l’assembly est signé. La clé publique utilisée pour se connecter doit être de 2 048 bits ou supérieur.|  
 |`processorArchitecture`|Obligatoire. Spécifie le microprocesseur. Les valeurs valides sont `x86` pour 32 bits Windows et `IA64` pour Windows de 64 bits.|  
-|`Language`|Facultatif. Identifie les codes de langue de deux parties de l’assembly. Par exemple, EN-US, qui signifie pour l’anglais (US). La valeur par défaut est `neutral`. Cet élément est dans le `asmv2` espace de noms.|  
+|`Language`|Optionnel. Identifie les codes de langue de deux parties de l’assembly. Par exemple, EN-US, qui signifie pour l’anglais (US). La valeur par défaut est `neutral`. Cet élément est dans le `asmv2` espace de noms.|  
 |`type`|Facultatif. Pour assurer la compatibilité avec Windows côte à côte vers l’arrière, installez technologie. La seule valeur autorisée est `win32`.|  
   
 ## <a name="hash"></a>hash  
@@ -111,10 +106,10 @@ Identifie la version de l’application à installer et l’emplacement du manif
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] utilise un hachage algorithmique de tous les fichiers dans une application en tant qu’une vérification de sécurité pour vous assurer qu’aucun des fichiers ont été modifiés après le déploiement. Si le `hash` élément n’est pas inclus, cette vérification ne sera pas effectuée. Par conséquent, en omettant le `hash` élément n’est pas recommandé.  
   
-## <a name="dsigtransforms"></a>dsig : TRANSFORMS  
+## <a name="dsigtransforms"></a>dsig:Transforms  
  Le `dsig:Transforms` élément est un enfant requis de le `hash` élément. L’élément `dsig:Transforms` ne comporte pas d’attributs.  
   
-## <a name="dsigtransform"></a>dsig : Transform  
+## <a name="dsigtransform"></a>dsig:Transform  
  Le `dsig:Transform` élément est un enfant requis de le `dsig:Transforms` élément. Le tableau suivant présente les attributs de la `dsig:Transform` élément.  
   
 |Attribut|Description|  
@@ -128,7 +123,7 @@ Identifie la version de l’application à installer et l’emplacement du manif
 |---------------|-----------------|  
 |`Algorithm`|L’algorithme utilisé pour calculer le condensat pour ce fichier. La seule valeur utilisée par [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] est `http://www.w3.org/2000/09/xmldsig#sha1`.|  
   
-## <a name="dsigdigestvalue"></a>dsig : DigestValue  
+## <a name="dsigdigestvalue"></a>dsig:DigestValue  
  Le `dsig:DigestValue` élément est un enfant requis de le `hash` élément. L’élément `dsig:DigestValue` ne comporte pas d’attributs. Sa valeur de texte est le hachage calculé pour le fichier spécifié.  
   
 ## <a name="remarks"></a>Notes  
@@ -190,7 +185,4 @@ Identifie la version de l’application à installer et l’emplacement du manif
   
 ## <a name="see-also"></a>Voir aussi  
  [Manifeste de déploiement ClickOnce](../deployment/clickonce-deployment-manifest.md)   
- [\<dépendance > élément](../deployment/dependency-element-clickonce-application.md)
-
-
-
+ [\<dependency>, élément](../deployment/dependency-element-clickonce-application.md)

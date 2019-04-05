@@ -9,27 +9,29 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90969307d328519c95997be2ff0e8fad87fdc0a1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: fb273a54a89bb4c0339cac739b9dd0fe7fdd0afc
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939799"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415588"
 ---
 # <a name="advanced-example-for-containers"></a>Exemple avancé pour les conteneurs
 
-L’exemple de fichier Dockerfile décrit dans [Installer Build Tools dans un conteneur](build-tools-container.md) utilise toujours l’image [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) en fonction de la dernière image microsoft/windowsservercore et de la dernière version du programme d’installation de Visual Studio Build Tools 2017. Si vous publiez cette image dans un [registre Docker](https://azure.microsoft.com/services/container-registry) pour que les utilisateurs puissent la tirer (pull), elle conviendra dans de nombreux scénarios. Toutefois, en pratique, il est plus courant de préciser l’image de base que vous utilisez, les binaires que vous téléchargez et les versions des outils que vous installez.
+L’exemple de fichier Dockerfile décrit dans [Installer Build Tools dans un conteneur](build-tools-container.md) utilise toujours l’image [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) basée sur la dernière image microsoft/windowsservercore et sur la dernière version du programme d’installation de Visual Studio Build Tools. Si vous publiez cette image dans un [registre Docker](https://azure.microsoft.com/services/container-registry) pour que les utilisateurs puissent l’extraire, celle-ci devrait convenir à de nombreux scénarios. Toutefois, en pratique, il est plus courant de préciser l’image de base que vous utilisez, les binaires que vous téléchargez et les versions des outils que vous installez.
 
 L’exemple de fichier Dockerfile suivant utilise une étiquette de version spécifique de l’image microsoft/dotnet-framework. L’utilisation d’une balise spécifique pour une image de base est très répandue et permet de garder à l’esprit que la génération et la regénération des images ont toujours la même base.
 
 > [!NOTE]
-> Vous ne pouvez pas installer Visual Studio dans l’image microsoft/windowsservercore:10.0.14393.1593 ou toute autre image basée sur celle-ci, en raison de problèmes connus liés au lancement du programme d’installation dans un conteneur. Pour plus d’informations, consultez la section [Problèmes connus](build-tools-container-issues.md).
+> Vous ne pouvez pas installer Visual Studio dans l’image microsoft/windowsservercore:10.0.14393.1593 ou toute autre image basée sur celle-ci, en raison de problèmes connus liés au lancement du programme d’installation dans un conteneur. Pour plus d’informations, consultez [Problèmes connus liés aux conteneurs](build-tools-container-issues.md).
 
-L’exemple ci-dessous télécharge la dernière version de Build Tools 2017. Si vous souhaitez utiliser une ancienne version de Build Tools que vous pourrez installer plus tard dans un conteneur, vous devez d’abord [créer](create-an-offline-installation-of-visual-studio.md) et [gérer](update-a-network-installation-of-visual-studio.md) une disposition.
+L’exemple suivant télécharge la dernière version de Build Tools. Si vous voulez utiliser une version antérieure de Build Tools pour l’installer plus tard dans un conteneur, vous devez d’abord [créer](create-an-offline-installation-of-visual-studio.md) et [gérer](update-a-network-installation-of-visual-studio.md) une disposition.
 
 ## <a name="install-script"></a>Script d’installation
 
-Pour collecter des journaux quand une erreur d’installation se produit, dans le répertoire de travail, créez un script de commandes par lot nommé « Install.cmd » et ayant le contenu suivant :
+Pour collecter des journaux quand une erreur d’installation se produit, créez un script de commandes par lots nommé « Install.cmd » dans le répertoire de travail et ayant le contenu suivant :
 
 ```shell
 @if not defined _echo echo off
@@ -51,6 +53,8 @@ if "%ERRORLEVEL%"=="3010" (
 ## <a name="dockerfile"></a>Dockerfile
 
 Dans le répertoire de travail, créez un fichier « Dockerfile » ayant le contenu suivant :
+
+::: moniker range="vs-2017"
 
 ```dockerfile
 # escape=`
@@ -88,16 +92,72 @@ ENTRYPOINT C:\BuildTools\Common7\Tools\VsDevCmd.bat &&
 # Default to PowerShell if no other command specified.
 CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
 ```
+
    > [!WARNING]
-   > Quel que soit le produit, Visual Studio 2017 15.8 (ou une version antérieure) ne s’installe pas correctement sur mcr<span></span>.microsoft\.com\/windows\/servercore:1809 (ou une version ultérieure). Aucune erreur ne s’affiche.
+   > Quel que soit le produit, Visual Studio 2017 version 15.8 ou antérieure ne s’installe pas correctement sur mcr\.microsoft\.com\/windows\/servercore:1809 ou ultérieur. Aucune erreur ne s’affiche.
    >
    > Pour plus d’informations, voir [Problèmes de conteneurs connus](build-tools-container-issues.md).
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+```dockerfile
+# escape=`
+
+# Use a specific tagged image. Tags can be changed, though that is unlikely for most images.
+# You could also use the immutable tag @sha256:1a66e2b5f3a5b8b98ac703a8bfd4902ae60d307ed9842978df40dbc04ac86b1b
+ARG FROM_IMAGE=microsoft/dotnet-framework:4.7.1-20180410-windowsservercore-1709
+FROM ${FROM_IMAGE}
+
+# Copy our Install script.
+COPY Install.cmd C:\TEMP\
+
+# Download collect.exe in case of an install failure.
+ADD https://aka.ms/vscollect.exe C:\TEMP\collect.exe
+
+# Use the latest release channel. For more control, specify the location of an internal layout.
+ARG CHANNEL_URL=https://aka.ms/vs/16/release/channel
+ADD ${CHANNEL_URL} C:\TEMP\VisualStudio.chman
+
+# Download and install Build Tools excluding workloads and components with known issues.
+ADD https://aka.ms/vs/16/release/vs_buildtools.exe C:\TEMP\vs_buildtools.exe
+RUN C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache `
+    --installPath C:\BuildTools `
+    --channelUri C:\TEMP\VisualStudio.chman `
+    --installChannelUri C:\TEMP\VisualStudio.chman `
+    --all `
+    --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
+    --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
+    --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
+    --remove Microsoft.VisualStudio.Component.Windows81SDK
+
+# Start developer command prompt with any other commands specified.
+ENTRYPOINT C:\BuildTools\Common7\Tools\VsDevCmd.bat &&
+
+# Default to PowerShell if no other command specified.
+CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
+```
+
+::: moniker-end
+
 Exécutez la commande suivante pour générer l’image dans le répertoire de travail actuel :
+
+::: moniker range="vs-2017"
 
 ```shell
 docker build -t buildtools2017:15.6.27428.2037 -t buildtools2017:latest -m 2GB .
 ```
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+```shell
+docker build -t buildtools2019:16.0.28714.193 -t buildtools2019:latest -m 2GB .
+```
+
+::: moniker-end
 
 Vous pouvez éventuellement passer l’argument `FROM_IMAGE`, l’argument `CHANNEL_URL` ou les deux à la fois, à l’aide du commutateur de ligne de commande `--build-arg` pour spécifier une autre image de base ou l’emplacement d’une disposition interne pour gérer une image fixe.
 
@@ -105,9 +165,12 @@ Vous pouvez éventuellement passer l’argument `FROM_IMAGE`, l’argument `CHAN
 
 Cet exemple télécharge certains outils et vérifie que les hachages correspondent. Il télécharge également le dernier utilitaire de collecte de journaux Visual Studio et .NET. Ainsi, en cas d’échec de l’installation, vous pouvez copier les journaux sur votre machine hôte pour analyser le problème.
 
+::: moniker range="vs-2017"
+
 ```shell
 > docker build -t buildtools2017:15.6.27428.2037 -t buildtools2017:latest -m 2GB .
 Sending build context to Docker daemon
+
 ...
 Step 8/10 : RUN C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache ...
  ---> Running in 4b62b4ce3a3c
@@ -115,13 +178,29 @@ The command 'cmd /S /C C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe ...' return
 
 > docker cp 4b62b4ce3a3c:C:\vslogs.zip "%TEMP%\vslogs.zip"
 ```
+::: moniker-end
 
-Une fois la dernière ligne exécutée, ouvrez « %TEMP%\vslogs.zip » sur votre machine, ou soumettez le problème sur le site web de la [Communauté des développeurs](https://developercommunity.visualstudio.com).
+::: moniker range="vs-2019"
+
+```shell
+> docker build -t buildtools2019:16.0.28714.193 -t buildtools2019:latest -m 2GB .
+Sending build context to Docker daemon
+
+...
+Step 8/10 : RUN C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache ...
+ ---> Running in 4b62b4ce3a3c
+The command 'cmd /S /C C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe ...' returned a non-zero code: 1603
+
+> docker cp 4b62b4ce3a3c:C:\vslogs.zip "%TEMP%\vslogs.zip"
+
+::: moniker-end
+
+After the last line finishes executing, open "%TEMP%\vslogs.zip" on your machine, or submit an issue on the [Developer Community](https://developercommunity.visualstudio.com) website.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Voir aussi
+## See also
 
-* [Installer les outils de génération dans un conteneur](build-tools-container.md)
-* [Problèmes de conteneurs connus](build-tools-container-issues.md)
-* [ID de composant et de charge de travail de Visual Studio Build Tools 2017](workload-component-id-vs-build-tools.md)
+* [Install Build Tools into a Container](build-tools-container.md)
+* [Known Issues for Containers](build-tools-container-issues.md)
+* [Visual Studio Build Tools workload and component IDs](workload-component-id-vs-build-tools.md)

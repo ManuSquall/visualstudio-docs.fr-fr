@@ -1,14 +1,9 @@
 ---
-title: 'Comment : utiliser la fenêtre Threads | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Utiliser la fenêtre Threads | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.threads
 dev_langs:
@@ -28,22 +23,22 @@ ms.assetid: adfbe002-3d7b-42a9-b42a-5ac0903dfc25
 caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 925e5ec609c07fa1ca6d703943cf3437f0f9bf84
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cc137465e89dd283cb4536965faf54aee44b2e00
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791694"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939071"
 ---
-# <a name="how-to-use-the-threads-window"></a>Comment : utiliser la fenêtre Threads
+# <a name="how-to-use-the-threads-window"></a>Procédure : Utiliser la fenêtre Threads
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dans le **Threads** fenêtre, vous pouvez examiner et utiliser les threads de l’application que vous déboguez.  
   
  Le **Threads** fenêtre contient un tableau où chaque ligne représente un thread dans votre application. Par défaut, ce tableau répertorie tous les threads de votre application, mais vous pouvez filtrer la liste de façon à afficher uniquement les threads qui vous intéressent. Chaque colonne contient un type d'informations différent. Vous pouvez également masquer certaines colonnes. Si vous affichez toutes les colonnes, les informations suivantes s'affichent, de gauche à droite :  
   
--   La colonne d'indicateur, où vous pouvez marquer un thread auquel vous souhaitez apporter une attention spéciale. Pour plus d’informations sur la façon de signaler un thread, consultez [Comment : indicateur et les Threads sans indicateur](../debugger/how-to-flag-and-unflag-threads.md).  
+-   La colonne d'indicateur, où vous pouvez marquer un thread auquel vous souhaitez apporter une attention spéciale. Pour plus d’informations sur la façon de signaler un thread, consultez [Comment : Et supprimer les indicateurs Threads](../debugger/how-to-flag-and-unflag-threads.md).  
   
 -   La colonne de thread active, où une flèche jaune indique un thread actif. Un contour de flèche indique le thread où l'exécution s'est arrêtée dans le débogueur.  
   
@@ -84,7 +79,7 @@ Dans le **Threads** fenêtre, vous pouvez examiner et utiliser les threads de l�
          La flèche jaune s'affiche en regard du nouveau thread actif. Un contour gris de flèche identifie le thread où l'exécution s'est arrêtée dans le débogueur.  
   
 ## <a name="grouping-and-sorting-threads"></a>Regroupement et tri de threads  
- Lorsque vous regroupez des threads, un titre s'affiche dans le tableau pour chaque groupe. Ce titre contient une description du groupe, telle que « Thread de travail » ou « Threads sans indicateur », ainsi qu'un contrôle d'arborescence. Les threads membres de chaque groupe apparaissent sous le titre approprié. Si vous souhaitez masquer les threads membres d'un groupe, vous pouvez utiliser le contrôle d'arborescence pour réduire ce groupe.  
+ Lorsque vous regroupez des threads, un titre s'affiche dans le tableau pour chaque groupe. Ce titre contient une description du groupe, telle que « Thread de travail » ou « Threads sans indicateur », ainsi qu'un contrôle d'arborescence. Les threads membres de chaque groupe apparaissent sous le titre approprié. Si vous souhaitez masquer les threads membres d’un groupe, vous pouvez utiliser le contrôle d’arborescence pour réduire ce groupe.  
   
  Étant donné que le regroupement est prioritaire sur le tri, vous pouvez grouper des threads par catégorie, par exemple, puis les trier par ID dans chaque catégorie.  
   
@@ -119,7 +114,7 @@ Dans le **Threads** fenêtre, vous pouvez examiner et utiliser les threads de l�
   
 #### <a name="to-search-for-specific-threads"></a>Pour rechercher des threads spécifiques  
   
--   Dans la barre d’outils en haut de la **Threads** fenêtre, accédez à la **recherche** boîte et soit :  
+-   Dans la barre d’outils en haut de la fenêtre **Threads**, accédez à la zone **Rechercher** et effectuez l’une des opérations suivantes :  
   
     -   Tapez une chaîne recherchée et appuyez sur ENTRÉE.  
   
@@ -127,7 +122,7 @@ Dans le **Threads** fenêtre, vous pouvez examiner et utiliser les threads de l�
   
     -   Cliquez sur la liste déroulante en regard du **recherche** zone, puis sélectionnez une chaîne de recherche à partir d’une recherche précédente.  
   
--   (Facultatif) Pour inclure la pile des appels complète dans votre recherche, sélectionnez **rechercher la pile des appels**.  
+-   (Facultatif) Pour inclure l’ensemble de la pile des appels dans la recherche, sélectionnez **Rechercher la pile des appels**.  
   
 ## <a name="freezing-and-thawing-threads"></a>Gel et libération des threads  
  Lorsque vous gelez un thread, le système ne démarre pas son exécution même si les ressources sont disponibles.  
@@ -143,31 +138,28 @@ Dans le **Threads** fenêtre, vous pouvez examiner et utiliser les threads de l�
   
 -   Dans la barre d’outils en haut de la **Threads** fenêtre, cliquez sur **figer les Threads** ou **libérer les Threads**.  
   
-     Cette action affecte uniquement les threads qui sont sélectionnés dans le **Threads** fenêtre.  
+     Cette action affecte uniquement les threads sélectionnés dans la fenêtre **Threads**.  
   
 ## <a name="displaying-flagged-threads"></a>Affichage des threads avec indicateur  
- Vous pouvez signaler un thread auquel vous souhaitez accorder une attention particulière en le marquant avec une icône dans le **Threads** fenêtre. Pour plus d’informations, consultez [Comment : indicateur et les Threads sans indicateur](../debugger/how-to-flag-and-unflag-threads.md). Dans la fenêtre Threads, vous pouvez choisir d'afficher tous les threads ou uniquement les threads avec indicateur.  
+ Vous pouvez signaler un thread auquel vous souhaitez accorder une attention particulière en le marquant avec une icône dans la fenêtre **Threads**. Pour plus d'informations, voir [Procédure : Et supprimer les indicateurs Threads](../debugger/how-to-flag-and-unflag-threads.md). Dans la fenêtre Threads, vous pouvez choisir d'afficher tous les threads ou uniquement les threads avec indicateur.  
   
 #### <a name="to-display-only-flagged-threads"></a>Pour afficher seulement les threads avec indicateur  
   
 -   Cliquez sur le bouton indicateur dans le coin supérieur gauche de la **Threads** fenêtre.  
   
 ## <a name="displaying-thread-call-stacks-and-switching-between-frames"></a>Affichage des piles d'appel de thread et commutation entre les frames  
- Dans un programme multithread, chaque thread possède sa propre pile d'appel. Le **Threads** fenêtre fournit un moyen pratique d’afficher ces piles.  
+ Dans un programme multithread, chaque thread possède sa propre pile d'appel. La fenêtre **Threads** permet d’afficher facilement ces piles.  
   
 #### <a name="to-view-the-call-stack-of-a-thread"></a>Pour afficher la pile d'appel d'un thread  
   
 -   Dans le **emplacement** colonne, cliquez sur le triangle inversé en regard de l’emplacement de thread.  
   
-     L’emplacement se développe pour indiquer la pile des appels du thread.  
+     L'emplacement se développe pour indiquer la pile des appels du thread.  
   
 #### <a name="to-view-or-collapse-the-call-stacks-of-all-threads"></a>Pour afficher ou réduire les piles d‘appels de tous les threads  
   
 -   Dans la barre d’outils en haut de la **Threads** fenêtre, cliquez sur **développer la pile des appels** ou **réduire la pile des appels**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Déboguer les Applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Procédure pas à pas : débogage d’une application multithread](../debugger/walkthrough-debugging-a-multithreaded-application.md)
-
-
-

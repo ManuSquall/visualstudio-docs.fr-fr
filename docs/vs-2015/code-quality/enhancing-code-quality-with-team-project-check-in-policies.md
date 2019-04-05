@@ -1,14 +1,9 @@
 ---
 title: Améliorer la qualité du Code avec les stratégies d’archivage du projet d’équipe | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code quality, using check-in policies
 - team-based development, enhancing code quality
@@ -17,12 +12,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c48a4e9cb68997903eed017637c9f00db88261a5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 02c6b2912d828f566236aa8f24868ae9314d743e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299024"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938248"
 ---
 # <a name="enhancing-code-quality-with-team-project-check-in-policies"></a>Amélioration de la qualité du code avec des stratégies d’archivage de projet d’équipe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +26,13 @@ Quand vous utilisez le contrôle de version Team Foundation, vous pouvez créer 
   
  Vous pouvez spécifier les stratégies d’archivage de projet d’équipe suivantes :  
   
--   **Générations**: exigent que les arrêts de génération créés pendant une génération soient résolus avant un nouvel archivage.  
+-   **Builds**: Nécessite que les arrêts de build qui ont été créés pendant une génération soient résolus avant un nouvel archivage.  
   
--   **Commentaires sur un ensemble de modifications**: exigent que les utilisateurs fassent des commentaires en cas de modification d’un archivage.  
+-   **Commentaires de l’ensemble de modifications**: Nécessite que les utilisateurs fassent des commentaires lors de la vérification des modifications.  
   
--   **Analyse du code**: exige que l’analyse du code soit exécutée avant l’archivage.  
+-   **Analyse du code**: Exige que l’analyse du code soit exécutée avant l’archivage.  
   
--   **Éléments de travail**: exige qu’un ou plusieurs éléments de travail soient associés à l’archivage.  
+-   **Éléments de travail**: Exige qu’un ou plusieurs éléments de travail soient associés à l’archivage.  
   
 > [!IMPORTANT]
 >  Pour utiliser les stratégies d’archivage, vous devez être connecté à [!INCLUDE[vststfsLong](../includes/vststfslong-md.md)].  
@@ -46,22 +41,19 @@ Quand vous utilisez le contrôle de version Team Foundation, vous pouvez créer 
   
 |Tâche|Contenu de support|  
 |----------|------------------------|  
-|**Créer et utiliser des stratégies d’archivage :** vous créez des stratégies d’archivage à l’aide des paramètres Projet d’équipe du [!INCLUDE[esprscc](../includes/esprscc-md.md)].|[Définir et appliquer des critères de qualité](http://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|  
-|**Créer et utiliser des stratégies d’archivage d’analyse du code :** vous pouvez soit sélectionner des stratégies parmi un jeu standard de règles d’analyse du code, soit créer un jeu personnalisé.|[Création et utilisation de stratégies d’archivage de l’analyse du code](../code-quality/creating-and-using-code-analysis-check-in-policies.md)|  
+|**Créer et utiliser des stratégies d’archivage :** Vous créez des stratégies d’archivage à l’aide des paramètres de projet d’équipe [!INCLUDE[esprscc](../includes/esprscc-md.md)].|[Définir et appliquer des critères de qualité](http://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|  
+|**Créer et utiliser des stratégies d’archivage de l’analyse du code :** Vous pouvez choisir parmi un ensemble standard de règles d’analyse du code, ou vous pouvez créer un jeu personnalisé.|[Création et utilisation de stratégies d’archivage de l’analyse du code](../code-quality/creating-and-using-code-analysis-check-in-policies.md)|  
   
 ## <a name="related-tasks"></a>Tâches connexes  
   
 |Tâche|Contenu de support|  
 |----------|------------------------|  
-|**Installer votre environnement de développement :** avant de pouvoir créer ou modifier du code, vous devez installer vos environnements de test et développement à l’aide du code source approprié. Si vous utilisez des bases de données, vous devez aussi avoir accès à leur représentation hors connexion.|[Installation d’environnements de développement](http://msdn.microsoft.com/en-us/7b686610-d379-4ca0-9608-73ef0e576e3a)|  
-|**Utiliser l’analyse du code dans le processus de développement :** les membres de l’équipe effectuent une analyse du code sur leurs ordinateurs dédiés au développement. Dans Visual Studio, les développeurs configurent et exécutent des opérations d’analyse du code pour des projets de code individuels, consultent et analysent les problèmes rencontrés dans les opérations et créent des éléments de travail pour les avertissements.|[Analyse de la qualité des applications](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)|  
-|**Créer et exécuter des tests unitaires** : les tests unitaires constituent, pour les développeurs et les testeurs, un moyen simple de rechercher des erreurs de logique dans les méthodes de classes, pour des projets C#, Visual Basic .NET et C++. Un test unitaire peut être créé une fois et exécuté à chaque modification du code source pour s’assurer qu’aucun bogue n’a été introduit.|[Tests unitaires sur votre code](../test/unit-test-your-code.md)|  
-|**Suivre des éléments de travail et des défauts :** vous pouvez utiliser des éléments de travail pour suivre et gérer à la fois votre travail et les informations concernant votre projet d’équipe. Un élément de travail est un enregistrement de base de données que [!INCLUDE[esprfound](../includes/esprfound-md.md)] utilise pour effectuer le suivi de l’assignation et de la progression d’un travail. Vous pouvez utiliser différents types d’éléments de travail pour effectuer le suivi de différents types de travaux, par exemple les spécifications du client, les bogues de produits et les tâches de développement.|[Suivre le travail et gérer des flux de travail &#91;redirigé&#93;](http://msdn.microsoft.com/en-us/d2d8637d-0ef8-4ca3-874e-a04713344032)|  
+|**Configurer votre environnement de développement :** Avant de pouvoir créer ou modifier le code, vous devez configurer votre développement et environnements de test à l’aide du code source approprié. Si vous utilisez des bases de données, vous devez aussi avoir accès à leur représentation hors connexion.|[Installation d’environnements de développement](http://msdn.microsoft.com/7b686610-d379-4ca0-9608-73ef0e576e3a)|  
+|**Utilisez l’analyse du Code dans le processus de développement :** Membres de l’équipe exécutés l’analyse du code sur leurs ordinateurs de développement. Dans Visual Studio, les développeurs configurent et exécutent des opérations d’analyse du code pour des projets de code individuels, consultent et analysent les problèmes rencontrés dans les opérations et créent des éléments de travail pour les avertissements.|[Analyse de la qualité des applications](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)|  
+|**Créer et exécuter des tests unitaires :** Tests unitaires offrent aux développeurs et testeurs un rapide pour rechercher des erreurs de logique dans les méthodes des classes dans C#, Visual Basic .NET et les projets C++. Un test unitaire peut être créé une fois et exécuté à chaque modification du code source pour s’assurer qu’aucun bogue n’a été introduit.|[Tests unitaires sur votre code](../test/unit-test-your-code.md)|  
+|**Suivre des éléments de travail et des défauts :** Vous pouvez utiliser des éléments de travail pour suivre et gérer votre travail et les informations concernant votre projet d’équipe. Un élément de travail est un enregistrement de base de données que [!INCLUDE[esprfound](../includes/esprfound-md.md)] utilise pour effectuer le suivi de l’assignation et de la progression d’un travail. Vous pouvez utiliser différents types d’éléments de travail pour effectuer le suivi de différents types de travaux, par exemple les spécifications du client, les bogues de produits et les tâches de développement.|[Suivre le travail et gérer des flux de travail &#91;redirigé&#93;](http://msdn.microsoft.com/d2d8637d-0ef8-4ca3-874e-a04713344032)|  
   
 ## <a name="external-resources"></a>Ressources externes  
   
 ### <a name="guidance"></a>Conseils  
- [Test de la livraison continue avec Visual Studio 2012 - Chapitre 2 : Tests unitaires : tester l’intérieur](http://go.microsoft.com/fwlink/?LinkID=255188)
-
-
-
+ [Test de livraison continue avec Visual Studio 2012 – chapitre 2 : Tests unitaires : Tester l’intérieur](http://go.microsoft.com/fwlink/?LinkID=255188)

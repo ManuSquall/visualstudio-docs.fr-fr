@@ -1,14 +1,9 @@
 ---
 title: Configurer le pare-feu pour la boîte de dialogue de débogage à distance | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.firewallconfiguration
 dev_langs:
@@ -25,13 +20,13 @@ ms.assetid: 5dff3393-fdeb-4129-a2f6-31f653107a82
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c899de05321ee8c6579b9dbbdb35befa0b97d2b3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 04d1a6fa6c2cd6339fc8ff4d6c82a1acc61790ad
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762069"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950339"
 ---
 # <a name="configure-firewall-for-remote-debugging-dialog-box"></a>Configurer le pare-feu pour le débogage distant (boîte de dialogue)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,16 +40,13 @@ Cette boîte de dialogue apparaît lorsque le Pare-feu Windows empêche le débo
  **Annuler le débogage distant**  
  Annule la tentative de débogage distant. Les paramètres de sécurité de votre ordinateur restent intacts.  
   
- **Débloquer le débogage distant à partir d’ordinateurs sur le réseau local (sous-réseau)**  
+ **Débloquer le débogage distant à partir des ordinateurs sur le réseau local (sous-réseau)**  
  Active le débogage distant d'ordinateurs sur votre sous-réseau local. Cela peut rendre vulnérables les ordinateurs sur votre sous-réseau local, mais le pare-feu continue à bloquer des informations provenant de l'extérieur du sous-réseau.  
   
- **Débloquer le débogage distant à partir de n’importe quel ordinateur**  
+ **Débloquer le débogage distant à partir de tous les ordinateurs**  
  Active le débogage distant d'ordinateurs n'importe où sur le réseau. Ce paramètre est le moins sécurisé.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité du débogueur](../debugger/debugger-security.md)   
  [Configurer les outils à distance sur l’appareil](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)   
  [Informations de référence sur le débogage de l’interface utilisateur](../debugger/debugging-user-interface-reference.md)
-
-
-

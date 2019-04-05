@@ -12,16 +12,16 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: c46644b18188475bd6389a795625209f74a7d9b5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f24e3460cb1298a36d0365781aa82cf55d8478d3
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021986"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983323"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>Installer le développement mobile multiplateforme avec C++
 
-Vous pouvez utiliser C++ dans Visual Studio pour créer des applications de bureau Windows, des applications de la plateforme Windows universelle (UWP), des applications Linux et, désormais, des applications pour Android et iOS. La charge de travail **Développement mobile en C++** est un ensemble installable de composants dans Visual Studio qui inclut des modèles Visual Studio multiplateformes iOS, Android et UWP. Elle installe les outils multiplateformes ainsi que les Kits de développement logiciel nécessaires à une prise en main rapide, sans que vous n’ayez à effectuer les recherches, le téléchargement ni la configuration. Vous pouvez utiliser ces outils dans Visual Studio pour créer, modifier, déboguer et tester facilement vos projets multiplateformes. Cette rubrique décrit comment installer les outils et les logiciels tiers requis pour développer des applications multiplateformes dans C++ à l’aide de Visual Studio. Pour obtenir une vue d’ensemble, consultez [Développement multiplateforme en Visual C++ pour appareils mobiles](https://go.microsoft.com/fwlink/p/?LinkId=536383)
+Vous pouvez utiliser C++ dans Visual Studio pour créer des applications de bureau Windows, des applications de la plateforme Windows universelle (UWP), des applications Linux et, désormais, des applications pour Android et iOS. La charge de travail **Développement mobile en C++** est un ensemble installable de composants dans Visual Studio qui inclut des modèles Visual Studio multiplateformes iOS, Android et UWP. Elle installe les outils multiplateformes ainsi que les Kits de développement logiciel nécessaires à une prise en main rapide, sans que vous n’ayez à effectuer les recherches, le téléchargement ni la configuration. Vous pouvez utiliser ces outils dans Visual Studio pour créer, modifier, déboguer et tester facilement vos projets multiplateformes. Cette rubrique décrit comment installer les outils et les logiciels tiers requis pour développer des applications multiplateformes dans C++ à l’aide de Visual Studio. Pour obtenir une vue d’ensemble, consultez [Développement multiplateforme en Visual C++ pour appareils mobiles](https://visualstudio.microsoft.com/vs/features/cplusplus-mdd/)
 
 ## <a name="requirements"></a>Spécifications
 
@@ -40,7 +40,7 @@ Pour créer des applications pour des plateformes d’appareils spécifiques, il
 
 ## <a name="get-the-tools"></a>Se procurer les outils
 
-Le développement mobile en C++ est disponible dans les éditions Community, Professional et Enterprise de Visual Studio. Pour obtenir Visual Studio, visitez la page [Téléchargements Visual Studio](https://go.microsoft.com/fwlink/p/?linkid=517106). Les outils multiplateformes de développement mobile sont disponibles à partir de Visual Studio 2015 Update 2 ou version ultérieure.
+Le développement mobile en C++ est disponible dans les éditions Community, Professional et Enterprise de Visual Studio. Pour obtenir Visual Studio, visitez la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/). Les outils multiplateformes de développement mobile sont disponibles à partir de Visual Studio 2015.
 
 ## <a name="install-the-tools"></a>Installer les outils
 
@@ -52,7 +52,7 @@ Le programme d’installation pour Visual Studio 2017 inclut une charge de trava
 
 - L’émulateur Google Android et Intel Hardware Accelerated Execution Manager sont des composants facultatifs mais recommandés. Vous pouvez développer et déboguer directement sur un appareil Android, mais il est souvent plus facile d’utiliser un émulateur sur votre bureau. Microsoft fournit également un Émulateur Visual Studio pour Android qui peut être installé séparément.
 
-#### <a name="to-install-the-mobile-development-with-c-workload-in-visual-studio-2017"></a>Pour installer la charge de travail Développement mobile en C++ dans Visual Studio 2017
+### <a name="install-the-mobile-development-with-c-workload"></a>Installer la charge de travail Développement mobile en C++
 
 1. Exécutez le **programme d’installation de Visual Studio** à partir du menu **Démarrer**.
 
@@ -71,37 +71,10 @@ Le programme d’installation pour Visual Studio 2017 inclut une charge de trava
    > [!IMPORTANT]
    > Vous devez redémarrer pour vous assurer que tout est installé correctement.
 
-1. Ouvrez Visual Studio. S’il s’agit de la première exécution de Visual Studio, la configuration et la connexion peuvent prendre un certain temps. Lorsque Visual Studio est prêt, vérifiez les mises à jour et installez-les.
+1. Ouvrez Visual Studio.
 
-#### <a name="to-install-the-mobile-development-component-and-third-party-tools-in-visual-studio-2015"></a>Pour installer le composant Développement mobile et des outils tiers dans Visual Studio 2015
-
-Si vous utilisez Visual Studio 2015, son programme d’installation inclut une option permettant d’installer Visual C++ pour le développement mobile multiplateforme, qui installe les outils de langage, modèles et composants C++ requis dans Visual Studio 2015.
-
-1. Exécutez le programme d’installation de Visual Studio 2015. Pour installer les composants facultatifs, choisissez **Personnalisé** comme type d’installation. Choisissez **Suivant** pour sélectionner les composants facultatifs à installer.
-
-1. Dans **Sélectionner les fonctionnalités**, développez **Développement mobile multiplateforme** et cochez **Développement mobile Visual C++**.
-
-   ![Sélectionner Développement mobile Visual C&#43;&#43;](../cross-platform/media/cppmdd_install_vcmdd.png "CPPMDD_Install_VCMDD")
-
-   Par défaut, quand vous sélectionnez **Développement mobile Visual C++**, l’option **Langages de programmation** est définie pour installer **Visual C++**. De plus, l’option **Kits de développement logiciel (SDK) et outils courants** est définie pour installer les composants tiers nécessaires. Vous pouvez choisir des composants supplémentaires si vous en avez besoin. Par défaut, **Émulateur Microsoft Visual Studio pour Android** est également sélectionné. Les composants qui sont déjà installés apparaissent inactifs dans la liste.
-
-   Pour générer des applications Windows universelles et partager du code entre ces applications et vos projets Android et iOS, dans **Sélectionner les fonctionnalités**, développez **Développement d’applications Windows et web**, puis cochez **Outils de développement d’applications Windows universelles**. Si vous ne prévoyez pas de créer des applications Windows universelles, vous pouvez ignorer cette option.
-
-   Choisissez **Suivant** pour continuer.
-
-1. Les composants tiers ont leurs propres termes du contrat de licence. Vous pouvez afficher les termes du contrat de licence en cliquant sur le lien **Termes du contrat de licence** en regard de chaque composant. Choisissez **Installer** pour ajouter les composants et installer Visual Studio et Visual C++ pour le développement mobile multiplateforme.
-
-1. À la fin de l’installation, fermez le programme d’installation, puis redémarrez l’ordinateur. Certaines actions d’installation des composants tiers ne prennent pas effet tant que l’ordinateur n’a pas redémarré.
-
-   > [!IMPORTANT]
-   > Vous devez redémarrer pour vous assurer que tout est installé correctement.
-
-   Si l’installation du composant Émulateur Microsoft Visual Studio pour Android ne peut pas s’effectuer, il est possible qu’Hyper-V ne soit pas activé sur votre ordinateur. Utilisez l’application du Panneau de configuration **Activer ou désactiver des fonctionnalités Windows** pour activer Hyper-V, puis réexécutez le programme d’installation de Visual Studio.
-
-   > [!NOTE]
-   > Si votre ordinateur ou votre version de Windows ne prend pas en charge Hyper-V, vous ne pouvez pas utiliser le composant Émulateur Microsoft Visual Studio pour Android. L’Édition familiale de Windows n’inclut pas la prise en charge d’Hyper-V.
-
-1. Ouvrez Visual Studio. S’il s’agit de la première exécution de Visual Studio, la configuration et la connexion peuvent prendre un certain temps. Quand Visual Studio est prêt, dans le menu **Outils** , sélectionnez **Extensions et mises à jour**, **Mises à jour**. Si des mises à jour Visual Studio sont disponibles pour Développement multiplateforme en Visual C++ pour appareils mobiles ou pour l’émulateur Microsoft Visual Studio pour Android, installez-les.
+> [!NOTE]
+> Si vous utilisez Visual Studio 2015, consultez [Installer Visual C++ pour le développement mobile multiplateforme (Visual Studio 2015)](/cross-platform/install-visual-cpp-for-cross-platform-mobile-development?view=vs-2015)
 
 ## <a name="install-tools-for-ios"></a>Install tools for iOS
 

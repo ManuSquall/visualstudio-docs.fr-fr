@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 18848503f80000bf81c2020797a466aa43a29c9d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 8634f1852d10a1935b3ee55b6e80ad9503923fe9
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316897"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323540"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Génération d’entrées à l’aide de l’exécution symbolique dynamique
 
@@ -96,11 +96,11 @@ Les règles sont les suivantes :
 
 * **Visibilité des membres internes**
   * IntelliTest part du principe que les tests générés ont accès aux membres internes qui étaient visibles par la classe [PexClass](attribute-glossary.md#pexclass) englobante.
-  .NET a l’attribut **InternalsVisibleToAttribute** pour étendre la visibilité des membres internes à d’autres assemblys.<p />
+  .NET a l’attribut **InternalsVisibleToAttribute** pour étendre la visibilité des membres internes à d’autres assemblys.
 
 * **Visibilité des membres privés et de la famille (protégés en C#) de la classe [PexClass](attribute-glossary.md#pexclass)**
   * IntelliTest place toujours les tests générés directement dans la classe [PexClass](attribute-glossary.md#pexclass) ou dans une sous-classe. Par conséquent, IntelliTest part du principe qu’il peut utiliser tous les membres de la famille visibles (**protégés** en C#).
-  * Si les tests générés sont placés directement dans la classe [PexClass](attribute-glossary.md#pexclass) (généralement en utilisant des classes partielles), IntelliTest part du principe qu’il peut également utiliser tous les membres privés de la classe [PexClass](attribute-glossary.md#pexclass).<p />
+  * Si les tests générés sont placés directement dans la classe [PexClass](attribute-glossary.md#pexclass) (généralement en utilisant des classes partielles), IntelliTest part du principe qu’il peut également utiliser tous les membres privés de la classe [PexClass](attribute-glossary.md#pexclass).
 
 * **Visibilité des membres publics**
   * IntelliTest part du principe qu’il peut utiliser tous les membres exportés visibles dans le contexte de la classe [PexClass](attribute-glossary.md#pexclass).

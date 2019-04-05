@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8572ecf95790fdc5f6e73ce0b137e5532c44bdc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 898c1e88e4fd1ac0fc5f3d1f338b70a2d038fe79
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911817"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416318"
 ---
 # <a name="customizing-copy-behavior"></a>Personnalisation du comportement de la commande copier
 Dans un langage spécifique à un domaine (DSL) créé avec le Visual Studio Visualization and Modeling SDK, vous pouvez modifier ce qui se passe quand l’utilisateur copie et colle des éléments.
@@ -555,8 +555,7 @@ namespace Company.MyDsl
 ## <a name="see-also"></a>Voir aussi
 
 - [Personnalisation de la création et du mouvement des éléments](../modeling/customizing-element-creation-and-movement.md)
-- [Guide pratique pour Ajouter un gestionnaire glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md)
-- [Personnalisation du comportement de la suppression](../modeling/customizing-deletion-behavior.md)
+- [Guide pratique pour ajouter un gestionnaire glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Exemple : Exemple de diagrammes de Circuit](http://go.microsoft.com/fwlink/?LinkId=213879)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

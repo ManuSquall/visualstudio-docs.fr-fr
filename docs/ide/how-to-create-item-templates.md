@@ -7,18 +7,18 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 88f6061d959167163c8502899813dc4c6db88f10
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: a861843da139701c23e38df11c7ad380c047a846
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222085"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416386"
 ---
 # <a name="how-to-create-item-templates"></a>Procédure : Créer des modèles d’élément
 
 Cet article vous montre comment créer un modèle d’élément à l’aide de l’**Assistant Exportation de modèle**. Si votre modèle comprend plusieurs fichiers, consultez [Guide pratique pour créer des modèles d’élément multifichier](../ide/how-to-create-multi-file-item-templates.md).
 
-## <a name="to-add-a-user-item-template-to-the-add-new-item-dialog-box"></a>Pour ajouter un modèle d’élément utilisateur à la boîte de dialogue Ajouter un nouvel élément
+## <a name="add-an-item-template-to-the-add-new-item-dialog-box"></a>Ajouter un modèle d’élément à la boîte de dialogue Ajouter un nouvel élément
 
 1. Créez ou ouvrez un projet dans Visual Studio.
 
@@ -46,7 +46,7 @@ Cet article vous montre comment créer un modèle d’élément à l’aide de l
 
    Le modèle d’élément apparaît dans la boîte de dialogue **Ajouter un nouvel élément**. Si vous avez ajouté une description dans l’**Assistant Exportation de modèle**, la description s’affiche dans la partie droite de la boîte de dialogue.
 
-## <a name="to-enable-the-item-template-to-be-used-in-a-universal-windows-app-project"></a>Pour permettre l’utilisation du modèle d’élément dans un projet d’application Windows universelle
+## <a name="enable-the-item-template-to-be-used-in-a-universal-windows-app-project"></a>Permettre l’utilisation du modèle d’élément dans un projet d’application Windows universel
 
 L’Assistant effectue une grande partie du travail nécessaire à la création d’un modèle de base, mais dans de nombreux cas, vous devez modifier manuellement le fichier *.vstemplate* après avoir exporté le modèle. Par exemple, si vous souhaitez que l’élément s’affiche dans la boîte de dialogue **Ajouter un nouvel élément** pour un projet d’application Windows universelle, vous devez effectuer quelques étapes supplémentaires.
 
@@ -68,7 +68,7 @@ L’Assistant effectue une grande partie du travail nécessaire à la création 
 
 Vous pouvez maintenant ajouter un élément basé sur ce modèle à un projet Windows universel à partir de la boîte de dialogue **Ajouter un nouvel élément**.
 
-## <a name="to-enable-templates-for-specific-project-subtypes"></a>Pour activer les modèles pour des sous-types de projet spécifiques
+## <a name="enable-templates-for-specific-project-subtypes"></a>Activer des modèles pour des sous-types de projet spécifiques
 
 Vous pouvez spécifier que votre modèle doit uniquement apparaître pour certains sous-types de projet, comme Windows, Office, Base de données ou Web.
 
@@ -103,7 +103,7 @@ L’exemple suivant présente un modèle d’élément disponible pour les proje
 </VSTemplate>
 ```
 
-## <a name="to-manually-create-an-item-template-without-using-the-export-template-wizard"></a>Pour créer manuellement un modèle d'élément sans utiliser l'Assistant Exportation de modèle
+## <a name="manually-create-an-item-template"></a>Créer manuellement un modèle d’élément
 
 Dans certains cas, vous pouvez avoir envie de créer un modèle d’élément manuellement, à partir de zéro.
 

@@ -12,17 +12,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c29c74388ed5766827ef04b378aa2d51167662d3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fcdd4e2253652246e3d0cb3fcd829c8e5d7786bf
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599832"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869913"
 ---
 # <a name="create-sharepoint-solutions"></a>Créer des solutions SharePoint
   Vous pouvez créer des applications SharePoint dans Visual Studio au lieu de les créer dans SharePoint Designer. Visual Studio privilégie un développement SharePoint rapide en fournissant des fonctionnalités telles que des outils de débogage avancés, IntelliSense, la saisie semi-automatique des instructions et des modèles de projet. Visual Studio tire également parti de langages et outils .NET Framework avancés. Vous pouvez développer des projets SharePoint à l'aide de Visual Basic ou de Visual C#, et vous pouvez développer des applications pour les projets SharePoint à l'aide de JavaScript.
 
- Pour plus d’informations sur SharePoint 2013 et les compléments SharePoint, consultez [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) et [Création d’applications pour SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
+ Pour plus d’informations sur SharePoint 2013 et les compléments SharePoint, consultez [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) et [Création d’applications pour SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
 > [!NOTE]
 >  Découvrez comment utiliser le nouveau [modèle de complément SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins) pour étendre l’expérience SharePoint de vos utilisateurs. Ces compléments ont une empreinte très faible par rapport aux solutions SharePoint, et vous pouvez les créer en utilisant presque toutes les technologies de programmation web, comme HTML5, JavaScript, CSS3 et XML.

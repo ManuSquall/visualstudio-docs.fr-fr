@@ -1,14 +1,9 @@
 ---
 title: Déboguer un contrôle WebView | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 7d105907-8b39-4d07-8762-5c5ed74c7f21
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1f8a4dcc64903b97e3b469fb962777e3b90f84ba
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 69c7aa5e83da4ec829b439940d4affcd536bc128
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729050"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58947592"
 ---
 # <a name="debug-a-webview-control"></a>Déboguer un contrôle WebView
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +28,17 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
  Pour inspecter et déboguer des contrôles `WebView` dans une application Windows Runtime, vous pouvez configurer Visual Studio de sorte à attacher le débogueur de scripts au démarrage de l'application. Quand vous démarrez Visual Studio 2013 Update 2, vous avez deux moyens d'interagir avec les contrôles `WebView` à l'aide du débogueur :  
   
--   Ouvrez le [Explorateur DOM](../debugger/quickstart-debug-html-and-css.md) pour un `WebView` instance et inspecter les éléments DOM et étudier les problèmes de style CSS restituée de façon dynamique des modifications aux styles de test.  
+-   Ouvrez l’[Explorateur DOM](../debugger/quickstart-debug-html-and-css.md) pour une instance `WebView` et inspectez les éléments DOM, examinez les problèmes de style CSS et testez de manière dynamique les modifications de rendu des styles.  
   
--   Sélectionnez la page Web ou `iFrame` affiché dans le `WebView` instance en tant que cible dans le [JavaScript Console](../debugger/javascript-console-commands.md) fenêtre et pour interagir avec la page Web à l’aide des commandes de la console. La console fournit un accès au contexte actuel d'exécution du script.  
+-   Sélectionnez la page web ou l’`iFrame` affiché dans l’instance `WebView` en tant que cible dans la fenêtre de la [console JavaScript](../debugger/javascript-console-commands.md), puis interagissez avec la page web à l’aide des commandes de la console. La console fournit un accès au contexte actuel d'exécution du script.  
   
 ### <a name="attach-the-debugger-c-visual-basic-c"></a>Attacher le débogueur (C#, Visual Basic, C++)  
   
 1.  Dans Visual Studio, ajoutez un contrôle `WebView` à votre application Windows Runtime.  
   
-2.  Dans l’Explorateur de solutions, ouvrez les propriétés pour le projet en choisissant **propriétés** dans le menu contextuel du projet.  
+2.  Dans l’Explorateur de solutions, ouvrez les propriétés du projet en choisissant **Propriétés** dans le menu contextuel du projet.  
   
-3.  Choisissez **déboguer**. Dans le **processus d’Application** , choisissez **Script**.  
+3.  Sélectionnez **Déboguer**. Dans la liste **Processus d’application**, choisissez **Script**.  
   
      ![Attacher le débogueur de script](../debugger/media/js-dom-webview-script-debugger.png "JS_DOM_WebView_Script_Debugger")  
   
@@ -62,7 +57,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 3.  Naviguez jusqu'à la page contenant le ou les contrôles `Webview`.  
   
-4.  Ouvrez la fenêtre de l’Explorateur DOM pour le `WebView` contrôle en choisissant **déboguer**, **Windows**, **Explorateur DOM**, puis choisissez l’URL de la `WebView` que vous avez vous voulez inspecter.  
+4.  Ouvrez la fenêtre de l’Explorateur DOM pour le contrôle `WebView` en choisissant **Déboguer**, **Windows**, **Explorateur DOM**, puis choisissez l’URL du `WebView` que vous voulez inspecter.  
   
      ![Ouverture de l’Explorateur DOM](../debugger/media/js-dom-webview.png "JS_DOM_WebView")  
   
@@ -76,23 +71,20 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 2.  Si vous ne l'avez pas déjà fait, ajoutez un contrôle `WebView` à votre application et appuyez sur F5 pour commencer le débogage.  
   
-3.  Ouvrez la fenêtre de JavaScript Console pour le `WebView` contrôle en choisissant **déboguer**, **Windows**, **JavaScript Console**.  
+3.  Ouvrez la fenêtre de la console JavaScript pour le contrôle `WebView` en choisissant **Déboguer**, **Windows**, **Console JavaScript**.  
   
      La fenêtre de la console JavaScript s'ouvre.  
   
 4.  Naviguez jusqu'à la page contenant le ou les contrôles `Webview`.  
   
-5.  Dans la fenêtre de Console, sélectionnez la page Web ou un `iFrame` affiché par le `WebView` dans contrôler le **cible** liste.  
+5.  Dans la fenêtre de la console, sélectionnez la page web ou un `iFrame` affiché par le contrôle `WebView` dans la liste **Cible**.  
   
      ![Cibler la sélection dans la fenêtre de console JavaScript](../debugger/media/js-console-target.png "JS_Console_Target")  
   
     > [!NOTE]
     >  À l'aide de la console, vous pouvez interagir avec un seul `WebView`, `iFrame`, contrat de partage ou traitement web à la fois. Chaque élément requiert une instance distincte de l'hôte de plateforme web (WWAHost.exe). Vous pouvez interagir avec un seul hôte à la fois.  
   
-6.  Afficher et modifier les variables dans votre application ou utilisez les commandes de la console, comme décrit dans [Guide de démarrage rapide : déboguer le JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) et [JavaScript Console commands](../debugger/javascript-console-commands.md).  
+6.  Afficher et modifier les variables dans votre application ou utilisez les commandes de la console, comme décrit dans [Guide de démarrage rapide : Déboguer du code JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) et [JavaScript Console commands](../debugger/javascript-console-commands.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)
-
-
-

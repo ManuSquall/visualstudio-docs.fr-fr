@@ -1,27 +1,22 @@
 ---
-title: 'Comment : créer un Document XML basé sur un schéma XSD | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Créer un Document XML basé sur un schéma XSD | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bbecacc0729c936489c05d3bb59260341a08d314
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e857befa71095572661ff2c2e1a2ba074444f231
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884223"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953589"
 ---
-# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Procédure : créer un document XML basé sur un schéma XSD
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Procédure : Créer un document XML basé sur un schéma XSD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -49,7 +44,7 @@ Le **générer un exemple de code XML** fonctionnalité génère un exemple de f
   
 ### <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>Pour générer un document d'instance XML basé sur le fichier XSD  
   
-1.  Suivez les étapes de [Comment : créer et modifier un fichier de schéma XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
+1.  Suivez les étapes de [Comment : Créer et modifier un fichier de schéma XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
   
 2.  Dans le [Explorateur de schémas XML](../xml-tools/xml-schema-explorer.md), avec le bouton droit le `PurchaseOrder` élément global. Sélectionnez **générer l’exemple de code XML**.  
   
@@ -84,6 +79,3 @@ Le **générer un exemple de code XML** fonctionnalité génère un exemple de f
   
 ## <a name="see-also"></a>Voir aussi  
  [Utilisation de données XML](../xml-tools/working-with-xml-data.md)
-
-
-

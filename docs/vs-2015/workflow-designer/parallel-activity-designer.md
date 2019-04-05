@@ -1,11 +1,8 @@
 ---
 title: Concepteur d’activités en parallèle | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Parallel.UI
@@ -13,16 +10,16 @@ ms.assetid: 0306dc3b-075a-4091-ac3a-96486fbabed5
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: f557eb013cb313321b336fb22fd1299e51faaa82
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 627a99fec632871b815904abd798c0e4bbfd6505
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221569"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952532"
 ---
 # <a name="parallel-activity-designer"></a>Concepteur d'activités Parallel
-L’activité <xref:System.Activities.Statements.Parallel> exécute simultanément une collection d’activités enfants.  
+L'activité <xref:System.Activities.Statements.Parallel> exécute simultanément une collection d'activités enfants.  
   
 ## <a name="the-parallel-activity"></a>Activité parallèle  
  L'activité <xref:System.Activities.Statements.Parallel> stocke ses activités enfants dans une collection <xref:System.Activities.Statements.Parallel.Branches%2A>. Utilisez l'activité <xref:System.Activities.Statements.Parallel> au lieu de l'activité <xref:System.Activities.Statements.Sequence> si quelques-unes des activités enfants peuvent devenir inactives.  
@@ -43,9 +40,9 @@ L’activité <xref:System.Activities.Statements.Parallel> exécute simultanéme
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Spécifie le nom d'affichage convivial du concepteur d'activités dans l'en-tête. La valeur par défaut est **parallèles**. La valeur peut être modifiée si vous le souhaitez dans le **propriétés** grille ou directement sur l’en-tête du Concepteur d’activité.|  
 |<xref:System.Activities.Statements.Parallel.Branches%2A>|True|Contient la collection des activités enfants à exécuter.|  
-|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|False|Évaluée une fois qu’une branche est terminée. Si elle a la valeur **True**, puis planifiées branches en attente sont annulées. Si cette propriété n’est pas définie ou a la valeur **False**, l’activité se termine lorsque toutes ses activités enfants sont terminées. La valeur par défaut est **null**.|  
+|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|False|Évaluée une fois qu'une branche est terminée. Si elle a la valeur **True**, puis planifiées branches en attente sont annulées. Si cette propriété n’est pas définie ou a la valeur **False**, l’activité se termine lorsque toutes ses activités enfants sont terminées. La valeur par défaut est **null**.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Séquence](../workflow-designer/sequence-activity-designer.md)   
- [ParallelForEach\<T >](../workflow-designer/parallelforeach-t-activity-designer.md)   
+ [ParallelForEach\<T>](../workflow-designer/parallelforeach-t-activity-designer.md)   
  [Flux de contrôle](../workflow-designer/control-flow-activity-designers.md)

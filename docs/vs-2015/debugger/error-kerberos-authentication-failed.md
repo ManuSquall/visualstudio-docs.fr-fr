@@ -1,14 +1,9 @@
 ---
-title: 'Erreur : Échec de l’authentification Kerberos | Microsoft Docs'
-ms.custom: ''
+title: 'Erreur : Échoué de l’authentification Kerberos | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.callback_kerberos_auth_failed
 dev_langs:
@@ -20,15 +15,15 @@ ms.assetid: c18053f9-9074-4bc3-a8bf-13e4acbea921
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2ec03ae3d3b64435877b51996cb84a1768cc4a42
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dba1ec7a21c0340db8b89124892edf78db2e04c8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732341"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953938"
 ---
-# <a name="error-kerberos-authentication-failed"></a>Erreur : L'authentification Kerberos a échoué
+# <a name="error-kerberos-authentication-failed"></a>Erreur : échec de l’authentification Kerberos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Lorsque vous essayez d'effectuer un débogage distant, le message d'erreur suivant peut s'afficher :  
@@ -47,15 +42,15 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
 - Kerberos a été désactivé sur le contrôleur de domaine.  
   
-  Si l'authentification Kerberos n'est pas disponible, modifiez le compte utilisé pour exécuter Visual Studio Remote Debugging Monitor. Pour connaître la procédure, consultez [erreur : service le débogueur distant Visual Studio sur l’ordinateur cible ne peut pas se reconnecter à cet ordinateur](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).  
+  Si l'authentification Kerberos n'est pas disponible, modifiez le compte utilisé pour exécuter Visual Studio Remote Debugging Monitor. Pour connaître la procédure, consultez [erreur : Le service débogueur distant Visual Studio sur l’ordinateur cible ne peut pas se reconnecter à cet ordinateur](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).  
   
   Si ce message s'affiche encore alors que les deux ordinateurs sont connectés au même domaine, vérifiez que le DNS sur l'ordinateur cible résout correctement le nom de l'ordinateur hôte du débogueur. Consultez la procédure suivante.  
   
 ### <a name="to-verify-that-dns-on-the-target-computer-is-correctly-resolving-the-debugger-host-computer-name"></a>Pour vérifier que le DNS sur l'ordinateur cible résout correctement le nom de l'ordinateur hôte du débogueur  
   
-1.  Sur l’ordinateur cible, ouvrez le **Démarrer** menu, pointez sur **Accessoires** puis cliquez sur **invite de commandes**.  
+1.  Sur l’ordinateur cible, ouvrez le menu **Démarrer**, pointez sur **Accessoires**, puis cliquez sur **Invite de commandes**.  
   
-2.  Dans le **invite de commandes** fenêtre, tapez :  
+2.  Dans la fenêtre **Invite de commandes**, tapez :  
   
     ```  
     ping <debugger_host_computer_name>  
@@ -63,13 +58,10 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
 3.  La première ligne de la réponse `ping` affiche le nom complet et l'adresse IP renvoyés par le DNS pour l'ordinateur spécifié.  
   
-4.  Sur l’ordinateur hôte du débogueur, ouvrez un **invite de commandes** fenêtre et exécutez `ipconfig`.  
+4.  Sur l’ordinateur hôte du débogueur, ouvrez une fenêtre **Invite de commandes** et exécutez `ipconfig`.  
   
 5.  Comparez les valeurs d'adresse IP.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Erreurs de débogage distant et dépannage](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+ [Erreurs de débogage à distance et dépannage](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Remote Debugging](../debugger/remote-debugging.md)
-
-
-

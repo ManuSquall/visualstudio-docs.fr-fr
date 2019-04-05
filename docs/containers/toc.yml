@@ -3,25 +3,25 @@ items:
   href: index.yml
   items:
   - name: Vue d'ensemble
-    href: /dotnet/standard/containerized-lifecycle-architecture/design-develop-containerized-apps/visual-studio-tools-for-docker?toc=/visualstudio/containers/toc.json&bc=/visualstudio/containers/breadcrumb/toc.json
+    href: visual-studio-tools-for-docker.md
   - name: 'Démarrage rapide : Docker dans Visual Studio'
     href: docker-tools.md
   - name: 'Tutoriel : Application à plusieurs conteneurs avec Docker Compose'
     href: tutorial-multicontainer.md
   - name: 'Tutoriel : Kubernetes dans Visual Studio'
     href: tutorial-kubernetes-tools.md
-  - name: Débogage d’applications dans un conteneur Docker local
+  - name: Déboguer une application dans un conteneur Docker local
     href: vs-azure-tools-docker-edit-and-refresh.md
-  - name: Déployer un conteneur ASP.NET sur un registre de conteneurs avec Visual Studio
+  - name: Déployer sur un registre de conteneurs
     href: vs-azure-tools-docker-hosting-web-apps-in-docker.md
-  - name: Configurer un hôte Docker avec VirtualBox
-    href: vs-azure-tools-docker-setup.md
-  - name: Résoudre les problèmes de développement dans Visual Studio 2017 avec Docker
+  - name: Déployer sur Azure App Service
+    href: docker-deploy-app-service.md
+  - name: Résoudre les problèmes de développement Visual Studio avec Docker
     href: vs-azure-tools-docker-troubleshooting-docker-errors.md
   expanded: true
-ms.openlocfilehash: 9269e4b0f090b170f234433ff802f41d0dd8790a
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 75905587ed44c64495610bd76c8dab63664c2bb2
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525905"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354815"

@@ -1,13 +1,8 @@
 ---
 title: Naviguer dans le Code avec le débogueur | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.execution
@@ -25,13 +20,13 @@ ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
 caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 43155bbd4236ea34d67058443e8814f7ccf00b1f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a38d078356acf4e78aeeb97687126616d027351f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750575"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949404"
 ---
 # <a name="navigating-through-code-with-the-debugger"></a>Naviguer dans le code avec le débogueur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ Vous familiariser avec les commandes et les raccourcis pour naviguer dans le cod
   
  La flèche verte démarre également le débogueur (même en tant que **F5**).  
   
- ![DBG&#95;notions de base&#95;Démarrer&#95;débogage](../debugger/media/dbg-basics-start-debugging.png "DBG_Basics_Start_Debugging")  
+ ![DBG&#95;Basics&#95;Start&#95;Debugging](../debugger/media/dbg-basics-start-debugging.png "DBG_Basics_Start_Debugging")  
   
  Incluent d’autres manières que vous pouvez démarrer l’application avec le débogueur attaché **F11** ([détaillé code](#BKMK_Step_into__over__or_out_of_the_code)), **F10** ([ignorer le code](#BKMK_Step_over_Step_out)), ou par à l’aide de **exécuter jusqu’au curseur**.  Consultez les autres sections de cette rubrique pour plus d’informations sur les opérations de ces options.  
   
@@ -111,7 +106,7 @@ Vous familiariser avec les commandes et les raccourcis pour naviguer dans le cod
   
 -   **S'arrêter manuellement dans le code**  
   
-     Pour vous arrêter sur la ligne de code suivante disponible dans une application en cours d'exécution, choisissez **Déboguer**, **Interrompre tout** (raccourci : **Ctrl+Alt+Break**).  
+     Pour vous arrêter sur la ligne de code dans une application en cours d’exécution disponible suivante, choisissez **déboguer**, **interrompre tout** (clavier : **Ctrl+Alt+Break**).  
   
      Si vous arrêtez l’exécution de code sans les fichiers sources ou de symboles (.pdb) correspondants, le débogueur affiche une page **Fichiers sources introuvables** ou **Symboles introuvables** qui peut vous aider à trouver les fichiers appropriés. Consultez [Spécifier les fichiers de symbole (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md). Si vous ne pouvez pas accéder aux fichiers de prise en charge, vous pouvez tout de même déboguer les instructions assembleur dans la fenêtre Code Machine.  
   
@@ -151,7 +146,7 @@ Vous familiariser avec les commandes et les raccourcis pour naviguer dans le cod
 >   -   Si vous déplacez le point d'exécution vers l'arrière, les instructions déjà traitées ne sont pas annulées.  
 >   -   Le déplacement de l'instruction suivante vers une autre fonction ou portée entraîne généralement une altération de la pile des appels, provoquant une erreur ou exception d'exécution. Si vous tentez de déplacer l'instruction suivante vers une autre portée, le débogueur ouvre une boîte de dialogue avec un avertissement et vous donne une occasion d'annuler l'opération. En Visual Basic, vous ne pouvez pas déplacer l'instruction suivante à une autre portée ou fonction.  
 >   -   En C++ natif, si les contrôles d'exécution sont activés, la définition de l'instruction suivante peut provoquer la levée d'une exception lorsque l'exécution atteint la fin de la méthode.  
->   -   Lorsque Modifier &amp; Continuer est activé, la commande **Définir l'instruction suivante** échoue si vous avez apporté des modifications qui ne peuvent pas être remappées immédiatement par Modifier &amp; Continuer. Par exemple, cela peut se produire si vous avez modifié le code contenu dans un bloc catch. Dans ce cas, un message d'erreur s'affiche pour indiquer que l'opération n'est pas prise en charge.  
+>   -   Lorsque Modifier & Continuer est activé, la commande **Définir l'instruction suivante** échoue si vous avez apporté des modifications qui ne peuvent pas être remappées immédiatement par Modifier &amp;amp; Continuer. Par exemple, cela peut se produire si vous avez modifié le code contenu dans un bloc catch. Dans ce cas, un message d'erreur s'affiche pour indiquer que l'opération n'est pas prise en charge.  
 > 
 > [!NOTE]
 >  Dans du code managé, vous ne pouvez pas déplacer l'instruction suivante dans les conditions suivantes :  
@@ -181,7 +176,7 @@ Vous familiariser avec les commandes et les raccourcis pour naviguer dans le cod
   
  Pour charger des symboles pour un composant système spécifique lors du débogage :  
   
-1.  Ouvrez la fenêtre Modules (raccourci : **Ctrl+Alt+U**).  
+1.  Ouvrez la fenêtre Modules (clavier : **Ctrl+Alt+U**).  
   
 2.  Sélectionnez le module pour lequel vous souhaitez charger des symboles.  
   
@@ -191,8 +186,3 @@ Vous familiariser avec les commandes et les raccourcis pour naviguer dans le cod
   
 ##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Effectuer un pas à pas détaillé dans des propriétés et des opérateurs au sein du code managé  
  Par défaut, le débogueur effectue un pas à pas principal sur les propriétés et les opérateurs dans le code managé. Dans la plupart des cas, cela fournit une meilleure expérience de débogage. Pour activer l’exécution pas à pas détaillé des propriétés ou des opérateurs, choisissez **déboguer** / **Options**. Dans la page **Débogage** / **Général** , désactivez la case à cocher **Pas à pas principal dans les propriétés et les opérateurs (Managé uniquement)** .
-
-
-
-
-

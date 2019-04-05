@@ -1,27 +1,22 @@
 ---
 title: Référence de schéma 2.0 d’Extension VSIX | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - vsix
 - extension schema
 ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c0121f2d9d4a29942449b180c63c450d4a49b31f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9cb9672696e0e1294fdd396b59fadd1c50fd697f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785929"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938278"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Informations de référence sur le schéma 2.0 d’extension VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -222,4 +217,3 @@ Un fichier de manifeste de déploiement VSIX décrit le contenu d’un package V
   
 ## <a name="see-also"></a>Voir aussi  
  [Publication d’extensions Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
-

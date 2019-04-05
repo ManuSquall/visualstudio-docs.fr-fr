@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 528665cc54c78a6d5d053cc80522f53385e85daf
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: d28836e1213e65fa7537937b9b6ce27b87f1c3ba
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875717"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324498"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Déboguer des extensions pour les outils SharePoint dans Visual Studio
   Vous pouvez déboguer des extensions d’outils SharePoint dans l’instance expérimentale ou l’instance normale de Visual Studio. Si vous avez besoin dépanner le comportement d’une extension, vous pouvez également modifier les valeurs de Registre pour afficher les informations d’erreur supplémentaires et de configurer la façon dont Visual Studio exécute les commandes SharePoint.
@@ -56,7 +56,7 @@ ms.locfileid: "54875717"
 
 #### <a name="to-debug-the-extension"></a>Pour déboguer l’extension
 
-1.  Démarrez Visual Studio avec des privilèges d’administrateur et ouvrez le projet d’extension. Les étapes suivantes font référence à cette instance de Visual Studio en tant que le *tout d’abord l’instance*.
+1.  Ouvrez Visual Studio avec des privilèges d’administrateur et ouvrez le projet d’extension. Les étapes suivantes font référence à cette instance de Visual Studio en tant que le *tout d’abord l’instance*.
 
 2.  Démarrer une autre instance de Visual Studio avec des privilèges d’administrateur. Les étapes suivantes font référence à cette instance de Visual Studio en tant que le *deuxième instance*.
 

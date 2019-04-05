@@ -1,14 +1,9 @@
 ---
-title: 'Comment : déboguer un Service WCF auto-hébergé | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Déboguer un Service WCF auto-hébergé | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,18 +17,18 @@ ms.assetid: 288922be-ba3f-411e-af50-bba39c9529cc
 caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cb9e7d965470a85d41b856d42c6e2c0b291723b4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fb50b9ed0c3debbde0ef41cd474df1f8fd9f4517
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787469"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951926"
 ---
-# <a name="how-to-debug-a-self-hosted-wcf-service"></a>Comment : déboguer un service WCF auto-hébergé
+# <a name="how-to-debug-a-self-hosted-wcf-service"></a>Procédure : déboguer un service WCF auto-hébergé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Un *service auto-hébergé* est un service WCF qui ne s’exécute pas à l’intérieur d’IIS, l’hôte de Service WCF, ou le [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] serveur de développement. Pour déboguer un service WCF auto-hébergé le plus simple consiste à configurer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour lancer le client et serveur lorsque vous choisissez **démarrer le débogage** sur le **déboguer** menu.  
+Un *service auto-hébergé* est un service WCF qui ne s’exécute pas à l’intérieur d’IIS, de l’hôte de service WCF ni du serveur de développement [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Pour déboguer un service WCF auto-hébergé le plus simple consiste à configurer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour lancer le client et serveur lorsque vous choisissez **démarrer le débogage** sur le **déboguer** menu.  
   
  Si le service WCF est auto-hébergé dans un processus qui ne peut pas être lancé de cette manière, tel que service NT, vous ne pouvez pas utiliser cette méthode. Au lieu de cela, vous pouvez effectuer l’une des opérations suivantes :  
   
@@ -62,9 +57,6 @@ Un *service auto-hébergé* est un service WCF qui ne s’exécute pas à l’in
     6.  Cliquez sur **OK**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Débogage de Services WCF](../debugger/debugging-wcf-services.md)   
+ [Débogage de services WCF](../debugger/debugging-wcf-services.md)   
  [Limitations du débogage WCF](../debugger/limitations-on-wcf-debugging.md)   
- [Guide pratique pour effectuer un pas à pas détaillé dans les services WCF](../debugger/how-to-step-into-wcf-services.md)
-
-
-
+ [Guide pratique pour se lancer dans les services WCF](../debugger/how-to-step-into-wcf-services.md)

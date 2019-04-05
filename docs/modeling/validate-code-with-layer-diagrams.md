@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bda2ae00b02d097b8684499c9343b5709dd35c8e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 6286c787b1f69c0e44541e156b06440c7267f79d
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223193"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870358"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Valider du code avec des diagrammes de dépendance
 
@@ -102,14 +102,14 @@ Si vous disposez d’un diagramme de dépendance ouvert qui est lié aux éléme
     > [!NOTE]
     > Par défaut, le **Action de génération** propriété sur le fichier de diagramme (.layerdiagram) de dépendance est définie sur **Validate** afin que le diagramme soit inclus dans le processus de validation.
 
-     Le **liste d’erreurs** fenêtre signale les erreurs qui surviennent. Pour plus d’informations sur les erreurs de validation, consultez [comprendre et résoudre les erreurs de validation de couche](#UnderstandingValidationErrors).
+     Le **liste d’erreurs** fenêtre signale les erreurs qui surviennent. Pour plus d’informations sur les erreurs de validation, consultez [résoudre les problèmes de validation de couche](#troubleshoot-layer-validation-issues).
 
 2.  Pour afficher la source de chaque erreur, double-cliquez sur l’erreur dans le **liste d’erreurs** fenêtre.
 
     > [!NOTE]
     > Visual Studio peut afficher une carte de code au lieu de la source de l’erreur. Cela se produit lorsque le code a une dépendance sur un assembly qui n’est pas spécifié par le diagramme de dépendance ou le code, il manque une dépendance qui est spécifiée par le diagramme de dépendances. Examinez la carte de code ou le code pour déterminer si la dépendance doit exister. Pour plus d’informations sur les cartes de code, consultez [mapper les dépendances dans vos solutions](../modeling/map-dependencies-across-your-solutions.md).
 
-3.  Pour gérer les erreurs, consultez [gérer les erreurs de validation](#ManageErrors).
+3.  Pour gérer les erreurs, consultez [résoudre les erreurs de validation de couche](#resolve-layer-validation-errors).
 
 ### <a name="validate-code-at-the-command-prompt"></a>Valider le code à l’invite de commandes
 
@@ -147,7 +147,7 @@ Si vous disposez d’un diagramme de dépendance ouvert qui est lié aux éléme
 
      Toutes les erreurs qui ont lieu seront répertoriées. Pour plus d’informations sur MSBuild, consultez [MSBuild](../msbuild/msbuild.md) et [tâche MSBuild](../msbuild/msbuild-task.md).
 
-   Pour plus d’informations sur les erreurs de validation, consultez [comprendre et résoudre les erreurs de validation de couche](#UnderstandingValidationErrors).
+   Pour plus d’informations sur les erreurs de validation, consultez [résoudre les problèmes de validation de couche](#troubleshoot-layer-validation-issues).
 
 ### <a name="manage-validation-errors"></a>Gérer les erreurs de validation
 
@@ -195,11 +195,11 @@ Utilisez un éditeur de texte pour ouvrir le fichier projet de modélisation (.m
 
     Cela inclut le diagramme de dépendances dans le processus de validation.
 
-Pour gérer les erreurs dans la fenêtre liste d’erreurs, consultez [gérer les erreurs de Validation](#ManageErrors).
+Pour gérer les erreurs dans la fenêtre liste d’erreurs, consultez [résoudre les erreurs de validation de couche](#resolve-layer-validation-errors).
 
 ## <a name="troubleshoot-layer-validation-issues"></a>Résoudre les problèmes de validation de couche
 
-Le tableau suivant décrit les problèmes liés à la validation de couche et propose une résolution. Ces problèmes ne sont pas liés aux erreurs qui résultent de conflits entre le code et la conception. Pour plus d’informations sur ces erreurs, consultez [comprendre et résoudre les erreurs de validation de couche](#UnderstandingValidationErrors).
+Le tableau suivant décrit les problèmes liés à la validation de couche et propose une résolution. Ces problèmes ne sont pas liés aux erreurs qui résultent de conflits entre le code et la conception. Pour plus d’informations sur ces erreurs, consultez [résoudre les problèmes de validation de couche](#troubleshoot-layer-validation-issues).
 
 |**Problème**|**Cause possible**|**Résolution**|
 |-|-|-|

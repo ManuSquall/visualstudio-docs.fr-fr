@@ -1,29 +1,24 @@
 ---
-title: 'Comment : gérer une galerie privée à l’aide des paramètres du Registre | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Gérer une galerie privée à l’aide des paramètres du Registre | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSIX private galleries, managing
 - managing VSIX private galleries
 ms.assetid: 86b86442-4293-4cad-9fe2-876eef65f426
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 371fea42e1e59907c08d0a7e51a56875c1b73537
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a55b7aa486edfd3775b12dca9d143c2e5f280884
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51744457"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58954183"
 ---
-# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Comment : gérer une galerie privée à l’aide des paramètres du Registre
+# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Procédure : Gérer une galerie privée à l’aide des paramètres du Registre
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Si vous êtes un administrateur ou le développeur d’une extension de Shell isolé, vous pouvez contrôler l’accès à des contrôles, des modèles et des outils dans la galerie Visual Studio, la galerie d’exemples ou des galeries privées. Pour activer ou désactiver les une galerie, créez un fichier .pkgdef qui décrit les clés de Registre modifiés et leurs valeurs.  
@@ -76,4 +71,3 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 ## <a name="see-also"></a>Voir aussi  
  [Galeries privées](../extensibility/private-galleries.md)
-

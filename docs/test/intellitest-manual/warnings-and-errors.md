@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 27a35850b97a73252562ebb7dbb959bdaabf3abd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 85957c18abff9d49e62570375177aa262b08739b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925404"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324732"
 ---
 # <a name="warnings-and-errors"></a>Avertissements et erreurs
 
@@ -27,26 +27,26 @@ ms.locfileid: "55925404"
   * [MaxCalls dépassé](#maxcalls-exceeded)
   * [MaxStack dépassé](#maxstack-exceeded)
   * [MaxRuns dépassé](#maxruns-exceeded)
-  * [MaxRunsWithoutNewTests dépassé](#maxrunswithoutnewtests-exceeded)<p />
+  * [MaxRunsWithoutNewTests dépassé](#maxrunswithoutnewtests-exceeded)
 
 * **Résolution des contraintes**
-  * [Impossible de concrétiser la solution](#cannot-concretize-solution)<p />
+  * [Impossible de concrétiser la solution](#cannot-concretize-solution)
 
 * **Domaines**
   * [Besoin d’aide pour construire un objet](#help-construct)
   * [Besoin d’aide pour rechercher des types](#help-types)
-  * [Type utilisable deviné](#usable-type-guessed)<p />
+  * [Type utilisable deviné](#usable-type-guessed)
 
 * **Exécution**
   * [Erreur inattendue lors de l’exploration](#unexpected-exploration)
-  * [TargetInvocationException](#targetinvocationexception)<p />
+  * [TargetInvocationException](#targetinvocationexception)
 
 * **Instrumentation**
   * [Méthode non instrumentée appelée](#uninstrumented-method-called)
   * [Méthode externe appelée](#external-method-called)
   * [Méthode non instrumentable appelée](#uninstrumentable-method-called)
   * [Problème de testabilité](#testability-issue)
-  * [Limitation](#limitation)<p />
+  * [Limitation](#limitation)
 
 * **Interpréteur**
   * [Non-correspondance observée au niveau des appels](#observed-call-mismatch)

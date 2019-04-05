@@ -1,11 +1,8 @@
 ---
-title: 'Comment : définir des points d’arrêt dans le flux de travail (hérité) | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Définissez des points d’arrêt dans le flux de travail (hérité) | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - breakpoints, setting in workflows
@@ -16,20 +13,20 @@ ms.assetid: 78e0be39-3e99-487c-bfef-19db0daf6f42
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 158592ccef331c541bf27494856cfa1314b21f88
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1e3f7e4ffefcd6dc8509cf4c787af67c9a03305f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252549"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953963"
 ---
-# <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Procédure : définir des points d'arrêt dans les workflows (héritée)
+# <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Procédure : Définir des points d’arrêt dans les workflows (hérités)
 Cette rubrique décrit comment définir des points d'arrêt dans les applications [!INCLUDE[wf](../includes/wf-md.md)] générées à l'aide du [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité. Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque votre application [!INCLUDE[wf2](../includes/wf2-md.md)] doit cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
  Lorsque vous utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité dans [!INCLUDE[vs2010](../includes/vs2010-md.md)] pour générer une application [!INCLUDE[wf2](../includes/wf2-md.md)], vous pouvez définir des points d'arrêt en code C# et Visual Basic, tout comme vous le faites dans Visual Studio. Comme prévu, l'exécution de workflow s'arrête à chaque point d'arrêt que vous définissez.  
   
- Un point d’arrêt a trois états : *en attente*, *lié*, et *erreur*. Lorsque vous définissez un point d'arrêt, il porte l'état En attente et il est représenté par une icône rouge creuse. Lorsque l'exécution a chargé le type de workflow, il adopte l'état Dépendant et est représenté par une icône rouge unie. Si vous spécifiez un format incorrect pour le point d'arrêt (en indiquant un nom d'activité incorrect, par exemple), un message d'erreur apparaît. Le point d'arrêt est ajouté à la fenêtre de points d'arrêt, mais il est marqué d'un petit « x ».  
+ Un point d’arrêt a trois états : *En attente*, *lié*, et *erreur*. Lorsque vous définissez un point d'arrêt, il porte l'état En attente et il est représenté par une icône rouge creuse. Lorsque l'exécution a chargé le type de workflow, il adopte l'état Dépendant et est représenté par une icône rouge unie. Si vous spécifiez un format incorrect pour le point d'arrêt (en indiquant un nom d'activité incorrect, par exemple), un message d'erreur apparaît. Le point d'arrêt est ajouté à la fenêtre de points d'arrêt, mais il est marqué d'un petit « x ».  
   
  Vous pouvez définir des points d'arrêt sur une activité de l'aire de conception de workflow comme suit :  
   

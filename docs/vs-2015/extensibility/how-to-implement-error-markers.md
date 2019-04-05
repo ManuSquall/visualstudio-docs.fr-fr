@@ -1,28 +1,23 @@
 ---
-title: 'Comment : implémenter des marqueurs d’erreur | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Implémenter des marqueurs d’erreur | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - error markers
 ms.assetid: e8e78514-5720-4fc2-aa43-00b6af482e38
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3e4dd15f4cbb36ef1f81d3b7ca345a6a06bdaff4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a9d0836d9633b070a9f48a6bd2b80d1f012f52cb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736186"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950717"
 ---
-# <a name="how-to-implement-error-markers"></a>Comment : implémenter des marqueurs d’erreur
+# <a name="how-to-implement-error-markers"></a>Procédure : Implémenter des marqueurs d’erreur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Marqueurs d’erreur (ou des soulignements ondulés rouges) sont les personnalisations de l’éditeur de texte pour implémenter la plus difficile. Toutefois, les avantages qu’ils donnent aux utilisateurs de votre VSPackage peuvent compensent largement le coût afin de lui fournir. Marqueurs d’erreur légèrement marquer le texte que votre analyseur de langage juge incorrecte avec une ligne rouge ondulée ou ondulée. Cet indicateur permet aux programmeurs en affichant visuellement code incorrect.  
@@ -33,11 +28,11 @@ Marqueurs d’erreur (ou des soulignements ondulés rouges) sont les personnalis
   
 1. Sélectionnez le texte sous lequel vous voulez placer la ligne ondulée rouge.  
   
-2. Créer un marqueur de type `MARKER_CODESENSE_ERROR`. Pour plus d’informations, consultez [Comment : ajouter des marqueurs de texte Standard](../extensibility/how-to-add-standard-text-markers.md).  
+2. Créer un marqueur de type `MARKER_CODESENSE_ERROR`. Pour plus d'informations, voir [Procédure : Ajouter des marqueurs de texte Standard](../extensibility/how-to-add-standard-text-markers.md).  
   
 3. Après cela, transmettez un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> pointeur d’interface.  
   
-   Ce processus vous permet également de vous permettent de créer le texte info-bulle ou un menu contextuel spéciaux sur un marqueur donné. Pour plus d’informations, consultez [Comment : ajouter des marqueurs de texte Standard](../extensibility/how-to-add-standard-text-markers.md).  
+   Ce processus vous permet également de vous permettent de créer le texte info-bulle ou un menu contextuel spéciaux sur un marqueur donné. Pour plus d'informations, voir [Procédure : Ajouter des marqueurs de texte Standard](../extensibility/how-to-add-standard-text-markers.md).  
   
    Les objets suivants sont nécessaires avant que les marqueurs d’erreur peuvent être affichées.  
   
@@ -62,7 +57,6 @@ Marqueurs d’erreur (ou des soulignements ondulés rouges) sont les personnalis
   
 ## <a name="see-also"></a>Voir aussi  
  [À l’aide de marqueurs de texte avec l’API héritée](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Comment : ajouter des marqueurs de texte Standard](../extensibility/how-to-add-standard-text-markers.md)   
- [Comment : créer des marqueurs de texte personnalisé](../extensibility/how-to-create-custom-text-markers.md)   
- [Guide pratique pour utiliser des marqueurs de texte](../extensibility/how-to-use-text-markers.md)
-
+ [Guide pratique pour Ajouter des marqueurs de texte Standard](../extensibility/how-to-add-standard-text-markers.md)   
+ [Guide pratique pour Créer des marqueurs de texte personnalisé](../extensibility/how-to-create-custom-text-markers.md)   
+ [Guide pratique pour Utiliser des marqueurs de texte](../extensibility/how-to-use-text-markers.md)

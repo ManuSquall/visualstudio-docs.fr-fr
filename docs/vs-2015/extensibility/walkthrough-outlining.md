@@ -1,26 +1,21 @@
 ---
-title: 'Procédure pas à pas : Mise en relief | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure pas à pas : Mode Plan | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - outlining
 ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
 caps.latest.revision: 31
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 897ff6a39716f424c40fa587d905847a0dbb3682
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3a5d54bdd3d2b7fad348df195560ad5b3cc461f3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805266"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953446"
 ---
 # <a name="walkthrough-outlining"></a>Procédure pas à pas : mode Plan
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,5 +134,4 @@ Vous pouvez implémenter des fonctionnalités reposant sur le langage comme le m
 4.  Il doit y avoir une région en mode plan qui inclut les deux accolades. Vous pourrez cliquer sur le signe moins à gauche de l’accolade ouvrante pour réduire la région en mode plan. Lorsque la région est réduite, le symbole de points de suspension (...) doit apparaître à gauche de la région réduite et une fenêtre contextuelle contenant le texte **texte de pointage** doit apparaître lorsque vous déplacez le pointeur sur le bouton de sélection.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : Liaison d’un type de contenu à une extension de nom de fichier](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [Procédure pas à pas : Liaison d’un Type de contenu à une Extension de nom de fichier](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

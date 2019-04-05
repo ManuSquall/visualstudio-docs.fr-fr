@@ -1,14 +1,9 @@
 ---
-title: 'Comment : installer les composants requis avec une Application ClickOnce | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Installer les composants requis avec une Application ClickOnce | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,15 +16,15 @@ ms.assetid: e964fca5-fdfd-47cf-a1c9-7fb96b1c88b5
 caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 47d4355fc1b5690d6c9c76fd354a5f5bd4830d8e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0a3619e911ffcf730012ee26d26783b6a7596704
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196285"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951444"
 ---
-# <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Comment : installer les composants requis avec une application ClickOnce
+# <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Procédure : Installer des prérequis avec une application ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tous les [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applications requièrent que la version correcte du .NET Framework est installée sur un ordinateur avant de pouvoir exécuter ; de nombreuses applications ont également autres conditions préalables requises. Lorsque vous publiez un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application, vous pouvez choisir un ensemble de composants requis à empaqueter avec votre application. Au moment de l’installation, une vérification sera effectuée pour chaque composant requis déterminer s’il existe déjà ; Si pas il sera installé avant d’installer le [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application.  
@@ -37,7 +32,7 @@ Tous les [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applications req
  Au lieu d’empaquetage et publication des conditions préalables, vous pouvez également spécifier un emplacement de téléchargement pour les composants. Par exemple, au lieu d’inclure les composants requis avec chaque application que vous publiez, vous pouvez utiliser un partage de fichiers centralisé ou un emplacement Web qui contient les programmes d’installation pour tous vos composants requis, au moment de l’installation, les composants seront téléchargés et installer à partir de cet emplacement.  
   
 > [!IMPORTANT]
->  Vous devez ajouter des packages de programme d’installation préalable sur votre ordinateur de développement avant de publier votre premier [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application. Pour plus d’informations, consultez [Comment : inclure les composants requis avec une Application ClickOnce](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md).  
+>  Vous devez ajouter des packages de programme d’installation préalable sur votre ordinateur de développement avant de publier votre premier [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application. Pour plus d'informations, voir [Procédure : Inclure des prérequis dans une application ClickOnce](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md).  
   
  Conditions préalables sont gérés dans le **prérequis** boîte de dialogue, accessible à partir de la **publier** volet de la **Concepteur de projets**.  
   
@@ -78,6 +73,3 @@ Tous les [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applications req
 ## <a name="see-also"></a>Voir aussi  
  [Publication d’applications ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Guide pratique pour publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
-
-
-

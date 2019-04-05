@@ -1,14 +1,9 @@
 ---
-title: 'CA2226 : Les opérateurs doivent contenir des surcharges symétriques | Microsoft Docs'
-ms.custom: ''
+title: 'CA2226 : Les opérateurs doivent contenir des surcharges symétriques | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - OperatorsShouldHaveSymmetricalOverloads
 - CA2226
@@ -20,14 +15,14 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 60e9664780d516e978ef6d161fb9593dcc17b464
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 574f254b1cfccf58def5c404c15b03a4c83658cc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940071"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950949"
 ---
-# <a name="ca2226-operators-should-have-symmetrical-overloads"></a>CA2226 : Les opérateurs doivent contenir des surcharges symétriques
+# <a name="ca2226-operators-should-have-symmetrical-overloads"></a>CA2226 : Les opérateurs doivent contenir des surcharges symétriques
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -38,7 +33,7 @@ ms.locfileid: "49940071"
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Un type implémente l’opérateur d’égalité ou d’inégalité et n’implémente pas l’opérateur opposé.
+ Un type implémente l'opérateur d'égalité ou d'inégalité et n'implémente pas l'opérateur opposé.
 
 ## <a name="rule-description"></a>Description de la règle
  Il n’existe aucun cas où l’égalité ou inégalité s’applique aux instances d’un type, et l’opérateur opposé n’est pas défini. Types implémentent généralement l’opérateur d’inégalité en retournant la valeur négative de l’opérateur d’égalité.
@@ -52,15 +47,12 @@ ms.locfileid: "49940071"
  Ne supprimez aucun avertissement de cette règle. Votre type ne fonctionnera pas de manière cohérente avec le [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
 
 ## <a name="related-rules"></a>Règles associées
- [CA1046 : Ne pas surcharger l’opérateur égal sur les types de référence](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
+ [CA1046 : Ne pas surcharger l’opérateur égal sur les types référence](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
- [CA2225 : Les surcharges d’opérateur ont d’autres méthodes nommées](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
+ [CA2225 : Surcharges d’opérateur ont d’autres méthodes nommées](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
 
- [CA2224 : Remplacez Equals lors de la surcharge de l’opérateur égal](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+ [CA2224 : Remplacez equals lors de la surcharge l’opérateur égal](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 
- [CA2218 : Remplacez GetHashCode lors du remplacement de Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
+ [CA2218 : Remplacez GetHashCode au moment de remplacer Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 
  [CA2231 : Surchargez l’opérateur égal (equals) en remplaçant ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
-
-
-

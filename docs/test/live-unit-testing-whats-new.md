@@ -1,27 +1,28 @@
 ---
-title: Nouveautés de Live Unit Testing
+title: Nouveautés de Live Unit Testing dans Visual Studio 2017
+titleSuffix: ''
 ms.date: 10/11/2017
 ms.topic: conceptual
 helpviewer_keywords:
-- Visual Studio ALM
 - Live Unit Testing
 - Live Unit Testing What's New
 author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 95cbdeb9a4e8a3f98fefa7650b36cc4dd59ed550
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+monikerRange: vs-2017
+ms.openlocfilehash: 96ac53900806cc37e215342573f998be995289f8
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221539"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57872416"
 ---
-# <a name="whats-new-in-live-unit-testing"></a>Nouveautés de Live Unit Testing
+# <a name="whats-new-in-live-unit-testing-for-visual-studio-2017"></a>Nouveautés de Live Unit Testing pour Visual Studio 2017
 
 Cette rubrique liste les nouvelles fonctionnalités ajoutées à Live Unit Testing dans chaque version de Visual Studio à partir de Visual Studio 2017 version 15.3. Pour obtenir une vue d’ensemble de l’utilisation de Live Unit Testing, consultez [Live Unit Testing avec Visual Studio](live-unit-testing.md).
 
-## <a name="whats-new-in-live-unit-testing-for-visual-studio-2017-version-154"></a>Nouveautés de Live Unit Testing dans Visual Studio 2017 version 15.4
+## <a name="version-154"></a>Version 15.4
 
 À compter de Visual Studio 2017 version 15.4, Live Unit Testing présente des améliorations dans plusieurs domaines :
 
@@ -39,7 +40,7 @@ Cette rubrique liste les nouvelles fonctionnalités ajoutées à Live Unit Testi
 
 - **Différentes améliorations de l’interface utilisateur** :  l’option **Live Test Set – Inclure/Exclure** accessible d’un clic droit prêtait à confusion ; elle a donc été renommée **Live Unit Testing Inclure/Exclure**. L’option **Réinitialiser** du menu **Test** > **Live Unit Testing** a été supprimée. Elle est désormais accessible en sélectionnant **Outils** > **Options** > **Live Unit Testing** et en sélectionnant **Supprimer les données persistantes**.
 
-## <a name="whats-new-in-live-unit-testing-for-visual-studio-2017-version-153"></a>Nouveautés de Live Unit Testing pour Visual Studio 2017 version 15.3
+## <a name="version-153"></a>Version 15.3
 
 À compter de Visual Studio 2017 version 15.3, Live Unit Testing présente des améliorations dans deux domaines principaux :
 

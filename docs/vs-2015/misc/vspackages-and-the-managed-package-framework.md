@@ -1,27 +1,22 @@
 ---
 title: VSPackages et infrastructure de Package gérée | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - managed package framework
 - VSPackages, managed package framework
 - managed VSPackages, managed package framework
 ms.assetid: e8d80e0f-6b5b-4baf-a7df-59fd808c60cd
 caps.latest.revision: 16
-manager: douge
-ms.openlocfilehash: 2e265a342ec32abea40ab9b352b5735079462a46
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7f8d5da0d246cb6b0faa8b424f8039697686cd2a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227979"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950181"
 ---
 # <a name="vspackages-and-the-managed-package-framework"></a>VSPackages et infrastructure de package gérée
 Vous pouvez réduire le temps de développement en créant un VSPackage avec le package géré classes framework (MPF) au lieu d’à l’aide des classes COM interop.  
@@ -30,7 +25,7 @@ Vous pouvez réduire le temps de développement en créant un VSPackage avec le 
   
 -   Utilisez le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] modèle de projet de Package  
   
-     Pour plus d’informations, consultez [procédure pas à pas : création un Menu commande à l’aide du modèle de Package Visual Studio](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
+     Pour plus d’informations, consultez [Procédure pas à pas : Création d’une commande de Menu à l’aide du modèle de Package Visual Studio](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
   
 -   Créer votre VSPackage sans le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] modèle de projet de Package  
   

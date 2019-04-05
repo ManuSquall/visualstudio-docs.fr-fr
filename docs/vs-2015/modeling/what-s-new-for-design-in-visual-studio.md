@@ -1,39 +1,34 @@
 ---
-title: Ce que&#39;s nouveau pour la conception dans Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Ce que&#39;s nouveau pour la conception
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
-- what's new [VIsual Studio ALM], architecture and modeling
+- what's new [VIsual Studio], architecture and modeling
 - architecture [Visual Studio Ultimate], modeling
-- modeling software [Visual Studio ALM], What's New
+- modeling software [Visual Studio], What's New
 ms.assetid: 36ab5c17-6dc0-4075-a28e-a0fa49b11260
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ee504d0054c52649d48676451168e7dea171b6af
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 84b5ed45bfa7117eec4cbaa86ad9ca4533339d62
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771289"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001696"
 ---
-# <a name="whats-new-for-design-in-visual-studio"></a>Nouveautés en matière de conception dans Visual Studio
+# <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Quelles sont les nouveautés en matière de conception dans Visual Studio dans Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-Cette mise en production de Visual Studio inclut les améliorations suivantes pour vous aider à mieux comprendre et concevoir le code.
+Cette version de Visual Studio inclut les améliorations suivantes pour vous aider à mieux comprendre et concevoir le code.
 
- **Cartes de code et des graphiques de dépendance**
+ **Cartes de code et graphiques de dépendance**
 
- Dans Visual Studio Enterprise, quand vous voulez comprendre les dépendances spécifiques dans votre code, vous pouvez les visualiser en créant des cartes de code. Vous pouvez alors parcourir ces relations à l'aide de la carte, laquelle est affichée en regard de votre code. Les cartes de code peuvent aussi vous aider à savoir où vous vous trouvez dans le code pendant que vous travaillez ou déboguez le code. Vous passerez donc moins de temps à lire le code, tout en en sachant plus sur sa conception.
+ Dans Visual Studio Enterprise, quand vous voulez comprendre les dépendances spécifiques dans votre code, vous pouvez les visualiser en créant des cartes de code. Vous pouvez alors parcourir ces relations à l'aide de la carte, laquelle est affichée en regard de votre code. Les cartes de code peuvent aussi vous aider à savoir où vous vous trouvez dans le code pendant que vous travaillez ou déboguez le code. Vous passerez donc moins de temps à lire le code, tout en approfondissant vos connaissances sur sa conception.
 
- Dans la version finale (RTM), nous avons simplifié l'utilisation des liens et des menus contextuels pour les éléments de code en regroupant les commandes dans des sections en rapport avec la sélection, la modification, la gestion des groupes et la modification de la disposition du contenu des groupes. Notez également que les projets de test sont affichés dans un style différent des autres projets et que nous avons mis à jour les icônes des éléments sur la carte avec des versions plus appropriées.
+ Dans la mise en production finale (RTM), nous avons simplifié l’utilisation des liens et des menus contextuels pour les éléments de code en regroupant les commandes dans des sections en rapport avec la sélection, la modification, la gestion des groupes et la modification de la disposition du contenu des groupes. Notez également que les projets de test sont affichés dans un style différent des autres projets et que nous avons mis à jour les icônes des éléments sur la carte avec des versions plus appropriées.
 
  ![Afficher les éléments sélectionnés sur une nouvelle carte de code](../ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")
 
@@ -51,7 +46,7 @@ Cette mise en production de Visual Studio inclut les améliorations suivantes po
 
 - **Génération plus rapide de cartes de code réactives**. Les opérations de glisser-déplacer produisent un résultat immédiat et les liens entre les nœuds sont créés beaucoup plus rapidement, sans affecter les opérations ultérieures initiées par l'utilisateur, telles que le développement d'un nœud ou la demande de nœuds supplémentaires. Quand vous créez des cartes de code sans générer la solution, tous les cas extrêmes, par exemple lorsque les assemblys ne sont pas générés, sont désormais traités.
 
-- **Ignorer la régénération de votre solution.** Fournit de meilleures performances lors de la création et de la modification des diagrammes.
+- **Non-obligation de régénérer votre solution.** Fournit de meilleures performances lors de la création et de la modification des diagrammes.
 
 - **Filtrage des groupes et des nœuds d'éléments de code**. Vous pouvez rapidement mettre en ordre vos cartes en affichant ou en masquant des éléments de code en fonction de leur catégorie, ainsi qu'en regroupant les éléments de code par dossier de solution, assembly, espace de noms, dossier de projet et type.
 
@@ -73,7 +68,7 @@ Cette mise en production de Visual Studio inclut les améliorations suivantes po
 
 Visual Studio 2015 est disponible dans plusieurs éditions. N’est pas en charge l’architecture et les outils de modélisation. Le tableau ci-après décrit la disponibilité de chaque outil.
 
-|**Fonctionnalité**|**Enterprise**|**Professionnel**|**Community**|**Express**|
+|**Fonctionnalité**|**Enterprise**|**Professional**|**Community**|**Express**|
 |-----------------|--------------------|----------------------|-------------------|-----------------|
 |**Cartes de code**|Oui|Prend en charge uniquement la lecture et filtrage des cartes de code, l’ajout de nouveaux nœuds génériques et création d’un graphique orienté à partir d’une sélection.|-|-|
 |**Diagrammes de classes UML**|Oui|-|-|-|

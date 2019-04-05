@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0347e2948538b8d4149ce6228656d190c5f972a6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2e97f2f844c53a6bf26fecc4559b65ae69970c6b
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689302"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526537"
 ---
 # <a name="general-debugging-options"></a>Options de débogage générales
 
@@ -54,7 +54,7 @@ Dans les conditions 2 et 3, l’exception est quelquefois interceptée par le co
 
 **Activer les filtres de point d’arrêt**: vous permet de définir des filtres sur des points d’arrêt afin qu’ils affectent uniquement des processus, threads ou ordinateurs.
 
-**La nouvelle assistance d’Exception**: permet à l’assistance d’Exception (Visual Studio 2017) qui remplace l’assistant exception.
+**La nouvelle assistance d’Exception**: permet à l’assistance de l’Exception qui remplace l’assistant exception. (Assistance d’exception est pris en charge dans Visual Studio 2017)
 
 > [!NOTE]
 > Pour le code managé, cette option s’appelait précédemment **activer l’assistant exception** .
@@ -158,7 +158,7 @@ Pour savoir quels symboles sont disponibles dans la table d’exportation d’un
 
 Si vous utilisez une version antérieure de Visual Studio, des options supplémentaires peuvent être présentes.
 
-**Activer l’assistant exception**: pour le code managé, permet à l’assistant exception. Dans Visual Studio 2017, l’assistance d’Exception remplacé l’assistant exception.
+**Activer l’assistant exception**: pour le code managé, permet à l’assistant exception. À partir de Visual Studio 2017, l’assistance d’Exception remplacé l’assistant exception.
 
 **Dérouler la pile des appels sur les exceptions non gérées**: provoque la **pile des appels** fenêtre restaure la pile des appels au point qui précède l’exception non gérée s’est produite.
 

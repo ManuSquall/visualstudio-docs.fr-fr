@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9d0176113b444c2d5b7e4c9f304e35974fdb31e5
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: c455f36d17b761fe02b7d78e96fbf2c4582d490d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222881"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415809"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Procédure : Définir et utiliser des délégués d’activité dans le concepteur de workflow
 
@@ -21,12 +21,10 @@ ms.locfileid: "57222881"
 
 ## <a name="define-an-activity-delegate"></a>Définir un délégué d'activité
 
-1. Dans Visual Studio, sélectionnez **Fichier** > **Nouveau** > **Projet**.
-
-2. Dans le **nouveau projet** boîte de dialogue, sélectionnez le **Workflow** catégorie sur la gauche, puis sélectionnez le **Application Console de Workflow** modèle de projet. Nommez le projet (le cas échéant) et cliquez sur **Ok**.
+1. Créer un nouveau **Application Console de Workflow** projet.
 
    > [!NOTE]
-   > Si vous ne voyez pas le **Workflow** catégorie, la première installation du **Windows Workflow Foundation** composant de Visual Studio. Pour obtenir des instructions détaillées, consultez [installer Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
+   > Si vous ne voyez pas le **Workflow** modèles de projet, installez d’abord le **Windows Workflow Foundation** composant de Visual Studio. Pour obtenir des instructions détaillées, consultez [installer Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
 3. Avec le bouton droit sur le projet dans **l’Explorateur de solutions** et sélectionnez **ajouter** > **un nouvel élément**. Sélectionnez le **Workflow** catégorie, puis sélectionnez le **activité** modèle d’élément. Nommez la nouvelle activité **MyForEach.xaml** , puis sélectionnez **OK**.
 

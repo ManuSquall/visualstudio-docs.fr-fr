@@ -1,14 +1,9 @@
 ---
 title: Gestion des Exceptions avec le débogueur | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.exceptions
 - vs.debug.exceptions.find
@@ -37,20 +32,20 @@ ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bdb648e7a29b3ed5d9a444e203ddbdcd6b0e73dc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: da57824eb467bf1691175a80d74cc61b8f181617
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769994"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952424"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Gestion des exceptions avec le débogueur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Une exception est une indication d'un état d'erreur qui se produit pendant qu'un programme est en cours d'exécution. Vous pouvez et devez fournir des gestionnaires qui répondent aux exceptions les plus importantes, mais il est important de savoir comment configurer le débogueur pour qu'il s'arrête sur les exceptions que vous voulez afficher.  
   
- Lorsqu'une exception est levée, le débogueur écrit un message d'exception dans la fenêtre Sortie. Cette action peut interrompre l'exécution dans les cas suivants :  
+ Lorsqu'une exception est levée, le débogueur écrit un message d'exception dans la fenêtre Sortie. Cette action peut interrompre l'exécution dans les cas suivants :  
   
 -   lorsqu'une exception est levée et n'est pas gérée ;  
   
@@ -74,9 +69,9 @@ Une exception est une indication d'un état d'erreur qui se produit pendant qu'u
   
  Dans la fenêtre **Paramètres d'exception** , développez le nœud d'une catégorie d'exceptions (par exemple, **Exceptions Common Language Runtime**, c'est-à-dire les exceptions .NET), puis cochez la case correspondant à une exception spécifique de cette catégorie (par exemple, **System.AccessViolationException**). Vous pouvez également sélectionner une catégorie entière d'exceptions.  
   
- ![Vérifié AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")  
+ ![Checked AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")  
   
- Si vous vérifiez une exception donnée, l'exécution du débogueur sera interrompue partout où l'exception est levée, qu'elle soit gérée ou non gérée. À ce stade, l'exception est appelée « exception de première chance ». Voici, par exemple, quelques scénarios :  
+ Si vous vérifiez une exception donnée, l'exécution du débogueur sera interrompue partout où l'exception est levée, qu'elle soit gérée ou non gérée. À ce stade, l'exception est appelée « exception de première chance ». Voici, par exemple, quelques scénarios :  
   
 1. Dans l’application de console C# suivante, la méthode Main lève une exception **AccessViolationException** à l’intérieur d’un bloc `try/catch` :  
   
@@ -103,7 +98,7 @@ Une exception est une indication d'un état d'erreur qui se produit pendant qu'u
    goodbye  
    ```  
   
-    mais elle n'affiche pas la ligne `here`.  
+    mais elle n'affiche pas la ligne `here` .  
   
 2. Une application console C# fait référence à une bibliothèque de classes avec une classe qui possède deux méthodes : une méthode qui lève une exception et la gère, et une deuxième méthode qui lève la même exception et qui ne la gère pas :  
   
@@ -188,13 +183,8 @@ public class GenericException<T> : Exception
   
 ## <a name="see-also"></a>Voir aussi  
  [Poursuivre l’exécution après une Exception](../debugger/continuing-execution-after-an-exception.md)   
- [Comment : examiner du Code système après une Exception](../debugger/how-to-examine-system-code-after-an-exception.md)   
- [Comment : utiliser des contrôles d’exécution natifs](../debugger/how-to-use-native-run-time-checks.md)   
+ [Guide pratique pour Examiner du Code système après une Exception](../debugger/how-to-examine-system-code-after-an-exception.md)   
+ [Guide pratique pour utiliser les vérifications natives à l’exécution](../debugger/how-to-use-native-run-time-checks.md)   
  [Utilisation d’exécution des vérifications sans la bibliothèque Runtime C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
  [Assistant Exception](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
  [Principes de base du débogueur](../debugger/debugger-basics.md)
-
-
-
-
-

@@ -2,7 +2,7 @@
 title: Test des performances d’un service cloud | Microsoft Docs
 description: Tester les performances d’un service cloud avec le profileur Visual Studio
 author: mikejo5000
-manager: douge
+manager: jillfra
 ms.assetid: 7a5501aa-f92c-457c-af9b-92ea50914e24
 ms.topic: conceptual
 ms.tgt_pltfrm: multiple
@@ -11,104 +11,103 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 25b60e5e4072a0523d17082a5c5646e5bb1ade6a
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 68e5ce85d9184b0e1e8b055f9d81d76b775fdef1
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51001732"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "59001810"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Test des performances d’un service cloud
 ## <a name="overview"></a>Vue d'ensemble
-Vous pouvez tester les performances d’un service cloud comme suit :
+Vous pouvez tester les performances d’un service cloud de plusieurs manières :
 
-* Utiliser les Diagnostics Azure pour collecter des informations sur les demandes et les connexions et pour consulter les statistiques de site qui montrent comment le service s’effectue à partir d’un point de vue du client. Pour commencer, consultez [configuration des diagnostics pour Azure Cloud Services et Machines virtuelles](http://go.microsoft.com/fwlink/p/?LinkId=623009).
-* Utilisez le profileur Visual Studio pour obtenir une analyse approfondie des aspects calculs de la façon dont le service s’exécute. Comme le décrit cette rubrique, vous pouvez utiliser le profileur pour mesurer les performances d’un service exécuté dans Azure. Pour plus d’informations sur l’utilisation du profileur pour mesurer les performances d’un service exécuté localement dans un émulateur de calcul, consultez [test des performances d’un Azure Cloud Service localement à l’émulateur de calcul avec le Visual Studio Profiler](http://go.microsoft.com/fwlink/p/?LinkId=262845).
+* Utilisez les diagnostics Azure pour collecter des informations concernant les demandes et les connexions, et pour analyser les statistiques de site qui renseignent sur le fonctionnement du service côté client. Pour la prise en main des diagnostics Azure, consultez [Configuration des diagnostics pour Azure Cloud Services et Azure Virtual Machines](http://go.microsoft.com/fwlink/p/?LinkId=623009).
+* Utilisez le profileur Visual Studio pour obtenir une analyse approfondie des ressources de calcul nécessaires à l’exécution du service. Comme l’explique cette rubrique, le profileur permet de mesurer les performances d’un service exécuté dans Azure. Pour plus d’informations sur l’utilisation du profileur pour mesurer les performances pendant l’exécution locale d’un service dans un émulateur de calcul, consultez [Test des performances d’un service cloud local dans l’émulateur de calcul Azure avec le profileur Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=262845).
 
-## <a name="choosing-a-performance-testing-method"></a>Choix d’une méthode de test de performances
-### <a name="use-azure-diagnostics-to-collect"></a>Utilisez Azure Diagnostics à collecter :
-* Statistiques sur les pages web ou des services, tels que les demandes et les connexions.
-* Statistiques sur les rôles, tels que la fréquence à laquelle un rôle est redémarré.
-* Ensemble d’informations sur l’utilisation de la mémoire, telles que le pourcentage de temps que le garbage collector prend ou la mémoire définie d’un rôle en cours d’exécution.
+## <a name="choosing-a-performance-testing-method"></a>Choix d’une méthode de test des performances
+### <a name="use-azure-diagnostics-to-collect"></a>Utilisez les diagnostics Azure pour collecter les informations suivantes :
+* Statistiques concernant les pages ou services web (par exemple, les demandes et les connexions).
+* Statistiques sur les rôles (par exemple, le nombre de fois où un rôle est redémarré).
+* Informations générales relatives à l’utilisation de la mémoire (par exemple, le pourcentage de temps que le garbage collector prend ou la mémoire définie pour un rôle en cours d’exécution).
 
-### <a name="use-the-visual-studio-profiler-to"></a>Utilisez le profileur Visual Studio pour :
+### <a name="use-the-visual-studio-profiler-to"></a>Utilisez le profileur Visual Studio pour effectuer les tâches suivantes :
 * Identifier les fonctions prenant le plus de temps.
-* Mesurer combien de temps prend chaque partie d’un programme intensif.
-* Comparer les rapports de performances détaillées pour les deux versions d’un service.
-* Analyser l’allocation de mémoire plus en détail que le niveau d’allocations de mémoire individuelles.
+* Évaluer le temps nécessaire à chaque partie d’un programme utilisant de nombreuses ressources de calcul.
+* Comparer des rapports de performances détaillés pour deux versions d’un service.
+* Analyser l’allocation de mémoire plus en détail que le niveau des allocations de mémoire individuelles.
 * Analyser les problèmes d’accès concurrentiel dans du code multithread.
 
-Lorsque vous utilisez le profileur, vous pouvez collecter des données quand un service cloud s’exécute localement ou dans Azure.
+L’utilisation du profileur vous permet de collecter des données pour un service cloud exécuté localement ou dans Azure.
 
-### <a name="collect-profiling-data-locally-to"></a>Collecter les données de profilage localement pour :
-* Tester les performances d’une partie d’un service cloud, telles que l’exécution du rôle de travail spécifique, ce qui ne nécessite pas une charge simulée réaliste.
+### <a name="collect-profiling-data-locally-to"></a>Collectez des données de profilage localement pour effectuer les tâches suivantes :
+* Tester les performances d’une partie d’un service cloud, telle que l’exécution d’un rôle de travail spécifique, qui ne nécessite pas de charge simulée réaliste.
 * Tester les performances d’un service cloud de manière isolée, dans des conditions contrôlées.
-* Tester les performances d’un service cloud avant de le déployer vers Azure.
-* Tester les performances d’un service de cloud privé, sans perturber les déploiements existants.
-* Tester les performances du service sans encourir de frais pour l’exécution dans Azure.
+* Tester les performances d’un service cloud avant son déploiement dans Azure.
+* Tester les performances d’un service cloud en mode privé, sans perturber les déploiements existants.
+* Tester les performances du service sans que des frais d’exécution d’Azure vous soient facturés.
 
-### <a name="collect-profiling-data-in-azure-to"></a>Collecter les données de profilage dans Azure pour :
+### <a name="collect-profiling-data-in-azure-to"></a>Collectez des données de profilage dans Azure pour effectuer les tâches suivantes :
 * Tester les performances d’un service cloud sous une charge simulée ou réelle.
-* Utilisez la méthode d’instrumentation de la collecte de données de profilage, comme cette rubrique décrit plus loin.
-* Tester les performances du service dans le même environnement que lorsque le service s’exécute en production.
+* Utiliser la méthode d’instrumentation pour collecter des données de profilage, comme décrit ultérieurement dans cette rubrique.
+* Tester les performances du service dans le même environnement que lors de son exécution en production.
 
-Vous simulez généralement une charge dans les conditions de contrainte ou les services de cloud de test sous normal.
+Vous simulez généralement une charge pour tester des services cloud dans des conditions de contrainte ou normales.
 
 ## <a name="profiling-a-cloud-service-in-azure"></a>Profilage d’un service cloud dans Azure
-Lorsque vous publiez votre service cloud à partir de Visual Studio, vous pouvez le service de profil et spécifier les paramètres de profilage qui vous donnent les informations que vous souhaitez. Une session de profilage est démarrée pour chaque instance d’un rôle. Pour plus d’informations sur la façon de publier votre service depuis Visual Studio, consultez [publication sur un Service Cloud Azure à partir de Visual Studio](https://msdn.microsoft.com/library/azure/ee460772.aspx).
+Quand vous publiez votre service cloud à partir de Visual Studio, profilez le service et spécifiez les paramètres de profilage appropriés pour obtenir les informations dont vous avez besoin. Une session de profilage est démarrée pour chaque instance d’un rôle. Pour plus d’informations sur la publication de votre service à partir de Visual Studio, consultez [Publication d’un service cloud Azure depuis Visual Studio](vs-azure-tools-publishing-a-cloud-service.md).
 
-Pour plus d’informations sur le profilage des performances dans Visual Studio, consultez [Guide du débutant en profilage des performances](https://msdn.microsoft.com/library/azure/ms182372.aspx) et [analyse des performances des applications à l’aide des outils de profilage](https://msdn.microsoft.com/library/azure/z9z62c29.aspx).
+Pour mieux comprendre le fonctionnement du profilage des performances dans Visual Studio, consultez le [Guide du débutant en profilage des performances](https://msdn.microsoft.com/library/azure/ms182372.aspx) et la rubrique [Analyse des performances de l’application à l’aide des outils de profilage](https://msdn.microsoft.com/library/azure/z9z62c29.aspx).
 
 > [!NOTE]
-> Vous pouvez activer IntelliTrace ou le profilage lorsque vous publiez votre service cloud. Vous ne pouvez pas activer les deux.
+> Quand vous publiez votre service cloud, activez IntelliTrace ou le profilage. Vous ne pouvez pas activer les deux méthodes.
 > 
 > 
 
-### <a name="profiler-collection-methods"></a>Méthodes de collecte de Profiler
-Vous pouvez utiliser plusieurs méthodes de collecte pour le profilage, en fonction de vos problèmes de performances :
+### <a name="profiler-collection-methods"></a>Méthodes de collecte des données par le profileur
+Vous avez le choix entre plusieurs méthodes de collecte pour le profilage, selon les problèmes de performances rencontrés :
 
-* **Échantillonnage de l’UC** -cette méthode collecte des statistiques d’application qui sont utiles pour l’analyse initiale des problèmes d’utilisation du processeur. Échantillonnage de l’UC est la méthode conseillée pour commencer la plupart des investigations sur les performances. Il existe un faible impact sur l’application que vous profilez lorsque vous collectez des données d’échantillonnage d’UC.
-* **Instrumentation** -cette méthode collecte des données de temporisation détaillées qui sont utiles pour une analyse ciblée et pour analyser les problèmes de performances d’entrée/sortie. La méthode d’instrumentation enregistre chaque entrée, sortie et appel de fonction des fonctions dans un module pendant une exécution du profilage. Cette méthode est pratique pour rassembler des informations chronologiques détaillées sur une section de votre code, et pour comprendre l’impact des opérations d’entrée et de sortie sur les performances de l’application. Cette méthode est désactivée pour un ordinateur exécutant un système d’exploitation 32 bits. Cette option est disponible uniquement lorsque vous exécutez le service cloud dans Azure, pas localement dans l’émulateur de calcul.
-* **Allocation de mémoire .NET** -cette méthode collecte des données d’allocation de mémoire .NET Framework à l’aide de la méthode de profilage par échantillonnage. Les données collectées incluent le nombre et la taille des objets alloués.
-* **Accès concurrentiel** -cette méthode collecte des données de conflit de ressources et les données de l’exécution de processus et thread qui est utiles pour analyser les applications multithread et multiprocessues. La méthode de concurrence collecte des données pour chaque événement qui bloque l’exécution de votre code, comme quand un thread attend que l’accès bloqué à une ressource de l’application soit libéré. Cette méthode est pratique pour l’analyse des applications multithreads.
-* Vous pouvez également activer **profilage d’Interaction de couche**, qui fournit des informations supplémentaires sur les temps d’exécution de ADO.NET synchrones appelle dans les fonctions des applications multicouches qui communiquent avec une ou plusieurs bases de données. Vous pouvez collecter des données d’interaction de couche avec n’importe quelle méthode de profilage. Pour plus d’informations sur le profilage d’interaction de couche, consultez [vue Interactions de couche](https://msdn.microsoft.com/library/azure/dd557764.aspx).
+* **Échantillonnage de l’UC** : cette méthode collecte des statistiques de l’application qui sont utiles pour l’analyse initiale des problèmes d’utilisation de l’UC. L’échantillonnage de l’UC est la méthode conseillée pour commencer la plupart des analyses de performances. La collecte des données d’échantillonnage de l’UC a peu d’impact sur l’application.
+* **Instrumentation** : cette méthode collecte des données de temporisation détaillées qui sont utiles pour l’analyse ciblée et l’analyse des problèmes de performances des entrées/sorties. La méthode d’instrumentation enregistre chaque entrée, sortie et appel de fonction des fonctions d’un module pendant l’exécution d’un profilage. Cette méthode permet de collecter des informations de temporisation détaillées à propos d’une partie précise de votre code. Elle vous aide à comprendre l’impact des opérations d’entrée et de sortie sur les performances de l’application. Cette méthode est désactivée sur un ordinateur exécutant un système d’exploitation 32 bits. Cette option est disponible uniquement si vous exécutez le service cloud dans Azure, et pas localement dans l’émulateur de calcul.
+* **Allocation de mémoire .NET** : cette méthode collecte des données d’allocation de mémoire .NET Framework à l’aide de la méthode de profilage par échantillonnage. Les données collectées incluent le nombre et la taille des objets alloués.
+* **Accès concurrentiel** : cette méthode collecte des données sur la contention de ressources, ainsi que des données sur l’exécution des threads et processus qui sont utiles pour analyser les applications multithread et multiprocessus. La méthode d’accès concurrentiel collecte des données pour chaque événement qui bloque l’exécution de votre code, par exemple quand un thread attend la libération d’un verrou d’accès à une ressource d’application. Cette méthode est utile pour l’analyse des applications multithread.
+* Vous pouvez également activer le **profilage d’interaction de couche**, qui fournit des informations supplémentaires sur les temps d’exécution des appels ADO.NET synchrones dans les fonctions des applications multicouches qui communiquent avec une ou plusieurs bases de données. Vous pouvez collecter des données d’interaction de couche à l’aide de n’importe quelle méthode de profilage. Pour plus d’informations sur le profilage d’interaction de couche, consultez [Vue Interactions de couche](https://msdn.microsoft.com/library/azure/dd557764.aspx).
 
 ## <a name="configuring-profiling-settings"></a>Configuration des paramètres de profilage
-L’illustration suivante montre comment configurer vos paramètres de profilage à partir de la boîte de dialogue Publier une Application Azure.
+L’illustration suivante montre comment configurer vos paramètres de profilage à partir de la boîte de dialogue Publication d’application Azure.
 
-![Configurer des paramètres de profilage](./media/vs-azure-tools-performance-profiling-cloud-services/IC526984.png)
+![Configurer les paramètres de profilage](./media/vs-azure-tools-performance-profiling-cloud-services/IC526984.png)
 
 > [!NOTE]
-> Pour activer la **activer le profilage** case à cocher, vous le profileur devez être installé sur l’ordinateur local que vous utilisez pour publier votre service cloud. Par défaut, le profileur est installé lorsque vous installez Visual Studio.
+> Pour cocher la case **Activer le profilage** , le profileur doit être installé sur l'ordinateur local que vous utilisez pour publier votre service cloud. Par défaut, le profileur s’installe lors de l’installation de Visual Studio.
 > 
 > 
 
 ### <a name="to-configure-profiling-settings"></a>Pour configurer les paramètres de profilage
-1. Dans l’Explorateur de solutions, ouvrez le menu contextuel pour votre projet Windows Azure, puis choisissez **publier**. Pour obtenir des instructions détaillées sur la façon de publier un service cloud, consultez [publication d’un service cloud à l’aide de Windows Azure tools](http://go.microsoft.com/fwlink/p?LinkId=623012).
-2. Dans le **publier l’Application Azure** boîte de dialogue, choisissez le **paramètres avancés** onglet.
-3. Pour activer le profilage, sélectionnez le **activer le profilage** case à cocher.
-4. Pour configurer vos paramètres de profilage, choisissez le **paramètres** lien hypertexte. La boîte de dialogue Paramètres de profilage s’affiche.
-5. À partir de la **quelle méthode de profilage voulez-vous utiliser** cases d’option, choisissez le type de profilage que vous avez besoin.
-6. Pour collecter la données de profilage d’interaction de couche, cochez la **activer le profilage d’Interaction de couche** case à cocher.
-7. Pour enregistrer les paramètres, choisissez le **OK** bouton.
+1. Dans l’Explorateur de solutions, ouvrez le menu contextuel de votre projet Azure, puis choisissez **Publier**. Pour obtenir la procédure détaillée de la publication d’un service cloud, consultez [Publication d’un service cloud à l’aide des outils Azure](http://go.microsoft.com/fwlink/p?LinkId=623012).
+2. Dans la boîte de dialogue **Publication d’application Azure**, choisissez l’onglet **Paramètres avancés**.
+3. Pour activer le profilage, cochez la case **Activer le profilage** .
+4. Pour configurer vos paramètres de profilage, choisissez le lien hypertexte **Paramètres** . La boîte de dialogue Paramètres de profilage s’affiche.
+5. À l’aide des cases d’option **Quelle méthode de profilage voulez-vous utiliser ?** , choisissez le type de profilage approprié.
+6. Pour collecter les données de profilage d’interaction de couche, cochez la case **Activer le profilage d’interaction de couche** .
+7. Pour enregistrer les paramètres, choisissez le bouton **OK** .
    
-    Lorsque vous publiez cette application, ces paramètres sont utilisés pour créer la session de profilage pour chaque rôle.
+    Quand vous publiez cette application, ces paramètres sont utilisés pour créer la session de profilage pour chaque rôle.
 
 ## <a name="viewing-profiling-reports"></a>Affichage des rapports de profilage
-Une session de profilage est créée pour chaque instance d’un rôle dans votre service cloud. Pour afficher vos rapports de profilage de chaque session à partir de Visual Studio, vous pouvez afficher la fenêtre Explorateur de serveurs et puis choisissez le nœud de calcul Azure pour sélectionner une instance d’un rôle. Vous pouvez ensuite afficher le rapport de profilage comme indiqué dans l’illustration suivante.
+Une session de profilage est créée pour chaque instance de rôle dans votre service cloud. Pour afficher vos rapports de profilage de chaque session de Visual Studio, affichez la fenêtre Explorateur de serveurs, puis choisissez le nœud de calcul Azure pour sélectionner une instance d’un rôle. Affichez ensuite le rapport de profilage comme indiqué dans l’illustration suivante.
 
-![Afficher le rapport de profilage à partir d’Azure](./media/vs-azure-tools-performance-profiling-cloud-services/IC748914.png)
+![Afficher un rapport de profilage à partir d’Azure](./media/vs-azure-tools-performance-profiling-cloud-services/IC748914.png)
 
 ### <a name="to-view-profiling-reports"></a>Pour afficher des rapports de profilage
-1. Pour afficher la fenêtre Explorateur de serveurs dans Visual Studio, dans la barre de menus choisissez Affichage, Explorateur de serveurs.
-2. Choisissez le nœud de calcul Azure, puis le nœud de déploiement Azure pour le service cloud que vous avez sélectionné au profil quand vous avez publié à partir de Visual Studio.
-3. Pour afficher des rapports de profilage pour une instance, choisissez le rôle dans le service, ouvrez le menu contextuel pour une instance spécifique, puis **afficher le rapport de profilage**.
+1. Pour afficher la fenêtre Explorateur de serveurs dans Visual Studio, dans la barre de menus, choisissez Affichage, Explorateur de serveurs.
+2. Choisissez le nœud de calcul Azure, puis choisissez le nœud de déploiement Azure pour le service cloud pour lequel vous avez activé le profilage lors de la publication à partir de Visual Studio.
+3. Pour afficher les rapports de profilage d'une instance, choisissez le rôle dans le service, ouvrez le menu contextuel d’une instance spécifique, puis choisissez **Afficher le rapport de profilage**.
    
-    Le rapport, un fichier .vsp, est maintenant téléchargé à partir d’Azure, et l’état du téléchargement apparaît dans le journal d’activité Azure. Le téléchargement terminé, le rapport de profilage s’affiche dans un onglet dans l’éditeur pour Visual Studio nommé <Role name> *<Instance Number>* <identifier>.vsp. Données de synthèse pour le rapport s’affiche.
-4. Pour afficher différentes vues du rapport, dans la liste Affichage actuel, choisissez le type de vue que vous souhaitez. Pour plus d’informations, consultez [vues de rapport outils de profilage](https://msdn.microsoft.com/library/azure/bb385755.aspx).
+    Le rapport, un fichier .vsp, est maintenant téléchargé à partir d’Azure, et l’état du téléchargement apparaît dans le journal des activités Azure. À la fin du téléchargement, le rapport de profilage s’affiche dans un onglet de l’éditeur pour Visual Studio nommé <nom_rôle\>*<numéro_instance\>*<identificateur\>.vsp. Une synthèse du rapport est présentée.
+4. Pour afficher différentes vues du rapport, dans la liste Affichage actuel, choisissez le type de vue souhaité. Pour plus d’informations, consultez [Vues des rapports d’outils de profilage](https://msdn.microsoft.com/library/azure/bb385755.aspx).
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Débogage de Services Cloud](https://msdn.microsoft.com/library/azure/ee405479.aspx)
+[Débogage de Cloud Services](vs-azure-tools-debugging-cloud-services-overview.md)
 
-[Publication d’un Service Cloud Azure depuis Visual Studio](https://msdn.microsoft.com/library/azure/ee460772.aspx)
-
+[Publication d’un service cloud Azure depuis Visual Studio](vs-azure-tools-publishing-a-cloud-service.md)

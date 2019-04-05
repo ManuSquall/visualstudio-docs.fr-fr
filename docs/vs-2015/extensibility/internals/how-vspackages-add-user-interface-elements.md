@@ -1,14 +1,9 @@
 ---
 title: Comment VSPackages ajoute des éléments d’Interface utilisateur | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces, adding elements
 - UI element design [Visual Studio SDK], VSPackages
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 caps.latest.revision: 61
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 88b1a71964ddae67241025dd32c1a1384c79765f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d020dd0e1d20facd431a31f5aabffb4ec9e2631a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753370"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953445"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Comment VSPackages ajoute des éléments de l’interface utilisateur
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -202,7 +197,7 @@ priority="0x0100" type="Menu">
 |ToolBar|[Élément menus](../../extensibility/menus-element.md), l’IDE, les autres packages VS|L’élément lui-même|0 à *n* groupes|  
 |Élément de menu|[Boutons d’élément](../../extensibility/buttons-element.md), l’IDE, les autres packages VS|1 à *n* des groupes, l’élément lui-même|-0 à *n* groupes|  
 |Bouton|[Boutons d’élément](../../extensibility/buttons-element.md), l’IDE, les autres packages VS|1 à *n* des groupes, l’élément lui-même||  
-|Liste déroulante|[Élément combos](../../extensibility/combos-element.md), l’IDE, les autres packages VS|1 à *n* des groupes, l’élément lui-même||  
+|Combo|[Élément combos](../../extensibility/combos-element.md), l’IDE, les autres packages VS|1 à *n* des groupes, l’élément lui-même||  
   
 ### <a name="menu-command-and-group-placement"></a>Menu, commande et Placement du groupe  
  Un menu, un groupe ou une commande peut apparaître dans plusieurs emplacements dans l’IDE. Pour un élément s’affiche dans plusieurs emplacements, il doit être ajouté à la `CommandPlacements` section comme un [CommandPlacement élément](../../extensibility/commandplacement-element.md). N’importe quel menu, groupe ou une commande peut être ajouté comme un emplacement de la commande. Toutefois, les barres d’outils ne peut pas être positionnés de cette manière, car ils ne peut pas apparaître dans plusieurs emplacements contextuelles.  
@@ -308,4 +303,3 @@ priority="0x0100" type="Menu">
   
 ## <a name="see-also"></a>Voir aussi  
  [Extension des menus et des commandes](../../extensibility/extending-menus-and-commands.md)
-

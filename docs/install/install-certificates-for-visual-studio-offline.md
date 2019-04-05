@@ -13,12 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab235393996396aaba8331b8e55001ad292bdc51
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 249a611bf9db43f31b2370a4a2b4c760cb4ebf64
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645717"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323066"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Installer les certificats nécessaires à l’installation hors connexion de Visual Studio
 
@@ -71,6 +73,16 @@ Si vous écrivez un script du déploiement de Visual Studio dans un environnemen
 
    certmgr.exe -add [layout path]\certificates\vs_installer_opc.RootCertificate.cer -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
+   
+   Vous pouvez également créer un fichier de commandes qui utilise certutil.exe, fourni avec Windows, avec les commandes suivantes :
+   
+      ```cmd
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer
+
+   certutil.exe -addstore -f "Root" [layout path]\certificates\manifestCounterSignRootCertificate.cer"
+
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\vs_installer_opc.RootCertificate.cer"
+   ```
 
 3. Déployez le fichier de commandes sur le client. Cette commande doit être exécutée à partir d’un processus avec élévation de privilèges.
 
@@ -103,6 +115,7 @@ Quand une signature est vérifiée dans un environnement en ligne, les API Windo
 ## <a name="checking-if-certificates-are-already-installed"></a>Vérification de l’installation des certificats
 
 Une manière de vérifier l’installation du système consiste à suivre ces étapes :
+
 1. Exécutez **mmc.exe**.<br/>
   a. Cliquez sur Fichier et sélectionnez **Ajouter/Supprimer un composant logiciel enfichable**.<br/>
   b. Double-cliquez sur **Certificats**, sélectionnez **Compte d’ordinateur** et cliquez sur **Suivant**.<br/>

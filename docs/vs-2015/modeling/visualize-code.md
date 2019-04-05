@@ -1,14 +1,9 @@
 ---
 title: Visualiser du code | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - code, understanding
 - code, visualizing
@@ -17,18 +12,18 @@ ms.assetid: 0dd7d438-393a-4cd3-b417-9bf37379e1b0
 caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 071048fba8d3663639747ea35dbae4375d101c26
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2d5803544e4e7279179929c7c04a3792e4dd9318
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738932"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "59001186"
 ---
 # <a name="visualize-code"></a>Visualiser du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez utiliser les outils de modélisation et de visualisation dans Visual Studio pour aider à comprendre le code existant et à décrire votre application. Cela vous permet de savoir visuellement comment vos changements peuvent affecter le code et vous aide à évaluer le travail et les risques qui résultent de ces modifications. Exemple :  
+Vous pouvez utiliser les outils de modélisation et de visualisation dans Visual Studio pour aider à comprendre le code existant et à décrire votre application. Cela vous permet de savoir visuellement comment vos changements peuvent affecter le code et vous aide à évaluer le travail et les risques qui résultent de ces modifications. Exemple :  
   
 - Pour comprendre les relations dans votre code, mappez visuellement ces relations.  
   
@@ -46,9 +41,9 @@ Vous pouvez utiliser les outils de modélisation et de visualisation dans Visual
   
 |||  
 |-|-|  
-|**Comprendre le code et ses relations :**<br /><br /> Mapper des relations entre des éléments de code spécifiques.<br /><br /> Voir une présentation des relations dans votre code pour l'ensemble de la solution.<br /><br /> **Remarque**: dans cette version de Visual Studio, le terme *carte de code* est utilisé à la place de *graphique de dépendance*.|-   [Mapper les dépendances dans vos solutions](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Utiliser des cartes de code pour déboguer vos applications](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [Rechercher des problèmes potentiels à l’aide des analyseurs de carte de code](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />-   [Mapper les méthodes sur la pile des appels pendant le débogage](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|  
-|**Comprendre les structures de classes :**<br /><br /> Visualiser la structure des classes dans un projet en créant des diagrammes de classes à partir du code.|[Guide pratique pour ajouter des diagrammes de classes aux projets (Concepteur de classes)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|  
-|**Décrire la conception du système de haut niveau et valider le code par rapport à cette conception :**<br /><br /> Décrire la conception système de haut niveau et ses dépendances prévues en créant des diagrammes de couche. Valider le code par rapport à cette conception pour s'assurer que les dépendances dans le code demeurent cohérentes avec la conception.|-   [Créer des diagrammes de couche à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagrammes de couche : référence](../modeling/layer-diagrams-reference.md)<br />-   [Diagrammes de couche : instructions](../modeling/layer-diagrams-guidelines.md)<br />-   [Valider du code avec des diagrammes de couche](../modeling/validate-code-with-layer-diagrams.md)|  
+|**Comprendre le code et ses relations :**<br /><br /> Mapper des relations entre des éléments de code spécifiques.<br /><br /> Voir une présentation des relations dans votre code pour l'ensemble de la solution.<br /><br /> **Remarque** : Dans cette version de Visual Studio, le terme *carte de code* est utilisé à la place de *graphique de dépendance*.|-   [Mapper les dépendances dans vos solutions](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Utiliser des cartes de code pour déboguer vos applications](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [Rechercher des problèmes potentiels à l’aide des analyseurs de carte de code](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />-   [Mapper les méthodes sur la pile des appels pendant le débogage](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|  
+|**Comprendre les structures de classes :**<br /><br /> Visualiser la structure des classes dans un projet en créant des diagrammes de classes à partir du code.|[Guide pratique pour ajouter des diagrammes de classes à des projets (Concepteur de classes)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|  
+|**Décrire la conception du système de haut niveau et valider le code par rapport à cette conception :**<br /><br /> Décrire la conception système de haut niveau et ses dépendances prévues en créant des diagrammes de couche. Valider le code par rapport à cette conception pour s'assurer que les dépendances dans le code demeurent cohérentes avec la conception.|-   [Créer des diagrammes de couche à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagrammes de couche : Référence](../modeling/layer-diagrams-reference.md)<br />-   [Diagrammes de couche : Recommandations](../modeling/layer-diagrams-guidelines.md)<br />-   [Valider du code avec des diagrammes de couche](../modeling/validate-code-with-layer-diagrams.md)|  
 |**Communiquer les besoins des utilisateurs et l’architecture :**<br /><br /> Modéliser les besoins des utilisateurs et l'architecture de votre système logiciel en dessinant les diagrammes UML suivants : activité, composant, classe, séquence et cas d'usage.|-   [Créer des modèles pour votre application](../modeling/create-models-for-your-app.md)<br />-   [Modéliser les besoins des utilisateurs](../modeling/model-user-requirements.md)<br />-   [Modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md)|  
   
 ## <a name="external-resources"></a>Ressources externes  
@@ -66,6 +61,3 @@ Vous pouvez utiliser les outils de modélisation et de visualisation dans Visual
  [Modéliser les besoins des utilisateurs](../modeling/model-user-requirements.md)   
  [Modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md)   
  [Utiliser des modèles dans votre processus de développement](../modeling/use-models-in-your-development-process.md)
-
-
-

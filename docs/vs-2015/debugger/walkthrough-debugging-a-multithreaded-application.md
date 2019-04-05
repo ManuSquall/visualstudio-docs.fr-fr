@@ -1,14 +1,9 @@
 ---
 title: 'Procédure pas à pas : Débogage d’une Application multithread | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,18 +16,18 @@ ms.assetid: 590ffd57-0556-43d8-8962-ee27e5b2b7d7
 caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d5dd742411710698cb2dd626e211cb0e73b8379e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8fead0386d1ba820be21e65009c78791c7368bcd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798628"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953786"
 ---
-# <a name="walkthrough-debugging-a-multithreaded-application"></a>Procédure pas à pas : débogage d'une application multithread
+# <a name="walkthrough-debugging-a-multithreaded-application"></a>Procédure pas à pas : Débogage d’une Application multithread
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] Fournit une meilleure **Threads** fenêtre et autres l’interface utilisateur des améliorations pour le rendre plus facile à déboguer des applications multithread. Cette procédure pas à pas ne prend que quelques minutes. Elle permet de se familiariser avec les nouvelles fonctionnalités de l’interface de débogage des applications multithread.  
+[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] Fournit une meilleure **Threads** fenêtre et autres l’interface utilisateur des améliorations pour le rendre plus facile à déboguer des applications multithread. Cette procédure pas à pas ne prend que quelques minutes. Elle permet de se familiariser avec la nouvelle interface de débogage des applications multithread.  
   
  Pour commencer cette procédure pas à pas, vous avez besoin d'un projet d'application multithread. Pour créer ce projet, procédez comme suit.  
   
@@ -42,7 +37,7 @@ ms.locfileid: "51798628"
   
      La boîte de dialogue **Nouveau projet** s’affiche.  
   
-2.  Dans le **Type de projet**s, cliquez sur le langage de votre choix : **Visual Basic**, **Visual C#**, ou **Visual C++**.  
+2.  Dans le **Type de projet**s, cliquez sur le langage de votre choix : **Visual Basic**, **Visual C#** , ou **Visual C++**.  
   
 3.  Dans le **modèles** , sélectionnez **Application Console** ou **Application Console CLR**.  
   
@@ -54,7 +49,7 @@ ms.locfileid: "51798628"
   
 6.  Supprimez le code qui s’affiche dans le fichier source et remplacez-le par l’exemple de code qui s’affiche dans la section « Création d’un Thread » de la rubrique [création de Threads et passage de données à l’heure de début](http://msdn.microsoft.com/library/52b32222-e185-4f42-91a7-eaca65c0ab6d).  
   
-7.  Sur le **fichier** menu, cliquez sur **Enregistrer tout**.  
+7.  Dans le menu **Fichier**, cliquez sur **Enregistrer tout**.  
   
 #### <a name="to-begin-the-walkthrough"></a>Pour démarrer la procédure pas à pas  
   
@@ -115,7 +110,7 @@ Thread::Sleep(3000);
   
    Cette icône est un *marqueur de thread*:  
   
-   ![Marqueur de thread](../debugger/media/threadmarker.gif "ThreadMarker")  
+   ![Thread Marker](../debugger/media/threadmarker.gif "ThreadMarker")  
   
 ## <a name="flagging-and-unflagging-threads"></a>Ajout et suppression d'indicateur de threads  
  Dans [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)], vous pouvez indiquer les threads auxquels vous souhaitez accorder une attention particulière. Le signalement des threads vous permet de suivre les threads importants et d'ignorer ceux de moindre importance.  
@@ -129,7 +124,7 @@ Thread::Sleep(3000);
 2.  Accédez à la **emplacement de débogage** barre d’outils et cliquez sur le **Thread** liste.  
   
     > [!NOTE]
-    >  Vous pouvez reconnaître cette barre d’outils de trois listes principales : **processus**, **Thread**, et **Frame de pile**.  
+    >  Vous pouvez reconnaître cette barre d’outils de trois listes principales : **Processus**, **Thread**, et **Frame de pile**.  
   
 3.  Notez le nombre de threads qui s'affichent dans la liste.  
   
@@ -143,7 +138,7 @@ Thread::Sleep(3000);
   
 7.  Placez le pointeur sur l'icône de l'indicateur.  
   
-     Un menu contextuel s'affiche. Cette fenêtre contextuelle vous indique le mode le **Thread** liste se trouve dans : **afficher uniquement les Threads avec indicateur**.  
+     Un menu contextuel s'affiche. Cette fenêtre contextuelle vous indique le mode le **Thread** liste se trouve dans : **Afficher uniquement les Threads avec indicateur**.  
   
 8.  Cliquez sur le bouton indicateur pour revenir au **afficher tous les Threads** mode.  
   
@@ -151,7 +146,7 @@ Thread::Sleep(3000);
   
 10. Cliquez sur le bouton indicateur pour revenir au **afficher uniquement les Threads avec indicateur**.  
   
-11. Sur le **déboguer** menu, pointez sur **Windows** puis cliquez sur **Threads**.  
+11. Dans le menu **Déboguer**, pointez sur **Fenêtres**, puis cliquez sur **Threads**.  
   
      Le **Threads** fenêtre s’affiche. Un thread possède une icône d'indicateur apparente qui lui est associée.  
   
@@ -245,7 +240,7 @@ Thread::Sleep(3000);
   
      Vous avez maintenant vu trois manières de modifier le thread actif : à l’aide de la **Threads** fenêtre, le **Thread** zone le **emplacement de débogage** barre d’outils et l’indicateur de thread dans le fenêtre source.  
   
-     L'indicateur de thread vous permet de basculer uniquement vers les threads interrompus à cet emplacement précis. À l’aide de la **Threads** fenêtre et **emplacement de débogage** barre d’outils, que vous pouvez basculer vers n’importe quel thread.  
+     L'indicateur de thread vous permet de basculer uniquement vers les threads interrompus à cet emplacement précis. La fenêtre **Threads** et la barre d’outils **Emplacement de débogage** vous permettent de basculer vers n’importe quel thread.  
   
 ## <a name="freezing-and-thawing-thread-execution"></a>Gel et libération de l'exécution de thread  
   
@@ -262,8 +257,5 @@ Thread::Sleep(3000);
      La colonne de thread actif et le **Suspend** modification de la colonne.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Déboguer les Applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Guide pratique pour basculer vers un autre thread pendant un débogage](../debugger/how-to-switch-to-another-thread-while-debugging.md)
-
-
-

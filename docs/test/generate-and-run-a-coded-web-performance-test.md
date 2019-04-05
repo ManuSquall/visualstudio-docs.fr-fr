@@ -14,12 +14,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8905470513f48bb284749a9fa0fb0e0fc73096f5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f5c1a065d30f3925ba5c567d562d0138de8c5953
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914082"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869274"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Générer et exécuter un test de performances de site Web codé
 
@@ -29,7 +29,7 @@ Les tests de performances web sont enregistrés lors de la navigation au sein de
 
 ## <a name="generate-a-coded-web-performance-test"></a>Générer un test de performances Web codé
 
-1.  Si vous n’avez pas créé un test de performances web, consultez [Enregistrer un test de performances web](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project?view=vsts).
+1.  Si vous n’avez pas créé un test de performances web, consultez [Enregistrer un test de performances web](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project).
 
 2.  Générez le test codé.
 

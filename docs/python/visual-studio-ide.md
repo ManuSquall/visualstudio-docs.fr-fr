@@ -1,7 +1,7 @@
 ---
 title: Vue d’ensemble de Visual Studio pour les développeurs Python
 titleSuffix: ''
-ms.date: 12/14/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 094a768f0b1b50e03bb445becb956e8e91a862da
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: f5ae66de706d29f7efb63f2c5b975a268c5f50ab
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316611"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354742"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Bienvenue dans l’IDE Visual Studio | Python
 
@@ -29,6 +29,10 @@ Cette image montre Visual Studio avec un projet Python ouvert et plusieurs fenê
 - L’[**Explorateur de solutions**](../ide/solutions-and-projects-in-visual-studio.md) (en haut à droite) vous permet d’afficher, de parcourir et de gérer vos fichiers de code. L’**Explorateur de solutions** peut vous aider à organiser votre code en regroupant les fichiers dans des [projets et des solutions](/visualstudio/get-started/tutorial-projects-solutions).
     - À côté de **l’Explorateur de solutions** se trouvent les [**Environnements Python**](managing-python-environments-in-visual-studio.md), qui permettent de gérer les différents interpréteurs Python installés sur l’ordinateur.
 
+    ::: moniker range=">=vs-2019"
+    - Vous pouvez également ouvrir et exécuter du code Python dans un dossier sans créer de fichiers projet et solution Visual Studio. Pour plus d’informations, consultez [Démarrage rapide : Ouvrez et exécutez du code Python dans un dossier](quickstart-05-python-visual-studio-open-folder.md).
+    ::: moniker-end
+
 - La [fenêtre de l’éditeur](../ide/writing-code-in-the-code-and-text-editor.md) (au centre), où vous passerez sans doute la plupart de votre temps, affiche le contenu des fichiers. C’est là que vous pourrez [modifier le code Python](editing-python-code-in-visual-studio.md), parcourir la structure de votre code et définir des points d’arrêt au cours des sessions de débogage. Avec Python, il est également possible de sélectionner du code et d’appuyer sur Ctrl+Entrée pour l’exécuter dans une [fenêtre REPL interactive](python-interactive-repl-in-visual-studio.md).
 
 - Dans la [fenêtre Sortie](../ide/reference/output-window.md) (en bas au centre), Visual Studio envoie des notifications, par exemple, des messages d’erreur et de débogage, des avertissements, des messages d’état de publication, etc. Chaque source de message a son propre onglet.
@@ -40,7 +44,7 @@ Cette image montre Visual Studio avec un projet Python ouvert et plusieurs fenê
 
 Visual Studio est disponible pour Windows et Mac ; toutefois, Python n’est pris en charge que sur Visual Studio pour Windows.
 
-Il existe trois éditions de Visual Studio 2017 sur Windows : Community, Professional et Enterprise. Consultez [Comparez les IDE Visual Studio 2017](https://visualstudio.microsoft.com/vs/compare/) pour en savoir plus sur les fonctionnalités prises en charge dans chaque édition.
+Il existe trois éditions de Visual Studio sur Windows : Community, Professional et Enterprise. Consultez [Comparez les IDE Visual Studio](https://visualstudio.microsoft.com/vs/compare/) pour en savoir plus sur les fonctionnalités prises en charge dans chaque édition.
 
 ## <a name="popular-productivity-features"></a>Fonctionnalités de productivité populaires
 
@@ -83,6 +87,12 @@ Voici quelques-unes des fonctionnalités populaires de Visual Studio qui vous ai
    ![Commandes de navigation dans le code](media/tour-ide-navigation-commands.png)
 
 ## <a name="powerful-features-for-python"></a>Fonctionnalités puissantes pour Python
+
+::: moniker range=">=vs-2019"
+- [Exécuter du code sans projet](quickstart-05-python-visual-studio-open-folder.md)
+
+    À partir de Visual Studio 2019, vous pouvez ouvrir un dossier contenant du code Python pour bénéficier de fonctionnalités telles que IntelliSense et le débogage sans devoir créer un projet Visual Studio pour le code.
+::: moniker-end
 
 - [REPL interactif Python](python-interactive-repl-in-visual-studio.md)
 

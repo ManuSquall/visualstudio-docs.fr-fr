@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f4d540dad3ead24f9213cbfb5009712372a4af34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 786b116d153eeea2ddb1c495f88ae0cd6ce135c6
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934755"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354762"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>Étape 5 : Installer des packages dans votre environnement Python
 
@@ -26,27 +26,27 @@ La communauté des développeurs Python a produit des milliers de packages utile
 
 1. Sélectionnez la commande de menu **Affichage** > **Autres fenêtres** > **Environnements Python**. La fenêtre **Environnements Python** s’ouvre en tant qu’homologue de l’**Explorateur de solutions**, et montre les différents environnements disponibles. La liste inclut les environnements que vous avez installés avec le programme d’installation de Visual Studio et ceux que vous avez installés séparément. L’environnement en gras est l’environnement par défaut qui est utilisé pour les nouveaux projets.
 
-   ![Fenêtre Environnements Python](media/environments-default-view-blue.png)
+   ![Fenêtre Environnements Python](media/environments/environments-default-view-blue.png)
 
 2. L’onglet **Vue d’ensemble** de l’environnement fournit un accès rapide à une fenêtre **Interactive** pour cet environnement, ainsi qu’au dossier d’installation et aux interpréteurs de l’environnement. Par exemple, sélectionnez **Ouvrir une fenêtre interactive**, et une fenêtre **Interactive** s’affiche pour cet environnement spécifique dans Visual Studio.
 
 3. Sélectionnez l’onglet **Packages** : vous voyez une liste des packages qui sont actuellement installés dans l’environnement.
 
-   ![Packages installés dans un environnement](media/environments-installed-packages-blue.png)
+   ![Packages installés dans un environnement](media/environments/environments-installed-packages-blue.png)
 
 4. Installez `matplotlib` en entrant son nom dans le champ de recherche, puis sélectionnez **pip install**
 
-   ![Installation de matplotlib dans l’environnement](media/environments-add-matplotlib1.png)
+   ![Installation de matplotlib dans l’environnement](media/environments/environments-add-matplotlib1.png)
 
 5. Acceptez l’élévation si vous y êtes invité.
 
 6. Une fois le package installé, il apparaît dans la fenêtre **Environnements Python**. La marque **X** à droite du package permet de le désinstaller.
 
-   ![Fin de l’installation de matplotlib dans l’environnement](media/environments-add-matplotlib2.png)
+   ![Fin de l’installation de matplotlib dans l’environnement](media/environments/environments-add-matplotlib2.png)
 
    Une petite barre de progression peut apparaître sous l’environnement pour indiquer que Visual Studio crée sa base de données IntelliSense pour le package nouvellement installé. L’onglet **IntelliSense** affiche également des informations plus détaillées. Notez que tant que cette base de données n’est pas terminée, les fonctionnalités IntelliSense, comme la saisie semi-automatique et la vérification de la syntaxe, ne sont pas actives dans l’éditeur pour ce package.
 
-   Notez que **Visual Studio 2017 versions 15.6** et ultérieures utilise une méthode différente et plus rapide pour travailler avec IntelliSense, et affiche un message à cet effet sous l’onglet **IntelliSense**.
+   Notez que Visual Studio 2017 version 15.6 et ultérieure utilise une méthode différente et plus rapide pour travailler avec IntelliSense, et affiche un message à cet effet sous l’onglet **IntelliSense**.
 
 7. Créez un projet en sélectionnant **Fichier** > **Nouveau** > **Projet**, puis le modèle **Application Python**. Dans le fichier de code qui s’affiche, collez le code suivant, qui crée une courbe de la fonction cosinus comme dans les étapes du didacticiel précédent, mais cette fois avec seulement une représentation graphique :
 
@@ -65,7 +65,7 @@ La communauté des développeurs Python a produit des milliers de packages utile
 
 8. Exécutez le programme avec (**F5**) ou sans le débogueur (**Ctrl**+**F5**) pour voir la sortie :
 
-   ![Sortie de l’exemple matplotlib](media/environments-add-matplotlib3.png)
+   ![Sortie de l’exemple matplotlib](media/environments/environments-add-matplotlib3.png)
 
 ## <a name="next-step"></a>Étape suivante
 

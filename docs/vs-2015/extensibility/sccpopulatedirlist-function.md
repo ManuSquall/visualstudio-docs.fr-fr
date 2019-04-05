@@ -1,14 +1,9 @@
 ---
 title: Fonction SccPopulateDirList | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccPopulateDirList
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: dfff634b-b155-498b-a356-6eb252ac4fad
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4ebfe2e28eb020547c65afd603d1899ebde510a8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6078f0fd90855c432b333fd5967367460d0a364e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755922"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938089"
 ---
 # <a name="sccpopulatedirlist-function"></a>Fonction SccPopulateDirList
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +53,7 @@ SCCRTN SccPopulateDirList(
  pvCallerData  
  [in] Valeur qui doit être transmises sans modification à la fonction de rappel.  
   
- Options  
+ fOptions  
  [in] Une combinaison de valeurs qui contrôlent la façon dont les répertoires sont traités (consultez la section « Indicateurs PopulateDirList » de [indicateurs de bits utilisés par les commandes spécifiques](../extensibility/bitflags-used-by-specific-commands.md) pour les valeurs possibles).  
   
 ## <a name="return-value"></a>Valeur de retour  
@@ -77,4 +72,3 @@ SCCRTN SccPopulateDirList(
  [Indicateurs de bits utilisés par des commandes spécifiques](../extensibility/bitflags-used-by-specific-commands.md)   
  [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md)   
  [Codes d’erreur](../extensibility/error-codes.md)
-

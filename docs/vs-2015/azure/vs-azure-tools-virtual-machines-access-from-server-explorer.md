@@ -1,8 +1,8 @@
 ---
-title: L’accès aux Machines virtuelles à partir de l’Explorateur de serveurs | Microsoft Docs
-description: Obtenir une vue d’ensemble de l’affichage créer et gérer des machines virtuelles Azure (VM) dans l’Explorateur de serveurs dans Visual Studio.
+title: Accès aux machines virtuelles Azure à partir de l’Explorateur de serveurs | Microsoft Docs
+description: Obtenez une présentation de l’affichage, de la création et de la gestion des machines virtuelles Azure dans l’Explorateur de serveurs de Visual Studio.
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: eb3afde6-ba90-4308-9ac1-3cc29da4ede0
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,35 +11,35 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: e1410b3dc60ec9689b6582e794aaf10cd13092aa
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 6d6b35218355db686a4154928e5529d213e733d5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51001709"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950731"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>Accès aux machines virtuelles Azure à partir de l’Explorateur de serveurs
 
-Si vous avez des machines virtuelles hébergées par Azure, vous pouvez y accéder dans l’Explorateur de serveurs. Vous devez tout d’abord vous connecter à votre abonnement Azure pour afficher vos services mobiles. Pour vous connecter, ouvrez le menu contextuel du nœud Azure dans l’Explorateur de serveurs, puis choisissez **se connecter à Microsoft Azure**.
+Si vous avez des machines virtuelles hébergées par Azure, vous pouvez y accéder depuis l’Explorateur de serveurs. Vous devez d’abord vous connecter à votre abonnement Azure pour afficher vos services mobiles. Pour vous connecter, ouvrez le menu contextuel du nœud Azure dans l’Explorateur de serveurs, puis choisissez **Se connecter à Microsoft Azure**.
 
-1. Dans Cloud Explorer, choisissez une machine virtuelle, puis la touche F4 pour afficher sa fenêtre de propriétés.
+1. Dans Cloud Explorer, choisissez une machine virtuelle, puis appuyez sur la touche F4 pour afficher sa fenêtre de propriétés.
 
-    Le tableau suivant montre quelles propriétés sont disponibles, mais ils sont en lecture seule. Pour les modifier, utilisez le [Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=525040).
+    Le tableau suivant indique les propriétés disponibles. Toutes les propriétés sont en lecture seule. Utilisez le [portail Azure](http://go.microsoft.com/fwlink/p/?LinkID=525040) pour les changer.
 
-   | Propriété | Description |
+   | Property | Description |
    | --- | --- |
-   | Nom DNS |L’URL avec l’adresse Internet de la machine virtuelle. |
+   | Nom DNS |URL comportant l’adresse Internet de la machine virtuelle. |
    | Environnement |Pour une machine virtuelle, la valeur de cette propriété est toujours Production. |
-   | Name |Le nom de la machine virtuelle. |
-   | Size |La taille de la machine virtuelle, qui reflète la quantité de mémoire et espace disque disponible. Pour plus d’informations, consultez [tailles de Machine virtuelle](https://docs.microsoft.com/azure/cloud-services/cloud-services-sizes-specs). |
-   | Status |Valeurs incluent le démarrage, démarré, l’arrêt, arrêté et extraction de l’état. Si l’extraction de l’état s’affiche, l’état actuel est inconnu. Les valeurs de cette propriété diffèrent des valeurs qui sont utilisés sur le [Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=525040). |
-   | ID d’abonnement |L’ID d’abonnement pour votre compte Azure. Vous pouvez afficher ces informations sur le [portail](http://go.microsoft.com/fwlink/p/?LinkID=525040) en affichant les propriétés d’un abonnement. |
-2. Sélectionnez un nœud de point de terminaison et afficher le **propriétés** fenêtre.
-3. Le tableau suivant décrit les propriétés des points de terminaison disponibles, mais ils sont en lecture seule. Pour ajouter ou modifier les points de terminaison pour un ordinateur virtuel, utilisez le [Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=525040). 
+   | Name |Nom de la machine virtuelle. |
+   | Size |Taille de la machine virtuelle, qui reflète la quantité de mémoire et d’espace disque disponibles. Pour plus d’informations, consultez [Tailles de machines virtuelles](https://docs.microsoft.com/azure/cloud-services/cloud-services-sizes-specs). |
+   | Status |Les valeurs incluent : Démarrage en cours, Démarré, En cours d’arrêt, Arrêté et Extraction de l’état. Si Extraction de l’état s’affiche, l’état actuel est inconnu. Les valeurs de cette propriété ne sont pas les mêmes que celles qui sont utilisées dans le [portail Azure](http://go.microsoft.com/fwlink/p/?LinkID=525040). |
+   | SubscriptionID |ID d’abonnement de votre compte Azure. Vous pouvez obtenir cette information sur le [portail Azure](http://go.microsoft.com/fwlink/p/?LinkID=525040) en affichant les propriétés de l’abonnement. |
+2. Sélectionnez un nœud de point de terminaison, puis ouvrez la fenêtre **Propriétés** .
+3. Le tableau suivant décrit les propriétés des points de terminaison disponibles. Toutes ces propriétés sont en lecture seule. Pour ajouter ou modifier les points de terminaison d’une machine virtuelle, utilisez le [portail Azure](http://go.microsoft.com/fwlink/p/?LinkID=525040). 
 
-   | Propriété | Description |
+   | Property | Description |
    | --- | --- |
-   | Name |Un identificateur pour le point de terminaison. |
-   | Port privé |Le port pour l’accès réseau interne à votre application. |
-   | Protocole |Le protocole utilisé par la couche de transport pour ce point de terminaison, TCP ou UDP. |
-   | Port public |Le port qui est utilisé pour l’accès public à votre application. |
+   | Name |Identificateur du point de terminaison. |
+   | Port privé |Port d’accès réseau interne à votre application. |
+   | Protocole |Protocole utilisé par la couche de transport du point de terminaison (TCP ou UDP). |
+   | Port public |Port utilisé pour l’accès public à votre application. |

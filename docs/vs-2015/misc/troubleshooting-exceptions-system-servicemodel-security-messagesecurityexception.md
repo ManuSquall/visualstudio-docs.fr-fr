@@ -1,14 +1,9 @@
 ---
-title: 'Dépannage des Exceptions : Les System.ServiceModel.Security.MessageSecurityException | Microsoft Docs'
-ms.custom: ''
+title: 'Dépannage des Exceptions : System.ServiceModel.Security.MessageSecurityException | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: troubleshooting
 helpviewer_keywords:
 - System.ServiceModel.Security.MessageSecurityException exception
 - MessageSecurityException exception
@@ -16,15 +11,15 @@ ms.assetid: 61ad69a1-ac50-49de-9a7c-8454a84ec5bd
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e7d13f5cc282026b1590f59180ed7f25312bb926
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b6d63393313097503ed92c8a540d85152b3f8688
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742480"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952793"
 ---
-# <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Dépannage des exceptions : System.ServiceModel.Security.MessageSecurityException
+# <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Dépannage des Exceptions : System.ServiceModel.Security.MessageSecurityException
 Un <xref:System.ServiceModel.Security.MessageSecurityException> exception est levée lorsque [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] détermine qu’un message n’est pas correctement sécurisé ou qu’il a été falsifié. L'erreur se produit le plus fréquemment lorsque les conditions suivantes se vérifient toutes :  
   
 -   Vous utilisez une référence de service WCF via une connexion à distance telle qu'une connexion bureau à distance ou Terminal Services pour communiquer avec un service WCF (.svc) dans un projet de site Web ou d'application Web.  
@@ -35,7 +30,7 @@ Un <xref:System.ServiceModel.Security.MessageSecurityException> exception est le
   
 ## <a name="associated-tips"></a>Conseils associés  
  **Résoudre les problèmes d’authentification NTLM lors de l’utilisation du serveur de développement ASP.Net.**  
- La sécurité de Stimulation/Réponse de Windows NT (NTLM) est généralement désactivée sur le serveur de développement [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] , ce qui permet l'accès anonyme. Par défaut, lorsque vous exécutez une session Terminal Services ou utilisez une connexion à distance, la sécurité NTLM est activée. Lorsque NTLM est activé, toutes les demandes adressées à localhost sont validées par rapport aux informations d'identification de l'utilisateur ou du processus qui a démarré le serveur de développement [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Ceci réduit les menaces pour la sécurité. Toutefois, WCF exécute également sa propre authentification et n'autorise pas un compte non-administrateur à consommer des services WCF.  
+ La sécurité de Stimulation/Réponse de Windows NT (NTLM) est généralement désactivée sur le serveur de développement [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] , ce qui permet l'accès anonyme. Par défaut, lorsque vous exécutez une session Terminal Services ou utilisez une connexion à distance, la sécurité NTLM est activée. Lorsque NTLM est activé, toutes les demandes adressées à localhost sont validées par rapport aux informations d'identification de l'utilisateur ou du processus qui a démarré le serveur de développement [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] . Ceci réduit les menaces pour la sécurité. Toutefois, WCF exécute également sa propre authentification et n'autorise pas un compte non-administrateur à consommer des services WCF.  
   
  Si un utilisateur distant est susceptible d'exécuter le site Web à l'aide du serveur de développement [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] et d'utiliser également un service Web ou WCF, vous pouvez créer une liaison de service personnalisée ou désactiver la sécurité NTLM.  
   
