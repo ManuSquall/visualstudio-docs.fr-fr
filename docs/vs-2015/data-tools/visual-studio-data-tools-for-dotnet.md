@@ -1,29 +1,27 @@
 ---
 title: Outils de données Visual Studio pour .NET | Microsoft Docs
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c3175080-1dfb-4ab8-a460-92dadbb844b4
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 841311af90ddf4bedfb9d055e5764068cdc71632
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: da5578321e9c637b12ffbb253a9c0d4c4f87dfe9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859705"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001573"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Outils de données Visual Studio pour .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio et .NET Framework fournissent une API complète et une prise en charge pour la connexion aux bases de données, modélisation des données en mémoire et afficher les données dans l’interface utilisateur des outils.  Les classes .NET Framework qui fournissent des fonctionnalités d’accès aux données sont appelées [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx). ADO.NET, ainsi que les données des outils dans Visual Studio, a été conçu principalement pour prendre en charge de bases de données relationnelles et XML. De nos jours, de nombreux fournisseurs de base de données NoSQL ou à des tiers, offrent fournisseurs ADO.NET.  
   
- Visual Studio 2015 Update 2 inclut les dernières mises à jour de [SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx), qui permettent la prise en charge des fonctionnalités plus récentes dans Azure [base de données SQL](https://azure.microsoft.com/en-us/services/sql-database/) et [SQL Server 2016](https://www.microsoft.com/en-us/server-cloud/products/sql-server-2016/). [.NET core](https://www.dotnetfoundation.org/netcore) prend en charge ADO.NET, à l’exception des jeux de données et les types associés. Si vous ciblez .NET Core et que vous avez besoin d’une couche de mappage objet-relationnel (ORM), utilisez [Entity Framework Core](https://msdn.microsoft.com/data/ef.aspx).  
+ Visual Studio 2015 Update 2 inclut les dernières mises à jour de [SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx), qui permettent la prise en charge des fonctionnalités plus récentes dans Azure [base de données SQL](https://azure.microsoft.com/services/sql-database/) et [SQL Server 2016](https://www.microsoft.com/sql-server/sql-server-2016). [.NET core](https://www.dotnetfoundation.org/projects?searchquery=dotnet+core&type=project) prend en charge ADO.NET, à l’exception des jeux de données et les types associés. Si vous ciblez .NET Core et que vous avez besoin d’une couche de mappage objet-relationnel (ORM), utilisez [Entity Framework Core](https://msdn.microsoft.com/data/ef.aspx).  
   
  Le diagramme suivant montre une vue simplifiée de l’architecture de base :  
   
@@ -69,10 +67,3 @@ Visual Studio et .NET Framework fournissent une API complète et une prise en ch
   
 ## <a name="see-also"></a>Voir aussi  
  [Accès aux données dans Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
-
-
-
-
-
-
-

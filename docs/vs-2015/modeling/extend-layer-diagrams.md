@@ -1,14 +1,9 @@
 ---
 title: Étendre des diagrammes de couche | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, creating extensions
 - layer models
@@ -16,13 +11,13 @@ ms.assetid: 83fca301-b008-485a-87eb-218050e71451
 caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 20d84c91ef30ae549b8fa59893d439a06467ed33
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 219f850ed73104357766ffc4333da55647fb9d40
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766912"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "59001222"
 ---
 # <a name="extend-layer-diagrams"></a>Extend layer diagrams
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +26,9 @@ Vous pouvez écrire du code pour créer et mettre à jour des diagrammes de couc
   
  Pour plus d’informations sur les diagrammes de couche, consultez :  
   
--   [Informations de référence sur les diagrammes de couche](../modeling/layer-diagrams-reference.md)  
+-   [Diagrammes de couche : Informations de référence](../modeling/layer-diagrams-reference.md)  
   
--   [Diagrammes de couche : recommandations](../modeling/layer-diagrams-guidelines.md)  
+-   [Diagrammes de couche : Recommandations](../modeling/layer-diagrams-guidelines.md)  
   
 -   [Créer des diagrammes de couche à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)  
   
@@ -67,12 +62,9 @@ Vous pouvez écrire du code pour créer et mettre à jour des diagrammes de couc
   
 ## <a name="see-also"></a>Voir aussi  
  [Définir et installer une extension de modélisation](../modeling/define-and-install-a-modeling-extension.md)   
- [Diagrammes de couche : référence](../modeling/layer-diagrams-reference.md)   
- [Diagrammes de couche : instructions](../modeling/layer-diagrams-guidelines.md)   
+ [Diagrammes de couche : Référence](../modeling/layer-diagrams-reference.md)   
+ [Diagrammes de couche : Instructions](../modeling/layer-diagrams-guidelines.md)   
  [Créer des diagrammes de couche à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)   
  [Valider du code avec des diagrammes de couche](../modeling/validate-code-with-layer-diagrams.md)   
  [Générer des fichiers à partir d’un modèle UML](../modeling/generate-files-from-a-uml-model.md)   
  [Ouvrir un modèle UML à l’aide de l’API Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)
-
-
-

@@ -1,29 +1,25 @@
 ---
-title: Ce que&#39;nouveauté d’un contrôle de code Source | Microsoft Docs
-ms.custom: ''
+title: Nouveautés du contrôle de code source
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - what's new [Visual Studio SDK], source control
 - source control [Visual Studio SDK], what's new
 ms.assetid: bcf85418-18fb-4824-9dae-d14bf3d56a77
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9a108acb2ae32b64292cd819c75de4726f067a00
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 27623c22664e9d3c6b651615465e6abe812ea408
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752465"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001489"
 ---
-# <a name="what39s-new-in-source-control"></a>Ce que&#39;nouveauté d’un contrôle de code Source
+# <a name="what39s-new-in-source-control-in-visual-studio-2015"></a>Ce que&#39;nouveauté d’un contrôle de code Source dans Visual Studio 2015
+
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Dans [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] vous pouvez fournir une solution de contrôle de code source profondément intégré en implémentant un VSPackage de contrôle de code source. Cette section décrit les fonctionnalités de contrôle de code source VSPackages et fournit une vue d’ensemble des étapes d’implémentation.  
@@ -56,4 +52,3 @@ Dans [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] vous pouvez fournir une s
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>   
  [Vue d’ensemble](../../extensibility/internals/source-control-integration-overview.md)   
  [Création d’un VSPackage de contrôle de code source](../../extensibility/internals/creating-a-source-control-vspackage.md)
-

@@ -1,14 +1,9 @@
 ---
-title: 'Démarrage rapide : Déboguer du code HTML et CSS | Microsoft Docs'
-ms.custom: ''
+title: 'Démarrage rapide : Déboguer le code HTML et CSS | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.DomExplorer
 dev_langs:
@@ -25,15 +20,15 @@ ms.assetid: 6d156cff-36c6-425a-acf8-e1f02d4f7869
 caps.latest.revision: 104
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 710bafe2383d95358ba06a287a300d9aea7baf66
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3518f691109348cfbb75404e94dde66dccd04efc
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729975"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001534"
 ---
-# <a name="quickstart-debug-html-and-css"></a>Démarrage rapide : déboguer du code HTML et CSS
+# <a name="quickstart-debug-html-and-css"></a>Démarrage rapide : déboguer du code HTML et CSS ;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.png « windows_and_phone_content »)  
@@ -60,7 +55,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 - [Déboguer un contrôle WebView](../debugger/debug-a-webview-control.md)  
   
-  Pour plus d’informations sur les fonctionnalités, telles que l’utilisation de la fenêtre de JavaScript Console et en définissant des points d’arrêt, le débogage de JavaScript, consultez [Guide de démarrage rapide : déboguer le JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) et [déboguer des applications dans Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
+  Pour plus d’informations sur les fonctionnalités, telles que l’utilisation de la fenêtre de JavaScript Console et en définissant des points d’arrêt, le débogage de JavaScript, consultez [Guide de démarrage rapide : Déboguer du code JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) et [déboguer des applications dans Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
 ##  <a name="InspectingDOM"></a> Examen du modèle DOM en direct  
  L’explorateur DOM affiche une vue de la page rendue ; utilisez l’explorateur DOM pour modifier des valeurs et afficher immédiatement les résultats. Cela vous permet de tester les modifications sans arrêter et redémarrer le débogueur. Le code source de votre projet ne change pas quand vous interagissez avec la page à l’aide de cette méthode. Ainsi, quand vous trouvez les corrections de code souhaitées, vous modifiez votre code source.  
@@ -76,7 +71,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 - Inspecter la façon dont les styles CSS ont été appliqués aux éléments de page et effectuer un suivi des règles qui ont été appliquées.  
   
-  Lorsque vous déboguez des applications, vous devez souvent sélectionner des éléments dans l’explorateur DOM. Quand vous sélectionnez un élément, les valeurs qui s’affichent sous les onglets dans la partie droite de l’explorateur DOM sont automatiquement mises à jour pour refléter l’élément sélectionné dans l’explorateur DOM. Ces onglets sont les suivants : **Styles**, **Calculé**, **Disposition**. Les applications Windows Store prennent également en charge les onglets **Événements** et **Modifications** . Pour plus d’informations sur la sélection des éléments, consultez [Selecting elements](#SelectingElements).  
+  Lorsque vous déboguez des applications, vous devez souvent sélectionner des éléments dans l’explorateur DOM. Quand vous sélectionnez un élément, les valeurs qui s’affichent sous les onglets dans la partie droite de l’explorateur DOM sont automatiquement mises à jour pour refléter l’élément sélectionné dans l’explorateur DOM. Voici les onglets : **Styles**, **Computed**, **Layout**. Les applications Windows Store prennent également en charge les onglets **Événements** et **Modifications** . Pour plus d’informations sur la sélection des éléments, consultez [Selecting elements](#SelectingElements).  
   
 > [!TIP]
 >  Si la fenêtre de l’explorateur DOM est fermée, sélectionnez **Déboguer**>**Fenêtres** > **Explorateur DOM** pour la rouvrir. La fenêtre s’ouvre uniquement pendant une session de débogage de script.  
@@ -192,7 +187,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 11. Dans la fenêtre de l’explorateur DOM, sélectionnez l’élément DIV de la section associée à l’ID `"fView"`. Utilisez les touches de direction pour afficher et sélectionner l’élément DIV approprié. (La touche de direction droite vous permet d’afficher les enfants d’un élément.)  
   
-     ![Explorateur DOM](../debugger/media/js-dom-explorer.png "JS_DOM_Explorer")  
+     ![DOM Explorer](../debugger/media/js-dom-explorer.png "JS_DOM_Explorer")  
   
     > [!TIP]
     >  Vous pouvez aussi sélectionner l’élément DIV en bas à gauche de la fenêtre de la console JavaScript en tapant `select(fView)` à l’invite de commandes >> et en appuyant sur Entrée.  
@@ -234,9 +229,9 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
      Sous l’onglet **Disposition** , les valeurs suivantes s’affichent :  
   
-    - pour le simulateur, 320 px (Décalage) et 320 px (Marge) ;  
+    - Pour le simulateur : 320px (décalage) et 320px (marge).  
   
-    - pour l’émulateur Windows Phone, 100 px (Décalage) et 100 px (Marge).  
+    - Pour l’émulateur Windows Phone : 100px (décalage) et 100px (marge).  
   
       L’illustration suivante montre l’apparence de l’onglet **Disposition** si vous utilisez l’émulateur Windows Phone (décalage et marge à 100 px).  
   
@@ -258,7 +253,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 2.  Ouvrez le fichier default.html et modifiez votre code source en définissant la hauteur et la largeur de l’élément DIV `"fView"` sur la valeur 100 %.  
   
-3.  Sélectionnez le bouton **Actualiser l’application Windows** dans la barre d’outils Déboguer (ou appuyez sur F4). Le bouton se présente comme suit : ![bouton d’application Windows Actualiser](../debugger/media/js-refresh.png "JS_Refresh").  
+3.  Sélectionnez le bouton **Actualiser l’application Windows** dans la barre d’outils Déboguer (ou appuyez sur F4). Le bouton se présente comme suit : ![Windows application bouton Actualiser](../debugger/media/js-refresh.png "JS_Refresh").  
   
      Les pages d’application sont rechargées et le simulateur ou l’émulateur Windows Phone s’affiche au premier plan.  
   
@@ -295,11 +290,11 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 - Applications[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] et Windows Phone Store en JavaScript et HTML  
   
-- Internet Explorer 11 s'exécutant sur [!INCLUDE[win81](../includes/win81-md.md)]  
+- Internet Explorer 11 s’exécutant sur [!INCLUDE[win81](../includes/win81-md.md)]  
   
 - Internet Explorer 10 s’exécutant sur [!INCLUDE[win8](../includes/win8-md.md)]  
   
-  Allez [ici](http://go.microsoft.com/fwlink/?LinkID=232448) pour télécharger [!INCLUDE[win8](../includes/win8-md.md)] et Visual Studio.  
+  Allez [ici](https://developer.microsoft.com/windows/downloads/sdk-archive) pour télécharger [!INCLUDE[win8](../includes/win8-md.md)] et Visual Studio.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
@@ -310,8 +305,5 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
  [Déboguer un contrôle WebView](../debugger/debug-a-webview-control.md)   
  [Raccourcis clavier](../debugger/keyboard-shortcuts-html-and-javascript.md)   
  [JavaScript Console commands](../debugger/javascript-console-commands.md)   
- [Déboguer l’exemple de code HTML, CSS et JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
+ [Déboguer un exemple de code HTML, CSS et JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
  [Support technique et accessibilité](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
-
-
-

@@ -1,13 +1,19 @@
 ---
 layout: LandingPage
-title: "Extensibilité de Visual\_Studio"
+title: Extensibilité de Visual Studio
 description: En savoir plus sur l’extensibilité Visual Studio.
 author: gregvanl
 ms.author: gregvanl
 ms.date: 10/31/2018
 ms.topic: landing-page
 ms.workload:
-  - apexprodleads
+- apexprodleads
+ms.openlocfilehash: 613ddebde3a7467dc7e93b9fda7a7880011cda66
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323748"
 ---
 # <a name="visual-studio-extensibility-documentation"></a>Documentation de l’extensibilité Visual Studio
 

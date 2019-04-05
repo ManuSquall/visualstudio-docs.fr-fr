@@ -1,14 +1,9 @@
 ---
 title: Création d’un Windows Forms de contrôle de boîte à outils | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - winforms
 - toolbox
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 371fd4269cee5918bd0d0b623eb49e1f709a311d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 4cdb411abc52cd6a23b9401166fde1de98231ece
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781710"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001384"
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>Création d’un contrôle de boîte à outils Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -213,11 +208,10 @@ Le modèle d’élément de contrôle de boîte à outils Windows Forms qui est 
      Le compteur est remis à **0**.  
   
 ## <a name="next-steps"></a>Étapes suivantes  
- Quand vous générez un contrôle de **boîte à outils** , Visual Studio crée un fichier nommé *nom_projet*.vsix dans le dossier \bin\debug\ de votre projet. Vous pouvez déployer le contrôle en chargeant le fichier .vsix sur un réseau ou un site web. Lorsqu’un utilisateur ouvre le fichier .vsix, le contrôle est installé et ajouté à Visual Studio **boîte à outils** sur l’ordinateur de l’utilisateur. Ou bien, vous pouvez télécharger le fichier .vsix sur le [galerie Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) de site Web afin que les utilisateurs puissent le trouver en naviguant dans le **outils / Extension et mises à jour** boîte de dialogue.  
+ Quand vous générez un contrôle de **boîte à outils** , Visual Studio crée un fichier nommé *nom_projet*.vsix dans le dossier \bin\debug\ de votre projet. Vous pouvez déployer le contrôle en chargeant le fichier .vsix sur un réseau ou un site web. Lorsqu’un utilisateur ouvre le fichier .vsix, le contrôle est installé et ajouté à Visual Studio **boîte à outils** sur l’ordinateur de l’utilisateur. Ou bien, vous pouvez télécharger le fichier .vsix sur le [Visual Studio Marketplace](https://marketplace.visualstudio.com/) de site Web afin que les utilisateurs puissent le trouver en naviguant dans le **outils / Extension et mises à jour** boîte de dialogue.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Extension de la boîte à outils](../misc/extending-the-toolbox.md)   
  [Création d’un contrôle de boîte à outils WPF](../extensibility/creating-a-wpf-toolbox-control.md)   
  [Extension d’autres parties de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)   
  [Concepts de base du développement de contrôles Windows Forms](http://msdn.microsoft.com/library/6277bb81-90f7-4c5b-9f4b-b02bb42dd316)
-

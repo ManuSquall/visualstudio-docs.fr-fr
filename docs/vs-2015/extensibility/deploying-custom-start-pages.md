@@ -1,27 +1,22 @@
 ---
 title: Déploiement de Pages de démarrage personnalisées | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - package start page
 - deploy start page
 ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5e788f9bb1ca0333fd20237103cf6bce136af2e0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: dcf653654005b75a889bcafd668fbb9313572ff2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795112"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001360"
 ---
 # <a name="deploying-custom-start-pages"></a>Déploiement de pages de démarrage personnalisées
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ Vous pouvez déployer les Pages de démarrage personnalisées à l’aide de dé
   
 - Vous pouvez placer le fichier .vsix sur un partage réseau ou sur un site Web public. Quand un utilisateur ouvre le fichier, la Page de démarrage est automatiquement installée.  
   
-- Vous pouvez télécharger le fichier .vsix sur le [galerie Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) afin que les utilisateurs peuvent l’installer à l’aide de site Web **Gestionnaire d’extensions**.  
+- Vous pouvez télécharger le fichier .vsix sur le [Visual Studio Marketplace](https://marketplace.visualstudio.com/) afin que les utilisateurs peuvent l’installer à l’aide de site Web **Gestionnaire d’extensions**.  
   
   Le modèle de projet Page de démarrage crée une copie de la Page de démarrage de Visual Studio par défaut afin que vous puissiez modifier la copie et conserver l’original.  
   
@@ -46,7 +41,7 @@ Vous pouvez déployer les Pages de démarrage personnalisées à l’aide de dé
   
 - En ajoutant vos fichiers de Page de démarrage personnalisées à un projet VSIX vide. Pour plus d’informations, consultez [modèle de projet VSIX](../extensibility/vsix-project-template.md).  
   
-- En créant manuellement un fichier .vsix. Pour plus d’informations, consultez [Comment : manuellement un Package d’Extension (déploiement VSIX)](../misc/how-to-manually-package-an-extension-vsix-deployment.md).  
+- En créant manuellement un fichier .vsix. Pour plus d'informations, voir [Procédure : Manuellement un Package d’Extension (déploiement VSIX)](../misc/how-to-manually-package-an-extension-vsix-deployment.md).  
   
   Pour Visual Studio de reconnaître une Page de démarrage, le `Content Element` du manifeste VSIX doit contenir un `CustomExtension Element` qui a le `Type` attribut la valeur `"StartPage"`. Une extension de la Page de démarrage qui a été installée à l’aide de déploiement VSIX s’affiche dans le **personnaliser la Page de démarrage** liste sur le **démarrage** page d’options en tant que **[Extension installée]** *Nom de l’extension*.  
   
@@ -76,9 +71,9 @@ Vous pouvez déployer les Pages de démarrage personnalisées à l’aide de dé
   
 4.  Modifier le .pkgdef pour définir la page de démarrage par défaut sous HKLM en ajoutant le code suivant, où *MyStartPage.xaml* est le nom du fichier .xaml qui contient votre Page de démarrage.  
   
-     [$RootKey$ \StartPage\Default]  
+     [$RootKey$\StartPage\Default]  
   
-     « Uri « = » $PackageFolder$\\*MyStartPage.xaml*»  
+     "Uri"="$PackageFolder$\\*MyStartPage.xaml*"  
   
      Ce code indique à Visual debout à rechercher dans le nouvel emplacement de la Page de démarrage.  
   
@@ -98,4 +93,3 @@ Vous pouvez déployer les Pages de démarrage personnalisées à l’aide de dé
 ## <a name="see-also"></a>Voir aussi  
  [Personnalisation de la Page de démarrage](../ide/customizing-the-start-page-for-visual-studio.md)   
  [Ajout d’un contrôle utilisateur à la page de démarrage](../extensibility/adding-user-control-to-the-start-page.md)
-

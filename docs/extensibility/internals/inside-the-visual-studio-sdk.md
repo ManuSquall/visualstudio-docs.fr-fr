@@ -12,14 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb7f2ee59c9b02e7c4ff85c36bc0ea5a67e962a5
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 078bf457c798c0be9ac56aad1859c6750881922a
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2019
+ms.lasthandoff: 04/04/2019
 ms.locfileid: "57870271"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Dans le kit SDK Visual Studio
+
 Cette section fournit des informations détaillées sur les extensions de Visual Studio, y compris l’architecture de Visual Studio, composants, services, schémas, utilitaires et autres.
 
 ## <a name="extensibility-architecture"></a>Architecture d’extensibilité
@@ -83,11 +84,12 @@ Cette section fournit des informations détaillées sur les extensions de Visual
  Au cœur d’un service de langage sont un analyseur et un analyseur. Un scanneur (ou un analyseur lexical) divise un fichier source en éléments sont appelés jetons, et un analyseur établit les relations entre ces jetons. Lorsque vous créez un service de langage, vous devez implémenter l’analyseur et le moteur d’analyse afin que Visual Studio puisse comprendre les jetons et la grammaire du langage. Vous pouvez créer des services de langage managé ou non managé. Pour plus d’informations, consultez [extensibilité du Service de langage hérité](../../extensibility/internals/legacy-language-service-extensibility.md).
 
 ## <a name="projects"></a>Projets
- Dans Visual Studio, les projets sont les conteneurs que les développeurs utilisent pour organiser et à générer le code source et autres ressources. Les projets permettent d’organiser, générer, déboguer et déployer le code source, des références aux services Web et bases de données et d’autres ressources. Les VSPackages peuvent étendre le système de projet Visual Studio en fournissant des types de projets, les sous-types de projet et les outils personnalisés.
 
- Les projets peuvent également être collectées dans une solution, qui est un regroupement d’un ou plusieurs projets qui fonctionnent ensemble pour créer une application. Informations d’état et de projet qui se rapportent à la solution sont stockées dans deux fichiers de solution, le fichier textuel solution (.sln) et le fichier solution binaire des options (.suo) utilisateur. Ces fichiers sont similaires pour les fichiers de groupe (.vbg) qui ont été utilisés dans les versions antérieures de [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], ainsi que l’espace de travail (.dsw) et l’utilisateur options (.opt) les fichiers qui ont été utilisés dans les versions antérieures de [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)].
+Dans Visual Studio, les projets sont les conteneurs que les développeurs utilisent pour organiser et à générer le code source et autres ressources. Les projets permettent d’organiser, générer, déboguer et déployer le code source, des références aux services Web et bases de données et d’autres ressources. Les VSPackages peuvent étendre le système de projet Visual Studio en fournissant des types de projets, les sous-types de projet et les outils personnalisés.
 
- Pour plus d’informations, consultez [projets](../../extensibility/internals/projects.md) et [Solutions](../../extensibility/internals/solutions.md).
+Les projets peuvent également être regroupées dans un *solution*, qui est un regroupement d’un ou plusieurs projets qui fonctionnent ensemble pour créer une application. Informations d’état et de projet qui se rapportent à la solution sont stockées dans deux fichiers de solution, basée sur le texte [fichier solution (.sln)](solution-dot-sln-file.md) et le fichier binaire [fichier des options (.suo) solution utilisateur](solution-user-options-dot-suo-file.md). Ces fichiers sont similaires aux fichiers de groupe (.vbg) qui ont été utilisés dans les versions antérieures de Visual Basic et l’espace de travail (.dsw) et aux fichiers (.opt) des options utilisateur qui ont été utilisés dans les versions antérieures de C++.
+
+Pour plus d’informations, consultez [projets](../../extensibility/internals/projects.md) et [Solutions](../../extensibility/internals/solutions-overview.md).
 
 ## <a name="project-and-item-templates"></a>Modèles de projet et d’élément
  Visual Studio inclut des modèles de projet prédéfinis et des modèles d’élément de projet. Vous pouvez également rendre vos propres modèles ou acquérir des modèles à partir de la Communauté et puis de les intégrer à Visual Studio. Le [MSDN Code Gallery](https://code.msdn.microsoft.com/site/search?query=visual%20studio) est l’endroit idéal pour les modèles et les extensions.
