@@ -1,8 +1,8 @@
 ---
 title: Configurer les informations d’authentification nommées | Microsoft Docs
-description: Apprenez à fournir des informations d’identification que Visual Studio peut utiliser pour authentifier les demandes vers Azure, donc vous pouvez publier une application sur Azure à partir de Visual Studio ou surveiller un service cloud existant.
+description: Découvrez comment fournir des informations d’identification que Visual Studio pourra utiliser pour authentifier les demandes effectuées auprès d’Azure, afin que vous puissiez publier une application dans Azure à partir de Visual Studio ou surveiller un service cloud existant.
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 61570907-42a1-40e8-bcd6-952b21a55786
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,35 +11,35 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 6f41ea2072ef5791735fac61205f68151d5a9f7e
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 23abafcae0e777216a8880adc05ecac38d5b3f0f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51001989"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951880"
 ---
 # <a name="set-up-named-authentication-credentials"></a>Configurer des informations d’identification d’authentification nommées
 
-Pour publier une application dans Azure ou pour surveiller un service cloud existant, Visual Studio requiert les informations d’identification pour authentifier les demandes vers Azure, à savoir votre ID d’abonnement Azure et un certificat X.509 v3 valide avec une clé d’au moins 2 048 bits. Vous fournissez ces informations d’identification via une des méthodes suivantes :
+Pour publier une application sur Azure ou pour surveiller un service cloud existant, Visual Studio requiert des informations d'identification pour authentifier les demandes auprès d'Azure, à savoir votre ID d'abonnement Azure et un certificat X.509 v3 valide avec une clé d'au moins 2048 bits. Vous pouvez fournir ces informations d'identification à l’aide de l’une des méthodes suivantes :
 
-- Dans Visual Studio, sélectionnez **Affichage > Explorateur de serveurs**, avec le bouton droit le **Azure** nœud, sélectionnez **se connecter à abonnement Microsoft Azure**et s’y connecter.
-- Créer un fichier d’abonnement (`.publishsettings`), qui contient une clé publique pour le certificat. Le fichier d’abonnement peut contenir des informations d’identification pour plusieurs abonnements, comme décrit dans cet article.
+- Dans Visual Studio, sélectionnez **Affichage > Explorateur de serveurs**, cliquez avec le bouton droit sur le nœud **Azure**, sélectionnez **Se connecter à un abonnement Microsoft Azure**, puis connectez-vous.
+- Créez un fichier d'abonnement (`.publishsettings`), contenant une clé publique pour le certificat. Le fichier d’abonnement peut contenir des informations d’identification pour plusieurs abonnements, comme décrit dans cet article.
 
-Remarque : ces informations d’identification sont différentes des informations d’identification utilisées pour authentifier les demandes aux services de stockage Azure.
+Remarque: ces informations d'identification sont différentes de celles utilisées pour authentifier les demandes auprès des services de stockage Azure.
 
-## <a name="create-a-subscription-file"></a>Créer un fichier d’abonnement
+## <a name="create-a-subscription-file"></a>Création d’un fichier d'abonnement
 
-Dans l’Explorateur de serveurs, cliquez sur le **Azure** nœud et sélectionnez **gérer et filtrer les abonnements**. Puis sélectionnez le **certificats** onglet, puis effectuez l’une des actions suivantes :
+Dans l’Explorateur de serveurs, cliquez avec le bouton droit sur le nœud **Azure**, puis sélectionnez **Gérer et filtrer les abonnements**. Sélectionnez ensuite l’onglet **Certificats**, puis effectuez une des actions suivantes :
 
-- Sélectionnez **importation** pour ouvrir le **importer les abonnements Microsoft Azure** boîte de dialogue. Sélectionnez le **télécharger le fichier abonnement** lien et dans le navigateur, enregistrez le fichier téléchargé dans un emplacement temporaire. Dans la boîte de dialogue, accédez à l’emplacement de téléchargement et puis l’importer pour une utilisation dans l’authentification.
-- Choisissez un abonnement actif, puis sélectionnez **modifier**, qui ouvre une boîte de dialogue dans laquelle vous modifier un abonnement existant pour une utilisation dans l’authentification.
-- Sélectionnez **New** pour ouvrir le **nouvel abonnement** boîte de dialogue zone et fournissez les informations requises. Pour télécharger le certificat à votre cloud service sont indiquées dans la boîte de dialogue, connectez-vous au portail Azure, accédez à votre service cloud, sélectionnez **Paramètres > certificats de gestion**, sélectionnez **télécharger**, puis Spécifiez le chemin d’accès à la `.cer` fichier.
+- Sélectionnez **Importer** pour ouvrir la boîte de dialogue **Importer les abonnements Microsoft Azure**. Sélectionnez le lien **Télécharger le fichier d'abonnement** puis, dans le navigateur, enregistrez le fichier téléchargé dans un emplacement temporaire. Retournez dans la boîte de dialogue, accédez au répertoire d'installation puis importez le fichier afin de l'utiliser pour l'authentification.
+- Choisissez un abonnement actif puis sélectionnez **Modifier** afin d'ouvrir une boîte de dialogue dans laquelle vous pouvez modifier un abonnement existant à utiliser pour l'authentification.
+- Sélectionnez **Nouveau** pour ouvrir la boîte de dialogue **Nouvel abonnement** puis fournissez les informations requises. Pour télécharger le certificat sur votre service cloud, connectez-vous au portail Azure, accédez à votre service cloud, sélectionnez **Paramètres > Certificats de gestion**, sélectionnez **Charger**, puis spécifiez le chemin d'accès au fichier `.cer`.
 
-Si vous souhaitez créer vous-même un certificat, vous pouvez consulter les instructions fournies dans [création et téléchargement d’un certificat de gestion pour Azure](https://msdn.microsoft.com/library/windowsazure/gg551722.aspx) , puis charger manuellement le certificat à la [Azure portal](https://portal.azure.com/).
+Si vous souhaitez créer vous-même un certificat, vous pouvez consulter les instructions fournies dans [Créer et charger un certificat de gestion pour Azure](https://msdn.microsoft.com/library/windowsazure/gg551722.aspx), puis charger manuellement le certificat sur le [portail Azure](https://portal.azure.com/).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [Vue d’ensemble des applications Web](https://docs.microsoft.com/azure/app-service/)
-- [Déployer votre application dans Azure App Service](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git) 
-- [Déployer WebJobs à l’aide de Visual Studio](https://docs.microsoft.com/azure/app-service/websites-dotnet-deploy-webjobs)
-- [Créer et déployer un service cloud](https://docs.microsoft.com/azure/cloud-services/cloud-services-how-to-create-deploy-portal)
+- [Vue d’ensemble de Web Apps](https://docs.microsoft.com/azure/app-service/)
+- [Déploiement de votre application dans Azure App Service](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git) 
+- [Déployer WebJobs avec Visual Studio](https://docs.microsoft.com/azure/app-service/websites-dotnet-deploy-webjobs)
+- [Création et déploiement d’un service cloud](https://docs.microsoft.com/azure/cloud-services/cloud-services-how-to-create-deploy-portal)

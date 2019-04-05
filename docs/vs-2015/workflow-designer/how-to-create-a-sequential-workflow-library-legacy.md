@@ -1,11 +1,8 @@
 ---
-title: 'Comment : créer une bibliothèque de workflows séquentiels (hérité) | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Créer une bibliothèque de workflows séquentiels (hérité) | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - sequential workflows, creating library
@@ -16,15 +13,15 @@ ms.assetid: 9433ccf3-1eab-4d53-90ff-2e7b2341676c
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 1a2f1801392c1edecec2fa26ec35c9d1728bc1c7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1f70fc8e9e1c139226dd90ce9d63abae38b9397e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194582"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58947472"
 ---
-# <a name="how-to-create-a-sequential-workflow-library-legacy"></a>Procédure : créer une bibliothèque de workflows séquentiels (héritée)
+# <a name="how-to-create-a-sequential-workflow-library-legacy"></a>Procédure : Créer une bibliothèque de workflows séquentiels (héritée)
 Suivez ces étapes pour créer un projet de bibliothèque de workflows séquentiels à l'aide du [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité fourni par [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
 ### <a name="to-create-a-sequential-workflow-library-project"></a>Pour créer un projet de bibliothèque de workflow séquentiel  
@@ -54,4 +51,4 @@ Suivez ces étapes pour créer un projet de bibliothèque de workflows séquenti
   
 ## <a name="see-also"></a>Voir aussi  
  [Création de projets de flux de travail hérités](../workflow-designer/creating-legacy-workflow-projects.md)   
- [Styles de création de flux de travail](http://msdn.microsoft.com/en-us/aacf4ec6-da05-4974-958a-974769dda739)
+ [Styles de création de flux de travail](http://msdn.microsoft.com/aacf4ec6-da05-4974-958a-974769dda739)

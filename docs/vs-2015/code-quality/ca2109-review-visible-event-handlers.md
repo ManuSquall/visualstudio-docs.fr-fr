@@ -1,14 +1,9 @@
 ---
-title: 'CA2109 : Passez en revue les gestionnaires d’événements visibles | Microsoft Docs'
-ms.custom: ''
+title: 'CA2109 : Passez en revue les gestionnaires d’événements visibles | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2109
 - ReviewVisibleEventHandlers
@@ -20,14 +15,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 328df28441fa5c96fee40baed11a54c3044542b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 45e741882e8da2b5ed419540e40f3be40278d540
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880375"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950735"
 ---
-# <a name="ca2109-review-visible-event-handlers"></a>CA2109 : Passez en revue les gestionnaires d’événements visibles
+# <a name="ca2109-review-visible-event-handlers"></a>CA2109 : Passez en revue les gestionnaires d'événements visibles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -38,7 +33,7 @@ ms.locfileid: "49880375"
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Une méthode de gestion d'événements publique ou protégée a été détectée.
+ Une méthode de gestion d’événements publique ou protégée a été détectée.
 
 ## <a name="rule-description"></a>Description de la règle
  Une méthode visible de l’extérieur de la gestion des événements présente un problème de sécurité qui requiert une révision.
@@ -70,7 +65,4 @@ ms.locfileid: "49880375"
 
 ## <a name="see-also"></a>Voir aussi
  <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName> <xref:System.EventArgs?displayProperty=fullName>
- [Demandes de sécurité](http://msdn.microsoft.com/en-us/324c14f8-54ff-494d-9fd1-bfd20962c8ba)
-
-
-
+ [Demandes de sécurité](http://msdn.microsoft.com/324c14f8-54ff-494d-9fd1-bfd20962c8ba)

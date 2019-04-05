@@ -1,14 +1,9 @@
 ---
-title: 'Comment : personnaliser le dictionnaire d’analyse du Code | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Personnaliser le dictionnaire d’analyse du Code | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis dictionary
 - custom dictionary, code analysis
@@ -18,14 +13,14 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8dcc182664832775f2aa3878fb3320e01d3901dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e90b92418d9416139e814bd16dc0d655977c0b27
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840101"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951515"
 ---
-# <a name="how-to-customize-the-code-analysis-dictionary"></a>Comment : personnaliser le dictionnaire d’analyse du code
+# <a name="how-to-customize-the-code-analysis-dictionary"></a>Procédure : Personnaliser le dictionnaire d’analyse du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Analyse du code utilise un dictionnaire pour vérifier des identificateurs dans votre code pour les erreurs dans l’orthographe, grammaire cas et autres conventions d’affectation de noms de la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] instructions. Vous pouvez créer un fichier Xml de dictionnaire personnalisé pour ajouter, supprimer ou modifier des termes, abréviations et acronymes au dictionnaire intégré.  
@@ -47,10 +42,10 @@ Analyse du code utilise un dictionnaire pour vérifier des identificateurs dans 
             <Word></Word>  
          </Recognized>  
          <Deprecated>  
-            <Term PreferredAlternate=""></Term>  
+            <Term PreferredAlternate=""></Term>  
          </Deprecated>  
          <Compound>  
-            <Term CompoundAlternate=""></Term>  
+            <Term CompoundAlternate=""></Term>  
          </Compound>  
          <DiscreteExceptions>  
             <Term></Term>  
@@ -71,13 +66,13 @@ Analyse du code utilise un dictionnaire pour vérifier des identificateurs dans 
   
 - [Dictionnaire/mots/non reconnue/Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)  
   
-- [Dictionnaire/mots/déconseillé/terme [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)  
+- [Dictionary/Words/Deprecated/Term[@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)  
   
-- [Dictionnaire/mots/Compound/Term [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)  
+- [Dictionary/Words/Compound/Term[@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)  
   
-- [Dictionnaire/mots/DiscreteExceptions/Term](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)  
+- [Dictionary/Words/DiscreteExceptions/Term](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)  
   
-- [Dictionnaire/acronymes/CasingExceptions/acronyme](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)  
+- [Dictionary/Acronyms/CasingExceptions/Acronym](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)  
   
 ###  <a name="BKMK_DictionaryWordsRecognizedWord"></a> Dictionnaire/mots/reconnu/Word  
  Pour inclure un terme dans la liste de termes que l’analyse du code identifie comme correctement orthographié, ajoutez ce terme comme texte interne d’un élément de dictionnaire/mots/Recognized/Word. Termes du contrat dans les éléments du dictionnaire/mots/Recognized/Word ne respectent pas la casse.  
@@ -100,15 +95,15 @@ Analyse du code utilise un dictionnaire pour vérifier des identificateurs dans 
   
  Termes mots/dictionnaire/Recognized nœuds sont appliqués aux règles d’analyse du code suivantes :  
   
--   [CA1701 : La casse des mots composés de chaînes de ressources doit être correcte](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
+-   [CA1701 : Mots composés de chaînes de ressources doivent être correcte](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
   
--   [CA1702 : La casse des mots composés doit être correcte](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
+-   [CA1702 : Mots composés doivent être correcte](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
   
--   [CA1703 : Les chaînes de ressources doit être orthographiées correctement](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)  
+-   [CA1703 : Chaînes de ressources doivent être correcte](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)  
   
 -   [CA1704 : Les identificateurs doivent être correctement orthographiés](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)  
   
--   [CA1709 : La casse des identificateurs doit être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
+-   [CA1709 : Identificateurs doivent être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
 -   [CA1726 : Utilisez les termes préférés](../code-quality/ca1726-use-preferred-terms.md)  
   
@@ -135,15 +130,15 @@ Analyse du code utilise un dictionnaire pour vérifier des identificateurs dans 
   
  Termes dans le nœud de dictionnaire/mots/non reconnu sont appliqués aux règles d’analyse du code suivantes :  
   
--   [CA1701 : La casse des mots composés de chaînes de ressources doit être correcte](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
+-   [CA1701 : Mots composés de chaînes de ressources doivent être correcte](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
   
--   [CA1702 : La casse des mots composés doit être correcte](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
+-   [CA1702 : Mots composés doivent être correcte](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
   
--   [CA1703 : Les chaînes de ressources doit être orthographiées correctement](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)  
+-   [CA1703 : Chaînes de ressources doivent être correcte](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)  
   
 -   [CA1704 : Les identificateurs doivent être correctement orthographiés](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)  
   
--   [CA1709 : La casse des identificateurs doit être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
+-   [CA1709 : Identificateurs doivent être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
 -   [CA1726 : Utilisez les termes préférés](../code-quality/ca1726-use-preferred-terms.md)  
   
@@ -176,11 +171,11 @@ Analyse du code utilise un dictionnaire pour vérifier des identificateurs dans 
   
  Termes du noeud Dictionary/Words/Deprecated sont appliqués aux règles d’analyse de code suivant :  
   
--   [CA1701 : La casse des mots composés de chaînes de ressources doit être correcte](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
+-   [CA1701 : Mots composés de chaînes de ressources doivent être correcte](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
   
--   [CA1702 : La casse des mots composés doit être correcte](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
+-   [CA1702 : Mots composés doivent être correcte](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
   
--   [CA1703 : Les chaînes de ressources doit être orthographiées correctement](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)  
+-   [CA1703 : Chaînes de ressources doivent être correcte](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)  
   
 -   [CA1704 : Les identificateurs doivent être correctement orthographiés](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)  
   
@@ -211,11 +206,11 @@ Analyse du code utilise un dictionnaire pour vérifier des identificateurs dans 
   
  Termes dans le nœud de dictionnaire/mots/composés sont appliqués aux règles d’analyse du code suivantes :  
   
--   [CA1701 : La casse des mots composés de chaînes de ressources doit être correcte](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
+-   [CA1701 : Mots composés de chaînes de ressources doivent être correcte](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
   
--   [CA1702 : La casse des mots composés doit être correcte](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
+-   [CA1702 : Mots composés doivent être correcte](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
   
--   [CA1703 : Les chaînes de ressources doit être orthographiées correctement](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)  
+-   [CA1703 : Chaînes de ressources doivent être correcte](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)  
   
 -   [CA1704 : Les identificateurs doivent être correctement orthographiés](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)  
   
@@ -240,9 +235,9 @@ Analyse du code utilise un dictionnaire pour vérifier des identificateurs dans 
   
  Termes dans le nœud de mots/dictionnaire/DiscreteExceptions sont appliqués aux règles d’analyse du code suivantes :  
   
--   [CA1701 : La casse des mots composés de chaînes de ressources doit être correcte](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
+-   [CA1701 : Mots composés de chaînes de ressources doivent être correcte](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
   
--   [CA1702 : La casse des mots composés doit être correcte](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
+-   [CA1702 : Mots composés doivent être correcte](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
   
 ###  <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a> Dictionnaire/acronymes/CasingExceptions/acronyme  
  Pour inclure un acronyme dans la liste des termes que l’analyse du code identifie comme correctement orthographié et indiquer le fonctionnement des règles de l’acronyme lorsque le terme est vérifié par la casse pour les mots composés, ajoutez ce terme comme texte interne d’un dictionnaire/acronymes/CasingExceptions / Élément Acronym. L’acronyme dans l’élément de dictionnaire/acronymes/CasingExceptions/acronyme respecte la casse.  
@@ -253,7 +248,7 @@ Analyse du code utilise un dictionnaire pour vérifier des identificateurs dans 
 <Dictionary>  
       <Acronyms>  
          <CasingExceptions>  
-            <Acronym>NESW</Acronym>   <!-- North East South West -->  
+            <Acronym>NESW</Acronym>   <!-- North East South West -->  
             ...  
          </CasingExceptions>  
          ...  
@@ -265,7 +260,7 @@ Analyse du code utilise un dictionnaire pour vérifier des identificateurs dans 
   
  Termes dans le nœud d’acronymes/dictionnaire/CasingExceptions sont appliqués aux règles d’analyse du code suivantes :  
   
--   [CA1709 : La casse des identificateurs doit être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
+-   [CA1709 : Identificateurs doivent être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
 ##  <a name="BKMK_ToApplyACustomDictionaryToAProject"></a> Pour appliquer un dictionnaire personnalisé à un projet  
   
@@ -280,6 +275,3 @@ Analyse du code utilise un dictionnaire pour vérifier des identificateurs dans 
 5.  À partir de la **Action de génération** liste, sélectionnez **CodeAnalysisDictionary**.  
   
 6.  À partir de la **Copy to Output Directory** liste, sélectionnez **ne copiez pas**.
-
-
-

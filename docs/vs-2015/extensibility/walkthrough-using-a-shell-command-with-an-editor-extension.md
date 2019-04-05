@@ -1,28 +1,23 @@
 ---
-title: 'Procédure pas à pas : En utilisant une commande de l’interpréteur de commandes avec une Extension de l’éditeur | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure pas à pas : À l’aide d’une invite de commandes avec une Extension de l’éditeur | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - add a menu command
 ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
 caps.latest.revision: 47
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e64d50dcd56f1421e4ffe1ab33b5396c436eeeda
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b898273defe7da4cf8d082b01089c8d6476e8357
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773039"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938392"
 ---
-# <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>Procédure pas à pas : utilisation d’une commande Shell avec une extension de l’éditeur
+# <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>Procédure pas à pas : Utilisation d’une commande Shell avec une extension de l’éditeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 À partir d’un VSPackage, vous pouvez ajouter des fonctionnalités telles que les commandes de menu à l’éditeur. Cette procédure pas à pas montre comment ajouter un ornement à un affichage de texte dans l’éditeur en appelant une commande de menu.  
@@ -724,10 +719,9 @@ ms.locfileid: "51773039"
   
 3.  Sur le **outils** menu, cliquez sur **appeler un ornement ajouter**. Une info-bulle doit être affichée sur le côté droit de la fenêtre texte et doit contenir du texte qui ressemble au texte suivant.  
   
-     Votre_nom_utilisateur  
+     YourUserName  
   
      Fourscore...  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : Liaison d’un type de contenu à une extension de nom de fichier](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [Procédure pas à pas : Liaison d’un Type de contenu à une Extension de nom de fichier](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

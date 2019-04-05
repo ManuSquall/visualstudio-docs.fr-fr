@@ -1,27 +1,22 @@
 ---
 title: L’inscription de gestionnaires de commandes d’Assembly d’interopérabilité | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - interop assemblies, command handlers
 - command handling with interop assemblies, registering
 ms.assetid: 303cd399-e29d-4ea1-8abe-5e0b59c12a0c
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a087b5952b930145cd9f620a0eebeeee5d947149
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 5d768a8024755fcee10413495c48da9e20456751
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778590"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953170"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Inscription des gestionnaires de commandes d’assemblys d’interopérabilité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Un VSPackage doit inscrire avec [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 
   
  Managed Package Framework (MPF) fournit cette fonctionnalité via le <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> classe.  
   
- [Référence de Format de Table de la commande](http://msdn.microsoft.com/en-us/09e9c6ef-9863-48de-9483-d45b7b7c798f) ressources se trouvent dans la DLL de l’interface utilisateur de satellites non managé.  
+ [Référence de Format de Table de la commande](http://msdn.microsoft.com/09e9c6ef-9863-48de-9483-d45b7b7c798f) ressources se trouvent dans la DLL de l’interface utilisateur de satellites non managé.  
   
 ## <a name="command-handler-registration-of-a-vspackage"></a>Inscription du Gestionnaire de commande d’un VSPackage  
  Un VSPackage agissant comme un gestionnaire pour l’interface utilisateur (IU)-en fonction des commandes nécessite une entrée de Registre nommée d’après le VSPackage `GUID`. Cette entrée de Registre spécifie l’emplacement du fichier de ressources de l’interface utilisateur du VSPackage et de la ressource de menu dans ce fichier. L’entrée de Registre elle-même se trouve sous HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<Version >* \Menus, où  *\<Version >* est la version de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], par exemple 9.0.  
@@ -76,4 +71,3 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\9.0Exp\
 ## <a name="see-also"></a>Voir aussi  
  [Comment VSPackages ajoute des éléments d’Interface utilisateur](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Commandes et menus utilisant des assemblys d’interopérabilité](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)
-

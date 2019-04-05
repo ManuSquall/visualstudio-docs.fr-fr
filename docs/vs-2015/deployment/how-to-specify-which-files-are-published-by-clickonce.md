@@ -1,14 +1,9 @@
 ---
-title: 'Comment : spécifier les fichiers publiés par ClickOnce | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Spécifier les fichiers publiés par ClickOnce | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.BaseProvider.Dialog.File
 dev_langs:
@@ -22,15 +17,15 @@ ms.assetid: 579c134a-d50f-4e0c-8e05-2a4ff654896a
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 2a8d408aa7d7ae04d5ed83c2687ca34ce79e404e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f80dc31d2b572d54d0973d98f85f8538b1a805ae
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268318"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950225"
 ---
-# <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Comment : spécifier les fichiers publiés via ClickOnce
+# <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Procédure : Spécifier les fichiers publiés par ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Lorsque vous publiez un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] fichiers d’application, sans code dans le projet sont déployés avec l’application. Dans certains cas, vous ne pouvez pas souhaitez ou devez publier certains fichiers, ou vous souhaiterez installer certains fichiers selon des conditions. Visual Studio fournit les fonctionnalités pour exclure des fichiers, marquer des fichiers comme fichiers de données ou des conditions préalables et créer des groupes de fichiers pour une installation conditionnelle.  
@@ -45,7 +40,7 @@ Lorsque vous publiez un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] f
   
 -   Fichiers de données tels que les fichiers de base de données SQL (.mdf et .mdb) et les fichiers XML seront marqués en tant que fichiers de données par défaut.  
   
--   Références aux assemblys (fichiers .dll) sont désignées comme suit quand vous ajoutez la référence : si **copie locale** est **False**, il est marqué par défaut comme assembly requis (**(configuration requise Auto)**) qui doit être présent dans le GAC avant que l’application est installée. Si **copie locale** est **True**, l’assembly est marqué par défaut comme un assembly d’application (**inclure (automatique)**) et sera copié dans le dossier d’application lors de l’installation. Une référence COM s’affichera dans le **fichiers d’Application** boîte de dialogue case (comme un fichier .ocx) uniquement si son **isolé** propriété est définie sur **True**. Par défaut, il sera inclus.  
+-   Références aux assemblys (fichiers .dll) sont désignées comme suit quand vous ajoutez la référence : Si **copie locale** est **False**, il est marqué par défaut comme assembly requis (**condition préalable (Auto)**) qui doit être présent dans le GAC avant que l’application est installée. Si **copie locale** est **True**, l’assembly est marqué par défaut comme un assembly d’application (**inclure (automatique)**) et sera copié dans le dossier d’application lors de l’installation. Une référence COM s’affichera dans le **fichiers d’Application** boîte de dialogue case (comme un fichier .ocx) uniquement si son **isolé** propriété est définie sur **True**. Par défaut, il sera inclus.  
   
 ### <a name="to-add-files-to-the-application-files-dialog-box"></a>Pour ajouter des fichiers à l’Application Files Dialog Box  
   
@@ -57,7 +52,7 @@ Lorsque vous publiez un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] f
   
 1.  Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
   
-2.  Cliquez sur le **publier** onglet.  
+2.  Cliquez sur l’onglet **Publier**.  
   
 3.  Cliquez sur le **fichiers d’Application** bouton pour ouvrir la **fichiers d’Application** boîte de dialogue.  
   
@@ -69,7 +64,7 @@ Lorsque vous publiez un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] f
   
 1.  Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
   
-2.  Cliquez sur le **publier** onglet.  
+2.  Cliquez sur l’onglet **Publier**.  
   
 3.  Cliquez sur le **fichiers d’Application** bouton pour ouvrir la **fichiers d’Application** boîte de dialogue.  
   
@@ -81,7 +76,7 @@ Lorsque vous publiez un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] f
   
 1.  Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
   
-2.  Cliquez sur le **publier** onglet.  
+2.  Cliquez sur l’onglet **Publier**.  
   
 3.  Cliquez sur le **fichiers d’Application** bouton pour ouvrir la **fichiers d’Application** boîte de dialogue.  
   
@@ -93,7 +88,7 @@ Lorsque vous publiez un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] f
   
 1.  Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
   
-2.  Cliquez sur le **publier** onglet.  
+2.  Cliquez sur l’onglet **Publier**.  
   
 3.  Cliquez sur le **fichiers d’Application** bouton pour ouvrir la **fichiers d’Application** boîte de dialogue.  
   
@@ -110,7 +105,7 @@ Lorsque vous publiez un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] f
   
 1.  Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
   
-2.  Cliquez sur le **publier** onglet.  
+2.  Cliquez sur l’onglet **Publier**.  
   
 3.  Cliquez sur le **fichiers d’Application** bouton pour ouvrir la **fichiers d’Application** boîte de dialogue.  
   
@@ -124,6 +119,3 @@ Lorsque vous publiez un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] f
 ## <a name="see-also"></a>Voir aussi  
  [Publication d’applications ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Guide pratique pour publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Création d’Applications ClickOnce pour d’autres pour déployer | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -29,13 +24,13 @@ ms.assetid: d20766c7-4ef3-45ab-8aa0-3f15b61eccaa
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: f2b7bb6c990567a483ab28d215019fe1b259d166
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 049d557959a53c00be461a2b0e44338216c7e3a3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862084"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950421"
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Création d'applications ClickOnce destinées à être déployées par des tiers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +59,7 @@ Pas tous les développeurs qui créent des déploiements ClickOnce plan déploye
   
  À l’aide d’un certificat auto-signé pour le manifeste de déploiement présente plusieurs avantages. En éliminant la nécessité pour le client obtenir ou créer leur propre certificat Authenticode, `<useManifestForTrust>` simplifie le déploiement du client, tout en permettant au développeur de conserver son identité de personnalisation sur l’application. Le résultat est un ensemble de déploiements signés qui sont plus sûres et ont des identités d’application uniques. Cela élimine le conflit potentiel qui peut se produire à partir du déploiement de la même application à plusieurs clients.  
   
- Pour obtenir des informations détaillées sur la création d’un déploiement de ClickOnce avec `<useManifestForTrust>` activé, consultez [procédure pas à pas : déploiement manuel d’une Application ClickOnce qui est pas exiger nouvelle signature et qui conserve les informations sur le logo](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md).  
+ Pour obtenir des informations détaillées sur la création d’un déploiement de ClickOnce avec `<useManifestForTrust>` activé, consultez [procédure pas à pas : Déploiement manuel d’une Application ClickOnce qui ne nécessite pas de nouvelle signature et qui conserve les informations de personnalisation](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015).  
   
 ### <a name="how-application-manifest-for-trust-works-at-runtime"></a>Fichier manifeste d’Application comment pour Works approbation lors de l’exécution  
  Pour obtenir une meilleure compréhension du fonctionne de l’aide le manifeste d’application pour approbation lors de l’exécution, prenons l’exemple suivant. Une application ClickOnce qui cible le .NET Framework 3.5 est créée par Microsoft. Le manifeste d’application utilise le `<useManifestForTrust>` élément et est signé par Microsoft. Adventure Works signe le manifeste de déploiement à l’aide d’un certificat auto-signé. Adventure Works les clients sont configurés pour approuver toute application signée par Microsoft.  
@@ -107,8 +102,5 @@ Pas tous les développeurs qui créent des déploiements ClickOnce plan déploye
   
 ## <a name="see-also"></a>Voir aussi  
  [Déploiement d’Applications ClickOnce pour le test et les serveurs de Production sans nouvelle signature](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)   
- [Procédure pas à pas : déploiement manuel d’une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
- [Procédure pas à pas : déploiement manuel d’une application ClickOnce qui ne nécessite pas de nouvelle signature et qui conserve les informations relatives à la personnalisation](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md)
-
-
-
+ [Procédure pas à pas : Déploiement manuel d’une Application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
+ [Procédure pas à pas : déploiement manuel d’une application ClickOnce qui ne nécessite pas de nouvelle signature et qui conserve les informations relatives à la personnalisation](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015)

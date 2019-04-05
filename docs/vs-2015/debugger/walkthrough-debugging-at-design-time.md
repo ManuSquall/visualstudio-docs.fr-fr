@@ -1,14 +1,9 @@
 ---
 title: 'Procédure pas à pas : Débogage au moment du Design | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -27,15 +22,15 @@ ms.assetid: 35bfdd2c-6f60-4be1-ba9d-55fce70ee4d8
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4b6660bc4d9cf0073f1e18b0960c3fa9c0ae9c13
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 392e50b9494d2de17f2d1ac2b0f3c23f1e872fa6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737770"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952990"
 ---
-# <a name="walkthrough-debugging-at-design-time"></a>Procédure pas à pas : débogage au moment du design
+# <a name="walkthrough-debugging-at-design-time"></a>Procédure pas à pas : Débogage au moment du Design
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez utiliser Visual Studio **immédiat** fenêtre pour exécuter une fonction ou une sous-routine pendant que votre application n’est pas en cours d’exécution. Si la fonction ou une sous-routine contient un point d’arrêt, Visual Studio s’arrête l’exécution au point approprié. Vous pouvez ensuite utiliser les fenêtres du débogueur pour examiner l’état de votre programme. Cette fonctionnalité est appelée débogage au moment du design.  
@@ -89,6 +84,3 @@ Vous pouvez utiliser Visual Studio **immédiat** fenêtre pour exécuter une fon
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité du débogueur](../debugger/debugger-security.md)   
  [Principes de base du débogueur](../debugger/debugger-basics.md)
-
-
-

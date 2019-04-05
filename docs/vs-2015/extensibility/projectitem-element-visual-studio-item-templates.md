@@ -1,14 +1,9 @@
 ---
 title: ProjectItem, élément (modèles d’élément Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 9ed94112-0c38-49df-b728-0dd2d0d1eb47
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 44fe6613288cac93034dd32a3203f1bb73004f83
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 29b65f5cff9e2ffbed3c66c29c61f0a7e9e50f20
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747951"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953439"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem, élément (modèles d'élément Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +28,9 @@ Spécifie un fichier qui est inclus dans le modèle d’élément.
 > [!NOTE]
 >  Le `ProjectItem` élément accepte des attributs différents selon que le modèle est pour un projet ou un élément. Cette rubrique explique les `ProjectItem` élément pour l’élément. Pour obtenir une explication de la `ProjectItem` , élément pour les modèles de projet, consultez [ProjectItem, élément (modèles de projet Visual Studio)](../extensibility/projectitem-element-visual-studio-project-templates.md).  
   
- \<VSTemplate >  
- \<TemplateContent >  
- \<ProjectItem >  
+ \<VSTemplate>  
+ \<TemplateContent>  
+ \<ProjectItem>  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -86,7 +81,7 @@ Spécifie un fichier qui est inclus dans le modèle d’élément.
 <ProjectItem TargetFileName="$fileinputname$.vb">MyFile.vb</ProjectItem>  
 ```  
   
- Lorsqu’un élément est créé à partir de ce modèle, le nom de fichier doit reposer sur le nom de l’utilisateur a entré dans le **ajouter un nouvel élément** boîte de dialogue. Cela est utile lors de la création de modèles d’élément multifichier. Pour plus d’informations, consultez [Comment : créer des modèles d’élément multifichier](../ide/how-to-create-multi-file-item-templates.md) et [paramètres de modèle](../ide/template-parameters.md).  
+ Lorsqu’un élément est créé à partir de ce modèle, le nom de fichier doit reposer sur le nom de l’utilisateur a entré dans le **ajouter un nouvel élément** boîte de dialogue. Cela est utile lors de la création de modèles d’élément multifichier. Pour plus d'informations, voir [Procédure : Créer des modèles d’élément multifichier](../ide/how-to-create-multi-file-item-templates.md) et [paramètres de modèle](../ide/template-parameters.md).  
   
 ## <a name="example"></a>Exemple  
  L’exemple suivant illustre les métadonnées pour le modèle d’élément standard pour une [!INCLUDE[csprcs](../includes/csprcs-md.md)] classe.  
@@ -110,6 +105,5 @@ Spécifie un fichier qui est inclus dans le modèle d’élément.
 ## <a name="see-also"></a>Voir aussi  
  [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)   
- [Guide pratique pour créer des modèles d’élément multifichier](../ide/how-to-create-multi-file-item-templates.md)   
+ [Guide pratique pour Créer des modèles d’élément multifichier](../ide/how-to-create-multi-file-item-templates.md)   
  [Paramètres de modèle](../ide/template-parameters.md)
-

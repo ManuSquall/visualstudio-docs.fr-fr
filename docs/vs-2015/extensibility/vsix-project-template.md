@@ -1,32 +1,27 @@
 ---
 title: Modèle de projet VSIX | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - deploy packages
 - publish extension
 ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c2b06582e1de7939e34f8fa49aa1cc9435010789
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3ef6037220337f0dc5005952849c9700703709f2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733858"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001645"
 ---
 # <a name="vsix-project-template"></a>Modèle de projet VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez utiliser le modèle de projet VSIX pour encapsuler une ou plusieurs extensions de Visual Studio dans un projet VSIX et puis publier le package sur le [galerie Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) site Web.  
+Vous pouvez utiliser le modèle de projet VSIX pour encapsuler une ou plusieurs extensions de Visual Studio dans un projet VSIX et puis publier le package sur le [Visual Studio Marketplace](https://marketplace.visualstudio.com/) site Web.  
   
  Déploiement VSIX prend en charge les VSPackages, assemblys, MEF composants, modèles de projet, modèles d’élément, les contrôles de boîte à outils et types d’extension personnalisée.  
   
@@ -90,4 +85,3 @@ Vous pouvez utiliser le modèle de projet VSIX pour encapsuler une ou plusieurs 
 ## <a name="see-also"></a>Voir aussi  
  [Référence de schéma 2.0 d’Extension VSIX](../extensibility/vsix-extension-schema-2-0-reference.md)   
  [Recherche et utilisation des extensions Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)
-

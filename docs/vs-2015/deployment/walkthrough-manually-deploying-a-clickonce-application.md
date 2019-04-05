@@ -1,14 +1,9 @@
 ---
 title: 'Procédure pas à pas : Déploiement manuel d’une Application ClickOnce | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -25,15 +20,15 @@ ms.assetid: ccee6551-a1b9-4ca2-8845-9c1cf4ac2560
 caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 4e8874324c5e5cbfb5bc42e5c6c23666b5e14b67
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b9086edb3dd70946bb988bda7b933b010c045da3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236169"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948226"
 ---
-# <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Procédure pas à pas : déploiement manuel d'une application ClickOnce
+# <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Procédure pas à pas : Déploiement manuel d’une Application ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Si vous ne pouvez pas utiliser Visual Studio pour déployer votre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application, ou vous devez utiliser les fonctionnalités de déploiement avancées comme le déploiement d’applications approuvées, vous devez utiliser l’outil de ligne de commande Mage.exe pour créer votre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestes. Cette procédure pas à pas décrit comment créer un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] déploiement à l’aide de la version de ligne de commande (Mage.exe) ou graphique (MageUI.exe) de le Manifest Generation and Editing Tool.  
@@ -51,7 +46,7 @@ Si vous ne pouvez pas utiliser Visual Studio pour déployer votre [!INCLUDE[ndpt
   
 -   Déterminez comment le déploiement sera distribué.  
   
-     Les options de distribution incluent : Web, partage de fichiers ou CD. Pour plus d'informations, consultez [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).  
+     Les options de distribution sont les suivantes : Web, partage de fichiers ou CD. Pour plus d'informations, consultez [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).  
   
 -   Déterminer si l’application requiert un niveau élevé de confiance.  
   
@@ -216,6 +211,3 @@ Si vous ne pouvez pas utiliser Visual Studio pour déployer votre [!INCLUDE[ndpt
  [Publication d’applications ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Manifeste de déploiement ClickOnce](../deployment/clickonce-deployment-manifest.md)   
  [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
-
-
-

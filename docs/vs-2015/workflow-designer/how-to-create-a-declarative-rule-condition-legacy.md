@@ -1,11 +1,8 @@
 ---
-title: 'Comment : créer une Condition de règle déclarative (hérité) | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Créer une Condition de règle déclarative (hérité) | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - declarative rule conditions
@@ -15,18 +12,18 @@ ms.assetid: 804b6129-c433-408f-a424-46987967730c
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 2508404840db81f03ba4865a3e5d5af91e5c653b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ba2db8f1accafab1bdb20eacab73b2a963391075
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187406"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58947131"
 ---
-# <a name="how-to-create-a-declarative-rule-condition-legacy"></a>Procédure : créer une condition de règle déclarative (héritée)
+# <a name="how-to-create-a-declarative-rule-condition-legacy"></a>Procédure : Créer une condition de règle déclarative (héritée)
 Cette rubrique décrit comment déclarer une condition de règle à l'aide du [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité qui cible le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
- Une instruction de condition prend la valeur **True** ou **False**. Une condition de règle déclarative est une instruction de condition qui est créée à l’aide de la [boîte de dialogue Éditeur de Condition de règle (hérité)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) et stockées au format XML avec le flux de travail. Elle peut inclure des prédicats qui comparent l’état du workflow et l’algèbre booléen qui associe plusieurs prédicats.  
+ Une instruction de condition prend la valeur **True** ou **False**. Une condition de règle déclarative est une instruction de condition qui est créée à l’aide de la [boîte de dialogue Éditeur de Condition de règle (hérité)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) et stockées au format XML avec le flux de travail. Elle peut inclure des prédicats qui comparent l'état du workflow et l'algèbre booléen qui associe plusieurs prédicats.  
   
  Les conditions de règle déclaratives sont utilisées dans les activités Windows Workflow Foundation prédéfinies suivantes :  
   

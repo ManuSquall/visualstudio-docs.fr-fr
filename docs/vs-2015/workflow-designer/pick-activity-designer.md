@@ -1,11 +1,8 @@
 ---
 title: Concepteur d’activités Pick | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Pick.UI
@@ -13,19 +10,19 @@ ms.assetid: 642c0a47-1b47-45de-a19a-ca0606cedd7a
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: f0a3d5487d60a796f8bf9727c07df1afc959de5c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7de5d9189906d72c96372acb1a361d315f973df6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221518"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953083"
 ---
 # <a name="pick-activity-designer"></a>Concepteur d'activités Pick
 L'activité <xref:System.Activities.Statements.Pick> fournit un flux de contrôle basé sur les événements. Elle exécute l'une des différentes branches en réponse à un événement de déclenchement.  
   
 ## <a name="the-pick-activity"></a>Activité Pick  
- Une activité <xref:System.Activities.Statements.Pick> contient une collection d'objets <xref:System.Activities.Statements.PickBranch>, dont l'un peut être exécuté par l'activité <xref:System.Activities.Statements.Pick> en raison d'un événement entrant qui sert de déclencheur. De cette manière, [!INCLUDE[wfd1](../includes/wfd1-md.md)] fournit la modélisation des flux de contrôle basée sur les événements. Chaque <xref:System.Activities.Statements.PickBranch> contient une propriété <xref:System.Activities.Statements.PickBranch.Trigger%2A> et une propriété <xref:System.Activities.Statements.PickBranch.Action%2A>. Au début de l'exécution d'une activité <xref:System.Activities.Statements.Pick>, toutes les activités de déclencheur des éléments <xref:System.Activities.Statements.PickBranch> sont planifiées. À l'issue de la première activité, l'activité d'action correspondante est planifiée et toutes les autres activités de déclencheur sont annulées.  
+ Une activité <xref:System.Activities.Statements.Pick> contient une collection d’objets <xref:System.Activities.Statements.PickBranch>, dont l’un peut être exécuté par l’activité <xref:System.Activities.Statements.Pick> en raison d’un événement entrant qui sert de déclencheur. De cette manière, [!INCLUDE[wfd1](../includes/wfd1-md.md)] fournit la modélisation des flux de contrôle basée sur les événements. Chaque <xref:System.Activities.Statements.PickBranch> contient une propriété <xref:System.Activities.Statements.PickBranch.Trigger%2A> et une propriété <xref:System.Activities.Statements.PickBranch.Action%2A>. Au début de l'exécution d'une activité <xref:System.Activities.Statements.Pick>, toutes les activités de déclencheur des éléments <xref:System.Activities.Statements.PickBranch> sont planifiées. À l'issue de la première activité, l'activité d'action correspondante est planifiée et toutes les autres activités de déclencheur sont annulées.  
   
 ### <a name="how-to-use-the-pick-activity-designer"></a>Comment utiliser le concepteur d'activités Pick  
  Le **choisir** Concepteur d’activités peut être trouvé dans le **flux de contrôle** catégorie de la **boîte à outils**, qui est accessible en cliquant sur le **boîte à outils**onglet [!INCLUDE[wfd2](../includes/wfd2-md.md)] (ou bien, sélectionnez **barre d’outils** à partir de la **vue** menu ou CTRL + ALT + X.)  

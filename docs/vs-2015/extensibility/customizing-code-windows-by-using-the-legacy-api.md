@@ -1,26 +1,21 @@
 ---
 title: Personnalisation de Code Windows à l’aide de l’API héritée | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - code windows
 ms.assetid: 5328ab2f-55cb-4680-9744-ec79f55acd1b
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 45788e3fdfff2898a0d2d2ed36c81425c225b54c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f15c649b8d857d2e920bb957e5975d296749cb86
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809764"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950425"
 ---
 # <a name="customizing-code-windows-by-using-the-legacy-api"></a>Personnalisation de Code Windows à l’aide de l’API héritée
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,10 +35,10 @@ Fenêtre Code
  `Customizing Code Windows by Using the Legacy API`  
  Explique comment personnaliser les fenêtres de code à l’aide de l’API héritée.  
   
- [Guide pratique pour héberger un éditeur dans un autre éditeur](../extensibility/how-to-host-an-editor-in-another-editor.md)  
+ [Guide pratique pour Héberger un éditeur dans un autre éditeur](../extensibility/how-to-host-an-editor-in-another-editor.md)  
  Explique comment héberger un second éditeur à l’intérieur d’une fenêtre d’éditeur.  
   
- [Guide pratique pour déclencher des événements quand l’éditeur perd le focus](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
+ [Guide pratique pour Déclencher des événements lorsque l’éditeur perd le Focus](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
  Explique comment attacher une vue de document à un objet de données de document.  
   
 ## <a name="see-also"></a>Voir aussi  
@@ -53,4 +48,3 @@ Fenêtre Code
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>   
  [L’instanciation de l’éditeur principal à l’aide de l’API héritée](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)   
  [Accès au mode texte à l’aide de l’API héritée](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)
-

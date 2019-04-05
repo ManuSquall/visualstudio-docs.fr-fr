@@ -1,23 +1,20 @@
 ---
 title: Exécuter des tests unitaires sur des extensions UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 745d74ae-e48c-4fd9-a755-4354b81b9f8a
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6ba485b40beb82db9ea8cfe573cb6d9e6742ecea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 493193e24fcee2b3f3290546abc656faee7d88a7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817319"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952293"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>Exécuter des tests unitaires sur des extensions UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +53,7 @@ Pour préserver la stabilité de votre code au fil des modifications successives
 ##  <a name="Host"></a> Configuration d’un Test unitaire pour les Extensions VSIX  
  Les méthodes contenues dans vos extensions de modélisation fonctionnent généralement avec un diagramme déjà ouvert. Les méthodes utilisent des importations MEF telles que **IDiagramContext** et **ILinkedUndoContext**. Votre environnement de test doit configurer ce contexte avant d’entreprendre l’exécution des tests.  
   
-#### <a name="to-set-up-a-unit-test-that-executes-in-includevsprvsincludesvsprvs-mdmd"></a>Pour configurer un test unitaire qui s'exécute dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
+#### <a name="to-set-up-a-unit-test-that-executes-in-includevsprvsincludesvsprvs-mdmd"></a>Pour configurer un test unitaire qui s’exécute dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
 1.  Créez le projet d’extension UML et le projet de test unitaire.  
   
@@ -290,7 +287,7 @@ using Microsoft.VSSDK.Tools.VsIdeTesting;
 ...}  
 ```  
   
- Si vous voulez tester une méthode qui prend une propriété importée comme paramètre, vous pouvez importer la propriété dans votre classe de test et appliquer `SatisfyImportsOnce` à l’instance de test. Par exemple :  
+ Si vous voulez tester une méthode qui prend une propriété importée comme paramètre, vous pouvez importer la propriété dans votre classe de test et appliquer `SatisfyImportsOnce` à l’instance de test. Exemple :  
   
 ```  
   
@@ -343,7 +340,7 @@ using System.ComponentModel.Composition;
 ```  
   
  Définir une interface de test  
- Définissez une interface qui inclue à la fois les membres publics d’une classe à tester et les propriétés et méthodes supplémentaires pour les membres privés que les tests doivent pouvoir utiliser. Ajoutez cette interface au projet à tester. Par exemple :  
+ Définissez une interface qui inclue à la fois les membres publics d’une classe à tester et les propriétés et méthodes supplémentaires pour les membres privés que les tests doivent pouvoir utiliser. Ajoutez cette interface au projet à tester. Exemple :  
   
 ```csharp  
 internal interface MyClassTestInterface {  
@@ -354,7 +351,7 @@ internal interface MyClassTestInterface {
  }  
 ```  
   
- Ajoutez les méthodes à la classe à tester pour implémenter les méthodes d’accesseur explicitement. Conservez ces méthodes supplémentaires en dehors de la classe principale en les écrivant dans une définition de classe partielle dans un fichier distinct. Par exemple :  
+ Ajoutez les méthodes à la classe à tester pour implémenter les méthodes d’accesseur explicitement. Conservez ces méthodes supplémentaires en dehors de la classe principale en les écrivant dans une définition de classe partielle dans un fichier distinct. Exemple :  
   
 ```csharp  
 partial public class MyClass  
@@ -373,7 +370,7 @@ partial public class MyClass
 [assembly:InternalsVisibleTo("MyUnitTests")] // Name of unit tests assembly.  
 ```  
   
- Dans les méthodes de test unitaire, utilisez l’interface de test. Par exemple :  
+ Dans les méthodes de test unitaire, utilisez l’interface de test. Exemple :  
   
 ```csharp  
 MyClassTestInterface testInstance = new MyClass();  
@@ -382,12 +379,9 @@ Assert.AreEqual("hello", testInstance.privateField1_Accessor);
 ```  
   
  Définir des accesseurs en utilisant la réflexion  
- Il s’agit de la méthode la moins recommandée. Les anciennes versions de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proposaient un utilitaire qui créait automatiquement une méthode d'accesseur pour chaque méthode privée. Malgré son caractère pratique, l’expérience nous a démontré qu’il avait tendance à aboutir à des tests unitaires très fortement couplés à la structure interne de l’application qu’ils testent. Cela conduit à du travail supplémentaire quand les exigences ou l’architecture évoluent, les tests devant être modifiés en même temps que l’implémentation. De même, les hypothèses erronées dans la conception de l’implémentation sont également intégrées aux tests, si bien que les tests ne trouvent pas d’erreurs.  
+ Il s’agit de la méthode la moins recommandée. Les anciennes versions de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proposaient un utilitaire qui créait automatiquement une méthode d’accesseur pour chaque méthode privée. Malgré son caractère pratique, l’expérience nous a démontré qu’il avait tendance à aboutir à des tests unitaires très fortement couplés à la structure interne de l’application qu’ils testent. Cela conduit à du travail supplémentaire quand les exigences ou l’architecture évoluent, les tests devant être modifiés en même temps que l’implémentation. De même, les hypothèses erronées dans la conception de l’implémentation sont également intégrées aux tests, si bien que les tests ne trouvent pas d’erreurs.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Anatomie d’un test unitaire](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144)   
+ [Anatomie d’un test unitaire](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
  [Définir une commande de menu sur un diagramme de modélisation](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [UML – entrée rapide avec du texte](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)
-
-
-

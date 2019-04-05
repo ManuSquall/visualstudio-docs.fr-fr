@@ -1,14 +1,9 @@
 ---
 title: Applications d’exécution Windows Store sur l’ordinateur local | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: e42a21a8-6423-4caf-b4dc-72b263e76019
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 40fafcbdacac8a63a4aba70526a473d091b35de8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 021cad5a1da76dec7f1bbe169a7b3677170798f1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766840"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938333"
 ---
 # <a name="run-windows-store-apps-on-the-local-machine"></a>Exécuter des applications du Windows Store sur un ordinateur local
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ S’applique uniquement à Windows] (.. /Image/windows_only_content.png « wind
   
  Si vous ne voyez pas le **Standard** barre d’outils, cliquez sur le **vue** menu, pointez sur **barres d’outils**, puis cliquez sur **Standard**.  
   
- Le choix que vous effectuez dans la liste déroulante est conservé dans le fichier des propriétés du projet et devient la cible d’exécution par défaut.  
+ Le choix que vous effectuez dans la liste déroulante est conservé dans le fichier des propriétés du projet et devient la cible d'exécution par défaut.  
   
  Vous pouvez aussi définir directement la cible d'exécution dans le fichier des propriétés du projet. Cliquez sur le nom de projet dans **l’Explorateur de solutions** , puis **propriétés**. Effectuez ensuite l'une des opérations suivantes :  
   
@@ -63,6 +58,3 @@ S’applique uniquement à Windows] (.. /Image/windows_only_content.png « wind
  **Pour passer d’une instance en cours d’exécution d’une application Windows Store à Visual Studio**  
   
  Lorsque vous exécutez une application du Windows Store sur un ordinateur local et n'utilisez qu'un seul moniteur, il se peut que vous souhaitiez revenir vers Visual Studio lorsque vous quittez l'application. Par exemple, l'application peut se trouver dans un état qui ne peut pas être atteint par un point d'arrêt, comme l'attente d'un événement ou la prise au piège dans une boucle longue ou infinie. Pour revenir dans Visual Studio, appuyez sur ALT + TAB.
-
-
-

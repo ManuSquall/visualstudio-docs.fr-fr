@@ -1,14 +1,9 @@
 ---
-title: 'CA1722 : Les identificateurs ne doivent pas porter un préfixe incorrect | Microsoft Docs'
-ms.custom: ''
+title: 'CA1722 : Les identificateurs ne doivent pas porter un préfixe incorrect | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - IdentifiersShouldNotHaveIncorrectPrefix
 - CA1722
@@ -20,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ca506e853d2f32a7932620ff576a2769574f1cc7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0c9aa6600578da0d9868df2ecff9992bff9e818c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921299"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950272"
 ---
 # <a name="ca1722-identifiers-should-not-have-incorrect-prefix"></a>CA1722 : Les identificateurs ne doivent pas porter un préfixe incorrect
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ ms.locfileid: "49921299"
 
  Noms de types n’ont pas d’un préfixe spécifique et ne doivent pas être préfixés par un « C ». Cette règle signale les violations pour les noms de types tels que 'CMyClass' et ne signale pas de violations pour les noms de types tels que « Cache ».
 
- Conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage qui est requis pour les nouvelles bibliothèques de logiciels et confirment au client que la bibliothèque a été développée par une personne compétente en matière de développement de code managé.
+ Les conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage qui est requis pour les nouvelles bibliothèques de logiciels et confirment au client que la bibliothèque a été développée par une personne compétente en matière de développement de code managé.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Supprimez le préfixe de l’identificateur.
@@ -55,6 +50,3 @@ ms.locfileid: "49921299"
 
 ## <a name="related-rules"></a>Règles associées
  [CA1715 : Les identificateurs doivent avoir un préfixe correct](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)
-
-
-

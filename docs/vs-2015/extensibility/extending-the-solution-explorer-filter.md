@@ -1,27 +1,22 @@
 ---
 title: Étendre le filtre de l’Explorateur de solutions | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Solution Explorer, extending
 - extensibility [Visual Studio], projects and solutions
 ms.assetid: df976c76-27ec-4f00-ab6d-a26a745dc6c7
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0d218744a4fcfcb498054105e48019bf2b0ce66b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 27812d10c720d0507309513bd908498d9abcf92a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750187"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952734"
 ---
 # <a name="extending-the-solution-explorer-filter"></a>Extension du filtre de l’Explorateur de solutions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -200,4 +195,3 @@ Vous pouvez étendre **l’Explorateur de solutions** fonctionnalité pour affic
 3.  Recherchez le bouton que vous avez ajouté dans la barre d’outils de l’Explorateur de solutions. Il doit être le quatrième bouton de la gauche.  
   
 4.  Lorsque vous cliquez sur le bouton, tous les fichiers doivent être filtrés, et vous devez voir « tous les éléments ont été filtrés à partir de la vue. » dans l’Explorateur de solutions.
-

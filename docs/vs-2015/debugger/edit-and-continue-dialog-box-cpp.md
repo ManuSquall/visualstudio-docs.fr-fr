@@ -1,14 +1,9 @@
 ---
 title: Modifier et continuer, boîte de dialogue (C++) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.ENC.failed.commit
 - vs.debug.ENC.failed.build
@@ -24,23 +19,20 @@ ms.assetid: 624d9649-5946-4298-a138-70773b72e810
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ce41b3ba317fbdc05db5c81cef2720748b0d9e16
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d7ea0ea688ae9702c7107b33ff87437ebd3656e5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779812"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953936"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Modifier et continuer, boîte de dialogue (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Modifier & Continuer n'a pas pu appliquer les modifications que vous avez apportées au code natif. Il peut d'agit d'une condition temporaire. Parfois, Modifier & Continuer ne peut pas appliquer immédiatement les modifications du code natif, mais peut le faire plus tard au cours de la session de débogage (par exemple, après avoir terminé l'appel à la procédure en cours d'exécution). Pour plus d’informations, consultez [Modifier & Continuer](../debugger/edit-and-continue.md).  
+Modifier &amp; Continuer n'a pas pu appliquer les modifications que vous avez apportées au code natif. Il peut d'agit d'une condition temporaire. Parfois, Modifier &amp; Continuer ne peut pas appliquer immédiatement les modifications du code natif, mais peut le faire plus tard au cours de la session de débogage (par exemple, après avoir terminé l'appel à la procédure en cours d'exécution). Pour plus d’informations, consultez [Modifier et Continuer](../debugger/edit-and-continue.md).  
   
  Vous pouvez modifier le code pour corriger l'erreur pendant le débogage arrêter le débogage et corriger le code, ou ignorer l'erreur et continuer le débogage. Si vous continuez sans effectuer la correction, vos modifications du code ne seront pas appliquées immédiatement.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Modifier & Continuer, Débogage, Boîte de dialogue Options](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)
-
-
-

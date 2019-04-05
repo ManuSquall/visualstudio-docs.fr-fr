@@ -1,14 +1,9 @@
 ---
-title: Les pseudo-variables | Microsoft Docs
-ms.custom: ''
+title: Pseudo-variables | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,21 +17,21 @@ ms.assetid: fae84f68-2138-4144-9bd4-c9e271b6182a
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 79d2f47acfbd5a4b6adf6d5f679fb3b514679dab
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ac9800025bd55237a4f1d19ca6f07c78c757b603
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789497"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938281"
 ---
 # <a name="pseudovariables"></a>Pseudo-variables
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Les pseudo-variables sont des termes utilisés pour afficher certaines informations dans une fenêtre de variable ou la **Espion express** boîte de dialogue. Vous pouvez entrer une pseudo-variable de la même façon qu'une variable normale. Toutefois, les pseudo-variables ne sont pas des variables et ne correspondent pas à des noms de variable de votre programme.  
+Les pseudo-variables sont des termes utilisés pour afficher certaines informations dans une fenêtre de variable ou dans la boîte de dialogue **Espion express**. Vous pouvez entrer une pseudo-variable de la même façon qu'une variable normale. Toutefois, les pseudo-variables ne sont pas des variables et ne correspondent pas à des noms de variable de votre programme.  
   
 ## <a name="example"></a>Exemple  
- Supposez que vous écrivez une application en code natif et que vous voulez afficher le nombre de handles alloués à votre application. Dans le **espion** fenêtre, vous pouvez entrer la pseudo-variable suivante dans le **nom** colonne, puis appuyez sur ENTRÉE pour l’évaluer :  
+ Supposez que vous écrivez une application en code natif et que vous voulez afficher le nombre de handles alloués à votre application. Dans la fenêtre **Espion**, entrez la pseudo-variable suivante dans la colonne **Nom**, puis appuyez sur Entrée pour l’évaluer :  
   
 ```  
 $handles  
@@ -53,7 +48,7 @@ $handles
 |`$env`|Affiche le bloc environnement de l'explorateur de chaînes.|  
 |`$cmdline`|Affiche la chaîne de ligne de commande qui a lancé le programme.|  
 |`$pid`|Affiche l'ID du processus.|  
-|`$` *RegisterName*<br /><br /> ou<br /><br /> `@` *RegisterName*|Affiche le contenu du Registre *registername*.<br /><br /> En règle générale, vous pouvez afficher le contenu du registre en entrant simplement son nom. Vous n'avez besoin d'utiliser cette syntaxe que lorsque le nom de registre surcharge le nom d'une variable. Si le nom de registre est le même que celui d'une variable dans la portée actuelle, le débogueur interprète le nom comme étant celui de la variable. C’est quand `$` *registername* ou `@` *registername* s’avère pratique.|  
+|`$` *registername*<br /><br /> ou<br /><br /> `@` *registername*|Affiche le contenu du registre *registername*.<br /><br /> En règle générale, vous pouvez afficher le contenu du registre en entrant simplement son nom. Vous n'avez besoin d'utiliser cette syntaxe que lorsque le nom de registre surcharge le nom d'une variable. Si le nom de registre est le même que celui d'une variable dans la portée actuelle, le débogueur interprète le nom comme étant celui de la variable. Vous pouvez alors utiliser `$`*registername* ou `@`*registername*.|  
 |`$clk`|Affiche le temps en cycles d'horloge.|  
 |`$user`|Affiche une structure avec les informations du compte qui exécute l'application. Pour des raisons de sécurité, les informations de mot de passe ne sont pas affichées.|  
 |`$exceptionstack`|Affiche l'arborescence des appels de procédure de l'exception Windows Runtime actuelle. `$ exceptionstack` ne fonctionne que dans les applications Windows Store s'exécutant dans Windows 8.1 ou version ultérieure. `$ exceptionstack` n'est pas pris en charge pour les exceptions C++ et SHE|  
@@ -63,23 +58,18 @@ $handles
   
 |Pseudo-variable|Fonction|  
 |--------------------|--------------|  
-|`$exception`|Affiche des informations sur la dernière exception. Si aucune exception ne s'est produite, l'évaluation de `$exception` affiche un message d'erreur.<br /><br /> Dans Visual c# uniquement, lorsque l’Assistant Exception est désactivé, `$exception` est automatiquement ajouté à la **variables locales** fenêtre lorsqu’une exception se produit.|  
+|`$exception`|Affiche des informations sur la dernière exception. Si aucune exception ne s'est produite, l'évaluation de `$exception` affiche un message d'erreur.<br /><br /> En Visual C# uniquement, quand l’Assistant Exception est désactivé, `$exception` est automatiquement ajouté à la fenêtre **Variables locales** quand une exception se produit.|  
 |`$user`|Affiche une structure avec les informations du compte qui exécute l'application. Pour des raisons de sécurité, les informations de mot de passe ne sont pas affichées.|  
   
  En Visual Basic, vous pouvez utiliser les pseudo-variables indiquées dans le tableau suivant :  
   
 |Pseudo-variable|Fonction|  
 |--------------------|--------------|  
-|`$delete` ou `$$delete`|Supprime une variable implicite qui a été créée dans le **immédiat** fenêtre. La syntaxe est `$delete,` *variable* ou`$delete,` *variable*`.`|  
+|`$delete` ou `$$delete`|Supprime une variable implicite créée dans la fenêtre **Exécution**. La syntaxe est `$delete,` *variable* ou`$delete,` *variable*`.`|  
 |`$objectids` ou `$listobjectids`|Affiche tous les ID d'objet actifs en tant qu'enfants de l'expression spécifiée. La syntaxe est `$objectid,` *expression* ou`$listobjectids,` *expression*`.`|  
-|`$` *N* `#`|Affiche l’objet avec l’ID d’objet égal à *N*.|  
-|`$dynamic`|Affiche les spéciale **affichage dynamique** nœud pour un objet qui implémente le `IDynamicMetaObjectProvider`. Interface. La syntaxe est `$dynamic,` *objet*. Cette fonctionnalité s’applique uniquement au code utilisant .NET Framework version 4. Consultez [affichage dynamique](http://msdn.microsoft.com/library/4c851b17-2c12-46a0-9828-eb6ea6f5c563).|  
+|`$` *N* `#`|Affiche l’objet dont l’ID d’objet est égal à *N*.|  
+|`$dynamic`|Affiche le nœud spécial **Affichage dynamique** pour un objet qui implémente le `IDynamicMetaObjectProvider`. Interface. La syntaxe est `$dynamic,` *objet*. Cette fonctionnalité s’applique uniquement au code utilisant .NET Framework version 4. Consultez [affichage dynamique](http://msdn.microsoft.com/library/4c851b17-2c12-46a0-9828-eb6ea6f5c563).|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Espion et Espion express Windows](../debugger/watch-and-quickwatch-windows.md)   
- [Variable Windows](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
-
-
-
-
-
+ [Espion et Espion express, fenêtres](../debugger/watch-and-quickwatch-windows.md)   
+ [Fenêtres de variables](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

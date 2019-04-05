@@ -1,26 +1,21 @@
 ---
 title: Attachement après un lancement | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
 ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 416c05a7592d9f036a76a5d96537b4be917a0651
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b1f39297c4e87b7d4801b786ca2132acaf366fd3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774703"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953623"
 ---
 # <a name="attaching-after-a-launch"></a>Attachement après un lancement
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,10 +51,9 @@ Une fois un programme a été lancé, la session de débogage est prête à atta
  [Tâches de débogage](../../extensibility/debugger/debugging-tasks.md)   
  [IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md)   
  [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)   
- [Attacher](../../extensibility/debugger/reference/idebugprogram2-attach.md)   
+ [Attach](../../extensibility/debugger/reference/idebugprogram2-attach.md)   
  [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)   
  [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md)   
  [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)   
  [Attacher](../../extensibility/debugger/reference/idebugengine2-attach.md)
-

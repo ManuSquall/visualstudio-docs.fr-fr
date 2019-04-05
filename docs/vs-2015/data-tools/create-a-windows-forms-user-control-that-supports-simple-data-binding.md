@@ -1,12 +1,9 @@
 ---
 title: Créer un contrôle utilisateur Windows Forms qui prend en charge la liaison de données simple | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,19 +16,19 @@ ms.assetid: b1488366-6dfb-454e-9751-f42fd3f3ddfb
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 607c324e11591211593522957dcd08747d230279
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 2929d4a524f0da60f2bc32b150b86fdf1ea0cb57
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219822"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953364"
 ---
-# <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Créer un contrôle utilisateur Windows Forms qui prend en charge la liaison de données simple
+# <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Créer un contrôle utilisateur Windows Forms prenant en charge la liaison de données simples
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-Lors de l’affichage des données dans des formulaires dans les applications Windows, vous pouvez choisir des contrôles existants à partir de la **boîte à outils**, ou vous pouvez créer des contrôles personnalisés si votre application nécessite une fonctionnalité qui n’est pas disponible dans les contrôles standard. Cette procédure pas à pas vous indique comment créer un contrôle qui implémente l'objet <xref:System.ComponentModel.DefaultBindingPropertyAttribute>. Les contrôles qui implémentent <xref:System.ComponentModel.DefaultBindingPropertyAttribute> peuvent contenir une propriété pouvant être liée aux données. Ce type de contrôles est similaire à <xref:System.Windows.Forms.TextBox> ou <xref:System.Windows.Forms.CheckBox>.  
+Pour présenter des données dans des formulaires d’applications Windows, vous pouvez choisir des contrôles existants dans la **Boîte à outils** ou créer des contrôles personnalisés si votre application nécessite des fonctionnalités qui ne sont pas disponibles dans les contrôles standard. Cette procédure pas à pas vous indique comment créer un contrôle qui implémente l'objet <xref:System.ComponentModel.DefaultBindingPropertyAttribute>. Les contrôles qui implémentent <xref:System.ComponentModel.DefaultBindingPropertyAttribute> peuvent contenir une propriété pouvant être liée aux données. Ce type de contrôles est similaire à <xref:System.Windows.Forms.TextBox> ou <xref:System.Windows.Forms.CheckBox>.  
   
  Pour plus d’informations sur la création de contrôles, consultez [développement de contrôles Windows Forms au moment du Design](http://msdn.microsoft.com/library/e5a8e088-7ec8-4fd9-bcb3-9078fd134829).  
   
@@ -49,7 +46,7 @@ Lors de l’affichage des données dans des formulaires dans les applications Wi
   
 -   Créer un nouveau **Windows Application**.  
   
--   Ajouter un nouveau **contrôle utilisateur** à votre projet.  
+-   Ajouter un nouveau **Contrôle utilisateur** à votre projet.  
   
 -   Concevoir visuellement le contrôle utilisateur.  
   
@@ -57,14 +54,14 @@ Lors de l’affichage des données dans des formulaires dans les applications Wi
   
 -   Créer un jeu de données avec le **Configuration de Source de données** Assistant.  
   
--   Définir le **téléphone** colonne dans le **des Sources de données** fenêtre à utiliser le nouveau contrôle.  
+-   Définir la colonne **Phone** dans la fenêtre **Sources de données** pour qu’elle utilise le nouveau contrôle.  
   
 -   Créer un formulaire pour afficher des données dans le nouveau contrôle.  
   
 ## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous avez besoin des éléments suivants :  
   
--   avoir accès à l'exemple de base de données Northwind. Pour plus d’informations, consultez [Comment : installer Sample Databases](../data-tools/how-to-install-sample-databases.md).  
+-   avoir accès à l'exemple de base de données Northwind.
   
 ## <a name="create-a-windows-application"></a>Créer une Application Windows  
  La première étape consiste à créer un **Windows Application**.  
@@ -77,36 +74,36 @@ Lors de l’affichage des données dans des formulaires dans les applications Wi
   
 3.  Sélectionnez **Windows Application** et cliquez sur **OK**. Pour plus d’informations, consultez [les Applications clientes](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
-     Le **SimpleControlWalkthrough** projet est créé et ajouté à **l’Explorateur de solutions**.  
+     Le projet **SimpleControlWalkthrough** est créé et ajouté à l’**Explorateur de solutions**.  
   
 ## <a name="add-a-user-control-to-the-project"></a>Ajouter un contrôle utilisateur au projet  
  Cette procédure pas à pas crée un contrôle simple pouvant être lié à des données à partir d’un **contrôle utilisateur**, donc ajouter un **contrôle utilisateur** d’élément à la **SimpleControlWalkthrough** projet.  
   
 #### <a name="to-add-a-user-control-to-the-project"></a>Pour ajouter un contrôle utilisateur au projet  
   
-1.  À partir de la **projet** menu, choisissez **ajouter un contrôle utilisateur**.  
+1.  Dans le menu **Projet**, choisissez **Ajouter un contrôle utilisateur**.  
   
 2.  Type `PhoneNumberBox` dans la zone Nom, puis cliquez sur **ajouter**.  
   
-     Le **PhoneNumberBox** contrôle est ajouté à **l’Explorateur de solutions**et s’ouvre dans le concepteur.  
+     Le contrôle **PhoneNumberBox** est ajouté à l’**Explorateur de solutions** et s’ouvre dans le concepteur.  
   
 ## <a name="design-the-phonenumberbox-control"></a>Concevoir le contrôle PhoneNumberBox  
  Cette procédure pas à pas développe le <xref:System.Windows.Forms.MaskedTextBox> existant pour créer le contrôle `PhoneNumberBox`.  
   
 #### <a name="to-design-the-phonenumberbox-control"></a>Pour concevoir le contrôle PhoneNumberBox  
   
-1.  Faites glisser un <xref:System.Windows.Forms.MaskedTextBox> à partir de la **boîte à outils** aire de conception du contrôle utilisateur.  
+1.  Faites glisser un <xref:System.Windows.Forms.MaskedTextBox> depuis la **Boîte à outils** vers l’aire de conception du contrôle utilisateur.  
   
-2.  Sélectionnez la balise active sur le <xref:System.Windows.Forms.MaskedTextBox> simplement faire glisser et choisissez **définir le masque**.  
+2.  Sélectionnez la balise active du <xref:System.Windows.Forms.MaskedTextBox> que vous venez de faire glisser et choisissez **Définir le masque**.  
   
-3.  Sélectionnez **numéro de téléphone** dans le **masque d’entrée** boîte de dialogue, puis cliquez sur **OK** pour définir le masque.  
+3.  Sélectionnez **Numéro de téléphone** dans la boîte de dialogue **Masque de saisie** et cliquez sur **OK** pour définir le masque.  
   
 ## <a name="add-the-required-data-binding-attribute"></a>Ajoutez l’attribut de liaison de données requis  
  Pour des contrôles simples prenant en charge la liaison de données, implémentez l'attribut <xref:System.ComponentModel.DefaultBindingPropertyAttribute>.  
   
 #### <a name="to-implement-the-defaultbindingproperty-attribute"></a>Pour implémenter l'attribut DefaultBindingProperty  
   
-1.  Basculez le contrôle `PhoneNumberBox` sur le mode Code. (Sur le **vue** menu, choisissez **Code**.)  
+1.  Basculez le contrôle `PhoneNumberBox` sur le mode Code. (Dans le menu **Affichage**, choisissez **Code**.)  
   
 2.  Remplacez le code de `PhoneNumberBox` par le code suivant :  
   
@@ -116,57 +113,57 @@ Lors de l’affichage des données dans des formulaires dans les applications Wi
 3.  Dans le menu **Générer** , cliquez sur **Générer la solution**.  
   
 ## <a name="create-a-data-source-from-your-database"></a>Créer une source de données à partir de votre base de données  
- Cette étape utilise le **Configuration de Source de données** Assistant pour créer une source de données selon le `Customers` table dans la base de données Northwind. Vous devez avoir accès à l'exemple de base de données Northwind pour créer la connexion. Pour plus d’informations sur la configuration de la base de données Northwind, consultez [Comment : installer Sample Databases](../data-tools/how-to-install-sample-databases.md).  
+ Cette étape utilise l’Assistant **Configuration de source de données** pour créer une source de données basée sur la table `Customers` de l’exemple de base de données Northwind. Vous devez avoir accès à l'exemple de base de données Northwind pour créer la connexion.
   
 #### <a name="to-create-the-data-source"></a>Pour créer la source de données  
   
 1.  Dans le menu **Données** , cliquez sur **Afficher les sources de données**.  
   
-2.  Dans le **des Sources de données** fenêtre, sélectionnez **ajouter une nouvelle Source de données** pour démarrer le **Configuration de Source de données** Assistant.  
+2.  Dans la fenêtre **Sources de données**, sélectionnez **Ajouter une nouvelle source de données** pour démarrer l’Assistant **Configuration de source de données**.  
   
-3.  Sur le **choisir un Type de Source de données** page, sélectionnez **base de données**, puis cliquez sur **suivant**.  
+3.  Dans la page **Choisir un type de source de données**, sélectionnez **Base de données**, puis cliquez sur **Suivant**.  
   
-4.  Sur le **choisir votre connexion de données** page, effectuez l’une des opérations suivantes :  
+4.  Dans la page **Choisir votre connexion de données**, effectuez l’une des opérations suivantes :  
   
     -   Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.  
   
-    -   Sélectionnez **nouvelle connexion** pour lancer le **Ajouter/modifier la connexion** boîte de dialogue.  
+    -   Sélectionnez **Nouvelle connexion** pour afficher la boîte de dialogue **Ajouter/Modifier la connexion**.  
   
-5.  Si votre base de données requiert un mot de passe, sélectionnez l’option pour inclure les données sensibles, puis cliquez sur **suivant**.  
+5.  Si votre base de données nécessite un mot de passe, sélectionnez l’option pour inclure les données sensibles, puis cliquez sur **Suivant**.  
   
 6.  Sur le **enregistrer la chaîne de connexion dans le fichier de Configuration de l’Application** , cliquez sur **suivant**.  
   
-7.  Sur le **choisir vos objets de base de données** page, développez le **Tables** nœud.  
+7.  Dans la page **Choisir vos objets de base de données**, développez le nœud **Tables**.  
   
-8.  Sélectionnez le `Customers` table, puis cliquez sur **Terminer**.  
+8.  Sélectionnez la table `Customers`, puis cliquez sur **Terminer**.  
   
-     Le **NorthwindDataSet** est ajouté à votre projet et le `Customers` table s’affiche dans le **des Sources de données** fenêtre.  
+     **NorthwindDataSet** est ajouté à votre projet et la table `Customers` apparaît dans la fenêtre **Sources de données**.  
   
 ## <a name="set-the-phone-column-to-use-the-phonenumberbox-control"></a>Définir la colonne phone pour utiliser le contrôle PhoneNumberBox  
- Dans le **des Sources de données** fenêtre, vous pouvez définir le contrôle à créer avant de faire glisser des éléments sur votre formulaire.  
+ Dans la fenêtre **Sources de données**, vous pouvez définir le contrôle à créer avant de faire glisser des éléments vers votre formulaire.  
   
 #### <a name="to-set-the-phone-column-to-bind-to-the-phonenumberbox-control"></a>Pour définir la colonne Phone pour qu'elle soit liée au contrôle PhoneNumberBox  
   
 1.  Ouvrez **Form1** dans le concepteur.  
   
-2.  Développez le **clients** nœud dans le **des Sources de données** fenêtre.  
+2.  Développez le nœud **Customers** dans la fenêtre **Sources de données**.  
   
-3.  Cliquez sur la flèche déroulante du **clients** nœud, puis choisissez **détails** à partir de la liste de contrôle.  
+3.  Cliquez sur la flèche déroulante du nœud **Customers** et choisissez **Détails** dans la liste de contrôles.  
   
-4.  Cliquez sur la flèche déroulante du **téléphone** colonne, puis choisissez **personnaliser**.  
+4.  Cliquez sur la flèche déroulante de la colonne **Phone** et choisissez **Personnaliser**.  
   
-5.  Sélectionnez le **PhoneNumberBox** dans la liste des **contrôles associés** dans le **Options de personnalisation de l’interface utilisateur de données** boîte de dialogue.  
+5.  Sélectionnez **PhoneNumberBox** dans la liste des **Contrôles associés** de la boîte de dialogue **Options de personnalisation de l’interface utilisateur de données**.  
   
-6.  Cliquez sur la flèche déroulante du **téléphone** colonne, puis choisissez **PhoneNumberBox**.  
+6.  Cliquez sur la flèche déroulante de la colonne **Phone** et choisissez **PhoneNumberBox**.  
   
 ## <a name="addcontrols-to-the-form"></a>Addcontrols au formulaire  
- Vous pouvez créer les contrôles liés aux données en faisant glisser des éléments à partir de la **des Sources de données** fenêtre vers le formulaire.  
+ Pour créer des contrôles liés aux données, vous pouvez faire glisser des éléments depuis la fenêtre **Sources de données** vers le formulaire.  
   
 #### <a name="to-create-data-bound-controls-on-the-form"></a>Pour créer des contrôlés liés aux données dans le formulaire  
   
 -   Faites glisser le **clients** nœud à partir de la **des Sources de données** fenêtre vers le formulaire et vérifiez que le `PhoneNumberBox` contrôle est utilisé pour afficher les données dans le `Phone` colonne.  
   
-     Les contrôles liés aux données assortis d'étiquettes descriptives apparaissent dans le formulaire, ainsi qu'une barre d'outils (<xref:System.Windows.Forms.BindingNavigator>) pour parcourir les enregistrements. Un [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), [CustomersTableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource>, et <xref:System.Windows.Forms.BindingNavigator> s’affichent dans la barre d’état du composant.  
+     Les contrôles liés aux données assortis d'étiquettes descriptives apparaissent dans le formulaire, ainsi qu'une barre d'outils (<xref:System.Windows.Forms.BindingNavigator>) pour parcourir les enregistrements. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> et <xref:System.Windows.Forms.BindingNavigator> s’affichent dans la barre d’état des composants.  
   
 ## <a name="run-the-application"></a>Exécuter l'application  
   
@@ -175,7 +172,7 @@ Lors de l’affichage des données dans des formulaires dans les applications Wi
 -   Appuyez sur F5 pour exécuter l'application.  
   
 ## <a name="next-steps"></a>Étapes suivantes  
- Selon les exigences de votre application, vous pouvez exécuter différentes étapes après la création d’un contrôle prenant en charge la liaison de données. Les étapes ultérieures sont habituellement celles-ci :  
+ Selon les spécifications de votre application, vous pouvez exécuter différentes étapes après la création d'un contrôle prenant en charge la liaison de données. Les étapes ultérieures sont habituellement celles-ci :  
   
 -   Positionnement de vos contrôles personnalisés dans une bibliothèque de contrôles pour pouvoir les réutiliser dans d'autres applications.  
   
@@ -184,4 +181,3 @@ Lors de l’affichage des données dans des formulaires dans les applications Wi
 ## <a name="see-also"></a>Voir aussi  
  [Lier des contrôles Windows Forms à des données dans Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
  [Définir le contrôle à créer lors d’une opération de glisser-déplacer à partir de la fenêtre Sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)
-

@@ -1,12 +1,9 @@
 ---
 title: Lire des données XML dans un dataset | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -25,13 +22,13 @@ ms.assetid: fae72958-0893-47d6-b3dd-9d42418418e4
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6eb85fcef78b4b856c47ccb4436d1314ae440136
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 18f3c5c1e3b3c19f3cbf490aa3dd71c854abe7df
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219729"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938538"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Lire les données XML dans un dataset
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +49,7 @@ ADO.NET fournit des méthodes simples pour travailler avec des données XML. Dan
 5.  Ajout du code pour afficher le schéma XML basé sur le fichier XML dans un <xref:System.Windows.Forms.TextBox> contrôle  
   
 > [!NOTE]
->  Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites dans l’aide selon vos paramètres actifs ou de l’édition que vous utilisez. Pour modifier vos paramètres, sur le **outils** menu, sélectionnez**importation et exportation de paramètres**. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites dans l’aide selon vos paramètres actifs ou de l’édition que vous utilisez. Pour modifier vos paramètres, sur le **outils** menu, sélectionnez**importation et exportation de paramètres**. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Créer un nouveau projet  
  Dans cette étape, vous créez un projet Visual Basic ou Visual c# qui contient cette procédure pas à pas.  
@@ -172,7 +169,7 @@ ADO.NET fournit des méthodes simples pour travailler avec des données XML. Dan
     |Contrôle|Propriété|Paramètre|  
     |-------------|--------------|-------------|  
     |`TextBox1`|**Multiline**|`true`|  
-    ||**Barres de défilement**|**Vertical**|  
+    ||**ScrollBars**|**Vertical**|  
     |`Button1`|**Name**|`ReadXmlButton`|  
     ||**Text**|`Read XML`|  
     |`Button2`|**Name**|`ShowSchemaButton`|  
@@ -228,9 +225,8 @@ ADO.NET fournit des méthodes simples pour travailler avec des données XML. Dan
      [!code-vb[VbRaddataFillingAndExecuting#3](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataFillingAndExecuting/VB/Form1.vb#3)]  
   
 ## <a name="test-the-form"></a>Le formulaire de test  
- Vous pouvez maintenant tester le formulaire pour vous assurer qu’il se comporte comme prévu.  
-  
-#### <a name="to-test-the-form"></a>Pour tester le formulaire  
+
+Vous pouvez maintenant tester le formulaire pour vous assurer qu’il se comporte comme prévu.
   
 1.  Sélectionnez **F5** pour exécuter l’application.  
   
@@ -243,15 +239,15 @@ ADO.NET fournit des méthodes simples pour travailler avec des données XML. Dan
      La zone de texte affiche le schéma XML pour le fichier XML.  
   
 ## <a name="next-steps"></a>Étapes suivantes  
- Cette procédure pas à pas vous enseigne les principes fondamentaux de la lecture d’un fichier XML dans un jeu de données, ainsi que la création d’un schéma en fonction du contenu du fichier XML. Voici quelques tâches que vous pouvez effectuer ensuite :  
+
+Cette procédure pas à pas vous enseigne les principes fondamentaux de la lecture d’un fichier XML dans un jeu de données, ainsi que la création d’un schéma en fonction du contenu du fichier XML. Voici quelques tâches que vous pouvez effectuer ensuite :  
   
 -   Modifier les données dans le jeu de données et les enregistrer à nouveau au format XML. Pour plus d'informations, consultez <xref:System.Data.DataSet.WriteXml%2A>.  
   
--   Modifier les données dans le jeu de données et écrire sur une base de données. Pour plus d’informations, consultez [l’enregistrement des données](../data-tools/saving-data.md).  
+-   Modifier les données dans le jeu de données et écrire sur une base de données.
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédures pas à pas de données](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
+ [Procédures pas à pas relatives aux données](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
  [Accès aux données dans Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
- [Préparation de votre Application à recevoir des données](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
+ [Préparation de votre application pour recevoir des données](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [Outils XML dans Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)
-

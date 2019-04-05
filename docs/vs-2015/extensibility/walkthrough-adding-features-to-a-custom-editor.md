@@ -1,28 +1,23 @@
 ---
 title: 'Procédure pas à pas : Ajout de fonctionnalités à un éditeur personnalisé | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - add features
 ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
 caps.latest.revision: 39
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2379a488d042ab8905844c9c536f79ecb4b03268
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8e6395f279af8b48d9f74981f61cceb431a1d00a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737041"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954120"
 ---
-# <a name="walkthrough-adding-features-to-a-custom-editor"></a>Procédure pas à pas : ajout de fonctionnalités à un éditeur personnalisé
+# <a name="walkthrough-adding-features-to-a-custom-editor"></a>Procédure pas à pas : Ajout de fonctionnalités à un éditeur personnalisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Après avoir créé un éditeur personnalisé, vous pouvez ajouter davantage de fonctionnalités à ce dernier.  
@@ -31,7 +26,7 @@ Après avoir créé un éditeur personnalisé, vous pouvez ajouter davantage de 
   
 1.  Créer un éditeur personnalisé en utilisant le modèle de projet de Package Visual Studio.  
   
-     Pour plus d’informations, consultez [procédure pas à pas : création d’un éditeur personnalisé](../extensibility/walkthrough-creating-a-custom-editor.md).  
+     Pour plus d’informations, consultez [Procédure pas à pas : Création d’un éditeur personnalisé](../extensibility/walkthrough-creating-a-custom-editor.md).  
   
 2.  Décidez si vous souhaitez que votre éditeur pour prendre en charge un seul ou plusieurs vues.  
   
@@ -122,7 +117,7 @@ Après avoir créé un éditeur personnalisé, vous pouvez ajouter davantage de 
   
 12. Implémenter la prise en charge d’aide contextuelle.  
   
-     Cela vous permet de fournir l’aide (F1) et la fenêtre Aide dynamique prennent en charge pour les éléments dans votre éditeur. Pour plus d’informations, consultez [Comment : fournir un contexte pour les éditeurs](../extensibility/how-to-provide-context-for-editors.md).  
+     Cela vous permet de fournir l’aide (F1) et la fenêtre Aide dynamique prennent en charge pour les éléments dans votre éditeur. Pour plus d’informations, consultez [Comment : Fournir un contexte pour les éditeurs](../extensibility/how-to-provide-context-for-editors.md).  
   
 13. Exposer un modèle d’objet Automation à partir de votre éditeur en implémentant le `IDispatch` interface.  
   
@@ -161,5 +156,4 @@ Après avoir créé un éditeur personnalisé, vous pouvez ajouter davantage de 
   
 ## <a name="see-also"></a>Voir aussi  
  [Contribution au modèle Automation](../extensibility/internals/contributing-to-the-automation-model.md)   
- [Guide pratique : fournir un contexte pour les éditeurs](../extensibility/how-to-provide-context-for-editors.md)
-
+ [Guide pratique pour Fournir un contexte pour les éditeurs](../extensibility/how-to-provide-context-for-editors.md)

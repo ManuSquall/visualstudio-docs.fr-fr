@@ -1,12 +1,9 @@
 ---
 title: Génération du Code à l’aide de modèles de texte T4 au moment du design | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, guidelines for code generation
 - text templates, data source model
@@ -19,31 +16,31 @@ ms.assetid: 2774b83d-1adb-4c66-a607-746e019b80c0
 caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a302f2d4f96f7f110780feae3f76e08b440d037f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ff3be8231ede73649ed09569b18fd255882a5221
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859276"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950422"
 ---
-# <a name="design-time-code-generation-by-using-t4-text-templates"></a>Génération de code au moment du design à l’aide de modèles de texte T4
+# <a name="design-time-code-generation-by-using-t4-text-templates"></a>Génération de code durant la conception à l'aide de modèles de texte T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Les modèles de texte T4 au moment de la conception vous permettent de générer du code de programme et d'autres fichiers dans votre projet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. En règle générale, vous écrivez les modèles pour qu’ils varient le code qu’ils génèrent en fonction des données à partir d’un *modèle*. Un modèle est un fichier ou une base de données qui contient des informations clés concernant les exigences de votre application.  
+Les modèles de texte T4 au moment du design vous permettent de générer du code de programme et d’autres fichiers dans votre projet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. En règle générale, vous écrivez les modèles pour qu’ils varient le code qu’ils génèrent en fonction des données à partir d’un *modèle*. Un modèle est un fichier ou une base de données qui contient des informations clés concernant les spécifications de votre application.  
   
  Par exemple, vous pourriez avoir un modèle qui définit un flux de travail sous la forme d'un tableau ou d'un diagramme. À partir du modèle, vous pouvez générer le logiciel qui exécute le flux de travail. Quand les exigences de vos utilisateurs changent, il est facile de discuter du nouveau flux de travail avec eux. La regénération du code à partir du flux de travail est plus fiable que la mise à jour manuelle du code.  
   
 > [!NOTE]
->  Un *modèle* est une source de données qui décrit un aspect particulier d’une application. Il peut assumer n'importe quelle forme, dans n'importe quel genre de fichier ou de base de données. Il n'est pas obligatoire qu'il soit dans un format spécifique, tel qu'un modèle UML ou un modèle de langage spécifique à un domaine. Les modèles les plus courants assument la forme de tableaux ou de fichiers XML.  
+>  Un *modèle* est une source de données qui décrit un aspect particulier d’une application. Il peut assumer n'importe quelle forme, dans n'importe quel genre de fichier ou de base de données. Il n’est pas obligatoire qu’il soit dans un format spécifique, tel qu’un modèle UML ou un modèle de langage spécifique à un domaine. Les modèles les plus courants assument la forme de tableaux ou de fichiers XML.  
   
  Vous connaissez sans doute déjà le concept de génération de code. Lorsque vous définissez des ressources dans un **.resx** de fichiers dans votre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solution, un ensemble de classes et méthodes est généré automatiquement. Le fichier de ressources simplifie et rend plus fiable la modification des ressources, par rapport à la modification manuelle des classes et des méthodes. Avec les modèles de texte, vous pouvez générer du code de la même façon à partir d'une source que vous avez conçue vous-même.  
   
  Un modèle de texte contient une combinaison du texte que vous souhaitez générer et du code de programme qui génère des parties variables du texte. Le code de programme vous permet de répéter ou d'omettre de manière conditionnelle des parties du texte généré. Le texte généré peut lui-même être du code de programme qui constituera une partie de votre application.  
   
-## <a name="creating-a-design-time-t4-text-template"></a>Création d'un modèle de texte T4 au moment de la conception  
+## <a name="creating-a-design-time-t4-text-template"></a>Création d’un modèle de texte T4 au moment du design  
   
-#### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>Pour créer un modèle T4 au moment du design dans Visual Studio  
+#### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>Pour créer un modèle T4 au moment de la conception dans Visual Studio  
   
 1.  Créer un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] de projet ou ouvrez-en une existante.  
   
@@ -64,7 +61,7 @@ Les modèles de texte T4 au moment de la conception vous permettent de générer
   
      Si vous avez ajouté le modèle à un projet [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], l'attribut de langage est « `VB` ».  
   
-4.  Ajoutez du texte à la fin du fichier. Par exemple :  
+4.  Ajoutez du texte à la fin du fichier. Exemple :  
   
     ```  
     Hello, world!  
@@ -133,7 +130,7 @@ Les modèles de texte T4 au moment de la conception vous permettent de générer
 ## <a name="debugging-a-design-time-t4-text-template"></a>Débogage d'un modèle de texte T4 au moment de la conception  
  Pour déboguer un modèle de texte  
   
-- Insérez `debug="true"` dans la directive `template`. Par exemple :  
+- Insérez `debug="true"` dans la directive `template`. Exemple :  
   
    `<#@ template debug="true" hostspecific="false" language="C#" #>`  
   
@@ -280,7 +277,7 @@ Les modèles de texte T4 au moment de la conception vous permettent de générer
  Le type de `this.Host` (en VB, `Me.Host`) est `Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost`.  
   
 ### <a name="getting-data-from-includevsprvsincludesvsprvs-mdmd"></a>Obtention de données à partir de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
- Pour utiliser des services fournis dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], définissez l'attribut `hostSpecific` et chargez l'assembly `EnvDTE`. Vous pouvez ensuite utiliser IServiceProvider.GetCOMService() pour accéder à DTE et d'autres services. Par exemple :  
+ Pour utiliser des services fournis dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], définissez l'attribut `hostSpecific` et chargez l'assembly `EnvDTE`. Vous pouvez ensuite utiliser IServiceProvider.GetCOMService() pour accéder à DTE et d'autres services. Exemple :  
   
 ```scr  
 <#@ template hostspecific="true" language="C#" #>  
@@ -324,9 +321,9 @@ Warning("A warning message");
 ```  
   
 ##  <a name="Converting"></a> Conversion d’un fichier existant à un modèle  
- L’une des fonctionnalités utiles des modèles est que leur apparence se rapproche des fichiers qu’ils génèrent, avec en plus du code de programme inséré. Cela nous suggère une méthode utile pour créer un modèle. Tout d’abord créer un fichier ordinaire en tant que prototype, comme un [!INCLUDE[csprcs](../includes/csprcs-md.md)] de fichiers et puis introduisez graduellement du code de génération qui fait varier le fichier résultant.  
+ L'un des avantages des modèles, c'est que leur apparence se rapproche des fichiers qu'ils génèrent, avec en plus du code de programme inséré. Cela nous suggère une méthode utile pour créer un modèle. Tout d’abord créer un fichier ordinaire en tant que prototype, comme un [!INCLUDE[csprcs](../includes/csprcs-md.md)] de fichiers et puis introduisez graduellement du code de génération qui fait varier le fichier résultant.  
   
-#### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Pour convertir un fichier existant en modèle au moment du design  
+#### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Pour convertir un fichier existant en modèle au moment de la conception  
   
 1.  Ajoutez à votre projet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] un fichier du type que vous souhaitez générer, tel qu'un fichier `.cs`, `.vb` ou `.resx`.  
   
@@ -354,7 +351,7 @@ Warning("A warning message");
   
 6.  Enregistrez le fichier.  
   
-     Un fichier auxiliaire est créé, avec l'extension spécifiée. Ses propriétés sont correctes pour le type de fichier. Par exemple, le **Action de génération** propriété d’un fichier .cs serait **compiler**.  
+     Un fichier auxiliaire est créé, avec l’extension spécifiée. Ses propriétés sont correctes pour le type de fichier. Par exemple, le **Action de génération** propriété d’un fichier .cs serait **compiler**.  
   
      Vérifiez que le contenu du fichier généré est identique à celui du fichier d'origine.  
   
@@ -375,6 +372,3 @@ Warning("A warning message");
   
 ## <a name="see-also"></a>Voir aussi  
  [Instructions relatives à l’écriture de modèles de texte T4](../modeling/guidelines-for-writing-t4-text-templates.md)
-
-
-

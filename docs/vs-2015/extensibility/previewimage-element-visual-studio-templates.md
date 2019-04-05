@@ -1,36 +1,31 @@
 ---
 title: Élément PreviewImage (modèles Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - <PreviewImage> Element (Visual Studio Templates)
 - PreviewImage Element (Visual Studio Templates)
 ms.assetid: d1796f20-523b-4e0d-8ac3-ca87f3b5a9b6
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 81b80af3252cd48c2656577a6efdd6e08c251738
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 90521b5ea05aae2f54e56f21b65933a93580da85
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810219"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949317"
 ---
 # <a name="previewimage-element-visual-studio-templates"></a>Élément PreviewImage (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Spécifie l’image d’aperçu, comme un nom de fichier pour l’image d’aperçu qui apparaîtra dans le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<PreviewImage >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<PreviewImage>  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -64,4 +59,3 @@ Spécifie l’image d’aperçu, comme un nom de fichier pour l’image d’aper
 ## <a name="see-also"></a>Voir aussi  
  [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)
-

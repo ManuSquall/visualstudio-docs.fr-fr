@@ -1,12 +1,9 @@
 ---
 title: Afficher les données associées dans les applications WPF | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -24,15 +21,15 @@ ms.assetid: 3aa80194-0191-474d-9d28-5ec05654b426
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f6c939ee1a64834bd305d0ae744d9ac02e3b4410
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e1b80fe54fa17c0d7109f6a4ddb4ac5ada98ae2a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174140"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58947996"
 ---
-# <a name="display-related-data-in-wpf-applications"></a>Afficher les données associées dans les applications WPF
+# <a name="display-related-data-in-wpf-applications"></a>Afficher des données associées dans des applications WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -42,9 +39,9 @@ Dans certaines applications, vous souhaiterez utiliser des données provenant de
   
 ## <a name="to-create-controls-that-display-related-records"></a>Pour créer des contrôles qui affichent des enregistrements connexes  
   
-1.  Sur le **données** menu, cliquez sur **afficher les Sources de données** pour ouvrir le **des Sources de données** fenêtre.  
+1.  Dans le menu **Données**, cliquez sur **Afficher les sources de données** pour ouvrir la fenêtre **Sources de données**.  
   
-2.  Cliquez sur **ajouter une nouvelle Source de données**, terminez la **Configuration de Source de données** Assistant.  
+2.  Cliquez sur **Ajouter une nouvelle source de données** et suivez les étapes de l’Assistant **Configuration de source de données**.  
   
 3.  Ouvrez le Concepteur WPF et vous assurer que le concepteur contient un conteneur qui est une cible de dépôt valide pour les éléments dans le **des Sources de données** fenêtre.  
   
@@ -70,5 +67,4 @@ Dans certaines applications, vous souhaiterez utiliser des données provenant de
  [Lier des contrôles WPF à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
  [Lier des contrôles WPF à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)   
  [Créer des tables de recherche dans les applications WPF](../data-tools/create-lookup-tables-in-wpf-applications.md)   
- [Procédure pas à pas : affichage de données connexes dans une application WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)
-
+ [Procédure pas à pas : Affichage de données liées dans une Application WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)

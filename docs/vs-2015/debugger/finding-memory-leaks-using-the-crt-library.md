@@ -1,14 +1,9 @@
 ---
 title: Recherche de fuites de mémoire à l’aide de la bibliothèque CRT | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -34,20 +29,20 @@ ms.assetid: cf6dc7a6-cd12-4283-b1b6-ea53915f7ed1
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: eca7af1cb572714214f264cac35b488fba993bdd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f66abbb72e707381b30c88f88e999f502e3c7da9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726559"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953755"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Recherche de fuites de mémoire à l'aide de la bibliothèque CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les fuites de mémoire, qui correspondent à l'échec de désallocation de mémoire précédemment allouée, figurent parmi les bogues les plus difficiles à détecter des applications C/C++. Au début, vous pourrez remarquer une petite fuite de mémoire, mais au fil du temps, cette fuite de mémoire peut progressivement provoquer des problèmes allant d'une perte de performances au blocage de l'application, lorsque la mémoire devient insuffisante. Pire encore, une application connaissant une fuite de mémoire qui utiliserait toute la mémoire disponible pourrait entraîner le blocage d'une autre application, provoquant le doute quant à l'application réellement responsable du blocage. Même les fuites de mémoire apparemment sans incidence peuvent être responsables d'autres problèmes devant être corrigés.  
   
- Le débogueur [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et les bibliothèques runtime C (CRT) vous offrent la possibilité de détecter et d'identifier les fuites de mémoire.  
+ Le débogueur [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et les bibliothèques runtime C (CRT) vous offrent la possibilité de détecter et d'identifier les fuites de mémoire.  
   
 ## <a name="enabling-memory-leak-detection"></a>Activation de la détection des fuites de mémoire  
  Les principaux outils de détection des fuites de mémoire sont le débogueur et les fonctions du tas de débogage des bibliothèques Runtime C (CRT).  
@@ -114,7 +109,7 @@ Object dump complete.
   
 - le numéro d'allocation de mémoire, en l'occurrence `18` ;  
   
-- le [type de bloc](http://msdn.microsoft.com/en-us/e2f42faf-0687-49e7-aa1f-916038354f97), en l'occurrence `normal` ;  
+- le [type de bloc](http://msdn.microsoft.com/e2f42faf-0687-49e7-aa1f-916038354f97), en l'occurrence `normal` ;  
   
 - l'emplacement de stockage hexadécimal, en l'occurrence `0x00780E80` ;  
   
@@ -271,6 +266,3 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
  [Détails du tas de débogage CRT](../debugger/crt-debug-heap-details.md)   
  [Sécurité du débogueur](../debugger/debugger-security.md)   
  [Débogage du code natif](../debugger/debugging-native-code.md)
-
-
-

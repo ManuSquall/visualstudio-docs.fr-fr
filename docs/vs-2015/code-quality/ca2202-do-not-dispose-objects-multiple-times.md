@@ -1,14 +1,9 @@
 ---
-title: 'CA2202 : Ne pas supprimer des objets plusieurs fois | Microsoft Docs'
-ms.custom: ''
+title: 'CA2202 : Ne pas supprimer des objets plusieurs fois | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2202
 - Do not dispose objects multiple times
@@ -20,14 +15,14 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: de3bc29e6d843532e4c15db1e33673d4f63c5179
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2b5968c0ba577893bae87e67dee3aa0e8a178e41
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830715"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948329"
 ---
-# <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202 : Ne pas supprimer des objets plusieurs fois
+# <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202 : Ne pas supprimer d'objets plusieurs fois
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -44,7 +39,7 @@ ms.locfileid: "49830715"
  A implémenté correctement <xref:System.IDisposable.Dispose%2A> méthode peut être appelée plusieurs fois sans lever d’exception. Toutefois, cela n’est pas garanti et pour éviter de générer un <xref:System.ObjectDisposedException?displayProperty=fullName> vous ne devez pas appeler <xref:System.IDisposable.Dispose%2A> plusieurs fois sur un objet.
 
 ## <a name="related-rules"></a>Règles associées
- [CA2000 : Supprimez les objets avant de perdre l’étendue](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
+ [CA2000 : Supprimez les objets avant de portée](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, modifier l’implémentation donc autrement indépendamment du chemin d’accès du code, <xref:System.IDisposable.Dispose%2A> est appelée qu’une seule fois pour l’objet.
@@ -90,6 +85,3 @@ finally
 
 ## <a name="see-also"></a>Voir aussi
  <xref:System.IDisposable?displayProperty=fullName> [Modèle de suppression](http://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
-
-
-

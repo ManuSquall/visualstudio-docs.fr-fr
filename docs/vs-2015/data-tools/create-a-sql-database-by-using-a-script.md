@@ -1,12 +1,9 @@
 ---
 title: Créer une base de données SQL à l’aide d’un script | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +13,13 @@ ms.assetid: 36f913c0-f5a7-4831-83a0-baba721ac95c
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 13816c499002f8eaf81067aba8d1854d06a41445
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: dc35def483b80610b9480dfd57320712d75fe0eb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266589"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949870"
 ---
 # <a name="create-a-sql-database-by-using-a-script"></a>Créer une base de données SQL à l’aide d’un script
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -276,4 +273,3 @@ Dans cette procédure pas à pas, vous utilisez Visual Studio pour créer une pe
   
 ##  <a name="DeployDatabase"></a> Déployer la base de données  
  Quand vous appuyez sur la **F5** clé, vous déployez (ou publiez) la base de données à une base de données de base de données locale par défaut. Vous pouvez déployer la base de données vers un autre emplacement en ouvrant la page de propriétés pour le projet, en sélectionnant le **déboguer** onglet, puis en modifiant la chaîne de connexion.
-

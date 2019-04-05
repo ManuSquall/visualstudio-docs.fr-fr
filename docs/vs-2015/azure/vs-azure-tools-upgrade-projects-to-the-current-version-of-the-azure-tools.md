@@ -1,8 +1,8 @@
 ---
-title: Comment mettre à niveau des projets vers la version actuelle d’Azure tools | Microsoft Docs
-description: Découvrez comment mettre à niveau un projet Azure dans Visual Studio vers la version actuelle d’Azure tools
+title: Mise à niveau des projets vers la version actuelle d’Azure Tools | Microsoft Docs
+description: Découvrez comment mettre à niveau un projet Azure dans Visual Studio vers la version actuelle d’Azure Tools
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 1d64070a-078d-468a-87f4-e6715de6475f
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,37 +11,36 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: c5fb70f2dd09338dd2e2f6b01cb60bf2be0cdbdd
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 27ab6619a4d36fc105a3b8a668a31a33ae4c2a43
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51001988"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950925"
 ---
-# <a name="how-to-upgrade-projects-to-the-current-version-of-the-azure-tools-for-visual-studio"></a>Guide pratique pour mettre à niveau des projets vers la version actuelle d’Azure Tools pour Visual Studio
+# <a name="how-to-upgrade-projects-to-the-current-version-of-the-azure-tools-for-visual-studio"></a>Mise à niveau des projets vers la version actuelle d’Azure Tools pour Visual Studio
 ## <a name="overview"></a>Vue d'ensemble
-Après avoir installé la version actuelle de Windows Azure Tools (ou une version précédente est plus récente que 1.6), tous les projets qui ont été créés à l’aide d’Azure Tools version 1.6 (novembre 2011) sera mis à niveau automatiquement dès que vous les ouvrez. Si vous avez créé des projets à l’aide de la version 1.6 (novembre 2011) de ces outils et que vous avez toujours cette version installée, vous pouvez ouvrir ces projets dans l’ancienne version et décidez ultérieurement s’il faut mettre à niveau.
+Une fois installée la version actuelle d’Azure Tools (ou une autre version ultérieure à la version 1.6), tous les projets ayant été créés à l’aide d’une version d’Azure Tools antérieure à la version 1.6 (novembre 2011) seront automatiquement mis à niveau au moment de leur ouverture. Si vous avez créé des projets à l’aide de la version 1.6 (novembre 2011) et que celle-ci est encore installée, vous pourrez ouvrir ces projets dans l’ancienne version et décider plus tard s’ils doivent être mis à niveau.
 
-## <a name="how-your-project-changes-when-you-upgrade-it"></a>Comment votre projet change lorsque vous mettez à niveau
-Si un projet est mis à niveau automatiquement ou si vous spécifiez que vous souhaitez mettre à niveau, votre projet est modifié pour fonctionner avec les versions actuelles de certains assemblys, et certaines propriétés sont également modifiées comme décrit dans cette section. Si votre projet a besoin d’autres modifications pour être compatible avec la version la plus récente des outils, vous devez effectuer ces modifications manuellement.
+## <a name="how-your-project-changes-when-you-upgrade-it"></a>Changements provoqués par la mise à niveau de votre projet
+Si un projet est mis à niveau automatiquement ou si vous spécifiez que vous voulez le mettre à niveau, il sera modifié en vue de fonctionner avec les versions actuelles de certains assemblys. En outre, certaines propriétés seront également modifiées, comme le décrit cette section. Si votre projet nécessite que d’autres modifications soient compatibles avec la version la plus récente d’Azure Tools, vous devrez apporter ces modifications manuellement.
 
-* Le fichier web.config pour les rôles web et le fichier app.config pour les rôles de travail sont mis à jour pour faire référence à la version la plus récente de Microsoft.WindowsAzure.Diagnostics.DiagnosticMonitoirTraceListener.dll.
+* Le fichier web.config pour les rôles web et le fichier app.config pour les rôles de travail sont mis à jour afin de référencer la version la plus récente de Microsoft.WindowsAzure.Diagnostics.DiagnosticMonitorTraceListener.dll.
 * Les assemblys Microsoft.WindowsAzure.StorageClient.dll, Microsoft.WindowsAzure.Diagnostics.dll et Microsoft.WindowsAzure.ServiceRuntime.dll sont mis à niveau vers les nouvelles versions.
-* Profils de publication qui ont été stockées dans le fichier de projet Windows Azure (.ccproj) sont déplacés vers un fichier distinct, avec l’extension .azurePubXml, dans le **publier** sous-répertoire.
-* Certaines propriétés dans le profil de publication sont mises à jour pour prendre en charge des fonctionnalités nouvelles et modifiées. **AllowUpgrade** est remplacé par **DeploymentReplacementMethod** , car vous pouvez mettre à jour un service cloud déployé simultanément ou incrémentielle.
-* La propriété **UseIISExpressByDefault** est ajouté et défini sur false pour que le serveur web qui est utilisé pour le débogage ne changer pas automatiquement à partir de Internet Information Services (IIS) pour IIS Express. IIS Express est le serveur web par défaut pour les projets qui sont créés avec les versions plus récentes des outils.
-* Si la mise en cache Azure est hébergé dans un ou plusieurs des rôles de votre projet, certaines propriétés dans la configuration du service (fichier .cscfg) et la définition de service (fichier .csdef) seront modifiées lorsqu’un projet est mis à niveau. Si le projet utilise le package NuGet de la mise en cache Azure, le projet est mis à niveau vers la version la plus récente du package. Vous devez ouvrir le fichier web.config et vérifier que la configuration du client a été conservée pendant la mise à niveau. Si vous avez ajouté les références aux assemblys clients Azure Caching sans utiliser le package NuGet, ces assemblys ne sont pas mises à jour ; Vous devez manuellement mettre à jour ces références aux nouvelles versions.
+* Les profils de publication qui étaient stockés dans le fichier projet Azure (.ccproj) sont déplacés vers un autre fichier ayant une extension .azurePubXml, situé dans le sous-répertoire **Publier** .
+* Certaines propriétés du profil de publication sont mises à jour de manière à prendre en charge les nouvelles fonctionnalités et les fonctionnalités modifiées. **AllowUpgrade** est remplacé par **DeploymentReplacementMethod**, car vous pouvez mettre à jour un service cloud déployé de manière simultanée ou incrémentielle.
+* La propriété **UseIISExpressByDefault** est ajoutée et définie sur la valeur false pour que le serveur web qui est utilisé pour le débogage ne passe pas automatiquement d’Internet Information Services (IIS) à IIS Express. IIS Express est le serveur web par défaut des projets créés à l’aide des versions récentes d’Azure Tools.
+* Si Azure Caching est hébergé dans un ou plusieurs rôles de votre projet, certaines propriétés de la configuration du service (fichier .cscfg) et de la définition du service (fichier .csdef) seront modifiées au moment de la mise à niveau d’un projet. Si le projet utilise le package NuGet d’Azure Caching, il sera mis à niveau vers la version la plus récente du package. Vous devez ouvrir le fichier web.config et vérifier que la configuration du client a été conservée pendant la mise à niveau. Si vous avez ajouté les références aux assemblys clients Azure Caching sans utiliser le package NuGet, les assemblys ne seront pas mis à jour. Vous devrez mettre à jour manuellement les références aux nouvelles versions.
 
 > [!IMPORTANT]
-> Pour F# projets, vous devez manuellement mettre à jour des références aux assemblys Azure afin qu’ils référencent les versions plus récentes de ces assemblys.
+> Pour les projets en langage F#, vous devrez mettre à jour manuellement les références aux assemblys Azure pour que les versions les plus récentes de ces assemblys soient référencées.
 > 
 > 
 
-### <a name="how-to-upgrade-an-azure-project-to-the-current-release"></a>Comment mettre à niveau un projet Azure vers la version actuelle
-1. Installer la version actuelle de Windows Azure Tools dans l’installation de Visual Studio que vous souhaitez utiliser pour le projet mis à niveau, puis ouvrez le projet que vous souhaitez mettre à niveau. Si le projet a été créé avec Azure Tools version 1.6 (novembre 2011), il est automatiquement mis à niveau vers la version actuelle. Si le projet a été créé avec le novembre 2011 version et cette version est toujours installée, le projet s’ouvre dans cette version.
-2. Dans l’Explorateur de solutions, ouvrez le menu contextuel du nœud de projet, choisissez **propriétés**, puis choisissez le **Application** onglet de la boîte de dialogue qui s’affiche.
+### <a name="how-to-upgrade-an-azure-project-to-the-current-release"></a>Mise à niveau d’un projet Azure vers la version actuelle
+1. Installez la version actuelle d’Azure Tools dans l’installation de Visual Studio à utiliser pour le projet mis à niveau, puis ouvrez celui-ci. Si le projet a été créé avec Azure Tools version 1.6 (novembre 2011), il sera automatiquement mis à niveau vers la version actuelle. Si le projet a été créé avec la version de novembre 2011 et que celle-ci est toujours installée, le projet s’ouvrira dans cette version.
+2. Dans l’Explorateur de solutions, ouvrez le menu contextuel du nœud du projet, choisissez **Propriétés**, puis choisissez l’onglet **Application** de la boîte de dialogue qui s’affiche.
    
-    Le **Application** onglet affiche la version des outils qui est associé le projet. Si la version actuelle de Windows Azure Tools s’affiche, le projet a déjà été mis à niveau. Si vous avez installé une version plus récente des outils que celle indiquée dans l’onglet, un **mise à niveau** bouton s’affiche.
-3. Choisissez le **mise à niveau** bouton Mettre à niveau un projet vers la version actuelle des outils.
-4. Générez le projet, puis résolvez les erreurs qui résultent de modifications de l’API. Pour plus d’informations sur la façon de modifier votre code pour la nouvelle version, consultez la documentation de l’API concernée.
-
+    L’onglet **Application** affiche la version d’Azure Tools qui est associée au projet. Si la version actuelle d’Azure Tools s’affiche, le projet a déjà été mis à niveau. Si vous avez installé une version plus récente que celle indiquée sous l’onglet, le bouton **Mettre à niveau** s’affiche.
+3. Choisissez le bouton **Mettre à niveau** pour mettre à niveau un projet vers la version actuelle d’Azure Tools.
+4. Générez le projet, puis résolvez les erreurs qui résultent des modifications de l’API. Pour plus d’informations sur la modification de votre code pour la nouvelle version, consultez la documentation de l’API concernée.

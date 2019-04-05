@@ -1,44 +1,41 @@
 ---
 title: 'Procédure pas à pas : Débogage d’un modèle de texte qui accède à un modèle | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: af46a7fe-6b98-4d3d-b816-0bbf8e81e220
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ca80111415c869543297ed24707ae27f0490f07b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 4d6b759f62c4faa7e2f75f53f85cb04ba4484a7f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924887"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952567"
 ---
-# <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Procédure pas à pas : débogage d'un modèle de texte accédant à un modèle
+# <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Procédure pas à pas : Débogage d’un modèle de texte accédant à un modèle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de langage spécifique à un domaine, vous obtiendrez des erreurs lorsque le moteur transforme le modèle de code source ou lors de la compilation du code généré. La procédure suivante montre quelques opérations que vous pouvez faire pour déboguer un modèle de texte.  
   
 > [!NOTE]
->  Pour plus d’informations sur le texte modèles en général, consultez [génération de Code et modèles de texte T4](../modeling/code-generation-and-t4-text-templates.md). Pour plus d’informations sur le débogage des modèles de texte, consultez [procédure pas à pas : débogage d’un modèle de texte](http://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).  
+>  Pour plus d’informations sur le texte modèles en général, consultez [génération de Code et modèles de texte T4](../modeling/code-generation-and-t4-text-templates.md). Pour plus d’informations sur le débogage des modèles de texte, consultez [procédure pas à pas : Débogage d’un modèle de texte](http://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).  
   
 ## <a name="creating-a-domain-specific-language-solution"></a>Création d’une Solution de langage spécifique à un domaine  
  Dans cette procédure, vous créez une solution de langage spécifique à un domaine qui présente les caractéristiques suivantes :  
   
-- Nom : DebuggingTestLanguage  
+- Nom : DebuggingTestLanguage  
   
-- Modèle de solution : langage Minimal  
+- Modèle de solution : Langage minimal  
   
 - Extension de fichier : .ddd  
   
 - Nom de la société : Fabrikam  
   
-  Pour plus d’informations sur la création d’une solution de langage spécifique à un domaine, consultez [Comment : créer une Solution de langage spécifique à un domaine](../modeling/how-to-create-a-domain-specific-language-solution.md).  
+  Pour plus d’informations sur la création d’une solution de langage spécifique à un domaine, consultez [Comment : Créer une solution de langage spécifique à un domaine](../modeling/how-to-create-a-domain-specific-language-solution.md).  
   
 ## <a name="creating-a-text-template"></a>Création d’un modèle de texte  
  Ajouter un modèle de texte à votre solution.  
@@ -164,7 +161,7 @@ Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de lang
   
      (C#)  
   
-     **Compilation de la transformation : Microsoft.VisualStudio.TextTemplating\<GUID >. GeneratedTextTransformation' ne contient pas d’une définition pour 'ExampleModel'**  
+     **Compilation de la transformation : Microsoft.VisualStudio.TextTemplating\<GUID>. GeneratedTextTransformation' ne contient pas d’une définition pour 'ExampleModel'**  
   
      (Visual Basic)  
   
@@ -180,7 +177,7 @@ Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de lang
   
 4.  Pour corriger le code, remplacez le nom de propriété par `LibraryModel` dans le code de modèle de texte.  
   
-     Les modifications apparaissent en surbrillance.  
+     Les modifications sont mises en surbrillance.  
   
     ```csharp  
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>  
@@ -216,6 +213,3 @@ Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de lang
 5.  Dans **l’Explorateur de solutions**, DebugTest.tt d’avec le bouton droit, puis cliquez sur **exécuter un outil personnalisé**.  
   
      Maintenant, le système transforme le modèle de texte et génère le fichier de sortie correspondant. Vous ne verrez pas toutes les erreurs dans le **liste d’erreurs** fenêtre.
-
-
-

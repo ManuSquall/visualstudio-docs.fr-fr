@@ -1,25 +1,22 @@
 ---
 title: Naviguer dans le modèle UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: 6d789b6d-2aa9-4ceb-92c4-84a300065a76
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6f77e72c55c0984f66a6884b0582716e5529abd0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 678c09cca8f7b90c9be6dc2b7101ca04d9f94812
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727774"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949965"
 ---
 # <a name="navigate-the-uml-model"></a>Naviguer dans le modèle UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +45,7 @@ Cette rubrique présente les principaux types du modèle UML.
   
  Si vous supprimez un élément du modèle, toute relation à laquelle il participe est supprimée automatiquement et la propriété à l'autre extrémité est mise à jour.  
   
- Si la spécification UML assigne une multiplicité de 0..1 à une propriété, elle peut avoir la valeur `null`. Une multiplicité dont la limite maximale est supérieure à 1 signifie que la propriété .NET présente le type : `IEnumerable<` *Type*`>`.  
+ Si la spécification UML assigne une multiplicité de 0..1 à une propriété, elle peut avoir la valeur `null`. Une multiplicité dont la limite maximale est supérieure à 1 signifie que la propriété .NET présente le type : `IEnumerable<`*Type*`>`.  
   
  Pour plus d’informations sur le parcours des relations, consultez [naviguer parmi les relations avec l’API UML](../modeling/navigate-relationships-with-the-uml-api.md).  
   
@@ -61,7 +58,7 @@ Cette rubrique présente les principaux types du modèle UML.
   
  Chaque élément de modèle est créé avec un propriétaire. Pour plus d’informations, consultez [créer des éléments et des relations dans les modèles UML](../modeling/create-elements-and-relationships-in-uml-models.md).  
   
- ![Diagramme de classes : modèle, diagramme, forme et élément](../modeling/media/uml-mm1.png "UML_MM1")  
+ ![Diagramme de classes : Modèle, diagramme, forme et élément](../modeling/media/uml-mm1.png "UML_MM1")  
   
 ## <a name="shapes-and-diagrams"></a>Formes et diagrammes  
  Les éléments du modèle UML peuvent être illustrés sur des diagrammes. Différents types de diagrammes peuvent afficher différents sous-types d'IElement.  
@@ -75,7 +72,7 @@ Cette rubrique présente les principaux types du modèle UML.
 ## <a name="access-to-the-model-in-extensions"></a>Accès au modèle dans des extensions  
  Dans les extensions [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] définies comme composants MEF, vous pouvez déclarer des propriétés qui importent les informations à partir du contexte dans lequel l'extension s'exécute.  
   
-|Type d'attribut|Fournit l'accès à|En savoir plus|  
+|Type d'attribut|Fournit l'accès à|Complément d'information|  
 |--------------------|----------------------------------|----------------------|  
 |Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation<br /><br /> IDiagramContext<br /><br /> (dans Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll)|Diagramme de focus actuel.|[Définir une commande de menu sur un diagramme de modélisation](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|  
 |Microsoft.VisualStudio.Modeling.ExtensionEnablement<br /><br /> ILinkedUndoContext<br /><br /> (dans Microsoft.VisualStudio.Modeling.Sdk.[version].dll)|Permet de regrouper des modifications dans des transactions.|[Lier des mises à jour de modèles UML à l’aide de transactions](../modeling/link-uml-model-updates-by-using-transactions.md)|  
@@ -123,7 +120,7 @@ foreach (IShape<IInterface> in
 ```  
   
 ## <a name="accessing-another-model-or-diagrams"></a>Accès à un autre modèle ou à d'autres diagrammes  
- Vous pouvez :  
+ Vous pouvez :  
   
 -   utiliser [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Model Bus pour créer des liens entre des éléments dans différents modèles. Pour plus d’informations, consultez [intégrer des modèles UML avec d’autres modèles et outils](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
   
@@ -134,6 +131,3 @@ foreach (IShape<IInterface> in
 ## <a name="see-also"></a>Voir aussi  
  [Étendre des diagrammes et des modèles UML](../modeling/extend-uml-models-and-diagrams.md)   
  [Programmation avec l’API UML](../modeling/programming-with-the-uml-api.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: IDiaStackFrame | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 486d25b8-a590-41c1-bdb5-faff3ae35632
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a7a9193c758f822bc67cd625ce2e01a0888f0bfd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3199498f9e31f65045f7df44c4c6b6c39be18f56
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764218"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953684"
 ---
 # <a name="idiastackframe"></a>IDiaStackFrame
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ IDiaStackFrame : IUnknown
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[IDiaStackFrame::get_allocatesBasePointer](../../debugger/debug-interface-access/idiastackframe-get-allocatesbasepointer.md)|Récupère un indicateur indiquant que le pointeur de base est alloué pour le code dans cette plage d’adresses. Cette méthode est déconseillée.|  
+|[IDiaStackFrame::get_allocatesBasePointer](../../debugger/debug-interface-access/idiastackframe-get-allocatesbasepointer.md)|Récupère un indicateur indiquant que le pointeur de base est alloué pour le code dans cette plage d’adresses. Cette méthode est dépréciée.|  
 |[IDiaStackFrame::get_base](../../debugger/debug-interface-access/idiastackframe-get-base.md)|Récupère la base de l’adresse du frame.|  
 |[IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)|Récupère un indicateur spécifiant que Gestion des exceptions C++ est en vigueur.|  
 |[IDiaStackFrame::get_functionStart](../../debugger/debug-interface-access/idiastackframe-get-functionstart.md)|Récupère un indicateur qui spécifie que le bloc contient le point d’entrée d’une fonction.|  
@@ -109,17 +104,14 @@ void PrintStackFrame(IDiaStackFrame* pFrame)
 ```  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : Dia2.h  
+ En-tête : Dia2.h  
   
  Bibliothèque : diaguids.lib  
   
  DLL : msdia80.dll  
   
 ## <a name="see-also"></a>Voir aussi  
- [Interfaces (SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Interfaces (Kit SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)   
  [IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)   
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)
-
-
-

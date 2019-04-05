@@ -1,26 +1,21 @@
 ---
 title: Séquence d’initialisation des sous-types de projet | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project subtypes, initialization sequence
 ms.assetid: f657f8c3-5e68-4308-9971-e81e3099ba29
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 53c0a474a5a5caf887599bc50e623bd25e7be782
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 79bcd3981da8d8aee37e802b2463b4b33b60c430
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746525"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951065"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>Séquence d’initialisation des sous-types de projets
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -156,4 +151,3 @@ HRESULT HrCreateInnerProj
 ## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.Shell.Flavor>   
  [Sous-types de projets](../../extensibility/internals/project-subtypes.md)
-

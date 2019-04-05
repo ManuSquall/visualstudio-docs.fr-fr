@@ -1,28 +1,23 @@
 ---
 title: 'Procédure pas à pas : Affichage de saisie semi-automatique des instructions | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - statement completion
 ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
 caps.latest.revision: 37
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 097cb671e15b75edd7e61f7860cf3a0c03123c9b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 06377a3bc8bd192a7c3f66d359350148fe912239
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733036"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949976"
 ---
-# <a name="walkthrough-displaying-statement-completion"></a>Procédure pas à pas : affichage de la saisie semi-automatique des instructions
+# <a name="walkthrough-displaying-statement-completion"></a>Procédure pas à pas : Affichage de la saisie semi-automatique des instructions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez implémenter la saisie semi-automatique des instructions en langage en définissant les identificateurs pour lequel vous souhaitez fournir la saisie semi-automatique et puis déclenchant une session de saisie semi-automatique. Vous pouvez définir la saisie semi-automatique des instructions dans le contexte d’un service de langage, définir votre propre extension de nom de fichier et le type de contenu et ensuite afficher la saisie semi-automatique pour uniquement ce type, ou vous pouvez déclencher la saisie semi-automatique pour un type de contenu existant, par exemple, « texte en clair ». Cette procédure pas à pas montre comment déclencher la saisie semi-automatique des instructions pour le type de contenu « texte en clair », qui est le type de contenu des fichiers texte. Le type de contenu « texte » est l’ancêtre de tous les autres types de contenu, y compris le code et les fichiers XML.  
@@ -50,7 +45,7 @@ Vous pouvez implémenter la saisie semi-automatique des instructions en langage 
   
      Microsoft.VisualStudio.Language.Intellisense  
   
-     Assemblys Microsoft.VisualStudio.OLE.Interop  
+     Microsoft.VisualStudio.OLE.Interop  
   
      Microsoft.VisualStudio.Shell.14.0  
   
@@ -209,5 +204,4 @@ Vous pouvez implémenter la saisie semi-automatique des instructions en langage 
 4.  Lorsque vous tapez tout d’abord « a » et ensuite « d », une liste qui contient « addition » et « adaptation » doit être affichée. Notez que l’addition est sélectionnée. Lorsque vous tapez un autre « d », la liste doit contenir « addition, uniquement » qui est maintenant sélectionnée. Vous pouvez valider « addition » en appuyant sur la touche espace, tabulation ou entrée, ou faire disparaître la liste en tapant ÉCHAP ou une autre clé.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : Liaison d’un type de contenu à une extension de nom de fichier](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [Procédure pas à pas : Liaison d’un Type de contenu à une Extension de nom de fichier](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

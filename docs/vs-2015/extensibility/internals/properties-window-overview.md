@@ -1,26 +1,21 @@
 ---
 title: Vue d’ensemble de la fenêtre Propriétés | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window
 ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8b733a6845a61a71f15d8574666b345dedbf6f50
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 224fb081f21701433a84121985f90351225036e5
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752096"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58947926"
 ---
 # <a name="properties-window-overview"></a>Vue d'ensemble de la fenêtre Propriétés
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ Le **propriétés** fenêtre permet d’afficher les propriétés d’objets sé
 |Nom de l’interface|Description|  
 |--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>|Fournit une liste des catégories pour le **propriétés** fenêtre et mappe chaque propriété à une catégorie.|  
-|[Interface IDispatch](http://msdn.microsoft.com/en-us/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)|Expose des méthodes et des propriétés à la programmation des outils et autres applications qui prennent en charge d’automation d’un objet.|  
+|[Interface IDispatch](http://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)|Expose des méthodes et des propriétés à la programmation des outils et autres applications qui prennent en charge d’automation d’un objet.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>|Fournit des boutons de sélection (...) appelé *générateurs* qui ouvrir des fenêtres de boîte de dialogue modale implémentées par l’objet lui-même. Utilisé lorsqu’une valeur n’est pas facilement tapée par l’utilisateur dans un champ de texte. Par exemple, il peut être utilisé pour ouvrir un sélecteur de couleurs qui détermine la valeur RVB pour vous.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|Fournit l’accès aux objets utilisés pour mettre à jour les informations affichées dans le **propriétés** fenêtre. <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> est implémenté par les VSPackages pour chaque fenêtre qui contient les objets sélectionnables avec les propriétés associées à afficher.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>|Fournit des informations sur le type d’un objet comme des méthodes d’une interface et des champs d’une structure.|  
@@ -58,4 +53,3 @@ Le **propriétés** fenêtre permet d’afficher les propriétés d’objets sé
 ## <a name="see-also"></a>Voir aussi  
  [Étendre les propriétés](../../extensibility/internals/extending-properties.md)   
  [Champs et interfaces de la fenêtre Propriétés](../../extensibility/internals/properties-window-fields-and-interfaces.md)
-

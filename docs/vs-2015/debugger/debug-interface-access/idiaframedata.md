@@ -1,14 +1,9 @@
 ---
 title: IDiaFrameData | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 2f1b4986-341b-4641-89a4-226e261e9d93
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 027ff793932e917cf65fab9b4fd1175fad35d43c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9619d4f3d5670d3692c21d850201a2f39d96b922
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740710"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948778"
 ---
 # <a name="idiaframedata"></a>IDiaFrameData
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,7 +50,7 @@ IDiaFrameData : IUnknown
 |[IDiaFrameData::get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)|Récupère un indicateur qui indique que la gestion des exceptions de système est en vigueur.|  
 |[IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)|Récupère un indicateur qui indique que des exceptions C++ est en vigueur.|  
 |[IDiaFrameData::get_functionStart](../../debugger/debug-interface-access/idiaframedata-get-functionstart.md)|Récupère un indicateur qui indique que le bloc contient le point d’entrée d’une fonction.|  
-|[IDiaFrameData::get_allocatesBasePointer](../../debugger/debug-interface-access/idiaframedata-get-allocatesbasepointer.md)|Récupère un indicateur qui indique que le pointeur de base est alloué pour le code dans cette plage d’adresses. Cette méthode est déconseillée.|  
+|[IDiaFrameData::get_allocatesBasePointer](../../debugger/debug-interface-access/idiaframedata-get-allocatesbasepointer.md)|Récupère un indicateur qui indique que le pointeur de base est alloué pour le code dans cette plage d’adresses. Cette méthode est dépréciée.|  
 |[IDiaFrameData::get_type](../../debugger/debug-interface-access/idiaframedata-get-type.md)|Récupère le type de frame de spécifiques au compilateur.|  
 |[IDiaFrameData::get_functionParent](../../debugger/debug-interface-access/idiaframedata-get-functionparent.md)|Récupère le frame interface de données pour englobante (fonction).|  
 |[IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)|Effectue le déroulement de pile et retourne l’état actuel des registres dans une interface de frame de parcours de pile.|  
@@ -121,17 +116,14 @@ void PrintFrameData(IDiaFrameData* pFrameData){
 ```  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : Dia2.h  
+ En-tête : Dia2.h  
   
  Bibliothèque : diaguids.lib  
   
  DLL : msdia80.dll  
   
 ## <a name="see-also"></a>Voir aussi  
- [Interfaces (SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Interfaces (Kit SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   
  [IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)   
  [IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)
-
-
-

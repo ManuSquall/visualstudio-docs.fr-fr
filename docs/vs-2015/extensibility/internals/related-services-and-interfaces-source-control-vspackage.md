@@ -1,27 +1,22 @@
 ---
 title: Les Services associés et les Interfaces (VSPackage de contrôle de code Source) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, interfaces
 - interfaces, source control packages
 ms.assetid: 3e96e838-5675-46bb-99cf-40d420086038
 caps.latest.revision: 27
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8f308c0d8669bc8950578ffc615ebe64b91a4ea7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5497c74c75c9c5a97672152ab521e1ccf141b540
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764315"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948921"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Services et interfaces associés (VSPackage de contrôle de code source)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ Cette section répertorie toutes les interfaces associées à un VSPackage dans 
   
  Les interfaces sont :  
   
--   Requis : L’entité appropriée (contrôle de code source VSPackage, Stub de contrôle de code Source, de projet) doit implémenter l’interface.  
+-   Obligatoire : L’entité appropriée (contrôle de code source VSPackage, Stub de contrôle de code Source, de projet) doit implémenter l’interface.  
   
 -   Recommandé : L’entité doit implémenter cette interface ; Sinon, les fonctionnalités de contrôle de code source peuvent être limitées.  
   
@@ -70,4 +65,3 @@ Cette section répertorie toutes les interfaces associées à un VSPackage dans 
   
 ## <a name="see-also"></a>Voir aussi  
  [Éléments de conception](../../extensibility/internals/source-control-vspackage-design-elements.md)
-

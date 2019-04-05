@@ -1,14 +1,9 @@
 ---
-title: 'CA1054 : Les paramètres URI ne doivent pas être des chaînes | Microsoft Docs'
-ms.custom: ''
+title: 'CA1054 : Paramètres URI ne doivent pas être chaînes | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1054
 - UriParametersShouldNotBeStrings
@@ -20,14 +15,14 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: eace9811eb7f4602e204bd62563c23cad39e5a5d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f7af579cf92a785f9850805ae06743a15364eade
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899342"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938504"
 ---
-# <a name="ca1054-uri-parameters-should-not-be-strings"></a>CA1054 : Les paramètres Uri ne doivent pas être des chaînes
+# <a name="ca1054-uri-parameters-should-not-be-strings"></a>CA1054 : Les paramètres URI ne doivent pas être des chaînes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -57,13 +52,10 @@ ms.locfileid: "49899342"
  [!code-vb[FxCop.Design.UriNotString#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.UriNotString/vb/FxCop.Design.UriNotString.vb#1)]
 
 ## <a name="related-rules"></a>Règles associées
- [CA1056 : Les propriétés d’URI ne doivent pas être des chaînes](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
+ [CA1056 : Propriétés de l’URI ne doivent pas être de chaînes](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
 
- [CA1055 : Les valeurs de retour d’URI ne doivent pas être des chaînes](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
+ [CA1055 : Les valeurs doivent être pas des chaînes de retour URI](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
 
  [CA2234 : Passez des objets System.Uri au lieu de chaînes](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)
 
- [CA1057 : Les surcharges d’URI de chaîne appellent des surcharges de System.Uri](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)
-
-
-
+ [CA1057 : Surcharges d’URI de chaîne appellent les surcharges de System.Uri](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)

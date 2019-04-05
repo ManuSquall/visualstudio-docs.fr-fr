@@ -1,26 +1,21 @@
 ---
 title: Liaison des points d’arrêt | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - breakpoints, binding
 ms.assetid: 70737387-c52f-4dae-8865-77d4b203bf25
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f8061b8d9a9cf3f29889405ea8004a79a0af8216
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b94960130ef0b384a7e3a946dcbd2a4e4794252f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807366"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953098"
 ---
 # <a name="binding-breakpoints"></a>Liaison de points d’arrêt
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,4 +57,3 @@ Si l’utilisateur définit un point d’arrêt, peut-être en appuyant sur F9, 
   
 ## <a name="see-also"></a>Voir aussi  
  [Tâches de débogage](../../extensibility/debugger/debugging-tasks.md)
-

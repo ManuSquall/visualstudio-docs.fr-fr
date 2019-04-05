@@ -1,14 +1,9 @@
 ---
 title: Modifier & Continuer des erreurs et avertissements (c#) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 f1_keywords:
 - vs.csharp.enc.error_4001
 - vs.csharp.enc.error_4034
@@ -65,18 +60,18 @@ helpviewer_keywords:
 ms.assetid: c0e12b0a-8009-4a4a-979f-c804a91a5d9b
 caps.latest.revision: 11
 ms.author: mikejo
-manager: douge
-ms.openlocfilehash: ca47a7b7ea5a330176b6f75862819a4c0a5c64d9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 36d2665eef36e0e233cf02d241f550f3e701800f
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793319"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58949557"
 ---
-# <a name="edit-and-continue-errors-and-warnings-c"></a>Erreurs et avertissements de Modifier & Continuer (C#)
-Vous avez modifié une section de code qui n'est pas autorisée en Visual C# dans Modifier & Continuer.  
+# <a name="edit-and-continue-errors-and-warnings-c"></a>Erreurs et avertissements de Modifier &amp; Continuer (C#)
+Vous avez modifié une section de code qui n'est pas autorisée en Visual C# dans Modifier & Continuer.  
   
- [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)]Modifier & Continuer vous permet d'arrêter l'exécution d'un programme en mode Arrêt, d'apporter des modifications à l'exécution de code, puis de continuer l'exécution du programme avec les modifications récemment incorporées.  
+ [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)]Modifier &amp; Continuer vous permet d'arrêter l'exécution d'un programme en mode Arrêt, d'apporter des modifications à l'exécution de code, puis de continuer l'exécution du programme avec les modifications récemment incorporées.  
   
  Les modifications de code déclaratif qui affectent la structure publique d'une classe sont interdites, et certaines modifications que vous pouvez apporter à une méthode, au corps d'une propriété ou à des déclarations privées dans une classe ne sont pas autorisées. Autant que possible, Modifier & Continuer marque le code qui ne peut pas être modifié en gris clair et affiche un message d'erreur.  
   

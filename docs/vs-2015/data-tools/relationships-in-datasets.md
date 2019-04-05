@@ -1,12 +1,9 @@
 ---
 title: Relations dans les jeux de données | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 f1_keywords:
 - vbData.Microsoft.VSDesigner.DataSource.DesignRelation
 - vbdata.Microsoft.VSDesigner.DataSource.DesignRelation
@@ -23,13 +20,13 @@ ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0b138b9ad49a0fd1a406e698aafd121478e95f4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e78b4efa9c56a46ea182d3ff3b77a7452d0c547f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935404"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938576"
 ---
 # <a name="relationships-in-datasets"></a>Relations dans les jeux de données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +67,7 @@ Jeux de données qui contiennent des données connexes tables utilisent <xref:Sy
 |Règle de la contrainte de clé étrangère|Action|  
 |----------------------------------|------------|  
 |<xref:System.Data.Rule>|La modification (mise à jour ou suppression) apportée à l’enregistrement parent est également apportée dans les enregistrements associés dans la table enfant.|  
-|<xref:System.Data.Rule>|Enregistrements enfants ne sont pas supprimés, mais la clé étrangère dans les enregistrements enfants est définie <xref:System.DBNull>. Avec ce paramètre, les enregistrements enfants peuvent être laissées en tant que « orphelins », autrement dit, ils n’ont aucune relation avec des enregistrements parents. **Remarque :** à l’aide de cette règle peut entraîner des données non valides dans la table enfant.|  
+|<xref:System.Data.Rule>|Enregistrements enfants ne sont pas supprimés, mais la clé étrangère dans les enregistrements enfants est définie <xref:System.DBNull>. Avec ce paramètre, les enregistrements enfants peuvent être laissées en tant que « orphelins », autrement dit, ils n’ont aucune relation avec des enregistrements parents. **Remarque :**  À l’aide de cette règle peut entraîner des données non valides dans la table enfant.|  
 |<xref:System.Data.Rule>|La clé étrangère dans les enregistrements enfants connexes est définie à sa valeur par défaut (comme établi par la colonne <xref:System.Data.DataColumn.DefaultValue%2A> propriété).|  
 |<xref:System.Data.Rule>|Aucune modification est apportée aux enregistrements enfants connexes. Avec ce paramètre, les enregistrements enfants peuvent contenir des références à des enregistrements de parent non valide.|  
   
@@ -88,7 +85,7 @@ Jeux de données qui contiennent des données connexes tables utilisent <xref:Sy
   
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>Pour créer une relation entre deux tables de données  
   
-1.  Ouvrez votre jeu de données dans le **Concepteur de Dataset**. Pour plus d’informations, consultez [Comment : ouvrir un jeu de données dans le Concepteur de Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1.  Ouvrez votre dataset dans le **Concepteur de DataSet**. Pour plus d'informations, voir [Procédure : Ouvrir un jeu de données dans le Concepteur de Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2.  Faites glisser un **Relation** de l’objet à partir de la **DataSet** boîte à outils vers la table de données enfant dans la relation.  
   
@@ -112,7 +109,6 @@ Jeux de données qui contiennent des données connexes tables utilisent <xref:Sy
   
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>Pour afficher un nom de relation dans le Concepteur de Dataset  
   
-1.  Ouvrez votre jeu de données dans le **Concepteur de Dataset**. Pour plus d’informations, consultez [Comment : ouvrir un jeu de données dans le Concepteur de Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1.  Ouvrez votre dataset dans le **Concepteur de DataSet**. Pour plus d'informations, voir [Procédure : Ouvrir un jeu de données dans le Concepteur de Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2.  À partir de la **données** menu, sélectionnez le **afficher les étiquettes de Relation** commande pour afficher le nom de la relation. Désactivez cette commande pour masquer le nom de la relation.
-

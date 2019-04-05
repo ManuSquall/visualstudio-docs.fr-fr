@@ -1,21 +1,17 @@
 ---
 title: Adressage « Incidents2 » PPP | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 542676de0efabcfa58945fc1572fc5539f52c209
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a5c5ae2abeea1e1e6b5a2fe360ff8515e5096341
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752532"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58947415"
 ---
 # <a name="addressing-dpi-issues"></a>Résolution des problèmes DPI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,9 +94,9 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
   
 - LogicalToDeviceUnitsX/LogicalToDeviceUnitsY (fonctions permettent la mise à l’échelle sur X / axe des Y)  
   
-- int espace = DpiHelper.LogicalToDeviceUnitsX (10) ;  
+- int space = DpiHelper.LogicalToDeviceUnitsX (10);  
   
-- int hauteur = VsUI::DpiHelper::LogicalToDeviceUnitsY(5) ;  
+- int height = VsUI::DpiHelper::LogicalToDeviceUnitsY(5);  
   
   Il existe des surcharges de LogicalToDeviceUnits pour permettre la mise à l’échelle des objets tels que Rect, Point et Size.  
   
@@ -151,7 +147,7 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
   
 - Pour les éléments de menu et les images de l’iconographie, la <xref:System.Windows.Media.BitmapScalingMode> doit être utilisée quand elle n’entraîne pas autres artefacts de distorsion éliminer la tolérance (à 200 et 300 %).  
   
-- • Pour zoom grand ne niveaux pas des multiples de 100 % (par exemple, 250 % ou % de 350), mise à l’échelle des images iconographie avec bicubique résultats dans l’interface utilisateur floue, filigrane. Un meilleur résultat est obtenu par la première mise à l’échelle de l’image avec le mode NearestNeighbor présente au multiple plus grand de 100 % (par exemple, 200 % ou 300 %) et la mise à l’échelle avec bicubique à partir de là. Consultez des cas spéciaux : prescaling des images WPF pour grandes PPP niveaux pour plus d’informations.  
+- • Pour zoom grand ne niveaux pas des multiples de 100 % (par exemple, 250 % ou % de 350), mise à l’échelle des images iconographie avec bicubique résultats dans l’interface utilisateur floue, filigrane. Un meilleur résultat est obtenu par la première mise à l’échelle l’image avec le mode NearestNeighbor présente au multiple plus grand de 100 % (par exemple, 200 % ou 300 %) et mise à l’échelle avec bicubique à partir de là. Consultez des cas spéciaux : prescaling des images WPF pour grandes PPP niveaux pour plus d’informations.  
   
   La classe DpiHelper dans l’espace de noms Microsoft.VisualStudio.PlatformUI fournit un membre <xref:System.Windows.Media.BitmapScalingMode> qui peut être utilisé pour la liaison. Il permettra de l’interpréteur de commandes de Visual Studio contrôler l’image bitmap mise à l’échelle en mode sur le produit de manière uniforme, selon le facteur d’échelle PPP.  
   
@@ -169,7 +165,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
  Une interface utilisateur peut mettre à l’échelle indépendamment le niveau de zoom de PPP système-set, telles que l’éditeur de texte Visual Studio et les concepteurs WPF (WPF de bureau et Windows Store). Dans ce cas, DpiHelper.BitmapScalingMode ne doit pas être utilisé. Pour résoudre ce problème dans l’éditeur, l’équipe IDE créé une propriété personnalisée intitulée RenderOptions.BitmapScalingMode. Définir cette valeur de propriété téléconsultations ou mode NearestNeighbor présente selon le niveau de zoom combiné du système et de votre interface utilisateur.  
   
 ## <a name="special-case-prescaling-wpf-images-for-large-dpi-levels"></a>Cas particulier : prescaling d’images WPF pour les niveaux de PPP volumineux  
- Pour les niveaux de zoom très volumineux qui ne sont pas des multiples de 100 % (par exemple, 250 %, 350 % et ainsi de suite), mise à l’échelle des images d’iconographie avec résultats bicubique dans l’interface utilisateur floue, filigrane. L’impression de ces images en même temps que le texte est presque similaire à celui d’une illusion optique. Les images apparaissent à être plus proches à le œil plus clairs et par rapport au texte. Le résultat de mise à l’échelle au niveau de cette taille agrandie peut être amélioré par la première mise à l’échelle de l’image avec le mode NearestNeighbor présente au multiple plus grand de 100 % (par exemple, 200 % ou 300 %) et la mise à l’échelle avec bicubique le reste (50 pour cent supplémentaires).  
+ Pour les niveaux de zoom très volumineux qui ne sont pas des multiples de 100 % (par exemple, 250 %, 350 % et ainsi de suite), mise à l’échelle des images d’iconographie avec résultats bicubique dans l’interface utilisateur floue, filigrane. L’impression de ces images en même temps que le texte est presque similaire à celui d’une illusion optique. Les images apparaissent à être plus proches à le œil plus clairs et par rapport au texte. Le résultat de mise à l’échelle au niveau de cette taille agrandie peut être amélioré par la première mise à l’échelle l’image avec le mode NearestNeighbor présente au multiple plus grand de 100 % (par exemple, 200 % ou 300 %) et mise à l’échelle avec bicubique le reste (50 pour cent supplémentaires).  
   
  Voici un exemple des différences de résultats, où la première image est mise à l’échelle avec l’algorithme de mise à l’échelle double améliorée -> 100 %, 200 % -> 250 %, et la deuxième identité simplement avec bicubique 100 % -> 250 %.  
   
@@ -177,7 +173,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
   
  Pour activer l’interface utilisateur à utiliser cette mise à l’échelle double, le balisage XAML pour l’affichage de chaque élément d’Image devront être modifiées. Les exemples suivants montrent comment utiliser la double mise à l’échelle dans WPF dans Visual Studio à l’aide de la bibliothèque de DpiHelper et Shell.12/14.  
   
- Étape 1 : Prescale l’image à 200 %, 300 % et ainsi de suite à l’aide du mode NearestNeighbor présente.  
+ Étape 1 : Prescale l’image à 200 %, 300 % et ainsi de suite à l’aide du mode NearestNeighbor présente.  
   
  Prescale l’image à l’aide d’un convertisseur de soit appliqué sur une liaison, ou avec une extension de balisage XAML. Exemple :  
   
@@ -207,7 +203,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 </Image>  
 ```  
   
- Étape 2 : Vérifiez que la taille finale est correcte pour la résolution actuelle.  
+ Étape 2 : Vérifiez que la taille finale est correcte pour la résolution actuelle.  
   
  Étant donné que WPF étendra l’interface utilisateur pour la résolution actuelle à l’aide de la propriété BitmapScalingMode sur UIElement, un contrôle d’Image à l’aide d’une image prescaled comme sa source ressemblera à deux ou trois fois plus volumineux qu’il ne devrait. Voici plusieurs façons de compteur cet effet :  
   
@@ -366,4 +362,3 @@ public int GetHostInfo(DOCHOSTUIINFO info)
                        ref commandOutput);  
     }  
     ```
-

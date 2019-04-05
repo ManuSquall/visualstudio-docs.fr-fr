@@ -1,32 +1,27 @@
 ---
-title: 'Procédure pas à pas : Débogage d’erreurs dues à la trame de rendu | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure pas à pas : Débogage des erreurs dues à la trame de rendus | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 01875b05-cc7b-4add-afba-f2b776f86974
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5d65c3d2525533e5881b4626941e43fb302ce2aa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 42627b336bb83d915b2af96f0ee569a305212f6d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733198"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950080"
 ---
-# <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Procédure pas à pas : débogage des erreurs de rendus dues à la trame
+# <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Procédure pas à pas : débogage des erreurs de rendu dues à l’ombrage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette procédure pas à pas montre comment utiliser Graphics Diagnostics dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour examiner un objet dont la couleur n’est pas correcte à cause d’un problème de nuanceur.  
   
- Cette procédure pas à pas montre comment effectuer les opérations suivantes :  
+ Cette procédure pas à pas montre comment effectuer les opérations suivantes :  
   
 -   Examiner le document du journal de graphiques pour identifier les pixels qui indiquent le problème.  
   
@@ -113,6 +108,3 @@ output.color = input.color;
  Après avoir corrigé le code, vous devez le régénérer, puis réexécuter l’application pour constater que le problème d’affichage est résolu.  
   
  ![L’objet est rendu avec des couleurs correctes. ](../debugger/media/gfx-diag-demo-render-error-shader-resolution.png "gfx_diag_demo_render_error_shader_resolution")
-
-
-

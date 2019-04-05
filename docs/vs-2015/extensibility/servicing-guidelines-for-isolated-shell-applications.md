@@ -1,27 +1,22 @@
 ---
 title: Maintenance des instructions pour des Applications de Shell isolées | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio Shell integrated mode, serviceability
 - Shell integrated mode [Visual Studio], serviceability
 ms.assetid: 747d1a47-b8b3-4e8b-93c0-768724be48f2
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a795e5dc71183550e660f8ce7d67f1a41bddbcf4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 13ec970b309c09bdbd0bffbc0a10c42b862ebe9b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726775"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951266"
 ---
 # <a name="servicing-guidelines-for-isolated-shell-applications"></a>Instructions de maintenance pour les Applications de Shell isolé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,4 +42,3 @@ Lorsque vous distribuez une application de shell isolé Visual Studio, vous deve
 -   La mise à jour des fichiers partagés peut entraîner des problèmes de compatibilité des applications, car une mise à jour à une application peut changer la version d’un fichier utilisé par une autre application n’a pas été mis à jour. Programmes d’installation pour les produits qui partagent des références de nombre de fichiers pour les fichiers partagés. Par conséquent, la désinstallation d’un produit n’affecte pas les fichiers partagés au-delà de décrémenter le nombre d’instances installées.  
   
 -   Le programme d’installation de l’ingénierie QFE (Quick Fix) rétablit les versions des fichiers pour les versions des produits pris en charge par le programme d’installation du correctif QFE. Ce processus potentiellement s'arrête une application qui a remis un fichier partagé mis à jour.
-

@@ -1,26 +1,21 @@
 ---
 title: 'Procédure pas à pas : Implémentation d’extraits de Code | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6fe91fd4e80c14e9b4cf59136fa6d3e0e003f554
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 84ac1787e4905859eb3539c04dee3125a14e0617
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752063"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948067"
 ---
-# <a name="walkthrough-implementing-code-snippets"></a>Procédure pas à pas : implémentation d’extraits de code
+# <a name="walkthrough-implementing-code-snippets"></a>Procédure pas à pas : Implémentation d’extraits de code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez créer des extraits de code et incluez-les dans une extension de l’éditeur, afin que les utilisateurs de l’extension de les ajouter à leur propre code.  
@@ -37,7 +32,7 @@ Vous pouvez créer des extraits de code et incluez-les dans une extension de l�
   
 3. Implémenter l’expansion d’extrait de code.  
   
-   Cette procédure pas à pas est basée sur [procédure pas à pas : affichage de saisie semi-automatique des instructions](../extensibility/walkthrough-displaying-statement-completion.md).  
+   Cette procédure pas à pas est basée sur [procédure pas à pas : Affichage de saisie semi-automatique des instructions](../extensibility/walkthrough-displaying-statement-completion.md).  
   
 ## <a name="prerequisites"></a>Prérequis  
  À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS par la suite. Pour plus d’informations, consultez [l’installation de Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -49,7 +44,7 @@ Vous pouvez créer des extraits de code et incluez-les dans une extension de l�
   
 1. Créez la structure de répertoire suivante :  
   
-    **%INSTALLDIR%\TestSnippets\Snippets\1033\\**  
+    **%InstallDir%\TestSnippets\Snippets\1033\\**  
   
     où *% INSTALLDIR%* est le dossier d’installation de Visual Studio. (Bien que ce chemin d’accès est généralement utilisé pour installer des extraits de code, vous pouvez spécifier n’importe quel chemin d’accès.)  
   
@@ -116,7 +111,7 @@ Vous pouvez créer des extraits de code et incluez-les dans une extension de l�
   
 #### <a name="to-register-code-snippets-for-a-specific-guid"></a>Pour inscrire des extraits de code pour un GUID spécifique  
   
-1.  Ouvrez le **CompletionTest** projet. Pour plus d’informations sur la création de ce projet, consultez [procédure pas à pas : affichage de saisie semi-automatique des instructions](../extensibility/walkthrough-displaying-statement-completion.md).  
+1.  Ouvrez le **CompletionTest** projet. Pour plus d’informations sur la création de ce projet, consultez [procédure pas à pas : Affichage de saisie semi-automatique des instructions](../extensibility/walkthrough-displaying-statement-completion.md).  
   
 2.  Dans le projet, ajoutez des références aux assemblys suivants :  
   
@@ -124,7 +119,7 @@ Vous pouvez créer des extraits de code et incluez-les dans une extension de l�
   
     -   Microsoft.VisualStudio.TextManager.Interop.8.0  
   
-    -   Microsoft.MSXML  
+    -   microsoft.msxml  
   
 3.  Dans le projet, ouvrez le fichier source.extension.vsixmanifest.  
   
@@ -254,4 +249,3 @@ Vous pouvez créer des extraits de code et incluez-les dans une extension de l�
 7.  Dans une autre partie du texte, tapez « test » et appuyez sur TAB. Étant donné que « test » est le raccourci d’extrait de code, l’extrait de code doit être inséré à nouveau.  
   
 ## <a name="next-steps"></a>Étapes suivantes
-

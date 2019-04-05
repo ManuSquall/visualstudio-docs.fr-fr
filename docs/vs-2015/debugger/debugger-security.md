@@ -1,14 +1,9 @@
 ---
 title: Sécurité du débogueur | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: d4fc3c43-e844-419c-8dbb-551cc2a9b09e
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7f8166c7aea86b0decad84631f8c98054ee69253
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bfb6270f4b6e5a0c4f65f5490def24c03cad6898
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765357"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952407"
 ---
 # <a name="debugger-security"></a>Sécurité du débogueur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ La possibilité de déboguer un autre processus vous donne des pouvoirs extrême
 ### <a name="managed-debugging-security"></a>Sécurité de débogage managé  
  Voici quelques recommandations générales à appliquer à tout débogage managé.  
   
-- Soyez prudent lorsque vous rejoignez un processus utilisateur non fiable : dans ce cas, vous supposez qu'il est digne de confiance. Quand vous tentez d’attacher un processus d’un utilisateur non approuvé, une boîte de dialogue d’avertissement de sécurité s’affiche pour vous demander de confirmer l’attachement du processus. Vous faites partie des « utilisateurs approuvés », de même que les utilisateurs standard habituellement définis sur les machines où .NET Framework est installé, comme **aspnet**, **localsystem**, **networkservice**et **localservice**. Pour plus d’informations, consultez [avertissement de sécurité : l’attachement à un processus appartenant à un utilisateur non fiable peut être dangereux. Si les informations suivantes semblent suspectes ou si vous avez des doutes, n’attachez pas ce processus](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md).  
+- Soyez prudent lorsque vous rejoignez un processus utilisateur non fiable : dans ce cas, vous supposez qu'il est digne de confiance. Quand vous tentez d’attacher un processus d’un utilisateur non approuvé, une boîte de dialogue d’avertissement de sécurité s’affiche pour vous demander de confirmer l’attachement du processus. Vous faites partie des « utilisateurs approuvés », de même que les utilisateurs standard habituellement définis sur les machines où .NET Framework est installé, comme **aspnet**, **localsystem**, **networkservice**et **localservice**. Pour plus d’informations, consultez [avertissement de sécurité : l’attachement à un processus appartenant à un utilisateur non approuvé peut être dangereux. Si les informations suivantes semblent suspectes ou si vous avez des doutes, n’attachez pas ce processus](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015).  
   
 - Soyez prudent lors du téléchargement d'un projet à partir d'Internet et de son chargement dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Il s'agit d'une opération très risquée sans débogage. Lorsque vous procédez ainsi, vous supposez que le projet et le code qu'il contient sont dignes de confiance.  
   
@@ -65,7 +60,7 @@ La possibilité de déboguer un autre processus vous donne des pouvoirs extrême
  Pour plus d’informations, consultez [le débogage à distance](../debugger/remote-debugging.md).  
   
 ### <a name="web-services-debugging-security"></a>Sécurité de débogage Web Services  
- Il est plus sûr de déboguer localement, mais puisque [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] n'est probablement pas installé sur le serveur web, le débogage local peut ne pas être pratique. En général, le débogage de services web s'effectue à distance, sauf pendant le développement, ce qui fait que les recommandations pour la sécurité de débogage distant s'appliquent également au débogage de services web. Voici quelques meilleures pratiques supplémentaires. Pour plus d'informations, consultez [Debugging XML Web Services](http://msdn.microsoft.com/en-us/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).  
+ Il est plus sûr de déboguer localement, mais puisque [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] n'est probablement pas installé sur le serveur web, le débogage local peut ne pas être pratique. En général, le débogage de services web s'effectue à distance, sauf pendant le développement, ce qui fait que les recommandations pour la sécurité de débogage distant s'appliquent également au débogage de services web. Voici quelques meilleures pratiques supplémentaires. Pour plus d'informations, consultez [Debugging XML Web Services](http://msdn.microsoft.com/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).  
   
 -   N’activez pas le débogage sur un serveur web qui a été compromis.  
   
@@ -77,21 +72,16 @@ La possibilité de déboguer un autre processus vous donne des pouvoirs extrême
  Déterminez l'état de confiance des composants externes avec lesquels votre programme interagit, surtout si vous n'avez pas écrit le code. Déterminez également les composants que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou le débogueur peut utiliser.  
   
 ### <a name="symbols-and-source-code"></a>Symboles et code source  
- Deux outils [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] qui requièrent une réflexion à propos de la sécurité sont les éléments suivants :  
+ Deux outils [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] qui requièrent une réflexion à propos de la sécurité sont les éléments suivants :  
   
-- Le serveur source, qui fournit des versions de code source d'un référentiel de code source. Ceci est utile lorsque vous n'avez pas la version actuelle du code source d'un programme. [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md).  
+- Le serveur source, qui fournit des versions de code source d'un référentiel de code source. Ceci est utile lorsque vous n'avez pas la version actuelle du code source d'un programme. [Avertissement de sécurité : le débogueur doit exécuter une commande non approuvée](../debugger/security-warning-debugger-must-execute-untrusted-command.md).  
   
 - Le serveur de symboles, qui est utilisé pour fournir les symboles nécessaires pour déboguer un incident pendant un appel système.  
   
-  Consultez [spécifier les symboles (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+  Consultez [Spécifier les fichiers de symbole (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
   
 ## <a name="see-also"></a>Voir aussi  
  [Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md)   
  [Principes de base du débogueur](../debugger/debugger-basics.md)   
- [Avertissement de sécurité : L’attachement à un processus appartenant à un utilisateur non approuvé peut être dangereux. Si les informations suivantes semblent suspectes ou si vous avez des doutes, n’attachez pas ce processus](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)   
- [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md)
-
-
-
-
-
+ [Avertissement de sécurité : l’attachement à un processus appartenant à un utilisateur non approuvé peut être dangereux. Si les informations suivantes semblent suspectes ou si vous avez des doutes, ne faites pas d’attachement à ce processus](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015)   
+ [Avertissement de sécurité : le débogueur doit exécuter une commande non approuvée](../debugger/security-warning-debugger-must-execute-untrusted-command.md)

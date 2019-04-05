@@ -1,32 +1,27 @@
 ---
-title: 'Comment : évaluer une Expression XPath | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Évaluer une Expression XPath | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 05758034c0228f0efd7fb3ae63bd3b7e0d5e3095
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 77c9acae710baeb885bcf901257367251d86c3a2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210429"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954013"
 ---
-# <a name="how-to-evaluate-an-xpath-expression"></a>Procédure : évaluer une expression XPath
+# <a name="how-to-evaluate-an-xpath-expression"></a>Procédure : évaluation d'une expression XPath
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez évaluer des expressions XPath avec le **Espion express** boîte de dialogue. L’expression XPath doit être valide par rapport à la recommandation du W3C sur XPath 1.0. Le contexte XSLT actuel, autrement dit, le `self::node()` nœud dans le **variables locales** fenêtre — fournit le contexte d’évaluation de l’expression XPath.  
   
- La liste suivante décrit les fonctions prises en charge lors de l’évaluation d’une expression XPath :  
+ La liste suivante décrit les fonctions prises en charge lors de l'évaluation d'une expression XPath :  
   
 -   Les fonctions XPath intégrées sont prises en charge.  
   
@@ -35,7 +30,7 @@ Vous pouvez évaluer des expressions XPath avec le **Espion express** boîte de 
 -   Les fonctions définies par l'utilisateur ne sont pas prises en charge.  
   
 > [!NOTE]
->  La procédure suivante utilise les fichiers belowAvg.xsl et books.xml de la [procédure pas à pas : déboguer une feuille de Style XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) rubrique.  
+>  La procédure suivante utilise les fichiers belowAvg.xsl et books.xml de la [procédure pas à pas : Déboguer une feuille de Style XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) rubrique.  
   
 ### <a name="to-evaluate-an-xpath-expression"></a>Pour évaluer une expression XPath  
   
@@ -43,7 +38,7 @@ Vous pouvez évaluer des expressions XPath avec le **Espion express** boîte de 
   
 2.  Cliquez sur le **débogage XSLT** dans la barre d’outils de l’éditeur XML.  
   
-     Le débogueur démarre et s’arrête à l’étiquette `xsl:if`.  
+     Le débogueur démarre et s'arrête à la balise `xsl:if`.  
   
 3.  Avec le bouton droit et sélectionnez **Espion express**.  
   
@@ -59,4 +54,3 @@ Vous pouvez évaluer des expressions XPath avec le **Espion express** boîte de 
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage XSLT](../xml-tools/debugging-xslt.md)
-

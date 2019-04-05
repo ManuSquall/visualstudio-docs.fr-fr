@@ -1,11 +1,8 @@
 ---
 title: Recherchez et sélectionnez une boîte de dialogue de Type .NET (hérité) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Workflow.ComponentModel.Design.TypeBrowserDialog.UI
@@ -15,13 +12,13 @@ ms.assetid: 1e66c9bc-94b2-46e2-bedf-871752e5f917
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: b7171808be957b503cc0afef415dc8951485176c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d1ba2a1276ba5c752b712c6131048546ca8f69ec
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283684"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953806"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box-legacy"></a>Rechercher et sélectionner un type .NET, boîte de dialogue (héritée)
 Cette rubrique décrit comment utiliser le **rechercher et sélectionner un Type .NET** boîte de dialogue dans les anciennes [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -33,7 +30,7 @@ Cette rubrique décrit comment utiliser le **rechercher et sélectionner un Type
 |Élément d'interface utilisateur|Description|  
 |----------------|-----------------|  
 |**Nom du type :**|Nom du type actuellement sélectionné.|  
-|**Type**|Le volet de gauche affiche l’arborescence des assemblys référencés. Le volet de droite affiche les types disponibles pour l'assembly référencé sélectionné dans le volet de gauche.|  
+|**Type**|Le volet de gauche affiche l'arborescence des assemblys référencés. Le volet de droite affiche les types disponibles pour l'assembly référencé sélectionné dans le volet de gauche.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Utilisation du concepteur d’activités hérité](../workflow-designer/using-the-legacy-activity-designer.md)

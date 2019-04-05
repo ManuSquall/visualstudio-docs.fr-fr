@@ -1,14 +1,9 @@
 ---
-title: 'Comment : gérer les mises à jour pour une Application ClickOnce | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Gérer les mises à jour pour une Application ClickOnce | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.Update
 dev_langs:
@@ -24,15 +19,15 @@ ms.assetid: a3f23f05-e7f1-4620-b23c-2d68f9643684
 caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: adf0a6df54c3e6bd758896ac8a836b6174e767b8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9781745af5d65d497652002c9afcd8132058ffb6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272465"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952337"
 ---
-# <a name="how-to-manage-updates-for-a-clickonce-application"></a>Comment : gérer des mises à jour pour une application ClickOnce
+# <a name="how-to-manage-updates-for-a-clickonce-application"></a>Procédure : Gérer les mises à jour d’une application ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] les applications peuvent vérifier les mises à jour automatiquement ou par programmation. En tant que développeur, vous avez une grande souplesse lors de la spécification de quand et comment les vérifications de mise à jour sont effectuées, si les mises à jour sont obligatoires, et où l’application doit vérifier les mises à jour.  
@@ -51,7 +46,7 @@ ms.locfileid: "49272465"
   
 1.  Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
   
-2.  Cliquez sur le **publier** onglet.  
+2.  Cliquez sur l’onglet **Publier**.  
   
 3.  Cliquez sur le **mises à jour** bouton pour ouvrir la **mises à jour de l’Application** boîte de dialogue.  
   
@@ -59,11 +54,11 @@ ms.locfileid: "49272465"
   
 5.  Dans le **choisissez à quel moment l’application doit vérifier les mises à jour** section, sélectionnez **avant le démarrage de l’application**. Cela garantit que les utilisateurs connectés au réseau toujours exécutent l’application avec les dernières mises à jour.  
   
-### <a name="to-check-for-updates-in-the-background-after-the-application-starts"></a>Pour vérifier les mises à jour en arrière-plan après le démarrage de l’application  
+### <a name="to-check-for-updates-in-the-background-after-the-application-starts"></a>Vérifier les mises à jour en arrière-plan, après le démarrage de l’application  
   
 1.  Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
   
-2.  Cliquez sur le **publier** onglet.  
+2.  Cliquez sur l’onglet **Publier**.  
   
 3.  Cliquez sur le **mises à jour** bouton pour ouvrir la **mises à jour de l’Application** boîte de dialogue.  
   
@@ -77,7 +72,7 @@ ms.locfileid: "49272465"
   
 1.  Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
   
-2.  Cliquez sur le **publier** onglet.  
+2.  Cliquez sur l’onglet **Publier**.  
   
 3.  Cliquez sur le **mises à jour** bouton pour ouvrir la **mises à jour de l’Application** boîte de dialogue.  
   
@@ -89,7 +84,7 @@ ms.locfileid: "49272465"
   
 1.  Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
   
-2.  Cliquez sur le **publier** onglet.  
+2.  Cliquez sur l’onglet **Publier**.  
   
 3.  Cliquez sur le **mises à jour** bouton pour ouvrir la **mises à jour de l’Application** boîte de dialogue.  
   
@@ -101,7 +96,7 @@ ms.locfileid: "49272465"
   
 1.  Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
   
-2.  Cliquez sur le **publier** onglet.  
+2.  Cliquez sur l’onglet **Publier**.  
   
 3.  Cliquez sur le **mises à jour** bouton pour ouvrir la **mises à jour de l’Application** boîte de dialogue.  
   
@@ -109,17 +104,14 @@ ms.locfileid: "49272465"
   
 5.  Dans le **mettre à jour emplacement** , entrez l’emplacement de mise à jour avec une URL qualifiée complète, en utilisant le format http://Hostname/ApplicationName, ou un chemin d’accès UNC au format \\\Server\ApplicationName, ou cliquez sur le **Parcourir** bouton pour rechercher l’emplacement de mise à jour. Mise à jour se trouve dans laquelle l’application recherche une version mise à jour de lui-même.  
   
-6.  Créer un bouton, un élément de menu ou autre élément d’interface utilisateur sur un formulaire Windows qui sélectionnent les utilisateurs pour rechercher les mises à jour. À partir du Gestionnaire d’événements de cet élément, appelez une méthode pour vérifier et installer les mises à jour. Vous trouverez un exemple de code Visual Basic et Visual c# pour une telle méthode dans [Comment : recherchez les applications mises à jour par programmation à l’aide de l’API de déploiement ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md).  
+6.  Créer un bouton, un élément de menu ou autre élément d’interface utilisateur sur un formulaire Windows qui sélectionnent les utilisateurs pour rechercher les mises à jour. À partir du Gestionnaire d’événements de cet élément, appelez une méthode pour vérifier et installer les mises à jour. Vous trouverez un exemple de Visual Basic et Visual C# code pour une telle méthode dans [Comment : Recherchez les mises à jour de l’Application par programmation à l’aide de l’API du déploiement ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md).  
   
 7.  Générez votre application.  
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:System.Deployment.Application.ApplicationDeployment>   
- [Application Updates Dialog Box](http://msdn.microsoft.com/en-us/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)   
+ [Application Updates Dialog Box](http://msdn.microsoft.com/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)   
  [Choix d’une stratégie de mise à jour ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)   
  [Publication d’applications ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Guide pratique pour publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
- [Guide pratique pour vérifier la disponibilité de mises à jour des applications par programmation à l’aide de l’API de déploiement ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)
-
-
-
+ [Guide pratique pour Publier une Application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
+ [Guide pratique pour vérifier par programme la disponibilité de mises à jour d'applications à l'aide de l'API de déploiement ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)

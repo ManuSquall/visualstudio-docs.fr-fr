@@ -1,26 +1,21 @@
 ---
 title: IDebugFunctionObject2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugFunctionObject2 interface
 ms.assetid: 56b2fdff-146d-4138-a34c-59a9c65a3ddd
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 110b9890e36f8a0100d2cd38b23f445f48cd1cbd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9aa191d36c057e2d5cdcd1c551ac96f6804738b4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770548"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953109"
 ---
 # <a name="idebugfunctionobject2"></a>IDebugFunctionObject2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -58,9 +53,8 @@ IDebugFunctionObject2 : IUnknown
 |[Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject2-evaluate.md)|Appelle la fonction et retourne la valeur obtenue en tant qu’objet.|  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : Ee.h  
+ En-tête : EE.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
-
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll

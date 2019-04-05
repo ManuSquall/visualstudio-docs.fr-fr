@@ -1,14 +1,9 @@
 ---
 title: Mémoire Windows | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.memory
 dev_langs:
@@ -31,13 +26,13 @@ ms.assetid: 7f7a0439-10e4-4966-bb2d-51f04cda4fe2
 caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 704c0ff20dbd11b4640b2d81670a4cdeaf3f1ea0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 5a9c68709c1a06a84fe624bee726da5a12920dbd
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724244"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58953375"
 ---
 # <a name="memory-windows"></a>Fenêtres Mémoire
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +63,7 @@ Le **mémoire** fenêtre fournit une vue dans l’espace mémoire utilisé par v
 ## <a name="selecting-a-memory-location"></a>Sélection d'un emplacement de mémoire  
  Si vous souhaitez déplacer instantanément vers un emplacement mémoire sélectionné, vous pouvez le faire à l’aide d’une opération de glisser-déplacer, ou en modifiant la valeur dans le **adresse** boîte. Le **adresse** zone accepte non seulement des valeurs numériques, mais aussi des expressions qui correspondent à des adresses. Par défaut, le **mémoire** fenêtre traite un **adresse** expression sous la forme d’une expression en direct, réévalue pendant l’exécution du programme. Les expressions dynamiques peuvent être très utiles. Par exemple, elles permettent d'afficher la mémoire survolée par un pointeur.  
   
-#### <a name="to-select-a-memory-location-by-dragging-and-dropping"></a>Pour sélectionner un emplacement de mémoire par glisser-déposer  
+#### <a name="to-select-a-memory-location-by-dragging-and-dropping"></a>Pour sélectionner un emplacement de mémoire par glisser-déplacer  
   
 1.  Dans n'importe quelle fenêtre, sélectionnez une adresse mémoire ou une variable pointeur qui contient une adresse mémoire.  
   
@@ -81,7 +76,7 @@ Le **mémoire** fenêtre fournit une vue dans l’espace mémoire utilisé par v
 2.  Tapez ou collez l’adresse que vous souhaitez voir, puis appuyez sur **entrée**.  
   
 ## <a name="changing-the-way-the-memory-window-displays-information"></a>Modification de la façon dont la fenêtre Mémoire affiche les informations  
- Vous pouvez personnaliser la façon dont le **mémoire** fenêtre affiche le contenu de la mémoire. Par défaut, le contenu de la mémoire est affiché sous forme d'entiers d'un octet au format hexadécimal, et le nombre de colonnes est automatiquement déterminé en fonction de la largeur actuelle de la fenêtre.  
+ Vous pouvez personnaliser la façon dont la fenêtre **Mémoire** affiche le contenu de la mémoire. Par défaut, le contenu de la mémoire est affiché sous forme d'entiers d'un octet au format hexadécimal, et le nombre de colonnes est automatiquement déterminé en fonction de la largeur actuelle de la fenêtre.  
   
 #### <a name="to-change-the-format-of-the-memory-contents"></a>Pour modifier le format du contenu mémoire  
   
@@ -105,7 +100,7 @@ Le **mémoire** fenêtre fournit une vue dans l’espace mémoire utilisé par v
   
     Si l'évaluation dynamique est activée, l'option sera sélectionnée. Si vous cliquez sur l'option, l'évaluation dynamique sera désactivée. Si l'évaluation dynamique est désactivée, l'option ne sera pas sélectionnée. Si vous cliquez sur l'option, l'évaluation dynamique sera activée.  
   
-   Vous pouvez masquer ou afficher la barre d’outils en haut de la **mémoire** fenêtre. Vous n'avez pas accès à la zone Adresse ou aux autres outils tant que la barre d'outils est masquée.  
+   Vous pouvez masquer ou afficher la barre d’outils en haut de la fenêtre **Mémoire**. Vous n'avez pas accès à la zone Adresse ou aux autres outils tant que la barre d'outils est masquée.  
   
 #### <a name="to-toggle-the-toolbar"></a>Pour basculer la barre d'outils  
   
@@ -128,8 +123,3 @@ Le **mémoire** fenêtre fournit une vue dans l’espace mémoire utilisé par v
   
 ## <a name="see-also"></a>Voir aussi  
  [Affichage des données dans le débogueur](../debugger/viewing-data-in-the-debugger.md)
-
-
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 'Comment : fournir une prise en charge étendue de mode plan dans un Service de langage hérité | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Fournir une prise en charge étendue de mode plan dans un Service de langage hérité | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], outlining support
 - language services, supporting outlining
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: df759e89-8193-418c-8038-6626304d387b
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 56d125cdfc3cbdbbc880e1e8a98136eb20e07df1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ff387bb2cd029e80641e8c13b198b8f22ccabd1c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774209"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952824"
 ---
-# <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Comment : fournir une prise en charge étendue de mode plan dans un Service de langage hérité
+# <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Procédure : Fournir la prise en charge étendue du mode Plan dans un service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Il existe deux options pour étendre la prise en charge en mode plan pour votre langage au-delà de la prise en charge la **réduire aux définitions** commande. Vous pouvez ajouter des régions en mode de plan contrôlés par l’éditeur et ajouter des régions en mode plan de contrôlé par le client.  
@@ -60,5 +55,4 @@ Il existe deux options pour étendre la prise en charge en mode plan pour votre 
     > [!NOTE]
     >  Lorsque vous appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A>, vous pouvez spécifier un client de texte masqué (autrement dit, un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient> objet). Ce client vous avertit quand un texte masqué ou région en mode plan est développée ou réduite par l’utilisateur.  
   
-4.  Appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> structure) paramètre : spécifiez la valeur <xref:Microsoft.VisualStudio.TextManager.Interop.HIDDEN_REGION_TYPE> dans le `iType` membre de la <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> structure pour indiquer que vous créez une région en mode plan, plutôt que d’une zone masquée. Spécifiez si la région est contrôlé par le client ou contrôlés par l’éditeur dans le `dwBehavior` membre de la <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> structure. Votre implémentation de mode plan intelligente peut contenir un mélange de régions en mode plan contrôlé par l’éditeur et par le client. Spécifiez le texte de bannière s’affiche lorsque votre région en mode plan est réduite, tels que «... », dans le `pszBanner` membre de la <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> structure. Texte de bannière par défaut de l’éditeur pour une zone masquée est «... ».
-
+4.  Appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> structure) paramètre : Spécifiez la valeur <xref:Microsoft.VisualStudio.TextManager.Interop.HIDDEN_REGION_TYPE> dans le `iType` membre de la <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> structure pour indiquer que vous créez une région en mode plan, plutôt que d’une zone masquée. Spécifiez si la région est contrôlé par le client ou contrôlés par l’éditeur dans le `dwBehavior` membre de la <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> structure. Votre implémentation de mode plan intelligente peut contenir un mélange de régions en mode plan contrôlé par l’éditeur et par le client. Spécifiez le texte de bannière s’affiche lorsque votre région en mode plan est réduite, tels que «... », dans le `pszBanner` membre de la <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> structure. Texte de bannière par défaut de l’éditeur pour une zone masquée est «... ».

@@ -1,12 +1,9 @@
 ---
 title: Configurer la boîte de dialogue de référence de Service | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: reference
 f1_keywords:
 - msvse_wcf.dlg.ConfigureServiceReference
 helpviewer_keywords:
@@ -17,13 +14,13 @@ ms.assetid: 25e4c36b-2db6-4e71-9010-b7068255d09d
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 24da338378739afca6ad228582a29069aebde9f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 4cc4ae6704f59f33de091fe528c7e05898361115
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266972"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949743"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Configurer la référence de service (boîte de dialogue)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,30 +29,30 @@ ms.locfileid: "49266972"
 Le **configurer la référence de Service** boîte de dialogue vous permet de configurer le comportement de [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] services.  
   
 > [!NOTE]
->  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
- Pour accéder à la **configurer la référence de Service** boîte de dialogue, avec le bouton droit, un service de référence dans **l’Explorateur de solutions** et choisissez **configurer la référence de Service**. Vous pouvez également accéder à la boîte de dialogue en cliquant sur le **avancé** situé dans le **ajouter une référence de Service, boîte de dialogue**.  
+ Pour accéder à la boîte de dialogue **Configurer la référence de service**, cliquez avec le bouton droit sur une référence de service dans l’**Explorateur de solutions** et choisissez **Configurer la référence de service**. Vous pouvez également accéder à la boîte de dialogue en cliquant sur le bouton **Avancé** dans la **boîte de dialogue Ajouter une référence de service**.  
   
 ## <a name="task-list"></a>Liste des tâches  
   
--   Pour modifier l’adresse où un service WCF est hébergé, entrez la nouvelle adresse dans le **adresse** champ.  
+-   Pour modifier l’adresse d’hébergement d’un service WCF, entrez la nouvelle adresse dans le champ **Adresse**.  
   
--   Pour modifier le niveau d’accès pour les classes dans un client WCF, sélectionnez un mot clé de niveau d’accès dans le **niveau pour les classes générées d’accès** liste.  
+-   Pour modifier le niveau d’accès des classes dans un client WCF, sélectionnez un mot clé de niveau d’accès dans la liste **Niveau d’accès pour les classes générées**.  
   
--   Pour appeler les méthodes d’un service WCF de façon asynchrone, sélectionnez le **générer des opérations asynchrones** case à cocher.  
+-   Pour appeler de façon asynchrone les méthodes d’un service WCF, cochez la case **Générer des opérations asynchrones**.  
   
--   Pour générer des types de contrat de message dans un client WCF, sélectionnez le **toujours générer des contrats de message** case à cocher.  
+-   Pour générer des types de contrats de message dans un client WCF, cochez la case **Toujours générer des contrats de message**.  
   
--   Pour spécifier les types de collections de dictionnaires ou de listes pour un client WCF, sélectionnez les types à partir de la **type de Collection** et **type de collection dictionnaire** répertorie.  
+-   Pour spécifier des types de collections de dictionnaires ou de listes pour un client WCF, sélectionnez les types dans les listes **Type de collection** et **Type de collection Dictionnaire**.  
   
--   Pour désactiver le partage de type, désactivez le **réutiliser les types dans les assemblys référencés** case à cocher. Pour activer le partage de type d’un sous-ensemble d’assemblys référencés, sélectionnez le **réutiliser les types dans les assemblys référencés** case à cocher, sélectionnez **réutiliser les types dans les assemblys référencés spécifiés**, puis sélectionnez le texte souhaité fait référence dans le **liste des assemblys référencés**.  
+-   Pour désactiver le partage de type, décochez la case **Réutiliser les types dans les assemblys référencés**. Pour activer le partage de type d’un sous-ensemble d’assemblys référencés, cochez la case **Réutiliser les types dans les assemblys référencés**, sélectionnez **Réutiliser les types dans les assemblys référencés spécifiés**, puis sélectionnez les références souhaitées dans la **Liste des assemblys référencés**.  
   
 ## <a name="uielement-list"></a>Liste des éléments d’interface  
  **Adresse**  
  Permet de mettre à jour l'adresse web qu'une référence de service utilise pour rechercher un service. Par exemple, pendant le développement, le service peut être hébergé sur un serveur de développement, puis transféré ultérieurement vers un serveur de production, ce qui nécessite un changement d'adresse.  
   
 > [!NOTE]
->  L’élément adresse n’est pas disponible lorsque le **configurer la référence de Service** boîte de dialogue s’affiche à partir de la **ajouter une référence de Service, boîte de dialogue**.  
+>  L’élément Adresse n’est pas disponible quand la boîte de dialogue **Configurer la référence de service** est affichée à partir de la boîte de dialogue **Ajouter une référence de service**.  
   
  **Niveau d’accès pour les classes générées**  
  Détermine le niveau d'accès du code pour les classes clientes WCF.  
@@ -66,7 +63,7 @@ Le **configurer la référence de Service** boîte de dialogue vous permet de co
  **Générer des opérations asynchrones**  
  Détermine si les méthodes de service WCF sont appelées de façon synchrone (valeur par défaut) ou de façon asynchrone.  
   
- **Générer des opérations basées sur des tâches**  
+ **Générer des opérations basées sur les tâches**  
  Dans le cadre de l’écriture de code asynchrone, cette option vous permet d’exploiter la bibliothèque parallèle de tâches (TPL) introduite dans .Net 4. Consultez [(TPL) de bibliothèque parallèle de tâches](http://msdn.microsoft.com/library/dd460717.aspx).  
   
  **Toujours générer des contrats de message**  
@@ -75,7 +72,7 @@ Le **configurer la référence de Service** boîte de dialogue vous permet de co
  **Type de collection**  
  Spécifie le type de collection de listes pour un client WCF. Le type par défaut est <xref:System.Array>.  
   
- **Type de collection dictionnaire**  
+ **Type de collection Dictionnaire**  
  Spécifie le type de collection de dictionnaires pour un client WCF. Le type par défaut est <xref:System.Collections.Generic.Dictionary%602>.  
   
  **Réutiliser les types dans les assemblys référencés**  
@@ -90,8 +87,8 @@ Le **configurer la référence de Service** boîte de dialogue vous permet de co
  **Liste des assemblys référencés**  
  Contient la liste des assemblys référencés pour le projet ou le site web. Lorsque **réutiliser les types dans les assemblys référencés spécifiés** est sélectionnée, des assemblys individuels peuvent être activées ou désactivées.  
   
- **Ajouter une référence Web**  
- Affiche le [NIB : ajouter la référence Web, boîte de dialogue](http://msdn.microsoft.com/en-us/bdf05776-c591-40af-bfd7-e1e2aa1e87b5).  
+ **Ajouter une référence web**  
+ Affiche la [NIB : Ajouter la référence Web, boîte de dialogue](http://msdn.microsoft.com/bdf05776-c591-40af-bfd7-e1e2aa1e87b5).  
   
 > [!NOTE]
 >  Cette option doit uniquement être utilisée pour les projets qui ciblent la version 2.0 du [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
@@ -100,7 +97,6 @@ Le **configurer la référence de Service** boîte de dialogue vous permet de co
 >  Le **ajouter une référence Web** bouton est disponible uniquement lorsque le **configurer la référence de Service** boîte de dialogue s’affiche à partir de la **ajouter une référence de Service, boîte de dialogue**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : ajouter, mettre à jour ou supprimer une référence de Service](http://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)   
- [Comment : ajouter une référence à un Service Web](http://msdn.microsoft.com/library/952e49a1-567e-4a74-8cd7-f2e7b62c3168)   
+ [Guide pratique pour Ajouter, mettre à jour ou supprimer une référence de Service](http://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)   
+ [Guide pratique pour Ajoutez une référence à un Service Web](http://msdn.microsoft.com/library/952e49a1-567e-4a74-8cd7-f2e7b62c3168)   
  [Services Windows Communication Foundation et WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)
-

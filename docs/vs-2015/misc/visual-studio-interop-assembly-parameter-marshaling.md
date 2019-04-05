@@ -1,27 +1,22 @@
 ---
 title: Paramètres d’Assembly PIA Visual Studio Marshaling | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - troubleshooting Visual Studio SDK interop assemblies
 - interop assemblies, parameter marshaling
 - interop assemblies, troubleshooting
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
-manager: douge
-ms.openlocfilehash: e18667adb48f565f73acc14f5012f9c96283efe9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6bde8ba3acd88936e482124f189fd35f7a1d6421
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195013"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938555"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Marshaling des paramètres d’assembly PIA Visual Studio
 Les VSPackages sont écrits en code managé peut devoir appeler ou être appelé par du code COM non managé. En règle générale, les arguments de méthode sont transformées ou marshalés, automatiquement par le marshaleur d’interopérabilité. Cependant, parfois arguments ne peuvent pas être transformées de manière simple. Dans ce cas, les paramètres de prototype de méthode assembly d’interopérabilité sont utilisés pour faire correspondre les paramètres de la fonction COM aussi fidèlement que possible. Pour plus d’informations, consultez [Marshaling d’interopérabilité](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
@@ -128,7 +123,7 @@ else
  Les méthodes managées qui appellent les interfaces de ce type doivent extraire le premier élément hors du tableau [out]. Cet élément peut être traité comme s’il s’agissait d’un `retval` valeur de retour à partir de l’interface COM correspondante.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Marshaling d’interopérabilité](http://msdn.microsoft.com/en-us/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
+ [Marshaling d’interopérabilité](http://msdn.microsoft.com/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
  [Marshaling d’interopérabilité](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)   
  [Résolution des problèmes d’interopérabilité](http://msdn.microsoft.com/library/b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37)   
  [VSPackages gérés](../misc/managed-vspackages.md)

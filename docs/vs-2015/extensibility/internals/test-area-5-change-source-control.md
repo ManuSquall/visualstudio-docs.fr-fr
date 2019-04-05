@@ -1,29 +1,24 @@
 ---
-title: 'Zone de test 5 : Modifier le contrôle de code Source | Microsoft Docs'
-ms.custom: ''
+title: 'Zone de test 5 : Modifier le contrôle de code Source | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], changing
 - source control plug-ins, changing source control
 ms.assetid: fdf09e00-108c-4d51-bbd5-72452d52a490
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d117d3ad85d46bfeeb896892508ba90efb33e702
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d79281e2fef6a7ae77a2ba6c8375f47dc6520b3a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746601"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58947443"
 ---
-# <a name="test-area-5-change-source-control"></a>Zone de test 5 : Modifier le contrôle de code source
+# <a name="test-area-5-change-source-control"></a>Zone de test 5 : Changer le contrôle de code source
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Cette zone de test plug-in de contrôle de code source couvre la modification du contrôle de code source via le **modifier le contrôle de Source** commande.  
@@ -40,7 +35,7 @@ Cette zone de test plug-in de contrôle de code source couvre la modification du
   
 - **Connecter/déconnecter :**  
   
-  Active ou désactive les état connecté ou hors connexion de la solution contrôlée, qui est présentée dans la zone 3. Pour plus d’informations, consultez [Test zone 3 : extraire / annuler l’extraction](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).  
+  Active ou désactive les état connecté ou hors connexion de la solution contrôlée, qui est présentée dans la zone 3. Pour plus d’informations, consultez [Test zone 3 : Découvrez / annuler l’extraction](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).  
   
 ## <a name="command-menu-access"></a>Accès au Menu de commande  
  Ce qui suit [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] chemin de menu environnement de développement intégré est utilisé dans les cas de test.  
@@ -50,7 +45,7 @@ Cette zone de test plug-in de contrôle de code source couvre la modification du
 ## <a name="test-cases"></a>Cas de test  
  Les éléments suivants sont des cas de test spécifiques pour le **modifier le contrôle de Source** commande zone de test.  
   
-### <a name="case-5a-bind"></a>Cas 5 a : lier  
+### <a name="case-5a-bind"></a>5 a case : Lier  
  Liaison permet à l’utilisateur Ajouter des informations de contrôle de code source pour les projets sélectionnés et les solutions. L’utilisateur est généralement invité à identifier un projet dans le contrôle de code source à laquelle ils doivent être ajoutées. L’utilisateur ne peut pas créer un nouveau projet dans le contrôle de code source dans le cadre de cette opération (contraste avec les ajouter au contrôle de code Source).  
   
 |Action|Étapes de test|Résultats attendus pour vérifier|  
@@ -61,7 +56,7 @@ Cette zone de test plug-in de contrôle de code source couvre la modification du
 |Solution de liaison qui n’était jamais sous contrôle de code source|1.  Créez un dossier vide dans le contrôle de code source.<br />2.  Créez un projet client.<br />3.  Ouvrez **modifier le contrôle de Source** boîte de dialogue (**fichier**, **contrôle de code Source**, **modifier le contrôle de Source**).<br />4.  Lier la solution à un emplacement vide dans le contrôle de code source.<br />5.  Cliquez sur **OK** pour fermer la **modifier le contrôle de Source** boîte de dialogue.<br />6.  Cliquez sur **continuer avec ces liaisons** dans la boîte de dialogue de confirmation.<br />7.  Cliquez sur **OK** dans la boîte de dialogue d’avertissement s’il apparaît.|Solution est ajoutée au contrôle de code source.<br /><br /> Solution et projet ont été extraits.|  
 |Annuler la liaison|1.  Créez un projet.<br />2.  Ajouter la solution au contrôle de code source.<br />3.  Ouvrez la boîte de dialogue Modifier le contrôle de code Source.<br />4.  Tout dissocier.<br />5.  Cliquez sur **OK** bouton pour fermer la boîte de dialogue. Si cette étape réussit, passez à l’étape suivante.<br />6.  Rouvrez le **modifier le contrôle de Source** boîte de dialogue.<br />7.  Lier à un emplacement non liée.<br />8.  Cliquez sur **Annuler**.|`Result from Step 5:`<br /><br /> La solution n’est plus sous contrôle de code source<br /><br /> `Result from Step 8:`<br /><br /> Solution est toujours pas sous contrôle de code source.|  
   
-### <a name="case-5b-unbind"></a>Cas 5 b : supprimer la liaison  
+### <a name="case-5b-unbind"></a>5 b de cas : Annuler la liaison  
  La suppression supprime info de contrôle du code source à partir de projets et leurs solutions. La solution et projets affectés sont basées sur un mélange de sélection de l’utilisateur et comment les éléments ont été ajoutés au contrôle de code source.  
   
 |Action|Étapes de test|Résultats attendus pour vérifier|  
@@ -69,7 +64,7 @@ Cette zone de test plug-in de contrôle de code source couvre la modification du
 |Annuler la liaison de solution contenant un système de fichiers ou de projet Web IIS local et de projet d’un client|1.  Créez un système de fichiers ou d’un projet Web IIS local.<br />2.  Ajouter la solution au contrôle de code source.<br />3.  Ajouter un nouveau projet de client à la solution.<br />4.  Si vous y êtes invité, acceptez vérifier Out de la solution.<br />5.  Ouvrez le **modifier le contrôle de Source** boîte de dialogue.<br />6.  Cliquez sur **Unbind**.<br />7.  Cliquez sur **OK** pour fermer la boîte de dialogue.<br />8.  Tentative d’extraction de la solution, projet, éléments de solution, éléments de projet.|Solutions et projets ne sont pas sous contrôle de code source.<br /><br /> Commandes de menu de contrôle de code source n’apparaissent pas.|  
 |Annuler la liaison de l’annulation|1.  Créez un projet.<br />2.  Ajouter la solution au contrôle de code source.<br />3.  Ouvrez le **modifier le contrôle de Source** boîte de dialogue.<br />4.  Cliquez sur **tout dissocier**.<br />5.  Cliquez sur **Annuler**.|Solution est sous contrôle de code source.|  
   
-### <a name="case-5c-rebind"></a>Cas 5c : relier  
+### <a name="case-5c-rebind"></a>Cas 5c : reliaison  
  La reliaison est simplement une combinaison de séparer et de liaison, le processus de projet/solution qui a été précédemment sous contrôle de code source et a été séparé de reliaison.  
   
 |Action|Étapes de test|Résultats attendus pour vérifier|  
@@ -81,4 +76,3 @@ Cette zone de test plug-in de contrôle de code source couvre la modification du
   
 ## <a name="see-also"></a>Voir aussi  
  [Guide de test pour les plug-ins de contrôle de code source](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

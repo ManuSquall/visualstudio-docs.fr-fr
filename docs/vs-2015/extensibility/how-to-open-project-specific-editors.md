@@ -1,14 +1,9 @@
 ---
-title: 'Comment : ouvrir des éditeurs spécifiques du projet | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Ouvrir des éditeurs spécifiques du projet | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, opening a project-specific editor
 - editors [Visual Studio SDK], opening project-specific editors
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 83e56d39-c97b-4c6b-86d6-3ffbec97e8d1
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 52d1fda1c3a1c2e8aac116c52afc8bf6738e23ea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dbafb5938f26b4cdb702168ee2f3500def7ac9c2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817670"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952354"
 ---
-# <a name="how-to-open-project-specific-editors"></a>Comment : ouvrir des éditeurs spécifiques du projet
+# <a name="how-to-open-project-specific-editors"></a>Procédure : Ouvrir des éditeurs spécifiques à un projet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Si un fichier de l’élément en cours d’ouverture par un projet est intrinsèquement lié à l’éditeur pour ce projet particulier, le projet doit ouvrir le fichier à l’aide d’un éditeur spécifique au projet. Le fichier ne peut pas être délégué au mécanisme de l’IDE pour la sélection d’un éditeur. Par exemple, au lieu d’utiliser un éditeur de bitmaps standard, vous pouvez utiliser cette option d’éditeur spécifiques au projet pour spécifier un éditeur de bitmaps spécifique qui reconnaît les informations contenues dans le fichier qui est unique à votre projet.  
@@ -60,6 +55,5 @@ Si un fichier de l’élément en cours d’ouverture par un projet est intrins�
   
 ## <a name="see-also"></a>Voir aussi  
  [Ouvrir et enregistrer des éléments de projet](../extensibility/internals/opening-and-saving-project-items.md)   
- [Comment : ouvrir des éditeurs Standard](../extensibility/how-to-open-standard-editors.md)   
- [Guide pratique pour ouvrir des éditeurs pour les documents ouverts](../extensibility/how-to-open-editors-for-open-documents.md)
-
+ [Guide pratique pour Ouvrir des éditeurs Standard](../extensibility/how-to-open-standard-editors.md)   
+ [Guide pratique pour Ouvrir des éditeurs pour les Documents ouverts](../extensibility/how-to-open-editors-for-open-documents.md)

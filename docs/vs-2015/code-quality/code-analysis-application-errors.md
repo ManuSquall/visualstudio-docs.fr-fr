@@ -1,14 +1,9 @@
 ---
-title: Erreurs d’Application d’analyse de code | Microsoft Docs
-ms.custom: ''
+title: Erreurs d’application d’analyse du code
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 helpviewer_keywords:
 - errors [Visual Studio ALM], code analysis
 - code analysis, errors
@@ -18,13 +13,13 @@ ms.assetid: d8fd9475-ac9b-4085-b5a3-b0c807922cac
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: 66d611903c71cc526c01c1062c85ceef2e7975f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 25ee5a4e9a84201f93783bcef64f92ec74206fc6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225015"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951759"
 ---
 # <a name="code-analysis-application-errors"></a>Erreurs d’application d’analyse du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,14 +52,13 @@ Cette section est une référence des messages d’erreur générés par l’out
 |[CA0070](ca0070.md)|Ne peut pas charger l’assembly ou un type en raison d’autorisations de sécurité.|
 |[CA0501](ca0501.md)|Impossible de lire le rapport de sortie.|
 |[CA0502](ca0502.md)|Langage non pris en charge.|
-|[CA0503](ca0503.md))|La propriété est déconseillée. Utilisez la propriété de remplacement|
+|[CA0503](ca0503.md)|La propriété est déconseillée. Utilisez la propriété de remplacement|
 |[CA0504](ca0504.md)|Répertoire de règle a été ignoré, car il n’existe pas|
 |[CA0505](ca0505.md)|La propriété est déconseillée. Utilisez la propriété de remplacement|
 |[Erreurs FxCopCmd](fxcopcmd-errors.md)|Erreurs d’analyse du code managé.|
-|[Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)|Code de vérification de l’analyse des erreurs de stratégie.|
 
 ## <a name="related-sections"></a>Rubriques connexes
 
-- [Instructions pour l’écriture de Code sécurisé](http://msdn.microsoft.com/en-us/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)
+- [Instructions pour l’écriture de Code sécurisé](http://msdn.microsoft.com/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)
 - [Analyse de la qualité d’un code managé](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)
 - [Ressources pour la résolution des erreurs dans les outils de gestion du cycle de vie des applications](http://msdn.microsoft.com/library/76ca8f76-1e2d-4b55-89e2-bd59e4abe74c)

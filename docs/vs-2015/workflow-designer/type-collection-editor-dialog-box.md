@@ -1,11 +1,8 @@
 ---
 title: Boîte de dialogue Éditeur de Collection de type | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - TypeCollectionEditor.UI
@@ -13,13 +10,13 @@ ms.assetid: 63cdea6b-bca2-4c06-b8b4-c8faabd40726
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: c33049c264041495041798ab98c4223ebe0ed6f7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 4817d916fdd29d36f53c6bd3fbca42abb2f7cb15
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298563"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953029"
 ---
 # <a name="type-collection-editor-dialog-box"></a>Boîte de dialogue Éditeur de collections de types
 Le **éditeur de collections de Type** boîte de dialogue est utilisée pour ajouter des types connus le **envoyer** et **réception** activités. Cette boîte de dialogue est également utilisé pour ajouter des arguments de type générique pour le **InvokeMethod** activité. Lorsqu’il est utilisé pour le **envoyer** et **réception** activités à ajouter des types connus, le **éditeur de collections de Type** boîte de dialogue nécessite les ajouts de type unique. Si un type en double est ajouté et la modification est validée en cliquant sur **OK**, un message d’erreur est retourné. Lorsqu’il est utilisé pour le **InvokeMethod** activité pour ajouter des arguments de type générique, le **éditeur de collections de Type** boîte de dialogue permet l’ajout de types en double.  
@@ -33,9 +30,9 @@ Le **éditeur de collections de Type** boîte de dialogue est utilisée pour ajo
 |----------------|-----------------|  
 |**Liste de types**|Liste des types qui ont été ajoutés ou supprimés.|  
   
-## <a name="to-bring-up-the-type-collection-editor"></a>Pour afficher l'Éditeur de collections de types  
+## <a name="to-bring-up-the-type-collection-editor"></a>Pour afficher l’Éditeur de collections de types  
   
-#### <a name="to-bring-up-the-type-collection-editor-for-the-send-and-receive-activities"></a>Pour afficher l’Éditeur de collections de types pour les activités Send et Receive  
+#### <a name="to-bring-up-the-type-collection-editor-for-the-send-and-receive-activities"></a>Pour afficher l'Éditeur de collections de types pour les activités Send et Receive  
   
 1.  Sélectionnez le **envoyer** ou **réception** activité en mode design.  
   
@@ -43,7 +40,7 @@ Le **éditeur de collections de Type** boîte de dialogue est utilisée pour ajo
   
 3.  Dans le **propriétés** , cliquez sur le bouton de sélection en regard du **KnownTypes** propriété.  
   
-#### <a name="to-bring-up-the-type-collection-editor-for-the-invokemethod-activity"></a>Pour afficher l’Éditeur de collections de types pour l’activité InvokeMethod  
+#### <a name="to-bring-up-the-type-collection-editor-for-the-invokemethod-activity"></a>Pour afficher l'Éditeur de collections de types pour l'activité InvokeMethod  
   
 1.  Sélectionnez le **InvokeMethod** activité en mode design.  
   

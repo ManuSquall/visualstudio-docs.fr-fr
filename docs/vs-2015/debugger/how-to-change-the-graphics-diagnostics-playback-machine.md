@@ -1,27 +1,22 @@
 ---
-title: 'Comment : modifier l’ordinateur de lecture Graphics Diagnostics | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Modifier l’ordinateur de lecture Graphics Diagnostics | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 1b9aa3ea-29a0-4e21-bc57-936f33537b5c
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a2d5d56d37bbed4180d1231cac54da6beff3418d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1f5f25bf9b0dc03afc7cb2ba334d85bd697b7dc5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737607"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949186"
 ---
-# <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>Comment : modifier l’ordinateur de lecture Graphics Diagnostics
+# <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>Procédure : modifier l’ordinateur de lecture Graphics Diagnostics
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez lire les informations graphiques à l’aide de votre ordinateur local, ou à l’aide d’un ordinateur distant ou un périphérique.  
@@ -37,7 +32,7 @@ Vous pouvez lire les informations graphiques à l’aide de votre ordinateur loc
   
 3.  Définir le **Mode d’authentification** propriété **aucun**.  
   
-4.  Choisissez le **sélectionnez** bouton.  
+4.  Choisissez le bouton **Sélectionner**.  
   
 #### <a name="to-use-a-remote-machine-to-play-back-graphics-information"></a>Pour utiliser un ordinateur distant pour lire les informations graphiques  
   
@@ -51,13 +46,10 @@ Vous pouvez lire les informations graphiques à l’aide de votre ordinateur loc
   
     -   Pour aucune authentification, définissez le **Mode d’authentification** propriété **aucun**.  
   
-4.  Choisissez le **sélectionnez** bouton.  
+4.  Choisissez le bouton **Sélectionner**.  
   
 > [!NOTE]
 >  Le **connexions au débogueur distant** boîte de dialogue peut également s’afficher les cibles de débogage à distance qui sont directement connectés à votre ordinateur de développement ou qui sont sur le même sous-réseau. Vous pouvez utiliser une de ces cibles de débogage à distance en tant que l’ordinateur de lecture Graphics Diagnostics sans la configurer manuellement. Dans le **connexions au débogueur distant** boîte de dialogue, sélectionnez la cible que vous souhaitez, puis choisissez le **sélectionnez** bouton.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Document journal de graphisme](../debugger/graphics-log-document.md)
-
-
-

@@ -1,12 +1,9 @@
 ---
 title: Lier des contrôles WPF à un jeu de données | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +17,13 @@ ms.assetid: 177420b9-568b-4dad-9d16-1b0e98a24d71
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9b77e8211d8f76627f16f96abed8a61e6dae03d7
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 94b6c5d7e1695b4b9ef2d1b383575a8806b112db
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219794"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951354"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Lier des contrôles WPF à un dataset
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,11 +31,11 @@ ms.locfileid: "50219794"
   
 Dans cette procédure pas à pas, vous allez créer une application WPF qui contient des contrôles liés aux données. Les contrôles sont liés aux enregistrements produit encapsulés dans un dataset. Vous allez également ajouter des boutons pour parcourir les produits et enregistrer les modifications apportées aux enregistrements produit.  
   
- Cette procédure pas à pas décrit les tâches suivantes :  
+ Cette procédure pas à pas décrit les tâches suivantes :  
   
 - création d'une application WPF et d'un dataset généré à partir des données de l'exemple de base de données AdventureWorksLT ;  
   
-- Création d’un ensemble de contrôles liés aux données en faisant glisser une table de données à partir de la **des Sources de données** fenêtre à une fenêtre dans le Concepteur WPF.  
+- création d’un ensemble de contrôles liés aux données en faisant glisser une table de données depuis la fenêtre **Sources de données** vers une fenêtre du Concepteur WPF ;  
   
 - création de boutons permettant d'avancer et de reculer dans les enregistrements produit ;  
   
@@ -55,9 +52,9 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui cont
   
   La connaissance préalable des concepts suivants s'avère également utile, mais n'est pas obligatoire pour suivre cette procédure pas à pas :  
   
-- Datasets et TableAdapters. Pour plus d’informations, consultez [outils de Dataset dans Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) et [vue d’ensemble de TableAdapter](../data-tools/tableadapter-overview.md).  
+- Datasets et TableAdapters. Pour plus d’informations, consultez [outils de Dataset dans Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).  
   
-- Utilisation du Concepteur WPF. Pour plus d’informations, consultez [WPF et Silverlight Designer Overview](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
+- Utilisation du Concepteur WPF. Pour plus d’informations, consultez [WPF et Silverlight Designer Overview](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
 - Liaison de données WPF. Pour plus d’informations, consultez [Vue d’ensemble de la liaison de données](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
   
@@ -70,40 +67,40 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui cont
   
 2.  Dans le menu **Fichier** , pointez sur **Nouveau**, puis cliquez sur **Projet**.  
   
-3.  Développez **Visual Basic** ou **Visual C#**, puis sélectionnez **Windows**.  
+3.  Développez **Visual Basic** ou **Visual C#**, puis sélectionnez **Windows**.  
   
-4.  Sélectionnez le **Application WPF** modèle de projet.  
+4.  Sélectionnez le modèle de projet **Application WPF**.  
   
 5.  Dans le **nom** , tapez `AdventureWorksProductsEditor` et cliquez sur **OK**.  
   
      Visual Studio crée le `AdventureWorksProductsEditor` projet.  
   
 ## <a name="create-a-dataset-for-the-application"></a>Créer un jeu de données pour l’application  
- Avant de pouvoir créer des contrôles liés aux données, vous devez définir un modèle de données pour votre application et l’ajouter à la **des Sources de données** fenêtre. Dans cette procédure pas à pas, vous allez créer un dataset à utiliser comme modèle de données.  
+ Avant de pouvoir créer des contrôles liés aux données, vous devez définir un modèle de données pour votre application et l’ajouter à la fenêtre **Sources de données**. Dans cette procédure pas à pas, vous allez créer un dataset à utiliser comme modèle de données.  
   
 #### <a name="to-create-a-dataset"></a>Pour créer un dataset  
   
 1.  Dans le menu **Données** , cliquez sur **Afficher les sources de données**.  
   
-     Le **des Sources de données** fenêtre s’ouvre.  
+     La fenêtre **Sources de données** s’ouvre.  
   
 2.  Dans la fenêtre **Sources de données** , cliquez sur **Ajouter une nouvelle source de données**.  
   
-     Le **Configuration de Source de données** Assistant s’ouvre.  
+     L’Assistant **Configuration de source de données** s’ouvre.  
   
-3.  Sur le **choisir un Type de Source de données** page, sélectionnez **base de données**, puis cliquez sur **suivant**.  
+3.  Dans la page **Choisir un type de source de données**, sélectionnez **Base de données**, puis cliquez sur **Suivant**.  
   
-4.  Sur le **choisir un modèle de base de données** page, sélectionnez **Dataset**, puis cliquez sur **suivant**.  
+4.  Dans la page **Choisir un modèle de base de données**, sélectionnez **Groupe de données**, puis cliquez sur **Suivant**.  
   
-5.  Sur le **choisir votre connexion de données** page, sélectionnez une des options suivantes :  
+5.  Dans la page **Choisir votre connexion de données**, sélectionnez une des options suivantes :  
   
-    -   Si une connexion de données à la base de données AdventureWorksLT est disponible dans la liste déroulante, sélectionnez-la, puis **suivant**.  
+    -   Si une connexion de données à l’exemple de base de données AdventureWorksLT est disponible dans la liste déroulante, sélectionnez-la, puis cliquez sur **Suivant**.  
   
-    -   Cliquez sur **nouvelle connexion**et créer une connexion à la base de données AdventureWorksLT.  
+    -   Cliquez sur **Nouvelle connexion** et créez une connexion à la base de données AdventureWorksLT.  
   
-6.  Sur le **enregistrer la chaîne de connexion dans le fichier de configuration** page, sélectionnez le **Oui, enregistrer la connexion en tant que** case à cocher, puis cliquez sur **suivant**.  
+6.  Dans la page **Enregistrer la chaîne de connexion dans le fichier de configuration de l’application**, cochez la case **Oui, enregistrer la connexion en tant que**, puis cliquez sur **Suivant**.  
   
-7.  Sur le **choisir vos objets de base de données** page, développez **Tables**, puis sélectionnez le **Product (SalesLT)** table.  
+7.  Dans la page **Choisir vos objets de base de données**, développez **Tables**, puis sélectionnez la table **Product (SalesLT)**.  
   
 8.  Cliquez sur **Terminer**.  
   
@@ -122,9 +119,9 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui cont
   
 2.  Dans le concepteur, cliquez sur le **Fill,GetData()** de requête et sélectionnez **configurer**.  
   
-     Le **Configuration de TableAdapter** Assistant s’ouvre.  
+     L’Assistant **Configuration de TableAdapter** s’ouvre.  
   
-3.  Dans le **Entrez une instruction SQL** , ajoutez la clause WHERE suivante après la `SELECT` instruction dans la zone de texte.  
+3.  Dans la page **Entrer une instruction SQL**, ajoutez la clause WHERE suivante après l’instruction `SELECT` dans la zone de texte.  
   
     ```  
     WHERE ThumbnailPhotoFileName <> 'no_image_available_small.gif'  
@@ -141,7 +138,7 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui cont
   
      La fenêtre s'ouvre dans le Concepteur WPF.  
   
-2.  Dans la vue [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] du concepteur, ajoutez le code suivant entre les balises `<Grid>` :  
+2.  Dans la vue [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] du concepteur, ajoutez le code suivant entre les étiquettes `<Grid>` :  
   
     ```  
     <Grid.RowDefinitions>  
@@ -160,11 +157,11 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui cont
   
 #### <a name="to-create-data-bound-controls"></a>Pour créer des contrôles liés aux données  
   
-1.  Dans le **des Sources de données** fenêtre, cliquez sur le menu déroulant pour le **produit** nœud et sélectionnez **détails**.  
+1.  Dans la fenêtre **Sources de données**, cliquez sur le menu déroulant pour le nœud **Product** et sélectionnez **Détails**.  
   
-2.  Développez le **produit** nœud.  
+2.  Développez le nœud **Product**.  
   
-3.  Pour cet exemple, certains champs n’apparaissent pas, par conséquent, cliquez sur le menu déroulant en regard des nœuds suivants et sélectionnez **aucun**:  
+3.  Pour cet exemple, certains champs ne vont pas s’afficher. Cliquez alors sur le menu déroulant situé à côté des nœuds suivants, puis sélectionnez **Aucun** :  
   
     -   ProductCategoryID  
   
@@ -176,29 +173,29 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui cont
   
     -   ModifiedDate  
   
-4.  Cliquez sur le menu déroulant en regard du **ThumbNailPhoto** nœud et sélectionnez **Image**.  
+4.  Cliquez sur le menu déroulant à côté du nœud **ThumbNailPhoto** et sélectionnez **Image**.  
   
     > [!NOTE]
-    >  Par défaut, les éléments de la **des Sources de données** fenêtre qui représentent des images ont leur contrôle par défaut la valeur **aucun**. En effet, les images sont stockées en tant que tableaux d'octets dans les bases de données et les tableaux d'octets peuvent contenir aussi bien un simple tableau d'octets que le fichier exécutable d'une application volumineuse.  
+    >  Par défaut, les éléments de la fenêtre **Sources de données** représentant des images ont leur contrôle par défaut défini sur **Aucun**. En effet, les images sont stockées en tant que tableaux d'octets dans les bases de données et les tableaux d'octets peuvent contenir aussi bien un simple tableau d'octets que le fichier exécutable d'une application volumineuse.  
   
-5.  À partir de la **des Sources de données** fenêtre, faites glisser le **produit** nœud à la ligne de grille sous la ligne qui contient les boutons.  
+5.  Dans la fenêtre **Sources de données**, faites glisser le nœud **Product** vers la ligne de la grille située en dessous de la ligne contenant les boutons.  
   
-     Visual Studio génère le XAML qui définit un ensemble de contrôles liés aux données dans le **produits** table. Il génère également du code qui charge les données. Pour plus d’informations sur le XAML et le code généré, consultez [WPF de lier des contrôles à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
+     Visual Studio génère du XAML qui définit un ensemble de contrôles liés aux données de la table **Product**. Il génère également du code qui charge les données. Pour plus d’informations sur le XAML et le code généré, consultez [WPF de lier des contrôles à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
   
-6.  Dans le concepteur, cliquez sur la zone de texte en regard du **Id_produit** étiquette.  
+6.  Dans le concepteur, cliquez sur la zone de texte à côté de l’étiquette **Product ID**.  
   
-7.  Dans le **propriétés** fenêtre, sélectionnez la case à cocher à côté du **IsReadOnly** propriété.  
+7.  Dans la fenêtre **Propriétés**, cochez la case en regard de la propriété **IsReadOnly**.  
   
 ## <a name="navigating-product-records"></a>Parcourir les enregistrements de produit  
- Ajoutez le code qui permet aux utilisateurs de parcourir les enregistrements produit à l’aide de la **\<** et **>** boutons.  
+ Ajoutez du code permettant aux utilisateurs de parcourir les enregistrements de produit à l’aide des boutons **\<** et **>**.  
   
 #### <a name="to-enable-users-to-navigate-product-records"></a>Pour permettre aux utilisateurs de parcourir les enregistrements produit  
   
-1.  Dans le concepteur, double-cliquez sur le **<** bouton sur la surface de la fenêtre.  
+1.  Dans le concepteur, double-cliquez sur le bouton **<** de la fenêtre.  
   
-     Visual Studio ouvre le fichier code-behind et crée un nouveau `backButton_Click` Gestionnaire d’événements pour le <xref:System.Windows.Controls.Primitives.ButtonBase.Click> événement.  
+     Visual Studio ouvre le fichier code-behind et crée un gestionnaire d’événements `backButton_Click` pour l’événement <xref:System.Windows.Controls.Primitives.ButtonBase.Click>.  
   
-2.  Modifier le `Window_Loaded` Gestionnaire d’événements, par conséquent, le `ProductViewSource`, `AdventureWorksLTDataSet`, et `AdventureWorksLTDataSetProductTableAdapter` sont en dehors de la méthode et accessibles à l’intégralité du formulaire. Déclarez qu’uniquement soit global au formulaire et assignez-les dans le `Window_Loaded` Gestionnaire d’événements similaire à ce qui suit :  
+2.  Modifiez le gestionnaire d’événements `Window_Loaded`, de sorte que `ProductViewSource`, `AdventureWorksLTDataSet` et `AdventureWorksLTDataSetProductTableAdapter` se trouvent en dehors de la méthode et soient accessibles par tout le formulaire. Déclarez qu’uniquement soit global au formulaire et assignez-les dans le `Window_Loaded` Gestionnaire d’événements similaire à ce qui suit :  
   
      [!code-csharp[Data_WPFDATASET#1](../snippets/csharp/VS_Snippets_ProTools/data_wpfdataset/cs/mainwindow.xaml.cs#1)]
      [!code-vb[Data_WPFDATASET#1](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#1)]  
@@ -208,7 +205,7 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui cont
      [!code-csharp[Data_WPFDATASET#2](../snippets/csharp/VS_Snippets_ProTools/data_wpfdataset/cs/mainwindow.xaml.cs#2)]
      [!code-vb[Data_WPFDATASET#2](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#2)]  
   
-4.  Revenez dans le concepteur et le double-clic le **>** bouton.  
+4.  Revenez dans le concepteur et double-cliquez sur le bouton **>**.  
   
 5.  Ajoutez le code suivant au gestionnaire d'événements `nextButton_Click` :  
   
@@ -216,13 +213,13 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui cont
      [!code-vb[Data_WPFDATASET#3](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#3)]  
   
 ## <a name="savechanges-to-product-records"></a>SaveChanges aux enregistrements produit  
- Ajoutez le code qui permet aux utilisateurs d’enregistrer les modifications apportées aux enregistrements produit à l’aide de la **enregistrer les modifications** bouton.  
+ Ajoutez du code permettant aux utilisateurs d’enregistrer les modifications apportées aux enregistrements de produit à l’aide du bouton **Enregistrer les modifications**.  
   
 #### <a name="to-add-the-ability-to-save-changes-to-product-records"></a>Pour ajouter la possibilité d'enregistrer les modifications apportées aux enregistrements produit  
   
-1.  Dans le concepteur, double-cliquez sur le **enregistrer les modifications** bouton.  
+1.  Dans le concepteur, double-cliquez sur le bouton **Enregistrer les modifications**.  
   
-     Visual Studio ouvre le fichier code-behind et crée un nouveau `saveButton_Click` Gestionnaire d’événements pour le <xref:System.Windows.Controls.Primitives.ButtonBase.Click> événement.  
+     Visual Studio ouvre le fichier code-behind et crée un gestionnaire d’événements `saveButton_Click` pour l’événement <xref:System.Windows.Controls.Primitives.ButtonBase.Click>.  
   
 2.  Ajoutez le code suivant au gestionnaire d'événements `saveButton_Click` :  
   
@@ -243,11 +240,11 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui cont
   
     -   Les zones de texte affichent les données du premier enregistrement produit qui dispose d'une photo. Ce produit a l’ID de produit 713 et le nom **Long-Sleeve Logo Jersey, S**.  
   
-    -   Vous pouvez cliquer sur le **>** ou **<** boutons pour parcourir les autres enregistrements produit.  
+    -   Vous pouvez cliquez sur les boutons **>** ou **<** pour parcourir les autres enregistrements de produit.  
   
-2.  Dans un des enregistrements de produit, modifiez le **taille** valeur, puis cliquez sur **enregistrer les modifications**.  
+2.  Dans un des enregistrements de produit, modifiez la valeur de **Size**, puis cliquez sur **Enregistrer les modifications**.  
   
-3.  Fermez l’application et redémarrez l’application en appuyant sur **F5** dans Visual Studio.  
+3.  Fermez l’application, puis redémarrez-la en appuyant sur **F5** dans Visual Studio.  
   
 4.  Accédez à l'enregistrement produit que vous avez modifié et vérifiez que la modification a été appliquée.  
   
@@ -256,14 +253,13 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui cont
 ## <a name="next-steps"></a>Étapes suivantes  
  Une fois cette procédure pas à pas terminée, vous pouvez effectuer les tâches associées suivantes :  
   
--   Découvrez comment utiliser le **des Sources de données** contrôle de fenêtre dans Visual Studio pour créer une liaison WPF à d’autres types de sources de données. Pour plus d’informations, consultez [WPF de lier des contrôles à un service de données WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md).  
+-   Découvrez comment utiliser la fenêtre **Sources de données** dans Visual Studio pour lier des contrôles WPF à d’autres types de sources de données. Pour plus d’informations, consultez [WPF de lier des contrôles à un service de données WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md).  
   
--   Découvrez comment utiliser le **des Sources de données** fenêtre dans Visual Studio pour afficher des données associées (autrement dit, les données dans une relation parent-enfant) dans les contrôles WPF. Pour plus d’informations, consultez [procédure pas à pas : affichage des données connexes dans une Application WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md).  
+-   Découvrez comment utiliser la fenêtre **Sources de données** dans Visual Studio pour afficher des données associées (c’est-à-dire des données dans une relation parent-enfant) dans des contrôles WPF. Pour plus d’informations, consultez [Procédure pas à pas : Affichage de données liées dans une Application WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Lier des contrôles WPF à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
  [Lier des contrôles WPF à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)   
  [Outils de dataset dans Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)   
- [WPF et Silverlight Designer Overview](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62)   
+ [WPF et Silverlight Designer Overview](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)   
  [Vue d’ensemble de la liaison de données](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)
-

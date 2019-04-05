@@ -1,33 +1,28 @@
 ---
 title: Événements de mémoire tampon de texte dans l’API héritée | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text buffer events
 ms.assetid: 9be49e9f-1864-41c2-8a3c-f66895881341
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 677824142f2e7e497888627041cfe7a82487d342
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e82fa31ca435d0c850a4d9e75e927cff9613b046
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735511"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952397"
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>Événements de mémoire tampon de texte dans l’API héritée
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L’objet de mémoire tampon de texte émet plusieurs événements différents qui vous permettent de répondre à différentes situations.  
   
- Lorsque vous utilisez l’API héritée, vous devez implémenter les interfaces suivantes afin de recevoir des notifications de modification de la mémoire tampon de texte. Exposer les interfaces de la mémoire tampon de texte en utilisant le `IConnectionPointContainer` modifications de l’interface sur la mémoire tampon pour recevoir une notification de ligne à partir de la mémoire tampon. Pour plus d’informations, consultez [Comment : s’inscrire aux événements de mémoire tampon de texte avec l’API héritée](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md). Dans le cas de `IVsTextStreamEvents` ou `IVsTextLinesEvents` interfaces, les modifications sont retournées dans l’une ou deux dimensions coordonnées, respectivement.  
+ Lorsque vous utilisez l’API héritée, vous devez implémenter les interfaces suivantes afin de recevoir des notifications de modification de la mémoire tampon de texte. Exposer les interfaces de la mémoire tampon de texte en utilisant le `IConnectionPointContainer` modifications de l’interface sur la mémoire tampon pour recevoir une notification de ligne à partir de la mémoire tampon. Pour plus d'informations, voir [Procédure : S’inscrire aux événements de mémoire tampon de texte avec l’API héritée](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md). Dans le cas de `IVsTextStreamEvents` ou `IVsTextLinesEvents` interfaces, les modifications sont retournées dans l’une ou deux dimensions coordonnées, respectivement.  
   
 ## <a name="text-buffer-interfaces"></a>Interfaces de mémoire tampon de texte  
  Voici les interfaces implémentées par l’objet de mémoire tampon de texte.  
@@ -58,5 +53,4 @@ L’objet de mémoire tampon de texte émet plusieurs événements différents q
   
 ## <a name="see-also"></a>Voir aussi  
  [L’accès à la mémoire tampon de texte à l’aide de l’API héritée](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)   
- [Guide pratique pour s’inscrire aux événements de mémoire tampon de texte avec l’API héritée](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)
-
+ [Guide pratique pour S’inscrire aux événements de mémoire tampon de texte avec l’API héritée](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)

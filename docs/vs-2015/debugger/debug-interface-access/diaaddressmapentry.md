@@ -1,14 +1,9 @@
 ---
 title: DiaAddressMapEntry | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 5d0ae226-981d-4541-a801-fc4993fe663b
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fa2824b7fbd10e7628e5c6b0a016615620933df9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 67c0a3e297f3eebfbf44724e64c4989d9bb979fb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756249"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951574"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -63,8 +58,5 @@ struct DiaAddressMapEntry { 
  En-tête : dia2.h  
   
 ## <a name="see-also"></a>Voir aussi  
- [Énumérations et Structures](../../debugger/debug-interface-access/enumerations-and-structures.md)   
+ [Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)
-
-
-

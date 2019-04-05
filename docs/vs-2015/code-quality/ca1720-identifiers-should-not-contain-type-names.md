@@ -1,14 +1,9 @@
 ---
-title: 'CA1720 : Les identificateurs ne doivent pas contenir de noms de types | Microsoft Docs'
-ms.custom: ''
+title: 'CA1720 : Identificateurs ne doivent pas contenir les noms de type | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1720
 - IdentifiersShouldNotContainTypeNames
@@ -20,12 +15,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ec0980d312d4a65a770e63f0a23203a7e95c546f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 504c985bd276a891b76e8c9b2a7c0ef51c3a490a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862333"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951505"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720 : Les identificateurs ne doivent pas contenir de noms de types
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,9 +74,9 @@ ms.locfileid: "49862333"
 
 - Float
 
-- float32
+- Float32
 
-- float64
+- Float64
 
   En outre, les noms d’un paramètre sont également vérifiés par rapport à des noms de type de données indépendant du langage suivants, casse :
 
@@ -146,13 +141,10 @@ ms.locfileid: "49862333"
  Utilisation occasionnelle de noms de paramètres et de membres en fonction de type peut être appropriée. Toutefois, pour un nouveau développement, aucun connus scénarios se produisent dans lequel vous ne devez supprimer un avertissement de cette règle. Pour les bibliothèques déjà livrées, vous devrez peut-être supprimer un avertissement de cette règle.
 
 ## <a name="related-rules"></a>Règles associées
- [CA1709 : La casse des identificateurs doit être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA1709 : Identificateurs doivent être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
- [CA1708 : Les identificateurs ne doivent pas différer que par leur casse](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708 : Les identificateurs doivent différer par leur casse](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
- [CA1707 : Les identificateurs ne doivent pas contenir de traits de soulignement](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+ [CA1707 : Identificateurs ne doivent pas contenir de traits de soulignement](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
 
- [CA1719 : Les noms des paramètres ne doivent pas être identiques aux noms des membres](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)
-
-
-
+ [CA1719 : Noms de paramètres ne doivent pas correspondre aux noms de membres](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)

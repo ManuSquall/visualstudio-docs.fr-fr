@@ -1,14 +1,9 @@
 ---
-title: 'Préparation du débogage : Des Applications Web ASP.NET | Microsoft Docs'
-ms.custom: ''
+title: 'Débogage de la préparation : Les Applications Web ASP.NET | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,18 +18,18 @@ ms.assetid: bcfb1080-98d1-42f9-96af-186fb14f232a
 caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 59f4f3e1db92c5f7b46a9bb9e1e164fc25b01010
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: baa5e454eec00c2530190834974cd946838a0947
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730690"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950865"
 ---
-# <a name="debugging-preparation-aspnet-web-applications"></a>Préparation du débogage : applications Web ASP.NET
+# <a name="debugging-preparation-aspnet-web-applications"></a>Débogage de la préparation : Applications Web ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]modèle de site Web crée une application Web Form. Lorsque vous créez un site web à l’aide de ce modèle, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] crée les paramètres par défaut pour le débogage. Dans le **propriétés du projet** boîte de dialogue, vous pouvez spécifier si vous souhaitez que la page Web soit une page de démarrage. Lorsque vous commencez à déboguer un [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]Site Web avec ces paramètres par défaut, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] démarre Internet Explorer et attache le débogueur à la [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] des processus de travail (aspnet_wp.exe ou w3wp.exe). Pour plus d'informations, voir [System Requirements](../debugger/aspnet-debugging-system-requirements.md).  
+Le [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]modèle de site Web crée une application Web Form. Lorsque vous créez un site Web à l'aide de ce modèle, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] crée les paramètres par défaut pour le débogage. Dans le **propriétés du projet** boîte de dialogue, vous pouvez spécifier si vous souhaitez que la page Web soit une page de démarrage. Lorsque vous commencez à déboguer un [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]Site Web avec ces paramètres par défaut, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] démarre Internet Explorer et attache le débogueur à la [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] des processus de travail (aspnet_wp.exe ou w3wp.exe). Pour plus d'informations, voir [System Requirements](../debugger/aspnet-debugging-system-requirements.md).  
   
 ### <a name="to-create-a-web-forms-application"></a>Pour créer une application Web Forms  
   
@@ -48,14 +43,14 @@ Le [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]modèle de site Web crée une
   
 1.  Définissez un ou plusieurs points d'arrêt dans vos fonctions et gestionnaires d'événements.  
   
-     Pour plus d'informations, consultez [Breakpoints and Tracepoints](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583).  
+     Pour plus d'informations, consultez [Breakpoints and Tracepoints](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
 2.  Lorsqu'un point d'arrêt est atteint, parcourez le code à l'intérieur de la fonction. Observez l'exécution de votre code jusqu'à cerner le problème.  
   
-     Pour plus d’informations, consultez [exécution pas à pas](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9) et [le débogage des Applications Web et scripts](../debugger/debugging-web-applications-and-script.md).  
+     Pour plus d’informations, consultez [exécution pas à pas](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) et [le débogage des Applications Web et scripts](../debugger/debugging-web-applications-and-script.md).  
   
 ## <a name="changing-default-configurations"></a>Modification des configurations par défaut  
- Si vous le souhaitez, vous êtes autorisé à modifier les valeurs par défaut des configurations Debug et Release créées par [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Pour plus d’informations, consultez [Guide pratique pour définir des configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md).  
+ Si vous le souhaitez, vous êtes autorisé à modifier les valeurs par défaut des configurations Debug et Release créées par [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Pour plus d'informations, voir [Procédure : Définir des configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md).  
   
 #### <a name="to-change-the-default-debug-configuration"></a>Pour modifier la configuration Debug par défaut  
   
@@ -74,6 +69,3 @@ Le [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]modèle de site Web crée une
  [Principes de base du débogueur](../debugger/debugger-basics.md)   
  [Sécurité du débogueur](../debugger/debugger-security.md)   
  [Débogage du code managé](../debugger/debugging-managed-code.md)
-
-
-

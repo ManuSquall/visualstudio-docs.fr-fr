@@ -1,14 +1,9 @@
 ---
 title: '&lt;fileAssociation&gt; , élément (Application ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: 8f951b4f-54f9-412e-a9e5-af4e379fcf08
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: e827f0829cfe0436f491196b7f1dab99ac87c4fc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 4b31ac34627b244cb61b6fdb5c6ca214675ec045
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234453"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949884"
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt; , élément (Application ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,6 +83,3 @@ Identifie une extension de fichier à associer à l’application.
   
 ## <a name="see-also"></a>Voir aussi  
  [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
-
-
-

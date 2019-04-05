@@ -1,26 +1,21 @@
 ---
-title: 'Procédure pas à pas : Création d’un kit de développement à l’aide de c# ou Visual Basic | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure pas à pas : Création d’un à l’aide du Kit de développement logiciel C# ou Visual Basic | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3e0bc88c8581b29f43e7efc55ee86019e1f1c3fb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 5989e0d72aaa7dda8e3daae16a6f384f8815357f
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736755"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001768"
 ---
-# <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Procédure pas à pas : création d’un SDK en C# ou Visual Basic
+# <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Procédure pas à pas : Création d’un Kit de développement logiciel (SDK) à l’aide de C# ou de Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dans cette procédure pas à pas, vous allez apprendre à créer un kit de développement de bibliothèque mathématique simple à l’aide de Visual c#, puis d’empaqueter le Kit de développement logiciel en tant qu’une Extension Visual Studio (VSIX). Vous allez effectuer les procédures suivantes :  
@@ -120,7 +115,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
   
 22. Dans **l’Explorateur de solutions**, choisissez **SimpleMath.winmd**.  
   
-23. Dans la barre de menus, choisissez **vue**, **propriétés** (clavier : appuyez sur la touche F4).  
+23. Dans la barre de menus, choisissez **vue**, **propriétés** (clavier : Appuyez sur F4).  
   
 24. Dans le **propriétés** fenêtre, la modification la **Action de génération** propriété **contenu**, puis modifiez le **inclure dans VSIX** propriété  **True**.  
   
@@ -180,6 +175,5 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
   
 ## <a name="see-also"></a>Voir aussi  
  [Procédure pas à pas : Création d’un kit de développement à l’aide de C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
- [Procédure pas à pas : Création d’un kit de développement à l’aide de JavaScript](http://msdn.microsoft.com/en-us/6195ff56-4a27-45fc-bd29-4b0451225f4b)   
+ [Procédure pas à pas : Création d’un kit de développement à l’aide de JavaScript](walkthrough-creating-an-sdk-using-javascript.md)   
  [Création d’un Kit de développement logiciel (SDK)](../extensibility/creating-a-software-development-kit.md)
-

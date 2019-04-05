@@ -1,26 +1,21 @@
 ---
 title: Mise en route avec le Service de langage et les Extensions de l’éditeur | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f09056d184256e2d62387af08c61186c6ff57c02
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e247192b19e8ae2e2037281f4f89631d2ea78605
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735214"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953071"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Bien démarrer avec les extensions du service de langage et de l’éditeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +66,7 @@ Vous pouvez utiliser des extensions de l’éditeur pour ajouter des fonctionnal
 ## <a name="running-extensions-in-the-experimental-instance"></a>Extensions en cours d’exécution dans l’Instance expérimentale  
  Vous pouvez isoler votre version de travail de Visual Studio pendant que vous développez une extension en le déployant dans le dossier suivant expérimental (sur Windows Vista et Windows 7) :  
   
- *%LocalAppData%* \VisualStudio\10.0Exp\Extensions\\*entreprise*\\*ExtensionID*  
+ *%LOCALAPPDATA%* \VisualStudio\10.0Exp\Extensions\\*Company*\\*ExtensionID*  
   
  où *% LocalAppData%* est le nom de l’utilisateur connecté, *entreprise* est le nom de l’entreprise qui possède l’extension, et *ExtensionID* est l’ID de l’extension.  
   
@@ -89,10 +84,9 @@ Vous pouvez utiliser des extensions de l’éditeur pour ajouter des fonctionnal
   
  Vous pouvez également créer éditeur composants MEF à partir d’une extension de Package Visual Studio. Les procédures suivantes pour plus d’informations, consultez :  
   
--   [Procédure pas à pas : Utilisation d’une commande Shell avec une extension de l’éditeur](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
+-   [Procédure pas à pas : À l’aide d’une invite de commandes avec une Extension de l’éditeur](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
   
--   [Procédure pas à pas : Utilisation d’une touche de raccourci avec une extension de l’éditeur](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
+-   [Procédure pas à pas : À l’aide d’une touche de raccourci avec une Extension de l’éditeur](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
   
 ## <a name="see-also"></a>Voir aussi  
  [Points d’extension du service de langage et de l’éditeur](../extensibility/language-service-and-editor-extension-points.md)
-

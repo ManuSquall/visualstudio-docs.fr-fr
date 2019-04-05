@@ -1,14 +1,9 @@
 ---
 title: Déploiement de composants COM avec ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +18,13 @@ ms.assetid: 1a4c7f4c-7a41-45f2-9af4-8b1666469b89
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 8f4412c067ffd43a14a62cc722cf60ca1a883d9f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 870255afe466709f8e9a5fc48e5135943443900d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820289"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001603"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Déploiement de composants COM avec ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ Déploiement de composants COM hérités a toujours été une tâche difficile. 
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] fournit un mécanisme simple et sécurisé pour le déploiement de vos applications .NET. Toutefois, si vos applications utilisent les composants COM installés, vous devez prendre des mesures supplémentaires pour les déployer. Cette rubrique décrit comment déployer des composants COM isolés et référencer des composants natifs (par exemple, à partir de Visual Basic 6.0 ou Visual C++).  
   
- Pour plus d’informations sur le déploiement des composants COM isolés, consultez « Simplify App Deployment with [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] et Registration-Free COM » à [ http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx ](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).  
+ Pour plus d’informations sur le déploiement des composants COM isolés, consultez « Simplify App Deployment with [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] et Registration-Free COM » à [ https://msdn.microsoft.com/magazine/msdn-magazine-issues.aspx ](https://msdn.microsoft.com/magazine/msdn-magazine-issues.aspx).  
   
 ## <a name="registration-free-com"></a>Registration-Free COM  
  COM sans inscription est une nouvelle technologie de déploiement et d’activation des composants COM isolés. Il fonctionne en plaçant la bibliothèque de types de tous les du composant et les informations d’inscription qui sont généralement installées dans le Registre système dans un fichier XML appelé manifeste, stocké dans le même dossier que l’application.  
@@ -171,7 +166,7 @@ Déploiement de composants COM hérités a toujours été une tâche difficile. 
   
 - Le composant gère un appareil physique ou virtuel pour le système, par exemple, un pilote de périphérique pour un spouleur d’impression.  
   
-- Le composant est un redistribuable Data Access. Les applications de données requièrent généralement un redistribuable Data Access distinct doit être installé avant de pouvoir exécuter. Vous ne devez pas essayer d’isoler des composants tels que le contrôle de données Microsoft ADO, OLE DB de Microsoft ou Microsoft Data Access Components (MDAC). Au lieu de cela, si votre application utilise MDAC ou SQL Server Express, vous devez les définir comme composants requis ; consultez [Comment : installer les composants requis avec une Application ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+- Le composant est un redistribuable Data Access. Les applications de données requièrent généralement un redistribuable Data Access distinct doit être installé avant de pouvoir exécuter. Vous ne devez pas essayer d’isoler des composants tels que le contrôle de données Microsoft ADO, OLE DB de Microsoft ou Microsoft Data Access Components (MDAC). Au lieu de cela, si votre application utilise MDAC ou SQL Server Express, vous devez les définir comme composants requis ; consultez [Comment : Installer les composants requis avec une Application ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
   Dans certains cas, il peut être possible pour le développeur du composant à reconcevoir pour COM sans inscription. Si ce n’est pas possible, vous pouvez toujours générer et publier des applications qui en dépendent, via le modèle d’inscription standard à l’aide du programme d’amorçage. Pour plus d’informations, consultez [création de Packages de programme d’amorçage](../deployment/creating-bootstrapper-packages.md).  
   
@@ -181,6 +176,3 @@ Déploiement de composants COM hérités a toujours été une tâche difficile. 
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md)
-
-
-

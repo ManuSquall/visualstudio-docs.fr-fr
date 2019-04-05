@@ -1,14 +1,9 @@
 ---
 title: Shell isolé Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Shell [Visual Studio], shell-based applications%2C isolated mode
 - Visual Studio shell, isolated mode
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d7fcb0a838f2849ab74d202785709164ec5af6d7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 59ecd079b7e95d86ab85eb9e5e36fcf938f99f58
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740653"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951424"
 ---
 # <a name="visual-studio-isolated-shell"></a>Shell isolé Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ Le shell isolé Visual Studio vous permet de créer des applications autonomes q
 >  Avant de pouvoir accéder le package redistribuable du shell isolé, vous devrez remplir un petit questionnaire.  Après avoir complété l’enquête, il vous serez dirigé vers une page de connexion de Visual Studio avec des liens de téléchargement de package redistribuable.  Vous trouverez les liens de téléchargement lors des visites suivantes sur le site Visual Studio se connecter sous le **programmes &#124; 2015 intégré et SHELL isolé VISUAL STUDIO** onglet.  
   
 > [!NOTE]
->  Pour plus d’informations sur la façon de déployer une application shell isolée, consultez [procédure pas à pas : création d’une Application Shell isolée de base](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+>  Pour plus d’informations sur la façon de déployer une application shell isolée, consultez [procédure pas à pas : Création d’un base d’Application Shell isolée](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ## <a name="working-with-the-isolated-shell"></a>Utilisation de l’interpréteur de commandes isolé  
  Une application de shell isolé Visual Studio a un accès complet aux services de Visual Studio et prend en charge la personnalisation spécial et personnalisation. Il existe plusieurs façons de personnaliser une application de shell isolé :  
@@ -62,7 +57,7 @@ Le shell isolé Visual Studio vous permet de créer des applications autonomes q
 |Catégorie de fonctionnalité|Fonctionnalité|  
 |----------------------|-------------|  
 |Fonctionnalités de l’IDE|Importer/exporter des paramètres<br /><br /> Programme d’installation du contrôle de boîte à outils<br /><br /> Liste des tâches et liste d’erreurs<br /><br /> Fenêtre Sortie<br /><br /> Page de démarrage<br /><br /> Propriétés (fenêtre)<br /><br /> Boîte à outils<br /><br /> Explorateur de solutions<br /><br /> Fenêtre Signet<br /><br /> Affichage de classes<br /><br /> Explorateur d'objets<br /><br /> Commande, fenêtre<br /><br /> Structure du document<br /><br /> Affichage des ressources<br /><br /> Outil externe<br /><br /> Windows Communication Foundation (WCF) ajouter une référence de Service<br /><br /> Language Integrated prise en charge de requête (LINQ)|  
-|Concepteur/éditeur|Outils (recherche unifiée, définition de la source, l’héritage) de navigation du code<br /><br /> IntelliSense<br /><br /> Balises actives<br /><br /> Gestionnaire des extraits de code<br /><br /> Extraits de code<br /><br /> Refactorisation<br /><br /> Tabulation<br /><br /> Filtrage IntelliSense<br /><br /> Fenêtre Définition de code<br /><br /> Concepteur d'applications<br /><br /> Concepteur Windows Forms<br /><br /> Concepteur Windows Presentation Foundation (WPF)|  
+|Concepteur/éditeur|Outils (recherche unifiée, définition de la source, l’héritage) de navigation du code<br /><br /> IntelliSense<br /><br /> SmartTags<br /><br /> Gestionnaire des extraits de code<br /><br /> Extraits de code<br /><br /> Refactorisation<br /><br /> Tabulation<br /><br /> Filtrage IntelliSense<br /><br /> Fenêtre Définition de code<br /><br /> Concepteur d'applications<br /><br /> Concepteur Windows Forms<br /><br /> Concepteur Windows Presentation Foundation (WPF)|  
 |Débogage|Évaluateur d’Expression c#<br /><br /> Le débogage local<br /><br /> Le débogage managé<br /><br /> Modifier & Continuer<br /><br /> Débogage inter-threads<br /><br /> Visualisations<br /><br /> DataTips<br /><br /> Débogage natif<br /><br /> Débogage de script<br /><br /> Débogage d’interopérabilité<br /><br /> Débogage juste-à-temps (JIT)<br /><br /> Débogage multiprocessus<br /><br /> Débogage XSLT<br /><br /> Attacher au processus local<br /><br /> Points de trace<br /><br /> Contraintes de point d’arrêt|  
 |Données|Explorateur de serveurs (simplifié - données uniquement)<br /><br /> Lier des données à des données locales (. MDF ou. MDB)<br /><br /> Lier les données à l’objet<br /><br /> Lier les données au service Web<br /><br /> Ensemble des contrôles de données<br /><br /> Éditeur XML<br /><br /> Lier des données à un serveur de base de données locale<br /><br /> Fenêtre Sources de données|  
 |Web|Éditeur HTML<br /><br /> Navigateur web<br /><br /> Concepteur Web Forms<br /><br /> Projet de Site Web<br /><br /> Projet d’Application Web|  
@@ -70,4 +65,3 @@ Le shell isolé Visual Studio vous permet de créer des applications autonomes q
   
 ## <a name="see-also"></a>Voir aussi  
  [Shell (isolé ou intégré)](../extensibility/shell-isolated-or-integrated.md)
-

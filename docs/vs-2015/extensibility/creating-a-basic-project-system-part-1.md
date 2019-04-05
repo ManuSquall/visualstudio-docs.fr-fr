@@ -1,14 +1,9 @@
 ---
 title: Création d’un système de projet de base, partie 1 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
 - project system
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
 caps.latest.revision: 48
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9bc0be22f0a5f975f616bfcce942d59399a36ad6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: ed2f8975f24404c00f81d86d0d1d6a6933b3d8ed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792552"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952456"
 ---
 # <a name="creating-a-basic-project-system-part-1"></a>Création d’un système de projet de base, partie 1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -577,7 +572,7 @@ Dans Visual Studio, les projets sont les conteneurs que les développeurs utilis
      Notez que les paramètres du modèle $nameSpace$ et $ de $className n’ont pas de nouvelles valeurs. Vous allez apprendre à implémenter la substitution de paramètre de modèle dans la section suivante.  
   
 ## <a name="substituting-template-parameters"></a>En remplaçant les paramètres de modèle  
- Dans la section précédente, vous inscrit le modèle de projet avec Visual Studio à l’aide de la `ProvideProjectFactory` attribut. Inscrire le chemin d’accès d’un dossier de modèle de cette manière vous permet d’activer la substitution de paramètre de modèle de base en remplaçant et en développant la `ProjectNode.AddFileFromTemplate` classe. Pour plus d’informations, consultez [nouvelle génération de projet : Under the Hood, partie deux](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Dans la section précédente, vous inscrit le modèle de projet avec Visual Studio à l’aide de la `ProvideProjectFactory` attribut. Inscrire le chemin d’accès d’un dossier de modèle de cette manière vous permet d’activer la substitution de paramètre de modèle de base en remplaçant et en développant la `ProjectNode.AddFileFromTemplate` classe. Pour plus d’informations, consultez [nouvelle génération de projet : Sous le capot, deuxième partie](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  Ajoutez maintenant le code de remplacement pour le `AddFileFromTemplate` classe.  
   
@@ -658,4 +653,3 @@ Dans Visual Studio, les projets sont les conteneurs que les développeurs utilis
     ![Commande de projet simple](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")  
   
    Félicitations ! Vous avez implémenté un système de base du projet managé.
-

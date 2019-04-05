@@ -1,14 +1,9 @@
 ---
-title: 'Comment : écrire un visualiseur | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Écrire un visualiseur | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -25,15 +20,15 @@ ms.assetid: 625a0d4f-abcc-43f2-9f8c-31c131a4378e
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2c7f1fa96bba40e5e56ca7f054b683b3243de65b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2421121e343fabbe3f2ec7d88ec087c6b84c8709
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724897"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948658"
 ---
-# <a name="how-to-write-a-visualizer"></a>Comment : écrire un visualiseur
+# <a name="how-to-write-a-visualizer"></a>Procédure : Écrire un visualiseur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez écrire un visualiseur personnalisé pour un objet de toute classe managée à l'exception de <xref:System.Object> ou <xref:System.Array>.  
@@ -45,13 +40,13 @@ Vous pouvez écrire un visualiseur personnalisé pour un objet de toute classe m
   
 - Le *côté débogueur* s’exécute dans le débogueur Visual Studio. Le code côté débogueur crée et affiche l'interface utilisateur de votre visualiseur.  
   
-- Le *côté programme débogué* s’exécute dans le processus de débogage de Visual Studio (le *programme débogué*).  
+- Le *côté élément débogué* s’exécute dans le processus que Visual Studio débogue (l’*élément débogué*).  
   
   L’objet de données que vous souhaitez visualiser (un objet String, par exemple) existe dans le processus de l’élément débogué. Le côté élément débogué doit donc envoyer cet objet de données au côté débogueur qui peut alors l’afficher à l’aide d’une interface utilisateur que vous créez.  
   
   Le côté débogueur reçoit cet objet de données à visualiser à partir d’un *fournisseur d’objets* qui implémente le <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> interface. Le côté programme débogué envoie l’objet de données via le *source de l’objet*, qui est dérivée de <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>. Le fournisseur d'objets peut également renvoyer des données à la source d'objet, vous permettant d'écrire un visualiseur capable de modifier et d'afficher des données. Le fournisseur d'objets peut être substitué pour parler à l'évaluateur d'expression et, par conséquent, à la source de l'objet.  
   
-  Le côté programme débogué et le côté débogueur communiquent entre eux via <xref:System.IO.Stream>. Des méthodes sont fournies pour sérialiser un objet de données dans un <xref:System.IO.Stream> et désérialiser le <xref:System.IO.Stream> dans un objet de données.  
+  Le côté élément débogué et le côté débogueur communiquent entre eux via <xref:System.IO.Stream>. Des méthodes sont fournies pour sérialiser un objet de données dans un <xref:System.IO.Stream> et désérialiser le <xref:System.IO.Stream> dans un objet de données.  
   
   Le code côté programme débogué est spécifié à l'aide de l'attribut DebuggerVisualizer (<xref:System.Diagnostics.DebuggerVisualizerAttribute>).  
   
@@ -63,7 +58,7 @@ Vous pouvez écrire un visualiseur personnalisé pour un objet de toute classe m
   
   Les visualiseurs personnalisés peuvent avoir des exigences en matière de sécurité. Consultez [considérations de sécurité visualiseur](../debugger/visualizer-security-considerations.md).  
   
-  Les procédures ci-après fournissent une vue d'ensemble de la marche à suivre pour créer un visualiseur. Pour obtenir une explication plus détaillée, consultez [procédure pas à pas : écriture d’un visualiseur en c#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
+  Les procédures ci-après fournissent une vue d'ensemble de la marche à suivre pour créer un visualiseur. Pour obtenir une explication plus détaillée, consultez [procédure pas à pas : Écriture d’un visualiseur en C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
   
 ### <a name="to-create-the-debugger-side"></a>Pour créer le côté débogueur  
   
@@ -75,7 +70,7 @@ Vous pouvez écrire un visualiseur personnalisé pour un objet de toute classe m
   
 4.  Appliquez <xref:System.Diagnostics.DebuggerVisualizerAttribute>, en lui affectant un visualiseur (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>).  
   
-### <a name="to-create-the-debuggee-side"></a>Pour créer le côté débogué  
+### <a name="to-create-the-debuggee-side"></a>Pour créer le côté élément débogué  
   
 1.  Appliquez <xref:System.Diagnostics.DebuggerVisualizerAttribute>, en lui affectant un visualiseur (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>) et une source d'objet (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>). Si vous omettez la source de l'objet, une source d'objet par défaut sera utilisée.  
   
@@ -83,9 +78,6 @@ Vous pouvez écrire un visualiseur personnalisé pour un objet de toute classe m
   
 ## <a name="see-also"></a>Voir aussi  
  [Créer des visualiseurs personnalisés](../debugger/create-custom-visualizers-of-data.md)   
- [Comment : installer un visualiseur](../debugger/how-to-install-a-visualizer.md)   
- [Comment : tester et déboguer un visualiseur](../debugger/how-to-test-and-debug-a-visualizer.md)   
+ [Guide pratique pour installer un visualiseur](../debugger/how-to-install-a-visualizer.md)   
+ [Guide pratique pour Tester et déboguer un visualiseur](../debugger/how-to-test-and-debug-a-visualizer.md)   
  [Considérations sur la sécurité du visualiseur](../debugger/visualizer-security-considerations.md)
-
-
-

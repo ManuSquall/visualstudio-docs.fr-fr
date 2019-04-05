@@ -1,35 +1,30 @@
 ---
-title: Guide pratique pour déboguer un moteur de débogage personnalisé | Microsoft Docs
-ms.custom: ''
+title: 'Procédure : Déboguer un moteur de débogage personnalisé | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, debugging
 - debugging [Debugging SDK], custom debug engines
 ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d293011a3865b4fb9c31349240c520e56f5a9e39
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5292d2cde8a75a239f7a905d8cf5d80b09a8f61e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756759"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938357"
 ---
-# <a name="how-to-debug-a-custom-debug-engine"></a>Guide pratique pour déboguer un moteur de débogage personnalisé
+# <a name="how-to-debug-a-custom-debug-engine"></a>Procédure : Déboguer un moteur de débogage personnalisé
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Un type de projet lance le moteur de débogage (dé) à partir de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> (méthode). Cela signifie que l’Allemagne est démarrée sous le contrôle de l’instance de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] contrôle du type de projet. Toutefois, cette instance de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ne peut pas déboguer le DE. Voici les étapes pour vous permettent de déboguer votre DE personnalisé.  
   
 > [!NOTE]
->  : Dans la procédure « Débogage a Custom déboguer Engine », vous devez attendre le DE démarrer avant que vous pouvez attacher à celui-ci. Si vous placez une boîte de message au début de votre DE qui s’affiche au démarrage de l’Allemagne, vous pouvez attacher à ce stade, puis désactivez la boîte de message pour continuer. De cette façon, vous pouvez intercepter tous les événements de l’Allemagne.  
+>  :     Dans la procédure « Débogage a Custom déboguer Engine », vous devez attendre le DE démarrer avant que vous pouvez attacher à celui-ci. Si vous placez une boîte de message au début de votre DE qui s’affiche au démarrage de l’Allemagne, vous pouvez attacher à ce stade, puis désactivez la boîte de message pour continuer. De cette façon, vous pouvez intercepter tous les événements de l’Allemagne.  
   
 > [!WARNING]
 >  Vous devez disposer de débogage à distance est installé avant d’essayer les procédures suivantes. Consultez [le débogage à distance](../../debugger/remote-debugging.md) pour plus d’informations.  
@@ -82,4 +77,3 @@ Un type de projet lance le moteur de débogage (dé) à partir de la <xref:Micro
   
 ## <a name="see-also"></a>Voir aussi  
  [Création d’un moteur de débogage personnalisé](../../extensibility/debugger/creating-a-custom-debug-engine.md)
-

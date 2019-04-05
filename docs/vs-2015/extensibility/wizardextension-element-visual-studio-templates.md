@@ -1,14 +1,9 @@
 ---
 title: WizardExtension, élément (modèles Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#WizardExtension
 helpviewer_keywords:
@@ -17,22 +12,22 @@ helpviewer_keywords:
 ms.assetid: d54b01c1-50f5-4b65-828c-686e2321cc8c
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: cb3c1cd9b5819bcdcf7abab0c5a501bafb8311de
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 69e35d4bebf7a16a1429be674ba3533b4f082b05
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797310"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948048"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>WizardExtension, élément (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Contient les éléments de l’inscription pour la personnalisation de l’Assistant modèle.  
   
- \<VSTemplate >  
+ \<VSTemplate>  
  ...  
- \<WizardExtension >  
+ \<WizardExtension>  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -99,5 +94,4 @@ Contient les éléments de l’inscription pour la personnalisation de l’Assis
 ## <a name="see-also"></a>Voir aussi  
  [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)   
- [Guide pratique pour utiliser des Assistants avec des modèles de projet](../extensibility/how-to-use-wizards-with-project-templates.md)
-
+ [Guide pratique pour Utiliser des Assistants avec des modèles de projet](../extensibility/how-to-use-wizards-with-project-templates.md)

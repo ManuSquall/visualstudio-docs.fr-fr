@@ -1,14 +1,9 @@
 ---
 title: Fonction SccPopulateList | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccPopulateList
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 7416e781-c571-4a7f-8af3-a089ce8be662
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fccf5ba354a99eaef6968c5d5027e8540762af75
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 18c46432cac2496a7b067d23b313e5d67b059bb3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798896"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949658"
 ---
 # <a name="sccpopulatelist-function"></a>Fonction SccPopulateList
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ SCCRTN SccPopulateList (
  pvContext  
  [in] La structure de contexte de plug-in de contrôle de source.  
   
- %n%ncommande  
+ nCommand  
  [in] La commande de contrôle de code source qui est appliquée à tous les fichiers dans le `lpFileNames` tableau (consultez [Code de commande](../extensibility/command-code-enumerator.md) pour obtenir la liste des commandes possible).  
   
  nFiles  
@@ -66,7 +61,7 @@ SCCRTN SccPopulateList (
  lpStatus  
  [in, out] Un tableau pour le plug-in pour retourner les indicateurs d’état pour chaque fichier de contrôle de code source.  
   
- Options  
+ fOptions  
  [in] Indicateurs de commande (consultez la section « Indicateur PopulateList » de [indicateurs de bits utilisés par les commandes spécifiques](../extensibility/bitflags-used-by-specific-commands.md) pour plus d’informations).  
   
 ## <a name="return-value"></a>Valeur de retour  
@@ -94,4 +89,3 @@ SCCRTN SccPopulateList (
  [POPLISTFUNC](../extensibility/poplistfunc.md)   
  [Indicateurs de bits utilisés par des commandes spécifiques](../extensibility/bitflags-used-by-specific-commands.md)   
  [Code de commande](../extensibility/command-code-enumerator.md)
-

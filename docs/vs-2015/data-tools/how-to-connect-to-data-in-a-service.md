@@ -1,12 +1,9 @@
 ---
-title: 'Comment : se connecter aux données dans un Service | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Se connecter aux données dans un Service | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -24,15 +21,15 @@ ms.assetid: a6b54353-05fe-4e5c-8631-90231fc95504
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ce851a864dd11759c36c7ae6cb275e9e71cd11a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 741200100e705777520ea585ce02439a3a3c26c7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301793"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951908"
 ---
-# <a name="how-to-connect-to-data-in-a-service"></a>Comment : se connecter à des données dans un service
+# <a name="how-to-connect-to-data-in-a-service"></a>Procédure : se connecter à des données dans un service
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -41,7 +38,7 @@ Vous connectez votre application aux données retournées à partir d’un servi
  À l’achèvement de l’Assistant, une référence de service est ajoutée à votre projet et est immédiatement disponible dans le [fenêtre Sources de données](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).  
   
 > [!NOTE]
->  Les éléments qui apparaissent dans le **des Sources de données** fenêtre dépendent des informations retournées par le service. Certains services peut ne pas fournissent suffisamment d’informations pour le **Assistant de Configuration de Source de données** pour créer des objets pouvant être liés. Par exemple, si le service retourne un dataset non typé, puis aucun élément n’apparaître dans le **fenêtre Sources de données** à la fin de l’Assistant. Il s’agit, car les datasets non typés ne fournissent pas de schéma, afin de l’Assistant n’a pas suffisamment d’informations pour créer la source de données.  
+>  Les éléments qui s’affichent dans la fenêtre **Sources de données** dépendent des informations retournées par le service. Certains services peuvent ne pas fournir suffisamment d’informations pour que l’**Assistant Configuration de source de données** puisse créer des objets pouvant être liés. Par exemple, si le service retourne un dataset non typé, puis aucun élément n’apparaître dans le **fenêtre Sources de données** à la fin de l’Assistant. Il s’agit, car les datasets non typés ne fournissent pas de schéma, afin de l’Assistant n’a pas suffisamment d’informations pour créer la source de données.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
@@ -62,7 +59,7 @@ Vous connectez votre application aux données retournées à partir d’un servi
   
 6.  Cliquez sur **Terminer**.  
   
-     La source de données est ajoutée à la **des Sources de données** fenêtre.  
+     La source de données est ajoutée à la fenêtre **Sources de données**.  
   
 ## <a name="next-steps"></a>Étapes suivantes  
   
@@ -73,4 +70,3 @@ Vous connectez votre application aux données retournées à partir d’un servi
 ## <a name="see-also"></a>Voir aussi  
  [Lier des contrôles WPF à un service de données WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)   
  [Services Windows Communication Foundation et services de données WCF dans Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
-

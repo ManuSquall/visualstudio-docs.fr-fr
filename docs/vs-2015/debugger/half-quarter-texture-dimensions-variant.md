@@ -1,25 +1,20 @@
 ---
 title: Variante de Dimensions de Texture de moitié / un quart | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 282e9bbb-51aa-4cd0-8e5c-0901268c29e5
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6ef44ff579fbd96026fcd7c285b173ad19317275
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 03485a3b9df9c06b1ef4755a5758cf2c8c997d1e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805981"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58947778"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>Variante de dimensions de la texture moitié/un quart
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,11 +44,8 @@ Réduit les dimensions des textures qui ne sont pas des cibles de rendu.
   Si les mipmaps sont activés pour la texture, la variante réduit le nombre de niveaux MIP en conséquence (un de moins pour une taille réduite de moitié ou deux de moins pour une taille réduite au quart).  
   
 ## <a name="example"></a>Exemple  
- Cette variante redimensionne les textures au moment de l'exécution avant l'appel à `CreateTexture2D`. Nous déconseillons cette approche pour le code de production, car les textures de taille réelle consomment plus d'espace disque et cette étape supplémentaire peut allonger sensiblement les temps de chargement dans votre application (surtout dans le cas des textures compressées, qui nécessitent des ressources de calcul importantes pour l'encodage). Nous vous recommandons plutôt de redimensionner vos textures hors connexion en utilisant un éditeur ou un processeur d'images intégré à votre pipeline de génération. Ces approches réduisent les besoins en espace disque, éliminent les surcharges au moment de l’exécution de votre application et autorisent un temps de traitement supérieur, ce qui vous permet de conserver une qualité d’image optimale lors de la réduction ou de la compression de vos textures.  
+ Cette variante redimensionne les textures au moment de l'exécution avant l'appel à `CreateTexture2D`. Nous déconseillons cette approche pour le code de production, car les textures de taille réelle consomment plus d'espace disque et cette étape supplémentaire peut allonger sensiblement les temps de chargement dans votre application (surtout dans le cas des textures compressées, qui nécessitent des ressources de calcul importantes pour l'encodage). Nous vous recommandons plutôt de redimensionner vos textures hors connexion en utilisant un éditeur ou un processeur d'images intégré à votre pipeline de génération. Ces approches réduisent les besoins en espace disque, éliminent les surcharges au moment de l'exécution de votre application et autorisent un temps de traitement supérieur, ce qui vous permet de conserver une qualité d'image optimale lors de la réduction ou de la compression de vos textures.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Variante de génération mipmap](../debugger/mip-map-generation-variant.md)   
  [Variante de compression de texture BC](../debugger/bc-texture-compression-variant.md)
-
-
-

@@ -1,24 +1,19 @@
 ---
 title: Recommandations pour l’expérience utilisateur Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
 caps.latest.revision: 4
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0042fd8ef7aee9431a3268a33eece0ed2c3dbcad
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 02b01c2c1262d6c48f51f9c1867094913b8cd715
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802432"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001543"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Lignes directrices pour l’expérience utilisateur dans Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +26,6 @@ Les consignes d’environnement utilisateur Visual Studio sont conçus pour ceux
   
 - Ces recommandations pour Visual Studio, qui sont des recommandations spécifiques à la plateforme qui remplacent les directives générales de Windows, le cas échéant pour notre environnement.  
   
-- Le [modèles et des guides pour les applications du Windows Store](https://dev.windows.com/design/interaction-ux) font référence à des modèles émergents qui peuvent être utilisées dans certaines instances de Visual Studio.  
+- Le [contrôles et modèles pour les applications UWP](/windows/uwp/design/controls-and-patterns) font référence à des modèles émergents qui peuvent être utilisées dans certaines instances de Visual Studio.  
   
   Ces instructions vous donnent des informations sur ce qu’il faut faire lors de la conception pour Visual Studio, et dans certains cas les informations concernant la manière de procéder sont également incluses. Pour plus d’informations sur l’implémentation et pour en savoir plus sur l’application spécifique, interfaces de programmation (API qui vous permettent d’écrire du code pour les solutions qui s’intègrent dans l’environnement de développement intégré (IDE) Visual Studio), utilisez le [Kit de développement (SDK) visual Studio](https://msdn.microsoft.com/library/bb166441.aspx).
-

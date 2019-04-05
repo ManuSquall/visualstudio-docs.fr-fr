@@ -1,14 +1,9 @@
 ---
-title: 'CA1030 : Utiliser des événements appropriés | Microsoft Docs'
-ms.custom: ''
+title: 'CA1030 : Utiliser des événements nécessités | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UseEventsWhereAppropriate
 - CA1030
@@ -20,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b1b4989b5b8ca47bc41328c75610cf984926aae2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 90605152607f403a089d59727d155cd154f7032e
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870131"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58951164"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030 : Utiliser des événements lorsque cela est approprié
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ ms.locfileid: "49870131"
 ## <a name="cause"></a>Cause
  Un nom de la méthode publique, protégée ou privée commence par l’une des opérations suivantes :
 
--   Composant additionnel
+-   AddOn
 
 -   RemoveOn
 
@@ -58,6 +53,3 @@ ms.locfileid: "49870131"
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Supprimer un avertissement de cette règle si la méthode ne fonctionne pas avec le [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] modèle d’événement.
-
-
-

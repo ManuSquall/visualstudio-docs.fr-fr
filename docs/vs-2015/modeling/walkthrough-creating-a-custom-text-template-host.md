@@ -1,12 +1,9 @@
 ---
 title: 'Procédure pas à pas : Création d’un hôte de modèle de texte personnalisé | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], custom host
 - text templates, custom host walkthrough
@@ -14,15 +11,15 @@ ms.assetid: d00bc366-65ed-4229-885a-196ef9625f05
 caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ee1a6ebfdcad2f9ec50c5a76d5c14cd44028eeb7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 3120cee504de8565f5caf80034678e9788da70ed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817273"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951201"
 ---
-# <a name="walkthrough-creating-a-custom-text-template-host"></a>Procédure pas à pas : création d'un hôte de modèle de texte personnalisé
+# <a name="walkthrough-creating-a-custom-text-template-host"></a>Procédure pas à pas : Création d'un hôte de modèle de texte personnalisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Un *modèle de texte*<em>hôte</em> fournit un environnement qui permet la *moteur de transformation de modèle de texte* à exécuter. L'hôte est chargé de gérer l'interaction du moteur avec le système de fichiers. Le moteur ou *processeur de directive* qui a besoin d’un fichier ou un assembly peut demander une ressource à partir de l’hôte. L'hôte peut ensuite effectuer des recherches dans les répertoires et le Global Assembly Cache pour trouver la ressource demandée. Pour plus d’informations, consultez [le processus de Transformation de modèle de texte](../modeling/the-text-template-transformation-process.md).  
@@ -719,7 +716,7 @@ Un *modèle de texte*<em>hôte</em> fournit un environnement qui permet la *mote
   
 4.  Pour [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] uniquement, ouvrez le **projet** menu, puis cliquez sur **propriétés de CustomHost**. Dans le **objet de démarrage** , cliquez sur **CustomHost.Program**.  
   
-5.  Sur le **fichier** menu, cliquez sur **Enregistrer tout**.  
+5.  Dans le menu **Fichier**, cliquez sur **Enregistrer tout**.  
   
 6.  Dans le menu **Générer** , cliquez sur **Générer la solution**.  
   
@@ -781,7 +778,7 @@ Un *modèle de texte*<em>hôte</em> fournit un environnement qui permet la *mote
   
 1.  Ouvrez la fenêtre Invite de commandes.  
   
-2.  Tapez le chemin d'accès du fichier exécutable de l'hôte personnalisé, mais n'appuyez pas encore sur ENTRÉE.  
+2.  Tapez le chemin d’accès du fichier exécutable de l’hôte personnalisé, mais n’appuyez pas encore sur ENTRÉE.  
   
      Par exemple, tapez :  
   
@@ -820,10 +817,7 @@ Un *modèle de texte*<em>hôte</em> fournit un environnement qui permet la *mote
     ```  
   
 ## <a name="next-steps"></a>Étapes suivantes  
- Dans cette procédure pas à pas, vous avez créé un hôte de transformation de modèle de texte qui prend en charge les fonctionnalités de transformation de base. Vous pouvez développer votre hôte pour prendre en charge des modèles de texte qui appellent des processeurs de directive personnalisés ou générés. Pour plus d’informations, consultez [procédure pas à pas : connexion d’un hôte à un processeur de Directive généré](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).  
+ Dans cette procédure pas à pas, vous avez créé un hôte de transformation de modèle de texte qui prend en charge les fonctionnalités de transformation de base. Vous pouvez développer votre hôte pour prendre en charge des modèles de texte qui appellent des processeurs de directive personnalisés ou générés. Pour plus d’informations, consultez [Procédure pas à pas : Connexion d’un hôte à un processeur de Directive généré](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>
-
-
-

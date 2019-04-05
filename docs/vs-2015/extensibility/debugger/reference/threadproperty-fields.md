@@ -1,14 +1,9 @@
 ---
 title: THREADPROPERTY_FIELDS | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - THREADPROPERTY_FIELDS
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 5b88acb9-03ea-4c29-a788-f0087dccbe23
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1bcc299a9179a4e0aff5e405569690a9ce8db0ba
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dc0e0f7cae4aed887809c22bda0cd6a9ed50307f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774105"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952384"
 ---
 # <a name="threadpropertyfields"></a>THREADPROPERTY_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -88,12 +83,11 @@ public enum enum_THREADPROPERTY_FIELDS { 
 ## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)   
  [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)
-

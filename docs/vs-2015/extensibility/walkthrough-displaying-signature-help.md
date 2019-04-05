@@ -1,28 +1,23 @@
 ---
-title: 'Procédure pas à pas : Affichage de l’aide de Signature | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure pas à pas : Affichage de l’aide de la Signature | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - signature help/parameter info
 ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7a3b902c32563da6bc21778a09b4aeaebaeabeaa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8a5f62ace3126ee35f47a90c15e6183690786954
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734642"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950859"
 ---
-# <a name="walkthrough-displaying-signature-help"></a>Procédure pas à pas : affichage de l’aide sur les signatures
+# <a name="walkthrough-displaying-signature-help"></a>Procédure pas à pas : Affichage d'aide sur les signatures
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pour la signature (également appelé *informations sur les paramètres*) affiche la signature d’une méthode dans une info-bulle lorsqu’un utilisateur tape le caractère de début de liste de paramètre (généralement une parenthèse ouvrante). Lorsqu’un paramètre et le séparateur de paramètre (en général une virgule) sont tapés, l’info-bulle est mise à jour pour afficher le paramètre suivant en gras. Vous pouvez définir l’assistance de Signature dans le contexte d’un service de langage, ou vous pouvez définir votre propre type de contenu et d’extension de nom fichier et afficher l’aide de la Signature pour uniquement ce type, ou vous pouvez afficher l’assistance de Signature pour un type de contenu existant (par exemple, « texte »). Cette procédure pas à pas montre comment afficher l’aide de la Signature pour le type de contenu « texte ».  
@@ -50,7 +45,7 @@ Pour la signature (également appelé *informations sur les paramètres*) affich
   
      Microsoft.VisualStudio.Language.Intellisense  
   
-     Assemblys Microsoft.VisualStudio.OLE.Interop  
+     Microsoft.VisualStudio.OLE.Interop  
   
      Microsoft.VisualStudio.Shell.14.0  
   
@@ -252,5 +247,4 @@ Pour la signature (également appelé *informations sur les paramètres*) affich
 4.  Une fois que vous tapez la parenthèse ouvrante, vous devez voir une info-bulle qui affiche une liste des deux signatures pour le `add()` (méthode).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : Liaison d’un type de contenu à une extension de nom de fichier](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [Procédure pas à pas : Liaison d’un Type de contenu à une Extension de nom de fichier](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

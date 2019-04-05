@@ -1,14 +1,9 @@
 ---
 title: Exe | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: a781d2cf-55fe-4373-9cf1-b732864244e0
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 52015c5086f3f637568ed3ecc5a8c7c974ae10fa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fe2930e0947bf0fa69408dc81c19d058d6cdd870
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778474"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948502"
 ---
 # <a name="exe"></a>Exe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,6 +47,3 @@ Exe est le seul symbole sans soit un lexicale ou de la classe parent, car il rep
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSession::get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md)   
  [Hiérarchie lexicale des types de symboles](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
-
-
-

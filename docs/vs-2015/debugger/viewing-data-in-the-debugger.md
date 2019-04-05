@@ -1,14 +1,9 @@
 ---
 title: Affichage des données dans le débogueur | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -27,13 +22,13 @@ ms.assetid: 13e1105f-f987-402e-9108-ec6ac12be042
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b5409f74a3e6be8f075155a2f87a35006209ea24
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1ade6c38a8edd73c181a3f135dd5e967901bf63f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793098"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953551"
 ---
 # <a name="viewing-data-in-the-debugger"></a>Affichage des données dans le débogueur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,12 +39,9 @@ Le débogueur [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fournit tout un ensem
  Les DataTips sont l’un des outils les plus pratiques pour consulter des informations sur les variables et les objets de votre programme au moment du débogage. Lorsque le débogueur est en mode arrêt, pour afficher la valeur d’une variable dans la portée actuelle, placez le pointeur de la souris sur la variable dans une fenêtre source. Pour plus d’informations, consultez [Afficher les valeurs des données dans les conseils de données](../debugger/view-data-values-in-data-tips-in-the-code-editor.md).  
   
 ## <a name="visualizers"></a>Visualiseurs  
- Les visualiseurs sont un nouveau composant du débogueur [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], qui vous permettent de voir le contenu d'un objet ou d'une variable de façon explicite. Vous pouvez, par exemple, utiliser le visualiseur HTML pour voir une chaîne HTML telle qu’elle sera interprétée et affichée dans un navigateur. Vous pouvez accéder aux visualiseurs depuis les DataTips, la fenêtre **Espion** , la fenêtre **Automatique** , la fenêtre **Variables locales** ou la boîte de dialogue **Espion express** . Pour plus d’informations, consultez [Créer des visualiseurs de données personnalisés](../debugger/create-custom-visualizers-of-data.md).  
+ Les visualiseurs sont un nouveau composant du débogueur [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , qui vous permettent de voir le contenu d’un objet ou d’une variable de façon explicite. Vous pouvez, par exemple, utiliser le visualiseur HTML pour voir une chaîne HTML telle qu’elle sera interprétée et affichée dans un navigateur. Vous pouvez accéder aux visualiseurs depuis les DataTips, la fenêtre **Espion** , la fenêtre **Automatique** , la fenêtre **Variables locales** ou la boîte de dialogue **Espion express** . Pour plus d’informations, consultez [Créer des visualiseurs de données personnalisés](../debugger/create-custom-visualizers-of-data.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Principes de base du débogueur](../debugger/debugger-basics.md)   
  [Fenêtre Commande](../ide/reference/command-window.md)   
  [Sécurité du débogueur](../debugger/debugger-security.md)
-
-
-

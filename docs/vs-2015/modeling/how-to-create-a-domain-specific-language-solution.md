@@ -1,12 +1,9 @@
 ---
-title: 'Comment : créer une Solution de langage spécifique à un domaine | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Créer une Solution de langage spécifique à un domaine | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.designerwizard
 helpviewer_keywords:
@@ -17,15 +14,15 @@ ms.assetid: e585b63b-34d2-405a-8d81-39ea22317975
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 2650afc2172cdcceca892d4ad19a05becac3e472
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 3f675b40f250505e654b287fcaa86e70aca4cdd0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908919"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953180"
 ---
-# <a name="how-to-create-a-domain-specific-language-solution"></a>Comment : créer une solution de langage spécifique à un domaine
+# <a name="how-to-create-a-domain-specific-language-solution"></a>Procédure : Créer une solution de langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Un langage spécifique à un domaine (DSL) est créé à l’aide de spécialisé [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solution.  
@@ -136,7 +133,4 @@ Un langage spécifique à un domaine (DSL) est créé à l’aide de spécialis�
   
 ## <a name="see-also"></a>Voir aussi  
  [Comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md)   
- [Glossaire des outils Domain-Specific Language](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Glossaire des Outils Domain-Specific Language](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

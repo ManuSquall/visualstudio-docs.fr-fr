@@ -1,12 +1,9 @@
 ---
 title: Lier des éléments de modèle et des éléments de travail | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.common.removeworkitemsdialog
 - vs.teamarch.common.linkworkitemsdialog
@@ -21,13 +18,13 @@ ms.assetid: e687a490-0f93-412c-a1ff-eea83cf7ba07
 caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 55dfd83f3c9324b08bbb88c8404350c2aebf129f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2ca7b4254ac359158b9cf42600b28ef533372813
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752070"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950419"
 ---
 # <a name="link-model-elements-and-work-items"></a>Lier des éléments de modèle et des éléments de travail
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +61,7 @@ Suivez les tâches, les cas de test, les bogues, les spécifications, les probl�
 - les diagrammes. Pour sélectionner un diagramme, choisissez une partie vide du diagramme.  
   
 > [!WARNING]
->  Vous devez être connecté à un contrôle de code source (SSC, Source Code Control) TFS pour créer un élément de travail ou un lien vers celui-ci. Si vous essayez d'ouvrir une connexion à un autre contrôle de code source TFS, Visual Studio ferme automatiquement la solution actuelle. Vérifiez que vous êtes connecté au contrôle de code source TFS approprié avant d'essayer de créer un élément de travail ou un lien vers celui-ci. Dans les versions ultérieures de Visual Studio, les commandes de menu ne sont pas disponibles si vous n'êtes pas connecté à un contrôle de code source.  
+>  Vous devez être connecté à un contrôle de code source (SSC, Source Code Control) TFS pour créer un élément de travail ou un lien vers celui-ci. Si vous essayez d'ouvrir une connexion à un autre contrôle de code source TFS, Visual Studio ferme automatiquement la solution actuelle. Vérifiez que vous êtes connecté au contrôle de code source TFS approprié avant d’essayer de créer un élément de travail ou un lien vers celui-ci. Dans les versions ultérieures de Visual Studio, les commandes de menu ne sont pas disponibles si vous n'êtes pas connecté à un contrôle de code source.  
   
 -   [Se connecter à un projet d’équipe](#ConnectTFS)  
   
@@ -102,7 +99,7 @@ Suivez les tâches, les cas de test, les bogues, les spécifications, les probl�
      Visual Studio lie l'élément de modèle au nouvel élément de travail. Une icône apparaît sur l'élément de modèle ou près de celui-ci.  
   
 > [!WARNING]
->  Vous devez être connecté à un contrôle de code source (SSC, Source Code Control) TFS pour créer un élément de travail ou un lien vers celui-ci. Si vous essayez d'ouvrir une connexion à un autre contrôle de code source TFS, Visual Studio ferme automatiquement la solution actuelle. Vérifiez que vous êtes connecté au contrôle de code source TFS approprié avant d'essayer de créer un élément de travail ou un lien vers celui-ci. Dans les versions ultérieures de Visual Studio, les commandes de menu ne sont pas disponibles si vous n'êtes pas connecté à un contrôle de code source.  
+>  Vous devez être connecté à un contrôle de code source (SSC, Source Code Control) TFS pour créer un élément de travail ou un lien vers celui-ci. Si vous essayez d'ouvrir une connexion à un autre contrôle de code source TFS, Visual Studio ferme automatiquement la solution actuelle. Vérifiez que vous êtes connecté au contrôle de code source TFS approprié avant d’essayer de créer un élément de travail ou un lien vers celui-ci. Dans les versions ultérieures de Visual Studio, les commandes de menu ne sont pas disponibles si vous n'êtes pas connecté à un contrôle de code source.  
   
 ##  <a name="LinkExisting"></a> Lier un élément de modèle à un élément de travail existant  
  Quand vous liez des éléments de modèle à des éléments de travail, commencez par l'élément de modèle, et non pas par l'élément de travail.  
@@ -126,7 +123,7 @@ Suivez les tâches, les cas de test, les bogues, les spécifications, les probl�
      Quand vous avez terminé, la propriété **Éléments de travail** de l'élément de modèle affiche un nombre supérieur. Une icône apparaît également sur l'élément de modèle ou près de celui-ci.  
   
 > [!WARNING]
->  Vous devez être connecté à un contrôle de code source (SSC, Source Code Control) TFS pour créer un élément de travail ou un lien vers celui-ci. Si vous essayez d'ouvrir une connexion à un autre contrôle de code source TFS, Visual Studio ferme automatiquement la solution actuelle. Vérifiez que vous êtes connecté au contrôle de code source TFS approprié avant d'essayer de créer un élément de travail ou un lien vers celui-ci. Dans les versions ultérieures de Visual Studio, les commandes de menu ne sont pas disponibles si vous n'êtes pas connecté à un contrôle de code source.  
+>  Vous devez être connecté à un contrôle de code source (SSC, Source Code Control) TFS pour créer un élément de travail ou un lien vers celui-ci. Si vous essayez d'ouvrir une connexion à un autre contrôle de code source TFS, Visual Studio ferme automatiquement la solution actuelle. Vérifiez que vous êtes connecté au contrôle de code source TFS approprié avant d’essayer de créer un élément de travail ou un lien vers celui-ci. Dans les versions ultérieures de Visual Studio, les commandes de menu ne sont pas disponibles si vous n'êtes pas connecté à un contrôle de code source.  
   
 ##  <a name="OpenWorkItem"></a> Afficher les éléments de travail liés à un élément de modèle  
   
@@ -179,6 +176,3 @@ Suivez les tâches, les cas de test, les bogues, les spécifications, les probl�
 ## <a name="see-also"></a>Voir aussi  
  [Modifier des modèles UML et des diagrammes](../modeling/edit-uml-models-and-diagrams.md)   
  [Créer des modèles pour votre application](../modeling/create-models-for-your-app.md)
-
-
-

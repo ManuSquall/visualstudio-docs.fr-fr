@@ -1,14 +1,9 @@
 ---
 title: IDiaSession::findSymbolByVAEx | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 11c685f6-cda2-4474-a432-214ecaae4ffa
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8d00cc11660833bc07abbc0756cc5275499c96ba
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 14a0b573609d52269809dcaa6e900e17affcecfd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771114"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953066"
 ---
 # <a name="idiasessionfindsymbolbyvaex"></a>IDiaSession::findSymbolByVAEx
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -71,6 +66,3 @@ pSession->findSymbolByVAEx( va, SymTagFunction, &pFunc, &disp );
  [IDiaSession::findSymbolByVA](../../debugger/debug-interface-access/idiasession-findsymbolbyva.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum, énumération](../../debugger/debug-interface-access/symtagenum.md)
-
-
-

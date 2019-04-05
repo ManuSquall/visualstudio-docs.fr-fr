@@ -1,14 +1,9 @@
 ---
 title: Déboguer des Applications 64 bits | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,13 +16,13 @@ ms.assetid: db648e5f-6375-4e2d-aa98-eb7261958927
 caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e4d195c3f0b07636f0a131cc4dca0298deef1041
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 600166699a40ac91d403d7b76948ac924b4a35c2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758827"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952265"
 ---
 # <a name="debug-64-bit-applications"></a>Déboguer des applications 64 bits
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,14 +42,14 @@ Vous pouvez déboguer une application 64 bits qui s'exécute sur l'ordinateur lo
   
 1.  Créez une solution Visual Studio, par exemple une application console C#.  
   
-2.  Définissez une configuration 64 bits à l’aide du Gestionnaire de configurations. Pour plus d'informations, consultez [How to: Configure Projects to Target Platforms](../ide/how-to-configure-projects-to-target-platforms.md).  
+2.  Définissez une configuration 64 bits à l’aide du Gestionnaire de configurations. Pour plus d'informations, voir [Procédure : Configurer des projets pour des plateformes cibles](../ide/how-to-configure-projects-to-target-platforms.md).  
   
 3.  À ce stade, la version 64 bits du débogueur distant (msvsmon.exe) démarre. Le débogueur s’exécute tant que la solution avec la configuration 64 bits est ouverte.  
   
 4.  Démarrez le débogage. Vous devez avoir la même expérience qu’avec une configuration 32 bits. Si vous obtenez des erreurs, consultez la section de résolution des problèmes ci-dessous.  
   
 ## <a name="troubleshooting-64-bit-debugging"></a>Résolution des problèmes de débogage 64 bits  
- L’erreur suivante peut s’afficher : « Une opération de débogage 64 bits prend plus de temps que prévu ». Dans ce cas, Visual Studio a envoyé une demande à la version 64 bits de msvsmon.exe et l’obtention du résultat de cette demande a pris beaucoup de temps.  
+ Vous pouvez rencontrer une erreur : « Une opération de débogage 64 bits est plue longue que prévu. » Dans ce cas, Visual Studio a envoyé une demande à la version 64 bits de msvsmon.exe et l’obtention du résultat de cette demande a pris beaucoup de temps.  
   
  Deux causes principales peuvent provoquer cette erreur :  
   
@@ -64,13 +59,7 @@ Vous pouvez déboguer une application 64 bits qui s'exécute sur l'ordinateur lo
   
 ## <a name="see-also"></a>Voir aussi  
  [Applications 64 bits](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
- [Configuration des programmes pour 64 bits](http://msdn.microsoft.com/library/cb99f72b-8c74-48f4-846a-8921b37b97e9)   
- [Prise en charge 64 bits de Visual Studio IDE](../ide/visual-studio-ide-64-bit-support.md)   
- [À l’aide de fichiers de vidage](../debugger/using-dump-files.md)   
+ [Configuration des programmes pour les processeurs 64 bits](http://msdn.microsoft.com/library/cb99f72b-8c74-48f4-846a-8921b37b97e9)   
+ [Prise en charge de l’IDE Visual Studio 64 bits](../ide/visual-studio-ide-64-bit-support.md)   
+ [Utilisation des fichiers de vidage](../debugger/using-dump-files.md)   
  [Remote Debugging](../debugger/remote-debugging.md)
-
-
-
-
-
-

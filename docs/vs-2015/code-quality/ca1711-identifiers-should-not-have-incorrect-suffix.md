@@ -1,14 +1,9 @@
 ---
-title: 'CA1711 : Les identificateurs ne doivent pas porter un suffixe incorrect | Microsoft Docs'
-ms.custom: ''
+title: 'CA1711 : Les identificateurs ne doivent pas porter un suffixe incorrect | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1711
 - IdentifiersShouldNotHaveIncorrectSuffix
@@ -20,14 +15,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1f42416a6d88edc417c0150685ab4c7e198aa808
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 39e6a0f0019d05a3c93b5473e94eefca26bb8e29
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837098"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950273"
 ---
-# <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711 : Les identificateurs ne doivent pas porter un suffixe incorrect
+# <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711 : Les identificateurs ne doivent pas porter un suffixe incorrect
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -56,7 +51,7 @@ ms.locfileid: "49837098"
 |Autorisation|<xref:System.Security.IPermission?displayProperty=fullName>|
 |File d'attente|<xref:System.Collections.Queue?displayProperty=fullName>|
 |Stack|<xref:System.Collections.Stack?displayProperty=fullName>|
-|Flux|<xref:System.IO.Stream?displayProperty=fullName>|
+|Stream|<xref:System.IO.Stream?displayProperty=fullName>|
 
  En outre, les suffixes suivants doivent **pas** servir :
 
@@ -68,7 +63,7 @@ ms.locfileid: "49837098"
 
 - Ex ou suffixe semblable pour le distinguer d’une version antérieure du même type
 
-  Conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage qui est requis pour les nouvelles bibliothèques de logiciels et confirment au client que la bibliothèque a été développée par une personne compétente en matière de développement de code managé.
+  Les conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage qui est requis pour les nouvelles bibliothèques de logiciels et confirment au client que la bibliothèque a été développée par une personne compétente en matière de développement de code managé.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Supprimez le suffixe du nom de type.
@@ -80,7 +75,4 @@ ms.locfileid: "49837098"
  [CA1710 : Les identificateurs doivent avoir un suffixe correct](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
 
 ## <a name="see-also"></a>Voir aussi
- [Attributs](http://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b) [NIB : événements et délégués](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115)
-
-
-
+ [Attributs](http://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b) [NIB : Événements et délégués](http://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)

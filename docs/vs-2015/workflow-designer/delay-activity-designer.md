@@ -1,11 +1,8 @@
 ---
 title: Retarder le Concepteur d’activités | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Delay.UI
@@ -13,13 +10,13 @@ ms.assetid: f51742a8-2c9a-47d1-8a23-18459d03ae19
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: b861eb70315b2a734cdedb4346e0bcd9f2143678
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 528317a97a9b2582442dacfcf9ba8a35943736e8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282761"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954097"
 ---
 # <a name="delay-activity-designer"></a>Concepteur d'activités Delay
 Le **délai** ActivityDesigner est utilisé pour créer et configurer un <xref:System.Activities.Statements.Delay> activité.  
@@ -42,7 +39,7 @@ Le **délai** ActivityDesigner est utilisé pour créer et configurer un <xref:S
   
 ## <a name="see-also"></a>Voir aussi  
  [Primitives](../workflow-designer/primitives-activity-designers.md)   
- [Affecter](../workflow-designer/assign-activity-designer.md)   
+ [Assign](../workflow-designer/assign-activity-designer.md)   
  [Concepteur d’activités Delay](../workflow-designer/delay-activity-designer.md)   
  [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md)   
  [WriteLine](../workflow-designer/writeline-activity-designer.md)

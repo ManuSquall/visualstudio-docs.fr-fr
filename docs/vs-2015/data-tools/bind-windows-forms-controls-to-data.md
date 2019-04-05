@@ -1,12 +1,9 @@
 ---
 title: Lier des contrôles Windows Forms à des données | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +18,13 @@ ms.assetid: 0163a34a-38cb-40b9-8f38-3058a90caf21
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d1d8710ef98339c0cf4b44ddd3fa41cca8676570
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9b81d3d9f7425874c8a3501d8e1d49eb813b97d9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237469"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951219"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>Lier des contrôles Windows Forms à des données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +37,7 @@ Vous pouvez lier des sources de données aux contrôles en faisant glisser des o
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="bind-to--data-in-a-datagridview-control"></a>Lier à des données dans un contrôle DataGridView  
- Pour DataGridView, la table entière est liée à ce contrôle unique. Lorsque vous faites glisser un DataGridView au formulaire, un outil de la frange pour parcourir les enregistrements (<xref:System.Windows.Forms.BindingNavigator>) s’affiche également. Un [DataSet](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource>, et <xref:System.Windows.Forms.BindingNavigator> s’affichent dans la barre d’état du composant. Dans l’illustration suivante, un TableAdapterManager est également ajouté, car la table Customers a une relation avec la table Orders. Ces variables sont déclarées dans le code généré automatiquement en tant que membres privés dans la classe de formulaire. Le code généré automatiquement pour remplir le contrôle DataGridView se trouve dans le Gestionnaire d’événements form_load. Le code pour enregistrer les données pour mettre à jour de la base de données se trouve dans le Gestionnaire d’événements Save pour BindingNavigator. Vous pouvez déplacer ou modifier ce code en fonction des besoins.  
+ Pour DataGridView, la table entière est liée à ce contrôle unique. Lorsque vous faites glisser un DataGridView au formulaire, un outil de la frange pour parcourir les enregistrements (<xref:System.Windows.Forms.BindingNavigator>) s’affiche également. Un [DataSet](../data-tools/dataset-tools-in-visual-studio.md), TableAdapter, <xref:System.Windows.Forms.BindingSource>, et <xref:System.Windows.Forms.BindingNavigator> s’affichent dans la barre d’état du composant. Dans l’illustration suivante, un TableAdapterManager est également ajouté, car la table Customers a une relation avec la table Orders. Ces variables sont déclarées dans le code généré automatiquement en tant que membres privés dans la classe de formulaire. Le code généré automatiquement pour remplir le contrôle DataGridView se trouve dans le Gestionnaire d’événements form_load. Le code pour enregistrer les données pour mettre à jour de la base de données se trouve dans le Gestionnaire d’événements Save pour BindingNavigator. Vous pouvez déplacer ou modifier ce code en fonction des besoins.  
   
  ![GridView avec BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png "raddata GridView avec BindingNavigator")  
   
@@ -68,4 +65,3 @@ Vous pouvez lier des sources de données aux contrôles en faisant glisser des o
   
 ## <a name="see-also"></a>Voir aussi  
  [Lier des contrôles Windows Forms à des données dans Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-

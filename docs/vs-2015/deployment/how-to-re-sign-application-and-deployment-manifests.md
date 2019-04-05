@@ -1,14 +1,9 @@
 ---
-title: 'Comment : signer de nouveau les manifestes d’Application et déploiement | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Signer à nouveau les manifestes de déploiement et d’Application | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,23 +18,23 @@ ms.assetid: d53bceb9-4d3b-4c22-b909-8f370e7231fb
 caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 734258871e72e6272abcd61c4efa1a00765f8a32
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 4c1942e39895439eb040109a34353d6c361e95c5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185716"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951443"
 ---
-# <a name="how-to-re-sign-application-and-deployment-manifests"></a>Comment : signer de nouveau des manifestes d'application et de déploiement
+# <a name="how-to-re-sign-application-and-deployment-manifests"></a>Procédure : Re-signer des manifestes d’application et de déploiement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Une fois que vous apportez des modifications aux propriétés de déploiement dans le manifeste d’application pour les applications Windows Forms, les applications Windows Presentation Foundation (xbap) ou les solutions Office, vous devez resigner l’application et les manifestes de déploiement avec un certificat. Ce processus garantit que les fichiers falsifiés ne sont pas installés sur les ordinateurs des utilisateurs finaux.  
+Une fois que vous apportez des modifications aux propriétés de déploiement dans le manifeste d’application pour les applications Windows Forms, les applications Windows Presentation Foundation (xbap) ou les solutions Office, vous devez resigner l’application et les manifestes de déploiement avec un certificat. Ce processus aide à garantir que des fichiers falsifiés ne sont pas installés sur les ordinateurs des utilisateurs finaux.  
   
  Un autre scénario dans lequel vous pouvez signer à nouveau les manifestes est lorsque vos clients souhaitent signer l’application et manifestes de déploiement avec leur propre certificat.  
   
 ## <a name="re-signing-the-application-and-deployment-manifests"></a>Signer à nouveau l’Application et déploiement de manifestes  
- Cette procédure suppose que vous avez déjà modifié votre fichier manifeste d’application (.manifest). Pour plus d’informations, consultez [Comment : modifier les propriétés de déploiement](http://msdn.microsoft.com/en-us/66052a3a-8127-4964-8147-2477ef5d1472).  
+ Cette procédure suppose que vous avez déjà modifié votre fichier manifeste d’application (.manifest). Pour plus d'informations, voir [Procédure : Modifier les propriétés de déploiement](http://msdn.microsoft.com/66052a3a-8127-4964-8147-2477ef5d1472).  
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Pour signer à nouveau l’application et déploiement manifestes avec Mage.exe  
   
@@ -125,12 +120,9 @@ Une fois que vous apportez des modifications aux propriétés de déploiement da
  [Sécurité d’accès du code pour les applications ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
  [ClickOnce et Authenticode](../deployment/clickonce-and-authenticode.md)   
  [Vue d’ensemble du déploiement d’applications approuvées](../deployment/trusted-application-deployment-overview.md)   
- [Guide pratique pour activer les paramètres de sécurité ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)   
- [Guide pratique pour définir une zone de sécurité pour une application ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [Guide pratique pour définir des autorisations personnalisées pour une application ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [Guide pratique pour déboguer une application ClickOnce avec des autorisations restreintes](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
- [Comment : ajouter un éditeur approuvé à un ordinateur client pour les applications ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
+ [Guide pratique pour Activer les paramètres de sécurité ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)   
+ [Guide pratique pour Définir une Zone de sécurité pour une Application ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [Guide pratique pour Définir des autorisations personnalisées pour une Application ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [Guide pratique pour Déboguer une Application ClickOnce avec des autorisations restreintes](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [Guide pratique pour Ajouter un éditeur approuvé à un ordinateur Client pour les Applications ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
  [Guide pratique pour configurer le comportement de l’invite d’approbation ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)
-
-
-

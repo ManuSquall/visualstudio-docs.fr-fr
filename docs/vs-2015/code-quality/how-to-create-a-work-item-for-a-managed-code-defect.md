@@ -1,14 +1,9 @@
 ---
-title: 'Comment : créer un élément de travail pour une erreur de Code managé | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Créer un élément de travail pour une erreur de Code managé | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - managed code, creating work items for code defects
 - code analysis, creating work items
@@ -17,14 +12,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d0ed4ad9693ffbca44154f328a74b45810705457
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 26dbe873d1552136c36748e638085bf39e5e530c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235082"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951513"
 ---
-# <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>Comment : créer un élément de travail pour une erreur de code managé
+# <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>Procédure : Créer un élément de travail pour une erreur de code managé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez utiliser l’élément de travail fonctionnalité pour enregistrer l’élément de travail à partir de suivi [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. Pour utiliser cette fonctionnalité, votre projet doit faire partie du projet d’équipe dans [!INCLUDE[esprfound](../includes/esprfound-md.md)].  
@@ -44,6 +39,3 @@ Vous pouvez utiliser l’élément de travail fonctionnalité pour enregistrer l
 2.  Pointez sur **créer un élément de travail** et cliquez sur le type d’élément de travail à créer.  
   
      Un seul élément de travail est créé pour tous les avertissements sélectionnés pour vous permettent de spécifier les informations sur les bogues.
-
-
-

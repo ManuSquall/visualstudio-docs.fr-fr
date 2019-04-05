@@ -1,11 +1,8 @@
 ---
 title: ForEach&lt;T&gt; Concepteur d’activités | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.ForEach`1.UI
@@ -13,16 +10,16 @@ ms.assetid: 67097b3a-fcf5-4a72-beb1-2c7784151a86
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: a435a69a1b00fa39ffa151344bce233aa30092f4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 97732b92c5a90334917ad4e74667f88d605b647d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230111"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951950"
 ---
 # <a name="foreachlttgt-activity-designer"></a>ForEach&lt;T&gt; Concepteur d’activités
-L’activité <xref:System.Activities.Statements.ForEach%601> exécute l’activité contenue dans sa propriété <xref:System.Activities.Statements.ForEach%601.Body%2A> pour chaque élément d’une collection <xref:System.Activities.Statements.ForEach%601.Values%2A> spécifiée.  
+L'activité <xref:System.Activities.Statements.ForEach%601> exécute l'activité contenue dans sa propriété <xref:System.Activities.Statements.ForEach%601.Body%2A> pour chaque élément d'une collection <xref:System.Activities.Statements.ForEach%601.Values%2A> spécifiée.  
   
 ## <a name="foreacht-properties-in-the-workflow-designer"></a>ForEach\<T > Propriétés dans le Concepteur de flux de travail  
  Le tableau suivant affiche les propriétés les plus utiles de l'activité <xref:System.Activities.Statements.ForEach%601> et décrit comment les utiliser dans le concepteur.  
@@ -36,5 +33,5 @@ L’activité <xref:System.Activities.Statements.ForEach%601> exécute l’activ
  Par défaut, l’itérateur de boucle est nommé **élément**. Vous pouvez modifier le nom de la variable d'itérateur dans le concepteur d'activités <xref:System.Activities.Statements.ForEach%601>. L'itérateur de boucle peut être utilisé dans des expressions dans les enfants de l'activité <xref:System.Activities.Statements.ForEach%601>.  
   
 ## <a name="see-also"></a>Voir aussi  
- [ParallelForEach\<T >](../workflow-designer/parallelforeach-t-activity-designer.md)   
+ [ParallelForEach\<T>](../workflow-designer/parallelforeach-t-activity-designer.md)   
  [Flux de contrôle](../workflow-designer/control-flow-activity-designers.md)

@@ -1,12 +1,9 @@
 ---
 title: 'Diagrammes de séquence UML : Référence | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.sequencediagram.diagram
 - vs.teamarch.UMLModelExplorer.sequencediagram
@@ -21,15 +18,15 @@ ms.assetid: 366fc324-aeeb-4894-bd13-ec2e40754b8e
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5c92d9eb8ee7858a036fdbb8dfb621c269e3ed4c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3990d43ae11db3db8eb792883ba62a030cde3a2f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797024"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938562"
 ---
-# <a name="uml-sequence-diagrams-reference"></a>Diagrammes de séquence UML : référence
+# <a name="uml-sequence-diagrams-reference"></a>Diagrammes de séquence UML : Référence
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dans Visual Studio, un *diagramme de séquence* montre une interaction, qui représente la séquence de messages entre des instances de classes, les composants, les sous-systèmes ou acteurs. Le diagramme suit une chronologie de haut en bas et il montre le flux de contrôle d'un participant à un autre. Utilisez des diagrammes de séquence pour visualiser des instances et des événements, plutôt que des classes et des méthodes. Plusieurs instances du même type peuvent apparaître dans le diagramme. Plusieurs occurrences du même message peuvent également apparaître.  
@@ -43,9 +40,9 @@ Dans Visual Studio, un *diagramme de séquence* montre une interaction, qui repr
   
  ![Parties d’un diagramme de séquence](../modeling/media/uml-sequence.png "UML_Sequence")  
   
-|**Forme**|**Élément**|**Description**|  
+|**Shape**|**Élément**|**Description**|  
 |---------------|-----------------|---------------------|  
-|1|**Ligne de vie**|Ligne verticale qui représente la séquence d'événements qui se produisent dans un participant pendant une interaction, pendant que le temps s'écoule le long de la ligne, vers le bas. Ce participant peut être une instance d'une classe, d'un composant ou d'un acteur.|  
+|1|**Lifeline**|Ligne verticale qui représente la séquence d'événements qui se produisent dans un participant pendant une interaction, pendant que le temps s'écoule le long de la ligne, vers le bas. Ce participant peut être une instance d'une classe, d'un composant ou d'un acteur.|  
 |2|**Acteur**|Participant qui est externe au système que vous développez.<br /><br /> Vous pouvez afficher un symbole d’acteur en haut d’une ligne de vie en définissant son **acteur** propriété.|  
 |3|**Message synchrone**|L'expéditeur attend une réponse à un message synchrone avant de continuer. Le diagramme montre l'appel et le retour. Les messages synchrones servent à représenter des appels de fonctions ordinaires dans un programme, ainsi que d'autres genres de messages qui se comportent de la même façon.|  
 |4|**Message asynchrone**|Message qui ne nécessite pas de réponse pour que l'expéditeur continue. Un message asynchrone montre uniquement un appel de l'expéditeur. Permet de représenter la communication entre des threads distincts ou la création d'un nouveau thread.|  
@@ -61,15 +58,12 @@ Dans Visual Studio, un *diagramme de séquence* montre une interaction, qui repr
 |14|**Garde de fragment**|Peut être utilisé pour déclarer une condition indiquant si le fragment aura lieu.<br /><br /> Pour définir la garde, sélectionnez un fragment, puis sélectionnez la garde et tapez une valeur.|  
 |**X**|**Événement de destruction**|Représente le point auquel l'objet est supprimé ou n'est plus accessible. Apparaît en bas de chaque ligne de vie.|  
 ||**Interaction**|Collection de messages et de lignes de vie affichée dans le diagramme de séquence. Pour afficher les propriétés d’une Interaction, vous devez la sélectionner dans **Explorateur de modèles UML**.|  
-||**Diagramme de séquence**|Diagramme qui montre une activité. Pour afficher ses propriétés, cliquez sur une partie vide du diagramme. **Remarque :** les noms du diagramme de séquence, l’Interaction qu’il affiche, et le fichier qui contient le diagramme peut tous être différents.|  
+||**Diagramme de séquence**|Diagramme qui montre une activité. Pour afficher ses propriétés, cliquez sur une partie vide du diagramme. **Remarque :**  Les noms du diagramme de séquence, de l'interaction qu'il montre et du fichier qui contient le diagramme peuvent tous être différents.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Diagrammes de séquence UML : indications](../modeling/uml-sequence-diagrams-guidelines.md)   
+ [Diagrammes de séquence UML : Instructions](../modeling/uml-sequence-diagrams-guidelines.md)   
  [Modifier des modèles UML et des diagrammes](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagrammes de cas d’usage UML : référence](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagrammes de classes UML : référence](../modeling/uml-class-diagrams-reference.md)   
- [Diagrammes de composants UML : référence](../modeling/uml-component-diagrams-reference.md)   
- [Informations de référence sur les diagrammes de composants UML](../modeling/uml-component-diagrams-reference.md)
-
-
-
+ [Diagrammes de cas d’usage UML : Référence](../modeling/uml-use-case-diagrams-reference.md)   
+ [Diagrammes de classes UML : Référence](../modeling/uml-class-diagrams-reference.md)   
+ [Diagrammes de composants UML : Référence](../modeling/uml-component-diagrams-reference.md)   
+ [Diagrammes de composants UML : Informations de référence](../modeling/uml-component-diagrams-reference.md)

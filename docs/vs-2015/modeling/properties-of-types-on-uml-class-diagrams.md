@@ -1,12 +1,9 @@
 ---
 title: Propriétés de types UML sur les diagrammes de classes | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.shapes.properties
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: 6e1ef2d0-d67a-401a-bd64-d5e034decd2c
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e8baad41658cc6144f08d0b6b4d415aa4ff6e499
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 520843ee596e67de5d4e804e90302f931a1d3b57
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750115"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953956"
 ---
 # <a name="properties-of-types-on-uml-class-diagrams"></a>Propriétés de types dans des diagrammes de classes UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +28,9 @@ Dans un diagramme de classes UML, un *type* est une classe, une interface ou une
 > [!NOTE]
 >  Cette rubrique traite des propriétés de types dans les diagrammes de classes UML Pour plus d’informations, consultez les rubriques suivantes :  
   
--   [Informations de référence sur les diagrammes de classes UML](../modeling/uml-class-diagrams-reference.md)  
+-   [Diagrammes de classes UML : Informations de référence](../modeling/uml-class-diagrams-reference.md)  
   
--   [Diagrammes de classes UML : recommandations](../modeling/uml-class-diagrams-guidelines.md)  
+-   [Diagrammes de classes UML : Recommandations](../modeling/uml-class-diagrams-guidelines.md)  
   
 -   [Propriétés d’attributs dans des diagrammes de classes UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
   
@@ -49,8 +46,8 @@ Dans un diagramme de classes UML, un *type* est une classe, une interface ou une
 |**Property**|**Default**|Apparaît dans|Description|  
 |------------------|-----------------|----------------|-----------------|  
 |**Name**|Nom par défaut|Tous les éléments|Identifie l'élément.|  
-|**Nom qualifié**|Package conteneur :: Nom du type|Tous les éléments|Identifie l'élément de manière unique. A pour préfixe le nom qualifié du package qui le contient.|  
-|**Couleur**|Par défaut pour le genre de type|Tous les éléments|Couleur de cette forme. Contrairement aux autres propriétés, il ne s'agit pas d'une propriété de l'élément de modèle sous-jacent. Différentes vues du même type peuvent avoir différentes couleurs.|  
+|**Nom qualifié**|Package conteneur :: Nom de type|Tous les éléments|Identifie l'élément de manière unique. A pour préfixe le nom qualifié du package qui le contient.|  
+|**Color**|Par défaut pour le genre de type|Tous les éléments|Couleur de cette forme. Contrairement aux autres propriétés, il ne s'agit pas d'une propriété de l'élément de modèle sous-jacent. Différentes vues du même type peuvent avoir différentes couleurs.|  
 |**Est abstrait**|False|Classe|Si la valeur est true, la classe ne peut pas être instanciée et est destinée à être utilisée comme classe de base.|  
 |**Est une feuille**|False|Classe, Interface|Si la valeur est true, le type n'est pas destiné à avoir des types dérivés.|  
 |**Est actif**|False|Classe|Si la valeur est true, chaque instance de ce type est associée à un thread de contrôle.|  
@@ -64,7 +61,4 @@ Dans un diagramme de classes UML, un *type* est une classe, une interface ou une
  [Propriétés d’attributs dans des diagrammes de classes UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [Propriétés d’opérations sur les diagrammes de classes UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
  [Propriétés des associations dans des diagrammes de classes UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)   
- [Diagrammes de classes UML : recommandations](../modeling/uml-class-diagrams-guidelines.md)
-
-
-
+ [Diagrammes de classes UML : Recommandations](../modeling/uml-class-diagrams-guidelines.md)

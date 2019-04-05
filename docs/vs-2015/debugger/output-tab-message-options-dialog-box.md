@@ -1,27 +1,22 @@
 ---
 title: Onglet sortie, le Message de boîte de dialogue Options | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - message options, Output
 ms.assetid: 22dd48c2-6d17-41b1-b84c-9ddeaef68411
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1f4589f29f0c52ed82c829c68c2fc9347dfc68c7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1fa4494ccff03fa71e25b32a4814a98a9e06dc28
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787859"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950287"
 ---
 # <a name="output-tab-message-options-dialog-box"></a>Onglet Sortie de la boîte de dialogue Options des messages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ Utilisez le **sortie** onglet pour spécifier les données à partir de chaque m
  **Paramètres de messages bruts**  
  Afficher la valeur hexadécimale **wParam** et **lParam** valeurs.  
   
- **Paramètres de Message décodé**  
+ **Paramètres de messages décodés**  
  Afficher les résultats du décodage de message spécifique de la **wParam** et **lParam** valeurs.  
   
  **Valeurs de retour brutes**  
@@ -62,6 +57,3 @@ Utilisez le **sortie** onglet pour spécifier les données à partir de chaque m
   
  **Enregistrer les paramètres par défaut**  
  Enregistrer les paramètres précédents pour les nouvelles fenêtres de flux de message. Ces paramètres sont enregistrés lorsque vous quittez Spy ++.
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Uniquement mon Code | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,20 +13,20 @@ ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3b016c8565b3c501c5cc41802512f02b1c10d615
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 84f0b3b10ba64a820b1088c381787dd1f7c71b8e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798642"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950560"
 ---
 # <a name="just-my-code"></a>Uniquement mon code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Les développeurs qui utilisent des langages du .NET Framework sont familiarisés avec la fonctionnalité du débogueur Uniquement mon code, qui avance pas à pas dans les appels du système, les appels de l’infrastructure et les appels non-utilisateurs, et réduit les appels dans les fenêtres Pile des appels. Uniquement mon code a été étendu aux langages C++ et JavaScript. Cette rubrique décrit les caractéristiques d'utilisation d'Uniquement mon code dans les projets .NET Framework, C++ natifs et JavaScript.  
+Les développeurs qui utilisent des langages du .NET Framework sont familiarisés avec la fonctionnalité du débogueur Uniquement mon code, qui avance pas à pas dans les appels du système, les appels de l'infrastructure et les appels non-utilisateurs, et réduit les appels dans les fenêtres Pile des appels. Uniquement mon code a été étendu aux langages C++ et JavaScript. Cette rubrique décrit les caractéristiques d'utilisation d'Uniquement mon code dans les projets .NET Framework, C++ natifs et JavaScript.  
   
-##  <a name="BKMK_Enable_or_disable_Just_My_Code"></a> Activer ou désactiver uniquement mon Code  
+##  <a name="BKMK_Enable_or_disable_Just_My_Code"></a> Activer ou désactiver Uniquement mon code  
  Pour activer ou désactiver uniquement mon Code, choisissez **Options et paramètres** sur le **déboguer** menu. Dans le **débogage** / **général** nœud, activez ou désactivez **activer uniquement mon Code**.  
   
  ![Activer uniquement mon Code dans la boîte de dialogue Options](../debugger/media/dbg-justmycode-options.png "DBG_JustMyCode_Options")  
@@ -61,17 +56,17 @@ Les développeurs qui utilisent des langages du .NET Framework sont familiarisé
   Tout le reste du code est considéré comme du code utilisateur.  
   
 ###  <a name="BKMK_NET_Stepping_behavior"></a> Comportement d’exécution pas à pas  
- Lorsque vous **pas à pas détaillé** (raccourci clavier : F11) code non-utilisateur, le débogueur exécute le code à l’instruction utilisateur suivante. Lorsque vous **pas à pas sortant** (clavier : MAJ + F11), le débogueur s’exécute à la ligne suivante du code utilisateur. Si aucun code utilisateur n'est rencontré, l'exécution se poursuit jusqu'à ce que l'application se termine, jusqu'à ce qu'un point d'arrêt soit atteint ou jusqu'à ce qu'une exception se produise.  
+ Lorsque vous **pas à pas détaillé** (raccourci clavier : Code de non-utilisateur F11), le débogueur exécute le code à l’instruction utilisateur suivante. Lorsque vous **pas à pas sortant** (clavier : MAJ + F11), le débogueur s’exécute à la ligne suivante du code utilisateur. Si aucun code utilisateur n'est rencontré, l'exécution se poursuit jusqu'à ce que l'application se termine, jusqu'à ce qu'un point d'arrêt soit atteint ou jusqu'à ce qu'une exception se produise.  
   
 ###  <a name="BKMK_NET_Breakpoint_behavior"></a> Comportement de point d’arrêt  
- Lorsque uniquement mon Code est activé, vous pouvez choisir **interrompre tout** (clavier : Ctrl + Alt + Attn) et d’arrêter l’exécution à un emplacement où il n’existe aucun code utilisateur à afficher. Dans ce cas, la fenêtre Pas de code source s'affiche. Si vous choisissez ensuite une commande d'étape, le débogueur vous amène à la ligne de code utilisateur suivante.  
+ Lorsque uniquement mon Code est activé, vous pouvez choisir **interrompre tout** (clavier : Ctrl + Alt + Pause) et d’arrêter l’exécution à un emplacement où il n’existe aucun code utilisateur à afficher. Dans ce cas, la fenêtre Pas de code source s'affiche. Si vous choisissez ensuite une commande d'étape, le débogueur vous amène à la ligne de code utilisateur suivante.  
   
 ###  <a name="BKMK_NET_Exception_behavior"></a> Comportement d’exception  
  Si une exception non gérée se produit dans du code non-utilisateur, le débogueur s'arrête à la ligne de code utilisateur où lequel l'exception a été générée.  
   
  Si les exceptions de première chance sont activées pour l'exception, la ligne de code utilisateur est mise en surbrillance en vert. La pile des appels affiche un cadre annoté intitulé **[Code externe]**.  
   
-##  <a name="BKMK_C___Just_My_Code"></a> Uniquement mon Code C++  
+##  <a name="BKMK_C___Just_My_Code"></a> Uniquement mon code C++  
   
 ###  <a name="BKMK_CPP_User_and_non_user_code"></a> Code utilisateur et non-utilisateur  
  Uniquement mon Code C++ est différent d'Uniquement mon code .NET Framework et JavaScript, car le comportement d'exécution pas à pas est indépendant du comportement de la pile des appels.  
@@ -93,7 +88,7 @@ Les développeurs qui utilisent des langages du .NET Framework sont familiarisé
   Vous pouvez créer vos propres fichiers `.natstepfilter` et `.natjmc` pour personnaliser le comportement de l'exécution pas à pas et de la fenêtre de pile des appels, et les placer dans le dossier `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers`.  
   
 ###  <a name="BKMK_CPP_Stepping_behavior"></a> Comportement d’exécution pas à pas  
- Lorsque vous **pas à pas détaillé** (raccourci clavier : F11) code de non-utilisateur depuis du code utilisateur, le débogueur exécute le code à la ligne suivante de code utilisateur. Lorsque vous **pas à pas sortant** (clavier : MAJ + F11), le débogueur s’exécute à la ligne suivante du code utilisateur. Si aucun code utilisateur n'est rencontré, l'exécution se poursuit jusqu'à ce que l'application se termine, jusqu'à ce qu'un point d'arrêt soit atteint ou jusqu'à ce qu'une exception se produise.  
+ Lorsque vous **pas à pas détaillé** (raccourci clavier : Code de non-utilisateur F11) à partir du code utilisateur, le débogueur exécute le code à la ligne suivante de code utilisateur. Lorsque vous **pas à pas sortant** (clavier : MAJ + F11), le débogueur s’exécute à la ligne suivante du code utilisateur. Si aucun code utilisateur n'est rencontré, l'exécution se poursuit jusqu'à ce que l'application se termine, jusqu'à ce qu'un point d'arrêt soit atteint ou jusqu'à ce qu'une exception se produise.  
   
  Si le débogueur s'arrête dans du code non-utilisateur (par exemple si une commande Interrompre tout s'arrête dans du code non-utilisateur), l'exécution pas à pas continue dans le code non-utilisateur.  
   
@@ -161,28 +156,28 @@ Les développeurs qui utilisent des langages du .NET Framework sont familiarisé
   
 ```  
   
- **Attributs d’élément de module**  
+ **Attributs des éléments Module**  
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|`Name`|Obligatoire. Chemin d'accès complet du ou des modules. Vous pouvez utiliser les caractères génériques Windows `?` (zéro ou un caractère) et `*` (zéro ou plusieurs caractères). Par exemple :<br /><br /> `<Module Name=”?:\3rdParty\UtilLibs\*” />`<br /><br /> indique au débogueur de traiter tous les modules de `\3rdParty\UtilLibs` sur n'importe quel lecteur comme du code externe.|  
-|`Company`|Facultatif. Le nom de la société qui publie le module incorporé dans le fichier exécutable. Vous pouvez utiliser cet attribut pour lever l'ambiguïté entre les modules.|  
+|`Name`|Obligatoire. Chemin d’accès complet du ou des modules. Vous pouvez utiliser les caractères génériques Windows `?` (zéro ou un caractère) et `*` (zéro ou plusieurs caractères). Par exemple :<br /><br /> `<Module Name=”?:\3rdParty\UtilLibs\*” />`<br /><br /> indique au débogueur de traiter tous les modules de `\3rdParty\UtilLibs` sur n'importe quel lecteur comme du code externe.|  
+|`Company`|Optionnel. Le nom de la société qui publie le module incorporé dans le fichier exécutable. Vous pouvez utiliser cet attribut pour lever l'ambiguïté entre les modules.|  
   
- **Attributs de l’élément de fichier**  
+ **Attributs des éléments File**  
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|`Name`|Obligatoire. Chemin d'accès complet du ou des fichiers sources à traiter comme du code externe. Vous pouvez utiliser les caractères génériques Windows `?` et `*` quand vous spécifiez le chemin d’accès.|  
+|`Name`|Obligatoire. Chemin d’accès complet du ou des fichiers sources à traiter comme du code externe. Vous pouvez utiliser les caractères génériques Windows `?` et `*` quand vous spécifiez le chemin d’accès.|  
   
- **Attributs de l’élément (fonction)**  
+ **Attributs des éléments Function**  
   
 |Attribut|Description|  
 |---------------|-----------------|  
 |`Name`|Obligatoire. Le nom complet de la fonction à traiter comme du code externe.|  
-|`Module`|Facultatif. Le nom ou le chemin d'accès complet au module qui contient la fonction. Vous pouvez utiliser cet attribut pour lever l'ambiguïté entre des fonctions du même nom.|  
+|`Module`|Optionnel. Le nom ou le chemin d'accès complet au module qui contient la fonction. Vous pouvez utiliser cet attribut pour lever l'ambiguïté entre des fonctions du même nom.|  
 |`ExceptionImplementation`|Quand la valeur est définie sur `true`, la pile des appels affiche la fonction qui a levé l'exception, au lieu de cette fonction.|  
   
-##  <a name="BKMK_JavaScript_Just_My_Code"></a> Uniquement mon Code JavaScript  
+##  <a name="BKMK_JavaScript_Just_My_Code"></a> Uniquement mon code JavaScript  
   
 ###  <a name="BKMK_JS_User_and_non_user_code"></a> Code utilisateur et non-utilisateur  
  **Classification du code**  
@@ -209,11 +204,11 @@ Les développeurs qui utilisent des langages du .NET Framework sont familiarisé
   
   Vous pouvez modifier les classifications par défaut et classer des fichiers et des URL spécifiques en ajoutant un fichier .json nommé `mycode.json` au dossier racine d’un projet.  
   
-  Reste du code est classé comme **MyCode**.  
+  Le reste du code est classé comme **MyCode**.  
   
 ###  <a name="BKMK_JS_Stepping_behavior"></a> Comportement d’exécution pas à pas  
   
--   Si une fonction n’est pas un utilisateur (**MyCode**) code, **pas à pas détaillé** (raccourci clavier : F11) se comporte comme **pas à pas principal** (clavier : F10).  
+-   Si une fonction n’est pas un utilisateur (**MyCode**) code, **pas à pas détaillé** (raccourci clavier : La touche F11) se comporte comme **pas à pas principal** (clavier : F10).  
   
 -   Si une étape commence dans non-utilisateur (**LibraryCode** ou **UnrelatedCode**) de code, pas à pas détaillé temporairement se comporte comme si uniquement mon Code n’est pas activé. Dès que vous exécutez pas à pas à nouveau dans du code utilisateur, Uniquement mon Code est réactivé.  
   
@@ -289,17 +284,17 @@ Les développeurs qui utilisent des langages du .NET Framework sont familiarisé
   
 |||  
 |-|-|  
-|**Eval**|un script qui est exécuté en passant une chaîne à la fonction `eval` fournie par l'hôte. Par défaut, le script Eval est classé comme **MyCode**.|  
-|**Function**|un script qui est exécuté en passant une chaîne au constructeur `Function`. Par défaut, le script Function est classé en tant que **LibraryCode**.|  
-|**ScriptBlock**|un script qui est exécuté en passant une chaîne aux fonctions `setTimeout`, `setImmediate` ou `setInterval`. Par défaut, le script ScriptBlock est classé en tant que **UnrelatedCode**.|  
+|**Eval**|un script qui est exécuté en passant une chaîne à la fonction `eval` fournie par l'hôte. Par défaut, le script Eval est classifié comme **MyCode**.|  
+|**Function**|un script qui est exécuté en passant une chaîne au constructeur `Function`. Par défaut, le script Function est classé comme **LibraryCode**.|  
+|**ScriptBlock**|un script qui est exécuté en passant une chaîne aux fonctions `setTimeout`, `setImmediate` ou `setInterval`. Par défaut, le script ScriptBlock est classé comme **UnrelatedCode**.|  
   
  Vous pouvez changer la valeur en un de ces mots clés :  
   
-- `MyCode`  classe le script en tant que **MyCode**.  
+- `MyCode` classifie le script comme **MyCode**.  
   
-- `Library`  classe le script en tant que **LibraryCode**.  
+- `Library` classifie le script comme **LibraryCode**.  
   
-- `Unrelated`  classe le script en tant que **UnrelatedCode**.  
+- `Unrelated` classifie le script comme **UnrelatedCode**.  
   
   **MyCode, Libraries et Unrelated**  
   
@@ -308,12 +303,7 @@ Les développeurs qui utilisent des langages du .NET Framework sont familiarisé
 |||  
 |-|-|  
 |**MyCode**|Un tableau d’URL ou de fichiers qui sont classés comme **MyCode**.|  
-|**Bibliothèques**|Un tableau d’URL ou de fichiers qui sont classés comme **LibraryCode**.|  
-|**Non liées**|Un tableau d’URL ou de fichiers qui sont classés comme **UnrelatedCode**.|  
+|**Libraries**|Un tableau d’URL ou de fichiers qui sont classés comme **LibraryCode**.|  
+|**Unrelated**|Un tableau d’URL ou de fichiers qui sont classés comme **UnrelatedCode**.|  
   
  La chaîne d'URL ou de fichiers peut contenir un ou plusieurs caractères `*`, qui correspondent à zéro ou plusieurs caractères. `*` est l'équivalent de l'expression régulière `.*`.
-
-
-
-
-

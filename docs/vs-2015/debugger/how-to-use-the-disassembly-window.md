@@ -1,14 +1,9 @@
 ---
-title: 'Comment : utiliser la fenêtre code machine | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : La fenêtre code machine | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.disassembly
 dev_langs:
@@ -29,22 +24,22 @@ ms.assetid: eaf84dd0-c82d-481b-af51-690b74e7794c
 caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 67f9307f2f5fece64ee2ee11dd48863b9a951180
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2bd0fe7ca8b2a1f21ebcb6c3434348df9d2e66e5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760914"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953942"
 ---
-# <a name="how-to-use-the-disassembly-window"></a>Comment : utiliser la fenêtre Code Machine
+# <a name="how-to-use-the-disassembly-window"></a>Procédure : La fenêtre code machine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette fonctionnalité est disponible uniquement si le débogage au niveau des adresses est activé le **Options** boîte de dialogue, **débogage** nœud. Elle n'est pas disponible pour le débogage de script ni le débogage SQL.  
   
- Le **désassemblage** fenêtre montre le code assembleur correspondant aux instructions créées par le compilateur. Si vous déboguez du code managé, ces instructions assembleur correspondent au code natif créé par le compilateur juste-à-temps (JIT), et non au langage intermédiaire de Microsoft (MSIL) généré par le compilateur Visual Studio.  
+ La fenêtre **Code Machine** affiche le code assembleur correspondant aux instructions créées par le compilateur. Si vous déboguez du code managé, ces instructions assembleur correspondent au code natif créé par le compilateur juste-à-temps (JIT), et non au langage intermédiaire de Microsoft (MSIL) généré par le compilateur Visual Studio.  
   
- Outre les instructions assembleur, la **désassemblage** fenêtre peut afficher les informations facultatives suivantes :  
+ Outre les instructions en assembleur, la fenêtre **Code Machine** peut afficher les informations facultatives suivantes :  
   
 - L'adresse mémoire de chaque instruction. Pour les applications natives, il s'agit effectivement de l'adresse mémoire. Pour Visual Basic, C# ou le code managé, il s'agit d'un offset à partir du début de la fonction.  
   
@@ -65,7 +60,7 @@ Cette fonctionnalité est disponible uniquement si le débogage au niveau des ad
   Vous n'aurez probablement jamais le désir ni le besoin de consulter les instructions du code machine dans leur format numérique brut, plutôt qu'en langage assembleur. Néanmoins, si vous le souhaitez, vous pouvez les consulter dans la fenêtre Mémoire ou en sélectionnant Octets du code dans le menu contextuel de la fenêtre Code Machine.  
   
 > [!NOTE]
->  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-display-the-disassembly-window"></a>Pour afficher la fenêtre Code Machine  
   
@@ -84,8 +79,3 @@ Cette fonctionnalité est disponible uniquement si le débogage au niveau des ad
 ## <a name="see-also"></a>Voir aussi  
  [Affichage des données dans le débogueur](../debugger/viewing-data-in-the-debugger.md)   
  [Guide pratique pour utiliser la fenêtre Registres](../debugger/how-to-use-the-registers-window.md)
-
-
-
-
-

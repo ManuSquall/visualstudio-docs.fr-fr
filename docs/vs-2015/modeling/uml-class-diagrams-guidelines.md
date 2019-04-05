@@ -1,12 +1,9 @@
 ---
-title: 'Diagrammes de classes UML : Indications | Microsoft Docs'
-ms.custom: ''
+title: 'Diagrammes de classes UML : Guidelines | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.overrideoperationsdialog
 helpviewer_keywords:
@@ -19,15 +16,15 @@ ms.assetid: 94dbfd55-b300-4b49-9049-0831ed849486
 caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: bfd0b13942f5faee82e284c435b7f937d3ae5094
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 608b5c37975c49e4e90cdf9edd923121350735e5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726530"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949727"
 ---
-# <a name="uml-class-diagrams-guidelines"></a>Diagrammes de classes UML : indications
+# <a name="uml-class-diagrams-guidelines"></a>Diagrammes de classes UML : Recommandations
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dans Visual Studio, vous pouvez utiliser un *diagramme de classes UML* pour décrire les types de données et leurs relations, indépendamment de leur implémentation. Le diagramme permet de se concentrer sur les aspects logiques des classes, plutôt que sur leur implémentation.  
@@ -59,7 +56,7 @@ Dans Visual Studio, vous pouvez utiliser un *diagramme de classes UML* pour déc
   
  Types de broches d'entrée et de sortie, et de nœuds de paramètres d'activités.  
   
- Consultez [diagrammes d’activités UML : instructions](../modeling/uml-activity-diagrams-guidelines.md).  
+ Consultez [diagrammes d’activités UML : Les instructions](../modeling/uml-activity-diagrams-guidelines.md).  
   
  Diagramme de séquence  
   
@@ -67,22 +64,22 @@ Dans Visual Studio, vous pouvez utiliser un *diagramme de classes UML* pour déc
   
  Types des lignes de vie. La classe d'une ligne de vie doit inclure des opérations pour tous les messages qu'elle peut recevoir.  
   
- Consultez [diagrammes de séquence UML : indications](../modeling/uml-sequence-diagrams-guidelines.md).  
+ Consultez [diagrammes de séquence UML : Les instructions](../modeling/uml-sequence-diagrams-guidelines.md).  
   
  Diagramme de composant  
   
  Interfaces de composant, répertoriant leurs opérations.  
   
- Consultez [diagrammes de composants UML : indications](../modeling/uml-component-diagrams-guidelines.md).  
+ Consultez [diagrammes de composants UML : Les instructions](../modeling/uml-component-diagrams-guidelines.md).  
   
  Diagramme de cas d'usage  
   
  Types mentionnés dans les descriptions des objectifs et des étapes d'un cas d'usage.  
   
- Consultez [diagrammes de cas d’usage UML : indications](../modeling/uml-use-case-diagrams-guidelines.md).  
+ Consultez [diagrammes de cas d’usage UML : Les instructions](../modeling/uml-use-case-diagrams-guidelines.md).  
   
 ##  <a name="BasicSteps"></a> Étapes de base pour dessiner des diagrammes de classe  
- Pour plus d’informations de référence sur les éléments des diagrammes de classes UML, consultez [diagrammes de classes UML : référence](../modeling/uml-class-diagrams-reference.md).  
+ Pour plus d’informations de référence sur les éléments des diagrammes de classes UML, consultez [diagrammes de classes UML : Référence](../modeling/uml-class-diagrams-reference.md).  
   
 > [!NOTE]
 >  Les étapes détaillées pour créer un des diagrammes de modélisation sont décrites dans [modèles et diagrammes UML modifier](../modeling/edit-uml-models-and-diagrams.md).  
@@ -109,7 +106,7 @@ Dans Visual Studio, vous pouvez utiliser un *diagramme de classes UML* pour déc
   
      Pour ajouter plusieurs éléments rapidement, appuyez deux fois sur ENTRÉE à la fin de chaque élément. Vous pouvez utiliser les touches de direction pour vous déplacer vers le haut ou le bas de la liste.  
   
-3.  Pour développer ou réduire un type, choisissez l’icône de chevron située en haut à gauche de celui-ci. Vous pouvez également développer et réduire les **attributs** et **opérations** section d’une classe ou interface.  
+3.  Pour développer ou réduire un type, choisissez l'icône de chevron située en haut à gauche de celui-ci. Vous pouvez également développer et réduire les **attributs** et **opérations** section d’une classe ou interface.  
   
 4.  Pour dessiner des liens d'associations, d'héritage ou encore de dépendance entre les différents types, cliquez successivement sur l'outil approprié, sur le type source et sur le type cible.  
   
@@ -149,13 +146,13 @@ Dans Visual Studio, vous pouvez utiliser un *diagramme de classes UML* pour déc
   
  Si vous avez défini des interfaces sur les composants dans un diagramme de composant, vous pouvez faire glisser une interface à partir de **Explorateur de modèles UML** sur le diagramme de classes. Dans le diagramme de classes, vous pouvez définir des méthodes incluses dans l'interface.  
   
- Consultez [diagrammes de composants UML : indications](../modeling/uml-component-diagrams-guidelines.md).  
+ Consultez [diagrammes de composants UML : Les instructions](../modeling/uml-component-diagrams-guidelines.md).  
   
  Diagramme de séquence UML  
   
  Vous pouvez créer des classes et des interfaces à partir de lignes de vie dans un diagramme de séquence et puis faites glisser la classe à partir de **Explorateur de modèles UML** vers un diagramme de classes UML. Chaque ligne de vie d'un diagramme de séquences représente une instance d'objet, de composant ou encore d'acteur.  
   
- Pour créer une classe à partir d’une ligne de vie, ouvrez le menu contextuel pour la ligne de vie, puis choisissez **créer une classe** ou **créer l’Interface**. Consultez [diagrammes de séquence UML : indications](../modeling/uml-sequence-diagrams-guidelines.md).  
+ Pour créer une classe à partir d’une ligne de vie, ouvrez le menu contextuel pour la ligne de vie, puis choisissez **créer une classe** ou **créer l’Interface**. Consultez [diagrammes de séquence UML : Les instructions](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 ##  <a name="AttributesAndOperations"></a> Attributs et opérations  
  Un attribut (4) est une valeur nommée que chaque instance de type peut posséder. L'accès à un attribut ne modifie pas l'état de l'instance.  
@@ -179,7 +176,7 @@ Dans Visual Studio, vous pouvez utiliser un *diagramme de classes UML* pour déc
   
 - **(aucun)**  -Vous pouvez laisser un type non spécifié dans la signature en omettant les deux-points précédents (`:`).  
   
-- Un des types primitifs standards : **booléenne**, **entier**, **chaîne**.  
+- Un des types primitifs standards : **Boolean**, **Integer**, **String**.  
   
 - Type défini dans votre modèle.  
   
@@ -292,7 +289,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
  Toutefois, vous pouvez uniquement définir le **Is Static** et **Is Abstract** propriétés dans le **propriétés** fenêtre.  
   
 #### <a name="full-signature"></a>Signature complète  
- Lorsque vous modifiez la signature d'un attribut ou d'une opération, certaines propriétés supplémentaires peuvent apparaître à la fin de la ligne et après chaque paramètre. Elles apparaissent entre accolades {…}. Vous pouvez modifier ou ajouter ces propriétés. Par exemple :  
+ Lorsque vous modifiez la signature d'un attribut ou d'une opération, certaines propriétés supplémentaires peuvent apparaître à la fin de la ligne et après chaque paramètre. Elles apparaissent entre accolades {…}. Vous pouvez modifier ou ajouter ces propriétés. Exemple :  
   
 ```  
 + AddItems (items: MenuItem [1..*] {unique, ordered})  
@@ -303,7 +300,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
  `unique`  
   
- **Est Unique**  
+ **Est unique**  
   
  La collection ne contient aucune valeur en double. S'applique aux types dont la multiplicité est supérieure à 1.  
   
@@ -325,7 +322,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
  L'attribut est calculé à partir de valeurs d'autres attributs ou associations.  
   
- « / » apparaît avant le nom d'un attribut. Par exemple :  
+ « / » apparaît avant le nom d'un attribut. Exemple :  
   
 ```  
 /TotalPrice: Integer  
@@ -341,7 +338,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
  Outre les propriétés de l’association dans sa globalité, chaque *rôle*, autrement dit, chaque fin de l’association, dispose de son propre quelques propriétés. Pour les visualiser, développez le **premier rôle** et **Second rôle** propriétés.  
   
- Quelques propriétés de chaque rôle sont directement visibles dans le diagramme. Elles se présentent comme suit :  
+ Quelques propriétés de chaque rôle sont directement visibles dans le diagramme. En voici la liste :  
   
 - Nom du rôle. Cette propriété apparaît à la fin appropriée de l'association dans le diagramme. Vous pouvez le définir sur le diagramme ou dans le **propriétés** fenêtre.  
   
@@ -387,7 +384,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
 1. Cliquez sur la relation de généralisation.  
   
-    Elle apparaît en surbrillance et une étiquette d’action apparaît près d’elle.  
+    Elle apparaît en surbrillance et une balise d'action apparaît près d'elle.  
   
 2. Cliquez sur la balise d’Action, puis cliquez sur **remplacer les opérations**.  
   
@@ -477,12 +474,9 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
 ## <a name="see-also"></a>Voir aussi  
  [Modifier des modèles UML et des diagrammes](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagrammes de classes UML : référence](../modeling/uml-class-diagrams-reference.md)   
+ [Diagrammes de classes UML : Référence](../modeling/uml-class-diagrams-reference.md)   
  [Modéliser les besoins des utilisateurs](../modeling/model-user-requirements.md)   
- [Diagrammes de composants UML : référence](../modeling/uml-component-diagrams-reference.md)   
- [Diagrammes de séquence UML : référence](../modeling/uml-sequence-diagrams-reference.md)   
- [Diagrammes de cas d’usage UML : référence](../modeling/uml-use-case-diagrams-reference.md)   
- [Informations de référence sur les diagrammes de composants UML](../modeling/uml-component-diagrams-reference.md)
-
-
-
+ [Diagrammes de composants UML : Référence](../modeling/uml-component-diagrams-reference.md)   
+ [Diagrammes de séquence UML : Référence](../modeling/uml-sequence-diagrams-reference.md)   
+ [Diagrammes de cas d’usage UML : Référence](../modeling/uml-use-case-diagrams-reference.md)   
+ [Diagrammes de composants UML : Informations de référence](../modeling/uml-component-diagrams-reference.md)

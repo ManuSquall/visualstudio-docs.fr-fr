@@ -1,11 +1,8 @@
 ---
-title: 'Comment : ajouter des activités à la boîte à outils (hérité) | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Ajouter des activités à la boîte à outils (hérité) | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - Toolbox, adding activities
@@ -14,15 +11,15 @@ ms.assetid: b66ea29c-120b-40ba-8a61-c1c8240850fa
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 0fafcc260f451c4ead24d7a9dbb72a4db22c0b79
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 51c9d43a1dee05d1b1cb77e50aa2d54d4f4e7f2c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249364"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951234"
 ---
-# <a name="how-to-add-activities-to-the-toolbox-legacy"></a>Procédure : ajouter des activités à la boîte à outils (héritée)
+# <a name="how-to-add-activities-to-the-toolbox-legacy"></a>Procédure : Ajouter des activités à la boîte à outils (héritées)
 Lors de la création d’une solution de flux de travail avec les anciennes [!INCLUDE[wfd1](../includes/wfd1-md.md)] qui cible le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], activités personnalisées peuvent être ajoutées au projet de workflow et leurs concepteurs placés dans le **boîte à outils** pour facile accès. Vous pouvez également ajouter des activités directement à la **boîte à outils** à partir d’une bibliothèque de liens dynamiques (DLL).  
   
 ### <a name="to-add-an-activity-to-the-toolbox-from-a-dll"></a>Pour ajouter une activité à la boîte à outils à partir d'une DLL  

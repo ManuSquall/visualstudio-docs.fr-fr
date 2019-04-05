@@ -1,27 +1,22 @@
 ---
 title: Classe ContingentProperties - membres internes | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - ContingentProperties class [.NET Framework debug engines]
 - debug engines, ContingentProperties class [.NET Framework]
 ms.assetid: c49d1362-ab1c-4b6d-9950-fcae40e0e66b
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fdef7310185170a8cb73c3a04ec706108615a17f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3f6778aef90361a7751ccd744fcf93822f8f97db
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796127"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939072"
 ---
 # <a name="contingentproperties-class---internal-members"></a>Classe ContingentProperties - Membres internes
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ Contient des propriétés supplémentaires pour un <xref:System.Threading.Tasks.
   
 ### <a name="fields"></a>Champs  
   
-|Name|Description|  
+|Nom|Description|  
 |----------|-----------------|  
 |[m_children](../../extensibility/debugger/m-children-field.md)|La liste des tâches enfants qui sont inscrits auprès de cette tâche.|  
   
@@ -54,4 +49,3 @@ Contient des propriétés supplémentaires pour un <xref:System.Threading.Tasks.
   
 ## <a name="see-also"></a>Voir aussi  
  [Valeurs internes d’extension parallèle pour .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
-

@@ -1,35 +1,32 @@
 ---
 title: Valider des modifications in-process sur des contrôles liés aux données avant d’enregistrer des données | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 - C++
 - aspx
 helpviewer_keywords:
-- commiting edited records
+- committing edited records
 - data-bound controls, in-process edits
-- DataBinding class, commiting edited records
-- hierarchical update, commiting edited records
-- BindingSource class, commiting edited records
+- DataBinding class, committing edited records
+- hierarchical update, committing edited records
+- BindingSource class, committing edited records
 - EndEdit method
 ms.assetid: 61af4798-eef7-468c-b229-5e1497febb2f
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3af1534e6436eec2eac1f294be8c2428c949ce9d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d703ef271dfec09b277db2c2702679b8087b4b88
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296027"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950046"
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Valider des modifications in-process sur des contrôles liés aux données avant d’enregistrer des données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +34,7 @@ ms.locfileid: "49296027"
   
 Lorsque vous modifiez les valeurs dans des contrôles liés aux données, les utilisateurs doivent sortir pour valider la valeur mise à jour dans la source de données sous-jacente, le contrôle est lié à l’enregistrement en cours. Lorsque vous faites glisser des éléments à partir de la [fenêtre Sources de données](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) sur un formulaire, le premier élément que vous déposez génère du code dans le **enregistrer** événement de clic du bouton du <xref:System.Windows.Forms.BindingNavigator>. Ce code appelle la <xref:System.Windows.Forms.BindingSource.EndEdit%2A> méthode de la <xref:System.Windows.Forms.BindingSource>. Par conséquent, l’appel à la <xref:System.Windows.Forms.BindingSource.EndEdit%2A> méthode est générée uniquement pour la première <xref:System.Windows.Forms.BindingSource> qui est ajouté au formulaire.  
   
- Le <xref:System.Windows.Forms.BindingSource.EndEdit%2A> appel valide toutes les modifications qui se trouvent dans le processus, dans tous les contrôles liés aux données qui sont actuellement en cours de modification. Par conséquent, si un contrôle lié aux données a encore le focus et que vous cliquez sur le **enregistrer** bouton, toutes les modifications en attente dans ce contrôle sont validées avant l’enregistrement réel (le `TableAdapterManager.UpdateAll` méthode).  
+ L’appel de <xref:System.Windows.Forms.BindingSource.EndEdit%2A> valide toutes les modifications en cours de tous les contrôles liés aux données modifiés. Par conséquent, si un contrôle lié aux données a encore le focus et que vous cliquez sur le bouton **Enregistrer**, toutes les modifications en attente dans ce contrôle sont validées avant l’enregistrement réel (la méthode `TableAdapterManager.UpdateAll`).  
   
  Vous pouvez configurer votre application pour valider automatiquement les modifications, même si un utilisateur tente d’enregistrer des données sans valider les modifications, dans le cadre de l’enregistrement processus.  
   
@@ -61,4 +58,3 @@ Lorsque vous modifiez les valeurs dans des contrôles liés aux données, les ut
 ## <a name="see-also"></a>Voir aussi  
  [Lier des contrôles Windows Forms à des données dans Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
  [Mise à jour hiérarchique](../data-tools/hierarchical-update.md)
-

@@ -1,14 +1,9 @@
 ---
 title: 'Procédure pas à pas : Débogage d’un formulaire Windows | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -30,15 +25,15 @@ ms.assetid: 529db1e2-d9ea-482a-b6a0-7c543d17f114
 caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8f43835374ac74d50e1e81623ecf268fbfbfe8ca
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: ddec41c95e5bb2a3703cf2502cbf592c0794eba2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726601"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950016"
 ---
-# <a name="walkthrough-debugging-a-windows-form"></a>Procédure pas à pas : débogage d'un Windows Form
+# <a name="walkthrough-debugging-a-windows-form"></a>Procédure pas à pas : débogage d’un Windows Form
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Un formulaire Windows est une des applications managées plus courantes. Un formulaire Windows crée une application Windows standard. Vous pouvez effectuer cette procédure pas à pas à l’aide de Visual Basic, c# ou C++.  
@@ -49,7 +44,7 @@ Un formulaire Windows est une des applications managées plus courantes. Un form
   
 -   Si vous avez déjà ouvert une solution ouverte, fermez-la. (Sur le **fichier** menu, sélectionnez **fermer la Solution**.)  
   
-## <a name="create-a-new-windows-form"></a>Créer un nouveau formulaire Windows  
+## <a name="create-a-new-windows-form"></a>Créer un Windows Form  
  Ensuite, vous allez créer un nouveau formulaire Windows.  
   
 #### <a name="to-create-the-windows-form-for-this-walkthrough"></a>Pour créer le formulaire Windows pour cette procédure pas à pas  
@@ -70,7 +65,7 @@ Un formulaire Windows est une des applications managées plus courantes. Un form
   
 5.  Cliquez sur **OK**.  
   
-     Visual Studio crée un nouveau projet et affiche un nouveau formulaire dans le Concepteur Windows Forms. Pour plus d’informations, consultez [Windows Forms Designer](http://msdn.microsoft.com/en-us/3c3d61f8-f36c-4d41-b9c3-398376fabb15).  
+     Visual Studio crée un nouveau projet et affiche un nouveau formulaire dans le Concepteur Windows Forms. Pour plus d’informations, consultez [Windows Forms Designer](http://msdn.microsoft.com/3c3d61f8-f36c-4d41-b9c3-398376fabb15).  
   
 6.  Sur le **vue** menu, sélectionnez **boîte à outils**.  
   
@@ -84,7 +79,7 @@ Un formulaire Windows est une des applications managées plus courantes. Un form
   
      Vous accédez alors à la page de codes. Le curseur doit se trouver dans `button1_Click`.  
   
-10. Dans la fonction `button1_Click`., ajoutez le code suivant :  
+10. Dans la fonction `button1_Click`, ajoutez le code suivant :  
   
     ```  
     ' Visual Basic  
@@ -99,7 +94,7 @@ Un formulaire Windows est une des applications managées plus courantes. Un form
   
 11. Dans le menu **Générer**, sélectionnez **Générer la solution**.  
   
-     Le projet doit se générer sans erreurs.  
+     Le projet doit être généré sans erreur.  
   
 ## <a name="debug-your-form"></a>Déboguer votre formulaire  
  Maintenant, vous êtes prêt à commencer le débogage.  
@@ -119,12 +114,12 @@ Un formulaire Windows est une des applications managées plus courantes. Un form
     textBox1->Text = "Button was clicked!";  
     ```  
   
-     Un point rouge s'affiche et le texte de la ligne est surligné en rouge. Le point rouge représente un point d'arrêt. Pour plus d’informations, consultez [des points d’arrêt](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583). Lorsque vous exécutez l'application dans le débogueur, le débogueur interrompt l'exécution à l'emplacement du code où se trouve ce point d'arrêt. Vous pouvez afficher l'état de votre application et la déboguer.  
+     Un point rouge s'affiche et le texte de la ligne est surligné en rouge. Le point rouge représente un point d'arrêt. Pour plus d’informations, consultez [Points d’arrêt](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583). Lorsque vous exécutez l'application dans le débogueur, le débogueur interrompt l'exécution à l'emplacement du code où se trouve ce point d'arrêt. Vous pouvez afficher l'état de votre application et la déboguer.  
   
     > [!NOTE]
     >  Vous pouvez également cliquer sur n’importe quelle ligne de code, pointez sur **point d’arrêt**, puis cliquez sur **insérer un point d’arrêt** pour ajouter un point d’arrêt sur cette ligne.  
   
-2.  ON le **déboguer** menu, choisissez **Démarrer**.  
+2.  Dans le menu **Déboguer**, choisissez **Démarrer**.  
   
      Le formulaire Windows commence à s’exécuter.  
   
@@ -142,7 +137,7 @@ Un formulaire Windows est une des applications managées plus courantes. Un form
     ""  
     ```  
   
-6.  Sur le **déboguer** menu, choisissez **pas à pas détaillé**.  
+6.  Dans le menu **Déboguer**, choisissez **Pas à pas détaillé**.  
   
      La valeur de TextBox1.Text, dans le **Espion1** fenêtre pour :  
   
@@ -160,7 +155,7 @@ Un formulaire Windows est une des applications managées plus courantes. Un form
   
      Cette opération supprime le point d’arrêt à partir de votre code.  
   
-10. Sur le **déboguer** menu, choisissez **arrêter le débogage**.  
+10. Dans le menu **Déboguer**, choisissez **Arrêter le débogage**.  
   
 ## <a name="attach-to-your-windows-form-application-for-debugging"></a>Attacher à votre Application de formulaire Windows pour le débogage  
  Dans [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], vous pouvez attacher le débogueur à un processus en cours d'exécution. Si vous utilisez une édition Express, cette fonctionnalité n’est pas pris en charge.  
@@ -199,6 +194,3 @@ Un formulaire Windows est une des applications managées plus courantes. Un form
 ## <a name="see-also"></a>Voir aussi  
  [Débogage du code managé](../debugger/debugging-managed-code.md)   
  [Sécurité du débogueur](../debugger/debugger-security.md)
-
-
-

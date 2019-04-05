@@ -1,14 +1,9 @@
 ---
 title: Comment puis-je savoir d'où provient une valeur de paramètre incorrecte ? | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.parameters
 dev_langs:
@@ -27,13 +22,13 @@ ms.assetid: 1f1ae455-0e25-4e9d-b33f-53908f5bd6ce
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2505d8f733554e90c14a46deafd0936682d38d66
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 89ef2aabd03316f34280e75dc30da2189629b2f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729578"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952863"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>Comment puis-je savoir d'où provient une valeur de paramètre incorrecte ?
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,22 +42,19 @@ Description du problème
   
 1.  Définissez un point d'arrêt d'emplacement au début de la fonction.  
   
-2.  Cliquez sur le point d’arrêt et sélectionnez **Condition**.  
+2.  Cliquez avec le bouton droit sur le point d’arrêt et sélectionnez **Condition**.  
   
-3.  Dans le **Condition de point d’arrêt** boîte de dialogue, cliquez sur le **Condition** case à cocher. Consultez [avancée des points d’arrêt](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).  
+3.  Dans la boîte de dialogue **Condition de point d’arrêt**, cochez la case **Condition**. Consultez [avancée des points d’arrêt](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).  
   
 4.  Entrez une expression, telle que `Var==3`, dans la zone de texte, où `Var` est le nom du paramètre qui contient la valeur incorrecte et où `3` correspond à la valeur incorrecte passée.  
   
-5.  Sélectionnez le **a la valeur True** case d’option, puis cliquez sur le **OK** bouton.  
+5.  Activez la case d’option **est true**, puis cliquez sur le bouton **OK**.  
   
 6.  Réexécutez le programme. Le point d'arrêt provoque l'arrêt du programme au début de la fonction lorsque la valeur du paramètre `Var` est `3`.  
   
-7.  Utilisez la fenêtre Pile des appels pour rechercher la fonction d'appel et naviguer jusqu'à son code source. Pour plus d’informations, consultez [Comment : utiliser la fenêtre Pile des appels](../debugger/how-to-use-the-call-stack-window.md).  
+7.  Utilisez la fenêtre Pile des appels pour rechercher la fonction d'appel et naviguer jusqu'à son code source. Pour plus d'informations, voir [Procédure : utiliser la fenêtre Pile des appels](../debugger/how-to-use-the-call-stack-window.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Forum aux questions de débogage du Code natif](../debugger/debugging-native-code-faqs.md)   
- [Points d’arrêt](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583)   
+ [Questions fréquentes (FAQ) sur le débogage du code natif](../debugger/debugging-native-code-faqs.md)   
+ [Points d’arrêt](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)   
  [Débogage du code natif](../debugger/debugging-native-code.md)
-
-
-

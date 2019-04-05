@@ -1,25 +1,20 @@
 ---
 title: Cache de schéma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 35a7fcad-f3bf-4a96-9008-4306e7276223
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 071ae9f75ab48a2fbabba7c272ad542f59e9e8be
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 5827debb4f79ef34bbdd059c6beb0003988a721c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833146"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953032"
 ---
 # <a name="schema-cache"></a>Cache de schéma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ L'éditeur XML fournit un cache de schéma dans le répertoire %InstallRoot%\Xml
  Le tableau suivant décrit les schémas installés avec l'éditeur XML.  
 
 
-|     Filename      |                                                      Description                                                      |
+|     Nom de fichier      |                                                      Description                                                      |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------|
 |    catalog.xsd    |             Schéma pour des fichiers catalogue de schémas de l'éditeur XML. Pour des informations sur les catalogues de schémas, voir ci-dessous.             |
 | DotNetConfig.xsd  |                 Schéma pour les fichiers Web.Config, «<http://schemas.microsoft.com/.NETConfiguration/v2.0>».                 |
@@ -68,11 +63,11 @@ L'éditeur XML fournit un cache de schéma dans le répertoire %InstallRoot%\Xml
 </SchemaCatalog>  
 ```  
 
- L'attribut `href` peut être n'importe quel chemin de fichier ou URL http pointant vers le schéma. Le chemin de fichier peut être relatif au document de catalogue. Les variables suivantes, délimitées par des %%, sont reconnues par l'éditeur et seront développées pour former le chemin :  
+ L’attribut `href` peut être n’importe quel chemin de fichier ou URL http pointant vers le schéma. Le chemin de fichier peut être relatif au document de catalogue. Les variables suivantes, délimitées par des %%, sont reconnues par l'éditeur et seront développées pour former le chemin :  
 
 - InstallDir  
 
-- System  
+- Système  
 
 - ProgramFiles  
 
@@ -84,15 +79,15 @@ L'éditeur XML fournit un cache de schéma dans le répertoire %InstallRoot%\Xml
 
 - CommonApplicationData  
 
-- LCID  
+- dans le dossier HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\  
 
-  Le document de catalogue peut contenir un élément `Catalog` pointant vers d'autres catalogues. Vous pouvez utiliser l'élément `Catalog` pour pointer vers un catalogue central partagé par votre équipe ou votre entreprise ou vers un catalogue en ligne partagé avec vos partenaires commerciaux. L'attribut `href` est le chemin de fichier ou l'URL http des autres catalogues. Voici un exemple d'élément `Catalog` :  
+  Le document de catalogue peut contenir un élément `Catalog` pointant vers d'autres catalogues. Vous pouvez utiliser l'élément `Catalog` pour pointer vers un catalogue central partagé par votre équipe ou votre entreprise ou vers un catalogue en ligne partagé avec vos partenaires commerciaux. L’attribut `href` est le chemin de fichier ou l’URL http des autres catalogues. Voici un exemple d'élément `Catalog` :  
 
 ```  
 <Catalog href="file://c:/xcbl/xcblCatalog.xml"/>  
 ```  
 
- Le catalogue peut également contrôler la façon dont les schémas sont associés aux documents XML à l'aide de l'élément spécial `Association`. Cet élément associe des schémas qui n'ont pas d'espace de noms cible à une extension de fichier particulière, ce qui peut s'avérer utile car l'éditeur XML n'effectue aucune association automatique de schémas qui n'ont pas d'attribut `targetNamespace`. Dans l'exemple suivant, l'élément `Association` associe le schéma dotNetConfig à tous les fichiers dont l'extension est « config » :  
+ Le catalogue peut également contrôler la façon dont les schémas sont associés aux documents XML à l'aide de l'élément spécial `Association`. Cet élément associe des schémas qui n’ont pas d’espace de noms cible à une extension de fichier particulière, ce qui peut s’avérer utile car l’éditeur XML n’effectue aucune association automatique de schémas qui n’ont pas d’attribut `targetNamespace`. Dans l'exemple suivant, l'élément `Association` associe le schéma dotNetConfig à tous les fichiers dont l'extension est « config » :  
 
 ```  
 <Association extension="config" schema="%InstallDir%/xml/schemas/dotNetConfig.xsd"/>  
@@ -136,6 +131,3 @@ L'éditeur XML fournit un cache de schéma dans le répertoire %InstallRoot%\Xml
 
 ## <a name="see-also"></a>Voir aussi  
  [Éditeur XML](../xml-tools/xml-editor.md)
-
-
-

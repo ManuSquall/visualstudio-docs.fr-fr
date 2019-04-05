@@ -1,14 +1,9 @@
 ---
-title: ': Ca1820 Vérifiez pour les chaînes vides à l’aide de la longueur de chaîne | Microsoft Docs'
-ms.custom: ''
+title: 'CA1820 : Test de chaînes vides à l’aide de la longueur de chaîne | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - TestForEmptyStringsUsingStringLength
 - CA1820
@@ -20,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 680a9ee1681a98176f2c21fc989331bf82aa2b15
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bebd3b78881f9e1a2f4908ea667f80cbd7b98dd6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861018"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950340"
 ---
 # <a name="ca1820-test-for-empty-strings-using-string-length"></a>CA1820 : Vérifiez la présence de chaînes vides par la longueur de chaîne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,6 +50,3 @@ ms.locfileid: "49861018"
  L’exemple suivant illustre les différentes techniques utilisées pour rechercher une chaîne vide.
 
  [!code-csharp[FxCop.Performance.StringTest#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.StringTest/cs/FxCop.Performance.StringTest.cs#1)]
-
-
-

@@ -1,26 +1,21 @@
 ---
 title: Ajout de Services Web pour les systèmes de projet | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - project systems, adding Web services
 - Web services, adding to VSPackage project systems
 ms.assetid: 8efa078b-68b2-45a2-9be2-44f807bc0d7f
 caps.latest.revision: 8
-manager: douge
-ms.openlocfilehash: 88966ee17567970d0807792c57c2483cadb22f63
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 8143db95d2f892c7e3438f240aa5f22cdda53c7f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280317"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948622"
 ---
 # <a name="adding-web-services-to-project-systems"></a>Ajout de services web à des systèmes de projet
 En règle générale, les services Web XML sont des ressources adressables par URL qui retournent des informations par programmation au système de projet en utilisant le protocole SOAP (Simple Object Access Protocol). Vous pouvez intégrer des services Web à votre système de projet VSPackage à l’aide de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddProjectItemDlg2> interface.  

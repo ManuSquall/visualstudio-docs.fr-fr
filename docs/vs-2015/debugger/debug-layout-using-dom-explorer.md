@@ -1,14 +1,9 @@
 ---
 title: Déboguer la disposition à l’aide de l’Explorateur DOM | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: ded6566d-fc29-49a7-8029-dee8e50fe733
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ba06e6a8ba95887c0cc6b6acfd14cef10ff03798
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cb6de5edcd94b0391c090b0f68658258134375aa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787744"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948169"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>Déboguer la disposition avec l’Explorateur DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 > [!TIP]
 >  Les modifications que vous effectuez dans l’onglet **Disposition** ne sont pas définitives. Vous pouvez apporter des modifications permanentes à votre code source, puis actualiser votre application à l’aide du bouton **Actualiser l’application Windows** (applications du Windows Store et Windows Phone Store uniquement) de la barre d’outils Déboguer. Ainsi, vous pouvez éviter de redémarrer le débogueur.  
   
- Pour utiliser l’Explorateur DOM pour modifier les aspects de la disposition qui ne sont pas visibles dans le modèle de boîte, consultez [Guide de démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md) et [styles CSS déboguer à l’aide de l’Explorateur DOM](../debugger/debug-css-styles-using-dom-explorer.md).  
+ Pour utiliser l’Explorateur DOM pour modifier les aspects de la disposition qui ne sont pas visibles dans le modèle de boîte, consultez [Guide de démarrage rapide : Déboguer le code HTML et CSS](../debugger/quickstart-debug-html-and-css.md) et [styles CSS déboguer à l’aide de l’Explorateur DOM](../debugger/debug-css-styles-using-dom-explorer.md).  
   
 ## <a name="example-of-fixing-a-layout-issue"></a>Exemple de résolution d’un problème de disposition  
  Cet exemple montre comment sélectionner un élément de liste dans le modèle Hub/Pivot, interpréter les valeurs du modèle de boîte qui figurent dans l’onglet **Disposition** , puis modifier l’une des valeurs de propriété pour résoudre un problème de disposition.  
@@ -88,7 +83,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 8.  Basculez vers Visual Studio et choisissez **Sélectionner un élément** dans l’explorateur DOM (ou appuyez sur Ctrl+B). Le mode de sélection est alors modifié pour vous permettre de sélectionner un élément en cliquant dessus, et l’application est mise en premier plan. Le mode est restauré à la suite d’un seul clic.  
   
     > [!TIP]
-    >  Vous pouvez aussi utiliser les touches de direction ou d’autres méthodes pour sélectionner directement les éléments HTML dans l’explorateur DOM. Pour plus d’informations sur la sélection d’éléments, consultez [Guide de démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md).  
+    >  Vous pouvez aussi utiliser les touches de direction ou d’autres méthodes pour sélectionner directement les éléments HTML dans l’explorateur DOM. Pour plus d’informations sur la sélection d’éléments, consultez [Guide de démarrage rapide : Déboguer le code HTML et CSS](../debugger/quickstart-debug-html-and-css.md).  
   
 9. Dans le simulateur ou l’émulateur Windows Phone, sélectionnez la moitié droite grisée des images coupées en deux. La mise en surbrillance apparaît autour de l’élément sélectionné, comme illustré ici dans l’émulateur Windows Phone :  
   
@@ -132,9 +127,6 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 15. Basculez vers le simulateur ou l’émulateur Windows Phone. Les valeurs margin-left mises à jour ont été appliquées aux images de Section 4. Ces valeurs sont aussi mises à jour dans l’onglet **Calculé** sous la règle margin-left.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Démarrage rapide : Déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Déboguer les styles CSS à l’aide de l’Explorateur DOM](../debugger/debug-css-styles-using-dom-explorer.md)   
  [Afficher les écouteurs d’événements DOM](../debugger/view-dom-event-listeners.md)
-
-
-

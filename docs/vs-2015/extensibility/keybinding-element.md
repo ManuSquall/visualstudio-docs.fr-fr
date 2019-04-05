@@ -1,27 +1,22 @@
 ---
 title: Élément KeyBinding | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, KeyBindings
 - KeyBinding element (VSCT XML schema)
 ms.assetid: e55a1098-15df-42a9-9f87-e3a99cf437dd
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 32dafc1b16282657db40531e34d1eccb02841481
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 75d96098e8444aac9a4fc6f895099435b54f640b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51780930"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950446"
 ---
 # <a name="keybinding-element"></a>Élément KeyBinding
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,15 +38,15 @@ L’élément de combinaison de touches Spécifie les raccourcis clavier pour le
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|GUID|Obligatoire.|  
+|guid|Obligatoire.|  
 |ID|Obligatoire.|  
 |éditeur|Obligatoire. Le GUID de l’éditeur indique le contexte d’édition pour laquelle ce raccourci clavier est actif. La valeur d’étendue globale de liaison est « guidVSStd97 ».|  
 |key1|Obligatoire. Les valeurs valides incluent tous les caractères d’alphanumériques peut être tapée et également les valeurs hexadécimales à deux chiffres précédés par 0 x et VK_constants.|  
-|MOD1|Facultatif. N’importe quelle combinaison de touches CTRL, ALT et MAJ séparés par un espace.|  
-|key2|Facultatif. Les valeurs valides incluent tous les caractères d’alphanumériques peut être tapée et également les valeurs hexadécimales à deux chiffres précédés par 0 x et VK_constants.|  
-|MOD2|Facultatif. N’importe quelle combinaison de touches CTRL, ALT et MAJ séparés par un espace.|  
+|mod1|Facultatif. N’importe quelle combinaison de touches CTRL, ALT et MAJ séparés par un espace.|  
+|key2|Optionnel. Les valeurs valides incluent tous les caractères d’alphanumériques peut être tapée et également les valeurs hexadécimales à deux chiffres précédés par 0 x et VK_constants.|  
+|mod2|Facultatif. N’importe quelle combinaison de touches CTRL, ALT et MAJ séparés par un espace.|  
 |Émulateur|Facultatif.|  
-|Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Condition|Optionnel. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Éléments enfants  
   
@@ -80,4 +75,3 @@ L’élément de combinaison de touches Spécifie les raccourcis clavier pour le
 ## <a name="see-also"></a>Voir aussi  
  [Élément KeyBindings](../extensibility/keybindings-element.md)   
  [Fichiers Visual Studio Command Table (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

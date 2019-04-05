@@ -1,14 +1,9 @@
 ---
 title: '&lt;point d’entrée&gt; , élément (Application ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#commandLine
 - urn:schemas-microsoft-com:asm.v2#entryPoint
@@ -23,13 +18,13 @@ ms.assetid: 10ad3083-10c1-4189-a870-9bba2eab244f
 caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: da308de644dfc73d9364b65e21e820d6fc6c2a8a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9ce9fcbddf54dff0ee8574d0c2a5a3df4d8b5c7e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255311"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952438"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;point d’entrée&gt; , élément (Application ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +69,7 @@ Identifie l’assembly qui doit être exécutée lorsque cela [!INCLUDE[ndpteccl
   
  Le `processorArchitecture` attribut de cet élément et le `processorArchitecture` attribut défini dans le `assemblyIdentity` ailleurs dans l’application manifeste doit correspondre.  
   
-## <a name="commandline"></a>ligne de commande  
+## <a name="commandline"></a>commandLine  
  Obligatoire. Doit être un enfant de le `entryPoint` élément. Il ne comporte aucun élément enfant et a les attributs suivants.  
   
 |Attribut|Description|  
@@ -96,12 +91,12 @@ Identifie l’assembly qui doit être exécutée lorsque cela [!INCLUDE[ndpteccl
 <customUX xmlns="urn:schemas-microsoft-com:clickonce.v1" />  
 ```  
   
- Une application qui inclut l’élément de customUX doit fournir un programme d’installation personnalisé qui utilise le <xref:System.Deployment.Application.InPlaceHostingManager> classe pour effectuer des opérations d’installation. Une application avec cet élément ne peut pas être installée en double-cliquant sur son manifeste ou setup.exe prérequis du programme d’amorçage. Le programme d’installation personnalisé peut créer des entrées de menu Démarrer, les raccourcis et les entrées d’Ajout / Suppression de programmes. Si le programme d’installation personnalisé ne crée pas une entrée Ajout / Suppression de programmes, elle doit stocker l’identificateur d’abonnement fourni par le <xref:System.Deployment.Application.GetManifestCompletedEventArgs.SubscriptionIdentity%2A> propriété et activez l’utilisateur pour désinstaller l’application ultérieurement en appelant le <xref:System.Deployment.Application.InPlaceHostingManager.UninstallCustomUXApplication%2A> (méthode). Pour plus d’informations, consultez [procédure pas à pas : création d’un programme d’installation personnalisé pour une Application ClickOnce](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md).  
+ Une application qui inclut l’élément de customUX doit fournir un programme d’installation personnalisé qui utilise le <xref:System.Deployment.Application.InPlaceHostingManager> classe pour effectuer des opérations d’installation. Une application avec cet élément ne peut pas être installée en double-cliquant sur son manifeste ou setup.exe prérequis du programme d’amorçage. Le programme d’installation personnalisé peut créer des entrées de menu Démarrer, les raccourcis et les entrées d’Ajout / Suppression de programmes. Si le programme d’installation personnalisé ne crée pas une entrée Ajout / Suppression de programmes, elle doit stocker l’identificateur d’abonnement fourni par le <xref:System.Deployment.Application.GetManifestCompletedEventArgs.SubscriptionIdentity%2A> propriété et activez l’utilisateur pour désinstaller l’application ultérieurement en appelant le <xref:System.Deployment.Application.InPlaceHostingManager.UninstallCustomUXApplication%2A> (méthode). Pour plus d’informations, consultez [Procédure pas à pas : Création d’un programme d’installation personnalisé pour une application ClickOnce](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md).  
   
 ## <a name="remarks"></a>Notes  
  Cet élément identifie l’assembly point d’entrée pour le [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application.  
   
- Vous ne pouvez pas utiliser `commandLine` pour passer des paramètres à votre application au moment de l’exécution. Vous pouvez accéder à des paramètres de chaîne de requête pour un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] déploiement à partir de l’application <xref:System.AppDomain>. Pour plus d’informations, consultez [Comment : récupérer des informations de chaîne de requête dans une Application ClickOnce en ligne](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).  
+ Vous ne pouvez pas utiliser `commandLine` pour passer des paramètres à votre application au moment de l’exécution. Vous pouvez accéder à des paramètres de chaîne de requête pour un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] déploiement à partir de l’application <xref:System.AppDomain>. Pour plus d'informations, voir [Procédure : Récupérer les informations de chaîne de requête dans une application ClickOnce en ligne](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).  
   
 ## <a name="example"></a>Exemple  
  L’exemple de code suivant illustre un `entryPoint` élément dans un manifeste d’application pour un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application. Cet exemple de code fait partie d’un exemple plus complet fourni pour le [manifeste d’Application ClickOnce](../deployment/clickonce-application-manifest.md) rubrique.  
@@ -121,6 +116,3 @@ Identifie l’assembly qui doit être exécutée lorsque cela [!INCLUDE[ndpteccl
   
 ## <a name="see-also"></a>Voir aussi  
  [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
-
-
-

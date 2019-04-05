@@ -1,25 +1,20 @@
 ---
 title: Explorateur de schémas XML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 2fc39e98-b194-456b-a452-cfafb0a52d66
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 32116de7bb88fe937980b02e1789830a27ca36b1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 59f2c4ba05b0e802f1daa303db0646a94f36fd31
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845873"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953935"
 ---
 # <a name="xml-schema-explorer"></a>Explorateur de schémas XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ L'Explorateur de schémas XML est intégré à Microsoft Visual Studio et l'Édi
   
 - obtenir une vue d'ensemble rapide du jeu de schémas ;  
   
-- Parcourir et naviguer l'arborescence.  
+- Parcourir et naviguer l’arborescence.  
   
 - Effectuer des recherches par mot clé et spécifiques au schéma. Pour plus d’informations, consultez [recherche le jeu de schémas](../xml-tools/searching-the-schema-set.md).  
   
@@ -43,7 +38,7 @@ L'Explorateur de schémas XML est intégré à Microsoft Visual Studio et l'Édi
   
 - générer un exemple de code XML pour les éléments globaux.  
   
-  L'Explorateur de schémas XML fournit une vue hiérarchique du jeu de schémas à travers une arborescence. L'Explorateur de schémas XML fournit également des fonctionnalités de recherche, de filtrage, de navigation et de tri. Pour accéder à l'Explorateur de schémas XML, effectuez l'une des opérations suivantes :  
+  L’Explorateur de schémas XML fournit une vue hiérarchique du jeu de schémas à travers une arborescence. L'Explorateur de schémas XML fournit également des fonctionnalités de recherche, de filtrage, de navigation et de tri. Pour accéder à l'Explorateur de schémas XML, effectuez l'une des opérations suivantes :  
   
 - Si vous êtes sur le [vue de départ](../xml-tools/start-view.md), cliquez sur le **Explorateur de schémas XML** lien.  
   
@@ -79,8 +74,8 @@ L'Explorateur de schémas XML est intégré à Microsoft Visual Studio et l'Édi
   
 -   L'activation d'un jeu de schémas ou d'un nœud d'espace de noms n'aboutit à rien.  
   
-## <a name="draging-and-dropping-nodes"></a>Déplacement de nœuds par glisser-déplacer  
- Vous pouvez glisser et déposer des nœuds, des nœuds de fichier et des nœuds d’espace de noms par glisser-déposer dans une vue du concepteur XSD. Si la vue actuelle est la [vue de départ](../xml-tools/start-view.md), faire glisser un nœud à la vue s’ouvre le [vue du graphique](../xml-tools/graph-view.md). Si la vue actuelle est la [affichage du modèle de contenu](../xml-tools/content-model-view.md) ou de la vue du graphique, la vue ne change pas lorsque vous supprimez un nœud sur celle-ci.  
+## <a name="draging-and-dropping-nodes"></a>Déplacement de nœuds par glisser-déposer  
+ Vous pouvez déplacer des nœuds, des nœuds de fichier et des nœuds d'espace de noms par glisser-déplacer dans une vue du concepteur XSD. Si la vue actuelle est la [vue de départ](../xml-tools/start-view.md), faire glisser un nœud à la vue s’ouvre le [vue du graphique](../xml-tools/graph-view.md). Si la vue actuelle est la [affichage du modèle de contenu](../xml-tools/content-model-view.md) ou de la vue du graphique, la vue ne change pas lorsque vous supprimez un nœud sur celle-ci.  
   
  Suppression des fichiers sur la vue ajoutera tous les nœuds globaux dans le fichier pour le [espace de travail du concepteur XSD](../xml-tools/xml-schema-designer-workspace.md). Le dépôt d’espaces de noms sur la vue ajoute tous les nœuds globaux dans l’espace de noms à l’espace de travail. L'espace de travail est partagé entre toutes les vues.  
   
@@ -97,11 +92,4 @@ L'Explorateur de schémas XML est intégré à Microsoft Visual Studio et l'Édi
 -   [Intégration de littéraux XML avec l’Explorateur de schémas XML](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour ajouter des nœuds à l’espace de travail à partir de l’Explorateur de schémas XML](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)
-
-
-
-
-
-
-
+ [Guide pratique pour Ajouter des nœuds à l’espace de travail à partir de l’Explorateur de schémas XML](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)

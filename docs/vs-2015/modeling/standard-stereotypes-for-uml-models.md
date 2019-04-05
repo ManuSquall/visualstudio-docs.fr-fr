@@ -1,12 +1,9 @@
 ---
 title: Stéréotypes standard pour les modèles UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, stereotypes
 - UML diagrams, stereotypes
@@ -14,13 +11,13 @@ ms.assetid: 8a8c2321-1cae-4ba8-bb9e-23495c3404d8
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1fcc876a847429c0de9600a5a727b19334819119
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3ebf931773577add65a7479c7dcd90da9c58c556
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763240"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949291"
 ---
 # <a name="standard-stereotypes-for-uml-models"></a>Stéréotypes standard pour les modèles UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +79,7 @@ Vous pouvez ajouter des stéréotypes à des éléments de modèle UML pour four
 |Stereotype|S'applique à|Signification|  
 |----------------|----------------|-------------|  
 |auxiliary|Classe|Classe qui prend en charge une autre classe, en général en implémentant une logique supplémentaire. L'autre classe peut avoir le stéréotype « focus ».|  
-|call|Dépendance|La classe cliente appelle les opérations du fournisseur.|  
+|appel|Dépendance|La classe cliente appelle les opérations du fournisseur.|  
 |create|Dépendance|La classe cliente crée des instances du fournisseur.|  
 |create|Message|L'expéditeur crée le destinataire.|  
 |create|Opération|Cette opération est un constructeur.|  
@@ -91,16 +88,16 @@ Vous pouvez ajouter des stéréotypes à des éléments de modèle UML pour four
 |document|Artefact|« file » qui est pas une source ou un fichier exécutable.|  
 |entity|Composant|Le composant représente un concept métier.|  
 |executable|Artefact|« file » exécutable.|  
-|file|Artefact|Fichier physique.|  
+|fichier|Artefact|Fichier physique.|  
 |focus|Classe|Classe définissant la logique d'entreprise, qui est prise en charge par plusieurs classes « auxiliary ».|  
 |framework|Package|Ce package définit un modèle de design réutilisable.|  
 |implement|Composant|Implémentation d'une « specification ».|  
 |implementationClass|Classe|La classe décrit une implémentation et chaque instance d'exécution a une classe d'implémentation fixe. Contraste avec « type ».|  
 |instantiate|Dépendance|Le client crée des instances du fournisseur.|  
-|library|Artefact|« file » de bibliothèque.|  
+|bibliothèque|Artefact|« file » de bibliothèque.|  
 |metaclass|Classe|Les instances de cette classe sont également des classes.|  
 |modelLibrary|Package|Contient des éléments de modèle censés être réutilisés en important des packages. Défini en général dans le cadre d'un profil et importé automatiquement par l'application du profil.|  
-|process|Composant|Composant basé sur une transaction, ou qui transporte un thread.|  
+|processus|Composant|Composant basé sur une transaction, ou qui transporte un thread.|  
 |realization|Classe, Interface, Composant|Décrit une implémentation.|  
 |refine|Dépendance|La classe, le composant ou le package client fournit plus d'informations sur la spécification ou la conception que le fournisseur.|  
 |responsibility|Dépendance|Le commentaire à l'extrémité fournisseur de la dépendance définit les responsabilités du composant ou de la classe cliente.|  
@@ -108,7 +105,7 @@ Vous pouvez ajouter des stéréotypes à des éléments de modèle UML pour four
 |send|Dépendance|L'opération source envoie le signal cible.|  
 |service|Composant|Composant sans état.|  
 |source|Artefact|« file » compilable.|  
-|specification|Classe, Interface, Composant|Définit le comportement d'un composant ou d'un objet sans définir son fonctionnement en interne.|  
+|spécification|Classe, Interface, Composant|Définit le comportement d'un composant ou d'un objet sans définir son fonctionnement en interne.|  
 |subsystem|Composant|Partie d'un grand système. Un sous-système sur un diagramme de cas d'usage est un composant avec le stéréotype subsystem.|  
 |trace|Dépendance|L'élément client fait partie de la conception qui réalise le fournisseur. Les deux extrémités de cette dépendance sont généralement dans des modèles différents. L'un de ces modèles est une réalisation de l'autre.|  
 |type|Classe|Spécifie le comportement d'un objet sans déclarer comment il est implémenté. Un objet est un membre d'un type s'il est conforme à la spécification.|  
@@ -132,7 +129,7 @@ Vous pouvez ajouter des stéréotypes à des éléments de modèle UML pour four
   
  Les stéréotypes disponibles, les éléments auxquels ils s'appliquent et les propriétés supplémentaires qu'ils rendent disponibles sont résumées dans le tableau suivant.  
   
-|Stéréotype|S'applique à|Properties|  
+|Stereotype|S'applique à|Properties|  
 |----------------|----------------|----------------|  
 |**Classe c#**|Classe UML<br /><br /> Composant|**Attributs CLR**<br /><br /> **Est partielle**<br /><br /> **Est scellé**<br /><br /> **Est statique**<br /><br /> **N’est pas sûre**<br /><br /> **Visibilité du package**|  
 |**Struct c#**|Classe UML<br /><br /> Composant|**Attributs CLR**<br /><br /> **Est partielle**<br /><br /> **N’est pas sûre**<br /><br /> **Visibilité du package**|  
@@ -145,6 +142,3 @@ Vous pouvez ajouter des stéréotypes à des éléments de modèle UML pour four
  [Ajouter des stéréotypes à des éléments de modèle UML](../modeling/add-stereotypes-to-uml-model-elements.md)   
  [Personnaliser votre modèle avec des profils et stéréotypes](../modeling/customize-your-model-with-profiles-and-stereotypes.md)   
  [Définir un profil pour étendre UML](../modeling/define-a-profile-to-extend-uml.md)
-
-
-

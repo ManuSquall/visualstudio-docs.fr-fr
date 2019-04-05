@@ -1,26 +1,21 @@
 ---
 title: Les commandes qui doivent être exécutées après l’Installation | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - post-install commands
 ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 90ce272270ffd511ee3b0efe8a711730ccdb92b5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8448b00085ab7e7a151c935eee4d8a8b1423bd1b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724193"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952932"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Commandes à exécuter après l’installation
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ Si vous déployez votre extension via un fichier .msi, vous devez exécuter `dev
   
 ### <a name="reglocator-table-rows-to-locate-devenvexe-from-different-versions-of-visual-studio"></a>Lignes de la table RegLocator pour localiser devenv.exe à partir de différentes versions de Visual Studio  
   
-|Signature_|Racine|Touche|Name|Type|  
+|Signature_|Racine|Touche|Nom|Type|  
 |-----------------|----------|---------|----------|----------|  
 |RL_DevenvExe_2002|2|SOFTWARE\Microsoft\VisualStudio\7.0\Setup\VS|EnvironmentPath|2|  
 |RL_DevenvExe_2003|2|SOFTWARE\Microsoft\VisualStudio\7.1\Setup\VS|EnvironmentPath|2|  
@@ -66,10 +61,10 @@ Si vous déployez votre extension via un fichier .msi, vous devez exécuter `dev
   
 |Action|Type|Source|une cible|  
 |------------|----------|------------|------------|  
-|CA_RunDevenv2002|1586|DEVENV_EXE_2002|/Setup|  
-|CA_RunDevenv2003|1586|DEVENV_EXE_2003|/Setup|  
-|CA_RunDevenv2005|1586|DEVENV_EXE_2005|/Setup|  
-|CA_RunDevenv2008|1586|DEVENV_EXE_2008|/Setup|  
+|CA_RunDevenv2002|1586|DEVENV_EXE_2002|/setup|  
+|CA_RunDevenv2003|1586|DEVENV_EXE_2003|/setup|  
+|CA_RunDevenv2005|1586|DEVENV_EXE_2005|/setup|  
+|CA_RunDevenv2008|1586|DEVENV_EXE_2008|/setup|  
   
  Actions personnalisées doivent être créées dans la table InstallExecuteSequence à planifier leur exécution pendant l’installation. Utilisez la propriété correspondante dans chaque ligne de la colonne de la Condition pour éviter que l’action personnalisée en cours d’exécution si cette version de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] n’est pas installé sur le système.  
   
@@ -89,4 +84,3 @@ Si vous déployez votre extension via un fichier .msi, vous devez exécuter `dev
   
 ## <a name="see-also"></a>Voir aussi  
  [Installation de VSPackages avec Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
-

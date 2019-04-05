@@ -1,33 +1,28 @@
 ---
 title: Vues uniques et multiples onglet | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - single and multi-tab views
 ms.assetid: e3611704-349f-4323-b03c-f2b0a445d781
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8231581761199be4df9c368494fb27bdc7926c51
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 804a37a43ffe25335dc522542f5035b0882e63ee
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748991"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58947071"
 ---
 # <a name="single-and-multi-tab-views"></a>Vues à onglet unique et onglets multiples
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Un éditeur peut créer différents types de vues. Par exemple, une fenêtre d’éditeur de code, un autre est un concepteur de formulaires.  
   
- Une vue dotée de plusieurs onglets est une vue qui comporte plusieurs onglets. Par exemple, l’éditeur HTML comporte deux onglets en bas : **conception** et **Source**, chacun une vue logique. La vue de conception affiche une page web affichée, tandis que l’autre affiche le code HTML qui comprend la page web.  
+ Une vue dotée de plusieurs onglets est une vue qui comporte plusieurs onglets. Par exemple, l’éditeur HTML comporte deux onglets en bas : **Conception** et **Source**, chacun une vue logique. La vue de conception affiche une page web affichée, tandis que l’autre affiche le code HTML qui comprend la page web.  
   
 ## <a name="accessing-physical-views"></a>Accès aux vues physiques  
  Les affichages physiques hébergent des objets de vue de document, représentant chacun une vue de données dans la mémoire tampon, tels que le code ou un formulaire. En conséquence, chaque objet de vue de document a une vue physique (identifié par un processus connu sous forme de chaîne vue physique) et généralement une seule vue logique.  
@@ -121,6 +116,5 @@ Error:
   
 ## <a name="see-also"></a>Voir aussi  
  [Prise en charge plusieurs vues de Document](../extensibility/supporting-multiple-document-views.md)   
- [Comment : joindre des vues de données de document](../extensibility/how-to-attach-views-to-document-data.md)   
+ [Guide pratique pour Joindre des vues de données de document](../extensibility/how-to-attach-views-to-document-data.md)   
  [Création d’éditeurs et de concepteurs personnalisés](../extensibility/creating-custom-editors-and-designers.md)
-

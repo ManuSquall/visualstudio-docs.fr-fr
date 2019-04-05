@@ -1,27 +1,24 @@
 ---
 title: Lier des mises à jour du modèle UML à l’aide de transactions | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API, transactions
 ms.assetid: a1df6c38-a3d1-4a3f-82bc-c8f363ab916e
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fb8bb5dfd5238871324b786f120d618d70f14b43
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 640217b9ee9a8cb51ed11931d0d66b2c98e0a165
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51800404"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953955"
 ---
-# <a name="link-uml-model-updates-by-using-transactions"></a>Lier des mises à jour de modèles UML à l’aide de transactions
+# <a name="link-uml-model-updates-by-using-transactions"></a>Lier des mises à jour de modèles UML à l'aide de transactions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Lorsque vous définissez une extension des concepteurs UML dans Visual Studio, vous pouvez regrouper plusieurs modifications dans une transaction unique appelée un *contexte d’annulation lié*. Pour connaître les versions de Visual Studio qui prennent en charge les modèles UML, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -35,7 +32,7 @@ Lorsque vous définissez une extension des concepteurs UML dans Visual Studio, v
 ## <a name="to-group-changes-into-a-single-transaction"></a>Pour regrouper plusieurs modifications dans une même transaction  
  Assurez-vous que vos références de projet incluent cet assembly .NET :  
   
- **Microsoft.VisualStudio.Modeling.Sdk. [version] .dll**  
+ **Microsoft.VisualStudio.Modeling.Sdk.[version].dll**  
   
  Dans votre classe, déclarez une propriété importée de type <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ILinkedUndoContext> :  
   
@@ -115,6 +112,3 @@ Lorsque vous définissez une extension des concepteurs UML dans Visual Studio, v
  [Programmation avec l’API UML](../modeling/programming-with-the-uml-api.md)   
  [Définir une commande de menu sur un diagramme de modélisation](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [Étendre des diagrammes et des modèles UML](../modeling/extend-uml-models-and-diagrams.md)
-
-
-

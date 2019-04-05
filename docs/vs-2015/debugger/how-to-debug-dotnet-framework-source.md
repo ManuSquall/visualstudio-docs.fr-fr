@@ -1,14 +1,9 @@
 ---
-title: 'Comment : déboguer une Source de .NET Framework | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Déboguer une Source de .NET Framework | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,15 +15,15 @@ ms.assetid: fc12e472-ac6a-4e77-8e22-a769e13a03b8
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ce5e20524040d131a655da1567606ffbb0934a80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cbc6ed2ff77a971962fa73b15d5b7aafb9ef02b8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725433"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950541"
 ---
-# <a name="how-to-debug-net-framework-source"></a>Comment : déboguer une source .NET Framework
+# <a name="how-to-debug-net-framework-source"></a>Procédure : Déboguer une Source de .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La version la plus récente de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fournit de nouvelles fonctionnalités pour [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] le débogage. Pour déboguer [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] source, vous devez avoir accès aux symboles de débogage pour le code. Vous devez également activer le pas à pas détaillé dans [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] source.  
@@ -80,6 +75,3 @@ La version la plus récente de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] four
 ## <a name="see-also"></a>Voir aussi  
  [Débogage du code managé](../debugger/debugging-managed-code.md)   
  [Spécifier les fichiers de symbole (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
-
-
-

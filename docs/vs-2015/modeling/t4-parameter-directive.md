@@ -1,23 +1,20 @@
 ---
 title: T4 Directive du paramètre | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 1d590387-1d9d-40a5-a72c-65fae7a8bdf3
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 87e493667af1626cd97e575ddb614e7fd12c21d3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c7971dc3402a344a5318fd8415404e7a45ae8485
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294552"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953958"
 ---
 # <a name="t4-parameter-directive"></a>Directive du paramètre T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -110,6 +107,3 @@ string resultText = t.TransformText();
   
 > [!IMPORTANT]
 >  Le `parameter` directive ne récupère pas les valeurs définies dans le `–a` paramètre de la `TextTransform.exe` utilitaire. Pour obtenir ces valeurs, définissez `hostSpecific="true"` dans le `template` directive et l’utilisation `this.Host.ResolveParameterValue("","","argName")`.
-
-
-

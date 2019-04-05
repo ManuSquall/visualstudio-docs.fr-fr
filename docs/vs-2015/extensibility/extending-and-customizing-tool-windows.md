@@ -1,27 +1,22 @@
 ---
 title: Extension et personnalisation de Windows de l’outil | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces, essentials
 - tool windows, standard
 ms.assetid: 46b2892e-7b2b-4b3f-83a7-b884f1e114ee
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7aac774f64d79d2d28cc690550abb7a84b7d3674
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4b232fa1275bce453e3b32cea6a5ff37fdd501c6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778746"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953337"
 ---
 # <a name="extending-and-customizing-tool-windows"></a>Extension et personnalisation des fenêtres d’outils
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,9 +38,9 @@ Visual Studio fournit plusieurs types différents de windows, par exemple les fe
   
  Les volets de la fenêtre Outil peuvent héberger des contrôles utilisateur WPF et prendre en charge des barres d’outils. Vous pouvez substituer la propriété <xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A> pour retourner le handle du contrôle hébergé.  
   
- Vous pouvez ajouter de nombreuses fonctionnalités différentes aux fenêtres Outil. Par exemple, vous pouvez ajouter une barre d’outils : [Ajout d’une barre d’outils à une fenêtre outil](../extensibility/adding-a-toolbar-to-a-tool-window.md) ou un menu contextuel : [Ajout d’un Menu contextuel dans une fenêtre outil](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md). Vous pouvez ajouter un contrôle de recherche qui vous permet de rechercher des éléments à l’intérieur de votre fenêtre outil : [Ajout d’une recherche à une fenêtre outil](../extensibility/adding-search-to-a-tool-window.md).  
+ Vous pouvez ajouter de nombreuses fonctionnalités différentes aux fenêtres Outil. Par exemple, vous pouvez ajouter une barre d’outils : [Ajout d’une barre d’outils à une fenêtre outil](../extensibility/adding-a-toolbar-to-a-tool-window.md) ou un menu contextuel : [Ajout d’un Menu contextuel dans une fenêtre outil](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md). Vous pouvez ajouter un contrôle de recherche qui vous permet de rechercher des éléments à l’intérieur de votre fenêtre outil : [Ajout de la recherche à une fenêtre outil](../extensibility/adding-search-to-a-tool-window.md).  
   
- Vous pouvez vous abonner aux événements de fenêtre d’outil : [abonnement à un événement](../extensibility/subscribing-to-an-event.md).  
+ Vous pouvez vous abonner aux événements de fenêtre d’outil : [Abonnement à un événement](../extensibility/subscribing-to-an-event.md).  
   
 ## <a name="extending-existing-tool-windows"></a>Extension Windows outil existant  
  Vous pouvez ajouter des informations relatives à votre fenêtre outil vers un nouveau **Options** page et un nouveau paramètre sur le **propriétés** page, écrire dans le **liste des tâches** et **sortie**  windows. Pour plus d’informations, consultez [étendre les propriétés, liste des tâches, sortie et Options Windows](../extensibility/extending-the-properties-task-list-output-and-options-windows.md) et [étendre les propriétés, liste des tâches, sortie et Options Windows](../extensibility/extending-the-properties-task-list-output-and-options-windows.md).  
@@ -55,4 +50,3 @@ Visual Studio fournit plusieurs types différents de windows, par exemple les fe
   
 ## <a name="see-also"></a>Voir aussi  
  [Création d’une extension avec une fenêtre d’outil](../extensibility/creating-an-extension-with-a-tool-window.md)
-

@@ -1,26 +1,21 @@
 ---
 title: Extension du Shell isolé | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, isolated mode
 ms.assetid: 9a641d8f-211e-4486-a1b1-4a89fafe7ee8
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: dc700e0a1b8753a26067eff90df9ff58765de8d1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: af64fa948754350eb1beb0f70dbac33981b595f8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792019"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952357"
 ---
 # <a name="extending-the-isolated-shell"></a>Extension du Shell isolé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +23,7 @@ ms.locfileid: "51792019"
 Vous pouvez étendre le shell isolé Visual Studio en ajoutant un VSPackage, une partie du composant Managed Extensibility Framework (MEF) ou un projet VSIX générique à votre application de shell isolé.  
   
 > [!NOTE]
->  Les étapes suivantes présuppose que vous avez créé une application shell isolée de base en utilisant le modèle de projet Visual Studio Shell isolé. Pour plus d’informations sur ce modèle de projet, consultez [procédure pas à pas : création d’une Application Shell isolée de base](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+>  Les étapes suivantes présuppose que vous avez créé une application shell isolée de base en utilisant le modèle de projet Visual Studio Shell isolé. Pour plus d’informations sur ce modèle de projet, consultez [procédure pas à pas : Création d’un base d’Application Shell isolée](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Emplacements du modèle de projet de package Visual Studio  
  Le modèle de projet de package Visual Studio se trouve à trois emplacements différents dans la boîte de dialogue **Nouveau projet** :  
@@ -126,5 +121,4 @@ Vous pouvez étendre le shell isolé Visual Studio en ajoutant un VSPackage, une
 8.  Générez et exécutez la solution.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : Création d’une application Shell isolée de base](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
-
+ [Procédure pas à pas : Création d’une Application Shell isolée de base](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

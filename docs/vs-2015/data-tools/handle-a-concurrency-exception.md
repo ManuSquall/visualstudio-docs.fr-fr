@@ -1,12 +1,9 @@
 ---
 title: Gérer une exception d’accès concurrentiel | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +20,13 @@ ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a3141f2480aabc2ce6aa7b10f99991fc5cba0d05
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: ba0695656ce2377456f4150be0fe4f5231f7cb76
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220415"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939251"
 ---
 # <a name="handle-a-concurrency-exception"></a>Gérer une exception d’accès concurrentiel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +44,7 @@ Exceptions d’accès concurrentiel (<xref:System.Data.DBConcurrencyException>) 
   
 4.  Remplir un dataset avec des données à partir de la `Customers` table dans la base de données Northwind.  
   
-5.  Utilisez le [Visual Database Tools](http://msdn.microsoft.com/en-us/6b145922-2f00-47db-befc-bf351b4809a1) dans Visual Studio pour accéder directement à la `Customers` de table de données et modifier un enregistrement.  
+5.  Utilisez le [Visual Database Tools](http://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) dans Visual Studio pour accéder directement à la `Customers` de table de données et modifier un enregistrement.  
   
 6.  Modifier le même enregistrement à une valeur différente, mettre à jour le jeu de données et essaient d’écrire les modifications dans la base de données, ce qui entraîne le déclenchement d’une erreur d’accès concurrentiel.  
   
@@ -56,10 +53,10 @@ Exceptions d’accès concurrentiel (<xref:System.Data.DBConcurrencyException>) 
 ## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous avez besoin des éléments suivants :  
   
--   Accès à la base de données Northwind avec l’autorisation d’effectuer des mises à jour. Pour plus d’informations, consultez [Comment : installer Sample Databases](../data-tools/how-to-install-sample-databases.md).  
+-   Accès à la base de données Northwind avec l’autorisation d’effectuer des mises à jour.
   
 > [!NOTE]
->  Les boîtes de dialogue et commandes de menu affichées peuvent différer de celles décrites dans l’aide selon vos paramètres actifs ou de l’édition que vous utilisez. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Les boîtes de dialogue et commandes de menu affichées peuvent différer de celles décrites dans l’aide selon vos paramètres actifs ou de l’édition que vous utilisez. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Créer un nouveau projet  
  Pour commencer votre procédure pas à pas en créant une nouvelle application Windows.  
@@ -83,7 +80,7 @@ Exceptions d’accès concurrentiel (<xref:System.Data.DBConcurrencyException>) 
   
 1.  Sur le **données** menu, choisissez **ajouter nouvelle source de données**.  
   
-     Le [Assistant de Configuration de Source de données](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) s’ouvre.  
+     L’Assistant [Configuration de source de données](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) s’ouvre.  
   
 2.  Sur le **choisir un Type de Source de données**s’affiche, sélectionnez **base de données**.  
   
@@ -211,7 +208,7 @@ Exceptions d’accès concurrentiel (<xref:System.Data.DBConcurrencyException>) 
   
 8.  Dans le premier enregistrement sur le formulaire (`ALFKI`), modifiez`ContactName` à `Maria Anders1`.  
   
-9. Sélectionnez le **enregistrer** bouton.  
+9. Sélectionnez le bouton **Enregistrer**.  
   
      L’erreur d’accès concurrentiel est levée, et la boîte de message s’affiche.  
   

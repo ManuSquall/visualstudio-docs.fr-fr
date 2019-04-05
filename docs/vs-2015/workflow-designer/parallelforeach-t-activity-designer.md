@@ -1,11 +1,8 @@
 ---
 title: ParallelForEach&lt;T&gt; Concepteur d’activités | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.ParallelForEach`1.UI
@@ -13,13 +10,13 @@ ms.assetid: e93a4843-aef2-4d3e-9a0a-a2d3d1411aa7
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: eb97ba6abb40c34d03e612c346e2c721719024de
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 825906f3de1b2d40d96dc19ed45d2a368d889994
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216396"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953974"
 ---
 # <a name="parallelforeachlttgt-activity-designer"></a>ParallelForEach&lt;T&gt; Concepteur d’activités
 L’activité <xref:System.Activities.Statements.ParallelForEach%601> énumère les éléments d’une collection et, pour chacun d’eux, exécute en parallèle une instruction incorporée, qui se trouve de façon asynchrone sur le même thread. Utilisez cette activité de contrôle de flux au lieu de l'activité <xref:System.Activities.Statements.Sequence> si ses activités enfants sont censées devenir inactives.  
@@ -53,5 +50,5 @@ L’activité <xref:System.Activities.Statements.ParallelForEach%601> énumère 
   
 ## <a name="see-also"></a>Voir aussi  
  [Séquence](../workflow-designer/sequence-activity-designer.md)   
- [Parallèle](../workflow-designer/parallel-activity-designer.md)   
+ [Parallel](../workflow-designer/parallel-activity-designer.md)   
  [Flux de contrôle](../workflow-designer/control-flow-activity-designers.md)

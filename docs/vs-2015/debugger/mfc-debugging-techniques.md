@@ -1,14 +1,9 @@
 ---
 title: Techniques de débogage de MFC | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - AfxEnableMemoryTracking
 - CMemoryState
@@ -31,13 +26,13 @@ ms.assetid: b154fc31-5e90-4734-8cbd-58dd9fe1f750
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f1e7a1ea69da1cafa38ae2a7bfa4551d3d40a8d4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 4ed7d3a9db7a6bc486ad70236d9e39834c851dd2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745123"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001744"
 ---
 # <a name="mfc-debugging-techniques"></a>Techniques de débogage MFC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -107,7 +102,7 @@ TRACE( "x = %d and y = %d\n", x, y );
 TRACE( "x = %d and y = %x and z = %f\n", x, y, z );  
 ```  
   
- La macro TRACE gère correctement char * et wchar_t\* paramètres. Les exemples suivants illustrent l'utilisation de la macro TRACE avec différents types de paramètres de chaînes.  
+ La macro TRACE gère correctement les paramètres char* et wchar_t\*. Les exemples suivants illustrent l'utilisation de la macro TRACE avec différents types de paramètres de chaînes.  
   
 ```  
 TRACE( "This is a test of the TRACE macro that uses an ANSI string: %s %d\n", "The number is:", 2);  
@@ -167,7 +162,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 ###  <a name="BKMK_Taking_memory_snapshots"></a> Captures instantanées de la mémoire  
   
-1. Créez un objet [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) et appelez la fonction membre [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) . Le premier instantané de la mémoire est alors créé.  
+1. Créez un objet [CMemoryState](http://msdn.microsoft.com/8fade6e9-c6fb-4b2a-8565-184a912d26d2) et appelez la fonction membre [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) . Le premier instantané de la mémoire est alors créé.  
   
 2. Une fois que le programme a effectué ses opérations d'allocation et de libération de mémoire, créez un autre objet `CMemoryState` et appelez `Checkpoint` pour cet objet. Vous obtenez ainsi un deuxième instantané de l'utilisation de la mémoire.  
   
@@ -241,7 +236,7 @@ Total allocations: 67 bytes
  Dans un programme MFC, vous pouvez utiliser [CMemoryState::DumpAllObjectsSince](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) pour faire un dump une description de tous les objets sur le tas qui n’ont pas été libérés. `DumpAllObjectsSince` permet de faire un dump de tous les objets alloués depuis le dernier [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a). Si aucun appel à `Checkpoint` n'a eu lieu, `DumpAllObjectsSince` fait un dump de tous les objets et non-objets actuellement en mémoire.  
   
 > [!NOTE]
->  Avant de pouvoir utiliser le dump d'objets MFC, vous devez [activer le traçage de diagnostic](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_Memory_Diagnostics).  
+>  Avant de pouvoir utiliser le dump d'objets MFC, vous devez [activer le traçage de diagnostic](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_memory_diagnostics).  
   
 > [!NOTE]
 >  MFC fait automatiquement un dump de tous les objets qui ont été perdus lorsque votre programme s'arrête ; il est donc inutile de créer du code pour faire un dump des objets en ce point.  
@@ -441,11 +436,11 @@ pMyPerson->Dump( afxDump );
   
 3. Vous commencerez par créer une nouvelle configuration de projet.  
   
-   1.  Dans le  **\<projet > Pages de propriétés** boîte de dialogue, cliquez sur le **Configuration Manager** bouton.  
+   1.  Dans la boîte de dialogue **Pages de propriétés de \<Projet>**, cliquez sur le bouton **Gestionnaire de configurations**.  
   
-   2.  Dans la [boîte de dialogue Gestionnaire de configurations](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b), localisez votre projet à l'intérieur de la grille. Dans le **Configuration** colonne, sélectionnez  **\<nouveau... >**.  
+   2.  Dans la [boîte de dialogue Gestionnaire de configurations](http://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b), localisez votre projet à l'intérieur de la grille. Dans la colonne **Configuration**, sélectionnez **\<Nouveau...>**.  
   
-   3.  Dans la [boîte de dialogue Nouvelle configuration de projet](http://msdn.microsoft.com/en-us/cca616dc-05a6-4fe3-bdc1-40c72a66f2be), tapez un nom pour votre nouvelle configuration (par exemple, « Débogage partiel ») dans la zone **Nom de la configuration de projet** .  
+   3.  Dans la [boîte de dialogue Nouvelle configuration de projet](http://msdn.microsoft.com/cca616dc-05a6-4fe3-bdc1-40c72a66f2be), tapez un nom pour votre nouvelle configuration (par exemple, « Débogage partiel ») dans la zone **Nom de la configuration de projet** .  
   
    4.  Dans la liste **Copier les paramètres à partir de** , cliquez sur **Release**.  
   
@@ -483,7 +478,7 @@ pMyPerson->Dump( afxDump );
   
    6.  Cliquez sur les paramètres de **Format des informations de débogage** et sélectionnez l'option voulue (généralement **/ZI**) pour les informations de débogage.  
   
-   7.  Si vous utilisez une application générée par un Assistant Application ou que vous possédez des en-têtes précompilés, vous devez désactiver ou recompiler ces derniers avant de compiler les autres modules. Sinon, vous recevrez l'avertissement C4650 et le message d'erreur C2855. Vous pouvez désactiver les en-têtes précompilés en modifiant le **Création/utilisation des en-têtes précompilés** définition dans le  **\<projet > Propriétés** boîte de dialogue (**propriétés de Configuration**  dossier, **C/C++** sous-dossier, **en-têtes précompilés** catégorie).  
+   7.  Si vous utilisez une application générée par un Assistant Application ou que vous possédez des en-têtes précompilés, vous devez désactiver ou recompiler ces derniers avant de compiler les autres modules. Sinon, vous recevrez l'avertissement C4650 et le message d'erreur C2855. Vous pouvez désactiver les en-têtes précompilés en modifiant le paramètre **Création/Utilisation d’un en-tête précompilé** dans la boîte de dialogue **Propriétés de \<Projet>** (dossier **Propriétés de configuration**, sous-dossier **C/C++**, catégorie **En-têtes précompilés**).  
   
 7. Dans le menu **Générer** , cliquez sur **Générer** pour régénérer les fichiers projet  qui sont obsolètes.  
   
@@ -493,6 +488,3 @@ pMyPerson->Dump( afxDump );
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage Visual C++](../debugger/debugging-native-code.md)
-
-
-

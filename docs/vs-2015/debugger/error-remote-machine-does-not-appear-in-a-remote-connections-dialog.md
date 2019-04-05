@@ -1,14 +1,9 @@
 ---
 title: 'Erreur : Ordinateur distant n’apparaît pas dans une boîte de dialogue connexions à distance | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - FSharp
 - VB
@@ -18,20 +13,20 @@ ms.assetid: 5fd98a5b-2cf3-4438-8b0f-6f1a742a62ce
 caps.latest.revision: 5
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 929072304e462e08a45a29c84ab9ce1e20043c49
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a86b7b639ab74d4b8df802b3b9086dcac19369d4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739620"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953407"
 ---
-# <a name="error-remote-machine-does-not-appear-in-a-remote-connections-dialog"></a>Erreur : l’ordinateur distant n’apparaît pas dans une boîte de dialogue Connexions à distance
+# <a name="error-remote-machine-does-not-appear-in-a-remote-connections-dialog"></a>Erreur : L’ordinateur distant n’apparaît pas dans une boîte de dialogue Connexions à distance
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Si l’ordinateur distant n’apparaît pas dans la boîte de dialogue Connexions à distance, vérifiez les causes courantes suivantes.  
   
- Si vous utilisez le mode de compatibilité managé, consultez la documentation de Visual Studio 2010 : [Dépannage du débogage distant - Visual Studio 2010](https://msdn.microsoft.com/library/2ys11ead\(v=vs.100\).aspx) .  
+ Si vous utilisez le mode de compatibilité managé, consultez la documentation de Visual Studio 2010 : [Résolution des problèmes du débogage distant - Visual Studio 2010](https://msdn.microsoft.com/library/2ys11ead\(v=vs.100\).aspx) .  
   
 ### <a name="common-causes-for-this-error"></a>Causes courantes de cette erreur  
   
@@ -45,6 +40,3 @@ Si l’ordinateur distant n’apparaît pas dans la boîte de dialogue Connexion
   
 ## <a name="see-also"></a>Voir aussi  
  [Configurer les outils de contrôle à distance sur le périphérique](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)
-
-
-

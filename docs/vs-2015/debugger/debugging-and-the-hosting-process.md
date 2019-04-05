@@ -1,14 +1,9 @@
 ---
 title: Débogage et processus d’hébergement | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,21 +16,21 @@ ms.assetid: d0f0b9a6-2a6e-463d-b6ea-9518ee727933
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8932f3edd1b51ad61293bbce716aa76944e23274
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 10f3968367b188203671fa6bfff48bc482efe4f7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762355"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950073"
 ---
 # <a name="debugging-and-the-hosting-process"></a>Débogage et processus d'hébergement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le processus d'hébergement Visual Studio améliore la performance de débogueur et active de nouvelles fonctions de débogage, telles que le débogage de confiance partielle et l'évaluation d'une expression au moment du design. Vous pouvez désactiver le processus d’hébergement, le cas échéant. Pour plus d’informations, consultez [How to: Disable the Hosting Process](../ide/how-to-disable-the-hosting-process.md). Les sections suivantes décrivent certaines des différences entre le débogage avec et sans le processus d’hébergement.  
+Le processus d'hébergement Visual Studio améliore la performance de débogueur et active de nouvelles fonctions de débogage, telles que le débogage de confiance partielle et l'évaluation d'une expression au moment du design. Vous pouvez désactiver le processus d’hébergement, le cas échéant. Pour plus d'informations, voir [Procédure : Désactiver le processus d’hébergement](../ide/how-to-disable-the-hosting-process.md). Les sections suivantes décrivent certaines des différences entre le débogage avec et sans le processus d’hébergement.  
   
 ## <a name="partial-trust-debugging-and-click-once-security"></a>Débogage de confiance partielle et sécurité ClickOnce  
- Le débogage de confiance partielle requiert le processus d'hébergement. Si vous désactivez le processus d’hébergement, le débogage de confiance partielle ne fonctionnera pas, même si la sécurité de confiance partielle est activée dans la page **Sécurité** de **Propriétés du projet**. Pour plus d’informations, consultez [How to: Disable the Hosting Process](../ide/how-to-disable-the-hosting-process.md) et [How to: Debug a Partial Trust Application](../debugger/how-to-debug-a-partial-trust-application.md).  
+ Le débogage de confiance partielle requiert le processus d'hébergement. Si vous désactivez le processus d’hébergement, le débogage de confiance partielle ne fonctionnera pas, même si la sécurité de confiance partielle est activée dans la page **Sécurité** de **Propriétés du projet**. Pour plus d'informations, voir [Procédure : Désactiver le processus d’hébergement](../ide/how-to-disable-the-hosting-process.md) et [Comment : Déboguer une application de confiance partielle](../debugger/how-to-debug-a-partial-trust-application.md).  
   
 ## <a name="design-time-expression-evaluation"></a>Évaluation de l’expression au moment du design  
  L'expression au moment du design utilise toujours le processus d'hébergement. La désactivation du processus d'hébergement dans **Propriétés du projet** désactive l'évaluation d'une expression au moment du design pour les projets Bibliothèque de classes. Pour d'autres types de projet, l'évaluation d'une expression au moment du design n'est pas désactivée. À la place, Visual Studio démarre le fichier exécutable réel et l'utilise pour l'évaluation au moment du design sans le processus d'hébergement. Cette différence peut produire des résultats différents.  
@@ -48,8 +43,5 @@ Le processus d'hébergement Visual Studio améliore la performance de débogueur
   
 ## <a name="see-also"></a>Voir aussi  
  [Processus d’hébergement (vshost.exe)](../ide/hosting-process-vshost-exe.md)   
- [Comment : déboguer une Application de confiance partielle](../debugger/how-to-debug-a-partial-trust-application.md)   
+ [Guide pratique pour Déboguer une Application de confiance partielle](../debugger/how-to-debug-a-partial-trust-application.md)   
  [Guide pratique pour désactiver le processus d’hébergement](../ide/how-to-disable-the-hosting-process.md)
-
-
-

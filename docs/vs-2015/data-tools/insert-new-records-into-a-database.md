@@ -1,12 +1,9 @@
 ---
 title: Insérer de nouveaux enregistrements dans une base de données | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,19 +19,19 @@ ms.assetid: ea118fff-69b1-4675-b79a-e33374377f04
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e9613d154cd0d9bb307fbde6d7255a8f1ecce000
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 13f87f5ffaa255fc2c1c0f53b527ecbbceb8e8ee
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891472"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951187"
 ---
 # <a name="insert-new-records-into-a-database"></a>Insérer de nouveaux enregistrements dans une base de données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-Pour insérer de nouveaux enregistrements dans une base de données, vous pouvez utiliser la `TableAdapter.Update` (méthode), ou l’une des méthodes DBDirect du TableAdapter (en particulier le `TableAdapter.Insert` méthode). Pour plus d'informations, consultez [TableAdapter Overview](../data-tools/tableadapter-overview.md).  
+Pour insérer de nouveaux enregistrements dans une base de données, vous pouvez utiliser la `TableAdapter.Update` (méthode), ou l’une des méthodes DBDirect du TableAdapter (en particulier le `TableAdapter.Insert` méthode).
   
  Si votre application n’utilise pas les TableAdapters, vous pouvez utiliser des objets de commande (par exemple, <xref:System.Data.SqlClient.SqlCommand>) pour insérer de nouveaux enregistrements dans votre base de données.  
   
@@ -42,7 +39,7 @@ Pour insérer de nouveaux enregistrements dans une base de données, vous pouvez
   
  Si votre application utilise des objets pour stocker des données, ou si vous souhaitez mieux contrôler la création de nouveaux enregistrements dans la base de données, utilisez le `TableAdapter.Insert` (méthode).  
   
- Si votre TableAdapter n’a pas un `Insert` (méthode), cela signifie que le TableAdapter est configuré pour utiliser des procédures stockées ou son `GenerateDBDirectMethods` propriété est définie sur `false`. Essayez de définir le TableAdapter `GenerateDBDirectMethods` propriété `true` depuis le [Concepteur de Dataset](../data-tools/creating-and-editing-typed-datasets.md), puis enregistrez le jeu de données. Cette opération va regénérer le TableAdapter. Si le TableAdapter n’est pas encore un `Insert` (méthode), puis la table ne fournit probablement pas suffisamment schéma d’informations pour faire la distinction entre des lignes individuelles (par exemple, il ne peut être aucun jeu de clé primaire sur la table).  
+ Si votre TableAdapter n’a pas un `Insert` (méthode), cela signifie que le TableAdapter est configuré pour utiliser des procédures stockées ou son `GenerateDBDirectMethods` propriété est définie sur `false`. Essayez de définir le TableAdapter `GenerateDBDirectMethods` propriété `true` à partir de dans le Concepteur de Dataset, puis enregistrez le jeu de données. Cette opération va regénérer le TableAdapter. Si le TableAdapter n’est pas encore un `Insert` (méthode), puis la table ne fournit probablement pas suffisamment schéma d’informations pour faire la distinction entre des lignes individuelles (par exemple, il ne peut être aucun jeu de clé primaire sur la table).  
   
 ## <a name="insert-new-records-by-using-tableadapters"></a>Insérer de nouveaux enregistrements à l’aide de TableAdapters  
  Les TableAdapters fournissent différentes façons d’insérer de nouveaux enregistrements dans une base de données, selon les besoins de votre application.  
@@ -51,7 +48,7 @@ Pour insérer de nouveaux enregistrements dans une base de données, vous pouvez
   
 #### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterupdate-method"></a>Pour insérer de nouveaux enregistrements dans une base de données à l’aide de la méthode TableAdapter.Update  
   
-1. Ajouter des enregistrements à souhaité <xref:System.Data.DataTable> en créant un nouveau <xref:System.Data.DataRow> et en l’ajoutant à la <xref:System.Data.DataTable.Rows%2A> collection. Pour plus d’informations, consultez [Comment : ajouter des lignes à un DataTable](http://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf).  
+1. Ajouter des enregistrements à souhaité <xref:System.Data.DataTable> en créant un nouveau <xref:System.Data.DataRow> et en l’ajoutant à la <xref:System.Data.DataTable.Rows%2A> collection. Pour plus d'informations, voir [Procédure : Ajouter des lignes à un DataTable](http://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf).  
   
 2. Une fois que les nouvelles lignes sont ajoutées à la <xref:System.Data.DataTable>, appelez le `TableAdapter.Update` (méthode). Vous pouvez contrôler la quantité de données pour mettre à jour en passant l’intégralité d’un <xref:System.Data.DataSet>, un <xref:System.Data.DataTable>, un tableau de <xref:System.Data.DataRow>s ou un seul <xref:System.Data.DataRow>.  
   
@@ -75,7 +72,7 @@ Pour insérer de nouveaux enregistrements dans une base de données, vous pouvez
      [!code-vb[VbRaddataSaving#15](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#15)]  
   
 ## <a name="insert-new-records-by-using-command-objects"></a>Insérer de nouveaux enregistrements à l’aide des objets de commande  
- L’exemple suivant insère de nouveaux enregistrements directement dans une base de données à l’aide des objets de commande. Pour plus d’informations sur l’utilisation des objets de commande pour exécuter des commandes et des procédures stockées, consultez [l’extraction des données dans votre Application](../data-tools/fetching-data-into-your-application.md).  
+ L’exemple suivant insère de nouveaux enregistrements directement dans une base de données à l’aide des objets de commande.
   
  La procédure suivante utilise le `Region` table dans la base de données Northwind comme exemple.  
   
@@ -91,4 +88,3 @@ Pour insérer de nouveaux enregistrements dans une base de données, vous pouvez
   
 ## <a name="see-also"></a>Voir aussi  
  [Enregistrer les données dans la base de données](../data-tools/save-data-back-to-the-database.md)
-

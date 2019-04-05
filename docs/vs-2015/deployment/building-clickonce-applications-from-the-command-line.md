@@ -1,14 +1,9 @@
 ---
 title: Création d’Applications ClickOnce à partir de la ligne de commande | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +16,13 @@ ms.assetid: d9bc6212-c584-4f72-88c9-9a4b998c555e
 caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: c9a9b2e248e4f10e9b5d3f045c67a9622edd2c2b
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 2625a8d4caa7dd53e9ce86395a98622f91d686b3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220015"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950488"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Génération d'applications ClickOnce à partir de la ligne de commande
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ Dans [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], vous pouv
   
  Le `/target:publish` commande indique à MSBuild d’appeler la cible de publication. La cible build dépend de la cible de publication. Cela signifie que l’opération de publication est un sur-ensemble de l’opération de génération. Par exemple, si vous avez apporté une modification à un de vos fichiers sources Visual Basic ou c#, l’assembly correspondant est automatiquement régénéré par l’opération de publication.  
   
- Pour plus d’informations sur la génération d’un intégral [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] déploiement à l’aide de l’outil de ligne de commande Mage.exe pour créer votre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifeste, consultez [procédure pas à pas : déploiement manuel d’une Application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ Pour plus d’informations sur la génération d’un intégral [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] déploiement à l’aide de l’outil de ligne de commande Mage.exe pour créer votre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifeste, consultez [procédure pas à pas : déploiement manuel d’une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 ## <a name="creating-and-building-a-basic-clickonce-application-using-msbuild"></a>Création et la création d’une Application ClickOnce de base à l’aide de MSBuild  
   
@@ -86,7 +81,7 @@ Dans [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], vous pouv
 ## <a name="publishing-properties"></a>Propriétés de publication  
  Lorsque vous publiez l’application dans les procédures ci-dessus, les propriétés suivantes sont insérées dans votre fichier projet par l’Assistant Publication. Ces propriétés influencent directement la façon dont le [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application est générée.  
   
- Dans CmdLineDemo.vbproj / CmdLineDemo.csproj :  
+ In CmdLineDemo.vbproj / CmdLineDemo.csproj:  
   
 ```  
 <AssemblyOriginatorKeyFile>WindowsApplication3.snk</AssemblyOriginatorKeyFile>  
@@ -168,16 +163,13 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 |Option d’URL|Description|  
 |----------------|-----------------|  
 |`PublishURL`|Obligatoire si vous publiez votre application ClickOnce sur un site Web.|  
-|`InstallURL`|Facultatif. Définissez cette option si le site de l’installation est différent de celle du `PublishURL`. Par exemple, vous pouvez définir le `PublishURL` à un chemin d’accès FTP et les définir le `InstallURL` vers une URL Web.|  
-|`SupportURL`|Facultatif. Définissez cette option si le site de support est différent de celle du `PublishURL`. Par exemple, vous pouvez définir le `SupportURL` au site Web de votre société client prise en charge.|  
-|`UpdateURL`|Facultatif. Définissez cette option si l’emplacement de mise à jour est différente de celle du `InstallURL`. Par exemple, vous pouvez définir le `PublishURL` à un chemin d’accès FTP et les définir le `UpdateURL` vers une URL Web.|  
+|`InstallURL`|Optionnel. Définissez cette option si le site de l’installation est différent de celle du `PublishURL`. Par exemple, vous pouvez définir le `PublishURL` à un chemin d’accès FTP et les définir le `InstallURL` vers une URL Web.|  
+|`SupportURL`|Optionnel. Définissez cette option si le site de support est différent de celle du `PublishURL`. Par exemple, vous pouvez définir le `SupportURL` au site Web de votre société client prise en charge.|  
+|`UpdateURL`|Optionnel. Définissez cette option si l’emplacement de mise à jour est différente de celle du `InstallURL`. Par exemple, vous pouvez définir le `PublishURL` à un chemin d’accès FTP et les définir le `UpdateURL` vers une URL Web.|  
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.Build.Tasks.GenerateBootstrapper>   
  <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>   
  <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest>   
  [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md)   
- [Procédure pas à pas : déploiement manuel d’une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
-
-
-
+ [Procédure pas à pas : déploiement manuel d'une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

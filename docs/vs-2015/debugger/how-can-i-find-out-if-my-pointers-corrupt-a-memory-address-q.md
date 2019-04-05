@@ -1,14 +1,9 @@
 ---
 title: Comment puis-je savoir si mes pointeurs endommagent une adresse mémoire ? | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -26,13 +21,13 @@ ms.assetid: a147c939-4fb1-415c-8410-cf303781e9e8
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 013b88bcaa0d0cf9dc8ff308f43f3191ed2d0334
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8da16e806b8c4bb9bb29251184a5a45c566e9f25
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734233"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954127"
 ---
 # <a name="how-can-i-find-out-if-my-pointers-corrupt-a-memory-address"></a>Comment puis-je savoir si mes pointeurs endommagent une adresse mémoire ?
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,13 +43,10 @@ Description du problème
   
 #### <a name="to-find-where-the-memory-address-is-modified"></a>Pour rechercher la modification de l'adresse mémoire :  
   
-1.  Définissez un point d'arrêt sur variable à l'adresse 0x00408000. Consultez [définir un point d’arrêt de modification de données (natif C++ uniquement)](../debugger/using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus_only).  
+1.  Définissez un point d'arrêt sur variable à l'adresse 0x00408000. Consultez [Définir un point d’arrêt de modification de données (C++ natif uniquement)](../debugger/using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus_only).  
   
-2.  Lorsque vous atteignez le point d’arrêt, utilisez la **mémoire** contenu de la fenêtre pour afficher la mémoire en commençant à 0 x 00408000. Pour plus d’informations, consultez [mémoire Windows](../debugger/memory-windows.md).  
+2.  Quand vous atteignez le point d’arrêt, utilisez la fenêtre **Mémoire** pour afficher le contenu de la mémoire à partir de l’adresse 0x00408000. Pour plus d’informations, consultez [mémoire Windows](../debugger/memory-windows.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Forum aux questions de débogage du Code natif](../debugger/debugging-native-code-faqs.md)   
+ [Questions fréquentes (FAQ) sur le débogage du code natif](../debugger/debugging-native-code-faqs.md)   
  [Débogage du code natif](../debugger/debugging-native-code.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 'CA2238 : Implémentez les méthodes de sérialisation | Microsoft Docs'
-ms.custom: ''
+title: 'CA2238 : Implémentez les méthodes de sérialisation | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - ImplementSerializationMethodsCorrectly
 - CA2238
@@ -20,17 +15,17 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3222deaeac97df8b954853f21eaff40a8244d8ca
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 26d9c23ef8da970a29057c0e299d5b8d12dda524
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864281"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "59001825"
 ---
-# <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238 : Implémentez les méthodes de sérialisation comme il se doit
+# <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238 : Implémentez les méthodes de sérialisation comme il se doit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Pour obtenir la dernière documentation sur Visual Studio 2017, consultez [CA2238 : implémentez les méthodes de sérialisation](https://docs.microsoft.com/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly) sur docs.microsoft.com.  
+Pour obtenir la dernière documentation sur Visual Studio, consultez [CA2238 : Implémentez les méthodes de sérialisation](https://docs.microsoft.com/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly) sur docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -68,17 +63,16 @@ Pour obtenir la dernière documentation sur Visual Studio 2017, consultez [CA223
  [!code-vb[FxCop.Usage.SerializationEventHandlers#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.SerializationEventHandlers/vb/FxCop.Usage.SerializationEventHandlers.vb#1)]  
   
 ## <a name="related-rules"></a>Règles associées  
- [CA2236 : Appelez les méthodes de la classe de base sur les types ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)  
+ [CA2236 : Appeler des méthodes de classe de base sur les types ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)  
   
  [CA2240 : Implémentez ISerializable correctement](../code-quality/ca2240-implement-iserializable-correctly.md)  
   
  [CA2229 : Implémentez des constructeurs de sérialisation](../code-quality/ca2229-implement-serialization-constructors.md)  
   
- [CA2235 : Marquez tous les champs non sérialisables](../code-quality/ca2235-mark-all-non-serializable-fields.md)  
+ [CA2235 : Marquez tous les champs non sérialisés](../code-quality/ca2235-mark-all-non-serializable-fields.md)  
   
- [CA2237 : Marquez les types ISerializable avec SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)  
+ [CA2237 : Marquer les types ISerializable avec SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)  
   
- [CA2239 : Spécifiez des méthodes de désérialisation pour les champs facultatifs](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)  
+ [CA2239 : Fournir des méthodes de désérialisation pour les champs facultatifs](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)  
   
- [CA2120 : Sécurisez les constructeurs de sérialisation](../code-quality/ca2120-secure-serialization-constructors.md)
-
+ [CA2120 : Constructeurs de sérialisation sécurisé](../code-quality/ca2120-secure-serialization-constructors.md)

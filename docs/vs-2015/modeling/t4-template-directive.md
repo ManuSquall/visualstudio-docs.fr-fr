@@ -1,23 +1,20 @@
 ---
 title: T4 Directive du modèle | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 2b0a8e04-6fee-4c6c-b086-e49fc728a3ed
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: dcd11416bc067acaab8855b51969c7e1068e2c97
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 608ba29c9f2068ce053fd6b92ba053eb45869ddd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248220"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950417"
 ---
 # <a name="t4-template-directive"></a>Directive du modèle T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +59,7 @@ En général, un modèle de texte T4 [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 debug="true"  
 ```  
   
- Valeurs valides :  
+ Valeurs valides :  
  `true, false`. False représente la valeur par défaut.  
   
  Si l'attribut `debug` a la valeur `true`, le fichier de code intermédiaire contient des informations qui permettent au débogueur d'identifier plus précisément la position, dans votre modèle, où s'est produit un arrêt ou une exception.  
@@ -77,14 +74,14 @@ debug="true"
 hostspecific="true"  
 ```  
   
- Valeurs valides :  
+ Valeurs valides :  
  `true, false, trueFromBase`. False représente la valeur par défaut.  
   
  Si vous affectez à cet attribut la valeur `true`, une propriété nommée `Host` est ajoutée à la classe générée par votre modèle de texte. La propriété est une référence à l'hôte du moteur de transformation, et est déclarée comme <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Si vous avez défini un hôte personnalisé, vous pouvez effectuer un cast de celui-ci en type d'hôte personnalisé.  
   
  Étant donné que le type de cette propriété dépend du type d'hôte, elle n'est utile que si vous écrivez un modèle de texte qui fonctionne uniquement avec un hôte spécifique. Il s’applique aux [les modèles au moment du design](../modeling/design-time-code-generation-by-using-t4-text-templates.md), mais pas [modèles au moment de l’exécution](../modeling/run-time-text-generation-with-t4-text-templates.md).  
   
- Lorsque `hostspecific` a la valeur `true` et que vous utilisez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pouvez effectuer un cast de `this.Host` en IServiceProvider pour accéder aux fonctionnalités de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Vous pouvez également utiliser `Host.ResolvePath(filename)` pour obtenir le chemin d'accès absolu d'un fichier dans le projet. Exemple :  
+ Lorsque `hostspecific` a la valeur `true` et que vous utilisez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pouvez effectuer un cast de `this.Host` en IServiceProvider pour accéder aux fonctionnalités de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Vous pouvez également utiliser `Host.ResolvePath(filename)` pour obtenir le chemin d’accès absolu d’un fichier dans le projet. Exemple :  
   
 ```csharp  
 <#@ template debug="false" hostspecific="true" language="C#" #>  
@@ -113,7 +110,7 @@ Content of myFile is:
  `language="VB"`  
   
  Valeurs valides :  
- `C#` (par défaut)  
+ `C#` (valeur par défaut)  
   
  `VB`  
   
@@ -223,11 +220,11 @@ This is the common footer.
  `linePragmas="false"`  
   
  Valeurs valides :  
- `true` (par défaut)  
+ `true` (valeur par défaut)  
   
  `false`  
   
- L’assignation de la valeur false à cet attribut permet de supprimer les étiquettes qui identifient les numéros de ligne dans le code généré. Cela signifie que le compilateur signale toutes les erreurs en utilisant les numéros de ligne du code généré. Cela vous donne davantage d'options de débogage, car vous pouvez choisir de déboguer le modèle de texte ou le code généré.  
+ L'assignation de la valeur false à cet attribut permet de supprimer les balises qui identifient les numéros de ligne dans le code généré. Cela signifie que le compilateur signale toutes les erreurs en utilisant les numéros de ligne du code généré. Cela vous donne davantage d'options de débogage, car vous pouvez choisir de déboguer le modèle de texte ou le code généré.  
   
  Cet attribut peut aussi être utile si vous remarquez que les noms de fichiers absolus dans les pragmas entraînent des problèmes de fusion sous contrôle de code source.  
   
@@ -236,11 +233,8 @@ This is the common footer.
  `visibility="internal"`  
   
  Valeurs valides :  
- `public` (par défaut)  
+ `public` (valeur par défaut)  
   
  `internal`  
   
  Dans un modèle de texte au moment de l'exécution, vous définissez l'attribut de visibilité de la classe générée. Par défaut, la classe fait partie de l'API publique de votre code, mais en définissant `visibility="internal"`, vous pouvez vous assurer que votre code est en mesure d'utiliser la classe de génération de texte.
-
-
-

@@ -1,25 +1,20 @@
 ---
 title: les variantes MSAA x-4 x-2 0 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8e661823a07945c22679832dc716ad2f25f4f6aa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1b298beadf6ffd3a59e5cdd44981a63bed1746cf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793774"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951979"
 ---
 # <a name="0x2x4x-msaa-variants"></a>Variantes MSAA 0x/2x/4x
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ Substitue les paramètres d‘anticrénelage MSSA (Multi-Sample Anti-Aliasing) s
 >  Il se peut que votre matériel ne prenne pas entièrement en charge MSAA pour tous les formats. Si l'une de ces variantes rencontre une limitation matérielle qu'il n'est pas possible de contourner, sa colonne dans le tableau de résumé des performances est vide et un message d'erreur est généré.  
   
 ## <a name="remarks"></a>Notes  
- Ces variantes substituent le nombre d’échantillons et les arguments de qualité d’échantillon dans les appels à `ID3DDevice::CreateTexture2D`, qui sont chargés de créer des cibles de rendu. Plus précisément, ces paramètres sont substitués dans les cas suivants :  
+ Ces variantes substituent le nombre d'échantillons et les arguments de qualité d'échantillon dans les appels à `ID3DDevice::CreateTexture2D`, qui sont chargés de créer des cibles de rendu. Plus précisément, ces paramètres sont substitués dans les cas suivants :  
   
 - L'objet `D3D11_TEXTURE2D_DESC` passé dans `pDesc` décrit une cible de rendu, à savoir :  
   
@@ -51,7 +46,7 @@ Substitue les paramètres d‘anticrénelage MSSA (Multi-Sample Anti-Aliasing) s
   
 - L'appareil prend en charge le nombre d'échantillons demandé (0, 2 ou 4) et la qualité d'échantillon (0) pour le format cible de rendu demandé (membre D3D11_TEXTURE2D_DESC::Format), ce qui est déterminé par `ID3D11Device::CheckMultisampleQualityLevels`.  
   
-  Si les indicateurs D3D_BIND_SHADER_RESOUCE ou D3D11_BIND_UNORDERED_ACCESS sont définis pour le membre D3D11_TEXTURE2D_DESC::BindFlags, deux versions de la texture sont créées : dans la première, ces indicateurs sont effacés pour une utilisation en tant que cible de rendu ; dans l'autre, qui est une texture non MSAA, ces indicateurs sont laissés en l'état pour faire office de mémoire tampon de résolution pour la première version. Cela est nécessaire, car l'utilisation d'une texture MSAA en tant que ressource de nuanceur ou dans le cadre d'un accès arbitraire a peu de chances d'être valide. Par exemple, un nuanceur agissant sur cette texture générerait des résultats incorrects, car il s'attendrait à une texture non MSAA. Si la variante a créé la texture non MSAA secondaire, chaque fois que la cible de rendu MSAA est détachée du contexte de l'appareil, son contenu est résolu en texture non MSAA. De la même manière, chaque fois que la cible de rendu MSAA doit être liée en tant que ressource de nuanceur ou qu'elle est utilisée dans une vue de l'accès arbitraire, la texture non MSAA résolue est liée.  
+  Si les indicateurs D3D_BIND_SHADER_RESOUCE ou D3D11_BIND_UNORDERED_ACCESS sont définis pour le membre D3D11_TEXTURE2D_DESC::BindFlags, deux versions de la texture sont créées : dans la première, ces indicateurs sont effacés pour une utilisation en tant que cible de rendu ; dans l'autre, qui est une texture non MSAA, ces indicateurs sont laissés en l'état pour faire office de mémoire tampon de résolution pour la première version. Cela est nécessaire, car l'utilisation d'une texture MSAA en tant que ressource de nuanceur ou dans le cadre d'un accès arbitraire a peu de chances d'être valide. Par exemple, un nuanceur agissant sur cette texture générerait des résultats incorrects, car il s'attendrait à une texture non MSAA. Si la variante a créé la texture non MSAA secondaire, chaque fois que la cible de rendu MSAA est détachée du contexte de l'appareil, son contenu est résolu en texture non MSAA. De la même manière, chaque fois que la cible de rendu MSAA doit être liée en tant que ressource de nuanceur ou qu’elle est utilisée dans une vue de l’accès non ordonné, la texture non MSAA résolue est liée.  
   
   De même, ces variantes substituent les paramètres MSAA sur toutes les chaînes de permutation créées à l'aide de `IDXGIFactory::CreateSwapChain`, `IDXGIFactory2::CreateSwapChainForHwnd`, `IDXGIFactory2::CreateSwapChainForCoreWindow`, `IDXGIFactory2::CreateSwapChainForComposition` et `ID3D11CreateDeviceAndSwapChain`.  
   
@@ -83,6 +78,3 @@ chain_description.SampleDesc.Quality = 0;
   
 // Call IDXGISwapChain::CreateSwapChain or D3D11CreateDeviceAndSwapChain, etc.  
 ```
-
-
-

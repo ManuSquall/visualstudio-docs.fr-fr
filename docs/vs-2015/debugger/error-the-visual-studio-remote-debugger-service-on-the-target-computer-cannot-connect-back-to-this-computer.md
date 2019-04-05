@@ -1,14 +1,9 @@
 ---
 title: 'Erreur : Le service débogueur distant Visual Studio sur l’ordinateur cible ne peut pas se reconnecter à cet ordinateur | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.service_access_denied_oncallback
 dev_langs:
@@ -20,15 +15,15 @@ ms.assetid: 89ecf99d-66bf-4da0-a840-aa95b0be1702
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7f1e457829f7b6ab5050a02bd8f20e1c51d5df14
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 833beb91c35c35d29df45a2e8caa31aae173bb27
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798467"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950745"
 ---
-# <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Erreur : Le service Débogueur distant Visual Studio sur l'ordinateur cible ne peut pas se reconnecter à cet ordinateur
+# <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Erreur : Le service de débogueur distant Visual Studio sur l’ordinateur cible ne peut pas se reconnecter à cet ordinateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette erreur signifie que le service Débogueur distant Visual Studio s'exécute sous un compte d'utilisateur qui ne peut pas être authentifié lorsqu'il se connecte à l'ordinateur à partir duquel vous déboguez.  
@@ -43,11 +38,11 @@ Cette erreur signifie que le service Débogueur distant Visual Studio s'exécute
 |Un ordinateur, ou les deux, dans un groupe de travail|Non|Non|Oui|  
 |Ordinateurs sur des domaines différents|Non|Non|Oui|  
   
- De plus :  
+ En outre :  
   
 -   Le compte sous lequel vous exécutez le service Débogueur distant Visual Studio doit être un administrateur sur l'ordinateur distant afin qu'il puisse déboguer tout processus.  
   
--   Le compte doit également être accordé le `Log on as a service` privilège sur l’ordinateur distant qui utilise le **stratégie de sécurité locale** outil d’administration.  
+-   Le privilège `Log on as a service` doit également être accordé au compte sur l’ordinateur distant qui utilise l’outil d’administration **Stratégie de sécurité locale**.  
   
 -   Si vous utilisez un compte local pour accéder à l'ordinateur, vous devez exécuter le service Débogueur distant Visual Studio sous un compte local.  
   
@@ -59,31 +54,28 @@ Cette erreur signifie que le service Débogueur distant Visual Studio s'exécute
   
 ### <a name="to-add-log-on-as-a-service-privilege"></a>Pour ajouter le privilège « Ouvrir une session en tant que service »  
   
-1.  Sur le **Démarrer** menu, choisissez **le panneau de configuration**.  
+1.  Dans le menu **Démarrer**, cliquez sur **Panneau de configuration**.  
   
-2.  Dans le panneau de configuration, choisissez **affichage classique**, si nécessaire.  
+2.  Dans le Panneau de configuration, cliquez sur **Affichage classique**, si nécessaire.  
   
 3.  Double-cliquez sur **Outils d'administration**.  
   
-4.  Dans la fenêtre Outils d’administration, double-cliquez sur **stratégie de sécurité locale**.  
+4.  Dans la fenêtre Outils d’administration, double-cliquez sur **Stratégie de sécurité locale**.  
   
-5.  Dans le **paramètres de sécurité locaux** fenêtre, développez le **stratégies locales** dossier.  
+5.  Dans la fenêtre **Paramètres de sécurité locaux**, développez le dossier **Stratégies locales**.  
   
-6.  Cliquez sur **attribution des droits utilisateur**.  
+6.  Cliquez sur **Attribution des droits utilisateur**.  
   
-7.  Dans le **stratégie** colonne, double-cliquez sur **une session en tant que service** pour afficher les affectations de stratégie de groupe locale dans le **une session en tant que service** boîte de dialogue.  
+7.  Dans la colonne **Stratégie**, double-cliquez sur **Ouvrir une session en tant que service** pour afficher les affectations de la stratégie de groupe locale dans la boîte de dialogue **Ouvrir une session en tant que service**.  
   
-8.  Pour ajouter de nouveaux utilisateurs, cliquez sur le **ajouter un utilisateur ou groupe** bouton.  
+8.  Pour ajouter de nouveaux utilisateurs, cliquez sur le bouton **Ajouter un utilisateur ou un groupe**.  
   
-9. Lorsque vous avez terminé d’ajouter des utilisateurs, cliquez sur **OK**.  
+9. Après avoir ajouté les utilisateurs de votre choix, cliquez sur **OK**.  
   
 ### <a name="to-work-around-this-error"></a>Pour contourner cette erreur  
   
 -   Exécutez le Remote Debugging Monitor comme une application au lieu d'un service.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Erreurs de débogage distant et dépannage](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+ [Erreurs de débogage à distance et dépannage](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Remote Debugging](../debugger/remote-debugging.md)
-
-
-

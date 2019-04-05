@@ -1,25 +1,20 @@
 ---
-title: VsgDbg::VsgDbg (constructeur) | Microsoft Docs
-ms.custom: ''
+title: VsgDbg::VsgDbg (Constructor) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 670651e6-5e79-4845-b0c2-671beb7055a8
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 056c5f5e19a4d1e025969aa40ad75f3852b4201b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f3bd179aea7d961df6145b7af2f074927fcdc3e3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781918"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948911"
 ---
 # <a name="vsgdbgvsgdbg-constructor"></a>VsgDbg::VsgDbg, constructeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,10 +39,7 @@ VsgDbg(
  Lorsque le constructeur est appelé avec `bDefaultInit` définie sur `false`, le composant dans l’application de graphics diagnostics peut être préparé à activement capturer et enregistrer des informations graphiques ultérieurement en appelant le `Init` (fonction).  
   
 ## <a name="see-also"></a>Voir aussi  
- [VsgDbg :: ~ VsgDbg (destructeur)](../debugger/vsgdbg-tilde-vsgdbg-destructor.md)   
+ [VsgDbg::~VsgDbg (destructeur)](../debugger/vsgdbg-tilde-vsgdbg-destructor.md)   
  [Init](../debugger/init.md)   
  [DONT_SAVE_VSGLOG_TO_TEMP](../debugger/dont-save-vsglog-to-temp.md)   
  [VSG_DEFAULT_RUN_FILENAME](../debugger/vsg-default-run-filename.md)
-
-
-

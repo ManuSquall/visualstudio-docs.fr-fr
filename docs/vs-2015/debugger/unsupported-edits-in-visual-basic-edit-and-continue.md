@@ -1,14 +1,9 @@
 ---
 title: Les modifications non prises en charge dans Visual Basic Modifier & Continuer | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,25 +16,25 @@ ms.assetid: 9b8fdc41-a193-49ad-ad72-dfcadd46f4b3
 caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bc6e7a5d1d72464849bff20be066ea70e8264623
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5b22f4cdc9fa4bf3816b1b5644eee34279e20da1
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787898"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58954191"
 ---
-# <a name="unsupported-edits-in-visual-basic-edit-and-continue"></a>Modifications non prises en charge dans Modifier & Continuer (Visual Basic)
+# <a name="unsupported-edits-in-visual-basic-edit-and-continue"></a>Modifications non prises en charge dans Modifier &amp; Continuer (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Modifier & Continuer vous permet d'arrêter l'exécution d'un programme en mode Arrêt, d'apporter des modifications à l'exécution de code, puis de continuer l'exécution du programme avec les modifications récemment incorporées. Les modifications de code déclaratif qui affectent la structure publique d'une classe sont interdites, mais de nombreuses modifications que vous pouvez apporter à une méthode, au corps d'une propriété ou à des déclarations privées dans une classe sont autorisées.  
+Modifier &amp; Continuer vous permet d'arrêter l'exécution d'un programme en mode Arrêt, d'apporter des modifications à l'exécution de code, puis de continuer l'exécution du programme avec les modifications récemment incorporées. Les modifications de code déclaratif qui affectent la structure publique d'une classe sont interdites, mais de nombreuses modifications que vous pouvez apporter à une méthode, au corps d'une propriété ou à des déclarations privées dans une classe sont autorisées.  
   
  Si vous devez effectuer une modification qui n'est pas prise en charge, arrêtez le débogage, procédez aux modifications et démarrez une nouvelle session de débogage.  
   
 ###  <a name="BKMK_MethodandPropertyBodyEdits"></a> Méthode et modifications relatives au corps de propriété  
- **Non pris en charge des modifications apportées aux Variables locales statiques**: ajout ou la mise à jour une variable locale ou suppression d’une variable locale statique si cela peut provoquer une erreur de compilation.  
+ **Non pris en charge des modifications apportées aux Variables locales statiques**: Ajout ou la mise à jour une variable locale ou suppression d’une variable locale statique si cela provoque une erreur de compilation.  
   
- **Non pris en charge des modifications aux génériques**: modifications apportées à la méthode générique elle-même ou le corps de méthode générique ne sont pas pris en charge. L'instanciation d'un type générique ou les appels aux méthodes génériques existantes peuvent être ajoutés, supprimés ou modifiés.  
+ **Non pris en charge des modifications aux génériques**: Les modifications apportées à la méthode générique elle-même ou au corps de méthode générique ne sont pas prises en charge. L'instanciation d'un type générique ou les appels aux méthodes génériques existantes peuvent être ajoutés, supprimés ou modifiés.  
   
  **Autres modifications non prises en charge**  
   
@@ -54,7 +49,7 @@ Modifier & Continuer vous permet d'arrêter l'exécution d'un programme en mod
 -   Ajout d'un bloc `SynchLock` autour du pointeur d'instruction en cours.  
   
 ###  <a name="BKMK_AttributeEdits"></a> Modifications relatives aux attributs  
- Modifier & Continuer ne prend pas en charge la modification d'attributs. En particulier, la fonctionnalité Modifier & Continuer ne prend pas en charge les modifications suivantes :  
+ Modifier &amp; Continuer ne prend pas en charge la modification d'attributs. En particulier, la fonctionnalité Modifier &amp; Continuer ne prend pas en charge les modifications suivantes :  
   
 -   définition, modification ou suppression d'une classe d'attributs ;  
   
@@ -63,7 +58,7 @@ Modifier & Continuer vous permet d'arrêter l'exécution d'un programme en mod
 -   modification ou suppression d'un attribut.  
   
 ###  <a name="BKMK_ClassDeclarationEdits"></a> Modifications relatives aux déclarations de classe  
- La plupart des modifications apportées aux déclarations de classe ne sont pas autorisées par Modifier & Continuer en mode Arrêt. En particulier, la fonctionnalité Modifier & Continuer ne prend pas en charge les modifications suivantes :  
+ La plupart des modifications apportées aux déclarations de classe ne sont pas autorisées par Modifier &amp; Continuer en mode Arrêt. En particulier, la fonctionnalité Modifier &amp; Continuer ne prend pas en charge les modifications suivantes :  
   
 -   Attribution d'un nouveau nom, suppression ou modification de l'héritage d'une classe existante.  
   
@@ -76,7 +71,7 @@ Modifier & Continuer vous permet d'arrêter l'exécution d'un programme en mod
 -   Modification d'une déclaration de classe générique.  
   
 ###  <a name="BKMK_ClassMemberDeclarationEdits"></a> Modifications de déclaration de membre de classe  
- Les modifications apportées aux déclarations de membre sont interdites dans la plupart des cas de type Modifier & Continuer. Par exemple, vous ne pouvez pas modifier la signature ni le niveau d'accès d'un membre, et vous ne pouvez pas supprimer complètement des membres si cela entraîne une erreur de compilation. En particulier, la fonctionnalité Modifier & Continuer ne prend pas en charge les modifications suivantes :  
+ Les modifications apportées aux déclarations de membre sont interdites dans la plupart des cas de type Modifier &amp; Continuer. Par exemple, vous ne pouvez pas modifier la signature ni le niveau d'accès d'un membre, et vous ne pouvez pas supprimer complètement des membres si cela entraîne une erreur de compilation. En particulier, la fonctionnalité Modifier &amp; Continuer ne prend pas en charge les modifications suivantes :  
   
 -   Occultation d'une variable membre existante en déclarant une variable globale ou membre du même nom dans le bloc conteneur.  
   
@@ -109,7 +104,7 @@ Modifier & Continuer vous permet d'arrêter l'exécution d'un programme en mod
 -   Modification d'un champ public.  
   
 ###  <a name="BKMK_CompilerOptionEdits"></a> Modifications des options du compilateur  
- En utilisant Modifier & Continuer en mode arrêt, vous ne pouvez pas changer, ajouter ou supprimer les options de compilateur suivantes :  
+ En utilisant Modifier &amp; Continuer en mode arrêt, vous ne pouvez pas changer, ajouter ou supprimer les options de compilateur suivantes :  
   
 -   **Option Strict**  
   
@@ -118,7 +113,7 @@ Modifier & Continuer vous permet d'arrêter l'exécution d'un programme en mod
 -   **Option Compare**  
   
 ###  <a name="BKMK_ConstantsEdits"></a> Modifications relatives aux constantes  
- Les modifications des constantes en mode Modifier & Continuer sont très limitées. En particulier, la fonctionnalité Modifier & Continuer ne prend pas en charge les modifications suivantes :  
+ Les modifications des constantes en mode Modifier &amp; Continuer sont très limitées. En particulier, la fonctionnalité Modifier &amp; Continuer ne prend pas en charge les modifications suivantes :  
   
 -   Ajout ou mise à jour d'une variable constante.  
   
@@ -127,14 +122,14 @@ Modifier & Continuer vous permet d'arrêter l'exécution d'un programme en mod
 -   Suppression d'une constante.  
   
 ###  <a name="BKMK_DelegateandEventDeclarationEdits"></a> Délégué et les modifications de déclaration d’événement  
- Certaines modifications apportées aux délégués et aux événements ne sont pas autorisées par Modifier & Continuer en mode Arrêt. En particulier, la fonctionnalité Modifier & Continuer ne prend pas en charge les modifications suivantes :  
+ Certaines modifications apportées aux délégués et aux événements ne sont pas autorisées par Modifier &amp; Continuer en mode Arrêt. En particulier, la fonctionnalité Modifier &amp; Continuer ne prend pas en charge les modifications suivantes :  
   
 -   Changement ou suppression d'une définition de délégué.  
   
 -   Suppression d'un événement.  
   
 ###  <a name="BKMK_EnumerationEdits"></a> Modifications relatives aux énumérations  
- Les modifications apportées aux énumérations (`Enums`) ne sont pas autorisées par Modifier & Continuer en mode Arrêt. En particulier, la fonctionnalité Modifier & Continuer ne prend pas en charge les modifications suivantes :  
+ Les modifications apportées aux énumérations (`Enums`) ne sont pas autorisées par Modifier &amp; Continuer en mode Arrêt. En particulier, la fonctionnalité Modifier &amp; Continuer ne prend pas en charge les modifications suivantes :  
   
 -   Modification du type sous-jacent d'un `Enum`.  
   
@@ -143,17 +138,17 @@ Modifier & Continuer vous permet d'arrêter l'exécution d'un programme en mod
 -   Modification du modificateur d’accès d’un `Enum`.  
   
 ###  <a name="BKMK_ExternalDeclarationsEdits"></a> Modifications relatives aux déclarations externes  
- En général, vous ne pouvez pas modifier les déclarations de méthodes externes pendant Modifier & Continuer. En particulier, la fonctionnalité Modifier & Continuer ne prend pas en charge les modifications suivantes :  
+ En général, vous ne pouvez pas modifier les déclarations de méthodes externes pendant Modifier &amp; Continuer. En particulier, la fonctionnalité Modifier &amp; Continuer ne prend pas en charge les modifications suivantes :  
   
 -   Ajout ou suppression d'une déclaration externe.  
   
--   Modification de la signature ou des attributs de marshaling d’une déclaration externe.  
+-   Modification de la signature ou des attributs de marshaling d'une déclaration externe.  
   
 ###  <a name="BKMK_ImportsEdits"></a> Modifications relatives aux importations  
- Modifier & Continuer n'autorise pas l'ajout, le changement ou la suppression d'instructions `Imports` en mode Arrêt.  
+ Modifier &amp; Continuer n'autorise pas l'ajout, le changement ou la suppression d'instructions `Imports` en mode Arrêt.  
   
 ###  <a name="BKMK_InterfaceDefinitionEdits"></a> Modifications de la définition d’interface  
- Bien que vous soyez fréquemment autorisés à apporter des modifications aux membres qui implémentent des interfaces, les modifications aux définitions d'interface ne sont pas autorisées en général par Modifier et Continuer. En particulier, la fonctionnalité Modifier & Continuer ne prend pas en charge les modifications suivantes :  
+ Bien que vous soyez fréquemment autorisés à apporter des modifications aux membres qui implémentent des interfaces, les modifications aux définitions d'interface ne sont pas autorisées en général par Modifier et Continuer. En particulier, la fonctionnalité Modifier &amp; Continuer ne prend pas en charge les modifications suivantes :  
   
 -   Ajout, modification ou suppression de membres d'interface.  
   
@@ -164,7 +159,7 @@ Modifier & Continuer vous permet d'arrêter l'exécution d'un programme en mod
 -   Modification de la hiérarchie d'héritage de l'interface.  
   
 ###  <a name="BKMK_ModuleDeclarationEdits"></a> Modifications relatives aux déclarations de module  
- La plupart des modifications aux déclarations de module ne sont pas autorisées par Modifier & Continuer en mode Arrêt. En particulier, la fonctionnalité Modifier & Continuer ne prend pas en charge les modifications suivantes :  
+ La plupart des modifications aux déclarations de module ne sont pas autorisées par Modifier &amp; Continuer en mode Arrêt. En particulier, la fonctionnalité Modifier &amp; Continuer ne prend pas en charge les modifications suivantes :  
   
 -   Création d'un nouveau module.  
   
@@ -173,9 +168,9 @@ Modifier & Continuer vous permet d'arrêter l'exécution d'un programme en mod
 -   Modification du modificateur d’accès d’un module.  
   
 ###  <a name="BKMK_ModuleMemberDeclarationEdits"></a> Modifications de déclaration de membre de module  
- À l'aide de Modifier & Continuer, vous pouvez apporter différentes modifications aux membres de module, tels que propriétés, méthodes et champs, en mode Arrêt. Certaines modifications ne sont toutefois pas prises en charge. Plus particulièrement, Modifier & Continuer ne prend pas en charge l'ajout, la suppression ni la modification du type ou de la signature de membres quelconques.  
+ À l'aide de Modifier &amp; Continuer, vous pouvez apporter différentes modifications aux membres de module, tels que propriétés, méthodes et champs, en mode Arrêt. Certaines modifications ne sont toutefois pas prises en charge. Plus particulièrement, Modifier &amp; Continuer ne prend pas en charge l'ajout, la suppression ni la modification du type ou de la signature de membres quelconques.  
   
- En particulier, la fonctionnalité Modifier & Continuer ne prend pas en charge les modifications suivantes :  
+ En particulier, la fonctionnalité Modifier &amp; Continuer ne prend pas en charge les modifications suivantes :  
   
 -   Ajout d'un nouveau membre à moins qu'il n'existe pas d'occurrence de ce nom dans une quelconque instruction active.  
   
@@ -192,19 +187,19 @@ Modifier & Continuer vous permet d'arrêter l'exécution d'un programme en mod
 -   Suppression ou modification du type d'un champ existant.  
   
 ###  <a name="BKMK_NestedTypeDeclarationEdits"></a> Modifications relatives aux déclarations de Type imbriqué  
- Modifier & Continuer ne prend pas en charge le déplacement d'un type imbriqué vers un autre espace de noms ou type.  
+ Modifier &amp; Continuer ne prend pas en charge le déplacement d'un type imbriqué vers un autre espace de noms ou type.  
   
 ###  <a name="BKMK_StructureDeclarationEdits"></a> Modifications relatives aux déclarations de structure  
- La plupart des modifications aux déclarations de structure ne sont pas autorisées par Modifier & Continuer en **rompre** mode. En particulier, la fonctionnalité Modifier & Continuer ne prend pas en charge les modifications suivantes :  
+ La plupart des modifications aux déclarations de structure ne sont pas autorisées par Modifier & Continuer en **rompre** mode. En particulier, la fonctionnalité Modifier &amp; Continuer ne prend pas en charge les modifications suivantes :  
   
 -   Attribution d'un nouveau nom ou suppression d'une structure existante.  
   
 -   Implémentation d'une nouvelle interface ou suppression de l'implémentation d'une interface.  
   
--   Modification du modificateur d’accès d’une structure.  
+-   Modification du modificateur d'accès d'une structure.  
   
 ###  <a name="BKMK_StructureMemberDeclarationEdits"></a> Modifications de déclaration de membre de structure  
- À l'aide de Modifier & Continuer, vous pouvez apporter différentes modifications aux membres de structure (propriétés, méthodes et champs) en mode Arrêt. Toutefois, certaines modifications ne sont pas prises en charge, en particulier celles qui affectent la déclaration de membres de structure. En particulier, la fonctionnalité Modifier & Continuer ne prend pas en charge les modifications suivantes :  
+ À l'aide de Modifier &amp; Continuer, vous pouvez apporter différentes modifications aux membres de structure (propriétés, méthodes et champs) en mode Arrêt. Toutefois, certaines modifications ne sont pas prises en charge, en particulier celles qui affectent la déclaration de membres de structure. En particulier, la fonctionnalité Modifier &amp; Continuer ne prend pas en charge les modifications suivantes :  
   
 -   Suppression d'une propriété ou méthode.  
   
@@ -223,8 +218,5 @@ Modifier & Continuer vous permet d'arrêter l'exécution d'un programme en mod
 -   Modification d'un type de champ.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : appliquer des modifications en Mode arrêt avec Modifier & Continuer](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)   
+ [Guide pratique pour Appliquer des modifications en Mode arrêt avec Modifier & Continuer](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)   
  [Modifier & Continuer (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)
-
-
-

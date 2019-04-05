@@ -1,14 +1,9 @@
 ---
-title: 'Comment : fournir la prise en charge de texte masqué dans un Service de langage hérité | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Fournir la prise en charge de texte masqué dans un Service de langage hérité | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - hidden text, supporting
 - editors [Visual Studio SDK], hidden text
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 1c1dce9f-bbe2-4fc3-a736-5f78a237f4cc
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5d5451576115dcada98f6b8f7daaf1cca5a86f95
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0a74998e6cb9b236818f20ec3c597f9a3b9bd7dd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727235"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950920"
 ---
-# <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Comment : fournir la prise en charge de texte masqué dans un Service de langage hérité
+# <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Procédure : Fournir la prise en charge de texte masqué dans un service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Vous pouvez créer des zones de texte masqué en plus de régions en mode plan. Zones de texte masqué peuvent être contrôlé par le client ou contrôlée par l’éditeur et sont utilisés pour masquer une zone de texte complètement. L’éditeur affiche une zone masquée en tant que lignes horizontales. Un exemple de ceci est le mode Script uniquement dans l’éditeur HTML.  
@@ -54,4 +49,3 @@ Vous pouvez créer des zones de texte masqué en plus de régions en mode plan. 
         >  Lorsque les régions masquées sont masquées, l’éditeur affiche automatiquement les lignes dans les zones masquées pour indiquer leur présence.  
   
     2.  Spécifiez si la région est contrôlé par le client ou contrôlés par l’éditeur dans le `dwBehavior` membres de la <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> structure. Votre implémentation de mode plan intelligente peut contenir un mélange de contour contrôlé par l’éditeur et par le client et les zones de texte masqué.
-

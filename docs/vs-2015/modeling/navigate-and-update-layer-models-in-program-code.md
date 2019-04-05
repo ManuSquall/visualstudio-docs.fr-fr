@@ -1,12 +1,9 @@
 ---
 title: Parcourir et mettre à jour des modèles de couche dans le code de programme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer models, navigating in program code
 - layer models, updating in program code
@@ -14,18 +11,18 @@ ms.assetid: c60edc87-33ee-4964-a954-40069f9febf3
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ec36aa78ce5ed90098587092207806444681146a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9f5211075a1f8e58cf738b994872e7588897b2ba
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734729"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954113"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Parcourir et mettre à jour les modèles de couche dans le code de programme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Cette rubrique décrit les éléments et les relations au sein des modèles de couche, que vous pouvez parcourir et mettre à jour à l'aide de code de programme. Pour plus d’informations sur les diagrammes de couche à partir du point de vue de l’utilisateur, consultez [diagrammes de couche : référence](../modeling/layer-diagrams-reference.md) et [diagrammes de couche : instructions](../modeling/layer-diagrams-guidelines.md).  
+Cette rubrique décrit les éléments et les relations au sein des modèles de couche, que vous pouvez parcourir et mettre à jour à l'aide de code de programme. Pour plus d’informations sur les diagrammes de couche à partir du point de vue de l’utilisateur, consultez [diagrammes de couche : Référence](../modeling/layer-diagrams-reference.md) et [diagrammes de couche : Les instructions](../modeling/layer-diagrams-guidelines.md).  
   
  Le modèle <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer> décrit dans cette rubrique rappelle le modèle plus général <xref:Microsoft.VisualStudio.GraphModel>. Si vous écrivez un [extension de mouvements ou de commandes de menu](../modeling/add-commands-and-gestures-to-layer-diagrams.md), utilisez la `Layer` modèle. Si vous écrivez un [extension de validation de couche](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), il est plus facile à utiliser le `GraphModel`.  
   
@@ -96,13 +93,13 @@ IEnumerable<ILayerComment> comments =
   
  Chaque ligne figurant dans l’Explorateur de couches affiche une référence d’artefact. Pour plus d’informations, consultez [créer des diagrammes de couche à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md).  
   
- Les types et les méthodes de principal concernés par les références d’artefact sont les suivants :  
+ Les types et les méthodes de principal concernés par les références d'artefact sont les suivants :  
   
- <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>. La propriété Categories indique le type d'artefact référencé (par exemple, une classe, un fichier exécutable ou un assembly). Categories détermine comment Identifier identifie l'artefact cible.  
+ <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>. La propriété Categories indique le type d’artefact référencé (par exemple, une classe, un fichier exécutable ou un assembly). Categories détermine comment Identifier identifie l’artefact cible.  
   
  <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ArtifactReferenceExtensions.CreateArtifactReferenceAsync%2A> crée une référence d'artefact à partir de <xref:EnvDTE.Project> ou <xref:EnvDTE.ProjectItem>. S'agissant d'une opération asynchrone, vous fournissez généralement un rappel qui est appelé dès que la création est terminée.  
   
- Les références d'artefact de couche ne doivent pas être confondues avec les artefacts présents dans les diagrammes de cas d'usage.  
+ Les références d’artefact de couche ne doivent pas être confondues avec les artefacts présents dans les diagrammes de cas d’usage.  
   
 ## <a name="shapes-and-diagrams"></a>Formes et diagrammes  
  Chaque élément figurant dans un modèle de couche est représenté par deux objets : <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> et <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape>. `IShape` représente la position et la taille de la forme dans le diagramme. Dans les modèles de couche, à chaque `ILayerElement` correspond un `IShape`, et à chaque `IShape` présent dans un diagramme de couche correspond un `ILayerElement`. `IShape` est aussi utilisé avec les modèles UML. Ainsi, tous les `IShape` ne possèdent pas nécessairement un élément de couche.  
@@ -134,9 +131,6 @@ public void ... (...)
  [Ajouter des commandes et des mouvements aux diagrammes de couche](../modeling/add-commands-and-gestures-to-layer-diagrams.md)   
  [Ajouter une validation d’architecture personnalisée aux diagrammes de couche](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)   
  [Ajouter des propriétés personnalisées aux diagrammes de couche](../modeling/add-custom-properties-to-layer-diagrams.md)   
- [Diagrammes de couche : référence](../modeling/layer-diagrams-reference.md)   
- [Diagrammes de couche : instructions](../modeling/layer-diagrams-guidelines.md)   
+ [Diagrammes de couche : Référence](../modeling/layer-diagrams-reference.md)   
+ [Diagrammes de couche : Instructions](../modeling/layer-diagrams-guidelines.md)   
  [Étendre des diagrammes et des modèles UML](../modeling/extend-uml-models-and-diagrams.md)
-
-
-

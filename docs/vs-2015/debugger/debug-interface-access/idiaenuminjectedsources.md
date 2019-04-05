@@ -1,14 +1,9 @@
 ---
 title: IDiaEnumInjectedSources | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: f97e2392-22e1-48da-b7ce-ad94c8b684b0
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1a1efd791347b3249e05ed92811bd1397c43d6a9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 523a77c796e2c26612e5f0464e3aa56283554080
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770297"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938541"
 ---
 # <a name="idiaenuminjectedsources"></a>IDiaEnumInjectedSources
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ IDiaEnumInjectedSources : IUnknown
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[IDiaEnumInjectedSources::get__NewEnum](../../debugger/debug-interface-access/idiaenuminjectedsources-get-newenum.md)|Récupère le [IEnumVARIANT Interface](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e) version de cet énumérateur.|  
+|[IDiaEnumInjectedSources::get__NewEnum](../../debugger/debug-interface-access/idiaenuminjectedsources-get-newenum.md)|Récupère le [IEnumVARIANT Interface](http://msdn.microsoft.com/139e3c93-faef-4003-9079-e0e94494db3e) version de cet énumérateur.|  
 |[IDiaEnumInjectedSources::get_Count](../../debugger/debug-interface-access/idiaenuminjectedsources-get-count.md)|Récupère le nombre de sources injectés.|  
 |[IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)|Récupère une source injectée au moyen d’un index.|  
 |[IDiaEnumInjectedSources::Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)|Récupère un nombre spécifié de sources injectés dans la séquence d’énumération.|  
@@ -114,18 +109,15 @@ void DumpAllInjectedSources( IDiaSession* pSession)
 ```  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : Dia2.h  
+ En-tête : Dia2.h  
   
  Bibliothèque : diaguids.lib  
   
  DLL : msdia80.dll  
   
 ## <a name="see-also"></a>Voir aussi  
- [Interfaces (SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Interfaces (Kit SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaSession::findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)   
  [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)   
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)
-
-
-

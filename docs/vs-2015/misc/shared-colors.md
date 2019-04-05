@@ -1,23 +1,18 @@
 ---
 title: Partagé couleurs | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
-ms.author: v-brickg
-ms.openlocfilehash: fa4d2235660ecd7cc61998aa0e4ba568f0f28593
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.author: brgeorge
+ms.openlocfilehash: 124c175aa75e7a75b137254afdff24539164cdfd
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805513"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001726"
 ---
 # <a name="shared-colors"></a>Couleurs partagés
 Insérez l'introduction ici.  
@@ -68,7 +63,7 @@ Insérez l'introduction ici.
   
   **Default**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Par défaut de titre de menu](../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303-002_MenuTitleDefault")<br /><br /> **Titre de menu**|Présentation|Aucun.|  
 |![Par défaut de titre de menu](../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303-002_MenuTitleDefault")<br /><br /> **Titre de menu**|Premier plan (texte)|`Environment.CommandBarTextActive`|  
@@ -77,7 +72,7 @@ Insérez l'introduction ici.
   
  **Placez le curseur**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Titre de menu au pointage](../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303-004_MenuTitleHover")<br /><br /> **Titre de menu**|Présentation|`Environment.CommandBarMouseOverBackgroundBegin`<br /><br /> Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.|  
 |![Titre de menu au pointage](../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303-004_MenuTitleHover")<br /><br /> **Titre de menu**|Premier plan (texte)|`Environment.CommandBarTextHover`|  
@@ -86,7 +81,7 @@ Insérez l'introduction ici.
   
  **Enfoncé**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Titre de menu enfoncé](../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303-006_MenuTitlePressed")<br /><br /> **Titre de menu**|Présentation|`Environment.CommandBarMenuBackgroundGradientBegin`<br /><br /> Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.|  
 |![Titre de menu enfoncé](../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303-006_MenuTitlePressed")<br /><br /> **Titre de menu**|Premier plan (texte)|`Environment.CommandBarTextActive`|  
@@ -95,7 +90,7 @@ Insérez l'introduction ici.
   
  **Désactivé**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Titre de menu avec glyphe désactivé](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303-008_MenuTitleWithGlyphDisabled")<br /><br /> **Titre de menu avec glyphe**|Présentation|Aucun.|  
 |![Titre de menu avec glyphe désactivé](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303-008_MenuTitleWithGlyphDisabled")<br /><br /> **Titre de menu avec glyphe**|Premier plan (texte)|`Environment.CommandBarTextInactive`|  
@@ -117,7 +112,7 @@ Insérez l'introduction ici.
   
   **Default**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Par défaut du menu](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")<br /><br /> **Menu**|Présentation|`Environment.CommandBarMenuBackgroundGradientBegin`<br /><br /> Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.|  
 |![Par défaut du menu](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")<br /><br /> **Menu**|Premier plan (texte)|`Environment.CommandBarTextActive`|  
@@ -128,24 +123,24 @@ Insérez l'introduction ici.
 |![Par défaut du menu](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")<br /><br /> **Menu**|Ombre|`Environment.DropShadowBackground`|  
 |![Menu activé](../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303-011_MenuChecked")<br /><br /> **Activé**|Coche|`Environment.CommandBarCheckBox`|  
 |![Menu activé](../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303-011_MenuChecked")<br /><br /> **Activé**|Arrière-plan de case à cocher|`Environment.CommandBarSelectedIcon`|  
-|![Menu sélectionné](../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303-012_MenuSelected")<br /><br /> **sélectionné**|Arrière-plan d’icône|`Environment.CommandBarSelected`|  
-|![Menu sélectionné](../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303-012_MenuSelected")<br /><br /> **sélectionné**|Bordure d’icône|`Environment.CommandBarSelectedBorder`|  
+|![Menu sélectionné](../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303-012_MenuSelected")<br /><br /> **Selected**|Arrière-plan d’icône|`Environment.CommandBarSelected`|  
+|![Menu sélectionné](../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303-012_MenuSelected")<br /><br /> **Selected**|Bordure d’icône|`Environment.CommandBarSelectedBorder`|  
   
  **Placez le curseur**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Pointage de menu](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303-013_MenuHover")<br /><br /> **Élément de menu**|Présentation|`Environment.CommandBarMenuItemMouseOver`|  
 |![Pointage de menu](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303-013_MenuHover")<br /><br /> **Élément de menu**|Premier plan (texte)|`Environment.CommandBarMenuItemMouseOver`|  
 |![Pointage de menu](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303-013_MenuHover")<br /><br /> **Élément de menu**|Premier plan (glyphe de sous-menu)|`Environment.CommandBarMenuMouseOverSubmenuGlyph`|  
 |![Pointage de menu activé](../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303-014_MenuHoverChecked")<br /><br /> **Activé**|Coche|`Environment.CommandBarCheckBoxMouseOver`|  
 |![Pointage de menu activé](../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303-014_MenuHoverChecked")<br /><br /> **Activé**|Arrière-plan de case à cocher|`Environment.CommandBarHoverOverSelectedIcon`|  
-|![Pointage de menu sélectionné](../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303-015_MenuHoverSelected")<br /><br /> **sélectionné**|Arrière-plan d’icône|`Environment.CommandBarHoverOverSelected`|  
-|![Pointage de menu sélectionné](../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303-015_MenuHoverSelected")<br /><br /> **sélectionné**|Bordure d’icône|`Environment.CommandBarHoverOverSelectedIconBorder`|  
+|![Pointage de menu sélectionné](../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303-015_MenuHoverSelected")<br /><br /> **Selected**|Arrière-plan d’icône|`Environment.CommandBarHoverOverSelected`|  
+|![Pointage de menu sélectionné](../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303-015_MenuHoverSelected")<br /><br /> **Selected**|Bordure d’icône|`Environment.CommandBarHoverOverSelectedIconBorder`|  
   
  **Désactivé**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Menu désactivé](../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303-016_MenuDisabled")<br /><br /> Menu Item|Premier plan (texte)|`Environment.CommandBarTextInactive`|  
 |![Menu désactivé](../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303-016_MenuDisabled")<br /><br /> Menu Item|Premier plan (glyphe de sous-menu)|`Environment.CommandBarMenuSubmenuGlyph`|  
@@ -184,7 +179,7 @@ Insérez l'introduction ici.
   
   **Par défaut** (aucun autre état)  
   
-|Élément|Nom du jeton : Category.color|  
+|Élément|Nom du jeton : Category.color|  
 |-------------|--------------------------------|  
 |Présentation|`Environment.CommandBarGradientBegin`<br /><br /> Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.|  
 |Bordure|`Environment.CommandBarToolBarBorder`|  
@@ -206,18 +201,18 @@ Insérez l'introduction ici.
   
   **Default**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Commande par défaut d’icône](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303-023_CommandIconDefault")<br /><br /> **Default**|Présentation|N/A (hérite de l’arrière-plan de la barre commandes)|  
 |![Commande par défaut d’icône](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303-023_CommandIconDefault")<br /><br /> **Default**|Premier plan (texte)|`Environment.CommandBarTextActive`|  
 |![Commande par défaut d’icône](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303-023_CommandIconDefault")<br /><br /> **Default**|Bordure|N/A|  
-|![Commande par défaut d’icône sélectionnée](../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303-024_CommandIconDefaultSelected")<br /><br /> **sélectionné**|Présentation|`Environment.CommandBarSelected`|  
-|![Commande par défaut d’icône sélectionnée](../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303-024_CommandIconDefaultSelected")<br /><br /> **sélectionné**|Premier plan (texte)|`Environment.CommandBarTextSelected`|  
-|![Commande par défaut d’icône sélectionnée](../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303-024_CommandIconDefaultSelected")<br /><br /> **sélectionné**|Bordure|`Environment.CommandBarSelectedBorder`|  
+|![Commande par défaut d’icône sélectionnée](../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303-024_CommandIconDefaultSelected")<br /><br /> **Selected**|Présentation|`Environment.CommandBarSelected`|  
+|![Commande par défaut d’icône sélectionnée](../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303-024_CommandIconDefaultSelected")<br /><br /> **Selected**|Premier plan (texte)|`Environment.CommandBarTextSelected`|  
+|![Commande par défaut d’icône sélectionnée](../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303-024_CommandIconDefaultSelected")<br /><br /> **Selected**|Bordure|`Environment.CommandBarSelectedBorder`|  
   
  **Pointage et porte sur le clavier**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Pointage d’icône de commande](../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303-025_CommandIconHover")<br /><br /> **Standard au pointage**|Présentation|`Environment.CommandBarMouseOverBackgroundBegin`<br /><br /> Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.|  
 |![Pointage d’icône de commande](../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303-025_CommandIconHover")<br /><br /> **Standard au pointage**|Premier plan (texte)|`Environment.CommandBarTextHover`|  
@@ -228,7 +223,7 @@ Insérez l'introduction ici.
   
  **Enfoncé**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Icône de commande enfoncée](../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303-027_CommandIconPressed")<br /><br /> **Icône de commande appuyée**|Présentation|`Environment.CommandBarMouseDownBackgroundBegin`<br /><br /> Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.|  
 |![Icône de commande enfoncée](../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303-027_CommandIconPressed")<br /><br /> **Icône de commande appuyée**|Premier plan (texte)|`Environment.CommandBarTextMouseDown`|  
@@ -236,7 +231,7 @@ Insérez l'introduction ici.
   
  **Désactivé**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Icône de commande désactivée](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303-028_CommandIconDisabled")<br /><br /> **Icône de commande désactivée**|Présentation|N/A (hérite de l’arrière-plan de la barre commandes)|  
 |![Icône de commande désactivée](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303-028_CommandIconDisabled")<br /><br /> **Icône de commande désactivée**|Premier plan (texte)|`Environment.CommandBarTextInactive`|  
@@ -261,7 +256,7 @@ Insérez l'introduction ici.
   
   **Default**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Champ d’entrée de zone de liste déroulante](../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303-030_ComboBoxInputField")<br /><br /> **Champ d’entrée**|Présentation|`Environment.ComboBoxBackground`|  
 |![Champ d’entrée de zone de liste déroulante](../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303-030_ComboBoxInputField")<br /><br /> **Champ d’entrée**|Premier plan (texte)|`Environment.ComboBoxText`|  
@@ -275,7 +270,7 @@ Insérez l'introduction ici.
   
  **Placez le curseur**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Champ d’entrée de zone de liste déroulante au pointage](../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303-033_ComboBoxInputFieldHover")<br /><br /> **Champ d’entrée**|Présentation|`Environment.ComboBoxMouseOverBackgroundBegin`<br /><br /> Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.|  
 |![Champ d’entrée de zone de liste déroulante au pointage](../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303-033_ComboBoxInputFieldHover")<br /><br /> **Champ d’entrée**|Premier plan (texte)|`Environment.ComboBoxMouseOverText`|  
@@ -289,7 +284,7 @@ Insérez l'introduction ici.
   
  **Focus**  
   
-|Composant|Élément|Nom du jeton : Color.category|  
+|Composant|Élément|Nom du jeton : Color.category|  
 |---------------|-------------|--------------------------------|  
 |![Champ d’entrée de zone de liste déroulante concentré](../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303-036_ComboBoxInputFieldFocused")<br /><br /> **Champ d’entrée**|Présentation|`Environment.ComboBoxFocusedBackground`|  
 |![Champ d’entrée de zone de liste déroulante concentré](../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303-036_ComboBoxInputFieldFocused")<br /><br /> **Champ d’entrée**|Premier plan (texte)|`Environment.ComboBoxFocusedText`|  
@@ -300,7 +295,7 @@ Insérez l'introduction ici.
   
  **Enfoncé**  
   
-|Composant|Élément|Nom du jeton : Color.category|  
+|Composant|Élément|Nom du jeton : Color.category|  
 |---------------|-------------|--------------------------------|  
 |![Champ d’entrée de zone de liste déroulante enfoncé](../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303-038_ComboBoxInputFieldPressed")<br /><br /> **Champ d’entrée**|Présentation|`Environment.ComboBoxMouseDownBackground`|  
 |![Champ d’entrée de zone de liste déroulante enfoncé](../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303-038_ComboBoxInputFieldPressed")<br /><br /> **Champ d’entrée**|Premier plan (texte)|`Environment.ComboBoxMouseDownText`|  
@@ -311,7 +306,7 @@ Insérez l'introduction ici.
   
  **Désactivé**  
   
-|Composant|Élément|Nom du jeton : Color.category|  
+|Composant|Élément|Nom du jeton : Color.category|  
 |---------------|-------------|--------------------------------|  
 |![Champ d’entrée de zone de liste déroulante désactivée](../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303-041_ComboBoxInputFieldDisabled")<br /><br /> **Champ d’entrée**|Présentation|`Environment.ComboBoxDisabledBackground`|  
 |![Champ d’entrée de zone de liste déroulante désactivée](../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303-041_ComboBoxInputFieldDisabled")<br /><br /> **Champ d’entrée**|Premier plan (texte)|`Environment.ComboBoxDisabledText`|  
@@ -320,7 +315,7 @@ Insérez l'introduction ici.
 |![Zone de liste déroulante&#47;drop&#45;le bouton désactivé](../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br /><br /> **Bouton de liste déroulante**|Présentation|Aucun.|  
 |![Zone de liste déroulante&#47;drop&#45;le bouton désactivé](../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br /><br /> **Bouton de liste déroulante**|Premier plan (glyphe)|`Environment.ComboBoxDisabledGlyph`|  
   
-#####  <a name="BKMK_CommandDropDown"></a> Liste déroulante  
+#####  <a name="BKMK_CommandDropDown"></a> Drop-down  
   
 > [!IMPORTANT]
 >  Les listes déroulantes ressemblent aux zones de liste modifiable, mais elles ne disposent pas de zones de texte modifiable. Si votre liste déroulante inclut une zone de texte modifiable, utilisez les jetons de couleur disponibles sous [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox).  
@@ -337,7 +332,7 @@ Insérez l'introduction ici.
   
   **Default**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![DROP&#45;vers le bas du champ de sélection](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303-043_DropdownSelectionField")<br /><br /> **Champ de sélection**|Présentation|`Environment.DropDownBackground`|  
 |![DROP&#45;vers le bas du champ de sélection](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303-043_DropdownSelectionField")<br /><br /> **Champ de sélection**|Premier plan (texte)|`DropDownText`|  
@@ -352,7 +347,7 @@ Insérez l'introduction ici.
   
  **Placez le curseur**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![DROP&#45;vers le bas du champ de sélection de survol](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")<br /><br /> **Champ de sélection**|Présentation|`Environment.DropDownMouseOverBackgroundBegin`<br /><br /> Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.|  
 |![DROP&#45;vers le bas du champ de sélection de survol](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")<br /><br /> **Champ de sélection**|Premier plan (texte)|`Environment.DropDownMouseOverText`|  
@@ -366,7 +361,7 @@ Insérez l'introduction ici.
   
  **Enfoncé**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![DROP&#45;vers le bas du champ de sélection enfoncé](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")<br /><br /> **Champ de sélection**|Présentation|`Environment.DropDownMouseDownBackground`|  
 |![DROP&#45;vers le bas du champ de sélection enfoncé](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")<br /><br /> **Champ de sélection**|Premier plan (texte)|`Environment.DropDownMouseDownText`|  
@@ -377,7 +372,7 @@ Insérez l'introduction ici.
   
  **Désactivé**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![DROP&#45;vers le bas du champ de sélection désactivée](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")|Présentation|`Environment.DropDownDisabledBackground`|  
 |![DROP&#45;vers le bas du champ de sélection désactivée](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")|Premier plan (texte)|`Environment.DropDownDisabledText`|  
@@ -401,7 +396,7 @@ Insérez l'introduction ici.
   
   **Default**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Bouton partagé](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303-054_SplitButton")<br /><br /> **Bouton partagé (par défaut)**|Présentation|Aucun.|  
 |![Bouton partagé](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303-054_SplitButton")<br /><br /> **Bouton partagé (par défaut)**|Premier plan (texte)|`Environment.CommandBarTextActive`|  
@@ -411,7 +406,7 @@ Insérez l'introduction ici.
   
  **Placez le curseur**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Bouton Fractionner au pointage](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303-055_SplitButtonHover")<br /><br /> **Bouton partagé (pointage)**|Présentation|`Environment.CommandBarMouseOverBackgroundBegin`<br /><br /> Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.|  
 |![Bouton Fractionner au pointage](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303-055_SplitButtonHover")<br /><br /> **Bouton partagé (pointage)**|Premier plan (texte)|`Environment.CommandBarTextHover`|  
@@ -421,7 +416,7 @@ Insérez l'introduction ici.
   
  **Enfoncé**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Bouton Fractionner enfoncé](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303-056_SplitButtonPressed")<br /><br /> **Bouton partagé (appuyé)**|Présentation|`Environment.CommandBarMouseDownBackgroundBegin`<br /><br /> Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.|  
 |![Bouton Fractionner enfoncé](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303-056_SplitButtonPressed")<br /><br /> **Bouton partagé (appuyé)**|Premier plan (texte)|`Environment.CommandBarTextMouseDown`|  
@@ -431,7 +426,7 @@ Insérez l'introduction ici.
   
  **Désactivé**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Bouton Fractionner désactivé](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303-057_SplitButtonDisabled")<br /><br /> **Bouton partagé (désactivé)**|Présentation|N/A|  
 |![Bouton Fractionner désactivé](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303-057_SplitButtonDisabled")<br /><br /> **Bouton partagé (désactivé)**|Premier plan (texte)|`Environment.ComboBoxItemTextInactive`|  
@@ -452,30 +447,30 @@ Insérez l'introduction ici.
   
  **Default**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Plus d’options](../extensibility/ux-guidelines/media/0303-059-moreoptions.png "0303-059_MoreOptions")<br /><br /> **Plus d’options**|Présentation|`Environment.CommandBarOptionsBackground`|  
 |![Plus d’options](../extensibility/ux-guidelines/media/0303-059-moreoptions.png "0303-059_MoreOptions")<br /><br /> **Plus d’options**|Premier plan (glyphe)|`Environment.CommandBarOptionsGlyph`|  
-|![Bouton de dépassement](../extensibility/ux-guidelines/media/0303-060-overflow.png "0303-060_Overflow")<br /><br /> **dépassement de capacité**|Présentation|`Environment.CommandBarOptionsBackground`|  
-|![Bouton de dépassement](../extensibility/ux-guidelines/media/0303-060-overflow.png "0303-060_Overflow")<br /><br /> **dépassement de capacité**|Premier plan (glyphe)|`Environment.CommandBarOptionsGlyph`|  
+|![Bouton de dépassement](../extensibility/ux-guidelines/media/0303-060-overflow.png "0303-060_Overflow")<br /><br /> **Overflow**|Présentation|`Environment.CommandBarOptionsBackground`|  
+|![Bouton de dépassement](../extensibility/ux-guidelines/media/0303-060-overflow.png "0303-060_Overflow")<br /><br /> **Overflow**|Premier plan (glyphe)|`Environment.CommandBarOptionsGlyph`|  
   
  **Placez le curseur**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Plus d’options au pointage](../extensibility/ux-guidelines/media/0303-061-moreoptionshover.png "0303-061_MoreOptionsHover")<br /><br /> **Plus d’options**|Présentation|`Environment.CommandBarOptionsMouseOverBackgroundBegin`<br /><br /> Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.|  
 |![Plus d’options au pointage](../extensibility/ux-guidelines/media/0303-061-moreoptionshover.png "0303-061_MoreOptionsHover")<br /><br /> **Plus d’options**|Premier plan (glyphe)|`Environment.CommandBarOptionsMouseDownGlyph`|  
-|![Dépassement au pointage](../extensibility/ux-guidelines/media/0303-062-overflowoptions.png "0303-062_OverflowOptions")<br /><br /> **dépassement de capacité**|Présentation|`Environment.CommandBarOptionsMouseOverBackgroundBegin`<br /><br /> Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.|  
-|![Dépassement au pointage](../extensibility/ux-guidelines/media/0303-062-overflowoptions.png "0303-062_OverflowOptions")<br /><br /> **dépassement de capacité**|Premier plan (glyphe)|`Environment.CommandBarOptionsMouseDownGlyph`|  
+|![Dépassement au pointage](../extensibility/ux-guidelines/media/0303-062-overflowoptions.png "0303-062_OverflowOptions")<br /><br /> **Overflow**|Présentation|`Environment.CommandBarOptionsMouseOverBackgroundBegin`<br /><br /> Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.|  
+|![Dépassement au pointage](../extensibility/ux-guidelines/media/0303-062-overflowoptions.png "0303-062_OverflowOptions")<br /><br /> **Overflow**|Premier plan (glyphe)|`Environment.CommandBarOptionsMouseDownGlyph`|  
   
  **Enfoncé**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Autres options enfoncée](../extensibility/ux-guidelines/media/0303-063-moreoptionspressed.png "0303-063_MoreOptionsPressed")<br /><br /> **Plus d’options**|Présentation|`Environment.CommandBarOptionsMouseDownBackgroundBegin`<br /><br /> Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.|  
 |![Autres options enfoncée](../extensibility/ux-guidelines/media/0303-063-moreoptionspressed.png "0303-063_MoreOptionsPressed")<br /><br /> **Plus d’options**|Premier plan (glyphe)|`Environment.CommandBarOptionsMouseDownGlyph`|  
-|![Dépassement enfoncé](../extensibility/ux-guidelines/media/0303-064-overflowpressed.png "0303-064_OverflowPressed")<br /><br /> **dépassement de capacité**|Présentation|`Environment.CommandBarOptionsMouseDownBackgroundBegin`<br /><br /> Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.|  
-|![Dépassement enfoncé](../extensibility/ux-guidelines/media/0303-064-overflowpressed.png "0303-064_OverflowPressed")<br /><br /> **dépassement de capacité**|Premier plan (glyphe)|`Environment.CommandBarOptionsMouseDownGlyph`|  
+|![Dépassement enfoncé](../extensibility/ux-guidelines/media/0303-064-overflowpressed.png "0303-064_OverflowPressed")<br /><br /> **Overflow**|Présentation|`Environment.CommandBarOptionsMouseDownBackgroundBegin`<br /><br /> Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.|  
+|![Dépassement enfoncé](../extensibility/ux-guidelines/media/0303-064-overflowpressed.png "0303-064_OverflowPressed")<br /><br /> **Overflow**|Premier plan (glyphe)|`Environment.CommandBarOptionsMouseDownGlyph`|  
   
 ### <a name="document-windows"></a>Fenêtres de document  
  Il est inutile de répliquer les fenêtres de document, car elles sont fournies par l’environnement Visual Studio. Toutefois, vous pouvez décider d’exploiter les couleurs utilisées dans les fenêtres de document, afin que votre interface utilisateur apparaisse toujours cohérente avec cette partie de l’environnement Visual Studio.  
@@ -501,9 +496,9 @@ Insérez l'introduction ici.
   
  **Default**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
-|Document : ancré ou flottant|Présentation|Dépend du type de document|  
+|Document : ancré ou flottant|Présentation|Dépend du type de document|  
 |Document : ancré ou flottant|Premier plan (texte)|Dépend du type de document|  
 |Document : ancré ou flottant|Bordure|`Environment.ToolWindowBorder`|  
 |![Frame actif](../extensibility/ux-guidelines/media/0303-067-framefocused.png "0303-067_FrameFocused")<br /><br /> **Cadre : flottant, avec focus**|Présentation|`Environment.ToolWindowFloatingFrame`|  
@@ -519,7 +514,7 @@ Insérez l'introduction ici.
   
  **Placez le curseur**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Frame actif au pointage](../extensibility/ux-guidelines/media/0303-069-framefocusedhover.png "0303-069_FrameFocusedHover")<br /><br /> **Cadre : flottant, avec focus**|Arrière-plan (glyphe)|`Environment.RaftedWindowButtonHoverActive`|  
 |![Frame actif au pointage](../extensibility/ux-guidelines/media/0303-069-framefocusedhover.png "0303-069_FrameFocusedHover")<br /><br /> **Cadre : flottant, avec focus**|Premier plan (glyphe)|`Environment.RaftedWindowButtonHoverActiveGlyph`|  
@@ -530,7 +525,7 @@ Insérez l'introduction ici.
   
  **Enfoncé**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Frame actif enfoncé](../extensibility/ux-guidelines/media/0303-071-framefocusedpressed.png "0303-071_FrameFocusedPressed")<br /><br /> **Cadre : flottant, avec focus**|Arrière-plan (glyphe)|`Environment.RaftedWindowButtonDown`|  
 |![Frame actif enfoncé](../extensibility/ux-guidelines/media/0303-071-framefocusedpressed.png "0303-071_FrameFocusedPressed")<br /><br /> **Cadre : flottant, avec focus**|Premier plan (glyphe)|`Environment.RaftedWindowButtonDownGlyph`|  
@@ -567,7 +562,7 @@ Insérez l'introduction ici.
 ##### <a name="selected-tab"></a>Onglet sélectionné  
  **Focus**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Onglet sélectionné actif](../extensibility/ux-guidelines/media/0303-074-selectedtabfocused.png "0303-074_SelectedTabFocused")<br /><br /> **Onglet de document sélectionné, actif**|Présentation|`Environment.FileTabSelectedGradientTop`<br /><br /> Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.|  
 |![Onglet sélectionné actif](../extensibility/ux-guidelines/media/0303-074-selectedtabfocused.png "0303-074_SelectedTabFocused")<br /><br /> **Onglet de document sélectionné, actif**|Premier plan (texte)|`Environment.FileTabSelectedText`|  
@@ -576,7 +571,7 @@ Insérez l'introduction ici.
   
  **Inactif**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Onglet sélectionné inactif](../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303-075_SelectedTabUnfocused")<br /><br /> **Onglet de document sélectionné, sans focus**|Présentation|`Environment.FileTabInactiveGradientTop`<br /><br /> Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.|  
 |![Onglet sélectionné inactif](../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303-075_SelectedTabUnfocused")<br /><br /> **Onglet de document sélectionné, sans focus**|Premier plan (texte)|`Environment.FileTabInactiveText`|  
@@ -586,7 +581,7 @@ Insérez l'introduction ici.
 ##### <a name="background-tab"></a>Onglet en arrière-plan  
  **Default**  
   
-|Composant|Élément|Nom du jeton : Color.category|  
+|Composant|Élément|Nom du jeton : Color.category|  
 |---------------|-------------|--------------------------------|  
 |![Onglet en arrière-plan](../extensibility/ux-guidelines/media/0303-076-backgroundtab.png "0303-076_BackgroundTab")<br /><br /> **Par défaut d’onglet en arrière-plan**|Présentation|`Environment.FileTabBackground`|  
 |![Onglet en arrière-plan](../extensibility/ux-guidelines/media/0303-076-backgroundtab.png "0303-076_BackgroundTab")<br /><br /> **Par défaut d’onglet en arrière-plan**|Premier plan (texte)|`Environment.FileTabText`|  
@@ -594,7 +589,7 @@ Insérez l'introduction ici.
   
  **Placez le curseur**  
   
-|Composant|Élément|Nom du jeton : Color.category|  
+|Composant|Élément|Nom du jeton : Color.category|  
 |---------------|-------------|--------------------------------|  
 |![Onglet en arrière-plan au pointage](../extensibility/ux-guidelines/media/0303-077-backgroundtabhover.png "0303-077_BackgroundTabHover")<br /><br /> **Onglet en arrière-plan au pointage**|Présentation|`Environment.FileTabHotGradientTop`<br /><br /> Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.|  
 |![Onglet en arrière-plan au pointage](../extensibility/ux-guidelines/media/0303-077-backgroundtabhover.png "0303-077_BackgroundTabHover")<br /><br /> **Onglet en arrière-plan au pointage**|Premier plan (texte)|`Environment.FileTabHotText`|  
@@ -613,35 +608,35 @@ Insérez l'introduction ici.
   
 - pour toute interface utilisateur que vous ne voulez pas modifier automatiquement si l’interpréteur de commandes comporte une mise à jour de thème.  
   
-  **Onglet d’aperçu sélectionné : focus**  
+  **Onglet d’aperçu sélectionné : Focus**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Onglet d’aperçu actif](../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303-079_PreviewTabFocused")<br /><br /> **Onglet d’aperçu avec focus**|Présentation|`Environment.FileTabProvisionalSelectedActive`|  
 |![Onglet d’aperçu actif](../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303-079_PreviewTabFocused")<br /><br /> **Onglet d’aperçu avec focus**|Premier plan (texte)|`Environment.FileTabProvisionalSelectedActiveForeground`|  
 |![Onglet d’aperçu actif](../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303-079_PreviewTabFocused")<br /><br /> **Onglet d’aperçu avec focus**|Bordure|`Environment.FileTabProvisionalSelectedActiveBorder`<br /><br /> Défini sur la même couleur que l’arrière-plan.|  
 |![Onglet d’aperçu actif](../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303-079_PreviewTabFocused")<br /><br /> **Onglet d’aperçu avec focus**|Bordure de document|`Environment.FileTabProvisionalSelectedActiveBorder`|  
   
- **Onglet d’aperçu sélectionné : sans focus**  
+ **Onglet d’aperçu sélectionné : Inactif**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Onglet d’aperçu inactif](../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303-080_PreviewTabUnfocused")<br /><br /> **Onglet d’aperçu sans focus**|Présentation|`Environment.FileTabProvisionalSelectedInactive`|  
 |![Onglet d’aperçu inactif](../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303-080_PreviewTabUnfocused")<br /><br /> **Onglet d’aperçu sans focus**|Premier plan (texte)|`Environment.FileTabProvisionalSelectedInactiveForeground`|  
 |![Onglet d’aperçu inactif](../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303-080_PreviewTabUnfocused")<br /><br /> **Onglet d’aperçu sans focus**|Bordure|`Environment.FileTabProvisionalSelectedInactiveBorder`|  
 |![Onglet d’aperçu inactif](../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303-080_PreviewTabUnfocused")<br /><br /> **Onglet d’aperçu sans focus**|Bordure de document|`Environment.FileTabProvisionalSelectedInactiveBorder`|  
   
- **Onglet d’aperçu d’arrière-plan : par défaut**  
+ **Onglet d’aperçu d’arrière-plan : Par défaut**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Onglet d’aperçu d’arrière-plan](../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303-081_PreviewBackgroundTab")<br /><br /> **Onglet d’arrière-plan onglet d’aperçu**|Présentation|`Environment.FileTabProvisionalInactive`|  
 |![Onglet d’aperçu d’arrière-plan](../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303-081_PreviewBackgroundTab")<br /><br /> **Onglet d’arrière-plan onglet d’aperçu**|Premier plan (texte)|`Environment.FileTabProvisionalInactiveForeground`|  
 |![Onglet d’aperçu d’arrière-plan](../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303-081_PreviewBackgroundTab")<br /><br /> **Onglet d’arrière-plan onglet d’aperçu**|Bordure|`Environment.FileTabProvisionalInactiveBorder`<br /><br /> Défini sur la même couleur que l’arrière-plan.|  
   
- **Onglet d’aperçu d’arrière-plan : placez le curseur**  
+ **Onglet d’aperçu d’arrière-plan : Placez le curseur**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Onglet d’aperçu d’arrière-plan au pointage](../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303-082_PreviewBackgroundTabHover")<br /><br /> **Onglet d’arrière-plan onglet d’aperçu au pointage**|Présentation|`Environment.FileTabProvisionalHover`|  
 |![Onglet d’aperçu d’arrière-plan au pointage](../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303-082_PreviewBackgroundTabHover")<br /><br /> **Onglet d’arrière-plan onglet d’aperçu au pointage**|Premier plan (texte)|`Environment.FileTabProvisionalHoverForeground`|  
@@ -662,7 +657,7 @@ Insérez l'introduction ici.
   
   **Default**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Overflow](../extensibility/ux-guidelines/media/0303-084-overflow.png "0303-084_Overflow")<br /><br /> **Bouton de dépassement de capacité de document**|Présentation|`Environment.DocWellOverflowButtonBackground`|  
 |![Overflow](../extensibility/ux-guidelines/media/0303-084-overflow.png "0303-084_Overflow")<br /><br /> **Bouton de dépassement de capacité de document**|Premier plan (glyphe)|`Environment.DocWellOverflowButtonGlyph`|  
@@ -670,7 +665,7 @@ Insérez l'introduction ici.
   
  **Placez le curseur**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Dépassement au pointage](../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303-085_OverflowHover")<br /><br /> **Bouton de dépassement de capacité de document au pointage**|Présentation|`Environment.DocWellOverflowButtonMouseOverBackground`|  
 |![Dépassement au pointage](../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303-085_OverflowHover")<br /><br /> **Bouton de dépassement de capacité de document au pointage**|Premier plan (glyphe)|`Environment.DocWellOverflowButtonMouseOverGlyph`|  
@@ -678,7 +673,7 @@ Insérez l'introduction ici.
   
  **Enfoncé**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Dépassement enfoncé](../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303-086_OverflowPressed")<br /><br /> **Enfoncé le bouton de dépassement de capacité de document**|Présentation|`Environment.DocWellOverflowButtonMouseDownBackground`|  
 |![Dépassement enfoncé](../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303-086_OverflowPressed")<br /><br /> **Enfoncé le bouton de dépassement de capacité de document**|Premier plan (glyphe)|`Environment.DocWellOverflowButtonMouseDownGlyph`|  
@@ -706,23 +701,23 @@ Insérez l'introduction ici.
  N’utilisez pas...  
  pour toute interface utilisateur que vous ne voulez pas modifier automatiquement si l’interpréteur de commandes comporte une mise à jour de thème.  
   
- **Ancré**  
+ **Docked**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Fenêtre Outil ancrée](../extensibility/ux-guidelines/media/0303-089-toolwindowdocked.png "0303-089_ToolWindowDocked")|Présentation|`Environment.ToolWindowBackground`|  
 |![Fenêtre Outil ancrée](../extensibility/ux-guidelines/media/0303-089-toolwindowdocked.png "0303-089_ToolWindowDocked")|Bordure|`Environment.ToolWindowBorder`|  
   
  **Flottant : focus**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Fenêtre outil Active](../extensibility/ux-guidelines/media/0303-090-toolwindowfocused.png "0303-090_ToolWindowFocused")|Présentation|`Environment.ToolWindowBackground`|  
 |![Fenêtre outil Active](../extensibility/ux-guidelines/media/0303-090-toolwindowfocused.png "0303-090_ToolWindowFocused")|Bordure|`Environment.MainWindowActiveDefaultBorder`|  
   
  **Flottant : sans focus**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Fenêtre outil inactive](../extensibility/ux-guidelines/media/0303-091-toolwindowunfocused.png "0303-091_ToolWindowUnfocused")|Présentation|`Environment.ToolWindowBackground`|  
 |![Fenêtre outil inactive](../extensibility/ux-guidelines/media/0303-091-toolwindowunfocused.png "0303-091_ToolWindowUnfocused")|Bordure|`Environment.MainWindowInactiveBorder`|  
@@ -740,7 +735,7 @@ Insérez l'introduction ici.
   
  **Focus**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Focus de la barre de titre](../extensibility/ux-guidelines/media/0303-093-titlebarfocused.png "0303-093_TitleBarFocused")<br /><br /> **Barre de titre avec focus**|Présentation|`Environment.TitleBarActiveGradientBegin`<br /><br /> Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.|  
 |![Focus de la barre de titre](../extensibility/ux-guidelines/media/0303-093-titlebarfocused.png "0303-093_TitleBarFocused")<br /><br /> **Barre de titre avec focus**|Premier plan (texte)|`Environment.TitleBarActiveText`|  
@@ -749,7 +744,7 @@ Insérez l'introduction ici.
   
  **Inactif**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Barre de titre inactive](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303-094_TitleBarUnfocused")<br /><br /> **Barre de titre inactive**|Présentation|`Environment.TitleBarInactiveGradientBegin`<br /><br /> Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.|  
 |![Barre de titre inactive](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303-094_TitleBarUnfocused")<br /><br /> **Barre de titre inactive**|Premier plan (texte)|`Environment.TitleBarInactiveText`|  
@@ -769,7 +764,7 @@ Insérez l'introduction ici.
   
   **Default**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Bouton actif de la barre de titre](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303-096_TitleBarButtonFocused")<br /><br /> **Focus**|Présentation|N/A|  
 |![Bouton actif de la barre de titre](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303-096_TitleBarButtonFocused")<br /><br /> **Focus**|Premier plan (glyphe)|`Environment.ToolWindowButtonActiveGlyph`|  
@@ -780,7 +775,7 @@ Insérez l'introduction ici.
   
  **Placez le curseur**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Bouton de barre de titre actif au pointage](../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303-098_TitleBarButtonFocusedHover")<br /><br /> **Focus**|Présentation|`Environment.ToolWindowButtonHoverActive`|  
 |![Bouton de barre de titre actif au pointage](../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303-098_TitleBarButtonFocusedHover")<br /><br /> **Focus**|Premier plan (glyphe)|`Environment.ToolWindowButtonHoverActiveGlyph`|  
@@ -791,7 +786,7 @@ Insérez l'introduction ici.
   
  **Enfoncé**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Bouton actif et enfoncé la barre de titre](../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303-100_TitleBarButtonFocusedPressed")<br /><br /> **Focus**|Présentation|`Environment.ToolWindowButtonDown`|  
 |![Bouton actif et enfoncé la barre de titre](../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303-100_TitleBarButtonFocusedPressed")<br /><br /> **Focus**|Premier plan (glyphe)|`Environment.ToolWindowButtonDownActiveGlyph`|  
@@ -811,13 +806,13 @@ Insérez l'introduction ici.
   
  **Onglet sélectionné**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Onglet fenêtre outil axé](../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303-103_ToolWindowTabFocused")<br /><br /> **Onglet fenêtre outil sélectionné, avec focus**|Présentation|`Environment.ToolWindowTabSelectedTab`|  
 |![Onglet fenêtre outil axé](../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303-103_ToolWindowTabFocused")<br /><br /> **Onglet fenêtre outil sélectionné, avec focus**|Premier plan (texte)|`Environment.ToolWindowTabSelectedActiveText`|  
 |![Onglet fenêtre outil axé](../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303-103_ToolWindowTabFocused")<br /><br /> **Onglet fenêtre outil sélectionné, avec focus**|Bordure|`Environment.ToolWindowTabSelectedBorder`<br /><br /> Défini sur la même couleur que l’arrière-plan.|  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Onglet de fenêtre outil inactif](../extensibility/ux-guidelines/media/0303-104-toolwindowtabunfocused.png "0303-104_ToolWindowTabUnfocused")<br /><br /> **Onglet fenêtre outil sélectionné, sans focus**|Présentation|`Environment.ToolWindowTabSelectedTab`|  
 |![Onglet de fenêtre outil inactif](../extensibility/ux-guidelines/media/0303-104-toolwindowtabunfocused.png "0303-104_ToolWindowTabUnfocused")<br /><br /> **Onglet fenêtre outil sélectionné, sans focus**|Premier plan (texte)|`Environment.ToolWindowTabSelectedText`|  
@@ -825,13 +820,13 @@ Insérez l'introduction ici.
   
  **Onglet en arrière-plan**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Onglet d’arrière-plan de fenêtre outil](../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303-105_ToolWindowBackgroundTab")<br /><br /> **Onglet de fenêtre outil arrière-plan**|Présentation|`Environment.ToolWindowTabGradientBegin`<br /><br /> Les points de dégradé sont définis sur la même valeur de couleur dans Visual Studio 2013.<br /><br /> `Environment.ToolWindowTabGradientEnd`<br /><br /> Les points de dégradé sont définis sur la même valeur de couleur dans Visual Studio 2013.|  
-|![Onglet d’arrière-plan de fenêtre outil](../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303-105_ToolWindowBackgroundTab")<br /><br /> **Onglet de fenêtre outil arrière-plan**|Premier plan (texte)|`Environment.ToolWindowTabText`|  
-|![Onglet d’arrière-plan de fenêtre outil](../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303-105_ToolWindowBackgroundTab")<br /><br /> **Onglet de fenêtre outil arrière-plan**|Bordure|`Environment.ToolWindowTabBorder`|  
+|![Tool window background tab](../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303-105_ToolWindowBackgroundTab")<br /><br /> **Onglet de fenêtre outil arrière-plan**|Présentation|`Environment.ToolWindowTabGradientBegin`<br /><br /> Les points de dégradé sont définis sur la même valeur de couleur dans Visual Studio 2013.<br /><br /> `Environment.ToolWindowTabGradientEnd`<br /><br /> Les points de dégradé sont définis sur la même valeur de couleur dans Visual Studio 2013.|  
+|![Tool window background tab](../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303-105_ToolWindowBackgroundTab")<br /><br /> **Onglet de fenêtre outil arrière-plan**|Premier plan (texte)|`Environment.ToolWindowTabText`|  
+|![Tool window background tab](../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303-105_ToolWindowBackgroundTab")<br /><br /> **Onglet de fenêtre outil arrière-plan**|Bordure|`Environment.ToolWindowTabBorder`|  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Onglet d’arrière-plan de fenêtre outil au pointage](../extensibility/ux-guidelines/media/0303-106-toolwindowbackgroundtabhover.png "0303-106_ToolWindowBackgroundTabHover")<br /><br /> **Onglet de fenêtre outil arrière-plan au pointage**|Présentation|`Environment.ToolWindowTabMouseOverBackgroundBegin`<br /><br /> Les points de dégradé sont définis sur la même valeur de couleur dans Visual Studio 2013.<br /><br /> `Environment.ToolWindowTabMouseOverBackgroundEnd`<br /><br /> Les points de dégradé sont définis sur la même valeur de couleur dans Visual Studio 2013.|  
 |![Onglet d’arrière-plan de fenêtre outil au pointage](../extensibility/ux-guidelines/media/0303-106-toolwindowbackgroundtabhover.png "0303-106_ToolWindowBackgroundTabHover")<br /><br /> **Onglet de fenêtre outil arrière-plan au pointage**|Premier plan (texte)|`Environment.ToolWindowTabMouseOverText`|  
@@ -848,7 +843,7 @@ Insérez l'introduction ici.
   
  **Default**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Auto&#45;masquer l’onglet](../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303-108_AutoHideTab")<br /><br /> **Onglet de masquage automatique par défaut**|Présentation|`Environment.AutoHideTabBackgroundBegin`<br /><br /> Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.|  
 |![Auto&#45;masquer l’onglet](../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303-108_AutoHideTab")<br /><br /> **Onglet de masquage automatique par défaut**|Premier plan (texte)|`Environment.AutoHideTabText`|  
@@ -856,7 +851,7 @@ Insérez l'introduction ici.
   
  **Placez le curseur**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Auto&#45;masquer l’onglet au pointage](../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303-109_AutoHideTabHover")<br /><br /> **Onglet de masquage automatique au pointage**|Présentation|`Environment.AutoHideTabMouseOverBackgroundBegin`<br /><br /> Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.|  
 |![Auto&#45;masquer l’onglet au pointage](../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303-109_AutoHideTabHover")<br /><br /> **Onglet de masquage automatique au pointage**|Premier plan (texte)|`Environment.AutoHideTabMouseOverText`|  
@@ -890,7 +885,7 @@ Insérez l'introduction ici.
   
   **Focus**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Champ d’entrée de recherche actif](../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303-111_SearchInputFieldFocused")<br /><br /> **Champ d’entrée**|Présentation|`SearchControl.FocusedBackground`|  
 |![Champ d’entrée de recherche actif](../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303-111_SearchInputFieldFocused")<br /><br /> **Champ d’entrée**|Premier plan (texte)|`SearchControl.FocusedBackground`|  
@@ -907,7 +902,7 @@ Insérez l'introduction ici.
   
  **Inactif**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Champ d’entrée de recherche inactif](../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303-114_SearchInputFieldUnfocused")<br /><br /> **Champ d’entrée actif**|Présentation|`SearchControl.SearchActiveBackground`|  
 |![Champ d’entrée de recherche inactif](../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303-114_SearchInputFieldUnfocused")<br /><br /> **Champ d’entrée actif**|Premier plan (texte)|`SearchControl.SearchActiveBackground`|  
@@ -928,7 +923,7 @@ Insérez l'introduction ici.
   
  **Enfoncé**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Bouton d’action de recherche enfoncé](../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")<br /><br /> **Bouton d’action**|Présentation|`SearchControl.ActionButtonMouseDown`|  
 |![Bouton d’action de recherche enfoncé](../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")<br /><br /> **Bouton d’action**|Premier plan (glyphe)|`SearchControl.ActionButtonMouseDownGlyph`|  
@@ -939,7 +934,7 @@ Insérez l'introduction ici.
   
  **Texte mis en surbrillance (uniquement)**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Mise en surbrillance du champ d’entrée de recherche](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")<br /><br /> **Champ d’entrée avec le texte mis en surbrillance**|Présentation|`SearchControl.Selection`|  
 |![Mise en surbrillance du champ d’entrée de recherche](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")<br /><br /> **Champ d’entrée avec le texte mis en surbrillance**|Premier plan (texte)|`SearchControl.FocusedBackground`|  
@@ -948,7 +943,7 @@ Insérez l'introduction ici.
   
  **Désactivé**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Champ d’entrée de recherche désactivé](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303-121_SearchInputFieldDisabled")<br /><br /> **Champ d’entrée**|Présentation|`SearchControl.Disabled`|  
 |![Champ d’entrée de recherche désactivé](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303-121_SearchInputFieldDisabled")<br /><br /> **Champ d’entrée**|Premier plan (texte)|`SearchControl.Disabled`|  
@@ -978,7 +973,7 @@ Insérez l'introduction ici.
   
   **Par défaut (aucun autre état)**  
   
-|Élément|Nom du jeton : Category.color|  
+|Élément|Nom du jeton : Category.color|  
 |-------------|--------------------------------|  
 |Bordure|`SearchControl.PopupBorder`|  
 |Séparateur|`SearchControl.PopupSectionHeaderSeparator`|  
@@ -986,7 +981,7 @@ Insérez l'introduction ici.
   
  **Default**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Recherche suggérée](../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303-125_SearchSuggested")<br /><br /> **Recherches suggérées**|Présentation|`SearchControl.PopupItemsListBackgroundGradientBegin`<br /><br /> Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.|  
 |![Recherche suggérée](../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303-125_SearchSuggested")<br /><br /> **Recherches suggérées**|Premier plan (texte)|`SearchControl.PopupItemText`|  
@@ -1003,7 +998,7 @@ Insérez l'introduction ici.
   
  **Placez le curseur**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Recherche suggérée au pointage](../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303-128_SearchSuggestedHover")<br /><br /> **Recherches suggérées**|Présentation|`SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br /><br /> Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.|  
 |![Recherche suggérée au pointage](../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303-128_SearchSuggestedHover")<br /><br /> **Recherches suggérées**|Premier plan (texte)|`SearchControl.PopupMouseOverItemText`|  
@@ -1019,7 +1014,7 @@ Insérez l'introduction ici.
   
  **Enfoncé**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Recherche suggérée enfoncée](../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303-131_SearchSuggestedPressed")<br /><br /> **Recherches suggérées (case à cocher)**|Arrière-plan de case à cocher|`SearchControl.PopupControlMouseDownBackgroundGradientBegin`<br /><br /> Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.|  
 |![Rechercher les options enfoncées](../extensibility/ux-guidelines/media/0303-132-searchoptionspressed.png "0303-132_SearchOptionsPressed")<br /><br /> **Options de recherche**|Arrière-plan de case à cocher|`SearchControl.PopupControlMouseDownBackgroundGradientBegin`<br /><br /> Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.|  
@@ -1045,25 +1040,25 @@ Insérez l'introduction ici.
   
  **Default**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Par défaut de lien hypertexte](../extensibility/ux-guidelines/media/0303-134-hyperlink.png "0303-134_Hyperlink")|Premier plan (texte)|`Environment.PanelHyperlink`|  
   
  **Placez le curseur**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Lien hypertexte au pointage](../extensibility/ux-guidelines/media/0303-135-hyperlinkhover.png "0303-135_HyperlinkHover")|Premier plan (texte)|`Environment.PanelHyperlinkHover`|  
   
  **Enfoncé**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Lien hypertexte enfoncé](../extensibility/ux-guidelines/media/0303-136-hyperlinkpressed.png "0303-136_HyperlinkPressed")|Premier plan (texte)|`Environment.PanelHyperlinkPressed`|  
   
  **Désactivé**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Lien hypertexte désactivé](../extensibility/ux-guidelines/media/0303-137-hyperlinkdisabled.png "0303-137_HyperlinkDisabled")|Premier plan (texte)|`Environment.PanelHyperlinkDisabled`|  
   
@@ -1078,11 +1073,11 @@ Insérez l'introduction ici.
  N’utilisez pas...  
  pour les éléments d’interface utilisateur non similaires à une barre d’informations.  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Barre d’informations](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303-139_Infobar")<br /><br /> **Barre d’informations**|Présentation|`Environment.InfoBackground`|  
-|![Barre d’informations](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303-139_Infobar")<br /><br /> **Barre d’informations**|Premier plan (texte)|`Environment.InfoText`|  
-|![Barre d’informations](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303-139_Infobar")<br /><br /> **Barre d’informations**|Bordure|`Environment.ToolWindowBorder`|  
+|![Infobar](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303-139_Infobar")<br /><br /> **Infobar**|Présentation|`Environment.InfoBackground`|  
+|![Infobar](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303-139_Infobar")<br /><br /> **Infobar**|Premier plan (texte)|`Environment.InfoText`|  
+|![Infobar](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303-139_Infobar")<br /><br /> **Infobar**|Bordure|`Environment.ToolWindowBorder`|  
   
 #### <a name="scroll-bar"></a>Barre de défilement  
  Les barres de défilement sont stylisées par l’environnement Visual Studio et aucun thème ne doit leur être appliqué. Toutefois, vous pouvez décider que vous souhaitez exploiter les couleurs utilisées dans les barres de défilement afin que votre interface utilisateur apparaisse toujours cohérente avec cette partie de l’environnement Visual Studio.  
@@ -1097,28 +1092,28 @@ Insérez l'introduction ici.
   
  **Default**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Barre de défilement](../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303-141_Scrollbar")<br /><br /> **Barre de défilement**|Scrollbar|`Environment.ScrollBarBackground`|  
-|![Barre de défilement](../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303-141_Scrollbar")<br /><br /> **Barre de défilement**|Premier plan (curseur de défilement)|`Environment.ScrollBarThumbBackground`|  
+|![Barre de défilement](../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303-141_Scrollbar")<br /><br /> **Scrollbar**|Scrollbar|`Environment.ScrollBarBackground`|  
+|![Barre de défilement](../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303-141_Scrollbar")<br /><br /> **Scrollbar**|Premier plan (curseur de défilement)|`Environment.ScrollBarThumbBackground`|  
 |![Flèche de barre de défilement](../extensibility/ux-guidelines/media/0303-142-scrollbararrow.png "0303-142_ScrollbarArrow")<br /><br /> **Flèche de défilement**|Présentation|`Environment.ScrollBarArrowBackground`<br /><br /> Défini sur la même couleur que la barre de défilement.|  
 |![Flèche de barre de défilement](../extensibility/ux-guidelines/media/0303-142-scrollbararrow.png "0303-142_ScrollbarArrow")<br /><br /> **Flèche de défilement**|Premier plan (glyphe)|`Environment.ScrollBarArrowGlyph`|  
   
  **Placez le curseur**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Barre de défilement au pointage](../extensibility/ux-guidelines/media/0303-143-scrollbarhover.png "0303-143_ScrollbarHover")<br /><br /> **Barre de défilement**|Scrollbar|`Environment.ScrollBarBackground`|  
-|![Barre de défilement au pointage](../extensibility/ux-guidelines/media/0303-143-scrollbarhover.png "0303-143_ScrollbarHover")<br /><br /> **Barre de défilement**|Premier plan (curseur de défilement)|`Environment.ScrollBarThumbMouseOverBackground`|  
+|![Barre de défilement au pointage](../extensibility/ux-guidelines/media/0303-143-scrollbarhover.png "0303-143_ScrollbarHover")<br /><br /> **Scrollbar**|Scrollbar|`Environment.ScrollBarBackground`|  
+|![Barre de défilement au pointage](../extensibility/ux-guidelines/media/0303-143-scrollbarhover.png "0303-143_ScrollbarHover")<br /><br /> **Scrollbar**|Premier plan (curseur de défilement)|`Environment.ScrollBarThumbMouseOverBackground`|  
 |![Flèche de survol de barre de défilement](../extensibility/ux-guidelines/media/0303-144-scrollbararrowhover.png "0303-144_ScrollbarArrowHover")<br /><br /> **Flèche de défilement**|Présentation|`Environment.ScrollBarArrowMouseOverBackground`<br /><br /> Défini sur la même couleur que la barre de défilement.|  
 |![Flèche de survol de barre de défilement](../extensibility/ux-guidelines/media/0303-144-scrollbararrowhover.png "0303-144_ScrollbarArrowHover")<br /><br /> **Flèche de défilement**|Premier plan (glyphe)|`Environment.ScrollBarArrowGlyphMouseOver`|  
   
  **Enfoncé**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Barre de défilement enfoncée](../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303-145_ScrollbarPressed")<br /><br /> **Barre de défilement**|Scrollbar|`Environment.ScrollBarBackground`|  
-|![Barre de défilement enfoncée](../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303-145_ScrollbarPressed")<br /><br /> **Barre de défilement**|Premier plan (curseur de défilement)|`Environment.ScrollBarThumbPressedBackground`|  
+|![Scroll bar pressed](../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303-145_ScrollbarPressed")<br /><br /> **Scrollbar**|Scrollbar|`Environment.ScrollBarBackground`|  
+|![Scroll bar pressed](../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303-145_ScrollbarPressed")<br /><br /> **Scrollbar**|Premier plan (curseur de défilement)|`Environment.ScrollBarThumbPressedBackground`|  
 |![Appuyée de flèche de barre de défilement](../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303-146_ScrollbarArrowPressed")<br /><br /> **Flèche de défilement**|Présentation|`Environment.ScrollBarArrowPressedBackground`<br /><br /> Défini sur la même couleur que la barre de défilement.|  
 |![Appuyée de flèche de barre de défilement](../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303-146_ScrollbarArrowPressed")<br /><br /> **Flèche de défilement**|Premier plan (glyphe)|`Environment.ScrollBarArrowGlyphPressed`|  
   
@@ -1137,7 +1132,7 @@ Insérez l'introduction ici.
   
   **Default**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Vue arborescente](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303-148_TreeView")|Présentation|`TreeView.Background`|  
 |![Vue arborescente](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303-148_TreeView")|Premier plan (texte)|`TreeView.Background`|  
@@ -1146,7 +1141,7 @@ Insérez l'introduction ici.
   
  **Placez le curseur**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Arborescence au pointage](../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303-149_TreeViewHover")|Présentation|`TreeView.Background`|  
 |![Arborescence au pointage](../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303-149_TreeViewHover")|Premier plan (texte)|`TreeView.Background`|  
@@ -1155,16 +1150,16 @@ Insérez l'introduction ici.
   
  **Faites glisser**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Glissement d’arborescence](../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303-150_TreeViewDragOver")|Présentation|`TreeView.DragOverItem`|  
 |![Glissement d’arborescence](../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303-150_TreeViewDragOver")|Premier plan (texte)|`TreeView.DragOverItem`|  
 |![Glissement d’arborescence](../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303-150_TreeViewDragOver")|Premier plan (glyphe)|`TreeView.DragOverItemGlyph`|  
 |![Glissement d’arborescence](../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303-150_TreeViewDragOver")|Bordure|Aucun.|  
   
- **sélectionné**  
+ **Selected**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Arborescence concentré](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303-151_TreeViewFocused")<br /><br /> **Focus**|Présentation|`TreeView.SelectedItemActive`|  
 |![Arborescence concentré](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303-151_TreeViewFocused")<br /><br /> **Focus**|Premier plan (texte)|`TreeView.SelectedItemActive`|  
@@ -1177,7 +1172,7 @@ Insérez l'introduction ici.
   
  **Pointage sélectionné**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Arborescence actif au pointage](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")<br /><br /> **Focus**|Présentation|`TreeView.SelectedItemActive`|  
 |![Arborescence actif au pointage](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")<br /><br /> **Focus**|Premier plan (texte)|`TreeView.SelectedItemActive`|  
@@ -1199,35 +1194,35 @@ Insérez l'introduction ici.
   
  **Default**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Bouton](../extensibility/ux-guidelines/media/0303-156-button.png "0303-156_Button")|Bouton|`CommonControls.Button`|  
-|![Bouton](../extensibility/ux-guidelines/media/0303-156-button.png "0303-156_Button")|Bordure de bouton|`CommonControls.ButtonBorder`|  
+|![Button](../extensibility/ux-guidelines/media/0303-156-button.png "0303-156_Button")|Bouton|`CommonControls.Button`|  
+|![Button](../extensibility/ux-guidelines/media/0303-156-button.png "0303-156_Button")|Bordure de bouton|`CommonControls.ButtonBorder`|  
   
  **Désactivé**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Bouton désactivé](../extensibility/ux-guidelines/media/0303-157-buttondisabled.png "0303-157_ButtonDisabled")|Bouton|`CommonControls.ButtonDisabled`|  
 |![Bouton désactivé](../extensibility/ux-guidelines/media/0303-157-buttondisabled.png "0303-157_ButtonDisabled")|Bordure de bouton|`CommonControls.ButtonBorderDisabled`|  
   
  **Placez le curseur**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Bouton au pointage](../extensibility/ux-guidelines/media/0303-158-buttonhover.png "0303-158_ButtonHover")|Bouton|`CommonControls.ButtonHover`|  
 |![Bouton au pointage](../extensibility/ux-guidelines/media/0303-158-buttonhover.png "0303-158_ButtonHover")|Bordure de bouton|`CommonControls.ButtonBorderHover`|  
   
  **Enfoncé**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Bouton enfoncé](../extensibility/ux-guidelines/media/0303-159-buttonpressed.png "0303-159_ButtonPressed")|Bouton|`CommonControls.ButtonPressed`|  
-|![Bouton enfoncé](../extensibility/ux-guidelines/media/0303-159-buttonpressed.png "0303-159_ButtonPressed")|Bordure de bouton|`CommonControls.ButtonBorderPressed`|  
+|![Button pressed](../extensibility/ux-guidelines/media/0303-159-buttonpressed.png "0303-159_ButtonPressed")|Bouton|`CommonControls.ButtonPressed`|  
+|![Button pressed](../extensibility/ux-guidelines/media/0303-159-buttonpressed.png "0303-159_ButtonPressed")|Bordure de bouton|`CommonControls.ButtonBorderPressed`|  
   
  **Focus**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Bouton actif](../extensibility/ux-guidelines/media/0303-160-buttonfocused.png "0303-160_ButtonFocused")|Bouton|`CommonControls.ButtonFocused`|  
 |![Bouton actif](../extensibility/ux-guidelines/media/0303-160-buttonfocused.png "0303-160_ButtonFocused")|Bordure de bouton|`CommonControls.ButtonBorderFocused`|  
@@ -1243,7 +1238,7 @@ Insérez l'introduction ici.
   
  **Default**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Case à cocher](../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303-162_Checkbox")|Présentation|`CommonControls.CheckBoxBackground`|  
 |![Case à cocher](../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303-162_Checkbox")|Bordure|`CommonControls.CheckBoxBorder`|  
@@ -1252,7 +1247,7 @@ Insérez l'introduction ici.
   
  **Désactivé**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Case à cocher désactivée](../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303-163_CheckboxDisabled")|Présentation|`CommonControls.CheckBoxBackgroundDisabled`|  
 |![Case à cocher désactivée](../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303-163_CheckboxDisabled")|Bordure|`CommonControls.CheckBoxBorderDisabled`|  
@@ -1261,7 +1256,7 @@ Insérez l'introduction ici.
   
  **Placez le curseur**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Case à cocher au pointage](../extensibility/ux-guidelines/media/0303-164-checkboxhover.png "0303-164_CheckboxHover")|Présentation|`CommonControls.CheckBoxBackgroundHover`|  
 |![Case à cocher au pointage](../extensibility/ux-guidelines/media/0303-164-checkboxhover.png "0303-164_CheckboxHover")|Bordure|`CommonControls.CheckBoxBorderHover`|  
@@ -1270,7 +1265,7 @@ Insérez l'introduction ici.
   
  **Enfoncé**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Case à cocher enfoncée](../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303-165_CheckboxPressed")|Présentation|`CommonControls.CheckBoxBackgroundPressed`|  
 |![Case à cocher enfoncée](../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303-165_CheckboxPressed")|Bordure|`CommonControls.CheckBoxBorderPressed`|  
@@ -1279,7 +1274,7 @@ Insérez l'introduction ici.
   
  **Focus**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Case à cocher active](../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303-166_CheckboxFocused")|Présentation|`CommonControls.CheckBoxBackgroundFocused`|  
 |![Case à cocher active](../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303-166_CheckboxFocused")|Bordure|`CommonControls.CheckBoxBorderFocused`|  
@@ -1299,7 +1294,7 @@ Insérez l'introduction ici.
   
   **Default**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![DROP&#45;vers le bas&#47;zone de liste déroulante](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|Présentation|`CommonControls.ComboBoxBackground`|  
 |![DROP&#45;vers le bas&#47;zone de liste déroulante](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|Bordure|`CommonControls.ComboBoxBorder`|  
@@ -1310,7 +1305,7 @@ Insérez l'introduction ici.
   
  **Désactivé**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![DROP&#45;vers le bas&#47;désactivée de zone de liste déroulante](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")|Présentation|`CommonControls.ComboBoxBackgroundDisabled`|  
 |![DROP&#45;vers le bas&#47;désactivée de zone de liste déroulante](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")|Bordure|`CommonControls.ComboBoxBorderDisabled`|  
@@ -1321,7 +1316,7 @@ Insérez l'introduction ici.
   
  **Placez le curseur**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![DROP&#45;vers le bas&#47;zone de liste déroulante au pointage](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")|Présentation|`CommonControls.ComboBoxBackgroundHover`|  
 |![DROP&#45;vers le bas&#47;zone de liste déroulante au pointage](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")|Bordure|`CommonControls.ComboBoxBorderHover`|  
@@ -1332,7 +1327,7 @@ Insérez l'introduction ici.
   
  **Enfoncé**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![DROP&#45;vers le bas&#47;appuyée de zone de liste déroulante](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|Présentation|`CommonControls.ComboBoxBackgroundPressed`|  
 |![DROP&#45;vers le bas&#47;appuyée de zone de liste déroulante](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|Bordure|`CommonControls.ComboBoxBorderPressed`|  
@@ -1343,7 +1338,7 @@ Insérez l'introduction ici.
   
  **Focus**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![DROP&#45;vers le bas&#47;zone de liste déroulante concentré](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|Présentation|`CommonControls.ComboBoxBackgroundFocused`|  
 |![DROP&#45;vers le bas&#47;zone de liste déroulante concentré](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|Bordure|`CommonControls.ComboBoxBorderFocused`|  
@@ -1354,13 +1349,13 @@ Insérez l'introduction ici.
   
  **Sélection d’entrée de texte**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![DROP&#45;vers le bas&#47;entrée de texte de zone de liste déroulante](../extensibility/ux-guidelines/media/0303-173-dropdowncomboboxtextinput.png "0303-173_DropDownComboBoxTextInput")|Surligner|`CommonControls.ComboBoxTextInputSelection`|  
   
  **Appuyé : vue d’élément de liste**  
   
-|Composant|Élément|Nom du jeton : Color.category|  
+|Composant|Élément|Nom du jeton : Color.category|  
 |---------------|-------------|--------------------------------|  
 |![DROP&#45;vers le bas&#47;vue de liste de zone de liste déroulante](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Présentation|`CommonControls.ComboBoxListBackground`|  
 |![DROP&#45;vers le bas&#47;vue de liste de zone de liste déroulante](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Présentation|`CommonControls.ComboBoxListBackgroundHover`|  
@@ -1390,7 +1385,7 @@ Insérez l'introduction ici.
 ##### <a name="column-headers"></a>En-têtes de colonnes  
  Les en-têtes de colonnes comprennent un arrière-plan, une bordure, le texte du titre et un éventuel glyphe généralement utilisé pour trier une grille selon cette colonne.  
   
-|État|Élément|Nom du jeton : Category.color|  
+|État|Élément|Nom du jeton : Category.color|  
 |-----------|-------------|--------------------------------|  
 |Par défaut|Présentation|`Header.Default`|  
 |Par défaut|Premier plan (texte)|`Environment.CommandBarTextActive`|  
@@ -1408,7 +1403,7 @@ Insérez l'introduction ici.
 ##### <a name="list-view-items"></a>Éléments de la vue Liste  
  Les éléments de la vue Liste comprennent un arrière-plan et le contenu. Le contenu peut être du texte, une icône ou les deux.  
   
-|État|Élément|Nom du jeton : Category.color|  
+|État|Élément|Nom du jeton : Category.color|  
 |-----------|-------------|--------------------------------|  
 |Par défaut|Présentation|Transparent|  
 |Par défaut|Premier plan (texte)|`Environment.CommandBarTextActive`|  
@@ -1435,7 +1430,7 @@ Insérez l'introduction ici.
   
 - pour toute interface utilisateur qui n’est pas structurée comme le concepteur de manifeste.  
   
-|État|Composant|Élément|Nom du jeton : Category.color|  
+|État|Composant|Élément|Nom du jeton : Category.color|  
 |-----------|---------------|-------------|--------------------------------|  
 |Par défaut (sélectionné)|Onglet|Présentation|`ManifestDesigner.TabActive`|  
 |Par défaut (sélectionné)|Onglet|Bordure|Aucun.|  
@@ -1458,28 +1453,28 @@ Insérez l'introduction ici.
   
 #### <a name="tag"></a>Balise  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Balise](../extensibility/ux-guidelines/media/0303-177-tag.png "0303-177_Tag")<br /><br /> **Default**|Présentation|`Tag.Background`|  
-|![Balise](../extensibility/ux-guidelines/media/0303-177-tag.png "0303-177_Tag")<br /><br /> **Default**|Premier plan (texte)|`Tag.Background`|  
+|![Tag](../extensibility/ux-guidelines/media/0303-177-tag.png "0303-177_Tag")<br /><br /> **Default**|Présentation|`Tag.Background`|  
+|![Tag](../extensibility/ux-guidelines/media/0303-177-tag.png "0303-177_Tag")<br /><br /> **Default**|Premier plan (texte)|`Tag.Background`|  
 |![Étiquette au pointage](../extensibility/ux-guidelines/media/0303-178-taghover.png "0303-178_TagHover")<br /><br /> **Placez le curseur**|Présentation|`Tag.HoverBackground`|  
 |![Étiquette au pointage](../extensibility/ux-guidelines/media/0303-178-taghover.png "0303-178_TagHover")<br /><br /> **Placez le curseur**|Premier plan (texte)|`Tag.HoverBackgroundText`|  
 |![Étiquette enfoncée](../extensibility/ux-guidelines/media/0303-179-tagpressed.png "0303-179_TagPressed")<br /><br /> **Enfoncé**|Présentation|`Tag.PressedBackground`|  
 |![Étiquette enfoncée](../extensibility/ux-guidelines/media/0303-179-tagpressed.png "0303-179_TagPressed")<br /><br /> **Enfoncé**|Premier plan (texte)|`Tag.PressedBackgroundText`|  
-|![Étiquette sélectionnée](../extensibility/ux-guidelines/media/0303-180-tagselected.png "0303-180_TagSelected")<br /><br /> **sélectionné**|Présentation|`Tag.SelectedBackground`|  
-|![Étiquette sélectionnée](../extensibility/ux-guidelines/media/0303-180-tagselected.png "0303-180_TagSelected")<br /><br /> **sélectionné**|Premier plan (texte)|`Tag.SelectedBackgroundText`|  
+|![Étiquette sélectionnée](../extensibility/ux-guidelines/media/0303-180-tagselected.png "0303-180_TagSelected")<br /><br /> **Selected**|Présentation|`Tag.SelectedBackground`|  
+|![Étiquette sélectionnée](../extensibility/ux-guidelines/media/0303-180-tagselected.png "0303-180_TagSelected")<br /><br /> **Selected**|Premier plan (texte)|`Tag.SelectedBackgroundText`|  
   
 #### <a name="glyph-close-icon"></a>Glyphe (icône de fermeture)  
  **Default**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Balise &#40;glyphe&#41;](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303-181_TagGlyph")<br /><br /> **Par défaut (valeur par défaut de la balise)**|Présentation|N/A|  
 |![Balise &#40;glyphe&#41;](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303-181_TagGlyph")<br /><br /> **Par défaut (valeur par défaut de la balise)**|Premier plan (glyphe)|`Tag.TagHoverGlyph`|  
   
  **Placez le curseur**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Balise &#40;glyphe&#41; pointage](../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303-182_TagGlyphHover")<br /><br /> **Pointage (valeur par défaut de la balise)**|Présentation|`Tag.TagHoverGlyphHoverBackground`|  
 |![Balise &#40;glyphe&#41; pointage](../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303-182_TagGlyphHover")<br /><br /> **Pointage (valeur par défaut de la balise)**|Premier plan (glyphe)|`Tag.TagHoverGlyphHover`|  
@@ -1487,7 +1482,7 @@ Insérez l'introduction ici.
   
  **Enfoncé**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Balise &#40;glyphe&#41; enfoncé](../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303-183_TagGlyphPressed")<br /><br /> **Appuyé (valeur par défaut de la balise)**|Présentation|`Tag.TagHoverGlyphPressedBackground`|  
 |![Balise &#40;glyphe&#41; enfoncé](../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303-183_TagGlyphPressed")<br /><br /> **Appuyé (valeur par défaut de la balise)**|Premier plan (glyphe)|`Tag.TagHoverGlyphPressed`|  
@@ -1495,14 +1490,14 @@ Insérez l'introduction ici.
   
  **Par défaut sélectionnée/glyphe de balise**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Étiquette sélectionnée](../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303-184_TagSelected")<br /><br /> **Par défaut (étiquette sélectionnée)**|Présentation|N/A|  
 |![Étiquette sélectionnée](../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303-184_TagSelected")<br /><br /> **Par défaut (étiquette sélectionnée)**|Premier plan (glyphe)|`Tag.TagSelectedGlyph`|  
   
  **Étiquette sélectionnée/glyphe au pointage**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Étiquette sélectionnée au pointage](../extensibility/ux-guidelines/media/0303-185-tagselectedhover.png "0303-185_TagSelectedHover")<br /><br /> **Pointage (étiquette sélectionnée)**|Présentation|`Tag.TagSelectedGlyphHoverBackground`|  
 |![Étiquette sélectionnée au pointage](../extensibility/ux-guidelines/media/0303-185-tagselectedhover.png "0303-185_TagSelectedHover")<br /><br /> **Pointage (étiquette sélectionnée)**|Premier plan (glyphe)|`Tag.TagSelectedGlyphHover`|  
@@ -1510,7 +1505,7 @@ Insérez l'introduction ici.
   
  **Étiquette sélectionnée/glyphe enfoncé**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Étiquette sélectionnée enfoncée](../extensibility/ux-guidelines/media/0303-186-tagselectedpressed.png "0303-186_TagSelectedPressed")<br /><br /> **Appuyé (étiquette sélectionnée)**|Présentation|`Tag.TagSelectedGlyphPressedBackground`|  
 |![Étiquette sélectionnée enfoncée](../extensibility/ux-guidelines/media/0303-186-tagselectedpressed.png "0303-186_TagSelectedPressed")<br /><br /> **Appuyé (étiquette sélectionnée)**|Premier plan (glyphe)|`Tag.TagSelectedGlyphPressed`|  
@@ -1531,11 +1526,11 @@ Insérez l'introduction ici.
   
 -   en guise d’arrière-plan sur lequel placer des éléments de premier plan.  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |Couche inférieure|Présentation|`Environment.EnvironmentBackground`|  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |Couche supérieure|Présentation<br /><br /> *Défini sur la même valeur de couleur dans les thèmes clairs de 2013 Visual Studio et foncés de dégradé.*|`Environment.EnvironmentBackgroundGradientBegin`|  
 |Couche supérieure|Présentation<br /><br /> *Défini sur la même valeur de couleur dans les thèmes clairs de 2013 Visual Studio et foncés de dégradé.*|`Environment.EnvironmentBackgroundGradientEnd`|  
@@ -1555,7 +1550,7 @@ Insérez l'introduction ici.
   N’utilisez pas...  
   pour les zones qui ne sont pas similaires à une interface de commande.  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |Barre de menus|Présentation<br /><br /> *Défini sur la même valeur de couleur dans les thèmes clairs de 2013 Visual Studio et foncés de dégradé.*|`Environment.CommandShelfHighlightGradientBegin`|  
 |Barre de menus|Présentation<br /><br /> *Défini sur la même valeur de couleur dans les thèmes clairs de 2013 Visual Studio et foncés de dégradé.*|`Environment.CommandShelfHighlightGradientMiddle`|  
@@ -1577,7 +1572,7 @@ Insérez l'introduction ici.
   
  **Default**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Nœud parent de boîte à outils](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303-190_ToolboxParentNode")<br /><br /> **Nœud parent**|Présentation|`Environment.ToolboxContent`<br /><br /> Titres<br /><br /> `Environment.ToolWindowBackground`<br /><br /> Éléments individuels ou fenêtre entière en l’absence de contrôles disponibles|  
 |![Nœud enfant de boîte à outils](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303-191_ToolboxChildNode")<br /><br /> **Nœud enfant**|Présentation|`Environment.ToolboxContent`<br /><br /> Titres<br /><br /> `Environment.ToolWindowBackground`<br /><br /> Éléments individuels ou fenêtre entière en l’absence de contrôles disponibles|  
@@ -1590,15 +1585,15 @@ Insérez l'introduction ici.
   
  **Placez le curseur**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Nœud enfant de boîte à outils au pointage](../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303-192_ToolboxChildNodeHover")<br /><br /> **Pointage de boîte à outils sur le nœud enfant**|Présentation|`Environment.ToolboxContentMouseOver`<br /><br /> Éléments individuels uniquement|  
 |![Nœud enfant de boîte à outils au pointage](../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303-192_ToolboxChildNodeHover")<br /><br /> **Pointage de boîte à outils sur le nœud enfant**|Bordure|Aucun.|  
 |![Nœud enfant de boîte à outils au pointage](../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303-192_ToolboxChildNodeHover")<br /><br /> **Pointage de boîte à outils sur le nœud enfant**|Premier plan (texte)|`Environment.ToolboxContentMouseOver`<br /><br /> Éléments individuels uniquement|  
   
- **sélectionné**  
+ **Selected**  
   
-|Composant|Élément|Nom du jeton : Category.color|  
+|Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Nœud parent de boîte à outils concentré](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303-193_ToolboxParentNodeFocused")<br /><br /> **Nœud parent avec focus**|Présentation|`TreeView.SelectedItemActive`<br /><br /> À partir de la catégorie [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
 |![Nœud enfant de boîte à outils concentré](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")<br /><br /> **Nœud enfant avec focus**|Présentation|`TreeView.SelectedItemActive`<br /><br /> À partir de la catégorie [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  

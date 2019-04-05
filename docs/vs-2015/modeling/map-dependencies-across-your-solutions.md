@@ -1,11 +1,8 @@
 ---
 title: Mapper les dépendances dans vos solutions | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
 ms.topic: conceptual
 f1_keywords:
 - vs.progression.codemap
@@ -31,13 +28,13 @@ ms.assetid: e04850a2-17c5-459b-93ec-6c74143b3292
 caps.latest.revision: 245
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 20122a1b254eee15efb557b5899e59fc914fda3a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: c9ff6901db602a812c06c6d8cc08ce55ef6d1d7e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740048"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952585"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Mapper les dépendances dans vos solutions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,9 +54,9 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
 ##  <a name="GetStarted"></a> Prise en main des cartes de code  
  **Pour utiliser des cartes de code, il vous l’un des éléments suivants**:  
   
--   Visual Studio Enterprise pour créer des cartes de code à partir de l’éditeur de code, l’Explorateur de solutions, l’affichage de classes ou l’Explorateur d’objets ;  
+-   Visual Studio Enterprise : Créer des cartes de code à partir de l’éditeur de code, l’Explorateur de solutions, affichage de classes ou Explorateur d’objets.  
   
--   Visual Studio Professional pour ouvrir des cartes de code, effectuer des modifications mineures et parcourir le code.  
+-   Visual Studio Professional : Ouvrir des cartes de code, effectuer des modifications mineures et parcourir le code.  
   
 > [!WARNING]
 >  Avant de partager des cartes créées dans Visual Studio Enterprise avec d’autres personnes utilisant Visual Studio Professional, vérifiez que tous les éléments présents sur la carte (comme les éléments masqués, les groupes développés et les liens entre les groupes) sont visibles.  
@@ -72,7 +69,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
   
 - projets et assemblys X++ créés à partir de modules .NET pour Microsoft Dynamics AX.  
   
-  **Remarque :** pour les projets autres que C# ou Visual Basic .NET, il existe moins d’options pour démarrer une carte de code ou ajouter des éléments à une carte de code existante. Par exemple, vous ne pouvez pas cliquer avec le bouton droit sur un objet dans l’éditeur de texte d’un projet C++ et l’ajouter à une carte de code. Toutefois, vous pouvez glisser-déplacer des éléments de code individuels ou des fichiers à partir de l’Explorateur de solutions, de l’affichage de classes et de l’Explorateur d’objets.  
+  **Remarque :** Pour les projets autres que C# ou Visual Basic .NET, il existe moins d’options pour démarrer une carte de code ou ajouter des éléments à une carte de code existante. Par exemple, vous ne pouvez pas cliquer avec le bouton droit sur un objet dans l’éditeur de texte d’un projet C++ et l’ajouter à une carte de code. Toutefois, vous pouvez glisser-déplacer des éléments de code individuels ou des fichiers à partir de l’Explorateur de solutions, de l’affichage de classes et de l’Explorateur d’objets.  
   
 #### <a name="to-see-the-overall-dependencies-across-your-solution"></a>Pour afficher les dépendances globales dans votre solution  
   
@@ -319,7 +316,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
 ||Le fichier de base de données du programme (.pdb) peut ne pas être généré.<br /><br /> Un fichier .pdb stocke des informations de débogage, telles que des informations sur le type, la méthode et le fichier source.|Activez l’option **/DEBUG** dans l’éditeur de liens.<br /><br /> Consultez [/DEBUG (Generate Debug Info)](http://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103).|  
 ||Impossible d’ouvrir ou de localiser le fichier .pdb aux emplacements attendus.|Assurez-vous que le fichier .pdb existe dans les emplacements attendus.|  
 ||Les informations de débogage ont été supprimées du fichier .pdb.|Si l’option **/PDBSTRIPPED** a été utilisée dans l’éditeur de liens, incluez à la place le fichier .pdb complet.<br /><br /> Consultez [/PDBSTRIPPED (Strip Private Symbols)](http://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).|  
-||L’appelant n’est pas une fonction ; il correspond à un thunk dans le fichier binaire ou à un pointeur dans la section de données.|Lorsque l'appelant est un thunk, essayez d'utiliser `_declspec(dllimport)` pour éviter le thunk.<br /><br /> Consultez :<br /><br /> -   [Règles générales et Limitations](http://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [Importation d’appels de fonction à l’aide de __declspec (dllimport)](http://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, dllimport](http://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|  
+||L’appelant n’est pas une fonction ; il correspond à un thunk dans le fichier binaire ou à un pointeur dans la section de données.|Lorsque l’appelant est un thunk, essayez d’utiliser `_declspec(dllimport)` pour éviter le thunk.<br /><br /> Consultez :<br /><br /> -   [Règles générales et Limitations](http://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [Importation d’appels de fonction à l’aide de __declspec (dllimport)](http://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, dllimport](http://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|  
   
 ##  <a name="RenderMoreQuickly"></a> Accélérer le rendu des cartes de code  
  Quand vous générez une carte pour la première fois, Visual Studio indexe toutes les dépendances qu’il trouve. Ce processus peut prendre un certain temps, en particulier pour les solutions importantes, mais il améliore les performances ultérieures. Si votre code change, Visual Studio réindexe uniquement le code mis à jour. Pour réduire le temps nécessaire au rendu de la carte, considérez les points suivants :  
@@ -389,6 +386,3 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
 -   [Parcourir et réorganiser des cartes de code](../modeling/browse-and-rearrange-code-maps.md)  
   
 -   [Personnaliser des cartes de code en modifiant les fichiers DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
-
-
-

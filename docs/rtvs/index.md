@@ -1,15 +1,20 @@
 ---
 title: Outils R pour Visual Studio
-description: "Les Outils R pour Visual Studio\_2017 (RTVS) sont une extension gratuite open source qui fournit de nombreuses fonctionnalités de langage, notamment IntelliSense, le débogage et les espaces de travail à distance."
+description: Les Outils R pour Visual Studio 2017 (RTVS) sont une extension gratuite open source qui fournit de nombreuses fonctionnalités de langage, notamment IntelliSense, le débogage et les espaces de travail à distance.
 ms.date: 11/13/2017
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
-  - data-science
+- data-science
+ms.openlocfilehash: 385d58834aa96a3ad9e2002020dd1ce4fda3c87f
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324167"
 ---
-
 # <a name="work-with-r-in-visual-studio"></a>Utiliser R dans Visual Studio
 
 R est un langage très extensible et un environnement pour le calcul de statistiques et les graphiques. Il est distribué gratuitement sous la licence GNU GPL, bénéficie d’un large support de la Communauté et est connu pour sa capacité à générer des graphiques prêts pour la publication qui incluent des formules et des symboles mathématiques. Pour en savoir plus sur R, consultez [r-project.org](https://www.r-project.org/about.html) et [An Introduction to R](https://cran.r-project.org/doc/manuals/r-release/R-intro.html).

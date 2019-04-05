@@ -1,14 +1,9 @@
 ---
-title: 'Comment : déboguer une Application de confiance partielle | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Déboguer une Application de confiance partielle | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,15 +17,15 @@ ms.assetid: 9d30ad92-28ce-4b21-91d8-698474cddf64
 caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 76cce8cfcf57f956b5de16b72f7a275e1d629630
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7864728237e1fc84958d3edea6806508f1339902
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782048"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58947787"
 ---
-# <a name="how-to-debug-a-partial-trust-application"></a>Comment : déboguer une application de confiance partielle
+# <a name="how-to-debug-a-partial-trust-application"></a>Procédure : Déboguer une Application de confiance partielle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 S'applique aux applications Windows et console.  
@@ -89,6 +84,3 @@ S'applique aux applications Windows et console.
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Sécurité du débogueur](../debugger/debugger-security.md)
-
-
-

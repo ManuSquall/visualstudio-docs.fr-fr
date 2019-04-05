@@ -1,12 +1,9 @@
 ---
 title: Définir des packages et des espaces de noms | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML model, namespaces
 - UML, namespaces
@@ -16,13 +13,13 @@ ms.assetid: 79147068-02d5-4b70-933d-f647c1da3829
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b9295b5af83270069df11e6460ee85dfe0fd9c73
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a949d72783f3d8ac1c2f0338e4ad7057f74653aa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741905"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948652"
 ---
 # <a name="define-packages-and-namespaces"></a>Définir des packages et des espaces de noms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -218,7 +215,7 @@ Dans Visual Studio, un *package* est un conteneur pour les définitions des él�
 |**Éléments de travail**|(vide)|Liste d'éléments de travail liés. Pour plus d’informations, consultez [lier des éléments de modèle et des éléments de travail](../modeling/link-model-elements-and-work-items.md).|  
 |**Emplacement de définition**|(nom)|Nom du fichier où sont stockés les détails du package. Les fichiers sont trouvent dans le **ModelDefinition** dossier du projet. Ces informations peuvent être utiles pour le contrôle de code source.|  
 |**Description**|(vide)|Description du package.|  
-|**Stéréotypes**|(vide)|Stéréotypes appliqués à ce package. La liste des stéréotypes disponibles est déterminée par les profils que vous avez choisis pour ce package et les packages qui le contiennent. Pour plus d’informations, consultez [personnaliser votre modèle avec des profils et stéréotypes](../modeling/customize-your-model-with-profiles-and-stereotypes.md).|  
+|**Stereotypes**|(vide)|Stéréotypes appliqués à ce package. La liste des stéréotypes disponibles est déterminée par les profils que vous avez choisis pour ce package et les packages qui le contiennent. Pour plus d’informations, consultez [personnaliser votre modèle avec des profils et stéréotypes](../modeling/customize-your-model-with-profiles-and-stereotypes.md).|  
   
 ## <a name="how-packages-are-stored"></a>Stockage des packages  
  Lorsque vous créez un nouveau package, un nouveau **.uml** fichier est créé dans le **ModelDefinition** dossier du projet. Le modèle racine, qui est également un package, est également stocké dans un **.uml** fichier.  
@@ -227,9 +224,6 @@ Dans Visual Studio, un *package* est un conteneur pour les définitions des él�
   
 ## <a name="see-also"></a>Voir aussi  
  [Modifier des modèles UML et des diagrammes](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagrammes de classes UML : référence](../modeling/uml-class-diagrams-reference.md)   
- [Diagrammes de classes UML : indications](../modeling/uml-class-diagrams-guidelines.md)   
+ [Diagrammes de classes UML : Référence](../modeling/uml-class-diagrams-reference.md)   
+ [Diagrammes de classes UML : Instructions](../modeling/uml-class-diagrams-guidelines.md)   
  [Gérer des modèles et des diagrammes sous la gestion de version](../modeling/manage-models-and-diagrams-under-version-control.md)
-
-
-

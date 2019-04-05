@@ -1,25 +1,22 @@
 ---
 title: Modéliser votre application&#39;architecture s | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, modeling architecture
 ms.assetid: aedce746-9df5-49e1-9662-67eb1b83d313
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 770f93c0ede93201ee873820d6701356837f4ea9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 043d6e743df1069e268e63e8ef8acb52555ce659
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803849"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953723"
 ---
 # <a name="model-your-app39s-architecture"></a>Modéliser votre application&#39;architecture s
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +105,7 @@ Pour vous assurer que votre application ou votre système logiciel répond à vo
   Ces points sont développés dans le reste de cette section.  
   
 ### <a name="components"></a>Composants  
- Les vues centrales d'un modèle d'architecture sont les diagrammes de composants qui illustrent les parties principales du système et leurs interdépendances. Pour plus d’informations sur les diagrammes de composants, consultez [diagrammes de composants UML : référence](../modeling/uml-component-diagrams-reference.md).  
+ Les vues centrales d'un modèle d'architecture sont les diagrammes de composants qui illustrent les parties principales du système et leurs interdépendances. Pour plus d’informations sur les diagrammes de composants, consultez [diagrammes de composants UML : Référence](../modeling/uml-component-diagrams-reference.md).  
   
  ![Diagramme de composant UML illustrant les différentes parties](../modeling/media/uml-barecomponent.png "UML_BareComponent")  
   
@@ -137,7 +134,7 @@ Pour vous assurer que votre application ou votre système logiciel répond à vo
   
   Vous pouvez afficher les dépendances directement entre les composants ou entre les interfaces requises et fournies associées aux composants. L'utilisation d'interfaces vous permet de définir les opérations qui sont utilisées dans chaque dépendance. En général, les dépendances entre les composants sont indiquées lors du dessin initial des diagrammes, puis elles sont remplacées par des dépendances entre les interfaces à mesure que des informations sont ajoutées. Les deux versions sont des descriptions correctes du logiciel, mais la version avec les interfaces fournit plus de détails que la version antérieure.  
   
-  La gestion des dépendances est très importante si l'on souhaite que les logiciels soient faciles à tenir à jour. Les diagrammes de composants doivent refléter toutes les dépendances dans votre code. Si le code existe déjà, assurez-vous que toutes les dépendances sont illustrées dans les diagrammes. Si le code est en cours de développement, assurez-vous qu'il ne comprend pas de dépendances qui ne sont pas planifiées dans le diagramme de composant. Pour vous aider à découvrir des dépendances dans le code, vous pouvez générer des diagrammes de couche. Pour vous aider à garantir que vos contraintes de dépendances planifiées sont respectées, vous pouvez valider le code par rapport aux diagrammes de couche. Pour plus d’informations, consultez [diagrammes de couche : référence](../modeling/layer-diagrams-reference.md).  
+  La gestion des dépendances est très importante si l'on souhaite que les logiciels soient faciles à tenir à jour. Les diagrammes de composants doivent refléter toutes les dépendances dans votre code. Si le code existe déjà, assurez-vous que toutes les dépendances sont illustrées dans les diagrammes. Si le code est en cours de développement, assurez-vous qu'il ne comprend pas de dépendances qui ne sont pas planifiées dans le diagramme de composant. Pour vous aider à découvrir des dépendances dans le code, vous pouvez générer des diagrammes de couche. Pour vous aider à garantir que vos contraintes de dépendances planifiées sont respectées, vous pouvez valider le code par rapport aux diagrammes de couche. Pour plus d’informations, consultez [diagrammes de couche : Référence](../modeling/layer-diagrams-reference.md).  
   
 ### <a name="interfaces"></a>Interfaces  
  En plaçant des interfaces sur vos composants, vous pouvez séparer et nommer les principaux groupes d'opérations fournis par chaque composant. Par exemple, les composants d'un système de vente par Internet peuvent avoir une interface via laquelle les clients achètent des articles, une interface via laquelle les fournisseurs mettent à jour leurs catalogues et une troisième interface via laquelle les le système est géré.  
@@ -161,7 +158,7 @@ Pour vous assurer que votre application ou votre système logiciel répond à vo
 ### <a name="decomposing-a-component-into-parts"></a>Décomposition d'un composant en parties  
  Vous pouvez appliquer la procédure décrite dans les sections précédentes à chaque composant.  
   
- Dans chaque composant, vous pouvez afficher les sous-composants en tant que Parties. Une Partie est un attribut de son composant parent, qui est un genre de classe. Chaque Partie a son propre type, qui peut être un composant. Vous pouvez placer ce composant sur un diagramme et afficher ses parties. Pour plus d’informations, consultez [diagrammes de composants UML : indications](../modeling/uml-component-diagrams-guidelines.md).  
+ Dans chaque composant, vous pouvez afficher les sous-composants en tant que Parties. Une Partie est un attribut de son composant parent, qui est un genre de classe. Chaque Partie a son propre type, qui peut être un composant. Vous pouvez placer ce composant sur un diagramme et afficher ses parties. Pour plus d’informations, consultez [diagrammes de composants UML : Les instructions](../modeling/uml-component-diagrams-guidelines.md).  
   
  Il est utile appliquer cette technique à l'ensemble du système. Dessinez-le sous forme de composant unique et affichez ses principaux composants sous forme de parties. Cela vous aide à identifier clairement les interfaces de votre système avec le monde externe.  
   
@@ -199,7 +196,7 @@ Pour vous assurer que votre application ou votre système logiciel répond à vo
 ### <a name="identifying-the-initiating-events"></a>Identification des événements de lancement  
  Le travail effectué par la plupart des systèmes logiciels peut facilement être divisé en fonction des réponses fournies selon différentes entrées ou événements. L'événement de lancement peut être l'un des événements suivants :  
   
--   La première action dans un cas d'usage. Elle peut apparaître dans le modèle d'impératifs en tant qu'étape dans un cas d'usage ou action dans un diagramme d'activités. Pour plus d’informations, [diagrammes de cas d’usage UML : indications](../modeling/uml-use-case-diagrams-guidelines.md) et [diagrammes d’activités UML : instructions](../modeling/uml-activity-diagrams-guidelines.md).  
+-   La première action dans un cas d'usage. Elle peut apparaître dans le modèle d'impératifs en tant qu'étape dans un cas d'usage ou action dans un diagramme d'activités. Pour plus d’informations, [diagrammes de cas d’usage UML : Les instructions](../modeling/uml-use-case-diagrams-guidelines.md) et [diagrammes d’activités UML : Les instructions](../modeling/uml-activity-diagrams-guidelines.md).  
   
 -   Un message au niveau d'une interface de programmation. Si le système que vous développez un composant d'un système plus grand, vous devez le décrire en tant qu'opération dans l'une des interfaces du composant. Consultez [composants et leurs Interfaces](#Components).  
   
@@ -210,9 +207,9 @@ Pour vous assurer que votre application ou votre système logiciel répond à vo
   
  Dessinez une ligne de vie pour chaque instance de composant qui participe à une séquence typique. Dans certains cas, il peut y avoir plusieurs instances de chaque type. Si vous avez décrit votre système entier en tant que composant unique, il doit y avoir une ligne de vie pour chaque Partie qu'il contient.  
   
- Pour plus d’informations, consultez [diagrammes de séquence UML : indications](../modeling/uml-sequence-diagrams-guidelines.md).  
+ Pour plus d’informations, consultez [diagrammes de séquence UML : Les instructions](../modeling/uml-sequence-diagrams-guidelines.md).  
   
- Les diagrammes d'activités sont également utiles dans certains cas. Par exemple, si vos composants ont un flux continu de données, vous pouvez le décrire en tant que flux d'objet. Si votre composant a un algorithme complexe, vous pouvez le décrire en tant que flux de contrôle. Veillez à indiquer clairement quel composant exécute quelle action, par exemple à l'aide de commentaires. Pour plus d’informations, consultez [diagrammes d’activités UML : instructions](../modeling/uml-activity-diagrams-guidelines.md).  
+ Les diagrammes d'activités sont également utiles dans certains cas. Par exemple, si vos composants ont un flux continu de données, vous pouvez le décrire en tant que flux d'objet. Si votre composant a un algorithme complexe, vous pouvez le décrire en tant que flux de contrôle. Veillez à indiquer clairement quel composant exécute quelle action, par exemple à l'aide de commentaires. Pour plus d’informations, consultez [diagrammes d’activités UML : Les instructions](../modeling/uml-activity-diagrams-guidelines.md).  
   
 ### <a name="specify-the-operations"></a>Spécifier les opérations  
  Les diagrammes montrent les opérations qui sont effectuées par chaque composant, représentées sous forme de messages sur un diagramme de séquence ou sous forme d'actions sur un diagramme d'activités.  
@@ -247,7 +244,7 @@ Pour vous assurer que votre application ou votre système logiciel répond à vo
   
 -   Modèle des principales parties et de leurs relations. Il peut s'agir de classes ou de composants et d'interfaces, avec des associations et des dépendances entre eux. Les éléments appartiennent généralement à deux catégories :  
   
-    -   Éléments que le développeur doit dupliquer dans chaque partie du code où le modèle est utilisé. Vous pouvez utiliser des types de modèles pour les décrire. Pour plus d’informations, consultez [diagrammes de cas d’usage UML : référence](../modeling/uml-use-case-diagrams-reference.md).  
+    -   Éléments que le développeur doit dupliquer dans chaque partie du code où le modèle est utilisé. Vous pouvez utiliser des types de modèles pour les décrire. Pour plus d’informations, consultez [diagrammes de cas d’usage UML : Référence](../modeling/uml-use-case-diagrams-reference.md).  
   
     -   Éléments décrivant les classes d'infrastructure que le développeur doit utiliser.  
   
@@ -265,6 +262,3 @@ Pour vous assurer que votre application ou votre système logiciel répond à vo
  [Modéliser les besoins des utilisateurs](../modeling/model-user-requirements.md)   
  [Développer des tests à partir d’un modèle](../modeling/develop-tests-from-a-model.md)   
  [Utiliser des modèles dans votre processus de développement](../modeling/use-models-in-your-development-process.md)
-
-
-

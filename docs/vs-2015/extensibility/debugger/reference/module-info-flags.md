@@ -1,14 +1,9 @@
 ---
 title: MODULE_INFO_FLAGS | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - MODULE_INFO_FLAGS
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: e22d3723-b4d4-4524-8a2f-3adb55bbd273
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 198d49190075307274fd647f2920c34e29c013fd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 14c9f36c82445f5279615591d38b110163a0829d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748373"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953330"
 ---
 # <a name="moduleinfoflags"></a>MODULE_INFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -54,11 +49,10 @@ public enum enum_MODULE_INFO_FLAGS {
 ## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)
-

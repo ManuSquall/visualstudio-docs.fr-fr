@@ -1,25 +1,22 @@
 ---
-title: 'Comment : ajouter un gestionnaire glisser-déplacer | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Ajouter un gestionnaire glisser-déplacer | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 39ee88a0-85c3-485e-8c0a-d9644c6b25d9
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f89ea35c9113ddff67a9d1322b1c83c41e05709a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 47a5cab022da3d6cfc048191de116af3165401cd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848977"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950167"
 ---
-# <a name="how-to-add-a-drag-and-drop-handler"></a>Comment : ajouter un gestionnaire glisser-déplacer
+# <a name="how-to-add-a-drag-and-drop-handler"></a>Procédure : Ajouter un gestionnaire de glisser-déplacer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez ajouter des gestionnaires pour les événements glisser-déplacer à votre DSL, de telle sorte que les utilisateurs puissent faire glisser des éléments vers votre diagramme à partir d'autres diagrammes ou d'autres parties de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Vous pouvez aussi ajouter des gestionnaires pour des événements tels que les doubles clics. Ensemble, sont appelés les gestionnaires de glisser-déposer et de double-clic *gestionnaires de mouvements*.  
@@ -38,7 +35,7 @@ Vous pouvez ajouter des gestionnaires pour les événements glisser-déplacer à
   
 -   [Comment obtenir la version d’origine fait glisser l’élément](#getOriginal). Si l'élément déplacé est un élément DSL, vous pouvez ouvrir le modèle source et accéder à l'élément.  
   
--   [À l’aide des Actions de la souris : Faire glisser des éléments de compartiment](#mouseActions). Cet exemple montre un gestionnaire de niveau inférieur qui intercepte les actions de la souris sur les champs d'une forme. Cet exemple permet à l'utilisateur de réordonner les éléments dans un compartiment en les faisant glisser avec la souris.  
+-   [À l’aide des Actions de la souris : En faisant glisser des éléments de compartiment](#mouseActions). Cet exemple montre un gestionnaire de niveau inférieur qui intercepte les actions de la souris sur les champs d'une forme. Cet exemple permet à l'utilisateur de réordonner les éléments dans un compartiment en les faisant glisser avec la souris.  
   
 ##  <a name="overrideShapeElement"></a> Définition des gestionnaires de mouvements en remplaçant les méthodes ShapeElement  
  Ajoutez un nouveau fichier de code à votre projet DSL. Pour un gestionnaire d'événements, vous devez avoir au moins les instructions `using` suivantes :  
@@ -87,7 +84,7 @@ using System.Linq;
   
 - <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> – Cette méthode est appelée lorsque l'utilisateur double-clique sur la forme ou le diagramme.  
   
-   Pour plus d’informations, consultez [Comment : intercepter un événement Click sur une forme ou un décorateur](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).  
+   Pour plus d'informations, voir [Procédure : Intercepter un événement Click sur une forme ou un décorateur](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).  
   
   Définissez `IsAcceptableDropItem(e)` pour déterminer si l'élément déplacé est acceptable et ProcessDragDropItem(e) pour mettre à jour votre modèle quand l'élément est déposé. Ces méthodes doivent d'abord extraire l'élément des arguments de l'événement. Pour savoir comment procéder, consultez [comment obtenir une référence à l’élément déplacé](#extracting).  
   
@@ -143,7 +140,7 @@ using System.Linq;
   
   -   diagramEventArgs.Data.GetDataFormats() – Répertorie les formats dans lesquels vous pouvez décoder l'objet déplacé. Par exemple, si l'utilisateur déplace un fichier à partir du Bureau, les formats disponibles incluent le nom de fichier (« `FileNameW` »).  
   
-  -   `diagramEventArgs.Data.GetData(format)` – Décode l'objet déplacé au format spécifié. Effectuez une conversion de type de l'objet dans le type approprié. Par exemple :  
+  -   `diagramEventArgs.Data.GetData(format)` – Décode l'objet déplacé au format spécifié. Effectuez une conversion de type de l'objet dans le type approprié. Exemple :  
   
        `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`  
   
@@ -339,7 +336,7 @@ using System.Linq;
   
     ```  
   
-##  <a name="mouseActions"></a> À l’aide des Actions de la souris : Faire glisser des éléments de compartiment  
+##  <a name="mouseActions"></a> À l’aide des Actions de la souris : En faisant glisser des éléments de compartiment  
  Vous pouvez écrire un gestionnaire qui intercepte les actions de la souris sur les champs d'une forme. L'exemple suivant permet à l'utilisateur de réordonner les éléments dans un compartiment en les faisant glisser avec la souris.  
   
  Pour générer cet exemple, créez une solution à l’aide de la **des diagrammes de classes** modèle de solution. Ajoutez un fichier de code et ajoutez le code suivant. Adaptez l'espace de noms pour qu'il soit identique au vôtre.  
@@ -593,6 +590,3 @@ namespace Company.CompartmentDrag  // EDIT.
 ## <a name="see-also"></a>Voir aussi  
  [Personnalisation du comportement de copie](../modeling/customizing-copy-behavior.md)   
  [Déploiement de solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md)
-
-
-

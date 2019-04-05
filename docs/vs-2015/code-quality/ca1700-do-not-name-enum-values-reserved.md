@@ -1,14 +1,9 @@
 ---
-title: 'CA1700 : Ne nommez pas les valeurs enum &#39;réservé&#39; | Microsoft Docs'
-ms.custom: ''
+title: 'CA1700 : Ne nommez pas les valeurs enum &#39;réservé&#39; | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1700
 - DoNotNameEnumValuesReserved
@@ -20,14 +15,14 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3229b8432af89857d1aadd8bf1531c8b11a29ed7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a5446d21b51f57b4a614e8931b154654bee99cd2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897990"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951182"
 ---
-# <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700 : Ne nommez pas les valeurs enum &#39;réservé&#39;
+# <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700 : Ne nommez pas les valeurs enum &#39;réservé&#39;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -60,15 +55,12 @@ ms.locfileid: "49897990"
  Il est possible de supprimer un avertissement de cette règle pour un membre qui est actuellement utilisé ou pour les bibliothèques fournies antérieurement.
 
 ## <a name="related-rules"></a>Règles associées
- [CA2217 : Ne marquez pas les énumérations avec FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+ [CA2217 : Ne pas marquer les enums avec FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
- [CA1712 : Ne préfixez pas les valeurs d’énumération avec le nom du type](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
+ [CA1712 : N’ajoutez pas de valeurs d’énumération avec le nom de type préfixe](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
 
- [CA1028 : Le stockage de l’énumération doit être Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)
+ [CA1028 : Enum storage doit être Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)
 
- [CA1008 : Les énumérations doivent avoir la valeur zéro](../code-quality/ca1008-enums-should-have-zero-value.md)
+ [CA1008 : Les enums doivent avoir la valeur zéro](../code-quality/ca1008-enums-should-have-zero-value.md)
 
- [CA1027 : Marquez les énumérations avec FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
-
-
-
+ [CA1027 : Marquer les enums avec FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)

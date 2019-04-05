@@ -1,23 +1,20 @@
 ---
 title: Instructions pour l’écriture de modèles de texte T4 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 04dd3fc4-10e8-488a-bdea-4d615f50f063
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c3ed1415572dc00509abf36e7cb84311f95e4805
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: f88666d15293e6900ae99cecdc39853cda8e2f9e
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812742"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "59001246"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Instructions relatives à l'écriture de modèles de texte T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +54,7 @@ Ces instructions générales peuvent être utiles si vous générez du code de p
   Déplacer le matériel commun dans les fichiers include ou les modèles au moment de l’exécution  
   Pour éviter de répéter des blocs identiques de texte et de code dans plusieurs modèles, utilisez la `<#@ include #>` directive. Pour plus d’informations, consultez [Directive Include de T4](../modeling/t4-include-directive.md).  
   
-  Vous pouvez également créer des modèles de texte de l’exécution dans un projet distinct et les appeler à partir du modèle au moment du design. Pour ce faire, utilisez la `<#@ assembly #>` directive pour accéder au projet distinct. Pour obtenir des exemples, consultez [« L’héritage dans modèles de texte » dans le Blog de Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).  
+  Vous pouvez également créer des modèles de texte de l’exécution dans un projet distinct et les appeler à partir du modèle au moment du design. Pour ce faire, utilisez la `<#@ assembly #>` directive pour accéder au projet distinct.
   
   Envisagez de déplacer de grands blocs de code dans un assembly distinct.  
   Si vous avez des grands blocs de code et des blocs de fonctionnalité de classe, il peut être utile de déplacer une partie de ce code en méthodes que vous compilez dans un projet distinct. Vous pouvez utiliser la `<#@ assembly #>` directive pour accéder au code dans le modèle. Pour plus d’informations, consultez [Directive d’Assembly T4](../modeling/t4-assembly-directive.md).  
@@ -160,6 +157,3 @@ Team Members:
 ## <a name="see-also"></a>Voir aussi  
  [Génération de code au moment du design à l’aide de modèles de texte T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)   
  [Génération de texte à l’exécution à l’aide des modèles de texte T4](../modeling/run-time-text-generation-with-t4-text-templates.md)
-
-
-

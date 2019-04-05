@@ -1,26 +1,21 @@
 ---
-title: 'CA3075 : Traitement DTD non sécurisé | Microsoft Docs'
-ms.custom: ''
+title: 'CA3075 : Traitement DTD non sécurisé | Microsoft Docs'
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 ms.assetid: 65798d66-7a30-4359-b064-61a8660c1eed
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8284f065a829ac7ecc29330fb8a9dad74e92690e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3664061cf8c1233f3aa25341b5c77c21de51d2c7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850171"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951507"
 ---
-# <a name="ca3075-insecure-dtd-processing"></a>CA3075 : traitement DTD non sécurisé
+# <a name="ca3075-insecure-dtd-processing"></a>CA3075 : Traitement DTD non sécurisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -64,7 +59,7 @@ ms.locfileid: "49850171"
 
 - Désactivez le traitement DTD si vous utilisez des sources non approuvées en définissant le <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> propriété **true** .
 
-- La classe XmlTextReader a une demande d’héritage de confiance totale. Consultez [demandes d’héritage](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9) pour plus d’informations.
+- La classe XmlTextReader a une demande d’héritage de confiance totale. Consultez [demandes d’héritage](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) pour plus d’informations.
 
   .NET 4 et versions ultérieures
 
@@ -387,6 +382,3 @@ namespace TestNamespace
     }
 }
 ```
-
-
-

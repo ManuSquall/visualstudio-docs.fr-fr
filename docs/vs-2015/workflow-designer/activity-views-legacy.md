@@ -1,11 +1,8 @@
 ---
 title: Vues d’activité (hérité) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - activities, activity views
@@ -15,13 +12,13 @@ ms.assetid: 83dc68cd-2cb2-45c2-9a6e-10d82053171a
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: e5fb8368228118b210865b1a351d12b1b5da4b27
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 62b3c9185226512ff28c8d028cd0ba7d33b0f12f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229308"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950463"
 ---
 # <a name="activity-views-legacy"></a>Vues d'activité (héritées)
 La plupart des activités fournies par [!INCLUDE[wf](../includes/wf-md.md)], et depuis lesquelles sont composés les workflows, proposent plusieurs vues de création disponibles dans le [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité. Lorsque vous faites glisser un concepteur d’activités à partir de la **boîte à outils** sur l’aire de conception et par la suite, chaque fois que vous sélectionnez l’activité, vous pouvez basculer entre les différents modes design à l’aide la **Workflow**menu ou en double-cliquant sur l’activité sélectionnée. De la même façon, lorsque vous déplacez le pointeur sur le nom d’une activité sélectionnée, un jeu déroulant d’onglets apparaît, que vous pouvez utiliser pour alterner entre les différentes vues.  

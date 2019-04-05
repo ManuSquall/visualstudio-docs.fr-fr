@@ -1,25 +1,22 @@
 ---
-title: 'Comment : assigner des procédures stockées pour effectuer des mises à jour, insertions et suppressions (Concepteur O-R) | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Assigner des procédures stockées pour effectuer des mises à jour, insertions et suppressions (Concepteur O-R) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4f65af06a275dc50afafc70fd95c9b93d9bba458
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 957c1fe49d222a691160eadc4b2cf08f8a20a65a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232711"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951020"
 ---
-# <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Comment : assigner des procédures stockées pour effectuer des mises à jour, insertions et suppressions (Concepteur O/R)
+# <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Procédure : affecter des procédures stockées pour effectuer des mises à jour, des insertions et des suppressions (Concepteur O/R)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -38,7 +35,7 @@ Les procédures stockées peuvent être ajoutées au Concepteur O/R et être ex�
   
 #### <a name="to-assign-stored-procedures-to-override-the-default-behavior-of-an-entity-class"></a>Pour assigner des procédures stockées afin de substituer le comportement par défaut d'une classe d'entité  
   
-1.  Ouvrez le **LINQ to SQL** fichier dans le concepteur. (Double-cliquez sur le fichier .dbml dans **l’Explorateur de solutions**.)  
+1.  Ouvrez le fichier **LINQ to SQL** dans le concepteur. (Double-cliquez sur le fichier .dbml dans **l’Explorateur de solutions**.)  
   
 2.  Dans **Explorateur de serveurs**/**Database Explorer**, développez **Stored Procedures** et localisez les procédures stockées que vous souhaitez utiliser pour l’insertion, mise à jour, et/ou la suppression de la classe d’entité.  
   
@@ -48,23 +45,23 @@ Les procédures stockées peuvent être ajoutées au Concepteur O/R et être ex�
   
 4.  Sélectionnez la classe d'entité pour laquelle vous souhaitez utiliser la procédure stockée afin d'effectuer des mises à jour.  
   
-5.  Dans le **propriétés** fenêtre, sélectionnez la commande à substituer (**insérer**, **mise à jour**, ou **supprimer**).  
+5.  Dans la fenêtre **Propriétés**, sélectionnez la commande à substituer (**Insert**, **Update** ou **Delete**).  
   
-6.  Cliquez sur les points de suspension (...) à côté de l’option **utiliser le Runtime** pour ouvrir le **configurer le comportement** boîte de dialogue.  
+6.  Cliquez sur les points de suspension (...) en regard des mots **Utiliser le runtime** pour ouvrir la boîte de dialogue **Configurer le comportement**.  
   
-7.  Sélectionnez **personnaliser**.  
+7.  Sélectionnez **Personnaliser**.  
   
-8.  Sélectionnez la procédure stockée requise dans le **personnaliser** liste.  
+8.  Sélectionnez la procédure stockée voulue dans la liste **Personnaliser**.  
   
-9. Inspectez la liste de **Arguments de méthode** et **propriétés de la classe** pour vérifier que le **Arguments de méthode** mappage approprié **propriétés de la classe**. Mappez les arguments de méthode d’origine (Original_*Nom_argument*) aux propriétés d’origine (*PropertyName* (Original)) pour les commandes Update et Delete.  
+9. Inspectez la liste des **Arguments de méthode** et des **Propriétés de classe** pour vérifier que les **Arguments de méthode** mappent aux **Propriétés de classe** appropriées. Mappez les arguments de méthode d’origine (Original_*Nom_argument*) aux propriétés d’origine (*PropertyName* (Original)) pour les commandes Update et Delete.  
   
     > [!NOTE]
     >  Par défaut, les arguments de méthode sont mappés à des propriétés de classe lorsque les noms correspondent. Si les noms de propriété ont été modifiés et ne correspondent plus entre la table et la classe d'entité, vous devrez peut-être sélectionner la propriété de classe équivalente à mapper si le Concepteur O/R ne peut pas déterminer le mappage correct.  
   
-10. Cliquez sur **OK** ou **appliquer**.  
+10. Cliquez sur **OK** ou **Appliquer**.  
   
     > [!NOTE]
-    >  Vous pouvez continuer à configurer le comportement pour chaque combinaison classe/comportement tant que vous cliquez sur **appliquer** après chaque modification. Si vous modifiez la classe ou le comportement avant de cliquer sur **appliquer**, une boîte de dialogue d’avertissement offrant la possibilité d’appliquer toutes les modifications s’affiche.  
+    >  Vous pouvez continuer à configurer le comportement de chaque combinaison classe/comportement tant que vous cliquez sur **Appliquer** après chaque modification. Si vous modifiez la classe ou le comportement avant de cliquer sur **appliquer**, une boîte de dialogue d’avertissement offrant la possibilité d’appliquer toutes les modifications s’affiche.  
   
      Pour revenir à l’aide de la logique d’exécution par défaut des mises à jour, cliquez sur les points de suspension en regard de l’insertion, mise à jour, ou supprimer des commandes dans le **propriétés** fenêtre, puis sélectionnez **utiliser runtime** dans le  **Configurer le comportement** boîte de dialogue.  
   
@@ -72,7 +69,5 @@ Les procédures stockées peuvent être ajoutées au Concepteur O/R et être ex�
  [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
  [Méthodes DataContext (Concepteur O/R)](../data-tools/datacontext-methods-o-r-designer.md)   
  [Procédure pas à pas : Création des Classes LINQ to SQL (Concepteur O-R)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
- [Procédure pas à pas : Mise à jour de création de procédures stockées pour la Table Customers de Northwind](../data-tools/walkthrough-creating-update-stored-procedures-for-the-northwind-customers-table.md)   
  [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
  [Opérations d’insertion, de mise à jour et de suppression](http://msdn.microsoft.com/library/26a43a4f-83c9-4732-806d-bb23aad0ff6b)
-

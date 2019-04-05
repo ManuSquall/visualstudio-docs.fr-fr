@@ -1,27 +1,22 @@
 ---
 title: Aide de Spy ++ | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Spy++ Help contents
 ms.assetid: 82155004-8d9e-4875-b7db-237a3cffb530
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 38afcac385a846e169f0fbf601fc759fbec62304
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f07ca424bdf3b9f34439058c9a06364516ca0c02
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51723761"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953821"
 ---
 # <a name="spy-help"></a>Aide de Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ La documentation de l’utilitaire Spy ++ comprend deux groupes de sujets géné
  [Commandes de menu](../debugger/menu-commands.md)  
  Décrit les commandes disponibles dans chaque menu Spy ++.  
   
- [Boîte de dialogue de police](../debugger/font-dialog-box-microsoft-spy-increment-help.md)  
+ [Police, boîte de dialogue](../debugger/font-dialog-box-microsoft-spy-increment-help.md)  
  Utilisé pour configurer la police de caractère utilisée dans une fenêtre Vues Spy ++.  
   
  [Outils de recherche pour les vues Spy++](../debugger/search-tools-for-spy-increment-views.md)  
@@ -62,6 +57,3 @@ La documentation de l’utilitaire Spy ++ comprend deux groupes de sujets géné
   
  [Autres boîtes de dialogue](../debugger/other-dialog-boxes.md)  
  Permet d’afficher des informations sur le programme Spy ++.
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Commande, de groupe et de positionnement de la barre d’outils par défaut | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - commands [Visual Studio], default groups
 - toolbars [Visual Studio], default
@@ -19,23 +14,23 @@ helpviewer_keywords:
 ms.assetid: 35342110-d639-4577-8367-00b21dcc6f07
 caps.latest.revision: 31
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e91d535697d0e5b9402a7b7eb3bbd4559821c68a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a7fc877332f7db7b27c4a30c23f1ac395a4fc22e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773637"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951469"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>Emplacement de commande, de groupe et de barre d’outils par défaut
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Pour l’uniformité de produit et la stabilité, l’interface utilisateur affiche certains groupes de commandes par défaut, et [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fournit les définitions des commandes et des groupes de commandes. Les VSPackages peuvent également utiliser les commandes standards et les groupes de commandes.  
   
- Les groupes de commandes par défaut se répartissent en trois catégories : IDE commandes, les commandes de produits et les commandes de l’éditeur.  
+ Les groupes de commandes par défaut se répartissent en trois catégories : Commandes de l’IDE, les commandes de produit et les commandes de l’éditeur.  
   
 ## <a name="default-ide-commands"></a>Commandes de l’IDE par défaut  
- La barre d’outils des IDE par défaut inclut des commandes partagées par tous les produits contenus dans [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Celles-ci comprennent les commandes relatives aux opérations de projet générique, tel que le **enregistrer** commande et le **ajouter un élément** commande. VSPackages ne devez pas ajouter ou soustraire de cette barre d’outils, à une exception près : si le produit ou un VSPackage ajoute une nouvelle fenêtre outil, la fenêtre doit être ajoutée à la liste des fenêtres Outil disponible sur le **vue** menu. Nouveaux produits ou les VSPackages peuvent ajouter leur propre barre d’outils.  
+ La barre d’outils des IDE par défaut inclut des commandes partagées par tous les produits contenus dans [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Celles-ci comprennent les commandes relatives aux opérations de projet générique, tel que le **enregistrer** commande et le **ajouter un élément** commande. VSPackages ne devez pas ajouter ou soustraire de cette barre d’outils, à une exception près : Si le produit ou un VSPackage ajoute une nouvelle fenêtre outil, la fenêtre doit être ajoutée à la liste des fenêtres Outil disponible sur le **vue** menu. Nouveaux produits ou les VSPackages peuvent ajouter leur propre barre d’outils.  
   
 ## <a name="default-product-commands"></a>Commandes de produit par défaut  
  Chaque produit peut fournir l’IDE avec sa propre barre d’outils par défaut qui contient un important et commandes fréquemment utilisées. Toutefois, il est préférable, à utiliser existant des menus et barres d’outils autant que possible et de les compléter avec les autres barres d’outils spécifiques aux tâches en fonction des besoins.  
@@ -50,4 +45,3 @@ Pour l’uniformité de produit et la stabilité, l’interface utilisateur affi
 ## <a name="see-also"></a>Voir aussi  
  [Groupes, les Menus et commandes définies par l’IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)   
  [Comment VSPackages ajoute des éléments de l’interface utilisateur](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-

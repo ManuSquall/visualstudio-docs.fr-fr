@@ -1,27 +1,22 @@
 ---
 title: Classe de tâche - membres internes | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, Task class [.NET Framework]
 - Task class [.NET Framework debug engines]
 ms.assetid: 28e47c3b-9323-424a-80ac-6cc3bf19e09b
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 92ddc4b00f9d8eb37893e1db7ae44802e04e9c46
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 200b35e60d3d468a934565959629298e6c6f04bf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764830"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954056"
 ---
 # <a name="task-class---internal-members"></a>Classe de tâche - Membres internes
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,11 +51,11 @@ Cette rubrique décrit les membres internes de la <xref:System.Threading.Tasks.T
   
 ### <a name="fields"></a>Champs  
   
-|Name|Description|  
+|Nom|Description|  
 |----------|-----------------|  
 |[m_action](../../extensibility/debugger/m-action-field.md)|Délégué qui représente le code à exécuter dans le <xref:System.Threading.Tasks.Task> objet.|  
 |[m_contingentProperties](../../extensibility/debugger/m-contingentproperties-field.md)|Stocke des propriétés supplémentaires de la <xref:System.Threading.Tasks.Task> objet.|  
-|[m_Parent](../../extensibility/debugger/m-parent-field.md)|Le champ de stockage pour le <xref:System.Threading.Tasks.Task?displayProperty=fullName> propriété parente.|  
+|[m_parent](../../extensibility/debugger/m-parent-field.md)|Le champ de stockage pour le <xref:System.Threading.Tasks.Task?displayProperty=fullName> propriété parente.|  
 |[m_stateFlags](../../extensibility/debugger/m-stateflags-field.md)|Stocke des informations sur l’état actuel de la <xref:System.Threading.Tasks.Task> objet.|  
 |[m_stateObject](../../extensibility/debugger/m-stateobject-field.md)|Objet qui représente les données qui seront utilisées par l’action.|  
 |[m_taskId](../../extensibility/debugger/m-taskid-field.md)|Le champ de stockage pour le <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName> propriété.|  
@@ -89,4 +84,3 @@ Cette rubrique décrit les membres internes de la <xref:System.Threading.Tasks.T
 ## <a name="see-also"></a>Voir aussi  
  <xref:System.Threading.Tasks.Task?displayProperty=fullName>   
  [Valeurs internes d’extension parallèle pour .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
-

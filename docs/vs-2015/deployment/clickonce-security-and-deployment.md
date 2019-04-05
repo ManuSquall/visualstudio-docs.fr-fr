@@ -1,14 +1,9 @@
 ---
 title: Sécurité et déploiement ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +17,13 @@ ms.assetid: abab6d34-c3c2-45c1-a8b6-43c7d3131e7a
 caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 50654574dea18df98f8f4ecef8d606cccec93f14
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 835bab46a9537a3a54d0155d9835ab11eaa4c834
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898172"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938340"
 ---
 # <a name="clickonce-security-and-deployment"></a>Sécurité et déploiement ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,9 +43,9 @@ ms.locfileid: "49898172"
 ## <a name="what-is-a-clickonce-application"></a>Qu’est une Application ClickOnce ?  
  Un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application est Windows Presentation Foundation (.xbap), Windows Forms (.exe), application console (.exe) ni publiées à l’aide de la solution Office (.dll) [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] technologie. Vous pouvez publier un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application de trois façons différentes : à partir d’une page Web, à partir d’un partage de fichiers réseau ou à partir d’un support tel qu’un CD-ROM. Un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application peut être installée sur l’ordinateur de l’utilisateur final et exécutée localement même si l’ordinateur est hors connexion, ou il peut être exécuté en mode en ligne uniquement sans installer quoi que ce soit de façon permanente sur l’ordinateur de l’utilisateur final. Pour plus d’informations, consultez [Choix d’une stratégie de déploiement ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).  
   
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applications peuvent être mise à jour automatique ; elles peuvent vérifier les versions plus récentes dès qu’ils sont disponibles et remplacement automatiquement tous les fichiers mis à jour. Le développeur peut spécifier le comportement de mise à jour ; un administrateur réseau peut également contrôler les stratégies, par exemple, marquer une mise à jour comme étant obligatoire de mettre à jour. Mises à jour peuvent également être restaurées vers une version antérieure restaurée par l’utilisateur final ou par un administrateur. Pour plus d’informations, consultez [choix d’une stratégie de mise à jour ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).  
+ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applications peuvent être mise à jour automatique ; elles peuvent vérifier les versions plus récentes dès qu’ils sont disponibles et remplacement automatiquement tous les fichiers mis à jour. Le développeur peut définir le comportement de mise à jour, et un administrateur réseau peut aussi contrôler les stratégies de mise à jour, par exemple en marquant une mise à jour comme étant obligatoire. Mises à jour peuvent également être restaurées vers une version antérieure restaurée par l’utilisateur final ou par un administrateur. Pour plus d’informations, consultez [choix d’une stratégie de mise à jour ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).  
   
- Étant donné que [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] les applications sont isolées, l’installation ou exécutant une [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application ne peut pas arrêter des applications existantes. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] les applications sont autonomes ; chaque [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application est installée et exécutée à partir d’un sécurisé cache par utilisateur, par application. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applications s’exécutent dans les zones de sécurité Internet ou Intranet. Si nécessaire, l’application peut demander des autorisations de sécurité avec élévation de privilèges. Pour plus d’informations, consultez [Sécurisation des applications ClickOnce](../deployment/securing-clickonce-applications.md).  
+ Étant donné que [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] les applications sont isolées, l’installation ou exécutant une [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application ne peut pas arrêter des applications existantes. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] les applications sont autonomes ; chaque [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application est installée et exécutée à partir d’un sécurisé cache par utilisateur, par application. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applications s’exécutent dans les zones de sécurité Internet ou Intranet. Si nécessaire, l’application peut demander des autorisations de sécurité élevées. Pour plus d’informations, consultez [Sécurisation des applications ClickOnce](../deployment/securing-clickonce-applications.md).  
   
 ## <a name="how-clickonce-security-works"></a>Fonctionne de la sécurité ClickOnce  
  Le cœur [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] est basée sur les certificats, les stratégies de sécurité d’accès au code et l’invite d’approbation ClickOnce.  
@@ -62,18 +57,18 @@ ms.locfileid: "49898172"
  Sécurité d’accès du code permet de limiter l’accès dont dispose le code aux ressources protégées. Dans la plupart des cas, vous pouvez choisir les zones Internet ou Intranet Local pour limiter les autorisations. Utilisez le **sécurité** page dans le **ProjectDesigner** pour demander la zone appropriée pour l’application. Vous pouvez également déboguer des applications avec des autorisations restreintes pour émuler l’expérience utilisateur final. Pour plus d’informations, consultez [Sécurité d’accès du code pour les applications ClickOnce](../deployment/code-access-security-for-clickonce-applications.md).  
   
 ### <a name="clickonce-trust-prompt"></a>Invite d’approbation ClickOnce  
- Si l’application demande plus d’autorisations que vous permet de la zone, l’utilisateur final peut être invité à prendre une décision d’approbation. L’utilisateur final peut décider si les applications ClickOnce telles que les applications Windows Forms, les applications Windows Presentation Foundation, les applications de console, les applications de navigateur XAML et les solutions Office sont approuvées pour exécution. Pour plus d’informations, consultez [Comment : configurer le comportement d’invite d’approbation ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).  
+ Si l’application demande plus d’autorisations que vous permet de la zone, l’utilisateur final peut être invité à prendre une décision d’approbation. L’utilisateur final peut décider si les applications ClickOnce telles que les applications Windows Forms, les applications Windows Presentation Foundation, les applications de console, les applications de navigateur XAML et les solutions Office sont approuvées pour exécution. Pour plus d'informations, voir [Procédure : Configurer le comportement d’invite d’approbation ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).  
   
 ## <a name="how-clickonce-deployment-works"></a>Fonctionnement du déploiement de ClickOnce  
  Le cœur [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] architecture de déploiement repose sur deux fichiers manifeste XML : un manifeste d’application et un manifeste de déploiement. Les fichiers sont utilisés pour décrire dans lequel les applications ClickOnce sont installées à partir de, comment ils sont mis à jour, et lorsqu’ils sont mis à jour.  
   
 ### <a name="publishing-clickonce-applications"></a>Publication d'applications ClickOnce  
- Le manifeste d’application décrit l’application elle-même. Cela inclut les assemblys, les dépendances et les fichiers qui composent l’application, les autorisations requises et l’emplacement où les mises à jour seront disponibles. Le développeur d’applications crée le manifeste d’application à l’aide de l’Assistant Publication dans Visual Studio ou Manifest Generation and Editing Tool (Mage.exe) dans le [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Pour plus d’informations, consultez [Comment : publier une Application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+ Le manifeste d’application décrit l’application elle-même. Cela inclut les assemblys, les dépendances et les fichiers qui composent l’application, les autorisations requises et l’emplacement où les mises à jour seront disponibles. Le développeur d’applications crée le manifeste d’application à l’aide de l’Assistant Publication dans Visual Studio ou Manifest Generation and Editing Tool (Mage.exe) dans le [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Pour plus d'informations, voir [Procédure : publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
- Le manifeste de déploiement décrit comment l’application est déployée. Cela inclut l’emplacement du manifeste d’application et la version de l’application que les clients doivent exécuter.  
+ Le manifeste de déploiement décrit la façon dont l’application est déployée. Cela inclut l’emplacement du manifeste d’application et la version de l’application que les clients doivent exécuter.  
   
 ### <a name="deploying-clickonce-applications"></a>Déploiement d’Applications ClickOnce  
- Après sa création, le manifeste de déploiement est copié vers l’emplacement de déploiement. Cela peut être un serveur Web, partage de fichiers réseau ou un support tel qu’un CD. Le manifeste d’application et tous les fichiers d’application sont également copiés vers un emplacement de déploiement qui est spécifié dans le manifeste de déploiement. Cela peut être le même que l’emplacement de déploiement, ou il peut être un autre emplacement. Lorsque vous utilisez le **Assistant Publication** dans Visual Studio, les opérations de copie sont exécutées automatiquement.  
+ Après sa création, le manifeste de déploiement est copié vers l’emplacement de déploiement. Il peut s’agir d’un serveur web, d’un partage de fichiers réseau ou d’un support comme un CD-ROM. Le manifeste d’application et tous les fichiers d’application sont également copiés vers un emplacement de déploiement qui est spécifié dans le manifeste de déploiement. Il peut s’agir du même emplacement que celui du déploiement ou d’un autre emplacement. Lorsque vous utilisez le **Assistant Publication** dans Visual Studio, les opérations de copie sont exécutées automatiquement.  
   
 ### <a name="installing-clickonce-applications"></a>L’installation d’Applications ClickOnce  
  Après que qu’il est déployé à l’emplacement de déploiement, les utilisateurs finaux peuvent télécharger et installer l’application en cliquant sur une icône représentant le fichier manifeste de déploiement sur une page Web ou dans un dossier. Dans la plupart des cas, l’utilisateur final est présenté avec une simple boîte de dialogue invitant l’utilisateur à confirmer l’installation, après quoi l’installation continue et l’application est lancée sans autre intervention. Dans les cas où l’application nécessite des autorisations élevées ou si l’application n’est pas signée par un certificat approuvé, la boîte de dialogue demande également à l’utilisateur pour accorder l’autorisation avant de poursuivre l’installation. Bien que les installations ClickOnce soient par utilisateur, l’élévation d’autorisations peut être nécessaire s’il existe des conditions préalables qui nécessitent des privilèges d’administrateur. Pour plus d’informations sur les autorisations élevées, consultez [sécurisation des Applications ClickOnce](../deployment/securing-clickonce-applications.md).  
@@ -91,7 +86,7 @@ ms.locfileid: "49898172"
 > [!NOTE]
 >  Le **Assistant Publication** dans Visual Studio peut être utilisé pour effectuer ces étapes.  
   
- Outre l’emplacement de déploiement, le manifeste de déploiement contient également un emplacement de mise à jour (une page Web ou réseau partage de fichiers) où l’application vérifie les versions mises à jour. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] **Publier** propriétés sont utilisées pour spécifier quand et à quelle fréquence l’application doit vérifier les mises à jour. Comportement de mise à jour peut être spécifié dans le manifeste de déploiement, ou il peut être présenté en tant que choix de l’utilisateur dans l’interface utilisateur de l’application par le biais de la [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] API. En outre, **publier** propriétés peuvent être employées pour mettre à jour obligatoire ou restaurer une version antérieure. Pour plus d’informations, consultez [choix d’une stratégie de mise à jour ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).  
+ Outre l’emplacement de déploiement, le manifeste de déploiement contient également un emplacement de mise à jour (une page Web ou réseau partage de fichiers) où l’application vérifie les versions mises à jour. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] **Publier** propriétés sont utilisées pour spécifier quand et à quelle fréquence l’application doit vérifier les mises à jour. Comportement de mise à jour peut être spécifié dans le manifeste de déploiement, ou il peut être présenté en tant que choix de l’utilisateur dans l’interface utilisateur de l’application par le biais de la [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] API. En outre, les propriétés **Publish** peuvent être utilisées pour rendre les mises à jour obligatoires ou pour restaurer une version antérieure. Pour plus d’informations, consultez [choix d’une stratégie de mise à jour ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).  
   
 ### <a name="third-party-installers"></a>Programmes d’installation tiers  
  Vous pouvez personnaliser votre programme d’installation ClickOnce pour installer les composants tiers, ainsi que votre application. Vous devez disposer du package redistribuable (fichier .exe ou .msi) et décrire le package avec un manifeste de produit de linguistiquement neutre et un manifeste de package de langage spécifique. Pour plus d’informations, consultez [création de Packages de programme d’amorçage](../deployment/creating-bootstrapper-packages.md).  
@@ -124,6 +119,3 @@ ms.locfileid: "49898172"
  [Déploiement de composants COM avec ClickOnce](../deployment/deploying-com-components-with-clickonce.md)   
  [Génération d’applications ClickOnce à partir de la ligne de commande](../deployment/building-clickonce-applications-from-the-command-line.md)   
  [Débogage des applications ClickOnce qui utilisent System.Deployment.Application](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md)
-
-
-

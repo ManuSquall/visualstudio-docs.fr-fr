@@ -1,24 +1,19 @@
 ---
 title: Obtention d’informations de Service à partir du Store paramètres | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 7028d440-d16d-4b08-9b94-eb8cc93b25fc
 caps.latest.revision: 5
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4fee0918c0506fe433377a3063c30be1d8b03f89
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f180642cf40c28bafcaf16eb68c36fc157914f11
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789354"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949411"
 ---
 # <a name="getting-service-information-from-the-settings-store"></a>Obtention d’informations de service de la banque de paramètres
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,4 +83,3 @@ Vous pouvez utiliser la banque de paramètres pour rechercher tous les services 
 3.  Dans l’instance expérimentale, sur le **outils** menu, cliquez sur **FindServicesCommand appeler**.  
   
      Vous devez voir un message avec le texte **aide Service Available :** suivie **True** ou **False**. Pour vérifier ce paramètre, vous pouvez utiliser un éditeur du Registre, comme indiqué dans les étapes précédentes.
-

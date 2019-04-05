@@ -1,12 +1,9 @@
 ---
 title: Ajout d’une propriété de suivi à une définition de Domain-Specific Language | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - tracking properties [Domain-Specific Language Tools], walkthrough
 - Domain-Specific Language Tools, walkthroughs
@@ -15,13 +12,13 @@ ms.assetid: 4aa47777-de75-4897-a423-a3c4426b4125
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6103f9601c55b9b29b83866d261d889c5555c86f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 164586555c9027481b157f1232ce3d41e0fe40b0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894376"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952683"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Ajout d'une propriété de suivi à une définition de langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +29,7 @@ Cette procédure pas à pas montre comment ajouter une propriété de suivi à u
   
  Par exemple, dans les outils de langage spécifique à un domaine (outils DSL), le nom d’affichage propriété d’une classe de domaine a la valeur par défaut qui est calculée en utilisant le nom de la classe de domaine, mais un utilisateur peut modifier la valeur au moment du design ou réaffectez-lui la valeur calculée.  
   
- Cette procédure pas à pas, vous allez créer un langage spécifique à un domaine (DSL) qui a une propriété qui a comme valeur par défaut basée sur la propriété Namespace de valeur par défaut du modèle de suivi de Namespace. Pour plus d’informations sur les propriétés de suivi, consultez [définissant les propriétés de suivi](http://msdn.microsoft.com/en-us/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
+ Cette procédure pas à pas, vous allez créer un langage spécifique à un domaine (DSL) qui a une propriété qui a comme valeur par défaut basée sur la propriété Namespace de valeur par défaut du modèle de suivi de Namespace. Pour plus d’informations sur les propriétés de suivi, consultez [définissant les propriétés de suivi](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
   
 - La prise en charge d’outils DSL suivi des descripteurs de propriété. Toutefois, le concepteur DSL ne peut pas servir à ajouter une propriété de suivi à un langage. Par conséquent, vous devez ajouter un code personnalisé pour définir et implémenter la propriété de suivi.  
   
@@ -725,7 +722,7 @@ Cette procédure pas à pas montre comment ajouter une propriété de suivi à u
   
 #### <a name="to-exercise-the-language"></a>Pour tester la langue  
   
-1.  Sur le **Build** menu, cliquez sur **régénérer la Solution**.  
+1.  Dans le menu **Générer**, cliquez sur **Régénérer la solution**.  
   
 2.  Dans le menu **Déboguer**, cliquez sur **Démarrer le débogage**.  
   
@@ -766,8 +763,5 @@ Cette procédure pas à pas montre comment ajouter une propriété de suivi à u
  <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>   
  <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>   
  [Comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md)   
- [Comment : créer une Solution de langage spécifique à un domaine](../modeling/how-to-create-a-domain-specific-language-solution.md)   
- [Procédures pas à pas : personnalisation de la définition d’un langage spécifique à un domaine](../misc/walkthrough-customizing-the-domain-specific-language-definition.md)
-
-
-
+ [Guide pratique pour Créer une Solution de langage spécifique à un domaine](../modeling/how-to-create-a-domain-specific-language-solution.md)   
+ [Procédure pas à pas : Personnalisation de la définition de Domain-Specific Language](../misc/walkthrough-customizing-the-domain-specific-language-definition.md)

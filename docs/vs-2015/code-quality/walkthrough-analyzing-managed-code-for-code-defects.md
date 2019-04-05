@@ -1,14 +1,9 @@
 ---
 title: 'Procédure pas à pas : Analyse du Code managé pour les erreurs de Code | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, walkthroughs
 - managed code, analyzing
@@ -18,14 +13,14 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0b9d6aba5997182578b43ac9edd3c889bcfc365e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7ee957d6be2cfc75a0ecdd780862c34eb5a1c540
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912888"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952472"
 ---
-# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Procédure pas à pas : analyse du code managé pour les erreurs de code
+# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Procédure pas à pas : Analyse du code géré pour la recherche des défaillances du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dans cette procédure pas à pas, vous analysez un projet managé pour détecter les erreurs de code à l’aide de l’outil d’analyse de code.  
@@ -106,15 +101,15 @@ Dans cette procédure pas à pas, vous analysez un projet managé pour détecter
   
        Regénérez le projet.  
   
-- [CA1032 : Implémenter des constructeurs d’exception standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design : ajoutez le constructeur suivant à cette classe : public demo (String)  
+- [CA1032 : Implémenter des constructeurs d’exception standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design : Ajoutez le constructeur suivant à cette classe : public demo (String)  
   
   -   Ajoutez le constructeur `public demo (String s) : base(s) { }` à la classe `demo`.  
   
-- [CA1032 : Implémenter des constructeurs d’exception standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design : ajoutez le constructeur suivant à cette classe : public demo (String, Exception)  
+- [CA1032 : Implémenter des constructeurs d’exception standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design : Ajoutez le constructeur suivant à cette classe : public demo (String, Exception)  
   
   -   Ajoutez le constructeur `public demo (String s, Exception e) : base(s, e) { }` à la classe `demo`.  
   
-- [CA1032 : Implémenter des constructeurs d’exception standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design : ajoutez le constructeur suivant à cette classe : protected demo (SerializationInfo, StreamingContext)  
+- [CA1032 : Implémenter des constructeurs d’exception standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design : Ajoutez le constructeur suivant à cette classe : protected demo (SerializationInfo, StreamingContext)  
   
   -   Ajoutez le code `using System.Runtime.Serialization;` au début du fichier Class1.cs.  
   
@@ -122,29 +117,29 @@ Dans cette procédure pas à pas, vous analysez un projet managé pour détecter
   
        Regénérez le projet.  
   
-- [CA1032 : Implémenter des constructeurs d’exception standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design : ajoutez le constructeur suivant à cette classe : public demo()  
+- [CA1032 : Implémenter des constructeurs d’exception standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design : Ajoutez le constructeur suivant à cette classe : public demo()  
   
   -   Ajoutez le constructeur `public demo () : base() { }` à la classe `demo` **.**  
   
        Regénérez le projet.  
   
-- [CA1709 : La casse des identificateurs doivent être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming : corrigez la casse du nom de l’espace de noms « testCode » en le redéfinissant sur « TestCode ».  
+- [CA1709 : Identificateurs doivent être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming : Corrigez la casse du nom de l’espace de noms « testCode » en le redéfinissant sur « TestCode ».  
   
   -   Modifier la casse de l’espace de noms `testCode` à `TestCode`.  
   
-- [CA1709 : La casse des identificateurs doivent être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming : corrigez la casse du nom de type « demo » en le redéfinissant sur « Demo ».  
+- [CA1709 : Identificateurs doivent être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming : Corrigez la casse du nom de type « demo » en le redéfinissant sur « Demo ».  
   
   -   Modifier le nom du membre à `Demo`.  
   
-- [CA1709 : La casse des identificateurs doivent être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming : corrigez la casse du nom de membre 'item' changez-la en 'Item'.  
+- [CA1709 : Identificateurs doivent être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming : Corrigez la casse du nom de membre 'item' changez-la en 'Item'.  
   
   -   Modifier le nom du membre à `Item`.  
   
-- [CA1710 : Les identificateurs doivent avoir un suffixe correct](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming : Renommez 'testCode.Demo qu’il se' pour se terminer par 'Exception'.  
+- [CA1710 : Les identificateurs doivent avoir un suffixe correct](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming : Renommer « TestCode.Demo qu’il se » à la fin de 'Exception'.  
   
   -   Modifier le nom de la classe et ses constructeurs à `DemoException`.  
   
-- [CA2210 : Les assemblys doivent avoir des noms forts valides](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): Signez 'ManagedDemo' avec une clé de nom fort.  
+- [CA2210 : Assemblys doivent avoir des noms forts valides](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): Signez 'ManagedDemo' avec une clé de nom fort.  
   
   -   Sur le **projet** menu, cliquez sur **ManagedDemo propriétés**.  
   
@@ -166,7 +161,7 @@ Dans cette procédure pas à pas, vous analysez un projet managé pour détecter
   
        Regénérez le projet.  
   
-- [CA2237 : Marquez les types ISerializable avec SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage : ajoutez un attribut [Serializable] au type 'demo' car ce type implémente ISerializable.  
+- [CA2237 : Marquer les types ISerializable avec SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage : Ajoutez un attribut [Serializable] au type 'demo' car ce type implémente ISerializable.  
   
   -   Ajouter le `[Serializable ()]` à la classe d’attribut `demo`.  
   
@@ -208,11 +203,8 @@ namespace TestCode
   
    2. Choisissez **Actions**, puis choisissez **supprimer le Message**, puis choisissez **dans le fichier de Suppression de projet**.  
   
-      Pour plus d’informations, consultez [Comment : supprimer les avertissements à l’aide de l’élément de Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)  
+      Pour plus d'informations, voir [Procédure : Supprimer les avertissements à l’aide de l’élément de Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)  
   
 2. Regénérez le projet.  
   
     Le projet est généré sans les avertissements ou erreurs.
-
-
-

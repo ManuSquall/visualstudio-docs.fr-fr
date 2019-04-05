@@ -1,14 +1,9 @@
 ---
 title: Référence du schéma Package et produit | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: reference
 f1_keywords:
 - MSBuild.GenerateBootstrapper.CircularIncludes
 - MSBuild.ResolveManifestFiles.PublishFileNotFound
@@ -30,13 +25,13 @@ ms.assetid: 5a74878f-b896-4cca-b968-98d00fe78fb0
 caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 6fb70a1dff0f166aabeaf0facdd4b031f3d4fb6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 2fe0d270593ef526405b0be4cde8bc5da10af413
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271028"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950082"
 ---
 # <a name="product-and-package-schema-reference"></a>Référence du schéma de produit et de package
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,13 +42,13 @@ Un *fichier produit* est un manifeste XML qui décrit toutes les dépendances ex
   
 |Élément|Description|Attributs|  
 |-------------|-----------------|----------------|  
-|[\<Produit > élément](../deployment/product-element-bootstrapper.md)|Élément de niveau supérieur requis pour les fichiers du produit.|Aucun.|  
-|[\<Package > élément](../deployment/package-element-bootstrapper.md)|Élément de niveau supérieur requis pour les fichiers de package.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
-|[\<RelatedProducts > élément](../deployment/relatedproducts-element-bootstrapper.md)|Élément facultatif pour les fichiers du produit. Les autres produits qui installe ou qui dépend de ce produit.|Aucun.|  
-|[\<InstallChecks > élément](../deployment/installchecks-element-bootstrapper.md)|Élément requis. Répertorie les vérifications de dépendance pour effectuer sur l’ordinateur local lors de l’installation.|Aucun.|  
-|[\<Commandes > élément](../deployment/commands-element-bootstrapper.md)|Élément requis.  Exécute une ou plusieurs vérifications de l’installation comme décrit par `InstallChecks`et désigne le package à installer, si la vérification échoue.|Aucun.|  
-|[\<Tâches PackageFiles > élément](../deployment/packagefiles-element-bootstrapper.md)|Élément requis. Répertorie les packages qui peuvent être installés par ce processus d’installation.|Aucun.|  
-|[\<Chaînes > élément](../deployment/strings-element-bootstrapper.md)|Élément requis. Stocke les versions localisées des chaînes d’erreurs et du nom de produit.|Aucun.|  
+|[\<Product>, élément](../deployment/product-element-bootstrapper.md)|Élément de niveau supérieur requis pour les fichiers du produit.|Aucun.|  
+|[\<Package>, élément](../deployment/package-element-bootstrapper.md)|Élément de niveau supérieur requis pour les fichiers de package.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
+|[\<RelatedProducts>, élément](../deployment/relatedproducts-element-bootstrapper.md)|Élément facultatif pour les fichiers du produit. Les autres produits qui installe ou qui dépend de ce produit.|Aucun.|  
+|[\<InstallChecks>, élément](../deployment/installchecks-element-bootstrapper.md)|Élément requis. Répertorie les vérifications de dépendance pour effectuer sur l’ordinateur local lors de l’installation.|Aucun.|  
+|[\<Commands>, élément](../deployment/commands-element-bootstrapper.md)|Élément requis.  Exécute une ou plusieurs vérifications de l’installation comme décrit par `InstallChecks`et désigne le package à installer, si la vérification échoue.|Aucun.|  
+|[\<PackageFiles>, élément](../deployment/packagefiles-element-bootstrapper.md)|Élément requis. Répertorie les packages qui peuvent être installés par ce processus d’installation.|Aucun.|  
+|[\<Strings>, élément](../deployment/strings-element-bootstrapper.md)|Élément requis. Stocke les versions localisées des chaînes d’erreurs et du nom de produit.|Aucun.|  
   
 ## <a name="remarks"></a>Notes  
  Le schéma du package est utilisé par Setup.exe, un programme stub généré par la tâche d’amorçage MS Build contenant peu de logique de son propre codées en dur. Le schéma pilote chaque aspect du processus d’installation.  
@@ -168,6 +163,3 @@ Un *fichier produit* est un manifeste XML qui décrit toutes les dépendances ex
 ## <a name="see-also"></a>Voir aussi  
  [Manifeste de déploiement ClickOnce](../deployment/clickonce-deployment-manifest.md)   
  [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
-
-
-

@@ -1,27 +1,24 @@
 ---
 title: Ajouter une validation d’architecture personnalisée aux diagrammes de couche | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, adding custom validation
 ms.assetid: fed7bc08-295a-46d6-9fd8-fb537f1f75f1
 caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 9748f2f7b43426f7f981d027400f097b260bf23d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 6cf1dad590a8d7632e9077764e85f432373cc54b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817514"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953209"
 ---
-# <a name="add-custom-architecture-validation-to-layer-diagrams"></a>Ajouter une validation d’architecture personnalisée aux diagrammes de couche
+# <a name="add-custom-architecture-validation-to-layer-diagrams"></a>Ajouter une validation d'architecture personnalisée aux diagrammes de couche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dans Visual Studio, les utilisateurs peuvent valider le code source dans un projet par rapport à un modèle de couche de manière à vérifier que le code source est conforme aux dépendances sur un diagramme de couche. Il existe un algorithme de validation standard, mais vous pouvez définir vos propres extensions de validation.  
@@ -154,7 +151,7 @@ Dans Visual Studio, les utilisateurs peuvent valider le code source dans un proj
   
   Quand l’utilisateur appelle la commande de menu **Valider l’architecture** , le système runtime de couche analyse les couches et leurs artefacts pour produire un graphique. Le graphique se compose de quatre parties :  
   
-- les modèles de couche de la solution [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] représentés sous forme de nœuds et de liens dans le graphique ;  
+- les modèles de couche de la solution [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] représentés sous forme de nœuds et de liens dans le graphique ;  
   
 - le code, les éléments de projet et d’autres artefacts définis dans la solution et représentés sous forme de nœuds, ainsi que les liens représentant les dépendances découvertes par le processus d’analyse ;  
   
@@ -167,7 +164,7 @@ Dans Visual Studio, les utilisateurs peuvent valider le code source dans un proj
 > [!NOTE]
 >  Cette opération diffère du processus de validation appliqué aux diagrammes UML et du processus de validation qui peut être utilisé dans des langages spécifiques à un domaine.  
   
- Les méthodes de validation ne doivent pas modifier le modèle de couche ou le code en cours de validation.  
+ Les méthodes de validation ne doivent pas modifier le modèle de couche ni le code en cours de validation.  
   
  Le modèle de graphique est défini dans <xref:Microsoft.VisualStudio.GraphModel>. Ses classes principales sont <xref:Microsoft.VisualStudio.GraphModel.GraphNode> et <xref:Microsoft.VisualStudio.GraphModel.GraphLink>.  
   
@@ -194,7 +191,7 @@ Dans Visual Studio, les utilisateurs peuvent valider le code source dans un proj
   Les liens des couches vers les éléments dans le code ont la catégorie « Représente ».  
   
 ##  <a name="debugging"></a> Débogage de la validation  
- Pour déboguer votre extension de validation de couche, appuyez sur Ctrl+F5. Une instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] s'ouvre. Dans cette instance, ouvrez ou créez un modèle de couche. Ce modèle doit être associé au code et doit avoir au moins une dépendance.  
+ Pour déboguer votre extension de validation de couche, appuyez sur Ctrl+F5. Une instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] s’ouvre. Dans cette instance, ouvrez ou créez un modèle de couche. Ce modèle doit être associé au code et doit avoir au moins une dépendance.  
   
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>Tester avec une solution contenant des dépendances  
  La validation n’est exécutée que si les caractéristiques suivantes sont présentes :  
@@ -211,7 +208,7 @@ Dans Visual Studio, les utilisateurs peuvent valider le code source dans un proj
 ### <a name="launch-the-debugger-explicitly"></a>Lancer le débogueur explicitement  
  La validation s’exécute dans un processus séparé. Par conséquent, les points d’arrêt dans votre méthode de validation ne sont pas déclenchés. Vous devez attacher explicitement le débogueur au processus après le démarrage de la validation.  
   
- Pour attacher le débogueur au processus de validation, insérez un appel à `System.Diagnostics.Debugger.Launch()` au début de votre méthode de validation. Quand la boîte de dialogue de débogage s'affiche, sélectionnez l'instance principale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+ Pour attacher le débogueur au processus de validation, insérez un appel à `System.Diagnostics.Debugger.Launch()` au début de votre méthode de validation. Quand la boîte de dialogue de débogage s’affiche, sélectionnez l’instance principale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
  Vous pouvez également insérer un appel à `System.Windows.Forms.MessageBox.Show()`. Quand la boîte de message s’affiche, accédez à l’instance principale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et, dans le menu **Déboguer** , cliquez sur **Attacher au processus**. Sélectionnez le processus nommé **Graphcmd.exe**.  
   
@@ -283,6 +280,3 @@ namespace Validator3
   
 ## <a name="see-also"></a>Voir aussi  
  [Étendre des diagrammes de couche](../modeling/extend-layer-diagrams.md)
-
-
-

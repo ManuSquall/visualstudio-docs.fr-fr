@@ -1,25 +1,22 @@
 ---
 title: Déploiement d’un processeur de Directive personnalisé | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
 ms.assetid: 80c28722-a630-47b5-923b-024dc3f2c940
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6986811b522f6ed3621335227231bb69ab6cf1c0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 93165a1534ed01dca057fc13059858c4c3e7a81c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836396"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953016"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Déploiement d'un processeur de directive personnalisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,16 +25,16 @@ Pour utiliser un processeur de directive personnalisé dans [!INCLUDE[vsprvs](..
   
  Les différentes méthodes disponibles sont les suivantes :  
   
-- [Extension de Visual Studio (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832). Cette extension permet d'installer et de désinstaller le processeur de directive sur votre propre ordinateur et sur d'autres. En général, vous pouvez empaqueter d’autres fonctionnalités dans la même extension VSIX.  
+- [Extension de Visual Studio (VSIX)](http://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832). Cette extension permet d'installer et de désinstaller le processeur de directive sur votre propre ordinateur et sur d'autres. En général, vous pouvez empaqueter d'autres fonctionnalités dans la même extension VSIX.  
   
-- [VSPackage](../extensibility/internals/vspackages.md). Si vous définissez un VSPackage qui contient d’autres fonctionnalités en plus du processeur de directive, vous pouvez aisément inscrire ce dernier.  
+- [VSPackage](../extensibility/internals/vspackages.md). Si vous définissez un VSPackage qui contient d'autres fonctionnalités en plus du processeur de directive, vous pouvez aisément inscrire ce dernier.  
   
 - Définition d'une clé de Registre. Dans cette méthode, vous ajoutez une entrée de Registre pour le processeur de directive.  
   
   Vous devez utiliser l'une de ces méthodes uniquement si vous voulez transformer votre modèle de texte dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Si vous employez un hôte personnalisé dans votre propre application, celui-ci est chargé de rechercher les processeurs de directive pour chaque directive.  
   
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>Déploiement d'un processeur de directive dans une extension VSIX  
- Vous pouvez ajouter un processeur de directive personnalisé à un [Extension Visual Studio (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832).  
+ Vous pouvez ajouter un processeur de directive personnalisé à un [Extension Visual Studio (VSIX)](http://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832).  
   
  Vous devez vérifier que les deux éléments suivants figurent dans le fichier .vsix :  
   
@@ -45,7 +42,7 @@ Pour utiliser un processeur de directive personnalisé dans [!INCLUDE[vsprvs](..
   
 - Un fichier .pkgdef qui inscrit le processeur de directive. Le nom racine du fichier doit être identique à celui de l'assembly. Par exemple, vos fichiers peuvent être nommés CDP.dll et CDP.pkgdef.  
   
-  Pour inspecter ou modifier le contenu d’un fichier .vsix, remplacez son extension de nom par .zip, puis ouvrez-le. Après avoir modifié le contenu, réaffectez l'extension .vsix au nom de fichier.  
+  Pour inspecter ou modifier le contenu d'un fichier .vsix, remplacez son extension de nom par .zip, puis ouvrez-le. Après avoir modifié le contenu, réaffectez l'extension .vsix au nom de fichier.  
   
   Un fichier .vsix peut être créé de plusieurs façons. La procédure suivante décrit une de ces méthodes.  
   
@@ -100,7 +97,7 @@ Pour utiliser un processeur de directive personnalisé dans [!INCLUDE[vsprvs](..
   
     -   **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.VSHost. \*.0**  
+    -   **Microsoft.VisualStudio.TextTemplating.VSHost.\*.0**  
   
 6.  Ajoutez la classe de votre processeur de directive personnalisé au projet.  
   
@@ -108,7 +105,7 @@ Pour utiliser un processeur de directive personnalisé dans [!INCLUDE[vsprvs](..
   
 #### <a name="to-install-the-custom-directive-processor"></a>Pour installer le processeur de directive Personnalisé  
   
-1.  Dans l'Explorateur Windows (Explorateur de fichiers dans Windows 8), ouvrez le répertoire de build (en général, bin\Debug ou bin\Release).  
+1.  Dans l’Explorateur Windows (Explorateur de fichiers dans Windows 8), ouvrez le répertoire de build (en général, bin\Debug ou bin\Release).  
   
 2.  Si vous voulez installer le processeur de directive sur un autre ordinateur, copiez sur ce dernier le fichier .vsix.  
   
@@ -133,7 +130,7 @@ Pour utiliser un processeur de directive personnalisé dans [!INCLUDE[vsprvs](..
   
 -   Si vous ne voyez pas l’extension dans le Gestionnaire d’extensions, mais le système vous autorisera pas à installer, supprimez-la de **%localappdata%\Microsoft\VisualStudio\\\*. 0\Extensions\\** .  
   
--   Ouvrez le fichier .vsix et inspectez son contenu. Pour l’ouvrir, remplacez l’extension de nom du fichier par .zip. Vérifiez qu'il contient les fichiers .dll, .pkgdef et extension.vsixmanifest. Le fichier extension.vsixmanifest doit comporter la liste appropriée dans le nœud SupportedProducts, ainsi qu’un nœud VsPackage sous le nœud de contenu :  
+-   Ouvrez le fichier .vsix et inspectez son contenu. Pour l'ouvrir, remplacez l'extension de nom du fichier par .zip. Vérifiez qu'il contient les fichiers .dll, .pkgdef et extension.vsixmanifest. Le fichier extension.vsixmanifest doit comporter la liste appropriée dans le nœud SupportedProducts, ainsi qu'un nœud VsPackage sous le nœud de contenu :  
   
      `<Content>`  
   
@@ -155,7 +152,7 @@ Pour utiliser un processeur de directive personnalisé dans [!INCLUDE[vsprvs](..
   
  Le fichier .pkgdef sera généré en même temps que le projet. Lorsque vous installerez le VSPackage, le fichier .pkgdef inscrira le processeur de directive.  
   
- Vérifiez que le fichier .pkgdef s’affiche dans le dossier de génération, qui correspond en général à bin\Debug ou bin\Release. S'il ne s'affiche pas, ouvrez le fichier .csproj dans un éditeur de texte et supprimez le nœud suivant : `<GeneratePkgDefFile>false</GeneratePkgDefFile>`.  
+ Vérifiez que le fichier .pkgdef s'affiche dans le dossier de génération, qui correspond en général à bin\Debug ou bin\Release. S'il ne s'affiche pas, ouvrez le fichier .csproj dans un éditeur de texte et supprimez le nœud suivant : `<GeneratePkgDefFile>false</GeneratePkgDefFile>`.  
   
  Pour plus d'informations, consultez [VSPackages](../extensibility/internals/vspackages.md).  
   
@@ -163,7 +160,7 @@ Pour utiliser un processeur de directive personnalisé dans [!INCLUDE[vsprvs](..
  Cette méthode d'installation d'un processeur de directive personnalisé est la moins recommandée. Elle ne permet pas d'activer ni de désactiver facilement le processeur de directive, et ne fournit pas de méthode pour distribuer le processeur de directive aux autres utilisateurs.  
   
 > [!CAUTION]
->  Toute modification incorrecte du Registre peut gravement endommager votre système. Avant d'apporter des modifications au Registre, veillez à sauvegarder toutes les données importantes qui se trouvent sur l'ordinateur.  
+>  Une modification incorrecte du Registre peut endommager gravement votre système. Avant d'apporter des modifications au Registre, veillez à sauvegarder toutes les données importantes qui se trouvent sur l'ordinateur.  
   
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>Pour inscrire un processeur de directive en définissant une clé de Registre  
   
@@ -189,7 +186,7 @@ Pour utiliser un processeur de directive personnalisé dans [!INCLUDE[vsprvs](..
   
    Si le processeur de directive personnalisé ne se trouve pas dans le GAC, les sous-clés de Registre doivent se présenter comme dans le tableau suivant :  
   
-|Name|Type|Données|  
+|Nom|Type|Données|  
 |----------|----------|----------|  
 |(Default)|REG_SZ|(valeur non définie)|  
 |Classe|REG_SZ|**\<Nom de Namespace >. \<Nom de la classe >**|  
@@ -197,7 +194,7 @@ Pour utiliser un processeur de directive personnalisé dans [!INCLUDE[vsprvs](..
   
  Si l'assembly se trouve dans le GAC, les sous-clés de Registre doivent se présenter comme dans le tableau suivant :  
   
-|Name|Type|Données|  
+|Nom|Type|Données|  
 |----------|----------|----------|  
 |(Default)|REG_SZ|(valeur non définie)|  
 |Classe|REG_SZ|\<**Votre nom de classe complet**>|  
@@ -205,6 +202,3 @@ Pour utiliser un processeur de directive personnalisé dans [!INCLUDE[vsprvs](..
   
 ## <a name="see-also"></a>Voir aussi  
  [Création de processeurs de directives de modèles de texte T4 personnalisés](../modeling/creating-custom-t4-text-template-directive-processors.md)
-
-
-

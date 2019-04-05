@@ -1,14 +1,9 @@
 ---
 title: 'Procédure pas à pas : Création d’un programme d’installation personnalisé pour une Application ClickOnce | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,15 +18,15 @@ ms.assetid: fb222cc5-8aeb-4b94-8c49-b93e342f5f69
 caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 16686b0bf53f9e1358d96a7abcfe95f8ed6aac82
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 11ce31ce0a128114e3751dd412d7c3a0ea36df25
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222766"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952991"
 ---
-# <a name="walkthrough-creating-a-custom-installer-for-a-clickonce-application"></a>Procédure pas à pas : création d'un programme d'installation personnalisé pour une application ClickOnce
+# <a name="walkthrough-creating-a-custom-installer-for-a-clickonce-application"></a>Procédure pas à pas : Création d’un programme d’installation personnalisé pour une Application ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 N’importe quelle application ClickOnce basée sur un fichier .exe peut être installée en mode silencieux et mis à jour par un programme d’installation personnalisé. Un programme d’installation personnalisé peut implémenter l’expérience utilisateur personnalisée pendant l’installation, y compris les boîtes de dialogue personnalisées pour les opérations de maintenance et de sécurité. Pour effectuer des opérations d’installation, le programme d’installation personnalisé utilise la <xref:System.Deployment.Application.InPlaceHostingManager> classe. Cette procédure pas à pas montre comment créer un programme d’installation personnalisé qui installe en mode silencieux une application ClickOnce.  
@@ -85,7 +80,4 @@ N’importe quelle application ClickOnce basée sur un fichier .exe peut être i
   
 ## <a name="see-also"></a>Voir aussi  
  [Manifeste d’application ClickOnce](../deployment/clickonce-application-manifest.md)   
- [\<entryPoint > élément](../deployment/entrypoint-element-clickonce-application.md)
-
-
-
+ [\<entryPoint>, élément](../deployment/entrypoint-element-clickonce-application.md)

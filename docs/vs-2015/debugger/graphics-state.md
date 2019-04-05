@@ -1,32 +1,27 @@
 ---
 title: État graphique | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.statewindow
 ms.assetid: 97e7757e-c372-4626-8149-99a81367a0e1
 caps.latest.revision: 5
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c5100f32a7a706f0d61e3b0ac006c8168e1ee553
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 670ad5e28dad02c59ac20dee8cab75a52ae650ce
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750369"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58947995"
 ---
 # <a name="graphics-state"></a>État graphique
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La fenêtre État dans Visual Studio Graphics Diagnostics vous permet de comprendre l’état graphique actif au moment de l’événement, par exemple un appel de dessin.  
+La fenêtre État dans Visual Studio Graphics Diagnostics vous permet de comprendre l'état graphique actif au moment de l'événement, par exemple un appel de dessin.  
   
 ## <a name="understanding-the-state-window"></a>Présentation de la fenêtre État  
  La fenêtre État regroupe les informations sur l'état du rendu, et les présente de manière hiérarchique, dans un seul emplacement. Selon la version de Direct3D que votre application utilise, les informations présentées dans la fenêtre État peuvent comporter des différences.  
@@ -44,21 +39,21 @@ La fenêtre État dans Visual Studio Graphics Diagnostics vous permet de compren
   
 -   Dans la fenêtre État, dans le coin supérieur gauche juste en dessous de la barre de titre, choisissez le bouton qui correspond au style d'affichage d'état à utiliser.  
   
-    -   **Afficher l’état d’entrée API**  
+    -   **Afficher la vue des états de l’entrée API**  
   
-    -   **Afficher l’état logique**  
+    -   **Afficher la vue des états logiques**  
   
-    -   **Afficher l’affichage des États épinglés**  
+    -   **Afficher la vue des états épinglés**  
   
 > [!IMPORTANT]
->  Vous devez épingler l’état dans le **état d’entrée API afficher** ou **état Afficher logique** vues pour qu’il s’affiche dans le **affichage de l’état Afficher épinglé**.  
+>  Vous devez épingler l’état dans **Afficher la vue des états de l’entrée API** ou dans **Afficher la vue des états logiques** pour qu’il s’affiche dans **Afficher la vue des états épinglés**.  
   
 ### <a name="state-table-format"></a>Format de la table des états  
  La fenêtre État affiche plusieurs colonnes d'informations.  
   
 |Colonne|Description|  
 |------------|-----------------|  
-|Name|Nom de l'élément d'état. Si cet élément représente un ensemble d’états, vous pouvez développer l’élément pour l’afficher.<br /><br /> Dans le **d’entrée d’API affichage des états** et **affichage des États logiques** indique, les noms sont mises en retrait pour montrer la relation hiérarchique entre les États.<br /><br /> Dans le **affichage des États épinglés** état, les noms qualifiés complets sont affichés dans une liste plate.|  
+|Nom|Nom de l'élément d'état. Si cet élément représente un ensemble d'états, vous pouvez développer l'élément pour l'afficher.<br /><br /> Dans la **vue des états de l’entrée API** et dans la **vue des états logiques**, les noms sont mis en retrait pour montrer la relation hiérarchique qui existe entre les états.<br /><br /> Dans l’état **Afficher la vue des états épinglés**, les noms complets sont affichés dans une liste plate.|  
 |Value|Valeur de l'élément d'état.|  
 |Type|Type de l'élément d'état.|  
   
@@ -77,6 +72,3 @@ La fenêtre État dans Visual Studio Graphics Diagnostics vous permet de compren
 2.  Placez le curseur sur l'état qui vous intéresse. Une icône d'épingle s'affiche à gauche de l'élément d'état.  
   
 3.  Choisissez l'icône d'épingle pour épingler l'élément d'état sur place.
-
-
-

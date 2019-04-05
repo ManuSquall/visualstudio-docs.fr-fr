@@ -1,12 +1,9 @@
 ---
 title: Écriture d’un modèle de texte T4 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, syntax
 - text templates, guide
@@ -15,13 +12,13 @@ ms.assetid: 94328da7-953b-4e92-9587-648543d1f732
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7aa5a216b9be48eae7f2905084f0c39109688d6c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 20974c9ebeaaa452be7078db51cb633be498b24c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897795"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950169"
 ---
 # <a name="writing-a-t4-text-template"></a>Écriture d'un modèle de texte T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,7 +113,7 @@ Hello!
 <#= 2 + 3 #>  
 ```  
   
- Notez que le symbole d'ouverture comporte trois caractères « <#= ».  
+ Notez que le symbole d’ouverture comporte trois caractères « < #= ».  
   
  L'expression peut inclure toute variable qui est dans la portée. Par exemple, ce bloc imprime des lignes avec des nombres :  
   
@@ -133,7 +130,7 @@ This is hello number <#= i+1 #>: Hello!
 ```  
   
 ### <a name="class-feature-control-blocks"></a>Bloc de contrôle de fonctionnalité de classe  
- Un bloc de contrôle de fonctionnalité de classe définit des propriétés, des méthodes ou tout autre code qui ne doit pas être inclus dans la transformation principale. Les blocs de fonctionnalité de classe sont fréquemment utilisés pour les fonctions d’assistance.  En règle générale, les blocs de fonctionnalité de classe sont placés dans des fichiers distincts afin qu’ils peuvent être [inclus](#Include) par plusieurs modèles de texte.  
+ Un bloc de contrôle de fonctionnalité de classe définit des propriétés, des méthodes ou tout autre code qui ne doit pas être inclus dans la transformation principale. Les blocs de fonctionnalité de classe sont fréquemment utilisés pour les fonctions d'assistance.  En règle générale, les blocs de fonctionnalité de classe sont placés dans des fichiers distincts afin qu’ils peuvent être [inclus](#Include) par plusieurs modèles de texte.  
   
  Les blocs de fonctionnalité de classe sont délimités par les symboles `<#+ ... #>`.  
   
@@ -164,7 +161,7 @@ private int Square(int i)
  Pour plus d’informations sur les blocs de contrôle, consultez [blocs de contrôle de modèles de texte](../modeling/text-template-control-blocks.md).  
   
 ### <a name="class-feature-blocks-can-contain-text-blocks"></a>Les blocs de fonctionnalité de classe peuvent contenir des blocs de texte  
- Vous pouvez écrire une méthode qui génère du texte. Par exemple :  
+ Vous pouvez écrire une méthode qui génère du texte. Exemple :  
   
 ```  
 List of Squares:  
@@ -188,13 +185,13 @@ private void WriteSquareLine(int i)
 ## <a name="using-external-definitions"></a>Utilisation de définitions externes  
   
 ### <a name="assemblies"></a>Assemblys  
- Les blocs de code de votre modèle peuvent utiliser des types définis par les assemblys .NET les plus fréquemment utilisés tels que System.dll. De plus, vous pouvez faire référence à d'autres assemblys .NET ou à vos propres assemblys. Vous pouvez fournir un nom de chemin d'accès ou le nom fort d'un assembly :  
+ Les blocs de code de votre modèle peuvent utiliser des types définis par les assemblys .NET les plus fréquemment utilisés tels que System.dll. De plus, vous pouvez faire référence à d'autres assemblys .NET ou à vos propres assemblys. Vous pouvez fournir un nom de chemin d’accès ou le nom fort d’un assembly :  
   
 ```  
 <#@ assembly name="System.Xml" #>  
 ```  
   
- Vous devez utiliser des noms de chemins d'accès absolus ou des noms de macros standard dans le nom du chemin d'accès. Exemple :  
+ Vous devez utiliser des noms de chemins d’accès absolus ou des noms de macros standard dans le nom du chemin d’accès. Exemple :  
   
 ```  
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>  
@@ -251,7 +248,7 @@ private void WriteSquareLine(int i)
   
  **Utiliser un modèle UML**. Vous pouvez générer du code à partir d'un modèle UML. L'avantage est que vous pouvez modifier le modèle sous forme de diagramme dans une notation familière. De plus, vous n'avez pas à concevoir le diagramme. Pour plus d’informations, consultez [générer des fichiers à partir d’un modèle UML](../modeling/generate-files-from-a-uml-model.md).  
   
-### <a name="relative-file-paths-in-design-time-templates"></a>Chemins d’accès de fichiers relatifs dans les modèles au moment de la conception  
+### <a name="relative-file-paths-in-design-time-templates"></a>Chemins d’accès de fichiers relatifs dans les modèles au moment du design  
  Dans un [modèle de texte au moment du design](../modeling/design-time-code-generation-by-using-t4-text-templates.md), si vous souhaitez référencer un fichier dans un emplacement relatif au modèle de texte, utilisez `this.Host.ResolvePath()`. Vous devez aussi définir `hostspecific="true"` dans la directive `template` :  
   
 ```csharp  
@@ -267,7 +264,7 @@ Content of MyFile.txt is:
   
 ```  
   
- Vous pouvez également obtenir d'autres services fournis par l'hôte. Pour plus d’informations, consultez [l’accès à Visual Studio ou autres hôtes à partir d’un modèle](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
+ Vous pouvez également obtenir d'autres services fournis par l'hôte. Pour plus d’informations, consultez [l’accès à Visual Studio ou autres hôtes à partir d’un modèle](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
   
 ### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>Modèles de texte au moment du design exécutés dans un AppDomain distinct  
  Vous devez être conscient qu’un [modèle de texte au moment du design](../modeling/design-time-code-generation-by-using-t4-text-templates.md) s’exécute dans un AppDomain qui est distinct de l’application principale. Dans la plupart des cas cela n'est pas important, mais dans certains cas complexes certaines restrictions peuvent s'appliquer. Par exemple, si vous souhaitez passer des données dans le modèle ou en dehors de celui-ci à partir d'un service distinct, ce service doit fournir une API sérialisable.  
@@ -275,7 +272,7 @@ Content of MyFile.txt is:
  (Cela n’est pas vrai pour un [modèle de texte de l’exécution](../modeling/run-time-text-generation-with-t4-text-templates.md), qui fournit le code est compilé avec le reste de votre code.)  
   
 ## <a name="editing-templates"></a>Modification de modèles  
- Vous pouvez télécharger des éditeurs de modèle de texte spécialisés à partir de la galerie en ligne du Gestionnaire d’extensions. Sur le **outils** menu, cliquez sur **Gestionnaire d’extensions**. Cliquez sur **galerie en ligne**, puis utilisez l’outil de recherche.  
+ Vous pouvez télécharger des éditeurs de modèle de texte spécialisés à partir de la galerie en ligne du Gestionnaire d'extensions. Sur le **outils** menu, cliquez sur **Gestionnaire d’extensions**. Cliquez sur **galerie en ligne**, puis utilisez l’outil de recherche.  
   
 ## <a name="related-topics"></a>Rubriques connexes  
   
@@ -287,6 +284,3 @@ Content of MyFile.txt is:
 |Exécuter la génération de texte en dehors de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|[Génération de fichiers avec l’utilitaire TextTransform](../modeling/generating-files-with-the-texttransform-utility.md)|  
 |Transformer vos données sous la forme d’un langage spécifique à un domaine.|[Génération de code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md)|  
 |Écrire des processeurs de directive pour transformer vos propres sources de données.|[Personnalisation d’une transformation de texte T4](../modeling/customizing-t4-text-transformation.md)|
-
-
-

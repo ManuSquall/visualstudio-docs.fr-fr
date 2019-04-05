@@ -1,14 +1,9 @@
 ---
-title: 'CA1046 : Ne pas surcharger l’opérateur égal sur les types référence | Microsoft Docs'
-ms.custom: ''
+title: 'CA1046 : Ne pas surcharger l’opérateur égal sur les types référence | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - DoNotOverloadOperatorEqualsOnReferenceTypes
 - CA1046
@@ -20,14 +15,14 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ea32811cfd695e6d55ec635e2e4ea5b4feded05a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b5543b2d968e96cbd5bf8c9f6dd015b2acf31b4c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919375"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951580"
 ---
-# <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046 : Ne pas surcharger l'opérateur égal à sur les types référence
+# <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046 : Ne pas surcharger l'opérateur égal à sur les types référence
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -41,7 +36,7 @@ ms.locfileid: "49919375"
  Un type référence public ou imbriqué surcharge l’opérateur d’égalité.
 
 ## <a name="rule-description"></a>Description de la règle
- Pour les types référence, l’implémentation par défaut de l’opérateur d’égalité est presque toujours correcte. Par défaut, deux références sont égales uniquement si elles pointent sur le même objet.
+ Pour les types référence, l'implémentation par défaut de l'opérateur d'égalité est presque toujours correcte. Par défaut, deux références sont égales uniquement si elles pointent sur le même objet.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, supprimez l’implémentation de l’opérateur d’égalité.
@@ -63,13 +58,10 @@ ms.locfileid: "49919375"
 
  **un = nouveau (2,2) et b = nouveau (2,2) sont égaux ? Ne**
 **c et a sont égaux ? Oui**
-**b et a sont == ? Ne**
-**c et a sont == ? Oui**
+**b et a sont == ? No**
+**c and a are == ? Oui**
 ## <a name="related-rules"></a>Règles associées
- [CA1013 : Surchargez l’opérateur égal lors de la surcharge de l’opérateur d’addition et de soustraction](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
+ [CA1013 : Surchargez l’opérateur égal lors de la surcharge addition et de soustraction](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
 
 ## <a name="see-also"></a>Voir aussi
  <xref:System.Object.Equals%2A?displayProperty=fullName> [Opérateurs d’égalité](http://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)
-
-
-

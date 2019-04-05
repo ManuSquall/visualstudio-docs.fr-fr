@@ -1,25 +1,20 @@
 ---
 title: Concepteur de schémas XML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: ffdf63ee-faa6-45b7-bbf9-a5644dc8aca2
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 13f35c5bdadd74935f8b29d4b59031337f880ae3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: fe81190bca91aba4655e551026458c9047739d66
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236832"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952898"
 ---
 # <a name="xml-schema-designer"></a>Concepteur de schémas XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,4 @@ Le Concepteur de schémas XML (Concepteur XSD) est un outil graphique qui vous p
  Décrit comment le Concepteur de schémas XSD est intégré à l'Éditeur XML.  
   
  [Tâches du Concepteur de schémas XML](../xml-tools/xml-schema-designer-tasks.md)  
- Décrit comment effectuer des tâches courantes à l’aide des outils du Concepteur de schémas XML.
-
-
-
+ Décrit comment effectuer des tâches courantes à l'aide des outils du Concepteur de schémas XML.

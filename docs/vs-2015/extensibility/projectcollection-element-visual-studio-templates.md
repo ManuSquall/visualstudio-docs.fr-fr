@@ -1,14 +1,9 @@
 ---
 title: ProjectCollection, élément (modèles Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectCollection
 helpviewer_keywords:
@@ -17,22 +12,22 @@ helpviewer_keywords:
 ms.assetid: deb27180-2035-49ed-b835-c47bb3cd2f8f
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8f8b9ba0902b193bb630e99a7908818688c25fd1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9457b1142c94658da489ce7401b7c22d28df903d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778681"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948240"
 ---
 # <a name="projectcollection-element-visual-studio-templates"></a>ProjectCollection, élément (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Spécifie l'organisation et le contenu de modèles à plusieurs projets.  
   
- \<VSTemplate >  
- \<TemplateContent >  
- \<ProjectCollection >  
+ \<VSTemplate>  
+ \<TemplateContent>  
+ \<ProjectCollection>  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -63,7 +58,7 @@ Spécifie l'organisation et le contenu de modèles à plusieurs projets.
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Élément requis.<br /><br /> Spécifie le contenu du modèle.|  
   
 ## <a name="remarks"></a>Notes  
- Les modèles à plusieurs projets jouent le rôle de conteneurs pour au moins deux projets. Le `ProjectCollection` élément est utilisé pour spécifier les projets devant être contenue dans le modèle. Pour plus d’informations sur les modèles à plusieurs projets, consultez [Comment : créer des modèles à projets multiples](../ide/how-to-create-multi-project-templates.md).  
+ Les modèles à plusieurs projets jouent le rôle de conteneurs pour au moins deux projets. Le `ProjectCollection` élément est utilisé pour spécifier les projets devant être contenue dans le modèle. Pour plus d’informations sur les modèles à plusieurs projets, consultez [Comment : Créer des modèles à plusieurs projets](../ide/how-to-create-multi-project-templates.md).  
   
 ## <a name="example"></a>Exemple  
  Cet exemple illustre un fichier .vstemplate racine simple pour un modèle à plusieurs projets. Dans cet exemple, le modèle contient deux projets, `My Windows Application` et `My Class Library`. L'attribut `ProjectName` de l'élément `ProjectTemplateLink` définit le nom à assigner au projet dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Si l'attribut `ProjectName` n'existe pas, le nom du fichier .vstemplate est utilisé comme nom du projet.  
@@ -93,5 +88,4 @@ Spécifie l'organisation et le contenu de modèles à plusieurs projets.
 ## <a name="see-also"></a>Voir aussi  
  [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)   
- [Guide pratique pour créer des modèles à plusieurs projets](../ide/how-to-create-multi-project-templates.md)
-
+ [Guide pratique pour créer des modèles multiprojets](../ide/how-to-create-multi-project-templates.md)

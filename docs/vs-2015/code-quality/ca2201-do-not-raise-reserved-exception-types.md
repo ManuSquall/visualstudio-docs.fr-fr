@@ -1,14 +1,9 @@
 ---
-title: 'CA2201 : Ne levez pas des types d’exceptions réservés | Microsoft Docs'
-ms.custom: ''
+title: 'CA2201 : Ne levez pas des types d’exceptions réservés | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - DoNotRaiseReservedExceptionTypes
 - CA2201
@@ -20,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9cc22f6bc8f7e863f0808c05b0b5cba37ba79fbf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 580a021a85d1211932c248ddc925a49e95e1cf13
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49810591"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951768"
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201 : Ne levez pas des types d'exceptions réservés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,6 +90,3 @@ ms.locfileid: "49810591"
 
 ## <a name="related-rules"></a>Règles associées
  [CA1031 : Ne pas intercepter des types d’exception générale](../code-quality/ca1031-do-not-catch-general-exception-types.md)
-
-
-

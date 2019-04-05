@@ -1,14 +1,9 @@
 ---
-title: 'CA1806 : Ne pas ignorer les résultats de la méthode | Microsoft Docs'
-ms.custom: ''
+title: 'CA1806 : N’ignorez pas les résultats de la méthode | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1806
 - DoNotIgnoreMethodResults
@@ -20,14 +15,14 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9e6b7bdd99500f0be29c8101ef9993b565914300
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c0af1f7270cca341b713c5036b2c457f5964c0bf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830585"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951589"
 ---
-# <a name="ca1806-do-not-ignore-method-results"></a>CA1806 : Ne pas ignorer les résultats de méthode
+# <a name="ca1806-do-not-ignore-method-results"></a>CA1806 : N'ignorez pas les résultats des méthodes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||  

@@ -1,26 +1,21 @@
 ---
 title: Importations de l’éditeur | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - services
 ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8f82815871f59dfcf4d384157a9461388e96d05e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 461687e5d1e9570ea2e03610f838f6114fbc7643
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759028"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950771"
 ---
 # <a name="editor-imports"></a>Importations de l’éditeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,19 +44,19 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
   
  Pour plus d’exemples d’utilisation des importations, consultez les procédures suivantes :  
   
- [Procédure pas à pas : Création d’un glyphe de marge](../extensibility/walkthrough-creating-a-margin-glyph.md)  
+ [Procédure pas à pas : Création d’un glyphe de marge](../extensibility/walkthrough-creating-a-margin-glyph.md)  
   
- [Procédure pas à pas : Personnalisation de l’affichage du texte](../extensibility/walkthrough-customizing-the-text-view.md)  
+ [Procédure pas à pas : Personnalisation de l’affichage de texte](../extensibility/walkthrough-customizing-the-text-view.md)  
   
- [Procédure pas à pas : Mise en surbrillance de texte](../extensibility/walkthrough-highlighting-text.md)  
+ [Procédure pas à pas : Mise en surbrillance de texte](../extensibility/walkthrough-highlighting-text.md)  
   
- [Procédure pas à pas : Affichage d’info-bulles Info express](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [Procédure pas à pas : Affichage des info-bulles Info express](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [Procédure pas à pas : Affichage d’aide sur les signatures](../extensibility/walkthrough-displaying-signature-help.md)  
+ [Procédure pas à pas : Affichage de l’aide de la Signature](../extensibility/walkthrough-displaying-signature-help.md)  
   
- [Procédure pas à pas : affichage de la saisie semi-automatique des instructions](../extensibility/walkthrough-displaying-statement-completion.md)  
+ [Procédure pas à pas : Affichage de saisie semi-automatique des instructions](../extensibility/walkthrough-displaying-statement-completion.md)  
   
- [Procédure pas à pas : affichage de SmartTags](../misc/walkthrough-displaying-smarttags.md)  
+ [Procédure pas à pas : Affichage de balises actives](../misc/walkthrough-displaying-smarttags.md)  
   
 ## <a name="importing-the-service-provider"></a>Importez le fournisseur de services  
  Vous pouvez également importer un <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> (trouvée dans l’assembly Microsoft.VisualStudio.Shell.Immutable.10.0) de la même façon pour accéder aux services de Visual Studio :  
@@ -71,7 +66,7 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
 internal SVsServiceProvider ServiceProvider = null;   
 ```  
   
- Consultez [procédure pas à pas : accès à l’objet DTE à partir d’une Extension de l’éditeur](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) pour plus d’informations.  
+ Consultez [Procédure pas à pas : L’accès à l’objet DTE à partir d’une Extension de l’éditeur](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) pour plus d’informations.  
   
 ## <a name="services"></a>Services  
  Services de l’éditeur sont des entités uniques en général qui fournissent un service et sont partagées entre plusieurs composants.  
@@ -79,7 +74,7 @@ internal SVsServiceProvider ServiceProvider = null;
 |Import|Fournit|  
 |------------|--------------|  
 |<xref:Microsoft.VisualStudio.Utilities.IFileExtensionRegistryService>|La relation entre les extensions de fichier et <xref:Microsoft.VisualStudio.Utilities.IContentType> objets.|  
-|<xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>|Collection d’objets <xref:Microsoft.VisualStudio.Utilities.IContentType>.|  
+|<xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>|Collection d'objets <xref:Microsoft.VisualStudio.Utilities.IContentType>.|  
 |<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformationService>|Objets <xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformation>.|  
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>|Plusieurs objets de carte de l’éditeur :<br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>|  
 |<xref:Microsoft.VisualStudio.Text.IncrementalSearch.IIncrementalSearchFactoryService>|Un <xref:Microsoft.VisualStudio.Text.IncrementalSearch.IIncrementalSearch> objet pour un affichage de texte donné.|  
@@ -129,4 +124,3 @@ internal SVsServiceProvider ServiceProvider = null;
   
 ## <a name="see-also"></a>Voir aussi  
  [Points d’extension du service de langage et de l’éditeur](../extensibility/language-service-and-editor-extension-points.md)
-

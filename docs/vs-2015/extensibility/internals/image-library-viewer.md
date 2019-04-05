@@ -1,21 +1,17 @@
 ---
 title: Image visionneuse de bibliothèque | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6c0e277a123fe24da9824fae94b13eee686f5663
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: cdd01551472a3cf619d9156e0db20ad3b7c4931e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778018"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951957"
 ---
 # <a name="image-library-viewer"></a>Visionneuse de bibliothèque d’images
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -92,13 +88,13 @@ L’outil Visual Studio Image Library Viewer peut charger et rechercher des mani
   
 |||  
 |-|-|  
-|**Symbole**|**Description**|  
+|**Symbol**|**Description**|  
 |CommonProgramFiles|La valeur de la variable d’environnement % %CommonProgramFiles%|  
 |LocalAppData|La valeur de la variable d’environnement % LocalAppData|  
 |ManifestFolder|Le dossier contenant le fichier manifest|  
-|Mes documents|Le chemin d’accès complet du dossier Mes Documents de l’utilisateur actuel|  
+|MyDocuments|Le chemin d’accès complet du dossier Mes Documents de l’utilisateur actuel|  
 |ProgramFiles|La valeur de la variable d’environnement % ProgramFiles %|  
-|Système|Le dossier Windows\System32|  
+|Système|The Windows\System32 folder|  
 |WinDir|La valeur de la variable d’environnement % WinDir %|  
   
  **Image**  
@@ -135,7 +131,7 @@ L’outil Visual Studio Image Library Viewer peut charger et rechercher des mani
 |-|-|  
 |**Attribut**|**Définition**|  
 |URI|[Obligatoire] URI qui définit où l’image peut être chargé à partir de. Il peut avoir l'une des valeurs suivantes :<br /><br /> -A [URI à en-tête Pack](http://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) à l’aide de l’application : / / / autorité<br /><br /> -Une référence de ressource du composant absolu<br /><br /> -Un chemin d’accès à un fichier contenant une ressource native|  
-|Présentation|[Facultatif] Indique quel type d’arrière-plan de que la source est destinée à être utilisée.<br /><br /> Il peut avoir l'une des valeurs suivantes :<br /><br /> - *Lumière*: la source peut être utilisée sur un arrière-plan clair.<br /><br /> - *Foncé*: la source peut être utilisée sur un arrière-plan sombre.<br /><br /> - *Contraste élevé*: la source peut être utilisée sur n’importe quel arrière-plan en mode contraste élevé.<br /><br /> - *HighContrastLight*: la source peut être utilisée sur un arrière-plan clair en mode de contraste élevé.<br /><br /> -*HighContrastDark*: la source peut être utilisée sur un arrière-plan sombre en mode de contraste élevé.<br /><br /> Si le **arrière-plan** attribut est omis, la source peut être utilisée sur n’importe quel arrière-plan.<br /><br /> Si **arrière-plan** est *Light*, *foncé*, *HighContrastLight*, ou *HighContrastDark*, le les couleurs de la source ne sont jamais inversées. Si **arrière-plan** est omis ou défini sur *contraste élevé*, l’inversion des couleurs de la source est contrôlée par l’image **AllowColorInversion** attribut.|  
+|Présentation|[Facultatif] Indique quel type d’arrière-plan de que la source est destinée à être utilisée.<br /><br /> Il peut avoir l'une des valeurs suivantes :<br /><br /> - *Lumière*: La source peut être utilisée sur un arrière-plan clair.<br /><br /> - *Foncé*: La source peut être utilisée sur un arrière-plan sombre.<br /><br /> - *Contraste élevé*: La source peut être utilisée sur n’importe quel arrière-plan en mode contraste élevé.<br /><br /> - *HighContrastLight*: La source peut être utilisée sur un arrière-plan clair en mode de contraste élevé.<br /><br /> -*HighContrastDark*: La source peut être utilisée sur un arrière-plan sombre en mode de contraste élevé.<br /><br /> Si le **arrière-plan** attribut est omis, la source peut être utilisée sur n’importe quel arrière-plan.<br /><br /> Si **arrière-plan** est *Light*, *foncé*, *HighContrastLight*, ou *HighContrastDark*, le les couleurs de la source ne sont jamais inversées. Si **arrière-plan** est omis ou défini sur *contraste élevé*, l’inversion des couleurs de la source est contrôlée par l’image **AllowColorInversion** attribut.|  
   
  Un \<Source > élément peut avoir un seul des sous-éléments facultatives suivantes :  
   
@@ -143,9 +139,9 @@ L’outil Visual Studio Image Library Viewer peut charger et rechercher des mani
 |-|-|-|  
 |**Élément**|**Attributs (tous requis)**|**Définition**|  
 |\<Taille >|Value|La source sera utilisée pour les images de la taille spécifiée (en unités de périphérique). L’image sera carré.|  
-|\<SizeRange >|MinSize, MaxSize|La source servira pour les images à partir de MinSize vers taille maximale (en unités de périphérique) (inclus). L’image sera carré.|  
-|\<Dimensions >|Largeur, hauteur|La source sera utilisée pour les images de la donnée de la largeur et la hauteur (en unités de périphérique).|  
-|\<DimensionRange >|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|La source servira pour les images à partir de la largeur/hauteur minimale de la largeur/hauteur maximale (en unités de périphérique) (inclus).|  
+|\<SizeRange>|MinSize, MaxSize|La source servira pour les images à partir de MinSize vers taille maximale (en unités de périphérique) (inclus). L’image sera carré.|  
+|\<Dimensions>|Largeur, hauteur|La source sera utilisée pour les images de la donnée de la largeur et la hauteur (en unités de périphérique).|  
+|\<DimensionRange>|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|La source servira pour les images à partir de la largeur/hauteur minimale de la largeur/hauteur maximale (en unités de périphérique) (inclus).|  
   
  Un \<Source > élément peut également avoir un facultatif \<NativeResource > sous-élément qui définit un \<Source > qui est chargé à partir d’un assembly natif plutôt qu’un assembly managé.  
   
@@ -234,4 +230,3 @@ L’outil Visual Studio Image Library Viewer peut charger et rechercher des mani
   
 ## <a name="sample-output"></a>Résultat de l'exemple  
  Cet outil ne génère pas de sortie.
-

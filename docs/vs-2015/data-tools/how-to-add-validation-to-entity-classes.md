@@ -1,43 +1,40 @@
 ---
-title: 'Comment : ajouter la validation aux classes d’entité | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Ajouter une validation aux classes d’entité | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 61107da9-7fa3-4dba-b101-ae46536f52c4
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 91600821b3d68c04382028e469a4e1a54a5d191c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: f3c08dbb66e71cc1fd362279ae33006c20e11436
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812748"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949592"
 ---
-# <a name="how-to-add-validation-to-entity-classes"></a>Comment : ajouter la validation aux classes d’entité
+# <a name="how-to-add-validation-to-entity-classes"></a>Procédure : Ajouter une validation à des classes d’entité
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-*Validation* classes d’entité est le processus consistant à confirmer que les valeurs entrées dans des objets de données sont conformes avec les contraintes d’un schéma d’objet et également aux règles établies pour l’application. Il est conseillé de valider les données avant d'envoyer des mises à jour à la base de données sous-jacente pour réduire les erreurs. Une telle validation permet aussi de réduire le nombre potentiel d'allers-retours entre une application et la base de données.  
+La *validation* de classes d’entité est le processus qui consiste à valider que les valeurs entrées dans des objets de données sont conformes aux contraintes du schéma d’un objet et également aux règles établies pour l’application. Il est conseillé de valider les données avant d'envoyer des mises à jour à la base de données sous-jacente pour réduire les erreurs. Une telle validation permet aussi de réduire le nombre potentiel d'allers-retours entre une application et la base de données.  
   
  Le [outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fournit des méthodes partielles qui permettent aux utilisateurs d’étendre le code généré par le concepteur qui s’exécute pendant les insertions, mises à jour et supprime des entités complètes et également pendant et après la colonne individuelle modifications.  
   
 > [!NOTE]
->  Cette rubrique fournit les étapes de base pour ajouter une validation aux classes d’entité à l’aide du [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Ces étapes génériques risqueraient d'être difficiles à suivre sans faire référence à une classe d'entité spécifique. Une procédure pas à pas utilisant les données réelles est donc fournie.  
+>  Cette rubrique fournit les étapes de base pour ajouter une validation aux classes d'entité à l'aide du [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Ces étapes génériques risqueraient d'être difficiles à suivre sans faire référence à une classe d'entité spécifique. Une procédure pas à pas utilisant les données réelles est donc fournie.  
   
-## <a name="adding-validation-for-changes-to-the-value-in-a-specific-column"></a>Ajout d’une validation pour la modification d’une valeur dans une colonne spécifique  
+## <a name="adding-validation-for-changes-to-the-value-in-a-specific-column"></a>Ajout d'une validation pour la modification d'une valeur dans une colonne spécifique  
  Cette procédure indique comment valider des données lorsque la valeur d'une colonne change. La validation est effectuée dans la définition de classe (plutôt que dans l'interface utilisateur) et, de ce fait, une exception est levée si la valeur provoque l'échec de la validation. Implémentez la gestion des erreurs pour le code de votre application qui essaie de modifier les valeurs de colonne.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 #### <a name="to-validate-data-during-a-columns-value-change"></a>Pour valider des données pendant la modification de valeur d'une colonne  
   
-1. Ouvrez ou créez un nouveau fichier LINQ to SQL Classes (**.dbml** fichier) dans le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Double-cliquez sur le **.dbml** fichier **l’Explorateur de solutions**.)  
+1. Ouvrez ou créez un nouveau fichier LINQ to SQL Classes (**.dbml** fichier) dans le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Double-cliquez sur le fichier **.dbml** dans l’**Explorateur de solutions**.)  
   
 2. Dans le Concepteur O/R, cliquez sur la classe pour laquelle vous souhaitez ajouter la validation, puis cliquez sur **afficher le Code**.  
   
@@ -47,7 +44,7 @@ ms.locfileid: "49812748"
   
 4. Pour les projets Visual Basic :  
   
-   1. Développez le **nom de la méthode** liste.  
+   1. Développez la liste **Nom de la méthode**.  
   
    2. Recherchez le **sur**_COLUMNNAME_**Changing** méthode pour la colonne que vous souhaitez ajouter la validation.  
   
@@ -82,11 +79,11 @@ ms.locfileid: "49812748"
  Outre la vérification des valeurs lors des modifications, vous avez la possibilité de valider les données lors d'une tentative de mise à jour d'une classe d'entité complète. La validation pendant une tentative de mise à jour vous permet de comparer des valeurs dans plusieurs colonnes si les règles métier le demandent. La procédure suivante indique comment effectuer la validation lors d'une tentative de mise à jour d'une classe d'entité complète.  
   
 > [!NOTE]
->  Le code de validation pour les mises à jour des classes d'entité est exécuté dans la classe partielle <xref:System.Data.Linq.DataContext> (plutôt qu'en dehors de la classe partielle d'une classe d'entité spécifique).  
+>  Le code de validation pour les mises à jour des classes d’entité est exécuté dans la classe partielle <xref:System.Data.Linq.DataContext> (plutôt qu’en dehors de la classe partielle d’une classe d’entité spécifique).  
   
 #### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>Pour valider des données pendant une mise à jour de classe d'entité  
   
-1. Ouvrez ou créez un nouveau fichier LINQ to SQL Classes (**.dbml** fichier) dans le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Double-cliquez sur le **.dbml** fichier **l’Explorateur de solutions**.)  
+1. Ouvrez ou créez un nouveau fichier LINQ to SQL Classes (**.dbml** fichier) dans le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Double-cliquez sur le fichier **.dbml** dans l’**Explorateur de solutions**.)  
   
 2. Avec le bouton droit sur le Concepteur O/R, une zone vide et cliquez sur **afficher le Code**.  
   
@@ -96,7 +93,7 @@ ms.locfileid: "49812748"
   
 4. Pour les projets Visual Basic :  
   
-   1. Développez le **nom de la méthode** liste.  
+   1. Développez la liste **Nom de la méthode**.  
   
    2. Cliquez sur **mise à jour**_ENTITYCLASSNAME_.  
   
@@ -132,4 +129,3 @@ ms.locfileid: "49812748"
  [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
  [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
  [Validation des données](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)
-

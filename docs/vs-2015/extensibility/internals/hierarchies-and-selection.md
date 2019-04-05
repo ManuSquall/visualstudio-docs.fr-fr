@@ -1,14 +1,9 @@
 ---
 title: Hiérarchies et sélection | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, hierarchies
 - selection
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: cad0a859-7a84-4ce5-b0a9-f7f64e5f8ebb
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 569f895e3c5c870de074394b8eaaca97d4c677ef
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c5bed77a6ec6f8f819137b6859ea0934260f1f03
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726068"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948737"
 ---
 # <a name="hierarchies-and-selection"></a>Hiérarchies et sélection
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,4 +40,3 @@ Lorsque vous personnalisez [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], vous
 ## <a name="related-sections"></a>Rubriques connexes  
  [Architecture](../../extensibility/internals/project-types-architecture.md)  
  Fournit des informations techniques détaillées sur les types de projets.
-

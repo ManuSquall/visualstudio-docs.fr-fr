@@ -1,28 +1,23 @@
 ---
-title: 'Comment : migrer des projets d’extensibilité vers Visual Studio 2015 | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Migrer des projets d’extensibilité vers Visual Studio 2015 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, upgrading
 ms.assetid: 22491cdc-8f04-4e1c-8eb4-ff33798ec792
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 564e279d259cae879ca2925eed3309c30d7513db
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9715a71869ebb24e2631fa962f7078cd7044b0cc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785155"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952735"
 ---
-# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Comment : migrer des projets d’extensibilité vers Visual Studio 2015
+# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Procédure : Migrer des projets d’extensibilité vers Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Voici comment mettre à niveau de votre extension.  
@@ -60,4 +55,3 @@ Voici comment mettre à niveau de votre extension.
   
 > [!NOTE]
 >  Il n’est pas nécessaire que vous mettez à jour vos projets d’extensibilité existants pour utiliser les outils et les assemblys de référence NuGet.  Ils peuvent continuer à générer à l’aide des assemblys de référence et les outils installés avec le SDK de Visual Studio.
-

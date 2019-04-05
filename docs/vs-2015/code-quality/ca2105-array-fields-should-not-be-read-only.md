@@ -1,14 +1,9 @@
 ---
-title: 'CA2105 : Les champs de tableau ne doivent pas être en lecture seule | Microsoft Docs'
-ms.custom: ''
+title: 'CA2105 : Champs de tableau ne doivent pas être en lecture seule | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2105
 - ArrayFieldsShouldNotBeReadOnly
@@ -20,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 51878d18deb56c77ebbef0d0aa84b399ef2fa722
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4741b30d1429a1a179328c8fb4b150fc4f920612
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894974"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951598"
 ---
 # <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105 : Les champs de tableau ne doivent pas être en lecture seule
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ ms.locfileid: "49894974"
 ## <a name="rule-description"></a>Description de la règle
  Lorsque vous appliquez le `readonly` (`ReadOnly` dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) modificateur à un champ qui contient un tableau, le champ ne peut pas être modifié pour faire référence à un tableau différent. Toutefois, les éléments du tableau stockés dans un champ en lecture seule peuvent être modifiés. Code qui prend des décisions ou exécute des opérations qui reposent sur les éléments d’un tableau en lecture seule qui est publiquement accessible peut contenir une faille de sécurité exploitable.
 
- Notez que la présence d’un champ public également viole la règle de conception [CA1051 : ne déclarez pas de champs d’instances visibles](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
+ Notez que la présence d’un champ public également viole la règle de conception [CA1051 : Ne déclarez pas de champs d’instances visibles](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger la vulnérabilité de sécurité qui est identifiée par cette règle, ne comptez pas sur le contenu d’un tableau en lecture seule qui est accessible publiquement. Il est fortement recommandé d’utiliser l’une des procédures suivantes :
@@ -52,7 +47,7 @@ ms.locfileid: "49894974"
 
 - Remplacez le champ public avec une méthode qui retourne un clone d’un tableau privé. Étant donné que votre code ne repose pas sur le clone, il n’existe aucun risque si les éléments sont modifiés.
 
-  Si vous avez choisi la deuxième approche, ne remplacez pas le champ par une propriété ; propriétés qui retournent des tableaux de manière négative affectent les performances. Pour plus d’informations, consultez [CA1819 : propriétés ne doivent pas retourner de tableaux](../code-quality/ca1819-properties-should-not-return-arrays.md).
+  Si vous avez choisi la deuxième approche, ne remplacez pas le champ par une propriété ; propriétés qui retournent des tableaux de manière négative affectent les performances. Pour plus d’informations, consultez [CA1819 : Propriétés ne doivent pas retourner de tableaux](../code-quality/ca1819-properties-should-not-return-arrays.md).
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Exclusion d’un avertissement de cette règle est fortement déconseillée. Presque aucun scénarios se produisent dans lequel le contenu d’un champ en lecture seule est sans important. Si c’est le cas dans votre scénario, supprimez le `readonly` modificateur au lieu d’exclure le message.
@@ -71,10 +66,7 @@ ms.locfileid: "49894974"
 
  La sortie de cet exemple est :
 
- **Avant la falsification : notes : 90, 90, 90 Notes privées : 90, 90, 90 Notes sécurisées, 90, 90, 90**
-**après la falsification : notes : 90, 555, 90 Notes privées : 90, 555, 90 Notes sécurisées, 90, 90, 90**
+ **Avant la falsification : Notes : 90, 90, 90 Notes privées : 90, 90, 90 Notes sécurisées, 90, 90, 90**
+**après le sabotage : Notes : 90, 555, 90 Notes privées : 90, 555, 90 secure notes, 90, 90, 90**
 ## <a name="see-also"></a>Voir aussi
  <xref:System.Array?displayProperty=fullName> <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
-
-
-

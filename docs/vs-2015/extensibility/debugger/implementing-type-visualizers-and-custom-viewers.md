@@ -1,27 +1,22 @@
 ---
 title: Implémentation de visualiseurs de Type et les visionneuses personnalisées | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], custom viewer
 - debugging [Debugging SDK], type visualizer
 ms.assetid: abef18c0-8272-4451-b82a-b4624edaba7d
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 11d047904e932646eedc974a50590dbe0a9ea99e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f74dcee5e72221271e2756af37d3d9284841db5f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791278"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952728"
 ---
 # <a name="implementing-type-visualizers-and-custom-viewers"></a>Implémentation de visualiseurs de type et de visionneuses personnalisées
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -66,4 +61,3 @@ ms.locfileid: "51791278"
  [Écriture d’un évaluateur d’Expression de CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [Visualisation et affichage des données](../../extensibility/debugger/visualizing-and-viewing-data.md)   
  [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md)
-

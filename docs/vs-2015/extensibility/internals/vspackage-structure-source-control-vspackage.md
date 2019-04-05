@@ -1,27 +1,22 @@
 ---
 title: Structure VSPackage (VSPackage de contrôle de code Source) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, structure
 - source control packages, VSPackage overview
 ms.assetid: 92722be7-b397-48c3-a7a7-0b931a341961
 caps.latest.revision: 27
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6eaad545d1c1b3fe96ecbad3a88cc7636b777a54
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 08bb0a296daca0de1c02b905a75fb10ce05f254e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737977"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950589"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>Structure VSPackage (VSPackage de contrôle de code source)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -82,4 +77,3 @@ Le Kit de développement du Package du contrôle de Source fournit des directive
 ## <a name="see-also"></a>Voir aussi  
  [Éléments de conception](../../extensibility/internals/source-control-vspackage-design-elements.md)   
  [Interfaces et services associés](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)
-
