@@ -1,30 +1,27 @@
 ---
 title: Mise en route avec les langages spécifiques à un domaine | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 024392a2-2c04-404f-a27b-7273553c3b60
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 29699609ee095c7e95434492afc531869453da4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 3ac51765fd89324c3d4098a4aa92afc9e5bbc1bf
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877764"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001387"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Mise en route des langages spécifiques à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette rubrique explique les concepts de base dans la définition et utilisation d’un langage spécifique à un domaine (DSL) créé avec le SDK de modélisation pour Visual Studio.  
   
- Si vous ne connaissez pas DSL, nous vous recommandons de collaborer via le **atelier des outils DSL**, que vous trouverez dans ce site : [création and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
+ Si vous ne connaissez pas DSL, nous vous recommandons de collaborer via le **atelier des outils DSL**, que vous trouverez dans ce site : [SDK de création et de modélisation](http://go.microsoft.com/fwlink/?LinkID=186128)  
   
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>Que pouvez-vous faire avec un langage spécifique à un domaine ?  
  Un langage spécifique à un domaine est une notation, en général graphique, qui est conçue pour être utilisé pour un usage particulier. En revanche, les langages tels que UML sont à usage général. Dans une solution DSL, vous pouvez définir les types d’élément de modèle et leurs relations, et comment elles sont présentées à l’écran.  
@@ -46,7 +43,7 @@ Cette rubrique explique les concepts de base dans la définition et utilisation 
 |-|-|  
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
-|SDK Modeling pour Visual Studio|[Télécharger MSDK](http://www.microsoft.com/download/details.aspx?id=40754)|  
+|SDK Modeling pour Visual Studio|[Télécharger MSDK](https://www.microsoft.com/download/details.aspx?id=48148)|  
   
 ## <a name="creating-a-dsl-solution"></a>Création d’une Solution DSL  
  Pour créer un nouveau langage spécifique à un domaine, vous créez un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solution à l’aide du modèle de projet de langage spécifique à un domaine.  
@@ -86,7 +83,7 @@ Cette rubrique explique les concepts de base dans la définition et utilisation 
   
    L'interface utilisateur ressemble maintenant à l'image suivante.  
   
-   ![concepteur DSL](../modeling/media/dsl-designer.png "dsl_designer")  
+   ![concepteur dsl](../modeling/media/dsl-designer.png "dsl_designer")  
   
    Cette solution définit un langage spécifique à un domaine. Pour plus d’informations, consultez [vue d’ensemble de l’Interface utilisateur des outils Domain-Specific Language](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).  
   
@@ -107,7 +104,7 @@ Cette rubrique explique les concepts de base dans la définition et utilisation 
 1. Cliquez sur **transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions. Cette opération régénère la plupart du code source à partir de DslDefinition.dsl.  
   
    > [!NOTE]
-   >  Chaque fois que vous modifiez DslDefinition.dsl, vous devez cliquer sur **transformer tous les modèles** avant de reconstruire la solution. Vous pouvez automatiser cette étape. Pour plus d’informations, consultez [comment automatiser transformer tous les modèles](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+   >  Chaque fois que vous modifiez DslDefinition.dsl, vous devez cliquer sur **transformer tous les modèles** avant de reconstruire la solution. Vous pouvez automatiser cette étape. Pour plus d’informations, consultez [comment automatiser transformer tous les modèles](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 2. Appuyez sur F5, ou sur le **déboguer** menu, cliquez sur **démarrer le débogage**.  
   
@@ -377,7 +374,7 @@ Cette rubrique explique les concepts de base dans la définition et utilisation 
 ## <a name="validation-and-commands"></a>Validation et commandes  
  Vous pouvez développer davantage ce DSL en ajoutant des contraintes de validation. Ces contraintes sont des méthodes que vous pouvez définir, assurez-vous que le modèle est dans un état correct. Par exemple, vous pouvez définir une contrainte pour vous assurer que la date de naissance d’un enfant est ultérieure à celle de ses parents. La fonctionnalité de validation affiche un avertissement si l’utilisateur tente d’enregistrer un modèle qui déclenche une des contraintes. Pour plus d’informations, consultez [Validation dans un langage spécifique à un domaine](../modeling/validation-in-a-domain-specific-language.md).  
   
- Vous pouvez également définir des commandes de menu que l’utilisateur peut appeler. Commandes peuvent modifier le modèle. Ils peuvent également interagir avec d’autres modèles dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et avec les ressources externes. Pour plus d’informations, consultez [Comment : modifier une commande de Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
+ Vous pouvez également définir des commandes de menu que l’utilisateur peut appeler. Commandes peuvent modifier le modèle. Ils peuvent également interagir avec d’autres modèles dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et avec les ressources externes. Pour plus d'informations, voir [Procédure : Modifier une commande de Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
   
 ## <a name="deploying-the-dsl"></a>Déploiement de la solution DSL  
  Pour autoriser d’autres utilisateurs d’utiliser le langage spécifique à un domaine, vous distribuez un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fichier d’Extension (VSIX). Il est créé lorsque vous générez la solution DSL.  
@@ -386,7 +383,7 @@ Cette rubrique explique les concepts de base dans la définition et utilisation 
   
  Vous pouvez utiliser la même procédure pour installer la solution DSL sur votre ordinateur afin que vous n’avez pas à utiliser l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- Pour plus d’informations, consultez [déploiement de Solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).  
+ Pour plus d’informations, consultez [Déploiement de solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).  
   
 ##  <a name="Reset"></a> Suppression des anciennes DSL expérimental  
  Si vous avez créé plusieurs DSL expérimental qui vous ne voulez plus, vous pouvez les supprimer à partir de votre ordinateur en réinitialisant le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instance expérimentale.  
@@ -405,6 +402,3 @@ Cette rubrique explique les concepts de base dans la définition et utilisation 
  [Présentation des modèles, des Classes et des relations](../modeling/understanding-models-classes-and-relationships.md)   
  [Comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md)   
  [SDK de création et de modélisation](http://go.microsoft.com/fwlink/?LinkID=186128)
-
-
-
