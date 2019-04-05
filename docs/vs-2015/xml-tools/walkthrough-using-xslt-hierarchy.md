@@ -1,27 +1,22 @@
 ---
-title: 'Procédure pas à pas : Utilisation de XSLT Hierarchy | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure pas à pas : À l’aide de XSLT Hierarchy | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 5e60c8ec-cd05-4597-b856-55038218acf4
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5b94a958a915ad7858575e093cae525df17cc23e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b72213ab2c7dd9fa15fb639b6ef2212f56aa141f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280956"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951693"
 ---
-# <a name="walkthrough-using-xslt-hierarchy"></a>Procédure pas à pas : utilisation de XSLT Hierarchy
+# <a name="walkthrough-using-xslt-hierarchy"></a>Procédure pas à pas : À l’aide de XSLT Hierarchy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -121,7 +116,4 @@ L’outil XSLT Hierarchy simplifie de nombreuses tâches de développement XML. 
 6.  Lorsque le débogueur s'arrête à l'instruction `<xsl:include href="xslincludefile.xsl" />`, appuyez sur le bouton Pas à pas détaillé. Notez que le débogage peut continuer dans la feuille de style référencée. La hiérarchie est visible et le concepteur affiche le chemin d’accès correct.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : Générateur de profils XSLT](../xml-tools/walkthrough-xslt-profiler.md)
-
-
-
+ [Procédure pas à pas : Profileur XSLT](../xml-tools/walkthrough-xslt-profiler.md)

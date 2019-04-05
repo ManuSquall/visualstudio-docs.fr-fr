@@ -1,11 +1,8 @@
 ---
 title: Commutateur&lt;T&gt; Concepteur d’activités | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Presentation.ModelItemKeyValuePair.UI
@@ -14,16 +11,16 @@ ms.assetid: 18a6c96e-49a9-4356-ab61-fbd7e3ab44bb
 caps.latest.revision: 3
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 01e583db3bb5b5aff6608b4028636823b4ca857c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 7e2baacdfb35e2360a0e9dcc56891cadbe7d3ff3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844703"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951994"
 ---
 # <a name="switchlttgt-activity-designer"></a>Commutateur&lt;T&gt; Concepteur d’activités
-L’activité <xref:System.Activities.Statements.Switch%601> évalue une expression spécifiée et exécute l’activité à partir d’une collection d’activités dont la clé associée correspond à la valeur obtenue de l’évaluation.  
+L'activité <xref:System.Activities.Statements.Switch%601> évalue une expression spécifiée et exécute l'activité à partir d'une collection d'activités dont la clé associée correspond à la valeur obtenue de l'évaluation.  
   
  Le **commutateur\<T >** ActivityDesigner est utilisé pour créer et configurer un <xref:System.Activities.Statements.Switch%601> activité dans le [!INCLUDE[wfd1](../includes/wfd1-md.md)].  
   
@@ -44,7 +41,7 @@ L’activité <xref:System.Activities.Statements.Switch%601> évalue une express
 |<xref:System.Activities.Statements.Switch%601.Default%2A>||Spécifie l'activité exécutée si aucune correspondance n'est trouvée. Cliquez sur le **ajouter une activité** bouton sur le concepteur pour ouvrir le **par défaut** zone où l’activité peut être supprimée.|  
 |<xref:System.Activities.Statements.Switch%601.Cases%2A>||Spécifie les cas à évaluer. Pour ajouter un cas, cliquez sur le **Ajouter nouveau cas** bouton en bas de **commutateur\<T >** concepteur. Le bouton se transforme en zone de texte (zone de liste déroulante si le type générique sélectionné lors de l’ajout du commutateur\<T > est String ou Enum). Après l’ajout d’une clé dans le **cas valeur** zone, la zone de cas se développe et une activité peut être déposée où le texte d’indication « Déposer l’activité ici » pour définir la logique d’exécution pour le cas.|  
   
- Plusieurs cas peuvent être ajoutés tant que les clés de cas ne sont pas dupliquées. Sinon, une boîte de dialogue d'erreur s'affiche pour signaler que la clé de cas spécifiée existe déjà et que vous devez en choisir une autre. Dans le **commutateur\<T >** concepteur, qu’une seule zone de cas peut être développée à la fois. Si une zone de cas est affiché en mode réduit, cliquez dessus pour la développer. Notez que lorsqu‘un cas est affiché en mode réduit, le concepteur place le nom d‘affichage de l‘activité (si elle existe) à l‘intérieur du cas, à droite. Sinon, elle est affichée la **ajouter une activité** bouton qui développe le cas si vous cliquez dessus et vous permet d’ajouter une activité.  
+ Plusieurs cas peuvent être ajoutés tant que les clés de cas ne sont pas dupliquées. Sinon, une boîte de dialogue d'erreur s'affiche pour signaler que la clé de cas spécifiée existe déjà et que vous devez en choisir une autre. Dans le **commutateur\<T >** concepteur, qu’une seule zone de cas peut être développée à la fois. Si une zone de cas est affiché en mode réduit, cliquez dessus pour la développer. Notez que lorsqu'un cas est affiché en mode réduit, le concepteur place le nom d'affichage de l'activité (si elle existe) à l'intérieur du cas, à droite. Sinon, elle est affichée la **ajouter une activité** bouton qui développe le cas si vous cliquez dessus et vous permet d’ajouter une activité.  
   
  Cliquer sur la clé d'un cas existant transforme l'apparence de cette dernière d'étiquette en zone de texte afin que vous puissiez la modifier.  
   

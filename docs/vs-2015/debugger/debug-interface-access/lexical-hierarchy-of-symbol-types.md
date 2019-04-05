@@ -1,14 +1,9 @@
 ---
 title: Hiérarchie lexicale des Types de symboles | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 912da653-ddfe-45a4-84aa-64281283739a
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0f9fa295a7faa85a0b7a7b3268702c4199869754
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dac4ae8357d62813abb3f4735ec6e1f8b552d324
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783257"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953267"
 ---
 # <a name="lexical-hierarchy-of-symbol-types"></a>Hiérarchie lexicale des types de symboles
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,10 +49,7 @@ Le tableau suivant présente les types de symboles dans la hiérarchie lexicale.
 >  Propriétés des symboles supplémentaires peuvent être disponibles selon le type de symbole. Ces propriétés sont répertoriées dans les rubriques de symbole individuels.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Hiérarchie de classes des Types de symboles](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)   
+ [Hiérarchie de classes des types de symboles](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)   
  [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)   
- [Balises Symbols et Symbol](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)   
+ [Symboles et étiquettes de symbole](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)   
  [SymTagEnum, énumération](../../debugger/debug-interface-access/symtagenum.md)
-
-
-

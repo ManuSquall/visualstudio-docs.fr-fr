@@ -1,12 +1,9 @@
 ---
-title: 'Diagrammes de composants UML : Indications | Microsoft Docs'
-ms.custom: ''
+title: 'Diagrammes de composants UML : Guidelines | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML diagrams, component
 - diagrams - modeling, component
@@ -17,15 +14,15 @@ ms.assetid: 6c1bdd60-369e-477e-83ed-7f6fe75c9f0b
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7400bac1fa6dcbf086718e54d18288b8ab80f1b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 13dc2eda358e86cd324bc154b856028b3db8979b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801465"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951907"
 ---
-# <a name="uml-component-diagrams-guidelines"></a>Diagrammes de composants UML : indications
+# <a name="uml-component-diagrams-guidelines"></a>Diagrammes de composants UML : Recommandations
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour afficher la structure d’un système logiciel. Pour une démonstration vidéo, consultez [Designing the Physical Structure à l’aide de diagrammes de composants](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/).  
@@ -38,7 +35,7 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour affich
   
  Le dessin de diagrammes de composants présente plusieurs avantages :  
   
-- La réflexion à propos de votre conception relativement aux principaux blocs permet à l'équipe de développement de comprendre une conception existante ou d'en créer une.  
+- La réflexion à propos de votre conception relativement aux principaux blocs permet à l’équipe de développement de comprendre une conception existante ou d’en créer une.  
   
 - En considérant votre système comme une collection de composants intégrant des interfaces fournies et requises bien définies, vous améliorez la séparation entre les différents composants. Cela facilite ensuite la compréhension de la conception, ainsi que sa modification lors de celle des impératifs.  
   
@@ -49,13 +46,13 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour affich
   
 |Autre diagramme|Permet d'évoquer et de communiquer ces aspects de votre conception|  
 |-------------------|--------------------------------------------------------------------|  
-|Diagramme de séquence UML|-Les interactions entre les composants d’un système<br />-Les interactions entre les différentes parties à l’intérieur d’un composant.<br /><br /> Pour plus d’informations, consultez [diagrammes de séquence UML : indications](../modeling/uml-sequence-diagrams-guidelines.md).|  
-|Diagramme de classes UML|-Les interfaces d’un composant. Le diagramme de classes vous permet de détailler les méthodes de l'interface.<br />-Les données envoyées dans les paramètres sur les interfaces de composants.<br /><br /> Pour plus d’informations, consultez [diagrammes de classes UML : indications](../modeling/uml-class-diagrams-guidelines.md).|  
-|Diagrammes d'activités|-Le traitement interne exécuté par un composant en réponse aux messages entrants.<br /><br /> Pour plus d’informations, consultez [diagrammes d’activités UML : instructions](../modeling/uml-activity-diagrams-guidelines.md).|  
-|Diagrammes de couche|-Couches architecturales logiques de vos composants.<br /><br /> Pour plus d’informations, consultez [diagrammes de couche : référence](../modeling/layer-diagrams-reference.md).|  
+|Diagramme de séquence UML|-Les interactions entre les composants d’un système<br />-Les interactions entre les différentes parties à l’intérieur d’un composant.<br /><br /> Pour plus d’informations, consultez [diagrammes de séquence UML : Les instructions](../modeling/uml-sequence-diagrams-guidelines.md).|  
+|Diagramme de classes UML|-Les interfaces d’un composant. Le diagramme de classes vous permet de détailler les méthodes de l'interface.<br />-Les données envoyées dans les paramètres sur les interfaces de composants.<br /><br /> Pour plus d'informations, consultez [Diagrammes de classes UML : Les instructions](../modeling/uml-class-diagrams-guidelines.md).|  
+|Diagrammes d'activités|-Le traitement interne exécuté par un composant en réponse aux messages entrants.<br /><br /> Pour plus d’informations, consultez [diagrammes d’activités UML : Les instructions](../modeling/uml-activity-diagrams-guidelines.md).|  
+|Diagrammes de couche|-Couches architecturales logiques de vos composants.<br /><br /> Pour plus d’informations, consultez [diagrammes de couche : Référence](../modeling/layer-diagrams-reference.md).|  
   
 ##  <a name="Basics"></a> Étapes de base pour dessiner des diagrammes de composant  
- Pour plus d’informations de référence sur les éléments de diagrammes de composants, consultez [diagrammes de composants UML : référence](../modeling/uml-component-diagrams-reference.md).  
+ Pour plus d’informations de référence sur les éléments de diagrammes de composants, consultez [diagrammes de composants UML : Référence](../modeling/uml-component-diagrams-reference.md).  
   
  Pour plus d’informations sur l’utilisation des diagrammes de composants en cours de conception, consultez [modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md).  
   
@@ -112,7 +109,7 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour affich
   
  Un port avec un *interface requise* (3) représente un impératif de composant pour un groupe d’opérations ou services fournis par d’autres composants ou systèmes externes.  
   
- Par exemple, un navigateur Web requiert des serveur web ou encore un complément d’application exige des services de l’application.  
+ Par exemple, un navigateur Web requiert des serveurs Web ou encore un complément d'application exige des services de l'application.  
   
  Un composant peut disposer de n'importe quel nombre de ports.  
   
@@ -157,7 +154,7 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour affich
   
     2.  Sur le diagramme de composant, cliquez sur le composant, puis cliquez sur **coller la référence**.  
   
-         Une interface fournie apparaît alors sur le composant. Une étiquette d’action apparaît juste à côté.  
+         Une interface fournie apparaît alors sur le composant. Une balise d'action apparaît juste à côté.  
   
         > [!NOTE]
         >  Si vous utilisez **coller** au lieu de **coller la référence**, une nouvelle interface qui porte un nouveau nom sera créée.  
@@ -279,7 +276,7 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour affich
   
 1.  Créez un diagramme de séquences.  
   
-     Pour plus d’informations, consultez [diagrammes de séquence UML : indications](../modeling/uml-sequence-diagrams-guidelines.md).  
+     Pour plus d’informations, consultez [diagrammes de séquence UML : Les instructions](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 2.  Créez une ligne de vie pour un composant externe, un utilisateur, un périphérique ou un autre acteur (1) qui envoie des messages à ce composant.  
   
@@ -301,7 +298,7 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour affich
  Vous pouvez indiquer cela dans le modèle en définissant le **Is Indirectly Instantiated** propriété du composant. Dans ce cas, toutes les interfaces du composant doivent se trouver au niveau des ports, avec des délégations aux parties internes.  
   
 ### <a name="describing-the-process-inside-each-part"></a>Description du processus à l'intérieur de chaque partie  
- Vous pouvez utiliser des diagrammes d'activités pour montrer comment un composant traite chaque message entrant. Pour plus d’informations, consultez [diagrammes d’activités UML : instructions](../modeling/uml-activity-diagrams-guidelines.md).  
+ Vous pouvez utiliser des diagrammes d'activités pour montrer comment un composant traite chaque message entrant. Pour plus d’informations, consultez [diagrammes d’activités UML : Les instructions](../modeling/uml-activity-diagrams-guidelines.md).  
   
  ![Diagramme d’activités avec tampon de données](../modeling/media/uml-compdescribingproc.png "UML_CompDescribingProc")  
   
@@ -337,12 +334,9 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour affich
   
 ## <a name="see-also"></a>Voir aussi  
  [Modifier des modèles UML et des diagrammes](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagrammes de composants UML : référence](../modeling/uml-component-diagrams-reference.md)   
- [Diagrammes de séquence UML : référence](../modeling/uml-sequence-diagrams-reference.md)   
- [Diagrammes de cas d’usage UML : référence](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagrammes de classes UML : référence](../modeling/uml-class-diagrams-reference.md)   
- [Diagrammes de composants UML : référence](../modeling/uml-component-diagrams-reference.md)   
- [Vidéo : Designing the Physical Structure à l’aide de diagrammes de composants](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/)
-
-
-
+ [Diagrammes de composants UML : Référence](../modeling/uml-component-diagrams-reference.md)   
+ [Diagrammes de séquence UML : Référence](../modeling/uml-sequence-diagrams-reference.md)   
+ [Diagrammes de cas d’usage UML : Référence](../modeling/uml-use-case-diagrams-reference.md)   
+ [Diagrammes de classes UML : Référence](../modeling/uml-class-diagrams-reference.md)   
+ [Diagrammes de composants UML : Référence](../modeling/uml-component-diagrams-reference.md)   
+ [Vidéo : Conception de la Structure physique à l’aide de diagrammes de composants](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/)

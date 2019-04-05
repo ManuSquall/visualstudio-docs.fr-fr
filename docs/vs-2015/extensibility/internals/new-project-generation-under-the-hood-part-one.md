@@ -1,29 +1,24 @@
 ---
 title: 'Nouvelle génération de projet : Sous le capot, première partie | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 caps.latest.revision: 30
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f1181cb3f84471727b181bb1ff91b69e8613b8a5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e4d28305f8ccd1a6b212b520a7501164be2cc0ee
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792917"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950450"
 ---
-# <a name="new-project-generation-under-the-hood-part-one"></a>Génération de nouveau projet : les rouages du système, partie 1
+# <a name="new-project-generation-under-the-hood-part-one"></a>Nouvelle génération de projet : Rouages du système, première partie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Jamais pensé que sur la façon de créer votre propre type de projet ? Vous vous demandez ce qui se passe réellement lorsque vous créez un nouveau projet ? Prenons un œil en coulisses et voyons ce qui se passe vraiment.  
@@ -97,7 +92,7 @@ devenv /installvstemplates
 ##### <a name="developeractivity"></a>DeveloperActivity  
  Si cette sous-clé est présente, la position du nœud racine est contrôlée par la boîte de dialogue Paramètres du développeur. Par exemple :  
   
- DeveloperActivity REG_SZ VC #  
+ DeveloperActivity REG_SZVC#  
   
  Indique que Visual c# est un nœud racine si Visual Studio est configuré pour [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] développement. Sinon, il sera un nœud enfant du **autres langages**.  
   
@@ -128,7 +123,7 @@ devenv /installvstemplates
 -   L’ordre de tri peut être modifié.  
   
 ##### <a name="finding-the-root-node-for-a-project-type"></a>Recherche le nœud racine pour un Type de projet  
- Lorsque Visual Studio parcourt les dossiers ProjectTemplates, il ouvre tous les fichiers .zip et extrait tous les fichiers .vstemplate. Un fichier .vstemplate utilise XML pour décrire un modèle d’application. Pour plus d’informations, consultez [nouvelle génération de projet : Under the Hood, partie deux](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Lorsque Visual Studio parcourt les dossiers ProjectTemplates, il ouvre tous les fichiers .zip et extrait tous les fichiers .vstemplate. Un fichier .vstemplate utilise XML pour décrire un modèle d’application. Pour plus d’informations, consultez [nouvelle génération de projet : Sous le capot, deuxième partie](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  Le \<ProjectType > balise détermine le type de projet pour l’application. Par exemple, le fichier \CSharp\SmartDevice\WindowsCE\1033\WindowsCE-EmptyProject.zip contient un fichier EmptyProject.vstemplate qui a cette balise :  
   
@@ -220,5 +215,4 @@ devenv /installvstemplates
     **MyProjectNode** apparaît sous la forme d’un nœud enfant de Visual C# juste sous le nœud de Windows.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Génération de nouveau projet : les rouages du système, partie 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
-
+ [Nouvelle génération de projet : Sous le capot, deuxième partie](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

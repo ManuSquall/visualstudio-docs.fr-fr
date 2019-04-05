@@ -1,11 +1,8 @@
 ---
 title: À l’aide du Concepteur d’activités hérité | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - activities, configuring
@@ -18,13 +15,13 @@ ms.assetid: 2fea8a05-6e58-423d-94bf-a822b15ffb80
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: a6c8aafe9eac26080bfbf57d06c7d512d1e1e62d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e083da3dce7ed6b69309557d9e960a302f5b3d60
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843429"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952315"
 ---
 # <a name="using-the-legacy-activity-designer"></a>Utilisation du concepteur d'activités hérité
 Cette rubrique décrit comment utiliser le concepteur d'activités dans le [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité. Utilisez le concepteur hérité lorsque vous ciblez le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -44,7 +41,7 @@ Cette rubrique décrit comment utiliser le concepteur d'activités dans le [!INC
   
 3. Tapez un nom d’activité ou conservez le nom par défaut, puis cliquez sur **ajouter**.  
   
-   Vous pouvez également créer un ensemble d’activités personnalisées en créant un nouveau projet de type **Workflow Activity Library**. Pour plus d’informations sur ce type de projet, consultez [Comment : créer une bibliothèque d’activités de flux de travail (hérité)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).  
+   Vous pouvez également créer un ensemble d’activités personnalisées en créant un nouveau projet de type **Workflow Activity Library**. Pour plus d’informations sur ce type de projet, consultez [Comment : Créer une bibliothèque d’activités de flux de travail (hérité)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).  
   
 ## <a name="configuring-an-activity"></a>Configuration d'une activité  
  Lorsque le concepteur d'activités est actif, vous pouvez utiliser l'explorateur de propriétés pour configurer les propriétés répertoriées dans le tableau suivant.  
@@ -64,5 +61,5 @@ Cette rubrique décrit comment utiliser le concepteur d'activités dans le [!INC
  [Création d’activités personnalisées](http://go.microsoft.com/fwlink?LinkID=65021)   
  [Activités de flux de travail hérité](../workflow-designer/legacy-workflow-activities.md)   
  [Exemples d’activités personnalisées](http://go.microsoft.com/fwlink?LinkID=65022)   
- [Comment : créer une bibliothèque d’activités de flux de travail (hérité)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)   
+ [Guide pratique pour Créer une bibliothèque d’activités de flux de travail (hérité)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)   
  [Utilisation du Concepteur de flux de travail hérité](../workflow-designer/using-the-legacy-workflow-designer.md)

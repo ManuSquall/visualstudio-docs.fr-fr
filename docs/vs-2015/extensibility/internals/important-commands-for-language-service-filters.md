@@ -1,27 +1,22 @@
 ---
 title: Filtres de Service des commandes importantes pour la langue | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services, filters
 - language services, commands to support
 ms.assetid: 4948c494-3d4d-4f50-b3f9-959e73f90e4d
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2c99fdefdd8a215be04bb16b88f56be56b7fff67
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f253f053f9f8fc9a7e377d78ae46307262c13006
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787091"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951062"
 ---
 # <a name="important-commands-for-language-service-filters"></a>Commandes importantes pour les filtres du service de langage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,4 +42,3 @@ Si vous souhaitez créer un filtre de service de langage complet, envisagez de g
   
 ## <a name="see-also"></a>Voir aussi  
  [Développement d’un service de langage hérité](../../extensibility/internals/developing-a-legacy-language-service.md)
-

@@ -1,26 +1,21 @@
 ---
 title: Glossaire du Kit de développement logiciel Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - glossary [Visual Studio SDK]
 ms.assetid: b64d432b-c39b-4904-ad18-3c3218b6e3aa
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0ec2300e8bf700deacd50a4a980e02aa4b903bae
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8c189c4c9e06d224d7cef296a2c39e732cbc29f6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758952"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951620"
 ---
 # <a name="visual-studio-sdk-glossary"></a>Glossaire du SDK Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -150,7 +145,7 @@ Ce glossaire fournit les définitions des termes utilisés dans le [!INCLUDE[vsi
   service  
   Un contrat pour un ensemble d’interfaces COM qui se trouvent dans un seul objet COM. Lorsque vous créez un service, qui est identifié par un GUID, vous définissez le jeu d’interfaces COM qui exécute le service. Les objets COM utilisent services pour communiquer entre eux.  
   
-  Solution  
+  solution  
   Groupe de projets connexes avec laquelle un utilisateur travaille.  
   
   Concepteur standard  
@@ -191,4 +186,3 @@ Ce glossaire fournit les définitions des termes utilisés dans le [!INCLUDE[vsi
   
   VSPackage  
   Un morceau installable de logiciels qui étendent l’IDE Visual Studio en ajoutant un ou plusieurs des opérations suivantes : interface utilisateur, les services, les types de projets ou éditeur/concepteur. Un VSPackage se compose d’un objet COM qui implémente le `IVsPackage` interface et un ou plusieurs autres objets COM qui implémentent les autres interfaces pour prendre en charge la sélection et autres fonctionnalités. En outre, un VSPackage a des conditions d’inscription spécifique.
-

@@ -1,24 +1,19 @@
 ---
 title: Installer le SDK Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- visual-studio-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: visual-studio-sdk
+ms.topic: conceptual
 ms.assetid: c730edb6-5099-4c16-85a8-08def09f1455
 caps.latest.revision: 4
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9e5546b07ef9917590daa573efd99377339412c7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 796d5f3f233310157b0784e213b81237e767055b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793553"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951682"
 ---
 # <a name="installing-the-visual-studio-sdk"></a>Installer le SDK Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,10 +62,3 @@ vs_community.exe /s /installSelectableItems VS_SDK_GROUPV1
 ```  
   
  Notez que vous devez utiliser le programme d’installation de Visual Studio qui correspond à votre version installée de Visual Studio. Par exemple, si vous avez Visual Studio Enterprise est installé sur votre ordinateur, vous devez exécuter le programme d’installation de Visual Studio Enterprise (vs_enterprise.exe).
-
-
-
-
-
-
-

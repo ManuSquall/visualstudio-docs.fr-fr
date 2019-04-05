@@ -1,14 +1,9 @@
 ---
 title: Actualiser une application (JavaScript) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,13 +18,13 @@ ms.assetid: fd99ee60-fa94-46df-8b17-369f60bfd908
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1905d48e79567684da6215b419c348b32721e0e3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5d85db8ff2b9b93d99ad44377a1935552c951e32
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722899"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949759"
 ---
 # <a name="refresh-an-app-javascript"></a>Actualiser une application (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 -   modifications des ressources, telles que les modifications des chaînes dans les fichiers .resjson ;  
   
--   modifications des fichiers projet qui entraînent des changements de noms de chemin d'accès, de nouveaux fichiers projet ou des fichiers supprimés ;  
+-   modifications des fichiers projet qui entraînent des changements de noms de chemin d’accès, de nouveaux fichiers projet ou des fichiers supprimés ;  
   
 -   modifications des propriétés de projet et d'élément, telles que les modifications du périphérique de débogage sélectionné, ou les modifications de l'action du package pour un fichier (dans la fenêtre Propriétés).  
   
@@ -83,12 +78,9 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
     Hello!  
     ```  
   
-7.  Cliquez sur le **Windows actualiser application** bouton, qui ressemble à ceci : ![bouton d’application Windows Actualiser](../debugger/media/js-refresh.png "JS_Refresh"). (Ou appuyez sur F4.)  
+7.  Cliquez sur le **Windows actualiser application** bouton, qui ressemble à ceci : ![Windows application bouton Actualiser](../debugger/media/js-refresh.png "JS_Refresh"). (Ou appuyez sur F4.)  
   
 8.  Basculez vers l'application. L'application est rechargée sans que le débogueur redémarre, et le nouveau titre de la page apparaît.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)
-
-
-

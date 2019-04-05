@@ -1,14 +1,9 @@
 ---
-title: 'Démarrage rapide : Analyse du Code pour C / C++ | Microsoft Docs'
-ms.custom: ''
+title: 'Démarrage rapide : Analyse du code pour C / C++ | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - C/C++ code analysis
 - code analysis,C/C++
@@ -16,18 +11,18 @@ ms.assetid: 6110b8ba-0af6-4acd-b1ba-bb0551f90e44
 caps.latest.revision: 10
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 56f14abab372a6a6e533675b070d420a4dfc7a5e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 83b793f694c1965f5ded6b0fd136d672280d59cc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758193"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952257"
 ---
-# <a name="quick-start-code-analysis-for-cc"></a>Démarrage rapide : analyse du code pour C/C++
+# <a name="quick-start-code-analysis-for-cc"></a>Démarrage rapide : Analyse du code pour C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez améliorer la qualité de votre application en exécutant l'analyse de code de manière régulière sur le code C ou C++. Cela peut vous aider à rechercher les problèmes courants, les violations d'une bonne pratique de programmation ou les défauts difficiles à détecter à travers des tests. Les avertissements d'analyse du code diffèrent des avertissements et des erreurs du compilateur, car l'analyse du code recherche des modèles de codes spécifiques qui sont valides, mais qui peuvent engendrer des problèmes pour vous ou d'autres personnes qui utilisent votre code.  
+Vous pouvez améliorer la qualité de votre application en exécutant l'analyse de code de manière régulière sur le code C ou C++. Cela peut vous aider à rechercher les problèmes courants, les violations d'une bonne pratique de programmation ou les défauts difficiles à détecter à travers des tests. Les avertissements de l'analyse du code diffèrent des erreurs et des avertissements du compilateur, car l'analyse du code recherche des modèles de code spécifiques qui sont valides, mais qui peuvent créer des problèmes pour vous ou d'autres utilisateurs de votre code.  
   
 ## <a name="in-this-topic"></a>Dans cette rubrique  
   
@@ -94,7 +89,7 @@ Vous pouvez améliorer la qualité de votre application en exécutant l'analyse 
 ##  <a name="BKMK_Analyze"></a> Analyser et résoudre les avertissements d’analyse du code  
  Pour analyser un avertissement spécifique, choisissez le titre de l'avertissement dans la fenêtre Analyse du code. L'avertissement se développe pour afficher des informations supplémentaires sur le problème. Dans la mesure du possible, l'analyse du code affiche les numéros de ligne et la logique d'analyse qui a conduit à l'avertissement. Pour plus d'informations sur l'avertissement, y compris les solutions possibles au problème, choisissez l'identificateur d'avertissement pour afficher la rubrique d'aide du message dans la bibliothèque MSDN.  
   
- Quand vous développez un avertissement, la ligne de code qui a provoqué l'avertissement est mise en surbrillance dans l'éditeur de code Visual Studio.  
+ Lorsque vous développez un avertissement, la ligne de code à l’origine de l’avertissement est mise en surbrillance dans l’éditeur de code Visual Studio.  
   
  Après avoir identifié le problème, vous pouvez le résoudre dans votre code. Relancez ensuite l'analyse du code pour vérifier que l'avertissement ne s'affiche plus dans la fenêtre Analyse du code, et que le correctif n'a pas levé de nouveaux avertissements.  
   
@@ -106,7 +101,7 @@ Vous pouvez améliorer la qualité de votre application en exécutant l'analyse 
   
  Pour supprimer un avertissement :  
   
-1. Si les informations détaillées ne sont pas affichées, choisissez le titre de l’avertissement pour le développer.  
+1. Si les informations détaillées ne sont pas affichées, choisissez le titre de l'avertissement pour le développer.  
   
 2. Choisissez le lien **Actions** au bas de l’avertissement.  
   
@@ -130,11 +125,8 @@ Vous pouvez améliorer la qualité de votre application en exécutant l'analyse 
 ##  <a name="BKMK_Search"></a> Explorer et filtrer les résultats d’analyse du code  
  Vous pouvez effectuer une recherche dans de longues listes de messages d'avertissement, et vous pouvez filtrer les avertissements dans les solutions à projets multiples.  
   
-1.  **Pour filtrer des avertissements par titre ou id d’avertissement**: entrez le mot clé dans le **filtre** zone de texte.  
+1.  **Pour filtrer des avertissements par titre ou id d’avertissement**: Entrez le mot clé dans le **filtre** zone de texte.  
   
-2.  **Pour filtrer des avertissements par projet**: dans une solution à projets multiples, choisissez un ou plusieurs projets dans la liste dans la partie supérieure droite de la fenêtre analyse du Code. Choisissez le nom de la solution pour afficher tous les avertissements.  
+2.  **Pour filtrer des avertissements par projet**: Dans une solution à projets multiples, choisissez un ou plusieurs projets dans la liste dans la partie supérieure droite de la fenêtre analyse du Code. Choisissez le nom de la solution pour afficher tous les avertissements.  
   
-3.  **Pour filtrer des avertissements par niveau de gravité**: par défaut, messages d’analyse du code sont affectés d’une gravité **avertissement**. Vous pouvez affecter la gravité d’un ou plusieurs messages en tant que **erreur** dans une règle personnalisée définie. Choisissez **avertissement** ou **erreur** pour afficher uniquement les messages qui sont affectés à la gravité correspondante. Choisissez **tous les** pour afficher tous les messages.
-
-
-
+3.  **Pour filtrer des avertissements par niveau de gravité**: Par défaut, messages d’analyse du code sont affectés d’une gravité **avertissement**. Vous pouvez affecter la gravité d’un ou plusieurs messages en tant que **erreur** dans une règle personnalisée définie. Choisissez **avertissement** ou **erreur** pour afficher uniquement les messages qui sont affectés à la gravité correspondante. Choisissez **tous les** pour afficher tous les messages.

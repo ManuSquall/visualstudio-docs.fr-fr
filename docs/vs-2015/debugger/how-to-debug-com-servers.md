@@ -1,14 +1,9 @@
 ---
-title: 'Comment : déboguer des serveurs COM | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Déboguer des serveurs COM | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
 dev_langs:
@@ -27,15 +22,15 @@ ms.assetid: 9f013c2b-0306-4b34-ba7f-d4445a874da1
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 527356ba788e7e69ba3e1542e3b98ead8efbf331
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a7548b100e5bbcccd75a3cd5e7d94d6e7f72ed48
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727184"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951646"
 ---
-# <a name="how-to-debug-com-servers"></a>Comment : déboguer des serveurs COM
+# <a name="how-to-debug-com-servers"></a>Procédure : Déboguer des serveurs COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le débogage d'applications serveur COM pose un ensemble de problèmes qui ne sont pas toujours faciles à résoudre.  
@@ -52,9 +47,6 @@ Le débogage d'applications serveur COM pose un ensemble de problèmes qui ne so
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage COM et ActiveX](../debugger/com-and-activex-debugging.md)   
- [Comment : déboguer des Clients COM et des serveurs à l’aide du débogage RPC](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
- [Serveur COM débogage et conteneurs](../debugger/com-server-and-container-debugging.md)   
+ [Guide pratique pour déboguer des clients et des serveurs COM à l’aide du débogage RPC](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
+ [Débogage de serveurs et de conteneurs COM](../debugger/com-server-and-container-debugging.md)   
  [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md)
-
-
-

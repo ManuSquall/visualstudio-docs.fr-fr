@@ -1,14 +1,9 @@
 ---
 title: Opérateur de contexte (C++) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.operators
 dev_langs:
@@ -27,18 +22,18 @@ ms.assetid: 73cc9afe-f4a4-474e-bb89-5a33fb5e570c
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5807b8e3c6a85c25511374e756b02fabfa5abba5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ed3e54852ef9e6718f2f027c8aca608f11200b1d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51731673"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950953"
 ---
 # <a name="context-operator-c"></a>Opérateur de contexte (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez utiliser l’opérateur de contexte en C++ pour qualifier l’emplacement d’un point d’arrêt, un nom de variable ou une expression. L’opérateur de contexte est utile pour spécifier un nom issu d’une portée externe qui serait sinon masqué par un nom local.  
+Vous pouvez utiliser l’opérateur de contexte en C++ pour qualifier l’emplacement d’un point d’arrêt, un nom de variable ou une expression. L’opérateur de contexte est utile pour spécifier un nom issu d’une portée externe qui serait sinon masqué par un nom local.  
   
 ##  <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Syntaxe  
  Il existe deux façons de spécifier le contexte :  
@@ -80,8 +75,3 @@ Vous pouvez utiliser l’opérateur de contexte en C++ pour qualifier l’empla
 4.  Symboles globaux dans le module actuel.  
   
 5.  Symboles publics dans le programme actuel.
-
-
-
-
-

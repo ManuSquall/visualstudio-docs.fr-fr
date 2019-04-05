@@ -1,31 +1,26 @@
 ---
 title: Création d’une catégorie de paramètres | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - profile settings, creating categories
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 caps.latest.revision: 40
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 30d7b4c95a02d841723a4ddf1dcf51dd0ef011b4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d73acf8f46966cd0de9eb779acb5a5c53ad4e329
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730362"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952720"
 ---
 # <a name="creating-a-settings-category"></a>Création d’une catégorie de paramètres
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dans cette procédure pas à pas, vous allez créer une catégorie de paramètres Visual Studio et l’utiliser pour enregistrer les valeurs et de restaurer les valeurs à partir d’un fichier de paramètres. Une catégorie de paramètres est un groupe de propriétés connexes qui apparaissent sous la forme d’un « point de paramètres personnalisés ; » Autrement dit, comme une case à cocher dans la **importation et exportation de paramètres** Assistant. (Vous pouvez le trouver sur le **outils** menu.) Les paramètres sont enregistrés ou restaurés en tant que catégorie, et les paramètres individuels ne sont pas affichés dans l’Assistant. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+Dans cette procédure pas à pas, vous allez créer une catégorie de paramètres Visual Studio et l’utiliser pour enregistrer les valeurs et de restaurer les valeurs à partir d’un fichier de paramètres. Une catégorie de paramètres est un groupe de propriétés connexes qui apparaissent sous la forme d’un « point de paramètres personnalisés ; » Autrement dit, comme une case à cocher dans la **importation et exportation de paramètres** Assistant. (Vous pouvez le trouver sur le **outils** menu.) Les paramètres sont enregistrés ou restaurés en tant que catégorie, et les paramètres individuels ne sont pas affichés dans l’Assistant. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Vous créez une catégorie de paramètres en dérivant de la <xref:Microsoft.VisualStudio.Shell.DialogPage> classe.  
   
@@ -43,7 +38,7 @@ Dans cette procédure pas à pas, vous allez créer une catégorie de paramètre
   
 2.  Ouvrez le fichier VSPackage.resx et ajouter ces ressources de chaîne de trois :  
   
-    |Name|Value|  
+    |Nom|Value|  
     |----------|-----------|  
     |106|Ma catégorie|  
     |107|Mes paramètres|  
@@ -104,7 +99,7 @@ Dans cette procédure pas à pas, vous allez créer une catégorie de paramètre
   
 4.  Modifiez la valeur de **OptionFloat** à 3.1416 et **OptionInteger** et 12. Cliquez sur **OK**.  
   
-5.  Sur le **outils** menu, cliquez sur **importation et exportation de paramètres**.  
+5.  Dans le menu **Outils**, cliquez sur **Importation et exportation des paramètres**.  
   
      Le **importation et exportation de paramètres** Assistant s’affiche.  
   
@@ -160,4 +155,3 @@ Dans cette procédure pas à pas, vous allez créer une catégorie de paramètre
 16. Assurez-vous que l’option **mes paramètres** est sélectionnée, puis cliquez sur **Terminer**. Lorsque le **importation complète** page s’affiche, cliquez sur **fermer**.  
   
 17. Sur le **outils** menu, cliquez sur **Options**, développez **ma catégorie**, cliquez sur **ma Page de grille** et vérifiez que les valeurs de catégorie de propriété été restaurée.
-

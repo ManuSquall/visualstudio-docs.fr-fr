@@ -1,14 +1,9 @@
 ---
 title: Refactorisation (c#) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.csharp.refactoring.preview
 - vs.csharp.refactoring.issues
@@ -22,13 +17,13 @@ ms.assetid: a39e656a-f81f-4c87-b484-a23168ff1dfc
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: b4f74017a067d4681eb14ba4eb826df504497430
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 78ac19ac0e992b51affdbf6a0e6e3268ddfa52d0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49262312"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951604"
 ---
 # <a name="refactoring-c"></a>Refactorisation (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +74,7 @@ La refactorisation consiste à améliorer votre code après que qu’il a été 
  Le **résultats de la vérification** boîte de dialogue distingue deux types de problèmes de reliaison.  
   
 ### <a name="references-whose-definition-will-no-longer-be-the-renamed-symbol"></a>Références dont la définition ne sera plus le symbole renommé  
- Ce type de problème de reliaison se produit lorsqu’une référence ne fait plus référence à un symbole renommé. Considérons par exemple le code suivant :  
+ Ce type de problème de reliaison se produit lorsqu’une référence ne fait plus référence à un symbole renommé. Considérons par exemple le code suivant :  
   
 ```csharp  
 class Example  

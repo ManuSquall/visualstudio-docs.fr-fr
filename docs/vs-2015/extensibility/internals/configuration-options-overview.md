@@ -1,27 +1,22 @@
 ---
 title: Vue d’ensemble des Options de configuration | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project configurations
 - configuration options, about configuration options
 ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 44c5f424ec36d3c04403f62547920f59622208a9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 702cac3c224b958a4de37b03814ecea7390ae217
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747990"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950917"
 ---
 # <a name="configuration-options-overview"></a>Présentation des options de configuration
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ Dans les projets [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] peut prendre en
 |Nom de la configuration|Plateforme : Win32|Plateforme : Win64|  
 |------------------------|----------------------|----------------------|  
 |Débogage|\<Paramètres de Win32 Debug >|\<Paramètres de Win64 Debug >|  
-|Mise en production|\<Paramètres de Win32 de version >|\<Paramètres de Win64 de version >|  
+|Édition|\<Paramètres de Win32 de version >|\<Paramètres de Win64 de version >|  
 |MyConfig|N/A|\<Paramètres de MyConfig Win64 >|  
   
 > [!NOTE]
@@ -80,4 +75,3 @@ Interfaces de configuration
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>   
  [Configuration de projet pour la création](../../extensibility/internals/project-configuration-for-building.md)   
  [Configuration de la solution](../../extensibility/internals/solution-configuration.md)
-

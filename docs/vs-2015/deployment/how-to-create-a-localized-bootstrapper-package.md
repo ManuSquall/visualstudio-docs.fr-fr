@@ -1,14 +1,9 @@
 ---
-title: 'Comment : créer un Package de programme d’amorçage localisé | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Créer un Package de programme d’amorçage localisé | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 helpviewer_keywords:
 - localized bootstrapper packages
 - dependencies, creating localized bootstrapper packages
@@ -17,15 +12,15 @@ ms.assetid: 66a1bc7e-6540-4164-963d-557196a69d8a
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 1408189539cf5d2be9cc9c0eb0f758a211efcfca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b47b1b1a776d27c2a75c9303c34255aff8622eb7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304757"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952437"
 ---
-# <a name="how-to-create-a-localized-bootstrapper-package"></a>Comment : créer un package du programme d'amorçage localisé
+# <a name="how-to-create-a-localized-bootstrapper-package"></a>Procédure : Créer un Package de programme d’amorçage localisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Après avoir créé un package de programme d'amorçage, vous pouvez créer des versions localisées de ce dernier en créant deux fichiers de plus pour chacun des paramètres régionaux : un fichier des termes du contrat de licence logiciel (par exemple eula.rtf) et un manifeste du package (package.xml).  
@@ -39,7 +34,7 @@ Après avoir créé un package de programme d'amorçage, vous pouvez créer des 
 3.  Créez un manifeste du package nommé package.xml, mettez à jour les chaînes et la culture, puis placez le fichier dans le nouveau dossier. Si vous avez déjà créé un programme d'amorçage de Visual Studio dans la langue cible, vous pouvez copier le fichier Visual Studio package.xml et le changer durant cette étape.  
   
 > [!NOTE]
->  Si vous utilisez un projet d’installation pour déployer des applications, vous pouvez localiser votre application en modifiant le **localisation** propriété.  
+>  Si vous utilisez un projet d’installation pour déployer les applications, vous pouvez localiser votre application en changeant la propriété **Localization**.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
@@ -55,8 +50,8 @@ Après avoir créé un package de programme d'amorçage, vous pouvez créer des 
   
     |Paramètres régionaux|Nom de dossier|  
     |------------|-----------------|  
-    |Chinois (simplifié)|zh-Hans |  
-    |Chinois (traditionnel)|zh-Hant |  
+    |Chinois (simplifié)|zh-Hans|  
+    |Chinois (traditionnel)|zh-Hant|  
     |Tchèque|cs|  
     |Allemand|de|  
     |Anglais|en|  
@@ -70,9 +65,9 @@ Après avoir créé un package de programme d'amorçage, vous pouvez créer des 
     |Russe|ru|  
     |Turc|tr|  
   
-2.  Créez un fichier qui contient les termes du contrat de licence logiciel du package du programme d'amorçage et placez-le dans le nouveau dossier.  
+2.  Créez un fichier qui contient les termes du contrat de licence logiciel du package du programme d’amorçage et placez-le dans le nouveau dossier.  
   
-3.  Créez un manifeste du package nommé package.xml et placez-le dans le nouveau dossier. Pour plus d’informations, consultez [Comment : créer un manifeste de Package](../deployment/how-to-create-a-package-manifest.md).  
+3.  Créez un manifeste du package nommé package.xml et placez-le dans le nouveau dossier. Pour plus d'informations, voir [Procédure : Créer un manifeste de Package](../deployment/how-to-create-a-package-manifest.md).  
   
 4.  Mettez à jour la section `<Strings>` du manifeste du package pour que les chaînes soient dans la langue appropriée en fonction des paramètres régionaux.  
   
@@ -102,6 +97,3 @@ Après avoir créé un package de programme d'amorçage, vous pouvez créer des 
  [Création de packages de programme d’amorçage](../deployment/creating-bootstrapper-packages.md)   
  [Prérequis pour le déploiement d’applications](../deployment/application-deployment-prerequisites.md)   
  [Guide pratique pour créer un manifeste de package](../deployment/how-to-create-a-package-manifest.md)
-
-
-
