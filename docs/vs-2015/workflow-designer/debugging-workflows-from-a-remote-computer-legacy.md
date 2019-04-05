@@ -1,11 +1,8 @@
 ---
 title: Débogage de Workflows à partir d’un ordinateur distant (hérité) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - workflows, debugging remotely
@@ -16,13 +13,13 @@ ms.assetid: 44eaec8f-9959-4ae7-a374-670946f933c1
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 2b3627b6d62b1f4d237c2f2013d332be56b58fc6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f37e2f1d785399283e9da8f4ecb853f0728d9830
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191582"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948849"
 ---
 # <a name="debugging-workflows-from-a-remote-computer-legacy"></a>Débogage de workflows d'un ordinateur distant (hérité)
 Cette rubrique décrit comment déboguer des applications [!INCLUDE[wf](../includes/wf-md.md)] héritées distantes générées avec le [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité. Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque votre application doit cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  

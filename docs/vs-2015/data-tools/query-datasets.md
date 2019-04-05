@@ -1,22 +1,20 @@
 ---
 title: Interroger des jeux de données | Microsoft Docs
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 7b1a91cf-8b5a-4fc0-ac36-0dc2d336fa1b
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a6e1ff0cd6f77d2155ff4982ca02657a741c02d7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 2a5fd14f4cbc07fbd1ebac0eeefaa039dece188d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890567"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949443"
 ---
 # <a name="query-datasets"></a>Interroger des datasets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +61,7 @@ Pour rechercher des enregistrements spécifiques dans un jeu de données, utilis
      [!code-csharp[VbRaddataEditing#20](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#20)]
      [!code-vb[VbRaddataEditing#20](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#20)]  
   
-## <a name="accessrelated-records"></a>Enregistrements Accessrelated  
+## <a name="access-related-records"></a>Accès des enregistrements associés.  
  Lorsque les tables dans un jeu de données sont liées, un <xref:System.Data.DataRelation> objet peut proposer les enregistrements associés dans une autre table. Par exemple, un jeu de données contenant `Customers` et `Orders` tables peuvent être rendues disponibles.  
   
  Vous pouvez utiliser un <xref:System.Data.DataRelation> objet à localiser les enregistrements connexes en appelant le <xref:System.Data.DataRow.GetChildRows%2A> méthode d’un <xref:System.Data.DataRow> dans la table parente. Cette méthode retourne un tableau d’enregistrements enfants connexes. Ou vous pouvez appeler la <xref:System.Data.DataRow.GetParentRow%2A> méthode d’un <xref:System.Data.DataRow> dans la table enfant. Cette méthode retourne un seul <xref:System.Data.DataRow> à partir de la table parente.  
@@ -71,7 +69,7 @@ Pour rechercher des enregistrements spécifiques dans un jeu de données, utilis
  Cette page fournit des exemples d’utilisation de datasets typés. Pour plus d’informations sur l’exploration des relations dans les datasets non typés, consultez [DataRelations accédant](http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e).  
   
 > [!NOTE]
->  Si vous travaillez dans une application Windows Forms et en utilisant les fonctionnalités de liaison de données pour afficher des données, le formulaire généré par le concepteur peut fournir suffisamment de fonctionnalités pour votre application. Pour plus d’informations, consultez [lier des contrôles aux données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). En particulier, consultez[Comment : afficher des données connexes dans une Application de formulaires Windows](../data-tools/how-to-display-related-data-in-a-windows-forms-application.md) et [procédure pas à pas : affichage des données connexes sur un formulaire Windows](../data-tools/walkthrough-displaying-related-data-on-a-windows-form.md).  
+> Si vous travaillez dans une application Windows Forms et en utilisant les fonctionnalités de liaison de données pour afficher des données, le formulaire généré par le concepteur peut fournir suffisamment de fonctionnalités pour votre application. Pour plus d’informations, consultez [lier des contrôles aux données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
   
  Les exemples de code suivants montrent comment parcourir les relations dans les datasets typés. L’utilisation d’exemples de code typée <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) et le texte généré `FindBy` *PrimaryKey* (`FindByCustomerID`) méthodes permettant de rechercher une ligne souhaitée et retourner les enregistrements connexes. Les exemples de compiler et exécutent correctement uniquement si vous avez :  
   
@@ -81,7 +79,7 @@ Pour rechercher des enregistrements spécifiques dans un jeu de données, utilis
   
 - Une relation nommée `FK_Orders_Customers`associant les deux tables disponibles à la portée de votre code  
   
-  En outre, les deux tables doivent être remplies avec des données pour tous les enregistrements à retourner.  
+En outre, les deux tables doivent être remplies avec des données pour tous les enregistrements à retourner.  
   
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>Pour retourner des enregistrements d’un enregistrement parent sélectionné de l’enfant  
   
@@ -96,4 +94,3 @@ Pour rechercher des enregistrements spécifiques dans un jeu de données, utilis
   
      [!code-csharp[VbRaddataDatasets#7](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs#7)]
      [!code-vb[VbRaddataDatasets#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb#7)]
-

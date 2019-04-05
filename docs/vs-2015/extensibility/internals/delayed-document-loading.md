@@ -1,24 +1,19 @@
 ---
 title: Chargement de Document différé | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 94d79af00fced81dc7da38f323598ade926d26f4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e3f3948756022c71e54699822715cf9a5b6d7896
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755475"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948241"
 ---
 # <a name="delayed-document-loading"></a>Chargement de document différé
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -70,4 +65,3 @@ Lorsqu’un utilisateur ouvre de nouveau une solution Visual Studio, la plupart 
  Il n’existe aucun indice visible pour indiquer si un document a été initialisé, il peut être difficile de savoir si votre extension est forçant. Vous pouvez définir une clé de Registre qui facilite la vérification, car elle force le titre de tous les documents qui ne sont pas entièrement initialisé pour que le texte `[Stub]` dans le titre.  
   
  Dans **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad]**, affectez la valeur **StubTabTitleFormatString** à  **{0} [Stub]**.
-

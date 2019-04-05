@@ -1,27 +1,22 @@
 ---
 title: Ajout d’une barre d’outils | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - toolbars [Visual Studio], adding to IDE
 - IDE, adding toolbars
 ms.assetid: 17302c25-6f59-4e97-8c85-54f95336a07f
 caps.latest.revision: 39
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 038b8e8503a89dd0ec565d3d1b5acf20e6437600
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 12c57f83e992750ddc12c50fafb2065345022f80
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787950"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949333"
 ---
 # <a name="adding-a-toolbar"></a>Ajout d’une barre d’outils
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,8 +89,7 @@ Cette procédure pas à pas montre comment ajouter une barre d’outils à l’I
   
 6.  Avec le bouton droit de la barre de menus de Visual Studio pour obtenir la liste des barres d’outils. Sélectionnez **barre d’outils de Test**.  
   
-7.  Vous devez maintenant voir votre barre d’outils sous forme d’icône à droite de l’icône de recherche dans les fichiers. Lorsque vous cliquez sur l’icône, vous devez voir une boîte de message indiquant que **ToolbarTestCommandPackage. À l’intérieur de IDEToolbar.ToolbarTestCommand.MenuItemCallback()**.  
+7.  Vous devez maintenant voir votre barre d’outils sous forme d’icône à droite de l’icône de recherche dans les fichiers. Lorsque vous cliquez sur l’icône, vous devez voir une boîte de message indiquant que **ToolbarTestCommandPackage. Inside IDEToolbar.ToolbarTestCommand.MenuItemCallback()**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Commandes, menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md)
-

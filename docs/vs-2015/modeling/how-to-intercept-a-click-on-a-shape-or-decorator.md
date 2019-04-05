@@ -1,27 +1,24 @@
 ---
-title: 'Comment : intercepter un événement Click sur une forme ou un décorateur | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Intercepter un événement Click sur une forme ou un décorateur | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 ms.assetid: e2bc3124-c0c0-4104-9779-a5bf565d7f51
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6a3e0d12aa7d5537b9dd11f1b7d4c3daedc68a84
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: a47f29f2731756d4607ff611a450c4f988e4413e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926746"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949047"
 ---
-# <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Comment : intercepter un événement Click sur une forme ou un décorateur
+# <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Procédure : Intercepter un événement de clic sur une forme ou un décorateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les procédures suivantes montrent comment intercepter un événement click sur une forme ou un décorateur d’icône. Vous pouvez intercepter les clics, double-clique sur, fait glisser, et d’autres gestes et faire en sorte que l’élément répondre.  
@@ -404,6 +401,3 @@ namespace Company.CompartmentDrag
 ## <a name="see-also"></a>Voir aussi  
  [Propagation des modifications et réponse aux](../modeling/responding-to-and-propagating-changes.md)   
  [Propriétés des décorateurs](../modeling/properties-of-decorators.md)
-
-
-

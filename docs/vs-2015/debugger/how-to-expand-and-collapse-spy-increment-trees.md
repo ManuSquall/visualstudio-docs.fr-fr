@@ -1,29 +1,24 @@
 ---
-title: 'Comment : développer et réduire des arborescences Spy ++ | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Développer et réduire des arborescences Spy ++ | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Expanding and Collapsing Spy++ Trees
 ms.assetid: 22993182-7026-4155-8046-b84fd99f803c
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ab7b31dcfbaaf7ba101d7dea426fd95bb6f397de
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 037d6100c7137784de3896771dd62c766b4505e3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754842"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948104"
 ---
-# <a name="how-to-expand-and-collapse-spy-trees"></a>Comment : développer et réduire des arborescences Spy++
+# <a name="how-to-expand-and-collapse-spy-trees"></a>Procédure : Développer et réduire des arborescences Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez développer et réduire les vues de Windows, les processus et les Threads à l’aide de deux méthodes : en cliquant sur les icônes dans la fenêtre ou à l’aide de la **arborescence** menu. Le + et – icônes dans l’arborescence agissent comme ils le font dans la fenêtre de projet Visual C++.  
@@ -47,9 +42,6 @@ Vous pouvez développer et réduire les vues de Windows, les processus et les Th
 2.  À partir de la **arborescence** menu, choisissez une du développer ou réduire des commandes.  
   
 ## <a name="see-also"></a>Voir aussi  
- [À l’aide de Spy ++](../debugger/using-spy-increment.md)   
- [Vues Spy ++](../debugger/spy-increment-views.md)   
+ [Utilisation de Spy++](../debugger/using-spy-increment.md)   
+ [Vues Spy++](../debugger/spy-increment-views.md)   
  [Informations de référence sur Spy++](../debugger/spy-increment-reference.md)
-
-
-

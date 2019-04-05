@@ -1,27 +1,22 @@
 ---
 title: Exposition d’événements dans le SDK Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - events [Visual Studio], exposing
 - automation [Visual Studio SDK], exposing events
 ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4c65220114328f1630ef9c9457a3c971b730957b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7056497c505bbb355287416e468e411b4e5a2a62
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761478"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948119"
 ---
 # <a name="exposing-events-in-the-visual-studio-sdk"></a>Exposition d’événements dans le Kit de développement logiciel (SDK) Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,13 +48,13 @@ ms.locfileid: "51761478"
 ## <a name="registry-entries-from-the-basic-project-sample"></a>Entrées de Registre à partir de l’exemple de projet de base  
  Cette section indique où ajouter les valeurs d’événement automation dans le Registre.  
   
- [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Packages\\< PkgGUID\>\AutomationEvents]  
+ [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Packages\\<PkgGUID\>\AutomationEvents]  
   
  « AutomationProjectEvents « = » de renvoie l’objet AutomationProjectEvents »  
   
- « AutomationProjectItemEvents « = » de renvoie l’objet AutomationProjectItemsEvents »  
+ "AutomationProjectItemEvents"="Returns the AutomationProjectItemsEvents Object"  
   
-|Name|Type|Range|Description|  
+|Nom|Type|Plage|Description|  
 |----------|----------|-----------|-----------------|  
 |Par défaut (@)|REG_SZ|inutilisé|Non utilisé. Vous pouvez utiliser le champ de données pour la documentation.|  
 |AutomationProjectsEvents|REG_SZ|Nom de votre objet d’événement.|Il concerne uniquement le nom de clé. Vous pouvez utiliser le champ de données pour la documentation.<br /><br /> Cet exemple provient de l’exemple de projet de base.|  
@@ -119,4 +114,3 @@ STDMETHODIMP CVsPackage::GetAutomationObject(
 ## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>   
  [Exemples d’extensibilité Visual Studio](../../misc/vssdk-samples.md)
-

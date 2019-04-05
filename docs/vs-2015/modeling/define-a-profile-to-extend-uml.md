@@ -1,12 +1,9 @@
 ---
 title: Définir un profil pour étendre UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - profiles, UML
 - stereotypes, UML
@@ -18,13 +15,13 @@ ms.assetid: 776589cb-f89d-48d5-aafa-04a4c074b0d6
 caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 37c4560b767828be0ec43419ff92ec5b6f9863ea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 832b7b148e73e8d21d56dea6b676910019294e13
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730326"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949293"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Définir un profil pour étendre UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +30,7 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
   
  Plusieurs profils sont installés avec les éditions prises en charge de Visual Studio. Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport). Pour plus d’informations sur ces profils et sur la façon d’appliquer des stéréotypes, consultez [personnaliser votre modèle avec des profils et stéréotypes](../modeling/customize-your-model-with-profiles-and-stereotypes.md).  
   
- Vous pouvez définir vos propres profils pour adapter et étendre UML à votre propre secteur d'activité ou architecture. Exemple :  
+ Vous pouvez définir vos propres profils pour adapter et étendre UML à votre propre secteur d'activité ou architecture. Exemple :  
   
 - Si vous définissez fréquemment des sites web, vous pouvez définir votre propre profil qui fournit un stéréotype « Pageweb » qui peut être appliqué aux classes dans les diagrammes de classes. Vous pouvez ensuite utiliser des diagrammes de classes pour planifier un site web. Chaque classe « Pageweb » aurait des propriétés supplémentaires pour le contenu de la page, le style et ainsi de suite.  
   
@@ -223,7 +220,7 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
 7.  Générez l'Extension Visual Studio en créant le projet d'extension ou en compressant tous les fichiers, comme décrit dans les sections précédentes.  
   
 ##  <a name="Schema"></a> La Structure d’un profil  
- Le fichier XSD pour les profils UML se trouve dans l’exemple suivant : [Setting Stereotypes and Profiles XSD](http://go.microsoft.com/fwlink/?LinkID=213811). Pour vous aider à modifier les fichiers de profils, installez le fichier `.xsd` dans :  
+ Le fichier XSD pour les profils UML se trouve dans l’exemple suivant : [Définition XSD de stéréotypes et profils](http://go.microsoft.com/fwlink/?LinkID=213811). Pour vous aider à modifier les fichiers de profils, installez le fichier `.xsd` dans :  
   
  **%ProgramFiles%\Microsoft visual Studio [version] \Xml\Schemas**  
   
@@ -358,7 +355,7 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
   
 5. Régénérez le fichier VSIX et ouvrez-le dans l'Explorateur Windows pour le réinstaller. Redémarrez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-   L’extension n’apparaît pas dans le Gestionnaire d’extensions, mais lorsque vous essayez de réinstaller, le message suivant apparaît : **l’extension est déjà installée dans tous les produits applicables.**  
+   L’extension n’apparaît pas dans le Gestionnaire d’extensions, mais lorsque vous essayez de réinstaller, le message suivant apparaît : **L’extension est déjà installée dans tous les produits applicables.**  
    1.  Supprimer le fichier d’extension à partir d’un sous-dossier de *LocalAppData*\Microsoft\VisualStudio\\[version] \Extensions\  
   
    -   Pour voir *LocalAppData*, vous devez définir afficher les fichiers et dossiers cachés dans l’onglet Affichage des Options de dossier de l’Explorateur Windows.  
@@ -371,8 +368,5 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
  [Ajouter des stéréotypes à des éléments de modèle UML](../modeling/add-stereotypes-to-uml-model-elements.md)   
  [Personnaliser votre modèle avec des profils et stéréotypes](../modeling/customize-your-model-with-profiles-and-stereotypes.md)   
  [Stéréotypes standard pour les modèles UML](../modeling/standard-stereotypes-for-uml-models.md)   
- [Exemple : Couleur des éléments UML par stéréotype](http://go.microsoft.com/fwlink/?LinkID=213841)   
- [Exemple : Définition des stéréotypes et des profils XSD](http://go.microsoft.com/fwlink/?LinkID=213811)
-
-
-
+ [Exemple : Couleur des éléments UML par stéréotype](http://go.microsoft.com/fwlink/?LinkID=213841)   
+ [Exemple : Définition des stéréotypes et des profils XSD](http://go.microsoft.com/fwlink/?LinkID=213811)

@@ -1,11 +1,8 @@
 ---
 title: ClearCollection&lt;T&gt; Concepteur d’activités | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.ClearCollection`1.UI
@@ -13,13 +10,13 @@ ms.assetid: db0e5da2-7b5a-4f1a-864c-f3aeeeeb51a7
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 7c71d9a09cb3f64464ce968296799b27d573bfcd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 240e634115e7602c66d69f0dba9cfa52504dc89a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232867"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948097"
 ---
 # <a name="clearcollectionlttgt-activity-designer"></a>ClearCollection&lt;T&gt; Concepteur d’activités
 Le **ClearCollection\<T >** ActivityDesigner est utilisé pour créer et configurer un <xref:System.Activities.Statements.ClearCollection%601> activité.  
@@ -42,7 +39,7 @@ Le **ClearCollection\<T >** ActivityDesigner est utilisé pour créer et configu
 |*TypeArgument*|True|Spécifie le type T des éléments contenus dans l'objet <xref:System.Collections.Generic.ICollection%601>. Par défaut, cela *TypeArgument* type est défini sur **Int32**. Pour modifier le type, modifiez la valeur de la *TypeArgument* dans la zone de liste déroulante dans la grille des propriétés.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [collection](../workflow-designer/collection-activity-designers.md)   
- [AddToCollection\<T >](../workflow-designer/addtocollection-t-activity-designer.md)   
- [ExistsInCollection\<T >](../workflow-designer/existsincollection-t-activity-designer.md)   
+ [Collection](../workflow-designer/collection-activity-designers.md)   
+ [AddToCollection\<T>](../workflow-designer/addtocollection-t-activity-designer.md)   
+ [ExistsInCollection\<T>](../workflow-designer/existsincollection-t-activity-designer.md)   
  [RemoveFromCollection\<T>](../workflow-designer/removefromcollection-t-activity-designer.md)

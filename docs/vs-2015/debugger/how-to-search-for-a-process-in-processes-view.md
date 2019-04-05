@@ -1,14 +1,9 @@
 ---
-title: 'Comment : rechercher un processus dans la vue processus | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Rechercher un processus dans la vue processus | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Processes view
 - processes, searching for
@@ -16,15 +11,15 @@ ms.assetid: 7cb97b37-4a95-4f1b-9eee-4910aa9c115b
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c187089c8aeec3b2c0409adbab1f262893720d87
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0accb5165b1aded6318012ffb07755a63222283c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735605"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948462"
 ---
-# <a name="how-to-search-for-a-process-in-processes-view"></a>Comment : rechercher un processus dans la vue Processus
+# <a name="how-to-search-for-a-process-in-processes-view"></a>Procédure : Rechercher un processus dans la vue Processus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez rechercher un processus spécifique dans la vue processus à l’aide de sa chaîne d’ID ou un module de processus en tant que critères de recherche. Vous pouvez également spécifier le sens initial de la recherche. Les champs dans la boîte de dialogue affiche les attributs du processus sélectionné dans l’arborescence de processus.  
@@ -49,6 +44,3 @@ Vous pouvez rechercher un processus spécifique dans la vue processus à l’aid
 6. Cliquez sur **OK**.  
   
    Si un processus de correspondance est trouvé, elle est mise en surbrillance dans le **vue processus** fenêtre.
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Création et utilisation de stratégies d’archivage de l’analyse du Code | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, check-in policies
 ms.assetid: 3fa5a849-e05f-4e31-8ba3-b014c889d94d
@@ -16,12 +11,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5b2eb5059d5ec027654b1e4de7098c732e897088
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2aef2183cde96bfb5faa1bb62fa341f901dd7018
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238353"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58947303"
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>Création et utilisation de stratégies d’archivage de l’analyse du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ Lorsque vous utilisez Team Foundation Version Control (TFVC), vous pouvez créer
  Vous créez des code de stratégies d’archivage de l’analyse à l’aide des paramètres de projet d’équipe [!INCLUDE[esprscc](../includes/esprscc-md.md)]. Stratégies d’archivage sont spécifiées et appliquées pour un projet d’équipe, mais les exécutions d’analyse du code sont configurées et exécutées pour les projets de code individuels sur les ordinateurs de développement local. Cette section décrit comment spécifier le code analysis stratégies d’archivage pour un projet d’équipe et comment implémenter des stratégies d’analyse du code personnalisé pour le code managé.  
   
 ## <a name="in-this-section"></a>Dans cette section  
- [Guide pratique pour créer ou mettre à jour des stratégies d’archivage d’analyse du code standard](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)  
+ [Guide pratique pour Créer ou mettre à jour des stratégies d’archivage de l’analyse du Code Standard](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)  
  Explique les étapes que vous utilisez pour définir et modifier une stratégie d’analyse de code pour un projet d’équipe.  
   
  [Implémentation de stratégies d’archivage personnalisées pour le code managé](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)  
@@ -45,13 +40,10 @@ Lorsque vous utilisez Team Foundation Version Control (TFVC), vous pouvez créer
  [Compatibilité des versions des stratégies d’archivage de l’analyse du code](../code-quality/version-compatibility-for-code-analysis-check-in-policies.md)  
  Explique les problèmes de compatibilité d’archivage d’analyse code entre les versions de [!INCLUDE[vstsLong](../includes/vstslong-md.md)].  
   
- [Guide pratique pour personnaliser le dictionnaire d’analyse du code](../code-quality/how-to-customize-the-code-analysis-dictionary.md)  
+ [Guide pratique pour Personnaliser le dictionnaire d’analyse du Code](../code-quality/how-to-customize-the-code-analysis-dictionary.md)  
  Explique comment ajouter des mots et des jetons au dictionnaire référencé dans les règles d’affectation de noms d’analyse du code.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
  [Définir et appliquer des critères de qualité](http://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)  
   
  [Amélioration de la qualité du code avec les stratégies d’archivage de projet d’équipe](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)
-
-
-
