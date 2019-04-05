@@ -1,35 +1,30 @@
 ---
 title: Description, élément (modèles Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Description element [Visual Studio project templates]
 ms.assetid: 6e12be73-081f-4c7d-898f-027c307a9fe1
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5cd2598c434860b0818159aa53855e9779986bed
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d60244ea827433678afbd09dd1e8cf1c972595cd
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771882"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58947924"
 ---
 # <a name="description-element-visual-studio-templates"></a>Description, élément (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Spécifie la description du modèle tel qu’il apparaît dans un le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<Description >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<Description>  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -68,7 +63,7 @@ Spécifie la description du modèle tel qu’il apparaît dans un le **nouveau p
  Le texte fournit une description du modèle.  
   
 ## <a name="remarks"></a>Notes  
- `Description` est un élément enfant obligatoire de l'élément `TemplateData`.  
+ `Description` est un élément enfant requis de l'élément `TemplateData`.  
   
 ## <a name="example"></a>Exemple  
  L’exemple suivant montre les métadonnées d’un modèle de projet pour un [!INCLUDE[csprcs](../includes/csprcs-md.md)] application.  
@@ -100,4 +95,3 @@ Spécifie la description du modèle tel qu’il apparaît dans un le **nouveau p
 ## <a name="see-also"></a>Voir aussi  
  [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)
-

@@ -1,27 +1,22 @@
 ---
 title: Commande de conception | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - commands
 - commands, implementation
 ms.assetid: 097108c3-f758-4b87-89d6-b32d12d9041a
 caps.latest.revision: 35
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9aed86eef616702363a661ece0ab565a768f2f75
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a6e9eaf69be62b38a880b07fd8eb51cfc9c256a3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750119"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953835"
 ---
 # <a name="command-design"></a>Création de commande
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -77,4 +72,3 @@ Lorsque vous ajoutez une commande à un VSPackage, vous devez spécifier où il 
 |[Emplacement de commande, de groupe et de barre d’outils par défaut](../../extensibility/internals/default-command-group-and-toolbar-placement.md)|Décrit comment les VSPackages peuvent mieux utiliser les commandes qui sont inclus dans Visual Studio.|  
 |[Gestion de VSPackages](../../extensibility/managing-vspackages.md)|Décrit comment Visual Studio charge VSPackages.|  
 |[Fichiers Visual Studio Command Table (.Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)|Fournit des informations sur les fichiers .vsct basé sur XML, qui sont utilisés pour décrire la disposition et l’apparence des commandes dans VSPackages.|
-

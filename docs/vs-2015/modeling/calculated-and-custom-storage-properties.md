@@ -1,25 +1,22 @@
 ---
 title: Propriétés de stockage calculées et personnalisées | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain properties
 ms.assetid: 42b785f9-2b0f-4f13-a6b4-246e5e0d477a
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 82d90d6965558ba6d28753fb71b3b227a84467a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e934d071a8b26db29f2b9450939fc895efa1e5d4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852854"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948644"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Propriétés de stockage calculées et personnalisées
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +47,7 @@ Toutes les propriétés de domaine dans un langage spécifique à un domaine (DS
   
 4.  Dans le menu **Générer** , cliquez sur **Générer la solution**.  
   
-     Vous recevez le message d’erreur suivant : «*Votre_classe* ne contient pas de définition pour Get*YourProperty*. »  
+     Le message d’erreur suivant s’affiche : «*Votre_classe* ne contient pas de définition pour Get*YourProperty*. »  
   
 5.  Double-cliquez sur le message d’erreur.  
   
@@ -118,6 +115,3 @@ void SetAgeValue(int value)
  [Navigation et mise à jour d’un modèle dans le Code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Propriétés des propriétés de domaine](../modeling/properties-of-domain-properties.md)   
  [Guide pratique pour définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md)
-
-
-

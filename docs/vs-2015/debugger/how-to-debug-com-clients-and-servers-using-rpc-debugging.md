@@ -1,14 +1,9 @@
 ---
-title: 'Comment : déboguer des Clients COM et des serveurs à l’aide du débogage RPC | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Déboguer des Clients COM et des serveurs à l’aide du débogage RPC | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
 dev_langs:
@@ -30,15 +25,15 @@ ms.assetid: 3e8526c8-43b5-4b87-8e0d-b22c24f0a3ea
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 78a4c85d24ea382e5946000ac2225588c5deceed
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d1235abfc6e8a2c384b02fd1d48a859063c058d3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786795"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948683"
 ---
-# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Comment : déboguer des clients COM et des serveurs à l'aide du débogage RPC
+# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Procédure : Déboguer des clients et des serveurs COM à l’aide du débogage RPC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez utiliser le débogage RPC pour déboguer des applications client/serveur COM. Vous devez activer le débogage RPC pour l'utiliser. Lorsque le débogage RPC est activé, si vous effectuez un pas à pas détaillé dans l'appel serveur à partir du client, le débogueur est attaché au serveur, ce qui permet de déboguer son code. Une fois que le débogueur est attaché, vous pouvez utiliser toutes ses fonctionnalités avec les processus client et serveur.  
@@ -47,11 +42,11 @@ Vous pouvez utiliser le débogage RPC pour déboguer des applications client/ser
   
 1.  Dans le menu **Outils**, cliquez sur **Options**.  
   
-2.  Dans le **Options** boîte de dialogue, cliquez sur le **débogage** dossier.  
+2.  Dans la boîte de dialogue **Options**, cliquez sur le dossier **Débogage**.  
   
-3.  Cliquez sur le **natif** page.  
+3.  Cliquez sur la page **Natif**.  
   
-4.  Sélectionnez le **débogage RPC** case à cocher.  
+4.  Cochez la case **Débogage RPC**.  
   
     > [!NOTE]
     >  Pour déboguer des appels RPC, vous devez posséder les privilèges Administrateur ou Utilisateur avec pouvoirs.  
@@ -60,8 +55,5 @@ Vous pouvez utiliser le débogage RPC pour déboguer des applications client/ser
     >  Le processus d'exécution pas à pas RPC sur un serveur distant qui exécute Microsoft Windows Vista fonctionne uniquement si un débogueur natif est attaché au serveur distant. Sinon, l'appel RPC échoue sans message d'erreur. Sinon, l'appel RPC s'effectue, mais le processus d'exécution pas à pas dans l'appel RPC ne fonctionne pas.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Serveur COM débogage et conteneurs](../debugger/com-server-and-container-debugging.md)   
+ [Débogage de serveurs et de conteneurs COM](../debugger/com-server-and-container-debugging.md)   
  [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md)
-
-
-

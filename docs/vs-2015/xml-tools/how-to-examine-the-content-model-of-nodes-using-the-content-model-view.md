@@ -1,27 +1,22 @@
 ---
-title: 'Comment : examiner le modèle de contenu de nœuds à l’aide de la vue de modèle de contenu | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Examiner le modèle de contenu de nœuds à l’aide de la vue de modèle de contenu | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: c42ddac8-b0e3-48d6-9832-112a19d6c104
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ca6c86772cc3ad27b537052961afea50fad7b876
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 283378be55db059983d92f3581f6186f59102cb1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245945"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953681"
 ---
-# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Procédure : examiner le modèle de contenu de nœuds à l'aide de la vue de modèle de contenu
+# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Procédure : Examiner le modèle de contenu de nœuds à l’aide de la vue de modèle de contenu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -33,7 +28,7 @@ Cette rubrique explique comment Explorer vos nœuds à l’aide de la [affichage
   
 2.  Cliquez sur **utiliser l’éditeur XML pour afficher et modifier le fichier de schéma XML sous-jacent** sur la vue de départ.  
   
-3.  Copiez le code d’exemple de schéma XML à partir de [exemple de schéma XML : schéma de bon de commande](../xml-tools/sample-xsd-file-purchase-order-schema.md) et collez-le pour remplacer le code qui a été ajouté au nouveau fichier XSD par défaut.  
+3.  Copiez le code d’exemple de schéma XML à partir de [exemple de schéma XML : Schéma d’ordre d’achat](../xml-tools/sample-xsd-file-purchase-order-schema.md) et collez-le pour remplacer le code qui a été ajouté au nouveau fichier XSD par défaut.  
   
 4.  Sélectionnez le `purchaseOrder` élément dans l’Explorateur de schémas en double-cliquant sur le `purchaseOrder` élément dans l’éditeur XML et en sélectionnant **afficher dans l’Explorateur XML**.  
   
@@ -50,6 +45,3 @@ Cette rubrique explique comment Explorer vos nœuds à l’aide de la [affichage
 8.  Cliquez sur le **afficher la Documentation** bouton dans la barre d’outils XSD pour basculer vers la documentation. Vous pouvez également cliquer avec le bouton droit sur l'aire de conception pour basculer vers la documentation.  
   
 9. Cliquez le `purchaseOrder` nœud et sélectionnez **générer un exemple de code XML** pour voir le document d’instance XML.
-
-
-

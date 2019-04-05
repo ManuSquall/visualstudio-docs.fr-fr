@@ -1,14 +1,9 @@
 ---
 title: VTable | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: c8be6692-7d2a-4721-99d3-8e2e565bb8a1
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 05d68820801fa946583fa125cfeaa5670b555107
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 83066e132a4c335841a5ac95620964bbe1a470b4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746350"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938405"
 ---
 # <a name="vtable"></a>VTable
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,8 +44,5 @@ La table virtuelle est identifiée par le `SymTagVTable` symbole.
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` Si la classe de VTable est marquée comme volatile.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Hiérarchie de classes des Types de symboles](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)   
+ [Hiérarchie de classes des types de symboles](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)   
  [VTableShape](../../debugger/debug-interface-access/vtableshape.md)
-
-
-

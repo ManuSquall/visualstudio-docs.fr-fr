@@ -1,25 +1,20 @@
 ---
 title: Variante de génération de mipmap | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 3b4b3583-0b01-4f5d-aacb-3f96d19111d9
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c567f68abb5b67022bb2decd64ed23e35bf6d5d3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c063235d69a59caf2c41c0db0ddc566c97cc95be
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51723088"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954040"
 ---
 # <a name="mip-map-generation-variant"></a>Variante de génération mipmap
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ Active les mipmaps sur les textures qui ne sont pas des cibles de rendu.
   
 - Le membre CPUAccessFlags a la valeur 0 (aucun accès à l'UC).  
   
-- Le membre Count du membre SampleDesc a la valeur 1 (pas d'anticrénelage MSAA (Multi-Sample Anti-Aliasing)).  
+- Le membre Count du membre SampleDesc a la valeur 1 (pas d‘anticrénelage MSAA (Multi-Sample Anti-Aliasing)).  
   
 - Le membre MipLevels a la valeur 1 (absence de mipmaps).  
   
@@ -51,7 +46,7 @@ Active les mipmaps sur les textures qui ne sont pas des cibles de rendu.
   Si des mipmaps ont été générés automatiquement pour une texture, les appels à `ID3D11Device::CreateShaderResourceView` sont modifiés pendant la lecture pour utiliser la chaîne MIP lors de l'échantillonnage de texture.  
   
 ## <a name="example"></a>Exemple  
- Le **génération mipmap** variante peut être reproduite à l’aide de code similaire à celui-ci :  
+ La variante **Génération mipmap** peut être reproduite avec un code similaire à celui-ci :  
   
 ```  
 D3D11_TEXTURE2D_DESC texture_description;  
@@ -79,6 +74,3 @@ d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)
   
 ## <a name="see-also"></a>Voir aussi  
  [Variante de dimensions de la texture moitié/un quart](../debugger/half-quarter-texture-dimensions-variant.md)
-
-
-

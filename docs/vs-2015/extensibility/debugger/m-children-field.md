@@ -1,26 +1,21 @@
 ---
-title: Champ m_children | Microsoft Docs
-ms.custom: ''
+title: m_children Field | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - m_children field, ContingentProperties class [.NET Framework debug engines]
 ms.assetid: 0a3b5653-7bc0-4a7a-8963-9020bc52b9cb
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f044c2dae278a0656f1f9e4c41a3940d87658a64
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 749b7a8da2cbdf8377e7f2e1fcb39787e2f42303
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51731042"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948098"
 ---
 # <a name="mchildren-field"></a>Champ m_children
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,4 +41,3 @@ La liste des tâches enfants qui sont inscrits auprès de cette tâche.
   
 ## <a name="see-also"></a>Voir aussi  
  [Classe ContingentProperties](../../extensibility/debugger/contingentproperties-class-internal-members.md)
-

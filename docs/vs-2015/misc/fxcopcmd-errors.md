@@ -1,26 +1,21 @@
 ---
 title: FxCopCmd (erreurs) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - FxCopCmd errors
 ms.assetid: bb614ed0-1b7c-4b56-99ae-da50ef6cfef9
 caps.latest.revision: 12
 ms.author: mikejo
-manager: douge
-ms.openlocfilehash: 828805e0746fb985ea310b755cdaaa252e215a07
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b5c7b62ce9e117b348daaa54da3d397346b6eab0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751716"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948855"
 ---
 # <a name="fxcopcmd-errors"></a>FxCopCmd (erreurs)
 FxCopCmd ne considère pas toutes les erreurs comme irrécupérable. Si FxCopCmd dispose d’informations suffisantes pour effectuer une analyse partielle, il effectue l’analyse et signale les erreurs qui se sont produites. Le code d’erreur, qui est un entier 32 bits, contient une combinaison au niveau du bit des valeurs numériques qui correspondent aux erreurs.  
@@ -29,17 +24,17 @@ FxCopCmd ne considère pas toutes les erreurs comme irrécupérable. Si FxCopCmd
   
 |Error|Valeur numérique|  
 |-----------|-------------------|  
-|Aucune erreur|0 x 0|  
-|Erreur d’analyse|0 x 1|  
-|Exceptions de règle|0 x 2|  
-|Erreur de chargement de projet|0 x 4|  
-|Erreur de chargement d’assembly|0 x 8|  
+|Aucune erreur|0x0|  
+|Erreur d’analyse|0x1|  
+|Exceptions de règle|0x2|  
+|Erreur de chargement de projet|0x4|  
+|Erreur de chargement d’assembly|0x8|  
 |Erreur de chargement de bibliothèque de règle|0x10|  
-|Erreur de chargement du rapport importation|0 x 20|  
-|Erreur de sortie|0 x 40|  
-|Erreur de commutateur de ligne de commande|0 x 80|  
-|Erreur d’initialisation|0 x 100|  
-|Erreur des références d’assembly|0 x 200|  
+|Erreur de chargement du rapport importation|0x20|  
+|Erreur de sortie|0x40|  
+|Erreur de commutateur de ligne de commande|0x80|  
+|Erreur d’initialisation|0x100|  
+|Erreur des références d’assembly|0x200|  
 |BuildBreakingMessage|0 x 400|  
 |Erreur inconnue|0x1000000|  
   
