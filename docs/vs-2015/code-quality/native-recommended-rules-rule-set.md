@@ -1,25 +1,20 @@
 ---
 title: Ensemble de règles des règles recommandées natives | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 8d845b5a-1b75-4e9d-861a-7c59cb7752af
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a84a72046ece48fce16734cf9be838fa1f042478
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 24772233f80332ec88030af0d7862b00e5d61655
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891165"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001405"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Ensemble de règles des règles recommandées natives
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +62,7 @@ Les règles recommandées natives vous concentrer sur les problèmes plus fréqu
 |                       [C6270](../code-quality/c6270.md)                        |                                              Argument float manquant pour le formatage de la fonction                                              |
 |                       [C6271](../code-quality/c6271.md)                        |                                                  Argument supplémentaire pour le formatage de la fonction                                                  |
 |                       [C6272](../code-quality/c6272.md)                        |                                                Argument non float pour le formatage de la fonction                                                |
-|                       [C6273](../code-quality/c6273.md)                        |                                               Argument non entier pour le formatage de la fonction                                                |
+|                       [C6273](../code-quality/c6273.md)                        |                                               Argument non entier pour la fonction Format                                                |
 |                       [C6274](../code-quality/c6274.md)                        |                                              Argument autre qu’un caractère pour le formatage de la fonction                                              |
 |                       [C6276](../code-quality/c6276.md)                        |                                                         Cast de chaîne non valide                                                         |
 |                       [C6277](../code-quality/c6277.md)                        |                                                     Appel CreateProcess non valide                                                      |
@@ -122,7 +117,7 @@ Les règles recommandées natives vous concentrer sur les problèmes plus fréqu
 |                       [C6504](../code-quality/c6504.md)                        |                                                         Null sur élément non pointeur                                                         |
 |                       [C6505](../code-quality/c6505.md)                        |                                                          MustCheck sur Void                                                          |
 |                       [C6506](../code-quality/c6506.md)                        |                                                 Taille de mémoire tampon sur élément non pointeur ou tableau                                                 |
-| [C6507](http://msdn.microsoft.com/en-us/18f88cd1-d035-4403-a6a4-12dd0affcf21)  |                                                  Incompatibilité de null au déréférencement nul                                                  |
+| [C6507](http://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)  |                                                  Incompatibilité de null au déréférencement nul                                                  |
 |                       [C6508](../code-quality/c6508.md)                        |                                                      Accès en écriture sur constante                                                       |
 |                       [C6509](../code-quality/c6509.md)                        |                                                     Retour utilisé sur condition préalable                                                     |
 |                       [C6510](../code-quality/c6510.md)                        |                                                   Terminaison par Null sur élément non pointeur                                                    |
@@ -133,13 +128,12 @@ Les règles recommandées natives vous concentrer sur les problèmes plus fréqu
 |                       [C6516](../code-quality/c6516.md)                        |                                                     Attribut sans propriété                                                      |
 |                       [C6517](../code-quality/c6517.md)                        |                                                  Taille valide dans mémoire tampon non lisible                                                  |
 |                       [C6518](../code-quality/c6518.md)                        |                                                Taille accessible en écriture dans mémoire tampon non accessible en écriture                                                 |
-| [C6519](http://msdn.microsoft.com/en-us/2b6326b0-0539-4d26-8fb1-720114933232)  |                             Annotation non valide : la propriété NeedsRelease doit avoir la valeur Yes ou No                              |
-| [C6521](http://msdn.microsoft.com/en-us/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                                   Déréférencement de chaîne de taille non valide                                                   |
+| [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                                   Déréférencement de chaîne de taille non valide                                                   |
 |                       [C6522](../code-quality/c6522.md)                        |                                                      Type de chaîne de taille non valide                                                       |
-| [C6523](http://msdn.microsoft.com/en-us/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                                    Paramètre de chaîne de taille non valide                                                    |
+| [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                                    Paramètre de chaîne de taille non valide                                                    |
 |                       [C6525](../code-quality/c6525.md)                        |                                              Chaîne de taille non valide. Emplacement inaccessible                                               |
-| [C6526](http://msdn.microsoft.com/en-us/59c590c7-0098-4166-a1ac-87f324596002)  |                                                   Type de tampon de chaîne de taille non valide                                                   |
-|                       [C6527](../code-quality/c6527.md)                        |                         Annotation non valide : la propriété NeedsRelease ne doit pas être utilisée sur des valeurs de type void                          |
+| [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                                   Type de tampon de chaîne de taille non valide                                                   |
+|                       [C6527](../code-quality/c6527.md)                        |                         Annotation non valide : Propriété de 'NeedsRelease' ne peut pas être utilisée sur les valeurs de type void                          |
 |                       [C6530](../code-quality/c6530.md)                        |                                                  Style de chaîne de format non reconnu                                                   |
 |                       [C6540](../code-quality/c6540.md)                        |            L'utilisation des annotations d'attribut sur cette fonction rendra non valides toutes ses annotations __declspec existantes             |
 |                       [C6551](../code-quality/c6551.md)                        |                                         Spécification de taille non valide : expression impossible à analyser                                         |
@@ -181,19 +175,19 @@ Les règles recommandées natives vous concentrer sur les problèmes plus fréqu
 |                      [C28196](../code-quality/c28196.md)                       |                            L’exigence n’est pas satisfaite. (L’expression ne correspond pas à la valeur true).                            |
 |                      [C28202](../code-quality/c28202.md)                       |                                               Référence non autorisée à un membre non statique                                                |
 |                      [C28203](../code-quality/c28203.md)                       |                                                Référence ambiguë à un membre de classe.                                                 |
-|                      [C28205](../code-quality/c28205.md)                       |                                      \_Réussite\_ ou \_On_failure\_ utilisé dans un contexte non autorisé                                       |
+|                      [C28205](../code-quality/c28205.md)                       |                                      \_Success\_ ou \_On_failure\_ utilisé dans un contexte non autorisé                                       |
 |                      [C28206](../code-quality/c28206.md)                       |                                              L’opérande de gauche pointe vers un struct, utiliser '->'                                              |
 |                      [C28207](../code-quality/c28207.md)                       |                                                  L’opérande de gauche est un struct, utiliser '.'                                                  |
 |                      [C28209](../code-quality/c28209.md)                       |                                      La déclaration de symbole possède une déclaration en conflit                                       |
 |                      [C28210](../code-quality/c28210.md)                       |                            Les annotations pour le contexte __on_failure ne doivent pas se trouver dans un contexte préalable explicite                             |
 |                      [C28211](../code-quality/c28211.md)                       |                                            Nom du contexte statique attendu pour SAL_context                                             |
 |                      [C28212](../code-quality/c28212.md)                       |                                             Expression de pointeur attendue pour l'annotation                                              |
-|                      [C28213](../code-quality/c28213.md)                       |            Le \_Use_decl_annotations\_ annotation doit être utilisée pour référencer, sans modification, une déclaration antérieure.            |
+|                      [C28213](../code-quality/c28213.md)                       |            L’annotation \_Use_decl_annotations\_ doit être utilisée pour référencer, sans modification, une déclaration antérieure.            |
 |                      [C28214](../code-quality/c28214.md)                       |                                              Les noms des paramètres d'attribut doivent être p1...p9                                              |
 |                      [C28215](../code-quality/c28215.md)                       |                               Le typefix ne peut pas être appliqué à un paramètre qui contient déjà un typefix                               |
 |                      [C28216](../code-quality/c28216.md)                       |                   L'annotation checkReturn ne s'applique qu'aux post-conditions pour le paramètre de fonction spécifique.                    |
 |                      [C28217](../code-quality/c28217.md)                       |                       Pour la fonction, le nombre de paramètres de l'annotation ne correspond pas au nombre trouvé dans le fichier                        |
-|                      [C28218](../code-quality/c28218.md)                       |                        Pour le paramètre de fonction, le paramètre de l'annotation ne correspond pas au paramètre trouvé dans le fichier                         |
+|                      [C28218](../code-quality/c28218.md)                       |                        Pour le paramètre de fonction, paramètre de l’annotation ne correspond pas trouvé dans le fichier                         |
 |                      [C28219](../code-quality/c28219.md)                       |                            Membre de l'énumération attendu pour une annotation, le paramètre dans l'annotation                            |
 |                      [C28220](../code-quality/c28220.md)                       |                             Expression d'entier attendue pour une annotation, le paramètre dans l'annotation                              |
 |                      [C28221](../code-quality/c28221.md)                       |                                   Expression de chaîne attendue pour le paramètre dans l'annotation                                    |
@@ -228,29 +222,27 @@ Les règles recommandées natives vous concentrer sur les problèmes plus fréqu
 |                      [C28254](../code-quality/c28254.md)                       |                                          dynamic_cast<>() n'est pas pris en charge dans les annotations                                           |
 |                      [C28262](../code-quality/c28262.md)                       |                               Une erreur de syntaxe dans l'annotation a été trouvée dans la fonction, pour l'annotation                                |
 |                      [C28263](../code-quality/c28263.md)                       |                            Une erreur de syntaxe dans une annotation conditionnelle a été trouvée pour l'annotation intrinsèque                            |
-| [C28264](http://msdn.microsoft.com/en-us/bf6ea983-a06e-4752-a042-747a7dbf338c) |                                               Les valeurs des listes de résultats doivent être des constantes.                                                |
 |                      [C28267](../code-quality/c28267.md)                       |                               Une erreur de syntaxe dans les annotations a été trouvée pour l'annotation dans la fonction.                               |
 |                      [C28272](../code-quality/c28272.md)                       |                 L'annotation pour la fonction, paramètre pendant la vérification est incohérente avec la déclaration de fonction                 |
 |                      [C28273](../code-quality/c28273.md)                       |                               Pour la fonction, les indices sont incohérents avec la déclaration de fonction                                |
-|                      [C28275](../code-quality/c28275.md)                       |                                              Le paramètre \_Macro_value\_ a la valeur null                                               |
+|                      [C28275](../code-quality/c28275.md)                       |                                              Le paramètre de \_Macro_value\_ a une valeur null                                               |
 |                      [C28279](../code-quality/c28279.md)                       |                                      Pour le symbole, un 'begin' a été trouvé sans le 'end' correspondant                                       |
 |                      [C28280](../code-quality/c28280.md)                       |                                      Pour le symbole, un 'end' a été trouvé sans le 'begin' correspondant                                      |
 |                      [C28282](../code-quality/c28282.md)                       |                                               Les chaînes de format doivent être comprises dans des conditions préalables                                               |
 |                      [C28285](../code-quality/c28285.md)                       |                                               Pour la fonction, erreur de syntaxe dans le paramètre                                               |
 |                      [C28286](../code-quality/c28286.md)                       |                                               Pour la fonction, erreur de syntaxe près de la fin                                               |
-|                      [C28287](../code-quality/c28287.md)                       |                           Pour la fonction, erreur de syntaxe dans \_à\_() annotation (nom de paramètre non reconnu)                           |
-|                      [C28288](../code-quality/c28288.md)                       |                             Pour la fonction, erreur de syntaxe dans \_à\_() annotation (nom de paramètre non valide)                              |
-|                      [C28289](../code-quality/c28289.md)                       |                           Pour la fonction : ReadableTo ou WritableTo n'a pas eu de spécification de limites en tant que paramètre                           |
+|                      [C28287](../code-quality/c28287.md)                       |                           Pour la fonction, erreur de syntaxe dans l’annotation \_At\_() (nom de paramètre non reconnu)                           |
+|                      [C28288](../code-quality/c28288.md)                       |                             Pour la fonction, erreur de syntaxe dans l’annotation \_At\_() (nom de paramètre non valide)                              |
+|                      [C28289](../code-quality/c28289.md)                       |                           Pour la fonction : ReadableTo ou WritableTo n’avait pas une spécification de limite en tant que paramètre                           |
 |                      [C28290](../code-quality/c28290.md)                       |                      l'annotation pour la fonction contient plus d'Externals que le nombre réel de paramètres                       |
 |                      [C28291](../code-quality/c28291.md)                       |                                   post null/notnull au niveau 0 deref n'a pas de sens pour la fonction.                                   |
 |                      [C28300](../code-quality/c28300.md)                       |                                       Opérandes d’expression de types incompatibles pour l’opérateur                                        |
 |                      [C28301](../code-quality/c28301.md)                       |                                          Aucune annotation pour la première déclaration de la fonction.                                          |
-|                      [C28302](../code-quality/c28302.md)                       |                                        Un supplémentaire \_Deref\_ opérateur a été trouvé dans une annotation.                                         |
-|                      [C28303](../code-quality/c28303.md)                       |                                      Un ambigu \_Deref\_ opérateur a été trouvé dans une annotation.                                       |
-|                      [C28304](../code-quality/c28304.md)                       |                                Un placé \_Notref\_ opérateur appliqué à un jeton a été trouvé.                                 |
+|                      [C28302](../code-quality/c28302.md)                       |                                        Un opérateur \_Deref\_ en trop a été trouvé dans une annotation.                                         |
+|                      [C28303](../code-quality/c28303.md)                       |                                      Un opérateur ambigu \_Deref\_ a été trouvé dans une annotation.                                       |
+|                      [C28304](../code-quality/c28304.md)                       |                                Un opérateur \_Notref\_ placé de manière incorrecte et appliqué à un jeton a été trouvé.                                 |
 |                      [C28305](../code-quality/c28305.md)                       |                                           Une erreur a été détectée pendant l'analyse d'un jeton.                                            |
 |                      [C28306](../code-quality/c28306.md)                       |                                             L’annotation sur paramètre est obsolète                                              |
 |                      [C28307](../code-quality/c28307.md)                       |                                             L’annotation sur paramètre est obsolète                                              |
 |                      [C28350](../code-quality/c28350.md)                       |                             L'annotation décrit une situation qui n'est pas applicable de manière conditionnelle.                              |
 |                      [C28351](../code-quality/c28351.md)                       |                    L'annotation décrit l'emplacement auquel une valeur dynamique (une variable) ne peut pas être utilisée dans la condition.                     |
-

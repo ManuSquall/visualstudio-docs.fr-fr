@@ -1,14 +1,9 @@
 ---
 title: Créer des modèles pour votre application | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.common.commentlink.properties
 - vs.teamarch.UMLModelExplorer.dependency
@@ -41,30 +36,30 @@ ms.assetid: b69d9d91-c7e7-4dee-8eb6-706076eecb85
 caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 9e3aa389441914121493148ecb8fa45b9f86beed
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: feb0c1a5f486654844c592b6b946dedc9e2e02c0
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745125"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "59001180"
 ---
 # <a name="create-models-for-your-app"></a>Créer des modèles pour votre application
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les diagrammes de modélisation vous aident à comprendre, clarifier et communiquer vos idées concernant votre code et les besoins des utilisateurs que votre système logiciel doit prendre en charge. Par exemple, pour décrire et communiquer les besoins des utilisateurs, vous pouvez utiliser des diagrammes de cas d'usage, d'activités, de classe et de séquence UML (Unified Modeling Language). Pour décrire et communiquer les fonctionnalités de votre système, vous pouvez utiliser des diagrammes de composants, de classes, d'activités et de séquence UML.  
   
- Voir [Channel 9 Video : améliorer l’architecture par une modélisation de](http://go.microsoft.com/fwlink/?LinkID=252078).  
+ Consultez [vidéo Channel 9 : Améliorer l’architecture via la modélisation](http://go.microsoft.com/fwlink/?LinkID=252078).  
   
  Vous pouvez créer les diagrammes UML suivants dans cette version :  
   
 |**Diagramme**|**Éléments décrits**|  
 |-----------------|---------------|  
-|[Informations de référence sur les diagrammes d’activités UML](../modeling/uml-activity-diagrams-reference.md)|Flux de travail entre les actions et les participants dans un processus d'entreprise|  
-|[Informations de référence sur les diagrammes de composants UML](../modeling/uml-component-diagrams-reference.md)|Composants d'un système, leurs interfaces, ports et relations|  
-|[Informations de référence sur les diagrammes de classes UML](../modeling/uml-class-diagrams-reference.md)|Types qui sont utilisés pour stocker et échanger des données dans le système et leurs relations|  
-|[Informations de référence sur les diagrammes de séquence UML](../modeling/uml-sequence-diagrams-reference.md)|Séquences d'interactions entre des objets, des composants, des systèmes ou des acteurs|  
-|[Informations de référence sur les diagrammes de cas d’usage UML](../modeling/uml-use-case-diagrams-reference.md)|Tâches et objectifs de l'utilisateur pris en charge par un système|  
+|[Diagrammes d’activités UML : Informations de référence](../modeling/uml-activity-diagrams-reference.md)|Flux de travail entre les actions et les participants dans un processus d'entreprise|  
+|[Diagrammes de composants UML : Informations de référence](../modeling/uml-component-diagrams-reference.md)|Composants d'un système, leurs interfaces, ports et relations|  
+|[Diagrammes de classes UML : Informations de référence](../modeling/uml-class-diagrams-reference.md)|Types qui sont utilisés pour stocker et échanger des données dans le système et leurs relations|  
+|[Diagrammes de séquence UML : Informations de référence](../modeling/uml-sequence-diagrams-reference.md)|Séquences d'interactions entre des objets, des composants, des systèmes ou des acteurs|  
+|[Diagrammes de cas d’usage UML : Informations de référence](../modeling/uml-use-case-diagrams-reference.md)|Tâches et objectifs de l'utilisateur pris en charge par un système|  
   
  Pour connaître les versions de Visual Studio prennent en charge chaque type de diagramme, consultez [versions prises en charge pour l’architecture et les outils de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -72,7 +67,7 @@ Les diagrammes de modélisation vous aident à comprendre, clarifier et communiq
   
 |**Diagramme**|**Éléments décrits**|  
 |-----------------|---------------|  
-|[Diagrammes de couche : recommandations](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Informations de référence sur les diagrammes de couche](../modeling/layer-diagrams-reference.md)|Architecture de haut niveau du système|  
+|[Diagrammes de couche : Recommandations](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagrammes de couche : Informations de référence](../modeling/layer-diagrams-reference.md)|Architecture de haut niveau du système|  
 |Cartes de code<br /><br /> [Mapper les dépendances à travers vos solutions](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Rechercher des problèmes potentiels à l’aide des analyseurs de carte du code](../modeling/find-potential-problems-using-code-map-analyzers.md)|Dépendances et autres relations dans le code existant|  
 |Diagrammes de classes générés par du code<br /><br /> [Utilisation des diagrammes de classes (Concepteur de classes)](../ide/working-with-class-diagrams-class-designer.md)|Types et leurs relations dans le code .NET|  
   
@@ -96,7 +91,7 @@ Les diagrammes de modélisation vous aident à comprendre, clarifier et communiq
 |[Modéliser les besoins des utilisateurs](../modeling/model-user-requirements.md)|Utiliser des modèles pour clarifier et communiquer les besoins des utilisateurs.|  
 |[Modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md)|Utiliser des modèles pour décrire la structure globale et le comportement de votre système et pour vous assurer qu'il répond aux besoins des utilisateurs.|  
 |[Valider votre système pendant le développement](../modeling/validate-your-system-during-development.md)|Assurez-vous que votre logiciel reste cohérent avec les besoins de vos utilisateurs et avec l'architecture globale de votre système.|  
-|[Utiliser des modèles dans votre processus de développement](../modeling/use-models-in-your-development-process.md)<br /><br /> [Utiliser des modèles dans le développement Agile](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)|Utiliser des modèles pour vous aider à comprendre et à modifier votre système lors de son développement.|  
+|[Utiliser des modèles dans votre processus de développement](../modeling/use-models-in-your-development-process.md)<br /><br /> [Utiliser des modèles dans le développement Agile](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Utiliser des modèles pour vous aider à comprendre et à modifier votre système lors de son développement.|  
 |[Structurer votre solution de modélisation](../modeling/structure-your-modeling-solution.md)|Organiser les modèles dans un projet de grande ou moyenne taille.|  
   
 ## <a name="external-resources"></a>Ressources externes  
@@ -104,6 +99,3 @@ Les diagrammes de modélisation vous aident à comprendre, clarifier et communiq
 |**Catégorie**|**Links**|  
 |------------------|---------------|  
 |**Forums**|-   [Outils de visualisation et de modélisation Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling (outils DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-
-
-

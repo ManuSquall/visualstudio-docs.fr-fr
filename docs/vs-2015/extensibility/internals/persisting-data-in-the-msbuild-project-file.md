@@ -1,33 +1,28 @@
 ---
 title: Conservation des données dans le fichier projet MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project files, persisting data in
 ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 059ddc7b9b8fe0de06530af704bb5f7e271f6744
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d6c4318ff23fecdaf312533c7b92712db291fee8
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749636"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "59001073"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>Données persistantes dans le fichier projet MSBuild
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Un sous-type de projet peut devoir conserver les données de sous-type dans le fichier projet pour une utilisation ultérieure. Un sous-type de projet utilise la persistance d’un fichier projet pour répondre aux exigences suivantes :  
   
-1.  Conserver les données utilisées dans le cadre de la génération du projet. (Pour plus d’informations sur Microsoft Build Engine, consultez [MSBuild](http://msdn.microsoft.com/en-us/7c49aba1-ee6c-47d8-9de1-6f29a906e20b).) Informations liées à la génération peuvent soit :  
+1.  Conserver les données utilisées dans le cadre de la génération du projet. (Pour plus d’informations sur Microsoft Build Engine, consultez [MSBuild](http://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b).) Informations liées à la génération peuvent soit :  
   
     1.  Données de configuration indépendantes. Autrement dit, les données stockées dans des éléments MSBuild avec des conditions vides ou manquantes.  
   
@@ -85,4 +80,3 @@ Un sous-type de projet peut devoir conserver les données de sous-type dans le f
   
 ## <a name="see-also"></a>Voir aussi  
  [Sous-types de projets](../../extensibility/internals/project-subtypes.md)
-
