@@ -1,14 +1,9 @@
 ---
-title: 'Comment : déboguer à partir d’un projet de DLL | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Déboguer à partir d’un projet de DLL | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,20 +19,20 @@ ms.assetid: 40a94339-d3f7-4ab9-b8a1-b8cf82942f44
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 61ccfc1fbf97dc36ed0625f95f998f9b154fd68c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 4a9a3e7cd63e5a485063789d9f9eeaf1227d1b5d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796257"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951154"
 ---
-# <a name="how-to-debug-from-a-dll-project"></a>Comment : déboguer à partir d'un projet DLL
+# <a name="how-to-debug-from-a-dll-project"></a>Procédure : Déboguer à partir d’un projet de DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pour démarrer le débogage d'un projet de DLL, vous devez spécifier l'application appelante dans les propriétés du projet. Les pages de propriétés C++ diffèrent dans la disposition et le contenu par rapport aux pages de propriétés C# et Visual Basic.  
   
- Si une DLL managée est appelée par du code natif et que vous voulez déboguer les deux, vous pouvez le spécifier dans les propriétés du projet. Pour plus d'informations, consultez [How to: Debug in Mixed Mode](../debugger/how-to-debug-in-mixed-mode.md).  
+ Si une DLL managée est appelée par du code natif et que vous voulez déboguer les deux, vous pouvez le spécifier dans les propriétés du projet. Pour plus d'informations, voir [Procédure : Déboguer en Mode mixte](../debugger/how-to-debug-in-mixed-mode.md).  
   
 > [!NOTE]
 >  Vous ne pouvez pas spécifier une application appelante externe dans les éditions Express de Visual Studio. Au lieu de cela, vous devez ajouter un projet exécutable à la solution, le définir comme projet de démarrage et appeler les méthodes de votre DLL depuis le projet exécutable.  
@@ -46,7 +41,7 @@ Pour démarrer le débogage d'un projet de DLL, vous devez spécifier l'applicat
   
 1.  Cliquez sur le nœud de projet dans le **l’Explorateur de solutions** et sélectionnez **propriétés**. Accédez à la **déboguer** onglet.  
   
-2.  Assurez-vous que le **Configuration** champ en haut de la fenêtre est défini sur **déboguer**.  
+2.  Vérifiez que le champ **Configuration** en haut de la fenêtre est défini sur **Débogage**.  
   
 3.  Accédez à **propriétés de Configuration / débogage**.  
   
@@ -54,7 +49,7 @@ Pour démarrer le débogage d'un projet de DLL, vous devez spécifier l'applicat
   
 5.  Dans le **commande** ou **commande à distance** zone, ajoutez le nom de chemin complet de l’application.  
   
-6.  Ajoutez les arguments de programme nécessaires à la **Arguments de commande** boîte.  
+6.  Ajoutez les arguments nécessaires du programme à la zone **Arguments de la commande**.  
   
 ### <a name="to-specify-the-calling-application-in-a-c-or-visual-basic-project"></a>Pour spécifier l'application appelante dans un projet C# ou Visual basic  
   
@@ -79,6 +74,3 @@ Pour démarrer le débogage d'un projet de DLL, vous devez spécifier l'applicat
  [Paramètres de projet pour des configurations Debug C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Paramètres de projet pour une configuration Debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [Paramètres de projet pour une configuration Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
-
-
-

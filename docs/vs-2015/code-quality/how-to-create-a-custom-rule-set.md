@@ -1,14 +1,9 @@
 ---
-title: 'Comment : créer un ensemble de règles personnalisé | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Créer un ensemble de règles personnalisé | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.addremoverulesets
 helpviewer_keywords:
@@ -18,14 +13,14 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a5d8a5cb7e29cfd900ce81fa5f4b6253f0c49014
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3d21ad2edd01ee5b7a939c6c0ddfdaa882e38754
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812463"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951850"
 ---
-# <a name="how-to-create-a-custom-rule-set"></a>Comment : créer un ensemble de règles personnalisé
+# <a name="how-to-create-a-custom-rule-set"></a>Procédure : Créer un ensemble de règles personnalisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dans [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)], et [!INCLUDE[vsPro](../includes/vspro-md.md)], vous pouvez créer et modifier un personnalisé *ensemble de règles* pour répondre aux besoins spécifiques de projet associés à l’analyse du code. Pour créer une règle personnalisée définie, vous ouvrez un ou des ensembles de règles standard dans l’éditeur d’ensemble de règles. Vous pouvez ensuite ajouter ou supprimer des règles spécifiques, et vous pouvez modifier l’action qui se produit lorsque l’analyse du code détermine qu’une règle a été violée.  
@@ -117,8 +112,5 @@ Dans [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort]
 -   Pour ajouter ou supprimer des ensembles de règles de valeur par défaut à l’ensemble de règles actuel de Microsoft, cliquez sur **ajouter ou supprimer des ensembles de règles enfants**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : configurer l’analyse du Code pour un projet de Code managé](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
+ [Guide pratique pour Configurer l’analyse du Code pour un projet de Code managé](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
  [Informations de référence sur l’ensemble de règles d’analyse du code](../code-quality/code-analysis-rule-set-reference.md)
-
-
-

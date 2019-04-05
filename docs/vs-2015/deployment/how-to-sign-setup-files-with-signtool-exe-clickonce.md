@@ -1,14 +1,9 @@
 ---
-title: 'Comment : signer des fichiers avec SignTool.exe (ClickOnce) d’installation | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Connexion fichiers d’installation avec SignTool.exe (ClickOnce) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,15 +18,15 @@ ms.assetid: 545a4005-d283-4110-9821-c78a9833c250
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: f6975fb9c3c3e1abeeaebe23b4a85f41833e421e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: fbbc745ae2d0a20ab14b3960e34182d7f4ed1865
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179307"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949637"
 ---
-# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Comment : signer des fichiers d'installation avec SignTool.exe (ClickOnce)
+# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Procédure : Signer des fichiers d’installation avec SignTool.exe (ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez utiliser SignTool.exe pour signer un programme d'installation (setup.exe). Ce processus aide à garantir que les fichiers falsifiés ne sont pas installés sur les ordinateurs des utilisateurs finaux.  
@@ -46,25 +41,25 @@ Vous pouvez utiliser SignTool.exe pour signer un programme d'installation (setup
   
 2.  Sélectionnez le projet dans **l’Explorateur de solutions**.  
   
-3.  Sur le **projet** menu, cliquez sur *nom_projet* **propriétés**.  
+3.  Dans le menu **Projet**, cliquez sur **Propriétés** de *NomProjet*.  
   
-4.  Dans le **signature** page, désactivez **signer les manifestes ClickOnce**.  
+4.  Dans la page **Connexion**, décochez **Signer les manifestes ClickOnce**.  
   
-5.  Dans le **publier** , cliquez sur **conditions préalables**.  
+5.  Dans la page **Publier**, cliquez sur **Composants requis**.  
   
-6.  Vérifiez que toutes les conditions préalables sont sélectionnées, puis cliquez sur **OK**.  
+6.  Vérifiez que tous les composants requis sont sélectionnés, puis cliquez sur **OK**.  
   
-7.  Dans le **publier** page, vérifiez les paramètres de publication, puis sur **publier maintenant**.  
+7.  Dans la page **Publier**, vérifiez les paramètres de publication, puis cliquez sur **Publier maintenant**.  
   
-     La solution publie le manifeste d’application non signé, le manifeste de déploiement non signé, les fichiers spécifiques à la version et le programme d’installation non signé à l’emplacement du dossier de publication.  
+     La solution publie le manifeste d'application non signé, le manifeste de déploiement non signé, les fichiers spécifiques à la version et le programme d'installation non signé à l'emplacement du dossier de publication.  
   
-8.  Dans le **publier** , cliquez sur **conditions préalables**.  
+8.  Dans la page **Publier**, cliquez sur **Composants requis**.  
   
-9. Dans le **prérequis** boîte de dialogue, décochez **créer un programme d’installation pour installer les composants prérequis**.  
+9. Dans la boîte de dialogue **Composants requis**, vérifiez que la case **Créer un programme d’installation des composants requis** est cochée.  
   
-10. Dans le **publier** page, vérifiez les paramètres de publication, puis sur **publier maintenant**.  
+10. Dans la page **Publier**, vérifiez les paramètres de publication, puis cliquez sur **Publier maintenant**.  
   
-     La solution publie le manifeste d’application signé, le manifeste de déploiement signé et les fichiers spécifiques à la version à l’emplacement du dossier de publication. Le programme d'installation non signé n'est pas remplacé par le processus de publication.  
+     La solution publie le manifeste d'application signé, le manifeste de déploiement signé et les fichiers spécifiques à la version à l'emplacement du dossier de publication. Le programme d'installation non signé n'est pas remplacé par le processus de publication.  
   
 11. Sur le site du client, ouvrez une invite de commandes.  
   
@@ -85,7 +80,4 @@ Vous pouvez utiliser SignTool.exe pour signer un programme d'installation (setup
     ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour resigner des manifestes d’application et de déploiement](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
-
-
-
+ [Guide pratique pour re-signer des manifestes d’application et de déploiement](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

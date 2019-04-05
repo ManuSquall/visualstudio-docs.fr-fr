@@ -1,14 +1,9 @@
 ---
 title: Analyse du code pour les avertissements de Code managé | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vc.project.vcfxcoptool.enablefxcop
 helpviewer_keywords:
@@ -21,12 +16,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 300875689a8ea6e872e287eaed6d2328bdab5170
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 237091c4304b6d6fef90197d503f84fe86c12b9e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49278906"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950368"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>Analyse du code pour les avertissements liés au code managé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,6 +61,3 @@ L’outil Analyse du code managé fournit des avertissements qui indiquent des v
 |[Avertissements liés à la sécurité](../code-quality/security-warnings.md)|Avertissements gérant la sécurité des bibliothèques et des applications.|  
 |[Avertissements liés à l’utilisation](../code-quality/usage-warnings.md)|Avertissements gérant l’utilisation adéquate de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].|  
 |[Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)|Erreurs qui se produisent si la stratégie d’analyse du code n’est pas satisfaite au moment de l’archivage.|
-
-
-

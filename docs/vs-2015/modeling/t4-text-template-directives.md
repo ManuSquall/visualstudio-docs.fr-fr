@@ -1,12 +1,9 @@
 ---
 title: T4 Directives de modèles de texte | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, import directive
 - text templates, include directive
@@ -18,13 +15,13 @@ ms.assetid: 6898ee02-ebb2-4635-a4e9-350774c13cf2
 caps.latest.revision: 83
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 00853b21ec077825337c2c360cac33775189dfdb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ce0acf7c1c63f0d1c05d1e1d3b59dc7a5d28862a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302170"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949282"
 ---
 # <a name="t4-text-template-directives"></a>Directives de modèles de texte T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +36,7 @@ Les directives fournissent des instructions au moteur de transformation de modè
   
  Toutes les valeurs d'attribut doivent être placées entre guillemets doubles. Si la valeur elle-même contient des guillemets, ils doivent être placés dans une séquence d'échappement au moyen du caractère \.  
   
- En général, les directives sont les premiers éléments d'un fichier modèle ou d'un fichier inclus. Vous ne devez pas les placer à l’intérieur d’un bloc de code `<#...#>` ou après un bloc de fonctionnalité de classe `<#+...#>`.  
+ En général, les directives sont les premiers éléments d'un fichier modèle ou d'un fichier inclus. Vous ne devez pas les placer à l'intérieur d'un bloc de code `<#...#>` ou après un bloc de fonctionnalité de classe `<#+...#>`.  
   
  [Directive du modèle T4](../modeling/t4-template-directive.md)  
  ```  
@@ -77,6 +74,3 @@ Les directives fournissent des instructions au moteur de transformation de modè
 ```  
   
  De plus, vous pouvez créer vos propres directives. Pour plus d’informations, consultez [processeurs de Directive modèles de création personnalisé T4 texte](../modeling/creating-custom-t4-text-template-directive-processors.md). Si vous utilisez le Kit de développement logiciel de visualisation et de modélisation pour créer un langage spécifique à un domaine (DSL), un processeur de directive sera généré dans le cadre de votre DSL.
-
-
-

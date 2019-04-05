@@ -1,12 +1,9 @@
 ---
 title: Utilisation du diagramme de définition DSL | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.diagram
 - vs.dsltools.dsldesigner.dsldiagram
@@ -20,13 +17,13 @@ ms.assetid: 1a4c7a58-e134-438e-848e-efd98f92bf10
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1fc0dbc007dcb3e15891a4176fc5bdb96babbfa8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: fe01664694b8c4ebdf5a5edcd57d9d4fc600d6fd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208583"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952571"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Utilisation du schéma de définition DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,14 +68,11 @@ Le diagramme d’un [!INCLUDE[dsl](../includes/dsl-md.md)] définition est un ou
 ### <a name="bring-tree-here"></a>Bring Tree Here (action)  
  Vous pouvez consolider le diagramme en double-cliquant sur une classe de domaine d’espace réservé, puis sur **déplacer l’arborescence ici**. La classe de domaine de l'espace réservé devient un élément de définition et affiche les arborescences d'héritage et de relations. Le précédent élément de définition devient un élément d'espace réservé s'il est la cible d'une relation ou l'enfant d'une relation d'héritage ; dans le cas contraire, il disparaît.  
   
-### <a name="split-tree"></a>Split Tree  
+### <a name="split-tree"></a>Arborescence fractionnée  
  Vous pouvez scinder les arborescences d’héritage ou de relations en double-cliquant sur la définition de classe de domaine qui les affiche, puis sur **fractionner l’arborescence**. L'élément de définition devient un élément d'espace réservé et la classe de domaine de la définition, ainsi que ses relations d'héritage et de relation, s'affiche désormais en bas de la partition.  
   
 ### <a name="show-as-class"></a>Show As Class  
  Si une relation de domaine possède des relations dérivées, ou si elle a des relations d’incorporation ou de référence avec d’autres relations de domaine, vous pouvez afficher la relation en tant que classe en double-cliquant sur la relation, puis sur **afficher en tant que la classe** . La relation s’affichera avec un **propriétés de domaine** de compartiments et affiche les relations d’héritage et.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Glossaire des outils Domain-Specific Language](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Glossaire des Outils Domain-Specific Language](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

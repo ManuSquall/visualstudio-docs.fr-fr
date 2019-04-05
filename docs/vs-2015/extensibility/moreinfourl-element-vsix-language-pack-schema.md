@@ -1,29 +1,24 @@
 ---
 title: Élément MoreInfoURL (schéma du module linguistique VSIX) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 ms.assetid: 3f07b67b-95c5-4ae8-8b7e-d643cbbb0348
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c0f92a64e3cc4c701b30b313bab984dc18d7de3e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 04168f2e69cb613a00313a45a38b2db2882d6d1d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724531"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953041"
 ---
 # <a name="moreinfourl-element-vsix-language-pack-schema"></a>Élément MoreInfoURL (schéma du module linguistique VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Facultatif. Un lien vers des informations localisées sur l’extension.  
+Optionnel. Un lien vers des informations localisées sur l’extension.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -53,7 +48,7 @@ Facultatif. Un lien vers des informations localisées sur l’extension.
 |[Élément VSIXLanguagePack](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Obligatoire. Fournit l’élément racine pour un module linguistique VSIX.|  
   
 ## <a name="text-value"></a>Valeur texte  
- Facultatif. Un lien vers un site Web. Le lien est une chaîne de texte.  
+ Optionnel. Un lien vers un site Web. Le lien est une chaîne de texte.  
   
 ## <a name="element-information"></a>Informations sur les éléments  
   
@@ -67,5 +62,4 @@ Facultatif. Un lien vers des informations localisées sur l’extension.
 ## <a name="see-also"></a>Voir aussi  
  [Référence de schéma du module linguistique VSX](../extensibility/vsx-language-pack-schema-reference.md)   
  [Localisation de Packages VSIX](../extensibility/localizing-vsix-packages.md)   
- [Référence du schéma 1.0 Extension VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
-
+ [Référence du schéma 1.0 Extension VSIX](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)

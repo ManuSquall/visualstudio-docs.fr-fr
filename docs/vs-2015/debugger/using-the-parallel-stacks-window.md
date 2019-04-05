@@ -1,14 +1,9 @@
 ---
 title: À l’aide de la parallèle de la fenêtre piles | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.parallelstacks
 dev_langs:
@@ -22,13 +17,13 @@ ms.assetid: f50efb78-5206-4803-bb42-426ef8133f2f
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 602fdd683ecb1b3244289c305e4fc850d337b03e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: df364440f544df663eff294dfd53dcd671dea049
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792032"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953049"
 ---
 # <a name="using-the-parallel-stacks-window"></a>Utilisation de la fenêtre Piles parallèles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +68,7 @@ Le **piles parallèles** fenêtre est utile lorsque vous déboguez des applicati
 |A|Zone de liste déroulante Threads/Tâches|Bascule entre la vue des piles d’appels de threads et la vue des piles d’appels de tâches. Pour plus d’informations, consultez Vue Tâches et Vue Threads.|  
 |B|Afficher uniquement avec indicateur|Affiche les piles d’appels uniquement pour les threads qui sont marqués dans d’autres fenêtres de débogage, telles que la **Threads GPU** fenêtre et la **espion parallèle** fenêtre.|  
 |C|Basculer dans la vue Méthode|Bascule entre la vue Pile et la vue Méthode. Pour plus d'informations, consultez Vue Méthode.|  
-|D|Défilement automatique vers le frame de pile actif|Fait défiler automatiquement le diagramme afin que le frame de pile actuel soit visible. Cette fonctionnalité est utile lorsque vous modifiez le frame de pile actuel d'autres fenêtres ou lorsque vous atteignez un nouveau point d'arrêt dans de grands diagrammes.|  
+|D|Défilement automatique vers le frame de pile actif|Fait défiler automatiquement le diagramme afin que le frame de pile actuel soit visible. Cette fonctionnalité est utile lorsque vous modifiez le frame de pile actuel d’autres fenêtres ou lorsque vous atteignez un nouveau point d’arrêt dans de grands diagrammes.|  
 |E|Basculer le contrôle de zoom|Affiche ou masque le contrôle de zoom. Vous pouvez également effectuer un zoom avant en appuyant sur CTRL et en activant la roulette de souris, indépendamment de la visibilité du contrôle de zoom, ou à l’aide de **CTRL + MAJ + '+'** zoomer et **CTRL + MAJ +'-'** effectuer un zoom arrière. En appuyant sur **CTRL + F8** applique un zoom avant pour s’ajuster à l’écran.|  
   
 ### <a name="context-menu-items"></a>Éléments de menu contextuel  
@@ -97,13 +92,13 @@ Le **piles parallèles** fenêtre est utile lorsque vous déboguez des applicati
 |Paramètres des symboles|Affiche la boîte de dialogue correspondante.|  
   
 ## <a name="tasks-view"></a>Vue Tâches  
- Si votre application utilise <xref:System.Threading.Tasks.Task?displayProperty=fullName> objets (code managé) ou `task_handle` objets (code natif) pour exprimer le parallélisme, vous pouvez utiliser la zone de liste déroulante dans la barre d’outils de la fenêtre Piles parallèles pour basculer vers *vue tâches*. La vue Tâches contient les piles d’appels des tâches et non celles des threads. Les différences entre la vue Tâches et la vue Threads sont les suivantes :  
+ Si votre application utilise <xref:System.Threading.Tasks.Task?displayProperty=fullName> objets (code managé) ou `task_handle` objets (code natif) pour exprimer le parallélisme, vous pouvez utiliser la zone de liste déroulante dans la barre d’outils de la fenêtre Piles parallèles pour basculer vers *vue tâches*. La vue Tâches contient les piles d'appels des tâches et non celles des threads. Les différences entre la vue Tâches et la vue Threads sont les suivantes :  
   
-- Les piles d'appels des threads qui n'exécutent pas de tâches n'apparaissent pas.  
+- Les piles d’appels des threads qui n’exécutent pas de tâches n’apparaissent pas.  
   
-- Les piles d’appels des threads qui exécutent des tâches sont tronquées visuellement en haut et en bas afin d’afficher les frames les plus pertinents appartenant aux tâches.  
+- Les piles d'appels des threads qui exécutent des tâches sont tronquées visuellement en haut et en bas afin d'afficher les frames les plus pertinents appartenant aux tâches.  
   
-- Lorsque plusieurs tâches figurent sur un thread, les piles d’appels de ces tâches sont fractionnées dans des nœuds séparés.  
+- Lorsque plusieurs tâches figurent sur un thread, les piles d'appels de ces tâches sont fractionnées dans des nœuds séparés.  
   
   L’illustration suivante présente la vue Tâches de la fenêtre Piles parallèles à droite et la vue Threads correspondante à gauche.  
   
@@ -111,7 +106,7 @@ Le **piles parallèles** fenêtre est utile lorsque vous déboguez des applicati
   
   Pour afficher la pile des appels complète, passez simplement en vue Threads en double-cliquant sur un frame de pile, puis sur **atteindre le Thread**.  
   
-  Comme indiqué dans le tableau précédent, vous pouvez afficher des informations supplémentaires en pointant le curseur de la souris sur un contexte de méthode. L’image suivante présente les informations de l’info-bulle pour la vue Threads et la vue Tâches.  
+  Comme indiqué dans le tableau précédent, vous pouvez afficher des informations supplémentaires en pointant le curseur de la souris sur un contexte de méthode. L'image suivante présente les informations de l'info-bulle pour la vue Threads et la vue Tâches.  
   
   ![Info-bulles dans la fenêtre Piles parallèles](../debugger/media/parallel-stack-tooltips.png "Parallel_Stack_Tooltips")  
   
@@ -130,6 +125,3 @@ Le **piles parallèles** fenêtre est utile lorsque vous déboguez des applicati
  [À l’aide de la fenêtre tâches](../debugger/using-the-tasks-window.md)   
  [Procédure pas à pas : Débogage d’une Application parallèle](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Classe Task](../extensibility/debugger/task-class-internal-members.md)
-
-
-

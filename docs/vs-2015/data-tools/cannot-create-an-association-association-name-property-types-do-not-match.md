@@ -1,31 +1,28 @@
 ---
 title: Impossible de créer une association &lt;nom de l’association&gt; -types de propriété ne correspondent pas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 97ec5a04-6e23-45a2-9226-d77ead854392
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 674a7de3bf3b4988bfd92390305a03c968d1dbe2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1a4a8a8dfdbf34a52e48a47d691436188cca9c70
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268513"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951928"
 ---
-# <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Impossible de créer une association &lt;nom de l’association&gt; -types de propriété ne correspondent pas
+# <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Impossible de créer une association &lt;nom de l’association&gt;. Les types de propriétés ne correspondent pas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-Impossible de créer une association \<nom de l’association >-types de propriété ne correspondent pas. Propriétés n’ont pas de types correspondants : \<les noms de propriété >.  
+Impossible de créer une association \<nom de l’association>. Les types de propriétés ne correspondent pas. Les propriétés n’ont pas de types correspondants : \<noms des propriétés>.  
   
- Les associations sont définies par le **propriétés d’Association** dans le **Éditeur d’associations** boîte de dialogue. Les propriétés de part et d'autre de l'association doivent avoir le même type de données.  
+ Les associations sont définies par les **Propriétés d’association** sélectionnées dans la boîte de dialogue **Éditeur d’associations**. Les propriétés de part et d'autre de l'association doivent avoir le même type de données.  
   
  Les propriétés répertoriées dans le message n'ont pas le même type de données.  
   
@@ -33,14 +30,13 @@ Impossible de créer une association \<nom de l’association >-types de propri�
   
 1.  Examinez le message et prenez note des propriétés mentionnées dans le message.  
   
-2.  Cliquez sur **OK** pour faire disparaître la boîte de dialogue.  
+2.  Cliquez sur **OK** pour fermer la boîte de dialogue.  
   
-3.  Inspecter le **propriétés d’Association** et sélectionnez Propriétés du même type de données.  
+3.  Inspectez les **Propriétés d’association** et sélectionnez des propriétés du même type de données.  
   
 4.  Cliquez sur **OK**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : créer une association (relation) entre les classes LINQ to SQL (Concepteur O/R)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)   
+ [Guide pratique pour Créer une association (relation) entre les classes LINQ to SQL (Concepteur O/R)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)   
  [Procédure pas à pas : Création des Classes LINQ to SQL (Concepteur O-R)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
  [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)
-

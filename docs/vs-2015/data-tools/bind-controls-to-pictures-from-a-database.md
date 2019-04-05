@@ -1,12 +1,9 @@
 ---
 title: Lier des contrôles à des images à partir d’une base de données | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -25,13 +22,13 @@ ms.assetid: 9748815e-3556-49e8-86b1-c6aa593c6163
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: fbaca836cb5b620c596b72bc991e91c1cfc2312c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: cb1bdb99db405962f487bc9ec13de961f352ec48
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189499"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949862"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Lier des contrôles à des images d’une base de données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,9 +38,9 @@ Vous pouvez utiliser la **des Sources de données** fenêtre pour lier une image
   
  Images dans une base de données sont généralement stockées en tant que tableaux d’octets. Les éléments dans le **des Sources de données** fenêtre stockés sous forme de tableaux d’octets ont leur contrôle de type définie sur **aucun** par défaut, étant donné que les tableaux d’octets peuvent contenir tout ce à partir d’un simple tableau d’octets au fichier exécutable d’une grande application. Pour créer un contrôle lié aux données pour un élément de tableau d’octets dans le **des Sources de données** fenêtre qui représente une image, vous devez sélectionner le contrôle à créer.  
   
- La procédure suivante suppose que le **des Sources de données** fenêtre est déjà remplie avec un élément qui est lié à votre image. Pour plus d'informations, consultez [How to: Connect to Data in a Database](../data-tools/how-to-connect-to-data-in-a-database.md).  
+ La procédure suivante suppose que le **des Sources de données** fenêtre est déjà remplie avec un élément qui est lié à votre image.
   
-### <a name="to-bind-a-picture-in-a-database-to-a-control"></a>Pour lier une image dans une base de données à un contrôle  
+## <a name="bind-a-picture-in-a-database-to-a-control"></a>Lier une image dans une base de données à un contrôle  
   
 1.  Assurez-vous que vous souhaitez ajouter le contrôle à l’aire de conception est ouvert dans le Concepteur WPF ou le Concepteur de formulaires Windows.  
   
@@ -59,4 +56,3 @@ Vous pouvez utiliser la **des Sources de données** fenêtre pour lier une image
   
 ## <a name="see-also"></a>Voir aussi  
  [Lier des contrôles WPF à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)
-

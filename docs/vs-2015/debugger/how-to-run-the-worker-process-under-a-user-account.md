@@ -1,14 +1,9 @@
 ---
-title: 'Comment : exécuter le processus de travail sous un compte d’utilisateur | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Exécuter le processus de travail sous un compte d’utilisateur | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,15 +19,15 @@ ms.assetid: b58e97b1-e62a-4318-aea4-52276ea20735
 caps.latest.revision: 35
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d5d9e9cbadd2b7154eeb84bad99239e0b026eecd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: da7f0374c8185ef091b89dde99f3c6e053458480
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734456"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58947920"
 ---
-# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Comment : exécuter le processus de travail sous un compte d'utilisateur
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Procédure : exécuter le processus Worker sous un compte d’utilisateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pour configurer votre ordinateur afin de pouvoir exécuter le processus de traitement [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] (aspnet_wp.exe ou w3wp.exe) sous un compte d'utilisateur, procédez comme suit.  
@@ -43,7 +38,7 @@ Pour configurer votre ordinateur afin de pouvoir exécuter le processus de trait
   
 1.  Ouvrez le fichier machine.config, situé sur votre ordinateur dans le dossier CONFIG sous le chemin d'accès où vous avez installé le runtime.  
   
-2.  Rechercher la &lt;processModel&gt; section et modifier les attributs d’utilisateur et mot de passe pour le nom et le mot de passe du compte d’utilisateur que vous souhaitez aspnet_wp.exe doit s’exécuter sous.  
+2.  Recherchez la section &lt;processModel&gt; et remplacez les attributs user et password par le nom et le mot de passe du compte d’utilisateur sous lequel aspnet_wp.exe doit s’exécuter.  
   
 3.  Enregistrez le fichier machine.config.  
   
@@ -81,7 +76,7 @@ Pour configurer votre ordinateur afin de pouvoir exécuter le processus de trait
   
     La boîte de dialogue **Sélectionner un utilisateur, des ordinateurs ou des groupes** s'affiche.  
   
-10. Tapez le nom d'utilisateur dans la zone **Entrez le nom de l'objet à sélectionner** , puis cliquez sur **OK**. Le nom d'utilisateur doit suivre le format NomDomaine\NomUtilisateur.  
+10. Tapez le nom d'utilisateur dans la zone **Entrez le nom de l'objet à sélectionner** , puis cliquez sur **OK**. Le nom d’utilisateur doit respecter le format : Nomdomaine\nomutilisateur.  
   
 11. Dans la boîte de dialogue **Entrée d'autorisation pour les fichiers ASP.Net temporaires** , accordez à l'utilisateur le **Contrôle total**, puis cliquez sur **OK** pour fermer la boîte de dialogue **Entrées des fichiers ASP.Net temporaires** .  
   
@@ -91,8 +86,3 @@ Pour configurer votre ordinateur afin de pouvoir exécuter le processus de trait
   
 ## <a name="see-also"></a>Voir aussi  
 [Débogage ASP.NET : configuration système requise](../debugger/aspnet-debugging-system-requirements.md)  
-  
-
-
-
-

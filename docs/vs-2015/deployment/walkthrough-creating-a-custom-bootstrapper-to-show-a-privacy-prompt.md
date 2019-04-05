@@ -1,14 +1,9 @@
 ---
 title: 'Procédure pas à pas : Création d’un programme d’amorçage personnalisé pour afficher l’invite de déclaration de confidentialité | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,15 +19,15 @@ ms.assetid: 2f3edd6a-84d1-4864-a1ae-6a13c5732aae
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: e8bd1101647973a7a8f206159f8910a4e633e5da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c71a23fc79b0d80c55418a9c7d78a48ebc76000e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893388"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950874"
 ---
-# <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Procédure pas à pas : création d'un programme d'amorçage personnalisé pour afficher une invite de confidentialité
+# <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Procédure pas à pas : Création d’un programme d’amorçage personnalisé pour afficher une invite de confidentialité
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez configurer des applications ClickOnce à mettre à jour automatiquement lorsque les assemblys avec des versions plus récentes de fichier et les versions d’assembly sont disponibles. Pour vous assurer que vos clients acceptent ce comportement, vous pouvez afficher une invite de confidentialité pour eux. Ensuite, ils peuvent choisir s’il faut accorder l’autorisation de l’application pour mettre à jour automatiquement. Si l’application n’est pas autorisée à mettre à jour automatiquement, il n’installe pas.  
@@ -154,7 +149,7 @@ Vous pouvez configurer des applications ClickOnce à mettre à jour automatiquem
   
 -   Un document pour les termes du contrat de licence de logiciel.  
   
-#### <a name="step-1-to-create-the-bootstrapper-directory"></a>Étape 1 : Créer le répertoire du programme d’amorçage  
+#### <a name="step-1-to-create-the-bootstrapper-directory"></a>Étape 1 : Pour créer le répertoire du programme d’amorçage  
   
 1.  Créez un répertoire nommé **UpdateConsentDialog** dans %PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages.  
   
@@ -166,7 +161,7 @@ Vous pouvez configurer des applications ClickOnce à mettre à jour automatiquem
     > [!NOTE]
     >  Créez un nouveau répertoire pour chacun des paramètres régionaux. Par exemple, vous pouvez ajouter des sous-répertoires pour les paramètres régionaux fr et de. Ces répertoires contient les chaînes Français et allemand et les modules linguistiques, si nécessaire.  
   
-#### <a name="step-2-to-create-the-productxml-manifest-file"></a>Étape 2 : Créer le fichier manifeste product.xml  
+#### <a name="step-2-to-create-the-productxml-manifest-file"></a>Étape 2 : Pour créer le fichier manifeste product.xml  
   
 1.  Créez un fichier texte appelé `product.xml`.  
   
@@ -198,7 +193,7 @@ Vous pouvez configurer des applications ClickOnce à mettre à jour automatiquem
   
 3.  Enregistrez le fichier dans le répertoire du programme d’amorçage UpdateConsentDialog.  
   
-#### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>Étape 3 : Pour créer le manifeste package.xml fichier et le logiciel de contrat de licence  
+#### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>Étape 3 : Pour créer le fichier manifeste package.xml et les termes du contrat de licence de logiciel  
   
 1.  Créez un fichier texte appelé `package.xml`.  
   
@@ -242,7 +237,7 @@ Vous pouvez configurer des applications ClickOnce à mettre à jour automatiquem
   
 1.  Dans **l’Explorateur de solutions**, cliquez sur le nom de votre application que vous souhaitez déployer.  
   
-2.  Sur le **projet** menu, cliquez sur *nom_projet* **propriétés**.  
+2.  Dans le menu **Projet**, cliquez sur **Propriétés** de *NomProjet*.  
   
 3.  Cliquez sur le **publier** page, puis cliquez sur **conditions préalables**.  
   
@@ -260,7 +255,7 @@ Vous pouvez configurer des applications ClickOnce à mettre à jour automatiquem
   
 1.  Dans **l’Explorateur de solutions**, cliquez sur le nom de votre application que vous souhaitez déployer.  
   
-2.  Sur le **projet** menu, cliquez sur *nom_projet* **propriétés**.  
+2.  Dans le menu **Projet**, cliquez sur **Propriétés** de *NomProjet*.  
   
 3.  Cliquez sur le **publier** page, puis cliquez sur **publier maintenant**.  
   
@@ -272,13 +267,13 @@ Vous pouvez configurer des applications ClickOnce à mettre à jour automatiquem
   
 6.  Lisez le contrat de licence logiciel, puis cliquez sur **Accept**.  
   
-     L’application de la boîte de dialogue de consentement de mise à jour apparaît et affiche le texte suivant : l’application que vous êtes sur le point d’installation vérifie les dernières mises à jour sur le Web. En cliquant sur J’accepte, vous autorisez l’application pour rechercher les mises à jour automatiquement sur Internet.  
+     L’application de la boîte de dialogue de consentement de mise à jour apparaît et affiche le texte suivant : L’application que vous êtes sur le point d’installation vérifie les dernières mises à jour sur le Web. En cliquant sur J’accepte, vous autorisez l’application pour rechercher les mises à jour automatiquement sur Internet.  
   
 7.  Fermez l’application, ou cliquez sur Annuler.  
   
-     L’application affiche une erreur : une erreur s’est produite lors de l’installation des composants système pour *ApplicationName*. Le programme d’installation ne peut pas continuer jusqu'à ce que tous les composants système ont été correctement installés.  
+     L’application affiche une erreur : Une erreur s’est produite lors de l’installation des composants système pour *ApplicationName*. Le programme d’installation ne peut pas continuer jusqu'à ce que tous les composants système ont été correctement installés.  
   
-8.  Cliquez sur Détails pour afficher le message d’erreur suivant : mettre à jour de consentement boîte de dialogue composant n’a pas pu installer avec le message d’erreur suivant : « l’accord de mise à jour automatique n’est pas accepté. » Impossible d’installer les composants suivants :-boîte de dialogue de consentement de mise à jour  
+8.  Cliquez sur Détails pour afficher le message d’erreur suivant : Dialogue de consentement de mise à jour de composant n’a pas pu installer avec le message d’erreur suivant : « L’accord de mise à jour automatique n’est pas accepté. » Impossible d’installer les composants suivants :-boîte de dialogue de consentement de mise à jour  
   
 9. Cliquez sur **Fermer**.  
   
@@ -286,7 +281,7 @@ Vous pouvez configurer des applications ClickOnce à mettre à jour automatiquem
   
 1.  Dans **l’Explorateur de solutions**, cliquez sur le nom de votre application que vous souhaitez déployer.  
   
-2.  Sur le **projet** menu, cliquez sur *nom_projet* **propriétés**.  
+2.  Dans le menu **Projet**, cliquez sur **Propriétés** de *NomProjet*.  
   
 3.  Cliquez sur le **publier** page, puis cliquez sur **publier maintenant**.  
   
@@ -298,7 +293,7 @@ Vous pouvez configurer des applications ClickOnce à mettre à jour automatiquem
   
 6.  Lisez le contrat de licence logiciel, puis cliquez sur **Accept**.  
   
-     L’application de la boîte de dialogue de consentement de mise à jour apparaît et affiche le texte suivant : l’application que vous êtes sur le point d’installation vérifie les dernières mises à jour sur le Web. En cliquant sur J’accepte, vous autorisez l’application pour rechercher les mises à jour automatiquement sur Internet.  
+     L’application de la boîte de dialogue de consentement de mise à jour apparaît et affiche le texte suivant : L’application que vous êtes sur le point d’installation vérifie les dernières mises à jour sur le Web. En cliquant sur J’accepte, vous autorisez l’application pour rechercher les mises à jour automatiquement sur Internet.  
   
 7.  Cliquez sur **J’accepte**, puis cliquez sur **continuer**.  
   
@@ -309,9 +304,6 @@ Vous pouvez configurer des applications ClickOnce à mettre à jour automatiquem
 ## <a name="see-also"></a>Voir aussi  
  [Prérequis pour le déploiement d’applications](../deployment/application-deployment-prerequisites.md)   
  [Création de packages de programme d’amorçage](../deployment/creating-bootstrapper-packages.md)   
- [Comment : créer un manifeste de produit](../deployment/how-to-create-a-product-manifest.md)   
- [Comment : créer un manifeste de Package](../deployment/how-to-create-a-package-manifest.md)   
+ [Guide pratique pour Créer un manifeste de produit](../deployment/how-to-create-a-product-manifest.md)   
+ [Guide pratique pour Créer un manifeste de Package](../deployment/how-to-create-a-package-manifest.md)   
  [Informations de référence sur le schéma de produit et de package](../deployment/product-and-package-schema-reference.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Exemple de code HTML, CSS et JavaScript de déboguer | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,23 +13,23 @@ ms.assetid: 51893967-98c8-4141-ba40-03646f221760
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9c4793747e85435b63361df03cdb011d38b214e6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 134b4e3c5195e9008d951062ec813a939d0d4fe6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51720786"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938049"
 ---
 # <a name="debug-html-css-and-javascript-sample-code"></a>Déboguer un exemple de code HTML, CSS et JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.png « windows_and_phone_content »)  
   
- Le code dans cette rubrique est l’exemple de fichier pour [Guide de démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md). Les erreurs présentes par conception dans le guide de démarrage rapide sont résolues dans cette version du code.  
+ Le code dans cette rubrique est l’exemple de fichier pour [Guide de démarrage rapide : Déboguer le code HTML et CSS](../debugger/quickstart-debug-html-and-css.md). Les erreurs présentes par conception dans le guide de démarrage rapide sont résolues dans cette version du code.  
   
 ## <a name="sample-code"></a>Exemple de code  
- Le code HTML suivant est utilisé dans le \<corps > balise dans le Guide de démarrage rapide.  
+ Le code HTML suivant est utilisé dans l’étiquette \<body> du guide de démarrage rapide.  
   
 ```html  
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -111,6 +106,3 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 ## <a name="see-also"></a>Voir aussi  
  [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)
-
-
-

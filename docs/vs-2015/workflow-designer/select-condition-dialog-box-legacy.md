@@ -1,11 +1,8 @@
 ---
 title: Sélectionnez la Condition, boîte de dialogue (hérité) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.ConditionBrowserDialog.UI
@@ -15,13 +12,13 @@ ms.assetid: fe3b415c-cb55-4295-b853-3f40765b28d0
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: bd45feec9fed576882aa665a2b0193a996884f54
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8ac5600f22239a751bddde528664eac052b82565
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897769"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952307"
 ---
 # <a name="select-condition-dialog-box-legacy"></a>Sélectionner la condition, boîte de dialogue (héritée)
 Cette rubrique décrit comment utiliser le **sélectionner la Condition** boîte de dialogue dans les anciennes [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -36,7 +33,7 @@ Cette rubrique décrit comment utiliser le **sélectionner la Condition** boîte
   
 - [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
   
-  Pour plus d’informations sur l’accès à la **sélectionner la Condition** boîte de dialogue, consultez [Comment : créer une Condition de règle déclarative (hérité)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).  
+  Pour plus d’informations sur l’accès à la **sélectionner la Condition** boîte de dialogue, consultez [Comment : Créer une Condition de règle déclarative (hérité)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).  
   
   Le tableau suivant décrit les éléments d’interface utilisateur utilisateur de la **sélectionner la Condition** boîte de dialogue.  
   
@@ -55,7 +52,7 @@ Cette rubrique décrit comment utiliser le **sélectionner la Condition** boîte
   
 ## <a name="see-also"></a>Voir aussi  
  [Boîte de dialogue de l’éditeur de conditions de règle (hérité)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)   
- [Comment : créer une Condition de règle déclarative (hérité)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)   
+ [Guide pratique pour Créer une Condition de règle déclarative (hérité)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)   
  [Utilisation de Conditions dans les Workflows](http://go.microsoft.com/fwlink?LinkID=65009)   
  [À l’aide de l’activité ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65066)   
  [À l’aide de l’activité IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65075)   

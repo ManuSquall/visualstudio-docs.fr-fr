@@ -1,12 +1,9 @@
 ---
 title: Gestionnaires d’événements propagent les modifications en dehors du modèle | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, events
@@ -14,13 +11,13 @@ ms.assetid: 0ac8d1e4-239f-4370-ba1d-3769bb38b8a5
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7bfddc0903c520469833a0f160444202edf07c32
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c723e0a2cc76b6432fc6f209a7edf4a988a0b3fd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823695"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953179"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Propagation de modifications en dehors du modèle par des gestionnaires d'événements
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -183,7 +180,7 @@ private static void AlbumTitleAdjuster(object sender,
 |ElementAdded|Une instance d’une classe de domaine, une relation de domaine, forme, connecteur ou diagramme est créée.|  
 |ElementDeleted|Un élément de modèle a été supprimé du répertoire d’éléments du magasin et n’est plus la source ou la cible d’une relation. L’élément n’est pas réellement supprimé de la mémoire, mais est conservée dans le cas d’une opération d’annulation ultérieure.|  
 |ElementEventsBegun|Appelé à la fin d’une transaction externe.|  
-|Événement ElementEventsEnded|Appelé lorsque tous les autres événements ont été traitées.|  
+|ElementEventsEnded|Appelé lorsque tous les autres événements ont été traitées.|  
 |ElementMoved|Un élément de modèle a été déplacé à partir de la partition d’un magasin vers un autre.<br /><br /> Cela n’est pas lié à l’emplacement d’une forme sur le diagramme.|  
 |ElementPropertyChanged|La valeur d’une propriété de domaine a changé. Cela est exécutée uniquement si les valeurs anciennes et nouvelles sont inégales.|  
 |RolePlayerChanged|Un des deux rôles (fin) d’une relation de fait référence à un nouvel élément.|  
@@ -194,7 +191,4 @@ private static void AlbumTitleAdjuster(object sender,
   
 ## <a name="see-also"></a>Voir aussi  
  [Propagation des modifications et réponse aux](../modeling/responding-to-and-propagating-changes.md)   
- [Exemple de code : diagrammes de Circuit](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-
-
-
+ [Exemple de code : Diagrammes de circuit](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

@@ -1,26 +1,21 @@
 ---
 title: Plug-ins de contrôle de source | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, reference
 ms.assetid: 964980ca-21c5-4706-8535-6ea23e1c9cc9
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e7c51efc30251a177e07b7acf3e4c62821cb9488
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ff124246c3dc80074432e40eebf6e00e8b90b3f7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745454"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950825"
 ---
 # <a name="source-control-plug-ins"></a>Plug-ins de contrôle de code source
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,11 +56,11 @@ La section de référence du SDK de plug-in de contrôle de code Source contient
  [Glossaire](../extensibility/source-control-plug-in-glossary.md)  
  Fournit des termes utiles et leurs définitions pour la lecture de la documentation du SDK de plug-in de contrôle de code Source.  
   
- [Guide pratique pour désactiver les avertissements de compatibilité pour les plug-ins de contrôle de code source](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md)  
+ [Guide pratique pour Désactiver les avertissements de compatibilité pour les Plug-ins de contrôle de code Source](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md)  
  Décrit comment désactiver les avertissements.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
- [Exemple de plug-in de contrôle de code source](http://msdn.microsoft.com/en-us/61de7d2b-71db-451e-8e3e-d41b11c7a4ca)  
+ [Exemple de plug-in de contrôle de code source](http://msdn.microsoft.com/61de7d2b-71db-451e-8e3e-d41b11c7a4ca)  
  Fournit un exemple de fonctionnalité de plug-in de contrôle de code source.  
   
  [Guide de test pour les plug-ins de contrôle de code source](../extensibility/internals/test-guide-for-source-control-plug-ins.md)  
@@ -76,4 +71,3 @@ La section de référence du SDK de plug-in de contrôle de code Source contient
   
  [Référence du Kit de développement logiciel (SDK) Visual Studio](../extensibility/visual-studio-sdk-reference.md)  
  Présente une liste de rubriques de référence.
-

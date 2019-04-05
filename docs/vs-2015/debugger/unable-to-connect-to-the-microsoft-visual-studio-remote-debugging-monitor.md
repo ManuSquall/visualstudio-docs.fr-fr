@@ -1,14 +1,9 @@
 ---
 title: Impossible de se connecter à Microsoft Visual Studio Remote Debugging Monitor | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.error.remote_debug
 dev_langs:
@@ -20,15 +15,15 @@ ms.assetid: a1d959fc-3817-491c-831b-e6b768a3877a
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 139c650ac61b9312b069cc2e19fa66d3673ca30f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e5e011ccd047551e7ea6cf1426b4118c3ad879f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733016"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950292"
 ---
-# <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Impossible de se connecter à l’ordinateur Microsoft Visual Studio Remote Debugging Monitor
+# <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Impossible de se connecter à l'ordinateur Microsoft Visual Studio Remote Debugging Monitor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ce message d’erreur apparaît lorsque vous entrez un nom non valide pour Visual Studio Remote Debugging Monitor dans la boîte de dialogue **Attacher au processus** . Le nom Remote Debugging Monitor est généralement le même que celui de l’ordinateur auquel vous tentez de vous connecter pour le débogage distant. Ce message peut survenir, car l’ordinateur distant n’existe pas sur le réseau, Remote Debugging Monitor n’est pas installé correctement sur l’ordinateur distant ou l’ordinateur distant est inaccessible en raison de problèmes de réseau ou de la présence d’un pare-feu.  
@@ -65,7 +60,7 @@ Ce message d’erreur apparaît lorsque vous entrez un nom non valide pour Visua
   
 -   Vous pouvez arrêter le débogueur distant et le redémarrer avec le compte que vous utilisez sur l’ordinateur local.  
   
--   Vous pouvez démarrer le débogueur distant à partir de la ligne de commande avec le **/ allow \<nom d’utilisateur >** paramètre : `msvsmon /allow <username@computer>`  
+-   Vous pouvez démarrer le débogueur distant à partir de la ligne de commande à l’aide du paramètre **/allow \<nom_utilisateur>**  : `msvsmon /allow <username@computer>`  
   
 -   Vous pouvez ajouter l’utilisateur aux autorisations du débogueur distant (dans la fenêtre du débogueur distant, **Outils / Autorisations**).  
   
@@ -90,6 +85,3 @@ Ce message d’erreur apparaît lorsque vous entrez un nom non valide pour Visua
   
 ## <a name="see-also"></a>Voir aussi  
  [Remote Debugging](../debugger/remote-debugging.md)
-
-
-

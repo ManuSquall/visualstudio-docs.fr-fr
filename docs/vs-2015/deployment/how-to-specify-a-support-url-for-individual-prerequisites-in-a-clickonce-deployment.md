@@ -1,14 +1,9 @@
 ---
-title: 'Comment : spécifier une URL de prise en charge pour chaque composant requis dans un déploiement ClickOnce | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Spécifiez une URL de prise en charge pour chaque composant requis dans un déploiement ClickOnce | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,15 +15,15 @@ ms.assetid: 590742c3-a286-4160-aa75-7a441bb2207b
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: bdd366cb8ac86f20e7457178f63aa553a0814158
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 12d85a05e8210e292369f4c3a97fbb85dc48d821
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831573"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949648"
 ---
-# <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Comment : spécifier une URL du support technique pour chaque composant requis lors d'un déploiement ClickOnce
+# <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Procédure : Spécifiez une URL de prise en charge pour chaque composant requis dans un déploiement ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] déploiement peut tester plusieurs conditions préalables qui doivent être disponibles sur l’ordinateur client pour le [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application de s’exécuter. Citons notamment la version minimale requise de la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], la version du système d’exploitation et tous les assemblys qui doivent être préinstallés dans le global assembly cache (GAC). [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], toutefois, ne peut pas installer un de ces conditions préalables lui-même ; Si une condition préalable n’est trouvée, il simplement arrête l’installation et affiche une boîte de dialogue expliquant pourquoi l’installation a échoué.  
@@ -67,7 +62,7 @@ Un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] déploiement peut test
   
     ```  
       <dependency>  
-        <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" supportUrl=" http://www.adatum.com/MyApplication/missingSampleGACAssembly.htm">  
+        <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" supportUrl=" http://www.adatum.com/MyApplication/missingSampleGACAssembly.htm">  
           <assemblyIdentity name="SampleGACAssembly" version="5.0.0.0" publicKeyToken="04529dfb5da245c5" processorArchitecture="msil" language="neutral" />  
         </dependentAssembly>  
       </dependency>  
@@ -84,17 +79,14 @@ Un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] déploiement peut test
     </compatibleFrameworks>  
     ```  
   
-7.  Une fois que vous avez modifié manuellement le manifeste d’application, vous devez signer à nouveau le manifeste d’application à l’aide de votre certificat numérique, puis mettre à jour et signer à nouveau le manifeste de déploiement. Vous devez utiliser Mage.exe ou MageUI.exe SDK pour accomplir cette tâche, comme la régénération de ces fichiers à l’aide des outils [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] efface vos modifications manuelles. Pour plus d’informations sur l’utilisation de Mage.exe pour resigner des manifestes, consultez [Comment : re-sign Application and Deployment Manifests](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+7.  Une fois que vous avez modifié manuellement le manifeste d’application, vous devez signer à nouveau le manifeste d’application à l’aide de votre certificat numérique, puis mettre à jour et signer à nouveau le manifeste de déploiement. Vous devez utiliser Mage.exe ou MageUI.exe SDK pour accomplir cette tâche, comme la régénération de ces fichiers à l’aide des outils [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] efface vos modifications manuelles. Pour plus d’informations sur l’utilisation de Mage.exe pour resigner des manifestes, consultez [Comment : Signer à nouveau les manifestes de déploiement et d’Application](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="net-framework-security"></a>Sécurité .NET Framework  
  L’URL du support technique ne figure pas dans la boîte de dialogue si l’application est marquée pour s’exécuter en mode de confiance partielle.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Mage.exe (outil Manifest Generation and Editing)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
- [Procédure pas à pas : déploiement manuel d’une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
+ [Procédure pas à pas : Déploiement manuel d’une Application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
  [\<compatibleFrameworks > élément](../deployment/compatibleframeworks-element-clickonce-deployment.md)   
  [ClickOnce et Authenticode](../deployment/clickonce-and-authenticode.md)   
  [Prérequis pour le déploiement d’applications](../deployment/application-deployment-prerequisites.md)
-
-
-

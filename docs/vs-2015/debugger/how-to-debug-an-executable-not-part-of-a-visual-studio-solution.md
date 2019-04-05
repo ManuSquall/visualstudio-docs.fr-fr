@@ -1,14 +1,9 @@
 ---
-title: 'Comment : déboguer une partie non exécutable d’une Solution Visual Studio | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Déboguer une partie non exécutable d’une Solution Visual Studio | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -26,15 +21,15 @@ ms.assetid: 3ea176e8-1ce5-42c4-b7a2-abe3a2765033
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a7fb9b0a31f078ce197851bccb1f4c85f24408a0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 099f284838a74ce5e302d9ba6ba0974b85260e73
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798662"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950286"
 ---
-# <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>Comment : déboguer un fichier exécutable ne faisant pas partie d'une solution Visual Studio
+# <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>Procédure : Déboguer une partie non exécutable d’une Solution Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez être amené à déboguer un exécutable qui ne fait pas partie d'un projet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Il peut s'agir d'un exécutable créé en dehors de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou reçu de la part d'un tiers.  
@@ -73,7 +68,4 @@ Vous pouvez être amené à déboguer un exécutable qui ne fait pas partie d'un
 ## <a name="see-also"></a>Voir aussi  
  [Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md)   
  [Sécurité du débogueur](../debugger/debugger-security.md)   
- [Fichiers DBG](http://msdn.microsoft.com/en-us/91e449e9-8b65-4123-960f-2107cd1f1cfd)
-
-
-
+ [Fichiers DBG](http://msdn.microsoft.com/91e449e9-8b65-4123-960f-2107cd1f1cfd)

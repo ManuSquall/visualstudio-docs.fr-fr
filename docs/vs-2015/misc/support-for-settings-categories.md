@@ -1,29 +1,24 @@
 ---
 title: Prise en charge des catégories de paramètres | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - settings, supporting with Visual Studio SDK
 - Visual Studio SDK, supporting settings
 ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
-manager: douge
-ms.openlocfilehash: 53abd3c9f35f16c2f2ae62e2c4f339a86477a8b3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b37fe476c7654cc21a3b81f4a68aa4abc0348bb1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244931"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948642"
 ---
 # <a name="support-for-settings-categories"></a>Prise en charge des catégories de paramètres
-Une catégorie de paramètres se compose d’un groupe d’options qui personnalisent l’environnement de développement intégré (IDE). Par exemple, des paramètres peuvent contrôler la disposition des fenêtres [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et le contenu des menus. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+Une catégorie de paramètres se compose d’un groupe d’options qui personnalisent l’environnement de développement intégré (IDE). Par exemple, des paramètres peuvent contrôler la disposition des fenêtres [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et le contenu des menus. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Dans le menu **Outils** , cliquez sur **Importation et exportation de paramètres** pour démarrer l’ **Assistant Importation et exportation de paramètres**. L’Assistant propose trois options : exporter, importer ou réinitialiser vos paramètres. Par exemple, si vous sélectionnez l’exportation, la page **Choisir les paramètres à exporter** de l’Assistant s’affiche.  
   
@@ -69,4 +64,4 @@ Une catégorie de paramètres se compose d’un groupe d’options qui personnal
  [Création d’une Page d’Options](../extensibility/creating-an-options-page.md)   
  [Exemples d’extensibilité Visual Studio](../misc/vssdk-samples.md)   
  [État du VSPackage](../misc/vspackage-state.md)   
- [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+ [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
