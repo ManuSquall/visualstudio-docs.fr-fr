@@ -1,13 +1,8 @@
 ---
 title: Format Specifiers in C++ | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -32,13 +27,13 @@ ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
 caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6634124e7dc0b50236a9fd6ff9c5c5388c3063bc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e7547f4c675bc7c68c61e86ef61a6285bfb65fb2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810518"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949112"
 ---
 # <a name="format-specifiers-in-c"></a>Spécificateurs de format en C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +68,7 @@ int main() {
   
 |Spécificateur|Format|Valeur d’espion d’origine|Valeur affichée|  
 |---------------|------------|--------------------------|---------------------|  
-|j|entier décimal|0x00000066|102|  
+|d|entier décimal|0x00000066|102|  
 |o|entier octal non signé|0x00000066|000000000146|  
 |x<br /><br /> **h**|entier hexadécimal|102|0xcccccccc|  
 |X<br /><br /> **H**|entier hexadécimal|102|0xcccccccc|  
@@ -88,13 +83,13 @@ int main() {
 |**s32**|chaîne UTF-32|\<emplacement > U « hello world »|U”hello world”|  
 |**s32b**|chaîne UTF-32 (sans guillemets)|\<emplacement > U « hello world »|hello world|  
 |**en**|enum|Saturday(6)|Saturday|  
-|**hv**|Type de pointeur : indique que la valeur de pointeur inspectée est le résultat de l’allocation de tas d’un tableau, par exemple, `new int[3]`.|\<emplacement > {\<premier membre >}|\<emplacement > {\<premier membre >, \<deuxième membre >,...}|  
-|**na**|Supprime l’adresse mémoire d’un pointeur vers un objet.|\<emplacement >, {membre = valeur...}|{member=value…}|  
+|**hv**|Type de pointeur : indique que la valeur de pointeur inspectée est le résultat de l’allocation de tas d’un tableau, par exemple, `new int[3]`.|\<emplacement>{\<premier membre>}|\<location>{\<first member>, \<second member>, …}|  
+|**na**|Supprime l’adresse mémoire d’un pointeur vers un objet.|\<location>, {member=value…}|{member=value…}|  
 |**nd**|Affiche uniquement les informations de classe de base, en ignorant les classes dérivées|`(Shape*) square` inclut les informations de classe de base et de classe dérivée|Affiche uniquement les informations de classe de base|  
 |hr|HRESULT ou code d’erreur Win32. (Le débogueur décodant automatiquement HRESULTs, le spécificateur n’est pas nécessaire dans ces cas-là.|S_OK|S_OK|  
 |wc|Indicateur de classe de fenêtre|0x0010|WC_DEFAULTCHAR|  
 |wm|Numéros de messages Windows|16|WM_CLOSE|  
-|!|format brut, ignorant toutes les personnalisations d’affichage de type de données|\<personnaliser la représentation sous forme de >|4|  
+|!|format brut, ignorant toutes les personnalisations d’affichage de type de données|\<représentation personnalisée>|4|  
   
 > [!NOTE]
 >  Quand le spécificateur de format **hv** est présent, le débogueur tente de déterminer la taille de la mémoire tampon et d’afficher le nombre d’éléments approprié. Comme il n’est pas toujours possible pour le débogueur de rechercher la taille exacte de la mémoire tampon d’un tableau, vous devez utiliser un spécificateur de taille `(pBuffer,[bufferSize])` chaque fois que cela est possible. Le spécificateur de format **hv** est destiné aux scénarios dans lesquels la taille de la mémoire tampon n’est pas immédiatement disponible  
@@ -121,15 +116,15 @@ int main() {
 |**f**|virgule flottante signée|(3./2.), f|1,500000|  
 |**e**|notation scientifique signée|(3.0/2.0)|1.500000e+000|  
 |**g**|virgule flottante signée ou notation scientifique signée, selon ce qui est le plus court|(3.0/2.0)|1,5|  
-|c|caractère unique|\<emplacement >|101 ’e’|  
-|s|const char*|\<emplacement >|"hello world"|  
-|su|const wchar_t*<br /><br /> char16_t const\*|\<emplacement >|L"hello world"|  
-|sub|const wchar_t*<br /><br /> char16_t const\*|\<emplacement >|hello world|  
-|s8|const char*|\<emplacement >|"hello world"|  
+|c|caractère unique|\<emplacement>|101 ’e’|  
+|s|const char*|\<emplacement>|"hello world"|  
+|su|const wchar_t*<br /><br /> const char16_t\*|\<emplacement>|L"hello world"|  
+|sub|const wchar_t*<br /><br /> const char16_t\*|\<emplacement>|hello world|  
+|s8|const char*|\<emplacement>|"hello world"|  
 |hr|HRESULT ou code d’erreur Win32. (Le débogueur décodant automatiquement HRESULTs, le spécificateur n’est pas nécessaire dans ces cas-là.|S_OK|S_OK|  
 |wc|Indicateur de classe de fenêtre.|0x00000040,|WC_DEFAULTCHAR|  
 |wm|Numéros de messages Windows|0x0010|WM_CLOSE|  
-|!|format brut, ignorant toutes les personnalisations d’affichage de type de données|\<personnaliser la représentation sous forme de >|4|  
+|!|format brut, ignorant toutes les personnalisations d’affichage de type de données|\<représentation personnalisée>|4|  
   
 ###  <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Emplacements de mémoire des spécificateurs de format dans le débogage d’interopérabilité avec C++/CLI  
  Le tableau suivant contient les symboles de mise en forme pour les emplacements de mémoire. Vous pouvez utiliser un spécificateur d’emplacement de mémoire avec n’importe quelle valeur ou expression correspondant à un emplacement.  
@@ -149,9 +144,4 @@ int main() {
   
 |Spécificateur|Format|Expression|Valeur affichée|  
 |---------------|------------|----------------|---------------------|  
-|n|entier décimal|pBuffer[32]|Affiche `pBuffer` sous forme d’un tableau de 32 éléments.|
-
-
-
-
-
+|n|entier décimal|pBuffer[32]|Affiche `pBuffer` sous forme d’un tableau de 32 éléments.|
