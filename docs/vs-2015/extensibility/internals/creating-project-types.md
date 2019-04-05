@@ -1,27 +1,22 @@
 ---
 title: Création de Types de projet | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, new
 - projects [Visual Studio SDK], new project types
 ms.assetid: bdb2d22e-d622-450c-bb2d-98152a745fcf
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 58b31e363d78af7902e6174c9683b7e794031263
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bbe65d1615603e4dc7546dbfe3530093c62528e5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756210"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953839"
 ---
 # <a name="creating-project-types"></a>Création de types de projets
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Vous pouvez étendre [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] en créant 
  [Décisions de conception de type de projet](../../extensibility/internals/project-type-design-decisions.md)  
  Décrit l’élément, persistance d’un fichier projet et les décisions de conception mécanique d’engagement que vous avez à faire avant de créer un nouveau type de projet.  
   
- [Liste de vérification : création de nouveaux types de projets](../../extensibility/internals/checklist-creating-new-project-types.md)  
+ [Liste de vérification : Créer de nouveaux Types de projet](../../extensibility/internals/checklist-creating-new-project-types.md)  
  Fournit une vue d’ensemble des étapes à suivre pour créer un nouveau type de projet qui prend en charge les tâches de programmation en tant que la modification du code et compilation, création, le débogage et déploiement d’applications dans votre projet.  
   
  [Création d’instances de projets à l’aide de fabriques de projets](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)  
@@ -65,4 +60,3 @@ Vous pouvez étendre [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] en créant 
   
  [Types de projets](../../extensibility/internals/project-types.md)  
  Explique comment utiliser les projets pour modifier le code, compiler et générer du code, exécuter et déboguer du code et fournit des liens vers des rubriques détaillées sur la création de types de projets.
-

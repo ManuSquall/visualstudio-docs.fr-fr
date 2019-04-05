@@ -1,14 +1,9 @@
 ---
-title: 'Comment : arrêter des modifications de Code | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Arrêter des modifications de Code | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,15 +19,15 @@ ms.assetid: 9e72a50c-bb0a-4eaa-9ac1-d00930b68d38
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 906c115342661ddbe90c0ffbf24bf58da6ae1413
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ba3ee5d8ee04b4a0f2cd360d6b213c69c6f8d1bc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787534"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953611"
 ---
-# <a name="how-to-stop-code-changes"></a>Comment : arrêter des modifications de code
+# <a name="how-to-stop-code-changes"></a>Procédure : Arrêter des modifications de code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pendant que Modifier & Continuer est en train d'appliquer les modifications du code, vous pouvez arrêter l'opération.  
@@ -42,7 +37,7 @@ Pendant que Modifier & Continuer est en train d'appliquer les modifications du c
   
 ### <a name="to-stop-applying-code-changes"></a>Pour arrêter d'appliquer les modifications du code  
   
-- Choisissez **cesser d’appliquer les modifications du Code** à partir de la **déboguer** menu.  
+- Dans le menu **Déboguer**, cliquez sur **Cesser d’appliquer les modifications du code**.  
   
   Cet élément de menu est visible uniquement lorsque les modifications du code sont appliquées.  
   
@@ -51,6 +46,3 @@ Pendant que Modifier & Continuer est en train d'appliquer les modifications du c
 ## <a name="see-also"></a>Voir aussi  
  [Modifier & Continuer](../debugger/edit-and-continue.md)   
  [Modifier & Continuer, Débogage, Boîte de dialogue Options](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 'Comment : spécifier les paramètres du débogueur | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Spécifiez les paramètres du débogueur | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -27,15 +22,15 @@ ms.assetid: ea172841-7fef-47bf-bd02-e7da4c3c7109
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d2e9213605fb351ab44e90c0885bcb556d10b695
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4ad4e95f9032c3182da3fe59cee16e4ccc3066c4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757625"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953547"
 ---
-# <a name="how-to-specify-debugger-settings"></a>Comment : spécifier les paramètres du débogueur
+# <a name="how-to-specify-debugger-settings"></a>Procédure : spécifier les paramètres du débogueur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pouvez utiliser divers paramètres pour spécifier le comportement du débogueur, notamment le mode d'affichage des variables, la présence ou non des avertissements, la définition des points d'arrêt, ainsi que la manière dont les programmes sont affectés par les interruptions. Vous spécifiez les paramètres du débogueur dans la boîte de dialogue **Options**.  
@@ -57,6 +52,3 @@ Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pouvez utiliser divers p
  [Modifier & Continuer, Débogage, Boîte de dialogue Options](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
  [Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md)   
  [Macros courantes pour les propriétés et les commandes de génération](http://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b)
-
-
-

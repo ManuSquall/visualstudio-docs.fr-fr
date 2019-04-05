@@ -1,21 +1,17 @@
 ---
 title: Manifeste au Code | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 caps.latest.revision: 5
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e07700b73c4f419e5dd0fa31c5e2aad9f3d6693d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1eca19210be8001c56d14213d5efcde358f58b50
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758222"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951972"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,10 +28,10 @@ Le manifeste de l’outil du Code est une application console qui prend un fichi
 ||||  
 |-|-|-|  
 |**Nom du commutateur**|**Notes**|**Obligatoire ou facultatif**|  
-|/ manifeste|Le chemin d’accès au manifeste de l’image à utiliser pour créer ou mettre à jour le wrapper de code.|Obligatoire|  
-|/Language|Le langage dans lequel générer le wrapper de code.<br /><br /> Valeurs valides : CPP, C++, CS, CSharp, c#, VB ou VSCT les valeurs respectent la casse.<br /><br /> Pour le langage VSCT options option, /monikerClass, /classAccess et/Namespace sont ignorées.|Obligatoire|  
-|/imageIdClass|Le nom de l’imageIdClass et le fichier associé, créé par l’outil. Pour l’option de langage C++, seuls les fichiers .h sont générés.<br /><br /> Par défaut : \<chemin du manifeste > \MyImageIds.\< Lang Ext >|Facultatif|  
-|/monikerClass|Le nom de la monikerClass et le fichier associé, créé par l’outil. Pour l’option de langage C++, seuls les fichiers .h sont générés. Ceci est ignoré pour le langage VSCT.<br /><br /> Par défaut : \<chemin du manifeste > \MyMonikers.\< Lang Ext >|Facultatif|  
+|/manifest|Le chemin d’accès au manifeste de l’image à utiliser pour créer ou mettre à jour le wrapper de code.|Obligatoire|  
+|/Language|Le langage dans lequel générer le wrapper de code.<br /><br /> Valeurs valides : CPP, C++, CS, CSharp, C#, VB ou VSCT les valeurs respectent la casse.<br /><br /> Pour le langage VSCT options option, /monikerClass, /classAccess et/Namespace sont ignorées.|Obligatoire|  
+|/imageIdClass|Le nom de l’imageIdClass et le fichier associé, créé par l’outil. Pour l’option de langage C++, seuls les fichiers .h sont générés.<br /><br /> Par défaut : \<Chemin du manifeste > \MyImageIds. \<Lang Ext >|Facultatif|  
+|/monikerClass|Le nom de la monikerClass et le fichier associé, créé par l’outil. Pour l’option de langage C++, seuls les fichiers .h sont générés. Ceci est ignoré pour le langage VSCT.<br /><br /> Par défaut : \<Chemin du manifeste > \MyMonikers. \<Lang Ext >|Facultatif|  
 |/classAccess|Le modificateur d’accès pour l’imageIdClass et le monikerClass. Assurez-vous que le modificateur d’accès est valide pour le langage donné. Ceci est ignoré pour l’option de langage VSCT.<br /><br /> Par défaut : Public|Facultatif|  
 |/ namespace|L’espace de noms défini dans le wrapper de code. Ceci est ignoré pour l’option de langage VSCT. Soit «. » ou ' ::' sont des séparateurs d’espace de noms valide, quel que soit l’option de langage choisi.<br /><br /> Par défaut : MyImages|Facultatif|  
 |/noLogo|Définition de cet indicateur, les informations de copyright et de produit à partir de l’impression s’arrête.|Facultatif|  
@@ -44,11 +40,11 @@ Le manifeste de l’outil du Code est une application console qui prend un fichi
   
  **Exemples**  
   
--   / Language : CSharp de ManifestToCode /manifest:D:\MyManifest.imagemanifest  
+-   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp  
   
 -   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:C++ /namespace : mon :: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:VSCT /imageIdClass:MyImageIds  
+-   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds  
   
 ## <a name="notes"></a>Notes  
   
@@ -236,4 +232,3 @@ End Namespace
   </Symbols>  
 </CommandTable>  
 ```
-

@@ -1,25 +1,20 @@
 ---
 title: Utilisation des données XML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 465cd132-2e36-435d-920b-50b767c2217c
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6a67caa1b7c2246671d4e5a8e456a246b3662acd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 3467b33a7dd152de439d7859c89b5b3707fea7ab
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233468"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951935"
 ---
 # <a name="working-with-xml-data"></a>Utilisation de données XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ XML et les technologies y associées jouent un grand rôle dans le traitement de
 ## <a name="xml-editor"></a>Éditeur XML  
  L'éditeur XML est utilisé pour modifier des documents XML. Il offre une vérification complète de la syntaxe XML 1.0, une validation des schémas en cours de frappe, un codage de couleurs et IntelliSense. Si un schéma ou une définition de type de document est fournie, IntelliSense l'utilise pour répertorier les éléments et attributs possibles.  
   
- Autres fonctions de l'éditeur :  
+ Autres fonctionnalités de l’éditeur :  
   
 -   Prise en charge des extraits XML, notamment des extraits générés par schéma  
   
@@ -64,17 +59,11 @@ XML et les technologies y associées jouent un grand rôle dans le traitement de
  [Débogage XSLT](../xml-tools/debugging-xslt.md)  
  Explique comment déboguer des feuilles de style à l'aide du débogueur Visual Studio.  
   
- [Référence du standard XML](http://msdn.microsoft.com/en-us/79c78508-c9d0-423a-a00f-672e855de401)  
- Fournit des informations sur les technologies XML, y compris le langage XML, la définition de type de document (DTD), le langage XSD (XML Schema Definition) et XSLT.  
+ [Référence du standard XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
+ Fournit des informations sur les technologies XML, y compris le langage XML, la définition de type de document (DTD), le langage XSD (XML Schema Definition) et XSLT.
   
- [Création et modification de datasets typés](../data-tools/creating-and-editing-typed-datasets.md)  
- Explique les outils disponibles pour créer des jeux de données au moment du design.  
-  
- [Services Web XML en Code managé](http://msdn.microsoft.com/en-us/c9a7dc25-3e68-4723-bfb7-de4320830196)  
- Explique comment créer et déployer des services web XML et y accéder.  
+ [Services Web XML en Code managé](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196)  
+ Explique comment créer et déployer des services Web XML et y accéder.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Outils XML dans Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)
-
-
-

@@ -1,12 +1,9 @@
 ---
 title: Vue d’ensemble des Applications de données multicouches | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +18,13 @@ ms.assetid: 1020581d-eaaa-41a2-aca4-bf4c212895f6
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8a5f6c89f6b71ecd2902877757f7d852c0e51088
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9c3d635750a01838cc40c9af8ec17465b25fc438
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852919"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953807"
 ---
 # <a name="n-tier-data-applications-overview"></a>Vue d'ensemble des applications de données multicouches
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +32,11 @@ ms.locfileid: "49852919"
   
 N-* de couche données qui sont des données applications sont divisées en plusieurs *niveaux*. Également appelées « applications distribuées » et « applications à plusieurs niveaux », avec applications multicouches séparent le traitement en couches discrètes qui sont distribuées entre le client et le serveur. Lorsque vous développez des applications qui accèdent aux données, vous devez avoir une séparation claire entre les différentes couches qui composent l’application.  
   
- Une application multicouche classique inclut une couche présentation, une couche intermédiaire et une couche de données. Pour séparer plusieurs couches dans une application multicouche, la plus simple consiste à créer des projets distincts pour chaque niveau que vous souhaitez inclure dans votre application. Par exemple, la couche de présentation peut être une application Windows Forms, tandis que la logique d’accès aux données peut être une bibliothèque de classes située dans la couche intermédiaire. En outre, la couche de présentation peut communiquer avec la logique d’accès aux données dans la couche intermédiaire via un service tel qu’un service. La séparation des composants d'application en couches distinctes renforce la facilité de maintenance et l'évolutivité de l'application. Pour cela, l’activation facilitant l’adoption de nouvelles technologies qui peuvent être appliqués à une couche unique sans avoir à reconcevoir toute la solution. En outre, avec applications multicouches stockent généralement les informations sensibles dans la couche intermédiaire, ce qui assure l’isolation de la couche de présentation.  
+ Une application multiniveaux classique inclut une couche Présentation, une couche intermédiaire et une couche Données. Pour séparer plusieurs couches dans une application multicouche, la plus simple consiste à créer des projets distincts pour chaque niveau que vous souhaitez inclure dans votre application. Par exemple, la couche de présentation peut être une application Windows Forms, tandis que la logique d’accès aux données peut être une bibliothèque de classes située dans la couche intermédiaire. En outre, la couche de présentation peut communiquer avec la logique d’accès aux données dans la couche intermédiaire via un service tel qu’un service. La séparation des composants d'application en couches distinctes renforce la facilité de maintenance et l'évolutivité de l'application. Pour cela, l’activation facilitant l’adoption de nouvelles technologies qui peuvent être appliqués à une couche unique sans avoir à reconcevoir toute la solution. En outre, avec applications multicouches stockent généralement les informations sensibles dans la couche intermédiaire, ce qui assure l’isolation de la couche de présentation.  
   
  Visual Studio contient plusieurs fonctionnalités pour aider les développeurs à créer des applications à plusieurs niveaux :  
   
--   Le [création et modification de données typés](../data-tools/creating-and-editing-typed-datasets.md) fournit un **DataSet Project** propriété qui vous permet de séparer le jeu de données (couche d’entité de données) et `TableAdapter`s (couche d’accès aux données) en discrètes projets.  
+-   Le Concepteur de DataSet fournit un **DataSet Project** propriété qui vous permet de séparer le jeu de données (couche d’entité de données) et `TableAdapter`s (couche d’accès aux données) dans des projets distincts.  
   
 -   Le [outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fournit des paramètres pour générer les classes DataContext et les données dans les espaces de noms distincts. Cela permet une séparation logique de l’accès aux données et couches d’entité de données.  
   
@@ -70,7 +67,7 @@ N-* de couche données qui sont des données applications sont divisées en plus
   L’illustration suivante montre les fonctionnalités et technologies qui sont disponibles dans Visual Studio et où ils peuvent être intégrées dans la couche intermédiaire d’une application multiniveau.  
   
   ![Intermédiaire des composants de la couche](../data-tools/media/ntiermid.png "NtierMid")  
-  Niveau intermédiaire  
+  Couche intermédiaire  
   
   En règle générale, la couche intermédiaire se connecte à la couche données à l’aide d’une connexion de données. Cette connexion de données est généralement stockée dans le composant d’accès aux données.  
   
@@ -89,7 +86,7 @@ Couche Données
   
  [Guide pratique pour séparer les datasets et les TableAdapters en différents projets](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)  
   
- [Procédure pas à pas : création d’une application de données multiniveau](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
+ [Procédure pas à pas : Création d’une application de données multiniveaux](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
   
  [Procédure pas à pas : Ajout d’une Validation à une Application de données multicouches](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
   
@@ -101,4 +98,3 @@ Couche Données
  [Mise à jour hiérarchique](../data-tools/hierarchical-update.md)   
  [Outils de dataset dans Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)   
  [Accès aux données dans Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
-

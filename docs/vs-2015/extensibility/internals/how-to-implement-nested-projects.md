@@ -1,29 +1,24 @@
 ---
-title: 'Comment : implémenter des projets imbriqués | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Implémenter des projets imbriqués | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, implementing
 - projects [Visual Studio SDK], nesting
 ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8a392b8b336c57c47055357147075f29ba173d8f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5100fb42cba7c993861ef5b9fa0682400b0cfa4a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810128"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952572"
 ---
-# <a name="how-to-implement-nested-projects"></a>Comment : implémenter des projets imbriqués
+# <a name="how-to-implement-nested-projects"></a>Procédure : Implémenter des projets imbriqués
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Lorsque vous créez un type de projet imbriqué il sont un plusieurs étapes supplémentaires qui doivent être implémenté. Un projet parent prend en charge certaines responsabilités de mêmes que la solution dispose de ses projets imbriqués (enfants). Le projet parent est un conteneur de projets similaires à une solution. En particulier, il existe plusieurs événements qui doivent être déclenchés par la solution et par les projets parent pour générer la hiérarchie de projets imbriqués. Ces événements sont décrits dans le processus suivant pour la création de projets imbriqués.  
@@ -99,4 +94,3 @@ Lorsque vous créez un type de projet imbriqué il sont un plusieurs étapes sup
  [Liste de vérification : Créer de nouveaux Types de projet](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Paramètres de contexte](../../extensibility/internals/context-parameters.md)   
  [Fichier Assistant (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
-

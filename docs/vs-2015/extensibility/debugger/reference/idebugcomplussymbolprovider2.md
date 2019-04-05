@@ -1,26 +1,21 @@
 ---
 title: IDebugComPlusSymbolProvider2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider2 interface
 ms.assetid: fa2f9b49-03ad-43c7-92d6-6dcb9c3d0531
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2fd160ad4ac59e6e479512f9183a4cddb5b0ec55
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 868528d5fd7d54f0a515a32895646b0cb94b26ce
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795510"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951808"
 ---
 # <a name="idebugcomplussymbolprovider2"></a>IDebugComPlusSymbolProvider2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -47,9 +42,8 @@ IDebugComPlusSymbolProvider2 : IDebugComPlusSymbolProvider
 |[LoadSymbolsWithCorModule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolswithcormodule.md)|Compte tenus des symboles de débogage de charges le **ICorDebugModule** objet.|  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : Sh.h  
+ En-tête : SH.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
-
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll

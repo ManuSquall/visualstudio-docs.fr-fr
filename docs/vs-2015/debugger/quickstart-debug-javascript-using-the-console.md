@@ -1,14 +1,9 @@
 ---
 title: 'Démarrage rapide : Déboguer du code JavaScript à l’aide de la console | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.JavaScriptConsole
 dev_langs:
@@ -24,15 +19,15 @@ ms.assetid: ea7adb71-52b6-4a5a-9346-98ca94b06bd7
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 61f36594b4158c95621ec240fd7a883accd259a8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bce2eae7c9df527c9b40e8d7f68bda68033449f8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802595"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953458"
 ---
-# <a name="quickstart-debug-javascript-using-the-console"></a>Démarrage rapide : déboguer du code JavaScript à l’aide de la console
+# <a name="quickstart-debug-javascript-using-the-console"></a>Démarrage rapide : Déboguer du code JavaScript à l’aide de la console
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.png « windows_and_phone_content »)  
@@ -66,7 +61,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 > [!TIP]
 >  Si la fenêtre de la console JavaScript est fermée, sélectionnez **Déboguer**>**Fenêtres** > **Console JavaScript** pour la rouvrir. La fenêtre s’ouvre uniquement pendant une session de débogage de script.  
   
- À l’aide de la fenêtre de la console JavaScript, vous pouvez interagir avec votre application sans interrompre et redémarrer le débogueur. Pour plus d’informations, consultez [actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md). Pour plus d’informations sur les fonctionnalités, comme à l’aide de l’Explorateur DOM et la définition des points d’arrêt, de débogage de JavaScript, consultez [Guide de démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md) et [déboguer des applications dans Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
+ À l’aide de la fenêtre de la console JavaScript, vous pouvez interagir avec votre application sans interrompre et redémarrer le débogueur. Pour plus d’informations, consultez [actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md). Pour plus d’informations sur les fonctionnalités, comme à l’aide de l’Explorateur DOM et la définition des points d’arrêt, de débogage de JavaScript, consultez [Guide de démarrage rapide : Déboguer le code HTML et CSS](../debugger/quickstart-debug-html-and-css.md) et [déboguer des applications dans Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
 ##  <a name="InteractiveConsole"></a> Débogage à l’aide de la fenêtre de la console JavaScript  
  La procédure suivante crée une application `FlipView` et montre comment déboguer interactivement une erreur de codage JavaScript.  
@@ -166,7 +161,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
      L’application fonctionne mais les images sont absentes. Les erreurs APPHOST dans la fenêtre de console JavaScript indiquent que les images sont absentes.  
   
-9. Alors que l’application `FlipView` est en cours d’exécution dans le simulateur ou l’émulateur Windows Phone, tapez `Data.items` dans l’invite d’entrée de la fenêtre de la console (à côté du symbole « >> »), puis appuyez sur Entrée.  
+9. Avec le `FlipView` application s’exécutant dans le simulateur ou l’émulateur Windows Phone, type `Data.items` dans l’invite d’entrée de la fenêtre de console (à côté le « >> » symbole) et appuyez sur ENTRÉE.  
   
      Un visualiseur pour l’objet `items` apparaît dans la fenêtre de la console. Cela indique que l’objet `items` a été instancié et qu’il est disponible dans le contexte de script actif. Dans la fenêtre de la console, cliquez sur les nœuds d’un objet pour afficher les valeurs des propriétés (ou utilisez les touches de direction). Si vous cliquez sur l’objet `items._data` , comme le montre l’illustration suivante, vous pouvez noter que les références à la source de l’image sont incorrectes, comme prévu. Les images par défaut (logo.png) sont encore présentes dans l’objet, et des images manquantes sont intercalées avec des images attendues.  
   
@@ -212,7 +207,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 18. Arrêtez le débogage en sélectionnant **Déboguer** > **Arrêter le débogage** ou en appuyant sur Maj+F5, puis corrigez le code source.  
   
-     Pour la page default.html complète contenant, exemple de code corrigé, consultez [déboguer du code HTML, CSS et JavaScript exemple de code](../debugger/debug-html-css-and-javascript-sample-code.md).  
+     Pour la page default.html complète contenant l’exemple de code corrigé, consultez [Déboguer un exemple de code HTML, CSS et JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md).  
   
 ##  <a name="InteractiveDebuggingBreakMode"></a> Débogage interactif et mode arrêt  
  Utilisez des points d’arrêt et effectuez une exécution pas-à-pas du code pendant que vous utilisez les outils de débogage JavaScript comme la fenêtre de la console JavaScript. Lorsqu’un programme en cours d’exécution dans le débogueur rencontre un point d’arrêt, le débogueur suspend provisoirement l’exécution du programme. Lorsque l’exécution est suspendue, votre programme passe du mode exécution au mode arrêt. Vous pouvez reprendre manuellement l’exécution à tout moment.  
@@ -274,9 +269,9 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 ##  <a name="BrowserSupport"></a> Navigateurs et plateformes pris en charge  
  La fenêtre de la console JavaScript est prise en charge sur les plateformes suivantes :  
   
--   Applications [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] et Windows Phone Store en JavaScript et HTML  
+-   Applications[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] et Windows Phone Store en JavaScript et HTML  
   
--   Internet Explorer 11 s'exécutant sur [!INCLUDE[win81](../includes/win81-md.md)]  
+-   Internet Explorer 11 s’exécutant sur [!INCLUDE[win81](../includes/win81-md.md)]  
   
 -   Internet Explorer 10 s’exécutant sur [!INCLUDE[win8](../includes/win8-md.md)]  
   
@@ -285,10 +280,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
  [JavaScript Console commands](../debugger/javascript-console-commands.md)   
  [Actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [Raccourcis clavier](../debugger/keyboard-shortcuts-html-and-javascript.md)   
- [Déboguer l’exemple de code HTML, CSS et JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
- [Démarrage rapide : Déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [Déboguer un exemple de code HTML, CSS et JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
+ [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Déboguer un contrôle WebView](../debugger/debug-a-webview-control.md)   
  [Support technique et accessibilité](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
-
-
-

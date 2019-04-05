@@ -1,25 +1,20 @@
 ---
 title: Débogueur Windows | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9a49df0f355672a3e49a61c0cfe51c02ba96e4be
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fc52b883388640ef0e24478a08202bd2991375fc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727130"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952983"
 ---
 # <a name="debugger-windows"></a>Fenêtres du débogueur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,10 +33,10 @@ Vous pouvez ouvrir la plupart des fenêtres du débogueur pendant le débogage d
 |Espion parallèle|Ctrl+Maj+D, (1, 2, 3, 4)|[Utilisation de la fenêtre Piles parallèles](../debugger/using-the-parallel-stacks-window.md)|  
 |Watch|Ctrl+Alt+W, (1, 2, 3, 4)|[Espion et Espion express, fenêtres](../debugger/watch-and-quickwatch-windows.md)|  
 |Espion express|Maj+F9|[Espion et Espion express, fenêtres](../debugger/watch-and-quickwatch-windows.md)|  
-|Auto|Ctrl+Alt+V, A|[Variable Windows](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
-|Variables locales|Ctrl+Alt+V, L|[Variable Windows](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
+|Auto|Ctrl+Alt+V, A|[Fenêtres de variables](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
+|Variables locales|Ctrl+Alt+V, L|[Fenêtres de variables](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
 |Immédiat|Ctrl+Alt+I|[Exécution, fenêtre](../ide/reference/immediate-window.md)|  
-|Python Debug Interactive|Maj+Alt+I|[Bien démarrer avec PTVS . Interactive Python](../python/getting-started-with-ptvs-interactive-python.md)|  
+|Python Debug Interactive|Maj+Alt+I|[Bien démarrer avec PTVS : Python interactive](../python/getting-started-with-ptvs-interactive-python.md)|  
 |Console JavaScript|Ctrl+Alt+V, C|[Démarrage rapide : déboguer du code JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|  
 |Explorateur DOM|Ctrl+Alt+V, D|[Déboguer la disposition avec l’Explorateur DOM](../debugger/debug-layout-using-dom-explorer.md)|  
 |Arborescence d’éléments visuels en direct|-|[Inspecter les propriétés XAML en phase de débogage](../debugger/inspect-xaml-properties-while-debugging.md)|  
@@ -56,8 +51,3 @@ Vous pouvez ouvrir la plupart des fenêtres du débogueur pendant le débogage d
   
 ## <a name="see-also"></a>Voir aussi  
  [Principes de base du débogueur](../debugger/debugger-basics.md)
-
-
-
-
-

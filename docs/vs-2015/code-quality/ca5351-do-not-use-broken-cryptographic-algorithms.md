@@ -1,24 +1,19 @@
 ---
 title: CA5351 N’utilisez pas les algorithmes de chiffrement cassés | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 ms.assetid: 483f51b3-e186-4433-b48e-5ca24a9a9c94
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7067d1d08be6de121986c60ead67086a11548ea8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0b8129b4ff946658c5e1b4f24c57ca77cb50e14a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889813"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951777"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 N’utilisez pas les algorithmes de chiffrement cassés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ ms.locfileid: "49889813"
 ## <a name="rule-description"></a>Description de la règle  
  Les algorithmes de chiffrement cassés ne sont pas considérés comme sécurisés, et leur utilisation doit être déconseillée. L’algorithme de hachage MD5 est vulnérable à des attaques par collision connues, bien que la vulnérabilité varie en fonction du contexte d’utilisation.  Les algorithmes de hachage utilisés pour garantir l’intégrité des données (par exemple une signature de fichier ou un certificat numérique) sont particulièrement vulnérables.  Dans ce contexte, des personnes malveillantes peuvent générer deux éléments distincts de données (et donc remplacer des données ordinaires par des données malveillantes) sans modifier la valeur de hachage ou invalider une signature numérique associée.  
   
- Pour les algorithmes de chiffrement :  
+ Pour les algorithmes de chiffrement :  
   
 - Le chiffrement<xref:System.Security.Cryptography.DES> contient une clé de petite taille qui peut être cassée par la force brute en moins d’une journée.  
   
@@ -52,7 +47,7 @@ ms.locfileid: "49889813"
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations  
  Utilisez des options de chiffrement plus fortes :  
   
--   Pour MD5, utilisez des hachages de la famille [SHA-2](https://msdn.microsoft.com/en-us/library/windows/desktop/aa382459.aspx) (par exemple <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).  
+-   Pour MD5, utilisez des hachages de la famille [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) (par exemple <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).  
   
 -   Pour DES et RC2, utilisez le chiffrement <xref:System.Security.Cryptography.Aes> .  
   

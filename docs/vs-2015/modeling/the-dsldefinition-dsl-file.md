@@ -1,25 +1,22 @@
 ---
 title: Le fichier DslDefinition.dsl | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, definition file
 ms.assetid: f3fc3ed7-2438-4e5a-b3d7-fe7e0e8a134c
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7f61ceef7248c143fd904751da58d32f75dfc0c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1c62483ad8edac88fe3d14c6590dfb7e6d17285f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937646"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953727"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Le fichier DslDefinition.dsl
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,13 +35,13 @@ Cette rubrique décrit la structure du fichier DslDefinition.dsl dans le projet 
  Classes  
  Cette section définit chaque classe de domaine qui génère une classe dans le code généré.  
   
- Relationships  
+ Relations  
  Cette section définit chaque relation dans le modèle. La source et la cible représentent les deux côtés d'une relation.  
   
  Types  
  Cette section définit chaque type et son espace de noms. Il existe deux types de propriétés de domaine. Les `DomainEnumerations` sont définies dans le modèle et génèrent des types dans DomainModel.cs. Les `ExternalTypes` font référence à des types qui sont définis ailleurs (par exemple `String` ou `Int32`) et ils ne génèrent rien.  
   
- Shapes  
+ Formes  
  Cette section définit les formes qui décrivent comment le modèle apparaît dans un concepteur. Ces formes géométriques sont mappées aux classes dans le modèle, dans la section Diagram.  
   
  Connectors  
@@ -59,13 +56,13 @@ Cette rubrique décrit la structure du fichier DslDefinition.dsl dans le projet 
  ConnectionBuilders  
  Cette section définit un générateur de connexion pour chaque outil connecteur (l'outil de création de liens entre deux classes qui peuvent être connectées). Cette section détermine si vous pouvez connecter une classe source et une classe cible.  
   
- Diagram  
+ Diagramme  
  Cette section définit un diagramme et vous l'utilisez pour spécifier des propriétés telles que la couleur d'arrière-plan et la classe racine. (La classe racine est la classe de domaine qui est représentée par le diagramme dans son ensemble.) La section Diagram contient aussi des éléments ShapeMap et ConnectorMap, qui spécifient la forme ou le connecteur qui représente chaque classe de domaine ou relation.  
   
  Designer  
  Cette section définit un concepteur (éditeur), qui rassemble une **boîte à outils**, paramètres de validation, un diagramme et un schéma de sérialisation. La section Designer définit également la classe racine du modèle, qui est généralement aussi la classe racine du diagramme.  
   
- Explorateur  
+ Explorer  
  Cette section identifie les **Explorateur DSL** comportement (défini dans la section XmlSerializationBehavior).  
   
 ## <a name="monikers-in-the-dsldefinitiondsl-file"></a>Monikers dans le fichier DslDefinition.dsl  
@@ -90,7 +87,7 @@ Cette rubrique décrit la structure du fichier DslDefinition.dsl dans le projet 
   
  Le système moniker exige que les enfants dans l'arborescence XML aient des noms distincts. Pour cette raison, des erreurs de validation se produisent si vous essayez d'enregistrer une définition de langage spécifique à un domaine ayant, par exemple, deux classes du même nom. Vous devez toujours corriger ces erreurs de doublons avant d'enregistrer le fichier DslDefinition.dsl pour pouvoir le recharger ultérieurement.  
   
- Chaque type à son propre type de moniker : DomainClassMoniker, DomainRelationshipMoniker, et ainsi de suite.  
+ Chaque type a son propre type de moniker : DomainClassMoniker, DomainRelationshipMoniker et ainsi de suite.  
   
 ## <a name="types"></a>Types  
  La section Types spécifie tous les types contenus dans le fichier DslDefinition.dsl comme types de propriétés. Ces types appartiennent à deux catégories : les types externes, tels que System.String, et les types énumérés.  
@@ -157,7 +154,7 @@ Cette rubrique décrit la structure du fichier DslDefinition.dsl dans le projet 
   
  Chaque classe de domaine (y compris les relations, les formes, les connecteurs et les diagrammes) peut avoir les attributs et nœuds enfants suivants :  
   
--   **ID.** Cet attribut est un GUID. Si vous ne spécifiez pas de valeur dans le fichier, le concepteur de langage spécifique à un domaine crée une valeur. (Dans les illustrations de ce document, cet attribut est généralement omis pour des raisons d'espace.)  
+-   **Id.** Cet attribut est un GUID. Si vous ne spécifiez pas de valeur dans le fichier, le concepteur de langage spécifique à un domaine crée une valeur. (Dans les illustrations de ce document, cet attribut est généralement omis pour des raisons d'espace.)  
   
 -   **Nom et Namespace.** Ces attributs spécifient le nom et l’espace de noms de la classe dans le code généré. Ensemble, ils doivent être uniques dans le langage spécifique à un domaine.  
   
@@ -179,7 +176,7 @@ Cette rubrique décrit la structure du fichier DslDefinition.dsl dans le projet 
   
 -   Une classe C# est générée pour chaque classe de domaine qui est répertoriée dans la section `Classes`. Les classes C# sont générées dans Dsl\GeneratedCode\DomainClasses.cs.  
   
-### <a name="properties"></a>Propriétés  
+### <a name="properties"></a>Properties  
  Chaque propriété de domaine a un nom et un type. Le nom doit être unique dans la classe de domaine et ses bases transitives.  
   
  Le type doit faire référence à l'un de ceux répertoriés dans la section `Types`. En général, le moniker doit inclure l'espace de noms.  
@@ -214,7 +211,7 @@ Cette rubrique décrit la structure du fichier DslDefinition.dsl dans le projet 
 ### <a name="source-and-target-roles"></a>Rôles sources et cibles  
  Chaque relation contient des rôles sources et cibles ayant les attributs suivants :  
   
--   L'attribut `RolePlayer` fait référence à la classe de domaine des instances liées : OutPort pour la source, InPort pour la cible.  
+-   Le `RolePlayer` attribut fait référence à la classe de domaine des instances liées : OutPort pour la source, InPort pour la cible.  
   
 -   L'attribut `Multiplicity` a quatre valeurs possibles (ZeroMany, ZeroOne, One et OneMany). Cet attribut fait référence au nombre de liens de cette relation qui peuvent être associés à un auteur de rôle.  
   
@@ -281,7 +278,7 @@ Cette rubrique décrit la structure du fichier DslDefinition.dsl dans le projet 
  Lors de l’écriture de code c# selon ce modèle, vous pouvez passer un lien en une seule étape à l’aide de la propriété générée par la relation sur chacune des classes qui il se rapporte :  
   
 ```  
-     InPort port; ...  Component c = port.Component;  
+     InPort port; ...  Component c = port.Component;  
 ```  
   
  Toutefois, vous devez effectuer les deux tronçons de manière explicite en syntaxe de chemin d'accès. Cette exigence simplifie l'accès au lien intermédiaire. Le code suivant achève le tronçon du lien au composant :  
@@ -552,9 +549,6 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
  Les mappages de connecteurs peuvent aussi contenir des mappages de décorateurs.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Glossaire des outils Domain-Specific Language](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)   
+ [Glossaire des Outils Domain-Specific Language](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [Comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md)   
  [Présentation des modèles, des classes et des relations](../modeling/understanding-models-classes-and-relationships.md)
-
-
-

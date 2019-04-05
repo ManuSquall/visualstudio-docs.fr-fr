@@ -1,29 +1,24 @@
 ---
-title: 'Comment : utiliser le journal d’activité | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Utiliser le journal d’activité | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, debugging
 - VSPackages, troubleshooting
 ms.assetid: bb3d3322-0e5e-4dd5-b93a-24d5fbcd2ffd
 caps.latest.revision: 30
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5c6b9c312fec6d11369b198e215d27cfc004c1d8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 50ef738826a9eb85a081a7063c1ca55280bed3a8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798306"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951730"
 ---
-# <a name="how-to-use-the-activity-log"></a>Comment : utiliser le journal d’activité
+# <a name="how-to-use-the-activity-log"></a>Procédure : Utiliser le journal des activités
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les VSPackages peuvent écrire des messages dans le journal d’activité. Cette fonctionnalité est particulièrement utile pour déboguer les VSPackages dans les environnements de vente au détail.  
@@ -69,4 +64,3 @@ Les VSPackages peuvent écrire des messages dans le journal d’activité. Cette
  <xref:Microsoft.VisualStudio.Shell.Interop.__ACTIVITYLOG_ENTRYTYPE>   
  [Dépannage de VSPackages](../extensibility/troubleshooting-vspackages.md)   
  [VSPackages](../extensibility/internals/vspackages.md)
-
