@@ -1,18 +1,18 @@
 ---
-title: fichier Include
+title: Fichier Include
 description: fichier Include
 ms.custom: include file
 author: ghogen
 ms.author: ghogen
 ms.date: 11/15/2016
 ms.topic: include
-manager: douge
-ms.openlocfilehash: 425b07127fdd65d7caaa1fd4f2c82b1087f5e299
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d16cdc30788ad8b05f5e794241be2f4b3fc5dba6
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307019"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58954217"
 ---
 > [!Note]
-> Cet article s’applique à Visual Studio 2015. Si vous avez besoin pour la documentation de Visual Studio 2017, utilisez le sélecteur de version en haut à gauche. Nous vous recommandons de la mise à niveau vers Visual Studio 2017. [Téléchargez-le ici](https://www.visualstudio.com/downloads?utm_source=web&utm_medium=documentation&utm_campaign=vs2017upgrade&utm_term=vs2017).
+> Cet article s’applique à Visual Studio 2015. Si vous avez besoin pour obtenir la dernière documentation de Visual Studio, utilisez le sélecteur de version en haut à gauche. Nous vous recommandons de mettre à niveau vers Visual Studio 2019. [Téléchargez-le ici](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)

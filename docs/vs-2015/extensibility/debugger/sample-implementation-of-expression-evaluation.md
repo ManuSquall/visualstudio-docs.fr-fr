@@ -1,14 +1,9 @@
 ---
 title: Exemple d’implémentation de l’évaluation de l’Expression | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluators
 - debugging [Debugging SDK], expression evaluators
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 2a5f04b8-6c65-4232-bddd-9093653a22c4
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a79f61351363ba14b9993181c77e1a9be88515d9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bb36540aaf6fa30cdcd069fd96a18124daafe2b8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735169"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948486"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>Exemple d’implémentation de l’évaluation d’expression
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -117,4 +112,3 @@ STDMETHODIMP CExpressionEvaluator::Parse(
 ## <a name="see-also"></a>Voir aussi  
  [Évaluation d’une Expression de la fenêtre Espion](../../extensibility/debugger/evaluating-a-watch-window-expression.md)   
  [Évaluation d’une expression espionne](../../extensibility/debugger/evaluating-a-watch-expression.md)
-

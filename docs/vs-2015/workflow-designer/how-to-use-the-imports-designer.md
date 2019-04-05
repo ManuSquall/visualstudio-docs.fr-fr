@@ -1,11 +1,8 @@
 ---
-title: 'Comment : utiliser le Concepteur d’importations | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Utiliser le Concepteur d’importations | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Presentation.View.ImportDesigner.UI
@@ -13,20 +10,20 @@ ms.assetid: 61328ab6-9b66-4e12-8630-22e30ee8c9d1
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: cf0ece10310b82cd958ff528fc06f36ed1b709d3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c6eed27b9bfef272035f299af1a68a3788587f3c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875494"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58947468"
 ---
-# <a name="how-to-use-the-imports-designer"></a>Procédure : utiliser le concepteur d'importations
+# <a name="how-to-use-the-imports-designer"></a>Procédure : Utiliser le concepteur d’importations
 Le concepteur d'importations vous permet d'entrer des espaces de noms pour les types que vous utiliserez dans vos expressions. Comme beaucoup le **importe** ou **à l’aide de** activer de mots clés dans Visual Basic .NET et c#, en spécifiant les espaces de noms dans le Concepteur d’importations vous permet d’entrer simplement un nom de type dans votre expression plutôt qu’un complet nom du type de version.  
   
  Le concepteur d'importations réagit aux modifications apportées à l'interface utilisateur ainsi qu'aux modifications apportées lors de l'enregistrement du workflow. Lorsque le workflow est enregistré, des espaces de noms peuvent être automatiquement ajoutés au concepteur d'importations. Notamment :  
   
-- les espaces de noms pour tout type utilisé dans les déclarations de variables et d'arguments ;  
+- les espaces de noms pour tout type utilisé dans les déclarations de variables et d’arguments ;  
   
 - les espaces de noms pour tout type utilisé dans des expressions ;  
   

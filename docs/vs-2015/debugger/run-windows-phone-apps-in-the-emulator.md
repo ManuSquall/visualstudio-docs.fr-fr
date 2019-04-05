@@ -1,14 +1,9 @@
 ---
 title: Exécuter des applications de Windows Phone dans l’émulateur | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,20 +13,20 @@ ms.assetid: c7590788-beb3-403c-a7dd-18472a9e585e
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e7035e4a77b67fb5207f878c8e0650236afda7c6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7bc85d1a38143e626fc659979eea727a0b41ef00
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739987"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58947937"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>Exécuter des applications Windows Phone dans l'émulateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L'émulateur Windows Phone fournit un environnement virtualisé dans lequel vous pouvez déboguer et tester des applications Windows Phone sur votre ordinateur, sans appareil physique. Vous pouvez simuler des événements tactiles et de rotation courants, et choisir la taille et la résolution de l'écran physique que vous voulez émuler. Vous pouvez également tester plusieurs fonctionnalités couramment utilisées, comme la géolocalisation, la mise en réseau, les notifications, les capteurs, l’accéléromètre et la carte SD en option.  
   
- Pour plus d’informations sur les fonctionnalités que vous pouvez tester dans l’émulateur, consultez [tester les fonctionnalités de l’application dans l’émulateur de Windows Phone](http://msdn.microsoft.com/en-us/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1).  
+ Pour plus d’informations sur les fonctionnalités que vous pouvez tester dans l’émulateur, consultez [tester les fonctionnalités de l’application dans l’émulateur de Windows Phone](http://msdn.microsoft.com/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1).  
   
  Avec Visual Studio, l'émulateur fournit un environnement complet dans lequel vous pouvez concevoir, développer, déboguer et tester des applications Windows Phone.  
   
@@ -165,15 +160,15 @@ L'émulateur Windows Phone fournit un environnement virtualisé dans lequel vous
 |F10|BAISSER LE VOLUME||  
 |F11|Non applicable.||  
 |F12|MARCHE/ARRÊT|Appuyez sur la touche F12 deux fois pour activer l'écran de verrouillage.<br /><br /> Les appuis longs fonctionnent comme il se doit.|  
-|ÉCHAP|Retour|Les appuis longs fonctionnent comme il se doit.|  
+|Échap|Retour|Les appuis longs fonctionnent comme il se doit.|  
 |Pause/Attn|Activer/désactiver le clavier (émulateur Windows 8/8.1 uniquement).|Non applicable dans l'émulateur Windows 10.|  
-|Page précédente|Active le clavier matériel (émulateur Windows 8/8.1 uniquement).|Non applicable dans l'émulateur Windows 10.|  
-|Page suivante|Désactive le clavier matériel (émulateur Windows 8/8.1 uniquement).|Non applicable dans l'émulateur Windows 10.|  
+|PG.PRÉC|Active le clavier matériel (émulateur Windows 8/8.1 uniquement).|Non applicable dans l'émulateur Windows 10.|  
+|PG.SUIV|Désactive le clavier matériel (émulateur Windows 8/8.1 uniquement).|Non applicable dans l'émulateur Windows 10.|  
   
 ##  <a name="BKMK_checkpoints"></a> Enregistrer et charger des points de contrôle personnalisés  
  Enregistrer un instantané de l’état de l’émulateur à l’aide de la **points de contrôle** onglet de l’émulateur **des outils supplémentaires**. Cette fonctionnalité est utile si vous testez fréquemment votre application avec les mêmes données et paramètres.  
   
- Par exemple, si votre application requiert plusieurs contacts, vous pouvez créer les enregistrements de contact une fois et enregistrer un instantané de l'émulateur. Sinon, vous devez recréez les enregistrements de contact chaque fois que vous démarrez l'émulateur.  
+ Par exemple, si votre application requiert plusieurs contacts, vous pouvez créer les enregistrements de contact une fois et enregistrer un instantané de l'émulateur. Sinon, vous devez recréer les enregistrements de contact chaque fois que vous démarrez l'émulateur.  
   
 - Cliquez sur **nouveau point de contrôle** pour capturer un nouvel instantané de l’état de l’émulateur avec les données et les paramètres requis pour tester votre application plus tard. Le nouveau point de contrôle est ajouté à la **points de contrôle** liste.  
   
@@ -225,6 +220,3 @@ L'émulateur Windows Phone fournit un environnement virtualisé dans lequel vous
 -   Spécifiez une version Release dans Visual Studio. Après avoir spécifié une version Release, lancez votre application en sélectionnant le **déployer _[nom_application]_**  lien sur le **Build** menu.  
   
 -   Vous pouvez aussi insérer un commentaire sur la ligne de code dans le fichier app.xaml.cs ou app.xaml.vb qui définit la valeur de `EnableFrameRateCounter` sur `true`.
-
-
-

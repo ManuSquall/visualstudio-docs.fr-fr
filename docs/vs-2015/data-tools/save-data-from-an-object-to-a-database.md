@@ -1,12 +1,9 @@
 ---
 title: Enregistrer les données à partir d’un objet dans une base de données | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,19 +17,19 @@ ms.assetid: efd6135a-40cf-4b0d-8f8b-41a5aaea7057
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: acbbf9f309573f110da3b7dd0a53ede36150a319
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 4ddb6ad55a8d90a3e9d4f5b2568885cbe49fb66c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207452"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948305"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Enregistrer les données d’un objet dans une base de données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-Vous pouvez enregistrer des données dans des objets à une base de données en passant les valeurs à partir de votre objet à une des méthodes DBDirect du TableAdapter (par exemple, `TableAdapter.Insert`). Pour plus d'informations, consultez [TableAdapter Overview](../data-tools/tableadapter-overview.md).  
+Vous pouvez enregistrer des données dans des objets à une base de données en passant les valeurs à partir de votre objet à une des méthodes DBDirect du TableAdapter (par exemple, `TableAdapter.Insert`).
   
  Pour enregistrer des données à partir d’une collection d’objets, parcourez la collection d’objets (par exemple, une boucle for-next) et envoyez les valeurs pour chaque objet à la base de données à l’aide d’une des méthodes DBDirect du TableAdapter.  
   
@@ -85,4 +82,3 @@ Vous pouvez enregistrer des données dans des objets à une base de données en 
   
 ## <a name="see-also"></a>Voir aussi  
  [Enregistrer les données dans la base de données](../data-tools/save-data-back-to-the-database.md)
-

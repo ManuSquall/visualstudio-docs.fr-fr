@@ -1,29 +1,24 @@
 ---
-title: 'Comment : utiliser l’outil recherche | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Utiliser l’outil recherche | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Window Finder Tool
 ms.assetid: 5841926b-08c3-4e43-88bd-4223d04f9aef
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5fe233182115c8e10e78f59870d92eed69b8c492
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 780cbcf5c6e03c5534b7f2125662696344e9cec4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747081"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949461"
 ---
-# <a name="how-to-use-the-finder-tool"></a>Comment : utiliser l'outil Recherche
+# <a name="how-to-use-the-finder-tool"></a>Procédure : Utiliser l’outil de recherche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez utiliser l’outil de recherche dans les **rechercher une fenêtre** boîte de dialogue pour afficher la fenêtre Propriétés ou des messages. L’outil recherche peut également rechercher des fenêtres enfants désactivées et discerner fenêtre pour mettre en surbrillance si désactivées fenêtres enfants se chevauchent.  
@@ -54,14 +49,11 @@ Outil de recherche dans la boîte de dialogue Rechercher une fenêtre
   
 4.  Sous **afficher**, sélectionnez **propriétés** ou **Messages**.  
   
-5.  Appuyez sur **OK**.  
+5.  Cliquez sur **OK**.  
   
      Si vous avez sélectionné **propriétés**, le [boîte de dialogue Propriétés de fenêtre](../debugger/window-properties-dialog-box.md) s’ouvre. Si vous avez sélectionné **Messages**, un [vue Messages](../debugger/messages-view.md) fenêtre s’ouvre.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Vues Spy ++](../debugger/spy-increment-views.md)   
- [À l’aide de Spy ++](../debugger/using-spy-increment.md)   
+ [Vues Spy++](../debugger/spy-increment-views.md)   
+ [Utilisation de Spy++](../debugger/using-spy-increment.md)   
  [Informations de référence sur Spy++](../debugger/spy-increment-reference.md)
-
-
-

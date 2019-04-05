@@ -1,27 +1,22 @@
 ---
-title: 'Procédure pas à pas : Utilisation d’IntelliTrace | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure pas à pas : À l’aide d’IntelliTrace | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: e1c9c91a-0009-4c4e-9b4f-c9ab3a6022a7
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cc1e2b40e16a14da505243aeb11542df3adfb18d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 195aba127c96e7d7b717f1a93346ebacbb99a502
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781307"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58947683"
 ---
-# <a name="walkthrough-using-intellitrace"></a>Procédure pas à pas : utilisation d'IntelliTrace
+# <a name="walkthrough-using-intellitrace"></a>Procédure pas à pas : Utilisation d'IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez utiliser IntelliTrace pour collecter des informations sur des événements spécifiques ou des catégories d'événements, ou sur des appels de fonction individuels en plus d'événements. Les procédures suivantes montrent comment procéder.  
@@ -35,13 +30,13 @@ Vous pouvez utiliser IntelliTrace pour collecter des informations sur des évén
   
 1.  Activez l'événement IntelliTrace pour l'accès aux fichiers. Accédez à la page **Outils / Options / IntelliTrace / Événements IntelliTrace** , puis développez la catégorie **Fichier** . Cochez la catégorie d'événements **Fichier** . Ainsi, tous les événements concernant les fichiers (accès, fermeture, suppression) sont cochés.  
   
-2.  Créez une application console C#. Ouvrez le fichier Program.cs et ajoutez l'instruction `using` suivante :  
+2.  Créez une application console C#. Ouvrez le fichier Program.cs et ajoutez l'instruction `using` suivante :  
   
     ```csharp  
     using System.IO;  
     ```  
   
-3.  Créez un <xref:System.IO.FileStream> dans la méthode Main, lisez dans ce flux, fermez-le et supprimez le fichier. Ajoutez une autre ligne juste pour avoir un emplacement où définir un point d'arrêt :  
+3.  Créez un <xref:System.IO.FileStream> dans la méthode Main, lisez dans ce flux, fermez-le et supprimez le fichier. Ajoutez une autre ligne juste pour avoir un emplacement où définir un point d'arrêt :  
   
     ```csharp  
     static void Main(string[] args)  
@@ -68,7 +63,7 @@ Vous pouvez utiliser IntelliTrace pour collecter des informations sur des évén
   
      La capture d’écran suivante a été faite à partir de Visual Studio 2015 Update 1.  
   
-     ![IntelliTrace&#45;Update1](../debugger/media/intellitrace-update1.png "IntelliTrace-Update 1")  
+     ![IntelliTrace&#45;Update1](../debugger/media/intellitrace-update1.png "IntelliTrace-Update1")  
   
 7.  Sélectionnez l'événement pour développer ses détails.  
   
@@ -82,7 +77,7 @@ Vous pouvez utiliser IntelliTrace pour collecter des informations sur des évén
   
      La capture d’écran suivante a été faite à partir de Visual Studio 2015 Update 1.  
   
-     ![HistoricalDebugging&#45;Update1](../debugger/media/historicaldebugging-update1.png "HistoricalDebugging-Update 1")  
+     ![HistoricalDebugging&#45;Update1](../debugger/media/historicaldebugging-update1.png "HistoricalDebugging-Update1")  
   
 8.  Si vous ne trouvez pas le bogue, essayez de tester d'autres événements aboutissant au bogue. IntelliTrace peut également enregistrer des informations sur les appels pour vous permettre de parcourir pas à pas les appels de fonction.  
   
@@ -106,9 +101,3 @@ Vous pouvez utiliser IntelliTrace pour collecter des informations sur des évén
     >  Vous pouvez voir que certains appels apparaissent grisés. La raison en est qu'IntelliTrace n'a pas enregistré les données des modules correspondants. Pour consulter ces données, configurez IntelliTrace de manière à collecter les données de ces modules. Pour plus d’informations sur la spécification des modules, consultez [fonctionnalités IntelliTrace](../debugger/intellitrace-features.md).  
   
 ## <a name="next-steps"></a>Étapes suivantes
-
-
-
-
-
-

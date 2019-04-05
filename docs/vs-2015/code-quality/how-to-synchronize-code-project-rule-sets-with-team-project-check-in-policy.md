@@ -1,14 +1,9 @@
 ---
-title: 'Comment : synchroniser des ensembles de règles de projet de Code avec la stratégie d’archivage du projet d’équipe | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Synchroniser des ensembles de règles de projet de Code avec la stratégie d’archivage du projet d’équipe | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
 ms.assetid: 9b02f934-2db6-41ec-aaff-9c31ceec2f04
@@ -16,14 +11,14 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 482f3107aeb7545951632f6841c43968067b1b2a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2f79b8baf3740fdbd57828552a192746e839578c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263118"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949506"
 ---
-# <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>Comment : synchroniser des ensembles de règles applicables à des projets de code avec la stratégie d'archivage du projet d'équipe
+# <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>Procédure : Synchroniser des ensembles de règles applicables à des projets de code avec la stratégie d'archivage du projet d'équipe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous synchronisez les paramètres d’analyse de code pour les projets de code à la stratégie d’archivage du projet d’équipe en spécifiant un ensemble de règles qui contient au moins les règles qui sont spécifiés dans l’ensemble de règles pour la stratégie d’archivage. Votre développeur en chef peut informer vous du nom et l’emplacement de l’ensemble de règles pour la stratégie d’archivage. Vous pouvez utiliser une des options suivantes pour vous assurer que l’analyse du code pour le projet utilise le jeu de règles approprié :  
@@ -60,7 +55,7 @@ Vous synchronisez les paramètres d’analyse de code pour les projets de code �
   
 1.  Suivez une des procédures plus haut dans cette rubrique pour sélectionner la stratégie d’archivage du projet d’équipe dans la page d’analyse du Code de la boîte de dialogue des paramètres de projet.  
   
-2.  Cliquez sur **Open**.  
+2.  Cliquez sur **Ouvrir**.  
   
 3.  Ajouter ou supprimer des règles à l’aide de l’éditeur d’ensemble de règles.  
   
@@ -73,6 +68,3 @@ Vous synchronisez les paramètres d’analyse de code pour les projets de code �
 6.  Dans le **exécuter cet ensemble de règles** , cliquez sur  **\<Parcourir... >**.  
   
 7.  Dans le **Open** boîte de dialogue, spécifiez l’ensemble de règles fichier.
-
-
-

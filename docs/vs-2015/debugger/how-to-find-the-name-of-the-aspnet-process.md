@@ -1,14 +1,9 @@
 ---
-title: 'Comment : rechercher le nom du processus ASP.NET | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Rechercher le nom du processus ASP.NET | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,15 +16,15 @@ ms.assetid: 931a7597-b0f0-4a28-931d-46e63344435f
 caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2ad3bea47bcde0da87bd185fac132c95f26ce4b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c403cefee3aa7d45c11cd80cf5fc2dd53a06c1fc
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793241"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58947934"
 ---
-# <a name="how-to-find-the-name-of-the-aspnet-process"></a>Comment : rechercher le nom du processus ASP.NET
+# <a name="how-to-find-the-name-of-the-aspnet-process"></a>Procédure : Rechercher le nom du processus ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pour créer un attachement à une application [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] en cours d'exécution, vous devez connaître le nom du processus [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] :  
@@ -43,7 +38,7 @@ Pour créer un attachement à une application [!INCLUDE[vstecasp](../includes/vs
   Les applications antérieures d'ASP s'exécutent à l'intérieur du processus IIS inetinfo.exe lorsqu'elles s'exécutent in-process.  
   
 > [!NOTE]
->  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-determine-whether-project-code-resides-on-the-file-system-or-iis"></a>Pour déterminer si le code de projet réside sur le système de fichiers ou IIS  
   
@@ -72,6 +67,3 @@ Pour créer un attachement à une application [!INCLUDE[vstecasp](../includes/vs
  [Configuration requise](../debugger/aspnet-debugging-system-requirements.md)   
  [Préparation du débogage ASP.NET](../debugger/preparing-to-debug-aspnet.md)   
  [Débogage d’applications et de scripts web](../debugger/debugging-web-applications-and-script.md)
-
-
-

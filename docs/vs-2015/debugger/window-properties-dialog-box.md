@@ -1,27 +1,22 @@
 ---
 title: Boîte de dialogue Propriétés de fenêtre | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Window Properties dialog box
 ms.assetid: c70e9429-fb0c-452a-9626-79f168393e44
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0b10fb130e5f2f584369a363491c5317e83aaf80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9eb07b20c08945b6a9f253d0ab634dca1c767d59
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773962"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949330"
 ---
 # <a name="window-properties-dialog-box"></a>boîte de dialogue Propriétés de la fenêtre
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,19 +24,19 @@ ms.locfileid: "51773962"
 Utilisez cette boîte de dialogue pour en savoir plus sur une fenêtre spécifique. Pour afficher cette boîte de dialogue, déplacez le focus vers le [Windows vue](../debugger/windows-view.md) fenêtre. Sélectionnez n’importe quel nœud de fenêtre dans l’arborescence, puis choisissez **propriétés** à partir de la **vue** menu.  
   
 ## <a name="in-this-section"></a>Dans cette section  
- [Onglet Général. Boîte de dialogue Propriétés de fenêtre](../debugger/general-tab-window-properties-dialog-box.md)  
+ [Onglet Général. Boîte de dialogue Propriétés de la fenêtre](../debugger/general-tab-window-properties-dialog-box.md)  
  Affiche des informations sur la fenêtre sélectionnée.  
   
- [Onglet Styles. Boîte de dialogue Propriétés de fenêtre](../debugger/styles-tab-window-properties-dialog-box.md)  
+ [Onglet Styles. Boîte de dialogue Propriétés de la fenêtre](../debugger/styles-tab-window-properties-dialog-box.md)  
  Affiche les styles appliqués à la fenêtre sélectionnée.  
   
- [Onglet de Windows. Boîte de dialogue Propriétés de fenêtre](../debugger/windows-tab-window-properties-dialog-box.md)  
+ [Onglet Fenêtres. Boîte de dialogue Propriétés de la fenêtre](../debugger/windows-tab-window-properties-dialog-box.md)  
  Affiche des informations sur les fenêtres liées à la fenêtre sélectionnée.  
   
- [Onglet de la classe. Boîte de dialogue Propriétés de fenêtre](../debugger/class-tab-window-properties-dialog-box.md)  
+ [Onglet Classe. Boîte de dialogue Propriétés de la fenêtre](../debugger/class-tab-window-properties-dialog-box.md)  
  Affiche des informations sur la classe de la fenêtre sélectionnée.  
   
- [Onglet processus. Boîte de dialogue Propriétés de fenêtre](../debugger/process-tab-window-properties-dialog-box.md)  
+ [Onglet Processus. Boîte de dialogue Propriétés de la fenêtre](../debugger/process-tab-window-properties-dialog-box.md)  
  Identifie le processus de la fenêtre sélectionnée.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
@@ -65,6 +60,3 @@ Utilisez cette boîte de dialogue pour en savoir plus sur une fenêtre spécifiq
   
  [Utilisation de Spy++](../debugger/using-spy-increment.md)  
  Présente l’outil Spy ++ et explique comment il peut être utilisé.
-
-
-
