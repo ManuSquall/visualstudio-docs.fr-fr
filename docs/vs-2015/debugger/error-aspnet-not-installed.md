@@ -1,14 +1,9 @@
 ---
-title: 'Erreur : ASP.NET ne pas installé | Microsoft Docs'
-ms.custom: ''
+title: 'Erreur : ASP.NET n’est ne pas installé | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.http_not_supported
 dev_langs:
@@ -25,15 +20,15 @@ ms.assetid: 6286dd3d-3e2b-4edd-959d-81e0ed45500b
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 20a6d85fbdc7fad9077a19704b6c448c73dae787
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 31268b94ab632e598badcba3def387ef1fc2ba1d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739593"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938047"
 ---
-# <a name="error-aspnet-not-installed"></a>Erreur : ASP.NET n'est pas installé
+# <a name="error-aspnet-not-installed"></a>Erreur : ASP.NET n’est pas installé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette erreur se produit quand [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] n'est pas installé correctement sur l'ordinateur que vous tentez de déboguer. Cela peut signifier qu'[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] n'a jamais été installé ou qu'[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] a été installé avant les services IIS (Internet Information Services).  
@@ -49,10 +44,7 @@ Cette erreur se produit quand [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] n
      où *version* représente le numéro de version du .NET Framework installée sur votre ordinateur, par exemple v1.0.370. Vous pouvez déterminer la version du framework en consultant le `\WINDOWS\Microsoft.NET\Framework` directory.  
   
     > [!NOTE]
-    >  Avec Windows Server 2003, vous pouvez installer [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] à l’aide de **Ajout / Suppression de programmes** dans le panneau de configuration.  
+    >  Sous Windows Server 2003, vous pouvez installer [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] avec **Ajout/Suppression de programmes** dans le Panneau de configuration.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage d’applications web : erreurs et dépannage](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
-
-
-

@@ -1,26 +1,21 @@
 ---
 title: Features1 de Service de langage hérité | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework]
 ms.assetid: a646e4f0-767d-4cd1-8e1a-9a2aa210a1b7
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bb66895066d0af1259c3509c40ec9fa4458e3f79
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9506c6756c785741c40f86ae5839101bf0079854
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774054"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938629"
 ---
 # <a name="legacy-language-service-features"></a>Fonctionnalités de Service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -85,4 +80,3 @@ Un service de langage de framework (MPF) package managé peut prendre en charge 
   
  [Implémentation d’un service de langage hérité](../../extensibility/internals/implementing-a-legacy-language-service1.md)  
  Fournit des informations sur l’utilisation de l’infrastructure de package managé (MPF) pour implémenter un service de langage complet dans le code managé.
-

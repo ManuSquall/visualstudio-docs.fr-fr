@@ -1,14 +1,9 @@
 ---
 title: VTableShape | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: dd97f4c3-115d-46a9-b506-2531e30a0d8f
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f7be27583895768ea9c9324e3b6eb2d378de6f39
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2716a01f86a095c9378d7806cfa71fff3bc51a8d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739559"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938083"
 ---
 # <a name="vtableshape"></a>VTableShape
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,8 +41,5 @@ Le [VTable](../../debugger/debug-interface-access/vtable.md) symbole possède un
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` Si la classe de VTable est marquée comme volatile.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Hiérarchie de classes des Types de symboles](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)   
+ [Hiérarchie de classes des types de symboles](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)   
  [VTable](../../debugger/debug-interface-access/vtable.md)
-
-
-

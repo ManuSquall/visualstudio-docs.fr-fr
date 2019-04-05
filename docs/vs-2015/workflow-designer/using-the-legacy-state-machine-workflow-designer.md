@@ -1,11 +1,8 @@
 ---
 title: Utilisation du Concepteur de flux de travail d’ordinateur état hérité | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - StateFinalizationActivity activity
@@ -20,16 +17,16 @@ ms.assetid: 2cd21123-35c2-4eaf-82f6-86fce7a8f04d
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 30eaf026d0558538c51b4cbda313e051348a5120
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e96d1db524d5a80a9f298fa84ca1ccf27e28fbf4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231684"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938119"
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Utilisation du Concepteur de Workflow d'ordinateur d'état hérité
-Quand vous créez un nouveau projet de flux de travail de machine état dans [!INCLUDE[vs2010](../includes/vs2010-md.md)] qui cible le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], vous pouvez choisir d’utiliser soit le **Console Application de Workflow de Machine d’état** ou le  **Bibliothèque de flux de travail de Machine d’état** modèle de projet hérité. Si vous choisissez l'un de ces modèles de projet d'ordinateur d'état, le concepteur d'ordinateurs d'état est présenté comme interface utilisateur de concepteur de workflow hérité. Pour plus d’informations sur les modèles de projet d’ordinateur état hérités, consultez [Comment : créer état Machine Applications Console de Workflow (hérité)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) et [Comment : créer une bibliothèque de flux de travail de Machine état (héritée)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  
+Quand vous créez un nouveau projet de flux de travail de machine état dans [!INCLUDE[vs2010](../includes/vs2010-md.md)] qui cible le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], vous pouvez choisir d’utiliser soit le **Console Application de Workflow de Machine d’état** ou le  **Bibliothèque de flux de travail de Machine d’état** modèle de projet hérité. Si vous choisissez l'un de ces modèles de projet d'ordinateur d'état, le concepteur d'ordinateurs d'état est présenté comme interface utilisateur de concepteur de workflow hérité. Pour plus d’informations sur les modèles de projet d’ordinateur état hérités, consultez [Comment : Créer des Applications de Console de Workflow de Machine à états (hérité)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) et [Comment : Créer une bibliothèque de flux de travail de Machine à états (hérité)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  
   
  Un workflow d'ordinateur d'état se compose d'un ensemble d'états. Un état représente un état initial. Chaque état peut recevoir certains événements spécifiques. En fonction d'un événement, une transition peut s'effectuer vers un autre état. Le workflow d'ordinateur d'état peut porter un état final. Lorsqu'une transition est effectuée vers l'état final, l'exécution de workflow prend fin.  
   
@@ -51,7 +48,7 @@ Quand vous créez un nouveau projet de flux de travail de machine état dans [!I
 |**StateFinalization**|[StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65043)|Elle exécute les activités contenues lorsqu’une [StateActivity](http://go.microsoft.com/fwlink?LinkID=65042) activité. Pour plus d’informations, consultez [à l’aide de l’activité StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65008).|  
 |**EventDriven**|[EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029)|Utilisée pour des états pour lesquels un événement externe déclenche l'exécution. Le **EventDrivenActivity** activité doit avoir une activité qui implémente le [IEventActivity](http://go.microsoft.com/fwlink?LinkID=65032) interface comme première activité enfant. Pour plus d’informations, consultez [à l’aide de l’activité EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65068).|  
   
- Le composant principal d’un workflow d’ordinateur d’état est la [StateActivity](http://go.microsoft.com/fwlink?LinkID=65042) activité. Puisque les événements sont capturés à différents points d’un workflow d’ordinateur d’état, des états différents sont entrés pour gérer les tâches associées aux événements. Pendant la durée de vie du workflow, ce dernier peut porter plusieurs états différents. Ces États se connectent entre eux à l’aide de la [SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65041) activité.  
+ Le composant principal d’un workflow d’ordinateur d’état est la [StateActivity](http://go.microsoft.com/fwlink?LinkID=65042) activité. Puisque les événements sont capturés à différents points d'un workflow d'ordinateur d'état, des états différents sont entrés pour gérer les tâches associées aux événements. Pendant la durée de vie du workflow, ce dernier peut porter plusieurs états différents. Ces États se connectent entre eux à l’aide de la [SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65041) activité.  
   
  Lorsque vous faites glisser un nouveau **StateActivity** sur l’aire de conception de workflow, vous pouvez ajouter [EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029), [StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65044), [ StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65043), ou une autre **StateActivity** activités en tant qu’activités enfants.  
   
@@ -61,8 +58,8 @@ Quand vous créez un nouveau projet de flux de travail de machine état dans [!I
 >  Pour ouvrir le **structure du Document** fenêtre, dans le **vue** menu, pointez sur **Windows autres**, puis sélectionnez **structure du Document**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : créer des Applications de Console de Workflow de Machine à états (hérité)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)   
- [Comment : créer une bibliothèque de flux de travail de Machine à états (hérité)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)   
+ [Guide pratique pour Créer des Applications de Console de Workflow de Machine à états (hérité)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)   
+ [Guide pratique pour Créer une bibliothèque de flux de travail de Machine à états (hérité)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)   
  [Flux de travail de Machine à États](http://go.microsoft.com/fwlink?LinkID=65016)   
  [À l’aide de l’activité StateActivity](http://go.microsoft.com/fwlink?LinkID=65083)   
  [À l’aide de l’activité StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65006)   
