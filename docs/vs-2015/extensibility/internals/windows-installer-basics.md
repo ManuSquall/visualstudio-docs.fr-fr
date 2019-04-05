@@ -1,34 +1,29 @@
 ---
 title: Principes fondamentaux de programme d’installation de Windows | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Windows Installer, VSPackages
 - VSPackages, Windows Installer basics
 ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b3756f8e9c8b22b9e6a7da52e076364024fe49d1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e0d80320b47f0d5968b4aa0e795743e394db2c19
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747646"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001477"
 ---
 # <a name="windows-installer-basics"></a>Éléments de base de Windows Installer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Le programme d’installation de Windows installe et désinstalle des applications ou des produits logiciels sur l’ordinateur d’un utilisateur, effectuer ces tâches dans des unités appelées des composants du programme d’installation de Windows (parfois appelés WICs ou composants uniquement). Un GUID identifie chaque WIC, qui est l’unité de base de l’installation et le décompte de références pour les installations à l’aide du programme d’installation de Windows.  
   
- Pour obtenir une documentation complète de Windows Installer, consultez la rubrique de la Platform SDK, [programme d’installation de Windows](http://msdn.microsoft.com/library/aa372866.aspx).  
+ Pour obtenir une documentation complète de Windows Installer, consultez la rubrique de la Platform SDK, [programme d’installation de Windows](/previous-versions/2kt85ked(v=vs.120)).  
   
 ## <a name="authoring-a-vspackage"></a>Création d’un VSPackage  
  Programme d’installation de Windows utilise des packages d’installation, qui contiennent des informations dont le programme d’installation de Windows a besoin pour installer, désinstaller ou réparer un produit et exécuter l’interface utilisateur du programme d’installation (IU). Chaque package d’installation inclut un fichier .msi, qui contient une base de données de l’installation, un flux d’informations de résumé et les flux de données de diverses parties de l’installation. Pour utiliser le programme d’installation, vous devez créer une installation. Étant donné que le programme d’installation organise les installations autour du concept de composants et stocke des informations sur l’installation dans une base de données relationnelle, le processus de la création d’un package d’installation largement implique les étapes suivantes :  
@@ -80,4 +75,3 @@ Le programme d’installation de Windows installe et désinstalle des applicatio
   
 ## <a name="see-also"></a>Voir aussi  
  [Que se passe-t-il si les règles de composant sont interrompues ?](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)
-

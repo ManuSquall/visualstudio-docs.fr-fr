@@ -1,14 +1,9 @@
 ---
 title: Vue d’ensemble du Cache ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +16,13 @@ ms.assetid: e379921e-9ef1-4326-bbf3-53ba67925526
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 5e976877a045b6efc7ca3d9fb103b9d1a8e88df7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 58ea758ea10e2c58ff123a2bc991f14191db0aa1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217293"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953137"
 ---
 # <a name="clickonce-cache-overview"></a>Vue d'ensemble du cache ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,6 +38,3 @@ Tous les [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applications, qu
   
 ## <a name="see-also"></a>Voir aussi  
  [Accès aux données locales et distantes dans les applications ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)
-
-
-

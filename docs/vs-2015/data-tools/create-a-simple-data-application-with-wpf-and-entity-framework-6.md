@@ -1,25 +1,22 @@
 ---
 title: Créer une application de données simple avec WPF et Entity Framework 6 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 65929fab-5d78-4e04-af1e-cf4957f230f6
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ac3db033b9e8055c28f29d54027df5fadf156742
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 56c211597e99689e1ad263cfe12d7dafdf3cf5cc
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922196"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001558"
 ---
-# <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Créer une application de données simple avec WPF et Entity Framework 6
+# <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Créer une application de données simple avec WPF et Entity Framework 6
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -30,9 +27,9 @@ Cette procédure pas à pas montre comment créer une application de base « fo
 ## <a name="install-and-connect-to-northwind"></a>Installer et se connecter à Northwind  
  Cet exemple utilise SQL Server Express LocalDB et la base de données Northwind. Cela devrait fonctionner avec d’autres produits de base de données SQL tout aussi bien si le fournisseur de données ADO.NET pour ce produit prend en charge Entity Framework.  
   
-1.  Si vous n’êtes déjà fait, installez SQL Server 2014 LocalDB Express 32 bits à partir de la [page de téléchargement des éditions de SQL Server](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx).  
+1.  Si vous n’êtes déjà fait, installez SQL Server 2014 LocalDB Express 32 bits à partir de la [page de téléchargement des éditions de SQL Server](https://www.microsoft.com/sql-server/sql-server-editions-express).  
   
-2.  Installer la base de données Northwind en suivant les instructions fournies ici : [bases de données exemple installer SQL Server](../data-tools/install-sql-server-sample-databases.md).  
+2.  Installer la base de données Northwind en suivant les instructions fournies ici : [Installer les bases de données SQL Server](../data-tools/install-sql-server-sample-databases.md).  
   
 3.  [Ajouter de nouvelles connexions](../data-tools/add-new-connections.md) pour Northwind.  
   
@@ -393,7 +390,7 @@ Cette procédure pas à pas montre comment créer une application de base « fo
 ## <a name="add-buttons-to-navigate-add-update-and-delete"></a>Ajouter des boutons pour naviguer, ajouter, mettre à jour et supprimer  
  Dans les applications Windows Forms, vous obtenez un objet de BindingNavigator avec des boutons pour parcourir les lignes dans une base de données et effectuer des opérations CRUD de base. WPF ne fournit pas un BindingNavigator mais ils sont assez faciles à créer. Nous allons le faire avec des boutons à l’intérieur d’un StackPanel horizontal dans la ligne inférieure de la grille de la page, et nous allons associer les boutons de commandes qui sont liés aux méthodes dans le code-behind.  
   
- La logique de commande sur quatre parties : (1) les commandes, (2) les liaisons, (3) les boutons et (4) les gestionnaires de commandes dans le code-behind.  
+ Il existe des parties sur quatre à la logique de commande : (1) les commandes (2) les liaisons, (3) les boutons et (4) les gestionnaires de commandes dans le code-behind.  
   
 #### <a name="add-commands-bindings-and-buttons-in-xaml"></a>Ajouter des commandes, les liaisons et les boutons dans XAML  
   
@@ -709,4 +706,3 @@ Cette procédure pas à pas montre comment créer une application de base « fo
   
 ## <a name="see-also"></a>Voir aussi  
  [Outils de données Visual Studio pour .NET](../data-tools/visual-studio-data-tools-for-dotnet.md) [Documentation d’Entity Framework](https://msdn.microsoft.com/data/ee712907.aspx)
-
