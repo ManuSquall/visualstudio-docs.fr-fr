@@ -1,14 +1,9 @@
 ---
-title: 'Comment : définir un emplacement de fichier journal personnalisé pour les erreurs de déploiement ClickOnce | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Définir un emplacement de fichier journal personnalisé pour les erreurs de déploiement ClickOnce | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,15 +16,15 @@ ms.assetid: 77424414-7f0e-4b99-94bb-ea130de92d09
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: e4108287e120eabb4c8fc38d1dc29f2a81ea3d47
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a38e453d9bfff3b2633eb98cc5d6127fa126335f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207699"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953372"
 ---
-# <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>Comment : définir l'emplacement d'un fichier journal personnalisé pour les erreurs de déploiement ClickOnce
+# <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>Procédure : Définir l’emplacement d’un fichier journal personnalisé pour les erreurs de déploiement ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] conserve les fichiers de journaux d’activation pour tous les déploiements. Ces journaux documentent toutes les erreurs relatives à l’installation et l’initialisation une [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] déploiement. Par défaut, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] crée un fichier journal pour chaque activation de déploiement. Elle stocke ces fichiers journaux dans le dossier fichiers Internet temporaires. Le fichier journal pour un déploiement s’affiche à l’utilisateur lorsqu’un échec d’activation se produit, et l’utilisateur clique sur **détails** dans la boîte de dialogue d’erreur.  
@@ -56,8 +51,3 @@ ms.locfileid: "49207699"
   
 ## <a name="see-also"></a>Voir aussi  
  [Dépannage des déploiements ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
-
-
-
-
-

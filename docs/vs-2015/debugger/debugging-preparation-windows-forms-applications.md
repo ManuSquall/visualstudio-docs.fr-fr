@@ -1,14 +1,9 @@
 ---
-title: 'Préparation du débogage : Applications Windows Forms | Microsoft Docs'
-ms.custom: ''
+title: 'Débogage de la préparation : Les Applications Windows Forms | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -27,20 +22,20 @@ ms.assetid: 7092ee7f-8378-4def-aef8-1695bd97cf14
 caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4997aa5f184fb5d6f0e9a3ccd08a9d829c26a0cc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 4574c5ec455f37813e4831cbf098ca4ba6c3c1ba
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765630"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953491"
 ---
-# <a name="debugging-preparation-windows-forms-applications"></a>Préparation du débogage : applications Windows Forms
+# <a name="debugging-preparation-windows-forms-applications"></a>Débogage de la préparation : Applications Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le modèle de projet Windows Forms crée une application Windows Forms. Le débogage de ce type d'application dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] est assez simple. Pour plus d’informations, consultez [création d’un projet d’Application Windows](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa).  
+Le modèle de projet Windows Forms crée une application Windows Forms. Le débogage de ce type d'application dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] est assez simple. Pour plus d’informations, consultez [création d’un projet d’Application Windows](http://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa).  
   
- Lorsque vous créez un projet Windows Forms à l’aide du modèle de projet, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] crée automatiquement les paramètres requis pour les configurations Debug et Release. Si nécessaire, vous pouvez modifier ces paramètres. Ces paramètres peuvent être modifiés dans le  **\<nom_projet > Pages de propriétés** boîte de dialogue (**mon projet** en Visual Basic).  
+ Lorsque vous créez un projet Windows Forms à l’aide du modèle de projet, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] crée automatiquement les paramètres requis pour les configurations Debug et Release. Si nécessaire, vous pouvez modifier ces paramètres. Ces paramètres peuvent être modifiés dans la boîte de dialogue **Pages de propriétés de \<nom du projet>** (**My Project** en Visual Basic).  
   
  Pour plus d’informations, consultez [paramètres de propriété recommandés](../debugger/managed-debugging-recommended-property-settings.md).  
   
@@ -48,9 +43,9 @@ Le modèle de projet Windows Forms crée une application Windows Forms. Le débo
   
 ### <a name="configuration-properties-in-debug-tab"></a>Propriétés de configuration sous l'onglet Déboguer  
   
-|**Nom de propriété**|**Paramètre**|  
+|**Nom de la propriété**|**Paramètre**|  
 |-----------------------|-----------------|  
-|**Action de démarrage**|-La valeur **projet de démarrage,** la plupart du temps. La valeur **démarrer le programme externe** si vous souhaitez démarrer un autre fichier exécutable lorsque vous démarrez le débogage (habituellement pour déboguer des DLL).|  
+|**Action de démarrage**|-   La valeur est la plupart du temps **Démarrer le projet**. Affectez la valeur **Démarrer le programme externe** si vous souhaitez démarrer un autre fichier exécutable quand vous commencez le débogage (habituellement pour déboguer des DLL).|  
   
  Vous pouvez déboguer des applications Windows Forms dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou en établissant un attachement avec une application en cours d’exécution. Pour plus d’informations sur l’attachement, consultez [attacher aux processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
@@ -70,18 +65,15 @@ Le modèle de projet Windows Forms crée une application Windows Forms. Le débo
   
       Pour plus d’informations, consultez [Création de gestionnaires d’événements dans les Windows Forms](http://msdn.microsoft.com/library/6514e530-c6b8-489c-a8d2-eda7b7072701).  
   
-3. Sur le **déboguer** menu, cliquez sur **Démarrer**.  
+3. Dans le menu **Déboguer**, cliquez sur **Démarrer**.  
   
 4. Débogage en utilisant les techniques présentées dans [principes fondamentaux du débogueur](../debugger/debugger-basics.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage du code managé](../debugger/debugging-managed-code.md)   
  [Types de projets C#, F# et Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
- [Comment : jeu de Configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md)   
+ [Guide pratique pour définir des configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md)   
  [Paramètres de projet pour des configurations Debug C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Paramètres de projet pour une configuration Debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
- [Attacher au processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
+ [Attacher à des processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Windows Forms](http://msdn.microsoft.com/library/627df1e9-b254-41af-bbac-9a4f02810c54)
-
-
-

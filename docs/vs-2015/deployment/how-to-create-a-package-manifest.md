@@ -1,14 +1,9 @@
 ---
-title: 'Comment : créer un manifeste de Package | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Créer un manifeste de Package | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,20 +18,20 @@ ms.assetid: 5aecc507-2764-42f2-ae6f-c227971cf0af
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 2941000e9fa2c6f1d9fd4835c9fd0b8fa1fd1b4f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 725f2a7882b0825795ac75906bdfd6ef1cfef669
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182427"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953689"
 ---
-# <a name="how-to-create-a-package-manifest"></a>Comment : créer un manifeste de package
+# <a name="how-to-create-a-package-manifest"></a>Procédure : Créer un manifeste de Package
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pour déployer les composants requis pour votre application, vous pouvez utiliser un package de programme d’amorçage. Un package de programme d’amorçage contient un fichier de manifeste de produit unique, mais un manifeste de package pour chacun des paramètres régionaux. Les fonctionnalités partagées entre les différentes versions localisées doit être placé dans le manifeste de produit.  
   
- Pour plus d’informations sur les manifestes de package, consultez [Comment : créer un manifeste de produit](../deployment/how-to-create-a-product-manifest.md).  
+ Pour plus d’informations sur les manifestes de package, consultez [Comment : Créer un manifeste de produit](../deployment/how-to-create-a-product-manifest.md).  
   
 ## <a name="creating-the-package-manifest"></a>Création du manifeste de Package  
   
@@ -108,6 +103,3 @@ installing this package.</String>
   
 ## <a name="see-also"></a>Voir aussi  
  [Informations de référence sur le schéma de produit et de package](../deployment/product-and-package-schema-reference.md)
-
-
-
