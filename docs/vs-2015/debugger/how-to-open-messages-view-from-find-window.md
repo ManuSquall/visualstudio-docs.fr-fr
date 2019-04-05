@@ -1,14 +1,9 @@
 ---
-title: 'Comment : ouvrir la vue Messages à partir de la fenêtre Rechercher | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Ouvrir la vue Messages à partir de la fenêtre Rechercher | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Messages View in Spy++, opening
 - opening Messages View in Spy++
@@ -16,15 +11,15 @@ ms.assetid: 601a193e-432a-417b-9406-6fec9e401264
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 64d32064ef20b1f7e188624a5a91ffd231b82b66
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 53ee0dce825609c13622911d5836f16954fa7a06
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801249"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949066"
 ---
-# <a name="how-to-open-messages-view-from-find-window"></a>Comment : ouvrir la vue Messages à partir de Rechercher une fenêtre
+# <a name="how-to-open-messages-view-from-find-window"></a>Procédure : ouvrir la vue Messages à partir de la fenêtre Rechercher
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Il peut s’avérer pratique d’utiliser le **rechercher une fenêtre** boîte de dialogue pour sélectionner une fenêtre cible, puis ouvrez un affichage de Messages de cette fenêtre.  
@@ -60,6 +55,3 @@ Il peut s’avérer pratique d’utiliser le **rechercher une fenêtre** boîte 
      Selon les options sélectionnées, messages commencent le streaming dans la fenêtre d’affichage de Messages active.  
   
 9. Lorsque vous avez suffisamment de messages, choisissez **Stop Logging** à partir de la **Messages** menu.
-
-
-

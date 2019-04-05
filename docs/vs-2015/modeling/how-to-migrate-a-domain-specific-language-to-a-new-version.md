@@ -1,25 +1,22 @@
 ---
-title: 'Comment : migrer un langage spécifique à un domaine vers une nouvelle Version | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Migrer un langage spécifique à un domaine vers une nouvelle Version | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 6a1ae073-443e-45ca-8bc9-9b944362b449
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 52d8cb794b205631e7cc455241f48bcc78b879b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 22addb1c98f72f265665ca5737180c24744b0f32
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844469"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951397"
 ---
-# <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Comment : migrer un langage spécifique à un domaine vers une nouvelle version
+# <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Procédure : Migrer un langage spécifique à un domaine vers une nouvelle version
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez migrer des projets qui définissent et utilisent le langage spécifique à un domaine à [!INCLUDE[vs2010](../includes/vs2010-md.md)] à partir de la version de [!INCLUDE[dsl](../includes/dsl-md.md)] qui a été distribué avec [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)].  
@@ -28,7 +25,7 @@ Vous pouvez migrer des projets qui définissent et utilisent le langage spécifi
   
  Vous devez exécuter l’outil de migration de manière explicite : il n’est pas lancée automatiquement lorsque vous ouvrez une solution dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Vous trouverez l’outil et le document des instructions détaillées sur ce chemin d’accès :  
   
- **% Programme Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
+ **%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
   
 ## <a name="before-you-migrate-your-dsl-projects"></a>Avant de migrer vos projets DSL  
  L’outil de migration modifie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fichiers projet (**.csproj**) et les fichiers solution (**.sln**).  
@@ -47,7 +44,7 @@ Vous pouvez migrer des projets qui définissent et utilisent le langage spécifi
   
    -   Double-cliquez sur l’outil dans l’Explorateur Windows (ou Explorateur de fichiers) ou de démarrer l’outil à partir d’une invite de commandes. L’outil se trouve dans cet emplacement :  
   
-        **%ProgramFiles%\Microsoft visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
+        **%ProgramFiles%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
   
 2. Choisissez un dossier qui contient les solutions et projets que vous souhaitez convertir.  
   
@@ -81,7 +78,7 @@ Vous pouvez migrer des projets qui définissent et utilisent le langage spécifi
    2.  Cliquez sur le **transformer tous les modèles** bouton dans l’en-tête de l’Explorateur de solutions.  
   
        > [!NOTE]
-       >  Vous pouvez effectuer cette étape inutiles. Pour plus d’informations, consultez [comment automatiser transformer tous les modèles](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+       >  Vous pouvez effectuer cette étape inutiles. Pour plus d’informations, consultez [comment automatiser transformer tous les modèles](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 6. Mettre à jour votre code personnalisé dans les projets convertis.  
   
@@ -91,6 +88,3 @@ Vous pouvez migrer des projets qui définissent et utilisent le langage spécifi
   
 ## <a name="see-also"></a>Voir aussi  
  [Nouveautés de la visualisation et de la modélisation dans le SDK](../misc/what-s-new-in-visualization-and-modeling-sdk.md)
-
-
-

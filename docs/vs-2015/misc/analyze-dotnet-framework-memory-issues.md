@@ -1,26 +1,21 @@
 ---
 title: Analyser les problèmes de mémoire .NET Framework | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 f1_keywords:
 - vs.diagnostics.managedmemoryanalysis
 ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: mikejo
-manager: douge
-ms.openlocfilehash: 5b5b79e351f828f443e133f40c322ffba3f1a8b6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6f2a0680c117aa5982fb0e44144e74c5fef76faa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810479"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949052"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>Analyser des problèmes de mémoire liés à .NET Framework
 Vous pouvez identifier les fuites et l'utilisation inefficace de la mémoire dans le code .NET Framework à l'aide de l'analyseur de mémoire managée de Visual Studio. La version minimale de .NET Framework du code cible est .NET Framework 4.5.  
@@ -45,7 +40,7 @@ Vous pouvez identifier les fuites et l'utilisation inefficace de la mémoire dan
 ##  <a name="BKMK_Memory_use_in__NET_Framework_apps"></a> Utilisation de la mémoire dans les applications .NET Framework  
  .NET Framework étant un runtime avec Garbage Collection, dans la plupart des applications l'utilisation de la mémoire n'est pas un problème. Par contre, avec les applications de longue durée telles que les applications et les services web, et sur les appareils avec une quantité de mémoire limitée, l'accumulation d'objets en mémoire peut avoir un impact sur les performances de l'application et de l'appareil. Une utilisation excessive de la mémoire peut priver l'application et l'ordinateur de ressources si le garbage collector s'exécute trop souvent ou si le système d'exploitation est contraint de déplacer de la mémoire entre la RAM et le disque. Dans le pire des cas, une application peut se bloquer avec une exception « Mémoire insuffisante ».  
   
- .NET *tas managé* est une région de mémoire virtuelle où sont stockés les objets de référence créés par une application. La durée de vie des objets est gérée par le garbage collector. Le garbage collector utilise des références pour effectuer le suivi des objets qui occupent des blocs de mémoire. Une référence est créée quand un objet est créé et assigné à une variable. Un même objet peut avoir plusieurs références. Par exemple, des références supplémentaires à un objet peuvent être créées en ajoutant l'objet à une classe, une collection ou autre structure de données ou en assignant l'objet à une seconde variable. Une référence peut aussi être créée quand un objet ajoute un gestionnaire à l'événement d'un autre objet. Dans ce cas, le second objet contient la référence au premier jusqu'à ce que le gestionnaire soit supprimé de manière explicite ou que le second objet soit détruit.  
+ .NET *tas managé* est une région de mémoire virtuelle où sont stockés les objets de référence créés par une application. La durée de vie des objets est gérée par le garbage collector. Le garbage collector utilise des références pour effectuer le suivi des objets qui occupent des blocs de mémoire. Une référence est créée quand un objet est créé et assigné à une variable. Un même objet peut avoir plusieurs références. Par exemple, des références supplémentaires à un objet peuvent être créées en ajoutant l’objet à une classe, une collection ou autre structure de données ou en assignant l’objet à une seconde variable. Une référence peut aussi être créée quand un objet ajoute un gestionnaire à l'événement d'un autre objet. Dans ce cas, le second objet contient la référence au premier jusqu'à ce que le gestionnaire soit supprimé de manière explicite ou que le second objet soit détruit.  
   
  Pour chaque application, le garbage collector tient à jour une arborescence de références qui assure le suivi des objets référencés par l’application. Le *arborescence de références* a un jeu de racines, ce qui inclut des objets globaux et statiques, ainsi que des piles de threads associées et dynamiquement des objets instanciés de. Un objet est enraciné si au moins l'un de ses objets parents y fait référence. Le garbage collector peut récupérer la mémoire d'un objet uniquement quand aucun autre objet ou variable dans l'application n'y fait référence.  
   

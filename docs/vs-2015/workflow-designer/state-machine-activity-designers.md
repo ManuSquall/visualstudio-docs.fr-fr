@@ -1,30 +1,27 @@
 ---
 title: Concepteurs d’activités de Machine d’état | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 97f0bff5-7e48-4914-8f04-8015a1c6bfae
 caps.latest.revision: 5
 author: steved0x
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: fff12b5d3ba67f01a210d708081a010c4c20eea1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5efc22f6254ec0040dc4d767d7ac2831b4bd96f7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245516"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952679"
 ---
 # <a name="state-machine-activity-designers"></a>Concepteurs d'activités d'ordinateur d'état
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] inclut plusieurs concepteurs d'activités que vous pouvez utiliser lors de la construction de vos workflows. Cette section contient les concepteurs d'activités fournis par le système utilisés pour créer et gérer des workflows de machine à états. Les rubriques suivantes décrivent ces concepteurs et fournissent des conseils sur la façon de les utiliser.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [StateMachine](../workflow-designer/statemachine-activity-designer.md)  
- Contient une collection d’états et modélise les workflows à l’aide du modèle familier de machine à états.  
+ Contient une collection d'états et modélise les workflows à l'aide du modèle familier de machine à états.  
   
  [État](../workflow-designer/state-activity-designer.md)  
  Représente un état dans lequel une machine à états peut être.  

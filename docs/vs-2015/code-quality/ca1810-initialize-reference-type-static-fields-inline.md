@@ -1,14 +1,9 @@
 ---
-title: 'CA1810 : Initialisez référence type champs statiques en ligne | Microsoft Docs'
-ms.custom: ''
+title: 'CA1810 : Initialiser des champs statiques de type référence en ligne | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - InitializeReferenceTypeStaticFieldsInline
 - CA1810
@@ -20,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e4d7ffbe4fc821ffd70b0bb299b2a4738d63873b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2722286af0d4c95fec30593047bedf1fe0ba4d2d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862682"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951584"
 ---
 # <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810 : Initialisez les champs statiques de type référence en ligne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ ms.locfileid: "49862682"
  Un type référence déclare un constructeur statique explicite.
 
 ## <a name="rule-description"></a>Description de la règle
- Lorsqu’un type déclare un constructeur statique explicite, le compilateur juste-à-temps (JIT, Just-In-Time) ajoute une vérification à chacun des méthodes statiques et constructeurs d’instances du type afin de garantir que le constructeur statique a été appelé précédemment. L’initialisation statique est déclenchée lorsqu’un membre statique est accessible ou lorsqu’une instance du type est créée. Toutefois, l’initialisation statique n’est pas déclenchée si vous déclarez une variable du type, mais ne l’utilisez pas, ce qui peut être important si l’initialisation modifie l’état global.
+ Lorsqu'un type déclare un constructeur statique explicite, le compilateur juste-à-temps (JIT, Just-In-Time) ajoute une vérification à chacun des méthodes statiques et constructeurs d'instances du type afin de garantir que le constructeur statique a été appelé précédemment. L’initialisation statique est déclenchée lorsqu’un membre statique est accessible ou lorsqu’une instance du type est créée. Toutefois, l’initialisation statique n’est pas déclenchée si vous déclarez une variable du type, mais ne l’utilisez pas, ce qui peut être important si l’initialisation modifie l’état global.
 
  Lorsque toutes les données statiques sont initialisées inline et un constructeur statique explicite n’est pas déclaré, les compilateurs Microsoft intermediate language (MSIL) ajoutent le `beforefieldinit` indicateur et un constructeur statique implicit qui initialise les données statiques, pour le type MSIL définition. Lorsque le compilateur JIT rencontre le `beforefieldinit` indicateur, la plupart du temps, les vérifications du constructeur statique ne sont pas ajoutées. L’initialisation statique est garantie à un moment avant que tous les champs statiques sont accessibles, mais pas avant un constructeur d’instance ou méthode statique est appelé. Notez que l’initialisation statique peut se produire à tout moment après la déclaration d’une variable du type.
 
@@ -72,7 +67,4 @@ ms.locfileid: "49862682"
  **{** 
  **} / de fin de la classe NoStaticConstructor**
 ## <a name="related-rules"></a>Règles associées
- [CA2207 : Initialisez les champs statiques des types de valeurs inline](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)
-
-
-
+ [CA2207 : Initialiser des champs statiques de type valeur en ligne](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)
