@@ -1,12 +1,9 @@
 ---
 title: Créer un contrôle utilisateur Windows Forms qui prend en charge la liaison de données de recherche | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,23 +17,23 @@ ms.assetid: c48b4d75-ccfc-4950-8b14-ff8adbfe4208
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6a1393f45c46709e4085d7e170265b92c6e00266
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 786895d045b4ee43d9fbb8cb519fdd47d76b057a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219482"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952619"
 ---
-# <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Créer un contrôle utilisateur Windows Forms qui prend en charge la liaison de données de recherche
+# <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Créer un contrôle utilisateur Windows Forms prenant en charge la liaison de données de recherche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-Lors de l’affichage des données dans les Windows Forms, vous pouvez choisir des contrôles existants à partir de la **boîte à outils**, ou vous pouvez créer des contrôles personnalisés si votre application requiert des fonctionnalités non disponibles dans les contrôles standard. Cette procédure pas à pas vous indique comment créer un contrôle qui implémente l'objet <xref:System.ComponentModel.LookupBindingPropertiesAttribute>. Les contrôles qui implémentent <xref:System.ComponentModel.LookupBindingPropertiesAttribute> peuvent contenir trois propriétés pouvant être liées aux données. Ce type de contrôles est similaire à <xref:System.Windows.Forms.ComboBox>.  
+Pour afficher des données dans Windows Forms, vous pouvez choisir des contrôles existants dans la **Boîte à outils** ou créer des contrôles personnalisés si votre application requiert des fonctionnalités qui ne sont pas disponibles dans les contrôles standard. Cette procédure pas à pas vous indique comment créer un contrôle qui implémente l'objet <xref:System.ComponentModel.LookupBindingPropertiesAttribute>. Les contrôles qui implémentent <xref:System.ComponentModel.LookupBindingPropertiesAttribute> peuvent contenir trois propriétés pouvant être liées aux données. Ce type de contrôles est similaire à <xref:System.Windows.Forms.ComboBox>.  
   
  Pour plus d’informations sur la création de contrôles, consultez [développement de contrôles Windows Forms au moment du Design](http://msdn.microsoft.com/library/e5a8e088-7ec8-4fd9-bcb3-9078fd134829).  
   
- Lors de la création de contrôles à utiliser dans les scénarios de liaison de données, vous devez implémenter l’un des attributs de liaison de données suivants :  
+ Quand vous créez des contrôles utilisables dans des scénarios de liaison de données, vous devez implémenter l’un des attributs de liaison de données suivants :  
   
 |Utilisation d’attributs de liaison de données|  
 |-----------------------------------|  
@@ -50,7 +47,7 @@ Lors de l’affichage des données dans les Windows Forms, vous pouvez choisir d
   
 -   Créer un nouveau **Windows Application**.  
   
--   Ajouter un nouveau **contrôle utilisateur** à votre projet.  
+-   Ajouter un nouveau **Contrôle utilisateur** à votre projet.  
   
 -   Concevoir visuellement le contrôle utilisateur.  
   
@@ -58,7 +55,7 @@ Lors de l’affichage des données dans les Windows Forms, vous pouvez choisir d
   
 -   Créer un jeu de données avec le **Configuration de Source de données** Assistant.  
   
--   Définir le **CustomerID** colonne sur le **commandes** de table, dans le **des Sources de données** fenêtre, à utiliser le nouveau contrôle.  
+-   Définir la colonne **CustomerID** de la table **Orders** dans la fenêtre **Sources de données** pour qu’elle utilise le nouveau contrôle.  
   
 -   Créer un formulaire pour afficher des données dans le nouveau contrôle.  
   
@@ -78,31 +75,31 @@ Lors de l’affichage des données dans les Windows Forms, vous pouvez choisir d
   
 3.  Sélectionnez **Windows Forms Application**, puis cliquez sur **OK**.  
   
-     Le **LookupControlWalkthrough** projet est créé et ajouté à **l’Explorateur de solutions**.  
+     Le projet **LookupControlWalkthrough** est créé et ajouté à l’**Explorateur de solutions**.  
   
 ## <a name="add-a-user-control-to-the-project"></a>Ajouter un contrôle utilisateur au projet  
- Cette procédure pas à pas crée un contrôle de recherche à partir d’un **contrôle utilisateur**, donc ajouter un **contrôle utilisateur** d’élément à la **LookupControlWalkthrough** projet.  
+ Cette procédure pas à pas crée un contrôle de recherche à partir d’un **Contrôle utilisateur** : ajoutez donc un élément **Contrôle utilisateur** au projet **LookupControlWalkthrough**.  
   
 #### <a name="to-add-a-user-control-to-the-project"></a>Pour ajouter un contrôle utilisateur au projet  
   
-1.  À partir de la **projet** menu, sélectionnez **ajouter un contrôle utilisateur**.  
+1.  Dans le menu **Projet**, sélectionnez **Ajouter un contrôle utilisateur**.  
   
 2.  Type `LookupBox` dans le **nom** zone, puis cliquez sur **ajouter**.  
   
-     Le **LookupBox** contrôle est ajouté à **l’Explorateur de solutions**et s’ouvre dans le concepteur.  
+     Le contrôle **LookupBox** est ajouté à l’**Explorateur de solutions** et s’ouvre dans le concepteur.  
   
 ## <a name="design-the-lookupbox-control"></a>Concevoir le contrôle LookupBox  
   
 #### <a name="to-design-the-lookupbox-control"></a>Pour concevoir le contrôle LookupBox  
   
--   Faites glisser un <xref:System.Windows.Forms.ComboBox> à partir de la **boîte à outils** aire de conception du contrôle utilisateur.  
+-   Faites glisser un <xref:System.Windows.Forms.ComboBox> depuis la **Boîte à outils** vers l’aire de conception du contrôle utilisateur.  
   
 ## <a name="add-the-required-data-binding-attribute"></a>Ajoutez l’attribut de liaison de données requis  
  Pour des contrôles de recherche prenant en charge la liaison de données, vous pouvez implémenter l’attribut<xref:System.ComponentModel.LookupBindingPropertiesAttribute>.  
   
 #### <a name="to-implement-the-lookupbindingproperties-attribute"></a>Pour implémenter l'attribut LookupBindingProperties  
   
-1.  Commutateur le **LookupBox** contrôle en mode code. (Sur le **vue** menu, choisissez **Code**.)  
+1.  Faites passer le contrôle **LookupBox** en mode Code. (Dans le menu **Affichage**, choisissez **Code**.)  
   
 2.  Remplacez le code de `LookupBox` par le code suivant :  
   
@@ -112,55 +109,55 @@ Lors de l’affichage des données dans les Windows Forms, vous pouvez choisir d
 3.  Dans le menu **Générer** , cliquez sur **Générer la solution**.  
   
 ## <a name="create-a-data-source-from-your-database"></a>Créer une source de données à partir de votre base de données  
- Cette étape crée une source de données à l’aide de la **Configuration de Source de données** Assistant, selon le `Customers` et `Orders` tables dans la base de données Northwind. Vous devez avoir accès à l'exemple de base de données Northwind pour créer la connexion. Pour plus d’informations sur la configuration de la base de données Northwind, consultez [bases de données exemple installer SQL Server](../data-tools/install-sql-server-sample-databases.md).  
+ Cette étape crée une source de données à l’aide de l’Assistant **Configuration de source de données** basée sur les tables `Customers` et `Orders` de l’exemple de base de données Northwind. Vous devez avoir accès à l'exemple de base de données Northwind pour créer la connexion. Pour plus d’informations sur la configuration de la base de données Northwind, consultez [bases de données exemple installer SQL Server](../data-tools/install-sql-server-sample-databases.md).  
   
 #### <a name="to-create-the-data-source"></a>Pour créer la source de données  
   
 1.  Dans le menu **Données** , cliquez sur **Afficher les sources de données**.  
   
-2.  Dans le **des Sources de données** fenêtre, sélectionnez **ajouter une nouvelle Source de données** pour démarrer le **Configuration de Source de données** Assistant.  
+2.  Dans la fenêtre **Sources de données**, sélectionnez **Ajouter une nouvelle source de données** pour démarrer l’Assistant **Configuration de source de données**.  
   
 3.  Sélectionnez **Base de données** dans la page **Choisir un type de source de données** , puis cliquez sur **Suivant**.  
   
-4.  Sur le **choisir votre connexion de données** page, procédez comme suit :  
+4.  Dans la page **Choisir votre connexion de données**, effectuez l’une des opérations suivantes :  
   
     -   Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.  
   
-    -   Sélectionnez **nouvelle connexion** pour lancer le **Ajouter/modifier la connexion** boîte de dialogue.  
+    -   Sélectionnez **Nouvelle connexion** pour afficher la boîte de dialogue **Ajouter/Modifier la connexion**.  
   
-5.  Si votre base de données requiert un mot de passe, sélectionnez l’option pour inclure les données sensibles, puis cliquez sur **suivant**.  
+5.  Si votre base de données nécessite un mot de passe, sélectionnez l’option pour inclure les données sensibles, puis cliquez sur **Suivant**.  
   
 6.  Sur le **enregistrer la chaîne de connexion dans le fichier de Configuration de l’Application** , cliquez sur **suivant**.  
   
-7.  Sur le **choisir vos objets de base de données** page, développez le **Tables** nœud.  
+7.  Dans la page **Choisir vos objets de base de données**, développez le nœud **Tables**.  
   
-8.  Sélectionnez le `Customers` et `Orders` tables, puis cliquez sur **Terminer**.  
+8.  Sélectionnez les tables `Customers` et `Orders`, puis cliquez sur **Terminer**.  
   
-     Le **NorthwindDataSet** est ajouté à votre projet et le `Customers` et `Orders` tables apparaissent dans le **des Sources de données** fenêtre.  
+     **NorthwindDataSet** est ajouté à votre projet, et les tables `Customers` et `Orders` apparaissent dans la fenêtre **Sources de données**.  
   
 ## <a name="set-the-customerid-column-of-the-orders-table-to-use-the-lookupbox-control"></a>Définir la colonne CustomerID de la table Orders pour utiliser le contrôle LookupBox  
- Dans le **des Sources de données** fenêtre, vous pouvez définir le contrôle à créer avant de faire glisser des éléments sur votre formulaire.  
+ Dans la fenêtre **Sources de données**, vous pouvez définir le contrôle à créer avant de faire glisser des éléments vers votre formulaire.  
   
 #### <a name="to-set-the-customerid-column-to-bind-to-the-lookupbox-control"></a>Pour définir la colonne CustomerID pour qu'elle soit liée au contrôle LookupBox  
   
 1.  Ouvrez **Form1** dans le concepteur.  
   
-2.  Développez le **clients** nœud dans le **des Sources de données** fenêtre.  
+2.  Développez le nœud **Customers** dans la fenêtre **Sources de données**.  
   
-3.  Développez le **commandes** nœud (celui de la **clients** nœud ci-dessous le **télécopie** colonne).  
+3.  Développez le nœud **Orders** (inclus dans le nœud **Customers** sous la colonne **Fax**).  
   
-4.  Cliquez sur la flèche déroulante la **commandes** nœud, puis choisissez **détails** à partir de la liste de contrôle.  
+4.  Cliquez sur la flèche déroulante du nœud **Orders** et choisissez **Détails** dans la liste de contrôles.  
   
-5.  Cliquez sur la flèche déroulante la **CustomerID** colonne (dans le **commandes** nœud), puis choisissez **personnaliser**.  
+5.  Cliquez sur la flèche déroulante de la colonne **CustomerID** (dans le nœud **Orders**), puis choisissez **Personnaliser**.  
   
-6.  Sélectionnez le **LookupBox** dans la liste des **contrôles associés** dans le **Options de personnalisation de l’interface utilisateur de données** boîte de dialogue.  
+6.  Sélectionnez **LookupBox** dans la liste des **Contrôles associés** de la boîte de dialogue **Options de personnalisation de l’interface utilisateur des données**.  
   
 7.  Cliquez sur **OK**.  
   
-8.  Cliquez sur la flèche déroulante du **CustomerID** colonne, puis choisissez **LookupBox**.  
+8.  Cliquez sur la flèche de déroulement de la colonne **CustomerID** et choisissez **LookupBox**.  
   
 ## <a name="addcontrols-to-the-form"></a>Addcontrols au formulaire  
- Vous pouvez créer les contrôles liés aux données en faisant glisser des éléments à partir de la **des Sources de données** fenêtre sur **Form1**.  
+ Pour créer des contrôles liés aux données, vous pouvez faire glisser des éléments depuis la fenêtre **Sources de données** vers **Form1**.  
   
 #### <a name="to-create-data-bound-controls-on-the-windows-form"></a>Pour créer des contrôles liés aux données dans le formulaire Windows  
   
@@ -172,7 +169,7 @@ Lors de l’affichage des données dans les Windows Forms, vous pouvez choisir d
   
 -   Sélectionnez la principale **clients** nœud dans le **des Sources de données** et faire glisser vers la liste déroulante zone dans le **CustomerIDLookupBox** sur **Form1** .  
   
-     Cela configure la liaison de données pour afficher le `CompanyName` à partir de la `Customers` table, tout en conservant la `CustomerID` valeur à partir de la `Orders` table.  
+     Ceci configure la liaison des données pour afficher le `CompanyName` de la table `Customers` tout en conservant la valeur de `CustomerID` de la table `Orders`.  
   
 ## <a name="running-the-application"></a>Exécution de l’application  
   
@@ -180,8 +177,7 @@ Lors de l’affichage des données dans les Windows Forms, vous pouvez choisir d
   
 -   Appuyez sur F5 pour exécuter l'application.  
   
--   Parcourez quelques enregistrements et vérifiez que le `CompanyName` s’affiche dans le `LookupBox` contrôle.  
+-   Parcourez quelques enregistrements et vérifiez que le `CompanyName` apparaît dans le contrôle `LookupBox`.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Lier des contrôles Windows Forms à des données dans Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-

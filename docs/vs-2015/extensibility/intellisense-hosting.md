@@ -1,26 +1,21 @@
 ---
 title: Hébergement IntelliSense | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - IntelliSense hosting
 ms.assetid: 20c61f8a-d32d-47e2-9c67-bf721e2cbead
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e7e6ae688c0af3506f3d77cf2c1bac5291595b80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a5c378aec6822a436de0d8fc2656fcac7be4149f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737880"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948117"
 ---
 # <a name="intellisense-hosting"></a>Hébergement d’IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ Visual Studio permet l’hébergement d’IntelliSense. Dans IntelliSense héber
 |IHF_FORCECOMMITTOCONTEXT|Si cet indicateur est défini et que la mémoire tampon de contexte doit être mis à jour, l’hôte Active l’indicateur en lecture seule sur la mémoire tampon de contexte doivent être ignorés et les modifications pour continuer.|  
 |IHF_OVERTYPE|Modification (dans l’objet ou le contexte) doit être effectuée en mode Refrappe.|  
   
-#### <a name="ivsintellisensehostbeforecompletorcommit-and-ivsintellisensehostaftercompletorcommit"></a>IVsIntellisenseHost.BeforeCompletorCommit et IVsIntellisenseHost.AfterCompletorCommit  
+#### <a name="ivsintellisensehostbeforecompletorcommit-and-ivsintellisensehostaftercompletorcommit"></a>IVsIntellisenseHost.BeforeCompletorCommit and IVsIntellisenseHost.AfterCompletorCommit  
  Ces méthodes de rappel sont appelées par la fenêtre de saisie semi-automatique avant et après que le texte est validé, pour activer le prétraitement et le post-traitement.  
   
 #### <a name="ivsintellisensecompletor"></a>IVsIntellisenseCompletor  
@@ -56,4 +51,3 @@ Visual Studio permet l’hébergement d’IntelliSense. Dans IntelliSense héber
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.TextManager.Interop>
-

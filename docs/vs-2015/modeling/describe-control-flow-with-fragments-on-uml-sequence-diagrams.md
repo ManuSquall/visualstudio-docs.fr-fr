@@ -1,12 +1,9 @@
 ---
 title: Décrire le flux de contrôle avec des fragments dans les diagrammes de séquence UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.sequencediagram.combinedfragment.interactionoperand
 - vs.teamarch.sequencediagram.combinedfragment
@@ -19,13 +16,13 @@ ms.assetid: efcc0949-be7e-4cf4-99ef-47c36b3803ae
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4ab4c65e554e9eef75a1761719ce19f3312e07ce
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dbb3d6dd6e83d245afc8d2367e120db245d8285f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727650"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951046"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Décrire le flux de contrôle à l'aide de fragments dans les diagrammes de séquence UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ Dans un diagramme de séquence UML, les *fragments combinés* vous permettent d�
  Un fragment combiné se compose d’un ou de plusieurs *opérandes d’interaction*, chacun d’entre eux contenant un ou plusieurs messages, utilisations d’interactions ou encore fragments combinés.  
   
 > [!NOTE]
->  Cette rubrique traite des fragments dans les diagrammes de séquence. Pour plus d’informations sur la lecture des diagrammes de séquence UML, consultez [diagrammes de séquence UML : référence](../modeling/uml-sequence-diagrams-reference.md). Pour plus d’informations sur le dessin des diagrammes de séquence UML, consultez [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md).  
+>  Cette rubrique traite des fragments dans les diagrammes de séquence. Pour plus d’informations sur la lecture des diagrammes de séquence UML, consultez [diagrammes de séquence UML : Référence](../modeling/uml-sequence-diagrams-reference.md). Pour plus d’informations sur la façon de dessiner des diagrammes de séquence UML, consultez [diagrammes de séquence UML : Les instructions](../modeling/uml-sequence-diagrams-guidelines.md).  
   
  ![Fragment avec deux opérandes d’Interaction combiné](../modeling/media/uml-seqfragments.png "UML_SeqFragments")  
   
@@ -112,12 +109,12 @@ Dans un diagramme de séquence UML, les *fragments combinés* vous permettent d�
   
 |Type de fragment|Description|  
 |-------------------|-----------------|  
-|**opt**|Facultatif. Contient une séquence qui peut ou non se produire. Dans le garde, vous pouvez spécifier la condition sous laquelle elle se produit.|  
+|**Opt**|Optionnel. Contient une séquence qui peut ou non se produire. Dans le garde, vous pouvez spécifier la condition sous laquelle elle se produit.|  
 |**Alt**|Contient une liste des fragments contenant d’autres séquences de messages. Une seule séquence peut se produire à la fois.<br /><br /> Vous pouvez insérer un garde dans chaque fragment pour indiquer la condition sous laquelle il peut s’exécuter. Un garde **else** indique un fragment qui doit s’exécuter si aucun autre garde n’a la valeur True. Si tous les gardes ont la valeur False et qu’il n’existe aucun **else**, aucun des fragments n’est exécuté.|  
 |**Loop**|Le fragment est répété un certain nombre de fois. Dans le garde, vous pouvez indiquer la condition sous laquelle il doit être répété.<br /><br /> Les fragments combinés Loop possèdent des propriétés **Min** et **Max**qui indiquent les nombres minimum et maximum de fois que le fragment peut être répété. Par défaut, il n’y a aucune restriction.|  
 |**Break**|Si ce fragment est exécuté, le reste de la séquence est abandonné. Vous pouvez utiliser le garde pour indiquer la condition dans laquelle l’arrêt se produit.|  
 |**Par**|Parallel. Les événements des fragments peuvent être entrelacés.|  
-|**Critique**|Utilisé dans un fragment Par ou Seq. Indique que les messages dans ce fragment ne doivent pas être entrelacés avec d’autres messages.|  
+|**Critical**|Utilisé dans un fragment Par ou Seq. Indique que les messages dans ce fragment ne doivent pas être entrelacés avec d’autres messages.|  
 |**Seq**|Il existe au moins deux fragments d’opérande. Les messages impliquant la même ligne de vie doivent se produire dans l’ordre des fragments. Quand ils n’impliquent pas les mêmes lignes de vie, les messages des différents fragments peuvent être entrelacés en parallèle.|  
 |**Strict**|Il existe au moins deux fragments d’opérande. Les fragments doivent se produire dans l’ordre indiqué.|  
   
@@ -129,14 +126,11 @@ Dans un diagramme de séquence UML, les *fragments combinés* vous permettent d�
 |Type de fragment|Description|  
 |-------------------|-----------------|  
 |**Prendre en compte**|Spécifie une liste des messages que ce fragment décrit. D’autres messages peuvent se produire dans le système en cours d’exécution, mais ils ne sont pas significatifs aux fins de cette description.<br /><br /> Tapez la liste dans la propriété **Messages** .|  
-|**Ignorer**|Liste des messages que ce fragment ne décrit pas. Ils peuvent se produire dans le système en cours d’exécution, mais ils ne sont pas significatifs aux fins de cette description.<br /><br /> Tapez la liste dans la propriété **Messages** .|  
+|**Ignore**|Liste des messages que ce fragment ne décrit pas. Ils peuvent se produire dans le système en cours d’exécution, mais ils ne sont pas significatifs aux fins de cette description.<br /><br /> Tapez la liste dans la propriété **Messages** .|  
 |**Assert**|Le fragment d’opérande spécifie les seules séquences valides. Il est généralement utilisé dans un fragment Consider ou Ignore.|  
-|**neg**|La séquence affichée dans ce fragment ne doit pas se produire. Il est généralement utilisé dans un fragment Consider ou Ignore.|  
+|**Neg**|La séquence affichée dans ce fragment ne doit pas se produire. Il est généralement utilisé dans un fragment Consider ou Ignore.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Diagrammes de séquence UML : indications](../modeling/uml-sequence-diagrams-guidelines.md)   
- [Diagrammes de séquence UML : référence](../modeling/uml-sequence-diagrams-reference.md)   
+ [Diagrammes de séquence UML : Instructions](../modeling/uml-sequence-diagrams-guidelines.md)   
+ [Diagrammes de séquence UML : Référence](../modeling/uml-sequence-diagrams-reference.md)   
  [Modifier des modèles et des diagrammes UML](../modeling/edit-uml-models-and-diagrams.md)
-
-
-

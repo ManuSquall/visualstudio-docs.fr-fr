@@ -1,14 +1,9 @@
 ---
-title: 'Comment : inscrire une bibliothèque avec le Gestionnaire d’objets | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Inscrire une bibliothèque avec le Gestionnaire d’objets | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - libraries, registering with object manager
 - IVsLibrary2 interface, registering library with object manager
@@ -18,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: f124dd05-cb0f-44ad-bb2a-7c0b34ef4038
 caps.latest.revision: 27
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ed547d82ccacec44383fed29a0c04bb363b10084
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6be7c1fc8f615ccbf29b8c085fecf6f4d6689404
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732943"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952552"
 ---
-# <a name="how-to-register-a-library-with-the-object-manager"></a>Comment : inscrire une bibliothèque avec le Gestionnaire d’objets
+# <a name="how-to-register-a-library-with-the-object-manager"></a>Procédure : Inscrire une bibliothèque avec le Gestionnaire d’objets
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Exploration des symboles d’outils, tels que **affichage de classes**, **Explorateur d’objets**, **Explorateur d’appels** et **résultats**, vous permettent d’afficher symboles dans votre projet ou dans des composants externes. Les symboles incluent des espaces de noms, classes, interfaces, méthodes et autres éléments de langage. Les bibliothèques de suivre ces symboles et les exposer à le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Gestionnaire d’objets qui remplit les outils avec les données.  
@@ -174,5 +169,4 @@ Exploration des symboles d’outils, tels que **affichage de classes**, **Explor
 ## <a name="see-also"></a>Voir aussi  
  [Extensibilité du Service de langage hérité](../../extensibility/internals/legacy-language-service-extensibility.md)   
  [Prise en charge des outils de consultation de symbole](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [Guide pratique pour exposer des listes de symboles fournies par la bibliothèque au Gestionnaire d’objets](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
-
+ [Guide pratique pour Exposer des listes de symboles fournies par la bibliothèque pour le Gestionnaire d’objets](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

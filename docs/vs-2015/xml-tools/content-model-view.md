@@ -1,25 +1,20 @@
 ---
 title: Vue du modèle de contenu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: e8db7c7d-31cf-479e-9dcc-299759891795
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a535a97835491f4a109ed0893d20a4330b218801
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c0a25766327f2e074c4b7f8adf1ccde5a46895d9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860303"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952320"
 ---
 # <a name="content-model-view"></a>Vue de modèle de contenu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,9 +34,9 @@ La vue de modèle de contenu fournit une représentation graphique des nœuds de
 ## <a name="design-surface"></a>Aire de conception  
  Lorsqu'un nœud est sélectionné dans le panneau Espace de travail, il est ajouté à l'aire de conception de la vue de modèle de contenu où vous pouvez afficher les détails du nœud.  
   
- Le modèle de contenu d'un nœud est représenté par une arborescence graphique développable avec des éléments et des attributs qui apparaissent sous forme de nœuds d'arbre. Un seul niveau est développé par défaut. D'autres informations, telles que les compositeurs, les noms de type, les groupes et d'autres conteneurs sont placés dans une barre verticale (lorsque ces informations sont développées) le long des éléments et des attributs qu'ils encadrent. Lorsque vous double-cliquez sur une barre verticale, elle devient horizontale et l'arborescence est réduite. Lorsque vous double-cliquez sur une barre horizontale, elle devient verticale et l'arborescence est développée. Le fait de sélectionner la barre verticale sélectionne tous les nœuds dans le conteneur. Les expanseurs apparaissent à droite d'un nœud si un élément peut être développé ou réduit.  
+ Le modèle de contenu d'un nœud est représenté par une arborescence graphique développable avec des éléments et des attributs qui apparaissent sous forme de nœuds d'arbre. Un seul niveau est développé par défaut. D’autres informations, telles que les compositeurs, les noms de type, les groupes et d’autres conteneurs sont placés dans une barre verticale (lorsque ces informations sont développées) le long des éléments et des attributs qu’ils encadrent. Lorsque vous double-cliquez sur une barre verticale, elle devient horizontale et l’arborescence est réduite. Lorsque vous double-cliquez sur une barre horizontale, elle devient verticale et l’arborescence est développée. Le fait de sélectionner la barre verticale sélectionne tous les nœuds dans le conteneur. Les expanseurs apparaissent à droite d'un nœud si un élément peut être développé ou réduit.  
   
- Si l'aire de conception est vide, l'Éditeur XML, l'Explorateur de schémas XML et le filigrane sont affichés. Le *filigrane* est une liste de liens vers toutes les vues du concepteur XSD. Si le jeu de schémas comporte des erreurs, le texte suivant est affiché à la fin de la liste : « Utilisez la liste d'erreurs pour afficher et résoudre les erreurs dans le jeu ».  
+ Si l'aire de conception est vide, l'Éditeur XML, l'Explorateur de schémas XML et le filigrane sont affichés. Le *filigrane* est une liste de liens vers toutes les vues du concepteur XSD. Si le jeu de schémas comporte des erreurs, le texte suivant s’affiche à la fin de la liste : « Utiliser la liste d’erreurs pour afficher et corriger les erreurs dans le jeu. »  
   
 ## <a name="breadcrumb-bar"></a>Barre de fil d'Ariane (breadcrumb)  
  La barre de fil d'Ariane (breadcrumb) en bas de la vue de modèle de contenu indique l'emplacement du nœud sélectionné dans le jeu de schémas.  
@@ -55,7 +50,7 @@ La vue de modèle de contenu fournit une représentation graphique des nœuds de
 |**Afficher dans la vue du graphique**|Bascule vers la vue du graphique.|  
 |**Générer un exemple de XML**|Disponible uniquement pour les éléments globaux. Génère un exemple de fichier XML pour l'élément global.|  
 |**Afficher la Documentation**|Affiche ou masque le contenu du nœud Annotation/Documentation.|  
-|**Exporter le diagramme en tant qu’Image...**|Enregistre l’aire de conception dans un fichier XPS.|  
+|**Exporter le diagramme en tant qu’Image...**|Enregistre l'aire de conception dans un fichier XPS.|  
 |**Afficher le code**|Ouvre le fichier qui contient le nœud sélectionné dans l'Éditeur XML. L'élément sélectionné dans l'Explorateur de schémas XML est également sélectionné dans l'Éditeur XML.|  
 |**Propriétés (fenêtre)**|Ouvre le **propriétés** fenêtre (si elle n’est pas déjà ouvert). Cette fenêtre affiche des informations sur le nœud.|  
   
@@ -119,10 +114,7 @@ La vue de modèle de contenu fournit une représentation graphique des nœuds de
 ## <a name="xml-editor-integration"></a>Intégration de l'Éditeur XML  
  Vous pouvez basculer entre le Concepteur XSD et l'Éditeur XML à l'aide du menu contextuel.  
   
- Si vous apportez des modifications au jeu de schémas dans l’Éditeur XML, les modifications sont synchronisées dans la vue de modèle de contenu. Pour plus d’informations, consultez [intégration avec l’éditeur XML](../xml-tools/integration-with-xml-editor.md).  
+ Si vous apportez des modifications au jeu de schémas dans l'Éditeur XML, les modifications sont synchronisées dans la vue de modèle de contenu. Pour plus d’informations, consultez [intégration avec l’éditeur XML](../xml-tools/integration-with-xml-editor.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Espace de travail du Concepteur de schémas XML](../xml-tools/xml-schema-designer-workspace.md)
-
-
-
