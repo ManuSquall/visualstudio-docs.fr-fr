@@ -1,14 +1,9 @@
 ---
 title: Vue d’ensemble de la Suppression Source | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
 - code analysis, source suppression
@@ -17,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 844681d079e5565aab9eceadb73f7d8a61cbb2c6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b7f0b3ef2b680dbe4675ef6e8875ef30a1f210bc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209038"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952758"
 ---
 # <a name="in-source-suppression-overview"></a>Vue d’ensemble de la suppression à la source
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ Suppression à la source est la possibilité de supprimer ou d’ignorer des vio
  Vous ne devez pas utiliser les suppressions dans la source sur les versions release pour empêcher les métadonnées de suppression à la source de livraison par inadvertance. En raison du coût de traitement de la suppression à la source, les performances de votre application peuvent également être réduites en incluant les métadonnées de suppression à la source.  
   
 > [!NOTE]
->  Il est inutile pour transmettre code ces attributs vous-même. Pour plus d’informations, consultez [Comment : supprimer les avertissements à l’aide de l’élément de Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). L’élément de menu n’est pas disponible pour le code C++.  
+>  Il est inutile pour transmettre code ces attributs vous-même. Pour plus d'informations, voir [Procédure : Supprimer les avertissements à l’aide de l’élément de Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). L’élément de menu n’est pas disponible pour le code C++.  
   
 ## <a name="suppressmessage-attribute"></a>Attribut SuppressMessage  
  Lorsque vous cliquez sur un avertissement d’analyse du Code dans le **liste d’erreurs** puis cliquez sur **supprimer les messages**, un **SuppressMessage** attribut est ajouté dans votre code ou à la fichier de suppressions globales du projet.  
@@ -104,7 +99,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 ## <a name="generated-code"></a>Code généré  
  Les compilateurs de code managé et certains des outils tiers génèrent du code pour faciliter le développement de code rapide. Code généré par le compilateur qui s’affiche dans les fichiers sources est généralement signalé par le **GeneratedCodeAttribute** attribut.  
   
- Vous pouvez choisir s’il faut supprimer les avertissements d’analyse du Code et les erreurs pour le code généré. Pour plus d’informations sur la suppression de ces erreurs et avertissements, consultez [Comment : supprimer les avertissements pour le Code généré](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).  
+ Vous pouvez choisir s’il faut supprimer les avertissements d’analyse du Code et les erreurs pour le code généré. Pour plus d’informations sur la suppression de ces erreurs et avertissements, consultez [Comment : Supprimer les avertissements pour du Code généré](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).  
   
  Notez que l’analyse du Code ignore **GeneratedCodeAttribute** lorsqu’il est appliqué à un assembly entier ou un paramètre unique. Ces situations se produisent rarement.  
   
@@ -126,10 +121,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 >  Cible contient toujours le nom d’élément qualifié complet.  
   
 ## <a name="global-suppression-file"></a>Fichier de Suppression globale  
- Le fichier de suppression globale conserve les suppressions qui sont des suppressions au niveau global ou suppressions qui ne spécifient pas une cible. Par exemple, les suppressions de violations de niveau assembly sont stockées dans ce fichier. En outre, certaines suppressions ASP.NET sont stockées dans ce fichier, car les paramètres de niveau de projet ne sont pas disponibles pour le code-behind d’un formulaire. Une suppression globale est créée et ajoutée à votre projet la première fois que vous sélectionnez le **dans le fichier de Suppression de projet** possibilité du **supprimer les messages** commande dans la fenêtre liste d’erreurs. Pour plus d’informations, consultez [Comment : supprimer les avertissements à l’aide de l’élément de Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md).  
+ Le fichier de suppression globale conserve les suppressions qui sont des suppressions au niveau global ou suppressions qui ne spécifient pas une cible. Par exemple, les suppressions de violations de niveau assembly sont stockées dans ce fichier. En outre, certaines suppressions ASP.NET sont stockées dans ce fichier, car les paramètres de niveau de projet ne sont pas disponibles pour le code-behind d’un formulaire. Une suppression globale est créée et ajoutée à votre projet la première fois que vous sélectionnez le **dans le fichier de Suppression de projet** possibilité du **supprimer les messages** commande dans la fenêtre liste d’erreurs. Pour plus d'informations, voir [Procédure : Supprimer les avertissements à l’aide de l’élément de Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:System.Diagnostics.CodeAnalysis>
-
-
-

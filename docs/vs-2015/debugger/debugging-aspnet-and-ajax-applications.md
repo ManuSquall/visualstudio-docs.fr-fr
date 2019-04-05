@@ -1,14 +1,9 @@
 ---
 title: Débogage des Applications ASP.NET et AJAX | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,13 +18,13 @@ ms.assetid: 9d531913-541b-47b8-864d-138021fca0c6
 caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d3a600059f29d7e0034e4e64239798c32d721a1f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d1322300992359f386a43c7feef41053611bb866
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785923"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948393"
 ---
 # <a name="debugging-aspnet-and-ajax-applications"></a>Débogage d’applications ASP.NET et AJAX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,13 +50,10 @@ Le débogage d'applications Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]
  Présente quelques techniques et outils qui peuvent vous aider à déboguer votre code AJAX plus facilement.  
   
  [IntelliTrace](../debugger/intellitrace.md)  
- Déboguez votre code plus rapidement à l’aide de IntelliTrace pour enregistrer et tester un historique de l’état de votre application sans redémarrer l’application fréquemment. Vous pouvez consulter les informations sur les événements et les appels qui surviennent pendant l'exécution de votre application et commencer le débogage à temps. Requiert Visual Studio Ultimate.  
+ Déboguez votre code plus rapidement à l'aide de IntelliTrace pour enregistrer et tester un historique de l'état de votre application sans redémarrer l'application fréquemment. Vous pouvez consulter les informations sur les événements et les appels qui surviennent pendant l'exécution de votre application et commencer le débogage à temps. Requiert Visual Studio Ultimate.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité du débogueur](../debugger/debugger-security.md)   
  [Débogage d’applications et de scripts web](../debugger/debugging-web-applications-and-script.md)   
  [Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md)   
  [Principes de base du débogueur](../debugger/debugger-basics.md)
-
-
-

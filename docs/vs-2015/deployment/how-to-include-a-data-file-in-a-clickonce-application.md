@@ -1,14 +1,9 @@
 ---
-title: 'Comment : inclure un fichier de données dans une Application ClickOnce | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Inclure un fichier de données dans une Application ClickOnce | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,15 +16,15 @@ ms.assetid: 89ee46ef-bc8c-4ab0-a2ac-1220f9da06fc
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 6e4d5be3628cd9653bfc713caea426c91a205419
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8868ef00c9d7ffee7687970c5a09b6a044c85455
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884912"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58947681"
 ---
-# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Comment : inclure un fichier de données dans une application ClickOnce
+# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Procédure : Inclure un fichier de données dans une application ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Chaque [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application que vous installez est affectée à un répertoire de données sur le disque local de l’ordinateur de destination dans lequel l’application peut gérer ses propres données. Fichiers de données peuvent inclure n’importe quel type de fichiers : fichiers texte, fichiers XML ou même Microsoft Access (.mdb) de la base de données. Les procédures suivantes vous montrent comment ajouter un fichier de données de n’importe quel type dans votre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application.  
@@ -42,7 +37,7 @@ Chaque [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application que vo
   
 2. Mettre à jour votre manifeste d’application vers le fichier de données de liste.  
   
-    **Mage -u v1.0.0.0\Application.manifest - FromDirectory v1.0.0.0**  
+    **mage -u v1.0.0.0\Application.manifest -FromDirectory v1.0.0.0**  
   
     Pour effectuer cette tâche permet de recréer la liste des fichiers dans votre manifeste d’application et génère aussi automatiquement les signatures de hachage.  
   
@@ -60,11 +55,11 @@ Chaque [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application que vo
   
     Vous devez resigner votre manifeste de déploiement, car son hachage du manifeste d’application a changé.  
   
-    **mot de passe - cf cert_file - pwd le manifeste d’application -s de Mage**  
+    **mage -s app manifest -cf cert_file -pwd password**  
   
     **manifeste de l’application appm manifeste - déploiement -u Mage**  
   
-    **mot de passe - pwd cf - certfile de manifeste de déploiement de s - Mage**  
+    **mage -s deployment manifest -cf certfile -pwd password**  
   
 6. 
   
@@ -94,6 +89,3 @@ Chaque [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application que vo
   
 ## <a name="see-also"></a>Voir aussi  
  [Accès aux données locales et distantes dans les applications ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)
-
-
-

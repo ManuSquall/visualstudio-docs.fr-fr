@@ -1,14 +1,9 @@
 ---
-title: Bloc | Microsoft Docs
-ms.custom: ''
+title: Block | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: 95b7b0c1-ecc9-405f-8456-5f9cfb866498
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 589c4f5a95a74be184cd047bf3ed66f5a4258674
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 84ef374a54470685dcfc0985f79fd2182513a3a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753866"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58951378"
 ---
 # <a name="block"></a>Bloc
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,9 +45,6 @@ Chaque bloc de code est identifié par un `SymTagBlock` symbole. Symboles de blo
 |[IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)|`ULONGLONG`|Retourne l’adresse virtuelle de ce bloc dans l’exécutable.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Hiérarchie lexicale des Types de symboles](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   
- [LocationType (énumération)](../../debugger/debug-interface-access/locationtype.md)   
+ [Hiérarchie lexicale des types de symboles](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   
+ [LocationType, énumération](../../debugger/debug-interface-access/locationtype.md)   
  [Emplacements des symboles](../../debugger/debug-interface-access/symbol-locations.md)
-
-
-

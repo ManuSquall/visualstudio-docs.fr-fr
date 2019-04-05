@@ -1,12 +1,9 @@
 ---
 title: Lier un cas d’usage à des documents et diagrammes | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.usecasediagram.artifact.properties.artifactlink
 - vs.teamarch.usecasediagram.artifact
@@ -16,13 +13,13 @@ ms.assetid: 4c9ed205-9197-4ed5-b39d-ddfa24a0a421
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a5b4ef580825115a1d44c3abb39404332a4277ea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7e6e6bc1cd9794534f13915ffb41956e423e94c9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787911"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953013"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>Lier un cas d'usage à des documents et diagrammes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,10 +84,7 @@ Vous pouvez lier un cas d'usage dans un diagramme de cas d'usage à un autre dia
     >  Si vous souhaitez fournir un chemin d’accès de fichier, il est préférable de choisir un fichier dans un espace de travail commun (commençant par «\\\\»), ou un fichier dans votre solution Visual Studio. Cela garantit que le chemin d'accès au fichier restera valide sur l'ordinateur d'un autre membre de l'équipe ou en cas de déplacement de la solution. Pour ajouter un document tel qu’un document Word à votre solution, avec le bouton droit de la solution dans l’Explorateur de solutions, pointez sur **ajouter** puis cliquez sur **élément existant**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Diagrammes de cas d’usage UML : référence](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagrammes de cas d’usage UML : indications](../modeling/uml-use-case-diagrams-guidelines.md)   
+ [Diagrammes de cas d’usage UML : Référence](../modeling/uml-use-case-diagrams-reference.md)   
+ [Diagrammes de cas d’usage UML : Instructions](../modeling/uml-use-case-diagrams-guidelines.md)   
  [Modifier des modèles UML et des diagrammes](../modeling/edit-uml-models-and-diagrams.md)   
  [Créer des modèles pour votre application](../modeling/create-models-for-your-app.md)
-
-
-

@@ -1,12 +1,9 @@
 ---
 title: Modifier des modèles UML et des diagrammes | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.modelingproject
 - vs.teamarch.UMLModelExplorer
@@ -23,13 +20,13 @@ ms.assetid: 87affd40-8127-4ee9-9d3a-ad977abe2ed6
 caps.latest.revision: 86
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 92d2be3abfb849b0b5cf5c1c820040b658e2240c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3cc16133911cf4b49af983aabb4b7b60405c956c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803433"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950420"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>Modifier des modèles et des diagrammes UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -193,7 +190,7 @@ Vous pouvez créer et modifier un modèle UML par l'intermédiaire des vues four
   
  **Chaque projet de modélisation possède une seule pile de modifications.** Toutes les modifications que vous apportez au modèle et aux diagrammes sont conservées sur cette pile. La pile comprend également les modifications de focus d'un diagramme à un autre. La commande Annuler annule les modifications sur cette pile.  
   
- Par exemple, supposez que vous effectuez les opérations suivantes : modification du diagramme 1 ; basculement du focus vers le diagramme 2 ; modification du diagramme 2. Si vous annulez les modifications, le premier clic sur Annuler annule la dernière modification, le second redéplace le focus vers le diagramme 1 et le troisième annule la modification apportée au diagramme 1.  
+ Par exemple, supposons que vous effectuez ces opérations : Apportez une modification au diagramme 1 ; placer le focus sur le diagramme 2 ; modifier le diagramme 2. Si vous annulez les modifications, le premier clic sur Annuler annule la dernière modification, le second redéplace le focus vers le diagramme 1 et le troisième annule la modification apportée au diagramme 1.  
   
  **Fermeture d’un diagramme tronque la pile de modifications.** Si vous fermez un diagramme, vous ne pouvez pas annuler les modifications que vous lui avez apportées, ni annuler les modifications précédentes apportées au modèle ou à l'un de ses diagrammes.  
   
@@ -219,7 +216,7 @@ Vous pouvez créer et modifier un modèle UML par l'intermédiaire des vues four
      Une forme qui fournit une vue de l'élément de modèle apparaît, éventuellement en plus des vues dans d'autres diagrammes ou dans le même diagramme.  
   
     > [!NOTE]
-    >  L'effet est différent quand vous faites glisser une classe ou un composant vers un diagramme de séquence. Dans ce cas, une nouvelle ligne de vie est créée, dont le type est cette classe ou ce composant. Pour plus d’informations, consultez [diagrammes de séquence UML : indications](../modeling/uml-sequence-diagrams-guidelines.md).  
+    >  L'effet est différent quand vous faites glisser une classe ou un composant vers un diagramme de séquence. Dans ce cas, une nouvelle ligne de vie est créée, dont le type est cette classe ou ce composant. Pour plus d’informations, consultez [diagrammes de séquence UML : Les instructions](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 #### <a name="to-add-a-new-view-of-a-model-element-by-using-paste-reference"></a>Pour ajouter une nouvelle vue d'un élément de modèle à l'aide de l'option Coller la référence  
   
@@ -274,7 +271,7 @@ Vous pouvez créer et modifier un modèle UML par l'intermédiaire des vues four
    Vous ne pouvez pas dupliquer un diagramme en le copiant et en le collant dans l'Explorateur de solutions.  
   
 ##  <a name="Deleting"></a> Suppression d’un élément de modèle ou de ses vues  
- Certains types d'éléments (les classifieurs) peuvent être supprimés d'un diagramme sans être supprimés du modèle. Les classifieurs sont les éléments majeurs affichés sur les diagrammes de classes, de composants et de cas d'usage. Ils peuvent figurer dans plusieurs diagrammes. Pour ces types d’éléments, il existe deux commandes distinctes : **supprimer du diagramme** et **supprimer du modèle**.  
+ Certains types d'éléments (les classifieurs) peuvent être supprimés d'un diagramme sans être supprimés du modèle. Les classifieurs sont les éléments majeurs affichés sur les diagrammes de classes, de composants et de cas d'usage. Ils peuvent figurer dans plusieurs diagrammes. Pour ces types d’éléments, il existe deux commandes distinctes : **Supprimer du diagramme** et **supprimer du modèle**.  
   
  Par contre, quand vous supprimez une relation d'un diagramme, elle est toujours supprimée du modèle.  
   
@@ -323,7 +320,7 @@ Vous pouvez créer et modifier un modèle UML par l'intermédiaire des vues four
   
 -   Pour ajouter des remarques et des explications à des éléments de modèle, vous pouvez créer des commentaires et les lier à des éléments.  
   
--   Pour aligner correctement une ligne ou une colonne de formes dans le diagramme, vous pouvez installer la commande Aligner les formes. Cette option est disponible en tant qu’un exemple d’extension UML : [UML : Command to Align Shapes](http://code.msdn.microsoft.com/UML-command-to-Align-4139c0d7)  
+-   Pour aligner correctement une ligne ou une colonne de formes dans le diagramme, vous pouvez installer la commande Aligner les formes. Il peut être un exemple d’extension UML :  [UML : Commande pour aligner des formes](http://code.msdn.microsoft.com/UML-command-to-Align-4139c0d7)  
   
 ### <a name="to-export-a-diagram-as-an-image"></a>Pour exporter un diagramme en tant qu'image  
  Pour plus d’informations, consultez [exporter des diagrammes en tant qu’images](../modeling/export-diagrams-as-images.md).  
@@ -345,6 +342,3 @@ Vous pouvez créer et modifier un modèle UML par l'intermédiaire des vues four
  [Créer des diagrammes et projets de modélisation UML](../modeling/create-uml-modeling-projects-and-diagrams.md)   
  [Analyse et modélisation de l’Architecture](../modeling/analyze-and-model-your-architecture.md)   
  [Créer des modèles pour votre application](../modeling/create-models-for-your-app.md)
-
-
-
