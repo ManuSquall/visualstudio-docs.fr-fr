@@ -1,23 +1,20 @@
 ---
 title: Concepteurs d’activité d’organigramme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 8b7b4aa6-d27d-45c8-87c2-641440d38afc
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: fb74c7db38cc57d337cec649ad683ab4761552f9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d26c60dab3ab09d2fc9f42609568ab21ecd19104
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189213"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938053"
 ---
 # <a name="flowchart-activity-designers"></a>Concepteurs d'activités d'organigramme
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] inclut plusieurs activités fournies par le système que vous pouvez utiliser lors de la construction de vos workflows. Cette section contient les activités fournies par le système utilisées pour gérer des organigrammes dans un workflow. Les rubriques suivantes décrivent ces activités et fournissent des conseils sur la façon de les utiliser.  
@@ -27,7 +24,7 @@ ms.locfileid: "49189213"
  **Utilisé pour créer des workflows qui définissent et gèrent des contrôles de flux complexes.**  [FlowDecision](../workflow-designer/flowdecision-activity-designer.md)  
  Fournit une branche pour le flux de contrôle dans l’une des deux alternatives suivant qu’une condition spécifiée est satisfaite.  
   
- [FlowSwitch\<T >](../workflow-designer/flowswitch-t-activity-designer.md)  
+ [FlowSwitch\<T>](../workflow-designer/flowswitch-t-activity-designer.md)  
  Fournit la création de branches pour le flux de contrôle selon un critère de correspondance lorsque plus de deux branches sont requises.  
   
 ## <a name="reference"></a>Référence  

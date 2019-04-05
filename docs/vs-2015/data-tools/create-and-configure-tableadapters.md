@@ -1,12 +1,9 @@
 ---
 title: Créer et configurer des TableAdapters | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +19,13 @@ ms.assetid: 08630d69-0d6c-4e8f-b42d-2922f45f8415
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 03cb6c67b4887762885a0cb920eb928359b4708b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 24f53af16bcab0e3ff631a7c264f139f94d92232
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917646"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938543"
 ---
 # <a name="create-and-configure-tableadapters"></a>Créer et configurer des TableAdapters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +52,7 @@ Les TableAdapters fournissent la communication entre votre application et une ba
   
  Si vous faites glisser un TableAdapter à partir de la boîte à outils lorsque le **Concepteur de Dataset** est sélectionné, les invites de l’Assistant vous permet de spécifier le TableAdapter doit se connecter à une source de données pour laquelle, et quel type de commandes il doivent utiliser pour communiquer avec le base de données, les instructions SQL ou procédures stockées. Il n’apparaît pas si vous configurez un TableAdapter est déjà associé à une source de données.  
   
--   À l’aide de la **créer des méthodes pour envoyer des mises à jour directement à la base de données** option revient à affecter la `GenerateDBDirectMethods` true à la propriété. L’option n’est pas disponible lorsque l’instruction SQL d’origine ne fournit pas de suffisamment d’informations ou de la requête n’est pas une requête modifiable. Cette situation peut se produire, par exemple, dans **joindre** requêtes et les requêtes qui retournent une valeur (scalaire) unique.  
+-   À l’aide de la **créer des méthodes pour envoyer des mises à jour directement à la base de données** option revient à affecter la `GenerateDBDirectMethods` true à la propriété. L’option n’est pas disponible quand l’instruction SQL d’origine ne fournit pas assez d’informations ou que la requête ne peut pas être mise à jour. Cette situation peut se produire, par exemple, dans **joindre** requêtes et les requêtes qui retournent une valeur (scalaire) unique.  
   
 -   Vous avez la possibilité de créer une nouvelle procédure stockée dans la base de données sous-jacent, si vous avez les autorisations appropriées pour la base de données. Si vous n’avez pas ces autorisations, ce ne sera pas une option.  
   
@@ -79,7 +76,7 @@ Les TableAdapters fournissent la communication entre votre application et une ba
   
 #### <a name="to-start-the-tableadapter-query-configuration-wizard-with-a-new-query"></a>Pour démarrer l’Assistant Configuration de requêtes TableAdapter avec une nouvelle requête  
   
-1.  Ouvrez votre jeu de données dans le **Concepteur de Dataset**.  
+1.  Ouvrez votre dataset dans le **Concepteur de DataSet**.  
   
 2.  Si vous créez une nouvelle requête, faites glisser un **requête** de l’objet à partir de la **DataSet** onglet de la **boîte à outils** sur un <xref:System.Data.DataTable>, ou sélectionnez **ajouter une requête**à partir du menu contextuel du TableAdapter. Vous pouvez également faire glisser un **requête** objet dans une zone vide de la **Concepteur de Dataset**, ce qui crée un TableAdapter sans associé à un <xref:System.Data.DataTable>. Ces requêtes peuvent uniquement retourner des valeurs (scalaires) uniques, ou exécutez UPDATE, INSERT, ou supprimer des commandes sur la base de données.  
   
@@ -116,4 +113,3 @@ Les TableAdapters fournissent la communication entre votre application et une ba
   
 ## <a name="see-also"></a>Voir aussi  
  [Remplir des datasets à l’aide de TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
-
