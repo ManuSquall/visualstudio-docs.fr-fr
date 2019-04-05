@@ -1,12 +1,9 @@
 ---
-title: 'Comment : définir des attributs CLR sur un élément | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Définir des attributs CLR sur un élément | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.EditAttributesDialog
 helpviewer_keywords:
@@ -15,15 +12,15 @@ ms.assetid: b3db3c74-920c-4701-9544-6f75cbe8b7c9
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b77e0f1f31c0f617e80a27de4e1d0ab1d0b3d2eb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 576b9a6890a6a6de398e917c1c152dcdb2f3ef16
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263998"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954009"
 ---
-# <a name="how-to-set-clr-attributes-on-an-element"></a>Comment : définir des attributs CLR sur un élément
+# <a name="how-to-set-clr-attributes-on-an-element"></a>Procédure : Définir des attributs CLR sur un élément
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les attributs personnalisés sont des attributs spéciaux qui peuvent être ajoutés à des diagrammes, des formes, des connecteurs et des éléments de domaine. Vous pouvez ajouter n’importe quel attribut qui hérite de la `System.Attribute` classe.  
@@ -49,7 +46,4 @@ Les attributs personnalisés sont des attributs spéciaux qui peuvent être ajou
      `[` *AttributeName* `(` *ParameterName* `=` *Type* `)]`  
   
 ## <a name="see-also"></a>Voir aussi  
- [Glossaire des outils Domain-Specific Language](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Glossaire des Outils Domain-Specific Language](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
