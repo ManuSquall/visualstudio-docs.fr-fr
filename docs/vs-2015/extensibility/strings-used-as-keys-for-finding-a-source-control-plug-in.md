@@ -1,26 +1,21 @@
 ---
 title: Chaînes utilisées comme clés pour rechercher un contrôle de Source de plug-in | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, strings used for finding
 ms.assetid: c1e31f76-42a1-4c3d-afb2-664044ef12fd
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 693f4560d181aa765946bdd971f835ee651daed1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 83ba843e318aac6a74d318978e42e2f81802d8ac
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759953"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953335"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Chaînes utilisées comme clés pour rechercher un plug-in de contrôle de code source
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,8 +38,8 @@ Les chaînes suivantes sont les clés d’accès au Registre pour trouver des in
 |`STR_SCC_INI_KEY`|SourceCodeControlProvider|  
 |`SCC_PROJECTNAME_KEY`|SCC_Project_Name|  
 |`SCC_PROJECTAUX_KEY`|SCC_Aux_Path|  
-|`SCC_STATUS_FILE`|MSSCCPRJ. CONTRÔLE DE CODE SOURCE|  
-|`SCC_KEY`|CONTRÔLE DE CODE SOURCE|  
+|`SCC_STATUS_FILE`|MSSCCPRJ.SCC|  
+|`SCC_KEY`|SCC|  
 |`SCC_FILE_SIGNATURE`|Un fichier de contrôle de code source|  
 |`SCC_NSE`|Extension de Namespace|  
 |`SCC_NSE_PREFIX`|Préfixe de protocole|  
@@ -55,6 +50,5 @@ Les chaînes suivantes sont les clés d’accès au Registre pour trouver des in
   
 ## <a name="see-also"></a>Voir aussi  
  [Plug-ins de contrôle de code source](../extensibility/source-control-plug-ins.md)   
- [Comment : installer un plug-in de contrôle de code Source](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
+ [Guide pratique pour Installer un plug-in de contrôle de code Source](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
  [Fichier MSSCCPRJ.SCC](../extensibility/mssccprj-scc-file.md)
-

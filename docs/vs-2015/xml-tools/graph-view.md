@@ -1,25 +1,20 @@
 ---
 title: Vue graphique | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 5881afde-3f24-4eb9-bff8-6cb3fc8aade7
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d1c0bbe55f2e63c1d86d71556392d57d1330c6b4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: bf9f92e56d9405a5945fe160860175d575e57cc4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813620"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948371"
 ---
 # <a name="graph-view"></a>Vue Graphique
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ La vue du graphique fournit une représentation graphique des nœuds de schéma 
   
  ![Concepteur XSD ; Vue graphique](../xml-tools/media/xsdgraphviewwatermark.gif "XSDGraphViewWatermark")  
   
- Si le jeu de schémas comporte des erreurs, le texte suivant est affiché à la fin de la liste : « Utilisez la liste d'erreurs pour afficher et résoudre les erreurs dans le jeu ».  
+ Si le jeu de schémas comporte des erreurs, le texte suivant s’affiche à la fin de la liste : « Utiliser la liste d’erreurs pour afficher et corriger les erreurs dans le jeu. »  
   
 ## <a name="breadcrumb-bar"></a>Barre de fil d'Ariane (breadcrumb)  
  La barre de fil d'Ariane (breadcrumb) en bas de la vue du graphique indique l'emplacement du nœud sélectionné dans le jeu de schémas. Si plusieurs éléments sont sélectionnés, la barre de fil d'Ariane (breadcrumb) est vide.  
@@ -58,7 +53,7 @@ La vue du graphique fournit une représentation graphique des nœuds de schéma 
 |**Effacer l’espace de travail**|Efface l'espace de travail et l'aire de conception.|  
 |**Supprimer à partir de l’espace de travail**|Supprime les nœuds sélectionnés de l'espace de travail et de l'aire de conception.|  
 |**Supprimer toutes les valeurs sauf la sélection à partir de l’espace de travail**|Supprime les nœuds qui ne sont pas sélectionnés dans l'espace de travail et l'aire de conception.|  
-|**Exporter le diagramme en tant qu’Image...**|Enregistre l’aire de conception dans un fichier XPS.|  
+|**Exporter le diagramme en tant qu’Image...**|Enregistre l'aire de conception dans un fichier XPS.|  
 |**Sélectionner tout**|Sélectionne tous les nœuds sur l'aire de conception.|  
 |**Afficher le code**|Ouvre le fichier qui contient le nœud sélectionné dans l'Éditeur XML. L'élément sélectionné dans l'Explorateur de schémas XML est également sélectionné dans l'Éditeur XML.|  
 |**Propriétés (fenêtre)**|Ouvre le **propriétés** fenêtre (si elle n’est pas déjà ouvert). Cette fenêtre affiche des informations sur le nœud.|  
@@ -110,10 +105,10 @@ La vue du graphique fournit une représentation graphique des nœuds de schéma 
 |**Effacer l’espace de travail**|Efface l'espace de travail et l'aire de conception.|  
 |**Supprimer à partir de l’espace de travail**|Supprime les nœuds sélectionnés de l'espace de travail et de l'aire de conception.|  
 |**Supprimer toutes les valeurs sauf la sélection à partir de l’espace de travail**|Supprime les nœuds qui ne sont pas sélectionnés dans l'espace de travail et l'aire de conception. Cette option est activée dans la vue de modèle de contenu et dans la vue du graphique.|  
-|**Gauche à droite**|Modifie la disposition de la vue du graphique pour représenter hiérarchiquement les nœuds de gauche à droite. Cette option est accessible en utilisant le raccourci clavier : **Alt + flèche droite**.|  
-|**De droite à gauche**|Modifie la disposition de la vue du graphique pour représenter hiérarchiquement les nœuds de droite à gauche. Cette option est accessible en utilisant le raccourci clavier : **Alt + flèche gauche**.|  
-|**Haut en bas**|Modifie la disposition de la vue du graphique pour représenter hiérarchiquement les nœuds de haut en bas. Cette option est accessible en utilisant le raccourci clavier : **Alt + flèche vers le bas**.|  
-|**Bas en haut**|Modifie la disposition de la vue du graphique pour représenter hiérarchiquement les nœuds de bas en haut. Cette option est accessible en utilisant le raccourci clavier : **Alt + flèche haut**.|  
+|**Gauche à droite**|Modifie la disposition de la vue du graphique pour représenter hiérarchiquement les nœuds de gauche à droite. Cette option est accessible en utilisant le raccourci clavier : **ALT + droite**.|  
+|**De droite à gauche**|Modifie la disposition de la vue du graphique pour représenter hiérarchiquement les nœuds de droite à gauche. Cette option est accessible en utilisant le raccourci clavier : **ALT + gauche**.|  
+|**Haut en bas**|Modifie la disposition de la vue du graphique pour représenter hiérarchiquement les nœuds de haut en bas. Cette option est accessible en utilisant le raccourci clavier : **ALT + flèche vers le bas**.|  
+|**Bas en haut**|Modifie la disposition de la vue du graphique pour représenter hiérarchiquement les nœuds de bas en haut. Cette option est accessible en utilisant le raccourci clavier : **ALT + flèche haut**.|  
   
 ## <a name="panscroll"></a>Panoramique/Défilement  
  Vous pouvez afficher un panoramique de l'aire de conception en utilisant les barres de défilement ou en maintenant la touche Ctrl enfoncée pendant que vous cliquez et faites glisser la souris. Lorsque vous affichez un panoramique de l'aire de conception en cliquant et en faisant glisser la souris, le curseur se transforme en cercle contenant quatre flèches qui pointent dans quatre directions.  
@@ -145,6 +140,3 @@ La vue du graphique fournit une représentation graphique des nœuds de schéma 
   
 ## <a name="see-also"></a>Voir aussi  
  [Aire de conception](../xml-tools/xml-schema-designer-workspace.md)
-
-
-

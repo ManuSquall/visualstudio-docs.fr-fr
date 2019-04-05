@@ -1,11 +1,8 @@
 ---
 title: Création d’un projet de flux de travail | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - Workflow Designer, creating a workflow project
@@ -15,13 +12,13 @@ ms.assetid: 235a125e-ebe7-4a98-bf77-86c8558728fb
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 4ba558e77aae5ae40d5b754c30b648f4ba2ea2af
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: cdf4d9657832c2dc1e7691eed5c334e770de5700
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236715"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58953395"
 ---
 # <a name="creating-a-workflow-project"></a>Création d'un projet de workflow
 Les workflows, services de workflow [!INCLUDE[indigo1](../includes/indigo1-md.md)], activités personnalisées et concepteurs d'activités personnalisées peuvent tous être créés via des modèles de projet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Cette section décrit comment créer des bibliothèques et des applications avec les modèles de projet disponibles dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
@@ -31,19 +28,19 @@ Les workflows, services de workflow [!INCLUDE[indigo1](../includes/indigo1-md.md
  La dernière rubrique décrit comment ajouter des activités de workflow, des concepteurs et des services ou d'autres éléments [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] à un projet de workflow existant (ou autre).  
   
 ## <a name="in-this-section"></a>Dans cette section  
- [Guide pratique pour créer une application console de flux de travail](../workflow-designer/how-to-create-a-workflow-console-application.md)  
+ [Guide pratique pour créer une application console de workflow](../workflow-designer/how-to-create-a-workflow-console-application.md)  
  Décrit comment créer une application console de workflow.  
   
- [Guide pratique pour créer une application de service de flux de travail WCF](../workflow-designer/how-to-create-a-wcf-workflow-service-application.md)  
+ [Guide pratique pour créer une application de service de workflow WCF](../workflow-designer/how-to-create-a-wcf-workflow-service-application.md)  
  Décrit les étapes requises pour créer une application de service de workflow [!INCLUDE[indigo2](../includes/indigo2-md.md)].  
   
- [Guide pratique pour créer une bibliothèque de Concepteur d’activités](../workflow-designer/how-to-create-an-activity-library.md)  
+ [Guide pratique pour créer une bibliothèque d’activités](../workflow-designer/how-to-create-an-activity-library.md)  
  Décrit les étapes à suivre pour créer une bibliothèque d'activités dans le [!INCLUDE[wfd2](../includes/wfd2-md.md)].  
   
- [Guide pratique pour créer une bibliothèque de Concepteur d’activités](../workflow-designer/how-to-create-an-activity-designer-library.md)  
+ [Guide pratique pour créer une bibliothèque ActivityDesigner](../workflow-designer/how-to-create-an-activity-designer-library.md)  
  Explique comment créer des concepteurs adaptés pour plusieurs audiences.  
   
- [Guide pratique pour ajouter un nouvel élément à un projet de flux de travail](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md)  
+ [Guide pratique pour ajouter un nouvel élément à un projet de workflow](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md)  
  Décrit comment ajouter des activités de workflow supplémentaires ou des concepteurs et d'autres éléments [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], tels que des activités de code, à un projet existant.  
   
 ## <a name="related-sections"></a>Rubriques connexes  

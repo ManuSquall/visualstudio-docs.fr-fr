@@ -1,14 +1,9 @@
 ---
 title: Déboguer XAML dans Blend | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,21 +13,21 @@ ms.assetid: 29a37182-2a2c-47e4-a4a9-2d5412738fed
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8b01fdc6962ea5a564537a083be4e9993533f1e4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4e78caf838a6e121fbe2778e7bdee2c5c87019a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728105"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949808"
 ---
 # <a name="debug-xaml-in-blend"></a>Déboguer XAML dans Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez utiliser les outils de [!INCLUDE[blend_first](../includes/blend-first-md.md)] pour déboguer le code XAML dans votre application. Lorsque vous générez un projet, toutes les erreurs sont affichées dans le **résultats** Panneau de configuration. Double-cliquez sur une erreur pour localiser le balisage associé à l'erreur. Si vous avez besoin de plus d’espace de travail, vous pouvez masquer la **résultats** panneau en appuyant sur F12.  
+Vous pouvez utiliser les outils de [!INCLUDE[blend_first](../includes/blend-first-md.md)] pour déboguer le code XAML dans votre application. Lors de la création d’un projet, toutes les erreurs sont affichées dans le volet **Résultats**. Double-cliquez sur une erreur pour localiser le balisage associé à l'erreur. Si votre travail nécessite davantage d’espace, appuyez sur F12 pour masquer le volet **Résultats**.  
   
 ## <a name="syntax-errors"></a>Erreurs de syntaxe  
- Des erreurs de syntaxe se produisent si votre code XAML, ou les fichiers code-behind ne suivent pas les règles de mise en forme du langage. La description de l’erreur peut vous aider à la résoudre. La liste spécifie également le nom du fichier et le numéro de ligne où l’erreur se produit. Les erreurs XAML sont répertoriés sur le **balisage** onglet dans le **résultats** Panneau de configuration.  
+ Des erreurs de syntaxe se produisent si votre code XAML, ou les fichiers code-behind ne suivent pas les règles de mise en forme du langage. La description de l’erreur peut vous aider à la résoudre. La liste spécifie également le nom du fichier et le numéro de ligne où l’erreur se produit. Les erreurs XAML sont répertoriées dans l’onglet **Balisage** du volet **Résultats**.  
   
 > [!TIP]
 >  XAML est un langage de balisage basé sur XML qui suit les règles de syntaxe de XML.  
@@ -47,7 +42,7 @@ Vous pouvez utiliser les outils de [!INCLUDE[blend_first](../includes/blend-firs
   
 - Il existe un élément XAML à un emplacement non autorisé.  
   
-  Pour plus d’informations sur la syntaxe XAML courante, consultez [guide de la syntaxe XAML de base](http://go.microsoft.com/fwlink/?LinkId=329942).  
+  Pour plus d’informations sur la syntaxe XAML de base, consultez la page [Guide de base de la syntaxe XAML](http://go.microsoft.com/fwlink/?LinkId=329942).  
   
   Vous pouvez également identifier et résoudre des erreurs de syntaxe code-behind simples, des erreurs de compilation et des erreurs d'exécution dans [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]. Toutefois, il peut être plus facile d'identifier et de résoudre les erreurs code-behind dans Visual Studio.  
   
@@ -56,9 +51,9 @@ Vous pouvez utiliser les outils de [!INCLUDE[blend_first](../includes/blend-firs
   
 ##### <a name="to-create-a-project"></a>Pour créer un projet  
   
-1. Dans [!INCLUDE[blend_subs](../includes/blend-subs-md.md)], ouvrez le **fichier** menu, puis sur **nouveau projet**.  
+1. Dans [!INCLUDE[blend_subs](../includes/blend-subs-md.md)], ouvrez le menu **Fichier**, puis cliquez sur **Nouveau projet**.  
   
-    Dans le **nouveau projet** boîte de dialogue, une liste des types de projets apparaît sur le côté gauche. Lorsque vous cliquez sur un type de projet, les modèles de projet associés à ce type apparaissent sur le côté droit.  
+    Dans la boîte de dialogue **Nouveau projet**, une liste de types de projet apparaît sur le côté gauche. Lorsque vous cliquez sur un type de projet, les modèles de projet associés à ce type apparaissent sur le côté droit.  
   
 2. Dans la liste des types de projets, cliquez sur **XAML (Windows Store)**.  
   
@@ -66,13 +61,13 @@ Vous pouvez utiliser les outils de [!INCLUDE[blend_first](../includes/blend-firs
   
 4. Dans le **nom** zone de texte, tapez `DebuggingSample`.  
   
-5. Dans le **emplacement** texte, vérifiez l’emplacement du projet.  
+5. Dans la zone de texte **Emplacement**, vérifiez l’emplacement du projet.  
   
-6. Dans le **langage** , cliquez sur **Visual C#**, puis cliquez sur **OK** pour créer le projet.  
+6. Dans la liste **Langage**, cliquez sur **Visual C#**, puis sur **OK** pour créer le projet.  
   
-7. Avec le bouton droit sur l’aire de conception, puis cliquez sur **afficher la Source** pour basculer vers **fractionnement** vue.  
+7. Cliquez avec le bouton droit sur l’aire de conception, puis cliquez sur **Afficher la source** pour passer à la vue **Fractionné**.  
   
-8. Copiez le code suivant en cliquant sur le **copie** lien dans le coin supérieur droit du code.  
+8. Copiez le code suivant en cliquant sur le lien **Copier** en haut à droite du code.  
   
    ```  
    <Grid HorizontalAlignment="Left" Height="222" VerticalAlignment="Top>  
@@ -85,7 +80,7 @@ Vous pouvez utiliser les outils de [!INCLUDE[blend_first](../includes/blend-firs
   
    ```  
   
-9. Recherchez la valeur par défaut **grille**et collez le code entre les balises **grille** balises. Lorsque vous avez terminé, votre code doit ressembler au code suivant :  
+9. Recherchez la **Grille** par défaut, et collez le code entre les balises **Grid** de début et de fin. Lorsque vous avez terminé, votre code doit ressembler au code suivant :  
   
     ```  
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">  
@@ -102,20 +97,20 @@ Vous pouvez utiliser les outils de [!INCLUDE[blend_first](../includes/blend-firs
   
 10. Appuyez sur Ctrl+Maj+B pour générer le projet.  
   
-    Un message d’erreur s’affiche vous indiquant que le projet ne peut pas être généré, et le **résultats** panneau répertoriant les erreurs apparaît au bas de l’application.  
+    Un message d’erreur s’affiche vous indiquant que le projet ne peut pas être généré et le volet **Résultats** listant les erreurs apparaît au bas de l’application.  
   
     ![Déboguer XAML dans Blend pour Visual Studio](../debugger/media/blend-debugxaml-xaml.png "blend_debugXAML_XAML")  
   
 ### <a name="resolving-xaml-errors"></a>Résolution d'erreurs XAML  
- Quand des erreurs XAML sont détectées, l'aire de conception affiche une alerte indiquant que votre projet contient un balisage non valide. Comme vous résolvez les erreurs, la liste d’erreurs dans le **résultats** panneau est mis à jour. Quand vous avez résolu toutes les erreurs, l'aire de conception est activée et votre application y est affichée.  
+ Quand des erreurs XAML sont détectées, l'aire de conception affiche une alerte indiquant que votre projet contient un balisage non valide. Au fur et à mesure de la résolution des erreurs, la liste d’erreurs dans le volet **Résultats** est mise à jour. Quand vous avez résolu toutes les erreurs, l'aire de conception est activée et votre application y est affichée.  
   
 ##### <a name="to-resolve-the-xaml-errors"></a>Pour résoudre les erreurs XAML  
   
-1. Double-cliquez sur la première erreur de la liste. La description est : « La valeur '<' n'est pas valide dans un attribut ». Lorsque vous double-cliquez sur l'erreur, le pointeur trouve l'emplacement correspondant dans le code. Le `<` est valide, étant placé devant `Button` et non pas devant un attribut, comme indiqué dans le message d'erreur. Si vous examinez la ligne de code précédente, vous remarquez que le guillemet anglais fermant de l'attribut `Top` est manquant. Tapez le guillemet anglais fermant. Notez que la liste d’erreurs dans le **résultats** panneau mises à jour pour refléter vos modifications.  
+1. Double-cliquez sur la première erreur de la liste. La description est « la valeur ' <' n’est pas valide dans un attribut. » Lorsque vous double-cliquez sur l'erreur, le pointeur trouve l'emplacement correspondant dans le code. Le `<` est valide, étant placé devant `Button` et non pas devant un attribut, comme indiqué dans le message d'erreur. Si vous examinez la ligne de code précédente, vous remarquez que le guillemet anglais fermant de l'attribut `Top` est manquant. Tapez le guillemet anglais fermant. Notez que la liste d’erreurs dans le volet **Résultats** est mise à jour au fur et à mesure de vos modifications.  
   
-2. Double-cliquez sur la description « '0' n’est pas valide au début d’un nom. » `Margin="0,149,0,0"` semble être correct. Toutefois, notez que le codage en couleur de `Margin` n'est pas le même que celui des autres instances de `Margin` dans le code. L'absence de guillemets anglais fermants dans la paire nom/valeur précédente (`VerticalAlignment="Top`) fait que `Margin="` est lu comme faisant partie de la valeur de l'attribut précédent, et 0 est lu comme le début de la paire nom/ valeur. Tapez le guillemet anglais fermant pour `Top`. La liste d’erreurs dans le **résultats** panneau mises à jour pour refléter vos modifications.  
+2. Double-cliquez sur la description « '0' n’est pas valide au début d’un nom. » `Margin="0,149,0,0"` semble être correct. Toutefois, notez que le codage en couleur de `Margin` n'est pas le même que celui des autres instances de `Margin` dans le code. L'absence de guillemets anglais fermants dans la paire nom/valeur précédente (`VerticalAlignment="Top`) fait que `Margin="` est lu comme faisant partie de la valeur de l'attribut précédent, et 0 est lu comme le début de la paire nom/ valeur. Tapez le guillemet anglais fermant pour `Top`. La liste d’erreurs dans le volet **Résultats** est mise à jour au fur et à mesure de vos modifications.  
   
-3. Double-cliquez sur l’erreur restante : « Le Bouton d’étiquette XML de fermeture ne correspond pas » Le pointeur se trouve à la fermeture **grille** balise (`</Grid>`), suggérant que l’erreur se trouve dans le `Grid` objet. Notez que l’étiquette de fermeture est manquante dans le deuxième objet `Button`. Après avoir ajouté la fermeture `/`, le **résultats** liste du panneau est mis à jour. Ces erreurs initiales sont à présent résolues, mais deux erreurs supplémentaires ont été identifiées.  
+3. Double-cliquez sur l'erreur restante : « Le Bouton de balise XML de fermeture ne correspond pas » Le pointeur se trouve sur la balise **Grid** de début (`</Grid>`), indiquant que l’erreur est située à l’intérieur de l’objet `Grid`. Notez que l’étiquette de fermeture est manquante dans le deuxième objet `Button`. Une fois le `/` de fermeture ajouté, la liste du volet **Résultats** est mise à jour. Ces erreurs initiales sont à présent résolues, mais deux erreurs supplémentaires ont été identifiées.  
   
 4. Double-cliquez sur « Le membre "contenu" n'est pas reconnu ou n'est pas accessible. ». Le `c` dans `content` devrait être en majuscules. Remplacez le « c » minuscule par un « c » majuscule.  
   
@@ -126,12 +121,9 @@ Vous pouvez utiliser les outils de [!INCLUDE[blend_first](../includes/blend-firs
     Appuyez sur Ctrl+Maj+B pour générer votre projet et vous assurer qu’il ne contient plus aucune erreur.  
   
 ## <a name="debugging-in-visual-studio"></a>Débogage dans Visual Studio  
- Vous pouvez ouvrir les projets [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] dans Visual Studio afin de déboguer plus facilement le code dans votre application. Pour ouvrir un [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] de projet dans Visual Studio, cliquez sur le projet dans le **projets** panneau, puis cliquez sur **modifier dans Visual Studio**. Une fois la session de débogage terminée dans Visual Studio, appuyez sur Ctrl+Maj+S pour enregistrer toutes vos modifications, puis revenez à [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]. Vous êtes alors invité à recharger le projet. Cliquez sur **Oui pour tout** pour continuer à travailler dans [!INCLUDE[blend_subs](../includes/blend-subs-md.md)].  
+ Vous pouvez ouvrir les projets [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] dans Visual Studio afin de déboguer plus facilement le code dans votre application. Pour ouvrir un projet [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] dans Visual Studio, cliquez avec le bouton droit dans le volet **Projets**, puis cliquez sur **Modifier dans Visual Studio**. Une fois la session de débogage terminée dans Visual Studio, appuyez sur Ctrl+Maj+S pour enregistrer toutes vos modifications, puis revenez à [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]. Vous êtes alors invité à recharger le projet. Cliquez sur **Oui pour tout** pour poursuivre votre travail dans [!INCLUDE[blend_subs](../includes/blend-subs-md.md)].  
   
  Pour plus d’informations sur le débogage de votre application, consultez [des applications de débogage Windows Store dans Visual Studio](http://go.microsoft.com/fwlink/?LinkId=329944).  
   
 ## <a name="getting-help"></a>Obtenir de l’aide  
  Si vous avez besoin d’aide plus débogage votre [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] application, vous pouvez rechercher le [forums de communauté des applications Windows Store](http://go.microsoft.com/fwlink/?LinkId=280308) pour les publications relatives à votre problème ou poser une question.
-
-
-

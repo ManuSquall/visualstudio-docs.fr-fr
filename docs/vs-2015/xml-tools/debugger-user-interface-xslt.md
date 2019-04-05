@@ -1,25 +1,20 @@
 ---
 title: L’Interface utilisateur (XSLT) du débogueur | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 02ba962a3410b2e964e7653fcb6308b9209def44
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1af3b47b2d7c897b36556f0ebac105088cdc9b75
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891847"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954064"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interface utilisateur du débogueur (XSLT)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Cette rubrique décrit les fenêtres et boîtes de dialogue du débogueur. Elle 
  La fenêtre Variables locales affiche des informations sur les variables définies dans la feuille de style. Elle comporte trois colonnes d'informations :  
   
  **Name**  
- Cette colonne contient les noms de toutes les variables locales dans la portée actuelle. Les collections de nœuds ont un contrôle d’arborescence que vous pouvez explorer pour en voir les sous-dossiers.  
+ Cette colonne contient les noms de toutes les variables locales dans la portée actuelle. Les collections de nœuds ont un contrôle d'arborescence que vous pouvez explorer pour en voir les sous-dossiers.  
   
  **Valeur**  
  Cette colonne indique la valeur contenue dans chaque variable. Les nœuds d'attribut, d'instruction de traitement, de commentaire, de texte et CData affichent la valeur textuelle du nœud. Les nœuds d'espace de noms affichent l'URI de l'espace de noms.  
@@ -48,7 +43,7 @@ Cette rubrique décrit les fenêtres et boîtes de dialogue du débogueur. Elle 
 |`position()`|Position (index) du nœud de contexte par rapport à la taille du contexte.|  
 |`self::node()`|Valeur du nœud de contexte.|  
   
- Pour plus d’informations, consultez [Comment : modifier le contexte du débogueur](http://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e).  
+ Pour plus d'informations, voir [Procédure : Modifier le contexte du débogueur](http://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e).  
   
 ## <a name="output-window"></a>Fenêtre Sortie  
  La fenêtre Sortie affiche les messages d'erreur éventuels ou les exceptions de sécurité qui se produisent pendant le débogage.  
@@ -69,7 +64,7 @@ Cette rubrique décrit les fenêtres et boîtes de dialogue du débogueur. Elle 
  La fenêtre Points d'arrêt doit se comporter de la même façon que les autres débogueurs Visual Studio.  
   
 ## <a name="command-windowimmediate-window"></a>Fenêtres Commande et Immédiat  
- Pas implémentées dans cette version du débogueur XSLT.  
+ Pas implémentées dans cette mise en production du débogueur XSLT.  
   
 ## <a name="watch-window"></a>Fenêtre Espion  
  La fenêtre Espion permet d'évaluer les variables. Elle permet également de modifier la valeur des variables.  
@@ -83,12 +78,12 @@ Cette rubrique décrit les fenêtres et boîtes de dialogue du débogueur. Elle 
   
  Si les modèles n'ont pas de nom dans le fichier XSLT, les noms utilisés sont ceux générés par le processeur XSLT.  
   
- Si vous cliquez sur un autre élément que celui situé en haut de la liste, les flèches vertes et le surlignage vert standard indiquent le branchement de l'exécution XSLT.  
+ Si vous cliquez sur un autre élément que celui situé en haut de la liste, les flèches vertes et le surlignage vert standard indiquent la création de branche de l’exécution XSLT.  
   
 ## <a name="quickwatch-dialog-box"></a>Boîte de dialogue Espion express  
  Le **Espion express** boîte de dialogue est utilisée pour évaluer des expressions XPath 1.0. Le nœud de contexte (le nœud `self::node()` de la fenêtre Variables locales) est le contexte de l’exécution de l’expression XPath. Le résultat de l'exécution de l'expression XPath s'affiche dans la fenêtre Espion.  
   
- La liste suivante décrit certaines limitations liées à l'évaluation des expressions XPath.  
+ La liste suivante décrit certaines limitations liées à l’évaluation des expressions XPath.  
   
 - Seules les fonctions XPath intégrées sont autorisées.  
   
@@ -96,15 +91,14 @@ Cette rubrique décrit les fenêtres et boîtes de dialogue du débogueur. Elle 
   
 - Les fonctions définies par l'utilisateur ne sont pas autorisées.  
   
-  Pour plus d’informations, consultez [Comment : évaluer une Expression XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).  
+  Pour plus d'informations, voir [Procédure : Évaluer une Expression XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).  
   
 ## <a name="disassembly-window"></a>Fenêtre Code machine  
  La fenêtre Code machine affiche le code machine généré par le compilateur XSLT. Elle peut s'utiliser de la même façon que toutes les autres fenêtres de code machine Visual Studio.  
   
- Pour plus d’informations, [Comment : utiliser la fenêtre code machine](../debugger/how-to-use-the-disassembly-window.md).  
+ Pour plus d’informations, [Comment : La fenêtre code machine](../debugger/how-to-use-the-disassembly-window.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage XSLT](../xml-tools/debugging-xslt.md)   
  [Principes de base du débogueur](../debugger/debugger-basics.md)   
- [Variable Windows](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
-
+ [Fenêtres de variables](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

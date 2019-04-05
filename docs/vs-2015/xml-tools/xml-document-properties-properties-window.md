@@ -1,25 +1,20 @@
 ---
 title: Propriétés des documents XML, fenêtre Propriétés | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c93defe6f5c56966195f1514b5aa76464f6f3013
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 957abb04b6da602b711bef55b8ff8e62edaecaac
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236559"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953805"
 ---
 # <a name="xml-document-properties-properties-window"></a>Propriétés des documents XML, fenêtre Propriétés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ Le **propriétés** fenêtre fournit des informations de base sur le document es
  **Sortie**  
  Fichier généré lors de la transformation d'un document XML.  
   
- Si aucun fichier n'est spécifié, un nom de fichier par défaut est généré d'après l'attribut `method` de l'élément `xsl:output`, qui détermine l'extension du fichier. Le fichier par défaut se situe dans le répertoire temporaire de l'utilisateur actuel.  
+ Si aucun fichier n’est spécifié, un nom de fichier par défaut est généré d’après l’attribut `method` de l’élément `xsl:output`, qui détermine l’extension du fichier. Le fichier par défaut se situe dans le répertoire temporaire de l'utilisateur actuel.  
   
  **Schémas**  
  Schémas utilisés pour la validation. Le bouton ouvre le **schémas XSD** boîte de dialogue, qui peut être utilisé pour sélectionner les schémas à utiliser.  
@@ -56,6 +51,3 @@ Le **propriétés** fenêtre fournit des informations de base sur le document es
 ## <a name="see-also"></a>Voir aussi  
  [Éditeur XML](../xml-tools/xml-editor.md)   
  [Composants de l’éditeur XML](../xml-tools/xml-editor-components.md)
-
-
-
