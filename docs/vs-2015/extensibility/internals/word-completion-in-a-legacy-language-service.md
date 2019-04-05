@@ -1,14 +1,9 @@
 ---
 title: Saisie semi-automatique de mots dans un Service de langage hérité | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], IntelliSense Complete Word
 - IntelliSense, Complete Word
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 0ace5ac3-f9e1-4e6d-add4-42967b1f96a6
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 40a7e387ceb5fe88f059539634ae654ba076454f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0541e033727f7bf46fe60d3b82b0b3d493f95563
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801717"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952112"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Saisie semi-automatique de mot dans un service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,4 +52,3 @@ Saisie semi-automatique de mot renseigne les caractères manquants sur un mot pa
  Si la liste contient uniquement un terme unique, puis la <xref:Microsoft.VisualStudio.Package.Source> classe insère automatiquement ce mot à la place le mot partiel. Si la liste contient plusieurs mots, la <xref:Microsoft.VisualStudio.Package.Source> classe présente une liste de conseil d’outil à partir de laquelle l’utilisateur peut sélectionner le choix approprié.  
   
  Également examiner l’exemple d’un <xref:Microsoft.VisualStudio.Package.Declarations> implémentation de la classe dans [saisie semi-automatique de membres dans un Service de langage hérité](../../extensibility/internals/member-completion-in-a-legacy-language-service.md).
-

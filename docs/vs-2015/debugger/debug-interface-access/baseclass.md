@@ -1,14 +1,9 @@
 ---
 title: BaseClass | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: 9375ca35-cb91-45f5-8903-7344ee4528e8
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9e215f950cbfceeeea44eb63aaac18579ba08c27
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 61b08d18f694bf43708c58a8e378c8fc0ef283cb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770459"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950957"
 ---
 # <a name="baseclass"></a>BaseClass
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -70,8 +65,5 @@ Chaque classe de base pour un symbole de type défini par l’utilisateur (UDT) 
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` Si la classe de base est marquée comme volatile.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Hiérarchie de classes des Types de symboles](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)   
+ [Hiérarchie de classes des types de symboles](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)   
  [UDT](../../debugger/debug-interface-access/udt.md)
-
-
-
