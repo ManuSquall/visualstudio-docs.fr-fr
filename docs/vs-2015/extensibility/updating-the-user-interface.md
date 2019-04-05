@@ -1,27 +1,22 @@
 ---
 title: La mise à jour de l’Interface utilisateur | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces, updating
 - commands, updating UI
 ms.assetid: 376e2f56-e7bf-4e62-89f5-3dada84a404b
 caps.latest.revision: 42
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e4e6b282ac58e523e8a2047e7f882d90b9f202bf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9285e08a9ace015937f8be594153fb3c1d037d6b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765554"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952512"
 ---
 # <a name="updating-the-user-interface"></a>Mise à jour de l'interface utilisateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,4 +55,3 @@ Une fois que vous implémentez une commande, vous pouvez ajouter le code pour me
 ## <a name="see-also"></a>Voir aussi  
  [Comment VSPackages ajoute des éléments d’Interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Implémentation](../extensibility/internals/command-implementation.md)
-

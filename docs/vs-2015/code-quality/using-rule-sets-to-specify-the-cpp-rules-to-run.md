@@ -1,25 +1,20 @@
 ---
 title: À l’aide de la règle définit pour spécifier les règles C++ à exécuter | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: ac3877e6-5349-4c03-9541-3d5be259f1e8
 caps.latest.revision: 7
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 42c8926403825032f295c31e2ce113bef4ff1bbd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 55ce3ac93f280d5b5cd29fdc533035dc32cbaa8c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810265"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949861"
 ---
 # <a name="using-rule-sets-to-specify-the-c-rules-to-run"></a>Utilisation des ensembles de règles pour spécifier les règles C++ à exécuter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,6 +76,3 @@ Dans [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] et [!INCLUDE[vsUltShor
 -   Pour basculer entre l’affichage et masquage des règles qui sont affectées la **aucun** action, choisissez **afficher les règles qui ne sont pas activés**.  
   
 -   Pour ajouter ou supprimer des ensembles de règles de valeur par défaut à l’ensemble de règles actuel de Microsoft, choisissez **ajouter ou supprimer des ensembles de règles enfants**.
-
-
-

@@ -1,26 +1,21 @@
 ---
 title: Vue d’ensemble de l’intégration de contrôle de source | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], about source control
 ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2c4961f7c67fe8d135b97cbcb137d32b2de44214
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 808d7538e8b30e346464cdbeff3b80ae4d387612
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761528"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58952836"
 ---
 # <a name="source-control-integration-overview"></a>Présentation de l’intégration du contrôle de code source
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ Cette section compare les deux façons d’intégrer le contrôle de code source
   
 1. Créer une DLL qui implémente les fonctions spécifiées dans [Plug-ins de contrôle de code Source](../../extensibility/source-control-plug-ins.md).  
   
-2. Inscrivez la DLL en rendant les entrées de Registre appropriées (décrit dans [Comment : installer un plug-in de contrôle de Source](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
+2. Inscrivez la DLL en rendant les entrées de Registre appropriées (décrit dans [Comment : Installer un plug-in de contrôle de code Source](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
   
 3. Créer une assistance de l’interface utilisateur et l’affichage lorsque vous y êtes invité par le Package de l’adaptateur de contrôle de code Source (le composant de Visual Studio qui gère les fonctionnalités de contrôle de code source par le biais de plug-ins de contrôle de code source)  
   
@@ -85,4 +80,3 @@ Cette section compare les deux façons d’intégrer le contrôle de code source
  [Création d’un contrôle de Source de plug-in](../../extensibility/internals/creating-a-source-control-plug-in.md)   
  [Création d’un VSPackage de contrôle de code Source](../../extensibility/internals/creating-a-source-control-vspackage.md)   
  [Nouveautés du contrôle de code source](../../extensibility/internals/what-s-new-in-source-control.md)
-
