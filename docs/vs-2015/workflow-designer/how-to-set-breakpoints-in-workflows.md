@@ -1,28 +1,25 @@
 ---
-title: 'Comment : définir des points d’arrêt dans les Workflows | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Définir des points d’arrêt dans les Workflows | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: e41b21c9-c061-4358-8e2f-eb5e412864a8
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: b3dedba320ce8a783b7d54df54a30b0759a6bd00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 2aaf61ada4167f29f1c6d4754ced7c9757054a88
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896222"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953926"
 ---
-# <a name="how-to-set-breakpoints-in-workflows"></a>Comment : définir des points d'arrêt dans les workflows
+# <a name="how-to-set-breakpoints-in-workflows"></a>Procédure : Définir des points d’arrêt dans les workflows
 Lorsque vous utilisez [!INCLUDE[wfd1](../includes/wfd1-md.md)], vous pouvez définir des points d'arrêt sur vos workflows graphiques comme vous le feriez dans du code Visual Basic ou C#. Comme prévu, l'exécution de workflow s'arrête à chaque point d'arrêt que vous définissez.  
   
- Un point d’arrêt a trois états : *en attente*, *lié*, et *erreur*. Lorsque vous définissez un point d'arrêt, il a l'état En attente et est représenté par une icône rouge unie. Lorsque l'exécution a chargé le type de workflow, il adopte l'état Lié. Si vous spécifiez un format incorrect pour le point d'arrêt, par exemple en indiquant un nom d'activité non valide, un message d'erreur s'affiche. Le point d'arrêt est ajouté à la fenêtre de points d'arrêt, mais il est marqué d'un petit « x ».  
+ Un point d’arrêt a trois états : *En attente*, *lié*, et *erreur*. Lorsque vous définissez un point d'arrêt, il a l'état En attente et est représenté par une icône rouge unie. Lorsque l'exécution a chargé le type de workflow, il adopte l'état Lié. Si vous spécifiez un format incorrect pour le point d'arrêt, par exemple en indiquant un nom d'activité non valide, un message d'erreur s'affiche. Le point d'arrêt est ajouté à la fenêtre de points d'arrêt, mais il est marqué d'un petit « x ».  
   
 > [!NOTE]
 >  La définition des points d'arrêt sur les workflows appelés n'est pas prise en charge.  
@@ -42,6 +39,6 @@ Lorsque vous utilisez [!INCLUDE[wfd1](../includes/wfd1-md.md)], vous pouvez déf
      Ou bien, vous pouvez également appuyer sur le raccourci **F9** après la sélection de l’activité, ou vous pouvez avec le bouton droit de l’activité et sélectionner **point d’arrêt** puis **Insert point d’arrêt**dans le menu contextuel.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : appeler le débogueur de flux de travail](../workflow-designer/how-to-invoke-the-workflow-debugger.md)   
+ [Guide pratique pour Appelez le débogueur de flux de travail](../workflow-designer/how-to-invoke-the-workflow-debugger.md)   
  [Débogage de Workflows avec Workflow Designer](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)   
- [Guide pratique pour déboguer du code XAML à l’aide du Concepteur de flux de travail](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)
+ [Guide pratique pour déboguer du code XAML à l’aide du concepteur de workflow](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)

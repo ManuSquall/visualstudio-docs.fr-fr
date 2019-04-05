@@ -1,14 +1,9 @@
 ---
 title: Élément SolutionFolder (modèles Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SolutionFolder
 helpviewer_keywords:
@@ -17,23 +12,23 @@ helpviewer_keywords:
 ms.assetid: 963f0398-fb50-4d8e-879d-d48f8b7c6d80
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2fd41144605b37368fe57aa00cdc2bbc8f8a0da0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 84d0c1765a14f60363b71fcdec182d448cb4f112
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809725"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953734"
 ---
 # <a name="solutionfolder-element-visual-studio-templates"></a>SolutionFolder, élément (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Groupe des projets dans des modèles à plusieurs projets.  
   
- \<VSTemplate >  
- \<TemplateContent >  
- \<ProjectCollection >  
- \<SolutionFolder >  
+ \<VSTemplate>  
+ \<TemplateContent>  
+ \<ProjectCollection>  
+ \<SolutionFolder>  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -50,7 +45,7 @@ Groupe des projets dans des modèles à plusieurs projets.
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|`Name`|Attribut requis.<br /><br /> Nom du dossier de solution.|  
+|`Name`|Attribut requis.<br /><br /> Nom du dossier solution.|  
   
 ### <a name="child-elements"></a>Éléments enfants  
   
@@ -67,7 +62,7 @@ Groupe des projets dans des modèles à plusieurs projets.
 |`SolutionFolder`|Groupe des projets dans des modèles à plusieurs projets.|  
   
 ## <a name="remarks"></a>Notes  
- Les modèles à plusieurs projets jouent le rôle de conteneurs pour au moins deux projets. L'élément `SolutionFolder` permet d'organiser les projets du modèle par groupes. Les dossiers spécifiés par les éléments `SolutionFolder` sont créés comme dossiers de solution du projet dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Pour plus d’informations sur les modèles à plusieurs projets, consultez [Comment : créer des modèles à projets multiples](../ide/how-to-create-multi-project-templates.md).  
+ Les modèles à plusieurs projets jouent le rôle de conteneurs pour au moins deux projets. L'élément `SolutionFolder` permet d'organiser les projets du modèle par groupes. Les dossiers spécifiés par les éléments `SolutionFolder` sont créés comme dossiers de solution du projet dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Pour plus d’informations sur les modèles à plusieurs projets, consultez [Comment : Créer des modèles à plusieurs projets](../ide/how-to-create-multi-project-templates.md).  
   
 ## <a name="example"></a>Exemple  
  Cet exemple utilise l'élément `SolutionFolder` pour répartir le modèle à plusieurs projets en deux groupes, `Math Classes` et `Graphics Classes`. Le modèle contient quatre projets, dont deux sont placés dans chaque dossier de solution.  
@@ -107,5 +102,4 @@ Groupe des projets dans des modèles à plusieurs projets.
 ## <a name="see-also"></a>Voir aussi  
  [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)   
- [Guide pratique pour créer des modèles à plusieurs projets](../ide/how-to-create-multi-project-templates.md)
-
+ [Guide pratique pour créer des modèles multiprojets](../ide/how-to-create-multi-project-templates.md)

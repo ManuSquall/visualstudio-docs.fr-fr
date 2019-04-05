@@ -1,14 +1,9 @@
 ---
 title: Project, élément (modèles Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Project
 helpviewer_keywords:
@@ -17,21 +12,21 @@ helpviewer_keywords:
 ms.assetid: 1da15ea6-26e2-462b-a03e-584ef4996579
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 07700501ae2a76337fed499aeb0a66b8b19dbeba
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a5c9708bb8c35e66199aaf3665883307e48a63c4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741124"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953404"
 ---
 # <a name="project-element-visual-studio-templates"></a>Project, élément (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Spécifie les fichiers ou répertoires à ajouter au projet.  
   
- \<VSTemplate >  
- \<TemplateContent >  
+ \<VSTemplate>  
+ \<TemplateContent>  
  \<Project>  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -112,4 +107,3 @@ Spécifie les fichiers ou répertoires à ajouter au projet.
  [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)   
  [ProjectItem, élément (modèles de projet Visual Studio)](../extensibility/projectitem-element-visual-studio-project-templates.md)   
  [Élément Folder (modèles de projet Visual Studio)](../extensibility/folder-element-visual-studio-project-templates.md)
-

@@ -1,14 +1,9 @@
 ---
 title: Composants du débogueur | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], components
 - components [Visual Studio SDK], debugging
@@ -16,30 +11,30 @@ helpviewer_keywords:
 ms.assetid: 8b8ab77f-a134-495c-be42-3bc51aa62dfb
 caps.latest.revision: 31
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: aabd6311212b866b9171758c8bec39e3beebbfea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 12f865e7d4c44cfa4002b330ed85ec95f95a8ef9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797492"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953377"
 ---
 # <a name="debugger-components"></a>Composants du débogueur
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] débogueur est implémenté comme un VSPackage et gère la session de débogage entière. La session de débogage comprend les éléments suivants :  
   
-- **Package de débogage :** le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] débogueur fournit la même interface utilisateur, quel que soit ce qui est en cours de débogage.  
+- **Déboguer le Package :** Le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] débogueur fournit la même interface utilisateur, quel que soit ce qui est en cours de débogage.  
   
-- **Gestionnaire de session de débogage (SDM) :** fournit une interface de programmation cohérente pour la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] débogueur pour la gestion d’un grand nombre de moteurs de débogage. Il est implémenté par [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+- **Gestionnaire de débogage de session (SDM) :** Fournit une interface de programmation cohérente pour la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] débogueur pour la gestion d’un grand nombre de moteurs de débogage. Il est implémenté par [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
-- **Gestionnaire de débogage de processus (PDM) :** gère, toutes les instances en cours d’exécution de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], une liste de tous les programmes qui peuvent être ou sont en cours de débogage. Il est implémenté par [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+- **Gestionnaire de débogage de processus (PDM) :** Gère toutes les instances en cours d’exécution de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], une liste de tous les programmes qui peuvent être ou sont en cours de débogage. Il est implémenté par [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
-- **(Dé) de moteur de débogage :** est responsable de la surveillance d’un programme en cours de débogage, communiquer l’état du programme en cours d’exécution pour le SDM et le responsables prestations Professional direct et l’interaction avec l’évaluateur d’expression et le fournisseur de symboles pour fournir une analyse en temps réel de la état de la mémoire et les variables d’un programme. Il est implémenté par [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (pour les langues prises en charge) et des fournisseurs tiers qui souhaitent prendre en charge de leur propres moment de l’exécution.  
+- **Déboguer le moteur de (dé) :** Est responsable de la surveillance d’un programme en cours de débogage, communiquer l’état du programme en cours d’exécution pour le SDM et le responsables prestations Professional direct et l’interaction avec l’évaluateur d’expression et le fournisseur de symboles pour fournir une analyse en temps réel de l’état de la mémoire d’un programme et variables. Il est implémenté par [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (pour les langues prises en charge) et des fournisseurs tiers qui souhaitent prendre en charge de leur propres moment de l’exécution.  
   
-- **Évaluateur d’expression (EE) :** prend en charge pour l’évaluation dynamique de variables et expressions fournies par l’utilisateur lorsqu’un programme a été arrêté à un moment donné. Il est implémenté par [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (pour les langues prises en charge) et des fournisseurs tiers qui souhaitent prendre en charge leur propre langue.  
+- **Évaluateur d’expression (EE) :** Prend en charge pour l’évaluation dynamique de variables et expressions fournies par l’utilisateur lorsqu’un programme a été arrêté à un moment donné. Il est implémenté par [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (pour les langues prises en charge) et des fournisseurs tiers qui souhaitent prendre en charge leur propre langue.  
   
-- **Fournisseur de symboles (SP) :** également appelé un gestionnaire de symboles, mappe les symboles de débogage d’un programme à une instance en cours d’exécution du programme afin que les informations explicites peuvent être fournies (par exemple, le niveau de code source de débogage et l’expression d’évaluation). Il est implémenté par [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (pour le Common Language Runtime (CLR) symboles et la base de données du programme [PDB] symbol format de fichier) et par des fournisseurs tiers qui ont leur propre méthode propriétaire de stocker les informations de débogage.  
+- **Fournisseur de symboles (SP) :** Également appelé un gestionnaire de symboles, mappe les symboles de débogage d’un programme à une instance en cours d’exécution du programme afin que les informations explicites peuvent être fournies (par exemple, le débogage au niveau de code source et l’évaluation de l’expression). Il est implémenté par [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (pour le Common Language Runtime (CLR) symboles et la base de données du programme [PDB] symbol format de fichier) et par des fournisseurs tiers qui ont leur propre méthode propriétaire de stocker les informations de débogage.  
   
   Le diagramme suivant illustre les relations entre ces éléments du débogueur Visual Studio.  
   
@@ -82,4 +77,3 @@ Le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] débogueur est implémenté c
   
 ## <a name="see-also"></a>Voir aussi  
  [Prise en main](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)
-

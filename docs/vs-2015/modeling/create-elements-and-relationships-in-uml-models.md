@@ -1,25 +1,22 @@
 ---
 title: Créer des éléments et des relations dans les modèles UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: cae81d32-8cc7-4f7c-9f00-20119952bc51
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5ed918bc96168196400dd34d87ec65574fdfc5b6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4b31faa7c71a0f4072d922528a1abc4d040e7dae
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785870"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "59000409"
 ---
 # <a name="create-elements-and-relationships-in-uml-models"></a>Créer des éléments et des relations dans des modèles UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +35,7 @@ Dans le code de programme d'une extension de Visual Studio, vous pouvez créer e
 ### <a name="obtain-the-owner-of-the-element-you-want-to-create"></a>Obtenir le propriétaire de l'élément à créer  
  Un modèle forme une arborescence unique, de sorte que chaque élément possède un propriétaire, à l'exception de la racine du modèle. La racine du modèle est de type `IModel`, ce qui est un type de `IPackage`.  
   
- Si vous créez un élément qui sera affiché dans un diagramme particulier, par exemple, le diagramme actuel de l'utilisateur, vous devez généralement le créer dans le package lié à ce diagramme. Exemple :  
+ Si vous créez un élément qui sera affiché dans un diagramme particulier, par exemple, le diagramme actuel de l'utilisateur, vous devez généralement le créer dans le package lié à ce diagramme. Exemple :  
   
 ```  
 IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;  
@@ -55,7 +52,7 @@ IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;
 |`ILifeline, IMessage, ICombinedFragment`|`IInteraction`|  
   
 ### <a name="invoke-the-create-method-on-the-owner"></a>Appeler la méthode de création sur le propriétaire  
- Le nom de la méthode est au format : `Create` *OwnedType*`()`. Exemple :  
+ Le nom de la méthode est au format : `Create`*OwnedType*`()`. Exemple :  
   
 ```  
 IUseCase usecase1 = linkedPackage.CreateUseCase();  
@@ -96,14 +93,14 @@ using Microsoft.VisualStudio.Uml.Extensions;
   
 3.  Définissez les propriétés de la relation, notamment son nom.  
   
-     Exemple :  
+     Exemple :  
   
     ```  
     IAssociation association = subject.Package.CreateAssociation(subject, observer);  
     association .Name = "Observes";  
     ```  
   
-4.  Définissez les propriétés de chaque extrémité de la relation. Il existe toujours deux `MemberEnds`. Exemple :  
+4.  Définissez les propriétés de chaque extrémité de la relation. Il existe toujours deux `MemberEnds`. Exemple :  
   
     ```  
     association .MemberEnds[0].Name = "subject";   // role name  
@@ -135,6 +132,3 @@ anElement.Delete();
 ## <a name="see-also"></a>Voir aussi  
  [Étendre des diagrammes et des modèles UML](../modeling/extend-uml-models-and-diagrams.md)   
  [Afficher un modèle UML sur des diagrammes](../modeling/display-a-uml-model-on-diagrams.md)
-
-
-

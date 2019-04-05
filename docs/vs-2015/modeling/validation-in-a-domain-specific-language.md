@@ -1,12 +1,9 @@
 ---
 title: Validation dans un langage spécifique à un domaine | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, constraints
 - Domain-Specific Language, validation
@@ -14,13 +11,13 @@ ms.assetid: 65b93df8-af3c-462b-904c-60292f8ed381
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 30a29c9b8921d72f717aea21ed202766f0874389
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 3057d333cfc3b08298a5329a34ef52a51556e4ec
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950787"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953725"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Validation dans un langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +86,7 @@ En tant qu'auteur d'un langage spécifique à un domaine (DSL), vous pouvez déf
   
     L'attribut ValidationCategories spécifie à quel moment la méthode est exécutée.  
   
-   Par exemple :  
+   Exemple :  
   
 ```csharp  
 using Microsoft.VisualStudio.Modeling;  
@@ -151,7 +148,7 @@ public partial class ParentsHaveChildren
 ## <a name="validation-categories"></a>Catégories de validation  
  Dans l'attribut <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute>, vous spécifiez à quel moment la méthode de validation doit s'exécuter.  
   
-|Catégorie|Exécution|  
+|Category|Exécution|  
 |--------------|---------------|  
 |<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Lorsque l'utilisateur appelle la commande de menu Valider.|  
 |<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Lorsque le fichier de modèle est ouvert.|  
@@ -185,7 +182,7 @@ public partial class Person
   
  L'inconvénient est que la méthode combinée est moins facile à gérer et que les contraintes doivent toutes avoir les mêmes `ValidationCategories`. Il est donc recommandé que vous conserviez chaque contrainte dans une méthode distincte si possible.  
   
- **Transmission de valeurs dans le cache de contexte.** Le paramètre de contexte a un dictionnaire dans lequel vous pouvez placer des valeurs arbitraires. Le dictionnaire demeure pendant la durée de l'exécution de la validation. Une méthode de validation particulière peut, par exemple, conserver le nombre d'erreurs dans le contexte et l'utiliser pour éviter que la fenêtre d'erreurs ne déborde sous les messages répétés. Par exemple :  
+ **Transmission de valeurs dans le cache de contexte.** Le paramètre de contexte a un dictionnaire dans lequel vous pouvez placer des valeurs arbitraires. Le dictionnaire demeure pendant la durée de l'exécution de la validation. Une méthode de validation particulière peut, par exemple, conserver le nombre d'erreurs dans le contexte et l'utiliser pour éviter que la fenêtre d'erreurs ne déborde sous les messages répétés. Exemple :  
   
 ```csharp  
 List<ParentsHaveChildren> erroneousLinks;  
@@ -221,9 +218,9 @@ partial class MyLanguageCommandSet
   
 ```  
   
- Pour plus d’informations, consultez [Comment : ajouter une commande au Menu contextuel](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
+ Pour plus d'informations, voir [Procédure : Ajouter une commande au Menu contextuel](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
- Vous pouvez aussi créer un contrôleur de validation distinct et gérer les erreurs vous-même. Par exemple :  
+ Vous pouvez aussi créer un contrôleur de validation distinct et gérer les erreurs vous-même. Exemple :  
   
 ```csharp  
 using Microsoft.VisualStudio.Modeling;  
@@ -350,6 +347,3 @@ validationController.ValidateCustom
 ## <a name="see-also"></a>Voir aussi  
  [Navigation et mise à jour d’un modèle dans le Code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Propagation de modifications en dehors du modèle par des gestionnaires d’événements](../modeling/event-handlers-propagate-changes-outside-the-model.md)
-
-
-

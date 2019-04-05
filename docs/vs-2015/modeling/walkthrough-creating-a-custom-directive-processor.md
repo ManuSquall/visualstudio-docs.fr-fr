@@ -1,12 +1,9 @@
 ---
 title: 'Procédure pas à pas : Création d’un processeur de Directive personnalisé | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
 - walkthroughs [text templates], directive processor
@@ -14,15 +11,15 @@ ms.assetid: b8f35a36-14e1-4467-8f5f-e01402af14d5
 caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 321dd514e0690997cd0aab4ba2b05a7fe0898b6c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e10c489ee8bd14599220429c9d74821986f8b915
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833419"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953535"
 ---
-# <a name="walkthrough-creating-a-custom-directive-processor"></a>Procédure pas à pas : création d'un processeur de directive personnalisé
+# <a name="walkthrough-creating-a-custom-directive-processor"></a>Procédure pas à pas : Création d'un processeur de directive personnalisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Processeurs de directive * fonctionnent en ajoutant du code pour le *classe de transformation générée*. Si vous appelez un *directive* à partir d’un *modèle de texte*, le reste du code que vous écrivez dans votre modèle de texte peut reposer sur les fonctionnalités fournies par la directive.  
@@ -611,7 +608,7 @@ End Property
 
 4.  Pour [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] uniquement, ouvrez le **projet** menu, puis cliquez sur **propriétés de CustomDP**. Sur le **Application** sous l’onglet **espace de noms racine**, supprimez la valeur par défaut, `CustomDP`.  
 
-5.  Sur le **fichier** menu, cliquez sur **Enregistrer tout**.  
+5.  Dans le menu **Fichier**, cliquez sur **Enregistrer tout**.  
 
 6.  Dans le menu **Générer** , cliquez sur **Générer la solution**.  
 
@@ -663,7 +660,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     Votre clé de Registre doit avoir les valeurs suivantes :  
 
 
-   |   Name    |  Type  |                                   Données                                   |
+   |   Nom    |  Type  |                                   Données                                   |
    |-----------|--------|--------------------------------------------------------------------------|
    | (Default) | REG_SZ |                             (valeur non définie)                              |
    |   Classe   | REG_SZ |                    CustomDP.CustomDirectiveProcessor                     |
@@ -672,7 +669,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     Si vous avez placé l'assembly dans le GAC, les valeurs doivent se présenter comme suit :  
 
 
-   |   Name    |  Type  |               Données                |
+   |   Nom    |  Type  |               Données                |
    |-----------|--------|-----------------------------------|
    | (Default) | REG_SZ |          (valeur non définie)          |
    |   Classe   | REG_SZ | CustomDP.CustomDirectiveProcessor |
@@ -838,7 +835,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     > [!NOTE]
     >  Dans cet exemple, la valeur du paramètre `Processor` est `CustomDirectiveProcessor`. La valeur du paramètre `Processor` doit correspondre au nom de la clé de Registre du processeur.  
 
-5.  Sur le **fichier** menu, cliquez sur **Enregistrer tout**.  
+5.  Dans le menu **Fichier**, cliquez sur **Enregistrer tout**.  
 
 #### <a name="to-test-the-directive-processor"></a>Pour tester le processeur de directive  
 
@@ -975,6 +972,3 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 3.  Pour afficher la sortie dans un navigateur, dans **l’Explorateur de solutions**, cliquez sur TestDP.htm, puis cliquez sur **afficher dans le navigateur**.  
 
      Votre sortie doit être identique au texte d'origine, à cette différence près que le format HTML doit lui être appliqué. Chaque nom d'élément doit s'afficher en gras.
-
-
-
