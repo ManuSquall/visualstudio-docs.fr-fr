@@ -1,14 +1,9 @@
 ---
 title: '&lt;trustInfo&gt; , élément (Application ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#IPermission
 - urn:schemas-microsoft-com:asm.v2#PermissionSet
@@ -27,13 +22,13 @@ ms.assetid: 8a813a74-e158-4308-be78-565937f6af83
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 77915ddfe59361623aa5aee3048c6411c6c0c02c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 829ccc02f9532e62bfb62ec21c8188f313c98e59
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175563"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949202"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; , élément (Application ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,7 +104,7 @@ Décrit les autorisations de sécurité minimales dont doit disposer l’applica
   
 -   `Unrestricted`  
   
-     Obligatoire. Indique si l’application doit se voir accorder cette autorisation sans aucune limite. Si cet attribut a la valeur `true`, l’autorisation est accordée à l’application de manière inconditionnelle. Si cet attribut a la valeur `false`, ou s’il n’est pas défini, des restrictions sont imposées à l’application en fonction d’attributs spécifiques à l’autorisation définis dans la balise `IPermission` . Prenez les autorisations suivantes :  
+     Obligatoire. Indique si l’application doit se voir accorder cette autorisation sans aucune limite. Si cet attribut a la valeur `true`, l’autorisation est accordée à l’application de manière inconditionnelle. Si cet attribut a la valeur `false`, ou s’il n’est pas défini, des restrictions sont imposées à l’application en fonction d’attributs spécifiques à l’autorisation définis dans la balise `IPermission` . Prenez les autorisations suivantes :  
   
     ```  
     <IPermission  
@@ -125,14 +120,14 @@ Décrit les autorisations de sécurité minimales dont doit disposer l’applica
      Dans cet exemple, la déclaration d’ <xref:System.Security.Permissions.EnvironmentPermission> indique que l’application peut uniquement lire la variable d’environnement USERNAME, tandis que la déclaration de <xref:System.Security.Permissions.FileDialogPermission> permet à l’application d’utiliser toutes les classes <xref:System.Windows.Forms.FileDialog> sans aucune restriction.  
   
 ## <a name="defaultassemblyrequest"></a>defaultAssemblyRequest  
- Facultatif. Identifie le jeu d’autorisations accordé à tous les assemblys. Cet élément est un enfant de l’élément `applicationRequestMinimum` et contient l’attribut suivant.  
+ Optionnel. Identifie le jeu d’autorisations accordé à tous les assemblys. Cet élément est un enfant de l’élément `applicationRequestMinimum` et contient l’attribut suivant.  
   
 -   `permissionSetReference`  
   
      Obligatoire. Identifie l’ID du jeu d’autorisations qui est l’autorisation par défaut. Le jeu d’autorisations est déclaré dans l’élément `PermissionSet` .  
   
 ## <a name="assemblyrequest"></a>assemblyRequest  
- Facultatif. Identifie les autorisations d’un assembly spécifique. Cet élément est un enfant de l’élément `applicationRequestMinimum` et comprend les attributs suivants.  
+ Optionnel. Identifie les autorisations d’un assembly spécifique. Cet élément est un enfant de l’élément `applicationRequestMinimum` et comprend les attributs suivants.  
   
 -   `Name`  
   
@@ -146,7 +141,7 @@ Décrit les autorisations de sécurité minimales dont doit disposer l’applica
  Facultatif. Cet élément est un enfant de l’élément `security` et contient l’élément `requestedExecutionLevel` . Cet élément n’a pas d’attributs.  
   
 ## <a name="requestedexecutionlevel"></a>requestedExecutionLevel  
- Facultatif. Identifie le niveau de sécurité auquel les demandes d’application doivent être exécutées. Cet élément n’a pas d’enfants et comprend les attributs suivants.  
+ Optionnel. Identifie le niveau de sécurité auquel les demandes d’application doivent être exécutées. Cet élément n’a pas d’enfants et comprend les attributs suivants.  
   
 -   `Level`  
   
@@ -158,7 +153,7 @@ Décrit les autorisations de sécurité minimales dont doit disposer l’applica
   
      `requireAdministrator`: demande d’autorisations d’administrateur complètes.  
   
-     Les applications [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] sont uniquement installées avec la valeur `asInvoker`. Toute installation effectuée avec une autre valeur se soldera par un échec.  
+     Les applications[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] sont uniquement installées avec la valeur `asInvoker`. Toute installation effectuée avec une autre valeur se soldera par un échec.  
   
 -   `uiAccess`  
   
@@ -172,7 +167,7 @@ Décrit les autorisations de sécurité minimales dont doit disposer l’applica
  Pour plus d’informations sur l’élévation d’autorisations, consultez [sécurisation des Applications ClickOnce](../deployment/securing-clickonce-applications.md). Pour plus d’informations sur le déploiement de stratégies, consultez [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
 ## <a name="examples"></a>Exemples  
- Les trois exemples de code suivants illustrent les éléments `trustInfo` pour les zones de sécurité nommées par défaut (Internet, LocalIntranet et FullTrust). Vous utilisez ces éléments dans le manifeste d’application d’un déploiement [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
+ Les trois exemples de code suivants illustrent les éléments `trustInfo` pour les zones de sécurité nommées par défaut (Internet, LocalIntranet et FullTrust). Vous utilisez ces éléments dans le manifeste d’application d’un déploiement [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] .  
   
  Le premier exemple illustre l’élément `trustInfo` pour les autorisations par défaut disponibles dans la zone de sécurité Internet.  
   
@@ -278,6 +273,3 @@ Décrit les autorisations de sécurité minimales dont doit disposer l’applica
 ## <a name="see-also"></a>Voir aussi  
  [Vue d’ensemble du déploiement d’applications approuvées](../deployment/trusted-application-deployment-overview.md)   
  [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
-
-
-
