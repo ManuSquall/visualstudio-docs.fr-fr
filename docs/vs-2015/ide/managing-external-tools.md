@@ -57,12 +57,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 34508502d28df379e05623116b9659848a84b6bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 1a59432d6b630606ac5c133e8a5811186fcf7c34
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763321"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58866758"
 ---
 # <a name="managing-external-tools"></a>Gestion des outils externes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,11 +78,11 @@ Vous pouvez appeler des outils externes à partir de Visual Studio. Certains out
   
 3.  ATL/MFC Trace Tool : montre des messages de trace de débogage dans les sources ATL et MFC.  
   
-4.  PreEmptive Dotfuscator et Analytique : Protège les programmes .NET contre l’ingénierie à rebours.  
+4.  PreEmptive Protection - Dotfuscator : protège les programmes .NET contre l'ingénierie à rebours.  
   
-5.  SPY++ Affiche les processus, threads, windows et messages de fenêtre graphiquement.  
+5.  SPY++ : affiche les processus, threads, fenêtres, et messages de fenêtre graphiquement.  
   
-6.  Éditeur de configuration de service &WCF Vous permet de créer et modifier les paramètres de configuration pour les services WCF.  
+6.  Éditeur de configuration de service WCF : vous permet de créer et de modifier les paramètres de configuration des services WCF.  
   
 > [!WARNING]
 >  Il est possible qu'une liste différente d'outils externes s'affiche, en fonction de l'édition de Visual Studio que vous avez installée et du profil de paramètres que vous avez appliqué. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -122,4 +122,4 @@ Vous pouvez appeler des outils externes à partir de Visual Studio. Certains out
 |Nom du fichier solution|$(SolutionFileName)|Nom de fichier de la solution active (lecteur + chemin d’accès + nom de fichier).|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Outils de génération C/C++](http://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)
+ [Outils de génération C/C++](http://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)

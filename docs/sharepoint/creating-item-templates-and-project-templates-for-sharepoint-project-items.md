@@ -52,7 +52,7 @@ ms.locfileid: "57868032"
 | *.webpart* | Un *définition WebPart* fichier. Ce fichier contient les paramètres de propriété pour un composant WebPart. Pour plus d’informations, consultez [bloc de construction : Composants WebPart](http://go.microsoft.com/fwlink/?LinkId=177791). |
 | *.ascx* | Un fichier de contrôle utilisateur ASP.NET. Ce fichier définit l’interface utilisateur d’un composant Visual Web Part. |
 | *.aspx* | Un fichier de page ASP.NET. Ce fichier contient le balisage XML qui définit une page d’application. |
-| *.cs* ou *.vb* fichiers | Ces fichiers de code définissent le comportement des personnalisations de SharePoint qui ont un modèle de programmation qui est accessible à partir de Visual c# ou Visual Basic code, par exemple les pages d’application, les composants WebPart et les workflows. |
+| *.cs* ou *.vb* fichiers | Ces fichiers de code définissent le comportement des personnalisations de SharePoint qui ont un modèle de programmation qui est accessible à partir de Visual C# ou Visual Basic code, par exemple les pages d’application, les composants WebPart et les workflows. |
 
 ## <a name="create-project-templates"></a>Créer des modèles de projet
  Lorsque vous créez un modèle de projet SharePoint, il existe certains fichiers sont toujours les fichiers requis et facultatifs qui peuvent être utilisées par certains types de projets. En règle générale, les projets SharePoint incluent au moins un élément de projet SharePoint. Toutefois, cela n’est pas nécessaire. Par exemple, vous pouvez définir un modèle de projet SharePoint qui est destiné à être utilisé que pour déployer des solutions SharePoint créées dans d’autres projets.

@@ -30,7 +30,7 @@ Un groupe de commandes est une collection de commandes qui apparaissent toujours
   
 1.  Créez un projet VSIX nommé `ReusableButtons`. Pour plus d’informations, consultez [création d’une Extension avec une commande de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  Quand le projet s’ouvre, ajoutez un modèle d’élément de commande personnalisée nommé **ReusableCommand**. Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **Ajouter / nouvel élément**. Dans le **ajouter un nouvel élément** boîte de dialogue, accédez à **Visual c# / extensibilité** et sélectionnez **commande personnalisée**. Dans le **nom** en bas de la fenêtre, modifiez le nom de fichier de commande pour **ReusableCommand.cs**.  
+2.  Quand le projet s’ouvre, ajoutez un modèle d’élément de commande personnalisée nommé **ReusableCommand**. Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **Ajouter / nouvel élément**. Dans le **ajouter un nouvel élément** boîte de dialogue, accédez à **Visual C# / extensibilité** et sélectionnez **commande personnalisée**. Dans le **nom** en bas de la fenêtre, modifiez le nom de fichier de commande pour **ReusableCommand.cs**.  
   
 3.  Dans le fichier .vsct, accédez à la section Symbols et recherchez l’élément GuidSymbol qui contient les groupes et les commandes pour le projet. Il doit être nommé guidReusableCommandPackageCmdSet.  
   

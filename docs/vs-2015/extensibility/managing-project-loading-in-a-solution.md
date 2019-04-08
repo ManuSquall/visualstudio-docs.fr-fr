@@ -50,7 +50,7 @@ pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLo
 ```  
   
 #### <a name="implementing-ivssolutionloadmanager"></a>Implémentation IVsSolutionLoadManager  
- Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager.OnBeforeOpenProject%2A> méthode est appelée pendant le processus d’ouverture de la solution. Pour implémenter cette méthode, vous utilisez la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManagerSupport> service afin de définir la priorité de chargement pour le type de projet que vous souhaitez gérer. Par exemple, le code suivant définit les types de projets c# pour un chargement en arrière-plan :  
+ Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager.OnBeforeOpenProject%2A> méthode est appelée pendant le processus d’ouverture de la solution. Pour implémenter cette méthode, vous utilisez la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManagerSupport> service afin de définir la priorité de chargement pour le type de projet que vous souhaitez gérer. Par exemple, le code suivant définit les types de projets C# pour un chargement en arrière-plan :  
   
 ```csharp  
 Guid guidCSProjectType = new Guid("{FAE04EC0-301F-11d3-BF4B-00C04F79EFBC}");  

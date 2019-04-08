@@ -34,7 +34,7 @@ ms.locfileid: "55917478"
  Un type public implémente un finaliseur qui ne spécifie pas d’accès (protégé) family.
 
 ## <a name="rule-description"></a>Description de la règle
- Les finaliseurs doivent utiliser le modificateur d’accès family. Cette règle est appliquée par les compilateurs c#, Visual Basic et Visual C++.
+ Les finaliseurs doivent utiliser le modificateur d’accès family. Cette règle est appliquée par les compilateurs C#, Visual Basic et Visual C++.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, modifiez le finaliseur pour un accès family.

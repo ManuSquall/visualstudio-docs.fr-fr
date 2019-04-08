@@ -24,7 +24,7 @@ ms.locfileid: "58952456"
 
 Dans Visual Studio, les projets sont les conteneurs que les développeurs utilisent pour organiser les fichiers de code source et d’autres ressources. Les projets apparaissent en tant qu’enfants de solutions dans le **l’Explorateur de solutions**. Projets vous permettent d’organiser, générer, déboguer, déployer le code source et créer des références aux services Web, bases de données et d’autres ressources.  
   
- Les projets sont définis dans les fichiers de projet, par exemple un fichier .csproj pour un projet Visual c#. Vous pouvez créer votre propre type de projet qui a votre propre extension de nom de fichier de projet. Pour plus d’informations sur les types de projets, consultez [Types de projets](../extensibility/internals/project-types.md).  
+ Les projets sont définis dans les fichiers de projet, par exemple un fichier .csproj pour un projet Visual C#. Vous pouvez créer votre propre type de projet qui a votre propre extension de nom de fichier de projet. Pour plus d’informations sur les types de projets, consultez [Types de projets](../extensibility/internals/project-types.md).  
   
 > [!NOTE]
 >  Si vous avez besoin étendre Visual Studio avec un type de projet personnalisé, nous recommandons en exploitant la [système de projet Visual Studio](https://github.com/Microsoft/VSProjectSystem) qui a un nombre d’avantages par rapport à la création d’un système de projet à partir de zéro :  
@@ -34,7 +34,7 @@ Dans Visual Studio, les projets sont les conteneurs que les développeurs utilis
 > 
 >   Si vous avez besoin pour cibler des versions de Visual Studio antérieures à Visual Studio 2013, vous ne serez pas en mesure d’utiliser CPS dans une extension Visual Studio.  Si tel est le cas, cette procédure pas à pas est un bon point de mise en route.  
   
- Cette procédure pas à pas vous montre comment créer un type de projet qui a le .myproj d’extension de nom de fichier projet. Cette procédure pas à pas utilise le système de projet Visual c# existant.  
+ Cette procédure pas à pas vous montre comment créer un type de projet qui a le .myproj d’extension de nom de fichier projet. Cette procédure pas à pas utilise le système de projet Visual C# existant.  
   
 > [!NOTE]
 >  Pour obtenir un exemple de bout en bout pour un langage complet du système de projet, consultez la présentation approfondie d’exemple IronPython dans [exemples d’extensibilité Visual Studio](../misc/vssdk-samples.md).  
@@ -63,7 +63,7 @@ Dans Visual Studio, les projets sont les conteneurs que les développeurs utilis
  Vous devez également télécharger le code source pour le [Managed Package Framework for Projects](http://mpfproj12.codeplex.com/). Extrayez le fichier vers un emplacement accessible à la solution que vous vous apprêtez à créer.  
   
 ## <a name="creating-a-basic-project-type"></a>Création d’un Type de projet de base  
- Créez un projet VSIX c# nommé **SimpleProject**. (**Fichier, nouveau, projet** , puis **Package Visual Studio c#, extensibilité,**). Ajouter un modèle d’élément de projet Package Visual Studio (dans l’Explorateur de solutions, cliquez sur le nœud de projet et sélectionnez **Ajouter / nouvel élément**, puis accédez à **extensibilité / Package Visual Studio**). Nommez le fichier **SimpleProjectPackage**.  
+ Créez un projet VSIX C# nommé **SimpleProject**. (**Fichier, nouveau, projet** , puis **Package Visual Studio C#, extensibilité,**). Ajouter un modèle d’élément de projet Package Visual Studio (dans l’Explorateur de solutions, cliquez sur le nœud de projet et sélectionnez **Ajouter / nouvel élément**, puis accédez à **extensibilité / Package Visual Studio**). Nommez le fichier **SimpleProjectPackage**.  
   
 ## <a name="creating-a-basic-project-template"></a>Création d’un modèle de projet de base  
  Maintenant, vous pouvez modifier ce VSPackage de base pour implémenter le nouveau type de projet .myproj. Pour créer un projet basé sur le type de projet .myproj, Visual Studio doit savoir quels fichiers, les ressources et les références à ajouter au nouveau projet. Pour fournir ces informations, placez les fichiers de projet dans un dossier de modèle de projet. Lorsqu’un utilisateur utilise le projet .myproj pour créer un projet, les fichiers sont copiés vers le nouveau projet.  

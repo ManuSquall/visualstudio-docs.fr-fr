@@ -289,4 +289,4 @@ ms.locfileid: "59001381"
 
 1.  Vérifiez la liste des [raccourcis de Visual Studio 2013](http://visualstudioshortcuts.com/2013/) pour déterminer s’il existe des commandes similaires aux vôtres avec groupe.
 
-2.  Accédez à **Outils > Options > environnement > clavier** et tester votre raccourci. Vérifiez que chaque schéma de configuration du clavier est répertorié sous « Appliquer le schéma de mappage de clavier supplémentaires suivantes. » Vérification des profils général, c#, VB et C++, comme ceux partagent les raccourcis uniques. Le raccourci est disponible s’il n’est pas mappé dans un de ces emplacements.
+2.  Accédez à **Outils > Options > environnement > clavier** et tester votre raccourci. Vérifiez que chaque schéma de configuration du clavier est répertorié sous « Appliquer le schéma de mappage de clavier supplémentaires suivantes. » Vérification des profils général, C#, VB et C++, comme ceux partagent les raccourcis uniques. Le raccourci est disponible s’il n’est pas mappé dans un de ces emplacements.

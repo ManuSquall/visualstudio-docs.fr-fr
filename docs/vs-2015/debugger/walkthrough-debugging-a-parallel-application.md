@@ -65,7 +65,7 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
   
 1. Dans Visual Studio, dans le menu **Fichier**,pointez sur **Nouveau**, puis cliquez sur **Projet**.  
   
-2. Dans le **modèles installés** volet, sélectionnez Visual c#, Visual Basic ou Visual C++. Pour les langages managés, assurez-vous que [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] est affiché dans la fenêtre .NET Framework.  
+2. Dans le **modèles installés** volet, sélectionnez Visual C#, Visual Basic ou Visual C++. Pour les langages managés, assurez-vous que [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] est affiché dans la fenêtre .NET Framework.  
   
 3. Sélectionnez **Application Console** puis cliquez sur **OK**. Restez en configuration Debug, qui est la valeur par défaut.  
   

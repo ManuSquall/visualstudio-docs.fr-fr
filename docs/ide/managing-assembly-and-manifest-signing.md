@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41acd93dc89d84fa3fa96bc1228c57271f1fc21d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 17cda43c2fab2944e5027f5292b405f8a9e2e084
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957466"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58866690"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Gérer la signature d’assemblys et de manifestes
 
@@ -31,7 +31,7 @@ Pour plus d’informations sur la signature d’assemblys dans les projets Visua
 Pour plus d’informations sur la signature d’assemblys dans les projets Visual C++, consultez [Assemblys de nom fort (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).
 
 > [!NOTE]
-> La signature avec nom fort ne protège pas l’assembly contre l’ingénierie à rebours. Pour protéger contre l’ingénierie à rebours, consultez [Dotfuscator Community Edition (CE)](dotfuscator/index.md).
+> La signature avec nom fort ne protège pas l’assembly contre l’ingénierie à rebours. Pour se protéger de l’ingénierie à rebours, consultez [Dotfuscator Community](dotfuscator/index.md).
 
 ## <a name="asset-types-and-signing"></a>Types de composants et signature
 
@@ -57,7 +57,7 @@ En général, vous ne devez pas signer les exécutables. Un composant de nom for
 
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Guide pratique pour signer un assembly dans Visual Studio
 
-Vous signez une application ou un composant à l’aide de l’onglet **Signature** de la fenêtre des propriétés du projet (cliquez avec le bouton droit sur le nœud de projet dans **Explorateur de solutions** et sélectionnez **Propriétés** ou tapez **propriétés de projet** dans la fenêtre **Lancement rapide**, ou appuyez sur **Alt**+**Entrée** dans **Explorateur de solutions**). Sélectionnez l’onglet **Signature**, puis cochez la case **Signer l’assembly**.
+Vous signez une application ou un composant à l’aide de l’onglet **Signature** de la fenêtre des propriétés du projet (cliquez avec le bouton droit sur le nœud de projet dans l’**Explorateur de solutions** et sélectionnez **Propriétés**). Sélectionnez l’onglet **Signature**, puis cochez la case **Signer l’assembly**.
 
 Spécifiez un fichier de clé. Si vous choisissez de créer un fichier de clé, les fichiers de ce type sont toujours créés au format *.pfx*. Vous avez besoin d’un nom et d’un mot de passe pour le nouveau fichier.
 

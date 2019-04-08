@@ -38,7 +38,7 @@ ms.locfileid: "58950949"
 ## <a name="rule-description"></a>Description de la règle
  Il n’existe aucun cas où l’égalité ou inégalité s’applique aux instances d’un type, et l’opérateur opposé n’est pas défini. Types implémentent généralement l’opérateur d’inégalité en retournant la valeur négative de l’opérateur d’égalité.
 
- Le compilateur c# émet une erreur pour les violations de cette règle.
+ Le compilateur C# émet une erreur pour les violations de cette règle.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, implémentez l’égalité et les opérateurs d’inégalité, ou supprimez celui qui est présent.

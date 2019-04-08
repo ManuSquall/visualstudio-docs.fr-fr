@@ -20,7 +20,7 @@ ms.locfileid: "58947312"
 
 Les ampoules sont les icônes utilisées dans l’éditeur Visual Studio et qui se développent pour afficher un ensemble d’actions, par exemple des correctifs pour les problèmes identifiés par les analyseurs de code intégrés ou la refactorisation de code.  
   
- Dans les éditeurs Visual c# et Visual Basic, vous pouvez également utiliser .NET Compiler Platform (« Roslyn ») pour écrire et empaqueter vos propres analyseurs de code avec des actions qui s’affiche automatiquement les ampoules. Pour plus d'informations, voir :  
+ Dans les éditeurs Visual C# et Visual Basic, vous pouvez également utiliser .NET Compiler Platform (« Roslyn ») pour écrire et empaqueter vos propres analyseurs de code avec des actions qui s’affiche automatiquement les ampoules. Pour plus d'informations, voir :  
   
 - [Guide pratique pour Écrire un C# de Diagnostic et de correction du Code](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
   
@@ -28,7 +28,7 @@ Les ampoules sont les icônes utilisées dans l’éditeur Visual Studio et qui 
   
   Autres langages tels que C++ fournissent également des ampoules pour certaines actions rapides, comme une suggestion pour créer une implémentation de stub de cette fonction.  
   
-  Voici à quoi ressemble une ampoule. Dans un projet Visual Basic ou Visual c#, une ligne ondulée rouge s’affiche sous un nom de variable lorsqu’il n’est pas valide. Lorsque vous déplacez la souris sur l’identificateur non valide, une ampoule s’affiche près du curseur.  
+  Voici à quoi ressemble une ampoule. Dans un projet Visual Basic ou Visual C#, une ligne ondulée rouge s’affiche sous un nom de variable lorsqu’il n’est pas valide. Lorsque vous déplacez la souris sur l’identificateur non valide, une ampoule s’affiche près du curseur.  
   
   ![ampoule](../extensibility/media/lightbulb.png "LightBulb")  
   
@@ -43,7 +43,7 @@ Les ampoules sont les icônes utilisées dans l’éditeur Visual Studio et qui 
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Création d’un projet Managed Extensibility Framework (MEF)  
   
-1.  Créez un projet c# VSIX. (Dans le **nouveau projet** boîte de dialogue, sélectionnez **Visual c# / extensibilité**, puis **projet VSIX**.) Nommez la solution `LightBulbTest`.  
+1.  Créez un projet C# VSIX. (Dans le **nouveau projet** boîte de dialogue, sélectionnez **Visual C# / extensibilité**, puis **projet VSIX**.) Nommez la solution `LightBulbTest`.  
   
 2.  Ajouter un **classifieur d’éditeur** modèle d’élément au projet. Pour plus d’informations, consultez [création d’une Extension avec un éditeur de modèle d’élément](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   

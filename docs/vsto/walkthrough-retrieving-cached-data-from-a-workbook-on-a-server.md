@@ -245,7 +245,7 @@ ms.locfileid: "54867427"
 
 6. Ouvrez le *Program.cs* ou *Module1.vb* fichier dans l’éditeur de code.
 
-7. Ajoutez le code suivant **à l’aide de** (pour c#) ou **importations** (pour Visual Basic) en haut du fichier de code.
+7. Ajoutez le code suivant **à l’aide de** (pour C#) ou **importations** (pour Visual Basic) en haut du fichier de code.
 
     [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
     [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]

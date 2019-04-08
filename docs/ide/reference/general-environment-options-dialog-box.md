@@ -1,6 +1,6 @@
 ---
 title: Général, Environnement, boîte de dialogue Options
-ms.date: 11/04/2016
+ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
 - VS.Message.0x800a002e
@@ -24,14 +24,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4faae6f061da675efdecdea5f8c4a0e606d486b8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 4fdbd8c64514854aa77c358145badbf6583996f1
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710836"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647269"
 ---
-# <a name="general-environment-options-dialog-box"></a>Général, Environnement, boîte de dialogue Options
+# <a name="options-dialog-box-environment--general"></a>Boîte de dialogue Options : Environnement \> Général
 
 Utilisez cette page pour modifier les thèmes de couleurs, les paramètres de la barre d'état et les associations d'extensions de fichier, entre autres options, pour l'environnement de développement intégré (IDE). Vous pouvez accéder à la boîte de dialogue **Options** en ouvrant le menu **Outils**, en choisissant **Options**, en ouvrant le dossier **Environnement**, puis en choisissant la page **Général**. Si cette page n’apparaît pas dans la liste, cochez la case **Afficher tous les paramètres** dans la boîte de dialogue **Options**.
 
@@ -39,13 +39,21 @@ Utilisez cette page pour modifier les thèmes de couleurs, les paramètres de la
 
 **Thème de couleur**
 
-Choisissez le thème de couleur **Bleu**, **Clair** ou **Sombre** pour l’IDE.
+Choisissez **Bleu**, **Clair**, **Foncé** ou **Bleu (contraste supplémentaire)** comme thème de couleur de l’IDE.
 
-Vous pouvez installer d’autres thèmes prédéfinis et créer des thèmes personnalisés en téléchargeant et en installant **l’éditeur de thème de couleur de Visual Studio** à partir de la [Place de marché Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Une fois cet outil installé, d'autres thèmes de couleurs apparaissent dans la zone de liste des thèmes de couleurs.
+Vous pouvez installer d’autres thèmes prédéfinis et créer des thèmes personnalisés en téléchargeant et en installant l’**éditeur de thème de couleur de Visual Studio** à partir de [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Une fois cet outil installé, d'autres thèmes de couleurs apparaissent dans la zone de liste **Thème de couleur**.
 
-**Appliquer une 1ère lettre en majuscule à la barre de menus**
+**Mettre la 1ère lettre des mots en maj. dans la barre de menus**
 
-Les initiales des menus sont en **majuscules** par défaut. Désélectionnez cette option pour les définir sur **Tout en majuscules**.
+Dans les menus, une majuscule est appliquée à la première lettre des mots par défaut. Décochez cette option pour mettre toutes les lettres des mots en majuscule.
+
+::: moniker range=">=vs-2019"
+
+**Optimiser le rendu pour les écrans avec des densités en pixels différentes (redémarrage nécessaire)**
+
+Cette option active ou désactive la prise en charge des points par pouce (PPP) par écran (ou *PMA*). Lorsque la PMA est activée, l’interface utilisateur de Visual Studio s’affiche de façon nette dans n’importe quel facteur d’échelle d’affichage d’écran et n’importe quelle configuration PPP, y compris en multiécran. Pour activer la PMA, vous avez besoin de la Mise à jour d’avril 2018 de Windows 10 ou ultérieure et de .NET Framework 4.8 ou ultérieur. (Cette option apparaît grisée si ces deux prérequis ne sont pas remplis.)
+
+::: moniker-end
 
 **Ajuster automatiquement l’expérience visuelle selon les perf. du client**
 
@@ -61,13 +69,13 @@ Utilise l'accélération graphique matérielle si elle est disponible, au lieu d
 
 ## <a name="other"></a>Autre
 
-**Éléments affichés dans le menu Fenêtre**
+**Éléments à afficher dans le menu Fenêtre**
 
-Personnalise le nombre de fenêtres qui s’affichent dans la liste Fenêtres du menu **Fenêtre**. Entrez un nombre compris entre 1 et 24. Par défaut, ce nombre est de 10.
+Personnalise le nombre de fenêtres qui s’affichent dans la liste Fenêtres du menu **Fenêtre**. Entrez un nombre compris entre 1 et 24. La valeur par défaut est 10.
 
 **Éléments affichés dans la liste des fichiers récents**
 
-Personnalise le nombre des projets et des fichiers les plus récemment utilisés qui s’affichent dans le menu **Fichier**. Entrez un nombre compris entre 1 et 24. Par défaut, ce nombre est de 10. Il s'agit d'un moyen facile de récupérer les projets et les fichiers récemment utilisés.
+Personnalise le nombre des projets et des fichiers les plus récemment utilisés qui s’affichent dans le menu **Fichier**. Entrez un nombre compris entre 1 et 24. La valeur par défaut est 10. Il s'agit d'un moyen facile de récupérer les projets et les fichiers récemment utilisés.
 
 **Afficher la barre d’état**
 

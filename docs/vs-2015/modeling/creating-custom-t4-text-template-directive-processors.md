@@ -61,7 +61,7 @@ Le *processus de transformation de modèle de texte* prend un *modèle de texte*
   
 - `string[] GetImportsForProcessingRun()` : Retourne les espaces de noms peut être utilisé dans le code du modèle.  
   
-- `string GetClassCodeForProcessingRun()` -Retourne le code des méthodes, propriétés et d’autres déclarations que le code du modèle peut utiliser. Pour ce faire, le plus simple consiste à générer une chaîne contenant le code c# ou Visual Basic. Pour rendre votre processeur de directive puisse être appelé à partir d’un modèle qui utilise n’importe quel langage CLR, vous pouvez construire les instructions sous forme d’arborescence CodeDom et puis retourner le résultat de la sérialisation de l’arborescence dans la langue utilisée par le modèle.  
+- `string GetClassCodeForProcessingRun()` -Retourne le code des méthodes, propriétés et d’autres déclarations que le code du modèle peut utiliser. Pour ce faire, le plus simple consiste à générer une chaîne contenant le code C# ou Visual Basic. Pour rendre votre processeur de directive puisse être appelé à partir d’un modèle qui utilise n’importe quel langage CLR, vous pouvez construire les instructions sous forme d’arborescence CodeDom et puis retourner le résultat de la sérialisation de l’arborescence dans la langue utilisée par le modèle.  
   
 - Pour plus d’informations, consultez [Procédure pas à pas : Création d’un processeur de Directive personnalisé](../modeling/walkthrough-creating-a-custom-directive-processor.md).  
   

@@ -25,7 +25,7 @@ ms.locfileid: "58949613"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-Quand vous créez une application qui manipule les données d'une base de données, vous effectuez des tâches élémentaires, comme définir les chaînes de connexion, insérer les données et exécuter les procédures stockées. En suivant cette rubrique, vous pouvez découvrir comment interagir avec une base de données à partir d’une application de « formulaires de données » de Windows Forms simple à l’aide de Visual c# ou Visual Basic et ADO.NET.  Toutes les technologies de données .NET, y compris les datasets, LINQ to SQL et Entity Framework — finalement les étapes qui sont très similaires à celles présentées dans cet article.  
+Quand vous créez une application qui manipule les données d'une base de données, vous effectuez des tâches élémentaires, comme définir les chaînes de connexion, insérer les données et exécuter les procédures stockées. En suivant cette rubrique, vous pouvez découvrir comment interagir avec une base de données à partir d’une application de « formulaires de données » de Windows Forms simple à l’aide de Visual C# ou Visual Basic et ADO.NET.  Toutes les technologies de données .NET, y compris les datasets, LINQ to SQL et Entity Framework — finalement les étapes qui sont très similaires à celles présentées dans cet article.  
   
  Cet article montre un moyen simple d’obtenir des données en dehors d’une base de données de manière très rapide. Si votre application a besoin de modifier les données de manières non triviale et mettre à jour de la base de données, vous devez envisager l’utilisation de Entity Framework et à l’aide de la liaison de données à synchroniser automatiquement les contrôles d’interface utilisateur pour les modifications dans les données sous-jacentes.  
   
@@ -57,7 +57,7 @@ Quand vous créez une application qui manipule les données d'une base de donné
   
 - Chaîne de connexion de la base de données, une fois que vous l'avez configurée. Vous pouvez trouver cette valeur en ouvrant **Explorateur d’objets SQL Server**, ouvrez le menu contextuel pour la base de données, sélectionnez **propriétés**, puis faites défiler jusqu'à la **ConnectionString** propriété.  
   
-  Cette rubrique suppose que vous êtes familiarisé avec les fonctionnalités de base de l'IDE de Visual Studio et que vous pouvez créer une application Windows Forms, ajouter des formulaires à ce projet, placer des boutons et autres contrôles sur les formulaires, définir les propriétés de ces contrôles et coder des événements simples. Si vous n’êtes pas familiarisé avec ces tâches, nous vous suggérons d’effectuer la [mise en route avec Visual c# et Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) avant de commencer cette rubrique.  
+  Cette rubrique suppose que vous êtes familiarisé avec les fonctionnalités de base de l'IDE de Visual Studio et que vous pouvez créer une application Windows Forms, ajouter des formulaires à ce projet, placer des boutons et autres contrôles sur les formulaires, définir les propriétés de ces contrôles et coder des événements simples. Si vous n’êtes pas familiarisé avec ces tâches, nous vous suggérons d’effectuer la [mise en route avec Visual C# et Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) avant de commencer cette rubrique.  
   
 ##  <a name="BKMK_setupthesampledatabase"></a> Configurer la base de données  
  L'exemple de base de données pour cette procédure pas à pas inclut les tables Customer et Orders. Initialement, les tables ne contiennent pas de données, mais vous les ajouterez quand vous exécuterez l'application que vous allez créer. La base de données dispose également de cinq procédures stockées simples. [Créer une base de données SQL à l’aide d’un script](../data-tools/create-a-sql-database-by-using-a-script.md) contient un script Transact-SQL qui crée les tables, les clés primaires et étrangères, les contraintes et les procédures stockées.  
@@ -218,7 +218,7 @@ Quand vous créez une application qui manipule les données d'une base de donné
     |-------------|-----------------|  
     |Util-1|Ajouter l’espace de noms `System.Configuration`|  
     |Util-2|Définissez une variable `returnValue` et initialisez-la sur `null` (C#) ou `Nothing` (Visual Basic).|  
-    |Util-3|Même si vous avez entré `connString` comme nom de la chaîne de connexion dans le **propriétés** fenêtre, vous devez spécifier `"SimpleDataApp.Properties.Settings.connString"` (c#) ou `"SimpleDataApp.My.MySettings.connString"` (Visual Basic) dans le code.|  
+    |Util-3|Même si vous avez entré `connString` comme nom de la chaîne de connexion dans le **propriétés** fenêtre, vous devez spécifier `"SimpleDataApp.Properties.Settings.connString"` (C#) ou `"SimpleDataApp.My.MySettings.connString"` (Visual Basic) dans le code.|  
   
 ##  <a name="BKMK_writethecodefortheforms"></a> Écrivez le code des formulaires  
  Cette section contient des vues d'ensemble de ce que fait chaque formulaire et indique le code qui crée les formulaires. Les commentaires numérotés identifient des sections du code.  
@@ -227,7 +227,7 @@ Quand vous créez une application qui manipule les données d'une base de donné
  Le formulaire Navigation s'ouvre quand vous exécutez l'application. Le bouton **Ajouter un compte** ouvre le formulaire NewCustomer. Le bouton **Remplir ou annuler les commandes** ouvre le formulaire FillOrCancel. Le bouton **Quitter** ferme l’application.  
   
 #### <a name="make-the-navigation-form-the-startup-form"></a>Faire du formulaire Navigation le formulaire de démarrage  
- Si vous utilisez c#, dans **l’Explorateur de solutions**, ouvrez le fichier Program.cs et modifiez la `Application.Run` ligne à ceci : `Application.Run(new Navigation());`  
+ Si vous utilisez C#, dans **l’Explorateur de solutions**, ouvrez le fichier Program.cs et modifiez la `Application.Run` ligne à ceci : `Application.Run(new Navigation());`  
   
  Si vous utilisez Visual Basic, dans **l’Explorateur de solutions**, ouvrez le **propriétés** fenêtre, sélectionnez le **Application** onglet, puis sélectionnez  **SimpleDataApp.Navigation** dans le **formulaire de démarrage** liste.  
   

@@ -27,7 +27,7 @@ Vous pouvez ajouter différents effets visuels à l’éditeur en créant des co
   
 ## <a name="creating-a-mef-project"></a>Création d’un projet MEF  
   
-1.  Créez un projet c# VSIX. (Dans le **nouveau projet** boîte de dialogue, sélectionnez **Visual c# / extensibilité**, puis **projet VSIX**.) Nommez la solution `HighlightWordTest`.  
+1.  Créez un projet C# VSIX. (Dans le **nouveau projet** boîte de dialogue, sélectionnez **Visual C# / extensibilité**, puis **projet VSIX**.) Nommez la solution `HighlightWordTest`.  
   
 2.  Ajouter un modèle d’élément de classifieur d’éditeur au projet. Pour plus d’informations, consultez [création d’une Extension avec un éditeur de modèle d’élément](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
@@ -308,7 +308,7 @@ Vous pouvez ajouter différents effets visuels à l’éditeur en créant des co
   
 8.  Vous devez implémenter le <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> (méthode). Cette méthode accepte une collection de <xref:Microsoft.VisualStudio.Text.SnapshotSpan> objets et retourne une énumération d’étendues de balise.  
   
-     En c#, implémentez cette méthode comme un itérateur yield, ce qui permet l’évaluation tardive (autrement dit, l’évaluation de l’ensemble uniquement lors de l’accès aux éléments individuels) des balises. Dans Visual Basic, ajoutez les balises à une liste et retourne la liste.  
+     En C#, implémentez cette méthode comme un itérateur yield, ce qui permet l’évaluation tardive (autrement dit, l’évaluation de l’ensemble uniquement lors de l’accès aux éléments individuels) des balises. Dans Visual Basic, ajoutez les balises à une liste et retourne la liste.  
   
      Ici, la méthode retourne un <xref:Microsoft.VisualStudio.Text.Tagging.TagSpan%601> objet qui a un « bleu » <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, qui fournit un arrière-plan bleu.  
   

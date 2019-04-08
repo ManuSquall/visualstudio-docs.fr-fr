@@ -26,8 +26,8 @@ ms.locfileid: "58948177"
 
 Le débogueur Visual Studio est facile à utiliser dans n'importe quel langage. Nous allons montrer ici comment déboguer un programme C# simple, mais vous pouvez appliquer les mêmes étapes à du code dans d'autres langages, comme C++ et JavaScript.  
   
-##  <a name="BKMK_Start_debugging_a_VS_project"></a> Déboguer un projet de base en c#  
- Nous allons commencer par une application de console c# simple (**fichier / nouveau / projet**, puis sélectionnez **Visual C#** , puis sélectionnez **Application Console**). Si vous n’avez jamais travaillé avec Visual Studio, consultez [procédure pas à pas : Créer une Application Simple](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). Le **Main** méthode ajoute 1 à une variable entière 10 fois juste et affiche le résultat sur la console :  
+##  <a name="BKMK_Start_debugging_a_VS_project"></a> Déboguer un projet de base en C#  
+ Nous allons commencer par une application de console C# simple (**fichier / nouveau / projet**, puis sélectionnez **Visual C#** , puis sélectionnez **Application Console**). Si vous n’avez jamais travaillé avec Visual Studio, consultez [procédure pas à pas : Créer une Application Simple](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). Le **Main** méthode ajoute 1 à une variable entière 10 fois juste et affiche le résultat sur la console :  
   
 ```csharp  
 static void Main(string[] args)  

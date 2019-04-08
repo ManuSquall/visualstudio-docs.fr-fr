@@ -40,7 +40,7 @@ Le SDK Visual Studio a les fonctionnalités nouvelles et mises à jour suivantes
  À partir du Kit de développement logiciel Visual Studio 2015, vous disposez des options différentes pour créer des extensions, en fonction de langage de programmation que vous utilisez.
 
 ### <a name="visual-c-and-visual-basic"></a>Visual C# et Visual Basic
- Pour c# et Visual Basic, il existe une gamme complète de modèles d’élément de projet qui vous permettent de créer des VSPackages, commandes de menu, fenêtres Outil, éditeur classifieurs, ornements d’éditeur et extensions marge de l’éditeur. Vous pouvez ajouter tout ou partie de ces options pour le projet VSIX standard. Pour plus d'informations, voir :
+ Pour C# et Visual Basic, il existe une gamme complète de modèles d’élément de projet qui vous permettent de créer des VSPackages, commandes de menu, fenêtres Outil, éditeur classifieurs, ornements d’éditeur et extensions marge de l’éditeur. Vous pouvez ajouter tout ou partie de ces options pour le projet VSIX standard. Pour plus d'informations, voir :
 
 -   [Création d’une extension avec une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
@@ -50,7 +50,7 @@ Le SDK Visual Studio a les fonctionnalités nouvelles et mises à jour suivantes
 
 -   [Création d’une extension avec un package VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
-     L’Assistant package Visual Studio ne crée plus extensions en c# ou Visual Basic.
+     L’Assistant package Visual Studio ne crée plus extensions en C# ou Visual Basic.
 
 ### <a name="c"></a>C++
  Pour C++, l’Assistant package Visual Studio prend en charge les commandes de menu, les fenêtres Outil et les éditeurs personnalisés. Recherchez dans le **nouveau projet** boîte de dialogue de **Visual C++ / extensibilité**.

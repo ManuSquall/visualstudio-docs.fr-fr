@@ -28,7 +28,7 @@ ms.locfileid: "58949203"
   
  Dans cette implémentation de `IDebugParsedExpression::EvaluateSync`, l’expression est analysée et évaluée en même temps. Cette implémentation effectue les tâches suivantes :  
   
-1.  Analyse et évalue l’expression pour produire un objet générique qui contient la valeur et son type. Dans c#, ceci est représenté comme un `object` tandis que dans C++, ceci est représenté comme un `VARIANT`.  
+1.  Analyse et évalue l’expression pour produire un objet générique qui contient la valeur et son type. Dans C#, ceci est représenté comme un `object` tandis que dans C++, ceci est représenté comme un `VARIANT`.  
   
 2.  Instancie une classe (appelée `CValueProperty` dans cet exemple) qui implémente le `IDebugProperty2` de l’interface et la stocke dans la classe de la valeur à retourner.  
   

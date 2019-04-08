@@ -1,5 +1,5 @@
 ---
-title: Encapsuler le champ (refactorisation c#) | Microsoft Docs
+title: Encapsuler le champ (refactorisation C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general

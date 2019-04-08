@@ -32,7 +32,7 @@ En général, les langages de programmation fournissent un moyen d’annoter ou 
   
 2. Commentaires de bloc, où le commentaire peut inclure plusieurs lignes.  
   
-   Commentaires sur une ligne ont généralement un caractère de début (ou caractères) lors de commentaires de bloc de caractères de début et de fin. Par exemple, en c#, un commentaire sur une ligne commence par / /, et un commentaire de bloc commence par / * et se termine par \*/.  
+   Commentaires sur une ligne ont généralement un caractère de début (ou caractères) lors de commentaires de bloc de caractères de début et de fin. Par exemple, en C#, un commentaire sur une ligne commence par / /, et un commentaire de bloc commence par / * et se termine par \*/.  
   
    Lorsque l’utilisateur sélectionne la commande **commenter la sélection** à partir de la **modifier** -> **avancé** menu, la commande est acheminée vers le <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> méthode sur le <xref:Microsoft.VisualStudio.Package.Source> classe. Lorsque l’utilisateur sélectionne la commande **Décommenter la sélection**, la commande est acheminée vers le <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> (méthode).  
   

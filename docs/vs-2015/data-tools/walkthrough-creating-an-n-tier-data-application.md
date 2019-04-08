@@ -72,7 +72,7 @@ N-* de couche données qui sont des applications accèdent aux données et sont 
 1.  À partir de la **fichier** menu, créez un nouveau projet.  
   
     > [!NOTE]
-    >  Le **Concepteur de Dataset** est pris en charge dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] et les projets c#. Créez le projet dans l'un de ces langages.  
+    >  Le **Concepteur de Dataset** est pris en charge dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] et les projets C#. Créez le projet dans l'un de ces langages.  
   
 2.  Dans le **nouveau projet** boîte de dialogue le **types de projets** volet, cliquez sur **Windows**.  
   

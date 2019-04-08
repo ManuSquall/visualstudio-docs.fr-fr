@@ -27,7 +27,7 @@ Vous pouvez personnaliser l’apparence des marges de l’éditeur à l’aide d
   
 ## <a name="creating-a-mef-project"></a>Création d’un projet MEF  
   
-1.  Créez un projet c# VSIX. (Dans le **nouveau projet** boîte de dialogue, sélectionnez **Visual c# / extensibilité**, puis **projet VSIX**.) Nommez la solution `TodoGlyphTest`.  
+1.  Créez un projet C# VSIX. (Dans le **nouveau projet** boîte de dialogue, sélectionnez **Visual C# / extensibilité**, puis **projet VSIX**.) Nommez la solution `TodoGlyphTest`.  
   
 2.  Ajouter un élément de projet classifieur d’éditeur. Pour plus d’informations, consultez [création d’une Extension avec un éditeur de modèle d’élément](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   

@@ -47,7 +47,7 @@ IDebugCustomAttribute : IUnknown
 |[GetAttributeBytes](../../../extensibility/debugger/reference/idebugcustomattribute-getattributebytes.md)|Obtient les informations d’attribut comme un objet blob d’octets.|  
   
 ## <a name="remarks"></a>Notes  
- Un attribut personnalisé est une structure en c# qui fournit des métadonnées personnalisées associées à une classe particulière ou une méthode.  
+ Un attribut personnalisé est une structure en C# qui fournit des métadonnées personnalisées associées à une classe particulière ou une méthode.  
   
 ## <a name="requirements"></a>Configuration requise  
  En-tête : sh.h  

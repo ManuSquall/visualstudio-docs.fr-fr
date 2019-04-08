@@ -1,5 +1,5 @@
 ---
-title: Paramètres pour les Configurations Debug c# du projet | Microsoft Docs
+title: Paramètres pour les Configurations Debug C# du projet | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -33,10 +33,10 @@ ms.locfileid: "58939052"
 # <a name="project-settings-for--c-debug-configurations"></a>Paramètres de projet pour des configurations Debug C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez modifier les paramètres du projet pour une configuration debug c# dans le **Pages de propriétés** fenêtre, comme indiqué dans [Configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md). Les tableaux suivants indiquent où se trouvent les paramètres du débogueur dans la fenêtre **Pages de propriétés**.  
+Vous pouvez modifier les paramètres du projet pour une configuration debug C# dans le **Pages de propriétés** fenêtre, comme indiqué dans [Configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md). Les tableaux suivants indiquent où se trouvent les paramètres du débogueur dans la fenêtre **Pages de propriétés**.  
   
 > [!WARNING]
->  Cette rubrique ne s'applique pas aux applications Windows Store. Consultez [démarrer une session de débogage (VB, c#, C++ et XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
+>  Cette rubrique ne s'applique pas aux applications Windows Store. Consultez [démarrer une session de débogage (VB, C#, C++ et XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
   
 ##  <a name="BKMK_Debug_tab"></a> Onglet déboguer  
   

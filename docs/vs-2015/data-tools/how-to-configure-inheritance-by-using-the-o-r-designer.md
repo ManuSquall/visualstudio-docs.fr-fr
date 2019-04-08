@@ -28,7 +28,7 @@ L'[!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUD
   
 ### <a name="to-create-inherited-data-classes"></a>Pour créer des classes de données héritées  
   
-1.  Ouvrez le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] en ajoutant un **Classes LINQ to SQL** élément à un projet Visual Basic ou c# existant.  
+1.  Ouvrez le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] en ajoutant un **Classes LINQ to SQL** élément à un projet Visual Basic ou C# existant.  
   
 2.  Faites glisser la table à utiliser comme classe de base vers le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   

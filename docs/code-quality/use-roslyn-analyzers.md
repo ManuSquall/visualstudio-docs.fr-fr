@@ -20,7 +20,7 @@ ms.locfileid: "58515335"
 ---
 # <a name="use-roslyn-analyzers"></a>Utiliser les analyseurs Roslyn
 
-Règles de l’analyseur .NET compiler Platform (« Roslyn »), ou *diagnostics*, analyser votre code c# ou Visual Basic en cours de frappe. Chacun des diagnostics a un état de gravité et la suppression par défaut qui peut être remplacé pour votre projet. Cet article décrit la gravité de règle de paramètre, à l’aide des ensembles de règles et suppression des violations.
+Règles de l’analyseur .NET compiler Platform (« Roslyn »), ou *diagnostics*, analyser votre code C# ou Visual Basic en cours de frappe. Chacun des diagnostics a un état de gravité et la suppression par défaut qui peut être remplacé pour votre projet. Cet article décrit la gravité de règle de paramètre, à l’aide des ensembles de règles et suppression des violations.
 
 ## <a name="analyzers-in-solution-explorer"></a>Analyseurs dans l’Explorateur de solutions
 
@@ -124,7 +124,7 @@ Il existe plusieurs moyens de supprimer les violations de règle :
 
 Vous pouvez supprimer un ou plusieurs diagnostics à partir de la **liste d’erreurs** en sélectionnant celles que vous souhaitez supprimer, puis en cliquant et en sélectionnant **supprimer** > **dans la Source**  ou **supprimer** > **dans le fichier de Suppression**.
 
-- Si vous sélectionnez **dans la Source**, le **aperçu des modifications** boîte de dialogue s’ouvre et affiche un aperçu du langage c# [#pragma warning](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) ou Visual Basic [#Disable warning](/dotnet/visual-basic/language-reference/directives/directives) directive qui est ajoutée au code source.
+- Si vous sélectionnez **dans la Source**, le **aperçu des modifications** boîte de dialogue s’ouvre et affiche un aperçu du langage C# [#pragma warning](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) ou Visual Basic [#Disable warning](/dotnet/visual-basic/language-reference/directives/directives) directive qui est ajoutée au code source.
 
    ![Aperçu de l’ajout de #pragma warning dans le fichier de code](media/pragma-warning-preview.png)
 

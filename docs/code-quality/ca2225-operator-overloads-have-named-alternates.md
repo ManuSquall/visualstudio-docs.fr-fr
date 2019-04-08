@@ -85,7 +85,7 @@ N/a == ne peut pas être surchargé dans la langue sélectionnée.
 
 La règle vérifie également les opérateurs de cast implicites et explicites dans un type (`SomeType`) en recherchant les méthodes nommées `ToSomeType` et `FromSomeType`.
 
-En c#, lorsqu’un opérateur binaire est surchargé, l’opérateur d’assignation correspondant, le cas échéant, est aussi implicitement surchargé.
+En C#, lorsqu’un opérateur binaire est surchargé, l’opérateur d’assignation correspondant, le cas échéant, est aussi implicitement surchargé.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 

@@ -55,7 +55,7 @@ Un langage spécifique à un domaine (DSL) est créé à l’aide de spécialis�
        Le **Assistant Concepteur de langage spécifique à un domaine** s’affiche.  
   
       > [!NOTE]
-      >  De préférence, le nom que vous tapez doit être un identificateur c# valide, car elle peut être utilisée pour générer le code.  
+      >  De préférence, le nom que vous tapez doit être un identificateur C# valide, car elle peut être utilisée pour générer le code.  
   
       ![Boîte de dialogue DSL créer](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
   
@@ -86,7 +86,7 @@ Un langage spécifique à un domaine (DSL) est créé à l’aide de spécialis�
  Choisissez un modèle qui est similaire à la solution DSL que vous souhaitez créer. Les différents modèles fournissent des points de départ pratiques. Lorsque vous sélectionnez un modèle de solution, l’Assistant affiche une description. Pour plus d’informations sur les modèles de solution, consultez [choix d’un modèle de Solution de langage spécifique à un domaine](../modeling/choosing-a-domain-specific-language-solution-template.md).  
   
  **Que voulez-vous nommer votre langage spécifique à un domaine ?**  
- La valeur par défaut est le nom de la solution. Code est généré à partir de cette valeur. Il doit être valide comme nom de classe c#.  
+ La valeur par défaut est le nom de la solution. Code est généré à partir de cette valeur. Il doit être valide comme nom de classe C#.  
   
 ### <a name="file-extension-page"></a>Page Extension de fichier  
  **Quelle extension doit modéliser fichiers utilisent ?**  

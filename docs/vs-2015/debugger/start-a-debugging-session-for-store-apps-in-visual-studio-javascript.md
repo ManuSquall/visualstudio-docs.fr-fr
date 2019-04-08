@@ -32,7 +32,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
  Cette rubrique explique comment démarrer une session de débogage pour les applications du Windows Store écrites en JavaScript et HTML5. Vous pouvez démarrer le débogage avec une seule séquence de touches ou configurer la session de débogage pour des scénarios spécifiques, puis choisir de quelle façon démarrer l'application.
 
 > [!NOTE]
->  Pour les applications écrites en XAML et Visual c#, Visual C++ ou Visual Basic, consultez [démarrer une session de débogage (VB, c#, C++ et XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
+>  Pour les applications écrites en XAML et Visual C#, Visual C++ ou Visual Basic, consultez [démarrer une session de débogage (VB, C#, C++ et XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
 
 ##  <a name="BKMK_In_this_topic"></a> Dans cette rubrique
  [Dans cette rubrique](#BKMK_In_this_topic)

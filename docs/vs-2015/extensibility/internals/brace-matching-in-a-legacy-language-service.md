@@ -23,7 +23,7 @@ ms.locfileid: "58952706"
 
 Correspondance d’accolade permet le développeur à effectuer le suivi des éléments de langage qui doivent se produire ensemble, telles que les parenthèses et les accolades. Lorsqu’un développeur entre une accolade fermante, l’accolade ouvrante est mis en surbrillance.  
   
- Vous pouvez faire correspondre deux ou trois éléments qui se produisent conjointement, appelées paires et triples. Triplets sont des ensembles de trois éléments qui se produisent conjointement. Par exemple, en c#, le `foreach` instruction constitue un triple : «`foreach()`«, »`{`», et «`}`». Les trois éléments sont mis en surbrillance quand l’accolade fermante est tapée.  
+ Vous pouvez faire correspondre deux ou trois éléments qui se produisent conjointement, appelées paires et triples. Triplets sont des ensembles de trois éléments qui se produisent conjointement. Par exemple, en C#, le `foreach` instruction constitue un triple : «`foreach()`«, »`{`», et «`}`». Les trois éléments sont mis en surbrillance quand l’accolade fermante est tapée.  
   
  Services de langage hérité sont implémentés en tant que partie d’un VSPackage, mais la plus récente pour implémenter des fonctionnalités de service de langage consiste à utiliser des extensions MEF. Pour en savoir plus sur la nouvelle façon d’implémenter les accolades correspondantes, consultez [procédure pas à pas : Affichage d’accolades correspondantes](../../extensibility/walkthrough-displaying-matching-braces.md).  
   

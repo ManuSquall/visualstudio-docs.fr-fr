@@ -110,7 +110,7 @@ La *validation* de classes d’entité est le processus qui consiste à valider 
   
       Pour les projets C# :  
   
-   5. Étant donné que les projets c# ne génèrent pas automatiquement les gestionnaires d’événements, vous pouvez utiliser IntelliSense pour créer le partielle `Update` *CLASSNAME* (méthode).  
+   5. Étant donné que les projets C# ne génèrent pas automatiquement les gestionnaires d’événements, vous pouvez utiliser IntelliSense pour créer le partielle `Update` *CLASSNAME* (méthode).  
   
    6. Tapez `partial`, puis un espace pour accéder à la liste de méthodes partielles disponibles. Cliquez sur la méthode de mise à jour pour la classe concernée. Le code suivant ressemble au code qui est généré lorsque vous sélectionnez un `Update` *CLASSNAME* méthode partielle :  
   

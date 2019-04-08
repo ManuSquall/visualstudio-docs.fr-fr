@@ -66,7 +66,7 @@ Styles visuels activer l’apparence des contrôles communs à changer en foncti
 
          Le fichier App.manifest s’ouvre dans le **éditeur de Code**.
 
-    **Pour ouvrir le fichier manifeste dans un projet c#**
+    **Pour ouvrir le fichier manifeste dans un projet C#**
 
     1. Dans la barre de menus, choisissez **projet**, _nom_projet_**propriétés**, où *nom_projet* est le nom de votre projet WPF.
 

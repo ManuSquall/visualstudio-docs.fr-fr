@@ -20,6 +20,6 @@ Le Kit de développement logiciel Visual Studio comprend plusieurs outils pour a
   
 -   Le [manifeste à partir des ressources](../../extensibility/internals/manifest-from-resources.md) outil prend une liste de ressources d’images (fichiers .png ou .xaml) et génère un fichier de manifeste d’image.  
   
--   Le [manifeste au Code](../../extensibility/internals/manifest-to-code.md) outil prend un fichier de manifeste d’image et génère un fichier de wrapper à utiliser dans des fichiers C++, c#, VB ou .vsct.  
+-   Le [manifeste au Code](../../extensibility/internals/manifest-to-code.md) outil prend un fichier de manifeste d’image et génère un fichier de wrapper à utiliser dans des fichiers C++, C#, VB ou .vsct.  
   
 -   Le [visionneuse de bibliothèque d’images](../../extensibility/internals/image-library-viewer.md) peut charger, modifier et rechercher des manifestes d’images.

@@ -11,12 +11,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 94f8b26536a657698dfcb0c0fa3de3876e1452b1
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 088359aeabc45966aed927693ecbab75751eca2a
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325212"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789989"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Options, Éditeur de texte, C/C++, Expérimental
 
@@ -28,7 +28,7 @@ Cet article décrit les options disponibles dans Visual Studio 2017. Pour Visua
 
 ::: moniker-end
 
-Pour accéder à cette page de propriétés, appuyez sur **Ctrl** + **Q** afin d’activer `Quick Launch`, puis tapez « expérimental ». Lancement rapide trouve la page dès les premières lettres saisies. Vous pouvez également y accéder en choisissant **Outils** > **Options** et en développant **Éditeur de texte** et **C/C++**, puis en choisissant **Expérimental**.
+Pour accéder à cette page de propriétés, appuyez sur **Ctrl**+**Q** afin d’activer la zone de recherche, puis tapez **expérimental**. La recherche trouve la page dès les premières lettres saisies. Vous pouvez également y accéder en choisissant **Outils** > **Options** et en développant **Éditeur de texte** et **C/C++**, puis en choisissant **Expérimental**.
 
 Ces fonctionnalités sont disponibles dans une installation de Visual Studio.
 

@@ -36,7 +36,7 @@ ms.locfileid: "58950905"
 Vous pouvez modifier les paramètres de projet d’une configuration Debug [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] dans la fenêtre **Pages de propriétés**, comme indiqué dans [Configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md). Les tableaux suivants indiquent où se trouvent les paramètres du débogueur dans la fenêtre **Pages de propriétés**.  
   
 > [!WARNING]
->  Cette rubrique ne s'applique pas aux applications Store. Consultez [démarrer une session de débogage (VB, c#, C++ et XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
+>  Cette rubrique ne s'applique pas aux applications Store. Consultez [démarrer une session de débogage (VB, C#, C++ et XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
   
 ### <a name="debug-tab"></a>Onglet Déboguer  
   

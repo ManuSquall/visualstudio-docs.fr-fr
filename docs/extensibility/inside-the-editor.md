@@ -152,7 +152,7 @@ Vous pouvez obtenir la position d’un point de suivi ou l’étendue d’une é
 
 #### <a name="content-types"></a>Types de contenu
 
-Types de contenu sont un mécanisme permettant de définir différents types de contenu. Un type de contenu peut être un type de fichier tels que « text », « code » ou « binaire », ou un type de technologie tels que « xml », « vb » ou « c# ». Par exemple, le mot « using » est un mot clé en c# et Visual Basic, mais pas dans les autres langages de programmation. Par conséquent, la définition de ce mot clé serait limitée pour les types de contenu « c# » et « vb ».
+Types de contenu sont un mécanisme permettant de définir différents types de contenu. Un type de contenu peut être un type de fichier tels que « text », « code » ou « binaire », ou un type de technologie tels que « xml », « vb » ou « C# ». Par exemple, le mot « using » est un mot clé en C# et Visual Basic, mais pas dans les autres langages de programmation. Par conséquent, la définition de ce mot clé serait limitée pour les types de contenu « C# » et « vb ».
 
 Types de contenu sont utilisés en tant que filtre pour les ornements et d’autres éléments de l’éditeur. Plusieurs fonctionnalités de l’éditeur et les points d’extension sont définies par le type de contenu. Par exemple, la coloration du texte est différent pour les fichiers de texte brut, les fichiers XML et les fichiers de code source Visual Basic. Mémoires tampons de texte bénéficient généralement d’un type de contenu lorsqu’ils sont créés, et le type de contenu d’une mémoire tampon de texte peut être modifié.
 
@@ -236,13 +236,13 @@ Un <xref:Microsoft.VisualStudio.Text.Classification.IClassifier> est un mécanis
 
 #### <a name="classifier-aggregators"></a>Agrégations de classifieur
 
-Une agrégation du classifieur est un mécanisme qui combine tous les classifieurs pour une mémoire tampon en simplement une série de classifications. Par exemple, un classifieur c# et un classifieur en langue anglaise peut créer des classifications sur un commentaire dans un fichier c#. Prenez en compte ce commentaire :
+Une agrégation du classifieur est un mécanisme qui combine tous les classifieurs pour une mémoire tampon en simplement une série de classifications. Par exemple, un classifieur C# et un classifieur en langue anglaise peut créer des classifications sur un commentaire dans un fichier C#. Prenez en compte ce commentaire :
 
 ```
 // This method produces a classifier
 ```
 
-Un classifieur c# peut-être étiqueter l’étendue entière sous forme de commentaire, et le classifieur de langue anglaise peut classer « produit » en tant que « verbe » et « méthode » comme un « nom ». La fonction d’agrégation produit un ensemble de classifications sans chevauchement, et le type du jeu est basé sur toutes les contributions.
+Un classifieur C# peut-être étiqueter l’étendue entière sous forme de commentaire, et le classifieur de langue anglaise peut classer « produit » en tant que « verbe » et « méthode » comme un « nom ». La fonction d’agrégation produit un ensemble de classifications sans chevauchement, et le type du jeu est basé sur toutes les contributions.
 
 Une agrégation du classifieur est également un classifieur, car elle découpe le texte en un ensemble de classifications. L’agrégation du classifieur garantit également qu’il n’y a aucune classification qui se chevauche et que les classifications sont triées. Les classifieurs individuels sont libre de renvoyer n’importe quel jeu de classifications, dans n’importe quel ordre et qui se chevauchent en aucune façon.
 
@@ -264,7 +264,7 @@ Ornements contextuelles sont des graphiques qui s’affichent dans une petite fe
 
 ###  <a name="projection"></a> Projection
 
-Projection est une technique pour la construction d’un autre type de mémoire tampon de texte qui ne stocke pas réellement de texte, mais combine à la place du texte à partir d’autres mémoires tampons de texte. Par exemple, une mémoire tampon de projection peut être utilisé pour concaténer le texte à partir de deux autres mémoires tampons et présente le résultat comme s’il se trouve dans la mémoire tampon qu’une seule, ou pour masquer des parties du texte dans une mémoire tampon. Une mémoire tampon de projection peut agir comme une mémoire tampon source à une autre mémoire tampon de projection. Un jeu de mémoires tampons qui sont liés par projection peut être construit pour réorganiser le texte de différentes manières. (Un ensemble de ce type est également appelé un *graphique de mémoire tampon*.) La fonctionnalité mode plan de texte Visual Studio est implémentée à l’aide d’une mémoire tampon de projection pour masquer le texte réduit, et l’éditeur Visual Studio pour les pages ASP.NET utilise projection pour prendre en charge des langues embedded tels que Visual Basic et c#.
+Projection est une technique pour la construction d’un autre type de mémoire tampon de texte qui ne stocke pas réellement de texte, mais combine à la place du texte à partir d’autres mémoires tampons de texte. Par exemple, une mémoire tampon de projection peut être utilisé pour concaténer le texte à partir de deux autres mémoires tampons et présente le résultat comme s’il se trouve dans la mémoire tampon qu’une seule, ou pour masquer des parties du texte dans une mémoire tampon. Une mémoire tampon de projection peut agir comme une mémoire tampon source à une autre mémoire tampon de projection. Un jeu de mémoires tampons qui sont liés par projection peut être construit pour réorganiser le texte de différentes manières. (Un ensemble de ce type est également appelé un *graphique de mémoire tampon*.) La fonctionnalité mode plan de texte Visual Studio est implémentée à l’aide d’une mémoire tampon de projection pour masquer le texte réduit, et l’éditeur Visual Studio pour les pages ASP.NET utilise projection pour prendre en charge des langues embedded tels que Visual Basic et C#.
 
 Un <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer> est créé à l’aide de <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService>. Une mémoire tampon de projection est représenté par une séquence ordonnée de <xref:Microsoft.VisualStudio.Text.ITrackingSpan> les objets qui sont appelées *étendues de sources*. Le contenu de ces étendues est présenté comme une séquence de caractères. Les mémoires tampons de texte à partir de laquelle les étendues de source sont dessinés sont nommés *de source de mémoires tampons*. Les clients d’une mémoire tampon de projection n’est pas ont de Sachez qu’il diffère d’une mémoire tampon de texte ordinaires.
 

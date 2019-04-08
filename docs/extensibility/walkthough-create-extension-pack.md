@@ -33,7 +33,7 @@ Le modèle d’élément de Pack d’Extension crée un Pack d’Extension avec 
 
 1. Dans le **nouveau projet** boîte de dialogue, recherchez « vsix » et sélectionnez **projet VSIX**. Pour **nom_projet**, tapez « Pack d’Extension de Test ». Sélectionnez **Créer**.
 
-2. Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **ajouter** > **un nouvel élément**. Accédez à Visual c# **extensibilité** nœud et sélectionnez **Pack d’Extension**. Laissez le nom de fichier par défaut (ExtensionPack1.cs).
+2. Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **ajouter** > **un nouvel élément**. Accédez à Visual C# **extensibilité** nœud et sélectionnez **Pack d’Extension**. Laissez le nom de fichier par défaut (ExtensionPack1.cs).
 
 3. ExtensionPack1.vsext fichier est ajouté, qui contient le code suivant
 

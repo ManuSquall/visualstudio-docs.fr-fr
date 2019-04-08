@@ -80,7 +80,7 @@ Pour les scénarios de création de modèle de base, vous devez utiliser le **Ex
 
 4. Générer la solution, puis appuyez sur **F5**. L’instance expérimentale s’affiche.
 
-5. Pour un projet de modèle de projet, vous devez voir votre modèle de projet répertorié dans le **nouveau projet** boîte de dialogue (**fichier** > **New**  >  **Projet**), dans le nœud Visual Basic ou Visual c#. Pour un projet de modèle d’élément, vous devez voir votre modèle d’élément répertoriée dans le **ajouter un nouvel élément** boîte de dialogue. Pour afficher le **ajouter un nouvel élément** boîte de dialogue, à partir de la **l’Explorateur de solutions**, sélectionnez le nœud du projet, puis cliquez sur **ajouter** > **unnouvelélément**).
+5. Pour un projet de modèle de projet, vous devez voir votre modèle de projet répertorié dans le **nouveau projet** boîte de dialogue (**fichier** > **New**  >  **Projet**), dans le nœud Visual Basic ou Visual C#. Pour un projet de modèle d’élément, vous devez voir votre modèle d’élément répertoriée dans le **ajouter un nouvel élément** boîte de dialogue. Pour afficher le **ajouter un nouvel élément** boîte de dialogue, à partir de la **l’Explorateur de solutions**, sélectionnez le nœud du projet, puis cliquez sur **ajouter** > **unnouvelélément**).
 
 ## <a name="see-also"></a>Voir aussi
 

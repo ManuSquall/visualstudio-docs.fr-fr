@@ -25,7 +25,7 @@ La persistance est une considération de conception clés pour votre projet. La 
 
  Éléments de projet peuvent être basée sur le fichier ou non basée sur un fichier :
 
--   Éléments basés sur le fichier peuvent être local ou distant. Dans les projets Web en c#, par exemple, les connexions aux fichiers sur un système distant conservent localement, tandis que les fichiers eux-mêmes sont conservées sur le système distant.
+-   Éléments basés sur le fichier peuvent être local ou distant. Dans les projets Web en C#, par exemple, les connexions aux fichiers sur un système distant conservent localement, tandis que les fichiers eux-mêmes sont conservées sur le système distant.
 
 -   Éléments non basés sur des fichiers peuvent enregistrer des éléments dans une base de données ou le référentiel.
 

@@ -29,7 +29,7 @@ Dans les VSPackages, vous pouvez obtenir l’objet DTE en appelant le <xref:Micr
   
 #### <a name="to-get-the-dte-object-from-the-serviceprovider"></a>Pour obtenir de l’objet DTE à partir de ServiceProvider  
   
-1.  Créez un projet VSIX c# nommé `DTETest`. Ajouter un modèle d’élément de classifieur d’éditeur et nommez-le `DTETest`. Pour plus d’informations, consultez [création d’une Extension avec un éditeur de modèle d’élément](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+1.  Créez un projet VSIX C# nommé `DTETest`. Ajouter un modèle d’élément de classifieur d’éditeur et nommez-le `DTETest`. Pour plus d’informations, consultez [création d’une Extension avec un éditeur de modèle d’élément](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
 2.  Ajoutez les références d’assembly suivantes au projet :  
   

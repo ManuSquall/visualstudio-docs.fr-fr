@@ -24,7 +24,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "58938192"
 ---
-# <a name="using-the-visual-studio-development-environment-for-c"></a>À l’aide de l’environnement de développement Visual Studio pour c# #
+# <a name="using-the-visual-studio-development-environment-for-c"></a>À l’aide de l’environnement de développement Visual Studio pour C# #
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L’environnement de développement intégré (IDE) Visual Studio est une collection d’outils de développement exposée via une interface utilisateur commune. Certains outils sont partagés avec d'autres langages [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tandis que d'autres, tels que le compilateur C#, sont propres à Visual C#. Cette rubrique fournit des liens vers les outils Visual C# les plus importants.

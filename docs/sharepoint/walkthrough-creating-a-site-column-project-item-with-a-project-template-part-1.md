@@ -91,7 +91,7 @@ ms.locfileid: "54864603"
 
 3.  Développez le **Visual C#** ou **Visual Basic** nœud, puis choisissez le **extensibilité** nœud.
 
-4.  Dans la liste des modèles de projet, choisissez le **le modèle de projet c#** ou **modèle de projet Visual Basic** modèle.
+4.  Dans la liste des modèles de projet, choisissez le **le modèle de projet C#** ou **modèle de projet Visual Basic** modèle.
 
 5.  Dans le **nom** , entrez **SiteColumnProjectTemplate**, puis choisissez le **OK** bouton.
 
@@ -353,7 +353,7 @@ ms.locfileid: "54864603"
 
 1. Dans le projet SiteColumnProjectTemplate, remplacez le contenu du fichier SiteColumnProjectTemplate.vstemplate avec l’une des sections suivantes de XML.
 
-   -   Si vous créez un modèle de projet Visual c#, utilisez le code XML suivant.
+   -   Si vous créez un modèle de projet Visual C#, utilisez le code XML suivant.
 
    ```xml
    <?xml version="1.0" encoding="utf-8"?>
@@ -441,7 +441,7 @@ ms.locfileid: "54864603"
 
 1.  Dans le projet SiteColumnProjectTemplate, remplacez le contenu de la *ProjectTemplate.csproj* fichier ou *ProjectTemplate.vbproj* fichier avec l’une des sections suivantes de XML.
 
-    -   Si vous créez un modèle de projet Visual c#, utilisez le code XML suivant.
+    -   Si vous créez un modèle de projet Visual C#, utilisez le code XML suivant.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>

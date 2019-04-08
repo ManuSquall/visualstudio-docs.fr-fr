@@ -69,7 +69,7 @@ Cette procédure pas à pas montre comment créer une bibliothèque C++ native m
 
 5.  Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le **NativeMathVSIX** de projet, puis choisissez **ajouter** > **unnouvelélément**.
 
-6.  Dans la liste des **éléments Visual c#**, développez **données**, puis sélectionnez **fichier XML**. Dans le **nom** , spécifiez `SDKManifest.xml`, puis choisissez le **OK** bouton.
+6.  Dans la liste des **éléments Visual C#**, développez **données**, puis sélectionnez **fichier XML**. Dans le **nom** , spécifiez `SDKManifest.xml`, puis choisissez le **OK** bouton.
 
 7.  Utilisez le code XML pour remplacer le contenu du fichier :
 

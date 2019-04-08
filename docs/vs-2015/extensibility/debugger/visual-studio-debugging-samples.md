@@ -24,6 +24,6 @@ ms.locfileid: "58948257"
 
 Deux exemples montrent comment étendre le débogueur Visual Studio à l’aide de [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
   
--   L’exemple d’évaluateur d’Expression de débogueur, pour les langages managés, est inclus dans le [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]. Dans le [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] fenêtre, cliquez sur le **exemples** , cliquez sur **tous les** ou **c#** dans la liste des langues, puis cliquez sur **débogueur**.  
+-   L’exemple d’évaluateur d’Expression de débogueur, pour les langages managés, est inclus dans le [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]. Dans le [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] fenêtre, cliquez sur le **exemples** , cliquez sur **tous les** ou **C#** dans la liste des langues, puis cliquez sur **débogueur**.  
   
 -   Le Visual Studio déboguer moteur exemple, pour les langages natifs, est disponible sur MSDN Code Gallery. Pour plus d’informations, consultez cette page sur le site web de Microsoft : [Exemple de moteur de débogage de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=150236).

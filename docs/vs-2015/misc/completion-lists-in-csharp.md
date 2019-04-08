@@ -1,5 +1,5 @@
 ---
-title: Listes de saisie semi-automatique en c# | Microsoft Docs
+title: Listes de saisie semi-automatique en C# | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -20,7 +20,7 @@ ms.lasthandoff: 01/23/2019
 ms.locfileid: "58953226"
 ---
 # <a name="completion-lists-in-c"></a>Listes de saisie semi-automatique en C# #
-Ce contenu a été déplacé vers [Visual c# IntelliSense](../ide/visual-csharp-intellisense.md)  
+Ce contenu a été déplacé vers [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)  
   
 ## <a name="see-also"></a>Voir aussi  
  [Extraits de code Visual C#](../ide/visual-csharp-code-snippets.md)

@@ -31,7 +31,7 @@ Le Kit de développement pour vous aide à .NET vous créez, configurez, génér
   
 1.  Sur le **fichier** menu, créez un nouveau projet. (Cliquez sur **New** puis cliquez sur **projet**.)  
   
-2.  Développez le nœud de soit **Visual Basic** ou **c#** puis cliquez sur **Cloud**.  
+2.  Développez le nœud de soit **Visual Basic** ou **C#** puis cliquez sur **Cloud**.  
   
 3.  Dans le volet central, sélectionnez **obtenir Azure SDK pour .NET**, puis cliquez sur **OK**.  
   

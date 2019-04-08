@@ -125,9 +125,9 @@ Les actions que vous devez prendre lorsque vous voyez le Visual Studio juste-à-
 
  Lorsque vous installez Visual Studio, le débogage juste-à-temps est activé par défaut.
 
- Dans le cadre de cette section, nous veillerons à ce une application de console c# dans Visual Studio lève une <xref:System.NullReferenceException>.
+ Dans le cadre de cette section, nous veillerons à ce une application de console C# dans Visual Studio lève une <xref:System.NullReferenceException>.
 
- Dans Visual Studio, créez une application de console c# (**fichier / nouveau / projet / Visual C# / Application Console**) nommé **ThrowsNullException**. Pour plus d’informations sur la création de projets dans Visual Studio, consultez [procédure pas à pas : Créer une Application Simple](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md).
+ Dans Visual Studio, créez une application de console C# (**fichier / nouveau / projet / Visual C# / Application Console**) nommé **ThrowsNullException**. Pour plus d’informations sur la création de projets dans Visual Studio, consultez [procédure pas à pas : Créer une Application Simple](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md).
 
  Lorsque le projet s’ouvre dans Visual Studio, ouvrez le fichier Program.cs. Remplacez la méthode Main() par le code suivant, qui imprime une ligne dans la console et puis lève une exception NullReferenceException :
 
@@ -144,7 +144,7 @@ static void Main(string[] args)
 
  Générez la solution (dans Visual Studio, choisissez **générer / régénérer la Solution**). Vous pouvez choisir le débogage ou la configuration Release. Pour plus d’informations sur les configurations de build, consultez [Présentation des configurations de build](../ide/understanding-build-configurations.md).
 
- Le processus de génération crée un exécutable ThrowsNullException.exe. Vous pouvez le trouver sous le dossier où vous avez créé le projet c# : **...\ThrowsNullException\ThrowsNullException\bin\Debug** ou **...\ThrowsNullException\ThrowsNullException\bin\Release**.
+ Le processus de génération crée un exécutable ThrowsNullException.exe. Vous pouvez le trouver sous le dossier où vous avez créé le projet C# : **...\ThrowsNullException\ThrowsNullException\bin\Debug** ou **...\ThrowsNullException\ThrowsNullException\bin\Release**.
 
  Double-cliquez sur le ThrowsNullException.exe. Vous devez voir une fenêtre de commande comme suit :
 

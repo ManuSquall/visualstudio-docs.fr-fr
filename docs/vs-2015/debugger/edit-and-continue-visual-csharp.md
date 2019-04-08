@@ -1,5 +1,5 @@
 ---
-title: Modifier & Continuer (Visual c#) | Microsoft Docs
+title: Modifier & Continuer (Visual C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -31,7 +31,7 @@ ms.locfileid: "58938073"
 
 Avec Modifier &amp; Continuer pour C#, vous pouvez modifier votre code en mode arrêt pendant le débogage. Les modifications peuvent être appliquées sans qu'il soit nécessaire d'arrêter et de redémarrer la session de débogage. En mode exécution, l'éditeur de code source est en lecture seule.  
   
- L'option Modifier &amp; Continuer prend en charge la plupart des modifications que vous pouvez souhaiter apporter pendant une session de débogage, avec quelques exceptions. Pour plus d’informations, consultez [les modifications de Code prises en charge (c#)](../debugger/supported-code-changes-csharp.md).  
+ L'option Modifier &amp; Continuer prend en charge la plupart des modifications que vous pouvez souhaiter apporter pendant une session de débogage, avec quelques exceptions. Pour plus d’informations, consultez [les modifications de Code prises en charge (C#)](../debugger/supported-code-changes-csharp.md).  
   
  L'option Modifier &amp; Continuer est prise en charge pour les projets 64 bits qui ciblent .NET Framework 4.5.1.  
   

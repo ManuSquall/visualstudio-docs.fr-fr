@@ -29,9 +29,9 @@ ms.locfileid: "58324680"
 ## <a name="update-the-generated-ribbon-code"></a>Mettre à jour le code de ruban généré
  Si la version cible de .NET Framework du projet est remplacée par [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure, vous devez changer le code généré pour l'élément Ruban en procédant comme suit. Vous devez mettre à jour les fichiers de code en fonction du langage de programmation utilisé et de la façon dont vous avez créé le projet :
 
--   Dans les projets Visual Basic, ou dans les projets Visual c# que vous avez créé dans le [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] ou [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] effectuer toutes les étapes dans le fichier de code-behind du ruban (*Votreélémentruban*. Designer.cs ou *Votreélémentruban*. Designer.vb). Pour afficher le fichier code-behind dans les projets Visual Basic, cliquez sur le **afficher tous les fichiers** situé dans **l’Explorateur de solutions**.
+-   Dans les projets Visual Basic, ou dans les projets Visual C# que vous avez créé dans le [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] ou [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] effectuer toutes les étapes dans le fichier de code-behind du ruban (*Votreélémentruban*. Designer.cs ou *Votreélémentruban*. Designer.vb). Pour afficher le fichier code-behind dans les projets Visual Basic, cliquez sur le **afficher tous les fichiers** situé dans **l’Explorateur de solutions**.
 
--   Dans les projets Visual c# que vous avez créé dans Visual Studio 2008 puis mis à niveau vers [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], effectuez les deux premières étapes dans le fichier de code de ruban (*Votreélémentruban*.cs ou *Votreélémentruban*.vb), et effectuez les étapes restantes dans le fichier de code-behind du ruban.
+-   Dans les projets Visual C# que vous avez créé dans Visual Studio 2008 puis mis à niveau vers [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], effectuez les deux premières étapes dans le fichier de code de ruban (*Votreélémentruban*.cs ou *Votreélémentruban*.vb), et effectuez les étapes restantes dans le fichier de code-behind du ruban.
 
 ### <a name="to-change-the-generated-ribbon-code"></a>Pour changer le code de ruban généré
 

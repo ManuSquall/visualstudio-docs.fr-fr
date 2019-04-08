@@ -42,11 +42,11 @@ Création d’applications dans Visual Studio pour le contrôle de compte d’ut
   
    Cette approche est également appelé *virtualisation*. Utilisez cette option pour la compatibilité avec les applications existantes à partir de versions antérieures de Visual Studio.  
   
-  Les nouvelles propriétés sont disponibles sur le **Application** page du Concepteur de projet (pour les projets Visual c# uniquement) et dans le format de fichier projet MSBuild.  
+  Les nouvelles propriétés sont disponibles sur le **Application** page du Concepteur de projet (pour les projets Visual C# uniquement) et dans le format de fichier projet MSBuild.  
   
-  Notez que la méthode de configuration de génération de manifeste de contrôle de compte utilisateur dans l’IDE Visual Studio diffère selon le type de projet (Visual c# et Visual Basic).  
+  Notez que la méthode de configuration de génération de manifeste de contrôle de compte utilisateur dans l’IDE Visual Studio diffère selon le type de projet (Visual C# et Visual Basic).  
   
-  Pour plus d’informations sur la configuration des projets Visual c# pour la génération de manifeste, consultez [Page Application, Concepteur de projets (c#)](../ide/reference/application-page-project-designer-csharp.md).  
+  Pour plus d’informations sur la configuration des projets Visual C# pour la génération de manifeste, consultez [Page Application, Concepteur de projets (C#)](../ide/reference/application-page-project-designer-csharp.md).  
   
   Pour plus d’informations sur la configuration des projets Visual Basic pour la génération de manifeste, consultez [Page Application, Concepteur de projets (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
   

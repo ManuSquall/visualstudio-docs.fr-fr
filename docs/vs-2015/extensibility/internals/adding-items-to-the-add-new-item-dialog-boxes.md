@@ -44,7 +44,7 @@ Le processus d’ajout d’éléments à la **ajouter un nouvel élément** boî
 |Val SortPriority|REG_DWORD|100 ([!INCLUDE[vcprx64](../../includes/vcprx64-md.md)])|Détermine l’ordre de tri dans le nœud d’arbre de fichiers affichés dans le **ajouter un nouvel élément** boîte de dialogue.|  
   
 > [!NOTE]
->  Les GUID pour les types de projets Visual c# et Visual Basic sont les suivantes :[!INCLUDE[csprcs](../../includes/csprcs-md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}  
+>  Les GUID pour les types de projets Visual C# et Visual Basic sont les suivantes :[!INCLUDE[csprcs](../../includes/csprcs-md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}  
   
  Le répertoire répertoriés pour TemplateDirs, qui est % TEMPLATE_PATH%\SomeProjectItems, est le nœud sur le côté gauche de la **ajouter un nouvel élément** arborescence de boîte de dialogue. Dans l’arborescence des éléments supplémentaires sont basées sur le sous-répertoire dans le répertoire racine. Les fichiers disponibles à ajouter au projet sont les éléments dans le volet droit de la **ajouter un nouvel élément** boîte de dialogue.  
   

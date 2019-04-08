@@ -85,7 +85,7 @@ Vous pouvez migrer un service de langage hérité vers une version ultérieure d
   
 10. Vous devez ajouter un fichier source.extension.vsixmanifest.  
   
-    -   Copiez ce fichier à partir d’une extension existante dans votre répertoire de projet. (Pour obtenir ce fichier consiste à créer un projet VSIX (sous **fichier**, cliquez sur **New**, puis cliquez sur **projet**. Cliquez sur sous Visual Basic ou c# **extensibilité**, puis sélectionnez **projet VSIX**.)  
+    -   Copiez ce fichier à partir d’une extension existante dans votre répertoire de projet. (Pour obtenir ce fichier consiste à créer un projet VSIX (sous **fichier**, cliquez sur **New**, puis cliquez sur **projet**. Cliquez sur sous Visual Basic ou C# **extensibilité**, puis sélectionnez **projet VSIX**.)  
   
     -   Ajoutez le fichier à votre projet.  
   

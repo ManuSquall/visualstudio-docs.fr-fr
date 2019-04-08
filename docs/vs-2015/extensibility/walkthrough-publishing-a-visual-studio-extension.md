@@ -32,7 +32,7 @@ Cette procédure pas à pas vous montre comment publier une extension Visual Stu
 ## <a name="create-a-visual-studio-extension"></a>Créer une Extension Visual Studio
  Dans ce cas, nous allons utiliser une extension de package Visual Studio par défaut, mais les mêmes étapes sont valides pour chaque type d’extension.
 
-1.  Créer un VSPackage en c# nommé `TestPublishing` qui a une commande de menu. Pour plus d’informations, consultez [création d’une Extension avec une commande de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).
+1.  Créer un VSPackage en C# nommé `TestPublishing` qui a une commande de menu. Pour plus d’informations, consultez [création d’une Extension avec une commande de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
 ## <a name="test-the-extension"></a>Tester l’Extension
  Avant de distribuer l’extension, générer et tester pour vous assurer qu’il est installé correctement dans l’instance expérimentale de Visual Studio.

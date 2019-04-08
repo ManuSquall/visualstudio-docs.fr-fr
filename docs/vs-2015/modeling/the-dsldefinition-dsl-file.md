@@ -275,7 +275,7 @@ Cette rubrique décrit la structure du fichier DslDefinition.dsl dans le projet 
   
  Dans cet exemple, InPort est une sous-classe de ComponentPort et possède une relation ComponentHasPorts. La Propriété se nomme Component.  
   
- Lors de l’écriture de code c# selon ce modèle, vous pouvez passer un lien en une seule étape à l’aide de la propriété générée par la relation sur chacune des classes qui il se rapporte :  
+ Lors de l’écriture de code C# selon ce modèle, vous pouvez passer un lien en une seule étape à l’aide de la propriété générée par la relation sur chacune des classes qui il se rapporte :  
   
 ```  
      InPort port; ...  Component c = port.Component;  

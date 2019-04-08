@@ -2,18 +2,20 @@
 title: 'Étape 1 : Créer un projet et ajouter des étiquettes à votre formulaire'
 ms.date: 11/04/2016
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1878d8a57ce8eddc599e14b5961179c7cdc48e3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d077cd549b5bef703229b2c43f4ce36d9735d512
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917751"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647399"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Étape 1 : Créer un projet et ajouter des étiquettes à votre formulaire
 
@@ -24,23 +26,39 @@ Les premières étapes du développement de ce questionnaire consistent à crée
 
 ## <a name="to-create-a-project-and-set-properties-for-a-form"></a>Pour créer un projet et définir des propriétés pour un formulaire
 
+::: moniker range="vs-2017"
+
 1.  Dans la barre de menus, choisissez **Fichier** > **Nouveau** > **Projet**.
 
-2.  Dans la liste **Modèles installés**, choisissez **C#** ou **Visual Basic**.
+1.  Dans la liste **Modèles installés**, choisissez **C#** ou **Visual Basic**.
 
-3.  Dans la liste des modèles, choisissez le modèle **Application Windows Forms**, nommez-le **Questionnaire de mathématiques**, puis choisissez le bouton **OK**.
+1.  Dans la liste des modèles, choisissez le modèle **Application Windows Forms**, nommez-le **MathQuiz**, puis choisissez le bouton **OK**.
 
      Un formulaire nommé *Form1.cs* ou *Form1.vb* apparaît, selon le langage de programmation que vous avez choisi.
 
-4.  Sélectionnez le formulaire, puis modifiez sa propriété **Text** en spécifiant **Questionnaire de mathématiques**.
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Dans la fenêtre de démarrage, choisissez **Créer un projet**.
+
+1. Dans la zone de recherche, tapez « WPF », choisissez **Application WPF (.NET Framework)**, puis **Suivant**.
+
+   (Si vous ne voyez pas le modèle **Application WPF (.NET Framework)**, utilisez Visual Studio Installer pour installer la charge de travail **Développement .NET Desktop**.)
+
+1. Nommez le projet **MathQuiz** et choisissez **Créer**.
+
+::: moniker-end
+
+1.  Sélectionnez le formulaire, puis modifiez sa propriété **Text** en spécifiant **Questionnaire de mathématiques**.
 
      La fenêtre **Propriétés** contient les propriétés du formulaire.
 
-5.  Modifiez la taille du formulaire en spécifiant une largeur de 500 pixels et une hauteur de 400 pixels.
+1.  Modifiez la taille du formulaire en spécifiant une largeur de 500 pixels et une hauteur de 400 pixels.
 
      Vous pouvez redimensionner le formulaire en faisant glisser ses bords jusqu'à ce que la taille correcte apparaisse dans l'angle inférieur gauche de l'environnement de développement intégré (IDE). Vous pouvez également modifier les valeurs de la propriété **Size**.
 
-6.  Remplacez la valeur de la propriété **FormBorderStyle** par **Fixed3D** et affectez à la propriété **MaximizeBox** la valeur **False**.
+1.  Remplacez la valeur de la propriété **FormBorderStyle** par **Fixed3D** et affectez à la propriété **MaximizeBox** la valeur **False**.
 
      Ces valeurs empêchent les personnes interrogées de redimensionner le formulaire.
 

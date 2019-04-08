@@ -10,14 +10,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d369bae532fae40c2856cce88169137146d826d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00e95520c526c1d26f0122d9631dfb8196077853
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934638"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647113"
 ---
-# <a name="keyboard-environment-options-dialog-box"></a>Clavier, Environnement, boîte de dialogue Options
+# <a name="options-dialog-box-environment--keyboard"></a>Boîte de dialogue Options : Environnement \> Clavier
+
 Utilisez cette page pour définir les mappages du clavier. Pour plus d’informations sur les mappages, consultez [Identification et personnalisation des raccourcis clavier](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
 ## <a name="see-also"></a>Voir aussi

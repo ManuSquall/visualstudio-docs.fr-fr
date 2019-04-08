@@ -46,6 +46,6 @@ ms.locfileid: "55922600"
  Ne supprimez aucun avertissement de cette règle. La présence du constructeur suggère que le type n’est pas un type statique.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant illustre un type qui enfreint cette règle. Notez qu’il n’existe aucun constructeur par défaut dans le code source. Lorsque ce code est compilé dans un assembly, le compilateur c# insérera un constructeur par défaut, ce qui enfreint cette règle. Pour corriger ce problème, déclarez un constructeur privé.
+ L’exemple suivant illustre un type qui enfreint cette règle. Notez qu’il n’existe aucun constructeur par défaut dans le code source. Lorsque ce code est compilé dans un assembly, le compilateur C# insérera un constructeur par défaut, ce qui enfreint cette règle. Pour corriger ce problème, déclarez un constructeur privé.
 
  [!code-csharp[FxCop.Design.StaticTypes#1](../code-quality/codesnippet/CSharp/ca1053-static-holder-types-should-not-have-constructors_1.cs)]

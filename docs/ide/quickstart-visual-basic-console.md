@@ -2,6 +2,7 @@
 title: Créer votre première application console avec Visual Basic
 description: Découvrez comment créer une simple application console Hello World dans Visual Studio, en Visual Basic, pas à pas.
 ms.custom: seodec18
+ms.date: 03/23/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: quickstart
@@ -13,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 00fd1f346bb644ea1b17f429b91fba854bf9eeb4
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: d0ccaf648d4109679b7d1343df462ae4e8da3822
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415835"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856241"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Démarrage rapide : Créer votre première application console dans Visual Studio avec Visual Basic
 
@@ -32,7 +33,7 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 ::: moniker range="vs-2019"
 
-Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) pour l’installer gratuitement.
+Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) pour l’installer gratuitement.
 
 ::: moniker-end
 
@@ -75,7 +76,7 @@ Tout d’abord, vous allez créer un projet d’application Visual Basic. Le typ
 
    Après avoir appliqué les filtres de langage et de plateforme, choisissez le modèle **Application console (.NET Core)**, puis choisissez **Suivant**.
 
-   ![Choisissez le modèle Visual Basic pour l’application console (.NET Framework).](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-console-net-core-filtered.png)
+   ![Choisir le modèle Visual Basic pour l’application console (.NET Framework)](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-console-net-core-filtered.png)
 
    > [!NOTE]
    > Si vous ne voyez pas le modèle **Application console (.NET Core)**, vous pouvez l’installer à partir de la fenêtre **Créer un projet**. Dans le **Vous ne trouvez pas ce que vous cherchez ?**, choisissez le lien **Installer plus d’outils et de fonctionnalités**.
@@ -90,7 +91,7 @@ Tout d’abord, vous allez créer un projet d’application Visual Basic. Le typ
 
 1. Dans la fenêtre **Configurer votre nouveau projet**, tapez ou entrez *WhatIsYourName* dans la zone **Nom du projet**. Choisissez ensuite **Créer**.
 
-   ![Dans la fenêtre « Configurer votre nouveau projet », nommez votre projet « WhatIsYourName »](../get-started/visual-basic/media/vs-2019/vb-name-your-project.-whatname.png)
+   ![Dans la fenêtre « Configurer votre nouveau projet », nommez votre projet « WhatIsYourName »](../get-started/visual-basic/media/vs-2019/vb-name-your-project-whatname.png)
 
    Visual Studio ouvre votre nouveau projet.
 

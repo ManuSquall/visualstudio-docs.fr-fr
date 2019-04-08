@@ -24,7 +24,7 @@ ms.locfileid: "58938587"
 
 La première procédure pas à pas dans cette série, [création d’un système de projet de base, partie 1](../extensibility/creating-a-basic-project-system-part-1.md), montre comment créer un système de projet de base. Cette procédure pas à pas s’appuie sur le système de projet de base en ajoutant un modèle Visual Studio, une page de propriétés et autres fonctionnalités. Vous devez effectuer la première procédure avant de commencer celle-ci.  
   
- Cette procédure pas à pas explique comment créer un type de projet qui a le .myproj d’extension de nom de fichier projet. Pour terminer la procédure pas à pas, il est inutile de créer votre propre langage, car la procédure pas à pas utilise le système de projet Visual c# existant.  
+ Cette procédure pas à pas explique comment créer un type de projet qui a le .myproj d’extension de nom de fichier projet. Pour terminer la procédure pas à pas, il est inutile de créer votre propre langage, car la procédure pas à pas utilise le système de projet Visual C# existant.  
   
  Cette procédure pas à pas explique comment accomplir ces tâches :  
   
@@ -39,7 +39,7 @@ La première procédure pas à pas dans cette série, [création d’un système
 -   Créer une page de propriétés de projet.  
   
 > [!NOTE]
->  Les étapes décrites dans cette procédure pas à pas sont basées sur un projet c#. Toutefois, à l’exception des caractéristiques telles que les extensions de nom de fichier et le code, vous pouvez utiliser les mêmes étapes pour un projet Visual Basic.  
+>  Les étapes décrites dans cette procédure pas à pas sont basées sur un projet C#. Toutefois, à l’exception des caractéristiques telles que les extensions de nom de fichier et le code, vous pouvez utiliser les mêmes étapes pour un projet Visual Basic.  
   
 ## <a name="creating-a-visual-studio-template"></a>Création d’un modèle Visual Studio  
  [Création d’un système de projet de base, partie 1](../extensibility/creating-a-basic-project-system-part-1.md) montre comment créer un modèle de projet de base et l’ajouter au système de projet. Il montre également comment inscrire ce modèle avec Visual Studio à l’aide de la <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> attribut, qui écrit le chemin d’accès complet du dossier \Templates\Projects\SimpleProject\ dans le Registre système.  

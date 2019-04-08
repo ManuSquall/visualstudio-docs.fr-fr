@@ -58,7 +58,7 @@ Here is a list of elements in the model:
 
 - Une propriété dans `this` contient l’élément racine. À partir de là, votre code peut accéder à d’autres éléments du modèle. Le nom de la propriété est généralement identique à la classe de domaine racine de votre DSL. Dans cet exemple, il s’agit de `this.ExampleModel`.
 
-- Bien que le langage dans lequel sont écrits les fragments de code c#, vous pouvez générer le texte de tout type. Vous pouvez également écrire le code dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] en ajoutant la propriété `language="VB"` à la `template` directive.
+- Bien que le langage dans lequel sont écrits les fragments de code C#, vous pouvez générer le texte de tout type. Vous pouvez également écrire le code dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] en ajoutant la propriété `language="VB"` à la `template` directive.
 
 - Pour déboguer le modèle, vous devez ajouter `debug="true"` à la `template` directive. Si une exception se produit, le modèle s’ouvre dans une autre instance de Visual Studio. Si vous souhaitez arrêter le débogueur à un moment précis dans le code, insérez l’instruction `System.Diagnostics.Debugger.Break();`
 
