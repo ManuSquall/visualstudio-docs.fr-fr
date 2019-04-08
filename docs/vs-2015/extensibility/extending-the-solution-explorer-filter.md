@@ -21,7 +21,7 @@ ms.locfileid: "58952734"
 # <a name="extending-the-solution-explorer-filter"></a>Extension du filtre de l’Explorateur de solutions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez étendre **l’Explorateur de solutions** fonctionnalité pour afficher ou masquer les différents fichiers de filtrage. Par exemple, vous pouvez créer un filtre qui affiche uniquement classe factory fichiers c# dans le **l’Explorateur de solutions**, comme illustré dans cette procédure pas à pas.  
+Vous pouvez étendre **l’Explorateur de solutions** fonctionnalité pour afficher ou masquer les différents fichiers de filtrage. Par exemple, vous pouvez créer un filtre qui affiche uniquement classe factory fichiers C# dans le **l’Explorateur de solutions**, comme illustré dans cette procédure pas à pas.  
   
 ## <a name="prerequisites"></a>Prérequis  
  À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS par la suite. Pour plus d’informations, consultez [l’installation de Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -190,7 +190,7 @@ Vous pouvez étendre **l’Explorateur de solutions** fonctionnalité pour affic
   
 1.  Générez et exécutez le projet. Une seconde instance de Visual Studio apparaît. Il s’agit de l’instance expérimentale.  
   
-2.  Dans l’instance expérimentale de Visual Studio, ouvrez un projet c#.  
+2.  Dans l’instance expérimentale de Visual Studio, ouvrez un projet C#.  
   
 3.  Recherchez le bouton que vous avez ajouté dans la barre d’outils de l’Explorateur de solutions. Il doit être le quatrième bouton de la gauche.  
   

@@ -30,7 +30,7 @@ Cette procédure pas à pas vous montre comment publier une extension Visual Stu
 
 Cet article utilise une extension de package Visual Studio par défaut, mais les étapes sont valides pour chaque type d’extension.
 
-1. Créer un VSPackage en c# nommé `TestPublish` qui a une commande de menu. Pour plus d’informations, consultez [créer votre première extension : Hello World](../extensibility/extensibility-hello-world.md).
+1. Créer un VSPackage en C# nommé `TestPublish` qui a une commande de menu. Pour plus d’informations, consultez [créer votre première extension : Hello World](../extensibility/extensibility-hello-world.md).
 
 ## <a name="package-your-extension"></a>Votre extension de package
 

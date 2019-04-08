@@ -1,6 +1,6 @@
 ---
 title: Extensions, Environnement, boîte de dialogue Options
-ms.date: 11/04/2016
+ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.ExtensionManager
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a9b890f57fc8148233a17e3910477a4e8697564
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: d7c49cc7946f9fea988c57a4ba782ec93a6294fa
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983934"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58646710"
 ---
-# <a name="extensions-environment-options-dialog-box"></a>Extensions, Environnement, boîte de dialogue Options
+# <a name="options-dialog-box-environment--extensions"></a>Boîte de dialogue Options : Environnement \> Extensions
 
 Utilisez cette page pour définir les options selon lesquelles Visual Studio effectue les mises à jour, et comment les extensions sont mises à jour et découvertes.
 
@@ -29,7 +29,7 @@ Quand cette option est activée, Visual Studio recherche périodiquement ses pro
 
 Quand elle est activée, cette option met à jour les extensions sans demander confirmation. Pour plus d’informations, consultez [Recherche et utilisation des extensions Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).
 
-## <a name="load-user-extensions-when-running-as-administrator"></a>Charger les extensions par utilisateur lors d'une exécution en tant qu'administrateur
+## <a name="load-per-user-extensions-when-running-as-administrator"></a>Charger les extensions par utilisateur lors d’une exécution en tant qu’administrateur
 
 Pour plus d’informations, consultez [Recherche et utilisation des extensions Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).
 

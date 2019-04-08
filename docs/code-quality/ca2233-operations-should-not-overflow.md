@@ -98,9 +98,9 @@ Blocs vérifiés ne sont pas pris en charge dans [!INCLUDE[vbprvb](../code-quali
 
 ## <a name="turn-on-checked-arithmetic-overflowunderflow"></a>Activer Checked arithmétiques dépassement de capacité positifs et négatifs
 
-Si vous activez checked arithmétiques dépassement de capacité positifs et négatifs en c#, il est équivalent à chaque opération entière d’habillage dans un bloc checked.
+Si vous activez checked arithmétiques dépassement de capacité positifs et négatifs en C#, il est équivalent à chaque opération entière d’habillage dans un bloc checked.
 
-Pour activer checked arithmétiques dépassement de capacité positifs et négatifs en c# :
+Pour activer checked arithmétiques dépassement de capacité positifs et négatifs en C# :
 
 1.  Dans **l’Explorateur de solutions**, cliquez sur votre projet et choisissez **propriétés**.
 

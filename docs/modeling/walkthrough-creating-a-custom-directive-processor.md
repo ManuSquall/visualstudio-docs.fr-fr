@@ -42,7 +42,7 @@ L'appel à votre directive personnalisée se présente comme suit :
 
 `<#@ CoolDirective Processor="CustomDirectiveProcessor" FileName="<Your Path>DocFile.xml" #>`
 
-Le processeur de directive personnalisé ajoute la variable et la propriété à la classe de transformation générée. La directive que vous écrivez utilise les classes <xref:System.CodeDom> pour créer le code que le moteur ajoute à la classe de transformation générée. Le <xref:System.CodeDom> classes créer du code dans Visual c# ou Visual Basic, selon le langage spécifié dans le `language` paramètre de la `template` directive. Le langage du processeur de directive et celui du modèle de texte qui accède à ce processeur ne doivent pas nécessairement correspondre.
+Le processeur de directive personnalisé ajoute la variable et la propriété à la classe de transformation générée. La directive que vous écrivez utilise les classes <xref:System.CodeDom> pour créer le code que le moteur ajoute à la classe de transformation générée. Le <xref:System.CodeDom> classes créer du code dans Visual C# ou Visual Basic, selon le langage spécifié dans le `language` paramètre de la `template` directive. Le langage du processeur de directive et celui du modèle de texte qui accède à ce processeur ne doivent pas nécessairement correspondre.
 
 Le code créé par la directive se présente comme suit :
 

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d3630dd316ec137b63ec11fc8a87634d0f24bf7
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: 416c5e62cf4984219be79572b3b2929a86c29590
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268612"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790535"
 ---
 # <a name="features-of-visual-studio"></a>Fonctionnalités de Visual Studio
 
@@ -118,7 +118,7 @@ Azure DevOps Services est un ensemble de services cloud qui permettent la planif
 
 Team Foundation Server (TFS) est le hub de gestion du cycle de vie des applications pour Visual Studio. Il permet à toutes personnes impliquées dans le processus de développement de participer à une même solution. TFS est également utile pour la gestion des équipes et des projets hétérogènes.
 
-Si vous avez une organisation Azure DevOps ou Team Foundation Server sur votre réseau, utilisez la fenêtre **Team Explorer** dans Visual Studio pour vous y connecter. Depuis cette fenêtre, vous pouvez vérifier le code dans ou en dehors du contrôle de code source, gérer des éléments de travail, démarrer des builds et accéder aux salles d'équipe et aux espaces de travail. Vous pouvez ouvrir **Team Explorer** à partir de la zone **Lancement rapide** ou, dans le menu principal, à partir de **Affichage** > **Team Explorer** ou de **Équipe** > **Gérer les connexions**.
+Si vous avez une organisation Azure DevOps ou Team Foundation Server sur votre réseau, utilisez la fenêtre **Team Explorer** dans Visual Studio pour vous y connecter. Depuis cette fenêtre, vous pouvez vérifier le code dans ou en dehors du contrôle de code source, gérer des éléments de travail, démarrer des builds et accéder aux salles d'équipe et aux espaces de travail. Vous pouvez ouvrir **Team Explorer** à partir de la zone de recherche, ou dans le menu principal depuis **Affichage** > **Team Explorer** ou depuis **Équipe** > **Gérer les connexions**.
 
 L’illustration suivante montre la fenêtre **Team Explorer** pour une solution qui est hébergée dans Azure DevOps Services.
 

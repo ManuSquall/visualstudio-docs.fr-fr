@@ -197,7 +197,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
   
 12. Rechercher la \<ItemGroup > élément qui contient d’autres ressources qui sont ajoutés à votre projet, tels que les fichiers .png de logo (\<Content Include="Assets\Logo.scale-100.png » / >). Ajoutez le code suivant \<contenu > élément enfant à cette \<ItemGroup > élément :  
   
-     **Pour c# :**  
+     **Pour C# :**  
   
     ```xml  
     <Content Include="Properties\default.rd.xml" />  

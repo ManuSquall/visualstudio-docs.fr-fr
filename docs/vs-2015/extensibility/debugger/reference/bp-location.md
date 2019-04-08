@@ -92,7 +92,7 @@ public struct BP_LOCATION {
 ## <a name="remarks"></a>Notes  
  Cette structure est un membre de la [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) et [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) structures.  
   
- [C# uniquement] Le `unionmemberX` membres sont interprétées selon le tableau suivant. Rechercher vers le bas de la colonne de gauche pour le `bpLocationType` valeur puis rechercher dans les autres colonnes pour déterminer ce que chaque `unionmemberX` membre représente et marshaler le `unionmemberX` en conséquence. Consultez l’exemple pour savoir comment interpréter une partie de cette structure en c#.  
+ [C# uniquement] Le `unionmemberX` membres sont interprétées selon le tableau suivant. Rechercher vers le bas de la colonne de gauche pour le `bpLocationType` valeur puis rechercher dans les autres colonnes pour déterminer ce que chaque `unionmemberX` membre représente et marshaler le `unionmemberX` en conséquence. Consultez l’exemple pour savoir comment interpréter une partie de cette structure en C#.  
   
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  
@@ -105,7 +105,7 @@ public struct BP_LOCATION {
 |`BPLT_RESOLUTION`|[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)|-|-|-|  
   
 ## <a name="example"></a>Exemple  
- Cet exemple montre comment interpréter le `BP_LOCATION` structure en c# pour le `BPLT_DATA_STRING` type. Ce type particulier montre comment interpréter ces quatre `unionmemberX` membres dans tous les formats possibles (object, string et nombre).  
+ Cet exemple montre comment interpréter le `BP_LOCATION` structure en C# pour le `BPLT_DATA_STRING` type. Ce type particulier montre comment interpréter ces quatre `unionmemberX` membres dans tous les formats possibles (object, string et nombre).  
   
 ```csharp  
 using System;  

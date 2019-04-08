@@ -1,5 +1,5 @@
 ---
-title: Refactorisation (c#) | Microsoft Docs
+title: Refactorisation (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -30,7 +30,7 @@ ms.locfileid: "58951604"
 
 La refactorisation consiste à améliorer votre code après que qu’il a été écrit par la modification de la structure interne du code sans modifier le comportement du code externe.  
   
- Visual c# fournit les commandes de refactorisation suivantes sur le **Refactoring** menu :  
+ Visual C# fournit les commandes de refactorisation suivantes sur le **Refactoring** menu :  
   
 -   [Extraire la méthode (Refactorisation C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
   
@@ -69,7 +69,7 @@ La refactorisation consiste à améliorer votre code après que qu’il a été 
   
  Le **résultats de la vérification** boîte de dialogue peut vous avertir si le moteur de refactorisation détecte des erreurs de compilation ou découvre qu’une opération de refactorisation relie par inadvertance une référence de code à lier à quelque chose de différent à partir de ce qu’il était lié à l’origine (problème de reliaison).  
   
- Pour activer les résultats de la vérification des fonctionnalités, sur le **outils** menu, cliquez sur **Options**. Dans le **Options** boîte de dialogue, développez **éditeur de texte**, puis développez **c#**. Cliquez sur **avancé** et sélectionnez le **vérifier les résultats de la refactorisation** case à cocher.  
+ Pour activer les résultats de la vérification des fonctionnalités, sur le **outils** menu, cliquez sur **Options**. Dans le **Options** boîte de dialogue, développez **éditeur de texte**, puis développez **C#**. Cliquez sur **avancé** et sélectionnez le **vérifier les résultats de la refactorisation** case à cocher.  
   
  Le **résultats de la vérification** boîte de dialogue distingue deux types de problèmes de reliaison.  
   
@@ -107,5 +107,5 @@ class Example
  Si vous utilisez la refactorisation pour renommer `OtherMethod` à `Method`, cette boîte de dialogue s’affiche. La référence dans `Main` maintenant fait référence à la méthode surchargée qui accepte un `int` paramètre au lieu de la méthode surchargée qui accepte un `object` paramètre.  
   
 ## <a name="see-also"></a>Voir aussi  
- [À l’aide de l’environnement de développement Visual Studio pour c#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)   
+ [À l’aide de l’environnement de développement Visual Studio pour C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)   
  [Guide pratique pour restaurer les extraits de code de refactorisation C#](../ide/how-to-restore-csharp-refactoring-snippets.md)

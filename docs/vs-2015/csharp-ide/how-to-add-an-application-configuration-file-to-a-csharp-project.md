@@ -30,13 +30,13 @@ En ajoutant un fichier de configuration d’application (fichier app.config) à 
   
  Lorsque vous générez votre projet, l’environnement de développement copie automatiquement votre fichier app.config, modifie le nom de fichier de la copie pour correspondre à votre fichier exécutable, puis déplace la copie dans le répertoire bin.  
   
-### <a name="to-add-an-application-configuration-file-to-your-c-project"></a>Pour ajouter un fichier de configuration d’application à votre projet c#  
+### <a name="to-add-an-application-configuration-file-to-your-c-project"></a>Pour ajouter un fichier de configuration d’application à votre projet C#  
   
 1.  Dans la barre de menus, choisissez **projet**, **ajouter un nouvel élément**.  
   
      La boîte de dialogue **Ajouter un nouvel élément** s’affiche.  
   
-2.  Développez **installé**, développez **éléments Visual c#**, puis choisissez le **fichier de Configuration d’Application** modèle.  
+2.  Développez **installé**, développez **éléments Visual C#**, puis choisissez le **fichier de Configuration d’Application** modèle.  
   
 3.  Dans la zone de texte **Nom**, entrez un nom, puis choisissez le bouton **Ajouter**.  
   

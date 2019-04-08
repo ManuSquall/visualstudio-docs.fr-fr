@@ -1,5 +1,5 @@
 ---
-title: Présélectionné des éléments de liste de saisie semi-automatique en c# | Microsoft Docs
+title: Présélectionné des éléments de liste de saisie semi-automatique en C# | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -20,4 +20,4 @@ ms.lasthandoff: 01/23/2019
 ms.locfileid: "58948356"
 ---
 # <a name="pre-selected-completion-list-items-in-c"></a>Éléments présélectionnés d'une liste de saisie semi-automatique en C# #
-Ce contenu a été déplacé vers [listes de saisie semi-automatique en c#](../misc/completion-lists-in-csharp.md)
+Ce contenu a été déplacé vers [listes de saisie semi-automatique en C#](../misc/completion-lists-in-csharp.md)

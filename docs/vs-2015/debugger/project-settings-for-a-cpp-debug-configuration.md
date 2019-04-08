@@ -125,7 +125,7 @@ ms.locfileid: "58953552"
 Vous pouvez modifier les paramètres du projet pour une configuration debug C ou Visual C++ dans le **Pages de propriétés** boîte de dialogue, comme indiqué dans [Comment : Définir des configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md). Les tableaux suivants indiquent où se trouvent les paramètres du débogueur dans la boîte de dialogue **Pages de propriétés**.  
   
 > [!WARNING]
->  Les paramètres de projet de débogage dans le **propriétés de Configuration/débogage** catégorie pour les applications du Windows Store et les composants qui sont écrits en C++ sont différents. Consultez [démarrer une session de débogage (VB, c#, C++ et XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) dans le centre de développement Windows.  
+>  Les paramètres de projet de débogage dans le **propriétés de Configuration/débogage** catégorie pour les applications du Windows Store et les composants qui sont écrits en C++ sont différents. Consultez [démarrer une session de débogage (VB, C#, C++ et XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) dans le centre de développement Windows.  
   
  Spécifiez le débogueur à utiliser dans le **débogueur à lancer** zone de liste. Votre choix affecte la sélection des propriétés affichées.  
   

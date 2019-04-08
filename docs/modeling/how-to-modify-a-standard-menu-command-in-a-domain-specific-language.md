@@ -28,7 +28,7 @@ Vous pouvez modifier le comportement de certaines des commandes standard qui son
 
 ### <a name="to-discover-what-commands-you-can-modify"></a>Pour découvrir les commandes que vous pouvez modifier
 
-1.  Dans le `DslPackage` projet, ouvrez `GeneratedCode\CommandSet.cs`. Ce fichier c# se trouve dans l’Explorateur de solutions comme une filiale de `CommandSet.tt`.
+1.  Dans le `DslPackage` projet, ouvrez `GeneratedCode\CommandSet.cs`. Ce fichier C# se trouve dans l’Explorateur de solutions comme une filiale de `CommandSet.tt`.
 
 2.  Trouver les classes dans ce fichier se terminent par «`CommandSet`», par exemple `Language1CommandSet` et `Language1ClipboardCommandSet`.
 

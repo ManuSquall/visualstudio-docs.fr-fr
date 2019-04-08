@@ -92,7 +92,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 
 2. Appuyez sur F5.
 
-   Visual Studio génère et démarre l'application avec le débogueur attaché. L'exécution se poursuit jusqu'à ce qu'un point d'arrêt soit atteint, que vous suspendiez manuellement l'exécution, qu'une exception non gérée se produise ou que l'application se termine. Pour plus d’informations, consultez [parcourir une session de débogage (Xaml et c#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md) .
+   Visual Studio génère et démarre l'application avec le débogueur attaché. L'exécution se poursuit jusqu'à ce qu'un point d'arrêt soit atteint, que vous suspendiez manuellement l'exécution, qu'une exception non gérée se produise ou que l'application se termine. Pour plus d’informations, consultez [parcourir une session de débogage (Xaml et C#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md) .
 
 ##  <a name="BKMK_Configure_the_debugging_session"></a> Configurer la session de débogage
 

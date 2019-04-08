@@ -18,7 +18,7 @@ ms.locfileid: "55939487"
 ---
 # <a name="about-domain-specific-languages"></a>À propos des langages spécifiques à un domaine
 
-Contrairement à un langage à usage général tel que c# ou UML, un langage spécifique à un domaine (DSL) est conçu pour exprimer des instructions dans un espace de problème particulier, ou un domaine.
+Contrairement à un langage à usage général tel que C# ou UML, un langage spécifique à un domaine (DSL) est conçu pour exprimer des instructions dans un espace de problème particulier, ou un domaine.
 
 DSL Well-Known inclure des expressions régulières et SQL. Chaque DSL est largement préférable à un langage à usage général pour décrire les opérations de chaînes de texte ou une base de données, mais bien pire pour décrire les idées qui sont en dehors de sa propre étendue. Secteurs d’activité individuels ont également leurs propres DSL. Par exemple, dans le secteur des télécommunications, appelez description langues sont couramment utilisées pour spécifier la séquence des États dans un appel téléphonique et en l’air secteur du voyage une norme que DSL est utilisé pour décrire les réservations de vol.
 

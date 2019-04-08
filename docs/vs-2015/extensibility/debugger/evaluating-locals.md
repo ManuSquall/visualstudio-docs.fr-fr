@@ -34,7 +34,7 @@ ms.locfileid: "58953302"
   
 3.  Met en forme la valeur basée sur type de l’ordinateur local.  
   
-4.  Retourne un objet générique qui contient la valeur de la locale. En c#, il s’agit d’un `object`, et en C++, il s’agit d’un `VARIANT`.  
+4.  Retourne un objet générique qui contient la valeur de la locale. En C#, il s’agit d’un `object`, et en C++, il s’agit d’un `VARIANT`.  
   
 ## <a name="managed-code"></a>Code managé  
  Il s’agit d’une implémentation d’une fonction qui Récupère la valeur d’une variable locale dans le code managé.  

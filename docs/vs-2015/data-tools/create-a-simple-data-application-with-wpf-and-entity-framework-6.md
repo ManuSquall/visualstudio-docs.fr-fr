@@ -35,7 +35,7 @@ Cette procédure pas à pas montre comment créer une application de base « fo
   
 ## <a name="configure-the-project"></a>Configurer le projet  
   
-1.  Dans Visual Studio, choisissez **fichier &#124; nouveau projet** , puis créez une Application WPF c#.  
+1.  Dans Visual Studio, choisissez **fichier &#124; nouveau projet** , puis créez une Application WPF C#.  
   
 2.  Ensuite, nous allons ajouter le package NuGet pour Entity Framework 6. Dans l’Explorateur de solutions, sélectionnez le nœud du projet. Dans le menu principal, choisissez **projet &#124; gérer les Packages NuGet...**  
   
@@ -49,7 +49,7 @@ Cette procédure pas à pas montre comment créer une application de base « fo
   
 ## <a name="create-the-model"></a>Créer le modèle  
   
-1. Cliquez avec le bouton droit sur le nœud de projet dans l’Explorateur de solutions et choisissez **ajouter &#124; un nouvel élément**. Dans le volet gauche, sous le nœud c#, choisissez **données** et dans le volet central, choisissez **ADO.NET Entity Data Model**.  
+1. Cliquez avec le bouton droit sur le nœud de projet dans l’Explorateur de solutions et choisissez **ajouter &#124; un nouvel élément**. Dans le volet gauche, sous le nœud C#, choisissez **données** et dans le volet central, choisissez **ADO.NET Entity Data Model**.  
   
     ![Élément Entity Framework modèle nouveau projet](../data-tools/media/raddata-ef-new-project-item.png "raddata EF nouvel élément de projet")  
   
@@ -63,7 +63,7 @@ Cette procédure pas à pas montre comment créer une application de base « fo
   
     ![Choisissez les objets de base de données pour le modèle](../data-tools/media/raddata-choose-ef-objects.png "raddata choisir des objets de EF")  
   
-5. L’Assistant génère les classes c# qui représentent le modèle Entity Framework. Il s’agit plain old classes c# et ils sont ce que nous allons databind à l’interface utilisateur WPF. Le fichier .edmx décrit les relations et autres métadonnées qui associe les classes d’objets dans la base de données.  Les fichiers .tt sont des modèles T4 qui génèrent le code qui fonctionnent sur le modèle et enregistrer les modifications dans la base de données. Vous pouvez voir ces fichiers dans l’Explorateur de solutions sous le nœud Northwind_model :  
+5. L’Assistant génère les classes C# qui représentent le modèle Entity Framework. Il s’agit plain old classes C# et ils sont ce que nous allons databind à l’interface utilisateur WPF. Le fichier .edmx décrit les relations et autres métadonnées qui associe les classes d’objets dans la base de données.  Les fichiers .tt sont des modèles T4 qui génèrent le code qui fonctionnent sur le modèle et enregistrer les modifications dans la base de données. Vous pouvez voir ces fichiers dans l’Explorateur de solutions sous le nœud Northwind_model :  
   
     ![Fichiers de modèle de solution Explorer EF](../data-tools/media/raddata-solution-explorer-ef-model-files.png "raddata les fichiers de modèle EF de l’Explorateur de solutions")  
   

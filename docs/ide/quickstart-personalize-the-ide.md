@@ -7,16 +7,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 504b33ee897ac59b7fe55625a67a01b8dca8ff32
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 96234797efde518741182d93420914168e59ab2a
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869329"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58646697"
 ---
-# <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Démarrage rapide : Personnaliser l’éditeur et l’IDE de Visual Studio
+# <a name="personalize-the-visual-studio-ide-and-editor"></a>Personnaliser l’éditeur et l’IDE de Visual Studio
 
-Dans ce guide de démarrage rapide qui dure entre 5 et 10 minutes, nous allons personnaliser le thème de couleur de Visual Studio en sélectionnant le thème sombre. Nous allons également personnaliser les couleurs de deux types de texte différents dans l’éditeur de texte.
+Dans ce tutoriel de 5-10 minutes, nous allons personnaliser le thème de couleur de Visual Studio en sélectionnant le thème sombre. Nous allons également personnaliser les couleurs de deux types de texte différents dans l’éditeur de texte.
 
 Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) pour l’installer gratuitement.
 
@@ -28,9 +28,19 @@ Le thème de couleur par défaut de l’interface utilisateur de Visual Studio s
 
 1. Dans la page **Environnement** > **Options générales**, remplacez la sélection du **Thème de couleur** par **Sombre**, puis choisissez **OK**.
 
-   Le thème de couleur de l’environnement de développement (IDE) Visual Studio entier change et devient **Sombre**.
+   Le thème de couleur de tout l’environnement de développement (IDE) Visual Studio change et devient **Sombre**.
 
-   ![VS dans le thème Sombre](media/quickstart-personalize-dark-theme.png)
+   ::: moniker range="vs-2017"
+
+   ![Visual Studio 2017 en thème sombre](media/quickstart-personalize-dark-theme.png)
+
+   ::: moniker-end
+
+   ::: moniker range="vs-2019"
+
+   ![Visual Studio 2019 en thème sombre](media/vs-2019/dark-theme.png)
+
+   ::: moniker-end
 
 > [!TIP]
 > Vous pouvez installer d’autres thèmes prédéfinis en téléchargeant et en installant **l’éditeur de thème de couleur de Visual Studio** à partir de la [Place de marché Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Une fois cet outil installé, d’autres thèmes de couleurs apparaissent dans la liste déroulante des **thèmes de couleurs**.

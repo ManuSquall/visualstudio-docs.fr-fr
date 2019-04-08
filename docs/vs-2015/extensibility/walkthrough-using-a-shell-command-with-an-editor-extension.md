@@ -30,7 +30,7 @@ ms.locfileid: "58938392"
 ## <a name="creating-an-extension-with-a-menu-command"></a>Création d’une extension avec une commande de menu  
  Créer un VSPackage qui place une commande de menu nommée **ajouter un ornement** sur le **outils** menu.  
   
-1.  Créez un projet VSIX c# nommé `MenuCommandTest`et ajouter un nom de modèle d’élément commande personnalisée **AddAdornment**. Pour plus d’informations, consultez [création d’une Extension avec une commande de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1.  Créez un projet VSIX C# nommé `MenuCommandTest`et ajouter un nom de modèle d’élément commande personnalisée **AddAdornment**. Pour plus d’informations, consultez [création d’une Extension avec une commande de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
 2.  Une solution nommée MenuCommandTest est ouvert. Le fichier MenuCommandTestPackage a le code qui crée la commande de menu et le place le **outils** menu. À ce stade, la commande entraîne une boîte de message à afficher. Les étapes suivantes montrent comment modifier cette option pour afficher l’ornement de commentaire.  
   

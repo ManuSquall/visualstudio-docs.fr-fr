@@ -36,7 +36,7 @@ Suivez ces étapes pour créer un projet d'application console de workflow d'ord
     > [!NOTE]
     >  L’option par défaut dans [!INCLUDE[vs2010](../includes/vs2010-md.md)] est **.NET Framework 4**. Cette option permet de créer des applications [!INCLUDE[wf](../includes/wf-md.md)] qui ciblent le [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] et elle n'utilise pas le concepteur hérité.  
   
-4.  Dans le **Types de projets** volet, sélectionnez Visual c# ou Visual Basic (sous **autres langages**), puis sélectionnez **Workflow**.  
+4.  Dans le **Types de projets** volet, sélectionnez Visual C# ou Visual Basic (sous **autres langages**), puis sélectionnez **Workflow**.  
   
 5.  Dans le **modèles** volet, sélectionnez **Console Application de Workflow de Machine d’état**.  
   

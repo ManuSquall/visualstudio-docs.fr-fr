@@ -1,5 +1,5 @@
 ---
-title: Modifier & Continuer des erreurs et avertissements (c#) | Microsoft Docs
+title: Modifier & Continuer des erreurs et avertissements (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp

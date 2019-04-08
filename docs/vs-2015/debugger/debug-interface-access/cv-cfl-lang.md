@@ -81,7 +81,7 @@ typedef enum CV_CFL_LANG { 
  Application est un module de PGO optimisé généré avec CVTPGD outil.  
   
  CV_CFL_CSHARP  
- Langue de l’application est c#.  
+ Langue de l’application est C#.  
   
  CV_CFL_VB  
  Langue de l’application est Visual Basic.  

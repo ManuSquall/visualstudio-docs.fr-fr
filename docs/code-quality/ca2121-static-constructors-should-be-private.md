@@ -38,7 +38,7 @@ Un type a un constructeur statique qui n’est pas privé.
 
 Un constructeur statique, également appelé constructeur de classe, est utilisé pour initialiser un type. Le système appelle le constructeur statique avant la création de la première instance du type ou le référencement de tout membre statique. L’utilisateur n’a aucun contrôle sur quand le constructeur statique est appelé. Si un constructeur statique n’est pas privé, il peut être appelé par un code autre que le système. Selon les opérations effectuées dans le constructeur, cette possibilité peut provoquer un comportement inattendu.
 
-Cette règle est appliquée par les compilateurs c# et Visual Basic.
+Cette règle est appliquée par les compilateurs C# et Visual Basic.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 

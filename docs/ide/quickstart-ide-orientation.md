@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cb1b18488eaf9ddf3308e74d583fd1b92fc2563
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: e7c78ac8b3f6d25d601ae11bdcbb1aed4214cb8c
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354727"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790899"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Démarrage rapide : Premier aperçu de l’IDE Visual Studio
 
@@ -125,15 +125,15 @@ Générons le projet pour afficher une sortie de génération. Dans le menu **G�
 
 ![Fenêtre Sortie dans Visual Studio](media/build-output-minimal.png)
 
-## <a name="quick-launch"></a>Lancement rapide
+## <a name="search-box"></a>Zone de recherche
 
-La zone de recherche **Lancement rapide** permet d’accéder rapidement et facilement à quasiment n’importe quel élément dans Visual Studio. Vous pouvez saisir du texte concernant ce que vous voulez faire et une liste d’options pertinente s’affiche. Imaginez par exemple que vous souhaitez augmenter les commentaires de la sortie de la génération pour afficher des détails supplémentaires sur ce que fait la génération. Voici comment procéder :
+La zone de recherche permet d’accéder rapidement et facilement à quasiment n’importe quel élément dans Visual Studio. Vous pouvez saisir du texte concernant ce que vous voulez faire et une liste d’options pertinente s’affiche. Imaginez par exemple que vous souhaitez augmenter les commentaires de la sortie de la génération pour afficher des détails supplémentaires sur ce que fait la génération. Voici comment procéder :
 
 ::: moniker range="vs-2017"
 
 1. Localisez la zone de recherche **Lancement rapide** dans le coin supérieur droit de l’IDE. (Vous pouvez également appuyer sur **Ctrl**+**Q** pour y accéder.)
 
-2. Tapez **commentaires** dans la zone de recherche **Lancement rapide**. Parmi les résultats affichés, choisissez **Projets et solutions --> Générer et exécuter** sous la catégorie **Options**.
+2. Tapez **commentaires** dans la zone de recherche. Parmi les résultats affichés, choisissez **Projets et solutions --> Générer et exécuter** sous la catégorie **Options**.
 
    ![Zone de recherche Lancement rapide dans Visual Studio 2017](media/quickstart-IDE-quick-launch.png)
 
@@ -143,11 +143,11 @@ La zone de recherche **Lancement rapide** permet d’accéder rapidement et faci
 
 ::: moniker range=">=vs-2019"
 
-1. Localisez la zone de recherche **Lancement rapide** dans la partie supérieure de l’IDE, juste à droite des menus. (Vous pouvez également appuyer sur **Ctrl**+**Q** pour y accéder.)
+1. Appuyez sur **Ctrl**+**Q** pour activer la zone de recherche dans la partie supérieure de l’IDE.
 
-2. Tapez **commentaires** dans la zone de recherche **Lancement rapide**. Parmi les résultats affichés, choisissez **Modifier les commentaires MSBuild**.
+2. Tapez **commentaires** dans la zone de recherche. Parmi les résultats affichés, choisissez **Modifier les commentaires MSBuild**.
 
-   ![Zone de recherche Lancement rapide dans Visual Studio 2019](media/vs-2019/quick-launch-verbosity.png)
+   ![Zone de recherche dans Visual Studio 2019](media/vs-2019/quick-launch-verbosity.png)
 
    La boîte de dialogue **Options** s’affiche sur la page des options **Générer et exécuter**.
 
@@ -163,7 +163,7 @@ La zone de recherche **Lancement rapide** permet d’accéder rapidement et faci
 
 ## <a name="send-feedback-menu"></a>Menu Envoyer des commentaires
 
-Si vous rencontrez des problèmes pendant l’utilisation de Visual Studio, ou si vous avez des suggestions d’amélioration du produit, vous pouvez utiliser le menu **Envoyer des commentaires** en haut de la fenêtre de Visual Studio, à côté de la zone **Lancement rapide**.
+Si vous rencontrez des problèmes pendant l’utilisation de Visual Studio, ou si vous avez des suggestions d’amélioration du produit, vous pouvez utiliser le menu **Envoyer des commentaires** vers le haut de la fenêtre Visual Studio.
 
 ::: moniker range="vs-2017"
 

@@ -30,9 +30,9 @@ Le modèle de contrôle de boîte à outils WPF (Windows Presentation Framework)
   
 #### <a name="create-an-extension-with-a-wpf-toolbox-control"></a>Créer une Extension avec un contrôle de boîte à outils WPF  
   
-1.  Créez un projet VSIX nommé `MyToolboxControl`. Vous pouvez trouver le modèle de projet VSIX dans le **nouveau projet** boîte de dialogue sous **Visual c# / extensibilité**.  
+1.  Créez un projet VSIX nommé `MyToolboxControl`. Vous pouvez trouver le modèle de projet VSIX dans le **nouveau projet** boîte de dialogue sous **Visual C# / extensibilité**.  
   
-2.  Quand le projet s’ouvre, ajoutez un **contrôle de boîte à outils WPF** modèle d’élément nommé `MyToolboxControl`. Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **Ajouter / nouvel élément**. Dans le **ajouter un nouvel élément** boîte de dialogue, accédez à **Visual c# / extensibilité** et sélectionnez **contrôle de boîte à outils WPF**. Dans le **nom** en bas de la fenêtre, modifiez le nom de fichier de commande pour `MyToolboxControl.cs`.  
+2.  Quand le projet s’ouvre, ajoutez un **contrôle de boîte à outils WPF** modèle d’élément nommé `MyToolboxControl`. Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **Ajouter / nouvel élément**. Dans le **ajouter un nouvel élément** boîte de dialogue, accédez à **Visual C# / extensibilité** et sélectionnez **contrôle de boîte à outils WPF**. Dans le **nom** en bas de la fenêtre, modifiez le nom de fichier de commande pour `MyToolboxControl.cs`.  
   
      La solution contient maintenant un contrôle utilisateur, un `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> qui ajoute le contrôle à la **boîte à outils**et un **Microsoft.VisualStudio.ToolboxControl** dans le manifeste VSIX pour l’entrée de composant  déploiement.  
   
@@ -59,7 +59,7 @@ Le modèle de contrôle de boîte à outils WPF (Windows Presentation Framework)
   
 1.  Ouvrez MyToolboxControl.xaml.cs en mode code.  
   
-2.  Rechercher la classe MyToolboxControl et renommez-le TestControl. (Le plus rapide pour ce faire consiste à renommer la classe, puis sélectionnez **renommer** dans le menu contextuel et effectuez les étapes. (Pour plus d’informations sur la **renommer** de commande, consultez [Renommer (refactorisation c#)](../csharp-ide/rename-refactoring-csharp.md).)  
+2.  Rechercher la classe MyToolboxControl et renommez-le TestControl. (Le plus rapide pour ce faire consiste à renommer la classe, puis sélectionnez **renommer** dans le menu contextuel et effectuez les étapes. (Pour plus d’informations sur la **renommer** de commande, consultez [Renommer (refactorisation C#)](../csharp-ide/rename-refactoring-csharp.md).)  
   
 3.  Accédez à la `ProvideToolboxControl` d’attribut et modifiez la valeur du premier paramètre à **Test**. Il s’agit du nom du groupe qui contiendra le contrôle dans le **boîte à outils**.  
   

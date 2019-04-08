@@ -125,7 +125,7 @@ pUIShell2->GetVSSysColorEx(VSCOLOR_COLOR_NAME, &rgbLOCAL_COLOR);
 
 ##### <a name="from-managed-code"></a>À partir du code managé
 
-Il est assez simple d’accéder au service VSColor dans le code natif. Si vous travaillez via du code managé, toutefois, déterminer comment utiliser le service peut être difficile. Dans cette optique, Voici un extrait de code c# illustrant ce processus :
+Il est assez simple d’accéder au service VSColor dans le code natif. Si vous travaillez via du code managé, toutefois, déterminer comment utiliser le service peut être difficile. Dans cette optique, Voici un extrait de code C# illustrant ce processus :
 
 ```csharp
 private void VSColorPaint(object sender, System.Windows.Forms.PaintEventArgs e)

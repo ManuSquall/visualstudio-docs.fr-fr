@@ -732,7 +732,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  **ManifestToCode**
 
- Le manifeste de l’outil de Code prend un fichier de manifeste d’image et génère un fichier de wrapper pour référencer les valeurs de manifeste dans le code (C++, c# ou VB) ou *.vsct* fichiers.
+ Le manifeste de l’outil de Code prend un fichier de manifeste d’image et génère un fichier de wrapper pour référencer les valeurs de manifeste dans le code (C++, C# ou VB) ou *.vsct* fichiers.
 
  **ImageLibraryViewer**
 

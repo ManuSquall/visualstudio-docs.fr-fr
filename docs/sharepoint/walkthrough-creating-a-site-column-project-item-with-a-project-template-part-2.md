@@ -112,7 +112,7 @@ ms.locfileid: "57868102"
 
 1.  Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le **ProjectTemplateWizard** nœud de projet, puis choisissez **propriétés**.
 
-2.  Dans le **Concepteur de projets**, choisissez le **Application** onglet pour un projet Visual c# ou le **compiler** onglet pour un projet Visual Basic.
+2.  Dans le **Concepteur de projets**, choisissez le **Application** onglet pour un projet Visual C# ou le **compiler** onglet pour un projet Visual Basic.
 
 3.  Assurez-vous que le framework cible est défini sur le .NET Framework 4.5, pas le .NET Framework 4.5 Client Profile.
 

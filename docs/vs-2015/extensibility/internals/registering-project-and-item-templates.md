@@ -67,7 +67,7 @@ Types de projets doivent inscrire les répertoires où se trouvent leurs modèle
 ### <a name="registering-file-filters"></a>L’inscription des filtres de fichiers  
  Si vous le souhaitez, vous pouvez inscrire des filtres qui [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] utilise lorsqu’il vous invite à entrer des noms de fichier. Par exemple, le [!INCLUDE[csprcs](../../includes/csprcs-md.md)] filtrer pour le **ouvrir un fichier** boîte de dialogue est :  
   
- **Fichiers Visual c# (\*.cs,\*.resx,\*.settings,\*.xsd,\*.wsdl) ;\*. cs,\*.resx,\*.settings,\*.xsd,\*.wsdl)**  
+ **Fichiers Visual C# (\*.cs,\*.resx,\*.settings,\*.xsd,\*.wsdl) ;\*. cs,\*.resx,\*.settings,\*.xsd,\*.wsdl)**  
   
  Pour prendre en charge l’inscription de plusieurs filtres, chaque filtre est inscrit dans sa propre sous-clé sous HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<*Version*> \Projects\\{} \< *ProjectGUID*>} \Filters\\<*sous-clé*>. Le nom de la sous-clé est arbitraire ; [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ignore les nom de la sous-clé et utilise simplement ses valeurs.  
   

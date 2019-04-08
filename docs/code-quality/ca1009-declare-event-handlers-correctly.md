@@ -40,7 +40,7 @@ ms.locfileid: "55956066"
 ## <a name="rule-description"></a>Description de la règle
  Les méthodes du gestionnaire d'événements acceptent deux paramètres. Le premier est de type <xref:System.Object?displayProperty=fullName> et est nommé 'sender'. Il s'agit de l'objet qui déclenche l'événement. Le deuxième paramètre est de type <xref:System.EventArgs?displayProperty=fullName> et est nommé « e ». Il s'agit des données qui sont associées à l'événement. Par exemple, si l’événement est déclenché chaque fois qu’un fichier est ouvert, les données d’événement contient généralement le nom du fichier.
 
- Méthodes de gestionnaire d’événements ne doivent pas retourner une valeur. Dans le langage de programmation c#, cela est indiqué par le type de retour `void`. Un gestionnaire d’événements peut appeler plusieurs méthodes dans plusieurs objets. Si les méthodes étaient autorisées à retourner une valeur, plusieurs valeurs de retour se produirait pour chaque événement, et seule la valeur de la dernière méthode a été appelée serait disponible.
+ Méthodes de gestionnaire d’événements ne doivent pas retourner une valeur. Dans le langage de programmation C#, cela est indiqué par le type de retour `void`. Un gestionnaire d’événements peut appeler plusieurs méthodes dans plusieurs objets. Si les méthodes étaient autorisées à retourner une valeur, plusieurs valeurs de retour se produirait pour chaque événement, et seule la valeur de la dernière méthode a été appelée serait disponible.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, corrigez la signature, type de retour ou les noms de paramètre du délégué. Pour plus d’informations, consultez l’exemple suivant.

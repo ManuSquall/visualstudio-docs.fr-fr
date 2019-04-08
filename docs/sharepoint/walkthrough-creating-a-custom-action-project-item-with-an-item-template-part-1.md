@@ -97,7 +97,7 @@ ms.locfileid: "54876016"
 
 3.  Dans le **nouveau projet** boîte de dialogue, développez le **Visual C#** ou **Visual Basic** nœuds, puis choisissez le **extensibilité** nœud.
 
-4.  Dans la liste des modèles de projet, choisissez le **modèle d’élément c#** ou **modèle d’élément Visual Basic** modèle.
+4.  Dans la liste des modèles de projet, choisissez le **modèle d’élément C#** ou **modèle d’élément Visual Basic** modèle.
 
 5.  Dans le **nom** , entrez **ItemTemplate**, puis choisissez le **OK** bouton.
 
@@ -197,7 +197,7 @@ ms.locfileid: "54876016"
 3.  Remplacez le contenu du fichier par le code XML suivant, puis enregistrez et fermez le fichier.
 
     > [!NOTE]
-    >  Le code XML suivant est pour un modèle d’élément Visual c#. Si vous créez un modèle d’élément Visual Basic, remplacez la valeur de la `ProjectType` élément avec `VisualBasic`.
+    >  Le code XML suivant est pour un modèle d’élément Visual C#. Si vous créez un modèle d’élément Visual Basic, remplacez la valeur de la `ProjectType` élément avec `VisualBasic`.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>

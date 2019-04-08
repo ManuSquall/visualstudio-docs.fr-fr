@@ -39,7 +39,7 @@ Avec Modifier &amp; Continuer pour C#, vous pouvez modifier votre code en mode a
   
 2.  À partir de la **déboguer** menu, cliquez sur **continuer**, **étape**, ou **définir l’instruction suivante** ou évaluez une fonction dans une fenêtre du débogueur.  
   
-     Le nouveau code est compilé et le débogage se poursuit avec le nouveau code. Certaines modifications ne sont pas pris en charge par Modifier & Continuer. Pour plus d’informations, consultez [les modifications de Code prises en charge (c#)](../debugger/supported-code-changes-csharp.md).  
+     Le nouveau code est compilé et le débogage se poursuit avec le nouveau code. Certaines modifications ne sont pas pris en charge par Modifier & Continuer. Pour plus d’informations, consultez [les modifications de Code prises en charge (C#)](../debugger/supported-code-changes-csharp.md).  
   
 ### <a name="to-enabledisable-edit-and-continue"></a>Pour activer ou désactiver Modifier &amp; Continuer  
   
@@ -53,5 +53,5 @@ Avec Modifier &amp; Continuer pour C#, vous pouvez modifier votre code en mode a
   
 ## <a name="see-also"></a>Voir aussi  
  [Modifier & Continuer (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
- [Modifications de Code prises en charge (c#)](../debugger/supported-code-changes-csharp.md)   
+ [Modifications de Code prises en charge (C#)](../debugger/supported-code-changes-csharp.md)   
  [Erreurs et avertissements de Modifier & Continuer (C#)](../misc/edit-and-continue-errors-and-warnings-csharp.md)

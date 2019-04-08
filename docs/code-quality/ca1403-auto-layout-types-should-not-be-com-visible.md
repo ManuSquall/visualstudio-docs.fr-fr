@@ -39,7 +39,7 @@ Un type de valeur visible du composant COM (Object Model) est marqué avec le <x
 
 ## <a name="rule-description"></a>Description de la règle
 
-<xref:System.Runtime.InteropServices.LayoutKind> les types de disposition sont gérés par le common language runtime. La disposition de ces types peut varier entre les versions du .NET Framework, ce qui interrompt les clients COM qui attendent une disposition spécifique. Si le <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribut n’est pas spécifié, les compilateurs c#, Visual Basic et C++ spécifient [valeur LayoutKind.Auto](<xref:System.Runtime.InteropServices.LayoutKind.Auto>) pour les types valeur.
+<xref:System.Runtime.InteropServices.LayoutKind> les types de disposition sont gérés par le common language runtime. La disposition de ces types peut varier entre les versions du .NET Framework, ce qui interrompt les clients COM qui attendent une disposition spécifique. Si le <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribut n’est pas spécifié, les compilateurs C#, Visual Basic et C++ spécifient [valeur LayoutKind.Auto](<xref:System.Runtime.InteropServices.LayoutKind.Auto>) pour les types valeur.
 
 Sauf mention contraire, tous les types publics, non génériques sont visibles par COM, et tous les types non publics et génériques ne sont pas visibles par COM. Toutefois, pour réduire les faux positifs, cette règle requiert que la visibilité COM du type d’être explicitement spécifié. L’assembly conteneur doit être marqué avec le <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> définie sur `false` et le type doit être marqué avec le <xref:System.Runtime.InteropServices.ComVisibleAttribute> défini sur `true`.
 

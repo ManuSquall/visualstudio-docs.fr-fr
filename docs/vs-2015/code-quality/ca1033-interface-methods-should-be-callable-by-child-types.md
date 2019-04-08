@@ -36,7 +36,7 @@ ms.locfileid: "58938494"
  Un type unsealed visible de l'extérieur fournit une implémentation de méthode explicite d'une interface publique mais ne fournit aucune méthode de substitution visible de l'extérieur de même nom.
 
 ## <a name="rule-description"></a>Description de la règle
- Envisagez un type de base qui implémente explicitement une méthode d’interface publique. Un type qui dérive du type de base peut accéder à la méthode d’interface héritée uniquement par le biais d’une référence à l’instance actuelle (`this` dans c#) qui est converti dans l’interface. Si le type dérivé ré-implémente (explicitement) la méthode d’interface héritée, l’implémentation de base n’est plus est accessible. L’appel de la référence d’instance actuelle appelle l’implémentation dérivée ; Cela provoque la récursivité et un dépassement de capacité de pile.
+ Envisagez un type de base qui implémente explicitement une méthode d’interface publique. Un type qui dérive du type de base peut accéder à la méthode d’interface héritée uniquement par le biais d’une référence à l’instance actuelle (`this` dans C#) qui est converti dans l’interface. Si le type dérivé ré-implémente (explicitement) la méthode d’interface héritée, l’implémentation de base n’est plus est accessible. L’appel de la référence d’instance actuelle appelle l’implémentation dérivée ; Cela provoque la récursivité et un dépassement de capacité de pile.
 
  Cette règle ne signale pas d’une violation pour une implémentation explicite de <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> lorsque extérieurement visible `Close()` ou `System.IDisposable.Dispose(Boolean)` méthode est fournie.
 

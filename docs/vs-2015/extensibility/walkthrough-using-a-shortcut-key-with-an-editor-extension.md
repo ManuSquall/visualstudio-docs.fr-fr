@@ -27,7 +27,7 @@ Vous pouvez répondre aux touches de raccourci dans votre extension de l’édit
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Création d’un projet Managed Extensibility Framework (MEF)  
   
-1. Créez un projet c# VSIX. (Dans le **nouveau projet** boîte de dialogue, sélectionnez **Visual c# / extensibilité**, puis **projet VSIX**.) Nommez la solution `KeyBindingTest`.  
+1. Créez un projet C# VSIX. (Dans le **nouveau projet** boîte de dialogue, sélectionnez **Visual C# / extensibilité**, puis **projet VSIX**.) Nommez la solution `KeyBindingTest`.  
   
 2. Ajouter un modèle d’élément ornement de texte de l’éditeur au projet et nommez-le `KeyBindingTest`. Pour plus d’informations, consultez [création d’une Extension avec un éditeur de modèle d’élément](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   

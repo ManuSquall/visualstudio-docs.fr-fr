@@ -52,7 +52,7 @@ ms.locfileid: "58952849"
   
 - Pour plus d’informations sur les fonctionnalités des types de projets, consultez les rubriques suivantes :  
   
-- Types de projets sont des objets dans un VSPackage qui implémentent l’ensemble des interfaces [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] attend. Si vous utilisez c# pour développer un type de projet, les classes de projet Managed Package Framework implémentent les interfaces nécessaires pour vous et vous permettent d’hériter de cette implémentation. Pour plus d’informations, consultez [à l’aide de Managed Package Framework pour implémenter un Type de projet (c#)](../../extensibility/internals/using-the-managed-package-framework-to-implement-a-project-type-csharp.md).  
+- Types de projets sont des objets dans un VSPackage qui implémentent l’ensemble des interfaces [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] attend. Si vous utilisez C# pour développer un type de projet, les classes de projet Managed Package Framework implémentent les interfaces nécessaires pour vous et vous permettent d’hériter de cette implémentation. Pour plus d’informations, consultez [à l’aide de Managed Package Framework pour implémenter un Type de projet (C#)](../../extensibility/internals/using-the-managed-package-framework-to-implement-a-project-type-csharp.md).  
   
 - Pour les développeurs C++, les classes dans la bibliothèque HierUtil fonctionnent de manière similaire. Pour plus d’informations, consultez [pas dans la génération : À l’aide des Classes de projet HierUtil7 pour implémenter un Type de projet (C++)](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
   

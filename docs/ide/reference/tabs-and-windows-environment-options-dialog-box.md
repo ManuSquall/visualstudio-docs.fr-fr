@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fcc961a478d3e23c7a8dcf06805505b6c437ed9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 339f6477395bf8d91618298bc1618132d76b3794
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924667"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647178"
 ---
-# <a name="tabs-and-windows-environment-options-dialog-box"></a>Onglets et fenêtres, Environnement, boîte de dialogue Options
+# <a name="options-dialog-box-environment--tabs-and-windows"></a>Boîte de dialogue Options : Environnement \> Onglets et fenêtres
 
-Utilisez cette page pour définir les options selon lesquelles les fenêtres à onglets se comportent dans le volet de l'éditeur, et comment les fenêtres des outils se comportent. Pour plus d’informations, consultez [Personnaliser des dispositions de fenêtres dans Visual Studio](../../ide/customizing-window-layouts-in-visual-studio.md)
+Utilisez cette page pour définir les options permettant de déterminer le comportement des fenêtres à onglets dans le volet de l’éditeur, ainsi que des fenêtres Outil. Pour plus d’informations, consultez [Personnaliser des dispositions de fenêtres dans Visual Studio](../../ide/customizing-window-layouts-in-visual-studio.md)
 
 ### <a name="see-also"></a>Voir aussi
 

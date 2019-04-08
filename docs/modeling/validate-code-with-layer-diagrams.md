@@ -46,7 +46,7 @@ Pour vous assurer que le code n’entre en conflit avec sa conception, validez v
 
 - Visual Studio
 
-- Une solution qui a un projet de modélisation avec un diagramme de dépendances. Ce diagramme de dépendance doit être lié aux artefacts dans les projets c# ou Visual Basic que vous souhaitez valider. Consultez [créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md).
+- Une solution qui a un projet de modélisation avec un diagramme de dépendances. Ce diagramme de dépendance doit être lié aux artefacts dans les projets C# ou Visual Basic que vous souhaitez valider. Consultez [créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md).
 
 > [!NOTE]
 > Diagrammes de dépendance ne sont pas pris en charge pour les projets .NET Core dans Visual Studio.
@@ -62,7 +62,7 @@ Vous pouvez valider le code manuellement à partir d’un diagramme de dépendan
 
 Validation de dépendance se produit en temps réel et les erreurs sont affichées immédiatement dans le **liste d’erreurs**.
 
-* Validation en direct est pris en charge pour c# et Visual Basic.
+* Validation en direct est pris en charge pour C# et Visual Basic.
 
 * Pour activer l’analyse complète de la solution lors de l’utilisation de validation des dépendances en direct, ouvrez les paramètres des options à partir de la barre jaune s’affiche dans le **liste d’erreurs**.
 

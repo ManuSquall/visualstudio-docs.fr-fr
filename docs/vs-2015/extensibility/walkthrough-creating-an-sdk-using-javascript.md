@@ -98,7 +98,7 @@ Cette procédure pas à pas explique comment utiliser JavaScript pour créer un 
   
 14. Dans le menu contextuel pour le dossier \js\, choisissez **ajouter**, **un nouvel élément**.  
   
-15. Sous **éléments Visual c#**, sélectionnez le **Web** catégorie, puis sélectionnez le **fichier JavaScript** élément. Nommez le fichier `arithmetic.js`, puis choisissez le **ajouter** bouton.  
+15. Sous **éléments Visual C#**, sélectionnez le **Web** catégorie, puis sélectionnez le **fichier JavaScript** élément. Nommez le fichier `arithmetic.js`, puis choisissez le **ajouter** bouton.  
   
 16. Insérez le code suivant dans arithmetic.js :  
   

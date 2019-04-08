@@ -44,7 +44,7 @@ Créez une carte de code pour effectuer un suivi visuel de la pile des appels pe
 
 - [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)
 
-- Code que vous pouvez déboguer, tels que Visual c#, Visual Basic, C++, JavaScript ou X ++
+- Code que vous pouvez déboguer, tels que Visual C#, Visual Basic, C++, JavaScript ou X ++
 
   Consultez :
 
@@ -89,7 +89,7 @@ Créez une carte de code pour effectuer un suivi visuel de la pile des appels pe
  ![Mettre à jour la carte de code avec la pile d’appels suivante](../debugger/media/debuggermap_addclearcallstack.png)
 
 ## <a name="AddRelatedCode"></a> Ajouter du code associé à la carte
- Vous disposez maintenant une carte - ce qu’ensuite ? Si vous travaillez avec c# ou Visual Basic, ajoutez des éléments, tels que des champs, propriétés et d’autres méthodes, pour effectuer le suivi de ce qui se passe dans le code.
+ Vous disposez maintenant une carte - ce qu’ensuite ? Si vous travaillez avec C# ou Visual Basic, ajoutez des éléments, tels que des champs, propriétés et d’autres méthodes, pour effectuer le suivi de ce qui se passe dans le code.
 
  Double-cliquez sur une méthode pour afficher sa définition de code ou utilisez le menu contextuel pour la méthode. (Clavier : Sélectionnez la méthode sur la carte et appuyez sur **F12**)
 

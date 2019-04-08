@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 485516a92f2b669aa24d6da69653621e07a6c9cd
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 375879e6a6aba93b702c65412328458a9a5568ab
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325092"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790340"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Bien démarrer avec C++ dans Visual Studio
 
@@ -54,7 +54,7 @@ Après avoir ouvert Visual Studio, vous pouvez voir les trois composants de base
 
 Une fois que vous avez ouvert Visual Studio, la fenêtre de démarrage apparaît en premier. Sélectionnez **Continuer sans code** pour ouvrir l’environnement de développement.
 
-Vous allez voir les trois parties de base de l’IDE : les fenêtres Outils, les menus et barres d’outils ainsi que l’espace de la fenêtre principale. Les fenêtres Outil sont ancrées sur les côtés gauche et droit de la fenêtre de l’application. La zone **Lancement rapide**, la barre de menus et la barre d’outils standard sont situées en haut de la fenêtre. Quand vous chargez une solution ou un projet, les éditeurs et les concepteurs apparaissent dans l’espace central de la fenêtre d’application. Quand vous développez une application, vous passez la majeure partie de votre temps dans cette zone centrale.
+Vous allez voir les trois parties de base de l’IDE : les fenêtres Outils, les menus et barres d’outils ainsi que l’espace de la fenêtre principale. Les fenêtres Outil sont ancrées sur les côtés gauche et droit de la fenêtre de l’application. La zone de recherche, la barre de menus et la barre d’outils standard sont en haut. Quand vous chargez une solution ou un projet, les éditeurs et les concepteurs apparaissent dans l’espace central de la fenêtre d’application. Quand vous développez une application, vous passez la majeure partie de votre temps dans cette zone centrale.
 
 ::: moniker-end
 

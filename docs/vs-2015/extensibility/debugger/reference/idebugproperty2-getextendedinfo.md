@@ -53,7 +53,7 @@ int GetExtendedInfo ( 
 ## <a name="remarks"></a>Notes  
  Cette méthode existe à des fins de récupération des informations qui ne se prêtent pas à être récupéré en appelant le [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) (méthode).  
   
- Les GUID suivantes sont généralement reconnus par cette méthode (les valeurs GUID sont spécifiés pour c#, car le nom n’est pas disponible dans n’importe quel assembly). GUID supplémentaires peut être créés pour un usage interne.  
+ Les GUID suivantes sont généralement reconnus par cette méthode (les valeurs GUID sont spécifiés pour C#, car le nom n’est pas disponible dans n’importe quel assembly). GUID supplémentaires peut être créés pour un usage interne.  
   
 |Nom|GUID|Description|  
 |----------|----------|-----------------|  

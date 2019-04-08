@@ -21,7 +21,7 @@ ms.locfileid: "58953119"
 Les compléments sont désormais déconseillés. Pour effectuer une nouvelle extension de Visual Studio, vous devez créer une extension VSIX. Voici les réponses à certaines questions fréquemment posées sur la façon de convertir un complément Visual Studio pour une extension VSIX.  
   
 > [!WARNING]
->  À compter de Visual Studio 2015, pour les projets c# et Visual Basic, vous pouvez utiliser le projet VSIX et ajouter des modèles d’élément pour les commandes de menu, les fenêtres Outil et les VSPackages. Pour plus d’informations, consultez [What ' s New in Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md).  
+>  À compter de Visual Studio 2015, pour les projets C# et Visual Basic, vous pouvez utiliser le projet VSIX et ajouter des modèles d’élément pour les commandes de menu, les fenêtres Outil et les VSPackages. Pour plus d’informations, consultez [What ' s New in Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md).  
   
 > [!IMPORTANT]
 >  Dans de nombreux cas, vous pouvez simplement transférer votre code de complément à un projet VSIX avec un élément de projet VSPackage. Vous pouvez obtenir l'objet automation DTE en appelant <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> dans la méthode <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.  
@@ -44,9 +44,9 @@ Les compléments sont désormais déconseillés. Pour effectuer une nouvelle ext
   
 #### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>Pour créer une extension VSIX qui dispose d’une commande de menu  
   
-1.  Créez un projet VSIX. (**Fichier**, **New**, **projet**, ou type **projet** dans le **lancement rapide** fenêtre). Dans le **nouveau projet** boîte de dialogue, développez **Visual c# / extensibilité** ou **Visual Basic / extensibilité** et sélectionnez **projet VSIX**.) Nommez le projet **TestExtension** et spécifiez un emplacement pour celui-ci.  
+1.  Créez un projet VSIX. (**Fichier**, **New**, **projet**, ou type **projet** dans le **lancement rapide** fenêtre). Dans le **nouveau projet** boîte de dialogue, développez **Visual C# / extensibilité** ou **Visual Basic / extensibilité** et sélectionnez **projet VSIX**.) Nommez le projet **TestExtension** et spécifiez un emplacement pour celui-ci.  
   
-2.  Ajouter un **commande personnalisée** modèle d’élément de projet. (Cliquez sur le nœud de projet dans le **l’Explorateur de solutions** et sélectionnez **Ajouter / nouvel élément**. Dans le **nouveau projet** boîte de dialogue pour Visual c# ou Visual Basic, sélectionnez le **extensibilité** nœud et sélectionnez **commande personnalisée**.)  
+2.  Ajouter un **commande personnalisée** modèle d’élément de projet. (Cliquez sur le nœud de projet dans le **l’Explorateur de solutions** et sélectionnez **Ajouter / nouvel élément**. Dans le **nouveau projet** boîte de dialogue pour Visual C# ou Visual Basic, sélectionnez le **extensibilité** nœud et sélectionnez **commande personnalisée**.)  
   
 3.  Appuyez sur la touche F5 pour exécuter le projet en mode débogage.  
   
@@ -67,7 +67,7 @@ Les compléments sont désormais déconseillés. Pour effectuer une nouvelle ext
   
 1. Créez un VSPackage comportant une commande de menu. (Pour plus d’informations, consultez [création d’une Extension avec une commande de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).)  
   
-2. Ouvrez le fichier contenant la définition du VSPackage. (Dans un projet c#, il a  <em>\<nom de votre projet ></em>Package.cs.)  
+2. Ouvrez le fichier contenant la définition du VSPackage. (Dans un projet C#, il a  <em>\<nom de votre projet ></em>Package.cs.)  
   
 3. Ajoutez les instructions `using` suivantes au fichier :  
   
@@ -161,7 +161,7 @@ Les compléments sont désormais déconseillés. Pour effectuer une nouvelle ext
   
 1. Créer un VSPackage ayant une commande de menu, comme dans le [comment démarrer le développement d’extensions VSIX ?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) section.  
   
-2. Ouvrez le fichier contenant la définition du VSPackage. (Dans un projet c#, il a  <em>\<nom de votre projet ></em>Package.cs.)  
+2. Ouvrez le fichier contenant la définition du VSPackage. (Dans un projet C#, il a  <em>\<nom de votre projet ></em>Package.cs.)  
   
 3. Ajoutez ces instructions `using` :  
   
@@ -209,7 +209,7 @@ Les compléments sont désormais déconseillés. Pour effectuer une nouvelle ext
   
 1. Créer un VSPackage ayant une commande de menu, comme dans le [comment démarrer le développement d’extensions VSIX ?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) section.  
   
-2. Ouvrez le fichier contenant la définition du VSPackage. (Dans un projet c#, il a  <em>\<nom de votre projet ></em>Package.cs.)  
+2. Ouvrez le fichier contenant la définition du VSPackage. (Dans un projet C#, il a  <em>\<nom de votre projet ></em>Package.cs.)  
   
 3. Ajoutez ces instructions `using` :  
   

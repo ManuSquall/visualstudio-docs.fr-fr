@@ -43,7 +43,7 @@ Info Express est une fonctionnalité IntelliSense qui affiche les signatures de 
   
 #### <a name="to-create-a-mef-project"></a>Pour créer un projet MEF  
   
-1.  Créez un projet c# VSIX. (Dans le **nouveau projet** boîte de dialogue, sélectionnez **Visual c# / extensibilité**, puis **projet VSIX**.) Nommez la solution `QuickInfoTest`.  
+1.  Créez un projet C# VSIX. (Dans le **nouveau projet** boîte de dialogue, sélectionnez **Visual C# / extensibilité**, puis **projet VSIX**.) Nommez la solution `QuickInfoTest`.  
   
 2.  Ajouter un modèle d’élément de classifieur d’éditeur au projet. Pour plus d’informations, consultez [création d’une Extension avec un éditeur de modèle d’élément](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   

@@ -32,7 +32,7 @@ Il peut parfois être utile apporter des modifications à un modèle dans un thr
   
 #### <a name="to-run-the-example"></a>Pour exécuter l'exemple  
   
-1. Créez un gestionnaire de commandes dans un projet c#, comme décrit dans [définir une commande de menu sur un diagramme de modélisation](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
+1. Créez un gestionnaire de commandes dans un projet C#, comme décrit dans [définir une commande de menu sur un diagramme de modélisation](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
   
 2. Assurez-vous que le projet comprend des références aux assemblys suivants :  
   

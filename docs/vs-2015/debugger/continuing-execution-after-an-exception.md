@@ -39,7 +39,7 @@ ms.locfileid: "58950535"
 # <a name="continuing-execution-after-an-exception"></a>Poursuite de l'exécution à la suite d'une exception
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Lorsque le débogueur arrête l'exécution à cause d'une exception, une boîte de dialogue apparaît. Pour Visual Basic ou c#, vous verrez la [Assistant Exception](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb) boîte de dialogue, par défaut. Pour C++, vous verrez l’ancien **Exception** boîte de dialogue. Si vous utilisez Visual Basic ou c# mais que vous avez désactivé la **Assistant Exception** dans le **Options** boîte de dialogue, vous verrez la **Exception** boîte de dialogue.  
+Lorsque le débogueur arrête l'exécution à cause d'une exception, une boîte de dialogue apparaît. Pour Visual Basic ou C#, vous verrez la [Assistant Exception](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb) boîte de dialogue, par défaut. Pour C++, vous verrez l’ancien **Exception** boîte de dialogue. Si vous utilisez Visual Basic ou C# mais que vous avez désactivé la **Assistant Exception** dans le **Options** boîte de dialogue, vous verrez la **Exception** boîte de dialogue.  
   
  Lorsque le **Assistant Exception** ou **Exception** boîte de dialogue s’affiche, vous pouvez essayer de résoudre le problème qui a provoqué l’exception.  
   

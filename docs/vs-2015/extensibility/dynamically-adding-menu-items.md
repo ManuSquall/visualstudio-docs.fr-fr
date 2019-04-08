@@ -144,7 +144,7 @@ Vous pouvez ajouter des éléments de menu au moment de l’exécution en spéci
 ## <a name="implementing-the-dynamic-menu-command"></a>Implémentation de la commande de menu dynamique  
  Vous créez une classe de commande de menu dynamique qui hérite de <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>. Dans cette implémentation, le constructeur spécifie un prédicat à utiliser pour la correspondance des commandes. Vous devez substituer la <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A> méthode à utiliser ce prédicat pour définir le <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A> propriété, qui identifie la commande à appeler.  
   
-1.  Créer un nouveau fichier de classe c# nommé DynamicItemMenuCommand.cs, et ajoutez une classe nommée **DynamicItemMenuCommand** qui hérite de <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>:  
+1.  Créer un nouveau fichier de classe C# nommé DynamicItemMenuCommand.cs, et ajoutez une classe nommée **DynamicItemMenuCommand** qui hérite de <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>:  
   
     ```csharp  
     class DynamicItemMenuCommand : OleMenuCommand  

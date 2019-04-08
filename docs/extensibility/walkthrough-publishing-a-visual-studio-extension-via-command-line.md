@@ -200,7 +200,7 @@ Pour suivre cette procédure pas à pas, vous devez installer le Kit de dévelop
 
 Dans ce cas, nous allons utiliser une extension de package Visual Studio par défaut, mais les mêmes étapes sont valides pour chaque type d’extension.
 
-1. Créer un VSPackage en c# nommé « TestPublish » qui comporte une commande de menu. Pour plus d’informations, consultez [créer votre première Extension : Hello World](../extensibility/extensibility-hello-world.md).
+1. Créer un VSPackage en C# nommé « TestPublish » qui comporte une commande de menu. Pour plus d’informations, consultez [créer votre première Extension : Hello World](../extensibility/extensibility-hello-world.md).
 
 ### <a name="package-your-extension"></a>Votre extension de package
 

@@ -51,7 +51,7 @@ Pour démarrer le débogage d'un projet de DLL, vous devez spécifier l'applicat
   
 6.  Ajoutez les arguments nécessaires du programme à la zone **Arguments de la commande**.  
   
-### <a name="to-specify-the-calling-application-in-a-c-or-visual-basic-project"></a>Pour spécifier l'application appelante dans un projet C# ou Visual basic  
+### <a name="to-specify-the-calling-application-in-a-c-or-visual-basic-project"></a>Pour spécifier l'application appelante dans un projet C# ou Visual Basic  
   
 1.  Cliquez sur le nœud de projet dans le **l’Explorateur de solutions** et sélectionnez **propriétés**. Accédez à la **déboguer** onglet.  
   

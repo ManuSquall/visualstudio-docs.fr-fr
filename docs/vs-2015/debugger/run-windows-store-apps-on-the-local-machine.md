@@ -46,7 +46,7 @@ S’applique uniquement à Windows] (.. /Image/windows_only_content.png « wind
   
  Vous pouvez aussi définir directement la cible d'exécution dans le fichier des propriétés du projet. Cliquez sur le nom de projet dans **l’Explorateur de solutions** , puis **propriétés**. Effectuez ensuite l'une des opérations suivantes :  
   
--   Dans les projets c# et Visual Basic, cliquez sur **déboguer** , puis sélectionnez **ordinateur Local** à partir de la **appareil cible** liste déroulante.  
+-   Dans les projets C# et Visual Basic, cliquez sur **déboguer** , puis sélectionnez **ordinateur Local** à partir de la **appareil cible** liste déroulante.  
   
      ![C&#35; et page de propriétés de projet Visual Basic](../debugger/media/vsrun-cs-vb-projprop-local.png "VSRUN_CS_VB_ProjProp_Local")  
   

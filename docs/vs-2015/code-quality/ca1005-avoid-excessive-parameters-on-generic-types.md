@@ -36,7 +36,7 @@ ms.locfileid: "58949703"
  Un type générique extérieurement visible a plus de deux paramètres de type.
 
 ## <a name="rule-description"></a>Description de la règle
- Plus un type générique contient de paramètres de type, plus il est difficile de déterminer et de mémoriser la représentation de chaque paramètre de type. Il est généralement évident avec un paramètre de type, comme dans `List<T>`et dans certains cas avec deux paramètres de type, comme dans `Dictionary<TKey, TValue>`. Si plus de deux paramètres de type existent, la difficulté devient trop grande pour la plupart des utilisateurs (par exemple, `TooManyTypeParameters<T, K, V>` en c# ou `TooManyTypeParameters(Of T, K, V)` dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).
+ Plus un type générique contient de paramètres de type, plus il est difficile de déterminer et de mémoriser la représentation de chaque paramètre de type. Il est généralement évident avec un paramètre de type, comme dans `List<T>`et dans certains cas avec deux paramètres de type, comme dans `Dictionary<TKey, TValue>`. Si plus de deux paramètres de type existent, la difficulté devient trop grande pour la plupart des utilisateurs (par exemple, `TooManyTypeParameters<T, K, V>` en C# ou `TooManyTypeParameters(Of T, K, V)` dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, modifiez le design pour utiliser pas plus de deux paramètres de type.

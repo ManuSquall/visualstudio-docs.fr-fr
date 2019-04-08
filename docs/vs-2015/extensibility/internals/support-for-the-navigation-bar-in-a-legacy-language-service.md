@@ -29,7 +29,7 @@ La barre de Navigation en haut de la vue de l’éditeur affiche les types et me
  Lorsque le point d’insertion se déplace, le <xref:Microsoft.VisualStudio.Package.LanguageService.OnIdle%2A> les appels de méthode le <xref:Microsoft.VisualStudio.Package.LanguageService.OnCaretMoved%2A> (méthode). La base de <xref:Microsoft.VisualStudio.Package.LanguageService.OnCaretMoved%2A> les appels de méthode le <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> méthode dans votre <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> classe pour mettre à jour l’état de la barre de Navigation. Passer d’un ensemble de <xref:Microsoft.VisualStudio.Package.DropDownMember> objets à cette méthode. Chaque objet représente une entrée dans la liste déroulante.  
   
 ## <a name="the-contents-of-the-navigation-bar"></a>Le contenu de la barre de Navigation  
- La barre de Navigation contient généralement une liste de types et une liste de membres. La liste des types inclut tous les types disponibles dans le fichier source actuel. Les noms de type incluent les informations de l’espace de noms complet. Voici un exemple de code c# avec deux types :  
+ La barre de Navigation contient généralement une liste de types et une liste de membres. La liste des types inclut tous les types disponibles dans le fichier source actuel. Les noms de type incluent les informations de l’espace de noms complet. Voici un exemple de code C# avec deux types :  
   
 ```csharp  
 namespace TestLanguagePackage  

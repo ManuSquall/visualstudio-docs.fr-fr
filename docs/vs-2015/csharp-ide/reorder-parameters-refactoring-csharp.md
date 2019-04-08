@@ -1,5 +1,5 @@
 ---
-title: Réorganiser les paramètres (refactorisation c#) | Microsoft Docs
+title: Réorganiser les paramètres (refactorisation C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -26,7 +26,7 @@ ms.locfileid: "58951371"
 # <a name="reorder-parameters-refactoring-c"></a>Réorganisation de la refactorisation de paramètres (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`Reorder Parameters` est un Visual c# opération de refactorisation qui offre un moyen facile pour modifier l’ordre des paramètres pour les méthodes, indexeurs et délégués. `Reorder Parameters` Modifie la déclaration, et à tous les emplacements où le membre est appelé, les paramètres sont réorganisés pour refléter le nouvel ordre.  
+`Reorder Parameters` est un Visual C# opération de refactorisation qui offre un moyen facile pour modifier l’ordre des paramètres pour les méthodes, indexeurs et délégués. `Reorder Parameters` Modifie la déclaration, et à tous les emplacements où le membre est appelé, les paramètres sont réorganisés pour refléter le nouvel ordre.  
   
  Pour effectuer le `Reorder Parameters` opération, placez le curseur sur ou en regard d’une méthode, un indexeur ou un délégué. Lorsque le curseur est en position, appelez le `Reorder Parameters` opération en appuyant sur le raccourci clavier, ou en cliquant sur la commande dans le menu contextuel.  
   

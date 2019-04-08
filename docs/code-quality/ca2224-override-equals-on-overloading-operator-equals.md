@@ -39,7 +39,7 @@ Un type public implémente l’opérateur d’égalité, mais ne remplace pas <x
 
 L’opérateur d’égalité est destinée à être un point de vue syntaxique pour accéder facilement les fonctionnalités de la <xref:System.Object.Equals%2A> (méthode). Si vous implémentez l’opérateur d’égalité, sa logique doit être identique à celle de <xref:System.Object.Equals%2A>.
 
-Le compilateur c# émet un avertissement si votre code ne respecte pas cette règle.
+Le compilateur C# émet un avertissement si votre code ne respecte pas cette règle.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 

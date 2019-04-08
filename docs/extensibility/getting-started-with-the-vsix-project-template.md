@@ -19,7 +19,7 @@ ms.locfileid: "58194319"
 ---
 # <a name="get-started-with-the-vsix-project-template"></a>Bien démarrer avec le modèle de projet VSIX
 
-Vous pouvez utiliser le modèle de projet VSIX pour créer une extension ou un package existant d’extension pour le déploiement. Le modèle de projet VSIX a des versions de Visual Basic et Visual c# et est installé dans le cadre du SDK Visual Studio.
+Vous pouvez utiliser le modèle de projet VSIX pour créer une extension ou un package existant d’extension pour le déploiement. Le modèle de projet VSIX a des versions de Visual Basic et Visual C# et est installé dans le cadre du SDK Visual Studio.
 
  Le modèle de projet VSIX consiste en un *source.extension.vsixmanifest* fichier qui contient des informations sur l’extension et les ressources qu’il est fourni.
 

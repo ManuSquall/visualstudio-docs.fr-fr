@@ -29,7 +29,7 @@ Lorsque Visual Studio détecte une condition de mémoire insuffisante, il suspen
 
 Dans une condition de mémoire insuffisante, les actions suivantes se produisent :
 
-- Analyse de la solution complète pour Visual c# et Visual Basic est désactivée.
+- Analyse de la solution complète pour Visual C# et Visual Basic est désactivée.
 
 - [Le Garbage Collection](/dotnet/standard/garbage-collection/index) mode de faible latence (GC) pour Visual C# et Visual Basic est désactivée.
 
@@ -41,7 +41,7 @@ Pour des conseils et astuces sur la façon d’améliorer les performances de Vi
 
 ## <a name="full-solution-analysis-suspended"></a>Analyse complète de la solution suspendu
 
-Par défaut, l’analyse complète de la solution est activée pour Visual Basic et désactivée pour Visual c#. Toutefois, dans une condition de mémoire insuffisante, analyse complète de la solution est automatiquement désactivé pour Visual Basic et Visual c#, quels que soient leurs paramètres dans la boîte de dialogue Options. Toutefois, vous pouvez réactiver l’analyse complète de la solution en choisissant le **réactiver** bouton dans les informations de la barre quand il s’affiche, en sélectionnant le **activer l’analyse complète de la solution** case à cocher dans la boîte de dialogue Options, ou en le redémarrage de Visual Studio. Paramètres d’analyse, la boîte de dialogue Options affiche toujours la solution complète en cours. Pour plus d'informations, voir [Procédure : Activer et désactiver l’analyse complète de la Solution](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
+Par défaut, l’analyse complète de la solution est activée pour Visual Basic et désactivée pour Visual C#. Toutefois, dans une condition de mémoire insuffisante, analyse complète de la solution est automatiquement désactivé pour Visual Basic et Visual C#, quels que soient leurs paramètres dans la boîte de dialogue Options. Toutefois, vous pouvez réactiver l’analyse complète de la solution en choisissant le **réactiver** bouton dans les informations de la barre quand il s’affiche, en sélectionnant le **activer l’analyse complète de la solution** case à cocher dans la boîte de dialogue Options, ou en le redémarrage de Visual Studio. Paramètres d’analyse, la boîte de dialogue Options affiche toujours la solution complète en cours. Pour plus d'informations, voir [Procédure : Activer et désactiver l’analyse complète de la Solution](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
 
 ## <a name="gc-low-latency-disabled"></a>GC à faible latence désactivée
 
@@ -60,7 +60,7 @@ Si vous continuez votre session en cours de développement ou redémarrez Visual
 En outre, les caches utilisés pour les opérations internes de Visual Studio sont également désactivées.
 
 > [!NOTE]
-> L’avertissement de suspension de fonctionnalité automatique se produit qu’une seule fois sur une base par solution, pas sur une base par session. Cela signifie que si vous basculez à partir de Visual Basic vers Visual c# (ou vice versa) et que vous rencontrez une autre condition de mémoire insuffisante, vous pouvez éventuellement obtenir un autre avertissement de suspension de fonctionnalité automatique.
+> L’avertissement de suspension de fonctionnalité automatique se produit qu’une seule fois sur une base par solution, pas sur une base par session. Cela signifie que si vous basculez à partir de Visual Basic vers Visual C# (ou vice versa) et que vous rencontrez une autre condition de mémoire insuffisante, vous pouvez éventuellement obtenir un autre avertissement de suspension de fonctionnalité automatique.
 
 ## <a name="see-also"></a>Voir aussi
 

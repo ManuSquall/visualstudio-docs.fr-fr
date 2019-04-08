@@ -1,5 +1,5 @@
 ---
-title: Prise en charge des modifications de Code (c#) | Microsoft Docs
+title: Prise en charge des modifications de Code (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug

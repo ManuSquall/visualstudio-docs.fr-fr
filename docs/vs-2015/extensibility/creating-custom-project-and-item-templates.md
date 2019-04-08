@@ -29,7 +29,7 @@ Pour les scénarios de création de modèle de base, vous devez utiliser le **Ex
 
 ## <a name="create-a-project-template"></a>Créer un modèle de projet
 
-1.  Créez un projet de modèle de projet. Vous pouvez trouver le modèle de projet dans le **nouveau projet** boîte de dialogue, dans Visual Basic ou Visual c# **extensibilité** dossier.
+1.  Créez un projet de modèle de projet. Vous pouvez trouver le modèle de projet dans le **nouveau projet** boîte de dialogue, dans Visual Basic ou Visual C# **extensibilité** dossier.
 
      Le modèle génère un fichier de classe, une icône, un fichier .vstemplate, un fichier de projet modifiable nommé ProjectTemplate.vbproj ou ProjectTemplate.csproj et certains fichiers qui sont généralement générés par d’autres types de projet, un tel fichier resources.resx, un AssemblyInfo fichier et un fichier .settings. Chaque fichier de code contient des substitutions de paramètre commun le cas échéant.
 
@@ -77,7 +77,7 @@ Pour les scénarios de création de modèle de base, vous devez utiliser le **Ex
 
 4.  Générez la solution, puis appuyez sur F5. L’instance expérimentale s’affiche.
 
-5.  Pour un projet de modèle de projet, vous devez voir votre modèle de projet répertorié dans le **nouveau projet** boîte de dialogue (**fichier / nouveau / projet**), dans le nœud Visual Basic ou Visual c#. Pour un projet de modèle d’élément, vous devez voir votre modèle d’élément répertoriée dans la boîte de dialogue Ajouter un nouvel élément (dans le **l’Explorateur de solutions**, sélectionnez le nœud du projet, puis cliquez sur **Ajouter / nouvel élément**).
+5.  Pour un projet de modèle de projet, vous devez voir votre modèle de projet répertorié dans le **nouveau projet** boîte de dialogue (**fichier / nouveau / projet**), dans le nœud Visual Basic ou Visual C#. Pour un projet de modèle d’élément, vous devez voir votre modèle d’élément répertoriée dans la boîte de dialogue Ajouter un nouvel élément (dans le **l’Explorateur de solutions**, sélectionnez le nœud du projet, puis cliquez sur **Ajouter / nouvel élément**).
 
 ## <a name="see-also"></a>Voir aussi
 

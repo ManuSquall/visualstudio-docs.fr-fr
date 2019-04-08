@@ -21,7 +21,7 @@ ms.locfileid: "58948273"
 # <a name="new-project-generation-under-the-hood-part-two"></a>Nouvelle génération de projet : Rouages du système, seconde partie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Dans [nouvelle génération de projet : En coulisses, une partie](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) nous l’avons vu comment le **nouveau projet** boîte de dialogue boîte est remplie. Supposons que vous avez sélectionné un **Application Windows Visual c#**, renseigné le **nom** et **emplacement** zones de texte et cliquer sur OK.  
+Dans [nouvelle génération de projet : En coulisses, une partie](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) nous l’avons vu comment le **nouveau projet** boîte de dialogue boîte est remplie. Supposons que vous avez sélectionné un **Application Windows Visual C#**, renseigné le **nom** et **emplacement** zones de texte et cliquer sur OK.  
   
 ## <a name="generating-the-solution-files"></a>Génération des fichiers de Solution  
  Choix d’un modèle d’application dirige [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] à décompresser et ouvrir le fichier .vstemplate correspondant et de lancer un modèle pour interpréter les commandes XML dans ce fichier. Ces commandes créent des projets et éléments de projet dans la solution nouvelle ou existante.  

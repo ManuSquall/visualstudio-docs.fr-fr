@@ -94,7 +94,7 @@ devenv /installvstemplates
   
  DeveloperActivity REG_SZVC#  
   
- Indique que Visual c# est un nœud racine si Visual Studio est configuré pour [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] développement. Sinon, il sera un nœud enfant du **autres langages**.  
+ Indique que Visual C# est un nœud racine si Visual Studio est configuré pour [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] développement. Sinon, il sera un nœud enfant du **autres langages**.  
   
 ##### <a name="folder"></a>Dossier  
  Si cette sous-clé est présente, le nœud racine devienne un nœud enfant du dossier spécifié. Une liste de dossiers possibles s’affiche sous la clé  
@@ -106,7 +106,7 @@ devenv /installvstemplates
 #### <a name="project-type-child-nodes-and-vstdir-files"></a>Nœuds enfants de Type projet et les fichiers .vstdir  
  La position des nœuds enfants dans le **types de projets** arborescence suit la hiérarchie des dossiers dans les dossiers ProjectTemplates. Pour les modèles d’ordinateur (**modèles Visual Studio installés**), l’emplacement par défaut est \Program Files\Microsoft Visual Studio 14.0\Common7\IDE\ProjectTemplates\ et des modèles utilisateur (**Mes modèles**), l’emplacement par défaut est documents\Visual Studio 14.0\Templates\ProjectTemplates\\. Les hiérarchies de dossiers à partir de ces deux emplacements sont fusionnés pour créer le **types de projets** arborescence.  
   
- Pour Visual Studio avec des paramètres de développeur c#, le **types de projets** arborescence ressemble à ceci :  
+ Pour Visual Studio avec des paramètres de développeur C#, le **types de projets** arborescence ressemble à ceci :  
   
  ![Types de projets](../../extensibility/internals/media/projecttypes.png "ProjectTypes")  
   

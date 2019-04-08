@@ -130,7 +130,7 @@ Vous pouvez configurer des applications ClickOnce à mettre à jour automatiquem
        > [!NOTE]
        >  La désactivation de l’infrastructure d’application désactive les fonctionnalités telles que les styles visuels Windows XP, les événements d’application, l’écran de démarrage, application à instance unique et bien plus encore. Pour plus d’informations, consultez [Page Application, Concepteur de projets (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
   
-       Pour les développeurs Visual c# uniquement :  
+       Pour les développeurs Visual C# uniquement :  
   
        Ouvrez le fichier de code Program.cs et ajoutez le code suivant.  
   

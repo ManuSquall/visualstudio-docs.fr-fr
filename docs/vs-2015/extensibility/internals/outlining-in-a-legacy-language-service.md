@@ -22,7 +22,7 @@ ms.locfileid: "58949060"
 # <a name="outlining-in-a-legacy-language-service"></a>Mode Plan dans un service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Le mode plan permet de réduire un programme complexe dans une vue d’ensemble ou un plan. Par exemple, en c#, toutes les méthodes peuvent être réduits en une seule ligne, en affichant uniquement la signature de méthode. En outre, les structures et les classes peuvent être réduites pour afficher uniquement les noms des classes et structures. À l’intérieur d’une méthode unique, une logique complexe peut être réduite pour afficher le flux global en affichant uniquement la première ligne des instructions telles que `foreach`, `if`, et `while`.  
+Le mode plan permet de réduire un programme complexe dans une vue d’ensemble ou un plan. Par exemple, en C#, toutes les méthodes peuvent être réduits en une seule ligne, en affichant uniquement la signature de méthode. En outre, les structures et les classes peuvent être réduites pour afficher uniquement les noms des classes et structures. À l’intérieur d’une méthode unique, une logique complexe peut être réduite pour afficher le flux global en affichant uniquement la première ligne des instructions telles que `foreach`, `if`, et `while`.  
   
  Services de langage hérité sont implémentés en tant que partie d’un VSPackage, mais la plus récente pour implémenter des fonctionnalités de service de langage consiste à utiliser des extensions MEF. Pour plus d’informations, consultez [procédure pas à pas : Mode Plan](../../extensibility/walkthrough-outlining.md).  
   
@@ -35,7 +35,7 @@ Le mode plan permet de réduire un programme complexe dans une vue d’ensemble 
  La valeur de la `AutoOutlining` entrée de Registre peut être obtenue via la <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> propriété sur le <xref:Microsoft.VisualStudio.Package.LanguagePreferences> classe. Le `AutoOutlining` entrée de Registre peut être initialisée avec un paramètre nommé pour le <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> attribut (voir [l’inscription d’un Service de langage hérité](../../extensibility/internals/registering-a-legacy-language-service1.md) pour plus d’informations).  
   
 ## <a name="the-hidden-region"></a>La zone masquée  
- Pour fournir le mode plan, votre service de langage doit prendre en charge les zones masquées. Il s’agit des étendues de texte qui peut être développée ou réduite. Les zones masquées peuvent être délimités par des symboles de langage standard, tels que des accolades, ou par des symboles personnalisés. Par exemple, c# a un `#region` / `#endregion` paire qui délimite une zone masquée.  
+ Pour fournir le mode plan, votre service de langage doit prendre en charge les zones masquées. Il s’agit des étendues de texte qui peut être développée ou réduite. Les zones masquées peuvent être délimités par des symboles de langage standard, tels que des accolades, ou par des symboles personnalisés. Par exemple, C# a un `#region` / `#endregion` paire qui délimite une zone masquée.  
   
  Les zones masquées sont gérés par un gestionnaire de zone masquée, qui est exposé en tant que le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> interface.  
   
@@ -48,7 +48,7 @@ Le mode plan permet de réduire un programme complexe dans une vue d’ensemble 
 ### <a name="example"></a>Exemple  
  Voici un exemple simplifié de la création de zones masquées pour toutes les paires d’accolades. Il est supposé que le langage fournit la correspondance des accolades, ainsi que les accolades à mettre en correspondance inclure au moins les accolades ({et}). Cette approche est uniquement à des fins d’illustration. Une implémentation complète aurait une gestion complète des cas dans <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>. Cet exemple montre également comment définir le <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> préférence aux `true` temporairement. Une alternative consiste à spécifier le `AutoOutlining` nommé de paramètre dans le `ProvideLanguageServiceAttribute` attribut dans votre package de langage.  
   
- Cet exemple part du principe que les règles c# pour les commentaires, chaînes et littéraux.  
+ Cet exemple part du principe que les règles C# pour les commentaires, chaînes et littéraux.  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  

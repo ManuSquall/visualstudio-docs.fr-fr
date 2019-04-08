@@ -36,7 +36,7 @@ ms.locfileid: "58950016"
 # <a name="walkthrough-debugging-a-windows-form"></a>Procédure pas à pas : débogage d’un Windows Form
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Un formulaire Windows est une des applications managées plus courantes. Un formulaire Windows crée une application Windows standard. Vous pouvez effectuer cette procédure pas à pas à l’aide de Visual Basic, c# ou C++.  
+Un formulaire Windows est une des applications managées plus courantes. Un formulaire Windows crée une application Windows standard. Vous pouvez effectuer cette procédure pas à pas à l’aide de Visual Basic, C# ou C++.  
   
  Tout d’abord, vous devez fermer les solutions ouvertes.  
   
@@ -55,7 +55,7 @@ Un formulaire Windows est une des applications managées plus courantes. Un form
   
 2.  Dans le volet Types de projets, ouvrez le **Visual Basic**, **Visual C#**, ou **Visual C++** nœud, puis  
   
-    1.  Pour Visual Basic ou Visual c#, sélectionnez le **Windows** nœud, puis sélectionnez **Application de formulaire Windows** dans le **modèles** volet.  
+    1.  Pour Visual Basic ou Visual C#, sélectionnez le **Windows** nœud, puis sélectionnez **Application de formulaire Windows** dans le **modèles** volet.  
   
     2.  Pour Visual C++, sélectionnez le **CLR** nœud, puis sélectionnez **Application de formulaire Windows** dans le **modèles** volet...  
   
@@ -129,7 +129,7 @@ Un formulaire Windows est une des applications managées plus courantes. Un form
   
 4.  Sur le **déboguer** menu, choisissez **Windows**, puis **espion**, puis cliquez sur **Espion1**.  
   
-5.  Dans le **Espion1** fenêtre, cliquez sur une ligne vide. Dans le **nom** colonne, tapez `textBox1.Text` (si vous utilisez Visual Basic, Visual c# ou J#) ou `textBox1->Text` (si vous utilisez C++), puis appuyez sur ENTRÉE.  
+5.  Dans le **Espion1** fenêtre, cliquez sur une ligne vide. Dans le **nom** colonne, tapez `textBox1.Text` (si vous utilisez Visual Basic, Visual C# ou J#) ou `textBox1->Text` (si vous utilisez C++), puis appuyez sur ENTRÉE.  
   
      Le **Espion1** fenêtre affiche la valeur de cette variable entre guillemets :  
   

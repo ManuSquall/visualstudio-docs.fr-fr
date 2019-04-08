@@ -18,7 +18,7 @@ ms.locfileid: "59001768"
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Procédure pas à pas : Création d’un Kit de développement logiciel (SDK) à l’aide de C# ou de Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dans cette procédure pas à pas, vous allez apprendre à créer un kit de développement de bibliothèque mathématique simple à l’aide de Visual c#, puis d’empaqueter le Kit de développement logiciel en tant qu’une Extension Visual Studio (VSIX). Vous allez effectuer les procédures suivantes :  
+Dans cette procédure pas à pas, vous allez apprendre à créer un kit de développement de bibliothèque mathématique simple à l’aide de Visual C#, puis d’empaqueter le Kit de développement logiciel en tant qu’une Extension Visual Studio (VSIX). Vous allez effectuer les procédures suivantes :  
   
 -   [Pour créer le composant SimpleMath Windows Runtime](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createClassLibrary)  
   

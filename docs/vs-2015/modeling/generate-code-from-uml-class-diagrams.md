@@ -26,7 +26,7 @@ ms.locfileid: "58953864"
 # <a name="generate-code-from-uml-class-diagrams"></a>Générer du code à partir de diagrammes de classes UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Pour générer le code Visual c# .NET à partir de diagrammes de classes UML dans Visual Studio, utilisez le **générer le Code** commande. Par défaut, la commande génère un type C# pour chaque type UML que vous sélectionnez. Vous pouvez modifier et étendre ce comportement en modifiant ou en copiant les modèles de texte qui génèrent le code. Vous pouvez spécifier un comportement distinct pour les types contenus dans les différents packages de votre modèle.  
+Pour générer le code Visual C# .NET à partir de diagrammes de classes UML dans Visual Studio, utilisez le **générer le Code** commande. Par défaut, la commande génère un type C# pour chaque type UML que vous sélectionnez. Vous pouvez modifier et étendre ce comportement en modifiant ou en copiant les modèles de texte qui génèrent le code. Vous pouvez spécifier un comportement distinct pour les types contenus dans les différents packages de votre modèle.  
 
  Le **générer le Code** commande est particulièrement adaptée à la génération de code à partir de la sélection de l’utilisateur d’éléments et à la génération d’un fichier pour chaque classe UML ou un autre élément. Par exemple, la capture d'écran présente deux fichiers C# générés à partir de deux classes UML.  
 
@@ -86,7 +86,7 @@ Pour générer le code Visual c# .NET à partir de diagrammes de classes UML dan
 
   En ajoutant un stéréotype à chaque type UML, vous pouvez contrôler un plus grand nombre de propriétés du type C# généré.  
 
-|**Pour créer ce type c#**|**Dessiner ce type UML**|**Appliquer ce stéréotype**|  
+|**Pour créer ce type C#**|**Dessiner ce type UML**|**Appliquer ce stéréotype**|  
 |---------------------------------|----------------------------|-------------------------------|  
 |Classe|Classe|\<Aucun > ou<br /><br /> C# class|  
 |Interface|Interface|\<Aucun > ou<br /><br /> C# interface|  
@@ -101,7 +101,7 @@ Pour générer le code Visual c# .NET à partir de diagrammes de classes UML dan
 2. Dans le **propriétés** fenêtre, cliquez sur la flèche déroulante dans le **stéréotypes** propriété et sélectionnez la case à cocher pour le stéréotype que vous souhaitez appliquer.  
 
    > [!TIP]
-   >  Si les stéréotypes C# ne s'affichent pas, activez le profil C# pour le modèle ou pour un package qui contient les éléments de modèle auxquels vous vous intéressez. Sélectionnez le package ou la racine du modèle dans **Explorateur de modèles UML**. Ensuite, dans le **propriétés** fenêtre, choisissez **profil**, puis activez le profil c#.  
+   >  Si les stéréotypes C# ne s'affichent pas, activez le profil C# pour le modèle ou pour un package qui contient les éléments de modèle auxquels vous vous intéressez. Sélectionnez le package ou la racine du modèle dans **Explorateur de modèles UML**. Ensuite, dans le **propriétés** fenêtre, choisissez **profil**, puis activez le profil C#.  
 
 3. Développez le **stéréotypes** propriété pour afficher les propriétés supplémentaires que vous pouvez définir.  
 
@@ -112,7 +112,7 @@ Pour générer le code Visual c# .NET à partir de diagrammes de classes UML dan
 
  De plus, chaque stéréotype fournit plusieurs propriétés supplémentaires que vous pouvez définir. Ces valeurs sont traduites en mots clés appropriés dans le code C#. Par exemple, si vous définissez la propriété `Is Static` sur une classe, la classe C# sera `static`.  
 
- Pour définir ces propriétés supplémentaires, sélectionnez la classe ou un autre élément dans le diagramme. Dans la fenêtre Propriétés, développez **stéréotypes**, puis développez le stéréotype c#, tel que **classe c#**.  Pour les classes, ces propriétés supplémentaires incluent :  
+ Pour définir ces propriétés supplémentaires, sélectionnez la classe ou un autre élément dans le diagramme. Dans la fenêtre Propriétés, développez **stéréotypes**, puis développez le stéréotype C#, tel que **classe C#**.  Pour les classes, ces propriétés supplémentaires incluent :  
 
 - CLR Attributes  
 

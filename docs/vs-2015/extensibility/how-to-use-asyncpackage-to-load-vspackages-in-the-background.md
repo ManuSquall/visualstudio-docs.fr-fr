@@ -18,7 +18,7 @@ ms.locfileid: "58949511"
 E/s disque peuvent entraîner le chargement et l’initialisation d’un package VS. Si ces e/s se produit sur le thread d’interface utilisateur, il peut entraîner des problèmes de réactivité. Pour résoudre ce problème, Visual Studio 2015 introduit le <xref:Microsoft.VisualStudio.Shell.AsyncPackage> classe qui permet le chargement de package sur un thread d’arrière-plan.  
   
 ## <a name="creating-an-asyncpackage"></a>Création d’un AsyncPackage  
- Vous pouvez commencer par créer un projet VSIX (**fichier / nouveau / projet / Visual c# / extensibilité / projet VSIX**) et l’ajout d’un VSPackage au projet (cliquez avec le bouton droit sur le projet et **ajouter/New Item / C# élément/extensibilité/Visual Package Studio**). Vous pouvez créer vos services, puis ajouter ces services à votre package.  
+ Vous pouvez commencer par créer un projet VSIX (**fichier / nouveau / projet / Visual C# / extensibilité / projet VSIX**) et l’ajout d’un VSPackage au projet (cliquez avec le bouton droit sur le projet et **ajouter/New Item / C# élément/extensibilité/Visual Package Studio**). Vous pouvez créer vos services, puis ajouter ces services à votre package.  
   
 1. Dériver le package à partir de <xref:Microsoft.VisualStudio.Shell.AsyncPackage>.  
   

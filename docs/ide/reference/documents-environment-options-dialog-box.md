@@ -1,6 +1,6 @@
 ---
 title: Documents, Environnement, boîte de dialogue Options
-ms.date: 11/04/2016
+ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
 - VS.Environment.Documents
@@ -31,28 +31,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bc9e25d5e077ba4fa2b0c56de3dd3f05d87fdbc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e74358d4eb24d54c36ee099942dfbf0b5ca40210
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912818"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647256"
 ---
-# <a name="documents-environment-options-dialog-box"></a>Documents, Environnement, boîte de dialogue Options
+# <a name="options-dialog-box-environment--documents"></a>Boîte de dialogue Options : Environnement \> Documents
 
-Utilisez cette page de la boîte de dialogue **Options** pour contrôler l’affichage des documents dans l’environnement de développement intégré (IDE) et pour gérer les modifications externes apportées aux documents et aux fichiers. Vous pouvez accéder à cette boîte de dialogue en cliquant sur **Options** dans le menu **Outils**, puis en sélectionnant **Documents** dans le nœud **Environnement**. Si **Documents** ne figure pas dans la liste, sélectionnez **Afficher tous les paramètres** dans la boîte de dialogue **Options**.
-
-**Réutiliser la fenêtre du document actif, si elle a été enregistrée**
-
-Lorsque cette option est sélectionnée, votre document actif est fermé s’il a été enregistré et un nouveau document est ouvert dans la même fenêtre. Si votre document actif n’a pas été enregistré, il reste ouvert et le nouveau document est ouvert dans une fenêtre distincte. Lorsque cette option est désactivée, les nouveaux documents s’ouvrent toujours dans des fenêtres distinctes.
-
-Si vous effectuez rarement des opérations de couper-coller sur plusieurs documents et souhaitez réduire le plus possible le nombre de fenêtres et de documents ouverts dans votre espace de travail, essayez cette option.
+Utilisez cette page de la boîte de dialogue **Options** pour contrôler l’affichage des documents dans l’environnement de développement intégré (IDE) et pour gérer les modifications externes apportées aux documents et aux fichiers. Vous pouvez accéder à cette boîte de dialogue en cliquant sur **Options** dans le menu **Outils**, puis en sélectionnant **Environnement** > **Documents**.
 
 **Détecter lorsqu’un fichier est modifié en dehors de l’environnement**
 
 Lorsque cette option est sélectionnée, un message vous avertit immédiatement des modifications qui ont été apportées par un éditeur à un fichier ouvert en dehors de l’IDE. Le message vous permet de recharger le fichier à partir de l’espace de stockage.
 
-**Charger automatiquement les modifications, si elles ont été enregistrées**
+**Recharger les fichiers modifiés sauf s’il existe des modifications non enregistrées**
 
 Lorsque l’option **Détecter lorsqu’un fichier est modifié en dehors de l’environnement** est sélectionnée et qu’un fichier ouvert dans l’IDE est modifié en dehors de l’IDE, un message d’avertissement est généré par défaut. Si cette option est activée, aucun avertissement n’apparaît et le document est rechargé dans l’IDE pour relever les modifications externes.
 
@@ -79,9 +73,9 @@ Sélectionnez cette option pour afficher le nœud **Fichiers divers** dans l’*
 > [!NOTE]
 > Sélectionnez cette option pour activer la commande **Afficher dans le navigateur** dans le menu **Fichier** pour les documents web non inclus dans l’application web active.
 
-**\<** *n* **> éléments enregistrés dans le projet Fichiers divers**
+**Éléments enregistrés dans le projet Fichiers divers**
 
-Spécifie le nombre de fichiers à rendre persistants dans le dossier **MiscellaneousFiles** de l’**Explorateur de solutions**. Ces fichiers sont répertoriés même s’ils ne sont plus ouverts dans un éditeur. Vous pouvez spécifier n’importe quel nombre entier compris entre 0 et 256. Le nombre par défaut est 0.
+Spécifie le nombre de fichiers à rendre persistants dans le dossier **Fichiers divers** de l’**Explorateur de solutions**. Ces fichiers sont répertoriés même s’ils ne sont plus ouverts dans un éditeur. Vous pouvez spécifier n’importe quel nombre entier compris entre 0 et 256. Le nombre par défaut est 0.
 
 Par exemple, si vous définissez cette option sur 5 et avez ouvert 10 fichiers divers, lorsque vous fermez les 10 fichiers, les 5 premiers restent affichés dans le dossier **Fichiers divers**.
 
