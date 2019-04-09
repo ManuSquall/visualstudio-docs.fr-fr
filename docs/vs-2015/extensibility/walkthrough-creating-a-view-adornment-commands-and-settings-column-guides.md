@@ -44,7 +44,7 @@ Tout d’abord vous créez un projet VSIX, ajoutez un ornement de vue de l’éd
 - Il existe un package VSIP qui est nécessaire si vous avez des commandes de l’utilisateur, mais il est simplement un code réutilisable qui initialise l’objet d’implémentation de commandes.
 - Il existe un `ColumnGuideCommands` objet qui implémente les commandes de l’utilisateur et raccorde les gestionnaires de commandes pour les commandes déclaré dans le fichier .vsct.
   
-  **VSIX**. Utilisez **fichier &#124; nouveau...** commande pour créer un projet. Choisissez le nœud d’extensibilité sous c# dans le volet de navigation gauche, choisissez **projet VSIX** dans le volet droit. Entrez le nom ColumnGuides et choisissez **OK** pour créer le projet.
+  **VSIX**. Utilisez **fichier &#124; nouveau...** commande pour créer un projet. Choisissez le nœud d’extensibilité sous C# dans le volet de navigation gauche, choisissez **projet VSIX** dans le volet droit. Entrez le nom ColumnGuides et choisissez **OK** pour créer le projet.
   
   **Afficher les ornements**. Appuyez sur le bouton droit du pointeur sur le nœud de projet dans l’Explorateur de solutions. Choisissez le **ajouter &#124; un nouvel élément...** commande pour ajouter un nouvel élément d’ornement de vue. Choisissez **extensibilité &#124; éditeur** dans le volet de navigation de gauche et choisissez **ornement de la fenêtre d’affichage de l’éditeur** dans le volet droit. Entrez le nom ColumnGuideAdornment en tant que nom de l’élément et choisissez **ajouter** pour l’ajouter.
   

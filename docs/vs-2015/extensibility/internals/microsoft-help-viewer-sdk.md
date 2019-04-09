@@ -63,7 +63,7 @@ Cet article contient les tâches suivantes pour les intégrateurs de la visionne
 
 - javascript
 
-- CSharp ou c#
+- CSharp ou C#
 
 - cplusplus ou Visual c++ ou c ++
 
