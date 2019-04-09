@@ -63,7 +63,7 @@ Chaînes de langue prise en charge (non sensible à la casse) :
 
 -   javascript
 
--   CSharp ou c#
+-   CSharp ou C#
 
 -   cplusplus ou Visual c++ ou c ++
 
