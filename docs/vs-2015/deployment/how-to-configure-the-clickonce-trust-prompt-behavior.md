@@ -82,7 +82,7 @@ Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si l
   
 #### <a name="to-enable-the-clickonce-trust-prompt-programmatically"></a>Pour activer l’invite d’approbation ClickOnce par programmation  
   
-1.  Créer une application console Visual Basic ou Visual c# dans Visual Studio.  
+1.  Créer une application console Visual Basic ou Visual C# dans Visual Studio.  
   
 2.  Ouvrez le fichier Program.vb ou Program.cs pour l’édition et ajoutez le code suivant.  
   
@@ -139,7 +139,7 @@ Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si l
   
 #### <a name="to-restrict-the-clickonce-trust-prompt-programmatically"></a>Pour restreindre l’invite d’approbation ClickOnce par programmation  
   
-1.  Créer une application console Visual Basic ou Visual c# dans Visual Studio.  
+1.  Créer une application console Visual Basic ou Visual C# dans Visual Studio.  
   
 2.  Ouvrez le fichier Program.vb ou Program.cs pour l’édition et ajoutez le code suivant.  
   
@@ -196,7 +196,7 @@ Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si l
   
 #### <a name="to-disable-the-clickonce-trust-prompt-programmatically"></a>Pour désactiver l’invite d’approbation ClickOnce par programmation  
   
-1.  Créer une application console Visual Basic ou Visual c# dans Visual Studio.  
+1.  Créer une application console Visual Basic ou Visual C# dans Visual Studio.  
   
 2.  Ouvrez le fichier Program.vb ou Program.cs pour l’édition et ajoutez le code suivant.  
   
