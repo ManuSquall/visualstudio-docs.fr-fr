@@ -11,20 +11,66 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb65f2a1de54cd21ff212443c004dc011d5b3222
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 4275e92b21289c5cf1e3243b2bc782a9e0821fde
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223726"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232747"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Procédure : Générer des données de métrique du code
 
-Vous pouvez générer des résultats de métriques de code pour un ou plusieurs projets ou d’une solution entière. Métrique du code est disponible dans l’environnement de développement interactif Visual Studio (IDE) et, pour C# et les projets Visual Basic, à la ligne de commande.
+Vous pouvez générer des données de métrique du code de trois façons :
 
-En outre, vous pouvez installer un [package NuGet](https://dotnet.myget.org/feed/roslyn-analyzers/package/nuget/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2-beta2-63202-01) qui inclut quatre métrique du code [analyseur](roslyn-analyzers-overview.md) règles : CA1501 CA1502, CA1505 et CA1506. Ces règles sont désactivées par défaut, mais vous pouvez les activer à partir de **l’Explorateur de solutions** ou dans un [ensemble de règles](using-rule-sets-to-group-code-analysis-rules.md) fichier.
+- En installant [analyseurs FxCop](#fxcop-analyzers-code-metrics-rules) et d’activer les règles de métriques (la facilité de gestion) de quatre code qu’il contient.
 
-## <a name="visual-studio-ide-code-metrics"></a>Métrique du code Visual Studio IDE
+- En choisissant le [ **analyser** > **calculer la métrique du Code** ](#calculate-code-metrics-menu-command) commande de menu dans Visual Studio.
+
+- À partir de la [ligne de commande](#command-line-code-metrics) pour C# et projets Visual Basic.
+
+## <a name="fxcop-analyzers-code-metrics-rules"></a>Règles de métriques du code analyseurs FxCop
+
+Le [package NuGet de FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) inclut plusieurs métriques de code [analyseur](roslyn-analyzers-overview.md) règles :
+
+- [CA1501](ca1501-avoid-excessive-inheritance.md)
+- [CA1502](ca1502-avoid-excessive-complexity.md)
+- [CA1505](ca1505-avoid-unmaintainable-code.md)
+- [CA1506](ca1506-avoid-excessive-class-coupling.md)
+
+Ces règles sont désactivées par défaut, mais vous pouvez les activer à partir de [ **l’Explorateur de solutions** ](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) ou dans un [ensemble de règles](using-rule-sets-to-group-code-analysis-rules.md) fichier. Par exemple, pour activer la règle CA1502 comme un avertissement, votre fichier .ruleset contiendrait l’entrée suivante :
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="Rules" Description="Rules" ToolsVersion="16.0">
+  <Rules AnalyzerId="Microsoft.CodeQuality.Analyzers" RuleNamespace="Microsoft.CodeQuality.Analyzers">
+    <Rule Id="CA1502" Action="Warning" />
+  </Rules>
+</RuleSet>
+```
+
+### <a name="configuration"></a>Configuration
+
+Vous pouvez configurer les seuils à laquelle les règles de métriques de code dans les analyseurs FxCop package incendie.
+
+1. Créer un fichier texte. Par exemple, vous pouvez la nommer *CodeMetricsConfig.txt*.
+
+2. Ajoutez les seuils souhaités dans le fichier texte au format suivant :
+
+   ```txt
+   CA1502: 10
+   ```
+
+   Dans cet exemple, la règle [CA1502](ca1502-avoid-excessive-complexity.md) est configuré pour se déclencher lors de la complexité de cyclomatique d’une méthode est supérieure à 10.
+
+3. Dans le **propriétés** fenêtre de Visual Studio ou dans le fichier projet, sélectionnez l’action de génération du fichier de configuration en tant que [ **AdditionalFiles**](../ide/build-actions.md#build-action-values). Exemple :
+
+   ```xml
+   <ItemGroup>
+     <AdditionalFiles Include="CodeMetricsConfig.txt" />
+   </ItemGroup>
+   ```
+
+## <a name="calculate-code-metrics-menu-command"></a>Calculer la commande de menu de métrique du Code
 
 Générer des mesures de code pour une ou plusieurs de vos projets ouverts dans l’IDE à l’aide de la **analyser** > **calculer la métrique du Code** menu.
 
@@ -54,7 +100,8 @@ Les résultats sont générés et la **résultats de la métrique Code** fenêtr
 > Le **calculer la métrique du Code** commande ne fonctionne pas pour les projets .NET Core et .NET Standard. Pour calculer la métrique du code pour un projet .NET Core ou .NET Standard, vous pouvez :
 >
 > - calculer la métrique du code à partir de la [ligne de commande](#command-line-code-metrics) à la place
-> - mise à niveau vers Visual Studio 2019
+>
+> - Mise à niveau vers [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
 
 ::: moniker-end
 
