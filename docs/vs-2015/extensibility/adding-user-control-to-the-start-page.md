@@ -38,7 +38,7 @@ Cette procédure pas à pas montre comment ajouter une référence DLL à une Pa
 4.  Nommez le contrôle `WebUserControl` puis cliquez sur **OK**.  
   
 ## <a name="implementing-the-user-control"></a>Implémentation du contrôle utilisateur  
- Pour implémenter un contrôle utilisateur WPF, générer l’interface utilisateur (IU) dans XAML, puis écrire les événements code-behind en c# ou un autre langage .NET.  
+ Pour implémenter un contrôle utilisateur WPF, générer l’interface utilisateur (IU) dans XAML, puis écrire les événements code-behind en C# ou un autre langage .NET.  
   
 #### <a name="to-write-the-xaml-for-the-user-control"></a>Pour écrire le XAML pour le contrôle utilisateur  
   
