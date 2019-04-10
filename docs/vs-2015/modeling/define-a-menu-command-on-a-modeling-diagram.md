@@ -1,25 +1,22 @@
 ---
 title: Définir une commande de menu sur un diagramme de modélisation | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, menu commands
 ms.assetid: 79c277de-5871-4fc7-9701-55eec5c3cd46
 caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c211c37817ba996105d7496dc49e91db9fa9298e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1a01681c4674fd5a47d4f5f795f78899df00e770
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809101"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938268"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Définir une commande de menu sur un diagramme de modélisation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -189,7 +186,7 @@ Dans Visual Studio, vous pouvez définir des éléments de menu supplémentaires
 
  ...  
 
- La déclaration de `IDiagramContext` vous permet d'écrire du code dans vos méthodes qui accède au diagramme, à la sélection actuelle et au modèle :  
+ La déclaration de `IDiagramContext` vous permet d’écrire du code dans vos méthodes qui accède au diagramme, à la sélection actuelle et au modèle :  
 
 ```  
 IDiagram diagram = this.DiagramContext.CurrentDiagram;  
@@ -223,7 +220,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
      Une instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] démarre.  
 
-     **Dépannage**: si une nouvelle instance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ne démarre pas :  
+     **Résolution des problèmes**: Si un nouveau [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ne démarre pas :  
 
     -   Si vous avez plusieurs projets, vérifiez que le projet VSIX est défini comme projet de démarrage de la solution.  
 
@@ -235,7 +232,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
 3.  Ouvrez le menu contextuel n’importe où sur le diagramme. Votre commande doit apparaître dans le menu.  
 
-     **Dépannage**: si la commande n’apparaît pas dans le menu, vérifiez que :  
+     **Résolution des problèmes**: Si la commande n’apparaît pas dans le menu, assurez-vous que :  
 
     -   le projet de commande de menu est répertorié en tant que composant MEF sous l’onglet **Composants** de **source.extensions.manifest** dans le projet VSIX ;  
 
@@ -276,7 +273,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
    Exceptionnellement, une extension défaillante ne parvient pas à se charger et crée un rapport dans la fenêtre d’erreur, mais ne s’affiche pas dans le Gestionnaire d’extensions. Dans ce cas, vous pouvez supprimer l’extension en supprimant le fichier de l’emplacement suivant :  
 
-   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version] \Extensions**  
+   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**  
 
 ##  <a name="MenuExample"></a> Exemple  
  L’exemple suivant montre le code pour une commande de menu qui échange les noms de deux éléments sur un diagramme de classes. Ce code doit être intégré à un projet d’Extension [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et installé comme décrit dans les sections précédentes.  
@@ -375,7 +372,4 @@ namespace SwapClassNames
  [Définir des contraintes de validation pour les modèles UML](../modeling/define-validation-constraints-for-uml-models.md)   
  [Modifier des diagrammes de séquence UML à l’aide de l’API UML](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)   
  [Programmation avec l’API UML](../modeling/programming-with-the-uml-api.md)   
- [Exemple : Commande pour aligner des formes sur un diagramme UML](http://go.microsoft.com/fwlink/?LinkID=213809)
-
-
-
+ [Exemple : Commande pour aligner des formes sur un diagramme UML](http://go.microsoft.com/fwlink/?LinkID=213809)

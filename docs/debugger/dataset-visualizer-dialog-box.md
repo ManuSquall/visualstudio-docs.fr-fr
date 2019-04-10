@@ -9,8 +9,6 @@ dev_langs:
 - VB
 - FSharp
 - C++
-- JScript
-- SQL
 helpviewer_keywords:
 - datasets [Visual Studio], Dataset Visualizer dialog box
 - visualizers, Dataset Visualizer dialog box
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 251e6ca5d1d9985defc8dff1dc6be95f3a088bbe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: e4086c473270befcf2213f003e516128b45c4227
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626321"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366989"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Visualiseur DataSet (boîte de dialogue)
 Le Visualiseur DataSet vous permet d'afficher le contenu d'un objet DataSet, DataTable, DataView ou DataViewManager. Vous pouvez accéder à ce visualiseur en cliquant sur l'icône de loupe qui apparaît à côté da la Valeur d'un de ces objets dans une fenêtre de variables de débogueur ou dans un DataTip.

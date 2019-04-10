@@ -1,12 +1,9 @@
 ---
 title: Définir un gestionnaire de mouvements sur un diagramme de modélisation | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, double-click
 - UML - extending, drag and drop
@@ -14,13 +11,13 @@ ms.assetid: e5e1d70a-3539-4321-a3b1-89e86e4d6430
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3e448b14a2a24994b9f03a569b0bb568d538bc69
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3ecd6f6210fdc219f7d1ca493f15beed74e9b5e2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722174"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950646"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Définir un gestionnaire de mouvements sur un diagramme de modélisation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -242,7 +239,7 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
   
     Une instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] démarre.  
   
-    **Dépannage**: si une nouvelle instance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ne démarre pas :  
+    **Résolution des problèmes**: Si un nouveau [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ne démarre pas :  
   
    -   Si vous avez plusieurs projets, vérifiez que le projet VSIX est défini comme projet de démarrage de la solution.  
   
@@ -256,7 +253,7 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
   
 4. Faites glisser un élément de l’Explorateur UML sur le diagramme. Votre gestionnaire de glisser-déplacer doit être appelé.  
   
-   **Dépannage**: si le gestionnaire de mouvements ne fonctionne pas, vérifiez ce qui suit :  
+   **Résolution des problèmes**: Si le Gestionnaire de mouvements ne fonctionne pas, assurez-vous que :  
   
 -   Le projet de gestionnaire de mouvements est répertorié en tant que composant MEF sous l’onglet **Composants** de **source.extensions.manifest** dans le projet VSIX.  
   
@@ -271,7 +268,7 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
 ##  <a name="Implementing"></a> Implémentation du Gestionnaire de mouvements  
   
 ### <a name="the-gesture-handler-methods"></a>Méthodes du gestionnaire de mouvements  
- La classe du gestionnaire de mouvements implémente et exporte <xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement.IGestureExtension>. Les méthodes que vous devez définir sont les suivantes :  
+ La classe du gestionnaire de mouvements implémente et exporte <xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement.IGestureExtension>. Les méthodes que vous devez définir sont les suivantes :  
   
 |||  
 |-|-|  
@@ -281,11 +278,11 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
   
  Vous pouvez écrire des gestionnaires qui peuvent accepter non seulement des éléments UML, mais également une vaste gamme d’autres éléments, comme des fichiers, des nœuds dans un affichage de classes .NET, etc. L’utilisateur peut faire glisser l’un de ces éléments dans un diagramme UML, à condition que vous écriviez une méthode `OnDragDrop` capable de décoder la forme sérialisée des éléments. Les méthodes de décodage varient d’un type d’élément à l’autre.  
   
- Les paramètres de ces méthodes sont les suivants :  
+ Les paramètres de ces méthodes sont les suivants :  
   
 -   `ShapeElement target`. Forme ou diagramme sur lequel l’utilisateur a fait glisser quelque chose.  
   
-     `ShapeElement` est une classe dans l'implémentation qui est sous-jacente aux outils de modélisation UML. Pour réduire le risque de mettre le modèle UML et les diagrammes dans un état incohérent, nous vous recommandons de ne pas utiliser directement les méthodes de cette classe. Au lieu de cela, encapsulez l’élément dans un `IShape`, puis utilisez les méthodes décrites dans [afficher un modèle UML sur des diagrammes](../modeling/display-a-uml-model-on-diagrams.md).  
+     `ShapeElement` est une classe dans l’implémentation qui est sous-jacente aux outils de modélisation UML. Pour réduire le risque de mettre le modèle UML et les diagrammes dans un état incohérent, nous vous recommandons de ne pas utiliser directement les méthodes de cette classe. Au lieu de cela, encapsulez l’élément dans un `IShape`, puis utilisez les méthodes décrites dans [afficher un modèle UML sur des diagrammes](../modeling/display-a-uml-model-on-diagrams.md).  
   
     -   Pour obtenir un `IShape`:  
   
@@ -308,19 +305,19 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
           targetIShape.Element.GetModelStore();   
         ```  
   
-    -   Pour obtenir l’accès à l’hôte et au fournisseur de services :  
+    -   Pour obtenir l’accès à l’hôte et au fournisseur de services :  
   
         ```  
         target.Store.GetService(typeof(EnvDTE.DTE)) as EnvDTE.DTE  
         ```  
   
--   `DiagramDragEventArgs eventArgs`. Ce paramètre achemine la forme sérialisée de l’objet source d’une opération de glissement :  
+-   `DiagramDragEventArgs eventArgs`. Ce paramètre achemine la forme sérialisée de l’objet source d’une opération de glissement :  
   
     ```  
     System.Windows.Forms.IDataObject data = eventArgs.Data;    
     ```  
   
-     Vous pouvez faire glisser des éléments de genres différents vers un diagramme, à partir de différentes parties de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou à partir du Bureau Windows. Différents types d’éléments sont encodés de façons différentes dans `IDataObject`. Pour en extraire les éléments, consultez la documentation correspondant au type d’objet approprié.  
+     Vous pouvez faire glisser des éléments de genres différents vers un diagramme, à partir de différentes parties de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ou à partir du Bureau Windows. Différents types d’éléments sont encodés de façons différentes dans `IDataObject`. Pour en extraire les éléments, consultez la documentation correspondant au type d’objet approprié.  
   
      Si votre objet source est un élément UML déplacé à partir de l’Explorateur de modèles UML ou d’un autre diagramme UML, consultez [des éléments de modèle UML obtenir à partir de IDataObject](../modeling/get-uml-model-elements-from-idataobject.md).  
   
@@ -382,7 +379,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
   
    Exceptionnellement, une extension défaillante ne parvient pas à se charger et crée un rapport dans la fenêtre d’erreur, mais ne s’affiche pas dans le Gestionnaire d’extensions. Dans ce cas, vous pouvez supprimer l’extension en supprimant le fichier de l’emplacement suivant :  
   
-   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version] \Extensions**  
+   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**  
   
 ##  <a name="DragExample"></a> Exemple  
  L’exemple suivant montre comment créer des lignes de vie dans un diagramme de séquence, en fonction des parties et des ports d’un composant ayant fait l’objet d’un glissement à partir d’un diagramme de composant.  
@@ -528,6 +525,3 @@ public class CreateLifelinesFromComponentParts : IGestureExtension
  [Définir une commande de menu sur un diagramme de modélisation](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [Définir des contraintes de validation pour les modèles UML](../modeling/define-validation-constraints-for-uml-models.md)   
  [Programmation avec l’API UML](../modeling/programming-with-the-uml-api.md)
-
-
-

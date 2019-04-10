@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe676731170b0e643e00b1ab5e10aa768f256434
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: a4656ae21c51d105c2d523275af63e84c2326d4d
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526358"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366300"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Découvrez des conseils de productivité et des astuces pour le débogueur dans Visual Studio
 
@@ -31,7 +31,7 @@ Si vous survolez fréquemment des bulles d’informations pendant le débogage, 
 
 ![L’épinglage d’une bulle](../debugger/media/dbg-tips-data-tips-pinned.png "PinningDataTip")
 
-## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>Modifiez votre code et continuer le débogage (C#, VB, C++)
+## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>Modifiez votre code et continuer le débogage (c#, VB, C++)
 
 Dans la plupart des langages pris en charge par Visual Studio, vous pouvez modifier votre code au milieu d’une session de débogage et continuer le débogage. Pour utiliser cette fonctionnalité, cliquez sur dans votre code avec votre curseur pendant la suspension dans le débogueur, vérifiez les modifications, puis appuyez sur **F5**, **F10**, ou **F11** pour continuer le débogage.
 
@@ -64,7 +64,7 @@ En changeant le flux d’exécution, vous pouvez effectuer des opérations comme
 > [!WARNING]
 > Vous devez rester prudent avec cette fonctionnalité, vous pouvez voir un avertissement dans l’info-bulle. Vous pouvez aussi en voir d’autres. Déplacer le pointeur ne peut pas rétablir votre application à un état antérieur de l’application.
 
-## <a name="track-an-out-of-scope-object-c-visual-basic"></a>Suivre un objet hors de portée (C#, Visual Basic)
+## <a name="track-an-out-of-scope-object-c-visual-basic"></a>Suivre un objet hors de portée (c#, Visual Basic)
 
 Il est facile d’afficher des variables à l’aide des fenêtres du débogueur, comme le **espion** fenêtre. Toutefois, quand une variable est hors de portée dans le **espion** fenêtre, vous pouvez remarquer qu’il est grisé. Dans certains scénarios d’application, la valeur d’une variable peut changer même lorsque la variable est hors de portée, et vous pouvez souhaiter surveiller de près (par exemple, une variable peut obtenir la garbage collection). Vous pouvez suivre la variable en créant un ID d’objet pour celui-ci dans le **espion** fenêtre.
 
@@ -106,7 +106,7 @@ Un visualiseur de chaîne peut-être vous aider à déterminer si une chaîne es
 
 ![Visualiseur de chaîne JSON](../debugger/media/dbg-tips-string-visualizer-json.png "JSONStringVisualizer")
 
-Pour d’autres types tels que les objets WPF qui s’affichent dans les fenêtres du débogueur, vous pouvez également ouvrir des visualiseurs.
+Pour d’autres types tels que les objets DataSet et DataTable qui s’affichent dans les fenêtres du débogueur, vous pouvez également ouvrir un visualiseur intégré.
 
 ## <a name="break-into-code-on-handled-exceptions"></a>Diviser en code géré d’exceptions
 

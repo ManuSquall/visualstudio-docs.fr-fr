@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16139daaadfa687abf296505d94f350600fbfa9f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 7d270b14a0dda18a037eb74181c2eec69cf26dc8
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636903"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366547"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Inspecter des variables dans les fenêtres automatique et variables locales
 
@@ -59,6 +59,19 @@ Dans le code C++ natif, vous devrez peut-être qualifier le contexte d’un nom 
 >-   Évaluer certaines expressions peut modifier la valeur d’une variable ou affecter d’une manière ou d’une autre l’état de votre programme. Par exemple, l’évaluation `var1 = ++var2` modifie la valeur des deux `var1` et `var2`. Ces expressions sont réputées pour avoir [effets](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Effets secondaires peuvent provoquer des résultats inattendus si vous n’êtes pas informé.
 >
 >-   Modifier des valeurs à virgule flottante risque d’entraîner quelques légères imprécisions, dues à la conversion en binaire de la partie décimale des composants fractionnaires. Même une modification apparemment anodine peut entraîner des modifications à certaines des bits dans la variable à virgule flottante.
+
+::: moniker range=">= vs-2019" 
+## <a name="search-in-the-autos-or-locals-window"></a>Rechercher dans la fenêtre automatique ou variables locales
+
+Vous pouvez rechercher des mots clés dans les colonnes Nom, valeur et Type de la **automatique** ou **variables locales** fenêtre à l’aide de la barre de recherche au-dessus de chaque fenêtre. Appuyez sur entrée ou sélectionnez une des flèches pour exécuter une recherche. Pour annuler une recherche en cours, sélectionnez l’icône « x » dans la barre de recherche.
+
+Utilisez les flèches gauche et droite (MAJ + F3 et F3, respectivement) pour naviguer entre trouvé des correspondances.
+
+![Recherche dans la fenêtre variables locales](../debugger/media/ee-search-locals.png "recherche dans la fenêtre variables locales")
+
+Pour rendre votre recherche plus ou moins complète, utilisez la **recherche approfondie** liste déroulante en haut de la **automatique** ou **variables locales** fenêtre pour sélectionner le nombre de niveaux que vous souhaitez rechercher dans objets imbriqués. 
+
+::: moniker-end
 
 ## <a name="change-the-context-for-the-autos-or-locals-window"></a>Modifier le contexte pour la fenêtre automatique ou variables locales
 

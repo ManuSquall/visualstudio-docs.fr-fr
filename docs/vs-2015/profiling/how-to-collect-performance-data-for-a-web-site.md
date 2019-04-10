@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : collecte des données de performances pour un site web | Microsoft Docs'
+title: 'Procédure : collecter des données de performances pour un site web | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,17 +19,17 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 808344d1151f40f94ca3506df5c81deaa8186056
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f0d77d78cdcf889b22d9cf6901b6beae41aaaee4
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766150"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366729"
 ---
-# <a name="how-to-collect-performance-data-for-a-web-site"></a>Procédure : collecte des données de performances pour un site web
+# <a name="how-to-collect-performance-data-for-a-web-site"></a>Procédure : Collecter des données de performances pour un Site Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez utiliser l’ **Assistant Performance** pour collecter des données de performances pour une application web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Vous pouvez profiler une application web qui est ouverte dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ou profiler un site web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] qui se trouve sur votre ordinateur local et qui n’est pas ouvert dans l’IDE [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+Vous pouvez utiliser l’ **Assistant Performance** pour collecter des données de performances pour une application web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] . Vous pouvez profiler une application web qui est ouverte dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ou profiler un site web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] qui se trouve sur votre ordinateur local et qui n’est pas ouvert dans l’IDE [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 > [!NOTE]
 >  L’ **Assistant Performance** vous permet d’ajouter des données d’interaction de couche (TIP), des données de performance JScript, ou les deux, aux données de profilage collectées. L’option TIP collecte des données auprès des processus côté serveur. Le profilage JScript collecte des données auprès des scripts qui s’exécutent sur un site web local ou distant. Dans la plupart des cas, vous devez choisir une seule des options.  
@@ -84,7 +84,7 @@ Vous pouvez utiliser l’ **Assistant Performance** pour collecter des données 
   
    - Pour un site web basé sur un fichier, tapez un chemin comme file///**c:\sites_web\MonSite\defaut.aspx**. Cela déclenche le profilage de l’application [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] située sur c:\webSites\MySite et l’ouverture de la page http://localhost:nnnn/MySite/default.aspx dans Internet Explorer pour démarrer la session.  
   
-   - Pour les sites externes dont vous souhaitez collecter les données JavaScript, tapez une URL telle que http://www.contoso.com.  
+   - Pour les sites externes dont vous souhaitez collecter des données JavaScript, tapez l’URL, par exemple http :\//www.contoso.com.  
   
      Pour plus d’informations, consultez les pages de propriétés un binaire cible [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] .  
   
@@ -103,7 +103,7 @@ Vous pouvez utiliser l’ **Assistant Performance** pour collecter des données 
      Le profileur génère le fichier de données et affiche la vue Résumé des données dans la fenêtre principale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="see-also"></a>Voir aussi  
- [Vues d’ensemble](../profiling/overviews-performance-tools.md)   
+ [Vues d'ensemble](../profiling/overviews-performance-tools.md)   
  [Configuration de sessions de performance](../profiling/configuring-performance-sessions.md)   
- [Présentation des valeurs de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md)   
- [Présentation des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)
+ [Fonctionnement des valeurs de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md)   
+ [Fonctionnement des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)
