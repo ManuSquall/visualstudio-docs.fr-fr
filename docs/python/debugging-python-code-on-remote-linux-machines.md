@@ -3,19 +3,19 @@ title: Déboguer du code Python sur des ordinateurs Linux distants
 description: Utilisez Visual Studio pour déboguer du code Python exécuté sur des ordinateurs Linux distants. Découvrez notamment les informations relatives aux étapes de configuration nécessaires, à la sécurité et au dépannage.
 ms.date: 12/06/2018
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bb98a94e60d84fc48078be396e0fb48dd8952c55
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e718a5610d9539e3e2a89af0a9de502ebfd168a7
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945740"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366742"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Déboguer à distance du code Python sur Linux
 

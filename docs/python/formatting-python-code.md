@@ -3,19 +3,19 @@ title: Mettre en forme le code Python
 description: Visual Studio peut reformater automatiquement du code Python, y compris les espacements, les instructions, le retour à la ligne et les commentaires.
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4049576d18befb71cc71fdb85a19bcc3b0234401
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 6e95d05c3fbc0dd46d235c7480bd4a9caa48947e
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160665"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365470"
 ---
 # <a name="format-python-code"></a>Mettre en forme le code Python
 
@@ -55,24 +55,24 @@ Les tableaux ci-après fournissent des exemples des différentes options :
 | **Insérer un espace entre le nom d’une déclaration de fonction et une liste de paramètres** | `def X (): pass` | `def X(): pass` |
 | **Insérer un espace entre les parenthèses d’une liste de paramètres** | `def X( a, b ): pass` | `def X(a, b): pass` |
 | **Insérer un espace entre les parenthèses d’une liste de paramètres vide** | `def X( ): pass` | `def X(): pass` |
-| **Insérer des espaces autour du caractère « = » dans les valeurs de paramètre par défaut** | `includes X(a = 42): pass` | `includes X(a=42): pass` |
-| **Insérer un espace avant et après les opérateurs d’annotation de retour** | `includes X() -> 42: pass` | `includes X()->42: pass` |
+| **Insérer des espaces autour du caractère « = » dans les valeurs de paramètre par défaut** | `includes X(a = 42): pass` | `includes X(a=42): pass` |
+| **Insérer un espace avant et après les opérateurs d’annotation de renvoi** | `includes X() -> 42: pass` | `includes X()->42: pass` |
 
 <br/>
 
 | Option des opérateurs | Activé | Effacé |
 | --- | --- | --- |
 | **Insérer des espaces autour des opérateurs binaires** | `a + b` | `a+b` |
-| **Insérer des espaces autour des assignations** | `a = b` | `a=b` |
+| **Insérer des espaces autour des attributions** | `a = b` | `a=b` |
 
 <br/>
 
 | Option d’espacement d’expression | Activé | Effacé |
 | --- | --- | --- |
 | **Insérer un espace entre le nom d’un appel de fonction et une liste d’arguments** | `X ()` | `X()` |
-| **Insérer un espace dans les parenthèses de la liste d’arguments vide** | `X( )` | `X()` |
-| **Insérer un espace dans les parenthèses de la liste d’arguments** | `X( a, b )` | `X(a, b)` |
-| **Insérer un espace entre les parenthèses d’une expression** | `( a )` | `(a)` |
+| **Insérer un espace dans les parenthèses de la liste d'arguments vide** | `X( )` | `X()` |
+| **Insérer un espace dans les parenthèses de la liste d'arguments** | `X( a, b )` | `X(a, b)` |
+| **Insérer un espace entre les parenthèses d’expression** | `( a )` | `(a)` |
 | **Insérer un espace entre les parenthèses d’un tuple vide** | `( )` | `()` |
 | **Insérer un espace entre les parenthèses d’un tuple** | `( a, b )` | `(a, b)` |
 | **Insérer un espace dans des crochets vides** | `[ ]` | `[]` |
@@ -90,7 +90,7 @@ Les options **Instructions** contrôlent la réécriture automatique de différe
 | --- | --- | --- |
 | **Placer les modules importés sur une nouvelle ligne** | `import sys, pickle` | `import sys`<br/>`import pickle` |
 | **Supprimer les points-virgules inutiles** | `x = 42;` | `x = 42` |
-| **Placer chaque instruction d’un groupe de plusieurs instructions sur une nouvelle ligne** | `x = 42; y = 100` | `x = 42`<br/>`y = 100` |
+| **Placer plusieurs instructions sur une nouvelle ligne** | `x = 42; y = 100` | `x = 42`<br/>`y = 100` |
 
 ## <a name="wrapping"></a>Retour à la ligne
 
