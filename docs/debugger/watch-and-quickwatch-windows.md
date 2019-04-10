@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8045b5f52dc57838731c24d41534c05b7cd1094
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: d8cd119ab39939de6562adcb962679874d528283
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723251"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366807"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Regardez des variables avec les fenêtres Espion et Espion express
 
@@ -91,6 +91,19 @@ Les règles d’évaluation des expressions dans le **espion** fenêtre sont gé
 ![Regardez l’erreur d’expression](../debugger/media/watchexpressionerror.png "regarder l’erreur d’expression")
 
 Un cercle avec une icône de deux lignes ondulées peut-être apparaître dans le **espion** fenêtre. Cette icône signifie que le débogueur n’évalue l’expression en raison d’une dépendance inter-threads potentielle. L’évaluation du code nécessite des autres threads dans votre application pour s’exécuter temporairement, mais étant donné que vous êtes en mode arrêt, tous les threads dans votre application sont généralement arrêtés. Permettre à d’autres threads de s’exécuter temporairement peut avoir des effets inattendus sur l’état de votre application et le débogueur peuvent ignorer certains événements tels que des points d’arrêt et des exceptions sur ces threads.
+
+::: moniker range=">= vs-2019" 
+## <a name="search-in-the-watch-window"></a>Rechercher dans la fenêtre Espion
+
+Vous pouvez rechercher des mots clés dans les colonnes Nom, valeur et Type de la **espion** fenêtre à l’aide de la barre de recherche au-dessus de chaque fenêtre. Appuyez sur entrée ou sélectionnez une des flèches pour exécuter une recherche. Pour annuler une recherche en cours, sélectionnez l’icône « x » dans la barre de recherche.
+
+Utilisez les flèches gauche et droite (MAJ + F3 et F3, respectivement) pour naviguer entre trouvé des correspondances.
+
+![Recherche dans la fenêtre Espion](../debugger/media/ee-search-watch.png "recherche dans la fenêtre Espion")
+
+Pour rendre votre recherche plus ou moins complète, utilisez la **recherche approfondie** liste déroulante en haut de la **espion** fenêtre pour sélectionner le nombre de niveaux que vous souhaitez rechercher dans imbriqué des objets. 
+
+::: moniker-end
 
 ### <a name="bkmk_refreshWatch"></a> Actualiser les valeurs des espions
 
@@ -218,8 +231,8 @@ Pour actualiser **affichage dynamique** valeurs, sélectionnez le [icône d’ac
 
 Pour afficher uniquement les **affichage dynamique** pour un objet, ajoutez un **dynamique** spécificateur de format après le nom de l’objet dynamique dans le **espion** fenêtre :
 
-- Pour C# : `ObjectName, dynamic`
-- Pour Visual Basic : `$dynamic, ObjectName`
+- Pour C# : `ObjectName, dynamic`
+- Pour Visual Basic `$dynamic, ObjectName`
 
 >[!NOTE]
 >- Le C# débogueur ne réévalue automatiquement les valeurs dans le **affichage dynamique** quand vous passez à la ligne de code suivante.

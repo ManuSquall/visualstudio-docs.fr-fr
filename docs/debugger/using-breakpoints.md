@@ -34,22 +34,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ea096ce0880ff3126e7aff98e037c75dc457997
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 6edffaa0b45cc045428161dc04bf52d1c607c51c
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719598"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366689"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Utilisez des points d’arrêt dans le débogueur Visual Studio
 Points d’arrêt sont une des techniques de débogage plus importantes dans la boîte à outils du développeur de votre. Vous définissez des points d’arrêt là où vous souhaitez suspendre l’exécution du débogueur. Par exemple, vous souhaitez afficher l’état des variables de code ou examiner la pile des appels à un certain point d’arrêt. Si c’est la première fois que vous essayez de déboguer du code, vous pouvez lire [Débogage pour grands débutants](../debugger/debugging-absolute-beginners.md) avant de poursuivre cet article.
 
 ##  <a name="BKMK_Overview"></a> Ensemble des points d’arrêt dans le code source
- Vous pouvez définir un point d’arrêt sur n’importe quelle ligne de code exécutable. Par exemple, dans l’exemple suivant C# code, vous pouvez définir un point d’arrêt sur la déclaration de variable, le `for` boucle ou code à l’intérieur de la `for` boucle. Vous ne pouvez pas définir un point d’arrêt sur les déclarations d’espace de noms ou une classe, ou sur la signature de méthode.
+ Vous pouvez définir un point d’arrêt sur n’importe quelle ligne de code exécutable. Par exemple, dans le code c# suivant, vous pouvez définir un point d’arrêt sur la déclaration de variable, le `for` boucle ou code à l’intérieur de la `for` boucle. Vous ne pouvez pas définir un point d’arrêt sur les déclarations d’espace de noms ou une classe, ou sur la signature de méthode.
 
  Pour définir un point d’arrêt dans le code source, cliquez dans la marge gauche en regard d’une ligne de code. Vous pouvez également sélectionner la ligne et appuyez sur **F9**, sélectionnez **déboguer** > **point d’arrêt**, ou avec le bouton droit et sélectionnez **point d’arrêt**  >  **Insérer le point d’arrêt**. Le point d’arrêt apparaît sous la forme d’un point rouge dans la marge de gauche.
 
-Dans C# code, point d’arrêt et les lignes de l’exécution en cours sont automatiquement mis en surbrillance. Pour le code C++, vous pouvez activer la mise en surbrillance de point d’arrêt et de lignes actuelles en sélectionnant **outils** (ou **déboguer**) > **Options**  >   **Débogage** >  **mettre en surbrillance la ligne source entière pour les points d’arrêt et l’instruction actuelle (C++ uniquement)**.
+Dans C# code, point d’arrêt et les lignes de l’exécution en cours sont automatiquement mis en surbrillance. Pour C++ code, vous pouvez activer la mise en surbrillance de point d’arrêt et de lignes actuelles en sélectionnant **outils** (ou **déboguer**) > **Options**  >  **Débogage** >  **mettre en surbrillance la ligne source entière pour les points d’arrêt et l’instruction actuelle (C++ uniquement)**.
 
  ![Définissez un point d’arrêt](../debugger/media/basicbreakpoint.png "base point d’arrêt")
 
@@ -59,7 +59,7 @@ Dans C# code, point d’arrêt et les lignes de l’exécution en cours sont aut
 
  ![L’exécution de point d’arrêt s’est arrêtée](../debugger/media/breakpointexecution.png "l’exécution du point d’arrêt")
 
- Lorsque le débogueur s’arrête au point d’arrêt, vous pouvez consulter l’état actuel de l’application, y compris les valeurs des variables et la pile des appels. Pour plus d’informations sur la pile des appels, consultez [Comment : utiliser la fenêtre Pile des appels](../debugger/how-to-use-the-call-stack-window.md).
+ Lorsque le débogueur s’arrête au point d’arrêt, vous pouvez consulter l’état actuel de l’application, y compris les valeurs des variables et la pile des appels. Pour plus d’informations sur la pile des appels, consultez [Comment : Utiliser la fenêtre Pile des appels](../debugger/how-to-use-the-call-stack-window.md).
 
 - Le point d’arrêt est un bouton bascule. Vous pouvez cliquer dessus, appuyez sur **F9**, ou utilisez **déboguer** > **point d’arrêt** pour supprimer ou insérez-la à nouveau.
 
@@ -87,7 +87,7 @@ Le point d’arrêt de la pile des appels s’affiche dans le **des points d’a
 
 Le débogueur s’arrête au niveau de l’instruction.
 
-Pour plus d’informations sur la pile des appels, consultez [Comment : utiliser la fenêtre Pile des appels](../debugger/how-to-use-the-call-stack-window.md).
+Pour plus d’informations sur la pile des appels, consultez [Comment : Utiliser la fenêtre Pile des appels](../debugger/how-to-use-the-call-stack-window.md).
 
 À visuellement trace des points d’arrêt pendant l’exécution de code, consultez [mapper les méthodes sur la pile des appels pendant le débogage](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
 
@@ -113,21 +113,21 @@ Pour plus d’informations sur la pile des appels, consultez [Comment : utilise
 
    - Utilisez le nom de fonction qualifié complet.
 
-     Exemple : `Namespace1.ClassX.MethodA()`
+     Exemple :  `Namespace1.ClassX.MethodA()`
 
    - Ajouter les types de paramètre d’une fonction surchargée.
 
-     Exemple : `MethodA(int, string)`
+     Exemple :  `MethodA(int, string)`
 
    - Utilisez le ' !' symbole pour spécifier le module.
 
-     Exemple : `App1.dll!MethodA`
+     Exemple : `App1.dll!MethodA`
 
    - Utilisez l’opérateur de contexte en C++ natif.
 
      `{function, , [module]} [+<line offset from start of method>]`
 
-     Exemple : `{MethodA, , App1.dll}+2`
+     Exemple : `{MethodA, , App1.dll}+2`
 
 1. Dans le **langage** liste déroulante, choisissez la langue de la fonction.
 
@@ -148,7 +148,7 @@ Pour plus d’informations sur la pile des appels, consultez [Comment : utilise
     ((my_class *) 0xcccccccc)->my_method
     ```
 
-## <a name="BKMK_set_a_data_breakpoint_native_cplusplus_only"></a>Définir des points d’arrêt de données (natif C++ uniquement)
+## <a name="BKMK_set_a_data_breakpoint_native_cplusplus"></a>Définir des points d’arrêt de données (natif C++ uniquement)
 
  Arrêt sur variable interrompre l’exécution quand une valeur stockée à une adresse mémoire spécifiée change. Si la valeur est lue mais pas modifiée, l’exécution ne s’interrompt pas.
 
@@ -218,7 +218,7 @@ Points d’arrêt avec un ensemble de conditions apparaissent avec un **+** symb
 <a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a>
 ### <a name="conditional-expression"></a>Expression conditionnelle
 
-Lorsque vous sélectionnez **Expression conditionnelle**, vous pouvez choisir entre deux conditions : **vaut** ou **lorsque modifié**. Choisissez **vaut** pour arrêter l’exécution lorsque l’expression est satisfaite, ou **lorsque modifié** à arrêter quand la valeur de l’expression a changé.
+Lorsque vous sélectionnez **Expression conditionnelle**, vous pouvez choisir entre deux conditions : **A la valeur true** ou **lorsque modifié**. Choisissez **vaut** pour arrêter l’exécution lorsque l’expression est satisfaite, ou **lorsque modifié** à arrêter quand la valeur de l’expression a changé.
 
  Dans l’exemple suivant, le point d’arrêt est atteint uniquement lorsque la valeur de `testInt` est **4**:
 
@@ -286,7 +286,7 @@ Placez les valeurs de chaîne entre guillemets doubles. Vous pouvez combiner des
 
 1. Cliquez sur un point d’arrêt et sélectionnez **Actions**. Ou, dans le **les paramètres de point d’arrêt** fenêtre, pointez sur le point d’arrêt, sélectionnez le **paramètres** icône, puis sélectionnez **Actions**.
 
-1. Entrez un message dans le **consigner le message dans la fenêtre sortie** champ. Le message peut contenir des chaînes de texte générique, les valeurs des variables ou des expressions entre accolades et spécificateurs de format ([ C# ](../debugger/format-specifiers-in-csharp.md) et [C++](../debugger/format-specifiers-in-cpp.md)) pour les valeurs.
+1. Entrez un message dans le **consigner le message dans la fenêtre sortie** champ. Le message peut contenir des chaînes de texte générique, les valeurs des variables ou des expressions entre accolades et spécificateurs de format ([c#](../debugger/format-specifiers-in-csharp.md) et [C++](../debugger/format-specifiers-in-cpp.md)) pour les valeurs.
 
    Vous pouvez également utiliser les mots clés spéciaux suivants dans le message :
 
