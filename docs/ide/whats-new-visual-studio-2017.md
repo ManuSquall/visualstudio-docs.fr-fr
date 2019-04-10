@@ -12,21 +12,22 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.prod: visual-studio-dev15
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 22276c844da259600770862327bc316243c9c239
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: fea8aeac90a974fc6b1cb89d9419c0652c184796
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476070"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857812"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Nouveautés de Visual Studio 2017
 
-**Mis à jour pour la [version 15.9](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)**
+**Mis à jour pour la [version 15.9](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)**
 
 Vous envisagez de mettre à niveau une version antérieure de Visual Studio ? Visual Studio 2017 peut vous apporter : Une productivité inégalée pour l’ensemble des développements, applications et plateformes. Utilisez Visual Studio 2017 afin de développer des applications pour Android, iOS, Windows, le web et le Cloud. Écrivez votre code rapidement, déboguez et diagnostiquez facilement, testez souvent et publiez en toute confiance. Vous pouvez également étendre et personnaliser Visual Studio en créant vos propres extensions. Avec cette version, utilisez la gestion de versions, soyez agile et collaborez efficacement !
 
@@ -107,9 +108,9 @@ Le Gestionnaire d’extensions itinérantes effectue le suivi de toutes les exte
 
 Quand vous utilisez le Gestionnaire d’extensions itinérantes, trois types d’icônes figurent dans votre liste :
 
-* ![Icône Itinérante](media/vs2017ide-roamedicon.png) **_Itinérante_**  : Extension qui fait partie de cette liste d’itinérances, mais qui n’est pas installée sur votre machine.
+* ![Icône Itinérante](media/vs2017ide-roamedicon.png)**_Itinérante_**  : Extension qui fait partie de cette liste d’itinérances, mais qui n’est pas installée sur votre machine.
   (Vous pouvez l’installer à l’aide du bouton **Télécharger**.)
-* ![Icône Itinérante et installée](media/vs2017ide-roamedinstalledicon.png) **_Itinérante et installée_**: Toutes les extensions qui font partie de cette liste d’itinérances et qui sont installées dans votre environnement de développement.
+* ![Icône Itinérante et installée](media/vs2017ide-roamedinstalledicon.png)**_Itinérante et installée_**  : Toutes les extensions qui font partie de cette liste d’itinérances et qui sont installées dans votre environnement de développement.
   (Si vous décidez de ne pas les rendre itinérantes, vous pouvez les supprimer à l’aide du bouton **Arrêter l’itinérance**.)
 * ![Icône Installée](media/vs2017ide-installedicon.png) **_Installée_**  : Toutes les extensions qui sont installées dans cet environnement, mais qui ne font pas partie de votre liste d’itinérances.
   (Vous pouvez ajouter des extensions à la liste d’itinérances à l’aide du bouton **Démarrer l’itinérance**.)
@@ -267,7 +268,7 @@ Choisissez votre langage de développement préféré entre &mdash;C#, Visual Ba
 
 **Nouveauté de la version 15.5** : Visual Studio 2017 version 15.5 offre une prise en charge optimale du SDK Windows 10 Fall Creators Update (10.0.16299.0). Windows 10 Fall Creators Update apporte aussi de nombreuses améliorations pour les développeurs d’applications UWP. Voici quelques-uns des changements majeurs : 
 
-* **Prise en charge de .NET Standard 2.0**<br/>En plus de simplifier le processus de développement des applications, Windows 10 Fall Creators Update est la première version de Windows 10 à offrir la prise en charge de .NET Standard 2.0. [.NET Standard](https://devblogs.microsoft.com/dotnet/introducing-net-standard/) est une implémentation de référence de la bibliothèque de classes de base que toutes les plateformes .NET peuvent implémenter. L’objectif de .NET Standard est de permettre aux développeurs d’applications .NET de partager plus facilement du code entre les différentes plateformes .NET dont ils ont besoin.
+* **Prise en charge de .NET 2.0 Standard**<br/>En plus de simplifier le processus de développement des applications, Windows 10 Fall Creators Update est la première version de Windows 10 à offrir la prise en charge de .NET Standard 2.0. [.NET Standard](https://devblogs.microsoft.com/dotnet/introducing-net-standard/) est une implémentation de référence de la bibliothèque de classes de base que toutes les plateformes .NET peuvent implémenter. L’objectif de .NET Standard est de permettre aux développeurs d’applications .NET de partager plus facilement du code entre les différentes plateformes .NET dont ils ont besoin.
 * **Le meilleur d’UWP et de Win32**<br/>Nous avons ajouté la fonctionnalité [Pont du bureau](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) à la plateforme Windows 10 pour que Windows 10 puisse mieux répondre aux besoins de tous les développeurs d’applications .NET ciblant UWP, WPF, Windows Forms ou Xamarin. Avec le nouveau type de projet de création de package d’application disponible dans Visual Studio 2017 version 15.5, vous pouvez créer des packages d’application Windows pour vos projets WPF ou Windows Forms, de la même manière que pour des projets UWP. Une fois que vous avez créé le package de votre application, vous pouvez utiliser toutes les fonctionnalités de déploiement d’applications Windows 10, puis distribuer votre application par le biais de Microsoft Store (pour les applications consommateur) ou de Microsoft Store pour Entreprises et Éducation. Les applications packagées ont accès à la surface d’API UWP complète et aux API Win32 du bureau. Vous pouvez donc maintenant moderniser progressivement vos applications WPF et Windows Forms avec des API UWP et des fonctionnalités Windows 10. De plus, vous pouvez ajouter vos composants Win32 dans vos applications UWP qui sont disponibles sur le bureau avec toutes les fonctionnalités Win32.
 
 Pour plus d’informations sur UWP, consultez la page [Développer des applications pour la plateforme Windows universelle (UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md).
@@ -382,8 +383,8 @@ Si vous souhaitez faire des suggestions sur la façon dont nous pouvons amélior
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Notes de publication de Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes)
-* [Nouveautés du Kit de développement logiciel (SDK) Visual Studio 2017](/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk)
+* [Notes de publication de Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes)
+* [Nouveautés du SDK Visual Studio 2017](/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk)
 * [Nouveautés de Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Nouveautés de C#](/dotnet/csharp/whats-new)
 * [Nouveautés de Team Foundation Server](/tfs/server/whats-new?view=vsts)
