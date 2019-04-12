@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 244841b5b9416709eda0913d53535d29c83df647
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: dee5d1ec207f2b7bec030076797720fe9e8216ed
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870397"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504261"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Procédure pas à pas : Créer une colonne de site, le type de contenu et la liste pour SharePoint
   Les procédures suivantes montrent comment créer des colonnes de site SharePoint personnalisées, ou *champs*, ainsi que d’un type de contenu qui utilise les colonnes de site. Il montre également comment créer une liste qui utilise le nouveau type de contenu.
@@ -46,7 +46,7 @@ ms.locfileid: "57870397"
 
 -   Éditions prises en charge de Windows et SharePoint.
 
--   Visual Studio.
+-   [!INCLUDE[vsprvs-current](../sharepoint/includes/vsprvs-current-md.md)]
 
 ## <a name="create-custom-site-columns"></a>Créer des colonnes de site personnalisé
  Cet exemple crée une liste pour la gestion des patients dans un hôpital. Tout d’abord, vous devez créer un projet SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] et ajouter des colonnes de site, comme suit.
@@ -67,7 +67,7 @@ ms.locfileid: "57870397"
 
      Pour plus d’informations sur le bac à sable et les solutions de batterie, consultez [considérations relatives à la solution bac à sable](../sharepoint/sandboxed-solution-considerations.md).
 
-6.  Choisissez le **Terminer** bouton. Le projet doit figurer dans **l’Explorateur de solutions**.
+6.  Choisissez le **Terminer** bouton. Le projet est maintenant répertorié dans **l’Explorateur de solutions**.
 
 #### <a name="to-add-site-columns"></a>Pour ajouter des colonnes de site
 
@@ -222,6 +222,6 @@ ms.locfileid: "57870397"
 ## <a name="see-also"></a>Voir aussi
 - [Créer des colonnes de site, les types de contenu et listes pour SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)
 - [Développer des solutions SharePoint](../sharepoint/developing-sharepoint-solutions.md)
-- [Guide pratique pour Créer un Type de champ personnalisé](http://go.microsoft.com/fwlink/?LinkId=192079)
+- [Procédure : Créer un Type de champ personnalisé](http://go.microsoft.com/fwlink/?LinkId=192079)
 - [Types de contenu](http://go.microsoft.com/fwlink/?LinkId=192080)
 - [Colonnes](http://go.microsoft.com/fwlink/?LinkId=192081)

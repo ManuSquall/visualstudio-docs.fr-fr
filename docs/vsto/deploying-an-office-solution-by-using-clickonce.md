@@ -13,35 +13,35 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8499e6f34ae43e0dfa64b98950316dc65227baac
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 90f7fe4d3e4b316f48aed46c40b3d24e0969a536
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863927"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504430"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Déployer une solution Office à l’aide de ClickOnce
   Vous pouvez déployer votre solution Office plus rapidement en utilisant ClickOnce. Si vous publiez des mises à jour, votre solution les détecte et les installe automatiquement. Toutefois, avec ClickOnce, vous devez installer votre solution séparément pour chaque utilisateur d'un ordinateur. Par conséquent, vous devez envisager d’utiliser le programme d’installation de Windows (*.msi*) si plusieurs utilisateurs exécutent votre solution sur le même ordinateur.
 
 ## <a name="in-this-topic"></a>Dans cette rubrique
 
-- [Publiez la solution](#Publish)
+- [Publier la solution](#Publish)
 
-- [Décidez comment vous souhaitez accorder une confiance à la solution](#Trust)
+- [Déterminer comment accorder un niveau de confiance à la solution](#Trust)
 
 - [Aider les utilisateurs à installer la solution](#Helping)
 
-- [Placer le document d’une solution sur l’ordinateur de l’utilisateur final (personnalisations au niveau du document uniquement)](#Put)
+- [Placer le document d'une solution sur l'ordinateur de l'utilisateur final (personnalisations au niveau du document uniquement)](#Put)
 
-- [Placer le document d’une solution sur un serveur qui exécute SharePoint (personnalisations au niveau du document uniquement)](#SharePoint)
+- [Placer le document d'une solution sur un serveur exécutant SharePoint (personnalisations au niveau du document uniquement)](#SharePoint)
 
-- [Créer un programme d’installation personnalisé](#Custom)
+- [Créer un programme d'installation personnalisé](#Custom)
 
 - [Publier une mise à jour](#Update)
 
-- [Modifier l’emplacement d’installation d’une solution](#Location)
+- [Modifier l'emplacement d'installation d'une solution](#Location)
 
-- [Restaurer une version antérieure d’une solution](#Roll)
+- [Restaurer la version antérieure d'une solution](#Roll)
 
   Pour plus d’informations sur la façon de déployer une solution Office en créant un fichier Windows Installer, consultez [déployer une solution Office à l’aide du programme d’installation de Windows](../vsto/deploying-an-office-solution-by-using-windows-installer.md).
 
@@ -60,7 +60,7 @@ ms.locfileid: "54863927"
 
 4. Dans le **emplacement du dossier de publication (serveur ftp ou chemin d’accès de fichier)** , entrez le chemin d’accès du dossier où vous souhaitez le **Concepteur de projet** pour copier les fichiers de solution.
 
-    Vous pouvez entrer n’importe lequel des types de chemins d’accès suivants.
+    Vous pouvez entrer n'importe lequel des types de chemins d'accès suivants.
 
    -   Un chemin d’accès local (par exemple, *C:\FolderName\FolderName*).
 
@@ -92,8 +92,8 @@ ms.locfileid: "54863927"
     |Option|Description|
     |------------|-----------------|
     |**Télécharger les composants requis à partir du site web du fournisseur de composants**|L'utilisateur est invité à télécharger et à installer les composants requis du fournisseur.|
-    |**Télécharger les composants requis à partir de l’emplacement de mon application**|Les logiciels requis sont installés avec la solution. Si vous choisissez cette option, Visual Studio copie tous les packages de composants requis dans l'emplacement de publication à votre place. Pour que cette option fonctionne, les packages de composants requis doivent être sur l'ordinateur de développement.|
-    |**Télécharger les composants requis depuis l’emplacement suivant**|Visual Studio copie tous les packages de composants requis dans l'emplacement que vous spécifiez et les installe avec la solution.|
+    |**Télécharger les composants requis à partir de l'emplacement de mon application**|Les logiciels requis sont installés avec la solution. Si vous choisissez cette option, Visual Studio copie tous les packages de composants requis dans l'emplacement de publication à votre place. Pour que cette option fonctionne, les packages de composants requis doivent être sur l'ordinateur de développement.|
+    |**Télécharger les composants requis depuis l'emplacement suivant**|Visual Studio copie tous les packages de composants requis dans l'emplacement que vous spécifiez et les installe avec la solution.|
 
      Consultez [boîte de dialogue composants requis](../ide/reference/prerequisites-dialog-box.md).
 
@@ -124,7 +124,7 @@ ms.locfileid: "54863927"
 
     - Des assemblys de personnalisation.
 
-      L’illustration suivante représente la structure du dossier de publication pour un complément VSTO Outlook.
+      L'illustration suivante représente la structure du dossier de publication pour un complément VSTO Outlook.
 
       ![Publier la Structure de dossiers](../vsto/media/publishfolderstructure.png "publier la Structure de dossiers")
 
@@ -139,7 +139,7 @@ ms.locfileid: "54863927"
  Si vous déployez une personnalisation au niveau du document et que vous souhaitez placer le document dans un dossier sur l’ordinateur de l’utilisateur ou rendre le document disponible sur un site SharePoint, assurez-vous qu’Office approuve l’emplacement du document. Consultez [accorder une confiance aux documents](../vsto/granting-trust-to-documents.md).
 
 ##  <a name="Helping"></a> Aider les utilisateurs à installer la solution
- Les utilisateurs peuvent installer la solution en exécutant le programme d'installation, en ouvrant le manifeste de déploiement, ou dans le cas d'une personnalisation au niveau du document, en ouvrant le document directement. Il est recommandé que les utilisateurs installent votre solution à l'aide du programme d'installation. Les deux autres approches ne garantissent pas que les logiciels requis sont installé. Si les utilisateurs souhaitent ouvrir le document à partir de l'emplacement d'installation, ils doivent l'ajouter à la liste des emplacements approuvés dans le Centre de gestion de la confidentialité des applications Office.
+ Les utilisateurs peuvent installer la solution en exécutant le programme d’installation, en ouvrant le manifeste de déploiement, ou au cours de personnalisation au niveau du document, en ouvrant le document directement. Il est recommandé que les utilisateurs installent votre solution à l'aide du programme d'installation. Les deux autres approches ne garantissent pas que les logiciels requis sont installé. Si les utilisateurs souhaitent ouvrir le document à partir de l'emplacement d'installation, ils doivent l'ajouter à la liste des emplacements approuvés dans le Centre de gestion de la confidentialité des applications Office.
 
 ### <a name="opening-the-document-of-a-document-level-customization"></a>Ouverture du document d'une personnalisation au niveau du document
  Les utilisateurs peuvent ouvrir le document d'une personnalisation au niveau du document à partir de l'emplacement d'installation ou en copiant le document sur leur ordinateur local, puis en ouvrant la copie.
@@ -190,7 +190,7 @@ ms.locfileid: "54863927"
 ##  <a name="Put"></a> Placer le document d’une solution sur l’ordinateur de l’utilisateur final (personnalisations au niveau du document uniquement)
  Vous pouvez copier le document de votre solution sur l’ordinateur de l’utilisateur final pour eux par la création d’une action de post-déploiement. De cette façon, l’utilisateur ne doit manuellement copier le document à partir de l’emplacement d’installation sur son ordinateur après l’installation de votre solution. Vous devrez créer une classe qui définit l’action de post-déploiement, générez et publiez la solution, modifier le manifeste d’application et resigner le manifeste d’application et de déploiement.
 
- Les procédures suivantes supposent que le nom de votre projet est **ExcelWorkbook** et que vous publiez la solution dans le **C:\publish** répertoire sur votre ordinateur.
+ Les procédures suivantes supposent que le nom de votre projet est **ExcelWorkbook** et que vous publiez la solution dans un dossier nommé **C:\publish** sur votre ordinateur.
 
 ### <a name="create-a-class-that-defines-the-post-deployment-action"></a>Créer une classe qui définit l'action de post-déploiement
 
@@ -208,7 +208,7 @@ ms.locfileid: "54863927"
 
 7. Sur le **.NET** onglet, ajoutez des références à `Microsoft.VisualStudio.Tools.Applications.Runtime` et `Microsoft.VisualStudio.Tools.Applications.ServerDocument`.
 
-8. Remplacez le nom de la classe par `FileCopyPDA`, puis remplacez le contenu du fichier par le code. Ce code exécute les tâches suivantes :
+8. Remplacez le nom de la classe par `FileCopyPDA`, puis remplacez le contenu du fichier par le code. Ce code exécute les tâches suivantes :
 
    - Il copie le document dans le bureau de l'utilisateur.
 
@@ -253,7 +253,7 @@ ms.locfileid: "54863927"
 
 ### <a name="modify-the-application-manifest"></a>Modifier le manifeste d'application
 
-1.  Ouvrez le **c:\publish** répertoire à l’aide de **Explorateur de fichiers**.
+1.  Ouvrez le répertoire de solution, **c:\publish**, à l’aide de **Explorateur de fichiers**.
 
 2.  Ouvrez le **fichiers d’Application** , puis ouvrez le dossier qui correspond à la plus récente publié la version de votre solution.
 
@@ -302,7 +302,7 @@ ms.locfileid: "54863927"
     > [!NOTE]
     >  Dans l’exemple précédent, remplacez MostRecentVersionNumber par le numéro de version de la version récemment publiée de votre solution (par exemple, **1_0_0_4**).
 
-     Le message « ExcelWorkbook.vsto signé avec succès » s’affiche.
+     Le message « ExcelWorkbook.vsto signé avec succès » s'affiche.
 
 5.  Copie le *ExcelWorkbook.vsto* de fichiers à la **c:\publish\Application Files\ExcelWorkbook**\__MostRecentVersionNumber_ directory.
 
@@ -336,11 +336,11 @@ ms.locfileid: "54863927"
              Lorsque les utilisateurs ouvrent le document du site SharePoint, le document s'ouvre, et la personnalisation est installée. Les utilisateurs peuvent copier le document sur leur bureau. La personnalisation fonctionne toujours car les propriétés du document pointent vers l'emplacement réseau du document.
 
 ##  <a name="Custom"></a> Créer un programme d’installation personnalisé
- Vous pouvez créer un programme d’installation personnalisé pour votre solution Office, au lieu d’utiliser le programme d’installation qui est créé pour vous lorsque vous publiez la solution. Par exemple, vous pouvez utiliser un script de connexion pour démarrer l'installation des solutions Office ou utiliser un fichier de commandes pour installer la solution Office sans intervention de l'utilisateur. Ces scénarios conviennent parfaitement si les composants requis sont déjà installés sur les ordinateurs des utilisateurs finaux.
+ Vous pouvez créer un programme d’installation personnalisé pour votre solution Office, au lieu d’utiliser le programme d’installation qui est créé pour vous lorsque vous publiez la solution. Par exemple, vous pouvez utiliser une connexion dans le script pour démarrer l’installation, ou vous pouvez utiliser un fichier de commandes pour installer la solution sans intervention de l’utilisateur. Ces scénarios conviennent parfaitement si les composants requis sont déjà installés sur les ordinateurs des utilisateurs finaux.
 
  Dans le cadre du processus d’installation personnalisée, appelez l’outil de programme d’installation pour les solutions Office (*VSTOInstaller.exe*), qui est installé dans l’emplacement suivant par défaut :
 
- *%CommonProgramFiles%\Microsoft shared\VSTO\10.0\VSTOInstaller.exe*
+ *%commonprogramfiles%\microsoft shared\VSTO\10.0\VSTOInstaller.exe*
 
  Si l’outil n’est pas dans cet emplacement, vous pouvez utiliser la **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSTO Runtime Setup\v4\InstallerPath** ou **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSTO Runtime Setup\v4 \InstallerPath** clé de Registre pour rechercher le chemin d’accès à cet outil.
 
@@ -358,10 +358,10 @@ ms.locfileid: "54863927"
 
 |Code d'erreur|Définition|
 |----------------|----------------|
-|0|La solution a été installée ou désinstallée ou l'aide de VSTOInstaller s'est affichée.|
+|0|La solution a été installée ou désinstallée ou l’aide de VSTOInstaller s’est affichée.|
 |-100|Une ou plusieurs options de ligne de commande ne sont pas valides ou ont été définies plusieurs fois. Pour plus d’informations, entrez « vstoinstaller / ? » ou consultez [créer un programme d’installation personnalisé pour une solution ClickOnce Office](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e).|
-|-101|Une ou plusieurs options de ligne de commande n’est pas valide. Pour plus d’informations, entrez « vstoinstaller/? ».|
-|-200|L’URI du manifeste de déploiement n’est pas valide. Pour plus d’informations, entrez « vstoinstaller/? ».|
+|-101|Une ou plusieurs options de ligne de commande ne sont pas valides. Pour plus d'informations, entrez « vstoinstaller/? ».|
+|-200|L’URI du manifeste de déploiement n’est pas valide. Pour plus d'informations, entrez « vstoinstaller/? ».|
 |-201|La solution n’a pas pu être installée car le manifeste de déploiement n’est pas valide. Consultez [manifestes de déploiement pour les solutions Office](../vsto/deployment-manifests-for-office-solutions.md).|
 |-202|La solution n’a pas pu être installée, car Visual Studio Tools pour la section Office du manifeste d’application n’est pas valide. Consultez [manifestes d’Application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).|
 |-203|La solution n’a pas pu être installée car une erreur de téléchargement s’est produite. Vérifiez l'URI ou l'emplacement de fichier réseau du manifeste de déploiement et réessayez.|
@@ -376,9 +376,9 @@ ms.locfileid: "54863927"
  La prochaine fois que la solution vérifie pour une mise à jour, il trouver et charger la nouvelle version automatiquement.
 
 ##  <a name="Location"></a> Modifier l’emplacement d’installation d’une solution
- Vous pouvez ajouter ou modifier le chemin d’installation après avoir publié une solution. Vous pourriez vouloir modifier le chemin d'installation pour l'une ou plusieurs des raisons suivantes :
+ Vous pouvez ajouter ou modifier le chemin d’installation après avoir publié une solution. Vous pourriez vouloir modifier le chemin d’installation pour l’une ou plusieurs des raisons suivantes :
 
-- Le chemin d'installation n'était pas connu lors de la compilation du programme d'installation.
+- Le chemin d’installation n’était pas connu lors de la compilation du programme d’installation.
 
 - Les fichiers solution ont été copiés vers un autre emplacement.
 
@@ -393,9 +393,9 @@ ms.locfileid: "54863927"
 
 1. Ouvrir un **invite de commandes** fenêtre, puis modifiez les répertoires vers le dossier d’installation.
 
-2. Exécutez le programme d’installation et incluez le paramètre `/url`, qui prend le nouveau chemin d’installation comme une chaîne.
+2. Exécutez le programme d'installation et incluez le paramètre `/url`, qui prend le nouveau chemin d'installation comme une chaîne.
 
-    L'exemple suivant indique comment modifier le chemin d'installation dans un emplacement sur le site Web Fabrikam, mais vous pouvez remplacer cette URL par le chemin d'accès souhaité :
+    L’exemple suivant indique comment modifier le chemin d’installation dans un emplacement sur le site web Fabrikam, mais vous pouvez remplacer cette URL par le chemin d’accès souhaité :
 
    ```cmd
    setup.exe /url="http://www.fabrikam.com/newlocation"
@@ -461,7 +461,7 @@ ms.locfileid: "54863927"
 
 - [Déployer une solution Office](../vsto/deploying-an-office-solution.md)
 - [Publier les solutions Office](../vsto/deploying-an-office-solution-by-using-clickonce.md)
-- [Guide pratique pour Publier une solution Office à l’aide de ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
-- [Guide pratique pour Installer une solution ClickOnce Office](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)
-- [Guide pratique pour Publier une solution de Office au niveau du document sur un serveur SharePoint à l’aide de ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)
+- [Procédure : Publier une solution Office à l’aide de ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [Procédure : Installer une solution ClickOnce Office](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)
+- [Procédure : Publier une solution de Office au niveau du document sur un serveur SharePoint à l’aide de ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)
 - [Créer un programme d’installation personnalisé pour une solution office de ClickOnce](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)

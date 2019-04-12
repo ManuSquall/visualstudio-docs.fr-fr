@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f2272323d13121865ace371b2dc1a921106e34e
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: c45635da013f360ccbb1fe2343bca23a58f142c4
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869016"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504105"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>Prise en main (développement de SharePoint dans Visual Studio)
   Cette section vous permet de commencer à utiliser [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pour développer des solutions SharePoint qui tirent parti de [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] et [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)].
@@ -39,10 +39,11 @@ ms.locfileid: "57869016"
 |Rubrique|Description|
 |-----------|-----------------|
 |[Développement de solutions SharePoint](../sharepoint/developing-sharepoint-solutions.md)|Décrit le développement SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
+|[Configuration d’un environnement de développement général pour SharePoint](/sharepoint/dev/general-development/set-up-a-general-development-environment-for-sharepoint)|Décrit les installations requises pour la création d’une SharePoint Solution|
 |[Créer des colonnes de site, les types de contenu et listes pour SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)|Décrit comment créer des colonnes de site personnalisées, des types de contenu et des listes pour SharePoint à l'aide des outils Visual Studio pour le développement SharePoint.|
 |[Créer des solutions de flux de travail SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)|Décrit la conception et le développement de flux de travail.|
 |[Intégrer des données métiers dans SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)|Décrit comment se connecter aux modèles de connectivité de données métiers pour intégrer des données métiers.|
-|[Creatie web parts pour SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|Décrit les composants WebPart et Web Part Pages, les blocs de construction des pages sur un site SharePoint.|
+|[Créer des composants WebPart pour SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|Décrit les composants WebPart et Web Part Pages, les blocs de construction des pages sur un site SharePoint.|
 |[Créer des pages d’application pour SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Explique comment concevoir des pages d'application à l'aide d'un concepteur.|
 |[Créer des contrôles réutilisables pour les composants WebPart ou les pages d’application](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|Décrit comment créer des contrôles réutilisables personnalisés pour les pages d'application et les composants WebPart dans SharePoint.|
 |[Parcourir les connexions SharePoint à l’aide de l’Explorateur de serveurs](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|Explique comment naviguer dans les composants d'un site SharePoint dans une fenêtre d'outils Visual Studio.|
