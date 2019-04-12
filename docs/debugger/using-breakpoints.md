@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6edffaa0b45cc045428161dc04bf52d1c607c51c
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 59b654472b9173d5cb5559a57f644113b382fdb8
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366689"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504326"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Utilisez des points d’arrêt dans le débogueur Visual Studio
 Points d’arrêt sont une des techniques de débogage plus importantes dans la boîte à outils du développeur de votre. Vous définissez des points d’arrêt là où vous souhaitez suspendre l’exécution du débogueur. Par exemple, vous souhaitez afficher l’état des variables de code ou examiner la pile des appels à un certain point d’arrêt. Si c’est la première fois que vous essayez de déboguer du code, vous pouvez lire [Débogage pour grands débutants](../debugger/debugging-absolute-beginners.md) avant de poursuivre cet article.
@@ -147,6 +147,28 @@ Pour plus d’informations sur la pile des appels, consultez [Comment : Utilise
     ```C++
     ((my_class *) 0xcccccccc)->my_method
     ```
+::: moniker range=">= vs-2019"
+
+## <a name="BKMK_set_a_data_breakpoint_managed"></a>Définir des points d’arrêt de données (.NET Core 3.0 ou version ultérieure)
+
+Points d’arrêt données arrêter l’exécution lors de la propriété d’un objet spécifique change.
+
+**Pour définir un point d’arrêt de données**
+
+1. Dans un projet .NET Core, démarrez le débogage et attendez qu’un point d’arrêt est atteint.
+
+2. Dans le le **automatique**, **espion**, ou **variables locales** fenêtre, cliquez sur une propriété et sélectionnez **arrêter lorsque la valeur change** dans le menu contextuel.
+
+    ![Géré de point d’arrêt](../debugger/media/managed-data-breakpoint.png "gérés de point d’arrêt")
+
+Points d’arrêt de données dans .NET Core ne fonctionnent pas pour :
+
+- Propriétés qui ne sont pas extensibles dans l’info-bulle, variables locales, automatique, ou la fenêtre Espion
+- Variables statiques
+- Classes avec l’attribut DebuggerTypeProxy
+- Champs à l’intérieur de structures 
+
+::: moniker-end
 
 ## <a name="BKMK_set_a_data_breakpoint_native_cplusplus"></a>Définir des points d’arrêt de données (natif C++ uniquement)
 
@@ -156,7 +178,7 @@ Pour plus d’informations sur la pile des appels, consultez [Comment : Utilise
 
 1.  Dans un projet C++, démarrez le débogage et attendez qu’un point d’arrêt est atteint. Sur le **déboguer** menu, choisissez **nouveau point d’arrêt** > **point d’arrêt**
 
-    Vous pouvez également sélectionner **New** > **point d’arrêt** dans le **des points d’arrêt** fenêtre.
+    Vous pouvez également sélectionner **New** > **point d’arrêt** dans le **des points d’arrêt** fenêtre ou cliquez sur un élément dans le **automatique**, **Espion**, ou **variables locales** fenêtre et sélectionnez **arrêter lorsque la valeur change**dans le menu contextuel.
 
 2.  Dans la zone **Adresse**, tapez une adresse mémoire ou une expression qui prend comme valeur une adresse mémoire. Par exemple, tapez `&avar` pour interrompre l’exécution quand le contenu de la variable `avar` change.
 
