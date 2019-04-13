@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4656ae21c51d105c2d523275af63e84c2326d4d
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: bb47aa94dbf444e27fd149e2e16c723677f973eb
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366300"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537557"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Découvrez des conseils de productivité et des astuces pour le débogueur dans Visual Studio
 
@@ -52,6 +52,10 @@ S’il est difficile ou du temps recréer un état particulier dans votre applic
     ![Point d’arrêt conditionnel](../debugger/media/dbg-multithreaded-conditional-breakpoint.png "ConditionalBreakpoint")
 
 3. Si vous êtes intéressé par un autre type de condition, sélectionnez **filtre** au lieu de **expression conditionnelle** dans le **les paramètres de point d’arrêt** boîte de dialogue, puis suivez les conseils de filtre.
+
+## <a name="configure-the-data-to-show-in-the-debugger"></a>Configurer les données à afficher dans le débogueur
+
+Pour C#, Visual Basic, et C++ (C++code /CLI uniquement), vous pouvez demander au débogueur que les informations à afficher à l’aide de la [DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md) attribut. Pour C++ code, vous pouvez effectuer la même utilisation [visualisations Natvis](create-custom-views-of-native-objects.md).
 
 ## <a name="change-the-execution-flow"></a>Changer le flux d’exécution
 

@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59b654472b9173d5cb5559a57f644113b382fdb8
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.openlocfilehash: 9cfb3e68f1f967c3c74c93107b622c618a8af728
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504326"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537596"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Utilisez des points d’arrêt dans le débogueur Visual Studio
 Points d’arrêt sont une des techniques de débogage plus importantes dans la boîte à outils du développeur de votre. Vous définissez des points d’arrêt là où vous souhaitez suspendre l’exécution du débogueur. Par exemple, vous souhaitez afficher l’état des variables de code ou examiner la pile des appels à un certain point d’arrêt. Si c’est la première fois que vous essayez de déboguer du code, vous pouvez lire [Débogage pour grands débutants](../debugger/debugging-absolute-beginners.md) avant de poursuivre cet article.
@@ -113,21 +113,21 @@ Pour plus d’informations sur la pile des appels, consultez [Comment : Utilise
 
    - Utilisez le nom de fonction qualifié complet.
 
-     Exemple :  `Namespace1.ClassX.MethodA()`
+     Exemple : `Namespace1.ClassX.MethodA()`
 
    - Ajouter les types de paramètre d’une fonction surchargée.
 
-     Exemple :  `MethodA(int, string)`
+     Exemple : `MethodA(int, string)`
 
    - Utilisez le ' !' symbole pour spécifier le module.
 
-     Exemple : `App1.dll!MethodA`
+     Exemple : `App1.dll!MethodA`
 
    - Utilisez l’opérateur de contexte en C++ natif.
 
      `{function, , [module]} [+<line offset from start of method>]`
 
-     Exemple : `{MethodA, , App1.dll}+2`
+     Exemple : `{MethodA, , App1.dll}+2`
 
 1. Dans le **langage** liste déroulante, choisissez la langue de la fonction.
 
@@ -176,13 +176,13 @@ Points d’arrêt de données dans .NET Core ne fonctionnent pas pour :
 
 **Pour définir un point d’arrêt de données :**
 
-1.  Dans un projet C++, démarrez le débogage et attendez qu’un point d’arrêt est atteint. Sur le **déboguer** menu, choisissez **nouveau point d’arrêt** > **point d’arrêt**
+1. Dans un projet C++, démarrez le débogage et attendez qu’un point d’arrêt est atteint. Sur le **déboguer** menu, choisissez **nouveau point d’arrêt** > **point d’arrêt**
 
     Vous pouvez également sélectionner **New** > **point d’arrêt** dans le **des points d’arrêt** fenêtre ou cliquez sur un élément dans le **automatique**, **Espion**, ou **variables locales** fenêtre et sélectionnez **arrêter lorsque la valeur change**dans le menu contextuel.
 
-2.  Dans la zone **Adresse**, tapez une adresse mémoire ou une expression qui prend comme valeur une adresse mémoire. Par exemple, tapez `&avar` pour interrompre l’exécution quand le contenu de la variable `avar` change.
+2. Dans la zone **Adresse**, tapez une adresse mémoire ou une expression qui prend comme valeur une adresse mémoire. Par exemple, tapez `&avar` pour interrompre l’exécution quand le contenu de la variable `avar` change.
 
-3.  Dans la zone déroulante **Nombre d’octets** , sélectionnez le nombre d’octets que le débogueur doit surveiller. Par exemple, si vous sélectionnez **4**, le débogueur surveille les quatre octets à partir de `&avar` et interrompt l’exécution si l’un de ces octets change de valeur.
+3. Dans la zone déroulante **Nombre d’octets** , sélectionnez le nombre d’octets que le débogueur doit surveiller. Par exemple, si vous sélectionnez **4**, le débogueur surveille les quatre octets à partir de `&avar` et interrompt l’exécution si l’un de ces octets change de valeur.
 
 Points d’arrêt de données ne fonctionnent pas dans les conditions suivantes :
 -   Un processus qui n’est pas en cours de débogage écrit à l’emplacement mémoire.
