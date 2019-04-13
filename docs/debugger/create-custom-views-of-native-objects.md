@@ -1,5 +1,5 @@
 ---
-title: Créer des vues personnalisées d'objets natifs
+title: Créer des vues personnalisées de C++ objets
 description: Utiliser l’infrastructure Natvis pour personnaliser la façon dont Visual Studio affiche les types natifs dans le débogueur
 ms.date: 10/31/2018
 ms.topic: conceptual
@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa0f457c81b39f05a18250a5c7ece7533ccc1788
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.openlocfilehash: 1f56dda1f64a0bd50a6bb81b981ad4add7d9c095
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428802"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537575"
 ---
-# <a name="create-custom-views-of-native-objects-in-the-debugger"></a>Créer des vues personnalisées d’objets natifs dans le débogueur
+# <a name="create-custom-views-of-c-objects-in-the-debugger"></a>Créer des vues personnalisées de C++ objets dans le débogueur
 
 Visual Studio *Natvis* framework personnalise l’apparence des types natifs dans les fenêtres de variables du débogueur, telles que la **variables locales** et **espion** windows et dans **DataTips**. Les visualisations Natvis peuvent aider à rendre les types que vous créez plus visible pendant le débogage.
 
@@ -165,7 +165,7 @@ Lorsque le débogueur rencontre des erreurs dans une entrée de visualisation, i
 
 **Pour activer le diagnostic Natvis :**
 
-- Sous **outils** > **Options** (ou **déboguer** > **Options**) > **dedébogage**  >  **Fenêtre sortie**, affectez la valeur **messages de diagnostic Natvis (C++ uniquement)** à **erreur**, **avertissement**, ou  **Verbose**, puis sélectionnez **OK**.
+- Sous **outils** > **Options** (ou **déboguer** > **Options**) > **dedébogage**  >  **Fenêtre sortie**, affectez la valeur **les messages de diagnostic Natvis (C++ uniquement)** à **erreur**, **avertissement** , ou **Verbose**, puis sélectionnez **OK**.
 
 Les erreurs apparaissent dans le **sortie** fenêtre.
 
@@ -664,7 +664,7 @@ Voici un exemple d'élément UIVisualizer :
 
 - Un `ServiceId`  -  `Id` paire attribut identifie un `UIVisualizer`. Le `ServiceId` est le GUID du service le visualiseur expose de package. `Id` est un identificateur unique qui différencie les visualiseurs, si un service en propose plusieurs. Dans l’exemple précédent, le même service de visualiseur fournit deux visualiseurs.
 
-- Le `MenuName` attribut définit un nom de visualiseur à afficher dans la liste déroulante en regard de l’icône de loupe qui se trouve dans le débogueur. Par exemple :
+- Le `MenuName` attribut définit un nom de visualiseur à afficher dans la liste déroulante en regard de l’icône de loupe qui se trouve dans le débogueur. Exemple :
 
   ![Menu contextuel du menu UIVisualizer](../debugger/media/dbg_natvis_vectorvisualizer.png "menu contextuel du menu UIVisualizer")
 

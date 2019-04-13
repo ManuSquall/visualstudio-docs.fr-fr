@@ -1,5 +1,5 @@
 ---
-title: À l’aide de l’attribut DebuggerDisplay | Microsoft Docs
+title: Afficher les informations personnalisées à l’aide de DebuggerDisplay | Microsoft Docs
 ms.date: 01/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4073ad5f112f0585f01de756f2cde4b352b7446a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 5b9c98411e378601280d36dbe4720864177d4019
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680185"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537635"
 ---
-# <a name="using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>À l’aide de l’attribut DebuggerDisplay (C#, Visual Basic, F#, C et c++ / CLI)
+# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Demander au débogueur les éléments à afficher à l’aide de l’attribut DebuggerDisplay (C#, Visual Basic, F#, C++/CLI)
 La <xref:System.Diagnostics.DebuggerDisplayAttribute> contrôle la façon dont un objet, une propriété ou un champ s’affiche dans les fenêtres de variables du débogueur. Cet attribut peut être appliqué aux éléments suivants : types, délégués, propriétés, champs et assemblys.
 
 L'attribut `DebuggerDisplay` possède un seul argument, qui est une chaîne à afficher dans la colonne valeur des instances du type. Cette chaîne peut contenir des accolades (`{` et `}`). Le texte entre deux accolades est évalué comme un champ, une propriété ou une méthode.
@@ -32,7 +32,7 @@ L’évaluation par le débogueur de cet appel `ToString()` implicite dépend d�
 > Si la case **Afficher la structure brute des objets dans des fenêtres de variables** est cochée dans la boîte de dialogue **Outils / Options / Débogage** , l’attribut `DebuggerDisplay` est ignoré.
 
 > [!NOTE]
-> Pour le code natif, cet attribut est pris en charge uniquement en C / c++ / code de l’interface CLI.
+> Pour le code natif, cet attribut est pris en charge uniquement dans C++code /CLI.
 
 Le tableau suivant montre quelques-unes des utilisations possibles de l'attribut `DebuggerDisplay` et quelques exemples de sorties.
 
