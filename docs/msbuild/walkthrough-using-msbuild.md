@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2248c5e8c974d4445db37e265725bcee60d3a9a4
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: ae318a4fbfe7e452ab995ad53d961d288c0cbcf5
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897736"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584400"
 ---
 # <a name="walkthrough-use-msbuild"></a>Procédure pas à pas : Utiliser MSBuild
 
@@ -379,7 +379,7 @@ Pour changer le séparateur d’un type d’élément, utilisez la syntaxe suiva
 
 Modifiez la tâche Message afin d’utiliser des retours chariot et des sauts de ligne (%0A%0D) pour afficher un élément Compile par ligne.
 
-**Pour afficher une valeur de type d’élément par ligne**
+**Pour afficher des valeurs de type d’élément une par ligne**
 
 1.  Dans l’éditeur de code, remplacez la tâche Message par cette ligne :
 
@@ -416,7 +416,7 @@ Modifiez la tâche Message afin d’utiliser des retours chariot et des sauts de
  ajoute tous les fichiers pourvus de l’extension de fichier *.jpeg* du dossier *images* au type d’élément Photos, alors que
 
 ```xml
-<Photos Include="images\**.jpeg" />
+<Photos Include="images\**\*.jpeg" />
 ```
 
  ajoute tous les fichiers pourvus de l’extension de fichier *.jpeg* du dossier *images* et de l’ensemble de ses sous-dossiers, au type d’élément Photos. Pour plus d'exemples, consultez [Procédure : Sélectionner des fichiers dans une build](../msbuild/how-to-select-the-files-to-build.md).
@@ -428,7 +428,7 @@ Modifiez la tâche Message afin d’utiliser des retours chariot et des sauts de
 <Photos Include="images\*.gif" />
 ```
 
- crée un type d’élément nommé Photo qui contient tous les fichiers du dossier *images* pourvus d’une extension de fichier *.jpeg* ou *.gif*. Cet exemple est équivalent à celui de la ligne suivante :
+ crée un type d’élément nommé Photo qui contient tous les fichiers du dossier *images* avec une extension de fichier *.jpeg* ou *.gif*. Cet exemple est équivalent à celui de la ligne suivante :
 
 ```xml
 <Photos Include="images\*.jpeg;images\*.gif" />
