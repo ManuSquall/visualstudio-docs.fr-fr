@@ -3,19 +3,19 @@ title: Gérer les dépendances de package à l’aide d’un fichier requirement
 description: Fichier requirements.txt contenant les dépendances d’un projet. Si vous recevez un projet contenant un fichier requirements.txt, vous pouvez installer ces dépendances en toute simplicité, en une seule étape.
 ms.date: 03/18/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 88cd2ee237a92aff4ca6f641556b8003be550c3d
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: a1853df63354801ebf0413d3c8707135cb9bb800
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194838"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365234"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>Gérer les packages requis avec requirements.txt
 
@@ -71,4 +71,4 @@ Cleaning up...
 - [Gérer les environnements Python dans Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Sélectionner un interpréteur pour un projet](selecting-a-python-environment-for-a-project.md)
 - [Chemins de recherche](search-paths.md)
-- [Référence sur la fenêtre Environnements Python](python-environments-window-tab-reference.md)
+- [Informations de référence sur la fenêtre Environnements Python](python-environments-window-tab-reference.md)

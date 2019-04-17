@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 03/26/2019
+ms.date: 04/11/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3e88054d497bda068585b7bc58787ee3058bcb71
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: 6246291a00a86a3cde0e3a9cf134724d9dc470ed
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476083"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537648"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numéros de builds et dates de publication de Visual Studio
 
@@ -31,6 +31,7 @@ Le tableau suivant répertorie les numéros de build et les dates de publication
 
 | **Version**| **Canal** | **Date de publication** | **Version de build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.11 | Édition | 2 avril 2019 | 15.9.28307.586 |
 | 15.9.10 | Édition | 25 mars 2019 | 15.9.28307.557 |
 | 15.9.9 | Édition | 12 mars 2019 | 15.9.28307.518 |
 | 15.0.21 | Édition | 12 mars 2019 | 15.0.26228.76 |
@@ -192,6 +193,13 @@ Le tableau suivant liste les numéros de build et les dates de publication de Vi
 
 | **Version**| **Canal** | **Date de publication** | **Version de build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.1.0 | Preview 1 | 10 avril 2019 | 16.1.28809.33 |
+| 16.0.1 | Édition | 9 avril 2019 | 16.0.28803.156 |
+| 16.0.1 | Preview 1 | 9 avril 2019 | 16.0.28803.156 |
+| 16.0.0 | Édition | 2 avril 2019 | 16.0.28729.10 |
+| 16.0.0 | Preview 5 | 2 avril 2019 | 16.0.28729.10 |
+| 16.0.0 | Release Candidate 4 (RC 4) | 26 mars 2019 | 16.0.28721.148 |
+| 16.0.0 | Preview 4.4 | 26 mars 2019 | 16.0.28721.148 |
 | 16.0.0 | Release Candidate 3 (RC.3) | 19 mars 2019 | 16.0.28714.193 |
 | 16.0.0 | Preview 4.3 | 19 mars 2019 | 16.0.28714.193 |
 | 16.0.0 | Release Candidate 2 (RC.2) | 12 mars 2019 | 16.0.28711.60 |
@@ -208,6 +216,9 @@ Le tableau suivant liste les numéros de build et les dates de publication de Vi
 | 16.0.0 | Préversion 2 | 23 janvier 2019 | 16.0.28522.59 |
 | 16.0.0 | Preview 1.1 | 10 décembre 2018 | 16.0.28408.50 |
 | 16.0.0 | Preview 1 | 4 décembre 2018 | 16.0.28329.73 |
+
+> [!NOTE]
+> Pour obtenir la liste des numéros de build et des dates de sortie de la version précédente, voir [Numéros de build et dates de publication de Visual Studio 2017](visual-studio-build-numbers-and-release-dates.md?view=vs-2017)
 
 ::: moniker-end
 

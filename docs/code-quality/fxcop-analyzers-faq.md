@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1634731e68c395dea5a14876cf67944714cb4c3a
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 6d8e3f3288c6a64b35a1de59fe0f317b6283b805
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222482"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232552"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Questions fréquentes (FAQ) sur FxCop et les analyseurs FxCop
 
@@ -40,6 +40,14 @@ Non. La propriété **RunCodeAnalysis** dans un fichier projet (par exemple, *.c
 ## <a name="so-how-do-i-run-fxcop-analyzers-then"></a>Alors, comment exécuter des analyseurs FxCop ?
 
 Pour exécuter des analyseurs FxCop, commencez par [installer le package NuGet](install-fxcop-analyzers.md) correspondant à ces derniers. Générez ensuite votre projet ou solution à partir de Visual Studio ou à l’aide de msbuild. Les avertissements et erreurs que génèrent les analyseurs FxCop s’affichent dans la **liste d’erreurs** ou la fenêtre Commande.
+
+## <a name="i-get-warning-ca0507-even-after-ive-installed-the-fxcop-analyzers-nuget-package"></a>Je reçois l’avertissement CA0507 même après avoir installé le package NuGet d’analyseurs FxCop
+
+Si vous avez installé les analyseurs FxCop, mais que vous recevez toujours l’avertissement CA0507 **« Exécuter l’analyse du code » a été déprécié en faveur des analyseurs FxCop, qui s’exécutent pendant la phase de build**, il peut être nécessaire de définir la propriété msbuild **RunCodeAnalysis** de votre fichier projet sur **false**. Sinon, l’analyse statique du code s’exécute après chaque phase de build.
+
+```xml
+<RunCodeAnalysis>false</RunCodeAnalysis>
+```
 
 ## <a name="see-also"></a>Voir aussi
 

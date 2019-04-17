@@ -3,19 +3,19 @@ title: Écrire des extensions C++ pour Python
 description: Procédure pas à pas de création d’une extension C++ pour Python en utilisant Visual Studio, CPython et PyBind11, avec le débogage en mode mixte.
 ms.date: 11/19/2018
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 64c200ffa0bb70b52f9e42d40daf3fd2a39df729
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 9c81984e8921e44e32b58ae7f5c5c27c5fe8b12f
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416043"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366898"
 ---
 # <a name="create-a-c-extension-for-python"></a>Créer une extension C++ pour Python
 
@@ -127,7 +127,7 @@ Suivez les instructions de cette section pour créer deux projets C++ identiques
     | | **Valeurs par défaut du projet** > **Type de configuration** | **Bibliothèque dynamique (.dll)** |
     | **C/C++** > **Général** | **Autres répertoires Include** | Ajoutez le dossier *include* Python en fonction de votre installation, par exemple `c:\Python36\include`.  |
     | **C/C++** > **Préprocesseur** | **Définitions de préprocesseur** | **CPython uniquement** : ajoutez `Py_LIMITED_API;` (point-virgule compris) au début de la chaîne. Cette définition limite certaines des fonctions que vous pouvez appeler à partir de Python et rend le code plus portable entre les différentes versions de Python. Si vous travaillez avec PyBind11, n’ajoutez pas cette définition, car cela provoquerait des erreurs de build. |
-    | **C/C++** > **Génération de code** | **Bibliothèque runtime** | **DLL multithread (/MD)** (consultez l’avertissement ci-dessous) |
+    | **C/C++** > **Génération de code** | **Bibliothèque Runtime** | **DLL multithread (/MD)** (consultez l’avertissement ci-dessous) |
     | **Éditeur de liens** > **Général** | **Répertoires de bibliothèques supplémentaires** | Ajoutez le dossier *libs* Python contenant des fichiers *.lib* en fonction de votre installation, par exemple `c:\Python36\libs`. (Veillez à pointer vers le dossier *libs* qui contient des fichiers *.lib*, et *non* vers le dossier *Lib* qui contient des fichiers *.py*.) |
 
     > [!Tip]

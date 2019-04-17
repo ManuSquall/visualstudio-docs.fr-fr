@@ -3,19 +3,19 @@ title: 'Démarrage rapide : Cloner un dépôt de code Python'
 description: Ce guide de démarrage rapide vous permet de créer un projet Python dans Visual Studio par clonage du référentiel koans de Python à l’aide de Visual Studio Team Explorer.
 ms.date: 12/06/2018
 ms.topic: quickstart
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b6b0a5525bfb80b5b9af2fe23e7a4b02cb542fd3
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 446c2622c01e1b127347a668e199e3e6e6e0b1c5
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355284"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59367002"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Démarrage rapide : Cloner un dépôt de code Python dans Visual Studio
 
@@ -83,5 +83,5 @@ Une fois que vous avez [installé la prise en charge de Python dans Visual Studi
 ## <a name="see-also"></a>Voir aussi
 
 - [Identifier manuellement un interpréteur Python existant](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
-- [Installer la prise en charge de Python dans Visual Studio 2015 et antérieur](installing-python-support-in-visual-studio.md)
+- [Installer la prise en charge de Python dans Visual Studio 2015 et les versions antérieures](installing-python-support-in-visual-studio.md)
 - [Emplacements d’installation](installing-python-support-in-visual-studio.md#install-locations)

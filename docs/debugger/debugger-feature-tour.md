@@ -1,8 +1,8 @@
 ---
-title: Déboguer des applications avec Visual Studio
+title: Présentation du débogueur
 description: Bien démarrer avec le débogage d’applications en utilisant le débogueur Visual Studio
-ms.custom: mvc
-ms.date: 01/09/2019
+ms.custom: seoapril2019
+ms.date: 04/08/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14c248bbea783070e3d3bfbc439005bafb9b1fd2
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 78b27626c457b857f6f0ce195852922f2d5c89de
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428685"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366768"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Premier aperçu du débogueur Visual Studio
 
@@ -188,7 +188,7 @@ Dans cet exemple, l’appel de `DirectoryInfo` a provoqué l’erreur sur la cha
 L’Assistance sur l’exception est une fonctionnalité intéressante qui peut vous aider à déboguer des erreurs. Vous pouvez également examiner les détails de l’erreur et ajouter un espion à partir de l’Assistance sur l’exception. Si nécessaire, vous pouvez aussi changer les conditions pour lever une exception donnée. Pour plus d’informations sur la prise en charge des exceptions dans le code, consultez [Techniques et outils de débogage](../debugger/write-better-code-with-visual-studio.md).
 
 > [!NOTE]
-> L’Assistance sur l’exception a remplacé l’Assistant Exception dans [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> L’Assistance Exception remplace l’Assistant Exception à compter de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Développez le nœud **Paramètres d’exception** pour voir plus d’options sur la façon de gérer ce type d’exception ; dans le cadre de cette visite guidée, vous ne devez néanmoins rien changer !
 

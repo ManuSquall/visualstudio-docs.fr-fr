@@ -9,21 +9,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af930f983ad328dac16e5eec1fb0cf2650f7681a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 62ea3402a053ed57280ddbc946d79d27ab35f944
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867853"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232708"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Rechercher les modifications de code et d'autres historiques avec CodeLens
 
 CodeLens vous permet de rester concentré sur votre travail pendant que vous cherchez ce qui s’est produit dans votre code, sans quitter l’éditeur. Vous pouvez trouver les références à un morceau de code, les changements dans votre code, les bogues liés, les éléments de travail, les revues du code et les tests unitaires.
 
+::: moniker range=">=vs-2019"
+
+> [!NOTE]
+> Les indicateurs CodeLens de contrôle de code source ne sont pas disponibles dans l’édition Visual Studio Community.
+
+::: moniker-end
+
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> CodeLens est disponible uniquement dans les éditions Visual Studio Enterprise et Visual Studio Professional. Il n'est pas disponible dans l'édition Visual Studio Community.
+> CodeLens n’est disponible que dans les éditions Visual Studio Enterprise et Professional. Il n'est pas disponible dans l'édition Visual Studio Community.
 
 ::: moniker-end
 
@@ -41,7 +48,7 @@ Pour choisir les indicateurs à visualiser, ou pour activer ou désactiver CodeL
 
 Vous pouvez rechercher des références dans du code C# ou Visual Basic.
 
-1. Choisissez l’indicateur **Références** ou appuyez sur **Alt**+**2**.
+1. Choisissez l’indicateur **references** ou appuyez sur **Alt**+**2**.
 
    ![Références CodeLens](../ide/media/codelens-view-references.png)
 
@@ -60,15 +67,15 @@ Pour visualiser les relations entre le code et ses références, [créez une car
 
 ![CodeLens - Références sur le code de mappage](../ide/media/codelensmappedreferences.png)
 
-## <a name="a-namefind-code-historyfind-changes-in-your-code"></a><a name="find-code-history"/>Rechercher des modifications dans votre code
+## <a name="find-changes-in-your-code"></a>Rechercher des modifications dans votre code
 
 Examinez l’historique de votre code pour savoir ce qui s’y est produit. Vous pouvez également examiner les modifications avant qu'elles soient fusionnées dans votre code. Cela vous permet de mieux comprendre la façon dont les modifications des autres branches peuvent affecter votre code.
 
 Vous avez besoin de :
 
-- Visual Studio 2019 (ou Visual Studio 2017 édition Enterprise ou Professional)
+- Visual Studio Enterprise ou Professional
 
-- Team Foundation Server 2013 ou ultérieur, Azure DevOps Services ou Git
+- Azure DevOps Services, Team Foundation Server 2013 (ou version ultérieure) ou Git
 
 - [Skype Entreprise](/skypeforbusiness/) pour contacter votre équipe à partir de l’éditeur de code
 
@@ -82,7 +89,7 @@ Pour les types de fichiers autres que *.cs* or *.vb*, vous obtenez les détails 
 
 ### <a name="code-element-level-indicators"></a>Indicateurs de code de niveau élément
 
-Les indicateurs de niveau élément de code vous permettent de voir qui a modifié votre code et quelles modifications ont été faites. Les indicateurs de niveau élément de code sont disponibles pour le code C# et Visual Basic.
+Les indicateurs de niveau élément de code permettent de voir qui a modifié le code et quelles modifications ont été faites. Les indicateurs de niveau élément de code sont disponibles pour le code C# et Visual Basic.
 
 C’est ce que vous voyez quand vous utilisez Team Foundation Version Control (TFVC) dans Team Foundation Server ou Azure DevOps Services :
 
@@ -224,11 +231,11 @@ Vous pouvez découvrir les tests unitaires qui existent pour votre code C# ou Vi
 
      ![CodeLens - Accéder à la définition des tests unitaires](../ide/media/codelens-unit-test-definition.png)
 
-6. Pour passer en revue les résultats du test, choisissez l’indicateur État du test (![icône Échec du test](../ide/media/codelenstestfailedicon.png) ou ![icône Test réussi ](../ide/media/codelenstestpassedicon.png)), ou appuyez sur **Alt**+**1**.
+6. Pour voir les résultats du test, choisissez l’indicateur d’état du test (![icône Échec du test](../ide/media/codelenstestfailedicon.png) ou ![icône Test réussi ](../ide/media/codelenstestpassedicon.png)) ou appuyez sur **Alt**+**1**.
 
      ![CodeLens - Voir le résultat des tests unitaires](../ide/media/codelens-unit-test-result.png)
 
-7. Pour connaître le nombre de personnes qui ont modifié ce test, savoir qui a modifié ce test ou connaître le nombre de modifications apportées à ce test, [recherchez l’historique de votre code et les éléments liés](#find-code-history).
+7. Pour connaître le nombre de personnes qui ont modifié ce test, savoir qui a modifié ce test ou connaître le nombre de modifications apportées à ce test, [recherchez l’historique de votre code et les éléments liés](#find-changes-in-your-code).
 
 ## <a name="keyboard-shortcuts"></a>Raccourcis clavier
 
@@ -264,6 +271,20 @@ Activez et désactivez les indicateurs de niveau fichier CodeLens à l'aide des 
 - Les indicateurs liés à DevOps s’affichent seulement si des éléments de travail sont liés au code et si vous êtes autorisé à ouvrir les éléments de travail liés. Vérifiez que vous disposez des [autorisations de membre de l’équipe](/azure/devops/organizations/security/view-permissions?view=vsts).
 
 - Les indicateurs de test unitaire ne s'affichent pas quand le code de l'application ne contient pas de tests unitaires. Les indicateurs d'état de test s'affichent automatiquement dans les projets de test. Si vous savez que le code de votre application a des tests unitaires, mais que les indicateurs de test n’apparaissent pas, essayez de générer la solution (**Ctrl**+**Maj**+**B**).
+
+::: moniker range=">=vs-2019"
+
+> [!TIP]
+> Les indicateurs de contrôle de code source ne sont pas disponibles dans l’édition Visual Studio Community.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+> [!TIP]
+> CodeLens n’est pas disponible dans l’édition Visual Studio Community.
+
+::: moniker-end
 
 ### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>Q : Pourquoi est-ce que je ne vois pas les détails d’élément de travail pour une validation ?
 
@@ -313,11 +334,11 @@ Pour utiliser le clavier :
 
 - **Références** : cet indicateur se met automatiquement à jour quand le code change. Si l’indicateur **Références** est ancré en tant que fenêtre distincte, actualisez-le en sélectionnant **Actualiser** :
 
-     ![Bouton Actualiser dans les références CodeLens](../ide/media/codelensviewreferencesdocked.png)
+   ![Bouton Actualiser dans les références CodeLens](../ide/media/codelensviewreferencesdocked.png)
 
 - **Équipe** : Actualisez ces indicateurs en sélectionnant **Actualiser les indicateurs d’équipe CodeLens** dans le menu contextuel :
 
-     ![Élément de menu Actualiser les indicateurs d’équipe CodeLens](../ide/media/codelensrefreshindicatorsfromcode.png)
+   ![Élément de menu Actualiser les indicateurs d’équipe CodeLens](../ide/media/codelensrefreshindicatorsfromcode.png)
 
 - **Test** : [Recherchez les tests unitaires pour votre code](#associated-unit-tests) pour actualiser l’indicateur **Test**.
 

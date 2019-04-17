@@ -1,50 +1,41 @@
 ---
 title: Guide pratique pour signaler un problème avec Visual Studio
-titleSuffix: ''
-description: Découvrez comment signaler un problème concernant Visual Studio à Microsoft pour que nous puissions le diagnostiquer et le résoudre.
+description: Découvrez comment signaler un problème avec Visual Studio.
 ms.date: 03/11/2018
-ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
-author: TerryGLee
-ms.author: tglee
+ms.author: seiyer
+author: seaniyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c9bfa7c772b2c194430273f8af0ac640c05171d
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 2b130c321e57cdeea6b703b0e439d6b0f15a1a96
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953652"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232539"
 ---
-# <a name="how-to-report-a-problem-with-visual-studio"></a>Guide pratique pour signaler un problème avec Visual Studio
-
-Si vous rencontrez un problème avec Visual Studio, nous aimerions en être informés. Voici comment signaler le problème à la [Communauté des développeurs](https://developercommunity.visualstudio.com/) pour nous permettre de le diagnostiquer et de le corriger.
+# <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Guide pratique pour signaler un problème avec Visual Studio ou Visual Studio Installer
 
 > [!NOTE]
-> Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Guide pratique pour signaler un problème dans Visual Studio pour Mac](/visualstudio/mac/report-a-problem).
+> Pour Visual Studio pour Mac, consultez [Guide pratique pour signaler un problème dans Visual Studio pour Mac](/visualstudio/mac/report-a-problem).
 
-## <a name="report-a-problem-by-using-visual-studio"></a>Signaler un problème à l’aide de Visual Studio
+Il est possible de signaler un problème dans Visual Studio ou dans son programme d’installation à l’aide de l’outil Feedback Tool inclus. Ce dernier vous permet d’inclure facilement des informations de diagnostic dans vos commentaires et aide les équipes de Visual Studio à diagnostiquer et à résoudre les problèmes beaucoup plus efficacement. Voici les étapes à suivre pour signaler un problème.
 
-Pour signaler un problème pour Visual Studio, vous devez lancer le rapport à partir de Visual Studio ou de Visual Studio Installer. Vous ne pouvez pas le faire directement par le biais du site web de la [Communauté des développeurs](https://developercommunity.visualstudio.com/). La génération de rapport par le biais de Visual Studio permet d’inclure automatiquement les informations de diagnostic dans le rapport.
+1. **Dans Visual Studio**, sélectionnez l’icône de commentaires en haut à droite et sélectionnez Signaler un problème. Feedback Tool est également accessible dans le menu **Aide** > **Envoyer des commentaires** > **Signaler un problème**.
+![Fenêtre contextuelle Signaler un problème sur la communauté des développeurs Visual Studio](media/vsfeedbackentry.png) Si vous ne parvenez pas à installer Visual Studio ou à accéder à Feedback Tool dans Visual Studio, signalez un problème dans **Visual Studio Installer**.  Dans le programme d’installation, sélectionnez l’icône de commentaires en haut à droite, puis Signaler un problème.
+![Fenêtre contextuelle de signalement de problème sur le site web de la Communauté des développeurs Visual Studio](media/installer.png)
 
-![Fenêtre contextuelle de signalement de problème sur le site web de la Communauté des développeurs Visual Studio](media/report-an-issue.png)
-
-1. Dans Visual Studio, sélectionnez **Aide** > **Envoyer des commentaires** > **Signaler un problème**.
-
-   > [!TIP]
-   > Si vous ne parvenez pas à installer Visual Studio, ou si vous ne pouvez pas accéder à l’outil Commentaires dans Visual Studio, vous pouvez signaler un problème à l’aide de **Visual Studio Installer**. Pour ce faire, choisissez l’icône Commentaires dans le coin supérieur droit de **Visual Studio Installer**.
-
-1. Si vous n’avez pas ouvert de session, cliquez sur le bouton **Se connecter** situé sur le côté droit de l’outil, comme dans la capture d’écran suivante. Suivez les instructions à l’écran pour vous connecter.
+1. Si ce n’est pas déjà fait, sélectionnez **Se connecter** comme sur la capture d’écran suivante. Suivez les instructions à l’écran pour vous connecter.
 
    ![Se connecter pour signaler un problème](../ide/media/sign-in-new-ux.png)
 
-   Quand vous vous connectez, vous pouvez signaler un problème auquel vous êtes confronté. Vous pouvez aussi ajouter un vote ou un commentaire pour des problèmes ayant été postés par d’autres utilisateurs.
+   Une fois votre session ouverte, vous pouvez non seulement signaler un problème, mais aussi voter et commenter les retours d’expérience existants.
 
-1. Une fois connecté, vous pourrez voir vos **Problèmes** et votre **Activité** sur l’écran **Items I follow** (Éléments suivis).
+1. Vos **Problèmes** et votre **Activité** apparaissent sur l’écran **Éléments suivis**.
 
-    ![Éléments suivis](../ide/media/items-i-follow.png)
+   ![Éléments suivis](../ide/media/items-i-follow.png)
 
 1. Visual Studio fournit une interface pour rechercher votre problème et voir si d’autres personnes l’ont signalé. S’il a déjà été signalé par quelqu’un d’autre, rappelez-le nous en votant.
    > [!NOTE]
@@ -125,7 +116,7 @@ Les fichiers heap dump et de trace nous sont utiles pour faciliter le diagnostic
 
 ## <a name="search-for-solutions-or-provide-feedback"></a>Rechercher des solutions ou fournir des commentaires
 
-Si vous ne souhaitez pas ou ne pouvez pas utiliser Visual Studio pour signaler un problème, il est possible que ce dernier ait déjà été signalé et qu’une solution ait été postée dans la page de la [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com/).
+Si vous ne souhaitez pas ou ne pouvez pas utiliser Visual Studio pour signaler un problème, il est possible que ce dernier ait déjà été signalé et qu’une solution ait été publiée sur la page de la [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com/).
 
 Si vous n’avez pas de problème à signaler, mais que vous voulez suggérer une fonctionnalité, il existe pour cela un emplacement spécifique. Pour plus d’informations, consultez la page [Suggérer une fonctionnalité](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
 

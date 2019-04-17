@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Étape 3 d’une procédure pas à pas portant sur les fonctionnalités de Python dans Visual Studio qui présente la fenêtre REPL interactive de Python.
 ms.date: 01/28/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5a1e4d87f86610fd009e3f8c07e8fd935e76abba
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 14015c01b487bfe7963d36154ff2dc9b599d7c49
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909672"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366820"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Étape 3 : Utiliser la fenêtre REPL interactif
 
@@ -97,5 +97,5 @@ La fenêtre **Interactive** de Visual Studio pour Python offre une expérience u
 
 ## <a name="go-deeper"></a>Approfondir la question
 
-- [Utiliser la fenêtre Interactive](python-interactive-repl-in-visual-studio.md)
-- [Utiliser l’environnement REPL d’IPython](interactive-repl-ipython.md)
+- [Utiliser la fenêtre interactive](python-interactive-repl-in-visual-studio.md)
+- [Utiliser l’environnement REPL IPython](interactive-repl-ipython.md)

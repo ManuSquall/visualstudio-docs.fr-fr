@@ -3,18 +3,18 @@ title: Gérer des interpréteurs et des environnements Python
 description: Utilisez la fenêtre Environnements Python pour gérer les environnements globaux, virtuels et conda, installer des interpréteurs et des packages Python et affecter des environnements à des projets Visual Studio.
 ms.date: 03/18/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 496ca9b5a0c7501cd9493e06233b1473e8526ed6
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 7cdce20fd1640d4bfa43b442b1ed5cad40dc452f
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355683"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366560"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Comment créer et gérer des environnements Python dans Visual Studio
 
@@ -32,7 +32,7 @@ Dans Visual Studio sur Windows, utilisez la fenêtre **Environnements Python** d
 
 Si vous découvrez Python dans Visual Studio, les articles suivants fournissent également des informations générales :
 
-- [Utilisation de Python dans Visual Studio](overview-of-python-tools-for-visual-studio.md)
+- [Utiliser Python dans Visual Studio](overview-of-python-tools-for-visual-studio.md)
 - [Installer la prise en charge de Python dans Visual Studio](installing-python-support-in-visual-studio.md)
 
 > [!Note]
@@ -270,4 +270,4 @@ Pour corriger un environnement qui n’a pas d’option de réparation, ou pour 
 - [Sélectionner un interpréteur pour un projet](selecting-a-python-environment-for-a-project.md)
 - [Utiliser requirements.txt pour les dépendances](managing-required-packages-with-requirements-txt.md)
 - [Chemins de recherche](search-paths.md)
-- [Référence sur la fenêtre Environnements Python](python-environments-window-tab-reference.md)
+- [Informations de référence sur la fenêtre Environnements Python](python-environments-window-tab-reference.md)
