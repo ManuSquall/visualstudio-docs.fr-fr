@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 327b9ca623c6d7f949c0d516798865de48fd94be
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 37acd4a347fbf8a3d6b91798fe606252fd28772d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840323"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650809"
 ---
 # <a name="handle-specialized-deployment"></a>Gérer le déploiement spécialisé
 Un déploiement est une opération facultative pour les projets. Un projet Web, par exemple, prend en charge qu’un déploiement pour permettre à un projet de mettre à jour d’un serveur Web. De même, un **Smart Device** projet prend en charge un déploiement pour copier une application générée à l’appareil cible. Les sous-types de projet peuvent fournir le comportement de déploiement spécialisé en implémentant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interface. Cette interface définit un ensemble complet des opérations de déploiement :
@@ -40,7 +40,6 @@ Un déploiement est une opération facultative pour les projets. Un projet Web, 
   L’opération de déploiement réel doit être effectuée dans le thread séparé pour rendre [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] encore plus réactives à l’interaction utilisateur. Les méthodes fournies par <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> sont appelées de façon asynchrone par [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] et fonctionner en arrière-plan, ce qui permet de l’environnement pour interroger l’état d’une opération de déploiement à tout moment ou d’arrêter l’opération, si nécessaire. Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> opérations de déploiement d’interface sont appelées par l’environnement lorsque l’utilisateur sélectionne la commande de déploiement.
 
   Pour notifier l’environnement une opération de déploiement a commencé ou s’est terminée, le sous-type de projet doit appeler le <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A> méthodes.
-
 
 ## <a name="to-handle-a-specialized-deployment-by-a-subtype-project"></a>Pour gérer un déploiement spécialisé par un projet de sous-type
 

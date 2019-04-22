@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b4a0ef367be3fd2bbe79472a04437230c0b51180
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b5846fe9db2d7ea02259f949697f5cb164d1c081
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950333"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651754"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Avertissement. Vous avez effectué certaines modifications dans la boîte de dialogue Configurer le comportement mais elles n'ont pas été appliquées.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Avertissement. Vous avez effectué certaines modifications dans la boîte de dialogue Configurer le comportement mais elles n'ont pas été appliquées. Souhaitez-vous appliquer vos modifications ?  
   
  Le **configurer le comportement** boîte de dialogue vous permet de configurer le comportement Insert, Update et Delete pour toutes les classes disponibles. Ce message apparaît quand vous sélectionnez une nouvelle combinaison de **Classe** et de **Comportement** et que la modification précédente n’a pas encore été appliquée.  

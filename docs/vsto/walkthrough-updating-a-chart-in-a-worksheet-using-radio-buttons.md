@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 791908c4e5c85a9d1b5210eb950394273bda184c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c65e064452d307727e1c19578f7a660451f49c70
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602063"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651888"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Procédure pas à pas : Mise à jour d’un graphique dans une feuille de calcul à l’aide de cases d’option
   Cette procédure pas à pas montre les principes fondamentaux de l’utilisation de cases d’option sur une feuille de calcul Microsoft Office Excel pour donner à l’utilisateur permet de basculer rapidement entre les options. Dans ce cas, les options changent le style d’un graphique.
@@ -132,30 +132,24 @@ ms.locfileid: "56602063"
 
 2. À partir de la **contrôles communs** onglet de la **boîte à outils**, faites glisser un **case** contrôler au contrôle utilisateur et modifiez les propriétés suivantes.
 
-
    | Propriété | Value |
    |----------|------------------|
    | **Name** | **columnChart** |
    | **Text** | **Histogramme** |
 
-
 3. Ajoutez un deuxième bouton de case d’option au contrôle utilisateur et modifiez les propriétés suivantes.
-
 
    | Propriété | Value |
    |----------|---------------|
    | **Name** | **barChart** |
    | **Text** | **Graphique à barres** |
 
-
 4. Ajoutez une troisième case vers le contrôle utilisateur et modifiez les propriétés suivantes.
-
 
    | Propriété | Value |
    |----------|----------------|
    | **Name** | **lineChart** |
    | **Text** | **Graphique en courbes** |
-
 
 5. Ajouter un bouton radio quatrième au contrôle utilisateur et modifiez les propriétés suivantes.
 

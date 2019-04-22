@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 183a0774bf507fcf8bdf9abeea688bb1ea75b1bd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b74eaab3edb205b5218cad5a61556f4803614d94
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628713"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651962"
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>Procédure : Identifier les symboles dans une bibliothèque
 Outils de consultation de symboles affichent des vues hiérarchiques des symboles. Les symboles représentent des espaces de noms, les objets, les classes, les membres de classe et les autres éléments de langage.
@@ -49,7 +49,6 @@ N1
  Le chemin d’accès canonique de la classe C2, dans cet exemple, est N1 + C2. Le chemin d’accès de présentation de C2 inclut les nœuds C1 et « Bases et Interfaces » : N1 + C1 + « Bases et Interfaces » + C2.
 
  Pour obtenir les informations du formulaire de présentation, le Gestionnaire d’objets appelle <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> (méthode).
-
 
 ## <a name="to-obtain-canonical-and-presentation-forms-information"></a>Pour obtenir canonique et informations de formulaires de présentation
 

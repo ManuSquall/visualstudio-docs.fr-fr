@@ -8,12 +8,12 @@ ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f65c3fb08932c62bce094b15d698f6bef3da8e86
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: afb127d695f6cc7e1e3999c159b7735d965f66b9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59001105"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653266"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Modèles composites pour Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -395,7 +395,6 @@ Modèles composites combinent des éléments de conception et d’interaction da
 ####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a> Apparence de sélection de graphique d’objet
  Les poignées sont des carrés dessinés dans un rectangle autour de la zone englobante de l’objet. Le tableau ci-dessous montre des exemples des différents États qu’un objet graphique peut avoir avec la poignée de dimensionnement et apparence Édition sur place. La taille des poignées doit être liée à la bordure de fenêtre et edge à l’aide de mesures la **GetSystemMetrics** API.
 
-
 |          État          |  Apparence   |                                                                  Détails des visuels                                                                  |
 |-------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 |     **Non sélectionné**      |    Par défaut    |                 ![État du bouton par défaut](../../extensibility/ux-guidelines/media/0713-10-defaultstate.png "0713-10_DefaultState")                 |
@@ -437,7 +436,6 @@ Modèles composites combinent des éléments de conception et d’interaction da
 >  **Le focus** et **sélection** sont des concepts différents. *Le focus* indique de quelle interface utilisateur de l’élément cible pour recevoir une entrée ne sont pas explicitement dirigée vers un autre objet, tandis que *sélection* fait référence à l’état d’inclusion d’un objet dans un ensemble d’objets sur lesquels suivantes opérations peuvent avoir lieu.
 
  Les sélections dans les listes peuvent être contiguës, disjoint, ou une région. Lorsque les sélections multiples sont autorisées, contiguës et disjointe sélection doit toujours être prise en charge, lors de la prise en charge des sélections de région (zone) sont facultatif. Sélections de région sont initiées en faisant glisser dans l’espace blanc du corps de la liste.
-
 
 | Object | Sélection  |
 |--------|------------|

@@ -14,17 +14,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 785aa4b4768ba8066b09f7f61f426406512c1e20
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 0ed7f7106b22cabc2e30c4f979aacda1823ea7d8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761670"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651930"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Ressources pour la conception d'applications accessibles
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Utilisez les liens suivants pour trouver des informations sur les technologies qui prennent en charge un design axé sur l’accessibilité, ainsi que des conseils et des exemples en matière de développement d’applications Windows et de sites web accessibles. Vous trouverez des informations générales sur l’accessibilité dans [http://www.microsoft.com/enable/](http://www.microsoft.com/enable/).  
   
 ## <a name="technologies"></a>Technologies  
@@ -45,7 +44,7 @@ Utilisez les liens suivants pour trouver des informations sur les technologies q
   
 ## <a name="web-sites"></a>Sites web  
   
--   [Procédure pas à pas : directives d’accessibilité pour l’utilisation de contrôles Image, Menu et AutoPostBack](http://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Cette rubrique fournit des instructions détaillées pour inclure des contrôles accessibles dans un exemple de page web, ainsi que des conseils de design concernant l’accessibilité pour le web.  
+-   [Procédure pas à pas : Directives d’accessibilité pour l’aide de contrôles Image, les contrôles Menu et AutoPostBack](http://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) cette rubrique fournit des instructions détaillées pour inclure des contrôles accessibles dans un exemple de page Web, ainsi que des conseils de conception d’accessibilité pour le Web.  
   
 -   **Amélioration de l’accessibilité des pages web** Cet article technique répertorie les éléments HTML 3.2 accessibles, ainsi que les éléments qui peuvent être rendus accessibles dans le cadre du développement de sites web. Pour plus d’informations, consultez [http://msdn2.microsoft.com/library/ms971309.aspx](http://msdn2.microsoft.com/library/ms971309.aspx).  
   
