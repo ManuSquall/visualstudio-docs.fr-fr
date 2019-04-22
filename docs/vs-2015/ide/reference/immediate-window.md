@@ -15,17 +15,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e856a4fcdc2fbe9174c91910f6676be9e03fafb0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 574b480cbdce0f038ba4d94be6dc2ba9cf46726c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802672"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660292"
 ---
 # <a name="immediate-window"></a>Exécution (fenêtre)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 La fenêtre **Exécution** est utilisée pour déboguer et évaluer des expressions, exécuter des instructions, imprimer les valeurs des variables, etc. Elle vous permet d’entrer des expressions qui doivent être évaluées ou exécutées par le langage de développement lors du processus de débogage. Pour afficher la fenêtre **Exécution**, ouvrez un projet à modifier, puis choisissez **Fenêtres** dans le menu **Déboguer** et sélectionnez **Exécution**, ou appuyez sur Ctrl+Alt+I.  
   
  Vous pouvez utiliser cette fenêtre pour émettre des commandes [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] individuelles. Parmi les commandes disponibles, `EvaluateStatement` peut être utilisée pour assigner des valeurs aux variables. La fenêtre **Exécution** prend également en charge IntelliSense.  
@@ -75,7 +74,7 @@ La fenêtre **Exécution** est utilisée pour déboguer et évaluer des expressi
   
     La fenêtre **Exécution** exécute `MyFunction` et affiche `4`.  
   
-   Si la fonction ou la sous-routine contient un point d’arrêt, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] arrête l’exécution à ce point. Vous pouvez ensuite utiliser les fenêtres du débogueur pour examiner l’état de votre programme. Pour plus d’informations, consultez [Procédure pas à pas : débogage au moment du design](../../debugger/walkthrough-debugging-at-design-time.md).  
+   Si la fonction ou la sous-routine contient un point d’arrêt, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] arrête l’exécution à ce point. Vous pouvez ensuite utiliser les fenêtres du débogueur pour examiner l’état de votre programme. Pour plus d’informations, voir [Procédure pas à pas : Déboguer au moment du design](../../debugger/walkthrough-debugging-at-design-time.md).  
   
    Vous ne pouvez pas utiliser l’évaluation des expressions au moment du design dans les types de projet qui requièrent le démarrage d’un environnement d’exécution, notamment les projets [!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)], projets web, projets Smart Device et projets SQL.  
   
@@ -128,6 +127,6 @@ La fenêtre **Exécution** est utilisée pour déboguer et évaluer des expressi
  [Fenêtre Commande](../../ide/reference/command-window.md)   
  [Débogage dans Visual Studio](../../debugger/debugging-in-visual-studio.md)   
  [Principes de base du débogueur](../../debugger/debugger-basics.md)   
- [Procédure pas à pas : débogage au moment du design](../../debugger/walkthrough-debugging-at-design-time.md)   
+ [Procédure pas à pas : Débogage au moment du Design](../../debugger/walkthrough-debugging-at-design-time.md)   
  [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)   
  [Utilisation d’expressions régulières dans Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

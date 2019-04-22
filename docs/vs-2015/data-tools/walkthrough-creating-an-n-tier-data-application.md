@@ -17,17 +17,16 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f3185a6b7ebe4f5f37428e04f1b4215431921c51
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d48cea795cbbe3b7cc749c5866bfd5e720ac768a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949119"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654683"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Procédure pas à pas : Création d’une application de données multiniveaux
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 N-* de couche données qui sont des applications accèdent aux données et sont divisées en plusieurs couches de logiques, ou *niveaux*. La séparation des composants de l'application en couches distinctes favorise la possibilité de tenir à jour et de monter en charge l'application. Cela est possible grâce à une application plus facile des nouvelles technologies sur chaque couche sans avoir à reconcevoir toute la solution. L'architecture multicouche inclut une couche Présentation, une couche intermédiaire et une couche Données. La couche intermédiaire inclut généralement une couche d’accès aux données, une couche logique métier et des composants partagés tels que l’authentification et la validation. La couche Données inclut une base de données relationnelle. Les applications multicouches stockent généralement les informations sensibles dans la couche d'accès aux données de la couche intermédiaire, pour la tenir hors de portée des utilisateurs finaux qui accèdent à la couche Présentation. Pour plus d’informations, consultez [vue d’ensemble des Applications de données multicouches](../data-tools/n-tier-data-applications-overview.md).  
   
  Pour séparer plusieurs couches d'une application multicouche, il est possible de créer des projets distincts pour chaque couche que vous voulez inclure dans votre application. Les datasets typés contiennent une propriété `DataSet Project` qui détermine les projets dans lesquels le code du dataset et des `TableAdapter`s générés doit intervenir.  
@@ -72,7 +71,7 @@ N-* de couche données qui sont des applications accèdent aux données et sont 
 1.  À partir de la **fichier** menu, créez un nouveau projet.  
   
     > [!NOTE]
-    >  Le **Concepteur de Dataset** est pris en charge dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] et les projets C#. Créez le projet dans l'un de ces langages.  
+    >  Le **Concepteur de Dataset** est pris en charge dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] et les projets c#. Créez le projet dans l'un de ces langages.  
   
 2.  Dans le **nouveau projet** boîte de dialogue le **types de projets** volet, cliquez sur **Windows**.  
   

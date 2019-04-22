@@ -17,17 +17,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 41467515e172b34fe96200020189a02a6a4fc8a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0fa25e0bf7742420e21ac75883f9927478ee2c23
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952663"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656607"
 ---
 # <a name="edit-data-in-datasets"></a>Modifier des données dans des datasets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Pour modifier les données dans les tables de données de la même manière que vous modifiez les données dans une table dans une base de données. Le processus peut inclure insertion, la mise à jour et suppression d’enregistrements dans la table. Dans un formulaire lié aux données, vous pouvez spécifier quels champs sont modifiables par l’utilisateur. Dans ce cas, l’infrastructure de liaison de données gère tout le suivi des modifications afin que les modifications puissent être envoyées à la base de données plus tard. Si vous apportez des modifications par programme aux données, et que vous avez l’intention de renvoyer ces modifications à la base de données, vous devez utiliser les objets et les méthodes qui effectuent le suivi des modifications pour vous.  
   
  Outre la modification des données réelles, vous pouvez également interroger un <xref:System.Data.DataTable> pour retourner les lignes de données spécifiques. Par exemple, vous est possible d’interroger pour des lignes individuelles, des versions spécifiques de lignes (d’origine et proposés), les lignes qui ont été modifiés ou les lignes qui contiennent des erreurs.  

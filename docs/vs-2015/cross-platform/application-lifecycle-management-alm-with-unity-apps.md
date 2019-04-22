@@ -9,17 +9,16 @@ caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: b37f379fc60a260e7c16e87d7c1553429e73fbad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c4f431dba7f9732333812f64b44db52358071996
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778589"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658797"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Application Lifecycle Management (ALM) avec les applications Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Le développement d'applications pour des plateformes modernes implique de nombreuses activités qui vont bien au-delà de la simple écriture de code. Ces activités, appelées DevOps (développement + opérations), couvrent le cycle de vie complet de l’application et incluent la planification et le suivi du travail, la conception et l’implémentation du code, la gestion d’un référentiel de code source, l’exécution des builds, la gestion des intégrations continues et des déploiements en continu, les tests (y compris les tests unitaires et les tests d’interface utilisateur), différentes formes de diagnostics dans les environnements de développement et de production, ainsi que la surveillance en temps réel des performances des applications et des comportements des utilisateurs via la télémétrie et l’analyse.  
   
  Visual Studio, Visual Studio Team Services et Team Foundation Server fournissent de nombreuses fonctionnalités DevOps, également appelées fonctionnalités Application Lifecycle Management (ALM). Beaucoup d’entre elles sont applicables aux projets multiplateformes, notamment les jeux et les applications graphiques immersives créés avec Unity, en particulier quand C# est utilisé comme langage de script. Toutefois, comme Unity possède son propre environnement de développement et son propre moteur d'exécution, plusieurs fonctionnalités ALM ne s'appliquent pas comme elles le feraient pour d'autres types de projets créés dans Visual Studio.  
@@ -40,9 +39,9 @@ Le développement d'applications pour des plateformes modernes implique de nombr
 |Créer des rapports sur la progression et la visualiser|Oui||  
   
 ## <a name="modeling"></a>Modélisation  
- Lien de référence : **[Analyse et modélisation de l’architecture](../modeling/analyze-and-model-your-architecture.md)**  
+ Lien de référence : **[Analyse et modélisation de l’Architecture](../modeling/analyze-and-model-your-architecture.md)**  
   
- Commentaire général : bien que ces fonctionnalités de conception soient indépendantes du langage de codage ou qu’elles utilisent des langages .NET tels que C#, elles opèrent selon un modèle d’application traditionnel avec des hiérarchies d’objets et des relations de classes. La conception d'un jeu dans Unity implique un modèle entièrement différent, à savoir des relations d'objets graphiques, de sons, de nuanceurs, de scripts, etc. Pour cette raison, les outils de diagramme de modélisation Visual Studio ne sont pas particulièrement pertinents pour l'ensemble d'un projet Unity. Ils peuvent être utilisés pour gérer les relations au sein des scripts C#, mais ce n'est qu'une partie de l'ensemble.  
+ Commentaire général : Bien que ces fonctionnalités de conception soient indépendantes du langage de codage ou utilisent des langages .NET tels que C#, elles opèrent selon un modèle d'application traditionnel avec des hiérarchies d'objets et des relations de classes. La conception d'un jeu dans Unity implique un modèle entièrement différent, à savoir des relations d'objets graphiques, de sons, de nuanceurs, de scripts, etc. Pour cette raison, les outils de diagramme de modélisation Visual Studio ne sont pas particulièrement pertinents pour l'ensemble d'un projet Unity. Ils peuvent être utilisés pour gérer les relations au sein des scripts C#, mais ce n'est qu'une partie de l'ensemble.  
   
 |Fonctionnalité|Prise en charge avec Unity|Commentaires supplémentaires|  
 |-------------|--------------------------|-------------------------|  
@@ -73,7 +72,7 @@ Le développement d'applications pour des plateformes modernes implique de nombr
   
 3.  Les ressources binaires d'un projet Unity, telles que les textures et les fichiers audio, peuvent occuper une grande quantité de stockage. Des systèmes de contrôle de code source tels que Git stockent une copie unique d'un fichier pour chaque modification effectuée, même si la modification affecte uniquement une petite partie du fichier. Cette opération peut provoquer la saturation du référentiel Git. Pour résoudre ce problème, les développeurs Unity choisissent souvent de n'ajouter que les ressources finales à leur référentiel et d'utiliser un autre moyen de conserver un historique de l'utilisation de leurs ressources, telles que OneDrive, DropBox ou git-annex. Cette approche fonctionne, car il n'est généralement pas nécessaire de gérer les versions de telles ressources avec les modifications du code source. Généralement, les développeurs définissent aussi le mode de sérialisation de ressources de l'éditeur du projet sur Forcer le texte pour stocker les fichiers de séquence dans du texte plutôt que dans un format binaire, ce qui permet des fusions dans le contrôle de code source. Pour plus d’informations, consultez [Paramètres de l’éditeur](http://docs.unity3d.com/Manual/class-EditorManager.html) (documentation Unity).  
   
-## <a name="build"></a>Générer  
+## <a name="build"></a>Build  
  Lien de référence : **[Build](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
   
 |Fonctionnalité|Prise en charge avec Unity|Commentaires supplémentaires|  
@@ -97,7 +96,7 @@ Le développement d'applications pour des plateformes modernes implique de nombr
 |[Utiliser l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md)|Non|Les tests codés de l'interface utilisateur s'appuient sur des contrôles lisibles dans l'interface utilisateur de l'application. Les applications Unity sont graphiques par nature et le contenu n'est donc pas lisible par les outils de test codés de l'interface utilisateur.|  
   
 ## <a name="improve-code-quality"></a>Améliorer la qualité du code  
- Lien de référence : **[Améliorer la qualité du code](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
+ Lien de référence : **[Améliorer la qualité du Code](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
   
 |Fonctionnalité|Prise en charge avec Unity|Commentaires supplémentaires|  
 |-------------|--------------------------|-------------------------|  

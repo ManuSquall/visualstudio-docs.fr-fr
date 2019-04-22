@@ -9,17 +9,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2a5fd14f4cbc07fbd1ebac0eeefaa039dece188d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 1626c9c027b12d6a8df8d3169e7d79cefba66006
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949443"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659618"
 ---
 # <a name="query-datasets"></a>Interroger des datasets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Pour rechercher des enregistrements spécifiques dans un jeu de données, utiliser la méthode FindBy sur la table de données, écrire votre propre boucle foreach sur la collection de lignes de la table ou [LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17). LINQ to DataSet.  
   
 ## <a name="dataset-case-sensitivity"></a>Jeu de données respecte la casse  

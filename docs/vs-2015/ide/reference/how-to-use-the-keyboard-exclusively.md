@@ -16,17 +16,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3a7658f2c06a0a2b252d88041dc9255663851e2c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c4cb5e4eadafb4ce3ea7600a2a179689945b9f16
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782619"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655359"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Guide pratique pour utiliser uniquement le clavier
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fournit de nombreuses combinaisons de touches de raccourci par défaut pour simplifier la navigation et l’écriture du code dans l’environnement de développement intégré (IDE). Pour obtenir la liste complète des touches de raccourci utilisées dans Visual Studio, consultez [Raccourcis clavier par défaut](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Pour plus d’informations sur les raccourcis clavier disponibles pour d’autres produits Microsoft, consultez [http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400).  
   
 > [!NOTE]

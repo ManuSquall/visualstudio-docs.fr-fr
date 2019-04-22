@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : utilisation de MSBuild | Microsoft Docs'
+title: 'Procédure pas à pas : Utilisation de MSBuild | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -11,17 +11,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bbce3f0723a4f4729c844db92ffddb5c43430107
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3a256a13d1840d2bf5f26635c5e572dce30434ae
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792218"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655008"
 ---
-# <a name="walkthrough-using-msbuild"></a>Procédures pas à pas : utilisation de MSBuild
+# <a name="walkthrough-using-msbuild"></a>Procédure pas à pas : Utilisation de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 MSBuild est la plateforme de génération pour Microsoft et Visual Studio. Cette procédure pas à pas vous présente les blocs de construction de MSBuild, et vous indique comment écrire, manipuler et déboguer des projets MSBuild. Vous allez découvrir comment :  
   
 - créer et manipuler un fichier projet ;  
@@ -242,10 +241,10 @@ $(PropertyName)
  Pratiquement tous les éléments MSBuild peuvent posséder un attribut Condition. Pour en savoir plus sur l’utilisation de l’attribut Condition, consultez l’article [Conditions MSBuild](../msbuild/msbuild-conditions.md).  
   
 ### <a name="reserved-properties"></a>Propriétés réservées  
- MSBuild réserve certains noms de propriété pour stocker des informations sur le fichier projet et les binaires de MSBuild. MSBuildToolsPath est un exemple de propriété réservée. Les propriétés réservées sont référencées avec la notation $ comme toute autre propriété. Pour plus d’informations, consultez les articles [Comment : référencer le nom ou l’emplacement du fichier projet](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) et [Propriétés réservées et connues de MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).  
+ MSBuild réserve certains noms de propriété pour stocker des informations sur le fichier projet et les binaires de MSBuild. MSBuildToolsPath est un exemple de propriété réservée. Les propriétés réservées sont référencées avec la notation $ comme toute autre propriété. Pour plus d'informations, voir [Procédure : Référencer le nom ou l’emplacement du fichier projet](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) et [MSBuild propriétés réservées et connues](../msbuild/msbuild-reserved-and-well-known-properties.md).  
   
 ### <a name="environment-variables"></a>Environment Variables  
- Vous pouvez référencer des variables d’environnement dans les fichiers projet de la même façon que les propriétés de génération. Par exemple, pour utiliser la variable d’environnement PATH dans votre fichier projet, utilisez $(Path). Si le projet contient une définition de propriété qui porte le même nom qu’une variable d’environnement, la propriété du projet remplace la valeur de la variable d’environnement. Pour plus d’informations, consultez l’article [Comment : utiliser des variables d’environnement dans une génération](../msbuild/how-to-use-environment-variables-in-a-build.md).  
+ Vous pouvez référencer des variables d’environnement dans les fichiers projet de la même façon que les propriétés de génération. Par exemple, pour utiliser la variable d’environnement PATH dans votre fichier projet, utilisez $(Path). Si le projet contient une définition de propriété qui porte le même nom qu’une variable d’environnement, la propriété du projet remplace la valeur de la variable d’environnement. Pour plus d'informations, voir [Procédure : Utiliser des Variables d’environnement dans une génération](../msbuild/how-to-use-environment-variables-in-a-build.md).  
   
 ## <a name="setting-properties-from-the-command-line"></a>Définition des propriétés à partir de la ligne de commande  
  Des propriétés peuvent être définies sur la ligne de commande à l’aide du commutateur de ligne de commande /property ou /p. Les valeurs de propriété reçues à partir de la ligne de commande remplacent celles qui sont définies dans les variables d’environnement et le fichier projet.  
@@ -307,7 +306,7 @@ $(PropertyName)
 </ItemGroup>  
 ```  
   
- définit un groupe de deux éléments. Le type d’élément Compile possède deux valeurs : « Program.cs » et « Properties\AssemblyInfo.cs ».  
+ définit un groupe de deux éléments. Le type d’élément Compile a deux valeurs : « Program.cs » et « Properties\AssemblyInfo.cs ».  
   
  Le code suivant crée le même type d’élément en déclarant les deux fichiers dans un attribut Include, séparés par un point-virgule.  
   
@@ -403,7 +402,7 @@ $(PropertyName)
 <Photos Include="images\**.jpeg" />  
 ```  
   
- ajoute tous les fichiers pourvus de l’extension de fichier « .jpeg » du dossier images et de l’ensemble de ses sous-dossiers, au type d’élément Photos. Pour plus d’exemples, consultez l’article [How to: Select the Files to Build (Comment : sélectionner les fichiers pour une génération)](../msbuild/how-to-select-the-files-to-build.md).  
+ ajoute tous les fichiers pourvus de l’extension de fichier « .jpeg » du dossier images et de l’ensemble de ses sous-dossiers, au type d’élément Photos. Pour plus d'exemples, consultez [Procédure : Sélectionnez les fichiers dans une Build](../msbuild/how-to-select-the-files-to-build.md).  
   
  Notez que les éléments sont ajoutés au type d’élément à mesure qu’ils sont déclarés. Par exemple :  
   
@@ -424,7 +423,7 @@ $(PropertyName)
 <Compile Include="*.cs" Exclude="*Designer*">  
 ```  
   
- ajoute tous les fichiers portant l’extension de fichier « .cs » au type d’élément Compile, à l’exception des fichiers dont les noms contiennent la chaîne « Designer ». Pour plus d’exemples, consultez l’article [Comment : exclure des fichiers de la build](../msbuild/how-to-exclude-files-from-the-build.md).  
+ ajoute tous les fichiers portant l’extension de fichier « .cs » au type d’élément Compile, à l’exception des fichiers dont les noms contiennent la chaîne « Designer ». Pour plus d'exemples, consultez [Procédure : Exclure des fichiers de la Build](../msbuild/how-to-exclude-files-from-the-build.md).  
   
  L’attribut Exclude affecte uniquement les éléments ajoutés par l’attribut Include dans l’élément Item qui les contient. Par exemple :  
   
@@ -577,7 +576,7 @@ $(PropertyName)
    Notez que les métadonnées exprimées dans cette syntaxe ne provoquent pas le traitement par lot.  
   
 ## <a name="whats-next"></a>Quelle est la suite ?  
- Pour découvrir comment créer pas à pas un fichier projet simple, consultez la [Procédure pas à pas : création d’un fichier projet MSBuild à partir de zéro](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
+ Pour découvrir comment créer pas à pas un fichier projet simple, consultez la [Procédure pas à pas : Création d’un fichier de projet MSBuild à partir de zéro](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
   
 ## <a name="see-also"></a>Voir aussi
 [MSBuild Overview (Vue d’ensemble de MSBuild)](msbuild.md)  

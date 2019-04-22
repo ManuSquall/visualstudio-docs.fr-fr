@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd29a8d31d425529db377c812611f1efddc60f11
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MT
+ms.openlocfilehash: 43305d7b9353bd34e98a3dcfd31205cb9159a2f3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526618"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659917"
 ---
 # <a name="how-to-create-xml-snippets"></a>Procédure : Créer des extraits XML
 
@@ -64,7 +64,6 @@ L’éditeur XML peut être utilisé pour créer de nouveaux extraits XML. Cet �
 
 > [!NOTE]
 > Le texte de l'extrait XML doit être placé dans une section `<![CDATA[...]]>`.
-
 
  L'élément `Code` suivant est créé par l'extrait souvent utilisé.
 

@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour sélectionner des fichiers dans une build | Microsoft Docs
+title: 'Procédure : Sélectionner des fichiers dans une build | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -13,17 +13,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2dad0c732a8f342e5c584202f810e1f53defb61e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 276d3306d908fa8af4e58f38c965b73c1fff9284
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798902"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659812"
 ---
-# <a name="how-to-select-the-files-to-build"></a>Guide pratique pour sélectionner des fichiers dans une build
+# <a name="how-to-select-the-files-to-build"></a>Procédure : Sélectionner des fichiers dans une build
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Quand vous générez un projet contenant plusieurs fichiers, vous pouvez lister chaque fichier un à un dans le fichier projet ou utiliser des caractères génériques pour inclure tous les fichiers d’un répertoire ou d’un ensemble imbriqué de répertoires.  
   
 ## <a name="specifying-inputs"></a>Spécification des entrées  
@@ -174,5 +173,5 @@ Quand vous générez un projet contenant plusieurs fichiers, vous pouvez lister 
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : exclure des fichiers de la génération](../msbuild/how-to-exclude-files-from-the-build.md)   
- [Éléments MSBuild](../msbuild/msbuild-items.md)
+ [Guide pratique pour Exclure des fichiers de la Build](../msbuild/how-to-exclude-files-from-the-build.md)   
+ [Éléments](../msbuild/msbuild-items.md)

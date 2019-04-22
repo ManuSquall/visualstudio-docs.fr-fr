@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe97972d882fa8806de925bac6a072cd2dde4513
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
-ms.translationtype: MT
+ms.openlocfilehash: c498fd10403bcb6b62552c30fe3a92b71ded4944
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796879"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659785"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Modèles d’application pour Visual Studio
 ##  <a name="BKMK_WindowInteractions"></a> Interactions de la fenêtre
@@ -115,7 +115,7 @@ L’Explorateur de solutions et de la fenêtre Résultats de la recherche sont d
 
 | Fenêtre outil | Fonction |
 | --- | --- |
-| Aide | Une fenêtre qui permet aux utilisateurs l’accès à différentes méthodes d’obtention d’aide, à partir de « Comment faire ? » vidéos sur les forums MSDN. |
+| Help | Une fenêtre qui permet aux utilisateurs l’accès à différentes méthodes d’obtention d’aide, à partir de « Comment faire ? » vidéos sur les forums MSDN. |
 | Aide dynamique | Une fenêtre outil qui affiche des liens vers des rubriques applicables à la sélection actuelle d’aide. |
 | Explorateur d'objets | Un jeu de cadres de deux colonnes avec une liste des composants hiérarchique d’objets dans le volet gauche de l’objet propriétés et méthodes dans la colonne de droite. |
 
@@ -149,18 +149,18 @@ L’Explorateur de solutions et de la fenêtre Résultats de la recherche sont d
 
 | Fenêtre outil | Fonction |
 | --- | --- |
-| Automatique ||
+| Autos ||
 | Immédiat ||
 | Sortie | La fenêtre de sortie peut être utilisée chaque fois que vous avez des événements textuelles ou état pour déclarer. |
 | Mémoire ||
-| Points d'arrêt ||
-| Exécution en cours ||
+| Points d’arrêt ||
+| En cours d'exécution ||
 | Documents ||
 | Pile des appels ||
 | Variables locales ||
 | Espions ||
-| Code machine ||
-| 3DNow! ||
+| Code Machine ||
+| Registres ||
 | Threads ||
 
 ##  <a name="BKMK_DocumentEditorConventions"></a> Conventions de l’éditeur de document
@@ -359,7 +359,7 @@ Pour obtenir la conception optimale et des fonctionnalités avec vos boîtes de 
 
 Pour obtenir des instructions spécifiques à la disposition, consultez [Layout for Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).
 
-#### <a name="size"></a>Taille
+#### <a name="size"></a>Size
 Boîtes de dialogue doivent tenir dans une résolution d’écran de 1024 x 768 minimale, et la taille de la boîte de dialogue initiale ne doit pas dépasser 900 x 700 pixels. Boîtes de dialogue peuvent être redimensionnables, mais il n’est pas obligatoire.
 
 Il existe deux recommandations pour les boîtes de dialogue redimensionnables :
@@ -417,7 +417,7 @@ N’utilisez pas les clés d’accès de **OK**, **Annuler**, ou **aide** bouton
 | --- | --- |
 | OK | Entrée |
 | Annuler | Échap |
-| Aide | F1 |
+| Help | F1 |
 
 #### <a name="imagery"></a>Imagery
 Utilisez des images avec parcimonie dans les boîtes de dialogue. Ne pas utiliser de grandes icônes dans les boîtes de dialogue simplement pour utiliser l’espace. Utiliser des images uniquement si elles sont une partie importante de transmettre le message à l’utilisateur, telles que des icônes d’avertissement ou des animations d’état.
@@ -436,9 +436,9 @@ Présente des avantages et inconvénients des différentes méthodes de superpos
 
 | Mécanisme de commutation | Avantages et l’utilisation appropriée | Utilisation inappropriée et des inconvénients |
 | --- | --- | --- |
-| Contrôle Tab | Regrouper logiquement des pages de la boîte de dialogue dans les ensembles liés<br /><br />Utile pour moins de cinq (ou le nombre d’onglets qui tiennent dans une ligne dans la boîte de dialogue) pages de contrôles connexes dans la boîte de dialogue<br /><br />Onglet étiquettes doivent être courts : un ou deux mots qui peuvent identifier facilement le contenu<br /><br />Un style de boîte de dialogue système commun<br /><br />Exemple : **Explorateur de fichiers &gt; propriétés d’un élément** | Étiquettes courts descriptifs peut s’avérer<br /><br />En règle générale n’évolue pas au-delà de cinq onglets dans une boîte de dialogue<br /><br />Inapproprié si vous avez trop d’onglets pour une ligne (utilisez une technique alternative superposition)<br /><br />Pas extensible. |
-| Navigation avec barre latérale | Périphérique de commutation simple pouvant s’adapter à plusieurs catégories à onglets<br /><br />Liste plate de catégories (aucune hiérarchie)<br /><br />Extensible<br /><br />Exemple : **Personnaliser... &gt; Ajouter des commandes** | Pas un bon usage d’espace horizontal s’il existe moins de trois groupes<br /><br />Tâche peut être mieux adaptée à une liste déroulante. |
-| Contrôle Tree | Permet de catégories illimités<br /><br />Permet le regroupement et/ou de la hiérarchie de catégories<br /><br />Extensible<br /><br />Exemple : **Outils &gt; Options** | Hiérarchies fortement imbriquées peuvent entraîner un défilement horizontal excessive<br /><br />Visual Studio a un overabundance de vues de l’arborescence |
+| Contrôle Tab | Regrouper logiquement des pages de la boîte de dialogue dans les ensembles liés<br /><br />Utile pour moins de cinq (ou le nombre d’onglets qui tiennent dans une ligne dans la boîte de dialogue) pages de contrôles connexes dans la boîte de dialogue<br /><br />Onglet étiquettes doivent être courts : un ou deux mots qui peuvent identifier facilement le contenu<br /><br />Un style de boîte de dialogue système commun<br /><br />Exemple : **Explorateur de fichiers &gt; propriétés d’un élément** | Étiquettes courts descriptifs peut s’avérer<br /><br />En règle générale n’évolue pas au-delà de cinq onglets dans une boîte de dialogue<br /><br />Inapproprié si vous avez trop d’onglets pour une ligne (utilisez une technique alternative superposition)<br /><br />Pas extensible. |
+| Navigation avec barre latérale | Périphérique de commutation simple pouvant s’adapter à plusieurs catégories à onglets<br /><br />Liste plate de catégories (aucune hiérarchie)<br /><br />Extensible<br /><br />Exemple : **Personnaliser... &gt; Ajouter des commandes** | Pas un bon usage d’espace horizontal s’il existe moins de trois groupes<br /><br />Tâche peut être mieux adaptée à une liste déroulante. |
+| Contrôle Tree | Permet de catégories illimités<br /><br />Permet le regroupement et/ou de la hiérarchie de catégories<br /><br />Extensible<br /><br />Exemple : **Outils &gt; Options** | Hiérarchies fortement imbriquées peuvent entraîner un défilement horizontal excessive<br /><br />Visual Studio a un overabundance de vues de l’arborescence |
 | Assistant | Permet à la fin de la tâche à guider l’utilisateur à travers les étapes séquentielles, basé sur des tâches : l’Assistant représente une tâche de haut niveau et les panneaux individuels représentent les tâches subordonnées nécessaires pour accomplir la tâche globale<br /><br />Utile lorsque la tâche traverse les limites de l’interface utilisateur, comme lorsque l’utilisateur auriez à utiliser plusieurs éditeurs et fenêtres pour terminer la tâche d’outil<br /><br />Utile lors de la tâche nécessite la création de branches<br /><br />Utile lors de la tâche contient des dépendances entre les étapes<br /><br />Utile lorsque plusieurs tâches similaires avec la branche d’une décision peuvent être présentés dans une boîte de dialogue pour réduire le nombre de différentes boîtes de dialogue similaire | Inapproprié pour n’importe quelle tâche qui ne nécessite pas un workflow séquentiel<br /><br />Les utilisateurs peuvent être submergée et confondues par un Assistant avec de trop nombreuses étapes<br /><br />Assistants sont limitée, par nature, écran |
 
 ##### <a name="hallways-or-dashboards"></a>Couloirs ou des tableaux de bord
@@ -517,30 +517,30 @@ L’utilisateur doit toujours être en mesure de déterminer l’effet d’une o
 #### <a name="reference-based-projects"></a>Projets basés sur une référence
  Le tableau suivant récapitule les opérations de glisser-déplacer (ainsi que de couper/copier/coller) qui doivent être effectuées en fonction de la nature de l’élément et le modificateur clés source enfoncé pour les projets de la cible en fonction référencée :
 
-| Modificateur | Catégorie | Élément de la source : Référence/lien | Élément de la source : Système d’élément ou le fichier physique (`CF_HDROP`) |
+| Modificateur | Category | Élément de la source : Référence/lien | Élément de la source : Système d’élément ou le fichier physique (`CF_HDROP`) |
 | --- | --- | --- | --- |
-| Aucun modificateur | Action | Déplacement | Link |
-| Aucun modificateur | Cible | Ajoute la référence à l’élément d’origine | Ajoute la référence à l’élément d’origine |
+| Aucun modificateur | Action | Déplacement | Lien |
+| Aucun modificateur | une cible | Ajoute la référence à l’élément d’origine | Ajoute la référence à l’élément d’origine |
 | Aucun modificateur | Source | Référence de suppressions à l’élément d’origine | Conserve l’élément d’origine |
 | Aucun modificateur | Résultat | `DROPEFFECT_MOVE` est retourné en tant qu’action à partir de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | `DROPEFFECT_LINK` est retourné en tant qu’action à partir de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage |
 | Maj + faire glisser | Action | Déplacement | Aucun dépôt |
-| Maj + faire glisser | Cible | Ajoute la référence à l’élément d’origine | Aucun dépôt |
+| Maj + faire glisser | une cible | Ajoute la référence à l’élément d’origine | Aucun dépôt |
 | Maj + faire glisser | Source | Référence de suppressions à l’élément d’origine | Aucun dépôt |
 | Maj + faire glisser | Résultat | `DROPEFFECT_MOVE` est retourné en tant qu’action à partir de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | Aucun dépôt |
 | Ctrl+Drag | Action | Copier | Aucun dépôt |
-| Ctrl+Drag | Cible | Ajoute la référence à l’élément d’origine | Aucun dépôt |
+| Ctrl+Drag | une cible | Ajoute la référence à l’élément d’origine | Aucun dépôt |
 | Ctrl+Drag | Source | Conserve la référence à l’élément d’origine | Aucun dépôt |
 | Ctrl+Drag | Résultat | `DROPEFFECT_COPY` est retourné en tant qu’action à partir de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | Aucun dépôt |
-| Ctrl + Maj + faire glisser | Action | Link | Link |
-| Ctrl + Maj + faire glisser | Cible | Ajoute la référence à l’élément d’origine | Ajoute la référence à l’élément d’origine |
+| Ctrl + Maj + faire glisser | Action | Lien | Lien |
+| Ctrl + Maj + faire glisser | une cible | Ajoute la référence à l’élément d’origine | Ajoute la référence à l’élément d’origine |
 | Ctrl + Maj + faire glisser | Source | Conserve la référence à l’élément d’origine | Conserve l’élément d’origine |
 | Ctrl + Maj + faire glisser | Résultat | `DROPEFFECT_LINK` est retourné en tant qu’action à partir de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | `DROPEFFECT_LINK` est retourné en tant qu’action à partir de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage |
 | Ctrl + Maj + faire glisser | Remarque | Identique au comportement de glisser-déplacer pour les raccourcis dans l’Explorateur Windows. ||
-| Couper/coller | Action | Déplacement | Link |
-| Couper/coller | Cible | Ajoute la référence à l’élément d’origine | Ajoute la référence à l’élément d’origine |
+| Couper/coller | Action | Déplacement | Lien |
+| Couper/coller | une cible | Ajoute la référence à l’élément d’origine | Ajoute la référence à l’élément d’origine |
 | Couper/coller | Source | Conserve la référence à l’élément d’origine|Conserve l’élément d’origine |
 | Couper/coller | Résultat | Élément reste dans l’emplacement d’origine dans le stockage | Élément reste dans l’emplacement d’origine dans le stockage |
-| Copier/coller | Action | Copier | Link |
+| Copier/coller | Action | Copier | Lien |
 | Copier/coller | Source | Ajoute la référence à l’élément d’origine | Ajoute la référence à l’élément d’origine |
 | Copier/coller | Résultat | Conserve la référence à l’élément d’origine | Conserve l’élément d’origine |
 | Copier/coller | Action | Élément reste dans l’emplacement d’origine dans le stockage | Élément reste dans l’emplacement d’origine dans le stockage |
@@ -548,57 +548,56 @@ L’utilisateur doit toujours être en mesure de déterminer l’effet d’une o
 #### <a name="directory-based-projects"></a>Projets basés sur le répertoire
 Le tableau suivant résume les opérations de glisser-déplacer (ainsi que de couper/copier/coller) qui doivent être effectuées en fonction de la nature de l’élément et le modificateur clés source enfoncé pour les projets de cible basé sur le répertoire :
 
-
-| Modificateur | Catégorie | Élément de la source : Référence/lien | Élément de la source : Système d’élément ou le fichier physique (`CF_HDROP`) |
+| Modificateur | Category | Élément de la source : Référence/lien | Élément de la source : Système d’élément ou le fichier physique (`CF_HDROP`) |
 |-----------------|----------| - | - |
 | Aucun modificateur | Action | Déplacement | Déplacement |
-| Aucun modificateur | Cible | Élément de copie à l’emplacement cible | Élément de copie à l’emplacement cible |
+| Aucun modificateur | une cible | Élément de copie à l’emplacement cible | Élément de copie à l’emplacement cible |
 | Aucun modificateur | Source | Référence de suppressions à l’élément d’origine | Référence de suppressions à l’élément d’origine |
 | Maj + faire glisser | Action | Déplacement | Déplacement |
-| Maj + faire glisser | Cible | Élément de copie à l’emplacement cible | Élément de copie à l’emplacement cible |
+| Maj + faire glisser | une cible | Élément de copie à l’emplacement cible | Élément de copie à l’emplacement cible |
 | Maj + faire glisser | Source | Référence de suppressions à l’élément d’origine | Supprime l’élément à partir de l’emplacement d’origine |
 | Maj + faire glisser | Résultat | `DROPEFFECT_MOVE` est retourné en tant qu’action à partir de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | `DROPEFFECT_MOVE` est retourné en tant qu’action à partir de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage |
 | Ctrl+Drag | Action | Copier | Copier |
-| Ctrl+Drag | Cible | Élément de copie à l’emplacement cible | Élément de copie à l’emplacement cible |
+| Ctrl+Drag | une cible | Élément de copie à l’emplacement cible | Élément de copie à l’emplacement cible |
 | Ctrl+Drag | Source | Conserve la référence à l’élément d’origine | Conserve la référence à l’élément d’origine |
 | Ctrl+Drag | Résultat | `DROPEFFECT_COPY` est retourné en tant qu’action à partir de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | `DROPEFFECT_COPY` est retourné en tant qu’action à partir de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage |
 | Ctrl + Maj + faire glisser | | Aucun dépôt | Aucun dépôt |
 | Couper/coller | Action | Déplacement | Déplacement |
-| Couper/coller | Cible | Élément de copie à l’emplacement cible | Élément de copie à l’emplacement cible |
+| Couper/coller | une cible | Élément de copie à l’emplacement cible | Élément de copie à l’emplacement cible |
 | Couper/coller | Source | Référence de suppressions à l’élément d’origine | Supprime l’élément à partir de l’emplacement d’origine |
 | Couper/coller | Résultat | Élément reste dans l’emplacement d’origine dans le stockage | Élément est supprimé de l’emplacement d’origine dans le stockage |
 | Copier/coller | Action | Copier | Copier |
-| Copier/coller | Cible | Ajoute la référence à l’élément d’origine | Élément de copie à l’emplacement cible |
+| Copier/coller | une cible | Ajoute la référence à l’élément d’origine | Élément de copie à l’emplacement cible |
 | Copier/coller | Source | Conserve l’élément d’origine | Conserve l’élément d’origine |
 | Copier/coller | Résultat | Élément reste dans l’emplacement d’origine dans le stockage | Élément reste dans le stockage d’ins l’emplacement d’origine |
 
 #### <a name="mixed-target-projects"></a>Projets cibles mixte
 Le tableau suivant résume les opérations de glisser-déplacer (ainsi que de couper/copier/coller) qui doivent être effectuées en fonction de la nature de l’élément et le modificateur clés source enfoncé pour les projets cibles mixte :
 
-| Modificateur | Catégorie | Élément de la source : Référence/lien | Élément de la source : Système d’élément ou le fichier physique (`CF_HDROP`) |
+| Modificateur | Category | Élément de la source : Référence/lien | Élément de la source : Système d’élément ou le fichier physique (`CF_HDROP`) |
 | --- | --- | --- | --- |
 | Aucun modificateur | Action | Déplacement | Déplacement |
-| Aucun modificateur | Cible | Ajoute la référence à l’élément d’origine | Élément de copie à l’emplacement cible |
+| Aucun modificateur | une cible | Ajoute la référence à l’élément d’origine | Élément de copie à l’emplacement cible |
 | Aucun modificateur | Source | Référence de suppressions à l’élément d’origine | Référence de suppressions à l’élément d’origine |
 | Aucun modificateur | Résultat | `DROPEFFECT_ MOVE` est retourné en tant qu’action à partir de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | `DROPEFFECT_ MOVE` est retourné en tant qu’action à partir de `::Drop` et de l’élément est supprimé de l’emplacement d’origine dans le stockage |
 | Maj + faire glisser | Action | Déplacement | Déplacement |
-| Maj + faire glisser | Cible | Ajoute la référence à l’élément d’origine | Élément de copie à l’emplacement cible |
+| Maj + faire glisser | une cible | Ajoute la référence à l’élément d’origine | Élément de copie à l’emplacement cible |
 | Maj + faire glisser | Source | Référence de suppressions à l’élément d’origine | Supprime l’élément à partir de l’emplacement d’origine |
 | Maj + faire glisser | Résultat | `DROPEFFECT_ MOVE` est retourné en tant qu’action à partir de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | `DROPEFFECT_ MOVE` est retourné en tant qu’action à partir de `::Drop` et de l’élément est supprimé de l’emplacement d’origine dans le stockage |
 | Ctrl+Drag | Action | Copier | Copier |
-| Ctrl+Drag | Cible | Ajoute la référence à l’élément d’origine | Élément de copie à l’emplacement cible |
+| Ctrl+Drag | une cible | Ajoute la référence à l’élément d’origine | Élément de copie à l’emplacement cible |
 | Ctrl+Drag | Source | Conserve la référence à l’élément d’origine | Conserve l’élément d’origine |
 | Ctrl+Drag | Résultat | `DROPEFFECT_ COPY` est retourné en tant qu’action à partir de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | `DROPEFFECT_ COPY` est retourné en tant qu’action à partir de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage |
-| Ctrl + Maj + faire glisser | Action | Link | Link |
-| Ctrl + Maj + faire glisser | Cible | Ajoute la référence à l’élément d’origine | Ajoute la référence à l’élément source d’origine |
+| Ctrl + Maj + faire glisser | Action | Lien | Lien |
+| Ctrl + Maj + faire glisser | une cible | Ajoute la référence à l’élément d’origine | Ajoute la référence à l’élément source d’origine |
 | Ctrl + Maj + faire glisser | Source | Conserve la référence à l’élément d’origine | Conserve l’élément d’origine |
 | Ctrl + Maj + faire glisser | Résultat | `DROPEFFECT_ LINK` est retourné en tant qu’action à partir de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | `DROPEFFECT_ LINK` est retourné en tant qu’action à partir de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage |
 | Couper/coller | Action | Déplacement | Déplacement |
-| Couper/coller | Cible | Élément de copie à l’emplacement cible | Élément de copie à l’emplacement cible |
+| Couper/coller | une cible | Élément de copie à l’emplacement cible | Élément de copie à l’emplacement cible |
 | Couper/coller | Source | Référence de suppressions à l’élément d’origine | Supprime l’élément à partir de l’emplacement d’origine |
 | Couper/coller | Résultat | Élément reste dans l’emplacement d’origine dans le stockage | Élément est supprimé de l’emplacement d’origine dans le stockage |
 | Copier/coller | Action | Copier | Copier |
-| Copier/coller | Cible | Ajoute la référence à l’élément d’origine | Élément de copie à l’emplacement cible |
+| Copier/coller | une cible | Ajoute la référence à l’élément d’origine | Élément de copie à l’emplacement cible |
 | Copier/coller | Source | Conserve l’élément d’origine | Conserve l’élément d’origine |
 | Copier/coller | Résultat | Élément reste dans l’emplacement d’origine dans le stockage | Élément reste dans l’emplacement d’origine dans le stockage |
 

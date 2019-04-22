@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour attacher le profileur à un service natif pour collecter des données concurrentielles en utilisant la ligne de commande | Microsoft Docs
+title: 'Procédure : attacher le profileur à un service natif pour collecter des données concurrentielles en utilisant la ligne de commande | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,14 +9,14 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 77aa3500b867b63dd9049307c2e3e5986a1cba61
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a33f43f7c12f45cfbe469b618385c64158547d71
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780855"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654345"
 ---
-# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>Guide pratique pour attacher le profileur à un service natif pour collecter des données concurrentielles en utilisant la ligne de commande
+# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>Procédure : Attacher le Profiler à un Service natif pour collecter des données concurrentielles en utilisant la ligne de commande
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette rubrique explique comment utiliser les outils en ligne de commande des outils de profilage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour attacher le profileur à un service natif (C/C++) et pour collecter des données de concurrence de processus et de threads à l’aide de la méthode d’échantillonnage.  
@@ -54,7 +54,6 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des out
    |  [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`  |                                      Spécifie le compteur de performances Windows dont les données doivent être collectées au cours du profilage.                                       |
    |       [/automark](../profiling/automark.md) **:** `Interval`       | À utiliser avec **/wincounter** uniquement. Spécifie le nombre de millisecondes écoulées entre les événements de collecte du compteur de performances Windows. La valeur par défaut est de 500 ms. |
    |     [/events](../profiling/events-vsperfcmd.md) **:** `Config`     |       Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un fichier séparé (.etl).       |
-
 
 3. Attachez le profileur au service en tapant la commande suivante dans la fenêtre d’invite de commandes :  
 

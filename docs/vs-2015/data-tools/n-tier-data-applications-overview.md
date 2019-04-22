@@ -19,17 +19,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c3d635750a01838cc40c9af8ec17465b25fc438
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 532781a2e816120dabfe2bec61059955cd0c82a6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953807"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658121"
 ---
 # <a name="n-tier-data-applications-overview"></a>Vue d'ensemble des applications de données multicouches
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 N-* de couche données qui sont des données applications sont divisées en plusieurs *niveaux*. Également appelées « applications distribuées » et « applications à plusieurs niveaux », avec applications multicouches séparent le traitement en couches discrètes qui sont distribuées entre le client et le serveur. Lorsque vous développez des applications qui accèdent aux données, vous devez avoir une séparation claire entre les différentes couches qui composent l’application.  
   
  Une application multiniveaux classique inclut une couche Présentation, une couche intermédiaire et une couche Données. Pour séparer plusieurs couches dans une application multicouche, la plus simple consiste à créer des projets distincts pour chaque niveau que vous souhaitez inclure dans votre application. Par exemple, la couche de présentation peut être une application Windows Forms, tandis que la logique d’accès aux données peut être une bibliothèque de classes située dans la couche intermédiaire. En outre, la couche de présentation peut communiquer avec la logique d’accès aux données dans la couche intermédiaire via un service tel qu’un service. La séparation des composants d'application en couches distinctes renforce la facilité de maintenance et l'évolutivité de l'application. Pour cela, l’activation facilitant l’adoption de nouvelles technologies qui peuvent être appliqués à une couche unique sans avoir à reconcevoir toute la solution. En outre, avec applications multicouches stockent généralement les informations sensibles dans la couche intermédiaire, ce qui assure l’isolation de la couche de présentation.  

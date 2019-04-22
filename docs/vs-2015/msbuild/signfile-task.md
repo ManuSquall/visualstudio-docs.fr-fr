@@ -19,17 +19,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 07215b20da99a02100eeb8781c5a637c3b689e71
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dc65715c2e0bc1e6e36e86c1ce8e3cd1b4c81058
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54764890"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660344"
 ---
 # <a name="signfile-task"></a>SignFile, tâche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Signe le fichier spécifié à l'aide du certificat spécifié.  
   
 ## <a name="parameters"></a>Paramètres  
@@ -51,7 +50,7 @@ Signe le fichier spécifié à l'aide du certificat spécifié.
  En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Task, classe de base](../msbuild/task-base-class.md).  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant utilise la tâche `SignFile` pour signer les fichiers spécifiés dans la collection d’éléments `FilesToSign` avec le certificat spécifié par la propriété `Certificate`.  
+ L'exemple suivant utilise la tâche `SignFile` pour signer les fichiers spécifiés dans la collection d'éléments `FilesToSign` avec le certificat spécifié par la propriété `Certificate`.  
   
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -74,7 +73,7 @@ Signe le fichier spécifié à l'aide du certificat spécifié.
 >  L'empreinte de certificat correspond au hachage SHA-1 du certificat. Pour plus d’informations, consultez [Obtenir le hachage SHA-1 d’un certificat d’autorité de certification racine de confiance](http://msdn.microsoft.com/dd641990-9a88-4228-a245-017797131a87).  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant utilise la tâche `Exec` pour signer les fichiers spécifiés dans la collection d’éléments `FilesToSign` avec le certificat spécifié par la propriété `Certificate`. Vous pouvez l'utiliser pour signer les fichiers Windows Installer pendant le processus de génération.  
+ L'exemple suivant utilise la tâche `Exec` pour signer les fichiers spécifiés dans la collection d'éléments `FilesToSign` avec le certificat spécifié par la propriété `Certificate`. Vous pouvez l'utiliser pour signer les fichiers Windows Installer pendant le processus de génération.  
   
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  

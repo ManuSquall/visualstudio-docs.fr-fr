@@ -1,5 +1,5 @@
 ---
-title: 'Zone de test 8 : Plug-in de commutation | Microsoft Docs'
+title: 'Zone de test 8 : Plug-in de commutation | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 002aa5cf9e1324eb81996a5a14f7a1933a26ba9d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 2093db67a97bcd913773feebe0a4f10bf6ac9180
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605170"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659499"
 ---
-# <a name="test-area-8-plug-in-switching"></a>Zone de test 8 : Commutation de plug-in
+# <a name="test-area-8-plug-in-switching"></a>Zone de test 8 : Commutation de plug-in
 Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE) a l’interface utilisateur (IU) pour modifier le plug-in du contrôle de source en cours. Cette zone de test fournit un cas de test pour le processus de sélection du plug-in à utiliser pour le contrôle de code source de solution qui.
 
 ## <a name="command-menu-access"></a>Accès au Menu de commande
@@ -39,7 +39,6 @@ Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l’environnemen
 #### <a name="expected-behavior"></a>Comportement attendu
  Lorsqu’un utilisateur charge une solution qui est sous contrôle de code source, la solution est automatiquement chargée et le plug-in de contrôle de code source approprié est sélectionné comme en cours.
 
-
 | Action | Étapes de test | Résultats attendus pour vérifier |
 | - | - | - |
 | Modification de plug-in de contrôle de source automatique | 1.  Sélectionnez plug-in sous test autant à jour (**outils** -> **Options** -> **contrôle de code Source** -> **plug-in Sélection**.)<br />2.  Créer un nouveau projet.<br />3.  Ajouter la solution au contrôle de code source.<br />4.  Sélectionner un autre plug-in (par exemple, [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]).<br />5.  Accepter l’invite déchargement de solution.<br />6.  Rouvrez la solution à partir du disque. | Solution est ouverte.<br /><br /> Plug-in de test est le plug-in du contrôle de source en cours. |
@@ -48,7 +47,6 @@ Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l’environnemen
 
 #### <a name="expected-behavior"></a>Comportement attendu
  La solution peut avoir son plug-in de contrôle de code source associé modifié.
-
 
 | Action | Étapes de test | Résultats attendus pour vérifier |
 |----------------------------------| - | - |

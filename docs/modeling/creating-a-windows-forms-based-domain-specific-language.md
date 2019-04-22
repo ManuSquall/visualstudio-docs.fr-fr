@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ada8a5b08d1a5ca7caed142c1bba9de103a3f954
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 9e952cda19664a9d73ebe6b77daba3ecfd78777c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951512"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658707"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Création d'un langage spécifique à un domaine basé sur Windows Forms
 Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de langage spécifique à un domaine (DSL), au lieu d’utiliser un diagramme DSL. Cette rubrique vous guide tout au long de la liaison d’un formulaire Windows à un DSL à l’aide de la Visual Studio Visualization and Modeling SDK.
@@ -28,12 +28,10 @@ Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de lan
 
     Dans cette procédure pas à pas, les noms suivants sont supposées :
 
-
    | | |
    |-|-|
    | Nom de solution et DSL | FarmApp |
    | Espace de noms | Company.FarmApp |
-
 
 2. Faire des essais avec l’exemple initial qui fournit le modèle :
 

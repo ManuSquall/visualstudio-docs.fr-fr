@@ -22,17 +22,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 242596220b12756b6b5243b008b52db207c22cb0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f4c036cac8fa60e3f0353815cb3790f0f74ddc77
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952290"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656776"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Remplir des datasets à l’aide de TableAdapters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Un composant du TableAdapter remplit un dataset avec des données à partir de la base de données, selon une ou plusieurs requêtes ou des procédures stockées que vous spécifiez. Les TableAdapters peuvent également effectuer ajoute, met à jour et suppressions sur la base de données pour conserver les modifications que vous apportez au jeu de données. Vous pouvez également émettre des commandes globales qui ne sont pas liées à une table spécifique.  
   
 > [!NOTE]
@@ -107,7 +106,7 @@ Un composant du TableAdapter remplit un dataset avec des données à partir de l
  Si vous ne souhaitez pas créer ces méthodes directes, affectez à la **GenerateDbDirectMethods** propriété `false` (dans le **propriétés** fenêtre). Les requêtes supplémentaires sont ajoutées au TableAdapter sont des requêtes autonomes : ils ne génèrent pas ces méthodes.  
   
 ## <a name="tableadapter-support-for-nullable-types"></a>Prise en charge du TableAdapter pour les types nullables  
- Les TableAdapters prennent en charge les types nullables `Nullable(Of T)` et `T?`. Pour plus d’informations sur les types Nullable dans Visual Basic, consultez [Types valeur Nullable](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6). Pour plus d’informations sur les types nullable en C#, consultez [à l’aide des Types Nullable](http://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28).  
+ Les TableAdapters prennent en charge les types nullables `Nullable(Of T)` et `T?`. Pour plus d’informations sur les types Nullable dans Visual Basic, consultez [Types valeur Nullable](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6). Pour plus d’informations sur les types nullable en c#, consultez [à l’aide des Types Nullable](http://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28).  
   
 ## <a name="security"></a>Sécurité  
  Lorsque vous utilisez les commandes de données avec un `CommandType` propriété définie sur <xref:System.Data.CommandType>, soigneusement vérifier les informations qui sont envoyées à partir d’un client avant de le transmettre à votre base de données. Des utilisateurs malveillants peuvent tenter d’envoyer (injecter) des instructions SQL modifiées ou supplémentaires afin d’accéder à la base de données ou de l’endommager. Avant de transférer l’entrée utilisateur et une base de données, vérifiez toujours que les informations sont valides. Une bonne pratique consiste à toujours utiliser des requêtes paramétrables ou les procédures stockées lorsque cela est possible.  

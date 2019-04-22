@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ec2d14a03649b63a068d2e0a95877ccd03ddf97a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 5350c4cad7acf936d90698a99299757e13a7de3a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938328"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658825"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Procédure : génération d'un extrait XML à partir d'un schéma XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 L'éditeur XML permet de générer des extraits XML à partir d'un schéma de langage XSD (XML Schema definition). Par exemple, lorsque vous créez un fichier XML alors que le curseur est placé à côté du nom d'un élément, vous pouvez appuyer sur TAB pour remplir l'élément avec des données XML générées à partir des informations de schéma de cet élément.  
   
  Cette fonction n'est disponible que pour les éléments. Les règles suivantes s'appliquent également :  

@@ -14,17 +14,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dc35def483b80610b9480dfd57320712d75fe0eb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b78e70ae790a39cb761eca34dcdc2b9b32b5bbfd
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949870"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653630"
 ---
 # <a name="create-a-sql-database-by-using-a-script"></a>Créer une base de données SQL à l’aide d’un script
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Dans cette procédure pas à pas, vous utilisez Visual Studio pour créer une petite base de données qui contient l’exemple de code [créer une application de données simple à l’aide d’ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md).  
   
  **Dans cette rubrique**  

@@ -9,17 +9,16 @@ caps.latest.revision: 4
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 14b04de6ea4c945b67bada257d7822790b683b38
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 744e7d89827e169579953474c9e7b37f2dcc653f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772940"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660503"
 ---
 # <a name="customize-project-files-created-by-vstu"></a>Personnaliser les fichiers projet créés par VSTU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual Studio Tools pour Unity fournit un rappel de type Unity pendant la génération du fichier projet. Inscrivez-vous avec l'événement `VisualStudioIntegration.ProjectFileGeneration` pour modifier le fichier projet chaque fois qu'il est régénéré.  
   
 ## <a name="demonstrates"></a>Démonstrations  
@@ -70,4 +69,4 @@ public class ProjectFileHook
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Exemple : rappel de journal](../cross-platform/share-the-unity-log-callback-with-vstu.md)
+ [Exemple : Rappel de journal](../cross-platform/share-the-unity-log-callback-with-vstu.md)

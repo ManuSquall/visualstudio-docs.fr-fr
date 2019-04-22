@@ -16,17 +16,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dfc0c8eca387c2405881334670a51ee5d08685e5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8e36d5e50b15a5ede425715ec756f05ab8d014de
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54796875"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655814"
 ---
 # <a name="common-msbuild-project-items"></a>Éléments communs des projets MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Dans [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un élément est une référence nommée à un ou plusieurs fichiers. Les éléments contiennent des métadonnées, comme des noms de fichiers, des chemins et des numéros de version. Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], tous les types de projets ont plusieurs éléments en commun. Ces éléments sont définis dans le fichier microsoft.build.commontypes.xsd.  
   
 ## <a name="common-items"></a>Éléments communs  
@@ -37,7 +36,7 @@ Dans [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un élément est 
   
 |Nom d'élément|Description|  
 |---------------|-----------------|  
-|HintPath|Chaîne facultative. Chemin d’accès relatif ou absolu de l’assembly.|  
+|HintPath|Chaîne facultative. Chemin d'accès relatif ou absolu de l'assembly.|  
 |Name|Chaîne facultative. Nom complet de l'assembly, par exemple, « System.Windows.Forms ».|  
 |FusionName|Chaîne facultative. Spécifie le nom de fusion simple ou fort de l'élément.<br /><br /> La présence de cet attribut peut faire gagner du temps, car il vous évite d'ouvrir le fichier d'assembly pour obtenir le nom de fusion.|  
 |SpecificVersion|Valeur booléenne facultative. Indique si seule la version figurant dans le nom de fusion doit être référencée.|  
@@ -70,7 +69,7 @@ Dans [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un élément est 
 |Nom d'élément|Description|  
 |---------------|-----------------|  
 |Name|Chaîne requise. Nom de base du fichier manifeste.|  
-|HintPath|Chaîne requise. Chemin d’accès relatif du fichier manifeste.|  
+|HintPath|Chaîne requise. Chemin d'accès relatif du fichier manifeste.|  
   
 ### <a name="projectreference"></a>ProjectReference  
  Représente une référence à un autre projet.  
@@ -79,7 +78,7 @@ Dans [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un élément est 
 |---------------|-----------------|  
 |Name|Chaîne facultative. Nom complet de la référence.|  
 |Projet|Chaîne facultative. GUID de la référence sous la forme {12345678-1234-1234-1234-1234567891234}.|  
-|Package|Chaîne facultative. Chemin d’accès du fichier projet référencé.|  
+|Package|Chaîne facultative. Chemin d'accès du fichier projet référencé.|  
   
 ### <a name="compile"></a>Compile  
  Représente les fichiers sources du compilateur.  
@@ -88,7 +87,7 @@ Dans [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un élément est 
 |---------------|-----------------|  
 |DependentUpon|Chaîne facultative. Spécifie le fichier dont dépend ce fichier pour une compilation correcte.|  
 |AutoGen|Valeur booléenne facultative. Indique si le fichier a été généré pour le projet par l’environnement de développement intégré (IDE) [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|Lien|Chaîne facultative. Chemin d'accès codifiable à afficher quand le fichier se trouve physiquement en dehors de l'influence du fichier projet.|  
+|Lien|Chaîne facultative. Chemin d’accès codifiable à afficher quand le fichier se trouve physiquement en dehors de l’influence du fichier projet.|  
 |Visible|Valeur booléenne facultative. Indique si le fichier doit être affiché dans **l’Explorateur de solutions** de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |CopyToOutputDirectory|Chaîne facultative. Détermine si le fichier doit être copié dans le répertoire de sortie. Les valeurs possibles sont :<br /><br /> 1.  Never<br />2.  Always<br />3.  PreserveNewest|  
   
@@ -101,7 +100,7 @@ Dans [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un élément est 
 |Générateur|Chaîne requise. Nom du générateur de fichier exécuté sur cet élément.|  
 |LastGenOutput|Chaîne requise. Nom du fichier créé par le générateur de fichier qui a été exécuté sur cet élément.|  
 |CustomToolNamespace|Chaîne requise. Espace de noms dans lequel le générateur de fichier s'exécutant sur cet élément doit créer du code.|  
-|Lien|Chaîne facultative. Le chemin d'accès codifiable s'affiche si le fichier se trouve physiquement en dehors de l'influence du projet.|  
+|Lien|Chaîne facultative. Le chemin d’accès codifiable s’affiche si le fichier se trouve physiquement en dehors de l’influence du projet.|  
 |Visible|Valeur booléenne facultative. Indique si le fichier doit être affiché dans **l’Explorateur de solutions** de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |CopyToOutputDirectory|Chaîne facultative. Détermine si le fichier doit être copié dans le répertoire de sortie. Les valeurs possibles sont :<br /><br /> 1.  Never<br />2.  Always<br />3.  PreserveNewest|  
 |LogicalName|Chaîne requise. Nom logique de la ressource incorporée.|  
@@ -130,7 +129,7 @@ Dans [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un élément est 
 |Générateur|Chaîne requise. Nom du générateur de fichier exécuté sur cet élément.|  
 |LastGenOutput|Chaîne requise. Nom du fichier créé par le générateur de fichier qui a été exécuté sur cet élément.|  
 |CustomToolNamespace|Chaîne requise. Espace de noms dans lequel le générateur de fichier s'exécutant sur cet élément doit créer du code.|  
-|Lien|Chaîne facultative. Chemin d’accès codifiable à afficher si le fichier se trouve physiquement en dehors de l’influence du projet.|  
+|Lien|Chaîne facultative. Chemin d'accès codifiable à afficher si le fichier se trouve physiquement en dehors de l'influence du projet.|  
 |Visible|Valeur booléenne facultative. Indique si le fichier doit être affiché dans **l’Explorateur de solutions** de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |CopyToOutputDirectory|Chaîne facultative. Détermine si le fichier doit être copié dans le répertoire de sortie. Les valeurs possibles sont :<br /><br /> 1.  Never<br />2.  Always<br />3.  PreserveNewest|  
   

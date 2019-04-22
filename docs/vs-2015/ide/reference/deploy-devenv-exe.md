@@ -14,17 +14,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 16ac851c59f084a4d9e98998754e7b9d20afaf81
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0dac8564c06efd65b8db04e0aa0fae97a849e6cb
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54804527"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658082"
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Déploie une solution après une génération ou une regénération. S’applique aux projets de code managé uniquement.  
   
 ## <a name="syntax"></a>Syntaxe  

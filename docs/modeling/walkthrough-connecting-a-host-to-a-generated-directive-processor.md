@@ -13,14 +13,14 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: a84b24dff387e0a93058c07e9f6d7b6cfe503d49
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: b255f521d45d1e827a3bfb9bc9bc5129f090bcaa
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935587"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655710"
 ---
-# <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Procédure pas à pas : Connecter un hôte à un processeur de Directive généré
+# <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Procédure pas à pas : Connecter un hôte à un processeur de directive généré
 
 Vous pouvez écrire votre propre hôte qui traite les modèles de texte. Un hôte personnalisé de base est illustré dans [procédure pas à pas : Création d’un hôte de modèle de texte personnalisé](../modeling/walkthrough-creating-a-custom-text-template-host.md). Vous pouvez étendre cet hôte pour ajouter des fonctions telles que la génération de plusieurs fichiers de sortie.
 
@@ -40,7 +40,6 @@ Cette procédure pas à pas comprend les tâches suivantes :
 ## <a name="prerequisites"></a>Prérequis
 
 Pour définir un DSL, vous devez avoir installé les composants suivants :
-
 
 | | |
 |-|-|
@@ -363,4 +362,4 @@ Pour tester l’hôte de modèle de texte personnalisé, vous devez tout d’abo
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Procédure pas à pas : Création d’un hôte de modèle de texte personnalisé](../modeling/walkthrough-creating-a-custom-text-template-host.md)
+- [Procédure pas à pas : Créer un hôte de modèle de texte personnalisé](../modeling/walkthrough-creating-a-custom-text-template-host.md)

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6845e867a8c5fd0ef2b367dc5f2e3b5760869746
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6c23ec3101baac033cbef47f6f1c3ad6f717a15d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602012"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661059"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Créer des dossiers pour les solutions de conteneur parent
 Dans la Source de contrôle plug-in API Version 1.2, un utilisateur peut spécifier une destination de contrôle de source de racine unique pour tous les projets web dans la solution. Cette racine unique est appelée une racine d’unifiée Super (Sud).
@@ -42,7 +42,6 @@ Dans la Source de contrôle plug-in API Version 1.2, un utilisateur peut spécif
 -   Il existe des partages différents pour le projet et le fichier solution.
 
 -   Projets ont été ajoutés séparément (dans une solution sous contrôle de code source).
-
 
 Dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], il est recommandé que le nom du dossier SUR être le même que le nom de la solution sans l’extension. Le tableau suivant récapitule le comportement dans les deux versions.
 

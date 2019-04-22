@@ -19,17 +19,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1a4610f5603ad0197487c198074ad72d1381fda1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a3d829a439ec7fb61247e28146e80d4988f04623
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802187"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659694"
 ---
 # <a name="vbc-task"></a>Vbc, tâche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Encapsule vbc.exe, qui produit des fichiers exécutables (.exe), des bibliothèques de liens dynamiques (.dll) ou des modules de code (.netmodule). Pour plus d’informations sur vbc.exe, consultez [Compilateur de ligne de commande de Visual Basic](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c).  
   
 ## <a name="parameters"></a>Paramètres  
@@ -53,7 +52,7 @@ Encapsule vbc.exe, qui produit des fichiers exécutables (.exe), des bibliothèq
 |`Imports`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Importe des espaces de noms à partir des collections d’éléments spécifiées. Ce paramètre correspond au commutateur [/imports](http://msdn.microsoft.com/library/9a93fb53-c080-497b-bf9b-441022dbbc39) du compilateur vbc.exe.|  
 |`KeyContainer`|Paramètre `String` facultatif.<br /><br /> Spécifie le nom du conteneur de la clé de chiffrement. Ce paramètre correspond au commutateur [/keycontainer](http://msdn.microsoft.com/library/6a9bc861-1752-4db1-9f64-b5252f0482cc) du compilateur vbc.exe.|  
 |`KeyFile`|Paramètre `String` facultatif.<br /><br /> Spécifie le nom du fichier contenant la clé de chiffrement. Pour plus d’informations, consultez [/keyfile](http://msdn.microsoft.com/library/ffa82a4b-517a-4c6c-9889-5bae7b534bb8).|  
-|`LangVersion`|Paramètre [Chaîne](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) facultatif.<br /><br /> Spécifie la version du langage, « 9 » ou « 10 ».|  
+|`LangVersion`|[Chaîne] facultative)<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) paramètre.<br /><br /> Spécifie la version du langage, « 9 » ou « 10 ».|  
 |`LinkResources`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Crée un lien à une ressource .NET Framework dans le fichier de sortie ; le fichier de ressources n’est pas placé dans le fichier de sortie. Ce paramètre correspond au commutateur [/linkresource](http://msdn.microsoft.com/library/cf4dcad8-17b7-404c-9184-29358aa05b15) du compilateur vbc.exe.|  
 |`MainEntryPoint`|Paramètre `String` facultatif.<br /><br /> Spécifie la classe ou le module qui contient la procédure `Sub Main`. Ce paramètre correspond au commutateur [/main](http://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0) du compilateur vbc.exe.|  
 |`ModuleAssemblyName`|Paramètre `String` facultatif.<br /><br /> Spécifie l’assembly dont ce module fait partie.|  
@@ -90,7 +89,7 @@ Encapsule vbc.exe, qui produit des fichiers exécutables (.exe), des bibliothèq
 |`Win32Icon`|Paramètre `String` facultatif.<br /><br /> Insère un fichier .ico dans l’assembly, ce qui donne au fichier de sortie l’apparence souhaitée dans l’Explorateur de fichiers. Ce paramètre correspond au commutateur [/win32icon](http://msdn.microsoft.com/library/aecaab01-9353-46c5-941c-6edabd4eff92) du compilateur vbc.exe.|  
 |`Win32Resources`|Paramètre `String` facultatif.<br /><br /> Insère un fichier de ressources Win32 (.res) dans le fichier de sortie. Ce paramètre correspond au commutateur [/win32resource](http://msdn.microsoft.com/library/e226946d-19ce-4cc9-91f5-aed24f77aa2b) du compilateur vbc.exe.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.ToolTask>. Pour obtenir la liste de ces paramètres supplémentaires et de leurs descriptions, consultez l’article [ToolTaskExtension Base Class (Classe de base ToolTaskExtension)](../msbuild/tooltaskextension-base-class.md).  
   
 ## <a name="example"></a>Exemple  

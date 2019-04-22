@@ -19,17 +19,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 243170acd838b96efac6521a548596a021893e41
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: ba83cf7db6415eefcb989f678bc4149d495016e4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952066"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658342"
 ---
 # <a name="save-data-by-using-a-transaction"></a>Enregistrer des données à l’aide d’une transaction
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Vous enregistrez des données dans une transaction en utilisant le <xref:System.Transactions> espace de noms. Utilisez le <xref:System.Transactions.TransactionScope> objet de participer à une transaction qui est gérée automatiquement pour vous.  
   
  Projets ne sont pas créés avec une référence à l’assembly System.Transactions, donc vous devez ajouter manuellement une référence aux projets qui utilisent des transactions.  

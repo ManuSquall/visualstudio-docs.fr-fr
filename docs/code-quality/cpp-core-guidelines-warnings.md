@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f57fc0ff69e732e105ce6e9f3202f356633ff176
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MT
+ms.openlocfilehash: 556821ff934d8276622ffb12ddbf4589ac404ab8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323449"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661384"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Utilisation des vérificateurs C++ Core Guidelines
 
@@ -95,7 +95,6 @@ Comme les nouvelles règles sont ajoutées pour le vérificateur de recommandati
   - **Règles de limites** appliquer le [délimite le profil de C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
   - **Règles de type** appliquer le [Type de profil de C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
-
 
 Vous pouvez choisir de limiter les avertissements pour une ou plusieurs des groupes. Le **Minimum Native** et **recommandé natif** règle jeux incluent les règles C++ Core Check en plus des autres vérifications PREfast. Pour afficher les ensembles de règles, ouvrez la boîte de dialogue Propriétés du projet, sélectionnez **Code Analysis\General**, ouvrez la liste déroulante dans le **des ensembles de règles** zone de liste déroulante, afin de sélectionner les **choisir plusieurs ensembles de règles** . Pour plus d’informations sur l’utilisation d’ensembles de règles dans Visual Studio, consultez [à l’aide des ensembles de règles à un groupe de règles d’analyse du Code](using-rule-sets-to-group-code-analysis-rules.md).
 

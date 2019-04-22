@@ -9,17 +9,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2fc172e9ed91a354918fd536060f97fcbb259a94
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: afc99ba7d5b7a6b5cf9fc0e610160213dec5d2e8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948523"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654501"
 ---
 # <a name="install-sql-server-sample-databases"></a>Installer les bases de données SQL Server
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Bases de données exemple sont utiles pour tester les requêtes SQL et LINQ, la liaison de données, modélisation de Entity Framework et ainsi de suite.  Chaque produit de base de données a ses propres bases de données exemple. Northwind et AdventureWorks sont deux populaires exemple bases de données SQL.  
   
  **AdventureWorks** est la base de données exemple actuelle fournie pour les produits de SQL Server. Vous pouvez le télécharger en tant qu’un fichier .mdf à partir de la [page AdventureWorks sur Codeplex](http://msftdbprodsamples.codeplex.com/). Il existe des versions (LT) régulières et légers de la base de données disponible ici. La plupart des scénarios, la version LT est préférable car il est moins complexe.  

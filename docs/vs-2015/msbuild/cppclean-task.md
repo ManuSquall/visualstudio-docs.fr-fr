@@ -20,22 +20,20 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e29a80c9cc3f492a19de630e2a09e1f15ca9c45c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: bddba1170cf675b5bde7ab8deed8cce1e7eb57dd
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791437"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654995"
 ---
 # <a name="cppclean-task"></a>CPPClean, tâche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Supprime les fichiers temporaires créés par MSBuild quand un projet Visual C++ est généré. Le processus de suppression des fichiers de build est appelé *nettoyage*.  
 
 ## <a name="parameters"></a>Paramètres  
  Le tableau ci-dessous décrit les paramètres de la tâche **CPPClean**.  
-
 
 |            Paramètre            |                                                                                                Description                                                                                                 |
 |---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -45,7 +43,7 @@ Supprime les fichiers temporaires créés par MSBuild quand un projet Visual C++
 |   **FilesExcludedFromClean**    |                                                    Paramètre `String` facultatif.<br /><br /> Spécifie la liste des fichiers (séparés par des points-virgules) à ne pas nettoyer.                                                    |
 |       **FoldersToClean**        | Paramètre `String` requis.<br /><br /> Spécifie la liste des répertoires (séparés par des points-virgules) à nettoyer. Vous pouvez spécifier un chemin complet ou relatif comportant le caractère générique (**\\**\*). |
 
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
 
 ## <a name="see-also"></a>Voir aussi  
  [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)

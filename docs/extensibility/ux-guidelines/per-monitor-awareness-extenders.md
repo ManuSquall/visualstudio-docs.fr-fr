@@ -16,12 +16,12 @@ ms.technology: vs-ide-general
 ms.topic: reference
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d4d9afdfcc221e8f07bae7d4bbf7dee57dda31f
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
-ms.translationtype: MT
+ms.openlocfilehash: db30c3d74a7742daa3c9cf7225bc2a38062dc6e4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504248"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660695"
 ---
 # <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Prise en charge par moniteur afin que les extendeurs de Visual Studio
 Versions antérieures à Visual Studio 2019 eu leur contexte de sensibilisation à la résolution définie sur le système prenant en charge, plutôt que des PPP prenant en charge (AVM) par le moniteur. En cours d’exécution dans la sensibilité au système a entraîné un visuel détérioré expérience (par exemple, floues polices ou icônes) chaque fois que Visual Studio devait restituer sur plusieurs écrans à des facteurs d’échelle différente ou à distance sur des machines avec des configurations d’affichage différent, par exemple (différents Windows mise à l’échelle).
@@ -40,10 +40,13 @@ Reportez-vous à la [développement d’applications haute résolution bureau su
 ## <a name="enabling-pma"></a>L’activation AVM
 Pour activer AVM dans Visual Studio, les conditions suivantes doivent être remplies :
 1)  Windows 10 avril 2018 mise à jour (v1803, RS4) ou version ultérieure
-2)  .NET framework 4.8 RTM ou version ultérieure (actuellement est fourni en tant qu’aperçu autonome ou une offre groupée avec récentes Windows builds Insider)
+2)  .NET framework 4.8 RTM ou version ultérieure
 3)  Visual Studio 2019 avec le [« Optimiser le rendu pour les écrans de densité de pixels différentes »](https://docs.microsoft.com/visualstudio/ide/reference/general-environment-options-dialog-box?view=vs-2019) option est activée
 
 Une fois que ces exigences sont satisfaites, Visual Studio active automatiquement le mode AVM entre les différents processus.
+
+> [!NOTE]
+> Contenu de Windows Forms dans Visual Studio (par exemple Explorateur de propriétés) prendra en charge AVM uniquement lorsque vous avez Visual Studio 2019 Update #1.
 
 ## <a name="testing-your-extensions-for-pma-issues"></a>Test de vos extensions pour les problèmes d’AVM
 
@@ -106,12 +109,18 @@ Chaque fois que dans les scénarios de PPP en mode mixte (par exemple, différen
 #### <a name="out-of-process-ui"></a>Interface utilisateur out-of-process
 Une interface utilisateur est créée out-of-process et si la création du processus externe est dans un autre mode de sensibilisation à la résolution que Visual Studio, cela peut introduire un des problèmes de rendu précédent.
 
-#### <a name="windows-forms-controls-images-or-windows-not-displaying"></a>Windows ne s’affichent ne pas, des images ou des contrôles Windows Forms
+#### <a name="windows-forms-controls-images-or-layouts-rendered-incorrectly"></a>Contrôles Windows Forms, des images ou des dispositions de rendu de manière incorrecte
+Pas tout le contenu de Windows Forms prend en charge le mode AVM. Par conséquent, vous pouvez voir le rendu de problème avec les dispositions incorrectes ou la mise à l’échelle. Une solution possible est dans ce cas consiste à afficher explicitement le contenu de Windows Forms dans DpiAwarenessContext « Prenant en charge de système » (reportez-vous à [forçant un contrôle dans un DpiAwarenessContext spécifique](#forcing-a-control-into-a-specific-dpiawarenesscontext)).
+
+#### <a name="windows-forms-controls-or-windows-not-displaying"></a>Contrôles Windows Forms ou windows s’affichent ne pas
 Une des principales causes de ce problème est de développeurs qui tentent de redéfinir la parenté un contrôle ou une fenêtre avec un DpiAwarenessContext à une fenêtre avec un DpiAwarenessContext différent.
 
-Les images ci-dessous montrent les restrictions du système d’exploitation Windows en cours dans le parentage windows :
+Les images suivantes montrent actuel **par défaut** restrictions du système d’exploitation Windows dans apparenter windows :
 
 ![Une capture d’écran du comportement parentage correct](../../extensibility/ux-guidelines/media/PMA-parenting-behavior.PNG)
+
+> [!Note]
+> Vous pouvez modifier ce comportement en définissant le comportement d’hébergement de Thread (reportez-vous à [DpiHostinBehaviour](https://docs.microsoft.com/windows/desktop/api/windef/ne-windef-dpi_hosting_behavior)).
 
 Par conséquent, si vous définissez la relation parent-enfant entre les modes non pris en charge, il échoue, et le contrôle ou la fenêtre peut ne pas être restituée comme prévu.
 

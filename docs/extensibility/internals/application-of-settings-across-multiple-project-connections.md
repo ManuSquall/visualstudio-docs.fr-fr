@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7274f0daaf809116dc502a528fce1b540c2c53b2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: f7d0a13a72613ba72be5a90aa65be991d6ca10b3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620741"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657036"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>Application des paramètres entre plusieurs connexions de projet
 Un plug-in de contrôle de code source créé à l’aide de la Source de contrôle plug-in API Version 1.2, peut utiliser une opération par lot pour exécuter l’opération de contrôle de code source même entre plusieurs projets ou de plusieurs contextes de connexion. Lots peuvent être utilisés pour éliminer redondants, des boîtes de dialogue à partir de l’expérience utilisateur par projet.
@@ -31,7 +31,6 @@ Les fonctions suivantes prennent en charge l’opération de traitement par lots
 -   [SccBeginBatch](../../extensibility/sccbeginbatch-function.md)
 
 -   [SccEndBatch](../../extensibility/sccendbatch-function.md)
-
 
 Le `SCCBeginBatch` fonction commence à un groupe d’opérations de contrôle de code source. Le `SccEndBatch` fonction ferme le groupe. Les groupes ne peuvent pas être imbriqués.
 

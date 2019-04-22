@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f65312776f56fc2c96f2da7b528cc8cc9d339fb2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6d0b14b9f1cbbb81cc814546c5965e505a42885d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938266"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656542"
 ---
 # <a name="xml-schema-designer-workspace"></a>Espace de travail du Concepteur de schémas XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Le Concepteur de schémas XML (Concepteur XSD) est un outil graphique qui vous aide à explorer vos schémas XML. Outre le [Explorateur de schémas XML](../xml-tools/xml-schema-explorer.md), ce qui vous permet de parcourir et naviguez dans l’arborescence de schéma XML et effectuer des recherches, le concepteur XSD fournit trois vues qui vous permettent d’Explorer votre schéma XSD plus en détail. La vue de départ est le point de lancement du Concepteur XSD ; à partir de la vue de départ, vous pouvez naviguer vers d'autres vues du Concepteur XSD et afficher les détails de votre jeu de schémas. La vue du graphique vous permet d'afficher une vue d'ensemble d'un jeu de schémas et les relations entre les nœuds du schéma. La vue de modèle de contenu fournit une représentation graphique des détails des nœuds de schéma locaux et globaux, notamment les types simples et complexes, les éléments, les groupes, les attributs et les groupes d'attributs.  
   
  Pour commencer à explorer les nœuds qui vous intéressent, vous devez les ajouter à l'espace de travail. L'espace de travail est partagé entre toutes les vues.  

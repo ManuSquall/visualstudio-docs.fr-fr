@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33f2d4fda2fe7981863d65b17fc6dba53355dbeb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 30f51715cd26c9d61e355115db6f4ca4b9831ef0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702276"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660786"
 ---
 # <a name="core-interfaces"></a>Interfaces de base
 Les interfaces suivantes sont les interfaces de base pour l’extension de débogueur à l’aide de la [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)].
@@ -138,7 +138,6 @@ Les interfaces suivantes sont les interfaces de base pour l’extension de débo
 ##  <a name="Events"></a> Événements
  Ces interfaces représentent tous les événements qui sont envoyés entre l’Allemagne et le Gestionnaire de session de débogage (SDM).
 
-
 | Interface | Implémenté par | Description |
 | - |----------------| - |
 | [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md) | DE | Envoyé par le DE demander un document à ouvrir. |
@@ -211,7 +210,6 @@ Les interfaces suivantes sont les interfaces de base pour l’extension de débo
 
 ##  <a name="Ports"></a> Ports
  Ces interfaces représentent les ports et les fournisseurs de port.
-
 
 | Interface | Implémenté par | Description |
 | - |----------------| - |

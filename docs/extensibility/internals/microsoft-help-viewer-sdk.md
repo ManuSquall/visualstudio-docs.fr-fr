@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e119a632210a8677f50a6c0d0bd2306b7c810f08
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 5bee805581f23e4654a8fce318a39b4ff3da4184
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868299"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660710"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Kit SDK de Microsoft Help Viewer
 
@@ -63,7 +63,7 @@ Chaînes de langue prise en charge (non sensible à la casse) :
 
 -   javascript
 
--   CSharp ou C#
+-   CSharp ou c#
 
 -   cplusplus ou Visual c++ ou c ++
 
@@ -359,7 +359,6 @@ Dans l’IDE, sous l’élément de menu Aide, sélectionnez **contexte de vous 
 **Métadonnées de contenu**
 
 Dans le tableau suivant, n’importe quelle chaîne qui s’affiche entre crochets est un espace réservé qui doit être remplacé par une valeur reconnue. Par exemple, dans \<meta name="Microsoft.Help.Locale » contenu = « [code de langue] » / >, « [code de langue] » doit être remplacé par une valeur comme « en-us ».
-
 
 | Propriété (représentation HTML) | Description |
 | - | - |

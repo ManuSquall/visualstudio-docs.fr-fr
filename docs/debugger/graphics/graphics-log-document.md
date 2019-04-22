@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4596015acd94d7d4f1d4d5552cfe6d83ab8727c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: c4d372c0f21bfeb9768796e494a2689b7fc9f32f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714281"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658042"
 ---
 # <a name="graphics-log-document"></a>Document de journal Graphics
 Le document journal de graphisme est l’enregistrement des événements graphiques qui se sont produits pendant l’exécution de votre application sous une session Graphics Diagnostics. Une fois les événements enregistrés, vous pouvez examiner le journal dans Visual Studio Graphics Analyzer pour diagnostiquer les problèmes de rendu et de performances.
@@ -42,14 +42,14 @@ Le document journal de graphisme est l’enregistrement des événements graphiq
 ## <a name="playback-machine"></a>Ordinateur de lecture
  Dans l’angle supérieur droit de la **Liste de frames** figure également l’**ordinateur de lecture**. L’ordinateur de lecture est l’ordinateur ou l’appareil utilisé pour lire les événements graphiques d’un fichier journal de graphisme à l’occasion d’une session Graphics Diagnostics ultérieure. En lisant les événements capturés sur un autre appareil que votre ordinateur de développement, vous pouvez reproduire avec une plus grande précision l'environnement d'exécution dans lequel le problème s'est produit. Par exemple, vous pouvez utiliser un ordinateur équipé de matériel ou de pilotes graphiques différents de ceux utilisés sur votre ordinateur de développement, ou d'autres types d'appareils, tels qu'une tablette Windows RT ou un appareil Windows Phone ARM.
 
- Pour plus d’informations sur la spécification d’un ordinateur de lecture, consultez [Guide pratique pour modifier l’ordinateur de lecture Graphics Diagnostics](how-to-change-the-graphics-diagnostics-playback-machine.md).
+ Pour plus d’informations sur la spécification d’un ordinateur de lecture, consultez [Comment : modifier l’ordinateur de lecture Graphics Diagnostics](how-to-change-the-graphics-diagnostics-playback-machine.md).
 
 ## <a name="graphics-log-summary-information"></a>Information résumées du journal de graphisme
  Quand le document actif est un fichier journal de graphisme, la fenêtre **Propriétés** affiche des informations sur l’environnement qui a hébergé la session de capture Graphics Diagnostics. Plusieurs catégories d'informations sont affichées.
 
  **Informations de Direct3D** répertorie des informations sur les fonctionnalités du matériel et des pilotes de la carte vidéo qui a été utilisée pendant la session de capture.
 
-|Property|Description|
+|Propriété|Description|
 |--------------|-----------------|
 |**Format de couleur XR 10 bits**|**True** si le format de couleur XR 10 bits est pris en charge ; sinon, **False**.|
 |**DirectCompute CS 4.x**|**True** si Compute Shader 4.0 est pris en charge ; sinon, **False**.|
@@ -61,7 +61,7 @@ Le document journal de graphisme est l’enregistrement des événements graphiq
 
  **Afficher des informations** répertorie des informations sur la carte vidéo qui a été utilisée pendant la session de capture.
 
-|Property|Description|
+|Propriété|Description|
 |--------------|-----------------|
 |**Description**|Chaîne de description de la carte vidéo.|
 |**Afficher la mémoire**|Quantité de mémoire installée sur la carte vidéo.|
@@ -71,15 +71,15 @@ Le document journal de graphisme est l’enregistrement des événements graphiq
 
  **Tester le fichier** répertorie des informations sur le fichier d’expérimentation qui est associé à la session de capture.
 
-|Property|Description|
+|Propriété|Description|
 |--------------|-----------------|
-|**Chemin d’accès**|Chemin d’accès du fichier .vsglog. **Remarque :** sous la capture héritée, cette propriété n’est pas utilisée.|
+|**Chemin d’accès**|Chemin d’accès du fichier .vsglog. **Remarque :**  Dans le cas de la capture héritée, cette propriété n'est pas utilisée.|
 
  **Informations sur le module** répertorie le nom et la version des bibliothèques de liens dynamiques (DLL) qui ont été chargées par l’application pendant la session de capture.
 
  **Informations système** répertorie des informations sur le matériel et le système d’exploitation hébergeant l’application pendant la session de capture.
 
-|Property|Description|
+|Propriété|Description|
 |--------------|-----------------|
 |**Mémoire**|Quantité de mémoire installée sur l'ordinateur.|
 |**Architecture du système d’exploitation**|Architecture d'UC cible du système d'exploitation.|
@@ -89,7 +89,7 @@ Le document journal de graphisme est l’enregistrement des événements graphiq
 
  **Application cible** répertorie des informations sur l’application qui fait l’objet de la session de capture.
 
-|Property|Description|
+|Propriété|Description|
 |--------------|-----------------|
 |**Date/heure dernière modification**|Date et heure de génération de l'application.|
 |**Chemin d’accès**|Chemin d'accès de l'application.|
@@ -98,13 +98,12 @@ Le document journal de graphisme est l’enregistrement des événements graphiq
 
  **Fichier journal Vsg** affiche des informations sur le document de journal de graphisme.
 
-
-| Property | Description |
+| Propriété | Description |
 |------------------------| - |
 | **Créé par** | Nom de l'application qui a créé le document journal de graphisme. Par exemple, si la session de capture a été initialisée à partir de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (capture manuelle), la valeur de cette propriété est [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. |
 | **Heure de début de la session** | Date et heure de début de la session de capture. |
 | **Taille** | Taille du document journal de graphisme. |
 
 ## <a name="see-also"></a>Voir aussi
-- [Procédure pas à pas : objets manquants en raison de l’ombrage de vertex](walkthrough-missing-objects-due-to-vertex-shading.md)
+- [Procédure pas à pas : objets manquants en raison de Vertex Shader](walkthrough-missing-objects-due-to-vertex-shading.md)
 - [Procédure pas à pas : débogage des erreurs de rendu dues à l’ombrage](walkthrough-debugging-rendering-errors-due-to-shading.md)

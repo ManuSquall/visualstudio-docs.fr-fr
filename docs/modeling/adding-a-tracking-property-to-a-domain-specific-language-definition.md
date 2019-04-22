@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98e3c4aabd973a755f2289abfa809df556680070
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: cd4bf8b1b6f43e8ed12b133a621e21157fb87118
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944531"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657387"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Ajouter une propriété de suivi à une définition de langage spécifique à un domaine
 
@@ -45,7 +45,6 @@ Cette procédure pas à pas, vous allez créer un langage spécifique à un doma
 ## <a name="prerequisites"></a>Prérequis
 
 Avant de commencer cette procédure pas à pas, vous devez d’abord installer ces composants :
-
 
 | | |
 |-|-|
@@ -760,4 +759,4 @@ Si vous envisagez d’utiliser la propriété de suivi de plusieurs ou implémen
 - <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>
 - <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>
 - [Guide pratique pour définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md)
-- [Guide pratique pour Créer une Solution de langage spécifique à un domaine](../modeling/how-to-create-a-domain-specific-language-solution.md)
+- [Guide pratique pour créer une solution de langage spécifique à un domaine](../modeling/how-to-create-a-domain-specific-language-solution.md)

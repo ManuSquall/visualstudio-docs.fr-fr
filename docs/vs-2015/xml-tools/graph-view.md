@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bf9f92e56d9405a5945fe160860175d575e57cc4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 74ae0319bcf9c155bce693f9cf0924c8be449043
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948371"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658602"
 ---
 # <a name="graph-view"></a>Vue Graphique
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 La vue du graphique fournit une représentation graphique des nœuds de schéma globaux et des relations entre les nœuds. Notez que la vue du graphique ne vous permet pas de modifier la disposition du jeu de schémas sur l'aire de conception. La vue du graphique comprend également la barre d'outils Concepteur de schémas XML et la barre de fil d'Ariane (breadcrumb).  
   
  L'image suivante montre la vue du graphique avec six nœuds globaux sur son aire de conception.  

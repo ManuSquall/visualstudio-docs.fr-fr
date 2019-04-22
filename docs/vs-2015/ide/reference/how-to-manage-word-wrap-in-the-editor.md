@@ -13,17 +13,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7b8b195569d5e1daf0a414ee872a828f7c98be90
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 0ff92e93d2fa15591afddddc1a012ff94b8ba6c0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753244"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656009"
 ---
-# <a name="how-to-manage-word-wrap-in-the-editor"></a>Guide pratique pour gérer le retour automatique à la ligne dans l'éditeur
+# <a name="how-to-manage-word-wrap-in-the-editor"></a>Procédure : Gérer le retour automatique à la ligne dans l’éditeur
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Vous pouvez activer et désactiver l’option **Retour automatique à la ligne**. Lorsque cette option est activée, la partie d’une longue ligne qui s’étend au-delà de la largeur de la fenêtre de l’éditeur de code s’affiche à la ligne suivante. Lorsque cette option est désactivée, par exemple, pour faciliter l’utilisation de la numérotation des lignes, vous pouvez faire défiler l’affichage vers la droite pour voir l’extrémité des longues lignes.  
   
  Pour plus d'informations, voir [Procédure : Définir les Options générales de l’éditeur](http://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  

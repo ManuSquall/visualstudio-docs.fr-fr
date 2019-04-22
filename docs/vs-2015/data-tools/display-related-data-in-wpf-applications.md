@@ -22,17 +22,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e1b80fe54fa17c0d7109f6a4ddb4ac5ada98ae2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 3a80fa982da118db58abbc589136823d5c433ce3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947996"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657257"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Afficher des données associées dans des applications WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Dans certaines applications, vous souhaiterez utiliser des données provenant de plusieurs tables ou entités qui sont liées entre eux dans une relation parent-enfant. Par exemple, vous souhaiterez peut-être afficher une grille qui montre les clients d’un `Customers` table. Lorsque l’utilisateur sélectionne un client spécifique, un autre élément grid affiche les commandes de ce client à partir d’un connexes `Orders` table.  
   
  Vous pouvez créer des contrôles liés aux données qui affichent les données associées en faisant glisser des éléments à partir de la **des Sources de données** fenêtre vers le Concepteur WPF.  

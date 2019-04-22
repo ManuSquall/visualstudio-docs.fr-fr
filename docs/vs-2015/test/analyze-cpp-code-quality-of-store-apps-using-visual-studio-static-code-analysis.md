@@ -1,5 +1,5 @@
 ---
-title: Applications de Store d’analyse statique du code C++
+title: C++applications de Store d’analyse statique du code
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9194da6803f04f3bf4cc56696d01a68a3e27d67d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 867c42d4afb35abcc1e37c86f85a01a7dd3fdf24
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57873241"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659822"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analyser la qualité du code C++ des applications du Windows Store à l'aide de l'analyse statique du code Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,6 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 ##  <a name="Warnings"></a> Avertissements de l’analyse du code C++
  L'analyse du code génère les avertissements suivants pour le code C++ :
 
-
 |                                      Règle                                      |                                                  Description                                                  |
 |--------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
 |                       [C6001](../code-quality/c6001.md)                        |                                          Utilisation d'une mémoire non initialisée                                           |
@@ -133,7 +132,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 | [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Paramètre de chaîne de taille non valide                                         |
 |                       [C6525](../code-quality/c6525.md)                        |                                   Chaîne de taille non valide. Emplacement inaccessible                                    |
 | [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Type de tampon de chaîne de taille non valide                                        |
-|                       [C6527](../code-quality/c6527.md)                        |              Annotation non valide : la propriété NeedsRelease ne doit pas être utilisée sur des valeurs de type void               |
+|                       [C6527](../code-quality/c6527.md)                        |              Annotation non valide : Propriété de 'NeedsRelease' ne peut pas être utilisée sur les valeurs de type void               |
 |                       [C6530](../code-quality/c6530.md)                        |                                       Style de chaîne de format non reconnu                                        |
 |                       [C6540](../code-quality/c6540.md)                        | L'utilisation des annotations d'attribut sur cette fonction rendra non valides toutes ses annotations __declspec existantes  |
 |                       [C6551](../code-quality/c6551.md)                        |                              Spécification de taille non valide : expression impossible à analyser                              |
@@ -204,7 +203,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 |                      [C28286](../code-quality/c28286.md)                       |                                    Pour la fonction, erreur de syntaxe près de la fin                                    |
 |                      [C28287](../code-quality/c28287.md)                       |                Pour la fonction, erreur de syntaxe dans l’annotation \_At\_() (nom de paramètre non reconnu)                |
 |                      [C28288](../code-quality/c28288.md)                       |                  Pour la fonction, erreur de syntaxe dans l’annotation \_At\_() (nom de paramètre non valide)                   |
-|                      [C28289](../code-quality/c28289.md)                       |                Pour la fonction : ReadableTo ou WritableTo n'a pas eu de spécification de limites en tant que paramètre                |
+|                      [C28289](../code-quality/c28289.md)                       |                Pour la fonction : ReadableTo ou WritableTo n’avait pas une spécification de limite en tant que paramètre                |
 |                      [C28290](../code-quality/c28290.md)                       |           l'annotation pour la fonction contient plus d'Externals que le nombre réel de paramètres            |
 |                      [C28291](../code-quality/c28291.md)                       |                        post null/notnull au niveau 0 deref n'a pas de sens pour la fonction.                        |
 |                      [C28300](../code-quality/c28300.md)                       |                            Opérandes d’expression de types incompatibles pour l’opérateur                             |

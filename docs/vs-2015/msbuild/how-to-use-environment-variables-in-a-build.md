@@ -1,5 +1,5 @@
 ---
-title: 'Comment : utiliser des variables d’environnement dans une génération | Microsoft Docs'
+title: 'Procédure : Utiliser des variables d’environnement dans une build | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -13,17 +13,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cf043fbaac2e718b108920a61026378545fa5a95
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 78cdc8f95c5a48e8ce0491926b27f0521705e3bb
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780971"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655880"
 ---
-# <a name="how-to-use-environment-variables-in-a-build"></a>Comment : utiliser des variables d'environnement dans une génération
+# <a name="how-to-use-environment-variables-in-a-build"></a>Procédure : Utiliser des variables d’environnement dans une build
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Lorsque vous générez des projets, il est souvent nécessaire de définir des options de génération à l’aide des informations qui ne figurent pas dans le fichier projet ou dans les fichiers qui composent votre projet. Ces informations sont généralement stockées dans les variables d’environnement.  
   
 ## <a name="referencing-environment-variables"></a>Référencement des variables d’environnement  
@@ -72,4 +71,4 @@ Lorsque vous générez des projets, il est souvent nécessaire de définir des o
 
 [Propriétés MSBuild](../msbuild/msbuild-properties1.md)
 
-[Guide pratique pour générer les mêmes fichiers sources avec des options différentes](../msbuild/how-to-build-the-same-source-files-with-different-options.md)
+[Guide pratique pour Générer les mêmes fichiers sources avec des Options différentes](../msbuild/how-to-build-the-same-source-files-with-different-options.md)

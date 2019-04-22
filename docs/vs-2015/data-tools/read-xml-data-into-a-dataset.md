@@ -23,17 +23,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18f3c5c1e3b3c19f3cbf490aa3dd71c854abe7df
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 1b384ad0dd8c121a03f8ee8840f55352d435218c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938538"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653204"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Lire les données XML dans un dataset
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 ADO.NET fournit des méthodes simples pour travailler avec des données XML. Dans cette procédure pas à pas, vous créez une application Windows qui charge des données XML dans un jeu de données. Le jeu de données est ensuite affichée dans un <xref:System.Windows.Forms.DataGridView> contrôle. Enfin, un schéma XML en fonction du contenu du fichier XML s’affiche dans une zone de texte.  
   
  Cette procédure pas à pas se compose de cinq étapes principales :  
@@ -52,7 +51,7 @@ ADO.NET fournit des méthodes simples pour travailler avec des données XML. Dan
 >  Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites dans l’aide selon vos paramètres actifs ou de l’édition que vous utilisez. Pour modifier vos paramètres, sur le **outils** menu, sélectionnez**importation et exportation de paramètres**. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Créer un nouveau projet  
- Dans cette étape, vous créez un projet Visual Basic ou Visual C# qui contient cette procédure pas à pas.  
+ Dans cette étape, vous créez un projet Visual Basic ou Visual c# qui contient cette procédure pas à pas.  
   
 #### <a name="to-create-the-new-windows-project"></a>Pour créer un projet Windows  
   

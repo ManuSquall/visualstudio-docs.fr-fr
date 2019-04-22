@@ -11,17 +11,16 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 504f7f002c41832294e61fa968f7cfd2d32b54b0
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 7236c0cde965a52ea6ea19f4244e90ec53851405
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869120"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659161"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Installer Visual C++ pour le développement mobile multiplateforme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual C++ pour le développement mobile multiplateforme] (http://go.microsoft.com/fwlink/p/?LinkId=536383) est un composant installable de Visual Studio 2015. Il inclut des modèles Visual Studio multiplateformes et installe les outils multiplateformes ainsi que les Kits de développement logiciel pour une prise en main rapide, sans que vous n’ayez à effectuer les recherches, le téléchargement ni la configuration. Vous pouvez utiliser ces outils dans Visual Studio pour créer, modifier, déboguer et tester facilement des projets multiplateformes. Cette rubrique décrit comment installer les outils et les logiciels tiers requis pour développer des applications multiplateformes à l’aide de Visual Studio. Pour obtenir une vue d’ensemble du composant, consultez [Développement multiplateforme en Visual C++ pour appareils mobiles](http://go.microsoft.com/fwlink/p/?LinkId=536387)  
   
  [Spécifications](#Requirements)   

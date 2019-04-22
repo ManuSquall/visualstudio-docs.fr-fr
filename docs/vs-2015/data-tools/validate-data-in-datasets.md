@@ -24,17 +24,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1740e9d7668101911862c91457a2c81c48f7b72d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 73eb1162411800a951566c9eb14928875966cfb7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952404"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661319"
 ---
 # <a name="validate-data-in-datasets"></a>Valider les données dans des datasets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Validation des données est le processus consistant à confirmer que les valeurs entrées dans des objets de données sont conformes aux contraintes de schéma d’un jeu de données. Le processus de validation vérifie également que ces valeurs sont les suivantes les règles qui ont été établies pour votre application. Il est conseillé de valider les données avant d’envoyer des mises à jour la base de données sous-jacente. Cela réduit les erreurs, ainsi que le nombre potentiel d’allers-retours entre une application et la base de données.  
   
  Vous pouvez vérifier que les données sont écrites dans un jeu de données sont valides en créant des contrôles de validation dans le jeu de données. Le jeu de données peut vérifier les données quelle que soit la façon dont la mise à jour est effectuée, que ce soit directement par les contrôles dans un formulaire, au sein d’un composant, ou par d’autres moyens. Étant donné que le jeu de données fait partie de votre application (contrairement à la base de données principale), il est un emplacement logique pour générer une validation spécifique à l’application.  
@@ -113,7 +112,7 @@ Validation des données est le processus consistant à confirmer que les valeurs
   
      [!code-vb[VbRaddataValidating#3](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataValidating/VB/NorthwindDataSet.vb#3)]  
   
-#### <a name="to-validate-data-when-a-row-changes-c"></a>Pour valider des données lorsqu’une ligne change (C#)  
+#### <a name="to-validate-data-when-a-row-changes-c"></a>Pour valider des données lorsqu’une ligne change (c#)  
   
 1.  Ouvrez votre dataset dans le **Concepteur de DataSet**. Pour plus d'informations, voir [Procédure : Ouvrir un jeu de données dans le Concepteur de Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   

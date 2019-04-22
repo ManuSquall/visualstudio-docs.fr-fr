@@ -12,31 +12,36 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: f9a170cec2d41a779ecdecc1f2be408d485b3a63
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: f3dbd175ef5575375c314b942fedff9f77403265
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857474"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656438"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Déboguer des applications Azure ASP.NET en production avec le Débogueur de capture instantanée
 
 Le Débogueur de capture instantanée prend une capture instantanée de vos applications en production au moment de l’exécution du code qui vous intéresse. Pour indiquer au débogueur de prendre une capture instantanée, vous définissez des points d’ancrage et des points de journalisation dans votre code. Dans le débogueur, vous pouvez voir précisément à quel endroit le code ne s’est pas exécuté correctement, sans que cela impacte le trafic de votre application en production. Snapshot Debugger peut vous aider à résoudre beaucoup plus vite les problèmes rencontrés dans les environnements de production.
 
-Les snappoints et les logpoints sont similaires aux points d’arrêt, à ceci près que les snappoints n’arrêtent pas l’application lorsqu’ils sont atteints. En règle générale, une capture instantanée sur un snappoint prend entre 10 et 20 millisecondes.
+Les snappoints et les logpoints sont similaires aux points d’arrêt, mais contrairement à ceux-ci, les snappoints n’arrêtent pas l’application lorsqu’ils sont atteints. En règle générale, la capture d’un instantané sur un snappoint prend entre 10 et 20 millisecondes.
 
 Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
 > [!div class="checklist"]
 > * lancer le Débogueur de capture instantanée ;
-> * définir un snappoint et afficher une capture instantanée ;
-> * définir un logpoint.
+> * Définir un snappoint et afficher un instantané
+> * Définir un logpoint
 
 ## <a name="prerequisites"></a>Prérequis
 
-* Le Débogueur de capture instantanée n’est disponible que pour Visual Studio 2017 Enterprise version 15.5 (et versions ultérieures) avec la **charge de travail de développement Azure**. (Dans l’onglet **Composants individuels**, vous le trouverez sous **Débogage et test** > **Débogueur de capture instantanée**.)
+* Débogueur de capture instantanée est uniquement disponible à partir de Visual Studio 2017 Enterprise version 15.5 ou version ultérieure avec le **charge de travail de développement Azure**. (Dans l’onglet **Composants individuels**, vous le trouverez sous **Débogage et test** > **Débogueur de capture instantanée**.)
 
-    Si ce n’est pas déjà fait, installez [Visual Studio 2017 Enterprise version 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) (ou une version ultérieure). Si vous mettez à jour une ancienne installation de Visual Studio 2017, exécutez Visual Studio Installer et cochez le composant Débogueur de capture instantanée dans la **charge de travail de développement ASP.NET et web**.
+    ::: moniker range=">=vs-2019"
+    S’il n’est pas déjà installé, installez [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019). Si vous mettez à jour à partir d’une précédente installation de Visual Studio, exécutez le programme d’installation Visual Studio et vérifiez le composant de débogueur de capture instantanée le **charge de travail de développement ASP.NET et web**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Si ce n’est pas déjà fait, installez [Visual Studio 2017 Enterprise version 15.5](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) (ou une version ultérieure). Si vous mettez à jour une ancienne installation de Visual Studio 2017, exécutez Visual Studio Installer et cochez le composant Débogueur de capture instantanée dans la **charge de travail de développement ASP.NET et web**.
+    ::: moniker-end
 
 * Plan Azure App Service de base ou supérieur.
 
@@ -73,7 +78,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
   > L’extension de site Application Insights prend également en charge le débogage de capture instantanée. Si un message d’erreur du type « extension de site obsolète » apparaît, voir [Conseils de résolution des problèmes et problèmes connus pour le débogage de capture instantanée](../debugger/debug-live-azure-apps-troubleshooting.md) pour effectuer une mise à niveau.
 
    Visual Studio est maintenant en mode Débogage de capture instantanée.
-   ![Mode Débogage de capture instantanée](../debugger/media/snapshot-message.png)
+   ![Mode de débogage d’instantané](../debugger/media/snapshot-message.png)
 
    La fenêtre **Modules** indique que tous les modules sont chargés pour Azure App Service (choisissez **Déboguer > Fenêtres > Modules** pour l’ouvrir).
 
@@ -90,11 +95,11 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
    ![Activer le snappoint](../debugger/media/snapshot-start-collection.png)
 
     > [!TIP]
-    > L’exécution pas à pas n’est pas possible en affichant une capture instantanée, mais vous pouvez placer plusieurs snappoints dans votre code pour suivre l’exécution sur différentes lignes de code. Si le code comporte plusieurs snappoints, le Débogueur de capture instantanée s’assure que les captures instantanées correspondantes proviennent de la même session d’utilisateur final, même si de nombreux utilisateurs accèdent à l’application.
+    > L’exécution pas à pas n’est pas possible à l’affichage d’une capture instantanée, mais vous pouvez placer plusieurs snappoints dans votre code pour suivre l’exécution sur différentes lignes de code. Si le code comporte plusieurs snappoints, le Débogueur de capture instantanée s’assure que les captures instantanées correspondantes proviennent de la même session d’utilisateur final, même si de nombreux utilisateurs accèdent à l’application.
 
 ## <a name="take-a-snapshot"></a>Prendre un instantané
 
-Lorsqu’un snappoint est activé, il prend une capture instantanée à chaque exécution de la ligne de code correspondante. Cette exécution peut être provoquée par une demande réelle sur le serveur. Pour forcer l’activation du snappoint, accédez à la vue dans le navigateur de votre site web et effectuez l’une des actions correspondant à ce snappoint.
+Lorsqu’un snappoint est activé, il prend une capture instantanée chaque fois à chaque exécution de la ligne de code correspondante. Cette exécution peut être provoquée par une demande réelle sur le serveur. Pour forcer l’activation du snappoint, accédez à la vue dans le navigateur de votre site web et effectuez l’une des actions correspondant à ce snappoint.
 
 ## <a name="inspect-snapshot-data"></a>Inspecter les données de capture instantanée
 
@@ -112,7 +117,7 @@ Lorsqu’un snappoint est activé, il prend une capture instantanée à chaque e
 
 Vous pouvez également ajouter d’autres snappoints à votre application et les activer avec le bouton **Mettre à jour la collecte**.
 
-**Vous avez besoin d'aide ?** Voir les pages [Résolution des problèmes et problèmes connus](../debugger/debug-live-azure-apps-troubleshooting.md) et [FAQ du débogage de captures instantanées](../debugger/debug-live-azure-apps-faq.md).
+**Besoin d’aide ?** Voir les pages [Résolution des problèmes et problèmes connus](../debugger/debug-live-azure-apps-troubleshooting.md) et [FAQ du débogage de captures instantanées](../debugger/debug-live-azure-apps-faq.md).
 
 ## <a name="set-a-conditional-snappoint"></a>Définir un snappoint conditionnel
 
@@ -155,4 +160,4 @@ Nous avons vu comment prendre une capture instantanée lorsqu’un snappoint est
 Dans ce tutoriel, vous avez appris à utiliser le Débogueur de capture instantanée pour App Service. Peut-être souhaitez-vous en savoir plus sur cette fonctionnalité.
 
 > [!div class="nextstepaction"]
-> [Questions fréquentes (FAQ) sur le débogage d’instantané](../debugger/debug-live-azure-apps-faq.md)
+> [FAQ pour le débogage d’instantané](../debugger/debug-live-azure-apps-faq.md)

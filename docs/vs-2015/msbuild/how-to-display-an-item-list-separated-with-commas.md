@@ -12,17 +12,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 20df19f09dd31e428555831b98bfd0b3c9360233
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 16a41c2c80948c1466deed3efe8354e49ba64595
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54765023"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655073"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Comment : afficher une liste d'éléments séparés par des virgules
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Lorsque vous utilisez des listes d’éléments dans [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ([!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]), il est parfois utile d’afficher le contenu de ces listes de manière à faciliter leur lecture. Vous pouvez également avoir une tâche qui accepte une liste d’éléments séparés par une chaîne de séparation particulière. Dans ces deux cas, vous pouvez spécifier une chaîne de séparation pour la liste d’éléments.  
   
 ## <a name="separating-items-in-a-list-with-commas"></a>Séparation des éléments d’une liste à l’aide de virgules  
