@@ -12,10 +12,10 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 87c7b4faaf5aad737c8f7f8b653dbea03bc4de31
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59001894"
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Shell (intégré)
@@ -79,4 +79,4 @@ Le shell intégré de Visual Studio inclut l’environnement de développement i
 -   Aucune langue de Visual Studio ou leurs modèles de projet associé ou modèles d’élément de projet, sont inclus dans l’interpréteur de commandes intégré. Aucune implémentation spécifique à la langue d’autres fonctionnalités n’est incluses, exemple Visual Basic des extraits de code.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Vue d’ensemble de l’extension de Visual Studio](http://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)
+ [Vue d’ensemble de Visual Studio extension](http://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)

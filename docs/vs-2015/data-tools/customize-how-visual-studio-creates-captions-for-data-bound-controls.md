@@ -20,16 +20,15 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 379911793f85cedcee708716782e6ef38203867b
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 20611035ba37c509be7e41d8468d0c3d893334b2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58953363"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647951"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personnaliser la façon dont Visual Studio crée des légendes pour les contrôles liés aux données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Lorsque vous faites glisser des éléments à partir de la [fenêtre Sources de données](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) sur le Concepteur de formulaires Windows, une attention particulière entre en jeu : les noms de colonnes dans les légendes sont reformatés dans une chaîne plus lisible lorsque deux ou plusieurs mots sont trouvé concaténés. Vous pouvez personnaliser la façon dans lequel ces étiquettes sont créés en définissant le **SmartCaptionExpression**, **SmartCaptionReplacement**, et **SmartCaptionSuffix** des valeurs dans le **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Data concepteurs** clé de Registre.
 

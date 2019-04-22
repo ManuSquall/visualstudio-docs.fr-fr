@@ -599,17 +599,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 27dec65ec40db76c643260e26e98375e4a80ec10
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5bf30e3267939385a3cca3459390c4c7591909a6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54764906"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647464"
 ---
 # <a name="additional-msbuild-resources"></a>Ressources MSBuild supplémentaires
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Si vous tentez de résoudre un problème et ne trouvez pas les informations dont vous avez besoin dans la documentation, vous pouvez consulter d’autres ressources, telles que les articles de la Base de connaissances, la communauté des développeurs ou le support technique.  
   
 ## <a name="knowledge-base-articles"></a>Articles de la Base de connaissances  

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8cdfa140614117e00e0ad3cc813c7f33d7a47b75
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e305ba59eaf5a0f60ec84d40ee9888ac17982c42
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027709"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650627"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Couleurs et styles pour Visual Studio
 
@@ -113,7 +113,6 @@ Dans le fichier vsshell80.idl, dans l’énumération `__VSSYSCOLOREX` a des con
 
 Si vous stockez un stylet ou un pinceau avec une nouvelle couleur, vous devez `AdviseBroadcastMessages` (sur le shell Visual Studio) et écouter `WM_SYSCOLORCHANGE` et `WM_THEMECHANGED` messages.
 
-
 Pour accéder au service de couleur en code natif, vous allez effectuer un appel qui ressemble à ceci :
 
 ```
@@ -125,7 +124,7 @@ pUIShell2->GetVSSysColorEx(VSCOLOR_COLOR_NAME, &rgbLOCAL_COLOR);
 
 ##### <a name="from-managed-code"></a>À partir du code managé
 
-Il est assez simple d’accéder au service VSColor dans le code natif. Si vous travaillez via du code managé, toutefois, déterminer comment utiliser le service peut être difficile. Dans cette optique, Voici un extrait de code C# illustrant ce processus :
+Il est assez simple d’accéder au service VSColor dans le code natif. Si vous travaillez via du code managé, toutefois, déterminer comment utiliser le service peut être difficile. Dans cette optique, Voici un extrait de code c# illustrant ce processus :
 
 ```csharp
 private void VSColorPaint(object sender, System.Windows.Forms.PaintEventArgs e)
@@ -359,7 +358,7 @@ Construire un type spécial de l’entrée de Registre de catégorie sous `[HKLM
 
 Remplir le Registre avec deux valeurs :
 
-| Name | Type | Données | Description |
+| Nom | Type | Données | Description |
 | --- | --- | --- | --- |
 | Category | REG_SZ | GUID | Un GUID est créé pour identifier la catégorie |
 | Package | REG_SZ | GUID | Le GUID du service VSPackage qui prend en charge de la catégorie |
@@ -372,7 +371,7 @@ Construire un type spécial de l’entrée de Registre de catégorie sous `[HKLM
 
 Remplir le Registre avec deux valeurs :
 
-| Name | Type | Données | Description |
+| Nom | Type | Données | Description |
 |--- | --- | --- | --- |
 | Category | REG_SZ | GUID | Un GUID est créé pour identifier la catégorie |
 | Package | REG_SZ | GUID | Le GUID du service VSPackage qui prend en charge de la catégorie |

@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 2e3ad5c23d880c65a57fdd94739475537c1aebff
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59367297"
 ---
 # <a name="ca2300-do-not-use-insecure-deserializer-binaryformatter"></a>CA2300 : N’utilisez pas le désérialiseur non sécurisé BinaryFormatter

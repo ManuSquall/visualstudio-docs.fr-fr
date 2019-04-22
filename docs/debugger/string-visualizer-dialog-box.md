@@ -21,13 +21,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 982db296fd17fb86b4a139e02a9418eeb507cd91
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366781"
 ---
-# <a name="string-visualizer-dialog-box"></a>Boîte de dialogue Visualiseur de chaîne
+# <a name="string-visualizer-dialog-box"></a>Visualiseur de chaîne, boîte de dialogue
 
 Lorsque vous déboguez dans Visual Studio, vous pouvez afficher les chaînes avec le visualiseur de chaîne intégrées. Le visualiseur de chaîne indique les chaînes qui sont trop longues pour une fenêtre d’info-bulle ou débogueur de données. Il peut également vous aider à identifier des chaînes mal formés.
 

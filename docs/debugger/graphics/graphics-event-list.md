@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cbffb56d437eebffcaa59a146ede2a8b5f94273
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 5e71239755cf7cf5d38f6e71568a0cd7be0f0d98
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683676"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649990"
 ---
 # <a name="graphics-event-list"></a>Liste des événements Graphics
 La liste des événements Graphics dans Visual Studio Graphics Analyzer vous permet d'explorer les événements Direct3D enregistrés durant le rendu d'un frame de votre jeu ou application.
@@ -105,7 +105,6 @@ Visual Studio 2017 et versions supérieur contiennent le **historique des ressou
 
 Cette fenêtre vous permet d’afficher l’historique de l’élément sélectionné dans la liste des événements.  La liste déroulante en haut peut être utilisée pour sélectionner d’autres éléments pour afficher l’historique de.  La moitié supérieure de la fenêtre contient les **les événements de configuration de Frame**.  Voici les événements qui appartiennent à la *créer* catégorie de type et sont des appels qui en général, initialisent et créer la ressource.  Au bas de la fenêtre contient les **événements de Frame** section.  Celles-ci sont en lecture normale et écrivent des événements qui se produisent pendant l’utilisation de la ressource.
 
-
 | Colonne | Description |
 |-----------| - |
 | **Type** | Affiche le type de l’entrée, généralement *créer*, *en lecture* et *écrire*. |
@@ -115,4 +114,4 @@ Cette fenêtre vous permet d’afficher l’historique de l’élément sélecti
 <!-- /VERSIONLESS -->
 
 ## <a name="see-also"></a>Voir aussi
-- [Procédure pas à pas : objets manquants en raison de l’état du périphérique](walkthrough-missing-objects-due-to-device-state.md)
+- [Procédure pas à pas : objets manquants en raison de l’état du périphérique](walkthrough-missing-objects-due-to-device-state.md)

@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b55dba438280fc4579fe15bd2a423d323c38abf6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b0c197a15962d12e101e0d3ab164d706375620d9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767279"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648245"
 ---
 # <a name="proxy-authorization-required"></a>Autorisation du proxy requise
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Cette erreur se produit généralement lorsque les utilisateurs sont connectés à Visual Studio Online via un serveur proxy et que le serveur proxy bloque les appels. Visual Studio Online est utilisé pour maintenir l'utilisateur connecté à l'IDE.  
   
 ## <a name="to-correct-this-error"></a>Pour corriger cette erreur  
@@ -38,7 +37,7 @@ Cette erreur se produit généralement lorsque les utilisateurs sont connectés 
   
     -   *.live.com  
   
--   Sinon, vous pouvez supprimer le http://go.microsoft.com à partir de la liste blanche d’adresses afin que la boîte de dialogue de l’authentification de proxy s’affiche à la fois pour le http://go.microsoft.com adresse et les points de terminaison de serveur lors du redémarrage de Visual Studio.  
+-   Sinon, vous pouvez supprimer le http://go.microsoft.com à partir de la liste verte d’adresses afin que la boîte de dialogue de l’authentification de proxy s’affiche à la fois pour le http://go.microsoft.com adresse et les points de terminaison de serveur lors du redémarrage de Visual Studio.  
   
 -   OU  
   

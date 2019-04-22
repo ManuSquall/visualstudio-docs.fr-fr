@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 335782f93d7bd0cd9a82c258a0fee3b87d50e72b
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59232578"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>À l’aide de l’agent Microsoft Monitoring Agent (C#, Visual Basic)
@@ -44,7 +44,7 @@ ms.locfileid: "59232578"
 
     -   Votre serveur web dispose de .NET Framework 3.5, 4 ou 4.5.
 
-    -   Votre serveur web exécute Windows PowerShell version 3.0 ou ultérieure. [Q : Que faire si j'utilise Windows PowerShell 2.0 ?](#PowerShell2)
+    -   Votre serveur web exécute Windows PowerShell version 3.0 ou ultérieure. [Q : Que faire si j’utilise Windows PowerShell 2.0 ?](#PowerShell2)
 
     -   Vous disposez des autorisations d’administrateur sur votre serveur web pour exécuter des commandes PowerShell et recycler le pool d’applications au démarrage de la surveillance.
 
@@ -61,7 +61,7 @@ ms.locfileid: "59232578"
     > [!IMPORTANT]
     >  Les fichiers journaux IntelliTrace peuvent contenir des données personnelles et sensibles. Limitez l’accès à ce répertoire uniquement aux identités qui ont besoin d’utiliser ces fichiers. Respectez la politique de confidentialité de votre société.
 
-5.  Pour effectuer une surveillance détaillée au niveau des fonctions ou pour surveiller des applications SharePoint, accordez au pool d’applications qui héberge votre application web ou SharePoint les autorisations de lecture et d’écriture pour le répertoire des journaux IntelliTrace. [Q : Comment définir des autorisations pour le pool d'applications ?](#FullPermissionsITLog)
+5.  Pour effectuer une surveillance détaillée au niveau des fonctions ou pour surveiller des applications SharePoint, accordez au pool d’applications qui héberge votre application web ou SharePoint les autorisations de lecture et d’écriture pour le répertoire des journaux IntelliTrace. [Q : Comment définir des autorisations pour le pool d’applications ?](#FullPermissionsITLog)
 
 ### <a name="q--a"></a>Questions et réponses
 
@@ -135,7 +135,7 @@ ms.locfileid: "59232578"
     |||
     |-|-|
     |*"\<appName>"*|Spécifiez le chemin d’accès au site web et le nom de l’application web dans IIS. Vous pouvez également inclure le chemin d’accès à IIS, si vous le souhaitez.<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> - ou -<br /><br /> **« IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>»*<br /><br /> Ce chemin d’accès est indiqué dans le Gestionnaire des services IIS. Exemple :<br /><br /> ![Chemin d’accès au site web IIS et l’application web](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> Vous pouvez aussi utiliser les commandes [Get-WebSite](http://technet.microsoft.com/library/ee807832.aspx) et [Get WebApplication](http://technet.microsoft.com/library/ee790554.aspx) .|
-    |*\<monitoringMode>*|Spécifiez un mode de surveillance :<br /><br /> <ul><li>**Moniteur** : Enregistre le minimum de détails sur les événements d’exception et les événements de performances. Ce mode utilise le plan de collecte par défaut.</li><li>**Trace** : Enregistre les détails au niveau des fonctions ou surveille les applications SharePoint 2010 et SharePoint 2013 à l’aide du plan de collecte spécifié. Ce mode peut ralentir votre application.<br /><br /> <ul><li>[Q : Comment définir des autorisations pour le pool d'applications ?](#FullPermissionsITLog)</li><li>[Q : Comment puis-je obtenir le maximum de données sans ralentir mon application ?](#Minimizing)</li></ul><br />     Cet exemple enregistre les événements pour une application SharePoint hébergée sur un site SharePoint :<br /><br />     **Start-WebApplicationMonitoring « FabrikamSharePointSite\FabrikamSharePointApp » suivi de « C:\Program Files\Microsoft Monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml » « C:\IntelliTraceLogs »**</li><li>**Personnalisé** : Enregistre les détails personnalisés sur la base du plan de collecte personnalisé spécifié. Si vous modifiez le plan de collecte au cours d’un processus de surveillance, vous devrez redémarrer la surveillance.</li></ul>|
+    |*\<monitoringMode>*|Spécifiez un mode de surveillance :<br /><br /> <ul><li>**Moniteur** : Enregistre le minimum de détails sur les événements d’exception et les événements de performances. Ce mode utilise le plan de collecte par défaut.</li><li>**Trace** : Enregistre les détails au niveau des fonctions ou surveille les applications SharePoint 2010 et SharePoint 2013 à l’aide du plan de collecte spécifié. Ce mode peut ralentir votre application.<br /><br /> <ul><li>[Q : Comment définir des autorisations pour le pool d’applications ?](#FullPermissionsITLog)</li><li>[Q : Comment puis-je obtenir le maximum de données sans ralentir mon application ?](#Minimizing)</li></ul><br />     Cet exemple enregistre les événements pour une application SharePoint hébergée sur un site SharePoint :<br /><br />     **Start-WebApplicationMonitoring « FabrikamSharePointSite\FabrikamSharePointApp » suivi de « C:\Program Files\Microsoft Monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml » « C:\IntelliTraceLogs »**</li><li>**Personnalisé** : Enregistre les détails personnalisés sur la base du plan de collecte personnalisé spécifié. Si vous modifiez le plan de collecte au cours d’un processus de surveillance, vous devrez redémarrer la surveillance.</li></ul>|
     |*"\<outputPath>"*|Spécifiez le chemin d’accès complet du répertoire de stockage des journaux IntelliTrace. Veillez à créer ce répertoire avant de commencer la surveillance.|
     |*\<UInt32>*|Spécifiez la taille maximale du journal IntelliTrace. Par défaut, la taille maximale du journal IntelliTrace est de 250 Mo.<br /><br /> Quand le journal atteint cette limite, l’agent supprime les entrées les plus anciennes du journal pour faire de la place aux nouvelles entrées. Pour changer cette limite, utilisez l’option **-MaximumFileSizeInMegabytes** ou modifiez l’attribut `MaximumLogFileSize` défini dans le plan de collecte.|
     |*"\<collectionPlanPathAndFileName>"*|Spécifiez le chemin d’accès complet ou le chemin d’accès relatif et le nom de fichier du plan de collecte. Ce plan est un fichier .xml qui configure les paramètres de l’agent.<br /><br /> Ces plans sont inclus avec l’agent et fonctionnent avec des applications web et SharePoint :<br /><br /> -   **collection_plan.ASP.NET.default.xml**<br />     Collecte uniquement les événements, tels que les exceptions, les événements de performances, les appels de base de données et les demandes de serveur web.<br />-   **collection_plan.ASP.NET.trace.xml**<br />     Collecte les appels de fonction ainsi que toutes les données du plan de collecte par défaut. Ce plan est approprié pour une analyse détaillée, mais il risque de ralentir votre application.<br /><br /> Vous trouverez des versions localisées de ces plans dans les sous-dossiers de l’agent. Vous pouvez également [personnaliser ces plans ou créer vos propres plans](http://go.microsoft.com/fwlink/?LinkId=227871) pour éviter de ralentir votre application. Placez tous les plans personnalisés dans le même emplacement sécurisé que l’agent.<br /><br /> [Q : Comment puis-je obtenir le maximum de données sans ralentir mon application ?](#Minimizing)|

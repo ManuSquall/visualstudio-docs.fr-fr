@@ -22,17 +22,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 741200100e705777520ea585ce02439a3a3c26c7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a13d0c8ff1383e27f9401f6549c422a8fef96e99
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951908"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650042"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Procédure : se connecter à des données dans un service
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Vous connectez votre application aux données retournées à partir d’un service en exécutant la [Assistant de Configuration de Source de données](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) et en sélectionnant **Service** sur la **choisir un Type de Source de données**page.  
   
  À l’achèvement de l’Assistant, une référence de service est ajoutée à votre projet et est immédiatement disponible dans le [fenêtre Sources de données](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).  

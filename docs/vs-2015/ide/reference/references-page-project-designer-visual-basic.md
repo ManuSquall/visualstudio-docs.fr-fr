@@ -17,17 +17,16 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1d10959cf7cd7dbbf11ff5808889e4ae21aafa40
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a782fe1b69fba6a61b790cb5a6fa8c79f20e5e1d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795450"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649145"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Page Références, Concepteur de projets (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Utilisez la page **Références** du **Concepteur de projet** pour gérer des références, des références web et des espaces de noms importés dans votre projet. Les projets peuvent contenir des références aux composants COM, services web XML, assemblys ou bibliothèques de classes .NET Framework, ou d’autres bibliothèques de classes. Pour plus d’informations sur l’utilisation de références, consultez [Gestion des références dans un projet](../../ide/managing-references-in-a-project.md).  
   
  Pour accéder à la page **Références**, choisissez un nœud de projet (pas le nœud **Solution**) dans l’**Explorateur de solutions**. Ensuite, choisissez **Projet**, **Propriétés** dans la barre de menus. Quand le Concepteur de projet apparaît, cliquez sur l’onglet **Références**.  
@@ -88,7 +87,7 @@ Utilisez la page **Références** du **Concepteur de projet** pour gérer des r�
 -   Des espaces de noms XML, par exemple `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.  
   
 ## <a name="see-also"></a>Voir aussi  
- [(NIB) Guide pratique pour Ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter référence](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
- [Guide pratique pour ajouter ou supprimer des espaces de noms importés (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)   
- [NIB: Boîte de dialogue Ajouter une référence web](http://msdn.microsoft.com/bdf05776-c591-40af-bfd7-e1e2aa1e87b5)   
+ [NIB Comment : Ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter référence](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
+ [Guide pratique pour Ajouter ou supprimer des espaces de noms importés (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)   
+ [NIB : Ajouter la boîte de dialogue de référence Web](http://msdn.microsoft.com/bdf05776-c591-40af-bfd7-e1e2aa1e87b5)   
  [Imports (instruction) (espace de noms XML)](http://msdn.microsoft.com/library/1f4d50a6-08c7-4c2e-8206-ccae35fcd1b4)

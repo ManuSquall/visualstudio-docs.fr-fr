@@ -3,24 +3,24 @@ title: Mise à jour de Visual Studio pour Mac
 description: Instructions pour mettre à jour Visual Studio pour Mac et accéder aux préversions.
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
-ms.openlocfilehash: 6f60b32b66dc2c33a0ecbcd71f80fd613d273b64
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 8c2c6fa6f947f43ed03fd1ec474c9ecb8b84a9fa
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294401"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584465"
 ---
 # <a name="update-visual-studio-for-mac"></a>Mettre à jour Visual Studio pour Mac
 
 Visual Studio pour Mac distribue des mises à jour de l’IDE et des frameworks pris en charge sur une base régulière. Ces mises à jour peuvent prendre la forme de nouvelles fonctionnalités, d’améliorations et de correctifs de bogues.
 
-Visual Studio pour Mac fournit trois canaux pour obtenir les dernières versions :
+Visual Studio pour Mac fournit deux canaux pour obtenir les dernières versions :
 
 * **Stable** : Fournit des mises à jour entièrement testées. Ce canal est recommandé pour une expérience de développement optimale.
-* **Bêta** / **Alpha** : Fournit un accès précoce aux mises à jour candidates à la publication dans le canal Stable. Ces versions peuvent ne pas être fiables pour une utilisation quotidienne.
+* **Préversion** : fournit un accès précoce aux mises à jour candidates à la publication dans le canal Stable. Ces versions peuvent ne pas être fiables pour une utilisation quotidienne.
 
 ## <a name="checking-for-updates"></a>Recherche de mises à jour
 
@@ -51,6 +51,10 @@ Pour démarrer l’installation des mises à jour, sélectionnez le bouton **Red
 ![Bouton pour démarrer l’installation des mises à jour](media/update-image4.png)
 
 En fonction des composants qui doivent être installés, vous pouvez avoir besoin d’accepter des licences supplémentaires ou d’entrer le nom d’utilisateur administrateur et le mot de passe de votre ordinateur.
+
+## <a name="troubleshooting"></a>Résolution des problèmes
+
+Si vous rencontrez des problèmes avec le programme de mise à jour, effectuez les étapes suivantes du [guide de dépannage du programme de mise à jour](updater-troubleshooting.md).
 
 ## <a name="see-also"></a>Voir aussi
 

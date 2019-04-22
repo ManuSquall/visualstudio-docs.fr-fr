@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 63726f9f38cdede6c8a0525b74244baac9455aad
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790379"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Déployer des applications UWP à partir de Visual Studio
@@ -28,7 +28,7 @@ La fonctionnalité de déploiement de Visual Studio génère et inscrit les appl
 
 - Lorsque la cible est un périphérique distant, Visual Studio copie les fichiers requis sur l'ordinateur distant et enregistre l'appareil sur ce périphérique.
 
-Le déploiement est automatique quand vous déboguez votre application à partir de Visual Studio à l’aide de l’option **Démarrer le débogage** (touche F5) ou de l’option **Exécuter sans débogage** (touches CTRL+F5). Vous pouvez aussi déployer votre application manuellement. Le déploiement manuel est utile dans les scénarios suivants :
+Le déploiement est automatique lorsque vous déboguez votre application à partir de Visual Studio à l’aide de la **démarrer le débogage** option (clavier : F5) ou le **démarrer sans débogage** option (clavier : CTRL + F5). Vous pouvez aussi déployer votre application manuellement. Le déploiement manuel est utile dans les scénarios suivants :
 
 - Test ad hoc sur un ordinateur local ou distant.
 
@@ -76,7 +76,7 @@ Le déploiement utilise le canal réseau du débogueur distant pour envoyer les 
 
     Le **connexion à distance** boîte de dialogue affiche les périphériques sur le sous-réseau du réseau local et n’importe quel appareil qui est directement connecté à l’ordinateur Visual Studio via un câble Ethernet.
 
-   **Spécification du périphérique distant dans une page de projet Visual C++**
+   **Spécification du périphérique distant dans un visuel C++ page de projet**
 
    ![C&#43; &#43; projeter des propriétés pour le débogage distant](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
 
@@ -104,15 +104,15 @@ Pour supprimer de l'application l'exemption du bouclage de réseau :
 
 - Sur le C# et Visual Basic page Propriétés de débogage, désactivez le **autoriser le bouclage de réseau** case à cocher.
 
-- Sur la page de propriétés de débogage C++, définissez le **autoriser le bouclage de réseau** valeur **non**.
+- Sur le C++ déboguer la page de propriétés, définissez la **autoriser le bouclage de réseau** valeur **non**.
 
-**Ne pas lancer, mais déboguer mon code au démarrage (C# et Visual Basic) / lancer d’Application (C++)**
+**Ne pas lancer, mais déboguer mon code au démarrage (C# et Visual Basic) / lancer l’Application (C++)**
 
 Pour configurer le déploiement afin qu'il démarre automatiquement une session de débogage au lancement de l'application :
 
 - Sur le C# et page de propriétés de débogage de Visual Basic, vérifiez le **ne pas lancer, mais déboguer mon code au démarrage** case à cocher.
 
-- Sur la page de propriétés de débogage C++, définissez le **lancer l’Application** valeur **Oui**.
+- Sur le C++ déboguer la page de propriétés, définissez la **lancer l’Application** valeur **Oui**.
 
 ## <a name="see-also"></a>Voir aussi
 

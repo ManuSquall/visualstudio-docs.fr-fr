@@ -19,17 +19,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fedbee06d37ff62b4ccefc812f0c77064ba67025
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
-ms.translationtype: MTE95
+ms.openlocfilehash: 2446320f1cbf0551fdfb1532df4fea23631b1131
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194507"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649262"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Intégration de Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual Studio héberge[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pour charger et générer des projets managés. Dans la mesure où [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] est responsable du projet, la plupart des projets au format [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] peut être utilisé sans problème dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], même si le projet a été créé par un outil différent et possède un processus de génération personnalisé.  
   
  Cette rubrique décrit des aspects spécifiques de l'hébergement de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dans [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] qui doivent être pris en compte lors de la personnalisation des projets et des fichiers .targets que vous souhaitez charger et générer dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Vous serez ainsi assuré que les fonctionnalités [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], telles qu'IntelliSense et le débogage fonctionnent pour votre projet personnalisé.  
@@ -183,7 +182,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  Pour des builds classiques dans Visual Studio, la vérification des mises à jour rapide ne s'applique pas, et le projet est généré comme si vous appeliez la build dans une invite de commandes.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour étendre le processus de génération Visual Studio](../msbuild/how-to-extend-the-visual-studio-build-process.md)   
+ [Guide pratique pour Étendre le processus de génération Visual Studio](../msbuild/how-to-extend-the-visual-studio-build-process.md)   
  [Démarrage d’une build à partir de l’IDE](../msbuild/starting-a-build-from-within-the-ide.md)   
  [Inscription des extensions du .NET Framework](../msbuild/registering-extensions-of-the-dotnet-framework.md)   
  [Concepts MSBuild](../msbuild/msbuild-concepts.md)   

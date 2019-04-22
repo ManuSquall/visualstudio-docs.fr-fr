@@ -58,10 +58,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1a59432d6b630606ac5c133e8a5811186fcf7c34
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58866758"
 ---
 # <a name="managing-external-tools"></a>Gestion des outils externes
@@ -78,11 +78,11 @@ Vous pouvez appeler des outils externes à partir de Visual Studio. Certains out
   
 3.  ATL/MFC Trace Tool : montre des messages de trace de débogage dans les sources ATL et MFC.  
   
-4.  PreEmptive Protection - Dotfuscator : protège les programmes .NET contre l'ingénierie à rebours.  
+4.  PreEmptive Protection - Dotfuscator : Protège les programmes .NET contre l’ingénierie à rebours.  
   
-5.  SPY++ : affiche les processus, threads, fenêtres, et messages de fenêtre graphiquement.  
+5.  SPY ++ : Affiche les processus, threads, windows et messages de fenêtre graphiquement.  
   
-6.  Éditeur de configuration de service WCF : vous permet de créer et de modifier les paramètres de configuration des services WCF.  
+6.  Éditeur de Configuration de Service WCF : Vous permet de créer et modifier les paramètres de configuration pour les services WCF.  
   
 > [!WARNING]
 >  Il est possible qu'une liste différente d'outils externes s'affiche, en fonction de l'édition de Visual Studio que vous avez installée et du profil de paramètres que vous avez appliqué. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -90,7 +90,7 @@ Vous pouvez appeler des outils externes à partir de Visual Studio. Certains out
 ## <a name="adding-new-tools"></a>Ajout de nouveaux outils  
  Vous pouvez ajouter un outil externe au menu **Outils**. Ouvrez la boîte de dialogue **Outils externes**, cliquez sur **Ajouter**, puis entrez les informations. Par exemple, l'entrée suivante peut provoquer l'ouverture de l'Explorateur Windows dans le répertoire du fichier qui est actuellement ouvert dans Visual Studio :  
   
-1.  Titre : Ouvrir l'emplacement du fichier  
+1.  Titre : Emplacement du fichier ouvert  
   
 2.  Commande : explorer.exe  
   
@@ -102,7 +102,7 @@ Vous pouvez appeler des outils externes à partir de Visual Studio. Certains out
 > [!NOTE]
 >  La barre d'état IDE affiche les variables Ligne active et Colonne active pour indiquer l'emplacement du point d'insertion dans l'éditeur de code actif. La variable Texte actif retourne le texte ou le code sélectionné à cet emplacement.  
   
-|Name|Argument|Description|  
+|Nom|Argument|Description|  
 |----------|--------------|-----------------|  
 |Chemin d'accès de l'élément|$(ItemPath)|Nom complet du fichier actif (lecteur + chemin d'accès + nom de fichier).|  
 |Répertoire de l'élément|$(ItemDir)|Répertoire du fichier actif (lecteur + chemin d'accès).|  
@@ -122,4 +122,4 @@ Vous pouvez appeler des outils externes à partir de Visual Studio. Certains out
 |Nom du fichier solution|$(SolutionFileName)|Nom de fichier de la solution active (lecteur + chemin d’accès + nom de fichier).|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Outils de génération C/C++](http://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)
+ [Outils de génération C/C++](http://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)

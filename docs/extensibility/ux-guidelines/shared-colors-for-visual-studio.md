@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89ddfd81c68ed2ef675052d1fbba524f0a03cfc2
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: 89c4a4a25c2dfdeb33bfadcf8416a0cbc4726658
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232812"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649952"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Couleurs partagées pour Visual Studio
 Lorsque vous concevez l’interface utilisateur qui utilise des éléments communs du shell Visual Studio, ou vous souhaitez que votre élément d’interface pour être cohérent avec des fonctionnalités similaires, vous pouvez utiliser des noms de jeton existants dans les fichiers de définition de package pour choisir et assigner des couleurs. Ainsi, votre interface utilisateur reste cohérente avec l’environnement Visual Studio global et elle se met à jour automatiquement quand des thèmes sont ajoutés ou mis à jour.
@@ -22,11 +22,11 @@ Cet article décrit les éléments d’interface utilisateur communs et les noms
 
 Assurez-vous d’utiliser correctement les noms de jeton :
 
--   **Utilisez des noms de jeton basés sur la fonction et non sur la couleur elle-même.** Les couleurs partagées communes sont associées à des éléments d’interface spécifiques et uniquement destinées à être utilisées pour des fonctionnalités identiques ou similaires. Par exemple, ne réutilisez pas la couleur d’une zone de liste modifiable enfoncée pour une animation de progression en rotation juste parce que vous aimez la couleur. Les fonctions de la zone de liste modifiable et l’animation sont différentes, et si la couleur associé avec les modifications de zone de liste modifiable, il peut ne plus être une couleur appropriée pour votre élément d’animation. Une utilisation cohérente des couleurs permet de guider vos utilisateurs et d’éviter toute confusion.
+-   **Utiliser des noms de jeton basés sur la fonction, pas sur la couleur elle-même.** Les couleurs partagées communes sont associées à des éléments d’interface spécifiques et uniquement destinées à être utilisées pour des fonctionnalités identiques ou similaires. Par exemple, ne réutilisez pas la couleur d’une zone de liste modifiable enfoncée pour une animation de progression en rotation juste parce que vous aimez la couleur. Les fonctions de la zone de liste modifiable et l’animation sont différentes, et si la couleur associé avec les modifications de zone de liste modifiable, il peut ne plus être une couleur appropriée pour votre élément d’animation. Une utilisation cohérente des couleurs permet de guider vos utilisateurs et d’éviter toute confusion.
 
--   **Associez correctement les couleurs d’arrière-plan et de texte.** Les couleurs d’arrière-plan destinées à être utilisées avec du texte possèdent une couleur de texte associée. N’utilisez pas de couleurs de texte autres que celles spécifiées pour l’arrière-plan. S’il n’est pas une couleur de texte associée, n’utilisez pas cette couleur d’arrière-plan pour n’importe quelle surface sur laquelle vous vous attendez afficher le texte. Autres combinaisons de couleurs de texte et d’arrière-plan peuvent entraîner une interface illisible.
+-   **Utiliser des couleurs d’arrière-plan et de texte dans la combinaison correcte.** Les couleurs d’arrière-plan destinées à être utilisées avec du texte possèdent une couleur de texte associée. N’utilisez pas de couleurs de texte autres que celles spécifiées pour l’arrière-plan. S’il n’est pas une couleur de texte associée, n’utilisez pas cette couleur d’arrière-plan pour n’importe quelle surface sur laquelle vous vous attendez afficher le texte. Autres combinaisons de couleurs de texte et d’arrière-plan peuvent entraîner une interface illisible.
 
--   **Utilisez des couleurs de contrôle appropriées à leur emplacement.** Dans certains États, certains contrôles Visual Studio n’ont une bordure distincte et couleurs d’arrière-plan. Au lieu de cela, ils sélectionnent ces couleurs dans les surfaces qui se trouvent derrière. Veillez à toujours utiliser les noms de jeton qui conviennent à l’emplacement où vous placez le contrôle.
+-   **Utiliser les couleurs de contrôle qui sont appropriées à leur emplacement.** Dans certains États, certains contrôles Visual Studio n’ont une bordure distincte et couleurs d’arrière-plan. Au lieu de cela, ils sélectionnent ces couleurs dans les surfaces qui se trouvent derrière. Veillez à toujours utiliser les noms de jeton qui conviennent à l’emplacement où vous placez le contrôle.
 
 > [!IMPORTANT]
 > N’utilisez pas les jetons trouvés dans les catégories « Page d’accueil » ou « Cider ».
@@ -1949,7 +1949,6 @@ Visual Studio prend en charge l’étiquetage, qui permet à un utilisateur de d
 
 ![Sélectionné la balise de fermeture (&times;) glyphe au pointage](../../extensibility/ux-guidelines/media/0303-185_tagselectedhover.png "0303-185_TagSelectedHover")<br />Sélectionné la balise de fermeture (&times;) glyphe au pointage
 
-
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Présentation | `Tag.TagSelectedGlyphHoverBackground` |
@@ -2090,7 +2089,7 @@ La bordure de barre de titre n’est pas une véritable bordure, il est une lign
 | Bordure | `Environment.TitleBarActiveBorder`<br />(Défini sur la même couleur comme arrière-plan). |
 | Faire glisser la poignée | `Environment.TitleBarDragHandleActive` |
 
-**Barre de titre sans focus**
+**Barre de titre inactive**
 
 ![Barre de titre inactive](../../extensibility/ux-guidelines/media/0303-094_titlebarunfocused.png "0303-094_TitleBarUnfocused")<br />Barre de titre sans focus
 
@@ -2176,7 +2175,7 @@ La bordure de barre de titre n’est pas une véritable bordure, il est une lign
 | --- | --- |
 | ... n’importe où vous créez l’interface utilisateur que vous souhaitez faire correspondre les fenêtres Outil. | ... pour toute interface utilisateur que vous ne souhaitez pas modifier automatiquement si l’interpréteur de commandes comporte une mise à jour de thème. |
 
-**Onglet de fenêtre Outil sélectionné, avec focus**
+**Onglet fenêtre outil sélectionné, avec focus**
 
 ![Sélectionnée, le focus d’onglet de fenêtre outil](../../extensibility/ux-guidelines/media/0303-103_toolwindowtabfocused.png "0303-103_ToolWindowTabFocused")<br />Onglet de fenêtre Outil sélectionné, avec focus
 
@@ -2186,7 +2185,7 @@ La bordure de barre de titre n’est pas une véritable bordure, il est une lign
 | Premier plan (texte) | `Environment.ToolWindowTabSelectedActiveText` |
 | Bordure | `Environment.ToolWindowTabSelectedBorder`<br />(Défini sur la même couleur comme arrière-plan). |
 
-**Onglet de fenêtre Outil sélectionné, sans focus**
+**Onglet fenêtre outil sélectionné, sans focus**
 
 ![Onglet fenêtre outil sélectionné, sans focus](../../extensibility/ux-guidelines/media/0303-104_toolwindowtabunfocused.png "0303-104_ToolWindowTabUnfocused")<br />Onglet de fenêtre Outil sélectionné, sans focus
 

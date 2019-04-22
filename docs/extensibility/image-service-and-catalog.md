@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5c7f2a98b56765efdb8a12cd9cf479bcd3a08402
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58857851"
 ---
 # <a name="image-service-and-catalog"></a>Catalogue et service d’images
@@ -89,7 +89,7 @@ Ce livre de recettes contient des conseils et meilleures pratiques pour arrêter
 </ImageManifest>
 ```
 
- **Symbols**
+ **Symboles**
 
  Comme une meilleure lisibilité et la maintenance d’aide, le manifeste de l’image peut utiliser les symboles pour les valeurs d’attribut. Symboles qui sont définis comme suit :
 
@@ -122,7 +122,7 @@ Ce livre de recettes contient des conseils et meilleures pratiques pour arrêter
 
 |||
 |-|-|
-|**Symbole**|**Description**|
+|**Symbol**|**Description**|
 |CommonProgramFiles|La valeur de la variable d’environnement % %CommonProgramFiles%|
 |LocalAppData|La valeur de la variable d’environnement % LocalAppData|
 |ManifestFolder|Le dossier contenant le fichier manifest|
@@ -732,7 +732,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  **ManifestToCode**
 
- Le manifeste de l’outil de Code prend un fichier de manifeste d’image et génère un fichier de wrapper pour référencer les valeurs de manifeste dans le code (C++, C# ou VB) ou *.vsct* fichiers.
+ Le manifeste de l’outil de Code prend un fichier de manifeste d’image et génère un fichier de wrapper pour référencer les valeurs de manifeste dans le code (C++, c# ou VB) ou *.vsct* fichiers.
 
  **ImageLibraryViewer**
 

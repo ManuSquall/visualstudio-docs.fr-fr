@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: f5ef78f64ecea712083a25ab999f1554672d3381
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790353"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Comment déclencher suspendre, reprendre et événements en arrière-plan pendant le débogage des applications UWP dans Visual Studio
@@ -72,7 +72,7 @@ Lorsque vous n'effectuez pas de débogage, Windows **Process Lifetime Management
 
 2.  Ouvrez la page des propriétés de débogage du projet de démarrage. Dans l'Explorateur de solutions, sélectionnez le projet. Dans le menu **Déboguer** , choisissez **Propriétés**.
 
-     Pour les projets C++, développez **propriétés de Configuration** , puis **débogage**.
+     Pour C++ projets, développez **propriétés de Configuration** , puis **débogage**.
 
 3.  Effectuez l’une des opérations suivantes :
 
@@ -80,7 +80,7 @@ Lorsque vous n'effectuez pas de débogage, Windows **Process Lifetime Management
 
          ![C&#35;&#47;propriété d’application VB débogage lancement](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
 
-    -   Pour les projets Visual C++, choisissez **non** à partir de la **lancer application** liste.
+    -   Pour Visual C++ projets, choisissez **non** à partir de la **lancer application** liste.
 
          ![C&#43;&#43;&#47;propriété de débogage d’application VB lancer](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
 

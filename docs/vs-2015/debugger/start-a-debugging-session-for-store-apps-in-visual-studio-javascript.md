@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 600f44cccd57635cc789e2265fe5451e5674d737
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5cb08c00679e3052ef0e0715ca58dd010a52e61b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938436"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649691"
 ---
 # <a name="start-a-debugging-session-for-store-apps-in-visual-studio-javascript"></a>Démarrer une session de débogage dans Visual Studio (JavaScript) pour des applications du Windows Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
  Cette rubrique explique comment démarrer une session de débogage pour les applications du Windows Store écrites en JavaScript et HTML5. Vous pouvez démarrer le débogage avec une seule séquence de touches ou configurer la session de débogage pour des scénarios spécifiques, puis choisir de quelle façon démarrer l'application.
 
 > [!NOTE]
->  Pour les applications écrites en XAML et Visual C#, Visual C++ ou Visual Basic, consultez [démarrer une session de débogage (VB, C#, C++ et XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
+>  Pour les applications écrites en XAML et Visual c#, Visual C++ ou Visual Basic, consultez [démarrer une session de débogage (VB, c#, C++ et XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
 
 ##  <a name="BKMK_In_this_topic"></a> Dans cette rubrique
  [Dans cette rubrique](#BKMK_In_this_topic)
@@ -184,13 +184,11 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 
 2. Choisissez l'une des options suivantes dans la liste :
 
-
    |                    |                                                                                                                                                                                                                                                                                                                                                                                                           |
    |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    | **Ordinateur local**  |                                                                                                                Déboguez l'application dans la session active sur votre ordinateur local. Consultez [Run Windows Store des applications sur l’ordinateur local](../debugger/run-windows-store-apps-on-the-local-machine.md).                                                                                                                 |
    |   **Simulateur**    | Déboguez l'application dans le simulateur Visual Studio pour les applications [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] . Le simulateur est une fenêtre du Bureau qui permet de déboguer les fonctionnalités du périphérique, comme les mouvements tactiles et la rotation du périphérique, qui ne sont pas disponibles sur l'ordinateur local. Consultez [Run Windows Store des applications dans le simulateur](../debugger/run-windows-store-apps-in-the-simulator.md). |
    | **Ordinateur distant** |                          Déboguez l'application sur un périphérique qui est connecté à l'ordinateur local sur un intranet ou directement connecté via un câble Ethernet. Pour déboguer à distance, les outils de contrôle à distance Visual Studio doivent être installés et en cours d'exécution sur le périphérique distant. Consultez [applications Run Windows Store sur un ordinateur distant](../debugger/run-windows-store-apps-on-a-remote-machine.md).                           |
-
 
 3. Choisissez l'application dans la liste **Packages d'application installés** .
 

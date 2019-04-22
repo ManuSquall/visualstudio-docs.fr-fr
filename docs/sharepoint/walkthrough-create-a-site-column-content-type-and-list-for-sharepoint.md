@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: dee5d1ec207f2b7bec030076797720fe9e8216ed
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59504261"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Procédure pas à pas : Créer une colonne de site, le type de contenu et la liste pour SharePoint
@@ -222,6 +222,6 @@ ms.locfileid: "59504261"
 ## <a name="see-also"></a>Voir aussi
 - [Créer des colonnes de site, les types de contenu et listes pour SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)
 - [Développer des solutions SharePoint](../sharepoint/developing-sharepoint-solutions.md)
-- [Procédure : Créer un Type de champ personnalisé](http://go.microsoft.com/fwlink/?LinkId=192079)
+- [Guide pratique pour Créer un Type de champ personnalisé](http://go.microsoft.com/fwlink/?LinkId=192079)
 - [Types de contenu](http://go.microsoft.com/fwlink/?LinkId=192080)
 - [Colonnes](http://go.microsoft.com/fwlink/?LinkId=192081)

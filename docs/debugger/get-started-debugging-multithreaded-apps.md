@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5535228f8e070128cfa2479d8017d3a88dc0915c
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790249"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Commencer le débogage d’applications multithread (C#, Visual Basic, C++)
@@ -30,7 +30,7 @@ Visual Studio fournit plusieurs outils et les éléments d’interface utilisate
 
 Ces deux rubriques fournissent des informations supplémentaires sur l’utilisation d’autres outils de débogage multithreads :
 
-- Pour utiliser le **emplacement de débogage** barre d’outils et les **Threads** fenêtre, consultez [procédure pas à pas : déboguer une application multithread](../debugger/how-to-use-the-threads-window.md).
+- Pour utiliser le **emplacement de débogage** barre d’outils et les **Threads** fenêtre, consultez [procédure pas à pas : Déboguer une application multithread](../debugger/how-to-use-the-threads-window.md).
 
 - Pour obtenir un exemple qui utilise <xref:System.Threading.Tasks.Task> (code managé) et le runtime d’accès concurrentiel (C++), consultez [procédure pas à pas : Déboguer une application parallèle](../debugger/walkthrough-debugging-a-parallel-application.md). Pour les conseils de débogage générales qui s’appliquent aux types d’applications multithreads plus, lisez cette rubrique et celle-ci.
 
@@ -41,7 +41,7 @@ Vous devez tout d’abord un projet d’application multithread. Voici un exempl
 1. Ouvrez Visual Studio et créez un projet.
 
     ::: moniker range=">=vs-2019"
-    Appuyez sur **ÉCHAP** pour fermer la fenêtre de démarrage. Type **Ctrl + Q** pour ouvrir la zone de recherche, tapez **console** (ou **c ++**), choisissez **modèles**, puis :
+    Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Type **Ctrl + Q** pour ouvrir la zone de recherche, tapez **console** (ou **c ++**), choisissez **modèles**, puis :
 
     - Pour C# ou Visual Basic, choisissez **créer un nouveau projet application Console (.NET Framework)** pour soit C# ou Visual Basic. Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
     - Pour C++, choisissez **créer un nouveau projet application Console** pour C++. Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
@@ -53,7 +53,7 @@ Vous devez tout d’abord un projet d’application multithread. Voici un exempl
 
     - Pour un C# application, sous **Visual C#** , choisissez **Windows Desktop**, puis, dans le volet central, choisissez **application Console (.NET Framework)**.
     - Pour une application Visual Basic, sous **Visual Basic**, choisissez **Windows Desktop**, puis, dans le volet central, choisissez **application Console (.NET Framework)**.
-    - Pour une application C++, sous **Visual C++**, choisissez **Windows Desktop**,, puis **Application de Console Windows**.
+    - Pour un C++ application, sous **Visual C++** , choisissez **Windows Desktop**,, puis **Application de Console Windows**.
 
     Ensuite, tapez un nom tel que **MyThreadWalkthroughApp** et cliquez sur **OK**.
     ::: moniker-end
@@ -265,7 +265,7 @@ Dans le **piles parallèles** fenêtre, vous pouvez basculer entre une vue Threa
     Vous pouvez effectuer différentes actions à partir de ces menus contextuels, mais pour ce didacticiel, nous allons présenter plusieurs de ces détails dans le **espion parallèle** fenêtre (sections suivantes).
 
     > [!NOTE]
-    > Pour afficher une liste des informations sur chaque thread, utilisez la **Threads** fenêtre à la place. Consultez [procédure pas à pas : déboguer une Application multithread](../debugger/how-to-use-the-threads-window.md).
+    > Pour afficher une liste des informations sur chaque thread, utilisez la **Threads** fenêtre à la place. Consultez [Procédure pas à pas : Déboguer une Application multithread](../debugger/how-to-use-the-threads-window.md).
 
 ### <a name="set-a-watch-on-a-variable"></a>Définir un espion sur une variable
 
@@ -354,5 +354,5 @@ Vous pouvez définir des points d’arrêt sur les différentes conditions, tell
 
 - [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Guide pratique pour basculer vers un autre thread pendant un débogage](../debugger/how-to-switch-to-another-thread-while-debugging.md)
-- [Comment : utiliser la fenêtre Pile parallèles](../debugger/using-the-parallel-stacks-window.md)
+- [Guide pratique pour Utiliser la fenêtre Pile parallèles](../debugger/using-the-parallel-stacks-window.md)
 - [Guide pratique pour utiliser la fenêtre Espion parallèle](../debugger/how-to-use-the-parallel-watch-window.md)

@@ -9,23 +9,21 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5827debb4f79ef34bbdd059c6beb0003988a721c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 35e292d5fcaaea4f70154cf6febfc26bc20f1318
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953032"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648963"
 ---
 # <a name="schema-cache"></a>Cache de schéma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 L'éditeur XML fournit un cache de schéma dans le répertoire %InstallRoot%\Xml\Schemas. Le cache de schéma est global pour tous les utilisateurs employant votre ordinateur et comprend des schémas XML standard utilisés pour IntelliSense et la validation de documents XML.  
 
  L’éditeur XML peut également rechercher des schémas situés dans la solution, des schémas spécifiés dans le **schémas** champ du document **propriétés** fenêtre et des schémas identifiés par le `xsi:schemaLocation` et `xsi:noNamespaceSchemaLocation`attributs.  
 
  Le tableau suivant décrit les schémas installés avec l'éditeur XML.  
-
 
 |     Nom de fichier      |                                                      Description                                                      |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------|

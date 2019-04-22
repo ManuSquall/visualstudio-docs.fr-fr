@@ -8,16 +8,15 @@ ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 5500af58ab93b41cc73b48f5ebe2d63ed16ca495
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7462f99bc06ea84ebbeaf675c8f3882cef527ce5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754936"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649678"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Résolution des problèmes liés à l’émulateur Visual Studio pour Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Cette rubrique contient des informations pour vous aider à résoudre les problèmes que vous pouvez rencontrer quand vous utilisez l'Émulateur Visual Studio pour Android.
 
@@ -174,7 +173,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 
      - Disable Trusted Execution
 
-       Pour plus d’informations, consultez cet article : TechNet Hyper-V Comment corriger les erreurs de BIOS activer Hyper-V
+       Pour plus d’informations, consultez cet article : Technet : Hyper-V : Guide pratique pour corriger les erreurs du BIOS en activant Hyper-V
 
   5. Assurez-vous de disposer d'au moins 4 Go de mémoire système et qu'elle n'est pas consommée par d'autres programmes et processus gourmands en ressources.
 
@@ -192,7 +191,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 
    En général, il incombe aux développeurs de ces produits de mettre à jour leurs logiciels pour qu'ils soient compatibles avec Windows 8 et Hyper-V.
 
-   Les produits suivants peuvent nécessiter la mise à niveau de compatibilité de Windows 8 : VirtualBox, Virtual PC 7, VMWare, certains clients VPN, pare-feu logiciels, certaines versions de clients VPN Cisco et autres systèmes de virtualisation. Collaborez avec le développeur du logiciel de virtualisation en question pour l'inciter à mettre à niveau le logiciel pour le rendre compatible avec Windows 8 et Hyper-V.
+   Les produits suivants peuvent nécessiter une mise à niveau pour des raisons de conformité avec Windows 8 : VirtualBox, Virtual PC 7, VMWare, certains clients VPN, pare-feu logiciels, certaines versions des clients VPN de Cisco ainsi que d’autres systèmes de virtualisation. Collaborez avec le développeur du logiciel de virtualisation en question pour l'inciter à mettre à niveau le logiciel pour le rendre compatible avec Windows 8 et Hyper-V.
 
    En guise de **solution de contournement**, vous pouvez désactiver tous les pilotes et applications tiers susceptibles d'interférer avec le réseau virtuel utilisé par l'émulateur pour communiquer avec Visual Studio. Il peut s'agir notamment :
 
@@ -269,7 +268,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
   Redémarrez l'émulateur. Il doit maintenant être connecté à ADB et aux outils Android associés.
 
 ##  <a name="XamarinPlayer"></a> L’émulateur se bloque, car il n’a pas pu configurer le port UDP
- Ce problème peut se produire à cause d’une incompatibilité avec Xamarin Player. Si l’émulateur ne répond plus ou si vous voyez ce message d’erreur « l’émulateur est impossible de se connecter au système d’exploitation du périphérique : Impossible de définir le port UDP.  Certaines fonctionnalités peuvent être désactivées. », il peut s’agir d’un problème de compatibilité. Effectuez les étapes suivantes.
+ Ce problème peut se produire à cause d’une incompatibilité avec Xamarin Player. Si l’émulateur ne répond plus, ou si vous voyez s’afficher un message d’erreur semblable à celui-ci : « L’émulateur ne peut pas se connecter au système d’exploitation de l’appareil : Impossible de définir le port UDP.  Certaines fonctionnalités peuvent être désactivées. », il peut s’agir d’un problème de compatibilité. Effectuez les étapes suivantes.
 
 1.  Désinstallez Xamarin Player.
 

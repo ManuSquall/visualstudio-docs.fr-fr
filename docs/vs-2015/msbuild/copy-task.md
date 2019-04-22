@@ -22,17 +22,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8f6e1bf48d80362a4f51e10583c5827eff8fe932
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 805a8d6616b4f6c198173ad2a9c9d733ad50de32
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758317"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648705"
 ---
 # <a name="copy-task"></a>Copy, tâche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Copie les fichiers à un nouvel emplacement du système de fichiers.  
   
 ## <a name="parameters"></a>Paramètres  

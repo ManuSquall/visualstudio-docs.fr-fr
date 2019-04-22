@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 91462511f5de22c51dd1d6fd07c192a72e69e541
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59232695"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace pour Visual Studio Enterprise (C#, Visual Basic, C++)
@@ -44,7 +44,7 @@ Vous pouvez utiliser IntelliTrace dans Visual Studio Enterprise Edition (mais pa
 |||
 |-|-|
 |**Déboguer mon application avec IntelliTrace :**<br /><br /> - Me montrer les événements passés.<br />- Me montrer les informations sur les appels avec les événements passés.<br />- Enregistrer ma session IntelliTrace.<br />- Vérifier les données collectées par IntelliTrace.|- [Inspecter les États d’application précédent à l’aide d’IntelliTrace](../debugger/view-historical-application-state.md)<br />- [Procédure pas à pas : Utilisation d'IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Fonctionnalités IntelliTrace](../debugger/intellitrace-features.md)<br />- [Débogage d’historique](../debugger/historical-debugging.md)|
-|**Collecter les données IntelliTrace pendant une session de test dans le Gestionnaire de tests**|- [Collecter plus de données de diagnostic dans des tests manuels](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
+|**Collecter les données IntelliTrace pendant une session de test dans Test Manager**|- [Collecter plus de données de diagnostic dans des tests manuels](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 |**Collecter des données IntelliTrace à partir d'applications déployées**|- [Utilisation du collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**Démarrer le débogage à partir d'un fichier journal IntelliTrace (fichier .iTrace).**|- [Utilisation des données IntelliTrace enregistrées](../debugger/using-saved-intellitrace-data.md)|
 
@@ -139,7 +139,7 @@ Par défaut, IntelliTrace enregistre uniquement les événements IntelliTrace :
 
     - [Utiliser le collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)
 
-    - [Utilisation des données IntelliTrace enregistrée](../debugger/using-saved-intellitrace-data.md)
+    - [Utilisation des données IntelliTrace enregistrées](../debugger/using-saved-intellitrace-data.md)
 
     - [Procédure pas à pas : Débogage d’une Application SharePoint à l’aide d’IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)
 

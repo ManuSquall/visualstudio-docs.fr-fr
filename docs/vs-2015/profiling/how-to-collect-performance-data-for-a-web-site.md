@@ -20,10 +20,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f0d77d78cdcf889b22d9cf6901b6beae41aaaee4
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366729"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Procédure : Collecter des données de performances pour un Site Web
@@ -103,7 +103,7 @@ Vous pouvez utiliser l’ **Assistant Performance** pour collecter des données 
      Le profileur génère le fichier de données et affiche la vue Résumé des données dans la fenêtre principale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="see-also"></a>Voir aussi  
- [Vues d'ensemble](../profiling/overviews-performance-tools.md)   
+ [Vues d’ensemble](../profiling/overviews-performance-tools.md)   
  [Configuration de sessions de performance](../profiling/configuring-performance-sessions.md)   
- [Fonctionnement des valeurs de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md)   
- [Fonctionnement des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)
+ [Présentation des valeurs de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md)   
+ [Présentation des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)

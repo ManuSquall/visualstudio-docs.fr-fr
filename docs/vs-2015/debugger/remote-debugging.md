@@ -19,12 +19,12 @@ caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a22442e390929e4b378d3e2e39d32656ff59e951
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c964eaa8e8c130516b29c88a3ccae78aa902c66a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001609"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649444"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,6 @@ Vous pouvez trouver le débogueur distant (**msvsmon.exe**) sur un ordinateur av
 > [!TIP] 
 > Pour l’installation de ligne de commande et référence de ligne de commande, consultez la page d’aide **msvsmon.exe** en tapant ``msvsmon.exe /?`` dans la ligne de commande sur l’ordinateur avec Visual Studio est installé (ou accédez à **aide / utilisation**dans le débogueur distant).
 
-  
 ## <a name="supported-operating-systems"></a>Supported Operating Systems  
  L’ordinateur distant doit exécuter l’un des systèmes d’exploitation suivants :  
   

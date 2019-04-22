@@ -19,17 +19,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84b4ee6cba98e18379dc0e0e4fd81d8c10e37d7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 979c476068afb3f76d4561c4d93a8c02ce4e4187
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948304"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648300"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Enregistrer des données dans une base de données (plusieurs tables)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 L'un des scénarios les plus courants dans le développement d'applications consiste à afficher des données dans un formulaire d'une application Windows, à modifier ces données, puis à renvoyer les données mises à jour à la base de données. Cette procédure pas à pas crée un formulaire affichant les données de deux tables associées et indique comment modifier les enregistrements et enregistrer les modifications dans la base de données. Cet exemple utilise les tables `Customers` et `Orders` de l'exemple de base de données Northwind.  
   
  Vous pouvez enregistrer des données de votre application dans la base de données en appelant la méthode `Update` d'un TableAdapter. Lorsque vous faites glisser les tables à partir de la **des Sources de données** fenêtre sur un formulaire, le code qui est nécessaire pour enregistrer les données est automatiquement ajoutée. Toutes les tables supplémentaires qui sont ajoutés à un formulaire requièrent l’ajout manuel de ce code. Cette procédure pas à pas indique comment ajouter du code pour enregistrer les mises à jour de plusieurs tables.  

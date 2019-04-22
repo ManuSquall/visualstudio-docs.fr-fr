@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 657e14d968496c895f24038ca2db1e7f62846b75
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7f6f3f874d00dff8a171a169dca6fe2d94f14fe6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950199"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648755"
 ---
 # <a name="receiveandsendreply-template-designer"></a>Concepteur de modèles ReceiveAndSendReply
 
@@ -41,7 +41,6 @@ Pour plus d’informations sur l’utilisation de la **réception** designer pou
 ### <a name="properties-of-sendreply"></a>Propriétés de SendReply
 
 Le tableau suivant présente les propriétés de <xref:System.ServiceModel.Activities.SendReply> et décrit comment elles sont utilisées dans le concepteur. Ces propriétés peuvent être modifiées dans la grille des propriétés et certaines peuvent être modifiées dans l’aire du Concepteur de flux de travail.
-
 
 | Nom de la propriété | Obligatoire | Utilisation |
 |-|----------|-|

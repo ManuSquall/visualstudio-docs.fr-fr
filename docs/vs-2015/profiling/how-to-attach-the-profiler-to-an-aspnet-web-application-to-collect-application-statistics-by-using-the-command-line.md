@@ -9,14 +9,14 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 82d873d166e2275e68231dfd0e7f6edbffd04ab1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: cd8b160eca8b3a7e628ed9eda199c0b26fe38c14
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781099"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648653"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>Comment : attacher le profileur à une application Web ASP.NET pour collecter des statistiques d'applications en utilisant la ligne de commande
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>Procédure : Attacher le Profiler à une Application Web ASP.NET pour collecter des statistiques d’applications en utilisant la ligne de commande
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette rubrique explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour attacher le profileur à un service web ASP.NET et pour collecter des statistiques de performances avec la méthode d’échantillonnage.  
@@ -69,7 +69,6 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                       À utiliser avec **/wincounter** uniquement. Spécifie le nombre de millisecondes écoulées entre les événements de collecte du compteur de performances Windows. La valeur par défaut est de 500 ms.                                                                                       |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                         Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un fichier séparé (.etl).                                                                                          |
 
-
 5. Démarrez l’application web ASP.NET de façon classique.  
 
 6. Attachez le profileur au processus de travail ASP.NET. Tapez :**VSPerfCmd** [/attach](../profiling/attach.md)**:**{`PID`&#124;`ProcName`} [`Sample Event`] [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
@@ -86,7 +85,7 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
    |[/counter](../profiling/counter.md) **:** `Config`|Remplace l’événement et l’intervalle d’échantillonnage par le compteur de performances du processeur et l’intervalle spécifié dans `Config`.|  
    |[/targetclr](../profiling/targetclr.md) **:** `Version`|Spécifie la version du common language runtime (CLR) à profiler lorsque plusieurs versions du runtime sont chargées dans une application.|  
 
-   -   **/targetclr:** `Version` spécifie la version du CLR à profiler lorsque plusieurs versions du runtime sont chargées dans une application. Optionnel.  
+   -   **/targetclr:** `Version` spécifie la version du CLR à profiler lorsque plusieurs versions du runtime sont chargées dans une application. Facultatif.  
 
 ## <a name="controlling-data-collection"></a>Contrôle de la collection de données  
  Pendant l’exécution de l’application, vous pouvez contrôler la collecte des données en démarrant et en arrêtant l’écriture des données dans le fichier avec les options de **VSPerfCmd.exe**. Le fait de pouvoir contrôler la collecte vous permet de collecter des données pour une phase spécifique de l’exécution du programme, telle que le démarrage ou l’arrêt de l’application.  

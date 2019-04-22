@@ -11,17 +11,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6ed61d1b65d03053859b5463b574432e0396449a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8bcb8aadc2fb2a2f836fccde56e283b38cbc213d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758359"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649236"
 ---
 # <a name="property-functions"></a>Fonctions de propriétés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Dans les versions 4 et 4.5 de .NET Framework, des fonctions de propriété peuvent être utilisées pour évaluer des scripts MSBuild. Les fonctions de propriété peuvent utilisées partout où figurent des propriétés. Au contraire des tâches, les fonctions de propriété peuvent être utilisées en dehors des cibles et elles sont évaluées avant l'exécution des cibles.  
   
  Sans utiliser de tâches MSBuild, vous pouvez lire l'heure système, comparer des chaînes, établir des correspondances avec des expressions régulières et effectuer d'autres actions dans votre script de génération. MSBuild tente de convertir les chaînes en nombres et les nombres en chaînes, et d'effectuer les autres conversions nécessaires.  

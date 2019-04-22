@@ -1,5 +1,5 @@
 ---
-title: Créer des vues personnalisées de C++ objets
+title: Créer des vues personnalisées d’objets C++
 description: Utiliser l’infrastructure Natvis pour personnaliser la façon dont Visual Studio affiche les types natifs dans le débogueur
 ms.date: 10/31/2018
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f56dda1f64a0bd50a6bb81b981ad4add7d9c095
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: 2dba61d53bdb0007eb2a4f0acff734613e320ab9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537575"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649639"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger"></a>Créer des vues personnalisées de C++ objets dans le débogueur
 
@@ -153,7 +153,6 @@ Vous pouvez définir différentes vues Natvis pour afficher les types de différ
     </Expand>
 </Type>
 ```
-
 
 Dans le **espion** fenêtre, utilisez le **, vue** spécificateur pour spécifier un autre affichage de format. La vue simple s’affiche en tant que **vec,view(simple)**:
 

@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 641dd7485e97a7833c2483d73271a8169dbc2054
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ae3478aef733d106fa075a51edce4af91b404149
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617741"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584335"
 ---
 # <a name="start-a-build-from-within-the-ide"></a>Démarrer une build à partir de l’environnement IDE
 Les systèmes de projet personnalisés doivent utiliser <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> pour démarrer des builds. Cet article explique les raisons de cette exigence et décrit la procédure.
 
 ## <a name="parallel-builds-and-threads"></a>Builds et threads parallèles
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] autorise les builds parallèles, ce qui nécessite une médiation pour l’accès aux ressources communes. Les systèmes de projet peuvent exécuter des builds en mode asynchrone, mais ils ne doivent pas appeler de fonctions de génération à partir des rappels qui sont fournis au gestionnaire de build.
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] autorise les builds parallèles, ce qui nécessite une médiation pour l’accès aux ressources communes. Les systèmes de projet peuvent exécuter des builds en mode asynchrone, mais ils ne doivent pas appeler de fonctions de génération à partir des rappels.
 
  Si le système de projet modifie des variables d’environnement, il doit définir le NodeAffinity de la build sur OutOfProc. En raison de cette exigence, il n’est pas possible d’utiliser des objets hôtes, puisqu’ils exigent le nœud in-process.
 

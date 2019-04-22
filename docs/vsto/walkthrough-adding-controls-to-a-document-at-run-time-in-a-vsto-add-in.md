@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d38657e1885ed84d5bd5e0e574968ae2009c19d5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bdfd80818e88af8e2907c982e75628627bcac5e9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645873"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648548"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>Procédure pas à pas : Ajouter des contrôles à un document lors de l’exécution dans un complément, VSTO
   Vous pouvez ajouter des contrôles à un document Microsoft Office Word ouvert en utilisant un complément, VSTO. Cette procédure pas à pas montre comment utiliser le ruban pour permettre aux utilisateurs d’ajouter un <xref:Microsoft.Office.Tools.Word.Controls.Button> ou un <xref:Microsoft.Office.Tools.Word.RichTextContentControl> à un document.
@@ -78,21 +78,17 @@ ms.locfileid: "56645873"
 
 8. Dans la fenêtre **Propriétés** , changez les propriétés suivantes.
 
-
    | Propriété | Value |
    |-----------|-----------------------|
    | **Name** | **addButtonCheckBox** |
    | **Ajouter des contrôles** | **Bouton Ajouter** |
 
-
 9. Ajoutez une deuxième case à cocher pour **group1**, puis modifiez les propriétés suivantes.
-
 
    | Propriété | Value |
    |-----------|---------------------------|
    | **Name** | **addRichTextCheckBox** |
    | **Label** | **Ajouter un contrôle de texte enrichi** |
-
 
 10. Dans le Concepteur de ruban, double-cliquez sur **Bouton Ajouter**.
 

@@ -29,10 +29,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dad698f2ba660b6848e614f13751335894a17ae0
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366404"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Attacher aux processus en cours d’exécution avec le débogueur Visual Studio
@@ -197,7 +197,7 @@ Dans certains scénarios de débogage locales, vous pouvez déboguer dans Visual
 
  Si vous souhaitez des informations plus spécifiques sur l’incapacité du débogueur à attacher à un type de code, essayez de rattacher à uniquement ce type de code.
 
- **Pour obtenir des informations spécifiques sur la raison de l’échec de l’attachement d’un type de code :**
+ **Pour connaître les raisons de l’échec de l’attachement d’un type de code :**
 
 1.  Procédez au détachement du processus. Sur le **déboguer** menu, sélectionnez **Détacher tout**.
 
@@ -218,5 +218,5 @@ Dans certains scénarios de débogage locales, vous pouvez déboguer dans Visual
 ## <a name="see-also"></a>Voir aussi
 
 - [Déboguer plusieurs processus](../debugger/debug-multiple-processes.md)
-- [débogage juste-à-temps](../debugger/just-in-time-debugging-in-visual-studio.md)
+- [Débogage juste-à-temps](../debugger/just-in-time-debugging-in-visual-studio.md)
 - [Débogage distant](../debugger/remote-debugging.md)
