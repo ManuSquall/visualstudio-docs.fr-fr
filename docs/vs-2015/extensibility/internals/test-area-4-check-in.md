@@ -11,12 +11,12 @@ ms.assetid: d0329fa8-7a8d-4d30-b67b-6f2a97b75a30
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 130d1b6b783a07261b9825c37e21fa2eeb008954
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 738b2608d5afa188cad38d92ed613307d2919ca0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949384"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068728"
 ---
 # <a name="test-area-4-check-in"></a>Zone de test 4 : Archiver
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ Cette zone de test plug-in de contrôle de code source couvre l’envoi des él�
   
 ## <a name="common-expected-behavior"></a>Comportement attendu commun  
   
--   Projets et fichiers ajoutés à une solution ou un projet sous contrôle de code source apparaissent dans le **archiver** boîte de dialogue et le **archivages en attente** fenêtre.  
+- Projets et fichiers ajoutés à une solution ou un projet sous contrôle de code source apparaissent dans le **archiver** boîte de dialogue et le **archivages en attente** fenêtre.  
   
--   Après l’archivage, les éléments ajoutés apparaissent dans le contrôle de code source.  
+- Après l’archivage, les éléments ajoutés apparaissent dans le contrôle de code source.  
   
--   Après l’archivage, les éléments mis à jour sont correctement gérées dans le magasin.  
+- Après l’archivage, les éléments mis à jour sont correctement gérées dans le magasin.  
   
 ## <a name="test-cases"></a>Cas de test  
  Cas de test spécifiques pour la zone de test d’archivage sont les suivantes :  

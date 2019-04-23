@@ -11,12 +11,12 @@ ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 34336b93e8739bcba807aca72b26a47b581b7413
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 47f752f00e1efe130f029a3cabdd2e3e3bf19449
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950010"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072438"
 ---
 # <a name="adding-visual-studio-commands-to-a-start-page"></a>Ajout de commandes Visual Studio à une page de démarrage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,15 +72,15 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
   
 #### <a name="to-call-a-command-from-an-assembly"></a>Pour appeler une commande à partir d’un assembly  
   
-1.  Dans votre solution, ajoutez une référence à l’assembly.  
+1. Dans votre solution, ajoutez une référence à l’assembly.  
   
-2.  En haut du fichier StartPage.xaml, ajoutez une directive d’espace de noms pour l’assembly, comme indiqué dans l’exemple suivant.  
+2. En haut du fichier StartPage.xaml, ajoutez une directive d’espace de noms pour l’assembly, comme indiqué dans l’exemple suivant.  
   
     ```xml  
     xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
     ```  
   
-3.  Appelez la commande en définissant le `Command` propriété d’un objet XAML, comme indiqué dans l’exemple suivant.  
+3. Appelez la commande en définissant le `Command` propriété d’un objet XAML, comme indiqué dans l’exemple suivant.  
   
      Xaml  
   

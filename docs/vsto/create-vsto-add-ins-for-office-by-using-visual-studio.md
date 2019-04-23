@@ -1,5 +1,5 @@
 ---
-title: Créer des compléments VSTO pour Office à l’aide de Visual Studio
+title: Créer des compléments VSTO pour Office à l'aide de Visual Studio
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
@@ -12,14 +12,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: efb95d2beb90358cbbe359076a815dee13ce7166
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e39a742c01b013c43992847010bf5f6cb6ac6009
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644378"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070912"
 ---
-# <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Créer des compléments VSTO pour Office à l’aide de Visual Studio
+# <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Créer des compléments VSTO pour Office à l'aide de Visual Studio
   Vous pouvez utiliser les outils de développement Microsoft Office dans Visual Studio pour créer des applications .NET Framework qui étendent Office. Ces applications sont également appelées *solutions Office*.
 
  Les outils de développement Office fournissent des fonctionnalités qui permettent de créer des solutions Office pour répondre à différents besoins professionnels. Ces outils incluent des modèles de projet pour vous aider à créer des solutions Office à l'aide de Visual Basic ou de Visual C#, et des concepteurs visuels qui vous aident à créer des interfaces utilisateur personnalisées pour vos solutions Office.
@@ -29,9 +29,9 @@ ms.locfileid: "56644378"
 
  Pour obtenir les informations les plus récentes sur le développement Office, consultez les centres de développement suivants sur le site MSDN :
 
--   Le [Office portail de développement avec Visual Studio](http://go.microsoft.com/fwlink/?LinkId=123844) contient des liens vers des informations sur les produits, des exemples de code, des vidéos et des ressources de la Communauté sur l’utilisation de Visual Studio pour personnaliser des applications Office dans le cadre de vos solutions .
+- Le [Office portail de développement avec Visual Studio](http://go.microsoft.com/fwlink/?LinkId=123844) contient des liens vers des informations sur les produits, des exemples de code, des vidéos et des ressources de la Communauté sur l’utilisation de Visual Studio pour personnaliser des applications Office dans le cadre de vos solutions .
 
--   Le [centre de développement Microsoft Office](http://go.microsoft.com/fwlink/?LinkId=83467) contient des liens vers des articles techniques, des exemples de code, téléchargements, informations de la Communauté, prise en charge et autres documentations sur les personnalisations Office et des Applications professionnelles Office (OBA ).
+- Le [centre de développement Microsoft Office](http://go.microsoft.com/fwlink/?LinkId=83467) contient des liens vers des articles techniques, des exemples de code, téléchargements, informations de la Communauté, prise en charge et autres documentations sur les personnalisations Office et des Applications professionnelles Office (OBA ).
 
 ## <a name="in-this-section"></a>Dans cette section
 - [Prise en main &#40;développement Office dans Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)

@@ -8,20 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfbc41b24dd0e58dd24e0af99afe458d27f8ade6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b73d5c8acac211db09926acf0ba8009aa04ac0a8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930855"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070895"
 ---
-# <a name="search-the-schema-set"></a>Rechercher le jeu de schémas
+# <a name="search-the-schema-set"></a>Effectuer des recherches dans le jeu de schémas
 
 Le **Explorateur de schémas XML** vous permet de rechercher le schéma défini comme suit :
 
--   Recherche par mot clé
+- Recherche par mot clé
 
--   Recherche spécifique au schéma
+- Recherche spécifique au schéma
 
 ## <a name="keyword-search"></a>recherches par mot clé ;
 
@@ -31,11 +31,11 @@ Le **Explorateur de schémas XML** vous permet de rechercher le schéma défini 
 
  Le **Explorateur de schémas XML** recherche le schéma défini pour les attributs suivants :
 
--   Tout attribut `name` ou `ref` qui correspond au mot clé spécifié. Vous trouverez les éléments, attributs, types, etc., par nom.
+- Tout attribut `name` ou `ref` qui correspond au mot clé spécifié. Vous trouverez les éléments, attributs, types, etc., par nom.
 
--   Attributs `schemaLocation` d'instructions d'inclusion.
+- Attributs `schemaLocation` d'instructions d'inclusion.
 
--   Attributs `namespace` d'instructions d'importation.
+- Attributs `namespace` d'instructions d'importation.
 
 ## <a name="schema-specific-search"></a>Recherche spécifique au schéma
 

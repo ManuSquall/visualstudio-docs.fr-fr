@@ -22,12 +22,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 099f284838a74ce5e302d9ba6ba0974b85260e73
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e913d67442d21cb1a0895721c22ede9b69363f53
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950286"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068702"
 ---
 # <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>Procédure : Déboguer une partie non exécutable d’une Solution Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,25 +40,25 @@ Vous pouvez être amené à déboguer un exécutable qui ne fait pas partie d'un
   
 ### <a name="to-create-an-exe-project-for-an-existing-executable"></a>Pour créer un projet EXE pour un exécutable existant  
   
-1.  Dans le menu **Fichier**, cliquez sur **Ouvrir** et sélectionnez **Projet**.  
+1. Dans le menu **Fichier**, cliquez sur **Ouvrir** et sélectionnez **Projet**.  
   
-2.  Dans la boîte de dialogue **Ouvrir un projet**, cliquez sur la liste déroulante située à côté de la zone **Nom du fichier**, puis sélectionnez **Tous les fichiers du projet**.  
+2. Dans la boîte de dialogue **Ouvrir un projet**, cliquez sur la liste déroulante située à côté de la zone **Nom du fichier**, puis sélectionnez **Tous les fichiers du projet**.  
   
-3.  Localiser le fichier exécutable, puis cliquez sur **OK**.  
+3. Localiser le fichier exécutable, puis cliquez sur **OK**.  
   
      Cela permet de créer une solution temporaire contenant l'exécutable.  
   
 ### <a name="to-import-an-executable-into-a-visual-studio-solution"></a>Pour importer un exécutable dans une solution Visual Studio  
   
-1.  Dans le menu **Fichier**, pointez sur **Ajouter un projet**, puis cliquez sur **Projet existant**.  
+1. Dans le menu **Fichier**, pointez sur **Ajouter un projet**, puis cliquez sur **Projet existant**.  
   
-2.  Dans la boîte de dialogue **Ajouter un projet existant**, cliquez sur la liste déroulante située à côté de la zone **Nom du fichier**, puis sélectionnez **Tous les fichiers du projet**.  
+2. Dans la boîte de dialogue **Ajouter un projet existant**, cliquez sur la liste déroulante située à côté de la zone **Nom du fichier**, puis sélectionnez **Tous les fichiers du projet**.  
   
-3.  Recherchez et sélectionnez l'exécutable.  
+3. Recherchez et sélectionnez l'exécutable.  
   
-4.  Cliquez sur **OK**.  
+4. Cliquez sur **OK**.  
   
-5.  Démarrez l’exécutable en choisissant une commande d’exécution, telle que **Démarrer**, à partir du menu **Déboguer**.  
+5. Démarrez l’exécutable en choisissant une commande d’exécution, telle que **Démarrer**, à partir du menu **Déboguer**.  
   
     > [!NOTE]
     >  Tous les langages de programmation ne prennent pas en charge les projets EXE. Installez [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] si vous devez utiliser cette fonctionnalité.  

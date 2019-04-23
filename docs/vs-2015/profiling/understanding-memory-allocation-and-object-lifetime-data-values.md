@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9ddfc891126e5018757f50a1a04378793fe83c53
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 816f750148cc30de86fc116f80f64b218b4699d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763153"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069743"
 ---
 # <a name="understanding-memory-allocation-and-object-lifetime-data-values"></a>Fonctionnement de l’allocation de mémoire et des informations de durée de vie des objets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ La méthode de profilage d’*allocation de mémoire .NET* des outils de profila
   
  Quand un événement d’allocation de mémoire se produit, le profileur incrémente le nombre d’échantillons pour chaque fonction sur la pile des appels. Quand les données sont collectées, une seule fonction sur la pile des appels exécute le code de son corps de fonction. Les autres fonctions sur la pile sont des parents dans la hiérarchie des appels de fonctions qui sont en attente du retour des fonctions qu’elles ont appelées.  
   
--   Pour l’événement d’allocation, le profileur incrémente le nombre d’échantillons *exclusifs* de la fonction qui exécute ses instructions. Comme un échantillon exclusif fait également partie du total des échantillons (*inclusifs*) de la fonction, le nombre d’échantillons inclusifs de la fonction active est également incrémenté.  
+- Pour l’événement d’allocation, le profileur incrémente le nombre d’échantillons *exclusifs* de la fonction qui exécute ses instructions. Comme un échantillon exclusif fait également partie du total des échantillons (*inclusifs*) de la fonction, le nombre d’échantillons inclusifs de la fonction active est également incrémenté.  
   
--   Le profileur incrémente le nombre d’échantillons inclusifs de toutes les autres fonctions sur la pile des appels.  
+- Le profileur incrémente le nombre d’échantillons inclusifs de toutes les autres fonctions sur la pile des appels.  
   
 ## <a name="lifetime-data"></a>Données de durée de vie  
  Dans le récupérateur de mémoire du .NET Framework gère l’allocation et la libération de mémoire pour votre application. Pour optimiser les performances du garbage collector, le tas managé est divisé en trois générations : 0, 1 et 2. Le récupérateur de mémoire du runtime stocke les nouveaux objets dans la génération 0. Les objets qui survivent aux collectes sont promus et stockés dans les générations 1 et 2.  

@@ -9,12 +9,12 @@ caps.latest.revision: 3
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6bd4117f3cce8a5a8a708da4b7941e224260ea15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 440b60697d4ab1e88f535b6c5ef824bc74e19c48
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951612"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068689"
 ---
 # <a name="embedding-a-diagram-in-a-windows-form"></a>Incorporation d'un schéma dans un Windows Form
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,15 +25,15 @@ Vous pouvez incorporer un diagramme DSL dans un contrôle Windows, qui s’affic
   
 #### <a name="to-embed-a-dsl-diagram-in-a-windows-control"></a>Pour incorporer un diagramme DSL dans un contrôle Windows  
   
-1.  Ajouter un nouveau **contrôle utilisateur** fichier au projet DslPackage.  
+1. Ajouter un nouveau **contrôle utilisateur** fichier au projet DslPackage.  
   
-2.  Ajoutez un contrôle de panneau au contrôle utilisateur. Ce panneau contient le diagramme DSL.  
+2. Ajoutez un contrôle de panneau au contrôle utilisateur. Ce panneau contient le diagramme DSL.  
   
      Ajoutez des contrôles dont vous avez besoin.  
   
      Définissez les propriétés d’ancrage des contrôles.  
   
-3.  Dans l’Explorateur de solutions, cliquez sur le fichier de contrôle utilisateur, puis cliquez sur **afficher le Code**. Ajouter ce constructeur et la variable au code :  
+3. Dans l’Explorateur de solutions, cliquez sur le fichier de contrôle utilisateur, puis cliquez sur **afficher le Code**. Ajouter ce constructeur et la variable au code :  
   
     ```csharp  
   
@@ -47,7 +47,7 @@ Vous pouvez incorporer un diagramme DSL dans un contrôle Windows, qui s’affic
   
     ```  
   
-4.  Ajoutez un nouveau fichier au projet DslPackage, avec le contenu suivant :  
+4. Ajoutez un nouveau fichier au projet DslPackage, avec le contenu suivant :  
   
     ```  
     using System.Windows.Forms;  
@@ -71,13 +71,13 @@ Vous pouvez incorporer un diagramme DSL dans un contrôle Windows, qui s’affic
   
     ```  
   
-5.  Pour tester la solution DSL, appuyez sur F5 et ouvrir un exemple de fichier de modèle. Le diagramme apparaît à l’intérieur du contrôle. La boîte à outils et autres fonctionnalités fonctionnent normalement.  
+5. Pour tester la solution DSL, appuyez sur F5 et ouvrir un exemple de fichier de modèle. Le diagramme apparaît à l’intérieur du contrôle. La boîte à outils et autres fonctionnalités fonctionnent normalement.  
   
 #### <a name="updating-the-form-using-store-events"></a>La mise à jour le formulaire à l’aide d’événements de Store  
   
-1.  Dans le Concepteur de formulaire, ajoutez un **ListBox** nommé `listBox1`. Cela affichera une liste des éléments dans le modèle. Il est conservé dans synchronism avec le modèle à l’aide *stocker les événements*. Pour plus d’informations, consultez [gestionnaires propager les modifications en dehors le modèle d’événement](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
+1. Dans le Concepteur de formulaire, ajoutez un **ListBox** nommé `listBox1`. Cela affichera une liste des éléments dans le modèle. Il est conservé dans synchronism avec le modèle à l’aide *stocker les événements*. Pour plus d’informations, consultez [gestionnaires propager les modifications en dehors le modèle d’événement](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
   
-2.  Dans le fichier de code personnalisé, substituez davantage les méthodes à la classe d’objet DocView :  
+2. Dans le fichier de code personnalisé, substituez davantage les méthodes à la classe d’objet DocView :  
   
     ```  
   
@@ -120,7 +120,7 @@ Vous pouvez incorporer un diagramme DSL dans un contrôle Windows, qui s’affic
   
     ```  
   
-3.  Dans le code derrière le contrôle utilisateur, insérer des méthodes pour écouter les éléments ajoutés et supprimés :  
+3. Dans le code derrière le contrôle utilisateur, insérer des méthodes pour écouter les éléments ajoutés et supprimés :  
   
     ```  
   
@@ -149,7 +149,7 @@ Vous pouvez incorporer un diagramme DSL dans un contrôle Windows, qui s’affic
   
     ```  
   
-4.  Pour tester la solution DSL, appuyez sur F5 et dans l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ouvrez un exemple de fichier de modèle.  
+4. Pour tester la solution DSL, appuyez sur F5 et dans l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ouvrez un exemple de fichier de modèle.  
   
      Notez que la zone de liste affiche une liste des éléments dans le modèle, et qu’il est correct après tout ajout ou la suppression et après les annuler et rétablir.  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9247eae19d32ecc21069836d52192e7d466de1b7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 370f6992fb044f5bd7f3593e63afeab46c82830b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802838"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072290"
 ---
 # <a name="model-editor"></a>Éditeur de modèle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ Ce document explique comment utiliser l'éditeur de modèle [!INCLUDE[vsprvs](..
   
 #### <a name="to-add-a-3-d-model-to-your-project"></a>Pour ajouter un modèle 3D à un projet  
   
-1.  Dans l’**Explorateur de solutions**, ouvrez le menu contextuel du projet auquel vous souhaitez ajouter l’image puis choisissez **Ajouter**, **Nouvel élément**.  
+1. Dans l’**Explorateur de solutions**, ouvrez le menu contextuel du projet auquel vous souhaitez ajouter l’image puis choisissez **Ajouter**, **Nouvel élément**.  
   
-2.  Dans la boîte de dialogue **Ajouter un nouvel élément**, sous **Installé**, sélectionnez **Graphiques**, puis **Scène 3D (.fbx)**.  
+2. Dans la boîte de dialogue **Ajouter un nouvel élément**, sous **Installé**, sélectionnez **Graphiques**, puis **Scène 3D (.fbx)**.  
   
-3.  Spécifiez le **nom** du fichier de modèle, ainsi que **l’emplacement** où vous souhaitez le créer.  
+3. Spécifiez le **nom** du fichier de modèle, ainsi que **l’emplacement** où vous souhaitez le créer.  
   
-4.  Choisissez le bouton **Ajouter** .  
+4. Choisissez le bouton **Ajouter** .  
   
 ### <a name="axis-orientation"></a>Orientation d'axe  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prend en charge chaque orientation de l'axe 3D et charge les informations d'orientation d'axe à partir des formats de fichier de modèle qui les prennent en charge. Si aucune orientation d'axe n'est spécifiée, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utilise le système de coordonnées droitier par défaut. **L’indicateur d’axe** montre l’orientation d’axe actuelle dans le coin inférieur droit de l’aire de conception. Dans **l’indicateur d’axe**, le rouge représente l’axe x, le vert représente l’axe y et le bleu représente l’axe z.  
@@ -132,7 +132,7 @@ Ce document explique comment utiliser l'éditeur de modèle [!INCLUDE[vsprvs](..
 ### <a name="viewing-additional-geometry-details"></a>Affichage de détails géométriques supplémentaires  
  Pour mieux comprendre un objet ou une scène 3D, vous pouvez afficher des détails géométriques supplémentaires, tels que les normales aux sommets, les normales aux faces, les points pivot de la sélection active, ainsi que d'autres détails. Pour les activer ou les désactiver, dans la barre d’outils **Éditeur de modèle**, choisissez **Scripts**, **Affichage**, puis celui de votre choix.  
   
-###  <a name="Adding3DObjects"></a> Création et importation d’objets 3D  
+### <a name="Adding3DObjects"></a> Création et importation d’objets 3D  
  Pour ajouter une forme 3D prédéfinie à la scène, dans la **boîte à outils**, sélectionnez celle de votre choix, puis déplacez-la vers l’aire de conception. Les nouvelles formes sont placées à l'origine de la scène. L’éditeur de modèle propose sept formes : **Cône**, **Cube**, **Cylindre**, **Disque**, **Plan**, **Sphère** et **Teapot**.  
   
  Pour importer un objet 3D à partir d’un fichier, dans la barre d’outils **Éditeur de modèle**, choisissez **Avancé**, **Gestion des scènes**, **Importer**, puis spécifiez le fichier à importer.  
@@ -144,11 +144,11 @@ Ce document explique comment utiliser l'éditeur de modèle [!INCLUDE[vsprvs](..
   
 ##### <a name="to-transform-an-object-by-using-modeling-tools"></a>Pour transformer un objet à l'aide des outils de modélisation  
   
-1.  En mode **Sélectionner**, sélectionnez l’objet que vous voulez transformer. Une superposition de maquette indique que l'objet est sélectionné.  
+1. En mode **Sélectionner**, sélectionnez l’objet que vous voulez transformer. Une superposition de maquette indique que l'objet est sélectionné.  
   
-2.  Dans la barre d’outils **Éditeur de modèle**, choisissez l’outil **Translater**, **Redimensionner** ou **Faire pivoter**. Un manipulateur de translation, de mise à l'échelle ou de rotation s'affiche pour l'objet sélectionné.  
+2. Dans la barre d’outils **Éditeur de modèle**, choisissez l’outil **Translater**, **Redimensionner** ou **Faire pivoter**. Un manipulateur de translation, de mise à l'échelle ou de rotation s'affiche pour l'objet sélectionné.  
   
-3.  Utilisez le manipulateur pour effectuer la transformation. Pour les transformations de translation et de mise à l'échelle, le manipulateur est un indicateur d'axe. Vous pouvez modifier un axe à la fois ou tous les axes simultanément à l'aide du cube blanc au centre de l'indicateur. Pour la rotation, le manipulateur est une sphère constituée de cercles identifiés par des couleurs qui correspondent à l'axe X (rouge), à l'axe Y (vert) et à l'axe Z (bleu). Vous devez modifier chaque axe individuellement pour créer la rotation souhaitée.  
+3. Utilisez le manipulateur pour effectuer la transformation. Pour les transformations de translation et de mise à l'échelle, le manipulateur est un indicateur d'axe. Vous pouvez modifier un axe à la fois ou tous les axes simultanément à l'aide du cube blanc au centre de l'indicateur. Pour la rotation, le manipulateur est une sphère constituée de cercles identifiés par des couleurs qui correspondent à l'axe X (rouge), à l'axe Y (vert) et à l'axe Z (bleu). Vous devez modifier chaque axe individuellement pour créer la rotation souhaitée.  
   
 ##### <a name="to-transform-an-object-by-setting-its-properties"></a>Pour transformer un objet en définissant ses propriétés  
   
@@ -173,16 +173,16 @@ Ce document explique comment utiliser l'éditeur de modèle [!INCLUDE[vsprvs](..
 ### <a name="world-and-local-modes"></a>Modes local et universel  
  La translation et la rotation peuvent être réalisées dans le système de coordonnées local (ou *cadre de référence local*) de l’objet ou dans le système de coordonnées universel (ou *cadre de référence universel*). Le cadre de référence mondial est indépendant de la rotation de l'objet. Le mode local est l'option par défaut. Pour activer (ou désactiver) le mode universel, dans la barre d’outils **Mode de l’éditeur de modèle**, choisissez le bouton **WorldLocal**.  
   
-###  <a name="ModifyingObjects"></a> Modification des objets  
+### <a name="ModifyingObjects"></a> Modification des objets  
  Vous pouvez modifier la forme d'un objet 3D en déplaçant ou en supprimant ses sommets, ses arêtes ou ses faces. Par défaut, l’éditeur de modèle est en *mode objet*, ce qui vous permet de sélectionner et de transformer des objets entiers. Pour sélectionner des points, des arêtes ou des faces, choisissez le mode de sélection approprié. Dans la barre d’outils **Mode de l’éditeur de modèle**, choisissez **Modes de sélection**, puis le mode voulu.  
   
  Vous pouvez créer des sommets supplémentaires par extrusion ou subdivision. L'extrusion reproduit les sommets d'une face (ensemble coplanaire de sommets) qui restent connectés par les sommets dupliqués. La subdivision ajoute des sommets pour créer plusieurs faces là où il y en avait déjà une. Pour créer de nouvelles faces, de nouveaux sommets sont ajoutés (un au centre de la face d'origine et l'autre au milieu de chaque arête), puis joints aux sommets d'origine. Le nombre de faces ajoutées est égal au nombre d'arêtes de la face d'origine. Dans les deux cas, vous pouvez translater, faire pivoter et redimensionner les nouveaux sommets pour modifier la géométrie de l'objet.  
   
 ##### <a name="to-extrude-a-face-from-an-object"></a>Pour extruder une face d'un objet  
   
-1.  En mode de sélection de face, sélectionnez la face à extruder.  
+1. En mode de sélection de face, sélectionnez la face à extruder.  
   
-2.  Dans la barre d’outils **Éditeur de modèle**, choisissez **Scripts**, **Outils**, **Extruder**.  
+2. Dans la barre d’outils **Éditeur de modèle**, choisissez **Scripts**, **Outils**, **Extruder**.  
   
 ##### <a name="to-subdivide-faces"></a>Pour subdiviser des faces  
   
@@ -194,21 +194,21 @@ Ce document explique comment utiliser l'éditeur de modèle [!INCLUDE[vsprvs](..
   
 ##### <a name="to-triangulate-a-face"></a>Pour effectuer une triangulation sur une face  
   
-1.  En mode de sélection de face, sélectionnez la face pour laquelle créer une triangulation.  
+1. En mode de sélection de face, sélectionnez la face pour laquelle créer une triangulation.  
   
-2.  Dans la barre d’outils **Éditeur de modèle**, choisissez **Scripts**, **Outils**, **Effectuer une triangulation**.  
+2. Dans la barre d’outils **Éditeur de modèle**, choisissez **Scripts**, **Outils**, **Effectuer une triangulation**.  
   
 ##### <a name="to-merge-objects"></a>Pour fusionner des objets  
   
-1.  En mode de sélection d'objet, sélectionnez les objets à fusionner.  
+1. En mode de sélection d'objet, sélectionnez les objets à fusionner.  
   
-2.  Dans la barre d’outils **Éditeur de modèle**, choisissez **Scripts**, **Outils**, **Fusionner les objets**.  
+2. Dans la barre d’outils **Éditeur de modèle**, choisissez **Scripts**, **Outils**, **Fusionner les objets**.  
   
 ##### <a name="to-create-an-object-from-a-polygon-selection"></a>Pour créer un objet à partir d'une sélection de polygones  
   
-1.  En mode de sélection de face, sélectionnez les faces à partir desquelles créer un nouvel objet.  
+1. En mode de sélection de face, sélectionnez les faces à partir desquelles créer un nouvel objet.  
   
-2.  Dans la barre d’outils **Éditeur de modèle**, choisissez **Scripts**, **Outils**, **Créer un objet à partir de la sélection de polygones**.  
+2. Dans la barre d’outils **Éditeur de modèle**, choisissez **Scripts**, **Outils**, **Créer un objet à partir de la sélection de polygones**.  
   
 ### <a name="working-with-materials-and-shaders"></a>Utilisation de matériaux et de nuanceurs  
  L'apparence d'un objet est déterminée par l'interaction de l'éclairage dans la scène et le matériau constituant l'objet. Les matériaux sont définis par des propriétés qui décrivent comment la surface réagit à différents types de lumière, ainsi que par un programme de nuanceur qui calcule la couleur finale de chaque pixel de la surface de l'objet en fonction des données d'éclairage, des cartes de texture, des cartes de normale et d'autres données.  
@@ -248,9 +248,9 @@ Ce document explique comment utiliser l'éditeur de modèle [!INCLUDE[vsprvs](..
   
 ##### <a name="to-create-a-hierarchy-that-has-a-parent-object"></a>Pour créer une hiérarchie dotée d'un objet parent  
   
-1.  En mode **Sélectionner**, sélectionnez deux objets ou plus. Le premier objet sélectionné sera l'objet parent.  
+1. En mode **Sélectionner**, sélectionnez deux objets ou plus. Le premier objet sélectionné sera l'objet parent.  
   
-2.  Dans la barre d’outils **Éditeur de modèle**, choisissez **Scripts**, **Gestion des scènes**, **Attacher au parent**.  
+2. Dans la barre d’outils **Éditeur de modèle**, choisissez **Scripts**, **Gestion des scènes**, **Attacher au parent**.  
   
 ##### <a name="to-create-a-hierarchy-of-sibling-objects"></a>Pour créer une hiérarchie d'objets frères  
   

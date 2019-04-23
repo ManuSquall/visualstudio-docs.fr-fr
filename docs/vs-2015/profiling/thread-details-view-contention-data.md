@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5d8ecbeca226d558774c12f4bec45ac26f66a808
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 16ee86e69cb3a150a98de5077aa0c545545833e8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762122"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069105"
 ---
 # <a name="thread-details-view---contention-data"></a>Vue Détails relatifs au thread - Données de conflit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,19 +31,19 @@ La vue Détails du Thread présente un graphique chronologique des événements 
   
 #### <a name="to-zoom-in-on-a-timeline-segment"></a>Pour faire un zoom sur un segment de la chronologie  
   
--   Cliquez et faites glisser le pointeur de la souris pour sélectionner une zone de la chronologie.  
+- Cliquez et faites glisser le pointeur de la souris pour sélectionner une zone de la chronologie.  
   
      Quand vous relâchez la souris, la vue effectue un zoom avant sur le segment de temps sélectionné. Vous pouvez répéter le processus pour obtenir plus détails. La case de défilement sur la barre de défilement chronologique représente la taille relative de l’intervalle de temps qui est affiché dans la vue.  
   
 #### <a name="to-zoom-out-on-a-timeline"></a>Pour appliquer un zoom arrière sur une chronologie  
   
--   Cliquez sur **Zoom arrière** pour revenir au niveau de zoom précédent.  
+- Cliquez sur **Zoom arrière** pour revenir au niveau de zoom précédent.  
   
--   Cliquez sur **Réinitialisation du zoom** pour afficher l’intégralité de la chronologie de la vue.  
+- Cliquez sur **Réinitialisation du zoom** pour afficher l’intégralité de la chronologie de la vue.  
   
 #### <a name="to-view-the-call-stack-of-an-event"></a>Pour afficher la pile des appels d’un événement  
   
--   Dans le graphique chronologique, cliquez sur la barre verticale qui représente l’événement.  
+- Dans le graphique chronologique, cliquez sur la barre verticale qui représente l’événement.  
   
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>Pour afficher ou modifier le code source d’une fonction dans la pile des appels  
   
@@ -53,12 +53,12 @@ La vue Détails du Thread présente un graphique chronologique des événements 
   
 #### <a name="to-view-the-contention-events-of-a-resource-in-all-threads-in-the-profiling-run"></a>Pour voir les événements de conflit d’une ressource dans tous les threads de l’exécution du profilage  
   
--   Dans le graphique chronologique, cliquez sur le nom ou l’ID de la ressource.  
+- Dans le graphique chronologique, cliquez sur le nom ou l’ID de la ressource.  
   
      La [vue Informations sur les ressources](../profiling/resource-details-view-contention-data.md) apparaît pour la ressource sélectionnée.  
   
 #### <a name="to-view-the-thread-contention-data-in-the-processes-window"></a>Pour voir les données de conflit du thread dans la fenêtre Processus  
   
--   Dans le graphique chronologique, cliquez sur **Total**.  
+- Dans le graphique chronologique, cliquez sur **Total**.  
   
      La [vue Processus](../profiling/process-view-contention-data.md) apparaît affiche avec le thread sélectionné.

@@ -17,12 +17,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c403cefee3aa7d45c11cd80cf5fc2dd53a06c1fc
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 4cc62b8635a2d7a663b597d4f8a2363fe14ba432
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58947934"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071926"
 ---
 # <a name="how-to-find-the-name-of-the-aspnet-process"></a>Procédure : Rechercher le nom du processus ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,25 +42,25 @@ Pour créer un attachement à une application [!INCLUDE[vstecasp](../includes/vs
   
 ### <a name="to-determine-whether-project-code-resides-on-the-file-system-or-iis"></a>Pour déterminer si le code de projet réside sur le système de fichiers ou IIS  
   
-1.  Dans Visual Studio, ouvrez **l’Explorateur de solutions** s’il n’est pas déjà ouvert.  
+1. Dans Visual Studio, ouvrez **l’Explorateur de solutions** s’il n’est pas déjà ouvert.  
   
-2.  Sélectionnez le nœud supérieur qui contient le nom de l'application.  
+2. Sélectionnez le nœud supérieur qui contient le nom de l'application.  
   
-3.  Si le **propriétés** titre de la fenêtre contient un chemin d’accès de fichier, le code d’application réside sur le système de fichiers.  
+3. Si le **propriétés** titre de la fenêtre contient un chemin d’accès de fichier, le code d’application réside sur le système de fichiers.  
   
      Sinon, le **propriétés** titre de la fenêtre contient le nom du site Web.  
   
 ### <a name="to-determine-the-iis-version-under-which-the-application-is-running"></a>Pour déterminer la version d'IIS sous laquelle l'application s'exécute  
   
-1.  Rechercher **outils d’administration** et exécutez-le. Selon votre système d’exploitation, cela peut être une icône à l’intérieur de **le panneau de configuration**, ou une entrée de menu qui s’affiche lorsque vous cliquez sur **Démarrer**.  
+1. Rechercher **outils d’administration** et exécutez-le. Selon votre système d’exploitation, cela peut être une icône à l’intérieur de **le panneau de configuration**, ou une entrée de menu qui s’affiche lorsque vous cliquez sur **Démarrer**.  
   
      Dans Windows XP, **le panneau de configuration** peut se trouver dans l’affichage des catégories ou en affichage classique. Dans l’affichage des catégories, vous devez cliquer sur **basculer vers l’affichage classique** ou **Performance et Maintenance** pour voir les **outils d’administration** icône.  
   
-2.  À partir de **outils d’administration**, exécutez Internet Information Services. Une boîte de dialogue MMC apparaît.  
+2. À partir de **outils d’administration**, exécutez Internet Information Services. Une boîte de dialogue MMC apparaît.  
   
-3.  Si plusieurs ordinateurs sont répertoriés dans le volet gauche, sélectionnez celui sur lequel réside le code de l'application.  
+3. Si plusieurs ordinateurs sont répertoriés dans le volet gauche, sélectionnez celui sur lequel réside le code de l'application.  
   
-4.  La version d’IIS est dans le **Version** colonne du volet droit.  
+4. La version d’IIS est dans le **Version** colonne du volet droit.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Conditions préalables pour le débogage des Applications Web à distance](../debugger/prerequistes-for-remote-debugging-web-applications.md)   

@@ -1,5 +1,5 @@
 ---
-title: "Procédure pas à pas : création d'un DataTable dans le Concepteur de DataSet"
+title: 'Procédure pas à pas : Création d’un DataTable dans le Concepteur de Dataset'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7a01a249df088d2a89e64f1c04c69e80d69b111c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 1126117cb1fc26c4f61bfb0f6ed0e19e86ce9323
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926747"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072667"
 ---
-# <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Procédure pas à pas : Création d’un DataTable dans le Concepteur de Dataset
+# <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Procédure pas à pas : Créer un DataTable dans le Concepteur de Dataset
 
 Cette procédure pas à pas explique comment créer un <xref:System.Data.DataTable> (sans TableAdapter) à l’aide de la **Concepteur de Dataset**. Pour plus d’informations sur la création de tables de données comprenant des TableAdapters, consultez [créer et configurer des TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
@@ -27,7 +27,7 @@ Cette procédure pas à pas explique comment créer un <xref:System.Data.DataTab
 
 1. Dans Visual Studio, sur le **fichier** menu, sélectionnez **New** > **projet**.
 
-2. Développez le **Visual C#**  ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
+2. Développez le **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
 
 3. Dans le volet central, sélectionnez le **Windows Forms application** type de projet.
 
@@ -37,33 +37,33 @@ Cette procédure pas à pas explique comment créer un <xref:System.Data.DataTab
 
 ## <a name="add-a-new-dataset-to-the-application"></a>Ajouter un nouveau jeu de données à l’application
 
-1.  Dans le menu **Projet**, sélectionnez **Ajouter un nouvel élément**.
+1. Dans le menu **Projet**, sélectionnez **Ajouter un nouvel élément**.
 
      La boîte de dialogue **Ajouter un nouvel élément** s’affiche.
 
-2.  Dans le volet gauche, sélectionnez **données**, puis sélectionnez **DataSet** dans le volet central.
+2. Dans le volet gauche, sélectionnez **données**, puis sélectionnez **DataSet** dans le volet central.
 
-3.  Sélectionnez **Ajouter**.
+3. Sélectionnez **Ajouter**.
 
      Visual Studio ajoute un fichier appelé **DataSet1.xsd** au projet et l’ouvre dans le **Concepteur de Dataset**.
 
 ## <a name="add-a-new-datatable-to-the-dataset"></a>Ajoutez un nouveau DataTable au Dataset
 
-1.  Faites glisser un **DataTable** à partir de la **DataSet** onglet de la **boîte à outils** sur le **Concepteur de Dataset**.
+1. Faites glisser un **DataTable** à partir de la **DataSet** onglet de la **boîte à outils** sur le **Concepteur de Dataset**.
 
      Une table nommée **DataTable1** est ajouté au jeu de données.
 
-2.  Cliquez sur la barre de titre de **DataTable1** et renommez-le `Music`.
+2. Cliquez sur la barre de titre de **DataTable1** et renommez-le `Music`.
 
 ## <a name="add-columns-to-the-datatable"></a>Ajouter des colonnes à la table de données
 
-1.  Cliquez sur le **musique** table. Pointez sur **ajouter**, puis cliquez sur **colonne**.
+1. Cliquez sur le **musique** table. Pointez sur **ajouter**, puis cliquez sur **colonne**.
 
-2.  Nom de la colonne `SongID`.
+2. Nom de la colonne `SongID`.
 
-3.  Dans la fenêtre **Propriétés** , définissez la propriété <xref:System.Data.DataColumn.DataType%2A> sur <xref:System.Int16?displayProperty=fullName>.
+3. Dans la fenêtre **Propriétés** , définissez la propriété <xref:System.Data.DataColumn.DataType%2A> sur <xref:System.Int16?displayProperty=fullName>.
 
-4.  Répétez ce processus et ajoutez les colonnes suivantes :
+4. Répétez ce processus et ajoutez les colonnes suivantes :
 
      `SongTitle`: <xref:System.String?displayProperty=fullName>
 

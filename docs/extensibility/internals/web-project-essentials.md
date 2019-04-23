@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 234b2958fd3a5a533e881fc2589c275893326814
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1cfd7c6c8543537f88bdf033068d2ae62c7a634a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602999"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071329"
 ---
 # <a name="web-project-essentials"></a>Éléments fondamentaux de projet web
 Projets Web créent des applications Web. Vous pouvez utiliser un projet Web pour créer une application Web qui comporte les pages Web actives. Une page Web active a au code côté serveur qui restitue la page Web à la demande.
@@ -28,9 +28,9 @@ Projets Web créent des applications Web. Vous pouvez utiliser un projet Web pou
 
 - Fichiers de code source supplémentaires, tels que les classes d’assistance qui ne sont pas associés à une page Web spécifique, se trouvent dans le dossier/App_Code du site Web.
 
-  -   Un projet de site Web (WSP) génère un fichier exécutable pour chaque page Web active. Fichiers exécutables supplémentaires sont générés à partir des fichiers de code source dans le dossier/App_Code.
+  - Un projet de site Web (WSP) génère un fichier exécutable pour chaque page Web active. Fichiers exécutables supplémentaires sont générés à partir des fichiers de code source dans le dossier/App_Code.
 
-  -   Un projet d’application Web (WAP) produit un seul fichier exécutable qui combine le code pour toutes les pages Web actives, ainsi que tous les fichiers source dans le dossier/App_Code.
+  - Un projet d’application Web (WAP) produit un seul fichier exécutable qui combine le code pour toutes les pages Web actives, ainsi que tous les fichiers source dans le dossier/App_Code.
 
 - Le fichier de solution pour un projet Web se trouve séparément à partir du site Web lui-même. Par défaut, les fichiers de solution se trouvent dans \Documents and Settings\\*Votre_compte*\My Documents\\*\<Visual Studio ### >* \Projects\\ *Votresiteweb*.
 
@@ -53,9 +53,9 @@ Projets Web créent des applications Web. Vous pouvez utiliser un projet Web pou
 
 - Une page Web active combine HTML avec un langage de programmation côté serveur. Le langage côté serveur est appelé le langage contenu. Pour prendre en charge un langage de relation contenant-contenu, le système de projet Web doit implémenter le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> famille d’interfaces.
 
-  -   Pour prendre en charge le langage contenu dans un éditeur, le service de langage HTML doit différer l’affichage de code de langue de relation contenant-contenu à un service de langage contenu.
+  - Pour prendre en charge le langage contenu dans un éditeur, le service de langage HTML doit différer l’affichage de code de langue de relation contenant-contenu à un service de langage contenu.
 
-  -   Marqueurs d’erreur (tildes rouges) doivent toujours être créés dans la mémoire tampon principale de l’éditeur de code.
+  - Marqueurs d’erreur (tildes rouges) doivent toujours être créés dans la mémoire tampon principale de l’éditeur de code.
 
 ## <a name="see-also"></a>Voir aussi
 - [Projets Web](../../extensibility/internals/web-projects.md)

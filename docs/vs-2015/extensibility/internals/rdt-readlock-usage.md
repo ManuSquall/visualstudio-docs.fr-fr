@@ -13,12 +13,12 @@ ms.assetid: b935fc82-9d6b-4a8d-9b70-e9a5c5ad4a55
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c818023d50b733a4818c87e67d0b49abde518ad2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a9a6b5f86f0cfbb71f6264bdc74df72ad9209c9d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948560"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070158"
 ---
 # <a name="rdtreadlock-usage"></a>Utilisation de RDT_ReadLock
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ ms.locfileid: "58948560"
   
  En règle générale, vous utiliseriez <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> lorsque une des opérations suivantes est remplie :  
   
--   Lorsque vous souhaitez ouvrir un document de façon invisible et en lecture seule, mais il n’est pas encore établie qui <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> doit êtes bien le propriétaire.  
+- Lorsque vous souhaitez ouvrir un document de façon invisible et en lecture seule, mais il n’est pas encore établie qui <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> doit êtes bien le propriétaire.  
   
--   Lorsque vous souhaitez que l’utilisateur pour être invité à enregistrer un document qui a été ouvert de façon invisible avant que l’utilisateur il affiché dans l’interface utilisateur et a tenté de le fermer.  
+- Lorsque vous souhaitez que l’utilisateur pour être invité à enregistrer un document qui a été ouvert de façon invisible avant que l’utilisateur il affiché dans l’interface utilisateur et a tenté de le fermer.  
   
 ## <a name="how-to-manage-visible-and-invisible-documents"></a>Comment gérer des Documents Visible et Invisible  
  Lorsqu’un utilisateur ouvre un document dans l’interface utilisateur, un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> propriétaire pour le document doit être établie et un <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> l’indicateur doit être défini. Si aucun <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> propriétaire peut être établi, puis le document n’est pas enregistré lorsque l’utilisateur clique sur **Enregistrer tout** ou ferme l’IDE. Cela signifie que si un document est ouvert de manière invisible où il est modifié dans la mémoire, et l’utilisateur est invité à enregistrer le document lors de l’arrêt ou enregistré si **Enregistrer tout** est choisie, puis un `RDT_ReadLock` ne peut pas être utilisé. Au lieu de cela, vous devez utiliser un `RDT_EditLock` et inscrire un <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> lorsqu’un <xref:Microsoft.VisualStudio.Shell.Interop.__VSREGDOCLOCKHOLDER> indicateur.  

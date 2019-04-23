@@ -16,12 +16,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95fa2a4146e151b689efbb82d933e05be698f62b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7b4d5e914566cc019a3882ed53923f84ecdddf85
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953435"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069534"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Procédure : Récupérer les informations de chaîne de requête dans une application ClickOnce en ligne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,26 +49,26 @@ La *chaîne de requête* est la partie d’une URL commençant par un point d’
   
 ### <a name="to-obtain-query-string-information-from-a-clickonce-application"></a>Pour obtenir des informations de chaîne de requête à partir d’une application ClickOnce  
   
-1.  Placez le code suivant dans votre projet. Pour que ce code fonctionne, vous devez avoir une référence à System.Web et ajouter des instructions `using` ou `Imports` pour System.Web, System.Collections.Specialized et System.Deployment.Application.  
+1. Placez le code suivant dans votre projet. Pour que ce code fonctionne, vous devez avoir une référence à System.Web et ajouter des instructions `using` ou `Imports` pour System.Web, System.Collections.Specialized et System.Deployment.Application.  
   
      [!code-csharp[ClickOnceQueryString#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnceQueryString/CS/Form1.cs#1)]
      [!code-vb[ClickOnceQueryString#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceQueryString/VB/Form1.vb#1)]  
   
-2.  Appelez la fonction précédemment définie pour récupérer un <xref:System.Collections.DictionaryBase.Dictionary%2A> des paramètres de chaîne de requête, indexés par nom.  
+2. Appelez la fonction précédemment définie pour récupérer un <xref:System.Collections.DictionaryBase.Dictionary%2A> des paramètres de chaîne de requête, indexés par nom.  
   
 ### <a name="to-enable-query-string-passing-in-a-clickonce-application-with-mageuiexe"></a>Pour activer le transfert de chaînes de requête dans une application ClickOnce avec MageUI.exe  
   
-1.  Ouvrez l’invite de commandes .NET et tapez :  
+1. Ouvrez l’invite de commandes .NET et tapez :  
   
     ```  
     MageUI  
     ```  
   
-2.  Dans le menu **Fichier** , sélectionnez **Ouvrir**et ouvrez le manifeste de déploiement pour votre application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , c’est-à-dire le fichier se terminant par l’extension `.application` .  
+2. Dans le menu **Fichier** , sélectionnez **Ouvrir**et ouvrez le manifeste de déploiement pour votre application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , c’est-à-dire le fichier se terminant par l’extension `.application` .  
   
-3.  Sélectionnez le panneau **Options de déploiement** dans la fenêtre de navigation de gauche, puis cochez la case **Autoriser le transfert des paramètres d’URL vers l’application** .  
+3. Sélectionnez le panneau **Options de déploiement** dans la fenêtre de navigation de gauche, puis cochez la case **Autoriser le transfert des paramètres d’URL vers l’application** .  
   
-4.  Dans le menu **Fichier** , sélectionnez **Enregistrer**.  
+4. Dans le menu **Fichier** , sélectionnez **Enregistrer**.  
   
 > [!NOTE]
 >  Vous pouvez également activer le transfert des chaînes de requête dans [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Cochez la case **Autoriser le transfert des paramètres d’URL vers l’application** , accessible en ouvrant les **Propriétés du projet**, en sélectionnant l’onglet **Publier** , en cliquant sur le bouton **Options** , puis en sélectionnant **Manifestes**.  

@@ -9,14 +9,14 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 431978a10081ec50e9eaca7e88a37f1447f953e4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 16a509c5a8fa46620e60fb5f1497c38d97ff6330
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785866"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068312"
 ---
-# <a name="how-to-build-multiple-configurations-simultaneously"></a>Comment : créer plusieurs configurations simultanément
+# <a name="how-to-build-multiple-configurations-simultaneously"></a>Procédure : Créer plusieurs configurations simultanément
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez générer simultanément la plupart des types de projets avec une partie ou même l’ensemble de leurs configurations de build à l’aide de la boîte de dialogue **Générer en tâche de fond**. Toutefois, vous ne pouvez pas générer les types de projets suivants dans plusieurs configurations de build en même temps :  
@@ -29,16 +29,16 @@ Vous pouvez générer simultanément la plupart des types de projets avec une pa
   
 ### <a name="to-build-a-project-in-multiple-build-configurations"></a>Pour générer un projet dans plusieurs configurations de build  
   
-1.  Dans la barre de menus, sélectionnez **Build**, **Générer en tâche de fond**.  
+1. Dans la barre de menus, sélectionnez **Build**, **Générer en tâche de fond**.  
   
-2.  Dans la colonne **Build**, cochez les cases correspondant aux configurations dans lesquelles vous souhaitez générer un projet.  
+2. Dans la colonne **Build**, cochez les cases correspondant aux configurations dans lesquelles vous souhaitez générer un projet.  
   
     > [!TIP]
     >  Pour modifier ou créer une configuration de build pour une solution, choisissez **Build**, **Gestionnaire de configurations** dans la barre de menus pour ouvrir la boîte de dialogue **Gestionnaire de configurations**. Après avoir modifié une configuration de build pour une solution, choisissez le bouton **Régénérer** dans la boîte de dialogue **Générer en tâche de fond** pour mettre à jour toutes les configurations de build pour les projets de la solution.  
   
-3.  Choisissez le bouton **Build** ou **Régénérer** pour générer le projet avec les configurations que vous avez spécifiées.  
+3. Choisissez le bouton **Build** ou **Régénérer** pour générer le projet avec les configurations que vous avez spécifiées.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour créer et modifier des configurations](../ide/how-to-create-and-edit-configurations.md)   
+ [Guide pratique pour Créer et modifier des Configurations](../ide/how-to-create-and-edit-configurations.md)   
  [Présentation des configurations de build](../ide/understanding-build-configurations.md)   
  [Génération parallèle de plusieurs projets](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)

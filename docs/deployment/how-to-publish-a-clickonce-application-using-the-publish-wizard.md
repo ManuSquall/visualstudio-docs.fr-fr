@@ -17,15 +17,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53a0d26e5eba40a0e089055ad2c3bf69404f4db7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 5937a54c43cf972dcebb25c12cddf6b76b2cb4bc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016549"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069861"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Procédure : Publier une application ClickOnce à l’aide de l’Assistant Publication
-Pour mettre une application ClickOnce à la disposition des utilisateurs, vous devez la publier sur un partage de fichiers ou un chemin d’accès, un serveur FTP ou un média amovible. Vous pouvez publier cette application à l’aide de l’Assistant Publication. Vous trouverez des propriétés supplémentaires liées à la publication sur la page **Publier** du **Concepteur de projet**. Pour plus d’informations, consultez [Publication d’applications ClickOnce](../deployment/publishing-clickonce-applications.md).
+Pour mettre une application ClickOnce à la disposition des utilisateurs, vous devez la publier sur un partage de fichiers ou un chemin d'accès, un serveur FTP ou un média amovible. Vous pouvez publier cette application à l’aide de l’Assistant Publication. Vous trouverez des propriétés supplémentaires liées à la publication sur la page **Publier** du **Concepteur de projet**. Pour plus d’informations, consultez [Publication d’applications ClickOnce](../deployment/publishing-clickonce-applications.md).
 
 Avant d'exécuter l'Assistant Publication, vous devez correctement définir les propriétés de publication. Par exemple, vous pouvez spécifier une clé pour signer votre application ClickOnce dans la page **Signature** du **Concepteur de projet**. Pour plus d’informations, consultez [applications ClickOnce Secure](../deployment/securing-clickonce-applications.md).
 
@@ -35,7 +35,7 @@ Avant d'exécuter l'Assistant Publication, vous devez correctement définir les 
 > [!NOTE]
 > Selon vos paramètres actifs ou votre édition, les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles qui sont décrites dans l'aide. Pour modifier ces paramètres, cliquez sur **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Réinitialiser les paramètres](../ide/environment-settings.md#reset-settings).
 
-## <a name="to-publish-to-a-file-share-or-path"></a>Pour publier vers un partage de fichiers ou un chemin d’accès
+## <a name="to-publish-to-a-file-share-or-path"></a>Pour publier vers un partage de fichiers ou un chemin d'accès
 
 1. Dans l’**Explorateur de solutions**, sélectionnez le projet d’application.
 
@@ -47,11 +47,11 @@ Avant d'exécuter l'Assistant Publication, vous devez correctement définir les 
 
 4. Dans la page **Comment les utilisateurs installeront-ils l’application ?**, sélectionnez l’emplacement auquel les utilisateurs devront accéder pour installer l’application :
 
-   -   Si les utilisateurs effectuent l’installation à partir d’un site web, cliquez sur **À partir d’un site web**, puis entrez une URL qui correspond au chemin de fichier entré à l’étape précédente. Cliquez sur **Suivant**. (Cette option est généralement utilisée quand vous spécifiez une adresse FTP comme emplacement de publication. Le téléchargement direct à partir de FTP n'est pas pris en charge. Vous devez donc entrer une URL ici.) 
+   - Si les utilisateurs effectuent l’installation à partir d’un site web, cliquez sur **À partir d’un site web**, puis entrez une URL qui correspond au chemin de fichier entré à l’étape précédente. Cliquez sur **Suivant**. (Cette option est généralement utilisée quand vous spécifiez une adresse FTP comme emplacement de publication. Le téléchargement direct à partir de FTP n'est pas pris en charge. Vous devez donc entrer une URL ici.) 
 
-   -   Si les utilisateurs installent directement l’application à partir du partage de fichiers, cliquez sur **À partir d’un chemin UNC ou d’un partage de fichiers**, puis cliquez sur **Suivant**. (Cela est valable pour les emplacements de publication au format *c:\deploy\myapp* ou *\\\server\myapp*.)
+   - Si les utilisateurs installent directement l’application à partir du partage de fichiers, cliquez sur **À partir d’un chemin UNC ou d’un partage de fichiers**, puis cliquez sur **Suivant**. (Cela est valable pour les emplacements de publication au format *c:\deploy\myapp* ou *\\\server\myapp*.)
 
-   -   Si les utilisateurs installent l’application à partir d’un média amovible, cliquez sur **À partir d’un CD-ROM ou DVD-ROM**, puis cliquez sur **Suivant**.
+   - Si les utilisateurs installent l’application à partir d’un média amovible, cliquez sur **À partir d’un CD-ROM ou DVD-ROM**, puis cliquez sur **Suivant**.
 
 5. Dans la page **L’application sera-t-elle disponible hors connexion ?**, cliquez sur l’option appropriée :
 
@@ -82,9 +82,9 @@ Avant d'exécuter l'Assistant Publication, vous devez correctement définir les 
    > [!NOTE]
    >  Si vous voulez que l’installation s’exécute automatiquement quand le CD-ROM est inséré dans le lecteur, ouvrez la page **Publier** dans le **Concepteur de projet**, puis cliquez sur le bouton **Options** puis, dans l’Assistant **Options de publication**, sélectionnez **Pour les installations depuis un CD-ROM, démarrer automatiquement l’installation dès l’insertion du CD-ROM**.
 
-5. Si vous distribuez votre application sur CD-ROM, vous souhaitez peut-être fournir des mises à jour à partir d’un site web. Dans la page **Où l’application doit-elle vérifier la disponibilité de mises à jour ?**, choisissez une option de mise à jour :
+5. Si vous distribuez votre application sur CD-ROM, vous souhaitez peut-être fournir des mises à jour à partir d'un site web. Dans la page **Où l’application doit-elle vérifier la disponibilité de mises à jour ?**, choisissez une option de mise à jour :
 
-   - Si l’application doit vérifier les mises à jour, cliquez sur **L’application va vérifier la disponibilité de mises à jour à partir de l’emplacement suivant**, puis entrez l’emplacement où les mises à jour seront publiées. Il peut s’agir d’un emplacement de fichier, d’un site web ou d’un serveur FTP.
+   - Si l’application doit vérifier les mises à jour, cliquez sur **L’application va vérifier la disponibilité de mises à jour à partir de l’emplacement suivant**, puis entrez l’emplacement où les mises à jour seront publiées. Il peut s'agir d'un emplacement de fichier, d'un site web ou d'un serveur FTP.
 
    - Si l’application ne doit pas vérifier les mises à jour, cliquez sur **L’application ne vérifiera pas la disponibilité de mises à jour**.
 

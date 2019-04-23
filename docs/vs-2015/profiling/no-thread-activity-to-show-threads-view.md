@@ -13,12 +13,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 509e0988d07bb22fc8d3180cc65db1a12092de08
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 530123a7f9417ce9f12a0314a96eafad1c69cf7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763295"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069709"
 ---
 # <a name="no-thread-activity-to-show-threads-view"></a>Aucune activité du thread à afficher (affichage Threads)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ Cette zone montre des données relatives aux threads non masqués dans l’inter
   
  Si aucune information n’est visible, vérifiez les éléments suivants :  
   
--   Le niveau de zoom est-il élevé ? Essayez de faire un zoom arrière ou de faire défiler pour faire apparaître plus d’activités de threads dans l’intervalle.  
+- Le niveau de zoom est-il élevé ? Essayez de faire un zoom arrière ou de faire défiler pour faire apparaître plus d’activités de threads dans l’intervalle.  
   
--   Trop de threads sont-ils masqués ? Si c’est le cas, essayez d’afficher tous les threads.  
+- Trop de threads sont-ils masqués ? Si c’est le cas, essayez d’afficher tous les threads.  
   
--   Si **Uniquement mon code** est sélectionné, vous pouvez afficher seulement les données relatives à votre code. Essayez de désactiver le paramètre pour vérifier s’il existe une activité de thread système.  
+- Si **Uniquement mon code** est sélectionné, vous pouvez afficher seulement les données relatives à votre code. Essayez de désactiver le paramètre pour vérifier s’il existe une activité de thread système.  
   
--   Vérifiez que Réduction du bruit est défini sur un seuil peu élevé.  
+- Vérifiez que Réduction du bruit est défini sur un seuil peu élevé.  
   
 ## <a name="see-also"></a>Voir aussi  
  [vue Threads](../profiling/threads-view-parallel-performance.md)

@@ -9,30 +9,30 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8807272ddac0be12fe8a6d80f0aa8e9425307d89
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f4c6b72c521b15c1087b71ddb7241268cf56d64c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763269"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070249"
 ---
-# <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Étape 4 : composer votre formulaire avec un contrôle TableLayoutPanel
+# <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Étape 4 : Composer votre formulaire avec un contrôle TableLayoutPanel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dans cette étape, vous allez ajouter un contrôle `TableLayoutPanel` à votre formulaire. Le contrôle TableLayoutPanel permet d'aligner correctement les contrôles du formulaire que vous ajouterez ultérieurement.  
   
- ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo")pour obtenir une version vidéo de cette rubrique, consultez [didacticiel 1 : créer une visionneuse d’images en Visual Basic – vidéo 2](http://go.microsoft.com/fwlink/?LinkId=205211) ou [didacticiel 1 : créer une visionneuse d’images dans C# -Vidéo 2](http://go.microsoft.com/fwlink/?LinkId=205200). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.  
+ ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo")pour obtenir une version vidéo de cette rubrique, consultez [didacticiel 1 : Créer une visionneuse d’images en Visual Basic – vidéo 2](http://go.microsoft.com/fwlink/?LinkId=205211) ou [didacticiel 1 : Créer une visionneuse d’images dans C# -vidéo 2](http://go.microsoft.com/fwlink/?LinkId=205200). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.  
   
 ### <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Pour composer votre formulaire avec un contrôle TableLayoutPanel  
   
-1.  Sur le côté gauche de l’IDE Visual Studio, localisez l’onglet **Boîte à outils**. Choisissez l’onglet **Boîte à outils** et la boîte à outils s’affiche. Vous pouvez également sélectionner **Affichage**, **Boîte à outils** dans la barre de menus.  
+1. Sur le côté gauche de l’IDE Visual Studio, localisez l’onglet **Boîte à outils**. Choisissez l’onglet **Boîte à outils** et la boîte à outils s’affiche. Vous pouvez également sélectionner **Affichage**, **Boîte à outils** dans la barre de menus.  
   
-2.  Sélectionnez le petit symbole de triangle en regard du groupe **Conteneurs** pour l’ouvrir, comme indiqué dans l’image suivante.  
+2. Sélectionnez le petit symbole de triangle en regard du groupe **Conteneurs** pour l’ouvrir, comme indiqué dans l’image suivante.  
   
      ![Groupe de conteneurs](../ide/media/express-toolbox.png "Express_Toolbox")  
 Groupe de conteneurs  
   
-3.  Vous pouvez ajouter des contrôles comme des boutons, des cases à cocher et des étiquettes à votre formulaire. Double-cliquez sur le contrôle `TableLayoutPanel` dans la boîte à outils. Vous pouvez également faire glisser le contrôle de la Boîte à outils vers le formulaire. L’IDE ajoute alors un contrôle `TableLayoutPanel` à votre formulaire, comme indiqué dans l’image suivante.  
+3. Vous pouvez ajouter des contrôles comme des boutons, des cases à cocher et des étiquettes à votre formulaire. Double-cliquez sur le contrôle `TableLayoutPanel` dans la boîte à outils. Vous pouvez également faire glisser le contrôle de la Boîte à outils vers le formulaire. L’IDE ajoute alors un contrôle `TableLayoutPanel` à votre formulaire, comme indiqué dans l’image suivante.  
   
      ![Contrôle TableLayoutPanel](../ide/media/express-formtablelayout.png "Express_FormTableLayout")  
 Contrôle TableLayoutPanel  
@@ -45,26 +45,26 @@ Contrôle TableLayoutPanel
      ![Icône Punaise](../ide/media/express-pushpintoolbox.png "Express_PushpinToolbox")  
 Icône Punaise  
   
-4.  Veillez à sélectionner **TableLayoutPanel**. Vous pouvez vérifier quel contrôle est sélectionné en examinant la liste déroulante en haut de la fenêtre **Propriétés**, comme indiqué dans l’image suivante.  
+4. Veillez à sélectionner **TableLayoutPanel**. Vous pouvez vérifier quel contrôle est sélectionné en examinant la liste déroulante en haut de la fenêtre **Propriétés**, comme indiqué dans l’image suivante.  
   
      ![Fenêtre Propriétés affichant le contrôle TableLayoutPanel](../ide/media/express-controlspropwin.png "Express_ControlsPropWin")  
 Fenêtre Propriétés affichant le contrôle TableLayoutPanel  
   
-5.  Dans la barre d’outils de la fenêtre **Propriétés**, choisissez le bouton **Ordre alphabétique**. La liste des propriétés de la fenêtre **Propriétés** s’affiche alors dans l’ordre alphabétique, ce qui facilite la localisation des propriétés dans ce didacticiel.  
+5. Dans la barre d’outils de la fenêtre **Propriétés**, choisissez le bouton **Ordre alphabétique**. La liste des propriétés de la fenêtre **Propriétés** s’affiche alors dans l’ordre alphabétique, ce qui facilite la localisation des propriétés dans ce didacticiel.  
   
-6.  Le sélecteur de contrôles est une liste déroulante située en haut de la fenêtre **Propriétés**. Dans cet exemple, il indique qu’un contrôle appelé `tableLayoutPanel1` est sélectionné. Vous pouvez sélectionner des contrôles en choisissant une zone dans le Concepteur Windows Forms ou en utilisant le sélecteur de contrôles. À présent que `TableLayoutPanel` est sélectionné, recherchez la propriété **Dock** et sélectionnez **Dock**. Sa valeur doit être **Aucun**. Notez qu’une flèche de déroulement s’affiche en regard de la valeur. Cliquez sur la flèche, puis sélectionnez le bouton **Remplissage** (le grand bouton au milieu), comme indiqué dans l’image suivante.  
+6. Le sélecteur de contrôles est une liste déroulante située en haut de la fenêtre **Propriétés**. Dans cet exemple, il indique qu’un contrôle appelé `tableLayoutPanel1` est sélectionné. Vous pouvez sélectionner des contrôles en choisissant une zone dans le Concepteur Windows Forms ou en utilisant le sélecteur de contrôles. À présent que `TableLayoutPanel` est sélectionné, recherchez la propriété **Dock** et sélectionnez **Dock**. Sa valeur doit être **Aucun**. Notez qu’une flèche de déroulement s’affiche en regard de la valeur. Cliquez sur la flèche, puis sélectionnez le bouton **Remplissage** (le grand bouton au milieu), comme indiqué dans l’image suivante.  
   
      ![Fenêtre Propriétés avec Remplissage sélectionné](../ide/media/express-docktable.png "Express_DockTable")  
 Fenêtre Propriétés avec Remplissage sélectionné  
   
      Dans Visual Studio, le terme *ancrage* signifie qu’une fenêtre est attachée à une autre fenêtre ou zone dans l’IDE. Par exemple, la fenêtre Propriétés peut être désancrée, c’est-à-dire détachée et flottante dans Visual Studio, ou elle peut être ancrée dans l’**Explorateur de solutions**.  
   
-7.  Une fois que vous avez affecté la valeur **Fill** à la propriété **Dock** du TableLayoutPanel, le panneau remplit tout le formulaire. Si vous redimensionnez à nouveau le formulaire, le TableLayoutPanel reste ancré et se redimensionne automatiquement pour s'adapter aux nouvelles dimensions.  
+7. Une fois que vous avez affecté la valeur **Fill** à la propriété **Dock** du TableLayoutPanel, le panneau remplit tout le formulaire. Si vous redimensionnez à nouveau le formulaire, le TableLayoutPanel reste ancré et se redimensionne automatiquement pour s'adapter aux nouvelles dimensions.  
   
     > [!NOTE]
-    >  Un TableLayoutPanel fonctionne comme un tableau dans Microsoft Office Word : il est composé de lignes et de colonnes, et une même cellule peut s'étendre sur plusieurs lignes et colonnes. Chaque cellule ne peut contenir qu'un seul contrôle (comme un bouton, une case à cocher ou une étiquette). Votre TableLayoutPanel aura un contrôle `PictureBox` sur toute sa ligne du haut, un contrôle `CheckBox` dans sa cellule en bas à gauche, et quatre contrôles `Button` dans sa cellule en bas à droite.  
+    >  Un TableLayoutPanel fonctionne comme une table dans Microsoft Office Word : il comporte des lignes et des colonnes, et une cellule peut s’étendre sur plusieurs lignes et colonnes. Chaque cellule ne peut contenir qu'un seul contrôle (comme un bouton, une case à cocher ou une étiquette). Votre TableLayoutPanel aura un contrôle `PictureBox` sur toute sa ligne du haut, un contrôle `CheckBox` dans sa cellule en bas à gauche, et quatre contrôles `Button` dans sa cellule en bas à droite.  
   
-8.  Actuellement, le TableLayoutPanel est composé de deux lignes et colonnes de taille égale. Vous devez les redimensionner pour que la ligne du haut et la colonne de droite soient beaucoup plus grandes. Dans le Concepteur Windows Forms, sélectionnez le TableLayoutPanel. Dans l'angle supérieur droit, il y a un petit bouton en forme de triangle noir, comme celui illustré ci-dessous.  
+8. Actuellement, le TableLayoutPanel est composé de deux lignes et colonnes de taille égale. Vous devez les redimensionner pour que la ligne du haut et la colonne de droite soient beaucoup plus grandes. Dans le Concepteur Windows Forms, sélectionnez le TableLayoutPanel. Dans l'angle supérieur droit, il y a un petit bouton en forme de triangle noir, comme celui illustré ci-dessous.  
   
      ![Bouton Triangle](../ide/media/express-iconblacktriangle.gif "Express_IconBlackTriangle")  
 Bouton Triangle  
@@ -90,6 +90,6 @@ Form1 avec TableLayoutPanel redimensionné
   
 ### <a name="to-continue-or-review"></a>Pour continuer ou examiner  
   
--   Pour passer à l’étape suivante du didacticiel, consultez [Étape 5 : ajouter des contrôles à votre formulaire](../ide/step-5-add-controls-to-your-form.md).  
+- Pour passer à l’étape suivante du tutoriel, consultez [Étape 5 : Ajouter des contrôles à votre formulaire](../ide/step-5-add-controls-to-your-form.md).  
   
--   Pour revenir à l’étape précédente du didacticiel, consultez [Étape 3 : définir les propriétés de votre formulaire](../ide/step-3-set-your-form-properties.md).
+- Pour revenir à l’étape précédente du tutoriel, consultez [Étape 3 : Définir les propriétés de votre formulaire](../ide/step-3-set-your-form-properties.md).
