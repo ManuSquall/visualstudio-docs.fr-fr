@@ -10,12 +10,12 @@ ms.assetid: 6e32ed81-c604-4a32-9012-8db3bec7c846
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bd79d91dbf9705bf0faf743e66b4da40008307ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bbe6f59bdddb19b236cfba1256324a52765b78a6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953580"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103496"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Procédure : Créer des marqueurs de texte personnalisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,45 +47,45 @@ Si vous souhaitez créer un marqueur de texte personnalisé pour mettre en évid
   
 2. Créez quatre valeurs sous HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* \Text Editor\External marqueurs\\*\<MarkerGUID >*  
   
-   -   (Default)  
+   - (Default)  
   
-   -   Service  
+   - Service  
   
-   -   DisplayName  
+   - DisplayName  
   
-   -   Package  
+   - Package  
   
-   -   `Default` Cette entrée est facultative de type REG_SZ. Lorsque la valeur, la valeur de l’entrée est une chaîne contenant des informations d’identification utiles, par exemple « Custom marqueur de texte ».  
+   - `Default` Cette entrée est facultative de type REG_SZ. Lorsque la valeur, la valeur de l’entrée est une chaîne contenant des informations d’identification utiles, par exemple « Custom marqueur de texte ».  
   
-   -   `Service` est une entrée de type REG_SZ contenant la chaîne GUID du service qui fournit le marqueur de texte personnalisé par proffering <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>. Le format est {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
+   - `Service` est une entrée de type REG_SZ contenant la chaîne GUID du service qui fournit le marqueur de texte personnalisé par proffering <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>. Le format est {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
   
-   -   `DisplayName` est une entrée de type REG_SZ contenant l’ID de ressource du nom du marqueur de texte personnalisé. Le format est #YYYY.  
+   - `DisplayName` est une entrée de type REG_SZ contenant l’ID de ressource du nom du marqueur de texte personnalisé. Le format est #YYYY.  
   
-   -   `Package` entrée de type REG_SZ contenant le `GUID` du VSPackage qui fournit le service répertorié sous le Service. Le format est {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
+   - `Package` entrée de type REG_SZ contenant le `GUID` du VSPackage qui fournit le service répertorié sous le Service. Le format est {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
   
 ### <a name="to-create-a-custom-text-marker"></a>Pour créer un marqueur de texte personnalisé  
   
-1.  Implémentez l'interface <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>.  
+1. Implémentez l'interface <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>.  
   
      Votre implémentation de cette interface définit le comportement et l’apparence de votre type de marqueur personnalisé.  
   
      Cette interface est appelée lorsque  
   
-    1.  Un utilisateur démarre l’IDE pour la première fois.  
+    1. Un utilisateur démarre l’IDE pour la première fois.  
   
-    2.  Un utilisateur sélectionne le **paramètres par défaut** bouton sous le **polices et couleurs** page de propriétés dans le **environnement** dossier, situé dans le volet gauche de la  **Options** boîte de dialogue obtenu à partir de la **outils** menu de l’IDE.  
+    2. Un utilisateur sélectionne le **paramètres par défaut** bouton sous le **polices et couleurs** page de propriétés dans le **environnement** dossier, situé dans le volet gauche de la  **Options** boîte de dialogue obtenu à partir de la **outils** menu de l’IDE.  
   
-2.  Implémentez le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider.GetTextMarkerType%2A> méthode, en spécifiant ce qui `IVsPackageDefinedTextMarkerType` implémentation doit être retournée en fonction sur le type de marqueur GUID spécifié dans l’appel de méthode.  
+2. Implémentez le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider.GetTextMarkerType%2A> méthode, en spécifiant ce qui `IVsPackageDefinedTextMarkerType` implémentation doit être retournée en fonction sur le type de marqueur GUID spécifié dans l’appel de méthode.  
   
      L’environnement appelle cette fois le premier (méthode), votre type de marqueur personnalisé est créé et spécifie un GUID qui identifie le type de marqueur personnalisé.  
   
 ### <a name="to-proffer-your-marker-type-as-a-service"></a>Présentation de votre type de marqueur en tant que service  
   
-1.  Appelez le <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponentManager.QueryService%2A> méthode pour <xref:Microsoft.VisualStudio.Shell.Interop.SProfferService>.  
+1. Appelez le <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponentManager.QueryService%2A> méthode pour <xref:Microsoft.VisualStudio.Shell.Interop.SProfferService>.  
   
      Un pointeur vers <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> est retourné.  
   
-2.  Appelez le <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.ProfferService%2A> méthode, en spécifiant le GUID d’identification de votre service de type de marqueur personnalisé et un pointeur vers votre implémentation de la <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> interface. Votre <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> implémentation doit retourner un pointeur à votre implémentation de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider> interface.  
+2. Appelez le <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.ProfferService%2A> méthode, en spécifiant le GUID d’identification de votre service de type de marqueur personnalisé et un pointeur vers votre implémentation de la <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> interface. Votre <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> implémentation doit retourner un pointeur à votre implémentation de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider> interface.  
   
      Un cookie unique identifiant que votre service est retourné. Vous pouvez utiliser ultérieurement ce cookie pour révoquer votre service de type de marqueur personnalisé en appelant le <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A> méthode de la <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> interface en spécifiant cette valeur de cookie.  
   

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5c970fe4cd1bbd87f54e10be85adf37554c10675
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: ed5b0f84ea19e465a9d820d9f25c4fc19546c639
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950537"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103379"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Enregistrer des données avec les méthodes DBDirect du TableAdapter
 
@@ -29,15 +29,15 @@ Cette procédure pas à pas fournit des instructions détaillées pour l’exéc
 
 Pendant cette procédure pas à pas, vous allez apprendre à :
 
--   Créer une **application Windows Forms**.
+- Créer une **application Windows Forms**.
 
--   Créer et configurer un jeu de données avec le [Assistant de Configuration de Source de données](../data-tools/media/data-source-configuration-wizard.png).
+- Créer et configurer un jeu de données avec le [Assistant de Configuration de Source de données](../data-tools/media/data-source-configuration-wizard.png).
 
--   Sélectionner le contrôle à créer dans le formulaire lors du déplacement d’éléments depuis la fenêtre **Sources de données**. Pour plus d’informations, consultez [définir le contrôle à créer lors du déplacement de la fenêtre Sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+- Sélectionner le contrôle à créer dans le formulaire lors du déplacement d’éléments depuis la fenêtre **Sources de données**. Pour plus d’informations, consultez [définir le contrôle à créer lors du déplacement de la fenêtre Sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
--   Créer un formulaire lié aux données en faisant glisser des éléments depuis la fenêtre **Sources de données** sur le formulaire.
+- Créer un formulaire lié aux données en faisant glisser des éléments depuis la fenêtre **Sources de données** sur le formulaire.
 
--   Ajouter des méthodes pour accéder à la base de données directement et d’effectuer des insertions, mises à jour et suppressions.
+- Ajouter des méthodes pour accéder à la base de données directement et d’effectuer des insertions, mises à jour et suppressions.
 
 ## <a name="prerequisites"></a>Prérequis
 
@@ -63,7 +63,7 @@ La première étape consiste à créer un **Windows Forms Application**.
 
 1. Dans Visual Studio, sur le **fichier** menu, sélectionnez **New** > **projet**.
 
-2. Développez le **Visual C#**  ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
+2. Développez le **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
 
 3. Dans le volet central, sélectionnez le **Windows Forms application** type de projet.
 
@@ -73,7 +73,7 @@ La première étape consiste à créer un **Windows Forms Application**.
 
 ## <a name="create-a-data-source-from-your-database"></a>Créer une source de données à partir de votre base de données
 
-Cette étape utilise l’**Assistant Configuration de source de données** pour créer une source de données basée sur la table `Region` de l’exemple de base de données Northwind. Vous devez avoir accès à l'exemple de base de données Northwind pour créer la connexion. Pour plus d’informations sur la configuration de la base de données Northwind, consultez [Comment : installer les bases de données exemple](../data-tools/installing-database-systems-tools-and-samples.md).
+Cette étape utilise l’**Assistant Configuration de source de données** pour créer une source de données basée sur la table `Region` de l’exemple de base de données Northwind. Vous devez avoir accès à l'exemple de base de données Northwind pour créer la connexion. Pour plus d’informations sur la configuration de la base de données Northwind, consultez [Comment : Installer les bases de données exemple](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ### <a name="to-create-the-data-source"></a>Pour créer la source de données
 
@@ -87,11 +87,11 @@ Cette étape utilise l’**Assistant Configuration de source de données** pour 
 
 4. Sur le **choisir votre connexion de données** , effectuez une des opérations suivantes :
 
-    -   Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.
+    - Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.
 
          - ou -
 
-    -   Sélectionnez **Nouvelle connexion** pour afficher la boîte de dialogue **Ajouter/Modifier la connexion**.
+    - Sélectionnez **Nouvelle connexion** pour afficher la boîte de dialogue **Ajouter/Modifier la connexion**.
 
 5. Si votre base de données requiert un mot de passe, sélectionnez l’option pour inclure les données sensibles, puis sélectionnez **suivant**.
 
@@ -117,7 +117,7 @@ Un contrôle <xref:System.Windows.Forms.DataGridView> et une barre d'outils (<xr
 
 2. Définissez les propriétés **Name** et **Text** suivantes sur chaque bouton.
 
-    |Name|Texte|
+    |Nom|Texte|
     |----------|----------|
     |`InsertButton`|**Insert**|
     |`UpdateButton`|**Mettre à jour**|
@@ -152,21 +152,21 @@ Un contrôle <xref:System.Windows.Forms.DataGridView> et une barre d'outils (<xr
 
 ## <a name="run-the-application"></a>Exécuter l'application
 
--   Sélectionnez **F5** pour exécuter l’application.
+- Sélectionnez **F5** pour exécuter l’application.
 
--   Sélectionnez le **insérer** bouton et vérifiez que le nouvel enregistrement apparaît dans la grille.
+- Sélectionnez le **insérer** bouton et vérifiez que le nouvel enregistrement apparaît dans la grille.
 
--   Sélectionnez le **mise à jour** bouton, puis vérifiez que l’enregistrement est mis à jour dans la grille.
+- Sélectionnez le **mise à jour** bouton, puis vérifiez que l’enregistrement est mis à jour dans la grille.
 
--   Sélectionnez le **supprimer** bouton et vérifiez que l’enregistrement est supprimé de la grille.
+- Sélectionnez le **supprimer** bouton et vérifiez que l’enregistrement est supprimé de la grille.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 Selon les exigences de votre application, il existe plusieurs étapes, que vous souhaiterez peut-être effectuer après la création d’un formulaire lié aux données. Vous pouvez apporter à cette procédure pas à pas les améliorations suivantes :
 
--   Ajout d'une fonctionnalité de recherche au formulaire.
+- Ajout d'une fonctionnalité de recherche au formulaire.
 
--   Ajout de tables supplémentaires au dataset en sélectionnant **Configurer le DataSet à l’aide de l’Assistant** dans la fenêtre **Sources de données**. Vous pouvez ajouter des contrôles pour afficher les données associées en faisant glisser les nœuds associés vers le formulaire. Pour plus d’informations, consultez [relations dans les Datasets](relationships-in-datasets.md).
+- Ajout de tables supplémentaires au dataset en sélectionnant **Configurer le DataSet à l’aide de l’Assistant** dans la fenêtre **Sources de données**. Vous pouvez ajouter des contrôles pour afficher les données associées en faisant glisser les nœuds associés vers le formulaire. Pour plus d’informations, consultez [relations dans les Datasets](relationships-in-datasets.md).
 
 ## <a name="see-also"></a>Voir aussi
 

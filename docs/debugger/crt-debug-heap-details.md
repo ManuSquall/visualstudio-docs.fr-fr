@@ -73,12 +73,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45562119158faad0d596b74faecd786668abf8dd
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: MTE95
+ms.openlocfilehash: f55bd71b2174a03fb44b4512f04997e48d636d12
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227746"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103275"
 ---
 # <a name="crt-debug-heap-details"></a>Détails du tas de débogage CRT
 Cette rubrique présente en détail le tas de débogage CRT.
@@ -147,7 +147,7 @@ Chaque bloc de mémoire dans le tas de débogage est assigné à l'un des cinq t
 
 `_CRT_BLOCK`Les blocs de mémoire alloués en interne par de nombreuses fonctions de la bibliothèque runtime sont marqués en tant que blocs CRT pour pouvoir être traités séparément. En conséquence, ils n'influent pas forcément sur la détection des fuites et les autres opérations. Une allocation ne doit jamais allouer, réallouer ou libérer un bloc de type CRT.
 
-`_CLIENT_BLOCK`Pour les besoins du débogage, une application peut effectuer un suivi spécial d'un groupe donné d'allocations en leur associant ce type de bloc de mémoire, avec des appels explicites aux fonctions du tas de débogage. Par exemple, MFC alloue tous les **CObjects** en tant que blocs Client ; les autres applications peuvent conserver différents objets mémoire dans des blocs Client. Il est également possible de spécifier des sous-types de bloc Client afin d'augmenter la granularité du suivi. Pour spécifier des sous-types de bloc Client, décalez le nombre de gauche de 16 bits et faites une réunion logique (`OR`) avec `_CLIENT_BLOCK`. Par exemple :
+`_CLIENT_BLOCK`Pour les besoins du débogage, une application peut effectuer un suivi spécial d'un groupe donné d'allocations en leur associant ce type de bloc de mémoire, avec des appels explicites aux fonctions du tas de débogage. Par exemple, MFC alloue tous les **CObjects** en tant que blocs Client ; les autres applications peuvent conserver différents objets mémoire dans des blocs Client. Il est également possible de spécifier des sous-types de bloc Client afin d'augmenter la granularité du suivi. Pour spécifier des sous-types de bloc Client, décalez le nombre de gauche de 16 bits et faites une réunion logique (`OR`) avec `_CLIENT_BLOCK`. Exemple :
 
 ```cpp
 #define MYSUBTYPE 4
@@ -170,7 +170,7 @@ Pour déterminer le type et le sous-type d’un bloc donné, utilisez la fonctio
 ![Retour au début](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)
 
 ## <a name="BKMK_Check_for_heap_integrity_and_memory_leaks"></a> Contrôler l’intégrité et les fuites de mémoire de tas
-L’accès à de nombreuses fonctionnalités du tas de débogage doit s’effectuer à partir de votre code. La section suivante décrit certaines fonctionnalités et la façon de les utiliser.
+L'accès à de nombreuses fonctionnalités du tas de débogage doit s'effectuer à partir de votre code. La section suivante décrit certaines fonctionnalités et la façon de les utiliser.
 
 `_CrtCheckMemory` Vous pouvez utiliser un appel à [_CrtCheckMemory](/cpp/c-runtime-library/reference/crtcheckmemory), par exemple pour vérifier l’intégrité du tas à un point quelconque. Cette fonction inspecte chaque bloc de mémoire dans le tas, vérifie que les informations d'en-tête du bloc de mémoire sont valides et confirme que les mémoires tampons n'ont pas été modifiées.
 
@@ -201,7 +201,7 @@ Tous les appels aux fonctions du tas, telles que `malloc`, `free`, `calloc`, `re
 
 2. Activez les bits par `OR`- ing (au niveau du bit &#124; symbole) la variable temporaire avec les masques de bits correspondants (représentés dans le code d’application par des constantes manifestes).
 
-3. Désactivez les autres bits en faisant une intersection logique `AND` (opérateur de bits de symbole &) entre la variable et un `NOT` (symbole ~ au niveau du bit) des masques de bits appropriés.
+3. Désactivez les autres bits par `AND`- ing (au niveau du bit & symbole) la variable avec un `NOT` (au niveau du bit ~ symbole) des masques de bits appropriés.
 
 4. Appelez `_CrtSetDbgFlag` alors que le paramètre `newFlag` a la valeur stockée dans la variable temporaire afin de créer l'état de `_crtDbgFlag`.
 
@@ -261,7 +261,7 @@ La version Debug de l’opérateur `delete` fonctionne avec tous les types de bl
 
 ![Retour au début](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)
 
-##  <a name="BKMK_Heap_State_Reporting_Functions"></a> Fonctions de création de rapports sur l’état du tas
+## <a name="BKMK_Heap_State_Reporting_Functions"></a> Fonctions de création de rapports sur l’état du tas
  **_CrtMemState**
 
  Pour capturer un instantané récapitulatif de l'état du tas à un moment donné, utilisez la structure _CrtMemState définie dans CRTDBG.H :
@@ -299,7 +299,7 @@ Les fonctions suivantes reportent l'état et le contenu du tas, et utilisent les
 ![Retour au début](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)
 
 ## <a name="BKMK_Track_Heap_Allocation_Requests"></a> Suivre les demandes d’allocation du tas
-La localisation du nom du fichier source et du numéro de ligne où une macro d'assertion ou de création de rapports est exécutée facilite souvent l'identification de la cause d'un problème. Dans le cas des fonctions d'allocation du tas, cela est moins sûr. Alors que les macros peuvent être insérées en de nombreux points appropriés dans l’arborescence logique d’une application, une allocation est souvent enfouie dans une routine spéciale appelée à partir de nombreux emplacements distincts et à différentes heures. En général, la question n'est pas de savoir quelle ligne de code a effectué une mauvaise allocation, mais plutôt quelle est, parmi les milliers d'allocations effectuées par cette ligne de code, celle qui était incorrecte, et pour quelle raison elle l'était.
+La localisation du nom du fichier source et du numéro de ligne où une macro d'assertion ou de création de rapports est exécutée facilite souvent l'identification de la cause d'un problème. Dans le cas des fonctions d'allocation du tas, cela est moins sûr. Alors que les macros peuvent être insérées en de nombreux points appropriés dans l'arborescence logique d'une application, une allocation est souvent enfouie dans une routine spéciale appelée à partir de nombreux emplacements distincts et à différentes heures. En général, la question n'est pas de savoir quelle ligne de code a effectué une mauvaise allocation, mais plutôt quelle est, parmi les milliers d'allocations effectuées par cette ligne de code, celle qui était incorrecte, et pour quelle raison elle l'était.
 
 **Numéros de demande d’allocation uniques et _crtBreakAlloc**
 

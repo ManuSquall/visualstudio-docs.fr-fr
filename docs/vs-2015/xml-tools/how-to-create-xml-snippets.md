@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b64c94d26dcb197246f78b721fd087d5dbf1e0dc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: c6e6ec0cb8affbb820886f2bca163aae00d8536f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660357"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101373"
 ---
 # <a name="how-to-create-xml-snippets"></a>Procédure : création d'extraits XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,23 +24,23 @@ Vous pouvez utiliser l'éditeur XML pour créer de nouveaux extraits XML. Cet é
 ## <a name="to-create-a-new-xml-snippet"></a>Pour créer un nouvel extrait XML  
  Pour créer un nouveau code XML extrait de créer un nouveau fichier XML et utiliser le **insérer un extrait** fonctionnalité.  
   
-1.  Sur le **fichier** menu, cliquez sur **New** puis cliquez sur **fichier**.  
+1. Sur le **fichier** menu, cliquez sur **New** puis cliquez sur **fichier**.  
   
-2.  Cliquez sur **fichier XML** puis cliquez sur **Open**.  
+2. Cliquez sur **fichier XML** puis cliquez sur **Open**.  
   
-3.  Avec le bouton droit dans le volet de l’éditeur et sélectionnez **insérer un extrait**.  
+3. Avec le bouton droit dans le volet de l’éditeur et sélectionnez **insérer un extrait**.  
   
-4.  Sélectionnez **extrait** à partir de la liste et appuyez sur ENTRÉE.  
+4. Sélectionnez **extrait** à partir de la liste et appuyez sur ENTRÉE.  
   
-5.  Apportez les modifications voulues au nouvel extrait.  
+5. Apportez les modifications voulues au nouvel extrait.  
   
-6.  À partir de la **fichier** menu, sélectionnez **Enregistrer XMLFile.xml**.  
+6. À partir de la **fichier** menu, sélectionnez **Enregistrer XMLFile.xml**.  
   
      Le **enregistrer le fichier sous** boîte de dialogue s’affiche.  
   
-7.  Entrez le nom du nouvel extrait et sélectionnez **extrait les fichiers** à partir de la **enregistrer en tant que type** fenêtre déroulante.  
+7. Entrez le nom du nouvel extrait et sélectionnez **extrait les fichiers** à partir de la **enregistrer en tant que type** fenêtre déroulante.  
   
-8.  Utilisez le **enregistrer dans** liste déroulante pour modifier l’emplacement du fichier au dossier Mes Documents\Visual Studio 2005\Code Snippets\XML\My XML Snippets, puis appuyez sur **enregistrer**.  
+8. Utilisez le **enregistrer dans** liste déroulante pour modifier l’emplacement du fichier au dossier Mes Documents\Visual Studio 2005\Code Snippets\XML\My XML Snippets, puis appuyez sur **enregistrer**.  
   
 ## <a name="snippet-description"></a>Description des extraits  
  Cette section décrit certains éléments clés de l'extrait souvent utilisé. Pour plus d’informations sur les éléments de schéma utilisés par les extraits de code XML, consultez [référence de schéma des extraits de Code](../ide/code-snippets-schema-reference.md).  

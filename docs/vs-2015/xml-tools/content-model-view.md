@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e3834e22f67001e38096032037f33c5d184a5330
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: f85169ebb6460ac42031aec7c75ff2e29154a9ed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668897"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109120"
 ---
 # <a name="content-model-view"></a>Vue de modèle de contenu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,13 +91,13 @@ La vue de modèle de contenu fournit une représentation graphique des nœuds de
 ## <a name="undoredo"></a>Annuler/Rétablir  
  La fonction d'annulation/de rétablissement est activée dans la vue de modèle de contenu pour les actions suivantes :  
   
--   Ajout d'un nœud unique par glisser-déplacer.  
+- Ajout d'un nœud unique par glisser-déplacer.  
   
--   Ajout de plusieurs nœuds de la fenêtre des résultats de recherche dans l'Explorateur de schémas.  
+- Ajout de plusieurs nœuds de la fenêtre des résultats de recherche dans l'Explorateur de schémas.  
   
--   Ajout de nœuds à partir de la vue de départ.  
+- Ajout de nœuds à partir de la vue de départ.  
   
--   Suppression d'un ou plusieurs nœuds.  
+- Suppression d'un ou plusieurs nœuds.  
   
 ## <a name="zoom"></a>Zoom  
  Le zoom est disponible dans le coin inférieur droit de la vue de modèle de contenu.  

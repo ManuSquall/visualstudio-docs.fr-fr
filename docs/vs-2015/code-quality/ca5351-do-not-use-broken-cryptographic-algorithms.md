@@ -8,12 +8,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0b8129b4ff946658c5e1b4f24c57ca77cb50e14a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71f92543b73eddb26f82e787f5c81f53d3aeddb8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951777"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102664"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 N’utilisez pas les algorithmes de chiffrement cassés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,9 +47,9 @@ ms.locfileid: "58951777"
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations  
  Utilisez des options de chiffrement plus fortes :  
   
--   Pour MD5, utilisez des hachages de la famille [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) (par exemple <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).  
+- Pour MD5, utilisez des hachages de la famille [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) (par exemple <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).  
   
--   Pour DES et RC2, utilisez le chiffrement <xref:System.Security.Cryptography.Aes> .  
+- Pour DES et RC2, utilisez le chiffrement <xref:System.Security.Cryptography.Aes> .  
   
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
  Ne supprimez aucun avertissement de cette règle, sauf s’il a été examiné par un expert en chiffrement.  

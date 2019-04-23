@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 64c7bc0f5b9aa9b23aa940583cebcd3e202e6487
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 9c691eea7417e882ee3b73e9f2adc538714b486a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653643"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094659"
 ---
 # <a name="xml-editor-intellisense-features"></a>Fonctionnalités IntelliSense de l'Éditeur XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,19 +85,19 @@ L’Éditeur XML offre des fonctionnalités IntelliSense complètes comparables 
   
  L'éditeur XML offre cette fonctionnalité pour les éléments suivants :  
   
--   Les étiquettes de début et de fin qui se correspondent.  
+- Les étiquettes de début et de fin qui se correspondent.  
   
--   Toute paire de «\<» ou « > » crochets pointus.  
+- Toute paire de «\<» ou « > » crochets pointus.  
   
--   Le début et la fin de commentaires  
+- Le début et la fin de commentaires  
   
--   Le début et la fin d'instructions de traitement  
+- Le début et la fin d'instructions de traitement  
   
--   Le début et la fin de blocs CDATA  
+- Le début et la fin de blocs CDATA  
   
--   Le début et la fin de déclarations DTD  
+- Le début et la fin de déclarations DTD  
   
--   Les guillemets ouvrants et fermants des attributs  
+- Les guillemets ouvrants et fermants des attributs  
   
 ## <a name="modifying-the-intellisense-options"></a>Modification des options IntelliSense  
  Les fonctions IntelliSense et de saisie semi-automatique sont activées par défaut. Vous pouvez toutefois modifier cette sélection par défaut en changeant les paramètres dans Outils\Options.  
@@ -112,11 +112,11 @@ L’Éditeur XML offre des fonctionnalités IntelliSense complètes comparables 
   
 #### <a name="to-change-the-auto-completion-behavior"></a>Pour modifier le comportement de la saisie semi-automatique  
   
-1.  Sélectionnez **Options** dans le menu **Outils**.  
+1. Sélectionnez **Options** dans le menu **Outils**.  
   
-2.  Développez **éditeur de texte**, développez **XML**, puis sélectionnez **divers**.  
+2. Développez **éditeur de texte**, développez **XML**, puis sélectionnez **divers**.  
   
-3.  Apporter des modifications à la **insertion automatique** section et cliquez sur **OK**.  
+3. Apporter des modifications à la **insertion automatique** section et cliquez sur **OK**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Éditeur XML](../xml-tools/xml-editor.md)   

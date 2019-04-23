@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d443057578c781ef94a4a7c3579765d181bb9849
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: fab67780f113c2348fa30e80c4174d1f26f130f6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665439"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109048"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>Considérations de sécurité lors de l'utilisation de données XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,22 +24,22 @@ Cette rubrique présente les problèmes de sécurité à prendre en compte lors 
 ## <a name="xml-editor"></a>Éditeur XML  
  L'éditeur XML est basé sur l'éditeur de texte Visual Studio. Il repose sur les classes <xref:System.Xml> et <xref:System.Xml.Xsl> pour traiter la plupart des processus XML.  
   
--   Les transformations XSLT s'exécutent dans un nouveau domaine d'application. Les transformations XSLT sont *sandbox*; autrement dit, la stratégie de sécurité des accès de code de votre ordinateur est utilisée pour déterminer les autorisations limitées selon où se trouve la feuille de style XSLT. Par exemple, les feuilles de style provenant d'un emplacement Internet ont les autorisations les plus limitées, tandis que les feuilles de style copiées vers votre disque dur s'exécutent en Confiance totale.  
+- Les transformations XSLT s'exécutent dans un nouveau domaine d'application. Les transformations XSLT sont *sandbox*; autrement dit, la stratégie de sécurité des accès de code de votre ordinateur est utilisée pour déterminer les autorisations limitées selon où se trouve la feuille de style XSLT. Par exemple, les feuilles de style provenant d'un emplacement Internet ont les autorisations les plus limitées, tandis que les feuilles de style copiées vers votre disque dur s'exécutent en Confiance totale.  
   
--   La classe <xref:System.Xml.Xsl.XslCompiledTransform> permet de compiler le XSLT en un langage intermédiaire Microsoft afin d'accélérer l'exécution.  
+- La classe <xref:System.Xml.Xsl.XslCompiledTransform> permet de compiler le XSLT en un langage intermédiaire Microsoft afin d'accélérer l'exécution.  
   
--   Les schémas qui pointent vers un emplacement externe dans le fichier catalogue sont automatiquement téléchargés lors du chargement initial de l'éditeur XML. La classe <xref:System.Xml.Schema.XmlSchemaSet> permet de compiler les schémas. Le fichier catalogue fourni avec l'éditeur XML n'offre aucun lien vers des schémas externes. L'utilisateur doit ajouter explicitement une référence au schéma externe avant que l'éditeur XML télécharge le fichier de schéma. Téléchargement HTTP peut être désactivé via le **divers outils Options** page de l’éditeur XML.  
+- Les schémas qui pointent vers un emplacement externe dans le fichier catalogue sont automatiquement téléchargés lors du chargement initial de l'éditeur XML. La classe <xref:System.Xml.Schema.XmlSchemaSet> permet de compiler les schémas. Le fichier catalogue fourni avec l'éditeur XML n'offre aucun lien vers des schémas externes. L'utilisateur doit ajouter explicitement une référence au schéma externe avant que l'éditeur XML télécharge le fichier de schéma. Téléchargement HTTP peut être désactivé via le **divers outils Options** page de l’éditeur XML.  
   
--   L'éditeur XML utilise les classes <xref:System.Net> pour télécharger les schémas  
+- L'éditeur XML utilise les classes <xref:System.Net> pour télécharger les schémas  
   
 ## <a name="xslt-debugger"></a>Débogueur XSLT  
  Le débogueur XSLT utilise le moteur de débogage managé Visual Studio et les classes des espaces de noms <xref:System.Xml> et <xref:System.Xml.Xsl>.  
   
--   Le débogueur XSLT exécute chaque transformation XSLT dans un domaine d'application en sandbox. La stratégie de sécurité d'accès au code de votre ordinateur permet de déterminer les autorisations limitées selon l'emplacement de la feuille de style XSLT. Par exemple, les feuilles de style provenant d'un emplacement Internet ont les autorisations les plus limitées, tandis que les feuilles de style copiées vers votre disque dur s'exécutent en Confiance totale.  
+- Le débogueur XSLT exécute chaque transformation XSLT dans un domaine d'application en sandbox. La stratégie de sécurité d'accès au code de votre ordinateur permet de déterminer les autorisations limitées selon l'emplacement de la feuille de style XSLT. Par exemple, les feuilles de style provenant d'un emplacement Internet ont les autorisations les plus limitées, tandis que les feuilles de style copiées vers votre disque dur s'exécutent en Confiance totale.  
   
--   La feuille de style XSLT est compilée à l'aide de la classe <xref:System.Xml.Xsl.XslCompiledTransform>.  
+- La feuille de style XSLT est compilée à l'aide de la classe <xref:System.Xml.Xsl.XslCompiledTransform>.  
   
--   L'évaluateur d'expression XSLT est chargé par le moteur de débogage managé. Ce dernier présume que tout le code est exécuté depuis l'ordinateur local de l'utilisateur. De même, la classe <xref:System.Xml.Xsl.XslCompiledTransform> télécharge le fichier XSLT sur l'ordinateur local de l'utilisateur. La possibilité d'élévation du privilège d'exécution est atténuée par le fait que toutes les transformations XSLT sont exécutées dans un nouveau domaine d'application dont les autorisations sont limitées.  
+- L'évaluateur d'expression XSLT est chargé par le moteur de débogage managé. Ce dernier présume que tout le code est exécuté depuis l'ordinateur local de l'utilisateur. De même, la classe <xref:System.Xml.Xsl.XslCompiledTransform> télécharge le fichier XSLT sur l'ordinateur local de l'utilisateur. La possibilité d'élévation du privilège d'exécution est atténuée par le fait que toutes les transformations XSLT sont exécutées dans un nouveau domaine d'application dont les autorisations sont limitées.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Domaines d’application](http://msdn.microsoft.com/39e57d07-a740-4cd4-ae82-e119ea3856c1)

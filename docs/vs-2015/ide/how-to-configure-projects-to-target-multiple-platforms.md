@@ -12,14 +12,14 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e67d4a5df03f128285de45473c933761d6c7eb04
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7457b5be3a6c1cbf2c2b6a1c6f66f9fb89e8d225
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785824"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100298"
 ---
-# <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Comment : configurer des projets pour plusieurs plateformes cibles
+# <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Procédure : Configurer des projets pour plusieurs plateformes cibles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] permet à une solution de cibler en même temps plusieurs architectures, ou plateformes, de processeur différentes. Les propriétés permettant de les définir sont accessibles à l’aide de la boîte de dialogue **Gestionnaire de configurations**.  
@@ -29,31 +29,31 @@ ms.locfileid: "54785824"
   
 #### <a name="to-set-your-configuration-to-target-a-different-platform"></a>Pour définir votre configuration afin de cibler une plateforme différente  
   
-1.  Dans le menu **Générer**, cliquez sur **Gestionnaire de configuration**.  
+1. Dans le menu **Générer**, cliquez sur **Gestionnaire de configuration**.  
   
-2.  Dans la **zone Plateforme de la solution active**, sélectionnez la plateforme que votre solution doit cibler, ou sélectionnez **\<Nouveau>** pour créer une nouvelle plateforme. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] compile votre application de façon à cibler la plateforme qui est définie comme plateforme active dans la boîte de dialogue **Gestionnaire de configurations**.  
+2. Dans la **zone Plateforme de la solution active**, sélectionnez la plateforme que votre solution doit cibler, ou sélectionnez **\<Nouveau>** pour créer une nouvelle plateforme. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] compile votre application de façon à cibler la plateforme qui est définie comme plateforme active dans la boîte de dialogue **Gestionnaire de configurations**.  
   
 ## <a name="removing-a-platform"></a>Suppression d’une plateforme  
  Si vous constatez que vous n’avez pas besoin d’une plateforme, vous pouvez la supprimer à l’aide de la boîte de dialogue Gestionnaire de configurations. Cela supprime tous les paramètres de solution et de projet que vous avez configurés pour cette combinaison de configuration et de cible.  
   
 #### <a name="to-remove-a-platform"></a>Pour supprimer une plateforme  
   
-1.  Dans le menu **Générer**, cliquez sur **Gestionnaire de configuration**.  
+1. Dans le menu **Générer**, cliquez sur **Gestionnaire de configuration**.  
   
-2.  Dans la **zone Plateforme de la solution active**, sélectionnez **\<Modifier>**. La boîte de dialogue **Modifier les plateformes de solution** s’affiche.  
+2. Dans la **zone Plateforme de la solution active**, sélectionnez **\<Modifier>**. La boîte de dialogue **Modifier les plateformes de solution** s’affiche.  
   
-3.  Cliquez sur la plateforme à supprimer, puis sur **Supprimer**.  
+3. Cliquez sur la plateforme à supprimer, puis sur **Supprimer**.  
   
 ## <a name="targeting-multiple-platforms-with-one-solution"></a>Ciblage de plusieurs plateformes avec une seule solution  
  Étant donné que vous pouvez changer les paramètres en fonction de la combinaison de paramètres de configuration et de plateforme, vous pouvez configurer une solution capable de cibler plusieurs plateformes.  
   
 #### <a name="to-target-multiple-platforms"></a>Pour cibler plusieurs plateformes  
   
-1.  Utilisez le **Gestionnaire de configurations** pour ajouter au moins deux plateformes pour la solution.  
+1. Utilisez le **Gestionnaire de configurations** pour ajouter au moins deux plateformes pour la solution.  
   
-2.  Sélectionnez la plateforme que vous voulez cibler dans la liste **Plateforme de la solution active**.  
+2. Sélectionnez la plateforme que vous voulez cibler dans la liste **Plateforme de la solution active**.  
   
-3.  Générez la solution.  
+3. Générez la solution.  
   
 #### <a name="to-build-multiple-solution-configurations-at-once"></a>Pour générer plusieurs configurations de solution à la fois  
   
@@ -64,6 +64,6 @@ ms.locfileid: "54785824"
    Il est possible d’avoir une plateforme au niveau de la solution définie, par exemple, sur [!INCLUDE[vcprx64](../includes/vcprx64-md.md)], et de n’avoir, dans cette solution, aucun projet ciblant cette même plateforme. Il est également possible d’avoir plusieurs projets dans votre solution, chacun ciblant une plateforme différente. Si vous êtes dans l’une ou l’autre de ces situations, il est recommandé de créer une nouvelle configuration portant un nom descriptif afin d’éviter toute confusion.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour créer et modifier des configurations](../ide/how-to-create-and-edit-configurations.md)   
+ [Guide pratique pour Créer et modifier des Configurations](../ide/how-to-create-and-edit-configurations.md)   
  [Présentation des configurations de build](../ide/understanding-build-configurations.md)   
  [Génération et nettoyage de solutions et de projets dans Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)

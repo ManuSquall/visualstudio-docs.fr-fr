@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 68ad2e66a4cecff01005f49aa6304a515a010170
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: e6ad8a11e736595912b1b6c8757bd75dca1e53e6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355576"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097425"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>Procédure pas à pas : Concevoir une zone de formulaire Outlook
   Les zones de formulaire personnalisées étendent les formulaires Microsoft Office Outlook standard et personnalisés. Dans cette procédure pas à pas, vous allez concevoir une zone de formulaire personnalisée qui s'affiche comme une nouvelle page dans la fenêtre Inspecteur d'un élément de contact. Cette zone de formulaire affiche une carte de toutes les adresses répertoriées pour le contact, en envoyant les informations d’adresse au site web Windows Live Local Search. Pour plus d’informations sur les zones de formulaire, consultez [zones de formulaire Outlook créer](../vsto/creating-outlook-form-regions.md).
@@ -26,15 +26,15 @@ ms.locfileid: "58355576"
 
  Cette procédure pas à pas décrit les tâches suivantes :
 
--   Création d’un projet de complément VSTO Outlook.
+- Création d’un projet de complément VSTO Outlook.
 
--   Ajout d’une zone de formulaire au projet de complément VSTO
+- Ajout d’une zone de formulaire au projet de complément VSTO
 
--   Conception de la disposition de la zone de formulaire
+- Conception de la disposition de la zone de formulaire
 
--   Personnalisation du comportement de la zone de formulaire
+- Personnalisation du comportement de la zone de formulaire
 
--   Test de la zone de formulaire Outlook
+- Test de la zone de formulaire Outlook
 
 > [!NOTE]
 >  Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
@@ -53,11 +53,11 @@ ms.locfileid: "58355576"
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>Pour créer un projet de complément VSTO Outlook
 
-1.  Dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], créer un projet de complément Outlook VSTO portant le nom **MapItAddIn**.
+1. Dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], créer un projet de complément Outlook VSTO portant le nom **MapItAddIn**.
 
-2.  Dans la boîte de dialogue **Nouveau projet** , sélectionnez **Créer le répertoire pour la solution**.
+2. Dans la boîte de dialogue **Nouveau projet** , sélectionnez **Créer le répertoire pour la solution**.
 
-3.  Enregistrez le projet dans un répertoire quelconque.
+3. Enregistrez le projet dans un répertoire quelconque.
 
      Pour plus d'informations, voir [Procédure : Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -66,27 +66,27 @@ ms.locfileid: "58355576"
 
 ### <a name="to-add-a-form-region-to-the-outlook-vsto-add-in-project"></a>Pour ajouter une zone de formulaire au projet de complément VSTO Outlook
 
-1.  Dans **l’Explorateur de solutions**, sélectionnez le **MapItAddIn** projet.
+1. Dans **l’Explorateur de solutions**, sélectionnez le **MapItAddIn** projet.
 
-2.  Dans le menu **Projet** , cliquez sur **Ajouter un nouvel élément**.
+2. Dans le menu **Projet** , cliquez sur **Ajouter un nouvel élément**.
 
-3.  Dans le **ajouter un nouvel élément** boîte de dialogue, sélectionnez **zone de formulaire Outlook**, nommez le fichier **MapIt**, puis cliquez sur **ajouter**.
+3. Dans le **ajouter un nouvel élément** boîte de dialogue, sélectionnez **zone de formulaire Outlook**, nommez le fichier **MapIt**, puis cliquez sur **ajouter**.
 
      Le **zone de formulaire NewOutlook** Assistant démarre.
 
-4.  Sur le **Choisissez comment vous souhaitez créer la zone de formulaire** , cliquez sur **concevoir une zone de formulaire**, puis cliquez sur **suivant**.
+4. Sur le **Choisissez comment vous souhaitez créer la zone de formulaire** , cliquez sur **concevoir une zone de formulaire**, puis cliquez sur **suivant**.
 
-5.  Sur le **sélectionner le type de zone de formulaire que vous souhaitez créer** , cliquez sur **distinct**, puis cliquez sur **suivant**.
+5. Sur le **sélectionner le type de zone de formulaire que vous souhaitez créer** , cliquez sur **distinct**, puis cliquez sur **suivant**.
 
      Un *distinct* zone de formulaire ajoute une nouvelle page à un formulaire Outlook. Pour plus d’informations sur les types de zones de formulaire, consultez [zones de formulaire Outlook créer](../vsto/creating-outlook-form-regions.md).
 
-6.  Sur le **fournissez un texte descriptif et sélectionnez vos préférences d’affichage** , tapez **carte** dans le **nom** boîte.
+6. Sur le **fournissez un texte descriptif et sélectionnez vos préférences d’affichage** , tapez **carte** dans le **nom** boîte.
 
      Ce nom apparaît sur le ruban de la fenêtre Inspecteur lorsque l'élément de contact est ouvert.
 
-7.  Sélectionnez **inspecteurs qui sont en mode de composition** et **inspecteurs qui sont en mode lecture**, puis cliquez sur **suivant**.
+7. Sélectionnez **inspecteurs qui sont en mode de composition** et **inspecteurs qui sont en mode lecture**, puis cliquez sur **suivant**.
 
-8.  Sur le **Identifiez les classes de message qui afficheront cette zone de formulaire** page, désactivez **Message électronique**, sélectionnez **Contact**, puis cliquez sur **Terminer**.
+8. Sur le **Identifiez les classes de message qui afficheront cette zone de formulaire** page, désactivez **Message électronique**, sélectionnez **Contact**, puis cliquez sur **Terminer**.
 
      Un *MapIt.cs* ou *MapIt.vb* fichier est ajouté à votre projet.
 
@@ -95,17 +95,17 @@ ms.locfileid: "58355576"
 
 ### <a name="to-design-the-layout-of-the-form-region"></a>Pour concevoir la disposition de la zone de formulaire
 
-1.  Dans **l’Explorateur de solutions**, développez le **MapItAddIn** de projet, puis double-cliquez sur *MapIt.cs* ou *MapIt.vb* pour ouvrir la zone de formulaire Concepteur.
+1. Dans **l’Explorateur de solutions**, développez le **MapItAddIn** de projet, puis double-cliquez sur *MapIt.cs* ou *MapIt.vb* pour ouvrir la zone de formulaire Concepteur.
 
-2.  Cliquez sur le concepteur, puis cliquez sur **propriétés**.
+2. Cliquez sur le concepteur, puis cliquez sur **propriétés**.
 
-3.  Dans le **propriétés** fenêtre, définissez **taille** à **664, 469**.
+3. Dans le **propriétés** fenêtre, définissez **taille** à **664, 469**.
 
      Cela garantit que la zone de formulaire sera suffisamment grande pour afficher une carte.
 
-4.  Dans le menu **Affichage** , cliquez sur **Boîte à outils**.
+4. Dans le menu **Affichage** , cliquez sur **Boîte à outils**.
 
-5.  À partir de la **contrôles communs** onglet de la **boîte à outils**, ajoutez un **WebBrowser** vers la zone de formulaire.
+5. À partir de la **contrôles communs** onglet de la **boîte à outils**, ajoutez un **WebBrowser** vers la zone de formulaire.
 
      Le **WebBrowser** affiche une carte de toutes les adresses répertoriées pour le contact.
 
@@ -143,13 +143,13 @@ ms.locfileid: "58355576"
 
 ### <a name="to-test-the-map-it-form-region"></a>Pour tester la zone de formulaire Carte
 
-1.  Appuyez sur **F5** pour exécuter le projet.
+1. Appuyez sur **F5** pour exécuter le projet.
 
      Outlook s'ouvre.
 
-2.  Dans Outlook, sur le **accueil** , cliquez sur **nouveaux éléments**, puis cliquez sur **Contact**.
+2. Dans Outlook, sur le **accueil** , cliquez sur **nouveaux éléments**, puis cliquez sur **Contact**.
 
-3.  Dans le formulaire de contact, tapez **Ann Beebe** comme contact de nommer et spécifiez les trois adresses suivantes.
+3. Dans le formulaire de contact, tapez **Ann Beebe** comme contact de nommer et spécifiez les trois adresses suivantes.
 
     |Type d'adresse|Adresse|
     |------------------|-------------|
@@ -157,20 +157,20 @@ ms.locfileid: "58355576"
     |**Accueil**|**1234 Nord St. Buffalo, New York**|
     |**Autre**|**3456 Main St. Seattle, WA**|
 
-4.  Enregistrez et fermez l'élément de contact.
+4. Enregistrez et fermez l'élément de contact.
 
-5.  Rouvrez le **Ann Beebe** élément de contact.
+5. Rouvrez le **Ann Beebe** élément de contact.
 
     Dans Outlook, cela est possible le **trouver** groupe en ouvrant le carnet d’adresses pour les Contacts ou en tapant Ann Beebe dans **rechercher des personnes**.
 
-6.  Dans le **afficher** groupe du ruban de l’élément, cliquez sur **carte** pour ouvrir la zone de formulaire carte.
+6. Dans le **afficher** groupe du ruban de l’élément, cliquez sur **carte** pour ouvrir la zone de formulaire carte.
 
      La zone de formulaire Carte apparaît et affiche le site web Local Search. Le **Business**, **accueil**, et **autres** adresses s’affichent dans la zone temporaire. Dans la zone temporaire, sélectionnez une adresse que vous souhaitez cartographier.
 
 ## <a name="next-steps"></a>Étapes suivantes
  Pour plus d'informations sur la personnalisation de l'interface utilisateur d'une application Outlook, consultez les rubriques suivantes :
 
--   Pour savoir comment personnaliser le ruban d’un élément Outlook, consultez [personnaliser un ruban pour Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
+- Pour savoir comment personnaliser le ruban d’un élément Outlook, consultez [personnaliser un ruban pour Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
 ## <a name="see-also"></a>Voir aussi
 - [Accéder à une zone de formulaire lors de l’exécution](../vsto/accessing-a-form-region-at-run-time.md)

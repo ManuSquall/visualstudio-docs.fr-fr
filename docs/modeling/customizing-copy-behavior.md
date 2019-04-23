@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 898c1e88e4fd1ac0fc5f3d1f338b70a2d038fe79
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 4a5543805741f1c64627aee15590d61635a89b1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416318"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109827"
 ---
 # <a name="customizing-copy-behavior"></a>Personnalisation du comportement de la commande copier
 Dans un langage spécifique à un domaine (DSL) créé avec le Visual Studio Visualization and Modeling SDK, vous pouvez modifier ce qui se passe quand l’utilisateur copie et colle des éléments.
@@ -284,9 +284,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 
  Définissez deux méthodes dans votre classe ElementOperations :
 
--   `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)`, qui détermine si l'élément source peut être déplacé sur le diagramme, le connecteur ou la forme cible.
+- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)`, qui détermine si l'élément source peut être déplacé sur le diagramme, le connecteur ou la forme cible.
 
--   `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)`, qui combine l'élément source dans la cible.
+- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)`, qui combine l'élément source dans la cible.
 
 ### <a name="canmerge"></a>CanMerge()
  `CanMerge()` est appelée pour déterminer le retour qui doit être fourni à l'utilisateur quand la souris se déplace sur le diagramme. Les paramètres de la méthode sont l'élément sur lequel la souris est placée et les données concernant la source à partir de laquelle l'opération de déplacement a été effectuée. L'utilisateur peut faire glisser un élément à partir de n'importe quel emplacement à l'écran. Ainsi, l'objet source peut être de nombreux types différents et peut être sérialisé dans différents formats. Si la source est un modèle DSL ou UML, le paramètre de données et la sérialisation d'un <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Les opérations de glissement, de copie et de boîte à outils utilise des ElementGroupPrototypes pour représenter des fragments de modèles.

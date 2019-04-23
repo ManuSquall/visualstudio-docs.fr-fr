@@ -10,21 +10,21 @@ helpviewer_keywords:
 ms.assetid: bb84a79e-cd4c-4a58-8871-2513e7119b6e
 caps.latest.revision: 38
 manager: jillfra
-ms.openlocfilehash: a1cf66baf73fe4a04dcb21b0c7ac7609214bea20
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 54026b770a0de7780e950a3e30e649cb67ce1d3b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951420"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088702"
 ---
 # <a name="extending-the-toolbox"></a>Extension de la boîte à outils
 La **boîte à outils** [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] propose une collection d’objets qui fournissent des fonctionnalités aux éditeurs et aux concepteurs par le biais du mécanisme glisser-déplacer de l’IDE.  
   
  Il existe deux façons de base dans lequel un VSPackage interagit avec le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **boîte à outils**:  
   
--   Un VSPackage peut ajouter de nouveaux contrôles et éléments de données à la **boîte à outils**.  
+- Un VSPackage peut ajouter de nouveaux contrôles et éléments de données à la **boîte à outils**.  
   
--   Un VSPackage, qui peut être la cible ou le consommateur d’une fonctionnalité existante de la **boîte à outils** , prend en charge les opérations de glisser-déplacer et configure l’apparence de la **boîte à outils**.  
+- Un VSPackage, qui peut être la cible ou le consommateur d’une fonctionnalité existante de la **boîte à outils** , prend en charge les opérations de glisser-déplacer et configure l’apparence de la **boîte à outils**.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Guide pratique pour Créer un contrôle de boîte à outils qui utilise Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md)  

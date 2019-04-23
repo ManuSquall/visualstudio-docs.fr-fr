@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4d372c0f21bfeb9768796e494a2689b7fc9f32f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: aed2acd4dbf921d99bcefe2e74575401fc01c7d7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658042"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101315"
 ---
 # <a name="graphics-log-document"></a>Document de journal Graphics
 Le document journal de graphisme est l’enregistrement des événements graphiques qui se sont produits pendant l’exécution de votre application sous une session Graphics Diagnostics. Une fois les événements enregistrés, vous pouvez examiner le journal dans Visual Studio Graphics Analyzer pour diagnostiquer les problèmes de rendu et de performances.
@@ -33,11 +33,11 @@ Le document journal de graphisme est l’enregistrement des événements graphiq
 
 #### <a name="to-inspect-a-frame"></a>Pour inspecter un frame
 
--   Dans la **Liste de frames**, sélectionnez le frame à inspecter. La sortie cible de rendu figurant dans la partie supérieure du document journal de graphisme est mise à jour pour afficher le frame sélectionné.
+- Dans la **Liste de frames**, sélectionnez le frame à inspecter. La sortie cible de rendu figurant dans la partie supérieure du document journal de graphisme est mise à jour pour afficher le frame sélectionné.
 
 #### <a name="to-inspect-a-pixel"></a>Pour inspecter un pixel
 
--   Dans la partie supérieure du document journal de graphisme, sélectionnez le pixel souhaité dans la sortie cible de rendu. Une fois le pixel sélectionné, vous pouvez utiliser la fenêtre **Historique des pixels Graphics** pour afficher des informations détaillées sur le pixel sélectionné. Pour plus d’informations, consultez [historique des pixels](graphics-pixel-history.md).
+- Dans la partie supérieure du document journal de graphisme, sélectionnez le pixel souhaité dans la sortie cible de rendu. Une fois le pixel sélectionné, vous pouvez utiliser la fenêtre **Historique des pixels Graphics** pour afficher des informations détaillées sur le pixel sélectionné. Pour plus d’informations, consultez [historique des pixels](graphics-pixel-history.md).
 
 ## <a name="playback-machine"></a>Ordinateur de lecture
  Dans l’angle supérieur droit de la **Liste de frames** figure également l’**ordinateur de lecture**. L’ordinateur de lecture est l’ordinateur ou l’appareil utilisé pour lire les événements graphiques d’un fichier journal de graphisme à l’occasion d’une session Graphics Diagnostics ultérieure. En lisant les événements capturés sur un autre appareil que votre ordinateur de développement, vous pouvez reproduire avec une plus grande précision l'environnement d'exécution dans lequel le problème s'est produit. Par exemple, vous pouvez utiliser un ordinateur équipé de matériel ou de pilotes graphiques différents de ceux utilisés sur votre ordinateur de développement, ou d'autres types d'appareils, tels qu'une tablette Windows RT ou un appareil Windows Phone ARM.

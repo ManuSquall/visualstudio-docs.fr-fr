@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour définir la session active | Microsoft Docs
+title: 'Procédure : Définir la session active | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,14 +17,14 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: edb5303a283de943ed99fc43003aacdeefe729c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d6d7362392aeda9bcff61d811933eb4286d6c4cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760390"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102690"
 ---
-# <a name="how-to-set-the-current-session"></a>Guide pratique pour définir la session active
+# <a name="how-to-set-the-current-session"></a>Procédure : Définir la Session active
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez ouvrir plusieurs sessions de performance dans l’**Explorateur de performances**, puis sélectionner l’une des sessions de performance visibles à définir comme session active.  
@@ -37,7 +37,7 @@ Vous pouvez ouvrir plusieurs sessions de performance dans l’**Explorateur de p
   
 ### <a name="to-set-current-performance-session"></a>Pour définir la session de performance actuelle  
   
--   Dans l’**Explorateur de performances**, cliquez avec le bouton droit sur la session de performance, puis cliquez sur **Définir en tant que session active** .  
+- Dans l’**Explorateur de performances**, cliquez avec le bouton droit sur la session de performance, puis cliquez sur **Définir en tant que session active** .  
   
      Le nom de la session apparaît en gras.  
   

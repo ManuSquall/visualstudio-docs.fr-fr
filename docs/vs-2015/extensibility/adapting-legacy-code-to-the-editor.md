@@ -10,12 +10,12 @@ ms.assetid: a208d38e-9bea-41c9-9fe2-38bd86a359cb
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4cbce5c13c51747a08b3832440ef91ace3d6a89c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0bb90723a72c10dbf6cfda5edd4aa68f71f1c6b9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938342"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098128"
 ---
 # <a name="adapting-legacy-code-to-the-editor"></a>Adaptation de l’éditeur de Code hérité
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,9 +75,9 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
   
 #### <a name="to-create-an-adapter-for-ivstextview"></a>Pour créer un adaptateur pour IVsTextView  
   
-1.  Ajoutez une référence à Microsoft.VisualStudio.Editor.dll. Assurez-vous que l’option `CopyLocal` est défini sur `false`.  
+1. Ajoutez une référence à Microsoft.VisualStudio.Editor.dll. Assurez-vous que l’option `CopyLocal` est défini sur `false`.  
   
-2.  Instanciez le <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>, comme suit.  
+2. Instanciez le <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>, comme suit.  
   
     ```  
     using Microsoft.VisualStudio.Editor;  
@@ -85,7 +85,7 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
     IVsEditorAdaptersFactoryService adapterFactoryService = ComponentModel.GetService<IVsEditorAdaptersFactoryService>();  
     ```  
   
-3.  Appelez la méthode `CreateX()`.  
+3. Appelez la méthode `CreateX()`.  
   
     ```  
     adapterFactoryService.CreateTextViewAdapter(textView);  
@@ -96,9 +96,9 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
   
 #### <a name="to-get-an-ivxtextbuffer"></a>Pour obtenir une IVxTextBuffer  
   
-1.  Les définitions pour les interfaces IVx * sont dans le fichier VSEditor.h dans le... Dossier \VisualStudioIntegration\Common\Inc\ de l’installation de Visual Studio SDK.  
+1. Les définitions pour les interfaces IVx * sont dans le fichier VSEditor.h dans le... Dossier \VisualStudioIntegration\Common\Inc\ de l’installation de Visual Studio SDK.  
   
-2.  Le code suivant instancie une mémoire tampon de texte à l’aide de la `IVsUserData->GetData()` (méthode). Dans le code suivant, `pData` est un pointeur vers un `IVsUserData` objet.  
+2. Le code suivant instancie une mémoire tampon de texte à l’aide de la `IVsUserData->GetData()` (méthode). Dans le code suivant, `pData` est un pointeur vers un `IVsUserData` objet.  
   
     ```  
     #include <textmgr.h>  
@@ -125,9 +125,9 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
   
 #### <a name="to-consume-visual-studio-editor-components-from-a-non-mef-component"></a>Pour consommer des composants de l’éditeur Visual Studio à partir d’un composant non MEF  
   
-1.  Ajoutez une référence à l’assembly Microsoft.VisualStudio.ComponentModelHost.dll dans le... Dossier \Common7\IDE\ de l’installation de Visual Studio. Assurez-vous que l’option `CopyLocal` est défini sur `false`.  
+1. Ajoutez une référence à l’assembly Microsoft.VisualStudio.ComponentModelHost.dll dans le... Dossier \Common7\IDE\ de l’installation de Visual Studio. Assurez-vous que l’option `CopyLocal` est défini sur `false`.  
   
-2.  Ajouter une privée `IComponentModel` membre à la classe dans laquelle vous souhaitez utiliser les services de l’éditeur de Visual Studio, comme suit.  
+2. Ajouter une privée `IComponentModel` membre à la classe dans laquelle vous souhaitez utiliser les services de l’éditeur de Visual Studio, comme suit.  
   
     ```  
     using Microsoft.VisualStudio.ComponentModelHost;  
@@ -135,14 +135,14 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
     private IComponentModel componentModel;  
     ```  
   
-3.  Instanciez le modèle de composant dans la méthode d’initialisation pour votre composant.  
+3. Instanciez le modèle de composant dans la méthode d’initialisation pour votre composant.  
   
     ```  
     componentModel =  
      (IComponentModel)Package.GetGlobalService(typeof(SComponentModel));  
     ```  
   
-4.  Après cela, vous pouvez obtenir l’un des services de l’éditeur Visual Studio en appelant le `IComponentModel.GetService<T>()` méthode pour le service souhaité.  
+4. Après cela, vous pouvez obtenir l’un des services de l’éditeur Visual Studio en appelant le `IComponentModel.GetService<T>()` méthode pour le service souhaité.  
   
     ```  
     textBufferFactoryService =  

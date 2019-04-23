@@ -9,26 +9,26 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0fb95a46c74c502a14034d621b67895f495256d0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1567715a8f944eb10c2728caa9fc1edd43beda8e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938250"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097035"
 ---
 # <a name="troubleshooting-code-metrics-issues"></a>Résolution des problèmes liés à la métrique du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez rencontrer certains des problèmes suivants quand vous collectez des métriques du code :  
   
--   [Modifications dans les calculs de complexité du code dans Visual Studio 2010](#Changes_in_Visual_Studio_2010_code_complexity_calculations)  
+- [Modifications dans les calculs de complexité du code dans Visual Studio 2010](#Changes_in_Visual_Studio_2010_code_complexity_calculations)  
   
-##  <a name="Changes_in_Visual_Studio_2010_code_complexity_calculations"></a> Modifications dans les calculs de complexité du code dans Visual Studio 2010  
+## <a name="Changes_in_Visual_Studio_2010_code_complexity_calculations"></a> Modifications dans les calculs de complexité du code dans Visual Studio 2010  
  Pour la même fonction, la métrique de complexité du code calculée dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] peut être différente de la métrique calculée par les versions antérieures de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] dans les situations suivantes :  
   
--   La fonction contient un ou plusieurs blocs catch. Dans les versions précédentes de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], les blocs catch n’étaient pas inclus dans le calcul. Dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], la complexité de chaque bloc catch est ajoutée à la complexité de la fonction.  
+- La fonction contient un ou plusieurs blocs catch. Dans les versions précédentes de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], les blocs catch n’étaient pas inclus dans le calcul. Dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], la complexité de chaque bloc catch est ajoutée à la complexité de la fonction.  
   
--   La fonction contient une instruction switch (Select Case dans VB). Des différences de compilateur entre [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] et les versions antérieures peuvent générer un code MSIL différent pour certaines instructions switch qui contiennent des éléments case avec fallthrough.  
+- La fonction contient une instruction switch (Select Case dans VB). Des différences de compilateur entre [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] et les versions antérieures peuvent générer un code MSIL différent pour certaines instructions switch qui contiennent des éléments case avec fallthrough.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Mesures de la complexité et de la facilité de maintenance du code managé](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

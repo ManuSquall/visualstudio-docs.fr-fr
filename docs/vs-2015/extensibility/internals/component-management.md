@@ -11,12 +11,12 @@ ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c4667bd26db80c005605214eeca9e852a7705bdf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 56a110f382d0b182eed0ea1a95cd4dabf2877037
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948730"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090444"
 ---
 # <a name="component-management"></a>Gestion des composants
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,23 +29,23 @@ Unités de tâches dans le programme d’installation de Windows sont appelées 
   
 ## <a name="guidelines-of-authoring-setup-for-side-by-side-installation"></a>Recommandations en matière de création le programme d’installation pour l’Installation de la côte à côte  
   
--   Fichiers de l’auteur et les clés de Registre qui sont partagés entre les versions dans leurs propres composants.  
+- Fichiers de l’auteur et les clés de Registre qui sont partagés entre les versions dans leurs propres composants.  
   
      Cela vous permet de les consommer facilement dans la prochaine version. Par exemple, les bibliothèques de types qui sont inscrits de manière globale, extensions de fichier, autres éléments inscrits dans HKEY_CLASSES_ROOT et ainsi de suite.  
   
--   Regrouper des composants partagés dans des modules de fusion distinct.  
+- Regrouper des composants partagés dans des modules de fusion distinct.  
   
      Cela permet de vous auteur correctement pour avancer côte à côte.  
   
--   Installer les fichiers partagés et les clés de Registre en utilisant les mêmes composants de programme d’installation de Windows sur les versions.  
+- Installer les fichiers partagés et les clés de Registre en utilisant les mêmes composants de programme d’installation de Windows sur les versions.  
   
      Si vous utilisez un autre composant, les fichiers et les entrées de Registre sont désinstallées quand un VSPackage avec contrôle de version est désinstallé, mais un autre VSPackage est toujours installé.  
   
--   Ne mélangez pas les éléments avec version et partagés dans le même composant.  
+- Ne mélangez pas les éléments avec version et partagés dans le même composant.  
   
      Cela rend impossible d’installer les éléments partagés vers un emplacement global et des éléments avec version aux emplacements isolés.  
   
--   N’ont pas les clés de Registre partagées qui pointent vers les fichiers de version.  
+- N’ont pas les clés de Registre partagées qui pointent vers les fichiers de version.  
   
      Si vous le faites, les clés partagées seront remplacées lors de l’installation de VSPackage avec version gérée par un autre. Une fois que vous supprimez la deuxième version, le fichier vers lequel pointe la clé a disparu.  
   

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3142d854a3a6371983dc6c5851ad007c387f1480
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 025f5366938eb00114b035f0b7992d61433cc181
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603038"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102560"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Validation des points d’arrêt dans un service de langage hérité
 Un point d’arrêt indique que l’exécution du programme doit s’arrêter à un moment donné pendant qu’il est en cours d’exécution dans un débogueur. Un utilisateur peut placer un point d’arrêt sur n’importe quelle ligne dans le fichier source, dans la mesure où l’éditeur n’a aucune connaissance de ce qui constitue un emplacement valide pour un point d’arrêt. Lorsque le débogueur est lancé, tous les points d’arrêt marquées (appelés en attente de points d’arrêt) sont liés à l’emplacement approprié dans le programme en cours d’exécution. En même temps que les points d’arrêt sont validées pour garantir qu’ils servent à indiquer les emplacements de code valide. Par exemple, un point d’arrêt sur un commentaire n’est pas valide, car il n’existe aucun code à cet emplacement dans le code source. Le débogueur désactive les points d’arrêt non valides.
@@ -25,13 +25,13 @@ Un point d’arrêt indique que l’exécution du programme doit s’arrêter à
 
 ## <a name="implementing-support-for-validating-breakpoints"></a>Implémentation de prise en charge pour la validation des points d’arrêt
 
--   Le <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> la position du point d’arrêt est donnée à la méthode. Votre implémentation doit décider ou non l’emplacement est valide et indiquer ceci en retournant une étendue de texte qui identifie le code associé à la position de ligne du point d’arrêt.
+- Le <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> la position du point d’arrêt est donnée à la méthode. Votre implémentation doit décider ou non l’emplacement est valide et indiquer ceci en retournant une étendue de texte qui identifie le code associé à la position de ligne du point d’arrêt.
 
--   Retourner <xref:Microsoft.VisualStudio.VSConstants.S_OK> si l’emplacement est valide, ou <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> s’il n’est pas valide.
+- Retourner <xref:Microsoft.VisualStudio.VSConstants.S_OK> si l’emplacement est valide, ou <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> s’il n’est pas valide.
 
--   Si le point d’arrêt est valide, l’étendue de texte est mis en surbrillance, ainsi que le point d’arrêt.
+- Si le point d’arrêt est valide, l’étendue de texte est mis en surbrillance, ainsi que le point d’arrêt.
 
--   Si le point d’arrêt n’est pas valide, un message d’erreur s’affiche dans la barre d’état.
+- Si le point d’arrêt n’est pas valide, un message d’erreur s’affiche dans la barre d’état.
 
 ### <a name="example"></a>Exemple
  Cet exemple illustre une implémentation de la <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> méthode qui appelle l’analyseur pour obtenir l’étendue du code (le cas échéant) à l’emplacement spécifié.

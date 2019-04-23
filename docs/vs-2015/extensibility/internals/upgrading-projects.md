@@ -12,12 +12,12 @@ ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 47b4bacb8815db8cf7cb64f47534d1c3b10a8177
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7e97e21b2d08d7398a4372ac31cda63b5cfb9fe9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953748"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100597"
 ---
 # <a name="upgrading-projects"></a>Mise à niveau des projets
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ Modifie le modèle de projet d’une version de [!INCLUDE[vsprvs](../../includes
 ## <a name="upgrade-strategies"></a>Stratégies de mise à niveau  
  Pour prendre en charge une mise à niveau, votre implémentation de système de projet doit définir et implémenter une stratégie de mise à niveau. Pour déterminer votre stratégie, vous pouvez choisir de prendre en charge la sauvegarde de la côte à côte (SxS), sauvegarde de copie ou les deux.  
   
--   Sauvegarde de la côte à côte signifie qu’un projet copie seulement les fichiers que vous avez besoin de la mise à niveau en place, ajout d’un suffixe de nom fichier approprié, par exemple, « .old ».  
+- Sauvegarde de la côte à côte signifie qu’un projet copie seulement les fichiers que vous avez besoin de la mise à niveau en place, ajout d’un suffixe de nom fichier approprié, par exemple, « .old ».  
   
--   Sauvegarde de copie signifie qu’un projet copie tous les éléments de projet à un emplacement de sauvegarde fourni par l’utilisateur. Les fichiers appropriés à l’emplacement du projet d’origine sont ensuite mis à niveau.  
+- Sauvegarde de copie signifie qu’un projet copie tous les éléments de projet à un emplacement de sauvegarde fourni par l’utilisateur. Les fichiers appropriés à l’emplacement du projet d’origine sont ensuite mis à niveau.  
   
 ## <a name="how-upgrade-works"></a>Comment mettre à niveau Works  
  Lorsqu’une solution créée dans une version antérieure de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] est ouvert dans une version plus récente, les vérifications de l’IDE de fichier pour déterminer si elle doit être mis à niveau la solution. Si la mise à niveau est requise, le **Assistant Mise à niveau** est lancée automatiquement pour guider l’utilisateur au long du processus de mise à niveau.  

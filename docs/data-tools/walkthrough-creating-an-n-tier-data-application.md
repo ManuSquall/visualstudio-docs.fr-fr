@@ -1,5 +1,5 @@
 ---
-title: "Procédure pas à pas : création d'une application de données multicouche"
+title: 'Procédure pas à pas : Création d’une application de données multiniveaux'
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,15 +14,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4edd2ce00439a791f55787e9d55e9e51b3c7b27b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 471f0e9b97293bd70457a8f41cb7efddd6acf6c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933013"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091822"
 ---
-# <a name="walkthrough-create-an-n-tier-data-application"></a>Procédure pas à pas : Création d’une application de données multicouches
-Les applications de données *multiniveaux* sont des applications qui accèdent aux données et sont divisées en plusieurs couches logiques, ou *niveaux*. La séparation des composants de l'application en couches distinctes favorise la possibilité de tenir à jour et de monter en charge l'application. Cela est possible grâce à une application plus facile des nouvelles technologies sur chaque couche sans avoir à reconcevoir toute la solution. L'architecture multicouche inclut une couche Présentation, une couche intermédiaire et une couche Données. La couche intermédiaire inclut généralement une couche d'accès aux données, une couche logique métier et des composants partagés tels que l'authentification et la validation. La couche Données inclut une base de données relationnelle. Les applications multicouches stockent généralement les informations sensibles dans la couche d'accès aux données de la couche intermédiaire, pour la tenir hors de portée des utilisateurs finaux qui accèdent à la couche Présentation. Pour plus d’informations, consultez [vue d’ensemble des applications de données multicouches](../data-tools/n-tier-data-applications-overview.md).
+# <a name="walkthrough-create-an-n-tier-data-application"></a>Procédure pas à pas : Créer une application de données multiniveaux
+Les applications de données *multiniveaux* sont des applications qui accèdent aux données et sont divisées en plusieurs couches logiques, ou *niveaux*. La séparation des composants de l'application en couches distinctes favorise la possibilité de tenir à jour et de monter en charge l'application. Cela est possible grâce à une application plus facile des nouvelles technologies sur chaque couche sans avoir à reconcevoir toute la solution. L'architecture multicouche inclut une couche Présentation, une couche intermédiaire et une couche Données. La couche intermédiaire inclut généralement une couche d’accès aux données, une couche logique métier et des composants partagés tels que l’authentification et la validation. La couche Données inclut une base de données relationnelle. Les applications multicouches stockent généralement les informations sensibles dans la couche d'accès aux données de la couche intermédiaire, pour la tenir hors de portée des utilisateurs finaux qui accèdent à la couche Présentation. Pour plus d’informations, consultez [vue d’ensemble des applications de données multicouches](../data-tools/n-tier-data-applications-overview.md).
 
 Pour séparer plusieurs couches d'une application multicouche, il est possible de créer des projets distincts pour chaque couche que vous voulez inclure dans votre application. Les datasets typés contiennent une propriété `DataSet Project` qui détermine les projets dans lesquels le code du dataset et des `TableAdapter`s générés doit intervenir.
 
@@ -30,25 +30,25 @@ Cette procédure pas à pas décrit comment séparer le code du dataset et `Tabl
 
 Au cours de cette procédure pas à pas, vous procédez comme suit :
 
--   Créer une solution multicouche contenant plusieurs projets.
+- Créer une solution multicouche contenant plusieurs projets.
 
--   ajouter deux projets de bibliothèque de classes à la solution multicouche ;
+- ajouter deux projets de bibliothèque de classes à la solution multicouche ;
 
--   Créez un dataset typé à l’aide de l’**Assistant Configuration de source de données**.
+- Créez un dataset typé à l’aide de l’**Assistant Configuration de source de données**.
 
--   Séparer le texte généré [TableAdapters](create-and-configure-tableadapters.md) et le code de jeu de données dans des projets distincts.
+- Séparer le texte généré [TableAdapters](create-and-configure-tableadapters.md) et le code de jeu de données dans des projets distincts.
 
--   créer un service WCF (Windows Communication Foundation) pour appeler la couche d'accès aux données ;
+- créer un service WCF (Windows Communication Foundation) pour appeler la couche d'accès aux données ;
 
--   créer des fonctions dans le service pour récupérer les données de la couche d'accès aux données ;
+- créer des fonctions dans le service pour récupérer les données de la couche d'accès aux données ;
 
--   créer une application Windows Forms faisant office de couche Présentation ;
+- créer une application Windows Forms faisant office de couche Présentation ;
 
--   créer des contrôles Windows Forms liés à la source de données ;
+- créer des contrôles Windows Forms liés à la source de données ;
 
--   écrire du code pour remplir les tables de données.
+- écrire du code pour remplir les tables de données.
 
-![lien vers la vidéo](../data-tools/media/playvideo.gif) pour obtenir une version vidéo de cette rubrique, consultez [Video How to : Création d’une application de données multiniveaux](http://go.microsoft.com/fwlink/?LinkId=115188).
+![lien vers la vidéo](../data-tools/media/playvideo.gif) pour obtenir une version vidéo de cette rubrique, consultez [Video How to : Création d’une application de données multicouches](http://go.microsoft.com/fwlink/?LinkId=115188).
 
 ## <a name="prerequisites"></a>Prérequis
 Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de données Northwind.
@@ -77,7 +77,7 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
 
 1. Dans Visual Studio, sur le **fichier** menu, sélectionnez **New** > **projet**.
 
-2. Développez le **Visual C#**  ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
+2. Développez le **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
 
 3. Dans le volet central, sélectionnez le **bibliothèque de classes** type de projet.
 
@@ -104,7 +104,7 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
  L'étape qui suit consiste à créer le dataset typé. Datasets typés sont créés avec la classe dataset (y compris `DataTables` classes) et le `TableAdapter` classes dans un projet unique. (Toutes les classes sont générées dans un seul fichier.) Lorsque vous séparez le jeu de données et les TableAdapters dans des projets différents, il est la classe de jeu de données est déplacée vers l’autre projet, en laissant le `TableAdapter` classes dans le projet d’origine. Par conséquent, créer le jeu de données dans le projet qui doit contenir les TableAdapters (le projet DataAccessTier). Vous créez le jeu de données à l’aide de la **Assistant de Configuration de Source de données**.
 
 > [!NOTE]
-> Vous devez avoir accès à l'exemple de base de données Northwind pour créer la connexion. Pour plus d’informations sur la façon de configurer la base de données Northwind, consultez [Comment : installer les bases de données exemple](../data-tools/installing-database-systems-tools-and-samples.md).
+> Vous devez avoir accès à l'exemple de base de données Northwind pour créer la connexion. Pour plus d’informations sur la façon de configurer la base de données Northwind, consultez [Comment : Installer les bases de données exemple](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ### <a name="to-create-the-dataset"></a>Pour créer le groupe de données
 
@@ -154,7 +154,7 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
 
 5. Dans le menu **Générer**, sélectionnez **Générer la solution**.
 
-   Le dataset et les TableAdapters sont divisés entre les deux projets de bibliothèque de classes. Le projet qui contenait initialement l’ensemble du dataset (`DataAccessTier`) contient à présent que les TableAdapters. Le projet désigné dans la **DataSet Project** propriété (`DataEntityTier`) contient le dataset typé : *NorthwindDataSet.Dataset.Designer.vb* (ou  *NorthwindDataSet.Dataset.Designer.cs*).
+   Le dataset et les TableAdapters sont divisés entre les deux projets de bibliothèque de classes. Le projet qui contenait initialement l’ensemble du dataset (`DataAccessTier`) contient à présent que les TableAdapters. Le projet désigné dans la **DataSet Project** propriété (`DataEntityTier`) contient le dataset typé : *NorthwindDataSet.Dataset.Designer.vb* (ou *NorthwindDataSet.Dataset.Designer.cs*).
 
 > [!NOTE]
 > Quand vous séparez les datasets et les TableAdapters (en définissant la propriété **Projet DataSet**), les classes DataSet partielles existantes dans le projet ne sont pas déplacées automatiquement. Les classes DataSet partielles existantes doivent être manuellement déplacées dans le projet DataSet.
@@ -301,7 +301,7 @@ Nous allons définir le **PresentationTier** projet comme projet de démarrage d
 
 ### <a name="to-set-the-new-presentation-tier-project-as-the-startup-project"></a>Pour définir le nouveau projet de niveau Présentation comme projet de démarrage
 
--   Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur **PresentationTier**, puis cliquez sur **Définir comme projet de démarrage**.
+- Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur **PresentationTier**, puis cliquez sur **Définir comme projet de démarrage**.
 
 ## <a name="add-references-to-the-presentation-tier"></a>Ajoutez des références à la couche de présentation
  L’application cliente PresentationTier nécessite une référence de service au service de données pour accéder aux méthodes du service. Par ailleurs, une référence au dataset est requise pour activer le partage de type par le service WCF. Jusqu'à ce que vous activez le partage de type via le service de données, le code ajouté à la classe dataset partielle n’est pas disponible pour la couche de présentation. Étant donné que vous ajoutez généralement le code, par exemple de code de validation à la ligne et colonne événements d’une table de données, de modification, il est probable que vous souhaitez accéder à ce code à partir du client.
@@ -373,11 +373,11 @@ La valeur par défaut `maxReceivedMessageSize` n’est pas suffisamment grande p
 Exécutez l’application en appuyant sur **F5**. Les données à partir de la `Customers` et `Orders` tables est récupéré à partir du service de données et affiché sur le formulaire.
 
 ## <a name="next-steps"></a>Étapes suivantes
- Selon les exigences de votre application, vous pouvez exécuter différentes étapes après avoir enregistré les données associées dans l’application Windows. Par exemple, vous pouvez apporter les améliorations suivantes à cette application :
+ Selon les spécifications de votre application, vous pouvez exécuter différentes étapes après avoir enregistré les données associées dans l'application Windows. Par exemple, vous pouvez apporter les améliorations suivantes à cette application :
 
--   Ajouter une validation au dataset.
+- Ajouter une validation au dataset.
 
--   Ajouter des méthodes supplémentaires au service pour la mise à jour des données dans la base de données.
+- Ajouter des méthodes supplémentaires au service pour la mise à jour des données dans la base de données.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -16,12 +16,12 @@ ms.technology: vs-ide-general
 ms.topic: reference
 ms.workload:
 - multiple
-ms.openlocfilehash: db30c3d74a7742daa3c9cf7225bc2a38062dc6e4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 44938c5753491521702867398a514f770cf831fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660695"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099388"
 ---
 # <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Prise en charge par moniteur afin que les extendeurs de Visual Studio
 Versions antérieures à Visual Studio 2019 eu leur contexte de sensibilisation à la résolution définie sur le système prenant en charge, plutôt que des PPP prenant en charge (AVM) par le moniteur. En cours d’exécution dans la sensibilité au système a entraîné un visuel détérioré expérience (par exemple, floues polices ou icônes) chaque fois que Visual Studio devait restituer sur plusieurs écrans à des facteurs d’échelle différente ou à distance sur des machines avec des configurations d’affichage différent, par exemple (différents Windows mise à l’échelle).
@@ -39,9 +39,9 @@ Reportez-vous à la [développement d’applications haute résolution bureau su
 
 ## <a name="enabling-pma"></a>L’activation AVM
 Pour activer AVM dans Visual Studio, les conditions suivantes doivent être remplies :
-1)  Windows 10 avril 2018 mise à jour (v1803, RS4) ou version ultérieure
-2)  .NET framework 4.8 RTM ou version ultérieure
-3)  Visual Studio 2019 avec le [« Optimiser le rendu pour les écrans de densité de pixels différentes »](https://docs.microsoft.com/visualstudio/ide/reference/general-environment-options-dialog-box?view=vs-2019) option est activée
+1) Windows 10 avril 2018 mise à jour (v1803, RS4) ou version ultérieure
+2) .NET framework 4.8 RTM ou version ultérieure
+3) Visual Studio 2019 avec le [« Optimiser le rendu pour les écrans de densité de pixels différentes »](https://docs.microsoft.com/visualstudio/ide/reference/general-environment-options-dialog-box?view=vs-2019) option est activée
 
 Une fois que ces exigences sont satisfaites, Visual Studio active automatiquement le mode AVM entre les différents processus.
 
@@ -203,6 +203,7 @@ L’essentiel du travail de calcul de l’interface utilisateur qui se produit d
 Si une fenêtre d’outil non-WPF pour prendre en charge AVM est migrée, il devrez refuser CLMM. Pour ce faire, une nouvelle interface doit être implémentée : IVsDpiAware.
 
 C# :
+
 ```cs
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
 public interface IVsDpiAeware
@@ -213,6 +214,7 @@ public interface IVsDpiAeware
 ```
  
 C++ :
+
 ```cpp
 IVsDpiAware : public IUnknown
 {
@@ -245,6 +247,7 @@ enum __VSDPIMODE
 L’interface utilisateur hérité qui n’est pas en cours mis à jour pour prendre en charge le mode AVM, peut-être encore des modifications mineures à travailler pendant que Visual Studio s’exécute en mode d’AVM. Un correctif de ce type consiste à s’assurer de que l’interface utilisateur est créé dans le DpiAwarenessContext droite. Pour forcer votre interface utilisateur dans un DpiAwarenessContext particulier, vous pouvez entrer une portée de PPP avec le code suivant :
 
 C# :
+
 ```cs
 using (DpiAwareness.EnterDpiScope(DpiAwarenessContext.SystemAware))
 {
@@ -254,6 +257,7 @@ using (DpiAwareness.EnterDpiScope(DpiAwarenessContext.SystemAware))
 ```
 
 C++ :
+
 ```cpp
 void MyClass::ShowDialog()
 {

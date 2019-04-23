@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ce412da98d05d70864a6932021912a6f03f6a7b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 536e3a2aa6254004fb34eb243583184e5ab0279e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662970"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092173"
 ---
 # <a name="working-with-xml-data"></a>Utilisation de données XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,17 +26,17 @@ XML et les technologies y associées jouent un grand rôle dans le traitement de
   
  Autres fonctionnalités de l’éditeur :  
   
--   Prise en charge des extraits XML, notamment des extraits générés par schéma  
+- Prise en charge des extraits XML, notamment des extraits générés par schéma  
   
--   Mise en plan des documents permettant de développer et réduire les éléments  
+- Mise en plan des documents permettant de développer et réduire les éléments  
   
--   Possibilité d'exécuter des transformations XSLT et d'afficher les résultats au format texte, XML ou HTML  
+- Possibilité d'exécuter des transformations XSLT et d'afficher les résultats au format texte, XML ou HTML  
   
--   Possibilité de générer des schémas de langage XSD (XML Schema definition) à partir du document d'instance XML  
+- Possibilité de générer des schémas de langage XSD (XML Schema definition) à partir du document d'instance XML  
   
--   Prise en charge des modifications des feuilles de style XSLT, notamment avec IntelliSense  
+- Prise en charge des modifications des feuilles de style XSLT, notamment avec IntelliSense  
   
--   Explorateur de schémas XML  
+- Explorateur de schémas XML  
   
 ## <a name="xml-schema-designer"></a>Concepteur de schémas XML  
  Le Concepteur de schémas XML est intégré à Microsoft Visual Studio 2010 et l'éditeur XML pour vous permettre d'utiliser les schémas XSD (XML Schema Definition Language).  

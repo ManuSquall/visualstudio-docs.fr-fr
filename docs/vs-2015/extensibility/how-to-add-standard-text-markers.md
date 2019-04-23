@@ -10,12 +10,12 @@ ms.assetid: a39fca69-0014-474c-933f-51f0e9b9617e
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f7e771acfa44c1b32dfcc33b2ef1cbcaef879b9f
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 3bd7b31a609117a59a5110cdb4460e5c36395ede
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58949608"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089209"
 ---
 # <a name="how-to-add-standard-text-markers"></a>Procédure : Ajouter des marqueurs de texte Standard
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Utilisez la procédure suivante pour créer l’un des types de marqueur de text
   
 ### <a name="to-create-a-text-marker"></a>Pour créer un marqueur de texte  
   
-1.  Selon que vous utilisez un ou deux - dimensionnel système de coordonnées, appelez le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> méthode ou le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> méthode pour créer un nouveau marqueur de texte.  
+1. Selon que vous utilisez un ou deux - dimensionnel système de coordonnées, appelez le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> méthode ou le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> méthode pour créer un nouveau marqueur de texte.  
   
      Dans cet appel de méthode, spécifiez un type de marqueur, une plage de texte afin de créer le marqueur sur et un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interface. Ensuite, cette méthode retourne un pointeur au marqueur de texte qui vient d’être créée. Types de marqueur sont extraites de la <xref:Microsoft.VisualStudio.TextManager.Interop.MARKERTYPE> énumération. Spécifiez un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interface si vous souhaitez être informé des événements de marqueur.  
   
@@ -36,15 +36,15 @@ Utilisez la procédure suivante pour créer l’un des types de marqueur de text
   
 #### <a name="to-add-a-custom-command-to-the-context-menu"></a>Pour ajouter une commande personnalisée au menu contextuel  
   
-1.  Avant que le menu contextuel s’affiche, l’environnement appelle le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetMarkerCommandInfo%2A> méthode et passe vous un pointeur vers le marqueur de texte concerné et le numéro de l’élément de commande dans le menu contextuel.  
+1. Avant que le menu contextuel s’affiche, l’environnement appelle le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetMarkerCommandInfo%2A> méthode et passe vous un pointeur vers le marqueur de texte concerné et le numéro de l’élément de commande dans le menu contextuel.  
   
      Par exemple, les commandes de point d’arrêt spécifique dans le menu contextuel incluent **supprimer un point d’arrêt** via **nouveau point d’arrêt**, comme indiqué dans la capture d’écran suivante.  
   
      ![Menu contextuel marqueur](../extensibility/media/vsmarkercontextmenu.gif "vsMarkercontextmenu")  
   
-2.  Transmettre un texte identifiant le nom de la commande personnalisée. Par exemple, **supprimer un point d’arrêt** peut être une commande personnalisée si l’environnement ne le n'a pas déjà fourni. Vous transmettez également si la commande n’est pris en charge, disponible et activée, et/ou un bouton bascule activé / désactivé. L’environnement utilise ces informations pour afficher la commande personnalisée dans le menu contextuel de la façon correcte.  
+2. Transmettre un texte identifiant le nom de la commande personnalisée. Par exemple, **supprimer un point d’arrêt** peut être une commande personnalisée si l’environnement ne le n'a pas déjà fourni. Vous transmettez également si la commande n’est pris en charge, disponible et activée, et/ou un bouton bascule activé / désactivé. L’environnement utilise ces informations pour afficher la commande personnalisée dans le menu contextuel de la façon correcte.  
   
-3.  Pour exécuter la commande, l’environnement appelle le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A> méthode, en passant un pointeur vers le marqueur de texte et le numéro de la commande sélectionnée dans le menu contextuel.  
+3. Pour exécuter la commande, l’environnement appelle le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A> méthode, en passant un pointeur vers le marqueur de texte et le numéro de la commande sélectionnée dans le menu contextuel.  
   
      Utilisez ces informations à partir de cet appel pour exécuter toute action du marqueur de texte de votre commande personnalisée dicte.  
   

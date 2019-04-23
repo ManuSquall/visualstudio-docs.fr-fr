@@ -18,12 +18,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e739edf3d32b011f915ca0aad69e5148104afc05
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 63356c6eb423ddead54290cc11c865a5102f55f2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951708"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098465"
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>Procédure : Spécifier une page de publication pour une application ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,29 +36,29 @@ Lorsque vous publiez un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] a
   
 ### <a name="to-specify-a-custom-web-page-for-a-clickonce-application"></a>Pour spécifier une page Web personnalisée pour une application ClickOnce  
   
-1.  Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
+1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
   
-2.  Sélectionnez le **publier** volet.  
+2. Sélectionnez le **publier** volet.  
   
-3.  Cliquez sur le **Options** bouton pour ouvrir la **Options de publication** boîte de dialogue.  
+3. Cliquez sur le **Options** bouton pour ouvrir la **Options de publication** boîte de dialogue.  
   
-4.  Cliquez sur **déploiement**.  
+4. Cliquez sur **déploiement**.  
   
-5.  Dans le **Options de publication** boîte de dialogue zone, assurez-vous que le **page web de déploiement ouverts après la publication** case à cocher est activée (elle doit être sélectionnée par défaut).  
+5. Dans le **Options de publication** boîte de dialogue zone, assurez-vous que le **page web de déploiement ouverts après la publication** case à cocher est activée (elle doit être sélectionnée par défaut).  
   
-6.  Dans le **page web de déploiement :** zone, entrez le nom de votre page Web, puis cliquez sur **OK**.  
+6. Dans le **page web de déploiement :** zone, entrez le nom de votre page Web, puis cliquez sur **OK**.  
   
 ### <a name="to-prevent-the-publish-page-from-launching-each-time-you-publish"></a>Pour empêcher le lancement de chaque fois que vous publiez la page de publication  
   
-1.  Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
+1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
   
-2.  Sélectionnez le **publier** volet.  
+2. Sélectionnez le **publier** volet.  
   
-3.  Cliquez sur le **Options** bouton pour ouvrir la **Options de publication** boîte de dialogue.  
+3. Cliquez sur le **Options** bouton pour ouvrir la **Options de publication** boîte de dialogue.  
   
-4.  Cliquez sur **déploiement**.  
+4. Cliquez sur **déploiement**.  
   
-5.  Dans le **Options de publication** boîte de dialogue, désactivez le **page web de déploiement ouverts après la publication** case à cocher.  
+5. Dans le **Options de publication** boîte de dialogue, désactivez le **page web de déploiement ouverts après la publication** case à cocher.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Publication d’applications ClickOnce](../deployment/publishing-clickonce-applications.md)   

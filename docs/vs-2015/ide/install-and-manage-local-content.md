@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6e52c9a34b5fc6ea487cffd1728a525dc5a0984
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c549beaf58e64d8026b3f6bd39a3b69922d6b7f6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54766222"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097412"
 ---
 # <a name="install-and-manage-local-content"></a>Installer et gérer un contenu local
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,18 +43,18 @@ Microsoft Help Viewer vous permet d’ajouter, de supprimer, de mettre à jour e
   
 #### <a name="to-change-the-content-installation-source"></a>Pour modifier la source d'installation du contenu  
   
-1.  Sous l’onglet **Gérer le contenu**, sélectionnez la case d’option **Disque**.  
+1. Sous l’onglet **Gérer le contenu**, sélectionnez la case d’option **Disque**.  
   
     > [!NOTE]
     >  L’option **Disque** n’est pas disponible si votre administrateur ne vous a pas autorisé à modifier la source d’installation du contenu. Pour plus d’informations, consultez le [Guide de l’administrateur de la visionneuse d’aide](../ide/help-viewer-administrator-guide.md).  
   
-2.  Effectuez l’une des opérations suivantes :  
+2. Effectuez l’une des opérations suivantes :  
   
-    -   Entrez le chemin d’accès d’un fichier .msha ou l’URL d’un point de terminaison de service.  
+    - Entrez le chemin d’accès d’un fichier .msha ou l’URL d’un point de terminaison de service.  
   
-    -   Choisissez le bouton de navigation (**…**) pour accéder à un fichier .msha.  
+    - Choisissez le bouton de navigation (**…**) pour accéder à un fichier .msha.  
   
-    -   Dans la liste, choisissez la dernière entrée utilisée.  
+    - Dans la liste, choisissez la dernière entrée utilisée.  
   
 ## <a name="download-and-install-content-locally"></a>Télécharger et installer le contenu localement  
  Vous pouvez afficher les rubriques sans connexion Internet si vous téléchargez et installez le contenu sur votre ordinateur local.  
@@ -66,13 +66,13 @@ Microsoft Help Viewer vous permet d’ajouter, de supprimer, de mettre à jour e
   
 #### <a name="to-download-and-install-content"></a>Pour télécharger et installer du contenu  
   
-1.  Choisissez l’onglet **Gérer le contenu**.  
+1. Choisissez l’onglet **Gérer le contenu**.  
   
-2.  Dans la liste de contenu, choisissez le lien **Ajouter** à côté du ou des livres que vous voulez télécharger et installer.  
+2. Dans la liste de contenu, choisissez le lien **Ajouter** à côté du ou des livres que vous voulez télécharger et installer.  
   
      Le livre est ajouté à la liste **Modifications en attente** et la taille estimée du ou des livres spécifiés apparaît sous cette liste. Certains livres partagent des rubriques, la taille totale du téléchargement de plusieurs livres peut être inférieure à la somme de la taille de chaque livre spécifié.  
   
-3.  Choisissez le bouton **Mettre à jour**.  
+3. Choisissez le bouton **Mettre à jour**.  
   
      Le ou les livres que vous avez spécifiés sont installés avec les éventuelles mises à jour des livres dont vous disposez déjà sur votre ordinateur. La durée d'installation varie, mais vous pouvez observer la progression dans la barre d'état.  
   
@@ -86,13 +86,13 @@ Microsoft Help Viewer vous permet d’ajouter, de supprimer, de mettre à jour e
   
 #### <a name="to-remove-content"></a>Pour supprimer du contenu  
   
-1.  Choisissez l’onglet **Gérer le contenu**.  
+1. Choisissez l’onglet **Gérer le contenu**.  
   
-2.  Dans la liste de contenu, choisissez le lien **Supprimer** à côté du ou des livres que vous voulez supprimer.  
+2. Dans la liste de contenu, choisissez le lien **Supprimer** à côté du ou des livres que vous voulez supprimer.  
   
      Le livre est ajouté à la liste **Modifications en attente**.  
   
-3.  Choisissez le bouton **Mettre à jour**.  
+3. Choisissez le bouton **Mettre à jour**.  
   
      Le ou les livres spécifiés sont supprimés de votre ordinateur.  
   
@@ -116,13 +116,13 @@ Microsoft Help Viewer vous permet d’ajouter, de supprimer, de mettre à jour e
   
 #### <a name="to-move-local-content"></a>Pour déplacer du contenu local  
   
-1.  Sous l’onglet **Gérer le contenu**, choisissez le bouton **Déplacer** sous **Chemin d’accès au stockage local**.  
+1. Sous l’onglet **Gérer le contenu**, choisissez le bouton **Déplacer** sous **Chemin d’accès au stockage local**.  
   
      La boîte de dialogue **Déplacer le contenu** s’ouvre.  
   
-2.  Dans la zone de texte **Vers**, entrez un autre emplacement pour le contenu, puis choisissez le bouton **OK**.  
+2. Dans la zone de texte **Vers**, entrez un autre emplacement pour le contenu, puis choisissez le bouton **OK**.  
   
-3.  Choisissez le bouton **Fermer** une fois que le contenu a été déplacé.  
+3. Choisissez le bouton **Fermer** une fois que le contenu a été déplacé.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 146ece23d1ff4ed516d5c7d009bfc439c2387bb5
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 046e0e5ab33d3eece5c44fcadb31ca93700587e5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870329"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093655"
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>Modifications apportées à la conception des projets Office qui ciblent le .NET Framework 4 ou .NET Framework 4.5
   Depuis [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], Visual Studio a introduit des modifications à la conception des projets Office ciblant le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou version ultérieure. Si vous avez déjà travaillé avec des projets Office dans les versions antérieures de Visual Studio, vous devez tenir compte de ces modifications avant de développer des projets Office ciblant ces versions du .NET Framework 4.0 ou version ultérieure. Par défaut, tous les projets que vous créez à l'aide de Visual Studio 2013 ou version ultérieure ciblent le .NET Framework 4.0 ou version ultérieure.
@@ -30,11 +30,11 @@ ms.locfileid: "57870329"
 
  Pour tous les types que vous pouviez instancier directement dans les versions antérieures de [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], vous devez maintenant utiliser des méthodes de l'objet `Globals.Factory` pour obtenir des instances de ces types. Par exemple, pour obtenir un objet qui implémente l'interface <xref:Microsoft.Office.Tools.Excel.SmartTag>, utilisez la méthode `Globals.Factory.CreateSmartTag`. Pour plus d’informations, consultez les rubriques suivantes :
 
--   [Mettre à jour des projets Excel et Word que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)
+- [Mettre à jour des projets Excel et Word que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)
 
--   [Mettre à jour des personnalisations de ruban dans les projets Office que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5](/visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5)
+- [Mettre à jour des personnalisations de ruban dans les projets Office que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5](/visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5)
 
--   [Mettre à jour de zones de formulaire dans les projets Outlook que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)
+- [Mettre à jour de zones de formulaire dans les projets Outlook que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)
 
 ### <a name="new-base-classes-in-office-projects"></a>Nouvelles classes de base dans les projets Office
  La nouvelle conception basée sur l’interface de Visual Studio 2010 Tools pour Office runtime affecte les classes générées dans les projets Office, tels que `ThisDocument`, `ThisWorkbook`, et `ThisAddIn`. Dans les projets Office qui ciblent le .NET Framework 3.5 et versions antérieures, ces classes générées dérivent de classes de [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] telles que `Microsoft.Office.Tools.Word.Document`, `Microsoft.Office.Tools.Excel.Worksheet` et `Microsoft.Office.Tools.AddIn`. Dans les projets qui ciblent le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou version ultérieure, ces classes [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] sont désormais des interfaces. Par conséquent, les classes générées dans les projets Office ne peuvent plus en dériver leur implémentation. Au lieu de cela, les classes générées dérivent de nouvelles classes de base telles que <xref:Microsoft.Office.Tools.Word.DocumentBase>, <xref:Microsoft.Office.Tools.Excel.WorksheetBase>et <xref:Microsoft.Office.Tools.AddInBase>. Pour plus d’informations, consultez [programme VSTO Add-ins](../vsto/programming-vsto-add-ins.md) et [programmer des personnalisations au niveau du document](../vsto/programming-document-level-customizations.md).

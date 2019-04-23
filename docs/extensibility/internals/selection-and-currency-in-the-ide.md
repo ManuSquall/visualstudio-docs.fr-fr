@@ -13,19 +13,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0db376b57c6f581137b2bf48fbc5d354651a8ef6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 612549e9aceb7a9bad6da2a5388dedd277469bad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56653955"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098816"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Sélection et devise dans l’IDE
 Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tient à jour l’environnement de développement intégré (IDE) plus d’informations sur les utilisateurs les objets actuellement sélectionnés à l’aide de sélection *contexte*. Avec le contexte de sélection, les VSPackages peuvent prendre part à monétaire suivi de deux manières :
 
--   En propageant les informations de devise sur les VSPackages à l’IDE.
+- En propageant les informations de devise sur les VSPackages à l’IDE.
 
--   En surveillant les sélections des utilisateurs actuellement actifs dans l’IDE.
+- En surveillant les sélections des utilisateurs actuellement actifs dans l’IDE.
 
 ## <a name="selection-context"></a>Contexte de sélection
  Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE globalement effectue le suivi de devise IDE dans son propre objet de contexte de sélection globale. Le tableau suivant présente les éléments qui composent le contexte de sélection.
@@ -38,9 +38,9 @@ Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tient à jour l�
 
  En outre, l’environnement gère deux listes globales :
 
--   Une liste d’identificateurs de commande actives l’interface utilisateur
+- Une liste d’identificateurs de commande actives l’interface utilisateur
 
--   Liste des types d’éléments actuellement active.
+- Liste des types d’éléments actuellement active.
 
 ### <a name="window-types-and-selection"></a>Sélection et les Types de fenêtres
  Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE organise windows en deux types généraux :
@@ -58,9 +58,9 @@ Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tient à jour l�
 ### <a name="events-and-currency"></a>Événements et devise
  Deux types d’événements peuvent se produire et affectent la notion de l’environnement de devise :
 
--   Événements qui sont propagées jusqu’au niveau global et de modifier le contexte de sélection de fenêtre frame. Exemples de ce type d’événement incluent une fenêtre enfant MDI en cours d’ouverture d’une fenêtre outil global en cours d’ouverture ou une fenêtre d’outil de type de projet en cours d’ouverture.
+- Événements qui sont propagées jusqu’au niveau global et de modifier le contexte de sélection de fenêtre frame. Exemples de ce type d’événement incluent une fenêtre enfant MDI en cours d’ouverture d’une fenêtre outil global en cours d’ouverture ou une fenêtre d’outil de type de projet en cours d’ouverture.
 
--   Événements qui modifient les éléments suivis dans le contexte de sélection de fenêtre frame. Exemples incluent la modification de sélection au sein d’un DocObject ou la modification de sélection dans une fenêtre de type de projet.
+- Événements qui modifient les éléments suivis dans le contexte de sélection de fenêtre frame. Exemples incluent la modification de sélection au sein d’un DocObject ou la modification de sélection dans une fenêtre de type de projet.
 
 ## <a name="see-also"></a>Voir aussi
 - [Objets de contexte de sélection](../../extensibility/internals/selection-context-objects.md)

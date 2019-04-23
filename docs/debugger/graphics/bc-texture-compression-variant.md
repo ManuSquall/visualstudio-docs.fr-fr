@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1edc2182b475fca2cb641a2b7598ea5164db368d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 3a25411449c1b13b12f05819061847c252a76c9c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680423"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094084"
 ---
 # <a name="bc-texture-compression-variant"></a>Variante de compression de texture BC
 Permet la compression de blocs sur les textures dont le format de pixel est une variation de B8G8R8X8, B8G8R8A8 ou R8G8B8A8.
@@ -23,18 +23,18 @@ Permet la compression de blocs sur les textures dont le format de pixel est une 
 
  Si vos textures sont adaptées à une compression de blocs et que vous n'avez pas besoin d'une fidélité des couleurs parfaite, utilisez un format de compression de blocs pour réduire l'utilisation de mémoire et moins consommer de bande passante.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Vous compressez les textures en utilisant un format de compression de blocs à chaque appel à `ID3DDevice::CreateTexture2D`, qui est chargé de créer une texture source. Plus précisément, les textures sont compressées quand :
 
 - L'objet `D3D11_TEXTURE2D_DESC` passé dans `pDesc` décrit une ressource de nuanceur qui ne change pas, à savoir :
 
-  -   Seul l'indicateur D3D11_BIND_SHADER_RESOURCE du membre BindFlags est défini.
+  - Seul l'indicateur D3D11_BIND_SHADER_RESOURCE du membre BindFlags est défini.
 
-  -   Le membre Usage a la valeur D3D11_USAGE_DEFAULT ou D3D11_USAGE_IMMUTABLE.
+  - Le membre Usage a la valeur D3D11_USAGE_DEFAULT ou D3D11_USAGE_IMMUTABLE.
 
-  -   Le membre CPUAccessFlags a la valeur 0 (aucun accès à l'UC).
+  - Le membre CPUAccessFlags a la valeur 0 (aucun accès à l'UC).
 
-  -   Le membre Count du membre SamplerDesc a la valeur 1 (pas d'anticrénelage MSAA (Multi-Sample Anti-Aliasing)).
+  - Le membre Count du membre SamplerDesc a la valeur 1 (pas d'anticrénelage MSAA (Multi-Sample Anti-Aliasing)).
 
 - Les données initiales sont fournies à l'appel à `CreateTexture2D`.
 

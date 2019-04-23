@@ -1,5 +1,5 @@
 ---
-title: 'CA3001 : Passez en revue de code pour les vulnérabilités d’injection SQL'
+title: 'CA3001 : Passez en revue le code pour détecter les vulnérabilités de l’injection SQL'
 ms.date: 04/03/2019
 ms.topic: reference
 author: dotpaul
@@ -11,13 +11,13 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: b743fa6c7c3189cd062328ab003f9eabe7874de9
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018528"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109216"
 ---
-# <a name="ca3001-review-code-for-sql-injection-vulnerabilities"></a>CA3001 : Passez en revue de code pour les vulnérabilités d’injection SQL
+# <a name="ca3001-review-code-for-sql-injection-vulnerabilities"></a>CA3001 : Passez en revue le code pour détecter les vulnérabilités de l’injection SQL
 
 |||
 |-|-|

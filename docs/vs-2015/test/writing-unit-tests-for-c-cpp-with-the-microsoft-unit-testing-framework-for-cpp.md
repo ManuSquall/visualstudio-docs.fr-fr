@@ -8,12 +8,12 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6600621c195994bf5becec9cae4f77340008516
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 02c819ee0311066fb2a4e543213faaedfee5a2ad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760025"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109411"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Écriture de tests unitaires pour C/C++ à l’aide du framework de tests unitaires Microsoft pour C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,23 +24,23 @@ Dans Visual Studio, vous pouvez créer des tests unitaires pour le code non mana
   
 ### <a name="to-write-unit-tests-for-an-unmanaged-code-dll"></a>Pour écrire les tests unitaires d'une DLL de code non managé  
   
-1.  Utilisez le modèle **Projet de test natif** afin de créer un projet Visual Studio distinct pour vos tests.  
+1. Utilisez le modèle **Projet de test natif** afin de créer un projet Visual Studio distinct pour vos tests.  
   
      Le projet contient un exemple de code de test.  
   
-2.  Rendez la DLL accessible au projet de test :  
+2. Rendez la DLL accessible au projet de test :  
   
-    -   `#include` un fichier `.h` contenant les déclarations de fonctions de la DLL accessibles de l'extérieur.  
+    - `#include` un fichier `.h` contenant les déclarations de fonctions de la DLL accessibles de l'extérieur.  
   
          Le fichier `.h` doit contenir les déclarations de fonction marquées avec `_declspec(dllimport)`. Vous pouvez également exporter les méthodes à l'aide d'un fichier DEF. Pour plus d’informations, consultez [Importation et exportation](http://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b).  
   
          Vos tests unitaires peuvent uniquement accéder aux fonctions exportées à partir de la DLL de test.  
   
-    -   Ajoutez le projet de DLL aux références du projet de test :  
+    - Ajoutez le projet de DLL aux références du projet de test :  
   
          dans la page **Propriétés** du projet de test, développez **Propriétés communes**, **Structure et références**, puis choisissez **Ajouter une référence**.  
   
-3.  Dans le projet de test, créez les classes de test et les méthodes de test à l'aide des macros TEST et de la classe Assert de la façon suivante :  
+3. Dans le projet de test, créez les classes de test et les méthodes de test à l'aide des macros TEST et de la classe Assert de la façon suivante :  
   
     ```cpp  
     #include "stdafx.h"  
@@ -58,52 +58,52 @@ Dans Visual Studio, vous pouvez créer des tests unitaires pour le code non mana
     }  
     ```  
   
-    -   `Assert` contient plusieurs fonctions statiques qui vous permettent de vérifier le résultat d'un test.  
+    - `Assert` contient plusieurs fonctions statiques qui vous permettent de vérifier le résultat d'un test.  
   
-    -   Le paramètre `LINE_INFO()` est optionnel. Dans les cas où il n'existe aucun fichier PDB, il permet à Test Runner d'identifier l'emplacement d'un échec.  
+    - Le paramètre `LINE_INFO()` est optionnel. Dans les cas où il n'existe aucun fichier PDB, il permet à Test Runner d'identifier l'emplacement d'un échec.  
   
-    -   Vous pouvez également écrire les méthodes de configuration et de nettoyage du test. Pour plus d'informations, ouvrez la définition de la macro `TEST_METHOD` et lisez les commentaires de CppUnitTest.h  
+    - Vous pouvez également écrire les méthodes de configuration et de nettoyage du test. Pour plus d'informations, ouvrez la définition de la macro `TEST_METHOD` et lisez les commentaires de CppUnitTest.h  
   
-    -   Vous ne pouvez pas imbriquer les classes de test.  
+    - Vous ne pouvez pas imbriquer les classes de test.  
   
-4.  Utilisez l'Explorateur de tests pour exécuter les tests :  
+4. Utilisez l'Explorateur de tests pour exécuter les tests :  
   
-    1.  Dans le menu **Affichage** , choisissez **Autres fenêtres**, **Explorateur de tests**.  
+    1. Dans le menu **Affichage** , choisissez **Autres fenêtres**, **Explorateur de tests**.  
   
-    2.  Générez la solution Visual Studio.  
+    2. Générez la solution Visual Studio.  
   
-    3.  Dans l'Explorateur de tests, choisissez **Exécuter tout**.  
+    3. Dans l'Explorateur de tests, choisissez **Exécuter tout**.  
   
-    4.  Pour examiner un test plus en détail dans l'Explorateur de tests :  
+    4. Pour examiner un test plus en détail dans l'Explorateur de tests :  
   
-        1.  Sélectionnez le nom du test pour afficher plus de détails, tels qu'un message d'échec et une trace de la pile.  
+        1. Sélectionnez le nom du test pour afficher plus de détails, tels qu'un message d'échec et une trace de la pile.  
   
-        2.  Ouvrez le nom du test (par exemple en double-cliquant dessus) pour accéder à l'emplacement de l'échec ou au code du test.  
+        2. Ouvrez le nom du test (par exemple en double-cliquant dessus) pour accéder à l'emplacement de l'échec ou au code du test.  
   
-        3.  Dans le menu contextuel d'un test, choisissez **Déboguer le test sélectionné** pour exécuter le test dans le débogueur.  
+        3. Dans le menu contextuel d'un test, choisissez **Déboguer le test sélectionné** pour exécuter le test dans le débogueur.  
   
-##  <a name="walkthrough"></a> Procédure pas à pas : Développement d’une DLL non managée avec l’Explorateur de tests  
+## <a name="walkthrough"></a> Procédure pas à pas : Développement d’une DLL non managée avec l’Explorateur de tests  
  Vous pouvez adapter cette procédure pas à pas pour développer votre propre DLL. Les étapes principales sont les suivantes :  
   
-1.  [Créer un projet de test natif](#unitTestProject). Les tests sont créés dans un projet distinct de la DLL que vous développez.  
+1. [Créer un projet de test natif](#unitTestProject). Les tests sont créés dans un projet distinct de la DLL que vous développez.  
   
-2.  [Créer un projet DLL](#createDllProject). Cette procédure pas à pas crée une DLL, mais la procédure de test d'une DLL existante est similaire.  
+2. [Créer un projet DLL](#createDllProject). Cette procédure pas à pas crée une DLL, mais la procédure de test d'une DLL existante est similaire.  
   
-3.  [Rendre les fonctions DLL visibles par les tests](#coupleProjects).  
+3. [Rendre les fonctions DLL visibles par les tests](#coupleProjects).  
   
-4.  [Augmenter itérativement les tests](#iterate). Nous recommandons un cycle « Rouge-Vert-Refactoriser », dans lequel le développement du code est conduit par les tests.  
+4. [Augmenter itérativement les tests](#iterate). Nous recommandons un cycle « Rouge-Vert-Refactoriser », dans lequel le développement du code est conduit par les tests.  
   
-5.  [Déboguer les tests ayant échoué](#debug). Vous pouvez exécuter les tests en mode débogage.  
+5. [Déboguer les tests ayant échoué](#debug). Vous pouvez exécuter les tests en mode débogage.  
   
-6.  [Refactoriser tout en maintenant les tests inchangés](#refactor). La refactorisation signifie une amélioration de la structure du code sans modification de son comportement externe. Vous pouvez procéder ainsi pour améliorer les performances, l'extensibilité ou la lisibilité du code. Comme le but n'est pas de changer le comportement, vous ne modifiez pas les tests en même temps que vous effectuez une modification de refactorisation du code. Les tests permettent de vous assurer que vous n'introduisez pas de bogues lors de la refactorisation. Vous pouvez donc apporter ces modifications avec beaucoup plus de confiance que si vous n'aviez pas les tests.  
+6. [Refactoriser tout en maintenant les tests inchangés](#refactor). La refactorisation signifie une amélioration de la structure du code sans modification de son comportement externe. Vous pouvez procéder ainsi pour améliorer les performances, l'extensibilité ou la lisibilité du code. Comme le but n'est pas de changer le comportement, vous ne modifiez pas les tests en même temps que vous effectuez une modification de refactorisation du code. Les tests permettent de vous assurer que vous n'introduisez pas de bogues lors de la refactorisation. Vous pouvez donc apporter ces modifications avec beaucoup plus de confiance que si vous n'aviez pas les tests.  
   
-7.  [Vérifier la couverture](https://msdn.microsoft.com/library/fc8hec9e.aspx). Les tests unitaires sont plus utiles lorsqu'ils impliquent une plus grande partie de votre code. Vous pouvez découvrir quelles parties de votre code ont été utilisées par les tests.  
+7. [Vérifier la couverture](https://msdn.microsoft.com/library/fc8hec9e.aspx). Les tests unitaires sont plus utiles lorsqu'ils impliquent une plus grande partie de votre code. Vous pouvez découvrir quelles parties de votre code ont été utilisées par les tests.  
   
-8.  [Isoler les unités des ressources externes](https://msdn.microsoft.com/library/hh549174.aspx). En règle générale, une DLL dépend des autres composants du système que vous développez, tels que les autres DLL, les bases de données ou les sous-systèmes à distance. Il est utile de tester chaque unité isolément de ses dépendances. Les composants externes peuvent ralentir les tests. Pendant le développement, les autres composants peuvent ne pas être achevés.  
+8. [Isoler les unités des ressources externes](https://msdn.microsoft.com/library/hh549174.aspx). En règle générale, une DLL dépend des autres composants du système que vous développez, tels que les autres DLL, les bases de données ou les sous-systèmes à distance. Il est utile de tester chaque unité isolément de ses dépendances. Les composants externes peuvent ralentir les tests. Pendant le développement, les autres composants peuvent ne pas être achevés.  
   
-###  <a name="unitTestProject"></a> Créer un projet de test unitaire natif  
+### <a name="unitTestProject"></a> Créer un projet de test unitaire natif  
   
-1.  Dans le menu **Fichier** , choisissez **Nouveau**, **Projet**.  
+1. Dans le menu **Fichier** , choisissez **Nouveau**, **Projet**.  
   
      Dans la boîte de dialogue, développez **Installé**, **Modèles**, **Visual C++**, **Test**.  
   
@@ -113,23 +113,23 @@ Dans Visual Studio, vous pouvez créer des tests unitaires pour le code non mana
   
      ![Création d’un projet de test unitaire C&#43;&#43;](../test/media/utecpp01.png "UteCpp01")  
   
-2.  Dans le nouveau projet, inspectez **unittest1.cpp**  
+2. Dans le nouveau projet, inspectez **unittest1.cpp**  
   
      ![Projet de test avec TEST&#95;CLASS et TEST&#95;METHOD](../test/media/utecpp2.png "UteCpp2")  
   
      Notez que :  
   
-    -   Chaque test est défini à l'aide de `TEST_METHOD(YourTestName){...}`.  
+    - Chaque test est défini à l'aide de `TEST_METHOD(YourTestName){...}`.  
   
          Vous n'avez pas à écrire une signature de fonction classique. La signature est créée par la macro TEST_METHOD. La macro génère une fonction d'instance qui retourne void. Elle génère également une fonction statique qui retourne des informations sur la méthode de test. Ces informations permettent à l'Explorateur de tests de trouver la méthode.  
   
-    -   Les méthodes de test sont regroupées en classes à l'aide de `TEST_CLASS(YourClassName){...}`.  
+    - Les méthodes de test sont regroupées en classes à l'aide de `TEST_CLASS(YourClassName){...}`.  
   
          Lorsque les tests sont exécutés, une instance de chaque classe de test est créée. Les méthodes de test sont appelées dans un ordre non défini. Vous pouvez définir des méthodes spéciales qui sont appelées avant et après chaque module, classe ou méthode.  
   
-3.  Vérifiez que les tests s'exécutent dans l'Explorateur de tests :  
+3. Vérifiez que les tests s'exécutent dans l'Explorateur de tests :  
   
-    1.  Insérez le code de test :  
+    1. Insérez le code de test :  
   
         ```cpp  
         TEST_METHOD(TestMethod1)  
@@ -140,7 +140,7 @@ Dans Visual Studio, vous pouvez créer des tests unitaires pour le code non mana
   
          Notez que la classe `Assert` fournit plusieurs méthodes statiques que vous pouvez utiliser pour vérifier les résultats dans les méthodes de test.  
   
-    2.  Dans le menu **Test** , choisissez **Exécuter** , **Tous les tests**.  
+    2. Dans le menu **Test** , choisissez **Exécuter** , **Tous les tests**.  
   
          Le test est généré et s'exécute.  
   
@@ -150,27 +150,27 @@ Dans Visual Studio, vous pouvez créer des tests unitaires pour le code non mana
   
          ![Explorateur de tests unitaires avec un test réussi](../test/media/utecpp04.png "UteCpp04")  
   
-###  <a name="createDllProject"></a> Créer un projet de DLL non managée  
+### <a name="createDllProject"></a> Créer un projet de DLL non managée  
   
-1.  Créez un projet **Visual C++** à l'aide du modèle **Projet Win32** .  
+1. Créez un projet **Visual C++** à l'aide du modèle **Projet Win32** .  
   
      Dans cette procédure pas à pas, le projet se nomme `RootFinder`.  
   
      ![Création d’un projet Win32 C&#43;&#43;](../test/media/utecpp05.png "UteCpp05")  
   
-2.  Sélectionnez **DLL** et **Exporter les symboles** dans l'Assistant Application Win32.  
+2. Sélectionnez **DLL** et **Exporter les symboles** dans l'Assistant Application Win32.  
   
      L'option **Exporter les symboles** génère une macro pratique qui permet de déclarer les méthodes exportées.  
   
      ![Assistant Projet C&#43;&#43; défini pour les symboles DLL et d’exportation](../test/media/utecpp06.png "UteCpp06")  
   
-3.  Déclarez une fonction exportée dans le fichier .h principal :  
+3. Déclarez une fonction exportée dans le fichier .h principal :  
   
      ![Nouveau projet de code de la DLL et fichier .h avec macros API](../test/media/utecpp07.png "UteCpp07")  
   
      Le déclarateur `__declspec(dllexport)` permet que les membres publics et protégés de la classe soient visibles en dehors de la DLL. Pour plus d'informations, consultez [Utilisation de dllimport et dllexport dans les classes C++](http://msdn.microsoft.com/library/8d7d1303-b9e9-47ca-96cc-67bf444a08a9).  
   
-4.  Dans le fichier .cpp principal, ajoutez un corps minimal pour la fonction :  
+4. Dans le fichier .cpp principal, ajoutez un corps minimal pour la fonction :  
   
     ```cpp  
     // Find the square root of a number.  
@@ -180,15 +180,15 @@ Dans Visual Studio, vous pouvez créer des tests unitaires pour le code non mana
     }  
     ```  
   
-###  <a name="coupleProjects"></a> Associer le projet de test au projet DLL  
+### <a name="coupleProjects"></a> Associer le projet de test au projet DLL  
   
 1. Ajoutez le projet DLL aux références de projet du projet de test :  
   
-   1.  Ouvrez les propriétés du projet de test et choisissez **Propriétés communes**, **Structure et références**.  
+   1. Ouvrez les propriétés du projet de test et choisissez **Propriétés communes**, **Structure et références**.  
   
         ![Propriétés du projet C&#43;&#43; &#45; Framework et références](../test/media/utecpp08.png "UteCpp08")  
   
-   2.  Choisissez **Ajouter une nouvelle référence**.  
+   2. Choisissez **Ajouter une nouvelle référence**.  
   
         Dans la boîte de dialogue **Ajouter une référence** , sélectionnez le projet DLL et choisissez **Ajouter**.  
   
@@ -230,9 +230,9 @@ Dans Visual Studio, vous pouvez créer des tests unitaires pour le code non mana
   
    Vous avez configuré le test et les projets de code, et vérifié que vous pouviez exécuter des tests exécutant les fonctions du projet de code. Maintenant, vous pouvez commencer à écrire le code et les tests réels.  
   
-###  <a name="iterate"></a> Augmenter itérativement les tests et les faire réussir  
+### <a name="iterate"></a> Augmenter itérativement les tests et les faire réussir  
   
-1.  Ajoutez un nouveau test :  
+1. Ajoutez un nouveau test :  
   
     ```cpp  
     TEST_METHOD(RangeTest)  
@@ -251,7 +251,7 @@ Dans Visual Studio, vous pouvez créer des tests unitaires pour le code non mana
     >   
     >  Lorsque vos utilisateurs modifient leurs spécifications, désactivez les tests qui ne sont plus corrects. Écrivez de nouveaux tests et utilisez-les l'un après l'autre, de la même façon incrémentielle.  
   
-2.  Générez la solution, puis, dans l'Explorateur de tests, choisissez **Exécuter tout**.  
+2. Générez la solution, puis, dans l'Explorateur de tests, choisissez **Exécuter tout**.  
   
      Le nouveau test échoue.  
   
@@ -260,7 +260,7 @@ Dans Visual Studio, vous pouvez créer des tests unitaires pour le code non mana
     > [!TIP]
     >  Vérifiez que chaque test échoue immédiatement après que vous l'avez écrit. Vous évitez ainsi de commettre l'erreur d'écrire un test qui n'échoue jamais.  
   
-3.  Améliorez le code testé afin que le nouveau test réussisse :  
+3. Améliorez le code testé afin que le nouveau test réussisse :  
   
     ```cpp  
     #include <math.h>  
@@ -279,7 +279,7 @@ Dans Visual Studio, vous pouvez créer des tests unitaires pour le code non mana
     }  
     ```  
   
-4.  Générez la solution, puis, dans l'Explorateur de tests, choisissez **Exécuter tout**.  
+4. Générez la solution, puis, dans l'Explorateur de tests, choisissez **Exécuter tout**.  
   
      Les deux tests réussissent.  
   
@@ -288,9 +288,9 @@ Dans Visual Studio, vous pouvez créer des tests unitaires pour le code non mana
     > [!TIP]
     >  Développez le code en ajoutant les tests individuellement. Assurez-vous que tous les tests réussissent après chaque itération.  
   
-###  <a name="debug"></a> Déboguer un test ayant échoué  
+### <a name="debug"></a> Déboguer un test ayant échoué  
   
-1.  Ajoutez un autre test :  
+1. Ajoutez un autre test :  
   
     ```cpp  
   
@@ -324,23 +324,23 @@ Dans Visual Studio, vous pouvez créer des tests unitaires pour le code non mana
     }  
     ```  
   
-2.  Générez la solution et choisissez **Exécuter tout**.  
+2. Générez la solution et choisissez **Exécuter tout**.  
   
-3.  Ouvrez le test ayant échoué (ou double-cliquez dessus).  
+3. Ouvrez le test ayant échoué (ou double-cliquez dessus).  
   
      L'échec d'assertion est mis en surbrillance. Le message d'échec est visible dans le volet de détails de l'Explorateur de tests.  
   
      ![Échec de NegativeRangeTests](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")  
   
-4.  Pour voir pourquoi le test échoue, parcourez la fonction :  
+4. Pour voir pourquoi le test échoue, parcourez la fonction :  
   
-    1.  Définissez un point d'arrêt au début de la fonction SquareRoot.  
+    1. Définissez un point d'arrêt au début de la fonction SquareRoot.  
   
-    2.  Dans le menu contextuel du test ayant échoué, choisissez **Déboguer les tests sélectionnés**.  
+    2. Dans le menu contextuel du test ayant échoué, choisissez **Déboguer les tests sélectionnés**.  
   
          Lorsque l'exécution s'arrête au point d'arrêt, parcourez le code.  
   
-5.  Insérez le code de la fonction que vous développez :  
+5. Insérez le code de la fonction que vous développez :  
   
     ```cpp  
   
@@ -356,16 +356,16 @@ Dans Visual Studio, vous pouvez créer des tests unitaires pour le code non mana
   
     ```  
   
-6.  Toutes les tests réussissent maintenant.  
+6. Toutes les tests réussissent maintenant.  
   
      ![Tous les tests sont concluants](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")  
   
 > [!TIP]
 >  Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests avec le bouton bascule ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") dans la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.  
   
-###  <a name="refactor"></a> Refactoriser le code sans modifier les tests  
+### <a name="refactor"></a> Refactoriser le code sans modifier les tests  
   
-1.  Simplifiez le calcul central de la fonction SquareRoot :  
+1. Simplifiez le calcul central de la fonction SquareRoot :  
   
     ```  
     // old code:  
@@ -375,7 +375,7 @@ Dans Visual Studio, vous pouvez créer des tests unitaires pour le code non mana
   
     ```  
   
-2.  Générez la solution et choisissez **Exécuter tout**, pour vous assurer que vous n'avez pas introduit d'erreur.  
+2. Générez la solution et choisissez **Exécuter tout**, pour vous assurer que vous n'avez pas introduit d'erreur.  
   
     > [!TIP]
     >  Un bon jeu de tests unitaires vous garantit que vous n'avez pas introduit de bogues lors de la modification du code.  
@@ -384,11 +384,11 @@ Dans Visual Studio, vous pouvez créer des tests unitaires pour le code non mana
   
 ## <a name="next-steps"></a>Étapes suivantes  
   
--   **Isolement.** La plupart des DLL dépendent d'autres sous-systèmes tels que des bases de données et d'autres DLL. Ces autres composants sont souvent développés en parallèle. Pour permettre que le test unitaire soit exécuté pendant que les autres composants ne sont pas encore disponibles, vous devez remplacer  
+- **Isolement.** La plupart des DLL dépendent d'autres sous-systèmes tels que des bases de données et d'autres DLL. Ces autres composants sont souvent développés en parallèle. Pour permettre que le test unitaire soit exécuté pendant que les autres composants ne sont pas encore disponibles, vous devez remplacer  
   
--   **Tests de vérification de build.** Des tests peuvent être effectués sur le serveur de builds de votre équipe à des intervalles définis. Cela garantit que les bogues ne sont pas introduits lors de l'intégration du travail de plusieurs membres de l'équipe.  
+- **Tests de vérification de build.** Des tests peuvent être effectués sur le serveur de builds de votre équipe à des intervalles définis. Cela garantit que les bogues ne sont pas introduits lors de l'intégration du travail de plusieurs membres de l'équipe.  
   
--   **Tests d’archivage.** Vous pouvez imposer que certains tests soient effectués avant que chaque membre de l'équipe n'archive le code dans le contrôle de code source. Il s'agit généralement d'un sous-ensemble de l'ensemble complet des tests de vérification de build.  
+- **Tests d’archivage.** Vous pouvez imposer que certains tests soient effectués avant que chaque membre de l'équipe n'archive le code dans le contrôle de code source. Il s'agit généralement d'un sous-ensemble de l'ensemble complet des tests de vérification de build.  
   
      Vous pouvez également imposer un niveau minimal de couverture du code.  
   
@@ -397,5 +397,5 @@ Dans Visual Studio, vous pouvez créer des tests unitaires pour le code non mana
  [Utilisation de Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md)   
  [Vue d’ensemble de l’interopérabilité entre le code managé et le code non managé](http://msdn.microsoft.com/library/ms973872.aspx)   
  [Débogage du code natif](../debugger/debugging-native-code.md)   
- [Procédure pas à pas : création et utilisation d’une bibliothèque de liens dynamiques (C++)](http://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941)   
+ [Procédure pas à pas : Création et utilisation d’une bibliothèque de liens dynamiques (C++)](http://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941)   
  [Importation et exportation](http://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)

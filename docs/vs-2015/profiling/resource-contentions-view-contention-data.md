@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f98cad59356b48be185ba8e73d91bd3d368ff2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c6a7d4d1e80323b4d260ac558661c222f72ec3c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804132"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108695"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Mode Conflits de ressources - Données de conflit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ Le mode Conflits de ressources répertorie des données de conflit pour les ress
 ### <a name="function-values"></a>Valeurs de fonction  
  Les valeurs de fonction sont basées sur les instances de la fonction qui se sont produites dans le chemin d’exécution représenté dans l’arborescence des appels.  
   
--   Les valeurs exclusives sont basées sur les événements qui se sont produits quand la fonction exécutait des instructions dans son corps de fonction. Les événements qui se sont produits dans les fonctions appelées par la fonction ne sont pas inclus dans les valeurs exclusives.  
+- Les valeurs exclusives sont basées sur les événements qui se sont produits quand la fonction exécutait des instructions dans son corps de fonction. Les événements qui se sont produits dans les fonctions appelées par la fonction ne sont pas inclus dans les valeurs exclusives.  
   
--   Les valeurs inclusives sont basées sur les événements qui se sont produits quand la fonction ou une fonction appelée par la fonction s’exécutait.  
+- Les valeurs inclusives sont basées sur les événements qui se sont produits quand la fonction ou une fonction appelée par la fonction s’exécutait.  
   
 ### <a name="percentage-values"></a>Valeurs de pourcentage  
  Les valeurs de pourcentage sont basées sur la durée totale ou les événements de conflit dans les données de profilage. Si le rapport ou la vue de l’exécution du profilage est filtré, seuls le temps bloqué et les conflits dans les données filtrées sont utilisés comme valeur totale.  

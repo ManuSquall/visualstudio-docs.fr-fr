@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: c4f431dba7f9732333812f64b44db52358071996
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 6c572d76389c5914f4a9b01b82677449ec1db28b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658797"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097165"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Application Lifecycle Management (ALM) avec les applications Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,11 +66,11 @@ Le développement d'applications pour des plateformes modernes implique de nombr
   
  Considérations particulières sur la gestion de version avec Unity :  
   
-1.  Unity assure le suivi des métadonnées relatives aux ressources de jeu dans une bibliothèque opaque unique qui est masquée par défaut. Pour maintenir la synchronisation des fichiers et des métadonnées, il est nécessaire de rendre visibles les métadonnées et de les stocker dans des segments plus gérables. Pour plus d’informations, consultez [Utilisation des systèmes de gestion de version externes avec Unity](http://docs.unity3d.com/Manual/ExternalVersionControlSystemSupport.html) (documentation Unity).  
+1. Unity assure le suivi des métadonnées relatives aux ressources de jeu dans une bibliothèque opaque unique qui est masquée par défaut. Pour maintenir la synchronisation des fichiers et des métadonnées, il est nécessaire de rendre visibles les métadonnées et de les stocker dans des segments plus gérables. Pour plus d’informations, consultez [Utilisation des systèmes de gestion de version externes avec Unity](http://docs.unity3d.com/Manual/ExternalVersionControlSystemSupport.html) (documentation Unity).  
   
-2.  Tous les fichiers et dossiers figurant dans un projet Unity ne sont pas appropriés pour le contrôle de code source, comme cela est également décrit dans le lien ci-dessus. Les dossiers Assets et ProjectSettings doivent être ajoutés, contrairement aux dossiers Library et Temp. Pour obtenir une liste supplémentaire de fichiers générés qui ne sont pas traités par le contrôle de code source, consultez la discussion [How to use Git for Unity3D source control?](http://stackoverflow.com/questions/18225126/how-to-use-git-for-unity3d-source-control) sur StackOverflow. De leur côté, de nombreux développeurs ont également blogué sur ce sujet.  
+2. Tous les fichiers et dossiers figurant dans un projet Unity ne sont pas appropriés pour le contrôle de code source, comme cela est également décrit dans le lien ci-dessus. Les dossiers Assets et ProjectSettings doivent être ajoutés, contrairement aux dossiers Library et Temp. Pour obtenir une liste supplémentaire de fichiers générés qui ne sont pas traités par le contrôle de code source, consultez la discussion [How to use Git for Unity3D source control?](http://stackoverflow.com/questions/18225126/how-to-use-git-for-unity3d-source-control) sur StackOverflow. De leur côté, de nombreux développeurs ont également blogué sur ce sujet.  
   
-3.  Les ressources binaires d'un projet Unity, telles que les textures et les fichiers audio, peuvent occuper une grande quantité de stockage. Des systèmes de contrôle de code source tels que Git stockent une copie unique d'un fichier pour chaque modification effectuée, même si la modification affecte uniquement une petite partie du fichier. Cette opération peut provoquer la saturation du référentiel Git. Pour résoudre ce problème, les développeurs Unity choisissent souvent de n'ajouter que les ressources finales à leur référentiel et d'utiliser un autre moyen de conserver un historique de l'utilisation de leurs ressources, telles que OneDrive, DropBox ou git-annex. Cette approche fonctionne, car il n'est généralement pas nécessaire de gérer les versions de telles ressources avec les modifications du code source. Généralement, les développeurs définissent aussi le mode de sérialisation de ressources de l'éditeur du projet sur Forcer le texte pour stocker les fichiers de séquence dans du texte plutôt que dans un format binaire, ce qui permet des fusions dans le contrôle de code source. Pour plus d’informations, consultez [Paramètres de l’éditeur](http://docs.unity3d.com/Manual/class-EditorManager.html) (documentation Unity).  
+3. Les ressources binaires d'un projet Unity, telles que les textures et les fichiers audio, peuvent occuper une grande quantité de stockage. Des systèmes de contrôle de code source tels que Git stockent une copie unique d'un fichier pour chaque modification effectuée, même si la modification affecte uniquement une petite partie du fichier. Cette opération peut provoquer la saturation du référentiel Git. Pour résoudre ce problème, les développeurs Unity choisissent souvent de n'ajouter que les ressources finales à leur référentiel et d'utiliser un autre moyen de conserver un historique de l'utilisation de leurs ressources, telles que OneDrive, DropBox ou git-annex. Cette approche fonctionne, car il n'est généralement pas nécessaire de gérer les versions de telles ressources avec les modifications du code source. Généralement, les développeurs définissent aussi le mode de sérialisation de ressources de l'éditeur du projet sur Forcer le texte pour stocker les fichiers de séquence dans du texte plutôt que dans un format binaire, ce qui permet des fusions dans le contrôle de code source. Pour plus d’informations, consultez [Paramètres de l’éditeur](http://docs.unity3d.com/Manual/class-EditorManager.html) (documentation Unity).  
   
 ## <a name="build"></a>Build  
  Lien de référence : **[Build](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  

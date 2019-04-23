@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3501c963a3fdc97151fdacce723942ca4e4bc93f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 480a355ee2af321341c54b90edcc582d49102186
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628882"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092862"
 ---
 # <a name="event-logging-for-office-solutions"></a>Journalisation des événements pour les solutions Office
   Vous pouvez utiliser l’observateur d’événements de Windows pour consulter les messages d’exception capturés par le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] lors de l’installation ou de la désinstallation de solutions Office. Vous pouvez utiliser ces messages du journal des événements pour résoudre les problèmes d’installation et de déploiement.
@@ -32,19 +32,19 @@ ms.locfileid: "56628882"
 
 ### <a name="to-read-the-event-log-in-windows-server-2003-and-windows-xp"></a>Pour lire le journal des événements dans Windows Server 2003 et Windows XP
 
-1.  Dans le Panneau de configuration, ouvrez **Outils d’administration**.
+1. Dans le Panneau de configuration, ouvrez **Outils d’administration**.
 
-2.  Démarrez l’ **Observateur d’événements**.
+2. Démarrez l’ **Observateur d’événements**.
 
-3.  Dans la liste des journaux des événements, sélectionnez **Application**.
+3. Dans la liste des journaux des événements, sélectionnez **Application**.
 
-4.  Dans le menu **Affichage** , cliquez sur **Filtrer**.
+4. Dans le menu **Affichage** , cliquez sur **Filtrer**.
 
-5.  Dans la liste **Source d’événement** , sélectionnez **VSTO 4.0**.
+5. Dans la liste **Source d’événement** , sélectionnez **VSTO 4.0**.
 
-6.  Pour les événements d’installation, dans la zone **ID d’événement** , tapez **4096**.
+6. Pour les événements d’installation, dans la zone **ID d’événement** , tapez **4096**.
 
-7.  Cliquez sur **OK** pour afficher la vue filtrée.
+7. Cliquez sur **OK** pour afficher la vue filtrée.
 
 ### <a name="to-read-the-event-log-in-windows-7-windows-vista-and-windows-server-2008"></a>Pour lire le journal des événements dans Windows 7, Windows Vista et Windows Server 2008
 
@@ -84,17 +84,17 @@ ms.locfileid: "56628882"
 
 ### <a name="to-disable-the-event-log"></a>Pour désactiver le journal des événements
 
-1.  Dans le Panneau de configuration, ouvrez **Système**.
+1. Dans le Panneau de configuration, ouvrez **Système**.
 
-2.  Sous l'onglet **Avancé** , cliquez sur **Variables d'environnement**.
+2. Sous l'onglet **Avancé** , cliquez sur **Variables d'environnement**.
 
-3.  Dans le volet **Variables système** , cliquez sur **Nouveau**.
+3. Dans le volet **Variables système** , cliquez sur **Nouveau**.
 
-4.  Dans la boîte de dialogue **Nouvelle variable système** , tapez **VSTO_EVENTLOGDISABLED** dans la zone **Nom de la variable** .
+4. Dans la boîte de dialogue **Nouvelle variable système** , tapez **VSTO_EVENTLOGDISABLED** dans la zone **Nom de la variable** .
 
-5.  Dans la zone **Valeur de la variable** , tapez **1**.
+5. Dans la zone **Valeur de la variable** , tapez **1**.
 
-6.  Cliquez sur **OK**.
+6. Cliquez sur **OK**.
 
 ## <a name="see-also"></a>Voir aussi
 - [Déployer une solution Office](../vsto/deploying-an-office-solution.md)

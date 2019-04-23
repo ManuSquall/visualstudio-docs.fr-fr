@@ -11,21 +11,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b15928e10d77a10d9ae8b2b684af02e3b370ce87
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5d931568258099fa4a8fe8f3b82d3fe50d5a3e35
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716010"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099767"
 ---
 # <a name="threads"></a>Threads
 Dans l’architecture du débogueur, une *thread*:
 
--   Est l’unité fondamentale de calcul. Un thread exécute séquentiellement ses instructions dans le contexte d’une seule pile d’appels, déplacement à partir du contexte d’un code à l’autre.
+- Est l’unité fondamentale de calcul. Un thread exécute séquentiellement ses instructions dans le contexte d’une seule pile d’appels, déplacement à partir du contexte d’un code à l’autre.
 
--   Peut identifier lui-même et le programme, dans qu'il est en cours d’exécution. Threads peuvent être nommés, suspendus et repris. Un thread peut également énumérer ses frames de pile associée et, sous certaines conditions, peut être déplacé vers un autre frame de pile. Étant donné le contexte d’un frame de pile, un thread peut retourner son thread logique associé, le cas échéant. Un thread a des propriétés, telles que d’un compteur de suspension, qui peut être affiché dans le **Threads** fenêtre de l’IDE.
+- Peut identifier lui-même et le programme, dans qu'il est en cours d’exécution. Threads peuvent être nommés, suspendus et repris. Un thread peut également énumérer ses frames de pile associée et, sous certaines conditions, peut être déplacé vers un autre frame de pile. Étant donné le contexte d’un frame de pile, un thread peut retourner son thread logique associé, le cas échéant. Un thread a des propriétés, telles que d’un compteur de suspension, qui peut être affiché dans le **Threads** fenêtre de l’IDE.
 
--   Est représenté par un [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) interface, généralement créé par un moteur de débogage (dé) ou d’une machine virtuelle en raison de l’exécution d’un programme.
+- Est représenté par un [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) interface, généralement créé par un moteur de débogage (dé) ou d’une machine virtuelle en raison de l’exécution d’un programme.
 
 ## <a name="see-also"></a>Voir aussi
 - [Programmes](../../extensibility/debugger/programs.md)

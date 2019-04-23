@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34a9a97e018642660d7424b0bfce2a1bbbc9c073
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.openlocfilehash: 6a7bf7d49430923652ece66fc566ee75af1884d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983518"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093344"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>Procédure pas à pas : Publier une extension Visual Studio
 
@@ -30,7 +30,7 @@ Cette procédure pas à pas vous montre comment publier une extension Visual Stu
 
 Cet article utilise une extension de package Visual Studio par défaut, mais les étapes sont valides pour chaque type d’extension.
 
-1. Créer un VSPackage en C# nommé `TestPublish` qui a une commande de menu. Pour plus d’informations, consultez [créer votre première extension : Hello World](../extensibility/extensibility-hello-world.md).
+1. Créer un VSPackage en c# nommé `TestPublish` qui a une commande de menu. Pour plus d’informations, consultez [créer votre première extension : Hello World](../extensibility/extensibility-hello-world.md).
 
 ## <a name="package-your-extension"></a>Votre extension de package
 
@@ -80,27 +80,27 @@ Cet article utilise une extension de package Visual Studio par défaut, mais les
 
     * **ID VSIX** est l’identificateur unique utilisé par Visual Studio pour votre extension. Cet identificateur est requis si vous souhaitez que pour que votre extension à jour automatiquement. Cet identificateur est rempli automatiquement à partir de la *source.extension.vsixmanifest* fichier.
 
-   * **Logo** qui est utilisé pour votre extension. Ce logo est rempli automatiquement à partir de la *source.extension.vsixmanifest* fichier s’il est fourni.
+    * **Logo** qui est utilisé pour votre extension. Ce logo est rempli automatiquement à partir de la *source.extension.vsixmanifest* fichier s’il est fourni.
 
-     * **Description courte** de ce que fait votre extension. Cette description est rempli automatiquement à partir de la *source.extension.vsixmanifest* fichier.
+    * **Description courte** de ce que fait votre extension. Cette description est rempli automatiquement à partir de la *source.extension.vsixmanifest* fichier.
 
-     * **Vue d’ensemble** est un bon emplacement pour inclure des captures d’écran et des informations détaillées sur ce que fait votre extension.
+    * **Vue d’ensemble** est un bon emplacement pour inclure des captures d’écran et des informations détaillées sur ce que fait votre extension.
 
-     * **Prise en charge des versions de Visual Studio** vous permet de choisir les versions de Visual Studio fonctionne sur votre extension. Votre extension est installée uniquement pour ces versions.
+    * **Prise en charge des versions de Visual Studio** vous permet de choisir les versions de Visual Studio fonctionne sur votre extension. Votre extension est installée uniquement pour ces versions.
 
-     * ** Pris en charge de Visual Studio Édition vous permet de choisir quelles éditions de Visual Studio fonctionne sur votre extension. Votre extension est installée uniquement pour ces éditions.
+    * ** Pris en charge de Visual Studio Édition vous permet de choisir quelles éditions de Visual Studio fonctionne sur votre extension. Votre extension est installée uniquement pour ces éditions.
 
-     * **Type**. Le type le plus courant des extensions sont **outils**.
+    * **Type**. Le type le plus courant des extensions sont **outils**.
 
-     * **Catégories**. Sélectionnez jusqu'à trois qui sont le mieux pour votre extension.
+    * **Catégories**. Sélectionnez jusqu'à trois qui sont le mieux pour votre extension.
 
-     * **Balises** sont les mots clés qui permettent aux utilisateurs de trouver votre extension. Balises peuvent aider à augmenter la pertinence de la recherche de vos extensions dans la place de marché.
+    * **Balises** sont les mots clés qui permettent aux utilisateurs de trouver votre extension. Balises peuvent aider à augmenter la pertinence de la recherche de vos extensions dans la place de marché.
 
-     * **Catégorie de tarification** est le coût de votre extension.
+    * **Catégorie de tarification** est le coût de votre extension.
 
-     * **Référentiel de code source** vous permet de partager un lien vers votre code source avec la Communauté.
+    * **Référentiel de code source** vous permet de partager un lien vers votre code source avec la Communauté.
 
-     * **Autoriser des questions et réponses pour votre extension** permet aux utilisateurs de laisser des questions sur votre page d’entrée extension.
+    * **Autoriser des questions et réponses pour votre extension** permet aux utilisateurs de laisser des questions sur votre page d’entrée extension.
 
 9. Cliquez sur **enregistrer et charger**. Page de gestion de cette option vous revenez à votre serveur de publication. Votre extension n’a pas encore été publiée. Pour publier votre extension, cliquez sur votre extension, puis sélectionnez **rendre Public**. Vous pouvez afficher la façon dont votre extension ressemblera sur place de marché en sélectionnant **afficher l’Extension**. Pour les nombres d’acquisition, cliquez sur **rapports**. Pour apporter des modifications à votre extension, cliquez sur **modifier**.
 

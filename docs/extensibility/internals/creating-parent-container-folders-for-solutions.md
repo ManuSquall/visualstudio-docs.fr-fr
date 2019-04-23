@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c23ec3101baac033cbef47f6f1c3ad6f717a15d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: b9b48cb7862b23df325b35bba0cb3e197573e3c0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661059"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102716"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Créer des dossiers pour les solutions de conteneur parent
 Dans la Source de contrôle plug-in API Version 1.2, un utilisateur peut spécifier une destination de contrôle de source de racine unique pour tous les projets web dans la solution. Cette racine unique est appelée une racine d’unifiée Super (Sud).
@@ -35,13 +35,13 @@ Dans la Source de contrôle plug-in API Version 1.2, un utilisateur peut spécif
 
  Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE crée presque toujours un dossier SUR lors de l’ajout d’une solution au contrôle de code source. Plus précisément, il le fait dans les cas suivants :
 
--   Le projet est un projet web de partage de fichiers.
+- Le projet est un projet web de partage de fichiers.
 
--   Il existe des lecteurs différents pour le projet et le fichier solution.
+- Il existe des lecteurs différents pour le projet et le fichier solution.
 
--   Il existe des partages différents pour le projet et le fichier solution.
+- Il existe des partages différents pour le projet et le fichier solution.
 
--   Projets ont été ajoutés séparément (dans une solution sous contrôle de code source).
+- Projets ont été ajoutés séparément (dans une solution sous contrôle de code source).
 
 Dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], il est recommandé que le nom du dossier SUR être le même que le nom de la solution sans l’extension. Le tableau suivant récapitule le comportement dans les deux versions.
 

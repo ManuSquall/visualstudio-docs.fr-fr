@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 73266c77a26f614af9978b48f7475086070aa5e6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 1d4221cfdc0d741264aa4667892117ba0cc24f9a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666005"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108280"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Vue d'ensemble du multi-ciblage MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,15 +26,15 @@ MSBuild vous permet de compiler une application pour l’exécuter sur une versi
   
  Voici quelques-unes des fonctionnalités de ciblage de MSBuild :  
   
--   Vous pouvez développer une application qui cible une version antérieure du .NET Framework (par exemple, la version 2.0, 3.5 ou 4).  
+- Vous pouvez développer une application qui cible une version antérieure du .NET Framework (par exemple, la version 2.0, 3.5 ou 4).  
   
--   Vous pouvez cibler des Frameworks autre que le .NET Framework (par exemple, Silverlight Framework).  
+- Vous pouvez cibler des Frameworks autre que le .NET Framework (par exemple, Silverlight Framework).  
   
--   Vous pouvez cibler un *profil Framework*, qui est un sous-ensemble prédéfini d’une version cible de .NET Framework.  
+- Vous pouvez cibler un *profil Framework*, qui est un sous-ensemble prédéfini d’une version cible de .NET Framework.  
   
--   Si un service pack pour la version actuelle du .NET Framework est publié, vous pouvez le cibler.  
+- Si un service pack pour la version actuelle du .NET Framework est publié, vous pouvez le cibler.  
   
--   Le ciblage MSBuild garantit qu’une application utilise uniquement les fonctionnalités qui sont disponibles dans le Framework et la plateforme ciblés.  
+- Le ciblage MSBuild garantit qu’une application utilise uniquement les fonctionnalités qui sont disponibles dans le Framework et la plateforme ciblés.  
   
 ## <a name="target-framework-and-platform"></a>Framework et plateforme cibles  
  Un *Framework cible* correspond à la version du .NET Framework sur laquelle le projet s’exécute, et une *plateforme cible* à la plateforme système sur laquelle le projet s’exécute.  Par exemple, vous pouvez cibler une application .NET Framework 2.0 pour qu’elle s’exécute sur une plateforme 32 bits compatible avec la famille de processeurs 802x86 (x86). La combinaison de framework cible et de plateforme cible porte le nom de *contexte cible*. Pour plus d’informations, consultez [Framework cible et plateforme cible](../msbuild/msbuild-target-framework-and-target-platform.md).  

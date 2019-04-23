@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a32de469c5b58ca2bf58901e30b81cfb70ed84b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ee221f0c1da32694e869177399981cc16ce901f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803525"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099466"
 ---
 # <a name="vsperf"></a>VSPerf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Utilisez l’outil en ligne de commande **VsPerf** pour :
   
    Pour plus d’informations sur les options de profilage, consultez [Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
-##  <a name="BKMK_In_this_topic"></a> Dans cette rubrique  
+## <a name="BKMK_In_this_topic"></a> Dans cette rubrique  
  Cette rubrique décrit les options que vous pouvez utiliser avec l’outil en ligne de commande `vsperf.exe`. La rubrique contient les sections suivantes :  
   
  [Applications du Windows Store uniquement](#BKMK_windows_store_apps_only)  
@@ -36,7 +36,7 @@ Utilisez l’outil en ligne de commande **VsPerf** pour :
   
  [Toutes les applications](#BKMK_All_applications)  
   
-##  <a name="BKMK_windows_store_apps_only"></a> Applications du Windows Store uniquement  
+## <a name="BKMK_windows_store_apps_only"></a> Applications du Windows Store uniquement  
  Ces options s’appliquent uniquement aux applications du Windows Store.  
   
 |||  
@@ -47,7 +47,7 @@ Utilisez l’outil en ligne de commande **VsPerf** pour :
 |**/noclr**|Optionnel. Ne collecte pas de données CLR.<br /><br /> Utilisez uniquement avec /package ou /attach.<br /><br /> Optimisation ; aucune résolution de symbole managé.|  
 |**/listapps**|Liste les noms et les noms complets de packages des applications installées.|  
   
-##  <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a> Applications de bureau Windows 8 et applications Windows Server 2012 uniquement  
+## <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a> Applications de bureau Windows 8 et applications Windows Server 2012 uniquement  
  Ces options ne fonctionnent pas sur les applications du Windows Store.  
   
 |||  
@@ -56,7 +56,7 @@ Utilisez l’outil en ligne de commande **VsPerf** pour :
 |**/args:{arguments_exécutable}**|Spécifie les arguments de ligne de commande à passer à la cible de **/launch**.|  
 |**/console**|Exécute la cible **/launch** dans une nouvelle fenêtre de commande.|  
   
-##  <a name="BKMK_All_applications"></a>Toutes les applications  
+## <a name="BKMK_All_applications"></a>Toutes les applications  
  Ces options s’appliquent à toutes les applications Windows 8 ou Windows Server 2012.  
   
 |||  

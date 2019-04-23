@@ -26,54 +26,54 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ddec41c95e5bb2a3703cf2502cbf592c0794eba2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 56c4270bd878ef127d60df80aa97d9d65f3d3132
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950016"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110308"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Procédure pas à pas : débogage d’un Windows Form
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Un formulaire Windows est une des applications managées plus courantes. Un formulaire Windows crée une application Windows standard. Vous pouvez effectuer cette procédure pas à pas à l’aide de Visual Basic, C# ou C++.  
+Un formulaire Windows est une des applications managées plus courantes. Un formulaire Windows crée une application Windows standard. Vous pouvez effectuer cette procédure pas à pas à l’aide de Visual Basic, c# ou C++.  
   
  Tout d’abord, vous devez fermer les solutions ouvertes.  
   
 ### <a name="to-prepare-for-this-walkthrough"></a>Pour vous préparer à cette procédure  
   
--   Si vous avez déjà ouvert une solution ouverte, fermez-la. (Sur le **fichier** menu, sélectionnez **fermer la Solution**.)  
+- Si vous avez déjà ouvert une solution ouverte, fermez-la. (Sur le **fichier** menu, sélectionnez **fermer la Solution**.)  
   
 ## <a name="create-a-new-windows-form"></a>Créer un Windows Form  
  Ensuite, vous allez créer un nouveau formulaire Windows.  
   
 #### <a name="to-create-the-windows-form-for-this-walkthrough"></a>Pour créer le formulaire Windows pour cette procédure pas à pas  
   
-1.  Sur le **fichier** menu, choisissez **New** et cliquez sur **projet**.  
+1. Sur le **fichier** menu, choisissez **New** et cliquez sur **projet**.  
   
      La boîte de dialogue **Nouveau projet** s’affiche.  
   
-2.  Dans le volet Types de projets, ouvrez le **Visual Basic**, **Visual C#**, ou **Visual C++** nœud, puis  
+2. Dans le volet Types de projets, ouvrez le **Visual Basic**, **Visual C#**, ou **Visual C++** nœud, puis  
   
-    1.  Pour Visual Basic ou Visual C#, sélectionnez le **Windows** nœud, puis sélectionnez **Application de formulaire Windows** dans le **modèles** volet.  
+    1. Pour Visual Basic ou Visual c#, sélectionnez le **Windows** nœud, puis sélectionnez **Application de formulaire Windows** dans le **modèles** volet.  
   
-    2.  Pour Visual C++, sélectionnez le **CLR** nœud, puis sélectionnez **Application de formulaire Windows** dans le **modèles** volet...  
+    2. Pour Visual C++, sélectionnez le **CLR** nœud, puis sélectionnez **Application de formulaire Windows** dans le **modèles** volet...  
   
-3.  Dans le **modèles** volet, sélectionnez **Windows Application**.  
+3. Dans le **modèles** volet, sélectionnez **Windows Application**.  
   
-4.  Dans le **nom** boîte, donnez un nom unique (par exemple, Walkthrough_SimpleDebug) au projet.  
+4. Dans le **nom** boîte, donnez un nom unique (par exemple, Walkthrough_SimpleDebug) au projet.  
   
-5.  Cliquez sur **OK**.  
+5. Cliquez sur **OK**.  
   
      Visual Studio crée un nouveau projet et affiche un nouveau formulaire dans le Concepteur Windows Forms. Pour plus d’informations, consultez [Windows Forms Designer](http://msdn.microsoft.com/3c3d61f8-f36c-4d41-b9c3-398376fabb15).  
   
-6.  Sur le **vue** menu, sélectionnez **boîte à outils**.  
+6. Sur le **vue** menu, sélectionnez **boîte à outils**.  
   
      La boîte à outils s'ouvre. Pour plus d'informations, consultez [Boîte à outils](../ide/reference/toolbox.md).  
   
-7.  Dans la boîte à outils, cliquez sur le **bouton** contrôler et faites glisser le contrôle sur l’aire de conception du formulaire. Relâchez le bouton sur le formulaire.  
+7. Dans la boîte à outils, cliquez sur le **bouton** contrôler et faites glisser le contrôle sur l’aire de conception du formulaire. Relâchez le bouton sur le formulaire.  
   
-8.  Dans la boîte à outils, cliquez sur le **zone de texte** contrôler et faites glisser le contrôle sur l’aire de conception du formulaire. Supprimer le **zone de texte** sur le formulaire.  
+8. Dans la boîte à outils, cliquez sur le **zone de texte** contrôler et faites glisser le contrôle sur l’aire de conception du formulaire. Supprimer le **zone de texte** sur le formulaire.  
   
 9. Sur l’aire de conception de formulaire, double-cliquez sur le bouton.  
   
@@ -101,7 +101,7 @@ Un formulaire Windows est une des applications managées plus courantes. Un form
   
 #### <a name="to-debug-the-windows-form-created-for-this-walkthrough"></a>Pour déboguer le formulaire Windows créé pour cette procédure pas à pas  
   
-1.  Dans la fenêtre source, cliquez sur la marge de gauche sur la même ligne que le texte que vous avez ajouté :  
+1. Dans la fenêtre source, cliquez sur la marge de gauche sur la même ligne que le texte que vous avez ajouté :  
   
     ```  
     ' Visual Basic  
@@ -119,17 +119,17 @@ Un formulaire Windows est une des applications managées plus courantes. Un form
     > [!NOTE]
     >  Vous pouvez également cliquer sur n’importe quelle ligne de code, pointez sur **point d’arrêt**, puis cliquez sur **insérer un point d’arrêt** pour ajouter un point d’arrêt sur cette ligne.  
   
-2.  Dans le menu **Déboguer**, choisissez **Démarrer**.  
+2. Dans le menu **Déboguer**, choisissez **Démarrer**.  
   
      Le formulaire Windows commence à s’exécuter.  
   
-3.  Dans le formulaire Windows, cliquez sur le bouton que vous avez ajouté.  
+3. Dans le formulaire Windows, cliquez sur le bouton que vous avez ajouté.  
   
      Dans Visual Studio, vous accédez à la ligne où vous définissez votre point d’arrêt sur la page de codes. Cette ligne doit être surlignée en jaune. Vous pouvez à présent afficher les variables de votre application et contrôler son exécution. Votre application s’est arrêtée et attend une action de votre part.  
   
-4.  Sur le **déboguer** menu, choisissez **Windows**, puis **espion**, puis cliquez sur **Espion1**.  
+4. Sur le **déboguer** menu, choisissez **Windows**, puis **espion**, puis cliquez sur **Espion1**.  
   
-5.  Dans le **Espion1** fenêtre, cliquez sur une ligne vide. Dans le **nom** colonne, tapez `textBox1.Text` (si vous utilisez Visual Basic, Visual C# ou J#) ou `textBox1->Text` (si vous utilisez C++), puis appuyez sur ENTRÉE.  
+5. Dans le **Espion1** fenêtre, cliquez sur une ligne vide. Dans le **nom** colonne, tapez `textBox1.Text` (si vous utilisez Visual Basic, Visual c# ou J#) ou `textBox1->Text` (si vous utilisez C++), puis appuyez sur ENTRÉE.  
   
      Le **Espion1** fenêtre affiche la valeur de cette variable entre guillemets :  
   
@@ -137,7 +137,7 @@ Un formulaire Windows est une des applications managées plus courantes. Un form
     ""  
     ```  
   
-6.  Dans le menu **Déboguer**, choisissez **Pas à pas détaillé**.  
+6. Dans le menu **Déboguer**, choisissez **Pas à pas détaillé**.  
   
      La valeur de TextBox1.Text, dans le **Espion1** fenêtre pour :  
   
@@ -145,9 +145,9 @@ Un formulaire Windows est une des applications managées plus courantes. Un form
     Button was clicked!  
     ```  
   
-7.  Sur le **déboguer** menu, choisissez **continuer** pour reprendre le débogage de votre programme.  
+7. Sur le **déboguer** menu, choisissez **continuer** pour reprendre le débogage de votre programme.  
   
-8.  Le formulaire Windows, cliquez sur le bouton Nouveau.  
+8. Le formulaire Windows, cliquez sur le bouton Nouveau.  
   
      Visual Studio s’arrête à nouveau l’exécution.  
   
@@ -162,7 +162,7 @@ Un formulaire Windows est une des applications managées plus courantes. Un form
   
 #### <a name="to-attach-to-the-windows-form-application-for-debugging"></a>Pour attacher à l’Application de formulaire Windows pour le débogage  
   
-1.  Dans le projet que vous avez créé ci-dessus, cliquez dans la marge de gauche pour définir une fois encore un point d’arrêt sur la ligne que vous avez ajouté :  
+1. Dans le projet que vous avez créé ci-dessus, cliquez dans la marge de gauche pour définir une fois encore un point d’arrêt sur la ligne que vous avez ajouté :  
   
     ```  
     ' Visual Basic  
@@ -175,19 +175,19 @@ Un formulaire Windows est une des applications managées plus courantes. Un form
     textBox1->Text = "Button was clicked!";  
     ```  
   
-2.  Sur le **déboguer** menu, sélectionnez **démarrer sans débogage**.  
+2. Sur le **déboguer** menu, sélectionnez **démarrer sans débogage**.  
   
      Le Windows Form s’exécute sous Windows, comme si vous aviez double-cliqué sur son exécutable. Le débogueur n’est pas attaché.  
   
-3.  Sur le **déboguer** menu, sélectionnez **attacher au processus**. (Cette commande est également disponible sur le **outils** menu.)  
+3. Sur le **déboguer** menu, sélectionnez **attacher au processus**. (Cette commande est également disponible sur le **outils** menu.)  
   
      La boîte de dialogue **Attacher au processus** s'affiche.  
   
-4.  Dans le **processus disponibles** volet, recherchez le nom du processus (Walkthrough_SimpleDebug.exe) dans le **processus** colonne et cliquez dessus.  
+4. Dans le **processus disponibles** volet, recherchez le nom du processus (Walkthrough_SimpleDebug.exe) dans le **processus** colonne et cliquez dessus.  
   
-5.  Cliquez sur le **attacher** bouton.  
+5. Cliquez sur le **attacher** bouton.  
   
-6.  Dans votre formulaire Windows, cliquez sur le seul et unique bouton.  
+6. Dans votre formulaire Windows, cliquez sur le seul et unique bouton.  
   
      Le débogueur interrompt l’exécution de l’écran de Windows sur le point d’arrêt.  
   

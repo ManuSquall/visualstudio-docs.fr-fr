@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c08f3d2f7ddcd3d9f1ad0eb0b937905d6449d00
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a494f954f3f670fb796b33a0dbd01e2512ad1d26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620887"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088624"
 ---
 # <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Procédure : Récupérer par programme un dossier par nom
   Cet exemple obtient une référence à un dossier personnalisé nommé, puis affiche le contenu du dossier.
@@ -30,7 +30,7 @@ ms.locfileid: "56620887"
 ## <a name="compile-the-code"></a>Compiler le code
  Cet exemple nécessite :
 
--   Un dossier nommé TestFolder.
+- Un dossier nommé TestFolder.
 
 ## <a name="see-also"></a>Voir aussi
 - [Travailler avec des dossiers](../vsto/working-with-folders.md)

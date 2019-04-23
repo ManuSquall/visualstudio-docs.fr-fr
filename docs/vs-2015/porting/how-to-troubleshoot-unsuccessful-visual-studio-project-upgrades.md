@@ -18,12 +18,12 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 7d5c30c9b61707f9ac4a32d49613b46416a8d881
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 194dae93e3a013da366d454582b531a2cc4ff8b6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804261"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096333"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Procédure : Résoudre les problèmes de mises à niveau du projet Visual Studio échoue
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ Parfois, Visual Studio ne peut pas convertir complètement un projet à partir d
 
 #### <a name="to-resolve-incorrect-file-paths"></a>Pour résoudre les chemins d’accès de fichier incorrect
 
-1.  Ouvrez votre fichier projet dans un éditeur de texte.
+1. Ouvrez votre fichier projet dans un éditeur de texte.
 
-2.  Rechercher les chemins d’accès qui peuvent être incorrects, en particulier ceux qui contiennent un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] numéro de version.
+2. Rechercher les chemins d’accès qui peuvent être incorrects, en particulier ceux qui contiennent un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] numéro de version.
 
-3.  Modifier les chemins d’accès de fichier incorrect afin qu’ils pointent vers les nouvelles cibles.
+3. Modifier les chemins d’accès de fichier incorrect afin qu’ils pointent vers les nouvelles cibles.
 
 ## <a name="the-project-does-not-build-because-references-are-not-valid"></a>Le projet ne génère pas, car les références ne sont pas valides
  Lorsque vous mettez à niveau [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pouvez également mettre à niveau le [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] version. Si votre projet contient des références qui sont indisponibles dans le nouveau [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] version, ils ne peuvent pas être résolus correctement. Il s’agit surtout pour les références qui incluent des numéros de version, par exemple, `Microsoft.VisualStudio.Shell.Interop.8.0`.

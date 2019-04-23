@@ -8,12 +8,12 @@ ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 02abe8858f928e5f3fb036b212e0a1ca777259a9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5f3ed2d3f8bc52b21f6a87ac7d6da00f665f6b28
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947128"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096528"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>UX Essentials pour Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -22,35 +22,35 @@ ms.locfileid: "58947128"
 
 ### <a name="1-be-consistent-within-the-visual-studio-environment"></a>1. Soyez cohérent dans l’environnement Visual Studio.
 
--   Suivez les modèles d’interaction existante au sein de l’interpréteur de commandes.
+- Suivez les modèles d’interaction existante au sein de l’interpréteur de commandes.
 
--   Concevoir des fonctionnalités pour être conforme aux exigences de langue et de savoir-faire visual du shell.
+- Concevoir des fonctionnalités pour être conforme aux exigences de langue et de savoir-faire visual du shell.
 
--   Utiliser des contrôles et des commandes partagées quand ils existent.
+- Utiliser des contrôles et des commandes partagées quand ils existent.
 
--   Comprendre la hiérarchie de Visual Studio et comment il établit le contexte et les lecteurs de l’interface utilisateur.
+- Comprendre la hiérarchie de Visual Studio et comment il établit le contexte et les lecteurs de l’interface utilisateur.
 
 ### <a name="2-use-the-environment-service-for-fonts-and-colors"></a>2. Utiliser le service de l’environnement pour les polices et couleurs.
 
--   L’interface utilisateur doit respecter le paramètre de police d’environnement actuel, sauf si elle est exposée pour la personnalisation dans la page polices et couleurs dans la boîte de dialogue Options.
+- L’interface utilisateur doit respecter le paramètre de police d’environnement actuel, sauf si elle est exposée pour la personnalisation dans la page polices et couleurs dans la boîte de dialogue Options.
 
--   Éléments d’interface utilisateur doivent utiliser le Service de VSColor, à l’aide des jetons d’environnement partagé ou les jetons spécifiques à la fonctionnalité.
+- Éléments d’interface utilisateur doivent utiliser le Service de VSColor, à l’aide des jetons d’environnement partagé ou les jetons spécifiques à la fonctionnalité.
 
 ### <a name="3-make-all-imagery-consistent-with-the-new-vs-style"></a>3. Vérifiez toutes les images cohérentes avec le nouveau style de Visual Studio.
 
--   Suivez les principes de conception de Visual Studio pour les icônes, les glyphes et les autres graphiques.
+- Suivez les principes de conception de Visual Studio pour les icônes, les glyphes et les autres graphiques.
 
--   Ne placez pas de texte dans des éléments graphiques.
+- Ne placez pas de texte dans des éléments graphiques.
 
 ### <a name="4-design-from-a-user-centric-perspective"></a>4. Conception du point de vue centré sur l’utilisateur.
 
--   Créer le flux de tâches avant les composants individuels qu’il contient.
+- Créer le flux de tâches avant les composants individuels qu’il contient.
 
--   Vous familiariser avec vos utilisateurs et rendre cette connaissance explicite dans votre spécification.
+- Vous familiariser avec vos utilisateurs et rendre cette connaissance explicite dans votre spécification.
 
--   Lors de la révision de l’interface utilisateur, évaluer l’expérience terminée, ainsi que les détails.
+- Lors de la révision de l’interface utilisateur, évaluer l’expérience terminée, ainsi que les détails.
 
--   Concevoir votre interface utilisateur afin qu’il reste fonctionnel et attrayants, quel que soit les paramètres régionaux ou linguistiques.
+- Concevoir votre interface utilisateur afin qu’il reste fonctionnel et attrayants, quel que soit les paramètres régionaux ou linguistiques.
 
 ## <a name="screen-resolution"></a>Résolution d’écran
 
@@ -69,9 +69,9 @@ ms.locfileid: "58947128"
 
 #### <a name="feature-team-goals"></a>Objectifs d’équipe de fonctionnalité
 
--   Avertir les utilisateurs qu’ils ont ajoutés à un élément qui doit être configuré.
+- Avertir les utilisateurs qu’ils ont ajoutés à un élément qui doit être configuré.
 
--   Attirer l’attention de l’utilisateur sur les domaines nécessitant une entrée.
+- Attirer l’attention de l’utilisateur sur les domaines nécessitant une entrée.
 
 #### <a name="anti-pattern-solution"></a>Anti-modèle de solution
  Dès que l’utilisateur a lancé une action et avant qu’ils ont terminé la tâche, placez immédiatement arrêt critique icônes en regard des zones qui nécessitent une configuration.
@@ -88,11 +88,11 @@ ms.locfileid: "58947128"
 #### <a name="alternatives"></a>Alternatives
  Une bien meilleure solution à ce problème consisterait à :
 
--   Autoriser l’utilisateur à ajouter une déclaration sans avertissement et d’accéder immédiatement à définir des propriétés sur l’élément.
+- Autoriser l’utilisateur à ajouter une déclaration sans avertissement et d’accéder immédiatement à définir des propriétés sur l’élément.
 
--   Ajouter l’icône d’avertissement (triangle gold) lorsque le focus se déplace à partir de l’élément, par exemple pour ajouter une autre déclaration à la liste ou tentent de modifier des onglets dans le concepteur.
+- Ajouter l’icône d’avertissement (triangle gold) lorsque le focus se déplace à partir de l’élément, par exemple pour ajouter une autre déclaration à la liste ou tentent de modifier des onglets dans le concepteur.
 
--   Si l’utilisateur tente de remplacer les tabulations avant de définir des propriétés sur toutes les déclarations, affiche une boîte de dialogue expliquant que l’application n’est pas générée (ou toutes les implications) jusqu'à ce que les avertissements sont résolus. Si l’utilisateur ferme la boîte de dialogue et remplace les tabulations quand même une icône (critique ou avertissement, le cas échéant) est ajoutée à l’onglet déclarations.
+- Si l’utilisateur tente de remplacer les tabulations avant de définir des propriétés sur toutes les déclarations, affiche une boîte de dialogue expliquant que l’application n’est pas générée (ou toutes les implications) jusqu'à ce que les avertissements sont résolus. Si l’utilisateur ferme la boîte de dialogue et remplace les tabulations quand même une icône (critique ou avertissement, le cas échéant) est ajoutée à l’onglet déclarations.
 
 ### <a name="forcing-the-user-to-read-text-before-dismissing-ui"></a>Forcer l’utilisateur à lire le texte avant de faire disparaître de l’interface utilisateur
 
@@ -173,9 +173,9 @@ ms.locfileid: "58947128"
 
    **Meilleure solution :** Poser la question de que l’utilisateur serait demanderez en cliquant sur le lien.
 
--   Fonctionnement des services Windows Azure
+- Fonctionnement des services Windows Azure
 
--   Lorsque j’ai besoin d’un projet Windows Azure Mobile Services ?
+- Lorsque j’ai besoin d’un projet Windows Azure Mobile Services ?
 
 #### <a name="using-click-here-for-links"></a>À l’aide de « Cliquez ici » pour obtenir des liens
  Des liens hypertexte doivent être autodescriptives. Il est un anti-modèle à utiliser « Cliquez ici » ou toute variante similaire.

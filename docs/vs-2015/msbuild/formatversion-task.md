@@ -14,23 +14,23 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2ed16962a417f53569e7fd6e5364ac0a7f11d9a8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ee6e163bd6587d93c970a56ac1c08383084ddc0c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659798"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095566"
 ---
 # <a name="formatversion-task"></a>Tâche FormatVersion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ajoute le numéro de révision au numéro de version.  
   
--   Cas #1 : Input: Version=\<undefined>;  Revision=\<peu importe>;   Output: OutputVersion="1.0.0.0"  
+- Cas #1 : Input: Version=\<undefined>;  Revision=\<peu importe>;   Output: OutputVersion="1.0.0.0"  
   
--   Cas #2 : Input: Version="1.0.0.*"  Revision="5"  Output: OutputVersion="1.0.0.5"  
+- Cas #2 : Input: Version="1.0.0.*"  Revision="5"  Output: OutputVersion="1.0.0.5"  
   
--   Cas #3 : Input: Version="1.0.0.0"  Revision=\<peu importe>;  Output: OutputVersion="1.0.0.0"  
+- Cas #3 : Input: Version="1.0.0.0"  Revision=\<peu importe>;  Output: OutputVersion="1.0.0.0"  
   
 ## <a name="parameters"></a>Paramètres  
  Le tableau ci-dessous décrit les paramètres de la tâche `FormatVersion` .  

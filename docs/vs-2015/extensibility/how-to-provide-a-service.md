@@ -10,12 +10,12 @@ ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 082e8db8793850319f02586ba3894da8775e6ff2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba007a8084355445f0404a9b0f7a2c1cee7b2005
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948428"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108181"
 ---
 # <a name="how-to-provide-a-service"></a>Procédure : Fournir un service
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +31,9 @@ Un VSPackage peut fournir des services qui les VSPackages autres peuvent utilise
   
 #### <a name="implementing-a-service"></a>Implémentation d’un service  
   
-1. Créez un projet VSIX (**fichier / nouveau / projet / Visual C# / extensibilité / projet VSIX**).  
+1. Créez un projet VSIX (**fichier / nouveau / projet / Visual c# / extensibilité / projet VSIX**).  
   
-2. Ajouter un VSPackage au projet. Sélectionnez le nœud de projet dans le **l’Explorateur de solutions** et cliquez sur **Ajouter / nouvel élément / éléments Visual C# / extensibilité / Package Visual Studio**.  
+2. Ajouter un VSPackage au projet. Sélectionnez le nœud de projet dans le **l’Explorateur de solutions** et cliquez sur **Ajouter / nouvel élément / éléments Visual c# / extensibilité / Package Visual Studio**.  
   
 3. Pour implémenter un service, vous devez créer trois types :  
   
@@ -78,7 +78,7 @@ Un VSPackage peut fournir des services qui les VSPackages autres peuvent utilise
   
 ### <a name="registering-a-service"></a>L’inscription d’un service  
   
-1.  Pour inscrire un service, ajoutez le <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> au VSPackage qui fournit le service. Voici un exemple :  
+1. Pour inscrire un service, ajoutez le <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> au VSPackage qui fournit le service. Voici un exemple :  
   
     ```csharp  
     [ProvideService(typeof(SMyService))]  
@@ -95,7 +95,7 @@ Un VSPackage peut fournir des services qui les VSPackages autres peuvent utilise
   
 ### <a name="adding-a-service"></a>Ajout d’un Service  
   
-1.  1.  Dans l’initialiseur de VSPackage, ajoutez le service et une méthode de rappel pour créer les services. Voici la modification à apporter au <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> méthode :  
+1. 1.  Dans l’initialiseur de VSPackage, ajoutez le service et une méthode de rappel pour créer les services. Voici la modification à apporter au <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> méthode :  
   
     ```csharp  
     protected override void Initialize()  
@@ -107,7 +107,7 @@ Un VSPackage peut fournir des services qui les VSPackages autres peuvent utilise
     }  
     ```  
   
-2.  Implémentez la méthode de rappel qui doit créer et retourner le service ou null s’il ne peut pas être créé.  
+2. Implémentez la méthode de rappel qui doit créer et retourner le service ou null s’il ne peut pas être créé.  
   
     ```  
     private object CreateService(IServiceContainer container, Type serviceType)  
@@ -121,7 +121,7 @@ Un VSPackage peut fournir des services qui les VSPackages autres peuvent utilise
     > [!NOTE]
     >  Visual Studio peut rejeter une demande de fournir un service. Il le fait si un autre package Visual Studio fournit déjà le service.  
   
-3.  Vous pouvez maintenant obtenir le service et utiliser ses méthodes. Nous allons le montrer dans l’initialiseur, mais vous pouvez obtenir le service n’importe où que vous souhaitez utiliser le service.  
+3. Vous pouvez maintenant obtenir le service et utiliser ses méthodes. Nous allons le montrer dans l’initialiseur, mais vous pouvez obtenir le service n’importe où que vous souhaitez utiliser le service.  
   
     ```csharp  
     protected override void Initialize()  

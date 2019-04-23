@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 92f233a036c3c0b40cbd53a298154919861b58b8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: dca65a4ec1fecd885c97ce80d9827fe78c5ce9b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663659"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110503"
 ---
 # <a name="how-to-edit-xml-files"></a>Procédure : modification de fichiers XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,45 +26,45 @@ L'éditeur XML est le nouvel éditeur pour les fichiers XML. Il peut être utili
   
 ### <a name="to-edit-an-xml-file"></a>Pour modifier un fichier XML  
   
-1.  Double-cliquez sur le fichier à modifier.  
+1. Double-cliquez sur le fichier à modifier.  
   
 ### <a name="to-add-a-new-xml-file-to-a-project"></a>Pour ajouter un nouveau fichier XML à un projet  
   
-1.  À partir de la **projet** menu, sélectionnez **ajouter un nouvel élément**.  
+1. À partir de la **projet** menu, sélectionnez **ajouter un nouvel élément**.  
   
-2.  Sélectionnez **fichier XML** à partir de la **modèles** volet.  
+2. Sélectionnez **fichier XML** à partir de la **modèles** volet.  
   
-3.  Entrez le nom de fichier dans le **nom** champ et appuyez sur **ajouter**.  
+3. Entrez le nom de fichier dans le **nom** champ et appuyez sur **ajouter**.  
   
      Le fichier XML est ajouté au projet et ouvert dans l'éditeur XML. Il contient la déclaration XML par défaut, `<?xml version="1.0" encoding="utf-8" ?>`.  
   
 ### <a name="to-add-an-existing-xml-file-to-a-project"></a>Pour ajouter un fichier XML existant à un projet  
   
-1.  À partir de la **projet** menu, sélectionnez **ajouter un élément existant**.  
+1. À partir de la **projet** menu, sélectionnez **ajouter un élément existant**.  
   
      Le **ajouter un élément existant** boîte de dialogue s’affiche.  
   
-2.  Sélectionnez un fichier XML et la presse **ajouter**.  
+2. Sélectionnez un fichier XML et la presse **ajouter**.  
   
 ### <a name="to-create-a-new-xml-or-xslt-file"></a>Pour créer un nouveau fichier XML ou XSLT  
   
-1.  À partir de la **fichier** menu, sélectionnez **New**.  
+1. À partir de la **fichier** menu, sélectionnez **New**.  
   
      Le **nouveau fichier** boîte de dialogue s’affiche.  
   
-2.  Sélectionnez **fichier XML** pour créer un nouveau fichier XML ; ou, sélectionnez **fichier XSLT** pour créer une nouvelle feuille de style XSLT.  
+2. Sélectionnez **fichier XML** pour créer un nouveau fichier XML ; ou, sélectionnez **fichier XSLT** pour créer une nouvelle feuille de style XSLT.  
   
-3.  Cliquez sur **Ouvrir**.  
+3. Cliquez sur **Ouvrir**.  
   
 ### <a name="to-create-a-project-for-xml-files"></a>Pour créer un projet pour des fichiers XML  
   
-1.  À partir de la **fichier** menu, sélectionnez **New**, puis sélectionnez **projet**.  
+1. À partir de la **fichier** menu, sélectionnez **New**, puis sélectionnez **projet**.  
   
      La boîte de dialogue **Nouveau projet** s’affiche.  
   
-2.  Sélectionnez le langage de code de votre choix, sélectionnez **projet vide**, puis cliquez sur **OK**.  
+2. Sélectionnez le langage de code de votre choix, sélectionnez **projet vide**, puis cliquez sur **OK**.  
   
-3.  Ajoutez des fichiers XML au projet.  
+3. Ajoutez des fichiers XML au projet.  
   
      L'éditeur XML recherche les schémas ajoutés à ce projet et les utilise pour la validation et les fonctions IntelliSense dans tout fichier XML, de schéma ou XSLT que vous éditez alors que ce projet est ouvert.  
   

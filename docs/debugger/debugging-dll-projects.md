@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efdde349a0501af423ad08576fcf82491b59fcfd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: c22da2a31be1389ca0b60df6cc64ac6c9155ad69
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679419"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102580"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Déboguer des DLL dans Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -86,7 +86,7 @@ Pour les projets C/C++, vous pouvez définir des en-tête et les emplacements de
 
 Pour plus d’informations sur les paramètres de projet C++, consultez [pages de propriétés (Visual C++)](/cpp/ide/property-pages-visual-cpp).
 
-##  <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a> Créer une version Debug
+## <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a> Créer une version Debug
 
 Veillez à générer une version Debug de la DLL avant de commencer le débogage. Pour déboguer une DLL, une application appelante doit être en mesure de trouver son [fichier .pdb](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) et tout autre fichier requiert la DLL.
 
@@ -94,7 +94,7 @@ Vous pouvez créer une tâche de génération personnalisée pour copier les fic
 
 Veillez à appeler la DLL à son emplacement approprié. Cela peut sembler évident, mais si une application appelante détecte et charge une autre copie de la DLL, le débogueur n’atteindra jamais les points d’arrêt que vous définissez.
 
-##  <a name="vxtskdebuggingdllprojectswaystodebugthedll"></a> Déboguer une DLL
+## <a name="vxtskdebuggingdllprojectswaystodebugthedll"></a> Déboguer une DLL
 
 Vous ne pouvez pas exécuter une DLL directement. Il doit être appelé par une application, généralement un *.exe* fichier. Pour plus d’informations, consultez [créer et gérer des projets Visual C++](/cpp/ide/creating-and-managing-visual-cpp-projects).
 
@@ -117,13 +117,13 @@ Pour déboguer une DLL à partir d’une application appelante, vous pouvez :
 
   ou
 
-- Attacher à une application qui est déjà déployé et en cours d’exécution sur un ordinateur de test ou de production. Utilisez cette méthode pour les DLL sur les sites Web ou dans les applications web. Pour plus d’informations, consultez [Guide pratique pour attacher à un processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
+- Attacher à une application qui est déjà déployé et en cours d’exécution sur un ordinateur de test ou de production. Utilisez cette méthode pour les DLL sur les sites Web ou dans les applications web. Pour plus d'informations, voir [Procédure : Attacher à un processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
 
 Avant de commencer le débogage de l’application appelante, définissez un point d’arrêt dans la DLL. Consultez [à l’aide de points d’arrêt](../debugger/using-breakpoints.md). Lorsque le point d’arrêt de la DLL est atteint, vous pouvez parcourir le code, en observant l’action à chaque ligne. Pour plus d’informations, consultez [parcourir le code dans le débogueur](../debugger/navigating-through-code-with-the-debugger.md).
 
-Pendant le débogage, vous pouvez utiliser la **Modules** fenêtre pour vérifier les DLL et *.exe* fichiers le chargement de l’application. Pour ouvrir le **Modules** fenêtre, pendant le débogage, sélectionnez **déboguer** > **Windows** > **Modules**. Pour plus d’informations, consultez [Guide pratique pour utiliser la fenêtre Modules](../debugger/how-to-use-the-modules-window.md).
+Pendant le débogage, vous pouvez utiliser la **Modules** fenêtre pour vérifier les DLL et *.exe* fichiers le chargement de l’application. Pour ouvrir le **Modules** fenêtre, pendant le débogage, sélectionnez **déboguer** > **Windows** > **Modules**. Pour plus d'informations, voir [Procédure : Utiliser la fenêtre Modules](../debugger/how-to-use-the-modules-window.md).
 
-###  <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> Utiliser la fenêtre exécution
+### <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> Utiliser la fenêtre exécution
 
 Vous pouvez utiliser la **immédiat** fenêtre pour évaluer des méthodes ou des fonctions DLL au moment du design. Le **immédiat** fenêtre joue le rôle d’une application appelante.
 
@@ -154,9 +154,9 @@ Par exemple, pour tester une méthode nommée `Test` dans la classe `Class1`:
 
    Le point d’arrêt est atteint, et vous pouvez parcourir `Test`. Une fois que l’exécution a quitté `Test`, le débogueur repasse en mode Création.
 
-##  <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> Débogage en mode mixte
+## <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> Débogage en mode mixte
 
-Vous pouvez écrire une application appelante pour une DLL en code managé ou natif. Si votre application native appelle une DLL managée et que vous souhaitez déboguer les deux, vous pouvez activer les débogueurs managés et natifs dans les propriétés du projet. Le processus exact varie selon que vous souhaitez démarrer le débogage à partir du projet de DLL ou le projet d’application appelant. Pour plus d’informations, consultez [Guide pratique pour déboguer en mode mixte](../debugger/how-to-debug-in-mixed-mode.md).
+Vous pouvez écrire une application appelante pour une DLL en code managé ou natif. Si votre application native appelle une DLL managée et que vous souhaitez déboguer les deux, vous pouvez activer les débogueurs managés et natifs dans les propriétés du projet. Le processus exact varie selon que vous souhaitez démarrer le débogage à partir du projet de DLL ou le projet d’application appelant. Pour plus d'informations, voir [Procédure : Déboguer en mode mixte](../debugger/how-to-debug-in-mixed-mode.md).
 
 Vous pouvez également déboguer une DLL native à partir d’un projet appelant managé. Pour plus d’informations, consultez [comment déboguer le code managé et natif](how-to-debug-managed-and-native-code.md).
 

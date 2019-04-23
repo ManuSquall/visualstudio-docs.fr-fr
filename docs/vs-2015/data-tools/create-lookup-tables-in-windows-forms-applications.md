@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 280cc2fa94b8ea8167da2168cd4fff90bb8fa612
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 76c55d45e279a3fcf6579c77bf7d226c7baf13d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663230"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102976"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Créer des tables de recherche dans des applications Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,25 +35,25 @@ Le terme *table de recherche* décrit les contrôles qui sont liés aux tables d
   
 ## <a name="to-databind-a-lookup-control"></a>Pour lier un contrôle de recherche  
   
-1.  Ouvrez la fenêtre **Sources de données**.  
+1. Ouvrez la fenêtre **Sources de données**.  
   
     > [!NOTE]
     > Les tables de recherche nécessitent que les deux tables ou objets connexes sont disponibles dans le **des Sources de données** fenêtre.
   
-2.  Développez les nœuds dans le **des Sources de données** fenêtre jusqu'à ce que vous pouvez voir la table parente et toutes ses colonnes et la table enfant connexe et toutes ses colonnes.  
+2. Développez les nœuds dans le **des Sources de données** fenêtre jusqu'à ce que vous pouvez voir la table parente et toutes ses colonnes et la table enfant connexe et toutes ses colonnes.  
   
     > [!NOTE]
     >  Le nœud de la table enfant est le nœud qui apparaît sous la forme d’un nœud enfant développable dans la table parente.  
   
-3.  Modifier le type de déplacement de la table enfant à **détails** en sélectionnant **détails** à partir de la liste de contrôle sur le nœud de la table enfant. Pour plus d’informations, consultez [définir le contrôle à créer lors du déplacement de la fenêtre Sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+3. Modifier le type de déplacement de la table enfant à **détails** en sélectionnant **détails** à partir de la liste de contrôle sur le nœud de la table enfant. Pour plus d’informations, consultez [définir le contrôle à créer lors du déplacement de la fenêtre Sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
-4.  Recherchez le nœud qui lie les deux tables (le `CustomerID` nœud dans l’exemple précédent). Modifiez son type de déplacement à un <xref:System.Windows.Forms.ComboBox> en sélectionnant **ComboBox** à partir de la liste de contrôle.  
+4. Recherchez le nœud qui lie les deux tables (le `CustomerID` nœud dans l’exemple précédent). Modifiez son type de déplacement à un <xref:System.Windows.Forms.ComboBox> en sélectionnant **ComboBox** à partir de la liste de contrôle.  
   
-5.  Faites glisser le nœud de la table enfant principale à partir de la **des Sources de données** fenêtre vers votre formulaire.  
+5. Faites glisser le nœud de la table enfant principale à partir de la **des Sources de données** fenêtre vers votre formulaire.  
   
      Supprimer des contrôles liés aux données (avec des étiquettes descriptives) et un outil (<xref:System.Windows.Forms.BindingNavigator>) apparaissent sur le formulaire. Un [DataSet](../data-tools/dataset-tools-in-visual-studio.md), TableAdapter, <xref:System.Windows.Forms.BindingSource>, et <xref:System.Windows.Forms.BindingNavigator> s’affichent dans la barre d’état du composant.  
   
-6.  Maintenant, faites glisser le nœud de la table parent principal à partir de la **des Sources de données** fenêtre directement sur le contrôle de recherche (le <xref:System.Windows.Forms.ComboBox>).  
+6. Maintenant, faites glisser le nœud de la table parent principal à partir de la **des Sources de données** fenêtre directement sur le contrôle de recherche (le <xref:System.Windows.Forms.ComboBox>).  
   
      Les liaisons de recherche sont désormais établis. Consultez le tableau ci-dessous pour les propriétés spécifiques qui ont été définies sur le contrôle.  
   

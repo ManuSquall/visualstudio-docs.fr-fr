@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1769ed711c0334ef14a3567478cc5010ec4165ea
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 04eefc37162eaa90743982a0039e21d1d9edfb1a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644950"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090717"
 ---
 # <a name="how-to-resize-bookmark-controls"></a>Procédure : Redimensionner les contrôles Bookmark
   Vous définissez la taille d’un contrôle <xref:Microsoft.Office.Tools.Word.Bookmark> quand vous l’ajoutez à un document Microsoft Office Word. Vous pouvez également le redimensionner ultérieurement.
@@ -47,15 +47,15 @@ ms.locfileid: "56644950"
 
 ### <a name="to-resize-a-bookmark-in-a-document-level-project-at-design-time"></a>Pour redimensionner un signet dans un projet au niveau du document au moment du design
 
-1.  Sélectionnez le signet dans la fenêtre **Propriétés** .
+1. Sélectionnez le signet dans la fenêtre **Propriétés** .
 
-2.  Augmentez ou diminuez la valeur de la propriété <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> .
+2. Augmentez ou diminuez la valeur de la propriété <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> .
 
-3.  Augmentez ou diminuez la valeur de la propriété <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> .
+3. Augmentez ou diminuez la valeur de la propriété <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> .
 
 ### <a name="to-resize-a-bookmark-in-a-document-level-project-at-runtime"></a>Pour redimensionner un signet dans un projet au niveau du document lors de l’exécution
 
-1.  Modifier le <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> et <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> propriétés d’un <xref:Microsoft.Office.Tools.Word.Bookmark> vous avez créé lors de l’exécution ou au moment du design.
+1. Modifier le <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> et <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> propriétés d’un <xref:Microsoft.Office.Tools.Word.Bookmark> vous avez créé lors de l’exécution ou au moment du design.
 
      L’exemple de code suivant ajoute cinq caractères au début d’un signet nommé `SampleBookmark`. Ce code part du principe qu’il existe au moins cinq caractères de texte avant le signet.
 
@@ -69,7 +69,7 @@ ms.locfileid: "56644950"
 
 ### <a name="to-resize-a-bookmark-in-a-vsto-add-in-project-at-runtime"></a>Pour redimensionner un signet dans un projet de complément VSTO lors de l’exécution
 
-1.  Modifier le <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> et <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> propriétés d’un <xref:Microsoft.Office.Tools.Word.Bookmark> que vous avez créé lors de l’exécution.
+1. Modifier le <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> et <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> propriétés d’un <xref:Microsoft.Office.Tools.Word.Bookmark> que vous avez créé lors de l’exécution.
 
      L’exemple de code suivant crée un <xref:Microsoft.Office.Tools.Word.Bookmark> qui contient le texte du premier paragraphe du document actif, puis il supprime cinq caractères au début et à la fin du <xref:Microsoft.Office.Tools.Word.Bookmark>.
 
@@ -81,11 +81,11 @@ ms.locfileid: "56644950"
 
 ### <a name="to-recreate-a-bookmark-in-a-document-level-project-at-design-time"></a>Pour recréer un signet dans un projet au niveau du document au moment du design
 
-1.  Sélectionnez le texte à inclure dans le nouveau contrôle <xref:Microsoft.Office.Tools.Word.Bookmark> .
+1. Sélectionnez le texte à inclure dans le nouveau contrôle <xref:Microsoft.Office.Tools.Word.Bookmark> .
 
-2.  Dans le menu **Insérer** , cliquez sur **Signet**.
+2. Dans le menu **Insérer** , cliquez sur **Signet**.
 
-3.  Dans la boîte de dialogue **Signet** , sélectionnez le nom du signet à redimensionner et cliquez sur **Ajouter**.
+3. Dans la boîte de dialogue **Signet** , sélectionnez le nom du signet à redimensionner et cliquez sur **Ajouter**.
 
 ## <a name="see-also"></a>Voir aussi
 - [Guide pratique pour Ajouter des contrôles Bookmark à des documents Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)

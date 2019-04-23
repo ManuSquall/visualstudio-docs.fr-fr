@@ -23,12 +23,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8859bac6f2cfe992c3c0d8005830985598934b88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc05772e6376dbe151d5ca71b9ee221e61a7be88
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938074"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109594"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>Procédure : Se déplacer d’une page vers le haut ou vers le bas dans la mémoire
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Quand vous affichez le contenu de la mémoire dans la fenêtre **Mémoire** ou *
   
 #### <a name="to-move-up-or-down-one-instruction"></a>Pour monter ou descendre d'une instruction  
   
--   Cliquez sur la flèche en haut ou en bas de la barre de défilement vertical.  
+- Cliquez sur la flèche en haut ou en bas de la barre de défilement vertical.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Fenêtres Mémoire](../debugger/memory-windows.md)   

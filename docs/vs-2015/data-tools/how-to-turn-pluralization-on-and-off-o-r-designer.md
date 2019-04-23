@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6171ca233af1ec2af71f11d3248a9d2e670c156b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 9ab9315c428944de0b047192a789eac6aa654073
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665855"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098621"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Procédure : activer et désactiver la pluralisation (Concepteur O/R)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,18 +28,18 @@ Par défaut, lorsque vous faites glisser des objets de base de données qui ont 
   
 ### <a name="to-turn-pluralization-on-and-off"></a>Pour activer et désactiver la pluralisation  
   
-1.  Dans le menu **Outils**, cliquez sur **Options**.  
+1. Dans le menu **Outils**, cliquez sur **Options**.  
   
-2.  Dans la boîte de dialogue **Options**, développez **Outils de base de données**.  
+2. Dans la boîte de dialogue **Options**, développez **Outils de base de données**.  
   
 > [!NOTE]
 >  Sélectionnez **Afficher tous les paramètres** si le nœud **Outils de base de données** n’est pas visible.  
   
-1.  Cliquez sur **Concepteur O/R**.  
+1. Cliquez sur **Concepteur O/R**.  
   
-2.  Définissez **Pluralisation des noms** à **activé** = **False** pour définir le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] afin qu’il ne modifie pas les noms de classes.  
+2. Définissez **Pluralisation des noms** à **activé** = **False** pour définir le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] afin qu’il ne modifie pas les noms de classes.  
   
-3.  Définissez **Pluralisation des noms** à **activé** = **True** pour appliquer les règles de pluralisation aux noms de classes d’objets ajoutés à la [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
+3. Définissez **Pluralisation des noms** à **activé** = **True** pour appliquer les règles de pluralisation aux noms de classes d’objets ajoutés à la [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
 ## <a name="see-also"></a>Voir aussi  
  [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

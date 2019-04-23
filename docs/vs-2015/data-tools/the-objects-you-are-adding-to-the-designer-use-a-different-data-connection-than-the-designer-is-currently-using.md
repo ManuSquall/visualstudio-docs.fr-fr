@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 773d3ea2e0d5574b194a44783b14d35db25d6f7f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 960d3123c45e44b2b1cdc64b896b15b82e655bb2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661826"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102836"
 ---
 # <a name="the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer-is-currently-using"></a>Les objets que vous ajoutez au concepteur utilisent une connexion de données différente de celle utilisée actuellement par le concepteur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,13 +28,13 @@ Les objets que vous ajoutez au concepteur utilisent une connexion de données di
   
 ### <a name="to-replace-the-existing-connection-with-the-connection-used-by-the-selected-object"></a>Pour remplacer la connexion existante par la connexion qu'utilise l'objet sélectionné  
   
--   Cliquez sur **Oui**.  
+- Cliquez sur **Oui**.  
   
      L'objet sélectionné est ajouté au [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] et DataContext.Connection a pour valeur la nouvelle connexion.  
   
 ### <a name="to-continue-to-use-the-existing-connection-and-cancel-adding-the-selected-object"></a>Pour continuer d'utiliser la connexion existante et annuler l'ajout de l'objet sélectionné  
   
--   Cliquez sur **Non**.  
+- Cliquez sur **Non**.  
   
      L'action est annulée. DataContext.Connection conserve la connexion existante.  
   

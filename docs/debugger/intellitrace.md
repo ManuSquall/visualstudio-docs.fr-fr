@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91462511f5de22c51dd1d6fd07c192a72e69e541
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 5f17be088d27e473af0c45a950541fe0f5b77085
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59232695"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098647"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace pour Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -59,7 +59,7 @@ Vous pouvez utiliser IntelliTrace dans Visual Studio Enterprise Edition (mais pa
 > [!NOTE]
 > Si vous souhaitez déboguer un processus en cours d’exécution, vous pouvez collecter des événements IntelliTrace uniquement (aucune information d’appel). Vous pouvez attacher à un processus 32 bits ou 64 bits sur l’ordinateur local uniquement. Événements qui se produisent avant de joindre au processus ne sont pas collectés.
 
-##  <a name="IntelliTraceVSTraditional"></a> Pourquoi déboguer à l'aide d'IntelliTrace ?
+## <a name="IntelliTraceVSTraditional"></a> Pourquoi déboguer à l'aide d'IntelliTrace ?
 
 Qu'il soit traditionnel ou *en direct*, le débogage affiche uniquement l'état actuel de votre application avec des données limitées sur les événements passés. Vous devez déduire ces événements en fonction de l'état actuel de l'application ou recréer ces événements en réexécutant votre application.
 
@@ -97,7 +97,7 @@ Voici quelques exemples pour vous aider à effectuer un débogage avec IntelliTr
 
      Cela est utile lorsque vous souhaitez diagnostiquer les problèmes liés aux applications du déploiement. Voir [utiliser le collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
-##  <a name="WhatData"></a> Quelles sont les données collectées par IntelliTrace ?
+## <a name="WhatData"></a> Quelles sont les données collectées par IntelliTrace ?
 
 **Collecter des informations sur l’événement**
 

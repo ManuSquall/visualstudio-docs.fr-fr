@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 3ca198b88a8e42ba937ceb2426edd23793765b03
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: cdde44b5d960a3f9ef462e06b55260477a8933c0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656204"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097074"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Installer et configurer des outils de génération en utilisant iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,47 +42,47 @@ Vous pouvez utiliser Visual C++ pour le développement mobile multiplateforme po
   
  [Configure the remote agent on the Mac](#ConfigureMac)  
   
-##  <a name="Prerequisites"></a> Composants requis  
+## <a name="Prerequisites"></a> Composants requis  
  Pour installer et utiliser l’agent distant en vue de développer du code pour iOS, vous devez tout d’abord disposer des éléments suivants :  
   
--   Un ordinateur Mac exécutant OS X Mavericks ou une version ultérieure  
+- Un ordinateur Mac exécutant OS X Mavericks ou une version ultérieure  
   
--   Un [ID Apple](https://appleid.apple.com/)  
+- Un [ID Apple](https://appleid.apple.com/)  
   
--   Un compte de [programme développeur iOS](https://developer.apple.com/programs/ios/) actif auprès d’Apple  
+- Un compte de [programme développeur iOS](https://developer.apple.com/programs/ios/) actif auprès d’Apple  
   
--   [Xcode 6](https://developer.apple.com/xcode/downloads/)  
+- [Xcode 6](https://developer.apple.com/xcode/downloads/)  
   
      Xcode 6 peut être téléchargé depuis l’App Store.  
   
--   Outils en ligne de commande Xcode  
+- Outils en ligne de commande Xcode  
   
      Pour installer les outils en ligne de commande Xcode, ouvrez l’application Terminal sur votre Mac et entrez la commande suivante :  
   
      `xcode-select --install`  
   
--   Une identité de signature iOS configurée dans Xcode  
+- Une identité de signature iOS configurée dans Xcode  
   
      Pour plus d’informations sur l’obtention d’une identité de signature iOS, consultez le document relatif à la [gestion des identités et des certificats de signature](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html) dans la bibliothèque du développeur iOS. Pour afficher ou définir votre identité de signature dans Xcode, ouvrez le menu **Xcode** et choisissez **Preferences**. Sélectionnez **Accounts** , choisissez votre ID Apple, puis cliquez sur le bouton **View Details** .  
   
--   Si vous utilisez un appareil iOS pour le développement, un profil de mise en service (« Provisioning Profile ») configuré dans Xcode pour votre appareil  
+- Si vous utilisez un appareil iOS pour le développement, un profil de mise en service (« Provisioning Profile ») configuré dans Xcode pour votre appareil  
   
      Pour plus d’informations sur la création de profils de mise en service, consultez le document relatif à la [création de profils de mise en service via le centre des membres](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW24) dans la bibliothèque du développeur iOS.  
   
--   [Node.js](http://nodejs.org/)  
+- [Node.js](http://nodejs.org/)  
   
--   Une version mise à jour de npm  
+- Une version mise à jour de npm  
   
      La version de npm fournie avec Node.js n’est peut-être pas suffisamment récente pour installer vcremote. Pour mettre à jour npm, ouvrez l’application Terminal sur votre Mac et entrez la commande suivante :  
   
      `sudo npm install -g npm@latest`  
   
-##  <a name="Install"></a> Installer l’agent distant pour iOS  
+## <a name="Install"></a> Installer l’agent distant pour iOS  
  Quand vous installez Visual C++ pour le développement mobile multiplateforme, Visual Studio peut communiquer avec [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988). Cet agent distant s’exécutant sur votre Mac permet de transférer des fichiers, de générer et exécuter votre application iOS et d’envoyer des commandes de débogage.  
   
  Avant d’installer l’agent distant, assurez-vous que vous disposez bien des [Composants requis](#Prerequisites) et que vous avez installé [Visual C++ pour le développement mobile multiplateforme](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#InstallTheTools).  
   
-###  <a name="DownloadInstall"></a> Pour télécharger et installer l’agent distant  
+### <a name="DownloadInstall"></a> Pour télécharger et installer l’agent distant  
   
 - Dans l’application Terminal de votre Mac, entrez :  
   
@@ -97,10 +97,10 @@ Vous pouvez utiliser Visual C++ pour le développement mobile multiplateforme po
   
   Si vous avez mis à jour Visual Studio vers une nouvelle version, vous devez aussi mettre à jour l’agent distant vers la version actuelle. Pour mettre à jour l’agent distant, répétez la procédure de téléchargement et d’installation de l’agent à distance.  
   
-##  <a name="Start"></a> Démarrer l’agent distant  
+## <a name="Start"></a> Démarrer l’agent distant  
  L’agent distant doit s’exécuter pour permettre à Visual Studio de générer et exécuter votre code iOS. Pour pouvoir communiquer, Visual Studio doit être couplé à l’agent distant. Par défaut, l’agent distant s’exécute en mode de connexion sécurisée, ce qui nécessite qu’un code confidentiel soit couplé à Visual Studio.  
   
-###  <a name="RemoteAgentStartServer"></a> Pour démarrer l’agent distant  
+### <a name="RemoteAgentStartServer"></a> Pour démarrer l’agent distant  
   
 - Dans l’application Terminal de votre Mac, entrez :  
   
@@ -120,7 +120,7 @@ Vous pouvez utiliser Visual C++ pour le développement mobile multiplateforme po
   
 #### <a name="to-disable-secured-connection-mode"></a>Pour désactiver le mode de connexion sécurisée  
   
--   Pour désactiver le mode de connexion sécurisée dans vcremote, entrez cette commande dans l’application Terminal de votre Mac :  
+- Pour désactiver le mode de connexion sécurisée dans vcremote, entrez cette commande dans l’application Terminal de votre Mac :  
   
      `vcremote --secure false`  
   
@@ -134,9 +134,9 @@ Vous pouvez utiliser Visual C++ pour le développement mobile multiplateforme po
   
 #### <a name="to-stop-the-remote-agent"></a>Pour arrêter l’agent distant  
   
--   Dans la fenêtre Terminal où s’exécute vcremote, entrez `Control+C`  
+- Dans la fenêtre Terminal où s’exécute vcremote, entrez `Control+C`  
   
-##  <a name="ConfigureVS"></a> Configurer l’agent distant dans Visual Studio  
+## <a name="ConfigureVS"></a> Configurer l’agent distant dans Visual Studio  
  Pour vous connecter à l’agent distant dans Visual Studio, vous devez spécifier la configuration à distance dans les options Visual Studio.  
   
 #### <a name="to-configure-the-remote-agent-from-visual-studio"></a>Pour configurer l’agent distant dans Visual Studio  
@@ -172,68 +172,68 @@ Vous pouvez utiliser Visual C++ pour le développement mobile multiplateforme po
   
    Visual Studio utilise les mêmes informations pour se connecter à l’agent distant sur votre Mac chaque fois que vous l’utilisez. Vous n’avez pas besoin de coupler à nouveau Visual Studio à l’agent distant, sauf si vous générez un nouveau certificat de sécurité sur votre Mac ou que son nom d’hôte ou son adresse IP est modifié.  
   
-##  <a name="GeneratePIN"></a> Generate a new security PIN  
+## <a name="GeneratePIN"></a> Generate a new security PIN  
  Quand vous démarrez l’agent distant pour la première fois, le code confidentiel généré est valide pendant une période limitée (par défaut, 10 minutes). Si vous ne couplez pas Visual Studio à l’agent distant avant l’expiration de ce délai, vous devez générer un nouveau code confidentiel.  
   
 #### <a name="to-generate-a-new-pin"></a>Pour générer un nouveau code confidentiel  
   
-1.  Arrêtez l’agent ou ouvrez une deuxième fenêtre d’application Terminal sur votre Mac et utilisez-la pour entrer la commande.  
+1. Arrêtez l’agent ou ouvrez une deuxième fenêtre d’application Terminal sur votre Mac et utilisez-la pour entrer la commande.  
   
-2.  Entrez cette commande dans l’application Terminal :  
+2. Entrez cette commande dans l’application Terminal :  
   
      `vcremote generateClientCert`  
   
      L’agent distant génère un nouveau code confidentiel temporaire. Pour coupler Visual Studio à l’aide du nouveau code confidentiel, répétez les étapes décrites dans [Configurer l’agent distant dans Visual Studio](#ConfigureVS).  
   
-##  <a name="GenerateCert"></a> Générer un nouveau certificat de serveur  
+## <a name="GenerateCert"></a> Générer un nouveau certificat de serveur  
  Pour des raisons de sécurité, les certificats de serveur qui couplent Visual Studio à l’agent distant sont liés à l’adresse IP ou au nom d’hôte de votre Mac. Si ces valeurs changent, vous devez générer un nouveau certificat de serveur et reconfigurer Visual Studio avec les nouvelles valeurs.  
   
 #### <a name="to-generate-a-new-server-certificate"></a>Pour générer un nouveau certificat de serveur  
   
-1.  Arrêtez l’agent vcremote.  
+1. Arrêtez l’agent vcremote.  
   
-2.  Entrez cette commande dans l’application Terminal :  
+2. Entrez cette commande dans l’application Terminal :  
   
      `vcremote resetServerCert`  
   
-3.  Quand vous êtes invité à confirmer l’opération, entrez `Y`  
+3. Quand vous êtes invité à confirmer l’opération, entrez `Y`  
   
-4.  Entrez cette commande dans l’application Terminal :  
+4. Entrez cette commande dans l’application Terminal :  
   
      `vcremote generateClientCert`  
   
      Un nouveau code confidentiel temporaire est alors généré.  
   
-5.  Pour coupler Visual Studio à l’aide du nouveau code confidentiel, répétez les étapes décrites dans [Configurer l’agent distant dans Visual Studio](#ConfigureVS).  
+5. Pour coupler Visual Studio à l’aide du nouveau code confidentiel, répétez les étapes décrites dans [Configurer l’agent distant dans Visual Studio](#ConfigureVS).  
   
-##  <a name="ConfigureMac"></a> Configure the remote agent on the Mac  
+## <a name="ConfigureMac"></a> Configure the remote agent on the Mac  
  Vous pouvez configurer l’agent distant en utilisant diverses options de ligne de commande. Par exemple, vous pouvez spécifier le port à écouter pour les demandes de génération et spécifier le nombre maximal de builds à conserver sur le système de fichiers. Par défaut, cette limite est de 10 builds. Au moment de l’arrêt, l’agent supprime les builds qui dépassent ce nombre maximal.  
   
 #### <a name="to-configure-the-remote-agent"></a>Pour configurer l’agent distant  
   
--   Pour afficher la liste complète des commandes de l’agent distant, dans l’application Terminal, entrez :  
+- Pour afficher la liste complète des commandes de l’agent distant, dans l’application Terminal, entrez :  
   
      `vcremote --help`  
   
--   Pour désactiver le mode sécurisé et activer les connexions HTTP simples, entrez :  
+- Pour désactiver le mode sécurisé et activer les connexions HTTP simples, entrez :  
   
      `vcremote --secure false`  
   
      Quand vous utilisez cette option, décochez la case **Sécuriser** et laissez le champ **Code PIN** vide pendant la configuration de l’agent dans Visual Studio.  
   
--   Pour spécifier l’emplacement des fichiers de l’agent distant, entrez :  
+- Pour spécifier l’emplacement des fichiers de l’agent distant, entrez :  
   
      `vcremote --serverDir directory_path`  
   
      où *chemin_répertoire* est l’emplacement sur votre Mac où seront placés les fichiers journaux, les builds et les certificats de serveur. Par défaut, cet emplacement est /Users/*nom_utilisateur*/vcremote. Les builds sont organisées par numéro de build à cet emplacement.  
   
--   Pour utiliser un processus en arrière-plan pour capturer `stdout` et `stderr` dans un fichier nommé serveur.log, entrez :  
+- Pour utiliser un processus en arrière-plan pour capturer `stdout` et `stderr` dans un fichier nommé serveur.log, entrez :  
   
      `vcremote > server.log 2>&1 &`  
   
      Le fichier serveur.log peut aider à la résolution des problèmes de génération.  
   
--   Pour exécuter l’agent en utilisant un fichier de configuration au lieu de paramètres de ligne de commande, entrez :  
+- Pour exécuter l’agent en utilisant un fichier de configuration au lieu de paramètres de ligne de commande, entrez :  
   
      `vcremote --config config_file_path`  
   

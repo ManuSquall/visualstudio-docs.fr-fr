@@ -19,27 +19,27 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1131f6d569d01787d26bea7dde1c993401ce9580
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: db550b2a99f12190cac0bde74859191c2943b2d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670171"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102755"
 ---
 # <a name="add-new-data-sources"></a>Ajouter de nouvelles sources de données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dans le contexte de .NET data tools dans Visual Studio, le terme *source de données* fait référence aux objets .NET qui se connectent à un magasin de données et exposent les données à une application .NET. Les concepteurs de Visual Studio peuvent consommer la sortie de la source de données pour générer le code réutilisable qui lie les données aux formulaires lorsque vous glissez -déplacez des objets de base de données à partir de la **des Sources de données** fenêtre. Ce type de source de données peut être :  
   
--   Une classe dans un modèle Entity Framework qui est associé à un type de base de données.  
+- Une classe dans un modèle Entity Framework qui est associé à un type de base de données.  
   
--   Un jeu de données qui est associé à un type de base de données.  
+- Un jeu de données qui est associé à un type de base de données.  
   
--   Une classe qui représente un service réseau comme un service de données de Windows Communication Foundation (WCF) ou un service REST.  
+- Une classe qui représente un service réseau comme un service de données de Windows Communication Foundation (WCF) ou un service REST.  
   
--   Une classe qui représente un service SharePoint.  
+- Une classe qui représente un service SharePoint.  
   
--   Une classe ou une collection dans votre solution.  
+- Une classe ou une collection dans votre solution.  
   
 > [!NOTE]
 >  Si vous n’utilisez pas les fonctionnalités de liaison de données, jeux de données, Entity Framework, LINQ to SQL, WCF ou SharePoint, le concept de « data source » ne s’applique pas. Connectez-vous directement à la base de données en utilisant les objets SQLCommand simplement et communiquer directement avec la base de données.  
@@ -77,11 +77,11 @@ Dans le contexte de .NET data tools dans Visual Studio, le terme *source de donn
   
  Vous pouvez créer une source de données parmi les types de services suivants :  
   
--   Services de données WCF. Pour plus d’informations, consultez [vue d’ensemble](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
+- Services de données WCF. Pour plus d’informations, consultez [vue d’ensemble](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
   
--   Services de données WCF. Pour plus d’informations, consultez [Services Windows Communication Foundation et WCF Data Services dans Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md).  
+- Services de données WCF. Pour plus d’informations, consultez [Services Windows Communication Foundation et WCF Data Services dans Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md).  
   
--   Services Web.  
+- Services Web.  
   
     > [!NOTE]
     >  Les éléments qui apparaissent dans le **des Sources de données** fenêtre sont dépendants des données retournées par le service. Certains services peuvent ne pas fournir suffisamment d’informations pour que l’**Assistant Configuration de source de données** puisse créer des objets pouvant être liés. Par exemple, si le service retourne un dataset non typé, aucun élément n’apparaîtra dans le **des Sources de données** fenêtre lorsque vous terminez l’Assistant. Il s’agit, car les datasets non typés ne fournissent pas un schéma, et par conséquent, l’Assistant n’a pas suffisamment d’informations pour créer la source de données.  
