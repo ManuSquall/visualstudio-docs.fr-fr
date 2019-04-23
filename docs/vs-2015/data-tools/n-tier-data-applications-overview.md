@@ -19,12 +19,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 532781a2e816120dabfe2bec61059955cd0c82a6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: bc6bc7e6e7d11b1b5b77cd90b86a6a6167702872
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658121"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082176"
 ---
 # <a name="n-tier-data-applications-overview"></a>Vue d'ensemble des applications de données multicouches
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ N-* de couche données qui sont des données applications sont divisées en plus
   
  Visual Studio contient plusieurs fonctionnalités pour aider les développeurs à créer des applications à plusieurs niveaux :  
   
--   Le Concepteur de DataSet fournit un **DataSet Project** propriété qui vous permet de séparer le jeu de données (couche d’entité de données) et `TableAdapter`s (couche d’accès aux données) dans des projets distincts.  
+- Le Concepteur de DataSet fournit un **DataSet Project** propriété qui vous permet de séparer le jeu de données (couche d’entité de données) et `TableAdapter`s (couche d’accès aux données) dans des projets distincts.  
   
--   Le [outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fournit des paramètres pour générer les classes DataContext et les données dans les espaces de noms distincts. Cela permet une séparation logique de l’accès aux données et couches d’entité de données.  
+- Le [outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fournit des paramètres pour générer les classes DataContext et les données dans les espaces de noms distincts. Cela permet une séparation logique de l’accès aux données et couches d’entité de données.  
   
--   [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) fournit le <xref:System.Data.Linq.Table%601.Attach%2A> méthode qui vous permet de rassembler le DataContext de différentes couches dans une application. Pour plus d’informations, consultez [multicouches et des Applications distantes avec LINQ to SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598).  
+- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) fournit le <xref:System.Data.Linq.Table%601.Attach%2A> méthode qui vous permet de rassembler le DataContext de différentes couches dans une application. Pour plus d’informations, consultez [multicouches et des Applications distantes avec LINQ to SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598).  
   
 ## <a name="presentation-tier"></a>Couche de présentation  
  Le *couche présentation* est le niveau dans lequel les utilisateurs interagissent avec une application. Il contient souvent une logique d’application supplémentaires également. Composants de la couche présentation standard sont les suivantes :  
@@ -57,11 +57,11 @@ N-* de couche données qui sont des données applications sont divisées en plus
   
 - Composants d’accès aux données et logique, telle que la suivante :  
   
-  -   [Les TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) et [DataAdapters et DataReaders](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).  
+  - [Les TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) et [DataAdapters et DataReaders](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).  
   
-  -   Objet de représentations de données, tel que [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) classes d’entité.  
+  - Objet de représentations de données, tel que [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) classes d’entité.  
   
-  -   Services d’application courantes, telles que l’authentification, autorisation et la personnalisation.  
+  - Services d’application courantes, telles que l’authentification, autorisation et la personnalisation.  
   
   L’illustration suivante montre les fonctionnalités et technologies qui sont disponibles dans Visual Studio et où ils peuvent être intégrées dans la couche intermédiaire d’une application multiniveau.  
   

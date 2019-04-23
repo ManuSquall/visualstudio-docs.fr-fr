@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 395fc5976f31fb2d465c57f036b3e5369aaa0c07
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: bc42a92e1d7dcc73bb6bc0433da4e6a31d7fefb2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865097"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081958"
 ---
 # <a name="how-to-create-an-event-receiver"></a>Procédure : Créer un récepteur d’événements
   En créant *récepteurs d’événements*, vous pouvez répondre lorsqu’un utilisateur interagit avec les éléments de SharePoint telles que les listes ou éléments de liste. Par exemple, le code dans un récepteur d’événements peut être déclenché lorsqu’un utilisateur modifie le calendrier ou supprime un nom d’une liste de contacts. En suivant cette rubrique, vous pouvez apprendre à ajouter un récepteur d’événements à une instance de liste.
@@ -34,23 +34,23 @@ ms.locfileid: "54865097"
 
 #### <a name="to-add-an-event-receiver-to-the-list-instance"></a>Pour ajouter un récepteur d’événements à l’instance de liste
 
-1.  Ouvrez le projet que vous avez créé dans [procédure pas à pas : Créer une colonne de site, le type de contenu et la liste pour SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).
+1. Ouvrez le projet que vous avez créé dans [procédure pas à pas : Créer une colonne de site, le type de contenu et la liste pour SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).
 
-2.  Dans **l’Explorateur de solutions**, choisissez le nœud de projet SharePoint, qui est nommé **clinique**.
+2. Dans **l’Explorateur de solutions**, choisissez le nœud de projet SharePoint, qui est nommé **clinique**.
 
-3.  Dans la barre de menus, choisissez **Projet** > **Ajouter un nouvel élément**.
+3. Dans la barre de menus, choisissez **Projet** > **Ajouter un nouvel élément**.
 
-4.  Sous **Visual C#** ou **Visual Basic**, développez le **SharePoint** nœud, puis choisissez le **2010** élément.
+4. Sous **Visual C#** ou **Visual Basic**, développez le **SharePoint** nœud, puis choisissez le **2010** élément.
 
-5.  Dans le **modèles** volet, choisissez **récepteur d’événements**, nommez-le **TestEventReceiver1**, puis choisissez le **OK** bouton.
+5. Dans le **modèles** volet, choisissez **récepteur d’événements**, nommez-le **TestEventReceiver1**, puis choisissez le **OK** bouton.
 
      Le **Assistant Personnalisation de SharePoint** s’affiche.
 
-6.  Dans le **quel type de récepteur d’événements voulez-vous ?** , choisissez **événements d’élément de liste**.
+6. Dans le **quel type de récepteur d’événements voulez-vous ?** , choisissez **événements d’élément de liste**.
 
-7.  Dans le **quel élément doit être la source d’événements ?** , choisissez **Patients (Clinic\Patients)**.
+7. Dans le **quel élément doit être la source d’événements ?** , choisissez **Patients (Clinic\Patients)**.
 
-8.  Dans le **gérer les événements suivants** , sélectionnez la case à cocher à côté **un élément a été ajouté**, puis choisissez le **Terminer** bouton.
+8. Dans le **gérer les événements suivants** , sélectionnez la case à cocher à côté **un élément a été ajouté**, puis choisissez le **Terminer** bouton.
 
      Le fichier de code pour le récepteur d’événements contient une méthode unique nommée `ItemAdded`. Dans l’étape suivante, vous ajouterez du code à cette méthode afin que chaque contact sera nommé Scott Brown par défaut.
 

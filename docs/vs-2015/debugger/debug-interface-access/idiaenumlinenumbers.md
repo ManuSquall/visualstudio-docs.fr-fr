@@ -13,12 +13,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d37f0ed1dedbd5d4ca893e99465c79c31e453f2f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 98ed42fe1ae496e4c8692c2fd599eceb1c9508af
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948513"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079446"
 ---
 # <a name="idiaenumlinenumbers"></a>IDiaEnumLineNumbers
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,15 +49,15 @@ IDiaEnumLineNumbers : IUnknown
 ## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
  Cette interface est obtenue en appelant une des méthodes suivantes dans le [IDiaSession](../../debugger/debug-interface-access/idiasession.md) interface :  
   
--   [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)  
+- [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)  
   
--   [IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)  
+- [IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)  
   
--   [IDiaSession::findLinesByRVA](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)  
+- [IDiaSession::findLinesByRVA](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)  
   
--   [IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)  
+- [IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)  
   
--   [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)  
+- [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)  
   
 ## <a name="example"></a>Exemple  
  Cet exemple montre comment obtenir le `IDiaEnumLineNumbers` interface à partir d’une session. Dans ce cas, l’exemple montre comment obtenir de l’énumération de numéro de ligne pour une fonction (représentée par `pSymbol`). Pour obtenir un exemple plus complet de l’utilisation de numéros de ligne, consultez le [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) interface.  

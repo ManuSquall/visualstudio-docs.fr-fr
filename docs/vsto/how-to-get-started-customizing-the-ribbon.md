@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 14c4ff1e8bf443351f835d74d44b49bbb61e0321
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f164a8f1d1c84725530e7a3afab5e63472ae257e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640114"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081565"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>Procédure : Commencer la personnalisation du ruban
   Pour personnaliser le ruban d’une application Microsoft Office, ajoutez un **ruban (Concepteur visuel)** ou **ruban (XML)** élément à un projet Office.
@@ -37,33 +37,33 @@ ms.locfileid: "56640114"
 
     Les noms ne peut pas contenir les caractères suivants :
 
-   -   Signe dièse (#)
+   - Signe dièse (#)
 
-   -   Pourcentage (%)
+   - Pourcentage (%)
 
-   -   Esperluette (&)
+   - Esperluette (&)
 
-   -   astérisque (*)
+   - astérisque (*)
 
-   -   barre verticale (|)
+   - barre verticale (|)
 
-   -   Barre oblique inverse (\\)
+   - Barre oblique inverse (\\)
 
-   -   Signe deux-points ( :))
+   - Signe deux-points ( :))
 
-   -   Guillemet double (")
+   - Guillemet double (")
 
-   -   Inférieur à (\<)
+   - Inférieur à (\<)
 
-   -   Supérieur à (>)
+   - Supérieur à (>)
 
-   -   point d'interrogation (?)
+   - point d'interrogation (?)
 
-   -   Oblique (/)
+   - Oblique (/)
 
-   -   Espaces à gauche ou (' ')
+   - Espaces à gauche ou (' ')
 
-   -   Noms réservés à Windows ou à MS-DOS comme (« nul », « aux », « con », « com1 », « lpt1 » et ainsi de suite)
+   - Noms réservés à Windows ou à MS-DOS comme (« nul », « aux », « con », « com1 », « lpt1 » et ainsi de suite)
 
 4. Cliquez sur **OK**.
 

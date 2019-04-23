@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d9e41de9fc395b673f38fa1f7b343594bf905a8d
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
-ms.translationtype: MTE95
+ms.openlocfilehash: 726d0f7e4254f4d9d4210d4b64627cd97c98a430
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223167"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081383"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Procédure pas à pas : Création d’un service de données WCF avec WPF et Entity Framework
 Cette procédure pas à pas montre comment créer un [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] simple qui est hébergé dans une application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], puis comment y accéder à partir d’une application Windows Forms.
@@ -90,11 +90,11 @@ Dans l’étape suivante, vous allez créer un [!INCLUDE[adonet_edm](../data-too
 
 5. Sur la page **Choisir votre connexion de données** , effectuez l'une des opérations suivantes :
 
-    -   Si une connexion de données à l'exemple de base de données Northwind est disponible dans la liste déroulante, choisissez-la.
+    - Si une connexion de données à l'exemple de base de données Northwind est disponible dans la liste déroulante, choisissez-la.
 
          - ou -
 
-    -   Choisissez le bouton **Nouvelle connexion** pour configurer une nouvelle connexion de données. Pour plus d’informations, consultez [ajouter de nouvelles connexions](../data-tools/add-new-connections.md).
+    - Choisissez le bouton **Nouvelle connexion** pour configurer une nouvelle connexion de données. Pour plus d’informations, consultez [ajouter de nouvelles connexions](../data-tools/add-new-connections.md).
 
 6. Si la base de données nécessite un mot de passe, choisissez la case d’option **Oui, inclure les données sensibles dans la chaîne de connexion**, puis cliquez sur le bouton **Suivant**.
 
@@ -154,7 +154,7 @@ Dans les étapes suivantes, vous créez une application cliente de Windows Forms
 
 1. Dans la barre de menus, choisissez Fichier, **ajouter** > **nouveau projet**.
 
-2. Dans le **nouveau projet** boîte de dialogue, développez le **Visual Basic** ou **Visual C#**  nœud, choisissez le **Windows** nœud, puis choisissez **Windows Forms Application**.
+2. Dans le **nouveau projet** boîte de dialogue, développez le **Visual Basic** ou **Visual C#** nœud, choisissez le **Windows** nœud, puis choisissez  **Windows Forms Application**.
 
 3. Dans la zone de texte **Nom**, entrez `NorthwindClient`, puis choisissez le bouton **OK**.
 

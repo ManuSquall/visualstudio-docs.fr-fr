@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ac447d3511365cf8e7f48344231d0ddb8d2a4374
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a05aba81292fba9520defe39af6977682452b850
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953244"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080629"
 ---
 # <a name="installshield-limited-edition"></a>Installshield Limited Edition
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,10 +26,10 @@ Grâce à InstallShield Limited Edition, vous pouvez créer un fichier de config
   
 ### <a name="to-enable-installshield-limited-edition"></a>Pour activer InstallShield Limited Edition  
   
-1.  Dans la barre de menus, sélectionnez **Fichier**, **Nouveau**, **Projet**.  
+1. Dans la barre de menus, sélectionnez **Fichier**, **Nouveau**, **Projet**.  
   
-2.  Dans la boîte de dialogue **Nouveau projet** , développez le nœud **Autres types de projets** , puis choisissez le nœud **Configuration et déploiement** .  
+2. Dans la boîte de dialogue **Nouveau projet** , développez le nœud **Autres types de projets** , puis choisissez le nœud **Configuration et déploiement** .  
   
-3.  Dans la liste des modèles, choisissez **Activer InstallShield Limited Edition**, puis choisissez le bouton **OK** .  
+3. Dans la liste des modèles, choisissez **Activer InstallShield Limited Edition**, puis choisissez le bouton **OK** .  
   
-4.  Dans la fenêtre du navigateur qui s’ouvre, lisez les instructions, puis choisissez le lien **Ouvrir le site web de téléchargement** .
+4. Dans la fenêtre du navigateur qui s’ouvre, lisez les instructions, puis choisissez le lien **Ouvrir le site web de téléchargement** .

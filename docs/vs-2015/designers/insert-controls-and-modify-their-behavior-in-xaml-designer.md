@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 219d70f1a722a19017399ab851aa2e69c44d2b28
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: e36b7cef0c24367292f7f9e60b86eb9138b12a64
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663360"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082943"
 ---
 # <a name="insert-controls-and-modify-their-behavior-in-xaml-designer"></a>Insérer des contrôles et modifier leur comportement dans le concepteur XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ Les contrôles permettent aux utilisateurs d'interagir avec votre application. E
   
  **Dans cette rubrique :**  
   
--   [Ajouter des contrôles à la planche graphique](#Insert)  
+- [Ajouter des contrôles à la planche graphique](#Insert)  
   
--   [Rendre les contrôles actifs](#Modify)  
+- [Rendre les contrôles actifs](#Modify)  
   
-##  <a name="Insert"></a> Ajouter des contrôles à la planche graphique  
+## <a name="Insert"></a> Ajouter des contrôles à la planche graphique  
  Vous pouvez faire glisser des contrôles du panneau **Composants** vers la **planche graphique**, puis les modifier dans la fenêtre **Propriétés** .  
   
  ![Blend &#45; Assets &#45; FlipView](../designers/media/blend-assetsflipview-xaml.png "blend_AssetsFlipView_XAML")  
@@ -53,7 +53,7 @@ Les contrôles permettent aux utilisateurs d'interagir avec votre application. E
   
  Pour créer un contrôle, sélectionnez un objet. Ensuite, dans le menu **Outils** , cliquez sur **Créer un contrôle**.  
   
-##  <a name="Modify"></a> Rendre les contrôles actifs  
+## <a name="Modify"></a> Rendre les contrôles actifs  
  Les contrôles peuvent effectuer des actions quand les utilisateurs interagissent avec eux. Par exemple, ils peuvent démarrer une animation, mettre à jour une source de données ou lire une vidéo.  
   
  Pour rendre des contrôles actifs, vous devez utiliser des *déclencheurs*, des *comportements*et des *événements* .  

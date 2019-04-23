@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 67a35b8987cc9f4f06cc93df2462a4dee326d7e7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 66110f6544bc19476bb4ecdfd6929fb4e26f0b52
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664016"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082432"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Paramètres de projet VC++, Projets et solutions, boîte de dialogue Options
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ Cette boîte de dialogue vous permet de définir des paramètres du projet [!INC
   
 ### <a name="to-access-this-dialog-box"></a>Pour accéder à cette boîte de dialogue  
   
-1.  Dans le menu **Outils** , cliquez sur **Options**.  
+1. Dans le menu **Outils** , cliquez sur **Options**.  
   
-2.  Sélectionnez **Projets et solutions**, puis **Paramètres de projet VC++**.  
+2. Sélectionnez **Projets et solutions**, puis **Paramètres de projet VC++**.  
   
 ## <a name="build-customization-search-path"></a>Chemin de recherche des personnalisations de la build  
  Spécifie la liste des répertoires contenant les fichiers .rules, qui vous permettent de définir des règles de génération pour vos projets.  

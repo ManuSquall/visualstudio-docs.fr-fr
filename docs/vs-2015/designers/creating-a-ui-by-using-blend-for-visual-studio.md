@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 80c8d385e0c78461df5b7938d356ec43a481e46e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 8fe6377de1be51ac0fc48904687b60ed8bbc95b1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670418"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082956"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Création d'une interface utilisateur à l'aide de Blend pour Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ Blend pour Visual Studio vous aide à concevoir des applications de bureau Wind
 
  **Dans cette rubrique** :
 
--   [Présentation du panneau Outils](#Tools)
+- [Présentation du panneau Outils](#Tools)
 
--   [Présentation du panneau Composants](#Assets)
+- [Présentation du panneau Composants](#Assets)
 
--   [Présentation du panneau Objets et chronologie](#Objects)
+- [Présentation du panneau Objets et chronologie](#Objects)
 
--   [Présentation du panneau Propriétés](#Properties)
+- [Présentation du panneau Propriétés](#Properties)
 
-##  <a name="Tools"></a> Présentation du panneau Outils
+## <a name="Tools"></a> Présentation du panneau Outils
  Vous pouvez utiliser le panneau **Outils** dans Blend pour Visual Studio pour créer et modifier les objets de votre application. Vous créez les objets en sélectionnant un outil, puis en dessinant sur la planche graphique à l'aide de la souris.
 
  ![Panneau Outils](../designers/media/blend5toolspanel.png "Blend5Toolspanel")
@@ -56,7 +56,7 @@ Blend pour Visual Studio vous aide à concevoir des applications de bureau Wind
 
  **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [la barre d’outils](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
 
-##  <a name="Assets"></a> Présentation du panneau Composants
+## <a name="Assets"></a> Présentation du panneau Composants
  Tous les contrôles se trouvent dans le panneau **Composants**, à l’image de la **boîte à outils** de Visual Studio. Outre les contrôles, vous y trouverez tout ce que vous pouvez ajouter à la planche graphique dans le panneau **Composants**, notamment des styles, des médias, des comportements et des effets.
 
  ![Panneau Composants](../designers/media/blend5-assets-panel.png "Blend5_Assets_panel")
@@ -69,7 +69,7 @@ Blend pour Visual Studio vous aide à concevoir des applications de bureau Wind
 |![](../designers/media/b1-4.png "B1_4")|**Styles** Affiche tous les styles contenus dans le dictionnaire de ressources.|
 |![](../designers/media/b1-5.png "B1_5")|**Description** Affiche une description de la catégorie ou sous-catégorie de composants sélectionnée.|
 
-##  <a name="Objects"></a> Présentation du panneau Objets et chronologie
+## <a name="Objects"></a> Présentation du panneau Objets et chronologie
  Ce panneau permet de disposer les objets sur la planche graphique et éventuellement de les animer.
 
  ![Panneau Objets et chronologie en mode animation](../designers/media/b5-object-timeline-animation.png "b5_object_timeline_animation")
@@ -93,7 +93,7 @@ Blend pour Visual Studio vous aide à concevoir des applications de bureau Wind
 |![](../designers/media/b1-15.png "B1_15")|**Zoom de la chronologie** Permet de définir la résolution du zoom de la chronologie. Un zoom avant permet de modifier une animation avec plus de détails, alors qu'un zoom arrière donne un plus large aperçu de ce qu'il se passe sur une période plus longue. Si vous faites un zoom avant, mais que vous ne pouvez pas définir d’image clé à un moment précis dans le temps, vérifiez que la résolution d’alignement définie est suffisamment élevée.|
 |![Légende 16](../designers/media/b5-label-16.png "b5_label_16")|**Zone de composition de la chronologie** Permet d’afficher la chronologie et de déplacer des images clés en les faisant glisser ou via leurs menus contextuels.|
 
-##  <a name="Properties"></a> Présentation du panneau Propriétés
+## <a name="Properties"></a> Présentation du panneau Propriétés
  Cet panneau permet d'afficher et de modifier les propriétés d'un objet. Vous pouvez aussi les définir directement sur la planche graphique. Dans ce cas, les modifications apportées aux propriétés sont répercutées dans le panneau **Propriétés**.
 
  ![Panneau Propriétés](../designers/media/blend5-properties-panel.png "Blend5_properties_panel")

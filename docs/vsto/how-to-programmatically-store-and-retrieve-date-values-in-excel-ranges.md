@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e46e6259009ab583f32deae79711d6b4d0c70528
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 89c4a4598b92096d968225f7420d46244aeca3dc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617832"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082904"
 ---
 # <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>Procédure : Stocker et récupérer des valeurs de date dans des plages Excel par programmation
   Vous pouvez stocker et récupérer des valeurs dans un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle ou un objet de plage Excel natif.
@@ -38,23 +38,23 @@ ms.locfileid: "56617832"
 
 ## <a name="use-a-namedrange-control"></a>Utiliser un contrôle NamedRange
 
--   Cet exemple concerne des personnalisations au niveau du document. Le code suivant doit être placé dans une classe sheet et non dans le `ThisWorkbook` classe.
+- Cet exemple concerne des personnalisations au niveau du document. Le code suivant doit être placé dans une classe sheet et non dans le `ThisWorkbook` classe.
 
 ### <a name="to-store-a-date-value-in-a-named-range"></a>Pour stocker une valeur de date dans une plage nommée
 
-1.  Créer un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle à la cellule **A1**.
+1. Créer un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle à la cellule **A1**.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#50](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#50)]
      [!code-vb[Trin_VstcoreExcelAutomation#50](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#50)]
 
-2.  Définir la date actuelle comme valeur pour `NamedRange1`.
+2. Définir la date actuelle comme valeur pour `NamedRange1`.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#51](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#51)]
      [!code-vb[Trin_VstcoreExcelAutomation#51](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#51)]
 
 ### <a name="to-retrieve-a-date-value-from-a-named-range"></a>Pour récupérer une valeur de date à partir d’une plage nommée
 
-1.  Récupérez la valeur de date de `NamedRange1`.
+1. Récupérez la valeur de date de `NamedRange1`.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#52](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#52)]
      [!code-vb[Trin_VstcoreExcelAutomation#52](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#52)]
@@ -63,19 +63,19 @@ ms.locfileid: "56617832"
 
 ### <a name="to-store-a-date-value-in-a-native-excel-range-object"></a>Pour stocker une valeur de date dans un objet de plage Excel natif
 
-1.  Créer un <xref:Microsoft.Office.Interop.Excel.Range> qui représente la cellule **A1**.
+1. Créer un <xref:Microsoft.Office.Interop.Excel.Range> qui représente la cellule **A1**.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#25](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#25)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#25](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#25)]
 
-2.  Définir la date actuelle comme valeur pour `rng`.
+2. Définir la date actuelle comme valeur pour `rng`.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#26](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#26)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#26](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#26)]
 
 ### <a name="to-retrieve-a-date-value-from-a-native-excel-range-object"></a>Pour récupérer une valeur de date à partir d’un objet de plage Excel natif
 
-1.  Récupérez la valeur de date de `rng`.
+1. Récupérez la valeur de date de `rng`.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#27](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#27)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#27](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#27)]

@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9c525aa18e94e7951e6355c959a105aa5841e10d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 631979309d9ad42a25b244e8806e5a6849f8b81d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947500"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081466"
 ---
 # <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002 : Ne définissez pas un verrou sur des objets à identité faible
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,21 +38,21 @@ ms.locfileid: "58947500"
 ## <a name="rule-description"></a>Description de la règle
  Un objet est dit d'identité faible lorsqu'il est accessible directement au-delà des limites d'un domaine d'application. Un thread qui essaie d'acquérir un verrou sur un objet qui affiche une identité faible peut être bloqué par un deuxième thread dans un domaine d'application différent qui dispose d'un verrou sur le même objet. Les types suivants ont une identité faible et sont signalés par la règle :
 
--   <xref:System.MarshalByRefObject>
+- <xref:System.MarshalByRefObject>
 
--   <xref:System.ExecutionEngineException>
+- <xref:System.ExecutionEngineException>
 
--   <xref:System.OutOfMemoryException>
+- <xref:System.OutOfMemoryException>
 
--   <xref:System.StackOverflowException>
+- <xref:System.StackOverflowException>
 
--   <xref:System.String>
+- <xref:System.String>
 
--   <xref:System.Reflection.MemberInfo>
+- <xref:System.Reflection.MemberInfo>
 
--   <xref:System.Reflection.ParameterInfo>
+- <xref:System.Reflection.ParameterInfo>
 
--   <xref:System.Threading.Thread>
+- <xref:System.Threading.Thread>
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, utilisez un objet à partir d’un type qui n’est pas dans la liste dans la section de Description.

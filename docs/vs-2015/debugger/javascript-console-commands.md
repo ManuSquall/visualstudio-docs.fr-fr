@@ -18,12 +18,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e30cee45bcb716e70e8b2e585079628b55daa8ee
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aeaba355e101bd8e48126bfa01f95668a37abe3e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950983"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081422"
 ---
 # <a name="javascript-console-commands"></a>JavaScript Console commands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,7 +93,7 @@ if (console && console.log) {
 ## <a name="examining-objects-in-the-javascript-console-window"></a>Examen des objets de la fenêtre de console JavaScript  
  Lorsque vous utilisez la fenêtre de console JavaScript, vous pouvez interagir avec un objet qui est dans la portée. Pour examiner un objet hors de portée dans la fenêtre de la console, utilisez les commandes `console.log` , `console.dir`ou d’autres commandes à partir de votre code. Sinon, vous pouvez interagir avec l’objet dans la fenêtre de la console pendant qu’il est dans la portée en définissant un point d’arrêt dans votre code (**Point d’arrêt** > **Insert Point d’arrêt**).  
   
-##  <a name="ConsoleLog"></a> Mise en forme de la sortie de console.log  
+## <a name="ConsoleLog"></a> Mise en forme de la sortie de console.log  
  Si vous passez plusieurs arguments à `console.log`, la console les traite sous forme de tableau et concatène la sortie.  
   
 ```javascript  

@@ -1,5 +1,5 @@
 ---
-title: 'Zone de test 1 : Ajouter à ouvrir à partir du contrôle de code Source | Microsoft Docs'
+title: 'Zone de test 1 : Ajouter à ouvrir à partir du contrôle de code Source | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 686c7fbfae76d9f4006664aff9f79848eba563f8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 699496825e272fc492bac8ef4fe472019b1935d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613314"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083515"
 ---
-# <a name="test-area-1-add-toopen-from-source-control"></a>Zone de test 1 : Ajouter / Ouvrir à partir du contrôle de code Source
+# <a name="test-area-1-add-toopen-from-source-control"></a>Zone de test 1 : Ajouter / Ouvrir à partir du contrôle de code Source
 Ce contrôle de source de plug-in de test couvre zone Placement solutions ou projets sous contrôle de code source et en les récupérant à partir du contrôle de code source.
 
 ## <a name="command-menu-access"></a>Accès au Menu de commande
@@ -41,15 +41,15 @@ Ce contrôle de source de plug-in de test couvre zone Placement solutions ou pro
 
 ## <a name="expected-behavior"></a>Comportement attendu
 
--   Pour chaque type de projet pris en charge, un utilisateur doit être en mesure de « Ajouter à » et « Ouvrir à partir de « contrôle de code Source.
+- Pour chaque type de projet pris en charge, un utilisateur doit être en mesure de « Ajouter à » et « Ouvrir à partir de « contrôle de code Source.
 
--   Lorsqu’un projet est ajouté au contrôle de code Source, un correspondant \< *nom_projet*> fichier .vspscc (fichier hint de projet) est créé. Il contient des informations de liste et de connexion de fichier d’exclusion. Ne supprimez pas ce fichier, car il contient des informations spécifiques au projet.
+- Lorsqu’un projet est ajouté au contrôle de code Source, un correspondant \< *nom_projet*> fichier .vspscc (fichier hint de projet) est créé. Il contient des informations de liste et de connexion de fichier d’exclusion. Ne supprimez pas ce fichier, car il contient des informations spécifiques au projet.
 
--   Lorsqu’une solution est ajoutée au contrôle de code source, un correspondant \< *SolutionName*> .vssscc (triple S) fichier est créé. Le fichier texte contient des informations de connexion et une liste de fichiers d’exclusion, semblable au fichier projet indicateur. Ce fichier est temporaire et existe uniquement dans la base de données de contrôle de code source.
+- Lorsqu’une solution est ajoutée au contrôle de code source, un correspondant \< *SolutionName*> .vssscc (triple S) fichier est créé. Le fichier texte contient des informations de connexion et une liste de fichiers d’exclusion, semblable au fichier projet indicateur. Ce fichier est temporaire et existe uniquement dans la base de données de contrôle de code source.
 
--   Lorsqu’une solution est ouverte à partir du contrôle de code source, un \< *SolutionName*> fichier .vsscc (double S) qui existe uniquement dans la base de données du contrôle de code source, est créé localement dans un fichier temporaire. Ce fichier contient le chemin d’accès à partir du dossier de connexion de solution dans le fichier solution. Ce fichier est temporaire et la copie locale est supprimée lors de l’opération « Ouvrir à partir de contrôle de code Source » est terminée.
+- Lorsqu’une solution est ouverte à partir du contrôle de code source, un \< *SolutionName*> fichier .vsscc (double S) qui existe uniquement dans la base de données du contrôle de code source, est créé localement dans un fichier temporaire. Ce fichier contient le chemin d’accès à partir du dossier de connexion de solution dans le fichier solution. Ce fichier est temporaire et la copie locale est supprimée lors de l’opération « Ouvrir à partir de contrôle de code Source » est terminée.
 
--   Une fois un projet est ajouté au contrôle de source, vous pouvez effectuer des actions de contrôle source dessus (extraction, Get et ainsi de suite).
+- Une fois un projet est ajouté au contrôle de source, vous pouvez effectuer des actions de contrôle source dessus (extraction, Get et ainsi de suite).
 
 ## <a name="test-cases"></a>Cas de test
  Les éléments suivants sont des cas de test spécifiques pour l’ajouter à / ouvrir à partir de la zone de test de contrôle de code Source.

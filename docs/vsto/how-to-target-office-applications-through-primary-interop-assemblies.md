@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4901a4a04a2d4702a365f9b1f65406c4537b1182
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 074b01e78fd398a43548febf81ba03b61a8646b4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614322"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079630"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Procédure : Cibler les applications Office via les assemblys PIA
   Quand vous créez un projet Office, Visual Studio ajoute automatiquement des références aux assemblys PIA (Primary Interop Assembly) Microsoft Office qui sont requises pour générer le projet Vous devez ajouter des références aux autres assemblys PIA dans les scénarios suivants :
@@ -36,18 +36,18 @@ ms.locfileid: "56614322"
 
 ## <a name="to-add-a-reference-to-a-primary-interop-assembly"></a>Pour ajouter une référence à un assembly PIA
 
-1.  Ouvrez votre projet Office et sélectionnez le nom du projet dans **l’Explorateur de solutions**.
+1. Ouvrez votre projet Office et sélectionnez le nom du projet dans **l’Explorateur de solutions**.
 
-2.  Dans le menu **Projet**, cliquez sur **Ajouter une référence**.
+2. Dans le menu **Projet**, cliquez sur **Ajouter une référence**.
 
-3.  Sur le **Framework** , sélectionnez l’assembly PIA souhaité dans le **nom du composant** liste. Pour plus d’informations sur les assemblys PIA Microsoft Office disponibles, consultez [assemblys PIA Office](../vsto/office-primary-interop-assemblies.md).
+3. Sur le **Framework** , sélectionnez l’assembly PIA souhaité dans le **nom du composant** liste. Pour plus d’informations sur les assemblys PIA Microsoft Office disponibles, consultez [assemblys PIA Office](../vsto/office-primary-interop-assemblies.md).
 
      Si le projet cible le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou version ultérieure, le **incorporer les Types Interop** a la valeur de propriété pour la référence d’assembly **True** par défaut. Grâce à ce paramètre, votre solution ne requiert pas l'assembly PIA sur les ordinateurs des utilisateurs finaux. Pour plus d’informations, consultez [conception et créer des solutions Office](../vsto/designing-and-creating-office-solutions.md).
 
     > [!NOTE]
     >  Dans les projets Office, ajoutez toujours des références aux assemblys PIA Office à l’aide de la **.NET** onglet de la **ajouter une référence** boîte de dialogue plutôt que la **COM** onglet. Pour plus d’informations, consultez [assemblys PIA Office](../vsto/office-primary-interop-assemblies.md).
 
-4.  Cliquez sur **OK**.
+4. Cliquez sur **OK**.
 
      Le nom de l’assembly s’affiche dans le **références** dossier de **l’Explorateur de solutions**.
 
