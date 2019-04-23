@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7d0a13a72613ba72be5a90aa65be991d6ca10b3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 6dbc2638fa23a1e0c7bf1301c3c978a1ef864c75
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657036"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074097"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>Application des paramètres entre plusieurs connexions de projet
 Un plug-in de contrôle de code source créé à l’aide de la Source de contrôle plug-in API Version 1.2, peut utiliser une opération par lot pour exécuter l’opération de contrôle de code source même entre plusieurs projets ou de plusieurs contextes de connexion. Lots peuvent être utilisés pour éliminer redondants, des boîtes de dialogue à partir de l’expérience utilisateur par projet.
@@ -28,9 +28,9 @@ Un plug-in de contrôle de code source créé à l’aide de la Source de contr�
 ## <a name="new-functions"></a>Nouvelles fonctions
 Les fonctions suivantes prennent en charge l’opération de traitement par lots :
 
--   [SccBeginBatch](../../extensibility/sccbeginbatch-function.md)
+- [SccBeginBatch](../../extensibility/sccbeginbatch-function.md)
 
--   [SccEndBatch](../../extensibility/sccendbatch-function.md)
+- [SccEndBatch](../../extensibility/sccendbatch-function.md)
 
 Le `SCCBeginBatch` fonction commence à un groupe d’opérations de contrôle de code source. Le `SccEndBatch` fonction ferme le groupe. Les groupes ne peuvent pas être imbriqués.
 

@@ -11,12 +11,12 @@ ms.assetid: 42907bcf-4e27-46bd-a8cb-01c2ccd2bde5
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9627170ad65906af1bc7930897c374504cae4552
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: abbcc1fc1048866ef790a4b6779ed15ef80a9be1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001732"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074240"
 ---
 # <a name="project-persistence"></a>Persistance d’un projet
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ La persistance est une considération de conception clés pour votre projet. La 
   
  Éléments de projet peuvent être basée sur le fichier ou non basée sur un fichier :  
   
--   Éléments basés sur le fichier peuvent être local ou distant. Dans les projets Web en C#, par exemple, les connexions aux fichiers sur un système distant conservent localement, tandis que les fichiers eux-mêmes sont conservées sur le système distant.  
+- Éléments basés sur le fichier peuvent être local ou distant. Dans les projets Web en c#, par exemple, les connexions aux fichiers sur un système distant conservent localement, tandis que les fichiers eux-mêmes sont conservées sur le système distant.  
   
--   Éléments non basés sur des fichiers peuvent enregistrer des éléments dans une base de données ou le référentiel.  
+- Éléments non basés sur des fichiers peuvent enregistrer des éléments dans une base de données ou le référentiel.  
   
 ## <a name="commit-models"></a>Valider des modèles  
  Après avoir décidé où se trouvent les éléments de projet, vous devez choisir le modèle de validation approprié. Par exemple, dans un modèle basé sur fichier avec des fichiers locaux, chaque projet peut être enregistré autonome. Dans un modèle de référentiel, vous pouvez enregistrer plusieurs éléments dans une seule transaction. Pour plus d’informations, consultez [décisions de conception de Type de projet](../../extensibility/internals/project-type-design-decisions.md).  

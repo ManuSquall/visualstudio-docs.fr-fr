@@ -11,12 +11,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4817d916fdd29d36f53c6bd3fbca42abb2f7cb15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8f3b536ff59c01e1be71bd0fcfb57946219cefd1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953029"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073071"
 ---
 # <a name="type-collection-editor-dialog-box"></a>Boîte de dialogue Éditeur de collections de types
 Le **éditeur de collections de Type** boîte de dialogue est utilisée pour ajouter des types connus le **envoyer** et **réception** activités. Cette boîte de dialogue est également utilisé pour ajouter des arguments de type générique pour le **InvokeMethod** activité. Lorsqu’il est utilisé pour le **envoyer** et **réception** activités à ajouter des types connus, le **éditeur de collections de Type** boîte de dialogue nécessite les ajouts de type unique. Si un type en double est ajouté et la modification est validée en cliquant sur **OK**, un message d’erreur est retourné. Lorsqu’il est utilisé pour le **InvokeMethod** activité pour ajouter des arguments de type générique, le **éditeur de collections de Type** boîte de dialogue permet l’ajout de types en double.  
@@ -34,16 +34,16 @@ Le **éditeur de collections de Type** boîte de dialogue est utilisée pour ajo
   
 #### <a name="to-bring-up-the-type-collection-editor-for-the-send-and-receive-activities"></a>Pour afficher l'Éditeur de collections de types pour les activités Send et Receive  
   
-1.  Sélectionnez le **envoyer** ou **réception** activité en mode design.  
+1. Sélectionnez le **envoyer** ou **réception** activité en mode design.  
   
-2.  Appuyez sur **F4** pour faire apparaître le **propriétés** fenêtre.  
+2. Appuyez sur **F4** pour faire apparaître le **propriétés** fenêtre.  
   
-3.  Dans le **propriétés** , cliquez sur le bouton de sélection en regard du **KnownTypes** propriété.  
+3. Dans le **propriétés** , cliquez sur le bouton de sélection en regard du **KnownTypes** propriété.  
   
 #### <a name="to-bring-up-the-type-collection-editor-for-the-invokemethod-activity"></a>Pour afficher l'Éditeur de collections de types pour l'activité InvokeMethod  
   
-1.  Sélectionnez le **InvokeMethod** activité en mode design.  
+1. Sélectionnez le **InvokeMethod** activité en mode design.  
   
-2.  Appuyez sur **F4** pour faire apparaître le **propriétés** fenêtre.  
+2. Appuyez sur **F4** pour faire apparaître le **propriétés** fenêtre.  
   
-3.  Dans le **propriétés** , cliquez sur le bouton de sélection en regard du **GenericTypeArguments** propriété.
+3. Dans le **propriétés** , cliquez sur le bouton de sélection en regard du **GenericTypeArguments** propriété.

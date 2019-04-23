@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5d662a94a77dff02fd994122e5106f5bff35bac3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: ed644c1dda4ac3674ef60d0027c37532fc6d0f92
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669443"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075622"
 ---
 # <a name="walkthrough-using-xslt-hierarchy"></a>Procédure pas à pas : À l’aide de XSLT Hierarchy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ L’outil XSLT Hierarchy simplifie de nombreuses tâches de développement XML. 
   
 ### <a name="procedure-title"></a>Intitulé de la procédure  
   
-1.  Ouvrez un document XML dans Visual Studio. Cet exemple utilise le document `collection.xml` suivant.  
+1. Ouvrez un document XML dans Visual Studio. Cet exemple utilise le document `collection.xml` suivant.  
   
     ```  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -51,7 +51,7 @@ L’outil XSLT Hierarchy simplifie de nombreuses tâches de développement XML. 
     </COLLECTION>  
     ```  
   
-2.  Ajoutez le `xslincludefile.xsl` suivant :  
+2. Ajoutez le `xslincludefile.xsl` suivant :  
   
     ```  
     <?xml version='1.0'?>  
@@ -74,7 +74,7 @@ L’outil XSLT Hierarchy simplifie de nombreuses tâches de développement XML. 
     </xsl:stylesheet>  
     ```  
   
-3.  Ajoutez le fichier `xslinclude.xsl` suivant :  
+3. Ajoutez le fichier `xslinclude.xsl` suivant :  
   
     ```  
     <?xml version='1.0'?>  
@@ -108,11 +108,11 @@ L’outil XSLT Hierarchy simplifie de nombreuses tâches de développement XML. 
     </xsl:stylesheet>  
     ```  
   
-4.  Ajoutez un point d'arrêt à l'instruction : `<xsl:include href="xslincludefile.xsl" />`  
+4. Ajoutez un point d'arrêt à l'instruction : `<xsl:include href="xslincludefile.xsl" />`  
   
-5.  Démarrez le débogage.  
+5. Démarrez le débogage.  
   
-6.  Lorsque le débogueur s'arrête à l'instruction `<xsl:include href="xslincludefile.xsl" />`, appuyez sur le bouton Pas à pas détaillé. Notez que le débogage peut continuer dans la feuille de style référencée. La hiérarchie est visible et le concepteur affiche le chemin d’accès correct.  
+6. Lorsque le débogueur s'arrête à l'instruction `<xsl:include href="xslincludefile.xsl" />`, appuyez sur le bouton Pas à pas détaillé. Notez que le débogage peut continuer dans la feuille de style référencée. La hiérarchie est visible et le concepteur affiche le chemin d’accès correct.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Procédure pas à pas : Profileur XSLT](../xml-tools/walkthrough-xslt-profiler.md)

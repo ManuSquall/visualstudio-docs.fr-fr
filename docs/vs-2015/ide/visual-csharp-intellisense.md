@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f0d67cc907155f3f5c6bc4b0f132f9045f7d698a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ea48e1807291e935081f01e821cffafa794104f5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800873"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075757"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ Visual C# IntelliSense est disponible quand vous écrivez du code dans l’édi
   
   La liste de saisie semi-automatique en C# est également assez intelligente pour éliminer les jetons inappropriés et présélectionner un jeton selon le contexte. Pour plus d’informations, consultez [Listes de saisie semi-automatique filtrées en C#](../misc/filtered-completion-lists-in-csharp.md) et [Éléments présélectionnés d’une liste de saisie semi-automatique en C#](../misc/pre-selected-completion-list-items-in-csharp.md).  
   
-###  <a name="CodeSnippets"></a> Extraits de code dans les listes de saisie semi-automatique  
+### <a name="CodeSnippets"></a> Extraits de code dans les listes de saisie semi-automatique  
  Dans Visual C#, la liste de saisie semi-automatique comprend des extraits de code pour vous aider à insérer facilement des entités prédéfinies de code dans votre programme. Les extraits de code apparaissent dans la liste de saisie semi-automatique en tant qu’[éléments Shortcut (extraits de code Intellisense)](http://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa) de l’extrait de code.  Pour plus d’informations sur les extraits de code fournis par défaut en Visual C#, consultez [Extraits de code Visual C#](../ide/visual-csharp-code-snippets.md).  
   
-###  <a name="Keywords"></a> Mots clés de langage dans les listes de saisie semi-automatique  
+### <a name="Keywords"></a> Mots clés de langage dans les listes de saisie semi-automatique  
  Dans Visual C#, la liste de saisie semi-automatique inclut également des mots clés de langage. Pour plus d’informations sur les mots clés du langage C#, consultez [Mots clés C#](http://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad).  
   
-###  <a name="ExtensionMethods"></a> Méthodes d’extension dans les listes de saisie semi-automatique  
+### <a name="ExtensionMethods"></a> Méthodes d’extension dans les listes de saisie semi-automatique  
  Dans Visual C#, la liste de saisie semi-automatique inclut les méthodes d’extension qui sont dans la portée.  
   
 > [!NOTE]
@@ -59,23 +59,23 @@ Visual C# IntelliSense est disponible quand vous écrivez du code dans l’édi
   
  Visual C# filtre les listes de saisie semi-automatique qui apparaissent pour les éléments suivants :  
   
--   **Interfaces et classes de base**. IntelliSense supprime automatiquement les éléments dans les listes de saisie semi-automatique des interfaces et des classes de base, à la fois dans les listes d'interface et de classe de base de déclaration, et dans les listes de contraintes. Par exemple, les enums n'apparaissent pas dans la liste de saisie semi-automatique pour les classes de base, car les enums ne peuvent pas être utilisés pour les classes de base. La liste de saisie semi-automatique des classes de base contient uniquement des interfaces et des espaces de noms. Si vous sélectionnez un élément dans la liste et que vous tapez une virgule, IntelliSense supprime les classes de base de la liste de saisie semi-automatique car Visual C# ne prend pas en charge l'héritage multiple. Le même comportement se produit également pour les clauses de contrainte.  
+- **Interfaces et classes de base**. IntelliSense supprime automatiquement les éléments dans les listes de saisie semi-automatique des interfaces et des classes de base, à la fois dans les listes d'interface et de classe de base de déclaration, et dans les listes de contraintes. Par exemple, les enums n'apparaissent pas dans la liste de saisie semi-automatique pour les classes de base, car les enums ne peuvent pas être utilisés pour les classes de base. La liste de saisie semi-automatique des classes de base contient uniquement des interfaces et des espaces de noms. Si vous sélectionnez un élément dans la liste et que vous tapez une virgule, IntelliSense supprime les classes de base de la liste de saisie semi-automatique car Visual C# ne prend pas en charge l'héritage multiple. Le même comportement se produit également pour les clauses de contrainte.  
   
--   **Attributs** : quand vous appliquez un attribut à un type, la liste de saisie semi-automatique est filtrée afin de répertorier uniquement les types qui descendent des espaces de noms qui contiennent ces types, comme <xref:System.Attribute>.  
+- **Attributs** : Quand vous appliquez un attribut à un type, la liste de saisie semi-automatique est filtrée afin de répertorier uniquement les types qui descendent des espaces de noms qui contiennent ces types, tels que <xref:System.Attribute>.  
   
--   Opérateurs `as` et `is`  
+- Opérateurs `as` et `is`  
   
--   **Clauses catch**.  
+- **Clauses catch**.  
   
--   **Initialiseurs d’objets** : seuls les membres qui peuvent être initialisés apparaissent dans la liste de saisie semi-automatique.  
+- **Initialiseurs d’objets :** Seuls les membres qui peuvent être initialisés apparaissent dans la liste de saisie semi-automatique.  
   
--   **Mot clé new** : quand vous tapez `new` et appuyez sur la barre d’espace, une liste de saisie semi-automatique s’affiche. Un élément est sélectionné automatiquement dans la liste en fonction du contexte de votre code. Par exemple, des éléments sont automatiquement sélectionnés dans la liste de saisie semi-automatique pour les déclarations et pour les instructions return dans les méthodes.  
+- **Mot clé new** : Quand vous tapez `new` et appuyez sur la Barre d'espace, une liste de saisie semi-automatique s'affiche. Un élément est sélectionné automatiquement dans la liste en fonction du contexte de votre code. Par exemple, des éléments sont automatiquement sélectionnés dans la liste de saisie semi-automatique pour les déclarations et pour les instructions return dans les méthodes.  
   
--   **Opérateurs as et is** : une liste de saisie semi-automatique filtrée s’affiche automatiquement quand vous appuyez sur la barre d’espace après avoir tapé le mot clé `as` ou `is`.  
+- **en tant que des opérateurs et is :** Une liste de saisie semi-automatique filtrée s'affiche automatiquement quand vous appuyez sur la Barre d'espace après avoir tapé le mot clé `as` ou `is`.  
   
--   Événements : quand vous tapez le mot clé `event`, la liste de saisie semi-automatique contient uniquement des types délégués.  
+- Événements : Quand vous tapez le mot clé `event`, la liste de saisie semi-automatique contient uniquement des types délégués.  
   
--   L'aide sur les paramètres propose automatiquement la première surcharge de méthode qui correspond aux paramètres à mesure que vous les entrez. Si plusieurs surcharges de méthode sont disponibles, vous pouvez utilisez les flèches haut et bas pour accéder à la surcharge suivante dans la liste.  
+- L'aide sur les paramètres propose automatiquement la première surcharge de méthode qui correspond aux paramètres à mesure que vous les entrez. Si plusieurs surcharges de méthode sont disponibles, vous pouvez utilisez les flèches haut et bas pour accéder à la surcharge suivante dans la liste.  
   
 ## <a name="most-recently-used-members"></a>Membres utilisés récemment  
  IntelliSense mémorise les membres que vous avez récemment sélectionnés dans la fenêtre contextuelle [Liste des membres](../ide/using-intellisense.md) pour la saisie semi-automatique du nom d’objet. La prochaine fois que vous utilisez la liste des membres, les membres utilisés récemment seront affichés en haut. L'historique des membres utilisés récemment est effacé entre chaque session dans l'IDE.  
@@ -109,7 +109,7 @@ Visual C# IntelliSense est disponible quand vous écrivez du code dans l’édi
 ### <a name="implement-abstract-base-class"></a>Implémenter une classe de base abstraite  
  IntelliSense fournit une option qui vous aidera à implémenter automatiquement les membres d'une classe de base abstraite pendant que vous travaillez dans l'éditeur de code. Normalement, pour implémenter les membres d'une classe de base abstraite, il est nécessaire de créer une nouvelle définition de méthode pour chaque méthode de la classe de base abstraite dans votre classe dérivée. Grâce à IntelliSense, après avoir tapé le nom d'une classe de base abstraite dans une déclaration de classe, une balise active apparaît. Cette balise active vous permet d'implémenter automatiquement les méthodes de la classe de base.  
   
- Les stubs de méthode générés par la fonctionnalité Implémenter une classe de base abstraite sont modélisés par l'extrait de code défini dans le fichier MethodStub.snippet. Les extraits de code sont modifiables. Pour plus d’informations, consultez [Procédure pas à pas : création d’un extrait de code](../ide/walkthrough-creating-a-code-snippet.md).  
+ Les stubs de méthode générés par la fonctionnalité Implémenter une classe de base abstraite sont modélisés par l'extrait de code défini dans le fichier MethodStub.snippet. Les extraits de code sont modifiables. Pour plus d’informations, consultez [Procédure pas à pas : Création d’un extrait de Code](../ide/walkthrough-creating-a-code-snippet.md).  
   
 ### <a name="generate-from-usage"></a>Générer à partir de l'utilisation  
  La fonctionnalité **Générer à partir de l’utilisation** permet d’utiliser des classes et des membres avant de les définir. Vous pouvez générer un stub pour une classe, un constructeur, une méthode, une propriété, un champ ou une énumération quelconque que vous souhaitez utiliser, mais que vous n'avez pas encore défini. Vous pouvez générer de nouveaux types et membres sans quitter votre emplacement actuel dans le code. Cette opération réduit l'interruption de votre flux de travail.  

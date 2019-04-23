@@ -14,12 +14,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1433d9ba1f207a0f86902d7afd56db6476b1fd56
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dc5f69fee15d3dc67b31c54f0b397fbf039aa52a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54787090"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077340"
 ---
 # <a name="template-parameters"></a>Paramètres de modèle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,19 +29,19 @@ L’utilisation de paramètres dans vos modèles vous permet de remplacer les va
 ## <a name="declaring-and-enabling-template-parameters"></a>Déclaration et activation des paramètres de modèle  
  Les paramètres de modèle sont déclarés au format $*paramètre*$. Par exemple :  
   
--   $safeprojectname$  
+- $safeprojectname$  
   
--   $guid1$  
+- $guid1$  
   
--   $guid5$  
+- $guid5$  
   
 #### <a name="to-enable-parameter-substitution-in-templates"></a>Pour activer la substitution des paramètres dans les modèles  
   
-1.  Dans le fichier .vstemplate du modèle, localisez l’élément `ProjectItem` qui correspond à l’élément pour lequel vous souhaitez activer le remplacement des paramètres.  
+1. Dans le fichier .vstemplate du modèle, localisez l’élément `ProjectItem` qui correspond à l’élément pour lequel vous souhaitez activer le remplacement des paramètres.  
   
-2.  Affectez à l'attribut `ReplaceParameters` de l'élément `ProjectItem` la valeur `true`.  
+2. Affectez à l'attribut `ReplaceParameters` de l'élément `ProjectItem` la valeur `true`.  
   
-3.  Dans le fichier de code de l’élément de projet, ajoutez les paramètres quand cela est approprié. Par exemple, le paramètre suivant spécifie que le nom du projet sécurisé doit être utilisé pour désigner l’espace de noms dans un fichier :  
+3. Dans le fichier de code de l’élément de projet, ajoutez les paramètres quand cela est approprié. Par exemple, le paramètre suivant spécifie que le nom du projet sécurisé doit être utilisé pour désigner l’espace de noms dans un fichier :  
   
     ```  
     namespace $safeprojectname$  

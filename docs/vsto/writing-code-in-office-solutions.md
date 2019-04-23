@@ -33,12 +33,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1e47e8bea173298761e2a5170382ef2c4b32c6c5
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 2c5163de342415113321b6bd2337cd75ff528f6c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54864070"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076888"
 ---
 # <a name="write-code-in-office-solutions"></a>Écrire du code dans les solutions Office
   Certains aspects de l'écriture de code dans les projets Office diffèrent des autres types de projets dans Visual Studio. La plupart de ces différences sont liées à la façon dont les modèles objet Office sont exposés au code managé. Les autres différences portent sur la conception des projets Office.
@@ -63,9 +63,9 @@ ms.locfileid: "54864070"
 
  Étant donné que les types des assemblys PIA d'Office correspondent aux types des modèles objet COM, la façon dont vous utilisez ces types diffère souvent des autres types managés. Par exemple, le mode d'appel des méthodes possédant des paramètres optionnels dans un assembly PIA d'Office dépend du langage de programmation utilisé dans le projet. Pour plus d’informations, consultez les rubriques suivantes :
 
--   [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md).
+- [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md).
 
--   [Liaison tardive dans les solutions Office](../vsto/late-binding-in-office-solutions.md).
+- [Liaison tardive dans les solutions Office](../vsto/late-binding-in-office-solutions.md).
 
 ## <a name="program-model-of-office-projects"></a>Modèle de programme des projets Office
  Tous les projets Office incluent une ou plusieurs classes générées qui fournissent le point d'entrée de votre code. Ces classes fournissent également l'accès au modèle objet de l'application hôte, ainsi qu'aux fonctionnalités telles que les volets Actions et les volets de tâches personnalisés.
@@ -85,7 +85,7 @@ ms.locfileid: "54864070"
 ### <a name="namespace-considerations-in-office-solutions"></a>Considérations relatives à la Namespace dans les solutions Office
  Vous ne pouvez pas modifier l' *espace de noms par défaut* (ou l' *espace de noms racine* dans Visual Basic) dans un projet Office existant. L'espace de noms par défaut correspondra toujours au nom du projet que vous avez spécifié lors de sa création. Si vous renommez votre projet, l'espace de noms par défaut ne change pas. Pour plus d’informations sur l’espace de noms par défaut dans les projets, consultez [Application Page, Project Designer &#40;C&#35; &#41; ](../ide/reference/application-page-project-designer-csharp.md) et [Application Page, Project Designer &#40;Visual Basic&#41; ](../ide/reference/application-page-project-designer-visual-basic.md).
 
-### <a name="change-the-namespace-of-host-item-classes-in-c-projects"></a>Modifier l’espace de noms de classes d’élément hôte dans les projets C#
+### <a name="change-the-namespace-of-host-item-classes-in-c-projects"></a>Modifier l’espace de noms de classes d’élément hôte dans les projets c#
  Les classes d'élément hôte (par exemple, `ThisAddIn`, `ThisWorkbook`et `ThisDocument` ) ont leurs propres espaces de noms dans les projets Office Visual C#. Par défaut, l'espace de noms des éléments hôtes dans votre projet correspond au nom de projet que vous avez spécifié lors de la création de ce dernier.
 
  Pour modifier l'espace de noms des éléments hôtes dans un projet Office Visual C#, utilisez la propriété **Espace de noms de l'élément hôte** . Pour plus d’informations, consultez [propriétés dans les projets Office](../vsto/properties-in-office-projects.md).
@@ -96,11 +96,14 @@ ms.locfileid: "54864070"
 ## <a name="language-choice-and-office-programming"></a>Choix du langage et programmation Office
  Microsoft Office et Visual Basic pour Applications (VBA) ont été développés pour fonctionner ensemble afin d'optimiser le workflow de la personnalisation d'application. Visual Basic a hérité certains de ces développements, comme la prise en charge des paramètres optionnels. L'utilisation de ces paramètres vous permet d'appeler certaines méthodes dans les assemblys PIA (Primary Interop Assembly) de Microsoft Office en ayant moins de code à écrire qu'avec Visual C#.
 
-## <a name="program-with-visual-basic-vs-visual-c-in-office-solutions"></a>Programme avec vs de Visual Basic. Visual C# dans les solutions Office
+## <a name="program-with-visual-basic-vs-visual-c-in-office-solutions"></a>Programme avec vs de Visual Basic. Visual c# dans les solutions Office
  Vous pouvez créer des solutions Office à l'aide de Visual Basic ou Visual C#. Étant donné que les modèles objet de Microsoft Office ont été conçus pour être utilisés avec Microsoft Visual Basic pour Applications (VBA), les développeurs en Visual Basic peuvent facilement travailler avec les objets exposés par les applications Microsoft Office. Les développeurs en Visual C# peuvent utiliser la plupart des fonctionnalités disponibles pour les développeurs en Visual Basic, sauf dans certains cas où ils doivent écrire du code supplémentaire pour pouvoir utiliser les modèles objet d'Office. Il existe également quelques différences entre les fonctionnalités de programmation de base dans le développement Office et le code managé écrit en Visual Basic et Visual C#.
 
-## <a name="key-differences-between-visual-basic-and-visual-c"></a>Principales différences entre Visual Basic et Visual C#
- Le tableau suivant indique les principales différences entre Visual Basic et Visual C# dans le développement Office.
+<!-- markdownlint-disable MD003 MD020 -->
+## <a name="key-differences-between-visual-basic-and-visual-c"></a>Principales différences entre Visual Basic et Visual c#
+<!-- markdownlint-enable MD003 MD020 -->
+
+Le tableau suivant indique les principales différences entre Visual Basic et Visual C# dans le développement Office.
 
 |Fonctionnalité|Description|Prise en charge dans Visual Basic|Prise en charge dans Visual C#|
 |-------------|-----------------|--------------------------|------------------------|

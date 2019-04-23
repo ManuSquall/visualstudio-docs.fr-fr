@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f81bdcad4f255585c2c554add59ed04dea5872d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9fa00e8b5aafa131a9ca64b6fdaa7cba79fcb3b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952671"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074214"
 ---
 # <a name="t4-assembly-directive"></a>Directive d'assembly T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ Dans un modèle de texte au moment du design [!INCLUDE[vsprvs](../includes/vsprv
   
 - Assembly contenant votre langage spécifique à un domaine.  
   
-##  <a name="msbuild"></a> À l’aide des propriétés du projet dans MSBuild et Visual Studio  
+## <a name="msbuild"></a> À l’aide des propriétés du projet dans MSBuild et Visual Studio  
  Les macros Visual Studio telles que $(SolutionDir) ne fonctionnent pas dans MSBuild. Si vous souhaitez transformer les modèles de votre ordinateur de build, vous devez utiliser les propriétés de projet à la place.  
   
  Modifiez votre fichier projet .csproj ou .vbproj pour définir une propriété de projet. Cet exemple définit une propriété nommée `myLibFolder` :  

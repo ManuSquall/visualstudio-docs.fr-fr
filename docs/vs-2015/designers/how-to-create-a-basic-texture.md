@@ -9,29 +9,29 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b653d1b19842910fc88deb9d9cae5db918f35b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a343cb508933b91f5400ff6bc17c285a54bd2e87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767097"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076797"
 ---
-# <a name="how-to-create-a-basic-texture"></a>Comment : créer une texture de base
+# <a name="how-to-create-a-basic-texture"></a>Procédure : Créer une texture de base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ce document montre comment utiliser l’éditeur d’images pour créer une texture de base.  
   
  Ce document illustre ces activités :  
   
--   Définition de la taille de la texture  
+- Définition de la taille de la texture  
   
--   Définition des couleurs de premier plan et d’arrière-plan  
+- Définition des couleurs de premier plan et d’arrière-plan  
   
--   Utilisation du canal alpha (transparence)  
+- Utilisation du canal alpha (transparence)  
   
--   Utilisation des outils **Remplissage** et **Ellipse**  
+- Utilisation des outils **Remplissage** et **Ellipse**  
   
--   Définition des propriétés des outils  
+- Définition des propriétés des outils  
   
 ## <a name="creating-a-basic-texture"></a>Création d’une texture de base  
  Vous pouvez utiliser l’éditeur d’images pour créer et modifier des images et des textures pour votre jeu ou application.  
@@ -88,7 +88,7 @@ Ce document montre comment utiliser l’éditeur d’images pour créer une text
   
     ![Texture de cible complète](../designers/media/gfx-image-demo-bullseye.png "gfx_image_demo_bullseye")  
   
-    Ensuite, vous pouvez générer des niveaux MIP pour cette texture. Pour plus d’informations, consultez l’article [Comment : créer et modifier les niveaux MIP](../designers/how-to-create-and-modify-mip-levels.md).  
+    Ensuite, vous pouvez générer des niveaux MIP pour cette texture. Pour plus d’informations, consultez [Guide pratique pour Créer et modifier les niveaux MIP](../designers/how-to-create-and-modify-mip-levels.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Image Editor](../designers/image-editor.md)

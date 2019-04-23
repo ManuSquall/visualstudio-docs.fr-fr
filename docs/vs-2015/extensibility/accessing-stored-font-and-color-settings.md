@@ -12,12 +12,12 @@ ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 88562da16a0c9803441b859b6498782e6e316fb6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6ff962a618ba0001441db748facac8af444cd255
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952717"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078094"
 ---
 # <a name="accessing-stored-font-and-color-settings"></a>L’accès à la police stockée ni les paramètres de couleur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,21 +29,21 @@ Le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] l’environnement de développem
   
  Par conséquent, pour lancer la persistance, un VSPackage doit :  
   
--   Obtenir un <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface en appelant `QueryService` contre le fournisseur de services global.  
+- Obtenir un <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface en appelant `QueryService` contre le fournisseur de services global.  
   
      `QueryService` doit être appelée à l’aide d’un argument d’ID de service de `SID_SVsFontAndColorStorage` et un argument d’ID d’interface `IID_IVsFontAndColorStorage`.  
   
--   Utilisez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> méthode pour ouvrir une catégorie à rendre persistantes à l’aide de GUID de la catégorie et un indicateur de mode en tant qu’arguments.  
+- Utilisez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> méthode pour ouvrir une catégorie à rendre persistantes à l’aide de GUID de la catégorie et un indicateur de mode en tant qu’arguments.  
   
      Le mode spécifié par le `fFlags` argument, est construit à partir des valeurs dans le <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> énumération. Ce mode contrôle :  
   
-    -   Les paramètres qui sont accessibles via le <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface.  
+    - Les paramètres qui sont accessibles via le <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface.  
   
-    -   Tous les paramètres ou uniquement ceux qui modifient les utilisateurs et qui sont récupérables par le biais du <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface.  
+    - Tous les paramètres ou uniquement ceux qui modifient les utilisateurs et qui sont récupérables par le biais du <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface.  
   
-    -   La manière de propager les modifications apportées aux paramètres utilisateur.  
+    - La manière de propager les modifications apportées aux paramètres utilisateur.  
   
-    -   Le format de valeurs de couleur qui sont utilisés.  
+    - Le format de valeurs de couleur qui sont utilisés.  
   
 ## <a name="to-use-state-persistence-of-fonts-and-colors"></a>Pour utiliser la persistance de l’état de polices et couleurs  
  Couleurs et polices persistantes implique :  

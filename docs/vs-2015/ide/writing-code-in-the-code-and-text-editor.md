@@ -60,12 +60,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5953afed3ede465cab03677c00e2e930ac6b6cb4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: a949f920fe956d1b0b3e7e9522d1b82e26a60168
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665741"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077821"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Écriture de code dans l'éditeur de code et de texte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -188,45 +188,45 @@ Cette fonctionnalité est particulièrement utile si votre code contient des nom
 
  Pour plus d’informations sur les options d’éditeur spécifiques au langage, consultez les rubriques suivantes :  
 
--   [Paramètres de Visual Basic](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
+- [Paramètres de Visual Basic](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
 
--   [Utilisation de l’environnement de développement Visual Studio pour C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
+- [Utilisation de l’environnement de développement Visual Studio pour C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
 
--   [Options, Éditeur de texte, JavaScript, Mise en forme](../ide/reference/options-text-editor-javascript-formatting.md)  
+- [Options, Éditeur de texte, JavaScript, Mise en forme](../ide/reference/options-text-editor-javascript-formatting.md)  
 
 ## <a name="in-this-section"></a>Dans cette section  
 
--   [Recherche et remplacement de texte](../ide/finding-and-replacing-text.md)  
+- [Recherche et remplacement de texte](../ide/finding-and-replacing-text.md)  
 
--   [Encodages et sauts de ligne](../ide/encodings-and-line-breaks.md)  
+- [Encodages et sauts de ligne](../ide/encodings-and-line-breaks.md)  
 
--   [Mode Plan](../ide/outlining.md)  
+- [Mode Plan](../ide/outlining.md)  
 
--   [Refactorisation](../ide/refactoring-in-visual-studio.md)  
+- [Refactorisation](../ide/refactoring-in-visual-studio.md)  
 
--   [Conseils de productivité](../ide/productivity-tips-for-visual-studio.md)  
+- [Conseils de productivité](../ide/productivity-tips-for-visual-studio.md)  
 
--   [Utilisation de la fonctionnalité IntelliSense](../ide/using-intellisense.md)  
+- [Utilisation de la fonctionnalité IntelliSense](../ide/using-intellisense.md)  
 
--   [Personnalisation de l’éditeur](../ide/customizing-the-editor.md)  
+- [Personnalisation de l’éditeur](../ide/customizing-the-editor.md)  
 
--   [Guide pratique pour suivre votre code en personnalisant la barre de défilement](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
+- [Guide pratique pour suivre votre code en personnalisant la barre de défilement](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
 
--   [Guide pratique pour afficher et modifier le code avec l’Aperçu de définition (Alt + F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
+- [Guide pratique pour afficher et modifier le code avec l’Aperçu de définition (Alt + F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
 
--   [Effectuer des actions rapides avec des ampoules](../ide/perform-quick-actions-with-light-bulbs.md)  
+- [Effectuer des actions rapides avec des ampoules](../ide/perform-quick-actions-with-light-bulbs.md)  
 
--   [Extraits de code](../ide/code-snippets.md)  
+- [Extraits de code](../ide/code-snippets.md)  
 
--   [Utilisation de la boîte à outils](../ide/using-the-toolbox.md)  
+- [Utilisation de la boîte à outils](../ide/using-the-toolbox.md)  
 
--   [Affichage de la structure du code](../ide/viewing-the-structure-of-code.md)  
+- [Affichage de la structure du code](../ide/viewing-the-structure-of-code.md)  
 
--   [Définition de signets dans le code](../ide/setting-bookmarks-in-code.md)  
+- [Définition de signets dans le code](../ide/setting-bookmarks-in-code.md)  
 
--   [Utilisation de la liste des tâches](../ide/using-the-task-list.md)  
+- [Utilisation de la liste des tâches](../ide/using-the-task-list.md)  
 
--   [Rechercher les modifications de code et d’autres historiques](../ide/find-code-changes-and-other-history-with-codelens.md)  
+- [Rechercher les modifications de code et d’autres historiques](../ide/find-code-changes-and-other-history-with-codelens.md)  
 
 ## <a name="see-also"></a>Voir aussi  
  [IDE Visual Studio](../ide/visual-studio-ide.md)

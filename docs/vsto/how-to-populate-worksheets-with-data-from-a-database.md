@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1169ea54ffbc0d0437204ed4491e2b8cc68a4a04
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 67c12843d00bf8d5af51fa7af3175077527afa58
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865617"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079139"
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Procédure : Remplir des feuilles de calcul avec des données à partir d’une base de données
 
@@ -35,17 +35,17 @@ L'exemple suivant montre comment ajouter des contrôles liés aux données dans 
 
 ### <a name="to-populate-a-worksheet-with-data-from-a-database"></a>Pour remplir une feuille de calcul avec des données à partir d’une base de données
 
-1.  Ouvrez un projet de document Excel dans Visual Studio, avec la feuille de calcul ouverte dans le concepteur.
+1. Ouvrez un projet de document Excel dans Visual Studio, avec la feuille de calcul ouverte dans le concepteur.
 
-2.  Ouvrez la fenêtre **Sources de données** et créez une source de données pour votre projet. Pour plus d’informations, consultez [ajouter de nouvelles connexions](../data-tools/add-new-connections.md).
+2. Ouvrez la fenêtre **Sources de données** et créez une source de données pour votre projet. Pour plus d’informations, consultez [ajouter de nouvelles connexions](../data-tools/add-new-connections.md).
 
-3.  Faites glisser le champ ou la table que vous souhaitez à partir de la **des Sources de données** fenêtre à votre feuille de calcul.
+3. Faites glisser le champ ou la table que vous souhaitez à partir de la **des Sources de données** fenêtre à votre feuille de calcul.
 
 Un des contrôles suivants est créé sur la feuille de calcul :
 
--   Si vous faites glisser un champ, un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle est créé sur la feuille de calcul. Pour plus d’informations, consultez [contrôle NamedRange](../vsto/namedrange-control.md).
+- Si vous faites glisser un champ, un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle est créé sur la feuille de calcul. Pour plus d’informations, consultez [contrôle NamedRange](../vsto/namedrange-control.md).
 
--   Si vous faites glisser une table, un <xref:Microsoft.Office.Tools.Excel.ListObject> contrôle est créé sur la feuille de calcul. Pour plus d’informations, consultez [contrôle ListObject](../vsto/listobject-control.md).
+- Si vous faites glisser une table, un <xref:Microsoft.Office.Tools.Excel.ListObject> contrôle est créé sur la feuille de calcul. Pour plus d’informations, consultez [contrôle ListObject](../vsto/listobject-control.md).
 
 Vous pouvez ajouter un autre contrôle en sélectionnant la table ou le champ dans le **des Sources de données** fenêtre, puis en choisissant un autre contrôle dans la liste déroulante.
 
@@ -53,19 +53,19 @@ Vous pouvez ajouter un autre contrôle en sélectionnant la table ou le champ da
 
 Outre le contrôle, les objets de données suivants sont automatiquement ajoutés à votre projet :
 
--   Un dataset typé qui encapsule les tables de données auxquelles vous êtes connecté dans la base de données. Pour plus d’informations, consultez [outils de Dataset dans Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
+- Un dataset typé qui encapsule les tables de données auxquelles vous êtes connecté dans la base de données. Pour plus d’informations, consultez [outils de Dataset dans Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
--   Un <xref:System.Windows.Forms.BindingSource> qui connecte le contrôle au dataset typé. Pour plus d’informations, consultez [vue d’ensemble du composant BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview).
+- Un <xref:System.Windows.Forms.BindingSource> qui connecte le contrôle au dataset typé. Pour plus d’informations, consultez [vue d’ensemble du composant BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview).
 
--   Un TableAdapter qui connecte le dataset typé à la base de données. Pour plus d’informations, consultez [vue d’ensemble de TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
+- Un TableAdapter qui connecte le dataset typé à la base de données. Pour plus d’informations, consultez [vue d’ensemble de TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
 
--   Un TableAdapterManager, qui est utilisé pour coordonner des adaptateurs de table dans le jeu de données pour activer les mises à jour hiérarchiques. Pour plus d’informations, consultez [mise à jour hiérarchique](../data-tools/hierarchical-update.md) et [TableAdapterManager référence](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
+- Un TableAdapterManager, qui est utilisé pour coordonner des adaptateurs de table dans le jeu de données pour activer les mises à jour hiérarchiques. Pour plus d’informations, consultez [mise à jour hiérarchique](../data-tools/hierarchical-update.md) et [TableAdapterManager référence](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
 
 Lorsque vous exécutez le projet, le contrôle affiche le premier enregistrement de la source de données. Vous pouvez utiliser le <xref:System.Windows.Forms.BindingSource> pour permettre aux utilisateurs de faire défiler les enregistrements.
 
 ### <a name="to-scroll-through-the-records"></a>Pour faire défiler les enregistrements
 
--   Utilisez les méthodes <xref:System.Windows.Forms.BindingSource> telles que <xref:System.Windows.Forms.BindingSource.MoveNext%2A> et <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
+- Utilisez les méthodes <xref:System.Windows.Forms.BindingSource> telles que <xref:System.Windows.Forms.BindingSource.MoveNext%2A> et <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
 
 Pour plus d’informations sur l’envoi des mises à jour pour le dataset typé et la base de données, consultez [Comment : Mettre à jour une source de données avec des données à partir d’un contrôle hôte](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 

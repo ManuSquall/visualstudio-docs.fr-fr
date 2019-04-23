@@ -13,12 +13,12 @@ ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
 caps.latest.revision: 57
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 644f763c64897eda4896c1431c815519dcc9b65f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e3bbf6b3b1ed2565d5e58806bd0935f713ba5bfd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949897"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076682"
 ---
 # <a name="creating-an-extension-with-a-menu-command"></a>Création d’une extension avec une commande de menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,28 +30,28 @@ Cette procédure pas à pas montre comment créer une extension avec une command
   
 ## <a name="creating-a-menu-command"></a>Création d’une commande de Menu  
   
-1.  Créez un projet VSIX nommé **FirstMenuCommand**. Vous pouvez trouver le modèle de projet VSIX dans le **nouveau projet** boîte de dialogue sous **Visual C# / extensibilité**.  
+1. Créez un projet VSIX nommé **FirstMenuCommand**. Vous pouvez trouver le modèle de projet VSIX dans le **nouveau projet** boîte de dialogue sous **Visual c# / extensibilité**.  
   
-2.  Quand le projet s’ouvre, ajoutez un modèle d’élément de commande personnalisée nommé **FirstCommand**. Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **Ajouter / nouvel élément**. Dans le **ajouter un nouvel élément** boîte de dialogue, accédez à **Visual C# / extensibilité** et sélectionnez **commande personnalisée**. Dans le **nom** en bas de la fenêtre, modifiez le nom de fichier de commande pour **FirstCommand.cs**.  
+2. Quand le projet s’ouvre, ajoutez un modèle d’élément de commande personnalisée nommé **FirstCommand**. Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **Ajouter / nouvel élément**. Dans le **ajouter un nouvel élément** boîte de dialogue, accédez à **Visual c# / extensibilité** et sélectionnez **commande personnalisée**. Dans le **nom** en bas de la fenêtre, modifiez le nom de fichier de commande pour **FirstCommand.cs**.  
   
-3.  Générez le projet et commencez le débogage.  
+3. Générez le projet et commencez le débogage.  
   
      L’instance expérimentale de Visual Studio s’affiche. Pour plus d’informations sur l’instance expérimentale, consultez [l’Instance expérimentale](../extensibility/the-experimental-instance.md).  
   
-4.  Dans l’instance expérimentale, ouvrez le **outils / Extensions et mises à jour** fenêtre. Vous devez voir le **FirstMenuCommand** extension ici. (Si vous ouvrez **Extensions et mises à jour** dans votre instance de travail de Visual Studio, vous ne verrez pas **FirstMenuCommand**).  
+4. Dans l’instance expérimentale, ouvrez le **outils / Extensions et mises à jour** fenêtre. Vous devez voir le **FirstMenuCommand** extension ici. (Si vous ouvrez **Extensions et mises à jour** dans votre instance de travail de Visual Studio, vous ne verrez pas **FirstMenuCommand**).  
   
      Passez maintenant à la **outils** menu dans l’instance expérimentale. Vous devriez voir **FirstCommand appeler** commande. À ce stade simplement afficher une boîte de message indiquant que « FirstCommandPackage à l’intérieur de FirstMenuCommand.FirstCommand.MenuItemCallback() ». Nous verrons comment réellement démarrer le bloc-notes à partir de cette commande dans la section suivante.  
   
 ## <a name="changing-the-menu-command-handler"></a>Modifier le Gestionnaire de commandes de Menu  
  Maintenant nous allons mettre à jour le Gestionnaire de commandes pour démarrer le bloc-notes.  
   
-1.  Arrêter le débogage et revenez à votre instance de travail de Visual Studio. Ouvrez le fichier FirstCommand.cs et ajoutez le code suivant à l’aide d’instruction :  
+1. Arrêter le débogage et revenez à votre instance de travail de Visual Studio. Ouvrez le fichier FirstCommand.cs et ajoutez le code suivant à l’aide d’instruction :  
   
     ```csharp  
     using System.Diagnostics;  
     ```  
   
-2.  Recherchez le constructeur de FirstCommand privé. Il s’agit dans lequel la commande est raccordée au service de commande et le Gestionnaire de commandes est spécifié. Remplacez le nom du Gestionnaire de commandes StartNotepad, comme suit :  
+2. Recherchez le constructeur de FirstCommand privé. Il s’agit dans lequel la commande est raccordée au service de commande et le Gestionnaire de commandes est spécifié. Remplacez le nom du Gestionnaire de commandes StartNotepad, comme suit :  
   
     ```csharp  
     private FirstCommand(Package package)  
@@ -74,7 +74,7 @@ Cette procédure pas à pas montre comment créer une extension avec une command
     }  
     ```  
   
-3.  Supprimer la méthode MenuItemCallback et ajoutez une méthode StartNotepad qui démarrera simplement le bloc-notes :  
+3. Supprimer la méthode MenuItemCallback et ajoutez une méthode StartNotepad qui démarrera simplement le bloc-notes :  
   
     ```csharp  
     private void StartNotepad(object sender, EventArgs e)  
@@ -85,7 +85,7 @@ Cette procédure pas à pas montre comment créer une extension avec une command
     }  
     ```  
   
-4.  Essayez maintenant. Lorsque vous commencez à déboguer le projet et cliquez sur **outils / appeler FirstCommand**, vous devez voir une instance de bloc-notes s’affiche.  
+4. Essayez maintenant. Lorsque vous commencez à déboguer le projet et cliquez sur **outils / appeler FirstCommand**, vous devez voir une instance de bloc-notes s’affiche.  
   
      Vous pouvez utiliser une instance de la <xref:System.Diagnostics.Process> classe pour exécuter n’importe quel fichier exécutable, pas seulement le bloc-notes. Essayer avec calc.exe, par exemple.  
   
@@ -94,9 +94,9 @@ Cette procédure pas à pas montre comment créer une extension avec une command
   
  Vous pouvez accéder à ce script de deux manières :  
   
-1.  À partir du bureau, recherchez **réinitialiser l’Instance expérimentale de Visual Studio 2015**.  
+1. À partir du bureau, recherchez **réinitialiser l’Instance expérimentale de Visual Studio 2015**.  
   
-2.  À partir de la ligne de commande, exécutez ce qui suit :  
+2. À partir de la ligne de commande, exécutez ce qui suit :  
   
     ```  
     <VSSDK installation>\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe /Reset /VSInstance=14.0 /RootSuffix=Exp && PAUSE  
@@ -119,11 +119,11 @@ Cette procédure pas à pas montre comment créer une extension avec une command
   
 1. Vous pouvez effectuer bien d’autres choses avec une commande de menu simple :  
   
-   1.  Ajoutez votre propre icône : [Ajout d’icônes aux commandes de menu](../extensibility/adding-icons-to-menu-commands.md)  
+   1. Ajoutez votre propre icône : [Ajout d’icônes aux commandes de menu](../extensibility/adding-icons-to-menu-commands.md)  
   
-   2.  Modifier le texte de la commande de menu : [Modification du texte d’une commande de menu](../extensibility/changing-the-text-of-a-menu-command.md)  
+   2. Modifier le texte de la commande de menu : [Modification du texte d’une commande de menu](../extensibility/changing-the-text-of-a-menu-command.md)  
   
-   3.  Ajouter un raccourci du menu à une commande : [Liaison de raccourcis clavier à des éléments de menu](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
+   3. Ajouter un raccourci du menu à une commande : [Liaison de raccourcis clavier à des éléments de menu](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
   
 2. Ajouter différents types de commandes, menus et barres d’outils : [Extension des menus et des commandes](../extensibility/extending-menus-and-commands.md)  
   

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a32772abb6dd0a4fb1a2d1dc7026cf5d4bac214
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c3bf289a20f206db5aede2de01ddc2030c52b8fa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717817"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078380"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Étendre les fenêtres Propriétés, liste des tâches, sortie et Options
 Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Cette procédure pas à pas montre comment intégrer des informations relatives à votre fenêtre outil dans un nouveau **Options** page et un nouveau paramètre sur le **propriétés** page et également comment écrire dans le **listedestâches** et **sortie** windows.
@@ -30,7 +30,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
 
 ## <a name="create-an-extension-with-a-tool-window"></a>Créer une extension avec une fenêtre outil
 
-1.  Créez un projet nommé **TodoList** en utilisant le modèle VSIX et ajouter un modèle d’élément de fenêtre outil personnalisé nommé **TodoWindow**.
+1. Créez un projet nommé **TodoList** en utilisant le modèle VSIX et ajouter un modèle d’élément de fenêtre outil personnalisé nommé **TodoWindow**.
 
     > [!NOTE]
     >  Pour plus d’informations sur la création d’une extension avec une fenêtre outil, consultez [créer une extension avec une fenêtre outil](../extensibility/creating-an-extension-with-a-tool-window.md).
@@ -38,18 +38,18 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
 ## <a name="set-up-the-tool-window"></a>Configurer la fenêtre outil
  Ajoutez une zone de texte dans laquelle vous pouvez entrer un nouvel élément ToDo, un bouton pour ajouter le nouvel élément à la liste et une zone de liste pour afficher les éléments dans la liste.
 
-1.  Dans *TodoWindow.xaml*, supprimer les contrôles de bouton, zone de texte et StackPanel de UserControl.
+1. Dans *TodoWindow.xaml*, supprimer les contrôles de bouton, zone de texte et StackPanel de UserControl.
 
     > [!NOTE]
     >  Cette opération ne supprime pas le **button1_Click** Gestionnaire d’événements qui vous réutiliserez dans une étape ultérieure.
 
-2.  À partir de la **tous les contrôles WPF** section de la **boîte à outils**, faites glisser un **canevas** contrôle à la grille.
+2. À partir de la **tous les contrôles WPF** section de la **boîte à outils**, faites glisser un **canevas** contrôle à la grille.
 
-3.  Faites glisser un **zone de texte**, un **bouton**et un **ListBox** à la zone de dessin. Réorganiser les éléments afin que la zone de texte et le bouton se trouvent sur le même niveau, et la zone de liste remplit le reste de la fenêtre ci-dessous, comme dans l’image ci-dessous.
+3. Faites glisser un **zone de texte**, un **bouton**et un **ListBox** à la zone de dessin. Réorganiser les éléments afin que la zone de texte et le bouton se trouvent sur le même niveau, et la zone de liste remplit le reste de la fenêtre ci-dessous, comme dans l’image ci-dessous.
 
      ![Fin de fenêtre outil](../extensibility/media/t5-toolwindow.png "T5-ToolWindow")
 
-4.  Dans le volet XAML, recherchez le bouton et définissez sa propriété de contenu sur **ajouter**. Reconnecter le Gestionnaire d’événements de bouton au contrôle de bouton en ajoutant un `Click="button1_Click"` attribut. Le bloc de la zone de dessin doit ressembler à ceci :
+4. Dans le volet XAML, recherchez le bouton et définissez sa propriété de contenu sur **ajouter**. Reconnecter le Gestionnaire d’événements de bouton au contrôle de bouton en ajoutant un `Click="button1_Click"` attribut. Le bloc de la zone de dessin doit ressembler à ceci :
 
     ```xml
     <Canvas HorizontalAlignment="Left" Width="306">
@@ -61,13 +61,13 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
 
 ### <a name="customize-the-constructor"></a>Personnaliser le constructeur
 
-1.  Dans le *TodoWindowControl.xaml.cs* de fichier, ajoutez le code suivant à l’aide d’instruction :
+1. Dans le *TodoWindowControl.xaml.cs* de fichier, ajoutez le code suivant à l’aide d’instruction :
 
     ```csharp
     using System;
     ```
 
-2.  Ajouter une référence publique à la TodoWindow et avoir le constructeur TodoWindowControl prennent un paramètre TodoWindow. Le code doit ressembler à ceci :
+2. Ajouter une référence publique à la TodoWindow et avoir le constructeur TodoWindowControl prennent un paramètre TodoWindow. Le code doit ressembler à ceci :
 
     ```csharp
     public TodoWindow parent;
@@ -79,7 +79,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
     }
     ```
 
-3.  Dans *TodoWindow.cs*, modifiez le constructeur TodoWindowControl pour inclure le paramètre TodoWindow. Le code doit ressembler à ceci :
+3. Dans *TodoWindow.cs*, modifiez le constructeur TodoWindowControl pour inclure le paramètre TodoWindow. Le code doit ressembler à ceci :
 
     ```csharp
     public TodoWindow() : base(null)
@@ -125,13 +125,13 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
 
 ### <a name="make-the-options-page-available-to-users"></a>Rendre la page d’Options disponibles aux utilisateurs
 
-1.  Dans *TodoWindowPackage.cs*, ajoutez un <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> à la `TodoWindowPackage` classe :
+1. Dans *TodoWindowPackage.cs*, ajoutez un <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> à la `TodoWindowPackage` classe :
 
     ```csharp
     [ProvideOptionPage(typeof(ToolsOptions), "ToDo", "General", 101, 106, true)]
     ```
 
-2.  Le premier paramètre au constructeur ProvideOptionPage est le type de la classe `ToolsOptions`, que vous avez créé précédemment. Le deuxième paramètre, « ToDo », est le nom de la catégorie dans le **Options** boîte de dialogue. Le troisième paramètre, « Général », est le nom de la sous-catégorie de la **Options** boîte de dialogue dans lequel la page d’Options sera disponible. Les deux paramètres suivants sont des ID de ressource pour les chaînes ; le premier est le nom de la catégorie et le second est le nom de la sous-catégorie. Le paramètre final détermine si cette page est accessible à l’aide d’automation.
+2. Le premier paramètre au constructeur ProvideOptionPage est le type de la classe `ToolsOptions`, que vous avez créé précédemment. Le deuxième paramètre, « ToDo », est le nom de la catégorie dans le **Options** boîte de dialogue. Le troisième paramètre, « Général », est le nom de la sous-catégorie de la **Options** boîte de dialogue dans lequel la page d’Options sera disponible. Les deux paramètres suivants sont des ID de ressource pour les chaînes ; le premier est le nom de la catégorie et le second est le nom de la sous-catégorie. Le paramètre final détermine si cette page est accessible à l’aide d’automation.
 
      Lorsqu’un utilisateur ouvre votre page d’Options, elle doit ressembler à l’image suivante.
 
@@ -142,7 +142,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
 ## <a name="make-data-available-to-the-properties-window"></a>Ces données à la fenêtre Propriétés
  Proposer des informations de liste ToDo en créant une classe nommée `TodoItem` qui stocke des informations sur les éléments individuels dans la liste des tâches.
 
-1.  Ajoutez une classe nommée `TodoItem.cs`.
+1. Ajoutez une classe nommée `TodoItem.cs`.
 
      Lorsque la fenêtre outil est disponible pour les utilisateurs, les éléments dans la zone de liste seront représentés par TodoItems. Lorsque l’utilisateur sélectionne un de ces éléments dans la zone de liste, le **propriétés** fenêtre affiche des informations sur l’élément.
 
@@ -150,7 +150,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
 
      ![Fenêtre Propriétés](../extensibility/media/t5properties.png "T5Properties")
 
-2.  Ajoutez le code suivant à l’aide d’instructions le *TodoItem.cs* fichier.
+2. Ajoutez le code suivant à l’aide d’instructions le *TodoItem.cs* fichier.
 
     ```csharp
     using System.ComponentModel;
@@ -158,7 +158,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
     using Microsoft.VisualStudio.Shell.Interop;
     ```
 
-3.  Ajouter le `public` modificateur d’accès à la déclaration de classe.
+3. Ajouter le `public` modificateur d’accès à la déclaration de classe.
 
     ```csharp
     public class TodoItem
@@ -201,7 +201,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
     }
     ```
 
-4.  Ajouter une référence au contrôle utilisateur privée. Ajoutez un constructeur qui prend le contrôle utilisateur et le nom de cet élément ToDo. Pour rechercher la valeur pour `daysAhead`, il obtient la propriété de la page Options.
+4. Ajouter une référence au contrôle utilisateur privée. Ajoutez un constructeur qui prend le contrôle utilisateur et le nom de cet élément ToDo. Pour rechercher la valeur pour `daysAhead`, il obtient la propriété de la page Options.
 
     ```csharp
     private TodoWindowControl parent;
@@ -230,7 +230,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
     }
     ```
 
-5.  Car les instances de la `TodoItem` classe est stockée dans la zone de liste et de la zone de liste appellera le `ToString` (fonction), vous devez surcharger le `ToString` (fonction). Ajoutez le code suivant à *TodoItem.cs*, après le constructeur et avant la fin de la classe.
+5. Car les instances de la `TodoItem` classe est stockée dans la zone de liste et de la zone de liste appellera le `ToString` (fonction), vous devez surcharger le `ToString` (fonction). Ajoutez le code suivant à *TodoItem.cs*, après le constructeur et avant la fin de la classe.
 
     ```csharp
     public override string ToString()
@@ -239,7 +239,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
     }
     ```
 
-6.  Dans *TodoWindowControl.xaml.cs*, ajoutez les méthodes de stub à le `TodoWindowControl` classe pour le `CheckForError` et `UpdateList` méthodes. Placez-les après le ProcessDialogChar et avant la fin du fichier.
+6. Dans *TodoWindowControl.xaml.cs*, ajoutez les méthodes de stub à le `TodoWindowControl` classe pour le `CheckForError` et `UpdateList` méthodes. Placez-les après le ProcessDialogChar et avant la fin du fichier.
 
     ```csharp
     public void CheckForErrors()
@@ -257,7 +257,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
 
  Vous devez modifier le bouton de gestionnaire pour lire la zone de texte, créez un élément de tâche de clic et l’ajoute à la zone de liste.
 
-1.  Remplacer la `button1_Click` fonction avec un code qui crée un nouvel élément TodoItem et l’ajoute à la zone de liste. Il appelle `TrackSelection()`, qui seront défini ultérieurement.
+1. Remplacer la `button1_Click` fonction avec un code qui crée un nouvel élément TodoItem et l’ajoute à la zone de liste. Il appelle `TrackSelection()`, qui seront défini ultérieurement.
 
     ```csharp
     private void button1_Click(object sender, RoutedEventArgs e)
@@ -272,9 +272,9 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
     }
     ```
 
-2.  En mode Design, sélectionnez le contrôle ListBox. Dans le **propriétés** cliquez sur fenêtre le **gestionnaires d’événements** bouton et recherchez le **SelectionChanged** événement. Renseignez la zone de texte avec **listBox_SelectionChanged**. Cette opération ajoute un stub pour un gestionnaire d’événement SelectionChanged et affecte à l’événement.
+2. En mode Design, sélectionnez le contrôle ListBox. Dans le **propriétés** cliquez sur fenêtre le **gestionnaires d’événements** bouton et recherchez le **SelectionChanged** événement. Renseignez la zone de texte avec **listBox_SelectionChanged**. Cette opération ajoute un stub pour un gestionnaire d’événement SelectionChanged et affecte à l’événement.
 
-3.  Implémentez la méthode `TrackSelection()`. Étant donné que vous devez obtenir le <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> services, vous devez apporter la <xref:Microsoft.VisualStudio.Shell.WindowPane.GetService%2A> accessible par le TodoWindowControl. Ajoutez la méthode suivante à la `TodoWindow` classe :
+3. Implémentez la méthode `TrackSelection()`. Étant donné que vous devez obtenir le <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> services, vous devez apporter la <xref:Microsoft.VisualStudio.Shell.WindowPane.GetService%2A> accessible par le TodoWindowControl. Ajoutez la méthode suivante à la `TodoWindow` classe :
 
     ```
     internal object GetVsService(Type service)
@@ -283,7 +283,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
     }
     ```
 
-4.  Ajoutez le code suivant à l’aide des instructions pour *TodoWindowControl.xaml.cs*:
+4. Ajoutez le code suivant à l’aide des instructions pour *TodoWindowControl.xaml.cs*:
 
     ```csharp
     using System.Runtime.InteropServices;
@@ -292,7 +292,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
     using Microsoft.VisualStudio.Shell;
     ```
 
-5.  Renseignez le Gestionnaire d’événement SelectionChanged comme suit :
+5. Renseignez le Gestionnaire d’événement SelectionChanged comme suit :
 
     ```
     private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -301,7 +301,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
     }
     ```
 
-6.  À présent, renseignez la fonction TrackSelection, qui fournit l’intégration avec le **propriétés** fenêtre. Cette fonction est appelée lorsque l’utilisateur ajoute un élément à la zone de liste ou clique sur un élément dans la zone de liste. Il ajoute le contenu de la zone de liste à un SelectionContainer et transmet le SelectionContainer à la **propriétés** la fenêtre <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> Gestionnaire d’événements. Le service TrackSelection effectue le suivi des objets sélectionnés dans l’interface utilisateur (IU) et affiche leurs propriétés
+6. À présent, renseignez la fonction TrackSelection, qui fournit l’intégration avec le **propriétés** fenêtre. Cette fonction est appelée lorsque l’utilisateur ajoute un élément à la zone de liste ou clique sur un élément dans la zone de liste. Il ajoute le contenu de la zone de liste à un SelectionContainer et transmet le SelectionContainer à la **propriétés** la fenêtre <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> Gestionnaire d’événements. Le service TrackSelection effectue le suivi des objets sélectionnés dans l’interface utilisateur (IU) et affiche leurs propriétés
 
     ```csharp
     private SelectionContainer mySelContainer;
@@ -351,7 +351,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
 
      Maintenant que vous avez une classe qui le **propriétés** fenêtre peut utiliser, vous pouvez intégrer le **propriétés** fenêtre avec la fenêtre outil. Lorsque l’utilisateur clique sur un élément dans la zone de liste dans la fenêtre outil, le **propriétés** fenêtre doit être mis à jour en conséquence. De même, lorsque l’utilisateur modifie un élément ToDo dans le **propriétés** fenêtre, l’élément associé doit être mis à jour.
 
-7.  Maintenant, ajoutez le reste du code de la fonction UpdateList *TodoWindowControl.xaml.cs*. Il doit supprimer, puis ajoutez de nouveau l’élément de tâche modifié à partir de la zone de liste.
+7. Maintenant, ajoutez le reste du code de la fonction UpdateList *TodoWindowControl.xaml.cs*. Il doit supprimer, puis ajoutez de nouveau l’élément de tâche modifié à partir de la zone de liste.
 
     ```csharp
     public void UpdateList(TodoItem item)
@@ -363,7 +363,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
     }
     ```
 
-8.  Testez votre code. Générez le projet et commencez le débogage. L’instance expérimentale doit apparaître.
+8. Testez votre code. Générez le projet et commencez le débogage. L’instance expérimentale doit apparaître.
 
 9. Ouvrez le **outils** > **Options** page. Vous devriez voir la catégorie de tâches dans le volet gauche. Catégories sont répertoriées dans alphabétique, par conséquent, regardez sous le Ts.
 
@@ -376,7 +376,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
 ## <a name="add-text-to-the-output-window-and-items-to-the-task-list"></a>Ajouter du texte dans la fenêtre Sortie et les éléments à la liste des tâches
  Pour le **liste des tâches**, vous créez un nouvel objet de type de tâche, puis ajoutez cet objet de tâche à la **liste des tâches** en appelant son `Add` (méthode). Pour écrire dans le **sortie** fenêtre, vous appelez son `GetPane` appel de méthode pour obtenir un objet de volet, puis le `OutputString` méthode de l’objet de volet.
 
-1.  Dans *TodoWindowControl.xaml.cs*, dans le `button1_Click` (méthode), ajouter du code pour obtenir le **général** volet de la **sortie** fenêtre (qui est la valeur par défaut) et en écriture. La méthode doit ressembler à ceci :
+1. Dans *TodoWindowControl.xaml.cs*, dans le `button1_Click` (méthode), ajouter du code pour obtenir le **général** volet de la **sortie** fenêtre (qui est la valeur par défaut) et en écriture. La méthode doit ressembler à ceci :
 
     ```csharp
     private void button1_Click(object sender, EventArgs e)
@@ -403,7 +403,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
     }
     ```
 
-2.  Pour ajouter des éléments à la liste des tâches, vous devez un pour ajouter une classe imbriquée à la classe TodoWindowControl. La classe imbriquée doit dériver de <xref:Microsoft.VisualStudio.Shell.TaskProvider>. Ajoutez le code suivant à la fin de la `TodoWindowControl` classe.
+2. Pour ajouter des éléments à la liste des tâches, vous devez un pour ajouter une classe imbriquée à la classe TodoWindowControl. La classe imbriquée doit dériver de <xref:Microsoft.VisualStudio.Shell.TaskProvider>. Ajoutez le code suivant à la fin de la `TodoWindowControl` classe.
 
     ```csharp
     [Guid("72de1eAD-a00c-4f57-bff7-57edb162d0be")]
@@ -416,7 +416,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
     }
     ```
 
-3.  Ajoutez ensuite une référence privée à `TodoTaskProvider` et un `CreateProvider()` méthode à la `TodoWindowControl` classe. Le code doit ressembler à ceci :
+3. Ajoutez ensuite une référence privée à `TodoTaskProvider` et un `CreateProvider()` méthode à la `TodoWindowControl` classe. Le code doit ressembler à ceci :
 
     ```csharp
     private TodoWindowTaskProvider taskProvider;
@@ -430,7 +430,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
     }
     ```
 
-4.  Ajouter `ClearError()`, ce qui efface la liste des tâches, et `ReportError()`, qui ajoute une entrée à la liste des tâches, à la `TodoWindowControl` classe.
+4. Ajouter `ClearError()`, ce qui efface la liste des tâches, et `ReportError()`, qui ajoute une entrée à la liste des tâches, à la `TodoWindowControl` classe.
 
     ```csharp
     private void ClearError()
@@ -462,7 +462,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
     }
     ```
 
-5.  À présent implémenter la `CheckForErrors` méthode, comme suit.
+5. À présent implémenter la `CheckForErrors` méthode, comme suit.
 
     ```csharp
     public void CheckForErrors()
@@ -480,28 +480,28 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
 
 ## <a name="try-it-out"></a>Faites un essai
 
-1.  Générez le projet et commencez le débogage. L’instance expérimentale s’affiche.
+1. Générez le projet et commencez le débogage. L’instance expérimentale s’affiche.
 
-2.  Ouvrez le **TodoWindow** (**vue** > **autres Windows** > **TodoWindow**).
+2. Ouvrez le **TodoWindow** (**vue** > **autres Windows** > **TodoWindow**).
 
-3.  Puis tapez quelque chose dans la zone de texte **ajouter**.
+3. Puis tapez quelque chose dans la zone de texte **ajouter**.
 
      Une date d’échéance 2 jours après que aujourd'hui est ajouté à la zone de liste. Aucune des erreurs ne sont générées et le **liste des tâches** (**vue** > **liste des tâches**) ne doit avoir aucune entrée.
 
-4.  Modifiez maintenant le paramètre sur le **outils** > **Options** > **ToDo** page à partir de **2** vers **0**.
+4. Modifiez maintenant le paramètre sur le **outils** > **Options** > **ToDo** page à partir de **2** vers **0**.
 
-5.  Tapez quelque chose d’autre dans le **TodoWindow** puis cliquez sur **ajouter** à nouveau. Cela déclenche une erreur et également une entrée dans le **liste des tâches**.
+5. Tapez quelque chose d’autre dans le **TodoWindow** puis cliquez sur **ajouter** à nouveau. Cela déclenche une erreur et également une entrée dans le **liste des tâches**.
 
      Lorsque vous ajoutez des éléments, la date initiale est définie à présent plus de 2 jours.
 
-6.  Sur le **vue** menu, cliquez sur **sortie** pour ouvrir le **sortie** fenêtre.
+6. Sur le **vue** menu, cliquez sur **sortie** pour ouvrir le **sortie** fenêtre.
 
      Notez que chaque fois que vous ajoutez un élément, un message s’affiche dans le **liste des tâches** volet.
 
-7.  Cliquez sur un des éléments dans la zone de liste.
+7. Cliquez sur un des éléments dans la zone de liste.
 
      Le **propriétés** fenêtre affiche les deux propriétés pour l’élément.
 
-8.  Modifier une des propriétés, puis appuyez sur **entrée**.
+8. Modifier une des propriétés, puis appuyez sur **entrée**.
 
      L’élément est mis à jour dans la zone de liste.

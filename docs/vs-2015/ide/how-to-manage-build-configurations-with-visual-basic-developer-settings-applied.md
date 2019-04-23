@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d6a315adb859445c5efa15df5b8366815bfc86d7
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0b0587f6c1c5d7577d8fddffb73db31f09248fae
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54784785"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075647"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Guide pratique pour gérer des configurations de build en appliquant les paramètres du développeur Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,16 +34,16 @@ Par défaut, toutes les options de configuration de build avancées sont masqué
   
 #### <a name="to-enable-advanced-build-configurations"></a>Pour activer les configurations de build avancées  
   
-1.  Dans le menu **Outils** , cliquez sur **Options**.  
+1. Dans le menu **Outils** , cliquez sur **Options**.  
   
-2.  Développez **Projets et solutions** et cliquez sur **Général**.  
+2. Développez **Projets et solutions** et cliquez sur **Général**.  
   
     > [!NOTE]
     >  Le nœud **Général** est visible même si l’option **Afficher tous les paramètres** est désactivée. Si vous souhaitez afficher toutes les options disponibles, cliquez sur **Afficher tous les paramètres**.  
   
-3.  Cliquez sur **Afficher les configurations de build avancées**.  
+3. Cliquez sur **Afficher les configurations de build avancées**.  
   
-4.  Cliquez sur **OK**.  
+4. Cliquez sur **OK**.  
   
      Dans le menu **Générer**, le **Gestionnaire de configurations** est maintenant disponible, et les listes **Configuration** et **Plateforme** sont visibles dans le Concepteur de projets.  
   

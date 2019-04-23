@@ -9,25 +9,25 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75d1a9fc5ac7fa35afb53c89f5af016ed909d11e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e31d9c01ded7754fd10419f3fd0e18d9616a51eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915959"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078237"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Vue d'ensemble des outils de langage spécifique à un domaine
 Outils Domain-Specific Language (outils DSL), qui sont hébergés dans Visual Studio, vous permettent de concevoir un langage spécifique à un domaine et de générer tout ce que les utilisateurs doivent disposer pour créer des modèles qui sont basés sur le langage.
 
  Les outils suivants se trouvent dans les Outils DSL :
 
--   Un Assistant de projet qui utilise différents modèles de solution pour vous aider à commencer à développer votre langage spécifique à un domaine.
+- Un Assistant de projet qui utilise différents modèles de solution pour vous aider à commencer à développer votre langage spécifique à un domaine.
 
--   Un concepteur graphique pour créer et modifier la définition de votre langage spécifique à un domaine.
+- Un concepteur graphique pour créer et modifier la définition de votre langage spécifique à un domaine.
 
--   Un moteur de validation qui permet de s’assurer que la définition du langage spécifique à un domaine est correctement formée et qui affiche les erreurs et les avertissements en cas de problèmes.
+- Un moteur de validation qui permet de s’assurer que la définition du langage spécifique à un domaine est correctement formée et qui affiche les erreurs et les avertissements en cas de problèmes.
 
--   Un générateur de code qui prend une définition de langage spécifique à un domaine comme entrée et génère le code source comme sortie.
+- Un générateur de code qui prend une définition de langage spécifique à un domaine comme entrée et génère le code source comme sortie.
 
 ## <a name="the-dsl-tools-solution"></a>Solution des Outils DSL
  L’Assistant Concepteur Domain-Specific Language fournit les modèles de solution suivants :
