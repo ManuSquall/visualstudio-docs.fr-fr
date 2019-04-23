@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9e840a8bb19b48c5cd4526ad80526bd62fcf8fa0
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: f20f61ffc4a6e4105a96b58c3dc73e7154e7c9cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526177"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055786"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Prise en charge des modifications de code (C# et Visual Basic)
 Modifier &amp; Continuer gère la plupart des types de modifications du code dans le corps des méthodes. Toutefois, la plupart des modifications en dehors du corps des méthodes et quelques autres à l'intérieur ne peuvent pas s'appliquer pendant le débogage. Pour appliquer ces modifications non prises en charge, vous devez arrêter le débogage et redémarrer avec une version nouvelle du code.
@@ -45,7 +45,7 @@ Le tableau ci-dessous présente les modifications qui peuvent être passées à 
 ## <a name="unsupported-changes-to-code"></a>Modifications du code non pris en charge
  Impossible d’appliquer les modifications suivantes à C# et le code Visual Basic pendant une session de débogage :
 
--   Modifications à l'instruction en cours ou à toute autre instruction active.
+- Modifications à l'instruction en cours ou à toute autre instruction active.
 
      Les instructions actives incluent toutes les instructions, dans les fonctions figurant dans la pile des appels, qui ont été appelées pour parvenir à l'instruction en cours.
 
@@ -78,7 +78,7 @@ Le tableau ci-dessous présente les modifications qui peuvent être passées à 
 |Iterators|Modifier un itérateur dans un projet ciblant .NET Framework 4 et réduire (consultez [détails](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
 
 ## <a name="unsafe-code"></a>Code unsafe
- Les modifications apportées à du code unsafe présentent les mêmes restrictions que celles qui portent sur du code sécurisé, avec une restriction supplémentaire : Modifier &amp; Continuer ne prend pas en charge les modifications de code unsafe dans une méthode qui contient l'opérateur `stackalloc`.
+ Les modifications apportées à du code unsafe présentent les mêmes restrictions que celles qui portent sur du code sécurisé, avec une restriction supplémentaire : Modifier & Continuer ne prend pas en charge les modifications apportées au code unsafe dans une méthode qui contient le `stackalloc` opérateur.
 
 ## <a name="unsupported-app-scenarios"></a>Scénarios d’application non pris en charge
 
@@ -90,20 +90,20 @@ Plateformes et applications non pris en charge incluent ASP.NET 5, Silverlight 5
 ## <a name="unsupported-scenarios"></a>Scénarios non pris en charge
  Modifier &amp; Continuer n'est pas disponible dans les scénarios de débogage suivants :
 
--   Débogage en mode mixte (natif/managé).
+- Débogage en mode mixte (natif/managé).
 
--   Débogage SQL.
+- Débogage SQL.
 
--   Débogage d’un dump Dr. Watson.
+- Débogage d’un dump Dr. Watson.
 
--   Débogage d'une application runtime incorporée.
+- Débogage d'une application runtime incorporée.
 
--   Débogage d’une application à l’aide d’attacher au processus (**Déboguer > Attacher au processus**) au lieu d’exécuter l’application en choisissant **Démarrer** à partir de la **déboguer** menu.
+- Débogage d’une application à l’aide d’attacher au processus (**Déboguer > Attacher au processus**) au lieu d’exécuter l’application en choisissant **Démarrer** à partir de la **déboguer** menu.
 
--   Débogage de code optimisé.
+- Débogage de code optimisé.
 
--   Débogage d'une version ancienne de votre code après l'échec de génération d'une nouvelle version en raison d'erreurs de build.
+- Débogage d'une version ancienne de votre code après l'échec de génération d'une nouvelle version en raison d'erreurs de build.
 
 ## <a name="see-also"></a>Voir aussi
 - [Modifier & Continuer (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)
-- [Guide pratique pour utiliser Modifier & Continuer (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
+- [Guide pratique pour utiliser Modifier et Continuer (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

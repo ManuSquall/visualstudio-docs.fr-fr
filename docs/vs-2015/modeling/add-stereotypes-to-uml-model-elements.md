@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d60d20e7fd62ee05b6c74f580ef60e23c577c96f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 092c07e9aa5f2999bcf3a28977151878123f6bfc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953804"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043644"
 ---
 # <a name="add-stereotypes-to-uml-model-elements"></a>Ajouter des stéréotypes à des éléments de modèle UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,51 +29,51 @@ Vous pouvez ajouter un stéréotype à un élément de modèle UML pour l'annote
   
 ### <a name="to-link-a-profile-to-a-model-or-a-package"></a>Pour lier un profil à un modèle ou à un package  
   
-1.  Ouvrez **Explorateur de modèles UML**. Sur le **Architecture** menu, pointez sur **Windows**, puis cliquez sur **Explorateur de modèles UML**.  
+1. Ouvrez **Explorateur de modèles UML**. Sur le **Architecture** menu, pointez sur **Windows**, puis cliquez sur **Explorateur de modèles UML**.  
   
-2.  Recherchez un package ou un modèle qui contient tous les éléments auxquels vous souhaitez appliquer les stéréotypes dans le profil.  
+2. Recherchez un package ou un modèle qui contient tous les éléments auxquels vous souhaitez appliquer les stéréotypes dans le profil.  
   
-3.  Cliquez sur le package ou le modèle, puis sur **propriétés**.  
+3. Cliquez sur le package ou le modèle, puis sur **propriétés**.  
   
-4.  Dans le **propriétés** fenêtre, définissez la **profils** propriété pour les profils qui contiennent les stéréotypes que vous souhaitez utiliser.  
+4. Dans le **propriétés** fenêtre, définissez la **profils** propriété pour les profils qui contiennent les stéréotypes que vous souhaitez utiliser.  
   
      Les stéréotypes du profil seront maintenant disponibles sur tous les éléments dans le modèle ou le package. Si le package contient d'autres packages, les stéréotypes seront également disponibles sur les éléments qu'ils contiennent.  
   
 ### <a name="to-add-stereotypes-to-model-elements-or-relationships"></a>Pour ajouter des stéréotypes à des éléments de modèle ou des relations  
   
-1.  Avec le bouton droit de l’élément de modèle ou la relation, sur un diagramme ou dans **Explorateur de modèles UML**, puis cliquez sur **propriétés**.  
+1. Avec le bouton droit de l’élément de modèle ou la relation, sur un diagramme ou dans **Explorateur de modèles UML**, puis cliquez sur **propriétés**.  
   
     > [!NOTE]
     >  Pour ajouter les mêmes stéréotypes à plusieurs éléments, vous pouvez sélectionner plusieurs éléments, puis cliquer avec le bouton droit sur l'un d'eux.  
   
-2.  Cliquez sur le **stéréotypes** propriété et sélectionnez les stéréotypes que vous souhaitez appliquer.  
+2. Cliquez sur le **stéréotypes** propriété et sélectionnez les stéréotypes que vous souhaitez appliquer.  
   
      Les stéréotypes sélectionnés sont affichés entre « chevrons » dans l'élément de modèle pour la plupart des types de relations et d'éléments.  
   
     > [!NOTE]
     >  Si vous ne voyez pas le **stéréotypes** propriété, ou si le stéréotype souhaité n’apparaît pas, vérifiez que l’élément de modèle est à l’intérieur d’un package ou un modèle auquel le profil approprié a été lié.  
   
-3.  Certains stéréotypes vous permettent de définir les valeurs de propriétés supplémentaires pour l'élément de modèle. Pour afficher ces propriétés, développez le **stéréotypes** propriété.  
+3. Certains stéréotypes vous permettent de définir les valeurs de propriétés supplémentaires pour l'élément de modèle. Pour afficher ces propriétés, développez le **stéréotypes** propriété.  
   
 ### <a name="to-create-model-elements-within-a-package"></a>Pour créer des éléments de modèle dans un package  
   
-1.  Créez un package dans un diagramme de classes UML ou dans **Explorateur de modèles UML**.  
+1. Créez un package dans un diagramme de classes UML ou dans **Explorateur de modèles UML**.  
   
-2.  Ajoutez des éléments de modèle au package de l'une des manières suivantes :  
+2. Ajoutez des éléments de modèle au package de l'une des manières suivantes :  
   
-    -   Dans un diagramme de classes UML, cliquez sur l'outil pour un élément, puis cliquez à l'intérieur du package sur le diagramme.  
-  
-         \- ou -  
-  
-    -   Dans l’Explorateur de modèles UML, cliquez sur le package, pointez sur **ajouter**, puis cliquez sur un type d’élément.  
+    - Dans un diagramme de classes UML, cliquez sur l'outil pour un élément, puis cliquez à l'intérieur du package sur le diagramme.  
   
          \- ou -  
   
-    -   Dans l'Explorateur de modèles UML, faites glisser un élément existant dans le package.  
+    - Dans l’Explorateur de modèles UML, cliquez sur le package, pointez sur **ajouter**, puis cliquez sur un type d’élément.  
   
          \- ou -  
   
-    -   Liez un diagramme au package, puis créez des éléments sur le diagramme.  
+    - Dans l'Explorateur de modèles UML, faites glisser un élément existant dans le package.  
+  
+         \- ou -  
+  
+    - Liez un diagramme au package, puis créez des éléments sur le diagramme.  
   
          Pour ce faire, cliquez sur une partie vide du diagramme, puis cliquez sur **propriétés**. Dans le **propriétés** fenêtre, définissez **Package lié** le package que vous souhaitez.  
   

@@ -16,12 +16,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2613dbd0c803352c758ac1baf1b1f5d4469b9c73
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 020dd35d225d8629a8061d1a74b234b62960c830
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663990"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056157"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Générer du code à partir de diagrammes de classes UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,11 +53,11 @@ Pour générer le code Visual c# .NET à partir de diagrammes de classes UML dan
 
 2. Sur un diagramme de classes ou dans **Explorateur de modèles UML**, sélectionner des éléments à partir de laquelle vous souhaitez générer le code. Vous pouvez sélectionner l'un des éléments suivants :  
 
-   -   Un ensemble spécifique d'éléments.  
+   - Un ensemble spécifique d'éléments.  
 
-   -   Un package ou le modèle, pour générer le code à partir de son contenu.  
+   - Un package ou le modèle, pour générer le code à partir de son contenu.  
 
-   -   Le diagramme, pour en sélectionner tous les éléments.  
+   - Le diagramme, pour en sélectionner tous les éléments.  
 
 3. Ouvrez le menu contextuel pour un élément sélectionné, puis choisissez **générer le Code**.  
 
@@ -71,7 +71,7 @@ Pour générer le code Visual c# .NET à partir de diagrammes de classes UML dan
 
    Certains tests de validation sont appliqués au modèle pour vérifier qu'il peut être traduit en C#. Si ces tests échouent, un message d'erreur est affiché et la génération de code n'est pas exécutée. Si vous avez créé une commande de menu de validation, le code n’est pas généré pour tout élément pour lequel votre commande de validation échoue. Pour plus d’informations, consultez [définir des contraintes de validation pour les modèles UML](../modeling/define-validation-constraints-for-uml-models.md).  
 
-##  <a name="default"></a> Transformations de génération de Code par défaut  
+## <a name="default"></a> Transformations de génération de Code par défaut  
  Cette section résume les résultats produits par le **générer le Code** commande, sauf si vous personnalisez la commande. Pour plus d’informations, consultez [personnalisation de la commande Generate Code](#custom).  
 
 - Un type C# est produit pour chaque type que vous avez sélectionné dans le modèle UML. Chaque type est placé dans un fichier de code séparé sous le **GeneratedCode** dossier.  
@@ -126,7 +126,7 @@ Pour générer le code Visual c# .NET à partir de diagrammes de classes UML dan
 
   Chaque attribut et opération dispose également de propriétés de stéréotype que vous pouvez définir. Si vous ne voyez pas les propriétés sur un nouvel attribut, exécutez **générer le Code**.  
 
-##  <a name="custom"></a> Personnalisation de la commande Generate Code  
+## <a name="custom"></a> Personnalisation de la commande Generate Code  
  Le **générer le Code** commande fonctionne en transformant vos éléments de modèle à l’aide d’un ensemble de modèles de texte. Pour plus d’informations sur les modèles de texte, consultez [génération de Code et modèles de texte T4](../modeling/code-generation-and-t4-text-templates.md).  
 
  Les modèles sont spécifiés dans un ensemble de *liaisons de modèles de texte*. Une liaison de modèle de texte spécifie quel modèle doit être appliqué, où la sortie générée doit être placée et autres paramètres de la **générer le Code** commande.  
@@ -175,7 +175,7 @@ Pour générer le code Visual c# .NET à partir de diagrammes de classes UML dan
 
 5. Vous pouvez joindre à un élément le nombre de liaisons de votre choix.  
 
-##  <a name="writing"></a> Écriture d’un modèle de texte  
+## <a name="writing"></a> Écriture d’un modèle de texte  
  Vous pouvez écrire vos propres modèles de texte. Les modèles de texte peuvent générer un code programme ou tout autre type de fichier texte.  
 
  Nous vous recommandons de commencer par modifier des copies des modèles standard. Vous pouvez copier les modèles à partir des emplacements suivants :  

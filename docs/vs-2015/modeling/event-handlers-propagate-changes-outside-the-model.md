@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c723e0a2cc76b6432fc6f209a7edf4a988a0b3fd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 24ef57b545360cccbf75039b5f64a0f53e636dd8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953179"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059901"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Propagation de modifications en dehors du modèle par des gestionnaires d'événements
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ Dans Visualization and Modeling SDK, vous pouvez définir des gestionnaires d’
   
 1. Choisissez le type d’événement que vous souhaitez surveiller. Pour obtenir une liste complète, consultez les propriétés de <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Chaque propriété correspond à un type d’événement. Les plus fréquemment utilisés sont des types des événements :  
   
-   -   `ElementAdded` – déclenché lorsqu’un élément de modèle, lien de relation, forme ou un connecteur est créé.  
+   - `ElementAdded` – déclenché lorsqu’un élément de modèle, lien de relation, forme ou un connecteur est créé.  
   
-   -   ElementPropertyChanged – déclenché lorsque la valeur d’un `Normal` de propriété de domaine est modifiée. L’événement est déclenché uniquement si les valeurs anciennes et nouvelles ne sont pas égales. L’événement ne peut pas être appliqué aux propriétés de stockage calculées et personnalisées.  
+   - ElementPropertyChanged – déclenché lorsque la valeur d’un `Normal` de propriété de domaine est modifiée. L’événement est déclenché uniquement si les valeurs anciennes et nouvelles ne sont pas égales. L’événement ne peut pas être appliqué aux propriétés de stockage calculées et personnalisées.  
   
         Il ne peut pas être appliqué aux propriétés du rôle qui correspondent aux liens de relation. Au lieu de cela, utilisez `ElementAdded` pour surveiller la relation de domaine.  
   
-   -   `ElementDeleted` – déclenché après un élément de modèle, relation, forme ou le lien a été supprimé. Vous pouvez toujours accéder les valeurs de propriété de l’élément, mais il n’aura pas de relations à d’autres éléments.  
+   - `ElementDeleted` – déclenché après un élément de modèle, relation, forme ou le lien a été supprimé. Vous pouvez toujours accéder les valeurs de propriété de l’élément, mais il n’aura pas de relations à d’autres éléments.  
   
 2. Ajoutez une définition de classe partielle pour _Votre_solution_dsl_**DocData** dans un fichier de code séparé dans le **DslPackage** projet.  
   
@@ -166,11 +166,11 @@ private static void AlbumTitleAdjuster(object sender,
   
  Si vous écrivez un événement qui met à jour le magasin :  
   
--   Utilisez `store.InUndoRedoOrRollback` pour éviter d’effectuer des modifications aux éléments de modèle d’annulation. Le Gestionnaire de transactions tous les éléments figurant dans le magasin à son état d’origine.  
+- Utilisez `store.InUndoRedoOrRollback` pour éviter d’effectuer des modifications aux éléments de modèle d’annulation. Le Gestionnaire de transactions tous les éléments figurant dans le magasin à son état d’origine.  
   
--   Utilisez `store.InSerializationTransaction` afin d’éviter d’apporter des modifications pendant que le modèle est chargé à partir du fichier.  
+- Utilisez `store.InSerializationTransaction` afin d’éviter d’apporter des modifications pendant que le modèle est chargé à partir du fichier.  
   
--   Vos modifications entraîne davantage d’événements à déclencher. Veillez à éviter une boucle infinie.  
+- Vos modifications entraîne davantage d’événements à déclencher. Veillez à éviter une boucle infinie.  
   
 ## <a name="store-event-types"></a>Types d’événements Store  
  Chaque type d’événement correspond à une collection dans Store.EventManagerDirectory. Vous pouvez ajouter ou supprimer des gestionnaires d’événements à tout moment, mais il est habituel pour les ajouter lorsque le document est chargé.  

@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: jillfra
-ms.openlocfilehash: b37fe476c7654cc21a3b81f4a68aa4abc0348bb1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 833783267c70c0a201e4b84bc5031bce517dc0a2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948642"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054480"
 ---
 # <a name="support-for-settings-categories"></a>Prise en charge des catégories de paramètres
 Une catégorie de paramètres se compose d’un groupe d’options qui personnalisent l’environnement de développement intégré (IDE). Par exemple, des paramètres peuvent contrôler la disposition des fenêtres [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et le contenu des menus. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -29,11 +29,11 @@ Une catégorie de paramètres se compose d’un groupe d’options qui personnal
   
  L’infrastructure MPF (Managed Package Framework) prend en charge la création de catégories de paramètres avec un minimum de code supplémentaire.  
   
--   Vous créez un VSPackage pour fournir un conteneur pour la catégorie en sous-classant la classe <xref:Microsoft.VisualStudio.Shell.Package>.  
+- Vous créez un VSPackage pour fournir un conteneur pour la catégorie en sous-classant la classe <xref:Microsoft.VisualStudio.Shell.Package>.  
   
--   Vous créez la catégorie proprement dite en la dérivant de la classe <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
+- Vous créez la catégorie proprement dite en la dérivant de la classe <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
   
--   Vous connectez les deux avec <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>.  
+- Vous connectez les deux avec <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>.  
   
 ## <a name="support-for-settings-categories"></a>Prise en charge des catégories de paramètres  
  La classe <xref:Microsoft.VisualStudio.Shell.Package> prend en charge la création de catégories. La classe <xref:Microsoft.VisualStudio.Shell.DialogPage> implémente une catégorie. L’implémentation par défaut de <xref:Microsoft.VisualStudio.Shell.DialogPage> propose ses propriétés publiques à un utilisateur en tant que catégorie. Pour plus d'informations, consultez [Creating a Settings Category](../extensibility/creating-a-settings-category.md).  

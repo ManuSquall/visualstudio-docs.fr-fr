@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1fabf31a58203e2fb98dd4929907de4f8fff436
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 042d6b6c59489abcfbdcdd4dd10055ea4dedfff5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928905"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055656"
 ---
-# <a name="walkthrough-generate-code-by-using-text-templates"></a>Procédure pas à pas : Générer du Code à l’aide de modèles de texte
+# <a name="walkthrough-generate-code-by-using-text-templates"></a>Procédure pas à pas : Générer du code à l’aide de modèles de texte
 
 La génération de code vous permet de générer du code de programme qui est fortement typé mais peut être facilement modifié quand le modèle source change. Comparez ceci avec l’autre technique consistant à écrire un programme complètement générique qui accepte un fichier de configuration, qui est plus flexible mais génère du code qui n’est pas aussi facile à lire et à modifier et n’offre pas d’aussi bonnes performances. Cette procédure pas à pas montre les avantages offerts par la génération de code.
 
@@ -83,9 +83,9 @@ Dans ce projet, un seul fichier de modèle est utilisé pour générer les class
 
 Vous pouvez appliquer cette technique à tout projet de code. Cette procédure pas à pas utilise un projet C#, et à des fins de test nous utilisons une application console.
 
-1.  Dans le menu **Fichier** , cliquez sur **Nouveau** , puis sur **Projet**.
+1. Dans le menu **Fichier** , cliquez sur **Nouveau** , puis sur **Projet**.
 
-2.  Cliquez sur le nœud **Visual C#** puis, dans le volet **Modèles** , cliquez sur **Application console**.
+2. Cliquez sur le nœud **Visual C#** puis, dans le volet **Modèles** , cliquez sur **Application console**.
 
 ### <a name="add-a-prototype-xml-file-to-the-project"></a>Ajouter un fichier XML de prototype au projet
 
@@ -93,13 +93,13 @@ L’objectif de ce fichier consiste à fournir des exemples des types de nœuds 
 
 Le fichier doit faire partie du projet pour que le modèle puisse le lire, mais il ne sera pas généré dans l’application compilée.
 
-1.  Dans l’ **Explorateur de solutions**, cliquez avec le bouton droit sur le projet, cliquez sur **Ajouter** , puis sur **Nouvel élément**.
+1. Dans l’ **Explorateur de solutions**, cliquez avec le bouton droit sur le projet, cliquez sur **Ajouter** , puis sur **Nouvel élément**.
 
-2.  Dans la boîte de dialogue **Ajouter un nouvel élément** , sélectionnez **Fichier XML** dans le volet **Modèles** .
+2. Dans la boîte de dialogue **Ajouter un nouvel élément** , sélectionnez **Fichier XML** dans le volet **Modèles** .
 
-3.  Ajoutez votre exemple de contenu au fichier.
+3. Ajoutez votre exemple de contenu au fichier.
 
-4.  Pour cette procédure pas à pas, nommez le fichier `exampleXml.xml`. Définissez le code XML fourni dans la section précédente comme contenu du fichier.
+4. Pour cette procédure pas à pas, nommez le fichier `exampleXml.xml`. Définissez le code XML fourni dans la section précédente comme contenu du fichier.
 
 ### <a name="add-a-test-code-file"></a>Ajouter un fichier de code de test
 
@@ -131,20 +131,20 @@ Un test plus complet pourrait vérifier le résultat de cette fonction de test p
 
 Ajoutez un fichier de modèle de texte et définissez l’extension de sortie sur *.cs*.
 
-1.  Dans l’ **Explorateur de solutions**, cliquez avec le bouton droit sur le projet, cliquez sur **Ajouter**, puis sur **Nouvel élément**.
+1. Dans l’ **Explorateur de solutions**, cliquez avec le bouton droit sur le projet, cliquez sur **Ajouter**, puis sur **Nouvel élément**.
 
-2.  Dans la boîte de dialogue **Ajouter un nouvel élément** , sélectionnez **Modèle de texte** dans le volet **Modèles** .
+2. Dans la boîte de dialogue **Ajouter un nouvel élément** , sélectionnez **Modèle de texte** dans le volet **Modèles** .
 
     > [!NOTE]
     > Vérifiez que vous ajoutez bien un Modèle de texte, et non un Modèle de texte prétraité.
 
-3.  Dans le fichier, dans la directive de modèle, affectez la valeur `hostspecific` à l’attribut `true`.
+3. Dans le fichier, dans la directive de modèle, affectez la valeur `hostspecific` à l’attribut `true`.
 
      Cette modification permettra au code de modèle accéder aux services Visual Studio.
 
-4.  Dans la directive de sortie, affectez « .cs » comme attribut d’extension, pour que le modèle génère un fichier C#. Dans un projet Visual Basic, vous choisiriez « .vb ».
+4. Dans la directive de sortie, affectez « .cs » comme attribut d’extension, pour que le modèle génère un fichier C#. Dans un projet Visual Basic, vous choisiriez « .vb ».
 
-5.  Enregistrez le fichier. À ce stade, le fichier de modèle de texte doit contenir ces lignes :
+5. Enregistrez le fichier. À ce stade, le fichier de modèle de texte doit contenir ces lignes :
 
     ```
     <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -412,15 +412,15 @@ Pour régénérer les classes quand l’exemple de fichier XML est modifié, cli
 
 Cette procédure pas à pas illustre plusieurs techniques et avantages de la génération de code :
 
--   La*génération de code* est la création d’une partie du code source de votre application à partir d’un *modèle*. Le modèle contient des informations dans un format adapté au domaine d’application, et il peut changer pendant la durée de vie de l’application.
+- La*génération de code* est la création d’une partie du code source de votre application à partir d’un *modèle*. Le modèle contient des informations dans un format adapté au domaine d’application, et il peut changer pendant la durée de vie de l’application.
 
--   Le typage fort est l’un des avantages de la génération de code. Tandis que le modèle représente les informations dans un format plus adapté à l’utilisateur, le code généré permet à d’autres parties de l’application de traiter les informations à l’aide d’un ensemble de types.
+- Le typage fort est l’un des avantages de la génération de code. Tandis que le modèle représente les informations dans un format plus adapté à l’utilisateur, le code généré permet à d’autres parties de l’application de traiter les informations à l’aide d’un ensemble de types.
 
--   IntelliSense et le compilateur vous aident à créer du code conforme au schéma du modèle, à la fois quand vous écrivez du nouveau code et quand le schéma est mis à jour.
+- IntelliSense et le compilateur vous aident à créer du code conforme au schéma du modèle, à la fois quand vous écrivez du nouveau code et quand le schéma est mis à jour.
 
--   Ces avantages peuvent être obtenus grâce à l’ajout d’un fichier de modèle simple et unique à un projet.
+- Ces avantages peuvent être obtenus grâce à l’ajout d’un fichier de modèle simple et unique à un projet.
 
--   Un modèle de texte peut être développé et testé rapidement et de façon incrémentielle.
+- Un modèle de texte peut être développé et testé rapidement et de façon incrémentielle.
 
 Dans cette procédure pas à pas, le code du programme est généré à partir d’une instance du modèle, un exemple représentatif des fichiers XML que l’application traitera. Dans une approche plus formelle, le schéma XML serait l’entrée du modèle, sous la forme d’un fichier .xsd ou d’une définition de langage propre au domaine. Cette approche faciliterait pour le modèle la détermination de caractéristiques telles que la multiplicité d’une relation.
 

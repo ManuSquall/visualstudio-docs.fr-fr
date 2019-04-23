@@ -23,12 +23,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ee796418658ec0825a76d60607b77813f84e4144
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ad6fa498fe9b89854f7fe3c74af9636b5b59e47f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950550"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053817"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Procédure pas à pas : Débogage d’un formulaire web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,25 +42,25 @@ Les étapes de cette procédure pas à pas vous expliquent comment déboguer une
   
 ### <a name="to-create-the-web-form"></a>Pour créer le Web Form  
   
-1.  Si une solution est déjà ouverte, fermez-la.  
+1. Si une solution est déjà ouverte, fermez-la.  
   
-2.  Dans le menu **Fichier**, cliquez sur **Nouveau**, puis sur **Site web**.  
+2. Dans le menu **Fichier**, cliquez sur **Nouveau**, puis sur **Site web**.  
   
      La boîte de dialogue **Nouveau site web** s’affiche.  
   
-3.  Dans le volet **Modèles**, cliquez sur **Site web ASP.NET**.  
+3. Dans le volet **Modèles**, cliquez sur **Site web ASP.NET**.  
   
-4.  Sur le **emplacement** ligne, cliquez sur **HTTP** dans la liste et dans la zone de texte, tapez **http://localhost/WebSite**.  
+4. Sur le **emplacement** ligne, cliquez sur **HTTP** dans la liste et dans la zone de texte, tapez **http://localhost/WebSite**.  
   
-5.  Dans la liste **Langage**, cliquez sur **Visual C#** ou sur **Visual Basic**.  
+5. Dans la liste **Langage**, cliquez sur **Visual C#** ou sur **Visual Basic**.  
   
-6.  Cliquez sur **OK**.  
+6. Cliquez sur **OK**.  
   
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] crée un projet et affiche le code source HTML par défaut. Il crée également un répertoire virtuel nommé **WebSite** sous **Site web par défaut** dans IIS.  
   
-7.  Cliquez sur l’onglet **Conception** dans la marge inférieure.  
+7. Cliquez sur l’onglet **Conception** dans la marge inférieure.  
   
-8.  Cliquez sur l’onglet **Boîte à outils** dans la marge gauche ou sélectionnez-le dans le menu **Affichage**.  
+8. Cliquez sur l’onglet **Boîte à outils** dans la marge gauche ou sélectionnez-le dans le menu **Affichage**.  
   
      La **Boîte à outils** s'ouvre.  
   
@@ -90,7 +90,7 @@ Les étapes de cette procédure pas à pas vous expliquent comment déboguer une
   
 ### <a name="to-debug-the-web-form"></a>Pour déboguer le Web FOrm  
   
-1.  Dans la fenêtre Default.aspx.cs ou Default.aspx.vb, cliquez sur la marge gauche de la ligne sur laquelle vous avez ajouté le texte :  
+1. Dans la fenêtre Default.aspx.cs ou Default.aspx.vb, cliquez sur la marge gauche de la ligne sur laquelle vous avez ajouté le texte :  
   
     ```  
     ' Visual Basic  
@@ -102,19 +102,19 @@ Les étapes de cette procédure pas à pas vous expliquent comment déboguer une
   
      Un point rouge s'affiche et le texte de la ligne est surligné en rouge. Le point rouge représente un point d'arrêt. Lorsque vous exécutez l'application dans le débogueur, le débogueur interrompt l'exécution à l'emplacement du code où se trouve ce point d'arrêt. Vous pouvez afficher l'état de votre application et la déboguer. Pour plus d’informations, consultez [Points d’arrêt](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
-2.  Dans le menu **Déboguer**, cliquez sur **Démarrer le débogage**.  
+2. Dans le menu **Déboguer**, cliquez sur **Démarrer le débogage**.  
   
-3.  La boîte de dialogue **Débogage non activé** s’affiche. Sélectionnez l’option **Modifier le fichier Web.config pour activer le débogage**, puis cliquez sur **OK**.  
+3. La boîte de dialogue **Débogage non activé** s’affiche. Sélectionnez l’option **Modifier le fichier Web.config pour activer le débogage**, puis cliquez sur **OK**.  
   
      Internet Explorer démarre et affiche la page que vous venez de créer.  
   
-4.  Dans Internet Explorer, cliquez sur le bouton.  
+4. Dans Internet Explorer, cliquez sur le bouton.  
   
      Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], cette opération vous permet d'atteindre la ligne où vous définissez votre point d'arrêt sur la page de codes Default.aspx.cs ou Default.aspx.vb. Cette ligne doit être surlignée en jaune. Vous pouvez à présent afficher les variables de votre application et contrôler son exécution. Votre application s'arrête et attend une commande de votre part.  
   
-5.  Dans le menu **Déboguer**, cliquez sur **Fenêtres**, puis sur **Espion**, puis sur **Espion1**.  
+5. Dans le menu **Déboguer**, cliquez sur **Fenêtres**, puis sur **Espion**, puis sur **Espion1**.  
   
-6.  Dans la fenêtre **Espion**, tapez **TextBox1.Text**.  
+6. Dans la fenêtre **Espion**, tapez **TextBox1.Text**.  
   
      La fenêtre **Espion** affiche la valeur de la variable `TextBox1.Text` :  
   
@@ -122,7 +122,7 @@ Les étapes de cette procédure pas à pas vous expliquent comment déboguer une
     ""  
     ```  
   
-7.  Dans le menu **Déboguer**, cliquez sur **Pas à pas principal**.  
+7. Dans le menu **Déboguer**, cliquez sur **Pas à pas principal**.  
   
      La valeur de `TextBox1.Text` change dans la fenêtre **Espion** et devient :  
   
@@ -130,7 +130,7 @@ Les étapes de cette procédure pas à pas vous expliquent comment déboguer une
     "Button was clicked!"  
     ```  
   
-8.  Dans le menu **Déboguer**, cliquez sur **Continuer**.  
+8. Dans le menu **Déboguer**, cliquez sur **Continuer**.  
   
 9. Dans Internet Explorer, cliquez de nouveau sur le bouton.  
   
@@ -144,9 +144,9 @@ Les étapes de cette procédure pas à pas vous expliquent comment déboguer une
   
 ### <a name="to-attach-to-the-web-form-for-debugging"></a>Pour attacher au Web Form pour le débogage  
   
-1.  Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pouvez attacher le débogueur à un processus en cours d'exécution. Pour un débogage plus efficace, compilez le fichier exécutable sous forme de version Debug avec des fichiers de symboles (PDB).  
+1. Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pouvez attacher le débogueur à un processus en cours d'exécution. Pour un débogage plus efficace, compilez le fichier exécutable sous forme de version Debug avec des fichiers de symboles (PDB).  
   
-2.  Dans la fenêtre Default.aspx.cs ou Default.aspx.vb, cliquez dans la marge de gauche pour définir à nouveau un point d'arrêt à la ligne que vous avez ajoutée :  
+2. Dans la fenêtre Default.aspx.cs ou Default.aspx.vb, cliquez dans la marge de gauche pour définir à nouveau un point d'arrêt à la ligne que vous avez ajoutée :  
   
     ```  
     ' Visual Basic  
@@ -156,17 +156,17 @@ Les étapes de cette procédure pas à pas vous expliquent comment déboguer une
     textBox1.Text = "Button was clicked!";  
     ```  
   
-3.  Dans le menu **Déboguer**, cliquez sur **Démarrer sans débogage**.  
+3. Dans le menu **Déboguer**, cliquez sur **Démarrer sans débogage**.  
   
      Le Web Form commence à s'exécuter sous Internet Explorer, mais le débogueur n'est pas attaché.  
   
-4.  Attachez-le au processus [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Pour plus d’informations, consultez [débogage des Applications Web déployées](../debugger/debugging-deployed-web-applications.md).  
+4. Attachez-le au processus [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Pour plus d’informations, consultez [débogage des Applications Web déployées](../debugger/debugging-deployed-web-applications.md).  
   
-5.  Dans Internet Explorer, cliquez sur le bouton sur votre formulaire.  
+5. Dans Internet Explorer, cliquez sur le bouton sur votre formulaire.  
   
      Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous devez atteindre le point d'arrêt dans Default.aspx.cs, Default.aspx.vb ou Default.aspx.  
   
-6.  Quand vous avez fini de déboguer, dans le menu **Déboguer**, cliquez sur **Arrêter le débogage**.  
+6. Quand vous avez fini de déboguer, dans le menu **Déboguer**, cliquez sur **Arrêter le débogage**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage d’applications ASP.NET et AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)

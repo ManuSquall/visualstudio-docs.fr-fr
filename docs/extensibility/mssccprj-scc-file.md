@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05360ca6e557ae0153715497b85792bc2fb6e2fc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fbf9c2f914bbe0bed741a407faf1d0055a4b43a7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693033"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043718"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ. Fichier de contrôle de code source
 Lorsque vous placez une solution Visual Studio ou un projet sous contrôle de code source à l’aide de l’IDE, l’IDE reçoit deux informations essentielles. Les informations proviennent du plug-in sous la forme de chaînes de contrôle de code source. Ces chaînes, « AuxPath » et « ProjName », sont opaques à l’IDE, mais elles sont utilisées par le plug-in pour rechercher la solution ou le projet dans le contrôle de version. L’IDE obtient généralement ces chaînes de la première fois en appelant le [SccGetProjPath](../extensibility/sccgetprojpath-function.md), et il les enregistre ensuite dans le fichier solution ou un projet pour les appels suivants à la [SccOpenProject](../extensibility/sccopenproject-function.md). Lorsqu’il est incorporé dans les fichiers solution et projet, les chaînes « AuxPath » et « ProjName » ne sont pas automatiquement mis à jour un utilisateur, les branchements, branches ou copie des fichiers solution et projet qui se trouvent dans le contrôle de version. Pour vous assurer que les fichiers solution et projet pointent vers leur emplacement correct dans le contrôle de version, les utilisateurs doivent mettre à jour manuellement les chaînes. Étant donné que les chaînes sont destinés à être opaque, il peut pas toujours clair comment ils doivent être mis à jour.
@@ -25,19 +25,19 @@ Lorsque vous placez une solution Visual Studio ou un projet sous contrôle de co
 
  Un plug-in de contrôle de code source qui prend en charge la *MSSCCPRJ.SCC* fichier doit respecter les consignes suivantes :
 
--   Il peut être seulement un *MSSCCPRJ.SCC* fichiers par répertoire.
+- Il peut être seulement un *MSSCCPRJ.SCC* fichiers par répertoire.
 
--   Un *MSSCCPRJ.SCC* fichier peut contenir le « AuxPath » et « ProjName » pour plusieurs fichiers qui sont sous contrôle de code source dans un répertoire donné.
+- Un *MSSCCPRJ.SCC* fichier peut contenir le « AuxPath » et « ProjName » pour plusieurs fichiers qui sont sous contrôle de code source dans un répertoire donné.
 
--   La chaîne « AuxPath » ne doit pas contenir de guillemets qu’il contient. Il est autorisé à placer entre guillemets comme délimiteurs (par exemple, une paire de guillemets doubles permettre servir à indiquer une chaîne vide). L’IDE supprimera tous les devis à partir de la chaîne « AuxPath » lorsqu’il est lu à partir de la *MSSCCPRJ.SCC* fichier.
+- La chaîne « AuxPath » ne doit pas contenir de guillemets qu’il contient. Il est autorisé à placer entre guillemets comme délimiteurs (par exemple, une paire de guillemets doubles permettre servir à indiquer une chaîne vide). L’IDE supprimera tous les devis à partir de la chaîne « AuxPath » lorsqu’il est lu à partir de la *MSSCCPRJ.SCC* fichier.
 
--   Chaîne de la « ProjName » dans le *MSSCCPRJ. Fichier de SCC* doit correspondre exactement à la chaîne retournée par la `SccGetProjPath` (fonction). Si la chaîne retournée par la fonction a entre guillemets, la chaîne dans le *MSSCCPRJ.SCC* fichier doit avoir des guillemets autour d’elle et vice versa.
+- Chaîne de la « ProjName » dans le *MSSCCPRJ. Fichier de SCC* doit correspondre exactement à la chaîne retournée par la `SccGetProjPath` (fonction). Si la chaîne retournée par la fonction a entre guillemets, la chaîne dans le *MSSCCPRJ.SCC* fichier doit avoir des guillemets autour d’elle et vice versa.
 
--   Un *MSSCCPRJ.SCC* fichier est créé ou mis à jour chaque fois qu’un fichier est placé sous contrôle de code source.
+- Un *MSSCCPRJ.SCC* fichier est créé ou mis à jour chaque fois qu’un fichier est placé sous contrôle de code source.
 
--   Si un *MSSCCPRJ.SCC* fichier est supprimé, un fournisseur doit régénérer la prochaine fois qu’il effectue une opération de contrôle de code source concernant ce répertoire.
+- Si un *MSSCCPRJ.SCC* fichier est supprimé, un fournisseur doit régénérer la prochaine fois qu’il effectue une opération de contrôle de code source concernant ce répertoire.
 
--   Un *MSSCCPRJ.SCC* fichier doit respecter strictement le format défini.
+- Un *MSSCCPRJ.SCC* fichier doit respecter strictement le format défini.
 
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>Obtenir une illustration de la MSSCCPRJ. Format de fichier de contrôle de code source
  Voici un exemple de la *MSSCCPRJ.SCC* format de fichier (les numéros de ligne sont fournies uniquement comme guide et ne doivent pas être inclus dans le corps du fichier) :

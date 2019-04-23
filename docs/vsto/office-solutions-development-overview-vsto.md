@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1c9c834d3fbb49775d9462ac5e6ce3d27127f793
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 45b9dba16a0a8ebf6baaf2f1d7660035294fd80d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628778"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061955"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Présentation de développement des solutions Office (VSTO)
   En utilisant Microsoft Office comme partie frontale des solutions, vous pouvez tirer parti des interfaces utilisateur et outils Microsoft Office familiers tels que les fonctionnalités de traitement de texte dans Word, les fonctionnalités d'analyse des données d'Excel et les fonctionnalités de gestion de la messagerie électronique d'Outlook. Vous pouvez développer des solutions dans Visual Studio pour personnaliser des applications Office et ajouter les fonctionnalités spécifiques dont vous avez besoin pour vos processus métier. Par exemple, vous pouvez transformer Word en générateur de contrats qui assemble des contrats à partir de parties préexistantes qui peuvent être modifiables ou non. Avec Excel, vous pouvez créer une feuille de calcul de budget automatisée personnalisée pour différents projets. Vos utilisateurs peuvent aussi mettre des solutions Office hors connexion, ce qui permet de rendre des solutions complexes plus pratiques qu'elles ne le seraient en utilisant une architecture basée sur le Web.
@@ -43,11 +43,11 @@ ms.locfileid: "56628778"
 
  Pour plus d'informations sur les personnalisations, consultez les rubriques suivantes :
 
--   [Prise en main de programmation de personnalisations au niveau du document pour Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)
+- [Prise en main de programmation de personnalisations au niveau du document pour Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)
 
--   [Prise en main de programmation de personnalisations au niveau du document pour Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)
+- [Prise en main de programmation de personnalisations au niveau du document pour Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)
 
--   [Architecture des personnalisations au niveau du document](../vsto/architecture-of-document-level-customizations.md)
+- [Architecture des personnalisations au niveau du document](../vsto/architecture-of-document-level-customizations.md)
 
 ### <a name="vsto-add-ins"></a>Compléments VSTO
  Les compléments VSTO sont constitués d'un assembly associé à une application Microsoft Office. En général, le complément VSTO est exécuté au démarrage de l’application associée, bien que les utilisateurs puissent également charger des compléments VSTO quand l’application est en cours d’exécution. Les fonctionnalités des compléments VSTO que vous créez sont accessibles à l’application, quels que soient les documents ouverts.
@@ -56,9 +56,9 @@ ms.locfileid: "56628778"
 
  Pour plus d’informations sur les compléments VSTO, consultez les rubriques suivantes :
 
--   [Commencer à programmer des Compléments VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
+- [Commencer à programmer des Compléments VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
 
--   [Architecture des compléments VSTO](../vsto/architecture-of-vsto-add-ins.md)
+- [Architecture des compléments VSTO](../vsto/architecture-of-vsto-add-ins.md)
 
 ## <a name="automate-office-applications-by-using-primary-interop-assemblies"></a>Automatiser des applications Office à l’aide d’assemblys PIA
  Vous pouvez incorporer par programme les fonctionnalités d'une application Office dans votre solution en écrivant du code qui accède au modèle objet de l'application. Les modèles objet sont une organisation de classes qui exposent des fonctionnalités via diverses propriétés et méthodes. Le modèle objet est différent pour chaque application Office.
@@ -69,9 +69,9 @@ ms.locfileid: "56628778"
 
  Pour plus d'informations sur l'utilisation d'assemblys PIA dans les solutions Office VSTO, consultez les rubriques suivantes :
 
--   [Écrire du code dans les solutions Office](../vsto/writing-code-in-office-solutions.md)
+- [Écrire du code dans les solutions Office](../vsto/writing-code-in-office-solutions.md)
 
--   [Assemblys PIA Office](../vsto/office-primary-interop-assemblies.md)
+- [Assemblys PIA Office](../vsto/office-primary-interop-assemblies.md)
 
 ## <a name="run-microsoft-vsto-office-solutions-on-end-user-computers"></a>Exécuter des solutions Office VSTO de Microsoft sur les ordinateurs des utilisateurs finaux
  Quand vous créez une solution Office VSTO, vous devez réfléchir à la façon dont les spécifications de déploiement peuvent affecter vos choix de développement.

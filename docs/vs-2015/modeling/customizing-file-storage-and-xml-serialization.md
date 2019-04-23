@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7aae4ee1006a7a329bc8ad5ca9f93b756e309458
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6211e33f8ef14687df3c70841ef61a2f25d10457
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947682"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062397"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Personnalisation du stockage de fichiers et de la sérialisation XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,17 +35,17 @@ Quand l’utilisateur enregistre une instance, ou *modèle*, d’un langage spé
 ## <a name="model-and-diagram-files"></a>Fichiers de modèle et diagramme  
  Chaque modèle est généralement enregistrée dans les deux fichiers :  
   
--   Le fichier de modèle a un nom tel que **Model1.mydsl**. Il stocke les éléments de modèle et les relations et leurs propriétés. L’extension de fichier comme **.mydsl** est déterminée par le **FileExtension** propriété de la **éditeur** nœud dans la définition DSL.  
+- Le fichier de modèle a un nom tel que **Model1.mydsl**. Il stocke les éléments de modèle et les relations et leurs propriétés. L’extension de fichier comme **.mydsl** est déterminée par le **FileExtension** propriété de la **éditeur** nœud dans la définition DSL.  
   
--   Le fichier de diagramme a un nom tel que **Model1.mydsl.diagram**. Il stocke les formes, connecteurs et leurs positions, couleurs, épaisseurs et autres détails de l’apparence du diagramme. Si l’utilisateur supprime un **.diagram** fichier, les informations essentielles dans le modèle ne sont pas perdues. Uniquement à la disposition du diagramme est perdue. Lorsque le fichier de modèle est ouvert, une valeur par défaut définie de formes et connecteurs seront créées.  
+- Le fichier de diagramme a un nom tel que **Model1.mydsl.diagram**. Il stocke les formes, connecteurs et leurs positions, couleurs, épaisseurs et autres détails de l’apparence du diagramme. Si l’utilisateur supprime un **.diagram** fichier, les informations essentielles dans le modèle ne sont pas perdues. Uniquement à la disposition du diagramme est perdue. Lorsque le fichier de modèle est ouvert, une valeur par défaut définie de formes et connecteurs seront créées.  
   
 #### <a name="to-change-the-file-extension-of-a-dsl"></a>Pour modifier l’extension de fichier d’une solution DSL  
   
-1.  Ouvrez la définition DSL. Dans l’Explorateur DSL, cliquez sur le nœud de l’éditeur.  
+1. Ouvrez la définition DSL. Dans l’Explorateur DSL, cliquez sur le nœud de l’éditeur.  
   
-2.  Dans la fenêtre Propriétés, modifiez le **FileExtension** propriété. N’incluez pas initial «. » de l’extension de nom de fichier.  
+2. Dans la fenêtre Propriétés, modifiez le **FileExtension** propriété. N’incluez pas initial «. » de l’extension de nom de fichier.  
   
-3.  Dans l’Explorateur de solutions, remplacez le nom des fichiers de modèle de deux éléments dans **DslPackage\ProjectItemTemplates**. Ces fichiers ont des noms qui respectent le format :  
+3. Dans l’Explorateur de solutions, remplacez le nom des fichiers de modèle de deux éléments dans **DslPackage\ProjectItemTemplates**. Ces fichiers ont des noms qui respectent le format :  
   
      `myDsl.diagram`  
   
@@ -81,17 +81,17 @@ Quand l’utilisateur enregistre une instance, ou *modèle*, d’un langage spé
   
  Notez les points suivants concernant le modèle sérialisé :  
   
--   Chaque nœud XML a un nom qui est identique à un nom de classe de domaine, à ceci près que la lettre initiale est en minuscule. Par exemple : `familyTreeModel` et `person`.  
+- Chaque nœud XML a un nom qui est identique à un nom de classe de domaine, à ceci près que la lettre initiale est en minuscule. Par exemple : `familyTreeModel` et `person`.  
   
--   Propriétés de domaine comme le nom et l’année de naissance sont sérialisées en tant qu’attributs dans les nœuds XML. Là encore, du caractère initial de la propriété est converti en minuscules.  
+- Propriétés de domaine comme le nom et l’année de naissance sont sérialisées en tant qu’attributs dans les nœuds XML. Là encore, du caractère initial de la propriété est converti en minuscules.  
   
--   Chaque relation est sérialisée comme un nœud XML imbriqué à l’intérieur de la fin de la source de la relation. Le nœud a le même nom que la propriété de rôle source, mais avec un caractère initial en minuscules.  
+- Chaque relation est sérialisée comme un nœud XML imbriqué à l’intérieur de la fin de la source de la relation. Le nœud a le même nom que la propriété de rôle source, mais avec un caractère initial en minuscules.  
   
      Par exemple, dans la définition DSL, un rôle nommé **personnes** comme source la **FamilyTree** classe.  Dans le code XML, ceci est représenté par le nœud nommé `people` imbriqué dans le `familyTreeModel` nœud.  
   
--   L’extrémité cible de chaque relation d’incorporation est sérialisée en tant que nœud imbriqué sous la relation. Par exemple, le `people` nœud contient plusieurs `person` nœuds.  
+- L’extrémité cible de chaque relation d’incorporation est sérialisée en tant que nœud imbriqué sous la relation. Par exemple, le `people` nœud contient plusieurs `person` nœuds.  
   
--   L’extrémité cible de chaque relation de référence est sérialisée comme un *moniker*, qui encode une référence à l’élément cible.  
+- L’extrémité cible de chaque relation de référence est sérialisée comme un *moniker*, qui encode une référence à l’élément cible.  
   
      Par exemple, sous un `person` nœud, il peut y avoir un `children` relation. Ce nœud contient les monikers telles que :  
   
@@ -125,33 +125,33 @@ Quand l’utilisateur enregistre une instance, ou *modèle*, d’un langage spé
   
 #### <a name="to-set-a-domain-class-to-be-referenced-by-id-monikers"></a>Pour définir une classe de domaine devant être référencé par les monikers ID  
   
-1.  Assurez-vous que l’option **est la clé de Moniker** est `false` pour chaque propriété de domaine dans la classe et ses classes de base.  
+1. Assurez-vous que l’option **est la clé de Moniker** est `false` pour chaque propriété de domaine dans la classe et ses classes de base.  
   
-    1.  Dans l’Explorateur DSL, développez **Behavior\Class données de la sérialisation Xml\\**_\<la classe de domaine >_**\Element données**.  
+    1. Dans l’Explorateur DSL, développez **Behavior\Class données de la sérialisation Xml\\**_\<la classe de domaine >_**\Element données**.  
   
-    2.  Vérifiez que **est la clé de Moniker** est `false` pour chaque propriété de domaine.  
+    2. Vérifiez que **est la clé de Moniker** est `false` pour chaque propriété de domaine.  
   
-    3.  Si la classe de domaine a une classe de base, répétez la procédure décrite dans cette classe.  
+    3. Si la classe de domaine a une classe de base, répétez la procédure décrite dans cette classe.  
   
-2.  Définissez **Id de sérialisation**  =  `true` pour la classe de domaine.  
+2. Définissez **Id de sérialisation**  =  `true` pour la classe de domaine.  
   
      Cette propriété peut être trouvée sous **comportement de sérialisation Xml**.  
   
 #### <a name="to-set-a-domain-class-to-be-referenced-by-qualified-key-monikers"></a>Pour définir une classe de domaine devant être référencé par des monikers clés qualifiés  
   
--   Définissez **est la clé de Moniker** pour une propriété de domaine d’une classe de domaine existante. Le type de la propriété doit être `string`.  
+- Définissez **est la clé de Moniker** pour une propriété de domaine d’une classe de domaine existante. Le type de la propriété doit être `string`.  
   
-    1.  Dans l’Explorateur DSL, développez **Behavior\Class données de la sérialisation Xml\\**_\<la classe de domaine >_**\Element données**, puis sélectionnez le propriété de domaine.  
+    1. Dans l’Explorateur DSL, développez **Behavior\Class données de la sérialisation Xml\\**_\<la classe de domaine >_**\Element données**, puis sélectionnez le propriété de domaine.  
   
-    2.  Dans la fenêtre Propriétés, définissez **est la clé de Moniker** à `true`.  
+    2. Dans la fenêtre Propriétés, définissez **est la clé de Moniker** à `true`.  
   
--   \- ou -  
+- \- ou -  
   
      Créer une nouvelle classe de domaine à l’aide du **nommé la classe de domaine** outil.  
   
      Cet outil crée une nouvelle classe qui possède une propriété de domaine appelée nom. Le **Is Element Name** et **est la clé de Moniker** propriétés de cette propriété de domaine sont initialisées à `true`.  
   
--   \- ou -  
+- \- ou -  
   
      Créer une relation d’héritage à partir de la classe de domaine à une autre classe qui a une propriété de clé de moniker.  
   
@@ -160,11 +160,11 @@ Quand l’utilisateur enregistre une instance, ou *modèle*, d’un langage spé
   
  Il existe plusieurs méthodes qui aident à éviter cette situation :  
   
--   Définissez **Is Element Name**  =  `true` pour la propriété de domaine clé. Sélectionnez la propriété de domaine sur le diagramme de définition DSL et définissez la valeur dans la fenêtre Propriétés.  
+- Définissez **Is Element Name**  =  `true` pour la propriété de domaine clé. Sélectionnez la propriété de domaine sur le diagramme de définition DSL et définissez la valeur dans la fenêtre Propriétés.  
   
      Lorsque l’utilisateur crée une nouvelle instance de la classe, cette valeur, la propriété de domaine soit attribué automatiquement une valeur différente. Le comportement par défaut ajoute un nombre à la fin du nom de classe. Cela n’empêche pas l’utilisateur de changer le nom à un doublon, mais cela vous permet du cas lorsque l’utilisateur ne définit pas la valeur avant d’enregistrer le modèle.  
   
--   Activer la validation de la solution DSL. Dans l’Explorateur DSL, sélectionnez éditeur\validation et définissez le **utilise...**  propriétés à `true`.  
+- Activer la validation de la solution DSL. Dans l’Explorateur DSL, sélectionnez éditeur\validation et définissez le **utilise...**  propriétés à `true`.  
   
      Il existe une méthode de validation généré automatiquement qui vérifie pour les ambiguïtés. La méthode est dans le `Load` catégorie de validation. Cela permet de s’assurer que l’utilisateur est averti qu’il ne pourrait pas être possible de rouvrir le fichier.  
   
@@ -204,7 +204,7 @@ Quand l’utilisateur enregistre une instance, ou *modèle*, d’un langage spé
 ## <a name="customizing-the-structure-of-the-xml"></a>Personnalisation de la structure du document XML  
  Pour effectuer les personnalisations suivantes, développez le **comportement de sérialisation Xml** nœud dans l’Explorateur DSL. Sous une classe de domaine, développez le nœud de données de l’élément pour afficher la liste des propriétés et des relations qui sont générées à cette classe. Sélectionnez une relation, ajuster ses options dans la fenêtre Propriétés.  
   
--   Définissez **omettre un élément** comme « true » pour omettre le nœud de rôle source, en laissant uniquement la liste des éléments cibles. Vous ne devez pas définir cette option s’il existe plusieurs relations entre les classes source et cible.  
+- Définissez **omettre un élément** comme « true » pour omettre le nœud de rôle source, en laissant uniquement la liste des éléments cibles. Vous ne devez pas définir cette option s’il existe plusieurs relations entre les classes source et cible.  
   
     ```  
   
@@ -218,7 +218,7 @@ Quand l’utilisateur enregistre une instance, ou *modèle*, d’un langage spé
   
     ```  
   
--   Définissez **utiliser le formulaire complet** pour incorporer les nœuds cibles dans les nœuds représentant les instances de relation. Cette option est définie automatiquement lorsque vous ajoutez des propriétés de domaine à une relation de domaine.  
+- Définissez **utiliser le formulaire complet** pour incorporer les nœuds cibles dans les nœuds représentant les instances de relation. Cette option est définie automatiquement lorsque vous ajoutez des propriétés de domaine à une relation de domaine.  
   
     ```  
   
@@ -236,7 +236,7 @@ Quand l’utilisateur enregistre une instance, ou *modèle*, d’un langage spé
   
     ```  
   
--   Définissez **représentation** = **élément** pour avoir une propriété de domaine enregistrée en tant qu’élément et non comme valeur d’attribut.  
+- Définissez **représentation** = **élément** pour avoir une propriété de domaine enregistrée en tant qu’élément et non comme valeur d’attribut.  
   
     ```  
     <person name="Elizabeth I" birthYear="1533">  
@@ -244,7 +244,7 @@ Quand l’utilisateur enregistre une instance, ou *modèle*, d’un langage spé
     </person>  
     ```  
   
--   Pour modifier l’ordre dans lequel les attributs et les relations sont sérialisées, cliquez sur un élément sous l’élément de données et utiliser le **monter** ou **Descendre** commandes de menu.  
+- Pour modifier l’ordre dans lequel les attributs et les relations sont sérialisées, cliquez sur un élément sous l’élément de données et utiliser le **monter** ou **Descendre** commandes de menu.  
   
 ## <a name="major-customization-using-program-code"></a>Personnalisation principales à l’aide de code de programme  
  Vous pouvez remplacer la partie ou l’ensemble des algorithmes de sérialisation.  
@@ -253,13 +253,13 @@ Quand l’utilisateur enregistre une instance, ou *modèle*, d’un langage spé
   
 #### <a name="to-customize-the-serialization-of-a-particular-class"></a>Pour personnaliser la sérialisation d’une classe particulière  
   
-1.  Définissez **personnalisé est** dans le nœud pour cette classe sous **comportement de sérialisation Xml**.  
+1. Définissez **personnalisé est** dans le nœud pour cette classe sous **comportement de sérialisation Xml**.  
   
-2.  Transformer tous les modèles, générez la solution et examinez les erreurs de compilation qui en résulte. Commentaires près de chaque erreur expliquent le code que vous devez fournir.  
+2. Transformer tous les modèles, générez la solution et examinez les erreurs de compilation qui en résulte. Commentaires près de chaque erreur expliquent le code que vous devez fournir.  
   
 #### <a name="to-provide-your-own-serialization-for-the-whole-model"></a>Pour fournir votre propre sérialisation pour l’ensemble du modèle  
   
-1.  Substituer des méthodes dans Dsl\GeneratedCode\SerializationHelper.cs  
+1. Substituer des méthodes dans Dsl\GeneratedCode\SerializationHelper.cs  
   
 ## <a name="options-in-xml-serialization-behavior"></a>Options de comportement de sérialisation Xml  
  Dans l’Explorateur DSL, le nœud de comportement de sérialisation Xml contient un nœud enfant pour chaque classe de domaine, relation, forme, connecteur et de classe de diagramme. Sous chacune de ces nœuds est une liste de propriétés et relations provenance de cet élément. Les relations sont représentées à la fois dans leur propre droit et sous leurs classes de source.  

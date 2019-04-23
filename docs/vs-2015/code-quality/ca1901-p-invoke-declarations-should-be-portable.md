@@ -15,12 +15,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ed1385ee914fa8b0df31b360f4a1d8fdc8931332
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ccbbc3178a9f65c15d11a27dee1a625cca729240
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938693"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053947"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901 : Les déclarations P/Invoke doivent être portables
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,9 +38,9 @@ ms.locfileid: "58938693"
 ## <a name="rule-description"></a>Description de la règle
  Un des scénarios suivants enfreint cette règle se produit :
 
--   La valeur de retour ou paramètre est typé comme un entier de taille fixe lorsqu’il doit être tapé comme un `IntPtr`.
+- La valeur de retour ou paramètre est typé comme un entier de taille fixe lorsqu’il doit être tapé comme un `IntPtr`.
 
--   La valeur de retour ou paramètre de type est un `IntPtr` quand il doit être tapé sous la forme d’un entier de taille fixe.
+- La valeur de retour ou paramètre de type est un `IntPtr` quand il doit être tapé sous la forme d’un entier de taille fixe.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Vous pouvez corriger cette violation à l’aide de `IntPtr` ou `UIntPtr` pour représenter des handles au lieu de `Int32` ou `UInt32`.

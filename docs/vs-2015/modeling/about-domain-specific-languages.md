@@ -11,12 +11,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: afa0cc3144840d547ea41cab21551fdcaae69980
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0ddfc51c54c04ad0d79d7ef180a027cbd253ac09
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953208"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043505"
 ---
 # <a name="about-domain-specific-languages"></a>À propos des langages spécifiques à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,15 +62,15 @@ Contrairement à un langage à usage général tel que c# ou UML, un langage sp�
 ## <a name="aspects-of-graphical-domain-specific-development"></a>Aspects du développement du graphique spécifique à un domaine  
  Un langage spécifique à un domaine graphique doit inclure les fonctionnalités suivantes :  
   
--   Notation  
+- Notation  
   
--   Modèle de domaine  
+- Modèle de domaine  
   
--   Génération de l’artefact  
+- Génération de l’artefact  
   
--   Sérialisation  
+- Sérialisation  
   
--   Intégration à Visual Studio  
+- Intégration à Visual Studio  
   
 ### <a name="notation"></a>Notation  
  Un langage spécifique à un domaine doit avoir un ensemble relativement peu volumineux d’éléments qui peuvent être définies et étendu pour représentent des constructions spécifiques à un domaine. Une notation se compose de formes, qui représentent les éléments, et de connecteurs, qui représentent les relations entre des éléments, sur une surface de diagramme. Dans [!INCLUDE[dsl](../includes/dsl-md.md)], les formes peuvent être étendus et affinés pour représenter les éléments de votre langage spécifique à un domaine.  
@@ -92,27 +92,27 @@ Contrairement à un langage à usage général tel que c# ou UML, un langage sp�
 ## <a name="benefits-of-domain-specific-development"></a>Avantages du développement de spécifique à un domaine  
  Un langage spécifique à un domaine peut fournir les avantages suivants :  
   
--   Contient des constructions qui correspondent exactement à l’espace de problème.  
+- Contient des constructions qui correspondent exactement à l’espace de problème.  
   
      Contrairement aux langages à usage général, un langage spécifique à un domaine se compose d’éléments et les relations qui représentent directement la logique de l’espace de problème. Par exemple, une application d’assurance doit inclure les éléments pour les stratégies et les revendications. Un langage spécifique à un domaine facilite la conception de l’application et de rechercher et de corriger les erreurs de logique.  
   
--   Permet de non-développeurs et les personnes qui ne connaissent pas de comprendre la conception globale de domaine.  
+- Permet de non-développeurs et les personnes qui ne connaissent pas de comprendre la conception globale de domaine.  
   
      En utilisant un langage spécifique à un domaine graphique, vous pouvez créer une représentation visuelle du domaine afin que non-développeurs peuvent facilement comprendre la conception de l’application.  
   
--   Facilite la création d’un prototype de l’application finale.  
+- Facilite la création d’un prototype de l’application finale.  
   
      Les développeurs peuvent utiliser le code qui génère de leur modèle pour créer une application de prototype qu’ils peuvent fournir aux clients.  
   
 ## <a name="the-process-of-domain-specific-development"></a>Le processus de développement de spécifique à un domaine  
  La plupart des équipes de développement de logiciels qui utilisent des langages spécifiques à un domaine suivez ces étapes pour créer et utiliser leurs modèles :  
   
--   L’équipe distingue les parties variables du domaine à partir des parties qui ne changent jamais.  
+- L’équipe distingue les parties variables du domaine à partir des parties qui ne changent jamais.  
   
--   Les développeurs d’écrire du code pour les parties fixes et laissent les points d’extension pour les parties variables.  
+- Les développeurs d’écrire du code pour les parties fixes et laissent les points d’extension pour les parties variables.  
   
--   Le développeur de logiciels senior ou l’architecte crée un langage spécifique à un domaine qui incorpore les modèles de conception des parties fixes du domaine et les points d’extension pour les parties variables.  
+- Le développeur de logiciels senior ou l’architecte crée un langage spécifique à un domaine qui incorpore les modèles de conception des parties fixes du domaine et les points d’extension pour les parties variables.  
   
--   Le développeur de logiciels senior ou l’architecte déploie le langage spécifique à un domaine pour les développeurs des diverses applications que l’équipe produit.  
+- Le développeur de logiciels senior ou l’architecte déploie le langage spécifique à un domaine pour les développeurs des diverses applications que l’équipe produit.  
   
--   Chaque développeur crée un modèle qui s’applique à l’application spécifique.
+- Chaque développeur crée un modèle qui s’applique à l’application spécifique.

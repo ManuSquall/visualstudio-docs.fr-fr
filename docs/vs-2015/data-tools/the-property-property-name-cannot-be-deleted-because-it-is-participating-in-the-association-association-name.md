@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 348dc0cdce8345f0b7de4fb15dcd7175f496dba7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a3ba746f9e4dcd8da45a002c5c763384558342ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652916"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053908"
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted-because-it-is-participating-in-the-association-ltassociation-namegt"></a>Impossible de supprimer la propriété &lt;nom de la propriété&gt;, car elle participe à l’association &lt;nom de l’association&gt;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ La propriété sélectionnée est définie comme **Propriété d’association**
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
-1.  Dans le Concepteur O/R, sélectionnez la ligne d'association qui connecte les classes de données indiquées dans le message d'erreur.  
+1. Dans le Concepteur O/R, sélectionnez la ligne d'association qui connecte les classes de données indiquées dans le message d'erreur.  
   
-2.  Double-cliquez sur la ligne pour ouvrir la boîte de dialogue **Éditeur d’associations**.  
+2. Double-cliquez sur la ligne pour ouvrir la boîte de dialogue **Éditeur d’associations**.  
   
-3.  Supprimez la propriété des **Propriétés d’association**.  
+3. Supprimez la propriété des **Propriétés d’association**.  
   
-4.  Essayez une nouvelle fois de supprimer la propriété.  
+4. Essayez une nouvelle fois de supprimer la propriété.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

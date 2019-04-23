@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7f6f2fb35e4f0500e97cf762152955a3f4e5c10
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 45cb15a81f7f8f74ab17bf22ce52aca48a90aea9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655034"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063099"
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>Procédure pas à pas : Utilisation d’IntelliSense XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Cette procédure pas à pas montre comment utiliser IntelliSense XSLT pour effec
   
 ### <a name="to-use-intellisense-in-the-name-attribute-of-xslwith-param-and-xslcall-template-elements"></a>Pour utiliser IntelliSense dans l'attribut name des éléments xsl:with-param et xsl:call-template  
   
-1.  Créez un fichier XSLT et copiez le code suivant dans celui-ci :  
+1. Créez un fichier XSLT et copiez le code suivant dans celui-ci :  
   
     ```  
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">  
@@ -47,7 +47,7 @@ Cette procédure pas à pas montre comment utiliser IntelliSense XSLT pour effec
     </xsl:stylesheet>  
     ```  
   
-2.  Insérez votre curseur après `<xsl:template name="msg23" match="msg23">`, puis appuyez sur Entrée. Commencez ensuite à taper l'élément `xsl:call-template` suivant :  
+2. Insérez votre curseur après `<xsl:template name="msg23" match="msg23">`, puis appuyez sur Entrée. Commencez ensuite à taper l'élément `xsl:call-template` suivant :  
   
     ```  
     <xsl:call-template name="localized-message">  
@@ -56,7 +56,7 @@ Cette procédure pas à pas montre comment utiliser IntelliSense XSLT pour effec
   
      La liste de noms de modèle s'affiche dans l'attribut `name=""` de l'élément `xsl:call-template` à mesure que vous tapez.  
   
-3.  Insérez votre curseur après `<xsl:call-template name="localized-message">`, puis appuyez sur Entrée. Commencez ensuite à taper l'élément `xsl:with-param` suivant :  
+3. Insérez votre curseur après `<xsl:call-template name="localized-message">`, puis appuyez sur Entrée. Commencez ensuite à taper l'élément `xsl:with-param` suivant :  
   
     ```  
     <xsl:with-param name="msgcode">msg23</xsl:with-param>  
@@ -66,7 +66,7 @@ Cette procédure pas à pas montre comment utiliser IntelliSense XSLT pour effec
   
 ### <a name="to-use-intellisense-in-the-mode-attribute-of-an-xslapply-templates-element"></a>Pour utiliser IntelliSense dans l'attribut mode d'un élément xsl:apply-templates  
   
-1.  Créez un fichier XSLT et copiez le code suivant dans celui-ci :  
+1. Créez un fichier XSLT et copiez le code suivant dans celui-ci :  
   
     ```  
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">  
@@ -113,7 +113,7 @@ Cette procédure pas à pas montre comment utiliser IntelliSense XSLT pour effec
     </xsl:stylesheet>  
     ```  
   
-2.  Insérez votre curseur après `<xsl:apply-templates select="phone" />`, puis appuyez sur Entrée. Commencez ensuite à taper l'élément `xsl: apply-templates` suivant :  
+2. Insérez votre curseur après `<xsl:apply-templates select="phone" />`, puis appuyez sur Entrée. Commencez ensuite à taper l'élément `xsl: apply-templates` suivant :  
   
     ```  
     <xsl:apply-templates select="phone"  mode="accountNumber">  
@@ -123,7 +123,7 @@ Cette procédure pas à pas montre comment utiliser IntelliSense XSLT pour effec
   
 ### <a name="to-use-intellisense-in-the-stylesheet-prefix-and-result-prefix-attributes-of-an-xslnamespace-alias-element"></a>Pour utiliser IntelliSense dans les attributs stylesheet-prefix et result-prefix d'un élément xsl:namespace-alias  
   
-1.  Créez un fichier XSLT et copiez le code suivant dans celui-ci :  
+1. Créez un fichier XSLT et copiez le code suivant dans celui-ci :  
   
     ```  
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate"  
@@ -154,7 +154,7 @@ Cette procédure pas à pas montre comment utiliser IntelliSense XSLT pour effec
     </xsl:stylesheet>  
     ```  
   
-2.  Insérez votre curseur après `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">`, puis appuyez sur Entrée. Commencez ensuite à taper l'élément `xsl:namespace-alias` suivant :  
+2. Insérez votre curseur après `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">`, puis appuyez sur Entrée. Commencez ensuite à taper l'élément `xsl:namespace-alias` suivant :  
   
     ```  
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>  

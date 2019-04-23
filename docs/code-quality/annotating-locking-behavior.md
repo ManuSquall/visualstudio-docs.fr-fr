@@ -32,12 +32,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ace3a8b729a9d0f54817bdad2eb5b8ee5343c0a9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6590a07ec7fc67bef5f1b1cfd96e80105fa325ce
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653006"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053727"
 ---
 # <a name="annotating-locking-behavior"></a>Annotation du comportement de verrouillage
 Pour éviter les bogues d'accès concurrentiel dans votre programme multithread, suivez toujours une règle de verrouillage appropriée et utilisez les annotations SAL.
@@ -55,11 +55,11 @@ Pour éviter les bogues d'accès concurrentiel dans votre programme multithread,
 
  Quelques règles de propriété concernant les threads à garder en tête :
 
--   Les verrous de rotation sont des verrous non numérotés qui ont une propriété de thread précise.
+- Les verrous de rotation sont des verrous non numérotés qui ont une propriété de thread précise.
 
--   Les mutex et les sections critiques sont des verrous numérotés qui ont une propriété de thread précise.
+- Les mutex et les sections critiques sont des verrous numérotés qui ont une propriété de thread précise.
 
--   Les sémaphores et les événements sont des verrous numérotés qui n'ont pas de propriété de thread précise.
+- Les sémaphores et les événements sont des verrous numérotés qui n'ont pas de propriété de thread précise.
 
 ## <a name="locking-annotations"></a>Annotations de verrouillage
  Le tableau suivant répertorie les annotations de verrouillage.

@@ -26,12 +26,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b2358e177f049d9eda17bcb54baf6a547605419c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b0489dec1c2d6cb3d7559a2bdd029ccab6c3ce5f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653097"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056807"
 ---
 # <a name="save-data-back-to-the-database"></a>Enregistrer les données dans la base de données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -249,11 +249,11 @@ Processus de mise à jour des deux étapes et le rôle de DataRowVersion dans un
   
  Pour la deuxième ligne, la `Update` méthode appelle la commande de données correcte et transmet à la base de données automatiquement. La syntaxe de l’instruction SQL spécifique varie selon le dialecte SQL qui est pris en charge par le magasin de données sous-jacent. Mais les caractéristiques suivantes de l’instruction SQL transmise sont dignes d’intérêt :  
   
--   L’instruction SQL transmise est une instruction de mise à jour. L’adaptateur sait qu’il doit pour utiliser une instruction UPDATE, car la valeur de la <xref:System.Data.DataRow.RowState%2A> propriété est <xref:System.Data.DataRowState>.  
+- L’instruction SQL transmise est une instruction de mise à jour. L’adaptateur sait qu’il doit pour utiliser une instruction UPDATE, car la valeur de la <xref:System.Data.DataRow.RowState%2A> propriété est <xref:System.Data.DataRowState>.  
   
--   L’instruction SQL transmise comprend une clause WHERE indiquant que la cible de l’instruction UPDATE est la ligne où `CustomerID = 'c400'`. Cette partie de l’instruction SELECT distingue la ligne cible des autres, car le `CustomerID` est la clé primaire de la table cible. Les informations de la clause WHERE est dérivée de la version d’origine de l’enregistrement (`DataRowVersion.Original`), au cas où les valeurs qui sont nécessaires pour identifier la ligne ont été modifiés.  
+- L’instruction SQL transmise comprend une clause WHERE indiquant que la cible de l’instruction UPDATE est la ligne où `CustomerID = 'c400'`. Cette partie de l’instruction SELECT distingue la ligne cible des autres, car le `CustomerID` est la clé primaire de la table cible. Les informations de la clause WHERE est dérivée de la version d’origine de l’enregistrement (`DataRowVersion.Original`), au cas où les valeurs qui sont nécessaires pour identifier la ligne ont été modifiés.  
   
--   L’instruction SQL transmise inclut la clause SET pour définir les nouvelles valeurs des colonnes modifiées.  
+- L’instruction SQL transmise inclut la clause SET pour définir les nouvelles valeurs des colonnes modifiées.  
   
     > [!NOTE]
     >  Si le TableAdapter `UpdateCommand` propriété a été définie sur le nom d’une procédure stockée, l’adaptateur ne construit pas une instruction SQL. Au lieu de cela, elle appelle la procédure stockée avec les paramètres passés dans appropriés.  

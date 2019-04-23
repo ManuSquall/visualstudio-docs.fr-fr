@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1626c9c027b12d6a8df8d3169e7d79cefba66006
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: c392323905676706835a94bd86fcd53e3f6b8cc7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659618"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054779"
 ---
 # <a name="query-datasets"></a>Interroger des datasets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Pour rechercher des enregistrements spécifiques dans un jeu de données, utilis
   
 #### <a name="to-find-a-row-in-a-typed-dataset-with-a-primary-key-value"></a>Pour rechercher une ligne dans un dataset typé avec une valeur de clé primaire  
   
--   Pour obtenir une ligne, appelez fortement typée `FindBy` méthode qui utilise la clé primaire de la table.  
+- Pour obtenir une ligne, appelez fortement typée `FindBy` méthode qui utilise la clé primaire de la table.  
   
      Dans l’exemple suivant, le `CustomerID` colonne est la clé primaire de la `Customers` table. Cela signifie que le texte généré `FindBy` méthode est `FindByCustomerID`. L’exemple montre comment affecter un spécifique <xref:System.Data.DataRow> à une variable à l’aide de l’élément généré `FindBy` (méthode).  
   
@@ -42,7 +42,7 @@ Pour rechercher des enregistrements spécifiques dans un jeu de données, utilis
   
 #### <a name="to-find-a-row-in-an-untyped-dataset-with-a-primary-key-value"></a>Pour rechercher une ligne dans un dataset non typé avec une valeur de clé primaire  
   
--   Appelez le <xref:System.Data.DataRowCollection.Find%2A> méthode d’un <xref:System.Data.DataRowCollection> collection, en passant la clé primaire en tant que paramètre.  
+- Appelez le <xref:System.Data.DataRowCollection.Find%2A> méthode d’un <xref:System.Data.DataRowCollection> collection, en passant la clé primaire en tant que paramètre.  
   
      L’exemple suivant montre comment déclarer une nouvelle ligne appelée `foundRow` et attribuez-lui la valeur de retour de la <xref:System.Data.DataRowCollection.Find%2A> (méthode). Si la clé primaire est trouvée, le contenu de l’index de colonne 1 est affiché dans une boîte de message.  
   
@@ -53,7 +53,7 @@ Pour rechercher des enregistrements spécifiques dans un jeu de données, utilis
   
 #### <a name="to-find-rows-based-on-the-values-in-any-column"></a>Pour rechercher les lignes en fonction des valeurs dans n’importe quelle colonne  
   
--   Tables de données sont créées avec le<xref:System.Data.DataTable.Select%2A> (méthode), qui retourne un tableau de <xref:System.Data.DataRow>s basé sur l’expression passée à la <xref:System.Data.DataTable.Select%2A> (méthode). Pour plus d’informations sur la création d’expressions valides, consultez la section « Syntaxe d’Expression » de la page le <xref:System.Data.DataColumn.Expression%2A> propriété.  
+- Tables de données sont créées avec le<xref:System.Data.DataTable.Select%2A> (méthode), qui retourne un tableau de <xref:System.Data.DataRow>s basé sur l’expression passée à la <xref:System.Data.DataTable.Select%2A> (méthode). Pour plus d’informations sur la création d’expressions valides, consultez la section « Syntaxe d’Expression » de la page le <xref:System.Data.DataColumn.Expression%2A> propriété.  
   
      L’exemple suivant montre comment utiliser le <xref:System.Data.DataTable.Select%2A> méthode de la <xref:System.Data.DataTable> pour rechercher des lignes spécifiques.  
   
@@ -82,14 +82,14 @@ En outre, les deux tables doivent être remplies avec des données pour tous les
   
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>Pour retourner des enregistrements d’un enregistrement parent sélectionné de l’enfant  
   
--   Appeler le <xref:System.Data.DataRow.GetChildRows%2A> méthode d’une spécifique `Customers` données de ligne et renvoie un tableau de lignes à partir de la `Orders` table :  
+- Appeler le <xref:System.Data.DataRow.GetChildRows%2A> méthode d’une spécifique `Customers` données de ligne et renvoie un tableau de lignes à partir de la `Orders` table :  
   
      [!code-csharp[VbRaddataDatasets#6](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs#6)]
      [!code-vb[VbRaddataDatasets#6](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb#6)]  
   
 #### <a name="to-return-the-parent-record-of-a-selected-child-record"></a>Pour retourner l’enregistrement parent d’un enregistrement enfant sélectionné  
   
--   Appelez le <xref:System.Data.DataRow.GetParentRow%2A> méthode d’une spécifique `Orders` ligne de données et retournent une seule ligne de la `Customers` table :  
+- Appelez le <xref:System.Data.DataRow.GetParentRow%2A> méthode d’une spécifique `Orders` ligne de données et retournent une seule ligne de la `Customers` table :  
   
      [!code-csharp[VbRaddataDatasets#7](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs#7)]
      [!code-vb[VbRaddataDatasets#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb#7)]

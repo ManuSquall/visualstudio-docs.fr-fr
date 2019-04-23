@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c91aa3cbad7fd58fbd819e46f3f3428f68801e9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 093c2e33b8fe3918c280bb68dabda54808cc5e3a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618937"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060824"
 ---
 # <a name="running-document-table"></a>Exécution de la table de document
 L’IDE gère la liste de tous les documents actuellement ouverts dans une structure interne appelée table de document en cours d’exécution (RDT). Cette liste inclut tous les documents ouverts dans la mémoire, quelle que soit la si ces documents sont en cours de modification. Un document est un élément qui est rendue persistante, y compris les fichiers dans un projet ou le fichier projet principal (par exemple, un fichier .vcxproj).
@@ -52,9 +52,9 @@ L’IDE gère la liste de tous les documents actuellement ouverts dans une struc
 
  L’IDE utilise également la RDT à resurface (amener vers l’avant) un document ouvert, si un utilisateur demande à ce document. Pour plus d’informations, consultez [affichage des fichiers à l’aide de la commande fichier ouvrir](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md). Pour déterminer si un fichier est ouvert dans le RDT, effectuez les opérations suivantes.
 
--   Requête pour le moniker de document (autrement dit, le chemin d’accès complet de document) déterminer si l’élément est ouvert.
+- Requête pour le moniker de document (autrement dit, le chemin d’accès complet de document) déterminer si l’élément est ouvert.
 
--   Utilisez l’ID de hiérarchie ou l’élément pour poser le système de projet pour le chemin d’accès complet de documents et ensuite rechercher l’élément dans le RDT.
+- Utilisez l’ID de hiérarchie ou l’élément pour poser le système de projet pour le chemin d’accès complet de documents et ensuite rechercher l’élément dans le RDT.
 
 ## <a name="see-also"></a>Voir aussi
 - [Utilisation de RDT_ReadLock](../../extensibility/internals/rdt-readlock-usage.md)

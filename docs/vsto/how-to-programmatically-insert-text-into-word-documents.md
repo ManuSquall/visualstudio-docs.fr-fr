@@ -16,21 +16,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d2c81a0da3c60bc9b3cfaec357dab0fe2bb33706
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a24fde5f04a88de7eec34836df38bc1cca8669ab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654020"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060629"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>Procédure : Insérer du texte dans les documents Word par programmation
   Il existe trois principaux moyens pour insérer du texte dans des documents Microsoft Office Word :
 
--   insérer du texte dans une plage ;
+- insérer du texte dans une plage ;
 
--   remplacer du texte dans une plage par un nouveau texte ;
+- remplacer du texte dans une plage par un nouveau texte ;
 
--   utiliser la méthode <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> d'un objet <xref:Microsoft.Office.Interop.Word.Selection> pour insérer du texte au niveau du curseur ou de la sélection.
+- utiliser la méthode <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> d'un objet <xref:Microsoft.Office.Interop.Word.Selection> pour insérer du texte au niveau du curseur ou de la sélection.
 
 > [!NOTE]
 >  Vous pouvez également insérer du texte dans les contrôles de contenu et les signets. Pour plus d’informations, consultez [contrôles de contenu](../vsto/content-controls.md) et [Bookmark (contrôle)](../vsto/bookmark-control.md).
@@ -42,7 +42,7 @@ ms.locfileid: "56654020"
 
 ### <a name="to-insert-text-in-a-range"></a>Pour insérer du texte dans une plage
 
-1.  Spécifiez une plage au début d’un document et insérer le texte **New Text**.
+1. Spécifiez une plage au début d’un document et insérer le texte **New Text**.
 
      Vous pouvez utiliser l’exemple de code suivant dans une personnalisation au niveau du document.
 
@@ -54,7 +54,7 @@ ms.locfileid: "56654020"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#51](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#51)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#51](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#51)]
 
-2.  Sélectionnez l'objet <xref:Microsoft.Office.Interop.Word.Range> , qui s'est développé à partir d'un caractère jusqu'à la longueur correspondant au texte inséré.
+2. Sélectionnez l'objet <xref:Microsoft.Office.Interop.Word.Range> , qui s'est développé à partir d'un caractère jusqu'à la longueur correspondant au texte inséré.
 
      [!code-vb[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#52)]
      [!code-csharp[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#52)]
@@ -64,7 +64,7 @@ ms.locfileid: "56654020"
 
 ### <a name="to-replace-text-in-a-range"></a>Pour remplacer du texte dans une plage
 
-1.  Créez un objet <xref:Microsoft.Office.Interop.Word.Range> comprenant les 12 premiers caractères du document.
+1. Créez un objet <xref:Microsoft.Office.Interop.Word.Range> comprenant les 12 premiers caractères du document.
 
      Vous pouvez utiliser l’exemple de code suivant dans une personnalisation au niveau du document.
 
@@ -76,12 +76,12 @@ ms.locfileid: "56654020"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#53](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#53)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#53](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#53)]
 
-2.  Remplacez ces caractères par la chaîne **New Text**.
+2. Remplacez ces caractères par la chaîne **New Text**.
 
      [!code-vb[Trin_VstcoreWordAutomation#54](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#54)]
      [!code-csharp[Trin_VstcoreWordAutomation#54](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#54)]
 
-3.  Sélectionnez la plage.
+3. Sélectionnez la plage.
 
      [!code-vb[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#55)]
      [!code-csharp[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#55)]

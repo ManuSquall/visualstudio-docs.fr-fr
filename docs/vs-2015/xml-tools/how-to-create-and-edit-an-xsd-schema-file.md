@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 132cc5acd705c45d56a9234467b807a86b5ae1ec
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 847d8e02f1d8cb6b1273ed4206d25207de59e3e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666999"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056586"
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Procédure : Créer et modifier un fichier de schéma XSD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,19 +23,19 @@ Cette rubrique décrit comment créer un fichier XSD (XML Schema Definition) et 
   
 ### <a name="to-create-a-new-xml-schema-file"></a>Pour créer un fichier de schéma XML  
   
-1.  Dans Visual Studio, ouvrez le **fichier** menu et sélectionnez **New** , puis **fichier**. Sinon, utilisez le raccourci clavier Ctrl+N.  
+1. Dans Visual Studio, ouvrez le **fichier** menu et sélectionnez **New** , puis **fichier**. Sinon, utilisez le raccourci clavier Ctrl+N.  
   
-2.  Dans le **nouveau fichier** boîte de dialogue, sélectionnez **schéma XML** et cliquez sur **Open**.  
+2. Dans le **nouveau fichier** boîte de dialogue, sélectionnez **schéma XML** et cliquez sur **Open**.  
   
      Un fichier est créé. La vue de départ et une fenêtre Explorateur de schémas XML vide s'affichent dans Visual Studio.  
   
 ### <a name="to-edit-a-file"></a>Pour modifier un fichier  
   
-1.  Cliquez sur le **utiliser l’éditeur XML pour afficher et modifier le fichier de schéma XML sous-jacent** lien sur la vue de départ.  
+1. Cliquez sur le **utiliser l’éditeur XML pour afficher et modifier le fichier de schéma XML sous-jacent** lien sur la vue de départ.  
   
      L'Éditeur XML apparaît avec le nouveau fichier ouvert.  
   
-2.  Copiez le code d’exemple de schéma XML à partir de [schéma de bon de commande](../xml-tools/sample-xsd-file-simple-schema.md) et collez-le pour remplacer le code qui a été ajouté au nouveau fichier XSD par défaut.  
+2. Copiez le code d’exemple de schéma XML à partir de [schéma de bon de commande](../xml-tools/sample-xsd-file-simple-schema.md) et collez-le pour remplacer le code qui a été ajouté au nouveau fichier XSD par défaut.  
   
      L'Explorateur de schémas XML est mis à jour avec le nouveau jeu de schémas.  
   

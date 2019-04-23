@@ -11,12 +11,12 @@ ms.assetid: de068b6a-e806-45f0-9dec-2458fbb486f7
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f5913a8b269d767bf7f406c38761c3a56695256e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c69c7732079b5cb85932d6d71cd797166b744d4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947739"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054805"
 ---
 # <a name="handling-specialized-deployment"></a>Gestion de déploiement spécialisé
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Un déploiement est une opération facultative pour les projets. Un projet Web, 
   
 #### <a name="to-handle-a-specialized-deployment-by-a-subtype-project"></a>Pour gérer un déploiement spécialisé par un projet de sous-type  
   
--   Implémentez la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A> méthode pour inscrire l’environnement pour recevoir des notifications d’événements d’état de déploiement.  
+- Implémentez la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A> méthode pour inscrire l’environnement pour recevoir des notifications d’événements d’état de déploiement.  
   
     ```vb  
     Private adviseSink As Microsoft.VisualStudio.Shell.EventSinkCollection = New Microsoft.VisualStudio.Shell.EventSinkCollection()  
@@ -78,7 +78,7 @@ Un déploiement est une opération facultative pour les projets. Un projet Web, 
   
     ```  
   
--   Implémentez la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A> méthode pour annuler l’inscription de l’environnement pour recevoir des notifications d’événements d’état de déploiement.  
+- Implémentez la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A> méthode pour annuler l’inscription de l’environnement pour recevoir des notifications d’événements d’état de déploiement.  
   
     ```vb  
     Public Function UnadviseDeployStatusCallback(ByVal dwCookie As UInteger) As Integer  
@@ -96,7 +96,7 @@ Un déploiement est une opération facultative pour les projets. Un projet Web, 
   
     ```  
   
--   Implémentez la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A> méthode pour effectuer l’opération de validation spécifique à votre application.  Cette méthode est utilisée principalement pour le déploiement de la base de données.  
+- Implémentez la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A> méthode pour effectuer l’opération de validation spécifique à votre application.  Cette méthode est utilisée principalement pour le déploiement de la base de données.  
   
     ```vb  
     Public Function Commit(ByVal dwReserved As UInteger) As Integer  
@@ -114,7 +114,7 @@ Un déploiement est une opération facultative pour les projets. Un projet Web, 
   
     ```  
   
--   Implémentez la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A> méthode pour effectuer une opération de restauration. Lorsque cette méthode est appelée, le projet de déploiement doit faire tout ce qu’à restaurer les modifications et restaurer l’état du projet. Cette méthode est utilisée principalement pour le déploiement de la base de données.  
+- Implémentez la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A> méthode pour effectuer une opération de restauration. Lorsque cette méthode est appelée, le projet de déploiement doit faire tout ce qu’à restaurer les modifications et restaurer l’état du projet. Cette méthode est utilisée principalement pour le déploiement de la base de données.  
   
     ```vb  
     Public Function Commit(ByVal dwReserved As UInteger) As Integer  
@@ -132,7 +132,7 @@ Un déploiement est une opération facultative pour les projets. Un projet Web, 
   
     ```  
   
--   Implémentez la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A> méthode pour déterminer si un projet est en mesure de démarrer une opération de déploiement.  
+- Implémentez la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A> méthode pour déterminer si un projet est en mesure de démarrer une opération de déploiement.  
   
     ```vb  
     Public Function QueryStartDeploy(ByVal dwOptions As UInteger, ByVal pfSupported As Integer(), ByVal pfReady As Integer()) As Integer  
@@ -165,7 +165,7 @@ Un déploiement est une opération facultative pour les projets. Un projet Web, 
   
     ```  
   
--   Implémentez la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A> méthode pour déterminer si une opération de déploiement est terminée avec succès.  
+- Implémentez la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A> méthode pour déterminer si une opération de déploiement est terminée avec succès.  
   
     ```vb  
     Public Function QueryStatusDeploy(ByRef pfDeployDone As Integer) As Integer  
@@ -188,7 +188,7 @@ Un déploiement est une opération facultative pour les projets. Un projet Web, 
   
     ```  
   
--   Implémentez la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A> méthode commence une opération de déploiement dans un thread distinct. Placez le code spécifique pour le déploiement de votre application à l’intérieur de la `Deploy` (méthode).  
+- Implémentez la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A> méthode commence une opération de déploiement dans un thread distinct. Placez le code spécifique pour le déploiement de votre application à l’intérieur de la `Deploy` (méthode).  
   
     ```vb  
     Public Function StartDeploy(ByVal pIVsOutputWindowPane As IVsOutputWindowPane, ByVal dwOptions As UInteger) As Integer  
@@ -245,7 +245,7 @@ Un déploiement est une opération facultative pour les projets. Un projet Web, 
   
     ```  
   
--   Implémentez la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A> méthode pour arrêter une opération de déploiement. Cette méthode est appelée quand un utilisateur appuie sur le **Annuler** bouton pendant le processus de déploiement.  
+- Implémentez la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A> méthode pour arrêter une opération de déploiement. Cette méthode est appelée quand un utilisateur appuie sur le **Annuler** bouton pendant le processus de déploiement.  
   
     ```vb  
     Public Function StopDeploy(ByVal fSync As Integer) As Integer  
