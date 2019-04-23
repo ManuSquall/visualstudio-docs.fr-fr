@@ -10,12 +10,12 @@ ms.assetid: f8d68c3d-9134-4a8f-b566-485956cd321e
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cea41ee70001d32bb003a6ccefe033d42274f682
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3a95b7da718f050357f6ecd79c90c389dd6085d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952214"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106603"
 ---
 # <a name="elements-of-the-isolated-shell"></a>Éléments du Shell isolé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ Vous pouvez modifier les paramètres du Registre, paramètres d’exécution et 
   
  Lorsque l’application est exécutée, les paramètres du Registre sont définies dans l’ordre suivant :  
   
-1.  La clé de Registre pour l’application est créée.  
+1. La clé de Registre pour l’application est créée.  
   
-2.  Le Registre est mis à jour à partir du fichier .pkgdef de l’application en définissant des entrées et des clés spécifiées.  
+2. Le Registre est mis à jour à partir du fichier .pkgdef de l’application en définissant des entrées et des clés spécifiées.  
   
-3.  Pour chaque package fait partie de votre application, le Registre est mis à jour à partir du fichier .pkgdef de ce package. Chaque package est défini dans le fichier .pkgdef de l’application par le \Packages $ $RootKey\\{*vsPackageGuid*} clés pour le package.  
+3. Pour chaque package fait partie de votre application, le Registre est mis à jour à partir du fichier .pkgdef de ce package. Chaque package est défini dans le fichier .pkgdef de l’application par le \Packages $ $RootKey\\{*vsPackageGuid*} clés pour le package.  
   
-4.  Le Registre est mis à jour à partir de la AppEnvConfig.pkgdef et BaseConfig.pkgdef dans le *chemin d’installation de Visual Studio SDK*\Common7\IDE\ShellExtensions\Platform directory. Ces fichiers sont la partie de Visual Studio et également partie du package redistribuable Visual Studio Shell (mode isolé).  
+4. Le Registre est mis à jour à partir de la AppEnvConfig.pkgdef et BaseConfig.pkgdef dans le *chemin d’installation de Visual Studio SDK*\Common7\IDE\ShellExtensions\Platform directory. Ces fichiers sont la partie de Visual Studio et également partie du package redistribuable Visual Studio Shell (mode isolé).  
   
-5.  Le Registre est mis à jour à partir du fichier .pkgundef de l’application en supprimant les entrées et les clés spécifiées.  
+5. Le Registre est mis à jour à partir du fichier .pkgundef de l’application en supprimant les entrées et les clés spécifiées.  
   
 ## <a name="run-time-settings"></a>Paramètres d’exécution  
  Quand un utilisateur démarre l’application de shell isolé, il appelle le point d’entrée de démarrage de l’interpréteur de commandes de Visual Studio. Paramètres d’application sont définies lorsque votre application démarre, comme suit :  

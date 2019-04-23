@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 575be3277dd7d876b19b9c557643cb05831255a5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 550c43532db89132ec4e1b123005ad02ef547414
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670431"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104913"
 ---
 # <a name="xml-schema-explorer"></a>Explorateur de schémas XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,11 +67,11 @@ L'Explorateur de schémas XML est intégré à Microsoft Visual Studio et l'Édi
   
  Pour activer un nœud, double-cliquez dessus ou appuyez sur **entrée** lorsque le nœud est sélectionné.  
   
--   L'activation d'un nœud ouvre le fichier dans lequel ce nœud est défini (si le fichier n'est pas déjà ouvert) et sélectionne le nœud dans le fichier.  
+- L'activation d'un nœud ouvre le fichier dans lequel ce nœud est défini (si le fichier n'est pas déjà ouvert) et sélectionne le nœud dans le fichier.  
   
--   L'activation d'un nœud de fichier ouvre le fichier sélectionné (s'il n'est pas déjà ouvert) et met en surbrillance le nœud `<schema>`.  
+- L'activation d'un nœud de fichier ouvre le fichier sélectionné (s'il n'est pas déjà ouvert) et met en surbrillance le nœud `<schema>`.  
   
--   L'activation d'un jeu de schémas ou d'un nœud d'espace de noms n'aboutit à rien.  
+- L'activation d'un jeu de schémas ou d'un nœud d'espace de noms n'aboutit à rien.  
   
 ## <a name="draging-and-dropping-nodes"></a>Déplacement de nœuds par glisser-déposer  
  Vous pouvez déplacer des nœuds, des nœuds de fichier et des nœuds d'espace de noms par glisser-déplacer dans une vue du concepteur XSD. Si la vue actuelle est la [vue de départ](../xml-tools/start-view.md), faire glisser un nœud à la vue s’ouvre le [vue du graphique](../xml-tools/graph-view.md). Si la vue actuelle est la [affichage du modèle de contenu](../xml-tools/content-model-view.md) ou de la vue du graphique, la vue ne change pas lorsque vous supprimez un nœud sur celle-ci.  
@@ -82,13 +82,13 @@ L'Explorateur de schémas XML est intégré à Microsoft Visual Studio et l'Édi
   
 ## <a name="in-this-section"></a>Dans cette section  
   
--   [Recherche dans le jeu de schémas](../xml-tools/searching-the-schema-set.md)  
+- [Recherche dans le jeu de schémas](../xml-tools/searching-the-schema-set.md)  
   
--   [Tri, filtrage et regroupement](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)  
+- [Tri, filtrage et regroupement](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)  
   
--   [Menus contextuels](../xml-tools/context-menus-xml-schema-explorer.md)  
+- [Menus contextuels](../xml-tools/context-menus-xml-schema-explorer.md)  
   
--   [Intégration de littéraux XML avec l’Explorateur de schémas XML](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)  
+- [Intégration de littéraux XML avec l’Explorateur de schémas XML](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)  
   
 ## <a name="see-also"></a>Voir aussi  
  [Guide pratique pour Ajouter des nœuds à l’espace de travail à partir de l’Explorateur de schémas XML](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)

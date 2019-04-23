@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4dac34d2e568d5f487e06da89151fb91ebcc69f1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 395c45b19559833549c9613278f1a4ddbb06f30a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629688"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104061"
 ---
 # <a name="expose-types-to-visual-designers"></a>Exposer des types aux concepteurs visuels
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] doit avoir accès aux définitions de classe et le type au moment du design pour afficher un concepteur visuel. Les classes sont chargés à partir d’un ensemble prédéfini d’assemblys qui incluent le jeu complète des dépendances du projet actuel (références plus leurs dépendances). Il peut également être nécessaire pour les concepteurs visuels pour accéder aux classes et des types qui sont définis dans les fichiers générés par les outils personnalisés.
@@ -31,15 +31,15 @@ ms.locfileid: "56629688"
 
  Les outils personnalisés qui tirent parti de la prise en charge de PE temporaire doivent respecter les règles suivantes :
 
--   **GeneratesDesignTimeSource** doit être définie sur 1 dans le Registre.
+- **GeneratesDesignTimeSource** doit être définie sur 1 dans le Registre.
 
      Aucune compilation de fichier exécutable du programme n’a lieu sans ce paramètre.
 
--   Le code généré doit être dans la même langue que le paramètre de projet global.
+- Le code généré doit être dans la même langue que le paramètre de projet global.
 
      Le PE temporaire est compilé, quel que soit ce que l’outil personnalisé signale que l’extension demandée dans <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> autant que **GeneratesDesignTimeSource** est défini sur 1 dans le Registre. L’extension n’a pas besoin être *.vb*, *.cs*, ou *.jsl*; il peut être n’importe quelle extension.
 
--   Le code généré par l’outil personnalisé doit être valide, et il doit se compiler sur son propre à l’aide d’uniquement le jeu de références présents dans le projet au moment <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> termine son exécution.
+- Le code généré par l’outil personnalisé doit être valide, et il doit se compiler sur son propre à l’aide d’uniquement le jeu de références présents dans le projet au moment <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> termine son exécution.
 
      Lorsqu’un PE temporaire est compilé, le seul fichier source spécifié pour le compilateur est la sortie de l’outil personnalisé. Par conséquent, un outil personnalisé qui utilise un PE temporaire doit générer des fichiers de sortie qui peuvent être compilés indépendamment des autres fichiers dans le projet.
 

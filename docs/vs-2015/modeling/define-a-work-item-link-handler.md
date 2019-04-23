@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7bc151e69206e37f88eac04ac8bbb2f4d9dbf1ad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 213237037225b18128ab149f384466e5fab0d668
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948918"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104679"
 ---
 # <a name="define-a-work-item-link-handler"></a>Définir un gestionnaire de liens d’éléments de travail
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,39 +26,39 @@ Vous pouvez créer une extension d’intégration Visual Studio qui répond quan
 ## <a name="set-up-a-uml-extension-solution"></a>Configurer une solution d'extension UML  
  Cela vous permet de développer des gestionnaires et de les distribuer à d'autres utilisateurs. Vous devez configurer deux projets Visual Studio :  
   
--   un projet de bibliothèque de classes qui contient le code du gestionnaire de liens ;  
+- un projet de bibliothèque de classes qui contient le code du gestionnaire de liens ;  
   
--   un projet VSIX qui joue le rôle de conteneur pour l'installation de la commande. Si vous le souhaitez, vous pouvez inclure d’autres composants dans le même VSIX.  
+- un projet VSIX qui joue le rôle de conteneur pour l'installation de la commande. Si vous le souhaitez, vous pouvez inclure d’autres composants dans le même VSIX.  
   
 #### <a name="to-set-up-the-visual-studio-solution"></a>Pour configurer la solution Visual Studio  
   
-1.  Créez un projet de bibliothèque de classes en l’ajoutant à une solution VSIX existante ou en créant une solution.  
+1. Créez un projet de bibliothèque de classes en l’ajoutant à une solution VSIX existante ou en créant une solution.  
   
-    1.  Dans le menu **Fichier** , choisissez **Nouveau**, **Projet**.  
+    1. Dans le menu **Fichier** , choisissez **Nouveau**, **Projet**.  
   
-    2.  Sous **modèles installés**, développez **Visual C#** ou **Visual Basic**, puis, dans la colonne du milieu, cliquez sur **bibliothèque de classes**.  
+    2. Sous **modèles installés**, développez **Visual C#** ou **Visual Basic**, puis, dans la colonne du milieu, cliquez sur **bibliothèque de classes**.  
   
-    3.  Définissez **Solution** pour indiquer si vous souhaitez créer une solution ou ajouter un composant à une solution VSIX déjà ouverte.  
+    3. Définissez **Solution** pour indiquer si vous souhaitez créer une solution ou ajouter un composant à une solution VSIX déjà ouverte.  
   
-    4.  Définissez le nom et l’emplacement du projet, puis cliquez sur OK.  
+    4. Définissez le nom et l’emplacement du projet, puis cliquez sur OK.  
   
-2.  Créez un projet VSIX, sauf si votre solution en comporte déjà un.  
+2. Créez un projet VSIX, sauf si votre solution en comporte déjà un.  
   
-    1.  Dans l’ **Explorateur de solutions**, dans le menu contextuel de la solution, choisissez **Ajouter**, puis **Nouveau projet**.  
+    1. Dans l’ **Explorateur de solutions**, dans le menu contextuel de la solution, choisissez **Ajouter**, puis **Nouveau projet**.  
   
-    2.  Sous **Modèles installés**, développez **Visual C#** ou **Visual Basic**, puis sélectionnez **Extensibilité**. Dans la colonne du milieu, choisissez **Projet VSIX**.  
+    2. Sous **Modèles installés**, développez **Visual C#** ou **Visual Basic**, puis sélectionnez **Extensibilité**. Dans la colonne du milieu, choisissez **Projet VSIX**.  
   
-3.  Définissez le projet VSIX comme projet de démarrage de la solution.  
+3. Définissez le projet VSIX comme projet de démarrage de la solution.  
   
-    -   Dans l’Explorateur de solutions, dans le menu contextuel du projet VSIX, choisissez **Définir comme projet de démarrage**.  
+    - Dans l’Explorateur de solutions, dans le menu contextuel du projet VSIX, choisissez **Définir comme projet de démarrage**.  
   
-4.  Dans **source.extension.vsixmanifest**, sous **contenu**, ajoutez le projet de bibliothèque de classes en tant que composant MEF.  
+4. Dans **source.extension.vsixmanifest**, sous **contenu**, ajoutez le projet de bibliothèque de classes en tant que composant MEF.  
   
-    1.  Sous l’onglet **Métadonnées** , nommez le VSIX.  
+    1. Sous l’onglet **Métadonnées** , nommez le VSIX.  
   
-    2.  Sous l’onglet **Cibles d’installation** , définissez les versions de Visual Studio comme cibles.  
+    2. Sous l’onglet **Cibles d’installation** , définissez les versions de Visual Studio comme cibles.  
   
-    3.  Sous l’onglet **Composants** , choisissez **Nouveau**puis, dans la boîte de dialogue, définissez :  
+    3. Sous l’onglet **Composants** , choisissez **Nouveau**puis, dans la boîte de dialogue, définissez :  
   
          **Type** = **Composant MEF**  
   
@@ -152,41 +152,41 @@ namespace WorkItems
  À des fins de test, exécutez votre gestionnaire de liens en mode débogage.  
   
 > [!WARNING]
->  Vous devez être connecté à un contrôle de code source (SSC, Source Code Control) TFS pour créer un élément de travail ou un lien vers celui-ci. Si vous essayez d'ouvrir une connexion à un autre contrôle de code source TFS, Visual Studio ferme automatiquement la solution actuelle. Vérifiez que vous êtes connecté au contrôle de code source TFS approprié avant d’essayer de créer un élément de travail ou un lien vers celui-ci. Dans les versions ultérieures de Visual Studio, les commandes de menu ne sont pas disponibles si vous n'êtes pas connecté à un contrôle de code source.  
+>  Vous devez être connecté à un contrôle de code source (SSC, Source Code Control) TFS pour créer un élément de travail ou un lien vers celui-ci. Si vous essayez d'ouvrir une connexion à un autre contrôle de code source TFS, Visual Studio ferme automatiquement la solution actuelle. Vérifiez que vous êtes connecté au contrôle de code source TFS approprié avant d'essayer de créer un élément de travail ou un lien vers celui-ci. Dans les versions ultérieures de Visual Studio, les commandes de menu ne sont pas disponibles si vous n'êtes pas connecté à un contrôle de code source.  
   
 #### <a name="to-test-the-link-handler"></a>Pour tester le gestionnaire de liens  
   
-1.  Appuyez sur **F5**, ou dans le menu **Déboguer** , choisissez **Démarrer le débogage**.  
+1. Appuyez sur **F5**, ou dans le menu **Déboguer** , choisissez **Démarrer le débogage**.  
   
      Une instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] démarre.  
   
      **Résolution des problèmes**: Si un nouveau [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ne démarre pas, vérifiez que le projet VSIX est défini comme projet de démarrage de la solution.  
   
-2.  Dans l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ouvrez ou créez un projet de modélisation, puis ouvrez ou créez un diagramme de modélisation.  
+2. Dans l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ouvrez ou créez un projet de modélisation, puis ouvrez ou créez un diagramme de modélisation.  
   
-3.  Créez un élément de modèle tel qu'une classe UML, et attribuez-lui un nom.  
+3. Créez un élément de modèle tel qu'une classe UML, et attribuez-lui un nom.  
   
-4.  Cliquez sur l’élément, puis cliquez sur **créer un élément de travail**.  
+4. Cliquez sur l’élément, puis cliquez sur **créer un élément de travail**.  
   
-    -   Si le sous-menu affiche **ouvrir la connexion Team Foundation Server**, vous devez fermer le projet, vous connecter au TFS approprié et recommencer cette procédure.  
+    - Si le sous-menu affiche **ouvrir la connexion Team Foundation Server**, vous devez fermer le projet, vous connecter au TFS approprié et recommencer cette procédure.  
   
-    -   Si le sous-menu affiche une liste de types d’éléments de travail, cliquez sur l’un d’entre eux.  
+    - Si le sous-menu affiche une liste de types d’éléments de travail, cliquez sur l’un d’entre eux.  
   
          Un nouveau formulaire d'élément de travail s'ouvre.  
   
-5.  Vérifiez que le titre de l’élément de travail est le même que celui de l’élément de modèle si vous avez utilisé l’exemple de code donné dans la section précédente. Cela prouve que `OnWorkItemCreated()` a correctement fonctionné.  
+5. Vérifiez que le titre de l’élément de travail est le même que celui de l’élément de modèle si vous avez utilisé l’exemple de code donné dans la section précédente. Cela prouve que `OnWorkItemCreated()` a correctement fonctionné.  
   
-6.  Complétez le formulaire, puis enregistrez et fermez l'élément de travail.  
+6. Complétez le formulaire, puis enregistrez et fermez l'élément de travail.  
   
-7.  Vérifiez que l’élément de travail est maintenant de couleur rouge. Cela met en évidence `OnWorkItemLinked()` dans l'exemple de code.  
+7. Vérifiez que l’élément de travail est maintenant de couleur rouge. Cela met en évidence `OnWorkItemLinked()` dans l'exemple de code.  
   
      **Résolution des problèmes**: Si les méthodes de gestionnaire n’ont pas été exécutés, vérifiez que :  
   
-    -   Le projet de bibliothèque de classes est répertorié en tant que composant MEF dans le **contenu** liste **source.extensions.manifest** dans le projet VSIX.  
+    - Le projet de bibliothèque de classes est répertorié en tant que composant MEF dans le **contenu** liste **source.extensions.manifest** dans le projet VSIX.  
   
-    -   l'attribut `Export` approprié est associé à la classe de gestionnaire et la classe implémente `ILinkedWorkItemExtension` ;  
+    - l'attribut `Export` approprié est associé à la classe de gestionnaire et la classe implémente `ILinkedWorkItemExtension` ;  
   
-    -   les paramètres de tous les attributs `Import` et `Export` sont valides.  
+    - les paramètres de tous les attributs `Import` et `Export` sont valides.  
   
 ## <a name="about-the-work-item-handler-code"></a>À propos du code du gestionnaire d’éléments de travail  
   
@@ -237,9 +237,9 @@ public void OnWorkItemRemoved
   
  Pour utiliser l'exemple suivant, ajoutez ces assemblys .NET aux références de votre projet :  
   
--   Microsoft.TeamFoundation.Client.dll  
+- Microsoft.TeamFoundation.Client.dll  
   
--   Microsoft.TeamFoundation.WorkItemTracking.Client.dll  
+- Microsoft.TeamFoundation.WorkItemTracking.Client.dll  
   
 ```  
   

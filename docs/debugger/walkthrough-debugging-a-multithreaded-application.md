@@ -23,59 +23,59 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77c51d2466cc7382e98b0d0d82efff14f817a98e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: d55d4ae23b2fd8bf03e6aa9ad7301531aedcfcac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699442"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107760"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Afficher les threads dans le débogueur Visual Studio à l’aide de la fenêtre Threads (C#, Visual Basic, C++)
-Dans le **Threads** fenêtre, vous pouvez examiner et utiliser les threads de l’application que vous déboguez. Pour obtenir des instructions sur la façon d’utiliser le **Threads** fenêtre, consultez [procédure pas à pas : déboguer à l’aide de la fenêtre Threads](../debugger/how-to-use-the-threads-window.md).
+Dans le **Threads** fenêtre, vous pouvez examiner et utiliser les threads de l’application que vous déboguez. Pour obtenir des instructions sur la façon d’utiliser le **Threads** fenêtre, consultez [procédure pas à pas : Déboguer à l’aide de la fenêtre Threads](../debugger/how-to-use-the-threads-window.md).
 
 ## <a name="use-the-threads-window"></a>Utiliser la fenêtre Threads
  Le **Threads** fenêtre contient un tableau où chaque ligne décrit un thread distinct dans votre application. Par défaut, ce tableau répertorie tous les threads de votre application, mais vous pouvez filtrer la liste de façon à afficher uniquement les threads qui vous intéressent. Chaque colonne décrit un type différent d’informations. Vous pouvez également masquer certaines colonnes. Si vous affichez toutes les colonnes, les colonnes suivantes s’affichent, de gauche à droite :
 
-- **Indicateur**: dans cet article sans étiquette, vous pouvez marquer un thread auquel vous souhaitez une attention particulière. Pour plus d’informations sur la façon de signaler un thread, consultez [Comment : indicateur et supprimer des threads](../debugger/how-to-flag-and-unflag-threads.md).
+- **Indicateur**: Dans cet article sans étiquette, vous pouvez marquer un thread auquel vous souhaitez une attention particulière. Pour plus d’informations sur la façon de signaler un thread, consultez [Comment : Et supprimer les indicateurs threads](../debugger/how-to-flag-and-unflag-threads.md).
 
-- **Thread actuel**: dans cet article sans étiquette, une flèche jaune indique que le thread actuel. Un contour de flèche indique le contexte actuel du débogueur pour un thread non actuel.
+- **Thread actuel**: Dans cet article sans étiquette, une flèche jaune indique que le thread actuel. Un contour de flèche indique le contexte actuel du débogueur pour un thread non actuel.
 
-- **ID**: affiche le numéro d’identification pour chaque thread.
+- **ID**: Affiche le numéro d’identification pour chaque thread.
 
-- **ID géré**: affiche les numéros d’identification managés des threads managés.
+- **ID géré**: Affiche les numéros d’identification managés des threads managés.
 
-- **Catégorie**: affiche la catégorie de threads comme threads d’interface utilisateur, gestionnaires d’appel de procédure distante ou threads de travail. Une catégorie spéciale identifie le thread principal de l'application.
+- **Catégorie**: Affiche la catégorie de threads comme threads d’interface utilisateur, gestionnaires d’appel de procédure distante ou threads de travail. Une catégorie spéciale identifie le thread principal de l'application.
 
-- **Nom**: identifie chaque thread par son nom, le cas échéant, ou en tant que \<sans nom >.
+- **Nom**: Identifie chaque thread par son nom, le cas échéant, ou en tant que \<sans nom >.
 
-- **Emplacement**: montre où le thread est en cours d’exécution. Vous pouvez développer cet emplacement de façon à afficher l’ensemble de la pile des appels du thread.
+- **emplacement**: Indique où le thread est en cours d’exécution. Vous pouvez développer cet emplacement de façon à afficher l’ensemble de la pile des appels du thread.
 
-- **Priorité**: une colonne avancée (masquée par défaut) affiche la priorité ou précédence que le système a assignée à chaque thread.
+- **Priorité**: Une colonne avancée (masquée par défaut) affiche la priorité ou précédence que le système a assignée à chaque thread.
 
-- **Masque d’affinité**: une colonne avancée (masquée par défaut) indique le masque d’affinité de processeur pour chaque thread. Dans un système multiprocesseurs, le masque d'affinité détermine les processeurs sur lesquels un thread peut s'exécuter.
+- **Masque d’affinité**: Une colonne avancée (masquée par défaut), qui affiche le masque d’affinité de processeur pour chaque thread. Dans un système multiprocesseurs, le masque d'affinité détermine les processeurs sur lesquels un thread peut s'exécuter.
 
-- **Compteur suspendu**: une colonne avancée (masquée par défaut) qui affiche le compteur suspendu. Ce compteur détermine si un thread peut s'exécuter. Pour plus d’informations sur les calculs suspendus, consultez [figer et libérer les threads](#freeze-and-thaw-threads).
+- **Compteur suspendu**: Une colonne avancée (masquée par défaut) affiche le compteur suspendu. Ce compteur détermine si un thread peut s'exécuter. Pour plus d’informations sur les calculs suspendus, consultez [figer et libérer les threads](#freeze-and-thaw-threads).
 
-- **Nom du processus**: une colonne avancée (masquée par défaut) affiche le processus auquel chaque thread appartient. Les données de cette colonne peuvent être utiles lorsque vous déboguez plusieurs processus.
+- **Nom du processus**: Une colonne avancée (masquée par défaut) affiche le processus auquel chaque thread appartient. Les données de cette colonne peuvent être utiles lorsque vous déboguez plusieurs processus.
 
-- **ID de processus**: ID d’une colonne avancée (masquée par défaut) affiche le processus auquel chaque thread appartient.
+- **ID de processus**: Une colonne avancée (masquée par défaut) qui affiche l’ID de processus auquel chaque thread appartient.
 
-- **Qualificateur de transport**: une colonne avancée (masquée par défaut) qui identifie de façon unique l’ordinateur auquel le débogueur est connecté.
+- **Qualificateur de transport**: Une colonne avancée (masquée par défaut) qui identifie de façon unique identifie l’ordinateur auquel le débogueur est connecté.
 
 ### <a name="to-display-the-threads-window-in-break-mode-or-run-mode"></a>Pour afficher la fenêtre Threads en mode arrêt ou en mode exécution
 
--   Lorsque Visual Studio est en mode débogage, sélectionnez le **déboguer** menu, pointez sur **Windows**, puis sélectionnez **Threads**.
+- Lorsque Visual Studio est en mode débogage, sélectionnez le **déboguer** menu, pointez sur **Windows**, puis sélectionnez **Threads**.
 
 ### <a name="to-display-or-hide-a-column"></a>Pour afficher ou masquer une colonne
 
--   Dans la barre d’outils en haut de la **Threads** fenêtre, sélectionnez **colonnes**. Ensuite, activez ou désactivez le nom de la colonne que vous souhaitez afficher ou masquer.
+- Dans la barre d’outils en haut de la **Threads** fenêtre, sélectionnez **colonnes**. Ensuite, activez ou désactivez le nom de la colonne que vous souhaitez afficher ou masquer.
 
 ## <a name="display-flagged-threads"></a>Afficher les threads avec indicateur
- Vous pouvez signaler un thread auquel vous souhaitez accorder une attention particulière en le marquant avec une icône dans la fenêtre **Threads**. Pour plus d’informations, consultez [Comment : ajouter et supprimer les indicateurs des threads](../debugger/how-to-flag-and-unflag-threads.md). Dans la fenêtre **Threads**, vous pouvez choisir d’afficher tous les threads ou uniquement les threads avec indicateur.
+ Vous pouvez signaler un thread auquel vous souhaitez accorder une attention particulière en le marquant avec une icône dans la fenêtre **Threads**. Pour plus d'informations, voir [Procédure : ajouter et supprimer les indicateurs des threads](../debugger/how-to-flag-and-unflag-threads.md). Dans la fenêtre **Threads**, vous pouvez choisir d’afficher tous les threads ou uniquement les threads avec indicateur.
 
 ### <a name="to-display-only-flagged-threads"></a>Pour afficher seulement les threads avec indicateur
 
--   Choisissez **afficher les Threads avec indicateur uniquement** dans la barre d’outils en haut de la **Threads** fenêtre. (Si elle est grisée, vous devez signaler tout d’abord des certains threads.)
+- Choisissez **afficher les Threads avec indicateur uniquement** dans la barre d’outils en haut de la **Threads** fenêtre. (Si elle est grisée, vous devez signaler tout d’abord des certains threads.)
 
 ## <a name="freeze-and-thaw-threads"></a>Figer et libérer les threads
  Lorsque vous gelez un thread, le système ne démarre pas l’exécution du thread même si les ressources sont disponibles.
@@ -89,7 +89,7 @@ Dans le **Threads** fenêtre, vous pouvez examiner et utiliser les threads de l�
 
 ### <a name="to-freeze-or-thaw-execution-of-a-thread"></a>Pour geler ou libérer l'exécution d'un thread
 
--   Dans la barre d’outils en haut de la **Threads** fenêtre, sélectionnez **figer les Threads** ou **libérer les Threads**.
+- Dans la barre d’outils en haut de la **Threads** fenêtre, sélectionnez **figer les Threads** ou **libérer les Threads**.
 
      Cette action affecte uniquement les threads sélectionnés dans la fenêtre **Threads**.
 
@@ -99,11 +99,11 @@ Une flèche jaune indique le thread actuel (et l’emplacement du pointeur d’e
 
 #### <a name="to-switch-to-another-thread"></a>Pour basculer vers un autre thread
 
--   Suivre une des étapes suivantes :
+- Suivre une des étapes suivantes :
 
-    -   Double-cliquez sur un thread.
+    - Double-cliquez sur un thread.
 
-    -   Cliquez sur un thread et sélectionnez **commutateur à Thread**.
+    - Cliquez sur un thread et sélectionnez **commutateur à Thread**.
 
 ## <a name="group-and-sort-threads"></a>Regrouper et trier des threads
  Lorsque vous regroupez des threads, un titre s'affiche dans le tableau pour chaque groupe. Ce titre contient une description du groupe, telle que **Thread de travail** ou **Threads sans indicateur**, ainsi qu’un contrôle d’arborescence. Les threads membres de chaque groupe apparaissent sous le titre approprié. Si vous souhaitez masquer les threads membres d’un groupe, utilisez le contrôle d’arborescence pour réduire ce groupe.
@@ -112,29 +112,29 @@ Une flèche jaune indique le thread actuel (et l’emplacement du pointeur d’e
 
 ### <a name="to-sort-threads"></a>Pour trier des threads
 
-1.  Dans la barre d’outils en haut de la **Threads** fenêtre, sélectionnez le bouton en haut de n’importe quelle colonne.
+1. Dans la barre d’outils en haut de la **Threads** fenêtre, sélectionnez le bouton en haut de n’importe quelle colonne.
 
      Les threads sont alors triés en fonction des valeurs de la colonne choisie.
 
-2.  Si vous souhaitez inverser l’ordre de tri, sélectionnez à nouveau le même bouton.
+2. Si vous souhaitez inverser l’ordre de tri, sélectionnez à nouveau le même bouton.
 
      Les threads qui figuraient au début de la liste s'affichent maintenant à la fin.
 
 ### <a name="to-group-threads"></a>Pour regrouper des threads
 
--   Dans le **Threads** barre d’outils, sélectionnez le **Group by** liste, puis sélectionnez les critères que vous souhaitez le regroupement des threads.
+- Dans le **Threads** barre d’outils, sélectionnez le **Group by** liste, puis sélectionnez les critères que vous souhaitez le regroupement des threads.
 
 ### <a name="to-sort-threads-within-groups"></a>Pour trier des threads au sein de groupes
 
-1.  Dans la barre d’outils en haut de la **Threads** fenêtre, sélectionnez le **Group by** liste, puis sélectionnez les critères que vous souhaitez le regroupement des threads.
+1. Dans la barre d’outils en haut de la **Threads** fenêtre, sélectionnez le **Group by** liste, puis sélectionnez les critères que vous souhaitez le regroupement des threads.
 
-2.  Dans le **Threads** fenêtre, sélectionnez le bouton en haut de n’importe quelle colonne.
+2. Dans le **Threads** fenêtre, sélectionnez le bouton en haut de n’importe quelle colonne.
 
      Les threads sont alors triés en fonction des valeurs de la colonne choisie.
 
 ### <a name="to-expand-or-collapse-all-groups"></a>Pour développer ou réduire tous les groupes
 
--   Dans la barre d’outils en haut de la **Threads** fenêtre, sélectionnez **développez groupes** ou **réduire les groupes**.
+- Dans la barre d’outils en haut de la **Threads** fenêtre, sélectionnez **développez groupes** ou **réduire les groupes**.
 
 ## <a name="search-for-specific-threads"></a>Rechercher des threads spécifiques
  Vous pouvez rechercher des threads qui correspondent à une chaîne spécifiée dans le **Threads** fenêtre. Lorsque vous recherchez des threads, la fenêtre affiche tous les threads correspondant à la chaîne de recherche dans n’importe quelle colonne. Ces informations incluent l’emplacement de thread qui s’affiche en haut de la pile des appels dans la colonne **Emplacement**. Par défaut, la pile des appels complète n’est pas l’objet d’une recherche.
@@ -159,13 +159,13 @@ Dans un programme multithread, chaque thread possède sa propre pile d'appel. La
 
 ### <a name="to-view-the-call-stack-of-a-thread"></a>Pour afficher la pile d'appel d'un thread
 
--   Dans le **emplacement** colonne, sélectionnez le triangle inversé en regard de l’emplacement de thread.
+- Dans le **emplacement** colonne, sélectionnez le triangle inversé en regard de l’emplacement de thread.
 
      L’emplacement se développe pour indiquer la pile des appels du thread.
 
 ### <a name="to-view-or-collapse-the-call-stacks-of-all-threads"></a>Pour afficher ou réduire les piles d‘appels de tous les threads
 
--   Dans la barre d’outils en haut de la **Threads** fenêtre, sélectionnez **développer la pile des appels** ou **réduire la pile des appels**.
+- Dans la barre d’outils en haut de la **Threads** fenêtre, sélectionnez **développer la pile des appels** ou **réduire la pile des appels**.
 
 ## <a name="see-also"></a>Voir aussi
 - [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)

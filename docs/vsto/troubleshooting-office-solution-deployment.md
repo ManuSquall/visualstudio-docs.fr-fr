@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6773e73eaa4d6d53bbfa63e26b66f56553910444
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 418a1a22979b701ec1d1d32521f7f89e2c5274eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54872259"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088091"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Résoudre les problèmes de déploiement de solutions Office
   Cette rubrique contient des informations sur la résolution des problèmes courants que vous pouvez rencontrer lorsque vous déployez des solutions Office.
@@ -43,11 +43,11 @@ ms.locfileid: "54872259"
 
 #### <a name="to-set-the-time-out-value"></a>Pour définir la valeur du délai d’attente
 
-1.  Dans le Registre, accédez à la clé suivante :
+1. Dans le Registre, accédez à la clé suivante :
 
      **HKEY_CURRENT_USER\Software\Microsoft\VSTA**
 
-2.  Dans la sous-clé **AddInTimeout** , définissez la valeur du délai d’attente en millisecondes.
+2. Dans la sous-clé **AddInTimeout** , définissez la valeur du délai d’attente en millisecondes.
 
      Si la sous-clé **AddInTimeout** n’existe pas, créez-la comme valeur DWORD.
 

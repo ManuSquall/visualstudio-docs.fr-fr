@@ -9,12 +9,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cd8b160eca8b3a7e628ed9eda199c0b26fe38c14
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 619b64578c5fd626f9ffa8cfca8f777fdc1c93a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648653"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105723"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>Procédure : Attacher le Profiler à une Application Web ASP.NET pour collecter des statistiques d’applications en utilisant la ligne de commande
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,9 +44,9 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
 
     **VSPerfClrEnv /globalsampleon** [**/samplelineoff**]  
 
-   -   **/globalsampleon** permet l’échantillonnage.  
+   - **/globalsampleon** permet l’échantillonnage.  
 
-   -   **/samplelineoff** désactive l’assignation des données collectées à des lignes de code source spécifiques. Lorsque cette option est spécifiée, les données sont assignées uniquement aux fonctions.  
+   - **/samplelineoff** désactive l’assignation des données collectées à des lignes de code source spécifiques. Lorsque cette option est spécifiée, les données sont assignées uniquement aux fonctions.  
 
 3. Redémarrez l'ordinateur.  
 
@@ -73,9 +73,9 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
 
 6. Attachez le profileur au processus de travail ASP.NET. Tapez :**VSPerfCmd** [/attach](../profiling/attach.md)**:**{`PID`&#124;`ProcName`} [`Sample Event`] [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
 
-   -   `PID` spécifie l’ID de processus du processus de travail ASP.NET ; `ProcName` spécifie le nom du processus de travail. Vous pouvez afficher les ID et les noms de processus de tous les processus en cours d’exécution dans le Gestionnaire des tâches de Windows.  
+   - `PID` spécifie l’ID de processus du processus de travail ASP.NET ; `ProcName` spécifie le nom du processus de travail. Vous pouvez afficher les ID et les noms de processus de tous les processus en cours d’exécution dans le Gestionnaire des tâches de Windows.  
 
-   -   Par défaut, les données de performances sont échantillonnées tous les 10 000 000 cycles d’horloge ininterrompus du processeur. Ceci représente environ 100 fois par seconde sur un processeur à 1 GHz. Vous pouvez spécifier une des options de **VSPerfCmd** suivantes pour modifier l’intervalle de cycles d’horloge ou pour spécifier un autre événement d’échantillonnage.  
+   - Par défaut, les données de performances sont échantillonnées tous les 10 000 000 cycles d’horloge ininterrompus du processeur. Ceci représente environ 100 fois par seconde sur un processeur à 1 GHz. Vous pouvez spécifier une des options de **VSPerfCmd** suivantes pour modifier l’intervalle de cycles d’horloge ou pour spécifier un autre événement d’échantillonnage.  
 
    |Événement d'échantillon|Description|  
    |------------------|-----------------|  
@@ -85,14 +85,14 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
    |[/counter](../profiling/counter.md) **:** `Config`|Remplace l’événement et l’intervalle d’échantillonnage par le compteur de performances du processeur et l’intervalle spécifié dans `Config`.|  
    |[/targetclr](../profiling/targetclr.md) **:** `Version`|Spécifie la version du common language runtime (CLR) à profiler lorsque plusieurs versions du runtime sont chargées dans une application.|  
 
-   -   **/targetclr:** `Version` spécifie la version du CLR à profiler lorsque plusieurs versions du runtime sont chargées dans une application. Facultatif.  
+   - **/targetclr:** `Version` spécifie la version du CLR à profiler lorsque plusieurs versions du runtime sont chargées dans une application. Optionnel.  
 
 ## <a name="controlling-data-collection"></a>Contrôle de la collection de données  
  Pendant l’exécution de l’application, vous pouvez contrôler la collecte des données en démarrant et en arrêtant l’écriture des données dans le fichier avec les options de **VSPerfCmd.exe**. Le fait de pouvoir contrôler la collecte vous permet de collecter des données pour une phase spécifique de l’exécution du programme, telle que le démarrage ou l’arrêt de l’application.  
 
 #### <a name="to-start-and-stop-data-collection"></a>Pour démarrer et arrêter la collecte de données  
 
--   Les paires d’options **VSPerfCmd** suivantes permettent de démarrer et d’arrêter la collecte des données. Spécifiez chaque option sur une ligne de commande distincte. Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.  
+- Les paires d’options **VSPerfCmd** suivantes permettent de démarrer et d’arrêter la collecte des données. Spécifiez chaque option sur une ligne de commande distincte. Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.  
 
     |Option|Description|  
     |------------|-----------------|  
@@ -109,21 +109,21 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
 
 #### <a name="to-end-a-profiling-session"></a>Pour terminer une session de profilage  
 
-1.  Effectuez une des opérations suivantes pour détacher le profileur de l’application cible :  
+1. Effectuez une des opérations suivantes pour détacher le profileur de l’application cible :  
 
-    -   Tapez **VSPerfCmd /detach**  
+    - Tapez **VSPerfCmd /detach**  
 
          - ou -  
 
-    -   Fermez le processus de travail [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
+    - Fermez le processus de travail [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
 
-2.  Fermez le profileur. Tapez :**VSPerfCmd** [/shutdown](../profiling/shutdown.md)  
+2. Fermez le profileur. Tapez :**VSPerfCmd** [/shutdown](../profiling/shutdown.md)  
 
-3.  (Facultatif) Effacez les variables d’environnement de profilage. Type :  
+3. (Facultatif) Effacez les variables d’environnement de profilage. Type :  
 
      **VSPerfCmd /globaloff**  
 
-4.  Redémarrez l'ordinateur.  
+4. Redémarrez l'ordinateur.  
 
 ## <a name="see-also"></a>Voir aussi  
  [Profilage d’applications web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

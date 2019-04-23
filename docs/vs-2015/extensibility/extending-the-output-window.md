@@ -10,12 +10,12 @@ ms.assetid: b02fa88c-f92a-4ff6-ba5f-2eb4d48a643a
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0e4fe3b07a2a076218fd004328ad87e4d5e3bab7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2788903c60564d501770616fbe3ad2335e60a250
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949828"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105407"
 ---
 # <a name="extending-the-output-window"></a>Extension de la fenêtre Sortie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,22 +27,22 @@ Le **sortie** fenêtre est un ensemble de volets de texte en lecture/écriture. 
 ## <a name="creating-an-extension-that-uses-the-output-pane"></a>Création d’une Extension qui utilise le volet de sortie  
  Vous pouvez créer une extension qui exécute les différents aspects du volet sortie.  
   
-1.  Créez un projet VSIX nommé `TestOutput` avec une commande de menu nommée **Testouput**. Pour plus d’informations, consultez [création d’une Extension avec une commande de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1. Créez un projet VSIX nommé `TestOutput` avec une commande de menu nommée **Testouput**. Pour plus d’informations, consultez [création d’une Extension avec une commande de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  Ajoutez les références suivantes :  
+2. Ajoutez les références suivantes :  
   
-    1.  EnvDTE  
+    1. EnvDTE  
   
-    2.  EnvDTE80  
+    2. EnvDTE80  
   
-3.  Dans TestOutput.cs, ajoutez le code suivant à l’aide d’instruction :  
+3. Dans TestOutput.cs, ajoutez le code suivant à l’aide d’instruction :  
   
     ```f#  
     using EnvDTE;  
     using EnvDTE80;  
     ```  
   
-4.  Dans TestOutput.cs, supprimez la méthode ShowMessageBox. Ajoutez le stub de méthode suivant :  
+4. Dans TestOutput.cs, supprimez la méthode ShowMessageBox. Ajoutez le stub de méthode suivant :  
   
     ```csharp  
     private void OutputCommandHandler(object sender, EventArgs e)  
@@ -50,7 +50,7 @@ Le **sortie** fenêtre est un ensemble de volets de texte en lecture/écriture. 
     }  
     ```  
   
-5.  Dans le constructeur Testouput, modifiez le Gestionnaire de commandes à OutputCommandHandler. Voici la partie qui ajoute les commandes :  
+5. Dans le constructeur Testouput, modifiez le Gestionnaire de commandes à OutputCommandHandler. Voici la partie qui ajoute les commandes :  
   
     ```csharp  
     OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;  
@@ -63,7 +63,7 @@ Le **sortie** fenêtre est un ensemble de volets de texte en lecture/écriture. 
     }  
     ```  
   
-6.  Les sections ci-dessous proposent des méthodes qui montrent différentes manières de traiter avec le volet de sortie. Vous pouvez appeler ces méthodes au corps de la méthode OutputCommandHandler(). Par exemple, le code suivant ajoute la méthode CreatePane() donnée dans la section suivante.  
+6. Les sections ci-dessous proposent des méthodes qui montrent différentes manières de traiter avec le volet de sortie. Vous pouvez appeler ces méthodes au corps de la méthode OutputCommandHandler(). Par exemple, le code suivant ajoute la méthode CreatePane() donnée dans la section suivante.  
   
     ```csharp  
     private void OutputCommandHandler(object sender, EventArgs e)  

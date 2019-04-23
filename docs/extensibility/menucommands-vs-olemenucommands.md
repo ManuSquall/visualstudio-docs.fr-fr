@@ -8,12 +8,12 @@ helpviewer_keywords:
 - menus, creating commands
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 manager: jillfra
-ms.openlocfilehash: 52ca70a0a3c4e129063c5d861fd4692dcd85cc9c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 83d528efd499615c92db163aed4d0b8881e75fdf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335497"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086011"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommands Vs. OleMenuCommands
 Vous pouvez créer des commandes de menu en dérivant de <xref:System.ComponentModel.Design.MenuCommand> ou à partir de <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> de l’objet et l’implémentation de gestionnaires d’événements appropriés. Dans la plupart des cas, vous pouvez utiliser <xref:System.ComponentModel.Design.MenuCommand>, à l’instar du modèle de projet VSPackage, mais vous pouvez parfois être amené à utiliser <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.
@@ -63,9 +63,9 @@ Vous pouvez créer des commandes de menu en dérivant de <xref:System.ComponentM
    </Button>
    ```
 
-   1.  Définissez les champs `guid` et `id` de façon à les faire correspondre à la paire GUID:ID de la nouvelle commande.
+   1. Définissez les champs `guid` et `id` de façon à les faire correspondre à la paire GUID:ID de la nouvelle commande.
 
-   2.  Définissez l’attribut `priority` .
+   2. Définissez l’attribut `priority` .
 
         L’attribut `priority` est utilisé par le fichier .vsct pour déterminer l’emplacement du bouton parmi les autres objets présents dans son groupe parent.
 
@@ -73,7 +73,7 @@ Vous pouvez créer des commandes de menu en dérivant de <xref:System.ComponentM
 
         Si vous omettez l’attribut `priority` , la valeur 0 lui est affectée.
 
-   3.  Définissez l’attribut `type` . Dans la plupart des cas, sa valeur est `"Button"`. Pour obtenir une description des autres types de boutons valides, consultez [élément Button](../extensibility/button-element.md).
+   3. Définissez l’attribut `type` . Dans la plupart des cas, sa valeur est `"Button"`. Pour obtenir une description des autres types de boutons valides, consultez [élément Button](../extensibility/button-element.md).
 
 5. Dans la définition du bouton, créez un élément [Strings](../extensibility/strings-element.md) contenant un élément [ButtonText](../extensibility/buttontext-element.md) . Celui-ci contiendra le nom du menu tel qu’il apparaîtra dans l’IDE. Créez ensuite un élément [CommandName](../extensibility/commandname-element.md) qui contiendra le nom de la commande utilisé pour accéder au menu de la fenêtre **Commande** .
 
@@ -127,11 +127,11 @@ Vous pouvez créer des commandes de menu en dérivant de <xref:System.ComponentM
 
  Pour le code qui utilise directement l’interface <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> pour la gestion des commandes, vous devez implémenter l’interface <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> et ses méthodes. Les deux méthodes les plus importants sont <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> et <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>.
 
-1.  Obtenez l’instance de <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> , comme le montre l’exemple suivant.
+1. Obtenez l’instance de <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> , comme le montre l’exemple suivant.
 
      [!code-csharp[ButtonGroup#21](../extensibility/codesnippet/CSharp/menucommands-vs-olemenucommands_5.cs)]
 
-2.  Créez un objet <xref:System.ComponentModel.Design.CommandID> ayant pour paramètres le GUID et l’ID de la commande à gérer, comme le montre l’exemple suivant.
+2. Créez un objet <xref:System.ComponentModel.Design.CommandID> ayant pour paramètres le GUID et l’ID de la commande à gérer, comme le montre l’exemple suivant.
 
      [!code-csharp[ButtonGroup#22](../extensibility/codesnippet/CSharp/menucommands-vs-olemenucommands_6.cs)]
 
@@ -139,7 +139,7 @@ Vous pouvez créer des commandes de menu en dérivant de <xref:System.ComponentM
 
      Une autre solution consiste à remplir l’objet <xref:System.ComponentModel.Design.CommandID> en utilisant la valeur de chaîne brute du GUID et la valeur entière de l’ID.
 
-3.  Instanciez un objet <xref:System.ComponentModel.Design.MenuCommand> ou <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> qui spécifie la méthode chargée de gérer la commande en même temps que le <xref:System.ComponentModel.Design.CommandID>, comme l’illustre l’exemple suivant.
+3. Instanciez un objet <xref:System.ComponentModel.Design.MenuCommand> ou <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> qui spécifie la méthode chargée de gérer la commande en même temps que le <xref:System.ComponentModel.Design.CommandID>, comme l’illustre l’exemple suivant.
 
      [!code-csharp[ButtonGroup#23](../extensibility/codesnippet/CSharp/menucommands-vs-olemenucommands_7.cs)]
 
@@ -147,7 +147,7 @@ Vous pouvez créer des commandes de menu en dérivant de <xref:System.ComponentM
 
      Les commandes créées par le modèle de package sont passés par défaut à un objet <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> dans la méthode `Initialize()` de la classe de package.
 
-4.  L’objet <xref:System.ComponentModel.Design.MenuCommand> est tout indiqué pour les commandes statiques. L’affichage des éléments de menu dynamique nécessite des gestionnaires d’événements QueryStatus. L’objet <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> ajoute l’événement <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> , qui se produit quand le menu hôte de la commande est ouvert, ainsi que d’autres propriétés, telles que <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>.
+4. L’objet <xref:System.ComponentModel.Design.MenuCommand> est tout indiqué pour les commandes statiques. L’affichage des éléments de menu dynamique nécessite des gestionnaires d’événements QueryStatus. L’objet <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> ajoute l’événement <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> , qui se produit quand le menu hôte de la commande est ouvert, ainsi que d’autres propriétés, telles que <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>.
 
      Les commandes créées par le modèle de package sont passés par défaut à un objet <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> dans la méthode `Initialize()` de la classe de package. L’Assistant de Visual Studio implémente la méthode `Initialize` en utilisant `MenuCommand`. Pour l’affichage des éléments de menu dynamique, vous devez remplacer ce dernier par `OleMenuCommand`, comme indiqué dans l’étape suivante. De plus, pour modifier le texte d’un élément de menu, vous devez ajouter un indicateur de commande TextChanges au bouton de commande de menu dans le fichier .vsct, comme le montre l’exemple suivant.
 
@@ -164,11 +164,11 @@ Vous pouvez créer des commandes de menu en dérivant de <xref:System.ComponentM
     </Button>
     ```
 
-5.  Passez la nouvelle commande de menu à la méthode <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> de l’interface <xref:System.ComponentModel.Design.IMenuCommandService> . Cette tâche s’exécute par défaut pour les commandes créées par le modèle de package, comme l’illustre l’exemple suivant.
+5. Passez la nouvelle commande de menu à la méthode <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> de l’interface <xref:System.ComponentModel.Design.IMenuCommandService> . Cette tâche s’exécute par défaut pour les commandes créées par le modèle de package, comme l’illustre l’exemple suivant.
 
      [!code-csharp[ButtonGroup#24](../extensibility/codesnippet/CSharp/menucommands-vs-olemenucommands_9.cs)]
 
-6.  Implémentez la méthode qui gère la commande.
+6. Implémentez la méthode qui gère la commande.
 
 ### <a name="to-implement-querystatus"></a>Pour implémenter QueryStatus
 
@@ -247,11 +247,11 @@ Vous pouvez créer des commandes de menu en dérivant de <xref:System.ComponentM
 
 #### <a name="to-implement-the-exec-method"></a>Pour implémenter la méthode Exec
 
--   Si la commande `GUID` est inconnue, retournez `OLECMDERR_E_UNKNOWNGROUP`.
+- Si la commande `GUID` est inconnue, retournez `OLECMDERR_E_UNKNOWNGROUP`.
 
--   Si le `GUID` est connu, mais que l’ID de commande est inconnu, retournez `OLECMDERR_E_NOTSUPPORTED`.
+- Si le `GUID` est connu, mais que l’ID de commande est inconnu, retournez `OLECMDERR_E_NOTSUPPORTED`.
 
--   Si le `GUID` et ID de commande correspond à la paire GUID : ID qui est utilisée par la commande dans le *.vsct* de fichiers, exécutez le code qui est associé à la commande et retournez <xref:Microsoft.VisualStudio.VSConstants.S_OK>.
+- Si le `GUID` et ID de commande correspond à la paire GUID : ID qui est utilisée par la commande dans le *.vsct* de fichiers, exécutez le code qui est associé à la commande et retournez <xref:Microsoft.VisualStudio.VSConstants.S_OK>.
 
 ## <a name="see-also"></a>Voir aussi
 

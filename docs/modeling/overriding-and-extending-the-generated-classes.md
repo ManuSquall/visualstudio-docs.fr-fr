@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d3c90d955ba412a75005ab47627c1901df57891
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9aa4f39fb54617ae1dbf048a1e13f009c8df5185
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936978"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085623"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>Remplacer et étendre les classes générées
 
@@ -54,9 +54,9 @@ Néanmoins, vous pouvez substituer ces méthodes en définissant le **génère u
 
 Par exemple, dans l’exemple Library.dsl, le `CirculationBook` de classe de domaine a la `Generates``Double Derived` propriété définie sur `true`. Le code généré pour cette classe de domaine contient deux classes :
 
--   `CirculationBookBase`, qui est abstraite et qui contient toutes les méthodes et propriétés.
+- `CirculationBookBase`, qui est abstraite et qui contient toutes les méthodes et propriétés.
 
--   `CirculationBook`, qui est dérivée de `CirculationBookBase`. Il est vide, à l’exception de ses constructeurs.
+- `CirculationBook`, qui est dérivée de `CirculationBookBase`. Il est vide, à l’exception de ses constructeurs.
 
 Pour remplacer n’importe quelle méthode, vous créez une définition partielle de la classe dérivée comme `CirculationBook`. Vous pouvez remplacer les méthodes générées et les méthodes héritées de l’infrastructure de modélisation.
 

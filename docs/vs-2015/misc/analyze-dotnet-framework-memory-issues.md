@@ -10,12 +10,12 @@ ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6f2a0680c117aa5982fb0e44144e74c5fef76faa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 75a51cbe851b6566ab210a3c8ae12a9b7c2e0d2b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949052"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107656"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>Analyser des problèmes de mémoire liés à .NET Framework
 Vous pouvez identifier les fuites et l'utilisation inefficace de la mémoire dans le code .NET Framework à l'aide de l'analyseur de mémoire managée de Visual Studio. La version minimale de .NET Framework du code cible est .NET Framework 4.5.  
@@ -28,7 +28,7 @@ Vous pouvez identifier les fuites et l'utilisation inefficace de la mémoire dan
   
   Pour obtenir une description de l’Analyseur de mémoire managée, consultez [à l’aide de Visual Studio 2013 pour diagnostiquer des problèmes de mémoire .NET en Production](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx) sur Visual Studio ALM + Team Foundation Server blog.  
   
-##  <a name="BKMK_Contents"></a> Sommaire  
+## <a name="BKMK_Contents"></a> Sommaire  
  [Utilisation de la mémoire dans les applications .NET Framework](#BKMK_Memory_use_in__NET_Framework_apps)  
   
  [Identifier un problème de mémoire dans une application](#BKMK_Identify_a_memory_issue_in_an_app)  
@@ -37,7 +37,7 @@ Vous pouvez identifier les fuites et l'utilisation inefficace de la mémoire dan
   
  [Analyser l’utilisation de la mémoire](#BKMK_Analyze_memory_use)  
   
-##  <a name="BKMK_Memory_use_in__NET_Framework_apps"></a> Utilisation de la mémoire dans les applications .NET Framework  
+## <a name="BKMK_Memory_use_in__NET_Framework_apps"></a> Utilisation de la mémoire dans les applications .NET Framework  
  .NET Framework étant un runtime avec Garbage Collection, dans la plupart des applications l'utilisation de la mémoire n'est pas un problème. Par contre, avec les applications de longue durée telles que les applications et les services web, et sur les appareils avec une quantité de mémoire limitée, l'accumulation d'objets en mémoire peut avoir un impact sur les performances de l'application et de l'appareil. Une utilisation excessive de la mémoire peut priver l'application et l'ordinateur de ressources si le garbage collector s'exécute trop souvent ou si le système d'exploitation est contraint de déplacer de la mémoire entre la RAM et le disque. Dans le pire des cas, une application peut se bloquer avec une exception « Mémoire insuffisante ».  
   
  .NET *tas managé* est une région de mémoire virtuelle où sont stockés les objets de référence créés par une application. La durée de vie des objets est gérée par le garbage collector. Le garbage collector utilise des références pour effectuer le suivi des objets qui occupent des blocs de mémoire. Une référence est créée quand un objet est créé et assigné à une variable. Un même objet peut avoir plusieurs références. Par exemple, des références supplémentaires à un objet peuvent être créées en ajoutant l’objet à une classe, une collection ou autre structure de données ou en assignant l’objet à une seconde variable. Une référence peut aussi être créée quand un objet ajoute un gestionnaire à l'événement d'un autre objet. Dans ce cas, le second objet contient la référence au premier jusqu'à ce que le gestionnaire soit supprimé de manière explicite ou que le second objet soit détruit.  
@@ -46,7 +46,7 @@ Vous pouvez identifier les fuites et l'utilisation inefficace de la mémoire dan
   
  ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
-##  <a name="BKMK_Identify_a_memory_issue_in_an_app"></a> Identifier un problème de mémoire dans une application  
+## <a name="BKMK_Identify_a_memory_issue_in_an_app"></a> Identifier un problème de mémoire dans une application  
  Le symptôme le plus visible des problèmes de mémoire est le niveau de performances de votre application, en particulier s'il diminue au fil du temps. Une dégradation des performances d'autres applications pendant que votre application est en cours d'exécution peut également indiquer qu'il existe un problème de mémoire. Si vous suspectez un problème de mémoire, utilisez un outil tel que le Gestionnaire de tâches ou [Analyseur de performances Windows](http://technet.microsoft.com/library/cc749249.aspx) pour approfondir vos recherches. Par exemple, une augmentation de la taille totale de mémoire que vous ne pouvez pas expliquer peut être envisagée comme une source possible de fuites de mémoire :  
   
  ![Croissance constante de la mémoire dans le moniteur de ressource](../misc/media/mngdmem-resourcemanagerconsistentgrowth.png "MNGDMEM_ResourceManagerConsistentGrowth")  
@@ -55,7 +55,7 @@ Vous pouvez identifier les fuites et l'utilisation inefficace de la mémoire dan
   
  ![Pics de mémoire dans le Gestionnaire de ressources](../misc/media/mngdmem-resourcemanagerspikes.png "MNGDMEM_ResourceManagerSpikes")  
   
-##  <a name="BKMK_Collect_memory_snapshots"></a> Collecter les instantanés de mémoire  
+## <a name="BKMK_Collect_memory_snapshots"></a> Collecter les instantanés de mémoire  
  Analyse les informations contenues dans l’outil d’analyse de mémoire *fichiers dump* qui contiennent des informations sur le tas. Vous pouvez créer des fichiers de vidage dans Visual Studio, ou vous pouvez utiliser un outil tel que [ProcDump](http://technet.microsoft.com/sysinternals/dd996900.aspx) de [Windows Sysinternals](http://technet.microsoft.com/sysinternals). Consultez [qu’est un fichier de vidage, et comment en créer une ?](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) sur le blog de l’équipe de débogage Visual Studio.  
   
 > [!NOTE]
@@ -75,7 +75,7 @@ Vous pouvez identifier les fuites et l'utilisation inefficace de la mémoire dan
   
    ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
-##  <a name="BKMK_Analyze_memory_use"></a> Analyser l’utilisation de la mémoire  
+## <a name="BKMK_Analyze_memory_use"></a> Analyser l’utilisation de la mémoire  
  [Filtrer la liste des objets](#BKMK_Filter_the_list_of_objects) **&#124;** [analyser les données de mémoire d’un seul instantané](#BKMK_Analyze_memory_data_in_from_a_single_snapshot) **&#124;** [comparer deux mémoire captures instantanées](#BKMK_Compare_two_memory_snapshots)  
   
  Pour analyser un fichier dump à la recherche de problèmes de mémoire  
@@ -90,7 +90,7 @@ Vous pouvez identifier les fuites et l'utilisation inefficace de la mémoire dan
   
    ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
-###  <a name="BKMK_Filter_the_list_of_objects"></a> Filtrer la liste des objets  
+### <a name="BKMK_Filter_the_list_of_objects"></a> Filtrer la liste des objets  
  Par défaut, l'analyseur de mémoire filtre la liste d'objets dans un instantané de la mémoire pour afficher uniquement les types et instances codés par un utilisateur et uniquement les types dont la taille inclusive totale dépasse un seuil de pourcentage de la taille totale du tas. Vous pouvez modifier ces options dans le **afficher les paramètres** liste :  
   
 |||  
@@ -102,7 +102,7 @@ Vous pouvez identifier les fuites et l'utilisation inefficace de la mémoire dan
   
  ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
-###  <a name="BKMK_Analyze_memory_data_in_from_a_single_snapshot"></a> Analyser les données de mémoire d’un seul instantané  
+### <a name="BKMK_Analyze_memory_data_in_from_a_single_snapshot"></a> Analyser les données de mémoire d’un seul instantané  
  Visual Studio démarre une nouvelle session de débogage pour analyser le fichier et affiche les données de mémoire dans une fenêtre Affichage du tas.  
   
  ![La liste Type d’objet](../misc/media/dbg-mma-objecttypelist.png "DBG_MMA_ObjectTypeList")  
@@ -137,9 +137,9 @@ Vous pouvez identifier les fuites et l'utilisation inefficace de la mémoire dan
   
 #### <a name="paths-to-root"></a>Chemins d’accès à la racine  
   
--   Pour un type sélectionné dans le **Type d’objet** table, le **chemins d’accès à la racine** tableau montre les hiérarchies de type unique qui mènent aux objets racines pour tous les objets du type, ainsi que le nombre de références à la type qui est au-dessus de lui dans la hiérarchie.  
+- Pour un type sélectionné dans le **Type d’objet** table, le **chemins d’accès à la racine** tableau montre les hiérarchies de type unique qui mènent aux objets racines pour tous les objets du type, ainsi que le nombre de références à la type qui est au-dessus de lui dans la hiérarchie.  
   
--   Pour un objet sélectionné à partir de l’instance d’un type, **chemins d’accès à la racine** affiche un graphique des objets qui contiennent une référence à l’instance. Vous pouvez placer le pointeur de la souris sur le nom de l'objet pour afficher ses valeurs de données dans une bulle d'informations.  
+- Pour un objet sélectionné à partir de l’instance d’un type, **chemins d’accès à la racine** affiche un graphique des objets qui contiennent une référence à l’instance. Vous pouvez placer le pointeur de la souris sur le nom de l'objet pour afficher ses valeurs de données dans une bulle d'informations.  
   
 #### <a name="referenced-types--referenced-objects"></a>Types référencés / Objets référencés  
   
@@ -168,7 +168,7 @@ Vous pouvez identifier les fuites et l'utilisation inefficace de la mémoire dan
 |**Handle SizedRef**|Handle fort qui conserve une taille approximative de la fermeture collective de tous les objets et racines d’objets au moment du Garbage Collection.|  
 |**Variable locale épinglée**|Variable locale épinglée.|  
   
-###  <a name="BKMK_Compare_two_memory_snapshots"></a> Comparer deux instantanés de mémoire  
+### <a name="BKMK_Compare_two_memory_snapshots"></a> Comparer deux instantanés de mémoire  
  Vous pouvez comparer deux fichiers dump d'un processus pour rechercher les objets susceptibles de provoquer des fuites de mémoire. L'intervalle entre la collecte du premier fichier (plus ancien) et du second fichier (plus récent) doit être suffisamment élevé pour que l'augmentation du nombre d'objets ayant fuit soit facile à détecter. Pour comparer deux fichiers  
   
 1. Ouvrez le fichier de vidage deuxième, puis choisissez **déboguer la mémoire managée** sur le **résumé du fichier Minidump** page.  

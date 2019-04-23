@@ -11,21 +11,21 @@ ms.assetid: b6b3dee7-91c5-4556-9f69-0d56b675e83b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 677047dbe66577548b10fc2b5c6a7eaeedbfaa67
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 097d666a839f67e657610b34641ed29da91797be
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948094"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085855"
 ---
 # <a name="private-galleries"></a>Private Galleries
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez partager des contrôles, des modèles et des outils que vous développez en les envoyant à un *galerie privée* sur l’intranet pour votre organisation, comme suit :  
   
--   Créer une source vers un emplacement central (référentiel) configuré correctement sur votre intranet Atom (RSS). Pour plus d'informations, voir [Procédure : Créer un atome de flux pour une galerie privée](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md).  
+- Créer une source vers un emplacement central (référentiel) configuré correctement sur votre intranet Atom (RSS). Pour plus d'informations, voir [Procédure : Créer un atome de flux pour une galerie privée](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md).  
   
--   Distribuer un fichier .pkgdef qui décrit la galerie privée. Nous recommandons cette configuration pour les administrateurs qui souhaitent se connecter une galerie privée à de nombreux ordinateurs en même temps.  
+- Distribuer un fichier .pkgdef qui décrit la galerie privée. Nous recommandons cette configuration pour les administrateurs qui souhaitent se connecter une galerie privée à de nombreux ordinateurs en même temps.  
   
 ## <a name="adding-a-private-gallery-to-extensions-and-updates-in-visual-studio"></a>Ajout d’une galerie privée à Extensions et mises à jour dans Visual Studio  
  Lorsqu’une galerie privée est disponible, vous pouvez l’ajouter à **Extensions et mises à jour** dans Visual Studio.  
@@ -34,19 +34,19 @@ Vous pouvez partager des contrôles, des modèles et des outils que vous dévelo
   
 #### <a name="to-add-a-private-gallery-to-extensions-and-updates"></a>Pour ajouter une galerie privée aux Extensions et mises à jour  
   
-1.  Dans la barre de menus, sélectionnez **Outils**, **Options**.  
+1. Dans la barre de menus, sélectionnez **Outils**, **Options**.  
   
-2.  Dans le **environnement** nœud, sélectionnez **Extensions et mises à jour**.  
+2. Dans le **environnement** nœud, sélectionnez **Extensions et mises à jour**.  
   
-3.  Choisissez le bouton **Ajouter** .  
+3. Choisissez le bouton **Ajouter** .  
   
-4.  Dans le **nom** , entrez un nom pour la galerie privée, par exemple, `My Gallery`.  
+4. Dans le **nom** , entrez un nom pour la galerie privée, par exemple, `My Gallery`.  
   
-5.  Dans le **URL** , entrez l’URL du flux Atom ou du site SharePoint qui héberge la galerie privée.  
+5. Dans le **URL** , entrez l’URL du flux Atom ou du site SharePoint qui héberge la galerie privée.  
   
-    1.  Si l’hôte est un flux Atom qui se connecte à la galerie privée, l’URL peut se présenter comme celle-ci : http://www.mywebsite/mygallery/atom.xml.  Cette URL peut faire référence à un fichier ou un chemin d’accès réseau.  
+    1. Si l’hôte est un flux Atom qui se connecte à la galerie privée, l’URL peut se présenter comme celle-ci : http://www.mywebsite/mygallery/atom.xml.  Cette URL peut faire référence à un fichier ou un chemin d’accès réseau.  
   
-    2.  Si l’hôte est un site SharePoint, l’URL peut se présenter comme celle-ci : http://mysharepoint/sites/mygallery/forms/AllItems.aspx.  
+    2. Si l’hôte est un site SharePoint, l’URL peut se présenter comme celle-ci : http://mysharepoint/sites/mygallery/forms/AllItems.aspx.  
   
 ### <a name="managing-private-galleries"></a>La gestion des galeries privées  
  Un administrateur peut proposer une galerie privée à plusieurs ordinateurs en même temps en modifiant le Registre système sur chaque ordinateur. Pour ce faire, créez un fichier .pkgdef qui décrit les nouvelles clés de Registre et leurs valeurs.  Le format de ce fichier est le suivant.  
@@ -72,11 +72,11 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 #### <a name="to-search-for-and-install-extensions-from-a-private-gallery"></a>Pour rechercher et installer des extensions à partir d’une galerie privée  
   
-1.  Dans la barre de menus, choisissez **Outils**, puis **Extensions et mises à jour**.  
+1. Dans la barre de menus, choisissez **Outils**, puis **Extensions et mises à jour**.  
   
-2.  Dans le volet gauche, sélectionnez **des Extensions en ligne**, puis sélectionnez **ma galerie**.  
+2. Dans le volet gauche, sélectionnez **des Extensions en ligne**, puis sélectionnez **ma galerie**.  
   
-3.  Dans le volet droit, sélectionnez une extension, puis choisissez le **télécharger** bouton.  
+3. Dans le volet droit, sélectionnez une extension, puis choisissez le **télécharger** bouton.  
   
 ## <a name="updating-extensions-from-a-private-gallery"></a>La mise à jour des Extensions à partir d’une galerie privée  
  Comme les nouvelles versions des extensions Visual Studio sont publiées dans la galerie privée, vous pouvez mettre à jour les extensions que vous avez installée. Les étapes suivantes utilisent une galerie privée nommée `My Repository`.  
@@ -85,11 +85,11 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 #### <a name="to-update-an-installed-extension-from-a-private-gallery"></a>Pour mettre à jour une extension installée à partir d’une galerie privée  
   
-1.  Dans la barre de menus, choisissez **Outils**, puis **Extensions et mises à jour**.  
+1. Dans la barre de menus, choisissez **Outils**, puis **Extensions et mises à jour**.  
   
-2.  Dans le volet gauche, sélectionnez **mises à jour**, puis sélectionnez **mon référentiel**.  
+2. Dans le volet gauche, sélectionnez **mises à jour**, puis sélectionnez **mon référentiel**.  
   
-3.  Dans le volet droit, sélectionnez une extension, puis choisissez le **mise à jour** bouton.  
+3. Dans le volet droit, sélectionnez une extension, puis choisissez le **mise à jour** bouton.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Recherche et utilisation des Extensions Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)   

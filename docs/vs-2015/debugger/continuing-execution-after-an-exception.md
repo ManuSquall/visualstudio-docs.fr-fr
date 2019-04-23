@@ -29,17 +29,17 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 37a285a48ec58ddeaeae55601565c155d0455402
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a43983846263fa49a7ff501b0d87c460990e8a37
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950535"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105471"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Poursuite de l'exécution à la suite d'une exception
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Lorsque le débogueur arrête l'exécution à cause d'une exception, une boîte de dialogue apparaît. Pour Visual Basic ou C#, vous verrez la [Assistant Exception](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb) boîte de dialogue, par défaut. Pour C++, vous verrez l’ancien **Exception** boîte de dialogue. Si vous utilisez Visual Basic ou C# mais que vous avez désactivé la **Assistant Exception** dans le **Options** boîte de dialogue, vous verrez la **Exception** boîte de dialogue.  
+Lorsque le débogueur arrête l'exécution à cause d'une exception, une boîte de dialogue apparaît. Pour Visual Basic ou c#, vous verrez la [Assistant Exception](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb) boîte de dialogue, par défaut. Pour C++, vous verrez l’ancien **Exception** boîte de dialogue. Si vous utilisez Visual Basic ou c# mais que vous avez désactivé la **Assistant Exception** dans le **Options** boîte de dialogue, vous verrez la **Exception** boîte de dialogue.  
   
  Lorsque le **Assistant Exception** ou **Exception** boîte de dialogue s’affiche, vous pouvez essayer de résoudre le problème qui a provoqué l’exception.  
   
@@ -49,9 +49,9 @@ Lorsque le débogueur arrête l'exécution à cause d'une exception, une boîte 
 ## <a name="native-code"></a>Code natif  
  En C/C++ natif, vous avez deux options :  
   
--   Vous pouvez cliquer sur **rompre** et essayer de résoudre le problème. Lorsque vous êtes en mode arrêt, vous pouvez dérouler la pile des appels en cliquant sur un frame dans la **pile des appels** fenêtre et en sélectionnant **dérouler sur ce Frame** dans le menu contextuel. Si vous continuez à déboguer, le **Exception** boîte de dialogue s’affiche à nouveau si vous n’avez pas résolu le problème. Sinon, le **Exception** boîte de dialogue ne réapparaisse pas.  
+- Vous pouvez cliquer sur **rompre** et essayer de résoudre le problème. Lorsque vous êtes en mode arrêt, vous pouvez dérouler la pile des appels en cliquant sur un frame dans la **pile des appels** fenêtre et en sélectionnant **dérouler sur ce Frame** dans le menu contextuel. Si vous continuez à déboguer, le **Exception** boîte de dialogue s’affiche à nouveau si vous n’avez pas résolu le problème. Sinon, le **Exception** boîte de dialogue ne réapparaisse pas.  
   
--   Vous pouvez cliquer sur **continuer** pour continuer l’exécution sans essayer de résoudre le problème. Le **Exception** boîte de dialogue réapparaît.  
+- Vous pouvez cliquer sur **continuer** pour continuer l’exécution sans essayer de résoudre le problème. Le **Exception** boîte de dialogue réapparaît.  
   
 ## <a name="mixed-code"></a>Code mixte  
  Si une exception non gérée se produit durant le débogage d'un code mixte natif et managé, les contraintes du système d'exploitation empêchent le déroulement de la pile des appels. Si vous essayez de rembobiner la pile des appels via le menu contextuel, un message d'erreur explique que le débogueur ne peut pas dérouler à partir d'une exception non gérée lors du débogage de code mixte.  

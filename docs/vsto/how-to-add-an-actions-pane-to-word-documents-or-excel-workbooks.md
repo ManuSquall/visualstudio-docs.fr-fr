@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4b33a3f7980031a84e381a317213de988280517c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f1d72d3da8adeff7b8280bda84eb92b730679fea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598225"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085842"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Procédure : Ajouter un volet Actions à des documents Word ou à des classeurs Excel
   Pour ajouter un volet actions à un document Microsoft Office Word ou un classeur Microsoft Excel, tout d’abord créer un contrôle utilisateur Windows Forms. Ensuite, ajoutez le contrôle utilisateur à la <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> propriété de la `ThisDocument.ActionsPane` champ (Word) ou `ThisWorkbook.ActionsPane` champ (Excel) dans votre projet.
@@ -35,26 +35,26 @@ ms.locfileid: "56598225"
 
 #### <a name="to-create-the-user-control"></a>Pour créer le contrôle utilisateur
 
-1.  Ouvrez votre projet au niveau du document Word ou Excel dans Visual Studio.
+1. Ouvrez votre projet au niveau du document Word ou Excel dans Visual Studio.
 
-2.  Dans le menu **Projet** , cliquez sur **Ajouter un nouvel élément**.
+2. Dans le menu **Projet** , cliquez sur **Ajouter un nouvel élément**.
 
-3.  Dans le **ajouter un nouvel élément** boîte de dialogue, sélectionnez **contrôle de volet Actions**, nommez-le **HelloControl**, puis cliquez sur **ajouter**.
+3. Dans le **ajouter un nouvel élément** boîte de dialogue, sélectionnez **contrôle de volet Actions**, nommez-le **HelloControl**, puis cliquez sur **ajouter**.
 
     > [!NOTE]
     >  Vous pouvez également ajouter un **contrôle utilisateur** élément à votre projet. Les classes générées par le **contrôle de volet Actions** et **contrôle utilisateur** éléments sont fonctionnellement équivalents.
 
-4.  À partir de la **Windows Forms** onglet de la **boîte à outils,** faites glisser un **bouton** contrôle sur le contrôle.
+4. À partir de la **Windows Forms** onglet de la **boîte à outils,** faites glisser un **bouton** contrôle sur le contrôle.
 
     > [!NOTE]
     >  Si le contrôle n’est pas visible dans le concepteur, double-cliquez sur **HelloControl** dans **l’Explorateur de solutions**.
 
-5.  Ajoutez le code à la <xref:System.Windows.Forms.Control.Click> Gestionnaire d’événements du bouton. L’exemple suivant montre le code d’un document Microsoft Office Word.
+5. Ajoutez le code à la <xref:System.Windows.Forms.Control.Click> Gestionnaire d’événements du bouton. L’exemple suivant montre le code d’un document Microsoft Office Word.
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#12](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/HelloControl.cs#12)]
      [!code-vb[Trin_VstcoreActionsPaneWord#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/HelloControl.vb#12)]
 
-6.  En c#, vous devez ajouter un gestionnaire d’événements pour le clic de bouton. Vous pouvez placer ce code dans le `HelloControl` constructeur après l’appel à `InitializeComponent`.
+6. En c#, vous devez ajouter un gestionnaire d’événements pour le clic de bouton. Vous pouvez placer ce code dans le `HelloControl` constructeur après l’appel à `InitializeComponent`.
 
      Pour plus d’informations sur la création de gestionnaires d’événements, consultez [Comment : Créer des gestionnaires d’événements dans les projets Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
@@ -65,12 +65,12 @@ ms.locfileid: "56598225"
 
 ### <a name="to-add-the-user-control-to-the-actions-pane"></a>Pour ajouter le contrôle utilisateur au volet actions
 
-1.  Ajoutez le code suivant à la `ThisDocument` ou `ThisWorkbook` classe comme une déclaration de niveau classe (n’ajoutez pas ce code à une méthode).
+1. Ajoutez le code suivant à la `ThisDocument` ou `ThisWorkbook` classe comme une déclaration de niveau classe (n’ajoutez pas ce code à une méthode).
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#14](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#14)]
      [!code-vb[Trin_VstcoreActionsPaneWord#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#14)]
 
-2.  Ajoutez le code suivant à la `ThisDocument_Startup` Gestionnaire d’événements de la `ThisDocument` classe ou le `ThisWorkbook_Startup` Gestionnaire d’événements de la `ThisWorkbook` classe.
+2. Ajoutez le code suivant à la `ThisDocument_Startup` Gestionnaire d’événements de la `ThisDocument` classe ou le `ThisWorkbook_Startup` Gestionnaire d’événements de la `ThisWorkbook` classe.
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#15](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#15)]
      [!code-vb[Trin_VstcoreActionsPaneWord#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#15)]

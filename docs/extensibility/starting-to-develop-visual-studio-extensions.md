@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ffee39765d28306509ebe3a2ba30e8fabb79cf80
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 08db2532cd5524dad5762bc244137ebb87939860
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042775"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107155"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Commencer à développer des Extensions Visual Studio
 
@@ -47,40 +47,40 @@ En théorie, vous pouvez étendre n’importe quelle partie de Visual Studio : 
 
 Dans la pratique, nous avons découvert que les fonctionnalités que la plupart des gens souhaitent étendre sont des commandes, menus et barres d’outils, windows, IntelliSense et projets. Voici des liens vers les sections correspondantes :
 
--   [Extension des Menus et commandes](../extensibility/extending-menus-and-commands.md): ajouter vos propres éléments de menus de Visual Studio et les barres d’outils. Vous pouvez les utiliser pour lancer de nouvelles fonctionnalités de Visual Studio ou de vos propres applications d’assistance externe. Vous pouvez également fournir des raccourcis personnalisés pour vos éléments de menu.
+- [Extension des Menus et commandes](../extensibility/extending-menus-and-commands.md): ajouter vos propres éléments de menus de Visual Studio et les barres d’outils. Vous pouvez les utiliser pour lancer de nouvelles fonctionnalités de Visual Studio ou de vos propres applications d’assistance externe. Vous pouvez également fournir des raccourcis personnalisés pour vos éléments de menu.
 
--   [Extension et personnalisation de Windows d’outil](../extensibility/extending-and-customizing-tool-windows.md): étendre des fenêtres Outil existantes ou créer vos propres fenêtres Outil. Par exemple, vous pouvez ajouter de nouvelles propriétés à la **propriétés**, ou vous pouvez créer une nouvelle fenêtre d’outil pour ajouter des fonctionnalités supplémentaires.
+- [Extension et personnalisation de Windows d’outil](../extensibility/extending-and-customizing-tool-windows.md): étendre des fenêtres Outil existantes ou créer vos propres fenêtres Outil. Par exemple, vous pouvez ajouter de nouvelles propriétés à la **propriétés**, ou vous pouvez créer une nouvelle fenêtre d’outil pour ajouter des fonctionnalités supplémentaires.
 
--   [Éditeur et les Extensions de Service de langage](../extensibility/editor-and-language-service-extensions.md): ajouter vos propres personnalisations les IntelliSense fournis pour les langages de Visual Studio, ou créer de prise en charge de nouveaux langages de programmation. Vous pouvez créer le nouveau complément automatique des instructions, des suggestions et nouvelle info-bulles Info Express. Avec des ampoules, vous pouvez ajouter des suggestions de refactorisation et correctifs de code pour prendre en charge de nouveaux langages de programmation.
+- [Éditeur et les Extensions de Service de langage](../extensibility/editor-and-language-service-extensions.md): ajouter vos propres personnalisations les IntelliSense fournis pour les langages de Visual Studio, ou créer de prise en charge de nouveaux langages de programmation. Vous pouvez créer le nouveau complément automatique des instructions, des suggestions et nouvelle info-bulles Info Express. Avec des ampoules, vous pouvez ajouter des suggestions de refactorisation et correctifs de code pour prendre en charge de nouveaux langages de programmation.
 
--   [Extension des projets](../extensibility/extending-projects.md)
+- [Extension des projets](../extensibility/extending-projects.md)
 
--   [Extension des options et des paramètres utilisateur](../extensibility/extending-user-settings-and-options.md)
+- [Extension des options et des paramètres utilisateur](../extensibility/extending-user-settings-and-options.md)
 
--   [Extension des propriétés et la fenêtre Propriétés](../extensibility/extending-properties-and-the-property-window.md)
+- [Extension des propriétés et la fenêtre Propriétés](../extensibility/extending-properties-and-the-property-window.md)
 
--   [Extension d’autres parties de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
+- [Extension d’autres parties de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
 
--   [Shell isolé Visual Studio](/visualstudio/extensibility/shell/visual-studio-isolated-shell)
+- [Shell isolé Visual Studio](/visualstudio/extensibility/shell/visual-studio-isolated-shell)
 
-##  <a name="BKMK_ProjectTemplate"></a> Les modèles de projet sont fournies par l’extensibilité Visual Studio ?
+## <a name="BKMK_ProjectTemplate"></a> Les modèles de projet sont fournies par l’extensibilité Visual Studio ?
  Les deux principaux types d’extensions sont des VSPackages et des extensions MEF. En règle générale, les extensions VSPackage sont utilisées pour les extensions qui utilisent ou étendent des commandes, les fenêtres Outil et les projets. Extensions MEF sont utilisées pour étendre ou personnaliser l’éditeur Visual Studio.
 
- Pour les extensions de Visual C# et Visual Basic, l’extensibilité Visual Studio fournit un modèle de projet VSIX vide que vous pouvez utiliser avec les nouveaux modèles d’élément qui créent des commandes de menu, les fenêtres Outil et les extensions de l’éditeur. Vous pouvez également utiliser ce modèle pour les modèles de projet de package, les extraits de code et les autres artefacts pour la distribution à d’autres utilisateurs.
+ Pour les extensions de Visual c# et Visual Basic, l’extensibilité Visual Studio fournit un modèle de projet VSIX vide que vous pouvez utiliser avec les nouveaux modèles d’élément qui créent des commandes de menu, les fenêtres Outil et les extensions de l’éditeur. Vous pouvez également utiliser ce modèle pour les modèles de projet de package, les extraits de code et les autres artefacts pour la distribution à d’autres utilisateurs.
 
  Pour C++, l’Assistant package Visual Studio fournit le code pour ajouter des commandes de menu, les fenêtres Outil et les éditeurs personnalisés.
 
  Le modèle de Shell isolé est utilisé pour un package d’extension dans une version de l’interpréteur de commandes de Visual Studio que vous pouvez personnaliser et distribuer en tant que les vôtres. Les rubriques suivantes vous montrent comment bien démarrer avec chaque type d’extension :
 
--   Commandes de menu : [Création d’une extension avec une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md)
+- Commandes de menu : [Création d’une extension avec une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
--   Fenêtres d’outil : [Création d’une extension avec une fenêtre d’outil](../extensibility/creating-an-extension-with-a-tool-window.md)
+- Fenêtres d’outil : [Création d’une extension avec une fenêtre d’outil](../extensibility/creating-an-extension-with-a-tool-window.md)
 
--   Extensions de l’éditeur : [Création d’une extension avec un modèle d’élément d’éditeur](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+- Extensions de l’éditeur : [Création d’une extension avec un modèle d’élément d’éditeur](../extensibility/creating-an-extension-with-an-editor-item-template.md)
 
--   Packages VS de base : [Création d’une extension avec un package VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
+- Packages VS de base : [Création d’une extension avec un package VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
--   Modèle de projet VSIX : [Bien démarrer avec le modèle de projet VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)
+- Modèle de projet VSIX : [Bien démarrer avec le modèle de projet VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)
 
 ## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>Comment obtenir mon extension ressemble à Visual Studio ?
  Obtenir des conseils pour la conception de l’interface utilisateur pour votre extension dans [recommandations pour l’expérience utilisateur Visual Studio](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).

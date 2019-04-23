@@ -11,12 +11,12 @@ ms.assetid: 1bf11fec-dece-4943-8053-6de1483c43eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 319d889d2763662cda92d815ce45a3becfcab8cf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8c2b993a6c6947adfa3b01f2947b992b23236b8f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938611"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106122"
 ---
 # <a name="creating-options-pages"></a>Création de pages Options
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ Dans le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] infrastructure de packag
   
  Étant donné que l’environnement instancie l’objet qui implémente un particulier **Outils/Options** page lorsque cette page est affichée par l’IDE :  
   
--   Un **Option outils** page doit être implémentée sur son propre objet et non sur l’objet qui implémente un VSPackage.  
+- Un **Option outils** page doit être implémentée sur son propre objet et non sur l’objet qui implémente un VSPackage.  
   
--   Un objet ne peut pas implémenter plusieurs **Outils/Options** pages.  
+- Un objet ne peut pas implémenter plusieurs **Outils/Options** pages.  
   
 ## <a name="registering-as-a-tools-options-page-provider"></a>L’inscription d’un fournisseur de Page d’Options Outils  
  Une configuration utilisateur prise en charge de VSPackage via **Outils/Options** pages indique les objets fournissant ces **Outils/Options** pages en appliquant des instances de <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> appliquée à la <xref:Microsoft.VisualStudio.Shell.Package>implémentation.  

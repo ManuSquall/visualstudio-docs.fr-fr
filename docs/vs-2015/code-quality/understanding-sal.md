@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 847631d28febe81be2e688b7c643ed1f4cfcba18
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e4c9884517120647e8d0d5bff263496900c2318c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954045"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104016"
 ---
 # <a name="understanding-sal"></a>Présentation de SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,15 +124,15 @@ wchar_t * wmemcpy(
 ### <a name="example-the-in-annotation"></a>Exemple : Le \_dans\_ Annotation  
  Le `_In_` annotation indique que :  
   
--   Le paramètre doit être valide et ne sera pas modifié.  
+- Le paramètre doit être valide et ne sera pas modifié.  
   
--   La fonction lit uniquement à partir de la mémoire tampon seul élément.  
+- La fonction lit uniquement à partir de la mémoire tampon seul élément.  
   
--   L’appelant doit fournir la mémoire tampon et l’initialiser.  
+- L’appelant doit fournir la mémoire tampon et l’initialiser.  
   
--   `_In_` Spécifie « read-only ». Une erreur courante consiste à appliquer `_In_` à un paramètre qui doit avoir le `_Inout_` annotation à la place.  
+- `_In_` Spécifie « read-only ». Une erreur courante consiste à appliquer `_In_` à un paramètre qui doit avoir le `_Inout_` annotation à la place.  
   
--   `_In_` est autorisé mais ignoré par l’Analyseur de valeurs scalaires non pointeur.  
+- `_In_` est autorisé mais ignoré par l’Analyseur de valeurs scalaires non pointeur.  
   
 ```cpp  
 void InCallee(_In_ int *pInt)  

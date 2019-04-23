@@ -11,12 +11,12 @@ ms.assetid: e94a4fea-94df-488e-8560-9538413422bc
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ec19e71685fc2a866f23d5050861e5733ef6cb39
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 324e74c78f01da47c544b5f640ad0bd9052a1bb4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948814"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107643"
 ---
 # <a name="subscribing-to-an-event"></a>Abonnement à un événement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ Cette procédure pas à pas explique comment créer une fenêtre outil qui répo
   
 #### <a name="to-create-an-extension-with-a-tool-window"></a>Pour créer une extension avec une fenêtre outil  
   
-1.  Créez un projet nommé **RDTExplorer** en utilisant le modèle VSIX et ajouter un modèle d’élément de fenêtre outil personnalisé nommé **RDTExplorerWindow**.  
+1. Créez un projet nommé **RDTExplorer** en utilisant le modèle VSIX et ajouter un modèle d’élément de fenêtre outil personnalisé nommé **RDTExplorerWindow**.  
   
      Pour plus d’informations sur la création d’une extension avec une fenêtre outil, consultez [création d’une Extension avec une fenêtre outil](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
 #### <a name="to-subscribe-to-rdt-events"></a>Pour vous abonner aux événements RDT  
   
-1.  Ouvrez le fichier RDTExplorerWindowControl.xaml et supprimez le bouton nommé `button1`. Ajouter un <xref:System.Windows.Forms.ListBox> contrôler et acceptez le nom par défaut. L’élément Grid doit ressembler à ceci :  
+1. Ouvrez le fichier RDTExplorerWindowControl.xaml et supprimez le bouton nommé `button1`. Ajouter un <xref:System.Windows.Forms.ListBox> contrôler et acceptez le nom par défaut. L’élément Grid doit ressembler à ceci :  
   
     ```xml  
     <Grid>  
@@ -47,7 +47,7 @@ Cette procédure pas à pas explique comment créer une fenêtre outil qui répo
     </Grid>  
     ```  
   
-2.  Ouvrez le fichier RDTExplorerWindow.cs en mode code. Ajoutez le code suivant à l’aide d’instructions au début du fichier.  
+2. Ouvrez le fichier RDTExplorerWindow.cs en mode code. Ajoutez le code suivant à l’aide d’instructions au début du fichier.  
   
     ```csharp  
     using Microsoft.VisualStudio;  
@@ -55,24 +55,24 @@ Cette procédure pas à pas explique comment créer une fenêtre outil qui répo
     using Microsoft.VisualStudio.Shell.Interop;  
     ```  
   
-3.  Modifier le `RDTExplorerWindow` , classe qui, en plus de la dérivation à partir de la <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> (classe), il implémente le <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> interface.  
+3. Modifier le `RDTExplorerWindow` , classe qui, en plus de la dérivation à partir de la <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> (classe), il implémente le <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> interface.  
   
     ```csharp  
     public class RDTExplorerWindow : ToolWindowPane, IVsRunningDocTableEvents  
     {. . .}  
     ```  
   
-4.  Implémentez <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>.  
+4. Implémentez <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>.  
   
-    -   Implémentez l’interface. Placez le curseur sur le nom de IVsRunningDocTableEvents. Vous devez voir une ampoule dans la marge de gauche. Cliquez sur la flèche à droite de l’ampoule, puis sélectionnez **implémenter l’interface**.  
+    - Implémentez l’interface. Placez le curseur sur le nom de IVsRunningDocTableEvents. Vous devez voir une ampoule dans la marge de gauche. Cliquez sur la flèche à droite de l’ampoule, puis sélectionnez **implémenter l’interface**.  
   
-5.  Dans chaque méthode dans l’interface, remplacez la ligne `throw new NotImplementedException();` avec ce :  
+5. Dans chaque méthode dans l’interface, remplacez la ligne `throw new NotImplementedException();` avec ce :  
   
     ```csharp  
     return VSConstants.S_OK;  
     ```  
   
-6.  Ajoutez un champ de cookie à la classe RDTExplorerWindow.  
+6. Ajoutez un champ de cookie à la classe RDTExplorerWindow.  
   
     ```csharp  
     private uint rdtCookie;   
@@ -80,7 +80,7 @@ Cette procédure pas à pas explique comment créer une fenêtre outil qui répo
   
      Cela maintient le cookie qui est retourné par la <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> (méthode).  
   
-7.  Substituez la méthode de Initialize() de la RDTExplorerWindow pour enregistrer les événements RDT. Vous devez toujours obtenir les services dans la méthode Initialize() du ToolWindowPane, pas dans le constructeur.  
+7. Substituez la méthode de Initialize() de la RDTExplorerWindow pour enregistrer les événements RDT. Vous devez toujours obtenir les services dans la méthode Initialize() du ToolWindowPane, pas dans le constructeur.  
   
     ```csharp  
     protected override void Initialize()  
@@ -93,7 +93,7 @@ Cette procédure pas à pas explique comment créer une fenêtre outil qui répo
   
      Le <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable> service est appelé pour obtenir un <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable> interface. Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> méthode connecte des événements RDT à un objet qui implémente <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>, dans ce cas, un objet RDTExplorer.  
   
-8.  Mettre à jour de la méthode de Dispose() du RDTExplorerWindow.  
+8. Mettre à jour de la méthode de Dispose() du RDTExplorerWindow.  
   
     ```csharp  
     protected override void Dispose(bool disposing)  

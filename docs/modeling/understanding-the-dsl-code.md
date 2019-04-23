@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab82a563d5b5dce373394f9f83e883e2d2ee1129
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 9d8ce41d6532a7c389d20872c35a216a96910578
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416017"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087767"
 ---
 # <a name="understanding-the-dsl-code"></a>Fonctionnement du code DSL
 
@@ -45,15 +45,15 @@ Appuyez sur **F5** et faire des essais si vous n’êtes pas familiarisé avec c
 
  Nous vous recommandons vivement de ne pas modifier le code généré directement, car vos modifications seront perdues quand vous regénérerez la solution. Au lieu de cela, pour personnaliser votre DSL :
 
--   Ajustez les nombreux paramètres dans la définition DSL.
+- Ajustez les nombreux paramètres dans la définition DSL.
 
--   Écrivez des classes partielles dans des fichiers de code distincts pour substituer les méthodes qui sont définies dans, ou héritées par, les classes générées. Dans certains cas, vous devez définir le **génère une Double dérivée** option d’une classe dans la définition DSL, afin d’être en mesure de substituer une méthode générée.
+- Écrivez des classes partielles dans des fichiers de code distincts pour substituer les méthodes qui sont définies dans, ou héritées par, les classes générées. Dans certains cas, vous devez définir le **génère une Double dérivée** option d’une classe dans la définition DSL, afin d’être en mesure de substituer une méthode générée.
 
--   Définissez les options dans la définition DSL qui amène le code généré fournir des « raccordements » pour votre propre code.
+- Définissez les options dans la définition DSL qui amène le code généré fournir des « raccordements » pour votre propre code.
 
      Par exemple, si vous définissez la **a un constructeur personnalisé** option d’une classe de domaine et puis générez la solution, vous verrez des messages d’erreur. Quand vous double-cliquez sur l'un de ces messages d'erreur, des commentaires s'affichent dans le code généré pour expliquer ce que votre code personnalisé doit fournir.
 
--   Écrivez vos propres modèles de texte pour générer du code spécifique à votre application. Vous pouvez utiliser des fichiers include pour partager des parties de modèles qui sont communes à de nombreux projets, et vous pouvez créer des modèles de projet Visual Studio pour configurer des projets qui sont initialisés avec votre propre structure de fichiers.
+- Écrivez vos propres modèles de texte pour générer du code spécifique à votre application. Vous pouvez utiliser des fichiers include pour partager des parties de modèles qui sont communes à de nombreux projets, et vous pouvez créer des modèles de projet Visual Studio pour configurer des projets qui sont initialisés avec votre propre structure de fichiers.
 
 ## <a name="generated-files-in-dsl"></a>Fichiers générés dans la solution DSL
  Les fichiers générés suivants apparaissent dans le **Dsl** projet.

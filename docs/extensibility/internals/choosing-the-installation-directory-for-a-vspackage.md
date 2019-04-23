@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59e712d9354432bc142478935827a6439547321c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: be54c19a1e09b610611c8791d62d012ebdaf5ae8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662393"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106265"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>Choisissez le répertoire d’installation d’un VSPackage
 Un VSPackage et ses fichiers de prise en charge doivent être sur le système de fichiers d’un utilisateur. L’emplacement varie selon que le VSPackage est géré ou non gérés, le schéma de contrôle de version côte à côte et de votre choix de l’utilisateur.
@@ -47,15 +47,15 @@ Un VSPackage et ses fichiers de prise en charge doivent être sur le système de
 
  Le [gérer les VSPackages](../../extensibility/managing-vspackages.md) article indique que les entrées de Registre contrôlent où [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] réellement la recherche d’un VSPackage satellites DLL. Toutefois, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] essaie de charger une DLL satellite dans un sous-répertoire nommé pour une valeur LCID, dans l’ordre suivant :
 
-1.  Par défaut LCID (Visual Studio LCID ; par exemple, *\1033* pour l’anglais)
+1. Par défaut LCID (Visual Studio LCID ; par exemple, *\1033* pour l’anglais)
 
-2.  LCID par défaut avec la sous-langue par défaut.
+2. LCID par défaut avec la sous-langue par défaut.
 
-3.  Par défaut du système LCID.
+3. Par défaut du système LCID.
 
-4.  Système LCID par défaut avec la sous-langue par défaut.
+4. Système LCID par défaut avec la sous-langue par défaut.
 
-5.  ÉTATS-UNIS Anglais (*. \1033* ou *. \0x409*).
+5. ÉTATS-UNIS Anglais (*. \1033* ou *. \0x409*).
 
 Si votre DLL VSPackage inclut des ressources et le **SatelliteDll\DllName** entrée de Registre pointe vers elle, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tente de les charger dans l’ordre indiqué ci-dessus.
 

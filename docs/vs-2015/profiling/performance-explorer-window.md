@@ -14,12 +14,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b486326985261b5d024c747853d24be3fad19fd4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a370ae802408ecc821de4cd15824f9d1fca42b75
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780719"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105322"
 ---
 # <a name="performance-explorer-window"></a>Explorateur de performances, fenêtre
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,31 +28,31 @@ La fenêtre **Explorateur de performances** de l’environnement de développeme
   
  **Spécifications**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 ## <a name="performance-explorer-toolbar"></a>Barre d’outils de l’Explorateur de performances  
  Vous trouverez les options suivantes dans la barre d’outils de l’**Explorateur de performances** :  
   
--   **Lancer l’Assistant Performance** : affiche l’Assistant Performance qui permet d’ajouter une nouvelle session de performance à la fenêtre Explorateur de performances.  
+- **Lancer l’Assistant Performance** : affiche l’Assistant Performance qui permet d’ajouter une nouvelle session de performance à la fenêtre Explorateur de performances.  
   
--   **Nouvelle session de performance** : permet d’ajouter une session de performance vide à la fenêtre Explorateur de performances.  
+- **Nouvelle session de performance** : permet d’ajouter une session de performance vide à la fenêtre Explorateur de performances.  
   
--   **Lancer** : la liste du bouton de commande **Lancer** vous permet de démarrer l’application cible dont le profilage est activé immédiatement (**Démarrer avec le profilage**) ou avec le profilage suspendu (**Démarrer avec le profilage suspendu**).  
+- **Lancer** : la liste du bouton de commande **Lancer** vous permet de démarrer l’application cible dont le profilage est activé immédiatement (**Démarrer avec le profilage**) ou avec le profilage suspendu (**Démarrer avec le profilage suspendu**).  
   
--   **Méthode** : permet de spécifier la méthode de profilage de la session (échantillonnage ou instrumentation).  
+- **Méthode** : permet de spécifier la méthode de profilage de la session (échantillonnage ou instrumentation).  
   
--   **Arrêter** : permet de quitter immédiatement l’application cible et le profileur.  
+- **Arrêter** : permet de quitter immédiatement l’application cible et le profileur.  
   
--   **Attacher/Détacher** : affiche la boîte de dialogue **Attacher le profileur au processus** pour un processus en cours d’exécution auquel attacher le profileur.  
+- **Attacher/Détacher** : affiche la boîte de dialogue **Attacher le profileur au processus** pour un processus en cours d’exécution auquel attacher le profileur.  
   
 ## <a name="performance-explorer-window"></a>Fenêtre Explorateur de performances  
  La fenêtre **Explorateur de performances** contient un contrôle d’arborescence qui affiche les fichiers binaires et les fichiers de données des rapports d’une ou de plusieurs sessions de performance.  
   
--   **Nom de la session** : la racine du contrôle d’arborescence contient le nom de la session. Cliquez avec le bouton droit sur le nom de la session pour définir les propriétés de la session ou pour démarrer l’application cible et le profileur.  
+- **Nom de la session** : la racine du contrôle d’arborescence contient le nom de la session. Cliquez avec le bouton droit sur le nom de la session pour définir les propriétés de la session ou pour démarrer l’application cible et le profileur.  
   
--   **Cibles** : affiche le nom des fichiers binaires à profiler dans la session. Cliquez avec le bouton droit sur **Cibles** pour ajouter ou supprimer un fichier binaire, un projet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou un site web. Cliquez avec le bouton droit sur le nom d’une cible pour définir les propriétés d’un fichier binaire.  
+- **Cibles** : affiche le nom des fichiers binaires à profiler dans la session. Cliquez avec le bouton droit sur **Cibles** pour ajouter ou supprimer un fichier binaire, un projet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou un site web. Cliquez avec le bouton droit sur le nom d’une cible pour définir les propriétés d’un fichier binaire.  
   
--   **Rapports** : affiche le nom des fichiers de données du profileur générés pour la session. Cliquez avec le bouton droit sur **Rapports** pour ajouter un rapport existant ou comparer deux fichiers de données du profileur. Cliquez avec le bouton droit sur le nom d’un rapport pour ouvrir, supprimer ou exporter un fichier de données du profileur.  
+- **Rapports** : affiche le nom des fichiers de données du profileur générés pour la session. Cliquez avec le bouton droit sur **Rapports** pour ajouter un rapport existant ou comparer deux fichiers de données du profileur. Cliquez avec le bouton droit sur le nom d’un rapport pour ouvrir, supprimer ou exporter un fichier de données du profileur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Vues d’ensemble](../profiling/overviews-performance-tools.md)   

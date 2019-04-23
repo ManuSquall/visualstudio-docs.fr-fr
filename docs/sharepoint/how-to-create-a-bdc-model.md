@@ -13,32 +13,32 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d82678df0da5932dd33c08a6e3066462df204f6e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e4e05eae6339d55d16fb0cf6ba6ebeb9d1f4f296
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596501"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106655"
 ---
 # <a name="how-to-create-a-bdc-model"></a>Procédure : Créer un modèle BDC
   Vous pouvez créer un modèle de connectivité de données métiers (BDC) en utilisant le modèle pour ce type d’élément, puis ajouter le modèle à un projet SharePoint. Pour plus d’informations, consultez [créer un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md). Pour plus d’informations sur la façon de concevoir le modèle, consultez [concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).
 
 ### <a name="to-create-a-bdc-project"></a>Pour créer un projet BDC
 
-1.  Dans la barre de menus, choisissez **Fichier** > **Nouveau** > **Projet**.
+1. Dans la barre de menus, choisissez **Fichier** > **Nouveau** > **Projet**.
 
     > [!NOTE]
     >  Si votre interface IDE est définie pour utiliser les paramètres de développement Visual Basic, choisissez **fichier** > **nouveau projet**.
 
      La boîte de dialogue **Nouveau projet** s'affiche.
 
-2.  Sous **Visual Basic** ou **Visual C#**, choisissez **Office/SharePoint**, **Solutions SharePoint**.
+2. Sous **Visual Basic** ou **Visual C#**, choisissez **Office/SharePoint**, **Solutions SharePoint**.
 
-3.  Dans le **modèles** volet, choisissez le **SharePoint 2013 - projet vide** d’élément, puis choisissez le **OK** bouton.
+3. Dans le **modèles** volet, choisissez le **SharePoint 2013 - projet vide** d’élément, puis choisissez le **OK** bouton.
 
      Le **Assistant Personnalisation de SharePoint** s’ouvre.
 
-4.  Sur le **spécifier le niveau de site et de sécurité pour le débogage** page, spécifiez l’URL d’un site SharePoint sur l’ordinateur local, choisissez le **déployer en tant que solution de batterie** case d’option, puis choisissez le **Terminer** bouton.
+4. Sur le **spécifier le niveau de site et de sécurité pour le débogage** page, spécifiez l’URL d’un site SharePoint sur l’ordinateur local, choisissez le **déployer en tant que solution de batterie** case d’option, puis choisissez le **Terminer** bouton.
 
      Vous allez tester le modèle sur le site SharePoint que vous avez spécifié.
 
@@ -47,13 +47,13 @@ ms.locfileid: "56596501"
 
      Un projet SharePoint vide est créé.
 
-5.  Dans la barre de menus, choisissez **Projet** > **Ajouter un nouvel élément**.
+5. Dans la barre de menus, choisissez **Projet** > **Ajouter un nouvel élément**.
 
-6.  Dans le **ajouter un nouvel élément** boîte de dialogue, sélectionnez le **Office/SharePoint** nœud.
+6. Dans le **ajouter un nouvel élément** boîte de dialogue, sélectionnez le **Office/SharePoint** nœud.
 
-7.  Dans la liste de modèles SharePoint, choisissez **modèle de connectivité de données métiers (Solution de batterie uniquement)**.
+7. Dans la liste de modèles SharePoint, choisissez **modèle de connectivité de données métiers (Solution de batterie uniquement)**.
 
-8.  Dans le **nom** zone, spécifiez un nom pour le modèle BDC, puis choisissez le **ajouter** bouton.
+8. Dans le **nom** zone, spécifiez un nom pour le modèle BDC, puis choisissez le **ajouter** bouton.
 
      Un **modèle de connectivité de données métiers** élément est ajouté au projet. Par défaut, le modèle apparaît dans le concepteur BDC. Pour plus d’informations, consultez [créer un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md).
 

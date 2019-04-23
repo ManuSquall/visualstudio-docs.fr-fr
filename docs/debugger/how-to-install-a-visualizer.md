@@ -1,5 +1,5 @@
 ---
-title: 'Comment : installer un visualiseur | Microsoft Docs'
+title: 'Procédure : Installer un visualiseur | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1a552c07443e4dd38070a86b7d9513d8cfa0136
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: d5b27d52c1f390e6c9f60ef10a91d9a93f903f5c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691421"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104477"
 ---
-# <a name="how-to-install-a-visualizer"></a>Comment : installer un visualiseur
+# <a name="how-to-install-a-visualizer"></a>Procédure : Installer un visualiseur
 Après avoir créé un visualiseur, vous devez l'installer de sorte qu'il soit disponible dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. L'installation d'un visualiseur est un processus simple.
 
 > [!NOTE]
@@ -32,17 +32,17 @@ Après avoir créé un visualiseur, vous devez l'installer de sorte qu'il soit d
 
 ### <a name="to-install-a-visualizer"></a>Pour installer un visualiseur
 
-1.  Recherchez la DLL qui contient le visualiseur que vous avez créé.
+1. Recherchez la DLL qui contient le visualiseur que vous avez créé.
 
-2.  Copiez la DLL dans l'un ou l'autre des emplacements suivants :
+2. Copiez la DLL dans l'un ou l'autre des emplacements suivants :
 
-    -   *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
+    - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
 
-    -   `My Documents\` *VisualStudioVersion* `\Visualizers`
+    - `My Documents\` *VisualStudioVersion* `\Visualizers`
 
-3.  Si vous souhaitez utiliser un visualiseur géré pour un débogage distant, copiez la DLL vers le même chemin d'accès sur l'ordinateur distant.
+3. Si vous souhaitez utiliser un visualiseur géré pour un débogage distant, copiez la DLL vers le même chemin d'accès sur l'ordinateur distant.
 
-4.  Redémarrez la session de débogage.
+4. Redémarrez la session de débogage.
 
 ## <a name="see-also"></a>Voir aussi
 - [Créer des visualiseurs personnalisés](../debugger/create-custom-visualizers-of-data.md)

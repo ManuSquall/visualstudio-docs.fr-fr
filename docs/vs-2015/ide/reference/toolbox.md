@@ -16,12 +16,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a7c2320f7943798a336e52ba2043f430cdb9231
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 98670f99779804cec87bc4afc03ab7d126024378
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661345"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105615"
 ---
 # <a name="toolbox"></a>Boîte à outils
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ La **boîte à outils** affiche les icônes des contrôles et autres éléments 
 ## <a name="help-on-toolbox-tabs"></a>Aide sur les onglets de la boîte à outils  
  Les documents suivants fournissent des informations supplémentaires sur des onglets spécifiques de la **boîte à outils**.  
   
--   [Boîte à outils, Onglet Données](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.110\))  
+- [Boîte à outils, Onglet Données](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.110\))  
   
--   [Boîte à outils, Onglet Composants](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.110\))  
+- [Boîte à outils, Onglet Composants](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.110\))  
   
--   [Boîte à outils, onglet HTML](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.110\))  
+- [Boîte à outils, onglet HTML](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.110\))  
   
--   [Boîte à outils, Onglet Données](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.120\))  
+- [Boîte à outils, Onglet Données](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.120\))  
   
--   [Boîte à outils, Onglet Composants](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.120\))  
+- [Boîte à outils, Onglet Composants](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.120\))  
   
--   [Boîte à outils, onglet HTML](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))  
+- [Boîte à outils, onglet HTML](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))  
   
 ## <a name="see-also"></a>Voir aussi  
  [Utilisation de la boîte à outils](../../ide/using-the-toolbox.md)

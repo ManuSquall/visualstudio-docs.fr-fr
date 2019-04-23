@@ -29,12 +29,12 @@ caps.latest.revision: 245
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c9ff6901db602a812c06c6d8cc08ce55ef6d1d7e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1601853a99ebea5ef687fbe5679fd74b45d5c381
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952585"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107695"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Mapper les dépendances dans vos solutions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,18 +45,18 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
   
  **Voici quelques vidéos**:  
   
--   [Comprendre les dépendances existant dans votre code grâce à la virtualisation](http://go.microsoft.com/fwlink/?LinkID=252065)  
+- [Comprendre les dépendances existant dans votre code grâce à la virtualisation](http://go.microsoft.com/fwlink/?LinkID=252065)  
   
--   [Visualisation de l’impact d’une modification](http://go.microsoft.com/fwlink/?LinkID=252068)  
+- [Visualisation de l’impact d’une modification](http://go.microsoft.com/fwlink/?LinkID=252068)  
   
--   [Présentation du code complexe avec des cartes de code](http://go.microsoft.com/fwlink/?LinkID=259869)  
+- [Présentation du code complexe avec des cartes de code](http://go.microsoft.com/fwlink/?LinkID=259869)  
   
-##  <a name="GetStarted"></a> Prise en main des cartes de code  
+## <a name="GetStarted"></a> Prise en main des cartes de code  
  **Pour utiliser des cartes de code, il vous l’un des éléments suivants**:  
   
--   Visual Studio Enterprise : Créer des cartes de code à partir de l’éditeur de code, l’Explorateur de solutions, affichage de classes ou Explorateur d’objets.  
+- Visual Studio Enterprise : Créer des cartes de code à partir de l’éditeur de code, l’Explorateur de solutions, affichage de classes ou Explorateur d’objets.  
   
--   Visual Studio Professional : Ouvrir des cartes de code, effectuer des modifications mineures et parcourir le code.  
+- Visual Studio Professional : Ouvrir des cartes de code, effectuer des modifications mineures et parcourir le code.  
   
 > [!WARNING]
 >  Avant de partager des cartes créées dans Visual Studio Enterprise avec d’autres personnes utilisant Visual Studio Professional, vérifiez que tous les éléments présents sur la carte (comme les éléments masqués, les groupes développés et les liens entre les groupes) sont visibles.  
@@ -73,51 +73,51 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
   
 #### <a name="to-see-the-overall-dependencies-across-your-solution"></a>Pour afficher les dépendances globales dans votre solution  
   
-1.  Ouvrez le menu **Architecture** .  
+1. Ouvrez le menu **Architecture** .  
   
-2.  Si vous venez juste d’ouvrir la solution et que vous ne l’avez pas encore générée, ou si votre code n’a pas changé depuis la dernière fois qu’il a été généré, choisissez **Générer une carte du code pour la solution**.  
+2. Si vous venez juste d’ouvrir la solution et que vous ne l’avez pas encore générée, ou si votre code n’a pas changé depuis la dernière fois qu’il a été généré, choisissez **Générer une carte du code pour la solution**.  
   
-3.  Si votre code n’a pas changé depuis la dernière fois qu’il a été généré, choisissez **Générer une carte du code pour la solution sans génération** pour créer plus rapidement la carte.  
+3. Si votre code n’a pas changé depuis la dernière fois qu’il a été généré, choisissez **Générer une carte du code pour la solution sans génération** pour créer plus rapidement la carte.  
   
-4.  Consultez[Visualiser les dépendances globales](#SeeOverviewSource) pour comprendre comment utiliser des cartes de code pour afficher les dépendances globales dans votre solution.  
+4. Consultez[Visualiser les dépendances globales](#SeeOverviewSource) pour comprendre comment utiliser des cartes de code pour afficher les dépendances globales dans votre solution.  
   
 #### <a name="to-see-specific-dependencies-within-your-solution"></a>Pour visualiser des dépendances spécifiques dans votre solution  
   
-1.  Une fois votre solution chargée, ouvrez l’ **Explorateur de solutions**.  
+1. Une fois votre solution chargée, ouvrez l’ **Explorateur de solutions**.  
   
-2.  Sélectionnez les projets, références d’assembly, dossiers, fichiers, types ou membres que vous souhaitez afficher sur la carte.  
+2. Sélectionnez les projets, références d’assembly, dossiers, fichiers, types ou membres que vous souhaitez afficher sur la carte.  
   
-3.  Sur le **l’Explorateur de solutions** barre d’outils, choisissez **afficher sur la carte de Code**![créer nouveau graphique à partir de nœuds bouton sélectionnés](../modeling/media/createnewgraphfromselectedbutton.gif "CreateNewGraphFromSelectedButton "). Ou bien, ouvrez le menu contextuel et choisissez **Afficher sur la carte de code**. Vous pouvez également faire glisser des éléments à partir de l’affichage de classes ou de l’Explorateur d’objets vers une nouvelle carte de code ou une carte existante.  
+3. Sur le **l’Explorateur de solutions** barre d’outils, choisissez **afficher sur la carte de Code**![créer nouveau graphique à partir de nœuds bouton sélectionnés](../modeling/media/createnewgraphfromselectedbutton.gif "CreateNewGraphFromSelectedButton "). Ou bien, ouvrez le menu contextuel et choisissez **Afficher sur la carte de code**. Vous pouvez également faire glisser des éléments à partir de l’affichage de classes ou de l’Explorateur d’objets vers une nouvelle carte de code ou une carte existante.  
   
-4.  Consultez[Visualiser les dépendances spécifiques](#SeeSpecificSource) pour comprendre comment utiliser des cartes de code pour afficher des dépendances spécifiques au sein de votre solution.  
+4. Consultez[Visualiser les dépendances spécifiques](#SeeSpecificSource) pour comprendre comment utiliser des cartes de code pour afficher des dépendances spécifiques au sein de votre solution.  
   
-###  <a name="CreateEmptyMap"></a> Pour ajouter une nouvelle carte de code vide à votre solution  
+### <a name="CreateEmptyMap"></a> Pour ajouter une nouvelle carte de code vide à votre solution  
   
-1.  Dans l’ **Explorateur de solutions**, ouvrez le menu contextuel du nœud racine de votre solution. Choisissez **Ajouter** , puis **Nouvel élément**.  
+1. Dans l’ **Explorateur de solutions**, ouvrez le menu contextuel du nœud racine de votre solution. Choisissez **Ajouter** , puis **Nouvel élément**.  
   
-2.  Sous **Installé**, choisissez **Général**.  
+2. Sous **Installé**, choisissez **Général**.  
   
-3.  Dans le volet droit, choisissez **Document de graphique orienté** , puis **Ajouter**.  
+3. Dans le volet droit, choisissez **Document de graphique orienté** , puis **Ajouter**.  
   
      Vous disposez maintenant d’une carte vide qui apparaît dans le dossier **Éléments de solution** de votre solution.  
   
 #### <a name="to-create-a-new-empty-code-map-without-adding-it-to-your-solution"></a>Pour créer une carte de code vide sans l’ajouter à votre solution  
   
-1.  Ouvrez le menu **Architecture** , puis choisissez **Nouvelle carte de code**.  
+1. Ouvrez le menu **Architecture** , puis choisissez **Nouvelle carte de code**.  
   
      \- ou -  
   
-2.  Ouvrez le menu **Fichier** , puis choisissez **Nouveau** et **Fichier**.  
+2. Ouvrez le menu **Fichier** , puis choisissez **Nouveau** et **Fichier**.  
   
-3.  Sous **Installé**, choisissez **Général**.  
+3. Sous **Installé**, choisissez **Général**.  
   
-4.  Dans le volet droit, choisissez **Document de graphique orienté** , puis **Ouvrir**.  
+4. Dans le volet droit, choisissez **Document de graphique orienté** , puis **Ouvrir**.  
   
      Vous disposez maintenant d’une carte vide qui n’apparaît pas dans les dossiers de votre solution.  
   
-##  <a name="SeeOverviewSource"></a> Visualiser les dépendances globales  
+## <a name="SeeOverviewSource"></a> Visualiser les dépendances globales  
   
-###  <a name="OverviewSource"></a> Visualiser les dépendances dans votre solution  
+### <a name="OverviewSource"></a> Visualiser les dépendances dans votre solution  
   
 1. Dans le menu **Architecture** , choisissez **Générer une carte du code pour la solution**.  
   
@@ -183,35 +183,35 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
   
     Voir aussi :  
   
--   [Parcourir et réorganiser des cartes de code](../modeling/browse-and-rearrange-code-maps.md)  
+- [Parcourir et réorganiser des cartes de code](../modeling/browse-and-rearrange-code-maps.md)  
   
--   [Personnaliser des cartes de code en modifiant les fichiers DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)  
+- [Personnaliser des cartes de code en modifiant les fichiers DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)  
   
--   Pour identifier les problèmes éventuels dans votre code, [exécutez un analyseur](../modeling/find-potential-problems-using-code-map-analyzers.md).  
+- Pour identifier les problèmes éventuels dans votre code, [exécutez un analyseur](../modeling/find-potential-problems-using-code-map-analyzers.md).  
   
-###  <a name="OverviewCompiled"></a> Visualiser les dépendances entre les assemblys ou fichiers binaires  
+### <a name="OverviewCompiled"></a> Visualiser les dépendances entre les assemblys ou fichiers binaires  
   
-1.  [Créez une carte de code vide](#GetStarted)ou ouvrez une carte de code existante (fichier .dgml).  
+1. [Créez une carte de code vide](#GetStarted)ou ouvrez une carte de code existante (fichier .dgml).  
   
-2.  Faites glisser sur la carte les assemblys ou fichiers binaires à représenter sur la carte à partir d’un emplacement externe à Visual Studio. Par exemple, vous pouvez faire glisser des assemblys ou des fichiers binaires à partir de l’Explorateur Windows ou de l’Explorateur de fichiers.  
+2. Faites glisser sur la carte les assemblys ou fichiers binaires à représenter sur la carte à partir d’un emplacement externe à Visual Studio. Par exemple, vous pouvez faire glisser des assemblys ou des fichiers binaires à partir de l’Explorateur Windows ou de l’Explorateur de fichiers.  
   
 > [!NOTE]
 >  Vous ne pouvez faire glisser des assemblys ou des fichiers binaires à partir de l’Explorateur Windows ou de l’Explorateur de fichiers que si vous exécutez Visual Studio avec le même niveau d’autorisations de contrôle de compte d’utilisateur (UAC). Par exemple, si le contrôle de compte d’utilisateur est activé et que vous exécutez Visual Studio en tant qu’administrateur, l’Explorateur Windows ou l’Explorateur de fichiers bloque l’opération de glissement. Pour contourner ce problème, assurez-vous qu’ils s’exécutent tous les deux avec le même niveau d’autorisation ou désactivez le contrôle de compte d’utilisateur.  
   
-##  <a name="SeeSpecificSource"></a> Visualiser les dépendances spécifiques  
+## <a name="SeeSpecificSource"></a> Visualiser les dépendances spécifiques  
  Par exemple, supposons que vous deviez réviser du code dans certains fichiers contenant des modifications en attente. Pour visualiser les dépendances dans ces modifications, vous pouvez créer une carte de code à partir de ces fichiers.  
   
  ![Afficher les dépendances spécifiques sur une carte de code](../modeling/media/codemapsspecificdependenciesintro.png "CodeMapsSpecificDependenciesIntro")  
   
 ### <a name="see-specific-dependencies-in-your-solution"></a>Visualiser les dépendances spécifiques dans votre solution  
   
-1.  Ouvrez l’ **Explorateur de solutions**. Sélectionnez les projets, références d’assembly, dossiers, fichiers, types et membres qui vous intéressent. Pour rechercher les éléments qui ont des dépendances sur les types ou les membres, ouvrez le menu contextuel du type ou du membre depuis l’ **Explorateur de solutions**. Choisissez le type de dépendance, puis sélectionnez les résultats.  
+1. Ouvrez l’ **Explorateur de solutions**. Sélectionnez les projets, références d’assembly, dossiers, fichiers, types et membres qui vous intéressent. Pour rechercher les éléments qui ont des dépendances sur les types ou les membres, ouvrez le menu contextuel du type ou du membre depuis l’ **Explorateur de solutions**. Choisissez le type de dépendance, puis sélectionnez les résultats.  
   
-2.  Créez une carte de vos éléments et de leurs membres. Sur le **l’Explorateur de solutions** clic de la barre d’outils **afficher sur la carte de Code**![créer nouveau graphique à partir de nœuds bouton sélectionnés](../modeling/media/createnewgraphfromselectedbutton.gif "CreateNewGraphFromSelectedButton").  
+2. Créez une carte de vos éléments et de leurs membres. Sur le **l’Explorateur de solutions** clic de la barre d’outils **afficher sur la carte de Code**![créer nouveau graphique à partir de nœuds bouton sélectionnés](../modeling/media/createnewgraphfromselectedbutton.gif "CreateNewGraphFromSelectedButton").  
   
      ![Sélectionnez les éléments que vous souhaitez mapper](../modeling/media/codemapsselectinsolutionexplorer.png "CodeMapsSelectInSolutionExplorer")  
   
-3.  La carte montre les éléments sélectionnés au sein des assemblys conteneurs.  
+3. La carte montre les éléments sélectionnés au sein des assemblys conteneurs.  
   
      ![Éléments affichés sous forme de groupes sur la carte sélectionnés](../modeling/media/codemapsshowitemsfromsolnexplorer.png "CodeMapsShowItemsFromSolnExplorer")  
   
@@ -220,19 +220,19 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
     > [!NOTE]
     >  Lorsque vous ajoutez des éléments à partir d’un projet partagé par plusieurs applications, comme Windows Phone ou Windows Store, ces éléments apparaissent sur la carte avec le projet d’application actif. Si vous modifiez le contexte vers un autre projet d’application et ajoutez des éléments à partir du projet partagé, ces éléments apparaissent alors avec le projet d’application qui vient d’être activé. Les opérations que vous effectuez avec un élément de la carte s’appliquent uniquement aux éléments qui partagent le même contexte.  
   
-4.  Pour explorer des éléments, développez-les. Déplacez le pointeur de la souris au-dessus d’un élément, puis cliquez sur l’icône en forme de chevron (flèche bas) quand elle apparaît.  
+4. Pour explorer des éléments, développez-les. Déplacez le pointeur de la souris au-dessus d’un élément, puis cliquez sur l’icône en forme de chevron (flèche bas) quand elle apparaît.  
   
      ![Développement d’un nœud dans une carte de code](../modeling/media/dependencygraph-containment.png "DependencyGraph_Containment")  
   
      Pour développer tous les éléments, sélectionnez-les en appuyant sur **Ctrl+A**, ouvrez le menu contextuel de la carte, puis choisissez **Groupe**, **Développer**. Toutefois, cette option n’est pas disponible si le développement de tous les groupes crée une carte inutilisable ou entraîne des problèmes de mémoire.  
   
-5.  Continuez à développer les éléments qui vous intéressent jusqu’au niveau de la classe et du membre si nécessaire.  
+5. Continuez à développer les éléments qui vous intéressent jusqu’au niveau de la classe et du membre si nécessaire.  
   
      ![Développer les groupes au niveau de la classe et du membre](../modeling/media/codemapsexpandtoclassandmember.png "CodeMapsExpandToClassAndMember")  
   
      Pour afficher les membres qui sont dans le code mais n’apparaissent pas sur la carte, cliquez sur le **récupérer à nouveau les enfants** icône ![récupérer à nouveau une icône d’enfants](../modeling/media/dependencygraph-deletednodesicon.png "DependencyGraph_DeletedNodesIcon") en haut à gauche d’un groupe.  
   
-6.  Pour afficher d’autres d’éléments associés à ceux présents sur la carte, sélectionnez un élément et choisissez **Afficher les éléments associés** dans la barre d’outils de la carte de code, puis sélectionnez le type d’éléments associés à ajouter à la carte. Vous pouvez également sélectionner un ou plusieurs éléments, ouvrir le menu contextuel, puis choisir l’option **Afficher** pour le type d’éléments associés à ajouter à la carte. Exemple :  
+6. Pour afficher d’autres d’éléments associés à ceux présents sur la carte, sélectionnez un élément et choisissez **Afficher les éléments associés** dans la barre d’outils de la carte de code, puis sélectionnez le type d’éléments associés à ajouter à la carte. Vous pouvez également sélectionner un ou plusieurs éléments, ouvrir le menu contextuel, puis choisir l’option **Afficher** pour le type d’éléments associés à ajouter à la carte. Exemple :  
   
      Pour un **assembly**, choisissez :  
   
@@ -275,30 +275,30 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
   
      ![Afficher les méthodes appelées par ce membre](../modeling/media/codemapsshowrelatedmethods.png "CodeMapsShowRelatedMethods")  
   
-7.  La carte affiche les relations. Dans cet exemple, les méthodes appelées par la méthode `Find` et leur emplacement dans la solution ou à l’extérieur.  
+7. La carte affiche les relations. Dans cet exemple, les méthodes appelées par la méthode `Find` et leur emplacement dans la solution ou à l’extérieur.  
   
      ![Afficher les dépendances spécifiques sur une carte de code](../modeling/media/codemapsspecificdependenciesintro.png "CodeMapsSpecificDependenciesIntro")  
   
-8.  Pour simplifier la carte et cibler des parties individuelles, choisissez **Filtres** dans la barre d’outils de la carte de code et sélectionnez uniquement les types de nœuds et de liens qui vous intéressent. Par exemple, désactivez l’affichage des dossiers solution, des assemblys et des espaces de noms.  
+8. Pour simplifier la carte et cibler des parties individuelles, choisissez **Filtres** dans la barre d’outils de la carte de code et sélectionnez uniquement les types de nœuds et de liens qui vous intéressent. Par exemple, désactivez l’affichage des dossiers solution, des assemblys et des espaces de noms.  
   
      ![Utilisez le volet de filtre pour simplifier l’affichage](../modeling/media/almcodemapfilterpane.png "ALMCodeMapFilterPane")  
   
-##  <a name="SeeSourceHeader"></a> Visualiser les dépendances entre les fichiers sources et les fichiers d’en-tête C et C++  
+## <a name="SeeSourceHeader"></a> Visualiser les dépendances entre les fichiers sources et les fichiers d’en-tête C et C++  
  Si vous souhaitez créer des cartes plus complètes pour des projets C++, définissez l’option du compilateur d’informations de consultation (**/FR**) sur ces projets. Consultez [/FR, /Fr (Create .Sbr File)](http://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896). Sinon, un message vous invite à définir cette option. Si vous sélectionnez **OK**, l’option est définie uniquement pour la carte active. Vous pouvez choisir de masquer le message pour toutes les cartes ultérieures. Si vous masquez ce message, vous pouvez le faire réapparaître. Affectez à la clé de Registre suivante la valeur `0` ou supprimez-la :  
   
  **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**  
   
  Lorsque vous ouvrez une solution qui contient des projets Visual C++, la mise à jour de la base de données IntelliSense peut prendre un certain temps. Pendant ce temps, il est impossible de créer des cartes de code pour les fichiers d’en-tête (.h ou `#include`) tant que la base de données IntelliSense n’a pas terminé la mise à jour. Vous pouvez surveiller la progression des mises à jour dans la barre d’état de Visual Studio. Pour résoudre les problèmes ou messages qui s’affichent en raison de la désactivation de certains paramètres IntelliSense, consultez [Résoudre les problèmes liés aux cartes dans le code C et C++](#Troubleshooting).  
   
--   Pour visualiser les dépendances entre tous les fichiers sources et fichiers d’en-tête de votre solution, dans le menu **Architecture** , choisissez **Générer le graphique des fichiers Include**.  
+- Pour visualiser les dépendances entre tous les fichiers sources et fichiers d’en-tête de votre solution, dans le menu **Architecture** , choisissez **Générer le graphique des fichiers Include**.  
   
      ![Graphique de dépendance pour le code natif](../modeling/media/dependencygraphgeneral-nativecode.png "DependencyGraphGeneral_NativeCode")  
   
--   Pour visualiser les dépendances entre le fichier actuellement ouvert et les fichiers sources et fichiers d’en-tête associés, ouvrez soit le fichier source, soit le fichier d’en-tête. Ouvrez le menu contextuel n’importe où dans le fichier. Choisissez **Générer le graphique des fichiers Include**.  
+- Pour visualiser les dépendances entre le fichier actuellement ouvert et les fichiers sources et fichiers d’en-tête associés, ouvrez soit le fichier source, soit le fichier d’en-tête. Ouvrez le menu contextuel n’importe où dans le fichier. Choisissez **Générer le graphique des fichiers Include**.  
   
      ![Première&#45;graphique de dépendance de niveau pour le fichier .h](../modeling/media/dependencygraph-native-firstlevel.png "DependencyGraph_Native_FirstLevel")  
   
-###  <a name="Troubleshooting"></a> Résoudre les problèmes liés aux cartes dans le code C et C++  
+### <a name="Troubleshooting"></a> Résoudre les problèmes liés aux cartes dans le code C et C++  
  Ces éléments ne sont pas pris en charge pour le code C et C++ :  
   
 - Les types de base n’apparaissent pas sur les cartes qui incluent la hiérarchie parente.  
@@ -318,7 +318,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
 ||Les informations de débogage ont été supprimées du fichier .pdb.|Si l’option **/PDBSTRIPPED** a été utilisée dans l’éditeur de liens, incluez à la place le fichier .pdb complet.<br /><br /> Consultez [/PDBSTRIPPED (Strip Private Symbols)](http://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).|  
 ||L’appelant n’est pas une fonction ; il correspond à un thunk dans le fichier binaire ou à un pointeur dans la section de données.|Lorsque l’appelant est un thunk, essayez d’utiliser `_declspec(dllimport)` pour éviter le thunk.<br /><br /> Consultez :<br /><br /> -   [Règles générales et Limitations](http://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [Importation d’appels de fonction à l’aide de __declspec (dllimport)](http://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, dllimport](http://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|  
   
-##  <a name="RenderMoreQuickly"></a> Accélérer le rendu des cartes de code  
+## <a name="RenderMoreQuickly"></a> Accélérer le rendu des cartes de code  
  Quand vous générez une carte pour la première fois, Visual Studio indexe toutes les dépendances qu’il trouve. Ce processus peut prendre un certain temps, en particulier pour les solutions importantes, mais il améliore les performances ultérieures. Si votre code change, Visual Studio réindexe uniquement le code mis à jour. Pour réduire le temps nécessaire au rendu de la carte, considérez les points suivants :  
   
 - [Créez uniquement une carte des dépendances qui vous intéressent.](#SeeSpecificSource)  
@@ -339,7 +339,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
   
   La carte terminée présente uniquement les dépendances pour le code correctement généré. Si des erreurs de build se produisent pour certains composants, ces erreurs apparaissent sur la carte. Assurez-vous qu’un composant est réellement généré et qu’il a des dépendances avant de prendre des décisions architecturales basées sur la carte.  
   
-##  <a name="SavingExporting"></a> Partager des cartes de code  
+## <a name="SavingExporting"></a> Partager des cartes de code  
   
 ### <a name="share-the-map-with-other-visual-studio-users"></a>Partager la carte avec d’autres utilisateurs de Visual Studio  
  Utilisez le menu **Fichier** pour enregistrer la carte.  
@@ -363,26 +363,26 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
   
 ### <a name="export-the-map-as-an-image-so-you-can-copy-it-into-other-applications-such-as-microsoft-word-or-powerpoint"></a>Exporter la carte en tant qu’image pour pouvoir la copier dans d’autres applications, telles que Microsoft Word ou PowerPoint  
   
-1.  Dans la barre d’outils de la carte de code, choisissez **Partager**, **Envoyer par courrier électronique en tant qu’image** ou **Copier l’image**.  
+1. Dans la barre d’outils de la carte de code, choisissez **Partager**, **Envoyer par courrier électronique en tant qu’image** ou **Copier l’image**.  
   
-2.  Collez l’image dans une autre application.  
+2. Collez l’image dans une autre application.  
   
 ### <a name="export-the-map-as-an-xps-file-so-you-can-see-it-in-xml-or-xaml-viewers-like-internet-explorer"></a>Exporter la carte en tant que fichier XPS pour pouvoir la voir dans des visionneuses XML ou XAML comme Internet Explorer  
   
-1.  Dans la barre d’outils de la carte de code, choisissez **Partager**, **Envoyer par courrier électronique en tant que XPS portable** ou **Enregistrer en tant que XPS portable**.  
+1. Dans la barre d’outils de la carte de code, choisissez **Partager**, **Envoyer par courrier électronique en tant que XPS portable** ou **Enregistrer en tant que XPS portable**.  
   
-2.  Accédez à l’emplacement auquel enregistrer le fichier.  
+2. Accédez à l’emplacement auquel enregistrer le fichier.  
   
-3.  Nommez la carte de code. Assurez-vous que le **enregistrer en tant que type** zone est définie sur **fichiers XPS (\*.xps)**. Choisissez **Enregistrer**.  
+3. Nommez la carte de code. Assurez-vous que le **enregistrer en tant que type** zone est définie sur **fichiers XPS (\*.xps)**. Choisissez **Enregistrer**.  
   
 ## <a name="what-else-can-i-do"></a>Que puis-je faire d’autre ?  
   
--   [Utiliser des cartes de code pour déboguer vos applications](../modeling/use-code-maps-to-debug-your-applications.md)  
+- [Utiliser des cartes de code pour déboguer vos applications](../modeling/use-code-maps-to-debug-your-applications.md)  
   
--   [Mapper les méthodes sur la pile des appels pendant le débogage](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)  
+- [Mapper les méthodes sur la pile des appels pendant le débogage](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)  
   
--   [Rechercher des problèmes potentiels à l’aide des analyseurs de carte du code](../modeling/find-potential-problems-using-code-map-analyzers.md)  
+- [Rechercher des problèmes potentiels à l’aide des analyseurs de carte du code](../modeling/find-potential-problems-using-code-map-analyzers.md)  
   
--   [Parcourir et réorganiser des cartes de code](../modeling/browse-and-rearrange-code-maps.md)  
+- [Parcourir et réorganiser des cartes de code](../modeling/browse-and-rearrange-code-maps.md)  
   
--   [Personnaliser des cartes de code en modifiant les fichiers DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
+- [Personnaliser des cartes de code en modifiant les fichiers DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)

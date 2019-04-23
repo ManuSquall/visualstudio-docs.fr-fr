@@ -1,5 +1,5 @@
 ---
-title: 'Comment : spécifier un nom de Menu Démarrer pour une Application ClickOnce | Microsoft Docs'
+title: 'Procédure : Spécifier un nom de Menu Démarrer pour une Application ClickOnce | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ab55674cd1de54881eb46b47997a943678cbacd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 4ef1675480182796e1fe8bbe29baa5ed6a9d5f63
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635616"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085114"
 ---
-# <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>Guide pratique pour spécifier un nom de menu Démarrer pour une application ClickOnce
+# <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>Procédure : Spécifier un nom de menu Démarrer pour une application ClickOnce
 Quand un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application est installée pour une utilisation en ligne et hors connexion, une entrée est ajoutée à la **Démarrer** menu et le **Ajout / Suppression de programmes** liste. Par défaut, le nom complet est le même que le nom de l’assembly d’application, mais vous pouvez modifier le nom d’affichage en définissant **Product name** dans le **Options de publication** boîte de dialogue.
 
  **Nom de produit** s’affichera sur le *publish.htm* page ; pour une application hors ligne installée, il sera le nom de l’entrée dans le **Démarrer** menu et il sera également le nom qui apparaît dans **Ajouter ou supprimer des programmes**.
@@ -36,17 +36,17 @@ Quand un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] appli
 
 ### <a name="to-specify-a-start-menu-name"></a>Pour spécifier un nom de menu Démarrer
 
-1.  Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.
+1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.
 
-2.  Cliquez sur l’onglet **Publier**.
+2. Cliquez sur l’onglet **Publier**.
 
-3.  Cliquez sur le **Options** bouton pour ouvrir la **Options de publication** boîte de dialogue.
+3. Cliquez sur le **Options** bouton pour ouvrir la **Options de publication** boîte de dialogue.
 
-4.  Cliquez sur **Description**.
+4. Cliquez sur **Description**.
 
-5.  Dans le **Options de publication** boîte de dialogue, entrez le nom à afficher dans la zone **Product name**.
+5. Dans le **Options de publication** boîte de dialogue, entrez le nom à afficher dans la zone **Product name**.
 
-6.  Si vous le souhaitez, vous pouvez entrer un nom de serveur de publication dans **nom de l’éditeur**.
+6. Si vous le souhaitez, vous pouvez entrer un nom de serveur de publication dans **nom de l’éditeur**.
 
 ## <a name="see-also"></a>Voir aussi
 - [Publier des applications ClickOnce](../deployment/publishing-clickonce-applications.md)

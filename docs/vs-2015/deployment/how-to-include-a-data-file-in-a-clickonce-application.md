@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8868ef00c9d7ffee7687970c5a09b6a044c85455
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9120a5b3cb60f6c607ed97ab2df24bb157c72371
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947681"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107357"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Procédure : Inclure un fichier de données dans une application ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,25 +65,25 @@ Chaque [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application que vo
   
 ### <a name="to-include-a-data-file-by-using-mageuiexe"></a>Pour inclure un fichier de données à l’aide de MageUI.exe  
   
-1.  Ajouter le fichier de données à votre répertoire de l’application avec le reste des fichiers de votre application.  
+1. Ajouter le fichier de données à votre répertoire de l’application avec le reste des fichiers de votre application.  
   
-2.  En règle générale, le répertoire de votre application sera un répertoire étiqueté avec la version actuelle du déploiement, par exemple, v1.0.0.0.  
+2. En règle générale, le répertoire de votre application sera un répertoire étiqueté avec la version actuelle du déploiement, par exemple, v1.0.0.0.  
   
-3.  Sur le **fichier** menu, cliquez sur **ouvrir** pour ouvrir votre manifeste d’application.  
+3. Sur le **fichier** menu, cliquez sur **ouvrir** pour ouvrir votre manifeste d’application.  
   
-4.  Sélectionnez le **fichiers** onglet.  
+4. Sélectionnez le **fichiers** onglet.  
   
-5.  Dans la zone de texte en haut de l’onglet, entrez le répertoire qui contient les fichiers de votre application, puis cliquez sur **Populate**.  
+5. Dans la zone de texte en haut de l’onglet, entrez le répertoire qui contient les fichiers de votre application, puis cliquez sur **Populate**.  
   
      Votre fichier de données s’affiche dans la grille.  
   
-6.  Définir le **Type de fichier** valeur du fichier de données à **données**.  
+6. Définir le **Type de fichier** valeur du fichier de données à **données**.  
   
-7.  Enregistrez le manifeste d’application et signer à nouveau le fichier.  
+7. Enregistrez le manifeste d’application et signer à nouveau le fichier.  
   
      MageUI.exe vous invite à resigner le fichier.  
   
-8.  Signer à nouveau votre manifeste de déploiement  
+8. Signer à nouveau votre manifeste de déploiement  
   
      Vous devez resigner votre manifeste de déploiement, car son hachage du manifeste d’application a changé.  
   

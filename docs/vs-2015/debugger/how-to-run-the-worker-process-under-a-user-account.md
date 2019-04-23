@@ -20,12 +20,12 @@ caps.latest.revision: 35
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: da7f0374c8185ef091b89dde99f3c6e053458480
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: ebb8ec1fe10f6fbc5c367cb0ed127e048351b0e4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58947920"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105914"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Procédure : exécuter le processus Worker sous un compte d’utilisateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,29 +36,30 @@ Pour configurer votre ordinateur afin de pouvoir exécuter le processus de trait
   
 #### <a name="to-run-aspnetwpexe-under-a-user-account"></a>Exécuter aspnet_wp.exe sous un compte d'utilisateur  
   
-1.  Ouvrez le fichier machine.config, situé sur votre ordinateur dans le dossier CONFIG sous le chemin d'accès où vous avez installé le runtime.  
+1. Ouvrez le fichier machine.config, situé sur votre ordinateur dans le dossier CONFIG sous le chemin d'accès où vous avez installé le runtime.  
   
-2.  Recherchez la section &lt;processModel&gt; et remplacez les attributs user et password par le nom et le mot de passe du compte d’utilisateur sous lequel aspnet_wp.exe doit s’exécuter.  
+2. Recherchez la section &lt;processModel&gt; et remplacez les attributs user et password par le nom et le mot de passe du compte d’utilisateur sous lequel aspnet_wp.exe doit s’exécuter.  
   
-3.  Enregistrez le fichier machine.config.  
+3. Enregistrez le fichier machine.config.  
   
-4.  Sur [!INCLUDE[winxpsvr](../includes/winxpsvr-md.md)], IIS 6.0 est installé par défaut. Le processus de traitement correspondant est w3wp.exe. Pour fonctionner en mode IIS 6.0 avec aspnet_wp.exe comme processus de traitement, procédez selon les étapes suivantes :  
+4. Sur [!INCLUDE[winxpsvr](../includes/winxpsvr-md.md)], IIS 6.0 est installé par défaut. Le processus de traitement correspondant est w3wp.exe. Pour fonctionner en mode IIS 6.0 avec aspnet_wp.exe comme processus de traitement, procédez selon les étapes suivantes :  
   
-    1.  Cliquez sur **Démarrer**, puis sur **Outils d'administration** et choisissez **Services Internet (IIS)**.  
+    1. Cliquez sur **Démarrer**, puis sur **Outils d'administration** et choisissez **Services Internet (IIS)**.  
   
-    2.  Dans la boîte de dialogue **Services Internet** , cliquez avec le bouton droit sur le dossier **Sites Web** et choisissez **Propriétés**.  
+    2. Dans la boîte de dialogue **Services Internet** , cliquez avec le bouton droit sur le dossier **Sites Web** et choisissez **Propriétés**.  
   
-    3.  Dans la boîte de dialogue **Propriétés des sites Web** , choisissez **Service**.  
+    3. Dans la boîte de dialogue **Propriétés des sites Web** , choisissez **Service**.  
   
-    4.  Sélectionnez **Exécuter les services Web en mode d'isolement IIS 6.0**.  
+    4. Sélectionnez **Exécuter les services Web en mode d'isolement IIS 6.0**.  
   
-    5.  Fermez la boîte de dialogue **Propriétés** et **Gestionnaire des services Internet**.  
+    5. Fermez la boîte de dialogue **Propriétés** et **Gestionnaire des services Internet**.  
   
-5.  Ouvrez une invite de commandes Windows et réinitialisez le serveur en exécutant :  
+5. Ouvrez une invite de commandes Windows et réinitialisez le serveur en exécutant :  
   
     ```  
     iisreset  
     ```  
+
     — ou —  
   
     ```  
@@ -66,11 +67,11 @@ Pour configurer votre ordinateur afin de pouvoir exécuter le processus de trait
     net start w3svc  
     ```  
   
-6.  Recherchez le dossier des fichiers [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] temporaires, qui doit se trouver sur le même chemin d'accès que le dossier CONFIG. Cliquez avec le bouton droit sur le dossier des fichiers [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] temporaires et sélectionnez **Propriétés** dans le menu contextuel.  
+6. Recherchez le dossier des fichiers [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] temporaires, qui doit se trouver sur le même chemin d'accès que le dossier CONFIG. Cliquez avec le bouton droit sur le dossier des fichiers [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] temporaires et sélectionnez **Propriétés** dans le menu contextuel.  
   
-7.  Dans la boîte de dialogue **Propriétés des fichiers ASP.NET temporaires** , cliquez sur l'onglet **Sécurité** .  
+7. Dans la boîte de dialogue **Propriétés des fichiers ASP.NET temporaires** , cliquez sur l'onglet **Sécurité** .  
   
-8.  Cliquez sur **Avancé**.  
+8. Cliquez sur **Avancé**.  
   
 9. Dans la boîte de dialogue **Paramètres de sécurité avancés des fichiers ASP.NET temporaires** , cliquez sur **Ajouter**.  
   
