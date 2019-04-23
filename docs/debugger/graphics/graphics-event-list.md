@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e71239755cf7cf5d38f6e71568a0cd7be0f0d98
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6af97740302d5e7053323b54ef11cbf1a279dd94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649990"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066778"
 ---
 # <a name="graphics-event-list"></a>Liste des événements Graphics
 La liste des événements Graphics dans Visual Studio Graphics Analyzer vous permet d'explorer les événements Direct3D enregistrés durant le rendu d'un frame de votre jeu ou application.
@@ -49,7 +49,7 @@ La liste des événements Graphics dans Visual Studio Graphics Analyzer vous per
 
 ##### <a name="to-change-the-event-list-view-mode"></a>Pour modifier le mode d'affichage de la liste des événements
 
--   Dans le **liste des événements Graphics** fenêtre, au-dessus de la liste d’événements, recherchez le **vue** liste déroulante et choisissez le le **chronologie** vue ou la **travail GPU** vue.
+- Dans le **liste des événements Graphics** fenêtre, au-dessus de la liste d’événements, recherchez le **vue** liste déroulante et choisissez le le **chronologie** vue ou la **travail GPU** vue.
 
 ### <a name="filtering-events"></a>Filtrage des événements
  Vous pouvez utiliser la zone Rechercher (située dans l'angle supérieur droit de la fenêtre **Liste des événements Graphics** ) pour filtrer la liste des événements et afficher uniquement ceux dont le nom contient les mots clés spécifiés. Vous pouvez spécifier des mots clés uniques comme `Vertex`(comme dans l’illustration précédente) ou des mots clés multiples en utilisant une liste délimitée par des points-virgules, comme `Draw;Primitive`(qui correspond aux événements dont le nom contient `Draw` ou `Primitive` ). Comme les recherches respectent les espaces (par exemple `VSSet``VS Set` sont des recherches différentes), spécifiez vos recherches avec soin.

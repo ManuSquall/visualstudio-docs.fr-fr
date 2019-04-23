@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f175e8870795374ab35058ef163f4752115d5be
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
-ms.translationtype: MTE95
+ms.openlocfilehash: 05fd28e6b47d74c28edc491458b73b487d282a45
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567245"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067727"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Bienvenue dans Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -54,24 +54,24 @@ Bienvenue dans Visual Studio ! Nous vous offrons tout ce dont vous avez besoin p
 
  Choisissez les outils dont vous avez besoin en fonction des exigences de votre application et du langage utilisé.
 
-1.  [Xamarin pour Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): base de code courante en C# pour tous les appareils
+1. [Xamarin pour Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): Un code commun base dans C# pour tous les appareils
 
-2.  [Apache Cordova avec Visual Studio](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): Une base de code pour HTML, CSS et JavaScript ou Typescript
+2. [Apache Cordova avec Visual Studio](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): Une base de code pour HTML, CSS et JavaScript ou Typescript
 
-3.  [Visual Studio Tools pour Unity](./cross-platform/visual-studio-tools-for-unity.md) : développement de jeux en 2D/3D en C#.
+3. [Visual Studio Tools pour Unity](./cross-platform/visual-studio-tools-for-unity.md): Développement de jeux 2D/3D enC#
 
-4.  [C++ pour développement multiplateforme](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): applications et bibliothèques de code partagées en C++
+4. [C++pour le développement multiplateforme](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): Bibliothèques de code partagé et des applications dansC++
 
-5.  [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md): émulateur Visual Studio pour Android : déboguez et testez vos applications Android, quel que soit l’IDE
+5. [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md): Visual Studio Emulator pour Android : Déboguer et tester vos applications Android, quel que soit l’IDE
 
 ## <a name="connect-your-apps-to-services"></a>Connecter vos applications aux services
  Vous pouvez vous connecter aux services inclus suivants (à condition que vous disposiez d’un compte pour chacun d’eux) :
 
--   [Azure Mobile Services](http://azure.microsoft.com/documentation/services/mobile-services/)
+- [Azure Mobile Services](http://azure.microsoft.com/documentation/services/mobile-services/)
 
--   [Azure Storage](http://azure.microsoft.com/documentation/services/storage/)
+- [Azure Storage](http://azure.microsoft.com/documentation/services/storage/)
 
--   Intégrez les API REST Office 365 à votre propre application pour vous connecter aux données stockées dans le cloud. Pour plus d’informations, consultez [ces exemples](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365).
+- Intégrez les API REST Office 365 à votre propre application pour vous connecter aux données stockées dans le cloud. Pour plus d’informations, consultez [ces exemples](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365).
 
 ## <a name="write-great-web-apps-with-aspnet"></a>Créer des applications web avec ASP.NET
  [ASP.NET 5](http://www.asp.net/vnext/overview/aspnet-vnext/aspnet-5-overview) est une mise à jour majeure de MVC, WebAPI et SignalR, et s’exécute sur Windows, Mac et Linux.  ASP.NET 5 a été conçu de toutes pièces pour vous fournir une pile .NET adaptée et composable pour la génération d’applications web et de services de cloud modernes.
@@ -79,7 +79,7 @@ Bienvenue dans Visual Studio ! Nous vous offrons tout ce dont vous avez besoin p
 ## <a name="build-test-and-manage-your-code"></a>Créer, tester et gérer votre code
 
 ### <a name="check-in-your-code"></a>Archiver votre code
- Si vous travaillez en équipe, vous devez transmettre les dernières versions du code de sorte que tous les membres utilisent la même base de code. Visual Studio s’intègre en toute transparence à Visual Studio Team Services ou Team Foundation Server pour fournir la gestion de version avec Git ou TFVC (Team Foundation Version Control). Utilisez Visual Studio Team Services pour stocker votre code dans le cloud sans avoir à gérer un serveur local. Utilisez Team Foundation Server si vous voulez gérer un serveur local. Chaque fois que vous créez un projet de code, vous avez la possibilité de l’ajouter à la gestion de version. Découvrez le système de contrôle de version qui vous convient : [Utiliser le contrôle de version](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).
+ Si vous travaillez en équipe, vous devez transmettre les dernières versions du code de sorte que tous les membres utilisent la même base de code. Visual Studio s’intègre en toute transparence à Visual Studio Team Services ou Team Foundation Server pour fournir la gestion de version avec Git ou TFVC (Team Foundation Version Control). Utilisez Visual Studio Team Services pour stocker votre code dans le cloud sans avoir à gérer un serveur local. Utilisez Team Foundation Server si vous voulez gérer un serveur local. Chaque fois que vous créez un projet de code, vous avez la possibilité de l’ajouter à la gestion de version. En savoir plus sur le contrôle de version système convient le mieux à vos besoins : [Utiliser le contrôle de version](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).
 
 ### <a name="build-your-app"></a>Générer votre application
  Vous pouvez [générer votre application localement](./ide/compiling-and-building-in-visual-studio.md) et vérifier qu’elle fonctionne correctement. Utilisez ensuite les [outils de débogage](./debugger/debugging-in-visual-studio.md) pour résoudre les éventuels problèmes qu’elle présente. Vous pouvez également créer des projets sur des serveurs partagés ou dans le cloud. Automatisez votre processus de génération pour générer le code que les développeurs de votre équipe ont vérifié dans le contrôle de version. Par exemple, vous pouvez générer un ou plusieurs projets la nuit ou chaque fois le code est archivé.
@@ -102,32 +102,32 @@ Bienvenue dans Visual Studio ! Nous vous offrons tout ce dont vous avez besoin p
 
 ## <a name="in-this-section"></a>Dans cette section
 
--   [Nouveautés dans Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)
+- [Nouveautés dans Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)
 
--   [Installer Visual Studio 2015](./install/install-visual-studio-2015.md)
+- [Installer Visual Studio 2015](./install/install-visual-studio-2015.md)
 
--   [Portage, migration et mise à niveau des projets Visual Studio](./porting/porting-migrating-and-upgrading-visual-studio-projects.md)
+- [Portage, migration et mise à niveau des projets Visual Studio](./porting/porting-migrating-and-upgrading-visual-studio-projects.md)
 
--   [IDE Visual Studio](./ide/visual-studio-ide.md)
+- [IDE Visual Studio](./ide/visual-studio-ide.md)
 
--   [Extensibilité de Visual Studio](./extensibility/extensibility-in-visual-studio.md)
+- [Extensibilité de Visual Studio](./extensibility/extensibility-in-visual-studio.md)
 
--   [Accès aux données dans Visual Studio](./data-tools/accessing-data-in-visual-studio.md)
+- [Accès aux données dans Visual Studio](./data-tools/accessing-data-in-visual-studio.md)
 
--   [Développement mobile multiplateforme](./cross-platform/cross-platform-mobile-development-in-visual-studio.md)
+- [Développement mobile multiplateforme](./cross-platform/cross-platform-mobile-development-in-visual-studio.md)
 
--   [Concepts de programmation communs à C# et Visual Basic](http://msdn.microsoft.com/library/fa9bf5e6-07c8-4b5b-b1ae-8a22816a63c6)
+- [Concepts de programmation communs à C# et Visual Basic](http://msdn.microsoft.com/library/fa9bf5e6-07c8-4b5b-b1ae-8a22816a63c6)
 
--   [Visual C++](http://msdn.microsoft.com/library/e8dcc44c-a3e2-4ffe-887c-fd15b18dc458)
+- [Visual C++](http://msdn.microsoft.com/library/e8dcc44c-a3e2-4ffe-887c-fd15b18dc458)
 
--   [JavaScript](./javascript/javascript-in-visual-studio.md)
+- [JavaScript](./javascript/javascript-in-visual-studio.md)
 
--   [Python](./python/getting-started-with-python.md)
+- [Python](./python/getting-started-with-python.md)
 
--   [Visual F#](http://msdn.microsoft.com/library/66f52f8a-a034-4c32-bb83-fa5b030faa4d)
+- [Visual F#](http://msdn.microsoft.com/library/66f52f8a-a034-4c32-bb83-fa5b030faa4d)
 
--   [Visual Studio LightSwitch](http://msdn.microsoft.com/library/2021a2cf-f684-493f-8d1b-4cdf39bc6eb3)
+- [Visual Studio LightSwitch](http://msdn.microsoft.com/library/2021a2cf-f684-493f-8d1b-4cdf39bc6eb3)
 
--   [DevOps et Application Lifecycle Management](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)
+- [DevOps et Application Lifecycle Management](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)
 
--   [Nous contacter](./ide/talk-to-us.md)
+- [Nous contacter](./ide/talk-to-us.md)

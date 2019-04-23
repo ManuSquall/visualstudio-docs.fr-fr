@@ -12,12 +12,12 @@ ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: baaa2691783562240b5e465c98aab43e6f8cd1e9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3f8317405c52850eceb816b958718835c029c6c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948134"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068299"
 ---
 # <a name="sccget-function"></a>Fonction SccGet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,21 +86,21 @@ SCCRTN SccGet(
   
  Il existe deux manières de résoudre cette situation où le cache local des versions de contrôle de code source est désynchronisé avec la base de données de contrôle de code source :  
   
-1.  N’autorisez pas la modification du nom d’un fichier dans la base de données de contrôle de code source qui est actuellement extrait.  
+1. N’autorisez pas la modification du nom d’un fichier dans la base de données de contrôle de code source qui est actuellement extrait.  
   
-2.  Effectuer l’équivalent de « suppression ancien » suivie de « Ajouter ». L’algorithme suivant est une façon d’y parvenir.  
+2. Effectuer l’équivalent de « suppression ancien » suivie de « Ajouter ». L’algorithme suivant est une façon d’y parvenir.  
   
-    1.  Appelez le [SccQueryChanges](../extensibility/sccquerychanges-function.md) (fonction) pour en savoir plus sur le changement de nom d’un fichier a.txt en b.txt dans la base de données de contrôle de code source.  
+    1. Appelez le [SccQueryChanges](../extensibility/sccquerychanges-function.md) (fonction) pour en savoir plus sur le changement de nom d’un fichier a.txt en b.txt dans la base de données de contrôle de code source.  
   
-    2.  Renommez le fichier a.txt local en b.txt.  
+    2. Renommez le fichier a.txt local en b.txt.  
   
-    3.  Appelez le `SccGet` (fonction) pour le fichier a.txt et b.txt.  
+    3. Appelez le `SccGet` (fonction) pour le fichier a.txt et b.txt.  
   
-    4.  Étant donné que le fichier a.txt n’existe pas dans la base de données de contrôle de code source, le cache de la version locale est purgé des informations de version a.txt manquantes.  
+    4. Étant donné que le fichier a.txt n’existe pas dans la base de données de contrôle de code source, le cache de la version locale est purgé des informations de version a.txt manquantes.  
   
-    5.  Le fichier b.txt en cours d’extraction est fusionné avec le contenu du fichier b.txt local.  
+    5. Le fichier b.txt en cours d’extraction est fusionné avec le contenu du fichier b.txt local.  
   
-    6.  Le fichier b.txt mis à jour peut désormais être archivé.  
+    6. Le fichier b.txt mis à jour peut désormais être archivé.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions d’API de plug-in de contrôle de source](../extensibility/source-control-plug-in-api-functions.md)   

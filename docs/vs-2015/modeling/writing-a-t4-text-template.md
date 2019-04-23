@@ -13,12 +13,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 20974c9ebeaaa452be7078db51cb633be498b24c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2545db069db73fed59c95b3b4adc576facd51bc5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950169"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067637"
 ---
 # <a name="writing-a-t4-text-template"></a>Écriture d'un modèle de texte T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -214,7 +214,7 @@ private void WriteSquareLine(int i)
   
  Pour plus d’informations, consultez [Directive d’importation T4](../modeling/t4-import-directive.md).  
   
-###  <a name="Include"></a> Y compris le code et le texte  
+### <a name="Include"></a> Y compris le code et le texte  
  La directive `include` insère du texte à partir d'un autre fichier de modèle. Par exemple, cette directive insère le contenu de `test.txt`.  
   
  `<#@ include file="c:\test.txt" #>`  

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1428b4c5a54b901ca3e21ffc2b23d71763e7804
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 65f3090c6b96290527d2508ba47c899c81d6e6dd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613282"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067077"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] shell est l’agent principal d’intégration dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. L’interpréteur de commandes fournit les fonctionnalités nécessaires pour activer les VSPackages partager des services courants. Étant donné que l’objectif architectural de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] consiste à vest des fonctionnalités principales dans les VSPackages, l’interpréteur de commandes est une infrastructure pour fournir des fonctionnalités de base et prend en charge les communications entre son composant VSPackages.
@@ -38,17 +38,17 @@ Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] shell est l’ag
 
 - Sélection d’interpréteur de commandes à l’échelle du suivi, contexte et des devises. L’interpréteur de commandes effectue le suivi des éléments suivants :
 
-  -   Le projet actuel
+  - Le projet actuel
 
-  -   L’élément de projet actuel ou ItemID actuel <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>
+  - L’élément de projet actuel ou ItemID actuel <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>
 
-  -   La sélection actuelle pour le **propriétés** fenêtre ou `SelectionContainer`
+  - La sélection actuelle pour le **propriétés** fenêtre ou `SelectionContainer`
 
-  -   Le contexte de l’interface utilisateur, ID ou CmdUIGuids qui contrôlent la visibilité des commandes, menus et barres d’outils
+  - Le contexte de l’interface utilisateur, ID ou CmdUIGuids qui contrôlent la visibilité des commandes, menus et barres d’outils
 
-  -   Les éléments actuellement actifs, tels que la fenêtre active, le document et le Gestionnaire d’annulation
+  - Les éléments actuellement actifs, tels que la fenêtre active, le document et le Gestionnaire d’annulation
 
-  -   Les attributs de contexte de l’utilisateur qui pilotent l’aide dynamique
+  - Les attributs de contexte de l’utilisateur qui pilotent l’aide dynamique
 
   L’interpréteur de commandes transmet également la communication entre les VSPackages installés et les services en cours. Il prend en charge les fonctionnalités principales de l’interpréteur de commandes et les rend disponibles pour tous les packages VS intégrés dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Ces fonctionnalités incluent les éléments suivants :
 

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4bad52a02cb87f611293283deb3743c6e148e688
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: e293a0136e6ae2d8b6a6747201e484fdea43f91e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875912"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067233"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-runtime"></a>Procédure pas à pas : Mettre à jour les contrôles sur un ruban lors de l’exécution
 
@@ -30,17 +30,17 @@ Cette procédure pas à pas montre comment utiliser le modèle objet de ruban po
 
 [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
-L’exemple tire des données de l’exemple de base de données Northwind pour remplir une zone de liste modifiable et un menu dans Microsoft Office Outlook. Éléments que vous sélectionnez dans ces contrôles automatiquement renseigner les champs comme **à** et **sujet** dans un message électronique.
+L'exemple extrait des données de l'exemple de base de données Northwind pour remplir une zone de liste modifiable et un menu dans Microsoft Office Outlook. Éléments que vous sélectionnez dans ces contrôles automatiquement renseigner les champs comme **à** et **sujet** dans un message électronique.
 
 Cette procédure pas à pas décrit les tâches suivantes :
 
--   Créer un nouveau projet de complément Outlook VSTO.
+- Créer un nouveau projet de complément Outlook VSTO.
 
--   Créer un groupe de ruban personnalisé.
+- Créer un groupe de ruban personnalisé.
 
--   Ajouter le groupe personnalisé à un onglet intégré.
+- Ajouter le groupe personnalisé à un onglet intégré.
 
--   Mettre à jour les contrôles du ruban lors de l’exécution.
+- Mettre à jour les contrôles du ruban lors de l’exécution.
 
 > [!NOTE]
 > Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
@@ -49,9 +49,9 @@ Cette procédure pas à pas décrit les tâches suivantes :
 
 Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   Microsoft Outlook
+- Microsoft Outlook
 
 ## <a name="create-a-new-outlook-vsto-add-in-project"></a>Créer un nouveau projet de complément Outlook VSTO
 
@@ -59,11 +59,11 @@ Commencez par créer un projet de complément VSTO Outlook.
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>Pour créer un projet de complément VSTO Outlook
 
-1.  Dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], créer un projet de complément Outlook VSTO portant le nom **Ribbon_Update_At_Runtime**.
+1. Dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], créer un projet de complément Outlook VSTO portant le nom **Ribbon_Update_At_Runtime**.
 
-2.  Dans la boîte de dialogue **Nouveau projet** , sélectionnez **Créer le répertoire pour la solution**.
+2. Dans la boîte de dialogue **Nouveau projet** , sélectionnez **Créer le répertoire pour la solution**.
 
-3.  Enregistrez le projet dans le répertoire de projet par défaut.
+3. Enregistrez le projet dans le répertoire de projet par défaut.
 
      Pour plus d'informations, voir [Procédure : Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -73,25 +73,25 @@ Le ruban pour cet exemple s’affichera lorsqu’un utilisateur composera un nou
 
 ### <a name="to-design-a-custom-group"></a>Pour concevoir un groupe personnalisé
 
-1.  Dans le menu **Projet** , cliquez sur **Ajouter un nouvel élément**.
+1. Dans le menu **Projet** , cliquez sur **Ajouter un nouvel élément**.
 
-2.  Dans la boîte de dialogue **Ajouter un nouvel élément** , sélectionnez **Ruban (Concepteur visuel)**.
+2. Dans la boîte de dialogue **Ajouter un nouvel élément** , sélectionnez **Ruban (Concepteur visuel)**.
 
-3.  Modifier le nom du nouveau ruban par **CustomerRibbon**, puis cliquez sur **ajouter**.
+3. Modifier le nom du nouveau ruban par **CustomerRibbon**, puis cliquez sur **ajouter**.
 
      Le *CustomerRibbon.cs* ou *CustomerRibbon.vb* s’ouvre dans le Concepteur de ruban et affiche un onglet par défaut et un groupe.
 
-4.  Cliquez sur le Concepteur de ruban pour le sélectionner.
+4. Cliquez sur le Concepteur de ruban pour le sélectionner.
 
-5.  Dans le **propriétés** fenêtre, cliquez sur la flèche déroulante en regard du **RibbonType** propriété, puis cliquez sur **Microsoft.Outlook.Mail.Compose**.
+5. Dans le **propriétés** fenêtre, cliquez sur la flèche déroulante en regard du **RibbonType** propriété, puis cliquez sur **Microsoft.Outlook.Mail.Compose**.
 
      Ainsi, le ruban s’affichera lorsque l’utilisateur composera un nouveau message électronique dans Outlook.
 
-6.  Dans le Concepteur de ruban, cliquez sur **Group1** pour le sélectionner.
+6. Dans le Concepteur de ruban, cliquez sur **Group1** pour le sélectionner.
 
-7.  Dans le **propriétés** fenêtre, définissez **étiquette** à **Customer Purchases**.
+7. Dans le **propriétés** fenêtre, définissez **étiquette** à **Customer Purchases**.
 
-8.  À partir de la **contrôles de ruban Office** onglet de la **boîte à outils**, faites glisser un **ComboBox** sur le **Customer Purchases** groupe.
+8. À partir de la **contrôles de ruban Office** onglet de la **boîte à outils**, faites glisser un **ComboBox** sur le **Customer Purchases** groupe.
 
 9. Cliquez sur **ComboBox1** pour le sélectionner.
 
@@ -111,17 +111,17 @@ Un onglet intégré est un onglet qui se trouve déjà sur le ruban d’un Explo
 
 ### <a name="to-add-the-custom-group-to-a-built-in-tab"></a>Pour ajouter le groupe personnalisé à un onglet intégré
 
-1.  Cliquez sur le **TabAddins (intégré)** onglet pour le sélectionner.
+1. Cliquez sur le **TabAddins (intégré)** onglet pour le sélectionner.
 
-2.  Dans le **propriétés** fenêtre, développez le **ControlId** propriété, puis définissez **OfficeId** à **valeur TabNewMailMessage**.
+2. Dans le **propriétés** fenêtre, développez le **ControlId** propriété, puis définissez **OfficeId** à **valeur TabNewMailMessage**.
 
      Cette opération ajoute le **Customer Purchases** groupe la **Messages** onglet du ruban qui s’affiche dans un nouveau message électronique.
 
-3.  Cliquez sur le **Customer Purchases** groupe pour le sélectionner.
+3. Cliquez sur le **Customer Purchases** groupe pour le sélectionner.
 
-4.  Dans le **propriétés** fenêtre, développez le **Position** propriété, cliquez sur la flèche déroulante en regard du **PositionType** propriété, puis cliquez sur  **BeforeOfficeId**.
+4. Dans le **propriétés** fenêtre, développez le **Position** propriété, cliquez sur la flèche déroulante en regard du **PositionType** propriété, puis cliquez sur  **BeforeOfficeId**.
 
-5.  Définir le **OfficeId** propriété **GroupClipboard**.
+5. Définir le **OfficeId** propriété **GroupClipboard**.
 
      Cela positionne le **Customer Purchases** groupe avant du **Presse-papiers** groupe de la **Messages** onglet.
 
@@ -131,31 +131,31 @@ Utilisez la fenêtre **Sources de données** pour ajouter un dataset typé à vo
 
 ### <a name="to-create-the-data-source"></a>Pour créer la source de données
 
-1.  Dans le menu **Données** , cliquez sur **Ajouter une nouvelle source de données**.
+1. Dans le menu **Données** , cliquez sur **Ajouter une nouvelle source de données**.
 
      Cette opération démarre le **Assistant de Configuration de Source de données**.
 
-2.  Sélectionnez **base de données**, puis cliquez sur **suivant**.
+2. Sélectionnez **base de données**, puis cliquez sur **suivant**.
 
-3.  Sélectionnez **Dataset**, puis cliquez sur **suivant**.
+3. Sélectionnez **Dataset**, puis cliquez sur **suivant**.
 
-4.  Sélectionnez une connexion de données à la base de données Microsoft SQL Server Compact 4.0 d’exemple Northwind ou ajoutez une nouvelle connexion à l’aide de la **nouvelle connexion** bouton.
+4. Sélectionnez une connexion de données à la base de données Microsoft SQL Server Compact 4.0 d’exemple Northwind ou ajoutez une nouvelle connexion à l’aide de la **nouvelle connexion** bouton.
 
-5.  Une fois une connexion a été sélectionnée ou créée, cliquez sur **suivant**.
+5. Une fois une connexion a été sélectionnée ou créée, cliquez sur **suivant**.
 
-6.  Cliquez sur **suivant** pour enregistrer la chaîne de connexion.
+6. Cliquez sur **suivant** pour enregistrer la chaîne de connexion.
 
-7.  Sur le **choisir vos objets de base de données** page, développez **Tables**.
+7. Sur le **choisir vos objets de base de données** page, développez **Tables**.
 
-8.  Cochez la case située en regard de chacune des tables suivantes :
+8. Cochez la case située en regard de chacune des tables suivantes :
 
-    1.  **Clients**
+    1. **Clients**
 
-    2.  **Détails de la commande**
+    2. **Détails de la commande**
 
-    3.  **Commandes**
+    3. **Commandes**
 
-    4.  **Produits**
+    4. **Produits**
 
 9. Cliquez sur **Terminer**.
 
@@ -163,11 +163,11 @@ Utilisez la fenêtre **Sources de données** pour ajouter un dataset typé à vo
 
 Utilisez le modèle objet de ruban pour effectuer les tâches suivantes :
 
--   Ajouter des noms de clients à la **clients** zone de liste déroulante.
+- Ajouter des noms de clients à la **clients** zone de liste déroulante.
 
--   Ajouter des contrôles menu et un bouton à la **Products Purchased** menu qui représentent les commandes et les produits vendus.
+- Ajouter des contrôles menu et un bouton à la **Products Purchased** menu qui représentent les commandes et les produits vendus.
 
--   Remplir à, objet et corps de champs des nouveaux messages électroniques à l’aide des données à partir de la **clients** zone de liste déroulante et **Products Purchased** menu.
+- Remplir à, objet et corps de champs des nouveaux messages électroniques à l’aide des données à partir de la **clients** zone de liste déroulante et **Products Purchased** menu.
 
 ### <a name="to-update-controls-in-the-custom-group-by-using-the-ribbon-object-model"></a>Pour mettre à jour des contrôles dans le groupe personnalisé en utilisant le modèle objet de ruban
 
@@ -257,31 +257,31 @@ Pour créer un message de courrier électronique de suivi client, sélectionnez 
 
 ### <a name="to-test-the-controls-in-the-custom-group"></a>Pour tester les contrôles dans le groupe personnalisé
 
-1.  Appuyez sur **F5** pour exécuter votre projet.
+1. Appuyez sur **F5** pour exécuter votre projet.
 
      Outlook démarre.
 
-2.  Dans Outlook, sur le **fichier** menu, pointez sur **New**, puis cliquez sur **Message électronique**.
+2. Dans Outlook, sur le **fichier** menu, pointez sur **New**, puis cliquez sur **Message électronique**.
 
      Procédez aux étapes suivantes :
 
-    -   Une nouvelle fenêtre de l'inspecteur de message électronique s'affiche.
+    - Une nouvelle fenêtre de l'inspecteur de message électronique s'affiche.
 
-    -   Sur le **Message** onglet du ruban, le **Customer Purchases** groupe apparaît avant le **Presse-papiers** groupe.
+    - Sur le **Message** onglet du ruban, le **Customer Purchases** groupe apparaît avant le **Presse-papiers** groupe.
 
-    -   Le **clients** zone de liste déroulante dans le groupe est mis à jour avec les noms des clients dans la base de données Northwind.
+    - Le **clients** zone de liste déroulante dans le groupe est mis à jour avec les noms des clients dans la base de données Northwind.
 
-3.  Sur le **Message** onglet du ruban, dans le **Customer Purchases** de groupe, sélectionnez un client à partir de la **clients** zone de liste déroulante.
+3. Sur le **Message** onglet du ruban, dans le **Customer Purchases** de groupe, sélectionnez un client à partir de la **clients** zone de liste déroulante.
 
      Procédez aux étapes suivantes :
 
-    -   Le **Products Purchased** menu est mis à jour pour afficher chaque commande pour le client sélectionné.
+    - Le **Products Purchased** menu est mis à jour pour afficher chaque commande pour le client sélectionné.
 
-    -   Chaque sous-menu de commande client est mis à jour pour afficher les produits achetés dans cette commande.
+    - Chaque sous-menu de commande client est mis à jour pour afficher les produits achetés dans cette commande.
 
-    -   Adresse de messagerie du client sélectionné est ajouté à la **à** ligne du message électronique et l’objet et le corps du message électronique sont remplis avec du texte.
+    - Adresse de messagerie du client sélectionné est ajouté à la **à** ligne du message électronique et l’objet et le corps du message électronique sont remplis avec du texte.
 
-4.  Cliquez sur le **Products Purchases** menu, pointez sur une commande, puis cliquez sur un produit de la commande.
+4. Cliquez sur le **Products Purchases** menu, pointez sur une commande, puis cliquez sur un produit de la commande.
 
      Le nom du produit est ajouté au corps du message électronique.
 
@@ -289,11 +289,11 @@ Pour créer un message de courrier électronique de suivi client, sélectionnez 
 
 Pour plus d'informations sur la personnalisation de l'interface utilisateur d'Office, consultez les rubriques suivantes :
 
--   Ajouter une interface utilisateur contextuelle à une personnalisation au niveau du document. Pour plus d’informations, consultez [vue d’ensemble du volet Actions](../vsto/actions-pane-overview.md).
+- Ajouter une interface utilisateur contextuelle à une personnalisation au niveau du document. Pour plus d’informations, consultez [vue d’ensemble du volet Actions](../vsto/actions-pane-overview.md).
 
--   Étendre un formulaire Microsoft Office standard ou personnalisé. Pour plus d’informations, consultez [Procédure pas à pas : Concevoir une zone de formulaire Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
+- Étendre un formulaire Microsoft Office standard ou personnalisé. Pour plus d’informations, consultez [Procédure pas à pas : Concevoir une zone de formulaire Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
--   Ajouter un volet de tâches personnalisé dans Outlook. Pour plus d’informations, consultez [volets de tâches personnalisés](../vsto/custom-task-panes.md).
+- Ajouter un volet de tâches personnalisé dans Outlook. Pour plus d’informations, consultez [volets de tâches personnalisés](../vsto/custom-task-panes.md).
 
 ## <a name="see-also"></a>Voir aussi
 

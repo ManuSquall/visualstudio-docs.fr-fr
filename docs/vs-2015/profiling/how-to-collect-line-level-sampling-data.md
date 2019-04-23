@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour collecter des données d’échantillonnage au niveau ligne | Microsoft Docs
+title: 'Procédure : Collecter des données d’échantillonnage au niveau de la ligne | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -11,14 +11,14 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a2ba4c8a58a2969ced066c6211fd9faa7326cbcf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 65890bf31a1257c3a41bc1fd7ed3f732c50eda14
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779022"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068097"
 ---
-# <a name="how-to-collect-line-level-sampling-data"></a>Guide pratique pour collecter des données d’échantillonnage au niveau ligne
+# <a name="how-to-collect-line-level-sampling-data"></a>Procédure : Collecter des données d’échantillonnage au niveau ligne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L’échantillonnage au niveau ligne permet au profileur de déterminer à quel endroit du code d’une fonction exigeant d’importantes ressources processeur (telle qu’une fonction avec de nombreux échantillons exclusifs) le processeur doit passer le plus de temps.  
@@ -52,11 +52,11 @@ L’échantillonnage au niveau ligne permet au profileur de déterminer à quel 
 ### <a name="turn-off-line-level-sampling-for-managed-code"></a>Désactiver l’échantillonnage au niveau ligne dans du code managé  
  Par défaut, l’échantillonnage au niveau ligne est activé. Vous pouvez désactiver la collecte des données au niveau ligne dans du code managé en effectuant l’une des opérations suivantes :  
   
--   Avant de commencer le profilage, tapez **VSPerfCLREnv /samplelineoff**. Cela affecte à la fois les applications et les services.  
+- Avant de commencer le profilage, tapez **VSPerfCLREnv /samplelineoff**. Cela affecte à la fois les applications et les services.  
   
      — ou —  
   
--   Quand vous démarrez une application, tapez **VSPerfCmd /lineoff \<autres arguments>**.  
+- Quand vous démarrez une application, tapez **VSPerfCmd /lineoff \<autres arguments>**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Configuration de sessions de performance](../profiling/configuring-performance-sessions.md)   

@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8485885cbba43ea9eaef76616607861c44c2ab24
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: b395b396ab182ca03be35cddc8d237506b43e39c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668780"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066609"
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Procédure : créer des méthodes DataContext mappées à des procédures stockées et à des fonctions (Concepteur O/R)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,17 +34,17 @@ Procédures stockées et fonctions peuvent être ajoutées à la [!INCLUDE[vs_or
   
 #### <a name="to-create-datacontext-methods-that-return-automatically-generated-types"></a>Pour créer des méthodes DataContext qui retournent automatiquement les types générés  
   
-1.  Dans **Explorateur de serveurs**/**l’Explorateur de base de données**, développez le **Stored Procedures** nœud de la base de données que vous utilisez.  
+1. Dans **Explorateur de serveurs**/**l’Explorateur de base de données**, développez le **Stored Procedures** nœud de la base de données que vous utilisez.  
   
-2.  Localisez la procédure stockée requise et faites-la glisser vers une zone vide dans le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
+2. Localisez la procédure stockée requise et faites-la glisser vers une zone vide dans le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
      La méthode <xref:System.Data.Linq.DataContext> est créée avec un type de retour généré automatiquement et apparaît dans le volet **Méthodes**.  
   
 #### <a name="to-create-datacontext-methods-that-have-the-return-type-of-an-entity-class"></a>Pour créer des méthodes DataContext qui ont le type de retour d'une classe d'entité  
   
-1.  Dans **Explorateur de serveurs**/**l’Explorateur de base de données**, développez le **Stored Procedures** nœud de la base de données que vous utilisez.  
+1. Dans **Explorateur de serveurs**/**l’Explorateur de base de données**, développez le **Stored Procedures** nœud de la base de données que vous utilisez.  
   
-2.  Localisez la procédure stockée requise et faites-la glisser sur une classe d'entité existante dans le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
+2. Localisez la procédure stockée requise et faites-la glisser sur une classe d'entité existante dans le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
      La méthode <xref:System.Data.Linq.DataContext> est créée avec le type de retour de la classe d’entité sélectionnée et apparaît dans le volet **Méthodes**.  
   
