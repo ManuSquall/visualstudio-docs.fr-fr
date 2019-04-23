@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 63726f9f38cdede6c8a0525b74244baac9455aad
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 02bfb1b4797973b3946405c38598409bf3247c70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790379"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065738"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Déployer des applications UWP à partir de Visual Studio
 
@@ -36,18 +36,18 @@ Le déploiement est automatique lorsque vous déboguez votre application à part
 
 - Déploiement d'une application qui est déboguée quand elle est démarrée par une autre application ou méthode.
 
-##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Comment déployer une application UWP
+## <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Comment déployer une application UWP
  Le déploiement manuel d'une application obéit à une procédure simple :
 
-1.  Si le déploiement s'effectue sur un périphérique distant, spécifiez le nom ou l'adresse IP du périphérique dans la page des propriétés du projet du projet de démarrage de l'application. (Les étapes associées sont répertoriées plus bas dans cette rubrique.)
+1. Si le déploiement s'effectue sur un périphérique distant, spécifiez le nom ou l'adresse IP du périphérique dans la page des propriétés du projet du projet de démarrage de l'application. (Les étapes associées sont répertoriées plus bas dans cette rubrique.)
 
-2.  Dans la barre d'outils Déboguer de Visual Studio, choisissez la cible de déploiement dans la liste déroulante située à côté du bouton **Démarrer le débogage** .
+2. Dans la barre d'outils Déboguer de Visual Studio, choisissez la cible de déploiement dans la liste déroulante située à côté du bouton **Démarrer le débogage** .
 
      ![Exécuter sur l’ordinateur Local](../debugger/media/vsrun_f5_local.png "VSRUN_F5_Local")
 
-3.  Dans le menu **Générer** , choisissez **Déployer**.
+3. Dans le menu **Générer** , choisissez **Déployer**.
 
-##  <a name="BKMK_How_to_specify_a_remote_device"></a> Comment spécifier un périphérique distant
+## <a name="BKMK_How_to_specify_a_remote_device"></a> Comment spécifier un périphérique distant
 
 **Composants requis**
 
@@ -92,7 +92,7 @@ Le déploiement utilise le canal réseau du débogueur distant pour envoyer les 
 
 10. Entrez le nom du réseau du périphérique distant dans la zone **Ordinateur distant** ou cliquez sur **Rechercher** pour sélectionner le périphérique dans la boîte de dialogue **Sélectionner une connexion du débogueur distant** .
 
-##  <a name="BKMK_Deployment_options"></a> Options de déploiement
+## <a name="BKMK_Deployment_options"></a> Options de déploiement
 
 Vous pouvez définir les options de déploiement suivantes sur la page de propriétés de débogage du projet de démarrage.
 

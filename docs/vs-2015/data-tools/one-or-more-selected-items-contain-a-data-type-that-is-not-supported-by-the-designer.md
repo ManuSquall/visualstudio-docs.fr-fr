@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6e6c44895a022521899bdd0383ee71257b83fe3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: ac5507722a62942dbca67518c2f6689bf29aacfc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668819"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065706"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>Un ou plusieurs éléments sélectionnés contient un type de données non pris en charge par le concepteur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,9 +23,9 @@ Un ou plusieurs des éléments déplacés à partir de **Explorateur de serveurs
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
-1.  Créez une vue basée sur la table souhaitée qui n'inclut pas le type de données non pris en charge.  
+1. Créez une vue basée sur la table souhaitée qui n'inclut pas le type de données non pris en charge.  
   
-2.  Faites glisser la vue à partir de **Explorateur de serveurs**/**Database Explorer** sur le concepteur.  
+2. Faites glisser la vue à partir de **Explorateur de serveurs**/**Database Explorer** sur le concepteur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

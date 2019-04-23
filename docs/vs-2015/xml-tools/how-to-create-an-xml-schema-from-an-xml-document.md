@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 43c4f50b5793933065b2f3ff4342d4aabdbd130b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 8e32d96451e2494816ddd5f7a66591f40f847e85
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669979"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066063"
 ---
 # <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Procédure : création d'un schéma XML à partir d'un document XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ L'éditeur XML permet de créer un schéma de langage XSD (XML Schema definition
   
 ### <a name="to-create-an-xml-schema"></a>Pour créer un schéma XML  
   
-1.  Chargez un document d'instance XML dans l'éditeur XML.  
+1. Chargez un document d'instance XML dans l'éditeur XML.  
   
-2.  Cliquez sur le **Create Schema** bouton à partir de la **barre d’outils**.  
+2. Cliquez sur le **Create Schema** bouton à partir de la **barre d’outils**.  
   
      Un document de schéma XML est créé et ouvert pour chaque espace de noms trouvé dans le document d'instance XML. Chaque schéma est ouvert comme un fichier divers temporaire.  
   

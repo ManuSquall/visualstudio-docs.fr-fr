@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 870255afe466709f8e9a5fc48e5135943443900d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 63328af2211f18fe553c32b018ed0a8422a1857f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001603"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066349"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Déploiement de composants COM avec ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,9 +49,9 @@ Déploiement de composants COM hérités a toujours été une tâche difficile. 
   
  Il existe deux façons qui [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] déploie les composants COM :  
   
--   Utilisez le programme d’amorçage pour déployer vos composants COM ; Cela fonctionne sur toutes les plateformes prises en charge.  
+- Utilisez le programme d’amorçage pour déployer vos composants COM ; Cela fonctionne sur toutes les plateformes prises en charge.  
   
--   Utilisez le composant natif d’isolement (également appelé COM sans inscription) déploiement. Toutefois, cela ne fonctionne que sur un Windows XP ou un système d’exploitation ultérieur.  
+- Utilisez le composant natif d’isolement (également appelé COM sans inscription) déploiement. Toutefois, cela ne fonctionne que sur un Windows XP ou un système d’exploitation ultérieur.  
   
 ### <a name="example-of-isolating-and-deploying-a-simple-com-component"></a>Exemple d’isolation et de déploiement d’un composant COM Simple  
  Afin d’illustrer le déploiement du composant COM sans inscription, cet exemple montre comment créer une application basée sur Windows en Visual Basic qui fait référence à un composant COM natif isolé créé à l’aide de Visual Basic 6.0 et le déployer en utilisant [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
@@ -60,16 +60,16 @@ Déploiement de composants COM hérités a toujours été une tâche difficile. 
   
 ##### <a name="to-create-a-native-com-component"></a>Pour créer un composant COM natif  
   
-1.  À l’aide de Visual Basic 6.0, à partir de la **fichier** menu, cliquez sur **New**, puis **projet**.  
+1. À l’aide de Visual Basic 6.0, à partir de la **fichier** menu, cliquez sur **New**, puis **projet**.  
   
-2.  Dans le **nouveau projet** boîte de dialogue, sélectionnez le **Visual Basic** nœud et sélectionnez un **DLL ActiveX** projet. Dans la zone **Nom** , tapez `VB6Hello`.  
+2. Dans le **nouveau projet** boîte de dialogue, sélectionnez le **Visual Basic** nœud et sélectionnez un **DLL ActiveX** projet. Dans la zone **Nom** , tapez `VB6Hello`.  
   
     > [!NOTE]
     >  Types de projets DLL ActiveX et le contrôle ActiveX sont pris en charge avec COM sans inscription ; Types de projets EXE ActiveX et ActiveX Document ne sont pas pris en charge.  
   
-3.  Dans **l’Explorateur de solutions**, double-cliquez sur **Class1.vb** pour ouvrir l’éditeur de texte.  
+3. Dans **l’Explorateur de solutions**, double-cliquez sur **Class1.vb** pour ouvrir l’éditeur de texte.  
   
-4.  Dans Class1.vb, ajoutez le code suivant après le code généré pour le `New` méthode :  
+4. Dans Class1.vb, ajoutez le code suivant après le code généré pour le `New` méthode :  
   
     ```  
     Public Sub SayHello()  
@@ -77,7 +77,7 @@ Déploiement de composants COM hérités a toujours été une tâche difficile. 
     End Sub  
     ```  
   
-5.  Générez le composant. À partir de la **Build** menu, cliquez sur **générer la Solution**.  
+5. Générez le composant. À partir de la **Build** menu, cliquez sur **générer la Solution**.  
   
 > [!NOTE]
 >  COM sans inscription prend en charge uniquement les DLL et COM contrôle les types de projets. Vous ne pouvez pas utiliser les fichiers exe avec COM sans inscription.  

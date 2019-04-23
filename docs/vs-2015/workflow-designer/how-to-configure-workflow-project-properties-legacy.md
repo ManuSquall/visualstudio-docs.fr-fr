@@ -15,25 +15,25 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a7ff48dec8d38b57d400f31f294a0d0b40ed6cc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f551b868b415eaf600a9345aff4ac4f0d61ff234
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947496"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065719"
 ---
 # <a name="how-to-configure-workflow-project-properties-legacy"></a>Procédure : Configurer des propriétés de projet de workflow (héritées)
 Procédez comme suit pour afficher ou modifier des propriétés associées aux projets de workflow.  
   
 ### <a name="to-view-or-modify-workflow-project-properties"></a>Pour afficher ou modifier des propriétés de projet de workflow  
   
-1.  Si **l’Explorateur de solutions** fenêtre n’est pas visible, sélectionnez **l’Explorateur de solutions** sur le **vue** menu.  
+1. Si **l’Explorateur de solutions** fenêtre n’est pas visible, sélectionnez **l’Explorateur de solutions** sur le **vue** menu.  
   
-2.  Dans l’**Explorateur de solutions**, sélectionnez un projet.  
+2. Dans l’**Explorateur de solutions**, sélectionnez un projet.  
   
-3.  Si **propriétés** fenêtre n’est pas visible, sélectionnez **fenêtre Propriétés** sur le **vue** menu.  
+3. Si **propriétés** fenêtre n’est pas visible, sélectionnez **fenêtre Propriétés** sur le **vue** menu.  
   
-4.  Dans le projet **propriétés** fenêtre, afficher et modifier les propriétés que vous souhaitez modifier.  
+4. Dans le projet **propriétés** fenêtre, afficher et modifier les propriétés que vous souhaitez modifier.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Création de projets de flux de travail hérités](../workflow-designer/creating-legacy-workflow-projects.md)

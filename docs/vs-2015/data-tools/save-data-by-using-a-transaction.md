@@ -19,12 +19,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ba83cf7db6415eefcb989f678bc4149d495016e4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: c133bb3f8ef56378c20b985aa118e48e71109cea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658342"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065257"
 ---
 # <a name="save-data-by-using-a-transaction"></a>Enregistrer des données à l’aide d’une transaction
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,15 +46,15 @@ Vous enregistrez des données dans une transaction en utilisant le <xref:System.
   
 ### <a name="to-add-a-reference-to-the-systemtransactions-dll"></a>Pour ajouter une référence à la dll System.Transactions  
   
-1.  Sur le **projet** menu, sélectionnez **ajouter une référence**.  
+1. Sur le **projet** menu, sélectionnez **ajouter une référence**.  
   
-2.  Sur le **.NET** onglet (**SQL Server** onglet pour les projets SQL Server), sélectionnez **System.Transactions**, puis sélectionnez **OK**.  
+2. Sur le **.NET** onglet (**SQL Server** onglet pour les projets SQL Server), sélectionnez **System.Transactions**, puis sélectionnez **OK**.  
   
      Une référence à System.Transactions.dll est ajoutée au projet.  
   
 ### <a name="to-save-data-in-a-transaction"></a>Pour enregistrer les données dans une transaction  
   
--   Ajoutez du code pour enregistrer des données dans à l’aide de l’instruction qui contient la transaction. Le code suivant montre comment créer et instancier un <xref:System.Transactions.TransactionScope> objet dans un à l’aide de déclaration :  
+- Ajoutez du code pour enregistrer des données dans à l’aide de l’instruction qui contient la transaction. Le code suivant montre comment créer et instancier un <xref:System.Transactions.TransactionScope> objet dans un à l’aide de déclaration :  
   
      [!code-csharp[VbRaddataSaving#11](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#11)]
      [!code-vb[VbRaddataSaving#11](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#11)]  
