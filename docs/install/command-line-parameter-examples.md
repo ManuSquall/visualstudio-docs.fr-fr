@@ -1,7 +1,7 @@
 ---
 title: Exemples de paramètres de ligne de commande pour l’installation
 description: Personnalisez ces exemples pour créer votre propre installation en ligne de commande de Visual Studio.
-ms.date: 01/16/2019
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: 837F31AA-F121-46e9-9996-F8BCE768E579
@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6f7fe4a26da2c2b8d37215cd71e39eacf92eaa37
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 4196916958de2df4f9c3a12f030b22d712e87502
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324264"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789960"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Exemples de paramètres de ligne de commande pour l’installation de Visual Studio
 
@@ -38,17 +38,17 @@ Pour obtenir la liste des charges de travail et des composants que vous pouvez i
 * Installez une instance minimale de Visual Studio, sans invites interactives, mais avec la progression affichée :
 
   ```cmd
-  vs_enterprise.exe --installPath C:\minVS ^
+   vs_enterprise.exe --installPath C:\minVS ^
    --add Microsoft.VisualStudio.Workload.CoreEditor ^
    --passive --norestart
   ```
 
 * Mettez à jour une instance Visual Studio en utilisant la ligne de commande, sans invites interactives, mais avec la progression affichée :
 
-  ```cmd
-  vs_enterprise.exe --update --quiet --wait
-  vs_enterprise.exe update --wait --passive --norestart --installPath "C:\installPathVS"
-  ```
+   ```cmd
+   vs_enterprise.exe --update --quiet --wait
+   vs_enterprise.exe update --wait --passive --norestart --installPath "C:\installPathVS"
+   ```
 
   > [!NOTE]
   > Les deux commandes sont requises. La première commande met à jour le programme d’installation de Visual Studio. La seconde commande met à jour l’instance de Visual Studio. Pour éviter l’affichage d’une boîte de dialogue Contrôle de compte d’utilisateur, exécutez l’invite de commande en tant qu’administrateur.
@@ -56,7 +56,7 @@ Pour obtenir la liste des charges de travail et des composants que vous pouvez i
 * Installez une instance de bureau de Visual Studio en mode silencieux, avec le module linguistique français, avec un retour uniquement une fois le produit installé.
 
   ```cmd
-  vs_enterprise.exe --installPath C:\desktopVS ^
+   vs_enterprise.exe --installPath C:\desktopVS ^
    --addProductLang fr-FR ^
    --add Microsoft.VisualStudio.Workload.ManagedDesktop ^
    --includeRecommended --quiet --wait
@@ -66,18 +66,18 @@ Pour obtenir la liste des charges de travail et des composants que vous pouvez i
 
 * Utilisez dans des fichiers de commandes ou des scripts pour attendre que le programme d’installation de Visual Studio soit terminé avant d’exécuter la commande suivante. Pour les fichiers de commandes, une variable d’environnement `%ERRORLEVEL%` contiendra la valeur de retour de la commande, comme indiqué dans la page [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md). Certains utilitaires de commande nécessitent des paramètres supplémentaires pour attendre la fin et pour obtenir la valeur renvoyée du programme d’installation. Voici un exemple des paramètres supplémentaires utilisés avec la commande de script PowerShell « Start-Process » :
 
-  ```cmd
-  $exitCode = Start-Process -FilePath vs_enterprise.exe -ArgumentList "install", "--quiet", "--wait" -Wait -PassThru
-  ```
-  
+   ```cmd
+   $exitCode = Start-Process -FilePath vs_enterprise.exe -ArgumentList "install", "--quiet", "--wait" -Wait -PassThru
+   ```
+
 * Le premier paramètre « --wait » est utilisé par Visual Studio Installer et le second paramètre « -Wait » est utilisé par « Start-Process » pour attendre la fin. Le paramètre « -PassThru » est utilisé par « Start-Process » pour utiliser le code de sortie du programme d’installation pour sa valeur renvoyée.
-  
+
 ## <a name="using---layout"></a>Utilisation de --layout
 
 * Téléchargez l’éditeur de base de Visual Studio (configuration minimale de Visual Studio). Incluez uniquement le module linguistique anglais :
 
   ```cmd
-  vs_community.exe --layout C:\VS2017
+   vs_community.exe --layout C:\VS
    --lang en-US ^
    --add Microsoft.VisualStudio.Workload.CoreEditor
   ```
@@ -85,7 +85,7 @@ Pour obtenir la liste des charges de travail et des composants que vous pouvez i
 * Téléchargez le bureau .NET et les charges de travail web .NET avec tous les composants recommandés et l’extension GitHub. Incluez uniquement le module linguistique anglais :
 
   ```cmd
-  vs_community.exe --layout C:\VS2017 ^
+   vs_community.exe --layout C:\VS ^
    --lang en-US ^
    --add Microsoft.VisualStudio.Workload.NetWeb ^
    --add Microsoft.VisualStudio.Workload.ManagedDesktop ^
@@ -95,35 +95,56 @@ Pour obtenir la liste des charges de travail et des composants que vous pouvez i
 
 ## <a name="using---all"></a>Utilisation de --all
 
-* Démarrez une installation interactive de l’ensemble des charges de travail et composants disponibles dans Visual Studio 2017 Enterprise Edition :
+* Démarrez une installation interactive de l’ensemble des charges de travail et composants disponibles dans Visual Studio Enterprise Edition :
 
-  ```cmd
-  vs_enterprise.exe --all
-  ```
+   ```cmd
+   vs_enterprise.exe --all
+   ```
 
 ## <a name="using---includerecommended"></a>Utilisation de --includeRecommended
 
-* Installez une deuxième instance nommée de Visual Studio 2017 Professional sur un ordinateur sur lequel Visual Studio 2017 Community Edition est déjà installé, avec prise en charge du développement Node.js :
+* Installez une deuxième instance nommée de Visual Studio Professional sur un ordinateur sur lequel Visual Studio Community Edition est déjà installé, avec prise en charge du développement Node.js :
 
-  ```cmd
-  vs_professional.exe --installPath C:\VSforNode ^
+   ```cmd
+   vs_professional.exe --installPath C:\VSforNode ^
    --add Microsoft.VisualStudio.Workload.Node --includeRecommended --nickname VSforNode
   ```
 
 ## <a name="using---remove"></a>Utilisation de --remove
 
+::: moniker range="vs-2017"
+
 * Supprimez le composant Outils de profilage de l’instance de Visual Studio installée par défaut :
 
   ```cmd
-  vs_enterprise.exe modify ^
+   vs_enterprise.exe modify ^
    --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" ^
    --remove Microsoft.VisualStudio.Component.DiagnosticTools ^
    --passive
   ```
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+* Supprimez le composant Outils de profilage de l’instance de Visual Studio installée par défaut :
+
+  ```cmd
+   vs_enterprise.exe modify ^
+   --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" ^
+   --remove Microsoft.VisualStudio.Component.DiagnosticTools ^
+   --passive
+  ```
+
+::: moniker-end
+
 ## <a name="using---path"></a>Utilisation de --path
 
+::: moniker range="vs-2017"
+
 Ces paramètres de ligne de commande sont **nouveaux dans 15.7**. Pour plus d’informations à leur sujet, consultez la page [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md).
+
+::: moniker-end
 
 * Utilisation des chemins install, cache et shared :
 
@@ -143,36 +164,43 @@ Ces paramètres de ligne de commande sont **nouveaux dans 15.7**. Pour plus d’
 
 ## <a name="using-export"></a>Utilisation d’export
 
+::: moniker range="vs-2017"
+
 Cette commande de ligne de commande est **nouvelle dans la version 15.9**. Pour plus d’informations à son sujet, consultez la page [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md).
+
+::: moniker-end
 
 * Utilisation d’export pour enregistrer la sélection à partir d’une installation :
 
-```cmd
-"C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe" export --installPath "C:\VS" --config "C:\.vsconfig"
-```
+  ```cmd
+  "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe" export --installPath "C:\VS" --config "C:\.vsconfig"
+  ```
 
 * Utilisation d’export pour enregistrer une sélection personnalisée à partir de zéro :
 
-```cmd
-"C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe" export --add Microsoft.VisualStudio.Workload.ManagedDesktop --includeRecommended --config "C:\.vsconfig"
-```
+  ```cmd
+  "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe" export --add Microsoft.VisualStudio.Workload.ManagedDesktop --includeRecommended --config "C:\.vsconfig"
+  ```
 
 ## <a name="using---config"></a>Utilisation de --config
 
+::: moniker range="vs-2017"
+
 Ce paramètre de ligne de commande est **nouveau dans la version 15.9**. Pour plus d’informations à son sujet, consultez la page [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md).
+
+::: moniker-end
 
 * Utilisation de --config pour installer les composants et charges de travail à partir d’un fichier de configuration d’installation enregistré :
 
-```cmd
-vs_enterprise.exe --config "C:\.vsconfig" --installPath "C:\VS"
-```
+  ```cmd
+  vs_enterprise.exe --config "C:\.vsconfig" --installPath "C:\VS"
+  ```
 
 * Utilisation de --config pour ajouter des composants et charges de travail à une installation existante :
 
-```cmd
-vs_enterprise.exe modify --installPath "C:\VS" --config "C:\.vsconfig"
-```
-
+  ```cmd
+  vs_enterprise.exe modify --installPath "C:\VS" --config "C:\.vsconfig"
+  ```
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
