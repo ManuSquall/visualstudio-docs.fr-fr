@@ -11,28 +11,28 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 4ae0d3390be709dfe07f174bbb9754b986cdafc5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c7eb15c6d19ab40df6913dd67466dc20012492b7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913691"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058587"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Procédure : Ajouter des commentaires à un workflow dans le concepteur de workflow
 
 Pour faciliter la création de flux de travail plus vastes et plus complexes, .NET Framework 4.5 permet au développeur d’ajouter des annotations aux types suivants de l’élément dans le concepteur :
 
--   <xref:System.Activities.Activity>
+- <xref:System.Activities.Activity>
 
--   <xref:System.Activities.Statements.State>
+- <xref:System.Activities.Statements.State>
 
--   <xref:System.Activities.Statements.Transition>
+- <xref:System.Activities.Statements.Transition>
 
--   Classes dérivées de <xref:System.Activities.Statements.FlowNode>.
+- Classes dérivées de <xref:System.Activities.Statements.FlowNode>.
 
--   <xref:System.Activities.Variable>
+- <xref:System.Activities.Variable>
 
--   <xref:System.Activities.Argument>
+- <xref:System.Activities.Argument>
 
 > [!IMPORTANT]
 > Le contenu d'une annotation est stocké sous forme de texte brut dans le fichier XAML associé au workflow, et peut être par d'autres utilisateurs. Évitez d'entrer des informations sensibles dans une annotation.
@@ -75,7 +75,7 @@ Pour faciliter la création de flux de travail plus vastes et plus complexes, .N
 
 1. Pour supprimer toutes les annotations à la fois, cliquez sur le Concepteur de workflow et sélectionnez **Annotation**, **supprimer toutes les Annotations**.
 
-## <a name="adding-editing-and-deleting-an-annotation-for-a-variable-or-argument"></a>Ajout, modification et suppression d’une annotation pour une variable ou un argument
+## <a name="adding-editing-and-deleting-an-annotation-for-a-variable-or-argument"></a>Ajout, modification et suppression d'une annotation pour une variable ou un argument
 
 1. Cliquez avec le bouton droit sur une variable ou un argument et sélectionnez Ajouter une annotation.
 

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 83f23bb04c9080b75d2a8e93252d981c0833d69d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 595c9127aad71cac6f446f356c309809b7172d94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630078"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045485"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>Gérer des documents sur un serveur à l’aide de la classe ServerDocument
   Vous pouvez utiliser la `ServerDocument` classe dans le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] pour gérer plusieurs aspects de personnalisations au niveau du document, même si Microsoft Office Word et Microsoft Office Excel ne sont pas installés. Vous pouvez effectuer les tâches suivantes :
@@ -40,7 +40,7 @@ ms.locfileid: "56630078"
 > [!NOTE]
 >  Si vous avez une application héritée qui utilise le `ServerDocument` classe dans le `Visual Studio Tools for Office` system (version 3.0 Runtime), le `Visual Studio Tools for Office` system (version 3.0 runtime) doit être installé sur les ordinateurs qui exécutent l’application. Le `Visual Studio 2010 Tools for Office runtime` ne peut pas exécuter ces applications.
 
-##  <a name="CachedData"></a> Travailler avec des données mises en cache dans le document
+## <a name="CachedData"></a> Travailler avec des données mises en cache dans le document
  Le `ServerDocument` classe fournit des membres que vous pouvez utiliser pour travailler avec le cache de données dans des documents personnalisés. Pour plus d’informations sur les données mises en cache, consultez [mettre en Cache données](../vsto/caching-data.md) et [accéder aux données dans des documents sur le serveur](../vsto/accessing-data-in-documents-on-the-server.md).
 
  Le tableau suivant répertorie les membres que vous pouvez utiliser pour travailler avec les données mises en cache.
@@ -50,7 +50,7 @@ ms.locfileid: "56630078"
 |Pour déterminer si un document a un cache de données.|Méthode <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.IsCacheEnabled%2A>|
 |Accéder aux données mises en cache dans un document.<br /><br /> Pour plus d’informations, consultez [accéder aux données dans des documents sur le serveur](../vsto/accessing-data-in-documents-on-the-server.md).|La propriété <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A>.|
 
-##  <a name="CustomizationInfo"></a> Gérer la personnalisation de document
+## <a name="CustomizationInfo"></a> Gérer la personnalisation de document
  Vous pouvez utiliser les membres de la `ServerDocument` classe pour gérer l’assembly de personnalisation associé à un document. Par exemple, vous pouvez supprimer par programmation la personnalisation d’un document afin que le document ne fait plus partie d’une personnalisation.
 
  Le tableau suivant répertorie les membres que vous pouvez utiliser pour gérer l’assembly de personnalisation.

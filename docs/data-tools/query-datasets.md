@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 88433ae91691caf795ad61116c8e3691662aad42
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: ccd8bd0cb37aaa2d4bfad7ea20979987048bf862
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927709"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050671"
 ---
 # <a name="query-datasets"></a>Interroger des datasets
 Pour rechercher des enregistrements spécifiques dans un jeu de données, utilisez le `FindBy` méthode sur la table de données, écrire votre propre instruction foreach pour parcourir la collection de lignes de la table, ou utilisez [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
@@ -33,7 +33,7 @@ Respecte la casse, toutefois, peut être un facteur de l’interprétation des d
 
 #### <a name="to-find-a-row-in-a-typed-dataset-with-a-primary-key-value"></a>Pour rechercher une ligne dans un dataset typé avec une valeur de clé primaire
 
--   Pour obtenir une ligne, appelez fortement typée `FindBy` méthode qui utilise la clé primaire de la table.
+- Pour obtenir une ligne, appelez fortement typée `FindBy` méthode qui utilise la clé primaire de la table.
 
      Dans l’exemple suivant, le `CustomerID` colonne est la clé primaire de la `Customers` table. Cela signifie que le texte généré `FindBy` méthode est `FindByCustomerID`. L’exemple montre comment affecter un spécifique <xref:System.Data.DataRow> à une variable à l’aide de l’élément généré `FindBy` (méthode).
 
@@ -42,7 +42,7 @@ Respecte la casse, toutefois, peut être un facteur de l’interprétation des d
 
 #### <a name="to-find-a-row-in-an-untyped-dataset-with-a-primary-key-value"></a>Pour rechercher une ligne dans un dataset non typé avec une valeur de clé primaire
 
--   Appelez le <xref:System.Data.DataRowCollection.Find%2A> méthode d’un <xref:System.Data.DataRowCollection> collection, en passant la clé primaire en tant que paramètre.
+- Appelez le <xref:System.Data.DataRowCollection.Find%2A> méthode d’un <xref:System.Data.DataRowCollection> collection, en passant la clé primaire en tant que paramètre.
 
      L’exemple suivant montre comment déclarer une nouvelle ligne appelée `foundRow` et attribuez-lui la valeur de retour de la <xref:System.Data.DataRowCollection.Find%2A> (méthode). Si la clé primaire est trouvée, le contenu de l’index de colonne 1 est affiché dans une boîte de message.
 
@@ -53,7 +53,7 @@ Respecte la casse, toutefois, peut être un facteur de l’interprétation des d
 
 #### <a name="to-find-rows-based-on-the-values-in-any-column"></a>Pour rechercher les lignes en fonction des valeurs dans n’importe quelle colonne
 
--   Tables de données sont créées avec le <xref:System.Data.DataTable.Select%2A> (méthode), qui retourne un tableau de <xref:System.Data.DataRow>s basé sur l’expression passée à la <xref:System.Data.DataTable.Select%2A> (méthode). Pour plus d’informations sur la création d’expressions valides, consultez la section « Syntaxe d’Expression » de la page le <xref:System.Data.DataColumn.Expression%2A> propriété.
+- Tables de données sont créées avec le <xref:System.Data.DataTable.Select%2A> (méthode), qui retourne un tableau de <xref:System.Data.DataRow>s basé sur l’expression passée à la <xref:System.Data.DataTable.Select%2A> (méthode). Pour plus d’informations sur la création d’expressions valides, consultez la section « Syntaxe d’Expression » de la page le <xref:System.Data.DataColumn.Expression%2A> propriété.
 
      L’exemple suivant montre comment utiliser le <xref:System.Data.DataTable.Select%2A> méthode de la <xref:System.Data.DataTable> pour rechercher des lignes spécifiques.
 
@@ -72,24 +72,24 @@ Cette page fournit des exemples d’utilisation de datasets typés. Pour plus d�
 
 Les exemples de code suivants montrent comment parcourir les relations dans les datasets typés. L’utilisation d’exemples de code typée <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) et le FindBy généré*PrimaryKey* (`FindByCustomerID`) méthodes permettant de rechercher une ligne souhaitée et retourner les enregistrements connexes. Les exemples de compiler et exécutent correctement uniquement si vous avez :
 
--   Une instance d’un dataset nommé `NorthwindDataSet` avec un `Customers` table.
+- Une instance d’un dataset nommé `NorthwindDataSet` avec un `Customers` table.
 
--   Un `Orders` table.
+- Un `Orders` table.
 
--   Une relation nommée `FK_Orders_Customers`les deux tables.
+- Une relation nommée `FK_Orders_Customers`les deux tables.
 
 En outre, les deux tables doivent être remplies avec des données pour tous les enregistrements à retourner.
 
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>Pour retourner des enregistrements d’un enregistrement parent sélectionné de l’enfant
 
--   Appeler le <xref:System.Data.DataRow.GetChildRows%2A> méthode d’une spécifique `Customers` données de ligne et renvoie un tableau de lignes à partir de la `Orders` table :
+- Appeler le <xref:System.Data.DataRow.GetChildRows%2A> méthode d’une spécifique `Customers` données de ligne et renvoie un tableau de lignes à partir de la `Orders` table :
 
      [!code-csharp[VbRaddataDatasets#6](../data-tools/codesnippet/CSharp/query-datasets_4.cs)]
      [!code-vb[VbRaddataDatasets#6](../data-tools/codesnippet/VisualBasic/query-datasets_4.vb)]
 
 #### <a name="to-return-the-parent-record-of-a-selected-child-record"></a>Pour retourner l’enregistrement parent d’un enregistrement enfant sélectionné
 
--   Appelez le <xref:System.Data.DataRow.GetParentRow%2A> méthode d’une spécifique `Orders` ligne de données et retournent une seule ligne de la `Customers` table :
+- Appelez le <xref:System.Data.DataRow.GetParentRow%2A> méthode d’une spécifique `Orders` ligne de données et retournent une seule ligne de la `Customers` table :
 
      [!code-csharp[VbRaddataDatasets#7](../data-tools/codesnippet/CSharp/query-datasets_5.cs)]
      [!code-vb[VbRaddataDatasets#7](../data-tools/codesnippet/VisualBasic/query-datasets_5.vb)]

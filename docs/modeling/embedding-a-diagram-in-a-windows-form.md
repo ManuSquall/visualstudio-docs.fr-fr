@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bf82bc6fce4e6bf429faebc6b6f24497cbe76b0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9b2ed12175e986178d43ffe5e3da8b85e2ab22e5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944466"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044691"
 ---
 # <a name="embed-a-diagram-in-a-windows-form"></a>Incorporer un diagramme dans un Windows Form
 
@@ -20,15 +20,15 @@ Vous pouvez incorporer un diagramme DSL dans un contrôle Windows, qui apparaît
 
 ## <a name="embed-a-dsl-diagram-in-a-windows-control"></a>Incorporer un diagramme DSL dans un contrôle Windows
 
-1.  Ajouter un nouveau **contrôle utilisateur** fichier au projet DslPackage.
+1. Ajouter un nouveau **contrôle utilisateur** fichier au projet DslPackage.
 
-2.  Ajoutez un contrôle de panneau au contrôle utilisateur. Ce panneau contient le diagramme DSL.
+2. Ajoutez un contrôle de panneau au contrôle utilisateur. Ce panneau contient le diagramme DSL.
 
      Ajoutez des contrôles dont vous avez besoin.
 
      Définissez les propriétés d’ancrage des contrôles.
 
-3.  Dans l’Explorateur de solutions, cliquez sur le fichier de contrôle utilisateur, puis cliquez sur **afficher le Code**. Ajouter ce constructeur et la variable au code :
+3. Dans l’Explorateur de solutions, cliquez sur le fichier de contrôle utilisateur, puis cliquez sur **afficher le Code**. Ajouter ce constructeur et la variable au code :
 
     ```csharp
     internal UserControl1(MyDSLDocView docView, Control content)
@@ -40,7 +40,7 @@ Vous pouvez incorporer un diagramme DSL dans un contrôle Windows, qui apparaît
     private MyDSLDocView docView;
     ```
 
-4.  Ajoutez un nouveau fichier au projet DslPackage, avec le contenu suivant :
+4. Ajoutez un nouveau fichier au projet DslPackage, avec le contenu suivant :
 
     ```csharp
     using System.Windows.Forms;
@@ -63,13 +63,13 @@ Vous pouvez incorporer un diagramme DSL dans un contrôle Windows, qui apparaît
     } } } }
     ```
 
-5.  Pour tester la solution DSL, appuyez sur **F5** et ouvrir un exemple de fichier de modèle. Le diagramme apparaît à l’intérieur du contrôle. La boîte à outils et autres fonctionnalités fonctionnent normalement.
+5. Pour tester la solution DSL, appuyez sur **F5** et ouvrir un exemple de fichier de modèle. Le diagramme apparaît à l’intérieur du contrôle. La boîte à outils et autres fonctionnalités fonctionnent normalement.
 
 ## <a name="update-the-form-using-store-events"></a>Mettre à jour le formulaire à l’aide d’événements de stockage
 
-1.  Dans le Concepteur de formulaire, ajoutez un **ListBox** nommé `listBox1`. Cela affichera une liste des éléments dans le modèle. Il est synchronisé avec le modèle à l’aide *stocker les événements*. Pour plus d’informations, consultez [gestionnaires propager les modifications en dehors le modèle d’événement](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+1. Dans le Concepteur de formulaire, ajoutez un **ListBox** nommé `listBox1`. Cela affichera une liste des éléments dans le modèle. Il est synchronisé avec le modèle à l’aide *stocker les événements*. Pour plus d’informations, consultez [gestionnaires propager les modifications en dehors le modèle d’événement](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
-2.  Dans le fichier de code personnalisé, substituez davantage les méthodes à la classe d’objet DocView :
+2. Dans le fichier de code personnalisé, substituez davantage les méthodes à la classe d’objet DocView :
 
     ```csharp
     partial class MyDSLDocView
@@ -110,7 +110,7 @@ Vous pouvez incorporer un diagramme DSL dans un contrôle Windows, qui apparaît
      }
     ```
 
-3.  Dans le code derrière le contrôle utilisateur, insérer des méthodes pour écouter les éléments ajoutés et supprimés :
+3. Dans le code derrière le contrôle utilisateur, insérer des méthodes pour écouter les éléments ajoutés et supprimés :
 
     ```csharp
     public partial class UserControl1 : UserControl { ...
@@ -137,7 +137,7 @@ Vous pouvez incorporer un diagramme DSL dans un contrôle Windows, qui apparaît
     }
     ```
 
-4.  Pour tester la solution DSL, appuyez sur **F5** et dans l’instance expérimentale de Visual Studio, ouvrez un exemple de fichier de modèle.
+4. Pour tester la solution DSL, appuyez sur **F5** et dans l’instance expérimentale de Visual Studio, ouvrez un exemple de fichier de modèle.
 
      Notez que la zone de liste affiche une liste des éléments dans le modèle, et qu’il est correct après tout ajout ou la suppression et après les annuler et rétablir.
 

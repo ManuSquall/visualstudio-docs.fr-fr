@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc126d8283562f84cabfaae7df1001c832553568
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f2c1a799663d33e61977c5416ad199bce8bce545
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778952"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050113"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Modèles courants pour des applications multithread au comportement médiocre
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Le visualiseur concurrentiel permet aux développeurs de visualiser le comportem
   
  Comme le montre l’illustration suivante, le visualiseur concurrentiel peut également exposer ce symptôme dans la vue Utilisation de l’UC, où vous voyez que, malgré la présence de plusieurs threads, l’application n’utilise qu’un seul cœur logique.  
   
- Pour plus d’informations, consultez « Performance Pattern 1: Identifying Lock Contention » dans le blog [Parallel Performance Tools For Windows](http://go.microsoft.com/fwlink/?LinkID=160569) d’Hazim Shafi, sur MSDN Blogs.  
+ Pour plus d’informations, consultez « modèle de performances 1 : Identification de Contention de verrouillage » dans d’Hazim [Parallel Performance Tools pour Windows](http://go.microsoft.com/fwlink/?LinkID=160569) blog sur le site Web de blog MSDN.  
   
  ![Conflits de verrous](../profiling/media/lockcontention-2.png "LockContention_2")  
   
@@ -52,9 +52,9 @@ Le visualiseur concurrentiel permet aux développeurs de visualiser le comportem
   
  Vous devez tenir compte de ce qui suit lorsque vous examinez ce problème :  
   
--   L’ensemble du système peut être en surabonnement. Envisagez l’éventualité que d’autres processus présents sur le système puissent anticiper vos threads. Lorsque vous placez le pointeur de la souris sur un segment d’anticipation de la vue Threads, une info-bulle identifie le thread, ainsi que le processus qui a anticipé le thread. Ce processus n’est pas nécessairement celui qui s’est exécuté durant toute l’anticipation de votre processus. Cependant, il fournit une bonne indication de ce qui est à l’origine de la pression d’anticipation exercée sur votre processus.  
+- L’ensemble du système peut être en surabonnement. Envisagez l’éventualité que d’autres processus présents sur le système puissent anticiper vos threads. Lorsque vous placez le pointeur de la souris sur un segment d’anticipation de la vue Threads, une info-bulle identifie le thread, ainsi que le processus qui a anticipé le thread. Ce processus n’est pas nécessairement celui qui s’est exécuté durant toute l’anticipation de votre processus. Cependant, il fournit une bonne indication de ce qui est à l’origine de la pression d’anticipation exercée sur votre processus.  
   
--   Évaluez la façon dont votre processus détermine le nombre de threads nécessaires à l’exécution lors de cette phase de travail. Si votre processus calcule directement le nombre de threads parallèles actifs, modifiez cet algorithme pour une meilleure prise en compte du nombre de cœurs logiques disponibles sur le système. Si vous utilisez le runtime d’accès concurrentiel, la bibliothèque parallèle de tâches ou PLINQ, ce sont ces bibliothèques qui se chargeront du calcul du nombre de threads.  
+- Évaluez la façon dont votre processus détermine le nombre de threads nécessaires à l’exécution lors de cette phase de travail. Si votre processus calcule directement le nombre de threads parallèles actifs, modifiez cet algorithme pour une meilleure prise en compte du nombre de cœurs logiques disponibles sur le système. Si vous utilisez le runtime d’accès concurrentiel, la bibliothèque parallèle de tâches ou PLINQ, ce sont ces bibliothèques qui se chargeront du calcul du nombre de threads.  
   
 ## <a name="inefficient-io"></a>E/S inefficace  
  ![Inefficacité des E/S](../profiling/media/inefficient-io.png "Inefficient_IO")  

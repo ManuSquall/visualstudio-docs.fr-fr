@@ -17,12 +17,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 17be48435dd8251d1269c7a95195d794f750d534
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 18f6e72d18154f11866671a3e448d88c91768c7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953246"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047096"
 ---
 # <a name="web-control-library-managed-code"></a>Bibliothèque de contrôles Web (code managé)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,25 +31,25 @@ Le modèle de projet de bibliothèque de contrôles Web permet de créer une DLL
   
 ### <a name="to-debug-a-web-control-library-method-1"></a>Pour déboguer une bibliothèque de contrôles Web (Méthode 1)  
   
-1.  Ouvrez un projet de bibliothèque de contrôles Web existant ou créez-en un.  
+1. Ouvrez un projet de bibliothèque de contrôles Web existant ou créez-en un.  
   
-2.  Créez une page [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] qui incorpore le contrôle.  
+2. Créez une page [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] qui incorpore le contrôle.  
   
-3.  Sur le site web qui héberge l’atelier de test [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], créez un sous-répertoire appelé `/Code`.  
+3. Sur le site web qui héberge l’atelier de test [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], créez un sous-répertoire appelé `/Code`.  
   
-4.  Copiez le code source du contrôle dans le sous-répertoire `/Code`.  
+4. Copiez le code source du contrôle dans le sous-répertoire `/Code`.  
   
-5.  Ouvrez le code source dans le sous-répertoire `/Code` et définissez des points d'arrêt.  
+5. Ouvrez le code source dans le sous-répertoire `/Code` et définissez des points d'arrêt.  
   
-6.  Ouvrez une fenêtre de navigateur avec une URL qui pointe sur l'atelier de test. Vous pouvez commencer à déboguer dès qu'un point d'arrêt dans le contrôle est atteint.  
+6. Ouvrez une fenêtre de navigateur avec une URL qui pointe sur l'atelier de test. Vous pouvez commencer à déboguer dès qu'un point d'arrêt dans le contrôle est atteint.  
   
 ### <a name="to-debug-a-web-control-library-method-2"></a>Pour déboguer une bibliothèque de contrôles Web (méthode 2)  
   
-1.  Créez le projet d'application hôte et le projet de contrôle Web dans la même solution.  
+1. Créez le projet d'application hôte et le projet de contrôle Web dans la même solution.  
   
-2.  Dans **l’Explorateur de solutions**, cliquez sur l’application hôte et choisissez **ajouter une référence**.  
+2. Dans **l’Explorateur de solutions**, cliquez sur l’application hôte et choisissez **ajouter une référence**.  
   
-3.  Ajoutez une référence au projet de contrôle Web.  
+3. Ajoutez une référence au projet de contrôle Web.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Applications web ASP.NET](../debugger/debugging-preparation-aspnet-web-applications.md)

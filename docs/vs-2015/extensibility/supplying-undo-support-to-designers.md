@@ -10,12 +10,12 @@ ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e0ee2059c6a2bc1c5456cc949cf05b921c874cd3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9118cbe3f4a8dcee443eca8b3fa5fb9a7664fd41
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938563"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049306"
 ---
 # <a name="supplying-undo-support-to-designers"></a>Fourniture de la prise en charge de l’annulation pour les concepteurs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,9 +41,9 @@ En général, les concepteurs, tels que des éditeurs, ont besoin prendre en cha
 ## <a name="obtaining-undo-support-automatically"></a>Obtention de possibilité d’annuler automatiquement  
  N’importe quel concepteur créé dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prend en charge de l’annulation automatique et complète if, le concepteur :  
   
--   Utilise un <xref:System.Windows.Forms.Control> basé sur la classe pour son interface utilisateur.  
+- Utilise un <xref:System.Windows.Forms.Control> basé sur la classe pour son interface utilisateur.  
   
--   Utilise la génération de code basé sur CodeDOM standard et de système d’analyse pour la persistance et la génération de code.  
+- Utilise la génération de code basé sur CodeDOM standard et de système d’analyse pour la persistance et la génération de code.  
   
      Pour plus d’informations sur l’utilisation avec prise en charge de Visual Studio CodeDOM, consultez [Compilation et génération de Code Source dynamique](http://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb)  
   
@@ -80,15 +80,15 @@ En général, les concepteurs, tels que des éditeurs, ont besoin prendre en cha
   
 - Cela <xref:System.IServiceProvider> classe doit fournir les services suivants :  
   
-  -   <xref:System.ComponentModel.Design.IDesignerHost>.  
+  - <xref:System.ComponentModel.Design.IDesignerHost>.  
   
-  -   <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
+  - <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
   
        À l’aide de concepteurs [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sérialisation CodeDOM peut choisir d’utiliser <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> fourni avec le [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] comme son implémentation de la <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>.  
   
        Dans ce cas, le <xref:System.IServiceProvider> classe fournie à la <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> constructeur doit retourner cet objet en tant qu’implémentation de la <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> classe.  
   
-  -   <xref:System.ComponentModel.Design.IComponentChangeService>  
+  - <xref:System.ComponentModel.Design.IComponentChangeService>  
   
        À l’aide de la valeur par défaut des concepteurs <xref:System.ComponentModel.Design.DesignSurface> fournie par le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] hôte de conception sont la garantie d’avoir une implémentation par défaut de la <xref:System.ComponentModel.Design.IComponentChangeService> classe.  
   

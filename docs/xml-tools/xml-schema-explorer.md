@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24dd2c13a0d2d4d2a98d11e5154b96261d19d492
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 07c5ba8d28a053b83481cf24e3bc1e450c28844e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525708"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050060"
 ---
 # <a name="xml-schema-explorer"></a>Explorateur de schémas XML
 
@@ -21,40 +21,40 @@ Le **Explorateur de schémas XML** est intégré à Microsoft Visual Studio et l
 
  Le **Explorateur de schémas XML** vous permet d’effectuer les opérations suivantes :
 
--   obtenir une vue d'ensemble rapide du jeu de schémas ;
+- obtenir une vue d'ensemble rapide du jeu de schémas ;
 
--   Parcourir et naviguer l'arborescence.
+- Parcourir et naviguer l’arborescence.
 
--   Effectuer des recherches par mot clé et spécifiques au schéma. Pour plus d’informations, consultez [recherche le jeu de schémas](../xml-tools/searching-the-schema-set.md).
+- Effectuer des recherches par mot clé et spécifiques au schéma. Pour plus d’informations, consultez [recherche le jeu de schémas](../xml-tools/searching-the-schema-set.md).
 
--   Ajouter les résultats de recherche à la vue du graphique ou une vue de modèle de contenu
+- Ajouter les résultats de recherche à la vue du graphique ou une vue de modèle de contenu
 
--   trier l’arborescence par ordre des documents, par type ou par nom ; Pour plus d’informations, consultez [tri, filtrage et de regroupement](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md).
+- trier l’arborescence par ordre des documents, par type ou par nom ; Pour plus d’informations, consultez [tri, filtrage et de regroupement](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md).
 
--   Ouvrez l’éditeur XML et accéder à des emplacements de code dans le fichier XSD. Pour plus d’informations, consultez [intégration avec l’éditeur XML](../xml-tools/integration-with-xml-editor.md).
+- Ouvrez l’éditeur XML et accéder à des emplacements de code dans le fichier XSD. Pour plus d’informations, consultez [intégration avec l’éditeur XML](../xml-tools/integration-with-xml-editor.md).
 
--   générer un exemple de code XML pour les éléments globaux.
+- générer un exemple de code XML pour les éléments globaux.
 
 Le **Explorateur de schémas XML** fournit une vue hiérarchique de jeu à travers une arborescence de schémas. Le **Explorateur de schémas XML** fournit également la recherche, filtrage, navigation et le tri. Pour accéder à la **Explorateur de schémas XML**, effectuez l’une des opérations suivantes :
 
--   Si vous êtes sur le [vue de départ](../xml-tools/start-view.md), cliquez sur le **Explorateur de schémas XML** lien.
+- Si vous êtes sur le [vue de départ](../xml-tools/start-view.md), cliquez sur le **Explorateur de schémas XML** lien.
 
--   Si vous êtes sur le [vue du graphique](../xml-tools/graph-view.md) ou [affichage du modèle de contenu](../xml-tools/content-model-view.md) et avoir des nœuds dans votre espace de travail, utilisez le menu contextuel (clic droit) pour sélectionner le **Explorateur de schémas XML**.
+- Si vous êtes sur le [vue du graphique](../xml-tools/graph-view.md) ou [affichage du modèle de contenu](../xml-tools/content-model-view.md) et avoir des nœuds dans votre espace de travail, utilisez le menu contextuel (clic droit) pour sélectionner le **Explorateur de schémas XML**.
 
--   Vous pouvez également sélectionner le **Explorateur de schémas XML** à partir de la **vue** menu.
+- Vous pouvez également sélectionner le **Explorateur de schémas XML** à partir de la **vue** menu.
 
--   Vous pouvez accéder à la **Explorateur de schémas XML** à partir d’un *.vb* fichier ayant un littéral XML Visual Basic associé à un *.xsd* fichier. Pour afficher le schéma définis dans le **Explorateur de schémas XML**, cliquez sur un nœud XML dans un littéral XML ou une importation d’espace de noms XML et sélectionnez le **afficher dans l’Explorateur de schémas** commande. Pour plus d’informations, consultez [littéraux d’intégration de données XML avec l’Explorateur de schémas XML](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).
+- Vous pouvez accéder à la **Explorateur de schémas XML** à partir d’un *.vb* fichier ayant un littéral XML Visual Basic associé à un *.xsd* fichier. Pour afficher le schéma définis dans le **Explorateur de schémas XML**, cliquez sur un nœud XML dans un littéral XML ou une importation d’espace de noms XML et sélectionnez le **afficher dans l’Explorateur de schémas** commande. Pour plus d’informations, consultez [littéraux d’intégration de données XML avec l’Explorateur de schémas XML](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).
 
 ## <a name="tree-view"></a>arborescence
  Le **Explorateur de schémas XML** affiche précompilés schéma définie les informations dans une structure arborescente. L'arborescence est organisée comme suit :
 
--   Au niveau supérieur se trouve le nœud de jeu de schémas.
+- Au niveau supérieur se trouve le nœud de jeu de schémas.
 
--   Le deuxième niveau contient les espaces de noms.
+- Le deuxième niveau contient les espaces de noms.
 
--   Le troisième niveau contient les fichiers.
+- Le troisième niveau contient les fichiers.
 
--   Le quatrième niveau contient les nœuds globaux. Ceci peut inclure les éléments, les groupes, les types complexes, les types simples, les attributs, les groupes d'attributs, et les instructions `include`, `import` et `redefine`.
+- Le quatrième niveau contient les nœuds globaux. Ceci peut inclure les éléments, les groupes, les types complexes, les types simples, les attributs, les groupes d'attributs, et les instructions `include`, `import` et `redefine`.
 
 Voici un exemple d’arborescence :
 
@@ -65,11 +65,11 @@ Voici un exemple d’arborescence :
 
  Pour activer un nœud, double-cliquez dessus ou appuyez sur **entrée** lorsque le nœud est sélectionné.
 
--   L'activation d'un nœud ouvre le fichier dans lequel ce nœud est défini (si le fichier n'est pas déjà ouvert) et sélectionne le nœud dans le fichier.
+- L'activation d'un nœud ouvre le fichier dans lequel ce nœud est défini (si le fichier n'est pas déjà ouvert) et sélectionne le nœud dans le fichier.
 
--   L'activation d'un nœud de fichier ouvre le fichier sélectionné (s'il n'est pas déjà ouvert) et met en surbrillance le nœud `<schema>`.
+- L'activation d'un nœud de fichier ouvre le fichier sélectionné (s'il n'est pas déjà ouvert) et met en surbrillance le nœud `<schema>`.
 
--   L'activation d'un jeu de schémas ou d'un nœud d'espace de noms n'aboutit à rien.
+- L'activation d'un jeu de schémas ou d'un nœud d'espace de noms n'aboutit à rien.
 
 ## <a name="drag-and-drop-nodes"></a>Glissez -déplacez les nœuds
  Vous pouvez déplacer des nœuds, des nœuds de fichier et des nœuds d'espace de noms par glisser-déplacer dans une vue du concepteur XSD. Si la vue actuelle est la [vue de départ](../xml-tools/start-view.md), faire glisser un nœud à la vue s’ouvre le [vue du graphique](../xml-tools/graph-view.md). Si la vue actuelle est la [affichage du modèle de contenu](../xml-tools/content-model-view.md) ou de la vue du graphique, la vue ne change pas lorsque vous supprimez un nœud sur celle-ci.

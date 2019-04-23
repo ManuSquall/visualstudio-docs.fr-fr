@@ -11,12 +11,12 @@ ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e50fbbc3c834fc33f77f3aecef6b51ef9037ecb7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7d1bfcfc3176e14900553504a66307ff6e8dcf5a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939023"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049255"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Initialisation du concepteur et configuration des métadonnées
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +31,15 @@ Manipulation des attributs de métadonnées et de filtre associé à un concepte
 ### <a name="customizing-initialization"></a>Personnalisation de l’initialisation  
  Personnalisation d’un concepteur, un composant ou une aire du concepteur, implique :  
   
-1.  Modifier les métadonnées du concepteur et qui permet de modifier comment un certain <xref:System.Type> est accessible ou converti.  
+1. Modifier les métadonnées du concepteur et qui permet de modifier comment un certain <xref:System.Type> est accessible ou converti.  
   
      Cela est généralement effectuée via la <xref:System.Drawing.Design.UITypeEditor> ou <xref:System.ComponentModel.TypeConverter> mécanismes.  
   
      Par exemple, lorsque <xref:System.Windows.Forms>-en fonction des concepteurs sont initialisées, le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] environnement modifie le <xref:System.Drawing.Design.UITypeEditor> pour <xref:System.Web.UI.WebControls.Image> objets utilisés avec le concepteur à utiliser le Gestionnaire de ressources pour obtenir des images bitmap plutôt que le système de fichiers.  
   
-2.  L’intégration avec l’environnement, par exemple, en s’abonnant aux événements ou l’obtention des informations de configuration de projet. Vous pouvez obtenir des informations de configuration de projet et s’abonner aux événements en obtenant le <xref:System.ComponentModel.Design.ITypeResolutionService> interface.  
+2. L’intégration avec l’environnement, par exemple, en s’abonnant aux événements ou l’obtention des informations de configuration de projet. Vous pouvez obtenir des informations de configuration de projet et s’abonner aux événements en obtenant le <xref:System.ComponentModel.Design.ITypeResolutionService> interface.  
   
-3.  Modification de l’environnement utilisateur en activant approprié **boîte à outils** catégories ou en limitant la mise en application du concepteur en appliquant une instance de la <xref:System.ComponentModel.ToolboxItemFilterAttribute> classe vers le concepteur.  
+3. Modification de l’environnement utilisateur en activant approprié **boîte à outils** catégories ou en limitant la mise en application du concepteur en appliquant une instance de la <xref:System.ComponentModel.ToolboxItemFilterAttribute> classe vers le concepteur.  
   
 ### <a name="designer-initialization-by-a-vspackage"></a>Initialisation du concepteur par un VSPackage  
  Un VSPackage doit gérer l’initialisation du concepteur par :  

@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour changer le type de retour d’une méthode DataContext (Concepteur O/R)
+title: 'Procédure : modifier le type de retour d’une méthode DataContext (Concepteur O-R)'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c5b66bff-6dbb-43c0-bffa-317133ca5b9e
@@ -8,15 +8,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e72c04d5d8ce4419938ca30c719e82c403ae0157
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 93d65574012d219d0f65d5b42600c75cf7a624fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940592"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046707"
 ---
-# <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Guide pratique pour changer le type de retour d’une méthode DataContext (Concepteur O/R)
-Le type de retour d’un <xref:System.Data.Linq.DataContext> (méthode) (créée en fonction d’une procédure stockée ou une fonction) diffère selon l’endroit où vous placez la procédure stockée ou fonction dans le **Concepteur O/R**. Si vous déposez directement un élément sur une classe d’entité existante, une méthode <xref:System.Data.Linq.DataContext> ayant le type de retour de la classe d’entité est créée (si le schéma des données a été retourné par la procédure stockée ou si la fonction correspond à la forme de la classe d’entité). Si vous déposez un élément dans une zone vide de la **Concepteur O/R**, un <xref:System.Data.Linq.DataContext> méthode qui retourne un type généré automatiquement est créée. Vous pouvez modifier le type de retour d'une méthode <xref:System.Data.Linq.DataContext> après l'avoir ajoutée au volet de méthodes. Pour inspecter ou modifier le type de retour d’une méthode <xref:System.Data.Linq.DataContext>, sélectionnez-la et cliquez sur la propriété **Type de retour** dans la fenêtre **Propriétés**.
+# <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Procédure : modifier le type de retour d’une méthode DataContext (Concepteur O/R)
+Le type de retour d’un <xref:System.Data.Linq.DataContext> (méthode) (créée en fonction d’une procédure stockée ou une fonction) diffère selon l’endroit où vous placez la procédure stockée ou fonction dans le **Concepteur O/R**. Si vous déposez directement un élément sur une classe d'entité existante, une méthode <xref:System.Data.Linq.DataContext> ayant le type de retour de la classe d'entité est créée (si le schéma des données a été retourné par la procédure stockée ou si la fonction correspond à la forme de la classe d'entité). Si vous déposez un élément dans une zone vide de la **Concepteur O/R**, un <xref:System.Data.Linq.DataContext> méthode qui retourne un type généré automatiquement est créée. Vous pouvez modifier le type de retour d’une méthode <xref:System.Data.Linq.DataContext> après l’avoir ajoutée au volet de méthodes. Pour inspecter ou modifier le type de retour d’une méthode <xref:System.Data.Linq.DataContext>, sélectionnez-la et cliquez sur la propriété **Type de retour** dans la fenêtre **Propriétés**.
 
 > [!NOTE]
 >  Vous ne pouvez pas rétablir les méthodes <xref:System.Data.Linq.DataContext> dont le jeu de types de retour est une classe d’entité afin de retourner le type généré automatiquement via la fenêtre **Propriétés**. Pour rétablir une méthode <xref:System.Data.Linq.DataContext> afin de retourner un type généré automatiquement, vous devez faire glisser une nouvelle fois l’objet de base de données d’origine vers le **Concepteur O/R**.
@@ -25,19 +25,19 @@ Le type de retour d’un <xref:System.Data.Linq.DataContext> (méthode) (créée
 
 ## <a name="to-change-the-return-type-of-a-datacontext-method-from-the-auto-generated-type-to-an-entity-class"></a>Pour modifier le type de retour d’une méthode DataContext du type généré automatiquement vers une classe d’entité
 
-1.  Sélectionnez la méthode <xref:System.Data.Linq.DataContext> dans le volet de méthodes.
+1. Sélectionnez la méthode <xref:System.Data.Linq.DataContext> dans le volet de méthodes.
 
-2.  Sélectionnez **Type de retour** dans la fenêtre **Propriétés**, puis sélectionnez une classe d’entité disponible dans la liste **Type de retour**. Si la classe d’entité souhaitée n’est pas dans la liste, ajoutez-la ou créez-la dans le **Concepteur O/R** pour l’ajouter à la liste.
+2. Sélectionnez **Type de retour** dans la fenêtre **Propriétés**, puis sélectionnez une classe d’entité disponible dans la liste **Type de retour**. Si la classe d’entité souhaitée n’est pas dans la liste, ajoutez-la ou créez-la dans le **Concepteur O/R** pour l’ajouter à la liste.
 
-3.  Enregistrez le fichier *.dbml*.
+3. Enregistrez le fichier *.dbml*.
 
-## <a name="to-change-the-return-type-of-a-datacontext-method-from-an-entity-class-back-to-the-auto-generated-type"></a>Pour modifier le type de retour d’une méthode DataContext d’une classe d’entité vers le type généré automatiquement
+## <a name="to-change-the-return-type-of-a-datacontext-method-from-an-entity-class-back-to-the-auto-generated-type"></a>Pour modifier le type de retour d'une méthode DataContext d'une classe d'entité vers le type généré automatiquement
 
-1.  Sélectionnez la méthode <xref:System.Data.Linq.DataContext> dans le volet **Méthodes** et supprimez-la.
+1. Sélectionnez la méthode <xref:System.Data.Linq.DataContext> dans le volet **Méthodes** et supprimez-la.
 
-2.  Faites glisser l’objet de base de données à partir de **Explorateur de serveurs** ou **Database Explorer** dans une zone vide de la **Concepteur O/R**.
+2. Faites glisser l’objet de base de données à partir de **Explorateur de serveurs** ou **Database Explorer** dans une zone vide de la **Concepteur O/R**.
 
-3.  Enregistrez le fichier *.dbml*.
+3. Enregistrez le fichier *.dbml*.
 
 ## <a name="see-also"></a>Voir aussi
 

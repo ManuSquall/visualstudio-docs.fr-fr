@@ -28,12 +28,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ee62f07bd9fb4626f8e8fb3387e4b80ca2d903d7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0b0cbd7afe90b1dbc091263e3a2594c9ca739e1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652057"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048760"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Erreur : impossible de démarrer le débogage sur le serveur web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Lorsque vous essayez de déboguer une application ASP.NET exécutée sur un serv
   
 Dans de nombreux cas, cette erreur se produit, car IIS n’est pas configuré correctement.
 
-##  <a name="vxtbshttpservererrorsthingstocheck"></a> Vérifiez votre configuration d’IIS
+## <a name="vxtbshttpservererrorsthingstocheck"></a> Vérifiez votre configuration d’IIS
 
 Après avoir pris des mesures pour résoudre un problème détaillé ici et avant d’essayer à nouveau de déboguer, vous devrez peut-être également réinitialiser IIS. Vous pouvez le faire en ouvrant une invite de commandes administrateur et en tapant `iisreset`, ou vous pouvez le faire dans le Gestionnaire des services Internet. 
 

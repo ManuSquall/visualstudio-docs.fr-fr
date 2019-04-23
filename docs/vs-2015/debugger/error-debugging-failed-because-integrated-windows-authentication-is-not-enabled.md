@@ -19,12 +19,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 11b4834cfe6c87f3d6093a38c7a97fe0da67aab4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 73fcc686b242109a65fce6befbbca5e2a357a25e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953273"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049319"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Erreur : le débogage a échoué, car l’authentification Windows intégrée n’est pas activée
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,25 +35,25 @@ L'authentification de l'utilisateur qui a demandé le débogage a été empêch�
   
 ### <a name="to-enable-integrated-windows-authentication"></a>Pour activer l'authentification intégrée Windows  
   
-1.  Ouvrez une session sur le serveur web à l’aide d’un compte d’administrateur.  
+1. Ouvrez une session sur le serveur web à l’aide d’un compte d’administrateur.  
   
-2.  Cliquez sur **Démarrer**, puis sur **Panneau de configuration**.  
+2. Cliquez sur **Démarrer**, puis sur **Panneau de configuration**.  
   
-3.  Dans le **Panneau de configuration**, double-cliquez sur **Outils d’administration**.  
+3. Dans le **Panneau de configuration**, double-cliquez sur **Outils d’administration**.  
   
-4.  Double-cliquez sur **Services IIS**.  
+4. Double-cliquez sur **Services IIS**.  
   
-5.  Cliquez sur le nœud du serveur web.  
+5. Cliquez sur le nœud du serveur web.  
   
      Un dossier **Sites web** s’ouvre sous le nom du serveur.  
   
-6.  Vous pouvez configurer l’authentification pour tous les sites web ou pour certains sites web. Pour configurer l’authentification pour tous les sites web, cliquez avec le bouton droit sur le dossier **Sites web**, puis cliquez sur **Propriétés**. Pour configurer l’authentification pour un site web individuel, ouvrez le dossier **Sites web**, cliquez avec le bouton droit sur le site web individuel, puis cliquez sur **Propriétés**.  
+6. Vous pouvez configurer l’authentification pour tous les sites web ou pour certains sites web. Pour configurer l’authentification pour tous les sites web, cliquez avec le bouton droit sur le dossier **Sites web**, puis cliquez sur **Propriétés**. Pour configurer l’authentification pour un site web individuel, ouvrez le dossier **Sites web**, cliquez avec le bouton droit sur le site web individuel, puis cliquez sur **Propriétés**.  
   
      La boîte de dialogue **Propriétés** s’affiche.  
   
-7.  Cliquez sur l’onglet **Sécurité de répertoire**.  
+7. Cliquez sur l’onglet **Sécurité de répertoire**.  
   
-8.  Dans la section **Connexions anonymes et contrôle d’authentification**, cliquez sur le bouton **Modifier**.  
+8. Dans la section **Connexions anonymes et contrôle d’authentification**, cliquez sur le bouton **Modifier**.  
   
      La boîte de dialogue **Méthodes d’authentification** s’affiche.  
   
@@ -67,29 +67,29 @@ L'authentification de l'utilisateur qui a demandé le débogage a été empêch�
   
 ### <a name="to-enable-integrated-windows-authentication-in-windows-vistaiis-7"></a>Pour activer l'authentification Windows intégrée dans Windows Vista/IIS 7  
   
-1.  Ouvrez une session sur le serveur web à l’aide d’un compte d’administrateur.  
+1. Ouvrez une session sur le serveur web à l’aide d’un compte d’administrateur.  
   
-2.  Activez l'authentification Windows et la compatibilité avec la gestion IIS 6, si ce n'est déjà fait, en procédant comme suit :  
+2. Activez l'authentification Windows et la compatibilité avec la gestion IIS 6, si ce n'est déjà fait, en procédant comme suit :  
   
-    1.  Cliquez sur **Démarrer**, cliquez sur **le panneau de configuration** puis cliquez sur **programmes**.  
+    1. Cliquez sur **Démarrer**, cliquez sur **le panneau de configuration** puis cliquez sur **programmes**.  
   
-    2.  Sous **Programmes et fonctionnalités**, cliquez sur **Activer ou désactiver des fonctionnalités Windows**.  
+    2. Sous **Programmes et fonctionnalités**, cliquez sur **Activer ou désactiver des fonctionnalités Windows**.  
   
          La boîte de dialogue Contrôle d'accès utilisateur s'affiche et vous invite à confirmer que vous êtes autorisé à poursuivre.  
   
-    3.  Cliquez sur **Continuer**.  
+    3. Cliquez sur **Continuer**.  
   
          La boîte de dialogue Fonctionnalités Windows apparaît.  
   
-    4.  Dans la liste des fonctionnalités, développez le nœud **Services IIS**.  
+    4. Dans la liste des fonctionnalités, développez le nœud **Services IIS**.  
   
-    5.  Sous **Services IIS**, développez le nœud **Services World Wide Web**.  
+    5. Sous **Services IIS**, développez le nœud **Services World Wide Web**.  
   
-    6.  Sous **Services World Wide Web**, cliquez sur **Sécurité**.  
+    6. Sous **Services World Wide Web**, cliquez sur **Sécurité**.  
   
-    7.  Cliquez sur **Authentification Windows**.  
+    7. Cliquez sur **Authentification Windows**.  
   
-    8.  Sous **Services IIS**, développez le nœud **Outils d’administration web**.  
+    8. Sous **Services IIS**, développez le nœud **Outils d’administration web**.  
   
     9. Sous **Outils d’administration web**, développez le nœud **Compatibilité avec la gestion IIS 6** et cochez la case **Compatibilité avec la métabase IIS 6 et la configuration IIS 6**.  
   
@@ -97,19 +97,19 @@ L'authentification de l'utilisateur qui a demandé le débogage a été empêch�
   
     11. Redémarrez l'ordinateur pour que ces modifications soient prises en compte.  
   
-3.  Cliquez sur **Démarrer**, puis sur **Panneau de configuration**.  
+3. Cliquez sur **Démarrer**, puis sur **Panneau de configuration**.  
   
-4.  Cliquez sur **Affichage classique**, puis double-cliquez sur **Outils d’administration**.  
+4. Cliquez sur **Affichage classique**, puis double-cliquez sur **Outils d’administration**.  
   
-5.  Dans la colonne **Nom**, double-cliquez sur **Gestionnaire des services Internet (IIS)**.  
+5. Dans la colonne **Nom**, double-cliquez sur **Gestionnaire des services Internet (IIS)**.  
   
-6.  Dans la colonne **Connexions**, développez le nœud correspondant à votre serveur.  
+6. Dans la colonne **Connexions**, développez le nœud correspondant à votre serveur.  
   
      Un dossier **Sites web** s’ouvre sous le nom du serveur.  
   
-7.  Développez le nœud **Sites web**, puis cliquez sur le site web pour lequel vous voulez activer l’authentification Windows intégrée.  
+7. Développez le nœud **Sites web**, puis cliquez sur le site web pour lequel vous voulez activer l’authentification Windows intégrée.  
   
-8.  L'intitulé du volet central est remplacé par le nom du site Web sélectionné. Dans ce volet, sous l’en-tête **IIS**, double-cliquez sur **Authentification**.  
+8. L'intitulé du volet central est remplacé par le nom du site Web sélectionné. Dans ce volet, sous l’en-tête **IIS**, double-cliquez sur **Authentification**.  
   
      L’intitulé du volet est remplacé par **Authentification**.  
   

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd92f2c87d1f9541d0b5fc7c812c2a096ee0615a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9c09e8eeed3ba5b7e2a348982444ad8faa0884e9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948941"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047811"
 ---
 # <a name="model-your-app39s-architecture"></a>Modéliser votre application&#39;architecture s
 Pour vous assurer que votre application ou votre système logiciel répond à vos utilisateurs a besoin, vous pouvez créer des modèles dans Visual Studio dans le cadre de votre description de la structure globale et du comportement de votre application ou votre système logiciel. Avec des modèles, vous pouvez également décrire des modèles utilisés tout au long de la conception. Ces modèles vous aident à comprendre l'architecture existante, à discuter des modifications et à communiquer clairement vos intentions.
@@ -28,9 +28,9 @@ Pour vous assurer que votre application ou votre système logiciel répond à vo
 
  L'architecture d'un système peut être divisée en deux parties :
 
--   [Conception de haut niveau](#Structure). Cette section décrit les principaux composants et comment ils interagissent pour répondre à chaque spécification. Si le système est grand, chaque composant peut avoir sa propre conception de haut niveau qui montre comment il est constitué de composants plus petits.
+- [Conception de haut niveau](#Structure). Cette section décrit les principaux composants et comment ils interagissent pour répondre à chaque spécification. Si le système est grand, chaque composant peut avoir sa propre conception de haut niveau qui montre comment il est constitué de composants plus petits.
 
--   [Modèles de conception](#Patterns) et les conventions utilisées dans les conceptions des composants. Un modèle décrit une approche particulière visant à atteindre un objectif de programmation. En utilisant les mêmes modèles lors de toutes les phases de conception, votre équipe peut réduire le coût des modifications et du développement de nouveaux logiciels.
+- [Modèles de conception](#Patterns) et les conventions utilisées dans les conceptions des composants. Un modèle décrit une approche particulière visant à atteindre un objectif de programmation. En utilisant les mêmes modèles lors de toutes les phases de conception, votre équipe peut réduire le coût des modifications et du développement de nouveaux logiciels.
 
 ## <a name="Structure"></a> Conception de haut niveau
  Une conception de haut niveau décrit les principaux composants de votre système et la façon dont ils interagissent pour atteindre les objectifs de la conception. Le développement de la conception de haut niveau implique d'effectuer les activités dans la liste ci-dessous, mais pas nécessairement dans un ordre particulier.
@@ -39,11 +39,11 @@ Pour vous assurer que votre application ou votre système logiciel répond à vo
 
  Dans tous les cas, il est utile de développer les différentes activités en parallèle et de développer le code et les tests à un stade précoce. N'essayez pas de terminer l'un de ces aspects avant d'en commencer un autre. En règle générale, les impératifs et votre compréhension de la meilleure façon de concevoir le système évolueront pendant l'écriture et les tests du code. Vous devez donc commencer par comprendre et coder les caractéristiques principales des impératifs et de votre conception. Remplissez les détails dans les itérations ultérieures du projet.
 
--   [Comprendre les impératifs](#Requirements). Le point de départ de toute conception est une vision claire des besoins des utilisateurs.
+- [Comprendre les impératifs](#Requirements). Le point de départ de toute conception est une vision claire des besoins des utilisateurs.
 
--   [Modèles architecturaux](#BigDecisions). Choix que vous avez effectués concernant les principales technologies et éléments de l'architecture du système.
+- [Modèles architecturaux](#BigDecisions). Choix que vous avez effectués concernant les principales technologies et éléments de l'architecture du système.
 
--   Modèle de données des composants et des Interfaces. Vous pouvez dessiner des diagrammes de classes pour décrire les informations passées entre les composants et stockées dans les composants.
+- Modèle de données des composants et des Interfaces. Vous pouvez dessiner des diagrammes de classes pour décrire les informations passées entre les composants et stockées dans les composants.
 
 ## <a name="Requirements"></a> Comprendre les impératifs
  Pour développer efficacement la conception de haut niveau d'une application complète, il est préférable de l'associer à un modèle d'impératifs ou autre description des besoins des utilisateurs. Pour plus d’informations sur les modèles d’impératifs, consultez [modéliser les besoins des utilisateurs](../modeling/model-user-requirements.md).
@@ -88,19 +88,19 @@ Pour vous assurer que votre application ou votre système logiciel répond à vo
 
  Un modèle de conception est décrit dans un document et comprend généralement les parties suivantes :
 
--   Nom.
+- Nom.
 
--   Description du contexte dans lequel il est applicable. Quels critères doivent inciter un développeur à envisager l'application de ce modèle ?
+- Description du contexte dans lequel il est applicable. Quels critères doivent inciter un développeur à envisager l'application de ce modèle ?
 
--   Brève explication du problème qu'il résout.
+- Brève explication du problème qu'il résout.
 
--   Modèle des principales parties et de leurs relations. Il peut s'agir de classes ou de composants et d'interfaces, avec des associations et des dépendances entre eux. Les éléments appartiennent généralement à deux catégories :
+- Modèle des principales parties et de leurs relations. Il peut s'agir de classes ou de composants et d'interfaces, avec des associations et des dépendances entre eux. Les éléments appartiennent généralement à deux catégories :
 
--   Conventions d'attribution de noms.
+- Conventions d'attribution de noms.
 
--   Description de la façon dont le modèle résout le problème.
+- Description de la façon dont le modèle résout le problème.
 
--   Description des variations que les développeurs peuvent être en mesure d'adopter.
+- Description des variations que les développeurs peuvent être en mesure d'adopter.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ba574854424eac14898c923701f7d8f4c1f81347
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d3b94b70db49903e41d26ac0f1382eaa2826e31a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648911"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059747"
 ---
 # <a name="changing-the-return-type-of-a-datacontext-method-cannot-be-undone"></a>Impossible d'annuler la modification du type de retour d'une méthode DataContext
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,17 +25,17 @@ Impossible d'annuler la modification du type de retour d'une méthode DataContex
   
 ### <a name="to-change-the-return-type-of-a-datacontext"></a>Pour modifier le type de retour d'un DataContext  
   
--   Cliquez sur **Oui**.  
+- Cliquez sur **Oui**.  
   
 ### <a name="to-exit-the-message-box-and-leave-the-return-type-unchanged"></a>Pour sortir de la boîte de message et laisser le type de retour inchangé  
   
--   Cliquez sur **Non**.  
+- Cliquez sur **Non**.  
   
 ### <a name="to-revert-to-the-original-return-type-after-changing-the-return-type"></a>Pour rétablir le type de retour d'origine après l'avoir modifié  
   
-1.  Sélectionnez la méthode <xref:System.Data.Linq.DataContext> dans le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] et supprimez-la.  
+1. Sélectionnez la méthode <xref:System.Data.Linq.DataContext> dans le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] et supprimez-la.  
   
-2.  Localisez l’élément dans l’**Explorateur de serveurs/Explorateur de bases de données** et faites-le glisser vers le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
+2. Localisez l’élément dans l’**Explorateur de serveurs/Explorateur de bases de données** et faites-le glisser vers le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
      Une méthode <xref:System.Data.Linq.DataContext> est créée avec le type de retour par défaut d’origine.  
   

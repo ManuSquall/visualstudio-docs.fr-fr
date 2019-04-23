@@ -12,12 +12,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 56c7e5a5a02f2ef5c114665d358e86d768a24a44
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b204a0f3bda5eab9291d4201fbea3c39a3f62ca6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756569"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050398"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,42 +38,42 @@ Le [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] est une 
   
 - Vous souhaitez modifier le système de génération. Par exemple, vous pouvez souhaiter effectuer les actions suivantes :  
   
-  -   Prétraitez les fichiers avant qu'ils n'atteignent le compilateur.  
+  - Prétraitez les fichiers avant qu'ils n'atteignent le compilateur.  
   
-  -   Copiez les sorties de génération à un autre emplacement.  
+  - Copiez les sorties de génération à un autre emplacement.  
   
-  -   Créez des fichiers compressés à partir des sorties de génération.  
+  - Créez des fichiers compressés à partir des sorties de génération.  
   
-  -   Procédez à une étape de post-traitement. Par exemple, vous pouvez souhaiter horodater un assembly avec une version différente.  
+  - Procédez à une étape de post-traitement. Par exemple, vous pouvez souhaiter horodater un assembly avec une version différente.  
   
   Vous pouvez écrire du code dans l'IDE de Visual Studio, mais les générations s'exécutent à l'aide de MSBuild. Autre solution, vous pouvez générer le code dans l'IDE sur un ordinateur de développement mais utiliser une ligne de commande MSBuild pour générer du code qui est intégré par plusieurs développeurs.  
   
 > [!NOTE]
 >  Vous pouvez utiliser Team Foundation Build automatiquement pour compiler, tester, puis déployer votre application. Votre système de génération peut automatiquement exécuter des générations lorsque les développeurs archivent du code (par exemple, dans le cadre d'une stratégie continue d'intégration) ou selon une planification (par exemple, une build nocturne de test de vérification de build). Team Foundation Build compile votre code à l’aide de MSBuild. Pour plus d’informations, consultez l’article [Générer l’application](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
   
- Cette rubrique fournit une vue d'ensemble de MSBuild. Pour un didacticiel d’introduction, consultez la [Procédure pas à pas : utilisation de MSBuild](../msbuild/walkthrough-using-msbuild.md).  
+ Cette rubrique fournit une vue d'ensemble de MSBuild. Pour suivre un tutoriel d’introduction, voir [Procédure pas à pas : Utiliser MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
  **Dans cette rubrique**  
   
--   [Utilisation de MSBuild dans une invite de commandes](#BKMK_CommandPrompt)  
+- [Utilisation de MSBuild dans une invite de commandes](#BKMK_CommandPrompt)  
   
--   [Fichier projet](#BKMK_ProjectFile)  
+- [Fichier projet](#BKMK_ProjectFile)  
   
-    -   [Propriétés](#BKMK_Properties)  
+    - [Propriétés](#BKMK_Properties)  
   
-    -   [Éléments](#BKMK_Items)  
+    - [Éléments](#BKMK_Items)  
   
-    -   [Tâches](#BKMK_Tasks)  
+    - [Tâches](#BKMK_Tasks)  
   
-    -   [Cibles](#BKMK_Targets)  
+    - [Cibles](#BKMK_Targets)  
   
--   [Journaux de génération](#BKMK_BuildLogs)  
+- [Journaux de génération](#BKMK_BuildLogs)  
   
--   [Utilisation de MSBuild dans Visual Studio](#BKMK_VisualStudio)  
+- [Utilisation de MSBuild dans Visual Studio](#BKMK_VisualStudio)  
   
--   [Multiciblage](#BKMK_Multitargeting)  
+- [Multiciblage](#BKMK_Multitargeting)  
   
-##  <a name="BKMK_CommandPrompt"></a> Utilisation de MSBuild dans une invite de commandes  
+## <a name="BKMK_CommandPrompt"></a> Utilisation de MSBuild dans une invite de commandes  
  Pour exécuter [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] à partir d’une invite de commandes, transmettez un fichier projet à MSBuild.exe, avec les options de ligne de commande appropriées. Les options de ligne de commande vous permettent de définir des propriétés, d'exécuter des cibles spécifiques et de définir d'autres options qui contrôlent le processus de génération. Par exemple, vous utilisez la syntaxe de ligne de commande suivante pour générer le fichier `MyProj.proj` avec la propriété `Configuration` ayant `Debug` comme valeur.  
   
 ```  
@@ -85,12 +85,12 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 > [!IMPORTANT]
 >  Avant de télécharger un projet, déterminez la crédibilité du code.  
   
-##  <a name="BKMK_ProjectFile"></a> Fichier projet  
+## <a name="BKMK_ProjectFile"></a> Fichier projet  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] utilise un format de fichier projet XML qui est simple et extensible. Le format du fichier projet [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] permet aux développeurs de décrire les éléments qui seront générés et la manière dont ils le seront pour différents systèmes d’exploitation et configurations. De plus, le format de fichier projet permet aux développeurs de créer des règles de génération réutilisables qui peuvent être réparties en fichiers distincts, de telle sorte que les builds puissent être exécutées de façon cohérente sur différents projets du produit.  
   
- Les sections suivantes décrivent certains éléments de base du format de fichier projet [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Pour suivre un didacticiel sur la création d’un fichier projet de base, consultez la [Procédure pas à pas : création d’un fichier projet MSBuild en partant de zéro](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
+ Les sections suivantes décrivent certains éléments de base du format de fichier projet [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Pour suivre un tutoriel sur la création d'un fichier projet de base, voir [Procédure pas à pas : Création d’un fichier de projet MSBuild à partir de zéro](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
   
-###  <a name="BKMK_Properties"></a> Propriétés  
+### <a name="BKMK_Properties"></a> Propriétés  
  Les propriétés sont des paires clé/valeur qui peuvent être utilisées pour configurer les générations. Les propriétés sont déclarées en créant un élément portant le nom de la propriété comme enfant d’un élément [PropertyGroup](../msbuild/propertygroup-element-msbuild.md). Par exemple, le code suivant crée une propriété nommée `BuildDir` avec la valeur `Build`.  
   
 ```  
@@ -109,7 +109,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  Pour plus d’informations sur les propriétés, consultez l’article [Propriétés MSBuild](msbuild-properties1.md).  
   
-###  <a name="BKMK_Items"></a> Éléments  
+### <a name="BKMK_Items"></a> Éléments  
  Les éléments sont des entrées du système de génération qui représentent généralement des fichiers. Les éléments sont groupés dans différents types d'élément, selon leurs noms d'élément définis par l'utilisateur. Ces types d’éléments peuvent être utilisés comme paramètres des tâches, lesquelles utilisent les éléments pour exécuter les étapes du processus de génération.  
   
  Les éléments sont déclarés dans le fichier projet en créant un élément avec le nom du type d’élément comme enfant d’un élément [ItemGroup](../msbuild/itemgroup-element-msbuild.md). Par exemple, le code suivant crée un type d'élément nommé `Compile` et composé de deux fichiers.  
@@ -134,7 +134,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  Les éléments peuvent être déclarés à l'aide de caractères génériques et peuvent contenir des métadonnées supplémentaires dans le cas de scénarios de génération plus avancés. Pour plus d’informations sur les éléments, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).  
   
-###  <a name="BKMK_Tasks"></a> Tâches  
+### <a name="BKMK_Tasks"></a> Tâches  
  Les tâches sont des unités de code exécutable auxquelles les projets [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ont recours pour exécuter des opérations de génération. Par exemple, une tâche peut compiler des fichiers d'entrée ou exécuter un outil externe. Les tâches peuvent être réutilisées et partagées par plusieurs développeurs dans différents projets.  
   
  La logique d’exécution d’une tâche est écrite en code managé et mappée à [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] avec l’élément [UsingTask](../msbuild/usingtask-element-msbuild.md). Vous pouvez écrire votre propre tâche en créant un type managé qui implémente l'interface <xref:Microsoft.Build.Framework.ITask>. Pour plus d’informations sur l’écriture de tâches, consultez l’article [Task Writing (Écriture de tâches)](../msbuild/task-writing.md).  
@@ -151,7 +151,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  Pour plus d’informations sur les tâches, consultez l’article [Tâches MSBuild](../msbuild/msbuild-tasks.md).  
   
-###  <a name="BKMK_Targets"></a> Cibles  
+### <a name="BKMK_Targets"></a> Cibles  
  Les cibles regroupent les tâches selon un ordre particulier et exposent les sections du fichier projet comme points d’entrée du processus de génération. Les cibles sont souvent groupées en sections logiques afin d'accroître la lisibilité et de permettre une expansion. L'éclatement des étapes de génération en plusieurs cibles permet d'appeler une partie du processus de génération à partir d'autres cibles sans copier cette section de code dans chaque cible. Par exemple, si plusieurs points d'entrée du processus de génération requièrent la génération de références, vous pouvez créer une cible qui génère les références et exécuter cette cible à partir de chaque point d'entrée nécessaire.  
   
  Les cibles sont déclarées dans le fichier projet avec l’élément [Target](../msbuild/target-element-msbuild.md). Par exemple, le code suivant crée une cible nommée `Compile`, qui appelle ensuite la tâche [Csc](../msbuild/csc-task.md) comportant la liste d’éléments déclarée dans l’exemple précédent.  
@@ -164,15 +164,15 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  Dans des scénarios plus avancés, les cibles peuvent être utilisées pour décrire les relations entre chacune d'elles et exécuter une analyse de dépendance, qui permet d'ignorer des sections entières du processus de génération si la cible correspondante est à jour. Pour plus d’informations sur les cibles, consultez l’article [Targets (Cibles MSBuild)](../msbuild/msbuild-targets.md).  
   
-##  <a name="BKMK_BuildLogs"></a> Journaux de génération  
+## <a name="BKMK_BuildLogs"></a> Journaux de génération  
  Vous pouvez consigner les erreurs de build, les avertissements et les messages dans la console ou un autre périphérique de sortie. Pour plus d’informations, consultez les articles [Obtention de journaux de génération avec MSBuild](../msbuild/obtaining-build-logs-with-msbuild.md) et [Journalisation dans MSBuild](../msbuild/logging-in-msbuild.md).  
   
-##  <a name="BKMK_VisualStudio"></a> Utilisation de MSBuild dans Visual Studio  
+## <a name="BKMK_VisualStudio"></a> Utilisation de MSBuild dans Visual Studio  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utilise le format de fichier projet [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pour stocker les informations de génération des projets managés. Les paramètres de projet ajoutés ou modifiés à l’aide de l’interface [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sont répercutés dans le fichier .*proj généré pour chaque projet. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utilise une instance hébergée de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pour générer des projets managés. Cela signifie qu’un projet managé peut être généré dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou à partir d’une invite de commandes (même si [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] n’est pas installé) ; les résultats seront identiques.  
   
- Pour suivre un didacticiel sur l’utilisation de MSBuild dans Visual Studio, consultez la [Procédure pas à pas : utilisation de MSBuild](../msbuild/walkthrough-using-msbuild.md).  
+ Pour suivre un tutoriel sur l’utilisation de MSBuild dans Visual Studio, voir [Procédure pas à pas : Utiliser MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
-##  <a name="BKMK_Multitargeting"></a> Multiciblage  
+## <a name="BKMK_Multitargeting"></a> Multiciblage  
  Visual Studio vous permet de compiler une application pour l'exécuter sur n'importe quelle version du .NET Framework. Par exemple, vous pouvez compiler une application qui s'exécutera sur le .NET Framework version 2.0 sur une plateforme 32 bits, et vous pouvez compiler la même application pour qu'elle s'exécute sur le .NET Framework version 4.5 sur une plateforme 64 bits. Le multi-ciblage désigne la possibilité de compiler en plusieurs Frameworks.  
   
  Voici une partie des avantages offerts par le multi-ciblage :  
@@ -193,8 +193,8 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
 |Titre|Description|  
 |-----------|-----------------|  
-|[Procédure pas à pas : création d’un fichier projet MSBuild en partant de zéro](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Indique comment créer de façon incrémentielle un fichier projet de base, en utilisant uniquement un éditeur de texte.|  
-|[Procédure pas à pas : utilisation de MSBuild](../msbuild/walkthrough-using-msbuild.md)|Présente les composantes de MSBuild et indique comment écrire, manipuler et déboguer des projets MSBuild sans fermer l'IDE de Visual Studio.|  
+|[Procédure pas à pas : Création d’un fichier de projet MSBuild à partir de zéro](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Indique comment créer de façon incrémentielle un fichier projet de base, en utilisant uniquement un éditeur de texte.|  
+|[Procédure pas à pas : Utiliser MSBuild](../msbuild/walkthrough-using-msbuild.md)|Présente les composantes de MSBuild et indique comment écrire, manipuler et déboguer des projets MSBuild sans fermer l'IDE de Visual Studio.|  
 |[Concepts MSBuild](../msbuild/msbuild-concepts.md)|Présente les quatre composantes de MSBuild : propriétés, éléments, cibles et tâches.|  
 |[Éléments](../msbuild/msbuild-items.md)|Décrit les concepts généraux sous-jacents au format de fichier [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] et la manière dont les éléments s'ajustent les uns aux autres.|  
 |[Propriétés MSBuild](msbuild-properties1.md)|Présente les propriétés et les collections de propriétés. Les propriétés sont des paires clé/valeur qui peuvent être utilisées pour configurer les générations.|  

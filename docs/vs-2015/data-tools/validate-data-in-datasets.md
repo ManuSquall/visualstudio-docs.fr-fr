@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 73eb1162411800a951566c9eb14928875966cfb7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 67c9b9aed677e83cd8012b53530b4c474922108e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661319"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047135"
 ---
 # <a name="validate-data-in-datasets"></a>Valider les données dans des datasets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,9 +103,9 @@ Validation des données est le processus consistant à confirmer que les valeurs
   
 #### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>Pour valider des données lorsqu’une ligne change (Visual Basic)  
   
-1.  Ouvrez votre dataset dans le **Concepteur de DataSet**. Pour plus d'informations, voir [Procédure : Ouvrir un jeu de données dans le Concepteur de Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Ouvrez votre dataset dans le **Concepteur de DataSet**. Pour plus d'informations, voir [Procédure : Ouvrir un jeu de données dans le Concepteur de Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
-2.  Double-cliquez sur la barre de titre de la table que vous souhaitez valider. Cette action crée automatiquement le <xref:System.Data.DataTable.RowChanging> Gestionnaire d’événements de la <xref:System.Data.DataTable> dans le fichier de classe partielle du jeu de données.  
+2. Double-cliquez sur la barre de titre de la table que vous souhaitez valider. Cette action crée automatiquement le <xref:System.Data.DataTable.RowChanging> Gestionnaire d’événements de la <xref:System.Data.DataTable> dans le fichier de classe partielle du jeu de données.  
   
     > [!TIP]
     >  Double-cliquez sur à gauche du nom de table pour créer le Gestionnaire d’événements de modification de ligne. Si vous double-cliquez sur le nom de table, vous pouvez le modifier.  
@@ -114,14 +114,14 @@ Validation des données est le processus consistant à confirmer que les valeurs
   
 #### <a name="to-validate-data-when-a-row-changes-c"></a>Pour valider des données lorsqu’une ligne change (c#)  
   
-1.  Ouvrez votre dataset dans le **Concepteur de DataSet**. Pour plus d'informations, voir [Procédure : Ouvrir un jeu de données dans le Concepteur de Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Ouvrez votre dataset dans le **Concepteur de DataSet**. Pour plus d'informations, voir [Procédure : Ouvrir un jeu de données dans le Concepteur de Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
-2.  Double-cliquez sur la barre de titre de la table que vous souhaitez valider. Cette action crée un fichier de classe partielle pour le <xref:System.Data.DataTable>.  
+2. Double-cliquez sur la barre de titre de la table que vous souhaitez valider. Cette action crée un fichier de classe partielle pour le <xref:System.Data.DataTable>.  
   
     > [!NOTE]
     >  Le **Concepteur de Dataset** ne crée pas automatiquement un gestionnaire d’événements pour le <xref:System.Data.DataTable.RowChanging> événement. Vous devez créer une méthode pour gérer la <xref:System.Data.DataTable.RowChanging> événements et exécuter du code pour raccorder l’événement dans la méthode d’initialisation de la table.  
   
-3.  Copiez le code suivant dans la classe partielle :  
+3. Copiez le code suivant dans la classe partielle :  
   
     ```  
     public override void EndInit()  
@@ -155,7 +155,7 @@ Validation des données est le processus consistant à confirmer que les valeurs
   
 #### <a name="to-get-all-changed-records-from-a-dataset"></a>Pour obtenir tous les enregistrements modifiés à partir d’un jeu de données  
   
--   Appelez le <xref:System.Data.DataSet.GetChanges%2A> méthode d’un jeu de données.  
+- Appelez le <xref:System.Data.DataSet.GetChanges%2A> méthode d’un jeu de données.  
   
      L’exemple suivant crée un nouveau dataset appelé `changedRecords` et la remplit avec tous les enregistrements modifiés d’un autre dataset appelé `dataSet1`.  
   
@@ -164,7 +164,7 @@ Validation des données est le processus consistant à confirmer que les valeurs
   
 #### <a name="to-get-all-changed-records-from-a-data-table"></a>Pour obtenir tous les enregistrements modifiés à partir d’une table de données  
   
--   Appelez le <xref:System.Data.DataTable.GetChanges%2A> méthode d’un DataTable.  
+- Appelez le <xref:System.Data.DataTable.GetChanges%2A> méthode d’un DataTable.  
   
      L’exemple suivant crée une nouvelle table de données appelée `changedRecordsTable` et la remplit avec tous les enregistrements modifiés d’une autre table de données appelée `dataTable1`.  
   
@@ -173,14 +173,14 @@ Validation des données est le processus consistant à confirmer que les valeurs
   
 #### <a name="to-get-all-records-that-have-a-specific-row-state"></a>Pour obtenir tous les enregistrements qui ont un état de ligne spécifique  
   
--   Appelez le `GetChanges` (méthode) d’un jeu de données ou la table de données et la passe un <xref:System.Data.DataRowState> valeur d’énumération en tant qu’argument.  
+- Appelez le `GetChanges` (méthode) d’un jeu de données ou la table de données et la passe un <xref:System.Data.DataRowState> valeur d’énumération en tant qu’argument.  
   
      L’exemple suivant montre comment créer un nouveau dataset appelé `addedRecords` et remplir uniquement avec les enregistrements qui ont été ajoutés à la `dataSet1` jeu de données.  
   
      [!code-csharp[VbRaddataEditing#16](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#16)]
      [!code-vb[VbRaddataEditing#16](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#16)]  
   
--   L’exemple suivant montre comment retourner tous les enregistrements qui ont été récemment ajoutés à la `Customers` table :  
+- L’exemple suivant montre comment retourner tous les enregistrements qui ont été récemment ajoutés à la `Customers` table :  
   
      [!code-csharp[VbRaddataEditing#17](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#17)]
      [!code-vb[VbRaddataEditing#17](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#17)]  
@@ -195,7 +195,7 @@ Validation des données est le processus consistant à confirmer que les valeurs
   
 #### <a name="to-get-the-original-version-of-a-record"></a>Pour obtenir la version d’origine d’un enregistrement  
   
--   Accéder à la valeur d’une colonne en passant le <xref:System.Data.DataRowVersion> de la ligne que vous souhaitez retourner.  
+- Accéder à la valeur d’une colonne en passant le <xref:System.Data.DataRowVersion> de la ligne que vous souhaitez retourner.  
   
      L’exemple suivant montre comment utiliser un <xref:System.Data.DataRowVersion> valeur à obtenir la valeur d’origine d’un `CompanyName` champ dans un <xref:System.Data.DataRow>:  
   
@@ -206,7 +206,7 @@ Validation des données est le processus consistant à confirmer que les valeurs
   
 #### <a name="to-get-the-current-version-of-a-record"></a>Pour obtenir la version actuelle d’un enregistrement  
   
--   Accéder à la valeur d’une colonne, puis ajouter un paramètre à l’index qui indique quelle version d’une ligne que vous souhaitez retourner.  
+- Accéder à la valeur d’une colonne, puis ajouter un paramètre à l’index qui indique quelle version d’une ligne que vous souhaitez retourner.  
   
      L’exemple suivant montre comment utiliser un <xref:System.Data.DataRowVersion> valeur à obtenir la valeur actuelle d’un `CompanyName` champ dans un <xref:System.Data.DataRow>:  
   

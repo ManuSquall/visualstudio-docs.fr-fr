@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a00a980f5984b05bd1f77a83d4c95d4da0f3ff03
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 37f84bff4802c703bb61b36e9c1933a31cd6c5e3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951376"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045445"
 ---
 # <a name="ca2240-implement-iserializable-correctly"></a>CA2240 : Implémentez ISerializable comme il se doit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ ms.locfileid: "58951376"
 ## <a name="cause"></a>Cause
  Un type extérieurement visible ne peut être assigné à la <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interface et une des conditions suivantes est vraie :
 
--   Le type hérite mais ne remplace pas le <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> (méthode) et le type déclare des champs d’instance qui ne sont pas marqués avec le <xref:System.NonSerializedAttribute?displayProperty=fullName> attribut.
+- Le type hérite mais ne remplace pas le <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> (méthode) et le type déclare des champs d’instance qui ne sont pas marqués avec le <xref:System.NonSerializedAttribute?displayProperty=fullName> attribut.
 
--   Le type n’est pas scellé et le type implémente une <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> méthode qui n’est pas extérieurement visible et substituable.
+- Le type n’est pas scellé et le type implémente une <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> méthode qui n’est pas extérieurement visible et substituable.
 
 ## <a name="rule-description"></a>Description de la règle
  Champs d’instance qui sont déclarés dans un type qui hérite du <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interface ne sont pas automatiquement inclus dans le processus de sérialisation. Pour inclure les champs, le type doit implémenter la <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> (méthode) et le constructeur de sérialisation. Si les champs ne doivent pas être sérialisées, appliquez le <xref:System.NonSerializedAttribute> aux champs pour indiquer explicitement la décision d’attribut.
@@ -58,7 +58,7 @@ ms.locfileid: "58951376"
  [!code-vb[FxCop.Usage.ImplementISerializableCorrectly#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.ImplementISerializableCorrectly/vb/FxCop.Usage.ImplementISerializableCorrectly.vb#1)]
 
 ## <a name="example"></a>Exemple
- L’exemple suivant résout les deux violations ci-dessus en fournissant une implémentation substituable de [ISerializable.GetObjectData] (<!-- TODO: review code entity reference <xref:assetId:///ISerializable.GetObjectData?qualifyHint=False&amp;autoUpgrade=False>  -->) sur la classe Book et en fournissant une implémentation de <!-- TODO: review code entity reference <xref:assetId:///ISerializable.GetObjectData?qualifyHint=False&amp;autoUpgrade=False>  --> sur la classe de bibliothèque.
+ L’exemple suivant résout les deux violations ci-dessus en fournissant une implémentation substituable de () [ISerializable.GetObjectData]<!-- TODO: review code entity reference <xref:assetId:///ISerializable.GetObjectData?qualifyHint=False&amp;autoUpgrade=False>  -->) sur la classe Book et en fournissant une implémentation de <!-- TODO: review code entity reference <xref:assetId:///ISerializable.GetObjectData?qualifyHint=False&amp;autoUpgrade=False>  --> sur la classe de bibliothèque.
 
  [!code-cpp[FxCop.Usage.ImplementISerializableCorrectly2#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Usage.ImplementISerializableCorrectly2/cpp/FxCop.Usage.ImplementISerializableCorrectly2.cpp#1)]
  [!code-csharp[FxCop.Usage.ImplementISerializableCorrectly2#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.ImplementISerializableCorrectly2/cs/FxCop.Usage.ImplementISerializableCorrectly2.cs#1)]

@@ -14,12 +14,12 @@ ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2bee266cb917f1e16bdebbdad52f2cc30055835e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7ea32df892efa47c91d8292bdc9065080318a059
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953514"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044604"
 ---
 # <a name="running-document-table"></a>Exécution de la table de document
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,9 +54,9 @@ L’IDE gère la liste de tous les documents actuellement ouverts dans une struc
   
  L’IDE utilise également la RDT à resurface (amener vers l’avant) un document ouvert, si un utilisateur demande à ce document. Pour plus d’informations, consultez [affichage des fichiers à l’aide de la commande fichier ouvrir](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md). Pour déterminer si un fichier est ouvert dans le RDT, effectuez les opérations suivantes.  
   
--   Requête pour le moniker de document (autrement dit, le chemin d’accès complet de document) déterminer si l’élément est ouvert.  
+- Requête pour le moniker de document (autrement dit, le chemin d’accès complet de document) déterminer si l’élément est ouvert.  
   
--   Utilisez l’ID de hiérarchie ou l’élément pour poser le système de projet pour le chemin d’accès complet de documents et ensuite rechercher l’élément dans le RDT.  
+- Utilisez l’ID de hiérarchie ou l’élément pour poser le système de projet pour le chemin d’accès complet de documents et ensuite rechercher l’élément dans le RDT.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Utilisation de RDT_ReadLock](../../extensibility/internals/rdt-readlock-usage.md)   

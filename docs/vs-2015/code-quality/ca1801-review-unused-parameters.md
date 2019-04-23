@@ -16,12 +16,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f356f0a13b9a1b9ecf3a8096b29c1f0c9c6f275a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 0efbec121e08d026145d8762b574847fbd4a2b88
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662606"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045640"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801 : Passez en revue les paramètres inutilisés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ Pour obtenir la dernière documentation sur Visual Studio, consultez [CA1801 : 
 ## <a name="cause"></a>Cause  
  Une signature de méthode inclut un paramètre qui n'est pas utilisé dans le corps de la méthode. Cette règle n’examine pas les méthodes suivantes :  
   
--   Méthodes référencées par un délégué.  
+- Méthodes référencées par un délégué.  
   
--   Méthodes utilisées en tant que gestionnaires d’événements.  
+- Méthodes utilisées en tant que gestionnaires d’événements.  
   
--   Les méthodes déclarées avec le `abstract` (`MustOverride` en Visual Basic) modificateur.  
+- Les méthodes déclarées avec le `abstract` (`MustOverride` en Visual Basic) modificateur.  
   
--   Les méthodes déclarées avec le `virtual` (`Overridable` en Visual Basic) modificateur.  
+- Les méthodes déclarées avec le `virtual` (`Overridable` en Visual Basic) modificateur.  
   
--   Les méthodes déclarées avec le `override` (`Overrides` en Visual Basic) modificateur.  
+- Les méthodes déclarées avec le `override` (`Overrides` en Visual Basic) modificateur.  
   
--   Les méthodes déclarées avec le `extern` (`Declare` instruction en Visual Basic) modificateur.  
+- Les méthodes déclarées avec le `extern` (`Declare` instruction en Visual Basic) modificateur.  
   
 ## <a name="rule-description"></a>Description de la règle  
  Passez en revue les paramètres dans les méthodes non virtuelles qui ne sont pas utilisés dans le corps de méthode pour vous assurer n’empêche existe autour d’y accéder. Les paramètres inutilisés impliquent des coûts de maintenance et de performances.  

@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3d21ad2edd01ee5b7a939c6c0ddfdaa882e38754
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 909242aaf8dd4caaee7af75e40554aaff648df68
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951850"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045653"
 ---
 # <a name="how-to-create-a-custom-rule-set"></a>Procédure : Créer un ensemble de règles personnalisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ Dans [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort]
   
 #### <a name="to-open-an-empty-rule-set-file-in-the-rule-set-editor"></a>Pour ouvrir vide ensemble de règles fichier dans l’éditeur d’ensemble de règles  
   
-1.  Sur le **fichier** menu de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], pointez sur **New** puis cliquez sur **fichier**.  
+1. Sur le **fichier** menu de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], pointez sur **New** puis cliquez sur **fichier**.  
   
-2.  Dans le **nouveau fichier** boîte de dialogue, cliquez sur **général** dans le **modèles installés** liste, puis sélectionnez **ensemble de règles d’analyse de Code**.  
+2. Dans le **nouveau fichier** boîte de dialogue, cliquez sur **général** dans le **modèles installés** liste, puis sélectionnez **ensemble de règles d’analyse de Code**.  
   
-3.  L’éditeur d’ensemble de règles s’affiche. Aucune règle n’est sélectionnés dans la liste de l’éditeur.  
+3. L’éditeur d’ensemble de règles s’affiche. Aucune règle n’est sélectionnés dans la liste de l’éditeur.  
   
 #### <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>Pour créer une règle personnalisée à partir d’un seul ensemble de règles existant  
   
@@ -55,33 +55,33 @@ Dans [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort]
   
 #### <a name="to-create-a-custom-rule-set-from-multiple-existing-rule-sets"></a>Pour créer une règle personnalisée définie à partir de plusieurs ensembles de règles existant  
   
-1.  Dans l’Explorateur de solutions, cliquez sur le projet, puis sélectionnez **propriétés**.  
+1. Dans l’Explorateur de solutions, cliquez sur le projet, puis sélectionnez **propriétés**.  
   
-2.  Sur le **propriétés** , cliquez sur **analyse du Code**.  
+2. Sur le **propriétés** , cliquez sur **analyse du Code**.  
   
-3.  Sélectionnez  **\<choisir plusieurs règle définit... >** de **exécuter cet ensemble de règles**.  
+3. Sélectionnez  **\<choisir plusieurs règle définit... >** de **exécuter cet ensemble de règles**.  
   
-4.  Dans le **ajouter ou supprimer des ensembles de règles** boîte de dialogue, sélectionnez les ensembles de règles sur lequel vous souhaitez baser votre nouvel ensemble de règles, puis cliquez sur **OK**.  
+4. Dans le **ajouter ou supprimer des ensembles de règles** boîte de dialogue, sélectionnez les ensembles de règles sur lequel vous souhaitez baser votre nouvel ensemble de règles, puis cliquez sur **OK**.  
   
-5.  Enregistrez le nouvel ensemble de règles.  
+5. Enregistrez le nouvel ensemble de règles.  
   
      Le nom du nouvel ensemble de règles est sélectionné dans le **exécuter cet ensemble de règles** liste. Vous pouvez modifier le nom complet de l’ensemble de règles dans l’étape suivante.  
   
-6.  (Facultatif) Pour modifier le nom complet de l’ensemble de règles, dans le **vue** menu, cliquez sur **fenêtre Propriétés**. Tapez le nom d’affichage dans le **nom** boîte.  
+6. (Facultatif) Pour modifier le nom complet de l’ensemble de règles, dans le **vue** menu, cliquez sur **fenêtre Propriétés**. Tapez le nom d’affichage dans le **nom** boîte.  
   
-7.  Pour ajouter, supprimer, ou modifier des règles d’analyse du code spécifique dans le nouvel ensemble de règles, cliquez sur **Open**.  
+7. Pour ajouter, supprimer, ou modifier des règles d’analyse du code spécifique dans le nouvel ensemble de règles, cliquez sur **Open**.  
   
 ## <a name="modifying-a-rule-set"></a>Modification d’un ensemble de règles  
   
 #### <a name="to-modify-a-rule-set-in-the-rule-set-editor"></a>Pour modifier une règle définie dans l’éditeur d’ensemble de règles  
   
--   Pour modifier le nom complet de l’ensemble de règles, dans le **vue** menu, cliquez sur **fenêtre Propriétés**. Entrez le nom d’affichage dans le **nom** boîte. Notez que le nom de l’affichage peut différer du nom du fichier.  
+- Pour modifier le nom complet de l’ensemble de règles, dans le **vue** menu, cliquez sur **fenêtre Propriétés**. Entrez le nom d’affichage dans le **nom** boîte. Notez que le nom de l’affichage peut différer du nom du fichier.  
   
--   Pour ajouter toutes les règles du groupe à un ensemble de règles personnalisé, sélectionnez la case à cocher du groupe. Pour supprimer toutes les règles du groupe, désactivez la case à cocher.  
+- Pour ajouter toutes les règles du groupe à un ensemble de règles personnalisé, sélectionnez la case à cocher du groupe. Pour supprimer toutes les règles du groupe, désactivez la case à cocher.  
   
--   Pour ajouter une règle spécifique à l’ensemble de règles personnalisé, sélectionnez la case à cocher de la règle. Pour supprimer la règle à partir de l’ensemble de règles, désactivez la case à cocher.  
+- Pour ajouter une règle spécifique à l’ensemble de règles personnalisé, sélectionnez la case à cocher de la règle. Pour supprimer la règle à partir de l’ensemble de règles, désactivez la case à cocher.  
   
--   Pour modifier l’action effectuée lorsqu’une règle est violée dans une analyse du code, cliquez dans le **Action** champ pour la règle et puis sélectionnez une des valeurs suivantes :  
+- Pour modifier l’action effectuée lorsqu’une règle est violée dans une analyse du code, cliquez dans le **Action** champ pour la règle et puis sélectionnez une des valeurs suivantes :  
   
      **Avertir** -génère un avertissement.  
   
@@ -93,23 +93,23 @@ Dans [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort]
   
 #### <a name="to-group-filter-or-change-the-fields-in-the-rule-set-editor-by-using-the-rule-set-editor-toolbar"></a>Pour regrouper, filtrer ou modifier les champs dans l’éditeur d’ensemble de règles à l’aide de la barre d’outils Éditeur de règle ensemble  
   
--   Pour développer les règles dans tous les groupes, cliquez sur **développer tout**.  
+- Pour développer les règles dans tous les groupes, cliquez sur **développer tout**.  
   
--   Pour réduire les règles dans tous les groupes, cliquez sur **réduire tout**.  
+- Pour réduire les règles dans tous les groupes, cliquez sur **réduire tout**.  
   
--   Pour modifier le champ règles sont groupées, sélectionnez le champ à partir de la **Group By** liste. Pour afficher les règles non groupées, sélectionnez  **\<None >**.  
+- Pour modifier le champ règles sont groupées, sélectionnez le champ à partir de la **Group By** liste. Pour afficher les règles non groupées, sélectionnez  **\<None >**.  
   
--   Pour ajouter ou supprimer des champs dans les colonnes de la règle, cliquez sur **Options de colonne**.  
+- Pour ajouter ou supprimer des champs dans les colonnes de la règle, cliquez sur **Options de colonne**.  
   
--   Pour masquer des règles qui ne s’appliquent pas à la solution actuelle, **masquer des règles qui ne s’appliquent pas à la solution actuelle**.  
+- Pour masquer des règles qui ne s’appliquent pas à la solution actuelle, **masquer des règles qui ne s’appliquent pas à la solution actuelle**.  
   
--   Pour basculer entre l’affichage et masquage des règles qui sont affectés à l’action d’erreur, cliquez sur **afficher les règles qui peuvent générer des erreurs d’analyse du Code**.  
+- Pour basculer entre l’affichage et masquage des règles qui sont affectés à l’action d’erreur, cliquez sur **afficher les règles qui peuvent générer des erreurs d’analyse du Code**.  
   
--   Pour basculer entre l’affichage et masquage des règles qui sont affectés à l’action de l’avertissement, cliquez sur **afficher les règles qui peuvent générer des avertissements d’analyse du Code**.  
+- Pour basculer entre l’affichage et masquage des règles qui sont affectés à l’action de l’avertissement, cliquez sur **afficher les règles qui peuvent générer des avertissements d’analyse du Code**.  
   
--   Pour basculer entre l’affichage et masquage des règles qui sont affectées la **aucun** action, cliquez sur **afficher les règles qui ne sont pas activés**.  
+- Pour basculer entre l’affichage et masquage des règles qui sont affectées la **aucun** action, cliquez sur **afficher les règles qui ne sont pas activés**.  
   
--   Pour ajouter ou supprimer des ensembles de règles de valeur par défaut à l’ensemble de règles actuel de Microsoft, cliquez sur **ajouter ou supprimer des ensembles de règles enfants**.  
+- Pour ajouter ou supprimer des ensembles de règles de valeur par défaut à l’ensemble de règles actuel de Microsoft, cliquez sur **ajouter ou supprimer des ensembles de règles enfants**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Guide pratique pour Configurer l’analyse du Code pour un projet de Code managé](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   

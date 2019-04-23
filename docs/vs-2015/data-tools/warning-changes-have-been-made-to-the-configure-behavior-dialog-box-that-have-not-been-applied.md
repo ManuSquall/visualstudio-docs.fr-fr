@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b5846fe9db2d7ea02259f949697f5cb164d1c081
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e631f73a6714cf26b55cf9907095fc322467d3cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651754"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053895"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Avertissement. Vous avez effectué certaines modifications dans la boîte de dialogue Configurer le comportement mais elles n'ont pas été appliquées.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,11 +25,11 @@ Avertissement. Vous avez effectué certaines modifications dans la boîte de dia
   
 ### <a name="to-apply-the-change-and-continue"></a>Pour appliquer la modification et continuer  
   
--   Cliquez sur **Oui** pour appliquer la modification à la **Classe** et au **Comportement** sélectionnés.  
+- Cliquez sur **Oui** pour appliquer la modification à la **Classe** et au **Comportement** sélectionnés.  
   
 ### <a name="to-cancel-the-previous-change-and-continue"></a>Pour annuler le changement précédent et continuer  
   
--   Cliquez sur **Non** pour annuler la modification de la **Classe** et du **Comportement** sélectionnés.  
+- Cliquez sur **Non** pour annuler la modification de la **Classe** et du **Comportement** sélectionnés.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
