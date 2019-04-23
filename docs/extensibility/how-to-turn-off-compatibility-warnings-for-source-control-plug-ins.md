@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61a2c1b3ff112052abd44463fdce3a5b36197a71
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a1a113dc3b4a4b3a8a4482dd092878851d740c6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721340"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112204"
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>Procédure : Désactiver les avertissements de compatibilité pour les plug-ins de contrôle de code source
 Un utilisateur peut voir plusieurs avertissements de compatibilité lors de l’utilisation du contrôle de code source dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Les avertissements de dépendant des fonctionnalités de plug-in du contrôle de code source et peuvent être désactivés comme décrit ici.
@@ -31,7 +31,7 @@ Un utilisateur peut voir plusieurs avertissements de compatibilité lors de l’
 
 ### <a name="to-disable-the-warning-the-installed-source-control-provider-does-not-support-all-the-capabilities"></a>Pour désactiver l’avertissement : « Le fournisseur de contrôle de code source installé ne prend pas en charge toutes les fonctionnalités »
 
--   Définir les deux valeurs suivantes (en ajoutant les valeurs si nécessaire) :
+- Définir les deux valeurs suivantes (en ajoutant les valeurs si nécessaire) :
 
      **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\WarnedOldMSSCCIProvider = dword:00000000**
 

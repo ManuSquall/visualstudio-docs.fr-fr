@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c9c348607c4a009a5b9b0a501e61dda443127df
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 5dd1834593be7638a56eb31c70677ea9be146b8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665578"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112173"
 ---
 # <a name="xml-editor"></a>Éditeur XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,13 +46,13 @@ L'éditeur XML est basé sur l'éditeur de texte [!INCLUDE[msCoName](../includes
 ## <a name="express-editions"></a>Versions Express Edition  
  Les fonctions suivantes de l'éditeur XML ne sont pas disponibles dans les versions Visual Studio Express Edition :  
   
--   Création d'un schéma XML à partir d'un document d'instance XML  
+- Création d'un schéma XML à partir d'un document d'instance XML  
   
--   Affichage de la sortie XSLT à partir de l'éditeur XML  
+- Affichage de la sortie XSLT à partir de l'éditeur XML  
   
--   Validation en cours lors de la modification des feuilles de style XSLT  
+- Validation en cours lors de la modification des feuilles de style XSLT  
   
--   Explorateur de schémas XML.  
+- Explorateur de schémas XML.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Validation de documents XML](../xml-tools/xml-document-validation.md)  

@@ -11,31 +11,31 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22f8fc22e2812e059b0af8f81856ac2c95888c94
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: bcb8bae5d715e59591eb44418de2b36e8ac753a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715490"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112505"
 ---
 # <a name="required-port-supplier-interfaces"></a>Interfaces de fournisseur de port requis
 Un fournisseur de port doit implémenter le [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) interface.[ IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)
 
  Un fournisseur de port fournit des ports et les implémente. Par conséquent, il doit exécuter les interfaces suivantes :
 
--   [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)
+- [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)
 
      Décrit le port et énumère tous les processus en cours d’exécution sur le port.
 
--   [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md)
+- [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md)
 
      Fournit pour lancer et arrêter les processus sur le port.
 
--   [IDebugPortNotify2](../../extensibility/debugger/reference/idebugportnotify2.md)
+- [IDebugPortNotify2](../../extensibility/debugger/reference/idebugportnotify2.md)
 
      Fournit un mécanisme pour les programmes en cours d’exécution dans le contexte de ce port pour l’informer de la création de nœuds de programme et la destruction. Pour plus d’informations, consultez [programmer des nœuds](../../extensibility/debugger/program-nodes.md).
 
--   `IConnectionPointContainer`
+- `IConnectionPointContainer`
 
      Fournit un point de connexion pour [IDebugPortEvents2](../../extensibility/debugger/reference/idebugportevents2.md).
 
@@ -46,37 +46,37 @@ Un fournisseur de port doit implémenter le [IDebugPortSupplier2](../../extensib
 
  Comme un port peut lancer et terminer le processus physiques et logiques programmes, les interfaces suivantes doivent également être implémentées par le moteur de débogage :
 
--   [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)
+- [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)
 
      Décrit le processus physique. Au moins les méthodes suivantes doivent être implémentées :
 
-    -   [EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)
+    - [EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)
 
-    -   [GetName](../../extensibility/debugger/reference/idebugprocess2-getname.md)
+    - [GetName](../../extensibility/debugger/reference/idebugprocess2-getname.md)
 
-    -   [GetServer](../../extensibility/debugger/reference/idebugprocess2-getserver.md)
+    - [GetServer](../../extensibility/debugger/reference/idebugprocess2-getserver.md)
 
-    -   [GetPhysicalProcessId](../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)
+    - [GetPhysicalProcessId](../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)
 
-    -   [GetProcessId](../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)
+    - [GetProcessId](../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)
 
-    -   [GetAttachedSessionName](../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)
+    - [GetAttachedSessionName](../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)
 
--   [IDebugProcessEx2](../../extensibility/debugger/reference/idebugprocessex2.md)
+- [IDebugProcessEx2](../../extensibility/debugger/reference/idebugprocessex2.md)
 
      Fournit un moyen pour le SDM attacher et détacher lui-même d’un processus.
 
--   [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)
+- [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)
 
      Décrit le programme logique. Au moins les méthodes suivantes doivent être implémentées :
 
-    -   [GetName](../../extensibility/debugger/reference/idebugprogram2-getname.md)
+    - [GetName](../../extensibility/debugger/reference/idebugprogram2-getname.md)
 
-    -   [GetProcess](../../extensibility/debugger/reference/idebugprogram2-getprocess.md)
+    - [GetProcess](../../extensibility/debugger/reference/idebugprogram2-getprocess.md)
 
-    -   [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)
+    - [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)
 
--   [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md)
+- [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md)
 
      Fournit un moyen pour le SDM attacher à ce programme.
 

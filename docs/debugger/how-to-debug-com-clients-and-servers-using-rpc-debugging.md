@@ -26,25 +26,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01dca60a19adcf27652bccd096d6e1596ec2fc15
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: a4cd55ff42bc4ba81df881045d06362b469f009b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688041"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112700"
 ---
-# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Comment : déboguer des clients COM et des serveurs à l'aide du débogage RPC
+# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Procédure : Déboguer des clients et des serveurs COM à l’aide du débogage RPC
 Vous pouvez utiliser le débogage RPC pour déboguer des applications client/serveur COM. Vous devez activer le débogage RPC pour l'utiliser. Lorsque le débogage RPC est activé, si vous effectuez un pas à pas détaillé dans l'appel serveur à partir du client, le débogueur est attaché au serveur, ce qui permet de déboguer son code. Une fois que le débogueur est attaché, vous pouvez utiliser toutes ses fonctionnalités avec les processus client et serveur.
 
 ### <a name="to-enable-rpc-debugging"></a>Pour activer le débogage RPC
 
-1.  Dans le menu **Outils** , cliquez sur **Options**.
+1. Dans le menu **Outils**, cliquez sur **Options**.
 
-2.  Dans la boîte de dialogue **Options**, cliquez sur le dossier **Débogage**.
+2. Dans la boîte de dialogue **Options**, cliquez sur le dossier **Débogage**.
 
-3.  Cliquez sur la page **Natif**.
+3. Cliquez sur la page **Natif**.
 
-4.  Cochez la case **Débogage RPC**.
+4. Cochez la case **Débogage RPC**.
 
     > [!NOTE]
     >  Pour déboguer des appels RPC, vous devez posséder les privilèges Administrateur ou Utilisateur avec pouvoirs.

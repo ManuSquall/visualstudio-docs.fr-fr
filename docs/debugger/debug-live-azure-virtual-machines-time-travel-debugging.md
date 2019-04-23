@@ -13,18 +13,18 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: d392e19bb51cd981cc833535556eb083e8e5ba07
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 3a81f6aa138b361a44a272ebda3557d27a914c64
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59672487"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112350"
 ---
 # <a name="record-and-replay-live-aspnet-apps-on-azure-virtual-machines-using-the-snapshot-debugger"></a>Enregistrer et relire les applications ASP.NET en production sur des machines virtuelles à l’aide du débogueur de capture instantanée
 
-L’aperçu de débogage de voyage temps (TTD) dans Visual Studio Enterprise offre la possibilité d’enregistrer une application Web en cours d’exécution sur une Machine virtuelle (VM) Azure et avec précision reconstruire, puis relire le chemin d’exécution. TTD s’intègre à notre débogueur de capture instantanée offre et vous permet de revenir en arrière et de relire chaque ligne de code toutefois autant de fois que vous souhaitez, vous aider à isoler et identifier les problèmes qui peuvent se produire uniquement dans les environnements de production.
+L’aperçu de débogage de voyage temps (TTD) dans Visual Studio Enterprise offre la possibilité d’enregistrer une application Web en cours d’exécution sur une Machine virtuelle (VM) Azure et avec précision reconstruire, puis relire le chemin d’exécution. TTD s’intègre avec le débogueur de capture instantanée et vous permet de revenir en arrière et de relire chaque ligne de code n’importe quel nombre de fois que vous le souhaitez, vous aider à isoler et identifier les problèmes qui peuvent se produire uniquement dans les environnements de production.
 
-Capture d’un enregistrement du temps de détection s’arrête pas l’application, toutefois, l’enregistrement ajoute une surcharge significative à votre processus en cours d’exécution, il ralentit l’en fonction de facteurs tels que la taille du processus et le nombre de threads actifs.
+Capture d’un enregistrement du temps de détection s’arrête pas l’application. Toutefois, l’enregistrement de TDD ajoute une surcharge significative à votre processus en cours d’exécution, il ralentit l’en fonction de facteurs tels que la taille du processus et le nombre de threads actifs.
 
 Cette fonctionnalité est disponible en version préliminaire de la version de Visual Studio 2019 avec une licence go live.
 
@@ -32,8 +32,8 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
 > [!div class="checklist"]
 > * Démarrer le débogueur de capture instantanée avec le temps voyage débogage activé
-> * Définir un point d’ancrage et de collecter un enregistrement de voyage
-> * Démarrer le débogage d’un enregistrement de voyage
+> * Définir un point d’ancrage et de collecter une durée de voyage d’enregistrement
+> * Démarrez le débogage d’une heure d’enregistrement de voyage
 
 ## <a name="prerequisites"></a>Prérequis
 
@@ -46,7 +46,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
 ## <a name="open-your-project-and-start-the-snapshot-debugger-with-time-travel-debugging-enabled"></a>Ouvrez votre projet et démarrer le débogueur de capture instantanée avec le temps voyage débogage activé
 
-1. Ouvrez le projet que vous souhaitez collecter un enregistrement de voyage.
+1. Ouvrez le projet pour lequel vous souhaitez collecter un temps d’enregistrement de voyage.
 
     > [!IMPORTANT]
     > Pour démarrer TTD, vous devez ouvrir le *même version de code source* qui est publié sur votre service de machine virtuelle Azure.
@@ -58,24 +58,24 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
     > [!IMPORTANT]
     > La première fois que vous sélectionnez **Joindre le Débogueur de capture instantanée** pour votre machine virtuelle, IIS est redémarré automatiquement.
 
-    Les métadonnées pour les **Modules** ne sont pas initialement activées, accédez à l’application web et le bouton **Démarrer la collecte** devient actif. Visual Studio est maintenant en mode Débogage de capture instantanée.
+    Les métadonnées pour le **Modules** n’est pas activé initialement. Accédez à l’application web et le **démarrer la collecte** bouton devienne alors actif. Visual Studio est maintenant en mode Débogage de capture instantanée.
 
    ![Mode Débogage de capture instantanée](../debugger/media/snapshot-message.png)
 
     > [!NOTE]
     > L’extension de site Application Insights prend également en charge le débogage de capture instantanée. Si un message d’erreur du type « extension de site obsolète » apparaît, voir [Conseils de résolution des problèmes et problèmes connus pour le débogage de capture instantanée](../debugger/debug-live-azure-apps-troubleshooting.md) pour effectuer une mise à niveau.
 
-   Le **Modules** fenêtre vous montre que tous les modules ont chargés pour la machine virtuelle Azure (choisissez **Déboguer > Windows > Modules** pour ouvrir cette fenêtre).
+   Le **Modules** fenêtre vous montre que lorsque tous les modules sont chargés pour la machine virtuelle Azure (choisissez **Déboguer > Windows > Modules** pour ouvrir cette fenêtre).
 
    ![Fenêtre Vérifier les modules](../debugger/media/snapshot-modules.png)
 
-## <a name="set-a-snappoint-and-collect-a-time-travel-recording"></a>Définir un point d’ancrage et de collecter un enregistrement de voyage
+## <a name="set-a-snappoint-and-collect-a-time-travel-recording"></a>Définir un point d’ancrage et de collecter une durée de voyage d’enregistrement
 
 1. Dans l’éditeur de code, cliquez sur la marge gauche dans une méthode qui que vous intéresse définir un point d’ancrage. Vérifiez que ce code pourra s’exécuter.
 
    ![Définir un snappoint](../debugger/media/time-travel-debugging-set-snappoint-settings.png)
 
-1. Cliquez sur l’icône de point d’ancrage (la balle creuse) et choisissez **Actions**. Dans la fenêtre Paramètres de cliché instantané, cliquez sur le **Action** case à cocher. Puis cliquez sur le **recueillir une trace de trajet de temps à la fin de cette méthode** case à cocher.
+1. Cliquez sur l’icône de point d’ancrage (la balle creuse) et choisissez **Actions**. Dans le **paramètres de cliché instantané** fenêtre, cliquez sur le **Action** case à cocher. Puis cliquez sur le **recueillir une trace de trajet de temps à la fin de cette méthode** case à cocher.
 
    ![Recueillir une trace de trajet de temps à la fin de la méthode](../debugger/media/time-travel-debugging-set-snappoint-action.png)
 
@@ -85,9 +85,9 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
 ## <a name="take-a-snapshot"></a>Prendre un instantané
 
-Lorsqu’un snappoint est activé, il prend une capture instantanée chaque fois à chaque exécution de la ligne de code correspondante. Cette exécution peut être provoquée par une demande réelle sur le serveur. Pour forcer l’activation du snappoint, accédez à la vue dans le navigateur de votre site web et effectuez l’une des actions correspondant à ce snappoint.
+Lorsqu’un point d’ancrage est allumé, il capture un instantané chaque fois qu’exécute la ligne de code où se trouve le point d’ancrage. Cette exécution peut être dû à une demande réelle sur votre serveur. Pour forcer l’activation du snappoint, accédez à la vue dans le navigateur de votre site web et effectuez l’une des actions correspondant à ce snappoint.
 
-## <a name="start-debugging-a-time-travel-recording"></a>Démarrer le débogage d’un enregistrement de voyage
+## <a name="start-debugging-a-time-travel-recording"></a>Démarrez le débogage d’une heure d’enregistrement de voyage
 
 1. Lorsque le snappoint est atteint, une capture instantanée apparaît dans la fenêtre Outils de diagnostic. Pour ouvrir cette fenêtre, choisissez **Déboguer > Fenêtres > Afficher les Outils de diagnostic**.
 
@@ -95,7 +95,7 @@ Lorsqu’un snappoint est activé, il prend une capture instantanée chaque fois
 
 1. Cliquez sur le lien Afficher l’instantané pour ouvrir le voyage d’enregistrement dans l’éditeur de code.
   
-   Vous pouvez exécuter chaque ligne de code enregistrée par le TTD à l’aide de la **continuer** et **inverse continuer** boutons. En outre le la barre d’outils de débogage peut être utilisé pour **afficher l’instruction suivante**, **pas à pas détaillé**, **pas à pas principal**, **pas à pas sortant**,  **Dans l’étape**, **étape sur**, **étape régulariser**.
+   Vous pouvez exécuter chaque ligne de code enregistrée par le TTD à l’aide de la **continuer** et **inverse continuer** boutons. En outre, le **déboguer** barre d’outils peut être utilisé pour **afficher l’instruction suivante**, **pas à pas détaillé**, **pas à pas principal**, **pas à pas sortant**, **Étape de nouveau**, **étape sur**, **étape régulariser**.
 
    ![Démarrer le débogage](../debugger/media/time-travel-debugging-step-commands.png)
 
@@ -109,11 +109,11 @@ Lorsqu’un snappoint est activé, il prend une capture instantanée chaque fois
 
 ## <a name="set-a-conditional-snappoint"></a>Définir un snappoint conditionnel
 
-S’il vous est difficile de recréer un état particulier de votre application, vous pouvez utiliser un snappoint conditionnel. Points d’ancrage conditionnel vous aident à que éviter collecte un voyage d’enregistrement jusqu'à ce que l’application passe à l’état souhaité, par exemple lorsqu’une variable a une valeur particulière que vous souhaitez inspecter. [Vous pouvez définir des conditions d’utilisation d’expressions, filtres, ou nombre d’accès](../debugger/debug-live-azure-apps-troubleshooting.md).
+S’il vous est difficile de recréer un état particulier de votre application, vous pouvez utiliser un snappoint conditionnel. Points d’ancrage conditionnel vous aident à que éviter la collecte d’une heure déplacent d’enregistrement jusqu'à ce que l’application passe à l’état souhaité, par exemple lorsqu’une variable a une valeur particulière que vous souhaitez inspecter. [Vous pouvez définir des conditions d’utilisation d’expressions, filtres, ou nombre d’accès](../debugger/debug-live-azure-apps-troubleshooting.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Dans ce didacticiel, vous avez appris comment collecter un enregistrement de voyage pour les Machines virtuelles Azure. Voulez-vous en savoir plus sur le débogueur de capture instantanée.
+Dans ce didacticiel, vous avez appris comment collecter un voyage d’enregistrement pour les Machines virtuelles Azure. Voulez-vous en savoir plus sur le débogueur de capture instantanée.
 
 > [!div class="nextstepaction"]
 > [FAQ pour le débogage d’instantané](../debugger/debug-live-azure-apps-faq.md)

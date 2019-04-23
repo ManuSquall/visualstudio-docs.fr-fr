@@ -11,21 +11,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2e5b50a3f2969f8f22ce938522526a6010c640a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 56ec28d0d9202bfd72d31e95c53038dd1fa475e9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691382"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111777"
 ---
 # <a name="servers-visual-studio-sdk"></a>Serveurs (SDK Visual Studio)
 Dans l’architecture du débogueur, une *server*:
 
--   Est un conteneur de ports et les fournisseurs de port et communique les ports et les fournisseurs de port pour le Gestionnaire de session de débogage (SDM) et les moteurs de débogage.
+- Est un conteneur de ports et les fournisseurs de port et communique les ports et les fournisseurs de port pour le Gestionnaire de session de débogage (SDM) et les moteurs de débogage.
 
--   Peut s’identifier par son nom et énumérer ses ports et les fournisseurs de port.
+- Peut s’identifier par son nom et énumérer ses ports et les fournisseurs de port.
 
--   Est représenté par un [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) interface, qui est implémentée uniquement par Visual Studio (une seule instance d’un serveur pour chaque instance en cours d’exécution de Visual Studio).
+- Est représenté par un [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) interface, qui est implémentée uniquement par Visual Studio (une seule instance d’un serveur pour chaque instance en cours d’exécution de Visual Studio).
 
 ## <a name="see-also"></a>Voir aussi
 - [Ports](../../extensibility/debugger/ports.md)
